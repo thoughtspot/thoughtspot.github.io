@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Install the cluster using the ThoughtSpot software release bundle. Installation takes approximately one hour. Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer.
 
-Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you have not received a link to download the release bundle, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to access the release bundle.
+Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you have not received a link to download the release bundle, open a support ticket with [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to access the release bundle.
 
 Follow the steps in this checklist to install your cluster.
 

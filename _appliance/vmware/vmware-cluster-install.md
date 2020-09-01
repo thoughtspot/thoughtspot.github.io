@@ -22,7 +22,7 @@ Install the cluster using the ThoughtSpot software release bundle. The estimated
 | &#10063; | [Step 2: Check cluster health](#cluster-step-2) |
 | &#10063; | [Step 3: Finalize installation](#cluster-step-3) |
 
-Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you do not have a link, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to request access to the release bundle.
+Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you do not have a link, open a support ticket with [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to request access to the release bundle.
 
 {: id="cluster-step-1"}
 ### Step 1: Run the installer
