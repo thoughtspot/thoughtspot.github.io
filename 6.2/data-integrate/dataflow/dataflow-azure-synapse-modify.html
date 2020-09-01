@@ -26,7 +26,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="https://docs.thoughtspot.com/6.2/js/jquery.navgoco.min.js"></script>
 <script src="https://docs.thoughtspot.com/6.2/js/clipboard.min.js"></script>
-<script src="https://docs.thoughtspot.com/6.2/js/copyCode.js"></script>
+<!-- <script src="https://docs.thoughtspot.com/6.2/js/copyCode.js"></script> -->
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-azure-synapse-modify.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-08-27T13:21:29-07:00" />
+<meta property="article:published_time" content="2020-08-31T17:37:54-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Modify an Azure Synapse connection”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Modify an Azure Synapse connection”]","url":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-azure-synapse-modify.html","dateModified":"2020-08-27T13:21:29-07:00","datePublished":"2020-08-27T13:21:29-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-azure-synapse-modify.html"},"description":"You can modify a DataFlow Azure Synapse connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Modify an Azure Synapse connection”]","url":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-azure-synapse-modify.html","dateModified":"2020-08-31T17:37:54-07:00","datePublished":"2020-08-31T17:37:54-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-azure-synapse-modify.html"},"description":"You can modify a DataFlow Azure Synapse connection in the following ways: Edit a connection: to add or remove tables and columns Remap a connection: to map a table or column to a different table or column Delete a table Delete a connection","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5234,24 +5234,6 @@ $(document).ready(function(){
 
 
 
-
-<script>
-    $( document ).ready(function() {
-      var clipboard = new Clipboard('.clipboard');
-    });
-  </script>
-  <script>
-  $( document ).ready(function() {
-    clipboard.on('success', function(e) {
-      $(e.trigger).text("Copied!");
-      e.clearSelection();
-      setTimeout(function() {
-        $(e.trigger).text("Copy");
-      }, 2500);
-    });
-    </script>
-
-
 <div class="post-content">
 
    
@@ -5287,15 +5269,13 @@ $('#toc').on('click', 'a', function() {
 
 
     
-    <!--
-<span class="reading-time" title="Estimated reading time">
+    <!-- <span class="reading-time" title="Estimated reading time">
   Estimated reading time:
   
   
     1 minute
   
-</span>
- -->
+</span> -->
 
     
 
@@ -5357,12 +5337,12 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 27, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 31, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 6/17/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
-      <script>
+<script>
     var btns = document.querySelectorAll('button');
     var clipboard = new ClipboardJS(btns);
 
