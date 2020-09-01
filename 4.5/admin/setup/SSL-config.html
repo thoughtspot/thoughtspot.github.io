@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2704,7 +2704,7 @@ $('#toc').on('click', 'a', function() {
 <ul>
   <li>Check with your IT department to see if they already have an SSL certificate you can use.</li>
   <li>If not, you will need to obtain the certificate from an issuing authority.</li>
-  <li>Alternatively, you may disable SSL if you don’t want the security it provides by using the command <code class="highlighter-rouge">tscli ssl off</code>.</li>
+  <li>Alternatively, you may disable SSL if you don’t want the security it provides by using the command <code class="language-plaintext highlighter-rouge">tscli ssl off</code>.</li>
 </ul>
 
 <p>There are many SSL vendors to choose from. Check with your existing Web hosting provider first, to see if they can provide the certificate for you.</p>
@@ -2727,26 +2727,26 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Copy the certificate and key files to ThoughtSpot:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   $ scp &lt;key&gt; &lt;certificate&gt; admin@&lt;IP_address&gt;:&lt;path&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   $ scp &lt;key&gt; &lt;certificate&gt; admin@&lt;IP_address&gt;:&lt;path&gt;
 </code></pre></div>    </div>
   </li>
   <li>Log in to the Linux shell using SSH.</li>
   <li>
     <p>Change directories to where you copied the certificate:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd &lt;path&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd &lt;path&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Issue the <code class="highlighter-rouge">tscli</code> command to install the certificate:</p>
+    <p>Issue the <code class="language-plaintext highlighter-rouge">tscli</code> command to install the certificate:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ssl add-cert &lt;key&gt; &lt;certificate&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli ssl add-cert &lt;key&gt; &lt;certificate&gt;
 </code></pre></div>    </div>
   </li>
   <li>
     <p>To test that the certificate was installed correctly, <a href="logins.html#log-in-to-the-thoughtspot-application">Log in to the ThoughtSpot application</a>.</p>
 
-    <p>You should see that the application’s URL begins with <code class="highlighter-rouge">https://</code>.</p>
+    <p>You should see that the application’s URL begins with <code class="language-plaintext highlighter-rouge">https://</code>.</p>
   </li>
 </ol>
 
@@ -2764,7 +2764,7 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p>Issue the following command:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl set-min-version 1.2
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli ssl set-min-version 1.2
 </code></pre></div>    </div>
 
     <p>This will block all usage of older versions.</p>
@@ -2800,7 +2800,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>

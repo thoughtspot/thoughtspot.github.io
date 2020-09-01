@@ -241,7 +241,7 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li><li><a href="/6.1/index.html">6.1</a></li>
+                          <li><a href="/6.1/index.html">latest</a></li>
                         
                         
                         
@@ -2741,28 +2741,28 @@ transfer objects to or from the system user or the administrative user.</p>
 
 <h3 id="request-url">Request URL</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/transfer/ownership
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/transfer/ownership
 </code></pre></div></div>
 
 <p>Curl example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ccurl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/transfer/ownership?fromUserName=Auser&amp;toUserName=Buser'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ccurl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/transfer/ownership?fromUserName=Auser&amp;toUserName=Buser'
 
 </code></pre></div></div>
 
 <h3 id="response-object-format">Response Object Format</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>no content
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>no content
 </code></pre></div></div>
 
 <h3 id="response-code">Response Code</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
 </code></pre></div></div>
 
 <h3 id="response-headers">Response Headers</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-incident-id": "d28fd603-bd7e-414f-882b-794d74c4b469",
   "x-callosum-trace-id": "55453051-5fb5-4139-8d24-adcc0b1b24f2",
   "date": "Thu, 15 Mar 2018 22:21:47 GMT",
@@ -2784,10 +2784,10 @@ transfer objects to or from the system user or the administrative user.</p>
 API is for users and groups. It should help to keep ThoughtSpot users and groups
 automatically synchronized with your external database.</p>
 
-<p>Specifically, you will have to make a call to <code class="highlighter-rouge">/tspublic/v1/user/sync</code> containing
+<p>Specifically, you will have to make a call to <code class="language-plaintext highlighter-rouge">/tspublic/v1/user/sync</code> containing
 all users and groups present in the external database. If the call succeeds,
 then it is guaranteed that the users and groups in ThoughtSpot match those
-specified in the list of objects passed to <code class="highlighter-rouge">/tspublic/v1/user/sync</code>. This means
+specified in the list of objects passed to <code class="language-plaintext highlighter-rouge">/tspublic/v1/user/sync</code>. This means
 that:</p>
 
 <ul>
@@ -2837,17 +2837,17 @@ The returned object represents the changes that were made in ThoughtSpot.</li>
 
 <h3 id="request-url-1">Request URL</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/sync
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/sync
 </code></pre></div></div>
 
 <p>Curl example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'applyChanges=false' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/sync'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'applyChanges=false' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/sync'
 </code></pre></div></div>
 
 <h3 id="response-object-format-1">Response Object Format</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   'usersAdded': ['username1','username2'],
   'usersDeleted': ['username3'],
   'usersUpdated': ['username4'],
@@ -2859,12 +2859,12 @@ The returned object represents the changes that were made in ThoughtSpot.</li>
 
 <h3 id="response-code-1">Response Code</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>415
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>415
 </code></pre></div></div>
 
 <h3 id="response-headers-1">Response Headers</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-incident-id": "645499d1-d0cf-4b3b-bbdc-4296abb9a326",
   "x-callosum-trace-id": "19f7ad7d-226a-4e88-a301-405f85125959",
   "date": "Sun, 19 Feb 2017 03:55:52 GMT",
@@ -2915,12 +2915,12 @@ The returned object represents the changes that were made in ThoughtSpot.</li>
 
 <h3 id="request-url-2">Request URL</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/updatepassword
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/updatepassword
 </code></pre></div></div>
 
 <p>Curl example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest¤tpassword=test&amp;password=foobarfoobar' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/updatepassword'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest¤tpassword=test&amp;password=foobarfoobar' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/updatepassword'
 
 </code></pre></div></div>
 
@@ -2994,17 +2994,17 @@ of principal objects. This API is for users and groups.</p>
 
 <h3 id="request-url-3">Request URL</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/list
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/list
 </code></pre></div></div>
 
 <p>Curl example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/list'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X GET --header 'Accept: application/json' 'https://&lt;instance&gt;/callosum/v1/tspublic/v1/user/list'
 </code></pre></div></div>
 
 <h3 id="response-body-format">Response Body format</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
   {
     "name": "Group 1",
     "displayName": "Group Display Name 1",
@@ -3024,7 +3024,7 @@ of principal objects. This API is for users and groups.</p>
 
 <h3 id="response-body-example">Response Body example</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
   {
     "name": "Sales Executives",
     "displayName": "Sales Executives",
@@ -3077,12 +3077,12 @@ of principal objects. This API is for users and groups.</p>
 
 <h3 id="response-code-2">Response Code</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>200
 </code></pre></div></div>
 
 <h3 id="response-headers-2">Response Headers</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "x-callosum-incident-id": "1be6e07b-b7aa-4531-8597-8852760757f0",
   "x-callosum-trace-id": "e92c54ca-d5f1-44a6-ab8e-f6871bb0da8b",
   "date": "Sun, 19 Feb 2017 04:14:13 GMT",
@@ -3125,7 +3125,7 @@ of principal objects. This API is for users and groups.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Aug 20, 2020 <br />
+        Generated: Aug 31, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/4.5/images/company_logo.png" alt="Company logo"/></p>
