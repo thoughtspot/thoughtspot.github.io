@@ -188,7 +188,7 @@ $ tscli cluster get-config
 ```
 {: id="cluster-install"}
 ## Install Cluster
-All nodes have now been configured. Next, you must install the cluster using the release tarball (est. time 1 hour). Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer. If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](https://community.thoughtspot.com/customers/s/contactsupport) to access the release tarball.
+All nodes have now been configured. Next, you must install the cluster using the release tarball (est. time 1 hour). Make sure you can connect to ThoughtSpot remotely. If you can, you can run the installer on your local computer. If you have not received a link to download the release tarball, open a support ticket at [ThoughtSpot Support](http://thoughtspot.com/support-request) to access the release tarball.
 
 {: id="run-installer"}
 ### 1. Run the Installer  
