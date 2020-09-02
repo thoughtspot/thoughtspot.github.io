@@ -3,6 +3,8 @@ title: [DataFlow requirements and guidelines]
 last_updated: 08/24/2020
 summary: "Here are some requirements and guidelines for working with DataFlow."
 sidebar: mydoc_sidebar
+redirect_from:
+- /data-integrate/dataflow/dataflow-best-practices.html
 toc: false
 permalink: /:collection/:path.html
 ---

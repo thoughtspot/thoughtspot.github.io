@@ -27,6 +27,6 @@ See
 - [Key features]({{ site.baseurl }}/data-integrate/dataflow/dataflow-key-features.html)
 - [How DataFlow works]({{ site.baseurl }}/data-integrate/dataflow/dataflow-workflow.html)
 - [DataFlow Home page]({{ site.baseurl }}/data-integrate/dataflow/dataflow-home.html)
-- [Requirements and guidelines]({{ site.baseurl }}/data-integrate/dataflow/dataflow-best-practices.html), including supported TQL editor commands
+- [Requirements and guidelines]({{ site.baseurl }}/data-integrate/dataflow/dataflow-requirements-guidelines.html), including supported TQL editor commands
 - Supported [databases]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databases.html), [filesystems]({{ site.baseurl }}/data-integrate/dataflow/dataflow-filesystems.html), and [applications]({{ site.baseurl }}/data-integrate/dataflow/dataflow-applications.html)
 - [DataFlow administration]({{ site.baseurl }}/data-integrate/dataflow/dataflow-administration.html), in particular [managing users]({{ site.baseurl }}/data-integrate/dataflow/dataflow-user-management.html) and [configuring email service]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mail-setup.html)
