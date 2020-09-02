@@ -1848,7 +1848,7 @@ entries:
   - sectiontitle: DataFlow
     output: web,dataflowGD
     sectionitems:
-    - title: DataFlow Overview
+    - title: Overview
       url: /data-integrate/dataflow/dataflow.html
       output: web,dataflowGD
     - title: Key features
@@ -1860,7 +1860,7 @@ entries:
     - title: DataFlow home page
       url: /data-integrate/dataflow/dataflow-home.html
       output: web,dataflowGD
-    - title: Guidelines and best practices
+    - title: Requirements and guidelines
       url: /data-integrate/dataflow/dataflow-best-practices.html
       output: web,dataflowGD
     - levelTwoTitle: Database Connections
