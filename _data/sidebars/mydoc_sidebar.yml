@@ -1861,7 +1861,7 @@ entries:
       url: /data-integrate/dataflow/dataflow-home.html
       output: web,dataflowGD
     - title: Requirements and guidelines
-      url: /data-integrate/dataflow/dataflow-best-practices.html
+      url: /data-integrate/dataflow/dataflow-requirements-guidelines.html
       output: web,dataflowGD
     - levelTwoTitle: Database Connections
       output: web,dataflowGD
