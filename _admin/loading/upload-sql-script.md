@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can run a SQL script to create your database schema and relationships or joins through the browser, without having to log into the shell on the ThoughtSpot instance. You can edit the script and run it directly in the browser to create the schema. Note that you must have the **can manage data** permission to upload schemas. Use this feature for the following actions:
+You can run a SQL script to create your database schema and relationships or joins through the browser, without having to log into the shell on the ThoughtSpot instance. You can edit the script and run it directly in the browser to create the schema. Note that you must have the **can manage data** permission and **admin** privileges to upload schemas. Use this feature for the following actions:
 
 -   [Create the SQL script ahead of time](create-schema-with-script.html#), and [use the browser to run it](#upload-schema).
 -   [Use the **Write TQL** interface](#write-schema) to type your SQL directly into the browser.
