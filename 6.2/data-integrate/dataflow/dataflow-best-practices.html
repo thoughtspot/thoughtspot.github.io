@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Here are some requirements and recommendations when working with DataFlow."> -->
+<!-- <meta name="description" content="Here are some requirements and guidelines for working with DataFlow."> -->
 <meta name="keywords" content=",  ">
-<title>DataFlow best practices and guidelines | ThoughtSpot</title>
+<title>DataFlow requirements and guidelines | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.2/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,22 +48,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“DataFlow best practices and guidelines”] | thoughtspot.github.io</title>
+<title>[“DataFlow requirements and guidelines”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="[“DataFlow best practices and guidelines”]" />
+<meta property="og:title" content="[“DataFlow requirements and guidelines”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="You must open port 9000. See Network ports. Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source." />
-<meta property="og:description" content="You must open port 9000. See Network ports. Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source." />
+<meta name="description" content="Requirements" />
+<meta property="og:description" content="Requirements" />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-01T14:40:02-07:00" />
+<meta property="article:published_time" content="2020-09-01T20:03:11-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“DataFlow best practices and guidelines”]" />
+<meta property="twitter:title" content="[“DataFlow requirements and guidelines”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“DataFlow best practices and guidelines”]","url":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html","dateModified":"2020-09-01T14:40:02-07:00","datePublished":"2020-09-01T14:40:02-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html"},"description":"You must open port 9000. See Network ports. Allocate minimum disk space of approximately 5 GB in the /etc/thoughtspot/ directory. Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“DataFlow requirements and guidelines”]","url":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html","dateModified":"2020-09-01T20:03:11-07:00","datePublished":"2020-09-01T20:03:11-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/data-integrate/dataflow/dataflow-best-practices.html"},"description":"Requirements","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3808,7 +3808,7 @@ $(document).ready(function(){
             
               
                 
-                  <li><a href="/6.2/data-integrate/dataflow/dataflow.html">DataFlow Overview</a></li>
+                  <li><a href="/6.2/data-integrate/dataflow/dataflow.html">Overview</a></li>
                 
               
             
@@ -3832,7 +3832,7 @@ $(document).ready(function(){
             
               
                 
-                  <li class="active"><a href="/6.2/data-integrate/dataflow/dataflow-best-practices.html">Guidelines and best practices</a></li>
+                  <li class="active"><a href="/6.2/data-integrate/dataflow/dataflow-best-practices.html">Requirements and guidelines</a></li>
                 
               
             
@@ -5229,7 +5229,7 @@ $(document).ready(function(){
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">DataFlow best practices and guidelines</h1>
+   <h1 class="post-title-main">DataFlow requirements and guidelines</h1>
 </div>
 
 
@@ -5237,33 +5237,8 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">Here are some requirements and recommendations when working with DataFlow.</div>
+    <div class="summary">Here are some requirements and guidelines for working with DataFlow.</div>
    
-
-    
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the
-on-page minitoc. if you use html tags, you must supply an ID for the heading
-element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-
-});
-</script>
-
-<div id="toc"></div>
 
     
 
@@ -5279,10 +5254,28 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <ul>
+  <h2 id="requirements">Requirements</h2>
+
+<ul>
   <li>You must open port 9000. See <a href="/6.2/appliance/ports.html">Network ports</a>.</li>
   <li>Allocate minimum disk space of approximately 5 GB in the <code>/etc/thoughtspot/</code> directory.</li>
+</ul>
+
+<h2 id="guidelines">Guidelines</h2>
+
+<ul>
   <li>Some data sources, such as Snowflake, Amazon S3, Google Cloud Storage, and Azure Blob Storage, temporarily store data as local files before loading into the internal ThoughtSpot database. These sources require additional disk space, depending on how much data is in the source.</li>
+  <li>The DataFlow TQL editor supports the following commands:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">ALTER TABLE</code>: rename, add, and remove columns. Modify column datatypes. Add and remove primary and foreign keys.</li>
+      <li><code class="language-plaintext highlighter-rouge">CREATE DATABASE</code></li>
+      <li><code class="language-plaintext highlighter-rouge">CREATE SCHEMA</code></li>
+      <li><code class="language-plaintext highlighter-rouge">DELETE FROM &lt;table&gt; [WHERE...]</code></li>
+      <li><code class="language-plaintext highlighter-rouge">UPDATE &lt;table&gt; ... SET ... [WHERE ...]</code></li>
+    </ul>
+
+    <p>For details on these TQL commands, see the <a href="/6.2/reference/sql-cli-commands.html">TQL reference</a>.</p>
+  </li>
 </ul>
 
   <div class="tags">
