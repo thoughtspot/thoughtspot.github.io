@@ -1,12 +1,16 @@
 ---
 title: [Invite others to ThoughtSpot]
-last_updated: 8/25/2020
+last_updated: 9/3/2020
 summary: "Learn how you can invite others to a free trial of ThoughtSpot Cloud."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-As an analyst, you understand the power of ThoughtSpot, and you want to share this power with others. You can invite others to try ThoughtSpot out by joining your free trial cluster of ThoughtSpot Cloud. Select **Invite others** in the top right corner of the analyst home hub:
+As an analyst, you understand the power of ThoughtSpot, and you want to share this power with others. You can invite others to try ThoughtSpot out by joining your free trial cluster of ThoughtSpot Cloud.
+
+{% include note.html content="This feature is only available for users on free trial clusters of ThoughtSpot Cloud." %}
+
+Select **Invite others** in the top right corner of the analyst home hub:
 
 ![Select invite others]({{ site.baseurl }}/images/invite-others-button.png "Select invite others")
 
