@@ -19,6 +19,11 @@ This behavior is referred to as “upsert” because it does an `INSERT` or an `
 
 Note that ThoughtSpot does not check for primary key violations across different shards of the table. Therefore, you need to shard the table on the primary key columns if you require this “upsert” behavior.
 
+## Permitted joins and necessary permissions
+See this matrix for information about which joins you can create, and what permissions these joins require.
+
+{% include content/joins-matrix.md %}
+
 ## Foreign key relationships
 
 Foreign key relationships tell ThoughtSpot how two tables can be joined. These relationships are only used for joining the tables, and not for referential integrity constraint checking.
