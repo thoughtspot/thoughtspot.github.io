@@ -68,8 +68,9 @@ Next, [create Worksheets]({{ site.baseurl }}/admin/ts-cloud/worksheet-create.htm
 
 ## Additional resources
 
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
-
-As you develop your expertise with joins and schema, we recommend the following course:
+As you develop your expertise with joins and schema, we recommend the following ThoughtSpot U course:
 
 - <a href="https://training.thoughtspot.com/1-setting-up-joins" target="_blank">Setting up joins</a>
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
