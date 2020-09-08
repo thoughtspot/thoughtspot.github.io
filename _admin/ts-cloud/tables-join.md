@@ -72,5 +72,5 @@ As you develop your expertise with joins and schema, we recommend the following 
 
 - <a href="https://training.thoughtspot.com/1-setting-up-joins" target="_blank">Setting up joins</a>
 
-See other training resources at <br/>
+See other training resources at <br />
 <a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
