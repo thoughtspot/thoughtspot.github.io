@@ -196,6 +196,13 @@ Verify the existence of your data disks, created in Step 4 of [create an instanc
 
 10. Repeat the steps in this section for each node in your cluster.
 
+## Additional resources
+As you develop your expertise in Azure VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: Azure](https://training.thoughtspot.com/node-network-configuration/510569){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+
 <!--
 ### Create network support settings
 
