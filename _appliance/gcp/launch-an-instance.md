@@ -219,6 +219,13 @@ each VM through SSH as user "admin", and complete the following preparation step
 ## Install cluster
 To install your ThoughtSpot cluster, complete the installation process outlined in [Installing ThoughtSpot in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html).
 
+## Additional resources
+As you develop your expertise in GCP VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: GCP](https://training.thoughtspot.com/node-network-configuration/430736){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+
 ## Related information
 
 [Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets){:target="_blank"}  

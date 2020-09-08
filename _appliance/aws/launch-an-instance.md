@@ -189,3 +189,10 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 {: id="prepare-vms"}
 ## Prepare the VMs
 Before installing a ThoughtSpot cluster, an administrator must [prepare the VMs.]({{ site.baseurl }}/appliance/aws/aws-prepare-vms.html)
+
+## Additional resources
+As you develop your expertise in AWS VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: AWS](https://training.thoughtspot.com/node-network-configuration/484851){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

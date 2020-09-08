@@ -128,6 +128,13 @@ $ tscli cluster get-config
 ## Install ThoughtSpot software
 Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/azure/azure-cluster-install.html).
 
+## Additional resources
+As you develop your expertise in network configuration, we recommend the following ThoughtSpot U course:
+* [Network Configuration](https://training.thoughtspot.com/node-network-configuration/437249){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+
 {% include content/install/install-cluster-error-recovery.md %}
 
 ## Related information
