@@ -13,7 +13,7 @@ Companies usually secure applications that access data. To use SSL with ThoughtS
 
 If you do not have an SSL certificate, there are options:
 
--   Check with your IT department if they have an SSL certificate you can use.
+-   Check with your IT department to see if they have an SSL certificate you can use.
 -   Obtain the certificate from an issuing authority.
 -   Disable SSL and loose the security it provides. Use the following command:
     ```
