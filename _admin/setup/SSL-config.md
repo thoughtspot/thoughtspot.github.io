@@ -111,7 +111,7 @@ Follow these instructions to install the SSL certificate using tscli:
 5. To install the certificate, issue the `tscli` command:
 
     ```
-    $ tscli ssl add-cert <key> <certificate>
+    $ tscli ssl add-cert <key> <certificate> <IP_address_or_URL>
     ```
 
 6. To test that the certificate is correctly installed, sign in to the ThoughtSpot application (https://docs.thoughtspot.com/6.0/admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
