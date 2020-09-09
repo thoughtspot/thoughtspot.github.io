@@ -87,6 +87,13 @@ ThoughtSpot instances on AWS need AWS EC2 instances to be provisioned in the AWS
 12.  Click **Launch Instances**. Wait a few minutes for it to fully start up. Once it has started up, it will show up on the EC2 console.
 13.  Contact ThoughtSpot Support to complete your ThoughtSpot installation.
 
+## Additional resources
+As you develop your expertise in AWS VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: AWS](https://training.thoughtspot.com/node-network-configuration/484851){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+
 ## Related information  
 
 [EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
