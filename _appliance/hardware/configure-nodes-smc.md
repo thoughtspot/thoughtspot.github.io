@@ -12,7 +12,7 @@ After you connect the appliance, configure the nodes in your Mac or Windows term
 | &#10063; | [Step 3: Get a template for node configuration](#node-step-3) |
 | &#10063; | [Step 4: Prepare node configuration](#node-step-4) |
 | &#10063; | [Step 5: Configure the nodes](#node-step-5) |
-| &#10063; | [Step 6: Confirm node configuration](#node-step-6) | 
+| &#10063; | [Step 6: Confirm node configuration](#node-step-6) |
 
 If you completed ThoughtSpot's [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} form and returned it to [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) before ThoughtSpot shipped the appliance, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
 
@@ -126,3 +126,10 @@ $ tscli cluster get-config
 
 ## Install the cluster
 Next, [install your cluster.]({{ site.baseurl }}/appliance/hardware/smc-cluster-install.html)
+
+## Additional resources
+As you develop your expertise in network configuration, we recommend the following ThoughtSpot U course:
+* [Network Configuration](https://training.thoughtspot.com/node-network-configuration/437249){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
