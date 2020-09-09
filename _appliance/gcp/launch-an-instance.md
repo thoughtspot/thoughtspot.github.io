@@ -26,7 +26,7 @@ The following topics walk you through this process.
 
 ###  Prerequisites
 
-1. Ensure that **Network Service Tier** is set to **Premium** for all VMs to be used in your ThoughtSpot cluster. 
+1. Ensure that **Network Service Tier** is set to **Premium** for all VMs to be used in your ThoughtSpot cluster.
 2. A ThoughtSpot cluster requires 10 Gb/s bandwidth (or better) between any two nodes. This must be established before creating a new cluster.
 
 ###  Create an instance
@@ -119,3 +119,10 @@ each VM through SSH as user "admin", and complete the following preparation step
 
 Upload the TS tarball to one of the machines and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
+
+## Additional resources
+As you develop your expertise in GCP VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: GCP](https://training.thoughtspot.com/node-network-configuration/430736){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
