@@ -272,7 +272,7 @@ This subcommand has the following options:
 ### backup
 
 ```
-tscli backup [-h] {create,delete,ls,restore}
+tscli backup [-h] {create,delete,ls,}
 ```
 
   This subcommand has the following options:
@@ -340,40 +340,6 @@ tscli backup [-h] {create,delete,ls,restore}
       <dt><code>tscli backup ls</code></dt>
       <dd>Lists all periodic backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
     </dlentry>
-
-    <dlentry>
-      <dt><code>tscli backup restore</code></dt>
-      <dd>Restores cluster using backup, with the following parameters:
-      <dl>
-        <dlentry>
-        <dt><code>--release <em>RELEASE</em></code></dt>
-          <dd>Restore the cluster on a specific release number.</dd>
-        </dlentry>
-        <dlentry>
-        <dt><code>--disable_rotate_keys</code></dt>
-          <dd><p>
-            Disables cluster rotate key configurations.
-            </p>
-          <p>
-            The default is <code>False</code>.
-            </p></dd>
-        </dlentry>
-        <dlentry>
-        <dt><code>--enable_cloud_storage</code></dt>
-          <dd>Enables object storage, on the specified platform, either <code>s3a</code> or <code>gcs</code>. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd>
-        </dlentry>
-        <dlentry>
-        <dt>--heterogeneous</dt>
-          <dd><p>
-            Should be set for heterogeneous clusters.
-            </p>
-          <p>
-            The default is <code>False</code>.
-            </p></dd>
-        </dlentry>
-        </dl>
-      </dd>
-    </dlentry>
   </dl>
 
 {: id="tscli-backup-policy"}
@@ -398,7 +364,7 @@ This subcommand has the following options:
 <dlentry>
 <dt><code>mode {full,light,dataless}</code></dt>
 <dd>
-<p>The backup mode. A `FULL` backup is required for restoring a cluster.</p>
+<p>The backup mode. A <code>FULL</code> backup is required for restoring a cluster.</p>
 <p>The default is <code>full.</code></p>
 </dd></dlentry>
 <dlentry>
@@ -797,7 +763,7 @@ This subcommand has the following options:
     <p>The default is <code>False</code>.</p></dd></dlentry>
     <dlentry>
     <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
-    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
+    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli cluster restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
     <dlentry>
     <dt><code>--heterogeneous</code></dt>
     <dd><p>Should be set for heterogeneous clusters.</p>
