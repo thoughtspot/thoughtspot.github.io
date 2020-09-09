@@ -1,25 +1,23 @@
 ---
-title: ["6.2 Release Notes"]
+title: ["6.3 Release Notes"]
 toc: false
-last_updated: 21/07/2020
+last_updated: 09/09/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.2 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.3 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.2 New Features](#6-2-new)
+* [6.3 New Features](#6-3-new)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
 
-{: id="6-2-new"}
-## 6.2 New Features and Functionality
+{: id="6-3-new"}
+## 6.3 New Features and Functionality
 
-For a complete list of issues that we fixed in this release, see [6.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2).
-
-{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
+For a complete list of issues that we fixed in this release, see [6.3 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-3).
 
 ### For the Analyst
 
@@ -232,12 +230,12 @@ Please contact us if you are interested in participating in the <a href="mailto:
 If you are running one of the following versions, you can upgrade to the 6.2 release
 directly:
 
-* 6.0.x to 6.2
-* 6.1.x to 6.2
+* 6.1.x to 6.3
+* 6.2.x to 6.3
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.3.x, or version 6.0.x, and then to the 6.2 release.
+First, upgrade to version 6.1.x, or version 6.2.x, and then to the 6.3 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}

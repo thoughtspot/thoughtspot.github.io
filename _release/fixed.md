@@ -1,15 +1,21 @@
 ---
 title: ["Fixed issues"]
 keywords: "fixed issues"
-last_updated: 04/09/2020
+last_updated: 09/09/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot releases.
 
 <ul>
-<li><a href="#6-2">6.2 Fixed issues</a></li>
+<li><a href="#6-3">6.3 Fixed issues</a></li>
 <li>
+<details>
+<summary>6.2.X Releases</summary>
+<ul>
+<li><a href="#6-2">6.2 Fixed issues</a></li>
+</ul>
+</details>
 <details>
 <summary>6.1.X Releases</summary>
 <ul>
@@ -88,6 +94,10 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </li>
 </ul>
 
+<a id="6-3"></a>
+## 6.3 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.3.
 
 <a id="6-2"></a>
 ## 6.2 Fixed issues
