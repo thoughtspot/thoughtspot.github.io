@@ -40,6 +40,7 @@ Depending on your situation and your goals, you can choose to use either a snaps
 <col width="42%" />
 </colgroup>
                 <tr>
+                    <td/>
                     <td><strong>Snapshot</strong></td>
                     <td><strong>Backup</strong></td>
                 </tr>
