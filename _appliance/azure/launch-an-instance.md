@@ -276,3 +276,10 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    ```
 
 5. Reboot the nodes.
+
+## Additional resources
+As you develop your expertise in Azure VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: Azure](https://training.thoughtspot.com/node-network-configuration/510569){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
