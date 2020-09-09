@@ -154,3 +154,10 @@ There is no network at this point on your VMs. As a prerequisite:
 1. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
+
+## Additional resources
+As you develop your expertise in VMware VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: VMware](https://training.thoughtspot.com/node-network-configuration/569476){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

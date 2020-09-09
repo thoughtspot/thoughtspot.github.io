@@ -88,3 +88,10 @@ $ tscli cluster get-config
 
 ## Install your cluster
 Next, [install your cluster.]({{ site.baseurl }}/appliance/hardware/install-cluster-dell.html)
+
+## Additional resources
+As you develop your expertise in network configuration, we recommend the following ThoughtSpot U course:
+* [Network Configuration](https://training.thoughtspot.com/node-network-configuration/437249){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

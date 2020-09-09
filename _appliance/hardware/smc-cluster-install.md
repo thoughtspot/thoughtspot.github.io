@@ -215,3 +215,10 @@ Next, retry the set-config command.
 $ cat nodes.config | tscli cluster set-config
 ```
 The command output should no longer have a warning.
+
+## Additional resources
+As you develop your expertise in installing ThoughtSpot clusters in SMC, we recommend the following ThoughtSpot U course:
+* [Create a Cluster](https://training.thoughtspot.com/create-upgrade-patch-a-thoughtspot-cluster/430642){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
