@@ -70,6 +70,13 @@ Run `tscli cluster create` to create the cluster.
 ## Lean configuration
 **(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.
 
+## Additional resources
+As you develop your expertise in installing ThoughtSpot clusters in VMware, we recommend the following ThoughtSpot U course:
+* [Create a Cluster](https://training.thoughtspot.com/create-upgrade-patch-a-thoughtspot-cluster/430642){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot:
 
