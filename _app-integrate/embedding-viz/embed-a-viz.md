@@ -44,11 +44,11 @@ before continuing.
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>/<vizualizationId>`
 
-## Edit the test.html
+## Edit the test.html file
 
 You need to edit the page in your application or web page where you want to
 embed a ThoughtSpot pinboard or visualization. For this example, you'll get a copy of the
-<a href="{{"/downloads/test.html" | prepend: site.baseurl }}" target="_blank"><code>test.html</code></a>  file.
+<a href="{{ site.baseurl }}/downloads/test.html" download>test.html</a> file.
 
 1. Create an empty directory called `test`.
 2. Save the `test.html` file to the `test` directory.
