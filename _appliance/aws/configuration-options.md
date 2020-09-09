@@ -25,7 +25,7 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 
 ![]({{ site.baseurl }}/images/persistent-storage-ebs.svg "AWS EBS-only Persistent Storage")
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required root volume capacity |
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required boot volume capacity |
 | --- | --- | --- |--- | --- |
 | 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 2X 400 GB | 200 GB for each node |
 | 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 2X 400 GB | 200 GB for each node |
@@ -38,7 +38,7 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 
 ![]({{ site.baseurl }}/images/persistent-storage-ebs-s3.svg "AWS EBS and S3 Persistent Storage")
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required root volume capacity |
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required boot volume capacity |
 | --- | --- | --- |--- | --- |
 | 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 1x 500 GB | 200 GB for each node |
 | 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 1x 500 GB | 200 GB for each node |
