@@ -703,7 +703,7 @@ entries:
         - title: Use a script
           url: /admin/loading/load-with-script.html
           output: web,admBk
-        - title: Use the tsload service
+        - title: Use the tsload connnector
           url: /admin/loading/load-with-tsload.html
           output: web,admBk
       - levelThreeTitle: Delete a data source
@@ -2418,7 +2418,7 @@ entries:
     - title: tsload flag reference
       url: /reference/data-importer-ref.html
       output: web,refGd
-    - title: tsload service API reference
+    - title: tsload connector reference
       url: /reference/tsload-service-api-ref.html
       output: web,refGd
     - title: tscli command reference
