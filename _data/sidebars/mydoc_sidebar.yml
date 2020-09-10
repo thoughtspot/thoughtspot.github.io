@@ -2415,6 +2415,9 @@ entries:
     - title: TQL reference
       url: /reference/sql-cli-commands.html
       output: web,refGd
+    - title: TQL service reference
+      url: /reference/tql-service-api-ref.html
+      output: web,refGd
     - title: tsload flag reference
       url: /reference/data-importer-ref.html
       output: web,refGd
