@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-09T14:19:54-07:00" />
+<meta property="article:published_time" content="2020-09-10T09:36:59-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“tscli command reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“tscli command reference”]","dateModified":"2020-09-09T14:19:54-07:00","url":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html","datePublished":"2020-09-09T14:19:54-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html"},"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“tscli command reference”]","dateModified":"2020-09-10T09:36:59-07:00","url":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html","datePublished":"2020-09-10T09:36:59-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html"},"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1962,7 +1962,7 @@ $(document).ready(function(){
                         
                           
                               
-                                  <li><a href="/latest/admin/loading/load-with-tsload.html">Use the tsload service</a></li>
+                                  <li><a href="/latest/admin/loading/load-with-tsload.html">Use the tsload connector</a></li>
                               
                             
                         
@@ -5068,7 +5068,7 @@ $(document).ready(function(){
             
               
                 
-                  <li><a href="/latest/reference/tsload-service-api-ref.html">tsload service API reference</a></li>
+                  <li><a href="/latest/reference/tsload-service-api-ref.html">tsload connector reference</a></li>
                 
               
             
@@ -5518,7 +5518,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
 <h3 id="tscli-backup">backup</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup [-h] {create,delete,ls,restore}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tscli backup [-h] {create,delete,ls,}
 </code></pre></div></div>
 
 <p>This subcommand has the following options:</p>
@@ -5587,39 +5587,6 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
       <dd>Lists all periodic backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
     </dlentry>
 
-    <dlentry>
-      <dt><code>tscli backup restore</code></dt>
-      <dd>Restores cluster using backup, with the following parameters:
-      <dl>
-        <dlentry>
-        <dt><code>--release <em>RELEASE</em></code></dt>
-          <dd>Restore the cluster on a specific release number.</dd>
-        </dlentry>
-        <dlentry>
-        <dt><code>--disable_rotate_keys</code></dt>
-          <dd><p>
-            Disables cluster rotate key configurations.
-            </p>
-          <p>
-            The default is <code>False</code>.
-            </p></dd>
-        </dlentry>
-        <dlentry>
-        <dt><code>--enable_cloud_storage</code></dt>
-          <dd>Enables object storage, on the specified platform, either <code>s3a</code> or <code>gcs</code>. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd>
-        </dlentry>
-        <dlentry>
-        <dt>--heterogeneous</dt>
-          <dd><p>
-            Should be set for heterogeneous clusters.
-            </p>
-          <p>
-            The default is <code>False</code>.
-            </p></dd>
-        </dlentry>
-        </dl>
-      </dd>
-    </dlentry>
   </dl>
 
 <h3 id="tscli-backup-policy">backup-policy</h3>
@@ -6033,7 +6000,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
     <p>The default is <code>False</code>.</p></dd></dlentry>
     <dlentry>
     <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
-    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
+    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli cluster restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
     <dlentry>
     <dt><code>--heterogeneous</code></dt>
     <dd><p>Should be set for heterogeneous clusters.</p>
@@ -7839,7 +7806,7 @@ Support for help on how to configure this list.</div>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Sep 9, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Sep 10, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 4/24/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
