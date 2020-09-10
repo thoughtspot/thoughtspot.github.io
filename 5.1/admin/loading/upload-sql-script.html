@@ -7,8 +7,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Importing a schema through the Web browser makes it possible to run your SQL script without needing to have a Linux login."> -->
-<meta name="keywords" content=",  schema, import">
+<!-- <meta name="description" content="You can import a schema through the Web browser, allowing you to run your SQL script without SSH access for the cluster."> -->
+<meta name="keywords" content=",  ">
 <title>Upload and run a SQL script | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.1/css/syntax.css">
 
@@ -3180,7 +3180,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">Importing a schema through the Web browser makes it possible to run your SQL script without needing to have a Linux login.</div>
+    <div class="summary">You can import a schema through the Web browser, allowing you to run your SQL script without SSH access for the cluster.</div>
    
 
     
@@ -3216,19 +3216,22 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    2 minutes
   
 </span>-->
 
     
 
-  <p>You can run a SQL script to create your database schema through the browser, without having to log in to the shell on the ThoughtSpot instance. You can edit the script and run it directly in the browser to create the schema. You can use this capability in any of these ways:</p>
+  <p>You can run a SQL script to create your database schema and relationships or joins through the browser, without having to log into the shell on the ThoughtSpot instance. You can edit the script and run it directly in the browser to create the schema. Note that you must have the <strong>can manage data</strong> permission and <strong>admin</strong> privileges to upload schemas. Use this feature for the following actions:</p>
 
 <ul>
-  <li><a href="create-schema-with-script.html#">Create the SQL script ahead of time</a>, and use the browser to run it.</li>
-  <li>Use the editor to type your SQL directly into the browser.</li>
-  <li>Use the browser SQL interface as an interactive SQL editor, for example to test an existing script or make changes to an existing schema.</li>
+  <li><a href="create-schema-with-script.html#">Create the SQL script ahead of time</a>, and <a href="#upload-schema">use the browser to run it</a>.</li>
+  <li><a href="#write-schema">Use the <strong>Write TQL</strong> interface</a> to type your SQL directly into the browser.</li>
+  <li>Use the <strong>Write TQL</strong> interface as an interactive SQL editor, to make changes to an existing schema.</li>
 </ul>
+
+<h2 id="upload-schema">Run or edit an existing script</h2>
+<p>To run or edit a SQL script that you already wrote to create your database schema and relationships through the browser, follow these steps.</p>
 
 <ol>
   <li>
@@ -3238,18 +3241,72 @@ $('#toc').on('click', 'a', function() {
     <p>Click <strong>Data</strong>, on the top navigation bar.</p>
   </li>
   <li>
-    <p>Click the ellipses icon <img src="/5.1/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, and select <strong>Upload schema</strong>.</p>
+    <p>Click the ellipsis icon <img src="/5.1/images/icon-more-10px.png" alt="more options menu icon" class="inline" />, and select <strong>Upload schema</strong>.</p>
 
-    <p><img src="/5.1/images/import_schema.png" alt="" title="Upload schema" /></p>
+    <p><img src="/5.1/images/upload-schema.png" alt="Upload schema" title="Upload schema" /></p>
   </li>
-  <li>Drag and drop your SQL file into the browser, or choose <strong>Browse Your Files</strong> to locate it.</li>
   <li>
-    <p>You’re now in the SQL editor. Use it to view your script and make any changes.</p>
+    <p>Drag and drop your SQL script into the browser, or choose <strong>Browse Your Files</strong> to locate it. You cannot copy and paste an existing SQL script into the SQL editor.</p>
 
-    <p><img src="/5.1/images/SQL_editor.png" alt="" title="Import schema" /></p>
+    <p><img src="/5.1/images/upload-schema-browse.png" alt="Drag and drop your SQL script" title="Drag and drop your SQL script" /></p>
   </li>
-  <li>When ready, run your script by clicking the <strong>Execute</strong> button.</li>
-  <li>If there are any errors, correct them and run the script again.</li>
+  <li>
+    <p>After you upload your SQL script, you enter the SQL editor. Use it to view your script and make any changes.</p>
+
+    <p><img src="/5.1/images/SQL_editor.png" alt="SQL editor" title="SQL editor" /></p>
+  </li>
+  <li>
+    <p>To edit the script, click on the line you would like to change, and type your changes into the interface.</p>
+
+    <p><img src="/5.1/images/edit-schema.png" alt="Edit your schema" title="Edit your schema" /></p>
+  </li>
+  <li>
+    <p>When ready, run your script by clicking the <strong>Execute</strong> button.</p>
+
+    <p><img src="/5.1/images/execute-schema.png" alt="Execute your schema" title="Execute your schema" /></p>
+  </li>
+  <li>
+    <p>If there are any errors, correct them and run the script again.</p>
+  </li>
+</ol>
+
+<h2 id="write-schema">Write a new SQL script</h2>
+<p>To write a new SQL script to create your database schema and relationships through the browser, follow these steps.</p>
+
+<ol>
+  <li>
+    <p>Log in to ThoughtSpot from a browser.</p>
+  </li>
+  <li>
+    <p>Click <strong>Data</strong>, on the top navigation bar.</p>
+  </li>
+  <li>
+    <p>Click the ellipsis icon <img src="/5.1/images/icon-more-10px.png" alt="more options menu icon" class="inline" />, and select <strong>Upload schema</strong>.</p>
+
+    <p><img src="/5.1/images/upload-schema.png" alt="Upload schema" title="Upload schema" /></p>
+  </li>
+  <li>
+    <p>Select the <strong>Write TQL</strong> button in the top right corner of the screen.</p>
+
+    <p><img src="/5.1/images/upload-schema-write-tql.png" alt="Write TQL" title="Write TQL" /></p>
+  </li>
+  <li>
+    <p>After you select <strong>Write TQL</strong>, you enter the SQL editor. You can write your script for schema and relationship creation in this editor.</p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You cannot copy and paste an existing SQL script into the SQL editor.</div>
+
+    <p>When you finish writing a line, click the + icon to insert a new line below.</p>
+
+    <p><img src="/5.1/images/write-schema.png" alt="Write your schema script" title="Write your schema script" /></p>
+  </li>
+  <li>
+    <p>When ready, run your script by clicking the <strong>Execute</strong> button.</p>
+
+    <p><img src="/5.1/images/execute-schema.png" alt="Execute your schema" title="Execute your schema" /></p>
+  </li>
+  <li>
+    <p>If there are any errors, correct them and run the script again.</p>
+  </li>
 </ol>
 
   <div class="tags">
@@ -3276,9 +3333,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 1, 2020 <br />
+        Generated: Sep 10, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 9/2/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

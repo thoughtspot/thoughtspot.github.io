@@ -3191,13 +3191,117 @@ var ss360Config = {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span>-->
 
     
 
   <p>Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a <a href="/5.1/admin/loading/constraints.html">generic join</a> between the worksheet and the  table or view on the column you specify.</p>
+
+<p>See this matrix for information about which joins you can create, and what permissions these joins require.</p>
+
+<table>
+  <tr>
+    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Worksheets</th>
+    <th>View</th>
+    <th>Materialized View</th>
+    <th>Imported table (UI)</th>
+    <th>Table uploaded from backend (tsload) or through DataFlow</th>
+    <th>Table uploaded through Embrace</th>
+    <th>View on top of table uploaded through Embrace</th>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td><strong>Necessary permissions:</strong></td>
+    <td>None</td>
+    <td>None</td>
+    <td>None</td>
+    <td><strong>Can manage data</strong> permission to load the table</td>
+    <td><strong>Admin</strong> privileges to access <code>tsload</code></td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td><strong>Worksheets</strong></td>
+    <td><strong>Can edit</strong> permission on the source Worksheet</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&check;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+  </tr>
+  <tr>
+    <td><strong>View</strong></td>
+    <td><strong>Can edit</strong> permission on the source View</td>
+    <td>&cross;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+  </tr>
+  <tr>
+    <td><strong>Materialized View</strong></td>
+    <td><strong>Can edit</strong> permission on the source Materialized View</td>
+    <td>&cross;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&check; <br /><strong>Note:</strong> It is a best practice to create this join through the UI, rather than using <code>TQL</code>.</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+  </tr>
+  <tr>
+    <td><strong>Imported table (UI)</strong></td>
+    <td><strong>Can edit</strong> permission on the source table</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&check;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+  </tr>
+  <tr>
+    <td><strong>Table uploaded from backend (tsload) or through DataFlow</strong></td>
+    <td><strong>Can edit</strong> permission on the source table</td>
+    <td>&cross;</td>
+    <td>&check;</td>
+    <td>&check; <br /><strong>Note:</strong> It is a best practice to create this join through the UI, rather than using <code>TQL</code>.</td>
+    <td>&check;</td>
+    <td>&check; <br /><strong>Note:</strong> This join is often used to create Worksheets.</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+  </tr>
+  <tr>
+    <td><strong>Table uploaded through Embrace</strong></td>
+    <td><strong>Can edit</strong> permission on the source table, and <strong>can manage data</strong> permission</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&check; <br /><strong>Note:</strong> The two tables must be from the same connection.</td>
+    <td>&check; <br /><strong>Note:</strong> The View and the table must be from the same connection.</td>
+  </tr>
+  <tr>
+    <td><strong>View on top of table uploaded through Embrace</strong></td>
+    <td><strong>Can edit</strong> permission on the source View</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&cross;</td>
+    <td>&check; <br /><strong>Note:</strong> The View and the table must be from the same connection.</td>
+    <td>&check; <br /><strong>Note:</strong> The two Views must be from the same connection.</td>
+  </tr>
+</table>
 
 <p>Note that creating a <a href="/5.1/admin/loading/constraints.html">foreign key relationship</a> is preferred over a generic relationship in most cases, except for when you need to do a range join. Foreign key relationships perform better and protect users from overcounting upon aggregation.</p>
 
@@ -3277,7 +3381,7 @@ var ss360Config = {
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 1, 2020 <br />
+        Generated: Sep 10, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 11/2/2018<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>
