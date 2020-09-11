@@ -8,7 +8,7 @@ summary: "Use the schema viewer to see tables and worksheets and their relations
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot has a ##Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.
+ThoughtSpot has a **Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.
 
 You must have **Admin** privileges to use the **Schema Viewer**.
 
@@ -98,7 +98,7 @@ modeled using best practices. For example, joins appear in different colors to d
 
 When viewing a worksheet, you can also see what joins connect the tables: the inner, left outer, right outer, or full outer joins.
 
-{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join has no impact on performance." %}
+{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
 
 ## Worksheet view
 
