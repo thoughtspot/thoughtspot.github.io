@@ -1,11 +1,11 @@
 ---
-title: [Add an Amazon Databricks connection]
+title: [Add an Azure Databricks connection]
 last_updated: 9/14/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can add a connection to the Amazon Databricks file system using ThoughtSpot DataFlow.
+You can add a connection to the Azure Databricks file system using ThoughtSpot DataFlow.
 
 Follow these steps:
 
@@ -16,6 +16,6 @@ Follow these steps:
 
    * List connection properties
 
-   See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-databricks-reference.html#connection-properties) for details, defaults, and examples.
+   See [Connection properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-databricks-reference.html#connection-properties) for details, defaults, and examples.
 
 5. Click **Create connection**.   

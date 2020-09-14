@@ -2190,21 +2190,6 @@ entries:
       - title: Supported file system connections
         url: /data-integrate/dataflow/dataflow-filesystems.html
         output: web,dataflowGD
-      - levelThreeTitle: Amazon Databricks
-        output: web,dataflowGD
-        levelThreeItems:
-        - title: Overview
-          url: /data-integrate/dataflow/dataflow-amazon-databricks.html
-          output: web,dataflowGd
-        - title: Connect
-          url: /data-integrate/dataflow/dataflow-amazon-databricks-add.html
-          output: web,dataflowGd
-        - title: Sync
-          url: /data-integrate/dataflow/dataflow-amazon-databricks-sync.html
-          output: web,dataflowGd
-        - title: Reference
-          url: /data-integrate/dataflow/dataflow-amazon-databricks-reference.html
-          output: web,dataflowGd
       - levelThreeTitle: Amazon S3
         output: web,dataflowGD
         levelThreeItems:
@@ -2249,6 +2234,21 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Azure Databricks
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-azure-databricks.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-azure-databricks-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-azure-databricks-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-azure-databricks-reference.html
           output: web,dataflowGd
       - levelThreeTitle: Flat Files
         output: web,dataflowGD
