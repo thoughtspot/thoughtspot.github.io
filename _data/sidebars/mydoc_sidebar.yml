@@ -2205,6 +2205,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-amazon-s3-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: Apache Parquet
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-apache-parquet.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-apache-parquet-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-apache-parquet-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-apache-parquet-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: Azure Blob Storage
         output: web,dataflowGD
         levelThreeItems:
