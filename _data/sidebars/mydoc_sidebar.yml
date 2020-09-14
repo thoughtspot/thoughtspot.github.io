@@ -2190,6 +2190,21 @@ entries:
       - title: Supported file system connections
         url: /data-integrate/dataflow/dataflow-filesystems.html
         output: web,dataflowGD
+      - levelThreeTitle: Amazon Databricks
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-amazon-databricks.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-amazon-databricks-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-amazon-databricks-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-amazon-databricks-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: Amazon S3
         output: web,dataflowGD
         levelThreeItems:
