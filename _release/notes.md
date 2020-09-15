@@ -29,10 +29,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
           <li><strong>Netherlands</strong>: ...</li>
           <li><strong>...</strong>: ..., ..., ...</li>
         </ul>
-          </dd>
-    <dd><strong>Geomaps overview</strong>
-        <br />
-<script src="https://fast.wistia.com/embed/medias/u7prltvp9w.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_u7prltvp9w popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
+          </dd></dlentry>
 
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
@@ -44,7 +41,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
     </ul>
     </dd>
   </dlentry>
-</dl>    
+  </dl>   
 
 ### For the Business User
 
@@ -57,12 +54,11 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
       </ul>
     </dd></dlentry>
   <dlentry id="mobile-improvements">
-    <dt>Mobile access</dt>
-    <dd>The ThoughtSpot mobile app now enables access to even more features that were previously available only through full web browser experience:
+    <dt>Mobile app updates</dt>
+    <dd>ThoughtSpot mobile supports more features that were previously available only through the ThoughtSpot Web app, including:
     <ul>
     <li>Deep linking</li>
     <li>Drill down</li>
-    <li>Push notifications</li>
     </ul>
     <p>See <a href="{{ site.baseurl }}/admin/mobile/notes-mobile.html">ThoughtSpot mobile release notes</a>  and <a href="{{ site.baseurl }}/admin/mobile/use-mobile.html">ThoughtSpot Mobile overview</a> for detailed information.</p></dd>
     </dlentry>
@@ -86,7 +82,8 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
     </dd></dlentry>
   <dlentry id="embrace">
     <dt>Embrace</dt>
-    <dd>In this release, ....</dd>
+    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="/images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline" />.</dd>
+    <dd>In addition, Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization.</dd>
     </dlentry>
 </dl>
 
