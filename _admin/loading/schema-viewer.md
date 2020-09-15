@@ -8,7 +8,7 @@ summary: "Use the schema viewer to see tables and worksheets and their relations
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot has a ##Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.
+ThoughtSpot has a **Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.
 
 You must have **Admin** privileges to use the **Schema Viewer**.
 
