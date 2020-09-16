@@ -1,13 +1,13 @@
 ---
 
 title: [Scriptability]
-last_updated: 6/29/2020
-summary: "Use Scriptability to export and import Worksheets, Views, Pinboards, and Answers in a human-readable format."
+last_updated: 9/16/2020
+summary: "Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Pinboards, and Answers.
+ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers.
 
 You can model your data and build out sophisticated dashboards in your test environment, before deploying to all users.
 
@@ -21,20 +21,20 @@ You can download these objects in the form of a scriptable file in the [ThoughtS
 
 ## Prerequisites
 
-**Required permissions for Pinboards, Answers, Worksheets, and Views**
+**Required permissions for Pinboards, Answers, Worksheets, Tables, and Views**
 
 | Export with dependents | Export without dependents | Import with dependents | Import without dependents |
 | ---------- | ---- | --- |
-| **View** permission for the Pinboard, Answer, Worksheet, or View. **View** permission on all underlying tables, Worksheets, and Views. For example, if a Pinboard, Answer, Worksheet, or View is built on top of a View that is built on top of a Worksheet, you must have **view** permission for all of these objects. | **View** permission for the Pinboard, Answer, Worksheet, or View. | If you are not overwriting the existing dependents, you must have the **can manage data** permission. If you are overwriting the existing dependents, you must have the **can manage data** permission, and **edit** permission on the dependents. | You must have **view** permission for the dependents that the Pinboard, Answer, Worksheet, or View visualizations directly depend on. For example, if a Pinboard, Answer, Worksheet, or View is built on top of a Worksheet that is built on top of a View, you must have **view** permission for the Worksheet, not the View. |
+| **View** permission for the Pinboard, Answer, Worksheet, Table, or View. **View** permission on all underlying tables, Worksheets, and Views. For example, if an object is built on top of a View that is built on top of a Worksheet, you must have **view** permission for all of these objects. | **View** permission for the Pinboard, Answer, Table, Worksheet, or View. | If you are not overwriting the existing dependents, you must have the **can manage data** permission. If you are overwriting the existing dependents, you must have the **can manage data** permission, and **edit** permission on the dependents. | You must have **view** permission for the dependents that the Pinboard, Answer, Worksheet, Table, or View visualizations directly depend on. For example, if an object is built on top of a Worksheet that is built on top of a View, you must have **view** permission for the Worksheet, not the View. |
 
 {: id="export-object"}
 ## Export an object
-You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file). The zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
+You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
 
 {: id="export-one"}
 To export one object:
 
-1. Navigate to the Pinboard, Answer, View, or Worksheet you want to export.
+1. Navigate to the Pinboard, Answer, View, Table, or Worksheet you want to export.
 
 2. Click the three-dot icon, and select **Export as TSL**.
 
@@ -53,7 +53,7 @@ To export multiple objects at a time, follow these steps:
 
     ![Export multiple objects]({{ site.baseurl }}/images/scriptability-cloud-export-multiple.png "Export multiple objects")
 
-4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets and Views):
+4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, Tables, and Views). If you export a table, you do not see this modal, since tables do not have underlying data sources.
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
 
@@ -69,9 +69,8 @@ To export multiple objects at a time, follow these steps:
 You can edit the `TSL` file before you import it. Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html).
 
 ## Update an object
-You can overwrite an existing Worksheet, Answer, or Pinboard, by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file. To update a View, you must export the TSL file, make any necessary changes, and then upload it as a new object. You cannot overwrite an existing View. Instead, you must create a new object.
-
-To update an existing object, follow these steps. In this case, we are updating a Worksheet.
+You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file.
+To update an existing object, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
@@ -91,14 +90,20 @@ To update an existing object, follow these steps. In this case, we are updating 
 
 6. In your file system, find and select the `TSL` file.
 
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message.
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
 
-9. Click **Done**.
+9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload.
 
-   ![Go to updated Worksheet]({{ site.baseurl }}/images/scriptability-worksheet-update-success.png "Go to updated Worksheet")
+10. Click **Import selected files**.
+
+    ![Import selected file]({{ site.baseurl }}/images/scriptability-worksheet-update-success.png "Import selected files")
+
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done**.
+
+    ![Go to object]({{ site.baseurl }}/images/scriptability-import-status.png "Go to object")
 
 ## Migrate an object
-To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps:
+To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. Note that you cannot create a new Table using Scriptability. You can only update existing Tables.  
 
 1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above.
 

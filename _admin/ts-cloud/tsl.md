@@ -239,17 +239,48 @@ You may not see each of these parameters in your own TSL files, depending on whe
   <a href="#db">db</a>: &lt;<em>database_name</em>&gt;
   <a href="#schema">schema</a>: &lt;<em>schema_name</em>&gt;
   <a href="#db_table">db_table</a>: &lt;<em>database_table_name</em>&gt;
+  <a href="#connection">connection</a>:
+    <a href="#name">name</a>: &lt;<em>connection_name</em>&gt;
+    <a href="#type">type</a>: &lt;<em>connection_type</em>&gt;
   <a href="#columns">columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#db_column_name">db_column_name</a>: &lt;<em>database_column_name</em>&gt;
     <a href="#is_primary_key">is_primary_key</a>: [true | false]
-    <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT | BIGINT | DATE | DATETIME | TIMESTAMP | TIME ]
+    <a href="#is_foreign_key">is_foreign_key</a>: [true | false]
+    <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
     <a href="#properties">properties</a>:
-      <a href="#column_type">column_type</a>: [ATTRIBUTE | MEASURE]
-      <a href="#index_type">index_type</a>: [ DONT_INDEX | DEFAULT | PREFIX_ONLY |
-      PREFIX_AND_SUBSTRING | PREFIX_AND_WORD_SUBSTRING ]  
+      <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
       <a href="#aggregation">aggregation</a>: [ SUM | COUNT | AVERAGE | MAX | MIN |
-      COUNT_DISTINCT | NONE | STD_DEVIATION | VARIANCE]
+                     COUNT_DISTINCT | NONE | STD_DEVIATION | VARIANCE]
+      <a href="#index_type">index_type</a>: [ DONT_INDEX | DEFAULT | PREFIX_ONLY |
+                    PREFIX_AND_SUBSTRING | PREFIX_AND_WORD_SUBSTRING ]
+      <a href="#index_priority">index_priority</a>: &lt;<em>index_priority</em>&gt;
+      <a href="#synonyms">synonyms</a> :
+             &lt;<em>synonym_1</em>&gt;
+             &lt;<em>synonym_2</em>&gt;
+      <a href="#is_attribution_dimension">is_attribution_dimension</a> : [true | false]
+      <a href="#is_additive">is_additive</a> : [ true | false ]
+      <a href="#calendar">calendar</a> : [ default | calendar_name ]
+      <a href="#format_pattern">format_pattern</a> : &lt;<em>format_pattern_string</em>&gt;
+      <a href="#currency_type">currency_type</a> :
+        is_browser : true
+          OR
+        column : &lt;<em>column_name</em>&gt;
+          OR
+        iso_code : &lt;<em>valid_ISO_code</em>&gt;
+      <a href="#is_hidden">is_hidden</a>: [ true | false ]
+      <a href="#geo_config">geo_config</a> :
+        latitude : true
+          OR
+        longitude : true
+          OR
+        country : true
+          OR
+        region_name:
+        - country : &lt;<em>name_supported_country</em>&gt;
+        - region_name : &lt;<em>region_name_in_UI</em>&gt;
+      <a href="#spotiq_preference">spotiq_preference</a>: &lt;<em>spotiq_preference_string</em>&gt;
+      <a href="#search_iq_preferred">search_iq_preferred</a>: [ true | false ]
   - <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
 <a href="#guid">guid</a>: &lt;<em>table_guid</em>&gt;
@@ -498,6 +529,11 @@ You may not see each of these parameters in your own TSL files, depending on whe
     <dd>Conditional formatting for the chart or table of an Answer.</dd>
   </dlentry>
 
+  <dlentry id="connection">
+    <dt>connection</dt>
+    <dd>A way to identify the external data warehouse connection that the table resides in.</dd>
+  </dlentry>
+
   <dlentry id="currency_type">
     <dt>currency_type</dt>
     <dd>The source of currency type<br>
@@ -524,17 +560,17 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="db">
     <dt>db</dt>
-    <dd>The database that a table resides in.</dd>
+    <dd>The database that a table resides in. Note that this is not the same as the data warehouse (Falcon, Amazon Redshift, or Snowflake, for example).</dd>
   </dlentry>
 
   <dlentry id="db_column_name">
     <dt>db_column_name</dt>
-    <dd>The name of the column in the database.</dd>
+    <dd>The name of the column in the database. Note that this database is not the same as the data warehouse (Falcon, Amazon Redshift, or Snowflake, for example).</dd>
   </dlentry>
 
   <dlentry id="db_table">
     <dt>db_table</dt>
-    <dd>The name of the table in the database.</dd>
+    <dd>The name of the table in the database. Note that this database is not the same as the data warehouse (Falcon, Amazon Redshift, or Snowflake, for example).</dd>
   </dlentry>
 
   <dlentry id="description">
@@ -681,6 +717,11 @@ You may not see each of these parameters in your own TSL files, depending on whe
     <dd>Determines if the table column is the primary key. Can be <code>true</code> or <code>false</code>.</dd>
   </dlentry>
 
+  <dlentry id="is_foreign_key">
+    <dt>is_foreign_key</dt>
+    <dd>Determines if the table column is the foreign key. Can be <code>true</code> or <code>false</code>.</dd>
+  </dlentry>
+
   <dlentry id="join">
     <dt>join</dt>
     <dd>Specific join, used in defining higher-level objects, such as table paths<br>
@@ -733,7 +774,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="name">
     <dt>name</dt>
-    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>join</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, and so on.<br>
+    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>join</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code> and so on.<br>
     For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
@@ -876,6 +917,8 @@ You may not see each of these parameters in your own TSL files, depending on whe
     <dd>For Worksheets and Views, this is the join type.<br>
     Possible values: <code>LEFT_OUTER</code> for left outer join, <code>RIGHT_OUTER</code> for right outer join, <code>INNER</code> for inner join, <code>OUTER</code> for full outer join<br>
     Default: <code>INNER</code><br>
+    For Tables, this is the Embrace connection type.<br>
+    Possible values: <code>Snowflake</code> or <code>Amazon Redshift</code>.<br>
     For Answers, this is the chart type<br>
     Possible values: <code>COLUMN</code>, <code>BAR</code>, <code>LINE</code>, <code>PIE</code>, <code>SCATTER</code>, <code>BUBBLE</code>, <code>STACKED_COLUMN</code>, <code>AREA</code>, <code>PARETO</code>, <code>COLUMN</code>, <code>GEO_AREA</code>, <code>GEO_BUBBLE</code>, <code>GEO_HEATMAP</code>, <code>GEO_EARTH_BAR</code>, <code>GEO_EARTH_AREA</code>, <code>GEO_EARTH_GRAPH</code>, <code>GEO_EARTH_BUBBLE</code>, <code>GEO_EARTH_HEATMAP</code>, <code>WATERFALL</code>, <code>TREEMAP</code>, <code>HEATMAP</code>, <code>STACKED_AREA</code>, <code>LINE_COLUMN</code>, <code>FUNNEL</code>, <code>LINE_STACKED_COLUMN</code>, <code>PIVOT_TABLE</code>, <code>SANKEY</code>, <code>GRID_TABLE</code>, <code>SPIDER_WEB</code>, <code>WHISKER_SCATTER</code>, <code>STACKED_BAR</code>, or <code>CANDLESTICK</code>.
     </dd>
@@ -941,3 +984,5 @@ There are certain limitations to the changes you can apply by editing a Workshee
 * It is not possible to reverse the join direction in the TSL script.
 
 * You cannot create new tables using Scriptability. You can only update existing tables.
+
+* You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
