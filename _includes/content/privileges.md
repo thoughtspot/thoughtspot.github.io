@@ -29,7 +29,7 @@
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
-      <td>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.</td>
+      <td>Can create worksheets and views. Can create Embrace connections.<br>Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.</td>
     </tr>
     <tr>
       <td><strong>Can use experimental features</strong></td>
@@ -45,7 +45,8 @@
     </tr>
     <tr>
       <td><strong>Has SpotIQ privilege</strong></td>
-      <td>Can use the SpotIQ feature.<br>If this privilege is not enabled for the user, they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.</td>
+      <td>Can use the SpotIQ feature.<br>If this privilege is not enabled for the user, but Insights are turned enbaled on the cluster (this is off by default),
+they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.</td>
     </tr>
     <tr>
       <td><strong>Can administer and bypass RLS</strong></td>
