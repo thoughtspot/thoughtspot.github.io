@@ -117,8 +117,7 @@ To use the TSL editor, follow these steps:
 
 {: id="update-object"}
 ## Update an object
-You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file.
-To update an existing object, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
+You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). To update an existing object, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
@@ -152,7 +151,7 @@ To update an existing object, follow these steps. In this case, we are updating 
 
 {: id="migrate-object"}
 ## Migrate an object
-To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. Note that you cannot create a new Table using Scriptability. You can only update existing Tables.  
+To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new Table using Scriptability. You can only update existing Tables.  
 
 1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above.
 
@@ -187,6 +186,19 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
 
     ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
+
+## Limitations of working with TSL files
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TSL.
+
+* Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
+
+* It is not possible to reverse the join direction in the TSL script.
+
+* You cannot create new tables using Scriptability. You can only update existing tables.
+
+* You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
+
+* You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
 
 ## Related information
 
