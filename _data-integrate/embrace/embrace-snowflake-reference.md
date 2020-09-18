@@ -43,8 +43,4 @@ Here is a list of the fields of a Snowflake connection in ThoughtSpot Embrace. Y
     <dt>Database</dt>
     <dd>Specify the database associated with the account. <i>(Optional)</i></dd>
   </dlentry>
-  <dlentry id="embrace-snowlake-ref-schema">
-    <dt>Schema</dt>
-    <dd>Specify the schema associated with the database. <i>(Optional)</i></dd>
-  </dlentry>
 </dl>
