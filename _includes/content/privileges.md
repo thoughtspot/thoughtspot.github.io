@@ -45,7 +45,7 @@
     </tr>
     <tr>
       <td><strong>Has SpotIQ privilege</strong></td>
-      <td>Can use the SpotIQ feature.<br>If this privilege is not enabled for the user, but Insights are turned enbaled on the cluster (this is off by default),
+      <td>Can use the SpotIQ feature.<br>If this privilege is not enabled for the user, but Insights are enabled on the cluster (this is off by default),
 they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.</td>
     </tr>
     <tr>
