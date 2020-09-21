@@ -198,6 +198,12 @@ entries:
       - title: Scheduled maintenance
         url: /admin/ts-cloud/scheduled-maintenance.html
         output: web
+      - title: Performance Tracking Pinboard
+        url: /admin/ts-cloud/performance-tracking.html
+        output: web
+      - title: User Adoption Pinboard
+        url: /admin/ts-cloud/user-adoption.html
+        output: web
   - sectiontitle: Search
     output: web,ugBk
     sectionitems:
