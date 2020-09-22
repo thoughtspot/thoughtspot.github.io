@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product: ThoughtSpot Cloud <span class="label label-beta-cloud">Beta</span>
+  product: ThoughtSpot 5 Cloud
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -519,45 +519,45 @@ entries:
     - title: "Advanced R customizations"
       url: /spotiq/adv-customize-withr.html
       output: web,ugBk
-  - sectiontitle: SpotIQ
-    output: web,ugBk
-    sectionitems:
-    - title: What is SpotIQ
-      url: /spotiq/whatisspotiq.html
-      output: web,ugBk
-    - title: "Best SpotIQ practices"
-      url: /spotiq/special-topics.html
-      output: web,ugBk
-    - title: "Monitor Headlines"
-      url: /spotiq/monitor-headlines.html
-      output: web,ugBk
-    - title: "Comparative Analysis"
-      url: /spotiq/comparative-analysis.html
-      output: web,ugBk
-    - title: "Custom SpotIQ analysis"
-      url: /spotiq/customization.html
-      output: web,ugBk
-    - title: "Insight feedback"
-      url: /spotiq/insight-feedback.html
-      output: web,ugBk
-    - title: "SpotIQ preferences"
-      url: /spotiq/spotiq-preferences.html
-      output: web,ugBk
+#  - sectiontitle: SpotIQ
+#    output: web,ugBk
+#    sectionitems:
+#    - title: What is SpotIQ
+#      url: /spotiq/whatisspotiq.html
+#      output: web,ugBk
+#    - title: "Best SpotIQ practices"
+#      url: /spotiq/special-topics.html
+#      output: web,ugBk
+#    - title: "Monitor Headlines"
+#      url: /spotiq/monitor-headlines.html
+#      output: web,ugBk
+#    - title: "Comparative Analysis"
+#      url: /spotiq/comparative-analysis.html
+#      output: web,ugBk
+#    - title: "Custom SpotIQ analysis"
+#      url: /spotiq/customization.html
+#      output: web,ugBk
+#    - title: "Insight feedback"
+#      url: /spotiq/insight-feedback.html
+#      output: web,ugBk
+#    - title: "SpotIQ preferences"
+#      url: /spotiq/spotiq-preferences.html
+#      output: web,ugBk
   - sectiontitle: Work with data
     output: web,ugBk
     sectionitems:
-    - title: "Understand data sources"
-      url: /end-user/data-view/data-intro-end-user.html
-      output: web,ugBk
-    - title: Create and load CSV Files
-      url: /end-user/data-view/generate-flat-file.html
-      output: web,ugBk
-    - title: Append data through the UI
-      url: /admin/loading/append-data-from-a-web-browser.html
-      output: web,ugBk
-    - title: View a data profile
-      url: /admin/loading/view-your-data-profile.html
-      output: web,ugBk
+#    - title: "Understand data sources"
+#      url: /end-user/data-view/data-intro-end-user.html
+#      output: web,ugBk
+#    - title: Create and load CSV Files
+#      url: /end-user/data-view/generate-flat-file.html
+#      output: web,ugBk
+#    - title: Append data through the UI
+#      url: /admin/loading/append-data-from-a-web-browser.html
+#      output: web,ugBk
+#    - title: View a data profile
+#      url: /admin/loading/view-your-data-profile.html
+#      output: web,ugBk
     - title: Date and currency format settings
       url: /end-user/locale.html
       output: web,ugBk
@@ -573,9 +573,9 @@ entries:
     - title: Share answers
       url: /end-user/pinboards/share-answers.html
       output: web,ugBk
-    - title: Share uploaded data
-      url: /end-user/data-view/share-user-imported-data.html
-      output: web,ugBk
+#    - title: Share uploaded data
+#      url: /end-user/data-view/share-user-imported-data.html
+#      output: web,ugBk
     - title: Request access
       url: /end-user/pinboards/request-access.html
       output: web,ugBk
