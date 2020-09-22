@@ -43,8 +43,6 @@ Here are the high-level steps for creating and using views:
 
 - For best performance, views should have 50 or fewer columns, and no more than 10 million rows. Exceeding these boundaries may make queries against this view run slow.
 
-- To improve performance, you can materialize the views.
-
 - You can use an ETL (extract, transform, load) processes to circumvent these limitations.
 
 ## Related Information
@@ -52,4 +50,3 @@ Here are the high-level steps for creating and using views:
 -   [More view scenario examples]({{ site.baseurl }}/complex-search/more-example-scenarios.html#)
 -   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#)  
 -   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html#)
--   [Materialized views]({{ site.baseurl }}/admin/loading/materialized-views.html#)
