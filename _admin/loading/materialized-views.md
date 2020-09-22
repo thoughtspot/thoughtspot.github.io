@@ -1,6 +1,5 @@
 ---
 title: [About materialized views]
-
 last_updated: 10/31/2018
 summary: "You can materialize a view to improve its performance."
 toc: false
@@ -14,9 +13,7 @@ Views can become slow as your data volume and the number of views stacked on top
 
 To materialize a view, you must have the [**Can administer ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
 
-{% include note.html content="The number of materialized views you can create is limited to 50, because materialized views take up space in memory." %}
-
-{% include note.html content="Row Level Security does not apply to materialized views. All users will see the same data when using the materialized view as a data source." %}
+{% include note.html content="The number of materialized views you can create is limited to 50, because materialized views take up space in memory.<br />Row Level Security does not apply to materialized views. All users will see the same data when using the materialized view as a data source." %}
 
 These are the operations you can do on a view:
 -   [Materialize a view]({{ site.baseurl }}/admin/loading/materialize-a-view.html) to improve performance,
@@ -29,7 +26,7 @@ After materializing, a view can have one of three statuses. You can see the stat
 ## Materialization status
 [](#materialization-status)
 
-These are the statuses a view can have:
+A materialized view can be in one of the following states:
 
 |Status|Description|Action|
 |------|-----------|--------|
@@ -40,7 +37,7 @@ These are the statuses a view can have:
 |Unknown|View status could not be determined.|Click **Update status**.|
 |Error|An error occurred.|Refresh the view by clicking **Refresh Data***. Optionally run a report.|
 
-\* You will only have the option to refresh data if you have the [**Can administrate ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) privilege.
+\* You can refresh data only if you have the [**Can administrate ThoughtSpot**]({{ site.baseurl }}/admin/users-groups/about-users-groups.html)  privilege.
 
 ## Freshness of data
 

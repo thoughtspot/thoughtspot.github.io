@@ -19,15 +19,11 @@ To modify the join types within a worksheet, follow these steps:
 
 1. Click the **Data** tab in the top menu.  
 
-   ![]({{ site.baseurl }}/images/click-data.png "Click Data")
+2. Under **Data Objects, select **Worksheets**.
 
-2. Select **Table**, and then select **Worksheets**.
+3. Click the name of the Worksheet. Here, we selected the worksheet _West Regional Sales_.
 
-3. Click the name of the worksheet. Here, we selected the worksheet _West Regional Sales_.
-
-4. At the top of the worksheet, click the **Schema** tab.
-
-   ![]({{ site.baseurl }}/images/select-worksheet-schema.png "Click worksheet Schema")
+4. At the top of the Worksheet, click **Joins**.
 
 5. The join information and the schema for the worksheet appear.
    -  The schema representation includes the join type.  
