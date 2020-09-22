@@ -8,6 +8,7 @@ permalink: /:collection/:path.html
 These are the issues we fixed in recent ThoughtSpot releases.
 
 <ul>
+<li><a href="#6-2-1">6.2.1 Fixed issues</a></li>
 <li><a href="#6-2">6.2 Fixed issues</a></li>
 <li>
 <details>
@@ -88,6 +89,28 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </li>
 </ul>
 
+<a id="6-2-1"></a>
+## 6.2.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.2.1
+
+- Upgrades to 6.2 could sometimes become stuck or fail.
+
+- Replay Search incorrectly shows as available when ThoughtSpot is embedded.
+
+- Style customization page is not available.
+
+- When ThoughtSpot is embedded, clicking the Follow button enables the navbar.
+
+- Scrolling a tabular answer resulted causes an error.
+
+- Growth formula doesn’t work when using a custom calendar.
+
+- Geo Map intermittently displays two different charts for the same query.
+
+- Copy to clipboard doesn’t work in the Admin tab.
+
+- Choosing a fact table for the purpose of creating a join causes inconsistent sub-queries.
 
 <a id="6-2"></a>
 ## 6.2 Fixed issues
