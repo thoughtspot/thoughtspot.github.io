@@ -340,7 +340,6 @@ tscli backup [-h] {create,delete,ls,}
       <dt><code>tscli backup ls</code></dt>
       <dd>Lists all periodic backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
     </dlentry>
-
   </dl>
 
 {: id="tscli-backup-policy"}
@@ -365,7 +364,7 @@ This subcommand has the following options:
 <dlentry>
 <dt><code>mode {full,light,dataless}</code></dt>
 <dd>
-<p>The backup mode. A `FULL` backup is required for restoring a cluster.</p>
+<p>The backup mode. A <code>FULL</code> backup is required for restoring a cluster.</p>
 <p>The default is <code>full.</code></p>
 </dd></dlentry>
 <dlentry>

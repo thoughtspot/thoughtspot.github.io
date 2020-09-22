@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Version 6.2
-#  version: 6.2
+  product: Version 6.3
+#  version: 6.3
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -2205,6 +2205,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-amazon-s3-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: Apache Parquet
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-apache-parquet.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-apache-parquet-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-apache-parquet-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-apache-parquet-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: Azure Blob Storage
         output: web,dataflowGD
         levelThreeItems:
@@ -2219,6 +2234,21 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Azure Databricks
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-azure-databricks.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-azure-databricks-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-azure-databricks-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-azure-databricks-reference.html
           output: web,dataflowGd
       - levelThreeTitle: Flat Files
         output: web,dataflowGD
@@ -2414,6 +2444,9 @@ entries:
       output: web,refGd
     - title: TQL reference
       url: /reference/sql-cli-commands.html
+      output: web,refGd
+    - title: TQL service reference
+      url: /reference/tql-service-api-ref.html
       output: web,refGd
     - title: tsload flag reference
       url: /reference/data-importer-ref.html
