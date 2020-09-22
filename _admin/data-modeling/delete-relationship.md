@@ -2,7 +2,7 @@
 title: [Delete a relationship]
 
 last_updated: 11/15/2019
-summary: "You can delete a relationship between tables through the ThoughtSpot application or TQL."
+summary: "You can delete a relationship between tables through the ThoughtSpot application."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

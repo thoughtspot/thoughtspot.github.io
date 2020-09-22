@@ -18,8 +18,7 @@ This introduces an additional format for you to consume and share pinboards with
 others, including those who don’t have a ThoughtSpot account.
 
 Contact ThoughtSpot Support if scheduled pinboards is not enabled on your
-cluster, or you can run the command `tscli scheduled-pinboards` to enable it
-yourself.
+cluster.
 
 ## Scheduled pinboard creators
 

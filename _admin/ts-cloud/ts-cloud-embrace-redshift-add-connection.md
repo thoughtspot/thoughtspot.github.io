@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To connect to Amazon Redshift, do the following:
+To connect to Amazon Redshift, follow these steps:
 
 1. Click **Data** in the top navigation bar.
 

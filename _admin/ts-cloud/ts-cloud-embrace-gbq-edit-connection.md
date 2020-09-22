@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 You can edit a BigQuery connection to add tables and columns.
 
-To edit a connection, do the following:
+To edit a connection:
 
 1. Click **Data** in the top navigation bar.
 

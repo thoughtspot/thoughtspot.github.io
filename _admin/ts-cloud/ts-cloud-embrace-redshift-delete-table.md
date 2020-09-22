@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
 
-To delete a table, follow these steps:
+To delete a table:
 
 1. Click **Data** in the top navigation bar.
 

@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To connect to Synapse, do the following:
+To connect to Synapse, follow these steps:
 
 1. Click **Data** in the top navigation bar.
 
