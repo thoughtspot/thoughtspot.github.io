@@ -1,6 +1,6 @@
 ---
 title: [Scriptability]
-last_updated: 9/21/2020
+last_updated: 9/17/2020
 summary: "Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,12 +19,12 @@ The Scriptability feature supports several scenarios that you may encounter:
 ## How to use Scriptability
 Depending on how you want to use Scriptability, there are several workflows you can follow:
 1. **Edit and update an existing object in the same cluster**: You can either
-- [export](#export-object) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) (`TSL`) representation, and [import](#update-object) the updated file(s) to modify the existing object *or*
+- [export](#export-object) the object(s), modify the [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) (`TSL`), and [import](#update-object) the updated file(s) to modify the existing object *or*
 - edit the object(s) using the [in-app `TSL` editor](#edit-tsl) and publish the updated file(s).
-2. **Migrate an existing object from one cluster to a new cluster**: [export](#export-object) the object(s) and [import](#migrate-object) the updated file(s) to the new cluster.
+2. **Migrate an existing object from one cluster to a new cluster**: [export](#export-object) the object(s) and [import](#update-object) the updated file(s) to the new cluster.
 3. **Edit and migrate an existing object from one cluster to a new cluster**: You can either
-- [export](#export-object) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) (`TSL`) representation, and [import](#migrate-object) the updated file(s) to the new cluster *or*
-- edit the object(s) using the [in-app `TSL` editor](#edit-tsl), publish the updated file(s), [export](#export-object) the object(s), and [import](#migrate-object) the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.
+- [export](#export-object) the object(s), modify the [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) (`TSL`), and [import](#update-object) the updated file(s) to the new cluster *or*
+- edit the object(s) using the [in-app `TSL` editor](#edit-tsl), publish the updated file(s), [export](#export-object) the object(s), and [import](#update-object) the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.
 
 ## Prerequisites
 
@@ -62,7 +62,7 @@ To export multiple objects at a time, follow these steps:
 
     ![Export multiple objects]({{ site.baseurl }}/images/scriptability-cloud-export-multiple.png "Export multiple objects")
 
-4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, Tables, and Views). If you export a table, you do not see this modal, since tables do not have any dependents.
+4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, Tables, and Views). If you export a table, you do not see this modal, since tables do not have underlying data sources.
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
 
@@ -76,11 +76,11 @@ To export multiple objects at a time, follow these steps:
 
 {: id="edit-tsl"}
 ## Edit the TSL file
-You can edit the `TSL` file in one of two ways. You can [export](#export-object) the object(s) and edit the file(s) in any text editor, before you import it. Or, you can use the [in-app `TSL` editor](#tsl-editor) to edit, validate, and publish the object(s). Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) for information on syntax in the TSL files.
+You can edit the `TSL` file one of two ways. You can [export](#export-object) the object(s) and edit the file(s) in any text editor, before you import it. Or, you can use the [in-app `TSL` editor](#tsl-editor) to edit, validate, and publish the object(s). Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) for information on syntax in the TSL files.
 
 {: id="tsl-editor"}
-## Edit, validate, and publish objects using the TSL editor
-You can access the TSL editor from the object list page, or from the object itself. To edit and update multiple objects using the TSL editor, access it from the object list page.
+### Use the TSL editor
+You can access the TSL editor from the object list page, or from the object itself. To edit multiple objects using the TSL editor, access it from the object list page.
 
 To use the TSL editor, follow these steps:
 
@@ -101,7 +101,7 @@ To use the TSL editor, follow these steps:
     - **Edit**: Undo, Redo, Cut, Copy, Select all, Fold, Fold all, Unfold, Unfold all, and Go to line. The **Fold** option compresses the lines in the file so you only see the first line of a section. **Go to line** opens a dialog box, where you can type in the number of the line you would like to go to. This is useful for long TSL files.
     - **Find**: Find and Find and replace. This functionality allows you to easily find words or parameters in the TSL file. You can also click on a word or parameter in the TSL editor, and the editor highlights all instances of that word.
     - **View**: Show line numbers and Hide line numbers.
-    - **Help**: Documentation. This links to the [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) documentation.  
+    - **Help**: Documentation. This links to the [TSL]({{ site.baseurl }}/admin/ts-cloud/tsl.html) documentation.  
 
 5. When you finish editing the TSL file(s), select **Validate** in the top right corner. You must validate each file individually. A blue dot appears next to any file that contains changes.
 
@@ -117,15 +117,7 @@ To use the TSL editor, follow these steps:
 
 {: id="update-object"}
 ## Update an object
-You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
-
-You can also update an object using the [TSL editor](#tsl-editor).
-
-To update an existing object by downloading the TSL file and modifying it, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
-
-1. [Export the object](#export-object) you want to update, as in steps 1 to 5 of the **Export an Object** section above.
-
-2. Edit the file in a text editor.
+You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). To update an existing object, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
@@ -143,7 +135,7 @@ To update an existing object by downloading the TSL file and modifying it, follo
 
    ![Find the Worksheet TSL file]({{ site.baseurl }}/images/worksheet-update-browse.png "Find the Worksheet TSL file")
 
-6. In your file system, find and select the `TSL` file you edited.
+6. In your file system, find and select the `TSL` file.
 
 8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
 

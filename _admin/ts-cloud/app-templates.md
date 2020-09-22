@@ -1,6 +1,6 @@
 ---
 title: [SpotApps]
-last_updated: 9/21/2020
+last_updated: 7/28/2020
 summary: "Use SpotApps to gain insights into your Salesforce, accounts receivable, or procurement instances."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -29,9 +29,9 @@ When you are ready to move to a production environment, you can migrate these Pi
 ## Create and export SpotApps
 You can create your own SpotApps in two ways:
 
-You may have a specific Pinboard or other object that you would like to migrate to another cluster, but that cluster may not contain the Worksheets, Tables, or Views that the Pinboard's data comes from. When you export any Pinboard, Answer, Worksheet, or View, you have the option to export its associated data sources as well. This creates a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
+You may have a specific Pinboard that you would like to migrate to another cluster, but that cluster may not contain the Worksheets and Tables that the Pinboard's data comes from. When you export any object, you have the option to export its associated data sources as well, creating a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
 
-![Choose what to export]({{ site.baseurl }}/images/scriptability-pinboard-select-export.png "Choose what to export")
+![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
 
 Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
 
