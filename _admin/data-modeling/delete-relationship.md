@@ -1,7 +1,6 @@
 ---
 title: [Delete a relationship]
-
-last_updated: 11/15/2019
+last_updated: 09/21/2020
 summary: "You can delete a relationship between tables through the ThoughtSpot application or TQL."
 toc: false
 sidebar: mydoc_sidebar
@@ -19,13 +18,15 @@ To delete a relationship from the Web interface:
 
 2. Click the name of the data source you from which you want to remove the relationship.
 
-3. Click **Schema**. You will see the list showing existing joins.
+3. Click **Joins**.
 
-   If this is a worksheet, you must click **Joins within worksheets** and choose **Joins between worksheets**.
+   The list of existing joins appears.
+
+   In a worksheet, you must click **Joins within worksheets** and choose **Joins between worksheets**.
 
       ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
 
-4. Find the relationship you want to delete, and click the **Delete icon**.
+4. Find the relationship you want to delete, and click the delete icon.
 
      ![]({{ site.baseurl }}/images/relationship_delete.png "Delete a relationship")
 

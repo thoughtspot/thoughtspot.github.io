@@ -1,6 +1,5 @@
 ---
 title: [Configure multiple connections on Windows]
-
 last_updated: tbd
 summary: "You can add multiple ODBC data sources."
 sidebar: mydoc_sidebar
@@ -50,7 +49,7 @@ or development cluster.
 
     | Option                | Value                   |
     |-----------------------|-----------------------------|
-    | **DATABASE**          |  The default database to connect to. |
+    | **DATABASE**          | The default database to connect to. |
     | **SCHEMA**            | The default schema to connect to. Use `falcon_default_schema` if you aren't sure.|
     | **CONNECTIONTIMEOUT** |  Optional. Seconds before an idle connection times out. |
 

@@ -46,8 +46,8 @@ before continuing.
 
 ## Edit the test.html file
 
-You must edit the page in your application or web page where you want to
-embed a ThoughtSpot pinboard or visualization. For this example, you can get a copy of the <a href="{{ site.baseurl }}/downloads/test.html" download>test.html</a> file.
+You must edit the page in your application or web page where you want to embed a ThoughtSpot pinboard or visualization. For this example, you can get a copy of the
+<a href="{{ site.baseurl }}/downloads/test.html" download>test.html</a> file.
 
 1. Create an empty directory called `test`.
 2. Save the `test.html` file to the `test` directory.

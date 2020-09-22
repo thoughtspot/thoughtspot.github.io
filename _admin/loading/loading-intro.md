@@ -1,7 +1,7 @@
 ---
 title: [Load and manage data]
 summary: Learn about loading and managing data.
-last_updated: 11/15/2019
+last_updated: 09/21/2020
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -37,7 +37,7 @@ you are loading using ThoughtSpot Loader, you must
 ## Related Information
 
 -   [Load CSV files with the UI]({{ site.baseurl }}/admin/loading/load-from-web-browser.html)  
--   Append data through the UI (https://docs.thoughtspot.com/6.0/admin/loading/append-data-from-a-web-browser.html)  
+-   [Append data through the UI]({{ site.baseurl }}/admin/loading/append-data-from-a-web-browser.html)  
 -   [Schema planning concepts]({{ site.baseurl }}/admin/loading/plan-schema.html)  
 -   [Overview of schema building]({{ site.baseurl }}/admin/loading/create-schema.html)  
 -   [Import CSV files with tsload]({{ site.baseurl }}/admin/loading/use-data-importer.html)  

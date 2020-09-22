@@ -1,36 +1,25 @@
 ---
-title: [Schedule materialization refresh on a view]
-
-last_updated: 11/2/2018
-summary: "Learn how to schedule materialization refresh of a view to keep it in sync with the data that makes it up."
+title: [Create or change schedule for refreshing a materialized view]
+last_updated: 09/21/2020
+summary: "Learn how to create or change the schedule for data refresh in a materialized view."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To keep the data in a view up-to-date, you can schedule periodic refreshes from the underlying table(s).
+To keep the data in a materialized view consistent and relevant, we recommend that you periodically refresh it with data from the parent table or tables. ThoughtSpot makes it easy, by letting you schedule regular refreshes at daily, weekly, or monthly intervals.
 
-To schedule materialization of a view:
+To schedule materialization of a view, follow these steps:
 
-1. To find your view, click **Data** in the top menu, and choose **Views**.
+{% include content/view-materialize/view-materialize-navigation.md %}
 
-2. Click the name of your view.
+4. Under **Materialization**, in the **Update schedule** section, either update an existing schedule, or create a new schedule:
+   - To update an existing schedule, click *Daily*, *Weekly*, or *Monthly*.
+   - To create a schedule, click *None*.
 
-3. Click **Schema**.
+   ![Update or create a schedule]({{ site.baseurl }}/images/view-materialize-10.png)
 
-4. Under **Materialization**, click the link next to **Update Schedule**.
-
-5. In the **Schedule Data Updates** dialog, select an option for **Repeats** (Monthly, Weekly, or Daily).
-
-   ![]({{ site.baseurl }}/images/materialized-view-sched-weekly.png)
-
-6. Fill in the schedule details:
-
-   ![]({{ site.baseurl }}/images/schedule-data-updates-weekly.png)
-
-7. Click **Schedule**.
-
-{% include note.html content="Refresh works only if it is scheduled in the refresh window set for the cluster (default: 8:00 PM - 4:00 AM). Only the start time of the refresh window is configurable using the flag `orion.materializationConfig.refreshWindowStartTime` which can be set to values such as `12:00PM` or `01:00AM` etc. Example: To set the cluster window from 2:00 AM to 10:00 AM you can set the flag as `orion.materializationConfig.refreshWindowStartTime \"02:00AM\"`."%}
+{% include content/view-materialize/view-materialize-schedule-options.md %}
 
 ## Related Information
 

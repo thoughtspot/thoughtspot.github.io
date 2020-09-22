@@ -1,6 +1,6 @@
 ---
 title: [Pivot table]
-last_updated: 6/18/2020
+last_updated: 9/11/2020
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
