@@ -1,5 +1,5 @@
 ---
-title: [Connect to Amazon Redshift from ThoughtSpot Cloud]
+title: [Connect to Amazon Redshift]
 last_updated: 8/7/2020
 toc: true
 sidebar: mydoc_sidebar

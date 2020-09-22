@@ -1,11 +1,11 @@
 ---
-title: [Add a Snowflake connection for ThoughtSpot Cloud]
+title: [Add a Snowflake connection]
 last_updated: 8/11/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To connect to Snowflake, follow these steps:
+To connect to Snowflake, do the following:
 
 1. Click **Data** in the top navigation bar.
 

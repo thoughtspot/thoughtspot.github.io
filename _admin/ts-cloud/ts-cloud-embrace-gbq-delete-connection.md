@@ -1,6 +1,6 @@
 ---
-title: [Delete an Amazon Redshift connection]
-last_updated: 8/11/2020
+title: [Delete a BigQuery connection]
+last_updated: 9/21/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
-To delete a connection, follow these steps:
+To delete a connection:
 
 1. Click **Data** in the top navigation bar.
 

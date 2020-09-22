@@ -125,5 +125,3 @@ The worksheet view shows the following information:
 
 -   [Worksheet joins]({{ site.baseurl }}/admin/worksheets/add-joins.html)
 -   [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html)
--   [Change the schema using TQL]({{ site.baseurl }}/admin/loading/change-schema.html)
--   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)

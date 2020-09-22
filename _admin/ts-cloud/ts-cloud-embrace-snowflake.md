@@ -1,5 +1,5 @@
 ---
-title: [Connect to Snowflake from ThoughtSpot Cloud]
+title: [Connect to Snowflake]
 last_updated: 8/11/2020
 toc: true
 sidebar: mydoc_sidebar

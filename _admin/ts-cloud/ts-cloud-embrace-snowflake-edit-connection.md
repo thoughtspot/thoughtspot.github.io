@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 You can edit a Snowflake connection to add tables and columns.
 
-To edit a connection, follow these steps:
+To edit a connection, do the following:
 
 1. Click **Data** in the top navigation bar.
 

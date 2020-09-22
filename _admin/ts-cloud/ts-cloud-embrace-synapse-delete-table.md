@@ -1,6 +1,6 @@
 ---
-title: [Delete a table from a Snowflake connection]
-last_updated: 8/11/2020
+title: [Delete a table from a Synapse connection]
+last_updated: 9/21/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -20,8 +20,8 @@ To delete a table:
 
 5. Click **Delete**, and then click **Delete** again to confirm.
 
-   ![Delete a connection table]({{ site.baseurl }}/images/snowflake-deletetable.png "Delete a connection table")
+   ![Delete a connection table]({{ site.baseurl }}/images/synapse-deletetable.png "Delete a connection table")
 
-If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html)
+If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-delete-table-dependencies.html)
 
-See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for details of connection parameters.
+See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html) for details of connection parameters.
