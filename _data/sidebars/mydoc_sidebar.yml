@@ -177,6 +177,60 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html
           output: web
+      - levelThreeTitle: Connect to Google BigQuery
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
+          output: web
+      - levelThreeTitle: Connect to Azure Synapse
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html
+          output: web
     - levelTwoTitle: IT and Ops
       output: web
       levelTwoItems:
@@ -600,24 +654,24 @@ entries:
     - title: Sign-in credentials for administration
       url: /admin/setup/logins.html
       output: web,admBk
-    - levelTwoTitle: Understand the architecture
-      output: web,admBk
-      levelTwoItems:
-      - title: Architectural components
-        url: /admin/architecture/components.html
-        output: web,admBk
-      - title: Data caching
-        url: /admin/architecture/data-caching.html
-        output: web,admBk
-      - title: Authentication frameworks
-        url: /admin/architecture/authentication.html
-        output: web,admBk
-      - title: Data and object security
-        url: /admin/architecture/security.html
-        output: web,admBk
-      - title: Performance considerations
-        url: /admin/architecture/performance.html
-        output: web,admBk
+#    - levelTwoTitle: Understand the architecture
+#      output: web,admBk
+#      levelTwoItems:
+#      - title: Architectural components
+#        url: /admin/architecture/components.html
+#        output: web,admBk
+#      - title: Data caching
+#        url: /admin/architecture/data-caching.html
+#        output: web,admBk
+#      - title: Authentication frameworks
+#        url: /admin/architecture/authentication.html
+#        output: web,admBk
+#      - title: Data and object security
+#        url: /admin/architecture/security.html
+#        output: web,admBk
+#      - title: Performance considerations
+#        url: /admin/architecture/performance.html
+#        output: web,admBk
 #    - levelTwoTitle: Installation and setup
 #      output: web,admBk
 #      levelTwoItems:

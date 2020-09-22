@@ -27,8 +27,7 @@ To remap a connection, follow these steps:
     !["Download the source mapping file"]({{ site.baseurl }}/images/embrace-remapping-download.png "Download the source mapping file")
 
 6. Edit the file, as required, and save it.
-
-    ![Edit the yaml file]({{ site.baseurl }}/images/redshift-yaml.png "Edit the yaml file")
+<!-- ![Edit the yaml file]({{ site.baseurl }}/images/redshift-yaml.png "Edit the yaml file") -->
 
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 

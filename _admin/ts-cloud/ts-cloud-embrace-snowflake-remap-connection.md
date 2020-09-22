@@ -27,8 +27,7 @@ To remap a connection, follow these steps:
     !["Download the source mapping file"]({{ site.baseurl }}/images/snowflake-downloadyaml.png "Download the source mapping file")
 
 6. Edit the file, as required, and save it.
-
-    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml")
+<!--    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml") -->
 
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
