@@ -13,7 +13,7 @@ ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage you
 
 {: id="pre-built-spotapps"}
 ## Pre-built SpotApps
-ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake or Redshift to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
+ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake, AWS Redshift, Azure Synapse, or Google BigQuery to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
 
 For example, if you choose to use the Procurement SpotApp, the **Search** page contains a Worksheet for your users to query on, called "Procurement Analytics Solution."
 
