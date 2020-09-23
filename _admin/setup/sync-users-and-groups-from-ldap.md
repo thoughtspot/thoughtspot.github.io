@@ -1,6 +1,6 @@
 ---
 title: [Sync users and groups from LDAP]
-last_updated: 5/7/2020
+last_updated: 9/23/2020
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -102,7 +102,10 @@ To run the LDAP sync script in interactive mode:
     --purge \
     --basedn 'DC=ldap,DC=thoughtspot,DC=com' \
     --filter_str '(|(CN=TestGroupAlpha)(CN=TestGroupBeta))' \
-    --include_nontree_members
+    --include_nontree_members \
+    --user_identifier <user_identifier> \
+    --authdomain_identifier <authdomain_identifier> \
+    --email_identifier <email_identifier>
     ```
 
     The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
@@ -166,6 +169,18 @@ The following table provides a description of each command-line switch available
 		<tr>
 	      <td><code>--include_nontree_members</code></td>
 	      <td>Includes group members from LDAP/AD even if they do not belong to the current subtree that is being synced.</td>
-        </tr>	  
+        </tr>
+    <tr>
+        <td><code>--user_identifier &lt;user_identifier&gt;</code></td>
+        <td>User name identifier key for user creation or sync</td>
+        </tr>	 
+    <tr>
+        <td><code>--authdomain_identifier &lt;authdomain_identifier&gt;</code></td>
+        <td>Override domain name to be appended to user identifier in user name</td>
+      </tr>
+    <tr>
+        <td><code>--email_identifier &lt;email_identifier&gt;</code></td>
+        <td>Email identifier key</td>
+      </tr>	           
   </tbody>
 </table>
