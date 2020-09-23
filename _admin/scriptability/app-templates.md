@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 The SpotApps feature is in <span class="label label-beta">Beta</span> for 6.2. Talk to your ThoughtSpot contact if you are interested in SpotApps.
 
-SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for exporting, enhancing, and migrating ThoughtSpot objects, to provide you with scriptable applications you can use in multiple clusters.   
+SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html), ThoughtSpot's solution for exporting, enhancing, and migrating ThoughtSpot objects, to provide you with scriptable applications you can use in multiple clusters.   
 
 Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's scriptable applications, or SpotApps, which provide an easy way for you to start getting value from your data.
 
@@ -26,7 +26,7 @@ Your users may want to understand what Answers and Pinboards are before they sta
 
 ![Exec summary]({{ site.baseurl }}/images/exec-summary-pinboard.png "Exec summary")
 
-When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
+When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
 
 {: id="create-spotapps"}
 ## Create and export SpotApps
@@ -38,4 +38,4 @@ You may have a specific Pinboard that you would like to migrate to another clust
 
 Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
 
-See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
+See [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html) for more information on exporting and importing objects.
