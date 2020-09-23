@@ -64,13 +64,13 @@ here.
 
 3. Next, create a resource based on the ThoughtSpot Virtual Machine.
 
-   a. Click **Create a resource**, search the Marketplace for the ThoughtSpot Virtual Machine, and select it.
+   a. Click **Create a resource**, search the Marketplace for the ThoughtSpot Virtual Machine, and choose the [ThoughtSpot Search & AI-driven Analytics (BYOL)](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine?tab=Overview){: target="_blank"} image.
 
-     ![]({{ site.baseurl }}/images/azure_choose_ts_in_marketplace.png "Choose ThoughtSpot in Marketplace")
+     ![]({{ site.baseurl }}/images/azure-ts-image.png "Choose ThoughtSpot in Marketplace")
 
-   b. On the ThoughtSpot Virtual Machine page, click **Create**.
+   b. On the ThoughtSpot Virtual Machine page, click **Get it now**.
 
-     ![]({{ site.baseurl }}/images/azure_create_ts_vm.png "Choose ThoughtSpot in Marketplace")
+     ![]({{ site.baseurl }}/images/azure-get-image.png "Choose ThoughtSpot in Marketplace")
 
 ### Configure basic settings
 
