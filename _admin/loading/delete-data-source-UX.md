@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-There are two separate ways to delete a data source, through the browser or [through TQL](check-dependencies-tql.html#) describes the dependency checking that occurs when deleting or changing a table using TQL. When you want to delete a data source, you first need to handle any dependent objects that have been built on top of it. You can easily see these dependencies, and choose how to handle them before deleting the data source.
+You can delete a data source through the browser. When you want to delete a data source, you first need to handle any dependent objects that have been built on top of it. You can easily see these dependencies, and choose how to handle them before deleting the data source.
 
 
 ## Check data source dependencies
@@ -34,13 +34,8 @@ To view dependent objects for a data source:
 
 ## Delete a data source
 
-You can delete data sources from the browser, as long as they were not created
-by an administrator through `tsload`.
+You can delete the following types of data sources:
 
-You can delete data sources from the browser if they were created in the
-browser. These types of data sources include:
-
--   Data imported from the browser.
 -   Worksheets.
 
 ThoughtSpot checks for dependencies whenever you try to delete a table or worksheet.

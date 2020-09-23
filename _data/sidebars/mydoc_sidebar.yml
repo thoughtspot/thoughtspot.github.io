@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product: ThoughtSpot 5 Cloud
+  product: ThoughtSpot 4 Cloud
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -83,6 +83,9 @@ entries:
         output: web
       - title: Analyst onboarding
         url: /admin/ts-cloud/analyst-onboarding.html
+        output: web
+      - title: Invite others to ThoughtSpot
+        url: /admin/ts-cloud/analyst-invite-others.html
         output: web
       - title: Connect to data
         url: /admin/ts-cloud/connect-data.html
@@ -771,21 +774,21 @@ entries:
 #        - title: Chasm traps
 #          url: /admin/loading/chasm-trap.html
 #          output: web,admBk
-      - levelThreeTitle: Build the schema
-        output: web,admBk
-        levelThreeItems:
-        - title: Schema building overview
-          url: /admin/loading/create-schema.html
-          output: web,admBk
+#      - levelThreeTitle: Build the schema
+#        output: web,admBk
+#        levelThreeItems:
+#        - title: Schema building overview
+#          url: /admin/loading/create-schema.html
+#          output: web,admBk
 #        - title: Connect with TQL and create a schema
 #          url: /admin/loading/prep-schema-for-load.html
 #          output: web,admBk
 #        - title: How to write a SQL script
 #          url: /admin/loading/create-schema-with-script.html
 #          output: web,admBk
-        - title: Schema creation examples
-          url: /admin/loading/create-schema-example.html
-          output: web,admBk
+#        - title: Schema creation examples
+#          url: /admin/loading/create-schema-example.html
+#          output: web,admBk
 #        - title: Upload an SQL script
 #          url: /admin/loading/upload-sql-script.html
 #          output: web,admBk
@@ -894,9 +897,9 @@ entries:
       - title: ThoughtSpot Lifecycle
         url: /admin/data-security/security-thoughtspot-lifecycle.html
         output: web,admBk
-      - title: Encryption of data in transit
-        url: /admin/data-security/encryption-of-data.html
-        output: web,admBk
+#      - title: Encryption of data in transit
+#        url: /admin/data-security/encryption-of-data.html
+#        output: web,admBk
 #    - levelTwoTitle: System administration
 #      output: web,admBk
 #      levelTwoItems:
