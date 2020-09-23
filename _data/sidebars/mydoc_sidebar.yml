@@ -84,9 +84,6 @@ entries:
       - title: Analyst onboarding
         url: /admin/ts-cloud/analyst-onboarding.html
         output: web
-      - title: Invite others to ThoughtSpot
-        url: /admin/ts-cloud/analyst-invite-others.html
-        output: web
       - title: Connect to data
         url: /admin/ts-cloud/connect-data.html
         output: web
