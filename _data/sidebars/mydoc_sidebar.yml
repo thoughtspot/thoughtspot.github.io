@@ -439,7 +439,7 @@ entries:
         - title: View a data profile
           url: /admin/loading/view-your-data-profile.html
           output: web,ugBk
-        - title: Date and currency format settings
+        - title: Set your ThoughtSpot locale
           url: /end-user/locale.html
           output: web,ugBk
         - levelThreeTitle: Share your work
