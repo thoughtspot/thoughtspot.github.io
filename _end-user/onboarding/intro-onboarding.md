@@ -21,7 +21,8 @@ When you create a new user, we recommend that you add them to a user group immed
 
   To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See [Configure LDAP for Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
 
-Before starting the onboarding process, an administrator must specify the configuration.
+{: id="onboarding-tscli-configuration"}
+- **Onboarding configuration**  Before starting the onboarding process, an administrator must specify the configuration through the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
 
 {: id="onboarding-process"}
 ## Onboarding Process ##

@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To connect to Snowflake:
+To connect to Snowflake, do the following:
 
 1. Click **Data** in the top navigation bar.
 

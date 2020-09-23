@@ -1,11 +1,11 @@
 ---
-title: [Add a BigQuery connection]
-last_updated: 9/21/2020
+title: [Add a BigQuery connection to ThoughtSpot Cloud]
+last_updated: 8/11/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To connect to BigQuery:
+To connect to BigQuery, do the following:
 
 1. Click **Data** in the top navigation bar.
 
