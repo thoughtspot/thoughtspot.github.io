@@ -13,7 +13,7 @@ ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage you
 
 {: id="pre-built-spotapps"}
 ## Pre-built SpotApps
-ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake or Redshift to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
+ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake, AWS Redshift, Azure Synapse, or Google BigQuery to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
 
 For example, if you choose to use the Procurement SpotApp, the **Search** page contains a Worksheet for your users to query on, called "Procurement Analytics Solution."
 
@@ -36,27 +36,3 @@ You may have a specific Pinboard that you would like to migrate to another clust
 Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
 
 See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
-
-### Import SpotApps
-You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
-
-1. From the **SpotApps** page under the **Data** tab, click **Import**.
-
-    ![Import SpotApps]({{ site.baseurl }}/images/scriptability-spotapps-import.png "Import SpotApps")
-
-2. In the **Import** interface, click **Select .tsl or .zip files to upload**.
-
-6. In your file system, find and select the .zip file for the SpotApp.
-
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
-
-9. You can unselect any files in the `.zip` file you do not want to upload.
-
-10. Click **Import selected files**.
-
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
-
-    ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
-
-### Limitations
-You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
