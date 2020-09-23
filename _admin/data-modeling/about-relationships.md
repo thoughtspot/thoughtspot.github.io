@@ -9,8 +9,8 @@ You can link tables by creating relationships between their columns. Linked tabl
 
 [Create a relationship through the web interface.](create-new-relationship.html#)
 
-The two methods create the same kind of relationship. When creating a relationship between two tables, the columns that form the link must have the same data type.  For example, you can build a relationship between two columns that use the `INT32` data type.
+The two methods create the same kind of relationship. When creating a relationship between two tables, the columns that form the link must have the same data type.  For example, you can build a relationship between two columns that use the `INT32` data type. You can also generate a script in TQL that contains all relationships, both the ones create in the web interface, and the ones defined through TQL.
 
-These relationships can be managed by going to the **Relationships** page when viewing data in the **Data Modeling** section in the ThoughtSpot application. You can view, modify, or delete relationships in either place.
+These relationships can be managed either in TQL, or by going to the **Relationships** page when viewing data in the **Data Modeling** section in the ThoughtSpot application. You can view, modify, or delete relationships in either place.
 
-The relationships you create cannot form a circular relationship, or "cycle". If you attempt to create a relationship that would complete a cycle, you will see a message stating that the relationship could not be added because it conflicts with another existing relationship.
+You may create relationships using a mixture of TQL and the web interface, but the relationships you create cannot form a circular relationship, or "cycle". If you attempt to create a relationship that would complete a cycle, you will see a message stating that the relationship could not be added because it conflicts with another existing relationship.

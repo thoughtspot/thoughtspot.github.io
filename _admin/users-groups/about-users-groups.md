@@ -14,7 +14,9 @@ password, and a membership in one or more groups for them.
 
 This page describes manual creation of users, groups, and privileges, but you
 can also manage users through [LDAP]({{ site.baseurl
-}}/admin/setup/about-LDAP.html#) or SAML. 
+}}/admin/setup/about-LDAP.html#) or SAML. For information on configuring SAML
+authentication, see [Configure SAML] ({{ site.baseurl
+}}/admin/setup/configure-SAML-with-tscli.html).
 
 ## Privileges and groups
 
