@@ -1,4 +1,4 @@
-The language that ThoughtSpot displays depends on the system locale. If you set your browser locale or OS locale to one of ThoughtSpot's supported locales, ThoughtSpot automatically defaults to that locale. If your browser locale is not one of ThoughtSpot's supported locales, ThoughtSpot defaults to US English.
+The language that ThoughtSpot displays, the date format, and the currency format depend on the system locale. If you set your browser locale or OS locale to one of ThoughtSpot's supported locales, ThoughtSpot automatically defaults to that locale. If your browser locale is not one of ThoughtSpot's supported locales, ThoughtSpot defaults to US English.
 
 It is simple to change this locale using the **Profile** interface.
 
@@ -40,7 +40,7 @@ ThoughtSpot translates keywords, operators, and error messages. See the [keyword
 
 ThoughtSpot _DOES NOT_ translate formulas, or metadata entered by the user. For example, if you name a visualization 'Quarterly Sales' in any variant of English and subsequently change the locale to a variant of French, the visualization remains 'Quarterly Sales' and does not become 'Ventes trimestrielles'. If you specify a currency when uploading data, that currency does not change when the locale changes.
 
-Here is an example of a locale change from the default, American English, to Español.
+Here is an example of a locale change from the default, American English, to Spanish.
 
 ![Locale change -- Español]({{ site.baseurl }}/images/locale-spanish.png "Locale change -- Español")
 
