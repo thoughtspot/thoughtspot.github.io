@@ -60,7 +60,7 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
     | **2** | If your company already has a resource group, *select existing*. If not, *create new*. |
     | **3** | Specify a name for your virtual machine. |
     | **4** | Specify the region in which you are creating the VM. |
-    | **5** | Click **Browse all public and private images**, and search for the ThoughtSpot image. Click on it. |
+    | **5** | Click **Browse all public and private images**, and search for the ThoughtSpot image. Choose the [ThoughtSpot Search & AI-driven Analytics (BYOL)](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine?tab=Overview){: target="_blank"} image. |
     | **6** | Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a size for your VM that works for your cluster needs. |
     | **7** | Select **SSH public key** and specify a username. |
     | **8** | Enter your SSH public key. [Contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line. |
