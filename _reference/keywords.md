@@ -85,6 +85,8 @@ For example, if you search for `state name begins with "V" state name begins wit
 
 {% include content/keywords-in.md %}
 
+Starting with release 6.2, searches with the <code>in</code> keyword do not include {null} values. To include these {null} values, create a formula for the relevant attribute in your search, to convert {null} values to 'unknown,' or some similar word.
+
 <!-- ## Help
 
 {% include content/keywords-help.md %} -->
