@@ -62,9 +62,21 @@ As you create VMs, ensure that all ThoughtSpot hosts have the following partitio
 {: id="enable-hosts"}
 ## Enable the hosts to download Amazon Linux 2 packages
 
+{: id="repositories"}
+**Repositories**
+
+{: id="yum-repositories"}
+- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `google-cloud-sdk`, and `azure-cli`.
+
+{: id="python-repositories"}
+- **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/){: target="_blank"}.
+
+{: id="r-repositories"}
+- **R repository**: for R, ensure the machine is able to reach the `CRAN` repository located at [https://cran.rstudio.com/](https://cran.rstudio.com/){: target="_blank"}.
+
 Make sure that you can download Amazon Linux 2 packages to all hosts, either from the [official package repositories](#official-repositories), or from a [mirror repository](#mirror-repositories) owned and managed by your organization.
 
-If the cluster is offline, and there is no mirror repository in your organization, please [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+If you cannot access the Amazon Linux 2 repositories, there is no mirror repository in your organization, or you are unable to access Yum, Python, or R repositories, please [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 {: id="official-repositories"}
 __Official package repositories__
@@ -75,18 +87,6 @@ If the hosts of your ThoughtSpot cluster can access external repositories, eithe
 **Internal mirror repository**
 
 If the hosts of your ThoughtSpot cluster have access to an internal repository that mirrors the public repositories, copy the [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories to your hosts.
-
-{: id="repositories"}
-**Repositories**
-
-{: id="yum-repositories"}
-- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `google-cloud-sdk`, and `azure-cli`.
-
-{: id="python-repositories"}
-- **Python repository**: for Python, enable the `PyPI` repository.
-
-{: id="r-repositories"}
-- **R repository**: for R, enable the `CRAN` repository.
 
 {: id="enable-ansible"}
 ## Enable an Ansible Control Server
