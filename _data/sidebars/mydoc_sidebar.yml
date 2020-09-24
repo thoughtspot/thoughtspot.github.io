@@ -58,6 +58,9 @@ entries:
       - title: Your user preferences
         url: /end-user/introduction/about-user.html
         output: web,ugBk
+      - title: Use stickers to organize
+        url: /end-user/stickers.html
+        output: web,ugBk
       - levelThreeTitle: Privileges
         output: web,ugBk
         levelThreeItems:
@@ -67,9 +70,6 @@ entries:
         - title: Granular access to Pinboards
           url: /end-user/introduction/pinboard-granular-permission.html
           output: web,ugBk
-      - title: Use stickers to organize
-        url: /end-user/stickers.html
-        output: web,ugBk
     - levelTwoTitle: Use Search
       output: web,ugBk
       levelTwoItems:

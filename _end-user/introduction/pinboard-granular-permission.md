@@ -1,15 +1,15 @@
 ---
 title: [Granular access to Pinboards]
-last_updated: 09/22/2020
-summary: "For embedded uses of ThoughtSpot, we added greater granularity to Pinboard access. With new `Read only` access to Pinboards, users only have limited access to curated Pinboards that are explicitly shared with them."
+last_updated: 09/23/2020
+summary: "For embedded uses of ThoughtSpot, we added greater granularity to Pinboard access. With new <strong>Read only</strong> access to Pinboards, users only have limited access to curated Pinboards that are explicitly shared with them."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot has a user privilege that prevents certain users from creating or modifying Pinboards.
 
-To ensure that users have 'Read only' access, edit the user group permission and check only the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only)** privilege.
+To ensure that users have <strong>Read only</strong> access, edit the user group permission and select the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only)** privilege.
 
-When a user has 'Read only' access, they are limited to viewing and **Exploring** curated Pinboards. They can also **Replay search** with new data, and **Present** the Pinboard.
+When a user has <strong>Read only</strong> access, they are limited to viewing, **Exploring**, and **Presenting** the curated Pinboard. Users can also **Replay search** for Answers, unless they are in embedded mode.
 
 These users *cannot* perform the following actions that are otherwise available on the Pinboard to most users:
   - Share
@@ -18,6 +18,17 @@ These users *cannot* perform the following actions that are otherwise available 
   - Edit
   - Copy and edit
   - Copy embed link
+
+## How to limit access to Pinboards
+
+Follow these steps to limit access to Pinboards:
+
+1. Contact ThoughtSpot Support to enable the feature.
+2. Identify users for limited access to curated Pinboards, and assign them to the same User Group.
+3. Assign the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only)** privilege to the User Group.
+4. Select and Share the curated Pinboards with the User Group.
+
+## Example of two User Groups with different access to Pinboards
 
 To demonstrate this, compare the privileges of the users who are members of the **Sales** user group, and users who are in the **Sales Management** group.
 
