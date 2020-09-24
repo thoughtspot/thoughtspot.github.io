@@ -1,7 +1,7 @@
 ---
 title: [Granular access to Pinboards]
 last_updated: 09/23/2020
-summary: "For embedded uses of ThoughtSpot, we added greater granularity to Pinboard access. With new <strong>Read only</strong> access to Pinboards, users only have limited access to curated Pinboards that are explicitly shared with them."
+summary: "ThoughtSpot now supports limiting some users to <strong>Read only</strong> access on curated Pinboards. These users can view and explore; however, they cannot copy, alter, download, or share the Pinboards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -34,7 +34,7 @@ To demonstrate this, compare the privileges of the users who are members of the 
 
 ![Privileges for two different user groups]({{ site.baseurl }}/images/privilege-cannot-create-update-pinboards.png "Privileges for two different user groups")
 
-Members of the **Sales** user group can only see and explore the curated Pinboards and their component Answers. Notice that members in the "Sales Management" user group can see and explore curated Pinboards, copy these Pinboards and perhaps modify them, create their own Pinboards, share Pinboards with other users, and download the chart as an image.
+Members of the **Sales** User Group can only see and explore the curated Pinboards and their component Answers. Notice that members in the **Sales Management** User Group can also see and explore curated Pinboards, and also copy these Pinboards and perhaps modify them, create their own Pinboards, share Pinboards with other users, and download the chart as an image.
 
 ![Available actions for the two user groups]({{ site.baseurl }}/images/privilege-cannot-create-update-pinboards-available-actions.png "Available actions for the two user groups")
 
