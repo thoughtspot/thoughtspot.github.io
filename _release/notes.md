@@ -83,16 +83,24 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
   <dlentry id="embrace">
     <dt>Embrace</dt>
     <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="/images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline" />.</dd>
-    <dd>In addition, Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization.</dd>
     </dlentry>
 </dl>
 
 ### For the IT Ops Engineer
 
 <dl id="6-3-it-ops-engineer">
+  
   <dlentry id="granular-pinboard-access">
   <dt>Granular access to Pinboards</dt>
   <dd>Starting with this release, you can limit the use of Pinboards and their components to a 'Read only' mode. The new <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> negative privilege, when enabled on the cluster, limits users to viewing and exploring the curated Pinboards that are shared with them. These users cannot edit, copy, download, or share Pinboards and Answers.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>.</dd></dlentry>
+
+  <dlentry id="entry"><dt>Advanced lean mode for cloud deployments</dt><dd>For ThoughtSpot customers who want to deploy their AWS, Azure, and GCP instances with lower data sizes, this release brings enhancements to advanced lean mode configuration.</dd><dd>Enhancements include the following:
+  <ul>
+    <li>You can now configure lean mode yourself using tscli commands. No need to contact ThoughtSpot.</a></li>
+    <li>Default limits on objects (answers, pinboards) so that can't create more objects than your reduced configuration can support.</li>
+  </ul>
+  </dd></dlentry>
+  
 </dl>    
 
 {: id="beta-program"}

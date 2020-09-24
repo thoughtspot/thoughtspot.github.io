@@ -68,9 +68,9 @@ At the bottom of the **Help** dialog box, you can see a link to contact Support 
 well as the version of ThoughtSpot you are using.
 
 ## Getting started
-The **Getting Started** sidebar teaches you about ThoughtSpot through a navigation overview and a series of short videos. You can show or hide this sidebar from the help menu. To show or hide this sidebar for your whole organization, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+The **Information Center** teaches you about ThoughtSpot through a navigation overview and a series of short videos. You can show or hide the Information Center from the help menu. To show or hide it for your whole organization, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
-Refer to [Getting Started]({{ site.baseurl }}/end-user/introduction/getting-started.html).
+Refer to [Information Center]({{ site.baseurl }}/end-user/introduction/getting-started.html).
 
 ## Community
 The **Community** link in the **Help** menu takes you to the [ThoughtSpot Community](https://community.thoughtspot.com) website, where you can ask ThoughtSpot experts questions, share your own ideas and feedback, and meet others.
