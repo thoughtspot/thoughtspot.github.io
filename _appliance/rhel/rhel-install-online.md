@@ -195,6 +195,7 @@ After the Ansible Playbook finishes, run the `prepare_disks` script on every nod
 sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
 ```
 
+Your hosts are ready for installing the ThoughtSpot application.
 
 {: id="install-thoughtspot"}
 ## Install the ThoughtSpot cluster and the application

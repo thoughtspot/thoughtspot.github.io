@@ -77,7 +77,7 @@ ThoughtSpot is certified with RHEL versions 7.7 and 7.8; we **do not** support o
 
 {: id="linux-kernel-version"}
 ### Linux kernel version
-Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.7 and 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.7 and 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.7 or 7.8, with a Linux kernel of version 3.10. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
+Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.7 and 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.7 and 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.7 or 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
 
 {% include warning.html content="If Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
 
@@ -94,7 +94,7 @@ Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.7 and 7.8 us
 - **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/).
 
 {: id="r-repositories"}
-- **R repository**: for R, ensure the machine is able to reach the `CRAN` repository located at [cran.rstudio.com](cran.rstudio.com).
+- **R repository**: for R, ensure the machine is able to reach the `CRAN` repository located at [https://cran.rstudio.com/](https://cran.rstudio.com/){: target="_blank"}.
 
 Make sure that you can download RHEL packages to all hosts, either from the [official package repositories](#official-repositories), or from a [mirror repository](#mirror-repositories) owned and managed by your organization.
 
