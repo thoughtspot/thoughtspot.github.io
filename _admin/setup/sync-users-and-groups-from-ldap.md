@@ -172,15 +172,15 @@ The following table provides a description of each command-line switch available
         </tr>
     <tr>
         <td><code>--user_identifier &lt;user_identifier&gt;</code></td>
-        <td>User name identifier key for user creation or sync</td>
+        <td>User name identifier key for user creation or sync.</td>
         </tr>	 
     <tr>
         <td><code>--authdomain_identifier &lt;authdomain_identifier&gt;</code></td>
-        <td>Override domain name to be appended to user identifier in user name</td>
+        <td>Override domain name to be appended to user identifier in user name.</td>
       </tr>
     <tr>
         <td><code>--email_identifier &lt;email_identifier&gt;</code></td>
-        <td>Email identifier key</td>
+        <td>Email identifier key for user creation or sync.</td>
       </tr>	           
   </tbody>
 </table>
