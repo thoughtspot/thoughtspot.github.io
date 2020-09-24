@@ -195,10 +195,10 @@ As the Ansible Playbook runs, it will perform these tasks:
   4. Configure all the nodes in the ThoughtSpot cluster:
      - Format and create export partitions, if they do not exist
 
-After the Ansible Playbook finishes, run the `prepare_disks` script on every node, if you did not include it in the `customize.sh` file:
+After the Ansible Playbook finishes, run the `prepare_disks` script on every node, if you did not include it in the `customize.sh` file. Specify the data drives by adding the full device path for all data drives, such as `/dev/sdc`, after the script name. Separate data drives with a space.
 
 ```
-sudo /usr/local/scaligent/bin/prepare_disks.sh
+sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
 ```
 
 Your hosts are now ready for installing the ThoughtSpot application.
