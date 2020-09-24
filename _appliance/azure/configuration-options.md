@@ -11,6 +11,8 @@ ThoughtSpot supports Premium SSD Managed Disks for persistent storage. For more 
 All Azure VMs (nodes) in a ThoughtSpot cluster must be in the same availability zone
 (and, therefore, also in the same region). ThoughtSpot does not support deploying VMs( nodes) of the same cluster across availability zones. For more information, see [What are Availability Zones in Azure?](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview){:target="_blank"} in Microsoft's Azure documentation.
 
+When choosing an instance type, ensure that it uses Intel CPUs. 
+
 ## ThoughtSpot Azure instance types
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume | Required root volume capacity |

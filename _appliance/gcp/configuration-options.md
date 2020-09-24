@@ -17,6 +17,7 @@ All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
 (and, therefore, also in the same region). ThoughtSpot does not support deploying VMs (nodes) of the same cluster across different zones. For more information, see [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/){:target="_blank"} in Google's Cloud documentation.
 
 ## ThoughtSpot GCP instance types
+When choosing an instance type, ensure that it uses Intel CPUs. 
 
 ### VMs with Persistent Disk-only storage
 
