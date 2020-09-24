@@ -58,7 +58,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
         </dd><dd><strong>High cardinality overview</strong><br>
 <script src="https://fast.wistia.com/embed/medias/q9jggoxmjy.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_q9jggoxmjy popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span><p>See <a href="{{ site.baseurl }}/end-user/search/high-cardinality.html">Charts and tables with a very large number of data values</a>.</p></dd></dlentry>
   <dlentry id="keywords">
-    <dt>New search keywords</dt>
+    <dt>New search keywords and changed behavior</dt>
     <dd>
       <ul>
         <li id="top">
@@ -66,7 +66,10 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
           <br/>The new keyword phrase, <a href="{{"/reference/keywords.html#top-n-by" | prepend: site.baseurl}}">top <em>n</em> <em>measure1</em> by <em>attribute</em> | <em>measure2</em></a>, enables you to search the top n results by an attribute or a secondary measure.</li>
         <li id="not-in">
           <strong>The ‘not in’ keyword</strong>
-          <br/>Another keyword phrase, <a href="{{"/reference/keywords.html#not-in" | prepend: site.baseurl}}">not in</a>, enables you to find the relative complement of two sets: results that satisfy the outer query that are not in the inner query. Contrast this with <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> that returns results that are an intersection of the outer and inner query, or 'query within a query'.</li></ul>
+          <br/>Another keyword phrase, <a href="{{"/reference/keywords.html#not-in" | prepend: site.baseurl}}">not in</a>, enables you to find the relative complement of two sets: results that satisfy the outer query that are not in the inner query. Contrast this with <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> that returns results that are an intersection of the outer and inner query, or 'query within a query'.</li>
+        <li id="in">
+          <strong> Change in behavior for the ‘in’ keyword</strong>
+          <br/>The <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> keyword returns results that are an intersection of the outer and inner query, or 'query within a query'. Starting in 6.2, searches with the <code>in</code> keyword do not include {null} values. To include these {null} values, create a formula for the relevant attribute in your search, to convert {null} values to 'unknown,' or some similar word.</li></ul>
           </dd><dd><strong>Search keywords overview</strong><br>
 <script src="https://fast.wistia.com/embed/medias/0m74x2bszt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_0m74x2bszt popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry id="monitor">
