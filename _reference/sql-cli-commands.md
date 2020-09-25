@@ -177,7 +177,7 @@ GROUP BY "vendor" LIMIT 10;</code></p>
       </tr>
    </tbody>
 </table>
-
+<p>[embed label="schema-creation"]</p>
 ## Schema creation
 
 <table>
@@ -238,7 +238,7 @@ CONSTRAINT PRIMARY KEY("saleid")) PARTITION BY HASH(96) KEY ("saleid");</code></
       </tr>
    </tbody>
 </table>
-
+<p>[/embed]</p>
 ## Schema modification
 
 <table>
