@@ -9,7 +9,8 @@ You can add and edit fonts to customize the appearance of your charts and tables
 
 If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following these steps:
 
-1. Navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`. If this page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
+1. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears.<br>
+If the Style Customization option is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable it.
 
 1. Click the **Add New** button under **Chart Visualization Fonts**.
 
