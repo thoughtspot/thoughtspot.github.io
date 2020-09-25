@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Learn how to schedule materialization refresh of a view to keep it in sync with the data that makes it up."> -->
+<!-- <meta name="description" content="Learn how to create or change the schedule for data refresh in a materialized view."> -->
 <meta name="keywords" content=",  ">
-<title>Schedule materialization refresh on a view | ThoughtSpot</title>
+<title>Create or change schedule for refreshing a materialized view | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,22 +48,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Schedule materialization refresh on a view”] | thoughtspot.github.io</title>
+<title>[“Create or change schedule for refreshing a materialized view”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="[“Schedule materialization refresh on a view”]" />
+<meta property="og:title" content="[“Create or change schedule for refreshing a materialized view”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="To keep the data in a view up-to-date, you can schedule periodic refreshes from the underlying table(s)." />
-<meta property="og:description" content="To keep the data in a view up-to-date, you can schedule periodic refreshes from the underlying table(s)." />
+<meta name="description" content="To keep the data in a materialized view consistent and relevant, we recommend that you periodically refresh it with data from the parent table or tables. ThoughtSpot makes it easy, by letting you schedule regular refreshes at daily, weekly, or monthly intervals." />
+<meta property="og:description" content="To keep the data in a materialized view consistent and relevant, we recommend that you periodically refresh it with data from the parent table or tables. ThoughtSpot makes it easy, by letting you schedule regular refreshes at daily, weekly, or monthly intervals." />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/admin/loading/schedule-materialization.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/loading/schedule-materialization.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-18T13:46:20-07:00" />
+<meta property="article:published_time" content="2020-09-24T18:29:15-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Schedule materialization refresh on a view”]" />
+<meta property="twitter:title" content="[“Create or change schedule for refreshing a materialized view”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Schedule materialization refresh on a view”]","dateModified":"2020-09-18T13:46:20-07:00","url":"https://docs.thoughtspot.com/latest/admin/loading/schedule-materialization.html","datePublished":"2020-09-18T13:46:20-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/loading/schedule-materialization.html"},"description":"To keep the data in a view up-to-date, you can schedule periodic refreshes from the underlying table(s).","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Create or change schedule for refreshing a materialized view”]","dateModified":"2020-09-24T18:29:15-07:00","url":"https://docs.thoughtspot.com/latest/admin/loading/schedule-materialization.html","datePublished":"2020-09-24T18:29:15-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/loading/schedule-materialization.html"},"description":"To keep the data in a materialized view consistent and relevant, we recommend that you periodically refresh it with data from the parent table or tables. ThoughtSpot makes it easy, by letting you schedule regular refreshes at daily, weekly, or monthly intervals.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -586,7 +586,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/latest/end-user/introduction/getting-started.html">The Getting Started sidebar</a></li>
+                          <li><a href="/latest/end-user/introduction/getting-started.html">Information Center</a></li>
                       
                    
                 
@@ -1402,7 +1402,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/latest/end-user/locale.html">Date and currency format settings</a></li>
+                          <li><a href="/latest/end-user/locale.html">Set your ThoughtSpot locale</a></li>
                       
                    
                 
@@ -5229,7 +5229,7 @@ $(document).ready(function(){
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Schedule materialization refresh on a view</h1>
+   <h1 class="post-title-main">Create or change schedule for refreshing a materialized view</h1>
 </div>
 
 
@@ -5237,7 +5237,7 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">Learn how to schedule materialization refresh of a view to keep it in sync with the data that makes it up.</div>
+    <div class="summary">Learn how to create or change the schedule for data refresh in a materialized view.</div>
    
 
     
@@ -5248,45 +5248,87 @@ $(document).ready(function(){
   Estimated reading time:
   
   
-    1 minute
+    2 minutes
   
 </span> -->
 
     
 
-  <p>To keep the data in a view up-to-date, you can schedule periodic refreshes from the underlying table(s).</p>
+  <p>To keep the data in a materialized view consistent and relevant, we recommend that you periodically refresh it with data from the parent table or tables. ThoughtSpot makes it easy, by letting you schedule regular refreshes at daily, weekly, or monthly intervals.</p>
 
-<p>To schedule materialization of a view:</p>
+<p>To schedule materialization of a view, follow these steps:</p>
 
 <ol>
   <li>
-    <p>To find your view, click <strong>Data</strong> in the top menu, and choose <strong>Views</strong>.</p>
+    <p>To find your view, click <strong>Data</strong> in the top menu.</p>
+  </li>
+  <li>
+    <p>Under <strong>Data Objects</strong> at the top of the page, choose <strong>Views</strong>.</p>
   </li>
   <li>
     <p>Click the name of your view.</p>
   </li>
   <li>
-    <p>Click <strong>Schema</strong>.</p>
+    <p>Click <strong>Joins</strong>.</p>
   </li>
-  <li>
-    <p>Under <strong>Materialization</strong>, click the link next to <strong>Update Schedule</strong>.</p>
-  </li>
-  <li>
-    <p>In the <strong>Schedule Data Updates</strong> dialog, select an option for <strong>Repeats</strong> (Monthly, Weekly, or Daily).</p>
+  <li>Under <strong>Materialization</strong>, in the <strong>Update schedule</strong> section, either update an existing schedule, or create a new schedule:
+    <ul>
+      <li>To update an existing schedule, click <em>Daily</em>, <em>Weekly</em>, or <em>Monthly</em>.</li>
+      <li>To create a schedule, click <em>None</em>.</li>
+    </ul>
 
-    <p><img src="/latest/images/materialized-view-sched-weekly.png" alt="" /></p>
+    <p><img src="/latest/images/view-materialize-10.png" alt="Update or create a schedule" /></p>
   </li>
   <li>
-    <p>Fill in the schedule details:</p>
+    <p>To schedule a refresh for the materialized view, next to <strong>Repeats</strong>, select the <strong>Time Interval</strong>:  <em>Daily</em>, <em>Weekly</em>, or <em>Monthly</em>,.</p>
 
-    <p><img src="/latest/images/schedule-data-updates-weekly.png" alt="" /></p>
+    <p><img src="/latest/images/view-materialize-4.png" alt="Select time interval for refreshing the data in the materialized view" /></p>
   </li>
   <li>
-    <p>Click <strong>Schedule</strong>.</p>
+    <p>Supply the schedule details:</p>
+
+    <dl>
+<dlentry id="daily">
+  <dt>Daily</dt>
+  <dd>
+    <ul>
+     <li>From the <strong>Select days</strong> menu, select <em>Every weekday</em>, or <em>Every day</em>.</li>
+     <li>Specify the hour of the day.</li>
+     <li>Specify the minutes.</li>
+     <li>Click <strong>Schedule</strong>.</li>
+     </ul>
+     <img src="../../images/view-materialize-5.png" alt="Specify the daily update schedule for refreshing the materialized view" />
+     </dd>
+</dlentry>
+<dlentry id="weekly">
+  <dt>Weekly</dt>
+  <dd>
+    <ul>
+     <li>From the <strong>Select weekdays</strong> menu, select the days of the week, <em>Sunday .... Saturday</em>, for the refresh, and click <strong>Done</strong>.</li>
+     <li>Specify the hour of the day.</li>
+     <li>Specify the minutes.</li>
+     <li>Click <strong>Schedule</strong>.</li>
+     </ul>
+     <img src="../../images/view-materialize-6.png" alt="Specify the weekly update schedule for refreshing the materialized view" />
+     </dd>
+</dlentry>
+<dlentry id="monthly">
+  <dt>Monthly</dt>
+  <dd>
+    <ul>
+     <li>From the <strong>Select days</strong> menu, select the day of the month, <em>1 ... 31</em>, for the refresh.</li>
+     <li>Specify the hour of the day.</li>
+     <li>Specify the minutes.</li>
+     <li>Click <strong>Schedule</strong>.</li>
+     </ul>
+     <img src="../../images/view-materialize-6.png" alt="Specify the weekly update schedule for refreshing the materialized view" />
+     </dd>
+   </dlentry>
+ </dl>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Refresh works only if it is scheduled in the refresh window set for the cluster, with default: 8:00 PM - 4:00 AM. Only the start time of the refresh window is configurable using the flag <code class="language-plaintext highlighter-rouge">orion.materializationConfig.refreshWindowStartTime</code>. This flag can have values like <code class="language-plaintext highlighter-rouge">12:00PM</code>, <code class="language-plaintext highlighter-rouge">01:00AM</code>, and so on. For example, to set the cluster window from 2:00 AM to 10:00 AM, set the flag to <code class="language-plaintext highlighter-rouge">orion.materializationConfig.refreshWindowStartTime "02:00AM"</code>.</div>
   </li>
 </ol>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Refresh works only if it is scheduled in the refresh window set for the cluster (default: 8:00 PM - 4:00 AM). Only the start time of the refresh window is configurable using the flag <code class="language-plaintext highlighter-rouge">orion.materializationConfig.refreshWindowStartTime</code> which can be set to values such as <code class="language-plaintext highlighter-rouge">12:00PM</code> or <code class="language-plaintext highlighter-rouge">01:00AM</code> etc. Example: To set the cluster window from 2:00 AM to 10:00 AM you can set the flag as <code class="language-plaintext highlighter-rouge">orion.materializationConfig.refreshWindowStartTime "02:00AM"</code>.</div>
 
 <h2 id="related-information">Related Information</h2>
 
@@ -5321,9 +5363,9 @@ $(document).ready(function(){
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Sep 18, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Sep 24, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 11/2/2018<br/>  -->
+         <!-- <span>Page last updated:</span> 09/21/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
