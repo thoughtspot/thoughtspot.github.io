@@ -29,8 +29,8 @@ To re-brand the interface:
 
     In the **Style Customization** page, you can perform the following actions:
 
-    -   [Upload application logos](upload-application-logos.html#)
-    -   [Set chart and table visualization fonts](set-chart-and-table-visualization-fonts.html#)
-    -   [Choose a background color](choose-background-color.html#)
-    -   [Select chart color palettes](select-chart-color-palettes.html#)
-    -   [Change the footer text](change-the-footer-text.html#).
+    -   [Upload application logos]({{ site.baseurl }}/app-integrate/custom-branding/upload-application-logos.html#)
+    -   [Set chart and table visualization fonts]({{ site.baseurl }}/app-integrate/custom-branding/set-chart-and-table-visualization-fonts.html#)
+    -   [Choose a background color]({{ site.baseurl }}/app-integrate/custom-branding/choose-background-color.html#)
+    -   [Select chart color palettes]({{ site.baseurl }}/app-integrate/custom-branding/select-chart-color-palettes.html#)
+    -   [Change the footer text]({{ site.baseurl }}/app-integrate/custom-branding/change-the-footer-text.html#).
