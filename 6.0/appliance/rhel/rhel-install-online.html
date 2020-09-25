@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-install-online.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-18T13:29:01-07:00" />
+<meta property="article:published_time" content="2020-09-24T18:11:02-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Install the ThoughtSpot application on online clusters that use RHEL”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-install-online.html","headline":"[“Install the ThoughtSpot application on online clusters that use RHEL”]","dateModified":"2020-09-18T13:29:01-07:00","datePublished":"2020-09-18T13:29:01-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-install-online.html"},"description":"Before starting the install, make sure that you completed the pre-installation steps.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-install-online.html","headline":"[“Install the ThoughtSpot application on online clusters that use RHEL”]","dateModified":"2020-09-24T18:11:02-07:00","datePublished":"2020-09-24T18:11:02-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/rhel/rhel-install-online.html"},"description":"Before starting the install, make sure that you completed the pre-installation steps.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1221,7 +1221,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.0/end-user/locale.html">Date and currency format settings</a></li>
+                          <li><a href="/6.0/end-user/locale.html">Set your ThoughtSpot locale</a></li>
                       
                    
                 
@@ -3728,7 +3728,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    5 minutes
+    6 minutes
   
 </span>
  -->
@@ -3786,7 +3786,7 @@ $('#toc').on('click', 'a', function() {
    <dl>
     <dlentry>
       <dt>customize.sh</dt>
-      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on.</dd>
+      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on. Additionally, you can include the <code>prepare_disks</code> script here. Add the following line to the <code>customize.sh</code> file: <code>sudo /usr/local/scaligent/bin/prepare_disks.sh</code>.</dd>
     </dlentry>
     <dlentry>
       <dt>hosts.sample</dt>
@@ -3941,7 +3941,12 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ol>
 
-<p>After the Ansible Playbook finishes, your hosts are ready for installing the ThoughtSpot application.</p>
+<p>After the Ansible Playbook finishes, run the <code class="language-plaintext highlighter-rouge">prepare_disks</code> script on every node, if you did not include it in the <code class="language-plaintext highlighter-rouge">customize.sh</code> file. Specify the data drives by adding the full device path for all data drives, such as <code class="language-plaintext highlighter-rouge">/dev/sdc</code>, after the script name. Separate data drives with a space.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
+</code></pre></div></div>
+
+<p>Your hosts are ready for installing the ThoughtSpot application.</p>
 
 <h2 id="install-thoughtspot">Install the ThoughtSpot cluster and the application</h2>
 
@@ -3990,7 +3995,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Sep 18, 2020 <br />
+        Generated: Sep 24, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 6/18/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
