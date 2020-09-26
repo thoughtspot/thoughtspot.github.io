@@ -25,6 +25,8 @@ Note that pinboard filters only apply to the tables and charts that are based on
 worksheets. If a pinboard also includes tables and charts that were created from
 underlying tables or on user uploaded data, the filters don’t apply to them.
 
+To create one filter that filters visualizations based on multiple Worksheets, you can link the Worksheet columns, at the Pinboard level. Refer to [Linked Pinboard filters]({{ site.baseurl }}/admin/ts-cloud/linked-filters.html).
+
 ## Create a pinboard filter
 
 You can create a filter in the pinboard view for any pinboard. This allows you
@@ -56,6 +58,19 @@ create a pinboard filter:
   filter applied to every object in the pinboard that was created from a
   worksheet. Pinboard filters do not apply to tables and charts built directly on
   top of base tables.
+
+## Apply filters to specific visualizations
+You can apply filters to only certain visualizations that you specify. To specify the visualizations that a Pinboard filter should apply to, follow these steps:
+
+1. Select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
+
+    ![Configure filters]({{ site.baseurl }}/images/configure-filters.png "Configure filters")
+
+2. In the **Configure filters** modal, choose the filter you would like to update from the side menu.
+
+3. Scroll down to **Applicable to**. You can select the **All** option, or only choose certain visualizations. You can also search for a visualization.
+
+    ![Specify filtered visualizations]({{ site.baseurl }}/images/filter-applicable-to.png "Specify filtered visualizations")
 
 ## Edit a filter from the answer
 
