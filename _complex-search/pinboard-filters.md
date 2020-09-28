@@ -60,7 +60,7 @@ create a pinboard filter:
   top of base tables.
 
 ## Apply filters to specific visualizations
-You can apply filters to only certain visualizations that you specify. To specify the visualizations that a Pinboard filter should apply to, follow these steps:
+You can apply filters to only certain visualizations that you specify. To specify the visualizations that a Pinboard filter should apply to, follow these steps, or refer to [Selective Pinboard filters]({{ site.baseurl }}/admin/ts-cloud/selective-filters.html):
 
 1. Select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
 

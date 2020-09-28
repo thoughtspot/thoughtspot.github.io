@@ -12,6 +12,8 @@ To filter Pinboards based on one Worksheet, see [Pinboard filters]({{ site.baseu
 ## Configure linked filters
 To configure linked Pinboard filters, follow these steps. Note that you can link the Worksheet columns at the Pinboard level ***without*** actually filtering the Pinboard. This is useful if you would like your users to be able to choose their own filters for the Pinboard.
 
+{% include note.html content="When you create linked Pinboard filters, you link Worksheet columns at the Pinboard level. You do not globally link the Worksheet columns. You must create the linked filters separately, for each Pinboard." %}
+
 1. Navigate to the Pinboard you would like to filter, or [create a new Pinboard]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html).
 
 2. First, you must add primary Worksheet filters. If you do not add primary filters, the **Configure filters** option does not appear in the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
