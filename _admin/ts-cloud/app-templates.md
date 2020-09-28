@@ -9,7 +9,7 @@ SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scr
 
 Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's scriptable applications, or SpotApps, which provide an easy way for you to start getting value from your data.
 
-ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage your data in Snowflake or Redshift to provide pre-built Pinboards, Answers, Views, Tables and Worksheets. You can also [create your own SpotApps](#create-spotapps) by exporting multiple objects of the same type in one zip file, or an object and its associated data sources, and migrating these objects to another environment.
+ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage your data in Snowflake, AWS Redshift, Google BigQuery, or Azure Synapse to provide pre-built Pinboards, Answers, Views, Tables and Worksheets. You can also [create your own SpotApps](#create-spotapps) by exporting multiple objects of the same type in one zip file, or an object and its associated data sources, and migrating these objects to another environment.
 
 {: id="pre-built-spotapps"}
 ## Pre-built SpotApps
@@ -48,7 +48,7 @@ You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 
 6. In your file system, find and select the .zip file for the SpotApp.
 
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message, and shows you which objects are validated. You can now import the objects. The <code>GUID</code> parameter in an object's .tsl file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one.
 
 9. You can unselect any files in the `.zip` file you do not want to upload.
 

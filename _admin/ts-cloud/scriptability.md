@@ -191,7 +191,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 6. In your file system, find and select the `TSL` file. The file uploads automatically.
 
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file. 
 
 9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload. Here, we only want to import **Brand Revenue** and **Average Revenue by Part**, not **Basic Answer 1**.
 
