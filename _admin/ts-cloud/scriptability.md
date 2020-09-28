@@ -1,6 +1,6 @@
 ---
 title: [Scriptability]
-last_updated: 9/21/2020
+last_updated: 9/28/2020
 summary: "Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,11 +28,19 @@ Depending on how you want to use Scriptability, there are several workflows you 
 
 ## Prerequisites
 
-**Required permissions for Pinboards, Answers, Worksheets, Tables, and Views**
+Refer to the following tables for required permissions for importing and exporting Pinboards, Answers, Worksheets, Tables, and Views.
 
-| Export with dependents | Export without dependents | Import with dependents | Import without dependents |
-| ---------- | ---- | --- |
-| **View** permission for the Pinboard, Answer, Worksheet, Table, or View. **View** permission on all underlying tables, Worksheets, and Views. For example, if an object is built on top of a View that is built on top of a Worksheet, you must have **view** permission for all of these objects. | **View** permission for the Pinboard, Answer, Table, Worksheet, or View. | If you are not overwriting the existing dependents, you must have the **can manage data** permission. If you are overwriting the existing dependents, you must have the **can manage data** permission, and **edit** permission on the dependents. | You must have **view** permission for the dependents that the Pinboard, Answer, Worksheet, Table, or View visualizations directly depend on. For example, if an object is built on top of a Worksheet that is built on top of a View, you must have **view** permission for the Worksheet, not the View. |
+**Import**
+
+| Import a new object without importing its dependents | Import a new object and its dependents | Import and update an existing object without dependents | Import and update an existing object with dependents |
+| ---------- | ---- | --- | --- |
+| The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. For example, if you import a Pinboard that is built on a Worksheet that is built on a table, you must have **view** permission for the Worksheet. When importing a new Worksheet or View, you must have the **can manage data** permission. | **Can manage data**, if the object or any of its dependents is a Worksheet or View. | **Edit** permission on the existing object. The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. When importing a Worksheet or View, you must have the **can manage data** permission. | **Edit** permission on the existing object(s). **Can manage data**, if the object or any of its dependents is a Worksheet or View. |
+
+**Export**
+
+| Export with dependents | Export without dependents |
+| ---- | ---- |
+| **View** permission on the object and all dependents. | **View** permission on the object and its first-level dependents. |
 
 {: id="export-object"}
 ## Export an object
