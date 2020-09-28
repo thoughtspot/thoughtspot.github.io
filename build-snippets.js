@@ -7,6 +7,7 @@ const basePath = path.join(__dirname, '') + '/' + folder
 const outputPath = basePath + '/embed-snippets'
 
 try {
+	console.log('check', folder, existsSync(outputPath))
 	if (!folder || !existsSync(outputPath))
 		return
 } catch(e) {
@@ -29,6 +30,7 @@ const embedTemplate = `
 `
 
 const getFilesAndDirectories = (directoryPath, includeFiles = false) => {
+	console.log('directoryPath', directoryPath)
 	return readdirSync(directoryPath, {withFileTypes: true})
 		.filter(file => {
 			// Don't do the embed snippets dir
@@ -48,6 +50,8 @@ const getFilesAndDirectories = (directoryPath, includeFiles = false) => {
 }
 
 const generateFileSnippets = (path, file) => {
+	console.log('generateFileSnippets', path, file)
+
 	let sourceHtml = readFileSync(`${basePath}${path}/${file}`).toString()
 	const htmlRows = sourceHtml.split('\n')
 	const shortcodeRows = []
@@ -137,5 +141,7 @@ const generateSnippets = (filesAndFolders, currentPath) => {
 // generateTestData()
 
 const filesAndFoldersToCrawl = getFilesAndDirectories(basePath)
+
+console.log('filesAndFoldersToCrawl', filesAndFoldersToCrawl)
 
 generateSnippets(filesAndFoldersToCrawl, '')
