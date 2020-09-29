@@ -12,15 +12,15 @@ To filter Pinboards based on one Worksheet, see [Pinboard filters]({{ site.baseu
 ## Configure linked filters
 To configure linked Pinboard filters, follow these steps. Note that you can link the Worksheet columns at the Pinboard level ***without*** actually filtering the Pinboard. This is useful if you would like your users to be able to choose their own filters for the Pinboard.
 
-{% include note.html content="When you create linked Pinboard filters, you link Worksheet columns at the Pinboard level. You do not globally link the Worksheet columns. You must create the linked filters separately, for each Pinboard." %}
+{% include note.html content="When you create linked Pinboard filters, you link Worksheet columns at the Pinboard level. You do not globally link the Worksheet columns. You must create linked filters separately, for each Pinboard." %}
 
 1. Navigate to the Pinboard you would like to filter, or [create a new Pinboard]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html).
 
-2. First, you must add primary Worksheet filters. If you do not add primary filters, the **Configure filters** option does not appear in the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
+2. First, you must add primary Pinboard filters. If you do not add primary filters, the **Configure filters** option does not appear in the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
-3. To add the primary Worksheet filter, select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Add filters**.
+3. To add a primary Pinboard filter, select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Add filters**.
 
-4. In the **Add filters** side panel, search for a column you would like to filter on, or open the Worksheet the column is in and click on the correct column. In this example, we will create a linked **Customer region** filter.
+4. In the **Add filters** side panel, search for columns you would like to filter on, or open the Worksheets the columns are in and click on the correct columns. In this example, we will create a linked **Customer region** filter. To create a filter without actually filtering the Pinboard, click **Done** after you choose the column you would like to filter on, instead of specifying values to include or exclude.
 
     ![Add filters]({{ site.baseurl }}/images/add-filters.png "Add filters")
 
@@ -34,17 +34,17 @@ To configure linked Pinboard filters, follow these steps. Note that you can link
 
     ![Configure filters modal]({{ site.baseurl }}/images/configure-filters-modal.png "Configure filters modal")
 
-8. The **Primary Worksheet** and **Primary Filter** text boxes contain the Worksheet and column that the Pinboard is already filtering on. To link the **Customer region** filter across Worksheets, we must specify the **Linked worksheet** and **Linked filter**. Click on the **Select Worksheet** dropdown, and choose the Worksheet that contains the column you would like to filter on. In this case, the Pinboard only uses one other Worksheet.
+8. The **Primary Worksheet** and **Primary Filter** text boxes contain the Worksheet and column that the Pinboard is already filtering on. To link the **Customer region** filter across Worksheets, we must specify the **Linked worksheet** and **Linked filter**. Click on the **Select Worksheet** dropdown, and choose the Worksheet that contains the column you would like to filter on. In this case, the Pinboard only uses one other Worksheet: **Formula Worksheet**.
 
 9. After you select the **Linked Worksheet**, you can select the column to filter on. In this case, we are filtering on **Customer region**.
 
     ![Choose linked filter]({{ site.baseurl }}/images/choose-linked-filter.png "Choose linked filter")
 
-10. To link another Worksheet's Customer region column to this filter, click **+ Link filter**. In this case, the Pinboard only uses two Worksheets, so the **+ Link filter** is unavailable.
+10. To link another Worksheet's **Customer region** column to this filter, click **+ Link filter**. In this case, the Pinboard only uses two Worksheets, so the **+ Link filter** option is unavailable.
 
 11. To specify visualizations to apply the filter to, scroll down to **Applicable to**. You can select the **All** option, or only choose certain visualizations.
 
-    ![Specify filtered visualizations]({{ site.baseurl }}/images/filter-applicable-to.png "Specify filtered visualizations")
+    ![Specify filtered visualizations]({{ site.baseurl }}/images/filter-applicable-to-not-all.png "Specify filtered visualizations")
 
     You can specify which visualizations a filter should apply to, even if it is not a multi-Worksheet linked filter.
 
