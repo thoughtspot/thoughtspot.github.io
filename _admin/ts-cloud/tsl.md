@@ -231,7 +231,7 @@ The `TSL` file for Scriptable Tables has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Worksheet.
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your Table, the `index_priority` parameter does not appear. You can add that variable to the TSL file to specify an index priority for the Table.
 
 <pre>
 <a href="#table">table</a>:

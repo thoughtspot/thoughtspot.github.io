@@ -13,27 +13,27 @@ ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage you
 
 {: id="pre-built-spotapps"}
 ## Pre-built SpotApps
-ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake or Redshift to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
+ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake, AWS Redshift, Google BigQuery, or Azure Synapse to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
 
 For example, if you choose to use the Procurement SpotApp, the **Search** page contains a Worksheet for your users to query on, called "Procurement Analytics Solution."
 
 ![Procurement Worksheet Search]({{ site.baseurl }}/images/scriptable-app-procurement-search.png "Procurement Worksheet Search")
 
-Your users may want to understand what Answers and Pinboards are before they start searching, or they may only want to view pre-built objects. They can view any of the pre-existing objects, such as this Exec Summary Pinboard:
+Your users may want to understand what Answers and Pinboards are before they start searching, or they may only want to gain insights from pre-built objects. They can view any of the pre-existing objects, such as this Exec Summary Pinboard:
 
 ![Exec summary]({{ site.baseurl }}/images/exec-summary-pinboard.png "Exec summary")
 
-When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
+When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, Tables, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
 
 {: id="create-spotapps"}
 ## Create and export SpotApps
 You can create your own SpotApps in two ways:
 
-You may have a specific Pinboard or other object that you would like to migrate to another cluster, but that cluster may not contain the Worksheets, Tables, or Views that the Pinboard's data comes from. When you export any Pinboard, Answer, Worksheet, or View, you have the option to export its associated data sources as well. This creates a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
+- You may have a specific Pinboard or other object that you would like to migrate to another cluster, but that cluster may not contain the Worksheets, Tables, or Views that the Pinboard's data comes from. When you export any Pinboard, Answer, Worksheet, or View, you have the option to export its associated data sources as well. This creates a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
 
-![Choose what to export]({{ site.baseurl }}/images/scriptability-pinboard-select-export.png "Choose what to export")
+    ![Choose what to export]({{ site.baseurl }}/images/scriptability-pinboard-select-export.png "Choose what to export")
 
-Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
+- Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
 
 See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
 

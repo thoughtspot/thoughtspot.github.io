@@ -32,7 +32,7 @@ Refer to the following tables for required permissions for importing and exporti
 
 **Import**
 
-| Import a new object without importing its dependents | Import a new object and its dependents | Import and update an existing object without dependents | Import and update an existing object with dependents |
+| Import and create a new object without importing its dependents | Import and create a new object and its dependents | Import and update an existing object without dependents | Import and update an existing object with dependents |
 | ---------- | ---- | --- | --- |
 | The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. For example, if you import a Pinboard that is built on a Worksheet that is built on a table, you must have **view** permission for the Worksheet. When importing a new Worksheet or View, you must have the **can manage data** permission. | **Can manage data**, if the object or any of its dependents is a Worksheet or View. | **Edit** permission on the existing object. The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. When importing a Worksheet or View, you must have the **can manage data** permission. | **Edit** permission on the existing object(s). **Can manage data**, if the object or any of its dependents is a Worksheet or View. |
 
@@ -108,14 +108,16 @@ To use the TSL editor, follow these steps:
     - **File**: Validate, Publish, and Exit editor. You can also validate and publish using the **validate** and **publish** buttons at the top right of the editor. You can also exit the editor using the X button at the top right corner. The system warns you if you try to exit with unsaved changes.
     - **Edit**: Undo, Redo, Cut, Copy, Select all, Fold, Fold all, Unfold, Unfold all, and Go to line. The **Fold** option compresses the lines in the file so you only see the first line of a section. **Go to line** opens a dialog box, where you can type in the number of the line you would like to go to. This is useful for long TSL files.
     - **Find**: Find and Find and replace. This functionality allows you to easily find words or parameters in the TSL file. You can also click on a word or parameter in the TSL editor, and the editor highlights all instances of that word.
-    - **View**: Show line numbers and Hide line numbers.
+    - **View**: Show/Hide errors, Show line numbers, and Hide line numbers. **Show/Hide errors** toggles the **Errors** sidebar on and off. The **Errors** sidebar does not appear until after you Validate a file, if there are errors in it.
     - **Help**: Documentation. This links to the [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) documentation.  
 
 5. When you finish editing the TSL file(s), select **Validate** in the top right corner. You must validate each file individually. A blue dot appears next to any file that contains changes.
 
     ![Validate the file]({{ site.baseurl }}/images/scriptability-tsl-editor-validate.png "Validate the file")
 
-6. If you constructed the file(s) correctly, a green check mark appears next to the name of the file.
+6. If you constructed the file(s) correctly, a green check mark appears next to the name of the file. If you did not construct the file correctly, a red bar appears near the top of the screen, telling you that ThoughtSpot found errors in one or more files. Click **Show errors** to see the errors listed in the **Errors** sidebar.
+
+    ![Review errors]({{ site.baseurl }}/images/scriptability-tsl-editor-errors.png "Review errors")
 
 7. After validating,  select **Publish** in the top right corner, next to **Validate**. You must publish each file individually.
 
@@ -191,7 +193,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 6. In your file system, find and select the `TSL` file. The file uploads automatically.
 
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file. 
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
 
 9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload. Here, we only want to import **Brand Revenue** and **Average Revenue by Part**, not **Basic Answer 1**.
 
