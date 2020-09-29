@@ -13,4 +13,8 @@ These are the Admin tasks that you have to complete to make ThoughtSpot Cloud av
 <li><a href="groups.html">Managing Groups</a></li>
 <li><a href="authentication-local.html">Manage Local authentication</a></li>
 <li><a href="authentication-integration.html">Managing authentication with SAML</a></li>
+<li><a href="style-customization.html">Style customization</a></li>
+<li><a href="use-agreement.html">In-app acceptance of ThoughtSpot's use agreement</a></li>
 </ul>
+
+You can also view upcoming maintenance of the ThoughtSpot application from the [Scheduled Maintenance]({{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html) tab in the Admin Portal, and monitor your cluster's performance from the [Performance Tracking Pinboard]({{ site.baseurl }}/admin/ts-cloud/performance-tracking.html).
