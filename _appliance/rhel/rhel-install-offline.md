@@ -181,7 +181,13 @@ Alternatively, you can manually update the repository URLs in the `yum.repos.d` 
 {: id="run-ansible"}
 ## Run the Ansible Playbook
 
-Run the Ansible Playbook from your local machine by entering the following command:
+First, you must run the `run_offline` script on your local machine, or you will be unable to install the Yum, Python, and R packages. Run the following command:
+
+```
+run_offline.sh
+```
+
+Now you can run the Ansible Playbook from your local machine by entering the following command:
 
 ```
 ansible-playbook -i hosts.yaml ts.yaml
