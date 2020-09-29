@@ -9,9 +9,9 @@ In ThoughtSpot release 6.2, there are 5 new Pinboards, based on Falcon metrics, 
 
 Falcon is ThoughtSpot's in-memory database. Falcon monitoring functionality pushes different kinds of metrics to Falcon system tables every fifteen minutes. These system tables, when updated, update the 5 new Pinboards that you can use to monitor Falcon's health. You can see these Pinboards from the **Pinboards** page, by searching for **360_Overview**:
 
-![Falcon Pinboards on the Pinboards page]({{ site.baseurl }}/images/falcon-pinboards.png "Falcon Pinboards on the Pinboards page")
+![Falcon Pinboards on the Pinboards page]({{ site.baseurl }}/images/falcon-360-pinboard.png "Falcon Pinboards on the Pinboards page")
 
-The 5 new database monitoring Pinboards are: [Falcon_360_Overview](#falcon_360_overview), [Falcon_Query_360_Overview](#falcon_query_360_overview), [Falcon_Dataload_360_Overview](#falcon_dataload_360_overview),  [Falcon_Varz_360_Overview](#falcon_varz_360_overview), and [System_Stats_360_Overview](#system_stats_360_overview)
+The 5 new database monitoring Pinboards are: [Falcon_360_Overview](#falcon_360_overview), [Falcon_Query_360_Overview](#falcon_query_360_overview), [Falcon_Dataload_360_Overview](#falcon_dataload_360_overview),  [Falcon_Varz_360_Overview](#falcon_varz_360_overview), and [System_Stats_360_Overview](#system_stats_360_overview).
 
 You can use these Pinboards for proactive monitoring, or, with help from [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html), for debugging.
 
@@ -19,7 +19,7 @@ You can use these Pinboards for proactive monitoring, or, with help from [Though
 ## Falcon_360_Overview
 This Pinboard provides basic information regarding Falcon's performance and health. Visualizations include **Interactive query latency(sec) percentiles last 24 hours**, **Dataload : Avg Ingestion Speed (# Rows Ingested / Load Time) Per Hour - Last 72 Hours**, **CPU Utilization (System, Idle, User) - Last 72 Hours**, **Dataload Frequency By Hour Of Day (Aggregated over 7 days)**, **Top 10 frequently changed pinboard vizes**, and so on.
 
-![Falcon_360_Overview Pinboard]({{ site.baseurl }}/images/falcon-360-pinboard.png "Falcon_360_Overview Pinboard")
+![Falcon_360_Overview Pinboard]({{ site.baseurl }}/images/falcon-360-overview-pinboard.png "Falcon_360_Overview Pinboard")
 
 {: id="falcon_query_360_overview"}
 ## Falcon_Query_360_Overview
