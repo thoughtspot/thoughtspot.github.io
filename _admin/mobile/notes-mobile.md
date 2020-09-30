@@ -5,8 +5,14 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot mobile 1.5 is now available. These release notes include information about new features,
+ThoughtSpot mobile 2.0 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
+
+
+## 2.0 New Features and Functionality
+Version 2.0 supports more features that were previously available only through the ThoughtSpot Web app, including:
+- Deep linking
+- Drill down
 
 {: id="1-5-new"}
 ## 1.5 New Features and Functionality
