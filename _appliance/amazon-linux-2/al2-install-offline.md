@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on offline clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 offline clusters."
-last_updated: 8/18/2020
+last_updated: 9/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -222,7 +222,13 @@ Alternatively, you can manually update the repository URLs in the `yum.repos.d` 
 {: id="run-ansible"}
 ## Run the Ansible Playbook
 
-Run the Ansible Playbook from your local machine or from the SSM console by entering the following command. If using a jump box, run this command on the jump box. If using SSM, you must run this command on all nodes.
+First, to allow installation of the Yum, Python, and R packages, you must run the `run_offline` script on your local machine or from the SSM console. If using a jump box, run this command on the jump box. If using SSM, you must run this command on all nodes. Run the following command:
+
+```
+run_offline.sh
+```
+
+Now you can run the Ansible Playbook from your local machine or from the SSM console by entering the following command. If using a jump box, run this command on the jump box. If using SSM, you must run this command on all nodes.
 
 ```
 ansible-playbook -i hosts.yaml ts.yaml
