@@ -8,11 +8,29 @@ permalink: /:collection/:path.html
 ThoughtSpot mobile 2.0 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-
+{: id="2-0-new"}
 ## 2.0 New Features and Functionality
 Version 2.0 supports more features that were previously available only through the ThoughtSpot Web app, including:
-- Deep linking
-- Drill down
+- Deep linking (Requires cluster running version 6.3 or later)
+- Drill down (Requires cluster running version 6.2 or later)
+
+### Deep linking
+
+Provides a way for you to share a link to objects in ThoughtSpot using instant messaging or email. A user can open the shared link in the mobile app or the web. If a user has the mobile app, the link will open directly in the mobile app. If they don't have the mobile app, the are presented with the option to download it or to view it on the web.
+
+#### Shareable objects
+
+| <b>Object<b> | <b>Share/open on Web<b> | <b>Share/open on Mobile<b> | <b>Post deeplinking on Mobile<b> |
+| Answer | Yes/Yes | Yes/No | Yes/Yes |
+| Pinboard | Yes/Yes | Yes/No | Yes/Yes |
+| Pinboard visualization | Yes/Yes | Yes/No | Yes/Yes |
+| Table | Yes/Yes | No | No |
+| Worksheet | Yes/Yes | No | No |
+| SpotIQ Insights | Yes/Yes | No | No |
+
+### Drill down
+
+Provides a way for you to . . .
 
 {: id="1-5-new"}
 ## 1.5 New Features and Functionality
