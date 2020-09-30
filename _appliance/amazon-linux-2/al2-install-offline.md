@@ -222,13 +222,13 @@ Alternatively, you can manually update the repository URLs in the `yum.repos.d` 
 {: id="run-ansible"}
 ## Run the Ansible Playbook
 
-First, to allow installation of the Yum, Python, and R packages, you must run the `run_offline` script on your local machine or from the SSM console. If using a jump box, run this command on the jump box. If using SSM, you must run this command on all nodes. Run the following command:
+First, to allow installation of the Yum, Python, and R packages, you must run the `run_offline` script on your local machine or from the SSM console. Run the following command on all nodes:
 
 ```
 run_offline.sh
 ```
 
-Now you can run the Ansible Playbook from your local machine or from the SSM console by entering the following command. If using a jump box, run this command on the jump box. If using SSM, you must run this command on all nodes.
+Now you can run the Ansible Playbook from your local machine or from the SSM console by entering the following command. You must run this command on all nodes.
 
 ```
 ansible-playbook -i hosts.yaml ts.yaml
