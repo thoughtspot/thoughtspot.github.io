@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 ---
 Constraints include primary keys, foreign keys, and relationships. Relationships allow you to create a generic relationship for use when you want to join tables that don't have a primary key/foreign key relationship.
 
+{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
+
 ## Primary keys
 
 When a primary key is selected for a table, it impacts data loading behavior. When a new row is added:
