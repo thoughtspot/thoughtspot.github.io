@@ -11,6 +11,8 @@ Joining a table or view to another table, view, or worksheet creates a relations
 
 If you want to create a primary key/foreign key relationship, you need to [use TQL]({{ site.baseurl }}/admin/loading/constraints.html) rather than the web interface.
 
+{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
+
 You must have either the [**Can administrate ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to create a join relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
 
 See this matrix for information about which joins you can create, and what permissions these joins require.
