@@ -24,25 +24,59 @@ single sales table into shards that each contain only the data for a single year
 Requests for sales data are dispersed both by the year and the location of the
 shard in the node cluster. No single table or node is overloaded, improving both query performance and system load.
 
-To optimize ThoughtSpot performance and memory usage, you should _shard_ very large fact tables
-whenever possible. If you have a large dimension table, you might choose to
-shard it along with the fact table it is joined with. Sharding both the fact and
-dimension table(s) is known as _co-sharding_.
+To optimize ThoughtSpot performance and memory usage, you should shard very large fact tables
+whenever possible. If you have a large dimension table, more than 20 million rows, you might choose to shard it along with the fact table it is joined with. Sharding both the fact and dimension table(s) is known as _co-sharding_. Before co-sharding the fact and dimension tables, consult with your ThoughtSpot contact.
 
+{: id="sharding-guidelines"}
 ### Table sizes and sharding recommendations
+When you are considering which tables you need to shard, and how many shards to use, there are several key sizing guidelines to keep in mind:
 
-|---------------           | ----------------             |
-| Number of rows per shard | 5-10 million                 |
-| Maximum                  | 10 million rows per shard    |   
-| Maximum number of shards | ~ 80% of CPU cores           |   
+2. **80% of CPU**: The number of shards for a given table should not take up more than 80% of your total available CPU. This is the *maximum* number. When possible, the number of shards should be well under 80%, for queries that involve multiple sharded fact tables.
 
-### Example
+1. **Number of rows per shard**: Ideally, each shard should host about 10-20 million rows of data. So, if your table is under 20 million rows, you do not need to shard it. You should not have more than about 20 million rows of data on each shard.
 
-|---------------           | ----------------               |
-| Number of rows in table  | 1.1 billion                    |
-| CPUS in cluster          | 256                            |   
-| HASH (128)               | ~50% of total CPUs             |
-| Rows per shard           | 8.6 million                    |
+4. **Ideal number of shards**: The ideal number of shards is the number of rows in a table divided by 20 million. So, if your table has fewer than 20 million rows, you do not need to shard it. However, if the ideal number of shards is more than 80% of your available CPU, you should ensure that you use less than 80% of your available CPU, rather than having the ideal number of shards.
+
+3. **Maximum number of shards**: As a best practice, a given table should not have more than 1000 shards. This applies even if 80% of your CPU is above 1000. If you feel that you need more than 1000 shards for a given table, consult with your ThoughtSpot contact.
+
+4. **Number of shards should be a multiple of the number of nodes**: To ensure equal distribution of data across all nodes, so that none of your nodes sits idle, the number of shards should be a multiple of the number of nodes. So, for a 12-node cluster, for example, a table could have 12, 24, 36, or 48 nodes, and so on.
+
+5. **Minimum number of shards**: Because the number of shards should be a multiple of the number of nodes, the mininum number of shards is the number of nodes. For a 12-node cluster, you should not have fewer than 12 shards.
+
+### Sharding recommendations example
+Let's use an example to see how the 6 guidelines listed above in [Table sizes and sharding recommendations](#sharding-guidelines) work.
+
+You have a fact table with 2.4 billion rows. Your cluster has 24 nodes, and 56 CPU cores per node.
+
+1. **Determine the ideal number of shards:**
+
+    *Number of rows*/10 million
+
+    2.4 billion/10 million = 240
+
+2. **Determine 80% of the number of available CPU cores:**
+
+    *Number of nodes*\*_Number of CPU cores per node_\*_.8_
+
+    24\*56\*.8 = 1075.2
+
+3. **Compare the ideal number of shards with the number of available CPU cores:**
+
+    240 is less than 1075.2, so you have enough CPU cores to shard this table with the ideal number of shards.
+
+4. **Ensure that the number of shards is a multiple of the number of nodes, and therefore higher than the minimum number of shards for a given table:**
+
+    *Number of rows*/ *Number of shards* must equal a whole number to allow you to distribute shards equally among the nodes.
+
+    240/24 = 10. 10 is a whole number.
+
+5. **Ensure that the number of shards is under 1000:**
+
+    240 is under 1000.
+
+In summary: You can shard this table by the ideal number of shards; 240, in this case, because 240 is less than 80% of your total available CPU, it is a multiple of the number of rows, and it is under 1000.
+
+If the table had 2.5 billion rows, the ideal number of shards would be 250. However, 250 is not a multiple of 24, so 240 is still the best number of shards for this table.
 
 ## How to shard
 
@@ -62,20 +96,7 @@ Note the following parameters, specified above as `96` and `"customer_id"`:
   <dlentry><dt>KEY</dt><dd>Specifies how to assign data into the shards (shard key). In this case, <code>customer_id</code>.</dd></dlentry>
 </dl>
 
-The recommended number of shards depends on the number of nodes
-in the cluster:
-
-|Number of Nodes|Number of Shards|
-|---------------|----------------|
-|1 | 32  |
-|2   | 64  |
-|3|96|
-|4-12|128|
-|13-24|256|
-|25-36|384|
-|37-48|512|
-|49-60|640|
-|61-72|768|
+The recommended number of shards depends on various factors. See [Table sizes and sharding recommendations](#sharding-guidelines).
 
 If you omit the `PARTITION BY HASH` statement or if the `HASH` parameter is 1
 (one), the table is unsharded. The table is replicated instead, and physically exists in
@@ -204,7 +225,7 @@ You can always use your primary key as a shard key. If you have trouble picking 
 
  In a typical schema,
 you'd have a sharded fact table, with foreign keys to small dimension tables.
-ThoughtSpot replicates these small dimension tables in their entirety and distributes them on every node. This works best if your dimension tables are under 50MB in size.
+ThoughtSpot replicates these small dimension tables in their entirety and distributes them on every node. If your dimension table has more than 20 million rows, however, you may want to co-shard it with related fact tables. Consult with your ThoughtSpot contact before co-sharding.
 
 If you have a large dimension table, replicating it and distributing it can
 impact the performance of your ThoughtSpot system. In this case, you want to
@@ -212,7 +233,7 @@ shard the dimension tables *and* the fact table. Note that you can co-shard mult
 
 When sharding both a fact table and its dimension table(s), (known as co-sharding) keep
 in mind the guidance for creating a shard key. Only shard dimension tables if
-the dimension table is large (over 50MB), and the join between the fact and
+the dimension table has more than 20 million rows, and the join between the fact and
 dimension tables uses the same columns. Specifically, the tables must:
 
 -   be related by a primary key and foreign key
