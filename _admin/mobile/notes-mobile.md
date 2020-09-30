@@ -30,7 +30,16 @@ Provides a way for you to share a link to objects in ThoughtSpot using instant m
 
 ### Drill down
 
-Provides a way for you to . . .
+Provides a way for you to seamlessly and intuitively select data point(s) and drill down for more detailed information. You can also trace the drill path back to the initial state and reset to the initial state.
+
+To drill down:
+1. Tap to select a data point.
+The tooltip appears to show the point you selected and action buttons appear at the bottom of the screen.
+2. Tap the {% include button.html content="Drill" %} button.  
+A list of columns appears.
+3. Select a column to drill down.
+4. To drill down on that column, tap the column and then tap {% include button.html content="Drill" %}.
+You can continue to drill down to get more and more granular detail.
 
 {: id="1-5-new"}
 ## 1.5 New Features and Functionality
