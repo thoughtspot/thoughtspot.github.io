@@ -29,8 +29,8 @@ title: Welcome to ThoughtSpot Cloud Documentation
     <p class="topicLink">
       <a href="{{ "/admin/ts-cloud/search-assist.html "| prepend: site.baseurl }}">ThoughtSpot Search</a><br>
       <a href="{{ "/admin/ts-cloud/analyst-onboarding.html"| prepend: site.baseurl }}">Onboard as Analyst</a><br>
-      <a href="{{ "/admin/ts-cloud/scriptability.html"| prepend: site.baseurl }}">Object Migration <span class="badge badge-update">Update</span></a><br>
-      <a href="{{ "/admin/ts-cloud/app-templates.html"| prepend: site.baseurl }}">SpotApp Templates <span class="badge badge-update">Update</span></a><br>
+      <a href="{{ "/admin/ts-cloud/scriptability.html"| prepend: site.baseurl }}">Object Migration</a><br>
+      <a href="{{ "/admin/ts-cloud/app-templates.html"| prepend: site.baseurl }}">SpotApp Templates</a><br>
       <a href="{{ "/admin/ts-cloud/tsl.html"| prepend: site.baseurl }}">TS Scripting Language</a></p>
   </div>
   <div class="grid-child">
@@ -41,6 +41,8 @@ title: Welcome to ThoughtSpot Cloud Documentation
       <a href="{{ "/admin/ts-cloud/embrace.html "| prepend: site.baseurl }}">About Embrace</a><br>
       <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake.html"| prepend: site.baseurl }}">Connect to Snowflake</a><br>
       <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-redshift.html"| prepend: site.baseurl }}">Connect to Amazon Redshift</a><br>
+      <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-gbq.html"| prepend: site.baseurl }}">Connect to Google BigQuery</a><br>
+      <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-synapse.html"| prepend: site.baseurl }}">Connect to Azure Synapse</a><br>
   </div>
   <div class="grid-child">
     <a href="{{ "/admin/ts-cloud/it-ops.html "| prepend: site.baseurl }}">
@@ -51,22 +53,14 @@ title: Welcome to ThoughtSpot Cloud Documentation
       <a href="{{ "/admin/ts-cloud/groups.html"| prepend: site.baseurl }}">Groups</a><br>
       <a href="{{ "/admin/ts-cloud/authentication-local.html"| prepend: site.baseurl }}">Local Authentication</a><br>
       <a href="{{ "/admin/ts-cloud/authentication-integration.html"| prepend: site.baseurl }}">Authentication with SAML</a>
-      <a href="{{ "/admin/ts-cloud/scheduled-maintenance.html"| prepend: site.baseurl }}">Scheduled Maintenance </a></p>
+      <a href="{{ "/admin/ts-cloud/scheduled-maintenance.html"| prepend: site.baseurl }}">Scheduled Maintenance <span class="badge badge-update">New</span></a></p>
   </div>
 </div>
 
 <h2>New features and functionality</h2>
 The latest release of ThoughtSpot Cloud contains new and enhanced features.
 
-<h3>Scriptability</h3>
-Scriptability contains the following new features:
-<ul>
-  <li>Export and update logical tables</li>
-  <li>Edit, validate, and publish objects using the TSL editor</li>
-  <li>Import multiple objects from the <strong>SpotApps</strong> page, or from the object list page</li>
-  <li>Update Views</li>
-  <li>GUID handling: a new <code>GUID</code> parameter in an object's .tsl file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one</li>
+<h3>Scheduled maintenance</h3>
+You can now view any upcoming scheduled maintenance for the ThoughtSpot application from the Admin Portal.<br><br>
 
-</ul>
-
-See <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a>.
+See <a href="{{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html">Scheduled maintenance</a>.
