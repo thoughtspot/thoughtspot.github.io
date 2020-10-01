@@ -1,7 +1,7 @@
 ---
 title: ["Set column name, description, and type"]
 
-last_updated: 3/27/2020
+last_updated: 10/1/2020
 summary: "Modeling includes setting basic information for a data column such as its name, description, and type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,6 +12,8 @@ When you model your data, you set basic information for data columns, such as a 
 example, the **DESCRIPTION** appears as a "tip" when a user hovers over a
 column. It helps users understand where the data they are searching comes
 from.
+
+{% include note.html content="When you change column information such as column names in the UI or in the model file, you do not change this information on the physical table in your database. You only change your metadata. This is why you can have column names with spaces in them in the UI, since physical column names do not support spaces." %}
 
 ## Data modeling from the UI
 To model your data columns from the ThoughtSpot UI, follow these steps:
