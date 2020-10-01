@@ -228,7 +228,6 @@ You can always use your primary key as a shard key. If you have trouble picking 
  In a typical schema,
 you'd have a sharded fact table, with foreign keys to small dimension tables.
 ThoughtSpot replicates these small dimension tables in their entirety and distributes them on every node. If your dimension table has more than 40 million rows, however, you may want to co-shard it with related fact tables. Consult with your ThoughtSpot contact before co-sharding.
-
 If you have a large dimension table, replicating it and distributing it can
 impact the performance of your ThoughtSpot system. In this case, you want to
 shard the dimension tables *and* the fact table. Note that you can co-shard multiple fact tables and one or more dimension tables on the same shard key. ThoughtSpot can handle chasm traps.
