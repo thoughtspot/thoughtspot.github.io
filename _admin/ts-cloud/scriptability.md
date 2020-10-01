@@ -1,6 +1,6 @@
 ---
 title: [Scriptability]
-last_updated: 9/28/2020
+last_updated: 10/1/2020
 summary: "Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -42,6 +42,8 @@ Refer to the following tables for required permissions for importing and exporti
 | ---- | ---- |
 | **View** permission on the object and all dependents. | **View** permission on the object and its first-level dependents. |
 
+{% include note.html content="If you have a permissions issue with a particular object when you export multiple objects, or an object and its dependents, the complete export does not fail. The individual object does not export, and you receive an error message about this failure in the <code>Manifest</code> file in the zip file." %}
+
 {: id="export-object"}
 ## Export an object
 You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
@@ -78,7 +80,7 @@ To export multiple objects at a time, follow these steps:
 
     ![Click Export]({{ site.baseurl }}/images/scriptability-cloud-click-export.png "Click Export")
 
-4. Open the downloaded `TSL` zip file:
+4. Open the downloaded `TSL` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
 
     ![Zip file]({{ site.baseurl }}/images/scriptability-cloud-zip-file.png "Zip file")
 
