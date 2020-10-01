@@ -16,30 +16,11 @@ Version 2.0 supports more features that were previously available only through t
 
 ### Deep linking
 
-Provides a way for you to share a link to objects in ThoughtSpot using instant messaging or email. A user can open the shared link in the mobile app or the web. If a user has the mobile app, the link will open directly in the mobile app. If they don't have the mobile app, the are presented with the option to download it or to view it on the web.
-
-#### Shareable objects
-
-| <b>Object<b> | <b>Share/open on Web<b> | <b>Share/open on Mobile<b> | <b>Post deeplinking on Mobile<b> |
-| Answer | Yes/Yes | Yes/No | Yes/Yes |
-| Pinboard | Yes/Yes | Yes/No | Yes/Yes |
-| Pinboard visualization | Yes/Yes | Yes/No | Yes/Yes |
-| Table | Yes/Yes | No | No |
-| Worksheet | Yes/Yes | No | No |
-| SpotIQ Insights | Yes/Yes | No | No |
+You can now share a link to objects in ThoughtSpot and a user can open the link in the mobile app or the web. If a user has the mobile app, the link will open directly in the mobile app. If they don't have the mobile app, the are presented with the option to download it or to view it on the web. For details, see [ThoughtSpot Mobile overview]({{ site.baseurl }}/admin/sub-mobile/use-mobile.html#).
 
 ### Drill down
 
-Provides a way for you to seamlessly and intuitively select data point(s) and drill down for more detailed information. You can also trace the drill path back to the initial state and reset to the initial state.
-
-To drill down:
-1. Tap to select a data point.
-The tooltip appears to show the point you selected and action buttons appear at the bottom of the screen.
-2. Tap the {% include button.html content="Drill" %} button.  
-A list of columns appears.
-3. Select a column to drill down.
-4. To drill down on that column, tap the column and then tap {% include button.html content="Drill" %}.
-You can continue to drill down to get more and more granular detail.
+You can now select data point(s) and drill down for more detailed information. You can also trace the drill path back and reset it to the initial state. For details, see [ThoughtSpot Mobile overview]({{ site.baseurl }}/admin/sub-mobile/use-mobile.html#).
 
 {: id="1-5-new"}
 ## 1.5 New Features and Functionality
