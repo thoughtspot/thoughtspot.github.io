@@ -45,7 +45,7 @@ Beginning with version 2.0, you can share a link to objects in ThoughtSpot using
 {: id="drill-down"}
 ## Drill down
 
-Beginning with version 2.0, you can seamlessly and intuitively select data point(s) and drill down for more detailed information. You can also trace the drill path back to the initial state and reset to the initial state.
+Beginning with version 2.0, you can seamlessly and intuitively select data point(s) and drill down for more detailed information. You can also trace the drill path back and reset to the initial state.
 
 To drill down:
 1. Tap to select a data point.  
@@ -53,7 +53,13 @@ A description of the point you selected appears at the top of the screen, and ac
 2. Tap the {% include button.html content="Drill" %} button.  
 A list of columns appears.  
 3. Select a column to drill down on.  
-4. To drill down further, tap an item, select a column to drill down on, and then tap {% include button.html content="Drill" %}.  
+4. To drill down further, tap an item on the chart, select a column to drill down on, and then tap {% include button.html content="Drill" %}.  
+
+To go back to the previous chart:
+- Tap the Revert icon ![revert icon]({{ site.baseurl }}/images/revert.png){: .inline}.
+
+To go back to the top level where you started your drill down:
+- Tap the Reset icon ![revert icon]({{ site.baseurl }}/images/reset.png){: .inline}.
 
 ## Getting Started
 
