@@ -16,7 +16,7 @@ ThoughtSpot Cloud supports the following:
 ThoughtSpot Cloud does not support the following:
 - Loading data using tsload
 - Custom calendar
-- Data cannot be migrated to another ThoughtSpot cluster, but you can migrate pinboards, answers, and worksheets.  
+- Data cannot be migrated to another ThoughtSpot cluster, but you can migrate Pinboards, Answers, Views, and Worksheets.  
 For details, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 ## How to sign up
