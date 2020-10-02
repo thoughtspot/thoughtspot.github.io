@@ -134,9 +134,9 @@ tsload is available only to users who have the “Administrator” or “Manage 
 
 The typical workflow of the API inside the client is the following:
 
-1. `<standard-thoughspot-cluster-url> Login`.
+1. `<standard-ThoughtSpot-cluster-url> Login`.
 
-2. `<standard-thoughspot-cluster-url> StartLoad`.
+2. `<standard-ThoughtSpot-cluster-url> StartLoad`.
    If the tsload-LoadBalancer is turned on, this returns the new IP address (for one of the nodes in the cluster).
 
 3. `<thoughtspot-node-ip-returned-from-2> Load`.

@@ -8,9 +8,13 @@ permalink: /:collection/:path.html
 Although it is suggested that you stick with the default settings, it is possible to create your own appealing color palettes if done correctly.
 
 To select the chart color palettes:
-1. If you are on release 6.2.1 and later, navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears.
+1. If you are on release 6.2.1 and later, navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
 
-    If you are on release 6.2 or earlier, navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`. If this page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
+    If you are on release 6.2, navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`.
+
+    If you are on release 6.1.1 or earlier, navigate to the Style Customization page by selecting **Admin** from the top navigation bar, then clicking **Style Customization**.
+
+    If this page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
