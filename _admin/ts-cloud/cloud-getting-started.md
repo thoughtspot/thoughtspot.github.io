@@ -26,4 +26,4 @@ For details, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability
 
 ## How to sign up
 
-To sign up for ThoughtSpot Cloud, contact ThoughSpot.
+To sign up for ThoughtSpot Cloud, contact ThoughtSpot.
