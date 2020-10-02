@@ -250,6 +250,18 @@ entries:
       - title: Scheduled maintenance
         url: /admin/ts-cloud/scheduled-maintenance.html
         output: web
+      - title: Style customization
+        url: /admin/ts-cloud/style-customization.html
+        output: web
+      - title: Performance tracking Pinboard
+        url: /admin/ts-cloud/performance-tracking.html
+        output: web
+      - title: User adoption Pinboard
+        url: /admin/ts-cloud/user-adoption.html
+        output: web
+      - title: ThoughtSpot use agreement
+        url: /admin/ts-cloud/use-agreement.html
+        output: web
   - sectiontitle: Search
     output: web,ugBk
     sectionitems:
