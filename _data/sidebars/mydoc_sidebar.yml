@@ -100,6 +100,12 @@ entries:
       - title: Compose Pinboards from Answers
         url: /admin/ts-cloud/pinboard-compose.html
         output: web
+      - title: Linked Pinboard filters
+        url: /admin/ts-cloud/linked-filters.html
+        output: web
+      - title: Selective Pinboard filters
+        url: /admin/ts-cloud/selective-filters.html
+        output: web
       - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
         output: web
