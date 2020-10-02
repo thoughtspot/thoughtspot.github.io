@@ -17,4 +17,4 @@ These are the Admin tasks that you have to complete to make ThoughtSpot Cloud av
 <li><a href="use-agreement.html">In-app acceptance of ThoughtSpot's use agreement</a></li>
 </ul>
 
-You can also view upcoming maintenance of the ThoughtSpot application from the [Scheduled Maintenance]({{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html) tab in the Admin Portal, and monitor your cluster's performance from the [Performance Tracking Pinboard]({{ site.baseurl }}/admin/ts-cloud/performance-tracking.html).
+You can also view upcoming maintenance of the ThoughtSpot application from the [Scheduled Maintenance]({{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html) tab in the Admin Portal, monitor your cluster's performance from the [Performance Tracking Pinboard]({{ site.baseurl }}/admin/ts-cloud/performance-tracking.html), and view your users' interactions with ThoughtSpot from the [User Adoption Pinboard]({{ site.baseurl }}/admin/ts-cloud/user-adoption.html).
