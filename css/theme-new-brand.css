@@ -103,15 +103,33 @@ body.print h4 {color: #595959 !important; font-size:14px; font-style: italic !im
 
 div.bookTitle {
     color: #272A7F;
-}
+  }
 
-li.bookTitle {
+  li.bookTitle {
+    margin-top:20px;
+      font-weight:normal;
+      font-size:130%;
+      color: #000000;
+      margin-bottom:2px;
+      margin-top: 5px;
+      margin-left: 7px;
+      text-align: left;
+      padding-left: 5px;
+
+  }
+
+li.bookSubtitle {
   margin-top:20px;
     font-weight:normal;
-    font-size:130%;
+    font-size:120%;
     color: #4E55FD;
     margin-bottom:10px;
-    margin-left: 5px;
+    margin-top: 0px;
+    margin-left: 7px;
+    text-align: left;
+    padding-left: 5px;
+    font-weight: bold;
+
 
 }
 

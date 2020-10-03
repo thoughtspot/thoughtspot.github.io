@@ -2,7 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Version 6.2
+  product: ThoughtSpot Software
+  docversion: 6.2
 #  version: 6.2
   sections:
 # Needed for PDF output only; no titles in this section
