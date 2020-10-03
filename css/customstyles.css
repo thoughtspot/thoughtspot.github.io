@@ -35,7 +35,21 @@ table.scheduler, th, td {
 
 small-sidebar-version-nav {
     font-size: 80%;
-    margin-left: 5px;
+    margin-left: 10px;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+    background-color: #BBECEE;
+}
+small-sidebar-version-nav-latest {
+    font-size: 80%;
+    margin-left: 10px;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding-left: 5px;
     padding-bottom: 25px;
     background-color: #BBECEE;
 }
