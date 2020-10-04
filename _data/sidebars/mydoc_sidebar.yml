@@ -2,8 +2,9 @@
 
 entries:
 - title: sidebar
-  product: Version
-  version: 5.1 Guides
+  product: ThoughtSpot Software
+  docversion: 5.1
+  # version: 5.1 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
