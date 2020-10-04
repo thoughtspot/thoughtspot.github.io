@@ -2,8 +2,9 @@
 
 entries:
 - title: sidebar
-  product: Version
-  version: 5.2 Guides
+  product: ThoughtSpot Software
+  docversion: 5.2
+  # version: 5.2 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -1350,7 +1351,7 @@ entries:
       output: web,rnotes
     - title: Fixed issues
       url: /release/fixed.html
-      output: web,rnotes  
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web
