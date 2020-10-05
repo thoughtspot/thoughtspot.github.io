@@ -64,7 +64,7 @@ You can now see the schema for each object for tables, worksheets, or views.
 
 3. From the list of objects, select one. Here, we selected the worksheet _West Regional Sales_.
 
-4. At the top of the worksheet, click the **Schema** tab.
+4. At the top of the worksheet, click the **Joins** tab.
 
    ![]({{ site.baseurl }}/images/select-worksheet-schema.png "Click worksheet Schema")
 

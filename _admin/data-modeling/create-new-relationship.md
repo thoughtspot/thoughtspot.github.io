@@ -18,7 +18,7 @@ To create a relationship through the Web interface:
 
 2. Click the name of your table or view.
 
-3. Click **Schema**. You will see the list showing existing joins.
+3. Click **Joins**. You will see the list showing existing joins.
 
 4. Click the **+ Add Join** button on the upper right side of the screen.
 

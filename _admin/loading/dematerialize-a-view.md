@@ -14,7 +14,7 @@ To dematerialize a view:
 
 1. To find your materialized view, click **Data** in the top menu, and choose **Views**.
 2. Click the name of your view.
-3. Click **Schema**.
+3. Click **Joins**.
 6. Under **Materialization**, click **Dematerialize**.
 
    ![]({{ site.baseurl }}/images/materialization-dialog-on.png)

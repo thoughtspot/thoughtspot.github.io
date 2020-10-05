@@ -18,7 +18,7 @@ To materialize a view:
 
 2. Click the name of your view.
 
-3. Click **Schema**.
+3. Click **Joins**.
 
 4. If needed, [add joins]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
 
