@@ -1,7 +1,7 @@
 ---
 title: [SpotApps]
-last_updated: 7/28/2020
-summary: "Use SpotApps to gain insights into your Salesforce, accounts receivable, or procurement instances."
+last_updated: 9/21/2020
+summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,30 +9,54 @@ SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scr
 
 Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's scriptable applications, or SpotApps, which provide an easy way for you to start getting value from your data.
 
-ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage your data in Snowflake or Redshift to provide pre-built Pinboards, Answers, Views, Tables and Worksheets. You can also [create your own SpotApps](#create-spotapps) by exporting multiple objects of the same type in one zip file, or an object and its associated data sources, and migrating these objects to another environment.
+ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage your data in Snowflake, Amazon Redshift, Google BigQuery, or Azure Synapse to provide pre-built Pinboards, Answers, Views, Tables and Worksheets. You can also [create your own SpotApps](#create-spotapps) by exporting multiple objects of the same type in one zip file, or an object and its associated data sources, and migrating these objects to another environment.
 
 {: id="pre-built-spotapps"}
 ## Pre-built SpotApps
-ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake, AWS Redshift, Azure Synapse, or Google BigQuery to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
+ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake, Amazon Redshift, Google BigQuery, or Azure Synapse to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
 
 For example, if you choose to use the Procurement SpotApp, the **Search** page contains a Worksheet for your users to query on, called "Procurement Analytics Solution."
 
 ![Procurement Worksheet Search]({{ site.baseurl }}/images/scriptable-app-procurement-search.png "Procurement Worksheet Search")
 
-Your users may want to understand what Answers and Pinboards are before they start searching, or they may only want to view pre-built objects. They can view any of the pre-existing objects, such as this Exec Summary Pinboard:
+Your users may want to understand what Answers and Pinboards are before they start searching, or they may only want to gain insights from pre-built objects. They can view any of the pre-existing objects, such as this Exec Summary Pinboard:
 
 ![Exec summary]({{ site.baseurl }}/images/exec-summary-pinboard.png "Exec summary")
 
-When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
+When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, Tables, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
 
 {: id="create-spotapps"}
 ## Create and export SpotApps
 You can create your own SpotApps in two ways:
 
-You may have a specific Pinboard that you would like to migrate to another cluster, but that cluster may not contain the Worksheets and Tables that the Pinboard's data comes from. When you export any object, you have the option to export its associated data sources as well, creating a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
+- You may have a specific Pinboard or other object that you would like to migrate to another cluster, but that cluster may not contain the Worksheets, Tables, or Views that the Pinboard's data comes from. When you export any Pinboard, Answer, Worksheet, or View, you have the option to export its associated data sources as well. This creates a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
 
-![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
+    ![Choose what to export]({{ site.baseurl }}/images/scriptability-pinboard-select-export.png "Choose what to export")
 
-Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
+- Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
 
 See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
+
+### Import SpotApps
+You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
+
+1. From the **SpotApps** page under the **Data** tab, click **Import**.
+
+    ![Import SpotApps]({{ site.baseurl }}/images/scriptability-spotapps-import.png "Import SpotApps")
+
+2. In the **Import** interface, click **Select .tsl or .zip files to upload**.
+
+6. In your file system, find and select the .zip file for the SpotApp.
+
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message, and shows you which objects are validated. You can now import the objects. The <code>GUID</code> parameter in an object's .tsl file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one.
+
+9. You can unselect any files in the `.zip` file you do not want to upload.
+
+10. Click **Import selected files**.
+
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
+
+    ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
+
+### Limitations
+You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.

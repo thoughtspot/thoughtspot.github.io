@@ -2,7 +2,8 @@
 
 entries:
 - title: sidebar
-  product: ThoughtSpot 4 Cloud
+  product: ThoughtSpot Cloud
+  version: tscloud.5
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -98,6 +99,12 @@ entries:
         output: web
       - title: Compose Pinboards from Answers
         url: /admin/ts-cloud/pinboard-compose.html
+        output: web
+      - title: Linked Pinboard filters
+        url: /admin/ts-cloud/linked-filters.html
+        output: web
+      - title: Selective Pinboard filters
+        url: /admin/ts-cloud/selective-filters.html
         output: web
       - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
@@ -248,6 +255,18 @@ entries:
         output: web
       - title: Scheduled maintenance
         url: /admin/ts-cloud/scheduled-maintenance.html
+        output: web
+      - title: Style customization
+        url: /admin/ts-cloud/style-customization.html
+        output: web
+      - title: Performance tracking Pinboard
+        url: /admin/ts-cloud/performance-tracking.html
+        output: web
+      - title: User adoption Pinboard
+        url: /admin/ts-cloud/user-adoption.html
+        output: web
+      - title: ThoughtSpot use agreement
+        url: /admin/ts-cloud/use-agreement.html
         output: web
   - sectiontitle: Search
     output: web,ugBk
