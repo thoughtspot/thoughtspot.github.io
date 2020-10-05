@@ -15,7 +15,7 @@ To delete a relationship from the Web interface:
 
 2. Click the name of the data source you from which you want to remove the relationship.
 
-3. Click **Schema**. You will see the list showing existing joins.
+3. Click **Joins**. You will see the list showing existing joins.
 
    If this is a worksheet, you must click **Joins within worksheets** and choose **Joins between worksheets**.
 

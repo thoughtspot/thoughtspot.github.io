@@ -25,7 +25,7 @@ To modify the join types within a worksheet, follow these steps:
 
 3. Click the name of the worksheet. Here, we selected the worksheet _West Regional Sales_.
 
-4. At the top of the worksheet, click the **Schema** tab.
+4. At the top of the worksheet, click the **Joins** tab.
 
    ![]({{ site.baseurl }}/images/select-worksheet-schema.png "Click worksheet Schema")
 

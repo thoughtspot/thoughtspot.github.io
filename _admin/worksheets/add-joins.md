@@ -22,7 +22,7 @@ To create a relationship through the Web interface:
 
 2. Click the name of your worksheet.
 
-3. Click **Schema**. You will see the list showing existing joins within the worksheet.
+3. Click **Joins**. You will see the list showing existing joins within the worksheet.
 
 4. To view the joins between the worksheet and other data sources, click **Joins within worksheets** and choose **Joins between worksheets**.
 
