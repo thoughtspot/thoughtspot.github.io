@@ -3,7 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  version: tscloud.5
+  docversion: tscloud.5
+  # version: tscloud.5
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
