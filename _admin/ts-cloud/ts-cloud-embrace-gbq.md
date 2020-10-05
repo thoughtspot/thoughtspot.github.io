@@ -13,5 +13,5 @@ You can add a connection to a Google BigQuery database in ThoughtSpot Cloud, and
 - [Delete a table from a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-delete-table.html)
 - [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-delete-table-dependencies.html)
 - [Delete a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-delete-connection.html)
-- [Best Practices for BigQuery connections]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-best-practices.html)
+<!-- ( - [Best Practices for BigQuery connections]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-best-practices.html) -->
 - [Connection reference for BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html)
