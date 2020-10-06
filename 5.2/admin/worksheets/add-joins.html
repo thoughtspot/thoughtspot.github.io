@@ -125,12 +125,12 @@ $(document).ready(function(){
 <meta property="og:url" content="https://docs.thoughtspot.com/5.2/admin/worksheets/add-joins.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-10T08:53:09-07:00" />
+<meta property="article:published_time" content="2020-10-05T23:53:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Join a worksheet to another data source”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.2/admin/worksheets/add-joins.html","headline":"[“Join a worksheet to another data source”]","dateModified":"2020-09-10T08:53:09-07:00","datePublished":"2020-09-10T08:53:09-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/worksheets/add-joins.html"},"description":"Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a generic join between the worksheet and the table or view on the column you specify.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.2/admin/worksheets/add-joins.html","headline":"[“Join a worksheet to another data source”]","dateModified":"2020-10-05T23:53:35-07:00","datePublished":"2020-10-05T23:53:35-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.2/admin/worksheets/add-joins.html"},"description":"Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a generic join between the worksheet and the table or view on the column you specify.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -396,7 +396,8 @@ var ss360Config = {
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="bookTitle">Version 5.2 Guides</li>
+  <li class="bookTitle">ThoughtSpot Software</li>
+  <li class="bookSubtitle">Release: 5.2</li>
 
     <!-- Add link to same page in the latest version if you're on an older version of docs.
        -->
@@ -425,9 +426,9 @@ var ss360Config = {
 
        
 
-  
-  <li class="small-sidebar-version-nav"><a href="/6.2/admin/worksheets/add-joins.html">Switch to version 6.2 (latest)</a></li>
-  
+       
+       <li class="small-sidebar-version-nav"><a href="/6.2/admin/worksheets/add-joins.html">Switch to version 6.2 (latest)</a></li>
+       
 
          <!-- KEEP FOR TESTING
 <li class="small-sidebar-link">newURL is /6.2/admin/worksheets/add-joins.html</li>
@@ -3225,14 +3226,16 @@ var ss360Config = {
   Estimated reading time:
   
   
-    3 minutes
+    4 minutes
   
 </span>
  -->
 
     
 
-  <p>Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a <a href="/5.2/admin/loading/constraints.html">generic join</a> between the worksheet and the table or view on the column you specify.</p>
+  <p>Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a <a href="/5.2/admin/loading/constraints.html">generic join</a> between the worksheet and the  table or view on the column you specify.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using &gt;, &lt;, &gt;=, or &lt;=, use TQL.</div>
 
 <p>See this matrix for information about which joins you can create, and what permissions these joins require.</p>
 
@@ -3338,8 +3341,6 @@ var ss360Config = {
   </tr>
 </table>
 
-<p>Note that creating a <a href="/5.2/admin/loading/constraints.html">foreign key relationship</a> is preferred over a generic relationship in most cases, except for when you need to do a range join. Foreign key relationships perform better and protect users from overcounting upon aggregation.</p>
-
 <p>You must have either the <strong>Can administer ThoughtSpot</strong> privilege or the <strong>Can manage data</strong> privilege to create a join relationship. If you’re not an administrator, you also need edit permissions on the table, view, or worksheet.</p>
 
 <p>When creating a join between the columns in two data sources, the columns being linked must have the same data type, with the same meaning. That is, they must represent the same data.</p>
@@ -3417,7 +3418,7 @@ var ss360Config = {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Sep 10, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Oct 5, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 11/2/2018<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/5.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
