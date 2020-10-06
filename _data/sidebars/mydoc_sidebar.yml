@@ -20,6 +20,12 @@ entries:
       output: pdf
       type: frontmatter
 # end of PDF section
+  - sectiontitle: About this release
+    output: web,ugBk
+    sectionitems:
+    - title: Release notes
+      url:  /release/notes.html
+      output: web
   - sectiontitle: Getting started
     output: web,ugBk
     sectionitems:
