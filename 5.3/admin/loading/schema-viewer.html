@@ -51,18 +51,18 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“How to view a data schema”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot has a ##Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work." />
-<meta property="og:description" content="ThoughtSpot has a ##Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work." />
+<meta name="description" content="ThoughtSpot has a Schema Viewer though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work." />
+<meta property="og:description" content="ThoughtSpot has a Schema Viewer though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work." />
 <link rel="canonical" href="https://docs.thoughtspot.com/5.3/admin/loading/schema-viewer.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/5.3/admin/loading/schema-viewer.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-10T08:58:43-07:00" />
+<meta property="article:published_time" content="2020-10-05T23:57:05-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“How to view a data schema”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/5.3/admin/loading/schema-viewer.html","headline":"[“How to view a data schema”]","dateModified":"2020-09-10T08:58:43-07:00","datePublished":"2020-09-10T08:58:43-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/schema-viewer.html"},"description":"ThoughtSpot has a ##Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/5.3/admin/loading/schema-viewer.html","headline":"[“How to view a data schema”]","dateModified":"2020-10-05T23:57:05-07:00","datePublished":"2020-10-05T23:57:05-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/5.3/admin/loading/schema-viewer.html"},"description":"ThoughtSpot has a Schema Viewer though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -327,7 +327,8 @@ var ss360Config = {
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="bookTitle">Version 5.3 Guides</li>
+  <li class="bookTitle">ThoughtSpot Software</li>
+  <li class="bookSubtitle">Release: 5.3</li>
 
     <!-- Add link to same page in the latest version if you're on an older version of docs.
        -->
@@ -356,9 +357,9 @@ var ss360Config = {
 
        
 
-  
-  <li class="small-sidebar-version-nav"><a href="/6.2/admin/loading/schema-viewer.html">Switch to version 6.2 (latest)</a></li>
-  
+       
+       <li class="small-sidebar-version-nav"><a href="/6.2/admin/loading/schema-viewer.html">Switch to version 6.2 (latest)</a></li>
+       
 
          <!-- KEEP FOR TESTING
 <li class="small-sidebar-link">newURL is /6.2/admin/loading/schema-viewer.html</li>
@@ -3286,7 +3287,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>ThoughtSpot has a ##Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.</p>
+  <p>ThoughtSpot has a <strong>Schema Viewer</strong> though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.</p>
 
 <p>You must have <strong>Admin</strong> privileges to use the <strong>Schema Viewer</strong>.</p>
 
@@ -3429,7 +3430,7 @@ modeled using best practices. For example, joins appear in different colors to d
 
 <p>When viewing a worksheet, you can also see what joins connect the tables: the inner, left outer, right outer, or full outer joins</p>
 
-<p>A good rule to follow is “Keep it Green”. This means that you can get better results from PK/FK joins rather than from using generic relationships. You should only use generic relationships when the tables being joined have a many-to-many rather than a PK/FK structure. If you find tables that have been joined using a generic relationship, but could have used a PK/FK join, you should drop the relationship and create a PK/FK join instead. To do this, you need to use the ALTER TABLE…DROP RELATIONSHIP statement in TQL. Then use ALTER TABLE…ADD FOREIGN KEY to create the PK/FK join.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using &gt;, &lt;, &gt;=, or &lt;=, use TQL.</div>
 
 <h2 id="worksheet-view">Worksheet view</h2>
 
@@ -3486,7 +3487,7 @@ tables <em>that were created as a part of the worksheet</em>.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Sep 10, 2020 <br />
+        Generated: Oct 5, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 07/27/2019<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.3/images/company_logo.png" alt="Company logo"/></p>
