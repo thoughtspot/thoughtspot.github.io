@@ -42,10 +42,10 @@
        {% endif %}
 
        {% if sidebar[0].version < site.current_version %}
-      <li class="small-sidebar-version-nav"><a href="{{ newURL }}">Switch to version {{ site.current_version }} (latest)</a></li>
-      {% else %}
-          <li class="small-sidebar-version-nav">&nbsp;&nbsp;&nbsp;This is the latest version.</li>
-      {% endif %}
+       <li class="small-sidebar-version-nav"><a href="{{ newURL }}">Switch to version {{ site.current_version }} (latest)</a></li>
+       {% else %}
+       <li class="small-sidebar-version-nav">&nbsp;&nbsp;&nbsp;This is the latest version.</li>
+       {% endif %}
 
          <!-- KEEP FOR TESTING
 <li class="small-sidebar-link">newURL is {{ newURL }}</li>
