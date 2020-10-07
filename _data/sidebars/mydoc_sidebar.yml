@@ -551,6 +551,9 @@ entries:
       - title: Customize actions
         url: /admin/admin-portal/customize-actions-menu.html
         output: web,admBk
+      - title: Style customization
+        url: /admin/admin-portal/style-customization.html
+        output: web,admBk
       - title: Configure NAS for backup storage
         url: /admin/admin-portal/nas-mount-configure.html
         output: web,admBk
