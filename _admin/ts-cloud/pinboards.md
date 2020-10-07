@@ -25,7 +25,7 @@ You can filter a Pinboard to only see the relevant data. Click the More icon ![]
 
 Choose a column to filter on, and select values to **include** or **exclude**.
 
-See [Pinboard filters]({{ site.baseurl }}/complex-search/pinboard-filters.html) and [Linked Pinboard filters]({{ site.baseurl }}/admin/ts-cloud/linked-filters.html) for more information.
+See [Pinboard filters]({{ site.baseurl }}/complex-search/pinboard-filters.html) for more information.
 
 ### Getting to insights
 You can leverage Pinboards to gain insights into your data in several ways. [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html), ThoughtSpot's AI-guided exploration of Answers and headline metrics within Pinboards, provides you with valuable suggestions on how to explore and understand your data. The feature suggests ways to answer questions that are relevant to many other users, and it takes into account your own ThoughtSpot history. Use Answer Explorer to filter an Answer or headline, run comparisons, replace items in an Answer, or add additional elements to an Answer.

@@ -27,13 +27,3 @@ Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/use-agreement.html">ThoughtS
 This release of ThoughtSpot Cloud contains two new default Pinboards for administrators. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a> to understand how your ThoughtSpot cluster is performing.<br><br>
 
 See <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a>.
-
-<h3>Linked Pinboard filters</h3>
-You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Pinboard level. This is useful when you have a Pinboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets.<br><br>
-
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/linked-filters.html">Linked Pinboard filters</a>.<br>
-
-<h3>Selective Pinboard filters</h3>
-You can now configure Pinboard filters to apply to specific visualizations that you choose. This is useful when you would like to filter some, but not all, visualizations in a Pinboard.<br><br>
-
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/selective-filters.html">Selective Pinboard filters</a>.
