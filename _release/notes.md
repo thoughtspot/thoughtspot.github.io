@@ -18,6 +18,18 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 {: id="6-2-1-new"}
 ## 6.2.1 New Features and Functionality
 
+For a complete list of issues that we fixed in this release, see [6.2.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2-1).
+
+{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2 or later, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
+
+### For the Analyst
+
+<dl id="6-2-1-analyst">
+  <dlentry id="keywords">
+    <dt>Change in behavior for multiple <code>begins with </code> or <code> ends with </code> keywords</dt>
+      <dd>When you use more than one <code> begins with </code> or <code> ends with </code> keyword in a search or formula, ThoughtSpot now returns your results using an <code>OR</code> condition, instead of an <code>AND</code> condition. When you use a combination of <code>begins with</code> and <code>ends with</code>, ThoughtSpot still returns your results using an <code>AND</code> condition.<br><br>For example, if you search for <code>state name begins with "V" state name begins with "C"</code>, your results are Virginia, Vermont, California, and Connecticut. If you search for <code>state name begins with V state name ends with T</code>, your only result is Vermont.
+      </dd></dlentry>
+  
 ### For the IT Ops Engineer
 
 <dl id="6-2-1-it-ops-engineer">
@@ -30,8 +42,6 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ## 6.2 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [6.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2).
-
-{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
 
 ### For the Analyst
 
@@ -244,15 +254,17 @@ Please contact us if you are interested in participating in the <a href="mailto:
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.2 release
+If you are running one of the following versions, you can upgrade to the 6.2.1 release
 directly:
 
-* 6.0.x to 6.2
-* 6.1.x to 6.2
+* 6.0.x to 6.2.1
+* 6.1.x to 6.2.1
+* 6.2 to 6.2.1
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 6.0.x, or version 6.1.x, and then to the 6.2 release.
+
+First, upgrade to version 6.0.x, 6.1.x, or 6.2, and then to the 6.2.1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
