@@ -1,18 +1,30 @@
 ---
 title: ["6.2 Release Notes"]
 toc: false
-last_updated: 21/07/2020
+last_updated: 09/28/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.2 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.2.1 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
+* [6.2.1 New Features](#6-2-1-new)
 * [6.2 New Features](#6-2-new)
 * [Beta Programs](#beta-program)
 * [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="6-2-1-new"}
+## 6.2.1 New Features and Functionality
+
+### For the IT Ops Engineer
+
+<dl id="6-2-1-it-ops-engineer">
+  <dlentry id="granular-pinboard-access">
+  <dt>Granular access to Pinboards</dt>
+  <dd>Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards. However, they cannot edit, copy, download, or share Pinboards and Answers.<br />This must be enabled on the cluster.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>, and <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> privilege.</dd></dlentry>
+</dl>
 
 {: id="6-2-new"}
 ## 6.2 New Features and Functionality
