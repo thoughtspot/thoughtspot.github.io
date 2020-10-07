@@ -20,16 +20,14 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [6.2.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-2-1).
 
-{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2 or later, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
-
 ### For the Analyst
 
 <dl id="6-2-1-analyst">
   <dlentry id="keywords">
     <dt>Change in behavior for multiple <code>begins with </code> or <code> ends with </code> keywords</dt>
       <dd>When you use more than one <code> begins with </code> or <code> ends with </code> keyword in a search or formula, ThoughtSpot now returns your results using an <code>OR</code> condition, instead of an <code>AND</code> condition. When you use a combination of <code>begins with</code> and <code>ends with</code>, ThoughtSpot still returns your results using an <code>AND</code> condition.<br><br>For example, if you search for <code>state name begins with "V" state name begins with "C"</code>, your results are Virginia, Vermont, California, and Connecticut. If you search for <code>state name begins with V state name ends with T</code>, your only result is Vermont.
-      </dd></dlentry>
-  
+      </dd></dlentry></dl>
+
 ### For the IT Ops Engineer
 
 <dl id="6-2-1-it-ops-engineer">
@@ -263,8 +261,6 @@ directly:
 
 This includes any hotfixes or customer patches on these branches.
 
-If you are running a different version, you must do a multiple pass upgrade.
-
-First, upgrade to version 6.0.x, 6.1.x, or 6.2, and then to the 6.2.1 release.
+If you are running a different version, you must do a multiple pass upgrade. First, upgrade to version 6.0.x, 6.1.x, or 6.2, and then to the 6.2.1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
