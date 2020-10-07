@@ -37,7 +37,7 @@ To set up the Ansible, follow these steps:
    <dl>
     <dlentry>
       <dt>customize.sh</dt>
-      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on.</dd>
+      <dd>This script runs as the last step in the preparation process. You can use it to inject deployment-specific customizations, such as enabling or disabling a corporate proxy, configuring extra SSH keys, installing extra services, and so on. Additionally, you can include the <code>prepare_disks</code> script here. Add the following line to the <code>customize.sh</code> file: <code>sudo /usr/local/scaligent/bin/prepare_disks.sh</code>.</dd>
     </dlentry>
     <dlentry>
       <dt>hosts.sample</dt>
@@ -187,9 +187,15 @@ As the Ansible Playbook runs, it will perform these tasks:
   3. Install the ThoughtSpot CLI
   4. Configure all the nodes in the ThoughtSpot cluster:
      - Format and create export partitions, if they do not exist
-     - Format the data disks, and run `prepare disks`
+     - Format the data disks
 
-After the Ansible Playbook finishes, your hosts are ready for installing the ThoughtSpot application.
+After the Ansible Playbook finishes, run the `prepare_disks` script on every node, if you did not include it in the `customize.sh` file. Specify the data drives by adding the full device path for all data drives, such as `/dev/sdc`, after the script name. Separate data drives with a space.
+
+```
+sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
+```
+
+Your hosts are ready for installing the ThoughtSpot application.
 
 {: id="install-thoughtspot"}
 ## Install the ThoughtSpot cluster and the application

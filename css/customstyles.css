@@ -35,7 +35,21 @@ table.scheduler, th, td {
 
 small-sidebar-version-nav {
     font-size: 80%;
-    margin-left: 5px;
+    margin-left: 10px;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+    background-color: #BBECEE;
+}
+small-sidebar-version-nav-latest {
+    font-size: 80%;
+    margin-left: 10px;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding-left: 5px;
     padding-bottom: 25px;
     background-color: #BBECEE;
 }
@@ -886,6 +900,79 @@ a[data-toggle="tooltip"] {
     cursor: default;
     text-decoration:none;
 }
+
+/* begin beta label */
+
+.label-beta-cloud {
+/*    background-color: #66CFEB; */
+    background: rgb(0,151,205);
+    background: linear-gradient(0deg, rgba(0,151,205,1) 0%, rgba(102,207,235,1) 100%);
+    color: #ebebeb;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    padding-top: 3px;
+}
+
+.label-beta {
+    background-color: #f4bb00;
+    color: #0e1e24;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.label-beta-cloud-small {
+    background: rgb(0,151,205);
+    background: linear-gradient(0deg, rgba(0,151,205,1) 0%, rgba(102,207,235,1) 100%);
+    color: #ebebeb;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.label-update {
+    display: inline-block;
+    background-color: #373BB1;
+    color: #ebebeb;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}
+
+.badge-update {
+    display: inline-block;
+    background-color: #D3D4FE;
+    color: #4E55FD;
+    font-size: 9px;
+    margin-left: 2px;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+    vertical-align: top;
+    padding-top: 2px;
+/*   display: inline-block;
+   min-width: 10px;
+   padding: 3px 7px;
+ font-size: 12px;
+   font-weight: 700;
+   line-height: 1;
+   color: #ebebeb;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   background-color: #373BB1;
+   border-radius: 5px;
+   position: relative;
+   top: -1px; */
+}
+
+/* end beta label */
 
 /* special tooltip code for copy to clipboard - start */
 

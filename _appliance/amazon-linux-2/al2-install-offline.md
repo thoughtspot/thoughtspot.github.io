@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on offline clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 offline clusters."
-last_updated: 8/18/2020
+last_updated: 9/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -222,7 +222,13 @@ Alternatively, you can manually update the repository URLs in the `yum.repos.d` 
 {: id="run-ansible"}
 ## Run the Ansible Playbook
 
-Run the Ansible Playbook from your local machine or from the SSM console by entering the following command. If using a jump box, run this command on the jump box. If using SSM, you must run this command on all nodes.
+First, to allow installation of the Yum, Python, and R packages, you must run the `run_offline` script on your local machine or from the SSM console. Run the following command on all nodes:
+
+```
+run_offline.sh
+```
+
+Now you can run the Ansible Playbook from your local machine or from the SSM console by entering the following command. You must run this command on all nodes.
 
 ```
 ansible-playbook -i hosts.yaml ts.yaml
@@ -236,10 +242,10 @@ As the Ansible Playbook runs, it performs these tasks:
   4. Configure all the nodes in the ThoughtSpot cluster:
      - Format and create export partitions, if they do not exist
 
-After the Ansible Playbook finishes, run the `prepare_disks` script on every node, if you did not include it in the `customize.sh` file:
+After the Ansible Playbook finishes, run the `prepare_disks` script on every node, if you did not include it in the `customize.sh` file. Specify the data drives by adding the full device path for all data drives, such as `/dev/sdc`, after the script name. Separate data drives with a space.
 
 ```
-sudo /usr/local/scaligent/bin/prepare_disks.sh
+sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
 ```
 
 Your hosts are now ready for installing the ThoughtSpot application.

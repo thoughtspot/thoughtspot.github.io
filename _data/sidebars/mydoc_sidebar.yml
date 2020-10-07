@@ -2,8 +2,9 @@
 
 entries:
 - title: sidebar
-  product: Version 6.2
-#  version: 6.2
+  product: ThoughtSpot Software
+  docversion: 6.2
+  version: 6.2 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -52,18 +53,24 @@ entries:
       - title: ThoughtSpot browser access
         url: /end-user/accessing.html
         output: web,ugBk
-      - title: The Getting Started sidebar
+      - title: Information Center
         url: /end-user/introduction/getting-started.html
         output: web,ugBk
       - title: Your user preferences
         url: /end-user/introduction/about-user.html
         output: web,ugBk
-      - title: Understanding privileges
-        url: /end-user/introduction/about-privileges-end-user.html
-        output: web,ugBk
       - title: Use stickers to organize
         url: /end-user/stickers.html
         output: web,ugBk
+      - levelThreeTitle: Privileges
+        output: web,ugBk
+        levelThreeItems:
+        - title: Understanding privileges
+          url: /end-user/introduction/about-privileges-end-user.html
+          output: web,ugBk
+        - title: Granular access to Pinboards
+          url: /end-user/introduction/pinboard-granular-permission.html
+          output: web,ugBk
     - levelTwoTitle: Use Search
       output: web,ugBk
       levelTwoItems:
@@ -439,7 +446,7 @@ entries:
         - title: View a data profile
           url: /admin/loading/view-your-data-profile.html
           output: web,ugBk
-        - title: Date and currency format settings
+        - title: Set your ThoughtSpot locale
           url: /end-user/locale.html
           output: web,ugBk
         - levelThreeTitle: Share your work

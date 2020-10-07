@@ -1,7 +1,7 @@
 ---
 title: ["6.2 Release Notes"]
 toc: false
-last_updated: 21/07/2020
+last_updated: 09/28/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -29,6 +29,13 @@ For a complete list of issues that we fixed in this release, see [6.2.1 Fixed is
     <dt>Change in behavior for multiple <code>begins with </code> or <code> ends with </code> keywords</dt>
       <dd>When you use more than one <code> begins with </code> or <code> ends with </code> keyword in a search or formula, ThoughtSpot now returns your results using an <code>OR</code> condition, instead of an <code>AND</code> condition. When you use a combination of <code>begins with</code> and <code>ends with</code>, ThoughtSpot still returns your results using an <code>AND</code> condition.<br><br>For example, if you search for <code>state name begins with "V" state name begins with "C"</code>, your results are Virginia, Vermont, California, and Connecticut. If you search for <code>state name begins with V state name ends with T</code>, your only result is Vermont.
       </dd></dlentry>
+  
+### For the IT Ops Engineer
+
+<dl id="6-2-1-it-ops-engineer">
+  <dlentry id="granular-pinboard-access">
+  <dt>Granular access to Pinboards</dt>
+  <dd>Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards. However, they cannot edit, copy, download, or share Pinboards and Answers.<br />This must be enabled on the cluster.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>, and <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> privilege.</dd></dlentry>
 </dl>
 
 {: id="6-2-new"}
@@ -73,7 +80,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
         </dd><dd><strong>High cardinality overview</strong><br>
 <script src="https://fast.wistia.com/embed/medias/q9jggoxmjy.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_q9jggoxmjy popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span><p>See <a href="{{ site.baseurl }}/end-user/search/high-cardinality.html">Charts and tables with a very large number of data values</a>.</p></dd></dlentry>
   <dlentry id="keywords">
-    <dt>New search keywords</dt>
+    <dt>New search keywords and changed behavior</dt>
     <dd>
       <ul>
         <li id="top">
@@ -81,7 +88,10 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
           <br/>The new keyword phrase, <a href="{{"/reference/keywords.html#top-n-by" | prepend: site.baseurl}}">top <em>n</em> <em>measure1</em> by <em>attribute</em> | <em>measure2</em></a>, enables you to search the top n results by an attribute or a secondary measure.</li>
         <li id="not-in">
           <strong>The ‘not in’ keyword</strong>
-          <br/>Another keyword phrase, <a href="{{"/reference/keywords.html#not-in" | prepend: site.baseurl}}">not in</a>, enables you to find the relative complement of two sets: results that satisfy the outer query that are not in the inner query. Contrast this with <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> that returns results that are an intersection of the outer and inner query, or 'query within a query'.</li></ul>
+          <br/>Another keyword phrase, <a href="{{"/reference/keywords.html#not-in" | prepend: site.baseurl}}">not in</a>, enables you to find the relative complement of two sets: results that satisfy the outer query that are not in the inner query. Contrast this with <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> that returns results that are an intersection of the outer and inner query, or 'query within a query'.</li>
+        <li id="in">
+          <strong> Change in behavior for the ‘in’ keyword</strong>
+          <br/>The <a href="{{"/reference/keywords.html#in" | prepend: site.baseurl}}">in</a> keyword returns results that are an intersection of the outer and inner query, or 'query within a query'. Starting in 6.2, searches with the <code>in</code> keyword do not include {null} values. To include these {null} values, create a formula for the relevant attribute in your search, to convert {null} values to 'unknown,' or some similar word.</li></ul>
           </dd><dd><strong>Search keywords overview</strong><br>
 <script src="https://fast.wistia.com/embed/medias/0m74x2bszt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_0m74x2bszt popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry id="monitor">
@@ -254,6 +264,7 @@ directly:
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
+
 First, upgrade to version 6.0.x, 6.1.x, or 6.2, and then to the 6.2.1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
