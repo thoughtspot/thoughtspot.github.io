@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 8/13/2020
+last_updated: 10/8/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -40,7 +40,7 @@ When you are considering which tables you need to shard, and how many shards to 
 
 3. **Maximum number of shards**: As a best practice, a given table should not have more than 1000 shards. This applies even if 60% of your CPU is above 1000. If you feel that you need more than 1000 shards for a given table, consult with your ThoughtSpot contact.
 
-4. **Number of shards should be a multiple of the number of nodes**: To ensure equal distribution of data across all nodes, so that none of your nodes sits idle, the number of shards should be a multiple of the number of nodes. So, for a 12-node cluster, for example, a table could have 12, 24, 36, or 48 shards, and so on.
+4. **The number of shards should be a multiple of the number of nodes**: To ensure equal distribution of data across all nodes, so that none of your nodes sits idle, the number of shards should be a multiple of the number of nodes. So, for a 12-node cluster, for example, a table could have 12, 24, 36, or 48 shards, and so on.
 
 5. **Minimum number of shards**: Because the number of shards should be a multiple of the number of nodes, the mininum number of shards is the number of nodes. For a 12-node cluster, you should not have fewer than 12 shards.
 
@@ -51,9 +51,9 @@ You have a fact table with 2.4 billion rows. Your cluster has 24 nodes, and 56 C
 
 1. **Determine the ideal number of shards:**
 
-    *Number of rows*/10 million
+    *Number of rows*/20 million
 
-    2.4 billion/10 million = 240
+    2.4 billion/20 million = 120
 
 2. **Determine 60% of the number of available CPU cores:**
 
@@ -63,21 +63,21 @@ You have a fact table with 2.4 billion rows. Your cluster has 24 nodes, and 56 C
 
 3. **Compare the ideal number of shards with 60% of the number of available CPU cores:**
 
-    240 is less than 806.4, so you have enough CPU cores to shard this table with the ideal number of shards.
+    120 is less than 806.4, so you have enough CPU cores to shard this table with the ideal number of shards.
 
 4. **Ensure that the number of shards is a multiple of the number of nodes, and therefore higher than the minimum number of shards for a given table:**
 
     *Number of rows*/ *Number of shards* must equal a whole number to allow you to distribute shards equally among the nodes.
 
-    240/24 = 10. 10 is a whole number.
+    120/24 = 5. 5 is a whole number.
 
 5. **Ensure that the number of shards is under 1000:**
 
-    240 is under 1000.
+    120 is under 1000.
 
-In summary: You can shard this table by the ideal number of shards; 240, in this case, because 240 is less than 60% of your total available CPU, it is a multiple of the number of rows, and it is under 1000.
+In summary: You can shard this table by the ideal number of shards; 120, in this case, because 120 is less than 60% of your total available CPU, it is a multiple of the number of rows, and it is under 1000.
 
-If the table had 2.5 billion rows, the ideal number of shards would be 250. However, 250 is not a multiple of 24, so 240 would still be the best number of shards for this table.
+If the table had 2.6 billion rows, the ideal number of shards would be 130. However, 130 is not a multiple of 24, so 120 would still be the best number of shards for this table.
 
 ## How to shard
 
@@ -228,6 +228,7 @@ You can always use your primary key as a shard key. If you have trouble picking 
  In a typical schema,
 you'd have a sharded fact table, with foreign keys to small dimension tables.
 ThoughtSpot replicates these small dimension tables in their entirety and distributes them on every node. If your dimension table has more than 40 million rows, however, you may want to co-shard it with related fact tables. Consult with your ThoughtSpot contact before co-sharding.
+
 If you have a large dimension table, replicating it and distributing it can
 impact the performance of your ThoughtSpot system. In this case, you want to
 shard the dimension tables *and* the fact table. Note that you can co-shard multiple fact tables and one or more dimension tables on the same shard key. ThoughtSpot can handle chasm traps.
