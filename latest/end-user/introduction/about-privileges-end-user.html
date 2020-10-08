@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/end-user/introduction/about-privileges-end-user.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-05T22:46:10-07:00" />
+<meta property="article:published_time" content="2020-10-08T07:42:15-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Understanding privileges”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Understanding privileges”]","dateModified":"2020-10-05T22:46:10-07:00","url":"https://docs.thoughtspot.com/latest/end-user/introduction/about-privileges-end-user.html","datePublished":"2020-10-05T22:46:10-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/end-user/introduction/about-privileges-end-user.html"},"description":"If you are trying to do something in ThoughtSpot, and cannot access the screens to accomplish it, you may not have the correct privileges. In this case, you should contact your administrator and explain what you want to accomplish. Your administrator may be able to grant you additional privileges.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Understanding privileges”]","dateModified":"2020-10-08T07:42:15-07:00","url":"https://docs.thoughtspot.com/latest/end-user/introduction/about-privileges-end-user.html","datePublished":"2020-10-08T07:42:15-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/end-user/introduction/about-privileges-end-user.html"},"description":"If you are trying to do something in ThoughtSpot, and cannot access the screens to accomplish it, you may not have the correct privileges. In this case, you should contact your administrator and explain what you want to accomplish. Your administrator may be able to grant you additional privileges.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -600,14 +600,29 @@ $(document).ready(function(){
                 
                   
                       
-                          <li class="active"><a href="/latest/end-user/introduction/about-privileges-end-user.html">Understanding privileges</a></li>
+                          <li><a href="/latest/end-user/stickers.html">Use stickers to organize</a></li>
                       
                    
                 
                   
-                      
-                          <li><a href="/latest/end-user/stickers.html">Use stickers to organize</a></li>
-                      
+                   <li class="levelThree">
+                       <a href="#">Privileges</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li class="active"><a href="/latest/end-user/introduction/about-privileges-end-user.html">Understanding privileges</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
                    
                 
                     </ul>
@@ -1624,6 +1639,12 @@ $(document).ready(function(){
                   
                       
                           <li><a href="/latest/admin/admin-portal/customize-actions-menu.html">Customize actions</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/admin/admin-portal/style-customization.html">Style customization</a></li>
                       
                    
                 
@@ -5275,7 +5296,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span> -->
 
@@ -5285,71 +5306,69 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Permissions to see and edit answers and pinboards are not affected by privileges. They are given when these items are shared with you.</div>
 
+<h2 id="privileges-in-thoughtspot">Privileges in ThoughtSpot</h2>
+
 <p>Here are the privileges that the administrator sets, and the capabilities they enable:</p>
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="75%" />
-</colgroup>
-  <thead>
-    <tr>
-      <th>Privilege</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Can administer ThoughtSpot</strong></td>
-      <td>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved answer. </td>
-    </tr>
-    <tr>
-      <td><strong>Can upload user data</strong></td>
-      <td>Can upload their own data from the application's <strong>Data</strong> page using <strong>Actions &gt; Upload data</strong>.</td>
-    </tr>
-    <tr>
-      <td><strong>Can download data</strong></td>
-      <td>Can download data from search results and pinboards.</td>
-    </tr>
-    <tr>
-      <td><strong>Can share with all users</strong></td>
-      <td>Can see the names of and share with users outside of the groups the user belongs to. Members of groups with this privilege can also share with groups marked as
-      <strong>NOT SHARABLE</strong>.</td>
-    </tr>
-    <tr>
-      <td><strong>Can manage data</strong></td>
-      <td>Can create worksheets and views. Can create Embrace connections.<br />Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.</td>
-    </tr>
-    <tr>
-      <td><strong>Can use experimental features</strong></td>
-      <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
-    </tr>
-    <tr>
-      <td><strong>Can invoke Custom R Analysis</strong></td>
-      <td>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</td>
-    </tr>
-    <tr>
-      <td><strong>Can schedule pinboards</strong></td>
-      <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
-    </tr>
-    <tr>
-      <td><strong>Has SpotIQ privilege</strong></td>
-      <td>Can use the SpotIQ feature.<br />If this privilege is not enabled for the user, but Insights are enabled on the cluster (this is off by default),
-they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.</td>
-    </tr>
-    <tr>
-      <td><strong>Can administer and bypass RLS</strong></td>
-      <td><p>Users in groups with this privilege (directly or through group inheritance):</p>
-<ul>      <li>Are exempt from row-level security (RLS) rules.</li>
-      <li>Can add/edit/delete existing RLS rules.</li>
-      <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>
+<dl>
+    <dlentry id="administer-ts">
+      <dt>Can administer ThoughtSpot</dt>
+      <dd>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved Answer. </dd>
+    </dlentry>
+    <dlentry id="upload-user-data">
+      <dt>Can upload user data</dt>
+      <dd>Can upload their own data from the application's <strong>Data</strong> page using <strong>Actions &gt; Upload data</strong>.</dd>
+    </dlentry>
+    <dlentry id="download-data">
+      <dt>Can download data</dt>
+      <dd>Can download data from search results and pinboards.</dd>
+    </dlentry>
+    <dlentry id="share">
+      <dt>Can share with all users</dt>
+      <dd>Can see the names of and share with users outside of the groups the user belongs to. Members of groups with this privilege can also share with groups marked as
+      <strong>NOT SHARABLE</strong>.</dd>
+    </dlentry>
+    <dlentry id="manage-data">
+      <dt>Can manage data</dt>
+      <dd>Can create worksheets and views. Can create Embrace connections.<br />Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.</dd>
+    </dlentry>
+    <dlentry id="experimental">
+      <dt>Can use experimental features</dt>
+      <dd>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</dd>
+    </dlentry>
+    <dlentry id="custom-r">
+      <dt>Can invoke Custom R Analysis</dt>
+      <dd>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</dd>
+    </dlentry>
+    <dlentry id="schedule-pinboards">
+      <dt>Can schedule pinboards</dt>
+      <dd>Can create pinboard schedules and edit their own scheduled jobs.</dd>
+    </dlentry>
+    <dlentry id="spotiq">
+      <dt>Has SpotIQ privilege</dt>
+      <dd>Can use the SpotIQ feature.<br />If this privilege is not enabled for the user, but Insights are enabled on the cluster (this is off by default), they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.</dd>
+    </dlentry>
+    <dlentry id="bypass-rls">
+      <dt>Can administer and bypass RLS</dt>
+      <dd><p>Users in groups with this privilege (directly or through group inheritance):</p>
+          <ul>      
+            <li>Are exempt from row-level security (RLS) rules.</li>
+            <li>Can add/edit/delete existing RLS rules.</li>
+            <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>
+      <p>Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the privilege <strong>Can administer ThoughtSpot</strong> can grant this privilege.</p></dd>
+    </dlentry>
+    <dlentry id="read-only">
+      <dt>Cannot create or update Pinboads</dt>
+      <dd><p>Users are limited to viewing and exploring curated Pinboards (and Answers). They cannot copy, edit, download, or share them.</p>
+      <p>This privilege is designed to support embedded implementations, and it is behind a flag.</p>
+      <p>See <a href="/latest/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a> for a deeper discussion of this privilege, and an implementation example.</p></dd>
+    </dlentry>
+  </dl>
 
-      <p>Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the privilege <b>Can administer ThoughtSpot</b> can grant this privilege.</p> </td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="combining-user-privileges">Combining user privileges</h2>
 
 <p>The following table shows the intersection of user privilege and ability:</p>
+
 <table id="matrix" class="wide_table" style="font-size:10px;">
    <colgroup>
       <col style="width:36%;" />
@@ -5664,7 +5683,7 @@ they can still see "Did you know" SpotIQ insights on the ThoughtSpot home page.<
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Oct 5, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Oct 8, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 07/31/2019<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
