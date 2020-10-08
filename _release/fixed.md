@@ -92,7 +92,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <a id="6-2-1"></a>
 ## 6.2.1 Fixed issues
 
-These are the issues we fixed in ThoughtSpot Release 6.2.1
+These are the issues we fixed in ThoughtSpot Release 6.2.1.
 
 - Upgrades to 6.2 could sometimes become stuck or fail.
 
