@@ -34,6 +34,10 @@ For a complete list of issues that we fixed in this release, see [6.2.1 Fixed is
   <dlentry id="granular-pinboard-access">
   <dt>Granular access to Pinboards</dt>
   <dd>Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards. However, they cannot edit, copy, download, or share Pinboards and Answers.<br />This must be enabled on the cluster.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>, and <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> privilege.</dd></dlentry>
+
+<dlentry id="style-customization">
+  <dt>Style customization</dt>
+  <dd>You can now customize the ThoughtSpot application from the Admin Portal. With style customization, you can change the fonts, chart color palettes, footer text, application logo, and background colors in your embedded ThoughtSpot instance.<br><br> Refer to <a href="{{ site.baseurl }}/admin/admin-portal/style-customization.html">Style customization</a>.</dd></dlentry>
 </dl>
 
 {: id="6-2-new"}
