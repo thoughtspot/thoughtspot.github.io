@@ -19,7 +19,7 @@ Make changes to the style of your ThoughtSpot interface in the **Style Customiza
 
 To re-brand the interface:
 
-1. Log in to ThoughtSpot from a browser.
+1. Log into ThoughtSpot from a browser.
 
 2. If you are on release 6.2.1 and later, navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
 
