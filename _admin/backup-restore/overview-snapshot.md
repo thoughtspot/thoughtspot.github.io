@@ -13,7 +13,7 @@ To work with snapshots, use the `tscli` command line interface.
 {: id="manual-snapshot"}
 ## About manual snapshots
 
-You must create a snapshot [through the Administration Portal](#admin-portal-create) or [using tscli](#snapshot-tscli) before making any changes to your cluster's environment, loading a large amount of data, or changing the structure of a table. ThoughtSpot supports up to 20 manual snapshots. You must clear them to create new snapshots. You can delete a snapshot [from the Administration Portal](#admin-portal-delete).
+You must create a snapshot [through the Admin Console](#admin-portal-create) or [using tscli](#snapshot-tscli) before making any changes to your cluster's environment, loading a large amount of data, or changing the structure of a table. ThoughtSpot supports up to 20 manual snapshots. You must clear them to create new snapshots. You can delete a snapshot [from the Admin Console](#admin-portal-delete).
 
 ThughtSpot generates a snapshot in approximately 20 seconds, depending on the size of the cluster. To restore from a snapshot, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 

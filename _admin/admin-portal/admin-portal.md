@@ -1,19 +1,19 @@
 ---
-title: [Administration Portal]
+title: [Admin Console]
 last_updated: 7/27/2020
-summary: Learn how the Administration Portal can help you manage users, groups, security, authentication, and much more.
+summary: Learn how the Admin Console can help you manage users, groups, security, authentication, and much more.
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The Administration Portal provides you with an intuitive, user-friendly interface to accomplish most of the necessary tasks for administering ThoughtSpot.
+The Admin Console provides you with an intuitive, user-friendly interface to accomplish most of the necessary tasks for administering ThoughtSpot.
 
-Navigate to the Administration Portal by selecting **Admin** from the top navigation bar.
+Navigate to the Admin Console by selecting **Admin** from the top navigation bar.
 
 ![Admin tab]({{ site.baseurl}}/images/admin-tab.png "Admin tab")
 
-You can complete the following tasks in the Administration Portal:
+You can complete the following tasks in the Admin Console:
 
 **Manage users and groups**
 * [Manage ThoughtSpot users]({{ site.baseurl }}/admin/admin-portal/users.html)<br>
@@ -29,7 +29,7 @@ Integrate with SAML for single sign-on (SSO) authentication.
 * [Configure LDAP authentication through Active Directory ]({{ site.baseurl }}/admin/admin-portal/authentication-active-directory.html)<br>
 Integrate with LDAP to authenticate users against a secure LDAP server.
 
-**Manage settings: SSL, support, and menu customization**
+**Manage settings: SSL, support, and application and menu customization**
 * [Configure SSL]({{ site.baseurl }}/admin/admin-portal/ssl-configure.html)<br>
 Use SSL for authentication and data security when you send data to and from ThoughtSpot.
 * [Configure a reverse SSH tunnel]({{ site.baseurl }}/admin/admin-portal/reverse-ssh-tunnel.html)<br>
@@ -40,6 +40,8 @@ Set up a relay host for SMTP traffic, to route the alert and notification emails
 Customize ThoughtSpot Help to be specific to your data, examples, and documentation.
 * [Customize Answer actions menu]({{ site.baseurl }}/admin/admin-portal/customize-actions-menu.html)<br>
 Add custom actions to the more options menu ![more options menu icon]({{ site.baseurl}}/images/icon-more-10px.png "more options menu icon"){: .inline} for Answers.
+* [Customize application style]({{ site.baseurl }}/admin/admin-portal/style-customization.html)<br>
+Change the overall style of your ThoughtSpot interface: logo, colors, fonts, and footer text.
 
 **Manage backup and storage options**
 * [Configure NAS for backup storage]({{ site.baseurl }}/admin/admin-portal/nas-mount-configure.html)<br>

@@ -151,7 +151,7 @@ These are the issues we fixed in ThoughtSpot Release 6.1.1.
 
 - Inconsistent naming of disks causes mounting to fail.
 
-- The admin portal fails to load in a cluster, where it loaded before.
+- The Admin Console fails to load in a cluster, where it loaded before.
 
 - An older version of the ThoughtSpot user interface appears, even though cluster is running newer version.
 
@@ -240,7 +240,7 @@ These are the issues we fixed in ThoughtSpot Release 6.1.
 
 - The date format in a PDF is not correct for the user's locale.
 
-- Various display issues with Admin Portal.
+- Various display issues with Admin Console.
 
 - Periodic backups fail after upgrade.
 

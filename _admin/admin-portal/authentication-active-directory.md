@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 You can use ThoughtSpot's integration with Active Directory for user authentication. By default, [local authentication]({{ site.baseurl }}/admin/admin-portal/authentication-local.html) is enabled. You can also configure integration with LDAP through Active Directory, allowing you to authenticate users against an LDAP server. ThoughtSpot does not support any other LDAP authentication.
 
-You can configure the Active Directory integration through the Admin Portal.
+You can configure the Active Directory integration through the Admin Console.
 
 {: id="prerequisites"}
 ## Configuration prerequisites

@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate
 users. You can set up SAML through the shell on the ThoughtSpot instance [using a
-`tscli` based configurator](#tscli), or [through the Administration Portal](#admin-portal).
+`tscli` based configurator](#tscli), or [through the Admin Console](#admin-portal).
 
 Before configuring SAML, you need this information:
 
@@ -36,6 +36,6 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
    It should now show the Single Sign On option.
 
 {: id="admin-portal"}
-## Configure SAML using the Administration Portal
+## Configure SAML using the Admin Console
 
 {% include content/admin-portal/authentication-saml.md %}

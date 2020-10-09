@@ -1,6 +1,6 @@
-Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Active Directory** from the side navigation bar that appears.
+Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Active Directory** from the side navigation bar that appears.
 
-![Admin Portal - Active Directory]({{ site.baseurl }}/images/admin-portal-active-directory.png "Admin Portal - Active Directory")
+![Admin Console - Active Directory]({{ site.baseurl }}/images/admin-portal-active-directory.png "Admin Console - Active Directory")
 
 Click the **Configure** button in the middle of the screen, and add your information based on the information you collected in the [prerequisites](#prerequisites).
 

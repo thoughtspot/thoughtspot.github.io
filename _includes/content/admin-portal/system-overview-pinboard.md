@@ -1,6 +1,6 @@
-You can view system and usage information for your ThoughtSpot cluster from the Administration Portal. The **System Overview Pinboard** contains several charts and tables that track monthly active users, top Pinboards by number of views, today's users, and so on. To view this Pinboard, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Overview** from the side navigation bar that appears.
+You can view system and usage information for your ThoughtSpot cluster from the Admin Console. The **System Overview Pinboard** contains several charts and tables that track monthly active users, top Pinboards by number of views, today's users, and so on. To view this Pinboard, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Overview** from the side navigation bar that appears.
 
-![Admin Portal - Overview Pinboard]({{ site.baseurl }}/images/admin-portal-overview-pinboard.png "Admin Portal - Overview Pinboard")
+![Admin Console - Overview Pinboard]({{ site.baseurl }}/images/admin-portal-overview-pinboard.png "Admin Console - Overview Pinboard")
 
 ## Understand the System Overview Pinbaord
 

@@ -22,7 +22,7 @@ This access can be granted and revoked easily, so you can enable it for a troubl
 session, and then disable it again. Before doing this procedure, make sure your
 company's security policies allow reverse tunneling.
 
-You can set up a reverse tunnel [using tscli](#remote-support-tscli), or [through the Administration Portal](#admin-portal).
+You can set up a reverse tunnel [using tscli](#remote-support-tscli), or [through the Admin Console](#admin-portal).
 
 {% include note.html content="Before you set up a reverse tunnel, open port <code>22</code>
 in your firewall outgoing rules to add <code>tunnelrelay.thoughtspot.com</code> to your list of allowed domains." %}
@@ -74,7 +74,7 @@ To enable remote support, follow these steps:
     ```
 
 {: id="admin-portal"}
-### Configure reverse SSH tunnel with the Administration Portal
+### Configure reverse SSH tunnel with the Admin Console
 
 {% include content/admin-portal/reverse-ssh-tunnel.md %}
 

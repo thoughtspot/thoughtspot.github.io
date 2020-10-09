@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 To upload your own default and wide application logos:
 
-1. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears.<br>
+1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears.<br>
 If the Style Customization option is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable it.
 
 1. Click the default icon under **Application Logo (Default)** to browse for and select your own default logo.

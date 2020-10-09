@@ -11,10 +11,10 @@ To turn on the Data Push API functionality, [contact ThoughtSpot Support]({{ sit
 
 The data is available to the external application in JSON (JavaScript Object Notation) format. You must parse the JSON to get the data values you need using JavaScript in the receiving application.
 
-## Create a custom menu item from the Administration Portal
-To add custom items to the more options menu ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} for Answers, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Action Customization** from the side navigation bar that appears.
+## Create a custom menu item from the Admin Console
+To add custom items to the more options menu ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} for Answers, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Action Customization** from the side navigation bar that appears.
 
-![Admin Portal - Action customization]({{ site.baseurl }}/images/admin-portal-action-customization.png "Admin Portal - Action customization")
+![Admin Console - Action customization]({{ site.baseurl }}/images/admin-portal-action-customization.png "Admin Console - Action customization")
 
 Select **Add custom action item**.
 

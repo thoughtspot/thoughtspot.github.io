@@ -27,7 +27,7 @@ this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
 
-You can mount NAS [through the Administration Portal](#admin-portal), or [using tscli](#mount-nas-tscli).
+You can mount NAS [through the Admin Console](#admin-portal), or [using tscli](#mount-nas-tscli).
 
 {% include content/admin-portal/nas-mount-configure.md %}
 
