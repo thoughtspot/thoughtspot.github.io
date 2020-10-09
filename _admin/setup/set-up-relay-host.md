@@ -5,7 +5,7 @@ summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot 
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can configure the relay host [using tscli](#tscli) or [through the Administration Portal](#admin-portal).
+You can configure the relay host [using tscli](#tscli) or [through the Admin Console](#admin-portal).
 
 {: id="tscli"}
 ## Configure using tscli
@@ -73,4 +73,4 @@ Check if the email settings are working properly by using this procedure.
 {: id="admin-portal"}
 {% include content/admin-portal/smtp-configure.md %}
 
-After you configure SMTP through the Administration Portal, use `tscli` to [configure an email to receive monitoring alerts](#configure-email) and [verify the relay with an email](#verify-email).
+After you configure SMTP through the Admin Console, use `tscli` to [configure an email to receive monitoring alerts](#configure-email) and [verify the relay with an email](#verify-email).

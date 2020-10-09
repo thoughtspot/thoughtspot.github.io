@@ -2,11 +2,11 @@ Local authentication is enabled by default in your ThoughtSpot environment. This
 
 If you disable local authentication, no local user can log into ThoughtSpot.
 
-You can enable or disable local authentication from the Admin Portal.
+You can enable or disable local authentication from the Admin Console.
 
-Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Local** from the side navigation bar that appears.
+Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Local** from the side navigation bar that appears.
 
-![Admin Portal - Local]({{ site.baseurl }}/images/admin-portal-local.png "Admin Portal - Local")
+![Admin Console - Local]({{ site.baseurl }}/images/admin-portal-local.png "Admin Console - Local")
 
 Click the **Edit** button in the top middle of the screen.
 

@@ -13,13 +13,13 @@ Before adding users, create the groups to which they belong. Each group includes
 To create a group and add privileges for the group, follow these steps:
 
 1. Log in to ThoughtSpot from a browser.
-2. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar.
+2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
 3.  Select **Groups** from the side navigation bar that appears.
 
-    ![Admin Portal - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Portal - Groups")
+    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
 
 5. Click the **+ Add Group** button on the upper left-hand side of the list of groups.
 
@@ -110,13 +110,13 @@ To edit an existing group, follow these steps:
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar.
+2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
 3. Select **Groups** from the side navigation bar that appears.
 
-    ![Admin Portal - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Portal - Groups")
+    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
 
 5. Find the group you want to edit in the list, and click its name.
 
@@ -218,13 +218,13 @@ To delete existing groups, follow these steps:
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar.
+2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
 3. Select **Groups** from the side navigation bar that appears.
 
-    ![Admin Portal - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Portal - Groups")
+    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
 
 5. Select the groups you plan to delete by clicking the box next to the group name.
 
@@ -248,13 +248,13 @@ To add multiple users to a group, you must be on the **Users** interface. Follow
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar.
+2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
 3. Select **Groups** from the side navigation bar that appears.
 
-    ![Admin Portal - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Portal - Users")
+    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5. Select the names of users you plan to add to groups by clicking the box next to the user name.
 

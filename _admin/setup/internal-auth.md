@@ -12,7 +12,7 @@ Many organizations don't use LDAP or active directory for user authentication. I
 
 {% include note.html content="Before the user logs into ThoughtSpot, the user must exist in ThoughtSpot. This is independent of the authentication mechanism." %}
 
-## Enable internal authentication with the Administration Portal
+## Enable internal authentication with the Admin Console
 
 {% include content/admin-portal/authentication-local.md %}
 

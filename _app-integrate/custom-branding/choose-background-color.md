@@ -9,7 +9,7 @@ You can change the background color to match with your company's theme. The cust
 
 This feature is only applicable when embedding ThoughtSpot in an external web portal or application. To choose a background color:
 
-1. If you are on release 6.2.1 and later, navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
+1. If you are on release 6.2.1 and later, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
 
     If you are on release 6.2, navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`.
 

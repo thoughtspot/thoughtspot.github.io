@@ -1,6 +1,6 @@
 Using style customization, you can create a uniform ThoughtSpot experience that
 matches with your company's look and feel. To re-brand the interface, you can
-use the style customization option found in the Administration Portal in the ThoughtSpot
+use the style customization option found in the Admin Console in the ThoughtSpot
 web application. It lets you change the logo, application background color,
 chart color palettes, and footer text. For help with chart and table
 visualization fonts, contact ThoughtSpot support.
@@ -21,9 +21,9 @@ To re-brand the interface:
 
 1. Log into ThoughtSpot from a browser.
 
-2. If you are on release 6.2.1 and later, navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
+2. If you are on release 6.2.1 and later, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
 
-    ![Admin Portal - Style Customization]({{ site.baseurl }}/images/style-customization-menu.png "Admin Portal - Style Customization")
+    ![Admin Console - Style Customization]({{ site.baseurl }}/images/style-customization-menu.png "Admin Console - Style Customization")
 
     If you are on release 6.2, navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`.
 
