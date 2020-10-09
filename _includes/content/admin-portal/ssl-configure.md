@@ -1,7 +1,7 @@
-## Configure SSL through the Administration Portal
-To configure SSL, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **SSL** from the side navigation bar that appears.
+## Configure SSL through the Admin Console
+To configure SSL, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **SSL** from the side navigation bar that appears.
 
-![Admin Portal - SSL]({{ site.baseurl }}/images/admin-portal-ssl.png "Admin Portal - SSL")
+![Admin Console - SSL]({{ site.baseurl }}/images/admin-portal-ssl.png "Admin Console - SSL")
 
 Click **Configure**.
 

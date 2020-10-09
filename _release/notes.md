@@ -37,7 +37,7 @@ For a complete list of issues that we fixed in this release, see [6.2.1 Fixed is
 
 <dlentry id="style-customization">
   <dt>Style customization</dt>
-  <dd>You can now customize the ThoughtSpot application from the Admin Portal. With style customization, you can change the fonts, chart color palettes, footer text, application logo, and background colors in your embedded ThoughtSpot instance.<br><br> Refer to <a href="{{ site.baseurl }}/admin/admin-portal/style-customization.html">Style customization</a>.</dd></dlentry>
+  <dd>You can now customize the ThoughtSpot application from the Admin Console. With style customization, you can change the fonts, chart color palettes, footer text, application logo, and background colors in your embedded ThoughtSpot instance.<br><br> Refer to <a href="{{ site.baseurl }}/admin/admin-portal/style-customization.html">Style customization</a>.</dd></dlentry>
 </dl>
 
 {: id="6-2-new"}
@@ -208,8 +208,8 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
     <dt>Amazon Linux 2 Deployment</dt>
     <dd>This release of ThoughtSpot introduces deployment support for <a href="https://aws.amazon.com/amazon-linux-2/" target="_blank" >Amazon Linux 2</a>. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the AWS platform. To deploy ThoughtSpot on Amazon Linux 2, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the <a href="{{"/appliance/amazon-linux-2/al2-overview.html" | prepend: site.baseurl}}">Amazon Linux 2 Deployment Overview</a>.</dd></dlentry>
   <dlentry id="admin-portal">
-    <dt>Admin Portal</dt>
-    <dd>This release of ThoughtSpot introduces the <a href="{{ site.baseurl }}/admin/admin-portal/admin-portal.html">Administration Portal</a>, providing you with an intuitive, user-friendly interface to accomplish most of the necessary tasks for administering ThoughtSpot. You can accomplish the following tasks from the Administration Portal:
+    <dt>Admin Console</dt>
+    <dd>This release of ThoughtSpot introduces the <a href="{{ site.baseurl }}/admin/admin-portal/admin-portal.html">Admin Console</a>, providing you with an intuitive, user-friendly interface to accomplish most of the necessary tasks for administering ThoughtSpot. You can accomplish the following tasks from the Admin Console:
     <ul>
       <li><a href="{{ site.baseurl }}/admin/admin-portal/users.html">Manage ThoughtSpot users</a></li>
       <li><a href="{{ site.baseurl }}/admin/admin-portal/groups.html">Manage ThoughtSpot groups</a></li>
@@ -226,7 +226,7 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
       <li><a href="{{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html">View System Alerts Pinboard</a></li>
       <li><a href="{{ site.baseurl }}/admin/admin-portal/available-update.html">Monitor available cluster updates</a></li>
     </ul>
-    </dd><dd><strong>Admin Portal overview</strong>
+    </dd><dd><strong>Admin Console overview</strong>
     <br>
     <script src="https://fast.wistia.com/embed/medias/ic9rg4gru8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ic9rg4gru8 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry  id="in-memory-data-compression">

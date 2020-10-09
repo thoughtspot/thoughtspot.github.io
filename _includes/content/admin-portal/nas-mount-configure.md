@@ -1,8 +1,8 @@
 {: id="admin-portal"}
-## Mount NAS using the Administration Portal
-To mount a NAS file system using the Administration Portal, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **NAS Configuration** from the side navigation bar that appears.
+## Mount NAS using the Admin Console
+To mount a NAS file system using the Admin Console, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **NAS Configuration** from the side navigation bar that appears.
 
-![Admin Portal - NAS]({{ site.baseurl }}/images/admin-portal-nas.png "Admin Portal - NAS")
+![Admin Console - NAS]({{ site.baseurl }}/images/admin-portal-nas.png "Admin Console - NAS")
 
 1. Select **Add Mount Point**.
 
@@ -20,4 +20,4 @@ To mount a NAS file system using the Administration Portal, navigate to the Admi
 
 3. Click **OK**.
 
-You can unmount NAS from the Administration Portal, or by running `tscli nas unmount --dir <directory>`.
+You can unmount NAS from the Admin Console, or by running `tscli nas unmount --dir <directory>`.

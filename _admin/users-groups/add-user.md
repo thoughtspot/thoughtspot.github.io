@@ -19,13 +19,13 @@ Note that all users automatically belong to the group **All**.
 To create a new user and assign that user to groups, follow these steps:
 
 1. Log in to ThoughtSpot from a browser.
-2. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar.
+2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
 3. Select **Users** from the side navigation bar that appears.
 
-    ![Admin Portal - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Portal - Users")
+    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5. Click the **+ Add User** button on the upper left-hand side of the list of users.
 
@@ -116,13 +116,13 @@ To edit an existing user, follow these steps:
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar.
+2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
 3. Select **Users** from the side navigation bar that appears.
 
-    ![Admin Portal - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Portal - Users")
+    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5.  Click the username in the list to open the **Edit User** interface.
 
@@ -196,13 +196,13 @@ To delete users, follow these steps:
 
 1. Log in to ThoughtSpot from a browser.
 
-2. Navigate to the Admin Portal by clicking on the **Admin** tab from the top navigation bar.
+2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
 3. Select **Users** from the side navigation bar that appears.
 
-    ![Admin Portal - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Portal - Users")
+    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5. Select the users you plan to delete by clicking the box that appears when you hover over the username.
 

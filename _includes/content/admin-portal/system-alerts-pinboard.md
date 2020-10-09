@@ -1,6 +1,6 @@
-You can view alert information for your ThoughtSpot cluster from the Administration Portal. The **System Alert Pinboard** contains information on alerts, configuration events, and notification events. To view this Pinboard, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Alert** from the side navigation bar that appears.
+You can view alert information for your ThoughtSpot cluster from the Admin Console. The **System Alert Pinboard** contains information on alerts, configuration events, and notification events. To view this Pinboard, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Alert** from the side navigation bar that appears.
 
-![Admin Portal - Alert Pinboard]({{ site.baseurl }}/images/admin-portal-alert-pinboard.png "Admin Portal - Alert Pinboard")
+![Admin Console - Alert Pinboard]({{ site.baseurl }}/images/admin-portal-alert-pinboard.png "Admin Console - Alert Pinboard")
 
 This Pinboard contains three ThoughtSpot Answers: **alerts**, **configuration events**, and **notification events**.
 
