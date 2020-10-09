@@ -515,7 +515,7 @@ entries:
       - title: In-memory data compression
         url: /admin/architecture/data-compression.html
         output: web,admBk
-    - levelTwoTitle: Administration Portal
+    - levelTwoTitle: Admin Console
       output: web,admBk
       levelTwoItems:
       - title: Overview

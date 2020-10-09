@@ -15,9 +15,9 @@ include documentation specific to your company, such as information about the
 data available in ThoughtSpot, where to get support internally, or
 company-specific training.
 
-To customize the Help menu, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Help Customization** from the side navigation bar that appears.
+To customize the Help menu, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Help Customization** from the side navigation bar that appears.
 
-![Admin Portal - Help customization]({{ site.baseurl }}/images/admin-portal-help-customization.png "Admin Portal - Help customization")
+![Admin Console - Help customization]({{ site.baseurl }}/images/admin-portal-help-customization.png "Admin Console - Help customization")
 
 To add a new link, select **Add custom menu item** below the list of existing links.
 

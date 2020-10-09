@@ -1,6 +1,6 @@
-You can view cluster information from the Administration Portal. The **System Cluster Pinboard** contains several ThoughtSpot Answers that display latency over time, snapshot status, installed release, node functions, and logs. To view this Pinboard, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Cluster** from the side navigation bar that appears.
+You can view cluster information from the Admin Console. The **System Cluster Pinboard** contains several ThoughtSpot Answers that display latency over time, snapshot status, installed release, node functions, and logs. To view this Pinboard, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Cluster** from the side navigation bar that appears.
 
-![Admin Portal - Cluster Pinboard]({{ site.baseurl }}/images/admin-portal-cluster-pinboard.png "Admin Portal - Cluster Pinboard")
+![Admin Console - Cluster Pinboard]({{ site.baseurl }}/images/admin-portal-cluster-pinboard.png "Admin Console - Cluster Pinboard")
 
 Only the **Average Latency Last 2 Weeks (sec)** panel contains a standard
 ThoughtSpot visualization. The other visualizations rely on internal queries

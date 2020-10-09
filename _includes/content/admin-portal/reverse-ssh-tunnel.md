@@ -1,6 +1,6 @@
-To configure a reverse SSH tunnel, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Reverse SSH** from the side navigation bar that appears.
+To configure a reverse SSH tunnel, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Reverse SSH** from the side navigation bar that appears.
 
-![Admin Portal - reverse SSH]({{ site.baseurl }}/images/admin-portal-reverse-ssh.png "Admin Portal - reverse SSH")
+![Admin Console - reverse SSH]({{ site.baseurl }}/images/admin-portal-reverse-ssh.png "Admin Console - reverse SSH")
 
 Select **Edit** to enable or disable the tunnel.
 

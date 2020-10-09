@@ -12,10 +12,10 @@ ThoughtSpot patches the Operating System at the time of upgrades. Installation a
 
 ThoughtSpot Support will contact you to schedule an update when a minor or major upgrade becomes available.
 
-You can also view available releases from the Administration Portal. To view new releases, navigate to the Administration Portal by clicking on the **Admin** tab from the top navigation bar. Select **Upgrade** from the side navigation bar that appears.
+You can also view available releases from the Admin Console. To view new releases, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Upgrade** from the side navigation bar that appears.
 
 The **Upgrade** page shows your cluster's current version, and any new releases that are available. If no releases are available, you see the following screen.
 
-![Admin Portal - Upgrade]({{ site.baseurl }}/images/admin-portal-upgrade.png "Admin Portal - Upgrade")
+![Admin Console - Upgrade]({{ site.baseurl }}/images/admin-portal-upgrade.png "Admin Console - Upgrade")
 
 If releases are available, and you would like to upgrade, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to upgrade your cluster.
