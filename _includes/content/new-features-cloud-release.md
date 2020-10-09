@@ -14,7 +14,7 @@ Scriptability contains the following new features:
 See <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a>.
 
 <h3>Style Customization</h3>
-You can now customize the ThoughtSpot application from the Admin Portal. With style customization, you can change the fonts, chart color palettes, footer text, application logo, and background colors in your embedded ThoughtSpot instance.<br><br>
+You can now customize the ThoughtSpot application from the Admin Console. With style customization, you can change the fonts, chart color palettes, footer text, application logo, and background colors in your embedded ThoughtSpot instance.<br><br>
 
 Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/style-customization.html">Style customization</a>.
 
