@@ -158,7 +158,7 @@ These are the issues we fixed in ThoughtSpot Release 6.1.
 
 - The date format in a PDF is not correct for the user's locale.
 
-- Various display issues with Admin Portal.
+- Various display issues with Admin Console.
 
 - Periodic backups fail after upgrade.
 
