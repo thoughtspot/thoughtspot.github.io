@@ -53,7 +53,6 @@ exclude:
   - pdf-product1.sh
   - pdf-product2.sh
   - update.sh
-  - _redirects
 
 include:
   - images
