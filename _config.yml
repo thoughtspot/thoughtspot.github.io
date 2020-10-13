@@ -57,6 +57,7 @@ exclude:
 include:
   - images
   - index.html
+  - _redirects
 
 # File Formatting
 # Markdown processor. Kramdown differs from github-flavored markdown in some subtle ways
