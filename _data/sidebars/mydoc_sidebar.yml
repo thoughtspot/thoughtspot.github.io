@@ -1436,7 +1436,7 @@ entries:
       - title: RHEL prerequisites
         url: /appliance/rhel/rhel-prerequisites.html
         output: web,appQs
-      - title: ThoughtSpot artifacts
+      - title: ThoughtSpot deployment templates
         url: /appliance/rhel/rhel-ts-artifacts.html
         output: web,appQs
       - title: Online RHEL install
