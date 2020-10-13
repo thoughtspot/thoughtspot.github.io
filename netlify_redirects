@@ -1,0 +1,12 @@
+---
+layout: none
+permalink: /_redirects
+---
+
+/6.1/* https://docs.thoughtspot.com/:splat  200
+/6.0/* https://docs.thoughtspot.com/:splat  200
+/5.3/* https://docs.thoughtspot.com/:splat  200
+/5.2/* https://docs.thoughtspot.com/:splat  200
+/5.1/* https://docs.thoughtspot.com/:splat  200
+/5.0/* https://docs.thoughtspot.com/:splat  200
+/4.5/* https://docs.thoughtspot.com/:splat  200
