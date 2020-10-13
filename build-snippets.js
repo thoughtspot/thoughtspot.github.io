@@ -1,21 +1,15 @@
 const folder = process.argv.pop()
-
 const path = require('path')
 const {readdirSync, readFileSync, writeFileSync, mkdirSync, unlinkSync, existsSync} = require('fs')
-
 const basePath = path.join(__dirname, '') + '/' + folder
 const outputPath = basePath + '/embed-snippets'
-
 try {
-	console.log('check', folder, existsSync(outputPath))
 	if (!folder || !existsSync(outputPath))
-		return
+		mkdirSync(outputPath)
 } catch(e) {
 	return
 }
-
 const docsBaseUrl = 'https://docs.thoughtspot.com/latest'
-
 const embedTemplate = `
 <!DOCTYPE html>
 <html>
@@ -28,15 +22,14 @@ const embedTemplate = `
 	</body>
 </html>
 `
-
 const getFilesAndDirectories = (directoryPath, includeFiles = false) => {
-	console.log('directoryPath', directoryPath)
 	return readdirSync(directoryPath, {withFileTypes: true})
 		.filter(file => {
 			// Don't do the embed snippets dir
 			if (file.name == 'embed-snippets')
 				return false
-
+			if (!file.isDirectory() && path.extname(file.name).toLowerCase() !== '.html')
+				return false
 			// Include files if flag is true, otherwise only include if is directory.
 			return includeFiles ? true : file.isDirectory()
 		})
@@ -48,14 +41,10 @@ const getFilesAndDirectories = (directoryPath, includeFiles = false) => {
 			}
 		})
 }
-
 const generateFileSnippets = (path, file) => {
-	console.log('generateFileSnippets', path, file)
-
 	let sourceHtml = readFileSync(`${basePath}${path}/${file}`).toString()
 	const htmlRows = sourceHtml.split('\n')
 	const shortcodeRows = []
-
 	htmlRows.forEach((row, i) => {
 		const matches = row.trim().match(/<p>.*?\[embed.+?label\=\"(.*?)\"\].*?<\/p>|\[\/embed\]/)
 		if (matches) {
@@ -68,41 +57,33 @@ const generateFileSnippets = (path, file) => {
 			}
 		}
 	})
-
 	// Generate output HTML
 	shortcodeRows.forEach(shortcodeRow => {
 		// If we don't have a start and an end index, skip it.
 		if (!(shortcodeRow.startIndex && shortcodeRow.endIndex))
 			return
-
 		const outputHtmlRows = htmlRows.slice(shortcodeRow.startIndex+1, shortcodeRow.endIndex)
-
 		let outputHtml = embedTemplate
 			.replace('$title', shortcodeRow.label)
 			.replace('$html', outputHtmlRows.join('\n'))
 			.replace('$docsUrl', `${docsBaseUrl}${path}/${file}#${shortcodeRow.label}`)
-
 		const fileNameArray = file.split('.')
 		fileNameArray[fileNameArray.length-2] += `__${shortcodeRow.label}`
 		const snippetFileName = fileNameArray.join('.')
-
 		mkdirSync(`${outputPath}${path}`, {recursive: true})
 		writeFileSync(`${outputPath}${path}/${snippetFileName}`, outputHtml)
 	})
-
 	if (shortcodeRows.length) {
+		console.log('generateFileSnippets', path, file)
 		// Clean up source HTML
 		shortcodeRows.forEach(shortcodeRow => {
 			htmlRows[shortcodeRow.startIndex] = ''
 			htmlRows[shortcodeRow.endIndex] = ''
 		})
-
 		sourceHtml = htmlRows.filter(row => row).join('\n')
-
 		writeFileSync(`${basePath}${path}/${file}`, sourceHtml)
 	}
 }
-
 const generateSnippets = (filesAndFolders, currentPath) => {
 	filesAndFolders.forEach(fileOrFolder => {
 		if (fileOrFolder.dirname) {
@@ -115,7 +96,6 @@ const generateSnippets = (filesAndFolders, currentPath) => {
 		}
 	})
 }
-
 // const generateTestData = () => {
 // 	let filePath = `${basePath}/admin/mobile/use-mobile.html`
 // 	let sourceHtml = readFileSync(filePath).toString()
@@ -126,7 +106,6 @@ const generateSnippets = (filesAndFolders, currentPath) => {
 // 		<p>[/embed]</p>
 // 		<h3 id="for-users">For users:</h3>`)
 // 	writeFileSync(filePath, sourceHtml)
-
 // 	filePath = `${basePath}/admin/mobile/install-mobile.html`
 // 	sourceHtml = readFileSync(filePath).toString()
 // 	sourceHtml = sourceHtml.replace('<h2 id="install-the-app">Install the app</h2>', `
@@ -137,11 +116,7 @@ const generateSnippets = (filesAndFolders, currentPath) => {
 // 		<h2 id="set-up-the-app">Set up the app</h2>`)
 // 	writeFileSync(filePath, sourceHtml)
 // }
-
 // generateTestData()
-
 const filesAndFoldersToCrawl = getFilesAndDirectories(basePath)
-
-console.log('filesAndFoldersToCrawl', filesAndFoldersToCrawl)
-
+// console.log('filesAndFoldersToCrawl', filesAndFoldersToCrawl)
 generateSnippets(filesAndFoldersToCrawl, '')
