@@ -34,30 +34,13 @@ You must install the SSM agent on each node. Refer to [Manually install SSM Agen
 {: id="partition-hosts"}
 ## Partition the hosts
 
-As you create VMs, ensure that all ThoughtSpot hosts have the following partitions on the root drive.
+Ensure that all ThoughtSpot hosts meet the following partition and sizing requirements.
 
-<table>
-<tbody>
-<tr>
-<th>Partition</th>
-<th>Drive type</th>
-<th>Description</th>
-<th>Minimum size</th>
-</tr>
-<tr>
-<td><strong>OS partition</strong></td>
-<td>SSD (root drive)</td>
-<td>Root partition for OS, <code>/tmp</code></td>
-<td>100GB<br />Allocate at least 50GB to <code>/tmp</code></td>
-</tr>
-<tr>
-<td><strong>Export partition</strong></td>
-<td>SSD (root drive)&nbsp;</td>
-<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
-<td>200GB</td>
-</tr>
-</tbody>
-</table>
+1. On the root drive, you need at least 20 GB, for Yum packages and logs.
+
+2. You need at least 200 GB for ThoughtSpot installation, either on a secondary drive or as a partition on the root drive.
+
+    {% include note.html content="This drive must be separate from the data drive." %}
 
 {: id="enable-hosts"}
 ## Enable the hosts to download Amazon Linux 2 packages
