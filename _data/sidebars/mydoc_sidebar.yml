@@ -359,6 +359,12 @@ entries:
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
           output: web,ugBk
+        - title: Linked Pinboard filters
+          url: /complex-search/linked-filters.html
+          output: web,ugBk
+        - title: Selective Pinboard filters
+          url: /complex-search/selective-filters.html
+          output: web,ugBk
         - title: Answer Explorer
           url: /end-user/pinboards/answer-explorer.html
           output: web,ugBk
