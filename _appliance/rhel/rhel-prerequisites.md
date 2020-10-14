@@ -28,7 +28,7 @@ Set up hosts for the ThoughtSpot cluster on your chosen platform. Please refer t
 {: id="partition-hosts"}
 ## Partition the hosts
 
-Ensure that all ThoughtSpot hosts meet the following partition and sizing requirements.
+Ensure that all ThoughtSpot hosts meet the following partition and sizing requirements. All drives must be SSDs.
 
 1. On the root drive, you need at least 20 GB, for Yum packages and logs.
 
