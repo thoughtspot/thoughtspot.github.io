@@ -5,7 +5,7 @@ summary: "ThoughtSpot now supports limiting some users to <strong>Read only</str
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot has a user privilege that prevents certain users from creating or modifying Pinboards.
+Starting with release 6.2.1, ThoughtSpot has a user privilege that prevents certain users from creating or modifying Pinboards.
 
 To ensure that users have <strong>Read only</strong> access, edit the user group permission and select the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only)** privilege.
 
@@ -23,6 +23,7 @@ These users *cannot* perform the following actions that are otherwise available 
 
 Follow these steps to limit access to Pinboards:
 
+1. Ensure that you are on ThoughtSpot version 6.2.1 or later.
 1. Contact ThoughtSpot Support to enable the feature.
 2. Identify users for limited access to curated Pinboards, and assign them to the same User Group.
 3. Assign the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only)** privilege to the User Group.
