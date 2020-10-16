@@ -1,75 +1,71 @@
 ---
-title: [Migrate or restore Worksheets]
-last_updated: 7/7/2020
-summary: "You can export an entire ThoughtSpot worksheet in a flat-file format. After optional modification, you can migrate it to a different cluster, or restore it to the same cluster."
+title: [Migrate or restore Views]
+last_updated: 10/14/2020
+summary: "You can export an entire ThoughtSpot View in a flat-file format. After optional modification, you can migrate it to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-In ThoughtSpot, you can download Worksheets to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
-
-Note that starting in release 6.2, you can use this feature to export and import Worksheets with filters.
+In ThoughtSpot, you can download Views to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl-view.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
 
 This mechanism supports several scenarios that you may encounter:
 
-- <strong>Migrating from a development environment to a production environment</strong> by downloading the file from the development cluster and uploading the same file into the production cluster
-- <strong>Implementing metadata changes outside ThoughtSpot UI</strong>, such as replacing the underlying tables for the entire table, or replacing a single column from one table with a column in another table
-- <strong>Making bulk changes</strong>, such as mass renaming of objects defined by the worksheets, and managing duplicates
+- <strong>Migrating from a development environment to a production environment</strong> by downloading the file from the development cluster and uploading the same file to the production cluster
+- <strong>Implementing metadata changes outside ThoughtSpot UI</strong>, such as replacing the underlying data source for the entire Pinboard, or replacing a single column from one data source with a column in another data source
 - **Reusing existing objects to build new objects**, such as building two very similar objects based on a similar, pre-existing object.
 
 ## How to use Scriptability
 Depending on how you want to use Scriptability, there are several workflows you can follow:
 1. **Edit and update an existing object in the same cluster**: You can either
-- [export](#worksheet-export) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html) (`TSL`) representation, and [import](#worksheet-update) the updated file(s) to modify the existing object *or*
+- [export](#view-export) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl-view.html) (`TSL`) representation, and [import](#view-update) the updated file(s) to modify the existing object *or*
 - edit the object(s) using the [in-app `TSL` editor](#edit-tsl) and publish the updated file(s).
-2. **Migrate an existing object from one cluster to a new cluster**: [export](#worksheet-export) the object(s) and [import](#worksheet-migrate) the updated file(s) to the new cluster.
+2. **Migrate an existing object from one cluster to a new cluster**: [export](#view-export) the object(s) and [import](#view-migrate) the updated file(s) to the new cluster.
 3. **Edit and migrate an existing object from one cluster to a new cluster**: You can either
-- [export](#worksheet-export) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html) (`TSL`) representation, and [import](#worksheet-migrate) the updated file(s) to the new cluster *or*
-- edit the object(s) using the [in-app `TSL` editor](#edit-tsl), publish the updated file(s), [export](#worksheet-export) the object(s), and [import](#worksheet-migrate) the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.
+- [export](#view-export) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl-view.html) (`TSL`) representation, and [import](#view-migrate) the updated file(s) to the new cluster *or*
+- edit the object(s) using the [in-app `TSL` editor](#edit-tsl), publish the updated file(s), [export](#view-export) the object(s), and [import](#view-migrate) the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.
 
 ## Prerequisites
 
 **Import**
 
-| Import and create a new object without importing its dependents | Import and create a new object and its dependents | Import and update an existing object without dependents | Import and update an existing object with dependents |
+| Import and create a new View without importing its dependents | Import and create a new View and its dependents | Import and update an existing View without dependents | Import and update an existing View with dependents |
 | ---------- | ---- | --- | --- |
-| The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. For example, if you import a Pinboard that is built on a Worksheet that is built on a table, you must have **view** permission for the Worksheet. You must have the **can manage data** permission. | **Can manage data**. | **Edit** permission on the existing object. The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. You must have the **can manage data** permission. | **Edit** permission on the existing object(s). **Can manage data**. |
+| The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. For example, if you import a View that is built on a Worksheet that is built on a table, you must have **view** permission for the Worksheet. You must have the **can manage data** permission. | **Can manage data** permission. | **Edit** permission on the existing View. The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. You must have the **can manage data** permission. | **Edit** permission on the existing View(s). **Can manage data**. |
 
 **Export**
 
 | Export with dependents | Export without dependents |
 | ---- | ---- |
-| **View** permission on the object and all dependents. | **View** permission on the object and its first-level dependents. |
+| **View** permission on the View and all dependents. | **View** permission on the View and its first-level dependents. |
 
 {% include note.html content="If you have a permissions issue with a particular object when you export multiple objects, or an object and its dependents, the complete export does not fail. The individual object does not export, and you receive an error message about this failure in the <code>Manifest</code> file in the zip file." %}
 
-{: id="worksheet-export"}
-## Export Worksheet
-You can export [one Worksheet at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
+{: id="view-export"}
+## Export View
+You can export [one View at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
 
 {: id="export-one"}
-### Export one Worksheet
-To export one Worksheet:
+### Export one View
+To export one View:
 
-1. Navigate to the Worksheet you want to export.
+1. Navigate to the View you want to export.
 
 2. Click the three-dot icon, and select **Export TSL**.
 
-    ![Export a Worksheet]({{ site.baseurl }}/images/scriptability-view-export.png "Export a Worksheet")
+    ![Export a View]({{ site.baseurl }}/images/scriptability-view-export.png "Export a View")
 
 {: id="export-zip-file"}
-### Export multiple Worksheets
-To export multiple Worksheets at a time, follow these steps:
+### Export multiple Views
+To export multiple Views at a time, follow these steps:
 
 1. Navigate to the **Data** page from the top navigation bar.
 
-2. Hover over the Worksheets you want to export, and click the empty checkboxes that appear.
+2. Hover over the Views you want to export, and click the empty checkboxes that appear.
 
 3. Select the **Export** button.
 
-    ![Export multiple Worksheets]({{ site.baseurl }}/images/scriptability-view-export-multiple.png "Export multiple Worksheets")
+    ![Export multiple Views]({{ site.baseurl }}/images/scriptability-view-export-multiple.png "Export multiple Views")
 
-4. Choose whether to export only the Worksheets, or the Worksheets and their underlying data sources (Worksheets, Tables, and Views):
+4. Choose whether to export only the Views, or the Views and their underlying data sources (Worksheets, Tables, and Views):
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-click-export.png "Choose what to export")
 
@@ -78,22 +74,22 @@ To export multiple Worksheets at a time, follow these steps:
 4. Open the downloaded `TSL` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
 
 {: id="edit-tsl"}
-## Edit the Worksheet TSL file
-You can edit the `TSL` file in one of two ways. You can [export](#worksheet-export) the Worksheet(s) and edit the file(s) in any text editor, before you import it. Or, you can use the [in-app `TSL` editor](#tsl-editor) to edit, validate, and publish the View(s). Refer to [Worksheet TSL specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html) for information on syntax in the TSL files.
+## Edit the View TSL file
+You can edit the `TSL` file in one of two ways. You can [export](#view-export) the View(s) and edit the file(s) in any text editor, before you import it. Or, you can use the [in-app `TSL` editor](#tsl-editor) to edit, validate, and publish the View(s). Refer to [View TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-view.html) for information on syntax in the TSL files.
 
 {: id="tsl-editor"}
-## Edit, validate, and publish Worksheets using the TSL editor
-You can access the TSL editor from the Worksheet list page, or from the Worksheet itself. To edit and update multiple objects using the TSL editor, access it from the object list page.
+## Edit, validate, and publish Views using the TSL editor
+You can access the TSL editor from the View list page, or from the View itself. To edit and update multiple objects using the TSL editor, access it from the object list page.
 
 To use the TSL editor, follow these steps:
 
 1. Navigate to the **Data** page from the top navigation bar.
 
-2. Click the name of the Worksheet you want to edit, or select multiple Worksheets by clicking on the checkboxes that appear when you hover over a Worksheet name.
+2. Click the name of the View you want to edit, or select multiple Views by clicking on the checkboxes that appear when you hover over a View name.
 
-3. From the Worksheet list page, select the **Edit TSL** button that appears when you select a Worksheet or Worksheets. From the Worksheet itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TSL**.
+3. From the View list page, select the **Edit TSL** button that appears when you select a View or Views. From the View itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TSL**.
 
-4. The TSL editor opens. Edit the TSL file(s), using the syntax specified in [Worksheet TSL specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html).
+4. The TSL editor opens. Edit the TSL file(s), using the syntax specified in [View TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-view.html).
 
     The TSL editor has the following functions under the top menu:
     - **File**: Validate, Publish, and Exit editor. You can also validate and publish using the **validate** and **publish** buttons at the top right of the editor. You can also exit the editor using the X button at the top right corner. The system warns you if you try to exit with unsaved changes.
@@ -112,19 +108,19 @@ To use the TSL editor, follow these steps:
 
 7. After validating,  select **Publish** in the top right corner, next to **Validate**. You must publish each file individually.
 
-8. The system displays a **Publish status** dialog box. You can select **Open [object]** to open the object you just published in a new tab, or click **Close** to return to the TSL editor.
+8. The system displays a **Publish status** dialog box. You can select **Open View** to open the View you just published in a new tab, or click **Close** to return to the TSL editor.
 
     ![Open the View or return to the TSL editor]({{ site.baseurl }}/images/scriptability-editor-view-publish-status.png "Open the View or return to the TSL editor")
 
-{: id="worksheet-update"}
-## Update a Worksheet
-You can overwrite an existing Worksheet by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file.
+{: id="view-update"}
+## Update a View
+You can overwrite an existing View by downloading the `TSL` file, making any necessary changes, and then re-uploading the `TSL` file.
 
 You can also update an object using the [TSL editor](#tsl-editor).
 
-To update an existing Worksheet by downloading the TSL file and modifying it, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
+To update an existing View by downloading the TSL file and modifying it, follow these steps. In this case, we are updating a single View. You can update multiple objects at once by uploading them in .zip file format.
 
-1. [Export the Worksheet](#worksheet-export) you want to update, as in steps 1 to 5 of the **Export Worksheet** section above.
+1. [Export the View](#view-export) you want to update, as in steps 1 to 5 of the **Export View** section above.
 
 2. Edit the file in a text editor.
 
@@ -150,17 +146,17 @@ To update an existing Worksheet by downloading the TSL file and modifying it, fo
 
     ![Import selected file]({{ site.baseurl }}/images/scriptability-migrate-import-selected.png "Import selected files")
 
-11. The **Import Status** screen displays the status of the Worksheets you imported. You can open the Worksheet(s) that you imported, or click **Done** to return to the main object page.
+11. The **Import Status** screen displays the status of the Views you imported. You can open the View(s) that you imported, or click **Done** to return to the main object page.
 
     ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
 
-{: id="worksheet-migrate"}
-## Migrate a Worksheet
-To migrate a Worksheet from one cluster to another, follow these steps.
+{: id="view-migrate"}
+## Migrate a View
+To migrate a View from one cluster to another, follow these steps.
 
-1. [Export the Worksheet](#worksheet-export) you want to move, as in steps 1 to 5 of the **Export Worksheet** section above.
+1. [Export the View](#view-export) you want to move, as in steps 1 to 5 of the **Export View** section above.
 
-    The Worksheet remains on the original cluster as well, unless you delete it.
+    The View remains on the original cluster as well, unless you delete it.
 
 2. Navigate to the cluster you want to add the object to.
 
@@ -194,4 +190,4 @@ There are certain limitations to the changes you can apply by editing a Workshee
 * You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
 
 ## Related Information
-- [Worksheet TSL specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)
+- [View TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-view.html)

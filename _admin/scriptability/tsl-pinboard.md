@@ -6,9 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Scriptability for Answers and Pinboards is in <span class="label label-beta">Beta</span>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support.
-
-To work with Scriptable Pinboards in ThoughtSpot, you can download Pinboards to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Pinboards, see [Migrate or restore Pinboards]({{ site.baseurl }}/admin/worksheets/scriptability-pinboard.html).
+To work with Scriptable Pinboards in ThoughtSpot, you can download Pinboards to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Pinboards, see [Migrate or restore Pinboards]({{ site.baseurl }}/admin/scriptability/scriptability-pinboard.html).
 
 {: id="syntax-pinboards"}
 ##  Syntax of the Pinboard TSL file
@@ -27,7 +25,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
     Description line 2
   <a href="#visualizations">visualizations</a>:
   - <a href="#answer">answer</a>:
-    This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/worksheets/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.
+    This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/scriptability/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.
     <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
   - <a href="#answer">answer</a>:
     This section includes all the Answer specification for a second visualization. In this case, the visualization is a headline.
@@ -53,7 +51,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
 <dlentry id="answer">
 <dt>answer</dt>
-<dd>This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/worksheets/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.</dd>
+<dd>This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/scriptability/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.</dd>
 </dlentry>
 
 <dlentry id="column">
@@ -129,12 +127,17 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
 {: id="limitations"}
 ## Limitations of working with TSL files
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TSL.
 
-There are certain limitations to the changes you can apply by editing a Pinboard through TSL.
-
-* Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the Pinboard two times.
+* Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
 * It is not possible to reverse the join direction in the TSL script.
 
+* You cannot create new tables using Scriptability. You can only update existing tables.
+
+* You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
+
+* You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
+
 ## Related Information
-- [Migrate or restore Pinboards]({{ site.baseurl }}/admin/worksheets/scriptability-pinboard.html)
+- [Migrate or restore Pinboards]({{ site.baseurl }}/admin/scriptability/scriptability-pinboard.html)
