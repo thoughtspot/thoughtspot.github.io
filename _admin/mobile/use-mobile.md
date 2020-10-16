@@ -45,7 +45,7 @@ Beginning with version 2.0, you can share a link to objects in ThoughtSpot using
 {: id="drill-down"}
 ## Drill down
 
-Beginning with version 2.0, you can seamlessly and intuitively select data point(s) and drill down for more detailed information. You can also trace the drill path back and reset to the initial state. 
+Beginning with version 2.0, you can seamlessly and intuitively select data point(s) and drill down for more detailed information. You can also trace the drill path back and reset to the initial state.
 
 To drill down:
 1. Tap to select a data point.  
