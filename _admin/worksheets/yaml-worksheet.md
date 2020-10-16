@@ -389,13 +389,18 @@ You may not see each of these parameters in your own TSL file, depending on whet
 </dl>
 
 {: id="limitations"}
-## Limitations of working with Worksheet TSL files
-
-There are certain limitations to the changes you can apply by editing a Worksheet through TSL.
+## Limitations of working with TSL files
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TSL.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
 * It is not possible to reverse the join direction in the TSL script.
+
+* You cannot create new tables using Scriptability. You can only update existing tables.
+
+* You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
+
+* You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
 
 ## Related Information
 - [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html)

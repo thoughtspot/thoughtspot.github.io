@@ -13,6 +13,15 @@ This mechanism supports several scenarios that you may encounter:
 - <strong>Implementing metadata changes outside ThoughtSpot UI</strong>, such as replacing the underlying data source for the entire Pinboard, or replacing a single column from one data source with a column in another data source
 - **Reusing existing objects to build new objects**, such as building two very similar objects based on a similar, pre-existing object.
 
+## How to use Scriptability
+Depending on how you want to use Scriptability, there are several workflows you can follow:
+1. **Edit and update an existing object in the same cluster**: You can either
+- [export](#view-export) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl-view.html) (`TSL`) representation, and [import](#view-update) the updated file(s) to modify the existing object *or*
+- edit the object(s) using the [in-app `TSL` editor](#edit-tsl) and publish the updated file(s).
+2. **Migrate an existing object from one cluster to a new cluster**: [export](#view-export) the object(s) and [import](#view-migrate) the updated file(s) to the new cluster.
+3. **Edit and migrate an existing object from one cluster to a new cluster**: You can either
+- [export](#view-export) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl-view.html) (`TSL`) representation, and [import](#view-migrate) the updated file(s) to the new cluster *or*
+- edit the object(s) using the [in-app `TSL` editor](#edit-tsl), publish the updated file(s), [export](#view-export) the object(s), and [import](#view-migrate) the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.
 
 ## Prerequisites
 

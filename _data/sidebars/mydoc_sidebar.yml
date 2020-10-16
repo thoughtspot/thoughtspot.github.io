@@ -998,7 +998,12 @@ entries:
       - title: View TSL specification
         url: /admin/scriptability/tsl-view.html
         output: web,admBk
-      - title: Migrate or r
+      - title: Migrate or restore tables
+        url: /admin/scriptability/scriptability-table.html
+        output: web,admBk
+      - title: Table TSL specification
+        url: /admin/scriptability/tsl-table.html
+        output: web,admBk
       - title: Migrate or restore Pinboards
         url: /admin/scriptability/scriptability-pinboard.html
         output: web,admBk
