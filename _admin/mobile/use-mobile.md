@@ -11,7 +11,7 @@ Version 1.5.2 is now available.
 
 For details, see [Mobile release notes]({{ site.baseurl }}/admin/mobile/notes-mobile.html).
 
-## Requirements
+## Requirements 
 
 - User account on a ThoughtSpot cluster running release 5.1 or later
 - Apple iOS version 9.0 or later (iPad and iPhone)
