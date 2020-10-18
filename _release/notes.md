@@ -1,7 +1,7 @@
 ---
 title: ["6.3 Release Notes"]
 toc: false
-last_updated: 09/09/2020
+last_updated: 10/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
