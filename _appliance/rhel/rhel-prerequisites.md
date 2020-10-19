@@ -1,7 +1,7 @@
 ---
 title: [RHEL installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 6/30/2020
+last_updated: 10/19/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -30,11 +30,11 @@ Set up hosts for the ThoughtSpot cluster on your chosen platform. Please refer t
 
 Ensure that all ThoughtSpot hosts meet the following partition and sizing requirements. All drives must be SSDs.
 
-1. On the root drive, you need at least 20 GB, for Yum packages and logs.
+1. At least 20 GB available on the root drive, for yum packages and system logs.
 
-2. You need at least 200 GB for ThoughtSpot installation, either on a secondary drive or as a partition on the root drive. For ThoughtSpot-certified hardware platforms, [Dell]({{ site.baseurl }}/appliance/hardware/installing-dell.html) and [Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html), you must use a secondary drive, since the root drive has a limit of 200 GB.
+2. At least 200 GB for ThoughtSpot installation, either on a secondary drive or as a separate partition on the root drive. For ThoughtSpot-certified hardware platforms, [Dell]({{ site.baseurl }}/appliance/hardware/installing-dell.html) and [Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html), you must use a secondary drive, since the root drive has a limit of 200 GB.
 
-    {% include note.html content="This drive must be separate from the data drive." %}
+    {% include note.html content="This drive must be separate from the data drive(s)." %}
 
 {: id="install-rhel"}
 ## Install RHEL on hosts

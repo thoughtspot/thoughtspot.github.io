@@ -1,7 +1,7 @@
 ---
 title: [Amazon Linux 2 installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 6/11/2020
+last_updated: 10/19/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -36,11 +36,11 @@ You must install the SSM agent on each node. Refer to [Manually install SSM Agen
 
 Ensure that all ThoughtSpot hosts meet the following partition and sizing requirements. All drives must be SSDs.
 
-1. On the root drive, you need at least 20 GB, for Yum packages and logs.
+1. At least 20 GB available on the root drive, for yum packages and system logs.
 
-2. You need at least 200 GB for ThoughtSpot installation, either on a secondary drive or as a partition on the root drive.
+2. At least 200 GB for ThoughtSpot installation, either on a secondary drive or as a separate partition on the root drive.
 
-    {% include note.html content="This drive must be separate from the data drive." %}
+    {% include note.html content="This drive must be separate from the data drive(s)." %}
 
 {: id="enable-hosts"}
 ## Enable the hosts to download Amazon Linux 2 packages
