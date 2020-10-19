@@ -1,12 +1,12 @@
 ---
 title: [ThoughtSpot Scripting Language]
-last_updated: 7/16/2020
+last_updated: 10/19/2020
 summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, View, Table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [Tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [joins](#syntax-joins), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.tsl` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, tables, joins, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TSL file
@@ -225,7 +225,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 </pre>    
 
 {: id="syntax-tables"}
-##  Syntax of the Table TSL file
+##  Syntax of the table TSL file
 
 The `TSL` file for Scriptable Tables has a specific syntax.
 
@@ -284,6 +284,31 @@ You may not see each of these parameters in your own TSL files, depending on whe
   - <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
 <a href="#guid">guid</a>: &lt;<em>table_guid</em>&gt;
+</pre>
+
+{: id="syntax-joins"}
+##  Syntax of the join TSL file
+
+The `TSL` file for scriptable joins has a specific syntax.
+
+See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, the source table may not have both an `id` and a `name`. You can add the missing variable to the TSL file to specify an id or name for the join's source table.
+
+<pre>
+<a href="#joins">joins</a>:
+- <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+  <a href="#source_table">source_table</a>:
+    <a href="#id">id</a>: &lt;<em>source_table_id</em>&gt;
+    <a href="#id">name</a>: &lt;<em>source_table_name</em>&gt;  
+  <a href="#destination_table">destination_table</a>:
+    <a href="#id">id</a>: &lt;<em>destination_table_id</em>&gt;
+    <a href="#name">name</a>: &lt;<em>destination_table_name</em>&gt;  
+  <a href="#on">"on"</a>: &lt;<em>on_string</em>&gt;
+  <a href="#type">type</a>: [ LEFT_OUTER | RIGHT_OUTER | INNER | OUTER ]
+  <a href="#is_one_to_one">is_one_to_one</a>: [ true | false]
+- <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
+- <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
 </pre>
 
 {: id="syntax-answers"}
@@ -580,7 +605,12 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="destination">
     <dt>destination</dt>
-    <dd>Name of destination table or view of the join</dd>
+    <dd>Name of the destination table or View for a join</dd>
+  </dlentry>
+
+  <dlentry id="destination_table">
+    <dt>destination_table</dt>
+    <dd>The destination table or View for a join</dd>
   </dlentry>
 
   <dlentry id="display_mode">
@@ -648,7 +678,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="id">
     <dt>id</dt>
-    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
+    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>, or <code>source_table</code>. <br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
   </dlentry>
 
   <dlentry id="identity">
@@ -747,7 +777,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="joins">
     <dt>joins</dt>
-    <dd>List of joins between tables and views, used by the Worksheet or View.<br>
+    <dd>Top-level container for all object definitions within the joins.tsl file. For a Worksheet or View, this parameter contains a list of joins between the tables and Views.<br>
     Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code>
     </dd>
   </dlentry>
@@ -774,13 +804,13 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="name">
     <dt>name</dt>
-    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>join</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code> and so on.<br>
+    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,  <code>joins</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code>, <code>source_table</code> and so on.<br>
     For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
   <dlentry id="on">
     <dt>on</dt>
-    <dd>The keys that your tables are joined on.</dd>
+    <dd>A string that defines the key(s) that the tables and Views are joined on. For example, <code>"on": "[View On LINEORDER2::Lineorder PartKey] = [View On PART2::Part PartKey]"</code></dd>
   </dlentry>
 
   <dlentry id="oper">
@@ -872,7 +902,12 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="source">
     <dt>source</dt>
-    <dd>Name of source table or view of the join</dd>
+    <dd>Name of the source table or View for a join</dd>
+  </dlentry>
+
+  <dlentry id="source_table">
+    <dt>source_table</dt>
+    <dd>The source table or View for a join</dd>
   </dlentry>
 
   <dlentry id="spotiq_preference">
@@ -914,7 +949,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
   <dlentry id="type">
     <dt>type</dt>
-    <dd>For Worksheets and Views, this is the join type.<br>
+    <dd>For Worksheets, Views, and the joins.tsl file, this is the join type.<br>
     Possible values: <code>LEFT_OUTER</code> for left outer join, <code>RIGHT_OUTER</code> for right outer join, <code>INNER</code> for inner join, <code>OUTER</code> for full outer join<br>
     Default: <code>INNER</code><br>
     For Tables, this is the Embrace connection type.<br>
@@ -977,7 +1012,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 </dl>
 
 ## Limitations of working with TSL files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TSL.
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, join, View, or Pinboard through TSL.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
