@@ -24,20 +24,18 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 <dl id="6-3-analyst">
   <dlentry id="geomaps">
     <dt>Geomaps</dt>
-    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for these new locales:
+    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for this new locale:
         <ul>
-          <li><strong>Netherlands</strong>: ...</li>
-          <li><strong>...</strong>: ..., ..., ...</li>
+          <li><strong>Netherlands</strong>: Province, Municipality, Postcode</li>
         </ul>
           </dd></dlentry>
 
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
-    <dd>This release introduces expanded support for <a href="{{ site.baseurl }}/admin/scriptability/scriptability.html">exporting and importing ThoughtSpot objects</a>. You can now export and import the following scriptable objects:
+    <dd>This release introduces expanded support for <a href="{{ site.baseurl }}/admin/scriptability/scriptability-overview.html">exporting and importing ThoughtSpot objects</a>. Pinboard and Answer Scriptability is now GA. You can also export, import, and update the following newly scriptable objects:
      <ul>
-      <li>...</li>
-      <li>...</li>
-      <li>...</li>
+      <li>Views</li>
+      <li>Tables</li>
     </ul>
     </dd>
   </dlentry>
@@ -108,9 +106,6 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 
 If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators, and so on.
 We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
-
-### Scriptability
-Please contact us if you are interested in participating in the <a href="mailto:BetaProgram@thoughtspot.com?subject=Scriptability%20Beta%20Program%20Request" target="_blank">Scriptability Beta Program</a>, for migrating and updating Answers and Pinboards in a flat-file format.
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths

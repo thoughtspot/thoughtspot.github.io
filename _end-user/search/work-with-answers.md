@@ -49,7 +49,7 @@ You can view other Answer actions by selecting the more options menu icon ![more
 
 ![Other Answer actions]({{ site.baseurl }}/images/answer-other-actions.png "Other Answer actions")
 
-For example, you can [create a View]({{ site.baseurl }}/complex-search/about-query-on-query.html) to use the Answer as a data source, [replay the search]({{ site.baseurl }}/end-user/search/replay-search.html) required to create the Answer, download the Answer, or export an Answer as a [TSL]({{ site.baseurl }}/admin/scriptability/tsl-pinboard.html), or ThoughtSpot Scripting Language, file, optionally modify it, and [migrate it to another cluster]({{ site.baseurl }}/admin/scriptability/scriptability-answer.html), or re-upload it to the same cluster.
+For example, you can [create a View]({{ site.baseurl }}/complex-search/about-query-on-query.html) to use the Answer as a data source, [replay the search]({{ site.baseurl }}/end-user/search/replay-search.html) required to create the Answer, download the Answer, or export an Answer as a [TSL]({{ site.baseurl }}/admin/scriptability/tsl.html), or ThoughtSpot Scripting Language, file, optionally modify it, and [migrate it to another cluster]({{ site.baseurl }}/admin/scriptability/scriptability.html), or re-upload it to the same cluster.
 
 ## SpotIQ Insights for Answers
 
