@@ -132,7 +132,7 @@ The fields on this visualization has the following meaning:
    <tr>
       <th>Reason</th>
       <td>
-        Identifies the reason the snapshot/backup was created. You should see several period snapshots if your cluster is configured properly. You may also see evidence here of manual backups. For example, you should be sure your cluster is backed up before major events such as upgrades. Email <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> if you don't see evidence your cluster is periodically creating snapshots.
+        Identifies the reason the snapshot/backup was created. You should see several period snapshots if your cluster is configured properly. You may also see evidence here of manual backups. For example, you should be sure your cluster is backed up before major events such as upgrades. Email <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a> if you don't see evidence your cluster is periodically creating snapshots.
       </td>
    </tr>
    <tr>

@@ -149,7 +149,7 @@ additional, larger capacity disks.
 
 There is no network at this point on your VMs. To make the VM node accessible
 from any terminal within local network, contact <a
-href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>.
+href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a>.
 
 ## Additional resources
 As you develop your expertise in VMware VM creation, we recommend the following ThoughtSpot U course:
