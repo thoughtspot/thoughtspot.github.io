@@ -18,17 +18,25 @@ This release enables new data modeling capabilities. You can now:
 </ul>
 
 <h3>Geomaps</h3>
-You can now use ThoughtSpot Geomaps to create Geo charts, which show data on a map by location. ThoughtSpot supports geo area, geo bubble, and geo heatmap charts. These geo charts can display six types of geographical data, depending on territory:
+ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.
+
+ThoughtSpot supports maps of many countries. See the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
+
+<h3>Answer V2</h3>
+Answer V2 is in Beta. The Answer V2 feature set contains the following features:
 
 <ul>
-<li>Country</li>
-<li>State</li>
-<li>County</li>
-<li>Zip code</li>
-<li>Point (latitude/longitude)</li>
-<li>Other sub-nation regions (for international countries)</li>
+<li>Improved Formula Editor</li>
+<li>Search Assist</li>
+<li>Table configuration: conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells</li>
 </ul>
 
-ThoughtSpot supports maps of many countries. Please see the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
+The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to turn Answer V2 off. 
 
-Refer to <a href="{{ site.baseurl }}/end-user/search/about-geo-charts.html">Geo charts</a>.
+<ul>
+<li>Ask an Expert</li>
+<li>R scripts</li>
+<li>Query visualizer</li>
+<li>Pivot tables</li>
+<li>Sankey charts</li>
+</ul>
