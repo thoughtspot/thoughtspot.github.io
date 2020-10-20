@@ -436,7 +436,20 @@ User does not have required privileges. Please contact your administrator.
 Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 ```
+### Dataload status check logic
 
+You can run the following code to validate that the data load is complete:
+```
+while (true) {
+if (status != OK) {
+   // print status.message() as the error.
+} else if (internal_stage == DONE) {
+   // Data load is successful
+} else {
+   // poll again for data load status
+}
+}
+```
 ## Bad records
 
 Use this api to view the bad records file data.
