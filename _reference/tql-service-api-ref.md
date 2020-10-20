@@ -40,7 +40,7 @@ Status: 200 OK
 Set-cookie: <token>
 ```
 ### Input/output structure
-Following proto structure is proposed for API input and output. Latest structure can be looked up in git repository at “etl/sqlparser/sql_requests.proto”
+Following proto structure is proposed for API input and output.
 
 ```
 // The context in which the query is to be executed. This can be altered by the
@@ -363,6 +363,7 @@ JSESSIONID=<token>
 	}
 }
 ```
+The request body is a JSON representation of the "ExecuteQueryRequest", shown above.
 ##### Output
 ```
 Status:   200 OK
@@ -406,6 +407,7 @@ Status:   200 OK
 	}
 }
 ```
+The output is a JSON representation of the "ExecuteQueryResponse", shown above.
 ### Execute file
 #### API
 ##### POST API
@@ -434,8 +436,11 @@ TQL script file is uploaded. Requests will have the flag passing mechanism too.
 }
 
 ```
+The request body is a JSON representation of the "ExecuteSqlScriptRequest", shown above.
 ##### Output
 An array of JSON objects will be sent by the server. Same as what is sent for the non-file-upload case - one JSON per tql-command in the script.
+
+The output is a JSON representation of the "ExecuteSqlScriptRequest", shown above.
 
 ### Autocomplete static
 #### API
@@ -454,6 +459,7 @@ JSESSIONID=<token>
 	"tokens": ["abs", "absday", ... ]
 }
 ```
+The output is a JSON representation of the "StaticAutocompleteResponse", shown above.
 ### Autocomplete dynamic
 #### API
 ##### GET request
@@ -477,6 +483,7 @@ In the first version, all dynamic tokens are returned. Server side code is writt
 	"tokens": [“table-1”, “col-1”, “col-2”, "start_of_year_epoch", "absolute_month_number", ...]
 }
 ```
+The output is a JSON representation of the "DynamicAutocompleteResponse", shown above.
 ### Get schema version
 #### API
 ##### GET request
@@ -496,7 +503,7 @@ JSESSIONID=<token>
 	}
 }
 ```
-### Client
+## Client
 A python client is developed on top of TQL Service APIs. The code is available in the developer git repository. Contact ThoughtSpot for details.
 
 ## Related information
