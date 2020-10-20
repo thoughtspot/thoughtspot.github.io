@@ -11,7 +11,7 @@ You can customize the look and feel of the ThoughtSpot application for your
 company. Configuring these settings sets system-wide defaults for all your users.
 
 Style customization is enabled by default. You can configure your cluster to disable this functionality. Contact
-<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for information
+<a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a> for information
 about disabling this feature.
 
 ## Where to customize styles
