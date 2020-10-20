@@ -146,4 +146,4 @@ No 'Access-Control-Allow-Origin' header is present on the requested resource.
 
 Typically you see this if the cross domain (CORS) setting was not completed correctly on
 your ThoughtSpot cluster. Contact <a
-href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for more help.
+href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a> for more help.
