@@ -1100,12 +1100,12 @@ entries:
       - title: Scheduled pinboards management
         url: /admin/manage-jobs/scheduled-pinboards-management.html
         output: web,admBk
-#    - levelTwoTitle: Monitoring
-#      output: web,admBk
-#      levelTwoItems:
-#      - title: Introduction to monitoring
-#        url: /admin/system-monitor/introduction.html
-#        output: web,admBk
+    - levelTwoTitle: Monitoring
+      output: web,admBk
+      levelTwoItems:
+      - title: Introduction to monitoring
+        url: /admin/system-monitor/introduction.html
+        output: web,admBk
 #      - title: Overview board
 #        url: /admin/system-monitor/overview.html
 #        output: web,admBk
@@ -1118,12 +1118,12 @@ entries:
 #      - title: Alerts and Events board
 #        url: /admin/system-monitor/alerts-events.html
 #        output: web,admBk
-#      - title: System worksheets
-#        url: /admin/system-monitor/worksheets.html
-#        output: web,admBk
-#      - title: System pinboards
-#        url: /admin/system-monitor/monitor-pinboards.html
-#        output: web,admBk
+      - title: System worksheets
+        url: /admin/system-monitor/worksheets.html
+        output: web,admBk
+      - title: System pinboards
+        url: /admin/system-monitor/monitor-pinboards.html
+        output: web,admBk
     - levelTwoTitle: Troubleshooting
       output: web,admBk
       levelTwoItems:
