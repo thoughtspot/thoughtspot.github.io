@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="The tsload service APIs enable you to load data into ThoughtSpot."> -->
+<!-- <meta name="description" content="The tsload connector APIs enable you to load data into ThoughtSpot."> -->
 <meta name="keywords" content=",  ">
-<title>tsload service API reference | ThoughtSpot</title>
+<title>tsload connector reference | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.1/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,9 +48,9 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“tsload service API reference”] | thoughtspot.github.io</title>
+<title>[“tsload connector reference”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="[“tsload service API reference”]" />
+<meta property="og:title" content="[“tsload connector reference”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Login Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password." />
 <meta property="og:description" content="Login Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password." />
@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-14T11:53:35-07:00" />
+<meta property="article:published_time" content="2020-10-21T15:56:17-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“tsload service API reference”]" />
+<meta property="twitter:title" content="[“tsload connector reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"datePublished":"2020-10-14T11:53:35-07:00","headline":"[“tsload service API reference”]","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html"},"url":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html","description":"Login Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password.","@type":"BlogPosting","dateModified":"2020-10-14T11:53:35-07:00","@context":"https://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html","headline":"[“tsload connector reference”]","dateModified":"2020-10-21T15:56:17-07:00","datePublished":"2020-10-21T15:56:17-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/reference/tsload-service-api-ref.html"},"description":"Login Use this API to authenticate and log in a user. Login establishes a session with the ThoughtSpot ETL HTTP server. The authentication requires a username and password.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3772,7 +3772,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">tsload service API reference</h1>
+   <h1 class="post-title-main">tsload connector reference</h1>
 </div>
 
 
@@ -3780,7 +3780,7 @@ var ss360Config = {
 <div class="post-content">
 
    
-    <div class="summary">The tsload service APIs enable you to load data into ThoughtSpot.</div>
+    <div class="summary">The tsload connector APIs enable you to load data into ThoughtSpot.</div>
    
 
     
@@ -3849,7 +3849,6 @@ $('#toc').on('click', 'a', function() {
 </table>
 
 <h3 id="request">Request</h3>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /ts_dataservice/v1/public/session HTTP/1.1  
 Host: client.mydomain.com Accept: application/json Content-type: application/json
 {
@@ -4028,60 +4027,7 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 </table>
 
 <h4 id="example-use-of-parameters">Example use of parameters</h4>
-<!--  -->
-<!-- <div class="code-header">
-    
-    
-    <div class="copy-code-container">
-        <button class="copy-code-button"
-             aria-label="Copy code block to your clipboard"
-             data-code="--&gt;
-```
-{
-      target : {
-          database : &quot;&lt;DB_NAME&gt;&quot;,
-          schema : &quot;falcon_default_schema&quot;,
-          table : &quot;&lt;TABLE_NAME&gt;&quot;
-      },
-      format : {
-          type : &quot;CSV&quot;,
-          field_separator : &quot;,&quot;,
-          trailing_field_separator : false,
-          enclosing_character : &quot;\&quot;&quot;,
-          escape_character : &quot;&quot;,
-          null_value : &quot;(null)&quot;,
 
-          date_time : {
-              converted_to_epoch : false,
-              date_time_format : &quot;%Y%m%d %H:%M:%S&quot;,
-              date_format : &quot;%Y%m%d&quot;,
-              time_format : &quot;%H:%M:%S&quot;,
-              skip_second_fraction : false
-          }
-          boolean : {
-              use_bit_values : false,
-              true_format : &quot;T&quot;,
-              false_format : &quot;F&quot;
-          }
-          has_header_row : false,
-          flexible : false
-    },
-    load_options : {
-        empty_target : false,
-        max_ignored_rows : 0,
-    },
-    advanced_options : {
-        max_reported_parsing_errors : 100
-    }
-  }
-```
-&lt;!-- "
-        ></button>
-    </div>
-    
-</div>
-```javascript
--->
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
       target : {
           database : "&lt;DB_NAME&gt;",
@@ -4120,9 +4066,6 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
     }
   }
 </code></pre></div></div>
-<!-- 
-```
- -->
 
 <h3 id="request-1">Request</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i -X POST -b 'JSESSIONID=&lt;GUID-XYZ&gt;' -d '{"target_database": "&lt;DB1&gt;", "target_schema": "&lt;SCHEMA1&gt;", "target_table": "&lt;TABLE1&gt;", "field_separator": ",", "empty_target": false}' https://&lt;TS_CLUSTER&gt;:8442/ts_dataservice/v1/public/loads
@@ -4276,7 +4219,19 @@ User does not have required privileges. Please contact your administrator.
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 </code></pre></div></div>
+<h3 id="data-load-status-check-logic">Data load status check logic</h3>
 
+<p>You can run the following code to validate that the data load is complete:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while (true) {
+if (status != OK) {
+   // print status.message() as the error.
+} else if (internal_stage == DONE) {
+   // Data load is successful
+} else {
+   // poll again for data load status
+}
+}
+</code></pre></div></div>
 <h2 id="bad-records">Bad records</h2>
 
 <p>Use this api to view the bad records file data.</p>
@@ -4303,7 +4258,7 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 <h2 id="related-information">Related information</h2>
 
-<p><a href="/6.1/admin/loading/load-with-service.html">Use the tsload service to load data</a></p>
+<p><a href="/6.1/admin/loading/load-with-tsload.html">Use the tsload connector to load data</a></p>
 
   <div class="tags">
     <div style="float:right;">
@@ -4330,9 +4285,9 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Oct 14, 2020 <br />
+        Generated: Oct 21, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 10/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
