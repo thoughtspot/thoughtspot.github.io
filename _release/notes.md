@@ -101,6 +101,8 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
   </ul>
   </dd></dlentry>
 
+  <dlentry>
+  <dt>Others</dt><dd></dd></dlentry>
 </dl>    
 
 {: id="beta-program"}
