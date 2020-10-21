@@ -1,7 +1,7 @@
 ---
 title: [tsload connector reference]
 summary: "The tsload connector APIs enable you to load data into ThoughtSpot."
-last_updated: 11/18/2019
+last_updated: 10/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -421,7 +421,7 @@ Cookie: token
 ```
 Status: 200 OK
 Content-Type: text/plain
-Content-Length: xx
+Content-Length: xxx
 ```
 ### Example failure responses
 ```
@@ -436,7 +436,20 @@ User does not have required privileges. Please contact your administrator.
 Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 ```
+### Data load status check logic
 
+You can run the following code to validate that the data load is complete:
+```
+while (true) {
+if (status != OK) {
+   // print status.message() as the error.
+} else if (internal_stage == DONE) {
+   // Data load is successful
+} else {
+   // poll again for data load status
+}
+}
+```
 ## Bad records
 
 Use this api to view the bad records file data.
