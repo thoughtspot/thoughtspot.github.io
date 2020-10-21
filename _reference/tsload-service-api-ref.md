@@ -436,7 +436,7 @@ User does not have required privileges. Please contact your administrator.
 Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 ```
-### Dataload status check logic
+### Data load status check logic
 
 You can run the following code to validate that the data load is complete:
 ```
