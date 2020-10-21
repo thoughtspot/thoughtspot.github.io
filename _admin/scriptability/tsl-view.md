@@ -360,11 +360,11 @@ You may not see each of these parameters in your own TSL files, depending on whe
   <dd>The query that the View is based on.</dd>
   </dlentry>
 
-  <dlentry id="search_iq_preferred">
+<!--  <dlentry id="search_iq_preferred">
     <dt>search_iq_preferred</dt>
     <dd>Specifies whether this column can be used for SearchIQ queries.</a>.</dd>
   </dlentry>
-
+-->
   <dlentry id="source">
     <dt>source</dt>
     <dd>Name of source table or view of the join</dd>

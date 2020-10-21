@@ -24,7 +24,6 @@ Additionally, administrators are often involved in the following workflows:
 - [Using worksheets]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) to simplify search
 - [Using views]({{ site.baseurl }}/complex-search/about-query-on-query.html) for 'stacked' search;
    note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the `IN` keyword (See https://docs.thoughtspot.com/6.0/complex-search/in-keyword-searches.html).
-- [Enabling SearchIQ]({{ site.baseurl }}/complex-search/about-query-on-query.html)<span class="label label-beta">Beta</span>, ThoughtSpot's natural language search.
 - [Managing scheduled jobs]({{ site.baseurl }}/admin/manage-jobs/about-scheduled-pinboards.html)
 - [Monitoring system health]({{ site.baseurl }}/admin/system-monitor/introduction.html)
 - [Troubleshooting]({{ site.baseurl }}/admin/troubleshooting/troubleshooting-intro.html)

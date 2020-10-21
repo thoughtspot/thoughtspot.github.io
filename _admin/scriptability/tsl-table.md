@@ -241,10 +241,11 @@ You may not see each of these parameters in your own TSL files, depending on whe
     <dd>The schema that the table is a part of.</dd>
   </dlentry>
 
-  <dlentry id="search_iq_preferred">
+<!--  <dlentry id="search_iq_preferred">
     <dt>search_iq_preferred</dt>
     <dd>Specifies whether this column can be used for SearchIQ queries.</a>.</dd>
   </dlentry>
+  -->
 
   <dlentry id="spotiq_preference">
     <dt>spotiq_preference</dt>
@@ -277,7 +278,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
     Possible values: <code>COLUMN</code>, <code>BAR</code>, <code>LINE</code>, <code>PIE</code>, <code>SCATTER</code>, <code>BUBBLE</code>, <code>STACKED_COLUMN</code>, <code>AREA</code>, <code>PARETO</code>, <code>COLUMN</code>, <code>GEO_AREA</code>, <code>GEO_BUBBLE</code>, <code>GEO_HEATMAP</code>, <code>GEO_EARTH_BAR</code>, <code>GEO_EARTH_AREA</code>, <code>GEO_EARTH_GRAPH</code>, <code>GEO_EARTH_BUBBLE</code>, <code>GEO_EARTH_HEATMAP</code>, <code>WATERFALL</code>, <code>TREEMAP</code>, <code>HEATMAP</code>, <code>STACKED_AREA</code>, <code>LINE_COLUMN</code>, <code>FUNNEL</code>, <code>LINE_STACKED_COLUMN</code>, <code>PIVOT_TABLE</code>, <code>SANKEY</code>, <code>GRID_TABLE</code>, <code>SPIDER_WEB</code>, <code>WHISKER_SCATTER</code>, <code>STACKED_BAR</code>, or <code>CANDLESTICK</code>.
     </dd>
   </dlentry>
-  
+
 </dl>
 
 {: id="limitations"}

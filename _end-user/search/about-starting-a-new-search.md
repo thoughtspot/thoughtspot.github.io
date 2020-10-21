@@ -76,4 +76,3 @@ An answer is the result of a single search. You can save an answer you want to w
 -   [Search suggestions]({{ site.baseurl }}/end-user/search/recent-searches.html)  
 -   [Search results and column types]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html)  
 -   [Share an answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html)
--   [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html) <span class="label label-beta">Beta</span>
