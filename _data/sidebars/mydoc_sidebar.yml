@@ -266,6 +266,9 @@ entries:
       - title: Style customization
         url: /admin/ts-cloud/style-customization.html
         output: web
+      - title: Help customization
+        url: /admin/ts-cloud/customize-help.html
+        output: web
       - title: Performance tracking Pinboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
