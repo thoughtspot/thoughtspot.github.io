@@ -1,7 +1,7 @@
 ---
-title: [tsload service API reference]
-summary: "The tsload service APIs enable you to load data into ThoughtSpot."
-last_updated: 11/18/2019
+title: [tsload connector reference]
+summary: "The tsload connector APIs enable you to load data into ThoughtSpot."
+last_updated: 10/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -31,7 +31,6 @@ Use this API to authenticate and log in a user. **Login** establishes a session 
 </table>
 
 ### Request
-
 ```
 POST /ts_dataservice/v1/public/session HTTP/1.1  
 Host: client.mydomain.com Accept: application/json Content-type: application/json
@@ -214,7 +213,7 @@ Format specifiers for parsing the input data.
 </table>
 
 #### Example use of parameters
-<!-- {% capture code %}-->
+
 ```
 {
       target : {
@@ -254,8 +253,6 @@ Format specifiers for parsing the input data.
     }
   }
 ```
-<!-- {% endcapture %} -->
-<!-- {% include code.html code=code lang="javascript" %} -->
 
 ### Request
 ```
@@ -439,7 +436,20 @@ User does not have required privileges. Please contact your administrator.
 Status: 500 INTERNAL SERVER ERROR
 error code = INTERNAL, message = Couldn't resolve the authentication service.
 ```
+### Data load status check logic
 
+You can run the following code to validate that the data load is complete:
+```
+while (true) {
+if (status != OK) {
+   // print status.message() as the error.
+} else if (internal_stage == DONE) {
+   // Data load is successful
+} else {
+   // poll again for data load status
+}
+}
+```
 ## Bad records
 
 Use this api to view the bad records file data.
@@ -471,4 +481,4 @@ error code = INTERNAL, message = Couldn't resolve the authentication service.
 
 ## Related information
 
-[Use the tsload service to load data]({{ site.baseurl }}/admin/loading/load-with-service.html)
+[Use the tsload connector to load data]({{ site.baseurl }}/admin/loading/load-with-tsload.html)
