@@ -31,7 +31,7 @@ Answer V2 is in Beta. The Answer V2 feature set contains the following features:
 <li>Table configuration: conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells</li>
 </ul>
 
-The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to turn Answer V2 off. 
+The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to turn Answer V2 off.
 
 <ul>
 <li>Ask an Expert</li>
@@ -40,3 +40,8 @@ The following features are not available in the Beta version of Answer V2. If yo
 <li>Pivot tables</li>
 <li>Sankey charts</li>
 </ul>
+
+<h3>Customize ThoughtSpot Help</h3>
+You can now tailor the ThoughtSpot Help menu to your organization by customizing it from the Admin Console. When you configure these Help settings, you set system-wide defaults for all your users.
+
+Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Customize ThoughtSpot Help</a>.
