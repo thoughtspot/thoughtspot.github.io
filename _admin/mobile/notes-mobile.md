@@ -5,15 +5,22 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot mobile 1.5.2 is now available. These release notes include information about new features,
+ThoughtSpot mobile 2.0 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-{: id="1-5-2-fixed"}
-## 1.5.2 Fixed Issue
+{: id="2-0-new"}
+## 2.0 New Features and Functionality
+Version 2.0 supports more features that were previously available only through the ThoughtSpot Web app, including:
+- Deep linking
+- Drill down
 
-The following issue is fixed in the 1.5.2 release:
+### Deep linking
 
-- Mobile users don't appear in a ThoughtSpot cluster.
+You can now share a link to objects in ThoughtSpot and a user can open the link in the mobile app or the web. If a user has the mobile app, the link will open directly in the mobile app. If they don't have the mobile app, the are presented with the option to download it or to view it on the web. For details, see [ThoughtSpot Mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
+
+### Drill down
+
+You can now select data point(s) and drill down for more detailed information. You can also trace the drill path back and reset it to the initial state. For details, see [ThoughtSpot Mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
 
 {: id="1-5-new"}
 ## 1.5 New Features and Functionality
@@ -21,7 +28,7 @@ The following issue is fixed in the 1.5.2 release:
 - Grouping of axes, and axis renaming.
 - Improved performance.
 
-{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2, all mobile users **MUST** update their ThoughtSpot app to 1.5 or later. If they do not, they will not be able to sign in." %}
+{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
 
 
 {: id="1-4-new"}
