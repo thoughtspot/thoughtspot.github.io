@@ -1,7 +1,7 @@
 ---
-title: [Overview board]
-summary: The Overview pinboard provides useful information about your cluster.
-last_updated: 7/28/2020
+title: [System Information and Usage]
+summary: The System Information and Usage Pinboard provides useful information about your cluster.
+last_updated: 10/22/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

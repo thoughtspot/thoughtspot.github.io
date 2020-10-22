@@ -554,14 +554,14 @@ entries:
       - title: Manage and create snapshots
         url: /admin/admin-portal/snapshot-manage.html
         output: web,admBk
-      - title: System Overview Pinboard
-        url: /admin/admin-portal/system-overview-pinboard.html
-        output: web,admBk
       - title: System Cluster Pinboard
         url: /admin/admin-portal/system-cluster-pinboard.html
         output: web,admBk
       - title: System Alerts Pinboard
         url: /admin/admin-portal/system-alerts-pinboard.html
+        output: web,admBk
+      - title: User Adoption Pinboard
+        url: /admin/admin-portal/user-adoption-pinboard.html
         output: web,admBk
       - title: Available cluster updates
         url: /admin/admin-portal/available-update.html
@@ -1019,7 +1019,7 @@ entries:
       - title: Introduction to monitoring
         url: /admin/system-monitor/introduction.html
         output: web,admBk
-      - title: Overview board
+      - title: System Information and Usage Pinboard
         url: /admin/system-monitor/overview.html
         output: web,admBk
       - title: Data board
@@ -1039,6 +1039,9 @@ entries:
         output: web,admBk
       - title: Falcon monitoring Pinboards
         url: /admin/system-monitor/falcon-monitor.html
+        output: web,admBk
+      - title: Performance Tracking Pinboard
+        url: /admin/system-monitor/performance-tracking.html
         output: web,admBk
     - levelTwoTitle: Troubleshooting
       output: web,admBk

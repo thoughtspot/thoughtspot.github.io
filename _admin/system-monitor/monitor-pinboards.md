@@ -17,15 +17,13 @@ statistics.
  They are based on worksheets, which administrators can view, but not modify.
  However, you can create new monitoring pinboards from the worksheets.
 
-## List system pinboards
+## View system pinboards
 
-To list these system pinboards:
+To view these system pinboards:
 
 1. Go to the **Pinboards** tab.
 2. Choose **All**.
-3. Enter `TS: ` in the search field.
-
-   ![]({{ site.baseurl }}/images/su-pinboards.png)
+3. Search for the Pinboard you would like to view. You can view the **System Cluster Pinboard**, the **System Alert Pinboard**, and the **User Adoption Pinboard** from the Admin Console.
 
 ## Summary of system pinboards
 
@@ -73,6 +71,18 @@ To list these system pinboards:
       <td><code class="highlighter-rouge">TS Stats: Table Status</code></td>
       <td>
          Replicates the <strong>Data</strong> board.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">User Adoption</code></td>
+      <td>
+         Contains information on how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Refer to <a href="{{ site.baseurl }}/admin/admin-portal/user-adoption-pinboard.html">User Adoption Pinboard</a>.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Performance Tracking</code></td>
+      <td>
+         Contains information on how your ThoughtSpot cluster is performing. Refer to <a href="{{ site.baseurl }}/admin/system-monitor/performance-tracking.html">Performance Tracking Pinboard</a>.
       </td>
    </tr>
   </table>

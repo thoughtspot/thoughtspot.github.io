@@ -6,8 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-This reference identifies the messages that can appear in the **System Health >
-Overview > Critical Alerts** and in the  **Alerts** dashboard.
+This reference identifies the messages that can appear in the **TS Stats: System Information and Usage > Critical Alerts** panel and in the  **Alerts** dashboard.
 
 ## Informational alerts
 
