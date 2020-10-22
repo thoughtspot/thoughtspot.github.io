@@ -1,24 +1,24 @@
 To map the external files to ThoughtSpot's internal database, follow these steps:
 
 1. Open the **Advanced setup** interface by clicking the toggle to open.
-
+<!--
    <details>
      <summary>See how to  open <strong>Advanced setup</strong></summary>
      <p>
      <img src="../../images/dataflow-advanced-setup.png" alt="Open Advanced setup" /></p>
-    </details>
+    </details> -->
 
 2. Choose the **Map tables and columns** tab.
 
 3. Notice that the external database and table already appear, under **External data source**.
 
 4. Specify the following information for internal ThoughtSpot storage:
-
+<!--
    <details>
      <summary>See the elements of the table-naming screen</summary>
      <p>
        <img src="../../images/dataflow-map-tables-file-systems.png" alt="Map tables" /></p>
-   </details>
+   </details> -->
 
    <dl id="ts-target-tb">
      <dlentry id="ts-target-file">

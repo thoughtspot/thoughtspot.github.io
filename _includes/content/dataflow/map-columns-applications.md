@@ -1,11 +1,11 @@
 To map the columns of the external file columns to columns in ThoughtSpot's internal tables, follow these steps:
 
 1. Open the **Advanced setup** interface by clicking the toggle to open.
-   <details>
+   <!--<details>
      <summary>See how to  open <strong>Advanced setup</strong></summary>
      <p>
       <img src="../../images/dataflow-advanced-setup.png" alt="Open Advanced setup" /></p>
-    </details>
+    </details>-->
 
 2. Choose the **Map tables and columns** tab.
 
@@ -13,12 +13,12 @@ To map the columns of the external file columns to columns in ThoughtSpot's inte
 
 4. Specify the following information for columns:
 
-   <details>
+   <!--<details>
      <summary>See the elements of the column-naming screen</summary>
       <p>
       <img src="../../images/dataflow-map-columns-applications.png" alt="Map columns" /></p>
    </details>
-
+-->
    1. Select (or deselect) **columns** for syncing into ThoughtSpot.<br/>By default, all columns are selected.
    2. **Search** for columns by name; this is very useful for very wide tables.
    3. **Rename** columns in the ThoughtSpot table, for easier search.<br/>To make this change, click the pencil (edit) icon next to the name of the column.
