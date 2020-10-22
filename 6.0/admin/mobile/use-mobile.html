@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/admin/mobile/use-mobile.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-14T12:10:26-07:00" />
+<meta property="article:published_time" content="2020-10-22T10:39:04-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“ThoughtSpot mobile overview”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"datePublished":"2020-10-14T12:10:26-07:00","headline":"[“ThoughtSpot mobile overview”]","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/mobile/use-mobile.html"},"url":"https://docs.thoughtspot.com/6.0/admin/mobile/use-mobile.html","description":"The ThoughtSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.","@type":"BlogPosting","dateModified":"2020-10-14T12:10:26-07:00","@context":"https://schema.org"}</script>
+{"url":"https://docs.thoughtspot.com/6.0/admin/mobile/use-mobile.html","headline":"[“ThoughtSpot mobile overview”]","dateModified":"2020-10-22T10:39:04-07:00","datePublished":"2020-10-22T10:39:04-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/admin/mobile/use-mobile.html"},"description":"The ThoughtSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3729,7 +3729,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    1 minute
+    3 minutes
   
 </span>
  -->
@@ -3738,15 +3738,23 @@ $('#toc').on('click', 'a', function() {
 
   <p>The ThoughtSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.</p>
 
-<p>Version 1.5.2 is now available.</p>
+<p>Version 2.0 supports more features that were previously available only through the ThoughtSpot Web app, including:</p>
+
+<ul>
+  <li><a href="#deep-linking">Deep linking</a></li>
+  <li><a href="#drill-down">Drill down</a></li>
+</ul>
 
 <p>For details, see <a href="/6.0/admin/mobile/notes-mobile.html">Mobile release notes</a>.</p>
 
 <h2 id="requirements">Requirements</h2>
 
 <ul>
-  <li>User account on a ThoughtSpot cluster running release 5.1 or later</li>
-  <li>Apple iOS version 9.0 or later (iPad and iPhone only)</li>
+  <li>User account on a ThoughtSpot cluster</li>
+  <li>Minimum cluster version: release 5.1</li>
+  <li>Required cluster version for deep linking: release 6.3 or later</li>
+  <li>Required cluster version for drill down: release 6.2 or later</li>
+  <li>Apple iOS version 9.0 or later (iPad and iPhone)</li>
   <li>Android 6.0 or later</li>
 </ul>
 
@@ -3756,10 +3764,82 @@ $('#toc').on('click', 'a', function() {
   <tbody>
     <tr>
       <td><img src="/6.0/images/v1_mobile.gif" alt="" title="Home screen" /></td>
-      <td><br /><br /><strong>Home Pinboard</strong><br />Add charts and tables to a customizable Home Pinboard.<br /><br /><strong>Quick Share</strong><br />Share KPIs and charts using iMessage, email, and Slack.<br /><br /><strong>Offline Exploration</strong><br />Access your Home Pinboard even when you are offline.<br /><br /><strong>Responsive &amp; Interactive Experience</strong><br />Tap and swipe to see chart details. Filter to pinpoint relevant insights.<br /><br /><strong>Favorites</strong><br />Tag your favorite Pinboards and Answers for quick access.</td>
+      <td><br /><br /><strong>Home Pinboard</strong><br />Add charts and tables to a customizable Home Pinboard.<br /><br /><strong>Quick Share</strong><br />Share KPIs and charts using iMessage, email, and Slack (supports <a href="#deep-linking">deep linking</a>).<br /><br /><strong>Offline Exploration</strong><br />Access your Home Pinboard even when you are offline.<br /><br /><strong>Responsive &amp; Interactive Experience</strong><br />Tap and swipe to see chart details. Filter to pinpoint relevant insights.<br /><br /><strong>Favorites</strong><br />Tag your favorite Pinboards and Answers for quick access.</td>
     </tr>
   </tbody>
 </table>
+
+<h2 id="deep-linking">Sharing with deep linking</h2>
+
+<p>Beginning with version 2.0, you can share a link to objects in ThoughtSpot using instant messaging or email and the recipient can open the link in the mobile app or the web. If a user has the mobile app, the link will open directly in the mobile app. If they don’t have the mobile app, they are presented with the option to download it or to view it on the web.</p>
+
+<h3 id="shareable-objects">Shareable objects</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td><b>Object<b></b></b></td>
+      <td><b>Share/open on Web<b></b></b></td>
+      <td><b>Share/open on Mobile<b></b></b></td>
+    </tr>
+    <tr>
+      <td>Answer</td>
+      <td>Yes/Yes</td>
+      <td>Yes/Yes</td>
+    </tr>
+    <tr>
+      <td>Pinboard</td>
+      <td>Yes/Yes</td>
+      <td>Yes/Yes</td>
+    </tr>
+    <tr>
+      <td>Pinboard visualization</td>
+      <td>Yes/Yes</td>
+      <td>Yes/Yes</td>
+    </tr>
+    <tr>
+      <td>Table</td>
+      <td>Yes/Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Worksheet</td>
+      <td>Yes/Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>SpotIQ Insights</td>
+      <td>Yes/Yes</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="drill-down">Drill down</h2>
+
+<p>Beginning with version 2.0, you can seamlessly and intuitively select data point(s) and drill down for more detailed information. You can also trace the drill path back and reset to the initial state.</p>
+
+<p>To drill down:</p>
+<ol>
+  <li>Tap to select a data point.<br />
+A description of the point you selected appears at the top of the screen, and action buttons appear at the bottom of the screen.</li>
+  <li>Tap the <kbd>Drill</kbd>
+ button.<br />
+A list of columns appears.</li>
+  <li>Select a column to drill down on.</li>
+  <li>To drill down further, tap an item on the chart, select a column to drill down on, and then tap <kbd>Drill</kbd>
+.</li>
+</ol>
+
+<p>To go back to the previous chart:</p>
+<ul>
+  <li>Tap the Revert icon <img src="/6.0/images/revert.png" alt="revert icon" class="inline" />.</li>
+</ul>
+
+<p>To go back to the top level where you started your drill down:</p>
+<ul>
+  <li>Tap the Reset icon <img src="/6.0/images/reset.png" alt="revert icon" class="inline" />.</li>
+</ul>
 
 <h2 id="getting-started">Getting Started</h2>
 
@@ -3803,9 +3883,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Oct 14, 2020 <br />
+        Generated: Oct 22, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 11/15/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 10/22/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
