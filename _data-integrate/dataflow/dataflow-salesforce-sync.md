@@ -11,10 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to a Salesforce datab
 
 4. Specify the sync properties for Salesforce:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary><p><img src="../../images/dataflow-set-sync-properties-salesforce.png" alt="Enter sync details" /></p>
-   </details>
-
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-sync-enclosing-character)<br/>Specify if the text columns in the source data must be enclosed in quotes.
    * [Escape character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-sync-escape-character)<br/>Specify the escape character if using a text qualifier in the source data.

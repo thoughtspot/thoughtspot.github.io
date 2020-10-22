@@ -11,10 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an Amazon S3 file 
 
 4. Specify the sync properties for files:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
-
    * [File name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-file-name)<br/>Specify the name of the file.
    * [Enable archive on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-enable-archive-on-success)<br/>Specify if must archive file after operation succeeds.
    * [Delete file on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-delete-file-on-success)<br/>Specify if must delete file after operation succeeds.
@@ -31,7 +27,7 @@ After using ThoughtSpot DataFlow to establish a connection to an Amazon S3 file 
    * [Time delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-time-delimiter)<br/>Specifies the character used as separate the time components.
    * [Skip trailer rows]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-skip-trailer-rows)<br/>Skip the number of trailer rows specified while loading the data.
    * [TS load options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-ts-load-options)<br/>Specify the parameters passed with the <code>tsload</code> command, in addition to the commands already included by the application.
-   * [Boolean representation]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-boolean-representation)<br/>Specifies the representation of data in the boolean field. 
+   * [Boolean representation]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-sync-boolean-representation)<br/>Specifies the representation of data in the boolean field.
 
    See [Sync properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#sync-properties) for details, defaults, and examples.
 

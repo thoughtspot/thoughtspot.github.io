@@ -15,7 +15,7 @@ Follow these steps:
 
    Depending on your choice of authentication mechanism, you may use different properties.
 
-   <details>
+   <!--<details>
      <summary>See the <strong>Create connection</strong> screen for Cassandra, with <em>no authentication</em> option</summary>
      <p>
       <img src="../../images/dataflow-cassandra-no-auth-create.png" alt="add a Cassandra connection without authentication" /></p>
@@ -37,7 +37,7 @@ Follow these steps:
      <summary>See the <strong>Create connection</strong> screen for Cassandra, with <em>Kerberos authentication</em> option</summary>
      <p>
       <img src="../../images/dataflow-cassandra-kerberos-create.png" alt="add a Cassandra connection with Kerberos authentication" /></p>
-   </details>
+   </details>  -->
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html#dataflow-cassandra-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html#dataflow-cassandra-conn-connection-type)<br/>Choose the Cassandra connection type.

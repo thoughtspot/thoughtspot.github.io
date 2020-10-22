@@ -11,11 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an Amazon Redshift
 
 4. Specify the sync properties for Amazon Redshift:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
-   </details>
-
    <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-amazon-redshift-.png "Enter connection details")-->
 
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-redshift-reference.html#dataflow-amazon-redshift-sync-column-delimiter)<br/>Specify the column delimiter character.

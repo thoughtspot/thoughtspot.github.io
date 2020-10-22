@@ -11,11 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an Azure Synapse d
 
 4. Specify the sync properties for Azure Synapse:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
-   </details>
-
    <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-azure-synapse-sync.png "Enter sync details")-->
 
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-data-extraction-mode)<br/>Specify the extraction type.

@@ -15,7 +15,7 @@ Follow these steps:
 
    Depending on your choice of authentication mechanism, you may use different properties.
 
-   <details>
+  <!-- <details>
      <summary>See the <strong>Create connection</strong> screen for local files</summary>
      <p>
       <img src="../../images/dataflow-file-local-create.png" alt="Add a connection to a local file" /></p>
@@ -37,7 +37,7 @@ Follow these steps:
      <summary>See the <strong>Create connection</strong> screen for remote files, through <em>SFTP</em> connection protocol, with <em>password</em> authentication</summary>
      <p>
       <img src="../../images/dataflow-file-remote-sftp-passwrod-create.png" alt="Add an SFTP connection to a remote file, with password authentication" /></p>
-   </details>
+   </details>  -->
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-conn-connection-type)<br/>Choose the Files connection type.
