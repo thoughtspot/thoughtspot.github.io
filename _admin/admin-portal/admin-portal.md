@@ -50,12 +50,13 @@ Use network attached storage to support backup/restore and data loading.
 Create and manage snapshots, which you can use to restore the cluster to a specific point in time.
 
 **Monitor system**
-* [View System Overview Pinboard]({{ site.baseurl }}/admin/admin-portal/system-overview-pinboard.html)<br>
 View and explore your users' activity on the system overview Pinboard.
 * [View System Cluster Pinboard]({{ site.baseurl }}/admin/admin-portal/system-cluster-pinboard.html)<br>
 View and explore cluster activity on the system cluster Pinboard.
 * [View System Alerts Pinboard]({{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html)<br>
 View and explore system alerts, configuration events, and notification events on the system alerts Pinboard.
+* [View User Adoption Pinboard]({{ site.baseurl }}/admin/admin-portal/user-adoption-pinboard.html)<br>
+View and explore visualizations about how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time on the User Adoption Pinboard.
 
 **Upgrade your cluster**
 * [Monitor available cluster updates]({{ site.baseurl }}/admin/admin-portal/available-update.html)<br>
