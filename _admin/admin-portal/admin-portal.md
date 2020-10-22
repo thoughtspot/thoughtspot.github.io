@@ -55,6 +55,8 @@ View and explore your users' activity on the system overview Pinboard.
 View and explore cluster activity on the system cluster Pinboard.
 * [View System Alerts Pinboard]({{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html)<br>
 View and explore system alerts, configuration events, and notification events on the system alerts Pinboard.
+* [View User Adoption Pinboard]({{ site.baseurl }}/admin/admin-portal/user-adoption-pinboard.html)<br>
+View and explore visualizations about how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time on the User Adoption Pinboard.
 
 **Upgrade your cluster**
 * [Monitor available cluster updates]({{ site.baseurl }}/admin/admin-portal/available-update.html)<br>
