@@ -102,7 +102,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
   </dd></dlentry>
 
   <dlentry>
-  <dt>Others</dt><dd></dd></dlentry>
+  <dt>Others</dt><dd>other topics</dd></dlentry>
 </dl>    
 
 {: id="beta-program"}
