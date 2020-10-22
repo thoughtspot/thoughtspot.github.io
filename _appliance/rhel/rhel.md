@@ -5,9 +5,7 @@ last_updated: 7/22/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Starting with release 6.0.4, you have the flexibility to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally.
-
-On release 6.0.5, you can run ThoughtSpot on an RHEL 7.7 or 7.8 image.
+You have the flexibility to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally.
 
 ThoughtSpot certifies RHEL 7.7 and 7.8 on the following platforms:
 
