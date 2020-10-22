@@ -2224,6 +2224,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: Azure Data Lake
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-azure-data-lake.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-azure-data-lake-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-azure-data-lake-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-azure-data-lake-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: Azure Databricks
         output: web,dataflowGD
         levelThreeItems:
