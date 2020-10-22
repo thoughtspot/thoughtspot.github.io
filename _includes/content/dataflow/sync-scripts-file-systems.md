@@ -1,29 +1,14 @@
 To use scripting before or after the sync, follow these steps:
 
 1. Open the **Advanced setup** interface by clicking the toggle to open.
-<!--
-   <details>
-     <summary>See how to set common <strong>Sync properties</strong></summary>
-     <p><img src="../../images/dataflow-set-sync-properties-file-systems.png" alt="Set sync properties" /></p>
-   </details> -->
 
 2. Choose the **Sync properties** tab.
 
 3. Scroll down to **Advanced configuration**, and click the toggle to expand.
-<!--
-   <details>
-     <summary>See how to expand the interface to see <strong>Advanced scripting options</strong></summary>
-     <p><img src="../../images/dataflow-set-sync-scripts-file-systems-open.png" alt="Expand scripting options" /></p>
-   </details> -->
 
 4. Specify the following information:
-<!--
-     <details>
-       <summary>See how to add sync scripts</summary>
-       <p><img src="../../images/dataflow-set-sync-properties-scripts-file-system.png" alt="Set sync scripts" /></p>
-     </details> -->
 
-    <dl id="set-sync-scripts">
+   <dl id="set-sync-scripts">
       <dlentry id="set-sync-file-trigger">
          <dt>Wait for file</dt>
          <dd>Specify the fully-qualified name of the file (directory path and file name) that must be present before sync can start.</dd></dlentry>
