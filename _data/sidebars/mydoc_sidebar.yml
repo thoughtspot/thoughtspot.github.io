@@ -2224,7 +2224,7 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
           output: web,dataflowGd
-      - levelThreeTitle: Azure Data Lake
+      - levelThreeTitle: Azure Data Lake Gen2
         output: web,dataflowGD
         levelThreeItems:
         - title: Overview
