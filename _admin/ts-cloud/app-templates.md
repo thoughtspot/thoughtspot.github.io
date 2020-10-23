@@ -29,11 +29,11 @@ When you are ready to move to a production environment, you can migrate these Pi
 ## Create and export SpotApps
 You can create your own SpotApps in two ways:
 
-- You may have a specific Pinboard or other object that you would like to migrate to another cluster, but that cluster may not contain the Worksheets, Tables, or Views that the Pinboard's data comes from. When you export any Pinboard, Answer, Worksheet, or View, you have the option to export its associated data sources as well. This creates a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. It also contains the `joins.tsl` file, which defines the joins each object uses.
+- You may have a specific Pinboard or other object that you would like to migrate to another cluster, but that cluster may not contain the Worksheets, Tables, or Views that the Pinboard's data comes from. When you export any Pinboard, Answer, Worksheet, or View, you have the option to export its associated data sources as well. This creates a SpotApp that you can migrate to another cluster without worrying about missing dependencies. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-pinboard-select-export.png "Choose what to export")
 
-- Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all, or just some of them, on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file. The SpotApp .zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. It also contains the `joins.tsl` file, which defines the joins each object uses.
+- Similarly, you might want to migrate all the Answers on one cluster to another. You can select them all on the **Answers** list page, and export them as a SpotApp in .zip format. You can also choose to export their associated data sources in the same file.
 
 See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
 
