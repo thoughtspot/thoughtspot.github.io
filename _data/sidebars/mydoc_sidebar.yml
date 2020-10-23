@@ -2239,20 +2239,20 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-azure-data-lake-reference.html
           output: web,dataflowGd
-      - levelThreeTitle: Azure Databricks
+      - levelThreeTitle: Databricks Delta Lake
         output: web,dataflowGD
         levelThreeItems:
         - title: Overview
-          url: /data-integrate/dataflow/dataflow-azure-databricks.html
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake.html
           output: web,dataflowGd
         - title: Connect
-          url: /data-integrate/dataflow/dataflow-azure-databricks-add.html
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-add.html
           output: web,dataflowGd
         - title: Sync
-          url: /data-integrate/dataflow/dataflow-azure-databricks-sync.html
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-sync.html
           output: web,dataflowGd
         - title: Reference
-          url: /data-integrate/dataflow/dataflow-azure-databricks-reference.html
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html
           output: web,dataflowGd
       - levelThreeTitle: Flat Files
         output: web,dataflowGD
