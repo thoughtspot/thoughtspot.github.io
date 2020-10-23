@@ -27,11 +27,11 @@ Answer V2 is in Beta. The Answer V2 feature set contains the following features:
 
 <ul>
 <li>Improved Formula Editor</li>
-<li>Search Assist</li>
+<li>Search Assist: Analyst authored queries</li>
 <li>Table configuration: conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells</li>
 </ul>
 
-The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to turn Answer V2 off.
+The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to turn Answer V2 off for your company. You can turn it on or off individually from the **Data** panel on the **Search** page.
 
 <ul>
 <li>Ask an Expert</li>

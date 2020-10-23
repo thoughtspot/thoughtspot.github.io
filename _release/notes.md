@@ -15,7 +15,7 @@ These release notes include information about new and enhanced features.
 
 {% include content/new-features-cloud-release.md %}
 
-{: id="2020-august"}
+{: id="2020-september"}
 ## ThoughtSpot Cloud September Release (tscloud.5)
 
 <h3>Scriptability</h3>
