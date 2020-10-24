@@ -2,19 +2,9 @@ To set the sync properties, follow these steps:
 
 1. Open the **Advanced setup** interface by clicking the toggle to open.
 
-   <details>
-    <summary>See how to open <strong>Advanced setup</strong></summary>
-    <p><img src="../../images/dataflow-advanced-setup.png" alt="Open Advanced setup" /></p>
-   </details>
-
 2. Choose the **Sync properties** tab.
 
 3. Under **Set sync properties**, specify the following information:
-
-   <details>
-     <summary>See how to set common <strong>Sync properties</strong></summary>
-     <p><img src="../../images/dataflow-set-sync-properties.png" alt="Set sync properties" /></p>
-   </details>
 
    <dl id="set-sync-properties">
      <dlentry id="set-sync-properties-condition">
