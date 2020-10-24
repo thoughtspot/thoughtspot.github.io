@@ -18,6 +18,8 @@ Measures are numeric values you can do math on, with meaningful results. You wil
 
 ## Query details
 
+{% include note.html content="The query visualizer is not available in the beta version of Answer V2. To use the query visualizer, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 After, or while completing a search, you can see how ThoughtSpot displayed the
 answer. Click the **Query details** button on the right-hand side of the screen
 to open the **Query details** panel.

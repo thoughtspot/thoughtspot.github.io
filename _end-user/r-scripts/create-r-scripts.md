@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="R scripts are not available in the beta version of Answer V2. To use R scripts, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 ## Overview
 
 {% include note.html content="Custom R is disabled by default. To turn on custom R scripting, contact your site administrator." %}

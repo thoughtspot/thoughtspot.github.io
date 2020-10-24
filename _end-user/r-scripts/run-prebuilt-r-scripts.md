@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="R scripts are not available in the beta version of Answer V2. To use R scripts, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 If you have R privileges on your ThoughtSpot instance, you can run R analyses on
 search results, and save and share the resulting visualization with others. The
 users you share visualizations with do not need R privileges.

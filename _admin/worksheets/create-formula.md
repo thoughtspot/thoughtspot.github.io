@@ -31,9 +31,9 @@ You can create a formula in a worksheet by using the Formula Builder. When you d
 
    Depending on your formula, you may be able to change:
 
-    -   Data type
-    -   ATTRIBUTE or MEASURE
-    -   Aggregation type
+    -   **Data type**: Determines the type of data that the formula generates. For example, use `date` for an `add_days` formula.
+    -   **Measure or attribute**: Determines if the output of the formula is a measure or an attribute. For example, choose `attribute` for a formula that generates age groups, and choose `measure` for a formula that generates profit.
+    -   **Aggregation**: Determines the default aggregation of the formula output. For example, choose `min` to see minimum profit.
 
     ![Advanced settings in the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-settings.png "Advanced settings in the Formula Builder")
 

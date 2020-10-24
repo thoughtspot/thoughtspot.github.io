@@ -7,6 +7,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. To use Ask an Expert, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use **Ask an Expert** to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
 
 ## How do I answer a question from Ask an Expert?

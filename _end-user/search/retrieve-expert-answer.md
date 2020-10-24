@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. To use Ask an Expert, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 When you use **Ask an expert** to get help, you can view the answer after the expert responds.
 
 To view the answer:

@@ -7,6 +7,9 @@ summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="Pivot tables are not available in the beta version of Answer V2. To use pivot tables, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 Creating a pivot table enables exploring alternate visualization of data in a
 wide table. It is useful especially when improve data display when some data is
 best viewed horizontally, while others, vertically. Pivot tables are a chart

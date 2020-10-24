@@ -7,6 +7,9 @@ summary: "The Sankey chart is a type of chart that contains both columns and a s
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="Sankey charts are not available in the beta version of Answer V2. To use Sankey charts, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 Sankey diagrams illustrate a flow through a process or system. Transactional
 data is optimal for this type of diagram.  For example, financial transactions
 that take place as money moves through accounts or as a product is process. Many

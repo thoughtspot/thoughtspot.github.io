@@ -7,6 +7,8 @@ toc: true
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. To use Ask an Expert, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+
 Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 
 ## Navigate to the Expert Requests interface ##
