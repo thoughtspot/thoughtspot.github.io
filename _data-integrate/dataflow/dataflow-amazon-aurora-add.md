@@ -13,12 +13,6 @@ Follow these steps:
 
 4. After you select the Amazon Aurora **Connection type**, the rest of the connection properties appear.
 
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Amazon Aurora</summary>
-     <p>
-      <img src="../../images/dataflow-amazon-aurora-create.png" alt="Create Amazon Aurora connection" /></p>
-   </details>
-
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#dataflow-amazon-aurora-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#dataflow-amazon-aurora-conn-connection-type)<br/>Choose the Amazon Aurora connection type.
    * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-aurora-reference.html#dataflow-amazon-aurora-conn-host)<br/>Specify the hostname or IP address of the Aurora system.

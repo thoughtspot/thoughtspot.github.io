@@ -1833,7 +1833,7 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-hana-reference.html
         output: web,embraceGd
-# DataFlow only in on-prem form factor
+# DataFlow only in Software form factor
   - sectiontitle: DataFlow
     output: web,dataflowGD
     sectionitems:
@@ -1917,6 +1917,21 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-cassandra-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Azure Databricks
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html
           output: web,dataflowGd
       - levelThreeTitle: Google BigQuery
         output: web,dataflowGD
@@ -2224,22 +2239,7 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
           output: web,dataflowGd
-      - levelThreeTitle: Azure Databricks
-        output: web,dataflowGD
-        levelThreeItems:
-        - title: Overview
-          url: /data-integrate/dataflow/dataflow-azure-databricks.html
-          output: web,dataflowGd
-        - title: Connect
-          url: /data-integrate/dataflow/dataflow-azure-databricks-add.html
-          output: web,dataflowGd
-        - title: Sync
-          url: /data-integrate/dataflow/dataflow-azure-databricks-sync.html
-          output: web,dataflowGd
-        - title: Reference
-          url: /data-integrate/dataflow/dataflow-azure-databricks-reference.html
-          output: web,dataflowGd
-      - levelThreeTitle: Flat Files
+      - levelThreeTitle: Files
         output: web,dataflowGD
         levelThreeItems:
         - title: Overview
