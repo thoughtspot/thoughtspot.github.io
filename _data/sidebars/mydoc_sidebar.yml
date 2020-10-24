@@ -1918,7 +1918,7 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-cassandra-reference.html
           output: web,dataflowGd
-      - levelThreeTitle: Azure Databricks
+      - levelThreeTitle: Databricks Delta Lake
         output: web,dataflowGD
         levelThreeItems:
         - title: Overview
@@ -1932,6 +1932,21 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Denodo
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-denodo.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-denodo-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-denodo-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-denodo-reference.html
           output: web,dataflowGd
       - levelThreeTitle: Google BigQuery
         output: web,dataflowGD
