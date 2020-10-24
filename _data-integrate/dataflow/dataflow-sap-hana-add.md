@@ -9,16 +9,9 @@ You can add a connection to an SAP HANA database using ThoughtSpot DataFlow.
 
 Follow these steps:
 
-
 {% include content/dataflow/add-database-connection.md %}
 
 4. After you select the SAP HANA **Connection type**, the rest of the connection properties appear.
-
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for SAP HANA</summary>
-        <p>
-        <img src="../../images/dataflow-sap-hana-create.png" alt="Create SAP HANA connection" /></p>
-    </details>
 
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-hana-reference.html#dataflow-sap-hana-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-hana-reference.html#dataflow-sap-hana-conn-connection-type)<br/>Choose the SAP HANA connection type.

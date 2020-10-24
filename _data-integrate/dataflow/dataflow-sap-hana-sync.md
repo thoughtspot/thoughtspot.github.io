@@ -11,10 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an SAP HANA databa
 
 4. Specify the sync properties for SAP HANA:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary><p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
-   </details>
-
    <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-sap-hana-sync.png "Enter connection details")-->
 
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-hana-reference.html#dataflow-sap-hana-sync-column-delimiter)<br/>Specify the delimeter to use as the  column delimeter for the extracted data<br/>Mandatory field.

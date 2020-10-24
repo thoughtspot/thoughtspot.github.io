@@ -14,13 +14,7 @@ Follow these steps:
 
 4. After you select the MariaDB **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for MariaDB</summary>
-        <p>
-        <img src="../../images/dataflow-mariadb-create.png" alt="Create MariaDB connection" /></p>
-    </details>
-
-    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-connection-name)<br/>Name your connection.
+  * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-connection-type)<br/>Choose the MariaDB connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-host)<br/>Specify the hostname or the IP address of the MariaDB system
     * [Port]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mariadb-reference.html#dataflow-mariadb-conn-port)<br/>Specify the port associated to the MariaDB system

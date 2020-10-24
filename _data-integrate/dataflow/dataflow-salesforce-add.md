@@ -13,12 +13,6 @@ To add a new connection to Salesforce, follow these steps:
 
 4. After you select the Snowflake **Connection type**, the rest of the connection properties appear.
 
-   <details>
-    <summary>See the <strong>Create connection</strong> screen for Salesforce</summary>
-    <p>
-     <img src="../../images/dataflow-salesforce-create.png" alt="Create Salesforce connection" /></p>
-   </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-connection-type)<br/>Choose the Salesforce connection type.
     * [User]({{ site.baseurl }}/data-integrate/dataflow/dataflow-salesforce-reference.html#dataflow-salesforce-conn-user)<br/>Specify the user id. This user must have data access privileges.

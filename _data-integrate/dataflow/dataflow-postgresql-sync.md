@@ -11,11 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to a PostgreSQL datab
 
 4. Specify the sync properties for PostgreSQL:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
-   </details>
-
    <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-postgresql-sync.png "Enter connection details")-->
 
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-sync-data-extraction-mode)<br/>Specify the extraction type.

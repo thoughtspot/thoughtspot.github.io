@@ -11,10 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an lahdfs file sys
 
 4. Specify the sync properties for files:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
-
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Enable archive on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-sync-enable-archive-on-success)<br/>Specify if data needs to be archived once it is succeeded<br/>Optional field.
    * [Delete on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-sync-delete-on-success)<br/>Specify if data needs to be deleted after execution is successful<br/>Optional field.

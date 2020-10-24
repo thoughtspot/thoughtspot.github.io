@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the IBM Db2 **Connection type**, the rest of the connection properties appear.
 
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for IBM Db2</summary>
-       <p>
-       <img src="../../images/dataflow-ibm-db2-create.png" alt="Create IBM Db2 connection" /></p>
-   </details>
-
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-reference.html#dataflow-ibm-db2-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-reference.html#dataflow-ibm-db2-conn-connection-type)<br/>Choose the IBM Db2 connection type.
    * [Platform]({{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-reference.html#dataflow-ibm-db2-conn-platform)<br/>An environment in which a data point is executed. Specify LUW, iSeries, or Mainframe.

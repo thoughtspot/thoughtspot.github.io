@@ -11,10 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to a Hive database, y
 
 4. Specify the sync properties for Hive:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
-
    <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-hive-sync.png "Enter sync details")-->
 
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hive-reference.html#dataflow-hive-sync-data-extraction-mode)<br/>Specify the extraction type.

@@ -7,13 +7,11 @@ permalink: /:collection/:path.html
 ---
 After using ThoughtSpot DataFlow to establish a connection to an Azure Blob Storage file system, you can create automatic data updates, to seamlessly refresh your data.
 
+Starting with ThoughtSpot Release 6.3, you can use the default *Blob Storage*, or *Delta Lake GEN2 Storage* <span class="label label-beta">New</span> options.
+
 {% include content/dataflow/sync-for-file-systems.md %}
 
 4. Specify the sync properties for files:
-
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
 
      * [File name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-file-name)<br/>Specify name of the file<br/>Mandatory field.
      * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-column-delimiter)<br/>Specifies the delimiter between the columns in the source file<br/>Mandatory field.

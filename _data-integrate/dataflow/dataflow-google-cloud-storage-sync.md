@@ -11,10 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to a Google Cloud Sto
 
 4. Specify the sync properties for files:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
-
    * [File name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-file-name)<br/>Specify name of the file.
    * [Enable archive on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-enable-archive-on-success)<br/>Specify if file needs to be archived once it is succeeded<br/>Optional field.
    * [Delete file on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-delete-file-on-success)<br/>Specify if file needs to be deleted after execution is successful<br/>Optional field.
@@ -33,7 +29,7 @@ After using ThoughtSpot DataFlow to establish a connection to a Google Cloud Sto
    * [Decimal delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-decimal-delimiter)<br/>Specify the decimal delimiter for float/double/numeric data types.
    * [Skip trailer rows]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-skip-trailer-rows)<br/>Skip the number of trailer rows specified while loading the data<br/>Optional field.
    * [TS load options]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-ts-load-options)<br/>Specify the parameters passed with the <code>tsload</code> command, in addition to the commands already included by the application.
-   * [Boolean representation]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-boolean-representation)<br/>Specifies the representation of data in the boolean field<br/>Optional field. 
+   * [Boolean representation]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-sync-boolean-representation)<br/>Specifies the representation of data in the boolean field<br/>Optional field.
 
    See [Sync properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#sync-properties) for details, defaults, and examples.     
 

@@ -9,16 +9,9 @@ You can add a connection to an Oracle database using ThoughtSpot DataFlow.
 
 Follow these steps:
 
-
 {% include content/dataflow/add-database-connection.md %}
 
 4. After you select the Oracle **Connection type**, the rest of the connection properties appear.
-
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for Oracle</summary>
-        <p>
-        <img src="../../images/dataflow-oracle-create.png" alt="Create Oracle connection" /></p>
-    </details>
 
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-reference.html#dataflow-oracle-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-reference.html#dataflow-oracle-conn-connection-type)<br/>Choose the Oracle connection type.

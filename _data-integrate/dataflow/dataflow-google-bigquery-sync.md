@@ -11,11 +11,11 @@ After using ThoughtSpot DataFlow to establish a connection to a Google BigQuery 
 
 4. Specify the sync properties for Google BigQuery:
 
-   <details>
+   <!--<details>
      <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
      <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
 
-   <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-google-bigquery-sync.png "Enter sync details")-->
+   ![Enter sync details]({{ site.baseurl }}/images/dataflow-google-bigquery-sync.png "Enter sync details")-->
 
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-bigquery-reference.html#dataflow-google-bigquery-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-bigquery-reference.html#dataflow-google-bigquery-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.
