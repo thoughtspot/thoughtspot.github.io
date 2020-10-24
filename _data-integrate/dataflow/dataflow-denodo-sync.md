@@ -5,11 +5,12 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-After using ThoughtSpot DataFlow to establish a connection to a Denodo file system, you can create automatic data updates, to seamlessly refresh your data.
 
-{% include content/dataflow/sync-for-file-systems.md %}
+After using ThoughtSpot DataFlow to establish a connection to a Denodo database, you can create automatic data updates, to seamlessly refresh your data.
 
-4. Specify the sync properties for files:
+{% include content/dataflow/sync-for-databases.md %}
+
+4. Specify the sync properties for Denodo:
 
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-denodo-reference.html#dataflow-denodo-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-denodo-reference.html#dataflow-denodo-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.
