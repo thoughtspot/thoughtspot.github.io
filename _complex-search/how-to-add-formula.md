@@ -24,7 +24,7 @@ To create a formula in a search:
 
      ![Use the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-profit.png "Use the Formula Builder")
 
-    {% include note.html content="Formulas elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black)." %}
+    {% include note.html content="Formula elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black)." %}
 
 5.  You can see a list of formula operators with examples by selecting the help icon **?** in the upper right corner. Expand a category, such as **Comparison**, and click on an operator for a definition and example.
 
