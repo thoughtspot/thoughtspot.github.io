@@ -18,7 +18,7 @@ This release enables new data modeling capabilities. You can now:
 </ul>
 
 <h3>Geomaps</h3>
-ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.
+ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br><br>
 
 ThoughtSpot supports maps of many countries. See the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
 
@@ -26,19 +26,19 @@ ThoughtSpot supports maps of many countries. See the complete list in the <a hre
 Answer V2 is in Beta. The Answer V2 feature set contains the following features:
 
 <ul>
-<li>Improved Formula Editor</li>
-<li>Search Assist: Analyst authored queries</li>
-<li>Table configuration: conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells</li>
+<li><a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Improved Formula Editor</a></li>
+<li><a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst authored queries</a></li>
+<li><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration</a>: conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells</li>
 </ul>
 
-The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to turn Answer V2 off for your company. You can turn it on or off individually from the **Data** panel on the **Search** page.
+The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn Answer V2 off for your company. You can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page.
 
 <ul>
-<li>Ask an Expert</li>
-<li>R scripts</li>
-<li>Query visualizer</li>
-<li>Pivot tables</li>
-<li>Sankey charts</li>
+<li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
+<li><a href="{{ site.baseurl }}/end-user/r-scripts/about-r-in-thoughtspot.html">R scripts</a></li>
+<li><a href="{{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#query-details">Query visualizer</a></li>
+<li><a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a></li>
+<li><a href="{{ site.baseurl }}/end-user/search/about-sankey-charts.html">Sankey charts</a></li>
 </ul>
 
 <h3>Customize ThoughtSpot Help</h3>
