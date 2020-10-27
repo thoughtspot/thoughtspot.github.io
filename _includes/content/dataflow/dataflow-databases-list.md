@@ -18,6 +18,7 @@
 <li><a href="{{"/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise.html" | prepend: site.baseurl}}">SAP Adaptive Server Enterprise</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-sap-hana.html" | prepend: site.baseurl}}">SAP HANA</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-sap-sql-anywhere.html" | prepend: site.baseurl}}">SAP SQL Anywhere</a></li>
+<li><a href="{{"/data-integrate/dataflow/dataflow-sas.html" | prepend: site.baseurl}}">SAS</a> <span class="label label-beta">New</span></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-sql-server.html" | prepend: site.baseurl}}">SQL Server</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-snowflake.html" | prepend: site.baseurl}}">Snowflake</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-splice-machine.html" | prepend: site.baseurl}}">Splice Machine</a></li>

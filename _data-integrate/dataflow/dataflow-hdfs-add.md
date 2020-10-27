@@ -11,7 +11,7 @@ Follow these steps:
 
 {% include content/dataflow/add-database-connection.md %}
 
-4. After you select the File **Connection type**, the rest of the connection properties appear.
+4. After you select the **Connection type**, the rest of the connection properties appear.
 
    Depending on your choice of authentication mechanism, you may use different properties.
 <!--

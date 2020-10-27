@@ -27,8 +27,7 @@ To map the external tables to ThoughtSpot's internal database, follow these step
           <dt>Create a new table</dt>
           <dd>Choose this option when you want to load data into a new table.
           <br/>The system creates a new table automatically.
-          <br/>If you want the new table to have some special properties, create the table using the TQL Editor, proceed to <strong>Choose existing table</strong>, and then select the table you just created. Click <strong>TQL Editor</strong>, enter the <code>CREATE TABLE <em>my_table</em> ...;</code> command, and click <strong>Execute</strong>.
-            <br/>Specify the table name.</dd></dlentry>
+          <br/>If you want the new table to have some special properties, create the table using the TQL Editor, proceed to <strong>Choose existing table</strong>, and then select the table you just created. Click <strong>TQL Editor</strong>, enter the <code>CREATE TABLE <em>my_table</em> ...;</code> command, and click <strong>Execute</strong>.<br/>Specify the table name.</dd></dlentry>
         <dlentry><dt>Choose existing table</dt><dd>Choose this option to load data into a table that already exists inside ThoughtSpot. <br/>Select the table name from the drop-down menu.</dd></dlentry></dl>
       </dd></dlentry>
      <dlentry id="ts-target-table-name">
