@@ -380,7 +380,7 @@ entries:
       - title: See the search behind a result
         url: /complex-search/drill-down.html
         output: web,ugBk
-      - title: Apply conditional formatting to a table
+      - title: Apply conditional formatting to a table or chart
         url: /end-user/search/apply-conditional-formatting.html
         output: web,ugBk
       - title: Download your search
