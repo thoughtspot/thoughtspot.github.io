@@ -4,7 +4,7 @@
 
 2. On the connection detail page, click **Add table sync**.
 
-3. In the **Add table sync** interface, on the database selector, scroll to find the source file and click to select it.
+3. In the **Add table sync** interface, on the database selector, scroll to find the source file, and click to select it.
 
    You can search for the file by name.
 

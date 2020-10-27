@@ -2143,6 +2143,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: SAS
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-sas.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-sas-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-sas-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-sas-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: SQL Server
         output: web,dataflowGD
         levelThreeItems:

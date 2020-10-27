@@ -11,7 +11,7 @@ Follow these steps:
 
 {% include content/dataflow/add-database-connection.md %}
 
-4. After you select the File **Connection type**, the rest of the connection properties appear.
+4. After you select the **Connection type**, the rest of the connection properties appear.
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html#dataflow-databricks-delta-lake-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html#dataflow-databricks-delta-lake-conn-connection-type)<br/>Choose the Azure Dtabricks connection type.

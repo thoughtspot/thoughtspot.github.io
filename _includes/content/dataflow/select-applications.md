@@ -12,4 +12,4 @@
 
    For large tables, use the search bar to search column names.
 
-4. Click **Setup sync**.   
+5. Click **Setup sync**.   
