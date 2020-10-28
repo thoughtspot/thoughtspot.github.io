@@ -108,8 +108,8 @@
 <tr><td><code>python-pyasn1</code></td><td>0.1.6-2.el7</td></tr>
 <tr><td><code>python2-cryptography</code></td><td>1.7.2-2.el7</td></tr>
 <tr><td><code>python2-pip</code></td><td>8.1.2-12.el7</td></tr>
-<tr><td><code>python3</code></td><td>3.6.8-10.el7</td></tr>
-<tr><td><code>python3-devel</code></td><td>3.6.8-10.el7</td></tr>
+<tr><td><code>python3</code></td><td>3.6.8-10.el7. Note that you cannot use python3 version 3.7.0 or later.</td></tr>
+<tr><td><code>python3-devel</code></td><td>3.6.8-10.el7. Note that you cannot use python3 version 3.7.0 or later.</td></tr>
 <tr><td><code>R</code></td><td>3.6.0-1.el7</td></tr>
 <tr><td><code>R-devel</code></td><td>3.6.0-1.el7</td></tr>
 <tr><td><code>realmd</code></td><td>0.16.1-11.el7</td></tr>
