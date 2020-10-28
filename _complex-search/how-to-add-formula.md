@@ -20,9 +20,9 @@ To create a formula in a search:
 
     ![Click + to add a formula]({{ site.baseurl }}/images/formula-editor-add.png "Click + to add a formula")
 
-4. Name and enter your formula in the Formula Builder.
+4. Name and enter your formula in the Formula Editor. The Formula Editor supports multi-line wrapping of long formulas. To continue the formula on a new line, press **Enter** or **return** on your keyboard.
 
-     ![Use the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-profit.png "Use the Formula Builder")
+     ![Use the Formula Editor]({{ site.baseurl }}/images/worksheet-formula-profit.png "Use the Formula Editor")
 
     {% include note.html content="Formula elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black)." %}
 
