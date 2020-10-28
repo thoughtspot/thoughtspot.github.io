@@ -1,6 +1,6 @@
 ---
 title: [Pivot table]
-last_updated: 9/11/2020
+last_updated: 10/28/2020
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,11 +15,15 @@ If you would like to visualize your search as a pivot table, click on the **chan
 
 You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
 
-If you right-click a row or column heading, the system displays a contextual sort menu, or allows you to remove all sorting:
+If you right-click a row or column heading, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, **SpotIQ analyze**, or **sort**.
 
 !["Sort by a row heading"]({{ site.baseurl }}/images/charts-pivot-table-sort.png "Sort by a row heading")
 
-!["Sort by a column heading"]({{ site.baseurl }}/images/chart-pivot-table-sort-column.png "Sort by a column heading")
+!["Sort by a column heading"]({{ site.baseurl }}/images/charts-pivot-table-column.png "Sort by a column heading")
+
+If you right-click a table cell, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, or **SpotIQ analyze**.
+
+!["Pivot table cell menu"]({{ site.baseurl }}/images/charts-pivot-table-cell.png "Pivot table cell menu")
 
 
 ## Expanding or contract columns and rows
@@ -73,5 +77,4 @@ To turn on the heatmap, click the **edit chart configuration** ![]({{ site.baseu
 The pivot table chart type has these limitations:
 
 - The pivot table displays a maximum of 100k rows. If your query returns more than 100k rows, you cannot visualize it with a pivot table.
-- You cannot show underlying data.
 - You cannot use conditional formatting.
