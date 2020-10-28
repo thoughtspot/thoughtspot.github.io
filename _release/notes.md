@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.3 is now available. These release notes include information about new and enhanced features. 
+ThoughtSpot version 6.3 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
@@ -15,7 +15,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 * [Supported Upgrade Paths](#upgrade-paths)
 
 {: id="6-3-new"}
-## 6.3 New Features and Functionality
+## 6.3 New Features and Functionality 
 
 For a complete list of issues that we fixed in this release, see [6.3 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-3).
 
