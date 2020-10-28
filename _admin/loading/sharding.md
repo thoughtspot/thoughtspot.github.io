@@ -28,7 +28,7 @@ whenever possible. If you have a large dimension table, more than 40 million row
 
 {: id="sharding-guidelines"}
 ### Table sizes and sharding recommendations
-When you are considering which tables you need to shard, and how many shards to use, there are several key sizing guidelines to keep in mind:
+When you are considering which tables you need to shard, and how many shards to use, there are several key sizing guidelines to keep in mind. You may not be able to fulfill each of these requirements for every table you shard. The most important requirement is that the number of shards for a given table take up less than or equal to 60% of your total available CPU.
 
 2. **60% of CPU**: The number of shards for a given table should not take up more than 60% of your total available CPU. When possible, the number of shards should be well under 60%, for queries that involve multiple sharded fact tables.
 
@@ -42,7 +42,9 @@ When you are considering which tables you need to shard, and how many shards to 
 
 4. **The number of shards should be a multiple of the number of nodes**: To ensure equal distribution of data across all nodes, so that none of your nodes sits idle, the number of shards should be a multiple of the number of nodes. So, for a 12-node cluster, for example, a table could have 12, 24, 36, or 48 shards, and so on.
 
-5. **Minimum number of shards**: Because the number of shards should be a multiple of the number of nodes, the mininum number of shards is the number of nodes. For a 12-node cluster, you should not have fewer than 12 shards.
+5. **Minimum number of shards**: Because the number of shards should be a multiple of the number of nodes, the minimum number of shards is the number of nodes. For a 12-node cluster, you should not have fewer than 12 shards.
+
+    This requirement may be difficult to achieve on large clusters with a high number of nodes. For example, you may have a table with 200 million rows on a 24 node cluster. Based on the guideline of 20 million rows per shard, this table should have 10 shards. 10 is not a multiple of 24. However, you may also have several very large tables on this cluster, with more than 1 billion rows. These 1 billion row tables can have at least 24 shards while fulfilling the 20 million rows per shard requirement, but the 200 million row table cannot. If you do not have these very large tables in your cluster, but you do have a high number of nodes, you might choose to have fewer than 20 million rows per shard, to ensure equal distribution of data. Consult with your ThoughtSpot contact if you are unsure how to handle sharding on your large cluster.
 
 ### Sharding recommendations example
 Let's use an example to see how the 6 guidelines listed above in [Table sizes and sharding recommendations](#sharding-guidelines) work.
