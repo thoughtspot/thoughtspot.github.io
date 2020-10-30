@@ -39,6 +39,11 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
     </ul>
     </dd>
   </dlentry>
+
+  <dlentry id="keywords">
+    <dt>Change in behavior for multiple <code>begins with </code> or <code> ends with </code> keywords</dt>
+      <dd>When you use more than one <code> begins with </code> or <code> ends with </code> keyword in a search or formula, ThoughtSpot now returns your results using an <code>OR</code> condition, instead of an <code>AND</code> condition. When you use a combination of <code>begins with</code> and <code>ends with</code>, ThoughtSpot still returns your results using an <code>AND</code> condition.<br><br>For example, if you search for <code>state name begins with "V" state name begins with "C"</code>, your results are Virginia, Vermont, California, and Connecticut. If you search for <code>state name begins with V state name ends with T</code>, your only result is Vermont.
+      </dd></dlentry>
   </dl>   
 
 ### For the Business User
