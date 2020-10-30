@@ -99,9 +99,12 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 
   <dlentry id="entry"><dt>Advanced lean mode for cloud deployments</dt><dd>For ThoughtSpot customers who want to deploy their AWS, Azure, and GCP instances with lower data sizes, this release brings enhancements to advanced lean mode configuration.</dd><dd>Enhancements include the following:
   <ul>
-    <li>You can now configure lean mode yourself using tscli commands. No need to contact ThoughtSpot.</a></li>
+    <li>You can now configure lean mode yourself using tscli commands. No need to contact ThoughtSpot.</li>
     <li>Default limits on objects (answers, pinboards) so that can't create more objects than your reduced configuration can support.</li>
   </ul>
+  </dd></dlentry>
+
+  <dlentry id="open-ldap-auth"><dt>Open LDAP authentication</dt><dd>ThoughtSpot now integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
   </dd></dlentry>
 
 </dl>    
