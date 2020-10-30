@@ -61,10 +61,6 @@ Also, see the topic on how to set [locale preferences in your user profile]({{ s
 
 {% include content/keywords-text.md %}
 
-Starting with release 6.2.1, when you use more than one `begins with` or `ends with` keyword in a search or formula, ThoughtSpot returns your results using an `OR` condition, instead of an `AND` condition. When you use a combination of `begins with` and `ends with`, ThoughtSpot still returns your results using an `AND` condition.
-
-For example, if you search for `state name begins with "V" state name begins with "C"`, your results are Virginia, Vermont, California, and Connecticut. If you search for `state name begins with V state name ends with T`, your only result is Vermont.
-
 ## Number
 
 {% include content/keywords-number.md %}
