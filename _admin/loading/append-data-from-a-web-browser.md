@@ -1,7 +1,6 @@
 ---
 title: [Append data through the UI]
-
-last_updated: tbd
+last_updated: 10/30/2020
 summary: "Use append to add more data to an existing data source."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

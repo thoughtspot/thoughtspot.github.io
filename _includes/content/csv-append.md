@@ -4,9 +4,6 @@ To append data into ThoughtSpot:
 
 1.   Log in to ThoughtSpot from a browser.
 2.   Click **Data** on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
-
 3.   Click the name of the table you would like to append data to.
 4.   Click the **Load Data** button.
 
