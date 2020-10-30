@@ -30,19 +30,17 @@ To create a Pinboard:
 
 ## Add an Answer to a Pinboard
 
-You can add use Pinboards to group related Answers. To add
+You can use Pinboards to group related Answers. To add
 an Answer to a Pinboard:
 
-1. While viewing your Answer of interest, click the **Pin** icon at the top right of the Answer.
+1. While viewing your Answer, click the **Pin** icon at the top right of the Answer.
 
     ![]({{ site.baseurl }}/images/add_to_pinboard.png "Pin an answer to a Pinboard icon")
 
-2. In the **Add to Pinboard** dialog box, click the **+** icons next to the Pinboards you would like to add your Answer to, or select **Create Pinboard** to make a new Pinboard for the Answer.
-
+2. In the **Add to Pinboard** dialog box, click the **+** icons next to the Pinboards where you plan to add your Answer.
     ![]({{ site.baseurl }}/images/copy_to_pinboard.png "Add filters menu")
 
-   You can also select **Create new Pinboard** at the top of the list to create a new Pinboard, then add your answer to it.
-
+    Alternatively, select **Create Pinboard** to add the  Answer to a new Pinboard.
 
 ## Download a Pinboard as a PDF file
 
