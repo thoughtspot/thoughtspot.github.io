@@ -1,7 +1,6 @@
 ---
 title: [Stop a scheduled job from running]
-
-last_updated: tbd
+last_updated: 10/30/2020
 summary: "You may want to stop a scheduled job from running for a time, or even permanently."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -18,9 +17,6 @@ To stop a scheduled job from running:
 
 1. Log in to ThoughtSpot from a browser.
 2. Click **DATA**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
-
 3.  Click the **Data Sources** tab at the top of the screen.
 
     ![]({{ site.baseurl }}/images/data_sources_tab_created.png "Data Sources tab")
