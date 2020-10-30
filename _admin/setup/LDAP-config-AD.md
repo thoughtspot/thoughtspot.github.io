@@ -1,10 +1,12 @@
 ---
 title: [Configure authentication through Active Directory]
-last_updated: 10/10/2019
+last_updated: 10/30/2020
 summary: "ThoughtSpot enables you to set up integration with LDAP using Active Directory. After successful setup, you can authenticate users against a secure LDAP server."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="This article describes how to set up integration with LDAP using Active Directory. Starting with ThoughtSpot version 6.3, ThoughtSpot also integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, contact ThoughtSpot Support." %}
 
 {: id="prerequisites"}
 ## Configuration prerequisites
