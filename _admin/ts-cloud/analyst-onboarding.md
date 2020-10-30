@@ -13,7 +13,7 @@ When you begin using ThoughtSpot, the onboarding process starts automatically. Y
 
 To repeat user onboarding or change your persona, simply select **Profile** from the user icon at the top right of the page, and under **Preferences > New user onboarding**, click **Revisit Onboarding**.
 
-Here is a quick introduction to the workflows you need as an Analyst in ThoughtSpot. The analyst onboarding guides you through these main workflows.
+Here is a quick introduction to the workflows you need as an Analyst in ThoughtSpot. The analyst onboarding on the **Setup** page guides you through these main workflows. The **Setup** page is accessible from the top navigation bar.
 
 <div class="grid-container-li-img">
   <div class="grid-child">
@@ -34,7 +34,7 @@ Here is a quick introduction to the workflows you need as an Analyst in ThoughtS
   </div>
 </div>  
 
-As you complete these tasks, the progress bar at the bottom of your screen helps to guide you through the steps, and automatically updates when you finish a step. The progress bar is visible from anywhere in ThoughtSpot, except the home hub. Select **next steps** next to the progress bar to learn more about your next task.
+As you complete these tasks, the progress bar at the bottom of your screen helps to guide you through the steps, and automatically updates when you finish a step. The progress bar is visible from anywhere in ThoughtSpot, except the **Setup** page, which is accessible from the top navigation bar. Select **next steps** next to the progress bar to learn more about your next task.
 
 ![Analyst onboarding progress bar]({{ site.baseurl }}/images/analyst-onboarding-progress-bar.png "Analyst onboarding progress bar")
 
