@@ -2336,12 +2336,30 @@ This subcommand has the following options:
 ### sssd
 
 ```
-tscli sssd {enable, disable, set-sudo-group, clear-sudo-group}
+tscli sssd {clear-sudo-group,disable,disable-openldap,enable,enable-openldap,set-sudo-group}
 ```
 
 This subcommand uses system security services daemon (SSSD), and has the following options:
 
 <dl>
+
+<dlentry id="tscli-sssd-clear-sudo-group">
+  <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
+  <dd>Clears a specified AD sudo group so that they no longer have <code>sudo</code> permissions.</dd>
+</dlentry>
+
+<dlentry id="tscli-sssd-disable">
+  <dt><code>tscli sssd disable</code></dt>
+   <dd>Disables Active Directory access. Leaves identity domain and removes AD sudo group.</dd>
+ </dlentry>
+
+ <dlentry id="tscli-sssd-disable-openldap">
+   <dt><code>tscli sssd disable-openldap</code></dt>
+    <dd>Disables OpenLDAP integration.
+
+    {% include note.html content="If you mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook while deploying ThoughtSpot on RHEL, you cannot run this command. If you ran <code>tscli sssd enable-openldap</code> and also mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook, contact ThoughtSpot Support." %}</dd>
+  </dlentry>
+
 
 <dlentry id="tscli-sssd-enable">
   <dt><code>tscli sssd enable --user <em>USER</em> --domain <em>DOMAIN</em></code></dt>
@@ -2361,19 +2379,29 @@ This subcommand uses system security services daemon (SSSD), and has the followi
    </dd>
  </dlentry>
 
- <dlentry id="tscli-sssd-disable">
-   <dt><code>tscli sssd disable</code></dt>
-    <dd>Disables Active Directory access. Leaves identity domain and removes AD sudo group.</dd>
+ <dlentry id="tscli-sssd-enable-openldap">
+   <dt><code>tscli sssd enable-openldap</code></dt>
+    <dd>Connects to your OpenLDAP server and allows users to SSH into your ThoughtSpot cluster with their LDAP credentials, without using the fully qualified domain name.
+
+    {% include note.html content="If you mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook while deploying ThoughtSpot on RHEL, you cannot run this command." %}
+
+    This subcommand has the following parameters:
+    <dl>
+     <dlentry>
+       <dt><code>--server_base_dn <em>SERVER_BASE_DN</em></code></dt>
+       <dd>Specify the LDAP server base distinguished name.</dd>
+     </dlentry>
+     <dlentry>
+       <dt><code>--server_uri <em>SERVER_URI</em></code></dt>
+       <dd>Specify the LDAP server uniform resource identifier.</dd>
+     </dlentry>
+    </dl>
+    </dd>
   </dlentry>
 
   <dlentry id="tscli-sssd-set-sudo-group">
     <dt><code>tscli sssd set-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
     <dd>Allows <code>sudo</code> permissions for a specified AD group.</dd>
-  </dlentry>
-
-  <dlentry id="tscli-sssd-clear-sudo-group">
-    <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
-    <dd>Clears a specified AD sudo group so that they no longer have <code>sudo</code> permissions.</dd>
   </dlentry>
 
 </dl>

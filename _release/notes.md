@@ -104,7 +104,10 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
   </ul>
   </dd></dlentry>
 
-  <dlentry id="open-ldap-auth"><dt>Open LDAP authentication</dt><dd>ThoughtSpot now integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
+  <dlentry id="open-ldap-auth"><dt>OpenLDAP authentication</dt><dd>ThoughtSpot now integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
+  </dd></dlentry>
+
+  <dlentry id="open-ldap-admin-user"><dt>OpenLDAP admin user</dt><dd>ThoughtSpot now supports using your company's OpenLDAP admin user to SSH into your cluster(s) as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. This feature is only applicable to ThoughtSpot clusters run on an <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL image</a>. Refer to <a href="{{ site.baseurl }}/appliance/rhel/rhel-install-online.html#ldap_admin_user">Install the ThoughtSpot application on online clusters that use RHEL</a> to learn how to add the three OpenLDAP admin user parameters to your Ansible playbook.
   </dd></dlentry>
 
 </dl>    
