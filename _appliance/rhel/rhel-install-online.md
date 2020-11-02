@@ -209,6 +209,12 @@ sudo /usr/local/scaligent/bin/prepare_disks.sh /dev/sdc /dev/sdd
 
 Your hosts are ready for installing the ThoughtSpot application.
 
+If you included the [OpenLDAP](#ldap_admin_user) parameters in the Ansible playbook, you can `ssh` as the OpenLDAP admin user with this command:
+
+```
+ssh -l <admin_user> <cluster_IP>
+```
+
 {: id="install-thoughtspot"}
 ## Install the ThoughtSpot cluster and the application
 
