@@ -9,6 +9,8 @@ permalink: /:collection/:path.html
 
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
 
+{% include note.html content="Certain elements of table configuration are part of the Answer V2 feature set. These elements include conditional and number formatting for table summaries and improved conditional formatting for attributes and measures in table cells. When Answer V2 is on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. You can turn Answer V2 on or return to the classic experience from the <strong>Data</strong> panel on the <strong>Search</strong> page. If you do not have the option to turn Answer V2 on, contact your administrator." %}
+
 ## Understand conditional formatting
 
 Many companies create pinboards with key metrics they want to track in daily or weekly staff meetings. Using conditional formatting, they can see at a glance how they are performing relative to these metrics.
@@ -19,6 +21,14 @@ You can add visual cues for KPIs (Key Performance Indicators) or threshold metri
 ## Apply conditional formatting to a table
 
 You can apply conditional formatting to both table cells and column summaries. You can specify a background color, font color, and/ or font style: bold, italics, underlined, or strikethrough. You can create conditional formatting rules for both measures and attributes.
+
+{% include note.html content="You can only apply conditional formatting to numbers and strings. For example, you can apply conditional formatting to a <code>month of year</code> column, with values such as <code>January</code>, but not to date column where dates are in the format <code>1 Jan 2021</code>." %}
+
+If you create multiple conditional formatting rules for one measure or attribute, the first rule you create overrides the others, if there is a conflict. To change which rule overrides the others, simply drag and drop the rule to the top of the list of conditional formatting rules.
+
+In the example below, the **christmas** table cell falls under both the `is christmas` rule, and the `not winter` rule. Currently, the `not winter` rule overrides the `is christmas` rule, so the **christmas** table cell does not have red text and a green background.
+
+![Drag and drop the rule you would like to override other rules]({{ site.baseurl }}/images/conditional-formatting-override.png "Drag and drop the rule you would like to override other rules")
 
 To apply conditional formatting to a table:
 

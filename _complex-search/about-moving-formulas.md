@@ -83,15 +83,15 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
 3. Enter the moving_average formula, providing a measure, a window, and one or more attributes.
 
-    The example returns the average of revenue, within the commit date window size of 3. The window includes the previous, current, and next rows. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(sales, 1, -1, date)".
+    The example returns the average of revenue, within the commit date window size of 3. The window includes the previous, current, and next rows. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(revenue, 1, -1, date)".
 
-    ![]({{ site.baseurl }}/images/moving_average_formula.png "Moving Average Formula")
+    ![]({{ site.baseurl }}/images/moving_average_formula-new.png "Moving Average Formula")
 
 4. Name the formula by entering a title in the top field, and then click **Save**.
 
    The formula appears in the search bar and in the table as its own column.
 
-   ![]({{ site.baseurl }}/images/moving_average_table.png "Moving Average Table")
+   ![]({{ site.baseurl }}/images/moving_average_table-new.png "Moving Average Table")
 
    A box displaying the moving average within the entire table will appear at the bottom.
 
