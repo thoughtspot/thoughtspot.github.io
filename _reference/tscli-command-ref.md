@@ -2357,7 +2357,7 @@ This subcommand uses system security services daemon (SSSD), and has the followi
    <dt><code>tscli sssd disable-openldap</code></dt>
     <dd>Disables OpenLDAP integration.
 
-    {% include note.html content="If you mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook while deploying ThoughtSpot on RHEL, you cannot run this command. If you ran <code>tscli sssd enable-openldap</code> and also mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook, contact ThoughtSpot Support." %}</dd>
+    {% include note.html content="If you mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook while deploying ThoughtSpot on RHEL, do not run this command. If you ran <code>tscli sssd enable-openldap</code> and also mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook, contact ThoughtSpot Support." %}</dd>
   </dlentry>
 
 
@@ -2383,17 +2383,17 @@ This subcommand uses system security services daemon (SSSD), and has the followi
    <dt><code>tscli sssd enable-openldap</code></dt>
     <dd>Connects to your OpenLDAP server and allows users to SSH into your ThoughtSpot cluster with their LDAP credentials, without using the fully qualified domain name.
 
-    {% include note.html content="If you mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook while deploying ThoughtSpot on RHEL, you cannot run this command." %}
+    {% include note.html content="If you mapped your OpenLDAP admin user to ThoughtSpot's local admin user through the Ansible playbook while deploying ThoughtSpot on RHEL, do not run this command." %}
 
     This subcommand has the following parameters:
     <dl>
      <dlentry>
        <dt><code>--server_base_dn <em>SERVER_BASE_DN</em></code></dt>
-       <dd>Specify the LDAP server base distinguished name.</dd>
+       <dd>Specify the LDAP server base distinguished name, in the form <em>dc=&lt;optional_subdomain&gt;,dc=&lt;domain&gt;,dc=&lt;top-level-domain&gt;</em>, such as <em>dc=thoughtspot,dc=com</em>.</dd>
      </dlentry>
      <dlentry>
        <dt><code>--server_uri <em>SERVER_URI</em></code></dt>
-       <dd>Specify the LDAP server uniform resource identifier.</dd>
+       <dd>Specify the LDAP server uniform resource identifier, in the form <em>ldap://&lt;ldap_server_IP&gt;</em>.</dd>
      </dlentry>
     </dl>
     </dd>
