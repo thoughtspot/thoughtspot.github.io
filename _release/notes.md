@@ -59,6 +59,9 @@ In this release, you can now set a limit on the number of rows ThoughtSpot loads
 
 Contact ThoughtSpot support to enable this feature.
 
+### OpenLDAP authentication
+ThoughtSpot now integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
+
 {: id="6-0-4-new"}
 ## 6.0.4 New Features and Functionality
 

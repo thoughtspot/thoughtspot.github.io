@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="This article describes how to set up integration with LDAP using Active Directory. Starting with ThoughtSpot version 6.0.5, ThoughtSpot also integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, contact ThoughtSpot Support." %}
+
 {: id="prerequisites"}
 ## Configuration prerequisites
 
