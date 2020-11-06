@@ -15,4 +15,4 @@ If you have been using ThoughtSpot with users you created manually, and you now 
 
 ThoughtSpot supports LDAP with [Active Directory](LDAP-config-AD.html#).
 
-Starting with ThoughtSpot version 6.3, ThoughtSpot also integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
+On ThoughtSpot version 6.3 and later, and on version 6.0.5, ThoughtSpot also integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
