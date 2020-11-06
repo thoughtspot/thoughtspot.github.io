@@ -14,3 +14,5 @@ ThoughtSpot supports both anonymous and non-anonymous LDAP integration. Non-anon
 If you have been using ThoughtSpot with users you created manually, and you now want to transition to LDAP, please contact ThoughtSpot Support. They can assist you in migrating existing users to their LDAP equivalents.
 
 ThoughtSpot supports LDAP with [Active Directory](LDAP-config-AD.html#).
+
+Starting with ThoughtSpot version 6.0.5, ThoughtSpot also integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
