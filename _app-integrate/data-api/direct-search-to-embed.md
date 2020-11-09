@@ -1,7 +1,6 @@
 ---
 title: [Use the Embedded Search API to pull data from ThoughtSpot]
-
-last_updated: 11/18/2019
+last_updated: 11/08/2020
 summary: "This procedure shows how to use the Embedded Search API to get data from ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -24,7 +23,7 @@ Use this procedure to construct the call to the Embedded Search API:
 
 4. To subscribe to results for all the searches the user does in the embedded ThoughtSpot application, use the API JavaScript function subscribeToData( ). This will allow your page to listen for data coming from ThoughtSpot.
 
-   Now when a user searches, the iFrame will send data to the subscription. The parent web page or application receives the data as JSON, and can do whatever you want with it.
+   Now when a user searches, the &lt;iframe&gt; sends data to the subscription. The parent web page or application receives the data as JSON, and can do whatever you want with it.
 
 5. You can set up your web page or application to display or otherwise act on the data it receives from the subscription.
 

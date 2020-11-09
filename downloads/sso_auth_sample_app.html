@@ -82,14 +82,14 @@
             onInitialized,
             onAuthExpiration,
             hostPort);
-        
+
 
         /**
          * Alternative: Pass username and password to session/login API.  This
          *              will create a cookie session that can be used in the browser
          *              for all future API calls
          *
-         *              @param username to authenticate 
+         *              @param username to authenticate
          *              @param password of user
          *              @param rememberme retains cookie
          *
@@ -127,10 +127,10 @@
         ///////////////////////////////////////////////////////////////////////
 
         /**
-         * Creates iFrame URL from pinboard ID.
+         * Creates iframe URL from pinboard ID.
          *
          * @param pId to embed.
-         * @return iFrame node
+         * @return iframe node
          */
         function getIframeToEmbedPinboard(pId) {
             var tsApp = document.createElement('iframe');
@@ -142,11 +142,11 @@
         }
 
         /**
-         * Creates iFrame URL from visualization ID
+         * Creates iframe URL from visualization ID
          *
          * @param pId of pinboard which contains visualization.
          * @param vId to embed.
-         * @return iFrame node
+         * @return iframe node
          */
         function getIframeToEmbedVisualization(pId, vId) {
             var tsApp = document.createElement('iframe');
@@ -158,9 +158,9 @@
         }
 
         /**
-         * Creates iFrame URL from visualization ID
+         * Creates iframe URL from visualization ID
          *
-         * @return iFrame node
+         * @return iframe node
          */
         function getIframeToEmbedSearch() {
             var tsApp = document.createElement('iframe');
@@ -175,7 +175,7 @@
         /**
          * Creates button for REST Call
          *
-         * @return iFrame node
+         * @return iframe node
          */
         function getButton() {
             var tsApp = document.createElement('button');
@@ -186,7 +186,7 @@
         }
 
         /**
-         * Embeds a pinboard in an iFrame as a child node.
+         * Embeds a pinboard in an iframe as a child node.
          */
         function embedPinboardIframe() {
             var divElement = document.getElementById("p-embeded-content");
@@ -196,7 +196,7 @@
         }
 
         /**
-         * Embeds a visualization in an iFrame as a child node.
+         * Embeds a visualization in an iframe as a child node.
          */
         function embedVisualizationIframe() {
             var divElement = document.getElementById("v-embeded-content");
@@ -206,7 +206,7 @@
         }
 
         /**
-         * Embeds the search bar in an iFrame as a child node.
+         * Embeds the search bar in an iframe as a child node.
          */
         function embedSearchIframe() {
             var divElement = document.getElementById("s-embeded-content");
@@ -216,7 +216,7 @@
         }
 
         /**
-         * Embeds the search bar in an iFrame as a child node.
+         * Embeds the search bar in an iframe as a child node.
          */
         function embedSearchIframe() {
             var divElement = document.getElementById("s-embeded-content");
@@ -229,7 +229,7 @@
          * Make REST API call.
          */
         function restApiCall() {
-            myUrl = protocol + "://" + hostPort + "/callosum/v1/tspublic/v1/pinboarddata?id=" + vizPinboardId 
+            myUrl = protocol + "://" + hostPort + "/callosum/v1/tspublic/v1/pinboarddata?id=" + vizPinboardId
             $.ajax({
                 url: myUrl,
                 type: 'POST',
@@ -270,5 +270,3 @@
     <br /><br /><br /><br />
 </body>
 </html>
-
-
