@@ -11,13 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an Azure Synapse d
 
 4. Specify the sync properties for Azure Synapse:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
-   </details>
-
-   <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-azure-synapse-sync.png "Enter sync details")-->
-
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-data-extraction-mode)<br/>Specify the extraction type.
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Null value]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-synapse-reference.html#dataflow-azure-synapse-sync-null-value)<br/>Specify the string literal that represents NULL on the source. When loading data, the system replaces this with NULL. Available only when <strong>Data extraction mode</strong> is <em>BCP</em>.

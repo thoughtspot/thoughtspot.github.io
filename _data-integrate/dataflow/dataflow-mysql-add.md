@@ -13,12 +13,6 @@ Follow these steps:
 
 4. After you select the MySQL **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for MySQL</summary>
-        <p>
-        <img src="../../images/dataflow-mysql-create.png" alt="Create MySQL connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mysql-reference.html#dataflow-mysql-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mysql-reference.html#dataflow-mysql-conn-connection-type)<br/>Choose the MySQL connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mysql-reference.html#dataflow-mysql-conn-host)<br/>Specify the hostname or the IP address of the MySQL system

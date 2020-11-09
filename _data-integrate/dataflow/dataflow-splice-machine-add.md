@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the Splice Machine **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for Splice Machine</summary>
-        <p>
-        <img src="../../images/dataflow-splice-machine.png" alt="Create Splice Machine connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-splice-machine-reference.html#dataflow-splice-machine-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-splice-machine-reference.html#dataflow-splice-machine-conn-connection-type)<br/>Choose the Splice Machine connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-splice-machine-reference.html#dataflow-splice-machine-conn-host)<br/>Specify the hostname or the IP address of the Splice Machine system

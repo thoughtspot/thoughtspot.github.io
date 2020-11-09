@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the Presto **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for Presto</summary>
-        <p>
-        <img src="../../images/dataflow-presto-create.png" alt="Create Presto connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-presto-reference.html#dataflow-presto-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-presto-reference.html#dataflow-presto-conn-connection-type)<br/>Choose the Presto connection type.
     * [Host ]({{ site.baseurl }}/data-integrate/dataflow/dataflow-presto-reference.html#dataflow-presto-conn-host-)<br/>Specify the hostname or the IP address of the Presto system

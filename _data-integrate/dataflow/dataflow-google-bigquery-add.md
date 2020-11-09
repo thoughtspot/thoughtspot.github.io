@@ -16,18 +16,6 @@ Follow these steps:
 
    Depending on your choice of authentication mechanism, you may use different properties.
 
-   <details style="hidden-images">
-     <summary>See the <strong>Create connection</strong> screen for Google BigQuery without <em>proxy</em> option</summary>
-     <p>
-      <img src="../../images/dataflow-google-bigquery-create.png" alt="add a Google BigQuery connection" /></p>
-   </details>
-
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Google BigQuery with <em>proxy</em> option</summary>
-     <p>
-      <img src="../../images/dataflow-google-bigquery-proxy-create.png" alt="add a Google BigQuery connection" /></p>
-   </details>
-
    * [Project id]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-bigquery-reference.html#dataflow-google-bigquery-conn-project-id)<br/>The identification number given to particular project and its always unique.
    * [Authentication type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-bigquery-reference.html#dataflow-google-bigquery-conn-authentication-type)<br/>It can be either Service Account or Access Tokens
    * [Service account key/access Token]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-bigquery-reference.html#dataflow-google-bigquery-conn-service-account-key/access-token)<br/>Provide the Service Account key when authentication type is selected as Service account and token when access token is selected as authentication type.

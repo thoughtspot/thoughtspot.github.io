@@ -11,12 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to a Netezza database
 
 4. Specify the sync properties for Netezza:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary><p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
-   </details>
-
-   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-netezza-sync.png "Enter connection details")-->
-
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-netezza-reference.html#dataflow-netezza-sync-data-extraction-mode)<br/>Specify the extraction type.
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-netezza-reference.html#dataflow-netezza-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-netezza-reference.html#dataflow-netezza-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.

@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the Hive **Connection type**, the rest of the connection properties appear.
 
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Hive</summary>
-     <p>
-      <img src="../../images/dataflow-hive-create.png" alt="Create Hive connection" /></p>
-   </details>
-
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hive-reference.html#dataflow-hive-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hive-reference.html#dataflow-hive-conn-connection-type)<br/>Choose the Hive connection type.
    * [HiveServer2 HA configured]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hive-reference.html#dataflow-hive-conn-hiveserver2-ha-configured)<br/>Specify this option if using HiveServer2 High Availability.

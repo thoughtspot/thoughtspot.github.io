@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the MongoDB **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for MongoDB</summary>
-        <p>
-        <img src="../../images/dataflow-mongodb-create.png" alt="Create MongoDB connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mongodb-reference.html#dataflow-mongodb-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mongodb-reference.html#dataflow-mongodb-conn-connection-type)<br/>Choose the MongoDB connection type.
     * [Host ]({{ site.baseurl }}/data-integrate/dataflow/dataflow-mongodb-reference.html#dataflow-mongodb-conn-host-)<br/>Specify the hostname or the IP address of the MongoDB system
