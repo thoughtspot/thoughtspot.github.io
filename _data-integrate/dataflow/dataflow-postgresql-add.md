@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the PostgreSQL **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for PostgreSQL</summary>
-        <p>
-        <img src="../../images/dataflow-postgresql-create.png" alt="Create PostgreSQL connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-connection-type)<br/>Choose the PostgreSQL connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-reference.html#dataflow-postgresql-conn-host)<br/>Specify the hostname or the IP address of the PostgreSQL system

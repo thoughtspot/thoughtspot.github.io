@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the SQL Server **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for SQL Server</summary>
-        <p>
-        <img src="../../images/dataflow-sql-server-create.png" alt="Create SQL Server connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-conn-connection-type)<br/>Choose the SQL Server connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-conn-host)<br/>Specify the hostname or the IP address of the SQL Server system

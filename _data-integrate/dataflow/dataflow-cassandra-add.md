@@ -15,30 +15,6 @@ Follow these steps:
 
    Depending on your choice of authentication mechanism, you may use different properties.
 
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Cassandra, with <em>no authentication</em> option</summary>
-     <p>
-      <img src="../../images/dataflow-cassandra-no-auth-create.png" alt="add a Cassandra connection without authentication" /></p>
-   </details>
-
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Cassandra, with <em>SSL authentication</em> option</summary>
-     <p>
-      <img src="../../images/dataflow-cassandra-ssl-create.png" alt="add a Cassandra connection with SSL authentication" /></p>
-   </details>    
-
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Cassandra, with <em>LDAP authentication</em> option</summary>
-     <p>
-      <img src="../../images/dataflow-cassandra-ldap-create.png" alt="add a Cassandra connection with LDAP authentication" /></p>
-   </details>
-
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Cassandra, with <em>Kerberos authentication</em> option</summary>
-     <p>
-      <img src="../../images/dataflow-cassandra-kerberos-create.png" alt="add a Cassandra connection with Kerberos authentication" /></p>
-   </details>
-
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html#dataflow-cassandra-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html#dataflow-cassandra-conn-connection-type)<br/>Choose the Cassandra connection type.
    * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-cassandra-reference.html#dataflow-cassandra-conn-host)<br/>Specify the hostname or the IP address of the Cassandra system

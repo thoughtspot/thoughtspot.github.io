@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the SAP SQL Anywhere **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for SAP SQL Anywhere</summary>
-        <p>
-        <img src="../../images/dataflow-sap-sql-anywhere-create.png" alt="Create SAP SQL Anywhere connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html#dataflow-sap-sql-anywhere-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html#dataflow-sap-sql-anywhere-conn-connection-type)<br/>Choose the SAP SQL Anywhere connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html#dataflow-sap-sql-anywhere-conn-host)<br/>Specify the hostname or the IP address of the Sybase system

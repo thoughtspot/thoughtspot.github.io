@@ -11,12 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an IBM Db2 databas
 
 4. Specify the sync properties for IBM Db2:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
-
-   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-ibm-db2-sync.png "Enter connection details")-->
-
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-reference.html#dataflow-ibm-db2-sync-data-extraction-mode)<br/>Specify the extraction type.
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-reference.html#dataflow-ibm-db2-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Null value]({{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-reference.html#dataflow-ibm-db2-sync-null-value)<br/>Specifies the string literal that should indicate the null value in the extracted data. During the data load the column value matching this string will be loaded as null in the target.

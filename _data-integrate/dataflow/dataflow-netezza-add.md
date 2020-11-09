@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the Netezza **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for Netezza</summary>
-        <p>
-        <img src="../../images/dataflow-netezza-create.png" alt="Create Netezza connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-netezza-reference.html#dataflow-netezza-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-netezza-reference.html#dataflow-netezza-conn-connection-type)<br/>Choose the Netezza connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-netezza-reference.html#dataflow-netezza-conn-host)<br/>Specify the hostname or the IP address of the Netezza system

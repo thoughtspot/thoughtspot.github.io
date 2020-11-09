@@ -15,18 +15,6 @@ Follow these steps:
 
    Depending on your choice of authentication mechanism, you may use different properties.
 
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Google Cloud Storage</summary>
-     <p>
-      <img src="../../images/dataflow-google-cloud-storage-create.png" alt="Add a connection to Google Cloud Storage" /></p>
-   </details>
-
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Google Cloud Storage with proxy</summary>
-     <p>
-      <img src="../../images/dataflow-google-cloud-storage-proxy-create.png" alt="Add a connection with proxy to Google Cloud Storage" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-conn-connection-type)<br/>Choose the Google Cloud storage connection type.
     * [Project ID]({{ site.baseurl }}/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html#dataflow-google-cloud-storage-conn-project-id)<br/>The identification number given to particular project and its always unique.

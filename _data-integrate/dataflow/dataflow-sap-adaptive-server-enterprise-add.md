@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the SAP Adaptive Server Enterprise **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for SAP Adaptive Server Enterprise</summary>
-        <p>
-        <img src="../../images/dataflow-sap-adaptive-server-enterprise-create.png" alt="Create SAP Adaptive Server Enterprise connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-reference.html#dataflow-sap-adaptive-server-enterprise-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-reference.html#dataflow-sap-adaptive-server-enterprise-conn-connection-type)<br/>Choose the SAP Adaptive Server Enterprise connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-reference.html#dataflow-sap-adaptive-server-enterprise-conn-host)<br/>Specify the hostname or the IP address of the Sybase system

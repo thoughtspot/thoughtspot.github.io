@@ -11,12 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an SAP Adaptive Se
 
 4. Specify the sync properties for SAP Adaptive Server Enterprise:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary><p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p>
-   </details>
-
-   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-sap-adaptive-server-enterprise-sync.png "Enter connection details")-->
-
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-reference.html#dataflow-sap-adaptive-server-enterprise-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Fetch size]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-reference.html#dataflow-sap-adaptive-server-enterprise-sync-fetch-size)<br/>Specify the number of rows at a time to fetch and process in memory. If you specify zero, the system extracts all rows at once.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-adaptive-server-enterprise-reference.html#dataflow-sap-adaptive-server-enterprise-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.

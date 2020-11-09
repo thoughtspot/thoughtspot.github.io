@@ -11,10 +11,6 @@ After using ThoughtSpot DataFlow to establish a connection to an Azure Blob Stor
 
 4. Specify the sync properties for files:
 
-   <details>
-     <summary>See the <strong>Connection-specific sync properties</strong> screen</summary>
-     <p><img src="../../images/dataflow-set-sync-properties-draft.png" alt="Enter sync details" /></p></details>
-
      * [File name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-file-name)<br/>Specify name of the file<br/>Mandatory field.
      * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-column-delimiter)<br/>Specifies the delimiter between the columns in the source file<br/>Mandatory field.
      * [Enable archive on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-sync-enable-archive-on-success)<br/>Specify if file needs to be archived once it is succeeded<br/>Optional field.

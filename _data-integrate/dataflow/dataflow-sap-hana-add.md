@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the SAP HANA **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for SAP HANA</summary>
-        <p>
-        <img src="../../images/dataflow-sap-hana-create.png" alt="Create SAP HANA connection" /></p>
-    </details>
-
     * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-hana-reference.html#dataflow-sap-hana-conn-connection-name)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-hana-reference.html#dataflow-sap-hana-conn-connection-type)<br/>Choose the SAP HANA connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sap-hana-reference.html#dataflow-sap-hana-conn-host)<br/>Specify the hostname or the IP address of the Sap Hana system

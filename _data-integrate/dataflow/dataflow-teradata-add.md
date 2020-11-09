@@ -14,12 +14,6 @@ Follow these steps:
 
 4. After you select the Teradata **Connection type**, the rest of the connection properties appear.
 
-    <details>
-      <summary>See the <strong>Create connection</strong> screen for Teradata</summary>
-        <p>
-        <img src="../../images/dataflow-teradata.png" alt="Create Teradata connection" /></p>
-    </details>
-
     * [Connection Properties]({{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-reference.html#dataflow-teradata-conn-connection-properties)<br/>Name your connection.
     * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-reference.html#dataflow-teradata-conn-connection-type)<br/>Choose the Teradata connection type.
     * [Host]({{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-reference.html#dataflow-teradata-conn-host)<br/>Specify the hostname or the IP address of the Teradata system
