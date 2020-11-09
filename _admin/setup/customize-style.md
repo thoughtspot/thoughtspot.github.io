@@ -112,5 +112,5 @@ Changing this setting opens the links:
 
 |Link type|Opens in|
 |Link in search result table in ThoughtSpot|Same browser tab as ThoughtSpot application|
-|Link in table embedded in an iFrame|Same iFrame that contains the table|
-|Link in full ThoughtSpot application embedded in an iFrame|Same iFrame that contains the application|
+|Link in table embedded in an &lt;iframe&gt;|Same &lt;iframe&gt; that contains the table|
+|Link in full ThoughtSpot application embedded in an &lt;iframe&gt;|Same &lt;iframe&gt; that contains the application|
