@@ -1,54 +1,48 @@
 ---
-title: [Embed pinboard or visualization]
-summary: Learn how to embed a visualization or pinboard in your own Web page.
-last_updated: 11/18/2019
+title: [Embed Pinboard or visualization]
+summary: Learn how to embed a visualization or Pinboard in your own Web page.
+last_updated: 11/02/2020
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
-This page explains, through an example, how to embed a visualization (table or
-chart) or pinboard from ThoughtSpot in your own static Web page, portal, or
-application.
+This page explains, through an example, how to embed either a ThoughtSpot visualization (table or chart) or a ThoughtSpot Pinboard from ThoughtSpot in your own static Web page, portal, or application.
 
-To build this sample, you need to have access to a text editor and
-a ThoughtSpot instance with a visualization. You should also have some
-experience working with Javascript.
+To build this sample, you must have access to a text editor and a ThoughtSpot instance with a visualization. Experience working with Javascript also helps.
 
-## Get the link for an entire pinboard or single visualization
+## Get the link
 
-This procedure assumes the pinboard with the visualization you want to embed
-already exists. If the pinboard or visualization doesn't exist, create it now
-before continuing.
+You can get the link for an entire Pinboard, or single visualization
+
+This procedure assumes the Pinboard with the visualization you want to embed already exists.
 
 1. Log in to ThoughtSpot from a browser.
 
 2. Navigate to a visualization on the **Pinboard** tab.
 
-3. Open a pinboard.
+3. Open a Pinboard.
 
-3. Copy the URL for the entire pinboard and for a single visualization.
+3. Copy the URL:
 
-   If the object is a pinboard, click the ellipses icon
-   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
-    **Copy Link**.
+    -  **Pinboard embedding**: click the **More** menu at the level of the Pinboard, ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **[-] Copy embed link**.
 
-   ![]({{ site.baseurl }}/images/embed-link-1.png "Pinboard Link")
+        The format for the link is:  
 
-   The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
+        ```
+        <protocol>:<host>:<port>/#/embed/viz/<pinboardID>
+        ```
 
-   For a vizualization in a pinboard, click the ellipses icon
-   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
-    **Copy Link**.
+    - **Vizualization embedding**: click the **More** menu on the visual you plan to embed, ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **[-] Copy embed link**.
 
-   ![]({{ site.baseurl }}/images/embed-link-2.png "Visualization Link")
+        The format for the link is:  
 
-   The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>/<vizualizationId>`
+        ```
+        <protocol>:<host>:<port>/#/embed/viz/<pinboardID>/<vizualizationId>
+        ```
 
 ## Edit the test.html file
 
-You must edit the page in your application or web page where you want to
-embed a ThoughtSpot pinboard or visualization. For this example, you can get a copy of the
-<a href="{{ site.baseurl }}/downloads/test.html" download>test.html</a> file.
+You must edit the page in your application or web page where you want to embed a ThoughtSpot pinboard or visualization. For this example, you can get a copy of the <a href="{{ site.baseurl }}/downloads/test.html" download="test.html" target="_blank">test.html</a> file.
 
 1. Create an empty directory called `test`.
 2. Save the `test.html` file to the `test` directory.
@@ -57,7 +51,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
 5. Edit the `test.html` file in your favorite editor.
 6. Scroll down to the `Variables` section (about line 37).
 
-    Here are the fields in the `test.html` file you need to edit.
+    Here are the fields in the `test.html` file you must edit.
 
     ```JavaScript
     var protocol = "THOUGHTSPOT_PROTOCOL";
@@ -66,6 +60,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
     var pinboardId = "PINBOARD_ID";
     var vizualizationId = "VIZUALIZATON_ID";
     ```
+
 7. Edit each variable in the section and replace it with the IDs you copied from the pinboard.
 
    For example, your URL may look similar to the following:
@@ -90,30 +85,18 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
 
 ## Enable CORS for your client domain
 
-You must work with ThoughtSpot support to enable CORS between your client
-application domain and the ThoughtSpot domain. If you don't do this, you will
-receive an error message when `test.html` attempts to load the embedded objects.
+You must work with ThoughtSpot support to enable CORS between your client application domain and the ThoughtSpot domain. If you don't do this, you will receive an error message when `test.html` attempts to load the embedded objects.
 
-The test infrastructure uses Python's `simplehttpserver`, which runs by default
-as `localhost:8000`. ThoughtSpot support must have this information. You can
-also copy the `test` directory to an existing web server. If you do this,
-you must DNS for the server when you contact Support.
+The test infrastructure uses Python's `simplehttpserver`, which runs by default as `localhost:8000`. ThoughtSpot support must have this information. You can also copy the `test` directory to an existing web server. If you do this, you must DNS for the server when you contact Support.
 
 ## Test the example page
 
-You are almost ready to view your embedded pinboard and visualization. The
-fastest way to run a webserver and test the code is using Python's
-`simplehttpserver`.  If you have Python on your system you already have the
-`simplehttpserver`.
+You are almost ready to view your embedded pinboard and visualization. The fastest way to run a webserver and test the code is using Python's `simplehttpserver`.  If you have Python on your system you already have the `simplehttpserver`.
 
 1. Log in to ThoughtSpot.
 
    In production, you would have added authentication code to your client. You
-   haven't done that with this system. So, before you test, you must login to the
-   ThoughtSpot. Successfully logging in causes the system to create a session
-   and an authentication key. Your browser has this information and so when you
-   load the `test.html` page in another tab, you won't need to authenticate
-   again.
+   haven't done that with this system. So, before you test, you must login to the ThoughtSpot. Successfully logging in causes the system to create a session and an authentication key. Your browser has this information and so when you load the `test.html` page in another tab, you won't need to authenticate again.
 
 2. Change to your `test` directory.
 3. Start the `simplehttpserver` web server.
@@ -128,13 +111,11 @@ fastest way to run a webserver and test the code is using Python's
 
     `http://localhost:8000/test.html`
 
-    You should see something similar to the following:
-
-    ![]({{ site.baseurl }}/images/embed-3.png "Working embedded")
+    See if your Pinboard or visualization appears in the browser window.
 
 6. Check the browser console.
 
-    Success is appears in the console with a message similar to this:
+    On success, the console reports a message similar to the following:
 
     ```
     test.html:60 Initialization successful.
@@ -144,14 +125,13 @@ fastest way to run a webserver and test the code is using Python's
 
 ## Troubleshooting embeds
 
-If your embeds don't load, open the developer tools on your browser.  Look for
-errors in the page loading, usually on the **Console** tab. If you see an error
-similar to:
+If your embeds don't load, open the developer tools on your browser, and look for errors in the page loading, usually on the **Console** tab.
+
+You may see an error similar to the following:
 
 ```
 No 'Access-Control-Allow-Origin' header is present on the requested resource.
 ```
 
-Typically you see this if the cross domain (CORS) setting was not completed correctly on
-your ThoughtSpot cluster. Contact <a
-href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a> for more help.
+This occurs when the cross domain (CORS) setting is incorrect on your ThoughtSpot cluster. Contact <a
+href="https://community.thoughtspot.com/customers/s/contactsupport">ThoughtSpot Support</a> for more help.
