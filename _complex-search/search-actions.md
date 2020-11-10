@@ -16,7 +16,7 @@ Viewing the underlying data of your answer gives you an un-aggregated view of th
 Drilling down allows you to see more information about the columns used within your search.
 -   **[Exclude and include row values]({{ site.baseurl }}/complex-search/change-the-view.html#exclude-and-include-row-values)**  
 You can include or exclude row values from your answer.
--   **[Apply conditional formatting]({{ site.baseurl }}/end-user/search/about-conditional-formatting.html)**  
+-   **[Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html)**  
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values over, under, or within a particular threshold stand out.
 -   **[Work with answers]({{ site.baseurl }}/end-user/search/work-with-answers.html)**  
 You can make a copy of an answer if you would like to make edits without changing the original answer.
