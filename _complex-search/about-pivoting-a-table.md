@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Pivot tables are not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Pivot tables, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support. Answer V2 features and limitations currently only affect searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. If you have Answer V2 on, you can see existing Pivot tables in your existing Pinboards, but you cannot create new Pivot tables." %}
+{% include note.html content="Pivot tables are not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Pivot tables, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support. Answer V2 features and limitations currently only affect searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. If you have Answer V2 on, you can see existing Pivot tables in your existing Pinboards, but you cannot create new Pivot tables." %}
 
 
 Creating a pivot table enables exploring alternate visualization of data in a
