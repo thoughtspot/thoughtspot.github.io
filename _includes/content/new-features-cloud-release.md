@@ -30,7 +30,7 @@ Answer V2 is in Beta. It is off by default in ThoughtSpot Cloud clusters. The An
 <p>The new Formula Editor includes multi-line support, and a cleaner, bigger, and more intuitive interface.</p></li>
 <li><p><a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst-authored queries</a></p>
 <p>Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, can now create <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> sample queries based on their own data, which users see when they go through new user onboarding.</p></li>
-<li><p><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration enhancements:</a></p>
+<li><p><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration enhancements</a></p>
 <p>You can now perform conditional and number formatting for table summaries. Conditional formatting for attributes and measures in table cells is now more intuitive and robust.</p></li>
 </ul>
 
