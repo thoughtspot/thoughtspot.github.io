@@ -167,7 +167,7 @@ CREATE TABLE "sales_fact"
   "sale_amount" double,
   "fruitid" int,
   CONSTRAINT
-PRIMARY KEY("saleid,vendorid"))
+PRIMARY KEY("saleid", "vendorid"))
 PARTITION BY HASH(96)
 KEY ("saleid");
 ```
