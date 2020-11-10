@@ -1,86 +1,73 @@
 ---
 title: [Customize look and feel]
-
-
-last_updated: tbd
+last_updated: 11/03/2020
 summary: "You can brand the ThoughtSpot application for your company."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can customize the look and feel of the ThoughtSpot application for your
-company. Configuring these settings sets system-wide defaults for all your users.
+You can customize the look and feel of the ThoughtSpot application for your company. Configuring these settings sets system-wide defaults for all your users.
 
 Style customization is enabled by default. You can configure your cluster to disable this functionality.
-Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html) about disabling this feature.
+Contact <a href="https://community.thoughtspot.com/customers/s/contactsupport" target="_blank">ThoughtSpot Support</a> about disabling this feature.
 
 ## Where to customize styles
 
-A user with administrative rights can view and
-access the customization on the **Admin** page.
+A user must have administrative priveleges.
 
-![]({{ site.baseurl }}/images/custom-style.png)
+To access style customization,
 
-Use the **Style Customization** page to access the configuration settings.
+1. Click **Admin** on main navigation.
+
+2. Under **Settings**, select **Style Customization**.
 
 ## General guidelines for customization
 
-Your changes take effect either immediately or with browser refresh. You can
-revert your changes by using the **Reset** button which displays when your
-cursor moves to the right of any setting.
+Your changes take effect either immediately, or after you refresh the browser. You can revert your changes by using the **Reset** button that appears when you move your cursor moves to the right of the setting.
 
 ![]({{ site.baseurl }}/images/custom-style-reset.png)
 
-The following table lists the style customizations you can configure.
+You can configure these style customizations:
 
-<table>
-  <tr>
-    <th>Setting</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <th>Application Logo (Default) &amp; Favicon</th>
-    <td>Sets a default application and favicon logo. This should be 140 pixels square.</td>
-  </tr>
-  <tr>
-    <th>Application Logo (Wide)</th>
-    <td>This logo should be 440 x 100 pixels.</td>
-  </tr>
-  <tr>
-    <th>Chart Visualization Fonts</th>
-    <td>Set a font for chart labels. You can specify any Web Open Font Format (`WOFF`) file.</td>
-  </tr>
-  <tr>
-    <th>Table Visualization Fonts</th>
-    <td>Set a font for table labels. You can specify any Web Open Font Format (`WOFF`) file.</td>
-  </tr>
-  <tr>
-    <th>Embedded Application Background</th>
-    <td>Set the background for an embedded ThoughtSpot instance. This is only used if you are embedding ThoughtSpot in another application.</td>
-  </tr>
-  <tr>
-    <th>Chart Color Palettes</th>
-    <td>Set the default palette for all charts. To set a value, however over a color value and enter a HEX value or select one from the chart. Individual users can still customize their own chart colors. They can use the **Reset colors** option on a chart to clear their changes. </td>
-  </tr>
-  <tr>
-    <th>Footer text</th>
-    <td>Define a footer to appear with the ThoughtSpot application.</td>
-  </tr>
-  <tr>
-    <th>Page title</th>
-    <td>Sets the title for the browser tab.</td>
-  </tr>
-</table>
+<dl>
+  <dlentry>
+    <dt>Application Logo (Default) &amp; Favicon</dt>
+    <dd>Sets a default application and favicon logo. This should be 140 pixels square.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Application Logo (Wide)</dt>
+    <dd>This logo should be 440 x 100 pixels.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Chart Visualization Fonts</dt>
+    <dd>Set a font for chart labels. You can specify any Web Open Font Format (<code>WOFF</code>) file.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Table Visualization Fonts</dt>
+    <dd>Set a font for table labels. You can specify any Web Open Font Format (<code>WOFF</code>) file.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Embedded Application Background</dt>
+    <dd>Set the background for an embedded ThoughtSpot instance. This is only used if you are embedding ThoughtSpot in another application.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Chart Color Palettes</dt>
+    <dd>Set the default palette for all charts. To set a value, however over a color value and enter a HEX value or select one from the chart. Individual users can still customize their own chart colors. They can use the <strong>Reset colors</strong> option on a chart to clear their changes. </dd>
+  </dlentry>
+  <dlentry>
+    <dt>Footer text</dt>
+    <dd>Define a footer to appear with the ThoughtSpot application.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Page title</dt>
+    <dd>Sets the title for the browser tab.</dd>
+  </dlentry>
+</dl>
 
 ## How to specify fonts
 
-You can set your systems default fonts by specifying either or both of the
-**Chart Visualization Fonts** and **Table Visualization Fonts** values. To set
-this values, your font must be defined in a Web Open Font Format (`WOFF`) file.
+You can set your systems default fonts by specifying either or both of the **Chart Visualization Fonts** and **Table Visualization Fonts** values. To set this values, your font must be defined in a Web Open Font Format (`WOFF`) file.
 
-Changes to chart and table defaults apply only to charts and features created
-_after_ you configure a value. If you change table fonts, older tables retain
-their previous fonts. Some settings can be overridden on a per-object level.
-Users cannot configure their own defaults.
+Changes to chart and table defaults apply only to charts and features created _after_ you configure a value. If you change table fonts, older tables retain their previous fonts. Some settings can be overridden on a per-object level. Users cannot configure their own defaults.
 
 To set a new font:
 
@@ -106,11 +93,18 @@ To set a new font:
 
 ## How to specify the behavior or clickable links in data
 
-There is a system-wide setting which determines what happens when a user clicks on a link within the data. When your data includes URLs, they display as clickable links in ThoughtSpot tables. By default, clicking on a link opens the URL in a separate tab. But there is a system-wide setting that can be changed to open the links within the context in which they appear.
+There is a system-wide setting which determines what happens when a user clicks on a link within the data. When your data includes URLs, they display as clickable links in ThoughtSpot tables. By default, clicking on a link opens the URL in a separate tab. But there is a system-wide setting that can be changed to open the links within the context of where they appear.
 
-Changing this setting opens the links:
+Consider how the links open, by type:
 
-|Link type|Opens in|
-|Link in search result table in ThoughtSpot|Same browser tab as ThoughtSpot application|
-|Link in table embedded in an &lt;iframe&gt;|Same &lt;iframe&gt; that contains the table|
-|Link in full ThoughtSpot application embedded in an &lt;iframe&gt;|Same &lt;iframe&gt; that contains the application|
+<dl>
+  <dlentry>
+    <dt>Link in search result table in ThoughtSpot</dt>
+    <dd>Same browser tab as ThoughtSpot application</dd></dlentry>
+  <dlentry>
+    <dt>Link in table embedded in an &lt;iframe&gt;</dt>
+    <dd>Same &lt;iframe&gt; that contains the table</dd></dlentry>
+  <dlentry>
+    <dt>Link in full ThoughtSpot application embedded in an &lt;iframe&gt;</dt>
+    <dd>Same &lt;iframe&gt; that contains the application</dd></dlentry>
+</dl>
