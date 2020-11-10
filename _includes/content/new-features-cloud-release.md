@@ -3,12 +3,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <h3>Linked Pinboard filters</h3>
 You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Pinboard level. This is useful when you have a Pinboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets.<br><br>
 
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/linked-filters.html">Linked Pinboard filters</a>.<br>
+Refer to <a href="{{ site.baseurl }}/complex-search/linked-filters.html">Linked Pinboard filters</a>.<br>
 
 <h3>Selective Pinboard filters</h3>
 You can now configure Pinboard filters to apply to specific visualizations that you choose. This is useful when you would like to filter some, but not all, visualizations in a Pinboard.<br><br>
 
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/selective-filters.html">Selective Pinboard filters</a>.
+Refer to <a href="{{ site.baseurl }}/complex-search/selective-filters.html">Selective Pinboard filters</a>.
 
 <h3>Enhanced data modeling capabilities</h3>
 This release enables new data modeling capabilities. You can now:
@@ -26,14 +26,17 @@ ThoughtSpot supports maps of many countries. See the complete list in the <a hre
 Answer V2 is in Beta. It is off by default in ThoughtSpot Cloud clusters. The Answer V2 feature set contains the following features:
 
 <ul>
-<li><a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Improved Formula Editor</a></li>
-<li><a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst authored queries</a></li>
-<li><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration</a>: conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells</li>
+<li><p><a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Improved Formula Editor</a></p>
+<p>The new Formula Editor includes multi-line support, and a cleaner, bigger, and more intuitive interface.</p></li>
+<li><p><a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst-authored queries</a></p>
+<p>Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, can now create <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> sample queries based on their own data, which users see when they go through new user onboarding.</p></li>
+<li><p><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration enhancements:</a></p>
+<p>You can now perform conditional and number formatting for table summaries. Conditional formatting for attributes and measures in table cells is now more intuitive and robust.</p></li>
 </ul>
 
-The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn Answer V2 off for your company. You can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page.
+The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn Answer V2 off for your company. You can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page by selecting <strong>Switch to classic</strong> to turn it off and <strong>Try Beta experience</strong> to turn it on.
 
-Answer V2 features and limitations currently only affedt searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. For example, if you have Answer V2 on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. Similarly, if you have Answer V2 on, you can see existing Pivot tables in your existing Pinboards, but you cannot create new Pivot tables.
+Answer V2 features and limitations currently only affect searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. For example, if you have Answer V2 on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. Similarly, if you have Answer V2 on, you can see existing Pivot tables in your existing Pinboards, but you cannot create new Pivot tables.
 
 <ul>
 <li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
@@ -47,3 +50,6 @@ Answer V2 features and limitations currently only affedt searches and Answers, o
 You can now tailor the ThoughtSpot Help menu to your organization by customizing it from the Admin Console. When you configure these Help settings, you set system-wide defaults for all your users.
 
 Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Customize ThoughtSpot Help</a>.
+
+<h3>User Adoption Pinboard</h3>
+The <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> is now accessible from the Admin Console.
