@@ -1,29 +1,55 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
-<h3>Scriptability</h3>
-Scriptability contains the following new features:
-<ul>
-  <li>Export and update logical tables</li>
-  <li>Edit, validate, and publish objects using the TSL editor</li>
-  <li>Import multiple objects from the <strong>SpotApps</strong> page, or from the object list page</li>
-  <li>Update Views</li>
-  <li>GUID handling: a new <code>GUID</code> parameter in an object's .tsl file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one</li>
+<h3>Linked Pinboard filters</h3>
+You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Pinboard level. This is useful when you have a Pinboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets.<br><br>
 
+Refer to <a href="{{ site.baseurl }}/complex-search/linked-filters.html">Linked Pinboard filters</a>.<br>
+
+<h3>Selective Pinboard filters</h3>
+You can now configure Pinboard filters to apply to specific visualizations that you choose. This is useful when you would like to filter some, but not all, visualizations in a Pinboard.<br><br>
+
+Refer to <a href="{{ site.baseurl }}/complex-search/selective-filters.html">Selective Pinboard filters</a>.
+
+<h3>Enhanced data modeling capabilities</h3>
+This release enables new data modeling capabilities. You can now:
+<ul>
+<li>Join a View to a table</li>
+<li>Build a Worksheet on top of a View</li>
 </ul>
 
-See <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a>.
+<h3>Geomaps</h3>
+ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br>
 
-<h3>Style Customization</h3>
-You can now customize the ThoughtSpot application from the Admin Console. With style customization, you can change the fonts, chart color palettes, footer text, application logo, and background colors in your embedded ThoughtSpot instance.<br><br>
+ThoughtSpot supports maps of many countries. See the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
 
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/style-customization.html">Style customization</a>.
+<h3>Answer V2</h3>
+Answer V2 is in Beta. It is off by default in ThoughtSpot Cloud clusters. The Answer V2 feature set contains the following features:
 
-<h3>In-app acceptance of ThoughtSpot's use agreement</h3>
-You can now sign ThoughtSpot's end-user use agreement from the application itself. Even if you previously signed a paper copy of the use agreement, an admin must sign the agreement in the application, within 30 days of ThoughtSpot upgrading your cluster to Cloud 5.<br><br>
+<ul>
+<li><p><a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Improved Formula Editor</a></p>
+<p>The new Formula Editor includes multi-line support, and a cleaner, bigger, and more intuitive interface.</p></li>
+<li><p><a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst-authored queries</a></p>
+<p>Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, can now create <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> sample queries based on their own data, which users see when they go through new user onboarding.</p></li>
+<li><p><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration enhancements:</a></p>
+<p>You can now perform conditional and number formatting for table summaries. Conditional formatting for attributes and measures in table cells is now more intuitive and robust.</p></li>
+</ul>
 
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/use-agreement.html">ThoughtSpot use agreement</a>.
+The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn Answer V2 off for your company. You can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page by selecting <strong>Switch to classic</strong> to turn it off and <strong>Try Beta experience</strong> to turn it on.
 
-<h3>User adoption and performance Pinboards</h3>
-This release of ThoughtSpot Cloud contains two new default Pinboards for administrators. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a> to understand how your ThoughtSpot cluster is performing.<br><br>
+Answer V2 features and limitations currently only affect searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. For example, if you have Answer V2 on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. Similarly, if you have Answer V2 on, you can see existing Pivot tables in your existing Pinboards, but you cannot create new Pivot tables.
 
-See <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a>.
+<ul>
+<li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
+<li><a href="{{ site.baseurl }}/end-user/r-scripts/about-r-in-thoughtspot.html">R scripts</a></li>
+<li><a href="{{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#query-details">Query visualizer</a></li>
+<li><a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a></li>
+<li><a href="{{ site.baseurl }}/end-user/search/about-sankey-charts.html">Sankey charts</a></li>
+</ul>
+
+<h3>Customize ThoughtSpot Help</h3>
+You can now tailor the ThoughtSpot Help menu to your organization by customizing it from the Admin Console. When you configure these Help settings, you set system-wide defaults for all your users.
+
+Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Customize ThoughtSpot Help</a>.
+
+<h3>User Adoption Pinboard</h3>
+The <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> is now accessible from the Admin Console.
