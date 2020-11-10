@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 The **Information Center** teaches new users about ThoughtSpot with a brief lesson on navigation and several quick videos on ThoughtSpot's main features.
 
-When you sign in to ThoughtSpot, the **Information Center** appears on the right edge of the screen. It looks like this:
+When you sign in to ThoughtSpot, the **Information Center** appears on the lower right edge of the screen. It looks like this:
 
 ![Information center]({{ site.baseurl }}/images/information-center.png "Information center")
 
