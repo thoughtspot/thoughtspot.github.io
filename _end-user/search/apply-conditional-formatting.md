@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
 
-{% include note.html content="Certain elements of table configuration are part of the Answer V2 feature set. These elements include conditional and number formatting for table summaries and improved conditional formatting for attributes and measures in table cells. When Answer V2 is on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. You can turn Answer V2 on or return to the classic experience from the <strong>Data</strong> panel on the <strong>Search</strong> page. If you do not have the option to turn Answer V2 on, contact your administrator." %}
+{% include note.html content="Certain elements of table configuration are part of the Answer V2 feature set. These elements include conditional and number formatting for table summaries and improved conditional formatting for attributes and measures in table cells. When Answer V2 is on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. Answer V2 is in <strong>Beta</strong>. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, contact ThoughtSpot Support. If an administrator enables it for your cluster, you can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
 
 ## Understand conditional formatting
 

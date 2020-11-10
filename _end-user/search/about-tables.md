@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Certain elements of table configuration are part of the Answer V2 feature set. These elements include conditional and number formatting for table summaries and improved conditional formatting for attributes and measures in table cells. When Answer V2 is on, these new functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. You can turn Answer V2 on or return to the classic experience from the <strong>Data</strong> panel on the <strong>Search</strong> page. If you do not have the option to turn Answer V2 on, contact your administrator." %}
+{% include note.html content="Certain elements of table configuration are part of the Answer V2 feature set. These elements include conditional and number formatting for table summaries and improved conditional formatting for attributes and measures in table cells. When Answer V2 is on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. Answer V2 is in <strong>Beta</strong>. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, contact ThoughtSpot Support. If an administrator enables it for your cluster, you can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
 
 In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type `revenue`, you see the total sum of revenue as a single number. If you include the keyword `monthly`, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns, either from the table itself or from the **Edit table: Configure** menu. You can also change the column widths.
 
@@ -94,6 +94,8 @@ To change the number formatting:
 You can perform conditional formatting on both measures and attributes, within table cells and in the table summaries.
 
 Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table).
+
+Note that certain elements of conditional formatting are part of the Answer V2 feature set, which is in <span class="label label-beta">Beta</span>. These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. To turn Answer V2 on, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 ## Sort columns
 

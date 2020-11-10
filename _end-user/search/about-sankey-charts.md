@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Sankey charts are not available in the beta version of Answer V2. To use Sankey charts, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page." %}
+{% include note.html content="Sankey charts are not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Sankey charts, turn Answer V2 off from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support. Answer V2 features and limitations currently affect only searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. If you have Answer V2 on, you can see existing Sankey charts in your existing Pinboards, but you cannot create new Sankey charts." %}
 
 Sankey diagrams illustrate a flow through a process or system. Transactional
 data is optimal for this type of diagram.  For example, financial transactions
