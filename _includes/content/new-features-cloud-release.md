@@ -18,12 +18,12 @@ This release enables new data modeling capabilities. You can now:
 </ul>
 
 <h3>Geomaps</h3>
-ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br><br>
+ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br>
 
 ThoughtSpot supports maps of many countries. See the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
 
 <h3>Answer V2</h3>
-Answer V2 is in Beta. The Answer V2 feature set contains the following features:
+Answer V2 is in Beta. It is off by default in ThoughtSpot Cloud clusters. The Answer V2 feature set contains the following features:
 
 <ul>
 <li><a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Improved Formula Editor</a></li>
@@ -32,6 +32,8 @@ Answer V2 is in Beta. The Answer V2 feature set contains the following features:
 </ul>
 
 The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn Answer V2 off for your company. You can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page.
+
+Answer V2 features and limitations currently only affedt searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. For example, if you have Answer V2 on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. Similarly, if you have Answer V2 on, you can see existing Pivot tables in your existing Pinboards, but you cannot create new Pivot tables.
 
 <ul>
 <li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
