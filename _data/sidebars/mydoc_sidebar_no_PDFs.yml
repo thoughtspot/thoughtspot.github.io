@@ -924,9 +924,6 @@ entries:
       - title: Introduction to monitoring
         url: /admin/system-monitor/introduction.html
         output: web,admBk
-      - title: Overview board
-        url: /admin/system-monitor/overview.html
-        output: web,admBk
       - title: Data board
         url: /admin/system-monitor/data.html
         output: web,admBk
