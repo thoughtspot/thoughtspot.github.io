@@ -42,7 +42,7 @@ Note that the size of the root drive on appliances is limited to 200GB; the part
 <th>Minimum size</th>
 </tr>
 <tr>
-<th rowspan="2">Hosts in AWS, GCP, and VMWare&nbsp;</th>
+<th rowspan="2">Hosts in AWS, GCP, Azure, and VMWare&nbsp;</th>
 <td>OS partition</td>
 <td>SSD (root drive)</td>
 <td>Root partition for OS, <code>/tmp</code></td>
