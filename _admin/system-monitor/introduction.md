@@ -20,6 +20,7 @@ Administrators can also create their own, custom boards that reflect system data
 in ways that are meaningful to specific departments or groups. For more
 information, see the following documentation:
 
+* [Health Overview board]({{ site.baseurl }}/admin/system-monitor/overview.html)
 * [Data board]({{ site.baseurl }}/admin/system-monitor/data.html)
 * [Cluster Manager board]({{ site.baseurl }}/admin/system-monitor/cluster-manager.html)
 * [Alerts and Events board]({{ site.baseurl }}/admin/system-monitor/cluster-manager.html)

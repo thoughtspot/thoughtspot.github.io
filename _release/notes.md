@@ -127,7 +127,8 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
   <li>The <strong>System Overview Pinboard</strong> in the Admin Console has been deprecated. You can find visualizations from it on the <a href="{{ site.baseurl }}/admin/admin-portal/system-cluster-pinboard.html">System Cluster Pinboard</a> and the <a href="{{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html">System Alerts Pinboard</a>.</li>
   <li>The <strong>Total Capacity</strong> visualization is now in the <strong>System Cluster Pinboard</strong>.</li>
   <li>The visualizations about user activity that appeared in the <strong>System Overview Pinboard</strong> now appear in the new <a href="{{ site.baseurl }}/admin/admin-portal/user-adoption-pinboard.html">User Adoption Pinboard</a>.</li>
-  <li>The <strong>Relational Data Cache</strong> and <strong>Relational Search Engine</strong> panels that appeared in the <strong>System Overview Pinboard</strong> now appear in the <strong>Data > Usage > Data</strong>.</li>
+  <li>The <strong>Relational Data Cache</strong> and <strong>Relational Search Engine</strong> panels that appeared in the <strong>System Overview Pinboard</strong> now appear in <strong>Data > Usage > Data</strong>.</li>
+  <li>Many of the visualizations that appeared in the <strong>System Overview Pinboard</strong> appear in the <a href="{{ site.baseurl }}/admin/system-monitor/overview.html">System Information and Usage Pinboard</a>.</li>
   <li>The <strong>Configuration Events</strong> panel that appeared in the <strong>System Overview Pinboard</strong> now appears in the <a href="{{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html">System Alerts Pinboard</a>.</li></ul>
   </dd></dlentry>
 
