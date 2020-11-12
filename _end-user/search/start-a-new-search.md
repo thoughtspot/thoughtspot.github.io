@@ -10,7 +10,6 @@ To start a new search:
 
 1. Click **Search** on the top navigation bar. You can also click **Search your data** at the top of the home page.
 
-     ![]({{ site.baseurl }}/images/start_a_new_search.png "Start a new search")
 2. Click the Data button, to the left of the search field.
 
      ![]({{ site.baseurl }}/images/start_a_new_search_data.png "Search data")
