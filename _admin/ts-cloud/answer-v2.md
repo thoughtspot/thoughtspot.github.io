@@ -1,13 +1,14 @@
 ---
 title: [Answer V2 feature set]
-last_updated: 10/23/2020
+last_updated: 11/12/2020
+summary: Answer V2 <span class="label label-beta">Beta</span> is a feature set that makes the experience of searching on data or viewing and interacting with Answers more powerful and intuititive. The Answer V2 feature set includes an improved Formula Editor, analyst-authored queries for Search Assist, table summary configuration, and improved conditional formatting for tables and table summaries.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Overview
 
-Answer V2 is in <span class="label label-beta">Beta</span>. This feature set is part of ThoughtSpot's move to a new stack. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). If an administrator enables it for your cluster, you can turn it on or off [individually](#toggle-on-off) from the **Data** panel on the **Search** page. The Answer V2 feature set contains the following features:
+Answer V2 is in **Beta**. This feature set is part of ThoughtSpot's move to a new stack. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). If an administrator enables it for your cluster, you can turn it on or off [individually](#toggle-on-off) from the **Data** panel on the **Search** page. The Answer V2 feature set contains the following features:
 
 {: id="answer-v2-features"}
 * [Improved Formula Editor]({{ site.baseurl }}/complex-search/how-to-add-formula.html)
