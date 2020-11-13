@@ -18,8 +18,6 @@ To create a Pinboard:
 
 1. Select **Pinboards**, on the top navigation bar.
 
-     ![The top navigation bar]({{ site.baseurl }}/images/click-pinboards.png "The top navigation bar")
-
 2. Select **+ New Pinboard** on the Pinboards list page.
 
      ![Select the new Pinboard button]({{ site.baseurl }}/images/add_new_pinboard.png "Select the new Pinboard button")
@@ -45,7 +43,7 @@ an Answer to a Pinboard:
 ## Download a Pinboard as a PDF file
 
 You can download a Pinboard as a PDF file, without having to download each visualization separately. Downloading a Pinboard works just as it would when
-downloading an answer: simply click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Download as PDF**.
+downloading an answer: simply click the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Download as PDF**.
 
 ![Download your Pinboard]({{ site.baseurl }}/images/pinboard-download-pdf.png "Download your Pinboard")
 
@@ -60,7 +58,7 @@ Refer to [Migrate or restore objects]({{ site.baseurl }}/admin/scriptability/scr
 ## Details about a Pinboard
 
 You can see who authored a Pinboard, when it was created, and when it was last
-modified by selecting the **more options menu** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Pinboard Info**.
+modified by selecting the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Pinboard Info**.
 
 ![]({{ site.baseurl }}/images/pinboard-info.png)
 
@@ -68,11 +66,9 @@ modified by selecting the **more options menu** icon ![more options menu icon]({
 ## Other Pinboard actions
 
 Other Pinboard actions include actions you normally perform on your search as
-well as actions that you can only perform on a Pinboard. You can see these options when you select the **more options menu** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right corner of the Pinboard.
+well as actions that you can only perform on a Pinboard. You can see these options when you select the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right corner of the Pinboard.
 
-![]({{ site.baseurl }}/images/pinboard_actions.png "Pinboard actions button")
-
-You can also complete actions for a specific visualization in a Pinboard. You can see these options when you select the **more options menu** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} that appears when you hover over the visualization.
+You can also complete actions for a specific visualization in a Pinboard. You can see these options when you select the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} that appears when you hover over the visualization.
 
 ![]({{ site.baseurl }}/images/pinboard-controls.png "Pinboard controls")
 
