@@ -1,7 +1,7 @@
 ---
 title: [Schedule a pinboard job]
 
-last_updated: tbd
+last_updated: 11/13/2020
 summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,18 +15,9 @@ To schedule a pinboard:
 
 1. Sign in to ThoughtSpot from a browser.
 2. Click **Pinboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
-
 3. Select the pinboard you want to create a schedule for.
-4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
-
-     ![]({{ site.baseurl }}/images/view_schedules.png "View pinboard schedules")
-
+4. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
 5. Click **+ Schedule** to add a new schedule.
-
-    ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
-
      On the **Add a Schedule** page, you create a new schedule for your pinboard.
 
     ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
