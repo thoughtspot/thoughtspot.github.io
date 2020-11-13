@@ -1,6 +1,6 @@
 ---
 title: [Copy a pinboard or visualization link]
-last_updated: tbd
+last_updated: 11/13/2020
 summary: "In pinboards, there is a copy link option that lets you copy the link to access the pinboard and visualizations directly."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,24 +14,21 @@ You can also use this link for embedding the chart or table in another Web page,
 To copy the link for a pinboard:
 
 1. Click **Pinboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
-
 2. On the pinboard list page, click the pinboard you would like to get a link for.
-3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy link**.
+3. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy link**.
 
      ![]({{ site.baseurl }}/images/copy_pinboard_link.png "Copy pinboard link option")
 
-4. Copy the pinboard link. The highlighted portion is the pinboard ID.
+4. Copy the pinboard link. The highlighted text portion following "embed/viz/" is the pinboard ID.
 
      ![]({{ site.baseurl }}/images/copy_link_pinboard.png "Copy pinboard link")
 
 ## Copying a visualization link     
 
-1. To copy an individual visualization link, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy link** of the visualization you would like to copy a link from.
+1. To copy an individual visualization link, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy link** of the visualization you would like to copy a link from.
 
      ![]({{ site.baseurl }}/images/copy_link_of_a_visualization.png "Copy visualization link option")
 
-2. Copy the visualization link. The highlighted portion is the visualization ID.
+2. Copy the visualization link. The highlighted portion following "embed/viz" is the visualization ID.
 
      ![]({{ site.baseurl }}/images/copy_link_viz_pinboard_part.png "Copy visualization link")
