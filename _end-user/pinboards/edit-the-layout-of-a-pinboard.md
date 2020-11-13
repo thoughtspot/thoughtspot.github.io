@@ -49,8 +49,6 @@ To delete a visualization:
 
 4. Save your pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
-     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
-
 ## Copy and edit a visualization from your pinboard
 
 To edit a copy of a visualization:
