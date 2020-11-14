@@ -1,6 +1,6 @@
 ---
 title: [Present a pinboard as a slideshow]
-last_updated: 6/30/19
+last_updated: 11/13/2020
 summary: "Displaying your pinboard as a slideshow is a good way to present its contents to others."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,8 +12,6 @@ permalink: /:collection/:path.html
 To start a presentation, follow these steps:
 
 1. Click **Pinboards** on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 2. Select a pinboard from the list of pinboards by clicking on its title.
 
