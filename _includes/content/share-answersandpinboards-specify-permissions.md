@@ -6,8 +6,6 @@
 
 4. Enter users or groups with whom you want to share this object in the text box.
 
-    ![Enter users or groups]({{ site.baseurl }}/images/sharing-textbox.png "Enter users or groups")
-
     Note that you can only enter email addresses whose domains are in your list of allowed domains. These domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-information-10px.png){: .inline}.
 
     {% include tip.html content="If you want to hide the allowed email domains for your company, or otherwise customize them, contact ThoughtSpot support." %}
@@ -35,9 +33,8 @@
 
     ![Stop sharing]({{ site.baseurl }}/images/sharing-delete.png "Stop sharing")
 
-6. You can send an email notification and an optional message:
+6. You can send an email notification and an optional message.
 
-    ![Send notification]({{ site.baseurl }}/images/sharing-notifmessage.png "Send notification")
 
 5. You can also copy a direct link to the Answer, Pinboard, or visualization within a Pinboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
 
