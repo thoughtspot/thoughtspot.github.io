@@ -13,8 +13,7 @@ Before people can log in and use ThoughtSpot, you need to create a username, a
 password, and a membership in one or more groups for them.
 
 This page describes manual creation of users, groups, and privileges, but you
-can also manage users through [LDAP]({{ site.baseurl
-}}/admin/setup/about-LDAP.html#) or SAML. 
+can also manage users through SAML. 
 
 ## Privileges and groups
 

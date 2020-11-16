@@ -40,7 +40,7 @@ running out of disk space to store backups.
 
 Lightweight backups contain everything that makes up a cluster:
 
--   Cluster configuration (SSH, LDAP, etc.)
+-   Cluster configuration (SSH, etc.)
 
 -   In-memory data cache
 

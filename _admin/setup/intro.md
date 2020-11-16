@@ -31,7 +31,6 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     | Firewall                        | Disabled |               |
     | Saml                            | Disabled |               |
-    | Ldap                            | Disabled |               |
     | CustomBranding                  | Disabled |               |
     | CustomBrandingFontCustomization | Disabled |               |
     | DataConnect                     | Disabled |               |
@@ -50,7 +49,6 @@ The following tasks are also available:
 * [Set your locale]({{ site.baseurl }}/admin/setup/set-your-thoughtspot-locale.html)
 * [Test connectivity between nodes]({{ site.baseurl }}/admin/setup/test-network.html)
 * [Set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html)
-* [Integrate LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html)
 * [Set up monitoring]({{ site.baseurl }}/admin/setup/set-up-monitoring.html)
 * [Configure support services]({{ site.baseurl }}/admin/setup/work-with-ts-support.html)
 * [Network ports]({{ site.baseurl }}/admin/setup/firewall-ports.html)
