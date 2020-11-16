@@ -22,9 +22,6 @@ To share a table, worksheet, or View from the **Data** tab, follow these steps.
 
 6. Click **+ Add users or groups** and select the users and groups with whom you want to share.
 
-    ![Add users or groups]({{ site.baseurl }}/images/sharing-data-addusers.png "Add users or groups")
-    <!--{% include image.html file="sharing-data-addusers.png" title="Add users or groups" alt="Add the users and groups you want to have access to the dataset." caption="Add users or groups" %}-->
-
 7. [Specify permissions](#specify-permissions).
 
 {: id="share-dataset"}
