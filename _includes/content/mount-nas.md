@@ -39,7 +39,7 @@ will not function normally.
 
         {% include note.html content="Other command-line options are available to forward to the command (default: `noexec`)." %}
 
-    -   For a CIFS (Common Internet File System) directory. Use `1001` for the `uid` and `gid`, as in the example:
+    -   For a CIFS (Common Internet File System) directory. Use `1001` for the `uid` and `gid`.
 
         ```
         tscli nas mount-cifs
