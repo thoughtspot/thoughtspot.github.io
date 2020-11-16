@@ -2,7 +2,7 @@
 title: [Understand views]
 tags: [bestpractices]
 keywords: search,view,aggregated
-last_updated: 11/2/2018
+last_updated: 11/16/2020
 summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -65,8 +65,7 @@ in the first (left) position. The table or view with the primary key should be i
 second (right) position.
 
 For the best performance, views should have 50 or fewer
-columns and no more than 10 million rows. Exceeding these boundaries can make
-your view slow. You can remedy this by materializing it.
+columns and no more than 10 million rows. If your View has more than 10 million rows, consider materializing it. If your View has more than 40 million rows, consider sharding it.
 
 You can use an ETL (extract, transform, load) process to circumvent these
 limitations.
