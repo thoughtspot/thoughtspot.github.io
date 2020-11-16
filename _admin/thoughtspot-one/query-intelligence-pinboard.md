@@ -6,11 +6,11 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The Stats and Trends for search on answers Pinboard, a default ThoughtSpot Pinboard that is visible to all users, provides this information.
+As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **Stats and Trends for search on answers** Pinboard, a default ThoughtSpot Pinboard that is visible to all users, provides this information.
 
-To access the Stats and Trends for search on answers Pinboard, search for "Stats and trends for search on answers" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
+To access the **Stats and Trends for search on answers** Pinboard, search for "Stats and trends for search on answers" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
 
-The Stats and Trends for search on answers Pinboard contains the following visualizations:
+The **Stats and Trends for search on answers** Pinboard contains the following visualizations:
 - [Number of searches](#number-of-searches)
 - [Number of users](#number-of-users)
 - [% of queries for which no result exists](#no-result-queries)

@@ -26,7 +26,7 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 ## Search across existing Answers and Pinboards
 You can search across all existing Answers, Pinboards, and visualizations in Pinboards that are built on Worksheets you have access to. Use this functionality if you cannot remember the exact name of a useful Answer, do not remember which Pinboard a visualization is on, or if you are simply wondering if someone else already created an Answer or Pinboard that would suit your needs.
 
-To search across existing objects, toggle the **Search type** to **Search answers** by selecting the **Search answers** icon ![]({{ site.baseurl }}/images/icon-eureka-8px.png){: .inline} at the top right, next to the search bar. You can select a specific Worksheet from the **Sources** dropdown to the left of the search bar, or search across all Worksheets that you have access to. Type your query into the search bar at the top of the screen. Select **Go** or click Enter on your keyboard. For example, search `sales in the last year bob` if you are looking for a particular Pinboard about sales that your coworker Bob made. This type of search does not require you to be extensively familiar with your company's data.
+To search across existing objects, toggle the **Search type** to **Search answers** by selecting the **Search answers** icon ![]({{ site.baseurl }}/images/icon-eureka-8px.png){: .inline} at the top right, next to the search bar. The home page displays the **Search answers** experience by default. You can select a specific Worksheet from the **Sources** dropdown to the left of the search bar, or search across all Worksheets that you have access to. Type your query into the search bar at the top of the screen. Select **Go** or click Enter on your keyboard. For example, search `sales in the last year bob` if you are looking for a particular Pinboard about sales that your coworker Bob made. This type of search does not require you to be extensively familiar with your company's data and how it is organized.
 
 See [link title]({{ site.baseurl }}/directory/sub-directory/page.html) for more information on searching across existing objects.
 
@@ -34,7 +34,7 @@ See [link title]({{ site.baseurl }}/directory/sub-directory/page.html) for more 
 ## Search your data
 You can search directly on your data. Use this functionality if you would like to create your own Answers and Pinboards to answer questions about your data.
 
-To search your data, either click on the **Search** tab from the top navigation bar, or toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year`. This type of search requires you to be familiar with your company's data, to know which Worksheets contain data that interests you, and the names of the columns and values within that Worksheet.
+To search your data, either click on the **Search** tab from the top navigation bar, or toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year store #103 bakery`. This type of search requires you to be familiar with your company's data, to know which Worksheets contain data that interests you, and the names of the columns and values within that Worksheet.
 
 See [what are searches and answers]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html), and other articles in the **Search** section of this documentation, for more information on searching your data.
 
@@ -48,7 +48,7 @@ This change does not persist across sessions. If you log out and log back in, th
 
 {: id="trending"}
 ## Trending Pinboards and Answers
-The home page shows you the top 5 trending Pinboards and Answers among all users in your environment on the right panel of the screen. Easily view these trending objects by clicking on their name from the **Trending** panel.
+The home page shows you the top 5 trending Pinboards and Answers among all users in your environment on the right panel of the screen. Easily view and interact with these trending objects by clicking on their name from the **Trending** panel.
 
 {: id="filter"}
 ## Filter existing objects
@@ -71,7 +71,7 @@ You can sort the objects that display on the home page in the following ways:
 
 To see more objects, scroll down to the bottom of the page and select **Next**. ThoughtSpot displays 20 objects on each page.
 
-These changes do not persist across sessions. If you log out and log back in, the view returns to the default, where you see all object types, all tags, and all authors.
+These changes do not persist across sessions. If you log out and log back in, the view returns to the default.
 
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
