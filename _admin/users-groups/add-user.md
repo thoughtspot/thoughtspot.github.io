@@ -5,9 +5,9 @@ summary: "For each unique person who accesses ThoughtSpot, you must create a use
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
+You can create users directly in ThoughtSpot, or import users and user groups through SAML or similar protocols.
 
-For users who have access through LDAP, the LDAP installation manages all user information.
+For users who have access through SAML, the SAML installation manages all user information.
 
 {: id="add-user"}
 ## Create a user in ThoughtSpot
@@ -53,8 +53,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="username">
         <th>Username</th>
         <td>Yes</td>
-        <td>A login name for the user. Usernames must be unique and lowercase.
-        <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain-qualified (<code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
+        <td>A login name for the user. Usernames must be unique and lowercase.</td>
       </tr>
       <tr id="display-name">
         <th>Display name</th>

@@ -19,8 +19,6 @@ When you create a new user, we recommend that you add them to a user group immed
 
   To include users in the onboarding process, each user profile must include a valid email address; see [Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user). [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to whitelist email domains.  
 
-  To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See [Configure LDAP for Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
-
 Before starting the onboarding process, an administrator must specify the configuration.
 
 {: id="onboarding-process"}
