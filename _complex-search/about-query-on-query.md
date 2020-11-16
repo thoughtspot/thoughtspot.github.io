@@ -1,6 +1,6 @@
 ---
 title: [Understanding views]
-last_updated: 04/12/2020
+last_updated: 11/16/2020
 summary: "If you want to perform a search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -41,7 +41,7 @@ Here are the high-level steps for creating and using views:
 
 - The order of the objects being linked (joined) matters, because joins are directional. The table or view with the foreign key must be in the the first (left) position. The table or view with the primary key must be in the second (right) position.
 
-- For best performance, views should have 50 or fewer columns, and no more than 10 million rows. Exceeding these boundaries may make queries against this view run slow.
+- For best performance, views should have 50 or fewer columns, and no more than 10 million rows. If your View has more than 10 million rows, consider materializing it. If your View has more than 40 million rows, consider sharding it.
 
 - To improve performance, you can materialize the views.
 
