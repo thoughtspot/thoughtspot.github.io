@@ -8,7 +8,7 @@ Click the **Configure** button in the middle of the screen, and add your informa
 
 ![Configure Active Directory]({{ site.baseurl }}/images/admin-portal-active-directory-configure.png "Configure Active Directory")
 
-If you select **yes** for **SSL required**, ThoughtSpot prompts you to enter the SSL certificate and certificate alias:
+If you select **yes** for **SSL required**, ThoughtSpot prompts you to enter the SSL [certificate](#ssl) and certificate alias. The certificate alias is a unique name you make up for your SSL certificate, in string format. If you replace the SSL certificate, you need a new certificate alias.
 
 ![SSL required - yes]({{ site.baseurl }}/images/admin-portal-active-directory-ssl.png "SSL required - yes")
 
