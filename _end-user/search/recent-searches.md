@@ -1,7 +1,7 @@
 ---
 title: [Search suggestions]
 
-last_updated: tbd
+last_updated: 11/16/2020
 summary: "How ThoughtSpot learns from your searches and helps you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -42,8 +42,6 @@ When there are more than one possible meaning for a search term, you can provide
 disambiguation by selecting from a list of choices. Now, your choice is sticky.
 That means you won’t have to select it again, in the scope of the current
 search.
-
- ![]({{ site.baseurl }}/images/disambiguation.png "Auto-disambiguation example")
 
 ## Out of scope columns
 
