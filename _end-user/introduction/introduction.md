@@ -1,6 +1,6 @@
 ---
-title: [Introduction to the User Guide]
-summary: This ThoughtSpot User Guide contains information on navigating and searching data with ThoughtSpot. It assists you with starting new searches, managing your pinboards, and troubleshooting.
+title: [Introduction to ThoughtSpot]
+summary: This page contains information on navigating and searching data with ThoughtSpot. It assists you with starting new searches, managing your pinboards, and troubleshooting.
 last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
