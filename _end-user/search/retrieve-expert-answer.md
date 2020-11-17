@@ -1,6 +1,6 @@
 ---
 title: ["View an answer from an expert"]
-last_updated: 3/20/2020
+last_updated: 11/17/2020
 summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,8 +17,6 @@ If you're not set up with an email in ThoughtSpot, follow these steps to view yo
 1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-20px.png){: .inline} (help) icon menu.
 
 2. In the drop-down, select **Expert Requests**.
-
-   ![Click Expert requests]({{ site.baseurl }}/images/ask-an-expert.png "Click Expert requests")
 
 3. Under **I am a requester**, view your Ask an Expert request. If the status is **resolved**, click on the request.
 
