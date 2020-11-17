@@ -1,3 +1,4 @@
+<!-- ifdef::software[] -->
 <!-----
 title: [Configure SAML]
 last_updated: 5/6/2020
@@ -75,3 +76,4 @@ To set up SAML on ThoughtSpot for user authentication, follow these steps:
 
 4. When the configuration completes, open a browser and navigate to the ThoughtSpot login page. It should show the SSO option.
 -->
+<!-- endif::software[] -->
