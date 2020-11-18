@@ -52,18 +52,18 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“Full application embedding”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Fully embedding ThoughtSpot content gives your users the ability to:" />
-<meta property="og:description" content="Fully embedding ThoughtSpot content gives your users the ability to:" />
+<meta name="description" content="Advantages of full embedding" />
+<meta property="og:description" content="Advantages of full embedding" />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/about-full-embed.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/about-full-embed.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-11-09T11:45:56-08:00" />
+<meta property="article:published_time" content="2020-11-18T10:20:40-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Full application embedding”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Full application embedding”]","dateModified":"2020-11-09T11:45:56-08:00","url":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/about-full-embed.html","datePublished":"2020-11-09T11:45:56-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/about-full-embed.html"},"description":"Fully embedding ThoughtSpot content gives your users the ability to:","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Advantages of full embedding","@type":"BlogPosting","headline":"[“Full application embedding”]","dateModified":"2020-11-18T10:20:40-08:00","datePublished":"2020-11-18T10:20:40-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/about-full-embed.html"},"url":"https://docs.thoughtspot.com/latest/app-integrate/embedding-viz/about-full-embed.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5296,38 +5296,41 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span> -->
 
     
 
-  <p>Fully embedding ThoughtSpot content gives your users the ability to:</p>
+  <h2 id="advantages-of-full-embedding">Advantages of full embedding</h2>
+
+<p>Fully embedding ThoughtSpot content gives your users the ability to perform many essential tasks:</p>
 
 <ul>
-  <li>create answers and pinboards</li>
-  <li>share objects with users</li>
-  <li>upload data and refresh uploaded data</li>
-  <li>relate uploaded data with existing worksheets</li>
+  <li>create Answers and Pinboards</li>
+  <li>share objects with other users</li>
+  <li>upload data, and refresh uploaded data</li>
+  <li>relate uploaded data to existing worksheets</li>
 </ul>
 
-<p>This is useful for supplying the full search experience into an iframe with
-different navigation views and toggle options. However, there are limitations.
-Users won’t be able to:</p>
+<p>This is useful for supplying the full search experience into an <code class="language-plaintext highlighter-rouge">iframe</code> with different navigation views and toggle options.</p>
+
+<h2 id="limitations-of-full-embedding">Limitations of full embedding</h2>
+
+<p>There are some limitations; users in a fully  embedded applications cannot perform the following tasks:</p>
 
 <ul>
-  <li>create worksheets or views.</li>
-  <li>modify profiles.</li>
-  <li>view the Help Center.</li>
+  <li>create worksheets or views</li>
+  <li>modify profiles</li>
+  <li>view the Help Center</li>
 </ul>
 
-<p>Before you try the technique, make sure you have read, <a href="/latest/app-integrate/embedding-viz/about-embedding-viz.html">Understand embedding</a> in this
-section.</p>
+<p>Before committing to fully embed the application, review the article <a href="/latest/app-integrate/embedding-viz/about-embedding-viz.html">Understand embedding</a>.</p>
 
-<h2 id="a-single-page-with-the-full-application-embedded">A single page with the full application embedded</h2>
+<h2 id="example-of-full-application-embedding">Example of full application embedding</h2>
 
-<p>The following sample <a href="/latest/downloads/embed.html" target="_blank" class="_"><code>embed.html</code></a> demonstrates how you might full
-embed app the application.</p>
+<p>The following sample demonstrates how you can fully
+embed an application.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!doctype html&gt;
 &lt;html lang="en" style="height: 100%; width: 100%"&gt;
@@ -5372,30 +5375,67 @@ embed app the application.</p>
 &lt;/html&gt;
 </code></pre></div></div>
 
-<p>The function <code class="language-plaintext highlighter-rouge">updateIframeUrl(id)</code> reflects the logic to change the src URL of
-the <code class="language-plaintext highlighter-rouge">iframe</code> when your users clicks on different navigation buttons.</p>
+<p>The function <code class="language-plaintext highlighter-rouge">updateIframeUrl(id)</code> contains the logic to change the src URL of the <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code> when your users click  navigation buttons.</p>
+
+<h2 id="showing-applications-in-a-full-screen">Showing applications in a full screen</h2>
+
+<p>To have an embedded ThoughtSpot application show in a full screen, the <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code> element must have the <code class="language-plaintext highlighter-rouge">allow="fullscreen"</code> parameter or its analogues.</p>
+
+<h3 id="browser-support-for-full-screen-embedding">Browser support for full screen embedding</h3>
+
+<p>Note the following support across browsers:</p>
+<dl>
+  <dlentry>
+    <dt>Supported desktop browsers</dt>
+    <dd>Chrome, Edge, Firefox, and Opera</dd></dlentry>
+  <dlentry>
+    <dt>Supported mobile browsers</dt>
+    <dd>Android webview,	Chrome for Android,	Firefox for Android, Opera for Android, and Samsung Internet</dd></dlentry>
+  <dlentry>
+    <dt>NOT supported desktop browsers</dt>
+    <dd>Ingernet Explorer, Safari</dd></dlentry>
+  <dlentry>
+    <dt>NOT supported mobile browser</dt>
+    <dd>Safari on iOS</dd></dlentry>
+</dl>
+
+<h3 id="framework-support-for-full-screen-embedding">Framework support for full screen embedding</h3>
+
+<p>Additionally, consider the following framework factors:</p>
+<dl>
+  <dlentry>
+    <dt>allowfullscreen</dt>
+    <dd>This attribute is the legacy precursor of <code>allow="fullscreen"</code>, and may still work with some browsers.<br />Set to <code>true</code> if the <code>&lt;iframe&gt;</code> can activate fullscreen mode by calling the <code>requestFullscreen()</code> method.<br />We strongly recommend that you update your embedding scripts to use the new approach inside the <code>&lt;iframe&gt;</code> tag.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Spring MVC</dt>
+    <dd>This framework supports the <code>allowfullscreen="true"</code> parameter inside the <code>iframe</code> tag.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>React</dt>
+    <dd>This framework is case sensitive, and uses the attribute <code>allowFullScreen</code> inside the <code>iframe</code> tag.</dd>
+  </dlentry>
+</dl>
 
 <h2 id="hide-the-thoughtspot-navigation-bar">Hide the ThoughtSpot navigation bar</h2>
 
-<p>To hide the primary navigation, configure this:</p>
+<p>To hide the primary navigation, configure these:</p>
 
 <ul>
-  <li>Make sure the app is in an <code class="language-plaintext highlighter-rouge">&lt;iframe/&gt;</code> .</li>
-  <li>Set the <code class="language-plaintext highlighter-rouge">embedApp</code> flag as true. This flag determines if the application is embedded.</li>
-  <li>Set the <code class="language-plaintext highlighter-rouge">primaryNavHidden</code> flag as true (the default). This flag determines navigation
-visibility.</li>
+  <li>Ensure the app is in an <code class="language-plaintext highlighter-rouge">&lt;iframe/&gt;</code> .</li>
+  <li>Set the <code class="language-plaintext highlighter-rouge">embedApp</code> flag to <code class="language-plaintext highlighter-rouge">true</code> to specify that the application is embedded.</li>
+  <li>Set the <code class="language-plaintext highlighter-rouge">primaryNavHidden</code> flag to <code class="language-plaintext highlighter-rouge">true</code> (the default) to specify that navigation visibility is off.</li>
 </ul>
 
-<p>If either flag is <code class="language-plaintext highlighter-rouge">false</code>, the primary navigation will appear.</p>
+<p>If either flag is <code class="language-plaintext highlighter-rouge">false</code>, primary navigation appears.</p>
 
 <h2 id="error-messages-and-full-embed">Error messages and full embed</h2>
 
-<p>ThoughtSpot can disable error messages within the ThoughtSpot iFrame and provide
-APIs to you to access those messages, and display them in your UI appropriately.
-This is done by suppressing error messages in the UI, and passing their details
-along to window.postMessage function, which your parent app can listen to.
-Hidden messages can be viewed in the console logs. Contact ThoughtSpot Support
-if you would like to enable this feature.</p>
+<p>In ThoughtSpot, you can disable error messages within the ThoughtSpot <code class="language-plaintext highlighter-rouge">iframe</code>. We provide APIs so you can access error messages and display them in your application’s UI appropriately.</p>
+
+<p>This approach suppressing error messages inside the <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code>, and uses the <code class="language-plaintext highlighter-rouge">window.postMessage</code> function to passes them through to the parent application, which acts as the listener.</p>
+
+<p>You can view these ‘hidden’ messages in the console logs. Contact ThoughtSpot Support to enable this feature.</p>
 
 <h2 id="additional-notes">Additional notes</h2>
 
@@ -5404,7 +5444,7 @@ if you would like to enable this feature.</p>
 <ul>
   <li>Call <code class="language-plaintext highlighter-rouge">thoughtspot.&lt;customerURL&gt;.com/#/answer</code> and use that to access the search functionality.</li>
   <li>Call <code class="language-plaintext highlighter-rouge">thoughtspot.&lt;customerURL&gt;.com/#/pinboards</code> and use that to access saved pinboards.</li>
-  <li>Use SAML for authentication against ThoughtSpot within the iFrame.</li>
+  <li>Use SAML for authentication against ThoughtSpot within the <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code>.</li>
 </ul>
 
   <div class="tags">
@@ -5432,9 +5472,9 @@ if you would like to enable this feature.</p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Nov 9, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Nov 18, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 11/02/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
