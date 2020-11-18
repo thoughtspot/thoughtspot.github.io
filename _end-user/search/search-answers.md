@@ -47,11 +47,11 @@ This is why searching over existing Answers provides the necessary information t
     - Modified date: latest first
     - Modified date: earliest first    
 
-## Example of Search over Answers
+## Working with results from Search over Answers
 
-The search `sales in the last year` returns the matches based on existing Answers (charts, headlines, and tables):
+Let us consider the `sales in the last year` example. This search returns matches based on existing Answers (charts, headlines, and tables) and Pinboards:
 
-![]({{ site.baseurl }}/images/search-answers-result.png "Result of a search across existing Answers")
+![]({{ site.baseurl }}/images/search-answers-result.png "Result of a search across existing Answers and Pinboards")
 
 1. When you select an existing Answer artifact from the list by clicking it, you can see what it is. If it is a chart, the results list reports the type of chart (Column, Bar, Line, and so on). The results list also includes all relevant Headlines and Tables.
 
@@ -70,13 +70,13 @@ The search `sales in the last year` returns the matches based on existing Answer
 
 2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filter by**, and **Group by**.
 
-3. To see how the Answer appears as a chart (or table, or ), click **Preview**, and notice the detail in the graph.
+3. To see how the Answer appears as a chart, a table, or headline, click **Preview**, and notice the detail in the graph.
 
    ![]({{ site.baseurl }}/images/search-answerss-results-preview.png "Preview matching Answer")
 
 4. The interface displays 10 matching Answers. Click **Next** to see the next set of results.   
 
-5. When you explore a Pinboard search result, notice that it contains representative icons for the Pinboard visualizations.
+5. When you explore a Pinboard search result, notice that it contains representative icons for the visualizations inside the Pinboard.
 
    ![]({{ site.baseurl }}/images/search-answers-results-pinboard.png "Result of Search is a Pinboard")
 
