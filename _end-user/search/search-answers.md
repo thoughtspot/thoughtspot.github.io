@@ -51,6 +51,8 @@ This is why searching over existing Answers provides the necessary information t
 
 Let us consider the `sales in the last year` example. This search returns matches based on existing Answers (charts, headlines, and tables) and Pinboards:
 
+![]({{ site.baseurl }}/images/search-answers-result.png "Result of a search across existing Answers and Pinboards")
+
 1. When you select an existing Answer artifact from the list by clicking it, you can see what it is. If it is a chart, the results list reports the type of chart (Column, Bar, Line, and so on). The results list also includes all relevant Headlines and Tables.
 
    Additionally, the interface exposes these details:
