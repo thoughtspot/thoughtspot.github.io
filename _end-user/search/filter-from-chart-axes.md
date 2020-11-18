@@ -13,7 +13,7 @@ You can filter a chart in two ways:
 
 To add a filter from the chart axes:
 
-1. While viewing your answer as a chart, click the chart axis you want to filter on, and select **Filter...**.
+1. While viewing your answer as a chart, click the chart axis you want to filter on, and select **Filter**.
 
      ![]({{ site.baseurl }}/images/filter-by-chart-axis.png "Choose filter from a chart axis")
 
