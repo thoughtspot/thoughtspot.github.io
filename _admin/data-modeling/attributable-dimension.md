@@ -2,7 +2,7 @@
 title: [Change the Attribution Dimension]
 
 toc: true
-last_updated: 5/6/2020
+last_updated: 11/18/2020
 summary: "The Attribution Dimension setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -57,11 +57,18 @@ You cannot configure this setting in the model file. You can only configure it
 on a table-by-table basis. To designate a column as not being an attribution
 dimension (not producing any meaningful attribution across a chasm trap):
 
-1. Find the column that is not an attribution dimension.
+1. Navigate to the dimension table you would like to edit. Note that you do not need to set the Attribution Dimension for fact tables.
+1. Find the column that is not an attribution dimension. Since the Attribution Dimension is a table-wide setting, you only need to turn it off on one column. As a best practice, use the primary key.
 2. Select its **Attribution Dimension**.
 3. Set the value to `NO`.
 4. Save your changes.
 
+## Additional resources
+As you develop your expertise in data modeling and the Attribution Dimension setting, we recommend the following ThoughtSpot Community article:
+* [What are Chasm Traps, and What is Attribution?](https://community.thoughtspot.com/customers/s/article/What-is-Attribution-and-Chasm-Traps?){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://community.thoughtspot.com/s/" target="_blank"><img src="{{ "/images/thoughtspot-community.png" | prepend: site.baseurl  }}" alt="ThoughtSpot Community"></a>
 
 ## Related information  
 
