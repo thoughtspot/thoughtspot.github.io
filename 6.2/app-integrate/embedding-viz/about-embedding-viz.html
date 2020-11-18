@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="This page provides an explanation of what you must consider when embedding ThoughtSpot."> -->
+<!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  ">
 <title>Understand embedding | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.2/css/syntax.css">
@@ -52,18 +52,18 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“Understand embedding”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Embedding allows you to embed all or part of ThoughtSpot in another client application." />
-<meta property="og:description" content="Embedding allows you to embed all or part of ThoughtSpot in another client application." />
+<meta name="description" content="Embedding allows you to use all or part of ThoughtSpot inside another client application." />
+<meta property="og:description" content="Embedding allows you to use all or part of ThoughtSpot inside another client application." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.2/app-integrate/embedding-viz/about-embedding-viz.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.2/app-integrate/embedding-viz/about-embedding-viz.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-11-09T11:39:37-08:00" />
+<meta property="article:published_time" content="2020-11-18T10:11:59-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Understand embedding”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Understand embedding”]","dateModified":"2020-11-09T11:39:37-08:00","url":"https://docs.thoughtspot.com/6.2/app-integrate/embedding-viz/about-embedding-viz.html","datePublished":"2020-11-09T11:39:37-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/app-integrate/embedding-viz/about-embedding-viz.html"},"description":"Embedding allows you to embed all or part of ThoughtSpot in another client application.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"Embedding allows you to use all or part of ThoughtSpot inside another client application.","@type":"BlogPosting","headline":"[“Understand embedding”]","dateModified":"2020-11-18T10:11:59-08:00","datePublished":"2020-11-18T10:11:59-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/app-integrate/embedding-viz/about-embedding-viz.html"},"url":"https://docs.thoughtspot.com/6.2/app-integrate/embedding-viz/about-embedding-viz.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5260,8 +5260,6 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">This page provides an explanation of what you must consider when embedding ThoughtSpot.</div>
-   
 
     
     
@@ -5302,47 +5300,30 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Embedding allows you to embed all or part of ThoughtSpot in another client
-application.</p>
+  <p>Embedding allows you to use all or part of ThoughtSpot inside another client application.</p>
 
-<h2 id="decide-what-to-embed-and-where">Decide what to embed and where</h2>
+<h2 id="decide-what-to-embed-and-where">Decide what to embed, and where</h2>
 
-<p>The type of embedding your company requires can help you determine what type of
-embedding to use. For example, you may simply need a single chart displayed as a
-wallboard or you may want your customers to access reports on their own data.
-The first example could require modifying a single HTML page while the later
-example may require working with a development team and several different
-workflows in a browser application.</p>
+<p>The type of embedding your company requires can help you determine what type of embedding to use. For example, you may simply need a single chart displayed as a wallboard or you may want your customers to access reports on their own data. The first example could require modifying a single HTML page while the later example may require working with a development team and several different workflows in a browser application.</p>
 
-<p>Regardless of the simplicity or complexity of your client application, its
-infrastructure must allow for loading and calling the ThoughtSpot JS library.
-This library allows you to authenticate to ThoughtSpot and load specific
-objects.</p>
+<p>Regardless of the simplicity or complexity of your client application, its infrastructure must allow for loading and calling the ThoughtSpot JS library. This library allows you to authenticate to ThoughtSpot and load specific objects.</p>
 
 <p>There are different methods for embedding ThoughtSpot into a client application:</p>
 
-<table>
-<colgroup>
-   <col style="width:25%" />
-   <col style="width:75%" />
-</colgroup>
-  <tr>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Full</td>
-    <td>Embeds the entire ThoughtSpot application including menu bars. Full navigation is supported.</td>
-  </tr>
-  <tr>
-    <td>Page-level</td>
-    <td>Embeds pages without the menus bars or page-level navigation. This is useful where you want to limit the inclusion to a portion of ThoughtSpot. For example, you may only embed the <strong>Search</strong> or the <strong>Answers</strong> page.</td>
-  </tr>
-  <tr>
-    <td>Object-level</td>
-    <td>Embed a single visualization in your application. Content is created in ThoughtSpot and then that content is embedded. The content is rendered within an <code>iframe</code>. This returns a JSON object that includes the underlying data.</td>
-  </tr>
-</table>
+<dl>
+  <dlentry>
+    <dt>Full</dt>
+    <dd>Embeds the entire ThoughtSpot application including menu bars. Full navigation is supported.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Page-level</dt>
+    <dd>Embeds pages without the menus bars or page-level navigation. This is useful where you want to limit the inclusion to a portion of ThoughtSpot. For example, you may only embed the <strong>Search</strong> or the <strong>Answers</strong> page.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Object-level embedding</dt>
+    <dd>Embed a single visualization in your application. Content is created in ThoughtSpot and then that content is embedded. The content is rendered within an <code>iframe</code>. This returns a JSON object that includes the underlying data.</dd>
+  </dlentry>
+</dl>
 
 <p>You can also use the ThoughtSpot data APIs to request data from ThoughtSpot.</p>
 
@@ -5358,103 +5339,67 @@ enable embed before using this functionality.</p>
 
 <p>One of these involves what happens when a user clicks on a link within the data. When your data includes URLs, they display as clickable links in ThoughtSpot tables. By default, clicking on a link opens the URL in a separate tab. But there is a system-wide setting that can be changed to open the links within the context in which they appear.</p>
 
-<p>Changing this setting opens the links:</p>
+<p>Changing this setting opens the links. Consider the possible link types, and how they open:</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Link type</td>
-      <td>Opens in</td>
-    </tr>
-    <tr>
-      <td>Link in search result table in ThoughtSpot</td>
-      <td>Same browser tab as ThoughtSpot application</td>
-    </tr>
-    <tr>
-      <td>Link in table embedded in an iFrame</td>
-      <td>Same iFrame that contains the table</td>
-    </tr>
-    <tr>
-      <td>Link in full ThoughtSpot application embedded in an iFrame</td>
-      <td>Same iFrame that contains the application</td>
-    </tr>
-  </tbody>
-</table>
+<dl>
+  <dlentry>
+    <dt>Link in search result table in ThoughtSpot</dt>
+    <dd>Same browser tab as ThoughtSpot application</dd></dlentry>
+  <dlentry>
+    <dt>Link in table embedded in an <code>&lt;iframe&gt;</code></dt>
+    <dd>Same <code>&lt;iframe&gt;</code> that contains the table</dd></dlentry>
+  <dlentry>
+    <dt>Link in full ThoughtSpot application embedded in an <code>&lt;iframe&gt;</code> element</dt>
+    <dd>Same <code>&lt;iframe&gt;</code> that contains the application</dd></dlentry>
+</dl>
 
 <h2 id="choose-an-authentication-methodology">Choose an authentication methodology</h2>
 
-<p>You can control which type of authentication you use between your client
-application and ThoughtSpot.</p>
+<p>You can control which type of authentication you use between your client application and ThoughtSpot.</p>
 
 <h3 id="no-authentication">No Authentication</h3>
 
-<p>You can simply not set up authentication. This would require the user to
-<em>already be logged into ThoughtSpot</em> before interacting with your client
-application. This is typically only useful when testing your client. You would
-not use this in your production environment.</p>
+<p>You can simply not set up authentication. This would require the user to be <em>already logged into ThoughtSpot</em>, before interacting with the client application. This approach is for testing the client. Do not use this in a production environment.</p>
 
 <h3 id="saml">SAML</h3>
 
-<p>Before you can embed all or part of ThoughtSpot, you must authenticate to
-ThoughtSpot using SAML with the the public REST API call. After authentication,
-a URL is provided to call the desired visualization and populate it into an
-<code class="language-plaintext highlighter-rouge">iframe</code>.</p>
+<p>Before you can embed all or part of ThoughtSpot, you must authenticate to ThoughtSpot using SAML with the public REST API call. After authentication, a URL is provided to call the desired visualization, and populate it into an
+<code>&lt;iframe&gt;</code> element.</p>
 
-<p>You must <a href="/6.2/admin/setup/configure-SAML-with-tscli.html">configure SAML</a> on your ThoughtSpot
-instance before using this method.</p>
+<p>You must <a href="/6.2/admin/setup/configure-SAML-with-tscli.html">configure SAML</a> on your ThoughtSpot instance before using this method.</p>
 
 <h3 id="trusted-authentication-service">Trusted authentication service</h3>
 
-<p>A ThoughtSpot installation can enable support for token-based authentication
-service. This allows an installation to use a central authentication service
-rather than using ThoughtSpot to authenticate. In this architecture, ThoughtSpot
-provides the service with a token that allows it to authenticate on behalf of
-users.</p>
+<p>A ThoughtSpot installation can enable support for token-based authentication service. This allows an installation to use a central authentication service rather than using ThoughtSpot to authenticate. In this architecture, ThoughtSpot provides the service with a token that allows it to authenticate on behalf of users.</p>
 
-<p>A trusted authenticator application or service obtains a token from ThoughtSpot.
-This token is used to obtain trust from other, third-party client applications
-that need access to ThoughtSpot. In the following scenario, the trust authenticator
-forwards requests for ThoughtSpot data from client applications to ThoughtSpot.</p>
+<p>A trusted authenticator application or service obtains a token from ThoughtSpot. This token is used to obtain trust from other, third-party client applications that need access to ThoughtSpot. In the following scenario, the trust authenticator forwards requests for ThoughtSpot data from client applications to ThoughtSpot.</p>
 
 <p><img src="/6.2/images/authentication.png" alt="" title="Authentication flow" /></p>
 
-<p>A user already logged into client-application interacts with a ThoughtSpot embed
-point which causes the following processes:</p>
+<p>A user who is already logged into client-application interacts with a ThoughtSpot embed point, which initiates the following processes:</p>
 
 <ol>
   <li>The client-side application requests a user token from the trusted authenticator.</li>
-  <li>The trusted authenticator requests user token from ThoughtSpot.</li>
+  <li>The trusted authenticator requests a user token from ThoughtSpot.</li>
   <li>ThoughtSpot verifies the authenticator and returns a user token.</li>
   <li>The authenticator returns the user token to the client.</li>
   <li>The client forwards the user token to ThoughtSpot.</li>
   <li>ThoughtSpot validates the token and returns information commensurate with that authenticated user’s authorization.</li>
 </ol>
 
-<h2 id="plan-for-cross-origin-http-requests-cors">Plan for Cross-Origin HTTP Requests (CORS)</h2>
+<h2 id="plan-for-cross-origin-http-requests-cors">Plan for cross-origin HTTP Requests (CORS)</h2>
 
-<p>Collecting user credentials from one application (domain) and sending them to
-another (such as ThoughtSpot) can present security vulnerabilities such as a
-phishing attack. Cross-origin or cross-domain verification closes this vulnerability.</p>
+<p>Collecting user credentials from one application (domain) and sending them to another application (such as ThoughtSpot) can present security vulnerabilities. Cross-origin or cross-domain verification prevents such security risks.</p>
 
-<p>When embedding, you must enable CORS between your client application domain and
-the ThoughtSpot domain. This protects your data, so that another actor cannot
-use the same URL to embed the visualization in its own Web pages.</p>
+<p>When embedding, you must enable CORS between your client application domain and the ThoughtSpot domain. This protects your data, so that another actor cannot use the same URL to embed the visualization in its own Web pages.</p>
 
 <h2 id="decide-if-you-need-to-change-the-feedback-email">Decide if you need to change the feedback email</h2>
 
-<p>ThoughtSpot has an automated feature that collects feedback from users and sends
-it to ThoughtSpot Support. Depending on what and how you embed, user
-actions with your embedded application can trigger feedback. You can continue to
-forward feedback in this manner or direct the feedback to another email. To
-learn how to change the feedback email, see <a href="/6.2/admin/setup/work-with-ts-support.html#manage-the-feedback-contact">Manage the feedback contact</a>.</p>
+<p>ThoughtSpot has an automated feature that collects feedback from users and sends it to ThoughtSpot Support. Depending on what and how you embed, user actions with your embedded application can trigger feedback. You can continue to forward feedback in this manner or direct the feedback to another email. To learn how to change the feedback email, see <a href="/6.2/admin/setup/work-with-ts-support.html#manage-the-feedback-contact">Manage the feedback contact</a>.</p>
 
 <h2 id="remove-the-thoughtspot-branded-footer">Remove the ThoughtSpot branded footer</h2>
 
-<p>The ThoughtSpot footer appears by default in the ThoughtSpot application. It
-also appears with an embed application that encompasses an individual pinboard
-or a full application. In embed applications that are have a single
-visualization, you can ask your ThoughtSpot support engineer to disable the
-footer.</p>
+<p>The ThoughtSpot footer appears by default in the ThoughtSpot application. It also appears with an embed application that encompasses an individual Pinboard, or a full application. In embed applications that are have a single visualization, you can ask your ThoughtSpot support engineer to disable the footer.</p>
 
   <div class="tags">
     <div style="float:right;">
@@ -5481,9 +5426,9 @@ footer.</p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Nov 9, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Nov 18, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 11/06/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
