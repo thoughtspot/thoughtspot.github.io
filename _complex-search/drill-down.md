@@ -1,6 +1,6 @@
 ---
 title: [Drill down into your data]
-last_updated: 1/22/2020
+last_updated: 11/18/2020
 summary: "Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,8 +16,7 @@ You can drill down in both tables and chart visualizations, on both [standalone 
 
 2. Select **Drill down**.<br>
 This limits the data you are exploring to that particular data point or chart object.
-    ![Drill down from a data point]({{ site.baseurl }}/images/drilldown-table.png "Drill down from a data point in a table")
-    <!--{% include image.html file="drilldown-table.png" title="Drill down from a data point in a table" alt="You can drill down from just one data point, in either table or visualization mode." caption="Drill down from a data point in a table" %}-->
+
     ![Drill down from a chart object]({{ site.baseurl }}/images/drilldown-chart.png "Drill down from a data point in a chart")
     <!--{% include image.html file="drilldown-chart.png" title="Drill down from a data point in a chart" alt="You can drill down from a column in your data, in either table or visualization mode." caption="Drill down from a data point in a chart" %}-->
 
@@ -53,7 +52,7 @@ If you want to go back one step at a time while drilling down, [add your answer 
 
 ## Save and share your new answer
 When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar later.
-1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
+1. Click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 2. Select **copy and edit**.
 3. **Save** your new Answer and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.
