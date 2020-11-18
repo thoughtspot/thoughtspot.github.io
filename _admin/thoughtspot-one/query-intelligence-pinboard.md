@@ -1,16 +1,16 @@
 ---
-title: [Stats and Trends for search on answers Pinboard]
-summary: "The Stats and Trends for search on answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
-last_updated: 11/12/2020
+title: [Stats and Trends for Search on Answers Pinboard]
+summary: "The Stats and Trends for Search on Answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
+last_updated: 11/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **Stats and Trends for search on answers** Pinboard, a default ThoughtSpot Pinboard that is visible to all users, provides this information.
+As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **Stats and Trends for Search on Answers** Pinboard, a default ThoughtSpot Pinboard that is visible to all users, provides this information.
 
-To access the **Stats and Trends for search on answers** Pinboard, search for "Stats and trends for search on answers" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
+To access the **Stats and Trends for Search on Answers** Pinboard, search for "Stats and trends for search on answers" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
 
-The **Stats and Trends for search on answers** Pinboard contains the following visualizations:
+The **Stats and Trends for Search on Answers** Pinboard contains the following visualizations:
 - [Number of searches](#number-of-searches)
 - [Number of users](#number-of-users)
 - [% of queries for which no result exists](#no-result-queries)
@@ -26,7 +26,7 @@ The **Stats and Trends for search on answers** Pinboard contains the following v
 
 {% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have searching for Answers and Pinboards on in your environment, or if it is newly on, and few users have searched on it." %}
 
-![Stats and Trends for search on answers Pinboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "Stats and Trends for search on answers Pinboard")
+![Stats and Trends for Search on Answers Pinboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "Stats and Trends for Search on Answers Pinboard")
 
 {: id="number-of-searches"}
 ## Number of searches

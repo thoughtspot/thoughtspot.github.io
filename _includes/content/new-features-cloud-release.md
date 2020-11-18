@@ -4,16 +4,24 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 The ThoughtSpot <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html">Home page</a> allows you to access all your essential actions as a business user. You can:
 
-- Search across existing Answers and Pinboards
-- Search your data to create new Answers and Pinboards
-- View objects you viewed recently
-- View trending Pinboards and Answers
-- Filter existing objects by favorite, author, tag, or type of object
-- Sort existing objects by author, views, or most recently viewed
-- Bulk mark objects as favorites
+<ul>
+<li>Search across existing Answers and Pinboards</li>
+<li>Search your data to create new Answers and Pinboards</li>
+<li>View objects you viewed recently</li>
+<li>View trending Pinboards and Answers</li>
+<li>Filter existing objects by favorite, author, tag, or type of object</li>
+<li>Sort existing objects by author, views, or most recently viewed</li>
+<li>Bulk mark objects as favorites</li>
+</ul>
 
 <h3>Search existing Answers</h3>
 In addition to the existing Search over data, this release gives business users easy <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search over existing Answers and Pinboards</a>. This  meets the users' information needs by making Answers searchable, sortable, and applying filters on relevance, recency, number of views, authorship, metrics used, and so on.
+
+<h3>Stats and Trends for Search on Answers Pinboard</h3>
+Use this default <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Pinboard</a> to analyze how users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create.
+
+<h3>Disable Answer Search for specific Worksheets</h3>
+When users search for existing Answers and Pinboards, the default experience is to search across all Worksheets that they have access to. You may not want users to search for existing Answer and Pinboards built on certain Worksheets that are works in progress or deprecated. You can disable searching for Answers on specific Worksheets. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/disable-discover-for-worksheet.html">Disable Answer Search</a>.
 
 <h3>Linked Pinboard filters</h3>
 You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Pinboard level. This is useful when you have a Pinboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets.<br><br>

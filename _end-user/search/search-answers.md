@@ -35,7 +35,7 @@ This is why searching over existing Answers provides the necessary information t
 
 5. Specify if you want to search across Answers and Pinboards created by all users (default), or just certain users (including yourself).
 
-6. Type your query into the search bar. Notice that the suggestions that appear show the name the existing Answer or Pinboard, and its author.
+6. Type your query into the search bar. Notice that the suggestions that appear show the name of the existing Answer or Pinboard, and its author.
 
    Select **Go** or click Enter on your keyboard.
 
@@ -49,11 +49,11 @@ This is why searching over existing Answers provides the necessary information t
 
 ## Example of Search over Answers
 
-Search `sales in the last year` returns the matches based on existing Answers (charts, headlines, and tables):
+The search `sales in the last year` returns the matches based on existing Answers (charts, headlines, and tables):
 
 ![]({{ site.baseurl }}/images/search-answers-result.png "Result of a search across existing Answers")
 
-1. When you select an existing Answer artifact from the list by clicking it, you can see what it is. If a chart, the result list report the type of chart (Column, Bar, Line, and so on). The results list also includes all relevant Headlines and Tables.
+1. When you select an existing Answer artifact from the list by clicking it, you can see what it is. If it is a chart, the results list reports the type of chart (Column, Bar, Line, and so on). The results list also includes all relevant Headlines and Tables.
 
    Additionally, the interface exposes these details:
 
