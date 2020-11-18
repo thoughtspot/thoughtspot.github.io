@@ -24,11 +24,11 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 
 {: id="search-existing"}
 ## Search across existing Answers and Pinboards
-You can search across all existing Answers, Pinboards, and visualizations in Pinboards that are built on Worksheets you have access to. Use this functionality if you cannot remember the exact name of a useful Answer, do not remember which Pinboard a visualization is on, or if you are simply wondering if someone else already created an Answer or Pinboard that would suit your needs.
+{% include content/search-answers-description.md %}
 
 To search across existing objects, toggle the **Search type** to **Search answers** by selecting the **Search answers** icon ![]({{ site.baseurl }}/images/icon-eureka-8px.png){: .inline} at the top right, next to the search bar. The home page displays the **Search answers** experience by default. You can select a specific Worksheet from the **Sources** dropdown to the left of the search bar, or search across all Worksheets that you have access to. Type your query into the search bar at the top of the screen. Select **Go** or click Enter on your keyboard. For example, search `sales in the last year bob` if you are looking for a particular Pinboard about sales that your coworker Bob made. This type of search does not require you to be extensively familiar with your company's data and how it is organized.
 
-See [link title]({{ site.baseurl }}/directory/sub-directory/page.html) for more information on searching across existing objects.
+See [Search Answers]({{ site.baseurl }}/end-user/search/search-answers.html) for more information on searching across existing objects.
 
 {: id="search-data"}
 ## Search your data
@@ -36,7 +36,7 @@ You can search directly on your data. Use this functionality if you would like t
 
 To search your data, either click on the **Search** tab from the top navigation bar, or toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year store #103 bakery` to see last year's sales in the bakery department for store 103. This type of search requires you to be familiar with your company's data, to know which Worksheets contain data that interests you, and the names of the columns and values within that Worksheet.
 
-See [what are searches and answers]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html), and other articles in the **Search** section of this documentation, for more information on searching your data.
+See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
 {: id="recently-viewed"}
 ## Recently viewed

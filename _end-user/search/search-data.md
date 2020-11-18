@@ -1,61 +1,33 @@
 ---
-title: ["What are Searches and Answers?"]
-last_updated: 09/23/2019
+title: ["Search data"]
+last_updated: 11/16/2020
 summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
+redirect_from:
+- /end-user/search/about-starting-a-new-search.html
 permalink: /:collection/:path.html
 ---
-Using ThoughtSpot's relational search is simple, so anyone can use it. In the
-search bar, type what you are interested in exploring, for example `revenue
-midwest sales rep`. Searches return a set of results in the form of a table or a
-chart. ThoughtSpot likes to call this set of results in response to a search an
-_answer_.
-
-As you get better with ThoughtSpot's search, you will be able to get more out of
-your data by performing more complex searches.  There are a few basic things you
-should understand before starting a new ThoughtSpot search.
-
 ## How do I search data?
+
+To search data, make sure that the search bar icon is set to **Search data**.
+
+![]({{ site.baseurl }}/images/search-data.png "Search bar for Search data")
 
 You’ve probably seen one of these before:
 
  ![]({{ site.baseurl }}/images/search_bar_blank.png "Search bar")
 
-Click in the box and start typing some letters. As soon as you begin typing, ThoughtSpot suggests some search terms Type slowly and use the suggestions to find what you're looking for.
+Click in the box and start typing some letters. As soon as you begin typing, ThoughtSpot suggests some search terms. Type slowly, and use the suggestions to find what you're looking for.
 
 You can see an answer in the form of a chart or a table. If you do not see an answer, press **Enter** on your keyboard.
 
-You should know that search in ThoughtSpot is more like an Amazon search than a conversation. For example. Instead of:
+When you phrase a question in ThoughtSpot Search, use key words instead of full conversational style.
 
-```
-Find me all books by Lewis Carroll with the title Alice in Wonderland
-```
+For example, avoid: `Find all books by Lewis Carroll with the title Alice in Wonderland`. Instead, type: `carroll alice`.
 
-You'd type:
+In another example, avoid `Find the largest city by population`. Inastead, type: `largest city by population`.
 
-```
-carroll alice
-```
-
-Or consider Google. You wouldn’t type in:
-
-```
-Find me the largest city by population
-```
-
-You’d type:
-
-```
-largest city by population
-```
-
-or simply:
-
-```
-largest city population
-```
-
-That’s how search works in ThoughtSpot. You can use some helping words like “by” and “for” but they can also be left out, and the search will return the same answer.
+Do use helper words, like “by” and “for”, but they can also be left out, and the search will return the same answer.
 
 ## What kinds of things can I type?
 
@@ -63,7 +35,7 @@ Search is based on the tables that exist in your data. Tables are made of rows a
 
 -   The column name: like revenue, product name, or store
 -   Any of the values in the columns: like 20000, kitten chow, or richmond
--   One of the special [keywords]({{ site.baseurl }}/reference/keywords.html#) ThoughtSpot understands: like yesterday, &gt;, or contains
+-   One of the special [keywords]({{ site.baseurl }}/reference/keywords.html#) ThoughtSpot understands: like <code>yesterday</code>, <code>&gt;</code>, or <code>contains</code>.
 
 ## Save an answer
 
