@@ -73,7 +73,7 @@ entries:
         output: web
       - title: Search Data
         url: /end-user/search/search-data.html
-        output: web    
+        output: web
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
@@ -124,6 +124,12 @@ entries:
         output: web
       - title: Selective Pinboards filters
         url: /complex-search/selective-filters.html
+        output: web
+      - title: Disable Answer Search for specific Worksheets
+        url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
+        output: web
+      - title: Stats and Trends for Search on Answers Pinboard
+        url: /admin/thoughtspot-one/query-intelligence-pinboard.html
         output: web
       - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
