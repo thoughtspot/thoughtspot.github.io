@@ -30,7 +30,7 @@ You create a connection to the external database, choosing the columns from each
 
 ## Recommended instance types
 
-The following sections contain the supported and recommended instance types for a ThoughtSpot Embrace deployments in AWS, Azure, and GCP. When setting up your cluster, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
+The following sections contain the supported and recommended instance types for ThoughtSpot Embrace deployments in AWS, Azure, and GCP. When setting up your cluster, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
 
 ### AWS
 #### VMs with EBS-only persistent storage
