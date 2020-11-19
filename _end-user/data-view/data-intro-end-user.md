@@ -1,6 +1,6 @@
 ---
 title: ["Understand data sources"]
-last_updated: tbd
+last_updated: 11/19/2020
 summary: "Use the Data tab to manage data sources."
 toc: false
 sidebar: mydoc_sidebar
@@ -27,7 +27,7 @@ Use the filters at the top of the page to find the data you are interested in.
 From the **Data** tab, you can also delete or apply stickers to tables and data
 sources in bulk by selecting them and clicking the appropriate action button.
 
-![]({{ site.baseurl }}/images/manage_data_page.png "Data page")
+![]({{ site.baseurl }}/images/manage-data-page.png "Data page")
 
 
 ## Related information
