@@ -2,6 +2,8 @@
 title: [Connection reference for Google BigQuery]
 last_updated: 9/21/2020
 summary: Learn about the fields used to create a BigQuery connection using ThoughtSpot Embrace.
+redirect_from:
+- /data-integrate/embrace/embrace-gbq-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
