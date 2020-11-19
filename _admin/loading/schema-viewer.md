@@ -1,6 +1,6 @@
 ---
 title: [How to view a data schema]
-last_updated: 07/27/2019
+last_updated: 11/19/2020
 toc: true
 summary: "Use the schema viewer to see tables and worksheets and their relationships. "
 sidebar: mydoc_sidebar
@@ -14,11 +14,9 @@ You must have **Admin** privileges to use the **Schema Viewer**.
 
 1. Click the **Data** tab in the top menu.  
 
-   ![]({{ site.baseurl }}/images/click-data.png "Click Data")
-
 2. Click the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (ellipses icon), and select **View Schema**.
 
-   ![]({{ site.baseurl }}/images/access_schema_viewer.png "Access the Schema Viewer")
+   ![]({{ site.baseurl }}/images/view-schema.png "Access the Schema Viewer")
 
 3. When the schema appears, you can see that you can control the visible part of the schema.
 
@@ -43,8 +41,6 @@ You must have **Admin** privileges to use the **Schema Viewer**.
 You can now see the schema for each object for tables, worksheets, or views.
 
 1. Click the **Data** tab in the top menu.  
-
-   ![]({{ site.baseurl }}/images/click-data.png "Click Data")
 
 2. Select from the list of the possible objects:
 
