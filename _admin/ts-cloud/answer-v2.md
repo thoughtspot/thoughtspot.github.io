@@ -1,6 +1,5 @@
 ---
 title: [Answer V2 feature set]
-last_updated: 11/13/2020
 summary: Answer V2 <span class="label label-beta">Beta</span> is a feature set that makes the experience of searching on data or viewing and interacting with Answers more powerful and intuititive. The Answer V2 feature set includes an improved Formula Editor, analyst-authored queries for Search Assist, table summary configuration, and improved conditional formatting for tables and table summaries.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

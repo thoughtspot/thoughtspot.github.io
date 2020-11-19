@@ -25,7 +25,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
@@ -1338,31 +1338,6 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli ipsec status</code></dt>
     <dd>Shows IPSec status on all nodes.</dd></dlentry>
-</dl>
-
-{: id="tscli-ldap"}
-### ldap
-
-```
-tscli ldap [-h] {add-cert,configure,purge-configuration}
-```
-
-This subcommand has the following options:
-
-<dl>
-  <dlentry>
-    <dt><code>tscli ldap add-cert <em>name</em> <em>cert_file</em></code></dt>
-    <dd>Adds an SSL certificate for LDAP. Use only if LDAP has been configured without
-  SSL and you wish to add it. Use <code>name</code> to supply an alias for the
-  certificate you are installing. Use <code>cert-file</code> to specify the file where the certificate is.</dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli ldap configure</code></dt>
-    <dd>Configures LDAP using an interactive script.</dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli ldap purge-configuration</code></dt>
-    <dd>Purges (removes) any existing LDAP configuration.</dd></dlentry>
 </dl>
 
 {: id="tscli-logs"}
