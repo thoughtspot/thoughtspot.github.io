@@ -29,9 +29,9 @@ This is why searching over existing Answers provides the necessary information t
 
 2. You can select a specific Worksheet from the **Sources** dropdown to the left of the search bar. By default, you search across all Worksheets for which you have access.
 
-3. You can search across all existing Answers and Pinboards (defualt), only Answers, or only Pinboards.
+3. You can search across all existing Answers and Pinboards (default), only Answers, or only Pinboards.
 
-4. Select the Tags that organize the Answers and Pinboards, or search accross all Tags.
+4. Select the Tags that organize the Answers and Pinboards, or search across all Tags.
 
 5. Specify if you want to search across Answers and Pinboards created by all users (default), or just certain users (including yourself).
 
