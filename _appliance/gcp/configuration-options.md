@@ -17,7 +17,7 @@ All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
 (and, therefore, also in the same region). ThoughtSpot does not support deploying VMs (nodes) of the same cluster across different zones. For more information, see [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/){:target="_blank"} in Google's Cloud documentation.
 
 ## ThoughtSpot GCP instance types
-When choosing an instance type, ensure that it uses Intel CPUs. 
+When choosing an instance type, ensure that it uses Intel CPUs.
 
 ### VMs with Persistent Disk-only storage
 
@@ -41,4 +41,6 @@ When choosing an instance type, ensure that it uses Intel CPUs.
 | 312 GB | n1-highmem-96 | 96/624 | 1X 500 GB | 200 GB for each node |
 | 100 GB | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
 | 20 GB | n1-highmem-16 | 16/122 | 1X 500 GB | 200 GB for each node |
-| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB | 200 GB for each node |    
+| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB | 200 GB for each node |
+
+For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/122GB RAM and 32CPU/208GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
