@@ -124,11 +124,6 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
     | Release Number | Image Name |
     | --- | --- |
-    | 6.0 | thoughtspot-image-20191029-9ff82de0a41-prod |
-    | 6.0.1 | thoughtspot-image-20191029-9ff82de0a41-prod |
-    | 6.0.2 | thoughtspot-image-20191029-9ff82de0a41-prod |
-    | 6.0.3 | thoughtspot-image-20200307-812f10fafca-prod |
-    | 6.0.4 | thoughtspot-image-20200307-812f10fafca-prod |
     | 6.1 | thoughtspot-image-20200307-812f10fafca-prod |
     | 6.1.1 | thoughtspot-image-20200307-812f10fafca-prod |
 
