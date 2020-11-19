@@ -70,7 +70,7 @@ To install and launch ThoughtSpot, you must have the following:
     | 6.1 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
     | 6.1.1 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
 
-    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region." %}
+    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to initiate copying the AMI to the region of your choice. Once the copy is complete, you can return to your own region." %}
 
 {: id="ec2-setup"}
 ## Choose VM instances
