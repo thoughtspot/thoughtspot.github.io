@@ -1,6 +1,6 @@
 ---
 title: ["Manage suggestion indexing"]
-last_updated: tbd
+last_updated: 11/19/2020
 summary: "ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
 toc: true
@@ -20,7 +20,7 @@ impact the dynamically calculated _usage based ranking (UBR)_,
 The following example illustrates how searching for `promotion_last_name t` causes
 the system to suggest several ways of completing the `t` in the search:
 
-![]({{ site.baseurl }}/images/index-type.png "Suggestions")
+![]({{ site.baseurl }}/images/search-index-type.png "Suggestions")
 
 The system is suggesting the synonym `type` (callout A) for a column in the
 `Promotion` table.  It is also suggesting a value of `theil` (callout B) for the
@@ -28,7 +28,7 @@ The system is suggesting the synonym `type` (callout A) for a column in the
 see that there is a `type` synonym for the `Promotion_Type` column which is using
 default indexing.
 
-![]({{ site.baseurl }}/images/index-row.png "Table Row")
+![]({{ site.baseurl }}/images/index-rows.png "Table Row")
 
 Managing search suggestions through **INDEX TYPE** and **INDEX PRIORITY** is
 important. Properly configured suggestions can decrease "noise" in the
@@ -149,7 +149,7 @@ want to use.
 A column's **INDEX PRIORITY** determines the order or rank in which it and its
 values appear in the search dropdown.
 
-![]({{ site.baseurl }}/images/priority-effect.png)
+![]({{ site.baseurl }}/images/column-priority-effect.png)
 
 By default, the **INDEX PRIORITY** value is set to `1` for all columns. You can
 push a column up in the order (increase the rank) by increasing its **INDEX
@@ -157,7 +157,7 @@ PRIORITY** value. A higher value (like `2`) will cause the corresponding column
 and its values to appear higher up in the search dropdown than columns with
 lower value (like `1`).
 
-![]({{ site.baseurl }}/images/set-priority.png)
+![]({{ site.baseurl }}/images/set-column-priority.png)
 
 You should only use numbers between 1-10 in the **INDEX PRIORITY** field.Use a
 value between `8-10` for important columns to improve their search ranking. Use
