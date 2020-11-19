@@ -38,7 +38,7 @@ schedule {
 directory: "NAME"
 storage_type: NAS | LOCAL | S3
 enabled: true (you only need this parameter if your storage_type is S3)
-bucket_name: <"your-S3-bucket-name-in-quotes"> (You only need this parameter if your storage_type is S3. The bucket name must be in quotes.)
+bucket_name: "your-S3-bucket-name-in-quotes" (You only need this parameter if your storage_type is S3. The bucket name must be in quotes.)
 ```
 
 {% include note.html content="To periodically back up your cluster to an S3 bucket, specify <code>S3</code> for the <code>storage_type</code>, and include the <code>enabled</code> and <code>bucket_name</code> parameters." %}
