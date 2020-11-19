@@ -2,6 +2,8 @@
 title: [Connection reference for Snowflake]
 last_updated: 8/11/2020
 toc: true
+redirect_from:
+- /data-integrate/embrace/embrace-snowflake-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
