@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: tscloud.5
-  # version: tscloud.5
+  docversion: ts6.oct.cl
+  # version: tscloud.6
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -65,6 +65,15 @@ entries:
       - title: Business User onboarding
         url: /admin/ts-cloud/business-user-onboarding.html
         output: web
+      - title: Home page
+        url: /end-user/thoughtspot-one/thoughtspot-one-homepage.html
+        output: web
+      - title: Search Answers
+        url: /end-user/search/search-answers.html
+        output: web
+      - title: Search Data
+        url: /end-user/search/search-data.html
+        output: web
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
@@ -118,6 +127,12 @@ entries:
         output: web
       - title: Selective Pinboards filters
         url: /complex-search/selective-filters.html
+        output: web
+      - title: Disable Answer Search for specific Worksheets
+        url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
+        output: web
+      - title: Stats and Trends for Search on Answers Pinboard
+        url: /admin/thoughtspot-one/query-intelligence-pinboard.html
         output: web
       - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
@@ -287,7 +302,13 @@ entries:
   - sectiontitle: Search
     output: web,ugBk
     sectionitems:
-    - title: What are searches and answers?
+    - title: Search overview
+      url: /end-user/search/search-overview.html
+      output: web,ugBk
+    - title: Search Answers
+      url: /end-user/search/search-answers.html
+      output: web,ugBk
+    - title: Search data
       url: /end-user/search/about-starting-a-new-search.html
       output: web,ugBk
     - levelTwoTitle: Search basics

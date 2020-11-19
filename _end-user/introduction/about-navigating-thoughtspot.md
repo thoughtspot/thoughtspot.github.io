@@ -1,6 +1,6 @@
 ---
 title: [Finding your way around]
-last_updated: 11/15/2019
+last_updated: 11/16/2020
 toc: false  
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
@@ -8,9 +8,19 @@ permalink: /:collection/:path.html
 ---
 These are the different sections in ThoughtSpot:
 
-![]({{ site.baseurl }}/images/top_navigation_bar.png "Menu bar")
+![Top navigation bar]({{ site.baseurl }}/images/nav-bar-cloud.png "Top navigation bar")
 
 ## Home
+
+If ThoughtSpot One is on in your environment, your home page experience is different from the one described in this article. Refer to [ThoughtSpot One home page]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html) to learn more about the ThoughtSpot One home page experience.
+
+The ThoughtSpot One home page looks like this:
+
+![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
+
+The home page described in this article looks like this:
+
+![Cloud home page]({{ site.baseurl }}/images/cloud-home-page.png "Cloud home page")
 
 Click the ThoughtSpot logo to go to the application home page. At the top of the
 home page you can see a search bar, and several areas that show activity in ThoughtSpot.
@@ -86,12 +96,6 @@ Pinboards are collections of related search results. You can create your own pin
 
 To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
 
-## SpotIQ
-
-If SpotIQ is enabled by your administrator, you can go here to view the status of your analysis requests to see the results.
-
-To learn more about this section, visit [About SpotIQ]({{ site.baseurl }}/spotiq/whatisspotiq.html#).
-
 {: id="data"}
 ## Data
 
@@ -104,7 +108,7 @@ To learn more about this section, visit [Working with data]({{ site.baseurl }}/e
 
 **Admin** only appears if you have administrator privileges.
 
-This section is covered in the [ThoughtSpot Administrator Guide]({{ site.baseurl }}/admin/intro.html#).
+The Admin Console is covered in the [IT Ops]({{ site.baseurl }}/admin/ts-cloud/it-ops.html) section.
 
 {: id="help-icon"}
 ## Help Icon
