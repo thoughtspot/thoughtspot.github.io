@@ -8,8 +8,6 @@ Any user who belongs to a group that has the privilege **Has administration priv
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the upper right corner, and select **Upload Data**.
 
-   ![]({{ site.baseurl }}/images/new_imported_data.png "Upload data")
-
 4. Upload the CSV or Excel file by doing one of these options:
     1. Click **Browse your files** and select the file.
     2. Drag and drop the file into the drop area.
