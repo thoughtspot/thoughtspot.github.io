@@ -27,9 +27,6 @@ in the upper right corner, and select **Upload Data**.
 9. Click **Import**.
 
     When an upload is complete, the system reports the results and offers you some further actions.
-
-     ![]({{ site.baseurl }}/images/spotiq-upload.png "Auto analyze")
-
     * Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet.
     * Click **Search** if you want to begin a new search.
     * Click **Auto analyze** if you want to use the SpotIQ feature to find insights in your new data.
