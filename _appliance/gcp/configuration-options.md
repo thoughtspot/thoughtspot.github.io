@@ -103,3 +103,5 @@ GCP provides several storage types and media options. ThoughtSpot requires [atta
 
 ThoughtSpot uses only persistent storage options. Instance storage (also known
 as "local storage") is not used for ThoughtSpot deployments on GCP.
+
+For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/122GB RAM and 32CPU/208GB RAM instances, we support user data sizes below those numbers to budget for application overhead.

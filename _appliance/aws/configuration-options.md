@@ -102,6 +102,8 @@ details on how to configure your placement groups.
     </tr>
   </table>
 
+For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/128GB RAM and 32CPU/256GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
+
 ## Regions, availability zones, and placement groups
 
 AWS instances are configured to a location with regard to where the computing
