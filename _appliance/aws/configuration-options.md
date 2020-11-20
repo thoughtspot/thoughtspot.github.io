@@ -50,6 +50,8 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 
 {% include note.html content="The S3 bucket size is approximately equal to the size of the user data." %}
 
+For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/128GB RAM and 32CPU/256GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
+
 {: id="related"}
 ## Related information
 
