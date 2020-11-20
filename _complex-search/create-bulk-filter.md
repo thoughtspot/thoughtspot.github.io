@@ -1,7 +1,7 @@
 ---
 title: [Create a bulk filter]
 summary: Learn how to create a bulk filter.
-last_updated: 11/18/2020
+last_updated: 11/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -31,7 +31,7 @@ spreadsheet.
 
 5. Click **Add values in bulk**:
 
-     ![]({{ site.baseurl }}/images/bulk-filter-add-values.png "Add values in bulk")
+     ![]({{ site.baseurl }}/images/bulk-filters-add-values.png "Add values in bulk")
 
 6. Paste the values into the bulk filter box.
 
