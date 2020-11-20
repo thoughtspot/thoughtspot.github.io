@@ -140,8 +140,8 @@ entries:
       - title: SpotApps
         url: /admin/ts-cloud/app-templates.html
         output: web
-      - title: ThoughtSpot Scripting Language
-        url: /admin/ts-cloud/tsl.html
+      - title: ThoughtSpot Modeling Language
+        url: /admin/ts-cloud/tml.html
         output: web
     - levelTwoTitle: Data Engineers
       output: web
@@ -1089,7 +1089,7 @@ entries:
         url: /admin/ts-cloud/scriptability.html
         output: web,admBk
       - title: Worksheet TSL specification
-        url: /admin/ts-cloud/tsl.html
+        url: /admin/ts-cloud/tml.html
         output: web,admBk
     - levelTwoTitle: Work with views
       output: web,admBk
