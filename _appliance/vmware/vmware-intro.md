@@ -30,7 +30,7 @@ platform in VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
 _minimum specifications_ for an individual VMware ESXi host machine.
 
-When choosing an instance type, ensure that it uses Intel CPUs. 
+When choosing an instance type, ensure that it uses Intel CPUs.
 
 <table width="100%" border="0">
 	  <tbody>
@@ -66,6 +66,7 @@ When choosing an instance type, ensure that it uses Intel CPUs.
   </tbody>
 </table>
 
+For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/128GB RAM and 32CPU/256GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
 
 Locally attached storage provides the best performance.
 
