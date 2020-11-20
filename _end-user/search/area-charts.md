@@ -20,7 +20,7 @@ The stacked area chart is an area chart with an attribute in the legend, which d
 
 Stacked area charts show the relative contribution to the accumulated total of a measure over time.
 
-Stacked area charts plot the y-axis as a percentage by default. You can choose to select **Y Axis** and click **Stack 100%** in the **Configuration Options** to create your own mountain-style charts or display data as percentages of the total area.
+Stacked area charts plot the y-axis as a percentage by default. You can choose to toggle **Show Y-Axis as %** on or off in the **Configuration Options** to create your own mountain-style charts.
 
  ![]({{ site.baseurl }}/images/stacked-area-chart-example.png "Stacked area chart example: "Show Y-Axis as %" toggled off")
 
