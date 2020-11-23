@@ -1,7 +1,7 @@
 ---
 title: [Add a formula to a search]
 summary: Learn how to add a formula to a search.
-last_updated: 10/27/2020
+last_updated: 11/23/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -19,7 +19,7 @@ To create a formula in a search:
 
      ![Switch to table view]({{ site.baseurl }}/images/changeview-chartortable.png "Switch to table view")
 
-3. In the upper-right side of the table, click the three-dot **Actions** icon and select **Add formula**. If Answer V2 <span class="label label-beta">Beta</span> is on in your environment, open the **Data** panel from the upper right corner if it is not open, and click the **+** icon next to **Formulas**.
+3. In the upper-right side of the table, click the **more options** icon  ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**. If Answer V2 <span class="label label-beta">Beta</span> is on in your environment, open the **Data** panel from the upper right corner if it is not open, and click the **+** icon next to **Formulas**.
 
      ![Create a new formula in an answer]({{ site.baseurl }}/images/formula-add-to-search.png "Create a new formula in an answer")
 
