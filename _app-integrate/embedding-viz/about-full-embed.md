@@ -95,7 +95,7 @@ Note the following support across browsers:
     <dd>Android webview,	Chrome for Android,	Firefox for Android, Opera for Android, and Samsung Internet</dd></dlentry>
   <dlentry>
     <dt>NOT supported desktop browsers</dt>
-    <dd>Ingernet Explorer, Safari</dd></dlentry>
+    <dd>Internet Explorer, Safari</dd></dlentry>
   <dlentry>
     <dt>NOT supported mobile browser</dt>
     <dd>Safari on iOS</dd></dlentry>
