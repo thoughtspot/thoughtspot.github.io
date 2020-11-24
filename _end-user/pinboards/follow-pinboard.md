@@ -1,6 +1,6 @@
 ---
 title: [Following pinboards]
-last_updated: 11/13/2020
+last_updated: 11/24/2020
 summary: "In ThoughtSpot, you can follow Pinboards and schedule email notifications to regularly review the visuals that represent dynamic data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -60,5 +60,3 @@ When the scheduling interface appears, make the necessary changes, and click **S
 To stop following a Pinboard, click **Following** in the top right corner.
 
 When the scheduling interface appears, click **Unfollow**.
-
-![Unfollow Pinboard]({{ site.baseurl }}/images/pinboard-unfollow.png "Unfollow Pinboard")
