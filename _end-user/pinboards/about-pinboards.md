@@ -9,7 +9,7 @@ Pinboards act like live dashboards. They are collections of your related charts,
 
 ## What are Pinboards
 
-You can pin charts and tables to any Pinboard which you created, and those that have been shared with you with the **Edit** privilege. When you create a Pinboard, you can share it with other people with either the **View** or **Edit** privilege. Pinboards are interactive, allowing you to perform actions like filtering, excluding values, and drill down on the visualizations. 
+You can pin charts and tables to any Pinboard which you created, and those that have been shared with you with the **Edit** privilege. When you create a Pinboard, you can share it with other people with either the **View** or **Edit** privilege. Pinboards are interactive, allowing you to perform actions like filtering, excluding values, and drill down on the visualizations.
 
 
 ## Create a Pinboard
