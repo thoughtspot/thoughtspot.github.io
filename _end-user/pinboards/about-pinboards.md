@@ -1,6 +1,6 @@
 ---
 title: [Basic Pinboard usage]
-last_updated: 7/21/2020
+last_updated: 11/23/2020
 summary: "Create a new Pinboard to group and manage related search results. Pinboards are the ThoughtSpot term for a dashboard."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -36,6 +36,7 @@ an Answer to a Pinboard:
     ![]({{ site.baseurl }}/images/add_to_pinboard.png "Pin an answer to a Pinboard icon")
 
 2. In the **Add to Pinboard** dialog box, click the **+** icons next to the Pinboards where you plan to add your Answer.
+
     ![]({{ site.baseurl }}/images/copy_to_pinboard.png "Add filters menu")
 
     Alternatively, select **Create Pinboard** to add the  Answer to a new Pinboard.
