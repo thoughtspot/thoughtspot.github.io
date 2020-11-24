@@ -37,7 +37,7 @@ A materialized view can be in one of the following states:
 |Unknown|View status could not be determined.|Click **Update status**.|
 |Error|An error occurred.|Refresh the view by clicking **Refresh Data***. Optionally run a report.|
 
-\* You can refresh data only if you have the [**Can administrate ThoughtSpot**]({{ site.baseurl }}/admin/users-groups/about-users-groups.html)  privilege.
+\* You can refresh data only if you have the [**Can administer ThoughtSpot**]({{ site.baseurl }}/admin/users-groups/about-users-groups.html)  privilege.
 
 ## Freshness of data
 
