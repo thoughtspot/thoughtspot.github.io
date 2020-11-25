@@ -14,8 +14,6 @@
     -   **Can View** to provide read-only access. If the user doesn't have access to the underlying worksheet, they can only view the shared object.
     -   **Can Edit** to allow modification. Enables renaming or deleting the shared object. If a user with edit privileges modifies a shared object, the object saves their changes.
 
-    ![Specify permissions]({{ site.baseurl }}/images/sharing-permissions.png "Specify permissions")
-
 6. If the selected group or user does not have access to the underlying data, you must enable access to the worksheet, view, or table. A black warning symbol appears when you try to share with a user who does not have underlying data access. If you click on it, it tells you to enable access:
 
     ![Warning: enable data access]({{ site.baseurl }}/images/sharing-enabledata.png "Warning: enable data access")
@@ -44,5 +42,3 @@
     ![Share an object and send the link to users you shared with]({{ site.baseurl }}/images/share-copy-link.png "Share an object and send the link to users you shared with")
 
 6. Click **Share**.
-
-    ![Share your Pinboard or Answer]({{ site.baseurl }}/images/sharing-share.png "Share your Pinboard or Answer")
