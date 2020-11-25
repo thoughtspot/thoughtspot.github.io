@@ -849,8 +849,8 @@ entries:
       - title: Migrate or restore Worksheets
         url: /admin/scriptability/scriptability.html
         output: web,admBk
-      - title: Worksheet TSL specification
-        url: /admin/scriptability/tsl.html
+      - title: Worksheet TML specification
+        url: /admin/scriptability/tml.html
         output: web,admBk
     - levelTwoTitle: Work with views
       output: web,admBk

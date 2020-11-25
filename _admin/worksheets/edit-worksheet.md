@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 If you created a Worksheet, or you have edit permissions on it, you can make changes such as adding sources and columns, adding or editing formulas, changing relationships, and changing column names. You can also rename a Worksheet or change its description.
 
-Alternatively, you can export a Worksheet as a flat file in [TSL]({{ site.baseurl }}/admin/scriptability/tsl.html), ThoughtSpot's Scripting Language, edit the file, and import the file to the same or another cluster. See [Migrate or restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html).
+Alternatively, you can export a Worksheet as a flat file in [TML]({{ site.baseurl }}/admin/scriptability/tml.html), ThoughtSpot's Scripting Language, edit the file, and import the file to the same or another cluster. See [Migrate or restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html).
 
 ## Edit a Worksheet
 
