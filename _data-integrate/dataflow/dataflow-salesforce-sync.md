@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-After using ThoughtSpot DataFlow to establish a connection to a Salesforce database, you can create automatic data updates, to seamlessly refresh your data.
+After using ThoughtSpot DataFlow to establish a connection to  Salesforce, you can create automatic data updates, to seamlessly refresh your data.
 
 {% include content/dataflow/sync-for-salesforce.md %}
 

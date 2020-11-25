@@ -1993,6 +1993,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-ibm-db2-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: JDBC
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-jdbc-db2.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-jdbc-db2-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-jdbc-db2-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-jdbc-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: MariaDB
         output: web,dataflowGD
         levelThreeItems:
@@ -2334,6 +2349,21 @@ entries:
            output: web,dataflowGd
          - title: Reference
            url: /data-integrate/dataflow/dataflow-salesforce-reference.html
+           output: web,dataflowGd
+      - levelThreeTitle: REST API
+        output: web,dataflowGD
+        levelThreeItems:
+         - title: Overview
+           url: /data-integrate/dataflow/dataflow-rest-api.html
+           output: web,dataflowGd
+         - title: Connect
+           url: /data-integrate/dataflow/dataflow-rest-api-add.html
+           output: web,dataflowGd
+         - title: Sync
+           url: /data-integrate/dataflow/dataflow-rest-api-sync.html
+           output: web,dataflowGd
+         - title: Reference
+           url: /data-integrate/dataflow/dataflow-rest-api-reference.html
            output: web,dataflowGd
     - levelTwoTitle:  Administration
       output: web,dataflowGD
