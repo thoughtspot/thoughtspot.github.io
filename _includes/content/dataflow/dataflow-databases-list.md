@@ -8,6 +8,7 @@
 <li><a href="{{"/data-integrate/dataflow/dataflow-google-bigquery.html" | prepend: site.baseurl}}">Google BigQuery</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-hive.html" | prepend: site.baseurl}}">Hive</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-ibm-db2.html" | prepend: site.baseurl}}">IBM Db2</a></li>
+<li><a href="{{"/data-integrate/dataflow/dataflow-jdbc.html" | prepend: site.baseurl}}">JDBC</a> <span class="label label-beta">New</span> for many databases (must have driver)</li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-mariadb.html" | prepend: site.baseurl}}">MariaDB</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-mongodb.html" | prepend: site.baseurl}}">MongoDB</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-mysql.html" | prepend: site.baseurl}}">MySQL</a></li>

@@ -24,7 +24,7 @@ The joins in the Sales table were created by doing the following:
 
    The Columns view of the Sales table appears.
 
-4. Click the **Schema** tab.  
+4. Click the **Joins** tab.  
 
 5. Click **+Add join**.
 
