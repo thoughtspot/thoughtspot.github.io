@@ -39,9 +39,6 @@ To share an Answer from within the Answer, follow these steps.
 
 3. Share the answer by clicking the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png){: .inline}.
 
-    ![Share an answer]({{ site.baseurl }}/images/sharing-share-icon.png "Share an answer")
-    <!--{% include image.html file="sharing-share-icon.png" title="Share an answer" alt="To share an answer, click the share icon at the top right of your screen, next to the ellipsis icon." caption="Share an answer" %}-->
-
 4. If you did not save the answer, ThoughtSpot prompts you to name and save the answer before sharing it.
 
     ![Save and share your answer]({{ site.baseurl }}/images/sharing-saveandshare.png "Save and share your answer")
