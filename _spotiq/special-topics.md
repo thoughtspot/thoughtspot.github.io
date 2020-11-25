@@ -1,12 +1,12 @@
 ---
-title: [Best SpotIQ Practices]
+title: [Best SpotIQ practices]
 summary: Learn the SpotIQ best practices.
-last_updated: 11/15/2019
+last_updated: 11/25/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The SpotIQ feature works without you having to do anything but pushing a button.
-However, like any other feature, there things you can do to optimize the
+However, like any other feature, there are things you can do to optimize the
 feature.  This page contains some best practices you can use to make SpotIQ more
 effective when you use it.
 
@@ -68,11 +68,9 @@ data if you have a measure with anything other than `SUM`.
 
 ## Set SpotIQ preferences
 
-You can set preferences for SpotIQ in your user profile. These preferences allow
-you to control how you receive analysis notifications.  They also allow you to
+To set preferences for SpotIQ, click **SpotIQ** in the top bar, and then click **Preferences**. These preferences allow
+you to control how you receive analysis notifications. They also allow you to
 exclude nulls or zero value measures from analysis.
-
-![]({{ site.baseurl }}/images/spotiq-prefs.png)
 
 The exclusions impact each SpotIQ analysis. It eliminates points with such
 values during statistical calculations for example, for mean, standard deviation
