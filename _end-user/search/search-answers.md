@@ -7,19 +7,11 @@ permalink: /:collection/:path.html
 ---
 ## Why search Answers?
 
-{% include content/search-answers-description.md %}
+With Search Answers, you can search existing content in Answers and Pinboards to get the information you need. This complements Search Data, where users create new Answers and Pinboards.
 
-Consider the knowledge and skills that a user must have before issuing a traditional search query:
+Another clear benefit of Search Answers is in how well it supports new users who are not familiar with the data in their organization. While Search Data is really intuitive, you must have some knowledge of the data, a basic working vocabulary for the data domain. So unless you know how to call the principal Metrics, Dimensions, and Groupings, it may be challenging to ask meaningful question.
 
-1. She must understand the data: to which worksheet the data belongs, what are the data column names and the data they contain, the categorical divisions in the data, and so on.
-2. She must understand analytical aspects: to determine how to apply filters effectively.
-3. She must have experience with business intelligence tools, to understand the best reporting options.
-
-These skills are outside the experience of most business users, so  they often require the support of their analyst colleagues. This means that analysts receive an extremely large number of diverse requests for help with data, and users have to wait a long time to get a response.
-
-For every user to be independent, they must be able to get Answers to their questions quickly. ThoughtSpot enables this autonomy by introducing search over existing Answers, leveraging existing company-wide knowledge of the data and analytical experience. Because many business users have similar data questions, Search over Answers helps them discover what they need within existing Answers and Pinboards. In the unlikely scenario that an appropriate Answer does not exist, the user or the analyst can create relevant new content, and close that knowledge gap.
-
-This is why searching over existing Answers provides the necessary information to the user, and does not require that she be deeply familiar with the company's data and how it is organized.
+Search Answers eliminates redundant work of constructing new Answers and Pinboards by finding what is already in the system, the result of your co-workers earlier queries. We now have a solution for leveraging these existing artifacts while eliminating lost productivity of duplicate work. And we also help you succeed the very first time you use ThoughtSpot.
 
 ## How to search Answers
 
