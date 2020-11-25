@@ -15,8 +15,6 @@ data source.
 Every menu or location where you can run **SpotIQ analyze**, you
 can customize your analysis. You access it using the lightbulb button ![more options menu icon]({{ site.baseurl }}/images/icon-lightbulb.png){: .inline} or the ellipses menu ![SpotIQ analyze icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
-![]({{ site.baseurl }}/images/spotiq-where-customize.png)
-
 Regardless of where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has the same layout. The columns displayed, though, are specific to
 the data from which you run **SpotIQ analyze**.
 
