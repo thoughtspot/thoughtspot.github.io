@@ -15,7 +15,7 @@
          <td>
             <code>product name <b>begins with</b> 'pro'</code> returns all products that start with 'pro'<br/>
             <code>product name <b>begins with</b> 'pro' product name <b>begins with</b> 'sport'</code> returns all products that start with 'pro' <code>OR</code> 'sport'<br/>
-            <code>product name <b>begins with</b> 'pro' product color <b>begins with</b> 'bl'</code> returns all products that start with 'pro' <code>AND</code> have color that starts with 'bl' (blue or black)</code>
+            <code>product name <b>begins with</b> 'pro' product color <b>begins with</b> 'bl'</code> returns all products that start with 'pro' <code>AND</code> have color that starts with 'bl' (blue or black)
          </td>
       </tr>
       <tr>
