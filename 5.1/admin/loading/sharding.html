@@ -243,7 +243,11 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li>
+                          <li><a href="/6.3/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.2/index.html">6.2</a></li>
                         
                         
                         
@@ -326,7 +330,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/loading/sharding.html.</li>
-         <li class="small-sidebar-link">Current version is 6.2.</li>
+         <li class="small-sidebar-link">Current version is 6.3.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -347,12 +351,12 @@ var ss360Config = {
        
 
        
-       <li class="small-sidebar-version-nav"><a href="/6.2/admin/loading/sharding.html">Switch to version 6.2 (latest)</a></li>
+       <li class="small-sidebar-version-nav"><a href="/6.3/admin/loading/sharding.html">Switch to version 6.3 (latest)</a></li>
        
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.2/admin/loading/sharding.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.1/6.2/admin/loading/sharding.html</li>
+<li class="small-sidebar-link">newURL is /6.3/admin/loading/sharding.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.1/6.3/admin/loading/sharding.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3217,7 +3221,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    17 minutes
+    18 minutes
   
 </span>-->
 
@@ -3245,7 +3249,7 @@ shard in the node cluster. No single table or node is overloaded, improving both
 whenever possible. If you have a large dimension table, more than 40 million rows, you might choose to shard it along with the fact table it is joined with. Sharding both the fact and dimension table(s) is known as <em>co-sharding</em>. Refer to <a href="#dimension-tables">Sharded dimension tables</a>. Before co-sharding the fact and dimension tables, consult with your ThoughtSpot contact.</p>
 
 <h3 id="sharding-guidelines">Table sizes and sharding recommendations</h3>
-<p>When you are considering which tables you need to shard, and how many shards to use, there are several key sizing guidelines to keep in mind:</p>
+<p>When you are considering which tables you need to shard, and how many shards to use, there are several key sizing guidelines to keep in mind. You may not be able to fulfill each of these requirements for every table you shard. The most important requirement is that the number of shards for a given table take up less than or equal to 60% of your total available CPU.</p>
 
 <ol>
   <li>
@@ -3267,6 +3271,8 @@ whenever possible. If you have a large dimension table, more than 40 million row
   </li>
   <li>
     <p><strong>Minimum number of shards</strong>: Because the number of shards should be a multiple of the number of nodes, the mininum number of shards is the number of nodes. For a 12-node cluster, you should not have fewer than 12 shards.</p>
+
+    <p>This requirement may be difficult to achieve on large clusters with a high number of nodes. For example, you may have a table with 200 million rows on a 24 node cluster. Based on the guideline of 20 million rows per shard, this table should have 10 shards. 10 is not a multiple of 24. However, you may also have several very large tables on this cluster, with more than 1 billion rows. These 1 billion row tables can have at least 24 shards while fulfilling the 20 million rows per shard requirement, but the 200 million row table cannot. If you do not have these very large tables in your cluster, but you do have a high number of nodes, you might choose to have fewer than 20 million rows per shard, to ensure equal distribution of data. Consult with your ThoughtSpot contact if you are unsure how to handle sharding on your large cluster.</p>
   </li>
 </ol>
 
@@ -3398,7 +3404,7 @@ the number of shards and the size of any single shard.</p>
   "sale_amount" double,
   "fruitid" int,
   CONSTRAINT
-PRIMARY KEY("saleid,vendorid"))
+PRIMARY KEY("saleid", "vendorid"))
 PARTITION BY HASH(96)
 KEY ("saleid");
 </code></pre></div></div>
@@ -3580,7 +3586,7 @@ ThoughtSpot recommends that you use a common shard key for two fact tables.</p>
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 22, 2020 <br />
+        Generated: Nov 25, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 10/8/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.1/images/company_logo.png" alt="Company logo"/></p>

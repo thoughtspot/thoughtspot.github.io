@@ -8,7 +8,7 @@
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="The Attribution Dimension setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this se..."> -->
-<meta name="keywords" content=",  tbd">
+<meta name="keywords" content=",  ">
 <title>Change the Attribution Dimension | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/5.0/css/syntax.css">
 
@@ -241,7 +241,11 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li>
+                          <li><a href="/6.3/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.2/index.html">6.2</a></li>
                         
                         
                         
@@ -324,7 +328,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/data-modeling/attributable-dimension.html.</li>
-         <li class="small-sidebar-link">Current version is 6.2.</li>
+         <li class="small-sidebar-link">Current version is 6.3.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -345,12 +349,12 @@ var ss360Config = {
        
 
        
-       <li class="small-sidebar-version-nav"><a href="/6.2/admin/data-modeling/attributable-dimension.html">Switch to version 6.2 (latest)</a></li>
+       <li class="small-sidebar-version-nav"><a href="/6.3/admin/data-modeling/attributable-dimension.html">Switch to version 6.3 (latest)</a></li>
        
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.2/admin/data-modeling/attributable-dimension.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.0/6.2/admin/data-modeling/attributable-dimension.html</li>
+<li class="small-sidebar-link">newURL is /6.3/admin/data-modeling/attributable-dimension.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/5.0/6.3/admin/data-modeling/attributable-dimension.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3120,6 +3124,31 @@ var ss360Config = {
    
 
     
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the
+on-page minitoc. if you use html tags, you must supply an ID for the heading
+element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+    
 
 
     
@@ -3127,7 +3156,7 @@ var ss360Config = {
   Estimated reading time: 
   
   
-    2 minutes
+    3 minutes
   
 </span>
 
@@ -3178,14 +3207,24 @@ expected outcome.</p>
 
 <p>You cannot configure this setting in the model file. You can only configure it
 on a table-by-table basis. To designate a column as not being an attribution
-dimension (i.e. not producing any meaningful attribution across a chasm trap):</p>
+dimension (not producing any meaningful attribution across a chasm trap):</p>
 
 <ol>
-  <li>Find the column that is not an attribution dimension.</li>
+  <li>Navigate to the dimension table you would like to edit. Note that you do not need to set the Attribution Dimension for fact tables.</li>
+  <li>Find the column that is not an attribution dimension. Since the Attribution Dimension is a table-wide setting, you only need to turn it off on one column. As a best practice, use the primary key.</li>
   <li>Select its <strong>Attribution Dimension</strong>.</li>
   <li>Set the value to <code class="language-plaintext highlighter-rouge">NO</code>.</li>
   <li>Save your changes.</li>
 </ol>
+
+<h2 id="additional-resources">Additional resources</h2>
+<p>As you develop your expertise in data modeling and the Attribution Dimension setting, we recommend the following ThoughtSpot Community article:</p>
+<ul>
+  <li><a href="https://community.thoughtspot.com/customers/s/article/What-is-Attribution-and-Chasm-Traps?" target="_blank">What are Chasm Traps, and What is Attribution?</a></li>
+</ul>
+
+<p>See other training resources at <br />
+<a href="https://community.thoughtspot.com/s/" target="_blank"><img src="/5.0/images/thoughtspot-community.png" alt="ThoughtSpot Community" /></a></p>
 
 <h2 id="related-information">Related information</h2>
 
@@ -3215,9 +3254,9 @@ dimension (i.e. not producing any meaningful attribution across a chasm trap):</
 <footer>
    <div class="row">
       <div class="col-lg-12 footer">
-        Generated: Oct 14, 2020 <br />
+        Generated: Nov 25, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 11/18/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/5.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>

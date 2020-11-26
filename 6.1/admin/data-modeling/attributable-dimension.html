@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/admin/data-modeling/attributable-dimension.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-22T10:42:38-07:00" />
+<meta property="article:published_time" content="2020-11-25T22:06:44-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Change the Attribution Dimension”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"https://docs.thoughtspot.com/6.1/admin/data-modeling/attributable-dimension.html","headline":"[“Change the Attribution Dimension”]","dateModified":"2020-10-22T10:42:38-07:00","datePublished":"2020-10-22T10:42:38-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/admin/data-modeling/attributable-dimension.html"},"description":"The Attribution Dimension setting only applies to tables that join over a Chasm Trap. By default, the attribution dimension setting will be set to YES, but you can override that by setting the column’s attribution dimension property to NO, as described here.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"[“Change the Attribution Dimension”]","description":"The Attribution Dimension setting only applies to tables that join over a Chasm Trap. By default, the attribution dimension setting will be set to YES, but you can override that by setting the column’s attribution dimension property to NO, as described here.","datePublished":"2020-11-25T22:06:44-08:00","dateModified":"2020-11-25T22:06:44-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/admin/data-modeling/attributable-dimension.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.1/admin/data-modeling/attributable-dimension.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -255,7 +255,11 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/6.2/index.html">latest</a></li>
+                          <li><a href="/6.3/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.2/index.html">6.2</a></li>
                         
                         
                         
@@ -338,7 +342,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/data-modeling/attributable-dimension.html.</li>
-         <li class="small-sidebar-link">Current version is 6.2.</li>
+         <li class="small-sidebar-link">Current version is 6.3.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -359,12 +363,12 @@ var ss360Config = {
        
 
        
-       <li class="small-sidebar-version-nav"><a href="/6.2/admin/data-modeling/attributable-dimension.html">Switch to version 6.2 (latest)</a></li>
+       <li class="small-sidebar-version-nav"><a href="/6.3/admin/data-modeling/attributable-dimension.html">Switch to version 6.3 (latest)</a></li>
        
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.2/admin/data-modeling/attributable-dimension.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.1/6.2/admin/data-modeling/attributable-dimension.html</li>
+<li class="small-sidebar-link">newURL is /6.3/admin/data-modeling/attributable-dimension.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.1/6.3/admin/data-modeling/attributable-dimension.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3817,7 +3821,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span>
  -->
@@ -3872,11 +3876,21 @@ on a table-by-table basis. To designate a column as not being an attribution
 dimension (not producing any meaningful attribution across a chasm trap):</p>
 
 <ol>
-  <li>Find the column that is not an attribution dimension.</li>
+  <li>Navigate to the dimension table you would like to edit. Note that you do not need to set the Attribution Dimension for fact tables.</li>
+  <li>Find the column that is not an attribution dimension. Since the Attribution Dimension is a table-wide setting, you only need to turn it off on one column. As a best practice, use the primary key.</li>
   <li>Select its <strong>Attribution Dimension</strong>.</li>
   <li>Set the value to <code class="language-plaintext highlighter-rouge">NO</code>.</li>
   <li>Save your changes.</li>
 </ol>
+
+<h2 id="additional-resources">Additional resources</h2>
+<p>As you develop your expertise in data modeling and the Attribution Dimension setting, we recommend the following ThoughtSpot Community article:</p>
+<ul>
+  <li><a href="https://community.thoughtspot.com/customers/s/article/What-is-Attribution-and-Chasm-Traps?" target="_blank">What are Chasm Traps, and What is Attribution?</a></li>
+</ul>
+
+<p>See other training resources at <br />
+<a href="https://community.thoughtspot.com/s/" target="_blank"><img src="/6.1/images/thoughtspot-community.png" alt="ThoughtSpot Community" /></a></p>
 
 <h2 id="related-information">Related information</h2>
 
@@ -3907,9 +3921,9 @@ dimension (not producing any meaningful attribution across a chasm trap):</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Oct 22, 2020 <br />
+        Generated: Nov 25, 2020 <br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 5/6/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 11/18/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
