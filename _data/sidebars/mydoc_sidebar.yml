@@ -971,8 +971,8 @@ entries:
       - title: Migrate or restore objects
         url: /admin/scriptability/scriptability.html
         output: web,admBk
-      - title: ThoughtSpot Modeling Language
-        url: /admin/scriptability/tml.html
+      - title: ThoughtSpot Scripting Language
+        url: /admin/scriptability/tsl.html
         output: web,admBk
       - title: SpotApps
         url: /admin/scriptability/app-templates.html

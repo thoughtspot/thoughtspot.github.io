@@ -21,6 +21,6 @@ The [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html) f
 
 - **Reusing existing objects to build new objects**, such as building two very similar objects based on a similar, pre-existing object.
 
-You can download these objects in the form of a scriptable file in the [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/scriptability/tml.html), or TML.
+You can download these objects in the form of a scriptable file in the [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/scriptability/tsl.html), or TSL.
 
 Use Scriptability to export Worksheets, Views, tables, Pinboards, and Answers in a human-readable format. Refer to [Migrate or restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html).
