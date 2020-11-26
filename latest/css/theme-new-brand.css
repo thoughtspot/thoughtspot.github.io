@@ -103,9 +103,9 @@ body.print h4 {color: #595959 !important; font-size:14px; font-style: italic !im
 
 div.bookTitle {
     color: #272A7F;
-  }
+}
 
-  li.bookTitle {
+li.bookTitle {
     margin-top:20px;
       font-weight:normal;
       font-size:130%;
