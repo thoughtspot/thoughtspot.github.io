@@ -15,7 +15,9 @@ topnav_dropdowns:
     - title: Version
       sectionitems:
         - title: latest
-          url: /6.2/index.html        
+          url: /6.3/index.html
+        - title: 6.2
+          url: /6.2/index.html
         - title: 6.1
           url: /6.1/index.html
         - title: 6.0
