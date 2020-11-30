@@ -119,10 +119,17 @@ You can retrieve these from the ThoughtSpot web server (not against the load bal
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
     ```
-    
+
 You must ensure that your load balancer supports these ciphers. If your load balancer cannot support these ciphers, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 {: id="ssl-configure-test"}
 ## Test the SSL certificate
 
 To test if the certificate is installed correctly, see [Sign in to the ThoughtSpot application]({{ site.baseurl }}/admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Nginx SSL](https://training.thoughtspot.com/authentication-security/610523){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
