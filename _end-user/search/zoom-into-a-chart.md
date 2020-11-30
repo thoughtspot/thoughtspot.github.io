@@ -27,4 +27,4 @@ You can zoom into your chart by selecting an area with your mouse. To zoom into 
 
      ![Zoomed in chart area]({{ site.baseurl }}/images/chart-config-zoomed.png "Zoomed in chart area")
 
-4. If you would like to return to the original chart view, click **Reset zoom** ![reset icon]({{ site.baseurl }}/images/icon-reset-10px.png){: .inline}.
+4. If you would like to return to the original chart view, click ![reset icon]({{ site.baseurl }}/images/icon-reset-10px.png){: .inline} **Reset zoom**.
