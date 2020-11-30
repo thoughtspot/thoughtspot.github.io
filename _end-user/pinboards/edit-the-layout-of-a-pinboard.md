@@ -1,6 +1,6 @@
 ---
 title: [Edit the layout of a pinboard]
-last_updated: 11/13/2020
+last_updated: 11/30/2020
 summary: "Editing the layout of a pinboard lets you snap visualizations into place, choose between set visualization sizes, and reset your layout."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,8 +19,6 @@ In addition, the size picker at the bottom of a visualization's three-dot Action
 
 4. Save your pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
-     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
-
 ## Change the orientation of a chart or table
 
 You can change the orientation of a chart or table on a pinboard. To do this:
@@ -30,7 +28,7 @@ You can change the orientation of a chart or table on a pinboard. To do this:
 
    ThoughtSpot displays the drop-down menu.
 
-   ![]({{ site.baseurl }}/images/size_pinboard_item.png "Resize an item")
+   ![]({{ site.baseurl }}/images/size-pinboard-item.png "Resize an item")
 
    The last item shows different possible orientations, with the current orientation selected.
 
@@ -45,7 +43,7 @@ To delete a visualization:
 2. On the pinboard list page, click the pinboard that contains the visualization you would like to delete.
 3. In the upper-right corner of the visualization, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Delete**.
 
-     ![]({{ site.baseurl }}/images/detele_a_pinboard_visualization.png "Delete a visualization")
+     ![]({{ site.baseurl }}/images/delete-a-pinboard-visualization.png "Delete a visualization")
 
 4. Save your pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
