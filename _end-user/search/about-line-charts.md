@@ -1,7 +1,7 @@
 ---
 title: [Line charts]
 
-last_updated: tbd
+last_updated: 11/30/2020
 summary: "Line charts are good at showing trends over intervals of time."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,6 +10,6 @@ Like the column chart, the line chart is one of ThoughtSpot's simplest, yet most
 
 Line charts displays your data as a series of data points connected by straight line segments. The measurement points are ordered by the x-axis value.
 
- ![]({{ site.baseurl }}/images/line_chart_example.png "Line chart example")
+ ![]({{ site.baseurl }}/images/line-chart-example.png "Line chart example")
 
 Your search needs at least one attribute and one measure to be represented as a line chart.
