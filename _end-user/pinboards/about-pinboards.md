@@ -53,7 +53,7 @@ For more details, see [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/p
 
 ## Export a Pinboard as a TSL file
 
-You can download a Pinboard as a [TSL]({{ site.baseurl }}/admin/scriptability/tsl.html), or ThoughtSpot Modeling Language, file, optionally modify it, and migrate it to another cluster, or re-upload it to the same cluster.
+You can download a Pinboard as a [TSL]({{ site.baseurl }}/admin/scriptability/tsl.html), or ThoughtSpot Scripting Language, file, optionally modify it, and migrate it to another cluster, or re-upload it to the same cluster.
 
 Refer to [Migrate or restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html).
 
