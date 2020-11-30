@@ -15,7 +15,7 @@ Line column charts display one measure as a column chart and the other as a line
 
  ![]({{ site.baseurl }}/images/line-column-chart-example.png "Line column chart example")
 
-You can choose to enable shared y-axis by clicking the triangular menu icon next to the Y-axis label and selecting **Group** for both measures.
+You can choose to enable shared y-axis by clicking the dropdown menu icon ![]({{ site.baseurl }}/images/icon-caret-right-20px.png){: .inline} next to the Y-axis label and selecting **Group** for both measures.
 
  ![]({{ site.baseurl }}/images/group-line-column-chart.png "Enable shared y-axis")
 
@@ -26,6 +26,6 @@ This chart is similar to the line column chart, except that it divides its colum
 
  ![]({{ site.baseurl }}/images/line-stacked-column-chart-example.png "Line stacked column chart example")
 
-You can choose to enable shared y-axis by clicking the triangular menu icon next to the Y-axis label and selecting **Group** for both measures.
+You can choose to enable shared y-axis by clicking the dropdown menu icon ![]({{ site.baseurl }}/images/icon-caret-right-20px.png){: .inline} next to the Y-axis label and selecting **Group** for both measures.
 
  ![]({{ site.baseurl }}/images/group-stacked-line-column-chart.png "Enable shared y-axis")
