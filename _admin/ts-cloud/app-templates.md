@@ -44,11 +44,11 @@ You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 
     ![Import SpotApps]({{ site.baseurl }}/images/scriptability-spotapps-import.png "Import SpotApps")
 
-2. In the **Import** interface, click **Select .tsl or .zip files to upload**.
+2. In the **Import** interface, click **Select TSL or .zip files to upload**.
 
 6. In your file system, find and select the .zip file for the SpotApp.
 
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message, and shows you which objects are validated. You can now import the objects. The <code>GUID</code> parameter in an object's .tsl file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one.
+8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message, and shows you which objects are validated. You can now import the objects. The <code>GUID</code> parameter in an object's TSL file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one.
 
 9. You can unselect any files in the `.zip` file you do not want to upload.
 
