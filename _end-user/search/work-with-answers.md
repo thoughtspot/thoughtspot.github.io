@@ -72,6 +72,9 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 
 2. Click the more options menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
+![]({{ site.baseurl }}/images/spot-iq-copy-and-edit.png "Copy and edit your SpotIQ insight")
+
+
    A copy of the answer is displayed with “Copy of” added to the beginning of the title.
 
 3. Make any changes you want to the answer.
@@ -79,5 +82,8 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 4. Click the more options menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
 
    The Save Answer dialog box appears.
+
+        ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
+
 
 5. Change the name and description, as needed, and click **Save**.
