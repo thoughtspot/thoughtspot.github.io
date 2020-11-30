@@ -1,7 +1,7 @@
 ---
 title: [Apply conditional formatting]
 
-last_updated: 11/18/2020
+last_updated: 11/30/2020
 summary: "Use conditional formatting to make portions of your results stand  out."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -29,7 +29,7 @@ To apply conditional formatting to a table:
 3. Click **+ ADD FORMATTING** in the **Conditional Formatting** window.
 4. Define the sets of values and the color to use for each set.
 
-     ![]({{ site.baseurl }}/images/conditional_formatting_table_3.png "Define the sets of values and color")
+     ![]({{ site.baseurl }}/images/conditional-formatting-table-3.png "Define the sets of values and color")
 
 5. Click **Done** after defining all of your conditional formatting sets.
 
@@ -47,7 +47,7 @@ To apply conditional formatting to a chart:
 2. Click **+ ADD FORMATTING** in the Conditional Formatting window.
 3. Define the ranges of values and the color to use for each range you want to track. To add another range, click the **+** icon and repeat.
 
-     ![]({{ site.baseurl }}/images/set_conditional_formatting.png "Define the sets of values and color")
+     ![]({{ site.baseurl }}/images/set-conditional-formatting.png "Define the sets of values and color")
 
 4. Click **Done** after defining all of your conditional formatting ranges.
 
