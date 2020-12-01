@@ -193,7 +193,20 @@ Follow these steps:
 <!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
 
 ## Lean configuration
-**(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.
+**(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, configure advanced lean mode. 
+
+To configure advanced lean mode, do the following:
+1. SSH as admin into your ThoughtSpot cluster, using the following syntax:  
+`ssh admin@<cluster-ip-address or hostname>`.
+2. Run the advanced lean mode configuration using the following syntax:  
+`tscli config-mode lean [-h] --type {small,medium,default}`  
+
+   Examples:  
+
+   - To configure your instance with the "small" data size, run: `tscli config-mode lean [-h] --type small`
+   - To configure your instance with the "medium" data size, run: `tscli config-mode lean [-h] --type medium`
+
+   {% include note.html content="If you decide later you want to disable advanced lean mode, use `default`." %}
 
 ## Additional resources
 As you develop your expertise in AWS cluster installation, we recommend the following ThoughtSpot U course:
