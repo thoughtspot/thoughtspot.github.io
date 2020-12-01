@@ -74,3 +74,10 @@ To set up SAML on ThoughtSpot for user authentication, follow these steps:
 3. Complete the configurator prompts with the information you collected in [Configuration prerequisites](#prerequisites).
 
 4. When the configuration completes, open a browser and navigate to the ThoughtSpot login page. It should show the SSO option.
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Single Sign On (SSO)](https://training.thoughtspot.com/authentication-security/621450){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
