@@ -42,7 +42,7 @@ To configure advanced lean mode, do the following:
 1. SSH as admin into your ThoughtSpot cluster, using the following syntax:  
 `ssh admin@<cluster-ip-address or hostname>`.
 2. Run the advanced lean mode configuration using the following syntax:  
-`tscli config-mode lean [-h] --type {small,medium,default}`  
+`tscli config-mode lean [-h] --type {small,medium,default}`.  
 
    Examples:  
 
