@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/aws/aws-cluster-install.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-11-25T22:29:22-08:00" />
+<meta property="article:published_time" content="2020-11-30T17:54:34-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Install ThoughtSpot clusters in AWS”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"Prerequisites Before you can install your ThoughtSpot clusters in AWS, complete these prerequisites. Review configuration options Refer to AWS configuration options for detailed instance specs. Create the instance Refer to Set up AWS for ThoughtSpot to create and launch your instance. Review required ports Refer to Network ports to view the required ports for successful operation of ThoughtSpot. Configure nodes Refer to Configure ThoughtSpot nodes in AWS to configure your nodes.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/aws-cluster-install.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/aws/aws-cluster-install.html","headline":"[“Install ThoughtSpot clusters in AWS”]","dateModified":"2020-11-25T22:29:22-08:00","datePublished":"2020-11-25T22:29:22-08:00","@context":"https://schema.org"}</script>
+{"description":"Prerequisites Before you can install your ThoughtSpot clusters in AWS, complete these prerequisites. Review configuration options Refer to AWS configuration options for detailed instance specs. Create the instance Refer to Set up AWS for ThoughtSpot to create and launch your instance. Review required ports Refer to Network ports to view the required ports for successful operation of ThoughtSpot. Configure nodes Refer to Configure ThoughtSpot nodes in AWS to configure your nodes.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/aws/aws-cluster-install.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/aws/aws-cluster-install.html","headline":"[“Install ThoughtSpot clusters in AWS”]","dateModified":"2020-11-30T17:54:34-08:00","datePublished":"2020-11-30T17:54:34-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5461,7 +5461,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    7 minutes
+    8 minutes
   
 </span> -->
 
@@ -5668,7 +5668,26 @@ Follow these steps:</p>
 --></p>
 
 <h2 id="lean-configuration">Lean configuration</h2>
-<p><strong>(For use with thin provisioning only)</strong> If you have a <a href="/latest/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable">small or medium instance type</a>, with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact <a href="/latest/appliance/contact.html">ThoughtSpot Support</a> for assistance with this configuration.</p>
+<p><strong>(For use with thin provisioning only)</strong> If you have a <a href="/latest/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable">small or medium instance type</a>, with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, configure advanced lean mode.</p>
+
+<p>To configure advanced lean mode, do the following:</p>
+<ol>
+  <li>SSH as admin into your ThoughtSpot cluster, using the following syntax:<br />
+<code class="language-plaintext highlighter-rouge">ssh admin@&lt;cluster-ip-address or hostname&gt;</code>.</li>
+  <li>
+    <p>Run the advanced lean mode configuration using the following syntax:<br />
+<code class="language-plaintext highlighter-rouge">tscli config-mode lean [-h] --type {small,medium,default}</code>.</p>
+
+    <p>Examples:</p>
+
+    <ul>
+      <li>To configure your instance with the “small” data size, run: <code class="language-plaintext highlighter-rouge">tscli config-mode lean [-h] --type small</code></li>
+      <li>To configure your instance with the “medium” data size, run: <code class="language-plaintext highlighter-rouge">tscli config-mode lean [-h] --type medium</code></li>
+    </ul>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you decide later you want to disable advanced lean mode, use <code class="language-plaintext highlighter-rouge">default</code>.</div>
+  </li>
+</ol>
 
 <h2 id="additional-resources">Additional resources</h2>
 <p>As you develop your expertise in AWS cluster installation, we recommend the following ThoughtSpot U course:</p>
@@ -5715,7 +5734,7 @@ Follow these steps:</p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Nov 25, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Nov 30, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 2/26/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
