@@ -1,7 +1,7 @@
 ---
 title: [Pinboard filters]
 summary: "You can apply filters to pinboards as well as tables and charts."
-last_updated: 11/13/2020
+last_updated: 11/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -38,7 +38,7 @@ create a pinboard filter:
 
 1. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
 
-     ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
+     ![]({{ site.baseurl }}/images/add-pinboard-filters.png "Add filters under Actions")
 
 2. In the populated columns menu, click the **Add filter** icon next to the column you would like to filter on.
 
