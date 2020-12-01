@@ -1,10 +1,12 @@
 ---
-title: [Use stickers to organize]
+title: [Use tags to organize]
 
 last_updated: tbd
-summary: "Stickers enable you to create categories for classification of objects, including pinboards, answers, data sources, and worksheets."
+summary: "tags enable you to create categories for classification of objects, including pinboards, answers, data sources, and worksheets."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
+redirect_from:
+- /end-user/stickers.html
 ---
 
-{% include content/stickers.html %}
+{% include content/tags.html %}

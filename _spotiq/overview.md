@@ -90,7 +90,7 @@ analysis generates new results.
 
 3. Look for results from your **FoodDollarDataReal** data.
 
-    SpotIQ labels each result with a **NAME**, **DESCRIPTION**, **STICKERS**,
+    SpotIQ labels each result with a **NAME**, **DESCRIPTION**, **tagS**,
     and **MODIFIED**. The **NAME** comes from the object that was analyzed which
     is referenced again in the **DESCRIPTION**. The combination of **NAME**,
     **DESCRIPTION**, and **MODIFIED** is unique.

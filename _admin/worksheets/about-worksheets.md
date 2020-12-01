@@ -70,7 +70,7 @@ To add sources to your worksheet, follow these steps. The worksheet creation UI 
 
     ![Add sources to your worksheet]({{ site.baseurl }}/images/worksheet-create-add-sources.png "Add sources to your worksheet")
 
-2. Check the box next to each of the sources you want to include in the worksheet. You can search for specific Views, imported data, or tables. You can also select every data source that has a specific sticker, like **Retail**.
+2. Check the box next to each of the sources you want to include in the worksheet. You can search for specific Views, imported data, or tables. You can also select every data source that has a specific tag, like **Retail**.
 
     Note that the list of sources only shows the data sources on which you have view or edit privileges.
 

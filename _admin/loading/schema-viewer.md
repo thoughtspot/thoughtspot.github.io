@@ -27,7 +27,7 @@ You must have **Admin** privileges to use the **Schema Viewer**.
    | --- | --- |
    | 1. | See either _All_ \(Default\), or _Yours_. |
    | 2. | See either _All types_ \(Default\), _Worksheets_, _Tables_, or _Views_. |
-   | 3. | Select artifacts tagged with stickers. |
+   | 3. | Select artifacts tagged with tags. |
 
 
 4. The list of tables, worksheets, and imported data on the left changes as you select the various filters. The schema view focus changes in tandem.
@@ -51,7 +51,7 @@ You can now see the schema for each object for tables, worksheets, or views.
    | --- | --- |
    | 1. | See either _All_ \(Default\), or _Yours_. |
    | 2. | See either _All types_ \(Default\), _Worksheets_, _Tables_, or _Views_. |
-   | 3. | Select artifacts tagged with stickers. |
+   | 3. | Select artifacts tagged with tags. |
 
 3. From the list of objects, select one. Here, we selected the worksheet _West Regional Sales_.
 

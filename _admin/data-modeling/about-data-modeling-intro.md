@@ -47,6 +47,6 @@ Explains how to define a default data model to use for data system-wide.
 Explains the possible data model settings and their accepted values. These are the same for a table or the system.
 - **[Link tables using relationships]({{ site.baseurl }}/admin/data-modeling/about-relationships.html)**  
 Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
-- **[About stickers]({{ site.baseurl }}/admin/data-modeling/stickers-concept.html)**  
- You can create stickers to make it easier for people to find data sources and pinboards.
+- **[About tags]({{ site.baseurl }}/admin/data-modeling/tags-concept.html)**  
+ You can create tags to make it easier for people to find data sources and pinboards.
 - **[Manage experts or add an expert to your data]({{ site.baseurl }}/admin/data-modeling/add-expert.html)**

@@ -1,10 +1,12 @@
 ---
-title: [About stickers]
+title: [About tags]
 
 last_updated: tbd
-summary: "Stickers enable you to create categories for classification of objects, including pinboards, answers, data sources, and worksheets."
+summary: "tags enable you to create categories for classification of objects, including pinboards, answers, data sources, and worksheets."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
+redirect_from:
+- /admin/data-modeling/stickers-concept.html
 ---
 
-{% include content/stickers.html %}
+{% include content/tags.html %}

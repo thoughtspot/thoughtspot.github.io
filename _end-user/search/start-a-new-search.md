@@ -23,7 +23,7 @@ To start a new search:
 
      To see details of all of the data, click **EXPLORE ALL DATA**.
 
-    1. Filter through all available sources by using the search bar or stickers.
+    1. Filter through all available sources by using the search bar or tags.
     2. Select your sources.
     3. Click **CLOSE**.
 
