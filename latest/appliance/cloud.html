@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/cloud.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-11-25T22:29:22-08:00" />
+<meta property="article:published_time" content="2020-11-30T17:54:34-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Cloud overview”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"ThoughtSpot can currently be deployed in the following cloud provider environments:","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/cloud.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/cloud.html","headline":"[“Cloud overview”]","dateModified":"2020-11-25T22:29:22-08:00","datePublished":"2020-11-25T22:29:22-08:00","@context":"https://schema.org"}</script>
+{"description":"ThoughtSpot can currently be deployed in the following cloud provider environments:","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/cloud.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/cloud.html","headline":"[“Cloud overview”]","dateModified":"2020-11-30T17:54:34-08:00","datePublished":"2020-11-30T17:54:34-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5461,7 +5461,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    3 minutes
+    4 minutes
   
 </span> -->
 
@@ -5520,11 +5520,28 @@ $('#toc').on('click', 'a', function() {
 
 <p>ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment.</p>
 
-<h3 id="use-small-and-medium-instance-types-when-applicable">Use small and medium instance types when applicable</h3>
+<h3 id="use-small-and-medium-instance-types">Use small and medium instance types</h3>
 
-<p>ThoughtSpot has various instance types to suit your needs. For ThoughtSpot customers who are deploying their instance with lower data sizes (&lt;=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Advanced lean configuration is required before any data can be loaded onto these instances.</p>
+<p>ThoughtSpot has various instance types to suit your needs. For ThoughtSpot customers who are deploying their instance with lower data sizes (&lt;=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Advanced lean mode configuration is required before any data can be loaded onto these instances.</p>
 
-<p>Please contact ThoughtSpot support for assistance with this configuration.</p>
+<p>To configure advanced lean mode, do the following:</p>
+<ol>
+  <li>SSH as admin into your ThoughtSpot cluster, using the following syntax:<br />
+<code class="language-plaintext highlighter-rouge">ssh admin@&lt;cluster-ip-address or hostname&gt;</code>.</li>
+  <li>
+    <p>Run the advanced lean mode configuration using the following syntax:<br />
+<code class="language-plaintext highlighter-rouge">tscli config-mode lean [-h] --type {small,medium,default}</code>.</p>
+
+    <p>Examples:</p>
+
+    <ul>
+      <li>To configure your instance with the “small” data size, run: <code class="language-plaintext highlighter-rouge">tscli config-mode lean [-h] --type small</code></li>
+      <li>To configure your instance with the “medium” data size, run: <code class="language-plaintext highlighter-rouge">tscli config-mode lean [-h] --type medium</code></li>
+    </ul>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you decide later you want to disable advanced lean mode, use <code class="language-plaintext highlighter-rouge">default</code>.</div>
+  </li>
+</ol>
 
 <h3 id="shut-down-and-restart-your-cluster">Shut down and restart your cluster</h3>
 
@@ -5600,7 +5617,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Nov 25, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Nov 30, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 1/9/2019<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
