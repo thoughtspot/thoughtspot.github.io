@@ -74,3 +74,10 @@ Check if the email settings are working properly by using this procedure.
 {% include content/admin-portal/smtp-configure.md %}
 
 After you configure SMTP through the Admin Console, use `tscli` to [configure an email to receive monitoring alerts](#configure-email) and [verify the relay with an email](#verify-email).
+
+## Additional resources
+As you develop your expertise in emails and alerts, we recommend the following ThoughtSpot U course:
+* [Email and Alert Setup](https://training.thoughtspot.com/emails-alerts){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
