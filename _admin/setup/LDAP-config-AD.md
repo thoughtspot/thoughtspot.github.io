@@ -93,3 +93,10 @@ You do not have to create a user called `tsadmin` on your LDAP server. Internal 
     ```
     $ tscli ldap purge-configuration
     ```
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Active Directory](https://training.thoughtspot.com/authentication-security/621451){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>   
