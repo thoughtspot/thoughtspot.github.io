@@ -15,4 +15,4 @@ You can remove a visualization from your pinboard. To delete a visualization:
 
 4. Save your pinboard by clicking **Actions** and **Save**.
 
-     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
+     ![]({{ site.baseurl }}/images/save-a-pinboard.png "Save your pinboard")
