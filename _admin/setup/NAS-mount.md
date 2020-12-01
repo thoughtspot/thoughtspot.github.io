@@ -65,3 +65,10 @@ To mount a NAS file system using the tscli, follow these steps:
     ```
     tscli nas unmount --dir <directory>
     ```
+
+## Additional resources
+As you develop your expertise in NAS mounts, we recommend the following ThoughtSpot U course:
+* [NAS Mount](https://training.thoughtspot.com/nas-mount){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
