@@ -34,11 +34,22 @@ Refer to the following guidelines for how to set up ThoughtSpot on each cloud se
 
 ThoughtSpot recommends following these guidelines to help reduce the cost of your cloud deployment.
 
-### Use small and medium instance types when applicable
+### Use small and medium instance types
 
-ThoughtSpot has various instance types to suit your needs. For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Advanced lean configuration is required before any data can be loaded onto these instances.
+ThoughtSpot has various instance types to suit your needs. For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Advanced lean mode configuration is required before any data can be loaded onto these instances.
 
-Please contact ThoughtSpot support for assistance with this configuration.
+To configure advanced lean mode, do the following:
+1. SSH as admin into your ThoughtSpot cluster, using the following syntax:  
+`ssh admin@<cluster-ip-address or hostname>`.
+2. Run the advanced lean mode configuration using the following syntax:  
+`tscli config-mode lean [-h] --type {small,medium,default}`  
+
+   Examples:  
+
+   - To configure your instance with the "small" data size, run: `tscli config-mode lean [-h] --type small`
+   - To configure your instance with the "medium" data size, run: `tscli config-mode lean [-h] --type medium`
+
+   {% include note.html content="If you decide later you want to disable advanced lean mode, use `default`." %}
 
 ### Shut down and restart your cluster
 
