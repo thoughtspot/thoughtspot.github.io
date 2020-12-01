@@ -1,6 +1,6 @@
 ---
 title: [Admin Console]
-last_updated: 7/27/2020
+last_updated: 12/1/2020
 summary: Learn how the Admin Console can help you manage users, groups, security, authentication, and much more.
 toc: true
 sidebar: mydoc_sidebar
@@ -10,8 +10,6 @@ permalink: /:collection/:path.html
 The Admin Console provides you with an intuitive, user-friendly interface to accomplish most of the necessary tasks for administering ThoughtSpot.
 
 Navigate to the Admin Console by selecting **Admin** from the top navigation bar.
-
-![Admin tab]({{ site.baseurl}}/images/admin-tab.png "Admin tab")
 
 You can complete the following tasks in the Admin Console:
 
