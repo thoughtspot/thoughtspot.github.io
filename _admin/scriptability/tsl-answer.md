@@ -421,5 +421,7 @@ There are certain limitations to the changes you can apply by editing an Answer 
 
 * It is not possible to reverse the join direction in the TSL script.
 
+* You cannot create Scriptable representations of R- or Python-powered visualizations.
+
 ## Related Information
 - [Migrate or restore Answers]({{ site.baseurl }}/admin/worksheets/scriptability-answer.html)

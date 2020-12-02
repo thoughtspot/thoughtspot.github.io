@@ -136,5 +136,7 @@ There are certain limitations to the changes you can apply by editing a Pinboard
 
 * It is not possible to reverse the join direction in the TSL script.
 
+* You cannot create Scriptable representations of R- or Python-powered visualizations.
+
 ## Related Information
 - [Migrate or restore Pinboards]({{ site.baseurl }}/admin/worksheets/scriptability-pinboard.html)
