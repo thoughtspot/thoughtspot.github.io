@@ -91,7 +91,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
     <dd id="dataflow-new-connections"><strong>New connection types</strong><br/>In this release, DataFlow expands support to the following connection types:
     <ul>
       <li><a href="{{"/data-integrate/dataflow/dataflow-apache-parquet.html" | prepend: site.baseurl}}">Apache Parquet</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-databricks-delta-lake.html" | prepend: site.baseurl}}">Databricks Data Lake</a></li>
+      <li><a href="{{"/data-integrate/dataflow/dataflow-databricks-delta-lake.html" | prepend: site.baseurl}}">Databricks Delta Lake</a></li>
       <li><a href="{{"/data-integrate/dataflow/dataflow-denodo.html" | prepend: site.baseurl}}">Denodo</a></li>
       <li><a href="{{"/data-integrate/dataflow/dataflow-jdbc.html" | prepend: site.baseurl}}">JDBC</a></li>
       <li><a href="{{"/data-integrate/dataflow/dataflow-rest-api.html" | prepend: site.baseurl}}">REST API</a></li>
