@@ -368,5 +368,7 @@ There are certain limitations to the changes you can apply be editing a Workshee
 
 * It is not possible to include Worksheet filters in the YAML script.
 
+* You cannot create Scriptable representations of R- or Python-powered visualizations.
+
 ## Related Information
 - [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html)
