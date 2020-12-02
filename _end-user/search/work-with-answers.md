@@ -1,6 +1,6 @@
 ---
 title: [Work with Answers]
-last_updated: 11/16/2020
+last_updated: 12/1/2020
 summary: "Answers are the saved results of a search. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -23,7 +23,7 @@ You can edit a copy of an answer if you would like to make edits without changin
 
 1. Click **Answers**, on the top navigation bar.
 2. On the answer list page, click the answer you would like to edit a copy of.
-3. Click the more options menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
+3. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
      ![]({{ site.baseurl }}/images/copy_an_answer.png "Make a copy of the answer")
 
@@ -31,7 +31,7 @@ You can edit a copy of an answer if you would like to make edits without changin
 
 4. Make any changes you want to the answer.
 
-5. Click the more options menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
+5. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
 
    The Save Answer dialog box appears.
 
@@ -42,7 +42,7 @@ You can edit a copy of an answer if you would like to make edits without changin
    When you navigate back to the Answers page, your edited Answer appears in the list.
 
 ## Other features
-You can view other Answer actions by selecting the more options menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right corner of the Answer.
+You can view other Answer actions by selecting the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right corner of the Answer.
 
 ![Other Answer actions]({{ site.baseurl }}/images/Answer-actions.png "Other Answer actions")
 
@@ -70,7 +70,7 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 
 1. Find the SpotIQ insight you want to edit and click it to open it as an answer.
 
-2. Click the more options menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
+2. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
 ![]({{ site.baseurl }}/images/spot-iq-copy-and-edit.png "Copy and edit your SpotIQ insight")
 
@@ -79,7 +79,7 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 
 3. Make any changes you want to the answer.
 
-4. Click the more options menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
+4. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
 
    The Save Answer dialog box appears.
 
