@@ -109,3 +109,10 @@ ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility.
     ```
 
     This will block all usage of older versions.
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Nginx SSL](https://training.thoughtspot.com/authentication-security/610523){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
