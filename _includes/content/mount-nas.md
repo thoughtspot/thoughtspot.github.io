@@ -25,6 +25,13 @@ this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
 
+You can mount NAS using tscli.
+
+{: id="mount-nas-tscli"}
+## Mount NAS using tscli
+
+To mount a NAS file system using the tscli, follow these steps:
+
 1. Log in to the Linux shell using SSH.
 2. Mount the directory to the file system, by issuing the appropriate command:
     -   For an NFS (Network File System) directory:
@@ -61,3 +68,10 @@ will not function normally.
     ```
     tscli nas unmount --dir <directory>
     ```
+
+## Additional resources
+As you develop your expertise in NAS mounts, we recommend the following ThoughtSpot U course:
+* [NAS Mount](https://training.thoughtspot.com/nas-mount){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
