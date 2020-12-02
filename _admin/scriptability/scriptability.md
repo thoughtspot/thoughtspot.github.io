@@ -214,6 +214,8 @@ There are certain limitations to the changes you can apply by editing a Workshee
 
 * You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
 
+* You cannot create Scriptable representations of R- or Python-powered visualizations.
+
 ## Related information
 
 - [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl.html)   
