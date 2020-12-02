@@ -22,10 +22,10 @@ These release notes include information about new and enhanced features.
 Scriptability contains the following new features:
 <ul>
   <li>Export and update logical tables</li>
-  <li>Edit, validate, and publish objects using the TSL editor</li>
+  <li>Edit, validate, and publish objects using the TML editor</li>
   <li>Import multiple objects from the <strong>SpotApps</strong> page, or from the object list page</li>
   <li>Update Views</li>
-  <li>GUID handling: a new <code>GUID</code> parameter in an object's .tsl file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one</li>
+  <li>GUID handling: a new <code>GUID</code> parameter in an object's .tml file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one</li>
 
 </ul>
 
