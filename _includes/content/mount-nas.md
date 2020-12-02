@@ -25,8 +25,15 @@ this drive fills up, it can cause serious problems. Do not allow backups or data
 files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
 
+You can mount NAS using tscli.
+
+{: id="mount-nas-tscli"}
+## Mount NAS using tscli
+
+To mount a NAS file system using the tscli, follow these steps:
+
 1. Log in to the Linux shell using SSH.
-2. Mount the directory to the file system, by issuing the appropriate command:
+2. Mount the directory to the file system by issuing the appropriate command:
     -   Example for an NFS (Network File System) directory:
 
         ```
@@ -41,15 +48,23 @@ will not function normally.
 
         ```
         tscli nas mount-cifs --server storageservername.file.yourdomain.net
-           --path_on_server /tsdev-backup --mount_point /export/BACKUPS/
-           --username 'avtprdweutspotdev' --uid 1001 --gid 1001 --options 'vers=3.0'
+          --path_on_server /tsdev-backup --mount_point /export/BACKUPS/
+          --username 'avtprdweutspotdev' --uid 1001 --gid 1001 --options 'vers=3.0'
         ```
 
         {% include note.html content="Other command-line options are available to forward to the `mount.cifs` command (default: `noexec`)." %}
 
-3. Use the mounted file system as you wish, specifying it by referring to its mount point.
-4. When you are finished with it, you may optionally unmount the NAS file system:
+3. Use the mounted file system by referring to its mount point.
+
+4. When you are finished with it, you can optionally unmount the NAS file system:
 
     ```
     tscli nas unmount --dir <directory>
     ```
+
+## Additional resources
+As you develop your expertise in NAS mounts, we recommend the following ThoughtSpot U course:
+* [NAS Mount](https://training.thoughtspot.com/nas-mount){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

@@ -151,3 +151,10 @@ nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
 ```
 
 You must ensure that your load balancer supports these ciphers.
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Nginx SSL](https://training.thoughtspot.com/authentication-security/610523){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
