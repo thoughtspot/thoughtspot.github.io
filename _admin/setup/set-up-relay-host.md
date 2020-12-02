@@ -54,3 +54,10 @@ Check if the email settings are working properly by using this procedure.
     ```
 
  3. If you receive the email at the address(es) you supplied, email is working correctly.
+
+## Additional resources
+As you develop your expertise in emails and alerts, we recommend the following ThoughtSpot U course:
+* [Email and Alert Setup](https://training.thoughtspot.com/emails-alerts){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
