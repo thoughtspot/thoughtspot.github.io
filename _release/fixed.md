@@ -13,9 +13,11 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <details>
 <summary>6.2.X Releases</summary>
 <ul>
+<li><a href="#6-2-1">6.2.1 Fixed issues</a></li>
 <li><a href="#6-2">6.2 Fixed issues</a></li>
 </ul>
-</details>
+</details></li>
+<li>
 <details>
 <summary>6.1.X Releases</summary>
 <ul>
@@ -220,6 +222,29 @@ These are the issues we fixed in ThoughtSpot Release 6.3.
 - User is unable to list and delete worksheet dependencies.
 
 - Attempting to share a worksheet with another user, causes the error "Loading Failed" when trying to add the user.
+
+<a id="6-2-1"></a>
+## 6.2.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.2.1.
+
+- Upgrades to 6.2 could sometimes become stuck or fail.
+
+- Replay Search incorrectly shows as available when ThoughtSpot is embedded.
+
+- Style customization page is not available.
+
+- When ThoughtSpot is embedded, clicking the Follow button enables the navbar.
+
+- Scrolling a tabular answer resulted causes an error.
+
+- Growth formula doesn’t work when using a custom calendar.
+
+- Geo Map intermittently displays two different charts for the same query.
+
+- Copy to clipboard doesn’t work in the Admin tab.
+
+- Choosing a fact table for the purpose of creating a join causes inconsistent sub-queries.
 
 <a id="6-2"></a>
 ## 6.2 Fixed issues
@@ -696,7 +721,7 @@ These are the issues we fixed in ThoughtSpot Release 5.1.3.
 
 - A normal bar chart in a pinboard which is changed to a stacked bar chart no longer reverts to the normal bar chart after the pinboard is saved, browser is closed, and pinboard is reopened.
 
-vA problem where using the exclude filter on pinboards causes the wrong results to be displayed is now fixed.
+- A problem where using the exclude filter on pinboards causes the wrong results to be displayed is now fixed.
 
 - Usage-based indexing of search has been improved.
 
