@@ -21,7 +21,7 @@ You can use conditional formatting to show table cells with a background color d
 
 To apply conditional formatting to a table:
 
-1. In the column header of your table for the column you want to apply formatting to, click the **more options** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
+1. In the column header of your table for the column you want to apply formatting to, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
      ![]({{ site.baseurl }}/images/conditional_formatting_table_1.png "Three dot menu")
 
