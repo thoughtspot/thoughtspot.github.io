@@ -1,7 +1,7 @@
 ---
 title: [Download your search]
 
-last_updated: 11/18/2020
+last_updated: 12/3/2020
 summary: "You can download your search as either a table or chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,7 +10,7 @@ You have the option to download your table as a CSV (comma separated values),
 PDF, or XLSX (Excel) file. When you download a chart, it will be a PNG file.
 
 * To
-download your search, click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and do any of the following:
+download your search, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and do any of the following:
     * For a table, choose **Download as CSV**, **Download as PDF**, or **Download as XLSX**.
 
          ![]({{ site.baseurl }}/images/download-a-table.png "Download your table options")
