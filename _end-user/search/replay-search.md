@@ -1,14 +1,14 @@
 ---
 title: [Replay search]
 
-last_updated: 11/18/2020
+last_updated: 12/3/2020
 summary: "You can instantly generate a step-by-step replay showing the creation of a table or chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The replay feature shows how to create the chart or table you are viewing. Use it to teach yourself, or take a screen recording of it and create your own ThoughtSpot training for your team.
 
-* When viewing a chart or table, click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Replay search**.
+* When viewing a chart or table, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Replay search**.
 
      ![]({{ site.baseurl }}/images/replay-search.png "The Replay search icon")
 
