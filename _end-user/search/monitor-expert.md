@@ -1,6 +1,6 @@
 ---
 title: ["Manage expert requests"]
-last_updated: 11/17/2020
+last_updated: 12/3/2020
 summary: "You can monitor and manage Ask an Expert requests, both as a requester and as an expert."
 sidebar: mydoc_sidebar
 toc: true
@@ -13,7 +13,7 @@ Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 
 Follow these steps to the request monitoring interface:
 
-1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-20px.png){: .inline} (help) icon menu.
+1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-10px.png){: .inline} (help) icon menu.
 2. In the drop-down, select **Expert Requests**.
 3. The **Expert** interface appears, with information for you both as a **Requester**, and as an **Expert**.  
 
