@@ -1,13 +1,13 @@
 ---
 title: [View or edit a formula in a search]
 summary: Learn how to view or edit a formula.
-last_updated: 11/23/2020
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can always go back and view or edit a formula that was added to a search. Do this by clicking the edit icon next to its name in the **Columns** listing. Anyone who has edit privileges on an answer can also edit any formulas it contains. To view or edit an existing formula in an answer:
 
-1. Navigate to the pinboard that contains the answer with the formula, click the **more options** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit**.
+1. Navigate to the pinboard that contains the answer with the formula, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Edit**.
 2. Scroll down to the bottom of the **Columns** listing. You will see a data source called **Formulas**.
 3. Expand **Formulas**, and you can see a list of all the formulas in this answer.
 
