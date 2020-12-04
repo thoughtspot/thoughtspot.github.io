@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/scriptability/scriptability.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-03T21:56:10-08:00" />
+<meta property="article:published_time" content="2020-12-04T13:33:34-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Scriptability”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/scriptability/scriptability.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/admin/scriptability/scriptability.html","headline":"[“Scriptability”]","dateModified":"2020-12-03T21:56:10-08:00","datePublished":"2020-12-03T21:56:10-08:00","@context":"https://schema.org"}</script>
+{"description":"ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/scriptability/scriptability.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/admin/scriptability/scriptability.html","headline":"[“Scriptability”]","dateModified":"2020-12-04T13:33:34-08:00","datePublished":"2020-12-04T13:33:34-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2553,7 +2553,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/latest/admin/scriptability/tsl.html">ThoughtSpot Scripting Language</a></li>
+                          <li><a href="/latest/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a></li>
                       
                    
                 
@@ -5484,15 +5484,15 @@ $('#toc').on('click', 'a', function() {
 <ol>
   <li><strong>Edit and update an existing object in the same cluster</strong>: You can either
     <ul>
-      <li><a href="#export-object">export</a> the object(s), edit the object(s) by modifying its <a href="/latest/admin/scriptability/tsl.html">ThoughtSpot Scripting Language</a> (<code class="language-plaintext highlighter-rouge">TSL</code>) representation, and <a href="#update-object">import</a> the updated file(s) to modify the existing object <em>or</em></li>
-      <li>edit the object(s) using the <a href="#edit-tsl">in-app <code class="language-plaintext highlighter-rouge">TSL</code> editor</a> and publish the updated file(s).</li>
+      <li><a href="#export-object">export</a> the object(s), edit the object(s) by modifying its <a href="/latest/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a> (<code class="language-plaintext highlighter-rouge">TML</code>) representation, and <a href="#update-object">import</a> the updated file(s) to modify the existing object <em>or</em></li>
+      <li>edit the object(s) using the <a href="#edit-tml">in-app <code class="language-plaintext highlighter-rouge">TML</code> editor</a> and publish the updated file(s).</li>
     </ul>
   </li>
   <li><strong>Migrate an existing object from one cluster to a new cluster</strong>: <a href="#export-object">export</a> the object(s) and <a href="#migrate-object">import</a> the updated file(s) to the new cluster.</li>
   <li><strong>Edit and migrate an existing object from one cluster to a new cluster</strong>: You can either
     <ul>
-      <li><a href="#export-object">export</a> the object(s), edit the object(s) by modifying its <a href="/latest/admin/scriptability/tsl.html">ThoughtSpot Scripting Language</a> (<code class="language-plaintext highlighter-rouge">TSL</code>) representation, and <a href="#migrate-object">import</a> the updated file(s) to the new cluster <em>or</em></li>
-      <li>edit the object(s) using the <a href="#edit-tsl">in-app <code class="language-plaintext highlighter-rouge">TSL</code> editor</a>, publish the updated file(s), <a href="#export-object">export</a> the object(s), and <a href="#migrate-object">import</a> the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.</li>
+      <li><a href="#export-object">export</a> the object(s), edit the object(s) by modifying its <a href="/latest/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a> (<code class="language-plaintext highlighter-rouge">TML</code>) representation, and <a href="#migrate-object">import</a> the updated file(s) to the new cluster <em>or</em></li>
+      <li>edit the object(s) using the <a href="#edit-tml">in-app <code class="language-plaintext highlighter-rouge">TML</code> editor</a>, publish the updated file(s), <a href="#export-object">export</a> the object(s), and <a href="#migrate-object">import</a> the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.</li>
     </ul>
   </li>
 </ol>
@@ -5552,7 +5552,7 @@ $('#toc').on('click', 'a', function() {
     <p>Navigate to the Pinboard, Answer, View, Table, or Worksheet you want to export.</p>
   </li>
   <li>
-    <p>Click the three-dot icon, and select <strong>Export as TSL</strong>.</p>
+    <p>Click the three-dot icon, and select <strong>Export as TML</strong>.</p>
 
     <p><img src="/latest/images/scriptability-cloud-pinboard-export.png" alt="Export a Pinboard" title="Export a Pinboard" /></p>
   </li>
@@ -5582,17 +5582,17 @@ $('#toc').on('click', 'a', function() {
     <p>Click <strong>Export</strong>.</p>
   </li>
   <li>
-    <p>Open the downloaded <code class="language-plaintext highlighter-rouge">TSL</code> zip file. The SpotApp zip file contains a document called the <code class="language-plaintext highlighter-rouge">Manifest</code> file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the <code class="language-plaintext highlighter-rouge">Manifest</code> file. The zip file still exports, even if an individual object’s export fails.</p>
+    <p>Open the downloaded <code class="language-plaintext highlighter-rouge">TML</code> zip file. The SpotApp zip file contains a document called the <code class="language-plaintext highlighter-rouge">Manifest</code> file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the <code class="language-plaintext highlighter-rouge">Manifest</code> file. The zip file still exports, even if an individual object’s export fails.</p>
   </li>
 </ol>
 
-<h2 id="edit-tsl">Edit the TSL file</h2>
-<p>You can edit the <code class="language-plaintext highlighter-rouge">TSL</code> file in one of two ways. You can <a href="#export-object">export</a> the object(s) and edit the file(s) in any text editor, before you import it. Or, you can use the <a href="#itself-editor">in-app <code class="language-plaintext highlighter-rouge">TSL</code> editor</a> to edit, validate, and publish the object(s). Refer to <a href="/latest/admin/scriptability/tsl.html">ThoughtSpot Scripting Language</a> for information on syntax in the TSL files.</p>
+<h2 id="edit-tml">Edit the TML file</h2>
+<p>You can edit the <code class="language-plaintext highlighter-rouge">TML</code> file in one of two ways. You can <a href="#export-object">export</a> the object(s) and edit the file(s) in any text editor, before you import it. Or, you can use the <a href="#itself-editor">in-app <code class="language-plaintext highlighter-rouge">TML</code> editor</a> to edit, validate, and publish the object(s). Refer to <a href="/latest/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a> for information on syntax in the TML files.</p>
 
-<h2 id="tsl-editor">Edit, validate, and publish objects using the TSL editor</h2>
-<p>You can access the TSL editor from the object list page, or from the object itself. To edit and update multiple objects using the TSL editor, access it from the object list page.</p>
+<h2 id="tml-editor">Edit, validate, and publish objects using the TML editor</h2>
+<p>You can access the TML editor from the object list page, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page.</p>
 
-<p>To use the TSL editor, follow these steps:</p>
+<p>To use the TML editor, follow these steps:</p>
 
 <ol>
   <li>
@@ -5602,50 +5602,50 @@ $('#toc').on('click', 'a', function() {
     <p>Click the name of the object you want to edit, or select multiple objects by clicking on the checkboxes that appear when you hover over an object name.</p>
   </li>
   <li>
-    <p>From the object list page, select the <strong>Edit TSL</strong> button. From the object itself, select the ellipsis <img src="/latest/images/icon-ellipses.png" alt="more options menu" class="inline" /> (more options) menu in the upper-right side of the screen, and select <strong>Edit TSL</strong>.</p>
+    <p>From the object list page, select the <strong>Edit TML</strong> button. From the object itself, select the ellipsis <img src="/latest/images/icon-ellipses.png" alt="more options menu" class="inline" /> (more options) menu in the upper-right side of the screen, and select <strong>Edit TML</strong>.</p>
 
-    <p><img src="/latest/images/scriptability-edit-tsl-object-page.png" alt="Edit TSL - object list page" title="Edit TSL - object list page" /></p>
+    <p><img src="/latest/images/scriptability-edit-tml-object-page.png" alt="Edit TML - object list page" title="Edit TML - object list page" /></p>
 
-    <p><img src="/latest/images/scriptability-edit-tsl-object.png" alt="Edit TSL from object" title="Edit TSL from object" /></p>
+    <p><img src="/latest/images/scriptability-edit-tml-object.png" alt="Edit TML from object" title="Edit TML from object" /></p>
   </li>
   <li>
-    <p>The TSL editor opens. Edit the TSL file(s), using the syntax specified in <a href="/latest/admin/scriptability/tsl.html">ThoughtSpot Scripting Language</a>.</p>
+    <p>The TML editor opens. Edit the TML file(s), using the syntax specified in <a href="/latest/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
 
-    <p>The TSL editor has the following functions under the top menu:</p>
+    <p>The TML editor has the following functions under the top menu:</p>
     <ul>
       <li><strong>File</strong>: Validate, Publish, and Exit editor. You can also validate and publish using the <strong>validate</strong> and <strong>publish</strong> buttons at the top right of the editor. You can also exit the editor using the X button at the top right corner. The system warns you if you try to exit with unsaved changes.</li>
-      <li><strong>Edit</strong>: Undo, Redo, Cut, Copy, Select all, Fold, Fold all, Unfold, Unfold all, and Go to line. The <strong>Fold</strong> option compresses the lines in the file so you only see the first line of a section. <strong>Go to line</strong> opens a dialog box, where you can type in the number of the line you would like to go to. This is useful for long TSL files.</li>
-      <li><strong>Find</strong>: Find and Find and replace. This functionality allows you to easily find words or parameters in the TSL file. You can also click on a word or parameter in the TSL editor, and the editor highlights all instances of that word.</li>
+      <li><strong>Edit</strong>: Undo, Redo, Cut, Copy, Select all, Fold, Fold all, Unfold, Unfold all, and Go to line. The <strong>Fold</strong> option compresses the lines in the file so you only see the first line of a section. <strong>Go to line</strong> opens a dialog box, where you can type in the number of the line you would like to go to. This is useful for long TML files.</li>
+      <li><strong>Find</strong>: Find and Find and replace. This functionality allows you to easily find words or parameters in the TML file. You can also click on a word or parameter in the TML editor, and the editor highlights all instances of that word.</li>
       <li><strong>View</strong>: Show/Hide errors, Show line numbers, and Hide line numbers. <strong>Show/Hide errors</strong> toggles the <strong>Errors</strong> sidebar on and off. The <strong>Errors</strong> sidebar does not appear until after you Validate a file, if there are errors in it.</li>
-      <li><strong>Help</strong>: Documentation. This links to the <a href="/latest/admin/scriptability/tsl.html">ThoughtSpot Scripting Language</a> documentation.</li>
+      <li><strong>Help</strong>: Documentation. This links to the <a href="/latest/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a> documentation.</li>
     </ul>
   </li>
   <li>
-    <p>When you finish editing the TSL file(s), select <strong>Validate</strong> in the top right corner. You must validate each file individually. A blue dot appears next to any file that contains changes.</p>
+    <p>When you finish editing the TML file(s), select <strong>Validate</strong> in the top right corner. You must validate each file individually. A blue dot appears next to any file that contains changes.</p>
 
-    <p><img src="/latest/images/scriptability-tsl-editor-validate.png" alt="Validate the file" title="Validate the file" /></p>
+    <p><img src="/latest/images/scriptability-tml-editor-validate.png" alt="Validate the file" title="Validate the file" /></p>
   </li>
   <li>
     <p>If you constructed the file(s) correctly, a green check mark appears next to the name of the file. If you did not construct the file correctly, a red bar appears near the top of the screen, telling you that ThoughtSpot found errors in one or more files. Click <strong>Show errors</strong> to see the errors listed in the <strong>Errors</strong> sidebar.</p>
 
-    <p><img src="/latest/images/scriptability-tsl-editor-errors.png" alt="Review errors" title="Review errors" /></p>
+    <p><img src="/latest/images/scriptability-tml-editor-errors.png" alt="Review errors" title="Review errors" /></p>
   </li>
   <li>
     <p>After validating,  select <strong>Publish</strong> in the top right corner, next to <strong>Validate</strong>. You must publish each file individually.</p>
   </li>
   <li>
-    <p>The system displays a <strong>Publish status</strong> dialog box. You can select <strong>Open [object]</strong> to open the object you just published in a new tab, or click <strong>Close</strong> to return to the TSL editor.</p>
+    <p>The system displays a <strong>Publish status</strong> dialog box. You can select <strong>Open [object]</strong> to open the object you just published in a new tab, or click <strong>Close</strong> to return to the TML editor.</p>
 
-    <p><img src="/latest/images/scriptability-tsl-editor-publish-status.png" alt="Open the object or return to the TSL editor" title="Open the object or return to the TSL editor" /></p>
+    <p><img src="/latest/images/scriptability-tsl-editor-publish-status.png" alt="Open the object or return to the TML editor" title="Open the object or return to the TML editor" /></p>
   </li>
 </ol>
 
 <h2 id="update-object">Update an object</h2>
-<p>You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the <code class="language-plaintext highlighter-rouge">TSL</code> file, making any necessary changes, and then re-uploading the <code class="language-plaintext highlighter-rouge">TSL</code> file. To update SpotApps, or collections of objects packaged together as a zip file, refer to <a href="/latest/admin/scriptability/app-templates.html">SpotApps</a>.</p>
+<p>You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the <code class="language-plaintext highlighter-rouge">TML</code> file, making any necessary changes, and then re-uploading the <code class="language-plaintext highlighter-rouge">TML</code> file. To update SpotApps, or collections of objects packaged together as a zip file, refer to <a href="/latest/admin/scriptability/app-templates.html">SpotApps</a>.</p>
 
-<p>You can also update an object using the <a href="#tsl-editor">TSL editor</a>.</p>
+<p>You can also update an object using the <a href="#tml-editor">TML editor</a>.</p>
 
-<p>To update an existing object by downloading the TSL file and modifying it, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.</p>
+<p>To update an existing object by downloading the TML file and modifying it, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.</p>
 
 <ol>
   <li>
@@ -5664,19 +5664,19 @@ $('#toc').on('click', 'a', function() {
     <p>Click the ellipsis <img src="/latest/images/icon-ellipses.png" alt="more options menu" class="inline" /> (more options) menu in the upper-right side of the screen.</p>
   </li>
   <li>
-    <p>Select <strong>Update from TSL</strong>.</p>
+    <p>Select <strong>Update from TML</strong>.</p>
 
     <p>Here, we are uploading the edited <em>TCPH WS</em> worksheet.</p>
 
     <p><img src="/latest/images/scriptability-worksheet-update.png" alt="Start Worksheet update from file" title="Start Worksheet update from file" /></p>
   </li>
   <li>
-    <p>In the <strong>Import</strong> interface, click <strong>Select .TSL or .zip files to upload</strong>.</p>
+    <p>In the <strong>Import</strong> interface, click <strong>Select .TML or .zip files to upload</strong>.</p>
 
-    <p><img src="/latest/images/scriptability-worksheet-update-browse.png" alt="Find the Worksheet TSL file" title="Find the Worksheet TSL file" /></p>
+    <p><img src="/latest/images/scriptability-worksheet-update-browse.png" alt="Find the Worksheet TML file" title="Find the Worksheet TML file" /></p>
   </li>
   <li>
-    <p>In your file system, find and select the <code class="language-plaintext highlighter-rouge">TSL</code> file you edited.</p>
+    <p>In your file system, find and select the <code class="language-plaintext highlighter-rouge">TML</code> file you edited.</p>
   </li>
   <li>
     <p>If you constructed the file correctly, the <strong>Import</strong> interface displays a <em>Validation successful</em> message. You can now import the file.</p>
@@ -5712,22 +5712,22 @@ $('#toc').on('click', 'a', function() {
     <p>Click <strong>Answers</strong>, <strong>Pinboards</strong>, or <strong>Data</strong> on the top navigation bar, depending on the objects you want to migrate.</p>
   </li>
   <li>
-    <p>To upload a Worksheet or View, click the More icon <img src="/latest/images/icon-ellipses.png" alt="more options menu" class="inline" /> in the upper-right side of the screen. Then, select <strong>Import TSL</strong>.</p>
+    <p>To upload a Worksheet or View, click the More icon <img src="/latest/images/icon-ellipses.png" alt="more options menu" class="inline" /> in the upper-right side of the screen. Then, select <strong>Import TML</strong>.</p>
 
-    <p><img src="/latest/images/scriptability-cloud-worksheet-view-import.png" alt="Import Worksheet or View TSL" title="Import Worksheet or View TSL" /></p>
+    <p><img src="/latest/images/scriptability-data-import.png" alt="Import Worksheet or View TML" title="Import Worksheet or View TML" /></p>
   </li>
   <li>
-    <p>To upload a Pinboard or Answer, click the <strong>Import TSL</strong> button in the upper-right side of the screen.</p>
+    <p>To upload a Pinboard or Answer, click the <strong>Import TML</strong> button in the upper-right side of the screen.</p>
 
     <p><img src="/latest/images/scriptability-cloud-import.png" alt="Import a Pinboard or Answer" title="Import a Pinboard or Answer" /></p>
   </li>
   <li>
-    <p>In the <strong>Import</strong> interface, click <strong>Select .TSL or .zip files to upload</strong>.</p>
+    <p>In the <strong>Import</strong> interface, click <strong>Select .TML or .zip files to upload</strong>.</p>
 
-    <p><img src="/latest/images/scriptability-cloud-import-page.png" alt="Select a file" title="Select a file" /></p>
+    <p><img src="/latest/images/scriptability-worksheet-update-browse.png" alt="Select a file" title="Select a file" /></p>
   </li>
   <li>
-    <p>In your file system, find and select the <code class="language-plaintext highlighter-rouge">TSL</code> file. The file uploads automatically.</p>
+    <p>In your file system, find and select the <code class="language-plaintext highlighter-rouge">TML</code> file. The file uploads automatically.</p>
   </li>
   <li>
     <p>If you constructed the file correctly, the <strong>Import</strong> interface displays a <em>Validation successful</em> message. You can now import the file.</p>
@@ -5747,15 +5747,15 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ol>
 
-<h2 id="limitations-of-working-with-tsl-files">Limitations of working with TSL files</h2>
-<p>There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TSL.</p>
+<h2 id="limitations-of-working-with-tml-files">Limitations of working with TML files</h2>
+<p>There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TML.</p>
 
 <ul>
   <li>
     <p>Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.</p>
   </li>
   <li>
-    <p>It is not possible to reverse the join direction in the TSL script.</p>
+    <p>It is not possible to reverse the join direction in the TML script.</p>
   </li>
   <li>
     <p>You cannot create new tables using Scriptability. You can only update existing tables.</p>
@@ -5774,7 +5774,7 @@ $('#toc').on('click', 'a', function() {
 <h2 id="related-information">Related information</h2>
 
 <ul>
-  <li><a href="/latest/admin/scriptability/tsl.html">ThoughtSpot Scripting Language</a></li>
+  <li><a href="/latest/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a></li>
 </ul>
 
   <div class="tags">
@@ -5802,7 +5802,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Dec 3, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Dec 4, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 10/20/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
