@@ -41,7 +41,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
       <li>Views</li>
       <li>Tables</li>
     </ul>
-    <p>ThoughtSpot Scripting Language is now called <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
+    <p>ThoughtSpot Modeling Language is now called <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
     </dd>
   </dlentry>  
 
