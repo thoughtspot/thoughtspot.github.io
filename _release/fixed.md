@@ -99,6 +99,128 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 These are the issues we fixed in ThoughtSpot Release 6.3.
 
+- Pivot table aggregation type cannot be changed.
+
+- Exporting data to CSV does not conform to a custom date format.
+
+- Adding a filter to a Pinboard does not work with visualizations from different sources.
+
+- When a user runs a search on a table, if the result set is greater than 1000 rows, the Show column summary will only sum up 1000 rows while the headline summaries will show the total for all rows.
+
+- `substr` function using non-English text causes a garbled result.
+
+- **Make a Copy**  option in Pinboard menu is greyed out for a user with view only access.
+
+- Users periodically have trouble logging in through SSO when SAML is used.
+
+- SSO session timeout does not work.
+
+- Pinboards are read-only when the owner shares it with another user with edit rights. 
+
+- Worksheets cannot be saved if they contain a formula and filter.
+
+- As a result of strict CLS, users can access tables that they shouldn't be able to access when selecting a source in a worksheet.
+
+- Growth formula does not work when using custom calendar.
+
+- ThoughtSpot main navigation bar is displayed even when primaryNavHidden=true is set.
+
+- SearchIQ does not retain language mapping.
+
+- Attribute views, analytic views and calculation views are not accessible through Embrace using SAP HANA.
+
+- "`[object Object]`" is displayed in the description field after editing a view.
+
+- Search suggestion doesn't display the column values.
+
+- The select data source option is not available for Search.
+
+- R package not set up on cluster.
+
+- Style customization menu is not available.
+
+- Replay Search feature is available when ThoughtSpot is embedded, even though it is not supported.
+
+- Self-service upgrade to 6.2 becomes stuck at scoreboard compare.
+
+- Query from user set 'bypass RLS' still shows joins to RLS tables.
+
+- Pivot table disappears when scheduled but is visible when downloaded.
+
+- Email does not work in DataFlow even though SMTP is configured.
+
+- DataFlow does conform to the cluster timezone.
+
+- A worksheet with a formula configured as geo config cannot be imported into a cluster.
+
+- Using DataFlow to update a flow with a new column fails if the column includes a space.
+
+- A JAR file mismatch causes an error when attempting to use DataFlow to connect to MySQL.
+
+- No data labels are displayed on the % line in a Pareto chart.
+
+- Adding table sync in DataFlow causes a "Failed to load column" error.
+
+- Table number formatting is lost when an Answer is saved.
+
+- Custom calendar date starts with February instead of January in a line chart.
+
+- Incorrect statistics are displayed in the log and dashboard while using DataFlow to load from MySQL.
+
+- A cluster can't be stopped if nodes are down.
+
+- Names cannot be updated in a pivot table.
+
+- Sankey chart shows incorrect values.
+
+- Users who don't have edit permission on a table visualization of a pinboard do not have the option to remove a column.
+
+- Sankey chart does not load.
+
+- Teradata connection in DataFlow cannot preview any tables.
+
+- SpotIQ doesn't display "analyses" after an analysis is run.
+
+- A scheduled Pinboard does not send email when there is a Japanese character in the Pinboard.
+
+- Users cannot drill down on pivot tables to look at the underlying table.
+
+- Complex Pinboards cannot be copied for editing.
+
+- Showing underlying data on a chasm trap search gives repeated/incorrect values.
+
+- Scheduled materialized views don't update.
+
+- Date formats of downloaded csv, pdf, and xlsx files do not conform to the locale.
+
+- Users can't sign in after `tscli storage gc` command is run.
+
+- Scriptability does not export of worksheets that have a filter.
+
+- Pinboard filters do not display when SearchIQ is enabled.
+
+- Pivot table heatmap function uses the decimal value of the percentage calculation and not the actual percentage.
+
+- Summing on group aggregate formula in a worksheet fails.
+
+- Data tab missing info after making a copy of "TS Stats: Table Status" pinboard.
+
+- `to_string` does not work on custom calendar attributes.
+
+- "million" and "billion" are not translated to Japanese in answer.
+
+- Changes to column names in the data format of a Pinboard are not saved.
+
+- Using global filter on one value in a Pinboard filters on all values.
+
+- Converting a '/' to 'safe_divide' in a complex formula causes an error.
+
+- Geo Map downloads two different charts for the same query.
+
+- User is unable to list and delete worksheet dependencies.
+
+- Attempting to share a worksheet with another user, causes the error "Loading Failed" when trying to add the user.
+
 <a id="6-2"></a>
 ## 6.2 Fixed issues
 

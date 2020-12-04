@@ -51,7 +51,7 @@ downloading an answer: simply click the ellipses icon ![more options menu icon](
 
 For more details, see [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
 
-## Export a Pinboard as a TML file
+## Export a Pinboard as a TSL file
 
 You can download a Pinboard as a [TML]({{ site.baseurl }}/admin/scriptability/tml.html), or ThoughtSpot Modeling Language, file, optionally modify it, and migrate it to another cluster, or re-upload it to the same cluster.
 

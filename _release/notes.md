@@ -11,7 +11,11 @@ ThoughtSpot version 6.3 is now available. These release notes include informatio
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
 * [6.3 New Features](#6-3-new)
-* [Beta Programs](#beta-program)
+   * [For the Analyst](#6-3-analyst)
+   * [For the Business User](#6-3-business-user)
+   * [For the Data Engineer](#6-3-data-engineer)
+   * [For the IT Ops Engineer](#6-3-it-ops-engineer)
+<!--* [Beta Programs](#beta-program)-->
 * [Supported Upgrade Paths](#upgrade-paths)
 
 {: id="6-3-new"}
@@ -60,11 +64,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 <dl id="6-3-business-user">
   <dlentry id="monitor">
     <dt>Monitor</dt>
-    <dd>The Monitor suite of features, some of which were introduced in earlier releases as Beta, are now generally available by default. These features are:
-      <ul>
-        <li><strong><a href="{{ site.baseurl }}/end-user/pinboards/share-pinboards.html#share-viz">Change this text and link</a></strong> brief explanation</li>   
-      </ul>
-    </dd></dlentry>
+    <dd>The Monitor suite of features, some of which were introduced in earlier releases as Beta, are now generally available by default.</dd></dlentry>
   <dlentry id="mobile-improvements">
     <dt>Mobile app updates</dt>
     <dd>ThoughtSpot mobile supports more features that were previously available only through the ThoughtSpot Web app, including:
@@ -89,20 +89,21 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 <dl id="6-3-data-engineer">
   <dlentry id="dataflow">
     <dt>DataFlow</dt>
-    <dd>In this release, DataFlow expands support to the following connection types:
+    <dd id="dataflow-new-connections"><strong>New connection types</strong><br/>In this release, DataFlow expands support to the following connection types:
     <ul>
       <li><a href="{{"/data-integrate/dataflow/dataflow-apache-parquet.html" | prepend: site.baseurl}}">Apache Parquet</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-azure-databricks.html" | prepend: site.baseurl}}">Azure Databricks</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-azure-data-lake.html" | prepend: site.baseurl}}">Azure Data Lake</a></li>
+      <li><a href="{{"/data-integrate/dataflow/dataflow-databricks-delta-lake.html" | prepend: site.baseurl}}">Databricks Delta Lake</a></li>
       <li><a href="{{"/data-integrate/dataflow/dataflow-denodo.html" | prepend: site.baseurl}}">Denodo</a></li>
       <li><a href="{{"/data-integrate/dataflow/dataflow-jdbc.html" | prepend: site.baseurl}}">JDBC</a></li>
       <li><a href="{{"/data-integrate/dataflow/dataflow-rest-api.html" | prepend: site.baseurl}}">REST API</a></li>
       <li><a href="{{"/data-integrate/dataflow/dataflow-sas.html" | prepend: site.baseurl}}">SAS</a></li>
     </ul>
-    </dd></dlentry>
+    </dd>
+    <dd id="dataflow-transformations"><strong>Transformations</strong><br/>In all DataFlow database connections, you can now add row-level formulas that use native database functions to transform your data as it loads into ThoughtSpot.</dd></dlentry>
   <dlentry id="embrace">
     <dt>Embrace</dt>
-    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="/images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline" />.</dd>
+    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
+    <dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. This feature is in beta for this release. Contact ThoughtSpot support for assistance.</dd>
     </dlentry>
 </dl>
 
@@ -110,11 +111,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 
 <dl id="6-3-it-ops-engineer">
 
-  <dlentry id="entry"><dt>Advanced lean mode for cloud deployments</dt><dd>For ThoughtSpot customers who want to deploy their AWS, Azure, and GCP instances with lower data sizes, this release brings enhancements to advanced lean mode configuration.</dd><dd>Enhancements include the following:
-  <ul>
-    <li>You can now configure lean mode yourself using tscli commands. No need to contact ThoughtSpot.</li>
-    <li>Default limits on objects (answers, pinboards) so that can't create more objects than your reduced configuration can support.</li>
-  </ul>
+  <dlentry id="entry"><dt>Advanced lean mode for cloud deployments</dt><dd>For ThoughtSpot customers who want to deploy their AWS, Azure, and GCP instances with lower data sizes, this release brings enhancements to advanced lean mode configuration.</dd><dd>You can now configure lean mode yourself using tscli commands. No need to contact ThoughtSpot. For details, see <a href="{{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs">Use small and medium instance types</a>.
   </dd></dlentry>
 
   <dlentry id="open-ldap-auth"><dt>OpenLDAP authentication</dt><dd>ThoughtSpot now integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>. This feature also exists in ThoughtSpot release 6.0.5.
@@ -145,11 +142,11 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 
 </dl>    
 
-{: id="beta-program"}
+<!--{: id="beta-program"}
 ## Beta Programs
 
 If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators, and so on.
-We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
+We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.-->
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths

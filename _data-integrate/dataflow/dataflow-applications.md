@@ -5,4 +5,6 @@ summary: "DataFlow connects to the Salesforce application"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In this release, DataFlow connects to the <a href="{{"/data-integrate/dataflow/dataflow-salesforce.html" | prepend: site.baseurl}}">Salesforce</a> application.
+In this release, DataFlow connects to the following applications:
+
+{% include content/dataflow/dataflow-applications-list.md %}
