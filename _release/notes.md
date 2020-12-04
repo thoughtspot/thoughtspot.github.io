@@ -36,11 +36,12 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
-    <dd>This release introduces expanded support for <a href="{{ site.baseurl }}/admin/scriptability/scriptability-overview.html">exporting and importing ThoughtSpot objects</a>. Pinboard and Answer Scriptability is now GA. You can also export, import, and update the following newly scriptable objects:
+    <dd><p>This release introduces expanded support for <a href="{{ site.baseurl }}/admin/scriptability/scriptability-overview.html">exporting and importing ThoughtSpot objects</a>. Pinboard and Answer Scriptability is now GA. You can also export, import, and update the following newly scriptable objects:</p>
      <ul>
       <li>Views</li>
       <li>Tables</li>
     </ul>
+    <p>ThoughtSpot Scripting Language is now called <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
     </dd>
   </dlentry>  
 
