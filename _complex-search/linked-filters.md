@@ -1,6 +1,6 @@
 ---
 title: [Linked Pinboard filters]
-last_updated: 9/25/2020
+last_updated: 12/4/2020
 summary: "You can link columns from multiple Worksheets, to create one Pinboard filter for visualizations that come from different Worksheets."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,9 +16,9 @@ To configure linked Pinboard filters, follow these steps. Note that you can link
 
 1. Navigate to the Pinboard you would like to filter, or [create a new Pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
 
-2. First, you must add primary Pinboard filters. If you do not add primary filters, the **Configure filters** option does not appear in the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
+2. First, you must add primary Pinboard filters. If you do not add primary filters, the **Configure filters** option does not appear in the **More** menu ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
-3. To add a primary Pinboard filter, select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Add filters**.
+3. To add a primary Pinboard filter, select the **More** menu icon![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Add filters**.
 
 4. In the **Add filters** side panel, search for columns you would like to filter on, or open the Worksheets the columns are in and click on the correct columns. In this example, we will create a linked **Customer region** filter. To create a filter without actually filtering the Pinboard, click **Done** after you choose the column you would like to filter on, instead of specifying values to include or exclude.
 
@@ -26,7 +26,7 @@ To configure linked Pinboard filters, follow these steps. Note that you can link
 
 5. After you add a filter, it appears on the Pinboard filters bar, below the Pinboard name.
 
-6. Now we can create a linked filter. Select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
+6. Now we can create a linked filter. Select the **More** menu icon ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
 
     ![Configure filters]({{ site.baseurl }}/images/configure-filters.png "Configure filters")
 
