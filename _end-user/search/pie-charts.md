@@ -14,7 +14,7 @@ Pie charts divide your data into sectors that each represent a proportion of a w
 
  ![]({{ site.baseurl }}/images/pie_chart_example.png "Pie chart example")
 
-Your search needs at least one attribute and one measure to be represented as a pie chart. Also, there must be fewer than 50 values in the attribute column.
+Your search needs at least one attribute and one measure to be represented as a pie chart. Also, there must be fewer than 250 values in the attribute column.
 
 ## Pie in pie charts
 
