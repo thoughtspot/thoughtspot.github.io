@@ -1,7 +1,7 @@
 ---
 title: [Pinboard filters]
 summary: "You can apply filters to pinboards as well as tables and charts."
-last_updated: 11/30/2020
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -62,7 +62,7 @@ create a pinboard filter:
 ## Apply filters to specific visualizations
 You can apply filters to only certain visualizations that you specify. To specify the visualizations that a Pinboard filter should apply to, follow these steps, or refer to [Selective Pinboard filters]({{ site.baseurl }}/complex-search/selective-filters.html):
 
-1. Select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
+1. Select the **More** menu icon ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
 
     ![Configure filters]({{ site.baseurl }}/images/configure-filters.png "Configure filters")
 
