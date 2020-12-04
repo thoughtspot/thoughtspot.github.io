@@ -28,7 +28,7 @@ The process for creating a worksheet is:
 
 1.  Decide which tables to use for the worksheet.
 
-2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another cluster, you can migrate it [using a flat `TSL` file]({{ site.baseurl }}/admin/scriptability/scriptability.html).
+2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another cluster, you can migrate it [using a flat `TML` file]({{ site.baseurl }}/admin/scriptability/scriptability.html).
 
 3.  Add sources (tables) to the worksheet.
 

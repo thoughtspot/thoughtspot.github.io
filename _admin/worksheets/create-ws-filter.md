@@ -8,9 +8,9 @@ permalink: /:collection/:path.html
 ---
 You can add filters to a worksheet to limit the data it contains. This is useful when you have underlying tables that store more data than is necessary for the types of analyses the worksheet is intended for. You can also use worksheet filters to provide data security, when you want different groups of users to be able to see different data without relying on row level security.
 
-Note that starting in release 6.2, you can export and import Worksheets with filters [using a flat `TSL` file]({{ site.baseurl }}/admin/scriptability/scriptability.html), which allows for optional modification of any Worksheet properties, including filters. If you are on a release prior to 6.2, you can migrate Worksheets using a flat file format, but you cannot migrate Worksheets with filters.
+Note that starting in release 6.2, you can export and import Worksheets with filters [using a flat `TML` file]({{ site.baseurl }}/admin/scriptability/scriptability.html), which allows for optional modification of any Worksheet properties, including filters. If you are on a release prior to 6.2, you can migrate Worksheets using a flat file format, but you cannot migrate Worksheets with filters.
 
-Refer to [Migrate and restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html) to add a filter to a Worksheet through the TSL file.
+Refer to [Migrate and restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html) to add a filter to a Worksheet through the TML file.
 
 To add a filter to a worksheet through the user interface:
 
