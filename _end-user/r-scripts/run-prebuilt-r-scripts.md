@@ -1,7 +1,7 @@
 ---
 title: [Run prebuilt R scripts on answers]
 summary: "Anyone with R privileges can run an R analysis ThoughtSpot using provided scripts, you don't need to be an expert. "
-last_updated: 11/24/2020
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,7 @@ users you share visualizations with do not need R privileges.
 
 ## Run an R analysis
 
-1.  Click the **R** icon ![R icon]({{ site.baseurl }}/images/r-icon-inline.png){: .inline}
+1.  Click the **R** icon ![R icon]({{ site.baseurl }}/images/r-icon-inline-2.png){: .inline}
 on the toolbar for any search result (answer).
 
     ![]({{ site.baseurl }}/images/r-icon-marketspot.png)
