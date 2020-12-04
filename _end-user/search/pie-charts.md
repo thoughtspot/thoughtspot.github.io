@@ -1,7 +1,7 @@
 ---
 title: [Pie charts]
 
-last_updated: 07-01-2019
+last_updated: 12/3/2020
 summary: "A pie (or a circle) chart is a statistical graphic that divides data into slices to illustrate numerical proportion. In a pie chart, the arc length of a slice is proportional to the quantity it represents."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -25,11 +25,8 @@ To see a pie in pie chart, assign two different measures to the y-axis under **C
  ![]({{ site.baseurl }}/images/pie_in_pie_chart_example.png "Pie in pie chart example")
 
 ## Color customization of pie in pie charts
-You can customize the colors of each pie in a pie chart using the Style widget.
+You can customize the colors of each pie in a pie chart using the **Chart configuration** icon ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}.
 
-1. Choose a pinboard that has a pie chart.
-2. Click the **Edit chart style** (paintbrush icon) to open the Style widget.
-3. From the Style widget, assign a color of your choice to each pie as listed in the widget.
-4. Click **…** and choose **Update** to save the changes.
-5. Click **Close**.
-6. Optionally, you can click **Reset** to use the default color.
+2. Click the **Chart configuration** icon.
+3. From the Edit chart window, click the attribute under **Category**.
+6. Click the color chip next to each item you want to change. You can also enter the Hex value directly. Your changes are saved immediately.
