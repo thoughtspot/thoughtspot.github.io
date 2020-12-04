@@ -29,7 +29,7 @@ To share a table, worksheet, or View from the **Data** tab, follow these steps.
 To share a table, worksheet, or View from within the dataset, follow these steps.
 1. Navigate to the dataset you want to share.
 
-2. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and then click **Share**.
+2. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and then click **Share**.
 
     ![Share the data]({{ site.baseurl }}/images/sharing-data-in-dataset.png "Share the data")
     <!--{% include image.html file="sharing-data-in-dataset.png" title="Share the data" alt="Click the three-dot ellipsis icon and then click Share." caption="Share the data" %}-->
