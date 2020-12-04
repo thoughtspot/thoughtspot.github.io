@@ -5,6 +5,11 @@ summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, 
 redirect_from:
 - /admin/scriptability/tml.html
 - /admin/ts-cloud/tml.html
+- /6.3.0/admin/ts-cloud/tsl.html
+- /6.3.0/admin/scriptability/tsl-pinboard.html
+- /6.3.0/admin/scriptability/tsl-answer.html
+- /6.3.0/admin/scriptability/tsl-view.html
+- /6.3.0/admin/worksheets/yaml-worksheet.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
