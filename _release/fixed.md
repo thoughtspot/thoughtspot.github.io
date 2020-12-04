@@ -114,14 +114,13 @@ These are the issues we fixed in ThoughtSpot Release 6.3.
 - As a result of strict CLS, users can access tables that they shouldn't be able to access when selecting a source in a worksheet.
 - Growth formula does not work when using a custom calendar.
 - ThoughtSpot main navigation bar displays even when `primaryNavHidden=true`.
-- Attribute views, analytic views and calculation views are not accessible through Embrace using SAP HANA.
-- "`[object Object]`" is displayed in the description field after editing a view.
-- Search suggestion doesn't display the column values.
+- Attribute views, analytic views, and calculation views are not accessible through Embrace SAP HANA connections.
+- "`[object Object]`" displays in the description field after editing a view.
+- Search suggestions don't display column values.
 - The select data source option is not available for Search.
 - R package not set up on cluster.
 - Style customization menu is not available.
-- Replay Search feature is available when ThoughtSpot is embedded, even though it is not supported.
-- Self-service upgrade to 6.2 becomes stuck at scoreboard compare.
+- Replay Search feature shows as available, despite not being supported in embedded ThoughtSpot.
 - Query from user set 'bypass RLS' still shows joins to RLS tables.
 - Pivot table disappears when scheduled but is visible when downloaded.
 - Email does not work in DataFlow even though SMTP is configured.
