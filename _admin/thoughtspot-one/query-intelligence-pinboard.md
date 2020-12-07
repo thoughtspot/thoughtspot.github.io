@@ -24,7 +24,7 @@ The **Stats and Trends for Search on Answers** Pinboard contains the following v
 - [Weekly Active Users](#wau)
 - [Poorly performing search queries for answers](#poor-performance)
 
-{% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have searching for Answers and Pinboards on in your environment, or if it is newly on, and few users have searched on it." %}
+{% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have Search on Answers on in your environment, or if it is newly on, and few users have searched on it. To populate this Pinboard with your company’s Search on Answers data, contact ThoughtSpot Support." %}
 
 ![Stats and Trends for Search on Answers Pinboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "Stats and Trends for Search on Answers Pinboard")
 
