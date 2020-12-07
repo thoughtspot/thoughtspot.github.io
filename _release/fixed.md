@@ -165,15 +165,15 @@ These are the issues we fixed in ThoughtSpot Release 6.3.
 
 These are the issues we fixed in ThoughtSpot Release 6.2.1.
 
-- Upgrades to 6.2 could sometimes become stuck or fail.
-- Replay Search incorrectly shows as available when ThoughtSpot is embedded.
-- Style customization page is not available
-- When ThoughtSpot is embedded, clicking the Follow button enables the navbar.
-- Scrolling a tabular answer resulted causes an error.
+- Upgrades to 6.2 may become stuck or fail.
+- Replay Search incorrectly shows as available when ThoughtSpot deployed in Embedded mode.
+- Style customization page is not available.
+- Clicking the Follow button enables the navigation bar when ThoughtSpot is deployed in Embedded mode.
+- Scrolling a tabular Answer causes an error.
 - Growth formula doesn’t work when using a custom calendar.
 - Geo Map intermittently displays two different charts for the same query.
-- Copy to clipboard doesn’t work in the Admin tab.
-- Choosing a fact table for the purpose of creating a join causes inconsistent sub-queries.
+- Copy to clipboard doesn’t work in the Administration console.
+- Choosing a fact table when creating a join causes inconsistent sub-queries.
 
 <a id="6-2"></a>
 ## 6.2 Fixed issues
