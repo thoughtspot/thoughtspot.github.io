@@ -180,8 +180,7 @@ These are the issues we fixed in ThoughtSpot Release 6.2.1.
 
 These are the issues we fixed in ThoughtSpot Release 6.2.
 
-- Row-level security is not reflected with search tokens and Explore suggestions.
-- Unauthorized access to service URLs in the ThoughtSpot Web UI.
+- Row-level security does not reflect search tokens and Explore suggestions.
 - Old version of the ThoughtSpot Web UI appears for some users, even though the cluster was upgraded to new version.
 - Global filter on Pinboard in the ThoughtSpot Web UI doesn't work.
 - Users can still access **Data > Tables** page, even though the Data tab is hidden from ThoughtSpot Web UI.
