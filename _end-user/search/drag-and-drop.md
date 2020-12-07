@@ -23,7 +23,7 @@ You can also drag and drop attributes into the **slice** section, which only app
 
 To drag and drop columns to the correct axis, or to the **slice with color** or **slice** section, follow these steps:
 
-1. Click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
+1. Click the **chart configuration** icon ![]({{ site.baseurl }}/images/cog-xs.png){: .inline} on the top right.
 
 2. Drag and drop a measure or attribute from the **not visualized** section to the correct axis, or from an axis to the **not visualized** section. You can also move something to the **not visualized** section by clicking the **x** that appears when you hover over an attribute or measure. Or, drag an attribute to the **slice with color** or **slice** section.
 
