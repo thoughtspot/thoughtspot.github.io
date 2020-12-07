@@ -188,7 +188,6 @@ These are the issues we fixed in ThoughtSpot Release 6.2.
 - PDF export from a Pinboard in the ThoughtSpot Web UI doesn't work.
 - The sender's email in notifications uses the default `no-reply@customer.thoughtspot.com ` instead of the `from-email` configured through `tscli smtp`, or the email of the user who shares the Pinboard.
 - Regional German names for states in Geo Maps are not allowed.
-- CVE-2020-1938 vulnerability affecting Tomcat versions.
 - ThoughtSpot Web UI displays the date shifted by one day in version 80 of the Google Chrome browser.
 - Version 80 of the Google Chrome browser is not supported by the ThoughtSpot Web app, because cookies for pages in a ThoughtSpot cluster do not have the SameSite attribute, which is required for that browser.
 - ThoughtSpot Web App does not work on on a version later than 5.3 of the Microsoft Edge browser.
