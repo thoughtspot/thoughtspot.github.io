@@ -165,7 +165,6 @@ These are the issues we fixed in ThoughtSpot Release 6.3.
 
 These are the issues we fixed in ThoughtSpot Release 6.2.1.
 
-- Upgrades to 6.2 may become stuck or fail.
 - Replay Search incorrectly shows as available when ThoughtSpot deployed in Embedded mode.
 - Style customization page is not available.
 - Clicking the Follow button enables the navigation bar when ThoughtSpot is deployed in Embedded mode.
