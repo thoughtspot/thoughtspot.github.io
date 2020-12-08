@@ -5,6 +5,7 @@ toc: true
 last_updated: 11/19/2019
 redirect_from:
 - /6.3.0/reference/keywords.html
+- /6.3.0.CU1/reference/keywords.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

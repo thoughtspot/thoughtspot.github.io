@@ -5,6 +5,7 @@ last_updated: 10/18/2020
 sidebar: mydoc_sidebar
 redirect_from:
 - /6.3.0/release/notes.html
+- /6.3.0.CU1/release/notes.html
 permalink: /:collection/:path.html
 ---
 
