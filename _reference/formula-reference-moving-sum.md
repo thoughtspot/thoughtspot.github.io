@@ -6,7 +6,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The moving sum formula takes a measure, two integers to define the size of aggregation window, and one or more attributes to specify the aggregation dimension. The window is `current - Num1 … Current + Num2`, with both end points included in the window. For example, “1,1” has a window size of 3.
+<table><tr><td>The moving sum formula takes a measure, two integers to define the size of aggregation window, and one or more attributes to specify the aggregation dimension. The window is `current - Num1 … Current + Num2`, with both end points included in the window. For example, “1,1” has a window size of 3.</td>
+<td>See the corresponding training at <br />
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+</td></tr></table>
 
 To define a window that begins before `Current`, specify a negative number for `Num2`.
 
