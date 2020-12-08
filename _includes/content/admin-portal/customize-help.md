@@ -21,11 +21,9 @@ To customize the Help menu, navigate to the Admin Console by clicking on the **A
 
 To add a new link, select **Add custom menu item** below the list of existing links.
 
-![Add a new link]({{ site.baseurl }}/images/admin-portal-help-customization-add.png "Add a new link")
+![Add a new link]({{ site.baseurl }}/images/admin-portal-help-customization-add-link.png "Add a new link")
 
 Specify the name of the link, the URL, and optionally add a custom icon. Then click **Confirm**.
-
-![Add a new link]({{ site.baseurl }}/images/admin-portal-help-customization-add-link.png "Add a new link")
 
 You can also edit existing links, change icons, or remove items from the help menu altogether.
 
