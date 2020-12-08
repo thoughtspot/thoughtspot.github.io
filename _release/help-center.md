@@ -3,6 +3,8 @@ title: ["Help Center"]
 toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar
+redirect_from:
+- /6.3.0/release/help-center.html
 permalink: /:collection/:path.html
 ---
 

@@ -2,6 +2,8 @@
 title: [About materialized views]
 last_updated: 10/31/2018
 summary: "You can materialize a view to improve its performance."
+redirect_from:
+- /6.3.0/admin/loading/materialized-views.html
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -3,6 +3,8 @@ title: ["6.3 Release Notes"]
 toc: false
 last_updated: 10/18/2020
 sidebar: mydoc_sidebar
+redirect_from:
+- /6.3.0/release/notes.html
 permalink: /:collection/:path.html
 ---
 
