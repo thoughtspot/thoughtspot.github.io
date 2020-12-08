@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.3/release/fixed.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-04T17:07:21-08:00" />
+<meta property="article:published_time" content="2020-12-07T18:41:27-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Fixed issues”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"These are the issues we fixed in recent ThoughtSpot releases.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/release/fixed.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/release/fixed.html","headline":"[“Fixed issues”]","dateModified":"2020-12-04T17:07:21-08:00","datePublished":"2020-12-04T17:07:21-08:00","@context":"https://schema.org"}</script>
+{"description":"These are the issues we fixed in recent ThoughtSpot releases.","@type":"BlogPosting","headline":"[“Fixed issues”]","dateModified":"2020-12-07T18:41:27-08:00","datePublished":"2020-12-07T18:41:27-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/release/fixed.html"},"url":"https://docs.thoughtspot.com/6.3/release/fixed.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5459,7 +5459,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    44 minutes
+    41 minutes
   
 </span> -->
 
@@ -5473,9 +5473,11 @@ $('#toc').on('click', 'a', function() {
 <details>
 <summary>6.2.X Releases</summary>
 <ul>
+<li><a href="#6-2-1">6.2.1 Fixed issues</a></li>
 <li><a href="#6-2">6.2 Fixed issues</a></li>
 </ul>
-</details>
+</details></li>
+<li>
 <details>
 <summary>6.1.X Releases</summary>
 <ul>
@@ -5560,189 +5562,80 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.3.</p>
 
 <ul>
-  <li>
-    <p>Pivot table aggregation type cannot be changed.</p>
-  </li>
-  <li>
-    <p>Exporting data to CSV does not conform to a custom date format.</p>
-  </li>
-  <li>
-    <p>Adding a filter to a Pinboard does not work with visualizations from different sources.</p>
-  </li>
-  <li>
-    <p>When a user runs a search on a table, if the result set is greater than 1000 rows, the Show column summary will only sum up 1000 rows while the headline summaries will show the total for all rows.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">substr</code> function using non-English text causes a garbled result.</p>
-  </li>
-  <li>
-    <p><strong>Make a Copy</strong>  option in Pinboard menu is greyed out for a user with view only access.</p>
-  </li>
-  <li>
-    <p>Users periodically have trouble logging in through SSO when SAML is used.</p>
-  </li>
-  <li>
-    <p>SSO session timeout does not work.</p>
-  </li>
-  <li>
-    <p>Pinboards are read-only when the owner shares it with another user with edit rights. </p>
-  </li>
-  <li>
-    <p>Worksheets cannot be saved if they contain a formula and filter.</p>
-  </li>
-  <li>
-    <p>As a result of strict CLS, users can access tables that they shouldn’t be able to access when selecting a source in a worksheet.</p>
-  </li>
-  <li>
-    <p>Growth formula does not work when using custom calendar.</p>
-  </li>
-  <li>
-    <p>ThoughtSpot main navigation bar is displayed even when primaryNavHidden=true is set.</p>
-  </li>
-  <li>
-    <p>SearchIQ does not retain language mapping.</p>
-  </li>
-  <li>
-    <p>Attribute views, analytic views and calculation views are not accessible through Embrace using SAP HANA.</p>
-  </li>
-  <li>
-    <p>”<code class="language-plaintext highlighter-rouge">[object Object]</code>” is displayed in the description field after editing a view.</p>
-  </li>
-  <li>
-    <p>Search suggestion doesn’t display the column values.</p>
-  </li>
-  <li>
-    <p>The select data source option is not available for Search.</p>
-  </li>
-  <li>
-    <p>R package not set up on cluster.</p>
-  </li>
-  <li>
-    <p>Style customization menu is not available.</p>
-  </li>
-  <li>
-    <p>Replay Search feature is available when ThoughtSpot is embedded, even though it is not supported.</p>
-  </li>
-  <li>
-    <p>Self-service upgrade to 6.2 becomes stuck at scoreboard compare.</p>
-  </li>
-  <li>
-    <p>Query from user set ‘bypass RLS’ still shows joins to RLS tables.</p>
-  </li>
-  <li>
-    <p>Pivot table disappears when scheduled but is visible when downloaded.</p>
-  </li>
-  <li>
-    <p>Email does not work in DataFlow even though SMTP is configured.</p>
-  </li>
-  <li>
-    <p>DataFlow does conform to the cluster timezone.</p>
-  </li>
-  <li>
-    <p>A worksheet with a formula configured as geo config cannot be imported into a cluster.</p>
-  </li>
-  <li>
-    <p>Using DataFlow to update a flow with a new column fails if the column includes a space.</p>
-  </li>
-  <li>
-    <p>A JAR file mismatch causes an error when attempting to use DataFlow to connect to MySQL.</p>
-  </li>
-  <li>
-    <p>No data labels are displayed on the % line in a Pareto chart.</p>
-  </li>
-  <li>
-    <p>Adding table sync in DataFlow causes a “Failed to load column” error.</p>
-  </li>
-  <li>
-    <p>Table number formatting is lost when an Answer is saved.</p>
-  </li>
-  <li>
-    <p>Custom calendar date starts with February instead of January in a line chart.</p>
-  </li>
-  <li>
-    <p>Incorrect statistics are displayed in the log and dashboard while using DataFlow to load from MySQL.</p>
-  </li>
-  <li>
-    <p>A cluster can’t be stopped if nodes are down.</p>
-  </li>
-  <li>
-    <p>Names cannot be updated in a pivot table.</p>
-  </li>
-  <li>
-    <p>Sankey chart shows incorrect values.</p>
-  </li>
-  <li>
-    <p>Users who don’t have edit permission on a table visualization of a pinboard do not have the option to remove a column.</p>
-  </li>
-  <li>
-    <p>Sankey chart does not load.</p>
-  </li>
-  <li>
-    <p>Teradata connection in DataFlow cannot preview any tables.</p>
-  </li>
-  <li>
-    <p>SpotIQ doesn’t display “analyses” after an analysis is run.</p>
-  </li>
-  <li>
-    <p>A scheduled Pinboard does not send email when there is a Japanese character in the Pinboard.</p>
-  </li>
-  <li>
-    <p>Users cannot drill down on pivot tables to look at the underlying table.</p>
-  </li>
-  <li>
-    <p>Complex Pinboards cannot be copied for editing.</p>
-  </li>
-  <li>
-    <p>Showing underlying data on a chasm trap search gives repeated/incorrect values.</p>
-  </li>
-  <li>
-    <p>Scheduled materialized views don’t update.</p>
-  </li>
-  <li>
-    <p>Date formats of downloaded csv, pdf, and xlsx files do not conform to the locale.</p>
-  </li>
-  <li>
-    <p>Users can’t sign in after <code class="language-plaintext highlighter-rouge">tscli storage gc</code> command is run.</p>
-  </li>
-  <li>
-    <p>Scriptability does not export of worksheets that have a filter.</p>
-  </li>
-  <li>
-    <p>Pinboard filters do not display when SearchIQ is enabled.</p>
-  </li>
-  <li>
-    <p>Pivot table heatmap function uses the decimal value of the percentage calculation and not the actual percentage.</p>
-  </li>
-  <li>
-    <p>Summing on group aggregate formula in a worksheet fails.</p>
-  </li>
-  <li>
-    <p>Data tab missing info after making a copy of “TS Stats: Table Status” pinboard.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">to_string</code> does not work on custom calendar attributes.</p>
-  </li>
-  <li>
-    <p>“million” and “billion” are not translated to Japanese in answer.</p>
-  </li>
-  <li>
-    <p>Changes to column names in the data format of a Pinboard are not saved.</p>
-  </li>
-  <li>
-    <p>Using global filter on one value in a Pinboard filters on all values.</p>
-  </li>
-  <li>
-    <p>Converting a ‘/’ to ‘safe_divide’ in a complex formula causes an error.</p>
-  </li>
-  <li>
-    <p>Geo Map downloads two different charts for the same query.</p>
-  </li>
-  <li>
-    <p>User is unable to list and delete worksheet dependencies.</p>
-  </li>
-  <li>
-    <p>Attempting to share a worksheet with another user, causes the error “Loading Failed” when trying to add the user.</p>
-  </li>
+  <li>Pivot table aggregation type cannot be changed.</li>
+  <li>Exporting data to CSV does not conform to a custom date format.</li>
+  <li>Adding a filter to a Pinboard does not work with visualizations from different sources.</li>
+  <li>When a user runs a search on a table, if the result set is greater than 1000 rows, the Show column summary sums up 1000 rows only, while the headline summaries show the total for all rows.</li>
+  <li><code class="language-plaintext highlighter-rouge">substr</code> function using non-English text garbles the result.</li>
+  <li><strong>Make a Copy</strong>  option in Pinboard menu is greyed out for a user with view-only access.</li>
+  <li>Logging in through SSO with SAML fails periodically.</li>
+  <li>SSO session timeouts do not work.</li>
+  <li>Pinboards are read-only when the owner shares them with another user with edit rights. </li>
+  <li>Worksheets cannot be saved if they contain a formula and a filter.</li>
+  <li>As a result of strict CLS, users can access tables that they shouldn’t be able to access when selecting a source in a worksheet.</li>
+  <li>Growth formula does not work when using a custom calendar.</li>
+  <li>ThoughtSpot main navigation bar displays even when <code class="language-plaintext highlighter-rouge">primaryNavHidden=true</code>.</li>
+  <li>Attribute views, analytic views, and calculation views are not accessible through Embrace SAP HANA connections.</li>
+  <li>”<code class="language-plaintext highlighter-rouge">[object Object]</code>” displays in the description field after editing a view.</li>
+  <li>Search suggestions don’t display column values.</li>
+  <li>The select data source option is not available for Search.</li>
+  <li>R package not set up on cluster.</li>
+  <li>Style customization menu is not available.</li>
+  <li>Replay Search feature shows as available, despite not being supported in embedded ThoughtSpot.</li>
+  <li>Query from user set <code class="language-plaintext highlighter-rouge">bypass RLS</code> shows joins to RLS tables.</li>
+  <li>Pivot table disappears when scheduled, but is visible when downloaded.</li>
+  <li>Email does not work in DataFlow, even when SMTP is configured.</li>
+  <li>DataFlow does conform to the cluster timezone.</li>
+  <li>A worksheet with a formula configured as Geo does not import into a cluster.</li>
+  <li>Using DataFlow to update a flow with a new column fails if the column includes a space.</li>
+  <li>A JAR file mismatch causes an error when using DataFlow for MySQL.</li>
+  <li>Data labels do not display on the % line in a Pareto chart.</li>
+  <li>Adding table sync in DataFlow causes a “Failed to load column” error.</li>
+  <li>Table number formatting is lost when saving an Answer.</li>
+  <li>Custom calendar date starts with February instead of January in a line chart.</li>
+  <li>Incorrect statistics display in the log and dashboard when using DataFlow for MySQL.</li>
+  <li>A cluster cannot be stopped if nodes are down.</li>
+  <li>Names cannot be updated in a pivot table.</li>
+  <li>Sankey chart shows incorrect values.</li>
+  <li>Users who don’t have edit permissions on a table visualization in a Pinboard do not have the option to remove a column.</li>
+  <li>Sankey charts do not load.</li>
+  <li>Preview of tables in DataFlow for Teradata does not work.</li>
+  <li>SpotIQ doesn’t display “analyses” after an analysis is run.</li>
+  <li>A scheduled Pinboard does not send email when there is a Japanese character in the Pinboard.</li>
+  <li>Users cannot drill down on pivot tables to look at the underlying table.</li>
+  <li>Complex Pinboards cannot be copied for editing.</li>
+  <li>Showing underlying data on a chasm trap search gives repeated or incorrect values.</li>
+  <li>Scheduled materialized views don’t update.</li>
+  <li>Date formats of downloaded csv, pdf, and xlsx files do not conform to the locale.</li>
+  <li>Users can’t sign in after <code class="language-plaintext highlighter-rouge">tscli storage gc</code> command completes.</li>
+  <li>Scriptability does not export worksheets that have a filter.</li>
+  <li>Pivot table heatmap function uses the decimal value of the percentage calculation instead of the actual percentage.</li>
+  <li>Summing on group aggregate formula in a worksheet fails.</li>
+  <li>Data tab missing information after making a copy of “TS Stats: Table Status” Pinboard.</li>
+  <li><code class="language-plaintext highlighter-rouge">to_string</code> does not work on custom calendar attributes.</li>
+  <li>“million” and “billion” are not translated to Japanese in an Answer.</li>
+  <li>Changes to column names in the data format of a Pinboard do not persist.</li>
+  <li>Using a global filter on one value in a Pinboard filters on all values.</li>
+  <li>Converting a ‘/’ (front slash) to ‘safe_divide’ in a complex formula causes an error.</li>
+  <li>Geo Map downloads two different charts for the same query.</li>
+  <li>User is unable to list and delete worksheet dependencies.</li>
+  <li>Attempting to share a worksheet with another user causes a “Loading Failed” error when trying to add the user.</li>
+</ul>
+
+<p><a id="6-2-1"></a></p>
+<h2 id="621-fixed-issues">6.2.1 Fixed issues</h2>
+
+<p>These are the issues we fixed in ThoughtSpot Release 6.2.1.</p>
+
+<ul>
+  <li>Replay Search incorrectly shows as available when ThoughtSpot deployed in Embedded mode.</li>
+  <li>Style customization page is not available.</li>
+  <li>Clicking the Follow button enables the navigation bar when ThoughtSpot is deployed in Embedded mode.</li>
+  <li>Scrolling a tabular Answer causes an error.</li>
+  <li>Growth formula doesn’t work when using a custom calendar.</li>
+  <li>Geo Map intermittently displays two different charts for the same query.</li>
+  <li>Copy to clipboard doesn’t work in the Administration console.</li>
+  <li>Choosing a fact table when creating a join causes inconsistent sub-queries.</li>
 </ul>
 
 <p><a id="6-2"></a></p>
@@ -5751,48 +5644,18 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.2.</p>
 
 <ul>
-  <li>
-    <p>Row-level security is not reflected with search tokens and Explore suggestions.</p>
-  </li>
-  <li>
-    <p>Unauthorized access to service URLs in the ThoughtSpot Web UI.</p>
-  </li>
-  <li>
-    <p>Old version of the ThoughtSpot Web UI appears for some users, even though the cluster was upgraded to new version.</p>
-  </li>
-  <li>
-    <p>Global filter on Pinboard in the ThoughtSpot Web UI doesn’t work.</p>
-  </li>
-  <li>
-    <p>Users can still access <strong>Data &gt; Tables</strong> page, even though the Data tab is hidden from ThoughtSpot Web UI.</p>
-  </li>
-  <li>
-    <p>The time required to execute the TQL delete command increases exponentially, until it no longer works.</p>
-  </li>
-  <li>
-    <p>PDF export from a Pinboard in the ThoughtSpot Web UI doesn’t work.</p>
-  </li>
-  <li>
-    <p>The sender’s email in notifications is using the default <code class="language-plaintext highlighter-rouge">no-reply@customer.thoughtspot.com </code> instead of the <code class="language-plaintext highlighter-rouge">from-email</code> configured using <code class="language-plaintext highlighter-rouge">tscli smtp</code>, or the user’s email who shares the Pinboard.</p>
-  </li>
-  <li>
-    <p>Regional German names for states in Geo Maps are not allowed.</p>
-  </li>
-  <li>
-    <p>CVE-2020-1938 vulnerability affecting Tomcat versions.</p>
-  </li>
-  <li>
-    <p>ThoughtSpot Web UI displays the date shifted by one day in version 80 of the Google Chrome browser.</p>
-  </li>
-  <li>
-    <p>Version 80 of the Google Chrome browser is not supported by the ThoughtSpot Web app, because cookies for pages in a ThoughtSpot cluster do not have the SameSite attribute, which is required for that browser.</p>
-  </li>
-  <li>
-    <p>ThoughtSpot Web App does not work on on a version later than 5.3 of the Microsoft Edge browser.</p>
-  </li>
-  <li>
-    <p>Pinboards with 25 or more visualizations do not work properly.</p>
-  </li>
+  <li>Row-level security does not reflect search tokens and Explore suggestions.</li>
+  <li>Old version of the ThoughtSpot Web UI appears for some users, after cluster upgrade.</li>
+  <li>Global filter on Pinboard in the ThoughtSpot Web UI doesn’t work.</li>
+  <li>Users can still access <strong>Data &gt; Tables</strong> page, even though the Data tab is hidden from ThoughtSpot Web UI.</li>
+  <li>The time required to execute the TQL delete command increases exponentially, until it no longer works.</li>
+  <li>PDF export from a Pinboard in the ThoughtSpot Web UI doesn’t work.</li>
+  <li>The sender’s email in notifications uses the default <code class="language-plaintext highlighter-rouge">no-reply@customer.thoughtspot.com </code> instead of the <code class="language-plaintext highlighter-rouge">from-email</code> configured through <code class="language-plaintext highlighter-rouge">tscli smtp</code>, or the email of the user who shares the Pinboard.</li>
+  <li>Regional German names for states in Geo Maps are not allowed.</li>
+  <li>In Version 80 of Google Chrome browser, ThoughtSpot Web UI displays the date shifted by one day.</li>
+  <li>ThoughtSpot Web app did not work with Version 80 of Google Chrome browser; cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribute.</li>
+  <li>ThoughtSpot Web App did not work on newer versions of Microsoft Edge browser, after 5.3.</li>
+  <li>Pinboards with 25 or more visualizations do not work properly.</li>
 </ul>
 
 <p><a id="6-1-1"></a></p>
@@ -5801,48 +5664,20 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.1.1.</p>
 
 <ul>
-  <li>
-    <p>Queries time out when loading a fact table with as many as 4 billion rows.</p>
-  </li>
-  <li>
-    <p>SpotIQ gets stuck in a loop and is unresponsive.</p>
-  </li>
-  <li>
-    <p>When multiple filters are used in a worksheet, the searches fail for only specific columns in a table.</p>
-  </li>
-  <li>
-    <p>Microsoft Internet Explorer 11 doesn’t work with ThoughtSpot embedded in an iframe, displaying an ‘access denied’ JavaScript error message.</p>
-  </li>
-  <li>
-    <p>The time required to use TQL to delete data from fact tables increases until the delete is not successful.</p>
-  </li>
-  <li>
-    <p>After upgrade to 6.1, ad sync scripts fail to run.</p>
-  </li>
-  <li>
-    <p>Inconsistent naming of disks causes mounting to fail.</p>
-  </li>
-  <li>
-    <p>The Admin Console fails to load in a cluster, where it loaded before.</p>
-  </li>
-  <li>
-    <p>An older version of the ThoughtSpot user interface appears, even though cluster is running newer version.</p>
-  </li>
-  <li>
-    <p>Upgrading a cluster from 5.x release to 6.x release is unsuccessful.</p>
-  </li>
-  <li>
-    <p>Sender’s email displayed in notifications does not use the from-email configured in <code class="language-plaintext highlighter-rouge">tscli smtp</code>.</p>
-  </li>
-  <li>
-    <p>A large number of scheduled pinboards slows down the Falcon database.</p>
-  </li>
-  <li>
-    <p>After upgrade to 5.3.2.CU1, all pinboards using a specific variable (adp) do not work.</p>
-  </li>
-  <li>
-    <p>An administrator is unable to save a worksheet on the first try.</p>
-  </li>
+  <li>Queries time out when loading a fact table with as many as 4 billion rows.</li>
+  <li>SpotIQ gets stuck in a loop and is unresponsive.</li>
+  <li>When multiple filters are used in a worksheet, the searches fail for only specific columns in a table.</li>
+  <li>Microsoft Internet Explorer 11 doesn’t work with ThoughtSpot embedded in an iframe, displaying an ‘access denied’ JavaScript error message.</li>
+  <li>The time required to use TQL to delete data from fact tables increases until the delete is not successful.</li>
+  <li>After upgrade to 6.1, ad sync scripts fail to run.</li>
+  <li>Inconsistent naming of disks causes mounting to fail.</li>
+  <li>The Admin Console fails to load in a cluster, where it loaded before.</li>
+  <li>An older version of the ThoughtSpot user interface appears, even though cluster is running newer version.</li>
+  <li>Upgrading a cluster from 5.x release to 6.x release is unsuccessful.</li>
+  <li>Sender’s email displayed in notifications does not use the from-email configured in <code class="language-plaintext highlighter-rouge">tscli smtp</code>.</li>
+  <li>A large number of scheduled Pinboards slows down the Falcon database.</li>
+  <li>After upgrade to 5.3.2.CU1, all Pinboards using a specific variable (adp) do not work.</li>
+  <li>An administrator is unable to save a worksheet on the first try.</li>
 </ul>
 
 <p><a id="6-1"></a></p>
@@ -5851,123 +5686,45 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.1.</p>
 
 <ul>
-  <li>
-    <p>When using the <code class="language-plaintext highlighter-rouge">tscli fileserver upload</code> command to upload a file that is larger than the maximum supported file size, an error message with an incorrect maximum file size appears.</p>
-  </li>
-  <li>
-    <p>The tscli event list displays messages for creation, modification, and deletion that are not user friendly.</p>
-  </li>
-  <li>
-    <p>Sorting or filtering a column in a chart does not work.</p>
-  </li>
-  <li>
-    <p>The column order in the PDF of a visualization is different than the order in shown in ThoughtSpot.</p>
-  </li>
-  <li>
-    <p>Removing a key from a table is not possible because multiple joins for an old column cannot be detected.</p>
-  </li>
-  <li>
-    <p>Intermittent slow search response time.</p>
-  </li>
-  <li>
-    <p>Entering a search generates results from columns outside the selected data source.</p>
-  </li>
-  <li>
-    <p>An incorrect result is displayed when a filter is created on the Group_Max aggregation function.</p>
-  </li>
-  <li>
-    <p>Backup policy names are not validated to ensure they won’t cause backups to fail.</p>
-  </li>
-  <li>
-    <p>The headline table aggregate summary is not available when group aggregate functions are used.</p>
-  </li>
-  <li>
-    <p>Removing a column from a search increases the number of rows shown.</p>
-  </li>
-  <li>
-    <p>Multiple variables cannot be added to a single map visualization.</p>
-  </li>
-  <li>
-    <p>Drilling down on a visualization causes the date format to change.</p>
-  </li>
-  <li>
-    <p>Double-clicking on the legend of a stacked column chart does not show hidden values.</p>
-  </li>
-  <li>
-    <p>Data load fails due to a primary key having multiple rows.</p>
-  </li>
-  <li>
-    <p>Filtering on a pinboard card causes a NullPointerException error.</p>
-  </li>
-  <li>
-    <p>A formula with Group_Max function doesn’t work with Growth key word.</p>
-  </li>
-  <li>
-    <p>The confirmation message for deleting a restored cluster indicates the wrong cluster name.</p>
-  </li>
-  <li>
-    <p>Modifying a date filter of a pinboard from a set date range to none, causes the filter to disappear.</p>
-  </li>
-  <li>
-    <p>R visualization downloads fail when exporting to PDF.</p>
-  </li>
-  <li>
-    <p>A pinboard with filters cannot be saved.</p>
-  </li>
-  <li>
-    <p>Using a weekly date aggregation with a custom calendar, causes the days to be split at the end of the month if the month ends in the middle of the week.</p>
-  </li>
-  <li>
-    <p>Worksheet filters provide different answers than search filters.</p>
-  </li>
-  <li>
-    <p>Drilling down on a date in a custom calendar displays an incorrect epoch.</p>
-  </li>
-  <li>
-    <p>Menu items, including Share, Copy a Link, and Send Feedback, cannot be disabled when ThoughtSpot is embedded.</p>
-  </li>
-  <li>
-    <p>ThoughtSpot instances hosted in GCP have a 127.0.0.1 address for eth0.</p>
-  </li>
-  <li>
-    <p>Keywords do not provide correct results when using a custom calendar.</p>
-  </li>
-  <li>
-    <p>A worksheet cannot be saved after changing a join type.</p>
-  </li>
-  <li>
-    <p>Top and Bottom keywords do not work on a measure with the <code class="language-plaintext highlighter-rouge">unique_count_if</code> formula applied.</p>
-  </li>
-  <li>
-    <p>Non-admin users are unable to search for a newly added column in the worksheet.</p>
-  </li>
-  <li>
-    <p>Colors of slices in pie chart change when you filter on the pie chart.</p>
-  </li>
-  <li>
-    <p>Total labels in a Stacked Bar chart do not account for negative amounts.</p>
-  </li>
-  <li>
-    <p>When adding a connection in Embrace, not all tables in the external database are displayed.</p>
-  </li>
-  <li>
-    <p>ThoughtSpot TQL does not list tables that don’t exist in the default Falcon schema.</p>
-  </li>
-  <li>
-    <p>The date format in a PDF is not correct for the user’s locale.</p>
-  </li>
-  <li>
-    <p>Various display issues with Admin Console.</p>
-  </li>
-  <li>
-    <p>Periodic backups fail after upgrade.</p>
-  </li>
-  <li>
-    <p>Geo maps allow regional German names for states.</p>
-  </li>
-  <li>
-    <p>In ThoughtSpot clusters hosted in Azure, Log rotate does not rotate <code class="language-plaintext highlighter-rouge">large_files</code>.</p>
-  </li>
+  <li>When using the <code class="language-plaintext highlighter-rouge">tscli fileserver upload</code> command to upload a file that is larger than the maximum supported file size, an error message with an incorrect maximum file size appears.</li>
+  <li>The tscli event list displays messages for creation, modification, and deletion that are not user friendly.</li>
+  <li>Sorting or filtering a column in a chart does not work.</li>
+  <li>The column order in the PDF of a visualization is different than the order in shown in ThoughtSpot.</li>
+  <li>Removing a key from a table is not possible because multiple joins for an old column cannot be detected.</li>
+  <li>Intermittent slow search response time.</li>
+  <li>Entering a search generates results from columns outside the selected data source.</li>
+  <li>An incorrect result is displayed when a filter is created on the Group_Max aggregation function.</li>
+  <li>Backup policy names are not validated to ensure they won’t cause backups to fail.</li>
+  <li>The headline table aggregate summary is not available when group aggregate functions are used</li>
+  <li>Removing a column from a search increases the number of rows shown.</li>
+  <li>Multiple variables cannot be added to a single map visualization.</li>
+  <li>Drilling down on a visualization causes the date format to change.</li>
+  <li>Double-clicking on the legend of a stacked column chart does not show hidden values.</li>
+  <li>Data load fails due to a primary key having multiple rows.</li>
+  <li>Filtering on a Pinboard card causes a NullPointerException error.</li>
+  <li>A formula with Group_Max function doesn’t work with Growth key word.</li>
+  <li>The confirmation message for deleting a restored cluster indicates the wrong cluster name.</li>
+  <li>Modifying a date filter of a Pinboard from a set date range to none, causes the filter to disappear.</li>
+  <li>R visualization downloads fail when exporting to PDF.</li>
+  <li>A Pinboard with filters cannot be saved.</li>
+  <li>Using a weekly date aggregation with a custom calendar, causes the days to be split at the end of the month if the month ends in the middle of the week.</li>
+  <li>Worksheet filters provide different answers than search filters.</li>
+  <li>Drilling down on a date in a custom calendar displays an incorrect epoch.</li>
+  <li>Menu items, including Share, Copy a Link, and Send Feedback, cannot be disabled when ThoughtSpot is embedded.</li>
+  <li>ThoughtSpot instances hosted in GCP have a 127.0.0.1 address for eth0.</li>
+  <li>Keywords do not provide correct results when using a custom calendar.</li>
+  <li>A worksheet cannot be saved after changing a join type.</li>
+  <li>Top and Bottom keywords do not work on a measure with the <code class="language-plaintext highlighter-rouge">unique_count_if</code> formula applied.</li>
+  <li>Non-admin users are unable to search for a newly added column in the worksheet.</li>
+  <li>Colors of slices in pie chart change when you filter on the pie chart.</li>
+  <li>Total labels in a Stacked Bar chart do not account for negative amounts.</li>
+  <li>When adding a connection in Embrace, not all tables in the external database are displayed.</li>
+  <li>ThoughtSpot TQL does not list tables that don’t exist in the default Falcon schema.</li>
+  <li>The date format in a PDF is not correct for the user’s locale.</li>
+  <li>Various display issues with Admin Console</li>
+  <li>Periodic backups fail after upgrade.</li>
+  <li>Geo maps allow regional German names for states.</li>
+  <li>In ThoughtSpot clusters hosted in Azure, Log rotate does not rotate <code class="language-plaintext highlighter-rouge">large_files</code>.</li>
 </ul>
 
 <p><a id="6-0-5"></a></p>
@@ -5976,39 +5733,17 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.0.5.</p>
 
 <ul>
-  <li>
-    <p>When <strong>Copy link</strong> has been disabled, it still appears in the More menu <img src="/6.3/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> of pinboards.</p>
-  </li>
-  <li>
-    <p>The management console is not accessible.</p>
-  </li>
-  <li>
-    <p>A pinboard with an advanced formula can be viewed by an administrator, but not by a regular user they share it with.</p>
-  </li>
-  <li>
-    <p>A cluster that is using a customer logo, still shows the ThoughtSpot logo on downloaded PDFs.</p>
-  </li>
-  <li>
-    <p>Filter values overlap and are unreadable in the filter picker.</p>
-  </li>
-  <li>
-    <p>Attempting to sign in using SSO causes a 500 Internal Server Error.</p>
-  </li>
-  <li>
-    <p>Clusters with many scheduled pinboards cause the Falcon database to be slower than normal.</p>
-  </li>
-  <li>
-    <p>Dates in PDFs are only displayed in the United States date format.</p>
-  </li>
-  <li>
-    <p>The Google Chrome 80 browser is not supported, because cookies for pages in a ThoughtSpot cluster do not have the SameSite attribute, which is required for that browser.</p>
-  </li>
-  <li>
-    <p>The <strong>group aggregate</strong> function does not work after upgrade to release 5.3.1.</p>
-  </li>
-  <li>
-    <p>A user who edits a worksheet is not able to save their changes.</p>
-  </li>
+  <li>When <strong>Copy link</strong> has been disabled, it still appears in the More menu <img src="/6.3/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> of Pinboards.</li>
+  <li>The management console is not accessible.</li>
+  <li>A Pinboard with an advanced formula can be viewed by an administrator, but not by a regular user they share it wit</li>
+  <li>A cluster that is using a customer logo, still shows the ThoughtSpot logo on downloaded PDFs.</li>
+  <li>Filter values overlap and are unreadable in the filter picker.</li>
+  <li>Attempting to sign in using SSO causes a 500 Internal Server Error.</li>
+  <li>Clusters with many scheduled Pinboards cause the Falcon database to be slower than normal</li>
+  <li>Dates in PDFs are only displayed in the United States date format.</li>
+  <li>The Google Chrome 80 browser is not supported, because cookies for pages in a ThoughtSpot cluster do not have the SameSite attribute, which is required for that browser.</li>
+  <li>The <strong>group aggregate</strong> function does not work after upgrade to release 5.3.1.</li>
+  <li>A user who edits a worksheet is not able to save their changes.</li>
 </ul>
 
 <p><a id="6-0-4"></a></p>
@@ -6017,21 +5752,11 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.0.4.</p>
 
 <ul>
-  <li>
-    <p>Under certain conditions, worksheet filters provide different answers than search filters.</p>
-  </li>
-  <li>
-    <p>Total amounts in a stacked bar chart do not account for negative amounts.</p>
-  </li>
-  <li>
-    <p>Management console displays incorrect information about SSL status.</p>
-  </li>
-  <li>
-    <p>Management console displays incorrect information about SMTP status.</p>
-  </li>
-  <li>
-    <p>Upgrading from release 5.2.3 to 6.0.3 causes HDFS to go into safe mode and cause missing data volumes.</p>
-  </li>
+  <li>Under certain conditions, worksheet filters provide different answers than search filters.</li>
+  <li>Total amounts in a stacked bar chart do not account for negative amounts.</li>
+  <li>Management console displays incorrect information about SSL status.</li>
+  <li>Management console displays incorrect information about SMTP status</li>
+  <li>Upgrading from release 5.2.3 to 6.0.3 causes HDFS to go into safe mode and cause missing data volumes.</li>
 </ul>
 
 <p><a id="6-0-3"></a></p>
@@ -6049,18 +5774,10 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.0.2.</p>
 
 <ul>
-  <li>
-    <p>Updating a formula causes a blank screen and corrupts a worksheet when it is saved.</p>
-  </li>
-  <li>
-    <p>Upgrade to release 6.0.1 changes charts with a y-axis at 100% to a regular stacked column chart.</p>
-  </li>
-  <li>
-    <p>After upgrade to release 5.3.2, users cannot sign in using SSO.</p>
-  </li>
-  <li>
-    <p>Disk alerts occur when drives are functioning normally.</p>
-  </li>
+  <li>Updating a formula causes a blank screen and corrupts a worksheet when it is saved.</li>
+  <li>Upgrade to release 6.0.1 changes charts with a y-axis at 100% to a regular stacked column chart.</li>
+  <li>After upgrade to release 5.3.2, users cannot sign in using SSO.</li>
+  <li>Disk alerts occur when drives are functioning normally.</li>
 </ul>
 
 <p><a id="6-0-1"></a></p>
@@ -6069,39 +5786,17 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.0.1.</p>
 
 <ul>
-  <li>
-    <p>Search autocomplete occasionally displays an error when using a bulk filter.</p>
-  </li>
-  <li>
-    <p>In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using <code class="language-plaintext highlighter-rouge">versus</code>(example: <code class="language-plaintext highlighter-rouge">2019 vs 2018</code><code class="language-plaintext highlighter-rouge">net sales</code>).</p>
-  </li>
-  <li>
-    <p>Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.</p>
-  </li>
-  <li>
-    <p>A yellow bar sometimes appears during search, causing search not to work.</p>
-  </li>
-  <li>
-    <p>Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.</p>
-  </li>
-  <li>
-    <p>After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.</p>
-  </li>
-  <li>
-    <p>The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.</p>
-  </li>
-  <li>
-    <p>Common keywords, like <code class="language-plaintext highlighter-rouge">this year</code>, <code class="language-plaintext highlighter-rouge">date daily</code>,<code class="language-plaintext highlighter-rouge">last quarter</code>, and <code class="language-plaintext highlighter-rouge">week of year</code> do not reflect the settings of a custom calendar.</p>
-  </li>
-  <li>
-    <p>The title page of an exported PDF does not display the full date.</p>
-  </li>
-  <li>
-    <p>The <code class="language-plaintext highlighter-rouge">date</code> filter of an answer does not work properly when pinned to a pinboard, even after applying the pinboard <code class="language-plaintext highlighter-rouge">date</code> filter.</p>
-  </li>
-  <li>
-    <p>Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.</p>
-  </li>
+  <li>Search autocomplete occasionally displays an error when using a bulk filter.</li>
+  <li>In a custom calendar, sales results for individual years are correct, but are not correct when comparing those same years using <code class="language-plaintext highlighter-rouge">versus</code>(example: <code class="language-plaintext highlighter-rouge">2019 vs 2018</code><code class="language-plaintext highlighter-rouge">net sales</code>).</li>
+  <li>Upgrades to a ThoughtSpot AWS deployment can cause hosts to lose their configured hostnames.</li>
+  <li>A yellow bar sometimes appears during search, causing search not to work.</li>
+  <li>Optimization does not occur in pinned measure formulas with complex aggregation, resulting in more queries than necessary.</li>
+  <li>After upgrade to release 5.3.x., previously enabled delayed search for a cluster is disabled.</li>
+  <li>The dot in a hover tooltip for a chart, indicating which item the tooltip applies to, does not appear.</li>
+  <li>Common keywords, like <code class="language-plaintext highlighter-rouge">this year</code>, <code class="language-plaintext highlighter-rouge">date daily</code>,<code class="language-plaintext highlighter-rouge">last quarter</code>, and <code class="language-plaintext highlighter-rouge">week of year</code> do not reflect the settings of a custom calendar.</li>
+  <li>The title page of an exported PDF does not display the full date</li>
+  <li>The <code class="language-plaintext highlighter-rouge">date</code> filter of an answer does not work properly when pinned to a Pinboard, even after applying the Pinboard <code class="language-plaintext highlighter-rouge">date</code> filter</li>
+  <li>Scroll and edit options are missing for charts in presentation mode when using the Microsoft Internet Explorer browser.</li>
 </ul>
 
 <p><a id="6-0"></a></p>
@@ -6110,12 +5805,8 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 6.0.</p>
 
 <ul>
-  <li>
-    <p>The <code class="language-plaintext highlighter-rouge">tscli cluster download-release</code> command sometimes did not work correctly.</p>
-  </li>
-  <li>
-    <p>The date dimension attribute was removed from the query for all date aggregations, except for DETAILED.</p>
-  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">tscli cluster download-release</code> command sometimes did not work correctly.</li>
+  <li>The date dimension attribute was removed from the query for all date aggregations, except for DETAILED.</li>
 </ul>
 
 <p><a id="5-3-2-cu3"></a></p>
@@ -6124,24 +5815,12 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.3.2 CU3.</p>
 
 <ul>
-  <li>
-    <p>Exported PDF, CSV, and XLSX files display caption tags.</p>
-  </li>
-  <li>
-    <p>Administrators are not able to edit a worksheet.</p>
-  </li>
-  <li>
-    <p>A legend in a chart is not displayed correctly when the <em>monthly</em> attribute is used in a search.</p>
-  </li>
-  <li>
-    <p>After upgrade to 5.3.2 CU2, users cannot access a ThoughtSpot instance previously accessed through SSO.</p>
-  </li>
-  <li>
-    <p>Users cannot sign in to a ThoughtSpot instance through SSO.</p>
-  </li>
-  <li>
-    <p>Changes made to a schema through TQL are not reflected when viewed in the ThoughtSpot UI.</p>
-  </li>
+  <li>Exported PDF, CSV, and XLSX files display caption tags</li>
+  <li>Administrators are not able to edit a worksheet.</li>
+  <li>A legend in a chart is not displayed correctly when the <em>monthly</em> attribute is used in a search.</li>
+  <li>After upgrade to 5.3.2 CU2, users cannot access a ThoughtSpot instance previously accessed through SSO.</li>
+  <li>Users cannot sign in to a ThoughtSpot instance through SSO.</li>
+  <li>Changes made to a schema through TQL are not reflected when viewed in the ThoughtSpot UI.</li>
 </ul>
 
 <p><a id="5-3-2-cu2"></a></p>
@@ -6168,30 +5847,14 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.3.2.</p>
 
 <ul>
-  <li>
-    <p>Delayed search enabled in a previous release version does not work after upgrade to 5.3.1.</p>
-  </li>
-  <li>
-    <p>Pop-up messages sometimes cover the entire width of the screen.</p>
-  </li>
-  <li>
-    <p><em>Share</em>, <em>Copy a link</em>, and <em>Send feedback</em> cannot be disabled when ThoughtSpot is embedded.</p>
-  </li>
-  <li>
-    <p>An error in the date range occurs when drilling down in a custom calendar.</p>
-  </li>
-  <li>
-    <p>When the network check fails during a self-service upgrade, it retries indefinitely.</p>
-  </li>
-  <li>
-    <p>If formulas have a less-than sign (&lt;) followed by text, the text following the less-than sign does not display in a table.</p>
-  </li>
-  <li>
-    <p>Removing a column from a search query increases the number of rows displayed.</p>
-  </li>
-  <li>
-    <p>A search that uses the <code class="language-plaintext highlighter-rouge">group_max</code> function displays an incorrect result when filtering is applied.</p>
-  </li>
+  <li>Delayed search enabled in a previous release version does not work after upgrade to 5.3.1.</li>
+  <li>Pop-up messages sometimes cover the entire width of the screen.</li>
+  <li><em>Share</em>, <em>Copy a link</em>, and <em>Send feedback</em> cannot be disabled when ThoughtSpot is embedded.</li>
+  <li>An error in the date range occurs when drilling down in a custom calendar.</li>
+  <li>When the network check fails during a self-service upgrade, it retries indefinitely.</li>
+  <li>If formulas have a less-than sign (&lt;) followed by text, the text following the less-than sign does not display in a table.</li>
+  <li>Removing a column from a search query increases the number of rows displayed.</li>
+  <li>A search that uses the <code class="language-plaintext highlighter-rouge">group_max</code> function displays an incorrect result when filtering is applied.</li>
 </ul>
 
 <p><a id="5-3-1"></a></p>
@@ -6200,44 +5863,22 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.3.1.</p>
 
 <ul>
-  <li>
-    <p>Using a custom calendar, and doing a query that filters on a date field causes a database error.</p>
-  </li>
-  <li>
-    <p>Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.</p>
-  </li>
-  <li>
-    <p>When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.</p>
-  </li>
-  <li>
-    <p>Opening certain pinboards can cause the Google Chrome browser to freeze.</p>
-  </li>
-  <li>
-    <p>Columns renamed in a worksheet revert back to their original names later.</p>
-  </li>
-  <li>
-    <p>Columns cannot be deleted from a worksheet.</p>
-  </li>
-  <li>
-    <p>Using a custom calendar and filtering date values by year, month or quarter does not work.</p>
-  </li>
-  <li>
-    <p>Canadian postal codes do not appear on maps.</p>
-  </li>
-  <li>
-    <p>The Admin &gt; Style Customization page indicates the wrong pixel dimensions required for a wide application logo.</p>
-  </li>
-  <li>
-    <p>Certain HTTP security headers are not implemented.</p>
-  </li>
+  <li>Using a custom calendar, and doing a query that filters on a date field causes a database error.</li>
+  <li>Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.</li>
+  <li>When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.</li>
+  <li>Opening certain Pinboards can cause the Google Chrome browser to freeze</li>
+  <li>Columns renamed in a worksheet revert back to their original names later.</li>
+  <li>Columns cannot be deleted from a worksheet.</li>
+  <li>Using a custom calendar and filtering date values by year, month or quarter does not work.</li>
+  <li>Canadian postal codes do not appear on maps.</li>
+  <li>The Admin &gt; Style Customization page indicates the wrong pixel dimensions required for a wide application logo.</li>
+  <li>Certain HTTP security headers are not implemented.</li>
 </ul>
 
 <p><a id="5-3"></a></p>
 <h2 id="53-fixed-issues">5.3 Fixed issues</h2>
 
 <p>These are the issues we fixed in ThoughtSpot Release 5.3.</p>
-
-<h3 id="display-and-rendering">Display and Rendering</h3>
 
 <ul>
   <li>A problem where dates do not display properly in the query details pane of an answer is now fixed.</li>
@@ -6247,38 +5888,18 @@ $('#toc').on('click', 'a', function() {
   <li>A problem where URLs that appear within an Answer are red, instead of blue, is now fixed.</li>
   <li>An issue where an answer that has no measures causes it to display blank is now fixed.</li>
   <li>A problem where weekly and monthly charts are not showing weekly and monthly aggregation correctly is now fixed.</li>
-</ul>
-
-<h3 id="pinboards">Pinboards</h3>
-
-<ul>
-  <li>A problem where the column tooltip in a pinboard does not show last updated information has been fixed.</li>
-  <li>An issue where the filter dialog box is unresponsive when opened from pinboard is now fixed.</li>
-  <li>A problem when pinning an answer to a pinboard where the pinboard list is very slow to display is now fixed.</li>
-  <li>An issue where scheduled pinboard emails fail to send to a specific recipient with a valid email address is now fixed.</li>
-  <li>A problem where a stacked bar chart does not work in a pinboard is now fixed.</li>
-  <li>An issue where an exclude filter does not work properly on a pinboard is now fixed.</li>
-  <li>A problem where a user cannot edit a pinboard, even though they have the proper permissions to do so is fixed.</li>
-  <li>An issue where emails fail to send from scheduled pinboards that contain Japanese characters in their title is now fixed.</li>
-</ul>
-
-<h3 id="search">Search</h3>
-
-<ul>
+  <li>A problem where the column tooltip in a Pinboard does not show last updated information has been fixed.</li>
+  <li>An issue where the filter dialog box is unresponsive when opened from Pinboard is now fixed.</li>
+  <li>A problem when pinning an answer to a Pinboard where the Pinboard list is very slow to display is now fixed.</li>
+  <li>An issue where scheduled Pinboard emails fail to send to a specific recipient with a valid email address is now fixed.</li>
+  <li>A problem where a stacked bar chart does not work in a Pinboard is now fixed.</li>
+  <li>An issue where an exclude filter does not work properly on a Pinboard is now fixed.</li>
+  <li>A problem where a user cannot edit a Pinboard, even though they have the proper permissions to do so is fixed.</li>
+  <li>An issue where emails fail to send from scheduled Pinboards that contain Japanese characters in their title is now fixed.</li>
   <li>A problem where nulls are excluded from a query, even when they have not been excluded using a filter is now fixed.</li>
-  <li>An issue where searches on a pinboard don’t include cached queries has been fixed.</li>
-</ul>
-
-<h3 id="administration">Administration</h3>
-
-<ul>
+  <li>An issue where searches on a Pinboard don’t include cached queries has been fixed.</li>
   <li>An issue where running the <code class="language-plaintext highlighter-rouge">tscli cluster</code> command causes a failed security check is now fixed.</li>
-  <li>A problem where the Informatica ODBC cannot connect to ThoughtSpot is now fixed.<br /></li>
-</ul>
-
-<h3 id="answers">Answers</h3>
-
-<ul>
+  <li>A problem where the Informatica ODBC cannot connect to ThoughtSpot is now fixed</li>
   <li>A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.</li>
 </ul>
 
@@ -6288,24 +5909,12 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.2.3.</p>
 
 <ul>
-  <li>
-    <p>An issue where LDAP sync does not sync users after upgrade to release 5.2.2 is now fixed.</p>
-  </li>
-  <li>
-    <p>A problem where certain types of joins do not work when row-level security is used is now fixed.</p>
-  </li>
-  <li>
-    <p>An issue where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.</p>
-  </li>
-  <li>
-    <p>A problem in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.</p>
-  </li>
-  <li>
-    <p>An issue where syncing users using the public API does not work is now fixed.</p>
-  </li>
-  <li>
-    <p>A problem where Canadian postal codes do not appear on maps is now fixed.</p>
-  </li>
+  <li>An issue where LDAP sync does not sync users after upgrade to release 5.2.2 is now fixed.</li>
+  <li>A problem where certain types of joins do not work when row-level security is used is now fixed.</li>
+  <li>An issue where opening certain Pinboards can cause the Google Chrome browser to freeze is now fixed.</li>
+  <li>A problem in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.</li>
+  <li>An issue where syncing users using the public API does not work is now fixed.</li>
+  <li>A problem where Canadian postal codes do not appear on maps is now fixed.</li>
 </ul>
 
 <p><a id="5-2-2"></a></p>
@@ -6314,21 +5923,11 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.2.2.</p>
 
 <ul>
-  <li>
-    <p>An issue where PDFs downloaded from a Pinboard are poorly formatted is now fixed.</p>
-  </li>
-  <li>
-    <p>An occasional problem where the login process is slow has been fixed.</p>
-  </li>
-  <li>
-    <p>An issue where the filter dialog box freezes when opened from a Pinboard, or the filter icon in the left panel is now fixed.</p>
-  </li>
-  <li>
-    <p>Previously, when the <code class="language-plaintext highlighter-rouge">unique_count_if</code> aggregate function was used in both the numerator and denominator of a division formula in a search query, it caused only the numerator value to be returned. This problem is now fixed.</p>
-  </li>
-  <li>
-    <p>A problem where the <code class="language-plaintext highlighter-rouge">unique_count_if</code> aggregate function does not parse an expression is now fixed.</p>
-  </li>
+  <li>An issue where PDFs downloaded from a Pinboard are poorly formatted is now fixed.</li>
+  <li>An occasional problem where the login process is slow has been fixed.</li>
+  <li>An issue where the filter dialog box freezes when opened from a Pinboard, or the filter icon in the left panel is now fixed.</li>
+  <li>Previously, when the <code class="language-plaintext highlighter-rouge">unique_count_if</code> aggregate function was used in both the numerator and denominator of a division formula in a search query, it caused only the numerator value to be returned. This problem is now fixed.</li>
+  <li>A problem where the <code class="language-plaintext highlighter-rouge">unique_count_if</code> aggregate function does not parse an expression is now fixed.</li>
 </ul>
 
 <p><a id="5-2-1"></a></p>
@@ -6337,51 +5936,21 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.2.1.</p>
 
 <ul>
-  <li>
-    <p>An issue where column tooltips do not display last-updated information is now fixed.</p>
-  </li>
-  <li>
-    <p>An error that occurs when attempting to save changes to the title of a visualization is now fixed.</p>
-  </li>
-  <li>
-    <p>An issue with the user-onboarding walkthrough intermittently failing to load is now fixed.</p>
-  </li>
-  <li>
-    <p>Reliability of the filter dialog when opened from a Pinboard or the left panel has been improved.</p>
-  </li>
-  <li>
-    <p>An issue with a NAS mount disconnecting during restore of a cluster is now fixed.</p>
-  </li>
-  <li>
-    <p>A problem where tables in a Google Chrome tab become misaligned is now fixed.</p>
-  </li>
-  <li>
-    <p>Corrupted metadata after an upgrade which made some worksheets uneditable is now fixed.</p>
-  </li>
-  <li>
-    <p>An issue where greyed-out search phrases could not be edited while in delayed search mode is now fixed.</p>
-  </li>
-  <li>
-    <p>The database manager memory limit has been increased to 16 GB to improve performance.</p>
-  </li>
-  <li>
-    <p>An issue where tables created with incorrect DDL syntax could be imported without errors is now fixed.</p>
-  </li>
-  <li>
-    <p>A problem with date filters in the Japanese locale is now fixed.</p>
-  </li>
-  <li>
-    <p>An issue with refreshing materialization of views is now fixed.</p>
-  </li>
-  <li>
-    <p>Occasional slow navigation between the Answer and Pinboard pages has been fixed.</p>
-  </li>
-  <li>
-    <p>A problem where scheduled Pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.</p>
-  </li>
-  <li>
-    <p>Embedded Pinboards no longer occasionally display a Pin button.</p>
-  </li>
+  <li>An issue where column tooltips do not display last-updated information is now fixed.</li>
+  <li>An error that occurs when attempting to save changes to the title of a visualization is now fixed.</li>
+  <li>An issue with the user-onboarding walkthrough intermittently failing to load is now fixed.</li>
+  <li>Reliability of the filter dialog when opened from a Pinboard or the left panel has been improved.</li>
+  <li>An issue with a NAS mount disconnecting during restore of a cluster is now fixed.</li>
+  <li>A problem where tables in a Google Chrome tab become misaligned is now fixed.</li>
+  <li>Corrupted metadata after an upgrade which made some worksheets uneditable is now fixed.</li>
+  <li>An issue where greyed-out search phrases could not be edited while in delayed search mode is now fixed.</li>
+  <li>The database manager memory limit has been increased to 16 GB to improve performance.</li>
+  <li>An issue where tables created with incorrect DDL syntax could be imported without errors is now fixed.</li>
+  <li>A problem with date filters in the Japanese locale is now fixed.</li>
+  <li>An issue with refreshing materialization of views is now fixed.</li>
+  <li>Occasional slow navigation between the Answer and Pinboard pages has been fixed.</li>
+  <li>A problem where scheduled Pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.</li>
+  <li>Embedded Pinboards no longer occasionally display a Pin button.</li>
 </ul>
 
 <p><a id="5-2"></a></p>
@@ -6410,18 +5979,10 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.1.4.</p>
 
 <ul>
-  <li>
-    <p>An error that occurred when saving changes to the title of a visualization is now fixed.</p>
-  </li>
-  <li>
-    <p>An issue where some worksheets became uneditable after an upgrade, due to corrupted metadata, is now fixed.</p>
-  </li>
-  <li>
-    <p>A problem with date filters in the Japanese locale is now fixed.</p>
-  </li>
-  <li>
-    <p>An issue with refreshing materialization of views is now fixed.</p>
-  </li>
+  <li>An error that occurred when saving changes to the title of a visualization is now fixed.</li>
+  <li>An issue where some worksheets became uneditable after an upgrade, due to corrupted metadata, is now fixed.</li>
+  <li>A problem with date filters in the Japanese locale is now fixed.</li>
+  <li>An issue with refreshing materialization of views is now fixed.</li>
 </ul>
 
 <p><a id="5-1-3"></a></p>
@@ -6430,53 +5991,21 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.1.3.</p>
 
 <ul>
-  <li>
-    <p>Downloading an R visualization no longer causes an empty page to be displayed.</p>
-  </li>
-  <li>
-    <p>A problem where tables in a Google Chrome tab become misaligned is now fixed.</p>
-  </li>
-  <li>
-    <p>Custom scatter charts no longer disappear from pinboards after an upgrade.</p>
-  </li>
-  <li>
-    <p>An issue where the Copy-and-edit button incorrectly appears on embedded visuals is now fixed.</p>
-  </li>
-  <li>
-    <p>Occasional slow navigation between the Answer and Pinboard pages has been fixed.</p>
-  </li>
-  <li>
-    <p>A normal bar chart in a pinboard which is changed to a stacked bar chart no longer reverts to the normal bar chart after the pinboard is saved, browser is closed, and pinboard is reopened.</p>
-  </li>
-</ul>
-
-<p>vA problem where using the exclude filter on pinboards causes the wrong results to be displayed is now fixed.</p>
-
-<ul>
-  <li>
-    <p>Usage-based indexing of search has been improved.</p>
-  </li>
-  <li>
-    <p>A problem where the <code class="language-plaintext highlighter-rouge">tscli ssl rm-cert</code> command was used to remove a cert, but did not revert it back to the default cert is now fixed.</p>
-  </li>
-  <li>
-    <p>When a search that uses no attributes results in fan-trap queries, the measure values shown are no longer incorrect.</p>
-  </li>
-  <li>
-    <p>A problem where some users could not log in through SSO after an upgrade has been fixed.</p>
-  </li>
-  <li>
-    <p>Fan-trap queries no longer have more grouping columns than necessary.</p>
-  </li>
-  <li>
-    <p>An issue with worksheets showing incomplete compound-column joins has been fixed.</p>
-  </li>
-  <li>
-    <p>A problem where the user interface becomes slow during a data load has been fixed.</p>
-  </li>
-  <li>
-    <p>CSVs downloaded by certain row-level-security users are no longer empty.</p>
-  </li>
+  <li>Downloading an R visualization no longer causes an empty page to be displayed.</li>
+  <li>A problem where tables in a Google Chrome tab become misaligned is now fixed.</li>
+  <li>Custom scatter charts no longer disappear from Pinboards after an upgrade.</li>
+  <li>An issue where the Copy-and-edit button incorrectly appears on embedded visuals is now fixed.</li>
+  <li>Occasional slow navigation between the Answer and Pinboard pages has been fixed.</li>
+  <li>A normal bar chart in a Pinboard which is changed to a stacked bar chart no longer reverts to the normal bar chart after the Pinboard is saved, browser is closed, and Pinboard is reopened.</li>
+  <li>A problem where using the exclude filter on Pinboards causes the wrong results to be displayed is now fixed.</li>
+  <li>Usage-based indexing of search has been improved.</li>
+  <li>A problem where the <code class="language-plaintext highlighter-rouge">tscli ssl rm-cert</code> command was used to remove a cert, but did not revert it back to the default cert is now fixed.</li>
+  <li>When a search that uses no attributes results in fan-trap queries, the measure values shown are no longer incorrect.</li>
+  <li>A problem where some users could not log in through SSO after an upgrade has been fixed.</li>
+  <li>Fan-trap queries no longer have more grouping columns than necessary</li>
+  <li>An issue with worksheets showing incomplete compound-column joins has been fixed.</li>
+  <li>A problem where the user interface becomes slow during a data load has been fixed</li>
+  <li>CSVs downloaded by certain row-level-security users are no longer empty.</li>
 </ul>
 
 <p><a id="5-1-2"></a></p>
@@ -6485,24 +6014,12 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.1.2.</p>
 
 <ul>
-  <li>
-    <p>Search no longer stops working under certain conditions like fast typing, or copying and pasting of a search query.</p>
-  </li>
-  <li>
-    <p>Selecting ‘Copy and Edit’ in an answer, pinboard visualization, insight, SpotIQ pinboard or view, no longer causes the user to be signed out.</p>
-  </li>
-  <li>
-    <p>HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during an upgrade.</p>
-  </li>
-  <li>
-    <p>When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.</p>
-  </li>
-  <li>
-    <p>Permissions issues with <code class="language-plaintext highlighter-rouge">tsload</code> and <code class="language-plaintext highlighter-rouge">tql</code> are now fixed, so the <strong>thoughtspot</strong> user can load data.</p>
-  </li>
-  <li>
-    <p>Database stability has been improved.</p>
-  </li>
+  <li>Search no longer stops working under certain conditions like fast typing, or copying and pasting of a search query.</li>
+  <li>Selecting ‘Copy and Edit’ in an answer, Pinboard visualization, insight, SpotIQ Pinboard or view, no longer causes the user to be signed out.</li>
+  <li>HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during an upgrade.</li>
+  <li>When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.</li>
+  <li>Permissions issues with <code class="language-plaintext highlighter-rouge">tsload</code> and <code class="language-plaintext highlighter-rouge">tql</code> are now fixed, so the <strong>thoughtspot</strong> user can load data.</li>
+  <li>Database stability has been improved.</li>
 </ul>
 
 <p><a id="5-1-1"></a></p>
@@ -6511,36 +6028,16 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.1.1.</p>
 
 <ul>
-  <li>
-    <p>Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.</p>
-  </li>
-  <li>
-    <p>Filter panel failure to open during formula creation has been fixed.</p>
-  </li>
-  <li>
-    <p>Custom R analysis failure when run from Custom Analyze has been fixed.</p>
-  </li>
-  <li>
-    <p>Microsoft Internet Explorer button display problem in Edit Group, Add a New Group, and Custom Analysis has been fixed.</p>
-  </li>
-  <li>
-    <p>Tooltips in line, scatter, and radar charts have been improved to avoid tooltip display when far from a data point.</p>
-  </li>
-  <li>
-    <p>Microsoft Internet Explorer problem with saving the name of an answer has been fixed.</p>
-  </li>
-  <li>
-    <p>Previously, admin style and font customizations for tables and charts were off by default. They are now on by default.</p>
-  </li>
-  <li>
-    <p>Search phrase autocomplete has been fixed to prevent unnecessary red highlighting of values.</p>
-  </li>
-  <li>
-    <p>Geo Bubble and Geo Heatmap issue where chart displays momentarily and then disappears has been fixed.</p>
-  </li>
-  <li>
-    <p>Zoom on Geo maps can now be done using a mouse scroll wheel.</p>
-  </li>
+  <li>Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.</li>
+  <li>Filter panel failure to open during formula creation has been fixed.</li>
+  <li>Custom R analysis failure when run from Custom Analyze has been fixed.</li>
+  <li>Microsoft Internet Explorer button display problem in Edit Group, Add a New Group, and Custom Analysis has been fixed.</li>
+  <li>Tooltips in line, scatter, and radar charts have been improved to avoid tooltip display when far from a data point</li>
+  <li>Microsoft Internet Explorer problem with saving the name of an answer has been fixed</li>
+  <li>Previously, admin style and font customizations for tables and charts were off by default. They are now on by default.</li>
+  <li>Search phrase autocomplete has been fixed to prevent unnecessary red highlighting of values.</li>
+  <li>Geo Bubble and Geo Heatmap issue where chart displays momentarily and then disappears has been fixed.</li>
+  <li>Zoom on Geo maps can now be done using a mouse scroll wheel.</li>
 </ul>
 
 <p><a id="5-1"></a></p>
@@ -6567,18 +6064,10 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 5.0.</p>
 
 <ul>
-  <li>
-    <p>Changes to metadata result in rebuilding the search index, even though the data has not changed.</p>
-  </li>
-  <li>
-    <p>A search returns an unexpected answer, because the last aggregation performed during execution was doing a <code class="language-plaintext highlighter-rouge">MIN()</code> rather than a <code class="language-plaintext highlighter-rouge">SUM()</code>.</p>
-  </li>
-  <li>
-    <p>Timeouts cause a cluster crash in some cases when a right outer join was used.</p>
-  </li>
-  <li>
-    <p>The space allocation chart does not update.</p>
-  </li>
+  <li>Changes to metadata result in rebuilding the search index, even though the data has not changed.</li>
+  <li>A search returns an unexpected answer, because the last aggregation performed during execution was doing a <code class="language-plaintext highlighter-rouge">MIN()</code> rather than a <code class="language-plaintext highlighter-rouge">SUM()</code>.</li>
+  <li>Timeouts cause a cluster crash in some cases when a right outer join was used.</li>
+  <li>The space allocation chart does not update.</li>
 </ul>
 
 <p><a id="4-5-1"></a></p>
@@ -6587,89 +6076,37 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 4.5.1.</p>
 
 <ul>
-  <li>
-    <p>Filters now work on formula-derived columns where the formula returns a numeric value of a type other than the integer types. In the past, filtering on a DOUBLE type formula-derived column required that the formula convert any DOUBLE values to an integer (INT32 or INT64). Now this type conversion is not necessary.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where changes to metadata resulted in rebuilding the search index, even though the data had not changed.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where a search was returning an unexpected answer, because the last aggregation performed during execution was doing a MIN() rather than a SUM().</p>
-  </li>
-  <li>
-    <p>A problem was resolved where timeouts were causing a cluster crash in some cases when a right outer join was used.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where user names were accidentally being sent along with cluster metrics.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where the space allocation chart was not getting updated.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where indexes failed to build for empty tables.</p>
-  </li>
-  <li>
-    <p>An issues with upgrade was resolved which caused the appliance to boot from an incorrect partition causing users to be found missing.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where you could not add a column to the search in cases where there was a long list of columns on the Search page. Clicking on a column name caused the column names to shift, such that you could no longer double click on the column name to add it to the search.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where SpotIQ sometimes did not return a result unless a process was restarted.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where where deadlock issues with the Search service caused indexing to fail.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where if the word “top” occurred as a data value, you could not use “top” as a keyword.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where periodic backups was delayed.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where adding columns to a worksheet and saving it resulted in timeouts and an <code>HTTP_UNAUTHORIZED(401)</code> status.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where idle sessions were never timing out.</p>
-  </li>
-  <li>
-    <p>An underlying system issue was resolved that caused a saved answer to fail with a read bar error if the answer was created on a relationship(s) which was based on a hidden column(s).</p>
-  </li>
-  <li>
-    <p>A problem was resolved where sorting on a primary key column produced duplicates for some values, both when viewing results in the ThoughtSpot application and when using TQL.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where after upgrading, some pinboards could not be opened and instead returned a red bar error.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where the number format wasn’t being honored when the column contained a currency. Setting the format for three digits after the decimal resulted in displaying only two.</p>
-  </li>
-  <li>
-    <p>An issue was resolved where hidden fields in source data prevented users from creating answers related to other columns in that data.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where drill down on multiple buckets did not apply all date filters.</p>
-  </li>
-  <li>
-    <p>An issue was resolved that potentially made ThoughtSpot at risk for Jackson JSON Library Vulnerabilities.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where a node failed due to a bad DIMM (Dual In-Line Memory Module), but didn’t failover successfully.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where data loaded very slowly.</p>
-  </li>
-  <li>
-    <p>An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API customers will have to be updated to be compliant with this new feature. The primary things that could be affected:</p>
-
+  <li>Filters now work on formula-derived columns where the formula returns a numeric value of a type other than the integer types. In the past, filtering on a DOUBLE type formula-derived column required that the formula convert any DOUBLE values to an integer (INT32 or INT64). Now this type conversion is not necessary.</li>
+  <li>A problem was resolved where changes to metadata resulted in rebuilding the search index, even though the data had not changed</li>
+  <li>A problem was resolved where a search was returning an unexpected answer, because the last aggregation performed during execution was doing a <code class="language-plaintext highlighter-rouge">MIN()</code> rather than a <code class="language-plaintext highlighter-rouge">SUM()</code>.</li>
+  <li>A problem was resolved where timeouts were causing a cluster crash in some cases when a right outer join was used.</li>
+  <li>A problem was resolved where user names were accidentally being sent along with cluster metrics.</li>
+  <li>A problem was resolved where the space allocation chart was not getting updated.</li>
+  <li>A problem was resolved where indexes failed to build for empty tables.</li>
+  <li>An issues with upgrade was resolved which caused the appliance to boot from an incorrect partition causing users to be found missing.</li>
+  <li>A problem was resolved where you could not add a column to the search in cases where there was a long list of columns on the Search page. Clicking on a column name caused the column names to shift, such that you could no longer double click on the column name to add it to the search.</li>
+  <li>A problem was resolved where SpotIQ sometimes did not return a result unless a process was restarted.</li>
+  <li>A problem was resolved where where deadlock issues with the Search service caused indexing to fail.</li>
+  <li>A problem was resolved where if the word “top” occurred as a data value, you could not use “top” as a keyword.</li>
+  <li>A problem was resolved where periodic backups was delayed.</li>
+  <li>A problem was resolved where adding columns to a worksheet and saving it resulted in timeouts and an <code>HTTP_UNAUTHORIZED(401)</code> status.</li>
+  <li>A problem was resolved where idle sessions were never timing out.</li>
+  <li>An underlying system issue was resolved that caused a saved answer to fail with a read bar error if the answer was created on a relationship(s) which was based on a hidden column(s).</li>
+  <li>A problem was resolved where sorting on a primary key column produced duplicates for some values, both when viewing results in the ThoughtSpot application and when using TQL.</li>
+  <li>A problem was resolved where after upgrading, some Pinboards could not be opened and instead returned a red bar error.</li>
+  <li>A problem was resolved where the number format wasn’t being honored when the column contained a currency. Setting the format for three digits after the decimal resulted in displaying only two.</li>
+  <li>An issue was resolved where hidden fields in source data prevented users from creating answers related to other columns in that data.</li>
+  <li>A problem was resolved where drill down on multiple buckets did not apply all date filters.</li>
+  <li>An issue was resolved that potentially made ThoughtSpot at risk for Jackson JSON Library Vulnerabilities.</li>
+  <li>A problem was resolved where a node failed due to a bad DIMM (Dual In-Line Memory Module), but didn’t failover successfully</li>
+  <li>A problem was resolved where data loaded very slowly.</li>
+  <li>An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API customers will have to be updated to be compliant with this new feature. The primary things that could be affected are:
     <ul>
       <li>Sync scripts that manage users and groups creation.</li>
       <li>Scripts that use the public APIs to fetch data.</li>
     </ul>
   </li>
-  <li>
-    <p>The easiest way to diagnose this would be to check for the inability of the script to log in to the system. Please contact ThoughtSpot Support to get guidance on the steps to resolve the issue.</p>
-  </li>
+  <li>The easiest way to diagnose this would be to check for the inability of the script to log in to the system. Please contact ThoughtSpot Support to get guidance on the steps to resolve the issue.</li>
 </ul>
 
 <p><a id="4-5"></a></p>
@@ -6678,48 +6115,20 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 4.5.</p>
 
 <ul>
-  <li>
-    <p>A problem was resolved where insufficient memory caused services on a cluster to crash repeatedly.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where idle sessions were never timing out.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where indexes failed to build for empty tables.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where users were unable to scroll in IE with pivot tables.</p>
-  </li>
-  <li>
-    <p>An issues with upgrade was resolved which caused the appliance to boot from an incorrect partition causing users to be found missing.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where where deadlock issues with the Search service caused indexing to fail.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where periodic backups was delayed.</p>
-  </li>
-  <li>
-    <p>Adding columns to a worksheet and saving them resulted in timeouts and an <code>HTTP_UNAUTHORIZED(401)</code> status. This problem resulted from an internal <code>SESSION</code> handling error. This problem was resolved in this release.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where <code>tsadmin</code> and <code>guest</code> were prevented from uploading a CSV upload and received a red bar error instead.</p>
-  </li>
-  <li>
-    <p>A problem with memory links during upgrade was resolved.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where Google Chrome version 65 broke the formatting of headlines in pinboards. This issue was reported as a Product Support Advisory for versions 3.x and 4.x releases older than 4.4.1.4.</p>
-  </li>
-  <li>
-    <p>An underlying system issue was resolved that caused a saved answer to fail with a red bar error if the answer was created on a relationship(s) which was based on a hidden column(s).</p>
-  </li>
-  <li>
-    <p>A pinned answer that relied on an underlying join between two worksheets one of which included a filter failed to display properly. This problem was resolved in this release.</p>
-  </li>
-  <li>
-    <p>After upgraded customer appliance from 4.4.0.11 to 4.4.1.2 GA, some pinboards could not be opened and instead returned a red bar error. This issue was resolved.</p>
-  </li>
+  <li>A problem was resolved where insufficient memory caused services on a cluster to crash repeatedly.</li>
+  <li>A problem was resolved where idle sessions were never timing out.</li>
+  <li>A problem was resolved where indexes failed to build for empty tables.</li>
+  <li>A problem was resolved where users were unable to scroll in IE with pivot tables.</li>
+  <li>An issues with upgrade was resolved which caused the appliance to boot from an incorrect partition causing users to be found missing.</li>
+  <li>A problem was resolved where where deadlock issues with the Search service caused indexing to fail.</li>
+  <li>A problem was resolved where periodic backups was delayed.</li>
+  <li>Adding columns to a worksheet and saving them resulted in timeouts and an <code>HTTP_UNAUTHORIZED(401)</code> status. This problem resulted from an internal <code>SESSION</code> handling error. This problem was resolved in this release.</li>
+  <li>A problem was resolved where <code>tsadmin</code> and <code>guest</code> were prevented from uploading a CSV upload and received a red bar error instead.</li>
+  <li>A problem with memory links during upgrade was resolved.</li>
+  <li>A problem was resolved where Google Chrome version 65 broke the formatting of headlines in Pinboards. This issue was reported as a Product Support Advisory for versions 3.x and 4.x releases older than 4.4.1.4.</li>
+  <li>An underlying system issue was resolved that caused a saved answer to fail with a red bar error if the answer was created on a relationship(s) which was based on a hidden column(s).</li>
+  <li>A pinned answer that relied on an underlying join between two worksheets one of which included a filter failed to display properly. This problem was resolved in this release.</li>
+  <li>After upgraded customer appliance from 4.4.0.11 to 4.4.1.2 GA, some Pinboards could not be opened and instead returned a red bar error. This issue was resolved.</li>
   <li>Some customers reported that several data buckets were relative to calendar year/quarter/month rather than relative to the financial year.
     <ul>
       <li>QUARTER_OF_YEAR</li>
@@ -6731,115 +6140,49 @@ $('#toc').on('click', 'a', function() {
       <li>DAY_OF_QUARTER</li>
     </ul>
   </li>
-  <li>
-    <p>An issue was resolved where hidden fields in source data prevented users from creating answers related to other columns in that data.</p>
-  </li>
-  <li>
-    <p>Customers were receiving a <code>RowSecurityManager not implemented for Atlas.</code> message when scheduling a pinboard. This problem was the result of legacy features in the system. These features no longer are checked.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where drill down on multiple buckets did not apply all date filters.</p>
-  </li>
-  <li>
-    <p>A problem was resolved that caused segmentation faults which in turn caused crashes in a cluster during an upgrade.</p>
-  </li>
-  <li>
-    <p>An issue was resolved that potentially made ThoughtSpot at risk for Jackson JSON Library Vulnerabilities.</p>
-  </li>
-  <li>
-    <p>A problem was resolved with the <strong>Show underlying data</strong> function ignoring the “last period” filter. This filter is no longer ignored.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where the presence of a date bucket filter after a measure column was ignored in query execution.</p>
-  </li>
-  <li>
-    <p>Issues were resolved that potentially exposed ThoughtSpot to two vulnerabilities: “Meltdown” and “Spectre”, along with variants. These vulnerabilities only applied when the ThoughtSpot application was sharing hardware with other applications, such as cloud deployments. When deployed in a virtualized environment, either on prem or in AWS, the virtual environment needed to patch the OS for it. When deployed on its own appliance, these vulnerabilities should not have affected ThoughtSpot.</p>
-  </li>
-  <li>
-    <p>An issue was fixed that occurred when plotting a formula that has either NaN or Infinity as some of the values. In this case, the pivot table treated the first instance of NaN/Infinity and every subsequent value as a single value and plots it in one cell. This problem was fixed.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where <code>near</code> keywords returned a red bar error.</p>
-  </li>
-  <li>
-    <p>An issue was resolved where requests to update a formula failed due to the complexity of the nesting.</p>
-  </li>
-  <li>
-    <p>Non-admin user could still see hidden fields. In queries, these users were asked to disambiguate these even though they were hidden. This problem was resolved.</p>
-  </li>
-  <li>
-    <p>An issue was fixed where the installation path was not properly updated resulting in an environment pointing to old versions of <code>tsload</code> and <code>tql</code>. Now, the standard path is updated during an upgrade.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where a saved answer from version 4.3 failed after upgrade because they referred to old table names.</p>
-  </li>
-  <li>
-    <p>When query has keywords that map to date column and Period Ago date buckets then SpotIQ Insight for that query did not work even though the user-created query succeeded. This SpotIQ bug was resolved.</p>
-  </li>
-  <li>
-    <p>When a query had keywords that mapped to a date column as well as to date buckets, SpotIQ Analysis failed for that query. For example, in query <code>revenue in Q1 1992</code> the last part represents date buckets. If <code>Q1 1992</code> maps to a date column then SpotIQ analysis failed. The query itself worked and any answer/pinboard that based on these queries were fine. This problem was resolved.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where NPS surveys were appearing when ThoughtSpot was provided through embedded content. This should no longer occur.</p>
-  </li>
-  <li>
-    <p>A problem was occurring where upgrade to a new version caused several types of formulas that relied on aggregated data to stop working. Problems were recorded involving:</p>
-
+  <li>An issue was resolved where hidden fields in source data prevented users from creating answers related to other columns in that data.</li>
+  <li>Customers were receiving a <code>RowSecurityManager not implemented for Atlas.</code> message when scheduling a Pinboard. This problem was the result of legacy features in the system. These features no longer are checked.</li>
+  <li>A problem was resolved where drill down on multiple buckets did not apply all date filters.</li>
+  <li>A problem was resolved that caused segmentation faults which in turn caused crashes in a cluster during an upgrade.</li>
+  <li>An issue was resolved that potentially made ThoughtSpot at risk for Jackson JSON Library Vulnerabilities.</li>
+  <li>A problem was resolved with the <strong>Show underlying data</strong> function ignoring the “last period” filter. This filter is no longer ignored.</li>
+  <li>A problem was resolved where the presence of a date bucket filter after a measure column was ignored in query execution.</li>
+  <li>Issues were resolved that potentially exposed ThoughtSpot to two vulnerabilities: “Meltdown” and “Spectre”, along with variants. These vulnerabilities only applied when the ThoughtSpot application was sharing hardware with other applications, such as cloud deployments. When deployed in a virtualized environment, either on prem or in AWS, the virtual environment needed to patch the OS for it. When deployed on its own appliance, these vulnerabilities should not have affected ThoughtSpot.</li>
+  <li>An issue was fixed that occurred when plotting a formula that has either NaN or Infinity as some of the values. In this case, the pivot table treated the first instance of NaN/Infinity and every subsequent value as a single value and plots it in one cell. This problem was fixed.</li>
+  <li>A problem was resolved where <code>near</code> keywords returned a red bar error.</li>
+  <li>An issue was resolved where requests to update a formula failed due to the complexity of the nesting.</li>
+  <li>Non-admin user could still see hidden fields. In queries, these users were asked to disambiguate these even though they were hidden. This problem was resolved.</li>
+  <li>An issue was fixed where the installation path was not properly updated resulting in an environment pointing to old versions of <code>tsload</code> and <code>tql</code>. Now, the standard path is updated during an upgrade.</li>
+  <li>A problem was resolved where a saved answer from version 4.3 failed after upgrade because they referred to old table names.</li>
+  <li>When query has keywords that map to date column and Period Ago date buckets then SpotIQ Insight for that query did not work even though the user-created query succeeded. This SpotIQ bug was resolved.</li>
+  <li>When a query had keywords that mapped to a date column as well as to date buckets, SpotIQ Analysis failed for that query. For example, in query <code>revenue in Q1 1992</code> the last part represents date buckets. If <code>Q1 1992</code> maps to a date column then SpotIQ analysis failed. The query itself worked and any answer/Pinboard that based on these queries were fine. This problem was resolved</li>
+  <li>A problem was resolved where NPS surveys were appearing when ThoughtSpot was provided through embedded content. This should no longer occur.</li>
+  <li>A problem was occurring where upgrade to a new version caused several types of formulas that relied on aggregated data to stop working. Problems were recorded involving:
     <ul>
       <li>Unique or count not functional when using Aggregated date.</li>
       <li>Group_count not functional as well.</li>
       <li>Group_max giving duplicated result.</li>
     </ul>
-
-    <p>This problem was resolved and should no longer appear</p>
   </li>
-  <li>
-    <p>A problem was resolved where ThoughtSpot would throw an error if the query involved multiple date filters on the same date column. This has been fixed in this release.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where the <code>tscli ssl set-min-version</code> failed because the minimum value was incorrect internally. The internal issue was resolved.</p>
-  </li>
-  <li>
-    <p>An issue with the callhome metrics feature caused problems during upgrade. This problem was resolved.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where deleting a relationship failed if either side of that relationship was a worksheet.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where Zookeeper reported reaching a descriptor limit. This report was returned in error. ThoughtSpot no longer reports this.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where data loaded very slowly.</p>
-  </li>
-  <li>
-    <p>A problem where Strict Transport Security was not enforced was fixed. The product now supports Strict Transport Security.</p>
-  </li>
-  <li>
-    <p>An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API clients will have to be updated to be compliant with this new feature. The primary clients that would be effected:</p>
-
+  <li>A problem was resolved where ThoughtSpot would throw an error if the query involved multiple date filters on the same date column. This has been fixed in this release.</li>
+  <li>A problem was resolved where the <code>tscli ssl set-min-version</code> failed because the minimum value was incorrect internally. The internal issue was resolved.</li>
+  <li>An issue with the callhome metrics feature caused problems during upgrade. This problem was resolved.</li>
+  <li>A problem was resolved where deleting a relationship failed if either side of that relationship was a worksheet.</li>
+  <li>A problem was resolved where Zookeeper reported reaching a descriptor limit. This report was returned in error. ThoughtSpot no longer reports this.</li>
+  <li>A problem was resolved where data loaded very slowly.</li>
+  <li>A problem where Strict Transport Security was not enforced was fixed. The product now supports Strict Transport Security.</li>
+  <li>An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API clients will have to be updated to be compliant with this new feature. The primary clients that would be effected:
     <ul>
       <li>Sync scripts that manage users and groups creation.</li>
       <li>Scripts that use the public APIs to fetch data.</li>
     </ul>
   </li>
-  <li>
-    <p>The easiest way to diagnose this would be the inability of the script to login to the system. Please contact support to get guidance on the steps to resolve the issue.</p>
-  </li>
-  <li>
-    <p>A problem was resolved with the <code>JESSIONID</code> value. Previously, setting the <strong>Remember Me</strong> option on the login page, caused the server to set a new <code>JSESSIONID</code> on the client after the user logs out. This new <code>JSESSIONID</code> was used for the next authenticated user session, regardless of the user’s identity. This no longer happens. Instead, users that re-login after setting <strong>Remember Me</strong> are given a new <code>JSESSIONID</code>.</p>
-  </li>
-  <li>
-    <p>Dates on the <em><strong>Data</strong></em> page was corrected so that dates now sort chronologically.</p>
-  </li>
-  <li>
-    <p>Previously, the application allowed cookies to contain information related to session state. An option was added to set more secure cookie handling in the application.</p>
-  </li>
-  <li>
-    <p>Previously, the login form on the ThoughtSpot application provided an autocomplete feature. Autocomplete is no longer support. Turning off <code>autocomplete</code> prevents intruders from compromising ThoughtSpot from a workstation unattended using a previously stored user ID and/or password.</p>
-  </li>
-  <li>
-    <p>Previously, alerts were time stamped with in PDT. This was fixed, now <code>tscli alert list</code> shows alerts display in the cluster’s local timezone.</p>
-  </li>
+  <li>The easiest way to diagnose this would be the inability of the script to login to the system. Please contact support to get guidance on the steps to resolve the issue.</li>
+  <li>A problem was resolved with the <code>JESSIONID</code> value. Previously, setting the <strong>Remember Me</strong> option on the login page, caused the server to set a new <code>JSESSIONID</code> on the client after the user logs out. This new <code>JSESSIONID</code> was used for the next authenticated user session, regardless of the user’s identity. This no longer happens. Instead, users that re-login after setting <strong>Remember Me</strong> are given a new <code>JSESSIONID</code>.</li>
+  <li>Dates on the <em><strong>Data</strong></em> page was corrected so that dates now sort chronologically.</li>
+  <li>Previously, the application allowed cookies to contain information related to session state. An option was added to set more secure cookie handling in the application.</li>
+  <li>Previously, the login form on the ThoughtSpot application provided an autocomplete feature. Autocomplete is no longer support. Turning off <code>autocomplete</code> prevents intruders from compromising ThoughtSpot from a workstation unattended using a previously stored user ID and/or password.</li>
+  <li>Previously, alerts were time stamped with in PDT. This was fixed, now <code>tscli alert list</code> shows alerts display in the cluster’s local timezone.</li>
   <li>The system now validates both the format and the size of profile pictures, previously these were not checked.</li>
 </ul>
 
@@ -6849,81 +6192,31 @@ $('#toc').on('click', 'a', function() {
 <p>These are the issues we fixed in ThoughtSpot Release 4.4.</p>
 
 <ul>
-  <li>
-    <p>Aggregation over group_max returned a red bar error. This was resolved, users can now aggregate over a <code class="language-plaintext highlighter-rouge">group_max</code> function.</p>
-  </li>
-  <li>
-    <p>A problem with editing formulas was resolved where users were repeatedly and unnecessarily presented with disambiguation options.</p>
-  </li>
-  <li>
-    <p>An issue was resolved where a bar on the chart label did not match the underlying data. The data was correct, the label was not.</p>
-  </li>
-  <li>
-    <p>An issue was corrected where, if one snapshot deletion failed in any fashion, any subsequent attempts to delete a snapshot failed.</p>
-  </li>
-  <li>
-    <p>Users were unable to edit a KPI formula if the KPI formula was pinned to a pinboard.</p>
-  </li>
-  <li>
-    <p>Users were able to <strong>Select All</strong> for 1000+ items in a pinboard filter. This action was available but not supported and caused users to believe pinboard filters were not working. Now, the option to <strong>Select All</strong> no longer functions when there are 1000+ items in a filter.</p>
-  </li>
-  <li>
-    <p>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</p>
-  </li>
-  <li>
-    <p>Creating a formula on <code class="language-plaintext highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</p>
-  </li>
-  <li>
-    <p>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</p>
-  </li>
-  <li>
-    <p>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</p>
-  </li>
-  <li>
-    <p>Active directory (AD) synchronization was not working. Moreover, if AD security group had no members in it, then the synchronization did not recognize the group at all. These problems were corrected, empty groups are recognized and users moved between groups now are properly synchronized by ThoughtSpot.</p>
-  </li>
-  <li>
-    <p>A problem was resolved where the round function returned a negative zero when it should have returned a 0 (zero).</p>
-  </li>
-  <li>
-    <p>Visualizations that relied on chasm trap worksheet were not immediately updated when a formula was changed. The workaround was to manually update the visualization. This was corrected. The system now updates the visualization automatically when an underlying formula is changed.</p>
-  </li>
-  <li>
-    <p>On a worksheet with a chasm trap, join between a fact and dimension did not work properly when grouping by a measure on the dimension table. This was fixed.</p>
-  </li>
-  <li>
-    <p>Using <code class="language-plaintext highlighter-rouge">safe_divide</code> and <code class="language-plaintext highlighter-rouge">sum</code> did not work with formula on formula. This problem was fixed.</p>
-  </li>
-  <li>
-    <p>Data connected schedules did not adjust for daylight savings time. Now, the schedules adjust as expected.</p>
-  </li>
-  <li>
-    <p>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code class="language-plaintext highlighter-rouge">IS NULL</code> operator. Now, this relationship no longer causes this problem.</p>
-  </li>
-  <li>
-    <p>An ODBC connection between Alteryx and ThoughtSpot was failing. This problem was solved by updating the ODBC drivers to the latest versions.</p>
-  </li>
-  <li>
-    <p>An issue was fixed where an unnecessary right-outer join was being applied to row-level security RLS-introduced joins. This situation led to impacts on query performance.</p>
-  </li>
-  <li>
-    <p>A problem was resolved with multiple sequential joins. Previously, the proper join path was not used when the fields are pulled from tables that were far apart unless fields from the intermediate tables were also used. Now, ThoughtSpot is able to handle multiple sequential joins.</p>
-  </li>
-  <li>
-    <p>Resolved an issue with a chasm trap that used <code class="language-plaintext highlighter-rouge">unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code class="language-plaintext highlighter-rouge">unique count</code> is applied correctly in the final query.</p>
-  </li>
-  <li>
-    <p>Previously, a user user that created some row-level security (RLS) rules was associated with the rules such that deleting the user also deleted the rules. This is no longer the case. If a user creates a set of RLS rules and that user is subsequently deleted, the rules persist in the system.</p>
-  </li>
-  <li>
-    <p>An issue was resolved where filters could only be edited in the search bar.</p>
-  </li>
-  <li>
-    <p>Intermittent, ambiguous red bar errors related to chasm trap situations were resolved.</p>
-  </li>
-  <li>
-    <p>The help for row-level security rules was complicated and hard to parse. This text was improved and moved into the Query Visualizer.</p>
-  </li>
+  <li>Aggregation over group_max returned a red bar error. This was resolved, users can now aggregate over a <code class="language-plaintext highlighter-rouge">group_max</code> function.</li>
+  <li>A problem with editing formulas was resolved where users were repeatedly and unnecessarily presented with disambiguation options.</li>
+  <li>An issue was resolved where a bar on the chart label did not match the underlying data. The data was correct, the label was not.</li>
+  <li>An issue was corrected where, if one snapshot deletion failed in any fashion, any subsequent attempts to delete a snapshot failed.</li>
+  <li>Users were unable to edit a KPI formula if the KPI formula was pinned to a Pinboard.</li>
+  <li>Users were able to <strong>Select All</strong> for 1000+ items in a Pinboard filter. This action was available but not supported and caused users to believe Pinboard filters were not working. Now, the option to <strong>Select All</strong> no longer functions when there are 1000+ items in a filter.</li>
+  <li>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</li>
+  <li>Creating a formula on <code class="language-plaintext highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</li>
+  <li>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</li>
+  <li>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</li>
+  <li>Active directory (AD) synchronization was not working. Moreover, if AD security group had no members in it, then the synchronization did not recognize the group at all. These problems were corrected, empty groups are recognized and users moved between groups now are properly synchronized by ThoughtSpot.</li>
+  <li>A problem was resolved where the round function returned a negative zero when it should have returned a 0 (zero).</li>
+  <li>Visualizations that relied on chasm trap worksheet were not immediately updated when a formula was changed. The workaround was to manually update the visualization. This was corrected. The system now updates the visualization automatically when an underlying formula is changed.</li>
+  <li>On a worksheet with a chasm trap, join between a fact and dimension did not work properly when grouping by a measure on the dimension table. This was fixed.</li>
+  <li>Using <code class="language-plaintext highlighter-rouge">safe_divide</code> and <code class="language-plaintext highlighter-rouge">sum</code> did not work with formula on formula. This problem was fixed.</li>
+  <li>Data connected schedules did not adjust for daylight savings time. Now, the schedules adjust as expected.</li>
+  <li>The ThoughtSpot tomcat instance went into crash loop when a generic relationship includes <code class="language-plaintext highlighter-rouge">IS NULL</code> operator. Now, this relationship no longer causes this problem.</li>
+  <li>An ODBC connection between Alteryx and ThoughtSpot was failing. This problem was solved by updating the ODBC drivers to the latest versions.</li>
+  <li>An issue was fixed where an unnecessary right-outer join was being applied to row-level security RLS-introduced joins. This situation led to impacts on query performance.</li>
+  <li>A problem was resolved with multiple sequential joins. Previously, the proper join path was not used when the fields are pulled from tables that were far apart unless fields from the intermediate tables were also used. Now, ThoughtSpot is able to handle multiple sequential joins.</li>
+  <li>Resolved an issue with a chasm trap that used <code class="language-plaintext highlighter-rouge">unique count</code> on shared dimension. The chasm trap was generating an incorrect query. Now, <code class="language-plaintext highlighter-rouge">unique count</code> is applied correctly in the final query.</li>
+  <li>Previously, a user that created some row-level security (RLS) rules was associated with the rules such that deleting the user also deleted the rules. This is no longer the case. If a user creates a set of RLS rules and that user is subsequently deleted, the rules persist in the system.</li>
+  <li>An issue was resolved where filters could only be edited in the search bar.</li>
+  <li>Intermittent, ambiguous red bar errors related to chasm trap situations were resolved.</li>
+  <li>The help for row-level security rules was complicated and hard to parse. This text was improved and moved into the Query Visualizer.</li>
 </ul>
 
   <div class="tags">
@@ -6951,7 +6244,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Dec 4, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Dec 7, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 09/09/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
