@@ -2,6 +2,8 @@
 title: ["About SearchIQ"]
 last_updated: 09/23/2019
 summary: "With SearchIQ, you can search your data through natural language, just like speaking."
+redirect_from:
+- /6.3.0/end-user/search/about-searchiq.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -2,6 +2,8 @@
 title: [SpotApps]
 last_updated: 9/23/2020
 summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
+redirect_from:
+- /6.3.0/admin/scriptability/app-templates.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
