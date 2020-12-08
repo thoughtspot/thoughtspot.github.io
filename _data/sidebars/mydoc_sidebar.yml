@@ -1229,8 +1229,8 @@ entries:
     - title: Formula function reference
       url: /reference/formula-reference.html
       output: web,refGd
-    - title: Running sum formula
-      url: /reference/formula-reference-running-sum.html
+    - title: Moving sum formula
+      url: /reference/formula-reference-moving-sum.html
       output: web,refGd
     - title: Alert codes reference
       url: /reference/alerts-reference.html
