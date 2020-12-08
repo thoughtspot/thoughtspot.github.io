@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: ThoughtSpot Cloud
-  docversion: ts6.oct.cl
+  product: TS Hackathon 2020
+  docversion: LiveDocs demo
   # version: tscloud.6
   sections:
 # Needed for PDF output only; no titles in this section
