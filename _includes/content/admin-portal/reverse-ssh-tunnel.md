@@ -14,6 +14,4 @@ If you select **no**, you cannot enable or disable the reverse SSH tunnel.
 
 If you have added `tunnelrelay.thoughtspot.com` to your list of allowed domains, by opening port `22`, the system allows you to enable or disable the reverse SSH tunnel.
 
-![Enable the reverse SSH tunnel]({{ site.baseurl }}/images/admin-portal-reverse-ssh-enable.png "Enable the reverse SSH tunnel")
-
 Make the necessary changes and select **OK**.
