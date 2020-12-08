@@ -4,6 +4,7 @@ last_updated: 6/11/2020
 summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server."
 redirect_from:
 - /6.3.0/admin/setup/set-up-relay-host.html
+- /6.3.0.CU1/admin/setup/set-up-relay-host.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

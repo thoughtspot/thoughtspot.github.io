@@ -4,6 +4,7 @@ last_updated: 5/6/2020
 summary: "You can use the Security Assertion Markup Language (SAML) to authenticate users."
 redirect_from:
 - /6.3.0/app-integrate/SAML/configure-SAML-with-tscli.html
+- /6.3.0.CU1/app-integrate/SAML/configure-SAML-with-tscli.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
