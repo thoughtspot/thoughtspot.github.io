@@ -1,6 +1,6 @@
 ---
 title: [Understand filters]
-last_updated: 4/2/2020
+last_updated: 12/3/2020
 summary: "Filters narrow down your search result to only include the data you want to see."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -55,7 +55,7 @@ You can apply simple filters to your search, whether it shows a table or a
 chart. Your filters remain part of the search even when you change the
 visualization type.
 
-When adding a filter from the ellipsis icon
+When adding a filter from the **More** menu icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the column header or by clicking on a chart axis, numeric columns and
 text columns provide you with the ability to include or exclude values, and

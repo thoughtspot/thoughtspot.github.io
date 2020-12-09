@@ -1,7 +1,7 @@
 ---
 title: [Clear the browser cache]
 summary: "Clear the browser cache if you have unexpected network issues."
-last_updated: 11/18/2019
+last_updated: 11/13/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -28,8 +28,6 @@ To resolve any of these situations, clear the browser cache:
 
 3. Reload the page.
 
-   For example, on Chrome you would click the **Reload** icon:
-
-   ![]({{ site.baseurl }}/images/browser_reload.png "Reload the page")
+   For example, on Chrome you would click the **Reload** icon to the left of the address bar.
 
 Now the problem should be fixed, and the page will appear as expected.

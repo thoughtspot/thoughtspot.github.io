@@ -1,6 +1,6 @@
 ---
 title: [Work with snapshots]
-last_updated: 3/10/2020
+last_updated: 12/9/2020
 toc: true
 redirect_from:
 - /6.3.0/admin/backup-restore/overview-snapshot.html

@@ -1,7 +1,7 @@
 ---
 title: [Upload and run a SQL script]
 
-last_updated: 9/2/2020
+last_updated: 12/8/2020
 summary: "You can import a schema through the Web browser, allowing you to run your SQL script without SSH access for the cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,7 +21,7 @@ To run or edit a SQL script that you already wrote to create your database schem
 
 2. Click **Data**, on the top navigation bar.
 
-3. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}, and select **Upload schema**.
+3. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}, and select **Upload schema**.
 
     ![Upload schema]({{ site.baseurl }}/images/upload-schema.png "Upload schema")
 
@@ -35,11 +35,7 @@ To run or edit a SQL script that you already wrote to create your database schem
 
 6. To edit the script, click on the line you would like to change, and type your changes into the interface.
 
-    ![Edit your schema]({{ site.baseurl }}/images/edit-schema.png "Edit your schema")
-
 6. When ready, run your script by clicking the **Execute** button.
-
-    ![Execute your schema]({{ site.baseurl }}/images/execute-schema.png "Execute your schema")
 
 7. If there are any errors, correct them and run the script again.
 
@@ -53,8 +49,6 @@ To write a new SQL script to create your database schema and relationships throu
 
 3. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}, and select **Upload schema**.
 
-    ![Upload schema]({{ site.baseurl }}/images/upload-schema.png "Upload schema")
-
 4. Select the **Write TQL** button in the top right corner of the screen.
 
     ![Write TQL]({{ site.baseurl }}/images/upload-schema-write-tql.png "Write TQL")
@@ -63,12 +57,10 @@ To write a new SQL script to create your database schema and relationships throu
 
     {% include note.html content="You cannot copy and paste an existing SQL script into the SQL editor." %}
 
-    When you finish writing a line, click the + icon to insert a new line below.
+    When you finish writing a line, click the **+** icon to insert a new line below.
 
     ![Write your schema script]({{ site.baseurl }}/images/write-schema.png "Write your schema script")
 
 6. When ready, run your script by clicking the **Execute** button.
-
-    ![Execute your schema]({{ site.baseurl }}/images/execute-schema.png "Execute your schema")
 
 7. If there are any errors, correct them and run the script again.

@@ -13,48 +13,31 @@ These are the different sections in ThoughtSpot:
 Click the ThoughtSpot logo to go to the application home page. At the top of the
 home page you can see a search bar, and several areas that show activity in ThoughtSpot.
 
-<table>
-<colgroup>
-   <col style="width:25%" />
-   <col style="width:25%" />
-   <col style="width:50%" />
-</colgroup>
-<thead class="thead" style="text-align:left;">
-   <tr>
-      <th>Label</th>
-      <th>Image</th>
-      <th>Description</th>
-   </tr>
-</thead>
-<tbody class="tbody">
-  <tr>
-    <th>All time popular<br>Recently trending</th>
-    <td>
-    <img src="{{ "/images/home-trending.png "| prepend: site.baseurl  }}" /></td>
-    <td>Shows all-time popular answers and pinboards, by number of views. You can
-    choose between all-time popular, or recently in the last 15 days. Small icons illustrate the type of visualization you can find when you click an item.</td>
-  </tr>
-  <tr>
-    <th>Recently viewed</th>
-    <td><img src="{{ "/images/home-recently-viewed.png "| prepend: site.baseurl  }}" /></td>
-    <td>Answers and pinboards you've viewed recently.</td>
-  </tr>
-  <tr>
-    <th>Recent team activity</th>
-    <td><img src="{{ "/images/home-team-activity.png "| prepend: site.baseurl  }}" /></td>
-    <td>Answers, pinboards, worksheets, and tables people in your company have created or edited recently.</td>
-  </tr>
-  <tr id="insights">
-    <th>Did you know?</th>
-    <td><img src="{{ "/images/home-spotiq.png "| prepend: site.baseurl  }}" /></td>
-    <td>Contains auto analysis results from SpotIQ. Off by default. After you turn on insights, they are visible only to users that have the SpotIQ privilege.</td>
-  </tr>
-  </tbody>
-</table>
+<dl>
+  <dlentry>
+    <dt>Favorites</dt>
+    <dd>Answers and Pinboards that you mark as favorite appear here.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Following</dt>
+    <dd>When you follow a metric on a Pinboard, we track it for you, and post daily updates here.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Recently viewed</dt>
+    <dd>For quick access, jump to the Answers and Pinboards you saw most recently.</dd>
+  </dlentry>
+  <dlentry>
+  <dt>Recently trending</dt>
+  <dd>[default]<br/>These are the Pinboards that other people in your organization accessed the most, recently.</dd>
+  </dlentry>
+  <dlentry>
+  <dt>All-time popular</dt>
+  <dd>[select option]<br/>Check out all-time popular Answers and Pinboards.</dd>
+  </dlentry>
+  </dl>
 
-The items shown in these areas are limited to answers, pinboards, worksheets,
-and other objects you have access to. For example, if you don't have the ability
-to use SpotIQ, that option does not appear.
+The items on this page are limited to Answers, Pinboards, Worksheets,
+and other objects that you have permission to access.
 
 {: id="search"}
 ## Search

@@ -52,8 +52,6 @@ To obtain the model file:
 
 2. Click the **Data** tab in the top navigation bar.
 
-    ![]({{ site.baseurl }}/images/data-tab.png)
-
 3. Click **Settings**, then click **Business Data Model**.
 
 4. Click **Download**.
@@ -99,9 +97,6 @@ ThoughtSpot before the changes will take effect. To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click **Data**, on the top navigation bar.
-
-    ![]({{ site.baseurl }}/images/data-tab.png)
-
 3. Click **Settings**, then click **Business Data Model**.
 4. Click **Browse your files** to upload the model.xls file, or drag and drop it in the zone.
 

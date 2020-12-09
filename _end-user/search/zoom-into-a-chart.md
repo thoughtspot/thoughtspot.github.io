@@ -1,7 +1,7 @@
 ---
 title: [Zoom into a chart]
 summary: Learn how to zoom into a chart.
-last_updated: 7/29/2020
+last_updated: 11/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,9 +9,7 @@ permalink: /:collection/:path.html
 
 You can zoom into your chart by selecting an area with your mouse. To zoom into a chart:
 
-1. While viewing your answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png) on the right.
-
-     ![]({{ site.baseurl }}/images/chartconfig-zoom-customizemenu.png "Edit chart configuration icon")
+1. While viewing your answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the right.
 
 2. The **Edit chart** panel appears. Select the **Settings** menu.
 
@@ -29,6 +27,4 @@ You can zoom into your chart by selecting an area with your mouse. To zoom into 
 
      ![Zoomed in chart area]({{ site.baseurl }}/images/chart-config-zoomed.png "Zoomed in chart area")
 
-4. If you would like to return to the original chart view, click **Reset zoom**.
-
-     ![Reset zoom]({{ site.baseurl }}/images/chartconfig-zoom-reset.png "Reset zoom option")
+4. If you would like to return to the original chart view, click ![reset icon]({{ site.baseurl }}/images/icon-reset-10px.png){: .inline} **Reset zoom**.

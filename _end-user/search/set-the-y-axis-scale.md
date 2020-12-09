@@ -1,7 +1,7 @@
 ---
 title: [Set the y-axis range]
 
-last_updated: 2/25/2020
+last_updated: 11/23/2020
 summary: "On charts, you can manually configure the y-axis range to be different from the search default. You can have multiple measures on the y-axis of many charts."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -38,7 +38,7 @@ To set the y-axis range:
 
 1. While viewing your answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
 
-2. Click the **edit** button ![]({{ site.baseurl }}/images/icon-edit-20px.png) that appears when you hover over **y-axis**.
+2. Click the **edit** button ![]({{ site.baseurl }}/images/icon-edit-20px.png){: .inline} that appears when you hover over **y-axis**.
 
 3. If you have multiple measures on the y-axis, select the measure you want to set the range for.
 

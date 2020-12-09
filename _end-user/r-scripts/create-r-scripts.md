@@ -1,7 +1,7 @@
 ---
 title: [Create and share R scripts]
 summary: "You can create and share your custom R scripts in ThoughtSpot."
-last_updated: 11/22/2019
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -54,7 +54,7 @@ another R script on the answer to a previous script.
 ## Write a custom script
 
 To add a custom R script, start by running a search, then click the **R** icon
-![R icon]({{ site.baseurl }}/images/r-icon-inline.png){: .inline} on the toolbar.
+![R icon]({{ site.baseurl }}/images/r-icon-inline-2.png){: .inline} on the toolbar.
 
 ![]({{ site.baseurl }}/images/r-icon.png)
 
@@ -176,9 +176,6 @@ scripts dialog.
 ![]({{ site.baseurl }}/images/r-save-script.png)
 
 To share a script, choose **Share** from the options menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
-
-![]({{ site.baseurl }}/images/r-share-script.png)
-
 
 ## More script examples
 

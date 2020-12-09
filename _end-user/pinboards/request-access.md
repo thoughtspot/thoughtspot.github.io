@@ -1,5 +1,5 @@
 ---
-title: [Request Access]
+title: [Request access]
 last_updated: 7/17/2020
 summary: "If you cannot view a Pinboard on ThoughtSpot, you can request access to it."
 sidebar: mydoc_sidebar

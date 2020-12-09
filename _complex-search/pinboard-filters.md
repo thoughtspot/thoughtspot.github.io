@@ -1,7 +1,7 @@
 ---
 title: [Pinboard filters]
 summary: "You can apply filters to pinboards as well as tables and charts."
-last_updated: 10/14/2020
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -36,9 +36,9 @@ one place.
 Here is an example that shows you how to add a single filter to a pinboard. To
 create a pinboard filter:
 
-1. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
+1. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
 
-     ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
+     ![]({{ site.baseurl }}/images/add-pinboard-filters.png "Add filters under Actions")
 
 2. In the populated columns menu, click the **Add filter** icon next to the column you would like to filter on.
 
@@ -62,7 +62,7 @@ create a pinboard filter:
 ## Apply filters to specific visualizations
 You can apply filters to only certain visualizations that you specify. To specify the visualizations that a Pinboard filter should apply to, follow these steps, or refer to [Selective Pinboard filters]({{ site.baseurl }}/complex-search/selective-filters.html):
 
-1. Select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
+1. Select the **More** menu icon ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
 
     ![Configure filters]({{ site.baseurl }}/images/configure-filters.png "Configure filters")
 

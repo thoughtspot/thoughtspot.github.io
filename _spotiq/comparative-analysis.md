@@ -1,7 +1,7 @@
 ---
 title: [Comparative Analysis]
 summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
-last_updated: 11/19/2019
+last_updated: 11/25/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -48,14 +48,12 @@ Notice that ThoughtSpot saves the results of SpotIQ analysis for 24 hours.
 To view the results of your analysis, follow these steps:  
 
 1. On the top navigation bar, click **SpotIQ**.  
-   ![]({{ site.baseurl }}/images/click-spotiq.png "Click SpotIQ")
 
 2. Select the **Analyses** tab.  
 
    Your analysis may be in progress. Wait until its **Status** changes to _Done_.
 
     Click _View Results_ to open the pinboard.
-    ![]({{ site.baseurl }}/images/comparative-analysis-5.png "Opening the Analysis Results")
 
 3. In the report, SpotIQ generates a Pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.
 

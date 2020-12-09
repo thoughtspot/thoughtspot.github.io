@@ -59,8 +59,8 @@ entries:
       - title: Your user preferences
         url: /end-user/introduction/about-user.html
         output: web,ugBk
-      - title: Use stickers to organize
-        url: /end-user/stickers.html
+      - title: Use tags to organize
+        url: /end-user/tags.html
         output: web,ugBk
       - levelThreeTitle: Privileges
         output: web,ugBk
@@ -899,8 +899,8 @@ entries:
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
-        - title: Use stickers
-          url: /admin/data-modeling/stickers-concept.html
+        - title: Use tags
+          url: /admin/data-modeling/tags-concept.html
           output: web,admBk
     - levelTwoTitle: "Worksheets: improve Search"
       output: web,admBk

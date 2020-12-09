@@ -87,7 +87,7 @@ Any administrator can add to the items in the **Learn** center. To add a replay,
 the following:
 
 1. Search in your search bar.
-2. Select the pin icon ![]({{ site.baseurl }}/images/icon-pin-24px.png){: .inline}.
+2. Select the pin icon ![]({{ site.baseurl }}/images/icon-pin-20px.png){: .inline}.
    The system lists the pinboards you can pin to.
 3. Select the **Learn how to use ThoughtSpot** pinboard.
 

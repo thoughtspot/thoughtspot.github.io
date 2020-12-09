@@ -2,7 +2,7 @@
 title: [Moving functions]
 
 
-last_updated: tbd
+last_updated: 11/23/2020
 summary: "Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -76,7 +76,7 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
    ![]({{ site.baseurl }}/images/aggregation_answer.png "Aggregation Answer example")
 
-2. In the upper-right side of the table, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
+2. In the upper-right side of the table, click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
 
    ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
 

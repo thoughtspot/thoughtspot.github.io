@@ -14,8 +14,6 @@ To create a manual snapshot in the Admin Console, follow these steps.
 
 1. Click **Create** at the upper left side of your screen.
 
-    ![Click create]({{ site.baseurl }}/images/admin-portal-snapshot-create.png "Click create")
-
 2. Specify a **name** and a **time to live** for the snapshot.<br>
 If you do not want the system to delete the snapshot automatically after a specified number of days, enter `-1` as the **time to live**.
 

@@ -1,6 +1,6 @@
 ---
 title: [Pivot table]
-last_updated: 10/28/2020
+last_updated: 12/1/2020
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,8 +10,6 @@ wide, customizable table. They allow you to visualize some of your data horizont
 time table that uses a drag-and-drop interface.  
 
 If you would like to visualize your search as a pivot table, click on the **change visualization** icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png){: .inline} near the top right of your screen, and select **pivot table**. You need at least one attribute and one measure in your search.
-
-![Select 'pivot table']({{ site.baseurl }}/images/charts-pivot-table.png "Select 'pivot table'")
 
 You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
 

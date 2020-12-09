@@ -34,7 +34,7 @@ If the Style Customization option is not available, [contact ThoughtSpot Support
         The font weight choices are normal, bold, and light. The style choices are normal, italic, and oblique.
 
     4. Click **Save**.
-3. Click the **Edit Font** icon ![]({{ site.baseurl }}/images/edit_icon.png) to make changes to the font you just uploaded or to a pre-existing font.
+3. Click the **Edit Font** icon ![]({{ site.baseurl }}/images/pencil-xs.png){: .inline} to make changes to the font you just uploaded or to a pre-existing font.
 
      ![]({{ site.baseurl }}/images/edit_font.png "Edit Chart Visualization Font")
 

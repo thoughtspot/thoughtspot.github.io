@@ -1,6 +1,6 @@
 ---
 title: [Drill down into your data]
-last_updated: 1/22/2020
+last_updated: 11/30/2020
 summary: "Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,8 +16,7 @@ You can drill down in both tables and chart visualizations, on both [standalone 
 
 2. Select **Drill down**.<br>
 This limits the data you are exploring to that particular data point or chart object.
-    ![Drill down from a data point]({{ site.baseurl }}/images/drilldown-table.png "Drill down from a data point in a table")
-    <!--{% include image.html file="drilldown-table.png" title="Drill down from a data point in a table" alt="You can drill down from just one data point, in either table or visualization mode." caption="Drill down from a data point in a table" %}-->
+
     ![Drill down from a chart object]({{ site.baseurl }}/images/drilldown-chart.png "Drill down from a data point in a chart")
     <!--{% include image.html file="drilldown-chart.png" title="Drill down from a data point in a chart" alt="You can drill down from a column in your data, in either table or visualization mode." caption="Drill down from a data point in a chart" %}-->
 
@@ -38,7 +37,7 @@ This limits the data you are exploring to that particular data point or chart ob
 
 {: id="pinboard-drilldown"}
 ## Drill down within a pinboard
-When you drill down on an Answer within a pinboard, it works similarly to drilling down on the Answer itself. You cannot go back one step at a time, but you can reset the Answer when you finish drilling down. To return to the original answer, click the blue reset icon ![]({{ site.baseurl }}/images/icon-drill-down-20px.png){: .inline} at the bottom right corner of the Answer.
+When you drill down on an Answer within a pinboard, it works similarly to drilling down on the Answer itself. You cannot go back one step at a time, but you can reset the Answer when you finish drilling down. To return to the original answer, click the blue reset icon ![]({{ site.baseurl }}/images/icon-drilldown-reset.png){: .inline} at the bottom right corner of the Answer.
 
 ![Reset your Answer]({{ site.baseurl }}/images/drilldown-pinboard.png "Reset your Answer")
 <!--{% include image.html file="drilldown-pinboard.png" title="Reset your Answer" alt="Click the blue reset icon at the bottom right corner of the Answer to return to the original Answer." caption="Reset your Answer" %}-->
@@ -47,13 +46,13 @@ When you drill down on an Answer within a pinboard, it works similarly to drilli
 ## Drill down with Answer Explorer
 You can also drill down using the [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) feature. Answer Explorer provides AI-guided exploration of an answer within a pinboard. When you drill down normally, you cannot go back one step at a time to see an earlier version of your visualization. You have to delete filters from the search bar, or start your search again. If you drill down with Answer Explorer, you can use the *go back one step* feature.
 
-As you drill down on an answer using Answer Explorer, use the back arrow ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline} to go back one step at a time. Click the reset icon ![]({{ site.baseurl }}/images/icon-reset-20px.png){: .inline} to go back to the original answer.
+As you drill down on an answer using Answer Explorer, use the back arrow ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline} to go back one step at a time. Click the reset icon ![]({{ site.baseurl }}/images/icon-reset-10px.png){: .inline} to go back to the original answer.
 
 If you want to go back one step at a time while drilling down, [add your answer to a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#add-an-answer-to-a-pinboard) so you can use Answer Explorer.
 
 ## Save and share your new answer
 When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar later.
-1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
+1. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 2. Select **copy and edit**.
 3. **Save** your new Answer and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.

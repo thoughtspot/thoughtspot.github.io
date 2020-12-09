@@ -12,13 +12,11 @@ To share a Pinboard from the main Pinboard page, follow these steps.
 
 1. Configure the Pinboard to look as it must appear when you share it.
 
-2. Save the Pinboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
+2. Save the Pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
     ![Save the pinboard]({{ site.baseurl }}/images/sharing-pinboardsave.png "Save the pinboard")
 
 3. Click **Pinboards** on the bar at the top of your screen.
-
-    ![The top menu bar]({{ site.baseurl }}/images/sharing-mainpinboardpage.png "The top menu bar")
 
 2. Select the Pinboard you want to share from the list of Pinboards by hovering over it and clicking the empty check box that appears.
 
@@ -34,7 +32,7 @@ To share a Pinboard from within the Pinboard, follow these steps.
 
 1. Configure the Pinboard to look as it must appear when you share it.
 
-2. Save the Pinboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
+2. Save the Pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
 3. Click the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png){: .inline}.
 

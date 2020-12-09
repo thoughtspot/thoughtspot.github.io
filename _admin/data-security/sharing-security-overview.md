@@ -1,7 +1,7 @@
 ---
 title: [Data security]
 
-last_updated: tbd
+last_updated: 12/9/2020
 
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
@@ -80,7 +80,7 @@ settings and rules.
 When you share an object, only the users and groups that have **SHARABLE** set
 for the **Sharing visibility** option appear on the dialog.
 
-![]({{ site.baseurl }}/images/share_dialog.png "Share an object")
+![]({{ site.baseurl }}/images/share-dialog.png "Share an object")
 
 Only users in the **Administrators** group or users with **Admin** privileges
 can share with groups marked as **NOT SHARABLE**. Members of a group with

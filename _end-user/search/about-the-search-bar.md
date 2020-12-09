@@ -1,6 +1,6 @@
 ---
 title: [Search bar features]
-last_updated: 4/2/2020
+last_updated: 11/16/2020
 summary: "The search bar is designed to make it easy for you to identify your search terms. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -38,8 +38,6 @@ This frees you from having to know the exact term or column name used in a data 
 ## Search help
 
 If you type an unrecognized search term, ThoughtSpot offers you tips on searching. The search help appears when you type a term that isn’t understood by ThoughtSpot and then press the Enter key.
-
- ![]({{ site.baseurl }}/images/search_help.png "Search help box")
 
 ## Related Answers
 

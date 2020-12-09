@@ -1,7 +1,7 @@
 ---
 title: ["Answer an expert question"]
 
-last_updated: 4/16/2019
+last_updated: 11/30/2020
 summary: "You're the expert. Now what? Here's how to answer a request from Ask an Expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,11 +14,8 @@ When a user struggles to answer a specific question, build a chart they have in 
 1. You receive an email stating that your help is needed, with a link to the request.  
    If you do not have an email set up in ThoughtSpot, follow these steps to check for requests:
    1. Log in to ThoughtSpot.
-   1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-20px.png){: .inline} (help) icon menu.
+   1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-10px.png){: .inline} (help) icon menu.
    2. In the drop-down, select **Expert Requests**.
-
-      ![Click Expert requests]({{ site.baseurl }}/images/ask-an-expert.png "Click Expert requests")
-
    2. Click **I am an expert** on the top left side of the screen.
    3. You can see a list of all requests for which you are an expert.
 

@@ -1,6 +1,6 @@
 ---
 title: [Edit the layout of a pinboard]
-last_updated: tbd
+last_updated: 11/30/2020
 summary: "Editing the layout of a pinboard lets you snap visualizations into place, choose between set visualization sizes, and reset your layout."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,50 +12,40 @@ Visualizations within a pinboard are easy to move around and snap into place on 
 In addition, the size picker at the bottom of a visualization's three-dot Actions menu lets you toggle between predetermined sizes for each visualization. Charts and graphs can be toggled between a small, medium, and full width size, while headlines can be only one size (small). One row of the pinboard can hold a predetermined number of visualizations of each size.
 
 1. Click **Pinboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
-
 2. On the pinboards page, click the pinboard you would like to edit.
-3. Drag and drop your visualizations on the layout grid to reorder your pinboard. Resize a visualization by choosing a predetermined size under the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the visualization.
+3. Drag and drop your visualizations on the layout grid to reorder your pinboard. Resize a visualization by choosing a predetermined size under the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the visualization.
 
      ![]({{ site.baseurl }}/images/resize_pinboard_visualization.png "Resize your visualization")
 
-4. Save your pinboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
-
-     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
+4. Save your pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
 ## Change the orientation of a chart or table
 
 You can change the orientation of a chart or table on a pinboard. To do this:
 
 1. Navigate to the chart or table.
-2. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the chart or table.
+2. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the chart or table.
 
    ThoughtSpot displays the drop-down menu.
 
-   ![]({{ site.baseurl }}/images/size_pinboard_item.png "Resize an item")
+   ![]({{ site.baseurl }}/images/size-pinboard-item.png "Resize an item")
 
    The last item shows different possible orientations, with the current orientation selected.
 
 3. Select a new orientation.
-4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
+4. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
 
 ## Delete a visualization from your pinboard
 
 To delete a visualization:
 
 1. Click **Pinboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
-
 2. On the pinboard list page, click the pinboard that contains the visualization you would like to delete.
-3. In the upper-right corner of the visualization, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Delete**.
+3. In the upper-right corner of the visualization, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Delete**.
 
-     ![]({{ site.baseurl }}/images/detele_a_pinboard_visualization.png "Delete a visualization")
+     ![]({{ site.baseurl }}/images/delete-a-pinboard-visualization.png "Delete a visualization")
 
-4. Save your pinboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
-
-     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
+4. Save your pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
 ## Copy and edit a visualization from your pinboard
 
@@ -63,13 +53,11 @@ To edit a copy of a visualization:
 
 1. Click **Pinboards**, on the top navigation bar.
 
-   ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
-
 2. On the pinboard list page, click the pinboard that contains the visualization you would like to edit a copy of.
 
 3. Find a visualization in the pinboard you want to edit.
 
-4. In the upper-right corner of the visualization, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
+4. In the upper-right corner of the visualization, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy and edit**.
 
    ![]({{ site.baseurl }}/images/make_a_copy_of_a_pinboard_viz.png "Make a copy of the pinboard visualization")
 
@@ -77,7 +65,7 @@ To edit a copy of a visualization:
 
 5. Make any changes you want to the visualization.
 
-6. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
+6. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Save**.
 
    The Save Answer dialog box appears.
 
@@ -91,7 +79,7 @@ To edit a copy of a visualization:
 
 Other pinboard actions include actions you normally perform on your search as
 well as actions that you can only perform on a pinboard. Most of these actions
-are found under the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
+are found under the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
 ![]({{ site.baseurl }}/images/pinboard_actions.png "Pinboard actions button")
 

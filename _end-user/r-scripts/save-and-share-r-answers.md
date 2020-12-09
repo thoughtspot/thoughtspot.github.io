@@ -1,7 +1,7 @@
 ---
 title: [Save and share R visualizations]
 summary: "You can save and share R analyses as answers and pinboards."
-last_updated: tbd
+last_updated: 11/24/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,31 +11,23 @@ other search result in ThoughtSpot. You can save it, share it, and add it to pin
 
 ## Save an R visualization
 
-1.  Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing your analysis, and select **Save** from the menu.
+1.  Click the **more options** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing your analysis, and select **Save** from the menu.
 
     ![]({{ site.baseurl }}/images/r-time-forecast-options.png)
 
 2.  Add a name and description for the analysis, and click **Save**.
-
-    ![]({{ site.baseurl }}/images/r-save-time-forecast-answer.png)
-
     The saved analysis is added to **Answers**.
-
-    ![]({{ site.baseurl }}/images/r-time-forecast-saved-answer.png)
 
 ## Share an R visualization
 
-1.  Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} above the generated graphic or table containing
-    your analysis, and select **Share** from the menu.
+1.  Click the **Share** icon ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png){: .inline}. above the generated graphic or table containing your analysis.
 
     ![]({{ site.baseurl }}/images/r-viz-share.png)
 
 2.  Select and add the user or group with which to share, along with level of access
     (**Can View**, **Can Edit**), and then click **Done**.
 
-    ![]({{ site.baseurl }}/images/r-viz-share-choose-group.png)
-
-    ![]({{ site.baseurl }}/images/r-viz-share-details.png)
+    ![]({{ site.baseurl }}/images/sharing-from-r-script.png)
 
 ## Add an R visualization to a pinboard
 
@@ -44,10 +36,4 @@ other search result in ThoughtSpot. You can save it, share it, and add it to pin
 
     ![]({{ site.baseurl }}/images/r-viz-pin.png)
 
-2.  Create a new pinboard or select an existing pinboard, then click **Done**.
-
-    ![]({{ site.baseurl }}/images/r-viz-pin-add.png)
-
-    The visualization is available in **Pinboards**.
-
-    ![]({{ site.baseurl }}/images/r-viz-pinboards.png)
+2.  Create a new pinboard or select an existing pinboard, then click **Done**. You can find the visualization in **Pinboards**.

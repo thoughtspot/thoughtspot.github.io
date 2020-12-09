@@ -1,7 +1,7 @@
 ---
 title: [Run prebuilt R scripts on answers]
 summary: "Anyone with R privileges can run an R analysis ThoughtSpot using provided scripts, you don't need to be an expert. "
-last_updated: tbd
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,7 @@ users you share visualizations with do not need R privileges.
 
 ## Run an R analysis
 
-1.  Click the **R** icon ![R icon]({{ site.baseurl }}/images/r-icon-inline.png){: .inline}
+1.  Click the **R** icon ![R icon]({{ site.baseurl }}/images/r-icon-inline-2.png){: .inline}
 on the toolbar for any search result (answer).
 
     ![]({{ site.baseurl }}/images/r-icon-marketspot.png)
@@ -20,13 +20,11 @@ on the toolbar for any search result (answer).
     From here, you have options to write a custom script, or load a pre-built or
     ThoughtSpot provided script.
 
-2. In the Analyze dialog, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} next to the **Custom R Script** panel, and choose **Load**.
+2. In the Analyze dialog, click the **more options** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} next to the **Custom R Script** panel, and choose **Load**.
 
     ![]({{ site.baseurl }}/images/r-load-prebuilt.png)
 
     This brings up a list of pre-built scripts, both provided by ThoughtSpot and any created by programmers on your team.
-
-    ![]({{ site.baseurl }}/images/r-load-list-of-scripts.png)
 
 4. Select a script, then choose the columns you want to include in the analysis and the output file type (PNG or CSV).
 

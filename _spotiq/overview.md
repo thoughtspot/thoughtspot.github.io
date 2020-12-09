@@ -1,7 +1,7 @@
 ---
 title: ["SpotIQ 101: Load and analyze data"]
 summary: Go through a sample SpotIQ workflow to learn about SpotIQ.
-last_updated: 11/15/2019
+last_updated: 11/13/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -22,9 +22,7 @@ These features require that your user account has the following privileges:
 * **Has Spot IQ privilege**
 
 Your ThoughtSpot administrator can give you these privileges. If you can see the
-SpotIQ option on your ThoughtSpot dashboard, you have access to SpotIQ:
-
- ![]({{ site.baseurl }}/images/spotiq-is-on.png)
+SpotIQ option on your ThoughtSpot dashboard, you have access to SpotIQ.
 
 ## Get the sample data and some insights
 
@@ -92,7 +90,7 @@ analysis generates new results.
 
 3. Look for results from your **FoodDollarDataReal** data.
 
-    SpotIQ labels each result with a **NAME**, **DESCRIPTION**, **STICKERS**,
+    SpotIQ labels each result with a **NAME**, **DESCRIPTION**, **tagS**,
     and **MODIFIED**. The **NAME** comes from the object that was analyzed which
     is referenced again in the **DESCRIPTION**. The combination of **NAME**,
     **DESCRIPTION**, and **MODIFIED** is unique.

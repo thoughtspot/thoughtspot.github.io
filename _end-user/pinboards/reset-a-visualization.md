@@ -1,7 +1,7 @@
 ---
 title: [Reset a pinboard visualization]
 summary: Learn how to reset a pinboard visualization.
-last_updated: 11/15/2019
+last_updated: 11/24/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,6 +17,4 @@ To reset a visualization:
 
      ![]({{ site.baseurl }}/images/reset_a_visualization.png "Click to reset")
 
-2. Save your pinboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
-
-     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")
+2. Save your pinboard by clicking the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.

@@ -1,6 +1,6 @@
 ---
 title: [Join a table or view to another data source]
-last_updated: 7/13/2020
+last_updated: 11/18/2020
 summary: "Learn how to define joins between a table or view and another table, view, or worksheet"
 toc: false
 sidebar: mydoc_sidebar
@@ -26,19 +26,17 @@ To create a relationship through the Web interface:
 
 2. Click the name of your table or view.
 
-3. Click **Schema**. You will see the list showing existing joins.
+3. Click **Joins**. You will see the list showing existing joins.
 
 4. Click the **+ Add Join** button on the upper right side of the screen.
 
-   ![]({{ site.baseurl }}/images/table-add-join.png "Add join")
+   ![]({{ site.baseurl }}/images/add-join-to-worksheet-1.png "Add join")
 
-5. Use the **Map source to destination** dialog to choose the destination table, view, or worksheet you want to join to.
+5. Use the **Source to destination** dialog to choose the destination table, view, or worksheet you want to join to.
 
-   ![]({{ site.baseurl }}/images/table-join-select-destination.png "Select destination table")
+   ![]({{ site.baseurl }}/images/add-join-dialog-box.png "Select destination table")
 
 6. Choose the columns you want to join on from the table or view (source) and destination table, view, or worksheet. Click **Next**.
-
-   ![]({{ site.baseurl }}/images/table-join-select-col.png "Select columns to join on")
 
 7. Give your join a name and description and click **ADD JOIN**.
 

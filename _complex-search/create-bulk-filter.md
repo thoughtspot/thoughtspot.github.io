@@ -1,7 +1,7 @@
 ---
 title: [Create a bulk filter]
 summary: Learn how to create a bulk filter.
-last_updated: 11/15/2019
+last_updated: 11/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -23,18 +23,16 @@ spreadsheet.
 1. In table view, select multiple cells by clicking and dragging.
 2. Right-click and choose **Copy to clipboard**.
 
-     ![]({{ site.baseurl }}/images/bulk_filter_copy_to_clipboard.png "Copy to the Clipboard")
+     ![]({{ site.baseurl }}/images/bulk-filter-copy-to-clipboard.png "Copy to the Clipboard")
 
-3. Hover over the column header you want to filter, and click the **three-dot icon (ellipses)** icon.
+3. Hover over the column header you want to filter, and click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
 4. Choose whether you want your bulk filter to **Include** or **Exclude** values.
 
 5. Click **Add values in bulk**:
 
-     ![]({{ site.baseurl }}/images/bulk_filter_add_values_in_bulk.png "Add values in bulk")
+     ![]({{ site.baseurl }}/images/bulk-filters-add-values.png "Add values in bulk")
 
 6. Paste the values into the bulk filter box.
-
-     ![]({{ site.baseurl }}/images/bulk_filter_paste_values.png "Paste values into the bulk filter box")
 
 7. Click **Done**.

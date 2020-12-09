@@ -1,6 +1,6 @@
 ---
 title: [How the worksheet join rule works]
-last_updated: 11/18/2019
+last_updated: 12/9/2020
 summary: "The worksheet join rule specifies when to apply joins when searching on a worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -38,9 +38,7 @@ To specify how the Worksheet should apply joins, follow these steps:
 
     If you do not see this option, you may not have editing privileges on this Worksheet. Request edit access from your administrator, or the owner of the Worksheet.
 
-3. Click the + button to add sources and specify join application, or to specify how to apply joins on the Worksheet's existing sources.
-
-    ![Choose sources]({{ site.baseurl }}/images/worksheet-choose-sources.png "Choose sources")
+3. Click the **+** icon to add sources and specify join application, or to specify how to apply joins on the Worksheet's existing sources.
 
 4. Select the sources you want to specify join application for.
 

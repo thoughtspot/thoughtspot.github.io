@@ -1,7 +1,7 @@
 ---
 title: [Join a worksheet to another data source]
 
-last_updated: 7/10/2020
+last_updated: 11/19/2020
 summary: "Learn how to define joins between a worksheet and a table or view."
 toc: false
 sidebar: mydoc_sidebar
@@ -32,23 +32,19 @@ To create a relationship through the Web interface:
 
    The list of existing joins within the worksheet appears.
 
-4. To view the joins between the worksheet and other data sources, click **Joins within worksheets**, and choose **Joins between worksheets**.
-
-   ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
+4. To view the joins between the worksheet and other data sources, click **Joins within this worksheet**, and choose **Joins from this worksheet**.
 
 5. Click **+ Add Join** on the upper right side of the screen.
 
-   ![]({{ site.baseurl }}/images/ws-add-join.png "Add join")
+   ![]({{ site.baseurl }}/images/add-join-to-worksheet-1.png "Add join")
 
 6. Use the **Map source to destination** dialog to choose the destination table or view for the other end of the join.
 
-   ![]({{ site.baseurl }}/images/ws-join-select-destination.png "Select destination table")
+   ![]({{ site.baseurl }}/images/add-join-dialog-box.png "Select destination table")
 
 7. Choose the matching columns for the join from the worksheet (source) and destination data source.
 
    Click **Next**.
-
-   ![]({{ site.baseurl }}/images/ws-join-select-col.png "Select columns to join on")
 
 8. Give your join a name and description, and click **ADD JOIN**.
 

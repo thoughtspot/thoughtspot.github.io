@@ -1,7 +1,7 @@
 ---
 title: [Set up recording for Replay Search]
 
-last_updated: 11/18/2019
+last_updated: 12/9/2020
 summary: "You can record a search replay to create training for your users on how to search your own data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,7 +12,7 @@ To record a search replay using ThoughtSpot:
 
 1. While viewing a chart or table in ThoughtSpot, click the **Replay Search** icon.
 
-     ![]({{ site.baseurl }}/images/replay_search_icon.png "The Replay Search icon")
+     ![]({{ site.baseurl }}/images/replay-search-icon.png "The Replay Search icon")
 
 2. Click the **Record Replay** button.
 
@@ -51,5 +51,3 @@ To record a search replay using ThoughtSpot:
      ![]({{ site.baseurl }}/images/record_search_replay_5.png "Download the recorded search")
 
 9. Save the recording on your computer by selecting **Save File** and clicking **OK**.
-
-     ![]({{ site.baseurl }}/images/record_search_replay_6.png "Record Search save file")

@@ -1,6 +1,6 @@
 ---
 title: [Selective Pinboard filters]
-last_updated: 9/28/2020
+last_updated: 12/4/2020
 summary: "Learn how to specify which Pinboard visualizations a Pinboard filter should apply to."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,7 +16,7 @@ To learn more about Pinboard filters, refer to [Pinboard filters]({{ site.baseur
 
 2. Add filters to the Pinboard. To create filters for visualizations based on one Worksheet, refer to [Pinboard filters]({{ site.baseurl }}/complex-search/pinboard-filters.html). To create one filter that filters visualizations based on more than one Worksheet, refer to [Linked Pinboard filters]({{ site.baseurl }}/complex-search/linked-filters.html).
 
-3. Select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
+3. Select the **More** menu icon![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
 
     ![Configure filters]({{ site.baseurl }}/images/configure-filters.png "Configure filters")
 

@@ -1,7 +1,7 @@
 ---
 title: [Show underlying data]
 
-last_updated: tbd
+last_updated: 11/18/2020
 summary: "Viewing the underlying data of your answer gives you an un-aggregated view of the underlying data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -26,16 +26,14 @@ To show underlying data:
 1. Right-click the visualization or table cell of interest
 2. Select **Show underlying data**.
 
-   ![]({{ site.baseurl }}/images/show_underlying_data.png "Show underlying data option")
+   ![]({{ site.baseurl }}/images/show-underlying-data-from-table.png "Show underlying data option")
 
     A new window opens that displays a summary and the underlying data.
 
-3. Optionally, choose to **+ ADD COLUMNS** to add additional data.
+   ![]({{ site.baseurl }}/images/showing-underlying-data.png "Add columns to underlying data")
 
-   ![]({{ site.baseurl }}/images/add_columns_underlying_data.png "Add columns to underlying data")
+3. Optionally, choose to **+ ADD COLUMNS** to add additional data.
 
 4. Click **CONFIRM CHANGES**.
 
 5. Click **DOWNLOAD** to download a CSV file of the data.
-
-   ![]({{ site.baseurl }}/images/showing_underlying_data.png "Download underlying data")

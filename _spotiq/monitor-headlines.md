@@ -1,7 +1,7 @@
 ---
 title: [Monitor headlines with SpotIQ]
 summary: "With Monitor, users can observe key metric changes, and receive updates over email."
-last_updated: 08/19/2020
+last_updated: 11/25/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -132,7 +132,7 @@ To stop monitoring a Headline, follow these steps:
 ![Unfollow a monitored Headline]({{ site.baseurl }}/images/headline-unfollow.gif "Unfollow a monitored Headline")
 
 1. Hover over the action area of the Headline you plan to unfollow.
-2. Click the **More** (...) icon.
+2. Click the **More** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 3. In the menu, select and click **Unfollow**.
 3. In the confirmation menu, confirm by clicking **Unfollow**.
 
@@ -144,7 +144,7 @@ To rename a followed Headline, follow these steps:
 ![Rename a monitored Headline]({{ site.baseurl }}/images/headline-rename.gif "Rename a monitored Headline")
 
 1. Hover over the action area of the Headline you plan to rename.
-2. Click the **More** (...) icon.
+2. Click the **More** icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 3. In the menu, select and click **Rename**.
 4. In the **Rename** modal, enter the new name for the Headline.
 5. Click **Save**.

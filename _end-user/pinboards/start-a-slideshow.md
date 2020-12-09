@@ -1,6 +1,6 @@
 ---
 title: [Present a pinboard as a slideshow]
-last_updated: 6/30/19
+last_updated: 11/24/2020
 summary: "Displaying your pinboard as a slideshow is a good way to present its contents to others."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,11 +13,9 @@ To start a presentation, follow these steps:
 
 1. Click **Pinboards** on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
-
 2. Select a pinboard from the list of pinboards by clicking on its title.
 
-3. In the open pinboard, click the **More Options** menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (ellipses icon), and select **![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} Present**.
+3. In the open pinboard, click the **more options** menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (ellipses icon), and select **![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} Present**.
 
      ![]({{ site.baseurl }}/images/pinboard-present.png "Present a pinboard")
 

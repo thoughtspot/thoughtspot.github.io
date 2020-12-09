@@ -2,14 +2,12 @@
 title: [Overview of keyword searches]
 
 
-last_updated: tbd
+last_updated: 11/17/2020
 summary: "Use keywords when asking a question to narrow and further define your search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [reference]({{ site.baseurl }}/reference/keywords.html#) section or in the help. Open the help by selecting **Help** from the top navigation bar.
-
- ![]({{ site.baseurl }}/images/help_center_keywords.png "Help center keywords list")
 
  Within the help center, you’ll find videos and documentation that pertain to the current version of ThoughtSpot. Here is where you can also find a list of keywords. You can expand each section to see which keywords are available and examples on how to use them.
 
