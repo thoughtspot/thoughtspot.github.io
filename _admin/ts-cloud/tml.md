@@ -1,7 +1,7 @@
 ---
-title: [ThoughtSpot Scripting Language]
+title: [ThoughtSpot Modeling Language]
 last_updated: 7/16/2020
-summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, View, Table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
+summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, Table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -19,12 +19,12 @@ The Scriptability feature supports several scenarios that you may encounter:
 ## How to use Scriptability
 Depending on how you want to use Scriptability, there are several workflows you can follow:
 1. **Edit and update an existing object in the same cluster**: You can either
-- [export](#export-object) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) (`TML`) representation, and [import](#update-object) the updated file(s) to modify the existing object *or*
-- edit the object(s) using the [in-app `TML` editor](#edit-tsl) and publish the updated file(s).
+- [export](#export-object) the object(s), edit the object(s) by modifying its [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html) (`TML`) representation, and [import](#update-object) the updated file(s) to modify the existing object *or*
+- edit the object(s) using the [in-app `TML` editor](#edit-tml) and publish the updated file(s).
 2. **Migrate an existing object from one cluster to a new cluster**: [export](#export-object) the object(s) and [import](#migrate-object) the updated file(s) to the new cluster.
 3. **Edit and migrate an existing object from one cluster to a new cluster**: You can either
-- [export](#export-object) the object(s), edit the object(s) by modifying its [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) (`TML`) representation, and [import](#migrate-object) the updated file(s) to the new cluster *or*
-- edit the object(s) using the [in-app `TML` editor](#edit-tsl), publish the updated file(s), [export](#export-object) the object(s), and [import](#migrate-object) the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.
+- [export](#export-object) the object(s), edit the object(s) by modifying its [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html) (`TML`) representation, and [import](#migrate-object) the updated file(s) to the new cluster *or*
+- edit the object(s) using the [in-app `TML` editor](#edit-tml), publish the updated file(s), [export](#export-object) the object(s), and [import](#migrate-object) the updated file(s) to the new cluster. Note that this workflow changes the object(s) in both clusters.
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ To export one object:
 
 1. Navigate to the Pinboard, Answer, View, Table, or Worksheet you want to export.
 
-2. Click the three-dot icon, and select **Export as TML**.
+2. Click the three-dot icon, and select **Export TML**.
 
     ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
 
@@ -68,7 +68,7 @@ To export multiple objects at a time, follow these steps:
 
 2. Hover over the objects you want to export, and click the empty checkboxes that appear.
 
-3. Select the **Export** button.
+3. Select the **Export TML** button.
 
     ![Export multiple objects]({{ site.baseurl }}/images/scriptability-cloud-export-multiple.png "Export multiple objects")
 
@@ -82,13 +82,11 @@ To export multiple objects at a time, follow these steps:
 
 4. Open the downloaded `TML` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
 
-    ![Zip file]({{ site.baseurl }}/images/scriptability-cloud-zip-file.png "Zip file")
-
-{: id="edit-tsl"}
+{: id="edit-tml"}
 ## Edit the TML file
-You can edit the `TML` file in one of two ways. You can [export](#export-object) the object(s) and edit the file(s) in any text editor, before you import it. Or, you can use the [in-app `TML` editor](#tsl-editor) to edit, validate, and publish the object(s). Refer to [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) for information on syntax in the TML files.
+You can edit the `TML` file in one of two ways. You can [export](#export-object) the object(s) and edit the file(s) in any text editor, before you import it. Or, you can use the [in-app `TML` editor](#tml-editor) to edit, validate, and publish the object(s). Refer to [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html) for information on syntax in the TML files.
 
-{: id="tsl-editor"}
+{: id="tml-editor"}
 ## Edit, validate, and publish objects using the TML editor
 You can access the TML editor from the object list page, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page.
 
@@ -100,26 +98,26 @@ To use the TML editor, follow these steps:
 
 3. From the object list page, select the **Edit TML** button. From the object itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TML**.
 
-    ![Edit TML - object list page]({{ site.baseurl }}/images/scriptability-edit-tsl-object-page.png "Edit TML - object list page")
+    ![Edit TML - object list page]({{ site.baseurl }}/images/scriptability-edit-tml-object-page.png "Edit TML - object list page")
 
-    ![Edit TML from object]({{ site.baseurl }}/images/scriptability-edit-tsl-object.png "Edit TML from object")
+    ![Edit TML from object]({{ site.baseurl }}/images/scriptability-edit-tml-object.png "Edit TML from object")
 
-4. The TML editor opens. Edit the TML file(s), using the syntax specified in [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html).
+4. The TML editor opens. Edit the TML file(s), using the syntax specified in [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html).
 
     The TML editor has the following functions under the top menu:
     - **File**: Validate, Publish, and Exit editor. You can also validate and publish using the **validate** and **publish** buttons at the top right of the editor. You can also exit the editor using the X button at the top right corner. The system warns you if you try to exit with unsaved changes.
     - **Edit**: Undo, Redo, Cut, Copy, Select all, Fold, Fold all, Unfold, Unfold all, and Go to line. The **Fold** option compresses the lines in the file so you only see the first line of a section. **Go to line** opens a dialog box, where you can type in the number of the line you would like to go to. This is useful for long TML files.
     - **Find**: Find and Find and replace. This functionality allows you to easily find words or parameters in the TML file. You can also click on a word or parameter in the TML editor, and the editor highlights all instances of that word.
     - **View**: Show/Hide errors, Show line numbers, and Hide line numbers. **Show/Hide errors** toggles the **Errors** sidebar on and off. The **Errors** sidebar does not appear until after you Validate a file, if there are errors in it.
-    - **Help**: Documentation. This links to the [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html) documentation.  
+    - **Help**: Documentation. This links to the [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html) documentation.  
 
 5. When you finish editing the TML file(s), select **Validate** in the top right corner. You must validate each file individually. A blue dot appears next to any file that contains changes.
 
-    ![Validate the file]({{ site.baseurl }}/images/scriptability-tsl-editor-validate.png "Validate the file")
+    ![Validate the file]({{ site.baseurl }}/images/scriptability-tml-editor-validate.png "Validate the file")
 
 6. If you constructed the file(s) correctly, a green check mark appears next to the name of the file. If you did not construct the file correctly, a red bar appears near the top of the screen, telling you that ThoughtSpot found errors in one or more files. Click **Show errors** to see the errors listed in the **Errors** sidebar.
 
-    ![Review errors]({{ site.baseurl }}/images/scriptability-tsl-editor-errors.png "Review errors")
+    ![Review errors]({{ site.baseurl }}/images/scriptability-tml-editor-errors.png "Review errors")
 
 7. After validating,  select **Publish** in the top right corner, next to **Validate**. You must publish each file individually.
 
@@ -131,7 +129,7 @@ To use the TML editor, follow these steps:
 ## Update an object
 You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
 
-You can also update an object using the [TML editor](#tsl-editor).
+You can also update an object using the [TML editor](#tml-editor).
 
 To update an existing object by downloading the TML file and modifying it, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
 
@@ -151,7 +149,7 @@ To update an existing object by downloading the TML file and modifying it, follo
 
    ![Start Worksheet update from file]({{ site.baseurl }}/images/scriptability-worksheet-update.png "Start Worksheet update from file")
 
-5. In the **Import** interface, click **Select .tsl or .zip files to upload**.
+5. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
    ![Find the Worksheet TML file]({{ site.baseurl }}/images/scriptability-worksheet-update-browse.png "Find the Worksheet TML file")
 
@@ -189,9 +187,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
     ![Import a Pinboard or Answer]({{ site.baseurl }}/images/scriptability-cloud-import.png "Import a Pinboard or Answer")
 
-6. In the **Import** interface, click **Select .tsl or .zip files to upload**.
-
-    ![Select a file]({{ site.baseurl }}/images/scriptability-cloud-import-page.png "Select a file")
+6. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
 6. In your file system, find and select the `TML` file. The file uploads automatically.
 
@@ -224,4 +220,4 @@ There are certain limitations to the changes you can apply by editing a Workshee
 
 ## Related information
 
-- [ThoughtSpot Scripting Language]({{ site.baseurl }}/admin/ts-cloud/tsl.html)   
+- [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html)   
