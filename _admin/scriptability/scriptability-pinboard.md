@@ -96,4 +96,4 @@ To migrate a Pinboard from one cluster to another, follow these steps:
    ![Upload successful]({{ site.baseurl }}/images/scriptability-pinboard-successful.png "Upload successful")
 
 ## Related Information
-- [Pinboard TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html)
+- [Pinboard TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-pinboard.html)
