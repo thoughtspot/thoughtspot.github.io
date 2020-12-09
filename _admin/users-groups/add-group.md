@@ -1,6 +1,6 @@
 ---
 title: ["Create, edit, or delete a group"]
-last_updated: 10/07/2019
+last_updated: 12/08/2020
 summary: "ThoughtSpot has intuitive and powerful user group management for assigning privileges, user selection, multi-tier subgroups, default Pinboard assignment, and emailing."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,15 +15,11 @@ To create a group and add privileges for the group, follow these steps:
 1. Log in to ThoughtSpot from a browser.
 2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
 3.  Select **Groups** from the side navigation bar that appears.
 
     ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
 
 5. Click the **+ Add Group** button on the upper left-hand side of the list of groups.
-
-     ![Add a new Group]({{ site.baseurl }}/images/admin-portal-groups-add-group.png "Add a new Group")
 
 6. In the **Add a new group** modal, enter the details for the new group:
 
@@ -112,8 +108,6 @@ To edit an existing group, follow these steps:
 
 2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
 3. Select **Groups** from the side navigation bar that appears.
 
     ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
@@ -121,8 +115,6 @@ To edit an existing group, follow these steps:
 5. Find the group you want to edit in the list, and click its name.
 
    If you don't immediately see the name of the group, try searching for it.
-
-   ![Search Groups]({{ site.baseurl }}/images/admin-portal-groups-search.png "Search Groups")
 
 6. You can change the _[Group name](#group-name)_, _[Display name](#display-name)_, _[Sharing visibility](#sharing-visibility)_, _[Description](#description)_, and the selected _[Privileges](#privileges)_.
 
@@ -220,8 +212,6 @@ To delete existing groups, follow these steps:
 
 2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
 3. Select **Groups** from the side navigation bar that appears.
 
     ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
@@ -229,8 +219,6 @@ To delete existing groups, follow these steps:
 5. Select the groups you plan to delete by clicking the box next to the group name.
 
    If you don't immediately see the name of the group, try searching for it.
-
-   ![Search Groups]({{ site.baseurl }}/images/admin-portal-groups-search.png "Search Groups")
 
 6. Click **Delete**.
 
@@ -250,8 +238,6 @@ To add multiple users to a group, you must be on the **Users** interface. Follow
 
 2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
 3. Select **Groups** from the side navigation bar that appears.
 
     ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
@@ -259,8 +245,6 @@ To add multiple users to a group, you must be on the **Users** interface. Follow
 5. Select the names of users you plan to add to groups by clicking the box next to the user name.
 
    If you don't immediately see the user name, try searching for it.
-
-   ![Search Users]({{ site.baseurl }}/images/admin-portal-users-search.png "Search Users")
 
 5. Click the **Add Users to Groups** button on the top of the list of users.
 
