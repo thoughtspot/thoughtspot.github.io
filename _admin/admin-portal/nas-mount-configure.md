@@ -27,3 +27,10 @@ files to accumulate on ThoughtSpot. If disk space becomes limited, the system
 will not function normally.
 
 {% include content/admin-portal/nas-mount-configure.md %}
+
+## Additional resources
+As you develop your expertise in NAS mounts, we recommend the following ThoughtSpot U course:
+* [NAS Mount](https://training.thoughtspot.com/nas-mount){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

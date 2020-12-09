@@ -1,6 +1,9 @@
 ---
 title: [Configure NAS file system]
-last_updated: 3/4/2020
+last_updated: 11/16/2020
+redirect_from:
+- /6.3.0/admin/setup/NAS-mount.html
+- /6.3.0.CU1/admin/setup/NAS-mount.html
 sidebar: mydoc_sidebar
 summary: "Some operations, like backup, restore, and data loading, require either
 reading or writing very large files. You can mount a network attached storage (NAS) file
@@ -48,7 +51,7 @@ To mount a NAS file system using the tscli, follow these steps:
 
         {% include note.html content="Other command-line options are available to forward to the command (default: `noexec`)." %}
 
-    -   Example for a CIFS (Common Internet File System) directory:
+    -   Example for a CIFS (Common Internet File System) directory. Use `1001` for the `uid` and `gid`, as in the example:
 
         ```
         tscli nas mount-cifs --server storageservername.file.yourdomain.net
@@ -65,3 +68,10 @@ To mount a NAS file system using the tscli, follow these steps:
     ```
     tscli nas unmount --dir <directory>
     ```
+
+## Additional resources
+As you develop your expertise in NAS mounts, we recommend the following ThoughtSpot U course:
+* [NAS Mount](https://training.thoughtspot.com/nas-mount){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

@@ -1,5 +1,5 @@
 ---
-title: [System Information and Usage]
+title: [System Information and Usage Pinboard]
 summary: The System Information and Usage Pinboard provides useful information about your cluster.
 last_updated: 10/22/2020
 toc: true

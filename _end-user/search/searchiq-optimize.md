@@ -2,6 +2,9 @@
 title: ["Optimize SearchIQ"]
 last_updated: 09/23/2019
 summary: "For SearchIQ to work well, you must enable, optimize, and enable it on the data source."
+redirect_from:
+- /6.3.0/end-user/search/searchiq-optimize.html
+- /6.3.0.CU1/end-user/search/searchiq-optimize.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

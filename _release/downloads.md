@@ -3,6 +3,9 @@ title: ["Downloads for ThoughtSpot"]
 toc: false
 last_updated: 07/12/2019
 sidebar: mydoc_sidebar
+redirect_from:
+- /6.3.0/release/downloads.html
+- /6.3.0.CU1/release/downloads.html
 permalink: /:collection/:path.html
 ---
 

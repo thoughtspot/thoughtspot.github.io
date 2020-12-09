@@ -48,7 +48,6 @@ Use network attached storage to support backup/restore and data loading.
 Create and manage snapshots, which you can use to restore the cluster to a specific point in time.
 
 **Monitor system**
-View and explore your users' activity on the system overview Pinboard.
 * [View System Cluster Pinboard]({{ site.baseurl }}/admin/admin-portal/system-cluster-pinboard.html)<br>
 View and explore cluster activity on the system cluster Pinboard.
 * [View System Alerts Pinboard]({{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html)<br>

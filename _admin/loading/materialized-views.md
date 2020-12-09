@@ -2,6 +2,9 @@
 title: [About materialized views]
 last_updated: 10/31/2018
 summary: "You can materialize a view to improve its performance."
+redirect_from:
+- /6.3.0/admin/loading/materialized-views.html
+- /6.3.0.CU1/admin/loading/materialized-views.html
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -37,7 +40,7 @@ A materialized view can be in one of the following states:
 |Unknown|View status could not be determined.|Click **Update status**.|
 |Error|An error occurred.|Refresh the view by clicking **Refresh Data***. Optionally run a report.|
 
-\* You can refresh data only if you have the [**Can administrate ThoughtSpot**]({{ site.baseurl }}/admin/users-groups/about-users-groups.html)  privilege.
+\* You can refresh data only if you have the [**Can administer ThoughtSpot**]({{ site.baseurl }}/admin/users-groups/about-users-groups.html)  privilege.
 
 ## Freshness of data
 

@@ -2,6 +2,9 @@
 title: [SpotApps]
 last_updated: 9/23/2020
 summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
+redirect_from:
+- /6.3.0/admin/scriptability/app-templates.html
+- /6.3.0.CU1/admin/scriptability/app-templates.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -44,7 +47,7 @@ You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 
     ![Import SpotApps]({{ site.baseurl }}/images/scriptability-spotapps-import.png "Import SpotApps")
 
-2. In the **Import** interface, click **Select .tsl or .zip files to upload**.
+2. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
 6. In your file system, find and select the .zip file for the SpotApp.
 

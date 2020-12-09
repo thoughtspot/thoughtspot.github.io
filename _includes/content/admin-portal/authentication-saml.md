@@ -26,3 +26,10 @@ If you choose 'no', then SAML users will not be added in ThoughtSpot upon first 
 After you fill in all parameters, click **OK**.
 
 {% include note.html content="ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. This group has no privileges. You must manually assign users to ThoughtSpot groups to give them privileges, such as <strong>can upload user data</strong>, or <strong>can manage data</strong>." %}
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Single Sign On (SSO)](https://training.thoughtspot.com/authentication-security/621450){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

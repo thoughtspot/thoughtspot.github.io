@@ -2,6 +2,9 @@
 title: [Configure SSL]
 last_updated: 8/27/2020
 summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
+redirect_from:
+- /6.3.0/admin/setup/SSL-config.html
+- /6.3.0.CU1/admin/setup/SSL-config.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -180,3 +183,10 @@ You must ensure that your load balancer supports these ciphers. If your load bal
 ## Test the SSL certificate
 
 To test if the certificate is installed correctly, see [Sign in to the ThoughtSpot application]({{ site.baseurl }}/admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Nginx SSL](https://training.thoughtspot.com/authentication-security/610523){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
