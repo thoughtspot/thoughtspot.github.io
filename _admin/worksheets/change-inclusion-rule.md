@@ -1,7 +1,7 @@
 ---
 title: ["Change the join rule or RLS setting for a worksheet"]
 
-last_updated: tbd
+last_updated: 12/9/2020
 
 summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different join or RLS rule."
 toc: false
@@ -44,6 +44,4 @@ To configure these values for a worksheet:
 
 7. Click **CLOSE**.
 
-8. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
-
-    ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
+8. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
