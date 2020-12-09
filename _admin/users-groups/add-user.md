@@ -1,6 +1,6 @@
 ---
 title: ["Create, edit, or delete a user"]
-last_updated: 7/24/2020
+last_updated: 12/9/2020
 summary: "For each unique person who accesses ThoughtSpot, you must create a user account. When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -20,16 +20,11 @@ To create a new user and assign that user to groups, follow these steps:
 
 1. Log in to ThoughtSpot from a browser.
 2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
-
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
 3. Select **Users** from the side navigation bar that appears.
 
     ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5. Click the **+ Add User** button on the upper left-hand side of the list of users.
-
-    ![Add a new User]({{ site.baseurl }}/images/admin-portal-users-add-user.png "Add a new User")
 
 5. In the **Add a new user** interface, enter the details for the new user:
 
@@ -118,17 +113,11 @@ To edit an existing user, follow these steps:
 
 2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
 3. Select **Users** from the side navigation bar that appears.
-
-    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5.  Click the username in the list to open the **Edit User** interface.
 
     If you don't immediately see the username you plan to edit, try searching for it.
-
-    ![Search Users]({{ site.baseurl }}/images/admin-portal-users-search.png "Search Users")
 
 6.  In the **Edit User** interface, edit the basic user information.
 
@@ -198,17 +187,11 @@ To delete users, follow these steps:
 
 2. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
 3. Select **Users** from the side navigation bar that appears.
-
-    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5. Select the users you plan to delete by clicking the box that appears when you hover over the username.
 
    If you don't immediately see the user you plan to delete, try searching for it.
-
-   ![Search Users]({{ site.baseurl }}/images/admin-portal-users-search.png "Search Users")
 
 6. Click **Delete**.
 
