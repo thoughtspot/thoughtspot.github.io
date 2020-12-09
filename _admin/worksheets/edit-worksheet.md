@@ -1,7 +1,7 @@
 ---
 title: [Edit or rename Worksheet]
 
-last_updated: 7/2/2020
+last_updated: 12/9/2020
 summary: "Anyone with the proper permissions can edit a Worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -22,9 +22,7 @@ To edit a Worksheet:
 
 4. Make your changes to the worksheet.
 
-5.  Click the the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
-
-    ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")
+5.  Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
 ## Rename a worksheet or table
 
