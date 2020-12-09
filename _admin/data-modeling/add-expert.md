@@ -1,7 +1,7 @@
 ---
 title: ["Add or manage experts"]
 
-last_updated: 3/20/2020
+last_updated: 12/9/2020
 summary: "You can designate experts for each data source, so users won't get stuck if they need help."
 sidebar: mydoc_sidebar
 toc: true
@@ -30,8 +30,6 @@ To add an expert to a data source:
     ![Manage experts]({{ site.baseurl }}/images/ask-an-expert-manage.png "Manage experts")
 
 4. Make your selections and click **Done**.
-
-    ![Add experts]({{ site.baseurl }}/images/ask-an-expert-add-expert.png "Add experts")
 
 ## Related information  
 
