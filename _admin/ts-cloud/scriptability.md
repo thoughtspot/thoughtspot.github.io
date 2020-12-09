@@ -54,7 +54,7 @@ To export one object:
 
 1. Navigate to the Pinboard, Answer, View, Table, or Worksheet you want to export.
 
-2. Click the three-dot icon, and select **Export as TML**.
+2. Click the three-dot icon, and select **Export TML**.
 
     ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
 
@@ -108,7 +108,7 @@ To use the TML editor, follow these steps:
     - **File**: Validate, Publish, and Exit editor. You can also validate and publish using the **validate** and **publish** buttons at the top right of the editor. You can also exit the editor using the X button at the top right corner. The system warns you if you try to exit with unsaved changes.
     - **Edit**: Undo, Redo, Cut, Copy, Select all, Fold, Fold all, Unfold, Unfold all, and Go to line. The **Fold** option compresses the lines in the file so you only see the first line of a section. **Go to line** opens a dialog box, where you can type in the number of the line you would like to go to. This is useful for long TML files.
     - **Find**: Find and Find and replace. This functionality allows you to easily find words or parameters in the TML file. You can also click on a word or parameter in the TML editor, and the editor highlights all instances of that word.
-    - **View**: Show/Hide errors, Show line numbers, and Hide line numbers. **Show/Hide errors** toggles the **Errors** sidebar on and off. The **Errors** sidebar does not appear until after you Validate a file, if there are errors in it.
+    - **View**: Show/Hide errors, Show line numbers, and Hide line numbers. **Show/Hide errors** toggles the **Errors sidebar** on and off. The **Errors sidebar** does not appear until after you validate a file. If you have no errors after validation, the **Errors sidebar** does not appear.
     - **Help**: Documentation. This links to the [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html) documentation.  
 
 5. When you finish editing the TML file(s), select **Validate** in the top right corner. You must validate each file individually. A blue dot appears next to any file that contains changes.
