@@ -52,7 +52,7 @@ You can download a Pinboard as a PDF, or as a [scriptable file]({{ site.baseurl 
 
 To download a Pinboard, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Download as PDF**. You can download the whole Pinboard, or just certain visualizations.
 
-To export a scriptable file, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Export as TSL**. You can export Pinboard and the underlying data source, or Worksheet, or just the Pinboard.
+To export a scriptable file, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} at the top right corner of the Pinboard, and select **Export TML**. You can export Pinboard and the underlying data source, or Worksheet, or just the Pinboard.
 
 ### Sharing Pinboards and Answers
 You can share Pinboards and Answers with other ThoughtSpot users and groups, and send them a notification email. See the following video for details.

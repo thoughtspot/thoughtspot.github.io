@@ -1,21 +1,21 @@
 ---
-title: [ThoughtSpot Scripting Language]
+title: [ThoughtSpot Modeling Language]
 last_updated: 7/16/2020
-summary: "Use ThoughtSpot Scripting Language to modify a Worksheet, View, Table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
+summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, Table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [Tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TSL` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [Tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 {: id="syntax-worksheets"}
-##  Syntax of the Worksheet TSL file
+##  Syntax of the Worksheet TML file
 
-The `TSL` file for Scriptable Worksheets has a specific syntax.
+The `TML` file for Scriptable Worksheets has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Worksheet.
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Worksheet.
 
 <pre>
 <a href="#worksheet">worksheet</a>:
@@ -123,13 +123,13 @@ You may not see each of these parameters in your own TSL files, depending on whe
 </pre>
 
 {: id="syntax-views"}
-##  Syntax of the View TSL file
+##  Syntax of the View TML file
 
-The `TSL` file for Scriptable Views has a specific syntax.
+The `TML` file for Scriptable Views has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have a description for your View, the `description` parameter does not appear. You can add that variable to the TSL file to specify a description for your View.
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have a description for your View, the `description` parameter does not appear. You can add that variable to the TML file to specify a description for your View.
 
 <pre>
 <a href="#view">view</a>:
@@ -225,13 +225,13 @@ You may not see each of these parameters in your own TSL files, depending on whe
 </pre>    
 
 {: id="syntax-tables"}
-##  Syntax of the Table TSL file
+##  Syntax of the Table TML file
 
-The `TSL` file for Scriptable Tables has a specific syntax.
+The `TML` file for Scriptable Tables has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your Table, the `index_priority` parameter does not appear. You can add that variable to the TSL file to specify an index priority for the Table.
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your Table, the `index_priority` parameter does not appear. You can add that variable to the TML file to specify an index priority for the Table.
 
 <pre>
 <a href="#table">table</a>:
@@ -287,13 +287,13 @@ You may not see each of these parameters in your own TSL files, depending on whe
 </pre>
 
 {: id="syntax-answers"}
-##  Syntax of the Answer TSL file
+##  Syntax of the Answer TML file
 
-The `TSL` file for Scriptable Answers has a specific syntax.
+The `TML` file for Scriptable Answers has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TSL file to specify conditional formatting.
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TML file to specify conditional formatting.
 
 <pre>
 <a href="#answer">answer</a>:
@@ -397,13 +397,13 @@ You may not see each of these parameters in your own TSL files, depending on whe
 </pre>
 
 {: id="syntax-pinboards"}
-##  Syntax of the Pinboard TSL file
+##  Syntax of the Pinboard TML file
 
-The `TSL` file for Scriptable Pinboards has a specific syntax.
+The `TML` file for Scriptable Pinboards has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TSL files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Pinboard, the `filters` parameter does not appear. You can add that variable to the TSL file to specify filters for your Pinboard.
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Pinboard, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Pinboard.
 
 <pre>
 <a href="#pinboard">pinboard</a>:
@@ -435,7 +435,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 </pre>
 
 {: id="parameters"}
-## Parameters of TSL files
+## Parameters of TML files
 <dl>
 
   <dlentry id="aggregation">
@@ -976,12 +976,12 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
 </dl>
 
-## Limitations of working with TSL files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TSL.
+## Limitations of working with TML files
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TML.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
-* It is not possible to reverse the join direction in the TSL script.
+* It is not possible to reverse the join direction in the TML script.
 
 * You cannot create new tables using Scriptability. You can only update existing tables.
 
