@@ -1,6 +1,6 @@
 ---
 title: [Work with snapshots]
-last_updated: 3/10/2020
+last_updated: 12/9/2020
 toc: true
 summary: "A snapshot is a point-in-time image of your running cluster. You can use a snapshot to restore the cluster to a specific point in time. In this section, we describe how to work with the default snapshot configuration that is enabled on every cluster, and how to make manual snapshots."
 sidebar: mydoc_sidebar
