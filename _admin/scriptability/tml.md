@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot Modeling Language]
 last_updated: 10/20/2020
-summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
+summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, SpotIQ result, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/scriptability/tml.html
 - /admin/ts-cloud/tml.html
@@ -19,7 +19,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [Answers](#syntax-answers), [SpotIQ results](#syntax-pinboards), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, SpotIQ results, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html).
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TML file
@@ -410,9 +410,9 @@ You may not see each of these parameters in your own TML files, depending on whe
 </pre>
 
 {: id="syntax-pinboards"}
-##  Syntax of the Pinboard TML file
+##  Syntax of the Pinboard and SpotIQ result TML file
 
-The `TML` file for Scriptable Pinboards has a specific syntax.
+The `TML` file for Scriptable Pinboards has a specific syntax. Note that SpotIQ results are in the form of Pinboards. Use the Pinboard TML syntax to edit a SpotIQ TML file.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
@@ -651,7 +651,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="guid">
   <dt>guid</dt>
-  <dd>The GUID for the Answer, Pinboard, Table, Worksheet, or View. You can find this string of letters and numbers at the end of the URL for an object.</dd>
+  <dd>The GUID for the Answer, Pinboard, SpotIQ result, Table, Worksheet, or View. You can find this string of letters and numbers at the end of the URL for an object.</dd>
   </dlentry>
 
   <dlentry id="headline_aggregation">
@@ -813,7 +813,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="pinboard">
   <dt>pinboard</dt>
-  <dd>Top-level container for all object definitions within the Pinboard.</dd>
+  <dd>Top-level container for all object definitions within the Pinboard or SpotIQ result.</dd>
   </dlentry>
 
   <dlentry id="properties">
@@ -990,7 +990,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 </dl>
 
 ## Limitations of working with TML files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, SpotIQ result, or Pinboard through TML.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
