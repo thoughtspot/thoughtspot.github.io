@@ -1,13 +1,13 @@
 ---
 title: [Scriptability overview]
-last_updated: 10/20/2020
-summary: Use ThoughtSpot's Scriptability to migrate or edit  Worksheets, Pinboards, Answers, Views, and tables in a human-readable format.
+last_updated: 12/10/2020
+summary: Use ThoughtSpot's Scriptability to migrate or edit  Worksheets, Pinboards, SpotIQ results, Answers, Views, and tables in a human-readable format.
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Pinboards, Answers, Views, and tables.
+ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Pinboards, Answers, SpotIQ results, Views, and tables.
 
 You can model your data and build out sophisticated dashboards in your test environment, before deploying to all users.
 
@@ -23,4 +23,4 @@ The [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html) f
 
 You can download these objects in the form of a scriptable file in the [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/scriptability/tml.html), or TML.
 
-Use Scriptability to export Worksheets, Views, tables, Pinboards, and Answers in a human-readable format. Refer to [Migrate or restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html).
+Use Scriptability to export Worksheets, Views, tables, Pinboards, SpotIQ results, and Answers in a human-readable format. Refer to [Migrate or restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html).
