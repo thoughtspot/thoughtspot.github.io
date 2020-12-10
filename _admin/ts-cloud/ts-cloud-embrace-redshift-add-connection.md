@@ -22,7 +22,7 @@ To connect to Amazon Redshift, follow these steps:
 
     ![Enter connection details]({{ site.baseurl }}/images/redshift-connectiondetails.png "Enter connection details")
 
-     Refer to the [Redshift connection reference](#connection-reference) for more information on each of the specific attributes you must enter for your connection.
+     Refer to the [Redshift connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to Redshift, by doing the following:
 - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.

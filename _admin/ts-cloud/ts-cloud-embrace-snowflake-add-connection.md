@@ -21,7 +21,7 @@ To connect to Snowflake:
 
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails.png "Enter connection details")
 
-    Refer to the [Snowflake connection reference](#connection-reference) for more information on each of the specific attributes you must enter for your connection.
+    Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to Snowflake, by doing the following:
 
