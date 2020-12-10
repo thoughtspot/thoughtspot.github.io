@@ -86,7 +86,7 @@ You may already have a service account for GBQ with the proper permissions in pl
 15. When you are ready to add a connection to BigQuery in ThoughtSpot, open the private key file in a text editor, and copy the entire contents of the file.
     ![]({{ site.baseurl }}/images/gbq-key-copy.png)
 16. In the connection details page of your BigQuery connection in ThoughtSpot, paste this key into the **Service account** field.  
-    For details on how to add a connection to BigQuery in ThoughtSpot, see [Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html).
+    For details on how to add a connection to BigQuery in ThoughtSpot, see [Add a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html).
 
 {: id="share-dataset"}
 ## Share dataset

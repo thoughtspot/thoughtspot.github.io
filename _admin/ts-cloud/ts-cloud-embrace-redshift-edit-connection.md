@@ -33,9 +33,9 @@ To edit a connection:
 8. Click **Update**, and then click **Confirm** to save the updated connection detail.
 
 To remove a table from a connection, delete it from the connection details page. For more information, see:
-- [Delete a table]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table.html)
-- [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html)
+- [Delete a table]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-delete-table.html)
+- [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-delete-table-dependencies.html)
 
-To change the mapping of tables and columns, see [Remap an Amazon Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-remap-connection.html)
+To change the mapping of tables and columns, see [Remap an Amazon Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-remap-connection.html)
 
-See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for details of connection parameters.
+See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html) for details of connection parameters.
