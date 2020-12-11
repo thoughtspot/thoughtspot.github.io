@@ -1,12 +1,12 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 7/16/2020
-summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, Table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
+last_updated: 12/11/2020
+summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, Answer, or join in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [Tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [joins](#syntax-joins), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, tables, joins, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TML file
@@ -225,13 +225,13 @@ You may not see each of these parameters in your own TML files, depending on whe
 </pre>    
 
 {: id="syntax-tables"}
-##  Syntax of the Table TML file
+##  Syntax of the table TML file
 
-The `TML` file for Scriptable Tables has a specific syntax.
+The `TML` file for Scriptable tables has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your Table, the `index_priority` parameter does not appear. You can add that variable to the TML file to specify an index priority for the Table.
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your table, the `index_priority` parameter does not appear. You can add that variable to the TML file to specify an index priority for the table.
 
 <pre>
 <a href="#table">table</a>:
@@ -284,6 +284,31 @@ You may not see each of these parameters in your own TML files, depending on whe
   - <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
 <a href="#guid">guid</a>: &lt;<em>table_guid</em>&gt;
+</pre>
+
+{: id="syntax-joins"}
+##  Syntax of the join TML file
+
+The `TML` file for scriptable joins has a specific syntax.
+
+See the [Parameters](#parameters) section for details about the keywords used in this example.
+
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, the source table may not have both an `id` and a `name`. You can add the missing variable to the TML file to specify an id or name for the join's source table.
+
+<pre>
+<a href="#joins">joins</a>:
+- <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+  <a href="#source_table">source_table</a>:
+    <a href="#id">id</a>: &lt;<em>source_table_id</em>&gt;
+    <a href="#name">name</a>: &lt;<em>source_table_name</em>&gt;  
+  <a href="#destination_table">destination_table</a>:
+    <a href="#id">id</a>: &lt;<em>destination_table_id</em>&gt;
+    <a href="#name">name</a>: &lt;<em>destination_table_name</em>&gt;  
+  <a href="#on">"on"</a>: &lt;<em>on_string</em>&gt;
+  <a href="#type">type</a>: [ LEFT_OUTER | RIGHT_OUTER | INNER | OUTER ]
+  <a href="#is_one_to_one">is_one_to_one</a>: [ true | false]
+- <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
+- <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
 </pre>
 
 {: id="syntax-answers"}
@@ -440,7 +465,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="aggregation">
     <dt>aggregation</dt>
-    <dd>The default aggregation of the Worksheet, View, or Table column, or the aggregation of the output for a formula.<br>
+    <dd>The default aggregation of the Worksheet, View, or table column, or the aggregation of the output for a formula.<br>
       Aggregation options depend on the data type.<br>
       Possible values: <code>SUM</code>, <code>COUNT</code>, <code>AVERAGE</code>, <code>MAX</code>, <code>MIN</code>, <code>COUNT_DISTINCT</code>, <code>NONE</code>, <code>STD_DEVIATION</code>, and <code>VARIANCE</code><br>
       Default: <code>SUM</code><br>
@@ -580,8 +605,13 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="destination">
     <dt>destination</dt>
-    <dd>Name of destination table or view of the join</dd>
+    <dd>The name of the destination table or View for a join</dd>
   </dlentry>
+
+  <dlentry id="destination_table">
+  <dt>destination_table</dt>
+  <dd>The destination table or View for a join</dd>
+</dlentry>
 
   <dlentry id="display_mode">
     <dt>display_mode</dt>
@@ -638,7 +668,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="guid">
   <dt>guid</dt>
-  <dd>The GUID for the Answer, Pinboard, Table, Worksheet, or View. You can find this string of letters and numbers at the end of the URL for an object.</dd>
+  <dd>The GUID for the Answer, Pinboard, table, Worksheet, or View. You can find this string of letters and numbers at the end of the URL for an object.</dd>
   </dlentry>
 
   <dlentry id="headline_aggregation">
@@ -747,7 +777,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="joins">
     <dt>joins</dt>
-    <dd>List of joins between tables and views, used by the Worksheet or View.<br>
+    <dd>Top-level container for all object definitions within the joins.tml file. For a Worksheet or View, this parameter contains a list of joins between the tables and Views.<br>
     Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code>
     </dd>
   </dlentry>
@@ -774,7 +804,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="name">
     <dt>name</dt>
-    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>join</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code> and so on.<br>
+    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>joins</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code> and so on.<br>
     For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
@@ -805,9 +835,9 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="properties">
     <dt>properties</dt>
-    <dd>The list of properties of a Worksheet, Table, or View column, a Worksheet or View itself, or the properties of the output for a formula within an Answer, Worksheet, or View.<br>
+    <dd>The list of properties of a Worksheet, table, or View column, a Worksheet or View itself, or the properties of the output for a formula within an Answer, Worksheet, or View.<br>
 
-    For Worksheets, Views, and Tables, each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.<br>
+    For Worksheets, Views, and tables, each column can have the following properties, depending on its definition: <code>column_type</code>, <code>aggregation</code>, <code>index_type</code>, <code>is_hidden</code>, <code>index_priority</code>, <code>synonyms</code>, <code>is_attribution_dimension</code>, <code>is_additive</code>, <code>calendar</code>, <code>format_pattern</code>, <code>currency_type</code>, <code>geo_config</code>, <code>spotiq_preference</code>, and <code>search_iq_preferred</code>.<br>
 
     Worksheets and Views themselves can have the following properties that affect query generation: <code>is_bypass_rls</code>, and <code>join_progressive</code>.<br>
 
@@ -872,7 +902,12 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="source">
     <dt>source</dt>
-    <dd>Name of source table or view of the join</dd>
+    <dd>Name of the source table or View for a join</dd>
+  </dlentry>
+
+  <dlentry id="source_table">
+    <dt>source_table</dt>
+    <dd>The source table or View for a join</dd>
   </dlentry>
 
   <dlentry id="spotiq_preference">
@@ -889,7 +924,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="table">
     <dt>table</dt>
-    <dd>Top-level container for all object definitions within the Table.<br>
+    <dd>Top-level container for all object definitions within the table.<br>
     Specific table, used in defining higher-level objects, such as table paths.<br>
     Defined as <code>name</code> within <code>tables</code> definition. <br> For Answers, this parameter contains configuration for the Answer, if it displays in table format.
     </dd>
@@ -914,10 +949,10 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="type">
     <dt>type</dt>
-    <dd>For Worksheets and Views, this is the join type.<br>
+    <dd>For Worksheets, Views, and the joins.tml file, this is the join type.<br>
     Possible values: <code>LEFT_OUTER</code> for left outer join, <code>RIGHT_OUTER</code> for right outer join, <code>INNER</code> for inner join, <code>OUTER</code> for full outer join<br>
     Default: <code>INNER</code><br>
-    For Tables, this is the Embrace connection type.<br>
+    For tables, this is the Embrace connection type.<br>
     Possible values: <code>Snowflake</code> or <code>Amazon Redshift</code>.<br>
     For Answers, this is the chart type<br>
     Possible values: <code>COLUMN</code>, <code>BAR</code>, <code>LINE</code>, <code>PIE</code>, <code>SCATTER</code>, <code>BUBBLE</code>, <code>STACKED_COLUMN</code>, <code>AREA</code>, <code>PARETO</code>, <code>COLUMN</code>, <code>GEO_AREA</code>, <code>GEO_BUBBLE</code>, <code>GEO_HEATMAP</code>, <code>GEO_EARTH_BAR</code>, <code>GEO_EARTH_AREA</code>, <code>GEO_EARTH_GRAPH</code>, <code>GEO_EARTH_BUBBLE</code>, <code>GEO_EARTH_HEATMAP</code>, <code>WATERFALL</code>, <code>TREEMAP</code>, <code>HEATMAP</code>, <code>STACKED_AREA</code>, <code>LINE_COLUMN</code>, <code>FUNNEL</code>, <code>LINE_STACKED_COLUMN</code>, <code>PIVOT_TABLE</code>, <code>SANKEY</code>, <code>GRID_TABLE</code>, <code>SPIDER_WEB</code>, <code>WHISKER_SCATTER</code>, <code>STACKED_BAR</code>, or <code>CANDLESTICK</code>.
@@ -977,7 +1012,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 </dl>
 
 ## Limitations of working with TML files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TML.
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, join, View, or Pinboard through TML.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
@@ -990,3 +1025,5 @@ There are certain limitations to the changes you can apply by editing a Workshee
 * You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
 
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
+
+* You cannot edit the `joins.tml` file from the TML editor.
