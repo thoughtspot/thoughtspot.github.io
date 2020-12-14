@@ -1,12 +1,12 @@
 ---
 title: [Scriptability]
-last_updated: 12/11/2020
-summary: "Use Scriptability to export and import Worksheets, Views, tables, Pinboards, Answers, and joins in a human-readable format."
+last_updated: 12/14/2020
+summary: "Use Scriptability to export and import Worksheets, Views, tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, tables, Pinboards, Answers, and joins.
+ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, tables, Pinboards, and Answers.
 
 You can model your data and build out sophisticated dashboards in your test environment, before deploying to all users.
 
@@ -28,7 +28,7 @@ Depending on how you want to use Scriptability, there are several workflows you 
 
 ## Prerequisites
 
-Refer to the following tables for required permissions for importing and exporting Pinboards, Answers, Worksheets, tables, Views, and joins.
+Refer to the following tables for required permissions for importing and exporting Pinboards, Answers, Worksheets, tables, and Views.
 
 **Import**
 
@@ -46,9 +46,7 @@ Refer to the following tables for required permissions for importing and exporti
 
 {: id="export-object"}
 ## Export an object
-You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. It also contains the `joins.tml` file, which defines the joins each object uses. To create and export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#create-spotapps).
-
-{% include note.html content="You cannot export the joins file for an object by itself. Instead, you must export an object and its dependents, or multiple objects, with or without dependents. However, you can import a joins file by itself." %}
+You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To create and export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#create-spotapps).
 
 {: id="export-one"}
 ### Export one object
@@ -62,7 +60,7 @@ To export one object:
 
 {: id="export-zip-file"}
 ### Export multiple objects
-To export multiple objects at a time, follow these steps:
+To export multiple objects at a time, follow these steps. To create and export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#create-spotapps).
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the objects you want to export.
 
@@ -74,7 +72,7 @@ To export multiple objects at a time, follow these steps:
 
     ![Export multiple objects]({{ site.baseurl }}/images/scriptability-cloud-export-multiple.png "Export multiple objects")
 
-4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, tables, and Views). If you export a table, you do not see this modal, since tables do not have any dependents. When exporting multiple objects, the zip file contains the `joins.tml` file and the `Manifest` file, even if you export the objects without their dependents.
+4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, tables, and Views). If you export a table, you do not see this modal, since tables do not have any dependents. When exporting multiple objects, the zip file contains the `Manifest` file, even if you export the objects without their dependents.
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
 
@@ -82,7 +80,7 @@ To export multiple objects at a time, follow these steps:
 
     ![Click Export]({{ site.baseurl }}/images/scriptability-cloud-click-export.png "Click Export")
 
-4. Open the downloaded `TML` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. It also contains the `joins.tml` file, which defines the joins each object uses. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
+4. Open the downloaded `TML` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
 
 {: id="edit-tml"}
 ## Edit the TML file
@@ -129,13 +127,13 @@ To use the TML editor, follow these steps:
 
 {: id="update-object"}
 ## Update an object
-You can overwrite an existing Worksheet, View, table, Answer, or Pinboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. You can also overwrite an object' or objects' joins, by downloading multiple objects, or an object and its dependents, making the necessary changes to the `joins.tml` file, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
+You can overwrite an existing Worksheet, View, table, Answer, or Pinboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
 
 You can also update an object using the [TML editor](#tml-editor).
 
 To update an existing object by downloading the TML file and modifying it, follow these steps. In this case, we are updating a single Worksheet. You can update multiple objects at once by uploading them in .zip file format.
 
-1. [Export the object](#export-object) you want to update, as in steps 1 to 5 of the **Export an Object** section above. To update an object or objects' joins, export the object and its dependents, or export multiple objects as a SpotApp. You cannot individually export a `joins.tml` file.
+1. [Export the object](#export-object) you want to update, as in steps 1 to 5 of the **Export an Object** section above.
 
 2. Edit the file in a text editor.
 
@@ -157,7 +155,7 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 6. In your file system, find and select the `TML` file you edited.
 
-9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload. For example, if you only want to update an object's joins, you can unselect everything except the `joins.tml` file.
+9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload.
 
 8. The **Import** interface recognizes that an object with this GUID already exists in the system, and asks if you would like to create a new object, or update the existing one. Select **Update existing [object]**.
 
@@ -167,9 +165,9 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 {: id="migrate-object"}
 ## Migrate an object
-To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. You can also migrate an object or objects' joins. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new table using Scriptability. You can only update existing tables.  
+To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new table using Scriptability. You can only update existing tables.  
 
-1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above. To migrate an object or objects' joins, export the object and its dependents, or export multiple objects as a SpotApp. You cannot individually export a `joins.tml` file.
+1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above.
 
     The object remains on the original cluster as well, unless you delete it.
 
@@ -191,7 +189,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
 
-9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload. For example, if you only want to update an object's joins, you can unselect everything except the `joins.tml` file. Here, we only want to import **Brand Revenue** and **Average Revenue by Part**, not **Basic Answer 1**.
+9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload. Here, we only want to import **Brand Revenue** and **Average Revenue by Part**, not **Basic Answer 1**.
 
 10. Click **Import selected files**.
 
@@ -212,12 +210,11 @@ There are certain limitations to the changes you can apply by editing a Workshee
 
 * You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
 
-* You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
-
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
 
-* You cannot edit the `joins.tml` file from the TML editor.
+* You can only view and modify joins at the table level in the source table TML. You cannot view or modify table-level joins from the destination table's TML file.
 
+* You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only change the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file.
 
 ## Related information
 

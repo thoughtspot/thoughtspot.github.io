@@ -1,6 +1,6 @@
 ---
 title: [SpotApps]
-last_updated: 12/11/2020
+last_updated: 12/14/2020
 summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -35,7 +35,7 @@ To create and export your own custom SpotApps, follow these steps.
 
 2. Select **Export SpotApps**.
 
-3. In the **Export** interface, select the Pinboards, Answers, Views, Tables, and Worksheets that you would like to include in your SpotApp. For example, for a Marketing SpotApp, you might choose a *Marketing* Worksheet, a *Campaigns* Worksheet, a *Pipeline* Pinboard, and a few Answers your Chief Marketing Officer created.
+3. In the **Export** interface, select the Pinboards, Answers, Views, Tables, and Worksheets that you would like to include in your SpotApp. For example, for a Marketing SpotApp, you might choose a Marketing Worksheet, a Campaigns Worksheet, a Pipeline Pinboard, and a few Answers your Chief Marketing Officer created.
 
 4. Click **Export selected files**.
 
@@ -43,18 +43,16 @@ To create and export your own custom SpotApps, follow these steps.
 
 6. Click **Export**.
 
-7. Open the downloaded `TML` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. It also contains the `joins.tml` file, which defines the joins each object uses. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
+7. Open the downloaded `TML` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
 
 See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
 
 ### Import SpotApps
 You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 
-1. From the **SpotApps** page under the **Data** tab, click **Import**.
+1. From the **SpotApps** page under the **Data** tab, click **Import SpotApps**.
 
-    ![Import SpotApps]({{ site.baseurl }}/images/scriptability-spotapps-import.png "Import SpotApps")
-
-2. In the **Import** interface, click **Select TML or .zip files to upload**.
+2. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
 6. In your file system, find and select the .zip file for the SpotApp.
 
@@ -67,6 +65,3 @@ You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
 
     ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
-
-### Limitations
-You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom SpotApp, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.

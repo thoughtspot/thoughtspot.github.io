@@ -1,12 +1,14 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 12/11/2020
-summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, Answer, or join in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
+last_updated: 12/14/2020
+summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [joins](#syntax-joins), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, tables, joins, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+
+In this article, you learn the syntax of the TML files for each Scriptable object.
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TML file
@@ -16,6 +18,8 @@ The `TML` file for Scriptable Worksheets has a specific syntax.
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Worksheet.
+
+{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#worksheet">worksheet</a>:
@@ -29,7 +33,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   - [<a href="#fqn">fqn</a>] : &lt;<em>GUID_of_table_name</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_3</em>&gt;
-  joins:
+  <a href="#joins">joins</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
     <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
@@ -118,7 +122,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     ...  
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
-    <a href="#ijoin_progressive">join_progressive</a>: [ true | false ]
+    <a href="#join_progressive">join_progressive</a>: [ true | false ]
 <a href="#guid">guid</a>: &lt;<em>worksheet_guid</em>&gt;
 </pre>
 
@@ -130,6 +134,8 @@ The `TML` file for Scriptable Views has a specific syntax.
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have a description for your View, the `description` parameter does not appear. You can add that variable to the TML file to specify a description for your View.
+
+{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#view">view</a>:
@@ -242,6 +248,15 @@ You may not see each of these parameters in your own TML files, depending on whe
   <a href="#connection">connection</a>:
     <a href="#name">name</a>: &lt;<em>connection_name</em>&gt;
     <a href="#type">type</a>: &lt;<em>connection_type</em>&gt;
+  <a href="#joins">joins</a>:
+  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+    <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
+    <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
+    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+    <a href="#on">on</a>: &lt;<em>on_string</em>&gt;
+    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+  - <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
   <a href="#columns">columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#db_column_name">db_column_name</a>: &lt;<em>database_column_name</em>&gt;
@@ -286,31 +301,6 @@ You may not see each of these parameters in your own TML files, depending on whe
 <a href="#guid">guid</a>: &lt;<em>table_guid</em>&gt;
 </pre>
 
-{: id="syntax-joins"}
-##  Syntax of the join TML file
-
-The `TML` file for scriptable joins has a specific syntax.
-
-See the [Parameters](#parameters) section for details about the keywords used in this example.
-
-You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, the source table may not have both an `id` and a `name`. You can add the missing variable to the TML file to specify an id or name for the join's source table.
-
-<pre>
-<a href="#joins">joins</a>:
-- <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
-  <a href="#source_table">source_table</a>:
-    <a href="#id">id</a>: &lt;<em>source_table_id</em>&gt;
-    <a href="#name">name</a>: &lt;<em>source_table_name</em>&gt;  
-  <a href="#destination_table">destination_table</a>:
-    <a href="#id">id</a>: &lt;<em>destination_table_id</em>&gt;
-    <a href="#name">name</a>: &lt;<em>destination_table_name</em>&gt;  
-  <a href="#on">"on"</a>: &lt;<em>on_string</em>&gt;
-  <a href="#type">type</a>: [ LEFT_OUTER | RIGHT_OUTER | INNER | OUTER ]
-  <a href="#is_one_to_one">is_one_to_one</a>: [ true | false]
-- <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
-- <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
-</pre>
-
 {: id="syntax-answers"}
 ##  Syntax of the Answer TML file
 
@@ -319,6 +309,8 @@ The `TML` file for Scriptable Answers has a specific syntax.
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TML file to specify conditional formatting.
+
+{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#answer">answer</a>:
@@ -608,11 +600,6 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dd>The name of the destination table or View for a join</dd>
   </dlentry>
 
-  <dlentry id="destination_table">
-  <dt>destination_table</dt>
-  <dd>The destination table or View for a join</dd>
-</dlentry>
-
   <dlentry id="display_mode">
     <dt>display_mode</dt>
     <dd>Determines whether the Answer displays as a chart or a table. Specify either <code>CHART_MODE</code> or <code>TABLE_MODE</code>.</dd>
@@ -777,8 +764,9 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="joins">
     <dt>joins</dt>
-    <dd>Top-level container for all object definitions within the joins.tml file. For a Worksheet or View, this parameter contains a list of joins between the tables and Views.<br>
-    Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code>
+    <dd><p>Contains a list of joins between the tables and Views.</p>
+    <p>If you edit the joins in the Worksheet, View, or Answer TML file, you are only editing the joins for that specific Worksheet, View, or Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file.</p>
+    <p>Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
 
@@ -905,11 +893,6 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dd>Name of the source table or View for a join</dd>
   </dlentry>
 
-  <dlentry id="source_table">
-    <dt>source_table</dt>
-    <dd>The source table or View for a join</dd>
-  </dlentry>
-
   <dlentry id="spotiq_preference">
     <dt>spotiq_preference</dt>
     <dd>Specifies whether to include a column in SpotIQ analysis. Specify <code>EXCLUDE</code>, or this property defaults to include the column in SpotIQ Analysis.<br>
@@ -949,12 +932,12 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="type">
     <dt>type</dt>
-    <dd>For Worksheets, Views, and the joins.tml file, this is the join type.<br>
+    <dd>For Worksheets, Views, and in the <code>joins</code> section of an Answer TML file, this is the join type.<br>
     Possible values: <code>LEFT_OUTER</code> for left outer join, <code>RIGHT_OUTER</code> for right outer join, <code>INNER</code> for inner join, <code>OUTER</code> for full outer join<br>
     Default: <code>INNER</code><br>
     For tables, this is the Embrace connection type.<br>
     Possible values: <code>Snowflake</code> or <code>Amazon Redshift</code>.<br>
-    For Answers, this is the chart type<br>
+    Within the <code>chart</code> section of an Answer TML file, this is the chart type.<br>
     Possible values: <code>COLUMN</code>, <code>BAR</code>, <code>LINE</code>, <code>PIE</code>, <code>SCATTER</code>, <code>BUBBLE</code>, <code>STACKED_COLUMN</code>, <code>AREA</code>, <code>PARETO</code>, <code>COLUMN</code>, <code>GEO_AREA</code>, <code>GEO_BUBBLE</code>, <code>GEO_HEATMAP</code>, <code>GEO_EARTH_BAR</code>, <code>GEO_EARTH_AREA</code>, <code>GEO_EARTH_GRAPH</code>, <code>GEO_EARTH_BUBBLE</code>, <code>GEO_EARTH_HEATMAP</code>, <code>WATERFALL</code>, <code>TREEMAP</code>, <code>HEATMAP</code>, <code>STACKED_AREA</code>, <code>LINE_COLUMN</code>, <code>FUNNEL</code>, <code>LINE_STACKED_COLUMN</code>, <code>PIVOT_TABLE</code>, <code>SANKEY</code>, <code>GRID_TABLE</code>, <code>SPIDER_WEB</code>, <code>WHISKER_SCATTER</code>, <code>STACKED_BAR</code>, or <code>CANDLESTICK</code>.
     </dd>
   </dlentry>
@@ -1012,7 +995,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 </dl>
 
 ## Limitations of working with TML files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, join, View, or Pinboard through TML.
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
@@ -1022,8 +1005,8 @@ There are certain limitations to the changes you can apply by editing a Workshee
 
 * You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
 
-* You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
-
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
 
-* You cannot edit the `joins.tml` file from the TML editor.
+* You can only view and modify joins at the table level in the source table TML. You cannot view or modify table-level joins from the destination table's TML file.
+
+* You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only change the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file.
