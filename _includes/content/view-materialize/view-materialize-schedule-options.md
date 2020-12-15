@@ -1,7 +1,5 @@
 1. To schedule a refresh for the materialized view, next to **Repeats**, select the **Time Interval**:  *Daily*, *Weekly*, or *Monthly*,.
 
-   ![Select time interval for refreshing the data in the materialized view]({{ site.baseurl }}/images/view-materialize-4.png)
-
 2. Supply the schedule details:
 
    <dl>
