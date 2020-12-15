@@ -38,7 +38,7 @@
         <li>Specify the minutes.</li>
         <li>Click <strong>Schedule</strong>.</li>
         </ul>
-        <img src="../../images/view-materialize-6.png" alt="Specify the weekly update schedule for refreshing the materialized view" />
+        <img src="../../images/view-materialize-7.png" alt="Specify the weekly update schedule for refreshing the materialized view" />
         </dd>
       </dlentry>
     </dl>
