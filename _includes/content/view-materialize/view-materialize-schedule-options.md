@@ -1,4 +1,4 @@
-1. To schedule a refresh for the materialized view, next to **Repeats**, select the **Time Interval**:  *Daily*, *Weekly*, or *Monthly*,.
+1. To schedule a refresh for the materialized view, next to **Repeats**, select the **Time Interval**:  *Daily*, *Weekly*, or *Monthly*.
 
 2. Supply the schedule details:
 
