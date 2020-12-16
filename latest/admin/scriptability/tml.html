@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a differe..."> -->
+<!-- <meta name="description" content="Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, SpotIQ result, or Answer in a flat-file format. Then you can migrate the obje..."> -->
 <meta name="keywords" content=",  ">
 <title>ThoughtSpot Modeling Language | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
@@ -52,18 +52,18 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“ThoughtSpot Modeling Language”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="To work with Scriptable Worksheets, Views, tables, Answers, and Pinboards in ThoughtSpot, you can download these objects to a flat file in TML format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see Scriptability." />
-<meta property="og:description" content="To work with Scriptable Worksheets, Views, tables, Answers, and Pinboards in ThoughtSpot, you can download these objects to a flat file in TML format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see Scriptability." />
+<meta name="description" content="To work with Scriptable Worksheets, Views, tables, Answers, SpotIQ results, and Pinboards in ThoughtSpot, you can download these objects to a flat file in TML format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, SpotIQ results, and Pinboards, see Scriptability." />
+<meta property="og:description" content="To work with Scriptable Worksheets, Views, tables, Answers, SpotIQ results, and Pinboards in ThoughtSpot, you can download these objects to a flat file in TML format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, SpotIQ results, and Pinboards, see Scriptability." />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/admin/scriptability/tml.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/scriptability/tml.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-09T17:35:24-08:00" />
+<meta property="article:published_time" content="2020-12-16T12:56:47-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“ThoughtSpot Modeling Language”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"To work with Scriptable Worksheets, Views, tables, Answers, and Pinboards in ThoughtSpot, you can download these objects to a flat file in TML format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see Scriptability.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/scriptability/tml.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/admin/scriptability/tml.html","headline":"[“ThoughtSpot Modeling Language”]","dateModified":"2020-12-09T17:35:24-08:00","datePublished":"2020-12-09T17:35:24-08:00","@context":"https://schema.org"}</script>
+{"description":"To work with Scriptable Worksheets, Views, tables, Answers, SpotIQ results, and Pinboards in ThoughtSpot, you can download these objects to a flat file in TML format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, SpotIQ results, and Pinboards, see Scriptability.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/scriptability/tml.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/admin/scriptability/tml.html","headline":"[“ThoughtSpot Modeling Language”]","dateModified":"2020-12-16T12:56:47-08:00","datePublished":"2020-12-16T12:56:47-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5425,7 +5425,7 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster.</div>
+    <div class="summary">Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, SpotIQ result, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster.</div>
    
 
     
@@ -5467,7 +5467,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>To work with Scriptable <a href="#syntax-worksheets">Worksheets</a>, <a href="#syntax-views">Views</a>, <a href="#syntax-tables">tables</a>, <a href="#syntax-answers">Answers</a>, and <a href="#syntax-pinboards">Pinboards</a> in ThoughtSpot, you can download these objects to a flat file in <code class="language-plaintext highlighter-rouge">TML</code> format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, and Pinboards, see <a href="/latest/admin/scriptability/scriptability.html">Scriptability</a>.</p>
+  <p>To work with Scriptable <a href="#syntax-worksheets">Worksheets</a>, <a href="#syntax-views">Views</a>, <a href="#syntax-tables">tables</a>, <a href="#syntax-answers">Answers</a>, <a href="#syntax-pinboards">SpotIQ results</a>, and <a href="#syntax-pinboards">Pinboards</a> in ThoughtSpot, you can download these objects to a flat file in <code class="language-plaintext highlighter-rouge">TML</code> format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, SpotIQ results, and Pinboards, see <a href="/latest/admin/scriptability/scriptability.html">Scriptability</a>.</p>
 
 <h2 id="syntax-worksheets">Syntax of the Worksheet TML file</h2>
 
@@ -5853,9 +5853,9 @@ $('#toc').on('click', 'a', function() {
 <a href="#guid">guid</a>: &lt;<em>answer_guid</em>&gt;
 </pre>
 
-<h2 id="syntax-pinboards">Syntax of the Pinboard TML file</h2>
+<h2 id="syntax-pinboards">Syntax of the Pinboard and SpotIQ result TML file</h2>
 
-<p>The <code class="language-plaintext highlighter-rouge">TML</code> file for Scriptable Pinboards has a specific syntax.</p>
+<p>The <code class="language-plaintext highlighter-rouge">TML</code> file for Scriptable Pinboards has a specific syntax. Note that SpotIQ results are in the form of Pinboards. Use the Pinboard TML syntax to edit a SpotIQ TML file.</p>
 
 <p>See the <a href="#parameters">Parameters</a> section for details about the keywords used in this example.</p>
 
@@ -6093,7 +6093,7 @@ $('#toc').on('click', 'a', function() {
 
   <dlentry id="guid">
   <dt>guid</dt>
-  <dd>The GUID for the Answer, Pinboard, Table, Worksheet, or View. You can find this string of letters and numbers at the end of the URL for an object.</dd>
+  <dd>The GUID for the Answer, Pinboard, SpotIQ result, Table, Worksheet, or View. You can find this string of letters and numbers at the end of the URL for an object.</dd>
   </dlentry>
 
   <dlentry id="headline_aggregation">
@@ -6255,7 +6255,7 @@ $('#toc').on('click', 'a', function() {
 
   <dlentry id="pinboard">
   <dt>pinboard</dt>
-  <dd>Top-level container for all object definitions within the Pinboard.</dd>
+  <dd>Top-level container for all object definitions within the Pinboard or SpotIQ result.</dd>
   </dlentry>
 
   <dlentry id="properties">
@@ -6432,7 +6432,7 @@ $('#toc').on('click', 'a', function() {
 </dl>
 
 <h2 id="limitations-of-working-with-tml-files">Limitations of working with TML files</h2>
-<p>There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.</p>
+<p>There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, SpotIQ result, or Pinboard through TML.</p>
 
 <ul>
   <li>
@@ -6480,7 +6480,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Dec 9, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Dec 16, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 10/20/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>

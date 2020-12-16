@@ -7,7 +7,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, and Answers in a human-readable format."> -->
+<!-- <meta name="description" content="Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, SpotIQ results, and Answers in a human-readable format."> -->
 <meta name="keywords" content=",  ">
 <title>Scriptability | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.3/css/syntax.css">
@@ -52,18 +52,18 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“Scriptability”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers." />
-<meta property="og:description" content="ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers." />
+<meta name="description" content="ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, SpotIQ results, and Answers." />
+<meta property="og:description" content="ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, SpotIQ results, and Answers." />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.3/admin/scriptability/scriptability.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.3/admin/scriptability/scriptability.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-09T17:27:32-08:00" />
+<meta property="article:published_time" content="2020-12-16T12:49:28-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Scriptability”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/admin/scriptability/scriptability.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/admin/scriptability/scriptability.html","headline":"[“Scriptability”]","dateModified":"2020-12-09T17:27:32-08:00","datePublished":"2020-12-09T17:27:32-08:00","@context":"https://schema.org"}</script>
+{"description":"ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, SpotIQ results, and Answers.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/admin/scriptability/scriptability.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/admin/scriptability/scriptability.html","headline":"[“Scriptability”]","dateModified":"2020-12-16T12:49:28-08:00","datePublished":"2020-12-16T12:49:28-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5425,7 +5425,7 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, and Answers in a human-readable format.</div>
+    <div class="summary">Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, SpotIQ results, and Answers in a human-readable format.</div>
    
 
     
@@ -5461,13 +5461,13 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    13 minutes
+    14 minutes
   
 </span> -->
 
     
 
-  <p>ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers.</p>
+  <p>ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, SpotIQ results, and Answers.</p>
 
 <p>You can model your data and build out sophisticated dashboards in your test environment, before deploying to all users.</p>
 
@@ -5499,7 +5499,7 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>Refer to the following tables for required permissions for importing and exporting Pinboards, Answers, Worksheets, Tables, and Views.</p>
+<p>Refer to the following tables for required permissions for importing and exporting Pinboards, SpotIQ results, Answers, Worksheets, Tables, and Views.</p>
 
 <p><strong>Import</strong></p>
 
@@ -5549,7 +5549,7 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li>
-    <p>Navigate to the Pinboard, Answer, View, Table, or Worksheet you want to export.</p>
+    <p>Navigate to the Pinboard, SpotIQ result, Answer, View, Table, or Worksheet you want to export. Note that SpotIQ results are in the form of Pinboards, but you can only find them in the <strong>SpotIQ</strong> tab.</p>
   </li>
   <li>
     <p>Click the three-dot icon, and select <strong>Export as TML</strong>.</p>
@@ -5563,7 +5563,7 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li>
-    <p>Navigate to the <strong>Answers</strong>, <strong>Pinboards</strong>, or <strong>Data</strong> page from the top navigation bar, depending on the objects you want to export.</p>
+    <p>Navigate to the <strong>Answers</strong>, <strong>Pinboards</strong>, <strong>SpotIQ</strong>, or <strong>Data</strong> page from the top navigation bar, depending on the objects you want to export.</p>
   </li>
   <li>
     <p>Hover over the objects you want to export, and click the empty checkboxes that appear.</p>
@@ -5596,7 +5596,7 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li>
-    <p>Navigate to the <strong>Answers</strong>, <strong>Pinboards</strong>, or <strong>Data</strong> page from the top navigation bar, depending on the object you want to update.</p>
+    <p>Navigate to the <strong>Answers</strong>, <strong>Pinboards</strong>, <strong>SpotIQ</strong>, or <strong>Data</strong> page from the top navigation bar, depending on the object you want to update.</p>
   </li>
   <li>
     <p>Click the name of the object you want to edit, or select multiple objects by clicking on the checkboxes that appear when you hover over an object name.</p>
@@ -5609,7 +5609,7 @@ $('#toc').on('click', 'a', function() {
     <p><img src="/6.3/images/scriptability-edit-tml-object.png" alt="Edit TML from object" title="Edit TML from object" /></p>
   </li>
   <li>
-    <p>The TML editor opens. Edit the TML file(s), using the syntax specified in <a href="/6.3/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
+    <p>The TML editor opens. Edit the TML file(s), using the syntax specified in <a href="/6.3/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>. Note that SpotIQ results are in the form of Pinboards. Refer to <a href="/6.3/admin/scriptability/tml.html#syntax-pinboards">Pinboard TML</a> to edit a SpotIQ TML file.</p>
 
     <p>The TML editor has the following functions under the top menu:</p>
     <ul>
@@ -5641,7 +5641,7 @@ $('#toc').on('click', 'a', function() {
 </ol>
 
 <h2 id="update-object">Update an object</h2>
-<p>You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the <code class="language-plaintext highlighter-rouge">TML</code> file, making any necessary changes, and then re-uploading the <code class="language-plaintext highlighter-rouge">TML</code> file. To update SpotApps, or collections of objects packaged together as a zip file, refer to <a href="/6.3/admin/scriptability/app-templates.html">SpotApps</a>.</p>
+<p>You can overwrite an existing Worksheet, View, Table, Answer, Pinboard, or SpotIQ result, by downloading the <code class="language-plaintext highlighter-rouge">TML</code> file, making any necessary changes, and then re-uploading the <code class="language-plaintext highlighter-rouge">TML</code> file. To update SpotApps, or collections of objects packaged together as a zip file, refer to <a href="/6.3/admin/scriptability/app-templates.html">SpotApps</a>.</p>
 
 <p>You can also update an object using the <a href="#tml-editor">TML editor</a>.</p>
 
@@ -5655,7 +5655,7 @@ $('#toc').on('click', 'a', function() {
     <p>Edit the file in a text editor.</p>
   </li>
   <li>
-    <p>Navigate to the <strong>Answers</strong>, <strong>Pinboards</strong>, or <strong>Data</strong> page from the top navigation bar, depending on the object you want to update.</p>
+    <p>Navigate to the <strong>Answers</strong>, <strong>Pinboards</strong>, <strong>SpotIQ</strong>, or <strong>Data</strong> page from the top navigation bar, depending on the object you want to update.</p>
   </li>
   <li>
     <p>Click the name of the object you want to edit.</p>
@@ -5697,7 +5697,7 @@ $('#toc').on('click', 'a', function() {
 </ol>
 
 <h2 id="migrate-object">Migrate an object</h2>
-<p>To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to <a href="/6.3/admin/scriptability/app-templates.html">SpotApps</a>. Note that you cannot create a new Table using Scriptability. You can only update existing Tables.</p>
+<p>To migrate an Answer, Pinboard, SpotIQ result, View, or Worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to <a href="/6.3/admin/scriptability/app-templates.html">SpotApps</a>. Note that you cannot create a new Table using Scriptability. You can only update existing Tables.</p>
 
 <ol>
   <li>
@@ -5709,7 +5709,7 @@ $('#toc').on('click', 'a', function() {
     <p>Navigate to the cluster you want to add the object to.</p>
   </li>
   <li>
-    <p>Click <strong>Answers</strong>, <strong>Pinboards</strong>, or <strong>Data</strong> on the top navigation bar, depending on the objects you want to migrate.</p>
+    <p>Click <strong>Answers</strong>, <strong>Pinboards</strong>, <strong>SpotIQ</strong>, or <strong>Data</strong> on the top navigation bar, depending on the objects you want to migrate.</p>
   </li>
   <li>
     <p>To upload a Worksheet or View, click the More icon <img src="/6.3/images/icon-ellipses.png" alt="more options menu" class="inline" /> in the upper-right side of the screen. Then, select <strong>Import TML</strong>.</p>
@@ -5748,7 +5748,7 @@ $('#toc').on('click', 'a', function() {
 </ol>
 
 <h2 id="limitations-of-working-with-tml-files">Limitations of working with TML files</h2>
-<p>There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TML.</p>
+<p>There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, Pinboard, or SpotIQ result through TML.</p>
 
 <ul>
   <li>
@@ -5802,9 +5802,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Dec 9, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Dec 16, 2020 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2020 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 10/20/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 12/10/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
