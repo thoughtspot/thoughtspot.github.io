@@ -1,6 +1,6 @@
 ---
 title: [Worksheet TSL specification]
-last_updated: 7/1/2020
+last_updated: 12/16/2020
 summary: "ThoughtSpot worksheet specification may be exported as a TSL file, modified, and imported into the same or different cluster. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -25,8 +25,8 @@ You may not see each of these parameters in your own TSL file, depending on whet
     Description line 2
   <a href="#tables">tables</a>:
   - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
-  - [<a href="#alias">alias</a>] : &lt;<em>table_alias</em>&gt;
-  - [<a href="#fqn">fqn</a>] : &lt;<em>GUID_of_table_name</em>&gt;
+    <a href="#id">id</a> : &lt;<em>optional_table_id_1</em>&gt;
+    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name_1</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_3</em>&gt;
   joins:
@@ -131,11 +131,6 @@ You may not see each of these parameters in your own TSL file, depending on whet
     </dd>
   </dlentry>
 
-  <dlentry id="alias">
-  <dt>alias</dt>
-  <dd>An alternate name for the table</dd>
-  </dlentry>
-
   <dlentry id="calendar">
     <dt>calendar</dt>
     <dd>Specifies the calendar used by a date column<br>
@@ -206,7 +201,7 @@ You may not see each of these parameters in your own TSL file, depending on whet
 
   <dlentry id="fqn">
   <dt>fqn</dt>
-  <dd>A GUID for the table name</dd>
+  <dd>The table's GUID. You can find this string of letters and numbers at the end of the URL for that table. For example, in https://&lt;company&gt;.thoughtspot.com/#/data/tables/34226aaa-4bcf-4d6b-9045-24cb1e9437cb, the GUID is 34226aaa-4bcf-4d6b-9045-24cb1e9437cb.</dd>
   </dlentry>
 
   <dlentry id="geo_config">
