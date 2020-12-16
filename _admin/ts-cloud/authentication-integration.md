@@ -1,6 +1,8 @@
 ---
 title: [Managing authentication with SAML]
 last_updated: 5/28/2020
+redirect_from:
+- /admin/setup/configure-saml-with-tscli
 summary: "ThoughtSpot integrates with SAML for authentication."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
