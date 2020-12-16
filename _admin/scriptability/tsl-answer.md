@@ -27,9 +27,8 @@ You may not see each of these parameters in your own TSL files, depending on whe
     Description line 2
   <a href="#tables">tables</a>:
   - <a href="#id">id</a>: &lt;<em>table_id</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
-  - [<a href="#alias">alias</a>] : &lt;<em>optional_table_alias</em>&gt;
-  - [<a href="#fqn">fqn</a>] : &lt;<em>optional_GUID_of_table_name</em>&gt;
+    <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
+    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name_1</em>&gt;
   <a href="#joins">joins</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
@@ -133,11 +132,6 @@ You may not see each of these parameters in your own TSL files, depending on whe
   </dd>
 </dlentry>
 
-<dlentry id="alias">
-<dt>alias</dt>
-<dd>An alternate name for the table.</dd>
-</dlentry>
-
 <dlentry id="answer">
 <dt>answer</dt>
 <dd>Top-level container for all object definitions within an Answer.</dd>
@@ -237,7 +231,7 @@ The possible data types are <code>Boolean</code>, <code>Text</code>, <code>Date<
 
 <dlentry id="fqn">
 <dt>fqn</dt>
-<dd>A GUID for the table name</dd>
+<dd>The table's GUID. You can find this string of letters and numbers at the end of the URL for that table. For example, in https://&lt;company&gt;.thoughtspot.com/#/data/tables/34226aaa-4bcf-4d6b-9045-24cb1e9437cb, the GUID is 34226aaa-4bcf-4d6b-9045-24cb1e9437cb.</dd>
 </dlentry>
 
 <dlentry id="headline_aggregation">
@@ -247,7 +241,7 @@ The possible data types are <code>Boolean</code>, <code>Text</code>, <code>Date<
 
 <dlentry id="id">
   <dt>id</dt>
-  <dd>Specifies the way the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
+  <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>. Also specifies the way the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
 </dlentry>
 
 <dlentry id="is_one_to_one">
