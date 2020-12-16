@@ -29,6 +29,10 @@ On ThoughtSpot Cloud, Embrace supports the following external databases:
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
 
+## Limitations
+
+{% include important.html content="Embrace does not support joins across connections." %}
+
 ## Feature availability in Embrace on ThoughtSpot Cloud
 
 Here are the major features that are not currently available in Embrace:
