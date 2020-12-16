@@ -1,10 +1,14 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 10/20/2020
+last_updated: 12/16/2020
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, SpotIQ result, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
-- /admin/scriptability/tml.html
+- /admin/scriptability/tsl.html
 - /admin/ts-cloud/tml.html
+- /admin/worksheets/yaml-worksheet.html
+- /admin/scriptability/tsl-pinboard.html
+- /admin/scriptability/tsl-answer.html
+- /admin/scriptability/tsl-view.html
 - /6.3.0/admin/ts-cloud/tsl.html
 - /6.3.0/admin/scriptability/tsl-pinboard.html
 - /6.3.0/admin/scriptability/tsl-answer.html
@@ -38,10 +42,10 @@ You may not see each of these parameters in your own TML files, depending on whe
     Description line 2
   <a href="#tables">tables</a>:
   - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
-  - [<a href="#alias">alias</a>] : &lt;<em>table_alias</em>&gt;
-  - [<a href="#fqn">fqn</a>] : &lt;<em>GUID_of_table_name</em>&gt;
+    <a href="#id">id</a> : &lt;<em>optional_table_id_1</em>&gt;
+    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name_1</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>table_name_3</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
   joins:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
@@ -131,7 +135,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     ...  
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
-    <a href="#ijoin_progressive">join_progressive</a>: [ true | false ]
+    <a href="#join_progressive">join_progressive</a>: [ true | false ]
 <a href="#guid">guid</a>: &lt;<em>worksheet_guid</em>&gt;
 </pre>
 
@@ -153,12 +157,12 @@ You may not see each of these parameters in your own TML files, depending on whe
   <a href="#table">tables</a>:
     <a href="#identity">identity</a>:  
     - <a href="#id">id</a>: &lt;<em>table_id_1</em>&gt;
-    - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
-    - <a href="#fqn">fqn</a>: &lt;<em>table_fqn_1</em>&gt;
+      <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
+      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
     <a href="#identity">identity</a>:  
     - <a href="#id">id</a>: &lt;<em>table_id_n</em>&gt;
-    - <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
-    - <a href="#fqn">fqn</a>: &lt;<em>table_fqn_n</em>&gt;
+      <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
+      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_n</em>&gt;
   <a href="#joins">joins</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
@@ -316,9 +320,8 @@ You may not see each of these parameters in your own TML files, depending on whe
     Description line 2
   <a href="#tables">tables</a>:
   - <a href="#id">id</a>: &lt;<em>table_id</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
-  - [<a href="#alias">alias</a>] : &lt;<em>optional_table_alias</em>&gt;
-  - [<a href="#fqn">fqn</a>] : &lt;<em>optional_GUID_of_table_name</em>&gt;
+    <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
+    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name_1</em>&gt;
   <a href="#joins">joins</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
@@ -458,11 +461,6 @@ You may not see each of these parameters in your own TML files, depending on whe
       Possible values: <code>SUM</code>, <code>COUNT</code>, <code>AVERAGE</code>, <code>MAX</code>, <code>MIN</code>, <code>COUNT_DISTINCT</code>, <code>NONE</code>, <code>STD_DEVIATION</code>, and <code>VARIANCE</code><br>
       Default: <code>SUM</code><br>
     </dd>
-  </dlentry>
-
-  <dlentry id="alias">
-  <dt>alias</dt>
-  <dd>An alternate name for the table</dd>
   </dlentry>
 
   <dlentry id="answer">
@@ -630,7 +628,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="fqn">
   <dt>fqn</dt>
-  <dd>A GUID for the table name</dd>
+  <dd>The table's GUID. You can find this string of letters and numbers at the end of the URL for that table. For example, in https://&lt;company&gt;.thoughtspot.com/#/data/tables/34226aaa-4bcf-4d6b-9045-24cb1e9437cb, the GUID is 34226aaa-4bcf-4d6b-9045-24cb1e9437cb.</dd>
   </dlentry>
 
   <dlentry id="geo_config">
