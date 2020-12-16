@@ -212,10 +212,6 @@ There are certain limitations to the changes you can apply by editing a Workshee
 
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
 
-* You can only view and modify joins at the table level in the source table TML. You cannot view or modify table-level joins from the destination table's TML file.
-
-* You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only change the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file.
-
 ## Related information
 
 - [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html)   
