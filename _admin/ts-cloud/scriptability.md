@@ -1,12 +1,12 @@
 ---
 title: [Scriptability]
-last_updated: 10/1/2020
-summary: "Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, and Answers in a human-readable format."
+last_updated: 12/14/2020
+summary: "Use Scriptability to export and import Worksheets, Views, tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, Tables, Pinboards, and Answers.
+ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, tables, Pinboards, and Answers.
 
 You can model your data and build out sophisticated dashboards in your test environment, before deploying to all users.
 
@@ -28,7 +28,7 @@ Depending on how you want to use Scriptability, there are several workflows you 
 
 ## Prerequisites
 
-Refer to the following tables for required permissions for importing and exporting Pinboards, Answers, Worksheets, Tables, and Views.
+Refer to the following tables for required permissions for importing and exporting Pinboards, Answers, Worksheets, tables, and Views.
 
 **Import**
 
@@ -46,13 +46,13 @@ Refer to the following tables for required permissions for importing and exporti
 
 {: id="export-object"}
 ## Export an object
-You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources.
+You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To create and export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#create-spotapps).
 
 {: id="export-one"}
 ### Export one object
 To export one object:
 
-1. Navigate to the Pinboard, Answer, View, Table, or Worksheet you want to export.
+1. Navigate to the Pinboard, Answer, View, table, or Worksheet you want to export.
 
 2. Click the three-dot icon, and select **Export TML**.
 
@@ -60,7 +60,7 @@ To export one object:
 
 {: id="export-zip-file"}
 ### Export multiple objects
-To export multiple objects at a time, follow these steps:
+To export multiple objects at a time, follow these steps. To create and export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#create-spotapps).
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the objects you want to export.
 
@@ -72,7 +72,7 @@ To export multiple objects at a time, follow these steps:
 
     ![Export multiple objects]({{ site.baseurl }}/images/scriptability-cloud-export-multiple.png "Export multiple objects")
 
-4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, Tables, and Views). If you export a table, you do not see this modal, since tables do not have any dependents.
+4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, tables, and Views). If you export a table, you do not see this modal, since tables do not have any dependents. When exporting multiple objects, the zip file contains the `Manifest` file, even if you export the objects without their dependents.
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
 
@@ -127,7 +127,7 @@ To use the TML editor, follow these steps:
 
 {: id="update-object"}
 ## Update an object
-You can overwrite an existing Worksheet, View, Table, Answer, or Pinboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
+You can overwrite an existing Worksheet, View, table, Answer, or Pinboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
 
 You can also update an object using the [TML editor](#tml-editor).
 
@@ -155,21 +155,17 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 6. In your file system, find and select the `TML` file you edited.
 
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
-
 9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload.
+
+8. The **Import** interface recognizes that an object with this GUID already exists in the system, and asks if you would like to create a new object, or update the existing one. Select **Update existing [object]**.
 
 10. Click **Import selected files**.
 
-    ![Import selected file]({{ site.baseurl }}/images/scriptability-worksheet-update-success.png "Import selected files")
-
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
-
-    ![Go to object]({{ site.baseurl }}/images/scriptability-import-status.png "Go to object")
 
 {: id="migrate-object"}
 ## Migrate an object
-To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new Table using Scriptability. You can only update existing Tables.  
+To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new table using Scriptability. You can only update existing tables.  
 
 1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above.
 
@@ -185,7 +181,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 5. To upload a Pinboard or Answer, click the **Import TML** button in the upper-right side of the screen.   
 
-    ![Import a Pinboard or Answer]({{ site.baseurl }}/images/scriptability-cloud-import.png "Import a Pinboard or Answer")
+    ![Import a Pinboard or Answer]({{ site.baseurl }}/images/scriptability-cloud-import.png "Import a Pinboard or Answer")  
 
 6. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
@@ -204,7 +200,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
     ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
 
 ## Limitations of working with TML files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, or Pinboard through TML.
+There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.
 
 * Formulas and columns can either have a new name, or a new expression. You cannot change both, unless migrating or updating the worksheet two times.
 
@@ -213,8 +209,6 @@ There are certain limitations to the changes you can apply by editing a Workshee
 * You cannot create new tables using Scriptability. You can only update existing tables.
 
 * You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
-
-* You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: either an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
 
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
 
