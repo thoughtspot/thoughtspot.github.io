@@ -30,6 +30,8 @@ You create a connection to the external database, choosing the columns from each
 
 ## Limitations
 
+{% include important.html content="Embrace does not support joins across connections." %}
+
 ### Feature availability in Embrace
 
 The following matrix compares the features that are available in our internal high-performance database, Falcon, and the ones available in Embrace:
