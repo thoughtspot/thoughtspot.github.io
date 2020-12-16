@@ -24,7 +24,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
   <a href="#tables">tables</a>:
   - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
     <a href="#id">id</a> : &lt;<em>optional_table_id_1</em>&gt;
-    <a href="#fqn">fqn</a> : &lt;<em>GUID_of_table_name_1</em>&gt;
+    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name_1</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_3</em>&gt;
   joins:
