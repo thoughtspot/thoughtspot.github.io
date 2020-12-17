@@ -1,6 +1,6 @@
 ---
 title: ["Enable Columns for SearchIQ"]
-last_updated: 11/19/2019
+last_updated: 12/17/2020
 summary: Allow users to use SearchIQ by enabling SearchIQ for the columns of the data source."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -39,15 +39,11 @@ To enable columns in a worksheet for SearchIQ, follow these steps:
 
 8.  Change the **Index Type** to `DONT_INDEX` for columns when they must be excluded from indexing. We recommend excluding a column when it is descriptive in nature, =contains a large amount of text, has [stop words]({{ site.baseurl }}/reference/stop-words.html), or for a variety of similar reason.  See [Turn off indexing]({{ site.baseurl }}/admin/data-modeling/change-index.html).  
 
-     ![]({{ site.baseurl }}/images/data-modeling-columns-indextype-dont-index.png "Don't index")
-
      This prevents SearchIQ from scanning through large amounts of text to understand what user asked. Note that searches on text fields that use the `contains` keyword still work.  
 
      ![]({{ site.baseurl }}/images/worksheet-column-do-not-index-searchiq.png "Change Index Type to DONT_INDEX")
 
 9.  Change the **Index Type** for columns that represent formulas with categorical values to `PREFIX_AND_SUBSTRING`. See [Turn off indexing]({{ site.baseurl }}/admin/data-modeling/change-index.html).
-
-     ![]({{ site.baseurl }}/images/data-modeling-columns-indextype-prefix-substring.png "Index type for formulas with categorical values")
 
      ![]({{ site.baseurl }}/images/worksheet-column-prefix-and-substring-searchiq.png "Change Index Type to PREFIX_AND_SUBSTRING")
 
