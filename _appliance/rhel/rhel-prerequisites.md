@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
 | &#10063; | [2. Partition the hosts](#partition-hosts) |
-| &#10063; | [3. Install RHEL version 7.7 or 7.8 on all hosts](#install-rhel) |
+| &#10063; | [3. Install RHEL version 7.8 or 7.9 on all hosts](#install-rhel) |
 | &#10063; | [4. Ensure that your Linux kernel is on version 3.10.0-1127.19.1](#linux-kernel-version) |
 | &#10063; | [5. Enable the hosts to download RHEL packages](#enable-hosts) |
 | &#10063; | [6. Enable an Ansible Control Server](#enable-ansible) |
@@ -39,13 +39,15 @@ Ensure that all ThoughtSpot hosts meet the following partition and sizing requir
 {: id="install-rhel"}
 ## Install RHEL on hosts
 
-ThoughtSpot is certified with RHEL versions 7.7 and 7.8; we **do not** support other versions of RHEL, including 8 and 8.1. Install RHEL version 7.7 or 7.8, and ensure that your [linux kernel version](#linux-kernel-version) is 3.10.0-1127.19.1.
+ThoughtSpot is certified with RHEL versions 7.8 and 7.9; we **do not** support other versions of RHEL, including 7.7, 8, and 8.1. Install RHEL version 7.8 or 7.9, and ensure that your [linux kernel version](#linux-kernel-version) is 3.10.0-1127.19.1.
 
 {: id="linux-kernel-version"}
 ### Linux kernel version
-Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.7 and 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.7 and 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.7 or 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
+Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
 
-{% include warning.html content="If Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
+If you are using RHEL version 7.9, the default Linux kernel never had this bug.
+
+{% include warning.html content="If your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
 
 {: id="enable-hosts"}
 ## Enable the hosts to download RHEL packages
