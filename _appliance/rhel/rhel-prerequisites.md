@@ -79,7 +79,7 @@ ThoughtSpot is certified with RHEL versions 7.7 and 7.8; we **do not** support o
 ### Linux kernel version
 Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.7 and 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.7 and 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.7 or 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
 
-{% include warning.html content="If Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
+{% include warning.html content="If your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
 
 {: id="enable-hosts"}
 ## Enable the hosts to download RHEL packages
