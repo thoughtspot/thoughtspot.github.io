@@ -108,11 +108,11 @@ The **Information Center** opens. It contains the following 3 sections:
       </tr>
       <tr>
         <th>ThoughtSpot U</th>
-        <td><a href="https://training.thoughtspot.com/">ThoughtSpot U</a>, which offers free, on-demand, self-paced video training.</td>
+        <td><a href="https://training.thoughtspot.com/" target="_blank">ThoughtSpot U</a>, which offers free, on-demand, self-paced video training.</td>
       </tr>
       <tr>
         <th>Community</th>
-        <td>The <a href="https://community.thoughtspot.com/s/">ThoughtSpot Community</a>, where you can exchange ideas and collaborate with customers, partners, and ThoughtSpot employees.</td>
+        <td>The <a href="https://community.thoughtspot.com/s/" target="_blank">ThoughtSpot Community </a>, where you can exchange ideas and collaborate with customers, partners, and ThoughtSpot employees.</td>
       </tr>
       <tr>
         <th>Answer Replay</th>
