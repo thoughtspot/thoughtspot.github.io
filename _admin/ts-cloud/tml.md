@@ -993,3 +993,5 @@ There are certain limitations to the changes you can apply by editing a Workshee
 * You can only change logical tables using Scriptability. You cannot change the physical version of the table that exists in a database. When you change the `column_name`, for example, the name changes in the application, but not in the physical table in the database.
 
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
+
+* You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom SpotApp, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.

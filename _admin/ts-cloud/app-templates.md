@@ -1,6 +1,6 @@
 ---
 title: [SpotApps]
-last_updated: 12/14/2020
+last_updated: 12/17/2020
 summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -37,7 +37,7 @@ To create and export your own custom SpotApps, follow these steps.
 
 3. In the **Export** interface, select the Pinboards, Answers, Views, Tables, and Worksheets that you would like to include in your SpotApp. For example, for a Marketing SpotApp, you might choose a Marketing Worksheet, a Campaigns Worksheet, a Pipeline Pinboard, and a few Answers your Chief Marketing Officer created.
 
-4. Click **Export selected files**.
+4. Click **Export**.
 
 5. The **Choose what to Export** modal appears. Choose whether to export only the selected objects, or the selected objects and their underlying data sources (Worksheets, tables, and Views).
 
@@ -65,3 +65,6 @@ You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
 
     ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
+
+### Limitations
+You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom SpotApp, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
