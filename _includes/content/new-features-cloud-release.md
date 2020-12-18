@@ -3,7 +3,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <h3>Scriptability</h3>
 There are several new features for Scriptability:
 <ul>
-<li><strong>Custom SpotApp creation</strong>: You can now create and export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</li>
+<li><strong>Custom SpotApp creation</strong>: You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps">SpotApps</a>.</li>
 <li><strong>GUID handling</strong>: ThoughtSpot now recognizes pre-existing GUIDs upon import and asks if you would like to update the existing object or create a new one. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a>.</li>
 <li>ThoughtSpot Scripting Language is now called ThoughtSpot Modeling Language.</li></ul>
 

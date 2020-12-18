@@ -46,7 +46,7 @@ Refer to the following tables for required permissions for importing and exporti
 
 {: id="export-object"}
 ## Export an object
-You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To create and export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#create-spotapps).
+You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
 
 {: id="export-one"}
 ### Export one object
@@ -60,7 +60,7 @@ To export one object:
 
 {: id="export-zip-file"}
 ### Export multiple objects
-To export multiple objects at a time, follow these steps. To create and export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#create-spotapps).
+To export multiple objects at a time, follow these steps. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the objects you want to export.
 
