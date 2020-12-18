@@ -1,12 +1,12 @@
 ---
 title: [SpotApps]
-last_updated: 12/17/2020
+last_updated: 12/18/2020
 summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-A SpotApp is a collection of Pinboards, Answers, Worksheets, Views & Tables packaged together as a zip file. SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for exporting, enhancing, and migrating ThoughtSpot objects, to allow you to export scriptable applications you can use in multiple clusters.   
+A SpotApp is a collection of Pinboards, Answers, Worksheets, Views & Tables packaged together as a zip file. SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (Worksheets, Tables, and Views) and content (Pinboards and Answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
 
 {: id="export-spotapps"}
 ## Export SpotApps
