@@ -1,7 +1,7 @@
 ---
 title: [Choose a background color]
 summary: You can customize ThoughtSpot's background color to match your company's theme.
-last_updated: 11/18/2019
+last_updated: 12/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -14,10 +14,8 @@ If the Style Customization option is not available, [contact ThoughtSpot Support
 
 1. Click the background color box under **Application Background**.
 
-     ![]({{ site.baseurl }}/images/application_background_color.png "Application Background menu")
+     ![]({{ site.baseurl }}/images/set-background-color.png "Application Background menu")
 
 2. Use the color menu to choose your new background color.
-
-     ![]({{ site.baseurl }}/images/choose_application_background_color.png "Application Background Color")
 
 3. Click the **Reset** button on the upper right hand side of the section if you would like to bring back the default color.
