@@ -12,7 +12,7 @@ This feature is only applicable when embedding ThoughtSpot in an external web po
 1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears.<br>
 If the Style Customization option is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable it.
 
-1. Click the background color box under **Application Background**.
+1. Click the background color box under **Embedded Application Background**.
 
      ![]({{ site.baseurl }}/images/set-background-color.png "Application Background menu")
 
