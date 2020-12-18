@@ -23,7 +23,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,config-mode,dataflow,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,nitro-switch,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,spot,ssl,sssd,storage,support,tokenauthentication,update}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
@@ -300,15 +300,15 @@ tscli backup [-h] {create,delete,ls,}
               <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
               <p>There is no default setting.</p></dd></dlentry>
           <dlentry>
-            <dt><code>--storage_type {local,nas,cloud}</code></dt>
+            <dt><code>--storage_type {local,nas,s3a,gcs}</code></dt>
             <dd>
-              <p>Storage type of output directory.</p>
+              <p>Storage type of output directory. Specify <code>s3a</code> to use Amazon S3 storage, and specify <code>gcs</code> to use Google GCS storage.</p>
               <p>The default setting is <code>local</code>.</p></dd></dlentry>
           <dlentry>
             <dt><code>--remote</code></dt>
             <dd>
               <p>Takes backup through orion master.</p>
-              <p>The default setting is <code>True</code>.</p></dd></dlentry>
+              <p>The default setting is <code>False</code>.</p></dd></dlentry>
             <dlentry>
             <dt><code>--no-orion-master</code></dt>
              <dd> <p>
@@ -320,11 +320,11 @@ tscli backup [-h] {create,delete,ls,}
             </dlentry>
             <dlentry>
             <dt><code>--bucket_name BUCKET_NAME</code></dt>
-             <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+             <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>s3</code> or <code>gcs</code>.</dd>
             </dlentry>
             <dlentry>
             <dt><code>--staging_dir STAGING_DIR</code></dt>
-             <dd>Used for staging hdfs data in cloud based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+             <dd>Specify the staging directory to use for staging hdfs data in cloud based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>s3</code> or <code>gcs</code>.</dd>
             </dlentry>
           </dl>
       </dd>
@@ -466,11 +466,11 @@ This subcommand has the following options:
 </dlentry>
 <dlentry>
 <dt><code>tscli calendar disable</code></dt>
-<dd>Disables custom calendar on the cluster.</dd>
+<dd>Disables the custom calendar feature on the cluster.</dd>
 </dlentry>
 <dlentry>
 <dt><code>tscli calendar enable</code></dt>
-<dd>Enables custom calendar on the cluster.</dd>
+<dd>Enables the custom calendar feature on the cluster.</dd>
 </dlentry>
 <dlentry>
 <dt><code>tscli calendar generate</code></dt>
@@ -499,12 +499,12 @@ This subcommand has the following options:
 <p>The default is <code>January</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--start_day_of_week</code></dt>
+<dt><code>--start_day_of_week {Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday}</code></dt>
 <dd><p>The day the week starts on.</p>
 <p>The default is <code>Sunday</code>.</p></dd>
 </dlentry>
 <dlentry>
-<dt><code>--quarter_name_prefix</code></dt>
+<dt><code>--quarter_name_prefix <em>QUARTER_NAME_PREFIX</em></code></dt>
 <dd>The string to prefix a quarter name with.</dd>
 </dlentry>
 <dlentry>
@@ -616,7 +616,7 @@ This subcommand has the following options:
 ### cassandra
 
 ```
-tscli cassandra [-h] {backup,restore}
+tscli cassandra [-h] {backup,restore,tablestats}
 ```
 
 Backs up cassandra.
@@ -643,13 +643,22 @@ This subcommand has the following options:
     <dt><code>--backup_dir <em>BACKUP_DIR</em></code></dt>
     <dd>The path to the backup directory to restore the backup to.</dd>
     </dlentry></dl></dd></dlentry>
+<dlentry>
+    <dt><code>tscli cassandra tablestats</code></dt>
+    <dd>Procures a list of heavy tables in Cassandra, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--limit <em>LIMIT</em></code></dt>
+    <dd><p>Specifies the number of tables to display.</p>
+    <p>The default is <code>10</code>.</p></dd>
+    </dlentry></dl></dd></dlentry>
 </dl>
 
 {: id="tscli-cluster"}
 ### cluster
 
 ```
-tscli cluster [-h] {abort-update,bucket-migrate,bucket-name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,restore,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
+tscli cluster [-h] {abort-update,bucket-migrate,bucket-name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,restore,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-id,show-name,show-resource-spec,start,status,stop,update,update-hadoop}
 ```
 
 This subcommand has the following options:
@@ -684,8 +693,7 @@ This subcommand has the following options:
       <p>The default is <code>/usr/local/scaligent/release</code>.</p></dd></dlentry>
       <dlentry>
       <dt><code>--includes <em>INCLUDES</em></code></dt>
-      <dd><p>Specifies the comma-separated component(s) to be included in the check.</p>
-      <p>The default is <code>all</code>.</p></dd></dlentry>
+      <dd>Specifies the comma-separated component(s) to be included in the check.</dd></dlentry>
       <dlentry>
       <dt><code>--retry <em>RETRY</em></code></dt>
       <dd><p>The maximum number of retry times if the node is unreachable.</p>
@@ -798,6 +806,11 @@ This subcommand has the following options:
     <dt><code>--allow_network_gateway_mismatch</code></dt>
     <dd><p>Allows a network and gateway mismatch.</p>
     <p>The default is <code>False</code>.</p>
+    </dd></dlentry>
+    <dlentry>
+    <dt><code>--no-service-restart</code></dt>
+    <dd><p>Ensures that set-config does not restart services, avoiding any downtime.</p>
+    <p>The default is <code>False</code>.</p>
     </dd></dlentry></dl>
     </dd></dlentry>
 
@@ -807,21 +820,29 @@ This subcommand has the following options:
 <dl>
   <dlentry>
   <dt><code>--file <em>FILE</em></code></dt>
-  <dd><p>Specified script with overrides.</p>
-  <p>The default is <code>False</code>.</p></dd>
+  <dd>Specified script with overrides.</dd>
   </dlentry></dl></dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli cluster setup-release-host HOST</code></dt>
+    <dt><code>tscli cluster setup-release-host <em>HOST</em></code></dt>
     <dd>Sets up the release host for Self Service Upgrade, with the specified <code>HOST</code>.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster setup-release-host-key</code></dt>
     <dd>Sets up the release host api key for Self Service Upgrade.</dd></dlentry>  
 
+    <dlentry>
+      <dt><code>tscli cluster show-id</code></dt>
+      <dd>Prints the cluster ID.</dd></dlentry>
+
+      <dlentry>
+        <dt><code>tscli cluster show-name</code></dt>
+        <dd>Prints the cluster name.</dd></dlentry>
+
   <dlentry>
     <dt><code>tscli cluster show-resource-spec</code></dt>
     <dd>Prints default or min.</dd></dlentry>
+
   <dlentry>
     <dt><code>tscli cluster start</code></dt>
     <dd>Starts the cluster.</dd></dlentry>
@@ -831,11 +852,11 @@ This subcommand has the following options:
     <dd>Gives the status of the cluster, including release number, date last updated, number of nodes, pending tables time, and services status. This subcommand has the following parameters:
   <dl>
   <dlentry>
-  <dt><code>--mode {basic,service,table,full,reinstall-os}</code></dt>
+  <dt><code>--mode {basic,service,table,full,reinstall-os,simple}</code></dt>
   <dd>Specifies the kind of status message you want.</dd></dlentry>
   <dlentry>
   <dt><code>--tail</code></dt>
-  <dd><p>Prints the details of creation and update progress.</p>
+  <dd><p>Prints the details of the creation and update progress.</p>
   <p>The default is <code>False</code>.</p></dd></dlentry>
   <dlentry>
   <dt><code>--no-orion</code></dt>
@@ -874,8 +895,12 @@ This subcommand has the following options:
   <dd><p>Generates pre-update and post-update scoreboards and compares them.</p>
   <p>The default is <code>False</code>.</p></dd></dlentry>
   <dlentry>
+  <dt><code>--scoreboard_tags <em>SCOREBOARD_TAGS</em></code></dt>
+  <dd>You must specify a comma separated tag(s) to identify which group(s) of fields the scoreboard config should use.</dd></dlentry>
+  <dlentry>
   <dt><code>--update_orion_only</code></dt>
-  <dd>Only updates orion.</dd></dlentry>
+  <dd><p>Only updates orion.</p>
+  <p>The default is <code>False</code>.</p></dd></dlentry>
   <dlentry>
   <dt><code>--ignore_if_unhealthy</code></dt>
   <dd>A comma separated list of node IPs on which upgrade is not attempted in case they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</dd></dlentry></dl>
