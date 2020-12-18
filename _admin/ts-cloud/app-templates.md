@@ -5,31 +5,14 @@ summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate 
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for exporting, enhancing, and migrating ThoughtSpot objects, to provide you with scriptable applications you can use in multiple clusters.   
 
-Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's scriptable applications, or SpotApps, which provide an easy way for you to start getting value from your data.
+SpotApps are a collection of Pinboards, Answers, Worksheets, Views & Tables packaged together as a zip file. SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for exporting, enhancing, and migrating ThoughtSpot objects, to allow you to export scriptable applications you can use in multiple clusters.   
 
-ThoughtSpot offers [pre-built SpotApps](#pre-built-spotapps), which leverage your data in Snowflake, Amazon Redshift, Google BigQuery, or Azure Synapse to provide pre-built Pinboards, Answers, Views, Tables, and Worksheets. You can also [create your own custom SpotApps](#create-spotapps) that satisfy your specific business needs.
+{: id="export-spotapps"}
+## Export SpotApps
+You can export your own custom SpotApps from the **SpotApps** page. Alternatively, ThoughtSpot automatically creates SpotApps for you when you export more than one object of the same type at a time, or when you export an object and its dependents.
 
-{: id="pre-built-spotapps"}
-## Pre-built SpotApps
-ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable. These applications leverage your data in Snowflake, Amazon Redshift, Google BigQuery, or Azure Synapse to provide pre-built Pinboards, Answers, Views, Tables and Worksheets.
-
-For example, if you choose to use the Procurement SpotApp, the **Search** page contains a Worksheet for your users to query on, called "Procurement Analytics Solution."
-
-![Procurement Worksheet Search]({{ site.baseurl }}/images/scriptable-app-procurement-search.png "Procurement Worksheet Search")
-
-Your users may want to understand what Answers and Pinboards are before they start searching, or they may only want to gain insights from pre-built objects. They can view any of the pre-existing objects, such as this Exec Summary Pinboard:
-
-![Exec summary]({{ site.baseurl }}/images/exec-summary-pinboard.png "Exec summary")
-
-When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, Tables, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
-
-{: id="create-spotapps"}
-## Create and export SpotApps
-You can create your own custom SpotApps from the **SpotApps** page. Alternatively, ThoughtSpot automatically creates SpotApps for you when you export more than one object of the same type at a time, or when you export an object and its dependents.
-
-To create and export your own custom SpotApps, follow these steps.
+To export your own custom SpotApps, follow these steps.
 
 1. Navigate to the **SpotApps** page: **Data > SpotApps**.
 
@@ -47,7 +30,9 @@ To create and export your own custom SpotApps, follow these steps.
 
 See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
 
-### Import SpotApps
+![SpotApp export gif]({{ site.baseurl }}/images/spotapp-export.gif "SpotApp export gif")
+
+## Import SpotApps
 You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 
 1. From the **SpotApps** page under the **Data** tab, click **Import SpotApps**.
@@ -66,5 +51,23 @@ You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 
     ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
 
-### Limitations
+{: id="pre-built-spotapps"}
+## Pre-built SpotApps
+Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's pre-built SpotApps, which provide an easy way for you to start getting value from your data. They leverage your data in Snowflake, Amazon Redshift, Google BigQuery, or Azure Synapse to provide pre-built Pinboards, Answers, Views, Tables, and Worksheets.
+
+ThoughtSpot offers 3 pre-built SpotApps: Salesforce, procurement, and accounts receivable.
+
+For example, if you choose to use the Procurement SpotApp, the **Search** page contains a Worksheet for your users to query on, called "Procurement Analytics Solution."
+
+![Procurement Worksheet Search]({{ site.baseurl }}/images/scriptable-app-procurement-search.png "Procurement Worksheet Search")
+
+Your users may want to understand what Answers and Pinboards are before they start searching, or they may only want to gain insights from pre-built objects. They can view any of the pre-existing objects, such as this Exec Summary Pinboard:
+
+![Exec summary]({{ site.baseurl }}/images/exec-summary-pinboard.png "Exec summary")
+
+When you are ready to move to a production environment, you can migrate these Pinboards, Answers, Views, Tables, and Worksheets to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
+
+To use one of these pre-built SpotApps, work with your ThoughtSpot contacts.
+
+## Limitations
 You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom SpotApp, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
