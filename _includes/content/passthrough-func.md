@@ -1,7 +1,7 @@
 <table>
 <colgroup>
-   <col style="width:5%" />
-   <col style="width:45%" />
+   <col style="width:8%" />
+   <col style="width:42%" />
    <col style="width:50%" />
 </colgroup>
   <thead>
@@ -21,15 +21,12 @@
     <tr id="sql_bool_op">
       <td><code>sql_bool_op</code></td>
       <td>Returns the boolean data type. The first argument takes the signature of the external function to be executed against the datasource. Subsequent arguments take the values to be passed to the external function.</td>
-      <td><code class="highlighter-rouge"><ul>
-  <li>sql_bool_op ( "is_decimal ({0})" , itemCount )</li>
-  <li>sql_bool_op ( "is_decimal ({0})" , itemCount )<br>sql_bool_op ( "boolor ({0}, {1})" , 2 , 0 ) = True</li>
-</ul></code></td>
+      <td><code class="highlighter-rouge"><ul><li>sql_bool_op ( "is_decimal ({0})" , itemCount )</li><li>sql_bool_op ( "is_decimal ({0})" , itemCount )sql_bool_op ( "boolor ({0}, {1})" , 2 , 0 ) = True</li></ul></code></td>
     </tr>
     <tr id="sql_date_aggregate_op">
       <td><code>sql_date_aggregate_op</code></td>
       <td>Returns the date data type. The first argument takes the signature of the external function to be executed against the datasource. Subsequent arguments take the values to be passed to the external function.</td>
-      <td><code class="highlighter-rouge"><ul><li>sql_date_aggregate_op ( "max ({0})" , orderdate )</td>
+      <td><code class="highlighter-rouge"><ul><li>sql_date_aggregate_op ( "max ({0})" , orderdate )</li></ul></code></td>
     </tr>
     <tr id="sql_date_op">
       <td><code>sql_date_op</code></td>
@@ -44,7 +41,7 @@
     <tr id="sql_date_time_op">
       <td><code>sql_date_time_op</code></td>
       <td>Returns the timestamp data type. The first argument takes the signature of the external function to be executed against the datasource. Subsequent arguments take the values to be passed to the external function.</td>
-      <td><code class="highlighter-rouge"><ul><li>sql_date_time_op ( "timestamp_sub ({0}, {1})" , sale_time , 'INTERVAL 30 MINUTE')</li></ul></code><br><code class="highlighter-rouge"></code></td>
+      <td><code class="highlighter-rouge"><ul><li>sql_date_time_op ( "timestamp_sub ({0}, {1})" , sale_time , 'INTERVAL 30 MINUTE')</li></ul></code><code class="highlighter-rouge"></code></td>
     </tr>
     <tr id="sql_double_aggregate_op">
       <td><code>sql_double_aggregate_op</code></td>
@@ -86,5 +83,5 @@
       <td>Returns the time data type. The first argument takes the signature of the external function to be executed against the datasource. Subsequent arguments take the values to be passed to the external function.</td>
       <td><code class="highlighter-rouge"><ul><li>sql_time_op ( "time_from_parts ({0}, {1}, {2})" , 12 , 30 , 20 ) = 12:30:20</li></ul></code></td>
     </tr>
-  </tbody>
+</tbody>
 </table>
