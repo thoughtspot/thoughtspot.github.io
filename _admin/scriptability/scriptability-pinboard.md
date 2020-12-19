@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Scriptability for Answers and Pinboards is in <span class="label label-beta">Beta</span>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support.
 
-In ThoughtSpot, you can download Pinboards to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
+In ThoughtSpot, you can download Pinboards to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl-pinboard.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
 
 This mechanism supports several scenarios that you may encounter:
 
@@ -61,7 +61,7 @@ To export multiple Pinboards at a time, follow these steps:
     ![Zip file]({{ site.baseurl }}/images/scriptability-pinboard-zip-file.png "Zip file")
 
 ## Edit the Pinboard `.tsl` file
-You can edit the Pinboard `.tsl` file before you import it. Refer to [Pinboard TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html) for the full syntax of the TSL file.
+You can edit the Pinboard `.tsl` file before you import it. Refer to [Pinboard TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-pinboard.html) for the full syntax of the TSL file.
 
 {: id="pinboard-update"}
 ## Update a Pinboard
@@ -96,4 +96,4 @@ To migrate a Pinboard from one cluster to another, follow these steps:
    ![Upload successful]({{ site.baseurl }}/images/scriptability-pinboard-successful.png "Upload successful")
 
 ## Related Information
-- [Pinboard TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-pinboard.html)
+- [Pinboard TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-pinboard.html)

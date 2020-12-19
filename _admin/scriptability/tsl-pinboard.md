@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Scriptability for Answers and Pinboards is in <span class="label label-beta">Beta</span>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support.
 
-To work with Scriptable Pinboards in ThoughtSpot, you can download Pinboards to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Pinboards, see [Migrate or restore Pinboards]({{ site.baseurl }}/admin/worksheets/scriptability-pinboard.html).
+To work with Scriptable Pinboards in ThoughtSpot, you can download Pinboards to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Pinboards, see [Migrate or restore Pinboards]({{ site.baseurl }}/admin/scriptability/scriptability-pinboard.html).
 
 {: id="syntax-pinboards"}
 ##  Syntax of the Pinboard TSL file
@@ -27,7 +27,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
     Description line 2
   <a href="#visualizations">visualizations</a>:
   - <a href="#answer">answer</a>:
-    This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/worksheets/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.
+    This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/scriptability/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.
     <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
   - <a href="#answer">answer</a>:
     This section includes all the Answer specification for a second visualization. In this case, the visualization is a headline.
@@ -53,7 +53,7 @@ You may not see each of these parameters in your own TSL files, depending on whe
 
 <dlentry id="answer">
 <dt>answer</dt>
-<dd>This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/worksheets/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.</dd>
+<dd>This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="{{ site.baseurl }}/admin/scriptability/tsl-answer.html#syntax-answers">Answer syntax</a> section of TSL Answer Specification.</dd>
 </dlentry>
 
 <dlentry id="column">
@@ -139,4 +139,4 @@ There are certain limitations to the changes you can apply by editing a Pinboard
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
 
 ## Related Information
-- [Migrate or restore Pinboards]({{ site.baseurl }}/admin/worksheets/scriptability-pinboard.html)
+- [Migrate or restore Pinboards]({{ site.baseurl }}/admin/scriptability/scriptability-pinboard.html)

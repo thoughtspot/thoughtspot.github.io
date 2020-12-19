@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Scriptability for Answers and Pinboards is in <span class="label label-beta">Beta</span>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support.
 
-To work with Scriptable Answers in ThoughtSpot, you can download Answers to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Answers, see [Migrate or restore Answers]({{ site.baseurl }}/admin/worksheets/scriptability-answer.html).
+To work with Scriptable Answers in ThoughtSpot, you can download Answers to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Answers, see [Migrate or restore Answers]({{ site.baseurl }}/admin/scriptability/scriptability-answer.html).
 
 {: id="syntax-answers"}
 ##  Syntax of the Answer TSL file
@@ -418,4 +418,4 @@ There are certain limitations to the changes you can apply by editing an Answer 
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
 
 ## Related Information
-- [Migrate or restore Answers]({{ site.baseurl }}/admin/worksheets/scriptability-answer.html)
+- [Migrate or restore Answers]({{ site.baseurl }}/admin/scriptability/scriptability-answer.html)
