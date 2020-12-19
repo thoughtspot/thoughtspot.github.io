@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Scriptability for Answers and Pinboards is in <span class="label label-beta">Beta</span>. To enable Scriptable Answers and Pinboards, contact ThoughtSpot Support.
 
-In ThoughtSpot, you can download Answers to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/worksheets/tsl-answer.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
+In ThoughtSpot, you can download Answers to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/scriptability/tsl-answer.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
 
 This mechanism supports several scenarios that you may encounter:
 
@@ -61,7 +61,7 @@ To export multiple Answers at a time, follow these steps:
     ![Zip file]({{ site.baseurl }}/images/scriptability-cloud-zip-file.png "Zip file")
 
 ## Edit the Answer `.tsl` file
-You can edit the Answer `.tsl` file before you import it. Refer to [Answer TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-answer.html) for the full syntax of the TSL file.
+You can edit the Answer `.tsl` file before you import it. Refer to [Answer TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-answer.html) for the full syntax of the TSL file.
 
 {: id="answer-update"}
 ## Update an Answer
@@ -96,4 +96,4 @@ To migrate an Answer from one cluster to another, follow these steps:
    ![Upload successful]({{ site.baseurl }}/images/scriptability-cloud-successful-import.png "Upload successful")
 
 ## Related Information
-- [Answer TSL specification]({{ site.baseurl }}/admin/worksheets/tsl-answer.html)
+- [Answer TSL specification]({{ site.baseurl }}/admin/scriptability/tsl-answer.html)
