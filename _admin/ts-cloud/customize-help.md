@@ -1,11 +1,11 @@
 ---
 title: [Customize ThoughtSpot Help]
-last_updated: 10/21/2020
+last_updated: 12/15/2020
 summary: You can customize ThoughtSpot Help to be specific to your data, examples, and documentation.
-toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include note.html content="The new Information Center is not customizable. If you have the new Information Center and would like to use the customizable Help menu described in this article, contact ThoughtSpot Support." %}
 
 You can customize the Help menu for your ThoughtSpot application to tailor it to your
 organization. When you configure these Help settings, you set system-wide defaults for all your
@@ -15,7 +15,7 @@ When your ThoughtSpot users click the Help icon, they see a list of links.
 
 ![The help dropdown menu]({{ site.baseurl }}/images/gettingstarted-help-menu.png "The help dropdown menu")
 
-If a user clicks on the **help** link, the customizable help menu opens:
+If a user clicks on the **Help** link, the customizable help menu opens:
 
 ![The customizable help menu]({{ site.baseurl }}/images/gettingstarted-helpbox.png "The customizable help menu")
 

@@ -46,4 +46,4 @@ Your onboarding experience begins when you login for the first time.
 
 If you are a new user and you did not experience onboarding, please contact your administrator and request that they configure it for you and other new users.
 
-You can always get additional help. As you start to use ThoughtSpot, we recommend that you review [Getting Started]({{ site.baseurl }}/end-user/introduction/getting-started.html).
+You can always get additional help. As you start to use ThoughtSpot, we recommend that you review [More help and support]({{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html).
