@@ -1,7 +1,7 @@
 ---
 title: [Select chart color palettes]
 summary: You can change the color palettes that are used to create your charts.
-last_updated: 3/12/2020
+last_updated: 12/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -22,8 +22,6 @@ If the Style Customization option is not available, [contact ThoughtSpot Support
     All of the colors in the primary color palette are used in a chart before any from the secondary palette are used. Therefore, the primary palette usually consists of primary colors.
 
 3. Click the color you would like to change in the **secondary** color palette, and use the color menu to choose your new color. You can also add a HEX color number directly.
-
-     ![Change the secondary color palette]({{ site.baseurl }}/images/stylecustomization-secondary-color.png "Change the secondary color palette")
 
     The colors from the secondary color palette are used after all of the colors have been exhausted from the primary palette. Therefore, the secondary palette usually consists of secondary colors.
 

@@ -1,7 +1,7 @@
 ---
 title: [Create a search from a view]
 
-last_updated: 11/1/2018
+last_updated: 12/14/2020
 summary: "After creating a view, you can select it and search its data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -20,7 +20,7 @@ After creating a view and linking it to related data, you're ready to create you
 
 4. When you have the expected answer, you can create a worksheet to make it easier for you and other people to use. To do this, click **Data**.
 
-5. Click the ellipses icon
+5. Click the **More** menu icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 and select **Create worksheet**.
 
