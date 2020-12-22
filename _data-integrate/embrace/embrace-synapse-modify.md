@@ -1,6 +1,6 @@
 ---
 title: [Modify a Synapse connection]
-last_updated: 1/30/2020
+last_updated: 12/21/2020
 summary: Learn how to modify a Synapse connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,11 +21,9 @@ To edit a Synapse connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Click the name of the connection you want to edit.
-
-   ![Select a connection to edit]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection to edit")
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
@@ -52,11 +50,9 @@ To remap a Synapse connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Click the name of the connection you want to remap.
-
-   ![Select a connection to remap]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection to remap")
 
 4. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
@@ -79,7 +75,7 @@ To remove a column from a Synapse connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Click the name of the connection that contains the column you want to remove.
 
@@ -106,7 +102,7 @@ To delete a table from a Synapse connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Click the name of the connection that contains the table you want to delete.
 
@@ -135,7 +131,7 @@ To delete a Synapse connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Check the box next to the connection you want to delete.
 
@@ -143,7 +139,7 @@ To delete a Synapse connection:
 
    If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
-   ![Dependent objects warning]({{ site.baseurl }}/images/connection-delete-warning.png "Dependent objects warning")
+   ![Dependent objects warning]({{ site.baseurl }}/images/embrace-delete-table-depend.png "Dependent objects warning")
 
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 
