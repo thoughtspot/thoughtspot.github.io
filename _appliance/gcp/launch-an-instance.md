@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 5/7/2020
+last_updated: 12/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -67,8 +67,6 @@ When you create your instance, make sure you set Storage to **Read Write** acces
 1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
 2. Click **Select a Project** from the top bar.
-
-    ![Select a project]({{ site.baseurl }}/images/gcp-selectproj.png "Select a project")
 
 3. Under **Select From**, pick your company's project.
 
