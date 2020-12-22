@@ -1,6 +1,6 @@
 ---
 title: [Add a Teradata connection]
-last_updated: 06/18/2020
+last_updated: 12/21/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,7 +11,7 @@ To add a new connection to Teradata:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
     ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
