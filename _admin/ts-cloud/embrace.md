@@ -12,6 +12,8 @@ If your company stores source data externally in data warehouses, you can use Th
 On ThoughtSpot Cloud, Embrace supports the following external databases:
 - Snowflake
 - Amazon Redshift
+- Google BigQuery
+- Microsoft Azure Synapse
 
 ## How it works
 
@@ -52,6 +54,8 @@ The following matrix compares the specific function support across the different
 <th>Function</th>
 <th>Snowflake</th>
 <th>Amazon<br />Redshift</th>
+<th>Google<br />BigQuery</th>
+<th>Azure<br />Synapse</th>
 </tr>
 </thead>
 <tbody>
@@ -59,9 +63,13 @@ The following matrix compares the specific function support across the different
 <td><code>SOUNDS_LIKE</code></td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>STRING_ MATCH_SCORE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 </tr>
@@ -69,9 +77,13 @@ The following matrix compares the specific function support across the different
 <td><code>EDIT_DISTANCE_WITH_CAP</code></td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>APPROX_SET_CARDINALITY</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 </tr>
@@ -79,15 +91,21 @@ The following matrix compares the specific function support across the different
 <td><code>COUNT_NOT_NULL</code></td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>SPELLS_LIKE</code></td>
 <td>&check;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE</code></td>
 <td>&check;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 </tr>
 </tbody>
@@ -103,6 +121,8 @@ The following matrix captures the specific data type support limitations across 
       <th>Data Type<br></th>
       <th>Snowflake<br></th>
       <th>Amazon<br>Redshift</th>
+      <th>Google<br>BigQuery</th>
+      <th>Azure<br>Synapse</th>
     </tr>
   </thead>
   <tbody>
@@ -110,21 +130,29 @@ The following matrix captures the specific data type support limitations across 
       <td><code>BINARY</code></td>
       <td>&cross;</td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
     </tr>
     <tr>
       <td><code>VARBINARY</code></td>
       <td>&cross;</td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
     </tr>
     <tr>
       <td><code>TIMESTAMPTZ</code></td>
       <td>&check;</td>
+      <td>&cross;</td>
+      <td>&cross;</td>
       <td>&cross;</td>
     </tr>
     <tr>
       <td><code>GEOMETRY</code></td>
       <td>&check;</td>
       <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
     </tr>
   </tbody>
 </table>
