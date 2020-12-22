@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts6.oct.cl
+  docversion: ts6.dec.cl
   # version: tscloud.6
   sections:
 # Needed for PDF output only; no titles in this section
