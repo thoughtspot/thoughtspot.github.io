@@ -187,3 +187,7 @@ The following list captures the specific limitations across the different databa
 Create the connection between ThoughtSpot and tables in an external Snowflake database.
 -   **[Add a Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.
+-   **[Add a Google BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
+-   **[Add an Azure Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
