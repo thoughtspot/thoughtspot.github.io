@@ -68,7 +68,8 @@ ThoughtSpot uses static ports for inbound and outbound access to a cluster.
 |389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
 |8086|HTTPS|HTTPS|outbound|All nodes|https://pinheads-1da40166.influxcloud.net|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
 
-In releases 4.5.1 and later, port 8086 is not required for transferring data to InfluxCloud. The following port can be opened instead:  
+### Required port for outbound connectivity to partner services
+In releases 4.5.1 and later, port 8086 is not required for transferring data to InfluxCloud. Open the following port instead:  
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|  
 |----|--------|------------|---------|------|----------------|-----------|  
