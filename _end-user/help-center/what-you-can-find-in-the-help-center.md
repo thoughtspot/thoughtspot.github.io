@@ -2,7 +2,7 @@
 title: [More help and support]
 tags: [keywords]
 keywords: tbd
-last_updated: tbd
+last_updated: 1/6/2021
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -103,7 +103,4 @@ The `how to` keyword takes you into the documentation only. The `help` keyword
 allows you to jump directly into a product workflow. -->
 
 ## Support contact information
-
-If you still can't find what you're looking for, you can contact support.
-
-![]({{ site.baseurl }}/images/help_center_support_contact.png "Contact support")
+If you still can't find what you're looking for, you can [ask the ThoughtSpot community a question](https://community.thoughtspot.com/s/){: target="_blank"}, or [submit a case to ThoughtSpot Support](https://community.thoughtspot.com/customers/s/contactsupport){: target="_blank"}.
