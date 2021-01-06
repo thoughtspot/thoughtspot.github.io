@@ -1,6 +1,6 @@
 ---
 title: [More help and support]
-last_updated: 1/17/2020
+last_updated: 1/6/2021
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,8 +28,7 @@ You can navigate to this documentation from inside the ThoughtSpot application
 as well. In this case, the application links directly to the documentation
 version that matches your product version. Click the help icon ![]({{ site.baseurl }}/images/icon-help-20px.png "The help icon"){: .inline} next to your profile, and select **Help**.
 
-![The help menu]({{ site.baseurl }}/images/gettingstarted-helptohelp.png "The help menu")
-<!--{% include image.html file="gettingstarted-helptohelp.png" title="The help menu" alt="If you click on the help icon at the top right of your screen, you can click on Help and open the help menu." caption="The help menu" %}-->
+![The help menu]({{ site.baseurl }}/images/help-menus.png "The help menu")
 
 The **Help** dialog box links you to the following:
 
@@ -43,11 +42,7 @@ The **Help** dialog box links you to the following:
     <th>Takes you to ...</th>
   </tr>
   <tr>
-    <th>How search works</th>
-    <td>A short video that explains how to use the <strong>Search</strong> bar.</td>
-  </tr>
-  <tr>
-    <th>Keywords</th>
+    <th>Keyword reference</th>
     <td>A product keyword reference.</td>
   </tr>
   <tr>
@@ -58,16 +53,11 @@ The **Help** dialog box links you to the following:
     <th>Documentation</th>
     <td>The documentation set for your ThoughtSpot version.</td>
   </tr>
-  <tr>
-    <th>Downloads</th>
-    <td>A list of software downloads, such as connectors.</td>
-  </tr>
 </table>
 
-At the bottom of the **Help** dialog box, you can see a link to contact Support as
-well as the version of ThoughtSpot you are using.
+At the bottom of the **Help** dialog box, you can see a link to ask the ThoughtSpot community a question, a link to submit a case to ThoughtSpot Support, and the version of ThoughtSpot you are using.
 
-## Getting started
+## Information Center
 The **Information Center** teaches you about ThoughtSpot through a navigation overview and a series of short videos. You can show or hide the Information Center from the help menu. To show or hide it for your whole organization, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 Refer to [Information Center]({{ site.baseurl }}/end-user/introduction/getting-started.html).
@@ -92,12 +82,10 @@ the following:
 3. Select the **Learn how to use ThoughtSpot** pinboard.
 
    ![Add to the Learn pinboard]({{ site.baseurl }}/images/gettingstarted-learn.png "Add to the Learn pinboard")
-   <!--{% include image.html file="gettingstarted-learn.png" title="Add to the Learn pinboard" alt="As an administrator, you can pin any answer to the Learn how to use ThoughtSpot pinboard, allowing users to watch a replay of that search." caption="Add to the Learn pinboard" %}-->
 
 4. Navigate to the *Learn* center to replay your search.
 
     ![The Learn center]({{ site.baseurl }}/images/gettingstarted-learnpage.png "The Learn center")
-    <!--{% include image.html file="gettingstarted-learnpage.png" title="The Learn center" alt="Navigate to the Learn center to replay a search." caption="The Learn center" %}-->
 
 <!-- ## Search the help in search bar
 
@@ -112,13 +100,11 @@ allows you to jump directly into a product workflow. -->
 **Expert requests** takes you to the Expert Requests interface, where you can view your own questions or answer other users' questions.
 
 ![Expert requests]({{ site.baseurl }}/images/expertrequests.png "Expert requests")
-<!--{% include image.html file="expertrequests.png" title="Expert requests" alt="View and answer ask an expert questions by clicking on Expert Requests from the Help menu." caption="Expert requests" %}-->
 
 Refer to [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
 ## Support contact information
 
-If you still can't find what you're looking for, you can contact support.
+If you still can't find what you're looking for, you can [ask the ThoughtSpot community a question](https://community.thoughtspot.com/s/){: target="_blank"}, or [submit a case to ThoughtSpot Support](https://community.thoughtspot.com/customers/s/contactsupport){: target="_blank"}.
 
-![Contact support]({{ site.baseurl }}/images/gettingstarted-contactsupport.png "Contact support")
-<!--{% include image.html file="gettingstarted-contactsupport.png" title="Contact support" alt="You can contact support from the Help menu." caption="Contact support"%}-->
+![Contact support or the ThoughtSpot community]({{ site.baseurl }}/images/contact-support-community.png "Contact support or the ThoughtSpot Community")
