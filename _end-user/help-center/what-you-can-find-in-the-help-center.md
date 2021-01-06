@@ -1,6 +1,6 @@
 ---
 title: [More help and support]
-last_updated: 1/17/2020
+last_updated: 1/6/2021
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -117,8 +117,4 @@ allows you to jump directly into a product workflow. -->
 Refer to [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
 ## Support contact information
-
-If you still can't find what you're looking for, you can contact support.
-
-![Contact support]({{ site.baseurl }}/images/gettingstarted-contactsupport.png "Contact support")
-<!--{% include image.html file="gettingstarted-contactsupport.png" title="Contact support" alt="You can contact support from the Help menu." caption="Contact support"%}-->
+If you still can't find what you're looking for, you can [ask the ThoughtSpot community a question](https://community.thoughtspot.com/s/){: target="_blank"}, or [submit a case to ThoughtSpot Support](https://community.thoughtspot.com/customers/s/contactsupport){: target="_blank"}.
