@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 4/24/2020
+last_updated: 1/7/2021
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -954,6 +954,44 @@ This subcommand has the following option:
  </dlentry>
 </dl>
 
+{: id="tscli-config-mode"}
+### config-mode
+
+```
+tscli config-mode [-h] {lean}
+```
+
+This subcommand has the following option:
+
+<dl>
+  <dlentry>
+    <dt><code>tscli config-mode lean</code></dt>
+    <dd>Applies lean configuration for a particular instance type, with the following parameter:
+    <dl><dlentry>
+    <dt><code>--type {small,medium,default}</code></dt>
+    <dd>Specifies the type of configuration to apply.</dd></dlentry>
+    </dl>
+    </dd></dlentry>
+</dl>
+
+{: id="tscli-dataflow"}
+### dataflow
+
+```
+tscli dataflow [-h] {disable,enable}
+```
+
+This subcommand has the following options:
+
+<dl>
+  <dlentry>
+    <dt><code>tscli config-mode disable</code></dt>
+    <dd>Disables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster.</dd></dlentry>
+    <dlentry>
+      <dt><code>tscli config-mode enable</code></dt>
+      <dd>Enables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster, with token authentication.</dd></dlentry>
+</dl>
+
 {: id="tscli-dr-mirror"}
 ###  dr-mirror
 
@@ -981,8 +1019,12 @@ This subcommand has the following options:
     <dd>The ID of the mirror cluster.</dd></dlentry>
     <dlentry>
     <dt><code>--email <em>EMAIL</em></code></dt>
-    <dd><p>Option alert email setting.</p>
-    <p>The default is <code>later</code>.</p></dd></dlentry></dl>
+    <dd><p>Optional alert email setting.</p>
+    <p>The default is <code>later</code>.</p></dd></dlentry>
+    <dlentry>
+    <dt><code>--skip_unmounted_drives</code></dt>
+    <dd><p>Skips unmounted drives during disaster recovery.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry></dl>
     </dd></dlentry>
   <dlentry>
     <dt><code>tscli dr-mirror status</code></dt>
@@ -992,123 +1034,7 @@ This subcommand has the following options:
     <dd>Stops mirroring on the local cluster.</dd></dlentry>
 </dl>
 
-{: id="etl"}
-### etl
-
-```
-tscli etl [-h] {change-password,disable-lw,download-agent,enable-lw,show-lw}
-```
-
-This subcommand has the following options:
-
-<dl>
-  <dlentry>
-    <dt><code>tscli etl change-password</code></dt>
-    <dd>Changes the Informatica Cloud account password used by ThoughtSpot Data Connect, with the following parameters:
-
-      <dl>
-        <dlentry>
-          <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
-          <dd>Specifies the Administrator username for ThoughtSpot.</dd></dlentry>
-        <dlentry>
-          <dt><code>--username <em>USERNAME</em></code></dt>
-          <dd>Specifies the username for Informatica Cloud.</dd></dlentry>
-        <dlentry>
-          <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
-          <dd>The maximum time in seconds to wait for the Data Connect agent to start.</dd></dlentry>
-        <dlentry>
-          <dt><code>--isIICS</code></dt>
-          <dd>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</dd>
-          </dlentry>
-      </dl></dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli etl disable-lw</code></dt>
-    <dd>Disables ThoughtSpot Data Connect.</dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli etl download-agent</code></dt>
-    <dd>Downloads the ThoughtSpot Data Connect agent to the cluster, with the following parameters:
-    <dl>
-      <dlentry>
-      <dt><code>--push_to_all</code></dt>
-      <dd><p>Pushes the downloaded installer to all nodes.</p>
-      <p>The default is <code>False</code>.</p></dd>
-      </dlentry>
-      <dlentry>
-      <dt><code>--proxy_host <em>PROXY_HOST</em></code></dt>
-      <dd>Specify your proxy server host for network access.</dd>
-      </dlentry>
-      <dlentry>
-      <dt><code>--proxy_port <em>PROXY_PORT</em></code></dt>
-      <dd>Specify your proxy server port.</dd>
-      </dlentry>
-      <dlentry>
-      <dt><code>--proxy_username <em>PROXY_USERNAME</em></code></dt>
-      <dd>Specify your proxy server username.</dd>
-      </dlentry>
-      <dlentry>
-      <dt><code>--isIICS</code></dt>
-      <dd><p>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</p>
-      <p>The default is <code>False</code>.</p></dd>
-      </dlentry>
-    </dl></dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli etl enable-lw</code></dt>
-
-    <dd><p>Enables Data Connect.Contact ThoughtSpot Support for assistance in setting this up.</p>
-    <p>This subcommand has the following parameters:</p>
-
-      <dl>
-        <dlentry>
-          <dt><code>--username <em>USERNAME</em></code></dt>
-          <dd>Username for Informatica Cloud</dd></dlentry>
-        <dlentry>
-          <dt><code>--thoughtspot_url THOUGHTSPOT_URL</code></dt>
-          <dd>URL to reach ThoughtSpot.</dd></dlentry>
-        <dlentry>
-          <dt><code>--admin_username <em>ADMIN_USERNAME</em></code></dt>
-          <dd>Admin username for ThoughtSpot</dd></dlentry>
-        <dlentry>
-          <dt><code>--groupname <em>GROUPNAME</em></code></dt>
-          <dd>Name of the secure agent group to use.</dd></dlentry>
-        <dlentry>
-          <dt><code>--org_id <em>ORG_ID</em></code></dt>
-          <dd>Specifies the Informatica <code>id</code> of the company.<!--For ThoughtSpot, this is `001ZFA`. `org_id` shouldn't include the prefix `Org`. For example, if on Informatica cloud, the `orgid` is `Org003XYZ`, then use only--></dd></dlentry>
-        <dlentry>
-          <dt><code>--pin_to <em>PIN_TO</em></code></dt>
-          <dd>Specifies the IP address to pin to. If you specify an IP to pin to, that node becomes sticky
-      to the Informatica agent, and will always be used. Defaults to the public IP
-      address of the localhost where this command was run.</dd></dlentry>
-        <dlentry>
-          <dt><code>--proxy_host <em>PROXY_HOST</em></code></dt>
-          <dd>Proxy server host for network access.</dd></dlentry>
-        <dlentry>
-          <dt><code>--proxy_port <em>PROXY_PORT</em></code></dt>
-          <dd>Proxy server port.</dd></dlentry>
-        <dlentry>
-          <dt><code>--proxy_username <em>PROXY_USERNAME</em></code></dt>
-          <dd>Proxy server username.</dd></dlentry>
-        <dlentry>
-          <dt><code>--max_wait <em>MAX_WAIT</em></code></dt>
-          <dd>Maximum time in seconds to wait for Data Connect agent to start.</dd></dlentry>
-        <dlentry>
-          <dt><code>--isIICS</code></dt>
-          <dd><p>This flag identifies whether Informatica is in IICS or ICS mode. By default, Informatica is in ICS mode.</p>
-          <p>The default is <code>False</code>.</p></dd>
-          </dlentry>
-      </dl></dd></dlentry>
-
-  <dlentry>
-     <dt><code>tscli etl show-lw</code></dt>
-     <dd>
-       <p>Shows the status of ThoughtSpot Data Connect.</p>
-       <p>It also returns the Informatica username and OrgId.</p></dd></dlentry>
-
-</dl>
 {: id="tscli-event"}
-
 ### event
 ```
 tscli event [-h] {list}
@@ -1147,7 +1073,7 @@ This subcommand has the following option:
         <dlentry>
           <dt><code>--detail</code></dt>
           <dd>
-            <p>Prints events in detail format. This is not tabular. Default is a tabular summary.</p>
+            <p>Prints events in detail format. This is not tabular. The default is a tabular summary.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--summary_contains <em>SUMMARY_CONTAINS</em></code></dt>
@@ -1173,7 +1099,7 @@ This subcommand has the following option:
 <dl>
   <dlentry>
     <dt><code>tscli feature get-all-config</code></dt>
-    <dd>Gets the configured features in a cluster. The command returns a list of features, such as custom branding, Data Connect, and callhome, and informs whether they are enabled or disabled. This subcommand has the following parameter:
+    <dd>Gets the configured features in a cluster. The command returns a list of features, such as custom branding and callhome, and informs whether they are enabled or disabled. This subcommand has the following parameter:
     <dl><dlentry>
     <dt><code>--proto</code></dt>
     <dd><p>Shows the output as a serialized proto.</p>
@@ -1247,10 +1173,10 @@ This subcommand has the following options:
          <dd>Password of the fileserver. This is required and the command prompts you for it if you do not supply it.</dd></dlentry>
        <dlentry>
          <dt><code>--file_name <em>FILE_NAME</em></code></dt>
-         <dd>Local file to upload.</dd></dlentry>
+         <dd>Name of the local file to upload.</dd></dlentry>
        <dlentry>
          <dt><code>--server_dir_path <em>SERVER_DIR_PATH</em></code></dt>
-         <dd>Directory path on fileserver. The <code>SERVER_DIR_PATH</code> parameter specifies the directory for file upload. It is based on customer name, and takes the form <code>/Shared/support/<em>customer_name</em></code>.</dd></dlentry>
+         <dd>Directory path on fileserver. The <code>SERVER_DIR_PATH</code> parameter specifies the directory for file upload. It is based on the customer name, and takes the form <code>/Shared/support/<em>customer_name</em></code>.</dd></dlentry>
    </dl>
    </dd></dlentry>
 </dl>
@@ -1268,15 +1194,15 @@ This subcommand has the following options:
     <dt><code>tscli firewall close-ports --ports <em>PORTS</em></code></dt>
     <dd>
       <p>Closes specified ports through firewall on all nodes.</p>
-      <p>Accepts a comma-separated list of ports. Only closes ports that were previously opened using <code>open-ports</code>, and ignores ports that were not opened with <code>open-port</code>, or closed ports.</p>
+      <p>Accepts a comma-separated list of ports. Only closes ports that were previously opened using <code>open-ports</code>, and ignores closed ports and ports that were not opened with <code>open-port</code>.</p>
       <p>Some essential ports are always kept open, such as <code>ssh</code>; they are not affected by this command
   or by <code>open-ports</code>.</p></dd></dlentry>
   <dlentry>
     <dt><code>tscli firewall disable</code></dt>
-    <dd>Disables firewall.</dd></dlentry>
+    <dd>Disables the cluster network firewall.</dd></dlentry>
    <dlentry>
      <dt><code>tscli firewall enable</code></dt>
-     <dd>Enables firewall.</dd></dlentry>
+     <dd>Enables the cluster network firewall.</dd></dlentry>
    <dlentry>
      <dt><code>tscli firewall open-ports --ports <em>PORTS</em></code></dt>
      <dd>
@@ -1504,24 +1430,24 @@ This subcommand has the following options:
     <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
       <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
-      <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
+      <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append <code>--offline --tar <em>TAR</em> --md5 <em>MD5</em></code> to the <code>tscli map-tiles enable</code> command. This command has the following parameters:</p>
       <dl>
         <dlentry>
           <dt><code>--online</code></dt>
           <dd>
-            <p>Downloads <code>maptiles</code> tar from internet.</p>
+            <p>Downloads <code>maptiles</code> tar from the internet.</p>
             <p>The default setting is <code>True</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--offline</code></dt>
           <dd>
-            <p>Specifies that you are using <code>maptiles</code> tar from a local disk.</p>
+            <p>Specifies that you are using <code>maptiles</code> tar from a local disk. Use during offline enablement of map-tiles.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--tar <em>TAR</em></code></dt>
-          <dd>Specified tar file for map-tiles.</dd></dlentry>
+          <dd>Specified tar file for map-tiles. Use during offline enablement of map-tiles.</dd></dlentry>
         <dlentry>
           <dt><code>--md5 <em>MD5</em></code></dt>
-          <dd>Specified md5 file for map-tiles.</dd></dlentry>
+          <dd>Specified md5 file for map-tiles. Use during offline enablement of map-tiles.</dd></dlentry>
       </dl>
 
     </dd></dlentry>  
@@ -1570,7 +1496,7 @@ This subcommand has the following options:
        <dlentry>
          <dt><code>--heartbeat_disable</code></dt>
          <dd><p>Disables heartbeat email generation.</p>
-         <p>The default is <code>False</code>.</p></dd></dlentry>
+         <p>The default is <code>True</code>.</p></dd></dlentry>
 
       </dl>
     </dd></dlentry>
@@ -1596,10 +1522,10 @@ This subcommand has the following options:
     <dd>Lists mounts managed by NAS mounter service.</dd></dlentry>
 
  <dlentry>
-    <dt><code>tscli nas mount-cifs [-h] --server <em>SERVER</em> [--path_on_server <em>PATH_ON_SERVER</em>] --mount_point <em>MOUNT_POINT</em>--username <em>USERNAME</em> --password <em>PASSWORD</em> [--uid <em>UID</em>] [--gid <em>GID</em>] [--options <em>OPTIONS</em>]</code></dt>
+    <dt><code>tscli nas mount-cifs [-h] --server <em>SERVER</em> [--path_on_server <em>PATH_ON_SERVER</em>] --mount_point <em>MOUNT_POINT</em>--username <em>USERNAME</em> [--password <em>PASSWORD</em>] [--uid <em>UID</em>] [--gid <em>GID</em>] [--options <em>OPTIONS</em>]</code></dt>
     <dd>
 
-    <p>Mounts a CIFS device on all nodes.</p>
+    <p>Mounts a CIFS file system on all nodes.</p>
     <p>Accepts the following optional flags:</p>
 
     <dl>
@@ -1684,7 +1610,7 @@ This subcommand has the following options:
             <p>Command-line options to mount.</p>
             <p>The default setting is <code>noexec</code>.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--protocol <em>PROTO</em></code></dt>
+          <dt><code>--protocol {nfs,nfs4}</code></dt>
           <dd>
             <p>Protocol to use for mounting, either <code>nfs</code> or <code>nfs4</code>.</p>
             <p>The default is <code>nfs</code>.</p></dd></dlentry>
@@ -1693,11 +1619,31 @@ This subcommand has the following options:
        </dlentry>
 
   <dlentry>
-    <dt><code>tscli nas unmount [-h] --dir <em>DIR</em></code></dt>
+    <dt><code>tscli nas unmount [-h] --mount_point <em>MOUNT_POINT</em></code></dt>
     <dd>
-      <p>Unmounts all devices from the specified directory, <code>DIR</code>.</p>
+      <p>Unmounts NAS filesystem from the specified mount point, <code>MOUNT_POINT</code>.</p>
       <p>This command returns an error if nothing is currently mounted on this directory through <code>tscli nas mount</code>.</p></dd></dlentry>
 
+</dl>
+
+{: id="tscli-nitro-switch"}
+### nitro-switch
+
+```
+tscli nitro-switch [-h] {disable,enable}
+```
+
+This subcommand has the following options:
+
+<dl>
+  <dlentry>
+    <dt><code>tscli nitro-switch disable</code></dt>
+    <dd>Disables the ability to switch instance types between nitro and non-nitro instance types.
+    </dd></dlentry>
+    <dlentry>
+      <dt><code>tscli nitro-switch enable</code></dt>
+      <dd>Enables the ability to switch instance types between nitro and non-nitro instance types.
+      </dd></dlentry>
 </dl>
 
 {: id="tscli-node"}
@@ -1824,12 +1770,16 @@ This subcommand has the following options:
     <dt><code>tscli patch apply [-h] [<em>release</em>]</code></dt>
     <dd>
       <p>Applies the patch on an existing cluster, with the specified <code><em>release</em></code>.</p>
-      <p>Accepts the following flag:</p>
+      <p>Accepts the following flags:</p>
       <dl>
         <dlentry>
           <dt><code>--skip-check</code></dt>
           <dd><p>When set, skips all pre-apply checks.</p>
           <p>The default is <code>False</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--auto-abort</code></dt>
+            <dd><p>When set, the patch application aborts on failure.</p>
+            <p>The default is <code>False</code>.</p></dd></dlentry>
           </dl>
       </dd></dlentry>
 
@@ -1868,7 +1818,7 @@ This subcommand has the following options:
 
     <dlentry>
       <dt><code>tscli patch resume-apply [-h]</code></dt>
-      <dd>Resumes patch apply.</dd></dlentry>
+      <dd>Resumes patch application.</dd></dlentry>
 
     <dlentry>
       <dt><code>tscli patch resume-rollback [-h]</code></dt>
@@ -1908,7 +1858,7 @@ This subcommand has the following options:
 <dlentry>
 <dt><code>tscli rpackage add [-h] [--repo <em>REPO</em>] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
 <dd>
-<p>Command to add an R package, <code>package_name</code>, to the cluster.</p>
+<p>Command to add a specified R package, <code>package_name</code>, to the cluster.</p>
 <p>Accepts the following flags:</p>
 <dl>
 <dlentry>
@@ -1930,17 +1880,17 @@ This subcommand has the following options:
 <dlentry>
 <dt><code>tscli rpackage delete [-h] [--timeout <em>TIMEOUT</em>] [--dest_dir <em>DEST_DIR</em>] [--nodes <em>NODES</em>] <em>package_name</em></code></dt>
 <dd>
-<p>Command to delete an installed R package from the cluster.</p>
+<p>Command to delete a specified R package, <code>package_name</code>, from the cluster.</p>
 <p>Accepts the following flags:</p>
 <dl>
 <dlentry>
-<dt><code>--timeout <em>REPO</em></code></dt>
+<dt><code>--timeout <em>TIMEOUT</em></code></dt>
 <dd>
 <p>Timeout waiting for the R Package to be removed.</p>
 <p>The default is 60.</p>
 </dd></dlentry>
 <dlentry>
-<dt><code>--dest_dir <em>REPO</em></code></dt>
+<dt><code>--dest_dir <em>DEST_DIR</em></code></dt>
 <dd>Directory where the output of this command should be saved.</dd></dlentry>
 <dlentry>
 <dt><code>--nodes <em>NODES</em></code></dt>
@@ -1985,7 +1935,7 @@ To see a list of prerequisites, refer to [Configure SAML]({{ site.baseurl }}/adm
 ### scheduled-pinboards
 
 ```
-tscli scheduled-pinboards [-h] {disable,enable}
+tscli scheduled-pinboards [-h] {disable,enable,status}
 ```
 
 This subcommand has the following options:
@@ -1997,6 +1947,9 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli scheduled-pinboards enable [-h]</code></dt>
     <dd>Enables scheduled pinboards, which are disabled in prod clusters by default.</dd></dlentry>
+    <dlentry>
+      <dt><code>tscli scheduled-pinboards status [-h]</code></dt>
+      <dd>Shows the status of scheduled pinboards for the cluster.</dd></dlentry>
   </dl>
 
 {% include note.html content="When you enable scheduled pinboards, you should
@@ -2031,7 +1984,7 @@ This subcommand has the following option:
 ###  smtp
 
 ```
-tscli smtp [-h] {remove-mailfromname,remove-mailname,remove-relayhost,remove-saslcredentials,reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-relayhost,set-saslcredentials,show-canonical-mapping,show-mailfromname,show-mailname,show-relayhost}
+tscli smtp [-h] {remove-mailfromname,remove-mailname,remove-realname,remove-relayhost,remove-saslcredentials,reset-canonical-mapping,set-canonical-mapping,set-mailfromname,set-mailname,set-realname,set-relayhost,set-saslcredentials,show-canonical-mapping,show-mailfromname,show-mailname,show-realname,show-relayhost}
 ```
 
 This subcommand has the following options:
@@ -2045,6 +1998,9 @@ This subcommand has the following options:
     <dt><code>tscli smtp remove-mailname</code></dt>
     <dd><p>Removes current cluster mail name.</p>
     <p>It is the second half of the email address, the part after the @ sign. In <em>example@company.com</em>, it is <em>company</em>.</p></dd></dlentry>
+  <dlentry>
+    <dt><code>tscli smtp remove-realname</code></dt>
+    <dd>Removes current cluster realname.</dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp remove-relayhost</code></dt>
   <dd>Removes current cluster relay host.</dd></dlentry>
@@ -2067,6 +2023,9 @@ This subcommand has the following options:
   <dt><code>tscli smtp set-mailname <em>mailname</em></code></dt>
   <dd><p>Sets the domain from where email alerts are sent for the cluster.</p>
   <p>It is the second half of the email address, the part after the @ sign. In <em>example@company.com</em>, it is <em>company</em>.</p></dd></dlentry>
+<dlentry>
+  <dt><code>tscli smtp set-realname</code></dt>
+  <dd>Sets the realname for the cluster.</dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] <em>relayhost</em></code></dt>
   <dd>
@@ -2098,6 +2057,9 @@ This subcommand has the following options:
 <dlentry>
     <dt><code>tscli smtp show-mailname</code></dt>
   <dd>Shows the mailname, from which email alerts are sent, for the cluster.</dd></dlentry>
+  <dlentry>
+      <dt><code>tscli smtp show-realname</code></dt>
+    <dd>Shows the realname for the cluster.</dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp show-relayhost</code></dt>
   <dd>
@@ -2118,7 +2080,7 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base <em>BASE</em>] [--storage_type {local,nas}] [--remote] [--no-orion-master] <em>name</em> <em>out</em></code></dt>
+    <dt><code>tscli snapshot backup [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base <em>BASE</em>] [--storage_type {local,nas,s3a,gcs}] [--remote] [--no-orion-master] [--bucket_name <em>BUCKET_NAME</em>] [--staging_dir <em>STAGING_DIR</em>] <em>name</em> <em>out</em></code></dt>
   <dd>
     <p>Pulls snapshot out as a backup.</p>
     <p>This command has the following required elements:</p>
@@ -2149,7 +2111,7 @@ This subcommand has the following options:
           <p>Incremental backup is not implemented yet.</p>
         </dd></dlentry>
       <dlentry>
-        <dt><code>storage_type {local,nas}</code></dt>
+        <dt><code>storage_type {local,nas,s3a,gcs}</code></dt>
         <dd><p>Storage type of output directory.</p>
         <p>The default is <code>local</code>.</p></dd></dlentry>
       <dlentry>
@@ -2159,14 +2121,14 @@ This subcommand has the following options:
         <dlentry>
           <dt><code>--no-orion-master</code></dt>
           <dd><p>Specifies whether orion master is available during backup</p>
-          <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+          <p>The default is <code>False</code>.</p></dd></dlentry>
           <dlentry>
           <dt><code>--bucket_name BUCKET_NAME</code></dt>
-           <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+           <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>s3a</code> or <code>gcs</code>.</dd>
           </dlentry>
           <dlentry>
           <dt><code>--staging_dir STAGING_DIR</code></dt>
-           <dd>Used for staging hdfs data in cloud based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+           <dd>Used for staging hdfs data in cloud-based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>s3a</code> or <code>gcs</code>.</dd>
           </dlentry></dl>
     </dd></dlentry>
   <dlentry>
@@ -2206,7 +2168,7 @@ This subcommand has the following options:
 <dlentry>
   <dt><code>tscli snapshot update-ttl [-h] [--disable <em>DISABLE</em>] <em>name</em> <em>ttl</em></code></dt>
   <dd><p>Updates manual snapshot garbage collection policy.</p>
-    <p>Accepts the following flags:</p>
+    <p>Accepts the following flags. <code>name</code> and <code>ttl</code> are required.</p>
     <dl>
       <dlentry>
         <dt><code>name</code></dt>
@@ -2275,7 +2237,7 @@ This subcommand has the following options:
 ### ssl
 
 ```
-tscli ssl [-h] {add-cert,add-valid-hosts,clear-min-tls-version,off,on,remove-valid-hosts,rm-cert,set-alert-days,set-min-tls-version,status,tls-status}
+tscli ssl [-h] {add-cert,add-valid-hosts,clear-min-tls-version,enable-dhparam,get-dhparam,off,on,remove-valid-hosts,reset-cipher,revert-dhparam,rm-cert,set-alert-days,set-cipher,set-min-tls-version,show-valid-hosts,status,tls-status}
 ```        
 This subcommand manages the SSL configuration.
 
@@ -2313,6 +2275,20 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
+    <dt><code>tscli ssl enable-dhparam [-h] [--key_size <em>KEY_SIZE</em>]</code></dt>
+    <dd>Enables stronger SSL DH parameters, with the following optional parameter:
+    <dl>
+    <dlentry><dt><code>--key_size <em>KEY_SIZE</em></code></dt>
+    <dd><p>The key size in bits.</p>
+    <p>The default is <code>2048</code>.</p></dd></dlentry></dl></dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl get-dhparam [-h] [--key_size <em>KEY_SIZE</em>]</code></dt>
+    <dd>Displays the current SSL DH parameters.</dd>
+  </dlentry>
+
+  <dlentry>
     <dt><code>tscli ssl off</code></dt>
     <dd>Disables SSL. Disabling SSL will stop users from seeing a security warning
     when accessing ThoughtSpot from a browser if there is no SSL certificate
@@ -2330,6 +2306,16 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
+    <dt><code>tscli ssl reset-cipher</code></dt>
+    <dd>Resets SSL cipher list to factory default of EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl revert-dhparam</code></dt>
+    <dd>Reverts current SSL DH parameters to the default key size of 1024 bits.</dd>
+  </dlentry>
+
+  <dlentry>
     <dt><code>tscli ssl rm-cert</code></dt>
     <dd>Removes the existing SSL certificate, if any. Reverts to default self-signed certificate.</dd>
   </dlentry>
@@ -2341,8 +2327,20 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
+    <dt><code>tscli ssl set-cipher <em>cipher</em></code></dt>
+    <dd>Specify enabled ciphers, with the following parameter:
+    <dl><dlentry><dt><code>cipher</code></dt>
+    <dd>Cipher list following openssl format.</dd></dlentry></dl></dd>
+  </dlentry>
+
+  <dlentry>
     <dt><code>tscli ssl set-min-tls-version <em>{1.0,1.1,1.2}</em></code></dt>
     <dd>Sets a specified minimum supported TLS version. Sets the minimum SSL version to be supported by the ThoughtSpot application. You must ensure that client browsers are enabled for this version or newer.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli ssl show-valid-hosts</code></dt>
+    <dd>Displays the valid hosts.</dd>
   </dlentry>
 
   <dlentry>
@@ -2369,8 +2367,8 @@ This subcommand uses system security services daemon (SSSD), and has the followi
 <dl>
 
 <dlentry id="tscli-sssd-clear-sudo-group">
-  <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
-  <dd>Clears a specified AD sudo group so that they no longer have <code>sudo</code> permissions.</dd>
+  <dt><code>tscli sssd clear-sudo-group </code></dt>
+  <dd>Clears any set AD sudo group so that they no longer have <code>sudo</code> permissions.</dd>
 </dlentry>
 
 <dlentry id="tscli-sssd-disable">
@@ -2425,7 +2423,7 @@ This subcommand uses system security services daemon (SSSD), and has the followi
   </dlentry>
 
   <dlentry id="tscli-sssd-set-sudo-group">
-    <dt><code>tscli sssd set-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
+    <dt><code>tscli sssd set-sudo-group <em>sudo_group</em></code></dt>
     <dd>Allows <code>sudo</code> permissions for a specified AD group.</dd>
   </dlentry>
 
@@ -2479,13 +2477,14 @@ This subcommand has the following options:
       <dlentry><dt><code>--localhost_only</code></dt>
         <p>Only removes the logs on the local host. If not specified, the
            command acts on the entire cluster.</p>
+          <p>The default is <code>False</code>.</p>
       </dlentry>
     </dl>
     </dd>
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli storage df [--mode disk|hdfs]</code></dt>
+    <dt><code>tscli storage df </code></dt>
     <dd>Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command <code>df -h <em>directory</em></code>.</dd>
   </dlentry>
 
@@ -2496,10 +2495,7 @@ This subcommand has the following options:
 
 ```
 tscli support [-h]
-   {bundle, restart-remote, rm-admin-email, rm-admin-phone, rm-feedback-email,
-    set-admin-email, set-admin-phone, set-debug-ui-password, set-feedback-email,
-    set-remote, show-admin-email, show-admin-phone, show-feedback-email,
-    show-remote, start-remote, stop-remote}
+   {bundle,remove-maintenance,restart-remote,rm-admin-email,rm-admin-phone,rm-feedback-email,schedule-maintenance,set-admin-email,set-admin-phone,set-debug-ui-password,set-feedback-email,set-remote,show-admin-email,show-admin-phone,show-feedback-email,show-remote,start-remote,stop-remote}
 
 ```
 This subcommand has the following options:
@@ -2570,6 +2566,11 @@ This subcommand has the following options:
       </dl></dd></dlentry>
 
 <dlentry>
+  <dt><code>tscli support remove-maintenance</code></dt>
+  <dd>Removes a scheduled maintenance.</dd>
+</dlentry>
+
+<dlentry>
   <dt><code>tscli support restart-remote</code></dt>
   <dd>Restarts remote support.</dd>
 </dlentry>
@@ -2590,6 +2591,25 @@ This subcommand has the following options:
 </dlentry>
 
 <dlentry>
+  <dt><code>tscli support schedule-maintenance [-h] [--start_time START_TIME] [--duration_min DURATION_MIN] [--status {scheduled,ad-hoc}] [--type {upgrade,patch}] [--description DESCRIPTION]</code></dt>
+  <dd>Schedules a maintenance window for the cluster, with the following parameters:
+  <dl><dlentry><dt><code>--start_time <em>START_TIME</em></code></dt>
+  <dd>Start time for the scheduled maintenance, in the format <code>MM/DD/YYYY HH:MM</code>.</dd></dlentry>
+  <dlentry><dt><code>--duration_min <em>DURATION_MIN</em></code></dt>
+  <dd><p>Duration, in minutes, of the maintenance window.</p>
+  <p>The default is <code>120</code>.</p></dd></dlentry>
+  <dlentry><dt><code>--status {scheduled,ad-hoc}</code></dt>
+  <dd><p>The type of maintenance event, either <code>scheduled</code> or <code>ad-hoc</code>.</p>
+  <p>The default is <code>scheduled</code>.</p></dd></dlentry>
+  <dlentry><dt><code>--type {upgrade,patch}</code></dt>
+  <dd><p>The type of maintenance event, either <code>upgrade</code> or <code>patch</code>.</p>
+  <p>The default is <code>upgrade</code>.</p></dd></dlentry>
+  <dlentry><dt><code>--description <em>DESCRIPTION</em></code></dt>
+  <dd>Description of the scheduled maintenance event.</dd></dlentry>
+  </dl></dd>
+</dlentry>
+
+<dlentry>
   <dt><code>tscli support set-admin-email <em>email</em></code></dt>
   <dd>Sets the specified email address for contacting the customer administrator.</dd>
 </dlentry>
@@ -2602,6 +2622,14 @@ This subcommand has the following options:
 <dlentry>
   <dt><code>tscli support set-admin-phone <em>phone_number</em></code></dt>
   <dd>Sets the specified phone number for contacting the customer administrator. Specify a phone number using any value, such as <code>+1 800-508-7008 Ext. 1</code>.</dd>
+</dlentry>
+
+<dlentry>
+  <dt><code>tscli support set-debug-ui-password [--stdin_password]</code></dt>
+  <dd>Changes the admin password for the UI debug page, with the following optional parameter:
+  <dl><dlentry><dt><code>--stdin_password</code></dt>
+  <dd><p>Passes the password through stdin for scriptability purposes.</p>
+  <p>The default is <code>False</code></p></dd></dlentry></dl></dd>
 </dlentry>
 
 <dlentry>
@@ -2657,4 +2685,20 @@ This subcommand has the following options:
 <dlentry>
   <dt><code>tscli tokenauthentication disable</code></dt>
   <dd>Purges existing token-based login configuration.</dd></dlentry>
+</dl>
+
+{: id="tscli-update"}
+### update
+
+```
+tscli update [-h] {get-history}
+```
+
+This subcommand has the following options:
+
+<dl>
+  <dlentry>
+    <dt><code>tscli update get-history</code></dt>
+    <dd>Gets update history in csv files.</dd>
+  </dlentry>
 </dl>
