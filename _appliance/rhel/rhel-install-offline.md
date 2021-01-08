@@ -31,7 +31,7 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 To set up the Ansible, follow these steps:
 
 <ol>
-  <li>Obtain the Ansible tarball. <br />Contact <a href="https://community.thoughtspot.com/customers/s/contactsupport" target="_blank">ThoughtSpot Support</a> to request the ansible.
+  <li>Obtain the Ansible tarball. <br />Contact <a href="https://community.thoughtspot.com/customers/s/contactsupport" target="_blank">ThoughtSpot Support</a> to request the ansible.</li>
   <li>Download the Ansible to your local machine.</li>
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br/>
    <dl>
