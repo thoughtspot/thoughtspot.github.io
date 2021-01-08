@@ -23,7 +23,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,config-mode,dataflow,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,nitro-switch,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,spot,ssl,sssd,storage,support,tokenauthentication,update}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,config-mode,dataflow,dr-mirror,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,nitro-switch,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,spot,ssl,sssd,storage,support,tokenauthentication,update}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
