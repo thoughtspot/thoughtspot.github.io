@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.2.1 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.2.1 is now available. These release notes include information about new and enhanced features. 
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
