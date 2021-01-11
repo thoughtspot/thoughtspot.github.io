@@ -21,4 +21,4 @@ Starting in the December Cloud release, ThoughtSpot supports the following new l
 <li> English (India) </li>
 </ul>
 
-To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>. 
+To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>.
