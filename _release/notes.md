@@ -26,6 +26,16 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [6.3 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-3).
 
+### New language support
+
+Starting in the 6.3 release, ThoughtSpot supports the following new locale, including support for language keywords that can be used in the search bar:
+
+<ul>
+<li> English (India) </li>
+</ul>
+
+To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>. 
+
 ### For the Analyst
 
 <dl id="6-3-analyst">
