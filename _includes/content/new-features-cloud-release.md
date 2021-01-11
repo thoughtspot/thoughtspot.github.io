@@ -12,3 +12,13 @@ ThoughtSpot has a new Information Center, accessible from the help icon <strong>
 
 <h3>Embrace passthrough functions</h3>
 Embrace now supports passthrough functions which allow you to send SQL expressions directly to the database, without being interpreted by ThoughtSpot. If you have custom database functions that ThoughtSpot doesn't support, you can use these new passthrough functions in the ThoughtSpot Formula Assistant to call your custom functions. Refer to <a href="{{ site.baseurl }}/reference/formula-reference.html#passthrough-functions">Embrace passthrough functions</a>.
+
+<h3>New language support</h3>
+
+Starting in the December Cloud release, ThoughtSpot supports the following new locale, including support for language keywords that can be used in the search bar:
+
+<ul>
+<li> English (India) </li>
+</ul>
+
+To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>. 
