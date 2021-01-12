@@ -1,6 +1,6 @@
 ---
 title: [Embrace overview]
-last_updated: 06/18/2020
+last_updated: 12/18/2020
 toc: true
 summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
@@ -27,6 +27,55 @@ You create a connection to the external database, choosing the columns from each
 - Centralize data management and governance in the external database.
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
+
+## Recommended instance types
+
+The following sections contain the supported and recommended instance types for ThoughtSpot Embrace deployments in AWS, Azure, and GCP. When setting up your cluster, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
+
+### AWS
+#### VMs with EBS-only persistent storage
+
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required boot volume capacity |
+| --- | --- | --- |--- | --- |
+| Up to 1B rows| r5.4xlarge, r4.4xlarge | 16/122, 16/128 | 2X 400 GB | 200 GB for each node |
+| Up to 4B rows | r5.8xlarge | 32/244, 32/256 | 2X 400 GB | 200 GB for each node |
+| 4B+ rows | r5.16xlarge | 64/488, 64/512 | 2x 1 TB | 200 GB for each node |
+
+#### VMs with EBS and S3 persistent storage
+
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required boot volume capacity |
+| --- | --- | --- |--- | --- |
+| Up to 1B rows| r5.4xlarge, r4.4xlarge | 16/122, 16/128 | 1x 500 GB | 200 GB for each node |
+| Up to 4B rows | r5.8xlarge | 32/244, 32/256 | 1x 500 GB | 200 GB for each node |
+| 4B+ rows | r5.16xlarge | 64/488, 64/512 | 1x 500 GB | 200 GB for each node |
+
+{% include note.html content="The S3 bucket size is approximately equal to the size of the user data." %}
+
+### Azure
+
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume | Required root volume capacity |
+| --- | --- | --- |--- | --- |
+| Up to 1B rows | E16s_v3 | 16/128 | 2X 400 GB | 200 GB for each node |
+| Up to 4B rows | E32s_v3 | 32/256 | 2X 400 GB | 200 GB for each node |
+| 4B+ rows | E64s_v3 | 64/432 | 2x1 TB | 200 GB for each node |
+
+### GCP
+#### VMs with Persistent Disk-only storage
+
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume | Required boot volume capacity |
+| --- | --- | --- |--- | --- |
+| Up to 1B rows | n1-highmem-16 | 16/122 | 2X 400 GB | 200 GB for each node |
+| Up to 4B rows | n1-highmem-32 | 32/208 | 2X 400 GB | 200 GB for each node |
+| 4B+ rows | n1-highmem-64 | 64/416 | 2x 1 TB | 200 GB for each node |
+
+#### VMs with Persistent Disk and Google Cloud storage
+
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume | Required boot volume capacity |
+| --- | --- | --- |--- | --- |
+| Up to 1B rows | n1-highmem-16 | 16/122 | 1X 500 GB | 200 GB for each node |
+| Up to 4B rows | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
+| 4B+ rows | n1-highmem-64 | 64/416 | 1X 500 GB | 200 GB for each node |
+
 
 ## Limitations
 
