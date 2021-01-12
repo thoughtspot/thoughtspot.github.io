@@ -2,7 +2,7 @@
 title: [Edit the system-wide data model]
 
 
-last_updated: tbd
+last_updated: 1/12/2021
 summary: "Edit the modeling file to edit your data settings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,7 +21,7 @@ use the [Change a table's data model](model-data-in-UI.html#) instead." %}
 ## Overview of the modeling process
 
 The data formats you use in your system are controlled by the modeling file, an
-Excel file. To make these changes you download the model file, change the model,
+Excel file. The modeling file contains a list of all your Worksheets, tables, and their columns. To make changes to the model.xls file, you download the model file, change the model,
 and upload your changes back into the system.
 
 In each row of the modeling file, all the data properties corresponding to a
