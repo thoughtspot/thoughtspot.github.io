@@ -49,8 +49,6 @@ The following sections contain the supported and recommended instance types for 
 | Up to 4B rows | r5.8xlarge | 32/244, 32/256 | 1x 500 GB | 200 GB for each node |
 | 4B+ rows | r5.16xlarge | 64/488, 64/512 | 1x 500 GB | 200 GB for each node |
 
-{% include note.html content="The S3 bucket size is approximately equal to the size of the user data." %}
-
 ### Azure
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume | Required root volume capacity |
