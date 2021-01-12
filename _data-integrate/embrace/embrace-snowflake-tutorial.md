@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Tutorials for Snowflake Partner Connect]
-last_updated: 3/9/2020
+last_updated: 12/21/2020
 toc: true
 summary: "Explore these tutorials to learn how to model your data after connecting to your Snowflake database."
 sidebar: mydoc_sidebar
@@ -148,8 +148,7 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 2. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.  
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
-3. Click the plus icon, next to Sources.  
-   ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
+3. Click the **+** icon, next to Sources.  
 
 4. Check the box next to all five of the tables from the Retail dataset in your schema.  
    ![]({{ site.baseurl }}/images/partner-connect-tables-worksheet.png)
@@ -199,10 +198,8 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
    {% include note.html content="As a best practice, you would not select a key from a table when creating a worksheet, because you would not want to search for the key." %}
 
 10. Click the pencil icon ![edit icon]({{ site.baseurl }}/images/icon-edit-20px.png){: .inline} next to the current name of your worksheet, enter the name **Retail Sales**, and click **Done**.  
-    ![]({{ site.baseurl }}/images/partner-connect-worksheet-title.png)
 
 11. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.  
-    ![]({{ site.baseurl }}/images/partner-connect-worksheet-save.png)
 
     Now, let's add a percent gross margin formula to the worksheet.   
 
@@ -277,7 +274,7 @@ Using the Retail Sales worksheet example, here's how geo maps and currency could
 
     The final step is to add the labels.
 
-11. Click the Edit chart configuration icon ![gear icon]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline}
+11. Click the Edit chart configuration icon ![gear icon]({{ site.baseurl }}/images/icon-gear-20px.png){: .inline}.
 
 12. In the Customize panel, click the **Total Sales** tile.
 

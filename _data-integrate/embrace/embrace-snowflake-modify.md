@@ -1,6 +1,6 @@
 ---
 title: [Modify a Snowflake connection]
-last_updated: 1/29/2020
+last_updated: 12/21/2020
 summary: Learn how to modify a Snowflake connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,11 +21,9 @@ To edit a Snowflake connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Click the name of the connection you want to edit.
-
-   ![]({{ site.baseurl }}/images/select-connection.png "select Connection")
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
@@ -52,7 +50,7 @@ To remap a Snowflake connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **embrace** tab.
 
 3. Click the name of the connection you want to remap.
 
@@ -77,7 +75,7 @@ To remove a column from a Snowflake connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Click the name of the connection that contains the column you want to remove.
 
@@ -104,7 +102,7 @@ To delete a table from a Snowflake connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Click the name of the connection that contains the table you want to delete.
 
@@ -133,7 +131,7 @@ To delete a Snowflake connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab.
+2. Click the **Embrace** tab.
 
 3. Check the box next to the connection you want to delete.
 
@@ -141,7 +139,7 @@ To delete a Snowflake connection:
 
    If you attempt to delete a connection with dependent objects, the operation is blocked, and a "Cannot delete" warning appears with a list of dependent objects with links.
 
-   ![]({{ site.baseurl }}/images/connection-delete-warning.png "warning connection type")
+   ![]({{ site.baseurl }}/images/embrace-delete-table-depend.png "warning connection type")
 
 5. If the "Cannot delete" warning appears, click the link for each object to delete it, and then click **Ok**. Otherwise, go to the next step.
 

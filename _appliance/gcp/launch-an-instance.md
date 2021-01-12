@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 5/7/2020
+last_updated: 12/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -15,7 +15,7 @@ ThoughtSpot uses a custom image to populate VMs in GCP. To find the ThoughtSpot 
 
 Ask your ThoughtSpot contact for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image to create ThoughtSpot VMs.
 
-This guide explains how to deploy ThoughtSpot on GCP, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on GCP using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+This guide explains how to deploy ThoughtSpot on GCP, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on GCP using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 ## Overview
 
@@ -67,8 +67,6 @@ When you create your instance, make sure you set Storage to **Read Write** acces
 1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
 2. Click **Select a Project** from the top bar.
-
-    ![Select a project]({{ site.baseurl }}/images/gcp-selectproj.png "Select a project")
 
 3. Under **Select From**, pick your company's project.
 

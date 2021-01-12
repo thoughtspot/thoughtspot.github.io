@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-last_updated: 9/1/2020
+last_updated: 12/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -16,7 +16,7 @@ For each hardware node, you must:
 a virtual machine (VM)
 * Add hard disks to the VM
 
-This guide explains how to deploy ThoughtSpot on VMware, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on VMware using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+This guide explains how to deploy ThoughtSpot on VMware, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on VMware using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 ## Prerequisites
 
@@ -46,8 +46,6 @@ for a sandbox environment but is insufficient for a production environment. You 
 1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
 
 2. Log in to the ESXi web portal.
-
-    ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")
 
 2. Select **Virtual Machines > Create/Register VM**.
 

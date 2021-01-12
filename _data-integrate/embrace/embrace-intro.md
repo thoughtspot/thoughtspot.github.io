@@ -1,6 +1,6 @@
 ---
 title: [Embrace overview]
-last_updated: 06/18/2020
+last_updated: 12/18/2020
 toc: true
 summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
@@ -76,7 +76,10 @@ The following sections contain the supported and recommended instance types for 
 | Up to 4B rows | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
 | 4B+ rows | n1-highmem-64 | 64/416 | 1X 500 GB | 200 GB for each node |
 
+
 ## Limitations
+
+{% include important.html content="Embrace does not support joins across connections." %}
 
 ### Feature availability in Embrace
 

@@ -44,7 +44,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
       <li>Views</li>
       <li>Tables</li>
     </ul>
-    <p>ThoughtSpot Modeling Language is now called <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
+    <p>ThoughtSpot Scripting Language is now called <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
     </dd>
   </dlentry>  
 
@@ -140,6 +140,7 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
   <ul>
   <li>You can now use a Terraform, Puppet, or Chef template, or an Ansible tarball, to install OS packages, dependencies, and the ThoughtSpot CLI (tscli), and configure your cluster. Previously, you could only use an Ansible tarball or Terraform template.</li>
   <li>You now only need 20 GB on the root drive for yum packages and system logs, and 200 GB for ThoughtSpot installation.</li>
+  <li>You can now deploy ThoughtSpot on RHEL version 7.9. You can no longer deploy ThoughtSpot on RHEL version 7.7.</li>
   </ul>
   </dd></dlentry>
 

@@ -17,7 +17,7 @@ the components of a VMware and ThoughtSpot architecture:
 
 ![]({{ site.baseurl }}/images/vmware-components.png)
 
-{% include note.html content="This is a generic representation. ThoughtSpot supports deployment on its CentOS-based image, or an RHEL 7.7 or 7.8 image that your organization manages internally." %}
+{% include note.html content="This is a generic representation. ThoughtSpot supports deployment on its CentOS-based image, or an RHEL 7.8 or 7.9 image that your organization manages internally." %}
 
 Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your

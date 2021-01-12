@@ -1,6 +1,6 @@
 ---
 title: [Scriptability]
-last_updated: 12/10/2020
+last_updated: 12/17/2020
 summary: "Use Scriptability to export and import Worksheets, Views, Tables, Pinboards, SpotIQ results, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -54,7 +54,7 @@ To export one object:
 
 1. Navigate to the Pinboard, SpotIQ result, Answer, View, Table, or Worksheet you want to export. Note that SpotIQ results are in the form of Pinboards, but you can only find them in the **SpotIQ** tab.
 
-2. Click the three-dot icon, and select **Export as TML**.
+2. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Export as TML**.
 
     ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
 
@@ -92,7 +92,7 @@ To use the TML editor, follow these steps:
 
 2. Click the name of the object you want to edit, or select multiple objects by clicking on the checkboxes that appear when you hover over an object name.
 
-3. From the object list page, select the **Edit TML** button. From the object itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TML**.
+3. From the object list page, select the **Edit TML** button. From the object itself, select the **More** menu icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen, and select **Edit TML**.
 
     ![Edit TML - object list page]({{ site.baseurl }}/images/scriptability-edit-tml-object-page.png "Edit TML - object list page")
 
@@ -137,7 +137,7 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 2. Click the name of the object you want to edit.
 
-3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
+3. Click the **More** menu icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen.
 
 4. Select **Update from TML**.
 
@@ -157,11 +157,7 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 10. Click **Import selected files**.
 
-    ![Import selected file]({{ site.baseurl }}/images/scriptability-worksheet-update-success.png "Import selected files")
-
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
-
-    ![Go to object]({{ site.baseurl }}/images/scriptability-import-status.png "Go to object")
 
 {: id="migrate-object"}
 ## Migrate an object
@@ -195,11 +191,7 @@ To migrate an Answer, Pinboard, SpotIQ result, View, or Worksheet from one clust
 
 10. Click **Import selected files**.
 
-    ![Import selected file]({{ site.baseurl }}/images/scriptability-migrate-import-selected.png "Import selected files")
-
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
-
-    ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
 
 ## Limitations of working with TML files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, Table, View, Pinboard, or SpotIQ result through TML.
