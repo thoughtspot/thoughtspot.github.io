@@ -38,16 +38,16 @@ The following sections contain the supported and recommended instance types for 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required boot volume capacity |
 | --- | --- | --- |--- | --- |
 | Up to 1B rows| r5.4xlarge, r4.4xlarge | 16/122, 16/128 | 2X 400 GB | 200 GB for each node |
-| Up to 5B rows | r5.8xlarge | 32/244, 32/256 | 2X 400 GB | 200 GB for each node |
-| 5B+ rows | r5.16xlarge | 64/488, 64/512 | 2x 1 TB | 200 GB for each node |
+| Up to 4B rows | r5.8xlarge | 32/244, 32/256 | 2X 400 GB | 200 GB for each node |
+| 4B+ rows | r5.16xlarge | 64/488, 64/512 | 2x 1 TB | 200 GB for each node |
 
 #### VMs with EBS and S3 persistent storage
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required boot volume capacity |
 | --- | --- | --- |--- | --- |
 | Up to 1B rows| r5.4xlarge, r4.4xlarge | 16/122, 16/128 | 1x 500 GB | 200 GB for each node |
-| Up to 5B rows | r5.8xlarge | 32/244, 32/256 | 1x 500 GB | 200 GB for each node |
-| 5B+ rows | r5.16xlarge | 64/488, 64/512 | 1x 500 GB | 200 GB for each node |
+| Up to 4B rows | r5.8xlarge | 32/244, 32/256 | 1x 500 GB | 200 GB for each node |
+| 4B+ rows | r5.16xlarge | 64/488, 64/512 | 1x 500 GB | 200 GB for each node |
 
 {% include note.html content="The S3 bucket size is approximately equal to the size of the user data." %}
 
@@ -56,8 +56,8 @@ The following sections contain the supported and recommended instance types for 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume | Required root volume capacity |
 | --- | --- | --- |--- | --- |
 | Up to 1B rows | E16s_v3 | 16/128 | 2X 400 GB | 200 GB for each node |
-| Up to 5B rows | E32s_v3 | 32/256 | 2X 400 GB | 200 GB for each node |
-| 5B+ rows | E64s_v3 | 64/432 | 2x1 TB | 200 GB for each node |
+| Up to 4B rows | E32s_v3 | 32/256 | 2X 400 GB | 200 GB for each node |
+| 4B+ rows | E64s_v3 | 64/432 | 2x1 TB | 200 GB for each node |
 
 ### GCP
 #### VMs with Persistent Disk-only storage
@@ -65,16 +65,16 @@ The following sections contain the supported and recommended instance types for 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume | Required boot volume capacity |
 | --- | --- | --- |--- | --- |
 | Up to 1B rows | n1-highmem-16 | 16/122 | 2X 400 GB | 200 GB for each node |
-| Up to 5B rows | n1-highmem-32 | 32/208 | 2X 400 GB | 200 GB for each node |
-| 5B+ rows | n1-highmem-64 | 64/416 | 2x 1 TB | 200 GB for each node |
+| Up to 4B rows | n1-highmem-32 | 32/208 | 2X 400 GB | 200 GB for each node |
+| 4B+ rows | n1-highmem-64 | 64/416 | 2x 1 TB | 200 GB for each node |
 
 #### VMs with Persistent Disk and Google Cloud storage
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume | Required boot volume capacity |
 | --- | --- | --- |--- | --- |
 | Up to 1B rows | n1-highmem-16 | 16/122 | 1X 500 GB | 200 GB for each node |
-| Up to 5B rows | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
-| 5B+ rows | n1-highmem-64 | 64/416 | 1X 500 GB | 200 GB for each node |
+| Up to 4B rows | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
+| 4B+ rows | n1-highmem-64 | 64/416 | 1X 500 GB | 200 GB for each node |
 
 ## Limitations
 
