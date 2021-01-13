@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 12/14/2020
+last_updated: 1/13/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -21,7 +21,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Worksheet.
 
-{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level." %}
+{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#worksheet">worksheet</a>:
@@ -137,7 +137,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have a description for your View, the `description` parameter does not appear. You can add that variable to the TML file to specify a description for your View.
 
-{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level." %}
+{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#view">view</a>:
@@ -250,6 +250,15 @@ You may not see each of these parameters in your own TML files, depending on whe
   <a href="#connection">connection</a>:
     <a href="#name">name</a>: &lt;<em>connection_name</em>&gt;
     <a href="#type">type</a>: &lt;<em>connection_type</em>&gt;
+  <a href="#joins">joins</a>:
+  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+    <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
+    <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
+    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+    <a href="#on">on</a>: &lt;<em>on_string</em>&gt;
+    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+  - <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
   <a href="#columns">columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#db_column_name">db_column_name</a>: &lt;<em>database_column_name</em>&gt;
@@ -303,7 +312,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TML file to specify conditional formatting.
 
-{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level." %}
+{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#answer">answer</a>:
@@ -752,7 +761,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="joins">
     <dt>joins</dt>
     <dd><p>Contains a list of joins between the tables and Views.</p>
-    <p>If you edit the joins in the Worksheet, View, or Answer TML file, you are only editing the joins for that specific Worksheet, View, or Answer. You are not editing the joins at the table level.</p>
+    <p>If you edit the joins in the Worksheet, View, or Answer TML file, you are only editing the joins for that specific Worksheet, View, or Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file.</p>
     <p>Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
@@ -995,3 +1004,7 @@ There are certain limitations to the changes you can apply by editing a Workshee
 * You cannot create Scriptable representations of R- or Python-powered visualizations.
 
 * You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom SpotApp, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
+
+* You can only view and modify joins at the table level in the source table TML. You cannot view or modify table-level joins from the destination table's TML file.
+
+* You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only change the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file.
