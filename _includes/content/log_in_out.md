@@ -13,10 +13,6 @@ The following browsers are verified to work well with the ThoughtSpot applicatio
 
 {% include content/browser-support.md %}
 
-{% include tip.html content="While Internet Explorer is supported, using it is
-not recommended. Depending on your environment, you can experience performance
-or UI issues when using IE." %}
-
 ## Sign in
 
 To sign in to ThoughtSpot from a browser:
