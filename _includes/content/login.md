@@ -11,7 +11,7 @@ ThoughtSpot supports the following Web browsers:
 
 {% include content/browser-support.md %}
 
-{% include tip.html content="We support, but do not recommend, the use of the Internet Explorer.<br>
+{% include tip.html content="While Internet Explorer is supported in ThoughtSpot versions 6.3.0 and earlier, using it is not recommended.<br>
     Depending on your environment, you can experience performance or UI issues." %}
 
 To sign in to ThoughtSpot from a browser, follow these steps:
