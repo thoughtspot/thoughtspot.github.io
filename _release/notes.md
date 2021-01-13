@@ -28,13 +28,13 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 
 ### New language support
 
-Starting in the 6.3 release, ThoughtSpot supports the following new locale, including support for language keywords that can be used in the search bar:
+Starting in the 6.3.1 release, ThoughtSpot offers the following new locale, to include support for date, time, number and currency format for the India region:
 
 <ul>
 <li> English (India) </li>
 </ul>
 
-To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>. 
+To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>.
 
 ### For the Analyst
 
