@@ -15,7 +15,7 @@ Embrace now supports passthrough functions which allow you to send SQL expressio
 
 <h3>New language support</h3>
 
-Starting in the December Cloud release, ThoughtSpot supports the following new locale, including support for language keywords that can be used in the search bar:
+Starting in the December Cloud release, ThoughtSpot offers the following new locale, to include support for date, time, number and currency format for the India region:
 
 <ul>
 <li> English (India) </li>
