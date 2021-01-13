@@ -11,9 +11,6 @@ ThoughtSpot supports the following Web browsers:
 
 {% include content/browser-support.md %}
 
-{% include tip.html content="We support, but do not recommend, the use of the Internet Explorer.<br>
-    Depending on your environment, you can experience performance or UI issues." %}
-
 To sign in to ThoughtSpot from a browser, follow these steps:
 
 1. Open the browser and type in the Web address for ThoughtSpot: `http://<hostname_or_IP>`
