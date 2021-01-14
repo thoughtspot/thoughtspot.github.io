@@ -1,6 +1,6 @@
 ---
 title: [Change axis options]
-last_updated: 2/28/2020
+last_updated: 1/14/2021
 summary: "In ThoughtSpot, you can start changing all axes options by clicking on the axis, directly in the chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -82,6 +82,9 @@ To remove a filter from the chart, click the **x** icon on the filter tile.
 
 {: id="conditional-formatting"}
 ## Apply conditional formatting
+
+{% include note.html content="Certain elements of chart configuration are part of the Answer V2 feature set. These elements include improved conditional formatting for measures in charts. The conditional formatting information in this article reflects the Answer V2 experience. When Answer V2 is on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. Answer V2 is in <strong>Beta</strong>. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, contact ThoughtSpot Support. If an administrator enables it for your cluster, you can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page by selecting <strong>Switch to classic</strong> to turn it off and <strong>Try Beta experience</strong> to turn it on." %}
+
 {% include content/conditional-formatting-chart.md %}
 
 {: id="sort"}

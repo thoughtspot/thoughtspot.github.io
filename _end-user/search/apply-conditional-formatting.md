@@ -1,7 +1,7 @@
 ---
 title: [Apply conditional formatting]
 
-last_updated: 10/27/2020
+last_updated: 1/14/2021
 summary: "Apply conditional formatting to add visual cues for values in your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
 
-{% include note.html content="Certain elements of table configuration are part of the Answer V2 feature set. These elements include conditional and number formatting for table summaries and improved conditional formatting for attributes and measures in table cells. When Answer V2 is on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. Answer V2 is in <strong>Beta</strong>. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, contact ThoughtSpot Support. If an administrator enables it for your cluster, you can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page by selecting <strong>Switch to classic</strong> to turn it off and <strong>Try Beta experience</strong> to turn it on." %}
+{% include note.html content="Certain elements of table and chart configuration are part of the Answer V2 feature set. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, and improved conditional formatting for measures in charts. When Answer V2 is on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If Answer V2 is off, you do not see these capabilities. Answer V2 is in <strong>Beta</strong>. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, contact ThoughtSpot Support. If an administrator enables it for your cluster, you can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page by selecting <strong>Switch to classic</strong> to turn it off and <strong>Try Beta experience</strong> to turn it on." %}
 
 ## Understand conditional formatting
 
@@ -64,6 +64,7 @@ To create a conditional formatting rule:
 
 {% include note.html content="If you change to a chart type, you must apply conditional formatting again. Conditional formatting is tied to the specific visualization." %}
 
+{: id="conditional-formatting-table"}
 ## Apply conditional formatting to a chart
 
 {% include content/conditional-formatting-chart.md %}
