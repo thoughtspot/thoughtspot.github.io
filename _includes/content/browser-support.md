@@ -6,9 +6,6 @@
     <dt>Chrome</dt>
     <dd> 76.x, 77.x, and later</dd></dlentry>
   <dlentry>
-    <dt>Internet Explorer</dt>
-    <dd>11.x, and later</dd></dlentry>
-  <dlentry>
     <dt>Edge</dt>
     <dd>81.0.416.53, and later</dd></dlentry>
   <dlentry>
