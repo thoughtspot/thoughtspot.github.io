@@ -1,6 +1,7 @@
 ---
 title: [Answer V2 feature set]
-summary: Answer V2 <span class="label label-beta">Beta</span> is a feature set that makes the experience of searching on data or viewing and interacting with Answers more powerful and intuititive. The Answer V2 feature set includes an improved Formula Editor, analyst-authored queries for Search Assist, table summary configuration, and improved conditional formatting for tables and table summaries.
+summary: Answer V2 <span class="label label-beta">Beta</span> is a feature set that makes the experience of searching on data or viewing and interacting with Answers more powerful and intuititive. The Answer V2 feature set includes an improved Formula Editor, analyst-authored queries for Search Assist, table summary configuration, and improved conditional formatting for charts, tables, and table summaries.
+last_updated: 1/14/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,6 +14,7 @@ Answer V2 is in **Beta**. This feature set is part of ThoughtSpot's move to a ne
 * [Improved Formula Editor]({{ site.baseurl }}/complex-search/how-to-add-formula.html)
 * [Search Assist: Analyst authored queries]({{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html)
 * [Table configuration]({{ site.baseurl }}/end-user/search/about-tables.html): conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells
+* [Chart configuration]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#conditional-formatting-table): improved conditional formatting for measures in charts
 
 {: id="toggle-on-off"}
 ## Turn Answer V2 on or off
@@ -41,7 +43,7 @@ This feature set is the first part of ThoughtSpot's move to a new stack. The new
 
 {: id="limitations"}
 ## Limitations
-The following features are not available in the Beta version of Answer V2. If you would like to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/admin/misc/contact.html) to turn Answer V2 off for your company. You can turn it on or off individually from the **Data** panel on the **Search** page.
+The following features are not available in the Beta version of Answer V2. If you would like your company to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/admin/misc/contact.html) to turn Answer V2 off for your company. Alternatively, you can turn it on or off individually from the **Data** panel on the **Search** page.
 
 * [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html)
 * [R scripts]({{ site.baseurl }}/end-user/r-scripts/about-r-in-thoughtspot.html)
