@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 11/13/2020
+last_updated: 1/13/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,11 +12,13 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 
 - [Search across existing Answers and Pinboards](#search-existing)
 - [Search your data to create new Answers and Pinboards](#search-data)
+- [View and access objects in your Carousel](#carousel)
 - [View objects you viewed recently](#recently-viewed)
 - [View trending Pinboards and Answers](#trending)
 - [Filter existing objects by favorite, author, tag, or type of object](#filter)
 - [Sort existing objects by author, views, or most recently viewed](#sort)
 - [Bulk mark objects as favorites](#bulk-favorite)
+- [Bulk share objects](#bulk-share)
 
 ![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
 
@@ -37,6 +39,9 @@ You can search directly on your data. Use this functionality if you would like t
 To search your data, either click on the **Search** tab from the top navigation bar, or toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year store #103 bakery` to see last year's sales in the bakery department for store 103. This type of search requires you to be familiar with your company's data, to know which Worksheets contain data that interests you, and the names of the columns and values within that Worksheet.
 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
+
+{: id="carousel"}
+## View and access carousel objects
 
 {: id="recently-viewed"}
 ## Recently viewed
@@ -76,3 +81,7 @@ These changes do not persist across sessions. If you log out and log back in, th
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
 To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite**. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
+
+{: id="bulk-share"}
+## Bulk share objects
+You can bulk share the objects on your ThoughtSpot home page with other users. To bulk share objects, select the empty boxes next to the object names, and select **Share**. You can also share every object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Share**.
