@@ -167,6 +167,10 @@ To run the LDAP sync script in interactive mode:
 		<tr>
 	      <td><code>--include_nontree_members</code></td>
 	      <td>Includes group members from LDAP/AD even if they do not belong to the current subtree that is being synced.</td>
-        </tr>	  
+    </tr>	 
+    <tr>
+        <td><code>--debug</code></td>
+        <td>Provides additional logs in case of failure or other errors.</td>
+      </tr>	  
   </tbody>
 </table>
