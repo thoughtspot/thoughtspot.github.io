@@ -14,3 +14,9 @@ ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a
 
 <h3>Support for SpotIQ Analyze</h3>
 <p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" />.</p>
+
+<h3>ThoughtSpot One home page</h3>
+The ThoughtSpot One home page has several new features:
+<ul>
+<li><a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#bulk-share">Bulk share</a>: you can now share multiple items at once from the home page</li>
+<li><a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>: create and access quick links to your most-used Answers and Pinboards</li></ul>
