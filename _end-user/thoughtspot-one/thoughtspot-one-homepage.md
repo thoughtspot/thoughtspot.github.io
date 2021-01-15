@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 1/13/2021
+last_updated: 1/15/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,7 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 
 - [Search across existing Answers and Pinboards](#search-existing)
 - [Search your data to create new Answers and Pinboards](#search-data)
-- [View and access objects in your Carousel](#carousel)
+- [Access and create shortcuts for your most-used Answers and Pinboards](#quick-links)
 - [View objects you viewed recently](#recently-viewed)
 - [View trending Pinboards and Answers](#trending)
 - [Filter existing objects by favorite, author, tag, or type of object](#filter)
@@ -40,8 +40,26 @@ To search your data, either click on the **Search** tab from the top navigation 
 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
-{: id="carousel"}
-## View and access carousel objects
+{: id="quick-links"}
+## Access and create quick links to your most-used Answers and Pinboards
+When you first view the ThoughtSpot home page, you can see a row of empty cards for quick links just below the Search bar. Use these cards to create shortcuts for Answers or Pinboards you reference often.
+
+To create shortcut cards, follow these steps:
+
+1. Click **Add New Card** from the end of the row of existing shortcuts.<br>
+    You may need to use the right arrow button to get to the **Add New Card** option, if you already have several shortcuts.
+
+2. The **Add a new card** window modal appears, filtered to show your favorites.
+
+3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**.
+
+4. Select an object, and click **Add**.
+
+Note that you can only add one object shortcut at a time. You can have up to 20 Answer and Pinboard shortcuts on the ThoughtSpot home page.
+
+![Shortcuts gif]({{ site.baseurl }}/images/thoughtspot-one-home-page-shortcuts.gif "Shortcuts gif")
+
+You can arrange the shortcut cards using each card's three-dot **more** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon. You can replace or delete a shortcut, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
 
 {: id="recently-viewed"}
 ## Recently viewed
@@ -80,8 +98,8 @@ These changes do not persist across sessions. If you log out and log back in, th
 
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
-To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite**. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
+To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the row of shortcuts. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
 
 {: id="bulk-share"}
 ## Bulk share objects
-You can bulk share the objects on your ThoughtSpot home page with other users. To bulk share objects, select the empty boxes next to the object names, and select **Share**. You can also share every object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Share**.
+You can bulk share the objects on your ThoughtSpot home page with other users. To bulk share objects, select the empty boxes next to the object names, and select **Share** near the top of the page, under the row of shortcuts. You can also share every object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Share**.
