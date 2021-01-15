@@ -65,9 +65,6 @@ For a complete list of issues that we fixed in this release, see [6.3 Fixed issu
 ### For the Business User
 
 <dl id="6-3-business-user">
-  <dlentry id="monitor">
-    <dt>Monitor</dt>
-    <dd>The Monitor suite of features, some of which were introduced in earlier releases as Beta, are now generally available by default.</dd></dlentry>
   <dlentry id="mobile-improvements">
     <dt>Mobile app updates</dt>
     <dd>ThoughtSpot mobile supports more features that were previously available only through the ThoughtSpot Web app, including:
