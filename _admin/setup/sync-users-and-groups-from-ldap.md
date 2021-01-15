@@ -181,6 +181,10 @@ The following table provides a description of each command-line switch available
     <tr>
         <td><code>--email_identifier &lt;email_identifier&gt;</code></td>
         <td>Email identifier key for user creation or sync.</td>
-      </tr>	           
+    </tr>	 
+    <tr>
+        <td><code>--debug</code></td>
+        <td>Provides additional logs in case of failure or other errors.</td>
+      </tr>	       
   </tbody>
 </table>
