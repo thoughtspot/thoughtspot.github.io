@@ -7,7 +7,7 @@ There are several new features for Scriptability:
 </ul>
 
 <h3>Improvements to conditional formatting for charts</h3>
-<p>This release makes chart conditional formatting more intuitive and easier to use. The new interface is accessible from the <strong>Edit measure > Conditional formatting</strong> section in the <strong>Edit chart configuration</strong> <img src="{{ site.baseurl }}/images/icon-gear-10px.png" /> panel. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html">Apply conditional formatting</a>.</p>
+<p>This release makes chart conditional formatting more intuitive and easier to use. The new interface is accessible from the <strong>Edit measure > Conditional formatting</strong> section in the <strong>Edit chart configuration</strong> <img src="{{ site.baseurl }}/images/icon-gear-10px.png" /> panel. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#conditional-formatting-table">Apply conditional formatting</a>.</p>
 
 <h3>Deprecation of Internet Explorer</h3>
 ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a href="{{ site.baseurl }}/end-user/accessing.html">ThoughtSpot browser access</a> for a list of supported browsers.
