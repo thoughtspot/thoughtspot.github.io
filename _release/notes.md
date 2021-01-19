@@ -1,12 +1,12 @@
 ---
 title: ["ThoughtSpot Cloud Release Notes"]
 toc: false
-last_updated: 12/15/2020
+last_updated: 1/13/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot 6 Cloud December version (ts6.dec.cl)  is now available.
+ThoughtSpot 7 Cloud February version (ts7.feb.cl)  is now available.
 
 These release notes include information about new and enhanced features.
 
@@ -14,6 +14,32 @@ These release notes include information about new and enhanced features.
 ## New Features and Functionality
 
 {% include content/new-features-cloud-release.md %}
+
+{: id="2020-december"}
+## ThoughtSpot 6 Cloud December Release (ts6.dec.cl)
+
+<h3>Scriptability</h3>
+There are several new features for Scriptability:
+<ul>
+<li><strong>Export custom SpotApps</strong>: You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</li>
+<li><strong>GUID handling</strong>: ThoughtSpot now recognizes pre-existing GUIDs upon import and asks if you would like to update the existing object or create a new one. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a>.</li>
+<li>ThoughtSpot Scripting Language is now called ThoughtSpot Modeling Language.</li></ul>
+
+<h3>Information Center</h3>
+ThoughtSpot has a new Information Center, accessible from the help icon <strong>?</strong> next to your profile on the top navigation bar. This new help menu contains many useful resources, including a navigation overview, several training videos, and links to more help across the ThoughtSpot product, community, training, and documentation. Refer to <a href="{{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a>.
+
+<h3>Embrace passthrough functions</h3>
+Embrace now supports passthrough functions which allow you to send SQL expressions directly to the database, without being interpreted by ThoughtSpot. If you have custom database functions that ThoughtSpot doesn't support, you can use these new passthrough functions in the ThoughtSpot Formula Assistant to call your custom functions. Refer to <a href="{{ site.baseurl }}/reference/formula-reference.html#passthrough-functions">Embrace passthrough functions</a>.
+
+<h3>New language support</h3>
+
+Starting in the December Cloud release, ThoughtSpot supports the following new locale, including support for language keywords that can be used in the search bar:
+
+<ul>
+<li> English (India) </li>
+</ul>
+
+To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>. 
 
 {: id="2020-october"}
 ## ThoughtSpot 6 Cloud October Release (ts6.oct.cl)
