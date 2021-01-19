@@ -21,8 +21,11 @@ The ThoughtSpot One home page has several new features:
 <li><a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#bulk-share">Bulk share</a>: you can now share multiple items at once from the home page</li>
 <li><a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>: create and access quick links to your most-used Answers and Pinboards</li></ul>
 
+<h3>Frequent metrics and attributes in the <strong>Details</strong> panel</h3>
+The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
+
 <h3>Search on Answers Pinboard</h3>
 There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers Pinboard</a>:
 <ul>
 <li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
-<li>The Pinboard is populated with your users' search data by default. You do not need to contact ThoughtSpot Support to see your users' search data in the Pinboard.</li></ul>
+<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to contact ThoughtSpot Support to see your users' Search on Answers data in the Pinboard.</li></ul>
