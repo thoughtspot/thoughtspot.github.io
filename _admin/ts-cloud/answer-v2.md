@@ -1,7 +1,7 @@
 ---
 title: [Answer V2 feature set]
-summary: Answer V2 <span class="label label-beta">Beta</span> is a feature set that makes the experience of searching on data or viewing and interacting with Answers more powerful and intuititive. The Answer V2 feature set includes an improved Formula Editor, analyst-authored queries for Search Assist, table summary configuration, and improved conditional formatting for charts, tables, and table summaries.
-last_updated: 1/14/2021
+summary: Answer V2 <span class="label label-beta">Beta</span> is a feature set that makes the experience of searching on data or viewing and interacting with Answers more powerful and intuititive. The Answer V2 feature set includes an improved Formula Editor, table summary configuration, and improved conditional formatting for charts, tables, and table summaries.
+last_updated: 1/20/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,6 @@ Answer V2 is in **Beta**. This feature set is part of ThoughtSpot's move to a ne
 
 {: id="answer-v2-features"}
 * [Improved Formula Editor]({{ site.baseurl }}/complex-search/how-to-add-formula.html)
-* [Search Assist: Analyst authored queries]({{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html)
 * [Table configuration]({{ site.baseurl }}/end-user/search/about-tables.html): conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells
 * [Chart configuration]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#conditional-formatting-table): improved conditional formatting for measures in charts
 
@@ -20,17 +19,17 @@ Answer V2 is in **Beta**. This feature set is part of ThoughtSpot's move to a ne
 ## Turn Answer V2 on or off
 You can turn the Answer V2 experience on or off individually from the **Data** panel on the **Search** page.
 
-Answer V2 is on by default for ThoughtSpot Cloud clusters. To turn it off, follow these steps:
+Answer V2 is off by default for ThoughtSpot Cloud clusters. To turn it on, follow these steps:
 
 1. Select **Search** from the top navigation bar.
 
-2. In the **Data** panel, select **Switch to classic**. Click **Confirm**.
+2. In the **Data** panel, select **Try Beta experience**. Click **Confirm**.
 
-    ![Answer V2 -- switch to classic]({{ site.baseurl }}/images/answer-v2-turn-off.png " Answer V2 -- switch to classic")
+    ![Answer V2 -- try beta experience]({{ site.baseurl }}/images/answer-v2-turn-on.png " Answer V2 -- try beta experience")
 
     If the Data panel is not visible, expand it by clicking on the Data icon in the top right corner, under the ThoughtSpot logo.
 
-You can turn the Answer V2 feature set back on from the Data panel under **Search**, by selecting **Try Beta experience**.
+You can turn the Answer V2 feature set back off from the Data panel under **Search**, by selecting **Switch to classic**.
 
 To turn it on or off at a cluster level, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 

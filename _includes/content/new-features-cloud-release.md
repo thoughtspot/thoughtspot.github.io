@@ -18,6 +18,9 @@ ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a
 <h3>Home page shortcuts</h3>
 You can now create and access quick links to your most-used Answers and Pinboards from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>.
 
+<h3>Search Assist: Analyst-authored queries</h3>
+The <a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst-authored queries</a> feature is now generally available and on by default.
+
 <h3>Frequent metrics and attributes in the <strong>Details</strong> panel</h3>
 The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
 
