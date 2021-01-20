@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 11/13/2020
+last_updated: 1/20/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,6 +12,7 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 
 - [Search across existing Answers and Pinboards](#search-existing)
 - [Search your data to create new Answers and Pinboards](#search-data)
+- [Access and create shortcuts for your most-used Answers and Pinboards](#quick-links)
 - [View objects you viewed recently](#recently-viewed)
 - [View trending Pinboards and Answers](#trending)
 - [Filter existing objects by favorite, author, tag, or type of object](#filter)
@@ -37,6 +38,27 @@ You can search directly on your data. Use this functionality if you would like t
 To search your data, either click on the **Search** tab from the top navigation bar, or toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year store #103 bakery` to see last year's sales in the bakery department for store 103. This type of search requires you to be familiar with your company's data, to know which Worksheets contain data that interests you, and the names of the columns and values within that Worksheet.
 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
+
+{: id="quick-links"}
+## Access and create quick links to your most-used Answers and Pinboards
+When you first view the ThoughtSpot home page, you can see a row of empty cards for quick links just below the Search bar. Use these cards to create shortcuts for Answers or Pinboards you reference often.
+
+To create shortcut cards, follow these steps:
+
+1. Click **Add New Card** from the end of the row of existing shortcuts.<br>
+    You may need to use the right arrow button to get to the **Add New Card** option, if you already have several shortcuts.
+
+2. The **Add a new card** window modal appears, filtered to show your favorites.
+
+3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**.
+
+4. Select an object, and click **Add**. The modal only shows 9 objects per page. To find an object not on the first page, scroll down and select **Next** at the bottom right of the modal. 
+
+Note that you can only add one object shortcut at a time. You can have up to 20 Answer and Pinboard shortcuts on the ThoughtSpot home page.
+
+![Shortcuts gif]({{ site.baseurl }}/images/thoughtspot-one-home-page-shortcuts.gif "Shortcuts gif")
+
+You can arrange the shortcut cards using each card's three-dot **more** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon. You can replace or delete a shortcut, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
 
 {: id="recently-viewed"}
 ## Recently viewed
@@ -75,4 +97,4 @@ These changes do not persist across sessions. If you log out and log back in, th
 
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
-To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite**. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
+To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the row of shortcuts. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
