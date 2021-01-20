@@ -15,11 +15,8 @@ ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a
 <h3>Support for SpotIQ Analyze</h3>
 <p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>.</p>
 
-<h3>ThoughtSpot One home page</h3>
-The ThoughtSpot One home page has several new features:
-<ul>
-<li><a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#bulk-share">Bulk share</a>: you can now share multiple items at once from the home page</li>
-<li><a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>: create and access quick links to your most-used Answers and Pinboards</li></ul>
+<h3>Home page shortcuts</h3>
+You can now create and access quick links to your most-used Answers and Pinboards from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>.
 
 <h3>Frequent metrics and attributes in the <strong>Details</strong> panel</h3>
 The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
