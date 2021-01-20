@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 1/15/2021
+last_updated: 1/20/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -18,7 +18,6 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 - [Filter existing objects by favorite, author, tag, or type of object](#filter)
 - [Sort existing objects by author, views, or most recently viewed](#sort)
 - [Bulk mark objects as favorites](#bulk-favorite)
-- [Bulk share objects](#bulk-share)
 
 ![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
 
@@ -53,7 +52,7 @@ To create shortcut cards, follow these steps:
 
 3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**.
 
-4. Select an object, and click **Add**.
+4. Select an object, and click **Add**. The modal only shows 9 objects per page. To find an object not on the first page, scroll down and select **Next** at the bottom right of the modal. 
 
 Note that you can only add one object shortcut at a time. You can have up to 20 Answer and Pinboard shortcuts on the ThoughtSpot home page.
 
@@ -99,7 +98,3 @@ These changes do not persist across sessions. If you log out and log back in, th
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
 To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the row of shortcuts. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
-
-{: id="bulk-share"}
-## Bulk share objects
-You can bulk share the objects on your ThoughtSpot home page with other users. To bulk share objects, select the empty boxes next to the object names, and select **Share** near the top of the page, under the row of shortcuts. You can also share every object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Share**.
