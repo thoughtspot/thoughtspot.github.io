@@ -1,6 +1,6 @@
 ---
-title: [Delete a Redshift connection]
-last_updated: 8/11/2020
+title: [Delete an ADW connection]
+last_updated: 1/20/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
