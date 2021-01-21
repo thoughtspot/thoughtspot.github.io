@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on offline clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 offline clusters."
-last_updated: 8/18/2020
+last_updated: 1/21/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -22,52 +22,10 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
    - checks that customization scripts can execute on the nodes
    - checks that the partitions meet minimum size requirements
 
-| &#10063; | [1. Prepare the `/tmp` disk](#tmp) |
-| &#10063; | [2. Configure the Ansible Playbook](#configure-ansible) |
-| &#10063; | [3. Redirect the mirror repository](#redirect-mirror) |
-| &#10063; | [4. Run the Ansible Playbook](#run-ansible) |
-| &#10063; | [5. Install ThoughtSpot](#install-thoughtspot) |
-
-{: id="tmp"}
-## Prepare the `/tmp` disk
-1. Declare the bash variables:
-    ```
-    DISK=dev/<disk_name>
-    PART=$<DISK>1
-    ```
-2. Unmount `/tmp` if necessary:
-    ```
-    sudo umount /tmp || true
-    ```
-3. Remove `/tmp` from `/etc/fstab`:
-    ```
-    sudo sed -i "/.*tmp.*/d" /etc/fstab
-    ```
-4. Remove `/tmp` from the partition table:
-    ```
-    echo -e "d\nw\n" | sudo fdisk $<DISK>
-    ```
-5. Partition the disk:
-    ```
-    sudo parted -s $<DISK> mklabel gpt
-    sudo parted -s $<DISK> mkpart primary xfs 0% 100%
-    ```
-
-6. Create the file system:
-    ```
-    sudo mkfs.xfs -f $PART
-    echo "UUID=$(sudo blkid -o value -s UUID $PART) /tmp xfs defaults,nofail 0 1" | sudo tee -a /etc/fstab
-    sudo mount /tmp
-    sudo chmod 777 /tmp
-    ```
-
-7. Create a working directory for Ansible:
-    ```
-    WORKDIR=/tmp/ansible
-    rm -rf $WORKDIR
-    mkdir -p $WORKDIR
-    cd $WORKDIR
-    ```
+| &#10063; | [1. Configure the Ansible Playbook](#configure-ansible) |
+| &#10063; | [2. Redirect the mirror repository](#redirect-mirror) |
+| &#10063; | [3. Run the Ansible Playbook](#run-ansible) |
+| &#10063; | [4. Install ThoughtSpot](#install-thoughtspot) |
 
 {: id="configure-ansible"}
 ## Configure the Ansible Playbook
