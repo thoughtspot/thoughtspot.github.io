@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 1/13/2021
+last_updated: 1/20/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -932,7 +932,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     Possible values: <code>LEFT_OUTER</code> for left outer join, <code>RIGHT_OUTER</code> for right outer join, <code>INNER</code> for inner join, <code>OUTER</code> for full outer join<br>
     Default: <code>INNER</code><br>
     For tables, this is the Embrace connection type.<br>
-    Possible values: <code>Snowflake</code> or <code>Amazon Redshift</code>.<br>
+    Possible values: <code>Snowflake</code>, <code>Google BigQuery</code>, <code>Microsoft Azure</code>, or <code>Amazon Redshift</code>.<br>
     Within the <code>chart</code> section of an Answer TML file, this is the chart type.<br>
     Possible values: <code>COLUMN</code>, <code>BAR</code>, <code>LINE</code>, <code>PIE</code>, <code>SCATTER</code>, <code>BUBBLE</code>, <code>STACKED_COLUMN</code>, <code>AREA</code>, <code>PARETO</code>, <code>COLUMN</code>, <code>GEO_AREA</code>, <code>GEO_BUBBLE</code>, <code>GEO_HEATMAP</code>, <code>GEO_EARTH_BAR</code>, <code>GEO_EARTH_AREA</code>, <code>GEO_EARTH_GRAPH</code>, <code>GEO_EARTH_BUBBLE</code>, <code>GEO_EARTH_HEATMAP</code>, <code>WATERFALL</code>, <code>TREEMAP</code>, <code>HEATMAP</code>, <code>STACKED_AREA</code>, <code>LINE_COLUMN</code>, <code>FUNNEL</code>, <code>LINE_STACKED_COLUMN</code>, <code>PIVOT_TABLE</code>, <code>SANKEY</code>, <code>GRID_TABLE</code>, <code>SPIDER_WEB</code>, <code>WHISKER_SCATTER</code>, <code>STACKED_BAR</code>, or <code>CANDLESTICK</code>.
     </dd>
