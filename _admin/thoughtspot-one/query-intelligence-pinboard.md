@@ -1,7 +1,7 @@
 ---
 title: [Stats and Trends for Search on Answers Pinboard]
 summary: "The Stats and Trends for Search on Answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
-last_updated: 1/15/2021
+last_updated: 1/21/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,16 +12,14 @@ To access the **Stats and Trends for Search on Answers** Pinboard, search for "S
 
 The **Stats and Trends for Search on Answers** Pinboard contains the following visualizations:
 - [Number of searches](#number-of-searches)
-- [Number of users](#number-of-users)
-- [% of queries for which no result exists](#no-result-queries)
+- [% of queries with zero results](#no-result-queries)
+- [Last updated time](#last-updated)
 - [Top Search Queries on existing answers](#top-search-existing)
-- [Top Search Queries on existing answers for which no result exists](#top-search-existing-no-result)
+- [Top Search Queries on existing answers with zero results](#top-search-existing-no-result)
 - [Top Search Queries on existing answers where the user did not find anything useful](#top-search-not-useful)
-- [Top Users who searched for answers](#top-users)
 - [Weekly Searches on answers](#weekly-searches)
 - [Top Answers](#top-answers)
 - [Weekly % of search queries on answers for which no answers exist](#weekly-queries-no-answer)
-- [Weekly Active Users](#wau)
 - [Poorly performing search queries for answers](#poor-performance)
 
 {% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have Search on Answers on in your environment, or if it is newly on, and few users have searched on it. To see the statistics on how your organization uses Search Answers, contact ThoughtSpot Support." %}
@@ -32,29 +30,25 @@ The **Stats and Trends for Search on Answers** Pinboard contains the following v
 ## Number of searches
 This headline specifies the number of searches users have done on existing Answers and Pinboards in the last 7 days.
 
-{: id="number-of-users"}
-## Number of users
-This headline specifies the total number of users who searched on existing Answers and Pinboards in the last 7 days.
-
 {: id="no-result-queries"}
-## % of queries for which no result exists
+## % of queries with zero results
 This headline specifies the percentage of searches on existing Answers and Pinboards that had no results. The lower the percentage of searches with no results, the better the user experience. If you have a high percentage of queries without results, consider building more Answers and Pinboards, or empower more users to build their own Answers and Pinboards by searching your data.
+
+{: id="last-updated"}
+## Last updated time in hours ago
+Shows the number of hours it has been since this Pinboard was automatically updated with new data.
 
 {: id="top-search-existing"}
 ## Top Search Queries on existing answers
 This visualization lists users' top search queries while searching for Answers in the last 30 days.
 
 {: id="top-search-existing-no-result"}
-## Top Search Queries on existing answers for which no result exists
+## Top Search Queries with zero results
 This visualization lists users' top search queries that had no results. These are the most common Answers and Pinboards users search for but do not find. Consider building Answers and Pinboards that answer these questions, or empower more users to build their own Answers and Pinboards by searching your data.
 
 {: id="top-search-not-useful"}
-## Top Search Queries on existing answers where the user did not find anything useful
+## Top Search Queries on existing answers where the user did not find any useful result
 This visualization lists users' top search queries that did not result in a useful Answer or Pinboard. The users did not click on any of the results. Consider building Answers and Pinboards that better answer these questions, or empower these users to build their own Answers and Pinboards by searching your data.
-
-{: id="top-users"}
-## Top Users who searched for answers
-This visualization lists the top 10 users who searched for Answers and Pinboards in the last 30 days.
 
 {: id="weekly-searches"}
 ## Weekly Searches on answers
@@ -68,10 +62,6 @@ This visualization lists the top Answers and Pinboards that users who searched f
 ## Weekly % of search queries on answers for which no answers exist
 This visualization shows the percentage of searches on existing Answers and Pinboards that had no results, on a weekly basis. The lower the percentage of searches with no results, the better the user experience. If you have a high percentage of queries without results, consider building more Answers and Pinboards, or empower more users to build their own Answers and Pinboards by searching your data.
 
-{: id="wau"}
-## Weekly Active Users
-This visualization shows the total number of users who are searching for Answers and Pinboards, on a weekly basis.
-
 {: id="poor-performance"}
-## Poorly performing search queries for answers
+## Top search queries with poor performance
 This visualization lists queries in the last 30 days for which users browsed multiple Answers and Pinboards, before finding the right Answer or Pinboard.
