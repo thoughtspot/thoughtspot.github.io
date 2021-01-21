@@ -36,7 +36,7 @@ This headline specifies the percentage of searches on existing Answers and Pinbo
 
 {: id="last-updated"}
 ## Last updated time in hours ago
-Shows the number of hours it has been since this Pinboard was automatically updated with new data.
+This headline shows the number of hours it has been since this Pinboard was automatically updated with new data.
 
 {: id="top-search-existing"}
 ## Top Search Queries on existing answers
