@@ -1,6 +1,6 @@
 ---
-title: [Remap a Redshift connection]
-last_updated: 8/11/2020
+title: [Remap an ADW connection for ThoughtSpot Cloud]
+last_updated: 1/20/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -20,20 +20,20 @@ To remap a connection:
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
-    ![Remap a connection]({{ site.baseurl }}/images/redshift-remapping.png "Remap a connection")
+    ![Remap a connection]({{ site.baseurl }}/images/adw-remapping.png "Remap a connection")
 
 5. Click **Download** to download the source mapping file.
 
-    !["Download the source mapping file"]({{ site.baseurl }}/images/embrace-remapping-download.png "Download the source mapping file")
+    !["Download the source mapping file"]({{ site.baseurl }}/images/adw-downloadyaml.png "Download the source mapping file")
 
 6. Edit the file, as required, and save it.
-<!-- ![Edit the yaml file]({{ site.baseurl }}/images/redshift-yaml.png "Edit the yaml file") -->
+<!--    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml") -->
 
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
 
-See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html) for details of connection parameters.
+To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete a ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html).
 
-To remove a table from a connection, delete it from the connection details page. For more information, see:
-- [Delete a table]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-delete-table.html)
-- [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-delete-table-dependencies.html)
+See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html) for details of connection parameters.
+
+We also recommend that you review [Best Practices for ADW connections]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-best-practices.html)

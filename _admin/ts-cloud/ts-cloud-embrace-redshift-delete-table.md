@@ -1,5 +1,5 @@
 ---
-title: [Delete a table from an Amazon Redshift connection]
+title: [Delete a table from a Redshift connection]
 last_updated: 8/11/2020
 toc: true
 sidebar: mydoc_sidebar
