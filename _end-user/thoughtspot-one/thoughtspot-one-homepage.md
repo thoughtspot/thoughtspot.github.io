@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 1/20/2021
+last_updated: 1/22/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -52,7 +52,7 @@ To create shortcut cards, follow these steps:
 
 3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**.
 
-4. Select an object, and click **Add**. The modal only shows 9 objects per page. To find an object not on the first page, scroll down and select **Next** at the bottom right of the modal. 
+4. Select an object, and click **Add**. The modal only shows 9 objects per page. To find an object not on the first page, scroll down and select **Next** at the bottom right of the modal.
 
 Note that you can only add one object shortcut at a time. You can have up to 20 Answer and Pinboard shortcuts on the ThoughtSpot home page.
 

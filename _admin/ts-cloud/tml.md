@@ -41,7 +41,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
     <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
     <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
-    <a href="#on">on</a>: &lt;<em>on_string</em>&gt;
+    <a href="#on">on</a>: &lt;<em>join_expression_string</em>&gt;
     <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
   - <em>...</em>
   <a href="#table_paths">table_paths</a>:
@@ -126,6 +126,16 @@ You may not see each of these parameters in your own TML files, depending on whe
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
     <a href="#join_progressive">join_progressive</a>: [ true | false ]
+  <a href="#joins_with">joins_with</a>:
+  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+    <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
+    <a href="#destination">destination</a>:
+      <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+    <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
+    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+  - <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
 </pre>
 
 {: id="syntax-views"}
@@ -160,7 +170,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
     <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
     <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
-    <a href="#on">on</a>: &lt;<em>on_string</em>&gt;
+    <a href="#on">on</a>: &lt;<em>join_expression_string</em>&gt;
     <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
   <a href="#table_paths">table_paths</a>:
   - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
@@ -187,6 +197,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     - value 1
     - value 2
   - <a href="#column">column</a>: &lt;<em>filtered_column_name_n</em>&gt;
+  <a href="#search_query">search_query</a>: &lt;<em>query_string</em>&gt;
   <a href="#view_columns">view_columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#description">description</a>: &lt;<em>optional_column_description</em>&gt;
@@ -229,7 +240,16 @@ You may not see each of these parameters in your own TML files, depending on whe
     <a href="#description">description</a>: &lt;<em>column_description</em>&gt;
     <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     ...  
-  <a href="#query">query</a>: &lt;<em>query_string</em>&gt;
+  <a href="#joins_with">joins_with</a>:
+  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+    <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
+    <a href="#destination">destination</a>:
+      <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+    <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
+    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+  - <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
 </pre>    
 
 {: id="syntax-tables"}
@@ -331,7 +351,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
     <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
     <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
-    <a href="#on">on</a>: &lt;<em>on_string</em>&gt;
+    <a href="#on">on</a>: &lt;<em>join_expression_string</em>&gt;
     <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
   - <em>...</em>
   <a href="#table_paths">table_paths</a>:
@@ -721,7 +741,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="is_one_to_one">
     <dt>is_one_to_one</dt>
-    <dd>Specifies the cardinality of the join<br>
+    <dd>Specifies the cardinality of the join. This is an optional parameter.<br>
     Possible values: <code>true</code>, <code>false</code><br>
     Default: <code>false</code></dd>
   </dlentry>
@@ -769,7 +789,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="joins_with">
     <dt>joins_with</dt>
-    <dd><p>Contains a list of joins for which this table is the source table.</p>
+    <dd><p>Contains a list of external joins for which this table, Worksheet, or View is the source.</p>
     <p>Each join is identified by <code>name</code> and optional <code>description</code>, and the additional attributes of <code>destination</code>, <code>type</code>, <code>on</code> and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
@@ -841,11 +861,6 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dd>Specifies whether to plot the chart conditional formatting like a band on the Visualization. This is the 'fill chart' option in the UI.</dd>
   </dlentry>
 
-  <dlentry id="query">
-  <dt>query</dt>
-  <dd>The query that the View is based on.</dd>
-  </dlentry>
-
   <dlentry id="range">
   <dt>range</dt>
   <dd>Range for the conditional formatting to apply to, with a specified <code>min</code> and <code>max</code>.</dd>
@@ -863,7 +878,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="search_query">
     <dt>search_query</dt>
-    <dd>A string that represents the fully disambiguated search query. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>A string that represents the fully disambiguated search query. Used in Answers and Views. Refer to <a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
   <!--<dlentry id="show_data_labels">
@@ -936,7 +951,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="type">
     <dt>type</dt>
-    <dd>For Worksheets, Views, and in the <code>joins</code> section of an Answer TML file, this is the join type.<br>
+    <dd>For Worksheets, Views, and in the <code>joins</code> section of an Answer TML file, this is the join type. This is an optional parameter.<br>
     Possible values: <code>LEFT_OUTER</code> for left outer join, <code>RIGHT_OUTER</code> for right outer join, <code>INNER</code> for inner join, <code>OUTER</code> for full outer join<br>
     Default: <code>INNER</code><br>
     For tables, this is the Embrace connection type.<br>
@@ -1017,4 +1032,4 @@ There are certain limitations to the changes you can apply by editing a Workshee
 
 * You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only change the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file.
 
-* You cannot remove columns or tables from an Embrace connection. You can only add them.
+* You cannot remove columns or tables from an Embrace connection. You can only add them. This feature is in **Beta**; to add columns and tables to an Embrace connection through Scriptability, contact your ThoughtSpot administrator. 
