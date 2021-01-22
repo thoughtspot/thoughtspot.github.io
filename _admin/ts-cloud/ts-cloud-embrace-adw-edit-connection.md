@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can edit a ADW connection to add tables and columns.
+You can edit an ADW connection to add tables and columns.
 
 To edit a connection:
 
@@ -32,7 +32,7 @@ To edit a connection:
 
 8. Click **Update**, and then click **Confirm** to save the updated connection detail.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete a ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html).
+To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html).
 
 See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html) for details of connection parameters.
 

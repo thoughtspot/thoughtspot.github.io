@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Learn about the fields used to create a ADW connection using ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.
+Learn about the fields used to create an ADW connection using ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.
 
 <dl>
   <dlentry id="connection-name">
