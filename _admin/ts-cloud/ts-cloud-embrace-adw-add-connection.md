@@ -37,6 +37,9 @@ To connect to ADW:
 
    ![Select tables and columns for your connection]({{ site.baseurl }}/images/adw-selecttables.png "Select tables and columns for your connection")
 
+   A message appears indicating the number of tables and columns that will be added to your connection.
+
+8. Click **Confirm**.
 
 After you add the connection, you can search your ADW database by clicking **Search now**.
 

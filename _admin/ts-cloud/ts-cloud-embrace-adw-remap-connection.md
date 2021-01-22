@@ -16,7 +16,7 @@ To remap a connection:
 
 3. Click the name of the connection you want to remap.
 
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
+   ![]({{ site.baseurl }}/images/adw-select-connection.png "select Connection")
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
