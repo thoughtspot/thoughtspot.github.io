@@ -20,8 +20,6 @@ To delete a table:
 
 5. Click **Delete**, and then click **Delete** again to confirm.
 
-   ![Delete a connection table]({{ site.baseurl }}/images/snowflake-deletetable.png "Delete a connection table")
-
 If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html)
 
 See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for details of connection parameters.

@@ -15,9 +15,9 @@ To connect to ADW:
 
 3. Create a name for your connection, a description (optional), then select the ADW connection type, and click **Continue**.
 
-     ![Add a ADW connection]({{ site.baseurl }}/images/embrace-adw-connection-type-ts-cloud.png "Add a ADW connection")
+     ![Add an ADW connection]({{ site.baseurl }}/images/embrace-adw-connection-type-ts-cloud.png "Add an ADW connection")
 
-4. Enter the connection details for your ADW data source.
+4. Enter the connection details for your ADW data source, and upload your ADW Wallet zip file.
 
     ![Enter connection details]({{ site.baseurl }}/images/adw-connectiondetails.png "Enter connection details")
 
@@ -37,6 +37,9 @@ To connect to ADW:
 
    ![Select tables and columns for your connection]({{ site.baseurl }}/images/adw-selecttables.png "Select tables and columns for your connection")
 
+   A message appears indicating the number of tables and columns that will be added to your connection.
+
+8. Click **Confirm**.
 
 After you add the connection, you can search your ADW database by clicking **Search now**.
 

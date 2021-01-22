@@ -16,7 +16,7 @@ To remap a connection:
 
 3. Click the name of the connection you want to remap.
 
-   ![]({{ site.baseurl }}/images/select-connection.png "Select a connection type")
+   ![]({{ site.baseurl }}/images/adw-select-connection.png "select Connection")
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
@@ -32,7 +32,7 @@ To remap a connection:
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
 
-To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete a ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html).
+To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html).
 
 See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html) for details of connection parameters.
 
