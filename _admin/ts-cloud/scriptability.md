@@ -218,7 +218,7 @@ There are certain limitations to the changes you can apply by editing a Workshee
 
 * You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only change the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file.
 
-* You cannot remove columns or tables from an Embrace connection. You can only add them.
+* You cannot remove columns or tables from an Embrace connection. You can only add them. This feature is in **Beta**; to add columns and tables to an Embrace connection through Scriptability, contact your ThoughtSpot administrator. 
 
 ## Related information
 
