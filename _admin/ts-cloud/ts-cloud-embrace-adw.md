@@ -13,5 +13,4 @@ You can add a connection to a Oracle Autonomous Data Warehouse (ADW) database in
 - [Delete a table from an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-table.html)
 - [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-table-dependencies.html)
 - [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html)
-- [Best Practices for ADW connections]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-best-practices.html)
 - [Connection reference for ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html)
