@@ -16,7 +16,7 @@ To edit a connection:
 
 3. Click the name of the connection you want to edit.
 
-   ![]({{ site.baseurl }}/images/adw-select-connection.png "select Connection")
+   ![Select connection]({{ site.baseurl }}/images/adw-select-connection.png "select Connection")
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
