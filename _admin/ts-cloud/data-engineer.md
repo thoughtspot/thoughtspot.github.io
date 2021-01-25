@@ -55,7 +55,6 @@ These are the main tasks you must complete to connect to your data.
       <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html "| prepend: site.baseurl }}">Connection reference</a></li>
     </ol>
   </li>
-  </li>
   <li><p><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw.html "| prepend: site.baseurl }}">Connect to Oracle Autonomous Data Warehouse databases</a></p>
     <ol>
       <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html "| prepend: site.baseurl }}">Add connection</a></li>

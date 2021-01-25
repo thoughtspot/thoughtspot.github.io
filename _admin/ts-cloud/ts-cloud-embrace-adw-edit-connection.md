@@ -1,5 +1,5 @@
 ---
-title: [Edit an ADW connection for ThoughtSpot Cloud]
+title: [Edit an ADW connection]
 last_updated: 1/20/2021
 toc: true
 sidebar: mydoc_sidebar
