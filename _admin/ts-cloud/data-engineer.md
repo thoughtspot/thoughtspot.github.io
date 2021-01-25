@@ -55,4 +55,16 @@ These are the main tasks you must complete to connect to your data.
       <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html "| prepend: site.baseurl }}">Connection reference</a></li>
     </ol>
   </li>
+  </li>
+  <li><p><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw.html "| prepend: site.baseurl }}">Connect to Oracle Autonomous Data Warehouse databases</a></p>
+    <ol>
+      <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html "| prepend: site.baseurl }}">Add connection</a></li>
+      <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-edit-connection.html "| prepend: site.baseurl }}">Edit connection</a></li>
+      <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-remap-connection.html "| prepend: site.baseurl }}">Remap connection</a></li>
+      <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-delete-table.html "| prepend: site.baseurl }}">Delete a table</a></li>
+      <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-delete-table-dependencies.html "| prepend: site.baseurl }}">Delete a table with object dependencies </a></li>
+      <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html "| prepend: site.baseurl }}">Delete connection</a></li>
+      <li><a href="{{ "/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html "| prepend: site.baseurl }}">Connection reference</a></li>
+    </ol>
+  </li>
 </ul>

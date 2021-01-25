@@ -1,8 +1,7 @@
 ---
 title: [About Embrace in ThoughtSpot Cloud]
-last_updated: 8/6/2020
+last_updated: 1/25/2021
 summary: "Using Embrace, you can perform live queries on external databases."
-sidebar: mydoc_sidebar
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -14,6 +13,7 @@ On ThoughtSpot Cloud, Embrace supports the following external databases:
 - [Amazon Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html)
 - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
+- [Oracle Autonomous Data Warehouse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 
 ## How it works
 
@@ -56,11 +56,13 @@ The following matrix compares the specific function support across the different
 <th>Amazon<br />Redshift</th>
 <th>Google<br />BigQuery</th>
 <th>Azure<br />Synapse</th>
+<th>Oracle<br />Autonomous Data Warehouse</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>SOUNDS_LIKE</code></td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -72,9 +74,11 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE_WITH_CAP</code></td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -86,9 +90,11 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>COUNT_NOT_NULL</code></td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -100,10 +106,12 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE</code></td>
 <td>&check;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -123,6 +131,7 @@ The following matrix captures the specific data type support limitations across 
       <th>Amazon<br>Redshift</th>
       <th>Google<br>BigQuery</th>
       <th>Azure<br>Synapse</th>
+      <th>Oracle<br />Autonomous Data Warehouse</th>
     </tr>
   </thead>
   <tbody>
@@ -132,6 +141,7 @@ The following matrix captures the specific data type support limitations across 
       <td>&check;</td>
       <td>&check;</td>
       <td>&cross;</td>
+      <td>&cross;</td>
     </tr>
     <tr>
       <td><code>VARBINARY</code></td>
@@ -139,10 +149,12 @@ The following matrix captures the specific data type support limitations across 
       <td>&check;</td>
       <td>&check;</td>
       <td>&cross;</td>
+      <td>&cross;</td>
     </tr>
     <tr>
       <td><code>TIMESTAMPTZ</code></td>
       <td>&check;</td>
+      <td>&cross;</td>
       <td>&cross;</td>
       <td>&cross;</td>
       <td>&cross;</td>
@@ -153,6 +165,7 @@ The following matrix captures the specific data type support limitations across 
       <td>&cross;</td>
       <td>&check;</td>
       <td>&check;</td>
+      <td>&cross;</td>
     </tr>
   </tbody>
 </table>
@@ -191,3 +204,5 @@ Create the connection between ThoughtSpot and tables in an external Amazon RedSh
 Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
 -   **[Add an Azure Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
+-   **[Add an Oracle Autonomous Data Warehouse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Oracle Autonomous Data Warehouse database.
