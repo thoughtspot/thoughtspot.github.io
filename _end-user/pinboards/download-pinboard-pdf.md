@@ -23,6 +23,8 @@ You can download a Pinboard in PDF format, without downloading each visualizatio
 
    ![Choose PDF format: Pinboard or Visualizations]({{ site.baseurl }}/images/pinboard-formats.png "Choose PDF format: Pinboard or Visualizations")
 
+{% include note.html content="If you do not see the option to download the Pinboard as a PDF, your company may have removed the Pinboard download option. If you would like to download Pinboards, contact your ThoughtSpot administrator." %}
+
 {: id="pdf-pinboard"}
 ## Download PDF as Pinboard
 
@@ -60,7 +62,6 @@ Follow these steps to specify additional options:
 8. Click **Download**.
 
 ![PDF export as Visualizations]({{ site.baseurl }}/images/pinboard-viz-export.png "Export a Pinboard to PDF as Visualizations")
-
 
 {: id="pdf-examine"}
 ## Examine the PDF

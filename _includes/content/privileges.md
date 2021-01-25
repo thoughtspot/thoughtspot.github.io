@@ -12,7 +12,7 @@
   <tbody>
     <tr>
       <td><strong>Can administer ThoughtSpot</strong></td>
-      <td>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved answer. </td>
+      <td>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved answer, unless your company does not allow download capabilities.</td>
     </tr>
     <tr>
       <td><strong>Can upload user data</strong></td>
