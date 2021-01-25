@@ -21,3 +21,5 @@ download your search, click the More icon ![more options menu icon]({{ site.base
 
 Currently, ThoughtSpot limits the maximum number of rows that can be downloaded
 to 10M (default is 1M). Your system limit is configured by your ThoughtSpot administrator.
+
+{% include note.html content="If you do not see the options to download your table or chart, your company may have removed the search download option. If you would like to download searches and Answers, contact your ThoughtSpot administrator." %}

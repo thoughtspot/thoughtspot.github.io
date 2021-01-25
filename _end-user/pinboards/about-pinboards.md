@@ -49,9 +49,11 @@ an answer to a pinboard:
 You can download a pinboard as a PDF file, without having to download each visualization separately. Downloading a pinboard works just as it would when
 downloading an answer: simply click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Download as PDF**.
 
-     ![]({{ site.baseurl }}/images/pinboard-download-pdf.png "Download your pinboard")
+![]({{ site.baseurl }}/images/pinboard-download-pdf.png "Download your pinboard")
 
 For more details, see [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
+
+{% include note.html content="If you do not see this option, your company may have removed the Pinboard download option. If you would like to download Pinboards, contact your ThoughtSpot administrator." %}
 
 ## Details about a pinboard
 

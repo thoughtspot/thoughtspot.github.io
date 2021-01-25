@@ -32,5 +32,10 @@ There are several changes to the behavior of the <a href="{{ site.baseurl }}/adm
 <li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
 <li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to contact ThoughtSpot Support to see your users' Search on Answers data in the Pinboard.</li></ul>
 
+<h3>Pinboard download control</h3>
+<p>You can now limit or remove the options ThoughtSpot provides for downloading Pinboards, Pinboard visualizations, and Answers. You can allow users to only download Pinboard visualizations and Answers in a specific format (such as .csv), or you can restrict access to downloading Pinboards, visualizations, or Answers altogether.</p>
+<p>This is a cluster-level feature. You cannot configure permissions for specific users.</p>
+<p>To enable this functionality, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p>
+
 <h3>Consumption-based pricing</h3>
 ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.
