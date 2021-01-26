@@ -1,6 +1,6 @@
 ---
 title: [Consumption pricing FAQ]
-last_updated: 12/2/2020
+last_updated: 1/26/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -38,14 +38,13 @@ permalink: /:collection/:path.html
 
 9. <b>What is user activity?</b>  
    User activity is defined as any user triggered (initiated) action in ThoughtSpot starting from the time the action is initiated until the time that the results of the action(s) are visible to the user in the Product. This includes any time spent by ThoughtSpot in processing the user triggered action in order to present the results to the user.
-   ![]({{ site.baseurl }}/images/consumption-activity.png)  
 
 10. <b>What kinds of user actions/activity count towards consumption?</b>  
     User activity that counts towards consumption usage includes any user interaction with the product such as:
     - Clicking on any interactive elements inside the ThoughtSpot product page (User Interface) such as menu items, search boxes, tabs, buttons, icons and other user interface artifacts. Some examples are:
       - Performing searches on data or search related actions such as explore, filters, drill-down, showing underlying data and other related actions.
       - Creating, editing, updating deleting or interacting with Answers, Pinboards, Worksheets, tables, Views and other objects.
-      - Triggering user initiated SpotIQ analyses.
+      - Triggering user-initiated SpotIQ analyses.
       - Setup and configuration actions in the Product (such as those performed in the “Admin” section of the product or other such sections).
       - Uploads, downloads, sharing, triggering the sending of emails from within the product.
     - Browser actions (such as refresh, forward, back buttons).
@@ -65,23 +64,11 @@ permalink: /:collection/:path.html
 13. <b>Does “Admin” work count towards “usage time”?</b>  
     Yes, any user activity within the application is counted towards usage time including work done by “Admin” users or clicking on the “Admin” tab.
 
-14. <b>Do unused credits rollover to the next year?</b>  
-    Minutes purchased on an annual basis must be used within the year they were provisioned.  
-
-15. <b>If a ThoughtSpot consumption license is a 3 year paid annually contract, can credits be pulled in from a future year?</b>  
-    No, credits cannot be drawn from a future year.  
-
-16. <b>Are minutes consumed during implementation and training prior to go-live?</b>    
+14. <b>Are minutes consumed during implementation and training prior to go-live?</b>    
     Yes.  
 
-17. <b>Do scheduled reports or “Monitor” consume credits?</b>  
-    No.  
-
-18. <b>Will I be able to track usage in the product?</b>  
+15. <b>Will I be able to track usage in the product?</b>  
     At this time, ThoughtSpot will provide you periodic updates of usage. We plan to make it possible to track usage inside the product in future releases.  
 
-19. <b>Will I be charged for usage of a non-production instance?</b>  
-    Yes, non-production instances are charged at the same rate as production instances.  
-
-20. <b>Can I have both consumption pricing and capacity pricing?</b>  
-    In order for you to have both pricing models, you must have multiple clusters with each cluster having a discreet pricing model. One cluster can not be licensed as both consumption and capacity.
+16. <b>Can I have both consumption pricing and capacity pricing?</b>  
+    In order for you to have both pricing models, you must have multiple clusters with each cluster having a discrete pricing model. One cluster can not be licensed as both consumption and capacity.
