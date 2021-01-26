@@ -6,10 +6,66 @@ sidebar: mydoc_sidebar
 redirect_from:
 - /6.3.0/release/notes.html
 - /6.3.0.CU1/release/notes.html
+- /6.3.1/release/notes.html
 permalink: /:collection/:path.html
 ---
+ThoughtSpot version 6.3.1 is now available. These release notes include information about new and enhanced features.
 
-ThoughtSpot version 6.3 is now available. These release notes include information about new and enhanced features.
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
+
+* [6.3.1 New Features](#6-3-1-new)
+* [6.3 New Features](#6-3-new)
+* [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="6-3-1-new"}
+## 6.3.1 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
+
+* [6.3.1 New Features](#6-3-1-new)
+   * [For the Analyst](#6-3-1-analyst)
+   * [For the Business User](#6-3-1-business-user)
+   * [For the Data Engineer](#6-3-1-data-engineer)
+   * [For the IT Ops Engineer](#6-3-1-it-ops-engineer)
+
+{: id="6-3-1-analyst"}
+### For the Analyst
+
+<dl>
+  <dlentry id="granular-pinboard-access">
+  <dt>Granular access to Pinboards</dt>
+  <dd>Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards. However, they cannot edit, copy, download, or share Pinboards and Answers.<br />This must be enabled on the cluster.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>, and <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> privilege.</dd></dlentry>
+</dl>
+
+{: id="6-3-1-business-user"}
+### For the Business User
+
+<dl>
+  <dlentry id="granular-pinboard-access">
+  <dt>Granular access to Pinboards</dt>
+  <dd>Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards. However, they cannot edit, copy, download, or share Pinboards and Answers.<br />This must be enabled on the cluster.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>, and <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> privilege.</dd></dlentry>
+</dl>
+
+{: id="6-3-1-data-engineer"}
+### For the Data Engineer
+
+<dl>
+  <dlentry id="granular-pinboard-access">
+  <dt>Granular access to Pinboards</dt>
+  <dd>Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards. However, they cannot edit, copy, download, or share Pinboards and Answers.<br />This must be enabled on the cluster.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>, and <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> privilege.</dd></dlentry>
+</dl>
+
+{: id="6-3-1-it-ops-engineer"}
+### For the IT Ops Engineer
+
+<dl>
+  <dlentry id="granular-pinboard-access">
+  <dt>Granular access to Pinboards</dt>
+  <dd>Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards. However, they cannot edit, copy, download, or share Pinboards and Answers.<br />This must be enabled on the cluster.<br />See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a>, and <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only">Cannot create or update Pinboards</a> privilege.</dd></dlentry>
+</dl>
+
+{: id="6-3-new"}
+## 6.3 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
