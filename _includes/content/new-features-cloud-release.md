@@ -81,7 +81,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dt>Pinboard download control</dt>
 <dd><p>You can now limit or remove the options ThoughtSpot provides for downloading Pinboards and their visualizations. You can allow users to only download Pinboard visualizations in a specific format (such as .csv), or you can restrict access to downloading Pinboards and their visualizations altogether.</p>
 <p>This is a cluster-level feature. You cannot configure permissions for specific users.</p>
-<p>To enable this functionality, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+<p>This is an embed-only feature. To enable this functionality, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
 
 <dlentry id="consumption-based-pricing">
