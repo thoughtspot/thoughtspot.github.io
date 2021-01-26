@@ -111,8 +111,32 @@
     border-width: 2px;
     width:50%;
   }
+  @media (min-width: 480px) {
+    .grid-container-persona { grid-template-columns: repeat(1, 1fr); }
+  }
+  @media (min-width: 700px) {
+    .grid-container-persona { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 989px) {
+    .grid-container-persona { grid-template-columns: repeat(4, 1fr); }
+  }
+  @media (min-width: 480px) {
+    .grid-container-opener { grid-template-columns: repeat(1, 1fr); }
+  }
+  @media (min-width: 700px) {
+    .grid-container-opener { grid-template-columns: 1fr 5fr; }
+  }
+  @media (min-width: 989px) {
+    .grid-container-opener { grid-template-columns: 1fr 5fr 1fr; }
+  }
+
+
   </style>
 <!-- END new Cloud styles -->
+<!-- break points for persona grid -->
+
+
+
 
 <link rel="shortcut icon" href="{{ "images/favicon.ico" | absolute_url }}">
 
