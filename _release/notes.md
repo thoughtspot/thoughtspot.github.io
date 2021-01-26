@@ -1,15 +1,75 @@
 ---
 title: ["6.3 Release Notes"]
 toc: false
-last_updated: 10/18/2020
+last_updated: 1/26/2021
 sidebar: mydoc_sidebar
 redirect_from:
 - /6.3.0/release/notes.html
 - /6.3.0.CU1/release/notes.html
+- /6.3.1/release/notes.html
 permalink: /:collection/:path.html
 ---
+ThoughtSpot version 6.3.1 is now available. These release notes include information about new and enhanced features.
 
-ThoughtSpot version 6.3 is now available. These release notes include information about new and enhanced features.
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
+
+* [6.3.1 New Features](#6-3-1-new)
+* [6.3 New Features](#6-3-new)
+* [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="6-3-1-new"}
+## 6.3.1 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
+
+* [6.3.1 New Features](#6-3-1-new)
+   * [For the Analyst](#6-3-1-analyst)
+   * [For the Business User](#6-3-1-business-user)
+   * [For the Data Engineer](#6-3-1-data-engineer)
+   * [For the IT Ops Engineer](#6-3-1-it-ops-engineer)
+
+{: id="6-3-1-analyst"}
+### For the Analyst
+
+<dl>
+  <dlentry id="simplified-join-creation">
+  <dt>Simplified join creation</dt>
+  <dd>Simplified join creation release note.</dd></dlentry>
+</dl>
+
+{: id="6-3-1-business-user"}
+### For the Business User
+
+<dl>
+<dlentry id="internet-explorer">
+  <dt>Deprecation of Internet Explorer</dt>
+<dd>ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a href="{{ site.baseurl }}/end-user/accessing.html">ThoughtSpot browser access</a> for a list of supported browsers.</dd>
+</dlentry>
+
+</dl>
+
+{: id="6-3-1-data-engineer"}
+### For the Data Engineer
+
+<dl>
+<dlentry id="embrace">
+<dt>Embrace</dt>
+<dd>Oracle ADW support release note.</dd>
+</dlentry>
+</dl>
+
+{: id="6-3-1-it-ops-engineer"}
+### For the IT Ops Engineer
+
+<dl>
+<dlentry id="consumption-based-pricing">
+<dt>Consumption-based pricing</dt>
+<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/appliance/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/appliance/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
+</dlentry>
+</dl>
+
+{: id="6-3-new"}
+## 6.3 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
@@ -162,7 +222,7 @@ We like to have a diversity of experience and perspective, and want to hear from
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.2 release
+If you are running one of the following versions, you can upgrade to the 6.3 release
 directly:
 
 * 6.1.x to 6.3
