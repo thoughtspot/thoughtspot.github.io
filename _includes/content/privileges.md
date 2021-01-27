@@ -36,10 +36,6 @@
       <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
     </tr>
     <tr>
-      <td><strong>Can invoke Custom R Analysis</strong></td>
-      <td>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</td>
-    </tr>
-    <tr>
       <td><strong>Can schedule pinboards</strong></td>
       <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
     </tr>
