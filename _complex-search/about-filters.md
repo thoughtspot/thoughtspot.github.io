@@ -1,6 +1,6 @@
 ---
 title: [Understand filters]
-last_updated: 4/2/2020
+last_updated: 1/26/2021
 summary: "Filters narrow down your search result to only include the data you want to see."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -82,10 +82,13 @@ This allows you to easily search a large list of filters repeatedly.
 
 ## Cascading filters
 
-If you want to apply a table filter whenever the table has been used (Views, Worksheets, Answers, and Pinboards), use Cascading filters.
-When columns from that table are applied in a search, the table filter is implicitly applied to the search. All worksheet filters are accessible from the query visualizer.
+ThoughtSpot applies a specific logic to objects with more than one filter. For example, you may have a Worksheet-level filter, such as `country=US`. While searching on that Worksheet, you might want to add filters for specific cities. By default, ThoughtSpot limits your possible filter values to cities in the United States, since you have a Worksheet-level `US` filter. The first filter you apply on an object always limits the available filter values you see for your second and third filters, and so on. This is because if you have a `country=US` filter, and try to add a `city=Paris,France` filter, for example, this results in *no data found*.
 
-Consider a table with a filter that is used in a worksheet. When a search uses that worksheet, the filters are automatically applied as a part of the search.
+### Show all possible values
+
+When you access the filters modal in a search by selecting the **filter** icon ![filter icon]({{ site.baseurl }}/images/icon-filter-10px.png "filter icon"){: .inline}, you see an option to **Show all possible values**. This option relates to cascading filters. When you add a second filter to a search, ThoughtSpot only shows you values within the first filter you added. You may want to see all possible values without removing the first filter.
+
+For example, you have a `country=US` filter on your search, but you want to see data for Paris, France. When you open the filters modal for `city`, you do not see Paris, France. You select **Show all possible values** and select Paris, France. Then you can delete the `country=US` filter. This is especially useful if you have many filters on an object, or if you are not sure what values the columns in your data have.
 
 ## Worksheet filters
 
