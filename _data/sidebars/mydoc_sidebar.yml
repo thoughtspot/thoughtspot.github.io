@@ -605,24 +605,24 @@ entries:
     - title: Download as PDF
       url: /end-user/pinboards/download-pinboard-pdf.html
       output: web,ugBk
-  - sectiontitle: Use R for analysis
-    output: web,ugBk
-    sectionitems:
-    - title: About R in ThoughtSpot
-      url: /end-user/r-scripts/about-r-in-thoughtspot.html
-      output: web,ugBk
-    - title: Create and share R scripts
-      url: /end-user/r-scripts/create-r-scripts.html
-      output: web,ugBk
-    - title: Run prebuilt R scripts on answers
-      url: /end-user/r-scripts/run-prebuilt-r-scripts.html
-      output: web,ugBk
-    - title: Save and share R visualizations
-      url: /end-user/r-scripts/save-and-share-r-answers.html
-      output: web,ugBk
-    - title: "Advanced R customizations"
-      url: /spotiq/adv-customize-withr.html
-      output: web,ugBk
+#  - sectiontitle: Use R for analysis
+#    output: web,ugBk
+#    sectionitems:
+#    - title: About R in ThoughtSpot
+#      url: /end-user/r-scripts/about-r-in-thoughtspot.html
+#      output: web,ugBk
+#    - title: Create and share R scripts
+#      url: /end-user/r-scripts/create-r-scripts.html
+#      output: web,ugBk
+#    - title: Run prebuilt R scripts on answers
+#      url: /end-user/r-scripts/run-prebuilt-r-scripts.html
+#      output: web,ugBk
+#    - title: Save and share R visualizations
+#      url: /end-user/r-scripts/save-and-share-r-answers.html
+#      output: web,ugBk
+#    - title: "Advanced R customizations"
+#      url: /spotiq/adv-customize-withr.html
+#      output: web,ugBk
 #  - sectiontitle: SpotIQ
 #    output: web,ugBk
 #    sectionitems:
