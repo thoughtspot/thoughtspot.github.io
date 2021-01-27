@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/amazon-linux-2/al2-install-offline.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-19T20:15:14-08:00" />
+<meta property="article:published_time" content="2021-01-26T22:38:28-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Install the ThoughtSpot application on offline clusters that use Amazon Linux 2”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"Before starting the install, complete the pre-installation steps.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/amazon-linux-2/al2-install-offline.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/amazon-linux-2/al2-install-offline.html","headline":"[“Install the ThoughtSpot application on offline clusters that use Amazon Linux 2”]","dateModified":"2021-01-19T20:15:14-08:00","datePublished":"2021-01-19T20:15:14-08:00","@context":"https://schema.org"}</script>
+{"description":"Before starting the install, complete the pre-installation steps.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/amazon-linux-2/al2-install-offline.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/amazon-linux-2/al2-install-offline.html","headline":"[“Install the ThoughtSpot application on offline clusters that use Amazon Linux 2”]","dateModified":"2021-01-26T22:38:28-08:00","datePublished":"2021-01-26T22:38:28-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5462,7 +5462,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    9 minutes
+    8 minutes
   
 </span> -->
 
@@ -5497,66 +5497,22 @@ $('#toc').on('click', 'a', function() {
   <tbody>
     <tr>
       <td>❏</td>
-      <td><a href="#tmp">1. Prepare the <code class="language-plaintext highlighter-rouge">/tmp</code> disk</a></td>
+      <td><a href="#configure-ansible">1. Configure the Ansible Playbook</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#configure-ansible">2. Configure the Ansible Playbook</a></td>
+      <td><a href="#redirect-mirror">2. Redirect the mirror repository</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#redirect-mirror">3. Redirect the mirror repository</a></td>
+      <td><a href="#run-ansible">3. Run the Ansible Playbook</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#run-ansible">4. Run the Ansible Playbook</a></td>
-    </tr>
-    <tr>
-      <td>❏</td>
-      <td><a href="#install-thoughtspot">5. Install ThoughtSpot</a></td>
+      <td><a href="#install-thoughtspot">4. Install ThoughtSpot</a></td>
     </tr>
   </tbody>
 </table>
-
-<h2 id="tmp">Prepare the <code class="language-plaintext highlighter-rouge">/tmp</code> disk</h2>
-<ol>
-  <li>Declare the bash variables:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> DISK=dev/&lt;disk_name&gt;
- PART=$&lt;DISK&gt;1
-</code></pre></div>    </div>
-  </li>
-  <li>Unmount <code class="language-plaintext highlighter-rouge">/tmp</code> if necessary:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo umount /tmp || true
-</code></pre></div>    </div>
-  </li>
-  <li>Remove <code class="language-plaintext highlighter-rouge">/tmp</code> from <code class="language-plaintext highlighter-rouge">/etc/fstab</code>:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo sed -i "/.*tmp.*/d" /etc/fstab
-</code></pre></div>    </div>
-  </li>
-  <li>Remove <code class="language-plaintext highlighter-rouge">/tmp</code> from the partition table:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> echo -e "d\nw\n" | sudo fdisk $&lt;DISK&gt;
-</code></pre></div>    </div>
-  </li>
-  <li>Partition the disk:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo parted -s $&lt;DISK&gt; mklabel gpt
- sudo parted -s $&lt;DISK&gt; mkpart primary xfs 0% 100%
-</code></pre></div>    </div>
-  </li>
-  <li>Create the file system:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo mkfs.xfs -f $PART
- echo "UUID=$(sudo blkid -o value -s UUID $PART) /tmp xfs defaults,nofail 0 1" | sudo tee -a /etc/fstab
- sudo mount /tmp
- sudo chmod 777 /tmp
-</code></pre></div>    </div>
-  </li>
-  <li>Create a working directory for Ansible:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> WORKDIR=/tmp/ansible
- rm -rf $WORKDIR
- mkdir -p $WORKDIR
- cd $WORKDIR
-</code></pre></div>    </div>
-  </li>
-</ol>
 
 <h2 id="configure-ansible">Configure the Ansible Playbook</h2>
 
@@ -5778,9 +5734,9 @@ sudo parted -s /dev/$TS_DISK mkpart primary xfs 0% 100%</code></pre></p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jan 19, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Jan 26, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 8/18/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 1/21/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
