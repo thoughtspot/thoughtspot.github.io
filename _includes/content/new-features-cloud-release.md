@@ -21,8 +21,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="spotiq-analyze">
   <dt>Support for SpotIQ Analyze</dt>
-  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>.For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html"></p></dd>
-</dlentry>
+  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a></p></dd></dlentry>
 
 <dlentry id="conditional-formatting">
 <dt>Improvements to conditional formatting for charts</dt>
