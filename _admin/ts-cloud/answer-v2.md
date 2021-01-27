@@ -45,7 +45,6 @@ This feature set is the first part of ThoughtSpot's move to a new stack. The new
 The following features are not available in the Beta version of Answer V2. If you would like your company to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/admin/misc/contact.html) to turn Answer V2 off for your company. Alternatively, you can turn it on or off individually from the **Data** panel on the **Search** page.
 
 * [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html)
-* [R scripts]({{ site.baseurl }}/end-user/r-scripts/about-r-in-thoughtspot.html)
 * [Query visualizer]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#query-details)
 * [Pivot tables]({{ site.baseurl }}/complex-search/about-pivoting-a-table.html)
 * [Sankey charts]({{ site.baseurl }}/end-user/search/about-sankey-charts.html)
