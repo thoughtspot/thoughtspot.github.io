@@ -632,30 +632,12 @@ entries:
     - title: Download as PDF
       url: /end-user/pinboards/download-pinboard-pdf.html
       output: web,ugBk
-  - sectiontitle: Use R for analysis
+  - sectiontitle: SpotIQ
     output: web,ugBk
     sectionitems:
-    - title: About R in ThoughtSpot
-      url: /end-user/r-scripts/about-r-in-thoughtspot.html
+    - title: What is SpotIQ
+      url: /spotiq/whatisspotiq.html
       output: web,ugBk
-    - title: Create and share R scripts
-      url: /end-user/r-scripts/create-r-scripts.html
-      output: web,ugBk
-    - title: Run prebuilt R scripts on answers
-      url: /end-user/r-scripts/run-prebuilt-r-scripts.html
-      output: web,ugBk
-    - title: Save and share R visualizations
-      url: /end-user/r-scripts/save-and-share-r-answers.html
-      output: web,ugBk
-    - title: "Advanced R customizations"
-      url: /spotiq/adv-customize-withr.html
-      output: web,ugBk
-#  - sectiontitle: SpotIQ
-#    output: web,ugBk
-#    sectionitems:
-#    - title: What is SpotIQ
-#      url: /spotiq/whatisspotiq.html
-#      output: web,ugBk
 #    - title: "Best SpotIQ practices"
 #      url: /spotiq/special-topics.html
 #      output: web,ugBk
@@ -665,9 +647,9 @@ entries:
 #    - title: "Comparative Analysis"
 #      url: /spotiq/comparative-analysis.html
 #      output: web,ugBk
-#    - title: "Custom SpotIQ analysis"
-#      url: /spotiq/customization.html
-#      output: web,ugBk
+    - title: "Custom SpotIQ analysis"
+      url: /spotiq/customization.html
+      output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
 #      output: web,ugBk
