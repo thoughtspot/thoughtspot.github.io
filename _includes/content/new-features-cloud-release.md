@@ -12,11 +12,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
-    <dd>There are several new features for Scriptability:
-<ul>
-<li><strong>Edit table-level joins from the source table</strong>: You can now edit joins at the table level using TML. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.</li>
-<li><strong>Add tables and columns to an Embrace connection</strong>: ThoughtSpot now allows you to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection. This feature is in <strong>Beta</strong>; to add columns and tables to an Embrace connection through Scriptability, contact your ThoughtSpot administrator. </li>
-</ul>
+    <dd>You can now edit joins at the table level using TML. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.
 </dd></dlentry>
 
 <dlentry id="spotiq-analyze">
