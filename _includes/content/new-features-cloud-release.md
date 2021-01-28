@@ -12,16 +12,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
   <dlentry id="scriptability">
     <dt>Scriptability</dt>
-    <dd>There are several new features for Scriptability:
-<ul>
-<li><strong>Edit table-level joins from the source table</strong>: You can now edit joins at the table level using TML. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.</li>
-<li><strong>Add tables and columns to an Embrace connection</strong>: ThoughtSpot now allows you to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection. This feature is in <strong>Beta</strong>; to add columns and tables to an Embrace connection through Scriptability, contact your ThoughtSpot administrator. </li>
-</ul>
+    <dd>You can now edit joins at the table level using TML. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.
 </dd></dlentry>
 
 <dlentry id="spotiq-analyze">
   <dt>Support for SpotIQ Analyze</dt>
-  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a></p></dd></dlentry>
+  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a>.</p></dd></dlentry>
 
 <dlentry id="conditional-formatting">
 <dt>Improvements to conditional formatting for charts</dt>
