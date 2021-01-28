@@ -1250,6 +1250,33 @@ entries:
     - title: Geo map reference
       url: /reference/geomap-reference.html
       output: web,refGd
+    - levelTwoTitle: API reference
+      output: web,refGd
+      levelTwoItems:
+      - title: Public API reference
+        url: /reference/api/public-api-reference.html
+        output: web,refGd
+      - title: Pinboard Data API
+        url: /reference/api/pinboarddata.html
+        output: web,refGd
+      - title: Pinboard Download API
+        url: /reference/api/pinboard-download-api.html
+        output: web,refGd
+      - title: Metadata API
+        url: /reference/api/metadata-api.html
+        output: web,refGd
+      - title: Session API
+        url: /reference/api/session-api.html
+        output: web,refGd
+      - title: User API
+        url: /reference/api/user-api.html
+        output: web,refGd
+      - title: Group API
+        url: /reference/api/group-api.html
+        output: web,refGd
+      - title: Search Data API
+        url: /reference/api/search-data-api.html
+        output: web,refGd
     - title: Glossary
       url: /reference/glossary.html
       output: web,refGd
