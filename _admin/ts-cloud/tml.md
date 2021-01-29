@@ -21,7 +21,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Worksheet.
 
-{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
+{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>worksheet_guid</em>&gt;
@@ -147,7 +147,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have a description for your View, the `description` parameter does not appear. You can add that variable to the TML file to specify a description for your View.
 
-{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
+{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>view_guid</em>&gt;
@@ -333,7 +333,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TML file to specify conditional formatting.
 
-{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
+{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>answer_guid</em>&gt;
@@ -782,7 +782,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="joins">
     <dt>joins</dt>
     <dd><p>Contains a list of joins between the tables and Views.</p>
-    <p>If you edit the joins in the Worksheet, View, or Answer TML file, you are only editing the joins for that specific Worksheet, View, or Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file.</p>
+    <p>If you edit the joins in the Worksheet, View, or Answer TML file, you are only editing the joins for that specific Worksheet, View, or Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it.</p>
     <p>Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
@@ -822,7 +822,8 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="on">
     <dt>on</dt>
-    <dd>The join expression, or the keys that your tables are joined on. For example, <code>[sale::Sale_Last Name] = [employee::Employee_Last Name] AND [sale::Sale_First Name] = [employee::Employee_First Name]</code>.</dd>
+    <dd><p>The join expression: the relationship definition, or the keys that your tables are joined on. For example, <code>[sale::Sale_Last Name] = [employee::Employee_Last Name] AND [sale::Sale_First Name] = [employee::Employee_First Name]</code>.</p>
+    <p>You cannot directly edit a relationship definition. To alter a relationship definition, you must rename the join or create a new join.</p></dd>
   </dlentry>
 
   <dlentry id="oper">
