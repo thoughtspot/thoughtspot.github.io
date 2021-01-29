@@ -8,7 +8,7 @@ redirect_from:
 permalink: /:collection/:path.html
 ---
 
-This API enables you to programatically download Pinboards or certain visualizations from the Pinboards as a PDF.
+This API enables you to programmatically download Pinboards or certain visualizations from the Pinboards as a PDF.
 
 ## Resource URL
 
