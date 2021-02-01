@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 4/24/2020
+last_updated: 2/1/2021
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -23,7 +23,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dataflow,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
@@ -928,6 +928,24 @@ This subcommand has the following option:
     </dl>
   </dd>
  </dlentry>
+</dl>
+
+{: id="tscli-dataflow"}
+### dataflow
+
+```
+tscli dataflow [-h] {disable,enable}
+```
+
+This subcommand has the following options:
+
+<dl>
+  <dlentry>
+    <dt><code>tscli dataflow disable</code></dt>
+    <dd>Disables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster.</dd></dlentry>
+    <dlentry>
+      <dt><code>tscli dataflow enable</code></dt>
+      <dd>Enables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster, with token authentication.</dd></dlentry>
 </dl>
 
 {: id="tscli-dr-mirror"}
