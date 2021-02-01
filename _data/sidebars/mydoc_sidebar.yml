@@ -635,7 +635,7 @@ entries:
   - sectiontitle: SpotIQ
     output: web,ugBk
     sectionitems:
-    - title: What is SpotIQ
+    - title: What is SpotIQ?
       url: /spotiq/whatisspotiq.html
       output: web,ugBk
 #    - title: "Best SpotIQ practices"
