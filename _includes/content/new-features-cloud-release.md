@@ -1,5 +1,10 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
+<h3>New region support</h3>
+ThoughtSpot Cloud is now available in the following 2 regions, in addition to US East and West:
+<ul><li>Sydney</li>
+<li>Ireland</li></ul>
+
 <h3>Scriptability</h3>
 There are several new features for Scriptability:
 <ul>
