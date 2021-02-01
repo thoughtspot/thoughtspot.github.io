@@ -19,7 +19,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="pinboard-download-api">
   <dt>Pinboard Download API</dt>
-  <dd>Use the new Pinboard Download API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>. 
+  <dd>Use the new Pinboard Download API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>.
 </dd></dlentry>
 
 <dlentry id="spotiq-analyze">
@@ -73,6 +73,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <h3><a id="feb-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
 <dl>
+<dlentry id="new-region-support">
+<dt>New region support</dt>
+<dd>ThoughtSpot Cloud is now available in the following 2 regions, in addition to US East and West, Sydney, and Ireland:
+<ul><li>Frankfurt</li>
+<li>Singapore</li></ul></dd></dlentry>
+
 <dlentry id="search-answers-pinboard">
 <dt>Search on Answers Pinboard</dt>
 <dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers Pinboard</a>:
