@@ -1,5 +1,5 @@
 ---
-title: [Custom SpotIQ analysis]
+title: [SpotIQ analysis]
 summary: Learn how to customize SpotIQ analysis.
 last_updated: 11/15/2019
 sidebar: mydoc_sidebar
@@ -15,7 +15,7 @@ data source.
 Every menu or location where you can run **SpotIQ analyze**, you
 can customize your analysis. You access it using the lightbulb button ![more options menu icon]({{ site.baseurl }}/images/icon-lightbulb.png){: .inline} or the ellipses menu ![SpotIQ analyze icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
-![]({{ site.baseurl }}/images/spotiq-where-customize.png)
+![]({{ site.baseurl }}/images/spotiq-menu-items.png)
 
 Regardless of where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has the same layout. The columns displayed, though, are specific to
 the data from which you run **SpotIQ analyze**.
