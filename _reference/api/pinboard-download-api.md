@@ -1,10 +1,9 @@
 ---
 title: [Pinboard Download API]
 summary: "You can download a Pinboard, or specific visualizations from the Pinboard, as a PDF."
-last_updated: 1/28/2021
+last_updated: 2/1/2021
 sidebar: mydoc_sidebar
 redirect_from:
-- /app-integrate/reference/pinboarddata.html
 permalink: /:collection/:path.html
 ---
 
@@ -35,14 +34,14 @@ This API enables you to programmatically download Pinboards or certain visualiza
    </thead>
    <tbody>
       <tr>
-         <td><code>pinboardId</code></td>
+         <td><code>id</code></td>
          <td>string</td>
          <td>ID (GUID) of the Pinboard to download</td>
-         <td>Yes</td>
+         <td>Yes, unless using the <code>transient_pinboard_content</code> parameter.</td>
          <td>None</td>
       </tr>
      <tr>
-         <td><code>layoutType</code></td>
+         <td><code>layout_type</code></td>
          <td>string [PINBOARD/VISUALIZATION]</td>
          <td>For <code>PINBOARD</code>, the PDF looks like the Pinboard does in the UI. For <code>VISUALIZATION</code>, the PDF has one visualization for each page.</td>
          <td>Yes</td>
@@ -56,54 +55,61 @@ This API enables you to programmatically download Pinboards or certain visualiza
          <td>LANDSCAPE</td>
       </tr>
       <tr>
-      <td><code>truncateTables</code></td>
+      <td><code>truncate_tables</code></td>
       <td>boolean</td>
       <td>If set to true, displays only the first page of the tables. Only applicable in Visualization layout.</td>
       <td>Yes, if <code>layoutType</code> is <code>VISUALIZATION</code></td>
       <td>false</td>
          </tr>
      <tr>
-     <td><code>visualizationIds</code></td>
+     <td><code>visualization_ids</code></td>
      <td>string</td>
      <td>Only select specific visualizations to include. Only applicable in Visualization layout.</td>
      <td>Yes, if <code>layoutType</code> is <code>VISUALIZATION</code></td>
      <td>none</td>
       </tr>
       <tr>
-      <td><code>includeFooterLogo</code></td>
+      <td><code>include_logo</code></td>
       <td>boolean</td>
       <td>Include customized wide logo if available in the footer</td>
       <td>Yes</td>
       <td>true</td>
       </tr>
       <tr>
-      <td><code>footerText</code></td>
+      <td><code>footer_text</code></td>
       <td>string</td>
       <td>Any footer text to be included in the footer of each page of the PDF</td>
       <td>No</td>
       <td>none</td>
       </tr>
       <tr>
-      <td><code>includePageNumber</code></td>
+      <td><code>include_page_number</code></td>
       <td>boolean</td>
       <td>Whether to include a footer with the page number</td>
       <td>Yes</td>
       <td>true</td>
       </tr>
       <tr>
-      <td><code>includeCoverPage</code></td>
+      <td><code>include_cover_page</code></td>
       <td>boolean</td>
       <td>Whether to inclue a cover page displaying the Pinboard title</td>
       <td>Yes</td>
       <td>true</td>
       </tr>
       <tr>
-      <td><code>includeFilterPage</code></td>
+      <td><code>include_filter_page</code></td>
       <td>boolean</td>
       <td>Whether to include a second page with a list of all applied filters</td>
       <td>Yes</td>
       <td>true</td>
-      </tr>     
+      </tr>
+      <tr>
+      <td><code>transient_pinboard_content</code></td>
+      <td>string</td>
+      <td>If the Pinboard has unsaved changes, the 3 parameters in this string, <code>content</code>, <code>effectiveQuestionMap</code>, and <code>logicalTableidtoanswermap</code>, are clubbed together.</td>
+      <td>Yes, unless using the <code>id</code> parameter.</td>
+      <td>none</td>
+      </tr>       
    </tbody>
 </table>
 
@@ -121,10 +127,5 @@ curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header
 https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf
 ```
 
-<!-- i think the above is incorrect  -->
-
 ## Response Example
-
-```
-
-```
+The Pinboard automatically downloads as a PDF. There is no JSON response.
