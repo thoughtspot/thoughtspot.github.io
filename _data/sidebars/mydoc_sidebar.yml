@@ -647,7 +647,7 @@ entries:
 #    - title: "Comparative Analysis"
 #      url: /spotiq/comparative-analysis.html
 #      output: web,ugBk
-    - title: "Custom SpotIQ analysis"
+    - title: "SpotIQ analysis"
       url: /spotiq/customization.html
       output: web,ugBk
 #    - title: "Insight feedback"
