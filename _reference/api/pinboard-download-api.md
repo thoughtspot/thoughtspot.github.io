@@ -118,8 +118,15 @@ This API enables you to programmatically download Pinboards or certain visualiza
 ##### cURL
 
 ```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/octet-stream' --header 'X-Requested-By: ThoughtSpot' -d 'id=543619d6-0015-4667-b257-eff547d13a12&layout_type=PINBOARD&orientation=LANDSCAPE&truncate_tables=true&include_logo=true&include_page_number=true&include_cover_page=true&include_filter_page=true' 'https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf'
+curl -X POST \
+  --header 'Content-Type: application/x-www-form-urlencoded' \
+  --header 'Accept: application/octet-stream' \
+  --header 'X-Requested-By: ThoughtSpot' \
+  -d 'id=543619d6-0015-4667-b257-eff547d13a12&layout_type=PINBOARD&orientation=LANDSCAPE&truncate_tables=true&include_logo=true&include_page_number=true&include_cover_page=true&include_filter_page=true' \
+  'https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf'
 ```
+
+{% include note.html content="You must send the <code>X-Requested-By</code> header in your request. Without it, the request fails." %}
 
 ##### Request URL
 
@@ -128,4 +135,4 @@ https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf
 ```
 
 ## Response Example
-The Pinboard automatically downloads as a PDF. There is no JSON response.
+The response appears in the form of a raw pdf file.
