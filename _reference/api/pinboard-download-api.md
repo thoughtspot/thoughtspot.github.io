@@ -1,13 +1,17 @@
 ---
 title: [Pinboard Download API]
 summary: "You can download a Pinboard, or specific visualizations from the Pinboard, as a PDF."
-last_updated: 2/1/2021
+last_updated: 2/3/2021
 sidebar: mydoc_sidebar
 redirect_from:
 permalink: /:collection/:path.html
 ---
 
 This API enables you to programmatically download Pinboards or certain visualizations from the Pinboards as a PDF.
+
+You can also [download an embedded Pinboard with unsaved changes](#embed).
+
+This feature is the API version of the [download a Pinboard as a PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html) UI feature. The API parameters refer to options in the UI. To see these options in the UI, refer to [Download a Pinboard as a PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
 
 ## Resource URL
 
@@ -106,7 +110,7 @@ This API enables you to programmatically download Pinboards or certain visualiza
       <tr>
       <td><code>transient_pinboard_content</code></td>
       <td>string</td>
-      <td>If the Pinboard has unsaved changes, the 3 parameters in this string, <code>content</code>, <code>effectiveQuestionMap</code>, and <code>logicalTableidtoanswermap</code>, are clubbed together.</td>
+      <td>For use when embedding ThoughtSpot. If the Pinboard has unsaved changes, pass this parameter, and use the <a href="{{ site.baseurl }}/reference/api/about-JS-API.html">JavaScript API</a>.</td>
       <td>Yes, unless using the <code>id</code> parameter.</td>
       <td>none</td>
       </tr>       
@@ -119,7 +123,7 @@ This API enables you to programmatically download Pinboards or certain visualiza
 
 ```
 curl -X POST \
-  --header 'Content-Type: application/x-www-form-urlencoded' \
+  --header 'Content-Type: multipart/form-data;' \
   --header 'Accept: application/octet-stream' \
   --header 'X-Requested-By: ThoughtSpot' \
   -d 'id=543619d6-0015-4667-b257-eff547d13a12&layout_type=PINBOARD&orientation=LANDSCAPE&truncate_tables=true&include_logo=true&include_page_number=true&include_cover_page=true&include_filter_page=true' \
@@ -135,4 +139,39 @@ https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf
 ```
 
 ## Response Example
-The response appears in the form of a raw pdf file.
+The response appears in the form of a raw pdf file. The response type is `application/octet-stream`.
+
+{: id="embed"}
+## Embedded Pinboard with unsaved changes
+If your ThoughtSpot environment is embedded, and you want to download Pinboards with unsaved changes as PDFs, you must use the [JavaScript API]({{ site.baseurl }}/reference/api/about-JS-API.html) and pass the <code>transient_pinboard_content</code> parameter in the browser fetch request, using the `getExportRequestForCurrentPinboard` method.
+
+The signature for this API method is as follows:
+
+```
+function getExportRequestForCurrentPinboard(frame: HTMLIframeElement): Promise<string>;
+```
+
+The promise returned resolves with a string that contains, encoded as JSON, the transient pinboard content which to send to the `/callosum/v1/tspublic/v1/export/pinboard/pdf` endpoint under the key `transient_pinboard_content`. This content resembles the current Pinboard as is, including any changes, saved or not.
+
+### Sample browser fetch request
+```
+<iframe src="http://ts_host:port/" id="ts-embed"></iframe>
+<script src="/path/to/ts-api.js"></script>
+<script>
+const tsFrame = document.getElementById("ts-embed");
+async function downloadPDF() {
+  const transientPinboardContent = await thoughtspot.getExportRequestForCurrentPinboard(tsFrame);
+  const pdfResponse = await fetch("http://ts_host:port/callosum/v1/tspublic/v1/export/pinboard/pdf", {
+    method: "POST",
+    body: createFormDataObjectWith({
+      "layout_type": "PINBOARD",
+      "transient_pinboard_content": transientPinboardContent,
+    }),
+  });
+  // Do something with pdfResponse.blob()
+}
+</script>
+```
+
+### Response Example
+The response appears in the form of a raw pdf file. The response type is `application/octet-stream`.

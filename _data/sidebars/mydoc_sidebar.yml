@@ -1277,6 +1277,9 @@ entries:
       - title: Search Data API
         url: /reference/api/search-data-api.html
         output: web,refGd
+      - title: Using the JavaScript API
+        url: /reference/api/about-JS-api.html
+        output: web,refGd
     - title: Glossary
       url: /reference/glossary.html
       output: web,refGd
