@@ -1,7 +1,7 @@
 ---
 title: [Pinboard Download API]
 summary: "You can download a Pinboard, or specific visualizations from the Pinboard, as a PDF."
-last_updated: 2/1/2021
+last_updated: 2/3/2021
 sidebar: mydoc_sidebar
 redirect_from:
 permalink: /:collection/:path.html
