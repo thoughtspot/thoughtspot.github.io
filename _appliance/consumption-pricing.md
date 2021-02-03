@@ -1,6 +1,6 @@
 ---
 title: [Consumption-based pricing]
-last_updated: 1/26/2021
+last_updated: 2/3/2021
 summary: ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on usage of the ThoughtSpot product.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -43,3 +43,22 @@ You do not have to be on ThoughtSpot Cloud to use the consumption-based pricing 
 2. Allow ThoughtSpot to serve usage information for accurate in-product usage visibility of credits consumed via a ThoughtSpot-created Embrace connection on your cluster. The Embrace connection is a JDBC connection that uses SSL for transport (TLS encrypted).
 
 {% include note.html content="Usage information is collected only for the purposes of measuring credit consumption. Your usage information is secured and isolated inside our cloud environment." %}
+
+## Monitor your consumption
+You can monitor your credit consumption with the Credit Usage Pinboard, a new default admin-only Pinboard with data from the new Credit Usage Worksheet. You can access this Pinboard by searching for it on the **Pinboards** page.
+
+![Credit Usage Pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
+
+The Credit Usage Pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can also search the data yourself, using the Credit Usage Worksheet, and create your own Answers and Pinboards.
+
+The Credit Usage Pinboard contains the following visualizations and headlines:
+- Daily Usage, with Unique Users (last 30 days)
+- Billable Credits Consumed, All Time
+- Billable Credits Consumed, Month to Date
+- Credits Purchased, Expiry Date
+- Uncapped Credits Consumed, Month to Date
+- Uncapped Credits Consumed, All Time
+- Credit Consumption & Usage, Top 10 Users, This Month
+- Monthly Credits Consumed, with Unique Users
+- Weekly Credits Consumed, with Unique Users, Last 8 Weeks
+- Month of Year Credit Usage, by User GUID
