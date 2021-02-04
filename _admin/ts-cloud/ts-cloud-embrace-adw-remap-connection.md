@@ -35,5 +35,3 @@ To remap a connection:
 To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html).
 
 See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html) for details of connection parameters.
-
-We also recommend that you review [Best Practices for ADW connections]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-best-practices.html)
