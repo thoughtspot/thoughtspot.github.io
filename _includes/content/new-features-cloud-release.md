@@ -66,7 +66,9 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
 <dlentry id="embrace">
 <dt>Embrace</dt>
-<dd>Embrace functionality</dd>
+<dd>Embrace now supports Oracle Autonomous Database. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html">Connect to Oracle Autonomous Data Warehouse</a>.</dd>
+<dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-passthrough.html">Passthrough functions for Snowflake</a>.
+</dd>
 </dlentry>
 </dl>
 

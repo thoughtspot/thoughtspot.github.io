@@ -26,7 +26,7 @@ Learn about the fields used to create an ADW connection using ThoughtSpot Embrac
       <dd>Specify the net service name of the ADW account.</dd></dlentry>
     <dlentry id="wallet-file">
       <dt>Wallet file</dt>
-      <dd>Specify the warehouse associated with the connection.</dd></dlentry> 
+      <dd>Upload the wallet file containing your Oracle client credentials. If you do not have a wallet file, contact your Autonomous Database administrator.</dd></dlentry>
   <dlentry id="schema">
       <dt>Schema</dt>
       <dd>Specify the schema associated with the database.<br/><i>Optional field.</i></dd></dlentry>
