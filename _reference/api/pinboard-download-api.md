@@ -1,7 +1,7 @@
 ---
 title: [Pinboard Download API]
 summary: "You can download a Pinboard, or specific visualizations from the Pinboard, as a PDF."
-last_updated: 2/3/2021
+last_updated: 2/4/2021
 sidebar: mydoc_sidebar
 redirect_from:
 permalink: /:collection/:path.html
@@ -29,7 +29,7 @@ This feature is the API version of the [download a Pinboard as a PDF]({{ site.ba
    </colgroup>
    <thead>
       <tr>
-         <th>Query Parameter</th>
+         <th>Form Parameter</th>
          <th>Data Type</th>
          <th>Description</th>
          <th>Mandatory?</th>
@@ -182,3 +182,13 @@ async function downloadPDF() {
 
 ### Response Example
 The response appears in the form of a raw pdf file. The response type is `application/octet-stream`.
+
+## HTTP status codes
+You may receive the following status codes in your output. These HTTP status codes have the following meanings:
+
+| Status code | Meaning |
+| --- | --- |
+| 200	| Streaming output for pinboard pdf |
+| 400	| Invalid parameter values |
+| 403	| No read access for pinboard |
+| 404	| Object not found |
