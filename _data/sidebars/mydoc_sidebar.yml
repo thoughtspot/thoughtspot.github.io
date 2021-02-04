@@ -179,6 +179,9 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html
           output: web
+        - title: Passthrough functions
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html
+          output: web
       - levelThreeTitle: Connect to Amazon Redshift
         output: web
         levelThreeItems:
