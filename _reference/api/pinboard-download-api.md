@@ -122,12 +122,19 @@ This feature is the API version of the [download a Pinboard as a PDF]({{ site.ba
 ##### cURL
 
 ```
-curl -X POST \
-  --header 'Content-Type: multipart/form-data;' \
-  --header 'Accept: application/octet-stream' \
-  --header 'X-Requested-By: ThoughtSpot' \
-  -d 'id=543619d6-0015-4667-b257-eff547d13a12&layout_type=PINBOARD&orientation=LANDSCAPE&truncate_tables=true&include_logo=true&include_page_number=true&include_cover_page=true&include_filter_page=true' \
-  'https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf'
+
+curl --location --request POST 'http://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf' \
+--header 'Accept: application/octet-stream' \
+--header 'X-Requested-By: ThoughtSpot' \
+--header 'Cookie: JSESSIONID=71cc2672-7ead-4480-be7d-b6ad52023e98; userGUID=59481331-ee53-42be-a548-bd87be6ddd4a; Callosum-Download-Initiated=false' \
+--form 'id="061457a2-27bc-43a9-9754-0cd873691bf0"' \
+--form 'layout_type="PINBOARD"' \
+--form 'orientation="LANDSCAPE"' \
+--form 'truncate_tables="false"' \
+--form 'include_logo="true"' \
+--form 'include_page_number="true"' \
+--form 'include_filter_page="true"' \
+--form 'include_cover_page="true"'
 ```
 
 {% include note.html content="You must send the <code>X-Requested-By</code> header in your request. Without it, the request fails." %}
