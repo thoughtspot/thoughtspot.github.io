@@ -155,6 +155,8 @@ You can modify the API's output by appending runtime filters at the end of the r
 https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf?col1=COL_NAME1&op1=OP_TYPE1&val1=VALUE1&coln=COL_NAMEn&opn=OP_TYPEn&valn=VALUEn
 ```
 
+You can add more than one filter by specifying `col2`, `op2`, `val2`, and so on.
+
 | Parameter | Definition |
 | --- | --- |
 | col*n* | Name of the column to filter on |
