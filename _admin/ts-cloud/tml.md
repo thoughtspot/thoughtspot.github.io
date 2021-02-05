@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 1/20/2021
+last_updated: 2/5/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 
 To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
-In this article, you learn the syntax of the TML files for each Scriptable object.
+In this article, you learn the syntax of the TML files for each Scriptable object. You also learn how to [add and modify joins](#syntax-joins) for Worksheets, Views, and tables.
 
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TML file
@@ -20,6 +20,8 @@ The `TML` file for Scriptable Worksheets has a specific syntax.
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Worksheet, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Worksheet.
+
+Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
 
 {% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
@@ -147,6 +149,8 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have a description for your View, the `description` parameter does not appear. You can add that variable to the TML file to specify a description for your View.
 
+Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
+
 {% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
@@ -261,6 +265,8 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your table, the `index_priority` parameter does not appear. You can add that variable to the TML file to specify an index priority for the table.
 
+Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
+
 <pre>
 <a href="#guid">guid</a>: &lt;<em>table_guid</em>&gt;
 <a href="#table">table</a>:
@@ -324,6 +330,68 @@ You may not see each of these parameters in your own TML files, depending on whe
   - <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
 </pre>
 
+{: id="syntax-joins"}
+## Join syntax
+The syntax and functionality of joins in the table TML file differs from the syntax and functionality for Worksheet and View TML files.
+
+When you edit the information in the [joins](#joins) section of the TML for a Worksheet or View, you override the table join(s) from the table the Worksheet or View comes from. However, you only override the join(s) for the specific Worksheet or View you are editing, ***not*** for the source table.
+
+When you edit the information in the [joins_with](#joins_with) section of the TML for a table, you edit the join information for the source table, the destination table, and any dependents, such as Worksheets and Views. Note that you can only edit joins for which the table is the source table.
+
+### Worksheet and View join syntax
+For Worksheets and Views, the join syntax is the following:
+
+<pre>
+<a href="#joins">joins</a>:
+- <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+  <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
+  <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
+  <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+  <a href="#on">on</a>: &lt;<em>join_expression_string</em>&gt;
+  <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+<a href="#table_paths">table_paths</a>:
+- <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
+  <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
+  <a href="#join_path">join_path</a>:
+  - {}
+</pre>
+
+### Worksheet and View join functionality and limitations
+With Worksheet and View joins, you can accomplish the following tasks:
+- Add new joins at the Worksheet or View level
+- Modify existing joins at the Worksheet or View level
+- Delete existing joins at the Worksheet or View level
+
+Worksheet and View joins have the following limitation:
+- You cannot modify joins at the table level from the Worksheet or View TML file. You can only change the joins for that specific Worksheet or View.
+
+### Table join syntax
+<pre>
+<a href="#joins_with">joins_with</a>:
+- <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+  <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
+  <a href="#destination">destination</a>:
+    <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+  <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
+  <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+  <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+- <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
+- <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
+</pre>
+
+### Table join functionality and limitations
+With table joins, you can accomplish the following tasks:
+- Add new joins at the table level. These joins apply to all dependents, such as Worksheets and Views. The table you are editing must be the source table.
+- Create generic or range joins at the table level. These joins apply to all dependents, such as Worksheets and Views. The table you are editing must be the source table.
+- Edit existing joins by changing the name of the join and modifying it to your specifications. Changing the name of the join creates a new join; you must then delete the old join in the UI. The table you are editing must be the source table.
+
+Table joins have the following limitations:
+- You cannot delete a join by removing it from the TML. You must delete it through the UI.
+- You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
+- Renaming a join creates a new join with that name and does not delete the old join with the original name.
+
+{% include note.html content="Table join functionality is in Beta; to enable it, contact ThoughtSpot Support." %}
+
 {: id="syntax-answers"}
 ##  Syntax of the Answer TML file
 
@@ -346,19 +414,6 @@ You may not see each of these parameters in your own TML files, depending on whe
   - <a href="#id">id</a>: &lt;<em>table_id</em>&gt;
     <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
     <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name</em>&gt;
-  <a href="#joins">joins</a>:
-  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
-    <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
-    <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
-    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
-    <a href="#on">on</a>: &lt;<em>join_expression_string</em>&gt;
-    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
-  - <em>...</em>
-  <a href="#table_paths">table_paths</a>:
-  - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
-    <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
-    <a href="#join_path">join_path</a>:
-    - {}
   <a href="#formulas">formulas</a>:
   - <a href="#id">id</a>: &lt;<em>formula_id_1</em>&gt;
     <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
@@ -782,14 +837,14 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="joins">
     <dt>joins</dt>
     <dd><p>Contains a list of joins between the tables and Views.</p>
-    <p>If you edit the joins in the Worksheet, View, or Answer TML file, you are only editing the joins for that specific Worksheet, View, or Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it.</p>
+    <p>If you edit the joins in the Worksheet or View TML file, you are only editing the joins for that specific Worksheet or View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it.</p>
     <p>Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
 
   <dlentry id="joins_with">
     <dt>joins_with</dt>
-    <dd><p>Contains a list of external joins for which this table, Worksheet, or View is the source.</p>
+    <dd><p>Contains a list of external joins for which this table is the source.</p>
     <p>Each join is identified by <code>name</code> and optional <code>description</code>, and the additional attributes of <code>destination</code>, <code>type</code>, <code>on</code> and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
