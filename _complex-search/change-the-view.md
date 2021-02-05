@@ -31,7 +31,7 @@ To sort your search:
 
    {% include tip.html content="Hold shift and click another column to add a secondary sort. You can even add tertiary sorting and so on by continuing to use this trick." %}
 
-* If you are in the chart view, click the axis label of your chart that you would like to sort and select **Sort**. You can choose to sort in ascending or descending order.
+* If you are in the chart view, click the axis label of your chart that you would like to sort and select **Sort**. You can choose to sort in ascending or descending order. You can also sort by an attribute or measure that is not visualized by typing it into the search bar. For example, `sales store name sort by store state`. ThoughtSpot automatically adds `store state` to the **Not visualized** section of the chart, and sorts the chart by store state. This is also known as a hidden sort.
 
 ## Change the date bucketing (grouping)
 
