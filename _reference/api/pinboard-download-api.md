@@ -148,6 +148,42 @@ https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf
 ## Response Example
 The response appears in the form of a raw pdf file. The response type is `application/octet-stream`.
 
+## Runtime filters
+You can modify the API's output by appending runtime filters at the end of the resource URL, with a specific syntax. For example:
+
+```
+https://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf?col1=COL_NAME1&op1=OP_TYPE1&val1=VALUE1&coln=COL_NAMEn&opn=OP_TYPEn&valn=VALUEn
+```
+
+You can add more than one filter by specifying `col2`, `op2`, `val2`, and so on.
+
+| Parameter | Definition |
+| --- | --- |
+| col*n* | Name of the column to filter on |
+| op*n* | {IN, EQ, NE, LT, LE...} |
+| val*n* | Value of the column to filter on. |
+
+{% include note.html content="These parameters are case-insensitive. <code>EQ</code>, <code>eq</code>, and <code>eQ</code>, for example, have the same result." %}
+
+### Runtime filter operators
+
+|Operator|Description|Number of Values|
+|--------|-----------|----------------|
+|`EQ`|equals|1|
+|`NE`|does not equal|1|
+|`LT`|less than|1|
+|`LE`|less than or equal to|1|
+|`GT`|greater than|1|
+|`GE`|greater than or equal to|1|
+|`CONTAINS`|contains|1|
+|`BEGINS_WITH`|begins with|1|
+|`ENDS_WITH`|ends with|1|
+|`BW_INC_MAX`|between inclusive of the higher value|2|
+|`BW_INC_MIN`|between inclusive of the lower value|2|
+|`BW_INC`|between inclusive|2|
+|`BW`|between non-inclusive|2|
+|`IN`|is included in this list of values|multiple|
+
 {: id="embed"}
 ## Embedded Pinboard with unsaved changes
 If your ThoughtSpot environment is embedded, and you want to download Pinboards with unsaved changes as PDFs, you must use the [JavaScript API]({{ site.baseurl }}/reference/api/about-JS-API.html) and pass the <code>transient_pinboard_content</code> parameter in the browser fetch request, using the `getExportRequestForCurrentPinboard` method.
