@@ -128,16 +128,6 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
     <a href="#join_progressive">join_progressive</a>: [ true | false ]
-  <a href="#joins_with">joins_with</a>:
-  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
-    <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
-    <a href="#destination">destination</a>:
-      <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
-    <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
-    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
-    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
-  - <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
 </pre>
 
 {: id="syntax-views"}
@@ -244,16 +234,6 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
     <a href="#description">description</a>: &lt;<em>column_description</em>&gt;
     <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     ...  
-  <a href="#joins_with">joins_with</a>:
-  - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
-    <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
-    <a href="#destination">destination</a>:
-      <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
-    <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
-    <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
-    <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
-  - <a href="#name">name</a>: &lt;<em>join_name_2</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>join_name_n</em>&gt;
 </pre>    
 
 {: id="syntax-tables"}
