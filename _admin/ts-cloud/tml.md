@@ -363,7 +363,7 @@ With Worksheet and View joins, you can accomplish the following tasks:
 - Delete existing joins at the Worksheet or View level
 
 Worksheet and View joins have the following limitation:
-- You cannot modify joins at the table level from the Worksheet or View TML file. You can only change the joins for that specific Worksheet or View.
+- You cannot modify joins at the table level from the Worksheet or View TML file. You can only override the joins for that specific Worksheet or View.
 
 ### Table join syntax
 <pre>
@@ -382,7 +382,8 @@ Worksheet and View joins have the following limitation:
 ### Table join functionality and limitations
 With table joins, you can accomplish the following tasks:
 - Add new joins at the table level. These joins apply to all dependents, such as Worksheets and Views. The table you are editing must be the source table.
-- Create generic or range joins at the table level. These joins apply to all dependents, such as Worksheets and Views. The table you are editing must be the source table.
+- Create generic or range joins at the table level. Previously, you could only create non-generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date</code>. Now, you can create generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code>. These joins apply to all dependents, such as Worksheets and Views. The table you are editing must be the source table.
+
 - Edit existing joins by changing the name of the join and modifying it to your specifications. Changing the name of the join creates a new join; you must then delete the old join in the UI. The table you are editing must be the source table.
 
 Table joins have the following limitations:
