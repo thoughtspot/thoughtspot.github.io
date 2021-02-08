@@ -117,10 +117,10 @@ Learn about the fields used to create a Snowflake connection using ThoughtSpot E
       <dd>Specify the schema associated with the database.<br/>Optional field.</dd></dlentry>
   <dlentry id="snowflake-oauth-client-id">
       <dt>OAuth</dt>
-      <dd>Enter the OAuth client ID associated with the BigQuery database.</dd>
+      <dd>Enter the OAuth client ID associated with the Snowflake database.</dd>
   </dlentry>
   <dlentry id="snowflake-oauth-client-secret">
       <dt>OAuth client secret</dt>
-      <dd>Enter the OAuth client secret associated with the BigQuery database.</dd>
+      <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
   </dlentry>    
 </dl>
