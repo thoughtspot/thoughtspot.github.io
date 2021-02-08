@@ -28,6 +28,14 @@ Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. Yo
     <dt>Service account</dt>
     <dd>Enter the service account associated with the BigQuery database.</dd>
   </dlentry>
+  <dlentry id="embrace-gbq-oauth-client-id">
+    <dt>OAuth</dt>
+    <dd>Enter the OAuth client ID associated with the BigQuery database.</dd>
+  </dlentry>
+  <dlentry id="embrace-gbq-oauth-client-secret">
+    <dt>OAuth client secret</dt>
+    <dd>Enter the OAuth client secret associated with the BigQuery database.</dd>
+  </dlentry>
 </dl>  
 
 {: id="custom-role"}

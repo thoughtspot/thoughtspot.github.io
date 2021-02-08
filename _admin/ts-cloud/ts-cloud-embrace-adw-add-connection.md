@@ -9,9 +9,9 @@ To connect to ADW:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
-     ![]({{ site.baseurl }}/images/new-connection.png "New db connect")
+     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
 3. Create a name for your connection, a description (optional), then select the ADW connection type, and click **Continue**.
 

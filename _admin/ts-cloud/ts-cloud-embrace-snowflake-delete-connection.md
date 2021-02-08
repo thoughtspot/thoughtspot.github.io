@@ -12,7 +12,7 @@ To delete a connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page.
+2. Click the **Embrace** tab at the top of the page.
 
 3. Check the box next to the connection you want to delete.
 

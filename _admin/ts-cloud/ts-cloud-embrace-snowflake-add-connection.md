@@ -9,17 +9,20 @@ To connect to Snowflake:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
-     ![]({{ site.baseurl }}/images/new-connection.png "New db connect")
+     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
 3. Create a name for your connection, a description (optional), then select the Snowflake connection type, and click **Continue**.
 
      ![Add a Snowflake connection]({{ site.baseurl }}/images/embrace-snowflake-connection-type-ts-cloud.png "Add a Snowflake connection")
 
-4. Enter the connection details for your Snowflake data source.
-
-    ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails.png "Enter connection details")
+4. Enter the connection details for your Snowflake data source using either OAuth or service account authentication:
+   - For Oauth authentication:
+     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
+    <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
+   - For service account authentication:
+     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-serv-acct.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
 
