@@ -1,6 +1,6 @@
 ---
 title: [Sync users and groups from LDAP]
-last_updated: 1/15/2021
+last_updated: 2/8/2021
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -109,6 +109,12 @@ To run the LDAP sync script in interactive mode:
     ```
 
     The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
+
+5. When the ThoughtSpot search engine finishes indexing, your new users should appear in the ThoughtSpot application. To check if the ThoughtSpot search engine is indexing, run the following command:
+
+    ```
+    tscli cluster status
+    ```
 
 ### `syncUsersAndGroups.py` command-line switches
 
