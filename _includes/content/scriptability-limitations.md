@@ -10,9 +10,9 @@
 
 * You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom SpotApp, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
 
-* You can only view and modify joins at the table level in the source table TML. This is a Beta feature; to enable it, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). You cannot view or modify table-level joins from the destination table's TML file.
+* Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join. This is a Beta feature; to enable it, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). You cannot view or modify table-level joins from the destination table's TML file.
 
-* You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only change the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file. This is a Beta feature; to enable it, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
+* You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only override the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file. This is a Beta feature; to enable it, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 * You cannot use TML to alter which columns and tables are in an Embrace connection.
 
