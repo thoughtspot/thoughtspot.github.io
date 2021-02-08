@@ -361,10 +361,10 @@ Worksheet and View joins have the following limitation:
 
 ### Table join functionality and limitations
 With table joins, you can accomplish the following tasks:
-- Add new joins at the table level. These joins apply to all dependents, such as Worksheets and Views. The table you are editing must be the source table.
-- Create generic or range joins at the table level. Previously, you could only create non-generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date</code>. Now, you can create generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code>. These joins apply to all dependents, such as Worksheets and Views. The table you are editing must be the source table.
+- Add new joins at the table level. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
+- Create generic or range joins at the table level. Previously, you could only create non-generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date</code>. Now, you can create generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code>. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
 
-- Edit existing joins by changing the name of the join and modifying it to your specifications. Changing the name of the join creates a new join; you must then delete the old join in the UI. The table you are editing must be the source table.
+- Edit existing joins by changing the name of the join and modifying it to your specifications. Changing the name of the join creates a new join; you must then delete the old join in the UI. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
 
 Table joins have the following limitations:
 - You cannot delete a join by removing it from the TML. You must delete it through the UI.
@@ -431,18 +431,18 @@ You may not see each of these parameters in your own TML files, depending on whe
             <a href="#max">max</a>: &lt;<em>conditional_formatting_maximum</em>&gt;
           <a href="#color">color</a>: &lt;<em>color_string</em>&gt;
           <a href="#plotAsBand">plotAsBand</a>: [ true | false ]
-      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt; <!--
-      <a href="#wrap_column_text">wrap_column_text</a>: [ true | false ]
-      <a href="#column_width">column_width</a>: &lt;<em>column_width</em>&gt; not in v1-->
+      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt;
+      <a href="#wrap_column_text">wrap_column_text</a>: [ true | false ] <!--
+      <a href="#column_width">column_width</a>: &lt;<em>column_width</em>&gt; not in current version-->
       <a href="#show_headline">show_headline</a>: [ true | false ]
       <a href="#headline_aggregation">headline_aggregation</a>: &lt;<em>headline_aggregation_string</em>&gt;
     - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     <a href="#ordered_column_ids">ordered_column_ids</a>:
     - <a href="#column_id">column_id</a>: &lt;<em>column_id_1</em>&gt;
-    - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt; <!--
+    - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     <a href="#show_grid_summary">show_grid_summary</a>: [ true | false ]
     <a href="#show_table_footer">show_table_footer</a>: [ true | false ]
-    <a href="#wrap_table_header">wrap_table_header</a>: [ true | false ] not in v1-->
+    <a href="#wrap_table_header">wrap_table_header</a>: [ true | false ]
     <a href="#client_state">client_state</a>: &lt;<em>client_state_string</em>&gt;
   <a href="#chart">chart</a>:
     <a href="#type">type</a>: &lt;<em>chart_type</em>&gt;
@@ -455,8 +455,8 @@ You may not see each of these parameters in your own TML files, depending on whe
             <a href="#max">max</a>: &lt;<em>conditional_formatting_maximum</em>&gt;
           <a href="#color">color</a>: &lt;<em>color_string</em>&gt;
           <a href="#plotAsBand">plotAsBand</a>: [ true | false ]
-      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt; <!--
-      <a href="#show_data_labels">show_data_labels</a>: [ true | false ] not in v1-->
+      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt;
+      <a href="#show_data_labels">show_data_labels</a>: [ true | false ]
     - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     <a href="#axis_configs">axis_configs</a>: &lt;<em>axis_config_1</em>&gt;
     - x:
@@ -918,25 +918,25 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dd>A string that represents the fully disambiguated search query. Used in Answers and Views. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
-  <!--<dlentry id="show_data_labels">
+  <dlentry id="show_data_labels">
     <dt>show_data_labels</dt>
     <dd>Whether or not to show the data labels. <code>true</code> shows the labels.</dd>
-  </dlentry> not in v1 -->
+  </dlentry>
 
   <dlentry id="show_headline">
     <dt>show_headline</dt>
     <dd>Determines whether to show the headline for this column. <code>true</code> shows the headline.</dd>
   </dlentry>
 
-  <!--<dlentry id="show_grid_summary">
+  <dlentry id="show_grid_summary">
     <dt>show_grid_summary</dt>
     <dd>Whether or not to show the grid summary. <code>true</code> shows the summary.</dd>
-  </dlentry> not in v1-->
+  </dlentry>
 
-  <!--<dlentry id="show_table_footer">
+  <dlentry id="show_table_footer">
     <dt>show_table_footer</dt>
-    <dd>Whether or not to show the table footer. <code>true</code> shows the summary.</dd>
-  </dlentry> not in v1 -->
+    <dd>Whether or not to show the table footer. <code>true</code> shows the table footer.</dd>
+  </dlentry>
 
   <dlentry id="size">
     <dt>size</dt>
@@ -1038,15 +1038,15 @@ You may not see each of these parameters in your own TML files, depending on whe
     Each worksheet is identified by <code>name</code>, <code>description</code>, <code>column_id</code>, and <code>properties</code>.</dd>
   </dlentry>
 
-  <!--<dlentry id="wrap_column_text">
+  <dlentry id="wrap_column_text">
     <dt>wrap_column_text</dt>
     <dd>Determines whether to wrap or clip the column text in an Answer being displayed as  a table. <code>true</code> wraps the text, <code>false</code> clips it.</dd>
-  </dlentry> not in v1 -->
+  </dlentry>
 
-  <!--<dlentry id="wrap_table_header">
+  <dlentry id="wrap_table_header">
     <dt>wrap_table_header</dt>
     <dd>Determines whether to wrap or clip the table header. <code>true</code> wraps the table header.</dd>
-  </dlentry> not in v1-->
+  </dlentry>
 
 </dl>
 
