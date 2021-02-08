@@ -107,6 +107,12 @@ To run the LDAP sync script in interactive mode:
 
     The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
 
+5. When the ThoughtSpot search engine finishes indexing, your new users should appear in the ThoughtSpot application. To check if the ThoughtSpot search engine is indexing, run the following command:
+
+    ```
+    tscli cluster status
+    ```
+
 ### `syncUsersAndGroups.py` command-line switches
 
 The following table provides a description of each command-line switch available for the `syncUsersAndGroups` python script.
