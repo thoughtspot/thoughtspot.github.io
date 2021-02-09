@@ -8,4 +8,5 @@ To delete a join:
 5. Click the delete icon to the right of the join name. The **Confirm delete** window appears.
 6. Click **Delete**.
 	Note: If existing Answers or Pinboards depend on the join you are deleting, you will see the **Cannot delete** window listing all dependents of the join. You must delete all dependents before you can delete the join.
+	
 ![]({{ site.baseurl }}/images/cannot-delete-join-dialog.png "Unable to delete join due to dependents")

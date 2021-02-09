@@ -1,5 +1,5 @@
 ---
-title: [Join a table, View, or Worksheet to another data source]
+title: [Join a table&#44; View&#44; or Worksheet to another data source]
 last_updated: 2/9/2021
 summary: "Learn how to define joins between a table, View, or Worksheet and another table, view, or worksheet"
 toc: false
@@ -7,14 +7,14 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-##About joins##
+## About joins
 
 A join combines columns from one or more sources in your data by using matching values. By defining relationships between your sources, you create a new, richer set of data that you can use to answer your business questions. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the source table or View, and the target table, View, or Worksheet on the column you specify.
 
 Note: If you want to create a primary key/ foreign key relationship, you need to [use TQL]({{ site.baseurl }}/admin/loading/constraints.html) rather than the web interface.
 
 {: id="join-type"}
-### Join types###
+### Join types
 
 ThoughtSpot supports the following join types: Inner, Left Outer, Right Outer, and Full Outer. You can choose a join type when creating or editing a join through the ThoughtSpot web interface.
 
@@ -29,7 +29,7 @@ Right outer joins return results for all values from Table 2, and any matching v
 Full outer joins return results for all values from either Table 1 or Table 2.
 
 {: id="join-cardinality"}
-### Join cardinality###
+### Join cardinality
 
 When creating the join, you must also identify its **cardinality**: Many:1, 1:Many, or 1:1.
 
@@ -42,7 +42,7 @@ A 1:1 cardinality defines a join where one value in the origin table corresponds
 You must create a join between columns in two data sources that contain the same data type, with the same meaning. That is, they must represent the same data. Normally, you can make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
 
 
-### Possible joins###
+### Possible joins
 
 You must have either the [**Can administer ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to create a join relationship. If you're not an administrator, you also need edit permissions on the table, View, or Worksheet.
 
@@ -53,27 +53,27 @@ See this list for information about which joins you can create, and what permiss
 Note: If you create joins at the table level, and then create a Worksheet that uses the columns from the table, the settings are inherited from the table at the point in time that the Worksheet is created. If you then go back and change the settings at the table level, your changes will not be reflected in the Worksheet. If you want the Worksheet to have the changes you made at the table level, you must drop those columns from the Worksheet and re-add them.
 
 {: id="table-join"}
-#### Creating a join from a table####
+#### Creating a join from a table
 
 {% include content/joins-create-table.md %}
 
-#### Creating a join from a Worksheet or View####
+#### Creating a join from a Worksheet or View
 
 {% include content/joins-create-worksheet.md %}
 
-### Modifying joins###
+### Modifying joins
 
 ThoughtSpot allows you to edit the name, join type, and cardinality through the Web interface. To change the columns that define a join, you must delete the join and create a new one.
 
-#### Editing a join from a table####
+#### Editing a join from a table
 
 {% include content/joins-edit-table.md %}
 
-#### Editing a join from a Worksheet or View####
+#### Editing a join from a Worksheet or View
 
 {% include content/joins-edit-worksheet.md %}
 
-#### Deleting a join####
+#### Deleting a join
 
 {% include content/joins-delete.md %}
 
