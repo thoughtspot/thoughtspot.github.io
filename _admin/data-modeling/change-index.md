@@ -1,6 +1,6 @@
 ---
 title: ["Manage suggestion indexing"]
-last_updated: 11/19/2020
+last_updated: 2/9/2021
 summary: "ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
 toc: true
@@ -13,12 +13,11 @@ controls whether and how ThoughtSpot suggests column values.
 
 Additionally, ThoughtSpot uses a column's **INDEX PRIORITY** value to determine where
 to rank a column's name and values in the search suggestions. These values
-impact the dynamically calculated _usage based ranking (UBR)_,
+impact ThoughtSpot's dynamically calculated usage based ranking (UBR).
 
 ## Example of Search suggestion behavior
 
-The following example illustrates how searching for `promotion_last_name t` causes
-the system to suggest several ways of completing the `t` in the search:
+The following example illustrates how searching for `promotion_last_name` and then the letter `t` causes the system to suggest several ways of completing the `t` in the search:
 
 ![]({{ site.baseurl }}/images/search-index-type.png "Suggestions")
 
@@ -45,19 +44,18 @@ The system behavior when the **INDEX TYPE** is **DEFAULT** is as follows:
 
 - With two exceptions, the system indexes all columns using their **COLUMN NAME**
 value. The exceptions are columns with **COLUMN TYPE** of `MEASURE` and columns
-with **DATA TYPE** of `DATE`.
+with **DATA TYPE** of `DATE`. ThoughtSpot does not index measure or date columns.
 
 - Columns that contain data values with large amount of free-form strings, that is,
 a length is greater than 50 words, are indexed as `PREFIX_ONLY` by default.
 
   {% include warning.html content="If a column has a very large free text
-  values, ThoughtSpot recommends you keep `DEFAULT` or set `DONT_INDEX`. Other
-  settings indexing on these values may generate confusing suggestions." %}
+  value, ThoughtSpot recommends you keep `DEFAULT` or set `DONT_INDEX`. Otherwise, you may generate confusing suggestions." %}
 
 - Short strings (like a `firstname` column) are indexed using
 `PREFIX_AND_SUBSTRING` by default, which indexes both prefix and substrings.
 
-- If a column is using has a _cardinality_ &ndash; the number of unique column values &ndash;  greater
+- If a column has a _cardinality_ &ndash; the number of unique column values &ndash;  greater
   than 10 million, it is not indexed.
 
 If a column's **INDEX TYPE** is _not_ **DEFAULT** and the column's cardinality is
@@ -101,7 +99,7 @@ The values you can set for **INDEX TYPE** are:
   </tr>
     <tr>
       <td><code class="highlighter-rouge">DEFAULT</code></td>
-      <td>The default behavior applies to all <code class="highlighter-rouge">ATTRIBUTE</code> columns that are not <code class="highlighter-rouge">DATE</code> types. <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> for short values and <code class="highlighter-rouge">PREFIX_ONLY</code> for long values and free-form text.</td>
+      <td>The default behavior applies to all <code class="highlighter-rouge">ATTRIBUTE</code> columns that are not <code class="highlighter-rouge">DATE</code> types. ThoughtSpot does not index date or measure columns. <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> for short values and <code class="highlighter-rouge">PREFIX_ONLY</code> for long values and free-form text.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">DONT_INDEX</code></td>
@@ -122,7 +120,7 @@ The values you can set for **INDEX TYPE** are:
   </tbody>
 </table>
 
-Consider a column in which there are four values `ThoughtSpot`, `Thought`,
+Consider a column with four values: `ThoughtSpot`, `Thought`,
 `Spot` and `Thought Spot`. If you search for `sp`, depending on the setting for
 indexing, the column value search result suggestions will vary:
 
@@ -159,7 +157,7 @@ lower value (like `1`).
 
 ![]({{ site.baseurl }}/images/set-column-priority.png)
 
-You should only use numbers between 1-10 in the **INDEX PRIORITY** field.Use a
+You should only use numbers between 1-10 in the **INDEX PRIORITY** field. Use a
 value between `8-10` for important columns to improve their search ranking. Use
 `1-3` for low priority columns.  
 
