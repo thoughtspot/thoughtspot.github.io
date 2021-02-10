@@ -22,12 +22,12 @@ To create a relationship through the Web interface:
 
 4. Click the **Joins** tab. The list of existing joins appears.
 
-![]({{ site.baseurl }}/images/table-add-joins.png "Create a join from a table")
+  ![]({{ site.baseurl }}/images/table-add-joins.png "Create a join from a table")
 
 5. Click **+Add Join**. The **Create Join** page appears.
 
-![]({{ site.baseurl }}/images/table-create-join.png "Create a join from a table")
-<table>
+  ![]({{ site.baseurl }}/images/table-create-join.png "Create a join from a table")
+  <table>
     <tr>
       <th>Legend</th>
       <th>Action</th>

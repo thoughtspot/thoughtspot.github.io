@@ -27,7 +27,7 @@ You must have either the [**Can administrator ThoughtSpot** or the **Can manage 
 
 {% include note.html content="If existing Answers or Pinboards depend on the join you are deleting, you will see the **Cannot delete** window listing all dependents of the join. You must delete all dependents before you can delete the join." %}
 
-![]({{ site.baseurl }}/images/cannot-delete-join-dialog.png "Unable to delete join due to dependents")
+  ![]({{ site.baseurl }}/images/cannot-delete-join-dialog.png "Unable to delete join due to dependents")
 
 ## Related Information
 

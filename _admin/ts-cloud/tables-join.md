@@ -22,16 +22,16 @@ If your database uses any table joins, they appear in ThoughtSpot.
 
 3. To select the table for adding joins, click its name in the list. You will see the **Columns** view of the table.
 
-{% include note.html content="Generally, creating a many-to-one join from a fact table to a dimension table simplifies your search." %}
+  {% include note.html content="Generally, creating a many-to-one join from a fact table to a dimension table simplifies your search." %}
 
 4. Select the **Joins** tab. The list of existing joins from the table appears.
 
-![]({{ site.baseurl }}/images/table-add-joins.png "Add a join to a table")
+  ![]({{ site.baseurl }}/images/table-add-joins.png "Add a join to a table")
 
 5. Click **+ Add join**. The **Create join** page appears.
 
-![]({{ site.baseurl }}/images/table-create-join.png "Create a join from a table")
-<table>
+  ![]({{ site.baseurl }}/images/table-create-join.png "Create a join from a table")
+  <table>
     <tr>
       <th>Legend</th>
       <th>Action</th>
