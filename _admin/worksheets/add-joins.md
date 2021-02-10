@@ -11,7 +11,9 @@ permalink: /:collection/:path.html
 
 A join combines columns from one or more sources in your data by using matching values. By defining relationships between your sources, you create a new, richer set of data that you can use to answer your business questions. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the source table or View, and the target table, View, or Worksheet on the column you specify.
 
-{% include note.html content="If you want to create a primary key/ foreign key relationship, you need to [use TQL]({{ site.baseurl }}/admin/loading/constraints.html) rather than the web interface." %}
+{% include note.html content="If you want to create a primary key/foreign key relationship, you need to use TQL rather than the web interface." %}
+
+For details on primary key/foreign key relationships in TQL, see [constraints]({{ site.baseurl }}/admin/loading/constraints.html).
 
 {: id="join-type"}
 ### Join types
