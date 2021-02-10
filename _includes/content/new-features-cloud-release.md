@@ -17,6 +17,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
     <li><strong>Export custom SpotApps</strong>: Support for custom SpotApp export is now GA and on by default. You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</li></ul>
 </dd></dlentry>
 
+<dlentry id=“simplified-join-creation”>
+ <dt>Simplified join creation</dt>
+ <dd>This release makes creating and editing joins from a table more flexible and intuitive. Our new joins interface allows you to define and edit a join’s type and cardinality at the table level, where previously this was only possible at the Worksheet level. Refer to <a href={{ site.baseurl }}/admin/worksheets/add-joins.html#table-join”>Table joins</a>.
+</dd></dlentry>
+
 <dlentry id="pinboard-download-api">
   <dt>Pinboard Download API</dt>
   <dd>Use the new Pinboard Download API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>.
