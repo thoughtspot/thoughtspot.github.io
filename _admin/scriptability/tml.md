@@ -26,6 +26,7 @@ permalink: /:collection/:path.html
 To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [Answers](#syntax-answers), [SpotIQ results](#syntax-pinboards), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, Tables, Answers, SpotIQ results, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/scriptability/scriptability.html).
 
 {: id="syntax-worksheets"}
+<p>[embed label="worksheet-tml"]</p>
 ##  Syntax of the Worksheet TML file
 
 The `TML` file for Scriptable Worksheets has a specific syntax.
@@ -986,7 +987,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   </dlentry> not in v1-->
 
 </dl>
-
+<p>[/embed]</p>
 ## Limitations of working with TML files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, SpotIQ result, or Pinboard through TML.
 
