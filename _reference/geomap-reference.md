@@ -10,6 +10,15 @@ This reference lists supported countries and their subdivisions. ThoughtSpot ren
 
 | You may have to make changes to your data to support geo maps.<br/><br/>For example, you may be collecting data for locations in Washington County, Alabama, and also for locations in Washington County, Wisconsin.<br/><br/>According to the 2010 Census, there are 31 distinct Washington Counties in the United States.<br/><br/>To account for multiple different geographical entities with the same name, you must be specific within your data.<br/><br/>A value of *Washington County* without a state attached to it may result in incorrect or incomplete geo maps. | ![Washington Counties in United States]({{ site.baseurl }}/images/wa-county.png "Washington Counties in United States") |
 
+## Supported countries and codes
+ThoughtSpot supports mapping of the following countries without subdivisions. To view the countries with associated subdivisions that ThoughtSpot supports, refer to [Supported countries and subdivisions](#subdivisions).
+
+<details><summary><strong>Supported countries and codes</strong></summary>
+{% include content/geo/supported-countries-codes.md %}
+</details>
+
+{: id="subdivisions"}
+## Supported countries and subdivisions
 ThoughtSpot supports the following countries and their associated subdivisions:
 <dl>
 <dlentry>
