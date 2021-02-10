@@ -1,7 +1,7 @@
 ---
 title: [Join tables]
 last_updated: 5/22/2020
-summary: "Create joins between your tables to"
+summary: "Create joins between your tables to improve the accuracy of your Search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -14,50 +14,58 @@ If your database uses any table joins, they appear in ThoughtSpot.
 
 <script src="https://fast.wistia.com/embed/medias/vyffltai66.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_vyffltai66 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
-## Select origin table
+## Create a table join
 
-![Select tables]({{ site.baseurl }}/images/join-tables.gif "Select source table for the join")
+1. Click **Data** in the top menu and choose **Tables**.
 
-1. **Select the connection**:
+2. Find your table through browsing, Search, or selecting the appropriate Tag(s).
 
-   - On the top bar, click **Data**.
-   - Click **Connections**.
-   - Select and click on your connection.
+3. To select the table for adding joins, click its name in the list. You will see the **Columns** view of the table.
 
-2. The **Connection** details include the listing of all tables in the connection.
+{% include note.html content="Generally, creating a many-to-one join from a fact table to a dimension table simplifies your search." %}
 
-3. Select the **fact table**, so the join direction points from _many_ to _one_. This is important.
+4. Select the **Joins** tab. The list of existing joins from the table appears.
 
-4. In the table detail view, select the **Schema** option.
+![]({{ site.baseurl }}/images/table-add-joins.png "Add a join to a table")
 
-5. If your connection already has joins between tables, they appear in the **Schema** and **Joins** interface.
+5. Click **+ Add join**. The **Create join** page appears.
 
-6. To specify a new join, click **+ Add join**.
+![]({{ site.baseurl }}/images/table-create-join.png "Create a join from a table")
+<table>
+    <tr>
+      <th>Legend</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Select the data source of your table, either <em>Embrace</em>, or <em>Falcon</em>.</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Choose your connection from the dropdown <em>Connection</em> menu. You can only create joins between data sources uploaded through the same connection.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>[Optional] Click <em> Enter join name</em> to name your join. Note that ThoughtSpot automatically names joins using the following syntax: [OriginDataSourceName]_to_[DestinationDataSourceName]. You can always enter a more meaningful join name, either when creating, or when editing the join.</td>
+    </tr>
+  </table>
 
+6. Under **Table 1**, choose the table you want to create a join from (origin table).
 
-## Create the join
+7. Under **Table 2**, choose the destination table or View for the other end of the join. This is usually a dimension table.
 
-![Create the join]({{ site.baseurl }}/images/join-create.gif "Create the join")
+8. Choose the matching columns under each table. These columns must use the same data type.
 
-1. After you click **+ Add join**, the **Add join** interface appears.
+9. [Optional] You can select multiple columns for the same join. To add another pair of matching columns to the join definition, click **+Add columns**.
 
-2. The _Source Table_ of the join is set.
+10. Specify the join type; see [Join types]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-type).
 
-3. Select the _Destination Table_. This is usually a dimension table.
+11. Specify the join cardinality; see [Cardinality]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
 
-3. Under the _Source Table_, select the _Source Column_ that connects the two tables.
+12. Click **Create join**.
 
-4. The _Destination Table_, select the _Destination Column_ that matches the _Source Column_. Note that the match is for the data; it does not matter if the columns have the same name.
-
-5. Click **Next**.
-
-6. Specify the **Join Name**, and optionally, the **Join Description**.
-
-7. Click **Next**.
-
-You can now see the updated view of the **Schema**. The direction of the join is from the fact table to the dimension table.
-
-You can also see the detailed information about all **Joins**. Note that you can change the name and description of the joins, and you can delete these joins. However, you cannot change their type, or their direction direction.
+You can now see the updated view of the schema.
+You can also see the detailed information about all **Joins**. Note that after creating the join, you may change its name, type, or cardinality by clicking the edit icon. If you want to change the data source or column being joined, you must delete the join and create a new one.
 
 Proceed to create all necessary table joins, to support your data requirements.
 
