@@ -33,6 +33,10 @@ To sort your search:
 
 * If you are in the chart view, click the axis label of your chart that you would like to sort and select **Sort**. You can choose to sort in ascending or descending order.
 
+### Hidden sort
+
+You can also sort by an attribute or measure that you do not want to include in the chart. For example, if you search for `sales store name sort by store state`, ThoughtSpot automatically adds `store state` to the **Not visualized** section of the chart, and sorts the chart by store state. This is also known as a hidden sort.
+
 ## Change the date bucketing (grouping)
 
 You can change the date _bucketing_ on tables and charts for columns with date
