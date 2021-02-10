@@ -6,12 +6,12 @@ To create a table join through the Web interface:
 You will see the **Columns** view of the table.
 4. Click the **Joins** tab. The list of existing joins from the table appears.
 
-![]({{ site.baseurl }}/images/table-add-joins.png "Add a join to a table")
+  ![]({{ site.baseurl }}/images/table-add-joins.png "Add a join to a table")
 5. Click **+Add join**.
 The **Create Join** page appears.
 
-![]({{ site.baseurl }}/images/table-create-join.png "Create a join from a table")
-<table>
+  ![]({{ site.baseurl }}/images/table-create-join.png "Create a join from a table")
+  <table>
     <tr>
       <th>Legend</th>
       <th>Action</th>
