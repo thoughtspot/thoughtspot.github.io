@@ -12,6 +12,8 @@ In ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, mod
 - <strong>Implementing metadata changes outside ThoughtSpot UI</strong>, such as replacing the underlying tables for the entire table, or replacing a single column from one table with a column in another table
 - <strong>Making bulk changes</strong>, such as mass renaming of objects defined by the worksheets, and managing duplicates
 
+{% include content/tml-note.md %}
+
 ## Prerequisites
 
 You must have **Edit** permissions for the worksheet.
