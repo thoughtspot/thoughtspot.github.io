@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 
 To work with Scriptable Worksheets in ThoughtSpot, you can download Worksheets to a flat file in `yaml` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, see [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html).
 
+{% include content/tml-note.md %}
+
 {: id="syntax"}
 ##  Syntax of the Worksheet YAML file
 
