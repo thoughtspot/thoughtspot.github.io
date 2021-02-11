@@ -25,8 +25,8 @@ To connect to Snowflake:
     2. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
     3. When the Snowflake login screen appears, click **Log In**, and then go to step 7 to select tables for your connection.
 
-  For service account authentication, do the following:
-  - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
+   For service account authentication, do the following:
+   - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
      ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-serv-acct.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.

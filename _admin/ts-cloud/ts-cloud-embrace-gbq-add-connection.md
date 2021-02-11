@@ -20,16 +20,16 @@ To connect to BigQuery:
 
 4. Enter the connection details for your BigQuery data source using either OAuth or service account authentication.
 
- For OAuth authentication, do the following:
+   For OAuth authentication, do the following:
     1. Enter Project id, OAuth Client ID, OAuth Client Secret, Database (optional).
-   ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-oauth.png "Enter connection details")
+    ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-oauth.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
     2. If you wish to provide the optional additional key-value pairs for your BigQuery connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
     3. At the Google account sign-in screen, select your Google account.
     4. Allow thougtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
- For service account authentication, do the following:
- - Enter Project id, and Service account.
+   For service account authentication, do the following:
+   - Enter Project id, and Service account.
      ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-serv-acct.png "Enter connection details")
      <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->  
 
