@@ -23,7 +23,8 @@ To connect to Snowflake:
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
     2. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
-    3. When the Snowflake login screen appears, click **Log In**, and then go to step 7 to select tables for your connection.
+    3. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
+    4. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
    For service account authentication, do the following:
    - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
