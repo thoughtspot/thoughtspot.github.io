@@ -1,12 +1,14 @@
 ---
 title: [Worksheet TSL specification]
-last_updated: 12/16/2020
+last_updated: 2/11/2021
 summary: "ThoughtSpot worksheet specification may be exported as a TSL file, modified, and imported into the same or different cluster. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 To work with Scriptable Worksheets in ThoughtSpot, you can download Worksheets to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, see [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html).
+
+{% include content/tml-note.md %}
 
 {: id="syntax"}
 ##  Syntax of the Worksheet TSL file

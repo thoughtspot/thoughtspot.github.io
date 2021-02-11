@@ -10,6 +10,8 @@ Scriptability for Answers and Pinboards is in <span class="label label-beta">Bet
 
 To work with Scriptable Pinboards in ThoughtSpot, you can download Pinboards to a flat file in `TSL`, ThoughtSpot's Scripting Language, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Pinboards, see [Migrate or restore Pinboards]({{ site.baseurl }}/admin/scriptability/scriptability-pinboard.html).
 
+{% include content/tml-note.md %}
+
 {: id="syntax-pinboards"}
 ##  Syntax of the Pinboard TSL file
 

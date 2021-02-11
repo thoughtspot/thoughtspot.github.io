@@ -26,3 +26,5 @@ The Scriptability feature supports several scenarios that you may encounter:
 You can download these objects in the form of a scriptable file in the ThoughtSpot Scripting Language, or TSL.
 
 Use Scriptability to export Worksheets, Pinboards, and Answers in a human-readable format.
+
+{% include content/tml-note.md %}

@@ -15,6 +15,7 @@ This mechanism supports several scenarios that you may encounter:
 - <strong>Implementing metadata changes outside ThoughtSpot UI</strong>, such as replacing the underlying data source for the entire Pinboard, or replacing a single column from one data source with a column in another data source
 - **Reusing existing objects to build new objects**, such as building two very similar objects based on a similar, pre-existing object.
 
+{% include content/tml-note.md %}
 
 ## Prerequisites
 
