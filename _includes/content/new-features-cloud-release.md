@@ -71,8 +71,8 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
 <dlentry id="embrace">
 <dt>Embrace</dt>
-<dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html">Snowflake</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html">Google BigQuery</a>.
-<dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html">Passthrough functions for Snowflake</a>.
+<dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html">Snowflake</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html">Google BigQuery</a>.</dd>
+<dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html">Passthrough functions for Snowflake</a>.</dd>
 <dd>Embrace now supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd>
 </dlentry>
 </dl>
