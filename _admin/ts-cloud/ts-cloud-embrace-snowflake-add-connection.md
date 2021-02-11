@@ -17,15 +17,14 @@ To connect to Snowflake:
      ![Add a Snowflake connection]({{ site.baseurl }}/images/embrace-snowflake-connection-type-ts-cloud.png "Add a Snowflake connection")
 
 4. Enter the connection details for your Snowflake data source using either OAuth or service account authentication:
-   - For OAuth authentication, do the following:
-      A. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
-     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
+  - For OAuth authentication, do the following:
+    1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
+    ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
-      B. (Optional) If you wish to provide additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then go to step C. If not, go to step C.
-      C. Click **Continue**.
-      D. When the Snowflake login screen appears, click **Log In**, and then go to step 7 to select tables for your connection.
+    2. (Optional) If you wish to provide additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
+    3. When the Snowflake login screen appears, click **Log In**, and then go to step 7 to select tables for your connection.
 
-   - For service account authentication, enter Account name, User, Password, Role, Warehouse, and (optional) Database.
+  - For service account authentication, enter Account name, User, Password, Role, Warehouse, and (optional) Database.
      ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-serv-acct.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.

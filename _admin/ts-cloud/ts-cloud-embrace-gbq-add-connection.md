@@ -19,15 +19,14 @@ To connect to BigQuery:
     <!--  ![Add a BigQuery connection]({{ site.baseurl }}/images/gbq-connectiontype.png "Add a BigQuery connection") -->
 
 4. Enter the connection details for your BigQuery data source using either OAuth or service account authentication.
-   - For OAuth authentication, do the following:
-      A. Enter Project id, OAuth Client ID, OAuth Client Secret, Database (optional).
-     ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-oauth.png "Enter connection details")
+ - For OAuth authentication, do the following:
+    1. Enter Project id, OAuth Client ID, OAuth Client Secret, Database (optional).
+   ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-oauth.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
-      B. (Optional) If you wish to provide additional key-value pairs for your BigQuery connection, complete the procedure in step 5, and then go to step C. If not, go to step C.
-      C. Click **Continue**.
-      D. At the Google account sign-in screen, select your Google account.
-      E. Allow thougtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
-   - For service account authentication, do the following:
+    2. (Optional) If you wish to provide additional key-value pairs for your BigQuery connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
+    3. At the Google account sign-in screen, select your Google account.
+    4. Allow thougtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
+ - For service account authentication, do the following:
      ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-serv-acct.png "Enter connection details")
      <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->  
 
