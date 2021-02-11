@@ -1,7 +1,7 @@
 ## This redirects to other doc branches
 
 [[redirects]]
-  from = "/ts6.dec.cl/*"
+  from = "/ts7.dec.cl/*"
   to = "https://cloud-docs.thoughtspot.com/:splat"
   status = 200
   force = true # COMMENT: ensure that we always redirect
