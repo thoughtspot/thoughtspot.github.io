@@ -26,7 +26,7 @@ To connect to BigQuery:
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
     2. If you wish to provide the optional additional key-value pairs for your BigQuery connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
     3. At the Google account sign-in screen, select your Google account.
-    4. Allow thougtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
+    4. Allow thoughtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
    For service account authentication, do the following:
    - Enter Project id, and Service account.
