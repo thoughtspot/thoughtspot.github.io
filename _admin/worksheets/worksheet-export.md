@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 In ThoughtSpot, you can download Worksheets to a flat file in `TSL`, [ThoughtSpot's Scripting Language]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html), modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.
 
-Note that starting in release 6.2, you can use this feature to export and import Worksheets with filters.
+Starting in release 6.2, you can use this feature to export and import Worksheets with filters.
 
 This mechanism supports several scenarios that you may encounter:
 
@@ -16,6 +16,8 @@ This mechanism supports several scenarios that you may encounter:
 - <strong>Implementing metadata changes outside ThoughtSpot UI</strong>, such as replacing the underlying tables for the entire table, or replacing a single column from one table with a column in another table
 - <strong>Making bulk changes</strong>, such as mass renaming of objects defined by the worksheets, and managing duplicates
 - **Reusing existing objects to build new objects**, such as building two very similar objects based on a similar, pre-existing object.
+
+{% include content/tml-note.md %}
 
 ## Prerequisites
 
