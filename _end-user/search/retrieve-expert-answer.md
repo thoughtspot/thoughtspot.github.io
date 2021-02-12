@@ -16,7 +16,7 @@ If you're not set up with an email in ThoughtSpot, follow these steps to view yo
 
 1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-10px.png){: .inline} (help) icon menu.
 
-2. In the drop-down, select **Expert Requests**.
+2. In the drop-down, select **Get Help > Expert Requests**.
 
 3. Under **I am a requester**, view your Ask an Expert request. If the status is **resolved**, click on the request.
 

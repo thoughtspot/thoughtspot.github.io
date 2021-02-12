@@ -15,7 +15,7 @@ When a user struggles to answer a specific question, build a chart they have in 
    If you do not have an email set up in ThoughtSpot, follow these steps to check for requests:
    1. Log in to ThoughtSpot.
    1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-10px.png){: .inline} (help) icon menu.
-   2. In the drop-down, select **Expert Requests**.
+   2. Select **Get Help > Expert Requests**.   
    2. Click **I am an expert** on the top left side of the screen.
    3. You can see a list of all requests for which you are an expert.
 
@@ -31,7 +31,7 @@ When a user struggles to answer a specific question, build a chart they have in 
 
 5. When you've answered the question (and copied the link, if needed), you can mark the request answered by clicking **Mark as resolved**.
 
-6. If you want to see the answer again, you can find it listed along with the other Answers. Click **Answers** in the top menu to see the list of saved Answers, or click **Expert requests** from the help menu to see Answers specific to **Ask an Expert**.
+6. If you want to see the answer again, you can find it listed along with the other Answers. Click **Answers** in the top menu to see the list of saved Answers, or click **Get Help > Expert Requests** from the help menu to see Answers specific to **Ask an Expert**.
 
 
 ## Related information
