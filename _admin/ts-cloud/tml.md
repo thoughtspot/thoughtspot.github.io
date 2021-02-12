@@ -1,9 +1,27 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 2/5/2021
+last_updated: 2/12/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
+- /admin/scriptability/tsl-table.html
+- /admin/scriptability/tsl-pinboard.html
+- /admin/scriptability/tsl-answer.html
+- /admin/scriptability/tsl-view.html
+- /admin/worksheets/yaml-worksheet.html
+- /admin/scriptability/tml-table.html
+- /admin/scriptability/tml-pinboard.html
+- /admin/scriptability/tml-answer.html
+- /admin/scriptability/tml-view.html
+- /admin/worksheets/tml-worksheet.html
+- /admin/worksheets/tsl-worksheet.html
+- /admin/ts-cloud/tsl-table.html
+- /admin/ts-cloud/tsl-pinboard.html
+- /admin/ts-cloud/tsl-answer.html
+- /admin/ts-cloud/tsl-view.html
+- /admin/ts-cloud/yaml-worksheet.html
+- /admin/ts-cloud/tml-worksheet.html
+- /admin/ts-cloud/tsl-worksheet.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
