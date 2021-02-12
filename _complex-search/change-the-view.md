@@ -1,6 +1,6 @@
 ---
 title: [Change result display options]
-last_updated: 1/16/2020
+last_updated: 2/12/2020
 summary: "You can change how your search results (Answers) appear."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -35,7 +35,11 @@ To sort your search:
 
 ### Hidden sort
 
-You can also sort by an attribute or measure that you do not want to include in the chart. For example, if you search for `sales store name sort by store state`, ThoughtSpot automatically adds `store state` to the **Not visualized** section of the chart, and sorts the chart by store state. This is also known as a hidden sort.
+You can also sort by a measure that you do not want to include in the chart. For example, if you search for `cost store name sort by gross profit margin`, you can move `gross profit margin` to the **Not visualized** section from the **Edit chart** ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-10px.png "chart configuration icon"){: .inline} panel. ThoughtSpot sorts the chart by gross profit margin, but gross profit margin does not appear in the chart. This is also known as a hidden sort.
+
+![Hidden sort example]({{ site.baseurl }}/images/hidden-sort.png "Hidden sort example")
+
+{% include note.html content="You cannot perform a hidden sort on an attribute or date column." %}
 
 ## Change the date bucketing (grouping)
 
