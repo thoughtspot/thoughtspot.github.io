@@ -20,7 +20,7 @@ You can edit some of the elements of the chart directly, by clicking on them. Fo
 Through the **Edit chart** menu, you can perform a number of customizations:
 
 1. [Drag and drop measures and attributes to or from an axis]({{ site.baseurl }}/end-user/search/drag-and-drop.html)
-   * Set up your chart by dragging and dropping the measures and attributes in your search onto the appropriate axis. If you want a column to be part of your search and show up in the table view, but you do not want to include it in your chart, you can drag it to the ‘Not Visualized’ section. You can use this functionality to perform a hidden sort, by moving the column you want to sort by to the ‘Not Visualized’ section.
+   * Set up your chart by dragging and dropping the measures and attributes in your search onto the appropriate axis. If you want a column to be part of your search and show up in the table view, but you do not want to include it in your chart, you can drag it to the ‘Not Visualized’ section. You can use this functionality to perform a hidden sort, by moving the measure column you want to sort by to the ‘Not Visualized’ section.
 
 2. [Number formatting for all data labels]({{ site.baseurl }}/end-user/search/show-data-labels.html#labels-one)
    * Category (Number, Percentage, Currency)
