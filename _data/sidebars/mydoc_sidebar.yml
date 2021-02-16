@@ -1530,7 +1530,7 @@ entries:
       - title: Amazon Linux 2 prerequisites
         url: /appliance/amazon-linux-2/al2-prerequisites.html
         output: web,appQs
-      - title: ThoughtSpot deployment templates for Amazon Linux 2
+      - title: ThoughtSpot deployment artifacts for Amazon Linux 2
         url: /appliance/amazon-linux-2/al2-ts-artifacts.html
         output: web,appQs
       - title: Online Amazon Linux 2 install
@@ -1557,7 +1557,7 @@ entries:
       - title: RHEL prerequisites
         url: /appliance/rhel/rhel-prerequisites.html
         output: web,appQs
-      - title: ThoughtSpot deployment templates for RHEL
+      - title: ThoughtSpot deployment artifacts for RHEL
         url: /appliance/rhel/rhel-ts-artifacts.html
         output: web,appQs
       - title: Online RHEL install
