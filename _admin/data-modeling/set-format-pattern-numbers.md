@@ -36,26 +36,6 @@ These are some examples of formats you can use:
 |12345|`#,##0.##`|12,345|
 |12345|`#,##0.00`|12,345.00|
 
-&nbsp;
-
-You can change the date format used to display a column's values [for a single
-table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by
-editing the data model, for [the entire ThoughtSpot instance]({{ site.baseurl
-}}/admin/data-modeling/edit-model-file.html). Editing the data model file
-requires that you have administrative privileges.
-
-1. Decide if the change is for a table or the entire instance.
-
-2. Find the **Format Pattern** for the column.
-
-   This is either a column in a single table or a column in the data modeling file.
-
-3. In the column, enter the format you want to use.
-
-4. Save your changes.
-
-   If you are using a data-modeling file you must upload the new file to your installation.
-
 ### Profile-based number formatting
 
 Number formatting is set by default based on your ThoughtSpot profile's
@@ -71,30 +51,29 @@ should look like this: `xxx,xxx.xx`. And in Europe, it should look like this:
 
 ## Date formats
 
-**Format Pattern** (UI)/ **Format Pattern** (model file) formats for how dates are
-displayed in tables and charts. For example, you can display dates in a standard
-European or US format based on the data modeling setting **Format Pattern**.
+The **Format Pattern** option in the UI or in the model file allows you to specify how ThoughtSpot should display dates in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting **Format Pattern**.
 These are some examples of formats you can use:
 
 {% include content/data-modeling-strings.md %}
 
-To change the date format used to display a column's values [for a single
-table]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by
+You can change the date format used to display a column's values [for a single
+table or Worksheet]({{ site.baseurl }}/admin/data-modeling/model-data-in-UI.html) or, by
 editing the data model, for [the entire ThoughtSpot instance]({{ site.baseurl
-}}/admin/data-modeling/edit-model-file.html).
+}}/admin/data-modeling/edit-model-file.html). To edit the data model file, you must have administrative privileges. To change the date format, follow these steps:
 
-
-1. Decide if the change is for a table or the entire instance.
+1. Decide if the change is for a specific table or Worksheet, or for the entire instance.
 
 2. Find the **Format Pattern** for the column.
 
-   This is either a column in a single table or a column in the data modeling file.
+   This is either a column in a single table or Worksheet or a column in the data modeling file.
 
 3. In the column, enter the format you want to use.
 
 4. Save your changes.
 
    If you are using a data-modeling file you must upload the new file to your installation.
+
+{% include note.html content="You can see this custom date formatting when you use the <code>date detailed</code> keyword. Other date buckets, such as <code>monthly</code> or <code>weekly</code>, use the standard format. For daily dates, ThoughtSpot uses each user's locale to determine whether to display <code>mm/dd/yyyy</code> or <code>dd/mm/yyyy</code>." %}
 
 ## Set currency type
 
