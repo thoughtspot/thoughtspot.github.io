@@ -41,7 +41,7 @@
     </tr>
     <tr>
       <td><strong>Can schedule pinboards</strong></td>
-      <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
+      <td>Can create and edit Pinboard schedules for other users and groups. Without this privilege, users can only create Pinboard schedules for themselves.</td>
     </tr>
     <tr>
       <td><strong>Has SpotIQ privilege</strong></td>
