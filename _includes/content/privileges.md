@@ -30,7 +30,7 @@
     </dlentry>
     <dlentry id="schedule-pinboards">
       <dt>Can schedule pinboards</dt>
-      <dd>Can create pinboard schedules and edit their own scheduled jobs.</dd>
+      <dd>Can create and edit Pinboard schedules for other users and groups. Without this privilege, users can only create Pinboard schedules for themselves.</dd>
     </dlentry>
     <dlentry id="spotiq">
       <dt>Has SpotIQ privilege</dt>

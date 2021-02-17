@@ -1,6 +1,6 @@
 ---
 title: [Following pinboards]
-last_updated: 11/24/2020
+last_updated: 2/16/2021
 summary: "In ThoughtSpot, you can follow Pinboards and schedule email notifications to regularly review the visuals that represent dynamic data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -30,6 +30,8 @@ Notice that after you configure the schedule, the Pinboard appears as **Followin
 ## Schedule Pinboard reports  
 
 In the **Follow** scheduler, specify the email schedule by marking the appropriate options in the pulldown menus. The default schedule is weekly, on the day and time when you configure the schedule.
+
+{% include note.html content="If you have the <strong>Can schedule Pinboards</strong> privilege, you can schedule Pinboard deliveries for other users and groups. If you do not have this privilege, you can only schedule Pinboard deliveries for yourself." %}
 
 <!--![Schedule the notifications]({{ site.baseurl }}/images/follow-schedule.png "Schedule the notifications")-->
 
