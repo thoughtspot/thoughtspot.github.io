@@ -33,6 +33,8 @@ Notice that after you configure the schedule, the Pinboard appears as **Followin
 
 In the **Follow** scheduler, specify the email schedule by marking the appropriate options in the pulldown menus. The default schedule is weekly, on the day and time when you configure the schedule.
 
+{% include note.html content="If you have the <strong>Can schedule Pinboards</strong> privilege, you can schedule Pinboard deliveries for other users and groups. If you do not have this privilege, you can only schedule Pinboard deliveries for yourself." %}
+
 <!--![Schedule the notifications]({{ site.baseurl }}/images/follow-schedule.png "Schedule the notifications")-->
 
 <!--![Schedule the notifications]({{ site.baseurl }}/images/pinboard-follow-schedule.png "Schedule the notifications")-->
