@@ -449,18 +449,18 @@ You may not see each of these parameters in your own TML files, depending on whe
             <a href="#max">max</a>: &lt;<em>conditional_formatting_maximum</em>&gt;
           <a href="#color">color</a>: &lt;<em>color_string</em>&gt;
           <a href="#plotAsBand">plotAsBand</a>: [ true | false ]
-      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt;
-      <a href="#wrap_column_text">wrap_column_text</a>: [ true | false ] <!--
+      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt; <!--
+      <a href="#wrap_column_text">wrap_column_text</a>: [ true | false ]
       <a href="#column_width">column_width</a>: &lt;<em>column_width</em>&gt; not in current version-->
       <a href="#show_headline">show_headline</a>: [ true | false ]
       <a href="#headline_aggregation">headline_aggregation</a>: &lt;<em>headline_aggregation_string</em>&gt;
     - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     <a href="#ordered_column_ids">ordered_column_ids</a>:
     - <a href="#column_id">column_id</a>: &lt;<em>column_id_1</em>&gt;
-    - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
+    - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt; <!--
     <a href="#show_grid_summary">show_grid_summary</a>: [ true | false ]
     <a href="#show_table_footer">show_table_footer</a>: [ true | false ]
-    <a href="#wrap_table_header">wrap_table_header</a>: [ true | false ]
+    <a href="#wrap_table_header">wrap_table_header</a>: [ true | false ] not in current version -->
     <a href="#client_state">client_state</a>: &lt;<em>client_state_string</em>&gt;
   <a href="#chart">chart</a>:
     <a href="#type">type</a>: &lt;<em>chart_type</em>&gt;
@@ -473,8 +473,8 @@ You may not see each of these parameters in your own TML files, depending on whe
             <a href="#max">max</a>: &lt;<em>conditional_formatting_maximum</em>&gt;
           <a href="#color">color</a>: &lt;<em>color_string</em>&gt;
           <a href="#plotAsBand">plotAsBand</a>: [ true | false ]
-      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt;
-      <a href="#show_data_labels">show_data_labels</a>: [ true | false ]
+      - <a href="#rule">rule</a>: &lt;<em>conditional_formatting_rule_2</em>&gt; <!--
+      <a href="#show_data_labels">show_data_labels</a>: [ true | false ] not in current version -->
     - <a href="#column_id">column_id</a>: &lt;<em>column_id_2</em>&gt;
     <a href="#axis_configs">axis_configs</a>: &lt;<em>axis_config_1</em>&gt;
     - x:
@@ -936,16 +936,18 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dd>A string that represents the fully disambiguated search query. Used in Answers and Views. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
+<!--
   <dlentry id="show_data_labels">
     <dt>show_data_labels</dt>
     <dd>Whether or not to show the data labels. <code>true</code> shows the labels.</dd>
-  </dlentry>
+  </dlentry> not in current version -->
 
   <dlentry id="show_headline">
     <dt>show_headline</dt>
     <dd>Determines whether to show the headline for this column. <code>true</code> shows the headline.</dd>
   </dlentry>
 
+<!--
   <dlentry id="show_grid_summary">
     <dt>show_grid_summary</dt>
     <dd>Whether or not to show the grid summary. <code>true</code> shows the summary.</dd>
@@ -954,7 +956,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="show_table_footer">
     <dt>show_table_footer</dt>
     <dd>Whether or not to show the table footer. <code>true</code> shows the table footer.</dd>
-  </dlentry>
+  </dlentry> not in current version -->
 
   <dlentry id="size">
     <dt>size</dt>
@@ -1056,6 +1058,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     Each worksheet is identified by <code>name</code>, <code>description</code>, <code>column_id</code>, and <code>properties</code>.</dd>
   </dlentry>
 
+<!--
   <dlentry id="wrap_column_text">
     <dt>wrap_column_text</dt>
     <dd>Determines whether to wrap or clip the column text in an Answer being displayed as  a table. <code>true</code> wraps the text, <code>false</code> clips it.</dd>
@@ -1064,7 +1067,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="wrap_table_header">
     <dt>wrap_table_header</dt>
     <dd>Determines whether to wrap or clip the table header. <code>true</code> wraps the table header.</dd>
-  </dlentry>
+  </dlentry> not in current version -->
 
 </dl>
 
