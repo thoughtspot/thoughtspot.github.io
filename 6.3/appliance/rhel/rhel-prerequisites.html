@@ -52,18 +52,18 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“RHEL installation prerequisites”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on version 3.10.0-1127.19.1 ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux" />
-<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on version 3.10.0-1127.19.1 ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux" />
+<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on the correct version ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux" />
+<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on the correct version ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux" />
 <link rel="canonical" href="https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-26T22:31:38-08:00" />
+<meta property="article:published_time" content="2021-02-18T12:52:58-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“RHEL installation prerequisites”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on version 3.10.0-1127.19.1 ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-prerequisites.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-prerequisites.html","headline":"[“RHEL installation prerequisites”]","dateModified":"2021-01-26T22:31:38-08:00","datePublished":"2021-01-26T22:31:38-08:00","@context":"https://schema.org"}</script>
+{"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on the correct version ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-prerequisites.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-prerequisites.html","headline":"[“RHEL installation prerequisites”]","dateModified":"2021-02-18T12:52:58-08:00","datePublished":"2021-02-18T12:52:58-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3139,7 +3139,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.3/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment templates for Amazon Linux 2</a></li>
+                          <li><a href="/6.3/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment artifacts for Amazon Linux 2</a></li>
                       
                    
                 
@@ -3196,7 +3196,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.3/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment templates for RHEL</a></li>
+                          <li><a href="/6.3/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment artifacts for RHEL</a></li>
                       
                    
                 
@@ -5484,7 +5484,7 @@ $('#toc').on('click', 'a', function() {
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#linux-kernel-version">4. Ensure that your Linux kernel is on version 3.10.0-1127.19.1</a></td>
+      <td><a href="#linux-kernel-version">4. Ensure that your Linux kernel is on the correct version</a></td>
     </tr>
     <tr>
       <td>❏</td>
@@ -5523,6 +5523,9 @@ $('#toc').on('click', 'a', function() {
     <p>At least 20 GB available on the root drive, for yum packages and system logs.</p>
   </li>
   <li>
+    <p>At least 50 GB available for <code class="language-plaintext highlighter-rouge">/tmp</code>.</p>
+  </li>
+  <li>
     <p>At least 200 GB for ThoughtSpot installation, either on a secondary drive or as a separate partition on the root drive. For ThoughtSpot-certified hardware platforms, <a href="/6.3/appliance/hardware/installing-dell.html">Dell</a> and <a href="/6.3/appliance/hardware/installing-the-smc.html">Super Micro Computer</a>, you must use a secondary drive, since the root drive has a limit of 200 GB.</p>
 
     <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This drive must be separate from the data drive(s).</div>
@@ -5531,14 +5534,14 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="install-rhel">Install RHEL on hosts</h2>
 
-<p>ThoughtSpot is certified with RHEL versions 7.8 and 7.9; we <strong>do not</strong> support other versions of RHEL, including 7.7, 8, and 8.1. Install RHEL version 7.8 or 7.9, and ensure that your <a href="#linux-kernel-version">linux kernel version</a> is 3.10.0-1127.19.1.</p>
+<p>ThoughtSpot is certified with RHEL versions 7.8 and 7.9; we <strong>do not</strong> support other versions of RHEL, including 7.7, 8, and 8.1. Install RHEL version 7.8 or 7.9. On RHEL version 7.8, ensure that your <a href="#linux-kernel-version">linux kernel version</a> is 3.10.0-1127.19.1. On RHEL version 7.9, use the default linux kernel.</p>
 
 <h3 id="linux-kernel-version">Linux kernel version</h3>
-<p>Your Linux kernel <strong><em>must</em></strong> be on version 3.10.0-1127.19.1. RHEL 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, <a href="/6.3/appliance/contact.html">contact ThoughtSpot Support</a>. This is a requirement for <strong><em>all</em></strong> platforms: appliance, cloud, and VMware.</p>
+<p>For RHEL version 7.8, your Linux kernel <strong><em>must</em></strong> be on version 3.10.0-1127.19.1. RHEL 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, <a href="/6.3/appliance/contact.html">contact ThoughtSpot Support</a>. This is a requirement for <strong><em>all</em></strong> platforms: appliance, cloud, and VMware.</p>
 
-<p>If you are using RHEL version 7.9, the default Linux kernel never had this bug.</p>
+<p>If you are using RHEL version 7.9, use the default Linux kernel.</p>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data.</div>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If you are running RHEL 7.8, and your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data.</div>
 
 <h2 id="enable-hosts">Enable the hosts to download RHEL packages</h2>
 
@@ -5601,9 +5604,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jan 26, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Feb 18, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 10/19/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 2/18/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
