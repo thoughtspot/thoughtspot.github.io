@@ -38,6 +38,8 @@ Ensure that all ThoughtSpot hosts meet the following partition and sizing requir
 
 1. At least 20 GB available on the root drive, for yum packages and system logs.
 
+2. At least 50 GB available for `/tmp`.
+
 2. At least 200 GB for ThoughtSpot installation, either on a secondary drive or as a separate partition on the root drive.
 
     {% include note.html content="This drive must be separate from the data drive(s)." %}
