@@ -32,6 +32,8 @@ Ensure that all ThoughtSpot hosts meet the following partition and sizing requir
 
 1. At least 20 GB available on the root drive, for yum packages and system logs.
 
+2. At least 50 GB available for `/tmp`.
+
 2. At least 200 GB for ThoughtSpot installation, either on a secondary drive or as a separate partition on the root drive. For ThoughtSpot-certified hardware platforms, [Dell]({{ site.baseurl }}/appliance/hardware/installing-dell.html) and [Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html), you must use a secondary drive, since the root drive has a limit of 200 GB.
 
     {% include note.html content="This drive must be separate from the data drive(s)." %}
