@@ -37,11 +37,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <p>This feature is part of the <a href="{{ site.baseurl }}/admin/ts-cloud/answer-v2.html">Answer V2 feature set</a>. Answer V2 is in <strong>Beta</strong>, and is off by default in ThoughtSpot Cloud clusters. If you would like to try out the features in the Answer V2 feature set, contact your ThoughtSpot administrator.</p></dd>
 </dlentry>
 
-<dlentry id="search-assist">
-<dt>Search Assist: Analyst-authored queries</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst-authored queries</a> feature is now generally available and on by default.</dd>
-</dlentry>
-
 </dl>
 
 <h3><a id="feb-cloud-business-user"></a>For the Business User</h3>
