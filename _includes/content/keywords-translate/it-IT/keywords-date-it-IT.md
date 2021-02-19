@@ -44,12 +44,12 @@
   </tr>
   <tr>
     <td class="tg-dc35">day of week</td>
-    <td class="tg-dc35">wochentag</td>
+    <td class="tg-dc35">giorno della settimana</td>
     <td class="tg-dc35"><code>revenue by <b>day of week</b> last 6 months</code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>day of week</em></td>
-    <td class="tg-us36">giorno della settimana</td>
+    <td class="tg-us36"><em>giorno della settimana</em></td>
     <td class="tg-us36"><code>count shipments <b>Monday</b></code></td>
   </tr>
   <tr>
@@ -148,84 +148,84 @@
     <td class="tg-dc35"><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
   </tr>
   <tr>
-    <td class="tg-dc35">last <em>n</em> years</td>
-    <td class="tg-dc35">ultimo <em>n</em> anni</td>
-    <td class="tg-dc35"><code>visitors last <b>5 years</b> by revenue for sum revenue &gt;5000</code></td>
+    <td class="tg-us36">last <em>n</em> years</td>
+    <td class="tg-us36">ultimo <em>n</em> anni</td>
+    <td class="tg-us36"><code>visitors last <b>5 years</b> by revenue for sum revenue &gt;5000</code></td>
   </tr>
   <tr>
-    <td class="tg-us36">month to date</td>
-    <td class="tg-us36">mese finora</td>
-    <td class="tg-us36"><code>sales by product <b>month to date</b> sales &gt; 2400</code></td>
+    <td class="tg-dc35">month to date</td>
+    <td class="tg-dc35">mese finora</td>
+    <td class="tg-dc35"><code>sales by product <b>month to date</b> sales &gt; 2400</code></td>
   </tr>
   <tr>
-    <td class="tg-dc35"><em>month year</em></td>
-    <td class="tg-dc35"><em>mese anno</em></td>
-    <td class="tg-dc35"><code>commission by sales rep <b>February 2014</b></code></td>
+    <td class="tg-us36"><em>month year</em></td>
+    <td class="tg-us36"><em>mese anno</em></td>
+    <td class="tg-us36"><code>commission by sales rep <b>February 2014</b></code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><em>month</em></td>
-    <td class="tg-us36"><em>mese</em></td>
-    <td class="tg-us36"><code>commission <b>January</b></code></td>
+    <td class="tg-dc35"><em>month</em></td>
+    <td class="tg-dc35"><em>mese</em></td>
+    <td class="tg-dc35"><code>commission <b>January</b></code></td>
   </tr>
   <tr>
-    <td class="tg-dc35">month</td>
-    <td class="tg-dc35">mese</td>
-    <td class="tg-dc35"><code>revenue by <b>month</b> last year</code></td>
+    <td class="tg-us36">month</td>
+    <td class="tg-us36">mese</td>
+    <td class="tg-us36"><code>revenue by <b>month</b> last year</code></td>
   </tr>
   <tr>
-    <td class="tg-us36">monthly year-over-year</td>
-    <td class="tg-us36">mensile rispetto all'anno precedente</td>
-    <td class="tg-us36"><code>growth of revenue by receipt date <b>monthly year-over-year</b></code></td>
+    <td class="tg-dc35">monthly year-over-year</td>
+    <td class="tg-dc35">mensile rispetto all'anno precedente</td>
+    <td class="tg-dc35"><code>growth of revenue by receipt date <b>monthly year-over-year</b></code></td>
   </tr>
   <tr>
-    <td class="tg-dc35">monthly</td>
-    <td class="tg-dc35">mensile</td>
-    <td class="tg-dc35"><code>commission &gt; 10000 <b>monthly</b></code></td>
+    <td class="tg-us36">monthly</td>
+    <td class="tg-us36">mensile</td>
+    <td class="tg-us36"><code>commission &gt; 10000 <b>monthly</b></code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><em>n</em> months for each quarter</td>
-    <td class="tg-us36"><em>n</em> mesi per ogni trimestre</td>
-    <td class="tg-us36"><code>cost last <b>2 months for each quarter</b></code></td>
+    <td class="tg-dc35"><em>n</em> months for each quarter</td>
+    <td class="tg-dc35"><em>n</em> mesi per ogni trimestre</td>
+    <td class="tg-dc35"><code>cost last <b>2 months for each quarter</b></code></td>
   </tr>
   <tr>
-    <td class="tg-dc35"><em>n</em> months for each year</td>
-    <td class="tg-dc35"><em>n</em> mesi per ogni anno</td>
-    <td class="tg-dc35"><code>last <b>8 months for each year</b></code></td>
+    <td class="tg-us36"><em>n</em> months for each year</td>
+    <td class="tg-us36"><em>n</em> mesi per ogni anno</td>
+    <td class="tg-us36"><code>last <b>8 months for each year</b></code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><em>n</em> days ago</td>
-    <td class="tg-us36"><em>n</em> giorni fa</td>
-    <td class="tg-us36"><code>sales <b>2 days ago</b></code></td>
+    <td class="tg-dc35"><em>n</em> days ago</td>
+    <td class="tg-dc35"><em>n</em> giorni fa</td>
+    <td class="tg-dc35"><code>sales <b>2 days ago</b></code></td>
   </tr>
   <tr>
-    <td class="tg-dc35"><em>n</em> months ago</td>
-    <td class="tg-dc35"><em>n</em> mesi fa</td>
-    <td class="tg-dc35"><code>sales <b>2 months ago</b> by region</code></td>
+    <td class="tg-us36"><em>n</em> months ago</td>
+    <td class="tg-us36"><em>n</em> mesi fa</td>
+    <td class="tg-us36"><code>sales <b>2 months ago</b> by region</code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><em>n</em> months</td>
-    <td class="tg-us36"><em>n</em> mesi</td>
-    <td class="tg-us36"><code>visitors last <b>6 months</b> for homepage visits &gt; 30 by month</code></td>
+    <td class="tg-dc35"><em>n</em> months</td>
+    <td class="tg-dc35"><em>n</em> mesi</td>
+    <td class="tg-dc35"><code>visitors last <b>6 months</b> for homepage visits &gt; 30 by month</code></td>
   </tr>
   <tr>
-    <td class="tg-dc35"><em>n</em> quarters ago</td>
-    <td class="tg-dc35"><em>n</em> trimestri fa</td>
-    <td class="tg-dc35"><code>sales <b>4 quarters ago</b> by product name contains "deluxe"</code></td>
+    <td class="tg-us36"><em>n</em> quarters ago</td>
+    <td class="tg-us36"><em>n</em> trimestri fa</td>
+    <td class="tg-us36"><code>sales <b>4 quarters ago</b> by product name contains "deluxe"</code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><em>n</em> weeks ago</td>
-    <td class="tg-us36"><em>n</em> settimane fa</td>
-    <td class="tg-us36"><code>sales <b>4 weeks ago</b> by store</code></td>
+    <td class="tg-dc35"><em>n</em> weeks ago</td>
+    <td class="tg-dc35"><em>n</em> settimane fa</td>
+    <td class="tg-dc35"><code>sales <b>4 weeks ago</b> by store</code></td>
   </tr>
   <tr>
-    <td class="tg-dc35"><em>n</em> years ago</td>
-    <td class="tg-dc35"><em>n</em> anni fa</td>
-    <td class="tg-dc35"><code>sales <b>5 years ago</b> by store for region west</code></td>
+    <td class="tg-us36"><em>n</em> years ago</td>
+    <td class="tg-us36"><em>n</em> anni fa</td>
+    <td class="tg-us36"><code>sales <b>5 years ago</b> by store for region west</code></td>
   </tr>
   <tr>
-    <td class="tg-us36"><em>n</em> years</td>
-    <td class="tg-us36"><em>n</em> anni</td>
-    <td class="tg-us36"><code>opportunities next <b>5 years</b> by revenue</code></td>
+    <td class="tg-dc35"><em>n</em> years</td>
+    <td class="tg-dc35"><em>n</em> anni</td>
+    <td class="tg-dc35"><code>opportunities next <b>5 years</b> by revenue</code></td>
   </tr>
   <tr>
     <td class="tg-us36">next day</td>
