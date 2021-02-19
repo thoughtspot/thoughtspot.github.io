@@ -99,9 +99,6 @@ ThoughtSpot supports maps of many countries. See the complete list in the <a hre
     <dt>Improved Formula Editor</dt>
     <dd>The new <a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Formula Editor</a> includes multi-line support, and a cleaner, bigger, and more intuitive interface.</dd></dlentry>
   <dlentry>
-    <dt>Search Assist Coach</dt>
-    <dd><a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> sample queries based on their company data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
-  <dlentry>
     <dt>Table configuration enhancements</dt>
     <dd><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration enhancements</a> in this release include conditional and number formatting for table summaries. Also, conditional formatting for attributes and measures in table cells is now more intuitive and robust.</dd></dlentry>
 </dl>
