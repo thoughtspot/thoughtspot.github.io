@@ -1,14 +1,16 @@
 ---
-title: [Search Assist analyst-authored queries]
-last_updated: 1/20/2021
+title: [Search Assist Coach]
+last_updated: 2/19/2021
 summary: "You can create your own Search Assist example queries, so your users can learn how to use ThoughtSpot's relational search on your own data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="Search Assist Coach is in <strong>Beta</strong> and off by default. Search Assist, which uses sample data, is GA and on by default. To enable Search Assist Coach, contact ThoughtSpot Support." %}
+
 ## Search Assist overview
 
-[Search Assist]({{ site.baseurl }}/admin/ts-cloud/search-assist.html) walks you through simple search scenarios. It demonstrates how anyone can get answers to their data questions by typing in the Search bar.
+[Search Assist]({{ site.baseurl }}/admin/ts-cloud/search-assist.html) walks you through simple search scenarios using sample data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar.
 
 The initial example asks, ***What were sales for all products in 2019?***
 
@@ -16,10 +18,10 @@ Search Assist guides you to phrase this search as ***sales product 2019***.
 
 The search then returns the Answer as a table.
 
-Search Assist's default queries run on sample retail data, which is not specific to your company's use case or data. You may want to use your own data to train users to search data. With Search Assist analyst-authored queries, you can use data from your own Worksheets to create example queries that appear to users when they first log into ThoughtSpot and go through onboarding.
+Search Assist's default queries run on sample retail data, which is not specific to your company's use case or data. You may want to use your own data to train users to search data. With Search Assist Coach, you can use data from your own Worksheets to create example queries that appear to users when they first log into ThoughtSpot and go through onboarding.
 
 ## Create Search Assist lessons
-You can only create your own Search Assist lessons on Worksheets. You must have the **can manage data** permission.
+You can only create your own Search Assist lessons on Worksheets, using the Search Assist Coach. You must have the **can manage data** permission.
 
 To create your own lessons, follow these steps:
 

@@ -110,7 +110,7 @@ entries:
       - title: Create Worksheets
         url: /admin/ts-cloud/worksheet-create.html
         output: web
-      - title: Search Assist analyst-authored queries
+      - title: Search Assist Coach
         url: /admin/ts-cloud/analyst-authored-queries.html
         output: web
       - title: Visualize Search Results
