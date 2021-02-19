@@ -48,12 +48,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <p>ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
 </dlentry>
 
-<dlentry id="details-panel">
-<dt>Frequent metrics and attributes in the <strong>Details</strong> panel</dt>
-<dd><p>The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.</p>
-<p>Searching across existing Answers and Pinboards is part of ThoughtSpot One. ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
-</dlentry>
-
 <dlentry id="internet-explorer">
   <dt>Deprecation of Internet Explorer</dt>
 <dd>ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a href="{{ site.baseurl }}/end-user/accessing.html">ThoughtSpot browser access</a> for a list of supported browsers.</dd>
