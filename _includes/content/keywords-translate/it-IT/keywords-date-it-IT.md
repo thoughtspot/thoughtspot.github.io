@@ -44,12 +44,12 @@
   </tr>
   <tr>
     <td class="tg-dc35">day of week</td>
-    <td class="tg-dc35">wochentag</td>
+    <td class="tg-dc35">giorno della settimana</td>
     <td class="tg-dc35"><code>revenue by <b>day of week</b> last 6 months</code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>day of week</em></td>
-    <td class="tg-us36">giorno della settimana</td>
+    <td class="tg-us36"><em>giorno della settimana</em></td>
     <td class="tg-us36"><code>count shipments <b>Monday</b></code></td>
   </tr>
   <tr>
@@ -113,44 +113,44 @@
     <td class="tg-us36"><code>customers <b>last day by</b> referrer</code></td>
   </tr>
   <tr>
-    <td class="tg-us36">hourly</td>
-    <td class="tg-us36">orario</td>
-    <td class="tg-us36"><code>visitors by page name <b>hourly</b></code></td>
+    <td class="tg-dc35">hourly</td>
+    <td class="tg-dc35">orario</td>
+    <td class="tg-dc35"><code>visitors by page name <b>hourly</b></code></td>
   </tr>
   <tr>
-    <td class="tg-dc35">last month by</td>
-    <td class="tg-dc35">ultimo mese su base</td>
-    <td class="tg-dc35"><code>customers <b>last month by</b> day</code></td>
+    <td class="tg-us36">last month by</td>
+    <td class="tg-us36">ultimo mese su base</td>
+    <td class="tg-us36"><code>customers <b>last month by</b> day</code></td>
   </tr>
   <tr>
-    <td class="tg-us36">last <em>n</em> days</td>
-    <td class="tg-us36">ultimo <em>n</em> giorni</td>
-    <td class="tg-us36"><code>visitors <b>last 7 days</b></code></td>
+    <td class="tg-dc35">last <em>n</em> days</td>
+    <td class="tg-dc35">ultimo <em>n</em> giorni</td>
+    <td class="tg-dc35"><code>visitors <b>last 7 days</b></code></td>
   </tr>
   <tr>
-    <td class="tg-dc35">last <em>n</em> quarters</td>
-    <td class="tg-dc35">ultimo <em>n</em> trimestri</td>
-    <td class="tg-dc35"><code>visitors <b>last 2 quarters</b> by month by campaign</code></td>
+    <td class="tg-us36">last <em>n</em> quarters</td>
+    <td class="tg-us36">ultimo <em>n</em> trimestri</td>
+    <td class="tg-us36"><code>visitors <b>last 2 quarters</b> by month by campaign</code></td>
   </tr>
   <tr>
-    <td class="tg-us36">last <em>n</em> weeks</td>
-    <td class="tg-us36">ultimo <em>n</em> settimane</td>
-    <td class="tg-us36"><code>visitors <b>last 10 weeks</b> by day</code></td>
+    <td class="tg-dc35">last <em>n</em> weeks</td>
+    <td class="tg-dc35">ultimo <em>n</em> settimane</td>
+    <td class="tg-dc35"><code>visitors <b>last 10 weeks</b> by day</code></td>
   </tr>
   <tr>
-    <td class="tg-dc35">last quarter</td>
-    <td class="tg-dc35">ultimo trimestre</td>
-    <td class="tg-dc35"><code>customers <b>last quarter</b> sale &gt;300</code></td>
+    <td class="tg-us36">last quarter</td>
+    <td class="tg-us36">ultimo trimestre</td>
+    <td class="tg-us36"><code>customers <b>last quarter</b> sale &gt;300</code></td>
   </tr>
   <tr>
-    <td class="tg-us36">last week</td>
-    <td class="tg-us36">ultimo settimana</td>
-    <td class="tg-us36"><code>customers <b>last week</b> by store</code></td>
+    <td class="tg-dc35">last week</td>
+    <td class="tg-dc35">ultimo settimana</td>
+    <td class="tg-dc35"><code>customers <b>last week</b> by store</code></td>
   </tr>
   <tr>
-    <td class="tg-dc35">last year</td>
-    <td class="tg-dc35">ultimo anno</td>
-    <td class="tg-dc35"><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
+    <td class="tg-us36">last year</td>
+    <td class="tg-us36">ultimo anno</td>
+    <td class="tg-us36"><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last <em>n</em> years</td>
