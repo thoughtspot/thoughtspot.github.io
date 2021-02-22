@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/admin/data-modeling/set-format-pattern-numbers.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-26T22:38:28-08:00" />
+<meta property="article:published_time" content="2021-02-22T10:05:11-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set number, date, and currency formats”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"You can set number, date, and currency display formats. These formats define how these value types display in tables and charts.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/data-modeling/set-format-pattern-numbers.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/admin/data-modeling/set-format-pattern-numbers.html","headline":"[“Set number, date, and currency formats”]","dateModified":"2021-01-26T22:38:28-08:00","datePublished":"2021-01-26T22:38:28-08:00","@context":"https://schema.org"}</script>
+{"description":"You can set number, date, and currency display formats. These formats define how these value types display in tables and charts.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/admin/data-modeling/set-format-pattern-numbers.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/admin/data-modeling/set-format-pattern-numbers.html","headline":"[“Set number, date, and currency formats”]","dateModified":"2021-02-22T10:05:11-08:00","datePublished":"2021-02-22T10:05:11-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3139,7 +3139,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/latest/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment templates for Amazon Linux 2</a></li>
+                          <li><a href="/latest/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment artifacts for Amazon Linux 2</a></li>
                       
                    
                 
@@ -3196,7 +3196,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment templates for RHEL</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment artifacts for RHEL</a></li>
                       
                    
                 
@@ -5462,7 +5462,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    7 minutes
+    6 minutes
   
 </span> -->
 
@@ -5545,32 +5545,6 @@ Currency symbols are not supported.</p>
   </tbody>
 </table>
 
-<p> </p>
-
-<p>You can change the date format used to display a column’s values <a href="/latest/admin/data-modeling/model-data-in-UI.html">for a single
-table</a> or, by
-editing the data model, for <a href="/latest/admin/data-modeling/edit-model-file.html">the entire ThoughtSpot instance</a>. Editing the data model file
-requires that you have administrative privileges.</p>
-
-<ol>
-  <li>
-    <p>Decide if the change is for a table or the entire instance.</p>
-  </li>
-  <li>
-    <p>Find the <strong>Format Pattern</strong> for the column.</p>
-
-    <p>This is either a column in a single table or a column in the data modeling file.</p>
-  </li>
-  <li>
-    <p>In the column, enter the format you want to use.</p>
-  </li>
-  <li>
-    <p>Save your changes.</p>
-
-    <p>If you are using a data-modeling file you must upload the new file to your installation.</p>
-  </li>
-</ol>
-
 <h3 id="profile-based-number-formatting">Profile-based number formatting</h3>
 
 <p>Number formatting is set by default based on your ThoughtSpot profile’s
@@ -5585,9 +5559,7 @@ should look like this: <code class="language-plaintext highlighter-rouge">xxx,xx
 
 <h2 id="date-formats">Date formats</h2>
 
-<p><strong>Format Pattern</strong> (UI)/ <strong>Format Pattern</strong> (model file) formats for how dates are
-displayed in tables and charts. For example, you can display dates in a standard
-European or US format based on the data modeling setting <strong>Format Pattern</strong>.
+<p>The <strong>Format Pattern</strong> option in the UI or in the model file allows you to specify how ThoughtSpot should display dates in tables and charts. For example, you can display dates in a standard European or US format based on the data modeling setting <strong>Format Pattern</strong>.
 These are some examples of formats you can use:</p>
 
 <table>
@@ -5700,18 +5672,18 @@ limited to:</p>
   <li><code class="language-plaintext highlighter-rouge">DD/MM/yyyy HH:mm</code></li>
 </ul>
 
-<p>To change the date format used to display a column’s values <a href="/latest/admin/data-modeling/model-data-in-UI.html">for a single
-table</a> or, by
-editing the data model, for <a href="/latest/admin/data-modeling/edit-model-file.html">the entire ThoughtSpot instance</a>.</p>
+<p>You can change the date format used to display a column’s values <a href="/latest/admin/data-modeling/model-data-in-UI.html">for a single
+table or Worksheet</a> or, by
+editing the data model, for <a href="/latest/admin/data-modeling/edit-model-file.html">the entire ThoughtSpot instance</a>. To edit the data model file, you must have administrative privileges. To change the date format, follow these steps:</p>
 
 <ol>
   <li>
-    <p>Decide if the change is for a table or the entire instance.</p>
+    <p>Decide if the change is for a specific table or Worksheet, or for the entire instance.</p>
   </li>
   <li>
     <p>Find the <strong>Format Pattern</strong> for the column.</p>
 
-    <p>This is either a column in a single table or a column in the data modeling file.</p>
+    <p>This is either a column in a single table or Worksheet or a column in the data modeling file.</p>
   </li>
   <li>
     <p>In the column, enter the format you want to use.</p>
@@ -5722,6 +5694,8 @@ editing the data model, for <a href="/latest/admin/data-modeling/edit-model-file
     <p>If you are using a data-modeling file you must upload the new file to your installation.</p>
   </li>
 </ol>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can see this custom date formatting when you use the <code>date detailed</code> keyword. Other date buckets, such as <code>monthly</code> or <code>weekly</code>, use the standard format. For daily dates, ThoughtSpot uses each user’s locale to determine whether to display <code>mm/dd/yyyy</code> or <code>dd/mm/yyyy</code>.</div>
 
 <h2 id="set-currency-type">Set currency type</h2>
 
@@ -5814,7 +5788,7 @@ ThoughtSpot Application Integration Guide for more information on the API.</p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jan 26, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Feb 22, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 3/25/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
