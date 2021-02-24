@@ -53,9 +53,6 @@ entries:
       - title: ThoughtSpot browser access
         url: /end-user/accessing.html
         output: web,ugBk
-      - title: Information Center
-        url: /end-user/introduction/getting-started.html
-        output: web,ugBk
       - title: Your user preferences
         url: /end-user/introduction/about-user.html
         output: web,ugBk

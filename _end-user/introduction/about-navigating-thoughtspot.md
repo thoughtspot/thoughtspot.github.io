@@ -85,7 +85,7 @@ This section is covered in the [ThoughtSpot Administrator Guide]({{ site.baseurl
 {: id="help-icon"}
 ## Help Icon
 
-You can find information and support resources for ThoughtSpot here. There are short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
+You can find information and support resources for ThoughtSpot here. There are short videos, a navigation overview, links to documentation, and other useful materials. You can also find the software version number here.
 
 To learn more about this section, visit [More help and support]({{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html#).
 
