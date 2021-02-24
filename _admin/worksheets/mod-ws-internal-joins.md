@@ -1,6 +1,6 @@
 ---
 title: [Modify joins within a worksheet]
-last_updated: 11/18/2019
+last_updated: 12/14/2020
 summary: "Learn how to change the join type between the tables within a worksheet."
 toc: true
 sidebar: mydoc_sidebar
@@ -19,7 +19,7 @@ To modify the join types within a worksheet, follow these steps:
 
 1. Click the **Data** tab in the top menu.  
 
-2. Under **Data Objects, select **Worksheets**.
+2. Under **Data Objects**, select **Worksheets**.
 
 3. Click the name of the Worksheet. Here, we selected the worksheet _West Regional Sales_.
 

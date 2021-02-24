@@ -1,6 +1,6 @@
 ---
 title: [Add a Snowflake connection]
-last_updated: 1/29/2020
+last_updated: 12/21/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

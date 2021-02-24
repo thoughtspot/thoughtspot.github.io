@@ -45,7 +45,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     <a href="#id">id</a> : &lt;<em>optional_table_id_1</em>&gt;
     <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name_1</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
-  - <a href="#name">name</a>: &lt;<em>table_name_3</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
   joins:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
@@ -163,6 +163,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     - <a href="#id">id</a>: &lt;<em>table_id_n</em>&gt;
       <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
       <a href="#fqn">fqn</a>: &lt;<em>optional_table_GUID_n</em>&gt;
+
   <a href="#joins">joins</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
@@ -986,7 +987,6 @@ You may not see each of these parameters in your own TML files, depending on whe
   </dlentry> not in v1-->
 
 </dl>
-
 ## Limitations of working with TML files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, SpotIQ result, or Pinboard through TML.
 

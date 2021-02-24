@@ -1,7 +1,7 @@
 ---
 title: [RHEL installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 2/3/2021
+last_updated: 2/18/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
