@@ -985,10 +985,10 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli dataflow disable</code></dt>
+    <dt><code>tscli config-mode disable</code></dt>
     <dd>Disables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster.</dd></dlentry>
     <dlentry>
-      <dt><code>tscli dataflow enable</code></dt>
+      <dt><code>tscli config-mode enable</code></dt>
       <dd>Enables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster, with token authentication.</dd></dlentry>
 </dl>
 
@@ -1427,7 +1427,7 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
+    <dt><code>tscli map-tiles enable [-h] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
       <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
       <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append <code>--offline --tar <em>TAR</em> --md5 <em>MD5</em></code> to the <code>tscli map-tiles enable</code> command. This command has the following parameters:</p>
@@ -1438,6 +1438,7 @@ This subcommand has the following options:
             <p>Downloads <code>maptiles</code> tar from the internet.</p>
             <p>The default setting is <code>True</code>.</p></dd></dlentry>
         <dlentry>
+
           <dt><code>--offline</code></dt>
           <dd>
             <p>Specifies that you are using <code>maptiles</code> tar from a local disk. Use during offline enablement of map-tiles.</p>

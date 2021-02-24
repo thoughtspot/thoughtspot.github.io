@@ -1,6 +1,6 @@
 ---
 title: [Sync users and groups from LDAP]
-last_updated: 9/24/2020
+last_updated: 2/8/2021
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -187,10 +187,10 @@ The following table provides a description of each command-line switch available
     <tr>
         <td><code>--email_identifier &lt;email_identifier&gt;</code></td>
         <td>Email identifier key for user creation or sync.</td>
-      </tr>	  
+      </tr>	 
     <tr>
         <td><code>--debug</code></td>
         <td>Provides additional logs in case of failure or other errors.</td>
-    </tr>	          
+      </tr>	            
   </tbody>
 </table>

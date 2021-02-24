@@ -1,6 +1,6 @@
 ---
 title: [Understand filters]
-last_updated: 1/25/2021
+last_updated: 1/26/2021
 summary: "Filters narrow down your search result to only include the data you want to see."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -88,7 +88,7 @@ ThoughtSpot applies a specific logic to objects with more than one filter. For e
 
 When you access the filters modal in a search by selecting the **filter** icon ![filter icon]({{ site.baseurl }}/images/icon-filter-10px.png "filter icon"){: .inline}, you see an option to **Show all possible values**. This option relates to cascading filters. When you add a second filter to a search, ThoughtSpot only shows you values within the first filter you added. You may want to see all possible values without removing the first filter.
 
-For example, you have a `country=US` filter on your search, but you want to see data for Paris, France. When you open the filters modal for `city`, you do not see Paris, France. You select **Show all possible values** and select Paris, France. Then you can delete the `country=US` filter. This is especially useful if you have many filters on an object, or if you are not sure what values the columns in your data have.  
+For example, you have a `country=US` filter on your search, but you want to see data for Paris, France. When you open the filters modal for `city`, you do not see Paris, France. You select **Show all possible values** and select Paris, France. Then you can delete the `country=US` filter. This is especially useful if you have many filters on an object, or if you are not sure what values the columns in your data have.
 
 ## Worksheet filters
 

@@ -1,6 +1,6 @@
 ---
 title: [Change result display options]
-last_updated: 1/16/2020
+last_updated: 2/12/2020
 summary: "You can change how your search results (Answers) appear."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

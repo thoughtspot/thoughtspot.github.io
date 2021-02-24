@@ -1,6 +1,6 @@
 ---
 title: [Following pinboards]
-last_updated: 11/24/2020
+last_updated: 2/16/2021
 summary: "In ThoughtSpot, you can follow Pinboards and schedule email notifications to regularly review the visuals that represent dynamic data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

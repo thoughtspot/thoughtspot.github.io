@@ -1719,6 +1719,12 @@ entries:
     - title: Network ports
       url: /appliance/ports.html
       output: web,appQs
+    - title: Consumption-based pricing
+      url: /appliance/consumption-pricing.html
+      output: web,appQs
+    - title: Consumption-based pricing FAQ
+      url: /appliance/consumption-pricing-faq.html
+      output: web,appQs
     - title: Contact support
       url: /appliance/contact.html
       output: web,appQs

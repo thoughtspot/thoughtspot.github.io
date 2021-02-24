@@ -6,9 +6,15 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot releases.
-
 <ul>
+<li>
+<details>
+<summary>6.3.X Releases</summary>
+<ul>
+<li><a href="#6-3-1">6.3.1 Fixed issues</a></li>
 <li><a href="#6-3">6.3 Fixed issues</a></li>
+</ul>
+</details></li>
 <li>
 <details>
 <summary>6.2.X Releases</summary>
@@ -95,6 +101,28 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </details>
 </li>
 </ul>
+
+<a id="6-3-1"></a>
+## 6.3.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.3.1.
+
+- Text in a table incorrectly converts to a link, causing broken links in data.
+- Applying a Pinboard filter to or double-clicking the legend of a stacked column visualization causes it to fill the entire vertical length of the chart.
+- Installing Python packages removes `/usr/bin/pip3`, causing the pip3 package installation to fail.
+- Upgrade fails when NAS mount does not have an absolute path.
+- When opening a chart in Answer Explorer and adding some values, the chart converts to a table and downloads don't work.
+- Attempting to enable SSSD by running: `tscli enable sssd --user USER --domain DOMAIN` causes an error.
+- Using a calculated field with the `Rank()` function causes an error.
+- Uploading a data column name adds an invisible character to the column name, which causes search to not work.
+- Though all the schemas and tables are visible, data retrieval with an Embrace SAP Hana connection fails.
+- A specific Pinboard filter blocks an entire Pinboard from loading.
+- When creating a DataFlow TeraData connection, the preview screen is very slow.
+- Simba Server receives 500 errors during data loads, causing sporadic load failures.
+- Editing a filter causes an error.
+- When creating an Embrace RedShift connection, incorrect joins are generated in the RedShift SQL.
+- Cluster upgrades fail due to a gap in the edit log for HDFS, causing it to get stuck in standby mode. 
+- Conditional formatting prohibits the use of hex color #000000 from being used to color a table cell.
 
 <a id="6-3"></a>
 ## 6.3 Fixed issues

@@ -158,11 +158,12 @@ You may not see each of these parameters in your own TML files, depending on whe
     <a href="#identity">identity</a>:  
     - <a href="#id">id</a>: &lt;<em>table_id_1</em>&gt;
       <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
-      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
+      <a href="#fqn">fqn</a>: &lt;<em>optional_table_GUID_1</em>&gt;
     <a href="#identity">identity</a>:  
     - <a href="#id">id</a>: &lt;<em>table_id_n</em>&gt;
       <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
-      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_n</em>&gt;
+      <a href="#fqn">fqn</a>: &lt;<em>optional_table_GUID_n</em>&gt;
+
   <a href="#joins">joins</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
