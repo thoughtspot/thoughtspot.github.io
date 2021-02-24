@@ -46,4 +46,12 @@ Here is a list of the fields of a Snowflake connection in ThoughtSpot Embrace. Y
     <dt>Database</dt>
     <dd>Specify the database associated with the account. <i>(Optional)</i></dd>
   </dlentry>
+  <dlentry id="snowflake-oauth-client-id">
+      <dt>OAuth</dt>
+      <dd>Enter the OAuth client ID associated with the Snowflake database.</dd>
+  </dlentry>
+  <dlentry id="snowflake-oauth-client-secret">
+      <dt>OAuth client secret</dt>
+      <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
+  </dlentry>
 </dl>

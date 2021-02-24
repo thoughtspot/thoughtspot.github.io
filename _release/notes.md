@@ -54,7 +54,9 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dl>
 <dlentry id="embrace">
 <dt>Embrace</dt>
-<dd>Oracle ADW support release note.</dd>
+<dd>Embrace now supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
+</dd>
+<dd>Embrace now supports security passthrough for Snowflake using OAuth for authentication and authorization. For more information, see <a href="/data-integrate/embrace/embrace-snowflake-add.html">Snowflake</a>.</dd>
 </dlentry>
 </dl>
 
