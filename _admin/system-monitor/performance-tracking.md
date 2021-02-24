@@ -1,6 +1,6 @@
 ---
 title: [Performance Tracking Pinboard]
-last_updated: 10/22/2020
+last_updated: 12/17/2020
 summary: "Use the Performance Tracking Pinboard to understand how your ThoughtSpot cluster is performing."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,8 +10,6 @@ The Performance Tracking Pinboard contains essential information about your Thou
 ![Performance Tracking Pinboard]({{ site.baseurl }}/images/performance-tracking.png "Performance Tracking Pinboard")
 
 To view this Pinboard, click on the **Pinboards** tab from the top navigation bar. Search for **Performance Tracking**.
-
-![Performance Tracking Pinboard]({{ site.baseurl }}/images/performance-tracking-search.png "Performance Tracking Pinboard")
 
 Use this Pinboard to view and analyze information about the following topics:
 - query latency
