@@ -1,4 +1,4 @@
-To delete a join:
+To delete a join from the Web interface:
 1. Click **Data** in the top menu.
 2. Find the origin table, Worksheet or View of the join you want to delete through browsing, Search, or selecting the appropriate Tag(s).
 3. Click the name of your origin table, Worksheet or View in the list.
