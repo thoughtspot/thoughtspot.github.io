@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on offline clusters that use Amazon Linux 2]
 summary: "Install ThoughtSpot on Amazon Linux 2 offline clusters."
-last_updated: 9/21/2021
+last_updated: 1/21/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -33,7 +33,8 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 To set up the Ansible, follow these steps:
 
 <ol>
-  <li><p>Obtain the Ansible tarball by talking to your ThoughtSpot contact. Download it to your local machine.</p> <p>You can download it by running the <code>cp</code> command. For example, if the tarball is in your S3 bucket, run <code>aws s3 cp s3://bucket_name/path/to/the/tarball ./</code>.</p> <p>Note that you only need to copy the tarball to one node.</code>.</p> </li>
+  <li>Obtain the Ansible tarball. <p>Contact <a href="https://community.thoughtspot.com/customers/s/contactsupport" target="_blank">ThoughtSpot Support</a> to request the ansible.</p></li>
+  <li>Download it to your local machine.<p>You can download it by running the <code>cp</code> command. For example, if the tarball is in your S3 bucket, run <code>aws s3 cp s3://bucket_name/path/to/the/tarball ./</code>.</p> <p>Note that you only need to copy the tarball to one node.</code>.</p> </li>
 
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br/>
    <dl>

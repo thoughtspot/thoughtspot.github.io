@@ -1,12 +1,12 @@
 ---
 title: [View example scenarios]
 
-last_updated: 11/2/2018
+last_updated: 12/14/2020
 summary: "It's not always easy to know when you need to use a view, but these are some common scenarios."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Here are three common examples of when you would want to use a view.
+Here are four common examples of when you would want to use a view.
 
 ## Example 1
 

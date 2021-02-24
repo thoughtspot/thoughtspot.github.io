@@ -1433,6 +1433,12 @@ This subcommand has the following options:
       <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append <code>--offline --tar <em>TAR</em> --md5 <em>MD5</em></code> to the <code>tscli map-tiles enable</code> command. This command has the following parameters:</p>
       <dl>
         <dlentry>
+          <dt><code>--online</code></dt>
+          <dd>
+            <p>Downloads <code>maptiles</code> tar from the internet.</p>
+            <p>The default setting is <code>True</code>.</p></dd></dlentry>
+        <dlentry>
+
           <dt><code>--offline</code></dt>
           <dd>
             <p>Specifies that you are using <code>maptiles</code> tar from a local disk. Use during offline enablement of map-tiles.</p>
