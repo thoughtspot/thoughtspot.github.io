@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-02-22T10:05:11-08:00" />
+<meta property="article:published_time" content="2021-02-24T13:28:10-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“tscli command reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html","headline":"[“tscli command reference”]","dateModified":"2021-02-22T10:05:11-08:00","datePublished":"2021-02-22T10:05:11-08:00","@context":"https://schema.org"}</script>
+{"description":"The command returns 0 on success, and a non-zero exit code on failure. The tscli command logs errors to the stderr directory.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html","headline":"[“tscli command reference”]","dateModified":"2021-02-24T13:28:10-08:00","datePublished":"2021-02-24T13:28:10-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -587,12 +587,6 @@ $(document).ready(function(){
                   
                       
                           <li><a href="/latest/end-user/accessing.html">ThoughtSpot browser access</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/latest/end-user/introduction/getting-started.html">Information Center</a></li>
                       
                    
                 
@@ -3532,6 +3526,18 @@ $(document).ready(function(){
             
               
                 
+                  <li><a href="/latest/appliance/consumption-pricing.html">Consumption-based pricing</a></li>
+                
+              
+            
+              
+                
+                  <li><a href="/latest/appliance/consumption-pricing-faq.html">Consumption-based pricing FAQ</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/latest/appliance/contact.html">Contact support</a></li>
                 
               
@@ -6403,10 +6409,10 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
 <dl>
   <dlentry>
-    <dt><code>tscli dataflow disable</code></dt>
+    <dt><code>tscli config-mode disable</code></dt>
     <dd>Disables the <a href="/latest/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster.</dd></dlentry>
     <dlentry>
-      <dt><code>tscli dataflow enable</code></dt>
+      <dt><code>tscli config-mode enable</code></dt>
       <dd>Enables the <a href="/latest/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster, with token authentication.</dd></dlentry>
 </dl>
 
@@ -6825,7 +6831,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
 
 <dl>
   <dlentry>
-    <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
+    <dt><code>tscli map-tiles enable [-h] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
       <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
       <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append <code>--offline --tar <em>TAR</em> --md5 <em>MD5</em></code> to the <code>tscli map-tiles enable</code> command. This command has the following parameters:</p>
@@ -6836,6 +6842,7 @@ create</code> or <code class="language-plaintext highlighter-rouge">tscli backup
             <p>Downloads <code>maptiles</code> tar from the internet.</p>
             <p>The default setting is <code>True</code>.</p></dd></dlentry>
         <dlentry>
+
           <dt><code>--offline</code></dt>
           <dd>
             <p>Specifies that you are using <code>maptiles</code> tar from a local disk. Use during offline enablement of map-tiles.</p>
@@ -8087,7 +8094,7 @@ Support for help on how to configure this list.</div>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Feb 22, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Feb 24, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 1/7/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
