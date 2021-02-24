@@ -1,6 +1,6 @@
 ---
 title: ["Search Answers"]
-last_updated: 1/22/2021
+last_updated: 2/22/2021
 summary: "You search existing Answers and Pinboards to get correct information."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -60,7 +60,7 @@ Let us consider the `sales in the last year` example. This search returns matche
    - **Grouped by** fields
    - **Filtered by** fields
 
-2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filter by**, and **Group by**.
+2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filter by**, and **Group by**. For Pinboard results, the **Details** panel lists **Frequent Metrics** and **Frequent Groupings** for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
 
 3. To see how the Answer appears as a chart, a table, or headline, click **Preview**, and notice the detail in the graph.
 

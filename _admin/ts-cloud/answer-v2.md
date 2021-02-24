@@ -33,18 +33,11 @@ You can turn the Answer V2 feature set back off from the Data panel under **Sear
 
 To turn it on or off at a cluster level, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
-## Behavior of Answer V2 features
-This feature set is the first part of ThoughtSpot's move to a new stack. The new stack is still in progress, which has several implications for the behavior of [Answer V2 features](#answer-v2-features):
-
-1. Answer V2 features currently only work on searches and Answers, on the **Search** page and on the **Answers** page. For example, if you perform conditional formatting on a table summary from the saved Answer, and then pin the summary to a Pinboard, you see the conditional formatting on the summary in the saved Answer, but ***not*** in the Pinboard. Similarly, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet.
-
-2. [Answer V2 limitations](#limitations) only exist for searches and Answers, on the **Search** page and on the **Answers** page. For example, if you have an existing Pivot table or Sankey chart in a Pinboard, the visualization is still visible in the Pinboard, but you cannot create a new Pivot table or Sankey chart.
-
 {: id="limitations"}
 ## Limitations
 The following features are not available in the Beta version of Answer V2. If you would like your company to be able to use these features, [contact ThoughtSpot support]({{ site.baseurl }}/admin/misc/contact.html) to turn Answer V2 off for your company. Alternatively, you can turn it on or off individually from the **Data** panel on the **Search** page.
 
 * [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html)
 * [Query visualizer]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#query-details)
-* [Pivot tables]({{ site.baseurl }}/complex-search/about-pivoting-a-table.html)
-* [Sankey charts]({{ site.baseurl }}/end-user/search/about-sankey-charts.html)
+* **Send feedback**: The option to send product feedback, from the more options menu ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} on an Answer or search
+* [Replay search]({{ site.baseurl }}/end-user/search/replay-search.html)

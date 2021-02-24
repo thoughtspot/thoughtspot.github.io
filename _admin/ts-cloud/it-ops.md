@@ -9,12 +9,18 @@ permalink: /:collection/:path.html
 These are the Admin tasks that you have to complete to make ThoughtSpot Cloud available for everyone in your organization. We take care of the rest.
 
 <ul>
-<li><a href="users.html">Managing Users</a></li>
-<li><a href="groups.html">Managing Groups</a></li>
-<li><a href="authentication-local.html">Manage Local authentication</a></li>
+<li><a href="users.html">Manage users</a></li>
+<li><a href="groups.html">Manage groups</a></li>
+<li><a href="authentication-local.html">Manage local authentication</a></li>
 <li><a href="authentication-integration.html">Managing authentication with SAML</a></li>
 <li><a href="style-customization.html">Style customization</a></li>
+<li><a href="customize-help.html">Help customization</a></li>
+<li><a href="scheduled-maintenance.html">View scheduled maintenance</a></li>
+<li><a href="user-adoption.html">View user activity</a></li>
+<li><a href="performance-tracking.html">Monitor app performance</a></li>
 <li><a href="use-agreement.html">In-app acceptance of ThoughtSpot's use agreement</a></li>
+<li><a href="search-spotiq-settings.html">Manage search and SpotIQ settings</a></li>
+<li><a href="onboarding-email-settings.html">Manage email and onboarding settings</a></li>
 </ul>
 
 You can also view upcoming maintenance of the ThoughtSpot application from the [Scheduled Maintenance]({{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html) tab in the Admin Console, monitor your cluster's performance from the [Performance Tracking Pinboard]({{ site.baseurl }}/admin/ts-cloud/performance-tracking.html), and view your users' interactions with ThoughtSpot from the [User Adoption Pinboard]({{ site.baseurl }}/admin/ts-cloud/user-adoption.html).
