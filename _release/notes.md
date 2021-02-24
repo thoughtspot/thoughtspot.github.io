@@ -32,9 +32,10 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ### For the Analyst
 
 <dl>
-<dlentry id=“simplified-join-creation”>
+<dlentry id="simplified-join-creation">
 <dt>Simplified join creation</dt>
-<dd>This release makes creating and editing joins from a table more flexible and intuitive. Our new joins interface allows you to define and edit a join’s type and cardinality at the table level, where previously this was only possible at the Worksheet level. Refer to <a href={{ site.baseurl }}/admin/worksheets/add-joins.html”>Table joins</a>.</dd></dlentry>
+<dd>This release makes creating and editing joins from a table more flexible and intuitive. Our new joins interface allows you to define and edit a join’s type and cardinality at the table level, where previously this was only possible at the Worksheet level. Refer to <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html">Table joins</a>.</dd>
+</dlentry>
 </dl>
 
 {: id="6-3-1-business-user"}
