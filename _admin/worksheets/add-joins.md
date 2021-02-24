@@ -1,57 +1,81 @@
 ---
-title: [Join a worksheet to another data source]
-
-last_updated: 11/19/2020
-summary: "Learn how to define joins between a worksheet and a table or view."
+title: [Join a table&#44; View&#44; or Worksheet to another data source]
+last_updated: 2/9/2021
+summary: "Learn how to define joins between a table, View, or Worksheet and another table, View, or Worksheet"
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the  table or view on the column you specify.
+## About joins
 
-{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
+A join combines columns from one or more sources in your data by using matching values. By defining relationships between your sources, you create a new, richer set of data that you can use to answer your business questions. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the source table or View, and the target table, View, or Worksheet on the column you specify.
 
-See this matrix for information about which joins you can create, and what permissions these joins require.
+{% include note.html content="If you want to create a primary key/ foreign key relationship, you need to [use TQL]({{ site.baseurl }}/admin/loading/constraints.html) rather than the web interface." %}
 
-{% include content/joins-matrix.md %}
+{: id="join-type"}
+### Join types
 
-{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
+ThoughtSpot supports the following join types: Inner, Left Outer, Right Outer, and Full Outer. You can choose a join type when creating or editing a join through the ThoughtSpot web interface.
 
-You must have either the **Can administer ThoughtSpot** privilege or the **Can manage data** privilege to create a join relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
+![]({{ site.baseurl }}/images/join-type-venn-diagrams.png "Venn diagram of join types")
 
-When creating a join between the columns in two data sources, the columns being linked must have the same data type, with the same meaning. That is, they must represent the same data.
+ThoughtSpot defaults to the inner join type, which returns results for data with matching values in both the origin table (Table 1) and the target table (Table 2).
 
-To create a relationship through the Web interface:
+Left outer joins return results for all values from Table 1, and any matching values from Table 2.
 
-1. To find your worksheet, click **Data** in the top menu, and choose **Worksheets**.
+Right outer joins return results for all values from Table 2, and any matching values from Table 1.
 
-2. Click the name of your worksheet.
+Full outer joins return results for all values from either Table 1 or Table 2.
 
-3. Click **Joins**.
+{: id="join-cardinality"}
+### Join cardinality
 
-   The list of existing joins within the worksheet appears.
+When creating the join, you must also identify its **cardinality**: Many:1, 1:Many, or 1:1.
 
-4. To view the joins between the worksheet and other data sources, click **Joins within this worksheet**, and choose **Joins from this worksheet**.
+A Many:1 cardinality defines a join where multiple values in the origin table (Table 1) correspond to one value within the target table (Table 2). A join between a product table and a product category table shows multiple products that match each category.
 
-5. Click **+ Add Join** on the upper right side of the screen.
+A 1:Many cardinality defines a join where one value in the origin table corresponds to multiple values within the target table.
 
-   ![]({{ site.baseurl }}/images/add-join-to-worksheet-1.png "Add join")
+A 1:1 cardinality defines a join where one value in the origin table corresponds to a single value within the target table (e.g. employee name and employee ID).
 
-6. Use the **Map source to destination** dialog to choose the destination table or view for the other end of the join.
+You must create a join between columns in two data sources that contain the same data type, with the same meaning. That is, they must represent the same data. Normally, you can make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
 
-   ![]({{ site.baseurl }}/images/add-join-dialog-box.png "Select destination table")
 
-7. Choose the matching columns for the join from the worksheet (source) and destination data source.
+### Possible joins
 
-   Click **Next**.
+You must have either the [**Can administer ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to create a join relationship. If you're not an administrator, you also need edit permissions on the table, View, or Worksheet.
 
-8. Give your join a name and description, and click **ADD JOIN**.
+See this list for information about which joins you can create, and what permissions these joins require.
 
-9. Repeat these steps to create all joins.
+{% include content/joins-definition-list.md %}
 
-After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you must delete the join and create a new one.
+{% include note.html content="If you create joins at the table level, and then create a Worksheet that uses the columns from the table, the settings are inherited from the table at the point in time that the Worksheet is created. If you then go back and change the settings at the table level, your changes will not be reflected in the Worksheet. If you want the Worksheet to have the changes you made at the table level, you must drop those columns from the Worksheet and re-add them." %}
+
+{: id="table-join"}
+#### Creating a join from a table
+
+{% include content/joins-create-table.md %}
+
+#### Creating a join from a Worksheet or View
+
+{% include content/joins-create-worksheet.md %}
+
+### Modifying joins
+
+ThoughtSpot allows you to edit the name, join type, and cardinality through the Web interface. To change the columns that define a join, you must delete the join and create a new one.
+
+#### Editing a join from a table
+
+{% include content/joins-edit-table.md %}
+
+#### Editing a join from a Worksheet or View
+
+{% include content/joins-edit-worksheet.md %}
+
+#### Deleting a join
+
+{% include content/joins-delete.md %}
 
 ## Related Information
-
 -   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)
