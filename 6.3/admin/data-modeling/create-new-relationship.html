@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="Learn how to define joins between a table or view and another table, view, or worksheet"> -->
+<!-- <meta name="description" content="Learn how to define joins between a table or View and another table, View, or Worksheet"> -->
 <meta name="keywords" content=",  ">
-<title>Join a table or view to another data source | ThoughtSpot</title>
+<title>Join a table or View to another data source | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.3/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,9 +48,9 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Join a table or view to another data source”] | thoughtspot.github.io</title>
+<title>[“Join a table or View to another data source”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="[“Join a table or view to another data source”]" />
+<meta property="og:title" content="[“Join a table or View to another data source”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Joining a table or view to another table, view, or worksheet creates a relationship that allows them to be searched together. Choose a column to join on that both tables contain (e.g. employee ID or product key). This process creates a generic join between the table or view and the other table, view, or worksheet on the column you specify." />
 <meta property="og:description" content="Joining a table or view to another table, view, or worksheet creates a relationship that allows them to be searched together. Choose a column to join on that both tables contain (e.g. employee ID or product key). This process creates a generic join between the table or view and the other table, view, or worksheet on the column you specify." />
@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.3/admin/data-modeling/create-new-relationship.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-02-18T12:52:58-08:00" />
+<meta property="article:published_time" content="2021-02-24T13:21:00-08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Join a table or view to another data source”]" />
+<meta property="twitter:title" content="[“Join a table or View to another data source”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"Joining a table or view to another table, view, or worksheet creates a relationship that allows them to be searched together. Choose a column to join on that both tables contain (e.g. employee ID or product key). This process creates a generic join between the table or view and the other table, view, or worksheet on the column you specify.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/admin/data-modeling/create-new-relationship.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/admin/data-modeling/create-new-relationship.html","headline":"[“Join a table or view to another data source”]","dateModified":"2021-02-18T12:52:58-08:00","datePublished":"2021-02-18T12:52:58-08:00","@context":"https://schema.org"}</script>
+{"description":"Joining a table or view to another table, view, or worksheet creates a relationship that allows them to be searched together. Choose a column to join on that both tables contain (e.g. employee ID or product key). This process creates a generic join between the table or view and the other table, view, or worksheet on the column you specify.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/admin/data-modeling/create-new-relationship.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/admin/data-modeling/create-new-relationship.html","headline":"[“Join a table or View to another data source”]","dateModified":"2021-02-24T13:21:00-08:00","datePublished":"2021-02-24T13:21:00-08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -587,12 +587,6 @@ $(document).ready(function(){
                   
                       
                           <li><a href="/6.3/end-user/accessing.html">ThoughtSpot browser access</a></li>
-                      
-                   
-                
-                  
-                      
-                          <li><a href="/6.3/end-user/introduction/getting-started.html">Information Center</a></li>
                       
                    
                 
@@ -3532,6 +3526,18 @@ $(document).ready(function(){
             
               
                 
+                  <li><a href="/6.3/appliance/consumption-pricing.html">Consumption-based pricing</a></li>
+                
+              
+            
+              
+                
+                  <li><a href="/6.3/appliance/consumption-pricing-faq.html">Consumption-based pricing FAQ</a></li>
+                
+              
+            
+              
+                
                   <li><a href="/6.3/appliance/contact.html">Contact support</a></li>
                 
               
@@ -5418,7 +5424,7 @@ $(document).ready(function(){
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Join a table or view to another data source</h1>
+   <h1 class="post-title-main">Join a table or View to another data source</h1>
 </div>
 
 
@@ -5426,7 +5432,7 @@ $(document).ready(function(){
 <div class="post-content">
 
    
-    <div class="summary">Learn how to define joins between a table or view and another table, view, or worksheet</div>
+    <div class="summary">Learn how to define joins between a table or View and another table, View, or Worksheet</div>
    
 
     
@@ -5437,7 +5443,7 @@ $(document).ready(function(){
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span> -->
 
@@ -5451,109 +5457,50 @@ $(document).ready(function(){
 
 <p>You must have either the <a href="/6.3/admin/users-groups/about-users-groups.html"><strong>Can administer ThoughtSpot</strong> or the <strong>Can manage data</strong> privilege</a> to create a join relationship. If you’re not an administrator, you also need edit permissions on the table, view, or worksheet.</p>
 
-<p>See this matrix for information about which joins you can create, and what permissions these joins require.</p>
+<p>See this list for information about which joins you can create, and what permissions these joins require.</p>
 
-<table>
-  <tr>
-    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th>Worksheets</th>
-    <th>View</th>
-    <th>Materialized View</th>
-    <th>Imported table (UI)</th>
-    <th>Table uploaded from backend (tsload) or through DataFlow</th>
-    <th>Table uploaded through Embrace</th>
-    <th>View on top of table uploaded through Embrace</th>
-  </tr>
-  <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td><strong>Necessary permissions:</strong></td>
-    <td>None</td>
-    <td>None</td>
-    <td>None</td>
-    <td><strong>Can manage data</strong> permission to load the table</td>
-    <td><strong>Admin</strong> privileges to access <code>tsload</code></td>
-    <td>None</td>
-    <td>None</td>
-  </tr>
-  <tr>
-    <td><strong>Worksheets</strong></td>
-    <td><strong>Can edit</strong> permission on the source Worksheet</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&check;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-  </tr>
-  <tr>
-    <td><strong>View</strong></td>
-    <td><strong>Can edit</strong> permission on the source View</td>
-    <td>&cross;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-  </tr>
-  <tr>
-    <td><strong>Materialized View</strong></td>
-    <td><strong>Can edit</strong> permission on the source Materialized View</td>
-    <td>&cross;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&check; <br /><strong>Note:</strong> It is a best practice to create this join through the UI, rather than using <code>TQL</code>.</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-  </tr>
-  <tr>
-    <td><strong>Imported table (UI)</strong></td>
-    <td><strong>Can edit</strong> permission on the source table</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&check;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-  </tr>
-  <tr>
-    <td><strong>Table uploaded from backend (tsload) or through DataFlow</strong></td>
-    <td><strong>Can edit</strong> permission on the source table</td>
-    <td>&cross;</td>
-    <td>&check;</td>
-    <td>&check; <br /><strong>Note:</strong> It is a best practice to create this join through the UI, rather than using <code>TQL</code>.</td>
-    <td>&check;</td>
-    <td>&check; <br /><strong>Note:</strong> This join is often used to create Worksheets.</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-  </tr>
-  <tr>
-    <td><strong>Table uploaded through Embrace</strong></td>
-    <td><strong>Can edit</strong> permission on the source table, and <strong>can manage data</strong> permission</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&check; <br /><strong>Note:</strong> The two tables must be from the same connection.</td>
-    <td>&check; <br /><strong>Note:</strong> The View and the table must be from the same connection.</td>
-  </tr>
-  <tr>
-    <td><strong>View on top of table uploaded through Embrace</strong></td>
-    <td><strong>Can edit</strong> permission on the source View</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&cross;</td>
-    <td>&check; <br /><strong>Note:</strong> The View and the table must be from the same connection.</td>
-    <td>&check; <br /><strong>Note:</strong> The two Views must be from the same connection.</td>
-  </tr>
-</table>
+<h2>Possible joins</h2>
+<dl>
+<dlentry id="join-worksheet">
+    <dt>Origin: Worksheet</dt>
+    <dd>Destination: Tables uploaded through the UI</dd>
+    <dd>Necessary permissions: <strong>Can edit</strong> permission on source Worksheet</dd>
+</dlentry>
+<dlentry id="join-view">
+    <dt>Origin: View</dt>
+    <dd>Destination: other Views, Materialized Views, tables imported through the UI, tables uploaded from backend (tsload) or through DataFlow</dd>
+    <dd>Necessary permissions: <strong>Can edit</strong> permission on source View</dd>
+</dlentry>
+<dlentry id="join-materialized-view">
+    <dt>Origin: Materialized View</dt>
+    <dd>Destination: Views, other Materialized Views, tables imported through the UI, and tables uploaded from backend (tsload) or through DataFlow</dd>
+    <dd>Necessary permissions: <strong>Can edit</strong> permission on source Materialized View</dd>
+    <dd>Note: For tables loaded from backend, it is best practice to create the join through ThoughtSpot UI, rather than using TQL.</dd>
+</dlentry>
+<dlentry id="join-imported-table">
+    <dt>Origin: Imported table (UI)</dt>
+    <dd>Destination: Worksheets, Views, Materialized Views, tables imported through the UI, tables uploaded from backend (tsload) or through DataFlow</dd>
+    <dd>Necessary permissions: <strong>Can edit</strong> permission on source table</dd>
+</dlentry>
+<dlentry id="join-tsload-table">
+    <dt>Origin: Table uploaded from backend (tsload) or through DataFlow</dt>
+    <dd>Destination: Views, Materialized Views, tables imported through the UI, tables uploaded from backend (tsload) or through DataFlow</dd>
+    <dd>Necessary permissions: <strong>Can edit</strong> permission on source table</dd>
+    <dd>Note: For joins from tables uploaded through tsloard to Materialized Views and other tables uploaded through tsload, it is best practice to create the join through ThoughtSpot UI, rather than using TQL.</dd>
+</dlentry>
+<dlentry id="join-table-embrace">
+      <dt>Origin: Table uploaded through Embrace</dt>
+      <dd>Destination: other tables uploaded through Embrace, Views on top of tables uploaded through Embrace</dd>
+      <dd>Necessary permissions: <strong>Can edit</strong> permission on source table, and <strong>can manage data</strong> permission</dd>
+      <dd>Note: The join must be created between two tables or a table and a View from the same connection.</dd>
+</dlentry>
+<dlentry id="join-view-embrace">
+      <dt>Origin: View on top of a table uploaded through Embrace</dt>
+      <dd>Destination: Tables uploaded through Embrace, other Views on top of tables uploaded through Embrace</dd>
+      <dd>Necessary permissions: <strong>Can edit</strong> permission on source View</dd>
+      <dd>Note: The join must be created between two Views or a table and a View from the same connection.</dd>
+</dlentry>
+</dl>
 
 <p>When creating a join between the columns in two data sources, the linked columns must have the same data type, with the same meaning. That is, they must represent the same data. Normally, you can make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.</p>
 
@@ -5561,36 +5508,58 @@ $(document).ready(function(){
 
 <ol>
   <li>
-    <p>To find your table or view, click <strong>Data</strong> in the top menu, and choose <strong>Tables</strong> or <strong>Views</strong>.</p>
+    <p>To find your table or View, click <strong>Data</strong> in the top menu, and choose <strong>Tables</strong> or <strong>Views</strong>.</p>
   </li>
   <li>
-    <p>Click the name of your table or view.</p>
+    <p>Click the name of your table or View.</p>
   </li>
   <li>
     <p>Click <strong>Joins</strong>. You will see the list showing existing joins.</p>
   </li>
   <li>
-    <p>Click the <strong>+ Add Join</strong> button on the upper right side of the screen.</p>
+    <p>Click <strong>+ Add Join</strong> on the upper right side of the screen. The <strong>Create Join</strong> page appears.</p>
 
-    <p><img src="/6.3/images/add-join-to-worksheet-1.png" alt="" title="Add join" /></p>
+    <p><img src="/6.3/images/table-create-join.png" alt="" title="Add join" /></p>
+    <table>
+  <tr>
+    <th>Legend</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>Select the data source of your table, either <em>Embrace</em>, or <em>Falcon</em>.</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Choose your connection from the dropdown <em>Connection</em> menu. You can only create joins between data sources uploaded through the same connection.</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>[Optional] Click <em> Enter join name</em> to name your join. Note that ThoughtSpot automatically names joins using the following syntax: [OriginDataSourceName]_to_[DestinationDataSourceName]. You can always enter a more meaningful join name, either when creating, or when editing the join.</td>
+  </tr>
+</table>
   </li>
   <li>
-    <p>Use the <strong>Source to destination</strong> dialog to choose the destination table, view, or worksheet you want to join to.</p>
-
-    <p><img src="/6.3/images/add-join-dialog-box.png" alt="" title="Select destination table" /></p>
+    <p>Under <strong>Table 1</strong>, choose the table or View you want to create a join from (origin table).</p>
   </li>
   <li>
-    <p>Choose the columns you want to join on from the table or view (source) and destination table, view, or worksheet. Click <strong>Next</strong>.</p>
+    <p>Under <strong>Table 2</strong>, choose the destination table or View for the other end of the join.</p>
   </li>
   <li>
-    <p>Give your join a name and description and click <strong>ADD JOIN</strong>.</p>
+    <p>Choose the matching columns under each data source. These columns must use the same data type. [Optional] You can select multiple columns for the same join. To add another pair of matching columns to the join definition, click <strong>+Add columns</strong>.</p>
   </li>
   <li>
-    <p>Repeat these steps until all the joins you want to make have been created.</p>
+    <p>Specify the join type; see <a href="/6.3/admin/worksheets/add-joins.html#join-type">Join types</a>.</p>
+  </li>
+  <li>
+    <p>Specify the join cardinality; see <a href="/6.3/admin/worksheets/add-joins.html#join-cardinality">Cardinality</a>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Create join</strong>.</p>
   </li>
 </ol>
 
-<p>After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you must delete the join and create a new one.</p>
+<p>After creating the join, you may change its name, type, cardinality and description by clicking the edit icon. If you want to change the data source or column being joined, you must delete the join and create a new one.</p>
 
 <h2 id="related-information">Related Information</h2>
 
@@ -5623,9 +5592,9 @@ $(document).ready(function(){
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Feb 18, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Feb 24, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 11/18/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 2/24/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
