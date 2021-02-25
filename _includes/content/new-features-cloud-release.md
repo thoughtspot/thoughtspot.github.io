@@ -9,9 +9,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <h3><a id="mar-cloud-analyst"></a>For the Analyst</h3>
 
 <dl>
-<dlentry id="answer-v2">
-<dt>Answer V2 functionality in Pinboards</dt>
-<dd>The features in the <a href="{{ site.baseurl }}/admin/ts-cloud/answer-v2.html">Answer V2 feature set</a> are now available in Answers and headlines pinned to Pinboards.</dd></dlentry>
 
 <dlentry id="scriptability">
 <dt>Scriptability</dt>
@@ -23,6 +20,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul>
 </li>
 </ul></dd></dlentry>
+
+<dlentry id="answer-v2">
+<dt>Answer V2 functionality in Pinboards</dt>
+<dd><p>The features in the <a href="{{ site.baseurl }}/admin/ts-cloud/answer-v2.html">Answer V2 feature set</a> are now available in Answers and headlines pinned to Pinboards.</p>
+<p>The Answer V2 feature set is in Beta and off by default. To enable Answer V2, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
 
 </dl>
 
