@@ -7,9 +7,6 @@ summary: "Moving formulas are aggregate formulas that allow you to calculate the
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include note.html content="Formula Editor V2 is part of the Answer V2 feature set. Answer V2 is in <strong>Beta</strong>. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, contact ThoughtSpot Support. If an administrator enables it for your cluster, you can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page by selecting <strong>Switch to classic</strong> to turn it off and <strong>Try Beta experience</strong> to turn it on. Answer V2 features currently only work on searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. If you have Answer V2 on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet." %}
-
 Moving formulas can be used to smooth out any irregularities in your data to
 easily recognize trends. The larger the interval you set, the more the peaks and
 valleys are smoothed out. While the smaller the interval, the closer the moving
