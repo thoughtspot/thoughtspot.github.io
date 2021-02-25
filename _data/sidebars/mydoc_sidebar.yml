@@ -278,6 +278,12 @@ entries:
       - title: Managing authentication with SAML
         url: /admin/ts-cloud/authentication-integration.html
         output: web
+      - title: Search and SpotIQ settings
+        url: /admin/ts-cloud/search-spotiq-settings.html
+        output: web
+      - title: Email and onboarding settings
+        url: /admin/ts-cloud/onboarding-email-settings.html
+        output: web
       - title: Scheduled maintenance
         url: /admin/ts-cloud/scheduled-maintenance.html
         output: web

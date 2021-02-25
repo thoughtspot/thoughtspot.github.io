@@ -314,6 +314,8 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
         - region_name : &lt;<em>region_name_in_UI</em>&gt;
       <a href="#spotiq_preference">spotiq_preference</a>: &lt;<em>spotiq_preference_string</em>&gt;
       <a href="#search_iq_preferred">search_iq_preferred</a>: [ true | false ]
+    <a href="#db_column_properties">db_column_properties</a>:
+      <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
   - <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
   <a href="#joins_with">joins_with</a>:
@@ -390,6 +392,13 @@ Table joins have the following limitations:
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
 
 {% include note.html content="Table join functionality is in Beta; to enable it, contact ThoughtSpot Support." %}
+
+### Generic joins
+The functionality for generic joins in TML files allows the following elements:
+* Constants: int, double, bool, date, and string
+* Comparison operators: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, and <code>&gt;=</code>
+* Columns
+* Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code>
 
 {: id="syntax-answers"}
 ##  Syntax of the Answer TML file
@@ -506,12 +515,12 @@ You may not see each of these parameters in your own TML files, depending on whe
     This is a multi-line description of the pinboard
     Description line 2
   <a href="#visualizations">visualizations</a>:
-  - <a href="#answer">answer</a>:
+  - <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
+    <a href="#answer">answer</a>:
     This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="#syntax-answers">Answer syntax</a> section above.
-    <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
-  - <a href="#answer">answer</a>:
+  - <a href="#id">id</a>: &lt;<em>viz_id_2</em>&gt;
+    <a href="#answer">answer</a>:
     This section includes all the Answer specification for a second visualization. In this case, the visualization is a headline.
-    <a href="#id">id</a>: &lt;<em>viz_id_2</em>&gt;
     <a href="#display_headline_column">display_headline_column</a>: &lt;<em>headline_column</em>&gt;    
   <a href="#filters">filters</a>:
   - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
@@ -586,7 +595,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="column">
     <dt>column</dt>
-    <dd>The id of the column being filtered on.</dd>
+    <dd>The id of the column(s) being filtered on.</dd>
   </dlentry>
 
   <dlentry id="columns">
@@ -619,7 +628,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="connection">
     <dt>connection</dt>
-    <dd>A way to identify the external data warehouse connection that the table resides in.</dd>
+    <dd>A way to identify the external data warehouse connection that the table resides in. To add tables or columns to an Embrace connection, you must specify this parameter.</dd>
   </dlentry>
 
   <dlentry id="currency_type">
@@ -653,7 +662,12 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="db_column_name">
     <dt>db_column_name</dt>
-    <dd>The name of the column in the database. Note that this database is not the same as the data warehouse (Falcon, Amazon Redshift, or Snowflake, for example).</dd>
+    <dd>The name of the column in the database. Note that this database is not the same as the data warehouse (Amazon Redshift or Snowflake, for example).</dd>
+  </dlentry>
+
+  <dlentry id="db_column_properties">
+    <dt>db_column_properties</dt>
+    <dd>The properties of the column in the database. Note that this database is not the same as the data warehouse (Amazon Redshift or Snowflake, for example).</dd>
   </dlentry>
 
   <dlentry id="db_table">

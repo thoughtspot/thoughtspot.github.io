@@ -14,8 +14,10 @@
 
 * You cannot modify joins at the table level from the Worksheet, View, or Answer TML file. You can only override the joins for that specific Worksheet, View, or Answer. To modify table-level joins, you must edit the source table's TML file. This is a Beta feature; to enable it, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
-* You cannot use TML to alter which columns and tables are in an Embrace connection.
-
 * You cannot directly edit a relationship definition. To alter a relationship definition, you must rename the join or create a new join.
 
 * You cannot delete joins from the TML file. You must delete them in the UI.
+
+* You cannot remove columns or tables from an Embrace connection. You can only add them. This feature is in **Beta**; to add columns and tables to an Embrace connection through Scriptability, contact your ThoughtSpot administrator.
+
+* You cannot export or import Pinboards with [linked]({{ site.baseurl }}/complex-search/linked-filters.html) or [selective]({{ site.baseurl }}/complex-search/selective-filters.html) filters.
