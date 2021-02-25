@@ -22,5 +22,3 @@ These are the Admin tasks that you have to complete to make ThoughtSpot Cloud av
 <li><a href="search-spotiq-settings.html">Manage search and SpotIQ settings</a></li>
 <li><a href="onboarding-email-settings.html">Manage email and onboarding settings</a></li>
 </ul>
-
-You can also view upcoming maintenance of the ThoughtSpot application from the [Scheduled Maintenance]({{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html) tab in the Admin Console, monitor your cluster's performance from the [Performance Tracking Pinboard]({{ site.baseurl }}/admin/ts-cloud/performance-tracking.html), and view your users' interactions with ThoughtSpot from the [User Adoption Pinboard]({{ site.baseurl }}/admin/ts-cloud/user-adoption.html).
