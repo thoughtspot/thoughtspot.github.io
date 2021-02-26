@@ -7,7 +7,7 @@ summary: "ThoughtSpot integrates with SAML for authentication."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can use ThoughtSpot's integration with SAML for user authentication. By default, [local authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-local.html) is enabled. You can also configure a SAML integration with an external Identity Provider (IdP), allowing your ThoughtSpot users to log in using one of the supported Identity Providers: Okta, Ping Identity, CA SiteMinder, or ADFS.
+You can use ThoughtSpot's integration with SAML for user authentication. By default, [local authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-local.html) is enabled. You can also configure a SAML integration with an external Identity Provider (IdP), allowing your ThoughtSpot users to log in using one of the supported Identity Providers: Okta, Ping Identity, or CA SiteMinder.
 
 You can configure the SAML integration through the Admin Console.
 

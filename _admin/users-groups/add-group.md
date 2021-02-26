@@ -12,22 +12,13 @@ Before adding users, create the groups to which they belong. Each group includes
 
 To create a group and add privileges for the group, follow these steps:
 
-1. Log in to ThoughtSpot from a browser.
-2. Click the **Admin** icon, on the top navigation bar.
+1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
+2. Select **Groups** from the side navigation bar that appears.
 
-3.  In the **Admin** panel, click **User Management**.
+    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
 
-    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
-
-4.  In the **User Management** section, click **Groups**.
-
-    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-groups.png "Manage Groups")
-
-5. Click the **+ Add Group** button on the upper right-hand side of the list of groups.
-
-     ![Add a new Group]({{ site.baseurl }}/images/admin-user-management-add-group.png "Add a new Group")
+5. Click the **+ Add Group** button on the upper left-hand side of the list of groups.
 
 6. In the **Add a new group** modal, enter the details for the new group:
 
@@ -112,25 +103,15 @@ revoke privileges. The new settings apply to all group members.
 
 To edit an existing group, follow these steps:
 
-1. Log in to ThoughtSpot from a browser.
+1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-2. Click the **Admin** icon, on the top navigation bar.
+2. Select **Groups** from the side navigation bar that appears.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
-3.  In the **Admin** panel, click **User Management**.
-
-    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
-
-4.  In the **User Management** section, click **Groups**.
-
-    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-groups.png "Manage Groups")
+    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
 
 5. Find the group you want to edit in the list, and click its name.
 
    If you don't immediately see the name of the group, try searching for it.
-
-   ![Search Groups]({{ site.baseurl }}/images/edit-group-search.png "Search Groups")
 
 6. You can change the _[Group name](#group-name)_, _[Display name](#display-name)_, _[Sharing visibility](#sharing-visibility)_, _[Description](#description)_, and the selected _[Privileges](#privileges)_.
 
@@ -224,29 +205,17 @@ Follow these steps to configure group-wide emails:
 
 To delete existing groups, follow these steps:
 
-1. Log in to ThoughtSpot from a browser.
+1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-2. Click the **Admin** icon, on the top navigation bar.
+2. Select **Groups** from the side navigation bar that appears.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
-3.  In the **Admin** panel, click **User Management**.
-
-    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
-
-4.  In the **User Management** section, click **Groups**.
-
-    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-groups.png "Manage Groups")
+    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
 
 5. Select the groups you plan to delete by clicking the box next to the group name.
 
    If you don't immediately see the name of the group, try searching for it.
 
-   ![Search Groups]({{ site.baseurl }}/images/edit-group-search.png "Search Groups")
-
-6. Click **Delete**.
-
-    ![Delete Groups]({{ site.baseurl }}/images/delete-group.png "Delete Groups")
+6. Click **Delete** in the upper left-hand corner.
 
 {: id="list-group-members"}
 ## List group members
@@ -258,29 +227,17 @@ When browsing through users or subgroups, you can often see only a limited list.
 
 To add multiple users to a group, you must be on the **Users** interface. Follow these steps:
 
-1. Log in to ThoughtSpot from a browser.
+1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
 
-2. Click the **Admin** icon, on the top navigation bar.
+2. Select **Users** from the side navigation bar that appears.
 
-    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
-
-3.  In the **Admin** panel, click **User Management**.
-
-    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
-
-4.  In the **User Management** section, click **Users**.
-
-    ![Manage Users]({{ site.baseurl }}/images/admin-user-management-users.png "Manage Users")
+    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
 
 5. Select the names of users you plan to add to groups by clicking the box next to the user name.
 
    If you don't immediately see the user name, try searching for it.
 
-   ![Search Users]({{ site.baseurl }}/images/edit-user-search.png "Search Users")
-
 5. Click the **Add Users to Groups** button on the top of the list of users.
-
-     ![Add Users to Groups]({{ site.baseurl }}/images/add-many-users.png "Add Users to Groups")
 
 6. In the **Add Users to Groups** interface, select the groups by clicking the box next to the group name.
 

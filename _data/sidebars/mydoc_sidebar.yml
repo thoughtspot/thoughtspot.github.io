@@ -728,17 +728,11 @@ entries:
 #      - title: Configure SAML
 #        url: /admin/setup/configure-SAML-with-tscli.html
 #        output: web,admBk
-#      - title: Enable SSH through Active Directory
-#        url: /admin/setup/active-directory-based-access.html
-#        output: web,admBk
 #      - levelThreeTitle: Integrate LDAP
 #        output: web,admBk
 #        levelThreeItems:
 #        - title: About LDAP integration
 #          url: /admin/setup/about-LDAP.html
-#          output: web,admBk
-#        - title: Configure authentication through Active Directory
-#          url: /admin/setup/LDAP-config-AD.html
 #          output: web,admBk
 #        - title: Add the SSL certificate for LDAP
 #          url: /admin/setup/add-SSL-for-LDAP.html
