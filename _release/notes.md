@@ -212,9 +212,9 @@ To set locale to English (India), click the user icon in the top right corner to
 
   <dlentry id="ease-of-installation"><dt>RHEL and Amazon Linux 2 ease of installation</dt><dd>This release of ThoughtSpot makes it easier to deploy ThoughtSpot on an <a href="{{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2</a> or <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL image</a>.
   <ul>
-  <li>You can now use a Terraform, Puppet, or Chef template, or an Ansible tarball, to install OS packages, dependencies, and the ThoughtSpot CLI (tscli), and configure your cluster. Previously, you could only use an Ansible tarball or Terraform template.</li>
-  <li>You now only need 20 GB on the root drive for yum packages and system logs, and 200 GB for ThoughtSpot installation.</li>
+  <li>You now only need 20 GB on the root drive for yum packages and system logs, 50 GB for <code>/tmp</code>, and 200 GB for ThoughtSpot installation.</li>
   <li>You can now deploy ThoughtSpot on RHEL version 7.9. You can no longer deploy ThoughtSpot on RHEL version 7.7.</li>
+  <li>If your organization performs automation with a different configuration management tool, you can use the template ThoughtSpot developed for automation with Terraform. You can obtain these templates from our <a href="https://github.com/thoughtspot/community-tools/tree/master/ThoughtSpot_Cloud_deployments/AWS/template_Homogeneous_cluster_ssm" target="_blank">Github repository</a>. ThoughtSpot provides templates for these alternative tools only as generic guidelines. You should review the templates before using them and make sure that they are safe to use in your organization. In no way can ThoughtSpot be held responsible for any issue arising from their use.</li>
   </ul>
   </dd></dlentry>
 
