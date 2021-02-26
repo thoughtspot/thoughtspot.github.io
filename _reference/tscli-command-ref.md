@@ -25,7 +25,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,storage,support,tokenauthentication}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
@@ -2334,54 +2334,6 @@ This subcommand has the following options:
   </dlentry>
 
 </dl>
-
-{: id="tscli-sssd"}
-### sssd
-
-```
-tscli sssd {enable, disable, set-sudo-group, clear-sudo-group}
-```
-
-This subcommand uses system security services daemon (SSSD), and has the following options:
-
-<dl>
-
-<dlentry id="tscli-sssd-enable">
-  <dt><code>tscli sssd enable --user <em>USER</em> --domain <em>DOMAIN</em></code></dt>
-  <dd>Enables system Active Directory (AD) user access on a single node. You will be
-   prompted for password credentials. The user must have permission to join a
-   computer or VM to the domain. This subcommand has the following parameters:
-   <dl>
-    <dlentry>
-      <dt><code>--user <em>USER</em></code></dt>
-      <dd>You must specify the user to receive access.</dd>
-    </dlentry>
-    <dlentry>
-      <dt><code>--domain <em>DOMAIN</em></code></dt>
-      <dd>You must specify the domain.</dd>
-    </dlentry>
-  </dl>
-   </dd>
- </dlentry>
-
- <dlentry id="tscli-sssd-disable">
-   <dt><code>tscli sssd disable</code></dt>
-    <dd>Disables Active Directory access. Leaves identity domain and removes AD sudo group.</dd>
-  </dlentry>
-
-  <dlentry id="tscli-sssd-set-sudo-group">
-    <dt><code>tscli sssd set-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
-    <dd>Allows <code>sudo</code> permissions for a specified AD group.</dd>
-  </dlentry>
-
-  <dlentry id="tscli-sssd-clear-sudo-group">
-    <dt><code>tscli sssd clear-sudo-group <em>ACTIVE_DIRECTORY_GROUP_NAME</em></code></dt>
-    <dd>Clears a specified AD sudo group so that they no longer have <code>sudo</code> permissions.</dd>
-  </dlentry>
-
-</dl>
-
-For more about setting up Active Directory access, see [Enable Active Directory based access]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
 
 {: id="tscli-storage"}
 ### storage

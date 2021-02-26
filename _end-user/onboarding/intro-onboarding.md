@@ -38,9 +38,7 @@ The key workflows that enable successful onboarding include the following:
    - test and customize the test welcome email.
    See steps for [creating a user group]({{ site.baseurl }}/admin/users-groups/add-group.html#add-group) or [editing a user group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-group).
 
-3. Create a new user and assign them to the group you are using for onboarding. See steps for [creating a new user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user). You can also add existing users to the group; see
-
-   In addition to creating a new user directly in ThoughtSpot, you can add users in bulk through [Active Directory]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
+3. Create a new user and assign them to the group you are using for onboarding. See steps for [creating a new user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user). You can also [add existing users to the group]({{ site.baseurl }}/admin/users-groups/add-group.html#change-users).
 
 4. When the new user signs in for the first time, the ThoughtSpot onboarding process starts automatically and guides them through a few basic scenarios of using the application.
    See [User onboarding experience]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).
