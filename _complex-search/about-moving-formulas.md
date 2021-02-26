@@ -74,21 +74,21 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
 1. Start a new search, or edit an existing Answer.
 
-2. In the upper-right side of the table, click the three-dot Actions ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon and select Add formula. If Answer V2 <span class="label label-beta">Beta</span> is on in your environment, open the Data panel from the upper right corner if it is not open, and click the + icon next to Formulas.
+2. In the upper-right side of the table, click the three-dot Actions ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon and select Add formula.
 
-    ![Click + to add a formula]({{ site.baseurl }}/images/formula-editor-add.png "Click + to add a formula")
+    ![Select Add formula]({{ site.baseurl }}/images/formula-add-to-search.png "Select Add formula")
 
 3. Enter the moving_average formula, providing a measure, a window, and one or more attributes.
 
     The example returns the average of revenue, within the commit date window size of 3. The window includes the previous, current, and next rows. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(revenue, 1, -1, date)".
 
-    ![]({{ site.baseurl }}/images/moving_average_formula-new.png "Moving Average Formula")
+    ![]({{ site.baseurl }}/images/moving_average_formula.png "Moving Average Formula")
 
 4. Name the formula by entering a title in the top field, and then click **Save**.
 
    The formula appears in the search bar and in the table as its own column.
 
-   ![]({{ site.baseurl }}/images/moving_average_table-new.png "Moving Average Table")
+   ![]({{ site.baseurl }}/images/moving_average_table.png "Moving Average Table")
 
    A box displaying the moving average within the entire table will appear at the bottom.
 
