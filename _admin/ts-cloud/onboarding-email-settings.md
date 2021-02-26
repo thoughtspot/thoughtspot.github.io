@@ -40,6 +40,8 @@ To customize or otherwise manage the ThoughtSpot welcome email for your users, f
 
 {: id="signup"}
 ## Signup settings
+The "Sign up" button on ThoughtSpot's login page is customizable. You can use it to redirect users to a company-wide app directory or to an internal app request workflow, for example.
+
 To configure the workflow that allows users to sign up for ThoughtSpot from the login page for the cluster, follow these steps:
 
 1. Select the **Edit** button in the **Email Settings** section.
