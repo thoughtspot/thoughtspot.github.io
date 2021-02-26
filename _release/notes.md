@@ -49,12 +49,6 @@ These release notes include information about new and enhanced features.
   <dt>Support for SpotIQ Analyze</dt>
   <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a>.</p></dd></dlentry>
 
-<dlentry id="conditional-formatting">
-<dt>Improvements to conditional formatting for charts</dt>
-<dd><p>This release makes chart conditional formatting more intuitive and easier to use. The new interface is accessible from the <strong>Edit measure > Conditional formatting</strong> section in the <strong>Edit chart configuration</strong> <img src="{{ site.baseurl }}/images/icon-gear-10px.png" alt="chart configuration icon" class="inline"/> panel. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#conditional-formatting-table">Apply conditional formatting</a>.</p>
-<p>This feature is part of the <a href="{{ site.baseurl }}/admin/ts-cloud/answer-v2.html">Answer V2 feature set</a>. Answer V2 is in <strong>Beta</strong>, and is off by default in ThoughtSpot Cloud clusters. If you would like to try out the features in the Answer V2 feature set, contact your ThoughtSpot administrator.</p></dd>
-</dlentry>
-
 </dl>
 
 <h3><a id="feb-cloud-business-user"></a>For the Business User</h3>
@@ -188,31 +182,6 @@ This release enables new data modeling capabilities. You can now:
 ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br>
 
 ThoughtSpot supports maps of many countries. See the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
-
-<h3>Answer V2</h3>
-
-<p>Answer V2 is in Beta. It is off by default in ThoughtSpot Cloud clusters. The Answer V2 feature set contains these elements:</p>
-
-  <dl>
-  <dlentry>
-    <dt>Improved Formula Editor</dt>
-    <dd>The new <a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Formula Editor</a> includes multi-line support, and a cleaner, bigger, and more intuitive interface.</dd></dlentry>
-  <dlentry>
-    <dt>Table configuration enhancements</dt>
-    <dd><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration enhancements</a> in this release include conditional and number formatting for table summaries. Also, conditional formatting for attributes and measures in table cells is now more intuitive and robust.</dd></dlentry>
-</dl>
-
-The following features are not available in the Beta version of Answer V2. To use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn Answer V2 off for your company. You can turn Answer V2 feature set on or off individually, from the <strong>Data</strong> panel on the <strong>Search</strong> page: select <strong>Switch to classic</strong> to turn it off, or select <strong>Try Beta experience</strong> to turn it on.
-
-Answer V2 features and limitations currently only affect searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. For example, if Answer V2 is on, the new Formula Editor interface appears when you add a formula to a search, but not when you add a formula to a Worksheet. Similarly, with Answer V2 on, you can see existing Pivot tables in your Pinboards, but you cannot create new Pivot table visualizations.
-
-<ul>
-<li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
-<li><a href="{{ site.baseurl }}/end-user/r-scripts/about-r-in-thoughtspot.html">R scripts</a></li>
-<li><a href="{{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#query-details">Query visualizer</a></li>
-<li><a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a></li>
-<li><a href="{{ site.baseurl }}/end-user/search/about-sankey-charts.html">Sankey charts</a></li>
-</ul>
 
 <h3>Customize ThoughtSpot Help</h3>
 You can now tailor the ThoughtSpot Help menu to your organization by customizing it from the Admin Console. When you configure these Help settings, you set system-wide defaults for all your users.
