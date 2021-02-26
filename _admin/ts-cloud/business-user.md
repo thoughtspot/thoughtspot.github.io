@@ -14,5 +14,4 @@ Your job is vital to your organization, and using ThoughtSpot makes it easier.
 <li><a href="{{ "/end-user/search/search-overview.html "| prepend: site.baseurl }}">ThoughtSpot Search</a><br>We expanded our flagship Search functionality. In addition to the traditional <a href="{{ "/end-user/search/search-data.html "| prepend: site.baseurl }}">Search over Data</a>, ThoughtSpot now supports a powerful set of features that helps users get their information from existing content through <a href="{{ "/end-user/search/search-answers.html "| prepend: site.baseurl }}">Search over Answers <span class="badge badge-update">New</span>.</a></li>
 
 <li><a href="search-assist.html">Search Assist</a><br>See how ThoughtSpot Search Assist gives you insights into your own data.</li>
-<li><a href="{{ "/admin/ts-cloud/answer-v2.html "| prepend: site.baseurl }}">Answer V2 <span class="badge badge-update">New</span> </a><br>This new feature set supports a new, more responsive and more informative interaction experience.</li>
 </ul>

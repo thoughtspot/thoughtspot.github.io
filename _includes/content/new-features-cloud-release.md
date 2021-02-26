@@ -21,11 +21,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </li>
 </ul></dd></dlentry>
 
-<dlentry id="answer-v2">
-<dt>Answer V2 functionality in Pinboards</dt>
-<dd><p>The features in the <a href="{{ site.baseurl }}/admin/ts-cloud/answer-v2.html">Answer V2 feature set</a> are now available in Answers and headlines pinned to Pinboards.</p>
-<p>The Answer V2 feature set is in Beta and off by default. To enable Answer V2, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
-
 </dl>
 
 <h3><a id="mar-cloud-business-user"></a>For the Business User</h3>
