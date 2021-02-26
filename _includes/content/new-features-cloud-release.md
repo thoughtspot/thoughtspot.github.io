@@ -31,12 +31,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
   <dt>Support for SpotIQ Analyze</dt>
   <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a>.</p></dd></dlentry>
 
-<dlentry id="conditional-formatting">
-<dt>Improvements to conditional formatting for charts</dt>
-<dd><p>This release makes chart conditional formatting more intuitive and easier to use. The new interface is accessible from the <strong>Edit measure > Conditional formatting</strong> section in the <strong>Edit chart configuration</strong> <img src="{{ site.baseurl }}/images/icon-gear-10px.png" alt="chart configuration icon" class="inline"/> panel. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#conditional-formatting-table">Apply conditional formatting</a>.</p>
-<p>This feature is part of the <a href="{{ site.baseurl }}/admin/ts-cloud/answer-v2.html">Answer V2 feature set</a>. Answer V2 is in <strong>Beta</strong>, and is off by default in ThoughtSpot Cloud clusters. If you would like to try out the features in the Answer V2 feature set, contact your ThoughtSpot administrator.</p></dd>
-</dlentry>
-
 </dl>
 
 <h3><a id="feb-cloud-business-user"></a>For the Business User</h3>

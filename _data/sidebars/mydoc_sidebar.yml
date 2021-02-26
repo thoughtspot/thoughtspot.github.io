@@ -89,9 +89,6 @@ entries:
       - title: Search Assist
         url: /admin/ts-cloud/search-assist.html
         output: web
-      - title: Answer V2 feature set
-        url: /admin/ts-cloud/answer-v2.html
-        output: web
     - levelTwoTitle: Analysts
       output: web
       levelTwoItems:

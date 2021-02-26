@@ -5,9 +5,6 @@ summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Ask an Expert, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support." %}
-
 When you use **Ask an expert** to get help, you can view the answer after the expert responds.
 
 To view the answer:

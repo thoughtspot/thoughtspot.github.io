@@ -7,9 +7,6 @@ summary: "Moving formulas are aggregate formulas that allow you to calculate the
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include note.html content="Formula Editor V2 is part of the Answer V2 feature set. Answer V2 is in <strong>Beta</strong>. It is off by default for ThoughtSpot Cloud clusters. To turn it on or off at a cluster level, contact ThoughtSpot Support. If an administrator enables it for your cluster, you can turn it on or off individually from the <strong>Data</strong> panel on the <strong>Search</strong> page by selecting <strong>Switch to classic</strong> to turn it off and <strong>Try Beta experience</strong> to turn it on. Answer V2 features currently only work on searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. If you have Answer V2 on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet." %}
-
 Moving formulas can be used to smooth out any irregularities in your data to
 easily recognize trends. The larger the interval you set, the more the peaks and
 valleys are smoothed out. While the smaller the interval, the closer the moving
@@ -77,21 +74,21 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
 1. Start a new search, or edit an existing Answer.
 
-2. In the upper-right side of the table, click the three-dot Actions ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon and select Add formula. If Answer V2 <span class="label label-beta">Beta</span> is on in your environment, open the Data panel from the upper right corner if it is not open, and click the + icon next to Formulas.
+2. In the upper-right side of the table, click the three-dot Actions ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon and select Add formula.
 
-    ![Click + to add a formula]({{ site.baseurl }}/images/formula-editor-add.png "Click + to add a formula")
+    ![Select Add formula]({{ site.baseurl }}/images/formula-add-to-search.png "Select Add formula")
 
 3. Enter the moving_average formula, providing a measure, a window, and one or more attributes.
 
     The example returns the average of revenue, within the commit date window size of 3. The window includes the previous, current, and next rows. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(revenue, 1, -1, date)".
 
-    ![]({{ site.baseurl }}/images/moving_average_formula-new.png "Moving Average Formula")
+    ![]({{ site.baseurl }}/images/moving_average_formula.png "Moving Average Formula")
 
 4. Name the formula by entering a title in the top field, and then click **Save**.
 
    The formula appears in the search bar and in the table as its own column.
 
-   ![]({{ site.baseurl }}/images/moving_average_table-new.png "Moving Average Table")
+   ![]({{ site.baseurl }}/images/moving_average_table.png "Moving Average Table")
 
    A box displaying the moving average within the entire table will appear at the bottom.
 
