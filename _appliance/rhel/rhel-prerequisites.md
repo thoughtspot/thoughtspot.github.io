@@ -43,6 +43,8 @@ Ensure that all ThoughtSpot hosts meet the following partition and sizing requir
 
 ThoughtSpot is certified with RHEL versions 7.8 and 7.9; we **do not** support other versions of RHEL, including 7.7, 8, and 8.1. Install RHEL version 7.8 or 7.9. On RHEL version 7.8, ensure that your [linux kernel version](#linux-kernel-version) is 3.10.0-1127.19.1. On RHEL version 7.9, use the default linux kernel.
 
+{% include note.html content="When installing ThoughtSpot on online clusters, the Ansible playbook upgrades the OS to RHEL 7.9. The Ansible playbook does <strong><em>not</em></strong> upgrade the OS when installing offline." %}
+
 {: id="linux-kernel-version"}
 ### Linux kernel version
 For RHEL version 7.8, your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
