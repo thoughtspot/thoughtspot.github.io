@@ -13,6 +13,8 @@ Navigate to the Admin Console by clicking on the **Admin** tab from the top navi
 
 You can update the [search settings](#search) and the [SpotIQ settings](#spotiq) from this page.
 
+{% include note.html content="Changing these settings results in a service interruption for all users for approximately 2 minutes. To minimize disruption, consider making your changes during a scheduled maintenance window." %}
+
 {: id="search"}
 ## Search settings
 Under **Search settings**, you can configure ThoughtSpot's indexing behavior, and enable or disable summaries and headlines.
@@ -29,8 +31,6 @@ To manage search settings, follow these steps:
 
 3. Select **Save changes**. Alternatively, you can **Reset to default**. By default, ThoughtSpot indexes new columns at a frequency of 24 hours, and enables summaries and headlines.
 
-{% include note.html content="Changing these settings results in a service interruption for all users for approximately 2 minutes. To minimize disruption, consider making your changes during a scheduled maintenance window." %}
-
 {: id="spotiq"}
 ## SpotIQ settings
 Under **SpotIQ settings**, you can enable or disable [SpotIQ analyze]({{ site.baseurl }}/spotiq/customization.html).
@@ -42,5 +42,3 @@ To enable or disable SpotIQ Analyze, follow these steps:
 2. Click on the toggle to enable or disable the feature.
 
 3. Select **Save changes**. Alternatively, you can **Reset to default**. By default, SpotIQ Analyze is disabled.
-
-{% include note.html content="Changing this setting results in a service interruption for all users for approximately 2 minutes. To minimize disruption, consider making your changes during a scheduled maintenance window." %}

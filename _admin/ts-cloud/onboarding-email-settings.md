@@ -13,6 +13,8 @@ Navigate to the Admin Console by clicking on the **Admin** tab from the top navi
 
 You can update various [email](#email) and [signup](#signup) settings from this page.
 
+{% include note.html content="Changing these settings results in a service interruption for all users for approximately 2 minutes. To minimize disruption, consider making your changes during a scheduled maintenance window." %}
+
 {: id="email"}
 ## Email settings
 To customize or otherwise manage the ThoughtSpot welcome email for your users, follow these steps:
@@ -36,8 +38,6 @@ To customize or otherwise manage the ThoughtSpot welcome email for your users, f
 
 3. Select **Save changes**. Alternatively, you can **Reset to default**.
 
-{% include note.html content="Changing these settings results in a service interruption for all users for approximately 2 minutes. To minimize disruption, consider making your changes during a scheduled maintenance window." %}
-
 {: id="signup"}
 ## Signup settings
 The "Sign up" button on ThoughtSpot's login page is customizable. You can use it to redirect users to a company-wide app directory or to an internal app request workflow, for example.
@@ -53,5 +53,3 @@ To configure the workflow that allows users to sign up for ThoughtSpot from the 
 3. Enter the URL the signup button should link to, in the text box next to **Signup button link**.
 
 3. Select **Save changes**. Alternatively, you can **Reset to default**.
-
-{% include note.html content="Changing these settings results in a service interruption for all users for approximately 2 minutes. To minimize disruption, consider making your changes during a scheduled maintenance window." %}
