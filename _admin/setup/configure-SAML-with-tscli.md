@@ -11,7 +11,9 @@ permalink: /:collection/:path.html
 
 ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on ThoughtSpot [using a `tscli`-based configurator](#saml-configure-tscli), or [through the Admin Console](#admin-portal). It is configured to work using service provided by an Identity Provider (IdP).
 
-Popular Identity Providers that ThoughtSpot supports include [Okta](https://developer.okta.com/docs/guides/build-sso-integration/saml2/overview/){: target="_blank"}, [Azure Active Directory](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-saml2-settings-azure-ad){: target="_blank"}, [PingFederate](https://docs.pingidentity.com/bundle/solution-guides/page/ozz1597769517562.html){: target="_blank"}, [Microsoft AD FS](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-saml2-settings){: target="_blank"}, and [Onelogin](https://developers.onelogin.com/quickstart/saml){: target="_blank"}. This is not an exhaustive list. To determine if ThoughtSpot supports your preferred IdP, talk to your ThoughtSpot contact. Refer to your Identity Provider’s SAML documentation for specific information on setting up SAML with that IdP.
+Popular Identity Providers that ThoughtSpot supports include [Okta](https://developer.okta.com/docs/guides/build-sso-integration/saml2/overview/){: target="_blank"}, [Azure Active Directory](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-saml2-settings-azure-ad){: target="_blank"}, [PingFederate](https://docs.pingidentity.com/bundle/solution-guides/page/ozz1597769517562.html){: target="_blank"}, [Microsoft AD FS](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-saml2-settings){: target="_blank"}, and [Onelogin](https://developers.onelogin.com/quickstart/saml){: target="_blank"}. This is not an exhaustive list. To determine if ThoughtSpot supports your preferred IdP, talk to your ThoughtSpot contact.
+
+After you complete the SAML configuration in ThoughtSpot that this article describes, refer to your Identity Provider’s SAML documentation for specific information on setting up SAML with that IdP.
 
 {: id="prerequisites"}
 ## Configuration prerequisites
@@ -50,7 +52,7 @@ Usually set to `3600` seconds.
 ### IdP Metadata XML File
 This file is provided by the IdP. The absolute path to the `idp-meta.xml` file is needed for one-time configuration.
 
-If your IdP provider does not allow you to import the IDP metadata XML file, you must map values manually. Map the `username` attribute to `NameId` and the `email` attribute to `mail`.
+{% include note.html content="If your IdP does not allow you to import the IdP metadata XML file, you must map values manually. For the ThoughtSpot system to pick up certain attributes, you must map them to specific fields. Map the username you would like to use to <code>NameId</code>, and map the email id of the user to <code>mail</code>." %}
 
 {: id="auto-add" }
 ### Automatically add SAML users to Thoughtspot: (yes/no)

@@ -19,7 +19,7 @@ Fill in the following parameters:
 5. **Protocol**: The authentication mechanism for ThoughtSpot. For example, `http` or `https`.
 6. **IdP Metadata XML File**: The absolute path to your Identity Provider’s metadata file. This file is provided by your IdP.  You need this file so that the configuration persists over upgrades. It is a best practice to set it up on persistent/HA storage (NAS volumes) or in the same absolute path on all nodes in the cluster. For example, *idp-meta.xml*.
 
-    If your IdP does not allow you to import the IdP metadata XML file, you must map values manually. Map the `username` attribute to `NameId` and the `email` attribute to `mail`.
+    {% include note.html content="If your IdP does not allow you to import the IdP metadata XML file, you must map values manually. For the ThoughtSpot system to pick up certain attributes, you must map them to specific fields. Map the username you would like to use to <code>NameId</code>, and map the email id of the user to <code>mail</code>." %}
 
 7. **Automatically add SAML users to ThoughtSpot upon first authentication**: Choose whether or not to add SAML users to ThoughtSpot when they first authenticate. If you choose 'yes', then new users will be automatically created in ThoughtSpot upon first successful SSO login.
 If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/admin-portal/users.html).
