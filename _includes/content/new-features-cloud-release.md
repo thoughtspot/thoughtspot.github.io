@@ -4,6 +4,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <li><a href="{{ site.baseurl }}#mar-cloud-analyst">For the Analyst</a></li>
 <li><a href="{{ site.baseurl }}#mar-cloud-business-user">For the Business User</a></li>
 <li><a href="{{ site.baseurl }}#mar-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#mar-cloud-developer">For the Developer</a></li>
 </ul>
 
 <h3><a id="mar-cloud-analyst"></a>For the Analyst</h3>
@@ -49,5 +50,20 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dlentry id="performance-tracking">
 <dt>Performance Tracking Pinboard</dt>
 <dd>The <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a> is now accessible from the Admin Console. To view this Pinboard, navigate to the Admin Console by selecting <strong>Admin</strong> from the top navigation bar. Select <strong>App performance</strong> from the side navigation bar in the Admin Console.</dd></dlentry>
+
+</dl>
+
+<h3><a id="mar-cloud-developer"></a>For the Developer</h3>
+
+<dl>
+
+<dlentry id="thoughtspot-embed">
+<dt>ThoughtSpot Embed</dt>
+<dd>ThoughtSpot cloud now supports embedding ThoughtSpot content in third-party applications. In this release, ThoughtSpot introduces the Visual Embed SDK package to help developers embed the ThoughtSpot search functionality, pinboards, visualizations, or the full application in their web page, portal, or business solution. For more information on embedding ThoughtSpot, see <a href="{{ site.baseurl }}/admin/ts-cloud/intro-embed.html">Manage search and SpotIQ settings</a>.</dd></dlentry>
+
+<dlentry id="spotdev-portal">
+<dt>SpotDev portal</dt>
+<dd>ThoughtSpot cloud now includes the **SpotDev** portal to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The **SpotDev** tab in the ThoughtSpot application is available for the users with administrator and developer privileges. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/onboarding-email-settings.html">Manage email and onboarding settings</a>.</dd>
+<dd>The **SpotDev** portal provides a playground for developers and product owners to evaluate the Visual Embed APIs and preview the results. The portal also allows authorized users to rebrand the embedded content, <a href="{{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html">customize styles</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">add custom menu actions</a> to the embedded instance.</dd><dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">SpotDev Portal</a>.</dd></dlentry>
 
 </dl>
