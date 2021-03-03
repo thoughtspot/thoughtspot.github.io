@@ -17,11 +17,7 @@ Similarly, you can configure callback functions to send an event or action to th
 
 The custom action is added either as a primary menu action on the menu bar, or as a menu item in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png) on the **Pinboards** and **Search Answers** page. You can also preview the position of the menu items when adding a custom action.
 
-<div class="note">
-
-ThoughtSpot allows adding one custom menu item and one callback function for each application instance.
-
-</div>
+{% include note.html content="ThoughtSpot allows adding one custom menu item and one callback function for each application instance." %}
 
 ## Add a custom menu item
 

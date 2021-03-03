@@ -38,11 +38,8 @@ To enable CORS, follow these steps:
 
 5.  Click **Save Settings**.
 --->
-<div class="note">
 
-If CORS is enabled, ThoughtSpot adds `Access-Control-Allow-Origin` header in API responses.
-
-</div>
+{% include note.html content="If CORS is enabled, ThoughtSpot adds `Access-Control-Allow-Origin` header in API responses." %}
 
 ## Configure content security settings
 

@@ -321,7 +321,7 @@ entries:
         output: web
         levelThreeItems:
         - title: Configure SAML SSO authentication
-          url: /admin/ts-cloud/configure-same-spotdev.html
+          url: /admin/ts-cloud/configure-saml-spotdev.html
           output: web
         - title: Configure trusted authentication
           url: /admin/ts-cloud/trusted-authentication.html

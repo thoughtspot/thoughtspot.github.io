@@ -44,12 +44,9 @@ To access style customization settings:
 
 3.  Under **Customization**, click **Styles**.
 
-<div class="tip">
+{% include tip.html content="The style customization settings are also available in the ThoughtSpot **Admin** console." %}
 
-The style customization settings are also available in the ThoughtSpot **Admin** console.
 For more information on setting UI styles from the **Admin** console, see [Style Customization]({{ site.baseurl }}/admin/ts-cloud/style-customization.html).
-
-</div>
 
 ## Change application logo and favicon
 

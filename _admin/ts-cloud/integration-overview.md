@@ -55,7 +55,7 @@ ThoughtSpot administrators can set up SAML SSO either using the TSCLI command li
 
 - [Trusted Authentication]({{ site.baseurl }}/admin/ts-cloud/trusted-authentication.html)  
 Trusted authentication is a token-based authentication service that uses a central authentication service to authenticate ThoughtSpot users. In a trusted authentication workflow, ThoughtSpot provides the authentication service with a token for a given ThoughtSpot user. This token is used for obtaining trust from the third-party client applications before granting access to ThoughtSpot content.
-For authenticating embed users, 
+For authenticating embed users,
 
 ## Define security settings
 
