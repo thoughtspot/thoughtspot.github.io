@@ -1,6 +1,5 @@
 ---
 title: ["Understand groups and privileges"]
-
 last_updated: 6/1/2020
 summary: "Creating groups and assigning users to them makes privilege management easier."
 sidebar: mydoc_sidebar
