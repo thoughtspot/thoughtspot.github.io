@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts7.feb.cl
+  docversion: ts7.mar.cl
   # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
@@ -299,6 +299,96 @@ entries:
       - title: ThoughtSpot use agreement
         url: /admin/ts-cloud/use-agreement.html
         output: web
+   - levelTwoTitle: Developers
+     output: web
+     levelTwoItems:
+     - title: For Developers
+       url: /admin/ts-cloud/developer-user.html
+       output: web
+     - title: ThoughtSpot embedding solution
+       url: /admin/ts-cloud/intro-embed.html
+       output: web
+     - title: Integration guidelines
+       url: /admin/ts-cloud/integration-overview.html
+       output: web
+     - title: ThoughtSpot SpotDev Portal
+       url: /admin/ts-cloud/spotdev-portal.html
+       output: web
+     - title: Security settings for embedding
+       url: /admin/ts-cloud/security-settings.html
+       output: web
+      - levelThreeTitle: Authentication methods
+        output: web
+        levelThreeItems:
+        - title: Configure SAML SSO authentication
+          url: /admin/ts-cloud/configure-saml-spotdev.html
+          output: web
+        - title: Configure trusted authentication
+          url: /admin/ts-cloud/trusted-authentication.html
+          output: web
+      - levelThreeTitle: Visual Embed SDK
+        output: web
+        levelThreeItems:
+        - title: Visual Embed SDK Overview
+          url: /admin/ts-cloud/visual-embed-sdk.html
+          output: web
+        - title: Get started with Visual Embed SDK
+          url: /admin/ts-cloud/get-started-sdk.html
+          output: web
+        - title: Embed ThoughtSpot search
+          url: /admin/ts-cloud/embed-search.html
+          output: web
+        - title: Embed pinboards
+          url: /admin/ts-cloud/embed-pinboard-sdk.html
+          output: web
+        - title: Embed visualizations
+          url: /admin/ts-cloud/embed-a-visualization.html
+          output: web
+        - title: Embed full application
+          url: /admin/ts-cloud/full-app-embed.html
+          output: web
+      - levelThreeTitle: REST APIs
+        output: web
+        levelThreeItems:
+        - title: About REST APIs
+          url: /admin/ts-cloud/about-rest-api.html
+          output: web
+        - title: Get started with REST APIs
+          url: /admin/ts-cloud/rest-api-getstarted.html
+          output: web
+        - title: Calling a REST API
+          url: /admin/ts-cloud/calling-rest-api.html
+          output: web
+        - title: Embed data using REST APIs
+          url: /admin/ts-cloud/embed-rest-api.html
+          output: web
+        - title: Push data to an external application
+          url: /admin/ts-cloud/push-data-to-external-app.html
+          output: web
+        - title: API Response Pagination
+          url: /admin/ts-cloud/response-pagination.html
+          output: web
+      - levelThreeTitle: Runtime Filters
+        output: web
+        levelThreeItems:
+        - title: About Runtime Filters
+          url: /admin/ts-cloud/about-runtime-filters.html
+          output: web
+        - title: Apply a Runtime Filter
+          url: /admin/ts-cloud/apply-runtime-filter.html
+          output: web
+        - title: Apply a Runtime Filter
+          url: /admin/ts-cloud/Runtime filter operators.html
+          output: web
+      - levelThreeTitle: Customize embedded content
+        output: web
+        levelThreeItems:
+        - title: Customize styles for the embedded content
+          url: /admin/ts-cloud/customize-style-spotdev.html
+          output: web
+        - title: Add custom actions
+          url: /admin/ts-cloud/customize-actions-spotdev.html
+          output: web
   - sectiontitle: Search
     output: web,ugBk
     sectionitems:
