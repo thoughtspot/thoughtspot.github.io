@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 1/7/2021
+last_updated: 3/3/2021
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -1435,20 +1435,21 @@ This subcommand has the following options:
         <dlentry>
           <dt><code>--online</code></dt>
           <dd>
-            <p>Downloads <code>maptiles</code> tar from the internet.</p>
+            <p>Downloads <code>maptiles</code> tar from the internet. This subcommand is unavailable in versions 6.3.1 and later; the <code>tscli map-tiles enable</code> command automatically downloads the maptiles from the internet.</p>
             <p>The default setting is <code>True</code>.</p></dd></dlentry>
         <dlentry>
 
           <dt><code>--offline</code></dt>
           <dd>
-            <p>Specifies that you are using <code>maptiles</code> tar from a local disk. Use during offline enablement of map-tiles.</p>
+            <p>Specifies that you are using a <code>maptiles</code> tarball from a local disk, rather than downloading from the internet. Use during offline enablement of map-tiles. You must specify the location of the <code>--tar</code> and <code>--md5</code> on your machine.</p>
+            <p>You must download the <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">tarball</a> and <a href="https://tsengg-geodata.s3.amazonaws.com/md5">md5</a> before you run this command.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--tar <em>TAR</em></code></dt>
-          <dd>Specified tar file for map-tiles. Use during offline enablement of map-tiles.</dd></dlentry>
+          <dd>Specified tar file for map-tiles. Use during offline enablement of map-tiles. Download the tarball <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">here</a>.</dd></dlentry>
         <dlentry>
           <dt><code>--md5 <em>MD5</em></code></dt>
-          <dd>Specified md5 file for map-tiles. Use during offline enablement of map-tiles.</dd></dlentry>
+          <dd>Specified md5 file for map-tiles. Use during offline enablement of map-tiles. Download the md5 <a href="https://tsengg-geodata.s3.amazonaws.com/md5">here</a>.</dd></dlentry>
       </dl>
 
     </dd></dlentry>  
