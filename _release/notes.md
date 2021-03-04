@@ -232,12 +232,15 @@ We like to have a diversity of experience and perspective, and want to hear from
 If you are running one of the following versions, you can upgrade to the 6.3.1 release
 directly:
 
+* 5.3.x to 6.3.1
+* 6.0.x to 6.3.1
 * 6.1.x to 6.3.1
 * 6.2.x to 6.3.1
+* 6.3 to 6.3.1
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 6.1.x, or version 6.2.x, and then to the 6.3.1 release.
+First, upgrade to version 5.3.x, 6.0.x, 6.1.x, 6.2.x, or 6.3 and then to the 6.3.1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
