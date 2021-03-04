@@ -311,7 +311,7 @@ entries:
       - title: Integration guidelines
         url: /admin/ts-cloud/integration-overview.html
         output: web
-      - title: ThoughtSpot SpotDev Portal
+      - title: ThoughtSpot SpotDev portal
         url: /admin/ts-cloud/spotdev-portal.html
         output: web
       - title: Security settings for embedding
@@ -329,7 +329,7 @@ entries:
       - levelThreeTitle: Visual Embed SDK
         output: web
         levelThreeItems:
-        - title: Visual Embed SDK Overview
+        - title: Visual Embed SDK overview
           url: /admin/ts-cloud/visual-embed-sdk.html
           output: web
         - title: Get started with Visual Embed SDK
@@ -365,7 +365,7 @@ entries:
         - title: Push data to an external application
           url: /admin/ts-cloud/push-data-to-external-app.html
           output: web
-        - title: API Response Pagination
+        - title: API response pagination
           url: /admin/ts-cloud/response-pagination.html
           output: web
       - levelThreeTitle: Runtime Filters
@@ -377,7 +377,7 @@ entries:
         - title: Apply a Runtime Filter
           url: /admin/ts-cloud/apply-runtime-filter.html
           output: web
-        - title: Apply a Runtime Filter
+        - title: Runtime Filter Operators
           url: /admin/ts-cloud/runtime-filter-operators.html
           output: web
       - levelThreeTitle: Customize embedded content
