@@ -49,7 +49,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 <dlentry id="information-center">
   <dt>Information Center</dt>
-<dd>ThoughtSpot has a new Information Center, accessible from the help icon <img src="/images/icon-help-10px.png" alt="Help icon" class="inline"> next to your profile on the top navigation bar. This new help menu contains many useful resources, including a navigation overview, several training videos, and links to more help across the ThoughtSpot product, community, training, and documentation. Refer to <a href="{{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a>.</dd></dlentry>
+<dd>ThoughtSpot has a new Information Center, accessible from the help icon <img src="../images/icon-help-10px.png" alt="Help icon" class="inline"> next to your profile on the top navigation bar. This new help menu contains many useful resources, including a navigation overview, several training videos, and links to more help across the ThoughtSpot product, community, training, and documentation. Refer to <a href="{{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a>.</dd></dlentry>
 
 </dl>
 
