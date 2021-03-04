@@ -20,4 +20,4 @@ You can use the Admin Console to accomplish the following tasks:
 * **Delete a user** by hovering over a username, clicking the checkbox that appears, and selecting the **Delete** button
 * **Add a user or users to groups** by hovering over a username, clicking the checkbox that appears, and selecting the **Add users to groups** button
 
-Refer to [Create, edit, or delete a user]({{ site.baseurl }}/admin/users-groups/add-user.html) for more detail on how to create and manage users.
+Refer to [Create, edit, or delete a user]({{ site.baseurl }}/admin/users-groups/add-user.html) for more detail on how to create and manage users. 
