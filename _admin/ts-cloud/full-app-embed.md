@@ -127,7 +127,7 @@ appEmbed.render({ pageId }: AppRenderOptions): AppEmbed {
 ```
 
 `pageId`  
-*String*. The unique identifier for the ThoughtSpot application page. The following values are valid.
+The unique identifier for the ThoughtSpot application page. The following values are valid.
 
 - `Page.Search`  
  Displays the search answers page when the application loads.

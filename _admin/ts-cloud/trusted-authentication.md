@@ -8,8 +8,11 @@ permalink: /:collection/:path.html
 
 If your organization has a trusted authentication server, you can use it to authenticate users who  request access to the embedded ThoughtSpot application. After authenticating a user, the trusted authenticator server obtains an authentication token from ThoughtSpot on the user’s behalf. This ensures that the user authentication persists across all subsequent user sessions.
 
-{% include note.html content="To use the trusted authentication method, you must enable CORS and add the authentication server domain to the allowed list. For more information, see [Configure security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
-" %}
+<div class="note">
+
+To use the trusted authentication method, you must enable CORS and add the authentication server domain to the allowed list. For more information, see [Configure security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
+
+</div>
 
 ## Trusted authentication workflow
 

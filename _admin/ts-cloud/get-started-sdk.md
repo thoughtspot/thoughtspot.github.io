@@ -31,12 +31,12 @@ If NPM is not installed, [install NPM](https://www.npmjs.com/get-npm){:target="_
 
 ## Install the Visual Embed SDK
 
-The latest version of the Visual Embed SDK is available at [https://www.npmjs.com/package/@thoughtspot/embed-sdk](https://www.npmjs.com/package/@thoughtspot/embed-sdk){:target="_blank"}.
+The latest version of the Visual Embed SDK is available at [https://www.npmjs.com/package/ts-embed-sdk](https://www.npmjs.com/package/ts-embed-sdk){:target="_blank"}.
 
 To install the SDK, run the following command at the command line:
 
 ``` shell
-npm install @thoughtspot/embed-sdk
+npm install ts-embed-sdk
 ```
 
 ## Import the JavaScript library

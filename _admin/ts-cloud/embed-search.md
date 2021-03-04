@@ -54,7 +54,7 @@ To allow your client application to connect to ThoughtSpot:
     - `AuthServer`  
       Trusted authentication method. The trusted authentication method enables applications to exchange secure tokens and grant access to the embedded content. If this authentication method is used, define the `authEndpoint` attribute.
     - `authEndpoint`    
-      *String*. The endpoint URL of the authentication server. his attribute is required if the `AuthType` is set to `AuthServer`.
+      *String*. The endpoint URL of the authentication server. his attribute is required if the `AuthType` is set to `AuthServer`. 
     - `SSO`    
       SAML SSO authentication method. Users accessing the embedded content are authenticated with SAML SSO.
     - `None`  
@@ -99,7 +99,7 @@ Sets the `width` and `height` dimensions to render the iframe in the web browser
 `disabledActions` *optional*  
 *String*. Disables the specified menu item from the list of actions in the search answer page.
 
-For example, to hide the **Show underlying data** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), add `showUnderlyingData` to the `disabledActions` attribute.
+For example, to hide the **Show underlying data** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png), add `showUnderlyingData` to the `disabledActions` attribute.
 
 `disabledActionReason` *optional*  
 *String*. Indicates the reason for disabling an action from the search answer page view.

@@ -65,7 +65,7 @@ To allow your client application to connect to ThoughtSpot:
 
 ## Construct the embed content
 
-``` javaScript
+``` JavaScript
  const embed = new PinboardEmbed("#embed", {
     frameParams: {
         width: 1280,
@@ -99,7 +99,7 @@ For example, to hide **Add filters** action from the **More** menu![more options
 
 Construct the URL for the embedded pinboard and render the embedded content:
 
-``` javaScript
+``` JavaScript
   pinboardEmbed.render({
         pinboardId,
         vizId,

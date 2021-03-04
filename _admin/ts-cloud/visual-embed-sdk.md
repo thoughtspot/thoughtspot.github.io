@@ -1,5 +1,5 @@
 ---
-title: [Visual Embed SDK overview]
+title: [Visual Embed SDK Overview]
 last_updated: 3/3/2021
 summary: "ThoughtSpot Visual Embed SDK provides JavaScript packages for embedding ThoughtSpot search, visualizations, pinboards, and the full application."
 sidebar: mydoc_sidebar
@@ -22,10 +22,10 @@ The Visual Embed SDK includes the following Javascript libraries:
 **SearchEmbed**    
 For [embedding the ThoughtSpot search]({{ site.baseurl }}/admin/ts-cloud/embed-search.html) functionality.
 
-**PinboardEmbed**  
-For embedding ThoughtSpot [visualizations]({{ site.baseurl }}/admin/ts-cloud/embed-a-visualization.html) and [pinboards]({{ site.baseurl }}/admin/ts-cloud/embed-pinboard-sdk.html).
+**PinboardEmbed**
+embedding ThoughtSpot [visualizations]({{ site.baseurl }}/admin/ts-cloud/embed-a-visualization.html) and [pinboards]({{ site.baseurl }}/admin/ts-cloud/embed-pinboard-sdk.html).
 
-**AppEmbed**  
+**AppEmbed**
 For embedding [full ThoughtSpot application]({{ site.baseurl }}/admin/ts-cloud/full-app-embed.html) with or without the navigation bar.
 
 ## Configuration requirements for embedding

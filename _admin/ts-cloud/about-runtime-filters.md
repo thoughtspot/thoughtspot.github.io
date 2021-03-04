@@ -5,27 +5,33 @@ last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Runtime filters allow you to apply filters to the data returned by the APIs, or the visualizations and pinboard you’re embedding. 
+Runtime filters allow you to filter an answer or pinboard through parameters you
+pass in the URL to filter the data that is returned. You can use them with the
+data API or with embedding of answers or pinboards.
 
 ## Capabilities of Runtime Filters
 
 Runtime Filters provide ability to filter data at the time of retrieval using
-[Embedding]({{ site.baseurl }}/admin/ts-cloud/visual-embed-sdk.html) or the [REST API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html). This is done by
+[Embedding]({{ site.baseurl
+}}/app-integrate/embedding-viz/about-embedding-viz.html#) or the [REST API]({{
+site.baseurl }}/app-integrate/data-api/about-data-api.html#). This is done by
 providing filter information through the URL query parameters.
 
 This example shows the URL to access a pinboard with a filter. Here the Runtime
-Filter is operating on the column `Color` and will only return values that are equal (EQ) to "red".
+Filter is operating on the column "Color" and will only return values that are
+equal (EQ) to "red".
 
 ```
-http://<your.thoughtspot.com>/?col1=Color&op1=EQ&val1=red#
+http://10.77.144.40:8088/?col1=Color&op1=EQ&val1=red#
 /pinboard/e36ee65e-64be-436b-a29a-22d8998c4fae
 ```
 
-This example shows the URL for a REST API call with a filter. Here the Runtime Filter is operating on the column `Category` and returning values that are equal
+This example shows the URL for a REST API call with a filter. Here the Runtime
+Filter is operating on the column `Category` and returning values that are equal
 to `mfgr%2324`.
 
 ```
-http://<your.thoughtspot.com>/callosum/v1/tspublic/v1/pinboarddata?
+http://10.77.144.40:8088/callosum/v1/tspublic/v1/pinboarddata?
 id=e36ee65e-64be-436b-a29a-22d8998c4fae&col1=Category
 &op1=EQ&val1=mfgr%2324
 ```
