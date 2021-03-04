@@ -10,11 +10,7 @@ If you want to match the look and feel of the embedded ThoughtSpot content with 
 
 You can rebrand the ThoughtSpot application interface components such as the logo, background color, and color scheme of the visualizations.
 
-<div class="note">
-
-When you rebrand the embedded ThoughtSpot content, the UI styles are reset for all users.
-
-</div>
+{% include note.html content="When you rebrand the embedded ThoughtSpot content, the UI styles are reset for all users." %}
 
 ## Style components
 
