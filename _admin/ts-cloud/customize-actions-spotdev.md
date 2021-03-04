@@ -15,7 +15,7 @@ For example, you may search in ThoughtSpot for customers whose contracts are due
 
 Similarly, you can configure callback functions to send an event or action to the ThoughtSpot application.
 
-The custom action is added either as a primary menu action on the menu bar, or as a menu item in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png) on the **Pinboards** and **Search Answers** page. You can also preview the position of the menu items when adding a custom action.
+The custom action is added either as a primary menu action on the menu bar, or as a menu item in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the **Pinboards** and **Search Answers** page. You can also preview the position of the menu items when adding a custom action.
 
 {% include note.html content="ThoughtSpot allows adding one custom menu item and one callback function for each application instance." %}
 
@@ -33,7 +33,7 @@ To add custom menu item:
 
     Make sure the URL you enter here is added to the [CORS and CSP whitelist]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
 
-5.  Specify the position of the action button. You can set the action as a primary action, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png).
+5.  Specify the position of the action button. You can set the action as a primary action, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png).
 
 6.  Select the ThoughtSpot application pages to which you want to add the menu item.
 
