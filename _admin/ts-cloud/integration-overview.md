@@ -6,9 +6,9 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Embedding ThoughtSpot content allows you to build search-driven analytics and visualizations into your application. Embedding an external application requires a thorough understanding of your business requirements, software limitations, and tools needed for enable seamless navigation between multiple interfaces.
+Embedding ThoughtSpot content allows you to build search-driven analytics and visualizations into your application. Embedding an external application requires a thorough understanding of your business requirements, software limitations, and tools needed for seamless navigation between multiple interfaces.
 
-ThoughtSpot recommends that you browse through the following guidelines before you begin.
+Before you begin, browse through the following guidelines.
 
 ## Decide what to embed
 
@@ -23,7 +23,7 @@ Based on your integration needs, determine if you want to embed a portion of the
 
 The ThoughtSpot SpotDev portal provides a playground for developers to explore the embed functions. The **Playground** provides a preview of the code sample that developers can use to embed search analytics, visualizations, pinboards, and the full ThoughtSpot application. Developers can leverage the interactive coding experience to evaluate the ThoughtSpot embed functionality.
 
-For more information, see - [SpotDev portal]({{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html).
+For more information, see [SpotDev portal]({{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html).
 
 ## Define application workflows
 
@@ -32,7 +32,7 @@ The ThoughtSpot Visual Embed SDK includes Javascript libraries for programmatica
 
 In addition to the Visual Embed SDK, ThoughtSpot provides a set of data APIs to fetch data from the ThoughtSpot application. For example, you can construct a search answer using the data APIs and use this link to embed search answers with your application.
 
-Irrespective of the method you use for embedding, you must define your application workflows to enable seamless navigation between the host and embedded interfaces.
+Irrespective of the method you use for embedding, make sure you define your application workflows to enable seamless navigation between the host and embedded interfaces.
 
 ## Define user roles and privileges
 

@@ -150,7 +150,5 @@ To explore the API for embedding full application:
 ## Customize embedded content
 
 -   To [white-label and rebrand the embedded ThoughtSpot content]({{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html), click **Customizations** > **Styles**.
-
--   To [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html) to the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png) on visualizations and pinboards, go to **Customizations** > **Actions**.
-
+-   To [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html) to the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on visualizations and pinboards, go to **Customizations** > **Actions**.
 -   If you are a ThoughtSpot admin user and you want to [configure security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html), such as enabling CORS, setting up trusted authentication service, or whitelisting client application domains, go to **Customizations** > **Settings**.
