@@ -62,7 +62,7 @@ To add a callback function:
 
     Make sure you use the same ID to register the callback function on your host application.
 
-5.  Specify the position of the action button. You can set the callback function as a primary action, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png).
+5.  Specify the position of the action button. You can set the callback function as a primary action, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png).
 
 6.  Select the ThoughtSpot application pages to which you want to add the function.
 
