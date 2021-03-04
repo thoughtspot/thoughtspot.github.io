@@ -4845,7 +4845,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
     position: relative;
     min-height: 50px;
     margin-bottom: 20px;
+<<<<<<< HEAD
     border: 1px solid transparent
+=======
+    border: 1px solid transparent;
+>>>>>>> upstream/ts7.mar.cl
     padding-top: 5px;
 }
 
@@ -5920,6 +5924,23 @@ a.thumbnail:hover {
     color: #843534
 }
 
+<<<<<<< HEAD
+=======
+.alert-access {
+    color: #6CC2C6;
+    background-color: #E4F7F8;
+    border-color: #E4F7F8
+}
+
+.alert-access hr {
+    border-top-color: #A0E4E7
+}
+
+.alert-access .alert-link {
+    color: #3C6C6F
+}
+
+>>>>>>> upstream/ts7.mar.cl
 @-webkit-keyframes progress-bar-stripes {
     from {
         background-position: 40px 0

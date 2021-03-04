@@ -18,6 +18,7 @@ body {
 
 table.wide_table {
     page: big_table;
+<<<<<<< HEAD
 }
 
 
@@ -30,6 +31,20 @@ table.wide_table {
   padding-top: 5px;
 }
 
+=======
+}
+
+
+.nav ul li a {border-top:0px; background-color:transparent; }
+#navig a[href] {background-color: transparent; font-weight: bold; font-size: 12px;  }
+
+.sectionHead {
+  padding-left: 10px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+>>>>>>> upstream/ts7.mar.cl
 .sectionHead2 {
   padding-left: 12px;
 }
@@ -45,17 +60,33 @@ a[href]::after {
    content: "";
 }
 
-a[href^="http:"]::after, a[href^="https:"]::after {
+a[href^="http:"]::after, a[href^="https:"]::after, a[href^="https:"].noCrossRef::after {
     content: "";
 }
 
 a[href] {
+<<<<<<< HEAD
     color: #2c6da3 !important;
+=======
+    color: #373BB1 !important;
+>>>>>>> upstream/ts7.mar.cl
 }
+
 a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after {
     content: "";
 }
 
+a[href]::after {
+        content: " [See page " target-counter(attr(href), page) "]"
+}
+
+a[href^="http:"]::after, a[href^="https:"]::after,  {
+    content: " (" attr(href) ")";
+}
+
+a[href^="http:"]::after, a[href^="https:"]::after {
+    content: " (" attr(href) ")";
+}
 
 @page {
     margin: 60pt 90pt 60pt 90pt;
@@ -75,7 +106,11 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 
 .printSubtitle {
     font-size: 19pt;
+<<<<<<< HEAD
     color: #cccccc !important;
+=======
+    color: #999999 !important;
+>>>>>>> upstream/ts7.mar.cl
     font-family: "Grotesque MT Light";
     line-height: 22pt;
     letter-spacing: -.5px;
@@ -108,7 +143,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 .lastGeneratedDate {
     font-style: italic;
     font-size:14px;
-    color: gray;
+    color: #999999;
 }
 
 .alert a {
@@ -141,14 +176,24 @@ body.frontmatter {counter-reset: page 1}
     @top-left {
         content: prince-script(guideName);
     }
-    @top-right {
+    /*@top-right {
         content: prince-script(datestamp);
+    }*/
+    @top-right {
+        content: " "
     }
     @bottom-right {
         content: counter(page, lower-roman);
     }
+    /*@bottom-left {
+        content: "support@thoughtspot.com";   }*/
     @bottom-left {
+<<<<<<< HEAD
         content: "support@thoughtspot.com";   }
+=======
+        content: " "
+    }
+>>>>>>> upstream/ts7.mar.cl
 }
 
 body.first_page {counter-reset: page 1}
@@ -161,10 +206,10 @@ h1 { string-set: doctitle content() }
         font-size: 11px;
         font-style: italic;
     }
-    @top-right {
+    /*@top-right {
         content: prince-script(datestamp);
         font-size: 11px;
-    }
+    }*/
 
     @bottom-right {
         content: "Page " counter(page);

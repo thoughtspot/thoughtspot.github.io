@@ -16,7 +16,7 @@
                     path: '/'
                 },
                 slide: {
-                    duration: 400,
+                    duration: 50,
                     easing: 'swing'
                 }
             });
@@ -100,7 +100,7 @@
     </div>
 
 </body>
-{% if site.google_analytics %}
+{% if site.google_analytics and jekyll.environment == 'production' %}
 {% include google_analytics.html %}
 {% endif %}
 </html>

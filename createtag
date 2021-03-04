@@ -7,7 +7,7 @@
 #   ./createtag linux bsd
 
 CMDLINEPARAM=1     #  Takes at least one param.
-TAGDIR="pages/tags"
+TAGDIR="/tags"
 
 if [ $# -ge $CMDLINEPARAM ]
 then

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -5467,3 +5468,90 @@ $(document).ready(function(){
 
 
 </html>
+=======
+---
+layout: home
+title: ThoughtSpot Cloud Documentation
+---
+<h1 class="indexTitle">{{ page.title }}</h1>
+<div class="grid-container-opener">
+
+  <div class="grid-child">
+    <img src="{{ "/images/ts-cloud-sm.png" | prepend: site.baseurl  }}" alt="ThoughtSpot Cloud"></div>
+  <div class="grid-child">
+    <p class="text-opener">ThoughtSpot Cloud&trade; is our hosted and managed service offering. ThoughtSpot Cloud offers multiple advantages over deployment form factors that you have to manage and maintain within your own organization.</p><p class="text-opener">ThoughtSpot Cloud is now available in US East and West, Sydney, Ireland, Frankfurt, and Singapore. For information on supported features, and how to sign up, see <a href="{{ "/admin/ts-cloud/cloud-getting-started.html "| prepend: site.baseurl }}">Getting Started.</a></p>
+    </div>
+  <div class="grid-child">&nbsp;</div>
+</div>
+<div class="grid-container-persona">
+  <div class="grid-child">
+    <a href="{{ "/admin/ts-cloud/business-user.html "| prepend: site.baseurl }}">
+      <img src="{{ "/images/persona-business-user.png" | prepend: site.baseurl  }}" alt="Business User"></a>
+    <p class="personaTitle">
+      <a href="{{ "/admin/ts-cloud/business-user.html "| prepend: site.baseurl }}">Business User</a></p>
+    <p class="topicLink">
+      <a href="{{ "/admin/ts-cloud/business-user-onboarding.html "| prepend: site.baseurl }}">Onboard</a><br/>
+      <a href="{{ "/end-user/thoughtspot-one/thoughtspot-one-homepage.html "| prepend: site.baseurl }}">Home page </a> <br/>
+      <a href="{{ "/admin/ts-cloud/pinboards.html "| prepend: site.baseurl }}"> Pinboards and Answers</a><br/>
+      <a href="{{ "/end-user/search/search-overview.html "| prepend: site.baseurl }}">ThoughtSpot Search</a><br/>
+      <a href="{{ "/end-user/search/search-answers.html "| prepend: site.baseurl }}">&nbsp;&nbsp;&nbsp;Search Answers <span class="badge badge-update">Update</span> </a> <br/>
+      <a href="{{ "/end-user/search/search-data.html "| prepend: site.baseurl }}">&nbsp;&nbsp;&nbsp;Search Data</a><br/></p>
+  </div>
+  <div class="grid-child">
+    <a href="{{ "/admin/ts-cloud/analyst.html "| prepend: site.baseurl }}">
+      <img src="{{ "/images/persona-analyst.png" | prepend: site.baseurl  }}" alt="Analyst"></a>
+    <p class="personaTitle"><a href="{{ "/admin/ts-cloud/analyst.html "| prepend: site.baseurl }}">Analyst</a></p>
+    <p class="topicLink">
+      <a href="{{ "/admin/ts-cloud/search-assist.html "| prepend: site.baseurl }}">ThoughtSpot Search Assist</a><br>
+      <a href="{{ "/admin/ts-cloud/analyst-onboarding.html"| prepend: site.baseurl }}">Onboard as Analyst</a><br>
+      <a href="{{ "/admin/ts-cloud/scriptability.html"| prepend: site.baseurl }}">Object Migration <span class="badge badge-update">Update</span> </a><br>
+      <a href="{{ "/admin/ts-cloud/app-templates.html"| prepend: site.baseurl }}">SpotApp Templates <br>
+      <a href="{{ "/admin/ts-cloud/tml.html"| prepend: site.baseurl }}">TS Modeling Language <span class="badge badge-update">Update</span></a><br>
+      <a href="{{ "/complex-search/linked-filters.html"| prepend: site.baseurl }}">Linked Pinboard Filters </a><br>
+      <a href="{{ "/complex-search/selective-filters.html"| prepend: site.baseurl }}">Selective Pinboard Filters </a><br>
+      <a href="{{ "/admin/thoughtspot-one/query-intelligence-pinboard.html"| prepend: site.baseurl }}">Search on Answers Pinboard </a><br>
+      <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis </a><br>
+      <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>
+
+  </div>
+  <div class="grid-child">
+    <a href="{{ "/admin/ts-cloud/data-engineer.html "| prepend: site.baseurl }}">
+      <img src="{{ "/images/persona-data-engineer.png" | prepend: site.baseurl  }}" alt="Data Engineer"></a>
+    <p class="personaTitle"><a href="{{ "/admin/ts-cloud/data-engineer.html "| prepend: site.baseurl }}">Data Engineer</a></p>
+    <p class="topicLink">
+      <a href="{{ "/admin/ts-cloud/embrace.html "| prepend: site.baseurl }}">About Embrace</a><br>
+      <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-snowflake.html"| prepend: site.baseurl }}">Snowflake</a><br>
+      <a href="{{ "/release/notes.html#embrace"| prepend: site.baseurl }}">Security passthrough for Snowflake and Google BigQuery </a><br>
+      <a href="{{ "/release/notes.html#embrace"| prepend: site.baseurl }}">Passthrough functions for Snowflake </a><br>
+      <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-redshift.html"| prepend: site.baseurl }}">Amazon Redshift</a><br>
+      <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-gbq.html"| prepend: site.baseurl }}">Google BigQuery</a><br>
+      <a href="{{ "/admin/ts-cloud/ts-cloud-embrace-synapse.html"| prepend: site.baseurl }}">Azure Synapse</a><br>
+      <a href="{{ "/release/notes.html#embrace"| prepend: site.baseurl }}">Oracle Autonomous Data Warehouse <span class="label label-beta">Beta</span> </a><br>
+  </div>
+  <div class="grid-child">
+    <a href="{{ "/admin/ts-cloud/it-ops.html "| prepend: site.baseurl }}">
+      <img src="{{ "/images/persona-it-ops.png" | prepend: site.baseurl  }}" alt="IT and Operations"></a>
+    <p class="personaTitle"><a href="{{ "/admin/ts-cloud/it-ops.html "| prepend: site.baseurl }}">IT and Operations</a></p>
+    <p class="topicLink">
+      <a href="{{ "/admin/ts-cloud/users.html"| prepend: site.baseurl }}">Users</a><br>
+      <a href="{{ "/admin/ts-cloud/groups.html"| prepend: site.baseurl }}">Groups</a><br>
+      <a href="{{ "/admin/ts-cloud/authentication-local.html"| prepend: site.baseurl }}">Local Authentication</a><br>
+      <a href="{{ "/admin/ts-cloud/authentication-integration.html"| prepend: site.baseurl }}">Authentication with SAML</a>
+      <a href="{{ "/admin/ts-cloud/scheduled-maintenance.html"| prepend: site.baseurl }}">Scheduled Maintenance </a><br>
+      <a href="{{ "/admin/ts-cloud/style-customization.html"| prepend: site.baseurl }}">Style Customization </a><br>
+      <a href="{{ "/admin/ts-cloud/customize-help.html"| prepend: site.baseurl }}">Help Customization </a><br>
+      <a href="{{ "/admin/ts-cloud/use-agreement.html"| prepend: site.baseurl }}">Use Agreement </a><br>
+      <a href="{{ "/admin/ts-cloud/performance-tracking.html"| prepend: site.baseurl }}">Performance Tracking <span class="badge badge-update">Update</span></a><br>
+      <a href="{{ "/admin/ts-cloud/user-adoption.html"| prepend: site.baseurl }}">User Adoption Pinboard </a>
+      <a href="{{ "/admin/ts-cloud/consumption-pricing.html"| prepend: site.baseurl }}">Consumption-based Pricing </a></p>
+  </div>
+</div>
+
+<h2>New features and functionality</h2>
+
+{% include content/new-features-cloud-release.md %}
+
+<h2>Earlier releases</h2>
+
+See <a href="{{ "/release/notes.html"| prepend: site.baseurl }}">Release notes</a>.
+>>>>>>> upstream/ts7.mar.cl

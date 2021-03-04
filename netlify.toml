@@ -1,0 +1,17 @@
+## This redirects to other doc branches
+
+[[redirects]]
+  from = "/ts7.feb.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts6.dec.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.feb.cl/data-integrate/embrace/embrace-snowflake-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
