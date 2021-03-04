@@ -31,6 +31,7 @@ p {
 
 table.scheduler, th, td {
    border: 1px solid black;
+<<<<<<< HEAD
 }
 
 small-sidebar-version-nav {
@@ -89,6 +90,66 @@ p.bookLink {
   text-align: center;
 }
 
+=======
+}
+
+small-sidebar-version-nav {
+    font-size: 80%;
+    margin-left: 5px;
+    padding-bottom: 25px;
+    background-color: #BBECEE;
+}
+
+small-sidebar-link .a{
+    font-size: 80%;
+    margin-left: 5px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    color: #4E55FD;
+}
+
+/*help center*/
+
+div.links{
+    width: 86%;
+    padding-left: 7%;
+    height: 500px;
+    white-space:nowrap;
+}
+.linksChild{
+    width: 150px;
+    height: 200px;
+    text-align:center;
+    display:inline-block;
+    margin-left:4px;
+}
+
+.helpImg {
+    max-width: 75px !important;
+    padding-left: 7px;
+}
+
+/*End: help center*/
+
+h1.indexTitle {
+  margin-bottom: 43px;
+  font-stretch: extra-expanded;
+  color: #333;
+}
+
+p.iconTitle {
+  text-align: center;
+}
+
+p.bookLink {
+  font-size: 97%;
+  font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top:-10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+>>>>>>> upstream/ts7.mar.cl
 img.indexImg {
   text-align: center !important;
   margin-bottom: 27px;
@@ -958,7 +1019,40 @@ a[data-toggle="tooltip"] {
     font-style: italic;
     cursor: default;
     text-decoration:none;
+<<<<<<< HEAD
 }
+
+/* special tooltip code for copy to clipboard - start */
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+=======
+>>>>>>> upstream/ts7.mar.cl
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+// position tooltip
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+
+/* special tooltip code for copy to clipboard -  */
 
 .seriesNext, .seriesContext {
     margin-top: 15px;
@@ -1289,8 +1383,24 @@ span.label.label-default {
 span.label.label-primary {
     background-color: #f0ad4e;
 }
+
+<<<<<<< HEAD
+/* begin beta label */
+
+.label-beta {
+    background-color: #f4bb00;
+    color: #0e1e24;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}
+
+/* end beta label */
+
 .col-lg-12 .nav li a {background-color: white}
 
+=======
+>>>>>>> upstream/ts7.mar.cl
 a code {
     color: #248EC2;
     color: #333 !important;
@@ -1391,6 +1501,23 @@ div.content {
 
 button.btn.btn-default.btn-lg.modalButton1 {
     margin-left: -20px;
+}
+
+/* copy to clipboard button - start */
+
+.btn-copy {
+    background-color: transparent;
+    display: inline;
+    float: right;
+    position: relative;
+    top: 50px;
+}
+
+/* copy to clipboard button - end */
+
+button.data-clipboard-text {
+    margin-left: -20px;
+    margin-top:-5px;
 }
 
 div.box.box1 {
@@ -1505,6 +1632,7 @@ h4.panel-title {
     margin: 0 0 50px;
     width: 100%;
     background-color: #f5f5f5;
+<<<<<<< HEAD
 }
 
 /*
@@ -1516,6 +1644,64 @@ h4.panel-title {
 img.inline {
     display: inline;
 }
+
+/* copy to clipboard style - start */
+
+.copy-code-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  background: #3b3b3b;
+}
+
+.copy-code-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #616161;
+    color: #e7e7e7;
+    padding: 0.4em 0.5em;
+    border-radius: 5px;
+
+    &::before {
+        content: "Copy";
+    }
+
+    &::after {
+        margin-left: 4px;
+        content: "📋";
+        width: 1em;
+    }
+
+    // This class will be toggled via JavaScript
+    &.copied {
+        &::before {
+            content: "Copied!";
+        }
+
+        &::after {
+            content: "✔️";
+        }
+    }
+}
+
+/* copy to clipboard style - end */
+=======
+}
+
+/*
+*
+* Inline graphics and icons (like the R information, options, and popout arrow icons)
+*
+*/
+
+img.inline {
+    display: inline;
+}
+>>>>>>> upstream/ts7.mar.cl
 
 
 

@@ -40,6 +40,7 @@ You can use one of the following methods to embed a ThoughtSpot functionality or
 **Using the Visual Embed SDK**  
 Using this method, you can install the Visual Embed SDK, import the Javascript library, and programmatically integrate ThoughtSpot application and its components.
 The Visual Embed SDK includes separate libraries for embedding ThoughtSpot content, such as the search bar, visualizations, pinboards, and the full application.
+
 For more information, see [Embed content using Visual Embed SDK]({{ site.baseurl }}/admin/ts-cloud/visual-embed-sdk.html).
 
 **Using REST APIs**  
@@ -59,6 +60,6 @@ For more information, see [Customize embedded content]({{ site.baseurl }}/admin/
 
 The ThoughtSpot embedding solution allows you to build additional actions to the embedded pinboards and visualizations.
 
-For example, if you want to email a pinboard, you can create a custom action and add it to your menu component on the Pinboards page.
+For example, if you want to email a pinboard, you can create a custom action and add it to your menu component on the **Pinboards** page.
 
 For more information, see [Add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html).

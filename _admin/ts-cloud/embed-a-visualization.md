@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-This page explains how to embed a ThoughtSpot visualizations, such as tables and charts, in your Web page, portal, or application.
+This page explains how to embed a ThoughtSpot visualization, such as tables and charts, in your Web page, portal, or application.
 
 ## Import the JavaScript library
 
@@ -64,7 +64,7 @@ To allow your client application to connect to ThoughtSpot:
 
 ## Construct the embed content
 
-``` JavaScript
+``` javaScript
  const embed = new PinboardEmbed("#embed", {
     frameParams: {
         width: 1280,
@@ -81,12 +81,12 @@ Sets the `width` and `height` dimensions to render the iframe containing the vis
 `disabledActions` *optional*  
 *String*. Menu items from the list of actions to be disabled on the visualization page.
 
-For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png), add `editTitle` to the `disabledActions` attribute.
+For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), add `editTitle` to the `disabledActions` attribute.
 
 `hiddenActions` *optional*  
 *String*. Menu items from the list of actions to be hidden on the visualization page.
 
-For example, to hide **Download As PDF** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png), add `downloadAsPdf` to the `hiddenActions` attribute.
+For example, to hide **Download As PDF** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), add `downloadAsPdf` to the `hiddenActions` attribute.
 
 `disabledActionReason` *optional*  
 *String*. Reason for disabling an action on the visualizations page.
@@ -95,7 +95,7 @@ For example, to hide **Download As PDF** action from the **More** menu![more opt
 
 Construct the URL for the embedded visualization and render the embedded content:
 
-``` JavaScript
+``` javaScript
   pinboardEmbed.render({
         pinboardId,
         vizId,
@@ -165,7 +165,7 @@ Register event handlers to subscribe to events triggered by the embedded visuali
 
 -   If you have disabled a menu item from the visualizations page, verify if the menu command is disabled.
 
--   Verify the runtime filters.
+-   Verify if the runtime filters are correctly applied.
 
 ## Code sample
 
