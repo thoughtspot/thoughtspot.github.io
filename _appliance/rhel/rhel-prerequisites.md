@@ -53,6 +53,7 @@ If you are using RHEL version 7.9, use the default Linux kernel.
 
 {% include warning.html content="If you are running RHEL 7.8, and your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
 
+{: id="enable-hosts"}
 ## Enable the hosts to download RHEL packages
 
 {: id="repositories"}
