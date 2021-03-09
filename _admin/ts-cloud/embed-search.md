@@ -7,26 +7,12 @@ permalink: /:collection/:path.html
 ---
 The SearchEmbed package in the Visual Embed SDK enables external applications to search for data from one or several data sources.
 
-## Import the JavaScript library
-
-In your .html page, include the JavaScript file in the `<script>` tag under `<head>`:
-
-``` javascript
-<script type="text/javascript" src="<file-location>/<file-name>.js"></script>
-```
-
 ## Import the SearchEmbed package
 
 Import the SearchEmbed SDK library to your application environment:
 
 ``` javascript
 import { SearchEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
-```
-
-## Import styles
-
-``` javascript
-import "./styles.css"
 ```
 
 ## Add the embed domain
@@ -41,14 +27,14 @@ To allow your client application to connect to ThoughtSpot:
     init
         ({
             thoughtSpotHost:"https://<hostname>:<port>",
-            authType: "SSO",
+            authType: AuthType.None,
         });
     ```
 
-    `thoughtSpotHost`   
+    **`thoughtSpotHost`**   
     *String*.  Hostname or IP address of the ThoughtSpot application.
 
-    `authType`    
+    **`authType`**    
     *String*. Authentication type. Valid values are:
 
     - `AuthServer`  
@@ -62,94 +48,103 @@ To allow your client application to connect to ThoughtSpot:
       This approach is used only for testing client applications. Do not use this in production environments.
 
 
-## Create an instance of the search object
+## Create an instance of the SearchEmbed class
 
 Create an instance of the SearchEmbed object and customize your search page view.
 
 ``` javascript
-const SearchEmbed = new SearchEmbed(
+    const searchEmbed = new SearchEmbed(
     document.getElementById('ts-embed'), {
     frameParams: {
         width: '100%',
         height: '100%'
     },
     collapseDataSources:false,
-    hideDataSources: true,
+    hideDataSources: false,
     hideResults: false,
     enableSearchAssist: true,
-    disabledActions: [],
+    disabledActions:[],
+    hiddenActions: [],
+    disabledActionReason: '<reason for disabling>'
     });
+
 ```
 
-`frameParams`  
+**`frameParams`**
 Sets the `width` and `height` dimensions to render the iframe in the web browser.
 
-`collapseDataSources` *optional*   
+**`collapseDataSources`** ***optional***  
 *Boolean*. When set to true, collapses the list of data sources on the Data Source panel.
 
-`hideDataSources` *optional*  
+**`hideDataSources`** *optional*  
 *Boolean*. When set to true, it hides the Data Source panel.
 
-`hideResults` *optional*  
+**`hideResults`** *optional*  
 *Boolean*. When set to true, it hides charts and tables in search answers.
 
-`enableSearchAssist` *optional*  
-*Boolean*. When set to true, it enables search assistance.
+**`enableSearchAssist`** *optional*  
+*Boolean*. When set to true, it enables the Search Assist feature. Search Assist allows you to create a custom onboarding experience for your users by demonstrating how to search data from the example queries created on your worksheet.
 
-`disabledActions` *optional*  
-*String*. Disables the specified menu item from the list of actions in the search answer page.
+**`hiddenActions`**  
+*Array of strings*. Hides the specified action menu items on the search answer page.
 
-For example, to hide the **Show underlying data** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), add `showUnderlyingData` to the `disabledActions` attribute.
+For example, to hide the **Replay Search** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `replaySearch` string in the `hiddenActions` attribute.
+````javascript
+hiddenActions: Action.replaySearch
+````
+**`disabledActions`** *optional*  
+*Array of strings*. Disables the specified menu items from the list of actions in the search answer page.
 
-`disabledActionReason` *optional*  
+For example, to disable the **Show underlying data** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `showUnderlyingData` string in the `disabledActions` attribute.
+````javascript
+disabledActions: Action.showUnderlyingData
+````
+**`disabledActionReason`** *optional*  
 *String*. Indicates the reason for disabling an action from the search answer page view.
 
-## Render the embedded search
+For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
+## Render the embedded search
 Construct the URL of the embedded ThoughtSpot search object.
 Render the embedded search and pass parameters such as data source ID.
 
 ``` javascript
-searchEmbed.render({
-    dataSources,
-    searchQuery,
-    answerId,
-  }: SearchRenderOptions = {}): SearchEmbed {
-     super.render();
-     const src = this.getIFrameSrc(answerId, dataSources, searchQuery);
-    this.renderIFrame(src, this.viewConfig.frameParams);
- return this;
-    }
+ searchEmbed.render({
+  dataSources: ['<%=datasourceGUID%>'],
+  searchQuery: "<query-string>",
+  answerId: "<%=savedAnswerGUID%>"
+ })
 ```
 
-`dataSources`  
-*String*. The Global Unique Identifier (GUID) of the data sources for searching data.
+**`dataSources`**  
+*Array of strings*. The Global Unique Identifiers (GUIDs) of the data sources for running a search query on.
 
-`answerID`  
+**`answerID`**
 *String*. The GUID of the search answers saved in a user profile.
 
-`searchQuery`  
-*String*. The search query string to use when the application loads.
+**`searchQuery`**  
+*String*. The search query string to use when the application loads. You can use the following types of search tokens to construct a search query:
 
+-   [Column]({{ site.baseurl }}/reference/api/search-data-api.html#Column)
+-   [Operator]({{ site.baseurl }}/reference/api/search-data-api.html#Operator)
+-   [Value]({{ site.baseurl }}/reference/api/search-data-api.html#Value)
+-   [Date Bucket]({{ site.baseurl }}/reference/api/search-data-api.html#Date-Bucket)
+-   [Keyword]({{ site.baseurl }}/reference/api/search-data-api.html#Keyword)
+-   [Calendar]({{ site.baseurl }}/reference/api/search-data-api.html#Calendar)
+
+For example, to fetch revenue data by shipping mode, you can use the following search query string:
+````javascript
+  searchQuery: "[Revenue] by [Shipmode]"
+````
 ## Subscribe to events
 
 Register event handlers to subscribe to events triggered by the ThoughtSpot Search function:
 
 ``` javascript
- searchEmbed.on("init", showLoader)
- searchEmbed.on("load", hideLoader)
- searchEmbed.on("answerPageLoading", payload =>
-    console.log("message received from embedded view" + JSON.stringify(payload))
-
-// Functions to show or hide a loader while the iframe loads.
- function showLoader() {
-    document.getElementById("loader").style.display = "block";
-    }
-
- function hideLoader() {
-    document.getElementById("loader").style.display = "none";
-    }
+ searchEmbed.on(EventType.init, showLoader)
+ searchEmbed.on(EventType.load, hideLoader)
 ```
+For a complete list of event types, see the **EventType** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
 ## Test the embedded workflow
 
@@ -170,7 +165,7 @@ import { SearchEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
 
 init({
     thoughtSpotHost: "<%=tshost%>",
-    authType: "SSO",
+    authType: AuthType.SSO,
 });
 
 const searchEmbed = new SearchEmbed(
@@ -182,5 +177,7 @@ const searchEmbed = new SearchEmbed(
         },
     });
 
-searchEmbed.render({});
+searchEmbed.render({
+  dataSources: ['4f289824-e301-4001-ad06-8888f69c4748']
+});
 ```

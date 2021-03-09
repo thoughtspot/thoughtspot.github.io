@@ -8,26 +8,12 @@ permalink: /:collection/:path.html
 
 This page explains how to embed a ThoughtSpot visualization, such as tables and charts, in your Web page, portal, or application.
 
-## Import the JavaScript library
-
-In your .html page, include the JavaScript file in the `<script>` tag under `<head>`:
-
-``` javascript
-<script type="text/javascript" src="<file-location>/<file-name>.js"></script>
-```
-
 ## Import the PinboardEmbed package
 
 Import the visualization SDK library to your application environment:
 
 ``` javascript
 import { PinboardEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
-```
-
-## Import styles
-
-``` javascript
-import "./styles.css"
 ```
 
 ## Add the embed domain
@@ -42,14 +28,14 @@ To allow your client application to connect to ThoughtSpot:
     init
         ({
             thoughtSpotHost:"https://<hostname>:<port>",
-            authType: "SSO"
+            authType: AuthType.SSO
         });
     ```
 
-    `thoughtSpotHost`   
+    **`thoughtSpotHost`**   
     *String*.  Hostname or IP address of the ThoughtSpot application.
 
-    `authType`    
+    **`authType`**    
     *String*. Authentication type. Valid values are:
 
     - `AuthServer`  
@@ -65,67 +51,72 @@ To allow your client application to connect to ThoughtSpot:
 ## Construct the embed content
 
 ``` javaScript
- const embed = new PinboardEmbed("#embed", {
+ const pinboardEmbed = new PinboardEmbed("#embed", {
     frameParams: {
         width: 1280,
         height: 720
     },
     disabledActions: [],
+    disabledActionReason: '<reason for disabling>'
     hiddenActions: [],
 });
 ```
 
-`frameParams`  
+**`frameParams`**  
 Sets the `width` and `height` dimensions to render the iframe containing the visualization.
 
-`disabledActions` *optional*  
-*String*. Menu items from the list of actions to be disabled on the visualization page.
+**`disabledActions`** *optional*  
+*Array of string*. Menu items from the list of actions to be disabled on the visualization page.
 
-For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), add `editTitle` to the `disabledActions` attribute.
+For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `editTitle` string in the `disabledActions` attribute.
+```javascript
+disabledActions: Action.editTitle
+```
+**`hiddenActions`** *optional*  
+*Array of string*. Menu items from the list of actions to be hidden on the visualization page.
 
-`hiddenActions` *optional*  
-*String*. Menu items from the list of actions to be hidden on the visualization page.
-
-For example, to hide **Download As PDF** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), add `downloadAsPdf` to the `hiddenActions` attribute.
-
-`disabledActionReason` *optional*  
+For example, to hide **Download As PDF** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `downloadAsPdf` string in the `hiddenActions` attribute.
+```javascript
+hiddenActions: Action.downloadAsPdf
+```
+**`disabledActionReason`** *optional*  
 *String*. Reason for disabling an action on the visualizations page.
+
+For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
 ## Render the embedded visualization
 
 Construct the URL for the embedded visualization and render the embedded content:
 
 ``` javaScript
-  pinboardEmbed.render({
-        pinboardId,
-        vizId,
-        runtimeFilters,
-    }: PinboardRenderOptions): PinboardEmbed {
-        super.render();
-
-        const src = this.getIFrameSrc(pinboardId, vizId, runtimeFilters);
-        this.renderV1Embed(src);
-
-        return this;
-    }
+pinboardEmbed.render({
+  pinboardId: '<%=pinboardGUID%>',
+  vizId: '<%=vizGUID%>'
+  runtimeFilters: []
+});
 ```
 
-`vizId`  
+**`vizId`**  
 *String*. The Global Unique Identifier (GUID) of the visualization.
 
-`pinboardId` *optional*  
+**`pinboardId`**  
 *String*. The GUID of the pinboard to which the visualization is pinned.
 
-`runtimeFilters` *optional*  
+**`runtimeFilters`** *optional*  
 Runtime filters to be applied when the embedded visualization loads.
 
 Runtime filters provide the ability to filter data at the time of retrieval. Runtime filters allow you to apply a filter to a visualization by passing filter specifications in the URL query parameters.
 
-For example, to sort values equal to `red` in the `Color` column for a visualization, you can pass the runtime filter in the URL query parameters as shown here:
+For example, to sort values equal to `red` in the `Color` column for a visualization, you can pass the Runtime Filters in the URL query parameters as shown here:
 
-    http://<thoughtspot_server>:<port>/
-    ?col1=Color&op1=EQ>&val1=red#/embed/viz/<pinboard-id>/<viz_id>
+```javascript
+  runtimeFilters: [{
+  columnName: 'color',
+  operator: RuntimeFilterOp.EQ,
+  values: [ 'red' ]
+  }]
 
+```
 Runtime filters have several operators you can use to filter your embedded visualizations.
 
 | Operator      | Description                           | Number of Values |
@@ -144,15 +135,15 @@ Runtime filters have several operators you can use to filter your embedded visua
 | `BW_INC`      | between inclusive                     | 2                |
 | `BW`          | between non-inclusive                 | 2                |
 
+For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
+
 ## Subscribe to events
 
 Register event handlers to subscribe to events triggered by the embedded visualizations:
 
 ``` javascript
-  //register event listeners for visualization loading event
-
-  pinboardEmbed.on("init", showLoader)
-  pinboardEmbed.on("load", hideLoader)
+  pinboardEmbed.on(EventType.init, showLoader)
+  pinboardEmbed.on(EventType.load, hideLoader)
 ```
 
 ## Test the embedded workflow
@@ -187,7 +178,7 @@ const pinboardEmbed = new PinboardEmbed(
     });
 
 pinboardEmbed.render({
-    pinboardId: '<%=pinboardGUID%>',
-    vizId: '<%=vizGUID%>'
+    pinboardId: '6294b4fc-c289-412a-b458-073fcf6e4516',
+    vizId: '28b73b4a-1341-4535-ab71-f76b6fe7bf92'
 });
 ```

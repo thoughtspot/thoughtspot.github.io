@@ -1,7 +1,7 @@
 ---
 title: ["ThoughtSpot Cloud Release Notes"]
 toc: false
-last_updated: 1/13/2021
+last_updated: 3/9/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -40,9 +40,10 @@ The ThoughtSpot application integration involves several workflows that require 
 
 |  User Role| Purpose|                                                                           
 |------------------------|--------------------------------|
-| ThoughtSpot admin | ThoughtSpot administrator privileges to define the authentication workflow and create user groups. Access control in ThoughtSpot is managed through the users and groups that are stored locally on ThoughtSpot, even if the users are authenticated using SSO or Trusted Authentication. To provide access to content or system privileges, admin users must create users and groups in ThoughtSpot. For more information, see [Managing Users]({{ site.baseurl }}/admin/ts-cloud/users.html) and [Managing groups]({{ site.baseurl }}/admin/ts-cloud/groups.html).|                                                                     
-| Host application admin | Admin privileges to modify the interfaces of your host application. For example, configuring SAML SSO authentication support on your IdP may require admin privileges. |
-| Developer  | Application developers with privileges to integrate ThoughtSpot components into a host application. Developer users can also configure custom actions to the embedded visualizations and pinboards.|
+| ThoughtSpot admin | ThoughtSpot administrator privileges to define the authentication workflow and create user groups. Access control in ThoughtSpot is managed through the users and groups that are stored locally on ThoughtSpot, even if the users are authenticated using SSO or Trusted Authentication. To provide access to content or system privileges, admin users must create users and groups in ThoughtSpot. For more information, see [Managing Users]({{ site.baseurl }}/admin/ts-cloud/users.html) and [Managing groups]({{ site.baseurl }}/admin/ts-cloud/groups.html).|                                                                 
+| Developer    | Application developers with privileges to integrate ThoughtSpot components into a host application. Developer users can also configure custom actions to the embedded visualizations and pinboards.  |   
+| Host application admin | Admin privileges to modify the interfaces of your host application. For example, to embed ThoughtSpot components in a business application or web page, you may require edit access to the host application. |
+
 
 ## Choose an authentication method
 

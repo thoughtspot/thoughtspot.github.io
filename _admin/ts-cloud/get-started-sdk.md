@@ -15,11 +15,9 @@ This section lists the tasks you need to complete before embedding ThoughtSpot c
 
     ThoughtSpot supports SAML SSO and trusted authentication services.
 
--   Verify if CORS is enabled.
+-  Verify if your host application domain is [whitelisted for CORS and CSP]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
 
 -   Verify if the same-site cookie setting is set to `none`.
-
--   Verify if your host application domain is whitelisted for CORS and CSP.
 
 -   If you want to rebrand and white-label the embedded content or add custom actions to the embedded visualizations, you will require access to SpotDev. Make sure you have administrator or developer privileges to access the **Customizations** menu in the **SpotDev** tab.
 
@@ -39,20 +37,13 @@ To install the SDK, run the following command at the command line:
 npm install @thoughtspot/embed-sdk
 ```
 
-## Import the JavaScript library
-
-In your .html page, include the JavaScript file in the `<script>` tag under `<head>`:
-
-``` html
-<script type="text/javascript" src="<file-location>/<file-name>.js"></script>
-```
-
 ## Import the embed package
 
 Based on integration requirements, import any of the following embed packages and build your code.
 
--   [SearchEmbed]({{ site.baseurl }}/admin/ts-cloud/embed-search.html)
-
--   [PinboardEmbed]({{ site.baseurl }}/admin/ts-cloud/embed-pinboard-sdk.html)
-
--   [AppEmbed]({{ site.baseurl }}/admin/ts-cloud/full-app-embed.html)
+- **SearchEmbed**  
+  To [embed the ThoughtSpot search]({{ site.baseurl }}/admin/ts-cloud/embed-search.html) function.
+- **PinboardEmbed**    
+  To embed a ThoughtSpot [visualization]({{ site.baseurl }}/admin/ts-cloud/embed-a-visualization.html) or [pinboard]({{ site.baseurl }}/admin/ts-cloud/embed-pinboard-sdk.html).
+- **AppEmbed**   
+  To embed the [full ThoughtSpot application]({{ site.baseurl }}/admin/ts-cloud/full-app-embed.html).

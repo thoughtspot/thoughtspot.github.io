@@ -44,7 +44,7 @@ To enable CORS, follow these steps:
 ## Configure content security settings
 
 To prevent cross-site scripting attacks, ThoughtSpot recommends that you configure content security settings.
-To allow only trusted domains, you can add a list of domains for CSP whitelisting on the SpotDev **Settings** page.
+To allow only trusted domains, you must add the host application domain and other trusted domains to the CSP whitelist on the SpotDev **Settings** page.
 
 ## Enable same-site access
 
