@@ -5,7 +5,7 @@ last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Runtime filters allow you to apply filters to the data returned by the APIs, or the visualizations and pinboard you’re embedding. 
+Runtime filters allow you to apply filters to the data returned by the APIs, or the visualizations and pinboard you’re embedding.
 
 ## Capabilities of Runtime Filters
 
@@ -13,6 +13,18 @@ Runtime Filters provide ability to filter data at the time of retrieval using
 [Embedding]({{ site.baseurl }}/admin/ts-cloud/visual-embed-sdk.html) or the [REST API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html). This is done by
 providing filter information through the URL query parameters.
 
+This example shows how to define RuntimeFilter parameters when rendering a visualization or pinboard using the Visual Embed SDK. Here, the RuntimeFilter is operating on the `Revenue` column and will return values equal to `100000`.
+```javascript
+pinboardEmbed.render({
+    pinboardId: '133e6c5f-e522-41a0-b0ad-b9c3b066e276',
+    vizId: '28b73b4a-1341-4535-ab71-f76b6fe7bf92',
+      runtimeFilters: [{
+      columnName: 'Revenue',
+      operator: EQ,
+      values: [ 100000 ]
+      }]
+  });
+```
 This example shows the URL to access a pinboard with a filter. Here the Runtime
 Filter is operating on the column `Color` and will only return values that are equal (EQ) to "red".
 

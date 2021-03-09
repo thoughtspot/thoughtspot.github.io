@@ -8,26 +8,12 @@ permalink: /:collection/:path.html
 
 This page explains, through an example, how to embed a ThoughtSpot Pinboard in your Web page, portal, or application.
 
-## Import the JavaScript library
-
-In your .html page, include the JavaScript file in the `<script>` tag under `<head>`:
-
-``` javascript
-<script type="text/javascript" src="<file-location>/<file-name>.js"></script>
-```
-
 ## Import the PinboardEmbed package
 
 Import the pinboard SDK library to your application environment:
 
 ``` javascript
 import { PinboardEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
-```
-
-## Import styles
-
-``` javascript
-import "./styles.css"
 ```
 
 ## Add the embed domain
@@ -42,14 +28,14 @@ To allow your client application to connect to ThoughtSpot:
     init
         ({
             thoughtSpotHost:"https://<hostname>:<port>",
-            authType: "SSO"
+            authType: AuthType.SSO,
         });
     ```
 
-    `thoughtSpotHost`   
+    **`thoughtSpotHost`**   
     *String*.  Hostname or IP address of the ThoughtSpot application.
 
-    `authType`    
+    **`authType`**    
     *String*. Authentication type. Valid values are:
 
     - `AuthServer`  
@@ -66,70 +52,67 @@ To allow your client application to connect to ThoughtSpot:
 ## Construct the embed content
 
 ``` javaScript
- const embed = new PinboardEmbed("#embed", {
+ const pinboardEmbed = new PinboardEmbed("#embed", {
     frameParams: {
         width: 1280,
         height: 720
     },
     disabledActions: [],
+    disabledActionReason: '<reason for disabling>'
     hiddenActions: [],
 });
 ```
+**`frameParams`**  
+Sets the `width` and `height` dimensions to render the iframe containing the visualization.
 
-`frameParams`  
-Sets the `width` and `height` dimensions to render the iframe containing the pinboard.
+**`disabledActions`** *optional*  
+*Array of string*. Menu items from the list of actions to be disabled on the visualization page.
 
-`fullHeight`  
-*Boolean*. Sets the pinboard page to full height.
+For example, to disable the **Present** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `present` string in the `disabledActions` attribute.
+```javascript
+disabledActions: Action.present
+```
+**`hiddenActions`** *optional*  
+*Array of string*. Menu items from the list of actions to be hidden on the visualization page.
 
-`disabledActions`  
-*String*. Menu items from the list of actions to be disabled on the Pinboards page.
+For example, to hide **Add filters** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `addFilter` string in the `hiddenActions` attribute.
+```javascript
+hiddenActions: Action.addFilter
+```
+**`disabledActionReason`** *optional*  
+*String*. Reason for disabling an action on the visualizations page.
 
-For example, to disable the **Present** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png), add `present` to the `disabledActions` attribute.
-
-`hiddenActions`  
-*String*. Menu items from the list of actions to be hidden on the Pinboards page.
-
-For example, to hide **Add filters** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png), add `Add filters` to the `hiddenActions` attribute.
-
-`disabledActionReason`  
-*String*. Reason for disabling an action on the Pinboards page.
+For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
 ## Render the embedded pinboard
 
 Construct the URL for the embedded pinboard and render the embedded content:
 
 ``` javaScript
-  pinboardEmbed.render({
-        pinboardId,
-        vizId,
-        runtimeFilters,
-    }: PinboardRenderOptions): PinboardEmbed {
-        super.render();
-
-        const src = this.getIFrameSrc(pinboardId, vizId, runtimeFilters);
-        this.renderV1Embed(src);
-
-        return this;
-    }
+    pinboardEmbed.render({
+    pinboardId: '<%=pinboardGUID%>',
+    runtimeFilters: []
+  });
 ```
 
-`pinboardId`  
+**`pinboardId`**  
 *String*. The GUID of the pinboard.
 
-`vizId` *optional*  
-*String*. The Global Unique Identifier (GUID) of the visualizations added to the pinboard.
-
-`runtimeFilters` *optional*  
-Runtime filters to be applied when the Pinboard page loads.
+**`runtimeFilters`** *optional*  
+Runtime filters to be applied on a pinboard visualization when the page loads.
 
 Runtime filters provide the ability to filter data at the time of retrieval. Runtime filters allow you to apply a filter to a visualization in a pinboard and pass filter specifications in the URL query parameters.
 
-For example, to sort values equal to `red` in the `Color` column for a visualization in a pinboard, you can pass the runtime filter in the URL query parameters as shown here:
+For example, to sort values equal to `red` in the `Color` column for a visualization, you can pass the Runtime Filters in the URL query parameters as shown here:
 
-    http://<thoughtspot_server>:<port>/
-    ?col1=Color&op1=EQ>&val1=red#/embed/pinboard/<pinboard-id>/<viz-id>
+```javascript
+  runtimeFilters: [{
+  columnName: 'color',
+  operator: RuntimeFilterOp.EQ,
+  values: [ 'red' ]
+  }]
 
+```
 Runtime filters have several operators for filtering your embedded visualizations.
 
 | Operator      | Description                           | Number of Values |
@@ -153,10 +136,10 @@ Runtime filters have several operators for filtering your embedded visualization
 Register event handlers and subscribe to events triggered by the embedded pinboard:
 
 ``` javascript
-  //register event listeners for initializing and loading pinboards
 
-  pinboardEmbed.on("init", showLoader)
-  pinboardEmbed.on("load", hideLoader)
+  pinboardEmbed.on(EventType.init, showLoader)
+  pinboardEmbed.on(EventType.load, hideLoader)
+
 ```
 
 ## Test the embedded workflow
@@ -191,7 +174,7 @@ const pinboardEmbed = new PinboardEmbed(
     });
 
 pinboardEmbed.render({
-    pinboardId: '<%=pinboardGUID%>',
-    vizId: '<%=vizGUID%>'
+    pinboardId: 'f4a4e205-3b43-4b77-8ec0-8723da49ce1d',
+
 });
 ```

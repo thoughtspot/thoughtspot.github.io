@@ -5,7 +5,7 @@ summary: "ThoughtSpot SpotDev portal is a developers' playground for exploring A
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughtSpot SpotDev portal allows you to explore the ThoughtSpot APIs and developer tools, and build your web applications with ThoughtSpot content.
+The ThoughtSpot SpotDev portal <span class="label label-beta">Beta</span> allows you to explore the ThoughtSpot APIs and developer tools, and build your web applications with ThoughtSpot content.
 The SpotDev portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features available for integration.
 
 ## Access SpotDev portal
@@ -67,23 +67,40 @@ To explore the search embed API and preview the code:
     **Collapse data panel**  
     Minimizes the data panel on the left navigation bar.
 
-    **Hide data panel**  
-    Hides the default data source. You can use your worksheet as a data source from which your users can draw search results.
+    **Hide data panel**
+    Hides the default data panel.
 
     **Hide chart or table**  
     Hides the visualizations displayed as search results.
 
     **Modify available actions**  
-    Defines a list of actions to be disabled on the search answers page.
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar in the search answer page.
+
+    For example:
+
+    -   To disable the **Replay Search** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `replaySearch`:
+    ````
+     disabledActions: ['replaySearch']
+    ````
+    -   To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
+
+    -   To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
+    ````
+     hiddenActions: ['replaySearch']
+    ````
+    For a complete list of action menu items and the corresponding text strings to use for disabling or hiding these menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
     **Enable Search Assist**  
     Enables the Search Assist feature that helps users with simple search scenarios. Search Assist allows you to create a custom onboarding experience for your users by demonstrating how to search data from the example queries created on your worksheet.
 
     **Add search tokens**  
-    Sets search tokens in the search bar to programmatically construct a search query for your users.
+    Enables constructing a search query using search tokens.
 
-    **Set runtime filters**  
-    Applies filters on search data by passing filter criteria as parameters in the URL.
+    In the following example, to fetch the total revenue data by shipping mode, the `searchQuery` string uses the [Column]({{ site.baseurl }}/reference/api/search-data-api.html#Column) search token:
+    ````
+    searchQuery: "[Revenue] by [Shipmode]"
+    ````
+    For more information on the search tokens and query string components, see [Components of a search query]({{ site.baseurl }}/reference/api/search-data-api.html#components).
 
 4.  Click **Run**.
 
@@ -97,11 +114,29 @@ To explore the API for embedding visualizations:
 
 3.  If required, enable the **User experience customization** settings.
 
-    **Modify available actions**  
-    Defines a list of actions to be disabled on the visualizations page.
+    **Modify available actions**   
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png) on the visualizations page.
+
+    For example:
+
+    -   To disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `download`:
+    ````
+     disabledActions: ['download']
+     ````
+    -   To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
+
+    -   To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
+    ````
+     hiddenActions: ['download']
+    ````
+    For a complete list of action menu items and the corresponding text strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
     **Set runtime filters**  
-    Applies filters on visualization data by passing filter criteria as parameters in the URL.
+    Applies Runtime Filters to a visualization.  
+    Runtime filters provide the ability to filter data at the time of retrieval.   
+    To apply Runtime Filters, pass the `columnName`, `operator`, and `value` parameters in the `runtimeFilters` attribute.
+
+    For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
 
 4.  Click **Run**.
 
@@ -115,17 +150,29 @@ To explore the Pinboard API:
 
 3.  If required, enable the **User experience customization** settings.
 
-    **Hide title**  
-    Hides the title and the description of the pinboard.
-
-    **Hide filter bar**  
-    Hides the pinboard filters.
-
     **Modify available actions**  
-    Defines a list of actions to be disabled on the **Pinboards** page, and each of the visualizations in the **Pinboards** page.
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page.
 
-    **Set runtime filters**  
-    Applies filters on pinboard data by passing filter criteria as parameters in the URL.
+    For example:
+
+   - To disable the **Download As PDF** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `downloadAsPdf`.
+     ````
+     disabledActions: ['downloadAsPdf']
+     ````
+   - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
+
+   - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
+     ````
+    hiddenActions: ['downloadAsPdf']
+    ````
+    For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
+
+    **Set runtime filters**         
+    Applies Runtime Filters to a visualization in a pinboard.             
+    Runtime filters provide the ability to filter data at the time of retrieval.         
+    To apply Runtime Filters, pass the `columnName`, `operator`, and `value` parameters in the `runtimeFilters` attribute.
+
+    For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
 
 4.  Click **Run**.
 
@@ -142,13 +189,10 @@ To explore the API for embedding full application:
     **Hide navigation bar**  
     Hides the ThoughtSpot top navigation bar.
 
-    **Set runtime filters**  
-    Applies filters on pinboard and visualization data by passing filter criteria as parameters in the URL.
-
 4.  Click **Run**.
 
 ## Customize embedded content
 
 -   To [white-label and rebrand the embedded ThoughtSpot content]({{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html), click **Customizations** > **Styles**.
--   To [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html) to the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on visualizations and pinboards, go to **Customizations** > **Actions**.
+-   To [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html) to the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the  visualization and pinboards page, go to **Customizations** > **Actions**.
 -   If you are a ThoughtSpot admin user and you want to [configure security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html), such as enabling CORS, setting up trusted authentication service, or whitelisting client application domains, go to **Customizations** > **Settings**.

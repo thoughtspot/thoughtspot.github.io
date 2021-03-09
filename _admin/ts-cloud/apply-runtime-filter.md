@@ -9,10 +9,10 @@ Runtime filters allow you to apply filters to the data returned by the APIs or t
 
 The filters are specified in the request URL as parameters. Before you can use runtime filter(s), you need to do these procedures:
 
-1.  Embed a [visualization]({{ site.baseurl }}/admin/ts-cloud/embed-a-visualization.html) and [pinboard]({{ site.baseurl }}/admin/ts-cloud/embed-pinboard-sdk.html) using the Visual Embed SDK and authenticate to ThoughtSpot.
+1.  Embed a [visualization]({{ site.baseurl }}/admin/ts-cloud/embed-a-visualization.html) and [pinboard]({{ site.baseurl }}/admin/ts-cloud/embed-pinboard-sdk.html) using the Visual Embed SDK and authenticate to ThoughtSpot. 
 2.  Use the [Data API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html)to [retrieve a search answer or pinboard]({{ site.baseurl }}/admin/ts-cloud/embed-rest-apis.html).
 
-Now you are ready to add a runtime filter to your API call or the  embedded object:
+To add a runtime filter to your API call or the  embedded object:
 
 1. Construct the URL for embedding the visualization or making a REST API call.
 2. Paste the URL into a text editor.

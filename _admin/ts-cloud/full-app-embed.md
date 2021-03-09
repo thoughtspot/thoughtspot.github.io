@@ -34,26 +34,12 @@ In a fully embedded application instance, users  cannot perform the following ta
 ## Embedding workflow
 Complete the following steps to embed the full ThoughtSpot application.
 
-### Import the JavaScript library
-
-In your .html page, include the JavaScript file in the `<script>` tag under `<head>`:
-
-``` javascript
-<script type="text/javascript" src="<file-location>/<file-name>.js"></script>
-```
-
 ### Import the AppEmbed package
 
 Import the AppEmbed SDK library to your application environment:
 
 ``` javascript
 import { AppEmbed, Page, AuthType, init } from '@thoughtspot/embed-sdk';
-```
-
-### Import styles
-
-``` javascript
-import "./styles.css"
 ```
 
 ### Add the embed domain
@@ -68,14 +54,14 @@ To allow your client application to connect to ThoughtSpot:
     init
         ({
             thoughtSpotHost:"https://<hostname>:<port>",
-            authType: "SSO"
+            authType: AuthType.SSO,
         });
     ```
 
-    `thoughtSpotHost`   
+    **`thoughtSpotHost`**   
     *String*.  Hostname or IP address of the ThoughtSpot application.
 
-    `authType`    
+    **`authType`**    
     *String*. Authentication type. Valid values are:
 
     - `AuthServer`  
@@ -103,30 +89,24 @@ const appEmbed = new AppEmbed(
     });
 ```
 
-`frameParams`  
-Sets the `width` and `height` dimensions to render the iframe in the web browser.
+**`frameParams`**  
+Sets the `width` and `height` dimensions to render the pages in the web application.
+
+**`showPrimaryNavbar`**  
+*Boolean*. Shows or hides the ThoughtSpot navigation bar.
 
 ### Construct the URL and render the application
 
-Construct the URL of the embedded ThoughtSpot application to load in the iframe.
+Construct the URL of the embedded ThoughtSpot application to load within the web page.
 Render the embedded content and pass the `pageID` parameter for setting a page as an active tab when the application loads.
 
 ``` javascript
-appEmbed.render({ pageId }: AppRenderOptions): AppEmbed {
-        super.render();
-
-        const pageRoute = this.getPageRoute(pageId);
-        const src = this.getIFrameSrc(pageRoute);
-        this.renderV1Embed(src);
-
-        return this;
-
-        appEmbed.render({
-    Page.Data
-});
+    appEmbed.render({
+      Page.Data
+ });
 ```
 
-`pageId`  
+**`pageId`**  
 *String*. The unique identifier for the ThoughtSpot application page. The following values are valid.
 
 - `Page.Search`  
@@ -150,17 +130,9 @@ appEmbed.render({ pageId }: AppRenderOptions): AppEmbed {
 Register event handlers to subscribe to events triggered by the ThoughtSpot Search function:
 
 ``` javascript
- appEmbed.on("init", showLoader)
- appEmbed.on("load", hideLoader)
+ appEmbed.on(EventType.init, showLoader)
+ appEmbed.on(EventType.load, hideLoader)
 
-// Functions to show or hide a loader while the iframe loads.
- function showLoader() {
-    document.getElementById("loader").style.display = "block";
-    }
-
- function hideLoader() {
-    document.getElementById("loader").style.display = "none";
-    }
 ```
 
 ### Test the embedded workflow
