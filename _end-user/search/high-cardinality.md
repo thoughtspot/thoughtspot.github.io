@@ -12,7 +12,7 @@ ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly 
 
 ![High cardinality table example]({{ site.baseurl }}/images/cardinality-table-rows.png "High cardinality table example")
 
-Column summaries are not available for tables with more than 1000 rows.
+Column summaries are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ## High cardinality charts
 
