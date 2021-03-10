@@ -58,7 +58,7 @@ The **Playground** allows developers to preview the code, test it, and familiari
 
 To explore the search embed API and preview the code:
 
-1.  Go to **Playground** &gt; **Search**.
+1.  Go to **Playground** > **Search**.
 
 2.  Select a data source or a saved search answer.
 
@@ -78,16 +78,16 @@ To explore the search embed API and preview the code:
 
     For example:
 
-    -   To disable the **Replay Search** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `replaySearch`:
-    ````
-     disabledActions: ['replaySearch']
-    ````
-    -   To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
+    - To disable the **Replay Search** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `replaySearch`:
+      ````
+        disabledActions: ['replaySearch']
+      ````
+    - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
 
-    -   To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
-    ````
-     hiddenActions: ['replaySearch']
-    ````
+    - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
+      ````
+        hiddenActions: ['replaySearch']
+      ````
     For a complete list of action menu items and the corresponding text strings to use for disabling or hiding these menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
     **Enable Search Assist**  
@@ -96,9 +96,9 @@ To explore the search embed API and preview the code:
     **Add search tokens**  
     Enables constructing a search query using search tokens.
 
-    In the following example, to fetch the total revenue data by shipping mode, the `searchQuery` string uses the [Column]({{ site.baseurl }}/reference/api/search-data-api.html#Column) search token:
+    In the following example, to fetch the total revenue data by shipping mode, the `searchQuery` string uses the [Column]({{ site.baseurl }}/reference/api/search-data-api.html#column) search token:
     ````
-    searchQuery: "[Revenue] by [Shipmode]"
+      searchQuery: "[Revenue] by [Shipmode]"
     ````
     For more information on the search tokens and query string components, see [Components of a search query]({{ site.baseurl }}/reference/api/search-data-api.html#components).
 
@@ -119,25 +119,24 @@ To explore the API for embedding visualizations:
 
     For example:
 
-    -   To disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `download`:
-    ````
-     disabledActions: ['download']
-     ````
-    -   To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
+    - To disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `download`:
+      ````
+        disabledActions: ['download']
+      ````
+    - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
 
-    -   To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
-    ````
-     hiddenActions: ['download']
-    ````
-    For a complete list of action menu items and the corresponding text strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
+    - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
+      ````
+        hiddenActions: ['download']
+      ````     
+     For a complete list of action menu items and the corresponding text strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
-    **Set runtime filters**  
+    **Set runtime filters**     
     Applies Runtime Filters to a visualization.  
     Runtime filters provide the ability to filter data at the time of retrieval.   
     To apply Runtime Filters, pass the `columnName`, `operator`, and `value` parameters in the `runtimeFilters` attribute.
 
-    For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
-
+    For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filter.html).
 4.  Click **Run**.
 
 ### Pinboard
@@ -153,28 +152,28 @@ To explore the Pinboard API:
     **Modify available actions**  
     Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page.
 
-    For example:
-
-   - To disable the **Download As PDF** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `downloadAsPdf`.
-     ````
-     disabledActions: ['downloadAsPdf']
-     ````
-   - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
-
-   - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
-     ````
-    hiddenActions: ['downloadAsPdf']
+    For example:  
+    - To disable the **Download As PDF** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `downloadAsPdf`:                 
     ````
+      disabledActions: ['downloadAsPdf']
+    ````
+    - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
+    - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
+    ````
+      hiddenActions: ['downloadAsPdf']
+    ````
+
     For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
-    **Set runtime filters**         
+    **Set runtime filters**   
+
     Applies Runtime Filters to a visualization in a pinboard.             
     Runtime filters provide the ability to filter data at the time of retrieval.         
     To apply Runtime Filters, pass the `columnName`, `operator`, and `value` parameters in the `runtimeFilters` attribute.
 
-    For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
+    For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filter.html).
 
-4.  Click **Run**.
+4. Click **Run**.
 
 ### Full Application
 

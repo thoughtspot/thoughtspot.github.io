@@ -73,7 +73,7 @@ Create an instance of the SearchEmbed object and customize your search page view
 **`frameParams`**
 Sets the `width` and `height` dimensions to render the iframe in the web browser.
 
-**`collapseDataSources`** ***optional***  
+**`collapseDataSources`** *optional*
 *Boolean*. When set to true, collapses the list of data sources on the Data Source panel.
 
 **`hideDataSources`** *optional*  
@@ -125,12 +125,12 @@ Render the embedded search and pass parameters such as data source ID.
 **`searchQuery`**  
 *String*. The search query string to use when the application loads. You can use the following types of search tokens to construct a search query:
 
--   [Column]({{ site.baseurl }}/reference/api/search-data-api.html#Column)
--   [Operator]({{ site.baseurl }}/reference/api/search-data-api.html#Operator)
--   [Value]({{ site.baseurl }}/reference/api/search-data-api.html#Value)
--   [Date Bucket]({{ site.baseurl }}/reference/api/search-data-api.html#Date-Bucket)
--   [Keyword]({{ site.baseurl }}/reference/api/search-data-api.html#Keyword)
--   [Calendar]({{ site.baseurl }}/reference/api/search-data-api.html#Calendar)
+-   [Column]({{ site.baseurl }}/reference/api/search-data-api.html#column)
+-   [Operator]({{ site.baseurl }}/reference/api/search-data-api.html#operator)
+-   [Value]({{ site.baseurl }}/reference/api/search-data-api.html#value)
+-   [Date Bucket]({{ site.baseurl }}/reference/api/search-data-api.html#date-bucket)
+-   [Keyword]({{ site.baseurl }}/reference/api/search-data-api.html#keyword)
+-   [Calendar]({{ site.baseurl }}/reference/api/search-data-api.html#calendar)
 
 For example, to fetch revenue data by shipping mode, you can use the following search query string:
 ````javascript
