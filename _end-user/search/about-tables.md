@@ -54,7 +54,7 @@ table in individual boxes.
  ![]({{ site.baseurl }}/images/chartconfig-headlines.png "Headlines at the bottom of a table")
 
 ThoughtSpot automatically creates up to 20 headlines for each table. Your
-ThoughtSpot configuration can be changed to accommodate more if needed.
+ThoughtSpot configuration can be changed to accommodate more if needed. Headlines are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 You can modify how you'd like the value to be displayed by clicking the dropdown
 on a headline and selecting a different type of aggregation. The usual available
