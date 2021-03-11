@@ -124,6 +124,8 @@ For columns with numeric information, you can turn on **column summaries** that 
 
     ![Enable or disable column summaries]({{ site.baseurl }}/images/table-config-column-summary.png "Enable or disable column summaries")
 
+Column summaries are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
 ## About headlines (summary information)
 
 Headlines display summary information of a table result. Headlines contain
@@ -132,7 +134,7 @@ table in individual boxes.
 
  ![]({{ site.baseurl }}/images/chartconfig-headlines.png "Headlines at the bottom of a table")
 
-ThoughtSpot automatically creates up to 20 headlines for each table. Your
+ThoughtSpot automatically creates up to 10 headlines for each table. Your
 ThoughtSpot configuration can be changed to accommodate more if needed. Headlines are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 You can modify how you'd like the value to be displayed by clicking the dropdown
