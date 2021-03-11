@@ -53,7 +53,7 @@ table in individual boxes.
 
  ![]({{ site.baseurl }}/images/chartconfig-headlines.png "Headlines at the bottom of a table")
 
-ThoughtSpot automatically creates up to 20 headlines for each table. Your
+ThoughtSpot automatically creates up to 10 headlines for each table. Your
 ThoughtSpot configuration can be changed to accommodate more if needed. Headlines are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 You can modify how you'd like the value to be displayed by clicking the dropdown
@@ -68,6 +68,8 @@ To add a headline to a pinboard, hover over the headline and click the **Pin** i
 
  You can decide whether or not to display headlines in your table results. To
  customize headlines, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Customize Summaries**.
+
+Column summaries are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ### Table aggregate headline
 
