@@ -1,7 +1,7 @@
 ---
 title: [VMware configuration overview]
 summary: "You can host ThoughtSpot on VMware."
-last_updated: 5/21/2020
+last_updated: 3/11/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -49,13 +49,13 @@ When choosing an instance type, ensure that it uses Intel CPUs.
 	    <tr>
 	      <td>100 GB</td>
 	      <td>32/256 GB</td>
-	      <td>2X400 GB</td>
+	      <td>2x400 GB</td>
 				<td>200 GB for each node</td>
         </tr>
 	    <tr>
 	      <td>256 GB</td>
 	      <td>72/512 GB</td>
-	      <td>3X1 TB</td>
+	      <td>3x2 TB</td>
 				<td>200 GB for each node</td>
         </tr>
 		<tr>
