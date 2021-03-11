@@ -87,8 +87,7 @@ for a sandbox environment but is insufficient for a production environment. You 
 ## Add hard disks to the VM
 
 For most deployments, ThoughtSpot requires you to have three 2TB HDFS
-disks on HDD (3 x 2TB). If you expect your **Per VM user data capacity** to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information. For this use case, follow these same steps to create the
-additional, larger capacity disks.
+disks on HDD (3 x 2TB). If you expect your user data capacity for each VM to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information. Follow these steps to create the required 3 2TB hard disks.
 
 1. Edit the VM you just created.
 
@@ -135,7 +134,7 @@ additional, larger capacity disks.
    ![]({{ site.baseurl }}/images/vmware-add-disk-2-tb.png "New hard disk")
 
 5. Save your changes.
-6. Repeat steps 1-5 to create more hard disks. ThoughtSpot requires 3 hard disks for most environments. If you expect your **Per VM user data capacity** to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information.
+6. Repeat steps 1-5 to create more hard disks. ThoughtSpot requires 3 hard disks for most environments. If you expect your user data capacity for each VM to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information.
 7. Power on the VM.
 8. After the VM is online, run the following command to prepare the HDFS disks:
 
