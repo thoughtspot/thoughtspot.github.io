@@ -69,8 +69,6 @@ To add a headline to a pinboard, hover over the headline and click the **Pin** i
  You can decide whether or not to display headlines in your table results. To
  customize headlines, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Customize Summaries**.
 
-Column summaries are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
-
 ### Table aggregate headline
 
  The Table Aggregate headline option is available when an aggregate function is used either through a formula or a search bar query like average of a measure. It recalculates the function for the entire table. In such cases, Table Aggregate is shown by default in a headline under the table, instead of the “Avg” option, which does a second level of aggregation on top of the existing aggregation.
