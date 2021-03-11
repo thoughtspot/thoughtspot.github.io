@@ -8,11 +8,11 @@ permalink: /:collection/:path.html
 
 ## High cardinality tables
 
-ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly how many rows your table displays. Here, the table has 2318 rows:
+ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly how many rows your table displays. The new default maximum number of rows is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of rows on a table, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+
+Here, the table has 2318 rows:
 
 ![High cardinality table example]({{ site.baseurl }}/images/cardinality-table-rows.png "High cardinality table example")
-
-Column summaries are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
 ## High cardinality charts
 
