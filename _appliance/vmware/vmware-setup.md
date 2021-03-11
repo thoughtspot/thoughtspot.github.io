@@ -86,12 +86,8 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 ## Add hard disks to the VM
 
-| Use Case      | HDFS Disk Requirements |
-| --------      | ---------------------- |
-| Production    | 3 x 2 TB on HDD        |
-
-For production deployments, ThoughtSpot requires you to have three 2TB HDFS
-disks on HDD (3 x 2TB). Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information. For this use case, follow these same steps to create the
+For most deployments, ThoughtSpot requires you to have three 2TB HDFS
+disks on HDD (3 x 2TB). If you expect your **Per VM user data capacity** to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information. For this use case, follow these same steps to create the
 additional, larger capacity disks.
 
 1. Edit the VM you just created.
@@ -117,7 +113,7 @@ additional, larger capacity disks.
      <th>Value</th>
     </tr>
     <tr>
-     <td>size</td>
+     <td><strong>Size</strong></td>
      <td>2 TB</td>
     </tr>
     <tr>
@@ -136,10 +132,10 @@ additional, larger capacity disks.
 
     You should see something similar to the following:
 
-   ![]({{ site.baseurl }}/images/vmware-adddisk2-1TB.png "New hard disk")
+   ![]({{ site.baseurl }}/images/vmware-add-disk-2-tb.png "New hard disk")
 
 5. Save your changes.
-6. Repeat steps 1-5 to create more hard disks. ThoughtSpot requires 3 hard disks for a production environment.
+6. Repeat steps 1-5 to create more hard disks. ThoughtSpot requires 3 hard disks for most environments. If you expect your **Per VM user data capacity** to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information.
 7. Power on the VM.
 8. After the VM is online, run the following command to prepare the HDFS disks:
 
