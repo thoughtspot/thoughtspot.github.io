@@ -124,8 +124,7 @@ For columns with numeric information, you can turn on **column summaries** that 
 
     ![Enable or disable column summaries]({{ site.baseurl }}/images/table-config-column-summary.png "Enable or disable column summaries")
 
-Column summaries are not available for tables with more than 15000 rows, unless the data comes from an [Embrace connection]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
-
+Column summaries are not available for tables with more than 1000 rows.
 
 ## About headlines (summary information)
 
