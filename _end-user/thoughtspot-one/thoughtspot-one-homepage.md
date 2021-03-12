@@ -107,6 +107,6 @@ To bulk share the objects that appear on your home page with other users and gro
 1. Select the empty boxes next to the names of the objects you would like to share.
     Alternatively, you can select each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar.
 
-2. Select **Share** ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png "sharing-icon"){: .inline}, above the list of objects.
+2. Select **Share** ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png "sharing-icon"){: .inline}, above the list of objects.
 
 {% include content/share-answersandpinboards-specify-permissions.md %}
