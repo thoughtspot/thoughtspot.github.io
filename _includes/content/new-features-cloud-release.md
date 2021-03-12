@@ -27,6 +27,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <h3><a id="mar-cloud-business-user"></a>For the Business User</h3>
 
 <dl>
+
+<dlentry id="bulk-share">
+<dt>Bulk share objects from the ThoughtSpot One home page</dt>
+<dd><p>You can now share multiple objects at a time from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html">ThoughtSpot One home page</a>.</p>
+<p>This new home page is part of ThoughtSpot One. ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
+</dlentry>
+
+
 <dlentry id="details-panel">
 <dt>Frequent metrics and attributes in the <strong>Details</strong> panel</dt>
 <dd><p>The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.</p>

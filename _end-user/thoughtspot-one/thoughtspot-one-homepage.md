@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 1/22/2021
+last_updated: 3/12/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -18,6 +18,7 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 - [Filter existing objects by favorite, author, tag, or type of object](#filter)
 - [Sort existing objects by author, views, or most recently viewed](#sort)
 - [Bulk mark objects as favorites](#bulk-favorite)
+- [Bulk share objects with other users and groups](#bulk-share)
 
 ![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
 
@@ -98,3 +99,14 @@ These changes do not persist across sessions. If you log out and log back in, th
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
 To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the row of shortcuts. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
+
+{: id="bulk-share"}
+## Bulk share objects with other users and groups
+To bulk share the objects that appear on your home page with other users and groups, follow these steps:
+
+1. Select the empty boxes next to the names of the objects you would like to share.
+    Alternatively, you can select each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar.
+
+2. Select **Share** ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png "sharing-icon"){: .inline}, above the list of objects.
+
+{% include content/share-answersandpinboards-specify-permissions.md %}
