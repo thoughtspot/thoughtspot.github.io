@@ -1,5 +1,3 @@
-{: id="specify-permissions"}
-## Specify permissions
 5. After you click the **Share** icon, the sharing dialog box appears.
 
     ![The sharing dialog box]({{ site.baseurl }}/images/sharing-modal.png "The sharing dialog box")
