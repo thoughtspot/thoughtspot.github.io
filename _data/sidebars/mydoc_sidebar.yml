@@ -2000,13 +2000,13 @@ entries:
         output: web,dataflowGD
         levelThreeItems:
         - title: Overview
-          url: /data-integrate/dataflow/dataflow-jdbc-db2.html
+          url: /data-integrate/dataflow/dataflow-jdbc.html
           output: web,dataflowGd
         - title: Connect
-          url: /data-integrate/dataflow/dataflow-jdbc-db2-add.html
+          url: /data-integrate/dataflow/dataflow-jdbc-add.html
           output: web,dataflowGd
         - title: Sync
-          url: /data-integrate/dataflow/dataflow-jdbc-db2-sync.html
+          url: /data-integrate/dataflow/dataflow-jdbc-sync.html
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-jdbc-reference.html
