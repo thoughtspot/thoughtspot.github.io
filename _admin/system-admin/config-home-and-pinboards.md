@@ -16,7 +16,7 @@ The Home and Favorite Pinboards Tool is a Python script that allows you to use t
 
 - Python 3
 - Mac OS X, Linux, or Windows
-- User must have **admin** privilege on the ThoughtSpot instance.
+- User must be assigned to **Administrator** group on the ThoughtSpot instance.
 
   {% include note.html content="Web APIs are not public." %}
 
