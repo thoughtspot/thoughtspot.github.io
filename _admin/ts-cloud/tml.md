@@ -41,7 +41,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
 Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
 
-{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
+{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>worksheet_guid</em>&gt;
@@ -159,7 +159,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
 Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
 
-{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
+{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>view_guid</em>&gt;
@@ -391,8 +391,6 @@ Table joins have the following limitations:
 - You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
 
-{% include note.html content="Table join functionality is in Beta; to enable it, contact ThoughtSpot Support." %}
-
 ### Generic joins
 The functionality for generic joins in TML files allows the following elements:
 * Constants: int, double, bool, date, and string
@@ -408,8 +406,6 @@ The `TML` file for Scriptable Answers has a specific syntax.
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TML file to specify conditional formatting.
-
-{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>answer_guid</em>&gt;
@@ -850,7 +846,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="joins">
     <dt>joins</dt>
     <dd><p>Contains a list of joins between the tables and Views.</p>
-    <p>If you edit the joins in the Worksheet or View TML file, you are only editing the joins for that specific Worksheet or View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it.</p>
+    <p>If you edit the joins in the Worksheet or View TML file, you are only editing the joins for that specific Worksheet or View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file.</p>
     <p>Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
