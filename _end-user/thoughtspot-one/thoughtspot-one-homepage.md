@@ -5,24 +5,7 @@ last_updated: 3/12/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-When you log into ThoughtSpot, you see the ThoughtSpot home page. It is accessible when you select **Home** or the ThoughtSpot logo from the top navigation bar.
-
-The ThoughtSpot home page allows you to access all your essential actions as a business user. From the home page, you can:
-
-- [Search across existing Answers and Pinboards](#search-existing)
-- [Search your data to create new Answers and Pinboards](#search-data)
-- [Access and create shortcuts for your most-used Answers and Pinboards](#quick-links)
-- [View objects you viewed recently](#recently-viewed)
-- [View trending Pinboards and Answers](#trending)
-- [Filter existing objects by favorite, author, tag, or type of object](#filter)
-- [Sort existing objects by author, views, or most recently viewed](#sort)
-- [Bulk mark objects as favorites](#bulk-favorite)
-- [Bulk share objects with other users and groups](#bulk-share)
-
-![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
-
-{% include note.html content="ThoughtSpot One may be off in your environment. If ThoughtSpot One is off, you do not have the option to search across existing Answers and Pinboards, and  you do not have the home page described in this article. To enable ThoughtSpot One, contact ThoughtSpot Support." %}
+{% include content/ts-one-homepage.md %}
 
 {: id="search-existing"}
 ## Search across existing Answers and Pinboards

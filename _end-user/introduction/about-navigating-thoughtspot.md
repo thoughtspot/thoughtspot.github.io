@@ -12,70 +12,9 @@ These are the different sections in ThoughtSpot:
 
 ## Home
 
-If ThoughtSpot One is on in your environment, your home page experience is different from the one described in this article. Refer to [ThoughtSpot One home page]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html) to learn more about the ThoughtSpot One home page experience.
+{% include content/ts-one-homepage.md %}
 
-The ThoughtSpot One home page looks like this:
-
-![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
-
-The home page described in this article looks like this:
-
-![Cloud home page]({{ site.baseurl }}/images/cloud-home-page.png "Cloud home page")
-
-Click the ThoughtSpot logo to go to the application home page. At the top of the
-home page you can see a search bar, and several areas that show activity in ThoughtSpot.
-
-<table>
-<colgroup>
-   <col style="width:25%" />
-   <col style="width:75%" />
-</colgroup>
-<thead class="thead" style="text-align:left;">
-   <tr>
-      <th>Label</th>
-      <th>Description</th>
-   </tr>
-</thead>
-<tbody class="tbody">
-  <tr>
-    <th>All time popular<br>Recently trending</th>
-    <td>
-    Shows all-time popular answers and pinboards, by number of views. You can
-    choose between all-time popular, or recently in the last 15 days. Small icons illustrate the type of visualization you can find when you click an item.
-    <br>
-    <img src="{{ "/images/home-trending.png "| prepend: site.baseurl  }}" />
-</td>
-  </tr>
-  <tr>
-    <th>Recently viewed</th>
-    <td>Answers and pinboards you've viewed recently.
-    <br>
-    <img src="{{ "/images/home-recently-viewed.png "| prepend: site.baseurl  }}" />
-
-</td>
-  </tr>
-  <tr>
-    <th>Recent team activity</th>
-    <td>Answers, pinboards, worksheets, and tables people in your company have created or edited recently.
-    <br>
-    <img src="{{ "/images/home-team-activity.png "| prepend: site.baseurl  }}" />
-
-</td>
-  </tr>
-  <tr>
-    <th>Did you know?</th>
-    <td>Contains auto analysis results from SpotIQ. Visible only to users that have the SpotIQ privilege.
-    <br>   
-    <img src="{{ "/images/home-spotiq.png "| prepend: site.baseurl  }}" />
-
-</td>
-  </tr>
-  </tbody>
-</table>
-
-The items shown in these areas are limited to answers, pinboards, worksheets,
-and other objects you have access to. For example, if you don't have the ability
-to use SpotIQ, that option does not appear.
+For more information, see [ThoughtSpot One home page]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html).
 
 {: id="search"}
 ## Search
