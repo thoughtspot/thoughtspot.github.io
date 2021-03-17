@@ -28,17 +28,20 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
+<dlentry id="ts-one-ga">
+<dt>ThoughtSpot One GA</dt>
+<dd>ThoughtSpot One is now available for all customers. It is on by default. See <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search Answers</a> and <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html">ThoughtSpot One home page</a> for more information.</dd>
+</dlentry>
+
 <dlentry id="bulk-share">
 <dt>Bulk share objects from the ThoughtSpot One home page</dt>
-<dd><p>You can now share multiple objects at a time from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#bulk-share">ThoughtSpot One home page</a>.</p>
-<p>This new home page is part of ThoughtSpot One. ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
+<dd>You can now share multiple objects at a time from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#bulk-share">ThoughtSpot One home page</a>.</dd>
 </dlentry>
 
 
 <dlentry id="details-panel">
 <dt>Frequent metrics and attributes in the <strong>Details</strong> panel</dt>
-<dd><p>The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.</p>
-<p>Searching across existing Answers and Pinboards is part of ThoughtSpot One. ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
+<dd>The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.</dd>
 </dlentry>
 
 </dl>
