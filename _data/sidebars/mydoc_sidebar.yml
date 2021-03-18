@@ -290,6 +290,12 @@ entries:
       - title: Help customization
         url: /admin/ts-cloud/customize-help.html
         output: web
+      - title: Enable a PrivateLink for Snowflake
+        url: /admin/ts-cloud/private-link-snowflake.html
+        output: web
+      - title: Enable a PrivateLink for Redshift
+        url: /admin/ts-cloud/private-link-redshift.html
+        output: web        
       - title: Performance tracking Pinboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
