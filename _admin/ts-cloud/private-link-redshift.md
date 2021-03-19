@@ -46,7 +46,7 @@ After completing the [prerequisites](#prerequisites), you must configure the End
 
 8. Write down the values for:
 
-* **Service name**: for example, *com.amazonaws.vpce.us-west-2.vpce-svc-00b9b06a71553a86e*
+* **Service name**: for example, *com.amazonaws.vpce.us-west-2.vpce-svc-0123456789abcdef*
 
 * **Availability zones**: for example, *us-west-2a (usw2-az1)*
 
