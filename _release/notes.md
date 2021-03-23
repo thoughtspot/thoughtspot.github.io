@@ -64,11 +64,19 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ### For the IT Ops Engineer
 
 <dl>
-<dlentry id="tbd-it-ops">
-<dt>TBD</dt>
-<dd>TBD</dd>
+<dlentry id="rhel">
+<dt>RHEL ease of installation</dt>
+<dd>This release of ThoughtSpot makes it easier to deploy ThoughtSpot on an <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL image</a>. You can now enable SELinux when deploying ThoughtSpot on RHEL. If you enable SELinux, ensure that you install the <a href="{{ site.baseurl }}/appliance/rhel/rhel-packages.html">yum</a> <code>setroubleshoot</code> package.</dd>
 </dlentry>
-</dl>  
+</dl>
+
+<dl>
+<dlentry id="oel">
+<dt>Oracle Enterprise Linux (OEL) support</dt>
+<dd>This release of ThoughtSpot introduces deployment support for Oracle Enterprise Linux. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an OEL image that your organization manages internally. ThoughtSpot certifies OEL version 7.9 on AWS, GCP, and VMware. To deploy ThoughtSpot on OEL, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL and OEL deployment guide</a>.
+</dd>
+</dlentry>
+</dl>    
 
 <!--{: id="beta-program"}
 ## Beta Programs
