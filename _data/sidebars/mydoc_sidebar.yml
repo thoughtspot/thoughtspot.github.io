@@ -1569,7 +1569,7 @@ entries:
       - title: Adding new nodes to clusters in RHEL or OEL
         url: /appliance/rhel/rhel-add-node.html
         output: web,appQs
-      - title: Packages installed with RHEL and OEL 
+      - title: Packages installed with RHEL and OEL
         url: /appliance/rhel/rhel-packages.html
         output: web,appQs
     - levelTwoTitle: Hardware appliance
@@ -1953,6 +1953,21 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-denodo-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Exadata
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-exadata.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-exadata-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-exadata-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-exadata-reference.html
           output: web,dataflowGd
       - levelThreeTitle: Google BigQuery
         output: web,dataflowGD

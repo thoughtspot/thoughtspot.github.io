@@ -58,6 +58,13 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dd>Embrace supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is still in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
 </dd>
 </dlentry>
+
+
+<dlentry id="dataflow">
+<dt>DataFlow</dt>
+<dd>
+We added support for connecting to the following databases: <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-exadata.html">Exadata</a>, Greenplum, MemSQL, and Splunk.</dd>
+</dlentry>
 </dl>
 
 {: id="7-0-it-ops-engineer"}

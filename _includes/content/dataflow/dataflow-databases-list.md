@@ -3,8 +3,9 @@
 <li><a href="{{"/data-integrate/dataflow/dataflow-amazon-redshift.html" | prepend: site.baseurl}}">Amazon Redshift</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-azure-synapse.html" | prepend: site.baseurl}}">Azure Synapse</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-cassandra.html" | prepend: site.baseurl}}">Cassandra</a></li>
-<li><a href="{{"/data-integrate/dataflow/dataflow-databricks-delta-lake.html" | prepend: site.baseurl}}">Databricks Delta Lake</a> <span class="label label-beta">New</span></li>
-<li><a href="{{"/data-integrate/dataflow/dataflow-denodo.html" | prepend: site.baseurl}}">Denodo</a> <span class="label label-beta">New</span></li>
+<li><a href="{{"/data-integrate/dataflow/dataflow-databricks-delta-lake.html" | prepend: site.baseurl}}">Databricks Delta Lake</a></li>
+<li><a href="{{"/data-integrate/dataflow/dataflow-denodo.html" | prepend: site.baseurl}}">Denodo</a></li>
+<li><a href="{{"/data-integrate/dataflow/dataflow-exadata.html" | prepend: site.baseurl}}">Exadata</a> <span class="label label-beta">New</span></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-google-bigquery.html" | prepend: site.baseurl}}">Google BigQuery</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-hive.html" | prepend: site.baseurl}}">Hive</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-ibm-db2.html" | prepend: site.baseurl}}">IBM Db2</a></li>
