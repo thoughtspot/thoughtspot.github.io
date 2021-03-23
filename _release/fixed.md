@@ -9,6 +9,13 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <ul>
 <li>
 <details>
+<summary>7.0 Releases</summary>
+<ul>
+<li><a href="#7-0">7.0 Fixed issues</a></li>
+</ul>
+<ul>
+<li>
+<details>
 <summary>6.3.X Releases</summary>
 <ul>
 <li><a href="#6-3-1">6.3.1 Fixed issues</a></li>
@@ -101,6 +108,14 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </details>
 </li>
 </ul>
+
+<a id="7-0"></a>
+## 7.0 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 7.0.
+
+- TBD
+- TBD
 
 <a id="6-3-1"></a>
 ## 6.3.1 Fixed issues
