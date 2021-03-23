@@ -1,6 +1,6 @@
 ---
-title: [Packages installed with ThoughtSpot for RHEL]
-last_updated: 3/20/2020
+title: [Packages installed with ThoughtSpot for RHEL and OEL]
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

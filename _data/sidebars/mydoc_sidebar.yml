@@ -1545,31 +1545,31 @@ entries:
       - title: Packages installed with Amazon Linux 2
         url: /appliance/amazon-linux-2/al2-packages.html
         output: web,appQs
-    - levelTwoTitle: RHEL Support
+    - levelTwoTitle: RHEL and OEL Support
       output: web,appQs
       levelTwoItems:
-      - title: RHEL overview
+      - title: RHEL and OEL overview
         url: /appliance/rhel/rhel.html
         output: web,appQs
-      - title: RHEL prerequisites
+      - title: RHEL and OEL prerequisites
         url: /appliance/rhel/rhel-prerequisites.html
         output: web,appQs
-      - title: ThoughtSpot deployment artifacts for RHEL
+      - title: ThoughtSpot deployment artifacts for RHEL and OEL
         url: /appliance/rhel/rhel-ts-artifacts.html
         output: web,appQs
-      - title: Online RHEL install
+      - title: Online RHEL and OEL install
         url: /appliance/rhel/rhel-install-online.html
         output: web,appQs
-      - title: Offline RHEL install
+      - title: Offline RHEL and OEL install
         url: /appliance/rhel/rhel-install-offline.html
         output: web,appQs
-      - title: RHEL upgrade
+      - title: RHEL and OEL upgrade
         url: /appliance/rhel/rhel-upgrade.html
         output: web,appQs
-      - title: Adding new nodes to clusters in RHEL
+      - title: Adding new nodes to clusters in RHEL or OEL
         url: /appliance/rhel/rhel-add-node.html
         output: web,appQs
-      - title: Packages installed with RHEL
+      - title: Packages installed with RHEL and OEL 
         url: /appliance/rhel/rhel-packages.html
         output: web,appQs
     - levelTwoTitle: Hardware appliance

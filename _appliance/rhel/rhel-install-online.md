@@ -1,7 +1,7 @@
 ---
-title: [Install the ThoughtSpot application on online clusters that use RHEL]
-summary: "Install ThoughtSpot on RHEL online clusters"
-last_updated: 8/18/2020
+title: [Install the ThoughtSpot application on online clusters that use RHEL or OEL]
+summary: "Install ThoughtSpot on RHEL or OEL online clusters."
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,7 +11,7 @@ In an online cluster, the hosts can access the public repositories to download t
 
 Before you build the ThoughtSpot cluster and install the ThoughtSpot application on the hosts, you must run the Ansible playbook. The TS Ansible playbook prepares your clusters in the following manner:
 
-- Ansible installs the required packages: YAML, Python, and R packages; see [Packages installed with ThoughtSpot for RHEL]({{ site.baseurl }}/appliance/rhel/rhel-packages.html).
+- Ansible installs the required packages: YAML, Python, and R packages; see [Packages installed with ThoughtSpot for RHEL and OEL]({{ site.baseurl }}/appliance/rhel/rhel-packages.html).
 - It creates and configures local user accounts for ThoughtSpot:
    - `admin` user has full administrative functionality
    - `thoughtspot` user can load data in the application
@@ -221,9 +221,9 @@ ssh -l <admin_user> <cluster_IP>
 
 Refer to the ThoughtSpot documentation for the detailed steps to install the ThoughtSpot cluster for each deployment platform:
 
-- [Hardware appliance]({{ site.baseurl }}/appliance/hardware/inthebox.html)
+- [***RHEL only***] [Hardware appliance]({{ site.baseurl }}/appliance/hardware/inthebox.html)
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
-- [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
+- [***RHEL only***] [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 - [VMware]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
 
