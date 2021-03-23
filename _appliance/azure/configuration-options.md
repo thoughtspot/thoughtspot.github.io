@@ -20,6 +20,6 @@ When choosing an instance type, ensure that it uses Intel CPUs.
 | 200 GB | E64s_v3 | 64/432 | 2x1 TB | 200 GB for each node |
 | 100 GB | E32s_v3 | 32/256 | 2X 400 GB | 200 GB for each node |
 | 20 GB | E16s_v3 | 16/128 | 2X 400 GB | 200 GB for each node |
-| 120 GB | D64_v3 | 64/256 | 2X 1 TB | 200 GB for each node |
+| 120 GB | D64_v3, D64s_v4 | 64/256 | 2X 1 TB | 200 GB for each node |
 
 For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/128GB RAM and 32CPU/256GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
