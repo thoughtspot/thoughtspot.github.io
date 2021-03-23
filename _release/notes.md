@@ -17,7 +17,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 * [Supported Upgrade Paths](#upgrade-paths)
 
 {: id="7-0-new"}
-## 7-0 New Features and Functionality
+## 7.0 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
@@ -31,9 +31,9 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ### For the Analyst
 
 <dl>
-<dlentry id="simplified-join-creation">
-<dt>Simplified join creation</dt>
-<dd>This release makes creating and editing joins from a table more flexible and intuitive. Our new joins interface allows you to define and edit a join’s type and cardinality at the table level, where previously this was only possible at the Worksheet level. Refer to <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html">Table joins</a>.</dd>
+<dlentry id="tbd-analyst">
+<dt>TBD</dt>
+<dd>TBD.</dd>
 </dlentry>
 </dl>
 
@@ -41,14 +41,10 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ### For the Business User
 
 <dl>
-<dlentry id="internet-explorer">
-  <dt>Deprecation of Internet Explorer</dt>
-<dd>ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a href="{{ site.baseurl }}/end-user/accessing.html">ThoughtSpot browser access</a> for a list of supported browsers.</dd>
+<dlentry id="tbd-business-user">
+  <dt>TBD</dt>
+<dd>TBD</dd>
 </dlentry>
-
-<dlentry id="information-center">
-  <dt>Information Center</dt>
-<dd>ThoughtSpot has a new Information Center, accessible from the help icon <img src="../images/icon-help-10px.png" alt="Help icon" class="inline"> next to your profile on the top navigation bar. This new help menu contains many useful resources, including a navigation overview, several training videos, and links to more help across the ThoughtSpot product, community, training, and documentation. Refer to <a href="{{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a>.</dd></dlentry>
 
 </dl>
 
@@ -58,9 +54,9 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dl>
 <dlentry id="embrace">
 <dt>Embrace</dt>
-<dd>Embrace now supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
+<dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-passthrough.html">Passthrough functions for Snowflake.</dd>
+<dd>Embrace supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is still in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
 </dd>
-<dd>Embrace now supports security passthrough for Snowflake using OAuth for authentication and authorization. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html">Snowflake</a>.</dd>
 </dlentry>
 </dl>
 
@@ -68,9 +64,9 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ### For the IT Ops Engineer
 
 <dl>
-<dlentry id="consumption-based-pricing">
-<dt>Consumption-based pricing</dt>
-<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/appliance/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/appliance/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
+<dlentry id="tbd-it-ops">
+<dt>TBD</dt>
+<dd>TBD</dd>
 </dlentry>
 </dl>  
 
