@@ -6,12 +6,15 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot releases.
+<ul>
+<li>
 <details>
 <summary>7.0 Release</summary>
 <ul>
 <li><a href="#7-0">7.0 Fixed issues</a></li>
 </ul>
-</details>
+</details></li>
+<li>
 <details>
 <summary>6.3.X Releases</summary>
 <ul>
