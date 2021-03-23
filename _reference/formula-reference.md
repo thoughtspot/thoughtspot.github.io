@@ -55,3 +55,10 @@ These functions can be used with text and numeric data types.
 ## Text functions
 
 {% include content/text-func.md %}
+
+{: id="passthrough-functions"}
+## Embrace passthrough functions
+
+{% include note.html content="The following passthrough functions are only supported with Snowflake connections at this time." %}
+
+{% include content/passthrough-func.md %}
