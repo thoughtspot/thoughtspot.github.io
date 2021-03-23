@@ -114,8 +114,23 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 These are the issues we fixed in ThoughtSpot Release 7.0.
 
-- TBD
-- TBD
+- Users with the *Cannot create or update Pinboards* permission can create pinboards and pin answers to pinboards, but this permission shouldn't allow them to.
+- Scheduled pinboards with row-level security enabled, send incorrect PDF attachments to some users.
+- Users who have completed the onboarding process, see the onboarding page every time they sign in to ThoughtSpot.
+- Queries show a measure as being *grouped by*, rather than *summed*, which causes incorrect results.
+- Embrace generates incorrect joins in RedShift SQL.
+- Editing any filter generates an error.
+- German letters ä, ö, and ü are not supported in usernames.
+- A missing sysctl parameter causes pinboard exports to not work.
+- Saving an edited formula in worksheet does not work.
+- Date sorting doesn't work after pinboard filters are added.
+- A manually started SpotIQ Analysis runs for a long time, and eventually stops after about 20 minutes with no insights found.
+- Cluster upgrades run for 2 hours before eventually failing, after printing out the same migration statement twice.
+- DataFlow pre and post sync TQL fails with *add_days* function.
+- DataFlow sync does not sync a table.
+- An error occurs during DataFlow sync after adding a table.
+- Zooming in on a map visualization is not possible when using latitude and longitude.
+- A formula that uses *to_string* on a round fails.
 
 <a id="6-3-1"></a>
 ## 6.3.1 Fixed issues
