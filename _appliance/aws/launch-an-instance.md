@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS resources for ThoughtSpot]
-last_updated: 11/19/2020
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) in AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -31,8 +31,8 @@ To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image
 The ThoughtSpot AMI has specific applications on a CentOS-based image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
 
 {: id='rhel-ami'}
-### RHEL AMI
-This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL, choose your own RHEL-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
+### RHEL or OEL AMI
+This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL) or Oracle Enterprise Linux (OEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 or OEL 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL or OEL, choose your own RHEL- or OEL-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [RHEL and OEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
 
 {: id='al2-ami'}
 ### Amazon Linux 2 AMI

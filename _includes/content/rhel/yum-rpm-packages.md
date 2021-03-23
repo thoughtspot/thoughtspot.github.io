@@ -119,6 +119,7 @@
 <tr><td><code>samba-client</code></td><td>4.9.1-10.el7_7</td></tr>
 <tr><td><code>samba-common-tools</code></td><td>4.9.1-10.el7_7</td></tr>
 <tr><td><code>screen</code></td><td>4.1.0-0.25.20120314git3c2946.el7</td></tr>
+<tr><td><code>setroubleshoot</code></td><td>3.2.30-8.el7. <strong>RHEL and OEL only</strong></td></tr>
 <tr><td><code>sg3_utils</code></td><td>1.37-18.el7_7.2</td></tr>
 <tr><td><code>smartmontools</code></td><td>1:7.0-1.el7_7.1</td></tr>
 <tr><td><code>snappy-devel</code></td><td>1.1.0-3.el7</td></tr>

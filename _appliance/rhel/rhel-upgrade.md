@@ -1,10 +1,10 @@
 ---
-title: [Upgrading ThoughtSpot for RHEL]
-last_updated: 11/16/2020
+title: [Upgrading ThoughtSpot for RHEL and OEL]
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To upgrade your RHEL installation of ThoughtSpot, follow these steps:
+To upgrade your RHEL or OEL installation of ThoughtSpot, follow these steps:
 
 1. Back up your ThoughtSpot cluster.
 2. Pull the necessary security updates.

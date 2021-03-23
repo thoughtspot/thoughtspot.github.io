@@ -1,18 +1,18 @@
 ---
-title: [Add a node to a ThoughtSpot cluster on RHEL]
-summary: "You can easily configure an additional node for a ThoughtSpot cluster on RHEL."
-last_updated: 6/10/2020
+title: [Add a node to a ThoughtSpot cluster on RHEL or OEL]
+summary: "You can easily configure an additional node for a ThoughtSpot cluster on RHEL or OEL."
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To add a new node to a ThoughtSpot cluster deployed through RHEL, you must first make this new node ready for ThoughtSpot.
+To add a new node to a ThoughtSpot cluster deployed through RHEL or OEL, you must first make this new node ready for ThoughtSpot.
 
 {: id="prerequisites"}
 ## Prerequisites
 
 - The new node must be available.
 - The new node must be of the same deployment type as the existing cluster.
-- Your organization's RHEL base image must be on the new node.
+- Your organization's RHEL or OEL base image must be on the new node.
 
 {: id="configure-ansible"}
 ## Configure the Ansible Playbook
@@ -48,9 +48,9 @@ Follow these general steps to install ThoughtSpot on the new node:
 4. Check the cluster health by running health checks and logging into the application.
 Refer to the ThoughtSpot documentation for the detailed steps to install ThoughtSpot for each deployment platform:
 
-- [Hardware appliance]({{ site.baseurl }}/appliance/hardware/inthebox.html)
+- [***RHEL only***] [Hardware appliance]({{ site.baseurl }}/appliance/hardware/inthebox.html)
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
-- [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
+- [***RHEL only***] [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 - [VMware]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
 
