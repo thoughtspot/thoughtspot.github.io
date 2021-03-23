@@ -73,14 +73,19 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dt>Oracle Enterprise Linux (OEL) support</dt>
 <dd>This release of ThoughtSpot introduces deployment support for Oracle Enterprise Linux. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an OEL image that your organization manages internally. ThoughtSpot certifies OEL version 7.9 on AWS, GCP, and VMware. To deploy ThoughtSpot on OEL, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL and OEL deployment guide</a>.
 </dd>
-</dlentry>
+</dlentry> 
 
 <dlentry id="oel">
 <dt>New cloud VM instance types</dt>
-<dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure. The new AWS instance types are r5a.4xlarge, r5a.8xlarge, r5a.12xlarge, r5a.16xlarge, and r5a.24xlarge. The new Azure instance type is D64s_v4. To view all supported instance types for AWS and Azure, see the <a href="{{ site.baseurl }}/appliance/aws/configuration-options.html">AWS</a> and <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure</a> configuration options.
+<dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure. The new Azure instance type is D64s_v4. The new AWS instance types are:
+<ul><li>r5a.4xlarge</li>
+<li>r5a.8xlarge</li>
+<li>r5a.12xlarge</li>
+<li>r5a.16xlarge</li>
+<li>r5a.24xlarge</li></ul> To view all supported instance types for AWS and Azure, see the <a href="{{ site.baseurl }}/appliance/aws/configuration-options.html">AWS</a> and <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure</a> configuration options.
 </dd>
 </dlentry>
-</dl>  
+</dl>
 
 <!--{: id="beta-program"}
 ## Beta Programs
