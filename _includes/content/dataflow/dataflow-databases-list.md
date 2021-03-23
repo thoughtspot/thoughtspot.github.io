@@ -12,6 +12,7 @@
 <li><a href="{{"/data-integrate/dataflow/dataflow-ibm-db2.html" | prepend: site.baseurl}}">IBM Db2</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-jdbc.html" | prepend: site.baseurl}}">JDBC</a> for many databases (must have driver)</li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-mariadb.html" | prepend: site.baseurl}}">MariaDB</a></li>
+<li><a href="{{"/data-integrate/dataflow/dataflow-memsql.html" | prepend: site.baseurl}}">MemSQL</a> <span class="label label-beta">New</span></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-mongodb.html" | prepend: site.baseurl}}">MongoDB</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-mysql.html" | prepend: site.baseurl}}">MySQL</a></li>
 <li><a href="{{"/data-integrate/dataflow/dataflow-netezza.html" | prepend: site.baseurl}}">Netezza</a></li>

@@ -2059,6 +2059,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-mariadb-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: MemSQL
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-memsql.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-memsql-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-memsql-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-memsql-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: MongoDB
         output: web,dataflowGD
         levelThreeItems:
