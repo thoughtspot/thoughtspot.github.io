@@ -104,7 +104,7 @@ We like to have a diversity of experience and perspective, and want to hear from
 If you are running one of the following versions, you can upgrade to the 7.0 release
 directly:
 
-* 6.2.x
+* 6.2.x to 7.0
 * 6.3.x to 7.0
 
 This includes any hotfixes or customer patches on these branches.
