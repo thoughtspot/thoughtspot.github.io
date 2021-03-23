@@ -76,12 +76,18 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 <dlentry id="cloud-vm">
 <dt>New cloud VM instance types</dt>
-<dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure. The new AWS instance types are:
+<dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure.<br><br> The new AWS instance types are:
 <ul><li>r5a.4xlarge</li>
 <li>r5a.8xlarge</li>
 <li>r5a.12xlarge</li>
 <li>r5a.16xlarge</li>
 <li>r5a.24xlarge</li></ul> The new Azure instance type is: <ul><li>D64s_v4</li></ul> To view all supported instance types for AWS and Azure, see the <a href="{{ site.baseurl }}/appliance/aws/configuration-options.html">AWS</a> and <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure</a> configuration options.
+</dd>
+</dlentry>
+
+<dlentry id="azure-disk-encryption">
+<dt>Azure Disk Encryption</dt>
+<dd>ThoughtSpot now supports <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-overview" target="_blank">Azure Disk Encryption (ADE)</a> for clusters running on an RHEL image in Azure. Azure Disk Encryption provides volume encryption for both the OS and data disks of Azure virtual machines (VMs). To configure Azure Disk Encryption for your cluster(s), <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
 </dd>
 </dlentry>
 </dl>
