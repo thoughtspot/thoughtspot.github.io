@@ -63,7 +63,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dlentry id="dataflow">
 <dt>DataFlow</dt>
 <dd>
-We added support for connecting to the following databases: <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-exadata.html">Exadata</a>, Greenplum, MemSQL, and Splunk.</dd>
+We added support for connecting to the following databases: <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-exadata.html">Exadata</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum.html">Greenplum</a>, MemSQL, and Splunk.</dd>
 </dlentry>
 </dl>
 

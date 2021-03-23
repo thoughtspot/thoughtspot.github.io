@@ -1984,6 +1984,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-google-bigquery-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: Greenplum
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-greenplum.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-greenplum-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-greenplum-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-greenplum-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: Hive
         output: web,dataflowGD
         levelThreeItems:

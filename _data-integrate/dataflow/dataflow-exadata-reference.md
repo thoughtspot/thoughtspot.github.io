@@ -19,8 +19,8 @@ Here is a list of the fields for an Exadata connection in ThoughtSpot DataFlow. 
 <dlentry id="dataflow-exadata-conn-password"><dt>Password</dt><dd id="password-description">Specify the password for the User</dd><dd id="password-required">Mandatory field.</dd><dd id="password-example"><strong>Example:</strong><br/>pswrd234%!</dd></dlentry>
 <dlentry id="dataflow-exadata-conn-service-name"><dt>Service name</dt><dd id="service-name-description">Service name is the TNS alias that you give when you remotely connect to your database and this Service name is recorded in Tnsnames.ora file on your clients and it can be the same as SID and you can also give it any other name you want</dd><dd id="service-name-required">Mandatory field.</dd><dd id="service-name-example"><strong>Example:</strong><br/>idxdb03</dd></dlentry>
 <dlentry id="dataflow-exadata-conn-version"><dt>Version</dt><dd id="version-description">Specify the Exadata version being connected to</dd><dd id="version-required">Optional field.</dd><dd id="version-example"><strong>Example:</strong><br/>11.x</dd><dd id="version-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
-"<dlentry id=""dataflow-exadata-conn-jdbc-options""><dt>JDBC options</dt><dd id=""jdbc-options-description"">Specify the options associated with the JDBC URL.</dd><dd id=""jdbc-options-required"">Optional field.</dd><dd id=""jdbc-options-example""><strong>Example:</strong><br/>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]
-</dd><dd id=""jdbc-options-other""><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>"
+<dlentry id="dataflow-exadata-conn-jdbc-options"><dt>JDBC options</dt><dd id="jdbc-options-description">Specify the options associated with the JDBC URL.</dd><dd id="jdbc-options-required">Optional field.</dd><dd id="jdbc-options-example"><strong>Example:</strong><br/>jdbc:sqlserver://[serverName[\instanceName][:portNumber]]
+</dd><dd id="jdbc-options-other"><strong>Other notes:</strong><br/>Advanced configuration</dd></dlentry>
 </dl>
 
 
