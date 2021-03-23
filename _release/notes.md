@@ -31,19 +31,18 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 ### For the Analyst
 
 <dl>
-<dlentry id="tbd-analyst">
-<dt>TBD</dt>
-<dd>TBD.</dd>
-</dlentry>
+<dlentry id="search-assist-coach">
+  <dt>Search Assist Coach</dt>
+  <dd><a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries based on their company data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
 </dl>
 
 {: id="7-0-business-user"}
 ### For the Business User
 
 <dl>
-<dlentry id="tbd-business-user">
-  <dt>TBD</dt>
-<dd>TBD</dd>
+<dlentry id="search-assist">
+  <dt>Search Assist</dt>
+<dd><a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> introduces new users to ThoughtSpot's Search experience by walking them through simple search scenarios on sample data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar. Additionally, you can use <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> to create sample search queries on your own data.</dd>
 </dlentry>
 
 </dl>
@@ -77,12 +76,12 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 <dlentry id="cloud-vm">
 <dt>New cloud VM instance types</dt>
-<dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure. The new Azure instance type is D64s_v4. The new AWS instance types are:
+<dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure. The new AWS instance types are:
 <ul><li>r5a.4xlarge</li>
 <li>r5a.8xlarge</li>
 <li>r5a.12xlarge</li>
 <li>r5a.16xlarge</li>
-<li>r5a.24xlarge</li></ul> To view all supported instance types for AWS and Azure, see the <a href="{{ site.baseurl }}/appliance/aws/configuration-options.html">AWS</a> and <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure</a> configuration options.
+<li>r5a.24xlarge</li></ul> The new Azure instance type is: <ul><li>D64s_v4</li></ul> To view all supported instance types for AWS and Azure, see the <a href="{{ site.baseurl }}/appliance/aws/configuration-options.html">AWS</a> and <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure</a> configuration options.
 </dd>
 </dlentry>
 </dl>
