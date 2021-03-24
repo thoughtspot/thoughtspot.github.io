@@ -33,10 +33,6 @@ summary {
     display: block
 }
 
-summary:focus {
-    outline: 0;
-}
-
 audio,
 canvas,
 progress,
