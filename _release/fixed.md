@@ -7,6 +7,10 @@ toc: false
 permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot releases.
+
+{% details 7.0 Release %}
+<a href="#7-0">7.0 Fixed issues</a>
+{% enddetails %}
 <ul>
 <li>
 <details>
