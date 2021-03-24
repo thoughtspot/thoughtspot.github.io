@@ -29,6 +29,9 @@ entries:
     - title: Fixed issues
       url: /release/fixed.html
       output: web,rnotes
+    - title: Accessibility
+      url: /release/accessibility.html
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web,rnotes
