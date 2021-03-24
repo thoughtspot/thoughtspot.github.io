@@ -3,6 +3,7 @@ title: ["Fixed issues"]
 keywords: "fixed issues"
 last_updated: 09/09/2020
 sidebar: mydoc_sidebar
+toc: false
 permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot releases.
