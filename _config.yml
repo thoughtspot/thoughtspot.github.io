@@ -33,7 +33,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-redirect-from
-  - details_tag
 
 
 
