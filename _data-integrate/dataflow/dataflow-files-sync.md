@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 After using ThoughtSpot DataFlow to establish a connection to a flat files, either local or remote, you can create automatic data updates, to seamlessly refresh your data.
 
-{% include content/dataflow/sync-for-file-systems.md %}
+{% include content/dataflow/sync-for-remote-files.md %}
 
 4. Specify the sync properties for files:
 

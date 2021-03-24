@@ -69,7 +69,12 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 <p>When connecting to remote files, DataFlow now supports the ORC and JSON file formats.</p>
 
 <p>DataFlow includes support for utilities to configure SSL, so you can securely connect securely to the following source systems:
-<a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-utilities.html>SQLServer</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html">Databricks Data Lake</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-utilities.html">PostgreSQL</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-utilities.html">IBM Db2</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-utilities.html">Greenplum</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-utilities.html">Oracle</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-utilities.html">Teradata</a>.</p>
+<a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-utilities.html">SQLServer</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html">Databricks Data Lake</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-utilities.html">PostgreSQL</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-utilities.html">IBM Db2</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-utilities.html">Greenplum</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-utilities.html">Oracle</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-utilities.html">Teradata</a>.</p>
+
+<p>Connections for remote files support several new <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-files-sync.html#file-format">file formats</a>; in addition to  <em>Delimited</em>, we have support for <em>Parquet</em>, <em>JSON</em> <span class="label label-beta">New</span>, <em>LDJSON</em> <span class="label label-beta">New</span>, and <em>ORC</em> <span class="label label-beta">New</span>.
+</p>
+</dd>
+
 </dlentry>
 </dl>
 
