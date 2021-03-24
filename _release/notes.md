@@ -73,6 +73,9 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 
 <p>Connections for remote files support several new <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-files-sync.html#file-format">file formats</a>; in addition to  <em>Delimited</em>, we have support for <em>Parquet</em>, <em>JSON</em> <span class="label label-beta">New</span>, <em>LDJSON</em> <span class="label label-beta">New</span>, and <em>ORC</em> <span class="label label-beta">New</span>.
 </p>
+
+<p>The DataFlow Home dashboard now shows both the historical and upcoming syncing information. It also supports search by table name. See <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-home.html">DataFlow home</a>.</p>
+
 </dd>
 
 </dlentry>
