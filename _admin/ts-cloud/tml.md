@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 2/12/2021
+last_updated: 3/24/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -519,12 +519,20 @@ You may not see each of these parameters in your own TML files, depending on whe
     This section includes all the Answer specification for a second visualization. In this case, the visualization is a headline.
     <a href="#display_headline_column">display_headline_column</a>: &lt;<em>headline_column</em>&gt;    
   <a href="#filters">filters</a>:
-  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
-    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
-    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
-    - value 1
-    - value 2
-  - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
+    - <a href="#column">column</a>:
+      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">primary_filter</a>_column_name_1</em>&gt;
+      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_2</em>&gt;
+      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_n</em>&gt;
+      <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+      <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+      - value 1
+      - value 2
+      - value n
+      <a href="#excluded_visualizations">excluded_visualizations</a>:
+      - <a href="#id">excluded_viz_id_1</a>
+      - <a href="#id">excluded_viz_id_2</a>
+    - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
+    <em>...</em>
   <a href="#layout">layout</a>:
     tiles:
     - <a href="#visualization_id">visualization_id</a>: &lt;<em>visualization_id_1</em>&gt;
@@ -591,7 +599,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="column">
     <dt>column</dt>
-    <dd>The id of the column(s) being filtered on.</dd>
+    <dd>The id of the column(s) being filtered on. When a Pinboard contains <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked filters</a>, or filters that affect visualizations based on more than one Worksheet, the primary filter column appears first in the list of columns in the TML. The linked filter column appears after the primary filter column.</dd>
   </dlentry>
 
   <dlentry id="columns">
@@ -690,6 +698,11 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dt>display_headline_column</dt>
     <dd>If the visualization is a headline, this parameter specifies the column the headline comes from.</dd>
   </dlentry>
+
+  <dlentry id="excluded_visualizations">
+  <dt>excluded_visualizations</dt>
+  <dd>A list of visualizations the Pinboard editor chose to exclude from the filter. Only appears when using <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective filters</a>.</dd>
+</dlentry>
 
   <dlentry id="expr">
     <dt>expr</dt>
