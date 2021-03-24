@@ -18,6 +18,10 @@ div#unibox-suggest-box {
 
 /* fix for missing triangle in DL Summary block - begin */
 
+.markdown-body details summary {
+    display: list-item !important;
+  }
+
 main, summary {
   display: block;
   display: list-item !important;
