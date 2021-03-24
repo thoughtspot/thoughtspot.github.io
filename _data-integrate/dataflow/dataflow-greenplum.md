@@ -10,3 +10,4 @@ DataFlow enables you to connect to the Greenplum database, to use your data in T
 - [Add a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-add.html)
 - [Sync data]({{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-sync.html)
 - [Reference]({{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-reference.html)
+- [Utilities]({{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-utilities.html)

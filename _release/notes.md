@@ -63,7 +63,13 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dt>DataFlow</dt>
 <dd>
 We added support for connecting to the following databases: <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-exadata.html">Exadata</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum.html">Greenplum</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-memsql.html">MemSQL</a>.
-<p>We also have support for these filesystems:  <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-splunk.html">Splunk</a>, ORC, and JSON.</p></dd>
+
+<p>We also added support for the  <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-splunk.html">Splunk</a> file system.</p>
+
+<p>When connecting to remote files, DataFlow now supports the ORC and JSON file formats.</p>
+
+<p>DataFlow includes support for utilities to configure SSL, so you can securely connect securely to the following source systems:
+<a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-utilities.html>SQLServer</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html">Databricks Data Lake</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-utilities.html">PostgreSQL</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-utilities.html">IBM Db2</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-utilities.html">Greenplum</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-utilities.html">Oracle</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-utilities.html">Teradata</a>.</p>
 </dlentry>
 </dl>
 

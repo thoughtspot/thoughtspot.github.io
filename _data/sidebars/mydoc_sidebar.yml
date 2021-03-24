@@ -1939,6 +1939,9 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html
           output: web,dataflowGd
+        - title: Utilities
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html
+          output: web,dataflowGd
       - levelThreeTitle: Denodo
         output: web,dataflowGD
         levelThreeItems:
@@ -1999,6 +2002,9 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-greenplum-reference.html
           output: web,dataflowGd
+        - title: Utilities
+          url: /data-integrate/dataflow/dataflow-greenplum-utilities.html
+          output: web,dataflowGd
       - levelThreeTitle: Hive
         output: web,dataflowGD
         levelThreeItems:
@@ -2028,6 +2034,9 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-ibm-db2-reference.html
+          output: web,dataflowGd
+        - title: Utilities
+          url: /data-integrate/dataflow/dataflow-ibm-db2-utilities.html
           output: web,dataflowGd
       - levelThreeTitle: JDBC
         output: web,dataflowGD
@@ -2134,6 +2143,9 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-oracle-reference.html
           output: web,dataflowGd
+        - title: Utilities
+          url: /data-integrate/dataflow/dataflow-oracle-utilities.html
+          output: web,dataflowGd
       - levelThreeTitle: PostgreSQL
         output: web,dataflowGD
         levelThreeItems:
@@ -2148,6 +2160,9 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-postgresql-reference.html
+          output: web,dataflowGd
+        - title: Utilities
+          url: /data-integrate/dataflow/dataflow-postgresql-utilities.html
           output: web,dataflowGd
       - levelThreeTitle: Presto
         output: web,dataflowGD
@@ -2239,6 +2254,9 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-sql-server-reference.html
           output: web,dataflowGd
+        - title: Utilities
+          url: /data-integrate/dataflow/dataflow-sql-server-utilities.html
+          output: web,dataflowGd
       - levelThreeTitle: Snowflake
         output: web,dataflowGD
         levelThreeItems:
@@ -2283,6 +2301,9 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-teradata-reference.html
+          output: web,dataflowGd
+        - title: Utilities
+          url: /data-integrate/dataflow/dataflow-teradata-utilities.html
           output: web,dataflowGd
     - levelTwoTitle: File System Connections
       output: web,dataflowGD
