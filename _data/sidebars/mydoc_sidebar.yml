@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts7.mar.cl
+  docversion: ts7.april.cl
   # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
@@ -295,7 +295,7 @@ entries:
         output: web
       - title: Enable a PrivateLink for Redshift
         url: /admin/ts-cloud/private-link-redshift.html
-        output: web        
+        output: web
       - title: Performance tracking Pinboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
@@ -721,6 +721,9 @@ entries:
 #      output: web,ugBk
     - title: "SpotIQ analysis"
       url: /spotiq/customization.html
+      output: web,ugBk
+    - title: "SpotIQ analysis"
+      url: /admin/ts-cloud/monitor.html
       output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
