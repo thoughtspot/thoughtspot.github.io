@@ -76,6 +76,8 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 
 <p>The DataFlow Home dashboard now shows both the historical and upcoming syncing information. It also supports search by table name. See <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-home.html">DataFlow home</a>.</p>
 
+<p>All DataFlow database connections (as listed in <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databases">DataFlow Databases</a>), support retrieving data through a custom SQL expression.</p>
+
 </dd>
 
 </dlentry>
