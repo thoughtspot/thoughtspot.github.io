@@ -18,7 +18,7 @@ div#unibox-suggest-box {
 
 /* fix for missing triangle in DL Summary block - begin */
 
-article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+main, summary {
   display: block;
   display: list-item !important;
 }
