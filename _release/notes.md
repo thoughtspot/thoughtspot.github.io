@@ -63,7 +63,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dt>DataFlow</dt>
 <dd>
 We added support for connecting to the following databases: <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-exadata.html">Exadata</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum.html">Greenplum</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-memsql.html">MemSQL</a>.
-<p>We also have support for these filesystems:  Splunk, ORC, and JSON.</p></dd>
+<p>We also have support for these filesystems:  <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-splunk.html">Splunk</a>, ORC, and JSON.</p></dd>
 </dlentry>
 </dl>
 
