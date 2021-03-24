@@ -10,6 +10,17 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="april-cloud-analyst"></a>For the Analyst</h3>
 
+<dl>
+
+<dlentry id="">
+<dt>Scriptability</dt>
+<dd>There are several enhancements to the <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a> feature:
+<ul><li><strong>Support for selective and linked filters:</strong> You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
+</ul>
+</dd></dlentry>
+
+</dl>
+
 <h3><a id="april-cloud-business-user"></a>For the Business User</h3>
 
 <h3><a id="april-cloud-data-engineer"></a>For the Data Engineer</h3>
