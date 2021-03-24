@@ -22,12 +22,7 @@ div#unibox-suggest-box {
     display: list-item !important;
   }
 
-main, summary {
-  display: block;
-  display: list-item !important;
-}
-
-details summary {
+.main details summary {
   display: block;
   display: list-item !important;
 
