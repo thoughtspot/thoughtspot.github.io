@@ -24,7 +24,7 @@ Currently, we offer the following keyword translations.
   <tr>
     <td nowrap><a href="{{ site.baseurl }}/reference/keywords-ja-JP.html">日本語</a></td>
     <td nowrap><a href="{{ site.baseurl }}/reference/keywords-zh-CN.html">中文 (简体)</a></td>
-    <td><a href="{{ site.baseurl }}/reference/keywords-de-DE.html">Deutsche</a></td>
+    <td><a href="{{ site.baseurl }}/reference/keywords-de-DE.html">Deutsch</a></td>
     <td><a href="{{ site.baseurl }}/reference/keywords-es-US.html">Español (Latinoamérica)</a></td>
     <td><a href="{{ site.baseurl }}/reference/keywords-es-ES.html">Español (España)</a></td>
   </tr>

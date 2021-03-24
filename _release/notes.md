@@ -73,6 +73,29 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dd>Embrace supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is still in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
 </dd>
 </dlentry>
+
+<dlentry id="dataflow">
+<dt>DataFlow</dt>
+<dd>
+We added support for connecting to the following databases: <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-exadata.html">Exadata</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum.html">Greenplum</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-memsql.html">MemSQL</a>.
+
+<p>We also added support for the  <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-splunk.html">Splunk</a> file system.</p>
+
+<p>When connecting to remote files, DataFlow now supports the ORC and JSON file formats.</p>
+
+<p>DataFlow includes support for utilities to configure SSL, so you can securely connect securely to the following source systems:
+<a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-utilities.html">SQLServer</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html">Databricks Data Lake</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-utilities.html">PostgreSQL</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-utilities.html">IBM Db2</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-utilities.html">Greenplum</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-utilities.html">Oracle</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-utilities.html">Teradata</a>.</p>
+
+<p>Connections for remote files support several new <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-files-sync.html#file-format">file formats</a>; in addition to  <em>Delimited</em>, we have support for <em>Parquet</em>, <em>JSON</em> <span class="label label-beta">New</span>, <em>LDJSON</em> <span class="label label-beta">New</span>, and <em>ORC</em> <span class="label label-beta">New</span>.
+</p>
+
+<p>The DataFlow Home dashboard now shows both the historical and upcoming syncing information. It also supports search by table name. See <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-home.html">DataFlow home</a>.</p>
+
+<p>All DataFlow database connections (as listed in <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databases">DataFlow Databases</a>), support retrieving data through a custom SQL expression.</p>
+
+</dd>
+
+</dlentry>
 </dl>
 
 {: id="7-0-it-ops-engineer"}
