@@ -16,6 +16,14 @@ div#unibox-suggest-box {
   padding: 0px !important;
 }
 
+/* fix for missing triangle in DL Summary block - begin */
+
+summary {
+  display: block;
+  display: list-item !important;
+
+/* fix for missing triangle in DL Summary block - end */
+
 body {
 
       /*background-image: url(/images/draft-orig.png);
