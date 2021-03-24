@@ -27,7 +27,7 @@ main, summary {
   display: list-item !important;
 }
 
-summary {
+details summary {
   display: block;
   display: list-item !important;
 
