@@ -36,7 +36,7 @@ To deploy an AWS PrivateLink between your Snowflake data warehouse and the Thoug
 
 {: id="exchange-information"}
 ### Exchange AWS and ThoughtSpot information with ThoughtSpot Support
-1. Send the **Service name** and the **account name** from the DNS records to ThoughtSpot Support. You gathered this information in step 2 of [Request Snowflake PrivateLink configuration](#request-configuration).
+1. Send the **account name** from the DNS records and the **Service name** to ThoughtSpot Support. You gathered this information from Snowflake in step 2 of [Request Snowflake PrivateLink configuration](#request-configuration).
 
 2. After ThoughtSpot Support configures the AWS PrivateLink in ThoughtSpot, ask them to send you the PrivateLink Snowflake account name.
 
