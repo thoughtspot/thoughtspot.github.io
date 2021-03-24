@@ -10,4 +10,4 @@ DataFlow enables you to connect to the Databricks Delta Lake file system, to use
 - [Add a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-add.html)
 - [Sync data]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-sync.html)
 - [Reference]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html)
-- [Utilities]({{ site.baseurl }}/data-integrate/dataflow/ataflow-databricks-delta-lake-utilites.html)
+- [Utilities]({{ site.baseurl }}/data-integrate/dataflow/ataflow-databricks-delta-lake-utilities.html)
