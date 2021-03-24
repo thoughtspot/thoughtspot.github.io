@@ -34,6 +34,22 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dlentry id="search-assist-coach">
   <dt>Search Assist Coach</dt>
   <dd><a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries based on their company data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
+
+<dlentry id="scriptability">
+  <dt>Scriptability enhancements</dt>
+  <dd>There are several enhancements to the <a href="{{ site.baseurl }}/admin/scriptability/scriptability-overview.html">Scriptability</a> feature:
+  <ul><li><strong>Export custom SpotApps</strong>: You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, SpotIQ results, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/scriptability/app-templates.html">SpotApps</a>.</li>
+  <li><strong>GUID handling</strong>: ThoughtSpot now recognizes pre-existing GUIDs upon import and asks if you would like to update the existing object or create a new one. Refer to <a href="{{ site.baseurl }}/admin/scriptability/scriptability.html">Scriptability</a>.</li>
+  <li><strong>Improvements to generic join functionality</strong>: The expanded functionality for generic joins in TML files allows the following elements:
+<ul><li>Constants: int, double, bool, date, and string</li>
+<li>Comparison operators: <code>=</code>, <code>!=</code>, <code><</code>, <code>></code>, <code><=</code>, and <code>>=</code></li>
+<li>Columns</li>
+<li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul></li>
+<li><strong>Joins at the table level</strong>: You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</li>
+<li><strong>Support for selective and linked filters</strong>: You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
+
+  </ul></dd></dlentry>
+
 </dl>
 
 {: id="7-0-business-user"}
