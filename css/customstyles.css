@@ -16,20 +16,6 @@ div#unibox-suggest-box {
   padding: 0px !important;
 }
 
-/* fix for missing triangle in DL Summary block - begin */
-
-.markdown-body details summary {
-    display: list-item !important;
-  }
-
-article, aside, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-  display: list-item !important;
-  outline: none;
-  }
-
-/* fix for missing triangle in DL Summary block - end */
-
 body {
 
       /*background-image: url(/images/draft-orig.png);
