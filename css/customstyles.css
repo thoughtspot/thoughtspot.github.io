@@ -16,6 +16,14 @@ div#unibox-suggest-box {
   padding: 0px !important;
 }
 
+summary {
+  display: list-item !important;
+}
+
+summary:focus {
+  outline: 0 !important;
+}
+
 body {
 
       /*background-image: url(/images/draft-orig.png);
