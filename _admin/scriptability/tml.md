@@ -528,7 +528,7 @@ You may not see each of these parameters in your own TML files, depending on whe
     - value 1
     - value 2
     - value n
-    <a href="#excluded_visualisations">excluded_visualisations</a>:
+    <a href="#excluded_visualizations">excluded_visualizations</a>:
     - <a href="#id">excluded_viz_id_1</a>
     - <a href="#id">excluded_viz_id_2</a>
   - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
@@ -699,8 +699,8 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dd>If the visualization is a headline, this parameter specifies the column the headline comes from.</dd>
   </dlentry>
 
-  <dlentry id="excluded_visualisations">
-    <dt>excluded_visualisations</dt>
+  <dlentry id="excluded_visualizations">
+    <dt>excluded_visualizations</dt>
     <dd>A list of visualizations the Pinboard editor chose to exclude from the filter. Only appears when using <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective filters</a>.</dd>
   </dlentry>
 
