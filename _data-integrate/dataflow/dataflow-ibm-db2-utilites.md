@@ -11,7 +11,7 @@ Follow these steps to install the Db2 client:
 
 1. Get the Db2 client from this site:
 
-   <a href="http://www.ibm.com/software/data/db2/udb/support/downloadv9.html">http://www.ibm.com/software/data/db2/udb/support/downloadv9.html</a>
+   <a href="https://www.ibm.com/support/fixcentral">https://www.ibm.com/support/fixcentral</a>
 
 2. Extract the `v10.1fp10_linuxx64_rtcl.tar` file.
 
