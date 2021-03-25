@@ -29,7 +29,7 @@
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
-      <td>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the **Edit** permission on that object, and it must be shared with you.</td>
+      <td>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the <strong>Edit</strong> permission on that object, and it must be shared with you.</td>
     </tr>
     <tr>
       <td><strong>Can use experimental features</strong></td>
@@ -51,6 +51,10 @@
       <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>
 
       <p>Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the privilege <b>Can administer ThoughtSpot</b> can grant this privilege.</p> </td>
+    </tr>
+    <tr>
+      <td><strong>Has Developer privilege</strong></td>
+      <td>Can access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a> to explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</td>
     </tr>
   </tbody>
 </table>
