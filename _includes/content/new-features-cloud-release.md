@@ -36,3 +36,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </dl>
 
 <h3><a id="april-cloud-developer"></a>For the Developer</h3>
+
+<dl>
+
+<dlentry id="">
+<dt>Developer privilege</dt>
+<dd>You can now grant groups the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html">Developer privilege</a> from the Admin Console, allowing users in those groups to access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a>. In the Developer Portal, users can explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</dd></dlentry>
+
+</dl>

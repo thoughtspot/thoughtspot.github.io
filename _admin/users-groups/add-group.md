@@ -1,6 +1,6 @@
 ---
 title: ["Create, edit, or delete a group"]
-last_updated: 10/07/2019
+last_updated: 3/25/2021
 summary: "ThoughtSpot has intuitive and powerful user group management for assigning privileges, user selection, multi-tier subgroups, default Pinboard assignment, and emailing."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -93,7 +93,7 @@ Follow these steps to assign users to the group:
 
 3. You can also use **Search** to find users by name.
 
-![Add a new group > Users]({{ site.baseurl }}/images/add-group-groups.png "Add group > Users")
+![Add a new group > Users]({{ site.baseurl }}/images/add-group-users.png "Add group > Users")
 
 {: id="edit-group"}
 ## Edit a group
