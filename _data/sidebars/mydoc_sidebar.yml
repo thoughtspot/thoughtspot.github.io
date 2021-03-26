@@ -1334,6 +1334,9 @@ entries:
       - title: Metadata API
         url: /reference/api/metadata-api.html
         output: web,refGd
+      - title: TML API
+        url: /reference/api/tml-api.html
+        output: web,refGd
       - title: Session API
         url: /reference/api/session-api.html
         output: web,refGd
