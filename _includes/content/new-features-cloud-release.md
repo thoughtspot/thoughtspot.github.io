@@ -46,6 +46,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dlentry id="tml-api">
 <dt>TML APIs</dt>
 <dd><p>The new TML APIs enable you to programmatically export, validate, and import scriptable <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html">TML</a> objects. Use these APIs to automate the change management and deployment processes between your development and production environments. With these APIs, analysts can much more easily migrate from one environment to the other by automating the entire change management process, reducing the risk of human error.</p>
-<p>See <a href="{{ site.baseurl }}/reference/api/tml-api.html">TML APIs</a>.</dd></dlentry>
+<p>See <a href="{{ site.baseurl }}/reference/api/tml-api.html">TML APIs</a>.</p></dd></dlentry>
 
 </dl>
