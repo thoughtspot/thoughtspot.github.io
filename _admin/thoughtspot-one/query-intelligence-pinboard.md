@@ -1,12 +1,14 @@
 ---
 title: [Stats and Trends for Search on Answers Pinboard]
 summary: "The Stats and Trends for Search on Answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
-last_updated: 1/21/2021
+last_updated: 3/29/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **Stats and Trends for Search on Answers** Pinboard, a default ThoughtSpot Pinboard that is visible to admins, provides this information. If you do not have admin privileges and would like to access this Pinboard, ask your ThoughtSpot administrator to share the Pinboard and its underlying Worksheet, **Discover Monitoring Data**, with you.
+As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **Stats and Trends for Search on Answers** Pinboard, a default ThoughtSpot Pinboard that is visible to admins, provides this information. Review the [best practices](#best-practices) for this Pinboard.
+
+If you do not have admin privileges and would like to access this Pinboard, ask your ThoughtSpot administrator to share the Pinboard and its underlying Worksheet, **Discover Monitoring Data**, with you. Administrators, review the [sharing best practices](#sharing-best-practices) for this Pinboard.
 
 To access the **Stats and Trends for Search on Answers** Pinboard, search for "Stats and trends for search on answers" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
 
@@ -65,3 +67,13 @@ This visualization shows the percentage of searches on existing Answers and Pinb
 {: id="poor-performance"}
 ## Top search queries with poor performance
 This visualization lists queries in the last 30 days for which users browsed multiple Answers and Pinboards, before finding the right Answer or Pinboard.
+
+{: id="best-practices"}
+## Best practices
+You can use the Stats and Trends Pinboard to understand your company's use of ThoughtSpot in many ways. Here are a few of the most useful ways to interact with this Pinboard.
+
+1. **Monitor Adoption**:<br>
+    Keep track of the [number of searches](#number-of-searches) on existing Answers and Pinboards in the last 7 days, and on the [number of searches on Answers on a weekly basis](#weekly-searches). 
+
+{: id="sharing-best-practices"}
+### Sharing best practices
