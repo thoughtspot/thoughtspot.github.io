@@ -74,23 +74,6 @@ curl -X POST --header 'Accept: text/plain' --header 'X-Requested-By: ThoughtSpot
 			"name": "PART",
 			"fqn": "a7fc012e-bdb3-4e75-9ce4-b3f731d90136"
 		}],
-		"joins": [{
-			"id": "Lineorder PartKey - Part PartKey",
-			"name": "Lineorder PartKey - Part PartKey",
-			"source": "LINEORDER",
-			"destination": "PART"
-		}],
-		"table_paths": [{
-			"id": "LINEORDER_1",
-			"table": "LINEORDER",
-			"join_path": [{}]
-		}, {
-			"id": "PART_1",
-			"table": "PART",
-			"join_path": [{
-				"join": ["Lineorder PartKey - Part PartKey"]
-			}]
-		}],
 		"search_query": "[LINEORDER_1::Revenue] [PART_1::Color]",
 		"answer_columns": [{
 			"name": "Total Revenue"
