@@ -153,7 +153,7 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 
 <!--Since 7.0.0-->
 <dlentry>
-<dt>Mexico></dt>
+<dt>Mexico</dt>
 <dd>
 <details><summary><strong>State</strong></summary>
 {% include content/geo/mx-state.md %}
