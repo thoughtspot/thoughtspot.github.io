@@ -6,6 +6,7 @@ sidebar: mydoc_sidebar
 redirect_from:
 - /6.3.0/release/help-center.html
 - /6.3.0.CU1/release/help-center.html
+- /7.0.0.mar.sw/release/help-center.html
 permalink: /:collection/:path.html
 ---
 

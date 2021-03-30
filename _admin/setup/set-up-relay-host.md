@@ -5,6 +5,7 @@ summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot 
 redirect_from:
 - /6.3.0/admin/setup/set-up-relay-host.html
 - /6.3.0.CU1/admin/setup/set-up-relay-host.html
+- /7.0.0.mar.sw/admin/setup/set-up-relay-host.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

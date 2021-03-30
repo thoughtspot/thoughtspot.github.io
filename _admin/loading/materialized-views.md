@@ -5,6 +5,7 @@ summary: "You can materialize a view to improve its performance."
 redirect_from:
 - /6.3.0/admin/loading/materialized-views.html
 - /6.3.0.CU1/admin/loading/materialized-views.html
+- /7.0.0.mar.sw/admin/loading/materialized-views.html
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -5,6 +5,7 @@ summary: "ThoughtSpot enables you to set up integration with LDAP using Active D
 redirect_from:
 - /6.3.0/admin/setup/LDAP-config-AD.html
 - /6.3.0.CU1/admin/setup/LDAP-config-AD.html
+- /7.0.0.mar.sw/admin/setup/LDAP-config-AD.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
