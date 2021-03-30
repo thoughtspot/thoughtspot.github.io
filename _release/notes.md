@@ -4,6 +4,7 @@ toc: false
 last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 redirect_from:
+- /7.0.0.mar.sw/release/notes.html
 - /6.3.0/release/notes.html
 - /6.3.0.CU1/release/notes.html
 - /6.3.1/release/notes.html

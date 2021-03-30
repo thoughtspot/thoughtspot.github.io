@@ -3,6 +3,7 @@ title: [Redshift connection reference]
 summary: Learn about the fields used to create a Redshift connection using ThoughtSpot Embrace.
 last_updated: 01/24/2020
 redirect_from:
+- /7.0.0.mar.sw/data-integrate/embrace/embrace-redshift-reference.html
 - /6.3.0/data-integrate/embrace/embrace-redshift-reference.html
 - /6.3.0.CU1/data-integrate/embrace/embrace-redshift-reference.html
 sidebar: mydoc_sidebar
