@@ -65,6 +65,11 @@ Here are the most significant new features and improvements in the 7.0.0 Softwar
 <dd><a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> introduces new users to ThoughtSpot's Search experience by walking them through simple search scenarios on sample data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar. Additionally, you can use <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> to create sample search queries on your own data.</dd>
 </dlentry>
 
+<dlentry id="geomaps">
+<dt>Geomap support</dt>
+<dd>We added support for states and state abbreviations, and also postal codes, for Mexico. See <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.</dd>
+</dlentry>
+
 </dl>
 
 {: id="7-0-data-engineer"}

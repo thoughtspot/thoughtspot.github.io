@@ -151,6 +151,19 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<!--Since 7.0.0-->
+<dlentry>
+<dt>Mexico</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/mx-state.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/mx-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.3.0-->
 <dlentry>
 <dt>Netherlands</dt>
