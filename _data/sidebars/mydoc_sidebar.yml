@@ -1867,6 +1867,9 @@ entries:
     - title: Requirements and guidelines
       url: /data-integrate/dataflow/dataflow-requirements-guidelines.html
       output: web,dataflowGD
+    - title: Tips
+      url: /data-integrate/dataflow/dataflow-tips.html
+      output: web,dataflowGD
     - levelTwoTitle: Database Connections
       output: web,dataflowGD
       levelTwoItems:

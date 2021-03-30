@@ -103,6 +103,11 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 
 <p>All DataFlow database connections (as listed in <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databases">DataFlow Databases</a>), support retrieving data through a custom SQL expression.</p>
 
+<p>New <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html">DataFlow Tips</a> section explains how to:</p>
+<ul>
+<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#truncate-table">Truncate a table</a> during syncs, instead of deleting</li>
+
+</ul>
 </dd>
 
 </dlentry>
