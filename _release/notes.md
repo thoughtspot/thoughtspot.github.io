@@ -5,9 +5,6 @@ last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 redirect_from:
 - /7.0.0.mar.sw/release/notes.html
-- /6.3.0/release/notes.html
-- /6.3.0.CU1/release/notes.html
-- /6.3.1/release/notes.html
 permalink: /:collection/:path.html
 ---
 ThoughtSpot version 7.0 is now available. These release notes include information about new and enhanced features.
@@ -22,11 +19,12 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [7.0 New Features](#7-0-new)
-   * [For the Analyst](#7-0-analyst)
-   * [For the Business User](#7-0-business-user)
-   * [For the Data Engineer](#7-0-data-engineer)
-   * [For the IT Ops Engineer](#7-0-it-ops-engineer)
+Here are the most significant new features and improvements in the 7.0.0 Software Release:
+
+* [For the Analyst](#7-0-analyst)
+* [For the Business User](#7-0-business-user)
+* [For the Data Engineer](#7-0-data-engineer)
+* [For the IT Ops Engineer](#7-0-it-ops-engineer)
 
 {: id="7-0-analyst"}
 ### For the Analyst
@@ -51,7 +49,10 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <li><strong>Support for selective and linked filters</strong>: You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
 
   </ul></dd></dlentry>
-
+<dlentry id="join-ui">
+<dt>Join creation interface</dt>
+<dd>We improved the join workflows to support adding and updating joins on tables, worksheets, and views. See <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html">Join a table, View, or Worksheet to another data source</a>.
+</dlentry>
 </dl>
 
 {: id="7-0-business-user"}
