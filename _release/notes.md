@@ -49,9 +49,10 @@ Here are the most significant new features and improvements in the 7.0.0 Softwar
 <li><strong>Support for selective and linked filters</strong>: You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
 
   </ul></dd></dlentry>
+
 <dlentry id="join-ui">
 <dt>Join creation interface</dt>
-<dd>We improved the join workflows to support adding and updating joins on tables, worksheets, and views. See <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html">Join a table, View, or Worksheet to another data source</a>.
+<dd>We improved the join workflows to support adding and updating joins on tables, worksheets, and views. See <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html">Join a table, View, or Worksheet to another data source</a>.</dd>
 </dlentry>
 </dl>
 
