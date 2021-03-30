@@ -60,21 +60,71 @@ This API allows you to validate and import TML objects.
 ##### cURL
 
 ```
-curl -X POST
---header 'Accept: text/plain'
---header 'X-Requested-By: ThoughtSpot'
---data-urlencode 'import_objects=[{   
-  "guid": "12289fad-f230-485e-8c65-e36082eebf44",         
-  "answer": {            
-     "name": "Basic Answer 1",               
-     "description":
-       "This is basic answer with table and headline visualizations.",          
-     "tables": [{                    
-       "id": "LINEORDER",                      "name": "LINEORDER",                    "fqn": "2445fe81-30d6-46fa-9f42-f6b1b4e01623"           }, {                    "id": "PART",                   "name": "PART",                         "fqn": "a7fc012e-bdb3-4e75-9ce4-b3f731d90136"           }],             "joins": [{                     "id": "Lineorder PartKey - Part PartKey",                       "name": "Lineorder PartKey - Part PartKey",                     "source": "LINEORDER",                  "destination": "PART"           }],             "table_paths": [{                       "id": "LINEORDER_1",                    "table": "LINEORDER",                   "join_path": [{}]               }, {                    "id": "PART_1",                         "table": "PART",                        "join_path": [{                                 "join": ["Lineorder PartKey - Part PartKey"]                    }]              }],             "search_query": "[LINEORDER_1::Revenue] [PART_1::Color]",               "answer_columns": [{                    "name": "Total Revenue"                 }, {                    "name": "Color"                 }],             "table": {                      "table_columns": [{                             "column_id": "Color",                           "headline_aggregation": "COUNT_DISTINCT"                        }, {                            "column_id": "Total Revenue",                           "headline_aggregation": "SUM"                   }],                     "ordered_column_ids": ["Color", "Total Revenue"]                },              "chart": {                      "type": "COLUMN",                       "chart_columns": [{                             "column_id": "Total Revenue"                    }, {                            "column_id": "Color"                    }],                     "axis_configs": [{                              "x": ["Color"],                                 "y": ["Total Revenue"]                  }]              },              "display_mode": "TABLE_MODE"    } }]'
+curl -X POST --header 'Accept: text/plain' --header 'X-Requested-By: ThoughtSpot' --data-urlencode 'import_objects=[{
+	"guid": "12289fad-f230-485e-8c65-e36082eebf44",
+	"answer": {
+		"name": "Basic Answer 1",
+		"description": "This is basic answer with table and headline visualizations.",
+		"tables": [{
+			"id": "LINEORDER",
+			"name": "LINEORDER",
+			"fqn": "2445fe81-30d6-46fa-9f42-f6b1b4e01623"
+		}, {
+			"id": "PART",
+			"name": "PART",
+			"fqn": "a7fc012e-bdb3-4e75-9ce4-b3f731d90136"
+		}],
+		"joins": [{
+			"id": "Lineorder PartKey - Part PartKey",
+			"name": "Lineorder PartKey - Part PartKey",
+			"source": "LINEORDER",
+			"destination": "PART"
+		}],
+		"table_paths": [{
+			"id": "LINEORDER_1",
+			"table": "LINEORDER",
+			"join_path": [{}]
+		}, {
+			"id": "PART_1",
+			"table": "PART",
+			"join_path": [{
+				"join": ["Lineorder PartKey - Part PartKey"]
+			}]
+		}],
+		"search_query": "[LINEORDER_1::Revenue] [PART_1::Color]",
+		"answer_columns": [{
+			"name": "Total Revenue"
+		}, {
+			"name": "Color"
+		}],
+		"table": {
+			"table_columns": [{
+				"column_id": "Color",
+				"headline_aggregation": "COUNT_DISTINCT"
+			}, {
+				"column_id": "Total Revenue",
+				"headline_aggregation": "SUM"
+			}],
+			"ordered_column_ids": ["Color", "Total Revenue"]
+		},
+		"chart": {
+			"type": "COLUMN",
+			"chart_columns": [{
+				"column_id": "Total Revenue"
+			}, {
+				"column_id": "Color"
+			}],
+			"axis_configs": [{
+				"x": ["Color"],
+				"y": ["Total Revenue"]
+			}]
+		},
+		"display_mode": "TABLE_MODE"
+	}
+}]'
 --data-urlencode 'import_policy=PARTIAL'
---data-urlencode 'force_create=true'
-'http://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/tml/import'
---cookie 'userGUID=59481331-ee53-42be-a548-bd87be6ddd4a; JSESSIONID=580e3f28-813b-4723-b651-ff89c84da240'
+--data-urlencode 'force_create=true' 'http://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/tml/import'
+--cookie 'userGUID=59481331-ee53-42be-a548-bd87be6ddd4a; JSESSIONID=04a56dde-ec1c-4066-adf1-77e6ea1c50ea'
 ```
 
 {% include note.html content="You must send the <code>X-Requested-By</code> header in your request. Without it, the request fails." %}
@@ -87,7 +137,7 @@ https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/tml/import
 
 ### Response Example
 ```
-{"object": [{"response": {"status": {"status_code": "OK"},"header": {"id_guid": "e544ff88-618f-40e0-bf60-b60d5b804c10","name": "Basic Answer 1","description": "This is basic answer with table and headline visualizations.","author_guid": "59481331-ee53-42be-a548-bd87be6ddd4a","owner_guid": "e544ff88-618f-40e0-bf60-b60d5b804c10","metadata_type": "QUESTION_ANSWER_BOOK"}}}]}
+{"object": [{"response": {"status": {"status_code": "OK"},"header": {"id_guid": "a09a3787-e546-42cb-888f-c17260dd1229","name": "Basic Answer 1","description": "This is basic answer with table and headline visualizations.","author_guid": "59481331-ee53-42be-a548-bd87be6ddd4a","owner_guid": "a09a3787-e546-42cb-888f-c17260dd1229","metadata_type": "QUESTION_ANSWER_BOOK"}}}]}
 ```
 
 ### HTTP status codes
@@ -156,7 +206,8 @@ This API allows you to export TML objects.
 curl -X POST
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Accept: text/plain' \
---header 'X-Requested-By: ThoughtSpot' -d 'export_ids=%5B%226abd2843-afef-4c2f-bf2f-8fba065330e2%22%2C%20%22d305bc51-688b-414f-badc-94579d48308c%22%5D&formattype=YAML&export_associated=false' \
+--header 'X-Requested-By: ThoughtSpot'
+-d 'export_ids=%5B%226abd2843-afef-4c2f-bf2f-8fba065330e2%22%2C%20%22d305bc51-688b-414f-badc-94579d48308c%22%5D&formattype=YAML&export_associated=false' \
 'http://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/tml/export'
 ```
 
