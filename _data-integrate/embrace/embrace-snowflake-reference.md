@@ -3,6 +3,7 @@ title: [Snowflake connection reference]
 summary: Learn about the fields used to create a Snowflake connection with ThoughtSpot Embrace.
 last_updated: 01/24/2020
 redirect_from:
+- /7.0.0.mar.sw/data-integrate/embrace/embrace-snowflake-reference.html
 - /6.3.0/data-integrate/embrace/embrace-snowflake-reference.html
 - /6.3.0.CU1/data-integrate/embrace/embrace-snowflake-reference.html
 sidebar: mydoc_sidebar
