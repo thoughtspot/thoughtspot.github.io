@@ -4,8 +4,6 @@ summary: Learn about the fields used to create a Teradata connection using Thoug
 last_updated: 06/18/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/embrace/embrace-teradata-reference.html
-- /6.3.0/data-integrate/embrace/embrace-teradata-reference.html
-- /6.3.0.CU1/data-integrate/embrace/embrace-teradata-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
