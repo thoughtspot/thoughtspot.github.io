@@ -2476,6 +2476,9 @@ entries:
       - title: DataFlow mail setup
         url: /data-integrate/dataflow/dataflow-mail-setup.html
         output: web,dataflowGD
+      - title: DataFlow server configuration
+        url: /data-integrate/dataflow/dataflow-configuration-options.html
+        output: web,dataflowGD
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
