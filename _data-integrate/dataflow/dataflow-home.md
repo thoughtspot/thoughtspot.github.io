@@ -30,7 +30,7 @@ With a single glance, the Home interface for Dataflow reports the sync performan
    - Unsuccessful Syncs
    - Total Rows Loaded   
 
-3. **Daily Syncs by Status** is an Area chart that shows both Successful and Unsuccessful syncs over time.
+3. **Daily Syncs by Status** is an Area chart that shows _In Progress_, _Successful_, and _Unsuccessful_ syncs over time.
 
 4. **Daily Rows Loaded by Connection** is a column chart that shows the number of rows loaded for each connection over time.
 
