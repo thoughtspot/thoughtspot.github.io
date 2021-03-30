@@ -1,164 +1,242 @@
 ---
 title: [Search Data API]
-last_updated: 1/28/2021
+last_updated: 3/30/2021
 summary: "To use the data retrieved from a search query programmatically, you can first query this data using the ThoughtSpot Search Data API."
 redirect_from:
 - /app-integrate/reference/search-data-api.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+To use the data retrieved from a search query, you can use the ThoughtSpot search data API.
 
-It is often difficult to programmatically use the result set of a query that runs in the ThoughtSpot UI search  bar.  To use the data that we retrieve from a query programmatically, you can use ThoughtSpot Search Data API.
-
-When issuing a query through the ThoughtSpot UI, users make selections to disambiguate a query. Because selection is not possible with an API approach, we modified the API query language to include query disambiguation. See [Components of a search query](#components).
-
-## Resource URL
-
-<code class="api-method-post">post</code>/tspublic/v1/searchdata
-
-## Request Parameters
-
-<table>
-   <colgroup>
-      <col style="width:20%" />
-      <col style="width:15%" />
-      <col style="width:65%" />
-   </colgroup>
-   <thead>
-      <tr>
-         <th>Query Parameter</th>
-         <th>Data Type</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><code>query_string</code></td>
-         <td>string</td>
-         <td>The data search query.<p>See <a href="#components">Components of a search query</a>.</p></td>
-
-      </tr>
-     <tr>
-         <td><code>data_source_guid</code></td>
-         <td>string</td>
-         <td>The GUID of the data source, either a worksheet, a view, or a table.<p>Example: <code>["4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1"]</code></p>
-         </td>
-      </tr>
-      <tr>
-         <td><code>batchsize</code></td>
-         <td>integer</td>
-         <td>The batch size for loading search objects.<p>The system default is <code>-1</code>.</p></td>
-
-      </tr>
-      <tr>
-         <td><code>pagenumber</code></td>
-         <td>integer</td>
-         <td>Alternate way to specify <code>1</code>-based offset:
-         <p><code>indexingOffset = (pageNumber - 1) * batchSize</code></p>
-         <p>The system default is <code>-1</code>.</p></td></tr>
-     <tr>
-         <td><code>offset</code></td>
-         <td>integer</td>
-         <td>Specify a <code>1</code>-based offset.
-         <p>The system default is <code>-1</code>.</p></td>
-
-      </tr>
-      <tr>
-         <td><code>formattype</code></td>
-         <td>string</td>
-         <td>The format of the data.<p>Valid values are <code>COMPACT</code> (default) or <code>FULL</code> JSON.</p></td>
-      </tr>
-   </tbody>
-</table>
+When issuing a query through the ThoughtSpot UI, users make selections to disambiguate a query.
+It is often difficult to programmatically use the result set of a query that runs in the ThoughtSpot UI search bar. Because the selection is not possible with an API approach, the API query language is modified to include query disambiguation.
 
 {: id="components"}
 ## Components of a search query
 
-In ThoughtSpot Query Language, we classify components of a query into various types of tokens: _[Column](#column)_, _[Operator](#operator)_, _[Value](#value)_, _[Date Bucket](#date-bucket)_, _[Keyword](#keyword)_, and _[Calendar](#calendar)_:
+In ThoughtSpot Query Language, the components of a query are classified into various types of tokens: [Column](#column), [Operator](#operator), [Value](#value), [Date Bucket](#date-Bucket), [Keyword](#keyword), and [Calendar](#calendar):
 
 <dl>
 <dlentry id="column">
 <dt>Column</dt>
 <dd>
 <p>Columns must be enclosed in square brackets, <code>[ ]</code>.</p>
-<p><strong>Example</strong> In the query <code>revenue by ship mode</code>, both <code>revenue</code> and <code>ship mode</code> are columns. A valid query for the API is:</p>
-<pre>[revenue] by [ship mode]</pre>
-</dd>
-</dlentry>
-<dlentry id="operator">
-<dt>Operator</dt>
-<dd>
-<p>ThoughtSpot supports various operators such as <code>=</code>, <code>!=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>&lt;</code>, <code>contains</code>, <code>not contains</code>, and so on. Use these operators in the API query in the same manner as in the UI.</p>
-<p><strong>Example</strong> Specify <code>revenue</code> over 1000, and limit <code>ship mode</code> to 'air':</p>
-<pre>[revenue] &gt; 1000 [ship mode] = &lsquo;air&rsquo;</pre>
+<p>For example, in the query revenue by ship mode, both revenue and ship mode are columns. A valid query for the API is:</p>
+<code>[revenue] by [ship mode]</code>
 </dd></dlentry>
 
-  <dlentry id="value">
-  <dt>Value</dt>
-<dd><p>String (text) and date values must be enclosed within quotes, <code>&rsquo; &rsquo;</code>. Do not use quotes for numeric values, except for dates. </p>
-  <p>When using multiple values, separate them by a comma, <code>,</code>.</p>
-  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue top 2 ship mode</code>, the equivalent API query is:</p>
-  <pre>[revenue] top 2 [ship mode]</pre>
-  <p><strong>Example</strong>  When a ThoughtSpot UI query is <code>revenue ship mode = air</code>, the equivalent API query is:</p>
-  <pre>[revenue] [ship mode] = &lsquo;air&rsquo;</pre></dd>
-  </dlentry>
 
-  <dlentry id="date-bucket">
-    <dt>Date Bucket</dt>
+<dlentry id="operator">
+<dt>Operator</dt>
+<dd> <p>
+ThoughtSpot supports various operators such as =, !=, &gt;, &gt;=, ⇐, &lt;, contains, not contains, and so on. Use these operators in the API query in the same manner as in the UI.
+</p>
+<p>For example, specify revenue over 1000, and limit ship mode to 'air': </p>
+
+<code>[revenue] > 1000 [ship mode] = ‘air’ </code></dd></dlentry>
+
+<!-- -->
+
+<dlentry id="value">
+<dt>Value</dt>
+<dd>  
+<p>String (text) and date values must be enclosed within quotes, ’ ’. Do not use quotes for numeric values, except for dates.</p>
+
+<p>When using multiple values, separate them by a comma.</p>
+
+<p>For example, when a ThoughtSpot UI query is revenue top 2 ship mode, the equivalent API query is:</p>
+
+<code>[revenue] top 2 [ship mode]</code>
+
+For example, when a ThoughtSpot UI query is revenue ship mode = air, the equivalent API query is:
+
+<code>[revenue] [ship mode] = ‘air’</code></dd></dlentry>
+
+<!-- -->
+<dlentry id="date-bucket">
+  <dt>Date Bucket</dt>
 <dd>
-<p>In the ThoughtSpot UI, when there are several date columns, users can bind date bucket tokens to a specific column. When using the API, this binding between the date column and the date bucket must be made explicit. The column with which the date bucket is bound, and the date bucket token, must be separated by a period, <code>.</code>.</p>
-<p>Single word date buckets can be expressed <em>as is</em>. Multi-word date buckets must be enclosed within quotes.</p>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue commit date monthly</code>, and if <code>monthly</code> is bound to <code>commit date</code>, the equivalent API query is:</p>
-<pre>[revenue] [commit date].monthly</pre>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue day of week = 5</code>, and if <code>day of week</code> is bound to <code>commit date</code>, the equivalent API query is:</p>
-<pre>[revenue] [commit date].'day of week' = 5</pre>
-</dd>
-  </dlentry>
+<p>In the ThoughtSpot UI, when there are several date columns, users can bind date bucket tokens to a specific column. When using the API, this binding between the date column and the date bucket must be made explicit. Use a period to separate the column with which the date bucket is bound, and the date bucket token.</p>
 
-  <dlentry id="keyword">
-    <dt>Keyword</dt>
-    <dd><p>Use keywords in the API query in the same manner as in the UI.</p>
-    <p><strong>Example</strong> When a ThoughtSpot UI query uses keywords <code>growth of</code> and <code>sort by</code>, the equivalent API query is:</p>
-    <pre>growth of [revenue] by [commit date]</pre></dd>
-  </dlentry>
+<p>Single word date buckets can be expressed as is. Multi-word date buckets must be enclosed within quotes.</p>
 
-  <dlentry id="calendar">
-    <dt>Calendar</dt>
-    <dd><p>You can specify a custom calendar in the query. Use the <code>calendar.<em>calendar_name</em></code> format explicitly.</p>
-  <p>When the calendar name contains multiple words, these words must be enclosed in single quotes.</p>
-<p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date fiscal</code>, where the name of the calendar is <code>fiscal</code>, the equivalent API query is:</p>
-  <pre>[revenue] by [commit date] calendar.fiscal</pre>
-  <p><strong>Example</strong> When a ThoughtSpot UI query is <code>revenue by commit date my calendar</code>, where the name of the calendar is <code>my calendar</code>, the equivalent API query is:</p>
-  <pre>[revenue] by [commit date] calendar.'my calendar'</pre></dd>
-  </dlentry>
-</dl>
+<p>For example, when a ThoughtSpot UI query is revenue commit date monthly, and if monthly is bound to commit date, the equivalent API query is:</p>
 
-## Request example
+<code>[revenue] [commit date].monthly</code>
 
-##### cURL - COMPACT
+When a ThoughtSpot UI query is revenue day of week = 5, and if day of week is bound to commit date, the equivalent API query is as follows:
+
+<code>[revenue] [commit date].'day of week' = 5 </code></dd></dlentry>
+
+<dlentry id="keyword">
+  <dt>Keyword</dt>
+  <dd>  
+<p>Use keywords in the API query in the same manner as in the UI.</p>
+
+<p>For example, when a ThoughtSpot UI query uses keywords growth of and sort by, the equivalent API query is as follows:</p>
+
+<code>growth of [revenue] by [commit date]</code></dd></dlentry>
+
+<dlentry id="calendar">
+  <dt>Calendar</dt>
+  <dd>
+<p>You can specify a custom calendar in the query. Use the calendar.calendar\_name format explicitly. </p>
+
+<p>When the calendar name contains multiple words, enclose these words in single quotes.</p>
+
+<p>For example, when a ThoughtSpot UI query is revenue by commit date fiscal, where the name of the calendar is fiscal, the equivalent API query is as follows:
+</p>
+  <code> [revenue] by [commit date] calendar.fiscal</code>
+
+For example, when a ThoughtSpot UI query is revenue by commit date my calendar, where the name of the calendar is my calendar, the equivalent API query is:
+
+<code> [revenue] by [commit date] calendar.'my calendar' </code></dd></dlentry></dl>
+
+## Limitations of search data API
+
+-   To avoid join path ambiguities, a query can use only a single data source.
+-   Search execution of query strings is not case sensitive.
+-   All column names in the data source must have unique names and must pass the *case insensitivity* test.
+
+    For example, Columns `[Revenue]` and `[revenue]` are not unique.
+
+-   Column names cannot contain square brackets, `[` or `]`.
+-   Values must be enclosed in quotes, `‘’`, but they cannot contain quotes.
+-   The API does not support **in-query formula** definitions. To use a formula, create it on the worksheet or a table using the ThoughtSpot UI, and then use the named formula inside the API query.
+-   Users must be authenticated and have read access to the data source.  
+-   Your browser locale must be `en-US`. Swagger does not accept other variations of English, such as British English, or other languages. Your search keywords must also be in American English. Your column names and other data values do not need to be in American English. You can change your preferred locale to `en-US` in your browser settings.
+
+## How to use the search query API
+
+To test the search query API, follow these steps:
+
+### Determine the GUID of the data source
+
+1.  In a web browser tab, navigate to your ThoughtSpot application instance and log in as an admin user:
+
+2.  From the top navigation menu, click **Data**.
+
+    Alternatively, navigate to the following address:
+
+    ```
+    https://<ThoughtSpot-host>/#/data/tables/
+```
+3.  Select a data source that you plan to query: a worksheet, a table, or a view.
+
+4.  In the address bar of the web browser, note the GUID of the selected data source; it is the last string of the address. For example, in the following address string, the GUID is `9d93a6b8-ca3a-4146-a1a1-e908b71b963f`:
+
+        https://<ThoughtSpot-host>/#/data/tables/9d93a6b8-ca3a-4146-a1a1-e908b71b963f
+
+5.  Copy and save the GUID.
+
+### Run the search query
+
+1.  In another browser, navigate to the following address:
+
+    ```
+    https://<ThoughtSpot-host>/external/swagger/#!/tspublic%2Fv1/searchData
+    ```
+
+2.  Click `POST /tspublic/v1/searchdata`
+
+3.  In the **Parameters** interface, enter the values for the following:
+
+    -   `query_string` is the actual search query. See [Components of a search query](#components).
+
+    -   `data_source_guid` is the [identifier you obtained earlier](#get-guid).
+
+        You can leave other parameters at their default value.
+
+4.  Click **Try it out**, and note the results.
+
+    You can also verify if the query returns the same data when you run it in the ThoughtSpot UI search bar (with slightly different syntax).
+
+## Search data API reference
+
+### Resource URL
+
+    POST /tspublic/v1/searchdata
+
+### Request parameters
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Query Parameter</th>
+<th style="text-align: left;">Data Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p><code>query_string</code></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>The data search query.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>data_source_guid</code></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>The GUID of the data source, either a worksheet, a view, or a table.</p>
+<p>Example: 4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><code>batchsize</code></p></td>
+<td style="text-align: left;"><p>integer</p></td>
+<td style="text-align: left;"><p>The batch size for loading search objects.</p>
+<p>The system default is -1.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>pagenumber</code></p></td>
+<td style="text-align: left;"><p>integer</p></td>
+<td style="text-align: left;"><p>Alternate way to set offset for the starting point of the search results returned from the query. The default value is <code>-1</code>.</p>
+<p><code>indexingOffset = (pageNumber - 1) * batchSize</code></p>
+<p>The system default is -1.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><code>offset</code></p></td>
+<td style="text-align: left;"><p>integer</p></td>
+<td style="text-align: left;"><p>Attribute to offset the starting point of the search results returned from the query. Specify a 1-based offset. The default value is <code>-1</code>.</p>
+<p>The system default is -1.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>formattype</code></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>The format of the data.</p>
+<p>Valid values are <code>COMPACT</code> or <code>FULL</code> JSON. The default value is <code>COMPACT</code>.</p></td>
+</tr>
+</tbody>
+</table>
+
+### Example requests
+
+##### cURL (COMPACT)
+
+``` cURL
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT'
+```
+##### Request URL (COMPACT)
 
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT'
+https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT
 ```
-
-##### Request URL - COMPACT
-
-```
-https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT
-```
-
-##### cURL - FULL
+##### cURL (FULL)
 
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL’
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL’
+```
+##### Request URL (FULL)
+
+```
+https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL
 ```
 
-##### Request URL - FULL
-```
-https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=FULL
-```
-
-## Response example
+### Example response
 
 ```
 {
@@ -196,75 +274,9 @@ https://<instance>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%2
 }
 ```
 
-## Using the Search Data API
+### Response codes
 
-To test the search query API, follow these steps:
-
-{: id="get-guid"}
-##### Determine the GUID of the data source
-
-1. In a Web Browser tab, navigate to the following address, and log in as admin user:
-
-   ```
-   https://<instance>/
-   ```
-
-2. In the top navigation, click **Data**.
-
-   Alternatively, navigate to the following address:
-
-   ```
-   https://<instance>/#/data/tables/
-   ```
-
-3. Select a data source that you plan to query: a worksheet, a table, or a view.
-
-4. In the address bar of the Web Browse, note the GUID of the selected data source; it is the last string of the address.  For example, in the following address string, the GUID is `9d93a6b8-ca3a-4146-a1a1-e908b71b963f`:
-
-    ```
-    https://<instance>/#/data/tables/9d93a6b8-ca3a-4146-a1a1-e908b71b963f
-    ```
-
-5. Copy and save the GUID.
-
-##### Run the Search Data API
-
-1. In another browser, navigate to the following address:
-
-  ```
-  https://<instance>/external/swagger/#!/tspublic%2Fv1/searchData
-  ```
-
-2. Click on `POST /tspublic/v1/searchdataTS`.
-
-   The parameter interface appears.
-
-3. In the **Parameters** interface, enter the values for the following:
-
-    - `query_string` is the actual search query. See [Components of a search query](#components).
-    - `data_source_guid` is the identifier you  obtained earlier, in [Determine the GUID of the data sources](#get-guid).
-
-    You can leave other parameters at their default value.
-
-4. Click **Try it out!**, and note the results.
-
-   You may wish to check that the same query, when you run it in the ThoughtSpot UI search bar (with slightly different syntax), returns the same data.
-
-## Limitations of Search Query API
-
-- To avoid join path ambiguities, a query can use only a **single data source**.
-
-- Search execution of query strings is **case insensitive**.
-
-- All Column names in the data source must have **unique names** that also pass the "case insensitivity" test.
-
-  For example, Columns `[Revenue]` and `[revenue]` are not unique.
-- Column names cannot contain square brackets, `[` or `]`.
-
-- Values must be enclosed in quotes, `‘’`, but they cannot contain quotes.
-
-- The API does not support **in-query formula** definitions. To use a formula, first create it on the worksheet or a table using the ThoughtSpot UI, and then use the named formula inside the API query.
-
-- Users must be **authenticated** and have **read access** to the data source.
-
-- Your browser locale must be `en-US`. Swagger does not accept other variations of English, such as British English, or other languages. Your search keywords must also be in American English. Your column names and other data values do **not** need to be in American English. You can change your preferred locale to `en-US` in your browser settings.
+| HTTP Code | Description                        |
+|-----------|------------------------------------|
+| **200**   | Successful retrieval of data from the data source |
+| **400**   | Invalid query/data source          |

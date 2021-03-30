@@ -1322,14 +1322,14 @@ entries:
     - levelTwoTitle: API reference
       output: web,refGd
       levelTwoItems:
-      - title: Public API reference
-        url: /reference/api/public-api-reference.html
+      - title: Rest API reference
+        url: /reference/api/rest-api-reference.html
         output: web,refGd
       - title: Pinboard Data API
         url: /reference/api/pinboarddata.html
         output: web,refGd
-      - title: Pinboard Download API
-        url: /reference/api/pinboard-download-api.html
+      - title: Pinboard Export API
+        url: /reference/api/pinboard-export-api.html
         output: web,refGd
       - title: Metadata API
         url: /reference/api/metadata-api.html

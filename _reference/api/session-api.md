@@ -1,101 +1,146 @@
 ---
 title: [Session API]
-summary: "The Session APIs enable you to manage the sessions of existing users."
-last_updated: 1/28/2021
+summary: "The Session APIs enable you to programmatically manage ThoughtSpot user sessions."
+last_updated: 3/30/2021
 redirect_from:
 - /app-integrate/reference/session-api.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-## Managing login
-Use this API to authenticate and login a user.
+The Session APIs enable you to manage the sessions of ThoughtSpot users.
+
+## Log in a user
+
+Use this API to authenticate and log in a user.
 
 ### Resource URL
-<code class="api-method-post">post</code> /tspublic/v1/session/login
-
+```
+POST /tspublic/v1/session/login
+```
 ### Request Parameters
 
-<table>
-   <colgroup>
-   <col style="width:20%" />
-   <col style="width:15%" />
-   <col style="width:65%" />
-   </colgroup>
-   <thead class="thead" style="text-align:left;">
-      <tr>
-         <th>Form Parameter</th>
-         <th>Data Type</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user.</td> </tr>
-    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user.</td> </tr>
-    <tr> <td><code>rememberme</code></td> <td>boolean</td> <td>A flag to remember the user session. The system default is <code>false</code>.</td></tr>
-  </tbody>
-</table>
+| Form Parameter | Data Type | Description                                                         |
+|----------------|-----------|---------------------------------------------------------------------|
+| `username`     | string    | Username of the user account.                                       |
+| `password`      | string    | The password of the user account.                                   |
+| `rememberme`     | boolean   | A flag to remember the user session. The system default is `false`. |
 
-### Request Example
+### Example requests
 ##### cURL
 
 ```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'username=test&password=fhfh2323bbn&rememberme=false' 'https://<instance>/callosum/v1/tspublic/v1/session/login'
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'username=test&password=fhfh2323bbn&rememberme=false' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/session/login'
 ```
 
 ##### Request URL
+```
+https://<ThoughtSpot-host>/tspublic/v1/session/login
+```
+### Response codes
 
-```
-https://<instance>/callosum/v1/tspublic/v1/session/login
-```
-### Response Example
-```
-Not applicable
-204 - Successful login
-```
+| HTTP Code | Description                |
+|-----------|----------------------------|
+| **200**   | User logged in             |
+| **204**   | Successful login           |
+| **401**   | Login failure/unauthorized request|
 
-## Managing logout
+## Obtain an authentication token for a user
 
-Use this API to log a current user out of an existing session. The user details are captured from the active user session.
+Use this API to obtain an authentication token. The authentication token is required if a token-based trusted authentication service is used for authenticating ThoughtSpot users.
 
 ### Resource URL
-<code class="api-method-post">post</code> /tspublic/v1/session/logout
-
-### Request Example
-##### cURL
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/session/logout'
+POST /tspublic/v1/session/auth/token
+```
+### Request parameters
+
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Form Parameter</th>
+<th style="text-align: left;">Data Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p><code>secret_key</code></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>The authentication token string provided by the ThoughtSpot application server.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>username</code></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>The user name of the user configured in ThoughtSpot.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><code>access_level</code></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>User access permission. Valid values are:</p>
+<ul>
+<li><p><code>FULL</code> - Allow full access.</p></li>
+<li><p><code>REPORT_BOOK_VIEW</code> - Allow view access to visualizations.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>id</code></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>The GUID of the ThoughtSpot object. This parameter is required if the <code>access_level</code> is set to <code>REPORT_BOOK_VIEW</code>.</p></td>
+</tr>
+</tbody>
+</table>
+
+### Example request
+
+##### cURL
+
+```
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/session/auth/token'
 ```
 
 ##### Request URL
+```
+https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/session/auth/token
+```
+### Example response
 
-```
-https://<instance>/callosum/v1/tspublic/v1/session/logout
-```
+If the request parameters are assigned correct values, the API returns an authentication token for the user.
 
-### Response Example
-```
-Not applicable
-204 - Successful logout
-```
+### Response codes
 
-<!--## Error Codes
-<table>
-   <colgroup>
-      <col style="width:20%" />
-      <col style="width:60%" />
-      <col style="width:20%" />
-   </colgroup>
-   <thead class="thead" style="text-align:left;">
-      <tr>
-         <th>Error Code</th>
-         <th>Description</th>
-         <th>HTTP Code</th>
-      </tr>
-   </thead>
-   <tbody>
-   <tr> <td><code>10000</code></td>  <td>Internal server error.</td> <td><code>500</code></td></tr>
-    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
-    <tr> <td><code>10003</code></td>  <td>Login or logout failure. Unauthorized.</td><td><code>401</code></td></tr>
-  </tbody>
-</table>-->
+| HTTP Code | Description                                         |
+|-----------|-----------------------------------------------------|
+| **200**   | The authentication token is generated successfully. |
+| **401**   | Unauthorized service.                               |
+
+## Log out a user
+
+Use this API to log out a current user from an existing session.
+
+### Resource URL
+```
+POST /tspublic/v1/session/logout
+```
+### Example request
+##### cURL
+
+``` 
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/session/logout'
+```
+##### Request URL
+```
+https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/session/logout
+```
+### Response codes
+
+| HTTP Code | Description                 |
+|-----------|-----------------------------|
+| **200**   | User logged out             |
+| **204**   | Successful logout           |
+| **401**   | Logout failure/unauthorized request|
