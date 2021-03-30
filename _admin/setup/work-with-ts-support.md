@@ -4,8 +4,6 @@ last_updated: 3/4/2020
 summary: "There are several configurations you can set up in your installation to ensure
 your company's support from ThoughtSpot works smoothly."
 redirect_from:
-- /6.3.0/admin/setup/work-with-ts-support.html
-- /6.3.0.CU1/admin/setup/work-with-ts-support.html
 - /7.0.0.mar.sw/admin/setup/work-with-ts-support.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
