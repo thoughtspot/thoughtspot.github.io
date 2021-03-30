@@ -6,6 +6,7 @@ summary: "Many organizations don’t use LDAP or active directory for user authe
 redirect_from:
 - /6.3.0/admin/setup/internal-auth.html
 - /6.3.0.CU1/admin/setup/internal-auth.html
+- /7.0.0.mar.sw/admin/setup/internal-auth.html
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
