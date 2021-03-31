@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content="Prepare the system and ThoughtSpot clusters for installation."> -->
 <meta name="keywords" content=",  ">
-<title>RHEL installation prerequisites | ThoughtSpot</title>
+<title>RHEL and OEL installation prerequisites | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/latest/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,22 +48,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“RHEL installation prerequisites”] | thoughtspot.github.io</title>
+<title>[“RHEL and OEL installation prerequisites”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="[“RHEL installation prerequisites”]" />
+<meta property="og:title" content="[“RHEL and OEL installation prerequisites”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on the correct version ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux" />
-<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on the correct version ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux" />
+<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server" />
+<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server" />
 <link rel="canonical" href="https://docs.thoughtspot.com/latest/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-15T10:15:17-07:00" />
+<meta property="article:published_time" content="2021-03-31T13:19:17-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“RHEL installation prerequisites”]" />
+<meta property="twitter:title" content="[“RHEL and OEL installation prerequisites”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is on the correct version ❏ 5. Enable the hosts to download RHEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Disable SELinux","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/rhel/rhel-prerequisites.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/rhel/rhel-prerequisites.html","headline":"[“RHEL installation prerequisites”]","dateModified":"2021-03-15T10:15:17-07:00","datePublished":"2021-03-15T10:15:17-07:00","@context":"https://schema.org"}</script>
+{"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/appliance/rhel/rhel-prerequisites.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/appliance/rhel/rhel-prerequisites.html","headline":"[“RHEL and OEL installation prerequisites”]","dateModified":"2021-03-31T13:19:17-07:00","datePublished":"2021-03-31T13:19:17-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -406,7 +406,11 @@ $(document).ready(function(){
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/7.0/index.html">latest</a></li><li><a href="/6.3/index.html">6.3</a></li>
+                          <li><a href="/7.0/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.3/index.html">6.3</a></li>
                         
                         
                         
@@ -484,7 +488,7 @@ $(document).ready(function(){
 
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">ThoughtSpot Software</li>
-  <li class="bookSubtitle">Release: 6.3</li>
+  <li class="bookSubtitle">Release: 7.0</li>
 
     <!-- Add link to same page in the latest version if you're on an older version of docs.
        -->
@@ -493,7 +497,7 @@ $(document).ready(function(){
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /appliance/rhel/rhel-prerequisites.html.</li>
-         <li class="small-sidebar-link">Current version is 6.3.</li>
+         <li class="small-sidebar-link">Current version is 7.0.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is appliance.</li>
@@ -518,8 +522,8 @@ $(document).ready(function(){
       
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.3/appliance/rhel/rhel-prerequisites.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/latest/6.3/appliance/rhel/rhel-prerequisites.html</li>
+<li class="small-sidebar-link">newURL is /7.0/appliance/rhel/rhel-prerequisites.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/latest/7.0/appliance/rhel/rhel-prerequisites.html</li>
  -->
 
     <!-- End add link to latest version
@@ -543,6 +547,12 @@ $(document).ready(function(){
               
                 
                   <li><a href="/latest/release/fixed.html">Fixed issues</a></li>
+                
+              
+            
+              
+                
+                  <li><a href="/latest/release/accessibility.html">Accessibility</a></li>
                 
               
             
@@ -575,6 +585,12 @@ $(document).ready(function(){
                   
                       
                           <li><a href="/latest/end-user/onboarding/user-onboarding-experience.html">User onboarding experience</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/end-user/onboarding/search-assist.html">Search Assist</a></li>
                       
                    
                 
@@ -2458,6 +2474,12 @@ $(document).ready(function(){
                 
                   
                       
+                          <li><a href="/latest/admin/worksheets/search-assist-coach.html">Create worksheet onboarding lessons with Search Assist Coach</a></li>
+                      
+                   
+                
+                  
+                      
                           <li><a href="/latest/admin/worksheets/delete-worksheet.html">Delete Worksheets or Tables</a></li>
                       
                    
@@ -3173,54 +3195,54 @@ $(document).ready(function(){
             
               
               <li class="levelTwo">
-                  <a href="#">RHEL Support</a>
+                  <a href="#">RHEL and OEL Support</a>
                   <ul>
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel.html">RHEL overview</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel.html">RHEL and OEL overview</a></li>
                       
                    
                 
                   
                       
-                          <li class="active"><a href="/latest/appliance/rhel/rhel-prerequisites.html">RHEL prerequisites</a></li>
+                          <li class="active"><a href="/latest/appliance/rhel/rhel-prerequisites.html">RHEL and OEL prerequisites</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment artifacts for RHEL</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment artifacts for RHEL and OEL</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel-install-online.html">Online RHEL install</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel-install-online.html">Online RHEL and OEL install</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel-install-offline.html">Offline RHEL install</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel-install-offline.html">Offline RHEL and OEL install</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel-upgrade.html">RHEL upgrade</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel-upgrade.html">RHEL and OEL upgrade</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel-add-node.html">Adding new nodes to clusters in RHEL</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel-add-node.html">Adding new nodes to clusters in RHEL or OEL</a></li>
                       
                    
                 
                   
                       
-                          <li><a href="/latest/appliance/rhel/rhel-packages.html">Packages installed with RHEL</a></li>
+                          <li><a href="/latest/appliance/rhel/rhel-packages.html">Packages installed with RHEL and OEL</a></li>
                       
                    
                 
@@ -3593,6 +3615,12 @@ $(document).ready(function(){
                    
                 
                   
+                      
+                          <li><a href="/latest/data-integrate/embrace/embrace-snowflake-passthrough.html">Passthrough functions</a></li>
+                      
+                   
+                
+                  
                    <li class="levelThree">
                        <a href="#">Snowflake Partner Connect</a>
                        <ul>
@@ -3828,6 +3856,12 @@ $(document).ready(function(){
               
             
               
+                
+                  <li><a href="/latest/data-integrate/dataflow/dataflow-tips.html">Tips</a></li>
+                
+              
+            
+              
               <li class="levelTwo">
                   <a href="#">Database Connections</a>
                   <ul>
@@ -3999,6 +4033,12 @@ $(document).ready(function(){
                               
                             
                         
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html">Utilities</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -4038,6 +4078,39 @@ $(document).ready(function(){
                 
                   
                    <li class="levelThree">
+                       <a href="#">Exadata</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-exadata.html">Overview</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-exadata-add.html">Connect</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-exadata-sync.html">Sync</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-exadata-reference.html">Reference</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                   <li class="levelThree">
                        <a href="#">Google BigQuery</a>
                        <ul>
                         
@@ -4062,6 +4135,45 @@ $(document).ready(function(){
                           
                               
                                   <li><a href="/latest/data-integrate/dataflow/dataflow-google-bigquery-reference.html">Reference</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">Greenplum</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-greenplum.html">Overview</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-greenplum-add.html">Connect</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-greenplum-sync.html">Sync</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-greenplum-reference.html">Reference</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-greenplum-utilities.html">Utilities</a></li>
                               
                             
                         
@@ -4131,6 +4243,12 @@ $(document).ready(function(){
                               
                             
                         
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-ibm-db2-utilities.html">Utilities</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -4194,6 +4312,39 @@ $(document).ready(function(){
                           
                               
                                   <li><a href="/latest/data-integrate/dataflow/dataflow-mariadb-reference.html">Reference</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
+                  
+                   <li class="levelThree">
+                       <a href="#">MemSQL</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-memsql.html">Overview</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-memsql-add.html">Connect</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-memsql-sync.html">Sync</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-memsql-reference.html">Reference</a></li>
                               
                             
                         
@@ -4329,6 +4480,12 @@ $(document).ready(function(){
                               
                             
                         
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-oracle-utilities.html">Utilities</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -4359,6 +4516,12 @@ $(document).ready(function(){
                           
                               
                                   <li><a href="/latest/data-integrate/dataflow/dataflow-postgresql-reference.html">Reference</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-postgresql-utilities.html">Utilities</a></li>
                               
                             
                         
@@ -4560,6 +4723,12 @@ $(document).ready(function(){
                               
                             
                         
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-sql-server-utilities.html">Utilities</a></li>
+                              
+                            
+                        
                       </ul>
                     </li>
                    
@@ -4656,6 +4825,12 @@ $(document).ready(function(){
                           
                               
                                   <li><a href="/latest/data-integrate/dataflow/dataflow-teradata-reference.html">Reference</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-teradata-utilities.html">Utilities</a></li>
                               
                             
                         
@@ -4876,6 +5051,39 @@ $(document).ready(function(){
                     </li>
                    
                 
+                  
+                   <li class="levelThree">
+                       <a href="#">Splunk</a>
+                       <ul>
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-splunk.html">Overview</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-splunk-add.html">Connect</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-splunk-sync.html">Sync</a></li>
+                              
+                            
+                        
+                          
+                              
+                                  <li><a href="/latest/data-integrate/dataflow/dataflow-splunk-reference.html">Reference</a></li>
+                              
+                            
+                        
+                      </ul>
+                    </li>
+                   
+                
                     </ul>
                   </li>
               
@@ -4981,6 +5189,12 @@ $(document).ready(function(){
                   
                       
                           <li><a href="/latest/data-integrate/dataflow/dataflow-mail-setup.html">DataFlow mail setup</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li><a href="/latest/data-integrate/dataflow/dataflow-configuration-options.html">DataFlow server configuration</a></li>
                       
                    
                 
@@ -5424,7 +5638,7 @@ $(document).ready(function(){
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">RHEL installation prerequisites</h1>
+   <h1 class="post-title-main">RHEL and OEL installation prerequisites</h1>
 </div>
 
 
@@ -5486,23 +5700,19 @@ $('#toc').on('click', 'a', function() {
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#install-rhel">3. Install RHEL version 7.8 or 7.9 on all hosts</a></td>
+      <td><a href="#install-rhel">3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#linux-kernel-version">4. Ensure that your Linux kernel is on the correct version</a></td>
+      <td><a href="#linux-kernel-version">4. Ensure that your Linux kernel is correct</a></td>
     </tr>
     <tr>
       <td>❏</td>
-      <td><a href="#enable-hosts">5. Enable the hosts to download RHEL packages</a></td>
+      <td><a href="#enable-hosts">5. Enable the hosts to download RHEL or OEL packages</a></td>
     </tr>
     <tr>
       <td>❏</td>
       <td><a href="#enable-ansible">6. Enable an Ansible Control Server</a></td>
-    </tr>
-    <tr>
-      <td>❏</td>
-      <td><a href="#disable-selinux">7. Disable SELinux</a></td>
     </tr>
   </tbody>
 </table>
@@ -5512,12 +5722,12 @@ $('#toc').on('click', 'a', function() {
 <p>Set up hosts for the ThoughtSpot cluster on your chosen platform. Please refer to the relevant deployment sections in our documentation for the exact specification for the hosts: CPU, memory, and disks.</p>
 
 <ul>
-  <li>ThoughtSpot-certified hardware appliance manufactured by <a href="/latest/appliance/hardware/installing-dell.html">DELL</a></li>
-  <li>ThoughtSpot-certified hardware appliance manufactured by <a href="/latest/appliance/hardware/installing-the-smc.html">SMC </a></li>
+  <li>[<strong><em>RHEL only</em></strong>] ThoughtSpot-certified hardware appliance manufactured by <a href="/latest/appliance/hardware/installing-dell.html">DELL</a></li>
+  <li>[<strong><em>RHEL only</em></strong>] ThoughtSpot-certified hardware appliance manufactured by <a href="/latest/appliance/hardware/installing-the-smc.html">SMC </a></li>
   <li><a href="/latest/appliance/aws/configuration-options.html">Amazon Web Services (AWS) EC2</a></li>
   <li><a href="/latest/appliance/gcp/configuration-options.html">Google Cloud Platform (GCP)</a></li>
   <li><a href="/latest/appliance/vmware/vmware-intro.html">VMware</a></li>
-  <li><a href="/latest/appliance/azure/configuration-options.html">Microsoft Azure</a></li>
+  <li>[<strong><em>RHEL only</em></strong>] <a href="/latest/appliance/azure/configuration-options.html">Microsoft Azure</a></li>
 </ul>
 
 <h2 id="partition-hosts">Partition the hosts</h2>
@@ -5538,25 +5748,30 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ol>
 
-<h2 id="install-rhel">Install RHEL on hosts</h2>
+<h2 id="install-rhel">Install RHEL or OEL on hosts</h2>
 
-<p>ThoughtSpot is certified with RHEL versions 7.8 and 7.9; we <strong>do not</strong> support other versions of RHEL, including 7.7, 8, and 8.1. Install RHEL version 7.8 or 7.9. On RHEL version 7.8, ensure that your <a href="#linux-kernel-version">linux kernel version</a> is 3.10.0-1127.19.1. On RHEL version 7.9, use the default linux kernel.</p>
+<p>ThoughtSpot is certified with RHEL versions 7.8 and 7.9; we <strong>do not</strong> support other versions of RHEL, including 7.7, 8, and 8.1. ThoughtSpot is certified with OEL version 7.9. Install RHEL version 7.8 or 7.9 or OEL version 7.9. On RHEL version 7.8, ensure that your <a href="#linux-kernel-version">linux kernel version</a> is 3.10.0-1127.19.1. On RHEL version 7.9, use the default linux kernel. On OEL version 7.9, ensure that you are using the Red Hat Compatible Kernel (RHCK), not the default Unbreakable Enterprise Kernel (UEK). If you are using the UEK, <a href="/latest/appliance/contact.html">contact ThoughtSpot Support</a> to switch to the RHCK.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> When installing ThoughtSpot on online clusters, the Ansible playbook upgrades the OS to RHEL 7.9. The Ansible playbook does <strong><em>not</em></strong> upgrade the OS when installing offline.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For RHEL deployments on online clusters, the Ansible playbook upgrades the OS to RHEL 7.9. The Ansible playbook does <strong><em>not</em></strong> upgrade the OS when installing offline.</div>
 
 <h3 id="linux-kernel-version">Linux kernel version</h3>
 <p>For RHEL version 7.8, your Linux kernel <strong><em>must</em></strong> be on version 3.10.0-1127.19.1. RHEL 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, <a href="/latest/appliance/contact.html">contact ThoughtSpot Support</a>. This is a requirement for <strong><em>all</em></strong> platforms: appliance, cloud, and VMware.</p>
 
 <p>If you are using RHEL version 7.9, use the default Linux kernel.</p>
 
+<p>On OEL version 7.9, ensure that you are using the Red Hat Compatible Kernel (RHCK), not the default Unbreakable Enterprise Kernel (UEK). If you are using the UEK, <a href="/latest/appliance/contact.html">contact ThoughtSpot Support</a> to switch to the RHCK.</p>
+
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If you are running RHEL 7.8, and your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data.</div>
 
-<h2 id="enable-hosts">Enable the hosts to download RHEL packages</h2>
+<h2 id="enable-hosts">Enable the hosts to download RHEL or OEL packages</h2>
 
 <p id="repositories"><strong>Repositories</strong></p>
 
 <ul id="yum-repositories">
-  <li><strong>Yum repositories</strong>: you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">nux-desktop</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">rhel</code>, <code class="language-plaintext highlighter-rouge">rhel-optional</code>, <code class="language-plaintext highlighter-rouge">rhel-extras</code>.</li>
+  <li><strong>Yum repositories for RHEL</strong>:
+  For RHEL deployments, you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">nux-desktop</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">rhel</code>, <code class="language-plaintext highlighter-rouge">rhel-optional</code>, <code class="language-plaintext highlighter-rouge">rhel-extras</code>.</li>
+  <li><strong>Yum repositories for OEL</strong>:
+  For OEL deployments, you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">nux-desktop</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">ol7_optional_latest</code>, <code class="language-plaintext highlighter-rouge">oracle-linux-ol7</code>.</li>
 </ul>
 
 <ul id="python-repositories">
@@ -5567,9 +5782,9 @@ $('#toc').on('click', 'a', function() {
   <li><strong>R repository</strong>: for R, ensure the machine is able to reach the <code class="language-plaintext highlighter-rouge">CRAN</code> repository located at <a href="https://cran.rstudio.com/" target="_blank">https://cran.rstudio.com/</a>.</li>
 </ul>
 
-<p>Make sure that you can download RHEL packages to all hosts, either from the <a href="#official-repositories">official package repositories</a>, or from a <a href="#mirror-repositories">mirror repository</a> owned and managed by your organization.</p>
+<p>Make sure that you can download RHEL or OEL packages to all hosts, either from the <a href="#official-repositories">official package repositories</a>, or from a <a href="#mirror-repositories">mirror repository</a> owned and managed by your organization.</p>
 
-<p>If you cannot access the RHEL repositories, there is no mirror repository in your organization, or you are unable to access Yum, Python, or R repositories, please <a href="/latest/appliance/contact.html">contact ThoughtSpot Support</a>.</p>
+<p>If you cannot access the RHEL or OEL repositories, there is no mirror repository in your organization, or you are unable to access Yum, Python, or R repositories, please <a href="/latest/appliance/contact.html">contact ThoughtSpot Support</a>.</p>
 
 <p id="official-repositories"><strong>Official package repositories</strong></p>
 
@@ -5584,15 +5799,12 @@ $('#toc').on('click', 'a', function() {
 
 <p>Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both <code class="language-plaintext highlighter-rouge">rsync</code> and Ansible on the Ansible Control Server host.</p>
 
-<h2 id="disable-selinux">Disable SELinux or run it in permissive mode</h2>
-<p>ThoughtSpot does not support policies that enforce SELinux. We recommend that you disable SELinux, or run it in permissive mode.</p>
-
   <div class="tags">
     <div style="float:right;">
       
         
 
-    <!--    <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.3/_appliance/rhel/rhel-prerequisites.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
+    <!--    <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/7.0/_appliance/rhel/rhel-prerequisites.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -5612,9 +5824,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Mar 15, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Mar 31, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 2/18/2021<br/>  -->
+         <!-- <span>Page last updated:</span> 3/23/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
