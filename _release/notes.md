@@ -105,9 +105,11 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 
 <p>New <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html">DataFlow Tips</a> section explains how to:</p>
 <ul>
-<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#truncate-table">Truncate a table</a> during syncs, instead of deleting</li>
-<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#epochs">Use Epoch date and timestamp options</a> in pre- and post-sync TQL scripts ( <code>$$CurrentDateEpochAdd</code> and <code>$$CurrentTimestampEpochAdd</code> parameters)
-
+<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#truncate-table">Truncate a table</a> during syncs, instead of deleting.</li>
+<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#epochs">Use Epoch date and timestamp options</a> in pre- and post-sync TQL scripts ( <code>$$CurrentDateEpochAdd</code> and <code>$$CurrentTimestampEpochAdd</code> parameters).
+</li>
+<li>
+<a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#last-sync">Track the last sync start time</a> using the <code>$$LastSyncStartTime</code> parameter in custom formulas.
 </li>
 </ul>
 

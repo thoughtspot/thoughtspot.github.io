@@ -31,3 +31,18 @@ Epoch date and time options in the TQL expression editor let you configure pre-s
 <code>delete from "DataFlow_BD"."falcon_defaut_schema"."test_tql" where C_TIMESTAMP > $$CurrentTimestampEpochAdd(1)</code></dd>
 </dlentry>
 </dl>
+
+{: id="last-sync"}
+## Track last sync start time
+
+When setting up syncing, the Advance setup column mapping between external data source and ThoughtSpot offers a new system parameter, `$$LastSyncStartTime`. Use it in the **Add new formula** interface to manage sync updates.
+
+<dl>
+<dlentry id="last-sync-start-time">
+<dt>$$LastSyncStartTime</dt>
+<dd>Example:<br/>
+<code>"LAST_ACTIVITY_DATE"= $$LastSyncStartTime</code></dd>
+</dlentry>
+</dl>
+
+After you apply the new formula, it appears in the **Map columns** listing.
