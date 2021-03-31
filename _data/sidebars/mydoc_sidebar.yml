@@ -26,7 +26,7 @@ entries:
     - title: Release notes
       url:  /release/notes.html
       output: web
-    - title: Free Trial release notes
+    - title: Free Trial
       url:  /release/free-trial.html
       output: web
   - sectiontitle: Getting started
