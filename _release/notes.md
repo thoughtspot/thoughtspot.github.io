@@ -106,7 +106,9 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 <p>New <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html">DataFlow Tips</a> section explains how to:</p>
 <ul>
 <li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#truncate-table">Truncate a table</a> during syncs, instead of deleting</li>
+<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#epochs">Use Epoch date and timestamp options</a> in pre- and post-sync TQL scripts ( <code>$$CurrentDateEpochAdd</code> and <code>$$CurrentTimestampEpochAdd</code> parameters)
 
+</li>
 </ul>
 
 <p>The Administration interface lets you configure the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#dataflow-staging-drectory">staging directory</a> and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-configuration-options.html#dataflow-allowed-paths">allowed paths</a> for data files. See <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-configuration-options.html">Configure DataFlow server</a>.</p>

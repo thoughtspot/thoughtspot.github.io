@@ -22,7 +22,10 @@ You must have administrator privileges.
        <dt>Relay host</dt>
        <dd>The URL address or IP of the SMTP relay host.<br/>Mandatory field.</dd>
        <dd id="relay-host-example"><strong>Example:</strong> smtp.example.com</dd></dlentry>
-     <dlentry id="dataflow-mail-config-from-email">
+       <dlentry id="dataflow-mail-config-smtp-authorization-required">
+         <dt>SMTP Authorization required</dt>
+         <dd><em>Yes</em> or <em>No</em>.<br/>Mandatory field.</dd></dlentry>
+      <dlentry id="dataflow-mail-config-from-email">
        <dt>From email</dt>
        <dd>The email address associated with outgoing system and administrative messages.<br/>Mandatory field.</dd></dlentry>
      <dlentry id="dataflow-mail-config-from-name">
@@ -32,10 +35,6 @@ You must have administrator privileges.
        <dt>SMTP Auth password</dt>
        <dd>If <strong>SMTP Authorization Required</strong> is <em>Yes</em>, provide the password.
        <br/>Mandatory field.</dd></dlentry>
-     <dlentry id="dataflow-mail-config-smtp-authorization-required">
-       <dt>SMTP Authorization required</dt>
-       <dd><em>Yes</em> or <em>No</em>.<br/>Mandatory field.</dd></dlentry>
-
       <dlentry id="dataflow-mail-config-admin-email-id">
        <dt>Admin email ID</dt>
        <dd>The email account that receives messages from “Contact admin” form.<br/>Mandatory field.</dd></dlentry>
