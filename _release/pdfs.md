@@ -1,12 +1,12 @@
 ---
-title: ["ThoughtSpot 6.0 PDFs"]
+title: ["ThoughtSpot 7.0 PDFs"]
 toc: false
-last_updated: 11/27/2019
+last_updated: 3/31/21
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can download ThoughtSpot 6.0 guides in PDF format.
+You can download ThoughtSpot 7.0 guides in PDF format.
 {% include note.html content="PDFs may not be as up-to-date as the HTML documentation, which we refresh more frequently between releases."%}
 
 Coming soon.
