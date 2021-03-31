@@ -22,7 +22,7 @@ The **Stats and Trends for Search on Answers** Pinboard contains the following v
 - [Weekly % of search queries on answers for which no answers exist](#weekly-queries-no-answer)
 - [Poorly performing search queries for answers](#poor-performance)
 
-{% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have Search on Answers on in your environment, or if it is newly on, and few users have searched on it. To see the statistics on how your organization uses Search Answers, contact ThoughtSpot Support." %}
+{% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have Search on Answers on in your environment, or if it is newly on, and few users have searched on it. You must also enable Mixpanel. To see the statistics on how your organization uses Search Answers, contact ThoughtSpot Support." %}
 
 ![Stats and Trends for Search on Answers Pinboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "Stats and Trends for Search on Answers Pinboard")
 
