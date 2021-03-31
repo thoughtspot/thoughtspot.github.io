@@ -26,7 +26,7 @@ GET /tspublic/v1/user/list
 ```
 curl -X GET --header 'Accept: application/json' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/list'
 ```
-#####Request URL
+##### Request URL
 ```
 https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/list
 ```
@@ -256,7 +256,7 @@ you may omit it from the input.
 
 Set `visibility` to `NON_SHARABLE` if you do not want users to [share objects]({{ site.baseurl }}/admin/users-groups/add-user.html#sharing-visibility) with other users in this group.
 
-``` 
+```
 [
   { "name": "Customer Success",
     "displayName": "Customer Success",
