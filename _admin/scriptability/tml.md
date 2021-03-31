@@ -3,28 +3,6 @@ title: [ThoughtSpot Modeling Language]
 last_updated: 2/12/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, Table, Pinboard, SpotIQ result, or Answer in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
-- /6.3.0/admin/ts-cloud/tsl.html
-- /6.3.0/admin/scriptability/tsl-table.html
-- /6.3.0/admin/scriptability/tsl-pinboard.html
-- /6.3.0/admin/scriptability/tsl-answer.html
-- /6.3.0/admin/scriptability/tsl-view.html
-- /6.3.0/admin/worksheets/yaml-worksheet.html
-- /6.3.0/admin/ts-cloud/tsl-table.html
-- /6.3.0/admin/ts-cloud/tsl-pinboard.html
-- /6.3.0/admin/ts-cloud/tsl-answer.html
-- /6.3.0/admin/ts-cloud/tsl-view.html
-- /6.3.0/admin/ts-cloud/yaml-worksheet.html
-- /6.3.0.CU1/admin/ts-cloud/tsl.html
-- /6.3.0.CU1/admin/scriptability/tsl-table.html
-- /6.3.0.CU1/admin/scriptability/tsl-pinboard.html
-- /6.3.0.CU1/admin/scriptability/tsl-answer.html
-- /6.3.0.CU1/admin/scriptability/tsl-view.html
-- /6.3.0.CU1/admin/worksheets/yaml-worksheet.html
-- /6.3.0.CU1/admin/ts-cloud/tsl-table.html
-- /6.3.0.CU1/admin/ts-cloud/tsl-pinboard.html
-- /6.3.0.CU1/admin/ts-cloud/tsl-answer.html
-- /6.3.0.CU1/admin/ts-cloud/tsl-view.html
-- /6.3.0.CU1/admin/ts-cloud/yaml-worksheet.html
 - /7.0.0.mar.sw/admin/ts-cloud/tsl.html
 - /7.0.0.mar.sw/admin/scriptability/tsl-table.html
 - /7.0.0.mar.sw/admin/scriptability/tsl-pinboard.html

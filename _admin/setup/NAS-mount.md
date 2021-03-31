@@ -2,8 +2,6 @@
 title: [Configure NAS file system]
 last_updated: 11/16/2020
 redirect_from:
-- /6.3.0/admin/setup/NAS-mount.html
-- /6.3.0.CU1/admin/setup/NAS-mount.html
 - /7.0.0.mar.sw/admin/setup/NAS-mount.html
 sidebar: mydoc_sidebar
 summary: "Some operations, like backup, restore, and data loading, require either
