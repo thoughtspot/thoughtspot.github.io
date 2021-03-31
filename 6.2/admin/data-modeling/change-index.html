@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.2/admin/data-modeling/change-index.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-26T22:43:18-08:00" />
+<meta property="article:published_time" content="2021-03-31T15:03:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Manage suggestion indexing”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/admin/data-modeling/change-index.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.2/admin/data-modeling/change-index.html","headline":"[“Manage suggestion indexing”]","dateModified":"2021-01-26T22:43:18-08:00","datePublished":"2021-01-26T22:43:18-08:00","@context":"https://schema.org"}</script>
+{"description":"When a user searches in the Search bar, ThoughtSpot supplies the user with suggestions for column names and their column values. The COLUMN NAME and any SYNONYMS appear in Search suggestions. A column’s INDEX TYPE controls whether and how ThoughtSpot suggests column values.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/admin/data-modeling/change-index.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.2/admin/data-modeling/change-index.html","headline":"[“Manage suggestion indexing”]","dateModified":"2021-03-31T15:03:29-07:00","datePublished":"2021-03-31T15:03:29-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -378,7 +378,7 @@ $(document).ready(function(){
                 <span class="icon-bar"></span>
             </button>
 <!-- OLD HOME NAV removed in favor of logo image
-           <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> </span></a>
+           <a class="fa fa-home fa-lg navbar-brand" href="/6.2/index.html">&nbsp;<span class="projectTitle"> </span></a>
 -->
 
 <div class="logo">
@@ -406,7 +406,11 @@ $(document).ready(function(){
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/7.0/index.html">latest</a></li><li><a href="/6.3/index.html">6.3</a></li>
+                          <li><a href="/7.0/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.3/index.html">6.3</a></li>
                         
                         
                         
@@ -494,7 +498,7 @@ $(document).ready(function(){
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/data-modeling/change-index.html.</li>
-         <li class="small-sidebar-link">Current version is 6.3.</li>
+         <li class="small-sidebar-link">Current version is 7.0.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -515,12 +519,12 @@ $(document).ready(function(){
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.3/admin/data-modeling/change-index.html">Switch to version 6.3 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/7.0/admin/data-modeling/change-index.html">Switch to version 7.0 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.3/admin/data-modeling/change-index.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.2/6.3/admin/data-modeling/change-index.html</li>
+<li class="small-sidebar-link">newURL is /7.0/admin/data-modeling/change-index.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.2/7.0/admin/data-modeling/change-index.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3182,7 +3186,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.2/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment templates for Amazon Linux 2</a></li>
+                          <li><a href="/6.2/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment artifacts for Amazon Linux 2</a></li>
                       
                    
                 
@@ -3239,7 +3243,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.2/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment templates for RHEL</a></li>
+                          <li><a href="/6.2/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment artifacts for RHEL</a></li>
                       
                    
                 
@@ -5314,12 +5318,11 @@ controls whether and how ThoughtSpot suggests column values.</p>
 
 <p>Additionally, ThoughtSpot uses a column’s <strong>INDEX PRIORITY</strong> value to determine where
 to rank a column’s name and values in the search suggestions. These values
-impact the dynamically calculated <em>usage based ranking (UBR)</em>,</p>
+impact ThoughtSpot’s dynamically calculated usage based ranking (UBR).</p>
 
 <h2 id="example-of-search-suggestion-behavior">Example of Search suggestion behavior</h2>
 
-<p>The following example illustrates how searching for <code class="language-plaintext highlighter-rouge">promotion_last_name t</code> causes
-the system to suggest several ways of completing the <code class="language-plaintext highlighter-rouge">t</code> in the search:</p>
+<p>The following example illustrates how searching for <code class="language-plaintext highlighter-rouge">promotion_last_name</code> and then the letter <code class="language-plaintext highlighter-rouge">t</code> causes the system to suggest several ways of completing the <code class="language-plaintext highlighter-rouge">t</code> in the search:</p>
 
 <p><img src="/6.2/images/index-type.png" alt="" title="Suggestions" /></p>
 
@@ -5348,22 +5351,21 @@ and tables. You can override this default behavior on a per-column basis.</p>
   <li>
     <p>With two exceptions, the system indexes all columns using their <strong>COLUMN NAME</strong>
 value. The exceptions are columns with <strong>COLUMN TYPE</strong> of <code class="language-plaintext highlighter-rouge">MEASURE</code> and columns
-with <strong>DATA TYPE</strong> of <code class="language-plaintext highlighter-rouge">DATE</code>.</p>
+with <strong>DATA TYPE</strong> of <code class="language-plaintext highlighter-rouge">DATE</code>. ThoughtSpot does not index measure or date columns.</p>
   </li>
   <li>
     <p>Columns that contain data values with large amount of free-form strings, that is,
 a length is greater than 50 words, are indexed as <code class="language-plaintext highlighter-rouge">PREFIX_ONLY</code> by default.</p>
 
     <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> If a column has a very large free text
-values, ThoughtSpot recommends you keep <code class="language-plaintext highlighter-rouge">DEFAULT</code> or set <code class="language-plaintext highlighter-rouge">DONT_INDEX</code>. Other
-settings indexing on these values may generate confusing suggestions.</div>
+value, ThoughtSpot recommends you keep <code class="language-plaintext highlighter-rouge">DEFAULT</code> or set <code class="language-plaintext highlighter-rouge">DONT_INDEX</code>. Otherwise, you may generate confusing suggestions.</div>
   </li>
   <li>
     <p>Short strings (like a <code class="language-plaintext highlighter-rouge">firstname</code> column) are indexed using
 <code class="language-plaintext highlighter-rouge">PREFIX_AND_SUBSTRING</code> by default, which indexes both prefix and substrings.</p>
   </li>
   <li>
-    <p>If a column is using has a <em>cardinality</em> – the number of unique column values –  greater
+    <p>If a column has a <em>cardinality</em> – the number of unique column values –  greater
 than 10 million, it is not indexed.</p>
   </li>
 </ul>
@@ -5409,7 +5411,7 @@ or in the <strong>Index</strong> value in the modeling file.</p>
   </tr>
     <tr>
       <td><code class="highlighter-rouge">DEFAULT</code></td>
-      <td>The default behavior applies to all <code class="highlighter-rouge">ATTRIBUTE</code> columns that are not <code class="highlighter-rouge">DATE</code> types. <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> for short values and <code class="highlighter-rouge">PREFIX_ONLY</code> for long values and free-form text.</td>
+      <td>The default behavior applies to all <code class="highlighter-rouge">ATTRIBUTE</code> columns that are not <code class="highlighter-rouge">DATE</code> types. ThoughtSpot does not index date or measure columns. <code class="highlighter-rouge">PREFIX_AND_SUBSTRING</code> for short values and <code class="highlighter-rouge">PREFIX_ONLY</code> for long values and free-form text.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">DONT_INDEX</code></td>
@@ -5430,7 +5432,7 @@ or in the <strong>Index</strong> value in the modeling file.</p>
   </tbody>
 </table>
 
-<p>Consider a column in which there are four values <code class="language-plaintext highlighter-rouge">ThoughtSpot</code>, <code class="language-plaintext highlighter-rouge">Thought</code>,
+<p>Consider a column with four values: <code class="language-plaintext highlighter-rouge">ThoughtSpot</code>, <code class="language-plaintext highlighter-rouge">Thought</code>,
 <code class="language-plaintext highlighter-rouge">Spot</code> and <code class="language-plaintext highlighter-rouge">Thought Spot</code>. If you search for <code class="language-plaintext highlighter-rouge">sp</code>, depending on the setting for
 indexing, the column value search result suggestions will vary:</p>
 
@@ -5492,7 +5494,7 @@ lower value (like <code class="language-plaintext highlighter-rouge">1</code>).<
 
 <p><img src="/6.2/images/set-priority.png" alt="" /></p>
 
-<p>You should only use numbers between 1-10 in the <strong>INDEX PRIORITY</strong> field.Use a
+<p>You should only use numbers between 1-10 in the <strong>INDEX PRIORITY</strong> field. Use a
 value between <code class="language-plaintext highlighter-rouge">8-10</code> for important columns to improve their search ranking. Use
 <code class="language-plaintext highlighter-rouge">1-3</code> for low priority columns.</p>
 
@@ -5540,9 +5542,9 @@ priority you want to use.</p>
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jan 26, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Mar 31, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 2/9/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>

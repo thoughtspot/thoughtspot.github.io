@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.2/admin/worksheets/worksheet-export.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-26T22:43:18-08:00" />
+<meta property="article:published_time" content="2021-03-31T15:03:29-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Migrate or restore Worksheets”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"In ThoughtSpot, you can download Worksheets to a flat file in TSL, ThoughtSpot’s Scripting Language, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/admin/worksheets/worksheet-export.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.2/admin/worksheets/worksheet-export.html","headline":"[“Migrate or restore Worksheets”]","dateModified":"2021-01-26T22:43:18-08:00","datePublished":"2021-01-26T22:43:18-08:00","@context":"https://schema.org"}</script>
+{"description":"In ThoughtSpot, you can download Worksheets to a flat file in TSL, ThoughtSpot’s Scripting Language, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/admin/worksheets/worksheet-export.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.2/admin/worksheets/worksheet-export.html","headline":"[“Migrate or restore Worksheets”]","dateModified":"2021-03-31T15:03:29-07:00","datePublished":"2021-03-31T15:03:29-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -378,7 +378,7 @@ $(document).ready(function(){
                 <span class="icon-bar"></span>
             </button>
 <!-- OLD HOME NAV removed in favor of logo image
-           <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> </span></a>
+           <a class="fa fa-home fa-lg navbar-brand" href="/6.2/index.html">&nbsp;<span class="projectTitle"> </span></a>
 -->
 
 <div class="logo">
@@ -406,7 +406,11 @@ $(document).ready(function(){
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/7.0/index.html">latest</a></li><li><a href="/6.3/index.html">6.3</a></li>
+                          <li><a href="/7.0/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.3/index.html">6.3</a></li>
                         
                         
                         
@@ -494,7 +498,7 @@ $(document).ready(function(){
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /admin/worksheets/worksheet-export.html.</li>
-         <li class="small-sidebar-link">Current version is 6.3.</li>
+         <li class="small-sidebar-link">Current version is 7.0.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is admin.</li>
@@ -515,12 +519,12 @@ $(document).ready(function(){
        
 
   
-  <li class="small-sidebar-version-nav"><a href="/6.3/admin/worksheets/worksheet-export.html">Switch to version 6.3 (latest)</a></li>
+  <li class="small-sidebar-version-nav"><a href="/7.0/admin/worksheets/worksheet-export.html">Switch to version 7.0 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.3/admin/worksheets/worksheet-export.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.2/6.3/admin/worksheets/worksheet-export.html</li>
+<li class="small-sidebar-link">newURL is /7.0/admin/worksheets/worksheet-export.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.2/7.0/admin/worksheets/worksheet-export.html</li>
  -->
 
     <!-- End add link to latest version
@@ -3182,7 +3186,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.2/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment templates for Amazon Linux 2</a></li>
+                          <li><a href="/6.2/appliance/amazon-linux-2/al2-ts-artifacts.html">ThoughtSpot deployment artifacts for Amazon Linux 2</a></li>
                       
                    
                 
@@ -3239,7 +3243,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li><a href="/6.2/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment templates for RHEL</a></li>
+                          <li><a href="/6.2/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment artifacts for RHEL</a></li>
                       
                    
                 
@@ -5309,7 +5313,7 @@ $('#toc').on('click', 'a', function() {
 
   <p>In ThoughtSpot, you can download Worksheets to a flat file in <code class="language-plaintext highlighter-rouge">TSL</code>, <a href="/6.2/admin/worksheets/yaml-worksheet.html">ThoughtSpot’s Scripting Language</a>, modify the file, and subsequently upload this file either to the same cluster, or to a different cluster.</p>
 
-<p>Note that starting in release 6.2, you can use this feature to export and import Worksheets with filters.</p>
+<p>Starting in release 6.2, you can use this feature to export and import Worksheets with filters.</p>
 
 <p>This mechanism supports several scenarios that you may encounter:</p>
 
@@ -5319,6 +5323,8 @@ $('#toc').on('click', 'a', function() {
   <li><strong>Making bulk changes</strong>, such as mass renaming of objects defined by the worksheets, and managing duplicates</li>
   <li><strong>Reusing existing objects to build new objects</strong>, such as building two very similar objects based on a similar, pre-existing object.</li>
 </ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Starting with ThoughtSpot release 6.3, ThoughtSpot Scripting Language (TSL) is called ThoughtSpot Modeling Language (TML). Files from version 6.3 and later have a <code>.tml</code> extension. However, you can import files from 6.2.1 and earlier, with a <code>.tsl</code> extension, to 6.3 and later environments with no issue.</div>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -5491,7 +5497,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jan 26, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Mar 31, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 7/7/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
