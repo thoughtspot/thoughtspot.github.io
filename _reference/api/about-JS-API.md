@@ -12,7 +12,7 @@ within your own Web application and to perform the following tasks:
 -   Embed ThoughtSpot visualizations in your Web page using the `<iframe>` HTML tag
 -   Supply ThoughtSpot data to your Web page through ThoughtSpot's REST APIs
 
-You can download the <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">ThoughtSpot JavaScript library</a> from our secure storage server.
+<!--You can download the <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">ThoughtSpot JavaScript library</a> from our secure storage server.-->
 
 {% include note.html content="To use the JS API in your Web page, you must have the access and permissions to
 update the code of your Web page or application." %}
