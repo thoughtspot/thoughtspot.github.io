@@ -20,7 +20,7 @@ Use the following REST APIs to programmatically manage ThoughtSpot users, user g
       <tr>
          <th>API Service</th>
          <th>Request URLs</th>
-         <th>Despcription</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -69,7 +69,7 @@ Use the following REST APIs to programmatically manage ThoughtSpot users, user g
          <td>Get the pinboard data from the ThoughtSpot system.</td>
       </tr>
       <tr>
-         <td><a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Export</a></td>
+         <td><a href="{{ site.baseurl }}/reference/api/pinboard-export-api.html">Pinboard Export</a></td>
          <td><code class="api-method-post">POST /tspublic/v1/export/pinboard/pdf</code> </td>
          <td>Export a pinboard or the visualizations in a pinboard as a PDF file.</td>
       </tr>
@@ -87,5 +87,15 @@ Use the following REST APIs to programmatically manage ThoughtSpot users, user g
          <td><code class="api-method-post">POST /tspublic/v1/searchdata</code> </td>
          <td>Search data from a specific data source in the ThoughtSpot system.</td>
       </tr>
+
+    <tr>
+       <td rowspan="2"><a href="{{ site.baseurl }}/reference/api/tml-api.html">TML</a></td>
+       <td><code class="api-method-post">POST /tspublic/v1/metadata/tml/import</code> </td>
+       <td>Validate and import TML objects.</td>
+    </tr>
+    <tr>
+       <td><code class="api-method-post">POST /tspublic/v1/metadata/tml/export</code> </td>
+       <td>Export TML objects.</td>
+    </tr>
    </tbody>
 </table>
