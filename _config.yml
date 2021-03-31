@@ -23,7 +23,7 @@ site_title               : ThoughtSpot
 company_name             : ThoughtSpot
 # this appears in the footer
 timezone                 : America/Tijuana
-google_analytics         : UA-44946579-2
+google_analytics         : UA-44946579-2 
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 
