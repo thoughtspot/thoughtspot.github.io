@@ -4,6 +4,7 @@ summary: "You can export a pinboard, or the visualizations from a pinboard as a 
 last_updated: 3/30/2021
 sidebar: mydoc_sidebar
 redirect_from:
+- /reference/api/pinboard-download-api.html
 permalink: /:collection/:path.html
 ---
 This API enables you to programmatically export a pinboard or specific visualizations from a pinboard as a PDF file.

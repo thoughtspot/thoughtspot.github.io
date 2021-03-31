@@ -26,7 +26,7 @@ GET /tspublic/v1/user/list
 ```
 curl -X GET --header 'Accept: application/json' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/list'
 ```
-##### Request URL
+#####Request URL
 ```
 https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/list
 ```
@@ -158,7 +158,7 @@ curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header
 ```
 ##### Request URL
 ```
-https://<ThoughtSpot-host>/tspublic/v1/user/updatepassword
+https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/updatepassword
 ```
 ### Response codes
 
@@ -254,9 +254,9 @@ Here, `test1` user belongs to two groups, `Customer Success` and `Marketing`.
 `All` is a default group to which every user belongs;
 you may omit it from the input.
 
-Set `visibility` to `NON_SHARABLE` if you do not want users to [share objects](https://cloud-docs.thoughtspot.com/admin/users-groups/add-user.html#sharing-visibility) with other users in this group.
+Set `visibility` to `NON_SHARABLE` if you do not want users to [share objects]({{ site.baseurl }}/admin/users-groups/add-user.html#sharing-visibility) with other users in this group.
 
-```
+``` 
 [
   { "name": "Customer Success",
     "displayName": "Customer Success",

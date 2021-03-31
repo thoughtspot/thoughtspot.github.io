@@ -123,8 +123,8 @@ These release notes include information about new and enhanced features.
 </dd></dlentry>
 
 <dlentry id="pinboard-download-api">
-  <dt>Pinboard Download API</dt>
-  <dd>Use the new Pinboard Download API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>.
+  <dt>Pinboard Export API</dt>
+  <dd>Use the new Pinboard Export API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-export-api.html">Pinboard Export API</a>.
 </dd></dlentry>
 
 <dlentry id="spotiq-analyze">

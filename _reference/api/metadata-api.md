@@ -13,7 +13,7 @@ For example, you may want to see the visualization headers of a particular visua
 
 ## Get visualization headers      
 Use this API to get a list of visualization headers from the ThoughtSpot system.
-The expected output includes a list of objects, each with information about the visualizations in a given pinboard or a search answer.
+The output includes a list of objects, each with information about the visualizations in a given pinboard or a search answer.
 
 ### Resource URL
 ```
@@ -212,7 +212,7 @@ https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/listobjectheaders?ty
 
 ### Example response
 
-``` 
+```
 [
   {
     "id": "7752fa9e-db22-415e-bf34-e082c4bc41c3",

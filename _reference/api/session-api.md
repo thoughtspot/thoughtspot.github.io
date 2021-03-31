@@ -27,6 +27,7 @@ POST /tspublic/v1/session/login
 | `rememberme`     | boolean   | A flag to remember the user session. The system default is `false`. |
 
 ### Example requests
+
 ##### cURL
 
 ```
@@ -35,7 +36,7 @@ curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header
 
 ##### Request URL
 ```
-https://<ThoughtSpot-host>/tspublic/v1/session/login
+https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/session/login
 ```
 ### Response codes
 
@@ -116,8 +117,8 @@ If the request parameters are assigned correct values, the API returns an authen
 
 | HTTP Code | Description                                         |
 |-----------|-----------------------------------------------------|
-| **200**   | The authentication token is generated successfully. |
-| **401**   | Unauthorized service.                               |
+| **200**   | The authentication token is generated successfully |
+| **401**   | Unauthorized request                       |
 
 ## Log out a user
 
