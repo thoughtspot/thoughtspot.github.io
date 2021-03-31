@@ -336,7 +336,7 @@ The syntax and functionality of joins in the table TML file differs from the syn
 
 When you edit the information in the [joins](#joins) section of the TML for a Worksheet or View, you override the table join(s) from the table the Worksheet or View comes from. However, you only override the join(s) for the specific Worksheet or View you are editing, ***not*** for the source table.
 
-When you edit the information in the [joins_with](#joins_with) section of the TML for a table, you edit the join information for the source table, the destination table, and any dependents, such as Worksheets and Views. Note that you can only edit joins for which the table is the source table.
+When you edit the information in the [joins_with](#joins_with) section of the TML for a table, you edit the join information for the source table, the destination table, and any dependents, such as Worksheets and Views. Note that you can only edit joins for which the table is the source table. Table join modification is in <strong>Beta</strong> and on by default.
 
 ### Worksheet and View join syntax
 For Worksheets and Views, the join syntax is the following:
@@ -391,12 +391,16 @@ Table joins have the following limitations:
 - You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
 
+This feature is in <strong>Beta</strong> and on by default.
+
 ### Generic joins
 The functionality for generic joins in TML files allows the following elements:
 * Constants: int, double, bool, date, and string
 * Comparison operators: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, and <code>&gt;=</code>
 * Columns
 * Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code>
+
+This feature is in <strong>Beta</strong> and on by default.
 
 {: id="syntax-answers"}
 ##  Syntax of the Answer TML file
