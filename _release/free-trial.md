@@ -12,7 +12,7 @@ permalink: /:collection/:path.html
 {: id="unicode"}
 ### Unicode support
 
-In the March 31, 2021 release of the Free Trial product, we added unicode character matching in Search Answers. This extends Search Answer support to all languages and character sets. You can now search all artifacts that use unicode characters in titles, descriptions, metadata, and keywords, and see the correct results.
+We added unicode character matching in Search Answers, extending support to all languages and character sets. You can now search all artifacts that use unicode characters in titles, descriptions, metadata, and keywords, and see the correct results.
 
 ![]({{ site.baseurl }}/images/search-answers-unicode.png "Unicode support")
 
