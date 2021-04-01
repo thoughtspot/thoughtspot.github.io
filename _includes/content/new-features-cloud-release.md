@@ -22,7 +22,8 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="synonyms">
 <dt>Create Worksheet synonyms for search on Answers</dt>
-<dd>You can enhance the search experience of the content built on Worksheets you own or maintain by adding common search terms to your Worksheet glossary. This feature allows you to support the way your users search on existing Answers and Pinboards. See <a href="{{ site.baseurl }}/admin/thoughtspot-one/synonyms.html">Create Worksheet synonyms for search on Answers</a>.</dd></dlentry>
+<dd><p>You can enhance the search experience of the content built on Worksheets you own or maintain by adding common search terms to your Worksheet glossary. This feature allows you to support the way your users search on existing Answers and Pinboards. See <a href="{{ site.baseurl }}/admin/thoughtspot-one/synonyms.html">Create Worksheet synonyms for search on Answers</a>.</p>
+<p>This feature is in <span class="label label-beta">Beta</span> and off by default; <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a> to enable it.</p></dd></dlentry>
 
 </dl>
 
