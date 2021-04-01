@@ -4,7 +4,6 @@
   <li class="bookTitle">{{sidebar[0].product}}</li>
   <li class="bookSubtitle">Release: {{sidebar[0].docversion}}</li>
 
-
     <!-- Add link to same page in the latest version if you're on an older version of docs.
        -->
 
@@ -42,11 +41,11 @@
        {% assign newURL = newURL | append:"/" | append:url_chunks[5] %}
        {% endif %}
 
-  {% if sidebar[0].version < site.current_version %}
-  <li class="small-sidebar-version-nav"><a href="{{ newURL }}">Switch to version {{ site.current_version }} (latest)</a></li>
-  {% else %}
-  <li class="small-sidebar-version-nav">&nbsp;&nbsp;&nbsp;This is the latest version.</li>
-  {% endif %}
+       {% if sidebar[0].version < site.current_version %}
+      <li class="small-sidebar-version-nav"><a href="{{ newURL }}">Switch to version {{ site.current_version }} (latest)</a></li>
+      {% else %}
+          <li class="small-sidebar-version-nav">&nbsp;&nbsp;&nbsp;This is the latest version.</li>
+      {% endif %}
 
          <!-- KEEP FOR TESTING
 <li class="small-sidebar-link">newURL is {{ newURL }}</li>
