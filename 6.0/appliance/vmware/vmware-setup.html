@@ -57,12 +57,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.0/appliance/vmware/vmware-setup.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-26T22:50:58-08:00" />
+<meta property="article:published_time" content="2021-03-31T18:02:38-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set up ThoughtSpot in VMware”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Set up ThoughtSpot in VMware”]","description":"This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment.","datePublished":"2021-01-26T22:50:58-08:00","dateModified":"2021-01-26T22:50:58-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/vmware/vmware-setup.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.0/appliance/vmware/vmware-setup.html","@context":"https://schema.org"}</script>
+{"headline":"[“Set up ThoughtSpot in VMware”]","description":"This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment.","datePublished":"2021-03-31T18:02:38-07:00","dateModified":"2021-03-31T18:02:38-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.0/appliance/vmware/vmware-setup.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.0/appliance/vmware/vmware-setup.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -226,7 +226,7 @@ var ss360Config = {
                 <span class="icon-bar"></span>
             </button>
 <!-- OLD HOME NAV removed in favor of logo image
-           <a class="fa fa-home fa-lg navbar-brand" href="https://docs.thoughtspot.com">&nbsp;<span class="projectTitle"> </span></a>
+           <a class="fa fa-home fa-lg navbar-brand" href="/6.0/index.html">&nbsp;<span class="projectTitle"> </span></a>
 -->
 
 <div class="logo">
@@ -254,7 +254,11 @@ var ss360Config = {
                     <ul class="dropdown-menu">
                         
                         
-                          <li><a href="/7.0/index.html">latest</a></li><li><a href="/6.3/index.html">6.3</a></li>
+                          <li><a href="/7.0/index.html">latest</a></li>
+                        
+                        
+                        
+                          <li><a href="/6.3/index.html">6.3</a></li>
                         
                         
                         
@@ -271,26 +275,6 @@ var ss360Config = {
                         
                         
                           <li><a href="/5.3/index.html">5.3</a></li>
-                        
-                        
-                        
-                          <li><a href="/5.2/index.html">5.2</a></li>
-                        
-                        
-                        
-                          <li><a href="/5.1/index.html">5.1</a></li>
-                        
-                        
-                        
-                          <li><a href="/5.0/index.html">5.0</a></li>
-                        
-                        
-                        
-                          <li><a href="/4.5/index.html">4.5</a></li>
-                        
-                        
-                        
-                          <li><a href="/4.4/index.html">4.4</a></li>
                         
                         
                     </ul>
@@ -341,7 +325,7 @@ var ss360Config = {
 
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /appliance/vmware/vmware-setup.html.</li>
-         <li class="small-sidebar-link">Current version is 6.3.</li>
+         <li class="small-sidebar-link">Current version is 7.0.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
                   <li class="small-sidebar-link">url_chunks[1] is appliance.</li>
@@ -362,12 +346,12 @@ var ss360Config = {
        
 
        
-       <li class="small-sidebar-version-nav"><a href="/6.3/appliance/vmware/vmware-setup.html">Switch to version 6.3 (latest)</a></li>
+       <li class="small-sidebar-version-nav"><a href="/7.0/appliance/vmware/vmware-setup.html">Switch to version 7.0 (latest)</a></li>
        
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /6.3/appliance/vmware/vmware-setup.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.0/6.3/appliance/vmware/vmware-setup.html</li>
+<li class="small-sidebar-link">newURL is /7.0/appliance/vmware/vmware-setup.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.0/7.0/appliance/vmware/vmware-setup.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2786,7 +2770,7 @@ var ss360Config = {
                 
                   
                       
-                          <li><a href="/6.0/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment templates</a></li>
+                          <li><a href="/6.0/appliance/rhel/rhel-ts-artifacts.html">ThoughtSpot deployment artifacts for RHEL</a></li>
                       
                    
                 
@@ -3853,31 +3837,8 @@ power of the physical host. Extra cores help performance.</p>
 
 <h2 id="add-hard-disks-to-the-vm">Add hard disks to the VM</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Use Case</th>
-      <th>HDFS Disk Requirements</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>POC</td>
-      <td>2 x 1 TB on HDD</td>
-    </tr>
-    <tr>
-      <td>Production</td>
-      <td>3 x 2 TB on HDD</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>For a proof of concept (POC), follow these steps to create two 1TB HDFS disks on
-HDD storage, as shown here (2 x 1TB).</p>
-
-<p>For production deployments, ThoughtSpot requires you to have three 2TB HDFS
-disks on HDD (3 x 2TB). For this use case, follow these same steps to create the
-additional, larger capacity disks.</p>
+<p>For most deployments, ThoughtSpot requires you to have three 2TB HDFS
+disks on HDD (3 x 2TB). If you expect your user data capacity for each VM to be 100 GB or less, you may not need three 2TB disks. Refer to <a href="/6.0/appliance/vmware/vmware-intro.html#supported-configurations">Supported configurations</a> for more information. Follow these steps to create the required 3 2TB hard disks.</p>
 
 <ol>
   <li>
@@ -3894,7 +3855,7 @@ additional, larger capacity disks.</p>
   </li>
   <li>Click the <strong>New Hard disk</strong> to expand the detailed configuration options.</li>
   <li>
-    <p>For a proof of concept, set the options as follows. (For production deployments, set the size to 2TB.)</p>
+    <p>Set the options as follows.</p>
 
     <table>
  <colgroup>
@@ -3906,8 +3867,8 @@ additional, larger capacity disks.</p>
   <th>Value</th>
  </tr>
  <tr>
-  <td>size</td>
-  <td>1 TB</td>
+  <td><strong>Size</strong></td>
+  <td>2 TB</td>
  </tr>
  <tr>
   <th>Location</th>
@@ -3925,11 +3886,11 @@ additional, larger capacity disks.</p>
 
     <p>You should see something similar to the following:</p>
 
-    <p><img src="/6.0/images/vmware-adddisk2-1TB.png" alt="" title="New hard disk" /></p>
+    <p><img src="/6.0/images/vmware-add-disk-2-tb.png" alt="" title="New hard disk" /></p>
   </li>
   <li>Save your changes.</li>
-  <li>Repeat steps 1-5 to create more hard disks.</li>
-  <li>Power on the VM</li>
+  <li>Repeat steps 1-5 to create more hard disks. ThoughtSpot requires 3 hard disks for most environments. If you expect your user data capacity for each VM to be 100 GB or less, you may not need three 2TB disks. Refer to <a href="/6.0/appliance/vmware/vmware-intro.html#supported-configurations">Supported configurations</a> for more information.</li>
+  <li>Power on the VM.</li>
   <li>
     <p>After the VM is online, run the following command to prepare the HDFS disks:</p>
 
@@ -3982,9 +3943,9 @@ additional, larger capacity disks.</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jan 26, 2021 <br />
+        Generated: Mar 31, 2021 <br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 3/3/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 3/11/2021<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.0/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
