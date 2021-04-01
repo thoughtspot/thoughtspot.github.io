@@ -12,13 +12,18 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
-<dlentry id="">
+<dlentry id="scriptability">
 <dt>Scriptability</dt>
 <dd>There are several enhancements to the <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a> feature:
 <ul><li><strong>Support for selective and linked filters:</strong> You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
 <li><strong>Add tables and columns to an Embrace connection (GA):</strong> ThoughtSpot now allows you to use TML to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. This feature is now GA and on by default. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection.</li>
 </ul>
 </dd></dlentry>
+
+<dlentry id="synonyms">
+<dt>Create Worksheet synonyms for search on Answers</dt>
+<dd><p>You can enhance the search experience of the content built on Worksheets you own or maintain by adding common search terms to your Worksheet glossary. This feature allows you to support the way your users search on existing Answers and Pinboards. See <a href="{{ site.baseurl }}/admin/thoughtspot-one/synonyms.html">Create Worksheet synonyms for search on Answers</a>.</p>
+<p>This feature is in <span class="label label-beta">Beta</span> and off by default; <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a> to enable it.</p></dd></dlentry>
 
 </dl>
 
@@ -30,7 +35,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
-<dlentry id="">
+<dlentry id="private-link">
 <dt>AWS PrivateLink between ThoughtSpot Cloud and your Snowflake or Redshift data warehouse</dt>
 <dd>To ensure a secure two-way data exchange between your cloud data warehouse and the ThoughtSpot Cloud tenant, you can use an AWS PrivateLink. This option is currently available for your Snowflake or Redshift data warehouse connections. Refer to the <a href="{{ site.baseurl }}/admin/ts-cloud/private-link-redshift.html">Redshift</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/private-link-snowflake.html">Snowflake</a> articles about enabling an AWS PrivateLink.</dd></dlentry>
 
