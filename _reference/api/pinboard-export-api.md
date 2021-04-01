@@ -27,7 +27,6 @@ POST /tspublic/v1/export/pinboard/pdf
 | `include_page_number`        | boolean   | When set to true, the page number is included in the footer of each page.                                                                                                                                    | true        |
 | `include_cover_page`         | boolean   | When set to true, a cover page with the pinboard title is added in the PDF.                                                                                                                                  | true        |
 | `include_filter_page`        | boolean   | When set to true, a second page with a list of all applied filters is added in the PDF                                                                                                                       | true        |
-| `transient_pinboard_content` | string    | If the pinboard has unsaved changes, pass this parameter.                                                                                                                                                    | none        |
 
 ## Example request
 
@@ -96,41 +95,6 @@ You can add more than one filter by specifying `col2`, `op2`, `val2`, and so on.
 | `BW_INC`      | between inclusive                     | 2                |
 | `BW`          | between non-inclusive                 | 2                |
 | `IN`          | is included in this list of values    | multiple         |
-
-## Embedded Pinboard with unsaved changes
-
-If your ThoughtSpot environment is embedded, and you want to download Pinboards with unsaved changes as PDFs, pass the `transient_pinboard_content` parameter in the browser fetch request, using the `getExportRequestForCurrentPinboard` method.
-
-```
-function getExportRequestForCurrentPinboard(frame: HTMLIframeElement): Promise<string>;
-```
-
-The promise returned resolves to a string that contains the transient pinboard content, which is encoded as JSON and is sent to the `/callosum/v1/tspublic/v1/export/pinboard/pdf` endpoint with the `transient_pinboard_content` key. This content resembles the current pinboard as is, including any changes, saved or not.
-
-### Sample browser fetch request
-
-```
-<iframe src="http://ts_host:port/" id="ts-embed"></iframe>
-<script src="/path/to/ts-api.js"></script>
-<script>
-const tsFrame = document.getElementById("ts-embed");
-async function downloadPDF() {
-  const transientPinboardContent = await thoughtspot.getExportRequestForCurrentPinboard(tsFrame);
-  const pdfResponse = await fetch("http://ts_host:port/callosum/v1/tspublic/v1/export/pinboard/pdf", {
-    method: "POST",
-    body: createFormDataObjectWith({
-      "layout_type": "PINBOARD",
-      "transient_pinboard_content": transientPinboardContent,
-    }),
-  });
-  // Do something with pdfResponse.blob()
-}
-</script>
-```
-
-### Response format
-
-The response appears in the form of a raw PDF file. The response type is `application/octet-stream`.
 
 ## Response codes
 
