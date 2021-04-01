@@ -1,6 +1,6 @@
 ---
 title: [Search Data API]
-last_updated: 3/30/2021
+last_updated: 4/1/2021
 summary: "To use the data retrieved from a search query programmatically, you can first query this data using the ThoughtSpot Search Data API."
 redirect_from:
 - /app-integrate/reference/search-data-api.html
@@ -34,8 +34,8 @@ ThoughtSpot supports various operators such as =, !=, &gt;, &gt;=, ⇐, &lt;, co
 </p>
 <p>For example, specify revenue over 1000, and limit ship mode to 'air': </p>
 
-<code>[revenue] > 1000 [ship mode] = ‘air’ </code></dd></dlentry>
-
+<code>[revenue] > 1000 [ship mode] = ‘air’ </code>
+</dd></dlentry>
 <!-- -->
 
 <dlentry id="value">
@@ -51,9 +51,11 @@ ThoughtSpot supports various operators such as =, !=, &gt;, &gt;=, ⇐, &lt;, co
 
 For example, when a ThoughtSpot UI query is revenue ship mode = air, the equivalent API query is:
 
-<code>[revenue] [ship mode] = ‘air’</code></dd></dlentry>
+<code>[revenue] [ship mode] = ‘air’</code>
+</dd></dlentry>
 
 <!-- -->
+
 <dlentry id="date-bucket">
   <dt>Date Bucket</dt>
 <dd>
@@ -67,7 +69,8 @@ For example, when a ThoughtSpot UI query is revenue ship mode = air, the equival
 
 When a ThoughtSpot UI query is revenue day of week = 5, and if day of week is bound to commit date, the equivalent API query is as follows:
 
-<code>[revenue] [commit date].'day of week' = 5 </code></dd></dlentry>
+<code>[revenue] [commit date].'day of week' = 5 </code>
+</dd></dlentry>
 
 <dlentry id="keyword">
   <dt>Keyword</dt>
@@ -76,7 +79,8 @@ When a ThoughtSpot UI query is revenue day of week = 5, and if day of week is bo
 
 <p>For example, when a ThoughtSpot UI query uses keywords growth of and sort by, the equivalent API query is as follows:</p>
 
-<code>growth of [revenue] by [commit date]</code></dd></dlentry>
+<code>growth of [revenue] by [commit date]</code>
+</dd></dlentry>
 
 <dlentry id="calendar">
   <dt>Calendar</dt>
@@ -91,7 +95,8 @@ When a ThoughtSpot UI query is revenue day of week = 5, and if day of week is bo
 
 For example, when a ThoughtSpot UI query is revenue by commit date my calendar, where the name of the calendar is my calendar, the equivalent API query is:
 
-<code> [revenue] by [commit date] calendar.'my calendar' </code></dd></dlentry></dl>
+<code> [revenue] by [commit date] calendar.'my calendar' </code>
+</dd></dlentry></dl>
 
 ## Limitations of search data API
 
@@ -156,7 +161,7 @@ To test the search query API, follow these steps:
 
 ### Resource URL
 
-    POST /tspublic/v1/searchdata
+  POST /tspublic/v1/searchdata
 
 ### Request parameters
 
@@ -217,7 +222,7 @@ To test the search query API, follow these steps:
 
 ##### cURL (COMPACT)
 
-``` cURL
+```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/searchdata?query_string=%5Bsales%5D%20%5Bstore%20region%5D&data_source_guid=06517bd1-84c0-4bc6-bd09-f57af52e8316&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT'
 ```
 ##### Request URL (COMPACT)

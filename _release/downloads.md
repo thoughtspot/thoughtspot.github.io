@@ -25,5 +25,5 @@ See [JDBC Driver Overview]({{ site.baseurl }}/data-integrate/clients/about-jdbc-
 * **Linux**:  [ThoughtSpot_odbc_linux_3.8.tar.gz](https://thoughtspot.egnyte.com/dl/84csZ4USEX/ThoughtSpot_odbc_linux_3.8.tar.gz_)  
 See [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)
 
-## JavaScript API ##
-For the JavaScript API, see the [JavaScript API library](https://thoughtspot.egnyte.com/dl/D8tbICaVbR/).
+## Visual Embed SDK ##
+For the Visual Embed SDK, visit [https://www.npmjs.com/package/@thoughtspot/visual-embed-sdk](https://www.npmjs.com/package/@thoughtspot/visual-embed-sdk){: target="_blank"}.

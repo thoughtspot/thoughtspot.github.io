@@ -37,7 +37,7 @@ To embed a pinboard or visualization, construct the URL for the REST API call:
 
     For visualizations (table or chart), copy the IDs that appear after `viz/`.
 
-    ![copy link viz pinboard part](./images/copy_link_viz_pinboard_part.png)
+    ![copy link viz pinboard part]({{ site.baseurl }}/images/copy_link_viz_pinboard_part.png)
 
 5.  Construct the URL.
 

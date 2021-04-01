@@ -10,6 +10,8 @@ permalink: /:collection/:path.html
 ---
 Use the following REST APIs to programmatically manage ThoughtSpot users, user groups, sessions, and data objects.
 
+To access REST APIs, you must authenticate through SAML SSO. For more information on configuring SAML, see [SAML SSO]({{ site.baseurl }}/admin/ts-cloud/configure-saml-spotdev.html).
+
 <table>
    <colgroup>
       <col style="width:20%" />
