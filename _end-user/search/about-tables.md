@@ -1,11 +1,14 @@
 ---
 title: [Results that are tables]
-last_updated: 7/31/2020
+last_updated: 10/26/2020
 toc: true
 summary: "Tables display your answer in a format similar to an Excel spreadsheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="Certain elements of table configuration are part of the new Answer experience. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, content density, and theme (outline, row, or zebra). If you have the new Answer experience on, these new conditional and number formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If the new Answer experience is off, you do not see these capabilities. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+
 In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type `revenue`, you see the total sum of revenue as a single number. If you include the keyword `monthly`, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns, either from the table itself or from the **Edit table: Configure** menu. You can also change the column widths.
 
 ## Rearrange column order
@@ -50,25 +53,27 @@ To clip or wrap text for each column individually, hover over the column name an
 
 {: id="number-formatting"}
 ## Number formatting
-You can format the numbers in any table column based on a measure. This functionality allows you to change the **category** (number, percentage, or currency), **units** (auto, none, thousand, million, billion, or trillion), or method of writing **negative values** (-1234, 1234-, or (1234)).
+You can format the numbers in any table column based on a measure, or in any column summary. This functionality allows you to change the **category** (number, percentage, or currency), **units** (auto, none, thousand, million, billion, or trillion), or method of writing **negative values** (-1234, 1234-, or (1234)).
+
+{% include note.html content="When you change the formatting for a column, you do not change the formatting for its column summary. You must separately change the number formatting for column summaries." %}
 
 To change the number formatting:
 
 1. Click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your table. The **Edit table** panel appears, on the **Configure** menu.
 
-2. Select the measure you want to format the labels of.
+2. Select the column you want to format the values of, or the column whose column summary you would like to format.
 
-    ![Select a measure]({{ site.baseurl }}/images/table-config-edit-measure.png "Select a measure")
+    ![Select a measure]({{ site.baseurl }}/images/table-config-edit.png "Select a measure")
 
-    The **Edit** panel for that column appears.
+    The **Edit** panel for that column appears. Select **Summary** to format the column summary.
 
-    You can also reach this panel from the **more** icon that appears when you hover over a column name:
+    You can also reach the **Edit** panel from the **more** icon that appears when you hover over a column name:
 
     ![Click number formatting]({{ site.baseurl }}/images/table-config-number-formatting-from-column.png "Click number fomatting")
 
     On the table, the column that you are editing is highlighted in a blue box.
 
-    ![The edit panel]({{ site.baseurl }}/images/table-config-edit-panel.png "The edit panel")
+    ![The edit panel]({{ site.baseurl }}/images/table-config-edit-panel-new.png "The edit panel")
 
 3. Under **number formatting**, you can edit the category, units, or method of writing negative values. Click the dropdown menus to select new values.
 
@@ -83,6 +88,14 @@ To change the number formatting:
 6. Specify the method for writing **negative values**: -1234, 1234-, or (1234). The default is -1234.
 
 ![Number formatting gif]({{ site.baseurl }}/images/table-config-number-formatting.gif "Number formatting gif")
+
+{: id="conditional-formatting"}
+## Conditional formatting
+You can perform conditional formatting on both measures and attributes, within table cells and in the table summaries.
+
+Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table).
+
+Note that certain elements of conditional formatting are part of the new Answer experience. These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. The new Answer experience is on by default; you can toggle it on or off from the **Experience manager** in your profile.
 
 ## Sort columns
 
@@ -112,43 +125,55 @@ Tables automatically have footers that tell you the number of rows the table has
 
     ![Enable or disable table footer]({{ site.baseurl }}/images/table-config-footer.png "Enable or disable table footer")
 
-## Column summaries
-
-For columns with numeric information, you can turn on **column summaries** that display column totals.
+## Content density
+You can view more table rows at a time by changing the content density. You can change the content density from the **Settings** menu.
 
 1. Click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your table. The **Edit table** panel appears, on the **Configure** menu.
 
 2. Select **Settings**.
 
-3. Select **column summary** to enable or disable column summaries for your table.
+3. Under **Content density**, select **regular** or **compact**.
 
-    ![Enable or disable column summaries]({{ site.baseurl }}/images/table-config-column-summary.png "Enable or disable column summaries")
+    ![Table content density]({{ site.baseurl }}/images/table-content-density.png "Table content density")
 
-## About headlines (summary information)
+## Table theme
+You can change the table theme from the default (outline) to **row** or **zebra**. You can change the table theme from the **Settings** menu. **Row** removes the lines between columns, and **zebra** changes the color of every other row.
 
-Headlines display summary information of a table result. Headlines contain
-summary information for each column of a table. They appear at the bottom of the
-table in individual boxes.
+1. Click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your table. The **Edit table** panel appears, on the **Configure** menu.
 
- ![]({{ site.baseurl }}/images/chartconfig-headlines.png "Headlines at the bottom of a table")
+2. Select **Settings**.
 
-ThoughtSpot automatically creates up to 20 headlines for each table. Your
-ThoughtSpot configuration can be changed to accommodate more if needed.
+3. Under **Table theme**, select **outline**, **row**, or **zebra**.
 
-You can modify how you'd like the value to be displayed by clicking the dropdown
-on a headline and selecting a different type of aggregation. The usual available
-aggregations are total, average, standard deviation, variance, minimum, and
-maximum. There are also unique count and total count values available for the
-appropriate columns.
+    ![Table theme]({{ site.baseurl }}/images/table-theme.png "Table theme")
 
-To add a headline to a pinboard, hover over the headline and click the **Pin** icon.
+## Column summaries
 
- ![Add a headline to a pinboard]({{ site.baseurl }}/images/pin_headline.png "Add a headline to a pinboard")
+For columns with numeric information, you can turn on **column summaries** that display column totals. These summaries are visible by default. You can perform number and conditional formatting on column summaries, just like you can for column values.
 
-### Table aggregate headline
+### Enable or disable column summaries
 
- The Table Aggregate headline option is available when an aggregate function is used either through a formula or a search bar query like average of a measure. It recalculates the function for the entire table. In such cases, Table Aggregate is shown by default in a headline under the table, instead of the “Avg” option, which does a second level of aggregation on top of the existing aggregation.
+1. Click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your table. The **Edit table** panel appears, on the **Configure** menu.
 
- In the following example, the table aggregate is shown as a result of the Average Profit formula `sum ( profit ) / count ( ship mode )` which divides the total profit of each ship mode by the sum total count for that ship mode. ThoughtSpot recalculates that function for the entire table, taking the sum total profits of all ship modes and dividing it by the sum total count of all ship modes. Here, that results in a table aggregate average profit of 28.7. The `average` headline option, by comparison, sums the average profit for all ship modes and divides it by the number of ship modes (4), providing a less accurate average.
+2. Select **Settings**.
 
-![Table aggregate headline]({{ site.baseurl }}/images/table-aggregate.png "Table aggregate headline")
+3. Select **column summary** to enable or disable column summaries for the entire table. You can also enable or disable individual column summaries, from the **Summary** section in a column's **Edit** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} panel.
+
+    ![Enable or disable all column summaries]({{ site.baseurl }}/images/table-config-summary-global.png "Enable or disable all column summaries")
+
+    ![Enable or disable individual column summaries]({{ site.baseurl }}/images/table-config-summary-individual.png "Enable or disable individual column summaries")
+
+### Pin column summaries
+You can pin column summaries to any Pinboard. Select the pin icon that appears when you hover over a summary.
+
+### Column summary aggregation
+You can modify how you would like a column summary value to be displayed by clicking the dropdown on a summary and selecting a different type of aggregation. This **aggregation** menu is also available from the **Summary** section in a column's **Edit** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} panel. For measures, the available aggregations are `total`, `average`, `standard deviation`, `variance`, `min`, and
+`max`. For attributes, the available aggregations are `unique count` and `total count`.
+
+### Table aggregate summary
+
+ The Table Aggregate summary appears when you use an aggregate function either through a formula or a search bar query, such as average of a measure. It recalculates the function for the entire table. In such cases, the Table Aggregate summary appears by default, instead of the “Avg” option, which does a second level of aggregation on top of the existing aggregation.
+
+ In the following example, the table aggregate is a result of the Average Revenue formula `sum ( revenue ) / count ( ship mode )` which divides the total profit of each ship mode by the sum total count for that ship mode. ThoughtSpot recalculates that function for the entire table, taking the sum total profits of all ship modes and dividing it by the sum total count of all ship modes. Here, that results in a table aggregate average profit of 3.61M. The `average` summary option, by comparison, sums the average revenue for all ship modes and divides it by the number of ship modes (8), providing a less accurate average.
+
+![Table aggregate summary]({{ site.baseurl }}/images/table-aggregate-summary.png "Table aggregate summary")

@@ -1,7 +1,7 @@
 ---
 title: [About your user profile]
-last_updated: 12/19/2019
-summary: "The user icon lets you view your profile, adjust language options, specify notification preferences, revisit onboarding, or sign out of ThoughtSpot."
+last_updated: 4/1/2021
+summary: "The user icon lets you view your profile, adjust language options, specify notification preferences, revisit onboarding, manage your Answer experience, or sign out of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -72,6 +72,12 @@ When you need to change your password, navigate to **My Profile**, and under **P
 Click **Update**.
 
   ![]({{ site.baseurl }}/images/update-password.png "Update password")
+
+{: id="new-answer-experience"}
+## Manage your Answer experience
+You can turn the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) on or off from the **Experience manager**. The new experience is on by default; to return to the classic experience, select **Classic experience**.
+
+![New Answer experience toggle]({{ site.baseurl }}/images/new-answer-experience-toggle.png "New Answer experience toggle")
 
 {: id="sign-out" }
 ## Signing out ##

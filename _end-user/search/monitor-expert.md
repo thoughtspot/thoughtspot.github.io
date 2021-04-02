@@ -6,6 +6,7 @@ sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
+{% include note.html content="Ask an Expert is not available in the new Answer experience. The new Answer experience is on by default for ThoughtSpot Cloud clusters. To use Ask an Expert, turn the new Answer experience off by selecting <strong>Classic experience </strong> from the <strong>Experience manager</strong> panel in your profile." %}
 
 Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 
