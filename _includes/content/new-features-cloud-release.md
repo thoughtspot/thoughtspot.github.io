@@ -29,6 +29,19 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="april-cloud-business-user"></a>For the Business User</h3>
 
+<dl>
+
+<dlentry id="new-answer-experience">
+<dt>New Answer experience</dt>
+<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is on by default; you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
+<p>The new Answer experience contains the following features and enhancements: {% include content/new-answer-experience-features.md %}</p>
+<p>{% include content/new-answer-experience-deprecations.md %}</p>
+<p> Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience">New Answer experience</a> for more information on the behavior of these features.</p>
+
+</dd></dlentry>
+
+</dl>
+
 <h3><a id="april-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <h3><a id="april-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>

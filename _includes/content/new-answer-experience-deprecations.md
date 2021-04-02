@@ -1,0 +1,6 @@
+The following features are <strong><em>not</em></strong> available with the new Answer experience. If you would like your company to be able to use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn the new Answer experience off for your company. Alternatively, you can turn it on or off individually from your profile.
+<ul><li> <a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
+<li> <strong>Send feedback</strong>: The option to send product feedback, from the more options menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="more options menu icon" class="inline"/> on an Answer or search</li>
+<li> <a href="{{ site.baseurl }}/end-user/search/replay-search.html">Replay search</a></li>
+<li> <a href="{{ site.baseurl }}/admin/system-monitor/monitor-pinboards.html">Learn how to use ThoughtSpot Pinboard</a></li>
+<li> <a href="ADD RELEASE NOTE LINK">Multiple join path resolution within a search</a>: when you try to search on columns with no defined join path, or more than one possible join path, the system no longer allows you to define the join path within the search. Instead, the system now prompts you to resolve this issue and avoid confusion or incorrect data by creating a Worksheet with the correct join path</li></ul>

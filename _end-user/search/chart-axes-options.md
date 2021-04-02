@@ -5,6 +5,8 @@ summary: "In ThoughtSpot, you can start changing all axes options by clicking on
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include note.html content="Certain elements of chart configuration are part of the new Answer experience. These elements include improved conditional formatting for measures in charts. If you have the new Answer experience on, these new conditional formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If the new Answer experience is off, you do not see these capabilities. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+
 To change axis, you can click the axis itself. This opens the detail axis customization menu in the chart.
 
 You can make the following changes to the axis:
@@ -83,50 +85,7 @@ To remove a filter from the chart, click the **x** icon on the filter tile.
 {: id="conditional-formatting"}
 ## Apply conditional formatting
 
-To apply conditional formatting to the axis (in this example, _Total Sales_), follow these steps:
-
-1. Click the **Conditional formatting** option in the axis menu.
-
-   ![Add conditional formatting]({{ site.baseurl }}/images/edit-axis-conditional-formatting.png "Add conditional formatting")
-
-2. The **Conditional formatting** window modal appears.
-
-3. In the window modal, click **+ add formatting**.
-
-4. Select the conditional range.
-
-   The text area on the left specifies the lower limit of the condition, so the condition applies to all values that are greater or equal to it.
-   And the text area on the right specifies the upper limit of the condition, so the condition applies to all lower values.
-
-   * To show values with a lower limit, enter a value in the left text box.
-
-   * To show values with an upper limit, enter a value in the right text box.
-
-   * To show values in a specified range, enter the appropriate values in both text boxes.
-
-   Here, we apply conditional formatting to values between `5,500,000` and `8,000,000`.
-
-   ![Add conditional format range]({{ site.baseurl }}/images/edit-axis-conditional-formatting-3.png "Add conditional format range")
-
-5. To specify a different color of the conditional format, select the new color from the color selector.
-
-   This option draws upper and lower limit lines on the chart, and colors the chart elements that meet the conditional requirements.
-
-   ![Change conditional format color]({{ site.baseurl }}/images/edit-axis-conditional-formatting-4.png "Change conditional format color")
-
-   Alternatively, you can place a range band on the chart. Select the **Fill chart** option.
-
-   ![Add conditional format band]({{ site.baseurl }}/images/edit-axis-conditional-formatting-8.png "Add conditional format band")
-
-6. To add another condition, click **+add formatting**.
-
-7.  To remove a defined conditional format, click the delete icon (**x**) next to its definition.
-
-8.  Click **Done**.
-
-Here, you can see a chart that highlights elements with conditional  formatting on some elements. You can also see how the same chart appears with a background chart band.    
-
-![Conditional formatting applied, two options]({{ site.baseurl }}/images/edit-axis-conditional-formatting-applied-comparison.png "Conditional formatting applied, two options")
+{% include content/conditional-formatting-chart.md %}
 
 {: id="sort"}
 ## Change the Sort
