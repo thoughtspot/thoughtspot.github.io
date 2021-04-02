@@ -35,7 +35,7 @@ To view these system Pinboards:
    <tr>
       <td><code class="highlighter-rouge">Learn how to use ThoughtSpot</code></td>
       <td>
-         Contains search replays created in the system.
+         Contains search replays created in the system. This Pinboard is not available with the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new Answer experience</a>.
       </td>
    </tr>
    <tr>

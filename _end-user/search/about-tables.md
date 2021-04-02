@@ -145,9 +145,6 @@ To add a headline to a pinboard, hover over the headline and click the **Pin** i
 
  ![Add a headline to a pinboard]({{ site.baseurl }}/images/pin_headline.png "Add a headline to a pinboard")
 
- You can decide whether or not to display headlines in your table results. To
- customize headlines, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Customize Summaries**.
-
 ### Table aggregate headline
 
  The Table Aggregate headline option is available when an aggregate function is used either through a formula or a search bar query like average of a measure. It recalculates the function for the entire table. In such cases, Table Aggregate is shown by default in a headline under the table, instead of the “Avg” option, which does a second level of aggregation on top of the existing aggregation.

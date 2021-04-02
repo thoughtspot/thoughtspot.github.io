@@ -74,6 +74,9 @@ entries:
       - title: Search Data
         url: /end-user/search/search-data.html
         output: web
+      - title: New Answer experience
+        url: /admin/ts-cloud/new-answer-experience.html
+        output: web
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
