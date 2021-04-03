@@ -14,11 +14,15 @@ To connect to Snowflake:
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
 3. Create a name for your connection, a description (optional), then select the Snowflake connection type, and click **Continue**.
+
      ![Add a Snowflake connection]({{ site.baseurl }}/images/embrace-snowflake-connection-type-ts-cloud.png "Add a Snowflake connection")
 
 4. Enter the connection details for your Snowflake data source using either OAuth or service account authentication:
 
+   ThoughtSpot supports <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>, but not External OAuth.
+
    For OAuth authentication, do the following:
+
     1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
