@@ -20,6 +20,8 @@ To add a new connection to Snowflake:
 
 4. Enter the connection details for your Snowflake data source using either OAuth or service account authentication:
 
+   ThoughtSpot supports <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>, but not External OAuth.
+
    For OAuth authentication, do the following:
     1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
