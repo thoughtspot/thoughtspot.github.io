@@ -40,6 +40,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 </dd></dlentry>
 
+<dlentry id="unicode">
+<dt>Unicode support</dt>
+<dd>We added unicode character matching in Search Answers, extending support to all languages and character sets. You can now search all artifacts that use unicode characters in titles, descriptions, metadata, and keywords, and see the correct results.
+
+<img src="/images/search-answers-unicode.png" alt="Search Answers with full unicode support" title="Unicode support">
+</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="april-cloud-data-engineer"></a>For the Data Engineer</h3>
