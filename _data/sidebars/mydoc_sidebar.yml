@@ -29,6 +29,9 @@ entries:
     - title: Free Trial
       url:  /release/free-trial.html
       output: web
+    - title: Accessibility
+      url:  /release/accesibility.html
+      output: web
   - sectiontitle: Getting started
     output: web,ugBk
     sectionitems:
