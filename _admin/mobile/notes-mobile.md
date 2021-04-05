@@ -5,8 +5,43 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot mobile 1.3 is now available. These release notes include information about new features,
+ThoughtSpot mobile 2.0 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
+
+{: id="2-0-new"}
+## 2.0 New Features and Functionality
+Version 2.0 supports more features that were previously available only through the ThoughtSpot Web app, including:
+- Deep linking
+- Drill down
+
+### Deep linking
+
+You can now share a link to objects in ThoughtSpot and a user can open the link in the mobile app or the web. If a user has the mobile app, the link will open directly in the mobile app. If they don't have the mobile app, the are presented with the option to download it or to view it on the web. For details, see [ThoughtSpot Mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
+
+### Drill down
+
+You can now select data point(s) and drill down for more detailed information. You can also trace the drill path back and reset it to the initial state. For details, see [ThoughtSpot Mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html#).
+
+{: id="1-5-new"}
+## 1.5 New Features and Functionality
+- Support for ThoughtSpot 6.0 features including improved number formatting for data labels on the chart marks (bars, bubbles, lines) and axes.
+- Grouping of axes, and axis renaming.
+- Improved performance.
+
+{% include note.html content="If upgrading your cluster to ThoughtSpot 6.2, all mobile users **MUST** update their ThoughtSpot app to 1.5. If they do not, they will not be able to sign in." %}
+
+
+{: id="1-4-new"}
+## 1.4 New Features and Functionality
+- Improved network status messaging to keep you better informed on your device's connection to the internet and/or VPN.
+- You can now read the entire description on the visualization details page which originally displayed only one line.
+
+{: id="1-4-fixed"}
+## 1.4 Fixed Issues
+
+The following issues are fixed in the 1.4 release:
+
+- The app crashes when applying filters on a Pinboard that has an empty date or measure filter.
 
 {: id="1-3-new"}
 ## 1.3 New Features and Functionality

@@ -31,7 +31,7 @@ entries:
       output: web
     - title: Accessibility
       url:  /release/accessibility.html
-      output: web  
+      output: web
   - sectiontitle: Getting started
     output: web,ugBk
     sectionitems:
@@ -743,6 +743,24 @@ entries:
 #    - title: "SpotIQ preferences"
 #      url: /spotiq/spotiq-preferences.html
 #      output: web,ugBk
+  - sectiontitle: Mobile
+    output: web,ugBk
+    sectionitems:
+    - title: Overview
+      url: admin/mobile/use-mobile.html
+      output: web,ugBk
+    - title: Deploy
+      url: admin/mobile/deploy-mobile.html
+      output: web,ugBk
+    - title: Install and set up
+      url: admin/mobile/install-mobile.html
+      output: web,ugBk
+    - title: FAQ
+      url: admin/mobile/faq-mobile.html
+      output: web,ugBk
+    - title: Release notes
+      url: admin/mobile/notes-mobile.html
+      output: web,ugBk
   - sectiontitle: Work with data
     output: web,ugBk
     sectionitems:
