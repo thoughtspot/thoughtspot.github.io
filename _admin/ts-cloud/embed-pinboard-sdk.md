@@ -10,10 +10,10 @@ This page explains, through an example, how to embed a ThoughtSpot Pinboard in y
 
 ## Import the PinboardEmbed package
 
-Import the pinboard SDK library to your application environment:
+Import the PinboardEmbed SDK library to your application environment:
 
 ``` javascript
-import { PinboardEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
+import { PinboardEmbed, AuthType, init } from @thoughtspot/visual-embed-sdk';
 ```
 
 ## Add the embed domain
@@ -36,64 +36,86 @@ To allow your client application to connect to ThoughtSpot:
     *String*.  Hostname or IP address of the ThoughtSpot application.
 
     **`authType`**    
-    *String*. Authentication type. Valid values are:
+    *String*. Authentication type. You can set the `authType` attribute to one of the following values:
 
-    - `AuthServer`  
-      Trusted authentication method. The trusted authentication method enables applications to exchange secure tokens and grant access to the embedded content. If this authentication method is used, define the `authEndpoint` attribute.
-    - `authEndpoint`    
-      *String*. The endpoint URL of the authentication server. This attribute is required if the `AuthType` is set to `AuthServer`.  
-    - `SSO`    
-      SAML SSO authentication method. Users accessing the embedded content are authenticated with SAML SSO.
-    - `None`  
-      Requires no authentication. The user must already be logged in to ThoughtSpot before interacting with the embedded content.
-      This approach is used only for testing client applications. Do not use this in production environments.
+    -   `Basic`                                      
+        Allows authenticating and logging in a user using the ThoughtSpot `/tspublic/v1/session/login` API. The API request passes `username` and `password` parameters to obtain an authentication token. For more information, see [session APIs]({{ site.baseurl }}/reference/api/session-api.html).
 
+        {% include warning.html content="Do not use this authentication method in production environments." %}
+
+    -   `SSO`                                                    
+        Sets SAML SSO as the authentication method. Federated users can authenticate with their SSO credentials to access the embedded ThoughtSpot content.
+
+    -   `None`                                                        
+        Requires no authentication. The user must already be logged in to ThoughtSpot before interacting with the embedded content.
+
+        {% include warning.html content="Do not use this authentication method in production environments." %}
+
+    -   `AuthServer`                                      
+        Enables trusted authentication method. To use the trusted authentication method, specify the trusted authentication server in the `authEndpoint` attribute or use the `getAuthToken` method.
+
+        -   `authEndpoint` *Optional*
+
+            *String*. The endpoint URL of the authentication server. When the `authEndPoint` attribute is defined, a GET request is sent to the authentication endpoint, which returns the authentication token as plaintext in its API response. This attribute is not required if `getAuthToken` is used.
+        -   `username`
+
+            *String*. The username of the ThoughtSpot user.
+
+        -   `getAuthToken` *Optional*
+
+            A function that invokes the trusted authentication endpoint and returns a `Promise` string that resolves to the authentication token. This attribute is not required if `authEndpoint` is used.  
+
+              ```
+                getAuthToken: () => Promise.resolve(token)
+              ```
 
 ## Construct the embed content
 
 ``` javaScript
- const pinboardEmbed = new PinboardEmbed("#embed", {
+const pinboardEmbed = new PinboardEmbed(
+   document.getElementById('ts-embed'),
+   {
     frameParams: {
-        width: 1280,
-        height: 720
-    },
+       width: 100%,
+       height: 100%,
+   },
     disabledActions: [],
     disabledActionReason: '<reason for disabling>'
     hiddenActions: [],
+    pinboardId: '<%=pinboardGUID%>',
+    runtimeFilters: [],
+   },
+
 });
 ```
 **`frameParams`**  
-Sets the `width` and `height` dimensions to render the iframe containing the visualization.
+Sets the `width` and `height` dimensions to render the iframe containing the pinboard.
+
+**`fullHeight`**  
+*Boolean*. Adjusts the height of the embedded widget to fit the entire pinboard.
 
 **`disabledActions`** *optional*  
-*Array of string*. Menu items from the list of actions to be disabled on the visualization page.
+*Array of strings*. The action menu items to be disabled on the Pinboards page.
 
 For example, to disable the **Present** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `present` string in the `disabledActions` attribute.
+
 ```javascript
 disabledActions: Action.present
 ```
+For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
 **`hiddenActions`** *optional*  
-*Array of string*. Menu items from the list of actions to be hidden on the visualization page.
+*Array of strings*. Hides the menu items from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png.
 
 For example, to hide **Add filters** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `addFilter` string in the `hiddenActions` attribute.
+
 ```javascript
 hiddenActions: Action.addFilter
 ```
+For a complete list of action menu items and the corresponding strings to use for  hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
 **`disabledActionReason`** *optional*  
 *String*. Reason for disabling an action on the visualizations page.
-
-For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
-
-## Render the embedded pinboard
-
-Construct the URL for the embedded pinboard and render the embedded content:
-
-``` javaScript
-    pinboardEmbed.render({
-    pinboardId: '<%=pinboardGUID%>',
-    runtimeFilters: []
-  });
-```
 
 **`pinboardId`**  
 *String*. The GUID of the pinboard.
@@ -103,7 +125,7 @@ Runtime filters to be applied on a pinboard visualization when the page loads.
 
 Runtime filters provide the ability to filter data at the time of retrieval. Runtime filters allow you to apply a filter to a visualization in a pinboard and pass filter specifications in the URL query parameters.
 
-For example, to sort values equal to `red` in the `Color` column for a visualization, you can pass the Runtime Filters in the URL query parameters as shown here:
+For example, to sort values equal to `red` in the `Color` column for a visualization in a pinboard, you can pass the runtime filter in the URL query parameters as shown here:
 
 ```javascript
   runtimeFilters: [{
@@ -111,8 +133,8 @@ For example, to sort values equal to `red` in the `Color` column for a visualiza
   operator: RuntimeFilterOp.EQ,
   values: [ 'red' ]
   }]
-
 ```
+
 Runtime filters have several operators for filtering your embedded visualizations.
 
 | Operator      | Description                           | Number of Values |
@@ -131,33 +153,50 @@ Runtime filters have several operators for filtering your embedded visualization
 | `BW_INC`      | between inclusive                     | 2                |
 | `BW`          | between non-inclusive                 | 2                |
 
+For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
+
+## Render the embedded pinboard
+
+Construct the URL for the embedded pinboard and render the embedded content:
+
+``` javaScript
+    pinboardEmbed.render();
+```
+
 ## Subscribe to events
 
 Register event handlers and subscribe to events triggered by the embedded pinboard:
 
 ``` javascript
-
-  pinboardEmbed.on(EventType.init, showLoader)
-  pinboardEmbed.on(EventType.load, hideLoader)
+    pinboardEmbed.on(EmbedEvent.init, showLoader)
+    pinboardEmbed.on(EmbedEvent.load, hideLoader)
+    pinboardEmbed.on(EmbedEvent.Error)
 
 ```
+If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register the event handler to manage the events triggered by the custom action:
+
+``` javascript
+ pinboardEmbed.on(EmbedEvent.customAction, payload => {
+      const data = payload.data;
+      if (data.id === 'insert Custom Action ID here') {
+          console.log('Custom Action event:', data.columnsAndData);
+      }
+  })
+```
+For a complete list of event types that you can register, see  [EmbedEvent]((https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/embedevent.html).
 
 ## Test the embedded workflow
 
 -   Load the client application.
-
 -   Try accessing a pinboard embedded in your application.
-
 -   Verify the rendition.
-
 -   If you have disabled a menu item, verify if the menu command is disabled on the **Pinboards** page.
-
 -   Verify the runtime filters.
 
 ## Code sample
 
 ``` javascript
-import { PinboardEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
+import { PinboardEmbed, AuthType, init } from '@thoughtspot/visual-embed-sdk';
 
 init({
     thoughtSpotHost: '<%=tshost%>',
@@ -171,10 +210,9 @@ const pinboardEmbed = new PinboardEmbed(
             width: '100%',
             height: '100%',
         },
+        pinboardId: 'f4a4e205-3b43-4b77-8ec0-8723da49ce1d',
+        },
     });
 
-pinboardEmbed.render({
-    pinboardId: 'f4a4e205-3b43-4b77-8ec0-8723da49ce1d',
-
-});
+pinboardEmbed.render();
 ```
