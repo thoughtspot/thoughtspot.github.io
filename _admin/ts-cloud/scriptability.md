@@ -46,8 +46,9 @@ Refer to the following tables for required permissions for importing and exporti
 
 {: id="export-object"}
 ## Export an object
-You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
+You can export one object at a time, export more than one object as a zip file, or export custom SpotApps. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
 
+<!--
 {: id="export-one"}
 ### Export one object
 To export one object:
@@ -56,17 +57,17 @@ To export one object:
 
 2. Click the three-dot icon, and select **Export TML**.
 
-    ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
+    ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard") -->
 
 {: id="export-zip-file"}
-### Export multiple objects
-To export multiple objects at a time, follow these steps. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
+### How to export objects
+To export objects, follow these steps. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
 
-1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the objects you want to export.
+1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object(s) you want to export.
 
     ![The top navigation bar]({{ site.baseurl }}/images/nav-bar-no-spotiq.png "The top navigation bar")
 
-2. Hover over the objects you want to export, and click the empty checkboxes that appear.
+2. Hover over the object(s) you want to export, and click the empty checkboxes that appear.
 
 3. Select the **Export TML** button.
 
@@ -88,19 +89,19 @@ You can edit the `TML` file in one of two ways. You can [export](#export-object)
 
 {: id="tml-editor"}
 ## Edit, validate, and publish objects using the TML editor
-You can access the TML editor from the object list page, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page.
+You can access the TML editor from the object list page<!--, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page-->.
 
 To use the TML editor, follow these steps:
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
-2. Click the name of the object you want to edit, or select multiple objects by clicking on the checkboxes that appear when you hover over an object name.
+2. <!-- Click the name of the object you want to edit, or --> Select one or more objects by clicking on the checkboxes that appear when you hover over an object name.
 
-3. From the object list page, select the **Edit TML** button. From the object itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TML**.
+3. From the object list page, select the **Edit TML** button. <!-- From the object itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TML**. -->
 
     ![Edit TML - object list page]({{ site.baseurl }}/images/scriptability-edit-tml-object-page.png "Edit TML - object list page")
 
-    ![Edit TML from object]({{ site.baseurl }}/images/scriptability-edit-tml-object.png "Edit TML from object")
+    <!-- ![Edit TML from object]({{ site.baseurl }}/images/scriptability-edit-tml-object.png "Edit TML from object") -->
 
 4. The TML editor opens. Edit the TML file(s), using the syntax specified in [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html).
 
@@ -139,15 +140,11 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
-2. Click the name of the object you want to edit.
+4. Select **Import TML**.
 
-3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
+   <!--Here, we are uploading the edited *TCPH WS* worksheet.
 
-4. Select **Update from TML**.
-
-   Here, we are uploading the edited *TCPH WS* worksheet.
-
-   ![Start Worksheet update from file]({{ site.baseurl }}/images/scriptability-worksheet-update.png "Start Worksheet update from file")
+   ![Start Worksheet update from file]({{ site.baseurl }}/images/scriptability-worksheet-update.png "Start Worksheet update from file")-->
 
 5. In the **Import** interface, click **Select .tml or .zip files to upload**.
 

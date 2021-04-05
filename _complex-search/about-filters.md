@@ -39,7 +39,7 @@ your filters apply to all worksheet-based visualizations in the pinboard.
  ![Filters appear under the title]({{ site.baseurl }}/images/filter-list-location.png "Filters appear under the title")
 
 If you ever find that your search or pinboard does not appear to contain all the
-data you want to see, check for any existing filters and remove them by clicking
+data you want to see, check for any existing filters and remove them by clicking on the in-product back button to the left of the Answer or by clicking
 the **X** to see all the data.
 
 {% include note.html content="Filtering on NULL and empty values is a special

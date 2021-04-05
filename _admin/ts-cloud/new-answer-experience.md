@@ -27,11 +27,6 @@ To turn the new Answer experience on or off, follow these steps:
 
     ![Toggle new answer experience on or off]({{ site.baseurl }}/images/new-answer-experience-toggle.png "Toggle new answer experience on or off")
 
-## Behavior of new Answer experience features
-The new Answer experience is the first part of ThoughtSpot's move to a new stack. The new stack is still in progress, which has implications for the behavior of [new Answer experience features](#new-features). Some of these new features currently only work on searches and Answers, on the **Search** page and on the **Answers** page. For example, you may notice that the SpotIQ Analyze modal looks different when you analyze a data point from a Pinboard visualization rather than from an Answer or search. The following new features only work on searches and Answers:
-
-- New SpotIQ analyze modal. On the Pinboards page, you see the old modal.
-
 {: id="limitations"}
 ## Limitations
 {% include content/new-answer-experience-deprecations.md %}
