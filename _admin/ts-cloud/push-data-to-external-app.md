@@ -1,6 +1,6 @@
 ---
 title: [Push data using REST APIs]
-last_updated: 3/3/2021
+last_updated: 4/3/2021
 summary: "You can use the REST APIs to push data to a third-party application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,7 +10,7 @@ ThoughtSpot allows you to push data to a third-party application from the Though
 
 For example, if your client application has embedded the ThoughtSpot search functionality, you can initiate an action to send a search answer to another application or a workflow. To do this, you can use the custom menu item configured for your embedded instance.
 
-For more information on custom menu items, see [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html).
+For more information on configuring custom menu items, see [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html).
 
 ## Data format
 

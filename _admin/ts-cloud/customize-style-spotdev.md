@@ -16,29 +16,21 @@ You can rebrand the ThoughtSpot application interface components such as the log
 
 You can customize the following ThoughtSpot UI style components:
 
--   [Application logo & favicon](#logo-change)
-
--   [Font style for charts and tables](#font-customize)
-
--   [Background color of the application](#custom-bg)
-
--   [Background color of the navigation panel](#nav-panel)
-
--   [Color palette for charts](#chart-palette)
-
--   [Footer text](#footer-text)
-
--   [Page title](#page-title)
+-   Application logo & favicon
+-   Font style for charts and tables
+-   Background color of the application
+-   Background color of the navigation panel
+-   Color palette for charts
+-   Footer text
+-   Page title
 
 ## Access customization settings
 
 To access style customization settings:
 
-1.  Go to the SpotDev portal.
-
-2.  Sign in with your ThoughtSpot user credentials.
-
-3.  Under **Customization**, click **Styles**.
+1. Log in ThoughtSpot as an admin or developer user.
+2. To access the ThoughtSpot Developer portal, click the **Develop** tab.
+3.  Under **Customizations**, click **Styles**.
 
 {% include tip.html content="The style customization settings are also available in the ThoughtSpot **Admin** console." %}
 
@@ -48,7 +40,7 @@ For more information on setting UI styles from the **Admin** console, see [Style
 
 To upload your application logos:
 
-1.  Go to **SpotDev** > **Customizations** > **Styles**.
+1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
 
 2.  To upload the default logo:
 
@@ -60,7 +52,7 @@ To upload your application logos:
 
     Your icon image should be a square, and the recommended size is 140px by 140px.
     The accepted file formats are jpg, jpeg, and png.
-    This logo will appear on the top left of the interface.
+    3. Verify if the logo appears correctly at the top left corner of the navigation bar.
 
 3.  To upload a wide logo:
 
@@ -73,7 +65,7 @@ To upload your application logos:
         The recommended size is 330px by 100px.
         The accepted file formats are jpg, jpeg, and png.
         This logo appears on the login screen.
-        You may need to test a few versions to make sure it appears correctly.
+    3. Verify if the logo appears correctly.
 
 ## Customize fonts for visualizations
 
@@ -98,7 +90,7 @@ Before you begin, make sure you have the WOFF files available for the fonts you 
 
 To update fonts:
 
-1.  Go to **SpotDev** > **Customizations** > **Styles**.
+1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
 
 2.  To update fonts for charts, go to **Chart Visualization Fonts**, and select a chart label.
 
@@ -122,11 +114,11 @@ To update fonts:
 
 8.  To update the font style:
 
-    1.  Click the edit icon.
+    a.  Click the edit icon.
 
-    2.  Modify the font color, weight, and style.
+    b.  Modify the font color, weight, and style.
 
-    3.  Click **Confirm**.
+    c.  Click **Confirm**.
 
 ## Customize background color
 
@@ -135,7 +127,7 @@ The custom background color is applied to the embed visualizations, pinboards, a
 
 To choose a background color for the ThoughtSpot application:
 
-1.  Go to **SpotDev** > **Customizations** > **Styles**.
+1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
 
 2.  Click the background color box under **Embedded Application Background**.
 
@@ -150,7 +142,7 @@ The custom background color is applied to the navigation panel of the ThoughtSpo
 
 To choose a background color for the navigation panel:
 
-1.  Go to **SpotDev** &gt; **Customizations** > **Styles**.
+1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
 
 2.  Click the background color box under **Navigation Panel Color**.
 
@@ -164,7 +156,7 @@ You can define a set of primary and secondary colors for chart visualizations. T
 
 To change the color palette for charts:
 
-1.  Go to **SpotDev** > **Customizations** > **Styles**.
+1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
 
 2.  Click the background color box under **Chart Color Palettes**.
 
@@ -193,7 +185,7 @@ The ThoughtSpot footer appears by default in the ThoughtSpot application. You ca
 
 To change the footer text:
 
-1.  Go to **SpotDev** > **Customizations** > **Styles**.
+1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
 
 2.  Click the text box under **Footer text**.
 
@@ -205,7 +197,7 @@ To change the footer text:
 
 To customize the page title displayed in the browser bar:
 
-1.  Go to **SpotDev** > **Customizations** > **Styles**.
+1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
 
 2.  Click the text box under **Page title**.
 
