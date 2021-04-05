@@ -64,7 +64,7 @@ In this method, you can send a POST request to the `/tspublic/v1/session/login` 
 This would require the user to be *already logged into ThoughtSpot*, before interacting with the client application.
 You can use this authentication approach for testing environments.
 This authentication method is intended to be used in initial development and testing phases. Do not use this authentication method in a production environment.
-{% include warning.html content="Do not use this authentication method in a production environment."
+{% include warning.html content="Do not use this authentication method in a production environment." %}
 
 **SAML SSO**                       
 This method requires you to set up [SAML SSO]({{ site.baseurl }}/admin/ts-cloud/configure-saml-spotdev.html)  support on the ThoughtSpot admin console.
