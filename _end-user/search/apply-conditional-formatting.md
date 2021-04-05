@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
 
-{% include note.html content="Certain elements of table configuration are part of the new Answer experience. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, content density, and theme (outline, row, or zebra). If you have the new Answer experience on, these new conditional and number formatting functionalities apply to searches and Answers, but not to visualizations within Pinboards. If the new Answer experience is off, you do not see these capabilities. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="Certain elements of table configuration are part of the new Answer experience. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
 
 ## Understand conditional formatting
 
