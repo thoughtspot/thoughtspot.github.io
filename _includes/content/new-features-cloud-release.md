@@ -25,6 +25,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd><p>You can enhance the search experience of the content built on Worksheets you own or maintain by adding common search terms to your Worksheet glossary. This feature allows you to support the way your users search on existing Answers and Pinboards. See <a href="{{ site.baseurl }}/admin/thoughtspot-one/synonyms.html">Create Worksheet synonyms for search on Answers</a>.</p>
 <p>This feature is in <span class="label label-beta">Beta</span> and off by default; <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a> to enable it.</p></dd></dlentry>
 
+<dlentry id="query-dashboard">
+<dt>Enhancements to the Search on Answers Pinboard</dt>
+<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Search on Answers Pinboard</a> contains several new or updated visualizations, including <strong>Top search queries on existing Answers</strong>, <strong>Position at which users are clicking</strong>, and <strong>What results users are finding useful with autocomplete suggestions</strong>. These new visualizations provide more information about click position, what information users look for, and what information they cannot find. You can also view the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#best-practices">best practices</a> for this Pinboard.
+</dd></dlentry>
+
 </dl>
 
 <h3><a id="april-cloud-business-user"></a>For the Business User</h3>
