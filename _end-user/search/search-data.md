@@ -1,6 +1,6 @@
 ---
 title: ["Search data"]
-last_updated: 11/16/2020
+last_updated: 4/6/2021
 summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 redirect_from:
@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 ## How do I search data?
 
-To search data, make sure that the search bar icon is set to **Search data**.
+To search data, make sure that the search bar icon is set to **Search data**. ThoughtSpot remembers your choice across sessions when you switch between <strong>Search Answers</strong> and <strong>Search Data</strong>.
 
 ![]({{ site.baseurl }}/images/search-data.png "Search bar for Search data")
 
