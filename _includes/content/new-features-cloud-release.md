@@ -45,7 +45,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="latency">
 <dt>Improvements in indexing latency for Search Answers</dt>
-<dd>This release improves indexing latency to less than 10 minutes, from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes. If you create a new Answer, users can search for and find it 10 minutes after you create it.</dd></dlentry>
+<dd>This release improves indexing latency to less than 10 minutes, from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes. If you create a new Answer, users can search for and find it 10 minutes after you create it. This indexing improvement is in the process of rollout. If you don’t have it yet, ThoughtSpot will deploy it soon.</dd></dlentry>
 
 <dlentry id="unicode">
 <dt>Unicode support</dt>
