@@ -1,5 +1,5 @@
 ---
-title: [ThoughtSpot embedding solution]
+title: [Embedded analytics]
 last_updated: 4/3/2021
 summary: "ThoughtSpot provides the Visual Embed SDK, REST APIs, and  developer tools to embed search, visualizations, pinboards, and the full ThoughtSpot experience in a third-party product or business solution."
 sidebar: mydoc_sidebar

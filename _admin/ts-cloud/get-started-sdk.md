@@ -12,13 +12,9 @@ This section lists the tasks you need to complete before embedding ThoughtSpot c
 ## Prerequisites
 
 -   Verify if the ThoughtSpot admin has enabled the authentication service.
-
     ThoughtSpot supports SAML SSO and trusted authentication services.
-
 -  Verify if your host application domain is [whitelisted for CORS and CSP]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
-
 -   Verify if the same-site cookie setting is set to `none`.
-
 -   If you want to rebrand and white-label the embedded content or add custom actions to the embedded visualizations, you will require access to ThoughtSpot Developer portal. Make sure you have administrator or developer privileges to access the **Customizations** menu in the **Develop** tab.
 
 ## Prepare your project environment
@@ -33,7 +29,7 @@ The latest version of the Visual Embed SDK is available at [https://www.npmjs.co
 
 To install the SDK, run the following command at the command line:
 
-``` shell
+``` console
 npm install @thoughtspot/visual-embed-sdk
 ```
 

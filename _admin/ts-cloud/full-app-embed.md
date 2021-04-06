@@ -78,55 +78,49 @@ To allow your client application to connect to ThoughtSpot:
         Enables trusted authentication method. To use the trusted authentication method, specify the trusted authentication server in the `authEndpoint` attribute or use the `getAuthToken` method.
 
         -   `authEndpoint` *Optional*
-
             *String*. The endpoint URL of the authentication server. When the `authEndPoint` attribute is defined, a GET request is sent to the authentication endpoint, which returns the authentication token as plaintext in its API response. This attribute is not required if `getAuthToken` is used.
         -   `username`
-
             *String*. The username of the ThoughtSpot user.
 
         -   `getAuthToken` *Optional*
-
             A function that invokes the trusted authentication endpoint and returns a `Promise` string that resolves to the authentication token. This attribute is not required if `authEndpoint` is used.  
 
               ```
-                getAuthToken: () => Promise.resolve(token)
+              getAuthToken: () => Promise.resolve(token)
               ```
 
 ### Create an instance of the AppEmbed object
 
 Create an instance of the AppEmbed object and pass the parameters for the application page view.
+
 ``` javascript
 const appEmbed = new AppEmbed(
 document.getElementById('ts-embed'),
    {
-    frameParams: {
+     frameParams: {
         width: '100%',
         height: '100%',
-
     },
-    disabledActions: [],
-    disabledActionReason: '<reason for disabling>'
-    hiddenActions: [],
-    showPrimaryNavbar: true,
-    pageId: Page.Data,
-    path: '<url-string>',
-    runtimeFilters: [],
-
+     disabledActions: [],
+     disabledActionReason: '<reason for disabling>'
+     hiddenActions: [],
+     showPrimaryNavbar: true,
+     pageId: Page.Data,
+     path: '<url-string>',
+     runtimeFilters: [],
     },
-
  });
 ```
 
 **`frameParams`**  
 Sets the `width` and `height` dimensions to render the pages in the web application.
 
-
 **`disabledActions`**  
 *Array of strings*. The action menu items to be disabled on the ThoughtSpot application pages.
 
 For example, to disable the **download** action from the **More** (**…​**) menu on the pinboard or visualization page, specify the `download` string in the `disabledActions` attribute.
 
-``` JavaScript
+``` javascript
 disabledActions: ['download']
 ```
 For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
@@ -139,10 +133,10 @@ For a complete list of action menu items and the corresponding strings to use fo
 
 For example, to hide the **Download** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `add` string in the `hiddenActions` attribute.
 
-``` JavaScript
+``` javascript
 hiddenActions: ['download']
 ```
-  For a complete list of action menu items and the corresponding strings to use for hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+For a complete list of action menu items and the corresponding strings to use for hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
 
 **`showPrimaryNavbar`**  
 *Boolean*. Shows or hides the ThoughtSpot navigation bar.
@@ -150,23 +144,19 @@ hiddenActions: ['download']
 **`path`**  
 *String*. The URL path of the ThoughtSpot application page to embed.
 
-{% include warning.html content="When both `path` and `PageId` attributes are defined, the path definition takes precedence." %}
+{% include warning.html content="When both `path` and `pageId` attributes are defined, the path definition takes precedence." %}
 
 **`pageId`**  
 *String*. The unique identifier for the ThoughtSpot application page. The following values are valid.
 
 - `Page.Search`  
   Displays the search answers page when the application loads.
-
 - `Page.Answers`  
    Displays the saved search answers (**Answers**) page when the application loads.
-
 - `Page.Pinboards`  
    Displays the **Pinboards** page when the application loads.
-
 - `Page.Data`  
    Displays the **Data** page when the application loads.
-
 - `Page.Home`  
    Displays the **Home** page when the application loads.
 
@@ -177,54 +167,52 @@ Runtime filters provide the ability to filter data at the time of retrieval. Run
 
 For example, to sort values equal to `100000` in the `Revenue` column for a visualization in a pinboard, you can pass the runtime filter in the URL query parameters as shown here:
 
- ``` javascript
-     runtimeFilters: [{
-           columnName: 'Revenue',
-           operator: 'EQ',
-           values: [ 100000 ]
-           }]
- ```
+``` javascript
+  runtimeFilters: [{
+     columnName: 'Revenue',
+     operator: 'EQ',
+     values: [ 100000 ]
+  }]
+```
 
 Runtime filters have several operators you can use to filter your embedded visualizations.
 
-     | Operator      | Description                           | Number of Values |
-     |---------------|---------------------------------------|------------------|
-     | `EQ`          | equals                                | 1                |
-     | `NE`          | does not equal                        | 1                |
-     | `LT`          | less than                             | 1                |
-     | `LE`          | less than or equal to                 | 1                |
-     | `GT`          | greater than                          | 1                |
-     | `GE`          | greater than or equal to              | 1                |
-     | `CONTAINS`    | contains                              | 1                |
-     | `BEGINS_WITH` | begins with                           | 1                |
-     | `ENDS_WITH`   | ends with                             | 1                |
-     | `BW_INC_MAX`  | between inclusive of the higher value | 2                |
-     | `BW_INC_MIN`  | between inclusive of the lower value  | 2                |
-     | `BW_INC`      | between inclusive                     | 2                |
-     | `BW`          | between non-inclusive                 | 2                |
+| Operator      | Description                           | Number of Values |
+|---------------|---------------------------------------|------------------|
+| `EQ`          | equals                                | 1                |
+| `NE`          | does not equal                        | 1                |
+| `LT`          | less than                             | 1                |
+| `LE`          | less than or equal to                 | 1                |
+| `GT`          | greater than                          | 1                |
+| `GE`          | greater than or equal to              | 1                |
+| `CONTAINS`    | contains                              | 1                |
+| `BEGINS_WITH` | begins with                           | 1                |
+| `ENDS_WITH`   | ends with                             | 1                |
+| `BW_INC_MAX`  | between inclusive of the higher value | 2                |
+| `BW_INC_MIN`  | between inclusive of the lower value  | 2                |
+| `BW_INC`      | between inclusive                     | 2                |
+| `BW`          | between non-inclusive                 | 2                |
 
 For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
 
 ### Construct the URL and render the application
-
 Construct the URL of the embedded ThoughtSpot application to load within the web page.
 Render the embedded content and pass the `pageID` parameter for setting a page as an active tab when the application loads.
 
 ``` javascript
-    appEmbed.render();
+ appEmbed.render();
 ```
 
 ### Subscribe to events
 
 Register event handlers to subscribe to events triggered by the ThoughtSpot Search function:
 
-``` javascript
-  appEmbed.on(EmbedEvent.init, showLoader)
-  appEmbed.on(EmbedEvent.load, hideLoader)
-  appEmbed.on(EmbedEvent.Error)
-
 ```
-If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register the event handler to manage the events triggered by the custom action:
+ appEmbed.on(EmbedEvent.init, showLoader)
+ appEmbed.on(EmbedEvent.load, hideLoader)
+ appEmbed.on(EmbedEvent.Error)
+```
+If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register an event handler to manage the events triggered by the custom action:
 
 ``` javascript
  pinboardEmbed.on(EmbedEvent.customAction, payload => {
@@ -234,6 +222,7 @@ If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-
       }
   })
 ```
+For a complete list of event types that you can register, see  [EmbedEvent]((https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/embedevent.html).
 
 ### Test the embedded workflow
 
@@ -261,9 +250,7 @@ const appEmbed = new AppEmbed(
             height: '100%',
         },
         pageId: Page.Data,
-
       },
-
     });
 appEmbed.render();
 ```
