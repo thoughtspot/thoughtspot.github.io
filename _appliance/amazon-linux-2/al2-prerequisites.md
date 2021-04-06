@@ -1,7 +1,7 @@
 ---
 title: [Amazon Linux 2 installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 10/19/2020
+last_updated: 4/6/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,6 +11,8 @@ permalink: /:collection/:path.html
 | &#10063; | [4. Enable the hosts to download Amazon Linux 2 packages](#enable-hosts) |
 | &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
 | &#10063; | [6. Disable SELinux or run it in permissive mode](#disable-selinux) |
+| &#10063; | [7. Ensure tmp has permission 777](#tmp-permission) |
+| &#10063; | [8. Remove Defaults requiretty from /etc/sudoers](#etc-sudoers) |
 
 {: id="set-up-hosts"}
 ## Set up hosts for the ThoughtSpot cluster
@@ -81,6 +83,14 @@ Configure an Ansible Control Server, on a separate host, to run the Ansible play
 {: id="disable-selinux"}
 ## Disable SELinux or run it in permissive mode
 ThoughtSpot does not support policies that enforce SELinux. We recommend that you disable SELinux, or run it in permissive mode.
+
+{: id="tmp-permission"}
+## Ensure tmp has permission 777
+The `/tmp` directory must have the `777` permission.
+
+{: id="etc-sudoers"}
+## Remove Defaults requiretty from /etc/sudoers
+The `/etc/sudoers` file must not have the `Defaults requiretty` line. This line can cause cluster creation to fail.
 
 ## Next steps
 Next, [get ThoughtSpot artifacts]({{ site.baseurl }}/appliance/amazon-linux-2/al2-ts-artifacts.html).
