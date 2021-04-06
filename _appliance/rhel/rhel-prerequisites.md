@@ -1,7 +1,7 @@
 ---
 title: [RHEL and OEL installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 3/23/2021
+last_updated: 4/6/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,6 +11,8 @@ permalink: /:collection/:path.html
 | &#10063; | [4. Ensure that your Linux kernel is correct](#linux-kernel-version) |
 | &#10063; | [5. Enable the hosts to download RHEL or OEL packages](#enable-hosts) |
 | &#10063; | [6. Enable an Ansible Control Server](#enable-ansible) |
+| &#10063; | [7. Ensure tmp has permission 777](#tmp-permission) |
+| &#10063; | [8. Remove Defaults requiretty from /etc/sudoers](#etc-sudoers) |
 
 {: id="set-up-hosts"}
 ## Set up hosts for the ThoughtSpot cluster
@@ -91,3 +93,11 @@ If the hosts of your ThoughtSpot cluster have access to an internal repository t
 ## Enable an Ansible Control Server
 
 Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both `rsync` and Ansible on the Ansible Control Server host.
+
+{: id="tmp-permission"}
+## Ensure tmp has permission 777
+The `/tmp` directory must have the `777` permission.
+
+{: id="etc-sudoers"}
+## Remove Defaults requiretty from /etc/sudoers
+The `/etc/sudoers` file must not have the `Defaults requiretty` line. This line can cause cluster creation to fail.
