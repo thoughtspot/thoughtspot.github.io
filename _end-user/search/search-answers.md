@@ -1,6 +1,6 @@
 ---
 title: ["Search Answers"]
-last_updated: 2/22/2021
+last_updated: 4/6/2021
 summary: "You search existing Answers and Pinboards to get correct information."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,7 +17,7 @@ Search Answers eliminates redundant work of constructing new Answers and Pinboar
 
 ![]({{ site.baseurl }}/images/search-answers.png "Search across existing Answers")
 
-1. To search Answers and Pinboards, toggle the **Search type** icon to **Search Answers** at the top right, next to the search bar: ![]({{ site.baseurl }}/images/search-toggle-answers.png){: .inline}.
+1. To search Answers and Pinboards, toggle the **Search type** icon to **Search Answers** at the top right, next to the search bar: ![]({{ site.baseurl }}/images/search-toggle-answers.png){: .inline}. ThoughtSpot remembers your choice across sessions when you switch between <strong>Search Answers</strong> and <strong>Search Data</strong>.
 
 2. You can select a specific Worksheet from the **Sources** dropdown to the left of the search bar. By default, you search across all Worksheets for which you have access.
 

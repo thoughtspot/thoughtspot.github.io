@@ -19,11 +19,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </ul>
 </dd></dlentry>
 
-<dlentry id="synonyms">
-<dt>Create Worksheet synonyms for search on Answers</dt>
-<dd><p>You can enhance the search experience of the content built on Worksheets you own or maintain by adding common search terms to your Worksheet glossary. This feature allows you to support the way your users search on existing Answers and Pinboards. See <a href="{{ site.baseurl }}/admin/thoughtspot-one/synonyms.html">Create Worksheet synonyms for search on Answers</a>.</p>
-<p>This feature is in <span class="label label-beta">Beta</span> and off by default; <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a> to enable it.</p></dd></dlentry>
-
 <dlentry id="query-dashboard">
 <dt>Enhancements to the Search on Answers Pinboard</dt>
 <dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Search on Answers Pinboard</a> contains several new or updated visualizations, including <strong>Top search queries on existing Answers</strong>, <strong>Position at which users are clicking</strong>, and <strong>What results users are finding useful with autocomplete suggestions</strong>. These new visualizations provide more information about click position, what information users look for, and what information they cannot find. You can also view the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#best-practices">best practices</a> for this Pinboard.
@@ -43,6 +38,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <p> Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience">New Answer experience</a> for more information on the behavior of these features.</p>
 
 </dd></dlentry>
+
+<dlentry id="sticky-search-toggle">
+<dt>Sticky Search Answers/ Search Data toggle</dt>
+<dd>This release makes the Search Answers/ Search Data toggle <img src="{{ site.baseurl }}/images/search-toggle-answers.png" alt="search toggle" class="inline"/> sticky. ThoughtSpot now remembers your choice across sessions when you switch between <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search Answers</a> and <a href="{{ site.baseurl }}/end-user/search/search-data.html">Search Data</a>.</dd></dlentry>
+
+<dlentry id="latency">
+<dt>Improvements in indexing latency for Search Answers</dt>
+<dd>This release improves indexing latency to less than 10 minutes, from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes. If you create a new Answer, users can search for and find it 10 minutes after you create it.</dd></dlentry>
 
 <dlentry id="unicode">
 <dt>Unicode support</dt>

@@ -24,19 +24,19 @@ To search your data, either click on the **Search** tab from the top navigation 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
 {: id="quick-links"}
-## Access and create quick links to your most-used Answers and Pinboards
+## Access and create shortcuts to your most-used Answers and Pinboards
 When you first view the ThoughtSpot home page, you can see a row of empty cards for quick links just below the Search bar. Use these cards to create shortcuts for Answers or Pinboards you reference often.
 
-To create shortcut cards, follow these steps:
+To create shortcuts, follow these steps:
 
-1. Click **Add New Card** from the end of the row of existing shortcuts.<br>
-    You may need to use the right arrow button to get to the **Add New Card** option, if you already have several shortcuts.
+1. Click **Add new shortcut** from the end of the row of existing shortcuts.<br>
+    You may need to use the right arrow button to get to the **Add new shortcut** option, if you already have several shortcuts.
 
-2. The **Add a new card** window modal appears, filtered to show your favorites.
+2. The **Add a new shortcut** window modal appears, filtered to show your favorites. To search among your favorites for the Answer or Pinboard you would like to add, use the search bar at the top right of the shortcut window.
 
-3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**.
+3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**. To search among these objects, use the search bar at the top right of the shortcut window.
 
-4. Select an object, and click **Add**. The modal only shows 9 objects per page. To find an object not on the first page, scroll down and select **Next** at the bottom right of the modal.
+4. Select an object, and click **Add**. The shortcut window only shows 9 objects per page. To find an object not on the first page, use the search bar, or scroll down and select **Next** at the bottom right of the modal.
 
 Note that you can only add one object shortcut at a time. You can have up to 20 Answer and Pinboard shortcuts on the ThoughtSpot home page.
 

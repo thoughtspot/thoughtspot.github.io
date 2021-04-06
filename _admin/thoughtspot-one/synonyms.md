@@ -1,11 +1,11 @@
 ---
 title: [Create Worksheet synonyms for search on Answers]
 summary: "Create synonyms for column names in your Worksheets to support search on existing Answers and Pinboards."
-last_updated: 4/5/2021
+last_updated: 4/6/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-As an analyst, you want to create the best search experience possible for your users. You can enhance the search experience of the content built on Worksheets you own or maintain by adding common search terms to your Worksheet glossary. For example, your users may be searching for information about `products`, but the column name may be `product full name`. You can make `products` a synonym of `product full name`, so users can easily find this information. The **Search terms** section on each Worksheet lists the most common search terms for the Worksheet that result in no or few matches in the system, so you can map them to the correct column name. This feature is in <span class="label label-beta">Beta</span> and off by default; [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable it. This feature depends on Mixpanel tracking.
+As an analyst, you want to create the best search experience possible for your users. You can enhance the search experience of the content built on Worksheets you own or maintain by adding common search terms that the system cannot find a good match for to your Worksheet glossary. For example, your users may be searching for information about `products`, but the column name may be `product full name`. You can make `products` a synonym of `product full name`, so users can easily find this information. The **Search terms** section on each Worksheet lists the most common search terms for the Worksheet that do not match with any columns in the Worksheet, so you can map them to the correct column name. This feature is in <span class="label label-beta">Beta</span> and off by default; [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable it. This feature depends on Mixpanel tracking.
 
 To add common search terms with no matches to your Worksheet glossary, follow these steps:
 
@@ -13,7 +13,7 @@ To add common search terms with no matches to your Worksheet glossary, follow th
 
 2. Select **Search Terms** from the navigation bar under the Worksheet name.
 
-3. If users have not had any problems searching for or creating their own Answers and Pinboards built on this Worksheet, the system displays the message "No vocabulary issues found." If users are having trouble, the system displays a list of search terms and encourages you to build the Worksheet's glossary.
+3. If users have not had any problems searching for or creating their own Answers and Pinboards built on this Worksheet, the system displays the message "No search terms found." If users are having trouble, the system displays a list of search terms and encourages you to build the Worksheet's glossary.
 
 4. On the **Select a search term** pane on the left side of the screen, you see a list of common search terms with no or few matches. Users often search for these terms, but do not click on anything, or the search does not generate any results.
 
