@@ -8,8 +8,7 @@ permalink: /:collection/:path.html
 When you embed ThoughtSpot visualizations and pinboards, you can access the menu options that are generally available for all ThoughtSpot instances. ThoughtSpot not just allows you to restrict user access to certain features or exclude the menu actions that are not applicable to your application context. It also allows you to add custom actions of your choice.
 
 
-## Custom actions
-
+## Custom actions      
 You can configure custom actions when you want to initiate an action in your application from the ThoughtSpot UI and provide the data requested by the user as a payload. When the custom action is clicked by the user, you can configure it to invoke a specific URL or a callback into your parent application.
 
 You can add the custom action as a primary menu item, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the **Pinboards** and **Search Answers** page. You can also preview the position of the menu items when adding a custom action.
@@ -26,10 +25,8 @@ To add custom menu item:
 
 4. Select the **URL** option.
 
-5. Add the URL that you want to invoke when the user clicks the action label in the UI.
-
-
-    If you want to use a URL target for the custom action, make sure the URL you enter here is added to the [CORS and CSP whitelist]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
+5. Add the URL that you want to invoke when the user clicks the action label in the UI.            
+   If you want to use a URL target for the custom action, make sure the URL you enter here is added to the [CORS and CSP whitelist]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
 
 5.  Specify the position of the action button. You can set the action as a primary menu item, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png).
 

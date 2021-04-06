@@ -46,7 +46,7 @@ For more information, see [Configure SAML]({{ site.baseurl }}/admin/ts-cloud/con
 Trusted authentication is a token-based authentication service that uses a central authentication service to authenticate ThoughtSpot users. In a trusted authentication workflow, ThoughtSpot provides the authentication service with a token for a given ThoughtSpot user. This token is used for obtaining trust from the client applications before granting access to ThoughtSpot content.
 
 ThoughtSpot users with administrator privileges can generate a trusted authentication token in the **Security Settings** page of the Developer portal.                                                         
-For more information, see [Configure trusted authentication](({{ site.baseurl }}/admin/ts-cloud/trusted-authentication.html).
+For more information, see [Configure trusted authentication]({{ site.baseurl }}/admin/ts-cloud/trusted-authentication.html).
 
 ## Define security settings
 Before embedding, you must enable several security settings in the Devloper portal to prevent security vulnerabilities in ThoughtSpot.
@@ -57,12 +57,10 @@ Cross-Origin Resource Sharing (CORS) domains are the origins from which ThoughtS
 **Content Security Policy**
 To use the Visual Embed SDK, configure the following content security policy (CSP).
 
--   **CSP visual embed hosts**
-
+-   **CSP visual embed hosts**                                            
     To allow your host domain to set the **frame-ancestors** CSP policy header and embed a ThoughtSpot object within your application frame, you must add your host domain as a CSP visual embed host.
 
--   **CSP connect-src**
-
+-   **CSP connect-src**                      
     If you plan to configure custom actions to invoke external URLs, you must add these URLs to the **CSP connect-src** domain list in the Developer portal.
 
 For more information, see [Configure security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).

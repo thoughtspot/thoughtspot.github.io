@@ -21,28 +21,24 @@ The embed user authentication workflow with trusted authentication service invol
 2.  The client application sends a request for a user token from the trusted authenticator.
 
     Your server application must determine the following:
-
     -   if the requestor has authenticated with your server.
-
     -   which user (`username`) is making the request.
-
     -   what is being requested: an object, page, or the entire ThoughtSpot application.
-
     -   whether the requesting `username` matches a `username` on the ThoughtSpot application.
 
 3.  The trusted authenticator server intercepts the request, authenticates the user, and requests a token from ThoughtSpot on the user’s behalf.
 
         POST /tspublic/v1/session/auth/token
 
-      This POST request method includes the following attributes:
-  - `secret_key`
-    A required `formData` parameter containing the authentication token string provided by the ThoughtSpot application server.
-  - `username`   
-    A required `formData` parameter containing a string, which is the `username` of the ThoughtSpot user.                         
-  - `access_level`
-    A required `formData` parameter containing one of `FULL` or `REPORT_BOOK_VIEW`.                                            
-  - `id`
-    An optional `formData` parameter containing the identifier of the embedded ThoughtSpot object.    This is only required if you specified `REPORT_BOOK_VIEW` for the `access_level` parameter.                             
+    This POST request method includes the following attributes:
+    - `secret_key`
+      A required `formData` parameter containing the authentication token string provided by the ThoughtSpot application server.
+    - `username`   
+      A required `formData` parameter containing a string, which is the `username` of the ThoughtSpot user.                         
+    - `access_level`
+      A required `formData` parameter containing one of `FULL` or `REPORT_BOOK_VIEW`.                                            
+    - `id`
+      An optional `formData` parameter containing the identifier of the embedded ThoughtSpot object.    This is only required if you specified `REPORT_BOOK_VIEW` for the `access_level` parameter.                             
 
 4.  ThoughtSpot verifies the authenticator server’s request and returns a user token.
 
@@ -53,26 +49,19 @@ The embed user authentication workflow with trusted authentication service invol
     ``` HTML
     GET https://<ThoughtSpot-host>/tspublic/v1/session/login/token?username=<user>&auth_token=<token>&redirect_url=<full-encoded-url-with-auth-token>
     ```
-
     The request URL includes the following attributes:
+    -  `username`    
+        *String*. The `username` of the user requesting access to ThoughtSpot.
+    - `auth-token`                                                    
+        *String*. The authentication token obtained for the user from the trusted authentication service.          
+    -  `redirect_url`  
+        *String*. The URL to which the user is redirected after successful authentication. The URL is fully encoded and includes the authentication token obtained for the user.                     
+        For example, if the user has requested access to a specific visualization on a pinboard, the redirect URL includes the domains to which the user is redirected, the auth token string obtained for the user, visualization ID, and pinboard ID.
 
-  -  `username`    
-      *String*. The `username` of the user requesting access to ThoughtSpot.
-
-  - `auth-token`                                                    
-      *String*. The authentication token obtained for the user from the trusted authentication service.
-
-  -  `redirect_url`  
-      *String*. The URL to which the user is redirected after successful authentication. The URL is fully encoded and includes the authentication token obtained for the user.
-
-    For example, if the user has requested access to a specific visualization on a pinboard, the redirect URL includes the domains to which the user is redirected, the auth token string obtained for the user, visualization ID, and pinboard ID.
-
-    ``` HTML
-    https://<redirect-domain>/?authtoken=<user_auth_token>&embedApp=true&primaryNavHidden=true#/embed/viz/<pinboard_id>/<viz-id>
-    ```
-
+        ``` HTML
+        https://<redirect-domain>/?authtoken=<user_auth_token>&embedApp=true&primaryNavHidden=true#/embed/viz/<pinboard_id>/<viz-id>
+        ```
     {% include note.html content="The request URL includes the `auth-token` attribute, whereas the redirect URL uses the `authtoken` attribute" %}
-
 
 7.  ThoughtSpot validates the token and returns the information that the authenticated user has requested.
 

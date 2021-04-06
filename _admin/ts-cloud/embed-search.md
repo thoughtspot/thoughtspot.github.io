@@ -53,15 +53,12 @@ To allow your client application to connect to ThoughtSpot:
     -   `AuthServer`                                      
         Enables trusted authentication method. To use the trusted authentication method, specify the trusted authentication server in the `authEndpoint` attribute or use the `getAuthToken` method.
 
-        -   `authEndpoint` *Optional*
-
+        -   `authEndpoint` *Optional*                                 
             *String*. The endpoint URL of the authentication server. When the `authEndPoint` attribute is defined, a GET request is sent to the authentication endpoint, which returns the authentication token as plaintext in its API response. This attribute is not required if `getAuthToken` is used.
-        -   `username`
-
+        -   `username`                                         
             *String*. The username of the ThoughtSpot user.
 
-        -   `getAuthToken` *Optional*
-
+        -   `getAuthToken` *Optional*                              
             A function that invokes the trusted authentication endpoint and returns a `Promise` string that resolves to the authentication token. This attribute is not required if `authEndpoint` is used.  
 
               ```
@@ -145,10 +142,9 @@ For a complete list of action menu items and the corresponding strings to use fo
 -   [Calendar]({{ site.baseurl }}/reference/api/search-data-api.html#Calendar)
 
 For example, to fetch revenue data by shipping mode, you can use the following search query string:
-````javascript
+``` javascript
   searchQuery: "[Revenue] by [Shipmode]"
-````
-
+```
 
 ## Render the embedded search
 Construct the URL of the embedded ThoughtSpot search object.
@@ -163,12 +159,12 @@ Render the embedded search and pass parameters such as data source ID.
 
 Register event handlers to subscribe to events triggered by the ThoughtSpot Search function:
 
-``` javascript
+```
   searchEmbed.on(EmbedEvent.init, showLoader)
   searchEmbed.on(EmbedEvent.load, hideLoader)
   searchEmbed.on(EmbedEvent.Error)
 ```
-If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register the event handler to manage the events triggered by the custom action:
+If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register an event handler to manage the events triggered by the custom action:
 
 ``` javascript
  searchEmbed.on(EmbedEvent.customAction, payload => {

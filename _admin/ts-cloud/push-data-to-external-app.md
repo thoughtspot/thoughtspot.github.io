@@ -1,5 +1,5 @@
 ---
-title: [Push data using REST APIs]
+title: [Push data to an external application]
 last_updated: 4/3/2021
 summary: "You can use the REST APIs to push data to a third-party application."
 sidebar: mydoc_sidebar

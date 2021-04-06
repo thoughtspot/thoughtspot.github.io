@@ -28,7 +28,7 @@ To embed the [full ThoughtSpot application]({{ site.baseurl }}/admin/ts-cloud/fu
 For information on configuration requirements, see the following sections:
 
 -  [Integration guidelines]({{ site.baseurl }}/admin/ts-cloud/integration-overview.html)
--  [Security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
+-  [Security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html)
 
 ## Optional settings for embedding
 
@@ -40,15 +40,10 @@ Changing this setting opens the links.
 Consider the possible link types, and how they open:
 
 -   Link in search result table in ThoughtSpot.
-
     Same browser tab as ThoughtSpot application.
-
 -   Link in table embedded in a DOM element.
-
     Same `<iframe>` that contains the table.
-
 -   Link in full ThoughtSpot application embedded in a web page.
-
     Same `<iframe>` that contains the application.
 
 

@@ -15,7 +15,6 @@ You can rebrand the ThoughtSpot application interface components such as the log
 ## Style components
 
 You can customize the following ThoughtSpot UI style components:
-
 -   Application logo & favicon
 -   Font style for charts and tables
 -   Background color of the application
@@ -27,13 +26,10 @@ You can customize the following ThoughtSpot UI style components:
 ## Access customization settings
 
 To access style customization settings:
-
 1. Log in ThoughtSpot as an admin or developer user.
 2. To access the ThoughtSpot Developer portal, click the **Develop** tab.
-3.  Under **Customizations**, click **Styles**.
-
+3.  Under **Customizations**, click **Styles**.            
 {% include tip.html content="The style customization settings are also available in the ThoughtSpot **Admin** console." %}
-
 For more information on setting UI styles from the **Admin** console, see [Style Customization]({{ site.baseurl }}/admin/ts-cloud/style-customization.html).
 
 ## Change application logo and favicon
@@ -41,27 +37,17 @@ For more information on setting UI styles from the **Admin** console, see [Style
 To upload your application logos:
 
 1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
-
 2.  To upload the default logo:
-
     1.  Click **Application Logo (Default)**.
-
     2.  Browse to your local directory and select logo image.
-
         ![Default Application Logo]({{ site.baseurl }}/images/style-applogo.png)
-
     Your icon image should be a square, and the recommended size is 140px by 140px.
     The accepted file formats are jpg, jpeg, and png.
     3. Verify if the logo appears correctly at the top left corner of the navigation bar.
-
 3.  To upload a wide logo:
-
     1.  Click the wide icon under **Application Logo (Wide)**.
-
     2.  Browse to your local directory and select logo image.
-
         ![Wide application logo]({{ site.baseurl }}/images/style-widelogo.png)
-
         The recommended size is 330px by 100px.
         The accepted file formats are jpg, jpeg, and png.
         This logo appears on the login screen.
@@ -71,53 +57,31 @@ To upload your application logos:
 
 You can add and edit fonts to customize the appearance of your charts and tables.
 You can set the default fonts of your system by customizing **Chart Visualization Fonts** and **Table Visualization Fonts**.
-
-<div class="note">
-
-Before you begin, make sure you have the WOFF files available for the fonts you want to use.
-
-</div>
+{% include note.html content="Before you begin, make sure you have the WOFF files available for the fonts you want to use." %}
 
 ### Important points to note
 
 -   To add a custom font, your font must be defined in a Web Open Font Format (`WOFF`) file.
-
 -   Changes to chart and table defaults apply only to charts and features created *after* you configure a value.
-
 -   If you change table fonts, older tables retain their previous fonts.
 
 ### Update fonts
 
 To update fonts:
-
 1.  Go to **Develop** &gt; **Customizations** &gt; **Styles**.
-
 2.  To update fonts for charts, go to **Chart Visualization Fonts**, and select a chart label.
-
 3.  To update fonts for tables, go to **Table Visualization Fonts**.
-
     By default, the font changes are applied to all values in the table cells.
-
 4.  To add a custom font, click **+**.
-
     The system displays the **Custom Font** dialog.
-
 5.  Click the **Custom Font** field.
-
     The system displays the file finder.
-
 6.  Add the `WOFF` file you want.
-
-    The file appears in the font dialog.
-
+    The file appears in the font dialog.       
 7.  Click **Confirm**.
-
 8.  To update the font style:
-
     a.  Click the edit icon.
-
     b.  Modify the font color, weight, and style.
-
     c.  Click **Confirm**.
 
 ## Customize background color
@@ -147,7 +111,6 @@ To choose a background color for the navigation panel:
 2.  Click the background color box under **Navigation Panel Color**.
 
 3.  Use the color menu to choose your new background color.
-
     You can also add a HEX color code.
 
 ## Customize color palette for charts
@@ -162,14 +125,12 @@ To change the color palette for charts:
 
 3.  Click the color you would like to change in the **primary** color palette, and use the color menu to choose your new color.
 
-    You can also add a HEX color code.
-
+    You can also add a HEX color code.                
     All of the colors in the primary color palette are used in a chart before any from the secondary palette are used.
     Therefore, the primary palette usually consists of primary colors.
 
 4.  Click the color you would like to change in the **secondary** color palette, and use the color menu to choose your new color.
-    You can also add a HEX color code.
-
+    You can also add a HEX color code.                           
     The colors from the secondary color palette are used after all of the colors have been exhausted from the primary palette.
     Therefore, the secondary palette usually consists of secondary colors.
 
@@ -206,5 +167,4 @@ To customize the page title displayed in the browser bar:
 ## Reset styles
 
 When you customize styles, the changes take effect after you refresh the browser.
-
 To revert your changes, use the **Reset** button that appears when you move your cursor to the right of the style setting option.

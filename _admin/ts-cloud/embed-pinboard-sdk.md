@@ -1,7 +1,7 @@
 ---
 title: [Embed pinboards]
 last_updated: 3/3/2021
-summary: "The PinboardEmbed package allows you to embed ThoughtSpot pinboards in your host application."
+summary: "The PinboardEmbed package allows you to embed a ThoughtSpot pinboard in your host application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -55,23 +55,20 @@ To allow your client application to connect to ThoughtSpot:
         Enables trusted authentication method. To use the trusted authentication method, specify the trusted authentication server in the `authEndpoint` attribute or use the `getAuthToken` method.
 
         -   `authEndpoint` *Optional*
-
             *String*. The endpoint URL of the authentication server. When the `authEndPoint` attribute is defined, a GET request is sent to the authentication endpoint, which returns the authentication token as plaintext in its API response. This attribute is not required if `getAuthToken` is used.
         -   `username`
-
             *String*. The username of the ThoughtSpot user.
 
         -   `getAuthToken` *Optional*
-
             A function that invokes the trusted authentication endpoint and returns a `Promise` string that resolves to the authentication token. This attribute is not required if `authEndpoint` is used.  
 
               ```
-                getAuthToken: () => Promise.resolve(token)
+              getAuthToken: () => Promise.resolve(token)
               ```
 
 ## Construct the embed content
 
-``` javaScript
+``` javascript
 const pinboardEmbed = new PinboardEmbed(
    document.getElementById('ts-embed'),
    {
@@ -160,7 +157,7 @@ For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-c
 Construct the URL for the embedded pinboard and render the embedded content:
 
 ``` javaScript
-    pinboardEmbed.render();
+  pinboardEmbed.render();
 ```
 
 ## Subscribe to events
@@ -168,12 +165,11 @@ Construct the URL for the embedded pinboard and render the embedded content:
 Register event handlers and subscribe to events triggered by the embedded pinboard:
 
 ``` javascript
-    pinboardEmbed.on(EmbedEvent.init, showLoader)
-    pinboardEmbed.on(EmbedEvent.load, hideLoader)
-    pinboardEmbed.on(EmbedEvent.Error)
-
+  pinboardEmbed.on(EmbedEvent.init, showLoader)
+  pinboardEmbed.on(EmbedEvent.load, hideLoader)
+  pinboardEmbed.on(EmbedEvent.Error)
 ```
-If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register the event handler to manage the events triggered by the custom action:
+If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register an event handler to manage the events triggered by the custom action:
 
 ``` javascript
  pinboardEmbed.on(EmbedEvent.customAction, payload => {
