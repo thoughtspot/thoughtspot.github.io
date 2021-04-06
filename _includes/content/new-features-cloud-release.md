@@ -3,7 +3,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <ul>
 <li><a href="{{ site.baseurl }}#april-cloud-analyst">For the Analyst</a></li>
 <li><a href="{{ site.baseurl }}#april-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#april-cloud-data-engineer">For the Data Engineer</a></li>
 <li><a href="{{ site.baseurl }}#april-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
 <li><a href="{{ site.baseurl }}#april-cloud-developer">For the Developer</a></li>
 </ul>
@@ -54,8 +53,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </dlentry>
 
 </dl>
-
-<h3><a id="april-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <h3><a id="april-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
