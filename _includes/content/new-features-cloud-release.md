@@ -71,7 +71,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dlentry id="developer-portal">
 <dt>ThoughtSpot Developer portal</dt>
 <dd>ThoughtSpot users with admin or developer privileges can now access the ThoughtSpot Developer portal by clicking the <strong>Develop</strong> tab in the ThoughtSpot application.
-The Developer portal, referred to as <strong>SpotDev</strong> in the earlier release, includes the following enhancements:</p>
+The Developer portal, referred to as <strong>SpotDev</strong> in the earlier release, includes the following enhancements:
 <ul>
 <li>Playground enhancements<br>The <strong>Playground</strong> page now includes several UI enhancements to improve the interactive coding experience for developers.<ul>
 <li>The <strong>Handle custom actions</strong> checkbox on the <strong>Playground</strong> &gt; <strong>Search</strong> page allows you to view the code for the custom action event.</li>
@@ -94,6 +94,6 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 
 <dlentry id="session-api-enhancement">
 <dt>Session API enhancement</dt>
-<dd>The session REST API service now includes the <code>/tspublic/v1/session/auth/token</code> API to enable a client application to programmatically obtain an authentication token for a ThoughtSpot  user.<br>To access this API, visit the ThoughtSpot Swagger portal.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/session-api.html">session APIs</a>.</p></dd></dlentry>
+<dd>The session REST API service now includes the <code>/tspublic/v1/session/auth/token</code> API to enable a client application to programmatically obtain an authentication token for a ThoughtSpot  user.<br>To access this API, visit the ThoughtSpot Swagger portal.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/session-api.html">session APIs</a>.</dd></dlentry>
 
 </dl>
