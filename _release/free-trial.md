@@ -12,11 +12,11 @@ permalink: /:collection/:path.html
 
 These are the issues we fixed in the Free Trial April 7th release.
 
-* Users who attempt to log in after they have completed their 30-day free trial see a prompt to contact Sales.
+* Users who attempt to log in after completing their 30-day free trial see a prompt to contact Sales.
 
 ![]({{ site.baseurl }}/images/free-trial-account-expiry.png "Account expiration message")
 
-* Users who attempt to log in with a previous password see an error message on their first attempt.
+* Users who attempt to log in with a previous password see an error message on their first attempt. Previously, they would need to attempt twice to see this error message.
 
 ![]({{ site.baseurl }}/images/free-trial-password-reset.png "Login with previous password error message")
 
