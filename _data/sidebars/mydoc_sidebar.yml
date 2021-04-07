@@ -815,9 +815,6 @@ entries:
     - title: Introduction to administration
       url: /admin/intro.html
       output: web,admBk
-    - title: Sign-in credentials for administration
-      url: /admin/setup/logins.html
-      output: web,admBk
 #    - levelTwoTitle: Understand the architecture
 #      output: web,admBk
 #      levelTwoItems:
