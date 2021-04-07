@@ -17,6 +17,7 @@ Before configuring SAML, you need this information:
 -   Unique service name that is used as the unique key by IDP to identify the client (E.g. - `urn:thoughtspot:callosum:saml`)
 -   Allowed skew time, which is the time after authentication response is rejected and sent back from the IDP. `86400` is a popular choice.
 -   The absolute path to identity provider's metadata file. Typically called `idp-meta.xml` or similar. This is needed so that the configuration persists over upgrades. Best to set it up on persistent/HA storage (NAS volumes) else in the same absolute path on all nodes in the cluster.
+- ThoughtSpot's metadata file, `spring_saml_metadata.xml`. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata`. The file automatically downloads.
 -   This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate `tsadmin` and other ThoughtSpot local users. Set it to true by default to let local system/admin users in via the frontend.
 
 Use this procedure to set up SAML on ThoughtSpot for user authentication. Note that this configuration persists across software updates, so you do not have to reapply it if you update to a newer release of ThoughtSpot.
@@ -28,6 +29,6 @@ Use this procedure to set up SAML on ThoughtSpot for user authentication. Note t
     tscli saml configure
     ```
 
-3. Complete the configurator prompts with the information you gathered above.
+3. Complete the configurator prompts with the information and files you gathered above.
 4. When the configuration is complete, open a Web browser and go to the ThoughtSpot login page.
    It should now show the Single Sign On option.
