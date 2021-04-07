@@ -76,7 +76,7 @@ Follow these instructions to install the SSL certificate using tscli:
     $ tscli ssl add-cert <key> <certificate>
     ```
 
-6. To test that the certificate is correctly installed, sign in to the ThoughtSpot application (https://docs.thoughtspot.com/6.0/admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
+6. To test that the certificate is correctly installed, sign in to the ThoughtSpot application.
 
      You should see that the application's URL begins with `https://`.
 
@@ -137,5 +137,4 @@ You must ensure that your load balancer supports these ciphers.
 {: id="ssl-configure-test"}
 ## Test the SSL certificate
 
-To test if the certificate is installed correctly, see [Sign in to the ThoughtSpot application]({{ site.baseurl
-}}//admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
+To test if the certificate is installed correctly, sign into the ThoughtSpot application.
