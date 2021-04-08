@@ -10,7 +10,7 @@ redirect_from:
 - /6.3.1.CU1/release/notes.html
 permalink: /:collection/:path.html
 ---
-ThoughtSpot version 6.3.1 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 6.3.1 CU1 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
@@ -230,19 +230,19 @@ We like to have a diversity of experience and perspective, and want to hear from
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.3.1 release
+If you are running one of the following versions, you can upgrade to the 6.3.1 CU1 release
 directly:
 
-* 5.3 to 6.3.1
-* 6.0.5 to 6.3.1
-* 6.1 to 6.3.1
-* 6.2 to 6.3.1
-* 6.2.1 to 6.3.1
-* 6.3 to 6.3.1
+* 5.3 to 6.3.1 CU1
+* 6.0.5 to 6.3.1 CU1
+* 6.1 to 6.3.1 CU1
+* 6.2 to 6.3.1 CU1
+* 6.2.1 to 6.3.1 CU1
+* 6.3 to 6.3.1 CU1
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.3, 6.0.5, 6.1, 6.2, 6.2.1, or 6.3 and then to the 6.3.1 release.
+First, upgrade to version 5.3, 6.0.5, 6.1, 6.2, 6.2.1, or 6.3 and then to the 6.3.1 CU1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
