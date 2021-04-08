@@ -323,13 +323,13 @@ entries:
       - title: For Developers
         url: /admin/ts-cloud/developer-user.html
         output: web
-      - title: ThoughtSpot embedding solution
+      - title: Embedded Analytics
         url: /admin/ts-cloud/intro-embed.html
         output: web
       - title: Integration guidelines
         url: /admin/ts-cloud/integration-overview.html
         output: web
-      - title: ThoughtSpot SpotDev portal
+      - title: ThoughtSpot Developer portal
         url: /admin/ts-cloud/spotdev-portal.html
         output: web
       - title: Security settings for embedding
@@ -353,13 +353,13 @@ entries:
         - title: Get started with Visual Embed SDK
           url: /admin/ts-cloud/get-started-sdk.html
           output: web
-        - title: Embed ThoughtSpot search
+        - title: Embed search
           url: /admin/ts-cloud/embed-search.html
           output: web
-        - title: Embed pinboards
+        - title: Embed a pinboard
           url: /admin/ts-cloud/embed-pinboard-sdk.html
           output: web
-        - title: Embed visualizations
+        - title: Embed a visualization
           url: /admin/ts-cloud/embed-a-visualization.html
           output: web
         - title: Embed full application
@@ -374,7 +374,7 @@ entries:
         - title: Get started with REST APIs
           url: /admin/ts-cloud/rest-api-getstarted.html
           output: web
-        - title: Calling a REST API
+        - title: Make a REST API call
           url: /admin/ts-cloud/calling-rest-api.html
           output: web
         - title: Embed data using REST APIs

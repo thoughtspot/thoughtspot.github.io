@@ -71,6 +71,15 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
+<dlentry id="developer-privilege">
+<dt>Developer privilege</dt>
+<dd>You can now grant groups the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html">Developer privilege</a> from the Admin Console, allowing users in those groups to access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a>. In the Developer Portal, users can explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</dd></dlentry>
+
+<dlentry id="tml-api">
+<dt>TML APIs</dt>
+<dd><p>The new TML APIs enable you to programmatically export, validate, and import scriptable <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html">TML</a> objects. Use these APIs to automate the change management and deployment processes between your development and production environments. With these APIs, analysts can much more easily migrate from one environment to the other by automating the entire change management process, reducing the risk of human error.</p>
+<p>See <a href="{{ site.baseurl }}/reference/api/tml-api.html">TML APIs</a>.</p></dd></dlentry>
+
 <dlentry id="developer-portal">
 <dt>ThoughtSpot Developer portal</dt>
 <dd>ThoughtSpot users with admin or developer privileges can now access the ThoughtSpot Developer portal by clicking the <strong>Develop</strong> tab in the ThoughtSpot application.

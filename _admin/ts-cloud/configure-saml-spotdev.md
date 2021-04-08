@@ -1,71 +1,35 @@
 ---
-title: [Add custom actions]
-last_updated: 4/3/2021
-summary: "You can add custom actions to an embedded instance and view them in the menu options on pinboards and visualizations."
+title: [Configure SAML SSO authentication]
+last_updated: 04/3/2021
+summary: "ThoughtSpot supports SAML SSO to authenticate federated users"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you embed ThoughtSpot visualizations and pinboards, you can access the menu options that are generally available for all ThoughtSpot instances. ThoughtSpot not just allows you to restrict user access to certain features or exclude the menu actions that are not applicable to your application context. It also allows you to add custom actions of your choice.
+
+The Security Assertion Markup Language (SAML) Single Sign-On (SSO) authentication method enables client applications to allow federated users to access the embedded content. The SAML SSO authentication method eliminates the need for displaying a login page when a user requests access to the embedded visualizations or pinboards.
+In the SAML SSO authentication method, users authenticate to the SAML identity provider at your federation to obtain access to the ThoughtSpot content embedded in your application.
+
+To allow ThoughtSpot to trust login requests from your corporate authentication servers, you must configure SAML settings in the ThoughtSpot application.
+
+## Enable SAML authentication
+
+You need admin privileges to enable SAML SSO authentication.
+
+1. Configure the ThoughtSpot application instance on your IDP server.  
+2. Log in to your ThoughtSpot application instance.
+3. [Configure the SAML attributes]({{ site.baseurl }}/admin/ts-cloud/authentication-integration.html).
 
 
-## Custom actions
+## Allow SAML Redirect Domains
 
-You can configure custom actions when you want to initiate an action in your application from the ThoughtSpot UI and provide the data requested by the user as a payload. When the custom action is clicked by the user, you can configure it to invoke a specific URL or a callback into your parent application.
+If you have to redirect SAML users to a login URL to a host server in a different domain, make sure you add the SAML redirect domains to the list of allowed domains in ThoughtSpot.
 
-You can add the custom action as a primary menu item, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the **Pinboards** and **Search Answers** page. You can also preview the position of the menu items when adding a custom action.
+To whitelist a SAML redirect domain, follow these steps:
 
-## Add a custom menu item
+1. Log in to your ThoughtSpot application instance.
+2. Click the **Develop** tab.
+3. Under **Customizations**, click **Settings**.
+4. In SAML redirect domains, add the domains to whitelist.
 
-To add custom menu item:
-
-1. Go to **Develop** &gt; **Customizations** &gt; **Actions**.
-
-2. Click **Create action**.
-
-3. Add a label for the custom action. For example, Billing Renewal.
-
-4. Select the **URL** option.
-
-5. Add the URL that you want to invoke when the user clicks the action label in the UI.
-
-
-    If you want to use a URL target for the custom action, make sure the URL you enter here is added to the [CORS and CSP whitelist]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
-
-5.  Specify the position of the action button. You can set the action as a primary menu item, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png).
-
-6.  Select the ThoughtSpot application pages to which you want to add the menu item.
-
-7.  Click **Add action**.
-
-    The menu item is added to the ThoughtSpot application.
-    The custom menu item is indicated with a custom tag to distinguish it from the default ThoughtSpot application actions.
-
-8.  To view the action you just added, click **My actions**.
-
-## Add a callback function
-
-The callback custom action provides you with the flexibility to programmatically set up a function to request a call back to the parent application.
-
-When the user clicks the callback action label in the UI, the Visual Embed SDK generates the `customAction` event with the callback ID, and ThoughtSpot sends the requested data as a payload.
-
-To add a callback function:
-
-1.  Go to **Develop** &gt; **Customizations** &gt; **Actions**.
-
-2.  Click **Create action**.
-
-3.  Add a label for the custom action.
-
-4.  Select the **Callback** option.
-
-5.  Add an ID for the callback function.
-
-    Make sure you use the same ID to register the callback function on your host application.
-
-5.  Specify the position of the action button. You can set the callback function as a primary action, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png).
-
-6.  Select the ThoughtSpot application pages to which you want to add the function.
-
-7.  Click **Add action**.
-
-8.  To view the action you just added, click **My actions**.
+   You can add multiple domains as comma-separated values.    
+5. Click **Save changes**.
