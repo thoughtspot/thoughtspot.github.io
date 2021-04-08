@@ -44,7 +44,7 @@ Here are the most significant new features and improvements in the 7.0.0 Softwar
 <ul><li>Constants: int, double, bool, date, and string</li>
 <li>Comparison operators: <code>=</code>, <code>!=</code>, <code><</code>, <code>></code>, <code><=</code>, and <code>>=</code></li>
 <li>Columns</li>
-<li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul> This feature is in <strong>Beta</strong>; to enable it, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.</li>
+<li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul> This feature is in <strong>Beta</strong> and on by default.</li>
 <li><strong>Joins at the table level</strong>: You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</li>
 <li><strong>Support for selective and linked filters</strong>: You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
 
