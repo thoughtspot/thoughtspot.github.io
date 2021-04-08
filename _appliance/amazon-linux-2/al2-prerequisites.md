@@ -1,7 +1,7 @@
 ---
 title: [Amazon Linux 2 installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 4/6/2021
+last_updated: 4/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -53,7 +53,9 @@ Ensure that all ThoughtSpot hosts meet the following partition and sizing requir
 **Repositories**
 
 {: id="yum-repositories"}
-- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `google-cloud-sdk`, and `azure-cli`.
+- **Yum repositories**: you must enable the following Yum repositories in your cluster:<br>
+    **6.3 and earlier**: `epel`, `nux-desktop`, `google-cloud-sdk`, and `azure-cli`.<br>
+    **6.3.1 and alter**: `epel`, `google-cloud-sdk`, and `azure-cli`.
 
 {: id="python-repositories"}
 - **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/){: target="_blank"}.
