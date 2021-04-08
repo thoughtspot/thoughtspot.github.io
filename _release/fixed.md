@@ -108,7 +108,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 These are the issues we fixed in ThoughtSpot Release 6.3.1 CU1.
 
-- Addition scrollbars appear on the ThoughtSpot Developer portal home page.
+- Additional scrollbars appear on the ThoughtSpot Developer portal home page.
 - R output is not viewable in a pinboard.
 - When using latitude and longitude, map visualizations do not zoom in to the data.
 - Pinboard visualizations do not retrieve data.
