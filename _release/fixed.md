@@ -106,7 +106,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <a id="6-3-1-cu1"></a>
 ## 6.3.1 CU1 Fixed issues
 
-These are the issues we fixed in ThoughtSpot Release 6.3.1.
+These are the issues we fixed in ThoughtSpot Release 6.3.1 CU1.
 
 - Addition scrollbars appear on the ThoughtSpot Developer portal home page.
 - R output is not viewable in a pinboard.
