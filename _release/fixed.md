@@ -1,5 +1,6 @@
 ---
 title: ["Fixed issues"]
+toc: false
 keywords: "fixed issues"
 last_updated: 09/09/2020
 sidebar: mydoc_sidebar
