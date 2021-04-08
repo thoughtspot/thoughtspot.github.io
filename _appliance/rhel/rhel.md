@@ -1,11 +1,11 @@
 ---
 title: [RHEL and OEL Deployment Overview]
 summary: "Run ThoughtSpot on your own internally managed RedHat Enterprise Linux (RHEL) 7.8 or 7.9 image, or on an Oracle Enterprise Linux (OEL) 7.9 image."
-last_updated: 3/23/2021
+last_updated: 4/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You have the flexibility to run ThoughtSpot on an RHEL 7.8 or 7.9 image or an OEL 7.9 image that your organization manages internally.
+You have the flexibility to run ThoughtSpot on an RHEL 7.8 or 7.9 image or an OEL 7.9 image that your organization manages internally. This enables your organization to manage the OS and perform SysAdmin tasks.
 
 ThoughtSpot certifies RHEL 7.8 and 7.9 on the following platforms:
 
