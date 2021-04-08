@@ -1,11 +1,11 @@
 ---
 title: [RHEL Deployment Overview]
 summary: "Run ThoughtSpot on your own internally managed RedHat Enterprise Linux (RHEL) 7.7 or 7.8 image."
-last_updated: 7/22/2020
+last_updated: 4/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You have the flexibility to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally.
+You have the flexibility to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. This enables your organization to manage the OS and perform SysAdmin tasks.
 
 ThoughtSpot certifies RHEL 7.7 and 7.8 on the following platforms:
 
