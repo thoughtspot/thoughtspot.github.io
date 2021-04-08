@@ -11,6 +11,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <details>
 <summary>6.3.X Releases</summary>
 <ul>
+<li><a href="#6-3-1-cu1">6.3.1 CU1 Fixed issues</a></li>
 <li><a href="#6-3-1">6.3.1 Fixed issues</a></li>
 <li><a href="#6-3">6.3 Fixed issues</a></li>
 </ul>
@@ -101,6 +102,25 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </details>
 </li>
 </ul>
+
+<a id="6-3-1-cu1"></a>
+## 6.3.1 CU1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.3.1.
+
+- Addition scrollbars appear on the ThoughtSpot Developer portal home page.
+- R output is not viewable in a pinboard.
+- When using latitude and longitude, map visualizations do not zoom in to the data.
+- Pinboard visualizations do not retrieve data.
+- When clicking **SpotIQ** in the top navigation bar, users are redirected to the ThoughtSpot home page.
+- Query shows incorrect results because a measure is grouped by, but not summed.
+- "No FileSystem for scheme: hdfs" error appears when user attempts to restore a DataFlow backup.
+- Free trial user does not receive an email with an activation link after signing up or resetting their password.
+- API response times are slower than normal.
+- After upgrade, a postgres error appears.
+- Users assigned the "Cannot create or update Pinboards" group permission can create pinboards or pin answers to pinboards.
+- The postgres upgrade temporary directory is not configurable.
+- Pinboard translation is slow, causing performance issues.
 
 <a id="6-3-1"></a>
 ## 6.3.1 Fixed issues
