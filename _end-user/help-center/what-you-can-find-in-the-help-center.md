@@ -126,4 +126,6 @@ The **Information Center** opens. It contains the following 3 sections:
 
 At the bottom of the **Get Help** section of the **Information Center**, you can see the version of ThoughtSpot you are using.
 
+The Information Center, and many other ThoughtSpot guides, are delivered through Pendo. Pendo is ThoughtSpot’s system for delivery of in-product tips, short videos, and other training elements. Your firewall may automatically block Pendo. To ensure that you can view Pendo guides, ask your ThoughtSpot administrator to add Pendo to a list of allowed domains.
+
 {% include note.html content="The new Information Center is not customizable. To use the customizable help menu, contact ThoughtSpot Support." %}
