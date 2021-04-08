@@ -1,12 +1,12 @@
 ---
 title: [Amazon Linux 2 Deployment Overview]
 summary: "Run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally."
-last_updated: 6/8/2020
+last_updated: 4/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Starting with Release 6.1.1, you have the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. ThoughtSpot certifies Amazon Linux 2 on the following platform:
+Starting with Release 6.1.1, you have the flexibility to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. This enables your organization to manage the OS and perform SysAdmin tasks. ThoughtSpot certifies Amazon Linux 2 on the following platform:
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
 
 Follow these steps to deploy ThoughtSpot through Amazon Linux 2:
