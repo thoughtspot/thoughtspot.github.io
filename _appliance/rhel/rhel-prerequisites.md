@@ -1,7 +1,7 @@
 ---
 title: [RHEL and OEL installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 4/6/2021
+last_updated: 4/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -64,9 +64,9 @@ On OEL version 7.9, ensure that you are using the Red Hat Compatible Kernel (RHC
 
 {: id="yum-repositories"}
 - **Yum repositories for RHEL**:
-    For RHEL deployments, you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95`, `rhel`, `rhel-optional`, `rhel-extras`.
+    For RHEL deployments, you must enable the following Yum repositories in your cluster: `epel`, `pgdg95`, `pgdg11`, `rhel`, `rhel-optional`, `rhel-extras`.
 - **Yum repositories for OEL**:
-    For OEL deployments, you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95`, `ol7_optional_latest`, `oracle-linux-ol7`.
+    For OEL deployments, you must enable the following Yum repositories in your cluster: `epel`, `pgdg95`, `pgdg11`, `ol7_optional_latest`, `oracle-linux-ol7`.
 
 {: id="python-repositories"}
 - **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/){: target="_blank"}.
