@@ -1,12 +1,12 @@
 ---
 title: [Monitor headlines with SpotIQ]
 summary: "You can monitor select Pinboards, and see how they change over time."
-last_updated: 11/09/2019
+last_updated: 4/8/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-With SpotIQ Monitor, you can follow headline metrics of your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface.
+With SpotIQ Monitor <span class="label label-beta">Beta</span>, you can follow headline metrics of your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface.
 
 {: id="headline-follow"}
 ## Follow Headlines
