@@ -1,7 +1,6 @@
 ---
 title: [Data Caching]
-
-last_updated: tbd
+last_updated: 04/09/2021
 summary: "ThoughtSpot does all analysis against data in memory to help achieve
 fast results across millions and billions of records of data."
 sidebar: mydoc_sidebar
@@ -11,7 +10,7 @@ ThoughtSpot caches data as relational tables in memory. The tables can be
 sourced from different data sources and joined together. ThoughtSpot has several approaches
 for getting data into the cluster.
 
-![]({{ site.baseurl }}/images/DataCaching.png)
+![]({{ site.baseurl }}/images/data-caching-architecture.png)
 
 ## JDBC and ODBC Drivers ##
 ThoughtSpot provides a JDBC and ODBC driver that can be used to write data to
