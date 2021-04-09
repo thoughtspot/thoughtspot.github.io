@@ -52,18 +52,18 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="[“RHEL and OEL installation prerequisites”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server" />
-<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server" />
+<meta name="description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Ensure tmp has permission 777 ❏ 8. Remove Defaults requiretty from /etc/sudoers" />
+<meta property="og:description" content="❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Ensure tmp has permission 777 ❏ 8. Remove Defaults requiretty from /etc/sudoers" />
 <link rel="canonical" href="https://docs.thoughtspot.com/7.0/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:url" content="https://docs.thoughtspot.com/7.0/appliance/rhel/rhel-prerequisites.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-31T18:24:39-07:00" />
+<meta property="article:published_time" content="2021-04-09T13:30:56-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“RHEL and OEL installation prerequisites”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/7.0/appliance/rhel/rhel-prerequisites.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/7.0/appliance/rhel/rhel-prerequisites.html","headline":"[“RHEL and OEL installation prerequisites”]","dateModified":"2021-03-31T18:24:39-07:00","datePublished":"2021-03-31T18:24:39-07:00","@context":"https://schema.org"}</script>
+{"description":"❏ 1. Set up hosts for the ThoughtSpot cluster ❏ 2. Partition the hosts ❏ 3. Install RHEL version 7.8 or 7.9 or OEL version 7.9 on all hosts ❏ 4. Ensure that your Linux kernel is correct ❏ 5. Enable the hosts to download RHEL or OEL packages ❏ 6. Enable an Ansible Control Server ❏ 7. Ensure tmp has permission 777 ❏ 8. Remove Defaults requiretty from /etc/sudoers","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/7.0/appliance/rhel/rhel-prerequisites.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/7.0/appliance/rhel/rhel-prerequisites.html","headline":"[“RHEL and OEL installation prerequisites”]","dateModified":"2021-04-09T13:30:56-07:00","datePublished":"2021-04-09T13:30:56-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5662,7 +5662,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    5 minutes
   
 </span> -->
 
@@ -5693,6 +5693,14 @@ $('#toc').on('click', 'a', function() {
     <tr>
       <td>❏</td>
       <td><a href="#enable-ansible">6. Enable an Ansible Control Server</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#tmp-permission">7. Ensure tmp has permission 777</a></td>
+    </tr>
+    <tr>
+      <td>❏</td>
+      <td><a href="#etc-sudoers">8. Remove Defaults requiretty from /etc/sudoers</a></td>
     </tr>
   </tbody>
 </table>
@@ -5749,9 +5757,9 @@ $('#toc').on('click', 'a', function() {
 
 <ul id="yum-repositories">
   <li><strong>Yum repositories for RHEL</strong>:
-  For RHEL deployments, you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">nux-desktop</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">rhel</code>, <code class="language-plaintext highlighter-rouge">rhel-optional</code>, <code class="language-plaintext highlighter-rouge">rhel-extras</code>.</li>
+  For RHEL deployments, you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">pgdg11</code>, <code class="language-plaintext highlighter-rouge">rhel</code>, <code class="language-plaintext highlighter-rouge">rhel-optional</code>, <code class="language-plaintext highlighter-rouge">rhel-extras</code>.</li>
   <li><strong>Yum repositories for OEL</strong>:
-  For OEL deployments, you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">nux-desktop</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">ol7_optional_latest</code>, <code class="language-plaintext highlighter-rouge">oracle-linux-ol7</code>.</li>
+  For OEL deployments, you must enable the following Yum repositories in your cluster: <code class="language-plaintext highlighter-rouge">epel</code>, <code class="language-plaintext highlighter-rouge">pgdg95</code>, <code class="language-plaintext highlighter-rouge">pgdg11</code>, <code class="language-plaintext highlighter-rouge">ol7_optional_latest</code>, <code class="language-plaintext highlighter-rouge">oracle-linux-ol7</code>.</li>
 </ul>
 
 <ul id="python-repositories">
@@ -5779,6 +5787,12 @@ $('#toc').on('click', 'a', function() {
 
 <p>Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both <code class="language-plaintext highlighter-rouge">rsync</code> and Ansible on the Ansible Control Server host.</p>
 
+<h2 id="tmp-permission">Ensure tmp has permission 777</h2>
+<p>The <code class="language-plaintext highlighter-rouge">/tmp</code> directory must have the <code class="language-plaintext highlighter-rouge">777</code> permission.</p>
+
+<h2 id="etc-sudoers">Remove Defaults requiretty from /etc/sudoers</h2>
+<p>The <code class="language-plaintext highlighter-rouge">/etc/sudoers</code> file must not have the <code class="language-plaintext highlighter-rouge">Defaults requiretty</code> line. This line can cause cluster creation to fail.</p>
+
   <div class="tags">
     <div style="float:right;">
       
@@ -5804,9 +5818,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Mar 31, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Apr 9, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 3/23/2021<br/>  -->
+         <!-- <span>Page last updated:</span> 4/8/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/7.0/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
