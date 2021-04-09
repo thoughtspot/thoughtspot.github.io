@@ -1,6 +1,6 @@
 ---
 title: ["Manage suggestion indexing"]
-last_updated: tbd
+last_updated: 4/9/2021
 summary: "ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
 toc: true
@@ -8,8 +8,7 @@ permalink: /:collection/:path.html
 ---
 When a user searches in the **Search** bar, ThoughtSpot supplies the user with
 suggestions for column names and their column values. The **COLUMN NAME**
-and any **SYNONYMS** appear in **Search** suggestions. A column's **INDEX TYPE**
-controls whether and how ThoughtSpot suggests column values.
+and any **SYNONYMS** appear in **Search** suggestions. For tables and Views, a column's **INDEX TYPE** controls whether and how ThoughtSpot suggests column values. For Worksheets, the **SUGGEST VALUES IN SEARCH** section for a column determines whether ThoughtSpot suggests column values.
 
 Additionally, ThoughtSpot uses a column's **INDEX PRIORITY** value to determine where
 to rank a column's name and values in the search suggestions. These values
@@ -35,11 +34,12 @@ important. Properly configured suggestions can decrease "noise" in the
 suggestion list. Increasing the visibility of important columns is helpful
 for new or intermittent ThoughtSpot users.
 
-## Understand the default indexing behavior
+## Understand the default indexing behavior for tables and Views
 
-ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions.
-This system default is configured on your cluster and applies to all worksheets
-and tables. You can override this default behavior on a per-column basis.
+ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions for table and View values.
+This system default is configured on your cluster and applies to all tables. You can override this default behavior on a per-column basis.
+
+![Table and View search indexing]({{ site.baseurl }}/images/table-search-indexing.png "Table and View search indexing")
 
 The system behavior when the **INDEX TYPE** is **DEFAULT** is as follows:
 
@@ -81,6 +81,11 @@ cardinality thresholds for your ThoughtSpot installation.
 
 If you need to, you can work with ThoughtSpot Support or your Customer Success
 Engineer to configure new cluster defaults.
+
+## Understand the indexing behavior for Worksheets
+For Worksheets, you can only choose whether or not to index the column. You cannot choose an index type. When viewing a Worksheet, toggle the **SUGGEST VALUES IN SEARCH** option on or off.
+
+![Worksheet search indexing]({{ site.baseurl }}/images/worksheet-search-indexing.png "Worksheet search indexing")
 
 ## Override the system default on a column
 
