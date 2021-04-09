@@ -1,6 +1,6 @@
 ---
 title: [Results that are tables]
-last_updated: 10/26/2020
+last_updated: 4/9/2021
 toc: true
 summary: "Tables display your answer in a format similar to an Excel spreadsheet."
 sidebar: mydoc_sidebar
@@ -99,16 +99,16 @@ Note that certain elements of conditional formatting are part of the new Answer 
 
 ## Sort columns
 
-You can sort a table by column values by clicking on the column title. If you
-hold down the SHIFT key, you can sort on multiple column titles at a time. This is especially useful for date columns. For example, if you search for `sales` by `week` and by `quarter`,  and just sort the `quarterly` column, the weeks are not in order:
+You can sort a table by column values by clicking on the column title. <!--If you
+hold down the SHIFT key, you can sort on multiple column titles at a time.--> You can also sort on multiple columns in one table. This is especially useful for date columns. For example, if you search for `sales` by `week` and by `quarter`, and just sort the `quarterly` column, the weeks are not in order:
 
 ![Sort - quarterly]({{ site.baseurl }}/images/sort-one-column.png "Sort - quarterly")
 
-If you press SHIFT and then click on the `weekly` column header, the weeks are in order, by quarter:
+If you <!--press SHIFT and then click on the `weekly` column header--> add `sort by date weekly` to the search, the weeks are in order, by quarter:
 
 ![Sort - weekly]({{ site.baseurl }}/images/sort-two-columns.png "Sort - weekly")
 
-You can achieve this from the search bar, as well, by adding `sort by date quarterly` and `sort by date weekly`.
+<!--You can achieve this from the search bar, as well, by adding `sort by date quarterly` and `sort by date weekly`.-->
 
 {% include tip.html content="This same functionality is available on tables you
 see elsewhere in ThoughtSpot. For example, a table in the **Data** page is also
