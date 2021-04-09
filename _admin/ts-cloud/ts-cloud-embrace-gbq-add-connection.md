@@ -28,6 +28,8 @@ To connect to BigQuery:
     3. At the Google account sign-in screen, select your Google account.
     4. Allow thoughtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
+        Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
+
    For service account authentication, do the following:
    - Enter Project id, and Service account.
      ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-serv-acct.png "Enter connection details")
