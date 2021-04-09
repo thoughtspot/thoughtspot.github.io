@@ -1,11 +1,24 @@
 ---
-title: ["What's new in Free Trial"]
+title: ["What's new in Free Trial"] 
 keywords: "free trial"
-last_updated: 03/31/2021
+last_updated: 04/07/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+## April 7, 2021
+
+{: id="fixed-issues"}
+
+These are the issues we fixed in the Free Trial April 7th release.
+
+* Users who attempt to log in after completing their 30-day free trial see a prompt to contact Sales.
+
+![]({{ site.baseurl }}/images/free-trial-account-expiry.png "Account expiration message")
+
+* Users who attempt to log in with a previous password see an error message on their first attempt. Previously, they would need to attempt twice to see this error message.
+
+![]({{ site.baseurl }}/images/free-trial-password-reset.png "Login with previous password error message")
 
 ## March 31, 2021
 
