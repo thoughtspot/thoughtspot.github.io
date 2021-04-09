@@ -18,8 +18,8 @@
     <td class="tg-b7b8"><code><b>all</b></code></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">between... and</td>
-    <td class="tg-yw4l">間 … および</td>
+    <td class="tg-yw4l">between... and...</td>
+    <td class="tg-yw4l">between... and... </td>
     <td class="tg-yw4l"><code>revenue <b>between</b> 0 <b>and</b> 1000</code></td>
   </tr>
   <tr>
