@@ -19,27 +19,27 @@
   </tr>
   <tr>
     <td class="tg-yw4l">quarter of year (<em>date</em>)</td>
-    <td class="tg-yw4l">年の四半期 (<em>date</em>)</td>
+    <td class="tg-yw4l">四半期名 (<em>date</em>)</td>
     <td class="tg-yw4l"><code><b>quarter of year</b> (purchase date)</code></td>
   </tr>
   <tr>
     <td class="tg-b7b8">month of quarter (<em>date</em>)</td>
-    <td class="tg-b7b8">四半期の月 (<em>date</em>)</td>
+    <td class="tg-b7b8">四半期の月数 (<em>date</em>)</td>
     <td class="tg-b7b8"><code><b>month of quarter</b> (purchase date)</code></td>
   </tr>
   <tr>
     <td class="tg-yw4l">week of year (<em>date</em>)</td>
-    <td class="tg-yw4l">年の週 (<em>date</em>)</td>
+    <td class="tg-yw4l">週番号 (<em>date</em>)</td>
     <td class="tg-yw4l"><code><b>week of year</b> (ship date)</code></td>
   </tr>
   <tr>
     <td class="tg-b7b8">week of quarter (<em>date</em>)</td>
-    <td class="tg-b7b8">四半期の週 (<em>date</em>)</td>
+    <td class="tg-b7b8">四半期の週数 (<em>date</em>)</td>
     <td class="tg-b7b8"><code><b>week of quarter</b> (ship date)</code></td>
   </tr>
   <tr>
     <td class="tg-yw4l">week of month (<em>date</em>)</td>
-    <td class="tg-yw4l">月の週 (<em>date</em>)</td>
+    <td class="tg-yw4l">月の週数 (<em>date</em>)</td>
     <td class="tg-yw4l"><code><b>week of month</b> (ship date)</code></td>
   </tr>
   <tr>
