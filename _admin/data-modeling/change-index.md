@@ -34,10 +34,12 @@ important. Properly configured suggestions can decrease "noise" in the
 suggestion list. Increasing the visibility of important columns is helpful
 for new or intermittent ThoughtSpot users.
 
-## Understand the default indexing behavior for tables
+## Understand the default indexing behavior for tables and Views
 
-ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions for table values.
+ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions for table and View values.
 This system default is configured on your cluster and applies to all tables. You can override this default behavior on a per-column basis.
+
+![Table and View search indexing]({{ site.baseurl }}/images/table-search-indexing.png "Table and View search indexing")
 
 The system behavior when the **INDEX TYPE** is **DEFAULT** is as follows:
 
@@ -80,7 +82,7 @@ If you need to, you can work with ThoughtSpot Support or your Customer Success
 Engineer to configure new cluster defaults.
 
 ## Understand the indexing behavior for Worksheets
-For Worksheets, you can only choose whether or not to index the column. When viewing a Worksheet, toggle the **SUGGEST VALUES IN SEARCH** option on or off.
+For Worksheets, you can only choose whether or not to index the column. You cannot choose an index type. When viewing a Worksheet, toggle the **SUGGEST VALUES IN SEARCH** option on or off.
 
 ![Worksheet search indexing]({{ site.baseurl }}/images/worksheet-search-indexing.png "Worksheet search indexing")
 
