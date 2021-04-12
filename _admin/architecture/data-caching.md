@@ -7,15 +7,30 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot caches data as relational tables in memory. The tables can be
-sourced from different data sources and joined together. ThoughtSpot has several approaches
-for getting data into the cluster.
+sourced from different data sources and joined together. ThoughtSpot has several approaches for getting data into the cluster.
 
 ![]({{ site.baseurl }}/images/data-caching-architecture.png)
 
+{% include note.html content="For cases where your company stores data externally, use Embrace or DataFlow to access and query your data. To cache your data within ThoughtSpot, you can load it directly using JDBC and ODBC drivers, or the <code>tsload</code> command line utility."%}
+
+## ThoughtSpot Embrace ##
+If your company stores source data externally in data warehouses, you can use [ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html) to directly query that data and use ThoughtSpot's analysis and visualization features, without moving the data into ThoughtSpot.
+
+Embrace supports the following external databases:
+<ul>
+<li>Snowflake</li>
+<li>Amazon Redshift</li>
+<li>Google BigQuery</li>
+<li>Microsoft Azure Synapse</li>
+<li>Teradata</li>
+<li>SAP HANA <span class="label label-beta">Beta</span></li>
+</ul>
+
+## ThoughtSpot DataFlow ##
+If your company maintains large sources of data externally, you can use [ThoughtSpot DataFlow]({{ site.baseurl }}/data-integrate/dataflow/dataflow.html) to easily ingest just the relevant information, and then query that data and use ThoughtSpot’s analysis and visualization features. And after you configure scheduled refresh, your analysis visuals are always current. DataFlow supports a large number of [databases]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databases.html).
+
 ## JDBC and ODBC Drivers ##
-ThoughtSpot provides a JDBC and ODBC driver that can be used to write data to
-ThoughtSpot. This is useful for customers who already have an existing
-ETL process or tool, and want to extend it to populate the ThoughtSpot cache.
+ThoughtSpot provides a [JDBC]({{ site.baseurl }}/data-integrate/clients/about-jdbc.html) and [ODBC]({{ site.baseurl }}/data-integrate/clients/about-odbc.html) driver that can be used to write data to ThoughtSpot. This is useful for customers who already have an existing ETL process or tool, and want to extend it to populate the ThoughtSpot cache.
 
 JDBC and ODBC drivers are appropriate under the following circumstances:
 <ul>
@@ -25,7 +40,7 @@ JDBC and ODBC drivers are appropriate under the following circumstances:
 </ul>
 
 ## tsload ##
-You can use the `tsload` command line tool to bulk load delimited data with very
+You can use the [<code>tsload</code>]({{ site.baseurl }}/data-integrate/clients/about-odbc.html) command line tool to bulk load delimited data with very
 high throughput. Finally, individual users can upload smaller (< 50MB)
 spreadsheets or delimited files.
 
