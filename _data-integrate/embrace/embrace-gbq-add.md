@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Once ThoughtSpot Embrace is enabled, you can add a connection to a BigQuery database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
-To add a new connection to BigQuery:
+To add a connection to BigQuery:
 
 1. Click **Data** in the top navigation bar.
 
@@ -27,11 +27,11 @@ To add a new connection to BigQuery:
     Refer to the [BigQuery connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to BigQuery, by doing the following:
-- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-- Enter your key and value information.
-- To add more keys and values, click the plus sign (+), and enter them.
+    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+    2. Enter your key and value information.
+    3. To add more keys and values, click the plus sign (+), and enter them.
 
-    {% include note.html content="Any key-value pairs that you enter must be defined in your BigQuery data source. Key-value pairs are case-sensitive." %}
+ {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.       
 

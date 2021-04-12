@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Once ThoughtSpot Embrace is enabled, you can add a connection to a Snowflake database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
-To add a new connection to Snowflake:
+To add a connection to Snowflake:
 
 1. Click **Data** in the top navigation bar.
 
@@ -38,9 +38,9 @@ To add a new connection to Snowflake:
 
 5. (Optional) Provide additional key-value pairs that are required to set up your connection to Snowflake, by doing the following:
 
-   - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-   - Enter your key and value information.
-   - To add more keys and values, click the plus sign (+), and enter them.
+    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+    2. Enter your key and value information.
+    3. To add more keys and values, click the plus sign (+), and enter them.
 
      {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
 
