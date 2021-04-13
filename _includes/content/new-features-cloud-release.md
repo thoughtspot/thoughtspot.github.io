@@ -86,7 +86,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 The Developer portal, referred to as <strong>SpotDev</strong> in the earlier release, includes the following enhancements:
 <ul>
 <li>Playground enhancements<br>The <strong>Playground</strong> page now includes several UI enhancements to improve the interactive coding experience for developers.<ul>
-<li>The <strong>Handle custom actions</strong> checkbox on the <strong>Playground</strong> &gt; <strong>Search</strong> page allows you to view the code for the custom action event.</li>
+<li>The <strong>Handle custom actions</strong> checkbox on the <strong>Playground</strong> pages allows you to view the code for the custom action event.</li>
 <li>The <strong>Navigate to URL</strong> checkbox on the <strong>Playground</strong> &gt; <strong>Full app</strong> page allows you to set a URL path to navigate to when the embedded  application loads.</li>
 </ul>
 </li>

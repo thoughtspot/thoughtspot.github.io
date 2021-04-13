@@ -9,7 +9,7 @@ When you embed ThoughtSpot visualizations and pinboards, you can access the menu
 
 
 ## Custom actions      
-You can configure custom actions when you want to initiate an action in your application from the ThoughtSpot UI and provide the data requested by the user as a payload. When the custom action is clicked by the user, you can configure it to invoke a specific URL or a callback into your parent application.
+You can configure a custom action when you want to initiate an action in your application from the ThoughtSpot UI and provide the data requested by the user as a payload. When the custom action is clicked by the user, you can configure it to invoke a specific URL or a callback into your parent application.
 
 You can add the custom action as a primary menu item, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the **Pinboards** and **Search Answers** page. You can also preview the position of the menu items when adding a custom action.
 
@@ -28,11 +28,16 @@ To add custom menu item:
 5. Add the URL that you want to invoke when the user clicks the action label in the UI.            
    If you want to use a URL target for the custom action, make sure the URL you enter here is added to the [CORS and CSP whitelist]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
 
-5.  Specify the position of the action button. You can set the action as a primary menu item, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png).
+6. Specify an ID for the custom action.
 
-6.  Select the ThoughtSpot application pages to which you want to add the menu item.
+   To disable or hide this custom action on a ThoughtSpot page using Visual Embed SDK, use this ID in the `disabledActions` or `hiddenActions` attribute.          
+   For example, if you have created a custom action with the label as **Billing Renewal** and its ID as **billing-renewal**, use `billing-renewal` in the `disabledActions` or `hiddenActions` attribute in the SDK to disable or hide the custom action on a ThoughtSpot application page.   
 
-7.  Click **Add action**.
+7. Specify the position of the action button. You can set the action as a primary menu item, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png).
+
+8.  Select the ThoughtSpot application pages to which you want to add the menu item.
+
+9.  Click **Add action**.
 
     The menu item is added to the ThoughtSpot application.
     The custom menu item is indicated with a custom tag to distinguish it from the default ThoughtSpot application actions.
@@ -57,7 +62,7 @@ To add a callback function:
 
 5.  Add an ID for the callback function.
 
-    Make sure you use the same ID to register the callback function on your host application.
+    This ID is used as a reference for the custom action in the Visual Embed SDK. You can use this ID to register a callback event, disable or hide the custom action on a ThoughtSpot application page.
 
 5.  Specify the position of the action button. You can set the callback function as a primary action, or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png).
 

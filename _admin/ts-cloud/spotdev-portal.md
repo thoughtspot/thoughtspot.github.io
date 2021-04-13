@@ -6,16 +6,18 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The ThoughtSpot Developer portal allows you to explore the ThoughtSpot APIs and developer tools, and build your web applications with ThoughtSpot content. The portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features that are available for integration.
-The portal also allows authorized users to customize and rebrand the look and feel of the UI and configure custom actions to an embedded visualization or pinboard.
+The portal also allows authorized users to customize and rebrand the look and feel of the UI and configure custom actions in an embedded visualization or pinboard.
 
 
 ## Access Developer portal
 To access the Developer portal, follow these steps:
 
-1.  Log in to your ThoughtSpot. as an admin or a developer user.
+1.  Log in to your ThoughtSpot application instances.
 2.  Navigate to the **Develop** tab.
-    The **Develop** tab in ThoughtSpot application is available only for the ThoughtSpot users with admin or developer privileges.
+    The **Develop** tab in the ThoughtSpot application is available only for  ThoughtSpot users with admin or developer privileges.
     For more information on configuring a user group with developer privileges, see the [ThoughtSpot Developer Documentation](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=user-roles).
+
+    {% include note.html content="If you are not a ThoughtSpot user and you want to evaluate the Visual Embed SDK and APIs, you can register for a free trial and access the Developer portal on the free trial cluster." %}
 
 ## Find your way around
 
@@ -44,11 +46,15 @@ For ThoughtSpot users with administrator and developer privileges, the Developer
     Configuration settings for creating custom actions in the ThoughtSpot UI to trigger workflows in your application, or invoke a URL with ThoughtSpot data as the payload.
 
 -   **Settings**  
-    Security controls for accessing embedded content from external applications.
+    Security controls to define access to the embedded ThoughtSpot content from external applications.
 
+{% include note.html content="The **Customization** settings are available only for the ThoughtSpot developer or admin users." %}
 ## Explore the Visual Embed APIs
 
 The **Playground** allows developers to try the Visual Embed APIs, preview the code, test it, and familiarize themselves with the application controls.
+
+{% include note.html content="If you have added a custom action and you want to disable or hide this custom action on a Playground page by using the **Modify available actions** checkbox, make sure you specify the ID of the custom action in the `disabledActions` and `hiddenActions` attribute." %}
+
 ### Search
 To embed search:
 
@@ -69,16 +75,18 @@ To embed search:
 
     **Modify available actions**  
     Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar in the search answer page. You can use this function to restrict user access to certain features, or to remove the menu items that are not applicable to your application context.
-    - To disable the **Replay Search** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `replaySearch`:
+    - To disable an action menu item, specify the menu string in the `disabledActions` attribute. For example, to disable the **Replay Search** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), specify the **Replay Search** action menu string in the `disabledActions` attribute as shown here:
+
       ```
-      disabledActions: ['replaySearch']
+      disabledActions: [Action.ReplaySearch]
       ```
     - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
 
     - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
       ```
-      hiddenActions: ['replaySearch']
+      hiddenActions: [Action.ReplaySearch]
       ```
+
       For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
 
     **Add search tokens**  
@@ -105,16 +113,16 @@ To embed a visualization:
 3.  If required, enable the **User experience customization** settings.
 
     **Modify available actions**   
-    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png) on the visualizations page.
-    - To disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `download`:
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png) on the visualization page. You can use this function to restrict user access to certain features, or to remove the menu items that are not applicable to your application context.
+    - To disable an action menu item, specify the menu string in `disabledActions` attribute. For example, to disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `Action.Download`:
       ```
-      disabledActions: ['download']
+      disabledActions: [Action.Download]
       ```
     - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
 
     - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
       ```
-      hiddenActions: ['download']
+      hiddenActions: [Action.Download]
       ```    
     For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
 
@@ -132,6 +140,9 @@ To embed a visualization:
     ```
 
     For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filter.html).
+
+    **Handle custom actions**  
+    Allows you to view the code for a custom action event. If the embedded instance has a custom action, use this checkbox to view the event generated by the custom action and send ThoughtSpot data as a payload.
 4.  Click **Run**.
 
 ### Pinboard
@@ -145,15 +156,15 @@ To embed a pinboard:
 3.  If required, enable the **User experience customization** settings.
 
     **Modify available actions**  
-    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page.
-    - To disable the **Download As PDF** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `downloadAsPdf`:                 
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page. You can use this function to restrict user access to certain features, or to remove the menu items that are not applicable to your application context.
+    - To disable an action menu item, specify the menu string in the `disabledActions` attribute. For example, to disable the **Download As PDF** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `Action.DownloadAsPdf`:                 
     ```
-      disabledActions: ['downloadAsPdf']
+      disabledActions: [Action.DownloadAsPdf]
     ```
     - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
     - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
     ```
-      hiddenActions: ['downloadAsPdf']
+      hiddenActions: [Action.DownloadAsPdf]
     ```
     For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).                                          
 
@@ -172,6 +183,9 @@ To embed a pinboard:
 
     For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filter.html).
 
+    **Handle custom actions**  
+    Allows you to view the code for a custom action event. If the embedded instance has a custom action, use this checkbox to view the event generated by the custom action and send ThoughtSpot data as a payload.
+
 4. Click **Run**.
 
 ### Full Application
@@ -186,14 +200,14 @@ To embed the full ThoughtSpot application:
 
     **Modify available actions**  
     Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page.
-    -  To disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png),, set the value of the `disabledActions` attribute as `download`.
+    -  To disable an action menu item, specify the menu string in the `disabledActions` attribute. For example, to disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `Action.Share`:
     ```
-    disabledActions: ['download']
+    disabledActions: [Action.Share]
     ```
     -   To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
     -   To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
       ```
-      hiddenActions: ['download']
+      hiddenActions: [Action.Share]
       ```
     For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see [Actions]({{visualEmbedSDKPrefix}}/enums/action.html).
 

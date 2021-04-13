@@ -72,8 +72,8 @@ const pinboardEmbed = new PinboardEmbed(
    document.getElementById('ts-embed'),
    {
      frameParams: {
-       width: 100%,
-       height: 100%,
+       width: '100%',
+       height: '100%',
    },
      disabledActions: [],
      disabledActionReason: '<reason for disabling>',
@@ -86,29 +86,34 @@ const pinboardEmbed = new PinboardEmbed(
 ```
 
 **`frameParams`**  
-Sets the `width` and `height` dimensions to render the iframe containing the visualization.
+Sets the `width` and `height` dimensions to render the iframe containing the visualization. You can set the `width` and `height` attribute values in pixels or as a percentage.
 
 **`disabledActions`** *optional*  
-*Array of strings*. Disables the specified action menu items from the **More** menu! [more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the visualization page
+*Array of strings*. Disables the specified action menu items from the **More** menu! [more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the visualization page.
 
-For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `editTitle` string in the `disabledActions` attribute.
+For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `EditTitle` action menu string in the `disabledActions` attribute.
+
 ```javascript
-disabledActions: Action.editTitle
+disabledActions: Action.EditTitle
 ```
+
 For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
 
-**`hiddenActions`** *optional*  
-*Array of strings*. Hides the menu items from the **More** menu ![the more options menu](./images/icon-more-10px.png) on the visualization page.
+{% include note.html content="If you have added a custom action and and you want to disable this custom action, make sure you specify the ID of the custom action in the `disabledActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `disabledActions` attribute to disable this action on the visualization page." %}
 
-For example, to hide **Download As PDF** action from the **More** menu! [more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `downloadAsPdf` string in the `hiddenActions` attribute.
+**`disabledActionReason`** *optional*  
+*String*. Reason for disabling an action on the visualization page.
+**`hiddenActions`** *optional*  
+*Array of strings*. Hides the menu items from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png) on the visualization page.
+
+For example, to hide **Download As PDF** action from the **More** menu! [more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `DownloadAsPdf` action menu string in the `hiddenActions` attribute.
 
 ```javascript
-hiddenActions: Action.downloadAsPdf
+hiddenActions: Action.DownloadAsPdf
 ```
-**`disabledActionReason`** *optional*  
-*String*. Reason for disabling an action on the visualizations page.
-
 For a complete list of action menu items and the corresponding strings to use for  hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and you want to hide this custom action, make sure you specify the ID of the custom action in the `hiddenActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `hiddenActions` attribute to hide this action on the visualization page." %}
 
 **`vizId`**  
 *String*. The Global Unique Identifier (GUID) of the visualization.
@@ -185,7 +190,7 @@ For a complete list of event types that you can register, see  [EmbedEvent]((htt
 -   Load the client application.
 -   Try accessing a visualization embedded in your application.
 -   Verify the rendition.
--   If you have disabled a menu item from the visualizations page, verify if the menu command is disabled.
+-   If you have disabled a menu item on a visualization page, verify if the menu command is disabled.
 -   Verify the runtime filters.
 
 ## Code sample

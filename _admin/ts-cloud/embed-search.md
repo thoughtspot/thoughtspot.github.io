@@ -104,13 +104,15 @@ Sets the `width` and `height` dimensions to render the iframe in the web browser
 *Boolean*. When set to true, it minimizes the Data Source panel.
 
 **`disabledActions`** *optional*  
-*Array of strings*. Disables the specified menu items from the list of actions in the search answer page.
+*Array of strings*. Disables the specified menu items from the list of actions on a search answer page. You can use this attribute to restrict user access to certain features.
 
-For example, to disable the **Show underlying data** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `showUnderlyingData` string in the `disabledActions` attribute.
+For example, to disable the **Show underlying data** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `ShowUnderlyingData` action menu string in the `disabledActions` attribute.
 ````javascript
-disabledActions: Action.showUnderlyingData
+disabledActions: Action.ShowUnderlyingData
 ````
 For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and you want to disable this custom action, make sure you specify the ID of the custom action in the `disabledActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `disabledActions` attribute to disable this action on the search answer page." %}
 
 **`disabledActionReason`** *optional*  
 *String*. Indicates the reason for disabling an action from the search answer page view.
@@ -122,14 +124,16 @@ For a complete list of action menu items and the corresponding strings to use fo
 *Boolean*. When set to true, it hides the default Data Source panel. Use this attribute if you want to create a custom data panel.
 
 **`hiddenActions`**  
-*Array of strings*. Hides the specified action menu items on the search answer page.  You can use this attribute to remove actions that are not applicable to your application context.
+*Array of strings*. Hides the specified action menu items on a search answer page.  You can use this attribute to remove actions that are not applicable to your application context.
 
-For example, to hide the **Replay Search** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `replaySearch` string in the `hiddenActions` attribute.
+For example, to hide the **Replay Search** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `ReplaySearch` action menu string in the `hiddenActions` attribute.
 ````javascript
-hiddenActions: Action.replaySearch
+hiddenActions: Action.ReplaySearch
 ````
 
 For a complete list of action menu items and the corresponding strings to use for hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and you want to hide this custom action, make sure you specify the ID of the custom action in the `hiddenActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `hiddenActions` attribute to hide this action on the search answer page." %}
 
 **`searchQuery`**  
 *String*. The search query string to use when the application loads. You can use the following types of search tokens to construct a search query:
@@ -182,7 +186,7 @@ To verify the ThoughtSpot Search integration, perform the following tasks:
 -   Load your application.
 -   Search for data from a data source.
 -   Verify if the page view parameters, such as hiding or showing the data source panel, function as expected.
--   If you have disabled a menu item from the search answers page, verify if the menu command is disabled.
+-   If you have disabled a menu item on a search answer page, verify if the menu command is disabled.
 
 ## Code sample
 

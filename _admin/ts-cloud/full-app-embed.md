@@ -10,7 +10,6 @@ Full embedding allows you to integrate the full ThoughtSpot content in an applic
 
 ## Full application embedding
 The full embedded ThoughtSpot content gives your users the ability to perform many essential tasks:
-
 -   create answers and pinboards
 -   share objects with other users
 -   upload data, and refresh uploaded data
@@ -21,7 +20,6 @@ The full embedded ThoughtSpot content gives your users the ability to perform ma
 ## Limitations
 
 In a fully embedded application instance, users  cannot perform the following tasks:
-
 -   create worksheets
 -   create views
 -   modify profiles
@@ -113,17 +111,19 @@ document.getElementById('ts-embed'),
 ```
 
 **`frameParams`**  
-Sets the `width` and `height` dimensions to render the pages in the web application.
+Sets the `width` and `height` dimensions to render the pages in the web application. You can set the `width` and `height` attribute values in pixels or as a percentage.
 
 **`disabledActions`**  
 *Array of strings*. The action menu items to be disabled on the ThoughtSpot application pages.
 
-For example, to disable the **download** action from the **More** (**…​**) menu on the pinboard or visualization page, specify the `download` string in the `disabledActions` attribute.
+For example, to disable the **download** action from the **More** (**…​**) menu on the pinboard or visualization page, specify the `Download` action menu string in the `disabledActions` attribute.
 
 ``` javascript
-disabledActions: ['download']
+disabledActions: Action.Download
 ```
 For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and you want to disable this custom action, make sure you specify the ID of the custom action in the `disabledActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `disabledActions` attribute to disable this action on a ThoughtSpot application page." %}
 
 **`disabledActionReason`**  
 *String*. Reason for disabling an action on a pinboard or visualization page. To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
@@ -131,12 +131,14 @@ For a complete list of action menu items and the corresponding strings to use fo
 **`hiddenActions`**  
 *Array of strings*. The action menu items to hide on a pinboard or visualization page.
 
-For example, to hide the **Download** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `add` string in the `hiddenActions` attribute.
+For example, to hide the **Download** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `Download` action menu string in the `hiddenActions` attribute.
 
 ``` javascript
-hiddenActions: ['download']
+hiddenActions: Action.Download
 ```
 For a complete list of action menu items and the corresponding strings to use for hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and you want to hide this custom action, make sure you specify the ID of the custom action in the `hiddenActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `hiddenActions` attribute to hide this action on a ThoughtSpot application page." %}
 
 **`showPrimaryNavbar`**  
 *Boolean*. Shows or hides the ThoughtSpot navigation bar.
@@ -232,7 +234,7 @@ To verify the ThoughtSpot application integration, perform the following tasks:
 -   Verify if the page you set as the active tab opens when you load the application.
 -   Verify if the tabs are displayed correctly.
 -   Verify if the page view parameters, such as hiding or showing the data source panel, function as expected.
--   If you have disabled a menu item from the search visualizations page, verify if the menu command is disabled.
+-   If you have disabled a menu item on a ThoughtSpot application page, verify if the menu command is disabled.
 
 ## Code sample
 

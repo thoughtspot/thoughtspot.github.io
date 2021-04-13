@@ -13,7 +13,7 @@ This page explains, through an example, how to embed a ThoughtSpot Pinboard in y
 Import the PinboardEmbed SDK library to your application environment:
 
 ``` javascript
-import { PinboardEmbed, AuthType, init } from @thoughtspot/visual-embed-sdk';
+import { PinboardEmbed, AuthType, init } from '@thoughtspot/visual-embed-sdk';
 ```
 
 ## Add the embed domain
@@ -73,8 +73,8 @@ const pinboardEmbed = new PinboardEmbed(
    document.getElementById('ts-embed'),
    {
     frameParams: {
-       width: 100%,
-       height: 100%,
+       width: '100%',
+       height: '100%',
    },
     disabledActions: [],
     disabledActionReason: '<reason for disabling>'
@@ -86,7 +86,7 @@ const pinboardEmbed = new PinboardEmbed(
 });
 ```
 **`frameParams`**  
-Sets the `width` and `height` dimensions to render the iframe containing the pinboard.
+Sets the `width` and `height` dimensions to render the iframe containing the pinboard. You can set the `width` and `height` attribute values in pixels or as a percentage.
 
 **`fullHeight`**  
 *Boolean*. Adjusts the height of the embedded widget to fit the entire pinboard.
@@ -94,25 +94,29 @@ Sets the `width` and `height` dimensions to render the iframe containing the pin
 **`disabledActions`** *optional*  
 *Array of strings*. The action menu items to be disabled on the Pinboards page.
 
-For example, to disable the **Present** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `present` string in the `disabledActions` attribute.
+For example, to disable the **Present** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `Present` action menu string in the `disabledActions` attribute.
 
 ```javascript
-disabledActions: Action.present
+disabledActions: Action.Present
 ```
 For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and you want to disable this custom action, make sure you specify the ID of the custom action in the `disabledActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `disabledActions` attribute to disable this action on the pinboards page." %}
 
 **`hiddenActions`** *optional*  
 *Array of strings*. Hides the menu items from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png.
 
-For example, to hide **Add filters** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `addFilter` string in the `hiddenActions` attribute.
+For example, to hide **Add filters** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `AddFilter` action menu string in the `hiddenActions` attribute.
+
+{% include note.html content="If you have added a custom action and you want to hide this custom action, make sure you specify the ID of the custom action in the `hiddenActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `hiddenActions` attribute to hide this action on the pinboards page." %}
 
 ```javascript
-hiddenActions: Action.addFilter
+hiddenActions: Action.AddFilter
 ```
 For a complete list of action menu items and the corresponding strings to use for  hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
 
 **`disabledActionReason`** *optional*  
-*String*. Reason for disabling an action on the visualizations page.
+*String*. Reason for disabling an action on a pinboard page.
 
 **`pinboardId`**  
 *String*. The GUID of the pinboard.
@@ -186,7 +190,7 @@ For a complete list of event types that you can register, see  [EmbedEvent]((htt
 -   Load the client application.
 -   Try accessing a pinboard embedded in your application.
 -   Verify the rendition.
--   If you have disabled a menu item, verify if the menu command is disabled on the **Pinboards** page.
+-   If you have disabled a menu item, verify if the menu command is disabled on the pinboards page.
 -   Verify the runtime filters.
 
 ## Code sample
