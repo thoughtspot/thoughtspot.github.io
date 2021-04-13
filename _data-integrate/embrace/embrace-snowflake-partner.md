@@ -64,4 +64,4 @@ To sign up for the free trial, do the following:
 
 - [ThoughtSpot Tutorials for Snowflake Partner Connect]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-tutorial.html)
 - [Embrace overview]({{ site.baseurl }}/admin/ts-cloud/embrace.html)
-- [Connect to Snowflake]({{ site.baseurl }}//admin/ts-cloud/ts-cloud-embrace-snowflake.html)
+- [Connect to Snowflake]({{ site.baseurl }}//admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)
