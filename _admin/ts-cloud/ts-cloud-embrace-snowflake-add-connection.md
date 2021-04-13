@@ -38,11 +38,11 @@ To connect to Snowflake:
 
 5. (Optional) Provide additional key-value pairs that are required to set up your connection to Snowflake, by doing the following:
 
-   - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-   - Enter your key and value information.
-   - To add more keys and values, click the plus sign (+), and enter them.
+    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+    2. Enter your key and value information.
+    3. To add more keys and values, click the plus sign (+), and enter them.
 
-     {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
+    {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.   
 

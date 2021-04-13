@@ -25,9 +25,9 @@ To connect to Synapse, follow these steps:
    Refer to the [Synapse connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to Synapse, by doing the following:
-- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-- Enter your key and value information.
-- To add more keys and values, click the plus sign (+), and enter them.
+    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+    2. Enter your key and value information.
+    3. To add more keys and values, click the plus sign (+), and enter them.
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your Synapse data source. Key-value pairs are case-sensitive." %}
 
