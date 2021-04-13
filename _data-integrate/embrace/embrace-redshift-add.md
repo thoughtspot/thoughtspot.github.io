@@ -9,9 +9,9 @@ Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift data
 
 ## Enabling SSL in Amazon Redshift
 
-If you need to create a secure connection to Amazon Redshift, you must edit the "parameter group" assigned to your Redshift cluster and enable the *require_SSL flag*.
+If you need to create a secure connection to Amazon Redshift, you must edit the "parameter group" assigned to your Redshift cluster and enable the *require_SSL* flag.
 
-To enable **FIPS-compliant SSL** mode, set both the *use_fips_ssl* parameter and the *require_SSL* parameter to true in the parameter group that is associated with your Redshift cluster.
+To enable **FIPS-compliant SSL** mode, set both the *use_fips_ssl* parameter and the *require_SSL* parameter to **true** in the parameter group that is associated with your Redshift cluster.
 
 For more information, see [Connect using SSL](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html){:target="_blank"} in Amazon's Redshift documentation.
 
@@ -43,7 +43,7 @@ To add a connection to Redshift:
 
     To add more keys and values, click the plus sign (+), and enter them.   
 
-  {% include note.html content="Any key-value pairs that you enter must be defined in your Redshift data source. Key-value pairs are case-sensitive." %}
+    {% include note.html content="Any key-value pairs that you enter must be defined in your Redshift data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.   
 
