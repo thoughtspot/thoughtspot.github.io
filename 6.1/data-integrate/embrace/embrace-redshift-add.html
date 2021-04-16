@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  ">
-<title>Add a Redshift connection | ThoughtSpot</title>
+<title>Add an Amazon Redshift connection | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.1/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,9 +48,9 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Add a Redshift connection”] | thoughtspot.github.io</title>
+<title>[“Add an Amazon Redshift connection”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="[“Add a Redshift connection”]" />
+<meta property="og:title" content="[“Add an Amazon Redshift connection”]" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot." />
 <meta property="og:description" content="Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot." />
@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-add.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-15T12:22:14-07:00" />
+<meta property="article:published_time" content="2021-04-16T14:25:46-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Add a Redshift connection”]" />
+<meta property="twitter:title" content="[“Add an Amazon Redshift connection”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"headline":"[“Add a Redshift connection”]","description":"Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.","datePublished":"2021-04-15T12:22:14-07:00","dateModified":"2021-04-15T12:22:14-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-add.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-add.html","@context":"https://schema.org"}</script>
+{"headline":"[“Add an Amazon Redshift connection”]","description":"Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.","datePublished":"2021-04-16T14:25:46-07:00","dateModified":"2021-04-16T14:25:46-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-add.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.1/data-integrate/embrace/embrace-redshift-add.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3760,7 +3760,7 @@ var ss360Config = {
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Add a Redshift connection</h1>
+   <h1 class="post-title-main">Add an Amazon Redshift connection</h1>
 </div>
 
 
@@ -3803,7 +3803,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    2 minutes
+    3 minutes
   
 </span>
  -->
@@ -3812,14 +3812,24 @@ $('#toc').on('click', 'a', function() {
 
   <p>Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.</p>
 
-<p>To add a new connection to Redshift:</p>
+<h2 id="enabling-ssl-in-amazon-redshift">Enabling SSL in Amazon Redshift</h2>
+
+<p>If you need to create a secure connection to Amazon Redshift, you must edit the “parameter group” assigned to your Redshift cluster and enable the <em>require_SSL</em> flag.</p>
+
+<p>To enable <strong>FIPS-compliant SSL</strong> mode, set both the <em>use_fips_ssl</em> parameter and the <em>require_SSL</em> parameter to <strong>true</strong> in the parameter group that is associated with your Redshift cluster.</p>
+
+<p>For more information, see <a href="https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html" target="_blank">Connect using SSL</a> in Amazon’s Redshift documentation.</p>
+
+<h2 id="adding-a-redshift-connection">Adding a Redshift connection</h2>
+
+<p>To add a connection to Redshift:</p>
 
 <ol>
   <li>
     <p>Click <strong>Data</strong> in the top navigation bar.</p>
   </li>
   <li>
-    <p>Click the <strong>Connections</strong> tab at the top of the page, and click <strong>+ Add connection</strong> at the upper-right-hand side of the page.</p>
+    <p>Click the <strong>Embrace</strong> tab at the top of the page, and click <strong>+ Add connection</strong> at the upper-right-hand side of the page.</p>
 
     <p><img src="/6.1/images/redshift-addconnection.png" alt="Click &quot;+ Add connection&quot;" title="Click &quot;+ add connection&quot;" />
   <!-- ![](/6.1/images/new-connection.png "New db connect") --></p>
@@ -3838,12 +3848,14 @@ $('#toc').on('click', 'a', function() {
 
     <p>Refer to the <a href="/6.1/data-integrate/embrace/embrace-redshift-reference.html#">Redshift connection reference</a> for more information on each of the specific attributes you must enter for your connection.</p>
   </li>
-  <li>(Optional) Provide additional key-value pairs that you need to set up your connection to Redshift, by doing the following:
-    <ul>
+  <li>(Optional) If you enabled SSL in your Redshift cluster, you must do the following:
+    <ol>
       <li>Click the <strong>Advanced Config</strong> menu to reveal the <strong>Key</strong> and <strong>Value</strong> fields.</li>
-      <li>Enter your key and value information.</li>
-      <li>To add more keys and values, click the plus sign (+), and enter them.</li>
-    </ul>
+      <li>For Key, enter <strong>SSL</strong>.</li>
+      <li>For Value, enter <strong>True</strong>.</li>
+    </ol>
+
+    <p>To add more keys and values, click the plus sign (+), and enter them.</p>
 
     <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Any key-value pairs that you enter must be defined in your Redshift data source. Key-value pairs are case-sensitive.</div>
   </li>
@@ -3854,6 +3866,11 @@ $('#toc').on('click', 'a', function() {
     <p>Select tables (on the left) and the columns from each table (on the right), and then click <strong>Create connection</strong>.</p>
 
     <p><img src="/6.1/images/snowflake-selecttables.png" alt="Select tables and columns" title="Select tables and columns" /></p>
+
+    <p>A message appears indicating the number of tables and columns that will be added to your connection.</p>
+  </li>
+  <li>
+    <p>Click <strong>Confirm</strong>.</p>
 
     <p>Once the connection is added, you can search your Redshift database right away by clicking <strong>Search now</strong>.</p>
 
@@ -3900,9 +3917,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Apr 15, 2021 <br />
+        Generated: Apr 16, 2021 <br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> 1/29/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 12/21/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
