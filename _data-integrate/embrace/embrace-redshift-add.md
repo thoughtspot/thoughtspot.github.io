@@ -1,17 +1,27 @@
 ---
 title: [Add an Amazon Redshift connection]
-last_updated: 1/29/2020
+last_updated: 12/21/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
-To add a new connection to Redshift:
+## Enabling SSL in Amazon Redshift
+
+If you need to create a secure connection to Amazon Redshift, you must edit the "parameter group" assigned to your Redshift cluster and enable the *require_SSL* flag.
+
+To enable **FIPS-compliant SSL** mode, set both the *use_fips_ssl* parameter and the *require_SSL* parameter to **true** in the parameter group that is associated with your Redshift cluster.
+
+For more information, see [Connect using SSL](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html){:target="_blank"} in Amazon's Redshift documentation.
+
+## Adding a Redshift connection
+
+To add a connection to Redshift:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
     ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
@@ -26,10 +36,12 @@ To add a new connection to Redshift:
 
      Refer to the [Redshift connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
-5. (Optional) Provide additional key-value pairs that you need to set up your connection to Redshift, by doing the following:
-- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-- Enter your key and value information.
-- To add more keys and values, click the plus sign (+), and enter them.
+5. (Optional) If you enabled SSL in your Redshift cluster, you must do the following:
+    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+    2. For Key, enter **SSL**.
+    3. For Value, enter **True**.
+
+    To add more keys and values, click the plus sign (+), and enter them.   
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your Redshift data source. Key-value pairs are case-sensitive." %}
 
