@@ -15,7 +15,7 @@ You can filter the Pinboard by user from the filter bar underneath the Pinboard 
 
 Use this Pinboard to view and analyze information about the following topics:
 - hourly, daily, weekly, and monthly active users
-- number of Pinboards and Answers on the cluster
+- number of user actions on the Pinboards and Answers in the cluster
 - which users are most active in ThoughtSpot, and what they do
 - popular Pinboards
 - user actions in the last month
