@@ -131,9 +131,6 @@ entries:
       - title: Disable Answer Search for specific Worksheets
         url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
         output: web
-      - title: Create Worksheet synonyms for search on Answers
-        url: /admin/thoughtspot-one/synonyms.html
-        output: web
       - title: Stats and Trends for Search on Answers Pinboard
         url: /admin/thoughtspot-one/query-intelligence-pinboard.html
         output: web
