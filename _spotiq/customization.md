@@ -21,7 +21,7 @@ can customize your analysis. You access it using the lightbulb button ![more opt
 
 ## SpotIQ window layout
 
-Depending on where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has the a different layout.
+Depending on where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has a different layout.
 
 {: id="new-answer-experience"}
 ### SpotIQ from an Answer or search
@@ -31,7 +31,7 @@ Depending on where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** win
     * Outlier analysis: finds underlying anomalies or outliers in the Answer
     * Trend analysis: finds interesting trends in the Answer's underlying data
     * Cross-correlation analysis: determines how your metrics correlate with other measures
-    * Change analysis: if you select 2 or more data points, you can run a change analysis on those points
+    * Change analysis: if you select 2 or more data points, you can run a change analysis on those points. Otherwise, ThoughtSpot does not allow you to click on this option.
 
 2. Next, SpotIQ recommends certain columns for analysis. You can select all columns in the Answer, clear all columns, or search for more columns to include.
 
