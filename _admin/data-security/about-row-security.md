@@ -21,12 +21,14 @@ they are a member of.  The rules restrict the visible data when users:
 * view a table
 * view a worksheet derived from the table
 * search for data in the worksheet or table
-* view answers from restricted data &endash; either that they've created or that were shared with them
-* interact with pinboards from restricted data &endash; either that they've created or that were shared with them
+* view answers from restricted data - either that they've created or that were shared with them
+* interact with pinboards from restricted data - either that they've created or that were shared with them
 
 Search suggestions also fall under row-level security. If a user would not have
 access to the row data, then values from the row do not appear in **Search**
 suggestions.
+
+If you are using passthrough security for a [Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html) or [Google BigQuery]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html) connection, search suggestions may not fall under row-level security. Note that passthrough security for Google BigQuery is in <span class="label label-beta">Beta</span> and off by default in 7.0. When using passthrough security, ThoughtSpot builds the search index on the user who created the connection. This user may have less restrictive row-level-security, or may be able to see all data. Other users may be able to see search suggestions for columns or values they should not see. They cannot run queries on these columns or values, however. If you are using passthrough security, ThoughtSpot recommends you [turn off indexing]({{ site.baseurl }}/admin/data-modeling/change-index.html) for sensitive columns.
 
 ## Why use RLS?
 
