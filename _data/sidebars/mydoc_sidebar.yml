@@ -602,6 +602,9 @@ entries:
       - title: Hide and show values
         url: /end-user/search/hide-and-show-values.html
         output: web,ugBk
+      - title: Charts and tables with a very large number of data values
+        url: /end-user/search/high-cardinality.html
+        output: web,ugBk
       - title: Change chart colors
         url: /end-user/search/change-chart-colors.html
         output: web,ugBk
