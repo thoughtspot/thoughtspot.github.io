@@ -1,6 +1,6 @@
 ---
 title: [Consumption-based pricing]
-last_updated: 2/3/2021
+last_updated: 4/19/2021
 summary: ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on usage of the ThoughtSpot product.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -45,6 +45,10 @@ You do not have to be on ThoughtSpot Cloud to use the consumption-based pricing 
 {% include note.html content="Usage information is collected only for the purposes of measuring credit consumption. Your usage information is secured and isolated inside our cloud environment." %}
 
 ## Monitor your consumption
+ThoughtSpot maintains user activity data in a relational database to make it available for reporting in the ThoughtSpot product. ThoughtSpot instances that are hosted in your on-premises/cloud provider environment must connect to this relational database through an Embrace connection in order to access information about consumption usage. This Embrace connection is created by ThoughtSpot support personnel as part of the setup for consumption pricing on ThoughtSpot Software instances (Software on-premises installations). The connection uses Transport Layer Security (TLS) on port 5439 as a secure channel to query the cluster-specific consumption data.
+
+{% include important.html content="When using consumption pricing with Embrace in ThoughtSpot Software, you must ensure your cluster can connect to `redshift-pricing.thoughtspot.cloud` on TCP port 5439. Access to this port is *required* for an on-prem cluster that uses consumption pricing." %}
+
 You can monitor your credit consumption with the Credit Usage Pinboard, a new default admin-only Pinboard with data from the new Credit Usage Worksheet. You can access this Pinboard by searching for it on the **Pinboards** page.
 
 ![Credit Usage Pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
