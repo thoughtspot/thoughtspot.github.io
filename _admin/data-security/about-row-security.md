@@ -19,8 +19,8 @@ they are a member of.  The rules restrict the visible data when users:
 * view a table
 * view a worksheet derived from the table
 * search for data in the worksheet or table
-* view answers from restricted data &endash; either that they've created or that were shared with them
-* interact with pinboards from restricted data &endash; either that they've created or that were shared with them
+* view answers from restricted data - either that they've created or that were shared with them
+* interact with pinboards from restricted data - either that they've created or that were shared with them
 
 Search suggestions also fall under row-level security. If a user would not have
 access to the row data, then values from the row do not appear in **Search**
