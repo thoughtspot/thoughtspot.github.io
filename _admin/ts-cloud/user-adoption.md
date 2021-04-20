@@ -15,7 +15,7 @@ You can filter the Pinboard by user from the filter bar underneath the Pinboard 
 
 Use this Pinboard to view and analyze information about the following topics:
 - hourly, daily, weekly, and monthly active users (DAU Last 4 Weeks, WAU Last 4 Weeks, MAU Last 4 Weeks, Weekly Active Users, Daily Active Users, Hourly Active Users)
-- number of user actions on the Pinboards and Answers in the cluster (Count of Current Pinbaords, Count of Current Answers)
+- number of user actions on the Pinboards and Answers in the cluster (Count of Current Pinboards, Count of Current Answers)
 - which users are most active in ThoughtSpot, and what they do (ThoughtSpot Champions Last 30 Days, Top 10 Pinboard Consumers Last 30 days, Top 10 Adhoc Searchers)
 - popular Pinboards (Popular Pinboards Last 30 Days, Top 10 Pinboards Ratio by Views, Top 10 Pinboards Ratio by Users)
 - user actions in the last month (User Actions Last 4 Weeks)
