@@ -1,7 +1,7 @@
 ---
 title: [SpotIQ analysis]
 summary: Learn how to customize SpotIQ analysis.
-last_updated: 4/2/2021
+last_updated: 4/21/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -28,6 +28,8 @@ Depending on where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** win
 
 1. When you access it from an Answer or search, the SpotIQ window first asks you what kind of analysis you would like to do:
 
+    ![Choose analysis type]({{ site.baseurl }}/images/spotiq-analyze-choose.png "Choose analysis type")
+
     * Outlier analysis: finds underlying anomalies or outliers in the Answer
     * Trend analysis: finds interesting trends in the Answer's underlying data
     * Cross-correlation analysis: determines how your metrics correlate with other measures
@@ -35,7 +37,13 @@ Depending on where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** win
 
 2. Next, SpotIQ recommends certain columns for analysis. You can select all columns in the Answer, clear all columns, or search for more columns to include.
 
-3. You can also customize advanced parameters. Select **Customize parameters**, on the **Select measures and attributes** page. You can customize the following parameters for any SpotIQ analysis except a change analysis:
+    ![Select columns for analysis]({{ site.baseurl }}/images/spotiq-analyze-select-columns.png "Select columns for analysis")
+
+3. You can also customize advanced parameters. Select **Customize parameters**, on the **Select measures and attributes** page. The following screen appears. Scroll down to see more options, including customizations for specific analysis types.
+
+    ![SpotIQ advanced customization]({{ site.baseurl }}/images/spotiq-analyze-customize-parameters.png "SpotIQ advanced customization")
+
+    You can customize the following parameters for any SpotIQ analysis *except* a change analysis:
 
     * General settings: exclude null values, restrict analysis to the current result set only, exclude zero values, or auto-tune date boundaries
     * Insight count settings: choose the maximum number of measure and attribute columns to analyze
