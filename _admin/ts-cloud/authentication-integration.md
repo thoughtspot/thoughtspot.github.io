@@ -26,7 +26,7 @@ Click the **Configure** button in the middle of the screen.
 Fill in the following parameters:
 
 1. **ThoughtSpot Service Address**: A fully qualified and resolvable domain name for the ThoughtSpot service. For example, *thoughtspot.thoughtspot-customer.com*.
-2. **Port**: Port of the server where your ThoughtSpot instance is running. For example, port `443`.
+2. **Port**: Enter `443` in this box. This is the port of the server where your ThoughtSpot instance is running.
 3. **Unique Service Name**: The unique key used by your Identity Provider to identify the client. For example, *urn:thoughtspot:callosum:saml*.
 4. **Skew Time in Seconds**: The allowed skew time, after which the authentication response is rejected and sent back from the IDP. *86400* is a popular choice. The default is *3600*.
 5. **Protocol**: The authentication mechanism for ThoughtSpot. For example, `http` or `https`.
