@@ -5,6 +5,11 @@ toc: true
 last_updated: 11/19/2019
 redirect_from:
 - /7.0.0.mar.sw/reference/keywords.html
+- /5.2/reference/keywords.html
+- /5.1/reference/keywords.html
+- /5.0/reference/keywords.html
+- /4.5/reference/keywords.html
+- /4.4/reference/keywords.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
