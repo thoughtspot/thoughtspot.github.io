@@ -3,6 +3,8 @@ title: [New Answer experience]
 summary: Learn about ThoughtSpot's new Answer experience, and how to enable it.
 last_updated: 4/1/2021
 sidebar: mydoc_sidebar
+redirect_from:
+- /admin/ts-cloud/answer-v2.html
 permalink: /:collection/:path.html
 ---
 
