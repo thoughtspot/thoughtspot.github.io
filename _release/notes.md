@@ -47,7 +47,6 @@ Here are the most significant new features and improvements in the 7.0.0 Softwar
 <li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul> This feature is in <strong>Beta</strong> and on by default.</li>
 <li><strong>Joins at the table level</strong>: You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</li>
 <li><strong>Support for selective and linked filters</strong>: You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
-
   </ul></dd></dlentry>
 
 <dlentry id="join-ui">
@@ -79,6 +78,7 @@ Here are the most significant new features and improvements in the 7.0.0 Softwar
 <dlentry id="embrace">
 <dt>Embrace</dt>
 <dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-passthrough.html">Passthrough functions for Snowflake.</a></dd>
+<dd>Support for SAP HANA in Embrace is now GA. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-hana.html">SAP HANA overview.</a></dd>
 <dd>Embrace now supports security passthrough for Google BigQuery using OAuth for authentication and authorization  <span class="label label-beta">Beta</span>. Because this feature is in beta, it is disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a></dd>
 <dd>Embrace supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is still in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
 </dd>
