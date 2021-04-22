@@ -37,13 +37,6 @@ User activity that incurs usage minutes includes any user interaction with the p
 - Any scrolling in the product that triggers updates to objects or content being viewed
     For example, if a user is scrolling through a Pinboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Pinboard, resulting in ThoughtSpot loading and displaying additional charts in that Pinboard for the first time, this counts as additional user activity.
 
-## Using the ThoughtSpot consumption licensing model with Embrace software
-You do not have to be on ThoughtSpot Cloud to use the consumption-based pricing model. To use the consumption pricing model with Embrace software that you have deployed in your own cloud environment, you must:
-1. Allow ThoughtSpot to gather product usage information from your cluster. This usage information will be gathered on a periodic basis (daily) from your environment. Usage information is gathered from ThoughtSpot clusters using a secure SSL connection (TLS encrypted).
-2. Allow ThoughtSpot to serve usage information for accurate in-product usage visibility of credits consumed via a ThoughtSpot-created Embrace connection on your cluster. The Embrace connection is a JDBC connection that uses SSL for transport (TLS encrypted).
-
-{% include note.html content="Usage information is collected only for the purposes of measuring credit consumption. Your usage information is secured and isolated inside our cloud environment." %}
-
 ## Monitor your consumption
 You can monitor your credit consumption with the Credit Usage Pinboard, a new default admin-only Pinboard with data from the new Credit Usage Worksheet. You can access this Pinboard by searching for it on the **Pinboards** page.
 
