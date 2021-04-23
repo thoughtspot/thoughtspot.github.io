@@ -134,6 +134,31 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 </dd>
 </dlentry>
 
+<dl>
+<dlentry id="security-logs">
+<dt>New security logs</dt>
+<dd>This release of ThoughtSpot allows your security team to collect security audit events based on user activity. You can view logs for the following events:
+<ul><li>Successful login</li>
+<li>Failed login</li>
+<li>Locked account</li>
+<li>Account logout</li>
+<li>Profile change</li>
+<li>Group creation</li>
+<li>Group deletion</li>
+<li>User group change</li>
+<li>Group modification</li>
+<li>Privilege change</li>
+<li>User account creation</li>
+<li>User account deletion</li>
+<li>Password change</li>
+<li>Object creation (Pinboard or Answer)</li>
+<li>Object deletion (Pinboard or Answer)</li>
+<li>Object modification (Pinboard or Answer)</li>
+<li>Object sharing</li></ul>
+
+To view these logs, run <a href="{{ site.baseurl }}/reference/tscli-command-ref.html#tscli-logs">tscli logs collect</a>.</dd>
+</dlentry>
+
 <dlentry id="cloud-vm">
 <dt>New cloud VM instance types</dt>
 <dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure.<br><br> The new AWS instance types are:
