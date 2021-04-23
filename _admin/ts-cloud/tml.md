@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 3/24/2021
+last_updated: 4/23/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -146,6 +146,14 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
     <a href="#join_progressive">join_progressive</a>: [ true | false ]
+  <a href="#lesson_plans">lesson_plans</a>:
+  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_1</em>&gt;
+    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_1</em>&gt;
+  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_2</em>&gt;
+    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_2</em>&gt;
+  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_n</em>&gt;
+    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_n</em>&gt;
+
 </pre>
 
 {: id="syntax-views"}
@@ -874,6 +882,21 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="layout">
     <dt>layout</dt>
     <dd>Specifies the Pinboard layout, in the order that a <code>visualization_id</code> is listed.</dd>
+  </dlentry>
+
+  <dlentry id="lesson_plan_string">
+    <dt>lesson_plan_string</dt>
+    <dd>A string that represents the fully disambiguated search query used in a <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson on a Worksheet. For example, <code>"What is the [Quantity] of items from [Customer Nation].'egypt' per [Datekey].'day of week' by [Color] ?"</code>. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
+  </dlentry>
+
+  <dlentry id="lesson_plans">
+    <dt>lesson_plans</dt>
+    <dd>A list of <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lessons for the Worksheet.</dd>
+  </dlentry>
+
+  <dlentry id="lesson_id">
+    <dt>lesson_id</dt>
+    <dd>The id of the <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson. For example, the first lesson to appear to users has an id of <code>0</code>, the next lesson has an id of <code>1</code>, and so on.</dd>
   </dlentry>
 
   <dlentry id="locked">
