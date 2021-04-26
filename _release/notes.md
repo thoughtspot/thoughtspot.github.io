@@ -134,7 +134,6 @@ We added support for connecting to the following databases: <a href="{{ site.bas
 </dd>
 </dlentry>
 
-<dl>
 <dlentry id="security-logs">
 <dt>New security logs</dt>
 <dd>This release of ThoughtSpot allows your security team to collect security audit events based on user activity. You can view logs for the following events:
