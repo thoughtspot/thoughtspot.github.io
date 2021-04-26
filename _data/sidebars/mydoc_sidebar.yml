@@ -1037,9 +1037,6 @@ entries:
       - title: Alerts and Events board
         url: /admin/system-monitor/alerts-events.html
         output: web,admBk
-      - title: Security audit events
-        url: /admin/system-monitor/security-audit-events.html
-        output: web,admBk
       - title: System worksheets
         url: /admin/system-monitor/worksheets.html
         output: web,admBk
