@@ -75,3 +75,6 @@ Let us consider the `sales in the last year` example. This search returns matche
    When you click **Preview**, you can scroll through all the visuals inside the Pinboard.
 
    ![]({{ site.baseurl }}/images/search-answers-results-pinboard-preview.png "Result of Search is a Pinboard")
+
+## Indexing for Search Answers
+You can search for any Answer or Pinboard that ThoughtSpot has indexed. ThoughtSpot indexes changes in ThoughtSpot in less than 10 minutes (less than 5 in most cases). If you do not see a new object when you search for it, or you *do* see an object that you deleted, or you modify the access permissions for an Answer or Pinboard, ThoughtSpot will reflect this change within 10 minutes.

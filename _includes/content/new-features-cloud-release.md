@@ -24,6 +24,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="may-cloud-business-user"></a>For the Business User</h3>
 
+<dl>
+<dlentry id="latency">
+<dt>Improvements in indexing latency for Search Answers</dt>
+<dd>This release improves indexing latency to less than 10 minutes (less than 5 in most cases), from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes. If you create a new Answer, users can search for and find it 10 minutes after you create it.</dd></dlentry>
+</dl>
+
 <h3><a id="may-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <h3><a id="may-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
