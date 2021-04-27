@@ -1,6 +1,6 @@
 ---
 title: [Data Use Strategies]
-last_updated: 04/15/2021
+last_updated: 04/26/2021
 summary: "ThoughtSpot does all analysis against data in memory to help achieve
 fast results across millions and billions of records of data."
 sidebar: mydoc_sidebar
@@ -27,7 +27,9 @@ Embrace supports the following external databases:
 </ul>
 
 ## ThoughtSpot DataFlow ##
-If your company maintains large sources of data externally, you can use [ThoughtSpot DataFlow]({{ site.baseurl }}/data-integrate/dataflow/dataflow.html) to easily ingest just the relevant information, and then query that data and use ThoughtSpot’s analysis and visualization features. And after you configure scheduled refresh, your analysis visuals are always current. DataFlow supports a large number of [databases]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databases.html) and [file systems]({{ site.baseurl }}/data-integrate/dataflow/dataflow-filesystems.html). DataFlow is recommended for large amounts of data, and for scheduled refresh.
+[DataFlow]({{ site.baseurl }}/data-integrate/dataflow/dataflow.html) is a capability in ThoughtSpot through which users can easily ingest data into ThoughtSpot from dozens of the most common databases, data warehouses, file sources, and applications. If your company maintains large sources of data externally, you can use DataFlow to easily ingest the relevant information, and use ThoughtSpot’s analysis and visualization features. And after you configure the scheduled refresh, your analysis visuals are always up to date. DataFlow supports a large number of [databases]({{ site.baseurl }}/data-integrate/dataflow/dataflow-databases.html), [applications]({{ site.baseurl }}/data-integrate/dataflow/dataflow-applications.html), and [file systems]({{ site.baseurl }}/data-integrate/dataflow/dataflow-filesystems.html).
+
+DataFlow is recommended for large amounts of data, and for scheduled refresh. Many times the source data could have many years of data and it becomes infeasible to load all that data on a daily basis. Through DataFlow you can specify the filter conditions to get only the latest data.
 
 ## JDBC and ODBC Drivers ##
 ThoughtSpot provides a [JDBC]({{ site.baseurl }}/data-integrate/clients/about-jdbc.html) and [ODBC]({{ site.baseurl }}/data-integrate/clients/about-odbc.html) driver that can be used to write data to ThoughtSpot. This is useful for customers who already have an existing ETL process or tool, and want to extend it to populate the ThoughtSpot cache.
