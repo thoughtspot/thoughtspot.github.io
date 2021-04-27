@@ -24,12 +24,12 @@ Run the secure copy command: `scp <release-number> admin@<hostname>:/home/admin/
     $ scp <release-number> admin@<hostname>:/home/admin/<file-name>
   ```
 1. **Run the `cluster create` command** Run `tscli cluster create <release-number>` in your terminal.<br>
-If you are using an s3 or GCS bucket for object storage, include the flag `--enable_cloud_storage=s3` or `--enable_cloud_storage=gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.
+If you are using an s3 or GCS bucket for object storage, include the flag `--enable_cloud_storage s3a` or `--enable_cloud_storage gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.
 ```
-    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage=s3
+    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage s3a
 ```  
 ```
-    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage=gcs
+    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage gcs
 ```  
 2. **Fill out your specific information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of ThoughtSpot Installer]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html#parameters-cluster-create) below.
 
