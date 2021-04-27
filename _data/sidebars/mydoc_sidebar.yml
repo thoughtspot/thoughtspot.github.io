@@ -1758,6 +1758,9 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-snowflake-reference.html
         output: web,embraceGd
+      - title: Configure OAuth authentication on Snowflake
+        url: /data-integrate/embrace/embrace-snowflake-oauth.html
+        output: web,embraceGd
       - title: Passthrough functions
         url: /data-integrate/embrace/embrace-snowflake-passthrough.html
         output: web,embraceGd
