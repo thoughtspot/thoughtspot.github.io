@@ -23,7 +23,7 @@ To search your data, either click on the **Search** tab from the top navigation 
 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
-{: id="monitor"}
+{: id="quick-links"}
 ## Monitor important metrics
 When you first view the ThoughtSpot home page, you can see a row of empty cards for your watchlist just below the Search bar. Use this watchlist to monitor metrics you reference often. For example, a VP of Sales might monitor *Number of new deals this month*, while a product manager might monitor *NPS score*.
 

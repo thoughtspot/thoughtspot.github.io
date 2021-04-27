@@ -28,7 +28,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="home-page-metrics">
 <dt>Monitor metrics from the home page</dt>
-<dd>You can now add important metrics to your watchlist and monitor them from the home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#monitor">Home page metrics</a>.</dd>
+<dd>You can now add important metrics to your watchlist and monitor them from the home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page metrics</a>.</dd>
 </dlentry>
 
 <dlentry id="latency">
