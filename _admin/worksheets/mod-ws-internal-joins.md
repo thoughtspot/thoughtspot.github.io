@@ -7,6 +7,7 @@ sidebar: mydoc_sidebar
 redirect_from:
 - /6.3.0/admin/worksheets/mod-ws-internal-joins.html
 - /6.3.0.CU1/admin/worksheets/mod-ws-internal-joins.html
+- /6.3.1.CU1/admin/worksheets/mod-ws-internal-joins.html
 permalink: /:collection/:path.html
 ---
 

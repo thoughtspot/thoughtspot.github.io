@@ -5,6 +5,7 @@ summary: "Secure socket layers (SSL) provide authentication and data security wh
 redirect_from:
 - /6.3.0/admin/setup/SSL-config.html
 - /6.3.0.CU1/admin/setup/SSL-config.html
+- /6.3.1.CU1/admin/setup/SSL-config.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

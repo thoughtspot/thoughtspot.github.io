@@ -4,6 +4,7 @@ summary: Learn about the fields used to create a BigQuery connection using Thoug
 redirect_from:
 - /6.3.0/data-integrate/embrace/embrace-gbq-reference.html
 - /6.3.0.CU1/data-integrate/embrace/embrace-gbq-reference.html
+- /6.3.1.CU1/data-integrate/embrace/embrace-gbq-reference.html
 last_updated: 01/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

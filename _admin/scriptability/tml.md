@@ -19,6 +19,11 @@ redirect_from:
 - /6.3.0.CU1/admin/scriptability/tsl-answer.html
 - /6.3.0.CU1/admin/scriptability/tsl-view.html
 - /6.3.0.CU1/admin/worksheets/yaml-worksheet.html
+- /6.3.1.CU1/admin/ts-cloud/tsl.html
+- /6.3.1.CU1/admin/scriptability/tsl-pinboard.html
+- /6.3.1.CU1/admin/scriptability/tsl-answer.html
+- /6.3.1.CU1/admin/scriptability/tsl-view.html
+- /6.3.1.CU1/admin/worksheets/yaml-worksheet.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
