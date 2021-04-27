@@ -61,9 +61,9 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
 
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.<br>
-If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage=s3a`.
+If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage s3a`.
 ```
-    $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage=s3a
+    $ tscli cluster create <release-number>.tar.gz --enable_cloud_storage s3a
 ```
 
 3. Edit the output with your specific cluster information.<br>
