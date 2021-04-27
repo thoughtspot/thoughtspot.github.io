@@ -5,6 +5,7 @@ summary: "For SearchIQ to work well, you must enable, optimize, and enable it on
 redirect_from:
 - /6.3.0/end-user/search/searchiq-optimize.html
 - /6.3.0.CU1/end-user/search/searchiq-optimize.html
+- /6.3.1.CU1/end-user/search/searchiq-optimize.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

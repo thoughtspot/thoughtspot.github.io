@@ -5,6 +5,7 @@ summary: "With SearchIQ, you can search your data through natural language, just
 redirect_from:
 - /6.3.0/end-user/search/about-searchiq.html
 - /6.3.0.CU1/end-user/search/about-searchiq.html
+- /6.3.1.CU1/end-user/search/about-searchiq.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

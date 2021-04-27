@@ -4,6 +4,7 @@ summary: Learn about the fields used to create an SAP HANA connection using Thou
 redirect_from:
 - /6.3.0/data-integrate/embrace/embrace-hana-reference.html
 - /6.3.0.CU1/data-integrate/embrace/embrace-hana-reference.html
+- /6.3.1.CU1/data-integrate/embrace/embrace-hana-reference.html
 last_updated: 06/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

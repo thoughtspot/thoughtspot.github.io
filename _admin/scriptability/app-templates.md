@@ -5,6 +5,7 @@ summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate 
 redirect_from:
 - /6.3.0/admin/scriptability/app-templates.html
 - /6.3.0.CU1/admin/scriptability/app-templates.html
+- /6.3.1.CU1/admin/scriptability/app-templates.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
