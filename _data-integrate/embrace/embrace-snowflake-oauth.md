@@ -13,4 +13,13 @@ For Snowflake connections that use OAuth, users must log in when their OAuth tok
 
 To add a Snowflake connection to ThoughtSpot using OAuth, you must set up the OAuth integration in Snowflake. This requires a Snowflake user account with ACCOUNTADMIN permission.
 
-1. Run the following command in Snowflake:
+The list of users in Snowflake is independent from ThoughtSpot, but through SAML sync, it is possible for Snowflake and ThoughtSpot to use the same authentication integration.
+
+{% include important.html content="Each ThoughtSpot instance requires a unique Snowflake security integration." %}
+
+In your Snowflake database, do the following:
+
+1. In the worksheet view, run the SHOW USERS command:
+`SHOW USERS`
+
+2. Specify a *default_warehouse* and *default_role* for each user.
