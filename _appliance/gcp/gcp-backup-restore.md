@@ -36,9 +36,9 @@ To restore your cluster from a GCS bucket, use the ThoughtSpot tscli:
     ```
 2. Run the restore command using the following syntax:  
 
-    `tscli cluster restore <PATH TO BACKUP ON CLOUD> --enable_cloud_storage=gcs`
+    `tscli cluster restore <PATH TO BACKUP ON CLOUD> --enable_cloud_storage gcs`
 
     Example:
     ```
-    $ tscli cluster restore gcs://bucket0001/backup/my_backup001 --enable_cloud_storage=gcs
+    $ tscli cluster restore gcs://bucket0001/backup/my_backup001 --enable_cloud_storage gcs
     ```
