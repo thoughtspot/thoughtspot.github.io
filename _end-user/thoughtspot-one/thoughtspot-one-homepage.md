@@ -23,26 +23,24 @@ To search your data, either click on the **Search** tab from the top navigation 
 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
-{: id="quick-links"}
-## Access and create shortcuts to your most-used Answers and Pinboards
-When you first view the ThoughtSpot home page, you can see a row of empty cards for quick links just below the Search bar. Use these cards to create shortcuts for Answers or Pinboards you reference often.
+{: id="monitor"}
+## Monitor important metrics
+When you first view the ThoughtSpot home page, you can see a row of empty cards for your watchlist just below the Search bar. Use this watchlist to monitor metrics you reference often. For example, a VP of Sales might monitor *Number of new deals this month*, while a product manager might monitor *NPS score*.
 
-To create shortcuts, follow these steps:
+To add metrics to your watchlist, follow these steps:
 
-1. Click **Add new shortcut** from the end of the row of existing shortcuts.<br>
-    You may need to use the right arrow button to get to the **Add new shortcut** option, if you already have several shortcuts.
+1. Click **Add metrics to your watchlist** from the end of the row of existing metrics you are monitoring.<br>
+    You may need to use the right arrow button to get to the **Add metrics to your watchlist** option, if you already monitor several metrics.
 
-2. The **Add a new shortcut** window modal appears, filtered to show your favorites. To search among your favorites for the Answer or Pinboard you would like to add, use the search bar at the top right of the shortcut window.
+2. The **Add metrics** window modal appears, showing the headlines on the Pinboard you most recently viewed. To find headlines from another Pinboard you would like to add, search for that Pinboard using the search bar near the top left of the **Add metrics** window.
 
-3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**. To search among these objects, use the search bar at the top right of the shortcut window.
+4. Select a metric or multiple metrics, and click **Add metrics**.
 
-4. Select an object, and click **Add**. The shortcut window only shows 9 objects per page. To find an object not on the first page, use the search bar, or scroll down and select **Next** at the bottom right of the modal.
+Note that you can have up to 20 metrics on your watchlist at a time.
 
-Note that you can only add one object shortcut at a time. You can have up to 20 Answer and Pinboard shortcuts on the ThoughtSpot home page.
+![Metrics watchlist gif]({{ site.baseurl }}/images/thoughtspot-one-carousel-metrics.gif "Metrics watchlist gif")
 
-![Shortcuts gif]({{ site.baseurl }}/images/thoughtspot-one-home-page-shortcuts.gif "Shortcuts gif")
-
-You can arrange the shortcut cards using each card's three-dot **more** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon. You can replace or delete a shortcut, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
+You can arrange the metric cards using each card's three-dot **more** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon. You can replace or delete a metric, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
 
 {: id="recently-viewed"}
 ## Recently viewed
@@ -81,7 +79,7 @@ These changes do not persist across sessions. If you log out and log back in, th
 
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
-To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the row of shortcuts. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
+To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the metric watchlist. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
 
 {: id="bulk-share"}
 ## Bulk share objects with other users and groups
