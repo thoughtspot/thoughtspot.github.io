@@ -771,7 +771,7 @@ This subcommand has the following options:
     <p>The default is <code>False</code>.</p></dd></dlentry>
     <dlentry>
     <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
-    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli cluster restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
+    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli cluster restore --enable_cloud_storage s3a</code> to enable AWS S3 object storage.</dd></dlentry>
     <dlentry>
     <dt><code>--heterogeneous</code></dt>
     <dd><p>Should be set for heterogeneous clusters.</p>
