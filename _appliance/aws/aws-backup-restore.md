@@ -36,9 +36,9 @@ To restore your cluster from an S3 bucket, use the ThoughtSpot tscli:
     ```
 2. Run the restore command using the following syntax:  
 
-    `tscli cluster restore <PATH TO BACKUP ON CLOUD> --enable_cloud_storage=s3a`
+    `tscli cluster restore <PATH TO BACKUP ON CLOUD> --enable_cloud_storage s3a`
 
     Example:
     ```
-    $ tscli cluster restore s3://bucket0001/backup/my_backup001 --enable_cloud_storage=s3a
+    $ tscli cluster restore s3://bucket0001/backup/my_backup001 --enable_cloud_storage s3a
     ```
