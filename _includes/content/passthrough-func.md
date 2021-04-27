@@ -65,7 +65,7 @@
     </tr>
     <tr id="sql_string_aggregate_op">
       <td><code>sql_string_aggregate_op</code></td>
-      <td>Returns the timestamp data type. The first argument takes the signature of the external function to be executed against the datasource. Subsequent arguments take the values to be passed to the external function.</td>
+      <td>Returns the string data type. The first argument takes the signature of the external function to be executed against the datasource. Subsequent arguments take the values to be passed to the external function.</td>
       <td><code class="highlighter-rouge"><ul><li>sql_string_aggregate_op ( "min ({0})" , username )</li></ul></code></td>
     </tr>
     <tr id="sql_string_op">
