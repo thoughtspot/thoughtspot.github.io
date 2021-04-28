@@ -24,13 +24,13 @@ To search your data, either click on the **Search** tab from the top navigation 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
 {: id="quick-links"}
-## Monitor important metrics
-When you first view the ThoughtSpot home page, you can see a row of empty cards for your watchlist just below the Search bar. Use this watchlist to monitor metrics you reference often. For example, a VP of Sales might monitor *Number of new deals this month*, while a product manager might monitor *NPS score*.
+## Track important metrics
+When you first view the ThoughtSpot home page, you can see a row of empty cards for your watchlist just below the Search bar. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from.
 
 To add metrics to your watchlist, follow these steps:
 
-1. Click **Add metrics to your watchlist** from the end of the row of existing metrics you are monitoring.<br>
-    You may need to use the right arrow button to get to the **Add metrics to your watchlist** option, if you already monitor several metrics.
+1. Click **Add metrics to your watchlist** from the end of the row of existing metrics you are tracking.<br>
+    You may need to use the right arrow button to get to the **Add metrics to your watchlist** option, if you already track several metrics.
 
 2. The **Add metrics** window modal appears, showing the headlines on the Pinboard you most recently viewed. To find headlines from another Pinboard you would like to add, search for that Pinboard using the search bar near the top left of the **Add metrics** window.
 
