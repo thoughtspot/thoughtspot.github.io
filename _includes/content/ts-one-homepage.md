@@ -4,7 +4,7 @@ The ThoughtSpot home page allows you to access all your essential actions as a b
 
 - [Search across existing Answers and Pinboards]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#search-existing)
 - [Search your data to create new Answers and Pinboards]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#search-data)
-- [Monitor important metrics]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links)
+- [Track important metrics]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links)
 - [View objects you viewed recently]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#recently-viewed)
 - [View trending Pinboards and Answers]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#trending)
 - [Filter existing objects by favorite, author, tag, or type of object]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#filter)
