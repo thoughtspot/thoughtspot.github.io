@@ -1,7 +1,7 @@
 ---
 title: [System Worksheets and Views]
 summary: "Learn about the system Worksheets and Views that ThoughtSpot provides."
-last_updated: 10/21/2020
+last_updated: 4/28/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,7 +17,7 @@ To list the system Worksheets and Views:
 
 1. Go to the **Data** tab.
 2. Choose **All** and **All types**.
-3. Enter `TS: ` in the search field.
+3. Enter `System User` in the search field.
 
 ## Description of system Worksheets and Views
 
@@ -29,6 +29,42 @@ To list the system Worksheets and Views:
    <tr>
       <th>Worksheet</th>
       <th>Description</th>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Credits Purchased</code></td>
+      <td>
+         Contains data on the number of credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has, and their expiration date. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Pinboard</a>.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Sample Retail - Apparel</code></td>
+      <td>
+         Contains sample retail data for <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a>.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Credit Usage</code></td>
+      <td>
+         Tracks the credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has consumed. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Pinboard</a>.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Discover Monitoring Data</code></td>
+      <td>
+         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers Pinboard</a>.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Product Usage</code></td>
+      <td>
+         Contains usage data for the product. Specifies what existing Worksheets, tables, and Views users search on and create objects from, and what those objects are. Specifies what actions users complete in the product.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">MetricsMonitoring</code></td>
+      <td>
+         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers Pinboard</a>.
+      </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS: BI Server</code></td>

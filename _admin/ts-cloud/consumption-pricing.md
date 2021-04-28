@@ -37,6 +37,7 @@ User activity that incurs usage minutes includes any user interaction with the p
 - Any scrolling in the product that triggers updates to objects or content being viewed
     For example, if a user is scrolling through a Pinboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Pinboard, resulting in ThoughtSpot loading and displaying additional charts in that Pinboard for the first time, this counts as additional user activity.
 
+{: id="credit-usage-pinboard"}
 ## Monitor your consumption
 You can monitor your credit consumption with the Credit Usage Pinboard, a new default admin-only Pinboard with data from the new Credit Usage Worksheet. You can access this Pinboard by searching for it on the **Pinboards** page.
 
