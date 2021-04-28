@@ -1,7 +1,7 @@
 ---
 title: [System pinboards]
 summary: "ThoughtSpot provides several Pinboards that help with system monitoring."
-last_updated: 11/18/2019
+last_updated: 4/28/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,7 +19,7 @@ To view these system Pinboards:
 
 1. Go to the **Pinboards** tab.
 2. Choose **All**.
-3. Search for the Pinboard you would like to view. You can also view the User Adoption Pinboard in the Admin Console.
+3. Enter `System User` in the search field, or search for the Pinboard you would like to view. You can also view the User Adoption Pinboard and Performance Tracking Pinboard in the Admin Console.
 
 ## Description of system Pinboards
 
@@ -61,6 +61,18 @@ To view these system Pinboards:
       <td><code class="highlighter-rouge">Performance Tracking</code></td>
       <td>
          Contains information on how your ThoughtSpot cluster is performing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a>.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Credit Usage Pinboard</code></td>
+      <td>
+         Tracks credit consumption for consumption-based pricing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Consumption-based pricing</a>.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Stats and Trends for Search on Answers</code></td>
+      <td>
+      Describes how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers</a>.
       </td>
    </tr>
   </table>
