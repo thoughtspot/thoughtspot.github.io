@@ -1,6 +1,6 @@
 ---
 title: [Configure OAuth for a Snowflake connection]
-last_updated: 12/21/2020
+last_updated: 4/20/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,9 +17,36 @@ The list of users in Snowflake is independent from ThoughtSpot, but through SAML
 
 {% include important.html content="Each ThoughtSpot instance requires a unique Snowflake security integration." %}
 
+Each user in Snowflake has a default warehouse and default role.
+
 In your Snowflake database, do the following:
 
-1. In the worksheet view, run the SHOW USERS command:
-`SHOW USERS`
+1. In the worksheet view, run the following commands:
+   ```
+   SHOW USERS;
 
-2. Specify a *default_warehouse* and *default_role* for each user.
+   SHOW SECURITY INTEGRATIONS;
+
+   CREATE OR REPLACE SECURITY <enter a name for your security role>
+
+     TYPE = OAUTH
+
+     OAUTH_CLIENT = CUSTOM
+
+     OAUTH_CLIENT_TYPE = 'CONFIDENTIAL'
+
+     OAUTH_REDIRECT_URI = 'https://<public url of ThoughtSpot instance>/callosum/v1/connection/generateTokens'
+
+     ENABLED = TRUE
+
+     COMMENT = '<enter a description of security profile>'
+    ```
+
+2. At the bottom of what you entered in step 1, =enter the following to describe your security integration:
+   ```
+   DESCRIBE SECURITY INTEGRATION OAUTH_DEMO;
+
+   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('OAUTH_DEMO
+   ```
+
+3. Specify a *default_warehouse* and *default_role* for each user.
