@@ -64,7 +64,7 @@ table, but not other columns. This can be accomplished by sharing a limited set 
 
 Because someone can share with anyone in the same group,
 they can potentially share restricted columns. For example, if a _Human Resources_ repository has a column with salary information, and it appears in a worksheet, any _Human Resources_ group member could create an answer with visible salary information and
-mistakenly share with someone outside of _Human Resources_. That 'outside' person now has access to the salary information. In such cases, we recommend that you work with your ThoughtSpot support team to enable the [Advanced Security Mode](#advanced-security-mode) on the relevant clusters.
+mistakenly share with someone outside of _Human Resources_. That 'outside' person now has access to the salary information. In such cases, we recommend that you work with your ThoughtSpot support team to enable the [Advanced Security Mode](#advanced-security-mode), which allows table dependents (such as Worksheets, Pinboards, and Answers) to inherit a table's CLS.
 
 
 ## System privileges
