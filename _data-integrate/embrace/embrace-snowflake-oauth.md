@@ -80,13 +80,13 @@ In your Snowflake database, do the following:
 
    {% include note.html content="Make sure you include the equals sign (=), if it exists." %}
 
-7. In the Snowflake connection details page in ThoughtSpot, Paste the OAuth client ID in the **OAuth Client ID** field.
+7. In the Snowflake connection details page in ThoughtSpot, paste the OAuth client ID in the **OAuth Client ID** field.
 
 8. For OAUTH_CLIENT_SECRET, copy the information between quotes after the colon (:).
 
    Example: `KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ`
 
-9. In the Snowflake connection details page in ThoughtSpot, Paste the OAuth client ID in the **OAuth Client Secret** field.
+9. In the Snowflake connection details page in ThoughtSpot, paste the OAuth client ID in the **OAuth Client Secret** field.
 
   {% include note.html content="Once a connection is created the token associated with the user login credentials for the connection is stored in ThoughtSpot for 90 days." %}
 
