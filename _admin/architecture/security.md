@@ -21,9 +21,10 @@ with anyone else in the groups to which they belong. This has implications on se
 
 The default Permissive Security mode of ThoughtSpot means that when someone shares an object with you, you can see all the data it uses, regardless of explicit permissions to the parent object data. You can see a shared pinboard without having access to its underlying worksheet or table.
 
+{: id="advanced-security-mode"}
 ### Advanced Security Mode ###
 
-ThoughtSpot's Advanced Security mode is opposite of the default permissive mode. Unless the user has explicit permissions to the entire stack of parent objects, they cannot see the data in the child object. For example, in a shared pinboard, you can see data only if you have explicit permissions to the relevant columns of the parent worksheet. Similarly, you can only see the data in a worksheet to which you have access if you have explicit permissions to its parent table object.
+ThoughtSpot's Advanced Security mode is the opposite of the default permissive mode. Unless the user has explicit permissions to the entire stack of parent objects, they cannot see the data in the child object. For example, in a shared pinboard, you can see data only if you have explicit permissions to the relevant columns of the parent worksheet. Similarly, you can only see the data in a worksheet to which you have access if you have explicit permissions to its parent table object.
 
 Work with your ThoughtSpot support team to enable the Advanced Security Mode on the relevant clusters.
 
@@ -63,7 +64,7 @@ table, but not other columns. This can be accomplished by sharing a limited set 
 
 Because someone can share with anyone in the same group,
 they can potentially share restricted columns. For example, if a _Human Resources_ repository has a column with salary information, and it appears in a worksheet, any _Human Resources_ group member could create an answer with visible salary information and
-mistakenly share with someone outside of _Human Resources_. That 'outside' person now has access to the salary information. In such cases, we recommend that you work with your ThoughtSpot support team to enable the Advanced Security Mode on the relevant clusters.
+mistakenly share with someone outside of _Human Resources_. That 'outside' person now has access to the salary information. In such cases, we recommend that you work with your ThoughtSpot support team to enable [Advanced Security Mode](#advanced-security-mode), which allows table dependents (such as Worksheets, Pinboards, and Answers) to inherit a table's CLS.
 
 
 ## System privileges
