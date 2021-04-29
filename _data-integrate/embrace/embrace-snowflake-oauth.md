@@ -94,4 +94,4 @@ In your Snowflake database, do the following:
 
 When you share a worksheet built from tables in a Snowflake connection that uses OAuth authentication, the user you share it with is prompted to log in to Snowflake in order to access the worksheet.
 
-{% include important.html content="In order for a user to access your shared worksheet, the user must have a default role assigned to their user in Snowflake." %}
+{% include important.html content="In order for a user to access your shared worksheet, they must have a default role assigned to their user in Snowflake." %}
