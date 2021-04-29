@@ -1,6 +1,6 @@
 {: id="share-datatab"}
 ## Share from the Data tab
-To share a table, Worksheet, or View from the **Data** tab, follow these steps.
+To share a table, Worksheet, or View from the **Data** tab, follow these steps. You can also share multiple objects at a time from the **Data** tab.
 
 1. Click **Data** on the top navigation bar.
 
