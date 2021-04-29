@@ -15,13 +15,11 @@ To add a Snowflake connection to ThoughtSpot using OAuth, you must set up the OA
 
 The list of users in Snowflake is independent from ThoughtSpot, but through SAML sync, it is possible for Snowflake and ThoughtSpot to use the same authentication integration.
 
-{% include important.html content="Each ThoughtSpot instance requires a unique Snowflake security integration." %}
-
-Each user in Snowflake must have a default warehouse and default role.
+{% include important.html content="Each ThoughtSpot instance requires a unique Snowflake security integration. Each user in Snowflake must have a default warehouse and default role." %}
 
 In your Snowflake database, do the following:
 
-1. In the worksheet view, run the following commands:
+1. In the worksheet view, enter the following commands, and click **Run**:
    ```
    SHOW USERS;
 
@@ -74,11 +72,12 @@ In your Snowflake database, do the following:
 5. Paste the contents into a text editor.
 
  Example:
-```
-{"OAUTH_CLIENT_SECRET_2":"KqKBu0xOxPtmk+RKvNP0+eIAMlFxMsu8rRh6s5q1qLY",
-"OAUTH_CLIENT_SECRET":"KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ",
-"OAUTH_CLIENT_ID":"aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO="}
-```
+
+ ```
+ {"OAUTH_CLIENT_SECRET_2":"KqKBu0xOxPtmk+RKvNP0+eIAMlFxMsu8rRh6s5q1qLY",
+ "OAUTH_CLIENT_SECRET":"KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ",
+ "OAUTH_CLIENT_ID":"aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO="}
+ ```
 6. For OAUTH_CLIENT_ID, copy the information between quotes after the colon (:).
 
   Example: `aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO=`
