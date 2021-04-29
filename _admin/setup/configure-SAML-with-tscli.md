@@ -49,7 +49,7 @@ Usually set to `3600` seconds.
 
 {: id="metadata-xml-file" }
 ### IdP Metadata XML File
-This file is provided by the IdP. The absolute path to the `idp-meta.xml` file is needed for one-time configuration. If your IDP needs an Assertion Consumer Service URL to create the metadata file, use `<https://<hostname_or_IP>/callosum/v1/saml/SSO`.
+This file is provided by the IdP. The absolute path to the `idp-meta.xml` file is needed for one-time configuration. If your IDP needs an Assertion Consumer Service URL to create the metadata file, use `https://<hostname_or_IP>/callosum/v1/saml/SSO`.
 
 {% include note.html content="If your IdP does not allow you to import the IdP metadata XML file, you must map values manually. For the ThoughtSpot system to pick up certain attributes, you must map them to specific fields. Map the username you would like to use to <code>NameId</code>, and map the email id of the user to <code>mail</code>." %}
 
