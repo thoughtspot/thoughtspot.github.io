@@ -61,7 +61,7 @@ In your Snowflake database, do the following:
 
 3. Click the **Run** button to run the full query.
 
- The Details window appears displaying a JSON object.
+   The Details window appears displaying a JSON object.
 
 4. Copy the JSON object and click **Done** to close the window.
 
