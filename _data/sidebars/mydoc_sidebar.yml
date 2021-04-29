@@ -2669,6 +2669,9 @@ entries:
     - title: Reaggregation in practice
       url: /reference/practice/reaggregation-scenarios.html
       output: web,practGd
+    - title: Add a hyperlink to a Search
+      url: /reference/practice/hyperlink.html
+      output: web,practGd
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web
