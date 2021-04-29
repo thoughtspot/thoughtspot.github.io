@@ -11,7 +11,7 @@ You can add a hyperlink directly within a Search. Using the concat formula, you 
 
 ## How to add a basic hyperlink
 
-To add an external hyperlink in a search, follow these steps:
+To add an external hyperlink in a Search, follow these steps:
 
 1. Start a new Search.
 Alternatively, choose to edit an existing Answer from a Pinboard.
@@ -29,17 +29,13 @@ Alternatively, choose to edit an existing Answer from a Pinboard.
 <code>concat({caption}value{/caption}link)</code>
 
      <ul>
-     <li>For a data set that does not contain properly formed urls, your formula should include the url in full.
-     For example, to link from the Product Category column to a Google search, use the following syntax to reference the <code>product category</code> column, and a Google search using its values:
+     <li>For a data set that does not contain properly formed urls, your formula should include the url in full.<br>
+     For example, to link from the Product Category column to a Google search, use the following syntax to reference the <code>product category</code> column, and a Google search using its values:<br>
      <code>concat("{caption}",product category,"{/caption}","https://www.google.com/search?q=",product category)</code></li>
 
-     <img src="images/hyperlink-google-product.png" alt="Create a formula to link product category to Google search">
-
-     <li>For a data set that contains properly formed urls, you can simplify the formula.
-     For example, to link from the <code>Fruit</code> column to the <code>url</code>, use the following syntax to reference the two columns, <code>fruit</code> and <code>url</code>:
+     <li>For a data set that contains properly formed urls, you can simplify the formula.<br>
+     For example, to link from the <code>Fruit</code> column to the <code>url</code>, use the following syntax to reference the two columns, <code>fruit</code> and <code>url</code>:<br>
      <code>concat("{caption}",fruit,"{/caption}",url)</code></li>
-
-     <img src="images/hyperlink-fruit-url.png" alt="Create a formula to link a category to url within data set">
      </ul>
 
 6. Click **Save**.
@@ -65,7 +61,7 @@ In the upper-right side of the table, click the **More** menu icon ![more option
 6. Enter your formula, following the basic syntax:
 <code>concat(“{caption}pinboard{/caption}http://<thoughtspot_server>:<port>/?<runtime filter>,column name)</code>
 
-     For example, the formula to link between a search on fruit sales and a Pinboard based on the same data with url <code>https://wine.corp.thoughtspot.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add</code> would be:
+     For example, the formula to link between a search on fruit sales and a Pinboard based on the same data with url <code>https://wine.corp.thoughtspot.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add</code> would be:<br>
      <code>concat("{caption}pinboard{/caption}https://wine.corp.thoughtspot.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add/?col1=fruit&op1=eq&val1=",fruit)</code>
 
      ![Link an Answer to a Pinboard with a formula]({{ site.baseurl }}/images/hyperlink-pinboard-pinboard.png "Create a formula to link an Answer to a Pinboard")
