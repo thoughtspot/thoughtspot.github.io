@@ -22,6 +22,8 @@ To add a connection to Snowflake:
 
    ThoughtSpot supports <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>, but not External OAuth.
 
+   Before selecting OAuth authentication in ThoughtSpot, you must configure OAuth in Snowflake. For details, see: ![Configure OAuth for a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-oauth.html).
+
    For OAuth authentication, do the following:
     1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
@@ -29,6 +31,8 @@ To add a connection to Snowflake:
     2. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
     3. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
     4. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
+
+    {% include tip.html content="There typically is a small delay between when you set up OAuth in Snowflake and when it is available for your connection, so if you see an 'Authentication Failed. Try again.' message, click **Continue**. You will then log in to Snowflake again, and then the *Select tables* screen appears. At that point, go to step 7 to select your tables" %}
 
         Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
 
