@@ -33,13 +33,13 @@ Alternatively, choose to edit an existing Answer from a Pinboard.
      For example, to link from the Product Category column to a Google search, use the following syntax to reference the <code>product category</code> column, and a Google search using its values:
      <code>concat("{caption}",product category,"{/caption}","https://www.google.com/search?q=",product category)</code></li>
 
-     ![Add a link with a formula]({{ site.baseurl }}/images/hyperlink-google-product.png "Create a formula to link product category to Google search")
+     <img src="images/hyperlink-google-product.png" alt="Create a formula to link product category to Google search">
 
      <li>For a data set that contains properly formed urls, you can simplify the formula.
      For example, to link from the <code>Fruit</code> column to the <code>url</code>, use the following syntax to reference the two columns, <code>fruit</code> and <code>url</code>:
      <code>concat("{caption}",fruit,"{/caption}",url)</code></li>
 
-     ![Add a link with a formula]({{ site.baseurl }}/images/hyperlink-fruit-url.png "Create a formula to link a category to url within data set")
+     <img src="images/hyperlink-fruit-url.png" alt="Create a formula to link a category to url within data set">
      </ul>
 
 6. Click **Save**.
