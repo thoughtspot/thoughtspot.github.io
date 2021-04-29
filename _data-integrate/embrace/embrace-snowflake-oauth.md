@@ -13,8 +13,6 @@ For Snowflake connections that use OAuth, users must log in when their OAuth tok
 
 To add a Snowflake connection to ThoughtSpot using OAuth, you must set up the OAuth integration in Snowflake. This requires a Snowflake user account with ACCOUNTADMIN permission.
 
-The list of users in Snowflake is independent from ThoughtSpot, but through SAML sync, it is possible for Snowflake and ThoughtSpot to use the same authentication integration.
-
 {% include important.html content="Each ThoughtSpot instance requires a unique Snowflake security integration. Each user in Snowflake must have a default warehouse and default role." %}
 
 In your Snowflake database, do the following:
@@ -65,37 +63,35 @@ In your Snowflake database, do the following:
 
  The Details window appears displaying a JSON object.
 
-<Insert screenshot here>
-
 4. Copy the JSON object and click **Done** to close the window.
 
 5. Paste the contents into a text editor.
 
- Example:
+   Example:
 
- ```
- {"OAUTH_CLIENT_SECRET_2":"KqKBu0xOxPtmk+RKvNP0+eIAMlFxMsu8rRh6s5q1qLY",
- "OAUTH_CLIENT_SECRET":"KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ",
- "OAUTH_CLIENT_ID":"aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO="}
- ```
+   ```
+   {"OAUTH_CLIENT_SECRET_2":"KqKBu0xOxPtmk+RKvNP0+eIAMlFxMsu8rRh6s5q1qLY",
+   "OAUTH_CLIENT_SECRET":"KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ",
+   "OAUTH_CLIENT_ID":"aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO="}
+   ```
 6. For OAUTH_CLIENT_ID, copy the information between quotes after the colon (:).
 
-  Example: `aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO=`
+   Example: `aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO=`
 
-  {% include note.html content="Make sure you include the equals sign (=), if it exists." %}
+   {% include note.html content="Make sure you include the equals sign (=), if it exists." %}
 
-7. In the Snowflake connection details page in ThoughtSpot, Paste the OAuth client ID in the **OAuth Client ID** field.
+7. In the Snowflake connection details page in ThoughtSpot, paste the OAuth client ID in the **OAuth Client ID** field.
 
 8. For OAUTH_CLIENT_SECRET, copy the information between quotes after the colon (:).
 
-  Example: `KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ`
+   Example: `KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ`
 
-9. In the Snowflake connection details page in ThoughtSpot, Paste the OAuth client ID in the **OAuth Client Secret** field.
+9. In the Snowflake connection details page in ThoughtSpot, paste the OAuth client ID in the **OAuth Client Secret** field.
 
-{% include note.html content="Once a connection is created the token associated with the user login credentials for the connection is stored in ThoughtSpot for 90 days." %}
+  {% include note.html content="Once a connection is created the token associated with the user login credentials for the connection is stored in ThoughtSpot for 90 days." %}
 
 ## Sharing a worksheet built from tables in a Snowflake connection that uses OAuth
 
 When you share a worksheet built from tables in a Snowflake connection that uses OAuth authentication, the user you share it with is prompted to log in to Snowflake in order to access the worksheet.
 
-{% include important.html content="In order for a user to access your shared worksheet, the user must have a default role assigned to their user in Snowflake." %}
+{% include important.html content="In order for a user to access your shared worksheet, they must have a default role assigned to their user in Snowflake." %}
