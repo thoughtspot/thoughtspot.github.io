@@ -57,6 +57,10 @@ In the upper-right side of the table, click the **More** menu icon ![more option
 For example, the formula to link between a search on fruit sales and a Pinboard based on the same data with url <code>https://wine.corp.thoughtspot.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add</code> would be:
 <code>concat("{caption}pinboard{/caption}https://wine.corp.thoughtspot.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add/?col1=fruit&op1=eq&val1=",fruit) </code>
 
-{% include note.html content="Here, the runtime filter is operating on the column “fruit,” and will only return values that are equal (EQ) to the fruits listed in the columns. To learn more about runtime filters, see [About Runtime Filters]({{site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html)." %}
+{% include note.html content="Here, the runtime filter is operating on the column `fruit`, and will only return values that are equal (EQ) to the fruits listed in the columns." %}
 
 8. Click **Save**.
+
+### Reference
+
+* [About Runtime Filters]({{site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html)
