@@ -22,7 +22,7 @@ To add a connection to Snowflake:
 
    ThoughtSpot supports <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>, but not External OAuth.
 
-   Before selecting OAuth authentication in ThoughtSpot, you must configure OAuth in Snowflake. For details, see: ![Configure OAuth for a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-oauth.html).
+   Before selecting OAuth authentication in ThoughtSpot, you must configure OAuth in Snowflake. For details, see: [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-oauth.html).
 
    For OAuth authentication, do the following:
     1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
