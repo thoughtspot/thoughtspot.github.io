@@ -88,7 +88,7 @@ In your Snowflake database, do the following:
 
 9. In the Snowflake connection details page in ThoughtSpot, paste the OAuth client ID in the **OAuth Client Secret** field.
 
-  {% include note.html content="Once a connection is created the token associated with the user login credentials for the connection is stored in ThoughtSpot for 90 days." %}
+   {% include note.html content="Once a connection is created the token associated with the user login credentials for the connection is stored in ThoughtSpot for 90 days." %}
 
 ## Sharing a worksheet built from tables in a Snowflake connection that uses OAuth
 
