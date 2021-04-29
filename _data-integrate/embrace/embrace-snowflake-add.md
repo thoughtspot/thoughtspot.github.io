@@ -32,6 +32,8 @@ To add a connection to Snowflake:
     3. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
     4. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
+    {% include tip.html content="There typically is a small delay between when you set up OAuth in Snowflake and when it is available for your connection, so if you see an 'Authentication Failed. Try again.' message, click **Continue**. You will then log in to Snowflake again, and then the *Select tables* screen appears. At that point, go to step 7 to select your tables" %}
+
         Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
 
    For service account authentication, do the following:

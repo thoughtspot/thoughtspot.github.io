@@ -17,7 +17,7 @@ The list of users in Snowflake is independent from ThoughtSpot, but through SAML
 
 {% include important.html content="Each ThoughtSpot instance requires a unique Snowflake security integration." %}
 
-Each user in Snowflake has a default warehouse and default role.
+Each user in Snowflake must have a default warehouse and default role.
 
 In your Snowflake database, do the following:
 
@@ -27,26 +27,76 @@ In your Snowflake database, do the following:
 
    SHOW SECURITY INTEGRATIONS;
 
-   CREATE OR REPLACE SECURITY <enter a name for your security role>
-
+   CREATE OR REPLACE SECURITY INTEGRATION <enter a name for your security role>
      TYPE = OAUTH
-
      OAUTH_CLIENT = CUSTOM
-
-     OAUTH_CLIENT_TYPE = 'CONFIDENTIAL'
-
-     OAUTH_REDIRECT_URI = 'https://<public url of ThoughtSpot instance>/callosum/v1/connection/generateTokens'
-
+     OAUTH_CLIENT_TYPE = <enter a client type>
+     OAUTH_REDIRECT_URI = 'https://<public url of your ThoughtSpot instance>/callosum/v1/connection/generateTokens'
      ENABLED = TRUE
-
-     COMMENT = '<enter a description of security profile>'
+     COMMENT = '<enter a description of your security profile>'
     ```
 
-2. At the bottom of what you entered in step 1, =enter the following to describe your security integration:
+2. At the bottom of what you entered in step 1, add an empty line, and then enter the following to describe your security integration:
    ```
-   DESCRIBE SECURITY INTEGRATION OAUTH_DEMO;
+   DESCRIBE SECURITY INTEGRATION <enter description of your security integration>;
 
-   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('OAUTH_DEMO
+   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('<enter same description of your security integration as previous line');
    ```
 
-3. Specify a *default_warehouse* and *default_role* for each user.
+   Example of a full query:
+
+   ```
+   SHOW USERS;
+
+   SHOW SECURITY INTEGRATIONS;
+
+   CREATE OR REPLACE SECURITY INTEGRATION OAUTH_CONFIG
+     TYPE = OAUTH
+     OAUTH_CLIENT = CUSTOM
+     OAUTH_CLIENT_TYPE = 'CONFIDENTIAL'
+     OAUTH_REDIRECT_URI = 'https://177.122.45.2/callosum/v1/connection/generateTokens'
+     ENABLED = TRUE
+     COMMENT = 'Profile for passthrough'
+
+   DESCRIBE SECURITY INTEGRATION OAUTH_CONFIG;
+
+   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('OAUTH_CONFIG');   
+   ```
+
+3. Click the **Run** button to run the full query.
+
+ The Details window appears displaying a JSON object.
+
+<Insert screenshot here>
+
+4. Copy the JSON object and click **Done** to close the window.
+
+5. Paste the contents into a text editor.
+
+ Example:
+```
+{"OAUTH_CLIENT_SECRET_2":"KqKBu0xOxPtmk+RKvNP0+eIAMlFxMsu8rRh6s5q1qLY",
+"OAUTH_CLIENT_SECRET":"KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ",
+"OAUTH_CLIENT_ID":"aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO="}
+```
+6. For OAUTH_CLIENT_ID, copy the information between quotes after the colon (:).
+
+  Example: `aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO=`
+
+  {% include note.html content="Make sure you include the equals sign (=), if it exists." %}
+
+7. In the Snowflake connection details page in ThoughtSpot, Paste the OAuth client ID in the **OAuth Client ID** field.
+
+8. For OAUTH_CLIENT_SECRET, copy the information between quotes after the colon (:).
+
+  Example: `KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ`
+
+9. In the Snowflake connection details page in ThoughtSpot, Paste the OAuth client ID in the **OAuth Client Secret** field.
+
+{% include note.html content="Once a connection is created the token associated with the user login credentials for the connection is stored in ThoughtSpot for 90 days." %}
+
+## Sharing a worksheet built from tables in a Snowflake connection that uses OAuth
+
+When you share a worksheet built from tables in a Snowflake connection that uses OAuth authentication, the user you share it with is prompted to log in to Snowflake in order to access the worksheet.
+
+{% include important.html content="In order for a user to access your shared worksheet, the user must have a default role assigned to their user in Snowflake." %}
