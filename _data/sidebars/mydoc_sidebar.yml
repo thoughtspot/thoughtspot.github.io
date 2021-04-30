@@ -1749,14 +1749,14 @@ entries:
       - title: Modify a connection
         url: /data-integrate/embrace/embrace-snowflake-modify.html
         output: web,embraceGd
+      - title: Configure OAuth for Snowflake
+        url: /data-integrate/embrace/embrace-snowflake-oauth.html
+        output: web,embraceGd        
       - title: Best practices
         url: /data-integrate/embrace/embrace-snowflake-best.html
         output: web,embraceGd
       - title: Reference
         url: /data-integrate/embrace/embrace-snowflake-reference.html
-        output: web,embraceGd
-      - title: Configure OAuth on Snowflake
-        url: /data-integrate/embrace/embrace-snowflake-oauth.html
         output: web,embraceGd
       - title: Passthrough functions
         url: /data-integrate/embrace/embrace-snowflake-passthrough.html
