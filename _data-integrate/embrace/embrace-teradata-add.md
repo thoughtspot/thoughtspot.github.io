@@ -31,7 +31,7 @@ To add a connection to Teradata:
     2. Enter your key and value information.
     3. To add more keys and values, click the plus sign (+), and enter them.
 
-    {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
+    {% include note.html content="Any key-value pairs that you enter must be defined in your Teradata data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.       
 
