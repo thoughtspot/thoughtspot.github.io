@@ -12,7 +12,7 @@ This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hype
 For each hardware node, you must:
 
 * Complete the prerequisites
-* Use the ThoughtSpot Open Virtualization Format (OVF) file to create
+* Use the ThoughtSpot Open Virtualization Appliance (OVA) file to create
 a virtual machine (VM)
 * Add hard disks to the VM
 
@@ -41,21 +41,23 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 3. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} to have a quick reference for any networking information you may need to fill out as you install ThoughtSpot. Ask your network administrator if you need help filling out the site survey.
 
-## Use the OVF to Create a VM
+## Use the OVA to Create a VM
 
-1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
+1. Download the [ThoughtSpot OVA](https://thoughtspot.egnyte.com/dl/LPOSJr8Cdd){:target="_blank"} file to a location on an accessible disk. The OVA file contains the OVF and the VMDK.
+
+2. Download the [md5](https://thoughtspot.egnyte.com/dl/MaovnPnHqF){: target="_blank"}, which you can use later to ensure the OVA file is on the correct version, and not corrupted.
 
 2. Log in to the ESXi web portal.
 
 2. Select **Virtual Machines > Create/Register VM**.
 
-   The system displays the dialog for selecting an OVF template.
+   The system displays the dialog for selecting an OVA template.
 
-   ![]({{ site.baseurl }}/images/vmware-ovf.png "ThoughtSpot OVF")
+   ![ThoughtSpot OVA]({{ site.baseurl }}/images/vmware-ova.png "ThoughtSpot OVA")
 
 4. Select **Creation type > deploy a virtual machine from an OVF or OVA**. Click **Next**.
 
-3. Upload the ThoughtSpot OVF and click **Next**.
+3. Upload the ThoughtSpot OVA and click **Next**. The OVA contains both the OVF and the VMDK, so you only have to upload one file.
 
    The system prompts you to select storage.
 
