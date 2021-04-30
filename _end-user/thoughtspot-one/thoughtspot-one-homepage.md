@@ -19,13 +19,13 @@ See [Search Answers]({{ site.baseurl }}/end-user/search/search-answers.html) for
 ## Search your data
 You can search directly on your data. Use this functionality if you would like to create your own Answers and Pinboards to answer questions about your data.
 
-To search your data, either click on the **Search** tab from the top navigation bar, or toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year store #103 bakery` to see last year's sales in the bakery department for store 103. This type of search requires you to be familiar with your company's data, to know which Worksheets contain data that interests you, and the names of the columns and values within that Worksheet.
+To search your data, toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Click on the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year store #103 bakery` to see last year's sales in the bakery department for store 103. This type of search requires you to be familiar with your company's data, to know which Worksheets contain data that interests you, and the names of the columns and values within that Worksheet.
 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
 {: id="quick-links"}
 ## Track important metrics
-When you first view the ThoughtSpot home page, you can see a row of empty cards for your watchlist just below the Search bar. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from.
+When you first view the ThoughtSpot home page, you can see a row of popular metrics for your company just below the Search bar. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from.
 
 To add metrics to your watchlist, follow these steps:
 
@@ -46,7 +46,7 @@ You can arrange the metric cards using each card's three-dot **more** ![]({{ sit
 
 {: id="recently-viewed"}
 ## Recently viewed
-By default, the ThoughtSpot home page shows you a list of the Answers and Pinboards you most recently viewed. To view Answers and Pinboards in the opposite order, click on **Last viewed**. Click on it again to return to the original view.
+By default, the ThoughtSpot home page shows you a list of all Answers and Pinboards you have access to, in order of how recently you viewed them. To view Answers and Pinboards in the opposite order, click on **Last viewed**. Click on it again to return to the original view.
 
 To see more objects, scroll down to the bottom of the page and select **Next**. ThoughtSpot displays 20 objects on each page.
 
@@ -83,12 +83,16 @@ These changes do not persist across sessions. If you log out and log back in, th
 ## Bulk mark objects as favorites
 To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the metric watchlist. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
 
+Note that you cannot select multiple objects across pages. If you select an Answer on the first page, and then select **Next** to view more objects, ThoughtSpot's discards your selection on the first page.
+
 {: id="bulk-share"}
 ## Bulk share objects with other users and groups
 To bulk share the objects that appear on your home page with other users and groups, follow these steps:
 
 1. Select the empty boxes next to the names of the objects you would like to share.
     Alternatively, you can select each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar.
+
+    Note that you cannot select multiple objects across pages. If you select an Answer on the first page, and then select **Next** to view and share more objects, ThoughtSpot's discards your selection on the first page.
 
 2. Select **Share** ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png "sharing-icon"){: .inline}, above the list of objects.
 
