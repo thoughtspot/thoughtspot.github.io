@@ -1,6 +1,6 @@
 ---
 title: ["Search data"]
-last_updated: 4/6/2021
+last_updated: 4/30/2021
 summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 redirect_from:
@@ -19,7 +19,7 @@ You’ve probably seen one of these before:
 
 Click in the box and start typing some letters. As soon as you begin typing, ThoughtSpot suggests some search terms. Type slowly, and use the suggestions to find what you're looking for.
 
-You can see an answer in the form of a chart or a table. If you do not see an answer, press **Enter** on your keyboard.
+ThoughtSpot Cloud's default search experience is search on enter. This means that you can add new tokens to the search bar, or remove them, without altering your existing search, until you press **Enter** on your keyboard, or select **Go** to the right of the search bar. This means that you may need to press **Enter** or **Go** to ensure that ThoughtSpot updates your search with any new items in the search bar.
 
 When you phrase a question in ThoughtSpot Search, use key words instead of full conversational style.
 
