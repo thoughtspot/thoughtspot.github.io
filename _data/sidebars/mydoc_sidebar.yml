@@ -1749,9 +1749,9 @@ entries:
       - title: Modify a connection
         url: /data-integrate/embrace/embrace-snowflake-modify.html
         output: web,embraceGd
-      - title: Configure OAuth
-        url: /data-integrate/embrace/embrace-snowflake-oauth.html
-        output: web,embraceGd
+#      - title: Configure OAuth
+#        url: /data-integrate/embrace/embrace-snowflake-oauth.html
+#        output: web,embraceGd
       - title: Best practices
         url: /data-integrate/embrace/embrace-snowflake-best.html
         output: web,embraceGd

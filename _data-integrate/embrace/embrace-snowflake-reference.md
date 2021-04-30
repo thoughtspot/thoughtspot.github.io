@@ -54,7 +54,7 @@ Here is a list of the fields of a Snowflake connection in ThoughtSpot Embrace. Y
       <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
   </dlentry>
 </dl>
-
+<!--
 ## Important information about OAuth with Snowflake
 
-To obtain the OAuth Client ID and Client Secret, you must configure OAuth in Snowflake. For more information, see: [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-oauth.html).
+To obtain the OAuth Client ID and Client Secret, you must configure OAuth in Snowflake. For more information, see: [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-oauth.html). -->
