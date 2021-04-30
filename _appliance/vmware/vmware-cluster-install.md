@@ -8,7 +8,8 @@ permalink: /:collection/:path.html
 
 ## Prerequisites
 Before you can install your ThoughtSpot clusters in VMware, complete these prerequisites.
-1. **Download the OVF** Download the [Open Virtualization Format](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/) (OVF) file.
+1. **Download the OVA** Download the [Open Virtualization Appliance](https://thoughtspot.egnyte.com/dl/LPOSJr8Cdd){: target="_blank"} (OVA) file.
+2. **Download the md5** Download the [md5](https://thoughtspot.egnyte.com/dl/MaovnPnHqF){: target="_blank"}, which you can use later to ensure the OVA file is on the correct version, and not corrupted.
 1. **Review configuration overview** Refer to [VMware configuration overview]({{ site.baseurl }}/appliance/vmware/vmware-intro.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html) to create and launch your instance.
 3. **Review required ports** Refer to [Network ports]({{ site.baseurl }}/appliance/ports.html) to view the required ports for successful operation of ThoughtSpot.

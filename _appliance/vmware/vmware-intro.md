@@ -78,7 +78,7 @@ NAS/NFS is not supported since its latency is so high that it tends to be unreli
 
 All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
 
-ThoughtSpot provides a VMware template (OVF) together with a VMDK (Virtual
+ThoughtSpot provides an OVA file that contains a VMware template (OVF) and a VMDK (Virtual
 Machine Disk) file for configuring a VM. VMDK is a file format that describes
 containers for virtual hard disk drives to be used in virtual machines like
 VMware Workstation or VirtualBox. OVF is a platform-independent, efficient,
