@@ -13,21 +13,21 @@ permalink: /:collection/:path.html
 
 We have added a white banner to the top of the screen to count down users’ remaining days on Free Trial. The countdown banner turns yellow once you have reached your final week on Free Trial. At any time, you can click *Upgrade now* to upgrade to a paid account. The *Upgrade now* link takes you to Intercom to connect to ThoughtSpot.
 
-![]({{ site.baseurl }}/images/free-trial-countdown-banner-7.png “7-day countdown for Free Trial”)
+![]({{ site.baseurl }}/images/free-trial-countdown-banner-7.png "7-day countdown for Free Trial")
 
 {: id="simplified-snowflake-url"}
 ### Simplified Snowflake account name
 
 We have simplified the steps to add a Snowflake connection. When prompted to enter the Snowflake account name, you can now copy-paste the entire URL of your Snowflake account, and ThoughtSpot will extract the account name for you. Previously, users had to select the account name from the URL and enter it in the Snowflake account field.
 
-![]({{ site.baseurl }}/images/free-trial-snowflake-url.png “Snowflake Account name or URL for connection”)
+![]({{ site.baseurl }}/images/free-trial-snowflake-url.png "Snowflake Account name or URL for connection")
 
 {: id="thoughtspot-connections"}
 ### ThoughtSpot connections
 
 We have renamed ThoughtSpot Embrace to Connections within the product. Now, Free Trial users can access Connections by clicking *Connections* on the *Data* page. Functions like `sql_int_op` that were previously available under *Embrace passthrough* are now available under *Connection passthrough*.
 
-![]({{ site.baseurl }}/images/free-trial-data-connections.png “Data Connections page”)
+![]({{ site.baseurl }}/images/free-trial-data-connections.png "Data Connections page")
 
 
 ## April 7, 2021
