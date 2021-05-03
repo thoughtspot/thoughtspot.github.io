@@ -113,6 +113,8 @@ Depending on your situation and your goals, you can choose to use either a snaps
 
 You should never restore from a snapshot or backup yourself. Contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for help.
 
+{% include warning.html content="Use secondary disks or your NAS bucket for backups and snapshots. Do NOT use <code>/home/admin</code> or <code>/export/home/admin</code>." %}
+
 ## Additional resources
 As you develop your expertise in backups and snapshots, we recommend the following ThoughtSpot U course:
 * [Snapshots and Backups](https://training.thoughtspot.com/3-snapshots-backups/461810){:target="_blank"}
