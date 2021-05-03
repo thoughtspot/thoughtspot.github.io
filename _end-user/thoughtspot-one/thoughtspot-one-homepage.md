@@ -25,7 +25,7 @@ See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for mo
 
 {: id="quick-links"}
 ## Track important metrics
-When you first view the ThoughtSpot home page, you can see a row of popular metrics for your company just below the Search bar. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from.
+When you first view the ThoughtSpot home page, you may see a row of popular metrics for your company just below the Search bar. This watchlist may be empty, if your company is new to ThoughtSpot. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from.
 
 To add metrics to your watchlist, follow these steps:
 
