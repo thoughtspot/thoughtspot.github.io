@@ -1,14 +1,13 @@
 ---
 title: [Connection reference for Google BigQuery]
 last_updated: 9/21/2020
-summary: Learn about the fields used to create a BigQuery connection using ThoughtSpot Embrace.
 redirect_from:
 - /data-integrate/embrace/embrace-gbq-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
+Learn about the fields used to create and modify a BigQuery connection in ThoughtSpot. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
 
 
 <dl id="embrace-gbq-ref">
@@ -40,7 +39,7 @@ Here is a list of the fields of a BigQuery connection in ThoughtSpot Embrace. Yo
 
 {: id="custom-role"}
 ## Create a custom role
-In order to use ThoughtSpot Embrace to query your GBQ database, you must create a custom role with specific permissions and then assign it to  your service account.
+In order to use a ThoughtSpot connection to query your GBQ database, you must create a custom role with specific permissions and then assign it to  your service account.
 1. Navigate to [console.cloud.google.com](https://console.cloud.google.com){:target="_blank"}, sign in, and select your project.  
 2. Hover over **IAM & admin**.  
 3. Click **Roles**.  

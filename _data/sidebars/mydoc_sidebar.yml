@@ -188,6 +188,12 @@ entries:
         - title: Passthrough functions
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html
           output: web
+        - title: Snowflake Partner Connect Overview
+          url: /data-integrate/embrace/embrace-snowflake-partner.html
+          output: web,embraceGd
+        - title: Snowflake Partner Connect Tutorials
+          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
+          output: web,embraceGd
       - levelThreeTitle: Connect to Amazon Redshift
         output: web
         levelThreeItems:
@@ -1304,15 +1310,6 @@ entries:
     - title: Contact ThoughtSpot Support
       url: /admin/misc/contact.html
       output: web,admBk
-  - sectiontitle: Embrace Snowflake Partner Connect
-    output: web,embraceGd
-    sectionitems:
-    - title: Overview
-      url: /data-integrate/embrace/embrace-snowflake-partner.html
-      output: web,embraceGd
-    - title: Tutorials
-      url: /data-integrate/embrace/embrace-snowflake-tutorial.html
-      output: web,embraceGd
   - sectiontitle: Reference
     output: web,refGd
     sectionitems:

@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can add a connection to a Snowflake database in ThoughtSpot Cloud, and proceed to perform live queries to create Answers and Pinboards.
+You can connect to a Snowflake database in ThoughtSpot Cloud, and perform live queries to create Answers and Pinboards.
 
 - [Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)
 - [Edit a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html)
