@@ -9,7 +9,7 @@ To connect to Snowflake:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
@@ -63,7 +63,7 @@ The connection you just created is a link to the external data source. If there 
 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
-You can modify an Embrace Snowflake connection in the following ways:
+You can modify a Snowflake connection in the following ways:
 
 - [Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)
 - [Edit a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html)

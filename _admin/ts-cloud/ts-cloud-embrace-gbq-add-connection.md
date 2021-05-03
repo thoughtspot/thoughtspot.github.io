@@ -9,7 +9,7 @@ To connect to BigQuery:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
     <!-- ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"") -->
     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
@@ -64,7 +64,7 @@ The connection you just created is a link to the external data source. If there 
 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
-You can modify an Embrace BigQuery connection in the following ways:
+You can modify a BigQuery connection in the following ways:
 
 - [Edit a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-edit-connection.html)
 - [Remap a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-remap-connection.html)

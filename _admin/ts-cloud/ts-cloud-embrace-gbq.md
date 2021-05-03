@@ -5,7 +5,7 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can add a connection to a Google BigQuery database in ThoughtSpot Cloud, and proceed to perform live queries to create Answers and Pinboards.
+You can connect to a Google BigQuery database in ThoughtSpot Cloud, and proceed to perform live queries to create Answers and Pinboards.
 
 - [Add a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html)
 - [Edit a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-edit-connection.html)
