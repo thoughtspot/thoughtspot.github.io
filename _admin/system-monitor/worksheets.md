@@ -57,7 +57,7 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">Product Usage</code></td>
       <td>
-         Contains usage data for the product. Specifies what existing Worksheets, tables, and Views users search on and create objects from, and what those objects are. Specifies what actions users complete in the product.
+         Contains usage data for the product. Specifies what existing Worksheets, tables, and Views users search on and create objects from, and what those objects are. Specifies what actions users complete in the product. You can also use this Worksheet to view the underlying data sources for any objects, and any object’s dependents.
       </td>
    </tr>
    <tr>

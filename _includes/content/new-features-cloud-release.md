@@ -44,7 +44,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
 <dlentry id="product-usage-worksheet">
 <dt>Product Usage Worksheet</dt>
-<dd>This release introduces a new default Worksheet for monitoring product usage. The Product Usage Worksheet contains usage data for the product. It specifies what existing Worksheets, tables, and Views users search on and create objects from, and what those objects are. It also lists what actions users complete in the product. You can search on this Worksheet, or create Pinboards based on it, to monitor your users' interaction with the product. To access this Worksheet, search for <strong>Product Usage Worksheet</strong> from the <strong>Data</strong> tab.</dd></dlentry>
+<dd>This release introduces a new default Worksheet for monitoring product usage. The Product Usage Worksheet contains data on the following topics:
+<ul><li>Specifies what existing Worksheets, tables, and Views users search on and create objects from, and what those objects are</li>
+<li>Lists what actions users complete in the product</li>
+<li>Lists the underlying data sources for any object</li>
+<li>Lists any object's dependents</li></ul>
+You can search on this Worksheet, or create Pinboards based on it, to monitor your users' interaction with the product. To access this Worksheet, search for <strong>Product Usage Worksheet</strong> from the <strong>Data</strong> tab, or add it as a source while searching data.</dd></dlentry>
 </dl>
 
 <h3><a id="may-cloud-developer"></a>For the Developer</h3>
