@@ -1,6 +1,6 @@
 ---
 title: ["Search Answers"]
-last_updated: 4/6/2021
+last_updated: 5/4/2021
 summary: "You search existing Answers and Pinboards to get correct information."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,9 +9,9 @@ permalink: /:collection/:path.html
 
 With Search Answers, you can search existing content in Answers and Pinboards to get the information you need. This complements Search Data, where users create new Answers and Pinboards.
 
-Another clear benefit of Search Answers is in how well it supports new users who are not familiar with the data in their organization. While Search Data is really intuitive, you must have some knowledge of the data, a basic working vocabulary for the data domain. So unless you know how to call the principal Metrics, Dimensions, and Groupings, it may be challenging to ask meaningful question.
+Search Answers supports new users who are not yet familiar with the data in their organization. Search Data is intuitive, but you must have some knowledge of the data, a basic working vocabulary for the data domain. When you first begin to work with your company's data, it may be challenging to ask meaningful questions, since you may not know the names of the principal metrics, dimensions, and groupings.
 
-Search Answers eliminates redundant work of constructing new Answers and Pinboards by finding what is already in the system, the result of your co-workers earlier queries. We now have a solution for leveraging these existing artifacts while eliminating lost productivity of duplicate work. And we also help you succeed the very first time you use ThoughtSpot.
+Search Answers eliminates redundant construction of new Answers and Pinboards by finding what is already in the system, the result of your co-workers' earlier queries. We now have a solution for leveraging these existing artifacts while eliminating lost productivity of duplicate work. And we also help you succeed the very first time you use ThoughtSpot.
 
 ## How to search Answers
 
@@ -31,7 +31,9 @@ Search Answers eliminates redundant work of constructing new Answers and Pinboar
 
    Select **Go** or click Enter on your keyboard.
 
-7. The list of results of your selection appear. You can sort these results by the following parameters:
+7. The list of results of your selection appear. Note that ThoughtSpot automatically selects the first result and opens the **Details** panel. This allows you to quickly glance at the metrics, groups, and filters for the Answer or Pinboard that ThoughtSpot determines is most useful for you.
+
+8. You can sort these results by the following parameters:
     - Relevance (default)
     - Number of views
     - Created date: latest first
@@ -60,7 +62,7 @@ Let us consider the `sales in the last year` example. This search returns matche
    - **Grouped by** fields
    - **Filtered by** fields
 
-2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filter by**, and **Group by**. For Pinboard results, the **Details** panel lists **Frequent Metrics** and **Frequent Groupings** for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
+2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filtered by**, and **Grouped by**. For Pinboard results, the **Details** panel lists **Frequent Metrics** and **Frequent Groupings** for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
 
 3. To see how the Answer appears as a chart, a table, or headline, click **Preview**, and notice the detail in the graph.
 
