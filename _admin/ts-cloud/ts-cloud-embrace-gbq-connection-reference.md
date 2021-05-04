@@ -1,5 +1,5 @@
 ---
-title: [Connection reference for Google BigQuery]
+title: [Connection reference for BigQuery]
 last_updated: 9/21/2020
 redirect_from:
 - /data-integrate/embrace/embrace-gbq-reference.html

@@ -1,5 +1,5 @@
 ---
-title: [Connect to Oracle Autonomous Data Warehouse]
+title: [Oracle Autonomous Data Warehouse overview]
 last_updated: 1/20/2021
 toc: true
 sidebar: mydoc_sidebar

@@ -15,6 +15,8 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
 - [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 
+{% include note.html content="Trino and Databrix are in beta and disabled by default. To enable either of these features, contact ThoughtSpot Support." %}
+
 ## How it works
 
 - Create a connection to the external database
@@ -30,23 +32,24 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - Centralize data management and governance in the external database.
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
+- Custom calendar available with Snowflake, Amazon Redshift, Google BigQuery, and Azure Synapse
 
 ## Limitations
 
 {% include important.html content="Embrace does not support joins across connections." %}
 
-## Feature availability in Connections on ThoughtSpot Cloud
+## Feature availability in Embrace on ThoughtSpot Cloud
 
 Here are the major features that are not currently available in Connections:
 
 - Spot IQ: Instant insights, Did you know?, Pinboard insights, Analyze
 - Monitor
-- Custom calendar
+- Custom calendar not available with Oracle ADW connections
 - Materialized views
 
-## Function availability in Connections on ThoughtSpot Cloud
+## Function availability in Embrace on ThoughtSpot Cloud
 
-The following matrix compares the specific function support across the different databases of Connections in ThoughtSpot Cloud. Functions not listed here have full support.
+The following matrix compares the specific function support across the different databases of Embrace in ThoughtSpot Cloud. Functions not listed here have full support.
 
 <table>
 <thead>
@@ -119,9 +122,9 @@ The following matrix compares the specific function support across the different
 </tbody>
 </table>
 
-## Data type availability in Connections on ThoughtSpot Cloud
+## Data type availability in Embrace on ThoughtSpot Cloud
 
-The following matrix captures the specific data type support limitations across the different databases of Connections. Data types not listed here have full support.
+The following matrix captures the specific data type support limitations across the different databases of Embrace. Data types not listed here have full support.
 
 <table>
   <thead>
@@ -181,7 +184,7 @@ The following list captures the specific limitations across the different databa
       <dl>
         <dlentry>
           <dt>Sample values</dt>
-          <dd>Connections does not internationalize sample values in tables.</dd></dlentry>
+          <dd>Embrace does not internationalize sample values in tables.</dd></dlentry>
         <dlentry>
            <dt>Delayed UI rendering</dt>
            <dd>For connections with a very large number of tables (on the order of 1000's of tables), UI rendering may take a very long time. These connections may time out.</dd></dlentry>

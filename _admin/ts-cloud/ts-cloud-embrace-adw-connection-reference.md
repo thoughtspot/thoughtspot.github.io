@@ -1,5 +1,5 @@
 ---
-title: [Connection reference for Oracle ADW]
+title: [Connection reference for ADW]
 last_updated: 1/20/2021
 toc: true
 sidebar: mydoc_sidebar
