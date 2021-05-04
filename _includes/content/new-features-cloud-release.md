@@ -53,3 +53,11 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 </dl>
 
 <h3><a id="may-cloud-developer"></a>For the Developer</h3>
+
+<dl>
+<dlentry id="api">
+<dt>Rest APIs</dt>
+<dd>The ThoughtSpot 7 Cloud May release introduces the following new REST APIs:
+<ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience. For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User API</a>.</li>
+<li><code>GET /tspublic/v1/metadata/listas</code><br> You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata API</a>.</li></ul></dd></dlentry>
+</dl>

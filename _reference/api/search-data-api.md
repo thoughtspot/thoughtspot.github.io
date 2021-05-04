@@ -1,6 +1,6 @@
 ---
 title: [Search Data API]
-last_updated: 4/1/2021
+last_updated: 5/4/2021
 summary: "To use the data retrieved from a search query programmatically, you can first query this data using the ThoughtSpot Search Data API."
 redirect_from:
 - /app-integrate/reference/search-data-api.html
@@ -30,7 +30,7 @@ In ThoughtSpot Query Language, the components of a query are classified into var
 <dlentry id="operator">
 <dt>Operator</dt>
 <dd> <p>
-ThoughtSpot supports various operators such as =, !=, &gt;, &gt;=, ⇐, &lt;, contains, not contains, and so on. Use these operators in the API query in the same manner as in the UI.
+ThoughtSpot supports various operators such as =, !=, &gt;, &gt;=, &lt;=, &lt;, contains, not contains, and so on. Use these operators in the API query in the same manner as in the UI.
 </p>
 <p>For example, specify revenue over 1000, and limit ship mode to 'air': </p>
 
@@ -219,6 +219,8 @@ To test the search query API, follow these steps:
 </table>
 
 ### Example requests
+
+{% include note.html content="The search data API allows you to pass the search query string as query parameters in the URL. Therefore, ThoughtSpot recommends that you append the query string to the URL, instead of using the `-d <data>` option to pass these parameters in your cURL requests." %}
 
 ##### cURL (COMPACT)
 
