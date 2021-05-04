@@ -1,7 +1,7 @@
 ---
 title: [Metadata API]
 summary: "Use the Metadata APIs to fetch ThoughtSpot visualization and object headers."
-last_updated: 3/30/2021
+last_updated: 5/5/2021
 redirect_from:
 - /app-integrate/reference/metadata-api.html
 sidebar: mydoc_sidebar
@@ -12,7 +12,7 @@ The metadata API service allows you to fetch metadata details for various object
 For example, you may want to see the visualization headers of a particular visualization or a pinboard.
 
 ## Get visualization headers      
-Use this API to get a list of visualization headers from the ThoughtSpot system.
+Use the `/tspublic/v1/metadata/listvizheaders` API to get a list of visualization headers from the ThoughtSpot system.
 The output includes a list of objects, each with information about the visualizations in a given pinboard or a search answer.
 
 ### Resource URL
@@ -79,7 +79,7 @@ https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/listvizheaders?id=97
 
 ## Get object headers
 
-Use this API to fetch a comprehensive list of metadata headers of a specific object type in the Thoughtspot system.
+Use the `/tspublic/v1/metadata/listobjectheaders` API to fetch a comprehensive list of metadata headers of a specific object type in the Thoughtspot system.
 
 ### Resource URL
 ```
@@ -104,65 +104,71 @@ GET /tspublic/v1/metadata/listobjectheaders
 <tr class="odd">
 <td style="text-align: left;"><p><code>type</code></p></td>
 <td style="text-align: left;"><p>string</p></td>
-<td style="text-align: left;"><p>Specifies the metadata object type. Valid values are:             
-
- <code>QUESTION_ANSWER_BOOK</code>        
- <code>PINBOARD_ANSWER_BOOK</code>       
- <code>QUESTION_ANSWER_SHEET</code>        
- <code>PINBOARD_ANSWER_SHEET</code>      
- <code>LOGICAL_COLUMN</code>    
- <code>LOGICAL_TABLE</code>    
- <code>LOGICAL_RELATIONSHIP</code>    
- <code>TAG</code>   
- <code>DATA_SOURCE</code></p></td>
+<td style="text-align: left;"><p>Specifies the metadata object type. Valid values are: </p>
+<ul>
+<li><p><code>QUESTION_ANSWER_BOOK</code></p></li>
+<li><p><code>PINBOARD_ANSWER_BOOK</code></p></li>
+<li><p><code>QUESTION_ANSWER_SHEET</code></p></li>
+<li><p><code>PINBOARD_ANSWER_SHEET</code></p></li>
+<li><p><code>LOGICAL_COLUMN</code></p></li>
+<li><p><code>LOGICAL_TABLE</code></p></li>
+<li><p><code>LOGICAL_RELATIONSHIP</code></p></li>
+<li><p><code>TAG</code></p></li>
+<li><p><code>DATA_SOURCE</code></p></li>
+</ul></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><p><code>subtypes</code></p></td>
 <td style="text-align: left;"><p>string</p></td>
-<td style="text-align: left;"><p>Specifies the sub-types of a metadata object. Valid values are:
+<td style="text-align: left;"><p>Specifies the sub-types of a metadata object. Valid values are:</p>
 
- <code>ONE_TO_ONE_LOGICAL</code>           
- <code>WORKSHEET</code>      
- <code>PRIVATE_WORKSHEET</code>
- <code>USER_DEFINED</code>       
- <code>AGGR_WORKSHEET</code></p>    
-<p>Note: This parameter only applies to the `LOGICAL_TABLE`.</p></td>
+<ul>
+<li><p><code>ONE_TO_ONE_LOGICAL</code></p></li>
+<li><p><code>WORKSHEET</code></p></li>
+<li><p><code>PRIVATE_WORKSHEET</code></p></li>
+<li><p><code>USER_DEFINED</code></p></li>
+<li><p><code>AGGR_WORKSHEET</code></p></li>
+</ul>
+<p>Note: This parameter only applies to the <code>LOGICAL_TABLE</code>.</p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><p><code>category</code></p></td>
 <td style="text-align: left;"><p>string</p></td>
-<td style="text-align: left;"><p>Specifies the metadata object category. Valid values are:  
-
-<code>ALL</code>     
-<code>MY</code>    
-<code>FAVORITE</code>   
-<code>REQUESTED</code></p></td>
+<td style="text-align: left;"><p>Specifies the metadata object category. Valid values are:</p>
+<ul>
+<li><p><code>ALL</code></p></li>
+<li><p><code>MY</code></p></li>
+<li><p><code>FAVORITE</code></p></li>
+<li><p><code>REQUESTED</code></p></li>
+</ul></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><p><code>sort</code></p></td>
 <td style="text-align: left;"><p>string</p></td>
-<td style="text-align: left;"><p>Sort order of returned headers. Valid values are:
+<td style="text-align: left;"><p>Sort order of returned headers. Valid values are:</p>
 
-<code>DEFAULT</code>          
-<code>NAME</code>   
-<code>DISPLAY_NAME</code>   
-<code>AUTHOR</code>    
-<code>CREATED</code>   
-<code>MODIFIED</code></p></td>  
+<ul>
+<li><p><code>DEFAULT</code></p></li>
+<li><p><code>NAME</code></p></li>
+<li><p><code>DISPLAY_NAME</code></p></li>
+<li><p><code>AUTHOR</code></p></li>
+<li><p><code>CREATED</code></p></li>
+<li><p><code>MODIFIED</code></p></li>
+</ul></td>  
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><p><code>sortascending</code></p></td>
 <td style="text-align: left;"><p>boolean</p></td>
-<td style="text-align: left;"><p>A flag to specify the sort order. A null value defines the default order.     
-
-To set an ascending order, specify <code>true</code>.
-
-To set a descending order, specify <code>false</code>.</p></td>
+<td style="text-align: left;"><p>A flag to specify the sort order. A null value defines the default order</p>
+<ul>
+<li><p>To set an ascending order, specify <code>true</code>.</p></li>
+<li><p>To set a descending order, specify <code>false</code>.</p></li>
+</ul></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><p><code>offset</code></p></td>
 <td style="text-align: left;"><p>integer</p></td>
-<td style="text-align: left;"><p>The batch offset to fetch the page headers. The system default is <code>-1</code> that implies the first page.</p></td>
+<td style="text-align: left;"><p>The batch offset to fetch the page headers. The system default is <code>-1</code>, which implies first page.</p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><p><code>batchsize</code></p></td>
@@ -177,7 +183,7 @@ To set a descending order, specify <code>false</code>.</p></td>
 <tr class="odd">
 <td style="text-align: left;"><p><code>pattern</code></p></td>
 <td style="text-align: left;"><p>string</p></td>
-<td style="text-align: left;"><p>A pattern to match for object name. Use `%`for wildcard match.</p></td>
+<td style="text-align: left;"><p>A pattern to match object name. Use <code>%</code> for wildcard match.</p></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><p><code>skipids</code></p></td>
@@ -256,3 +262,253 @@ https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/listobjectheaders?ty
 | HTTP Code | Description           |
 |-----------|-----------------------|
 | **200**   | Successful retrieval of metadata headers|
+
+## Get metadata objects for a user or user group
+
+Use the `/tspublic/v1/metadata/listas` API to get a list of metadata objects available for a ThoughtSpot user or user group.
+
+### Resource URL
+```
+GET /tspublic/v1/metadata/listas
+```
+### Request parameters
+
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 33%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Query Parameter</th>
+<th style="text-align: left;">Data Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p><code>offset</code> <em>Optional</em></p></td>
+<td style="text-align: left;"><p>integer</p></td>
+<td style="text-align: left;"><p>The batch offset value that indicates the first item to return in a page of headers. The system default is -1, which implies first page.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>batchsize</code> <em>Optional</em></p></td>
+<td style="text-align: left;"><p>integer</p></td>
+<td style="text-align: left;"><p>The batch size of the objects. A value of <code>-1</code> implies no pagination.</p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><code>pattern</code> <em>Optional</em></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>The pattern to match object names. Use <code>%</code> for a wildcard match.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>principalid</code> <em>Optional</em></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>ID of the user or user group.</p>
+<ul>
+<li><p>If you specify a userID and set the <code>type</code> parameter to <code>USER</code>, the API returns metadata objects associated with the user ID.</p></li>
+<li><p>If you specify a user group ID and set the type parameter to <code>USER_GROUP</code>, the API returns metadata objects for all the users mapped to the specified user group.</p></li>
+<li><p>If the <code>principalID</code> parameter is not defined, but the <code>type</code> attribute is set to <code>USER</code>, the API returns metadata objects for the current logged-in user.</p></li>
+<li><p>If the <code>principalID</code> parameter is not defined, but the <code>type</code> attribute is set to <code>USER_GROUP</code>, the API returns metadata objects for all user groups.</p></li>
+<li><p>If both <code>principalID</code> and <code>type</code> parameters are not defined, the API returns headers for all users.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><code>minimumaccesslevel</code><em>Optional</em></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>Minimum access level that the specified user or user group has.
+Valid values are:</p>
+<ul>
+<li><p><code>NO_ACCESS</code></p></li>
+<li><p><code>READ_ONLY</code></p></li>
+<li><p><code>MODIFY</code></p></li>
+</ul>
+<p>The default value is <code>NO_ACCESS</code>.</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><code>type</code> <em>Optional</em></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>Type of principal. The allowed values are <code>USER</code> and <code>USER_GROUP</code>.</p></td>
+</tr>
+</tbody>
+</table>
+
+### Example request
+
+<div class="formalpara-title">
+
+##### cURL
+
+</div>
+
+```
+curl -X GET --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/listas?offset=-1&pattern=%25&principalid=13bb9aec-aad0-4075-adb9-bd0569351393&minimumaccesslevel=READ_ONLY&type=USER'
+```
+
+<div class="formalpara-title">
+
+##### Request URL
+
+</div>
+
+    https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/listas?offset=-1&pattern=%25&principalid=13bb9aec-aad0-4075-adb9-bd0569351393&minimumaccesslevel=READ_ONLY&type=USER
+
+### Example response
+
+The following example shows the headers for user groups:
+
+```
+{
+  "headers": [
+    {
+      "id": "eea322db-2b8c-4bb7-922d-a80807a0ba94",
+      "indexVersion": 5,
+      "generationNum": 1471,
+      "name": "Stats and Trends for Search on Answers",
+      "description": "This pinboard describes how users are searching for existing answers.",
+      "author": "67e15c06-d153-4924-a4cd-ff615393b60f",
+      "authorName": "system",
+      "authorDisplayName": "System User",
+      "created": 1604579772176,
+      "modified": 1618858656671,
+      "modifiedBy": "67e15c06-d153-4924-a4cd-ff615393b60f",
+      "owner": "eea322db-2b8c-4bb7-922d-a80807a0ba94",
+      "isDeleted": false,
+      "isHidden": false,
+      "isAutoCreated": false,
+      "isAutoDelete": false,
+      "tags": [],
+      "isExternal": false,
+      "isDeprecated": false
+    },
+    {
+      "id": "9d789a9e-12a7-4b00-91de-e558b590d192",
+      "indexVersion": 1217,
+      "generationNum": 1217,
+      "name": "test table 2",
+      "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "authorName": "tsadmin",
+      "authorDisplayName": "Administrator",
+      "created": 1618463063893,
+      "modified": 1618463113058,
+      "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "owner": "9d789a9e-12a7-4b00-91de-e558b590d192",
+      "isDeleted": false,
+      "isHidden": false,
+      "isAutoCreated": false,
+      "isAutoDelete": false,
+      "tags": [],
+      "isExternal": false,
+      "isDeprecated": false
+    }
+  ],
+  "isLastBatch": true,
+  "debugInfo": {}
+}
+```
+
+The following example shows the headers returned for a user:
+
+```
+{
+  "headers": [
+    {
+      "id": "b27d4ce9-0220-4238-b0b0-917ee18147df",
+      "indexVersion": 1494,
+      "generationNum": 1494,
+      "name": "Sales Performance",
+      "description": "",
+      "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "authorName": "tsadmin",
+      "authorDisplayName": "Administrator",
+      "created": 1614677491805,
+      "modified": 1619648685627,
+      "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "owner": "b27d4ce9-0220-4238-b0b0-917ee18147df",
+      "isDeleted": false,
+      "isHidden": false,
+      "isAutoCreated": false,
+      "isAutoDelete": false,
+      "tags": [],
+      "isExternal": false,
+      "isDeprecated": false
+    },
+    {
+      "id": "8161e7ab-8ada-43ae-9627-f9b76dd85d27",
+      "indexVersion": 1490,
+      "generationNum": 1490,
+      "name": "Copy of Sales Performance",
+      "description": "",
+      "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "authorName": "tsadmin",
+      "authorDisplayName": "Administrator",
+      "created": 1619644750652,
+      "modified": 1619644750652,
+      "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "owner": "8161e7ab-8ada-43ae-9627-f9b76dd85d27",
+      "isDeleted": false,
+      "isHidden": false,
+      "isAutoCreated": false,
+      "isAutoDelete": false,
+      "tags": [],
+      "isExternal": false,
+      "isDeprecated": false
+    },
+    {
+      "id": "eea322db-2b8c-4bb7-922d-a80807a0ba94",
+      "indexVersion": 5,
+      "generationNum": 1471,
+      "name": "Stats and Trends for Search on Answers",
+      "description": "This pinboard describes how users are searching for existing answers. It provides what users are searching for, where users are successful and where they are not.",
+      "author": "67e15c06-d153-4924-a4cd-ff615393b60f",
+      "authorName": "system",
+      "authorDisplayName": "System User",
+      "created": 1604579772176,
+      "modified": 1618858656671,
+      "modifiedBy": "67e15c06-d153-4924-a4cd-ff615393b60f",
+      "owner": "eea322db-2b8c-4bb7-922d-a80807a0ba94",
+      "isDeleted": false,
+      "isHidden": false,
+      "isAutoCreated": false,
+      "isAutoDelete": false,
+      "tags": [],
+      "isExternal": false,
+      "isDeprecated": false
+    },
+
+    {
+      "id": "7e4071e5-6223-4ccd-a839-2621e5d8201e",
+      "indexVersion": 1230,
+      "generationNum": 1470,
+      "name": "Sales Breakdown",
+      "description": "",
+      "author": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "authorName": "tsadmin",
+      "authorDisplayName": "Administrator",
+      "created": 1618469015915,
+      "modified": 1618469413741,
+      "modifiedBy": "59481331-ee53-42be-a548-bd87be6ddd4a",
+      "owner": "7e4071e5-6223-4ccd-a839-2621e5d8201e",
+      "isDeleted": false,
+      "isHidden": false,
+      "isAutoCreated": false,
+      "isAutoDelete": false,
+      "tags": [],
+      "isExternal": false,
+      "isDeprecated": false
+    },
+
+  ],
+  "isLastBatch": true,
+  "debugInfo": {}
+}
+```
+
+### Response codes
+
+| HTTP Code | Description                                  |
+|-----------|----------------------------------------------|
+| **200**   | Successful retrieval of metadata headers |
+| **401**   | Unauthorized request                         |
+| **404**   | The requested resource could not be found    |
