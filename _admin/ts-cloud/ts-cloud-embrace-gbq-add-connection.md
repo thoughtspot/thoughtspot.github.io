@@ -5,6 +5,8 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Before you can create a connection, you must create a custom role. For more information, see [Prerequisites]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-prerequisites.html)
+
 To connect to BigQuery:
 
 1. Click **Data** in the top navigation bar.

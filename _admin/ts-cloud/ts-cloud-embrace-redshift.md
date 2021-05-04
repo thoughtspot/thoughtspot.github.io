@@ -1,11 +1,11 @@
 ---
-title: [Connect to Amazon Redshift]
+title: [Amazon Redshift Overview]
 last_updated: 8/7/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can connect to an Amazon Redshift database in ThoughtSpot Cloud, and proceed to perform live queries to create Answers and Pinboards.
+You can connect to an Amazon Redshift database in ThoughtSpot Cloud, and perform live queries to create Answers and Pinboards.
 
 - [Add an Amazon RedShift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-add-connection.html)
 - [Edit an Amazon Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-edit-connection.html)
