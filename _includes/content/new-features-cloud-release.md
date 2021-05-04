@@ -31,6 +31,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd>You can now add important metrics to your watchlist and track them from the home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page metrics</a>.</dd>
 </dlentry>
 
+<dlentry id="automatic-select">
+<dt>Automatic selection of first search result</dt>
+<dd>When you search across existing Answers and Pinboards, ThoughtSpot now automatically selects the first result and opens the <strong>Details</strong> panel. This allows you to quickly glance at the details for the result that ThoughtSpot determines is most useful for you. You can see the metrics, groups, and filters for the Answer or Pinboard, and easily find out if that object answers your question.</dd>
+</dlentry>
+
 <dlentry id="latency">
 <dt>Improvements in indexing latency for Search Answers</dt>
 <dd>This release improves indexing latency to less than 10 minutes (less than 5 in most cases), from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes.</dd></dlentry>
