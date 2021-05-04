@@ -32,7 +32,7 @@ file. If you want to use a CSV (comma separated values) or delimited file, or
 you are loading using ThoughtSpot Loader, you must
 [create CSV files with the data to be loaded](load-from-web-browser.html#create-a-csv-file) first.
 
-{% include warning.html content="Use secondary disks or your NAS bucket for dataloads. Do NOT use <code>/home/admin</code> or <code>/export/home/admin</code>." %}
+{% include warning.html content="Use secondary disks or your NAS or bucket for dataloads. Do NOT use the primary disk, at locations such as <code>/tmp</code>, <code>/home/admin</code>, or <code>/export/home/admin</code>." %}
 
 ## Related Information
 
