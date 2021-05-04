@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot checks for dependencies whenever you try to remove a table in a connection. ThoughtSpot shows a list of dependent objects, and you can click them to delete them or remove the dependency. Then you can remove the table.
+Whenever you try to remove a table in a connection, ThoughtSpot checks for dependencies and shows a list of dependent objects. You can click the listed objects to delete them or remove the dependency. Then you can remove the table.
 
 To delete a table:
 

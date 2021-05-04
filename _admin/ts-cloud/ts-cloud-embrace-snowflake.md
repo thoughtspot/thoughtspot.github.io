@@ -1,5 +1,5 @@
 ---
-title: [Connect to Snowflake]
+title: [Snowflake Overview]
 last_updated: 10/1/2020
 toc: true
 sidebar: mydoc_sidebar

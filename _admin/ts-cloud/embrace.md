@@ -13,8 +13,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Amazon Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html)
 - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
-
-{% include note.html content="Oracle Autonomous Data Warehouse is in beta and disabled by default. To enable this feature, contact ThoughtSpot Support." %}
+- [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 
 ## How it works
 
@@ -34,7 +33,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 
 ## Limitations
 
-{% include important.html content="Connections does not support joins across connections." %}
+{% include important.html content="Embrace does not support joins across connections." %}
 
 ## Feature availability in Connections on ThoughtSpot Cloud
 

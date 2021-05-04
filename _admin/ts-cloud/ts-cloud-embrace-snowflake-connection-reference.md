@@ -7,19 +7,18 @@ redirect_from:
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-Learn about the fields used to create a Snowflake connection in ThoughtSpot. You need specific information to establish a seamless and secure connection.
+You need specific information to establish a seamless and secure connection. The following fields are required, except where noted.
 
 <dl>
   <dlentry id="snowflake-connection-name">
     <dt>Connection name</dt>
-    <dd>Enter a new Snowflake connection name.<br/>Mandatory field.</dd></dlentry>
+    <dd>Enter a new Snowflake connection name.</dd></dlentry>
   <dlentry id="snowflake-connection-description">
       <dt>Connection description</dt>
-      <dd>Provide a short description of the connection.<br/>Optional field.</dd></dlentry>
+      <dd>Provide a short description of the connection.<i> (Optional)</i></dd></dlentry>
   <dlentry id="snowflake-account-name">
       <dt>Account name</dt>
-      <dd>Enter the account name associated with the Snowflake connection.<br/>Mandatory field.</dd>
+      <dd>Enter the account name associated with the Snowflake connection.</dd>
       <dd>The account name is part of the URL that you use to access the Snowflake UI. It is the portion of the URL before <strong>snowflakecomputing.com</strong>.</dd>
       <dd id="example"><strong><em>Example</em></strong>: If your URL is <strong>https://abcd.xyz.efg.snowflakecomputing.com</strong>, your account name is <strong>abcd.xyz.efg</strong>.</dd>
       <dd id="guidelines"><p>If you cannot find your <strong>Full account name</strong> in Snowflake, see the following examples for determining your account based on the account name, cloud platform, and region. Assume that the <strong>account name</strong> is <em>xy12345</em>.</p>
@@ -99,22 +98,22 @@ Learn about the fields used to create a Snowflake connection in ThoughtSpot. You
       </dlentry>
     <dlentry id="snowflake-user">
       <dt>User</dt>
-      <dd>Enter the Snowflake account username.<br/>Mandatory field.</dd></dlentry>  
+      <dd>Enter the Snowflake account username.</dd></dlentry>  
     <dlentry id="snowflake-password">
       <dt>Password</dt>
-      <dd>Enter the Snowflake account password.<br/>Mandatory field.</dd></dlentry>
+      <dd>Enter the Snowflake account password.</dd></dlentry>
     <dlentry id="snowflake-role">
       <dt>Role</dt>
-      <dd>Specify the privilege of the user.<br/>Mandatory field.</dd></dlentry>
+      <dd>Specify the privilege of the user.</dd></dlentry>
     <dlentry id="snowflake-warehouse">
       <dt>Warehouse</dt>
-      <dd>Specify the warehouse associated with the connection.<br/>Mandatory field.</dd></dlentry>  
+      <dd>Specify the warehouse associated with the connection.</dd></dlentry>  
     <dlentry id="snowflake-database">
       <dt>Database</dt>
-      <dd>Specify the database associated with the account.<br/>Optional field.</dd></dlentry>  
+      <dd>Specify the database associated with the account.<i> (Optional)</i></dd></dlentry>  
   <dlentry id="snowflake-schema">
       <dt>Schema</dt>
-      <dd>Specify the schema associated with the database.<br/>Optional field.</dd></dlentry>
+      <dd>Specify the schema associated with the database.<i> (Optional)</i></dd></dlentry>
   <dlentry id="snowflake-oauth-client-id">
       <dt>OAuth</dt>
       <dd>Enter the OAuth client ID associated with the Snowflake database.</dd>

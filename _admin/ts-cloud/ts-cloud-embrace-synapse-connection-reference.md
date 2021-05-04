@@ -1,14 +1,12 @@
 ---
 title: [Connection reference for Azure Synapse]
 last_updated: 9/21/2020
-summary: Learn about the fields used to create a BigQuery connection in ThoughtSpot.
 redirect_from:
 - /data-integrate/embrace/embrace-synapse-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-Learn about the fields used to create and modify an Azure Synapse connection in ThoughtSpot. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
+You need specific information to establish a seamless and secure connection. The following fields are required, except where noted.
 
 <dl id="embrace-synapse-ref">
   <dlentry id="embrace-synapse-ref-connection-name">
