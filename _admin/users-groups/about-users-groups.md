@@ -1,7 +1,7 @@
 ---
 title: ["Understand groups and privileges"]
 
-last_updated: tbd
+last_updated: 5/4/2021
 summary: "Creating groups and assigning users to them makes privilege management easier."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,11 +9,8 @@ permalink: /:collection/:path.html
 Before people can log in and use ThoughtSpot, you need to create a username, a
 password, and a membership in one or more groups for them.
 
-Before people can log in and use ThoughtSpot, you need to create a username, a
-password, and a membership in one or more groups for them.
-
 This page describes manual creation of users, groups, and privileges, but you
-can also manage users through SAML. 
+can also manage users through SAML.
 
 ## Privileges and groups
 
