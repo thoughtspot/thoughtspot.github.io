@@ -1,5 +1,5 @@
 ---
-title: [Connect to Azure Synapse]
+title: [Azure Synapse overview]
 last_updated: 8/11/2020
 toc: true
 sidebar: mydoc_sidebar

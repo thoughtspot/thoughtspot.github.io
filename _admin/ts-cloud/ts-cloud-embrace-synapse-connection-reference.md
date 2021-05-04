@@ -1,5 +1,5 @@
 ---
-title: [Connection reference for Azure Synapse]
+title: [Connection reference for Synapse]
 last_updated: 9/21/2020
 redirect_from:
 - /data-integrate/embrace/embrace-synapse-reference.html

@@ -1,5 +1,5 @@
 ---
-title: [Connect to Google BigQuery]
+title: [Google BigQuery overview]
 last_updated: 1/12/2020
 toc: true
 sidebar: mydoc_sidebar

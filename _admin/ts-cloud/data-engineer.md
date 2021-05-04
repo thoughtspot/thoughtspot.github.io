@@ -1,7 +1,7 @@
 ---
 title: [For Data Engineers]
-last_updated: 8/6/2020
-summary: "Your role is to establish connections to data. Here is how you can connect to all your data, fast."
+last_updated: 4/4/2021
+summary: "Your role is to establish connections to data. Here is how you can connect to all your data."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

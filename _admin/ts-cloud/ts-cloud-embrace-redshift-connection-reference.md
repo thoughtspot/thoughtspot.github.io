@@ -1,5 +1,5 @@
 ---
-title: [Connection reference for Amazon Redshift]
+title: [Connection reference for Redshift]
 last_updated: 8/11/2020
 toc: true
 redirect_from:
