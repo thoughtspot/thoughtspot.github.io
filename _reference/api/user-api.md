@@ -154,7 +154,7 @@ POST /tspublic/v1/user/updatepassword
 ##### cURL
 
 ```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest¤tpassword=test&password=foobarfoobar' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/updatepassword'
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest&currentpassword=test&password=foobarfoobar' 'https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/updatepassword'
 ```
 ##### Request URL
 ```
