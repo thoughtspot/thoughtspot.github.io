@@ -1,14 +1,14 @@
 ---
 title: [Sync users and groups from LDAP]
 last_updated: 5/5/2021
-summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory."
+summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory or OpenLDAP."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot provides a script that allows you to sync your Active Directory users and groups within ThoughtSpot so you can assign the proper privileges. You can sync new users who are assigned to existing ThoughtSpot groups within Active Directory, programmatically assigning them the privileges of those groups. When you sync new groups, you must manually assign them privileges in the ThoughtSpot [group administration interface]({{ site.baseurl }}/admin/ts-cloud/groups.html).
+ThoughtSpot provides a script that allows you to sync your Active Directory or OpenLDAP users and groups within ThoughtSpot so you can assign the proper privileges. You can sync new users who are assigned to existing ThoughtSpot groups within Active Directory or OpenLDAP, programmatically assigning them the privileges of those groups. When you sync new groups, you must manually assign them privileges in the ThoughtSpot [group administration interface]({{ site.baseurl }}/admin/ts-cloud/groups.html).
 
-This Active Directory sync script is not the same as LDAP authentication. However, if your [SAML SSO]({{ site.baseurl }}/admin/ts-cloud/authentication-integration) is properly set up, and your IdP is synced with your LDAP, new AD users that you add using this script can authenticate using SAML SSO.
+This Active Directory or OpenLDAP sync script is not the same as LDAP authentication. However, if your [SAML SSO]({{ site.baseurl }}/admin/ts-cloud/authentication-integration) is properly set up, and your IdP is synced with your LDAP, new AD or OpenLDAP users that you add using this script can authenticate using SAML SSO.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before synchronizing users and groups, collect the following information and mat
 
 - Download the [LDAP sync script ADD LINK](LINK){: target="_blank"} from ThoughtSpot's community tools Github repository. Modify it or create your own as necessary.
 
-- A machine with access to your Active Directory environment.
+- A machine with access to your Active Directory or OpenLDAP environment.
 
 -   IP address and port of the server where your ThoughtSpot instance is running.
 
@@ -36,7 +36,7 @@ Before synchronizing users and groups, collect the following information and mat
 
     For example, `DC=ldap,DC=thoughtspot,DC=com`
 
-## Fetch users and groups from LDAP with Active Directory
+## Fetch users and groups from LDAP with Active Directory or OpenLDAP
 
 There are two ways for you to fetch users and groups from LDAP and populate them
 into your ThoughtSpot system:
@@ -50,7 +50,7 @@ into your ThoughtSpot system:
 
 To run the LDAP sync script in interactive mode:
 
-2. Run the command to start the script. You must run this command from a machine that you downloaded the script onto. The machine must also have access to your Active Directory environment.
+2. Run the command to start the script. You must run this command from a machine that you downloaded the script onto. The machine must also have access to your Active Directory or OpenLDAP environment.
 
     ```
     python3 syncUsersAndGroups.py interactive
@@ -144,15 +144,15 @@ The following table provides a description of each command-line switch available
         </tr>
 		<tr>
 	      <td><code>--ldap_hostport</code></td>
-	      <td>AD/LDAP server port that is queried. Default is 389.</td>
+	      <td>AD/LDAP/OpenLDAP server port that is queried. Default is 389.</td>
         </tr>
 		<tr>
 	      <td><code>--ldap_uname</code></td>
-	      <td>Username for the LDAP/AD server.</td>
+	      <td>Username for the LDAP/AD/OpenLDAP server.</td>
         </tr>
 		<tr>
 	      <td><code>--ldap_pass &lt;ldap_password&gt;</code></td>
-	      <td>Password for the LDAP/AD server.</td>
+	      <td>Password for the LDAP/AD/OpenLDAP server.</td>
         </tr>
 		<tr>
 	      <td><code>--sync</code></td>
@@ -160,7 +160,7 @@ The following table provides a description of each command-line switch available
         </tr>
 		<tr>
 	      <td><code>--purge</code></td>
-	      <td>Purges any users that exist in ThoughtSpot, but not in AD.</td>
+	      <td>Purges any users that exist in ThoughtSpot, but not in AD or OpenLDAP.</td>
         </tr>
 		<tr>
 	      <td><code>--basedn</code></td>
@@ -172,7 +172,7 @@ The following table provides a description of each command-line switch available
         </tr>
 		<tr>
 	      <td><code>--include_nontree_members</code></td>
-	      <td>Includes group members from LDAP/AD even if they do not belong to the current subtree that is being synced.</td>
+	      <td>Includes group members from LDAP/AD/OpenLDAP even if they do not belong to the current subtree that is being synced.</td>
         </tr>
     <tr>
         <td><code>--user_identifier &lt;user_identifier&gt;</code></td>
