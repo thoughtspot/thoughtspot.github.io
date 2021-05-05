@@ -16,7 +16,7 @@ To manage groups, navigate to the Admin Console by clicking on the **Admin** tab
 
 You can use the Admin Console to accomplish the following tasks:
 * **Create a group** by clicking on the **+ add group** button
-* **Manage an existing group** by clicking on the group you would like to edit: change the group's default Pinboard, add an existing group to the group, add a user to the group, or resend or test the welcome email
+* **Manage an existing group** by clicking on the group you would like to edit: change the group's default Pinboard, add an existing group to the group, add a user to the group, modify the group's privileges, or resend or test the welcome email
 * **Delete a group** by hovering over a group name, clicking the checkbox that appears, and selecting the **Delete** button
 
 ## Related information
