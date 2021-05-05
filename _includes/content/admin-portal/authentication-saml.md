@@ -26,6 +26,8 @@ If you choose 'no', then SAML users will not be added in ThoughtSpot upon first 
 
 After you fill in all parameters, click **OK**.
 
+Next, download ThoughtSpot's metadata file, `spring_saml_metadata.xml`. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata`. The file automatically downloads. Upload or copy the contents of the `spring_saml_metadata.xml` to your IdP server. Open a Web browser and go to the ThoughtSpot login page. It should now show the Single Sign On option.
+
 {% include note.html content="ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. This group has no privileges. You must manually assign users to ThoughtSpot groups to give them privileges, such as <strong>can upload user data</strong>, or <strong>can manage data</strong>." %}
 
 ## Additional resources

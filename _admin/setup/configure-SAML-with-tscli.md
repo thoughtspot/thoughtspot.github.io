@@ -81,7 +81,10 @@ To set up SAML on ThoughtSpot for user authentication, follow these steps:
 
 3. Complete the configurator prompts with the information you collected in [Configuration prerequisites](#prerequisites).
 
-4. When the configuration completes, open a browser and navigate to the ThoughtSpot login page. It should show the SSO option.
+4. When the configuration is complete, download ThoughtSpot's metadata file, `spring_saml_metadata.xml`. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata`. The file automatically downloads.
+5. Upload or copy the contents of the `spring_saml_metadata.xml` to your IdP server.
+4. Open a Web browser and go to the ThoughtSpot login page.
+   It should now show the Single Sign On option.
 
 {: id="admin-portal"}
 ## Configure SAML using the Admin Console
