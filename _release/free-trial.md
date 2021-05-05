@@ -1,12 +1,60 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 04/28/2021
+last_updated: 05/05/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-## April 28, 2021 
+## May 5, 2021
+
+{: id="schedule-meeting"}
+### Schedule time with product experts
+
+To improve your product experience, we have added a feature to schedule one-on-one meetings with product experts. Now, when you run into an error or have a question about the product, you can reach out for help without ever leaving your page.
+
+To schedule a meeting, click *Book 1:1 expert help* at the top of the page. Choose a time within the calendar that appears, and enter your name and email before clicking *Confirm Booking*. Once confirmed, you will receive a link to your Zoom meeting.
+
+![]({{ site.baseurl }}/images/free-trial-expert-calendar.png "Book 1:1 expert help")
+
+![]({{ site.baseurl }}/images/free-trial-confirm-meeting.png "Confirm meeting with product expert")
+
+{: id="whats-new-with-free-trial"}
+### What’s New with Free Trial
+
+We have added a "What’s New" section to the ThoughtSpot Information Center menu. This section will highlight important features for different user personas and create excitement within the customer’s deployment. Now, you can see new features by clicking on the *help* icon ![]({{ site.baseurl }}/images/icon-help-10-px.png "Help icon"){: .inline} when the red notification appears. You can click *Learn More* to check out the documentation of the feature, or test for yourself by clicking *Try it now*.
+
+![]({{ site.baseurl }}/images/free-trial-whats-new.png "What’s New on Free Trial")
+
+{: id="invite-others"}
+### Free Trial invitation process simplified
+
+Starting with the May 5th Free Trial release, we have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox.
+
+To invite a teammate to Free Trial, simply navigate to the *Setup* tab and click *Invite others* at the bottom of the screen.
+
+![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
+
+{: id="duplicate-column-names-highlighted"}
+### Worksheet duplicate column names error
+
+ThoughtSpot does not allow you to add multiple columns with the same name when creating a Worksheet. In order to prevent column duplicate errors, you will now see duplicate column names highlighted in the Worksheet creation page before you save. Previously, the *Cannot add duplicate column names* error message did not specify which column name was a duplicate. We believe all analysts, including those on Free Trial, will love this enhancement.
+
+![]({{ site.baseurl }}/images/free-trial-duplicate-columns.png "Duplicate columns error message")
+
+{: id="add-snowflake-connection"}
+### Add a Snowflake connection
+
+We have made the following changes to simplify the process of adding a Snowflake connection:
+
+* Users are directed to use Service Account by default. Previously, *Use OAuth* was the default option, which confused new analysts.
+* Users see a reminder that the Snowflake database name is case-sensitive.
+* Users see a connection creation checklist for Snowflake.
+
+![]({{ site.baseurl }}/images/free-trial-add-snowflake-connection.png "Updates to Snowflake connection page")
+
+
+## April 28, 2021
 
 {: id="countdown"}
 ### Free Trial Countdown
