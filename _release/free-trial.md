@@ -26,6 +26,8 @@ We have added a "What’s New" section to the ThoughtSpot Information Center men
 
 ![]({{ site.baseurl }}/images/free-trial-whats-new.png "What’s New on Free Trial")
 
+![]({{ site.baseurl }}/images/free-trial-learn-more.png "Learn more about new features")
+
 {: id="invite-others"}
 ### Free Trial invitation process simplified
 
