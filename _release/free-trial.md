@@ -13,7 +13,7 @@ permalink: /:collection/:path.html
 
 To improve your product experience, we have added a feature to schedule one-on-one meetings with product experts. Now, when you run into an error or have a question about the product, you can reach out for help without ever leaving your page.
 
-To schedule a meeting, click *Book 1:1 expert help* at the top of the page. Choose a time within the calendar that appears, and enter your name and email before clicking *Confirm Booking*. Once confirmed, you will receive a link to your Zoom meeting.
+To schedule a meeting, click **Book 1:1 expert help** at the top of the page. Choose a time within the calendar that appears, and enter your name and email before clicking **Confirm Booking**. Once confirmed, you will receive a link to your Zoom meeting.
 
 ![]({{ site.baseurl }}/images/free-trial-expert-calendar.png "Book 1:1 expert help")
 
@@ -22,25 +22,26 @@ To schedule a meeting, click *Book 1:1 expert help* at the top of the page. Choo
 {: id="whats-new-with-free-trial"}
 ### What’s New with Free Trial
 
-We have added a "What’s New" section to the ThoughtSpot Information Center menu. This section will highlight important features for different user personas and create excitement within the customer’s deployment. Now, you can see new features by clicking on the *help* icon ![]({{ site.baseurl }}/images/icon-help-10-px.png "Help icon"){: .inline} when the red notification appears. You can click *Learn More* to check out the documentation of the feature, or test for yourself by clicking *Try it now*.
+We have added a "What’s New" section to the ThoughtSpot Information Center menu. This section will highlight important features for different user personas and create excitement within the customer’s deployment. Now, you can see new features by clicking on the **help** icon ![]({{ site.baseurl }}/images/icon-help-10-px.png "Help icon"){: .inline} when the red notification appears. You can click **Learn More** to check out the documentation of the feature, or test for yourself by clicking **Try it now**.
 
 ![]({{ site.baseurl }}/images/free-trial-whats-new.png "What’s New on Free Trial")
 
 ![]({{ site.baseurl }}/images/free-trial-learn-more.png "Learn more about new features")
 
-{: id="invite-others"}
+<!--{: id="invite-others"}
 ### Free Trial invitation process simplified
 
-Starting with the May 5th Free Trial release, we have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox.
+We have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox.
 
-To invite a teammate to Free Trial, simply navigate to the *Setup* tab and click *Invite others* at the bottom of the screen.
+To invite a teammate to Free Trial, simply navigate to the **Setup** tab and click **Invite others** at the bottom of the screen.
 
 ![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
+-->
 
 {: id="duplicate-column-names-highlighted"}
 ### Worksheet duplicate column names error
 
-ThoughtSpot does not allow you to add multiple columns with the same name when creating a Worksheet. In order to prevent column duplicate errors, you will now see duplicate column names highlighted in the Worksheet creation page before you save. Previously, the *Cannot add duplicate column names* error message did not specify which column name was a duplicate. We believe all analysts, including those on Free Trial, will love this enhancement.
+ThoughtSpot does not allow you to add multiple columns with the same name when creating a Worksheet. In order to prevent column duplicate errors, you will now see duplicate column names highlighted in the Worksheet creation page before you save. Previously, the **Cannot add duplicate column names** error message did not specify which column name was a duplicate. We believe all analysts, including those on Free Trial, will love this enhancement.
 
 ![]({{ site.baseurl }}/images/free-trial-duplicate-columns.png "Duplicate columns error message")
 
@@ -49,7 +50,7 @@ ThoughtSpot does not allow you to add multiple columns with the same name when c
 
 We have made the following changes to simplify the process of adding a Snowflake connection:
 
-* Users are directed to use Service Account by default. Previously, *Use OAuth* was the default option, which confused new analysts.
+* Users are directed to use Service Account by default. Previously, **Use OAuth** was the default option, which confused new analysts.
 * Users see a reminder that the Snowflake database name is case-sensitive.
 * Users see a connection creation checklist for Snowflake.
 
@@ -61,7 +62,7 @@ We have made the following changes to simplify the process of adding a Snowflake
 {: id="countdown"}
 ### Free Trial Countdown
 
-We have added a white banner to the top of the screen to count down users’ remaining days on Free Trial. The countdown banner turns yellow once you have reached your final week on Free Trial. At any time, you can click *Upgrade now* to upgrade to a paid account. The *Upgrade now* link takes you to Intercom to connect to ThoughtSpot.
+We have added a white banner to the top of the screen to count down users’ remaining days on Free Trial. The countdown banner turns yellow once you have reached your final week on Free Trial. At any time, you can click **Upgrade now** to upgrade to a paid account. The **Upgrade now** link takes you to Intercom to connect to ThoughtSpot.
 
 ![]({{ site.baseurl }}/images/free-trial-countdown-banner-7.png "7-day countdown for Free Trial")
 
@@ -75,7 +76,7 @@ We have simplified the steps to add a Snowflake connection. When prompted to ent
 {: id="thoughtspot-connections"}
 ### ThoughtSpot connections
 
-We have renamed ThoughtSpot Embrace to Connections within the product. Now, Free Trial users can access Connections by clicking *Connections* on the *Data* page. Functions like `sql_int_op` that were previously available under *Embrace passthrough* are now available under *Connection passthrough*.
+We have renamed ThoughtSpot Embrace to Connections within the product. Now, Free Trial users can access Connections by clicking **Connections** on the **Data** page. Functions like `sql_int_op` that were previously available under **Embrace passthrough** are now available under **Connection passthrough**.
 
 ![]({{ site.baseurl }}/images/free-trial-data-connections.png "Data Connections page")
 
