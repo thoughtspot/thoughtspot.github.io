@@ -65,4 +65,4 @@ administrator has configured the fiscal calendar to start in May.
 
 * [Date functions]({{ site.baseurl }}/reference/formula-reference.html#date-functions) in the [Formula function reference]({{ site.baseurl }}/reference/formula-reference.html#)
 
-* [Set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#)
+* [Create a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html#)

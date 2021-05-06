@@ -48,12 +48,19 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="embrace-adw">
 <dt>Oracle ADW for Embrace</dt>
-<dd>In this release, Oracle Autonomous Data Warehouse (ADW) is GA. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html">Oracle ADW overview</a>. </dd></dlentry>
+<dd>In this release, Oracle Autonomous Data Warehouse (ADW) is GA. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html">Oracle ADW</a>. </dd></dlentry>
 
 <dlentry id="embrace-custom-calendar">
 <dt>Custom calendar for Embrace</dt>
 <dd>In this release, custom calendar is available for Snowflake connections in Embrace. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry>
 
+<dlentry id="embrace-databrix">
+<dt>Databrix for Embrace</dt>
+<dd>Embrace now supports Databrix. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd></dlentry>
+
+<dlentry id="embrace-trino">
+<dt>Starburst Trino for Embrace</dt>
+<dd>Embrace now supports Starburst Trino. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd></dlentry>
 
 <h3><a id="may-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 

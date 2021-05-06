@@ -1,7 +1,7 @@
 ---
 title: [Update a custom calendar]
 last_updated: 5/5/2021
-toc: true
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -14,6 +14,7 @@ Examples of things you can change:
 - Starting dates of quarters
 - Starting day of the month
 - Starting day of the week
+- Separator used in the calendar
 
 ## Updating a custom calendar
 
@@ -54,3 +55,10 @@ To update a custom calendar, do the following:
 13. Click {% include button.html content="Update" %}.
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
+
+## Related information
+
+[Create a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html#)   
+[Delete a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html#)   
+[Custom calendar overview]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html#)   
+[Fiscal and Gregorian calendars]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars)      
