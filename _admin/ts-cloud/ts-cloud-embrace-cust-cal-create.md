@@ -32,11 +32,11 @@ To create a custom calendar, do the following:
 
    {% include note.html content="The calendar name must be unique in the cluster." %}
 
-5. Click the **Choose Connection** menu, and select the connection that contains the database with which you want to use your custom calendar.
+5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
-6. For Database, click the **Choose a database** menu, and select the database with which you want to use your custom calendar.
+6. For Database, click the **Choose a database** menu, and select the database you want to use with your custom calendar.
 
-7. For Schema, click the **Choose a schema** menu, and select the schema with which you want to use your custom calendar.
+7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your custom calendar.
 
 8. Make sure **Create new** is selected.
 
@@ -58,7 +58,7 @@ To create a custom calendar, do the following:
 
 14. For Start day of the week, click the **Choose start day** menu and select a day.
 
-15. For Quarter name prefix, enter the prefix you'd like to use quarter numbers.
+15. For Quarter name prefix, enter the prefix you'd like to use for quarter numbers.
 
     Example: *Q*
 
