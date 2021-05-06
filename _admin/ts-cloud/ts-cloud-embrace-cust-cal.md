@@ -43,3 +43,9 @@ You can use your custom calendar to search the following ways:
 - Before you can create a custom calendar, you must contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable the custom calendar feature on your cluster.
 
 - For a user to create a custom calendar, they must have the required permissions to create a table in the Snowflake database used in the connection where they want to create their custom calendar.
+
+## Related information
+
+[Create a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html#)  
+[Update a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html#)  
+[Delete a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html#)   
