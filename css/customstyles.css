@@ -1525,6 +1525,8 @@ img.inline {
     display: inline;
 }
 
+/* new button styles for TS ui buttons */
+
 kbd-2 {
     padding: 2px 4px;
     font-size: 100%;
