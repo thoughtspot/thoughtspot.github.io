@@ -11,7 +11,7 @@ permalink: /:collection/:path.html
 {: id="schedule-meeting"}
 ### Schedule time with product experts
 
-To improve your product experience, we have added a feature to schedule one-on-one meetings with product experts. Now, when you run into an error or have a question about the product, you can reach out for help without ever leaving your page. 
+To improve your product experience, we have added a feature to schedule one-on-one meetings with product experts. Now, when you run into an error or have a question about the product, you can reach out for help without ever leaving your page.
 
 To schedule a meeting, click **Book 1:1 expert help** at the top of the page. Choose a time within the calendar, and enter your name and email before clicking **Confirm Booking**. After confirmation, you will receive a link to your Zoom meeting.
 
