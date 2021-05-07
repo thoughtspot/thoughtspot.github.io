@@ -40,6 +40,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dt>Improvements in indexing latency for Search Answers</dt>
 <dd>This release improves indexing latency to less than 10 minutes (less than 5 in most cases), from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes.</dd></dlentry>
 
+<dlentry id="deprecations">
+<dt>Deprecations</dt>
+<dd>The following features are unavailable in the May cloud release:
+<ul><li>The home page shortcuts for Answers and Pinboards feature is no longer available. Instead, you can <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">add important metrics from Pinboards to your watchlist</a> and track them from the home page.</li></ul>
+{% include content/new-answer-experience-deprecations.md %}</dd></dlentry>
+
 </dl>
 
 <h3><a id="may-cloud-data-engineer"></a>For the Data Engineer</h3>
