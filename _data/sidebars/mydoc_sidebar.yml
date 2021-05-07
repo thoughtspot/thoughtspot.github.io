@@ -1025,7 +1025,7 @@ entries:
         url: /app-integrate/SAML/about-SAML-integrations.html
         output: web,apgBk
       - title: Configure SAML
-        url: /app-integrate/SAML/configure-SAML-with-tscli.html
+        url: /admin/setup/configure-SAML-with-tscli.html
         output: web,apgBk
       - title: Configure CA SiteMinder
         url: /app-integrate/SAML/configure-SAML-siteminder.html
