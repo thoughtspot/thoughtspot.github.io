@@ -74,17 +74,17 @@ You need admin privileges to enable SAML SSO authentication.
 
     ![Configure SAML]({{ site.baseurl }}/images/admin-portal-saml-configure.png "Configure SAML")
 
-    | --- | --- |
-    | 1. **ThoughtSpot Service Address** | A fully qualified and resolvable domain name for the ThoughtSpot service. For example, *thoughtspot.thoughtspot-customer.com*. |
-    | 2. **Port** | Enter `443` in this box. This is the port of the server where your ThoughtSpot instance is running. |
-    | 3. **Unique Service Name** | The unique key used by your Identity Provider to identify the client. For example, *urn:thoughtspot:callosum:saml*. You may know this as the *Entity ID*. |
-    | 4. **Skew Time in Seconds** | The allowed skew time, after which the authentication response is rejected and sent back from the IDP. *86400* is a popular choice. The default is *3600*. |
-    | 5. **Protocol** | The authentication mechanism for ThoughtSpot. For example, `http` or `https`. |
-    | 6. **IDP Metadata XML File** | The absolute path to your Identity Provider’s metadata file. This file is provided by your IDP.  You need this file so that the configuration persists over upgrades. It is a best practice to set it up on persistent/HA storage (NAS volumes) or in the same absolute path on all nodes in the cluster. For example, *idp-meta.xml*. If your IDP needs an Assertion Consumer Service URL to create the metadata file, use `https://<hostname_or_IP>/callosum/v1/saml/SSO`. |
-    | 7. **Automatically add SAML users to ThoughtSpot upon first authentication** | Choose whether or not to add SAML users to ThoughtSpot when they first authenticate. If you choose 'yes', then new users will be automatically created in ThoughtSpot upon first successful SSO login. If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/ts-cloud/users.html). |
+
+    - **ThoughtSpot Service Address**: A fully qualified and resolvable domain name for the ThoughtSpot service. For example, *thoughtspot.thoughtspot-customer.com*.
+    - **Port**: Enter `443` in this box. This is the port of the server where your ThoughtSpot instance is running.
+    - **Unique Service Name**: The unique key used by your Identity Provider to identify the client. For example, *urn:thoughtspot:callosum:saml*. You may know this as the *Entity ID*.
+    - **Skew Time in Seconds**: The allowed skew time, after which the authentication response is rejected and sent back from the IDP. *86400* is a popular choice. The default is *3600*.
+    - **Protocol**: The connection protocol for ThoughtSpot. For example, `https`.
+    - **IDP Metadata XML File**: The absolute path to your Identity Provider’s metadata file. This file is provided by your IDP. You need this file so that the configuration persists over upgrades. It is a best practice to set it up on persistent/HA storage (NAS volumes) or in the same absolute path on all nodes in the cluster. For example, *idp-meta.xml*. If your IDP needs an Assertion Consumer Service URL to create the metadata file, use `https://<hostname_or_IP>/callosum/v1/saml/SSO`.
 
       {% include note.html content="If your IdP does not allow you to import the IdP metadata XML file, you must map values manually. For the ThoughtSpot system to pick up certain attributes, you must map them to specific fields. Map the username you would like to use to <code>NameId</code>, and map the email id of the user to <code>mail</code>." %}
 
+    - **Automatically add SAML users to ThoughtSpot upon first authentication**: Choose whether or not to add SAML users to ThoughtSpot when they first authenticate. If you choose 'yes', then new users will be automatically created in ThoughtSpot upon first successful SSO login. If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/ts-cloud/users.html).
 
 7. After you fill in all parameters, click **OK**.
 
