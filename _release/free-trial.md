@@ -1,7 +1,7 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 05/06/2021
+last_updated: 05/07/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
@@ -28,15 +28,16 @@ We added a "What’s New" section to the ThoughtSpot Information Center. This se
 
 ![]({{ site.baseurl }}/images/free-trial-learn-more.png "Learn more about new features")
 
-<!--{: id="invite-others"}
+{: id="invite-others"}
 ### Free Trial invitation process simplified
 
-We have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox.
+We have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox. Users you invite join your group automatically, and can share Answers, Pinboards and Worksheets.
 
-To invite a teammate to Free Trial, simply navigate to the **Setup** tab and click **Invite others** at the bottom of the screen.
+To invite a teammate to Free Trial, simply navigate to the **Setup** tab and click **Invite others** at the bottom of the screen. Enter your team member's email and click **Send invite**.
 
 ![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
--->
+
+![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
 
 {: id="duplicate-column-names-highlighted"}
 ### Worksheet duplicate column names error
