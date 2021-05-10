@@ -1,6 +1,6 @@
 ---
 title: [DataFlow Tips]
-last_updated: 03/30/2021
+last_updated: 05/10/2021
 summary: "We have several tips for managing the data sync in your organization."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -46,3 +46,22 @@ When setting up syncing, the Advance setup column mapping between external data 
 </dl>
 
 After you apply the new formula, it appears in the **Map columns** listing.
+
+{: id="tsload-date-time"}
+## Specify tsload datetime format
+
+To avoid datetime conversion errors when loading csv files through Dataflow, specify the datetime format within the **sync connector properties** window. You can use **tsload options** to override certain default settings in the UI, such as the default "%H:%M:%S" setting for time format.
+
+To specify your datetime format within DataFlow:
+<ol>
+<li>Open the **Advanced setup** interface by clicking the toggle to open.</li>
+<li>Choose the **Sync properties** tab.</li>
+<li>Scroll down to **Sync connector properties** and click the toggle to expand. <br>
+For this example, our data is in the format "%d/%m/%Y %H:%M", or "13/05/2021 10:30", with no seconds data.</li>
+<li>Specify the date style as "DMY".</li>
+<li>Specify "/" as the date delimiter.</li>
+<li>Specify the time style as "24HOUR".</li>
+<li>Specify ":" as the time delimiter.</li>
+<li>To override the default datetime format, "%H:%M:%S", enter `--date_time_format '%d/%m/%Y %H:%M'` under **tsload options**.</li>
+<li>Save your work by clicking **Save**. <br> Alternatively, click **Save and sync now** to save your work and sync data at the same time.</li>
+</ol>
