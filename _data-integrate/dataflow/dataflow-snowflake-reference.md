@@ -2,6 +2,8 @@
 title: [Snowflake connection reference for DataFlow]
 summary: Learn about the fields used to create a Snowflake connection with ThoughtSpot DataFlow.
 last_updated: 06/20/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-snowflake-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

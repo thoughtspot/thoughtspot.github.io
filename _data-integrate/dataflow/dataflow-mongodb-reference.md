@@ -2,6 +2,8 @@
 title: [MongoDB connection reference]
 summary: Learn about the fields used to create a MongoDB connection with ThoughtSpot DataFlow.
 last_updated: 07/6/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-mongodb-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -2,6 +2,8 @@
 title: [Azure Blob Storage connection reference]
 summary: Learn about the fields used to create an Azure Blob Storage connection with ThoughtSpot DataFlow.
 last_updated: 06/19/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

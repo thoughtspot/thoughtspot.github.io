@@ -2,6 +2,8 @@
 title: [Teradata connection reference]
 summary: Learn about the fields used to create a Teradata connection with ThoughtSpot DataFlow.
 last_updated: 07/7/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-teradata-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

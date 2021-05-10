@@ -2,6 +2,8 @@
 title: [JDBC connection reference]
 summary: Learn about the fields used to create a JDBC connection with ThoughtSpot DataFlow.
 last_updated: 11/25/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-jdbc-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
