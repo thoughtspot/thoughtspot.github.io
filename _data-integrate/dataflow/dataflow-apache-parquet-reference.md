@@ -2,6 +2,8 @@
 title: [Apache Parquet connection reference]
 summary: Learn about the fields used to create an Apache Parquet connection with ThoughtSpot DataFlow.
 last_updated: 09/14/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-apache-parquet-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -2,6 +2,8 @@
 title: [Amazon Redshift connection reference]
 summary: Learn about the fields used to create an Amazon Redshift connection with ThoughtSpot DataFlow.
 last_updated: 06/19/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-amazon-redshift-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
