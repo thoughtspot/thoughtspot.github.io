@@ -2,6 +2,8 @@
 title: [MemSQL connection reference]
 summary: Learn about the fields used to create a MemSQL connection with ThoughtSpot DataFlow.
 last_updated: 03/22/2021
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-memsql-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

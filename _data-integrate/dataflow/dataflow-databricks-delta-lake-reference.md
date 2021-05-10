@@ -2,6 +2,8 @@
 title: [Databricks Delta Lake connection reference]
 summary: Learn about the fields used to create Databricks Delta Lake connection with ThoughtSpot DataFlow.
 last_updated: 09/14/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

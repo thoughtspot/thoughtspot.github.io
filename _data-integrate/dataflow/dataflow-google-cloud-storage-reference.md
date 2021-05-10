@@ -2,6 +2,8 @@
 title: [Google Cloud Storage connection reference]
 summary: Learn about the fields used to create an Google Cloud Storage connection with ThoughtSpot DataFlow.
 last_updated: 7/7/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-google-cloud-storage-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

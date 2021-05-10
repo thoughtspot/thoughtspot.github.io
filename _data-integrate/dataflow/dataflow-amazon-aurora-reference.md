@@ -2,6 +2,8 @@
 title: [Amazon Aurora connection reference]
 summary: Learn about the fields used to create an Amazon Aurora connection with ThoughtSpot DataFlow.
 last_updated: 07/16/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-amazon-aurora-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

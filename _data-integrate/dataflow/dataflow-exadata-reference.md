@@ -2,6 +2,8 @@
 title: [Exadata connection reference]
 summary: Learn about the fields used to create an Exadata connection with ThoughtSpot DataFlow.
 last_updated: 03/22/2021
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-exadata-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

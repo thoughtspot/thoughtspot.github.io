@@ -2,6 +2,8 @@
 title: [Denodo connection reference]
 summary: Learn about the fields used to create a Denodo connection with ThoughtSpot DataFlow.
 last_updated: 10/22/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-denodo-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

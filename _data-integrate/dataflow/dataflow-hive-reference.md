@@ -2,6 +2,8 @@
 title: [Hive connection reference]
 summary: Learn about the fields used to create a Hive connection with ThoughtSpot DataFlow.
 last_updated: 06/19/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-hive-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
