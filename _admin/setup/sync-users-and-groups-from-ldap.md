@@ -1,6 +1,6 @@
 ---
 title: [Sync users and groups from LDAP]
-last_updated: 5/5/2021
+last_updated: 5/10/2021
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory or OpenLDAP."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,19 +14,19 @@ This Active Directory or OpenLDAP sync script is not the same as LDAP authentica
 
 Before synchronizing users and groups, collect the following information and materials:
 
-- Download the [LDAP sync script ADD LINK](LINK){: target="_blank"} from ThoughtSpot's community tools Github repository. Modify it or create your own as necessary.
+- Download the [LDAP sync script](https://github.com/thoughtspot/community-tools/tree/master/python_tools/ldap_sync_python_api){: target="_blank"} from ThoughtSpot's community tools Github repository. Modify it or create your own as necessary.
 
-- A machine with access to your Active Directory or OpenLDAP environment.
+- A computer with access to the ThoughtSpot APIs, as well as your Active Directory or OpenLDAP environment.
 
--   IP address and port of the server where your ThoughtSpot instance is running.
+-   Domain or IP address and port of the server where your ThoughtSpot instance is running.
 
-    This hostport must be in the following format `http(s)://<host>:<port>` or `http(s)://<domain>`.
+    The location of the ThoughtSpot instance must be in the following format: `http(s)://<IP-address>:<port>` or `http(s)://<domain>`.
 
--   Administrator login username and password for your ThoughtSpot instance.
+-   Credentials (username and password) for a user with administrator privileges in the front-end for your ThoughtSpot instance.
 
 -   URL of the LDAP server, or hostport.
 
-    For example, `ldap://192.168.2.48:389`
+    For example, `ldap://<IP-address>:<port>`
 
 -   Login username and password for the LDAP system.
 
@@ -36,17 +36,20 @@ Before synchronizing users and groups, collect the following information and mat
 
     For example, `DC=ldap,DC=thoughtspot,DC=com`
 
-## Fetch users and groups from LDAP with Active Directory or OpenLDAP
+-  LDAP filter string, if you would like to limit the script's search for new users and groups to a specific set. For example, `(|(CN=TestGroupAlpha)(CN=TestGroupBeta))`
+
+## Fetch users and groups from LDAP
 
 There are two ways for you to fetch users and groups from LDAP and populate them
 into your ThoughtSpot system:
 
--   Run the synchronization script in interactive mode, which walks you through the process (shown here).
--   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). If you choose this method, you can run the script periodically using a cron job.
+-   Run the synchronization script in [interactive mode](#interactive), which walks you through the process
+-   Run the synchronization script in [script mode](#script), which allows you to input your own shorthand script commands
 
 {% include note.html content="When you run the synchronization script, you perform a one-time sync. You must schedule a recurring sync using a cron job or your own scheduling tool to keep your ThoughtSpot users up to date with your users in LDAP." %}
 
-### Run the sync script
+{: id="interactive"}
+### Run in interactive mode
 
 To run the LDAP sync script in interactive mode:
 
@@ -87,34 +90,38 @@ To run the LDAP sync script in interactive mode:
 
     This prompt is asking if you would like to include group members even if they do not belong to the current sub tree that is being synced.
 
-4. Alternatively, to input your own shorthand script commands:
+4. To check that the sync was successful, navigate to the Admin Console in your ThoughtSpot application by selecting **Admin** from the top navigation bar. Select either **Users** or **Groups**. Your new users or groups should be the latest items in the list of users or groups. To view the most recently added or updated users or groups, sort by **Created**.
 
-    Issue the Python script commands, supplying all this information, following this format example:
+{: id="script"}
+### Run in script mode
+To input your own shorthand script commands:
 
-    ```
-    python3 syncUsersAndGroups.py script \
-    –-ts_hostport <ts_hostport> \
-    --disable_ssl \
-    --ts_uname <ts_username> \
-    --ts_pass <ts_password> \
-    --ldap_hostport '<ldap_hostport>' \
-    --ldap_uname '<ldap_username>' \
-    --ldap_pass '<ldap_password>' \
-    --sync \
-    --purge \
-    --basedn 'DC=ldap,DC=thoughtspot,DC=com' \
-    --filter_str '(|(CN=TestGroupAlpha)(CN=TestGroupBeta))' \
-    --include_nontree_members \
-    --user_identifier <user_identifier> \
-    --authdomain_identifier <authdomain_identifier> \
-    --email_identifier <email_identifier>
-    ```
+Issue the Python script commands, supplying all this information, following this format example. Refer to the [`syncUsersAndGroups.py` command-line switches](#sync-script-switches) for information on each parameter.
 
-    The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
+```
+python3 syncUsersAndGroups.py script \
+–-ts_hostport <ts_hostport> \
+--disable_ssl \
+--ts_uname <ts_username> \
+--ts_pass <ts_password> \
+--ldap_hostport '<ldap_hostport>' \
+--ldap_uname '<ldap_username>' \
+--ldap_pass '<ldap_password>' \
+--sync \
+--basedn 'DC=ldap,DC=thoughtspot,DC=com' \
+--filter_str '(|(CN=TestGroupAlpha)(CN=TestGroupBeta))' \
+--include_nontree_members \
+--user_identifier <user_identifier> \
+--authdomain_identifier <authdomain_identifier> \
+--email_identifier <email_identifier>
+```
 
-5. When the ThoughtSpot search engine finishes indexing, your new users should appear in the ThoughtSpot application. To check that the sync was successful, navigate to the Admin Console in your ThoughtSpot application by selecting **Admin** from the top navigation bar. Select either **Users** or **Groups**. Your new users or groups should be the latest items in the list of users or groups. To view the most recently added or updated users or groups, sort by **Created**.
+The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
 
-### `syncUsersAndGroups.py` command-line switches
+To check that the sync was successful, navigate to the Admin Console in your ThoughtSpot application by selecting **Admin** from the top navigation bar. Select either **Users** or **Groups**. Your new users or groups should be the latest items in the list of users or groups. To view the most recently added or updated users or groups, sort by **Created**.
+
+{: id="sync-script-switches"}
+**`syncUsersAndGroups.py` command-line switches**
 
 The following table provides a description of each command-line switch available for the `syncUsersAndGroups` python script.
 
@@ -128,7 +135,7 @@ The following table provides a description of each command-line switch available
         </tr>
         <tr>
   	      <td><code>--ts_hostport &lt;ts_hostport&gt;</code></td>
-  	      <td>ThoughtSpot cluster host port. Default port is 8088.</td>
+  	      <td>ThoughtSpot cluster host port.</td>
           </tr>  
 	    <tr>
 	      <td><code>--disable_ssl</code></td>
@@ -136,11 +143,11 @@ The following table provides a description of each command-line switch available
         </tr>
 	    <tr>
 	      <td><code>--ts_uname</code></td>
-	      <td>ThoughtSpot cluster username. The <code>admin</code> user is usually used.</td>
+	      <td>ThoughtSpot admin username. Can be any front-end user with administrator privileges.</td>
         </tr>
 	    <tr>
 	      <td><code>--ts_pass</code></td>
-	      <td>ThoughtSpot cluster password.</td>
+	      <td>ThoughtSpot admin password. Must be the corresponding password for the <code>--ts_uname</code>, which can be any front-end user with administrator privileges.</td>
         </tr>
 		<tr>
 	      <td><code>--ldap_hostport</code></td>
