@@ -36,7 +36,7 @@ Before synchronizing users and groups, collect the following information and mat
 
     For example, `DC=ldap,DC=thoughtspot,DC=com`
 
--  LDAP filter string, if you would like to limit the script's search for new users and groups to a specific set. For example, `(|(CN=TestGroupAlpha)(CN=TestGroupBeta))`
+-  LDAP filter string, if you would like to limit the script's search for new or modified users and groups to a specific set. For example, `(|(CN=TestGroupAlpha)(CN=TestGroupBeta))`
 
 ## Fetch users and groups from LDAP
 
@@ -116,7 +116,7 @@ python3 syncUsersAndGroups.py script \
 --email_identifier <email_identifier>
 ```
 
-The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
+The flags from `--basedn` to `--email_identifier` target sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterate through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system.
 
 To check that the sync was successful, navigate to the Admin Console in your ThoughtSpot application by selecting **Admin** from the top navigation bar. Select either **Users** or **Groups**. Your new users or groups should be the latest items in the list of users or groups. To view the most recently added or updated users or groups, sort by **Created**.
 
