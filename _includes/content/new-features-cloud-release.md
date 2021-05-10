@@ -84,9 +84,25 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <h3><a id="may-cloud-developer"></a>For the Developer</h3>
 
 <dl>
-<dlentry id="api">
-<dt>Rest APIs</dt>
-<dd>The ThoughtSpot 7 Cloud May release introduces the following new REST APIs:
-<ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience. For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User API</a>.</li>
-<li><code>GET /tspublic/v1/metadata/listas</code><br> You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata API</a>.</li></ul></dd></dlentry>
+<dlentry id="custom-actions">
+<dt>Custom actions in the context menu</dt>
+<dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <i>Search Answers</i> or <i>Pinboards</i> page.</dd>
+<dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> enabled on your cluster.</dd>
+<dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">Add custom actions</a>.</dd></dlentry>
 </dl>
+
+<dl>
+<dlentry id="viz-embed-sdk">
+<dt>Visual Embed SDK Version 1.2.0</dt>
+<dd>The ThoughtSpot 7 Cloud May release introduces the Visual Embed SDK 1.2.0 version with a minor update and backward-compatible improvements.</dd>
+<dd>In this version, the <code>noRedirect</code> attribute is introduced in the <strong>SearchEmbed</strong>, <strong>AppEmbed</strong>, and <strong>PinboardEmbed</strong> SDK packages. The <code>noRedirect</code> attribute is available as an optional parameter for the <code>SSO</code> <code>AuthType</code>. When set to <code>true</code>, the <code>noRedirect</code> attribute opens SAML SSO authentication workflow in a pop-up window, instead of redirecting users to a web browser.</dd>
+<dd>For more information, see the <a href="https://docs.thoughtspot.com/visual-embed-sdk/dev/en/?pageid=getting-started" target="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
+</dl>
+
+<dl>
+<dlentry id="rest-apis">
+<dt>REST APIs</dt>
+<dd>The ThoughtSpot 7 Cloud May release introduces the following new REST APIs:<br><br>
+<ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience.<br><br>For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User API</a>.</li><br>
+<li><code>GET /tspublic/v1/metadata/listas</code><br>You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata API</a>.</li></ul></dd></dlentry>
+</dl> 
