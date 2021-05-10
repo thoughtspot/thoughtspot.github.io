@@ -41,14 +41,14 @@ To allow your client application to connect to ThoughtSpot:
         Allows authenticating and logging in a user using the ThoughtSpot `/tspublic/v1/session/login` API. The API request passes `username` and `password` parameters to obtain an authentication token. For more information, see [session APIs]({{ site.baseurl }}/reference/api/session-api.html).
 
         {% include warning.html content="Do not use this authentication method in production environments." %}
-
-    -   `SSO`                                                    
-        Sets SAML SSO as the authentication method. Federated users can authenticate with their SSO credentials to access the embedded ThoughtSpot content.
-
     -   `None`                                                        
         Requires no authentication. The user must already be logged in to ThoughtSpot before interacting with the embedded content.
 
         {% include warning.html content="Do not use this authentication method in production environments." %}
+    -   `SSO`                                                    
+        Sets SAML SSO as the authentication method. Federated users can authenticate with their SSO credentials to access the embedded ThoughtSpot content.
+        -   `noRedirect` *Optional*                  
+            *Boolean*. When set to `true`, it opens the SAML SSO authentication workflow in a pop-up window, instead of redirecting users to a web browser.                      
 
     -   `AuthServer`                                      
         Enables trusted authentication method. To use the trusted authentication method, specify the trusted authentication server in the `authEndpoint` attribute or use the `getAuthToken` method.

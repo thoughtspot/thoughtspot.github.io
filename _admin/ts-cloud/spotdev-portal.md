@@ -5,22 +5,33 @@ summary: "The ThoughtSpot Developer portal allows developer users to explore the
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughtSpot Developer portal allows you to explore the ThoughtSpot APIs and developer tools, and build your web applications with ThoughtSpot content. The portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features that are available for integration.
-The portal also allows authorized users to customize and rebrand the look and feel of the UI and configure custom actions in an embedded visualization or pinboard.
-
+The ThoughtSpot Developer portal allows you to explore ThoughtSpot SDK, APIs, and build your web applications with ThoughtSpot content.
+The portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features that are available for integration.
+The portal also allows authorized users to customize and rebrand the look and feel of the UI and add custom actions to an embedded visualization or pinboard.
 
 ## Access Developer portal
-To access the Developer portal, follow these steps:
+You can access the developer portal from your ThoughtSpot application instance or the [ThoughtSpot Developers](https://developers.thoughtspot.com/){: target="_blank"} website.
+
+**If you have a ThoughtSpot user account**:                                  
 
 1.  Log in to your ThoughtSpot application instances.
-2.  Navigate to the **Develop** tab.
-    The **Develop** tab in the ThoughtSpot application is available only for  ThoughtSpot users with admin or developer privileges.
-    For more information on configuring a user group with developer privileges, see the [ThoughtSpot Developer Documentation](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=user-roles).
+2.  Make sure your user account has admin or developer privileges.
 
-    {% include note.html content="If you are not a ThoughtSpot user and you want to evaluate the Visual Embed SDK and APIs, you can register for a free trial and access the Developer portal on the free trial cluster." %}
+    For more information on configuring a user group with developer privileges, see the [ThoughtSpot Developer Documentation](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=user-roles){: target="_blank"}.
+3.  Navigate to the **Develop** tab.
+
+**If you do not have a ThoughtSpot user account**:
+1.  Go to [developers.thoughtspot.com](https://developers.thoughtspot.com/){: target="_blank"}.
+
+2.  From the header bar, click **Playground**.
+
+3.  Enter your name and email address.
+
+4.  Click **Try Live Playground**.
+
+{% include note.html content="You can also register for a free trial and evaluate the SDK and APIs on the ThoughtSpot free trial cluster." %}
 
 ## Find your way around
-
 The Developer portal includes several sections to assist you through your embedding journey.
 
 **Home**    

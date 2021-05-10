@@ -15,8 +15,7 @@ These release notes include information about new and enhanced features.
 
 {% include content/new-features-cloud-release.md %}
 
-{: id="2021-april"}
-## ThoughtSpot 7 Cloud April Release (ts7.april.cl)
+<h2><a id="2021-april"></a>ThoughtSpot 7 Cloud April Release (ts7.april.cl)</h2>
 <ul>
 <li><a href="{{ site.baseurl }}#april-cloud-analyst">For the Analyst</a></li>
 <li><a href="{{ site.baseurl }}#april-cloud-business-user">For the Business User</a></li>
@@ -127,8 +126,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 
 </dl>
 
-{: id="2021-march"}
-## ThoughtSpot 7 Cloud March Release (ts7.mar.cl)
+<h2><a id="2021-march"></a>ThoughtSpot 7 Cloud March Release (ts7.mar.cl)</h2>
 <ul>
 <li><a href="{{ site.baseurl }}#mar-cloud-analyst">For the Analyst</a></li>
 <li><a href="{{ site.baseurl }}#mar-cloud-business-user">For the Business User</a></li>
@@ -209,8 +207,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 
 </dl>
 
-{: id="2021-february"}
-## ThoughtSpot 7 Cloud February Release (ts7.feb.cl)
+<h2><a id="2021-february"></a>ThoughtSpot 7 Cloud February Release (ts7.feb.cl)</h2>
 
 <ul>
 <li><a href="{{ site.baseurl }}#feb-cloud-analyst">For the Analyst</a></li>
@@ -302,8 +299,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 </dlentry>
 </dl>
 
-{: id="2020-december"}
-## ThoughtSpot 6 Cloud December Release (ts6.dec.cl)
+<h2><a id="2021-december"></a>ThoughtSpot 6 Cloud December Release (ts6.dec.cl)</h2>
 
 <h3>Scriptability</h3>
 There are several new features for Scriptability:
@@ -329,8 +325,7 @@ Starting in the December Cloud release, ThoughtSpot supports the following new l
 
 To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>.
 
-{: id="2020-october"}
-## ThoughtSpot 6 Cloud October Release (ts6.oct.cl)
+<h2><a id="2021-october"></a>ThoughtSpot 6 Cloud October Release (ts6.oct.cl)</h2>
 
 <h3>New Home page</h3>
 
