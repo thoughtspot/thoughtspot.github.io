@@ -2,6 +2,10 @@
 title: [REST API connection reference]
 summary: Learn about the fields used to create a REST API connection with ThoughtSpot DataFlow.
 last_updated: 11/25/2020
+redirect_from:
+- /6.3.0/data-integrate/dataflow/dataflow-rest-api-reference.html
+- /6.3.0.CU1/data-integrate/dataflow/dataflow-rest-api-reference.html
+- /6.3.1.CU1/data-integrate/dataflow/dataflow-rest-api-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
