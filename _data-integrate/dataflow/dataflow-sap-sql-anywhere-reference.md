@@ -2,6 +2,10 @@
 title: [SAP SQL Anywhere connection reference]
 summary: Learn about the fields used to create an SAP SQL Anywhere Server Enterprise connection with ThoughtSpot DataFlow.
 last_updated: 07/7/2020
+redirect_from:
+- /6.3.0/data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html
+- /6.3.0.CU1/data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html
+- /6.3.1.CU1/data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
