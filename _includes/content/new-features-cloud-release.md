@@ -43,7 +43,10 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dlentry id="deprecations">
 <dt>Deprecations</dt>
 <dd>The following features are unavailable in the May cloud release:
-<ul><li>The home page shortcuts for Answers and Pinboards feature is no longer available. Instead, you can <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">add important metrics from Pinboards to your watchlist</a> and track them from the home page.</li></ul>
+<ul><li>The home page shortcuts for Answers and Pinboards feature is no longer available. Instead, you can <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">add important metrics from Pinboards to your watchlist</a> and track them from the home page.</li>
+<li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
+<li> <a href="{{ site.baseurl }}/end-user/search/replay-search.html">Replay search</a>. Instead, use <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot's search on data, either on demo data, or on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">your company's data</a>.</li>
+</ul>
 {% include content/new-answer-experience-deprecations.md %}</dd></dlentry>
 
 </dl>
@@ -105,4 +108,4 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dd>The ThoughtSpot 7 Cloud May release introduces the following new REST APIs:<br><br>
 <ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience.<br><br>For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User API</a>.</li><br>
 <li><code>GET /tspublic/v1/metadata/listas</code><br>You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata API</a>.</li></ul></dd></dlentry>
-</dl> 
+</dl>

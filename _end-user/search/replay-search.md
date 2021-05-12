@@ -6,6 +6,8 @@ summary: "You can instantly generate a step-by-step replay showing the creation 
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include note.html content="Replay search is no longer available in ThoughtSpot, starting with the May Cloud release." %}
+
 The replay feature shows how to create the chart or table you are viewing. Use it to teach yourself, or take a screen recording of it and create your own ThoughtSpot training for your team.
 
 * When viewing a chart or table, click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Replay search**.
