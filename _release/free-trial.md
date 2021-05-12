@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-## May 12, 2021
+## May 12, 2021 
 
 These are the changes we made to Free Trial.
 
