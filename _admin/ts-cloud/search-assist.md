@@ -25,8 +25,8 @@ Search Assist shows you where the filter bar is, and how to view your search as 
 
 To continue learning how to use Search, select **Try another search**. The additional searches also return Answers, either in table form or as chart, to these questions:
 
-- ***What were sales for shirts in 2019, per quarter?***;<br>The correct search here is, ***sales shirts 2019 quarterly***.
+- ***What were the top-selling products during the last quarter?***;<br>The search here is, ***top sales product last quarter***.
 
-- ***What were the top-selling products during the last quarter?***;<br>The search here is, ***sales product last quarter top***.
+- ***What is the quantity purchased of shirts per monthly by city?***;<br>The correct search here is, ***sales shirts monthly city***.
 
-- ***How many bags were sold per city over the last 12 months?***;<br>The search is, ***quantity purchased bags last 12 months city***.
+- ***What were sales for shirts in California versus Arizona last week?***;<br>The search is, ***sales shirts california versus arizona last week***.
