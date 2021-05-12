@@ -1,12 +1,12 @@
 ---
-title: [Edit a Synapse connection]
+title: [Edit a Starburst connection]
 last_updated: 9/21/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can edit a Synapse connection to add tables and columns.
+You can edit a Starburst connection to add tables and columns.
 
 To edit a connection:
 
@@ -16,11 +16,11 @@ To edit a connection:
 
 3. Click the name of the connection you want to edit.
 
-   ![Select a connection to edit]({{ site.baseurl }}/images/synapse-selectconnection.png "Select a connection to edit")
+ ![Select a connection to edit]({{ site.baseurl }}/images/starburst-selectconnection.png "Select a connection to edit")
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
-   ![Edit connection]({{ site.baseurl }}/images/synapse-editconnection.png "Edit connection")
+   ![Edit connection]({{ site.baseurl }}/images/starburst-editconnection.png "Edit connection")
 
    By default, the Select tables page appears. You have the option, though, to change the connection name and update the connection details, by clicking the appropriate option at the top of the screen, making any changes needed and clicking **Continue** to go to the next page.
 
@@ -33,6 +33,6 @@ To edit a connection:
 
 6. Click **Update**, and then click **Confirm** to save the updated connection detail.
 
-To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete a Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-delete-connection.html).
+To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete a Starburst connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-delete-connection.html).
 
-See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html) for details of connection parameters.
+See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html) for details of connection parameters.
