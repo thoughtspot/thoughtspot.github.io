@@ -9,15 +9,21 @@ permalink: /:collection/:path.html
 ---
 Search Assist walks you through simple search scenarios. It demonstrates how anyone can get answers to their data questions by typing in the Search bar.
 
-The initial example asks, ***What were sales for all products in 2019?***
+The initial example asks, ***What were Sales by Product in this year?***
 
-Search Assist guides you to phrase this search as ***sales product 2019***.
+Search Assist guides you to search for ***sales*** and press **Enter** on your keyboard.
 
-The search then returns the Answer as a table.
+The search then returns the Answer as a table, demonstrating your total sales.
 
-![Search Assist First example]({{ site.baseurl }}/images/search-assist.gif "First example with Search Assist")
+Next, you add ***product*** to your search and press **Enter**. Now you see a table with the total sales for each product.
 
-The additional searches also return Answers, either in table form or as chart, to these questions:
+Last, you add ***this year*** to your search and press **Enter**. Now you see a table with the total sales for each product, filtered to only show the data from this year.
+
+![Search assist example]({{ site.baseurl }}/images/search-assist-example.png "Search assist example")
+
+Search Assist shows you where the filter bar is, and how to view your search as a chart.
+
+To continue learning how to use Search, select **Try another search**. The additional searches also return Answers, either in table form or as chart, to these questions:
 
 - ***What were sales for shirts in 2019, per quarter?***;<br>The correct search here is, ***sales shirts 2019 quarterly***.
 
