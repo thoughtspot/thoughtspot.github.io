@@ -1,17 +1,32 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 05/07/2021
+last_updated: 05/12/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-## May 5, 2021　
+## May 12, 2021 
+
+These are the changes we made to Free Trial.
+
+* We fixed the username/password error message when users create a Snowflake connection. Previously, users who entered an incorrect username or password would see a Snowflake IP whitelisting error message. <br>
+
+![]({{ site.baseurl }}/images/free-trial-username-error.png "Error message for incorrect user name"){: .inline}
+
+* We removed the prompt to **Search now** after users create a connection. Now, users can return directly to Setup to continue setting up their Free Trial account.<br>
+**Before**<br>
+![]({{ site.baseurl }}/images/free-trial-search-prompt.png "Prompt to Search Now"){: .inline}
+**After**<br>
+![]({{ site.baseurl }}/images/free-trial-no-search-prompt.png "Back to Setup"){: .inline}
+
+
+## May 5, 2021
 
 {: id="schedule-meeting"}
 ### Schedule time with product experts
 
-To improve your product experience, we added a feature to schedule one-on-one meetings with product experts. Now, when you run into an error or have a question about the product, you can reach out for help without ever leaving your page.
+To improve your product experience, we have added a feature to schedule one-on-one meetings with product experts. Now, when you run into an error or have a question about the product, you can reach out for help without ever leaving your page.
 
 To schedule a meeting, click **Book 1:1 expert help** at the top of the page. Choose a time within the calendar, and enter your name and email before clicking **Confirm Booking**. After confirmation, you will receive a link to your Zoom meeting.
 
@@ -22,7 +37,7 @@ To schedule a meeting, click **Book 1:1 expert help** at the top of the page. Ch
 {: id="whats-new-with-free-trial"}
 ### What’s New with Free Trial
 
-We added a "What’s New" section to the ThoughtSpot Information Center. This section highlights important features for different user personas. Click on the **help** icon![]({{ site.baseurl }}/images/icon-help-10-px.png "Help icon"){: .inline} when the red notification appears to see new features. Click **Learn More** to browse our documentation, or click **Try it now** to experience it for yourself.
+We added a "What’s New" section to the ThoughtSpot Information Center. This section highlights important features for different user personas. Click on the **help** icon![]({{ site.baseurl }}/images/icon-help-10-px.png "Help icon"){: .inline}. when the red notification appears to see new features. Click **Learn More** to browse our documentation, or click **Try it now** to experience it for yourself.
 
 ![]({{ site.baseurl }}/images/free-trial-whats-new.png "What’s New on Free Trial")
 
@@ -31,7 +46,7 @@ We added a "What’s New" section to the ThoughtSpot Information Center. This se
 {: id="invite-others"}
 ### Free Trial invitation process simplified
 
-We simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox. Users you invite join your group automatically, and can share Answers, Pinboards and Worksheets.
+We have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox. Users you invite join your group automatically, and can share Answers, Pinboards and Worksheets.
 
 To invite a teammate to Free Trial, simply navigate to the **Setup** tab and click **Invite others** at the bottom of the screen. Enter your team member's email and click **Send invite**.
 
@@ -42,7 +57,7 @@ To invite a teammate to Free Trial, simply navigate to the **Setup** tab and cli
 {: id="duplicate-column-names-highlighted"}
 ### Worksheet duplicate column names error
 
-When creating a Worksheet, all columns must have unique names. In order to prevent duplicate column name errors, ThoughtSpot highlights duplicate column names during Worksheet creation, before you can save the Worksheet. In previous releases, the **Cannot add duplicate column names** error message did not specify which columns were duplicates. We believe all analysts, including those on Free Trial, will love this enhancement.
+When creating a Worksheet, all columns must have unique names. In order to prevent column name duplicate errors, ThoughtSpot highlights duplicate column names during Worksheet creation, before you can save the Worksheet. In previous releases, the **Cannot add duplicate column names** error message did not specify which columns were duplicates. We believe all analysts, including those on Free Trial, will love this enhancement.
 
 ![]({{ site.baseurl }}/images/free-trial-duplicate-columns.png "Duplicate columns error message")
 
