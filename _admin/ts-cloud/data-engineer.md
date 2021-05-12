@@ -59,3 +59,13 @@ The following list provides information about connecting to your data in support
 - [Delete a table with object dependencies]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-table-dependencies.html)
 - [Delete connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html)
 - [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html)
+
+## ![]({{ site.baseurl }}/images/starburst.jpg){: .inline} Starburst
+- [Overview]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
+- [Add connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-add-connection.html)
+- [Edit connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-edit-connection.html)
+- [Remap connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-remap-connection.html)
+- [Delete a table]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-delete-table.html)
+- [Delete a table with object dependencies]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-delete-table-dependencies.html)
+- [Delete connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-delete-connection.html)
+- [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html)

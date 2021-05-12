@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Whenever you try to remove a table in a connection, ThoughtSpot checks for dependencies and shows a list of dependent objects. You can click the listed objects to delete them or remove the dependency. Then you can remove the table.
 
-To delete a table:
+To delete a table from a Snowflake connection:
 
 1. Click **Data** in the top navigation bar.
 

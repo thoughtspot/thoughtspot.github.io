@@ -14,8 +14,9 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
 - [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
+- [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
 
-{% include note.html content="Trino and Databrix are in beta and disabled by default. To enable either of these features, contact ThoughtSpot Support." %}
+{% include note.html content="Databrix is in beta and disabled by default. To enable either of these features, contact ThoughtSpot Support." %}
 
 ## How it works
 
@@ -42,6 +43,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 
 Here are the major features that are not currently available in Connections:
 
+- Custom calendar is only supported with Snowflake connections, at this time
 - Spot IQ: Instant insights, Did you know?, Pinboard insights, Analyze
 - Monitor
 - Custom calendar not available with Oracle ADW connections

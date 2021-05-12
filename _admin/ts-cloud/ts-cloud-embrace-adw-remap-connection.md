@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Modify the connection parameters by editing the source mapping <code>yaml</code> file that was created when you added the connection. For example, you can remap the existing table or column to a different table or column in an existing database connection. ThoughtSpot recommends that you check the dependencies before and after you remap a table or column in a connection to ensure they display as intended.
 
-To remap a connection:
+To remap a ADW connection:
 
 1. Click **Data** in the top navigation bar.
 

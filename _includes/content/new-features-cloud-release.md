@@ -56,17 +56,17 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dt>Oracle ADW for Embrace</dt>
 <dd>In this release, Oracle Autonomous Data Warehouse (ADW) is GA. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html">Oracle ADW</a>. </dd></dlentry>
 
+<dlentry id="embrace-starburst">
+<dt>Starburst for Embrace</dt>
+<dd>Embrace now supports both Starburst Enterprise, and open source Trino databases.</dd></dlentry>
+
 <dlentry id="embrace-custom-calendar">
 <dt>Custom calendar for Embrace</dt>
-<dd>In this release, custom calendar is available for Snowflake connections in Embrace. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry>
+<dd>In this release, custom calendar is available for Snowflake, Google BigQuery, Amazon Redshift, and Azure Synapse connections in Embrace. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry>
 
 <dlentry id="embrace-databrix">
 <dt>Databrix for Embrace</dt>
 <dd>Embrace now supports Databrix. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd></dlentry>
-
-<dlentry id="embrace-trino">
-<dt>Starburst Trino for Embrace</dt>
-<dd>Embrace now supports Starburst Trino. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd></dlentry>
 
 <h3><a id="may-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
@@ -105,4 +105,4 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dd>The ThoughtSpot 7 Cloud May release introduces the following new REST APIs:<br><br>
 <ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience.<br><br>For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User API</a>.</li><br>
 <li><code>GET /tspublic/v1/metadata/listas</code><br>You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata API</a>.</li></ul></dd></dlentry>
-</dl> 
+</dl>

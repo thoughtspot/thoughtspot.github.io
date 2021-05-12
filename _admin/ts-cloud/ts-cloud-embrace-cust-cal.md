@@ -31,7 +31,7 @@ You can use your custom calendar to search the following ways:
 - Overriding the calendar used in the search bar by typing your custom calendar’s name
 
 ## Limitations
-- Only supported for Snowflake connections at this time
+- Only supported for Snowflake, BigQuery, Redshift, and Synapse connections at this time
 - Date format must use *MM/DD/YYYY*. No other formats are supported.
 - Calendars, by default, use English names for days of the week, and month, but can be manually changed by downloading and editing the calendar file
 - Maximum scope of the date dimension is 90 years

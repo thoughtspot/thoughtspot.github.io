@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.
 
-To delete a connection:
+To delete a Snowflake connection:
 
 1. Click **Data** in the top navigation bar.
 
