@@ -15,7 +15,7 @@ After using ThoughtSpot DataFlow to establish a connection to a flat files, eith
      * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-column-delimiter)<br/>Specify the column delimiter character.
      * [Enable archive on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-enable-archive-on-success)<br/>Specify if system is to archive file after successful sync.
      * [Delete file on success]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-delete-file-on-success)<br/>Specify if system to delete file after successful sync.
-     * [Compression]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-compression)<br/>Specify if file uses complression, and compression type.
+     * [Compression]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-compression)<br/>Specify if file uses compression, and compression type.
      * [Skip header rows]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-skip-header-rows)<br/>Specify the number of header rows to skip when loading data.
      * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.
      * [Escape character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-sync-escape-character)<br/>Specify the escape character if using a text qualifier in the source data.
