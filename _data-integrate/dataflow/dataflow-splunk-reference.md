@@ -30,5 +30,9 @@ Here is a list of the fields for a Splunk connection in ThoughtSpot DataFlow. Yo
 <dlentry id="dataflow-splunk-sync-max-ignored-rows"><dt>Max ignored rows</dt><dd id="max-ignored-rows-description">Abort the transaction after encountering 'n' ignored rows</dd><dd id="max-ignored-rows-required">Optional field.</dd><dd id="max-ignored-rows-default"><strong>Default:</strong><br/>0</dd></dlentry>
 "<dlentry id="dataflow-splunk-sync-ts-load-options"><dt>TS load options</dt><dd id="ts-load-options-description">Specifies the parameters passed with the <code>tsload</code> command, in addition to the commands already included by the application. The format for these parameters is:<br/><code> --&lt;param_1_name&gt; &lt;optional_param_1_value&gt;</code><br/><code> --&lt;param_2_name&gt; &lt;optional_param_2_value&gt;</code></dd><dd id="ts-load-options-required">Optional field.</dd><dd id="ts-load-options-example"><strong>Example:</strong><br/>--max_ignored_rows 0</dd><dd id="ts-load-options-valid-values"><strong>Valid Values:</strong><br/>--null_value ""
  --escape_character ""
- --max_ignored_rows 0</dd><dd id="ts-load-options-default"><strong>Default:</strong><br/>--max_ignored_rows 0</dd><dd id="reference"><strong>Reference:</strong><br/><a href="{{ site.baseurl }}/reference/data-importer-ref.html">tsload flag reference</a><br/><a href="{{ site.baseurl }}/data-integrate/data-flow-tips.html">Dataflow tips</a></dd></dlentry>"
+ --max_ignored_rows 0</dd><dd id="ts-load-options-default"><strong>Default:</strong><br/>--max_ignored_rows 0</dd><dd id="reference"><strong>Reference:</strong><br/><a href="{{ site.baseurl }}/reference/data-importer-ref.html">tsload flag reference</a></dd></dlentry>"
 </dl>
+
+## Related Information
+
+[Dataflow tips]({{ site.baseurl }}/data-integrate/data-flow-tips.html)
