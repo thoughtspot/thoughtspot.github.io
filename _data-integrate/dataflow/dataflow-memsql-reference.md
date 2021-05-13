@@ -40,5 +40,9 @@ Here is a list of the fields for a MemSQL connection in ThoughtSpot DataFlow. Yo
 --max_ignored_rows 0</dd>
 <dd id="ts-load-options-default"><strong>Default:</strong><br/>--max_ignored_rows 0</dd>
 <dlentry id="dataflow-memsql-conn-max-ignored-rows"><dt>Max ignored rows</dt><dd id="max-ignored-rows-description">Abort the transaction after encountering 'n' ignored rows</dd><dd id="max-ignored-rows-required">Optional field.</dd><dd id="max-ignored-rows-default"><strong>Default:</strong><br/>0</dd></dlentry>
-<dd id="reference"><strong>Reference:</strong><br/><a href="{{ site.baseurl }}/reference/data-importer-ref.html">tsload flag reference</a><br/><a href="{{ site.baseurl }}/data-integrate/data-flow-tips.html">Dataflow tips</a></dd></dlentry>
+<dd id="reference"><strong>Reference:</strong><br/><a href="{{ site.baseurl }}/reference/data-importer-ref.html">tsload flag reference</a></dd></dlentry>
 </dl>
+
+## Related Information
+
+[Dataflow tips]({{ site.baseurl }}/data-integrate/data-flow-tips.html)
