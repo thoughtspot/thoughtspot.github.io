@@ -16,7 +16,7 @@ You need admin privileges to enable SAML SSO authentication.
 
 6. Fill in the parameters with the information you collected in the [Configuration prerequisites](#prerequisites).
 
-4. When the configuration is complete, download ThoughtSpot's metadata file, `spring_saml_metadata.xml`. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
+4. When the configuration is complete, download ThoughtSpot's metadata file, `spring_saml_metadata.xml`. This file contains the public key you need if you want to encrypt your SAML assertions. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
 
 {% include note.html content="ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. This group has no privileges. You must manually assign users to ThoughtSpot groups to give them privileges, such as <strong>can upload user data</strong>, or <strong>can manage data</strong>." %}
 
