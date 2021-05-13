@@ -65,7 +65,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="embrace-custom-calendar">
 <dt>Custom calendar for Embrace</dt>
-<dd>In this release, custom calendar is available for Snowflake, Google BigQuery, Amazon Redshift, and Azure Synapse connections in Embrace. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry>
+<dd>In this release, custom calendar is available for Snowflake connections only. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry>
 
 <dlentry id="embrace-databrix">
 <dt>Databrix for Embrace</dt>
