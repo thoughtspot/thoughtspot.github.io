@@ -43,3 +43,7 @@ Here is a list of the fields for an Exadata connection in ThoughtSpot DataFlow. 
 <dlentry id="dataflow-exadata-sync-time-style"><dt>Time Style</dt><dd id="time-style-description">Specifies the format of the time portion in the data.</dd><dd id="time-style-required">Optional field.</dd><dd id="time-style-example"><strong>Example:</strong><br/>24 hour</dd><dd id="time-style-valid-values"><strong>Valid Values:</strong><br/>12 Hour, 24 Hour</dd><dd id="time-style-default"><strong>Default:</strong><br/>24 Hour</dd></dlentry>
 <dlentry id="dataflow-exadata-sync-time-delimiter"><dt>Time Delimiter</dt><dd id="time-delimiter-description">Specifies the character used as separate the time components.</dd><dd id="time-delimiter-required">Optional field.</dd><dd id="time-delimiter-example"><strong>Example:</strong><br/>:</dd><dd id="time-delimiter-valid-values"><strong>Valid Values:</strong><br/>Any printable ASCII character</dd><dd id="time-delimiter-default"><strong>Default:</strong><br/>:</dd></dlentry>
 </dl>
+
+## Related Information
+
+[Dataflow tips]({{ site.baseurl }}/data-integrate/data-flow-tips.html)
