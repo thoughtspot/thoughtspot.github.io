@@ -8,7 +8,7 @@ toc: true
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Ask an Expert is not available in the new Answer experience. The new Answer experience is on by default for ThoughtSpot Cloud clusters. To use Ask an Expert, turn the new Answer experience off by selecting <strong>Classic experience </strong> from the <strong>Experience manager</strong> panel in your profile." %}
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable **Ask an Expert**. This lets them request help from someone in your organization.
 

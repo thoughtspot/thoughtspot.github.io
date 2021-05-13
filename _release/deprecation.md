@@ -13,27 +13,29 @@ Use following notes above feature that is deprecated. Send a link back to this d
 {% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.1. For details, see Deprecation Announcements." %}
 
 -->
-{: id="de-support-7-1"}
-## De-supported in 7.1
+{: id="de-support-may-cloud"}
+## De-supported in May Cloud
 
-The 7.1 release of ThoughtSpot Software, targeted for July 2021 (LA) and Oct 2021 (GA), will drop support for  **Instant Insights**.
+The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will drop support for the following features:
 
-As we move to ThoughtSpot Cloud, our automated insights strategy is progressively more focused and prioritized around Monitor, where users get _personalized_ insights in the metrics that are important to them.
+<dl><dlentry><dt>Home page shortcuts for Answers and Pinboards</dt>
+<dd>In May Cloud, we are replacing this feature with the ability to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">add important metrics from Pinboards to your watchlist</a> and track them from the home page. To quickly access your most-used Answers and Pinboards in May Cloud, favorite these objects and toggle <strong>My favorites</strong>.</dd></dlentry>
+<dlentry><dt>Replay search</dt>
+<dd>Customers currently use <strong>Replay search</strong> to learn how to use ThoughtSpot's search on data. As an alternative, use <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot's search on data, either on demo data, or on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">your company's data</a>.</dd></dlentry>
+<dlentry><dt>Ask an Expert</dt>
+<dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
+</dl>
 
-Instant Insights currently appear in four (4) areas of our product:
+{: id="deprecate-may-cloud"}
+## Deprecated in May Cloud
+The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will deprecate the following features. ThoughtSpot will drop support for these features in a later release. If you have the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) turned on, these features are de-supported in May Cloud. To use these features, [turn the new Answer experience off]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html#toggle-on-off).
 
-- Home Page: Did you know
-- Search: under the answer
-- Pinboard: Pinboard Insights at the top of the pinboard
-- Worksheet and Table: the Spotiq Insights tab
-
-The current Instant Insights feature works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support Instant Insights.  
-
-{: id="de-support-7-2"}
-## De-supported in 7.2
-
-The 7.2 release of ThoughtSpot Software, targeted for Nov 2021 (LA), Feb 2022 (GA), will drop support for **R integration**.
-
-Customers currently use R to generate custom charts. We plan to introduce a new feature, **Bring Your Own Charts**, for the 7.2 release.
-
-The current integration with R works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support Instant Insights.  
+<dl><dlentry><dt>Learn how to use ThoughtSpot Pinboard</dt>
+<dd>This Pinboard contains search replays created in the system. The Replay Search feature is de-supported in May Cloud. Customers currently use <strong>Replay search</strong> and the <strong>Learn how to use ThoughtSpot Pinboard</strong> to learn how to use ThoughtSpot's search on data. As an alternative, use <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot's search on data, either on demo data, or on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">your company's data</a>.</dd></dlentry>
+<dlentry><dt>Multiple join path resolution within the formula editor or a search</dt>
+<dd>When you try to search on columns with more than one possible join path, the system no longer allows you to define the join path within the search. Similarly, when you try to create a formula with columns with more than one possible join path, the system does not allow you to define the join path. Instead, the system now prompts you to resolve this issue and avoid confusion or incorrect data by creating a Worksheet with the correct join path.</dd></dlentry>
+<dlentry><dt>Send feedback</dt>
+<dd>The option to send product feedback, from the more options menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="more options menu icon" class="inline"/> on an Answer or search.</dd></dlentry>
+<dlentry><dt>Client-side summaries for tables</dt>
+<dd>We consolidated client-side column summaries and headlines from the backend into new headline summaries that come from the backend. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
+</dl>

@@ -6,6 +6,7 @@ summary: "You're the expert. Now what? Here's how to answer a request from Ask a
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use **Ask an Expert** to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
 
