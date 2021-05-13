@@ -29,6 +29,8 @@ You can use your custom calendar to search the following ways:
 - Using date keywords, like `this quarter` and `q3`
 - Using date formulas with the `fiscal` option specified (See [Fiscal and Gregorian calendars]({{ site.baseurl }}/advanced-search/formulas/date-formulas.html#fiscal-and-gregorian-calendars))
 - Overriding the calendar used in the search bar by typing your custom calendar’s name
+- Binding a calendar with a column under the table detail page. Example: Binding `Lineorder` `commitdate` with the French calendar.
+- Specifying a calendar in the formula
 
 ## Limitations
 - Only supported for Snowflake connections at this time.
@@ -41,17 +43,6 @@ You can use your custom calendar to search the following ways:
 - Maximum scope of the date dimension is 90 years
 - Maximum length of a calendar year is 12 months
 - Calendar displays quarter numbers based on the Gregorian calendar (which starts on January 1st). If your custom calendar begins any other date, you must adjust the quarter numbers to align with your calendar. For example: If your custom calendar begins on April 1st, the calendar would incorrectly show April, May and June as quarter 2. In this case, you would need to correct this to indicate those months are quarter 1 and correct the subsequent months to have the correct quarter.
-
-## Querying with custom calendars
-
-You can use all keywords/formulas with a custom calendar. Example: last month for each year, last 10 weeks, etc.
-
-The scope of queries is within the connection, using the calendar from that connection.
-
-You can query using a custom calendar in the following ways:
-- Adding a calendar in the search bar
-- Binding a calendar with a column under the table detail page. Example: Binding `Lineorder` `commitdate` with the French calendar.
-- Specifying a calendar in the formula
 
 ## Prerequisites
 
