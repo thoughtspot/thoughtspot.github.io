@@ -61,7 +61,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="embrace-starburst">
 <dt>Starburst for Embrace</dt>
-<dd>Embrace now supports both Starburst Enterprise, and open source Trino databases.</dd></dlentry>
+<dd>Embrace now supports both Starburst Enterprise, and open source Trino databases. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html">Starburst</a>.</dd></dlentry>
 
 <dlentry id="embrace-custom-calendar">
 <dt>Custom calendar for Embrace</dt>

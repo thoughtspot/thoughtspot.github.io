@@ -22,7 +22,7 @@ To create a custom calendar, do the following:
 
    The Custom calendar page appears.
 
-3. Click {% include button.html content="Create Custom Calendar" %}.
+3. Click **Create Custom Calendar**.
 
    The Create Custom Calendar dialog appears.
 
@@ -66,7 +66,7 @@ To create a custom calendar, do the following:
 
     Example: *FY*
 
-17. Click {% include button.html content="Create" %}.
+17. Click **Create**.
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
 

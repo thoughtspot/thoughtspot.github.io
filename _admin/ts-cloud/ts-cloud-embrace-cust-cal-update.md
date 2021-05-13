@@ -44,7 +44,7 @@ To update a custom calendar, do the following:
 
 9. Select **Upload new**.
 
-10. Click {% include button-grey.html content="Upload" %}, select the file, and upload it.
+10. Click **Upload**, select the file, and upload it.
 
 11. If column names are defined in the header of your updated calendar, select **Column names are defined in header**.
 
@@ -52,7 +52,7 @@ To update a custom calendar, do the following:
 
     Options include Comma ( , ), Pipe ( \| ), Semicolon ( ; ), and Tab.
 
-13. Click {% include button.html content="Update" %}.
+13. Click **Update**.
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
 

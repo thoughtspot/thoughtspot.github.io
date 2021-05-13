@@ -16,11 +16,7 @@ To edit a connection:
 
 3. Click the name of the connection you want to edit.
 
- ![Select a connection to edit]({{ site.baseurl }}/images/starburst-selectconnection.png "Select a connection to edit")
-
 4. Click **Edit connection** at the upper-right-hand side of the page.
-
-   ![Edit connection]({{ site.baseurl }}/images/starburst-editconnection.png "Edit connection")
 
    By default, the Select tables page appears. You have the option, though, to change the connection name and update the connection details, by clicking the appropriate option at the top of the screen, making any changes needed and clicking **Continue** to go to the next page.
 
