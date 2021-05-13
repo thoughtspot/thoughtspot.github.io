@@ -31,7 +31,7 @@ To set up SAML on ThoughtSpot for user authentication, follow these steps:
 
 3. Complete the configurator prompts with the information you collected in [Configuration prerequisites](#prerequisites).
 
-4. When the configuration is complete, download ThoughtSpot's metadata file, `spring_saml_metadata.xml`. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
+4. When the configuration is complete, download ThoughtSpot's metadata file, `spring_saml_metadata.xml`. This file contains the public key you need if you want to encrypt your SAML assertions. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
 
 ### Configure the IdP
 To enable the IdP to recognize your host application and ThoughtSpot as a valid service provider, you must configure the IdP with required attributes and metadata. This includes the `spring_saml_metadata.xml` file that you downloaded in step 4 of [Configure SAML using tscli](#saml-configure-tscli).
