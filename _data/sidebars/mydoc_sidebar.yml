@@ -32,6 +32,9 @@ entries:
     - title: Accessibility
       url:  /release/accessibility.html
       output: web
+    - title: Deprecation Announcements
+      url:  /release/deprecation.html
+      output: web
   - sectiontitle: Getting started
     output: web,ugBk
     sectionitems:
