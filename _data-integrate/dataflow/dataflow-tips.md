@@ -54,14 +54,14 @@ To avoid datetime conversion errors when loading csv files through Dataflow, spe
 
 To specify your datetime format within DataFlow:
 <ol>
-<li>Open the <b>Advanced setup</b> interface by clicking the toggle to open.</li>
-<li>Choose the <b>Sync properties</b> tab.</li>
-<li>Scroll down to <b>Sync connector properties</b> and click the toggle to expand. <br/>
+<li>Open the <strong>Advanced setup</strong> interface by clicking the toggle to open.</li>
+<li>Choose the <strong>Sync properties</strong> tab.</li>
+<li>Scroll down to <strong>Sync connector properties</strong> and click the toggle to expand. <br/>
 For this example, our data is in the format "%d/%m/%Y %H:%M", or "13/05/2021 10:30", with no seconds data.</li>
 <li>Specify the date style as "DMY".</li>
 <li>Specify "/" as the date delimiter.</li>
 <li>Specify the time style as "24HOUR".</li>
 <li>Specify ":" as the time delimiter.</li>
-<li>To override the default datetime format, "%H:%M:%S", enter <code>--date_time_format '%d/%m/%Y %H:%M'</code> under <b>tsload options</b>.</li>
-<li>Save your work by clicking <b>Save</b>. <br/> Alternatively, click <b>Save and sync now</b> to save your work and sync data at the same time.</li>
+<li>To override the default datetime format, "%H:%M:%S", enter <code>--date_time_format '%d/%m/%Y %H:%M'</code> under <strong>tsload options</strong>.</li>
+<li>Save your work by clicking <strong>Save</strong>. <br/> Alternatively, click <strong>Save and sync now</strong> to save your work and sync data at the same time.</li>
 </ol>
