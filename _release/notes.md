@@ -10,6 +10,8 @@ ThoughtSpot 7 Cloud May version (ts7.may.cl)  is now available.
 
 These release notes include information about new and enhanced features.
 
+To see our feature deprecation plans, please see [Deprecation Announcements]({{ site.baseurl }}/release/deprecation.html)
+
 {: id="new"}
 ## New Features and Functionality
 
