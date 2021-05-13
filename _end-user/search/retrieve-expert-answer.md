@@ -5,7 +5,7 @@ summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{% include note.html content="Ask an Expert is not available in the new Answer experience. The new Answer experience is on by default for ThoughtSpot Cloud clusters. To use Ask an Expert, turn the new Answer experience off by selecting <strong>Classic experience </strong> from the <strong>Experience manager</strong> panel in your profile." %}
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 When you use **Ask an expert** to get help, you can view the answer after the expert responds.
 
