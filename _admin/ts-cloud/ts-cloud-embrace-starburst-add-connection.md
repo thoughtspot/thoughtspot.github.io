@@ -9,12 +9,12 @@ To connect to Starburst, follow these steps:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click {% include button.html content="+ Add connection" %} at the upper-right-hand side of the page.
+2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
    <!--![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"") -->
    <!--![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
-3. Create a name for your connection, a description (optional), then select the Starburst connection type, and click {% include button.html content="Continue" %}.
+3. Create a name for your connection, a description (optional), then select the Starburst connection type, and click **Continue**.
 
    ![Add a Starburst connection]({{ site.baseurl }}/images/starburst-connectiontype.png "Add a Starburst connection")
 
@@ -33,7 +33,7 @@ To connect to Starburst, follow these steps:
 
 6. Click **Continue**.      
 
-7. Select tables (on the left) and the columns from each table (on the right), and then click {% include button.html content="Create connection" %}.
+7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
    <!--![Select tables and columns for your connection]({{ site.baseurl }}/images/Trino-selecttables.png "Select tables and columns for your connection") -->

@@ -31,12 +31,27 @@ You can use your custom calendar to search the following ways:
 - Overriding the calendar used in the search bar by typing your custom calendar’s name
 
 ## Limitations
-- Only supported for Snowflake, BigQuery, Redshift, and Synapse connections at this time
+- Only supported for Snowflake connections at this time.
+- Calendar name must be unique across connections in a cluster.
+- When creating or updating a calendar, a table is created in the external database.
+- When deleting a calendar, the mapping to the table is removed from ThoughtSpot, but the table is not dropped from the external database.
+- Queries using the search bar do not filter suggestions by connection.
 - Date format must use *MM/DD/YYYY*. No other formats are supported.
 - Calendars, by default, use English names for days of the week, and month, but can be manually changed by downloading and editing the calendar file
 - Maximum scope of the date dimension is 90 years
 - Maximum length of a calendar year is 12 months
 - Calendar displays quarter numbers based on the Gregorian calendar (which starts on January 1st). If your custom calendar begins any other date, you must adjust the quarter numbers to align with your calendar. For example: If your custom calendar begins on April 1st, the calendar would incorrectly show April, May and June as quarter 2. In this case, you would need to correct this to indicate those months are quarter 1 and correct the subsequent months to have the correct quarter.
+
+## Querying with custom calendars
+
+You can use all keywords/formulas with a custom calendar. Example: last month for each year, last 10 weeks, etc.
+
+The scope of queries is within the connection, using the calendar from that connection.
+
+You can query using a custom calendar in the following ways:
+- Adding a calendar in the search bar
+- Binding a calendar with a column under the table detail page. Example: Binding `Lineorder` `commitdate` with the French calendar.
+- Specifying a calendar in the formula
 
 ## Prerequisites
 
