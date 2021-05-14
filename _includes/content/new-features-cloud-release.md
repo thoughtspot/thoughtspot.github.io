@@ -42,12 +42,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="deprecations">
 <dt>Deprecations</dt>
-<dd>The following features are unavailable in the May cloud release:
-<ul><li>The home page shortcuts for Answers and Pinboards feature is no longer available. Instead, you can <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">add important metrics from Pinboards to your watchlist</a> and track them from the home page.</li>
-<li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
-<li> <a href="{{ site.baseurl }}/end-user/search/replay-search.html">Replay search</a>. Instead, use <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot's search on data, either on demo data, or on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">your company's data</a>.</li>
-</ul>
-{% include content/new-answer-experience-deprecations.md %}</dd></dlentry>
+<dd>ThoughtSpot is dropping support for several features in the May Cloud release. These features are <strong><em>not</em></strong> available in the May release. ThoughtSpot is also deprecating several features in the May Cloud release. These features are still available in the May release, but ThoughtSpot will drop support for them in a later release. Refer to <a href="{{ site.baseurl }}/release/deprecation.html">Deprecation Announcements</a> for more information.</dd></dlentry>
 
 </dl>
 
