@@ -92,6 +92,6 @@ In your Snowflake database, do the following:
 
 ## Sharing a worksheet built from tables in a Snowflake connection that uses OAuth
 
-When you share a worksheet built from tables in a Snowflake connection that uses OAuth authentication, the user you share it with is prompted to log in to Snowflake in order to access the worksheet.
+When you share a ThoughtSpot object (Worksheet, Pinboard, or Answer) that references a Snowflake connection that uses OAuth authentication, the user is prompted to log in to Snowflake before they can view any data. When viewing the Pinboard, Answer, or running a search on the Worksheet, ThoughtSpot displays a message telling the user to log in with a button to initiate the login process.
 
 {% include important.html content="In order for a user to access your shared worksheet, they must have a default role assigned to their user in Snowflake." %}
