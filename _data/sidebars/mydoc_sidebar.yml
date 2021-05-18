@@ -182,6 +182,9 @@ entries:
         - title: Delete connection
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-connection.html
           output: web
+        - title: Configure OAuth
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
+          output: web
         - title: Best practices
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
           output: web
@@ -821,9 +824,9 @@ entries:
     - title: "SpotIQ analysis"
       url: /spotiq/customization.html
       output: web,ugBk
-    - title: "Monitor time series charts"
-      url: /admin/ts-cloud/monitor.html
-      output: web,ugBk
+#    - title: "Monitor time series charts"
+#      url: /admin/ts-cloud/monitor.html
+#      output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
 #      output: web,ugBk
