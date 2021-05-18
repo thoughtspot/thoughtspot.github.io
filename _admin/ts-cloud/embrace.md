@@ -16,7 +16,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 - [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
 
-{% include note.html content="Databrix is in beta and disabled by default. To enable either of these features, contact ThoughtSpot Support." %}
+{% include note.html content="Databricks is in beta and disabled by default. To enable either of these features, contact ThoughtSpot Support." %}
 
 ## How it works
 
