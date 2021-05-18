@@ -36,7 +36,7 @@ In your Snowflake database, do the following:
    ```
    DESCRIBE SECURITY INTEGRATION <enter description of your security integration>;
 
-   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('<enter same description of your security integration as previous line');
+   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('<enter same description of your security integration as previous line');
    ```
 
    Example of a full query:
