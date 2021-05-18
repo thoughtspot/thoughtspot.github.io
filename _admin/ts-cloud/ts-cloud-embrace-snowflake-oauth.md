@@ -56,7 +56,7 @@ In your Snowflake database, do the following:
 
    DESCRIBE SECURITY INTEGRATION OAUTH_CONFIG;
 
-   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('OAUTH_CONFIG');   
+   SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('OAUTH_CONFIG');   
    ```
 
 3. Click the **Run** button to run the full query.
