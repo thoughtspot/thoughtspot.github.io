@@ -5,6 +5,7 @@ toc: false
 summary: "Many organizations don’t use LDAP or active directory for user authentication. In other scenarios, some users are not in LDAP and are created only in ThoughtSpot. In such cases, you can choose to authenticate users against ThoughtSpot internal authentication."
 redirect_from:
 - /7.0.0.mar.sw/admin/setup/internal-auth.html
+- /7.0.0.mar.sw/admin/ts-cloud/authentication-local.html
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
