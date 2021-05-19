@@ -48,7 +48,7 @@ To allow your client application to connect to ThoughtSpot:
     -   `SSO`                                                    
         Sets SAML SSO as the authentication method. Federated users can authenticate with their SSO credentials to access the embedded ThoughtSpot content.
         -   `noRedirect` *Optional*                  
-            *Boolean*. When set to `true`, it opens the SAML SSO authentication workflow in a pop-up window, instead of redirecting users to a web browser.                      
+            *Boolean*. When set to `true`, it opens the SAML SSO authentication workflow in a pop-up window, instead of refreshing the application web page to direct users to the SAML login page.                    
 
     -   `AuthServer`                                      
         Enables trusted authentication method. To use the trusted authentication method, specify the trusted authentication server in the `authEndpoint` attribute or use the `getAuthToken` method.

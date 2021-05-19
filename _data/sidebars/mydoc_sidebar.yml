@@ -467,9 +467,6 @@ entries:
         - title: Embed data using REST APIs
           url: /admin/ts-cloud/embed-rest-api.html
           output: web
-        - title: Push data to an external application
-          url: /admin/ts-cloud/push-data-to-external-app.html
-          output: web
         - title: API response pagination
           url: /admin/ts-cloud/response-pagination.html
           output: web
