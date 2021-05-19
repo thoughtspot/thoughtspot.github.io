@@ -14,7 +14,7 @@ You can configure a custom button or menu item to initiate an action in your app
 ThoughtSpot allows you to add a custom action as a primary button or as a menu command in the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the **Pinboards** and **Search Answers** pages. If you have the [New Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) enabled on your cluster, ThoughtSpot lets you add a custom action to the contextual menu for visualizations in the **Pinboards** or **Search Answers** page.
 
 
-## Add a custom menu item
+## Configure a custom action to send data to a URL
 
 To add custom menu item:
 
@@ -56,13 +56,13 @@ To add custom menu item:
 
 11.  To view the action you just added, click **My actions**.
 
-## Add a callback function
+## Configure a callback custom action
 
 The callback custom action provides you with the flexibility to programmatically set up a function to request a call back to the parent application.
 
-When the user clicks the callback action label in the UI, the Visual Embed SDK generates the `customAction` event with the callback ID, and ThoughtSpot sends the requested data as a payload.
+WThoughtSpot allows you to programmatically set up a callback function from the parent application which triggers on the click of a custom action. For example, if you want to push insights from ThoughtSpot into your app or trigger an event to an external application, you can add a custom action in Thoughtspot and set up a callback in the parent application. When the user clicks this action on the **Answers** or **Pinboards** page, it initiates a callback to the parent application.
 
-To add a callback function:
+To add a callback custom action:
 
 1.  Go to **Develop** &gt; **Customizations** &gt; **Actions**.
 

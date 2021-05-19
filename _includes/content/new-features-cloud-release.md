@@ -84,7 +84,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dl>
 <dlentry id="custom-actions">
 <dt>Custom actions in the context menu</dt>
-<dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <i>Search Answers</i> or <i>Pinboards</i> page.</dd>
+<dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <b>Answers</b> or <b>Pinboards</b> page.</dd>
 <dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> enabled on your cluster.</dd>
 <dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">Add custom actions</a>.</dd></dlentry>
 </dl>
@@ -92,9 +92,39 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dl>
 <dlentry id="viz-embed-sdk">
 <dt>Visual Embed SDK Version 1.2.0</dt>
-<dd>The ThoughtSpot 7 Cloud May release introduces the Visual Embed SDK 1.2.0 version with a minor update and backward-compatible improvements.</dd>
-<dd>In this version, the <code>noRedirect</code> attribute is introduced in the <strong>SearchEmbed</strong>, <strong>AppEmbed</strong>, and <strong>PinboardEmbed</strong> SDK packages. The <code>noRedirect</code> attribute is available as an optional parameter for the <code>SSO</code> <code>AuthType</code>. When set to <code>true</code>, the <code>noRedirect</code> attribute opens SAML SSO authentication workflow in a pop-up window, instead of redirecting users to a web browser.</dd>
+<dd>The ThoughtSpot 7 Cloud May release introduces the Visual Embed SDK 1.2.0 version with a minor update and backward-compatible improvements.</dd></dlentry>
+</dl>
+<dlentry id="saml-authentication">
+<dt>SAML authentication</dt>
+<dd>The Visual Embed SDK packages now include the <code>noRedirect</code> attribute as an optional parameter for the <code>SSO</code> <code>AuthType</code>. If you want to display the SAML authentication workflow in a pop-up window, instead of refreshing the application web page to direct users to the SAML login page, you can set the <code>noRedirect</code> attribute to <code>true</code>.</dd>
 <dd>For more information, see the <a href="https://docs.thoughtspot.com/visual-embed-sdk/dev/en/?pageid=getting-started" target="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
+</dl>
+
+<dl>
+<dlentry id="viz-embed-sdk-notification">
+<dt>Visual Embed SDK notification when third-party cookies are disabled</dt>
+<dd>When a user accesses the embedded application from a web browser that has third-party cookies disabled, the Visual Embed SDK emits the <code>NoCookieAccess</code> event to notify the developer. Cookies are disabled by default in Safari. Users can enable third-party cookies in Safari’s Preferences setting page or use another web browser. To know how to enable this setting by default on Safari for a ThoughtSpot embedded instance, contact ThoughtSpot Support.</dd></dlentry>
+</dl>
+
+<dl>
+<dlentry id="pinboard-embed-enhancements">
+<dt>Pinboard embed enhancements</dt>
+<dd>The More menu <img src="/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, in the embedded Pinboard page now shows the following actions for pinboard and visualizations.</dd>
+<dd>Pinboard<ul><li>Save</li><li>Make a copy</li><li>Add filters</li><li>Configure filters</li><li>Present</li><li>Download as PDF</li><li>Pinboard info</li><li>Manage schedules</li></ul>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Users with edit permissions can view and access the <b>Save</b>, <b>Add filters</b>, <b>Configure filters</b>, and <b>Manage schedules</b> actions.</div>
+Visualizations on a pinboard
+<ul><li>Pin</li><li>Download</li><li>Edit</li><li>Present</li><li>Download as CSV</li><li>Download as XLSX</li><li>Download as PDF</li></ul>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Users with edit permissions can view and access the <b>Edit</b> action.
+The <b>Download as CSV</b>, <b>Download as XSLX</b>, and <b>Download as PDF</b> actions are available for table visualizations.
+The <b>Download</b> action is available for chart visualizations.</div>
+</dd></dlentry>
+</dl>
+
+<dl>
+<dlentry id="performance-optimization">
+<dt>Performance optimization</dt>
+<dd>This release introduces the following performance improvements for ThoughtSpot embedded applications:
+<ul><li>Faster loading of embedded objects and application pages.<li>Faster loading of preview results in the Playground.</li></dd></dlentry>
 </dl>
 
 <dl>
