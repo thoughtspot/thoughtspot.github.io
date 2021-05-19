@@ -97,7 +97,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dlentry id="saml-authentication">
 <dt>SAML authentication</dt>
 <dd>The Visual Embed SDK packages now include the <code>noRedirect</code> attribute as an optional parameter for the <code>SSO</code> <code>AuthType</code>. If you want to display the SAML authentication workflow in a pop-up window, instead of refreshing the application web page to direct users to the SAML login page, you can set the <code>noRedirect</code> attribute to <code>true</code>.</dd>
-<dd>For more information, see the <a href="https://docs.thoughtspot.com/visual-embed-sdk/dev/en/?pageid=getting-started" target="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
+<dd>For more information, see the <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=getting-started" target="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
 </dl>
 
 <dl>
