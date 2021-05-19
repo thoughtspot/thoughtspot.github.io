@@ -124,7 +124,7 @@ The <b>Download</b> action is available for chart visualizations.</div>
 <dlentry id="performance-optimization">
 <dt>Performance optimization</dt>
 <dd>This release introduces the following performance improvements for ThoughtSpot embedded applications:
-<ul><li>Faster loading of embedded objects and application pages.<li>Faster loading of preview results in the Playground.</li></ul></dd></dlentry>
+<ul><li>Faster loading of embedded objects and application pages.</li><li>Faster loading of preview results in the Playground.</li></ul></dd></dlentry>
 </dl>
 
 <dl>
