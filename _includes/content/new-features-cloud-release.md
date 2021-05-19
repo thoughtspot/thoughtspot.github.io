@@ -109,7 +109,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dl>
 <dlentry id="pinboard-embed-enhancements">
 <dt>Pinboard embed enhancements</dt>
-<dd>The More menu <img src="/images/icon-ellipses.png" alt="more options menu icon" class="inline" />, in the embedded Pinboard page now shows the following actions for pinboard and visualizations.</dd>
+<dd>The More menu <img src="/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> in the embedded Pinboard page now shows the following actions for pinboard and visualizations.</dd>
 <dd>Pinboard<ul><li>Save</li><li>Make a copy</li><li>Add filters</li><li>Configure filters</li><li>Present</li><li>Download as PDF</li><li>Pinboard info</li><li>Manage schedules</li></ul>
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Users with edit permissions can view and access the <b>Save</b>, <b>Add filters</b>, <b>Configure filters</b>, and <b>Manage schedules</b> actions.</div>
 Visualizations on a pinboard
@@ -124,7 +124,7 @@ The <b>Download</b> action is available for chart visualizations.</div>
 <dlentry id="performance-optimization">
 <dt>Performance optimization</dt>
 <dd>This release introduces the following performance improvements for ThoughtSpot embedded applications:
-<ul><li>Faster loading of embedded objects and application pages.<li>Faster loading of preview results in the Playground.</li></dd></dlentry>
+<ul><li>Faster loading of embedded objects and application pages.<li>Faster loading of preview results in the Playground.</li></ul></dd></dlentry>
 </dl>
 
 <dl>
