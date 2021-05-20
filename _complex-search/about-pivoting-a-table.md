@@ -1,92 +1,73 @@
 ---
 title: [Pivot table]
-
-
-last_updated: 2/24/2021
+last_updated: 5/20/2021
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Pivot tables enable you to explore an alternate visualization of your data in a
+wide, customizable table. They allow you to visualize some of your data horizontally and some data vertically in the same table. A pivot table is a chart
+time table that uses a drag-and-drop interface.  
 
-Creating a pivot table enables exploring alternate visualization of data in a
-wide table. It is useful especially when improve data display when some data is
-best viewed horizontally, while others, vertically. Pivot tables are a chart
-time table that use a drag-and-drop interface.  
+If you would like to visualize your search as a pivot table, click on the **change visualization** icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png){: .inline} near the top right of your screen, and select **pivot table**. You need at least one attribute and one measure in your search.
 
- ![]({{ site.baseurl }}/images/pivot_chart_example.png "Pivot table chart type")
+You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
 
-If a **Pivot Table** is available for your answer, you see this type of
-visualization as an option under the visualization. Add rows, measures, and
-columns to the search bar:
+If you right-click a row or column heading, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, or **SpotIQ analyze**, or **sort**.
 
- ![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png "Chart axes: rows, measures, columns")
+![Sort by a row heading]({{ site.baseurl }}/images/charts-pivot-table-sort.png "Sort by a row heading")
 
+If you right-click a table cell, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, **SpotIQ analyze**, or **edit** the measure column. When you click **Edit [measure column]**, the **Edit** menu for the column opens, allowing you to edit the number and conditional formatting.
 
-You can restructure your pivot table by moving these values under **Configure
-Chart** or by dragging and dropping column headings on the table itself. If you
-right-click a row heading, the system displays a contextual sort menu:
+![Pivot table cell menu]({{ site.baseurl }}/images/charts-pivot-table-cell-new.png "Pivot table cell menu")
 
-![]({{ site.baseurl }}/images/pivot-context-menu.png)
+## Expand or contract columns and rows
 
+Click on a column or row heading to expand it. Additionally, you can expand or collapse all columns and rows by right-clicking the arrow on the top left of a cell.
 
-## Expanding or contract columns and rows
-
-Click a column or row to expand it. Additionally, you can expand or collapse all
-by right clicking the arrow on the top left of a cell.
-
-![]({{ site.baseurl }}/images/pivot_table_expand_collapse_all.png "Expand or collapse all option")
-
-When you pin a pivot table to a pinboard, it will retain your expansion settings.
+When you pin a pivot table to a Pinboard, it retains your expansion settings.
 
 ## Display totals
 
-You can show **% Row Grand Total** and, **% of Column Grand Total**, or **% of
-Grand Total** on pivot tables. Grand  totals aggregate data of the entire pivot
-grid. They show values summarized across all available data.
+You can see your data as a percent of a row or column total, or as a percent of the grand total. Grand totals aggregate all the data in your pivot table.
 
-![]({{ site.baseurl }}/images/pivot-grand-total.png)
+To see your data as a percent, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Click on the dropdown menu to choose whether you want to see your data as a percent of a row or column total, or as a percent of the grand total.
 
-You only see 100% value when grand total rows is enabled. This is because when
-it is disabled, the rows and columns they have no parental total column and the
-percentage cannot be calculated. All intermediate total (columns or rows)
+![See your data as a percent]({{ site.baseurl }}/images/chart-pivot-table-grand-total.png "See your data as a percent")
+
+You only see 100% value when grand total rows is enabled. When
+it is disabled, the rows and columns have no parental total column, so the
+percentage cannot be calculated. All intermediate totals (columns or rows)
 display the percentage values calculated with respect to their parent. For each
 inner summary (column or row) the parental total values are assumed to be 100%
 internally.
 
-To see the total column make sure you also have **Pivot Summaries** checked.
-
-![]({{ site.baseurl }}/images/pivot-summaries.png)
+Select **Pivot Summaries** in the **Settings** menu to see row and column totals.
 
 ## Format row headers
 
-For row headers, you can switch between the default view and a more compact
-(tree) layout:
+You can view your row headers in a more compact (tree) layout. To turn on compact row headers, select **Compact row headers** in the **Settings** menu.
 
-![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png)
+![Compact row headers]({{ site.baseurl }}/images/chart-pivot-table-compact.png "Compact row headers")
 
-From the header menu users, change the type of total shown for an aggregated
-measure:
+You can change the type of total shown for an aggregated measure from the header menu that appears when you click on a header's **more** icon:
 
-![]({{ site.baseurl }}/images/pivot-table-agg-totals.png )
+![Change aggregation type]({{ site.baseurl }}/images/chart-pivot-table-aggregate.png "Change aggregation type")
 
-You can also **Remove** a headline.
+## Heatmap mode
 
-## Heatmap of large contributors
+The heatmap functionality allows you to see which measures contribute more to the total than
+others within the table.
 
-The heatmap functionality allows you to see which measures contribute more than
-others (heat) within the table.
+![Heatmap mode]({{ site.baseurl }}/images/chart-pivot-table-heatmap.png "Heatmap mode")
 
-![]({{ site.baseurl }}/images/pivot_table_heatmap_mode.png "Heatmap mode enabled")
+To turn on the heatmap, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Select **heatmap mode**.
 
-Toggle on the **Heatmap mode** found under **Configuration Options** to add
-color coordination to your data.
+## Number and conditional formatting
+You can perform conditional and number formatting on pivot tables. Both these features work the same way they work for regular ThoughtSpot tables. Select **Edit chart configuration** ![chart config icon]({{ site.basuerl }}/images/icon-gear-10px.png "chart config icon"){: .inline}, and click on the attribute measure you would like to add number or conditional formatting to. Note that attributes only support conditional formatting, not number formatting. Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table) and [Number formatting]({{ site.baseurl }}/end-user/search/about-tables.html#number-formatting) for more information.
 
 ## Pivot table limitations
 
 The pivot table chart type has these limitations:
 
-- Only the first 10,000 data values are used. If you would like to increase this limit, please contact ThoughtSpot Support.
-- Pivot table is not available if the dataset contains more than 100,000 rows.
-- Cardinality is not configurable.
-- Show underlying data menu is unavailable.
-- Conditional formatting is not functional.
+- The pivot table displays a maximum of 100k rows. If your query returns more than 100k rows, you cannot visualize it with a pivot table.
