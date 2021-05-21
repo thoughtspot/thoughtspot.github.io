@@ -22,7 +22,7 @@ You can add visual cues for KPIs (Key Performance Indicators) or threshold metri
 
 You can apply conditional formatting to both table cells and column summaries. You can specify a background color, font color, and/ or font style: bold, italics, underlined, or strikethrough. You can create conditional formatting rules for both measures and attributes.
 
-{% include note.html content="You can only apply conditional formatting to numbers and strings. For example, you can apply conditional formatting to a <code>month of year</code> column, with values such as <code>January</code>, but not to date column where dates are in the format <code>1 Jan 2021</code>." %}
+{% include note.html content="You can only apply conditional formatting to numbers and strings. For example, you can apply conditional formatting to a <code>month of year</code> column, with values such as <code>January</code>, but not to date column where dates are in the format <code>1 Jan 2021</code>. For pivot tables, you can only apply conditional formatting to measure, not attributes." %}
 
 If you create multiple conditional formatting rules for one measure or attribute, the first rule you create overrides the others, if there is a conflict. To change which rule overrides the others, simply drag and drop the rule to the top of the list of conditional formatting rules.
 
