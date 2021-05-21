@@ -7,9 +7,9 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- <meta name="description" content="You can configure Security Assertion Markup Language (SAML) using ThoughtSpot's command line interface, tscli."> -->
+<!-- <meta name="description" content=""> -->
 <meta name="keywords" content=",  ">
-<title>Configure SAML | ThoughtSpot</title>
+<title>Configure OAuth for a Snowflake connection | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.3/css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -48,22 +48,22 @@
 
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>[“Configure SAML”] | thoughtspot.github.io</title>
+<title>[“Configure OAuth for a Snowflake connection”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="[“Configure SAML”]" />
+<meta property="og:title" content="[“Configure OAuth for a Snowflake connection”]" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance using a tscli based configurator, or through the Admin Console." />
-<meta property="og:description" content="ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance using a tscli based configurator, or through the Admin Console." />
-<link rel="canonical" href="https://docs.thoughtspot.com/6.3/app-integrate/SAML/configure-SAML-with-tscli.html" />
-<meta property="og:url" content="https://docs.thoughtspot.com/6.3/app-integrate/SAML/configure-SAML-with-tscli.html" />
+<meta name="description" content="ThoughSpot supports OAuth for a Snowflake connection. With OAuth, each ThoughtSpot user authenticates with Snowflake and authorizes ThoughtSpot to query the database using their Snowflake user account." />
+<meta property="og:description" content="ThoughSpot supports OAuth for a Snowflake connection. With OAuth, each ThoughtSpot user authenticates with Snowflake and authorizes ThoughtSpot to query the database using their Snowflake user account." />
+<link rel="canonical" href="https://docs.thoughtspot.com/6.3/data-integrate/embrace/embrace-snowflake-oauth.html" />
+<meta property="og:url" content="https://docs.thoughtspot.com/6.3/data-integrate/embrace/embrace-snowflake-oauth.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-05-06T18:35:56-07:00" />
+<meta property="article:published_time" content="2021-05-21T12:38:31-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[“Configure SAML”]" />
+<meta property="twitter:title" content="[“Configure OAuth for a Snowflake connection”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on the ThoughtSpot instance using a tscli based configurator, or through the Admin Console.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/app-integrate/SAML/configure-SAML-with-tscli.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/app-integrate/SAML/configure-SAML-with-tscli.html","headline":"[“Configure SAML”]","dateModified":"2021-05-06T18:35:56-07:00","datePublished":"2021-05-06T18:35:56-07:00","@context":"https://schema.org"}</script>
+{"description":"ThoughSpot supports OAuth for a Snowflake connection. With OAuth, each ThoughtSpot user authenticates with Snowflake and authorizes ThoughtSpot to query the database using their Snowflake user account.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/data-integrate/embrace/embrace-snowflake-oauth.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/data-integrate/embrace/embrace-snowflake-oauth.html","headline":"[“Configure OAuth for a Snowflake connection”]","dateModified":"2021-05-21T12:38:31-07:00","datePublished":"2021-05-21T12:38:31-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -477,13 +477,13 @@ $(document).ready(function(){
        
 
     <!-- KEEP FOR TESTING
-         <li class="small-sidebar-link">Current page URL is /app-integrate/SAML/configure-SAML-with-tscli.html.</li>
+         <li class="small-sidebar-link">Current page URL is /data-integrate/embrace/embrace-snowflake-oauth.html.</li>
          <li class="small-sidebar-link">Current version is 7.0.</li>
          <li class="small-sidebar-link">absolute_url is .</li>
          <li class="small-sidebar-link">url_chunks[0] is .</li>
-                  <li class="small-sidebar-link">url_chunks[1] is app-integrate.</li>
-           <li class="small-sidebar-link">url_chunks[2] is SAML.</li>
-                    <li class="small-sidebar-link">url_chunks[3] is configure-SAML-with-tscli.html.</li>
+                  <li class="small-sidebar-link">url_chunks[1] is data-integrate.</li>
+           <li class="small-sidebar-link">url_chunks[2] is embrace.</li>
+                    <li class="small-sidebar-link">url_chunks[3] is embrace-snowflake-oauth.html.</li>
  -->
 
        
@@ -499,12 +499,12 @@ $(document).ready(function(){
        
 
   
-  <li class="small-sidebar-version-nav">&nbsp;&nbsp;&nbsp;This is the latest version.</li>
+  <li class="small-sidebar-version-nav"><a href="/7.0/">Switch to version 7.0 (latest)</a></li>
   
 
          <!-- KEEP FOR TESTING
-<li class="small-sidebar-link">newURL is /7.0/app-integrate/SAML/configure-SAML-with-tscli.html</li>
-  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.3/7.0/app-integrate/SAML/configure-SAML-with-tscli.html</li>
+<li class="small-sidebar-link">newURL is /7.0/data-integrate/embrace/embrace-snowflake-oauth.html</li>
+  <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.3/7.0/data-integrate/embrace/embrace-snowflake-oauth.html</li>
  -->
 
     <!-- End add link to latest version
@@ -2857,7 +2857,7 @@ $(document).ready(function(){
                 
                   
                       
-                          <li class="active"><a href="/6.3/app-integrate/SAML/configure-SAML-with-tscli.html">Configure SAML</a></li>
+                          <li><a href="/6.3/admin/setup/configure-SAML-with-tscli.html">Configure SAML</a></li>
                       
                    
                 
@@ -3568,6 +3568,12 @@ $(document).ready(function(){
                   
                       
                           <li><a href="/6.3/data-integrate/embrace/embrace-snowflake-modify.html">Modify a connection</a></li>
+                      
+                   
+                
+                  
+                      
+                          <li class="active"><a href="/6.3/data-integrate/embrace/embrace-snowflake-oauth.html">Config OAuth</a></li>
                       
                    
                 
@@ -5415,15 +5421,13 @@ $(document).ready(function(){
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Configure SAML</h1>
+   <h1 class="post-title-main">Configure OAuth for a Snowflake connection</h1>
 </div>
 
 
 
 <div class="post-content">
 
-   
-    <div class="summary">You can configure Security Assertion Markup Language (SAML) using ThoughtSpot's command line interface, tscli.</div>
    
 
     
@@ -5459,97 +5463,116 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    5 minutes
+    3 minutes
   
 </span> -->
 
     
 
-  <p>ThoughtSpot can use Security Assertion Markup Language (SAML) to authenticate
-users. You can set up SAML through the shell on the ThoughtSpot instance <a href="#tscli">using a
-<code class="language-plaintext highlighter-rouge">tscli</code> based configurator</a>, or <a href="#admin-portal">through the Admin Console</a>.</p>
+  <p>ThoughSpot supports OAuth for a Snowflake connection. With OAuth, each ThoughtSpot user authenticates with Snowflake and authorizes ThoughtSpot to query the database using their Snowflake user account.</p>
 
-<p>Before configuring SAML, you need this information:</p>
+<p>For Snowflake connections that use OAuth, users must log in when their OAuth tokens expire. The amount of time that Snowflake OAuth tokens are valid is set in Snowflake.</p>
 
-<ul>
-  <li>Domain name for ThoughtSpot service (E.g. - <code class="language-plaintext highlighter-rouge">thoughtspot.ts-customer.com</code>).</li>
-  <li>Port of the server where your ThoughtSpot instance is running (E.g. - <code class="language-plaintext highlighter-rouge">443</code>).</li>
-  <li>Protocol, or the authentication mechanism for ThoughtSpot (E.g. - <code class="language-plaintext highlighter-rouge">http</code> or <code class="language-plaintext highlighter-rouge">https</code>)</li>
-  <li>Unique service name that is used as the unique key by IDP to identify the client (E.g. - <code class="language-plaintext highlighter-rouge">urn:thoughtspot:callosum:saml</code>). You may know this as the <em>Entity ID</em>.</li>
-  <li>Allowed skew time, which is the time after authentication response is rejected and sent back from the IDP. <code class="language-plaintext highlighter-rouge">86400</code> is a popular choice.</li>
-  <li>The absolute path to the identity provider’s metadata file. Typically called <code class="language-plaintext highlighter-rouge">idp-meta.xml</code> or similar. This is needed so that the configuration persists over upgrades. Best to set it up on persistent/HA storage (NAS volumes) else in the same absolute path on all nodes in the cluster.  If your IDP needs an Assertion Consumer Service URL to create the metadata file, use <code class="language-plaintext highlighter-rouge">https://&lt;hostname_or_IP&gt;/callosum/v1/saml/SSO</code>.</li>
-  <li>ThoughtSpot’s metadata file, <code class="language-plaintext highlighter-rouge">spring_saml_metadata.xml</code>. To download this file, navigate to <code class="language-plaintext highlighter-rouge">https://&lt;hostname-or-IP&gt;/callosum/v1/saml/metadata</code>. The file automatically downloads.</li>
-  <li>This configurator also checks with the user if internal authentication needs to be set or not. This internal authentication mechanism is used to authenticate <code class="language-plaintext highlighter-rouge">tsadmin</code> and other ThoughtSpot local users. Set it to true by default to let local system/admin users in via the frontend.</li>
-</ul>
+<h2 id="configuring-a-snowflake-database-for-oauth-with-thoughtspot">Configuring a Snowflake database for OAuth with ThoughtSpot</h2>
 
-<h2 id="tscli">Configure SAML using tscli</h2>
+<p>To add a Snowflake connection to ThoughtSpot using OAuth, you must set up the OAuth integration in Snowflake. This requires a Snowflake user account with ACCOUNTADMIN permission.</p>
 
-<p>Use this procedure to set up SAML on ThoughtSpot for user authentication. Note that this configuration persists across software updates, so you do not have to reapply it if you update to a newer release of ThoughtSpot.</p>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Each ThoughtSpot instance requires a unique Snowflake security integration. Each user in Snowflake must have a default warehouse and default role.</div>
+
+<p>In your Snowflake database, do the following:</p>
 
 <ol>
-  <li>Log in to the Linux shell using SSH.</li>
-  <li>
-    <p>Execute the command to launch the interactive SAML configuration:</p>
+  <li>In the worksheet view, enter the following commands, and click <strong>Run</strong>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SHOW USERS;
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tscli saml configure
+SHOW SECURITY INTEGRATIONS;
+
+CREATE OR REPLACE SECURITY INTEGRATION &lt;enter a name for your security role&gt;
+  TYPE = OAUTH
+  OAUTH_CLIENT = CUSTOM
+  OAUTH_CLIENT_TYPE = &lt;enter a client type&gt;
+  OAUTH_REDIRECT_URI = 'https://&lt;public url of your ThoughtSpot instance&gt;/callosum/v1/connection/generateTokens'
+  ENABLED = TRUE
+  COMMENT = '&lt;enter a description of your security profile&gt;'
 </code></pre></div>    </div>
   </li>
-  <li>Complete the configurator prompts with the information and files you gathered above.</li>
-  <li>When the configuration is complete, open a Web browser and go to the ThoughtSpot login page.
-It should now show the Single Sign On option.</li>
-</ol>
+  <li>At the bottom of what you entered in step 1, add an empty line, and then enter the following to describe your security integration:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DESCRIBE SECURITY INTEGRATION &lt;enter description of your security integration&gt;;
 
-<h2 id="admin-portal">Configure SAML using the Admin Console</h2>
+SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('&lt;enter same description of your security integration as previous line');
+</code></pre></div>    </div>
 
-<p>You can configure the SAML integration through the Admin Console.</p>
+    <p>Example of a full query:</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you configure authentication through SAML, you cannot also configure authentication through Active Directory.</div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SHOW USERS;
 
-<p>Navigate to the Admin Console by clicking on the <strong>Admin</strong> tab from the top navigation bar. Select <strong>SAML</strong> from the side navigation bar that appears.</p>
+SHOW SECURITY INTEGRATIONS;
 
-<p><img src="/6.3/images/admin-portal-saml.png" alt="Admin Console - SAML" title="Admin Console - SAML" /></p>
+CREATE OR REPLACE SECURITY INTEGRATION OAUTH_CONFIG
+  TYPE = OAUTH
+  OAUTH_CLIENT = CUSTOM
+  OAUTH_CLIENT_TYPE = 'CONFIDENTIAL'
+  OAUTH_REDIRECT_URI = 'https://177.122.45.2/callosum/v1/connection/generateTokens'
+  ENABLED = TRUE
+  COMMENT = 'Profile for passthrough'
 
-<p>Click the <strong>Configure</strong> button in the middle of the screen.</p>
+DESCRIBE SECURITY INTEGRATION OAUTH_CONFIG;
 
-<p><img src="/6.3/images/admin-portal-saml-configure.png" alt="Configure SAML" title="Configure SAML" /></p>
-
-<p>Fill in the following parameters:</p>
-
-<ol>
-  <li><strong>ThoughtSpot Service Address</strong>: A fully qualified and resolvable domain name for the ThoughtSpot service. For example, <em>thoughtspot.thoughtspot-customer.com</em>.</li>
-  <li><strong>Port</strong>: Enter <code class="language-plaintext highlighter-rouge">443</code> in this box. This is the port of the server where your ThoughtSpot instance is running.</li>
-  <li><strong>Unique Service Name</strong>: The unique key used by your Identity Provider to identify the client. For example, <em>urn:thoughtspot:callosum:saml</em>. You may know this as the <em>Entity ID</em>.</li>
-  <li><strong>Skew Time in Seconds</strong>: The allowed skew time, after which the authentication response is rejected and sent back from the IDP. <em>86400</em> is a popular choice. The default is <em>3600</em>.</li>
-  <li><strong>Protocol</strong>: The authentication mechanism for ThoughtSpot. For example, <code class="language-plaintext highlighter-rouge">http</code> or <code class="language-plaintext highlighter-rouge">https</code>.</li>
-  <li>
-    <p><strong>IdP Metadata XML File</strong>: The absolute path to your Identity Provider’s metadata file. This file is provided by your IdP.  You need this file so that the configuration persists over upgrades. It is a best practice to set it up on persistent/HA storage (NAS volumes) or in the same absolute path on all nodes in the cluster. For example, <em>idp-meta.xml</em>. If your IDP needs an Assertion Consumer Service URL to create the metadata file, use <code class="language-plaintext highlighter-rouge">https://&lt;hostname_or_IP&gt;/callosum/v1/saml/SSO</code>.</p>
-
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If your IdP does not allow you to import the IdP metadata XML file, you must map values manually. For the ThoughtSpot system to pick up certain attributes, you must map them to specific fields. Map the username you would like to use to <code>NameId</code>, and map the email id of the user to <code>mail</code>.</div>
+SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRET('OAUTH_CONFIG');   
+</code></pre></div>    </div>
   </li>
-  <li><strong>Automatically add SAML users to ThoughtSpot upon first authentication</strong>: Choose whether or not to add SAML users to ThoughtSpot when they first authenticate. If you choose ‘yes’, then new users will be automatically created in ThoughtSpot upon first successful SSO login.
-If you choose ‘no’, then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must <a href="/6.3/admin/admin-portal/users.html">add users manually</a>.</li>
+  <li>
+    <p>Click the <strong>Run</strong> button to run the full query.</p>
+
+    <p>The Details window appears displaying a JSON object.</p>
+  </li>
+  <li>
+    <p>Copy the JSON object and click <strong>Done</strong> to close the window.</p>
+  </li>
+  <li>
+    <p>Paste the contents into a text editor.</p>
+
+    <p>Example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{"OAUTH_CLIENT_SECRET_2":"KqKBu0xOxPtmk+RKvNP0+eIAMlFxMsu8rRh6s5q1qLY",
+"OAUTH_CLIENT_SECRET":"KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ",
+"OAUTH_CLIENT_ID":"aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO="}
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>For OAUTH_CLIENT_ID, copy the information between quotes after the colon (:).</p>
+
+    <p>Example: <code class="language-plaintext highlighter-rouge">aOxPzmlRJvCP5eIUMlFxMbu6rJh7mTO=</code></p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Make sure you include the equals sign (=), if it exists.</div>
+  </li>
+  <li>
+    <p>In the Snowflake connection details page in ThoughtSpot, paste the OAuth client ID in the <strong>OAuth Client ID</strong> field.</p>
+  </li>
+  <li>
+    <p>For OAUTH_CLIENT_SECRET, copy the information between quotes after the colon (:).</p>
+
+    <p>Example: <code class="language-plaintext highlighter-rouge">KdKBb0aOxPzml+RJvMP1/eIEMlFxM/su6rPh2wLZ</code></p>
+  </li>
+  <li>
+    <p>In the Snowflake connection details page in ThoughtSpot, paste the OAuth client ID in the <strong>OAuth Client Secret</strong> field.</p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Once a connection is created the token associated with the user login credentials for the connection is stored in ThoughtSpot for 90 days.</div>
+  </li>
 </ol>
 
-<p>After you fill in all parameters, click <strong>OK</strong>.</p>
+<h2 id="sharing-a-worksheet-built-from-tables-in-a-snowflake-connection-that-uses-oauth">Sharing a worksheet built from tables in a Snowflake connection that uses OAuth</h2>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. This group has no privileges. You must manually assign users to ThoughtSpot groups to give them privileges, such as <strong>can upload user data</strong>, or <strong>can manage data</strong>.</div>
+<p>When you share a ThoughtSpot object (Worksheet, Pinboard, or Answer) that references a Snowflake connection that uses OAuth authentication, the user is prompted to log in to Snowflake before they can view any data. When viewing the Pinboard, Answer, or running a search on the Worksheet, ThoughtSpot displays a message telling the user to log in with a button to initiate the login process.</p>
 
-<h2 id="additional-resources">Additional resources</h2>
-<p>As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:</p>
-<ul>
-  <li><a href="https://training.thoughtspot.com/authentication-security/621450" target="_blank">Single Sign On (SSO)</a></li>
-</ul>
-
-<p>See other training resources at <br />
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="/6.3/images/ts-u.png" alt="ThoughtSpot U" /></a></p>
-
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In order for a user to access your shared worksheet, they must have a default role assigned to their user in Snowflake.</div>
 
   <div class="tags">
     <div style="float:right;">
       
         
 
-    <!--    <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.3/_app-integrate/SAML/configure-SAML-with-tscli.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
+    <!--    <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.3/_data-integrate/embrace/embrace-snowflake-oauth.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
 
         
       
@@ -5569,9 +5592,9 @@ If you choose ‘no’, then SAML users will not be added in ThoughtSpot upon fi
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: May 6, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: May 21, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 11/18/2019<br/>  -->
+         <!-- <span>Page last updated:</span> 4/20/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
