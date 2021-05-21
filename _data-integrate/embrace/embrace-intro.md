@@ -140,6 +140,11 @@ The following matrix compares the features that are available in our internal hi
 <td>&check;</td>
 <td>&cross;</td>
 </tr>
+<tr>
+<td>Location keywords</td>
+<td>&check;</td>
+<td>&cross;</td>
+</tr>
 </tbody>
 </table>
 
