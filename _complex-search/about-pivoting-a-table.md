@@ -1,6 +1,6 @@
 ---
 title: [Pivot table]
-last_updated: 5/20/2021
+last_updated: 5/21/2021
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,7 +17,7 @@ If you right-click a row or column heading, the system displays a contextual men
 
 ![Sort by a row heading]({{ site.baseurl }}/images/charts-pivot-table-sort.png "Sort by a row heading")
 
-If you right-click a table cell, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, **SpotIQ analyze**, or **edit** the measure column. When you click **Edit [measure column]**, the **Edit** menu for the column opens, allowing you to edit the number and conditional formatting.
+If you right-click a table cell, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, or **SpotIQ analyze**.
 
 ![Pivot table cell menu]({{ site.baseurl }}/images/charts-pivot-table-cell-new.png "Pivot table cell menu")
 
@@ -64,7 +64,7 @@ others within the table.
 To turn on the heatmap, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Select **heatmap mode**.
 
 ## Number and conditional formatting
-You can perform conditional and number formatting on pivot tables. Both these features work the same way they work for regular ThoughtSpot tables. Select **Edit chart configuration** ![chart config icon]({{ site.basuerl }}/images/icon-gear-10px.png "chart config icon"){: .inline}, and click on the attribute measure you would like to add number or conditional formatting to. Note that attributes only support conditional formatting, not number formatting. Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table) and [Number formatting]({{ site.baseurl }}/end-user/search/about-tables.html#number-formatting) for more information.
+You can perform conditional and number formatting on pivot tables. Both these features work the same way they work for regular ThoughtSpot tables. Select **Edit chart configuration** ![chart config icon]({{ site.basuerl }}/images/icon-gear-10px.png "chart config icon"){: .inline}, and click on the measure you would like to add number or conditional formatting to. Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table) and [Number formatting]({{ site.baseurl }}/end-user/search/about-tables.html#number-formatting) for more information.
 
 ## Pivot table limitations
 
