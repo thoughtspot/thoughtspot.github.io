@@ -17,7 +17,7 @@ To reduce the total amount of data and rows of data, we recommend the following 
 <p>[embed label="for administrators"]</p>
 ## Data Boundaries
 
-Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:
+Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. 
 
 Contact ThoughtSpot support for guidance on boundaries for the following:
 - Maximum number of rows that can be downloaded
