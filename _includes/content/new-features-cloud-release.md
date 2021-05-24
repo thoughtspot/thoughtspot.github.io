@@ -30,10 +30,10 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dlentry id="admin-privileges">
 <dt>New admin privileges <span class="label label-beta">Beta</span></dt>
 <dd>This release introduces new administrator privileges that separate the abilities of the administrator into 4 specific privileges. For example, you can allow certain users to create and manage users, while not allowing them to manage SAML integration or other advanced settings. The <strong>Can administer ThoughtSpot</strong> privilege, which encompasses all 4 new administrator privileges, still appears as an option by default. To remove it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>. The 4 new privileges are:
-<ul><li>Can manage users</li>
-<li>Can manage privileges</li>
-<li>Can operate application</li>
-<li>Can see system information</li></ul>
+<ul><li>Can manage users: Can create, delete, and edit users.</li>
+<li>Can manage privileges: Can create, delete, and edit groups. This includes the group's name, sharing visibility, and privileges.</li>
+<li>Can operate application: Can configure local and SAML authentication. Can manage application settings: search, SpotIQ, and onboarding advanced settings, style and help customization. Can view scheduled maintenance.</li>
+<li>Can see system information: Can view all default admin data, including system worksheets and pinboards.</li></ul>
 This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
 </dlentry>
 
