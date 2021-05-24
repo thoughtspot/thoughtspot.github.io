@@ -39,11 +39,11 @@ User activity that incurs usage minutes includes any user interaction with the p
 
 {: id="credit-usage-pinboard"}
 ## Monitor your consumption
-You can monitor your credit consumption with the Credit Usage Pinboard, a new default admin-only Pinboard with data from the new Credit Usage Worksheet. You can access this Pinboard by searching for it on the **Pinboards** page.
+You can monitor your credit consumption with the Credit Usage pinboard, a new default admin-only pinboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the pinboards and answers by searching for them from the home page, or from the **Pinboards** or **Answers** pages.
 
-![Credit Usage Pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
+![Credit Usage pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
 
-The Credit Usage Pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can also search the data yourself, using the Credit Usage Worksheet, and create your own Answers and Pinboards.
+The Credit Usage pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can use it to [analyze user activity and event details](#user-activity). You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and pinboards.
 
 The Credit Usage Pinboard contains the following visualizations and headlines:
 - Daily Usage, with Unique Users (last 30 days)
@@ -56,3 +56,6 @@ The Credit Usage Pinboard contains the following visualizations and headlines:
 - Monthly Credits Consumed, with Unique Users
 - Weekly Credits Consumed, with Unique Users, Last 8 Weeks
 - Month of Year Credit Usage, by User GUID
+
+{: id="user-activity"}
+### Analyze user activity and event details
