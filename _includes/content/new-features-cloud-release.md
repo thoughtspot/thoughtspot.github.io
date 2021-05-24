@@ -25,4 +25,18 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="june-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
+<dl>
+
+<dlentry id="admin-privileges">
+<dt>New admin privileges <span class="label label-beta">Beta</span></dt>
+<dd>This release introduces new administrator privileges that separate the abilities of the administrator into 4 specific privileges. For example, you can allow certain users to create and manage users, while not allowing them to manage SAML integration or other advanced settings. The <strong>Can administer ThoughtSpot</strong> privilege, which encompasses all 4 new administrator privileges, still appears as an option by default. To remove it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>. The 4 new privileges are:
+<ul><li>Can manage users</li>
+<li>Can manage privileges</li>
+<li>Can operate application</li>
+<li>Can see system information</li></ul>
+This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
+</dlentry>
+
+</dl>
+
 <h3><a id="june-cloud-developer"></a>For the Developer</h3>
