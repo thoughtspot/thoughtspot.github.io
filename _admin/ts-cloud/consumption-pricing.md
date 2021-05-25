@@ -39,11 +39,11 @@ User activity that incurs usage minutes includes any user interaction with the p
 
 {: id="credit-usage-pinboard"}
 ## Monitor your consumption
-You can monitor your credit consumption with the Credit Usage Pinboard, a new default admin-only Pinboard with data from the new Credit Usage Worksheet. You can access this Pinboard by searching for it on the **Pinboards** page.
+You can monitor your credit consumption with the Credit Usage pinboard, a new default admin-only pinboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the pinboards and answers by searching for them from the home page, or from the **Pinboards** or **Answers** pages.
 
-![Credit Usage Pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
+![Credit Usage pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
 
-The Credit Usage Pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can also search the data yourself, using the Credit Usage Worksheet, and create your own Answers and Pinboards.
+The Credit Usage pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can use it to determine which users or time periods consume more credits than others. You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and pinboards.
 
 The Credit Usage Pinboard contains the following visualizations and headlines:
 - Daily Usage, with Unique Users (last 30 days)
@@ -56,3 +56,19 @@ The Credit Usage Pinboard contains the following visualizations and headlines:
 - Monthly Credits Consumed, with Unique Users
 - Weekly Credits Consumed, with Unique Users, Last 8 Weeks
 - Month of Year Credit Usage, by User GUID
+
+Use the visualizations on this pinboard to monitor your consumption. For example, you may notice that a certain user consumes most of your credits, or that there was a spike during a certain time window. You can then use the new default answers to [analyze user activity and event details](#user-activity).
+
+{: id="user-activity"}
+### Analyze user activity and event details
+ThoughtSpot provides 2 default answers to help you track and analyze your credit consumption. These answers allow you to dive deeper into the credit consumption and activities of a specific user, or over a specific time window.
+
+Follow these best practices for the 2 new answers, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*.
+
+1. Examine the Credit Usage pinboard to determine a user or time window of interest. For example, you may notice that a certain user consumes most of your credits, or that there was a spike during a certain time window.
+
+2. Determine how you want to investigate this credit consumption:
+    - **Sample Answer - Credit usage details**: This answer is ideal for looking into object-level details, such as the objects a user accessed and the actions they performed on those objects.
+    - **Credit usage from Charging Records**: Use this answer to learn more about API-level details. You can map activities and credit consumption to specific API calls.
+
+3. Use the built-in filters on these answers to narrow down your search to the user and time window of interest. You must edit the time window filter in the search bar, using this syntax: `Timestamp >= mm/dd/yyyy hh:mm:ss Timestamp <= mm/dd/yyyy hh:mm:ss`. ThoughtSpot filters the answer to only show data in between the two dates you specify. Select a user to filter by, and for the *Sample Answer - Credit usage details* answer, optionally select a user action filter.
