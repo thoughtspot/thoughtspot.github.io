@@ -27,9 +27,17 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
+<dlentry id="consumption-pricing">
+<dt>Consumption-based pricing system answers</span></dt>
+<dd>ThoughtSpot provides 2 default system answers to help you track and analyze your credit consumption. These answers allow you to dive deeper into the credit consumption and activities of a specific user, or over a specific time window.
+<ul><li><strong>Sample Answer - Credit usage details</strong>: This answer is ideal for looking into object-level details, such as the objects a user accessed and the actions they performed on those objects.</li>
+<li><strong>Credit usage from Charging Records</strong>: Use this answer to learn more about API-level details. You can map activities and credit consumption to specific API calls.</li></ul>
+Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#user-activity">Consumption-based pricing</a> for more information.</dd>
+</dlentry>
+
 <dlentry id="admin-privileges">
 <dt>New admin privileges <span class="label label-beta">Beta</span></dt>
-<dd>This release introduces new administrator privileges that separate the abilities of the administrator into 4 specific privileges. For example, you can allow certain users to create and manage users, while not allowing them to manage SAML integration or other advanced settings. The <strong>Can administer ThoughtSpot</strong> privilege, which encompasses all 4 new administrator privileges, still appears as an option by default. To remove it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>. The 4 new privileges are:
+<dd>This release introduces new administrator privileges that separate the abilities of the administrator into 4 specific privileges. For example, you can allow certain users to create and manage users, while not allowing them to manage SAML integration or other advanced settings. These new administrator privileges do <strong><em>not</em></strong> provide access to all data in ThoughtSpot, unlike the <strong>Can administer ThoughtSpot</strong> privilege. Users with the new privileges can only see data that others share with them. The <strong>Can administer ThoughtSpot</strong> privilege, which encompasses all 4 new administrator privileges, still appears as an option by default. To remove it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>. The 4 new privileges are:
 <ul><li>Can manage users: Can create, delete, and edit users.</li>
 <li>Can manage privileges: Can create, delete, and edit groups. This includes the group's name, sharing visibility, and privileges.</li>
 <li>Can operate application: Can configure local and SAML authentication. Can manage application settings: search, SpotIQ, and onboarding advanced settings, style and help customization. Can view scheduled maintenance.</li>
