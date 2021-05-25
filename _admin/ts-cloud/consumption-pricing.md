@@ -61,7 +61,7 @@ Use the visualizations on this pinboard to monitor your consumption. For example
 
 {: id="user-activity"}
 ### Analyze user activity and event details
-ThoughtSpot provides 2 default answers to help you track and analyze your credit consumption. These answers allow you to dive deeper into the credit consumption and activities of a specific user, or over a specific time window.
+ThoughtSpot provides 2 default system answers to help you track and analyze your credit consumption. These answers allow you to dive deeper into the credit consumption and activities of a specific user, or over a specific time window.
 
 Follow these best practices for the 2 new answers, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*.
 
