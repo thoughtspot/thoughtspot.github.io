@@ -50,7 +50,7 @@ In your Snowflake database, do the following:
      TYPE = OAUTH
      OAUTH_CLIENT = CUSTOM
      OAUTH_CLIENT_TYPE = 'CONFIDENTIAL'
-     OAUTH_REDIRECT_URI = 'https://177.122.45.2/callosum/v1/connection/generateTokens'
+     OAUTH_REDIRECT_URI = 'https://cloud-instance.example.com/callosum/v1/connection/generateTokens'
      ENABLED = TRUE
      COMMENT = 'Profile for passthrough'
 
