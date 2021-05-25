@@ -1,5 +1,3 @@
-![Save and share pinboards]({{ site.baseurl }}/images/sharing-pinboards.gif "Save and share pinboards")
-
 When you share a Pinboard, you share a live link to the Pinboard that reflects the latest version of it. When someone else views the Pinboard you shared with them, they see the most recently saved version with the most recent data.
 
 You do not have to be an administrator or the Pinboard's owner to share saved Pinboards. Any user can share them, based on the access levels the user has.
@@ -8,11 +6,11 @@ You can share a Pinboard from the list of Pinboards on [the main pinboards page]
 
 {: id="share-mainpinboardpage"}
 ## Share from the Pinboards page
-To share a Pinboard from the main Pinboard page, follow these steps.
+To share Pinboards from the main Pinboard page, follow these steps.
 
-1. Configure the Pinboard to look as it must appear when you share it.
+1. Configure the Pinboard(s) to look as it must appear when you share it.
 
-2. Save the Pinboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
+2. Save the Pinboard(s) by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
     ![Save the pinboard]({{ site.baseurl }}/images/sharing-pinboardsave.png "Save the pinboard")
 
@@ -20,7 +18,7 @@ To share a Pinboard from the main Pinboard page, follow these steps.
 
     ![The top menu bar]({{ site.baseurl }}/images/sharing-mainpinboardpage.png "The top menu bar")
 
-2. Select the Pinboard you want to share from the list of Pinboards by hovering over it and clicking the empty check box that appears.
+2. Select the Pinboard(s) you want to share from the list of Pinboards by hovering over the Pinboard name and clicking the empty check box that appears.
 
 3. Click **Share**.
 
@@ -41,6 +39,21 @@ To share a Pinboard from within the Pinboard, follow these steps.
     ![Click the sharing icon]({{ site.baseurl }}/images/sharing-pinboardshareicon.png "Click the sharing icon")
 
 5. [Specify permissions](#specify-permissions).
+
+## Share a Pinboard visualization
+You can also share a specific visualization within a Pinboard. When you share a Pinboard visualization, the user or group receives an email with a link to that visualization.
+
+Note that sharing a specific visualization within a Pinboard gives users and groups access to the entire Pinboard.
+
+To share a Pinboard visualization, follow these steps:
+
+1. Navigate to the Pinboard visualization that you would like to share.
+
+2. Select the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline} that appears when you hover over the visualization.
+
+    ![Share a Pinboard visualization]({{ site.baseurl }}/images/share-pinboard-viz-button.png "Share a Pinboard visualization")
+
+3. [Specify permissions](#specify-permissions).
 
 {: id="specify-permissions"}
 ## Specify permissions

@@ -21,6 +21,15 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="june-cloud-business-user"></a>For the Business User</h3>
 
+<dl>
+
+<dlentry id="embedded-link-format">
+<dt>Embedded link format for sharing objects</dt>
+<dd>For embedded ThoughtSpot environments, you now have the option to specify an embedded link format when sharing objects. By selecting this option in the sharing modal, you ensure that the links to the object in the sharing email go to the embedded version of ThoughtSpot in your parent application. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> for more information.</dd>
+</dlentry>
+
+</dl>
+
 <h3><a id="june-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <h3><a id="june-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>

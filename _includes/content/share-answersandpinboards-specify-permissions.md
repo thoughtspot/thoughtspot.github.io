@@ -2,7 +2,7 @@
 
     ![The sharing dialog box]({{ site.baseurl }}/images/sharing-modal.png "The sharing dialog box")
 
-4. Enter users or groups with whom you want to share this object in the text box.
+4. Enter users or groups with whom you want to share this object in the text box. To stop sharing with a user or group, click the **x** icon next to the **Permissions** dropdown for that user or group.
 
     Note that you can only enter email addresses whose domains are in your list of allowed domains. These domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-information-10px.png){: .inline}.
 
@@ -25,9 +25,9 @@
 
     After you enable access, the warning symbol turns into a green checkmark.
 
-6. To stop sharing with a user or group, click the **x** icon next to the **Permissions** dropdown.
-
 6. You can choose to send an email notification and an optional message.
+
+7. If your ThoughtSpot environment is embedded, select **Embedded link format** to ensure that the links to the object in the sharing email go to the embedded version of ThoughtSpot in your parent application.
 
 5. You can also copy a direct link to the Answer, Pinboard, or visualization within a Pinboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
 
