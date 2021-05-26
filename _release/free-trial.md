@@ -33,9 +33,9 @@ These are the changes we made to Free Trial.
 ![]({{ site.baseurl }}/images/free-trial-username-error.png "Error message for incorrect user name"){: .inline}
 
 * We removed the prompt to **Search now** after users create a connection. Now, users can return directly to Setup to continue setting up their Free Trial account.<br>
-**Before**<br>
-![]({{ site.baseurl }}/images/free-trial-search-prompt.png "Prompt to Search Now"){: .inline}
-**After**<br>
+**Before:**<br>
+![]({{ site.baseurl }}/images/free-trial-search-prompt.png "Prompt to Search Now"){: .inline}<br>
+**After:**<br>
 ![]({{ site.baseurl }}/images/free-trial-no-search-prompt.png "Back to Setup"){: .inline}
 
 
