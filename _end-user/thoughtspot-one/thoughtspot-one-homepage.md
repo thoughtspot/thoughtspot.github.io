@@ -54,7 +54,7 @@ This change does not persist across sessions. If you log out and log back in, th
 
 {: id="trending"}
 ## Trending Pinboards and Answers
-The home page shows you the top 5 trending Pinboards and Answers among all users in your environment on the right panel of the screen. Easily view and interact with these trending objects by clicking on their name from the **Trending** panel.
+The home page shows you the top 5 trending Pinboards and Answers among all users in your environment on the right panel of the screen. You can see how many views these trending objects have. Easily view and interact with these trending objects by clicking on their name from the **Trending** panel. You can open them in a new tab by right-clicking on the link.
 
 {: id="filter"}
 ## Filter existing objects

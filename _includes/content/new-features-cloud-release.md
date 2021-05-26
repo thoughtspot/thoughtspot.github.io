@@ -26,6 +26,21 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="june-cloud-business-user"></a>For the Business User</h3>
 
+<dl>
+
+<dlentry id="trending-objects">
+<dt>View counts for trending objects</dt>
+<dd>You can now see the view counts for trending answers and pinboards on the home page. This can help you understand why an object is trending.</dd>
+</dlentry>
+
+<dlentry id="trending-objects-link">
+<dt>Open trending objects in a new tab</dt>
+<dd>You can now open trending objects in a new tab by right-clicking on the object link on the home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#trending">ThoughtSpot One home page</a> for more information.</dd>
+</dlentry>
+
+
+</dl>
+
 <h3><a id="june-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <h3><a id="june-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
