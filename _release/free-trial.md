@@ -17,7 +17,7 @@ These are the fixes we applied to Free Trial:
 ![]({{ site.baseurl }}/images/free-trial-login-email-address.png "Email address login"){: .inline}
 * The countdown banner for users on their last day of Free Trial now reads: “Only 1 day remaining in your free trial. Get ThoughtSpot for your organization. Upgrade now.”
 ![]({{ site.baseurl }}/images/free-trial-countdown-banner-1.png "One day remaining on free trial"){: .inline}
-* The connection creation interface now asks users to “confirm” their connection.
+* The connection creation interface prompts users to “confirm” their connection.
 ![]({{ site.baseurl }}/images/free-trial-connection-confirm.png "Error message for incorrect user name"){: .inline}
 * ThoughtSpot Free Trial does not send password reset emails to expired accounts.
 
