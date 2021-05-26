@@ -1,7 +1,7 @@
 ---
 title: [Schedule a pinboard job]
 
-last_updated: tbd
+last_updated: 5/26/2021
 summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,24 +14,20 @@ at least edit-only and view-only access to the pinboard.
 To schedule a pinboard:
 
 1. Sign in to ThoughtSpot from a browser.
-2. Click **Pinboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
+2. Select **Pinboards**, on the top navigation bar.
 
 3. Select the pinboard you want to create a schedule for.
-4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
 
-     ![]({{ site.baseurl }}/images/view_schedules.png "View pinboard schedules")
+     ![View pinboard schedules]({{ site.baseurl }}/images/pinboard-view-schedule.png "View pinboard schedules")
 
 5. Click **+ Schedule** to add a new schedule.
 
-    ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
-
-     On the **Add a Schedule** page, you create a new schedule for your pinboard.
-
-    ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
+    ![Add a new pinbaord schedule]({{ site.baseurl }}/images/pinboard-add-schedule.png "Add a new pinboard schedule")
 
 6. Set the values for your schedule.
+
+    ![Set the pinboard schedule]({{ site.baseurl }}/images/pinboard-schedule-create.png "Set the pinboard schedule")
 
     <table>
      <tr>
@@ -44,7 +40,7 @@ To schedule a pinboard:
      </tr>
      <tr>
        <th>Name</th>
-       <td>Provide a short name for this schedule, <code>Monthly Report Source</code> is an example of a good name.</td>
+       <td>Provide a short name for this schedule.</td>
      </tr>
      <tr>
        <th>Description</th>
@@ -58,6 +54,10 @@ To schedule a pinboard:
      <th>Gating condition</th>
      <td><p>Write a statement that returns a single boolean value (true or false). For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. Other than checking your formula syntax, ThoughtSpot does not validate your formula returns a single boolean.</p>
      <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function reference</a>.</p></td>
+     </tr>
+     <tr>
+     <th>Embedded link format</th>
+     <td>If your ThoughtSpot environment is embedded, select <strong>Embedded link format</strong> to generate a URL for your host application context. This option allows you to ensure that the links to the object in email notifications go to the appropriate application URL.</td>
      </tr>
      <tr>
        <th>Recipients</th>
