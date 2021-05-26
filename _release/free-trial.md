@@ -1,11 +1,27 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 05/18/2021
+last_updated: 05/26/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+## May 26, 2021
+
+{: id="make-it-shine"}
+### Free Trial Make It Shine
+
+These are the fixes we applied to Free Trial:
+
+* To facilitate account creation and login, Free Trial login now asks for email address rather than user name.
+![]({{ site.baseurl }}/images/free-trial-login-email-address.png "Email address login"){: .inline}
+* The countdown banner for users on their last day of Free Trial now reads: “Only 1 day remaining in your free trial. Get ThoughtSpot for your organization. Upgrade now.”
+![]({{ site.baseurl }}/images/free-trial-countdown-banner-1.png "One day remaining on free trial"){: .inline}
+* The connection creation interface now asks users to “confirm” their connection.
+![]({{ site.baseurl }}/images/free-trial-connection-confirm.png "Error message for incorrect user name"){: .inline}
+* ThoughtSpot Free Trial does not send password reset emails to expired accounts.
+
+
 ## May 12, 2021
 
 These are the changes we made to Free Trial.
