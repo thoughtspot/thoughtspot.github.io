@@ -401,6 +401,9 @@ entries:
       - title: User adoption Pinboard
         url: /admin/ts-cloud/user-adoption.html
         output: web
+      - title: Object usage Pinboard
+        url: /admin/ts-cloud/object-usage.html
+        output: web
       - title: ThoughtSpot use agreement
         url: /admin/ts-cloud/use-agreement.html
         output: web
