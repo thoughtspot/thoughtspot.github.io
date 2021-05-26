@@ -27,7 +27,7 @@
 
 6. You can choose to send an email notification and an optional message.
 
-7. If your ThoughtSpot environment is embedded, select **Embedded link format** to ensure that the links to the object in the sharing email go to the embedded version of ThoughtSpot in your parent application.
+7. If your ThoughtSpot environment is embedded, select **Embedded link format** to generate a URL for your host application context. This option allows you to ensure that the links to the object in email notifications go to the appropriate application URL.
 
 5. You can also copy a direct link to the Answer, Pinboard, or visualization within a Pinboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
 

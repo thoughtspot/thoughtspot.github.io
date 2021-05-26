@@ -17,18 +17,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd>You can now perform conditional formatting on measures in pivot tables. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table">Apply conditional formatting</a> and <a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a>.</dd>
 </dlentry>
 
-</dl>
-
-<h3><a id="june-cloud-business-user"></a>For the Business User</h3>
-
-<dl>
-
 <dlentry id="embedded-link-format">
 <dt>Embedded link format for sharing objects</dt>
-<dd>For embedded ThoughtSpot environments, you now have the option to specify an embedded link format when sharing objects. By selecting this option in the sharing modal, you ensure that the links to the object in the sharing email go to the embedded version of ThoughtSpot in your parent application. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> for more information.</dd>
+<dd>For embedded ThoughtSpot environments, you can now generate links with your host application context and send these links in email notifications. You can specify the link format when sharing an object or scheduling a pinboard job to ensure that the links sent in the email notifications go to the appropriate URL. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> and <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a> for more information.</dd>
 </dlentry>
 
 </dl>
+
+<h3><a id="june-cloud-business-user"></a>For the Business User</h3>
 
 <h3><a id="june-cloud-data-engineer"></a>For the Data Engineer</h3>
 
@@ -37,7 +33,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
 
 <dlentry id="consumption-pricing">
-<dt>Consumption-based pricing system answers</span></dt>
+<dt>Consumption-based pricing system answers</dt>
 <dd>ThoughtSpot provides 2 default system answers to help you track and analyze your credit consumption. These answers allow you to dive deeper into the credit consumption and activities of a specific user, or over a specific time window.
 <ul><li><strong>Sample Answer - Credit usage details</strong>: This answer is ideal for looking into object-level details, such as the objects a user accessed and the actions they performed on those objects.</li>
 <li><strong>Credit usage from Charging Records</strong>: Use this answer to learn more about API-level details. You can map activities and credit consumption to specific API calls.</li></ul>
