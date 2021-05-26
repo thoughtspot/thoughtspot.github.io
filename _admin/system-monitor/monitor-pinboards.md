@@ -58,6 +58,13 @@ To view these system Pinboards:
       </td>
    </tr>
    <tr>
+      <td><code class="highlighter-rouge">Object Usage</code></td>
+      <td>
+         Contains information on how your ThoughtSpot users are interacting with ThoughtSpot objects such as worksheets, tables, and views. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Pinboard</a>.
+      </td>
+   </tr>
+
+   <tr>
       <td><code class="highlighter-rouge">Performance Tracking</code></td>
       <td>
          Contains information on how your ThoughtSpot cluster is performing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a>.
