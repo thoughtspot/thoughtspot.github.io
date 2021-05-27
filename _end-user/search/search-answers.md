@@ -1,6 +1,6 @@
 ---
 title: ["Search Answers"]
-last_updated: 5/4/2021
+last_updated: 5/27/2021
 summary: "You search existing Answers and Pinboards to get correct information."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -62,7 +62,7 @@ Let us consider the `sales in the last year` example. This search returns matche
    - **Grouped by** fields
    - **Filtered by** fields
 
-2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filtered by**, and **Grouped by**. For Pinboard results, the **Details** panel lists **Frequent Metrics** and **Frequent Groupings** for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
+2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filtered by**, and **Grouped by**. For Pinboard results, the **Details** panel lists **Frequent Metrics** and **Frequent Groupings** for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard. You can expand a section by clicking **Show all section details** to see all metrics, filters, or groupings for the object.
 
 3. To see how the Answer appears as a chart, a table, or headline, click **Preview**, and notice the detail in the graph.
 
@@ -74,7 +74,7 @@ Let us consider the `sales in the last year` example. This search returns matche
 
    ![]({{ site.baseurl }}/images/search-answers-results-pinboard.png "Result of Search is a Pinboard")
 
-   When you click **Preview**, you can scroll through all the visuals inside the Pinboard.
+   When you click **Preview**, you can scroll through some of the visualizations inside the pinboard. On the last screen of the preview, ThoughtSpot prompts you to view the full pinboard to see all the visualizations.
 
    ![]({{ site.baseurl }}/images/search-answers-results-pinboard-preview.png "Result of Search is a Pinboard")
 
