@@ -2,7 +2,7 @@
 title: [Moving functions]
 
 
-last_updated: tbd
+last_updated: 6/1/2021
 summary: "Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,9 +21,15 @@ formula (measure,integer,integer,[attribute,attribute,...])
 
 Only the measure and integer values are required. If you supply both required
 and optional values, the formula returns the aggregate of the measure over the
-given window. You should experiment with only a measure and integers leaving out
-the attribute and then adding it back in. This will help you decide which output
+given window. You should experiment with only a measure and integers, leaving out
+the attribute, and then adding it back in. This will help you decide which output
 best meets your use case.
+
+The time window is (`current - Num1...Current + Num2`), including both endpoints. For example, `1,1` has a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example `moving_average(sales, 1, -1, date)`.
+
+For more information on how the time windows work, see this chart:
+
+![Moving formula time window chart]({{ site.baseurl }}/images/moving_formula_time_window_chart.png "Moving formula time window chart")
 
 The moving formulas are the following:
 
@@ -32,41 +38,25 @@ The moving formulas are the following:
   Takes a measure, two integers to define the window to aggregate over, and one
   or more attributes. Returns the average of the measure over the given window.
   The attributes are the ordering columns used to compute the moving average.
-  The window is (`current - Num1...Current + Num2`) with both end points being
-  included in the window. For example, `1,1` will have a window size of 3. To
-  see periods in the past, use a negative number for the second endpoint, as in
-  the example `moving_average(sales, 1, -1, date)`.
 
 * `moving_max`, for example `moving_max (complaints, 1, 2, store name)`
 
   Takes a measure, two integers to define the window to aggregate over, and one
   or more attributes. Returns the maximum of the measure over the given window.
   The attributes are the ordering columns used to compute the moving maximum.
-  The window is (current - Num1...Current + Num2) with both end points being
-  included in the window. For example, `1,1` will have a window size of 3. To
-  see periods in the past, use a negative number for the second endpoint, as in
-  the example `moving_max(sales, 1, -1, date)`.
 
 * `moving_min`, for example `moving_min (defects, 3, 1, product)`
 
     Takes a measure, two integers to define the window to aggregate over, and
     one or more attributes. Returns the minimum of the measure over the given
     window. The attributes are the ordering columns used to compute the moving
-    minimum. The window is (current - Num1...Current + Num2) with both end
-    points being included in the window. For example, `1,1` will have a window
-    size of 3. To see periods in the past, use a negative number for the second
-    endpoint, as in the example `moving_min(sales, 1, -1, date)`.
+    minimum.
 
 * `moving_sum`, for example `moving_sum (revenue, 1, 1, order date)`
 
   Takes a measure, two integers to define the window to aggregate over, and one
   or more attributes. Returns the sum of the measure over the given window. The
-  attributes are the ordering columns used to compute the moving sum. The window
-  is (current - Num1...Current + Num2) with both end points being included in
-  the window. For example, `1,1` will have a window size of 3. To see periods in
-  the past, use a negative number for the second endpoint, as in the example
-  `moving_sum(sales, 1, -1, date)`.
-
+  attributes are the ordering columns used to compute the moving sum.
 
 ## Calculate a moving average
 
@@ -76,9 +66,7 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
    ![]({{ site.baseurl }}/images/aggregation_answer.png "Aggregation Answer example")
 
-2. In the upper-right side of the table, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
-
-   ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
+2. In the upper-right side of the table, click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
 
 3. Enter the moving_average formula, providing a measure, a window, and one or more attributes.
 
