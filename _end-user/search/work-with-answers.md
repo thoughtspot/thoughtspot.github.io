@@ -50,9 +50,9 @@ For example, you can [create a View]({{ site.baseurl }}/complex-search/about-que
 
 ## SpotIQ Insights for Answers
 
-{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
+{% include note.html content="Instant Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
 
-At the bottom of the **Answers** page, you can an additional area, called
+At the bottom of the **Answers** page, you can see an additional area, called
 **SpotIQ Insights**. This area is derived from your
 original answer and you can select any of the insights to deepen your search.
 
@@ -62,7 +62,6 @@ The **SpotIQ Insights** section is only visible to users with the **Has SpotIQ**
 privilege. After you expand an insight on this list, an **Edit** button allows
 you modify the insight and make it your own. Your installation configuration
 determines how many insights can appear in this section. The default is 6.
-
 
 ## Copy and edit a SpotIQ Insight
 

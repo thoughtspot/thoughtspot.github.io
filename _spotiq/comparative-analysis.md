@@ -14,9 +14,6 @@ SpotIQ competitive analysis compares data points of simple or complex measures u
   * _Average_, which generate a Pinboard that has 'what-if' percentage insights
   * Other functions which use a 'versus' analysis to show the absolute change grouped by different drill attributes
 
-  {% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
-
-
 {: id="basic-comparative-analysis" }
 ## Basic Comparative Analysis in SpotIQ ##
 
@@ -57,9 +54,6 @@ To view the results of your analysis, follow these steps:
 
 3. In the report, SpotIQ generates a Pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.
 
-   {% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
-
-
     ![]({{ site.baseurl }}/images/comparative-analysis-6.png "Analysis Results")
 
 4. You can now examine each visualization of the analysis for details of comparison, give feedback on its usefulness, and so on.  
@@ -77,8 +71,6 @@ To view the results of your analysis, follow these steps:
 ## Advanced Comparative Analysis in SpotIQ ##
 
 ThoughtSpot ships with a number of comparative algorithms. Using the **Advanced** option of SpotIQ, you can adjust the parameters of the analysis, or choose a different comparative algorithm for your data.  
-
-{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
 
 After selecting the relevant analysis columns, click the **Advanced** tab.  
 
