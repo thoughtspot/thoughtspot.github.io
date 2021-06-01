@@ -1,13 +1,13 @@
 ---
 title: [Analyst onboarding]
-last_updated: 7/23/2020
-summary: "As an analyst, you create and manage ThoughtSpot Pinboards for everyone in your organization. Let us guide you through the necessary steps."
+last_updated: 06/01/2020
+summary: "As an analyst, you create and manage worksheets for everyone in your organization. Let us guide you through the necessary steps."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, based on how you use ThoughtSpot. As an *analyst*, you use ThoughtSpot to set up data connections, define relationships, and create Worksheets to help your team search and analyze data. When you select the *analyst* persona, the analyst onboarding begins, and guides you through a few basic scenarios.
+When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, based on how you use ThoughtSpot. As an *analyst*, you use ThoughtSpot to set up data connections, define relationships, and create worksheets to help your team search and analyze data. When you select the *analyst* persona, the analyst onboarding begins, and guides you through a few basic scenarios.
 
 ![Business user or analyst screen]({{ site.baseurl }}/images/onboarding-select-analyst.png "Business user or analyst screen")
 
@@ -21,24 +21,18 @@ Here is a quick introduction to the workflows you need as an Analyst in ThoughtS
   <div class="grid-child">
     <ol>
      <li>
-       <a href="{{ "/admin/ts-cloud/connect-data.html "| prepend: site.baseurl }}">Connect to data</a>: learn how to connect ThoughtSpot to your live data in Snowflake or RedShift databases</li>
+       <a href="{{ "/admin/ts-cloud/connect-data.html "| prepend: site.baseurl }}">Connect to data</a>: Learn how to connect ThoughtSpot to your live data.</li>
      <li>
-       <a href="{{ "/admin/ts-cloud/tables-join.html "| prepend: site.baseurl }}">Join tables</a>: join the related tables in your database, to search across all your data</li>
+       <a href="{{ "/admin/ts-cloud/worksheet-create.html "| prepend: site.baseurl }}">Model your data</a>: Create worksheets to model your business use cases.</li>
      <li>
-       <a href="{{ "/admin/ts-cloud/worksheet-create.html "| prepend: site.baseurl }}">Create Worksheets</a>: Worksheets model your business use cases</li>
-     <li>
-       <a href="{{ "/admin/ts-cloud/visualize-search.html "| prepend: site.baseurl }}">Visualize Search results as Answers</a>: search your data to get instant Answers as interactive tables and charts</li>
-     <li>
-       <a href="{{ "/admin/ts-cloud/pinboard-compose.html "| prepend: site.baseurl }}">Compose Pinboards from Answers</a>: collate all the Answers that support your use case in a single interactive and shareable Pinboard</li>
+       <a href="{{ "/admin/ts-cloud/visualize-search.html "| prepend: site.baseurl }}">Search and visualize</a>: Search your data to get instant answers as interactive tables and charts. Save your visualizations as answers, and add them to pinboards for future use.</li>
     </ol>
   </div>
 </div>  
 
-As you complete these tasks, the progress bar at the bottom of your screen helps to guide you through the steps, and automatically updates when you finish a step. The progress bar is visible from anywhere in ThoughtSpot, except the **Setup** page, which is accessible from the top navigation bar. Select **next steps** next to the progress bar to learn more about your next task.
+As you complete these tasks, the progress bar at the bottom of your screen helps to guide you through the steps, and automatically updates when you finish a step. The progress bar is visible from anywhere in ThoughtSpot, except the **Setup** page, which is accessible from the top navigation bar. Select **next steps** next to the progress bar to learn more about your next task and click **finish setup** to exit.
 
 ![Analyst onboarding progress bar]({{ site.baseurl }}/images/analyst-onboarding-progress-bar.png "Analyst onboarding progress bar")
-
-Note that the progress bar informs you both how many steps you have completed, and what number step you are on. In the image above, the user did not complete step 1, but did complete 2 other steps.
 
 <!--
 1. [Connect to your data]({{ site.baseurl }}/admin/ts-cloud/connect-data.html): Learn how to connect ThoughtSpot to your live data in Snowflake or RedShift databases.<br>
