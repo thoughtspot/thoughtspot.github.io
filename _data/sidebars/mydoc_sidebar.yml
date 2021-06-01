@@ -1085,12 +1085,12 @@ entries:
       - title: Overview of security features
         url: /admin/data-security/about-security.html
         output: web,admBk
-#      - levelThreeTitle: System security
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: Tools and processes
-#          url: /admin/data-security/audit-logs.html
-#          output: web,admBk
+      - levelThreeTitle: System security
+        output: web,admBk
+        levelThreeItems:
+        - title: Collect security logs
+          url: /admin/data-security/audit-logs.html
+          output: web,admBk
 #        - title: About third-party software
 #          url: /admin/data-security/about-secure-monitor-sw.html
 #          output: web,admBk
