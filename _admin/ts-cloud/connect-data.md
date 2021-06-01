@@ -17,6 +17,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
 - [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 - [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
+
 <!--
 - [Databricks]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html)
 -->
