@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/complex-search/about-moving-formulas.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-05-21T08:04:07-07:00" />
+<meta property="article:published_time" content="2021-06-01T16:47:33-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Moving functions”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"Moving formulas can be used to smooth out any irregularities in your data to easily recognize trends. The larger the interval you set, the more the peaks and valleys are smoothed out. While the smaller the interval, the closer the moving averages are to the actual data points.","headline":"[“Moving functions”]","dateModified":"2021-05-21T08:04:07-07:00","datePublished":"2021-05-21T08:04:07-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/complex-search/about-moving-formulas.html"},"url":"https://docs.thoughtspot.com/6.1/complex-search/about-moving-formulas.html","@context":"https://schema.org"}</script>
+{"description":"Moving formulas can be used to smooth out any irregularities in your data to easily recognize trends. The larger the interval you set, the more the peaks and valleys are smoothed out. While the smaller the interval, the closer the moving averages are to the actual data points.","headline":"[“Moving functions”]","dateModified":"2021-06-01T16:47:33-07:00","datePublished":"2021-06-01T16:47:33-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/complex-search/about-moving-formulas.html"},"url":"https://docs.thoughtspot.com/6.1/complex-search/about-moving-formulas.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3805,7 +3805,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    4 minutes
+    3 minutes
   
 </span>
  -->
@@ -3825,9 +3825,15 @@ and one or more optional attributes.</p>
 
 <p>Only the measure and integer values are required. If you supply both required
 and optional values, the formula returns the aggregate of the measure over the
-given window. You should experiment with only a measure and integers leaving out
-the attribute and then adding it back in. This will help you decide which output
+given window. You should experiment with only a measure and integers, leaving out
+the attribute, and then adding it back in. This will help you decide which output
 best meets your use case.</p>
+
+<p>The time window is (<code class="language-plaintext highlighter-rouge">current - Num1...Current + Num2</code>), including both endpoints. For example, <code class="language-plaintext highlighter-rouge">1,1</code> has a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example <code class="language-plaintext highlighter-rouge">moving_average(sales, 1, -1, date)</code>.</p>
+
+<p>For more information on how the time windows work, see this chart:</p>
+
+<p><img src="/6.1/images/moving_formula_time_window_chart.png" alt="Moving formula time window chart" title="Moving formula time window chart" /></p>
 
 <p>The moving formulas are the following:</p>
 
@@ -3837,22 +3843,14 @@ best meets your use case.</p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the average of the measure over the given window.
-The attributes are the ordering columns used to compute the moving average.
-The window is (<code class="language-plaintext highlighter-rouge">current - Num1...Current + Num2</code>) with both end points being
-included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To
-see periods in the past, use a negative number for the second endpoint, as in
-the example <code class="language-plaintext highlighter-rouge">moving_average(sales, 1, -1, date)</code>.</p>
+The attributes are the ordering columns used to compute the moving average.</p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">moving_max</code>, for example <code class="language-plaintext highlighter-rouge">moving_max (complaints, 1, 2, store name)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the maximum of the measure over the given window.
-The attributes are the ordering columns used to compute the moving maximum.
-The window is (current - Num1…Current + Num2) with both end points being
-included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To
-see periods in the past, use a negative number for the second endpoint, as in
-the example <code class="language-plaintext highlighter-rouge">moving_max(sales, 1, -1, date)</code>.</p>
+The attributes are the ordering columns used to compute the moving maximum.</p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">moving_min</code>, for example <code class="language-plaintext highlighter-rouge">moving_min (defects, 3, 1, product)</code></p>
@@ -3860,21 +3858,14 @@ the example <code class="language-plaintext highlighter-rouge">moving_max(sales,
     <p>Takes a measure, two integers to define the window to aggregate over, and
   one or more attributes. Returns the minimum of the measure over the given
   window. The attributes are the ordering columns used to compute the moving
-  minimum. The window is (current - Num1…Current + Num2) with both end
-  points being included in the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window
-  size of 3. To see periods in the past, use a negative number for the second
-  endpoint, as in the example <code class="language-plaintext highlighter-rouge">moving_min(sales, 1, -1, date)</code>.</p>
+  minimum.</p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">moving_sum</code>, for example <code class="language-plaintext highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></p>
 
     <p>Takes a measure, two integers to define the window to aggregate over, and one
 or more attributes. Returns the sum of the measure over the given window. The
-attributes are the ordering columns used to compute the moving sum. The window
-is (current - Num1…Current + Num2) with both end points being included in
-the window. For example, <code class="language-plaintext highlighter-rouge">1,1</code> will have a window size of 3. To see periods in
-the past, use a negative number for the second endpoint, as in the example
-<code class="language-plaintext highlighter-rouge">moving_sum(sales, 1, -1, date)</code>.</p>
+attributes are the ordering columns used to compute the moving sum.</p>
   </li>
 </ul>
 
@@ -3889,9 +3880,7 @@ the past, use a negative number for the second endpoint, as in the example
     <p><img src="/6.1/images/aggregation_answer.png" alt="" title="Aggregation Answer example" /></p>
   </li>
   <li>
-    <p>In the upper-right side of the table, click the ellipses icon <img src="/6.1/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> and select <strong>Add formula</strong>.</p>
-
-    <p><img src="/6.1/images/create_formula_in_answer.png" alt="" title="Create a new formula in an answer" /></p>
+    <p>In the upper-right side of the table, click the <strong>more options</strong> menu icon <img src="/6.1/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> and select <strong>Add formula</strong>.</p>
   </li>
   <li>
     <p>Enter the moving_average formula, providing a measure, a window, and one or more attributes.</p>
@@ -3939,9 +3928,9 @@ the past, use a negative number for the second endpoint, as in the example
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: May 21, 2021 <br />
+        Generated: Jun 1, 2021 <br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. <br />
-         <!-- <span>Page last updated:</span> tbd<br/>  -->
+         <!-- <span>Page last updated:</span> 6/1/2021<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
