@@ -1,7 +1,7 @@
 ---
 title: [tsload flag reference]
 summary: You can modify the behavior of tsload with flags.
-last_updated: 11/19/2019
+last_updated: 6/2/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -153,6 +153,11 @@ The following flags are used when loading data from an input file:
       <td><code class="highlighter-rouge">--use_bit_boolean_values = [true | false]</code></td>
       <td>Specifies how boolean values are represented in the input file.</td>
       <td>If supplied, the input CSV file uses a bit for boolean values, i.e. the false value is represented as 0x0 and true as 0x1. If omitted or set to false, boolean values are assumed to be T_F, unless you specify something else using the flag <code class="highlighter-rouge">--boolean_representation [true_false | 1_0 | T_F | Y_N]</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">--format_file</code></td>
+      <td>Specifies the filepath that describes the formats for the columns you are importing.</td>
+      <td>&nbsp;</td>
     </tr>
   </tbody>
 </table>
