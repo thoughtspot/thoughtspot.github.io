@@ -78,9 +78,6 @@ keeps the results until the user that requested the analysis (or an admin),
 deletes them. You can run SpotIQ on the same object multiple times. Each
 analysis generates new results.
 
-{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
-
-
 1. To check for the results of your analysis, go to the **SpotIQ** page.
 
    The **SpotIQ** page allows you to see all results with data you have
