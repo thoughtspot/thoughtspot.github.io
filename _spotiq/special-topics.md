@@ -10,8 +10,6 @@ However, like any other feature, there are things you can do to optimize the
 feature.  This page contains some best practices you can use to make SpotIQ more
 effective when you use it.
 
-{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
-
 ## When to invoke SpotIQ
 
 If you followed the tutorial, you know that right after uploading data is a good
