@@ -95,7 +95,7 @@ If you want to use one of these providers as your IdP, make sure you follow the 
 
 To determine if ThoughtSpot supports your preferred IdP, contact ThoughtSpot support.
 
-{% include note.html content="When configuring SAML 2.0, make sure you map the SAML user attributes to appropriate fields. For example, you must map SAML user’s username to the `NameId` attribute in OneLogin. Similarly, in Okta, you must map the username to `userPrincipalName`. You must also ensure that the email address of the user is mapped to the `mail` attribute. If your IdP does not allow you to import the IdP metadata XML file, you must map these values manually." %}
+{% include note.html content="When configuring SAML 2.0, make sure you map the SAML user attributes to appropriate fields. For example, you must map the SAML user’s username to the <code>NameId</code> attribute in OneLogin. Similarly, in Okta, you must map the username to <code>userPrincipalName</code>. You must also map the email address of the user to the mail attribute, and the display name you would like to use to the correct display name attribute. If your IdP does not allow you to import the IdP metadata XML file, you must map these values manually." %}
 
 ### Enable SSO authentication in the Visual Embed SDK
 If you want to use SSO authentication for embedded ThoughtSpot content, make sure you set the `AuthType` parameter to `SSO` in the SDK when calling the `init` function from your application.
