@@ -1,7 +1,7 @@
 ---
 title: ["Security for SpotIQ functions"]
 summary: Learn about SpotIQ security.
-last_updated: 11/15/2019
+last_updated: 6/2/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,8 +11,6 @@ system data. The feature works on all the data in your system, search queries,
 saved Answers, and Pinboards. Because SpotIQ uses the same data security model
 as other data in the system, there is no need to build a new schema or security
 model to support it.
-
-{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
 
 SpotIQ automatically generates insights into data when a user requests them.
 These requests can be run immediately or users can schedule regular analysis.

@@ -13,9 +13,6 @@ because as data changes over time, we continue to analyze it.
 In this section, you look at the results and see what insights SpotIQ
 discovered. Learn about the basic types of analysis SpotIQ runs on data.
 
-{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
-
-
 ## View results of an analysis
 
 1. If you haven't, log in to the ThoughtSpot application.
