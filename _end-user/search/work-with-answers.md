@@ -50,7 +50,7 @@ For example, you can [create a View]({{ site.baseurl }}/complex-search/about-que
 
 ## SpotIQ Insights for Answers
 
-{% include note.html content="Instant Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
+{% include note.html content="Instant Insights are turned off by default. They do not appear on answers, or elsewhere in the application, unless your administrator turns on the feature." %}
 
 At the bottom of the **Answers** page, you can see an additional area, called
 **SpotIQ Insights**. This area is derived from your
