@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 With SpotIQ analysis and insight feedback, you can rate an instant insight by clicking the like ![more options menu icon]({{ site.baseurl }}/images/thumb_up.png){: .inline} or dislike ![more options menu icon]({{ site.baseurl }}/images/thumb_down.png){: .inline} icon of the insight.
 
-{% include note.html content="Instant Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
+{% include note.html content="Instant Insights are turned off by default. They do not appear unless your administrator turns on the feature. When this feature is on, Instant Insights can appear on the Home page, on pinboards or answers, when searching, or on tables, worksheets, or views." %}
 
 When you click dislike, you can provide more details on why you disliked the insight by answering the questions based on the type of insight, decisions made by SpotIQ during analysis, aggregation, and so on. These questions help determine if the features of an insight are relevant, or too obvious.
 
