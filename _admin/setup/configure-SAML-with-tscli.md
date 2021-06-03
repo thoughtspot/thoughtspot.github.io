@@ -5,6 +5,8 @@ summary: "You can use the Security Assertion Markup Language (SAML) to authentic
 redirect_from:
 - /7.0.0.mar.sw/app-integrate/SAML/configure-SAML-with-tscli.html
 - /7.0.0.mar.sw/admin/ts-cloud/authentication-integration.html
+- /admin/ts-cloud/authentication-integration.html
+- /app-integrate/SAML/configure-SAML-with-tscli.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
