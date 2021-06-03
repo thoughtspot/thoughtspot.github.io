@@ -3,7 +3,12 @@ title: [Configure SAML]
 last_updated: 5/7/2021
 summary: "You can use the Security Assertion Markup Language (SAML) to authenticate users."
 redirect_from:
-- /7.0.0.mar.sw/app-integrate/SAML/configure-SAML-with-tscli.html
+- /app-integrate/SAML/configure-SAML-with-tscli.html
+- /6.3.0.CU1/admin/ts-cloud/authentication-integration.html
+- /6.3.0/admin/ts-cloud/authentication-integration.html
+- /6.3.1/admin/ts-cloud/authentication-integration.html
+- /6.3.1.CU1/admin/ts-cloud/authentication-integration.html
+- /admin/ts-cloud/authentication-integration.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
