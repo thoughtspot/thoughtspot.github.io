@@ -1,6 +1,6 @@
 ---
 title: [Connect to data]
-last_updated: 06/01/2020
+last_updated: 06/07/2020
 summary: "ThoughtSpot Cloud connects to your data through Embrace."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 ## Connect to your data through Embrace
 
-If your company stores source data externally in data warehouses, you can use ThoughtSpot Embrace to directly query that data and use ThoughtSpot’s analysis and visualization features.
+If your company stores source data externally in data warehouses, you can connect to that data through ThoughtSpot Embrace, and then directly query it when using ThoughtSpot’s analysis and visualization features.
 
 On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html)
@@ -17,21 +17,19 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
 - [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 - [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
-
-<!--
 - [Databricks]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html)
--->
 
-## How it works
 
-- Create a connection to the external database.
+## How to connect to data
+
+- [Create a connection](#set-up-connection) to the external database.
 - Choose from each table the columns that you want to explore in your live query.
 - Primary key and foreign key relationships are imported along with the primary and foreign key tables.
 - If there are any joins in the tables of your connection, Embrace imports these joins.
 - After your connection is complete, it becomes a **linked** data source in ThoughtSpot, so you can query the external database directly.
 - It’s also easy to apply transformations, and filter the data.
 
-## Key benefits
+## Key benefits of connecting to live data
 - Set up and deploy ThoughtSpot faster by connecting directly to the external database.
 - Eliminate the need to move data into ThoughtSpot for analysis.
 - Centralize data management and governance in the external database.
@@ -39,10 +37,11 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - Connect to multiple external databases.
 - Custom calendar available with Snowflake, Amazon Redshift, Google BigQuery, and Azure Synapse
 
-## Limitations
+## Limitations of data connections
 
 {% include important.html content="Embrace does not support joins across connections." %}
 
+{: id="set-up-connection"}
 ## Set up your connection
 
 -   **[Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)**  
@@ -55,10 +54,13 @@ Create the connection between ThoughtSpot and tables in an external Google BigQu
 Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
 -   **[Add an Oracle Autonomous Data Warehouse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Oracle Autonomous Data Warehouse database.
+- **[Add a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-add-connection.html)**
+Create the connection between ThoughtSpot and tables in an external Databricks database.
 
 ### Next steps
-Next, [join tables]({{ site.baseurl }}/admin/ts-cloud/tables-join.html).
-To continue setting up, [create a worksheet]({{ site.baseurl }}/admin/ts-cloud/worksheet-create.html).
+There are two options to continue setup:
+- If you completed onboarding, proceed to [join tables]({{ site.baseurl }}/admin/ts-cloud/tables-join.html).
+- To continue onboarding, [create a worksheet]({{ site.baseurl }}/admin/ts-cloud/worksheet-create-setup.html).
 
 <!--
 This release of ThoughtSpot Cloud supports Snowflake and RedShift databases on AWS. Learn how to connect to your [Snowflake](#snowflake) or [Amazon Redshift](#redshift) data in ThoughtSpot.
