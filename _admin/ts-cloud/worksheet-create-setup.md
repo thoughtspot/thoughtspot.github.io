@@ -23,31 +23,33 @@ Users are often unfamiliar with tables and how they relate to one another. A wor
 
 To generate a worksheet through the Setup tab, follow these steps:
 
-1. Complete Step 1 of Setup,[setting up your connection]({{ site.baseurl }}admin/ts-cloud/connect-data.html).
+1. Enter Setup by logging in for the first time, or by selecting **Profile** from the user icon at the top right of the page and clicking **Revisit** under **Preferences**.
 
-2. Select Step 2, *Model data and create a Worksheet.*
+2. Complete Step 1 of Setup,[setting up your connection]({{ site.baseurl }}admin/ts-cloud/connect-data.html).
 
-3. Select *Create Worksheet* in the lower left corner. A list of the available fact tables from your connection appears.
+3. Select Step 2, *Model data and create a Worksheet.*
 
-4. By default, ThoughtSpot suggests the fact table with the largest number of rows. Select the box next to the fact table from which you would like to create your Worksheet and click **Next**.<br>
+4. Select *Create Worksheet* in the lower left corner. A list of the available fact tables from your connection appears.
+
+5. By default, ThoughtSpot suggests the fact table with the largest number of rows. Select the box next to the fact table from which you would like to create your Worksheet and click **Next**.<br>
 
    {% include note.html content="After the worksheet is created, you will have the option to add more fact tables to its schema."%}
 
-4. A list of the available dimension tables from your connection appears. Choose the dimension table(s) to join to your fact table and click *Next*. You can choose up to four dimension tables.
+6. A list of the available dimension tables from your connection appears. Choose the dimension table(s) to join to your fact table and click *Next*. You can choose up to four dimension tables.
 
-6. The joins interface appears, showing a join based on a column of data both tables contain. You can proceed with the suggested join, or click the column names to change the join.<br>
+7. The joins interface appears, showing a join based on a column of data both tables contain. You can proceed with the suggested join, or click the column names to change the join.<br>
 
    {% include note.html content="The default join type is Inner, which will yield all search results with matching values from the fact table and the dimension table. You can click the Venn diagram icon to change the join type."%}
 
-7. Select *Next*. The columns view of your worksheet appears. You may notice that the column names have been changed to make them more easily searchable (for example, underscores may be replaced with spaces).
+8. Select *Next*. The columns view of your worksheet appears. You may notice that the column names have been changed to make them more easily searchable (for example, underscores may be replaced with spaces).
 
-8. [Optional] Click *My Worksheet* to change the name of your worksheet.
+9. [Optional] Click *My Worksheet* to change the name of your worksheet.
 
-9. [Optional] Select the column titles to change the names of your searchable columns. You can also select the blue check-box next to a column name to remove it from your worksheet.
+10. [Optional] Select the column titles to change the names of your searchable columns. You can also select the blue check-box next to a column name to remove it from your worksheet.
 
-10. [Optional] Select the data type under *Type* to change the recorded data type. For example, you can change a data type like Zipcode from ‘Measure’ to ‘Attribute’.
+11. [Optional] Select the data type under *Type* to change the recorded data type. For example, you can change a data type like Zipcode from ‘Measure’ to ‘Attribute’.
 
-11. Click *Save worksheet*. Your worksheet is now available to search and share. <br>
+12. Click *Save worksheet*. Your worksheet is now available to search and share. <br>
 
    {% include note.html content="Joins created in the setup of a worksheet are inherited at the table level. To remake your auto-generated worksheet through the Setup tab, you must first delete the worksheet, then delete the joins at the table level."%}
 
