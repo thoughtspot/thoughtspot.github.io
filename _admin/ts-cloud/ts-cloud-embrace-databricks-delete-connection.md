@@ -1,5 +1,5 @@
 ---
-title: [Delete a databricks connection]
+title: [Delete a Databricks connection]
 last_updated: 6/7/2022
 toc: true
 sidebar: mydoc_sidebar
