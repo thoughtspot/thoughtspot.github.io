@@ -799,7 +799,7 @@ entries:
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
         - title: Use tags
-          url: /admin/data-modeling/tags-concept.html
+          url: /admin/data-modeling/tags.html
           output: web,admBk
     - levelTwoTitle: Simplify search with worksheets
       output: web,admBk
