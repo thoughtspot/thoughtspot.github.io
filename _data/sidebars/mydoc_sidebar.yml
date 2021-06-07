@@ -116,7 +116,10 @@ entries:
       - title: Join tables
         url: /admin/ts-cloud/tables-join.html
         output: web
-      - title: Create Worksheets
+      - title: Create worksheets in Setup
+        url: /admin/ts-cloud/worksheet-create-setup.html
+        output: web
+      - title: Create worksheets
         url: /admin/ts-cloud/worksheet-create.html
         output: web
       - title: Search Assist Coach
