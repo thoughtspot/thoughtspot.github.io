@@ -17,7 +17,7 @@ ThoughtSpot security events include the following information:
 - Fields specific to the event (e.g. name of the new account)
 
 {: id="security-events"}
-## Security events
+### Security events
 
 The possible events are:
 - [account-logout](#account-logout)
@@ -37,6 +37,8 @@ The possible events are:
 - [user-account-creation](#user-account-creation)
 - [user-account-deletion](#user-account-deletion)
 - [user-group-change](#user-group-change)
+
+### Event descriptions
 
 ThoughtSpot defines these events as follows:
 
