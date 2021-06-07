@@ -56,8 +56,8 @@ entries:
     - title: Understanding privileges
       url: /end-user/introduction/about-privileges-end-user.html
       output: web,ugBk
-    - title: Use stickers to organize
-      url: /end-user/stickers.html
+    - title: Use tags to organize
+      url: /end-user/tags.html
       output: web,ugBk
   - sectiontitle: ThoughtSpot for ...
     output: web,ugBk
@@ -1268,8 +1268,8 @@ entries:
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
-        - title: Use stickers
-          url: /admin/data-modeling/stickers-concept.html
+        - title: Use tags
+          url: /admin/data-modeling/tags.html
           output: web,admBk
     - levelTwoTitle: Simplify search with worksheets
       output: web,admBk
