@@ -42,6 +42,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </dl>
 
 <h3><a id="june-cloud-data-engineer"></a>For the Data Engineer</h3>
+<dl>
+<dlentry id="databricks">
+<dt>Databricks GA</dt>
+<dd>Datbricks is now GA in the release of ThoughtSpot Cloud. For more information, refer to: <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html">Databricks</a>.</dd>
+</dlentry>
 
 <h3><a id="june-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
