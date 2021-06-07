@@ -69,3 +69,13 @@ The following list provides information about connecting to your data in support
 - [Delete a table with object dependencies]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-delete-table-dependencies.html)
 - [Delete connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-delete-connection.html)
 - [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html)
+
+## ![]({{ site.baseurl }}/images/databricks.png){: .inline} Databricks
+- [Overview]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html)
+- [Add connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-add-connection.html)
+- [Edit connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-edit-connection.html)
+- [Remap connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-remap-connection.html)
+- [Delete a table]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table.html)
+- [Delete a table with object dependencies]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html)
+- [Delete connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html)
+- [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html)
