@@ -1,11 +1,11 @@
 ---
-title: [Add an ADW connection]
-last_updated: 1/20/2021
+title: [Add a Databricks connection]
+last_updated: 6/7/2022
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To connect to ADW:
+To connect to Databricks:
 
 1. Click **Data** in the top navigation bar.
 
@@ -15,15 +15,9 @@ To connect to ADW:
 
 3. Create a name for your connection, a description (optional), then select the ADW connection type, and click **Continue**.
 
-     ![Add an ADW connection]({{ site.baseurl }}/images/embrace-adw-connection-type-ts-cloud.png "Add an ADW connection")
+     ![Add a Databricks connection]({{ site.baseurl }}/images/embrace-adw-connection-type-ts-cloud.png "Add an ADW connection")
 
-4. Enter the connection details for your ADW data source, and upload your ADW Wallet zip file.
-
-    ![Enter connection details]({{ site.baseurl }}/images/adw-connectiondetails.png "Enter connection details")
-
-    Refer to the [ADW connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
-
-5. (Optional) Provide additional key-value pairs that you need to set up your connection to ADW, by doing the following:
+4. (Optional) Provide additional key-value pairs that you need to set up your connection to ADW, by doing the following:
 
    - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
    - Enter your key and value information.
@@ -31,9 +25,9 @@ To connect to ADW:
 
      {% include note.html content="Any key-value pairs that you enter must be defined in your ADW data source. Key-value pairs are case-sensitive." %}
 
-6. Click **Continue**.   
+5. Click **Continue**.   
 
-7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+6. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
    ![Select tables and columns for your connection]({{ site.baseurl }}/images/adw-selecttables.png "Select tables and columns for your connection")
 
