@@ -1,23 +1,21 @@
 ---
 title: [Work with Answers]
-
-
-last_updated: tbd
+last_updated: 5/25/2021
 summary: "Answers are the saved results of a search. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can save the results of any search and share these with other people. Your saved searches appear on the **Answers** page. From this page, you can see answers you saved and answers other people have saved, provided these people shared them with you or a group you belong to.
 
-## Apply a sticker
+## Apply a tag
 
-Only administrators create stickers, but anyone with edit privileges can tag an object with a sticker. To add a sticker to an answer:
+Only administrators create tags, but anyone with edit privileges can tag an object. To add a tag to an answer:
 
 1. Find the item(s) you want to tag in the list.
 2. Check the box next to its name.
-3. Click the apply sticker icon and choose one from the list.
+3. Click the apply tag icon and choose one from the list.
 
-You can apply as many stickers as you like to an object.
+You can apply as many tags as you like to an object.
 
 ## Copy and edit an answer
 
