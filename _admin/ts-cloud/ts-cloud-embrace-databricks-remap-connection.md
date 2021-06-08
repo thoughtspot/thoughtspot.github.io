@@ -24,7 +24,7 @@ To remap a Databricks connection:
 
 5. Click **Download** to download the source mapping file.
 
-    !["Download the source mapping file"]({{ site.baseurl }}/images/adw-downloadyaml.png "Download the source mapping file")
+    !["Download the source mapping file"]({{ site.baseurl }}/images/databricks-downloadyaml.png "Download the source mapping file")
 
 6. Edit the file, as required, and save it.
 <!--    ![]({{ site.baseurl }}/images/embrace-yaml.png "Edit yaml") -->
