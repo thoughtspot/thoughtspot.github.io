@@ -53,7 +53,6 @@ You can now perform a live query on the selected tables and columns of your conn
 
 You can modify an ADW connection in the following ways:
 
-- [Add an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)
 - [Edit an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-edit-connection.html)
 - [Remap an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-remap-connection.html)
 - [Delete a table from an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-table.html)
