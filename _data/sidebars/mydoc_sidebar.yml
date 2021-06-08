@@ -1475,6 +1475,9 @@ entries:
       - title: Session API
         url: /reference/api/session-api.html
         output: web,refGd
+      - title: Security API
+        url: /reference/api/security-api.html
+        output: web,refGd
       - title: User API
         url: /reference/api/user-api.html
         output: web,refGd
