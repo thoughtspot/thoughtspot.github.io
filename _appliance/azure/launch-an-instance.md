@@ -22,7 +22,7 @@ learn about the latest version of the ThoughtSpot Virtual Machine.
 Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the administrator users. When you are ready to obtain the password, contact
 [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
-This guide explains how to deploy ThoughtSpot on Microsoft Azure, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on Azure using Red Hat Enterprise Linux (RHEL) or Oracle Enterprise Linux (OEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 or OEL 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL or OEL, refer to the [RHEL and OEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
+This guide explains how to deploy ThoughtSpot on Microsoft Azure, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on Azure using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL and OEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
 
 ## Set up ThoughtSpot in Azure
 
