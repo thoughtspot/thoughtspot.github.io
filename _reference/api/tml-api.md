@@ -39,7 +39,10 @@ This API allows you to validate and import TML objects.
       <tr>
          <td><code>import_objects</code></td>
          <td>string</td>
-         <td>JSON array of TML objects to upload. Can be in JSON or YAML form.</td>
+         <td><p>The objects to import. An <code>x-www-form-urlencoded</code> string containing a JSON array of strings in YAML format.</p>
+         <p>Example for import of a single object: <code>["guid: 3729c085-8659-48fd-9479-a67bd7307496\npinboard:\n  name: …"]</code></p>
+         <p>Example for import of multiple objects: <code>["guid: 3729c085-8659-48fd-9479-a67bd7307496\npinboard:\n  name: …“, “["guid: 3729c085-8659-48fd-9479-a67bd7307496\npinboard:\n  name: "4f3827f2-ee0c-4771-848a-29e449901c86”]</code></p>
+         </td>
          <td>None</td>
       </tr>
      <tr>
@@ -51,13 +54,17 @@ This API allows you to validate and import TML objects.
       <tr>
          <td><code>force_create</code></td>
          <td>boolean</td>
-         <td>Specifies if you are updating or creating objects. To create new objects, specify <code>true</code>. By default, ThoughtSpot updates existing objects that have the same GUID as the objects you are importing.</td>
+         <td>Specifies if you are updating or creating objects. To create new objects, specify <code>true</code>. By default, ThoughtSpot updates existing objects that have the same GUID as the objects you are importing. When <code>true</code>, the GUID property in the imported TML is replaced on the server, and the Response Headers will include the <code>id_guid</code> property with the GUID of the new object. </td>
          <td>false</td>
       </tr>
    </tbody>
 </table>
 
 ### Request Example
+
+In your request, you must ensure you have the following headers:
+- The Accept header must be `Accept: text/plain`
+- The X-requested-by header must be `X-Requested-By: ThoughtSpot`
 
 ##### cURL
 
@@ -111,8 +118,6 @@ curl -X POST --header 'Accept: text/plain' --header 'X-Requested-By: ThoughtSpot
 --data-urlencode 'force_create=true' 'http://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/tml/import'
 ```
 
-{% include note.html content="You must send the <code>X-Requested-By</code> header in your request. Without it, the request fails." %}
-
 ##### Request URL
 
 ```
@@ -164,7 +169,9 @@ This API allows you to export TML objects.
       <tr>
          <td><code>export_ids</code></td>
          <td>string</td>
-         <td>Json array of ids of objects to export.</td>
+         <td><p>An <code>x-www-form-urlencoded</code> string containing a JSON array of ids of objects to export. You receive results in the order you request them.</p>
+         <p>Example for export of a single object: <code>["226abd2843-afef-4c2f-bf2f-8fba065330e"]</code></p>
+         <p>Example for export of multiple objects: <code>["226abd2843-afef-4c2f-bf2f-8fba065330e", ”22d305bc51-688b-414f-badc-94579d48308c”]</code></p></td>
          <td>None</td>
       </tr>
      <tr>
@@ -184,6 +191,10 @@ This API allows you to export TML objects.
 
 ### Request Example
 
+In your request, you must ensure you have the following headers:
+- The Accept header must be `Accept: text/plain`
+- The X-requested-by header must be `X-Requested-By: ThoughtSpot`
+
 ##### cURL
 
 ```
@@ -195,8 +206,6 @@ curl -X POST
 --data-urlencode 'export_associated=false' \
 'http://<ThoughtSpot-host>/callosum/v1/tspublic/v1/metadata/tml/export'
 ```
-
-{% include note.html content="You must send the <code>X-Requested-By</code> header in your request. Without it, the request fails." %}
 
 ##### Request URL
 
