@@ -13,11 +13,11 @@ To connect to Databricks:
 
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
-3. Create a name for your connection, a description (optional), then select the ADW connection type, and click **Continue**.
+3. Create a name for your connection, a description (optional), then select the Databricks connection type, and click **Continue**.
 
-     ![Add a Databricks connection]({{ site.baseurl }}/images/embrace-adw-connection-type-ts-cloud.png "Add an ADW connection")
+     ![Add a Databricks connection]({{ site.baseurl }}/images/embrace-databricks-connection-type-ts-cloud.png "Add a Databricks connection")
 
-4. (Optional) Provide additional key-value pairs that you need to set up your connection to ADW, by doing the following:
+4. (Optional) Provide additional key-value pairs that you need to set up your connection to Databricks, by doing the following:
 
    - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
    - Enter your key and value information.
@@ -37,7 +37,7 @@ To connect to Databricks:
 
 After you add the connection, you can search your ADW database by clicking **Search now**.
 
-![The "Connection created" screen]({{ site.baseurl }}/images/adw-connectioncreated.png "The "Connection created" screen")
+![The "Connection created" screen]({{ site.baseurl }}/images/databricks-connectioncreated.png "The "Connection created" screen")
 
 Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
@@ -45,14 +45,13 @@ The connection you just created is a link to the external data source. If there 
 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
-You can modify an ADW connection in the following ways:
+You can modify a Databricks connection in the following ways:
 
-- [Add an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)
-- [Edit an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-edit-connection.html)
-- [Remap an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-remap-connection.html)
-- [Delete a table from an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-table.html)
-- [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-table-dependencies.html)
+- [Edit a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-edit-connection.html)
+- [Remap a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-remap-connection.html)
+- [Delete a table from a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table.html)
+- [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html)
 
-You can also [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html).
+You can also [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html).
 
-See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html) for details of connection parameters.
+See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html) for details of connection parameters.

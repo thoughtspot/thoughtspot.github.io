@@ -20,7 +20,7 @@ To remap a Databricks connection:
 
 4. Click the More Info icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Remapping** on the upper-right-hand side of the page.
 
-    ![Remap a connection]({{ site.baseurl }}/images/adw-remapping.png "Remap a connection")
+    ![Remap a connection]({{ site.baseurl }}/images/databricks-remapping.png "Remap a connection")
 
 5. Click **Download** to download the source mapping file.
 

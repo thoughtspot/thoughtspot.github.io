@@ -14,16 +14,16 @@ You need specific information to establish a seamless and secure connection. The
   <dlentry id="connection-description">
       <dt>Connection description</dt>
       <dd>Provide a short description of the connection.<i> (Optional)</i></dd></dlentry>
+    <dlentry id="host">
+      <dt>Host</dt>
+      <dd>Enter the Databricks host name.</dd></dlentry>  
+    <dlentry id="http-path">
+      <dt>HTTP Path</dt>
+      <dd>Enter the Databricks HTTP path.</dd></dlentry>
     <dlentry id="user">
       <dt>User</dt>
-      <dd>Enter the Databricks account username.</dd></dlentry>  
-    <dlentry id="password">
+      <dd>Specify the user name of the Databricks account.</dd></dlentry>
+  <dlentry id="password">
       <dt>Password</dt>
-      <dd>Enter the Databricks account password.</dd></dlentry>
-    <dlentry id="net-service-name">
-      <dt>Net Service Name</dt>
-      <dd>Specify the net service name of the Databricks account.</dd></dlentry>
-  <dlentry id="schema">
-      <dt>Schema</dt>
-      <dd>Specify the schema associated with the database.<i> (Optional)</i></dd></dlentry>
+      <dd>Specify the password of the Databricks account.</dd></dlentry>
 </dl>

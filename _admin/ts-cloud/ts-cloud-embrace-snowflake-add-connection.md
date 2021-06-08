@@ -67,7 +67,6 @@ You can now perform a live query on the selected tables and columns of your conn
 
 You can modify a Snowflake connection in the following ways:
 
-- [Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)
 - [Edit a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html)
 - [Remap a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-remap-connection.html)
 - [Delete a table from a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table.html)

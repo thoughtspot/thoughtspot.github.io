@@ -20,7 +20,7 @@ To edit a connection:
 
 4. Click **Edit connection** at the upper-right-hand side of the page.
 
-   ![Edit connection]({{ site.baseurl }}/images/adw-editconnection.png "Edit connection")
+   ![Edit connection]({{ site.baseurl }}/images/databricks-editconnection.png "Edit connection")
 
    By default, the Select tables page appears. You have the option, though, to change the connection name and update the connection details, by clicking the appropriate option at the top of the screen, making any changes needed and clicking Continue to go to the next page.
 
