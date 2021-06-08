@@ -15,25 +15,31 @@ POST /tspublic/v1/export/pinboard/pdf
 ```
 ## Request parameters
 
-| Form Parameter               | Data Type | Description                                                                                                                                                                                                  | Default     |
-|------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| `id`                         | string    | ID (GUID) of the pinboard to download                                                                                                                                                                        | None        |
-| `layout_type`                | string    | Layout type for the PDF. Valid values are `PINBOARD` and `VISUALIZATION`. For `PINBOARD`, the PDF uses the same layout as the pinboard UI. For `VISUALIZATION`, the PDF has one visualization for each page. | `PINBOARD`  |
-| `orientation`                | string    | Page orientation for the PDF. Valid values are `PORTRAIT` and `LANDSCAPE`.                                                                                                                                   | `LANDSCAPE` |
-| `truncate_tables`            | boolean   | When set to true, only the first page of the tables is displayed in the PDF. This setting is applicable only if the `layout_type` parameters is set to `VISUALIZATION`                                       | false       |
-| `visualization_ids`          | string    | IDs of the visualizations to include in the PDF. This setting is applicable only if the `layout_type` parameter is set to `VISUALIZATION`.                                                                   | none        |
-| `include_logo`               | boolean   | Include customized wide logo if available in the footer                                                                                                                                                      | true        |
-| `footer_text` *Optional*     | string    | Footer text to include in the footer of each page of the PDF.                                                                                                                                                | none        |
-| `include_page_number`        | boolean   | When set to true, the page number is included in the footer of each page.                                                                                                                                    | true        |
-| `include_cover_page`         | boolean   | When set to true, a cover page with the pinboard title is added in the PDF.                                                                                                                                  | true        |
-| `include_filter_page`        | boolean   | When set to true, a second page with a list of all applied filters is added in the PDF                                                                                                                       | true        |
+| Form Parameter | Data Type | Description | Default |
+|---|---|---|---|
+| `id` | string | ID (GUID) of the pinboard to download | None |
+| `layout_type` | string | Layout type for the PDF. Valid values are `PINBOARD` and `VISUALIZATION`. For `PINBOARD`, the PDF uses the same layout as the pinboard UI. For `VISUALIZATION`, the PDF has one visualization for each page. | `PINBOARD`  |
+| `orientation` | string | Page orientation for the PDF. Valid values are `PORTRAIT` and `LANDSCAPE`. | `LANDSCAPE` |
+| `truncate_tables` | boolean | When set to true, only the first page of the tables is displayed in the PDF. This setting is applicable only if the `layout_type` parameters is set to `VISUALIZATION` | false |
+| `visualization_ids` | string | IDs of the visualizations to include in the PDF. This setting is applicable only if the `layout_type` parameter is set to `VISUALIZATION`. | none |
+| `include_logo` | boolean | Include customized wide logo if available in the footer | true |
+| `footer_text` *Optional* | string | Footer text to include in the footer of each page of the PDF. | none |
+| `include_page_number` | boolean | When set to true, the page number is included in the footer of each page. | true |
+| `include_cover_page` | boolean | When set to true, a cover page with the pinboard title is added in the PDF. | true |
+| `include_filter_page` | boolean | When set to true, a second page with a list of all applied filters is added in the PDF. | true |
 
 ## Example request
+
+In your request, you must ensure you have the following headers:
+- The Accept header must be `Accept: application/octet-stream`
+- The Content-type header must be `Content-type: multipart/form-data`
+- The X-requested-by header must be `X-Requested-By: ThoughtSpot`
 
 ##### cURL
 
 ```
 curl --location --request POST 'http://<instance>/callosum/v1/tspublic/v1/export/pinboard/pdf' \
+--header 'Content-Type: multipart/form-data \
 --header 'Accept: application/octet-stream' \
 --header 'X-Requested-By: ThoughtSpot' \
 --header 'Cookie: JSESSIONID=71cc2672-7ead-4480-be7d-b6ad52023e98; userGUID=59481331-ee53-42be-a548-bd87be6ddd4a; Callosum-Download-Initiated=false' \
@@ -46,8 +52,6 @@ curl --location --request POST 'http://<instance>/callosum/v1/tspublic/v1/export
 --form 'include_filter_page="true"' \
 --form 'include_cover_page="true"'
 ```
-
-{% include note.html content="You must send the `X-Requested-By` header in your request. Without it, the request fails." %}
 
 ##### Request URL
 
