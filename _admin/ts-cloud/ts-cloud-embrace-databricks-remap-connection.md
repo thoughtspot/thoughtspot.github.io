@@ -32,6 +32,6 @@ To remap a Databricks connection:
 7. Finally, click **Browse your files**, and upload your edited mapping file to update the mapping of your connection.
 
 
-To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html).
+To remove a table from a connection, delete it from the connection details page. For more information, see: [Delete a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html).
 
 See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html) for details of connection parameters.
