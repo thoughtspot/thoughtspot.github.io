@@ -1,7 +1,7 @@
 ---
-title: [User API]
+title: [User APIs]
 summary: "The User APIs enable you to manage user- and group-related operations in the ThoughtSpot system."
-last_updated: 5/5/2021
+last_updated: 6/6/2021
 redirect_from:
 - /app-integrate/reference/user-api.html
 sidebar: mydoc_sidebar
@@ -13,7 +13,7 @@ You can use the User APIs to manage your users and groups in ThoughtSpot.
 
 ## Get a list of users and groups
 
-Use the `/tspublic/v1/user/list` API to get a list of all users, groups, and their inter-dependencies in the form of principal objects.
+To get a list of all users, groups, and their inter-dependencies in the form of principal objects, use the `/tspublic/v1/user/list` API.
 
 ### Resource URL
 ```
@@ -130,7 +130,7 @@ Valid values are:</p>
 
 | HTTP Code | Description           |
 |-----------|-----------------------|
-| **200**   | Successful retrieval of user data. |
+| **200**   | Successful operation |
 
 ## Change password
 
@@ -215,9 +215,14 @@ POST /tspublic/v1/user/updatepreference
 <td style="text-align: left;"><p>The ID of the user. Use the GUID of the user.</p></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><p><code>username</code> <em>Optional</em></p></td>
+<td style="text-align: left;"><p>string</p></td>
+<td style="text-align: left;"><p>Username of the user.</p></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;"><p><code>preferences</code></p></td>
 <td style="text-align: left;"><p>string</p></td>
-<td style="text-align: left;"><p>JSON map of user preferences. In the JSON map, you can define the attributes to set the following preferences for a user:</p>
+<td style="text-align: left;"><p>The JSON map of user preferences. In the JSON map, you can define the attributes to set the following preferences for a user:</p>
 <ul>
 <li><p>change the display language of the ThoughtSpot UI</p></li>
 <li><p>receive email notifications when another user shares a search answer or a pinboard</p></li>
@@ -335,10 +340,9 @@ https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/user/transfer/ownership?fromU
 ```
 ### Response codes
 
-| HTTP Code | Description                                                                              |
-|-----------|------------------------------------------------------------------------------------------|
-| **200**   | If the ownership of all objects is successfully transferred.                             |
-| **400**   | In case of invalid `fromName` and `toName`, or if there is no user for a given username. |
+| HTTP Code | Description |
+| **200** | If the ownership of all objects is successfully transferred. |
+| **400** | In case of invalid `fromName` and `toName`, or if there is no user for a given username. |
 
 ## Synchronize principals
 
@@ -361,12 +365,12 @@ During this operation:
 
 This API uses `multipart/form-data` content type.
 
-| Form Parameter  | Data Type | Description                                                                                               |
-|-----------------|-----------|-----------------------------------------------------------------------------------------------------------|
-| `principals`    | string    | Specifies a list of principal objects.   This is a JSON file containing all users and groups present in the external database.                      |
-| `applyChanges`  | boolean   | A flag indicating whether to sync the users and groups to the system, and apply the difference evaluated. Use this parameter to validate a difference before applying changes.                                       |
-| `removeDeleted` | boolean   | A flag indicating whether to remove deleted users/groups. When true, this flag removes any deleted users or groups.                                                  |
-| `password`      | string    | Specifies a password.                                                                                     |
+| Form Parameter | Data Type | Description |
+|---|---|---|
+| `principals` | string | Specifies a list of principal objects.   This is a JSON file containing all users and groups present in the external database. |
+| `applyChanges` | boolean | A flag indicating whether to sync the users and groups to the system, and apply the difference evaluated. Use this parameter to validate a difference before applying changes. |
+| `removeDeleted` | boolean  | A flag indicating whether to remove deleted users/groups. When true, this flag removes any deleted users or groups. |
+| `password` | string | Specifies a password. |
 
 ### Example request
 

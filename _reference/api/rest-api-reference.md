@@ -1,7 +1,7 @@
 ---
 title: [Public REST API reference]
 summary: "ThoughtSpot provides several REST APIs to manage users, sessions, ThoughtSpot data objects."
-last_updated: 5/4/2021
+last_updated: 6/8/2021
 toc: false
 sidebar: mydoc_sidebar
 redirect_from:
@@ -58,9 +58,9 @@ To access REST APIs, you must authenticate through SAML SSO. For more informatio
           <td>Remove a privilege from a group.</td>
        </tr>  
        <tr>
-          <td rowspan="3"><a href="{{ site.baseurl }}/reference/api/session-api.html">Session</a></td>
+          <td rowspan="4"><a href="{{ site.baseurl }}/reference/api/session-api.html">Session</a></td>
           <td><code class="api-method-post">POST /tspublic/v1/session/login</code></td>
-          <td>Authenticate and log in a user.</td>
+          <td>Sign a user in to ThoughtSpot.</td>
           </tr>
       <tr>
           <td><code class="api-method-post">POST /tspublic/v1/session/logout</code> </td>
@@ -70,6 +70,10 @@ To access REST APIs, you must authenticate through SAML SSO. For more informatio
            <td><code class="api-method-post">POST /tspublic/v1/session/auth/token</code> </td>
            <td>Obtain an authentication token for a user.</td>
         </tr>
+        <tr>
+            <td><code class="api-method-post">GET /tspublic/v1/session/login/token</code> </td>
+            <td>Log in an authenticated user when trusted authentication is enabled. </td>
+         </tr>
        <tr>
          <td><a href="{{ site.baseurl }}/reference/api/pinboarddata.html">Pinboard Data</a></td>
          <td><code class="api-method-post">POST /tspublic/v1/pinboarddata</code> </td>
@@ -81,7 +85,7 @@ To access REST APIs, you must authenticate through SAML SSO. For more informatio
          <td>Export a pinboard or the visualizations in a pinboard as a PDF file.</td>
       </tr>
      <tr>
-         <td rowspan="3"><a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata</a></td>
+         <td rowspan="4"><a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata</a></td>
          <td><code class="api-method-get">GET /tspublic/v1/metadata/listobjectheaders</code> </td>
          <td>List the metadata object headers in the repository.</td>
       </tr>
@@ -92,6 +96,10 @@ To access REST APIs, you must authenticate through SAML SSO. For more informatio
       <tr>
          <td><code class="api-method-get">GET /tspublic/v1/metadata/listas</code> </td>
          <td>Get a list of metadata objects for a user or user group.</td>
+      </tr>
+      <tr>
+         <td><code class="api-method-get">POST /tspublic/v1/metadata/assigntag</code> </td>
+         <td>Assign tags to a metadata object such as a pinboard, search answer, table, worksheet, or view.</td>
       </tr>
     <tr>
          <td><a href="{{ site.baseurl }}/reference/api/search-data-api.html">Search Data</a></td>
@@ -106,6 +114,15 @@ To access REST APIs, you must authenticate through SAML SSO. For more informatio
     <tr>
        <td><code class="api-method-post">POST /tspublic/v1/metadata/tml/export</code> </td>
        <td>Export TML objects.</td>
+    </tr>
+    <tr>
+       <td rowspan="2"><a href="{{ site.baseurl }}/reference/api/security-api.html">Security</a></td>
+       <td><code class="api-method-post">POST /tspublic/v1/security/share</code> </td>
+       <td>Share ThoughtSpot objects with another user or user group.</td>
+    </tr>
+    <tr>
+       <td><code class="api-method-post">POST /tspublic/v1/security/shareviz</code> </td>
+       <td>Share a specific ThoughtSpot visualization with another user or user group.</td>
     </tr>
    </tbody>
 </table>
