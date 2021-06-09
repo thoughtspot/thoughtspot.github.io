@@ -50,9 +50,7 @@ The worksheet creation tooltips appear when you create a worksheet during onboar
 
 These are the fixes we applied to Free Trial:
 
-* We resolved bugs to improve search data quality.
-
-* We resolved bugs to improve answer functionality.
+* We resolved bugs to improve search data and answer functionality.
 
 ## May 26, 2021
 
