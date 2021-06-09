@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 <div class="alert alert-info" role="alert">
  <p><strong><i class="fa fa-info-circle"></i>  Note: SearchIQ is in <span class="label label-beta">Beta</span></strong></p>
  <ul type="square">
+  <li>This feature is now deprecated. You may not use it starting with release 7.0. For details, see Deprecation announcements.</li>
   <li>SearchIQ is only available in English.</li>
   <li>The feature is off by default; to enable it, contact <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a>.</li>
   <li>You must have the <strong>Can use experimental features</strong> permission.</li>

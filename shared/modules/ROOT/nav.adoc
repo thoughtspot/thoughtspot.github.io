@@ -131,7 +131,7 @@
 **** xref:end-user:spotiq-customize.adoc[101:Do more with SpotIQ]
 **** xref:end-user:special-topics.adoc[Best SpotIQ Practices]
 **** xref:end-user:customization.adoc[Custom SpotIQ analysis]
-**** xref:end-user:adv-customize-withr.adoc[Advanced R Customizations]
+**** xref:end-user:adv-customize-withr.adoc[Advanced R Customizations] <span class="label label-beta">De-support 7.2</span>.
 *** Share your work
 **** xref:end-user:sharing-for-end-users.adoc[About sharing]
 **** xref:end-user:share-pinboards.adoc[Share pinboards]

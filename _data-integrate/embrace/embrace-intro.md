@@ -116,7 +116,7 @@ The following matrix compares the features that are available in our internal hi
 <td>&check;</td>
 </tr>
 <tr>
-<td>Spot IQ: Instant insights, Did you know?,<br>Pinboard insights</td>
+<td>Spot IQ: Instant insights <span class="label label-beta">De-support 7.1</span>, Did you know?,<br>Pinboard insights</td>
 <td>&check;</td>
 <td>&cross;</td>
 </tr>

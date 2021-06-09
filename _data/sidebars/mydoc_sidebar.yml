@@ -32,6 +32,9 @@ entries:
     - title: Accessibility
       url: /release/accessibility.html
       output: web,rnotes
+    - title: Deprecation announcements
+      url: /release/deprecation.html
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web,rnotes
