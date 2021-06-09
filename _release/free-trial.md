@@ -41,7 +41,7 @@ To simplify the process of creating worksheets on Free Trial, we added tooltips 
 
 The worksheet creation tooltips appear when you create a worksheet during onboarding. To view examples of typical fact tables, proceed to step one of the worksheet creation process in Setup, and click the information icon to the right of the **Select a fact table** dialog. To view examples of typical dimension tables, click the information icon to the right of the **Select up to 4 dimension tables** dialog.
 
-![]({{ site.baseurl }}/images/free-trial-login-pendo-fact-table.png "Fact table tooltip"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-pendo-fact-table.png "Fact table tooltip"){: .inline}
 
 ![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip"){: .inline}
 
