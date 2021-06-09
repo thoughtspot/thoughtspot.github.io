@@ -21,7 +21,7 @@ POST /tspublic/v1/export/pinboard/pdf
 | `layout_type` | string | Layout type for the PDF. Valid values are `PINBOARD` and `VISUALIZATION`. For `PINBOARD`, the PDF uses the same layout as the pinboard UI. For `VISUALIZATION`, the PDF has one visualization for each page. | `PINBOARD`  |
 | `orientation` | string | Page orientation for the PDF. Valid values are `PORTRAIT` and `LANDSCAPE`. | `LANDSCAPE` |
 | `truncate_tables` | boolean | When set to true, only the first page of the tables is displayed in the PDF. This setting is applicable only if the `layout_type` parameters is set to `VISUALIZATION` | false |
-| `visualization_ids` | string | IDs of the visualizations to include in the PDF. This setting is applicable only if the `layout_type` parameter is set to `VISUALIZATION`. | none |
+| `visualization_ids` | string | IDs (GUIDs) of the specific Pinboard visualizations to include in the PDF, in JSON array format. For example, `['aab9eb75-d295-4a79-ac37-4a37c1cce0b3', '039943a7-77cb-4fa1-a8a2-785a2b5ebe28']`. This setting is applicable only if the `layout_type` parameter is set to `VISUALIZATION`. | none |
 | `include_logo` | boolean | Include customized wide logo if available in the footer | true |
 | `footer_text` *Optional* | string | Footer text to include in the footer of each page of the PDF. | none |
 | `include_page_number` | boolean | When set to true, the page number is included in the footer of each page. | true |
