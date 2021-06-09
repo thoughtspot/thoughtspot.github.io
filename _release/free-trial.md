@@ -1,11 +1,57 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 05/26/2021
+last_updated: 06/09/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+## June 9, 2021
+
+<!--
+{: id="invite-others"}
+### Free Trial invite others
+
+We streamlined the process to invite another user to Free Trial. Now, you can invite others directly from within Free Trial, and the invitee receives the Free Trial activation email in their inbox. Users you invite automatically join your group, and can access your shared data objects (worksheets, answers, pinboards, etc.). You can invite a maximum of five new users to join your group.
+
+To invite a teammate to Free Trial, simply navigate to the **Setup** tab, click **Invite others** at the bottom of the screen, and enter your teammate’s email.
+
+![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
+
+![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
+-->
+
+{: id="password-creation-checklist"}
+### Password creation checklist
+
+We redesigned the account creation page to clarify the password requirements for new users. Now, when you first log in to Free Trial, the password verification checklist appears. Your password must contain:
+
+- 8 or more characters
+- At least one uppercase letter
+- At least one lowercase letter
+- At least one number
+- At least one special character ( !, #, $, etc.)
+
+![]({{ site.baseurl }}/images/free-trial-password-checklist.png "Password creation checklist")
+
+{: id="worksheet-creation-tooltips"}
+### Worksheet creation tooltips in Setup
+
+To simplify the process of creating worksheets on Free Trial, we added tooltips to explain the difference between fact tables and dimension tables. When creating a worksheet, you first select the fact table that forms the base of your business use case, then add dimension tables with common dimensions to your fact table. For example, to create a Sales worksheet, you join together a sales fact table with dimension tables that share common dimensions like date, region, and store.
+
+The worksheet creation tooltips appear when you create a worksheet during onboarding. To view examples of typical fact tables, proceed to step one of the worksheet creation process in Setup, and click the information icon to the right of the **Select a fact table** dialog. To view examples of typical dimension tables, click the information icon to the right of the **Select up to 4 dimension tables** dialog.
+
+![]({{ site.baseurl }}/images/free-trial-login-pendo-fact-table.png "Fact table tooltip"){: .inline}
+
+![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip"){: .inline}
+
+
+### Free Trial Make It shine
+
+These are the fixes we applied to Free Trial:
+
+* We resolved bugs to improve search data and answer functionality.
+
 ## May 26, 2021
 
 {: id="make-it-shine"}
@@ -61,7 +107,7 @@ We added a "What’s New" section to the ThoughtSpot Information Center. This se
 
 ![]({{ site.baseurl }}/images/free-trial-learn-more.png "Learn more about new features")
 
-{: id="invite-others"}
+<!--
 ### Free Trial invitation process simplified
 
 We have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox. Users you invite join your group automatically, and can share Answers, Pinboards and Worksheets.
@@ -71,6 +117,7 @@ To invite a teammate to Free Trial, simply navigate to the **Setup** tab and cli
 ![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
 
 ![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
+-->
 
 {: id="duplicate-column-names-highlighted"}
 ### Worksheet duplicate column names error
