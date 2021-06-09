@@ -8,6 +8,7 @@ permalink: /:collection/:path.html
 <div class="alert alert-info" role="alert">
  <p><strong><i class="fa fa-info-circle"></i>  Note: SearchIQ is <span class="label label-beta">Beta</span></strong></p>
  <ul type="square">
+  <li>This feature is now deprecated. You may not use it starting with release 7.0. For details, see Deprecation announcements.</li>
   <li>SearchIQ is only available in English.</li>
   <li>SerchIQ is in <span class="label label-beta">Beta</span>, and off by default; to enable it, contact <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a>.</li>
   <li>You must have the <strong>Can use experimental features</strong> permission.</li>
@@ -15,8 +16,6 @@ permalink: /:collection/:path.html
 </div>
 
 Entity categories specify how to categorize the data in the column, by entity type. By default, `ENTITY TYPE` is not set. Entity categories support [SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#) so that when you type a natural question, ThoughtSpot better knows how to interpret it. For example, if you ask "who are the top performers?" ThoughtSpot will first choose columns set with `PERSON` from which to return answers. If you ask "when was the movie Jurassic Park released?", columns set to `TIME` will be used to answer the "when" part of the question, and so forth.
-
-<!--  You can specify a per column entity category to help SearchIQ. -->
 
 If you have access to tables and worksheets for data modeling purposes, you can specify entity categories for their columns. This lets you designate that column as representing a person, place, or thing. So then when a user asks "Which", "Who", or "Where", an appropriate response can more easily be found in the data.
 
@@ -54,7 +53,5 @@ To specify entity categories:
 
 
 ## Related information
-
-* [SearchIQ]({{ site.baseurl}}/end-user/search/about-searchiq.html)
 
 * [Overview of data modeling settings]({{ site.baseurl}}/admin/data-modeling/data-modeling-settings.html)

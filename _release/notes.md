@@ -12,6 +12,8 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot version 6.3.1 CU1 is now available. These release notes include information about new and enhanced features.
 
+To see our feature deprecation plans, please see [Deprecation announcements]({{ site.baseurl }}/release/note.html).
+
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
 * [6.3.1 New Features](#6-3-1-new)
@@ -180,7 +182,7 @@ To set locale to English (India), click the user icon in the top right corner to
     <dd id="dataflow-transformations"><strong>Transformations</strong><br/>In all DataFlow database connections, you can now add row-level formulas that use native database functions to transform your data as it loads into ThoughtSpot.</dd></dlentry>
   <dlentry id="embrace">
     <dt>Embrace</dt>
-    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
+    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights <span class="label label-beta">De-support 7.1</span>, by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
     <dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. This feature is in beta for this release. Contact ThoughtSpot support for assistance.</dd>
     </dlentry>
 </dl>

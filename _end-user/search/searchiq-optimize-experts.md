@@ -5,6 +5,8 @@ summary: "It is useful to identify experts who can help with SearchIQ."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.0. For details, see Deprecation announcements." %}
+
 SearchIQ is in <span class="label label-beta">Beta</span>.
 
 {% include note.html content="SearchIQ is turned off by default. ThoughtSpot Support can enable it for you. SearchIQ is only available in English." %}
