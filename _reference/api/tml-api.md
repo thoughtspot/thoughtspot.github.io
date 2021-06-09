@@ -39,7 +39,7 @@ This API allows you to validate and import TML objects.
       <tr>
          <td><code>import_objects</code></td>
          <td>string</td>
-         <td><p>The objects to import. An <code>x-www-form-urlencoded</code> string containing a JSON array of strings in YAML format.</p>
+         <td><p>An <code>x-www-form-urlencoded</code> string containing a JSON array of strings of TML objects to upload, in YAML or JSON format. If in YAML format within the JSON array, use escape characters for YAML quotes, and new line characters when there is a new line.</p>
          <p>Example for import of a single object: <code>["guid: 3729c085-8659-48fd-9479-a67bd7307496\npinboard:\n  name: …"]</code></p>
          <p>Example for import of multiple objects: <code>["guid: 3729c085-8659-48fd-9479-a67bd7307496\npinboard:\n  name: …“, “["guid: 3729c085-8659-48fd-9479-a67bd7307496\npinboard:\n  name: "4f3827f2-ee0c-4771-848a-29e449901c86”]</code></p>
          </td>
