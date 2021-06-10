@@ -22,9 +22,11 @@ You can download a Pinboard in PDF format, without downloading each visualizatio
 {: id="pdf-pinboard"}
 ## Download PDF as Pinboard
 
-The Pinboard mode produces a PDF file that looks very similar to the Pinboard inside ThoughtSpot. The highlights and instant insights appear at the top, and the rest of the Pinboard is on a rectangular grid, with natural page breaks.
+The Pinboard mode produces a PDF file that looks very similar to the Pinboard inside ThoughtSpot. The highlights and instant insights <span class="label label-beta">De-support 7.1</span> appear at the top, and the rest of the Pinboard is on a rectangular grid, with natural page breaks.
 
-{% include note.html content="Instant Insights are turned off by default. They do not appear on Pinboards, or elsewhere in the application, unless your administrator turns on the feature." %}
+{% include deprecation.html content="Instant Insights is now deprecated. You may not use it starting with release 7.1. For details, see Deprecation Announcements." %}
+
+{% include note.html content="Instant Insights are turned off by default. They do not appear on Pinboards, or elsewhere in the application, unless your administrator turns on the feature. " %}
 
 Follow these steps to specify additional options:
 
