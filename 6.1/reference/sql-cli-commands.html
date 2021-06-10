@@ -11,7 +11,6 @@
 <meta name="keywords" content=",  ">
 <title>TQL reference | ThoughtSpot</title>
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.1/css/syntax.css">
-
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!--<link rel="stylesheet" type="text/css" href="https://docs.thoughtspot.com/6.1/css/bootstrap.min.css%22%3E--%3E%0A%3Clink%20rel=%22stylesheet%22%20href=%22%7B%7B">
 <!-- Latest compiled and minified CSS -->
@@ -20,33 +19,24 @@
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.1/css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
 <link rel="stylesheet" href="https://docs.thoughtspot.com/6.1/css/theme-new-brand.css">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="https://docs.thoughtspot.com/6.1/js/copyCode.js"></script>
 <script src="https://docs.thoughtspot.com/6.1/js/jquery.navgoco.min.js"></script>
-
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- Anchor.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="https://docs.thoughtspot.com/6.1/js/toc.js"></script>
 <script src="https://docs.thoughtspot.com/6.1/js/customscripts.js"></script>
-
 <link rel="shortcut icon" href="https://docs.thoughtspot.com/6.1/images/favicon.ico">
-
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
 <link rel="alternate" type="application/rss+xml" title="thoughtspot.github.io" href="https://docs.thoughtspot.com/feed.xml">
-
-
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[“TQL reference”] | thoughtspot.github.io</title>
 <meta name="generator" content="Jekyll v3.9.0" />
@@ -58,16 +48,13 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/reference/sql-cli-commands.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-06-01T16:47:33-07:00" />
+<meta property="article:published_time" content="2021-06-10T11:00:42-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“TQL reference”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.","headline":"[“TQL reference”]","dateModified":"2021-06-01T16:47:33-07:00","datePublished":"2021-06-01T16:47:33-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/reference/sql-cli-commands.html"},"url":"https://docs.thoughtspot.com/6.1/reference/sql-cli-commands.html","@context":"https://schema.org"}</script>
+{"description":"TQL is the ThoughtSpot language for entering SQL commands. This reference lists TQL commands you can use to do things like creating a schema or verifying a data load.","headline":"[“TQL reference”]","dateModified":"2021-06-10T11:00:42-07:00","datePublished":"2021-06-10T11:00:42-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/reference/sql-cli-commands.html"},"url":"https://docs.thoughtspot.com/6.1/reference/sql-cli-commands.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-
-
-
 <!--  Site Search -->
 <script>
   /********* Version 11.x JavaScript for Site Search 360 *********/
@@ -162,7 +149,6 @@ var ss360Config = {
 }
 </script>
 <script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js"></script>
-
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -181,19 +167,15 @@ var ss360Config = {
                     easing: 'swing'
                 }
             });
-
             $("#collapseAll").click(function(e) {
                 e.preventDefault();
                 $("#mysidebar").navgoco('toggle', false);
             });
-
             $("#expandAll").click(function(e) {
                 e.preventDefault();
                 $("#mysidebar").navgoco('toggle', true);
             });
-
         });
-
     </script>
     <script>
         $(function () {
@@ -212,12 +194,10 @@ var ss360Config = {
         });
     </script>
     
-
 </head>
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top">
-
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -229,10 +209,8 @@ var ss360Config = {
 <!-- OLD HOME NAV removed in favor of logo image
            <a class="fa fa-home fa-lg navbar-brand" href="/6.1/index.html">&nbsp;<span class="projectTitle"> </span></a>
 -->
-
 <div class="logo">
 <figure><a class="no_icon" target="_self" href="/"><img class="docimage" src="/images/company_logo_white.svg" title="" alt="ThoughtSpot Documentation home" style="width:158;width:158px;padding:10px"/> </a></figure>
-
 </div>
 <!-- Don't use max-width since it doesn't render in firefox browser -->
         </div>
@@ -241,10 +219,8 @@ var ss360Config = {
                 <!-- toggle sidebar button -->
                 <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
                 <!-- entries without drop-downs appear here -->
-
                 
                 
-
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the topnav.yml file.-->
@@ -282,7 +258,6 @@ var ss360Config = {
                 </li>
                 
                 
-
                 
                 <!--comment out this block if you want to hide search-->
                 <li>
@@ -295,7 +270,6 @@ var ss360Config = {
                         <!-- <input type="text" id="search-input" place/holder="search..."> -->
                         <!-- <ul id="results-container"></ul> -->
                     <!-- </div> -->
-
                     <!--end search-->
                 </li>
             </ul>
@@ -303,7 +277,6 @@ var ss360Config = {
         </div>
         <!-- /.container -->
 </nav>
-
 <!-- Page Content -->
 <div class="container">
   <div id="main">
@@ -314,16 +287,12 @@ var ss360Config = {
             <!-- Sidebar Column -->
             <div class="col-md-3" id="tg-sb-sidebar">
                 
-
 <ul id="mysidebar" class="nav">
   <li class="bookTitle">ThoughtSpot Software</li>
   <li class="bookSubtitle">Release: 6.1</li>
-
     <!-- Add link to same page in the latest version if you're on an older version of docs.
        -->
-
        
-
     <!-- KEEP FOR TESTING
          <li class="small-sidebar-link">Current page URL is /reference/sql-cli-commands.html.</li>
          <li class="small-sidebar-link">Current version is 7.0.</li>
@@ -333,31 +302,21 @@ var ss360Config = {
            <li class="small-sidebar-link">url_chunks[2] is sql-cli-commands.html.</li>
                     <li class="small-sidebar-link">url_chunks[3] is .</li>
  -->
-
        
-
        
-
        
-
        
-
        
-
        
-
        
        <li class="small-sidebar-version-nav"><a href="/7.0/reference/sql-cli-commands.html">Switch to version 7.0 (latest)</a></li>
        
-
          <!-- KEEP FOR TESTING
 <li class="small-sidebar-link">newURL is /7.0/reference/sql-cli-commands.html</li>
   <li class="small-sidebar-link">New URL will be https://docs.thoughtspot.com/6.1/7.0/reference/sql-cli-commands.html</li>
  -->
-
     <!-- End add link to latest version
        -->
-
   
     
       
@@ -3748,29 +3707,20 @@ var ss360Config = {
          </p>
          -->
 </ul>
-
-
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
-
             </div>
             
         
-
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
    <h1 class="post-title-main">TQL reference</h1>
 </div>
-
-
-
 <div class="post-content">
-
    
     <div class="summary">Learn the TQL commands.</div>
    
-
     
     
 <!-- this handles the automatic toc. use ## for subheads to auto-generate the
@@ -3779,26 +3729,18 @@ element in order for it to appear in the minitoc. -->
 <script>
 $( document ).ready(function() {
   // Handler for .ready() called.
-
 $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
 /* this offset helps account for the space taken up by the floating toolbar. */
 $('#toc').on('click', 'a', function() {
   var target = $(this.getAttribute('href'))
     , scroll_target = target.offset().top
-
   $(window).scrollTop(scroll_target - 10);
   return false
 })
-
 });
 </script>
-
 <div id="toc"></div>
-
     
-
-
     
     <!--
 <span class="reading-time" title="Estimated reading time">
@@ -3809,44 +3751,31 @@ $('#toc').on('click', 'a', function() {
   
 </span>
  -->
-
     
-
   <p>TQL is the ThoughtSpot language for entering SQL commands. This reference lists
 TQL commands you can use to do things like creating a schema or verifying a data
 load.</p>
-
 <h2 id="about-using-tql">About using TQL</h2>
-
 <p>You can use TQL either <a href="/6.1/admin/loading/upload-sql-script.html#">through the ThoughtSpot application’s web interface</a> or the <a href="/6.1/reference/sql-cli-commands.html#">command line
 interface</a> in the Linux
 shell.</p>
-
 <p>Use  <code class="language-plaintext highlighter-rouge">--query_results_apply_top_row_count &lt;number&gt;</code> flag to limit the number of
 result rows returned by a query. For example:</p>
-
 <p><code class="language-plaintext highlighter-rouge">$ tql --query_results_apply_top_row_count 100</code></p>
-
 <p>As a best practice, you should enclose object names (database, schema, table,
 and column) in double quotes, and column values in single quotes.
  When referring to objects using fully qualified object names, the syntax is:</p>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"database"."schema"."table"
 </code></pre></div></div>
-
 <p>To get help on SQL when using TQL,  enter <code class="language-plaintext highlighter-rouge">help</code> on the command line.</p>
-
 <p>You can use TQL to view and modify schemas and data in tables. Remember to add a
 semicolon after each command. Commands are not case sensitive but are
 capitalized here for readability.</p>
-
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Worksheets and pinboards in ThoughtSpot are
 dependent upon the data in the underlying tables. Use caution when modifying
 tables directly. If you change or remove a schema on which those objects rely,
 the objects could become invalid.</div>
-
 <h2 id="view-schemas-and-data">View schemas and data</h2>
-
 <table>
    <colgroup>
       <col style="width:25%" />
@@ -3864,7 +3793,6 @@ the objects could become invalid.</div>
             <code>SHOW DATABASES</code>
          </td>
          <td>Lists all available databases.
-
          <p>Examples:</p>
             <p><code>SHOW DATABASES;</code></p>
          </td>
@@ -3980,9 +3908,7 @@ GROUP BY "vendor" LIMIT 10;</code></p>
       </tr>
    </tbody>
 </table>
-<p>[embed label="schema-creation"]</p>
 <h2 id="schema-creation">Schema creation</h2>
-
 <table>
    <colgroup>
       <col style="width:25%" />
@@ -4041,9 +3967,7 @@ CONSTRAINT PRIMARY KEY("saleid")) PARTITION BY HASH(96) KEY ("saleid");</code></
       </tr>
    </tbody>
 </table>
-<p>[/embed]</p>
 <h2 id="schema-modification">Schema modification</h2>
-
 <table>
    <colgroup>
       <col style="width:25%" />
@@ -4128,7 +4052,6 @@ nickname';</code></p>
          </p>
          <p><code>ALTER TABLE "sales" DROP CONSTRAINT PRIMARY KEY;</code></p>
          <p><code>ALTER TABLE "sales" ADD CONSTRAINT PRIMARY KEY ("PO_number");</code></p>
-
       </td>
    </tr>
    <tr>
@@ -4180,12 +4103,9 @@ nickname';</code></p>
          <p><code>ALTER TABLE fact100 MODIFY COLUMN product_id int;</code></p>
       </td>
    </tr>
-
    </tbody>
 </table>
-
 <h2 id="modify-data">Modify data</h2>
-
 <table>
    <colgroup>
       <col style="width:25%" />
@@ -4204,7 +4124,6 @@ nickname';</code></p>
          </td>
          <td><p>Inserts values into a table. Only use this for testing. Do not use <code>INSERT</code> on
             a production system. For example:</p>
-
             <p><code>INSERT INTO "vendor" VALUES ('helen rose', 'jacob norse', 'eileen ruff',
 'manny gates');</code></p>
          </td>
@@ -4239,22 +4158,18 @@ WHERE "borough" = 'staten isl' AND city = 'NY';</code></p>
          <td><p>Deletes rows from a table that match optionally provided predicates.
             Predicates have the form <code>column = value</code> connected by the <code>AND</code> keyword. When specifying dates, use <a href="https://www.epochconverter.com/">epoch values</a>. Other date formats can result in error and unwanted deletion of data from the table.
          For example.</p>
-
 <p><code>DELETE FROM "vendor" WHERE "name" = 'Joey Smith' AND "vendorid" =
 '19463';</code></p>
          </td>
       </tr>
    </tbody>
 </table>
-
 <h2 id="constraints-and-relationships">Constraints and relationships</h2>
-
 <p>Constraints and relationships in ThoughtSpot are used to define the
 relationships between tables (how they can be joined). However, constraints
 are not enforced, as they would be in a transactional database. You can define
 the following constraints when creating a table with <code>CREATE TABLE</code>, or add them
 to an existing table using the <code>ADD CONSTRAINT</code> syntax:</p>
-
 <table>
    <colgroup>
       <col style="width:25%" />
@@ -4295,13 +4210,10 @@ varchar(55), CONSTRAINT PRIMARY KEY ("schoolID") ) ;</code></p>
 <p>Examples of this statement:</p>
 <p><code>ALTER TABLE "batting" ADD CONSTRAINT "FK_player" FOREIGN KEY ("playerID")
 REFERENCES "players" ("playerID");</code></p>
-
 <p><code>ALTER TABLE "batting" ADD CONSTRAINT "FK_lg_team" FOREIGN KEY ("lgID" ,"teamID")
 REFERENCES "teams" ("lgID" ,"teamID");</code></p>
-
 <p><code>ALTER TABLE "shipment" ADD CONSTRAINT "FK_PO_vendor" FOREIGN KEY ("po_number",
 "vendor") REFERENCES "orders" ("po_number", "vendor");</code></p>
-
 <p><code>ALTER TABLE "shipment" DROP CONSTRAINT "FK_PO_vendor";</code></p>
          </td>
       </tr>
@@ -4322,22 +4234,17 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
 "retail_sales" AS "wholesale_buys"."fruit" = "retail_sales"."fruit" AND
 ("wholesale_buys"."date_order" &lt; "retail_sales"."date_sold" AND
 "retail_sales"."date_sold" &lt; "wholesale_buys"."expire_date");</code></p>
-
 <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP "REL_fruit";</code></p>
          </td>
       </tr>
       <tr>
       <td>
-
       </td>
       </tr>
    </tbody>
 </table>
-
 <h3 id="permitted-joins-and-necessary-permissions">Permitted joins and necessary permissions</h3>
-
 <p>See this matrix for information about which joins you can create, and what permissions these joins require.</p>
-
 <table>
   <tr>
     <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -4439,11 +4346,8 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
     <td>&check; <br /><strong>Note:</strong> The two Views must be from the same connection.</td>
   </tr>
 </table>
-
 <h2 id="data-types">Data types</h2>
-
 <p>ThoughtSpot supports a simplified list of data types:</p>
-
 <table>
    <colgroup>
       <col style="width:25%" />
@@ -4521,14 +4425,11 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
       </tr>
    </tbody>
 </table>
-
   <div class="tags">
     <div style="float:right;">
       
         
-
     <!--    <a target="_blank" href="https://github.com/thoughtspot/thoughtspot.github.io/blob/6.1/_reference/sql-cli-commands.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a> -->
-
         
       
     </div>
@@ -4536,26 +4437,19 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
         
     </div>
 </div>
-
-
-
 </div>
-
 <hr class="shaded"/>
-
 <footer>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 1, 2021 <br />
+        Generated: Jun 10, 2021 <br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 2/25/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
       </div>
    </div>
 </footer>
-
-
         </div>
     <!-- /.row -->
 </div>
@@ -4563,15 +4457,7 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
 </div>
 <!-- /#main -->
     </div>
-
 </body>
-
 <!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-44946579-2','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
-
-
 </html>
