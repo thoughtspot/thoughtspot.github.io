@@ -37,7 +37,7 @@ For more information, see [ThoughtSpot Developer portal]({{ site.baseurl }}/admi
 
 ## UI customization and rebranding
 
-If you have embedded the ThoughtSpot application in your host application, you can customize the look and feel of ThoughSpot UI to match your organization’s branding guidelines.                               
+If you have embedded the ThoughtSpot application in your host application, you can customize the look and feel of ThoughtSpot UI to match your organization’s branding guidelines.                               
 You can customize the ThoughtSpot application UI by using the style customization settings in the Developer portal.
 
 For more information, see [Customize embedded content]({{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html).
