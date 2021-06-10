@@ -41,7 +41,6 @@ If your organization does not allow you to open all ports, make sure you open th
 |4243|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
 |4244|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
 |4245|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
-|4249|TCP|Ports used by Enlite/SearchIQ|bidirectional|All nodes|All nodes|Port used for SpotIQ internal communication|
 |4251|RPC|Sage master RPC port|bidirectional|All nodes|All nodes|Port used for search service internal communication|
 |4405|RPC|Diamond (graphite) port|bidirectional|All nodes|All nodes|Port used for communication with monitoring service|
 |4406|RPC|Diamond (graphite) port|bidirectional|All nodes|All nodes|Port used for communication with monitoring service|
