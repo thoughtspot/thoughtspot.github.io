@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 6.2.1 is now available. These release notes include information about new and enhanced features. 
+ThoughtSpot version 6.2.1 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
@@ -41,14 +41,14 @@ For a complete list of issues that we fixed in this release, see [6.2 Fixed issu
 
 <dl id="6-2-analyst">
   <dlentry id="geomaps">
-    <dt>Geomaps</dt>
-    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for these new locales:
+    <dt>Geo maps</dt>
+    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">geo map</a> visualizations for these new locales:
         <ul>
           <li><strong>India</strong>: State, District, Postcode</li>
           <li><strong>Portugal</strong>: District, Municipality, Postcode</li>
           <li><strong>Italy</strong>: Improved regional name support</li>
         </ul>
-          </dd><dd><strong>Geomaps overview</strong>
+          </dd><dd><strong>geo maps overview</strong>
           <br>
 <script src="https://fast.wistia.com/embed/medias/u7prltvp9w.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_u7prltvp9w popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span></dd></dlentry>
   <dlentry id="table-config">
