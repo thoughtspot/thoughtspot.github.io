@@ -22,6 +22,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd>For embedded ThoughtSpot environments, you can now generate links with your host application context and send these links in email notifications. You can specify the link format when sharing an object or scheduling a pinboard job to ensure that the links sent in the email notifications go to the appropriate URL. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> and <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a> for more information.</dd>
 </dlentry>
 
+<dlentry id="group-aggregate-query-filters">
+<dt>Group aggregate query filters</dt>
+<dd>This release improves support for group aggregate query filters when seeking finer-grained results by adding a secondary dimension, or courser-grained results when dropping one of the existing dimensions. You can now also include or drop the filter condition. Refer to <a href="{{ site.baseurl }}/complex-search/aggregation-filters.html">Aggregation filters</a> for more information.</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="june-cloud-business-user"></a>For the Business User</h3>
