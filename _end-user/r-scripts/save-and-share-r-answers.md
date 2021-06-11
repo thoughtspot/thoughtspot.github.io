@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.2. For details, see Deprecation Announcements." %}
+
 In terms of sharing, the R visualization you get as a result of running a script is similar to any
 other search result in ThoughtSpot. You can save it, share it, and add it to pinboards.
 

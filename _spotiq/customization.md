@@ -25,7 +25,7 @@ the data from which you run **SpotIQ analyze**.
 
 This window has two tabs:
 * **Columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
-* **Advanced**, where you can run custom analyses and incorporate R scripts into SpotIQ.
+* **Advanced**, where you can run custom analyses and incorporate R scripts <span class="label label-beta">De-support 7.2</span> into SpotIQ.
 
 The **Advanced** tab has many options. The panel scrolls, so more algorithms are available than appear in the following image
 

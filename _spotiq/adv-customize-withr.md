@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.2. For details, see Deprecation Announcements." %}
+
 Admins and users with the **Has SpotIQ** privilege can run an R script.
 
 The R language is an open source programming language used for statistical
