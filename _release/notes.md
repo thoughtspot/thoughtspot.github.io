@@ -110,8 +110,8 @@ To set locale to English (India), click the user icon in the top right corner to
 
 <dl id="6-3-analyst">
   <dlentry id="geomaps">
-    <dt>Geomaps</dt>
-    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for this new locale:
+    <dt>Geo maps</dt>
+    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">geo map</a> visualizations for this new locale:
         <ul>
           <li><strong>Netherlands</strong>: Province, Municipality, Postcode</li>
         </ul>
