@@ -32,6 +32,9 @@ entries:
     - title: Accessibility
       url: /release/accessibility.html
       output: web,rnotes
+    - title: Deprecation announcements
+      url: /release/deprecation.html
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web,rnotes
@@ -464,18 +467,6 @@ entries:
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
-    - levelTwoTitle: Use SearchIQ
-      output: web,ugBk
-      levelTwoItems:
-        - title: About SearchIQ
-          url: /end-user/search/about-searchiq.html
-          output: web,ugBk
-        - title: Use SearchIQ for natural searches
-          url: /end-user/search/use-searchiq.html
-          output: web,ugBk
-        - title: Teach SearchIQ your language
-          url: /end-user/search/teach-searchiq.html
-          output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
@@ -979,33 +970,6 @@ entries:
         output: web,admBk
       - title: SpotApps
         url: /admin/scriptability/app-templates.html
-        output: web,admBk
-    - levelTwoTitle: Set up SearchIQ
-      output: web,admBk
-      levelTwoItems:
-      - title: Enable SearchIQ
-        url: /admin/setup/enable-searchiq.html
-        output: web,admBk
-      - title: Optimize SearchIQ
-        url: /end-user/search/searchiq-optimize.html
-        output: web,admBk
-      - levelThreeTitle: Search IQ Optimization Steps
-        output: web,admBk
-        levelThreeItems:
-        - title: Enabling Columns in SearchIQ
-          url: /end-user/search/searchiq-optimize-columns.html
-          output: web,admBk
-        - title: Add Experts for SearchIQ
-          url: /end-user/search/searchiq-optimize-experts.html
-          output: web,admBk
-        - title: Train SearchIQ
-          url: /end-user/search/searchiq-optimize-train.html
-          output: web,admBk
-      - title: Set entity categories for SearchIQ
-        url: /admin/data-modeling/set-entity-category.html
-        output: web,admBk
-      - title: Change SearchIQ mappings
-        url: /admin/data-modeling/searchiq-mappings.html
         output: web,admBk
     - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
@@ -2622,9 +2586,6 @@ entries:
       output: web,refGd
     - title: User action codes reference
       url: /reference/action-codes.html
-      output: web,refGd
-    - title: Stop word reference
-      url: /reference/stop-words.html
       output: web,refGd
     - title: Geo map reference
       url: /reference/geomap-reference.html

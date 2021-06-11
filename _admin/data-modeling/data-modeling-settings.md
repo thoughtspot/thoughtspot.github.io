@@ -37,8 +37,6 @@ The following index includes mutable data modeling settings that you can apply t
 | [Currency Type](set-format-pattern-numbers.html#set-currency-type) | Specifies the format of currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. You cannot change the attribution dimension in the modeling file. You can only configure it on a table-by-table basis. |
 | [Calendar Type]({{ site.baseurl }}/admin/setup/set-custom-calendar.html) | Specifies what type of calendar a date type column uses. It can be Gregorian calendar (default), a fiscal calendar, or any custom calendar. |
-| [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column: person, place, time, and so on. Important for configuring SearchIQ <span class="label label-beta">Beta</span>. |
-| SearchIQ Enabled | Indicates if the column is enabled for SearchIQ <span class="label label-beta">Beta</span>. |
 
 ## Data modeling best practices
 

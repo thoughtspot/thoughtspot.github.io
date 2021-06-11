@@ -5,7 +5,10 @@ last_updated: 6/1/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-With SpotIQ analysis and insight feedback, you can rate an instant insight by clicking the like ![more options menu icon]({{ site.baseurl }}/images/thumb_up.png){: .inline} or dislike ![more options menu icon]({{ site.baseurl }}/images/thumb_down.png){: .inline} icon of the insight.
+With SpotIQ analysis and insight feedback, you can rate an instant insight <span class="label label-beta">De-support 7.1</span>
+ by clicking the like ![more options menu icon]({{ site.baseurl }}/images/thumb_up.png){: .inline} or dislike ![more options menu icon]({{ site.baseurl }}/images/thumb_down.png){: .inline} icon of the insight.
+
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.1. For details, see Deprecation Announcements." %}
 
 {% include note.html content="Instant Insights are turned off by default. They do not appear unless your administrator turns on the feature. When this feature is on, Instant Insights can appear on the Home page, on pinboards or answers, when searching, or on tables, worksheets, or views." %}
 
