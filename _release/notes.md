@@ -249,8 +249,8 @@ We improved the Expert feature by adding more email notifications, enriching ema
 * When a user creates a request, both that user and designated experts get an email notification. The **Open request** link in the expert's leads directly to ThoughtSpot, to review and manage the request.
 * When an expert resolves the request, both the expert and the user receive an email notification. The user can then follow the supplied link to navigate directly to the resolved answer.
 
-### GeoMaps
-ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.html) visualizations for these new locales:
+### Geo maps
+ThoughtSpot now supports [geo map]({{ site.baseurl }}/reference/geomap-reference.html) visualizations for these new locales:
 - <strong>Austria:</strong> State, District, and Postal
 - <strong>Italy:</strong> Region, Province/Territories, and Postal Code
 - <strong>Poland:</strong> Province/Territories, County, Postal Code
