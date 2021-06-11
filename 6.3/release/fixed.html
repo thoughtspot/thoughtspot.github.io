@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.3/release/fixed.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-06-01T17:11:36-07:00" />
+<meta property="article:published_time" content="2021-06-11T08:23:35-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Fixed issues”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"These are the issues we fixed in recent ThoughtSpot releases. 6.3.X Releases 6.3.1 CU1 Fixed issues 6.3.1 Fixed issues 6.3 Fixed issues 6.2.X Releases 6.2.1 Fixed issues 6.2 Fixed issues 6.1.X Releases 6.1.1 Fixed issues 6.1 Fixed issues 6.0.X Releases 6.0.5 Fixed issues 6.0.4 Fixed issues 6.0.3 Fixed issue 6.0.2 Fixed issues 6.0.1 Fixed issues 6.0 Fixed issues 5.3.X Releases 5.3.2 CU3 Fixed issues 5.3.2 CU2 Fixed issues 5.3.2 CU1 Fixed issues 5.3.2 Fixed issues 5.3.1 Fixed issues 5.3 Fixed issues 5.2.X Releases 5.2.3 Fixed issues 5.2.2 Fixed issues 5.2.1 Fixed issues 5.2 Fixed issues 5.1.X Releases 5.1.4 Fixed issues 5.1.3 Fixed issues 5.1.2 Fixed issues 5.1.1 Fixed issues 5.1 Fixed issue 5.0.X Releases 5.0.4 Fixed issue 5.0 Fixed issues 4.X Releases 4.5.1 Fixed issues 4.5 Fixed issues 4.4 Fixed issues","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/release/fixed.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/release/fixed.html","headline":"[“Fixed issues”]","dateModified":"2021-06-01T17:11:36-07:00","datePublished":"2021-06-01T17:11:36-07:00","@context":"https://schema.org"}</script>
+{"description":"These are the issues we fixed in recent ThoughtSpot releases. 6.3.X Releases 6.3.1 CU1 Fixed issues 6.3.1 Fixed issues 6.3 Fixed issues 6.2.X Releases 6.2.1 Fixed issues 6.2 Fixed issues 6.1.X Releases 6.1.1 Fixed issues 6.1 Fixed issues 6.0.X Releases 6.0.5 Fixed issues 6.0.4 Fixed issues 6.0.3 Fixed issue 6.0.2 Fixed issues 6.0.1 Fixed issues 6.0 Fixed issues 5.3.X Releases 5.3.2 CU3 Fixed issues 5.3.2 CU2 Fixed issues 5.3.2 CU1 Fixed issues 5.3.2 Fixed issues 5.3.1 Fixed issues 5.3 Fixed issues 5.2.X Releases 5.2.3 Fixed issues 5.2.2 Fixed issues 5.2.1 Fixed issues 5.2 Fixed issues 5.1.X Releases 5.1.4 Fixed issues 5.1.3 Fixed issues 5.1.2 Fixed issues 5.1.1 Fixed issues 5.1 Fixed issue 5.0.X Releases 5.0.4 Fixed issue 5.0 Fixed issues 4.X Releases 4.5.1 Fixed issues 4.5 Fixed issues 4.4 Fixed issues","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/release/fixed.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/release/fixed.html","headline":"[“Fixed issues”]","dateModified":"2021-06-11T08:23:35-07:00","datePublished":"2021-06-11T08:23:35-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -534,6 +534,12 @@ $(document).ready(function(){
               
                 
                   <li><a href="/6.3/release/accessibility.html">Accessibility</a></li>
+                
+              
+            
+              
+                
+                  <li><a href="/6.3/release/deprecation.html">Deprecation announcements</a></li>
                 
               
             
@@ -6232,7 +6238,7 @@ $(document).ready(function(){
   <li>Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.</li>
   <li>Creating a formula on <code class="language-plaintext highlighter-rouge">cumulative_sum</code> function mistakenly caused an error to appear. This action no longer causes an error.</li>
   <li>Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.</li>
-  <li>Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</li>
+  <li>Previously setting both the browser and the ThoughtSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.</li>
   <li>Active directory (AD) synchronization was not working. Moreover, if AD security group had no members in it, then the synchronization did not recognize the group at all. These problems were corrected, empty groups are recognized and users moved between groups now are properly synchronized by ThoughtSpot.</li>
   <li>A problem was resolved where the round function returned a negative zero when it should have returned a 0 (zero).</li>
   <li>Visualizations that relied on chasm trap worksheet were not immediately updated when a formula was changed. The workaround was to manually update the visualization. This was corrected. The system now updates the visualization automatically when an underlying formula is changed.</li>
@@ -6275,7 +6281,7 @@ $(document).ready(function(){
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jun 1, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Jun 11, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 09/09/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
