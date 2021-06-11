@@ -22,6 +22,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd>For embedded ThoughtSpot environments, you can now generate links with your host application context and send these links in email notifications. You can specify the link format when sharing an object or scheduling a pinboard job to ensure that the links sent in the email notifications go to the appropriate URL. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> and <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a> for more information.</dd>
 </dlentry>
 
+<dlentry id="streamlined-analyst-setup">
+<dt>Streamlined analyst setup</dt>
+<dd>We simplified the steps to set up an analyst account on ThoughtSpot. Now, you can create a connection, create a worksheet to model your business use cases, and immediately search your data in three steps. See <a href="{{ site.baseurl }}/admin/ts-cloud/analyst-onboarding.html">Analyst Onboarding</a> for further details.</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="june-cloud-business-user"></a>For the Business User</h3>
@@ -48,6 +53,18 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd>Datbricks is now GA in this release of ThoughtSpot Cloud. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html">Databricks</a>.</dd>
 </dlentry>
 
+<dlentry id="object-usage-pinboard">
+<dt>Object Usage Pinboard</dt>
+<dd>This release introduces a new default pinboard for monitoring object usage. The <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Pinboard</a> contains data on the following topics:
+<ul>
+<li>Specifies what existing tables, worksheets and views users search on</li>
+<li>Specifies which columns users search most frequently</li>
+<li>Tracks the most searched tables, worksheets and views each month</li>
+</ul>
+Use this pinboard to identify what users have accessed, and determine which unused data objects can be deleted.</dd>
+</dlentry>
+</dl>
+
 <h3><a id="june-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
 <dl>
@@ -68,6 +85,31 @@ Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#use
 <li>Can operate application: Can configure local and SAML authentication. Can manage application settings: search, SpotIQ, and onboarding advanced settings, style and help customization. Can view scheduled maintenance.</li>
 <li>Can see system information: Can view all default admin data, including system worksheets and pinboards.</li></ul>
 This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
+</dlentry>
+
+<dlentry id="security-log-collection">
+<dt>Security log collection</dt>
+<dd>This release of ThoughtSpot Cloud enables your security team to collect security audit events based on user activity and ship them to your SIEM application in real-time. You can view logs for the following events:
+<ul>
+<li>Account logout</li>
+<li>Failed login</li>
+<li>Group creation</li>
+<li>Group deletion</li>
+<li>Group modification</li>
+<li>Locked account</li>
+<li>Object creation</li>
+<li>Object deletion</li>
+<li>Object modification</li>
+<li>Object sharing</li>
+<li>Password change</li>
+<li>Privilege change</li>
+<li>Profile change</li>
+<li>Successful login</li>
+<li>User account creation</li>
+<li>User account deletion</li>
+<li>User group change</li>
+</ul>
+For further details, see <a href="{{ site.baseurl }}/admin/data-security/audit-logs.html">Collect security logs</a>.</dd>
 </dlentry>
 
 </dl>
