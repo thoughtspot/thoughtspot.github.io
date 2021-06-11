@@ -97,7 +97,8 @@ This feature is in <span class="label label-beta">Beta</span> and off by default
 
 <dd>ThoughtSpot will use this authentication information to send the required attributes in the <code>Authorization</code> headers to the URL endpoint configured in the custom action.
 </dd>
-<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-url" target="_blank">ThoughtSpot Developer Documentation</a>.</dlentry>
+<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-url" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
+</dlentry>
 </dl>
 
 <dl>
