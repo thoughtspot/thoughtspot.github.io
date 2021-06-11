@@ -1,7 +1,7 @@
 ---
 title: [Flexible aggregation functions]
 summary: "Use the group_aggregate function in ThoughtSpot to aggregate measures at different granularities than the dimensions used in the search columns."
-last_updated: 11/05/2019
+last_updated: 06/11/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -57,12 +57,9 @@ This is helpful to include the main query groups that are not known at formula
 creation time. You can use `+/-` to modify the set of groups included from
 the query.
 
-{% include note.html content="`+/-` is currently supported only for `query_groups`, not `query_filters`."%}
+## Finer-grained group formula results
 
-## When group formula results are finer-grained than the search
-
-With the flexibility of groupings for group formulas, the computed column
-created by a formula can be finer or courser grained than the search itself.
+The flexibility of groupings for group formulas enables you to create formula that generates a computed column that is finer or courser than the search itself.
 
 For example, you can have a search that shows **total yearly sales** and a
 formula that computes total sales _for each month_ (a finer-grained calculation
@@ -139,5 +136,7 @@ specify only groupings or only filters.
 * To learn about aggregation formulas in general, see
 [Overview of aggregate formulas](aggregation-formulas.html#) and
 [Group aggregation functions](about-pinned-measures.html#)
+
+* To understand group aggregate query filters, see [Aggregate filters]((aggregation-filters.html#)
 
 * To learn about how the `group-aggregate` function can be used within your business practice, we encourage you to see [Reaggregation scenarios in practice]({{site.baseurl}}/reference/practice/reaggregation-scenarios.html)
