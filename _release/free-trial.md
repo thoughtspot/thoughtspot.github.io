@@ -1,14 +1,13 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 06/09/2021
+last_updated: 06/11/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-## June 9, 2021
+## June 11, 2021
 
-<!--
 {: id="invite-others"}
 ### Free Trial invite others
 
@@ -19,7 +18,9 @@ To invite a teammate to Free Trial, simply navigate to the **Setup** tab, click 
 ![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
 
 ![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
--->
+
+
+## June 9, 2021
 
 {: id="password-creation-checklist"}
 ### Password creation checklist
