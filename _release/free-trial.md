@@ -1,14 +1,13 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 06/09/2021
+last_updated: 06/11/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-## June 9, 2021 
+## June 11, 2021 
 
-<!--
 {: id="invite-others"}
 ### Free Trial invite others
 
@@ -19,7 +18,9 @@ To invite a teammate to Free Trial, simply navigate to the **Setup** tab, click 
 ![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
 
 ![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
--->
+
+
+## June 9, 2021
 
 {: id="password-creation-checklist"}
 ### Password creation checklist
@@ -41,7 +42,7 @@ To simplify the process of creating worksheets on Free Trial, we added tooltips 
 
 The worksheet creation tooltips appear when you create a worksheet during onboarding. To view examples of typical fact tables, proceed to step one of the worksheet creation process in Setup, and click the information icon to the right of the **Select a fact table** dialog. To view examples of typical dimension tables, click the information icon to the right of the **Select up to 4 dimension tables** dialog.
 
-![]({{ site.baseurl }}/images/free-trial-login-pendo-fact-table.png "Fact table tooltip"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-pendo-fact-table.png "Fact table tooltip"){: .inline}
 
 ![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip"){: .inline}
 
