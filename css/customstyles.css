@@ -947,6 +947,35 @@ div.tags {padding: 10px 5px;}
 
 /* end beta label */
 
+.badge-pdf {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #393939;
+  border: 1px solid #ff2116;
+  font-size: 9px;
+  margin-left: 1px;
+  position: relative;
+  top: -2.4px;
+  border-radius: 5px;
+  font-weight: 800;
+  vertical-align: top;
+  padding-top: 4.5px;
+  /*   display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ebebeb;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #373BB1;
+  border-radius: 5px;
+  position: relative;
+  top: -1px; */
+}
+
 hr {
     background: #999;
     margin: 30px 0px;
