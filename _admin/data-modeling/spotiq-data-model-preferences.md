@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 
 [SpotIQ]({{ site.baseurl}}/spotiq/whatisspotiq.html) is a ThoughtSpot
-feature  that provides users with Instant Insights <span class="label label-beta">De-support 7.1</span> about their data by automatically surfacing
+feature that provides users with insights about their data by surfacing
 interesting characteristics (trends, correlations, outliers, and so on).
 
 If you have access to tables, worksheets, and views for data modeling purposes, you can specify columns to exclude from SpotIQ analyses. By default, all columns are _included_ in SpotIQ analyses.

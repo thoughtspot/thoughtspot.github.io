@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-SpotIQ is a feature in ThoughtSpot that automatically generates Instant Insights <span class="label label-beta">De-support 7.1</span> into
+SpotIQ is a feature in ThoughtSpot that automatically generates insights into
 system data. The feature works on all the data in your system, search queries,
 saved Answers, and Pinboards. Because SpotIQ uses the same data security model
 as other data in the system, there is no need to build a new schema or security
