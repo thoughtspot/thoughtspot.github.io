@@ -1,13 +1,13 @@
 ---
 title: [Comparative Analysis]
-summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
+summary: "With SpotIQ comparative analysis, you can compare two data points for complex measures."
 last_updated: 6/2/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-SpotIQ competitive analysis compares data points of simple or complex measures using these aggregates:  
+SpotIQ comparative analysis compares data points of simple or complex measures using these aggregates:  
   * _Sum_
   * _Count_
   * _Sum over sum_, which generate a Pinboard that has 'what-if' percentage insights
