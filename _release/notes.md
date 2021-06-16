@@ -182,7 +182,7 @@ To set locale to English (India), click the user icon in the top right corner to
     <dd id="dataflow-transformations"><strong>Transformations</strong><br/>In all DataFlow database connections, you can now add row-level formulas that use native database functions to transform your data as it loads into ThoughtSpot.</dd></dlentry>
   <dlentry id="embrace">
     <dt>Embrace</dt>
-    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights <span class="label label-beta">De-support 7.1</span>, by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
+    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
     <dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. This feature is in beta for this release. Contact ThoughtSpot support for assistance.</dd>
     </dlentry>
 </dl>
