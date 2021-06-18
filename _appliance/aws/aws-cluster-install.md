@@ -59,6 +59,8 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
     $ screen -S DEPLOYMENT
     ```
 
+2. Take a machine snapshot prior to the release deployment, as a best practice.
+
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.<br>
 If you are using an s3 bucket for object storage, include the flag `--enable_cloud_storage s3a`.
