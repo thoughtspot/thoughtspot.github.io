@@ -1,7 +1,7 @@
 ---
-title: [Performance Tracking Pinboard]
+title: [Performance tracking pinboard]
 last_updated: 2/23/2021
-summary: "Use the Performance Tracking Pinboard to understand how your ThoughtSpot cluster is performing."
+summary: "Use the Performance tracking pinboard to understand how your ThoughtSpot cluster is performing."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

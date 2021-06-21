@@ -5,7 +5,7 @@ last_updated: 4/1/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{% include note.html content="The new formula editor is part of the new Answer experience. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="The new formula editor is part of the new Answer experience. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. You can turn the new Answer experience on or off individually from the Experience manager panel in your profile." %}
 
 You can add a formula directly within a search. Some common reasons for using a formula in a search are to perform mathematical functions, check for and replace null values, or add conditional logic.
 

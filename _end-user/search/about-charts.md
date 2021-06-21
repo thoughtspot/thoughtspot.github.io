@@ -1,5 +1,5 @@
 ---
-title: [Understand charts]
+title: [Understanding charts]
 last_updated: 2/25/2020
 summary: "Charts display your search answer in a visual way."
 sidebar: mydoc_sidebar
