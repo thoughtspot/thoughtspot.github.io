@@ -13,7 +13,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
-<dlentry id="gettingStarted">
+<dlentry id="getting-started">
 <dt>Getting started with ThoughtSpot Cloud</dt>
 <dd>The first user on the account has to complete a series of steps before other people can start using ThoughtSpot with your organization’s data. For these instructions, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-getting-started.html">Getting Started with ThoughtSpot Cloud</a>.
 </dd>
