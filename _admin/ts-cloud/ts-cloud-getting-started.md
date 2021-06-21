@@ -1,6 +1,6 @@
 ---
 title: [Getting Started with ThoughtSpot Cloud]
-last_updated: 6/15/2021
+last_updated: 6/20/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,7 +12,7 @@ As the first user on the account, you have to complete the following steps befor
 
 Before you start, review these talks to identify your ideal use case. The context helps you make account-related decisions and use ThoughtSpot effectively.
 
-<div border-style="outset" border-color=" #7177FD"><iframe width="375" height="210" src="https://www.youtube.com/embed/_HqB__xe3bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+<div><iframe width="375" height="210" src="https://www.youtube.com/embed/_HqB__xe3bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
 <a href="https://youtu.be/_HqB__xe3bo" target="_blank">ThoughtSpot Success Series: Defining a ThoughtSpot Use Case</a>
 </div>
 <br/>
@@ -22,13 +22,13 @@ Before you start, review these talks to identify your ideal use case. The contex
 
 Ready to get started? Let's begin!
 
-We also provide these instructions in <a href="{{ site.baseurl }}/ts-cloud-get-started.pdf" download>PDF format</a><span class=“badge badge-pdf”>PDF</span>.
+We also provide these instructions in <a href="{{ site.baseurl }}/ts-cloud-get-started.pdf" download>PDF format</a>.
 
 ## Step 1: Create a ThoughtSpot Community account
 
 A ThoughtSpot Community account lets you ask questions in our product forums, explore best practices from other customers, sign up for events, and contact support.
 
-[Create a Community account](https://community.thoughtspot.com/customers/s/login/SelfRegister){:target="_blank"}<span class=“badge badge-pdf”>Community</span>
+[Create a Community account](https://community.thoughtspot.com/customers/s/login/SelfRegister){:target="_blank"}
 
 ## Step 2: Activate your ThoughtSpot Cloud account
 
