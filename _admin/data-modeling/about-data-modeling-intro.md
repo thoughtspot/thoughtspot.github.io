@@ -1,7 +1,5 @@
 ---
-title: [About data modeling]
-
-
+title: [Data modeling]
 last_updated: tbd
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."
 sidebar: mydoc_sidebar

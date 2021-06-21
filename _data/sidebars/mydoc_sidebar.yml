@@ -38,8 +38,11 @@ entries:
   - sectiontitle: Getting started
     output: web,ugBk
     sectionitems:
-    - title: Getting started
-      url:  /admin/ts-cloud/cloud-getting-started.html
+    - title: Getting Started
+      url:  /admin/ts-cloud/ts-cloud-getting-started.html
+      output: web
+    - title: Requirements and support
+      url:  /admin/ts-cloud/ts-cloud-requirements-support.html
       output: web
     - title: User onboarding experience
       url: /end-user/onboarding/user-onboarding-experience.html
