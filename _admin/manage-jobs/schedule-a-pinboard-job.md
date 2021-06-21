@@ -1,13 +1,13 @@
 ---
 title: [Schedule a pinboard job]
 
-last_updated: 5/26/2021
-summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
+last_updated: 6/21/2021
+summary: "You can schedule or modify a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can add multiple schedules with different configurations for a single
-pinboard. However, each job is limited to one pinboard schedule. To add
+pinboard. However, each job is limited to one pinboard schedule. To add or modify
 a schedule, you must either be an administrator or have the schedule pinboard privilege, and
 at least edit-only and view-only access to the pinboard.
 
@@ -21,7 +21,7 @@ To schedule a pinboard:
 
      ![View pinboard schedules]({{ site.baseurl }}/images/pinboard-view-schedule.png "View pinboard schedules")
 
-5. Click **+ Schedule** to add a new schedule.
+5. Click **+ Schedule** to add a new schedule. To modify a schedule, click on the schedule you would like to edit.
 
     ![Add a new pinbaord schedule]({{ site.baseurl }}/images/pinboard-add-schedule.png "Add a new pinboard schedule")
 
@@ -67,4 +67,4 @@ To schedule a pinboard:
      </tr>
    </table>
 
-7. Click **Schedule** to save your schedule configuration.
+7. Click **Schedule** to save your new schedule, or **Save** to save your modified schedule.
