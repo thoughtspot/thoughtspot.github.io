@@ -1,12 +1,24 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
 <ul>
+<li><a href="{{ site.baseurl }}#june-cloud-first">For the First user</a></li>
 <li><a href="{{ site.baseurl }}#june-cloud-analyst">For the Analyst</a></li>
 <li><a href="{{ site.baseurl }}#june-cloud-business-user">For the Business User</a></li>
 <li><a href="{{ site.baseurl }}#june-cloud-data-engineer">For the Data Engineer</a></li>
 <li><a href="{{ site.baseurl }}#june-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
 <li><a href="{{ site.baseurl }}#june-cloud-developer">For the Developer</a></li>
 </ul>
+
+<h3><a id="june-cloud-first"></a>For the First user</h3>
+
+<dl>
+
+<dlentry id="gettingStarted">
+<dt>Getting started with ThoughtSpot Cloud</dt>
+<dd>The first user on the account has to complete a series of steps before other people can start using ThoughtSpot with your organization’s data. For these instructions, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-getting-started.html">Getting Started with ThoughtSpot Cloud</a>.
+</dd>
+</dlentry>
+</dl>
 
 <h3><a id="june-cloud-analyst"></a>For the Analyst</h3>
 
