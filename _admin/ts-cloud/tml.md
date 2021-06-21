@@ -271,7 +271,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your table, the `index_priority` parameter does not appear. You can add that variable to the TML file to specify an index priority for the table.
 
-Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
+Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax of worksheet, view, and table joins in TML.
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>table_guid</em>&gt;
@@ -324,6 +324,14 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
       <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
   - <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
+  <a href="#rls_rules">rls_rules</a>:
+    <a href="#tables">tables</a>:
+    - <a href="#name">name</a>: &lt;<em>rls_rule_name_1</em>&gt;
+      <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_1</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>rls_rule_name_2</em>&gt;
+      <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_2</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>rls_rule_name_n</em>&gt;
+      <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_n</em>&gt;
   <a href="#joins_with">joins_with</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
@@ -712,7 +720,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="expr">
     <dt>expr</dt>
-    <dd>The definition of the formula</dd>
+    <dd>The definition of the formula or RLS rule.</dd>
   </dlentry>
 
   <dlentry id="filters">
@@ -904,7 +912,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="name">
     <dt>name</dt>
-    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>joins</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code>, <code>destination</code>, and so on.<br>
+    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>joins</code>, <code>formula</code>, <code>rls_rules</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code>, <code>destination</code>, and so on.<br>
     For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
@@ -953,6 +961,11 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="range">
   <dt>range</dt>
   <dd>Range for the conditional formatting to apply to, with a specified <code>min</code> and <code>max</code>.</dd>
+  </dlentry>
+
+  <dlentry id="rls_rules">
+  <dt>rls_rules</dt>
+  <dd>A container for <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security</a> rules for the table.</dd>
   </dlentry>
 
   <dlentry id="rule">
@@ -1037,7 +1050,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="tables">
     <dt>tables</dt>
-    <dd>List of tables used by the Worksheet or Answer.<br> Each table is identified by <code>name</code>.</dd>
+    <dd>List of tables used by the worksheet, answer, or table RLS rule.<br> Each table is identified by <code>name</code>.</dd>
   </dlentry>
 
   <dlentry id="type">
