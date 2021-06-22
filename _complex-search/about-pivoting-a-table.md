@@ -13,11 +13,11 @@ If you would like to visualize your search as a pivot table, click on the **chan
 
 You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
 
-If you right-click a row or column heading, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, or **SpotIQ analyze**, or **sort**.
+If you right-click a row or column heading, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, or **sort**.
 
 ![Sort by a row heading]({{ site.baseurl }}/images/charts-pivot-table-sort.png "Sort by a row heading")
 
-If you right-click a table cell, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, or **SpotIQ analyze**.
+If you right-click a table cell, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), or **show underlying data**.
 
 ![Pivot table cell menu]({{ site.baseurl }}/images/charts-pivot-table-cell-new.png "Pivot table cell menu")
 
