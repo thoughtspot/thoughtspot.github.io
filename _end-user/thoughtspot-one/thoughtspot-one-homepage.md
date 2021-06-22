@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 3/12/2021
+last_updated: 6/22/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,7 +25,7 @@ See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for mo
 
 {: id="quick-links"}
 ## Track important metrics
-When you first view the ThoughtSpot home page, you may see a row of popular metrics for your company just below the Search bar. This watchlist may be empty, if your company is new to ThoughtSpot. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from.
+When you first view the ThoughtSpot home page, you may see a row of popular metrics for your company just below the Search bar. This watchlist may be empty, if your company is new to ThoughtSpot. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from, either in the same tab or in a new tab.
 
 To add metrics to your watchlist, follow these steps:
 
@@ -36,7 +36,7 @@ To add metrics to your watchlist, follow these steps:
 
 4. Select a metric or multiple metrics, and click **Add metrics**.
 
-Note that you can have up to 20 metrics on your watchlist at a time.
+Note that you can have any number of metrics on your watchlist at a time.
 
 ![Metrics watchlist gif]({{ site.baseurl }}/images/thoughtspot-one-carousel-metrics.gif "Metrics watchlist gif")
 
