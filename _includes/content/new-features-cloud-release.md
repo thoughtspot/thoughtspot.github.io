@@ -32,7 +32,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="auto-email">
 <dt>Automatic following of Stats and Trends for Search on Answers pinboard</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers pinboard</a> allows administrators to understand how users are searching for existing answers and pinboards. Now, ThoughtSpot automatically emails this pinboard to administrators once a week. You can modify this setting by <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">editing the follow schedule</a> for this pinboard.</dd>
+<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers pinboard</a> allows administrators, and users they share the pinboard with, to understand how users are searching for existing answers and pinboards. Now, ThoughtSpot automatically emails this pinboard to administrators once a week. You can add or remove users from this email list by <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">editing the follow schedule</a> for this pinboard.</dd>
 </dlentry>
 
 </dl>
