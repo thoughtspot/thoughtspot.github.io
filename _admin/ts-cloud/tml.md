@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 4/23/2021
+last_updated: 6/22/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -326,6 +326,42 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
   <a href="#rls_rules">rls_rules</a>:
     <a href="#tables">tables</a>:
+    - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
+      <a href="#id">id</a> : &lt;<em>optional_table_id</em>&gt;
+      <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
+    <a href="#joins">joins</a>:
+    - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+      <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
+      <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
+      <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+      <a href="#on">on</a>: &lt;<em>join_expression_string</em>&gt;
+      <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+    - <em>...</em>
+    <a href="#table_paths">table_paths</a>:
+    - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
+      <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
+      <a href="#join_path">join_path</a>:
+      - <a href="#join">join</a>:
+        - &lt;<em>join_name_1</em>&gt;
+    - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
+      <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
+      <a href="#join_path">join_path</a>:
+      - {}
+    - <a href="#id">id</a>: &lt;<em>table_path_name_3</em>&gt;
+      <a href="#table">table</a>: &lt;<em>table_name_3</em>&gt;
+      <a href="#join_path">join_path</a>:
+      - <a href="#join">join</a>:
+        - &lt;<em>join_name_1</em>&gt;
+      - <a href="#join">join</a>:
+        - &lt;<em>join_name_2</em>&gt;
+        - &lt;<em>join_name_3</em>&gt;
+      - <a href="#join">join</a>:
+        - &lt;<em>join_name_4</em>&gt;
+        - &lt;<em>join_name_5</em>&gt;
+        - &lt;<em>join_name_6</em>&gt;
+    <a href="#rules">rules</a>:
     - <a href="#name">name</a>: &lt;<em>rls_rule_name_1</em>&gt;
       <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_1</em>&gt;
     - <a href="#name">name</a>: &lt;<em>rls_rule_name_2</em>&gt;
@@ -965,12 +1001,17 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="rls_rules">
   <dt>rls_rules</dt>
-  <dd>A container for <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security</a> rules for the table.</dd>
+  <dd>A container for the full definition of <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security</a> rules for the table.</dd>
   </dlentry>
 
   <dlentry id="rule">
   <dt>rule</dt>
   <dd>A conditional formatting rule.</dd>
+  </dlentry>
+
+  <dlentry id="rules">
+  <dt>rules</dt>
+  <dd>A container for the names and expressions of <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security</a> rules for the table.</dd>
   </dlentry>
 
   <dlentry id="schema">
