@@ -183,7 +183,7 @@ For further details, see <a href="{{ site.baseurl }}/admin/data-security/audit-l
 
 <dd>If your application instance requires an action that sends only a single row of data from charts or tables, developers can configure a custom action and restrict it to only the contextual menu. If this setting is enabled on a custom action, ThoughtSpot users cannot modify this action on a visualization page.</dd>
 
-<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-viz" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
+<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-viz" target="_blank">ThoughtSpot Developer Documentation</a>.
 </dd></dlentry>
 </dl>
 
@@ -299,7 +299,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dlentry id="custom-actions">
 <dt>Custom actions in the context menu</dt>
 <dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <b>Answers</b> or <b>Pinboards</b> page.</dd>
-<dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> enabled on your cluster.</dd>
+<dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> <span class="badge badge-update">Beta</span> (off by default) enabled on your cluster.</dd>
 <dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">Add custom actions</a>.</dd></dlentry>
 </dl>
 
@@ -381,8 +381,8 @@ The <b>Download</b> action is available for chart visualizations.</div>
 <dl>
 
 <dlentry id="new-answer-experience">
-<dt>New Answer experience</dt>
-<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is on by default; you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
+<dt>New Answer experience <span class="badge badge-update">Beta</span></dt>
+<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is in <span class="badge badge-update">Beta</span> and off by default. If it is on for your company, you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
 <p>The new Answer experience contains the following features and enhancements: {% include content/new-answer-experience-features.md %}</p>
 <p>{% include content/new-answer-experience-deprecations.md %}</p>
 <p> Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience">New Answer experience</a> for more information on the behavior of these features.</p>

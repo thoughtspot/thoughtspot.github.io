@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="The new formula editor is part of the new Answer experience. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="The new formula editor is part of the new Answer experience. The new Answer experience is in Beta and off by default. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. If the new Answer experience is on for your company, you can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
 
 Moving formulas can be used to smooth out any irregularities in your data to
 easily recognize trends. The larger the interval you set, the more the peaks and
@@ -67,7 +67,7 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
 1. Start a new search, or edit an existing Answer.
 
-2. Open the Data panel from the upper right corner if it is not open, and click the + icon next to Formulas. If the new Answer experience is off in your environment, click the three-dot Actions ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon in the upper-right side of the table, and select Add formula.
+2. Open the Data panel from the upper right corner if it is not open, and click the + icon next to Formulas. If the new Answer experience <span class="badge badge-update">Beta</span> (off by default) is off in your environment, click the three-dot Actions ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon in the upper-right side of the table, and select Add formula.
 
     ![Click + to add a formula]({{ site.baseurl }}/images/formula-editor-add.png "Click + to add a formula")
 
