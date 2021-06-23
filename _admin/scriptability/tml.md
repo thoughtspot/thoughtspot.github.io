@@ -313,6 +313,7 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
     <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
     <a href="#destination">destination</a>:
       <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
     <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
     <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
     <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
@@ -362,6 +363,7 @@ Worksheet and View joins have the following limitation:
   <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
   <a href="#destination">destination</a>:
     <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+    <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
   <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
   <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
   <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
