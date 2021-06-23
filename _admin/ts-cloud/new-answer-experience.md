@@ -10,14 +10,14 @@ permalink: /:collection/:path.html
 
 ## Overview
 
-The new Answer experience contains multiple new features and feature enhancements. It is part of ThoughtSpot's move to a new stack. It is on by default for ThoughtSpot Cloud clusters. You can turn it on or off [individually](#toggle-on-off) from your profile, in the **Experience manager** at the bottom of your profile. The new Answer experience contains the following features:
+The new Answer experience contains multiple new features and feature enhancements. It is part of ThoughtSpot's move to a new stack. It is in <span class="badge badge-update">Beta</span> and ***off*** by default for ThoughtSpot Cloud clusters. If it is on in your environment, you can turn it on or off [individually](#toggle-on-off) from your profile, in the **Experience manager** at the bottom of your profile. The new Answer experience contains the following features:
 
 {: id="new-features"}
 {% include content/new-answer-experience-features.md %}
 
 {: id="toggle-on-off"}
 ## Turn the new Answer experience on or off
-The new Answer experience is on by default. You can turn it on or off individually from your profile.
+The new Answer experience is off by default. If it is on in your environment, you can turn it on or off individually from your profile.
 
 To turn the new Answer experience on or off, follow these steps:
 

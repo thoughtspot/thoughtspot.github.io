@@ -104,7 +104,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dlentry id="custom-actions">
 <dt>Custom actions in the context menu</dt>
 <dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <b>Answers</b> or <b>Pinboards</b> page.</dd>
-<dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> enabled on your cluster.</dd>
+<dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> <span class="badge badge-update">Beta</span> (off by default) enabled on your cluster.</dd>
 <dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">Add custom actions</a>.</dd></dlentry>
 </dl>
 
@@ -186,8 +186,8 @@ The <b>Download</b> action is available for chart visualizations.</div>
 <dl>
 
 <dlentry id="new-answer-experience">
-<dt>New Answer experience</dt>
-<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is on by default; you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
+<dt>New Answer experience <span class="badge badge-update">Beta</span></dt>
+<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is in <span class="badge badge-update">Beta</span> and off by default. If it is on for your company, you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
 <p>The new Answer experience contains the following features and enhancements: {% include content/new-answer-experience-features.md %}</p>
 <p>{% include content/new-answer-experience-deprecations.md %}</p>
 <p> Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience">New Answer experience</a> for more information on the behavior of these features.</p>
