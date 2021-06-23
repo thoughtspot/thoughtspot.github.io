@@ -8,8 +8,6 @@ permalink: /:collection/:path.html
 ---
 ## June 23, 2021
 
-### Free Trial Make It shine
-
 These are the changes we made to Free Trial:
 
 * To facilitate connecting to your data using Redshift, users now see a connection creation checklist during the Redshift connection process. <br>
@@ -62,7 +60,7 @@ The worksheet creation tooltips appear when you create a worksheet during onboar
 ![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip"){: .inline}
 
 
-### Free Trial Make It shine
+### Free Trial Make It Shine
 
 These are the fixes we applied to Free Trial:
 
