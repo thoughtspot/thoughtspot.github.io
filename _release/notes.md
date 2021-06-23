@@ -23,28 +23,8 @@ For a complete list of known issues in this release, see [Fixed issues]({{ site.
 
 Here are the most significant new features and improvements in the 7.0.1 Software Release:
 
-* [For the Analyst](#7-0-1-analyst)
-* [For the Business User](#7-0-1-business-user)
 * [For the Data Engineer](#7-0-1-data-engineer)
-* [For the IT Ops Engineer](#7-0-1-it-ops-engineer)
 
-{: id="7-0-1-analyst"}
-### For the Analyst
-<dl>
-<dlentry id="tbd">
-  <dt>TBD</dt>
-  <dd>TBD</dd></dlentry>
-
-{: id="7-0-1-business-user"}
-### For the Business User
-
-<dl>
-<dlentry id="tbd">
-  <dt>TBD</dt>
-<dd>TBD</dd>
-</dlentry>
-
-{: id="7-0-1-data-engineer"}
 ### For the Data Engineer
 
 <dl>
@@ -56,15 +36,6 @@ Here are the most significant new features and improvements in the 7.0.1 Softwar
 
 </dlentry>
 </dl>
-
-{: id="7-0-1-it-ops-engineer"}
-### For the IT Ops Engineer
-
-<dl>
-<dlentry id="rhel">
-<dt>TBD</dt>
-<dd>TBD</dd>
-</dlentry>
 
 {: id="7-0-new"}
 ## 7.0 New Features and Functionality
