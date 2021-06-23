@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 6/22/2021
+last_updated: 6/23/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -348,19 +348,13 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
     - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
       <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
       <a href="#join_path">join_path</a>:
-      - {}
-    - <a href="#id">id</a>: &lt;<em>table_path_name_3</em>&gt;
-      <a href="#table">table</a>: &lt;<em>table_name_3</em>&gt;
-      <a href="#join_path">join_path</a>:
-      - <a href="#join">join</a>:
-        - &lt;<em>join_name_1</em>&gt;
       - <a href="#join">join</a>:
         - &lt;<em>join_name_2</em>&gt;
-        - &lt;<em>join_name_3</em>&gt;
+    - <a href="#id">id</a>: &lt;<em>table_path_name_n</em>&gt;
+      <a href="#table">table</a>: &lt;<em>table_name_n</em>&gt;
+      <a href="#join_path">join_path</a>:
       - <a href="#join">join</a>:
-        - &lt;<em>join_name_4</em>&gt;
-        - &lt;<em>join_name_5</em>&gt;
-        - &lt;<em>join_name_6</em>&gt;
+        - &lt;<em>join_name_n</em>&gt;
     <a href="#rules">rules</a>:
     - <a href="#name">name</a>: &lt;<em>rls_rule_name_1</em>&gt;
       <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_1</em>&gt;
@@ -373,6 +367,7 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
     <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
     <a href="#destination">destination</a>:
       <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
     <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
     <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
     <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
@@ -422,6 +417,7 @@ Worksheet and View joins have the following limitation:
   <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
   <a href="#destination">destination</a>:
     <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+    <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
   <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
   <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
   <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
@@ -756,7 +752,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="expr">
     <dt>expr</dt>
-    <dd>The definition of the formula or RLS rule.</dd>
+    <dd>The definition of the formula or row level security (RLS) rule. For RLS rules, the syntax in TML should be the same as the syntax of the rule on the table.</dd>
   </dlentry>
 
   <dlentry id="filters">
