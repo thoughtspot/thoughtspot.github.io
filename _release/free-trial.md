@@ -1,12 +1,25 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 06/11/2021
+last_updated: 06/23/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-## June 11, 2021 
+## June 23, 2021
+
+These are the changes we made to Free Trial:
+
+* To facilitate connecting to your data using Redshift, users now see a connection creation checklist during the Redshift connection process. <br>
+![]({{ site.baseurl }}/images/free-trial-add-connection-redshift.png "Redshift connection creation checklist"){: .inline}
+
+* The **more options** menu on the Data page no longer contains the option to **View CSV** after a user deletes a previously uploaded CSV file. Now, users can immediately upload a new CSV file by selecting **Upload CSV**.
+
+* We made the following design changes to Free Trial:
+  * We adjusted the size of the video thumbnail that appears during Analyst onboarding.
+  * We adjusted the size and height of the **Name Your Worksheet** dropdown during worksheet creation in Setup.
+
+## June 11, 2021
 
 {: id="invite-others"}
 ### Free Trial invite others
@@ -47,7 +60,7 @@ The worksheet creation tooltips appear when you create a worksheet during onboar
 ![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip"){: .inline}
 
 
-### Free Trial Make It shine
+### Free Trial Make It Shine
 
 These are the fixes we applied to Free Trial:
 
@@ -108,17 +121,6 @@ We added a "What’s New" section to the ThoughtSpot Information Center. This se
 
 ![]({{ site.baseurl }}/images/free-trial-learn-more.png "Learn more about new features")
 
-<!--
-### Free Trial invitation process simplified
-
-We have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox. Users you invite join your group automatically, and can share Answers, Pinboards and Worksheets.
-
-To invite a teammate to Free Trial, simply navigate to the **Setup** tab and click **Invite others** at the bottom of the screen. Enter your team member's email and click **Send invite**.
-
-![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
-
-![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
--->
 
 {: id="duplicate-column-names-highlighted"}
 ### Worksheet duplicate column names error
