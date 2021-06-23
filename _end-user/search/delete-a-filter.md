@@ -15,4 +15,5 @@ You can also click the **x** on the filter bar above the answer.
 
 ![]({{ site.baseurl }}/images/delete_filter_from_filter_bar.png "Delete the filter term from the filter bar")
 
-If the filter was the most recent addition to your search, you can delete it by clicking on the in-product back button to the left of the Answer name.
+<!-- back button functionality removed for now (6/23/2021)
+If the filter was the most recent addition to your search, you can delete it by clicking on the in-product back button to the left of the Answer name.-->
