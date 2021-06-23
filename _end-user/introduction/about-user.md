@@ -75,7 +75,7 @@ Click **Update**.
 
 {: id="new-answer-experience"}
 ## Manage your Answer experience
-You can turn the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) on or off from the **Experience manager**. The new experience is on by default; to return to the classic experience, select **Classic experience**.
+If the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) <span class="badge badge-update">Beta</span> (off by default) is on for your company, you can turn it on or off from the **Experience manager**.
 
 ![New Answer experience toggle]({{ site.baseurl }}/images/new-answer-experience-toggle.png "New Answer experience toggle")
 

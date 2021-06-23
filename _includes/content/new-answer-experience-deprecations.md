@@ -1,4 +1,4 @@
-The following features are <strong><em>not</em></strong> available with the new Answer experience. If you would like your company to be able to use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn the new Answer experience off for your company. Alternatively, you can turn it on or off individually from your profile.
+The following features are <strong><em>not</em></strong> available with the new Answer experience. The new Answer experience is in <span class="badge badge-update">Beta</span> and off by default. If it is on in your environment, and you would like your company to be able to use these de-supported features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn the new Answer experience off for your company. Alternatively, you can turn it on or off individually from your profile.
 <ul>
 <li>Learn how to use ThoughtSpot Pinboard</li>
 <li> <strong>Browser back button</strong>: you can no longer use the browser back button to go back one step in a search or Answer. Instead, use the new product back button to the left of an Answer name.</li>
