@@ -1,6 +1,6 @@
 ---
 title: [Embrace overview]
-last_updated: 12/18/2020
+last_updated: 6/22/2021
 toc: true
 summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
@@ -15,6 +15,8 @@ Embrace supports the following external databases:
 - Microsoft Azure Synapse
 - Teradata
 - SAP HANA
+
+{% include note.html content="Databricks is in beta, and is off by default. To enable it, contact ThoughtSpot Support." %}
 
 To enable Embrace, contact ThoughtSpot support.
 
