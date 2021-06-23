@@ -5,7 +5,7 @@ summary: "In ThoughtSpot, you can start changing all axes options by clicking on
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{% include note.html content="Certain elements of chart configuration are part of the new Answer experience. These elements include improved conditional formatting for measures in charts. If the new Answer experience is off, you do not see these capabilities. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="Certain elements of chart configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default. These elements include improved conditional formatting for measures in charts. If the new Answer experience is off, you do not see these capabilities. If the new Answer experience is on for your company, you can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
 
 To change axis, you can click the axis itself. This opens the detail axis customization menu in the chart.
 

@@ -164,7 +164,7 @@ For further details, see <a href="{{ site.baseurl }}/admin/data-security/audit-l
 
 <dd>If your application instance requires an action that sends only a single row of data from charts or tables, developers can configure a custom action and restrict it to only the contextual menu. If this setting is enabled on a custom action, ThoughtSpot users cannot modify this action on a visualization page.</dd>
 
-<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-viz" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
+<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-viz" target="_blank">ThoughtSpot Developer Documentation</a>.
 </dd></dlentry>
 </dl>
 

@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Certain elements of table configuration are part of the new Answer experience. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="Certain elements of table configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. If the new Answer experience is on for your company, you can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
 
 In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type `revenue`, you see the total sum of revenue as a single number. If you include the keyword `monthly`, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns, either from the table itself or from the **Edit table: Configure** menu. You can also change the column widths.
 
@@ -95,7 +95,7 @@ You can perform conditional formatting on both measures and attributes, within t
 
 Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table).
 
-Note that certain elements of conditional formatting are part of the new Answer experience. These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. The new Answer experience is on by default; you can toggle it on or off from the **Experience manager** in your profile.
+Note that certain elements of conditional formatting are part of the new Answer experience <span class="badge badge-update">Beta</span> (off by default). These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. The new Answer experience is in <span class="badge badge-update">Beta</span> and off by default. If it is on for your company, you can toggle it on or off from the **Experience manager** in your profile.
 
 ## Sort columns
 
@@ -126,7 +126,7 @@ Tables automatically have footers that tell you the number of rows the table has
     ![Enable or disable table footer]({{ site.baseurl }}/images/table-config-footer.png "Enable or disable table footer")
 
 ## Content density
-You can view more table rows at a time by changing the content density. You can change the content density from the **Settings** menu.
+Content density is part of the new Answer experience <span class="badge badge-update">Beta</span> (off by default). You can view more table rows at a time by changing the content density. You can change the content density from the **Settings** menu.
 
 1. Click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your table. The **Edit table** panel appears, on the **Configure** menu.
 
@@ -137,7 +137,7 @@ You can view more table rows at a time by changing the content density. You can 
     ![Table content density]({{ site.baseurl }}/images/table-content-density.png "Table content density")
 
 ## Table theme
-You can change the table theme from the default (outline) to **row** or **zebra**. You can change the table theme from the **Settings** menu. **Row** removes the lines between columns, and **zebra** changes the color of every other row.
+Tables themes are part of the new Answer experience <span class="badge badge-update">Beta</span> (off by default). You can change the table theme from the default (outline) to **row** or **zebra**. You can change the table theme from the **Settings** menu. **Row** removes the lines between columns, and **zebra** changes the color of every other row.
 
 1. Click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your table. The **Edit table** panel appears, on the **Configure** menu.
 
