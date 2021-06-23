@@ -13,11 +13,11 @@ These are the changes we made to Free Trial:
 * To facilitate connecting to your data using Redshift, users now see a connection creation checklist during the Redshift connection process. <br>
 ![]({{ site.baseurl }}/images/free-trial-add-connection-redshift.png "Redshift connection creation checklist"){: .inline}
 
-* The *more options* menu on the Data page no longer contains the option to *View CSV* after a user deletes a previously uploaded CSV file. Now, users can immediately upload a new CSV file by selecting *Upload CSV*.
+* The **more options** menu on the Data page no longer contains the option to **View CSV** after a user deletes a previously uploaded CSV file. Now, users can immediately upload a new CSV file by selecting **Upload CSV**.
 
 * We made the following design changes to Free Trial:
   * We adjusted the size of the video thumbnail that appears during Analyst onboarding.
-  * We adjusted the size and height of the *Name Your Worksheet* dropdown during worksheet creation in Setup.
+  * We adjusted the size and height of the **Name Your Worksheet** dropdown during worksheet creation in Setup.
 
 ## June 11, 2021
 
