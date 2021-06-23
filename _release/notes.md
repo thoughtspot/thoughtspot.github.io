@@ -19,8 +19,6 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-For a complete list of known issues in this release, see [Fixed issues]({{ site.baseurl }}/release/known.html).
-
 Here are the most significant new features and improvements in the 7.0.1 Software Release:
 
 * [For the Data Engineer](#7-0-1-data-engineer)
