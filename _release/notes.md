@@ -31,8 +31,6 @@ Here are the most significant new features and improvements in the 7.0.1 Softwar
 <dd>Embrace supports Databricks <span class="label label-beta">Beta</span>. Because this feature is in beta, it is disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
 </dd>
 </dlentry>
-
-</dlentry>
 </dl>
 
 {: id="7-0-new"}
