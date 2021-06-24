@@ -70,22 +70,17 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
     <a href="#join_path">join_path</a>:
     - <a href="#join">join</a>:
       - &lt;<em>join_name_1</em>&gt;
+      - &lt;<em>join_name_n</em>&gt;
   - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
     <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
     <a href="#join_path">join_path</a>:
-    - {}
-  - <a href="#id">id</a>: &lt;<em>table_path_name_3</em>&gt;
-    <a href="#table">table</a>: &lt;<em>table_name_3</em>&gt;
-    <a href="#join_path">join_path</a>:
-    - <a href="#join">join</a>:
-      - &lt;<em>join_name_1</em>&gt;
     - <a href="#join">join</a>:
       - &lt;<em>join_name_2</em>&gt;
-      - &lt;<em>join_name_3</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>table_path_name_n</em>&gt;
+    <a href="#table">table</a>: &lt;<em>table_name_n</em>&gt;
+    <a href="#join_path">join_path</a>:
     - <a href="#join">join</a>:
-      - &lt;<em>join_name_4</em>&gt;
-      - &lt;<em>join_name_5</em>&gt;
-      - &lt;<em>join_name_6</em>&gt;
+      - &lt;<em>join_name_n</em>&gt;
   <a href="#formulas">formulas</a>:
   - <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_1</em>&gt;
@@ -196,7 +191,19 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
     <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
     <a href="#join_path">join_path</a>:
-    - {}
+    - <a href="#join">join</a>:
+      - &lt;<em>join_name_1</em>&gt;
+      - &lt;<em>join_name_n</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
+    <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
+    <a href="#join_path">join_path</a>:
+    - <a href="#join">join</a>:
+      - &lt;<em>join_name_2</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>table_path_name_n</em>&gt;
+    <a href="#table">table</a>: &lt;<em>table_name_n</em>&gt;
+    <a href="#join_path">join_path</a>:
+    - <a href="#join">join</a>:
+      - &lt;<em>join_name_n</em>&gt;
   <a href="#formulas">formulas</a>:
   - <a href="#id">id</a>: &lt;<em>formula_id_1</em>&gt;
     <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
@@ -345,6 +352,7 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
       <a href="#join_path">join_path</a>:
       - <a href="#join">join</a>:
         - &lt;<em>join_name_1</em>&gt;
+        - &lt;<em>join_name_n</em>&gt;
     - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
       <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
       <a href="#join_path">join_path</a>:
@@ -398,7 +406,9 @@ For Worksheets and Views, the join syntax is the following:
 - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
   <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
   <a href="#join_path">join_path</a>:
-  - {}
+  - <a href="#join">join</a>:
+    - &lt;<em>join_name_1</em>&gt;
+    - &lt;<em>join_name_n</em>&gt;
 </pre>
 
 ### Worksheet and View join functionality and limitations
@@ -752,7 +762,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="expr">
     <dt>expr</dt>
-    <dd>The definition of the formula or row level security (RLS) rule. For RLS rules, the syntax in TML should be the same as the syntax of the rule on the table.</dd>
+    <dd>The definition of the formula or row level security (RLS) rule. For RLS rules, the syntax for variables in TML should be the same as the syntax of the variables in the rule on the table.</dd>
   </dlentry>
 
   <dlentry id="filters">
