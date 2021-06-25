@@ -76,6 +76,11 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dt>Consumption-based pricing</dt>
 <dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/appliance/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/appliance/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
 </dlentry>
+
+<dlentry id="saml-mail-field">
+<dt>SAML configuration</dt>
+<dd>When configuring SAML authentication for ThoughtSpot, it is now mandatory to map the <code>mail</code> attribute in the IDP metadata file to the email address of the user. If your company cannot meet this requirement, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot support</a>. For more information, refer to <a href="{{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html">configure SAML</a>.</dd>
+</dlentry>
 </dl>
 
 {: id="6-3-new"}
