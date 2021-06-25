@@ -39,6 +39,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="july-cloud-business-user"></a>For the Business User</h3>
 
+<dl>
 <dlentry id="watchlist-metrics">
 <dt>Watchlist metrics</dt>
 <dd>There are several new features for the metrics watchlist on your ThoughtSpot home page:
@@ -46,10 +47,17 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <li>There is now no limit to the number of metrics you can add to your watchlist.</li></ul>
 Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">ThoughtSpot One home page</a> for more information about watchlist metrics.</dd>
 </dlentry>
-
+</dl>
 
 <h3><a id="july-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <h3><a id="july-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+
+<dl>
+<dlentry id="credit-usage-pinboard">
+<dt>Credit Usage pinboard</dt>
+<dd>The Credit Usage pinboard, a pinboard for monitoring your credit consumption under the consumption-based pricing model, is now accessible from the Admin Console, under <strong>Billing > Credit consumption</strong>.</dd>
+</dlentry>
+</dl>
 
 <h3><a id="july-cloud-developer"></a>For the Developer</h3>
