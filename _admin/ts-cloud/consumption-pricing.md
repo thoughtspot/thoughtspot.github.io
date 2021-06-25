@@ -39,11 +39,11 @@ User activity that incurs usage minutes includes any user interaction with the p
 
 {: id="credit-usage-pinboard"}
 ## Monitor your consumption
-You can monitor your credit consumption with the Credit Usage pinboard, a new default admin-only pinboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the pinboards and answers by searching for them from the home page, or from the **Pinboards** or **Answers** pages.
+You can monitor your credit consumption with the Credit Usage pinboard, a new default admin-only pinboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the Credit Usage pinboard from the Admin Console, under **Billing > Credit Consumption**. You can access the answers by searching for them from the home page, or from the **Answers** page.
 
-![Credit Usage pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
+![Credit Usage pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard-admin-console.png "Credit Usage Pinboard")
 
-The Credit Usage pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can use it to determine which users or time periods consume more credits than others. You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and pinboards.
+The Credit Usage pinboard in the Admin Console contains useful visualizations and headlines you can use to monitor your consumption. You can use it to determine which users or time periods consume more credits than others. You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and pinboards.
 
 The Credit Usage Pinboard contains the following visualizations and headlines:
 - Daily Usage, with Unique Users (last 30 days)
