@@ -29,7 +29,7 @@ To determine if ThoughtSpot supports your preferred IdP, [contact ThoughtSpot su
 
 Complete your configuration of the IdP using the IdP's SAML documentation. Upload or copy the contents of the `spring_saml_metadata.xml` to your IdP server. This file contains the public key you need if you want to encrypt your SAML assertions. If you did not download the `spring_saml_metadata.xml` file, navigate to `https://<your_ThoughtSpot_hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
 
-{% include note.html content="When configuring SAML 2.0, make sure you map the SAML user attributes to appropriate fields. For example, you must map SAML user’s username to the NameId attribute in OneLogin. Similarly, in Okta, you must map the username to userPrincipalName. You must also ensure that the email address of the user is mapped to the mail attribute. If your IdP does not allow you to import the IdP metadata XML file, you must map these values manually." %}
+{% include note.html content="When configuring SAML 2.0, make sure you map the SAML user attributes to appropriate fields. For example, you must map SAML user’s username to the NameId attribute in OneLogin. Similarly, in Okta, you must map the username to userPrincipalName. You must also ensure that the email address of the user is mapped to the mail attribute. Starting in ThoughtSpot version 6.3.1, it is mandatory to fill out the mail field. If your company cannot meet this requirement, contact ThoughtSpot support. If your IdP does not allow you to import the IdP metadata XML file, you must map these values manually." %}
 
 After you configure the IdP, open a Web browser and go to the ThoughtSpot login page. It should now show the Single Sign On option.
 
