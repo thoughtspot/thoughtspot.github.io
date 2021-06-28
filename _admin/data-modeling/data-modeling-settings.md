@@ -36,7 +36,7 @@ The following index includes mutable data modeling settings that you can apply t
 | [Format Pattern](set-format-pattern-numbers.html#) | Specifies the format to use for numeric values or dates that show in the column. |
 | [Currency Type](set-format-pattern-numbers.html#set-currency-type) | Specifies the format of currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. You cannot change the attribution dimension in the modeling file. You can only configure it on a table-by-table basis. |
-| [Calendar Type]({{ site.baseurl }}/admin/setup/set-custom-calendar.html) | Specifies what type of calendar a date type column uses. It can be Gregorian calendar (default), a fiscal calendar, or any custom calendar. |
+| [Calendar Type]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html) | Specifies what type of calendar a date type column uses. It can be Gregorian calendar (default), a fiscal calendar, or any custom calendar. |
 
 ## Data modeling best practices
 
