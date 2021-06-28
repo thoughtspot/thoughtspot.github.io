@@ -58,6 +58,11 @@ Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-ho
 <dt>Credit Usage pinboard</dt>
 <dd>The Credit Usage pinboard, a pinboard for monitoring your credit consumption under the consumption-based pricing model, is now accessible from the Admin Console, under <strong>Billing > Credit consumption</strong>.</dd>
 </dlentry>
+
+<dlentry id="saml-mail-field">
+<dt>SAML configuration</dt>
+<dd>When configuring SAML authentication for ThoughtSpot, it is now mandatory to map the <code>mail</code> attribute in the IDP metadata file to the email address of the user. If your company cannot meet this requirement, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a>. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html">configure SAML</a>.</dd>
+</dlentry>
 </dl>
 
 <h3><a id="july-cloud-developer"></a>For the Developer</h3>
