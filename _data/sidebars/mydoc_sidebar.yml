@@ -1265,6 +1265,15 @@ entries:
         - title: Add or manage experts
           url: /admin/data-modeling/add-expert.html
           output: web,admBk
+        - title: Exclude from SpotIQ analyses
+          url: /admin/data-modeling/spotiq-data-model-preferences.html
+          output: web,admBk
+        - title: Chasm traps
+          url: /admin/loading/chasm-trap.html
+          output: web,admBk
+        - title: Data types
+          url: /admin/loading/datatypes.html
+          output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
         levelThreeItems:
