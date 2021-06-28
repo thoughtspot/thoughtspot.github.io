@@ -69,7 +69,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
 <dlentry id="embrace-databricks">
 <dt>Databricks GA</dt>
-<dd>Datbricks is now GA in this release of ThoughtSpot Cloud. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html">Databricks</a>.</dd>
+<dd>Databricks is now GA in this release of ThoughtSpot Cloud. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html">Databricks</a>.</dd>
 </dlentry>
 
 <dlentry id="object-usage-pinboard">
