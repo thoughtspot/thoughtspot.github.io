@@ -32,7 +32,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - Centralize data management and governance in the external database.
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
-- Custom calendar available with Snowflake, Amazon Redshift, Google BigQuery, and Azure Synapse
+- Custom calendar available with Snowflake.
 
 ## Limitations
 
@@ -40,7 +40,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 
 ## Feature availability in Embrace on ThoughtSpot Cloud
 
-Here are the major features that are not currently available in Connections:
+Here are the major features that are not currently available in Embrace:
 
 - Custom calendar is only supported with Snowflake connections, at this time
 - Spot IQ: Instant insights, Did you know?, Pinboard insights, Analyze
