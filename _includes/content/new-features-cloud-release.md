@@ -51,6 +51,17 @@ Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-ho
 
 <h3><a id="july-cloud-data-engineer"></a>For the Data Engineer</h3>
 
+<dl>
+<dlentry id="custom-calendar">
+<dt>Custom calendar enhancements</dt>
+<dd>There are several enhancements for custom calendar in this release:
+<ul><li>Streamlined custom calendar window with the ability to preview calendar data.</li>
+<li>Simplified workflow.</li>
+<li>Preview calendar data from custom calendar list</li></ul>
+For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar overview</a>.</dd>
+</dlentry>
+</dl>
+
 <h3><a id="july-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
 <dl>
