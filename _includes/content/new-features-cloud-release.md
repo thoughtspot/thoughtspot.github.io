@@ -43,6 +43,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <li>There is now no limit to the number of metrics you can add to your watchlist.</li></ul>
 Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">ThoughtSpot One home page</a> for more information about watchlist metrics.</dd>
 </dlentry>
+
+<dlentry id="scatter-bubble-charts">
+<dt>Minimum and maximum on x-axis for scatter and bubble charts</dt>
+<dd>You can now specify a minimum and maximum value for measures on the x-axis of <a href="{{ site.baseurl }}/end-user/search/about-scatter-charts.html">scatter</a> and <a href="{{ site.baseurl }}/end-user/search/about-bubble-charts.html">bubble</a> charts. For more information on how to add a minimum and maximum value to a chart axis, refer to <a href="{{ site.baseurl }}/end-user/search/chart-axes-options.html#edit">Change axis options</a>.</dd>
+</dlentry>
 </dl>
 
 <h3><a id="july-cloud-data-engineer"></a>For the Data Engineer</h3>
