@@ -51,7 +51,7 @@ Here are the most significant new features and improvements in the 7.0.0 Softwar
 <dl>
 <dlentry id="search-assist-coach">
   <dt>Search Assist Coach</dt>
-  <dd><a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries based on their company data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
+  <dd><a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries based on their company's data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
 
 <dlentry id="scriptability">
   <dt>Scriptability enhancements</dt>
@@ -80,7 +80,7 @@ Here are the most significant new features and improvements in the 7.0.0 Softwar
 <dl>
 <dlentry id="search-assist">
   <dt>Search Assist</dt>
-<dd><a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> introduces new users to ThoughtSpot's Search experience by walking them through simple search scenarios on sample data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar. Additionally, you can use <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> to create sample search queries on your own data.</dd>
+<dd><a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> introduces new users to ThoughtSpot's Search experience by walking them through simple search scenarios on your company's data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar. Worksheet owners can use <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> to create these sample search queries on your company's data.</dd>
 </dlentry>
 
 <dlentry id="geomaps">
