@@ -8,15 +8,15 @@ permalink: /:collection/:path.html
 
 ## Search Assist overview
 
-[Search Assist]({{ site.baseurl }}/end-user/onboarding/search-assist.html) walks you through simple search scenarios using sample data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar.
+[Search Assist]({{ site.baseurl }}/end-user/onboarding/search-assist.html) walks you through simple search scenarios using your company's data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar.
 
-The initial example asks, ***What were sales for all products in 2019?***
+For example, a Search Assist lesson might ask, ***What were sales for all products in 2019?***
 
 Search Assist guides you to phrase this search as ***sales product 2019***.
 
 The search then returns the Answer as a table.
 
-Search Assist's default queries run on sample retail data, which is not specific to your company's use case or data. You may want to use your own data to train users to search data. With Search Assist Coach, you can use data from your own Worksheets to create example queries that appear to users when they first log into ThoughtSpot and go through onboarding.
+Before new users can learn how to search data using Search Assist, you must create the lessons. With Search Assist Coach, you can use data from your own Worksheets to create example queries that appear to users when they first log into ThoughtSpot and go through onboarding.
 
 ## Create Search Assist lessons
 You can only create your own Search Assist lessons on Worksheets, using the Search Assist Coach. You must have the **can manage data** permission.
