@@ -123,6 +123,9 @@ This feature is in <span class="label label-beta">Beta</span> and off by default
 <li>Password change</li>
 <li>Privilege change</li>
 <li>Profile change</li>
+<li>Row level security (RLS) rule creation</li>
+<li>RLS rule deletion</li>
+<li>RLS rule modification</li>
 <li>Successful login</li>
 <li>User account creation</li>
 <li>User account deletion</li>

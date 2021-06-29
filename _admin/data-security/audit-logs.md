@@ -21,6 +21,8 @@ ThoughtSpot security events include the following information:
 
 The possible events are:
 - [account-logout](#account-logout)
+- [create_rls_rule](#create-rls-rule)
+- [delete_rls_rules](#delete-rls-rules)
 - [failed-login](#failed-login)
 - [group-creation](#group-creation)
 - [group-deletion](#group-deletion)
@@ -34,6 +36,7 @@ The possible events are:
 - [privilege-change](#privilege-change)
 - [profile-change](#profile-change)
 - [successful-login](#successful-login)
+- [update_rls_rule](#update-rls-rule)
 - [user-account-creation](#user-account-creation)
 - [user-account-deletion](#user-account-deletion)
 - [user-group-change](#user-group-change)
@@ -46,6 +49,14 @@ ThoughtSpot defines these events as follows:
 <dlentry id ="account-logout">
  <dt>Account logout</dt>
  <dd>A user logs out from ThoughtSpot.</dd>
+</dlentry>
+<dlentry id ="create-rls-rule">
+ <dt>Row level security (RLS) rule creation</dt>
+ <dd>A user creates an RLS rule on a table.</dd>
+</dlentry>
+<dlentry id ="delete-rls-rules">
+ <dt>RLS rule deletion</dt>
+ <dd>A user deletes an RLS rule on a table.</dd>
 </dlentry>
 <dlentry id ="failed-login">
  <dt>Failed login</dt>
@@ -98,6 +109,10 @@ ThoughtSpot defines these events as follows:
  <dlentry id ="successful-login">
   <dt>Successful login</dt>
   <dd>A local, IdP or AD user logs in to ThoughtSpot.</dd>
+ </dlentry>
+ <dlentry id ="update-rls-rule">
+  <dt>RLS rule update</dt>
+  <dd>A user modifies an RLS rule on a table.</dd>
  </dlentry>
  <dlentry id ="user-account-creation">
   <dt>User account creation</dt>
