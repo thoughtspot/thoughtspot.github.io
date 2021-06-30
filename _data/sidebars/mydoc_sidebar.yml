@@ -1758,6 +1758,9 @@ entries:
       - title: Overview
         url: /data-integrate/embrace/embrace-gbq.html
         output: web,embraceGd
+      - title: Prerequisites
+        url: /data-integrate/embrace/embrace-gbq-prerequisites.html
+        output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-gbq-add.html
         output: web,embraceGd

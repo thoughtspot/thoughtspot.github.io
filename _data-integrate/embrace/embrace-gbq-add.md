@@ -7,6 +7,8 @@ permalink: /:collection/:path.html
 ---
 Once ThoughtSpot Embrace is enabled, you can add a connection to a BigQuery database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
+Before you can create a connection, you must create a custom role. For more information, see [Prerequisites]({{ site.baseurl }}/data-integrate/embrace/ts-cloud-embrace-gbq-prerequisites.html)
+
 To add a connection to BigQuery:
 
 1. Click **Data** in the top navigation bar.
