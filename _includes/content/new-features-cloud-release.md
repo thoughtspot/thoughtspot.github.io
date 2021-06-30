@@ -134,6 +134,11 @@ This feature is in <span class="label label-beta">Beta</span> and off by default
 For further details, see <a href="{{ site.baseurl }}/admin/data-security/audit-logs.html">Collect security logs</a>.</dd>
 </dlentry>
 
+<dlentry id="admin-console">
+<dt>UI improvement for scheduled maintenance</dt>
+<dd>This release improves the UI and user experience of the <a href="{{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html">Scheduled maintenance</a> section of the admin console.</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="june-cloud-developer"></a>For the Developer</h3>
