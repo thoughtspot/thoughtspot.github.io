@@ -11,7 +11,6 @@ A passthrough function serves as a wrapper around the specific Google BigQuery S
 
 ## Example
 
-### Scenario
 A company stores all data in `varchar` (dates, amounts, prices, and flags) in a history table and the only `datetime` field is a load date, which is not seen by the user.
 
 This example only applies to **quantities** and **amount** fields, since ThoughtSpot's `to_date` function automatically generates the correct BigQuery SQL for **dates**.
@@ -20,7 +19,7 @@ The original table items **quantity**, **quantity_kg**, and **shipvalue** are da
 
 {% include note.html content="The company casts as `bignumeric` but ThoughtSpot passthrough functions only support `numeric` as shown below." %}
 
-### Formulas in ThoughtSpot
+### Formulas used in ThoughtSpot
 
 The following passthrough functions were applied in a worksheet:
 - Shipped Quantity: `sql_double_op ( “safe_cast({0} as numeric)” ,quantity )`
