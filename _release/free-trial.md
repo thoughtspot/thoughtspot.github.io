@@ -1,11 +1,29 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 06/23/2021
+last_updated: 06/30/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## June 30, 2021
+
+{: id="worksheet-creation-existing-joins-message"}
+### Worksheet creation with existing joins
+
+When you select a fact table with existing joins during worksheet creation in Setup, ThoughtSpot automatically adopts the existing join. To simplify worksheet creation, ThoughtSpot now displays the names of pre-existing table joins. To change existing joins and create a new worksheet based on your fact table, navigate to the Data tab and select the table to delete the existing join(s).
+
+![]({{ site.baseurl }}/images/free-trial-preexisting-join.png "Worksheet creation preexisting join message")
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial:
+
+* To streamline user login, the login page now remembers user email addresses.
+* The fact table description in worksheet creation now reads: "A fact table contains metrics like sales revenue, balance amount, or quantity. Typically, the table with the most records is your fact table."
+
+
 ## June 23, 2021
 
 These are the changes we made to Free Trial:
