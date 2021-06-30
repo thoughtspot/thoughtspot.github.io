@@ -26,6 +26,9 @@ entries:
     - title: Release notes
       url:  /release/notes.html
       output: web
+    - title: Get started with Free Trial
+      url:  /release/ts-cloud-getting-started-free-trial.html
+      output: web
     - title: Free Trial
       url:  /release/free-trial.html
       output: web
