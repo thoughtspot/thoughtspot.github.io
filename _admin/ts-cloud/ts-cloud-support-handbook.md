@@ -105,16 +105,16 @@ You must have a valid [ThoughtSpot Community](https://community.thoughtspot.com/
 
 ![]({{ site.baseurl }}/images/community-sign-in.png "Community sign in")
 
-After logging into the Community, you'll see the top-level navigation options for getting help: *Product Forums*, *Best Practices*, *News*, and *Support*.
+After logging into the Community, you'll see the top-level navigation options for getting help: **Product Forums**, **Best Practices**, **News**, and **Support**.
 
 This document only describes how to submit a request for contacting ThoughtSpot Support.
 
--   To file a new case, click *Submit Case*.
--   To view your cases, click *View Cases*.
+-   To file a new case, click **Submit Case**.
+-   To view your cases, click **View Cases**.
 
 ![]({{ site.baseurl }}/images/community-support.png "Community Support")
 
-Scroll down on the main page to see additional resources on *Office Hours*, *Documentation*, *Training*, and *User Groups*.
+Scroll down on the main page to see additional resources on **Office Hours**, **Documentation**, **Training**, and **User Groups**.
 
 ![]({{ site.baseurl }}/images/community-main-page.png)
 
@@ -126,24 +126,31 @@ To create a new case, log into the [ThoughtSpot Community](https://community.tho
 
 ![]({{ site.baseurl }}/images/community-submit-case.png)
 
-Please provide all required information in the web form. You may notice that on the left side of the form, under *Need Answers Fast?*, we suggest Knowledge Base articles that match the keywords in the **Subject** and **Description** you provide. Click on the suggested articles to see if they help you to resolve your situation quickly.
+Please provide all required information in the web form. You may notice that on the left side of the form, under **Need Answers Fast?**, we suggest Knowledge Base articles that match the keywords in the **Subject** and **Description** you provide. Click on the suggested articles to see if they help you to resolve your situation quickly.
 
 Alternatively, you can open a new case by calling us on the telephone. You can find these support phone numbers on the [Contact Us](https://www.thoughtspot.com/contact-us){:target="_blank"} section of the ThoughtSpot website.
 
-
-
-| Region | Phone |
-
-| ---- | ---- |
-
-| Americas | 1-800-508-7008, ext 1 |
-
-| UK | +44 (0) 20 8102 1212 |
-
-| Germany | +49 32 221852493 |
-
-| France | +33 176400256 |
-
+<table style="width:20%">
+ <tr>
+  <th>Region</th>
+  <th>Phone</th>
+ </tr>
+ <tr>
+  <td>Americas</td>
+  <td>1-800-508-7008, ext 1</td>
+ </tr>
+ <tr>
+  <td>UK</td>
+  <td>+44 (0) 20 8102 1212</td>
+ </tr>
+  <td>Germany</td>
+  <td>+49 32 221852493</td>
+ </tr>
+ <tr>
+  <td>France</td>
+  <td>+33 176400256</td>
+ </tr>
+</table>
 
 Please have the following information ready, so the SRE can log your case accurately:
 
@@ -160,7 +167,7 @@ You can view your cases, or all cases within your organization by clicking menu:
 
 ![]({{ site.baseurl }}/images/community-view-case.png)
 
-You can change the list view, and pin a specific view as default for the next time you use the portal. *My Customer Support Case* view is for your cases, while *All Customer Support Cases* shows all cases within your organization. You can request that access when working with your ThoughtSpot Customer Success Representative.
+You can change the list view, and pin a specific view as default for the next time you use the portal. **My Customer Support Case** view is for your cases, while **All Customer Support Cases** shows all cases within your organization. You can request that access when working with your ThoughtSpot Customer Success Representative.
 
 ![]({{ site.baseurl }}/images/community-pin-case.png)
 
@@ -172,32 +179,52 @@ ThoughtSpot Support works with you to determine if the issue is resolved to your
 
 All cases reported to ThoughtSpot must have a category. The category establishes the case assignment rule.
 
-
-| Category | Assignment |
-
-| --- | --- |
-
-| Issue | Systems Reliability Engineer |
-
-| Feature Request | Customer Success Representative |
-
+<table style="width:40%">
+ <tr>
+  <th>Category</th>
+  <th>Assignment</th>
+ </tr>
+ <tr>
+  <td>Issue</td>
+  <td>Systems Reliability Engineer</td>
+ </tr>
+ <tr>
+  <td>Feature Request</td>
+  <td>Customer Success Representative</td>
+ </tr>
+</table>
 
 ### Case Priority
 
 Case priorities help us understand the real impact of an issue to your business, so we can determine the urgency of initial response. For each error, assign a priority level based on the relative impact the error has on your use of ThoughtSpot in your organization. ThoughtSpot may re-assign the priority level at its sole discretion. In the following table, we describe ThoughtSpot Support priority levels and the corresponding target initial response times.
 
-
-| Priority | Description | Initial Response level |
-
-| --- | --- | --- |
-
-| P0 | The Production instance is unavailable; all users are blocked and productivity halted. | Within 1 hour |
-
-| P1 | The Production instance is available; functionality or performance is severely impaired. | Within 2 hours |
-
-| P2 | The Production instance is available and can be used with partial, non-critical loss of functionality, or the production instance has an occasional issue that the Customer wants to be identified and resolved. Requests for help on administrative tasks. | Within 4 hours |
-
-| P3 | Cosmetic issues, or requests for general information about the ThoughtSpot Cloud, Documentation, process, or procedures. | By next business day |
+<table style="width:100%">
+ <tr>
+  <th>Priority</th>
+  <th>Description</th>
+  <th>Initial Response level</th>
+ </tr>
+ <tr>
+  <td>P0</td>
+  <td>The Production instance is unavailable; all users are blocked and productivity halted.</td>
+  <td>Within 1 hour</td>
+ </tr>
+ <tr>
+  <td>P1</td>
+  <td>The Production instance is available; functionality or performance is severely impaired.</td>
+  <td>Within 2 hours</td>
+ </tr>
+ <tr>
+  <td>P2</td>
+  <td>The Production instance is available and can be used with partial, non-critical loss of functionality, or the production instance has an occasional issue that the Customer wants to be identified and resolved. Requests for help on administrative tasks.</td>
+  <td>Within 4 hours</td>
+ </tr>
+ <tr>
+  <td>P3</td>
+  <td>Cosmetic issues, or requests for general information about the ThoughtSpot Cloud, Documentation, process, or procedures.</td>
+  <td>By next business day</td>
+ </tr>
+</table>
 
 ### Case Escalation
 
