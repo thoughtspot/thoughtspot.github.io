@@ -75,6 +75,12 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 <dt>SAML configuration</dt>
 <dd>When configuring SAML authentication for ThoughtSpot, it is now mandatory to map the <code>mail</code> attribute in the IDP metadata file to the email address of the user. If your company cannot meet this requirement, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a>. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html">configure SAML</a>.</dd>
 </dlentry>
+
+<dlentry id="admin-console">
+<dt>UI improvement for help customization</dt>
+<dd>This release improves the UI and user experience of the <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Help customization</a> section of the admin console.</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="july-cloud-developer"></a>For the Developer</h3>
