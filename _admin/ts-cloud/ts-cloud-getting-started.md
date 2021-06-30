@@ -22,7 +22,7 @@ Before you start, review these talks to identify your ideal use case. The contex
 
 Ready to get started? Let's begin!
 
-We also provide these instructions in <a href="{{ site.baseurl }}/ts-cloud-get-started.pdf" download>PDF format</a>.
+We also provide these instructions in <a href="{{ site.baseurl }}/downloads/ts-cloud-get-started.pdf" download>PDF format</a>.
 
 ## Step 1: Create a ThoughtSpot Community account
 
