@@ -266,6 +266,9 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
           output: web
+        - title: Passthrough functions
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-passthrough.html
+          output: web
       - levelThreeTitle: Connect to Azure Synapse
         output: web
         levelThreeItems:
