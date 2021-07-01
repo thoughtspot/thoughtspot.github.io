@@ -53,9 +53,9 @@ entries:
       - title: User onboarding experience
         url: /end-user/onboarding/user-onboarding-experience.html
         output: web,ugBk
-      - title: Search Assist
-        url: /end-user/onboarding/search-assist.html
-        output: web,ugBk
+#      - title: Search Assist
+#        url: /end-user/onboarding/search-assist.html
+#        output: web,ugBk
       - title: Finding your way around
         url: /end-user/introduction/about-navigating-thoughtspot.html
         output: web,ugBk
@@ -920,9 +920,9 @@ entries:
       - title: Modify joins between Worksheet Tables
         url: /admin/worksheets/mod-ws-internal-joins.html
         output: web,admBk
-      - title: Create worksheet onboarding lessons with Search Assist Coach
-        url: /admin/worksheets/search-assist-coach.html
-        output: web,admBk
+#      - title: Create worksheet onboarding lessons with Search Assist Coach
+#        url: /admin/worksheets/search-assist-coach.html
+#        output: web,admBk
       - title: Delete Worksheets or Tables
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk
