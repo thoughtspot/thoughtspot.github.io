@@ -130,7 +130,7 @@ Please provide all required information in the web form. You may notice that on 
 
 Alternatively, you can open a new case by calling us on the telephone. You can find these support phone numbers on the [Contact Us](https://www.thoughtspot.com/contact-us){:target="_blank"} section of the ThoughtSpot website.
 
-<table style="width:20%">
+<table style="width:35%">
  <tr>
   <th>Region</th>
   <th>Phone</th>
@@ -180,7 +180,7 @@ ThoughtSpot Support works with you to determine if the issue is resolved to your
 
 All cases reported to ThoughtSpot must have a category. The category establishes the case assignment rule.
 
-<table style="width:40%">
+<table style="width:50%">
  <tr>
   <th>Category</th>
   <th>Assignment</th>
