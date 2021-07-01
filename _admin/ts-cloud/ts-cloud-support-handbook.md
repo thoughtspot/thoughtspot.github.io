@@ -46,7 +46,6 @@ The CSA is your main contact for architecting the ThoughtSpot solution. The CSA:
 -   Assists the CSE with solution implementation
 -   Helps the client Product Owner with story selection and use case prioritization
 
-
 ### Customer Success Engineer (CSE)
 
 The CSE implements the solution, working in tandem with the CSA. The CSE:
@@ -98,7 +97,6 @@ Customers can request for the latest version of ThoughtSpot or ThoughtSpot Suppo
 For cloud customers, ThoughtSpot automatically performs Cloud Release updates on a monthly basis. You will be notified in advance when these updates will occur. ThoughtSpot Support performs the upgrade.
 
 ## Chapter 3: Support Case Management
-
 ### ThoughtSpot Support Portal
 
 You must have a valid [ThoughtSpot Community](https://community.thoughtspot.com/customers/s/){:target="_blank"} user to access the [Support Portal](https://community.thoughtspot.com/s/login/?ec=302&startURL=%2Fcustomers%2Fs%2Fcontactsupport){:target="_blank"}. If you're not signed up yet, please click on ["Sign Up"](https://community.thoughtspot.com/customers/s/login/SelfRegister){:target="_blank"} and follow the instructions to register and receive access.
@@ -109,8 +107,8 @@ After logging into the Community, you'll see the top-level navigation options fo
 
 This document only describes how to submit a request for contacting ThoughtSpot Support.
 
--   To file a new case, click **Submit Case**.
--   To view your cases, click **View Cases**.
+   -   To file a new case, click **Submit Case**.
+   -   To view your cases, click **View Cases**.
 
 ![]({{ site.baseurl }}/images/community-support.png "Community Support")
 

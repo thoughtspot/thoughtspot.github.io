@@ -96,10 +96,9 @@ Alternatively, navigate to step one of Setup, and click **upload CSV**.
 
 2. Upload the CSV or Excel file using one of these options:
 
-- Click **Browse your files** and select the file.
-- Drag and drop the file into the drop area.
-
-{% include note.html content="Free Trial has a CSV file size limit of 10 MB." %}
+   - Click **Browse your files** and select the file.
+   - Drag and drop the file into the drop area.
+   - **Note**: Free Trial has a CSV file size limit of 10 MB.
 
 3. Answer the question **Are the column names already defined in the file header?**
 
@@ -116,7 +115,7 @@ You can also change existing names to a simpler or more human-readable format.
 
 9. Click **Upload**.
 
-{% include note.html content="Free Trial users have an upload limit of one CSV file per user." %}
+   - **Note**: Free Trial users have an upload limit of one CSV file per user.
 
 To replace your uploaded CSV file, follow these steps:
 
