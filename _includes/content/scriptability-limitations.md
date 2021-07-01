@@ -18,4 +18,4 @@
 
 * You cannot delete joins from the TML file. You must delete them in the UI.
 
-* You cannot remove columns or tables from an Embrace connection. You can only add them. This feature is in **Beta**; to add columns and tables to an Embrace connection through Scriptability, contact your ThoughtSpot administrator.
+* You cannot remove columns or tables from an Embrace connection. You can only add them.
