@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts7.jul.cl
+  docversion: ts7.jun.cl
   # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
@@ -265,6 +265,9 @@ entries:
           output: web
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
+          output: web
+        - title: Passthrough functions
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-passthrough.html
           output: web
       - levelThreeTitle: Connect to Azure Synapse
         output: web
@@ -940,6 +943,9 @@ entries:
     sectionitems:
     - title: Introduction to administration
       url: /admin/intro.html
+      output: web,admBk
+    - title: Support Handbook
+      url: /admin/ts-cloud/ts-cloud-support-handbook.html
       output: web,admBk
 #    - levelTwoTitle: Understand the architecture
 #      output: web,admBk
