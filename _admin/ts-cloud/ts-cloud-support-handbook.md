@@ -143,6 +143,7 @@ Alternatively, you can open a new case by calling us on the telephone. You can f
   <td>UK</td>
   <td>+44 (0) 20 8102 1212</td>
  </tr>
+ <tr>
   <td>Germany</td>
   <td>+49 32 221852493</td>
  </tr>
