@@ -156,6 +156,10 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 8. The **Import** interface recognizes that an object with this GUID already exists in the system, and asks if you would like to create a new object, or update the existing one. Select **Update existing [object]**.
 
+9. If there are errors in any of the objects you are importing, the **Status** column says **Cannot import** for that object. Next to **Cannot import**, you can **View Errors** to see the errors, and a suggested resolution.
+
+10. Resolve any errors by selecting the **Edit** button for the object with errors. This opens the [TML editor](#tml-editor).
+
 10. Click **Import selected files**.
 
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
