@@ -23,7 +23,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,config-mode,dataflow,dr-mirror,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,nitro-switch,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,spot,ssl,sssd,storage,support,tokenauthentication,update}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,config-mode,csp,dataflow,dr-mirror,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,nitro-switch,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,spot,ssl,sssd,storage,support,tokenauthentication,update}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
@@ -972,6 +972,59 @@ This subcommand has the following option:
     <dd>Specifies the type of configuration to apply.</dd></dlentry>
     </dl>
     </dd></dlentry>
+</dl>
+
+{: id="tscli-csp"}
+### csp
+
+```
+tscli tscli csp [-h] {add-override,clear-override,remove-override,reset-override}
+```
+
+This subcommand has the following options:
+
+<dl>
+  <dlentry>
+    <dt><code>tscli csp add-override</code></dt>
+    <dd>Adds one override to the content security policy, with the following parameters:
+    <dl><dlentry>
+    <dt><code>--source <em>SOURCE</em></code></dt>
+    <dd>Specifies the type of source.</dd></dlentry>
+    <dlentry>
+    <dt><code>--url <em>URL</em></code></dt>
+    <dd>Specifies the new URL to add.</dd></dlentry>
+    </dl>
+    </dd></dlentry>
+<dlentry>
+  <dt><code>tscli csp clear-override</code></dt>
+  <dd>Removes all overrides for a specified source, with the following parameter:
+  <dl><dlentry>
+  <dt><code>--source <em>SOURCE</em></code></dt>
+  <dd>Specifies the type of source.</dd></dlentry>
+  </dl>
+  </dd></dlentry>
+<dlentry>
+  <dt><code>tscli csp remove-override</code></dt>
+  <dd>Removes a specified override from the content security policy, with the following parameters:
+  <dl><dlentry>
+  <dt><code>--source <em>SOURCE</em></code></dt>
+  <dd>Specifies the type of source.</dd></dlentry>
+  <dlentry>
+  <dt><code>--url <em>URL</em></code></dt>
+  <dd>Specifies the new URL to remove.</dd></dlentry>
+  </dl>
+  </dd></dlentry>
+<dlentry>
+  <dt><code>tscli csp reset-override</code></dt>
+  <dd>Resets a specified override with a new value, with the following parameters:
+  <dl><dlentry>
+  <dt><code>--source <em>SOURCE</em></code></dt>
+  <dd>Specifies the type of source.</dd></dlentry>
+  <dlentry>
+  <dt><code>--value <em>VALUE</em></code></dt>
+  <dd>Specifies the new value of the specified type of source.</dd></dlentry>
+  </dl>
+  </dd></dlentry>
 </dl>
 
 {: id="tscli-dataflow"}
