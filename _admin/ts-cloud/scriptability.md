@@ -1,6 +1,6 @@
 ---
 title: [Scriptability]
-last_updated: 1/13/2021
+last_updated: 7/1/2021
 summary: "Use Scriptability to export and import Worksheets, Views, tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -89,7 +89,7 @@ You can edit the `TML` file in one of two ways. You can [export](#export-object)
 
 {: id="tml-editor"}
 ## Edit, validate, and publish objects using the TML editor
-You can access the TML editor from the object list page<!--, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page-->.
+You can access the TML editor from the object list page<!--, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page-->. It also appears when there is an error when you import TML objects, if you click **Edit**.
 
 To use the TML editor, follow these steps:
 
