@@ -7,38 +7,19 @@ redirect_from:
 - /7.0.0.mar.sw/release/notes.html
 permalink: /:collection/:path.html
 ---
-ThoughtSpot version 7.0.1 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 7.0 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [7.0 New Features](#7-0-1-new)
+* [7.0 New Features](#7-0-new)
 * [Supported Upgrade Paths](#upgrade-paths)
-
-{: id="7-0-1-new"}
-## 7.0.1 New Features and Functionality
-
-For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
-
-Here are the most significant new features and improvements in the 7.0.1 Software Release:
-
-* [For the Data Engineer](#7-0-1-data-engineer)
-
-### For the Data Engineer
-
-<dl>
-<dlentry id="embrace">
-<dt>Embrace</dt>
-<dd>Embrace now supports Databricks <span class="label label-beta">Beta</span>. Because this feature is in beta, it is disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
-</dd>
-</dlentry>
-</dl>
 
 {: id="7-0-new"}
 ## 7.0 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-Here are the most significant new features and improvements in the 7.0.0 Software Release:
+Here are the most significant new features and improvements in the 7.0 Software Release:
 
 * [For the Analyst](#7-0-analyst)
 * [For the Business User](#7-0-business-user)
@@ -207,12 +188,12 @@ We like to have a diversity of experience and perspective, and want to hear from
 If you are running one of the following versions, you can upgrade to the 7.0 release
 directly:
 
-* 6.2.x to 7.0.1
-* 6.3.x to 7.0.1
+* 6.2.x to 7.0
+* 6.3.x to 7.0
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 6.2.x, or 6.3.x and then to the 7.0.1 release.
+First, upgrade to version 6.2.x, or 6.3.x and then to the 7.0 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
