@@ -10,7 +10,7 @@ The ThoughtSpot Support team is committed to making you successful when deployin
 
 Reliability of your business is very important for us. We created this document to describe our Support offering, so you can find resources to resolve your issues, and answer your questions.
 
-We also provide these instructions in <a href="{{ site.baseurl }}/downloads/ts-cloud-support-handbook.pdf" download>PDF format</a>.
+We also provide these instructions in <a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF format</a>.
 
 ## Chapter 1: Support Roles
 
@@ -45,7 +45,6 @@ The CSA is your main contact for architecting the ThoughtSpot solution. The CSA:
 -   Helps define the architecture and solution approach
 -   Assists the CSE with solution implementation
 -   Helps the client Product Owner with story selection and use case prioritization
-
 
 ### Customer Success Engineer (CSE)
 
@@ -98,7 +97,6 @@ Customers can request for the latest version of ThoughtSpot or ThoughtSpot Suppo
 For cloud customers, ThoughtSpot automatically performs Cloud Release updates on a monthly basis. You will be notified in advance when these updates will occur. ThoughtSpot Support performs the upgrade.
 
 ## Chapter 3: Support Case Management
-
 ### ThoughtSpot Support Portal
 
 You must have a valid [ThoughtSpot Community](https://community.thoughtspot.com/customers/s/){:target="_blank"} user to access the [Support Portal](https://community.thoughtspot.com/s/login/?ec=302&startURL=%2Fcustomers%2Fs%2Fcontactsupport){:target="_blank"}. If you're not signed up yet, please click on ["Sign Up"](https://community.thoughtspot.com/customers/s/login/SelfRegister){:target="_blank"} and follow the instructions to register and receive access.
@@ -109,8 +107,8 @@ After logging into the Community, you'll see the top-level navigation options fo
 
 This document only describes how to submit a request for contacting ThoughtSpot Support.
 
--   To file a new case, click **Submit Case**.
--   To view your cases, click **View Cases**.
+   -   To file a new case, click **Submit Case**.
+   -   To view your cases, click **View Cases**.
 
 ![]({{ site.baseurl }}/images/community-support.png "Community Support")
 
@@ -130,7 +128,7 @@ Please provide all required information in the web form. You may notice that on 
 
 Alternatively, you can open a new case by calling us on the telephone. You can find these support phone numbers on the [Contact Us](https://www.thoughtspot.com/contact-us){:target="_blank"} section of the ThoughtSpot website.
 
-<table style="width:20%">
+<table style="width:35%">
  <tr>
   <th>Region</th>
   <th>Phone</th>
@@ -180,7 +178,7 @@ ThoughtSpot Support works with you to determine if the issue is resolved to your
 
 All cases reported to ThoughtSpot must have a category. The category establishes the case assignment rule.
 
-<table style="width:40%">
+<table style="width:50%">
  <tr>
   <th>Category</th>
   <th>Assignment</th>
