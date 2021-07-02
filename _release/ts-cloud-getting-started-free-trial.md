@@ -1,6 +1,6 @@
 ---
 title: [Getting Started with ThoughtSpot Cloud]
-last_updated: 6/29/2021
+last_updated: 07/01/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Completing the following steps helps you and other users in your organization get the most value from your data during the trial period. A little bit of time setting up ThoughtSpot has a big impact.
 
-## Before you begin
+## Before you begin 
 
 Before you start, review these talks to identify your ideal use case. The context helps you make account-related decisions and use ThoughtSpot effectively.
 
@@ -20,7 +20,7 @@ Before you start, review these talks to identify your ideal use case. The contex
 <a href="https://youtu.be/W5dwAmLSwT0"  target="_blank">ThoughtSpot Success Series: Use Case Prioritization</a>
 </div>
 
-Ready to get started? Let's begin!
+We highly recommend that you register for the free ThoughtSpot U course that covers the material in this section, [Getting Started with ThoughtSpot Analytics Cloud](https://training.thoughtspot.com/getting-started-with-thoughtspot-cloud).
 
 We also provide these instructions in <a href="{{ site.baseurl }}/downloads/ts-cloud-free-trial-get-started.pdf" download>PDF format</a>.
 
@@ -32,7 +32,7 @@ A ThoughtSpot Community account lets you ask questions in our product forums, ex
 
 ## Step 2: Activate your ThoughtSpot Cloud account
 
-We will send you an email that contains the administrator credentials to log in for the first time. Check your inbox, then navigate to your new cluster. Stay logged in to complete the rest of the setup.
+We will send you an email that contains the administrator credentials to log in for the first time. Check your inbox, then click to access the free trial cluster. Stay logged in to complete the rest of the setup.
 
 ## Step 3: Connect to your data source
 Completing this step lets all users in your organization perform live queries. Choose your cloud data warehouse type, and follow the connection instructions.
@@ -43,6 +43,7 @@ Completing this step lets all users in your organization perform live queries. C
 - [Snowflake]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-snowflake.html){:target="_blank"}
 - [Starburst]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-starburst.html){:target="_blank"}
 - [Databricks]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-databricks.html){:target="_blank"}
+- [Upload flat data file (CSV)]({{site.baseurl}}/release/ts-cloud-getting-started-free-trial.html#upload-csv){:target="_blank"}
 
 ## Step 4: Model your data for searches
 
@@ -77,9 +78,59 @@ Pinboards are interactive collections of charts and tables. Set up a shared pinb
 - [ThoughtSpot Cloud documentation](cloud-docs.thoughtspot.com){:target="_blank"}
 - [Training: Getting started with ThoughtSpot Cloud](https://training.thoughtspot.com/page/getting-started-with-thoughtspot-cloud){:target="_blank"}
 - [Thoughtspot Success Series](https://youtu.be/EYHa8Ck3tdw){:target="_blank"}
+- [ThoughtSpot Support Handbook]({{site.baseurl}}/admin/ts-cloud/ts-cloud-support-handbook.html) (<a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF</a>)
 
 ## Get connected
 
 - [Visit YouTube channel](https://www.youtube.com/thoughtspot){:target="_blank"}
 - [Schedule office hours](https://thoughtspotcs-officehours.youcanbook.me/){:target="_blank"}
 - [Join upcoming events](https://groups.thoughtspot.com/events/#/list){:target="_blank"}
+
+{: id="upload-csv"}
+## Upload a flat data file (CSV)
+
+To upload a CSV file to Free Trial, follow these steps:
+
+1. Navigate to the Data tab, and select **Upload CSV** from the **More** menu in the upper right corner of your screen. <br />
+Alternatively, navigate to step one of Setup, and click **upload CSV**.
+
+2. Upload the CSV or Excel file using one of these options:
+
+   - Click **Browse your files** and select the file.
+   - Drag and drop the file into the drop area.
+   - **Note**: Free Trial has a CSV file size limit of 10 MB.
+
+3. Answer the question **Are the column names already defined in the file header?**
+
+4. Answer the question **Are the fields separated by?**
+
+5. Click **Next.**
+
+6. If column names are missing, click the column header to add column names that describe the attributes or measures in the columns.<br />
+You can also change existing names to a simpler or more human-readable format.
+
+7. Click **Next**.
+
+8. Review the automatically-generated data types for each column, and make necessary changes. <br /> There are eight data types: **Integer**, **Large Integer**, **Decimal**, **Text**, **Date**, **Date_Time**, and **Time**.
+
+9. Click **Upload**.
+
+   - **Note**: Free Trial users have an upload limit of one CSV file per user.
+
+To replace your uploaded CSV file, follow these steps:
+
+1. Navigate to the Data tab, and click the **More** menu icon in the upper right corner of your screen.
+
+2. Select **View CSV**. The details of your uploaded file appear.
+
+3. Select **Replace CSV** from the top right corner of the screen.
+
+3. Answer the question **Are the column names already defined in the file header?**
+
+4. Answer the question **Do you want to append to the existing data or overwrite it?**<br />
+
+4. Answer the question **Are the fields separated by?**
+
+5. Click **Next**.
+
+6. Preview your data and click **Upload**.
