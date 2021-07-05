@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Cloud requirements and support]
-last_updated: 10/1/2020
+last_updated: 07/05/2021
 summary: "Information about features, and how to sign up."
 toc: false
 sidebar: mydoc_sidebar
@@ -29,6 +29,7 @@ ThoughtSpot Cloud supports the following connections:
 - Azure Synapse
 - Oracle ADW
 - Starburst
+- Databricks 
 
 ## Unsupported features
 
