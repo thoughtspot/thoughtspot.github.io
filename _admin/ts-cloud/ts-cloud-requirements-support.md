@@ -29,7 +29,7 @@ ThoughtSpot Cloud supports the following connections:
 - Azure Synapse
 - Oracle ADW
 - Starburst
-- Databricks 
+- Databricks
 
 ## Unsupported features
 
