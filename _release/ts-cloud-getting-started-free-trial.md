@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Completing the following steps helps you and other users in your organization get the most value from your data during the trial period. A little bit of time setting up ThoughtSpot has a big impact.
 
-## Before you begin 
+## Before you begin
 
 Before you start, review these talks to identify your ideal use case. The context helps you make account-related decisions and use ThoughtSpot effectively.
 
@@ -75,7 +75,7 @@ Pinboards are interactive collections of charts and tables. Set up a shared pinb
 
 ## Keep learning
 
-- [ThoughtSpot Cloud documentation](cloud-docs.thoughtspot.com){:target="_blank"}
+- [ThoughtSpot Cloud documentation](https://cloud-docs.thoughtspot.com){: target="_blank"}
 - [Training: Getting started with ThoughtSpot Cloud](https://training.thoughtspot.com/page/getting-started-with-thoughtspot-cloud){:target="_blank"}
 - [Thoughtspot Success Series](https://youtu.be/EYHa8Ck3tdw){:target="_blank"}
 - [ThoughtSpot Support Handbook]({{site.baseurl}}/admin/ts-cloud/ts-cloud-support-handbook.html) (<a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF</a>)
