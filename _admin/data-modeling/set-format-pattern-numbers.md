@@ -1,7 +1,6 @@
 ---
 title: [ "Set number, date, and currency formats" ]
-
-last_updated: 3/25/2020
+last_updated: 7/06/2021
 summary: "Learn how to set key formats for column values."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -30,7 +29,7 @@ These are some examples of formats you can use:
 |------------|--------------|-------------|
 |12345.6789|`#,##0.##`|12,345.68|
 |12345.6789|`#,##0.###`|12,345.679|
-|12345.6789|`#,##0.00000`|12,345.68|
+|12345.6789|`#,##0.00000`|12,345.68000|
 |12345.6789|`#,##0`|12,345|
 |12345.6789|`#,##0.00`|12,345.68|
 |12345|`#,##0.##`|12,345|
