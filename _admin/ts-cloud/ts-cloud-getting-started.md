@@ -96,7 +96,7 @@ ThoughtSpot administrators have built-in pinboards to monitor adoption and usage
 
 ## Keep learning
 
-- [ThoughtSpot Cloud documentation](cloud-docs.thoughtspot.com){:target="_blank"}
+- [ThoughtSpot Cloud documentation](https://cloud-docs.thoughtspot.com){:target="_blank"}
 - [Training: Getting started with ThoughtSpot Cloud](https://training.thoughtspot.com/page/getting-started-with-thoughtspot-cloud){:target="_blank"}
 - [Thoughtspot Success Series](https://youtu.be/EYHa8Ck3tdw){:target="_blank"}
 - [ThoughtSpot Support Handbook]({{site.baseurl}}/admin/ts-cloud/ts-cloud-support-handbook.html) (<a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF</a>)
