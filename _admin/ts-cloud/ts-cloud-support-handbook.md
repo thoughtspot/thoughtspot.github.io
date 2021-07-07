@@ -82,7 +82,7 @@ The ThoughtSpot Support team doesn't have access to your Cloud instance's graphi
 
 #### For ThoughtSpot Software clusters
 
-ThoughtSpot Support provides the option to initiate the Reserve SSH Tunnel (RST) to establish a secure connection between ThoughtSpot nodes and ThoughtSpot tunnel server. You have complete control to initiate, monitor, or stop the secure tunnel session. This is the preferred method to obtain remote access as it doesn't block customer resources and helps in efficient resolution of the issue especially in case of round-the-clock effort being needed.
+ThoughtSpot Support provides the option to initiate the Reverse SSH Tunnel (RST) to establish a secure connection between ThoughtSpot nodes and ThoughtSpot tunnel server. You have complete control to initiate, monitor, or stop the secure tunnel session. This is the preferred method to obtain remote access as it doesn't block customer resources and helps in efficient resolution of the issue especially in case of round-the-clock effort being needed.
 
 If RST is not possible for any reason, ThoughtSpot Support will use internet-based facilities, such as Zoom, for remote access. Please make sure that you have web and SSH access to ThoughtSpot nodes.
 
