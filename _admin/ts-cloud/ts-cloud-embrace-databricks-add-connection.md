@@ -17,7 +17,9 @@ To connect to Databricks:
 
      ![Add a Databricks connection]({{ site.baseurl }}/images/embrace-databricks-connection-type-ts-cloud.png "Add a Databricks connection")
 
-4. (Optional) Provide additional key-value pairs that you need to set up your connection to Databricks, by doing the following:
+4. Enter the connection details for your Databricks data source.     
+
+5. (Optional) Provide additional key-value pairs that you need to set up your connection to Databricks, by doing the following:
 
    - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
    - Enter your key and value information.
@@ -25,9 +27,9 @@ To connect to Databricks:
 
      {% include note.html content="Any key-value pairs that you enter must be defined in your ADW data source. Key-value pairs are case-sensitive." %}
 
-5. Click **Continue**.   
+6. Click **Continue**.   
 
-6. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
    ![Select tables and columns for your connection]({{ site.baseurl }}/images/adw-selecttables.png "Select tables and columns for your connection")
 
