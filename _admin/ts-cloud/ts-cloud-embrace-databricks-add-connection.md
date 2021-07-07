@@ -37,7 +37,7 @@ To connect to Databricks:
 
 8. Click **Confirm**.
 
-After you add the connection, you can search your Databricks database by clicking **Search now**.
+After you add the connection, you can search your Databricks database.
 
 ![The "Connection created" screen]({{ site.baseurl }}/images/databricks-connectioncreated.png "The "Connection created" screen")
 
