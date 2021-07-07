@@ -12,6 +12,12 @@ You may have to make changes to your data to support geo maps. For example, you 
 
 To account for multiple different geographical entities with the same name, you must be specific within your data. A value of *Washington County* without a state attached to it may result in incorrect or incomplete geo maps.
 
+## Download the supported geo maps CSV file
+You can download a CSV file containing all the supported values for geo map countries, codes, and subdivisions. Use this file to confirm that your own geographical values are in the right format, and that ThoughtSpot supports them. Download the CSV file <a href="{{ site.baseurl }}/downloads/geomaps-supported-countries-codes-subdivisions-6.2.csv" download="geomaps-supported-countries-codes-subdivisions-6.2.csv" target="_blank">here</a>.
+
+{% include note.html content="The CSV file contains leading 0s where these zeros are present for ThoughtSpot at the beginning of zip/post code values. However, if you import this file into Excel or another spreadsheet tool, that tool may remove leading zeros, resulting in data that does not match ThoughtSpot's format." %}
+
+## Supported countries and subdivisions
 ThoughtSpot supports the following countries and their associated subdivisions:
 <dl>
 <dlentry>
