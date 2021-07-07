@@ -17,17 +17,19 @@ To connect to Databricks:
 
      ![Add a Databricks connection]({{ site.baseurl }}/images/embrace-databricks-connection-type-ts-cloud.png "Add a Databricks connection")
 
-4. (Optional) Provide additional key-value pairs that you need to set up your connection to Databricks, by doing the following:
+4. Enter the connection details for your Databricks data source.     
+
+5. (Optional) Provide additional key-value pairs that you need to set up your connection to Databricks, by doing the following:
 
    - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
    - Enter your key and value information.
    - To add more keys and values, click the plus sign (+), and enter them.
 
-     {% include note.html content="Any key-value pairs that you enter must be defined in your ADW data source. Key-value pairs are case-sensitive." %}
+     {% include note.html content="Any key-value pairs that you enter must be defined in your Databricks data source. Key-value pairs are case-sensitive." %}
 
-5. Click **Continue**.   
+6. Click **Continue**.   
 
-6. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
    ![Select tables and columns for your connection]({{ site.baseurl }}/images/adw-selecttables.png "Select tables and columns for your connection")
 
@@ -35,7 +37,7 @@ To connect to Databricks:
 
 8. Click **Confirm**.
 
-After you add the connection, you can search your Databricks database by clicking **Search now**.
+After you add the connection, you can search your Databricks database.
 
 ![The "Connection created" screen]({{ site.baseurl }}/images/databricks-connectioncreated.png "The "Connection created" screen")
 
@@ -52,6 +54,6 @@ You can modify a Databricks connection in the following ways:
 - [Delete a table from a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table.html)
 - [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html)
 
-You can also [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html).
+You can also [Delete an Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html).
 
 See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html) for details of connection parameters.
