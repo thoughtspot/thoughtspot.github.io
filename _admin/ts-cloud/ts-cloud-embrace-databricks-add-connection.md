@@ -25,7 +25,7 @@ To connect to Databricks:
    - Enter your key and value information.
    - To add more keys and values, click the plus sign (+), and enter them.
 
-     {% include note.html content="Any key-value pairs that you enter must be defined in your ADW data source. Key-value pairs are case-sensitive." %}
+     {% include note.html content="Any key-value pairs that you enter must be defined in your Databricks data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.   
 
@@ -54,6 +54,6 @@ You can modify a Databricks connection in the following ways:
 - [Delete a table from a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table.html)
 - [Delete a table with dependent objects]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html)
 
-You can also [Delete an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html).
+You can also [Delete an Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html).
 
 See the [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html) for details of connection parameters.
