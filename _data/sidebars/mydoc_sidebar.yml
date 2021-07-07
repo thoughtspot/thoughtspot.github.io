@@ -354,6 +354,9 @@ entries:
         - title: Edit a pinboard
           url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
           output: web,ugBk
+        - title: Delete a visualization
+          url: /end-user/pinboards/delete-a-visualization.html
+          output: web,ugBk
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
           output: web,ugBk
