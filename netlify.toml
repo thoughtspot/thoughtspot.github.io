@@ -39,3 +39,8 @@
   to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html"
   status = 200
   force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.jun.cl/data-integrate/embrace/undefined"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
