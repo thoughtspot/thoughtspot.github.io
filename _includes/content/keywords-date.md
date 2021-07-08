@@ -23,12 +23,18 @@
          <td><code>order date <b>between</b> 01/30/2012 and 01/30/2014</code></td>
       </tr>
       <tr>
-         <td>daily year-over-year</td>
-         <td><code>growth of revenue by order date <b>daily year-over-year</b></code></td>
+         <td>hourly</td>
+         <td>
+            <code>visitors by page name <b>hourly</b></code>
+         </td>
       </tr>
       <tr>
          <td>daily</td>
          <td><code>shipments by region <b>daily</b></code></td>
+      </tr>
+      <tr>
+         <td>daily year-over-year</td>
+         <td><code>growth of revenue by order date <b>daily year-over-year</b></code></td>
       </tr>
       <tr>
          <td><em>day</em></td>
@@ -43,90 +49,76 @@
          <td><code>count shipments <b>Monday</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> days for each month</td>
-         <td><code>sales last <b>2 days for each month</b></code></td>
+         <td>last <em>n</em> days for each week</td>
+         <td><code>total sold <b>last 2 days for each week</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> days for each quarter</td>
-         <td><code>revenue last <b>15 days for each quarter</b></code></td>
+         <td>last <em>n</em> days for each month</td>
+         <td><code>sales <b>last 2 days for each month</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> days for each week</td>
-         <td><code>total sold last <b>2 days for each week</b></code></td>
+         <td>last <em>n</em> days for each quarter</td>
+         <td><code>revenue <b>last 15 days for each quarter</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> days for each year</td>
-         <td><code>revenue last <b>300 days for each year</b></code></td>
+         <td>last <em>n</em> days for each year</td>
+         <td><code>revenue <b>last 300 days for each year</b></code></td>
       </tr>
       <tr>
-         <td>growth of … by … daily</td>
-         <td><code><b>growth of</b> sales <b>by</b> order date <b>daily</b></code></td>
+         <td>next <em>n</em> days for each week</td>
+         <td><code>opportunities <b>next 2 days for each week</b></code></td>
       </tr>
       <tr>
-         <td>growth of … by … monthly</td>
-         <td><code><b>growth of</b> sales <b>by</b> date shipped <b>monthly</b> sales &gt; 24000</code></td>
+         <td>next <em>n</em> days for each month</td>
+         <td><code>opportunities <b>next 2 days for each month</b></code></td>
       </tr>
       <tr>
-         <td>growth of … by … quarterly</td>
-         <td><code><b>growth of</b> sales <b>by</b> date shipped <b>quarterly</b></code></td>
+         <td>next <em>n</em> days for each quarter</td>
+         <td><code>opportunities <b>next 15 days for each quarter</b></code></td>
       </tr>
       <tr>
-         <td>growth of … by … weekly</td>
-         <td><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for pro-ski2000</code></td>
+         <td>next <em>n</em> days for each year</td>
+         <td><code>opportunities <b>next 300 days for each year</b></code></td>
       </tr>
       <tr>
-         <td>growth of … by … yearly</td>
-         <td><code><b>growth of</b> sales <b>by</b> date closed <b>yearly</b></code></td>
+         <td>week to date</td>
+         <td><code>sales by order date <b>week to date</b> for pro-ski200</code></td>
       </tr>
       <tr>
-         <td>growth of … by ...</td>
-         <td><code><b>growth of</b> sales <b>by</b> order date</code></td>
+         <td>week</td>
+         <td><code>revenue by <b>week</b> last quarter</code></td>
       </tr>
       <tr>
-         <td><em>n</em> hours for each day</td>
-         <td><code>sales last <b>2 hours for each day</b></code></td>
+         <td>weekly year-over-year</td>
+         <td><code>growth of revenue by date shipped <b>weekly year-over-year</b></code></td>
       </tr>
       <tr>
-         <td>last day by</td>
-         <td><code>customers <b>last day by</b> referrer</code></td>
+         <td>weekly</td>
+         <td><code>revenue <b>weekly</b></code></td>
       </tr>
       <tr>
-         <td>hourly</td>
-         <td>
-            <code>visitors by page name <b>hourly</b></code>
-         </td>
+         <td>last <em>n</em> weeks for each month</td>
+         <td><code>sales <b>last 3 weeks for each month</b></code></td>
       </tr>
       <tr>
-         <td>last month by</td>
-         <td><code>customers <b>last month by</b> day</code></td>
+         <td>last <em>n</em> weeks for each quarter</td>
+          <td><code>sales <b>last 2 weeks for each quarter</b></code></td>
       </tr>
       <tr>
-         <td>last <em>n</em> days</td>
-         <td><code>visitors <b>last 7 days</b></code></td>
+         <td>last <em>n</em> weeks for each year</td>
+          <td><code>sales <b>last 3 weeks for each year</b></code></td>
       </tr>
       <tr>
-         <td>last <em>n</em> quarters</td>
-         <td><code>visitors <b>last 2 quarters</b> by month by campaign</code></td>
+         <td>next <em>n</em> weeks for each month</td>
+         <td><code>meetings <b>next 3 weeks for each month</b></code></td>
       </tr>
       <tr>
-         <td>last <em>n</em> weeks</td>
-         <td><code>visitors <b>last 10 weeks</b> by day</code></td>
+         <td>next <em>n</em> weeks for each quarter</td>
+          <td><code>meetings <b>next 2 weeks for each quarter</b></code></td>
       </tr>
       <tr>
-         <td>last quarter</td>
-         <td><code>customers <b>last quarter</b> sale > 300</code></td>
-      </tr>
-      <tr>
-         <td>last week</td>
-         <td><code>customers <b>last week</b> by store</code></td>
-      </tr>
-      <tr>
-         <td>last year</td>
-         <td><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
-      </tr>
-      <tr>
-         <td>last <em>n</em> years</td>
-         <td><code>visitors <b>last 5 years</b> by revenue for sum revenue > 5000</code></td>
+         <td>next <em>n</em> weeks for each year</td>
+          <td><code>meetings <b>next 3 weeks for each year</b></code></td>
       </tr>
       <tr>
          <td>month to date</td>
@@ -153,76 +145,20 @@
          <td><code>commission &gt; 10000 <b>monthly</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> months for each quarter</td>
-         <td><code>cost last <b>2 months for each quarter</b></code></td>
+         <td>last <em>n</em> months for each quarter</td>
+         <td><code>cost <b>last 2 months for each quarter</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> months for each year</td>
-         <td><code>last <b>8 months for each year</b></code></td>
+         <td>last <em>n</em> months for each year</td>
+         <td><code>cost <b>last 8 months for each year</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> days ago</td>
-         <td><code>sales <b>2 days ago</b></code></td>
+         <td>next <em>n</em> months for each quarter</td>
+         <td><code>projected cost <b>next 2 months for each quarter</b></code></td>
       </tr>
       <tr>
-         <td><em>n</em> months ago</td>
-         <td><code>sales <b>2 months ago</b> by region</code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> months</td>
-         <td><code>visitors last <b>6 months</b> for homepage visits &gt; 30 by month</code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> quarters ago</td>
-         <td><code>sales <b>4 quarters ago</b> by product name contains deluxe</code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> weeks ago</td>
-         <td><code>sales <b>4 weeks ago</b> by store</code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> years ago</td>
-         <td><code>sales <b>5 years ago</b> by store for region west</code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> years</td>
-         <td><code>opportunities next <b>5 years</b> by revenue</code></td>
-      </tr>
-      <tr>
-         <td>next day</td>
-         <td><code>shipments <b>next day</b> by order</code></td>
-      </tr>
-      <tr>
-         <td>next month</td>
-         <td><code>appointments <b>next month</b> by day</code></td>
-      </tr>
-      <tr>
-         <td>next <em>n</em> days</td>
-         <td><code>shipments <b>next 7 days</b></code></td>
-      </tr>
-      <tr>
-         <td>next <em>n</em> months</td>
-         <td><code>openings <b>next 6 months</b> location</code></td>
-      </tr>
-      <tr>
-         <td>next <em>n</em> quarters</td>
-         <td><code>opportunities <b>next 2 quarters</b> by campaign</code></td>
-      </tr>
-      <tr>
-         <td>next <em>n</em> weeks</td>
-         <td><code>shipments <b>next 10 weeks</b> by day</code></td>
-      </tr>
-      <tr>
-         <td>next quarter</td>
-         <td><code>opportunities <b>next quarter</b> amount &gt; 30000</code></td>
-      </tr>
-      <tr>
-         <td>next week</td>
-         <td><code>shipments <b>next week</b> by store</code></td>
-      </tr>
-      <tr>
-         <td>next year</td>
-         <td><code>opportunities <b>next year</b> by sales rep</code></td>
+         <td>next <em>n</em> months for each year</td>
+         <td><code>projected cost <b>next 8 months for each year</b></code></td>
       </tr>
       <tr>
          <td>quarter to date</td>
@@ -237,40 +173,12 @@
          <td><code>sales <b>quarterly</b> for each product</code></td>
       </tr>
       <tr>
-         <td><em>n</em> quarters for each year</td>
-         <td><code><b>last 2 quarters</b> for each year</code></td>
+         <td>last <em>n</em> quarters for each year</td>
+         <td><code>sales <b>last 2 quarters</b> for each year</code></td>
       </tr>
       <tr>
-         <td>today</td>
-         <td><code>sales <b>today</b> by store</code></td>
-      </tr>
-      <tr>
-         <td>week to date</td>
-         <td><code>sales by order date <b>week to date</b> for pro-ski200</code></td>
-      </tr>
-      <tr>
-         <td>week</td>
-         <td><code>revenue by <b>week</b> last quarter</code></td>
-      </tr>
-      <tr>
-         <td>weekly year-over-year</td>
-         <td><code>growth of revenue by date shipped <b>weekly year-over-year</b></code></td>
-      </tr>
-      <tr>
-         <td>weekly</td>
-         <td><code>revenue <b>weekly</b></code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> weeks for each month</td>
-         <td><code>sales last <b>3 weeks for each month</b></code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> weeks for each quarter</td>
-          <td><code>last <b>2 weeks for each quarter</b></code></td>
-      </tr>
-      <tr>
-         <td><em>n</em> weeks for each year</td>
-          <td><code>last <b>3 weeks for each year</b></code></td>
+         <td>next <em>n</em> quarters for each year</td>
+         <td><code>projected sales <b>next 2 quarters</b> for each year</code></td>
       </tr>
       <tr>
          <td>year to date</td>
@@ -283,6 +191,154 @@
       <tr>
          <td>yearly</td>
          <td><code>shipments by product <b>yearly</b></code></td>
+      </tr>
+      <tr>
+         <td>growth of … by … daily</td>
+         <td><code><b>growth of</b> sales <b>by</b> order date <b>daily</b></code></td>
+      </tr>
+      <tr>
+         <td>growth of … by … weekly</td>
+         <td><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for pro-ski2000</code></td>
+      </tr>
+      <tr>
+         <td>growth of … by … monthly</td>
+         <td><code><b>growth of</b> sales <b>by</b> date shipped <b>monthly</b> sales &gt; 24000</code></td>
+      </tr>
+      <tr>
+         <td>growth of … by … quarterly</td>
+         <td><code><b>growth of</b> sales <b>by</b> date shipped <b>quarterly</b></code></td>
+      </tr>
+      <tr>
+         <td>growth of … by … yearly</td>
+         <td><code><b>growth of</b> sales <b>by</b> date closed <b>yearly</b></code></td>
+      </tr>
+      <tr>
+         <td>growth of … by ...</td>
+         <td><code><b>growth of</b> sales <b>by</b> order date</code></td>
+      </tr>
+      <tr>
+         <td>last <em>n</em> hours for each day</td>
+         <td><code>sales <b>last 2 hours for each day</b></code></td>
+      </tr>
+      <tr>
+         <td>last <em>n</em> days</td>
+         <td><code>visitors <b>last 7 days</b></code></td>
+      </tr>
+      <tr>
+         <td>last <em>n</em> weeks</td>
+         <td><code>visitors <b>last 10 weeks</b> by day</code></td>
+      </tr>
+      <tr>
+         <td>last <em>n</em> months</td>
+         <td><code>visitors <b>last 10 months</b> by day</code></td>
+      </tr>
+      <tr>
+         <td>last <em>n</em> quarters</td>
+         <td><code>visitors <b>last 2 quarters</b> by month by campaign</code></td>
+      </tr>
+      <tr>
+         <td>last <em>n</em> years</td>
+         <td><code>visitors <b>last 5 years</b> by revenue for sum revenue > 5000</code></td>
+      </tr>
+      <tr>
+         <td>last week</td>
+         <td><code>customers <b>last week</b> by store</code></td>
+      </tr>
+      <tr>
+         <td>last month</td>
+         <td><code>customers <b>last month</b> by store</code></td>
+      </tr>
+      <tr>
+         <td>last quarter</td>
+         <td><code>customers <b>last quarter</b> sale > 300</code></td>
+      </tr>
+      <tr>
+         <td>last year</td>
+         <td><code>top 10 customers <b>last year</b> by sale by store for region west</code></td>
+      </tr>
+      <tr>
+         <td><em>n</em> days ago</td>
+         <td><code>sales <b>2 days ago</b></code></td>
+      </tr>
+      <tr>
+         <td><em>n</em> weeks ago</td>
+         <td><code>sales <b>4 weeks ago</b> by store</code></td>
+      </tr>
+      <tr>
+         <td><em>n</em> months ago</td>
+         <td><code>sales <b>2 months ago</b> by region</code></td>
+      </tr>
+      <tr>
+         <td><em>n</em> quarters ago</td>
+         <td><code>sales <b>4 quarters ago</b> by product name contains deluxe</code></td>
+      </tr>
+      <tr>
+         <td><em>n</em> years ago</td>
+         <td><code>sales <b>5 years ago</b> by store for region west</code></td>
+      </tr>
+      <tr>
+         <td>this day</td>
+         <td><code>shipments <b>this day</b> by order</code></td>
+      </tr>
+      <tr>
+         <td>this week</td>
+         <td><code>shipments <b>this week</b> by store</code></td>
+      </tr>
+      <tr>
+         <td>this  month</td>
+         <td><code>appointments <b>this month</b> by day</code></td>
+      </tr>
+      <tr>
+         <td>this quarter</td>
+         <td><code>opportunities <b>this quarter</b> amount &gt; 30000</code></td>
+      </tr>
+      <tr>
+         <td>this year</td>
+         <td><code>opportunities <b>this year</b> by sales rep</code></td>
+      </tr>
+      <tr>
+         <td>next <em>n</em> days</td>
+         <td><code>shipments <b>next 7 days</b></code></td>
+      </tr>
+      <tr>
+         <td>next <em>n</em> weeks</td>
+         <td><code>shipments <b>next 10 weeks</b> by day</code></td>
+      </tr>
+      <tr>
+         <td>next <em>n</em> months</td>
+         <td><code>openings <b>next 6 months</b> location</code></td>
+      </tr>
+      <tr>
+         <td>next <em>n</em> quarters</td>
+         <td><code>opportunities <b>next 2 quarters</b> by campaign</code></td>
+      </tr>
+      <tr>
+         <td>next <em>n</em> years</td>
+         <td><code>opportunities <b>next 5 years</b> by revenue</code></td>
+      </tr>
+      <tr>
+         <td>next day</td>
+         <td><code>shipments <b>next day</b> by order</code></td>
+      </tr>
+      <tr>
+         <td>next week</td>
+         <td><code>shipments <b>next week</b> by store</code></td>
+      </tr>
+      <tr>
+         <td>next month</td>
+         <td><code>appointments <b>next month</b> by day</code></td>
+      </tr>
+      <tr>
+         <td>next quarter</td>
+         <td><code>opportunities <b>next quarter</b> amount &gt; 30000</code></td>
+      </tr>
+      <tr>
+         <td>next year</td>
+         <td><code>opportunities <b>next year</b> by sales rep</code></td>
+      </tr>
+      <tr>
+         <td>today</td>
+         <td><code>sales <b>today</b> by store</code></td>
       </tr>
       <tr>
          <td>yesterday</td>
