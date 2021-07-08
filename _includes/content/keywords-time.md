@@ -46,6 +46,34 @@
          </td>
       </tr>
       <tr>
+         <td>next <i>n</i> minutes</td>
+         <td>
+            <code>count visitors <b>next 30 minutes</b>
+            </code>
+         </td>
+      </tr>
+      <tr>
+         <td>next <i>n</i> hours</td>
+         <td>
+            <code>count visitors <b>next 12 hours</b>
+            </code>
+         </td>
+      </tr>
+      <tr>
+         <td>this minute</td>
+         <td>
+            <code>count visitors <b>this minute</b>
+            </code>
+         </td>
+      </tr>
+      <tr>
+         <td>this hour</td>
+         <td>
+            <code>count visitors <b>this hour</b>
+            </code>
+         </td>
+      </tr>
+      <tr>
          <td><i>n</i> minutes ago</td>
          <td>
             <code>sum inventory by product <b>10 minutes ago</b>
