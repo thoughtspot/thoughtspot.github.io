@@ -22,8 +22,9 @@ requires more effort. Users have to navigate through larger numbers of columns
 to choose the correct one. There might also be some columns in the dataset that
 you don’t want to expose to the users.
 
-Change the **HIDDEN** (UI)/**Hide** (model file) setting to hide a column. By
-default, all columns in a data source appear in ThoughtSpot. To hide these
+When you hide a worksheet, table, or view column, you only hide it from users without *edit* privileges on the object. Administrators and users with edit privileges on the object can still see and interact with the hidden column. Users without edit privileges for the object cannot see or interact with the hidden column.
+
+To hide a column, change the **HIDDEN** (UI)/**Hide** (model file) setting. By default, all columns in a data source appear in ThoughtSpot. To hide these
 columns, set the **HIDDEN** setting to `YES`.
 
 1. Find the **HIDDEN** (UI)/**Hide** (model file) setting for a column.
