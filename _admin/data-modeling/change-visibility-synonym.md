@@ -24,7 +24,7 @@ you don’t want to expose to the users.
 
 When you hide a worksheet, table, or view column, you only hide it from users without *edit* privileges on the object. Administrators and users with edit privileges on the object can still see and interact with the hidden column. Users without edit privileges for the object cannot see or interact with the hidden column.
 
-Change the **HIDDEN** (UI)/**Hide** (model file) setting to hide a column. By
+To hide a column, change the **HIDDEN** (UI)/**Hide** (model file) setting. By
 default, all columns in a data source appear in ThoughtSpot. To hide these
 columns, set the **HIDDEN** setting to `YES`.
 
