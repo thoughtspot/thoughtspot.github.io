@@ -6,7 +6,7 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-<p>[embed label="Work with answers"]</p>
+<p>[embed label="work-with-answers"]</p>
 3. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Copy and edit**.
      ![]({{ site.baseurl }}/images/copy-and-edit.png "Make a copy of the answer")
    ThoughtSpot takes you to a copy of the answer, with "Copy of" added to the beginning of the title.
