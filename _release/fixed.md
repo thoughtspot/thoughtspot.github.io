@@ -13,6 +13,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <details>
 <summary>7.0.X Release</summary>
 <ul>
+<li><a href="#7-0-1">7.0.1 Fixed issues</a></li>
 <li><a href="#7-0">7.0 Fixed issues</a></li>
 </ul>
 </details></li>
@@ -110,6 +111,29 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </details>
 </li>
 </ul>
+
+<a id="7-0-1"></a>
+## 7.0.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 7.0.1.
+
+- Authentication is blocked after installing a patch.
+- Color picker is disabled after running a query, opening the chart configurator, and clicking a measure.
+- Measure-only optimization does not work in a fan trap query.
+- Querying using the TQL service APIs incorrectly generates results in scientific format.
+- Quarterly keyword does not work correctly for an Embrace connection.
+- OAuth with Snowflake in an Embrace connection does not work with AppleConnect.
+- Visualizations occasionally do not load after upgrade to 6.3.1.CU1
+- Some joins aren't visible in a worksheet, even though they are visible at the table level.
+- The list in the Manage experts window extends below the **Done** button, so that new users cannot be added.
+- Pivot table summaries are incorrect, totaling the sum of underlying data instead of queried data when using top/bottom keywords.
+- PDFs downloaded from a pinboard do not display all items shown in the UI.
+- Formulas that contain an aggregate median function do not work properly when an additional measure is used.
+- The color of the legend or column in a chart cannot be changed.
+- Maps downloaded using the Microsoft Edge browser display a white image.
+- Tables in an Embrace connection are not indexed.
+- Excluding a group in a group_aggregate formula of a Worksheet does not work.
+- Saving or editing a formula on certain worksheets does not work.
 
 <a id="7-0"></a>
 ## 7.0 Fixed issues
