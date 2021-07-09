@@ -35,7 +35,7 @@
   src:
     local("Optimo Thin"),
     local("Optimo-Thin"),
-    url(../fonts/Plain-Thin.otf) format("otf");
+    url(Plain-Thin.otf) format("otf");
 }
 
 h1 {
