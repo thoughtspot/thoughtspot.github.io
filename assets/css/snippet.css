@@ -8,6 +8,16 @@
     url(../../assets/fonts/Plain-Thin.otf) format("otf");
 }
 
+@font-face {
+  font-family: "Optimo-Plain";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Optimo Thin"),
+    local("Optimo-Thin"),
+    url(../assets/fonts/Plain-Thin.otf) format("otf");
+}
+
 h1 {
     font-size: 30px;
     color:  #black;
