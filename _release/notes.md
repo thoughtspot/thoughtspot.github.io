@@ -7,19 +7,48 @@ redirect_from:
 - /7.0.0.mar.sw/release/notes.html
 permalink: /:collection/:path.html
 ---
-ThoughtSpot version 7.0 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 7.0.1 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [7.0 New Features](#7-0-new)
+* [7.0.1 New Features](#7-0-1-new)
 * [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="7-0-1-new"}
+## 7.0.1 New Features and Functionality
+
+For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
+
+Here are the most significant new features and improvements in the 7.0.1 Software Release:
+
+* [For the Business User](#7-0-1-business-user)
+* [For the Data Engineer](#7-0-1-data-engineer)
+
+{: id="7-0-1-business-user"}
+### For the Business User
+
+<dlentry id="search-on-enter">
+<dt>Search on enter experience</dt>
+<dd>The default search experience is now <strong>Search on enter</strong>. This means that you can add new tokens to the search bar, or remove them, without altering your existing search, until you press <strong>Enter</strong> on your keyboard, or select <strong>Go</strong> to the right of the search bar. You may need to press <strong>Enter</strong> or <strong>Go</strong> to ensure that ThoughtSpot updates your search with any new items in the search bar.<br> <img src="{{"/images/search-on-enter.gif" | prepend: site.baseurl }}" alt="Search on enter gif" title="Search on enter gif" /></dd>
+</dlentry>
+
+{: id="7-0-1-data-engineer"}
+### For the Data Engineer
+
+<dl>
+<dlentry id="embrace">
+<dt>Embrace</dt>
+<dd>Embrace now supports Databricks <span class="label label-beta">Beta</span>. Because this feature is in beta, it is disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
+</dd>
+</dlentry>
+</dl>
 
 {: id="7-0-new"}
 ## 7.0 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-Here are the most significant new features and improvements in the 7.0 Software Release:
+Here are the most significant new features and improvements in the 7.0.0 Software Release:
 
 * [For the Analyst](#7-0-analyst)
 * [For the Business User](#7-0-business-user)
@@ -30,6 +59,9 @@ Here are the most significant new features and improvements in the 7.0 Software 
 ### For the Analyst
 
 <dl>
+<dlentry id="search-assist-coach">
+  <dt>Search Assist Coach</dt>
+  <dd><a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries based on their company's data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
 
 <dlentry id="scriptability">
   <dt>Scriptability enhancements</dt>
@@ -56,6 +88,10 @@ Here are the most significant new features and improvements in the 7.0 Software 
 ### For the Business User
 
 <dl>
+<dlentry id="search-assist">
+  <dt>Search Assist</dt>
+<dd><a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> introduces new users to ThoughtSpot's Search experience by walking them through simple search scenarios on your company's data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar. Worksheet owners can use <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> to create these sample search queries on your company's data.</dd>
+</dlentry>
 
 <dlentry id="geomaps">
 <dt>Geomap support</dt>
@@ -181,12 +217,12 @@ We like to have a diversity of experience and perspective, and want to hear from
 If you are running one of the following versions, you can upgrade to the 7.0 release
 directly:
 
-* 6.2.x to 7.0
-* 6.3.x to 7.0
+* 6.2.x to 7.0.1
+* 6.3.x to 7.0.1
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 6.2.x, or 6.3.x and then to the 7.0 release.
+First, upgrade to version 6.2.x, or 6.3.x and then to the 7.0.1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}

@@ -38,6 +38,7 @@ entries:
     - title: Downloads
       url: /release/downloads.html
       output: web,rnotes
+
 #    - title: PDF Guides
 #      url: /release/pdfs.html
 #      output: web
@@ -356,6 +357,9 @@ entries:
         - title: Edit a pinboard
           url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
           output: web,ugBk
+        - title: Delete a visualization
+          url: /end-user/pinboards/delete-a-visualization.html
+          output: web,ugBk
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
           output: web,ugBk
@@ -413,6 +417,9 @@ entries:
         - title: Best practices
           url: /spotiq/special-topics.html
           output: web,ugBk
+        - title: Monitor Headlines
+          url: /spotiq/monitor-headlines.html
+          output: web,ugBk
         - title: Comparative Analysis
           url: /spotiq/comparative-analysis.html
           output: web,ugBk
@@ -467,6 +474,18 @@ entries:
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
+    - levelTwoTitle: Use SearchIQ
+      output: web,ugBk
+      levelTwoItems:
+        - title: About SearchIQ
+          url: /end-user/search/about-searchiq.html
+          output: web,ugBk
+        - title: Use SearchIQ for natural searches
+          url: /end-user/search/use-searchiq.html
+          output: web,ugBk
+        - title: Teach SearchIQ your language
+          url: /end-user/search/teach-searchiq.html
+          output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
@@ -970,6 +989,33 @@ entries:
         output: web,admBk
       - title: SpotApps
         url: /admin/scriptability/app-templates.html
+        output: web,admBk
+    - levelTwoTitle: Set up SearchIQ
+      output: web,admBk
+      levelTwoItems:
+      - title: Enable SearchIQ
+        url: /admin/setup/enable-searchiq.html
+        output: web,admBk
+      - title: Optimize SearchIQ
+        url: /end-user/search/searchiq-optimize.html
+        output: web,admBk
+      - levelThreeTitle: Search IQ Optimization Steps
+        output: web,admBk
+        levelThreeItems:
+        - title: Enabling Columns in SearchIQ
+          url: /end-user/search/searchiq-optimize-columns.html
+          output: web,admBk
+        - title: Add Experts for SearchIQ
+          url: /end-user/search/searchiq-optimize-experts.html
+          output: web,admBk
+        - title: Train SearchIQ
+          url: /end-user/search/searchiq-optimize-train.html
+          output: web,admBk
+      - title: Set entity categories for SearchIQ
+        url: /admin/data-modeling/set-entity-category.html
+        output: web,admBk
+      - title: Change SearchIQ mappings
+        url: /admin/data-modeling/searchiq-mappings.html
         output: web,admBk
     - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
@@ -1515,31 +1561,31 @@ entries:
       - title: Packages installed with Amazon Linux 2
         url: /appliance/amazon-linux-2/al2-packages.html
         output: web,appQs
-    - levelTwoTitle: RHEL and OEL Support
+    - levelTwoTitle: RHEL Support
       output: web,appQs
       levelTwoItems:
-      - title: RHEL and OEL overview
+      - title: RHEL overview
         url: /appliance/rhel/rhel.html
         output: web,appQs
-      - title: RHEL and OEL prerequisites
+      - title: RHEL prerequisites
         url: /appliance/rhel/rhel-prerequisites.html
         output: web,appQs
-      - title: ThoughtSpot deployment artifacts for RHEL and OEL
+      - title: ThoughtSpot deployment artifacts for RHEL
         url: /appliance/rhel/rhel-ts-artifacts.html
         output: web,appQs
-      - title: Online RHEL and OEL install
+      - title: Online RHEL install
         url: /appliance/rhel/rhel-install-online.html
         output: web,appQs
-      - title: Offline RHEL and OEL install
+      - title: Offline RHEL install
         url: /appliance/rhel/rhel-install-offline.html
         output: web,appQs
-      - title: RHEL and OEL upgrade
+      - title: RHEL upgrade
         url: /appliance/rhel/rhel-upgrade.html
         output: web,appQs
-      - title: Adding new nodes to clusters in RHEL or OEL
+      - title: Adding new nodes to clusters in RHEL
         url: /appliance/rhel/rhel-add-node.html
         output: web,appQs
-      - title: Packages installed with RHEL and OEL
+      - title: Packages installed with RHEL
         url: /appliance/rhel/rhel-packages.html
         output: web,appQs
     - levelTwoTitle: Hardware appliance
@@ -1713,7 +1759,7 @@ entries:
       - title: Modify a connection
         url: /data-integrate/embrace/embrace-snowflake-modify.html
         output: web,embraceGd
-      - title: Configure OAuth
+      - title: Config OAuth
         url: /data-integrate/embrace/embrace-snowflake-oauth.html
         output: web,embraceGd
       - title: Best practices
@@ -1721,9 +1767,6 @@ entries:
         output: web,embraceGd
       - title: Reference
         url: /data-integrate/embrace/embrace-snowflake-reference.html
-        output: web,embraceGd
-      - title: Passthrough functions
-        url: /data-integrate/embrace/embrace-snowflake-passthrough.html
         output: web,embraceGd
       - levelThreeTitle: Snowflake Partner Connect
         output: web,embraceGd
@@ -1834,9 +1877,6 @@ entries:
     - title: Requirements and guidelines
       url: /data-integrate/dataflow/dataflow-requirements-guidelines.html
       output: web,dataflowGD
-    - title: Tips
-      url: /data-integrate/dataflow/dataflow-tips.html
-      output: web,dataflowGD
     - levelTwoTitle: Database Connections
       output: web,dataflowGD
       levelTwoItems:
@@ -1918,9 +1958,6 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html
           output: web,dataflowGd
-        - title: Utilities
-          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html
-          output: web,dataflowGd
       - levelThreeTitle: Denodo
         output: web,dataflowGD
         levelThreeItems:
@@ -1936,21 +1973,6 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-denodo-reference.html
           output: web,dataflowGd
-      - levelThreeTitle: Exadata
-        output: web,dataflowGD
-        levelThreeItems:
-        - title: Overview
-          url: /data-integrate/dataflow/dataflow-exadata.html
-          output: web,dataflowGd
-        - title: Connect
-          url: /data-integrate/dataflow/dataflow-exadata-add.html
-          output: web,dataflowGd
-        - title: Sync
-          url: /data-integrate/dataflow/dataflow-exadata-sync.html
-          output: web,dataflowGd
-        - title: Reference
-          url: /data-integrate/dataflow/dataflow-exadata-reference.html
-          output: web,dataflowGd
       - levelThreeTitle: Google BigQuery
         output: web,dataflowGD
         levelThreeItems:
@@ -1965,24 +1987,6 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-google-bigquery-reference.html
-          output: web,dataflowGd
-      - levelThreeTitle: Greenplum
-        output: web,dataflowGD
-        levelThreeItems:
-        - title: Overview
-          url: /data-integrate/dataflow/dataflow-greenplum.html
-          output: web,dataflowGd
-        - title: Connect
-          url: /data-integrate/dataflow/dataflow-greenplum-add.html
-          output: web,dataflowGd
-        - title: Sync
-          url: /data-integrate/dataflow/dataflow-greenplum-sync.html
-          output: web,dataflowGd
-        - title: Reference
-          url: /data-integrate/dataflow/dataflow-greenplum-reference.html
-          output: web,dataflowGd
-        - title: Utilities
-          url: /data-integrate/dataflow/dataflow-greenplum-utilities.html
           output: web,dataflowGd
       - levelThreeTitle: Hive
         output: web,dataflowGD
@@ -2014,9 +2018,6 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-ibm-db2-reference.html
           output: web,dataflowGd
-        - title: Utilities
-          url: /data-integrate/dataflow/dataflow-ibm-db2-utilities.html
-          output: web,dataflowGd
       - levelThreeTitle: JDBC
         output: web,dataflowGD
         levelThreeItems:
@@ -2046,21 +2047,6 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-mariadb-reference.html
-          output: web,dataflowGd
-      - levelThreeTitle: MemSQL
-        output: web,dataflowGD
-        levelThreeItems:
-        - title: Overview
-          url: /data-integrate/dataflow/dataflow-memsql.html
-          output: web,dataflowGd
-        - title: Connect
-          url: /data-integrate/dataflow/dataflow-memsql-add.html
-          output: web,dataflowGd
-        - title: Sync
-          url: /data-integrate/dataflow/dataflow-memsql-sync.html
-          output: web,dataflowGd
-        - title: Reference
-          url: /data-integrate/dataflow/dataflow-memsql-reference.html
           output: web,dataflowGd
       - levelThreeTitle: MongoDB
         output: web,dataflowGD
@@ -2122,9 +2108,6 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-oracle-reference.html
           output: web,dataflowGd
-        - title: Utilities
-          url: /data-integrate/dataflow/dataflow-oracle-utilities.html
-          output: web,dataflowGd
       - levelThreeTitle: PostgreSQL
         output: web,dataflowGD
         levelThreeItems:
@@ -2139,9 +2122,6 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-postgresql-reference.html
-          output: web,dataflowGd
-        - title: Utilities
-          url: /data-integrate/dataflow/dataflow-postgresql-utilities.html
           output: web,dataflowGd
       - levelThreeTitle: Presto
         output: web,dataflowGD
@@ -2233,9 +2213,6 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-sql-server-reference.html
           output: web,dataflowGd
-        - title: Utilities
-          url: /data-integrate/dataflow/dataflow-sql-server-utilities.html
-          output: web,dataflowGd
       - levelThreeTitle: Snowflake
         output: web,dataflowGD
         levelThreeItems:
@@ -2280,9 +2257,6 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-teradata-reference.html
-          output: web,dataflowGd
-        - title: Utilities
-          url: /data-integrate/dataflow/dataflow-teradata-utilities.html
           output: web,dataflowGd
     - levelTwoTitle: File System Connections
       output: web,dataflowGD
@@ -2380,21 +2354,6 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-hdfs-reference.html
           output: web,dataflowGd
-      - levelThreeTitle: Splunk
-        output: web,dataflowGD
-        levelThreeItems:
-        - title: Overview
-          url: /data-integrate/dataflow/dataflow-splunk.html
-          output: web,dataflowGd
-        - title: Connect
-          url: /data-integrate/dataflow/dataflow-splunk-add.html
-          output: web,dataflowGd
-        - title: Sync
-          url: /data-integrate/dataflow/dataflow-splunk-sync.html
-          output: web,dataflowGd
-        - title: Reference
-          url: /data-integrate/dataflow/dataflow-splunk-reference.html
-          output: web,dataflowGd
     - levelTwoTitle: Application Connections
       output: web,dataflowGD
       levelTwoItems:
@@ -2442,9 +2401,6 @@ entries:
         output: web,dataflowGD
       - title: DataFlow mail setup
         url: /data-integrate/dataflow/dataflow-mail-setup.html
-        output: web,dataflowGD
-      - title: DataFlow server configuration
-        url: /data-integrate/dataflow/dataflow-configuration-options.html
         output: web,dataflowGD
   - sectiontitle: Data Integration
     output: web,pdf
@@ -2590,6 +2546,9 @@ entries:
     - title: User action codes reference
       url: /reference/action-codes.html
       output: web,refGd
+    - title: Stop word reference
+      url: /reference/stop-words.html
+      output: web,refGd
     - title: Geo map reference
       url: /reference/geomap-reference.html
       output: web,refGd
@@ -2632,9 +2591,6 @@ entries:
       output: web,practGd
     - title: Reaggregation in practice
       url: /reference/practice/reaggregation-scenarios.html
-      output: web,practGd
-    - title: Add a hyperlink to a Search
-      url: /reference/practice/hyperlink.html
       output: web,practGd
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html

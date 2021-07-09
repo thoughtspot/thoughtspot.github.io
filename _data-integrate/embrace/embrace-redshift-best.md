@@ -1,6 +1,6 @@
 ---
 title: [Best practices for Embrace with Redshift]
-last_updated: 05/26/2020
+last_updated: 7/7/2021
 summary: "You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,7 +8,6 @@ permalink: /:collection/:path.html
 ## Configuring your ThoughtSpot server
 
 We recommend configuring the following settings when creating Embrace connections:
-- Turn on ‘Search on Enter’ to reduce the number of queries run against Redshift.
 - Turn off ‘Auto Indexing’, and manually set the Index Type on columns that would be helpful when searching.
 
 Contact ThoughtSpot support to do this configuration.
