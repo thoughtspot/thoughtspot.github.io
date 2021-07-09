@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Software
-  docversion: 6.3
-#  version: 6.3
+  docversion: 7.0
+#  version: 7.0
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
