@@ -18,6 +18,12 @@
          </td>
       </tr>
       <tr>
+         <td>hourly</td>
+         <td>
+            <code>visitors by page name <b>hourly</b></code>
+         </td>
+      </tr>
+      <tr>
          <td>last minute</td>
          <td>
             <code>count homepage views <b>last minute</b>
