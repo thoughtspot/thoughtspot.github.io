@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/appliance/hardware/configure-nodes-smc.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-06-10T22:45:11-07:00" />
+<meta property="article:published_time" content="2021-07-08T23:50:34-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Configure ThoughtSpot Nodes on the SMC Appliance”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"After you connect the appliance, configure the nodes in your Mac or Windows terminal emulator. Follow the steps in this checklist.","headline":"[“Configure ThoughtSpot Nodes on the SMC Appliance”]","dateModified":"2021-06-10T22:45:11-07:00","datePublished":"2021-06-10T22:45:11-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/appliance/hardware/configure-nodes-smc.html"},"url":"https://docs.thoughtspot.com/6.1/appliance/hardware/configure-nodes-smc.html","@context":"https://schema.org"}</script>
+{"description":"After you connect the appliance, configure the nodes in your Mac or Windows terminal emulator. Follow the steps in this checklist.","headline":"[“Configure ThoughtSpot Nodes on the SMC Appliance”]","dateModified":"2021-07-08T23:50:34-07:00","datePublished":"2021-07-08T23:50:34-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/appliance/hardware/configure-nodes-smc.html"},"url":"https://docs.thoughtspot.com/6.1/appliance/hardware/configure-nodes-smc.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3896,11 +3896,14 @@ Replace <code class="language-plaintext highlighter-rouge">nodeIP</code> with yo
 </code></pre></div>    </div>
     <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file.</div>
   </li>
-  <li>Fill in the areas specified in <a href="/6.1/appliance/hardware/parameters-nodesconfig.html">Parameters of the nodes.config file</a> with your specific network information.<br />
-If you have additional nodes, complete each node within the nodes.config file in the same way.</li>
-</ol>
+  <li>
+    <p>Fill in the areas specified in <a href="/6.1/appliance/hardware/parameters-nodesconfig.html">Parameters of the nodes.config file</a> with your specific network information.<br />
+If you have additional nodes, complete each node within the nodes.config file in the same way.</p>
 
-<p>Edit only the parts of the nodes.config file that are explicitly discussed in <a href="/6.1/appliance/hardware/parameters-nodesconfig.html">Parameters of <code class="language-plaintext highlighter-rouge">nodes.config</code></a>. If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.</p>
+    <p>Edit only the parts of the nodes.config file that are explicitly discussed in <a href="/6.1/appliance/hardware/parameters-nodesconfig.html">Parameters of <code class="language-plaintext highlighter-rouge">nodes.config</code></a>. If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.</p>
+  </li>
+  <li>Update the file <code class="language-plaintext highlighter-rouge">/etc/hosts</code> with all the node IP addresses and hostnames for the other VMs that will be part of the ThoughtSpot cluster.</li>
+</ol>
 
 <h2 id="node-step-5">Step 5: Configure the nodes</h2>
 <p>Configure the nodes in the <code class="language-plaintext highlighter-rouge">nodes.config</code> file using the <code class="language-plaintext highlighter-rouge">set-config</code> command.</p>
@@ -3990,7 +3993,7 @@ Your output may look similar to the following:</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 10, 2021 <br />
+        Generated: Jul 8, 2021 <br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> 1/31/2020<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>

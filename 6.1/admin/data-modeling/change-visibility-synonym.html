@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.1/admin/data-modeling/change-visibility-synonym.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-06-10T22:45:11-07:00" />
+<meta property="article:published_time" content="2021-07-08T23:50:34-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Hide a column or define a synonym”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"You can hide columns from users in ThoughtSpot without dropping them from the database. It is common to hide a column when its data contains identifier columns that are used to join tables, but which do not have any meaning to users.","headline":"[“Hide a column or define a synonym”]","dateModified":"2021-06-10T22:45:11-07:00","datePublished":"2021-06-10T22:45:11-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/admin/data-modeling/change-visibility-synonym.html"},"url":"https://docs.thoughtspot.com/6.1/admin/data-modeling/change-visibility-synonym.html","@context":"https://schema.org"}</script>
+{"description":"You can hide columns from users in ThoughtSpot without dropping them from the database. It is common to hide a column when its data contains identifier columns that are used to join tables, but which do not have any meaning to users.","headline":"[“Hide a column or define a synonym”]","dateModified":"2021-07-08T23:50:34-07:00","datePublished":"2021-07-08T23:50:34-07:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.1/admin/data-modeling/change-visibility-synonym.html"},"url":"https://docs.thoughtspot.com/6.1/admin/data-modeling/change-visibility-synonym.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3828,7 +3828,9 @@ requires more effort. Users have to navigate through larger numbers of columns
 to choose the correct one. There might also be some columns in the dataset that
 you don’t want to expose to the users.</p>
 
-<p>Change the <strong>HIDDEN</strong> (UI)/<strong>Hide</strong> (model file) setting to hide a column. By
+<p>When you hide a worksheet, table, or view column, you only hide it from users without <em>edit</em> privileges on the object. Administrators and users with edit privileges on the object can still see and interact with the hidden column. Users without edit privileges for the object cannot see or interact with the hidden column.</p>
+
+<p>To hide a column, change the <strong>HIDDEN</strong> (UI)/<strong>Hide</strong> (model file) setting. By
 default, all columns in a data source appear in ThoughtSpot. To hide these
 columns, set the <strong>HIDDEN</strong> setting to <code class="language-plaintext highlighter-rouge">YES</code>.</p>
 
@@ -3903,7 +3905,7 @@ you are using the Web interface, you would type:</p>
    <div class="row">
       <div class="col-lg-12 footer"><b>Was this page helpful? <a href="mailto:Doc-Feedback@thoughtspot.com?subject=Documentation Feedback">Give us feedback!</b></a></style></div>
       <div class="col-lg-12 footer">
-        Generated: Jun 10, 2021 <br />
+        Generated: Jul 8, 2021 <br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. <br />
          <!-- <span>Page last updated:</span> tbd<br/>  -->
          <p><img style="width:100px;" src="https://docs.thoughtspot.com/6.1/images/company_logo.png" alt="Company logo"/></p>
