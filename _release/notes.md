@@ -21,12 +21,24 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 Here are the most significant new features and improvements in the 7.0.1 Software Release:
 
+* [For the Analyst](#7-0-1-analyst)
 * [For the Business User](#7-0-1-business-user)
 * [For the Data Engineer](#7-0-1-data-engineer)
+
+{: id="7-0-1-analyst"}
+### For the Analyst
+
+<dlentry id=“search-assist-coach”>
+ <dt>Search Assist Coach</dt>
+ <dd><a href=“{{ site.baseurl }}/admin/worksheets/search-assist-coach.html”>Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href=“{{ site.baseurl }}/end-user/onboarding/search-assist.html”>Search Assist</a> sample queries based on their company’s data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
 
 {: id="7-0-1-business-user"}
 ### For the Business User
 
+<dlentry id=“search-assist”>
+ <dt>Search Assist</dt>
+<dd><a href=“{{ site.baseurl }}/end-user/onboarding/search-assist.html”>Search Assist</a> introduces new users to ThoughtSpot’s Search experience by walking them through simple search scenarios on your company’s data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar. Worksheet owners can use <a href=“{{ site.baseurl }}/admin/worksheets/search-assist-coach.html”>Search Assist Coach</a> to create these sample search queries on your company’s data.</dd>
+</dlentry>
 <dlentry id="search-on-enter">
 <dt>Search on enter experience</dt>
 <dd>The default search experience is now <strong>Search on enter</strong>. This means that you can add new tokens to the search bar, or remove them, without altering your existing search, until you press <strong>Enter</strong> on your keyboard, or select <strong>Go</strong> to the right of the search bar. You may need to press <strong>Enter</strong> or <strong>Go</strong> to ensure that ThoughtSpot updates your search with any new items in the search bar.<br> <img src="{{"/images/search-on-enter.gif" | prepend: site.baseurl }}" alt="Search on enter gif" title="Search on enter gif" /></dd>
