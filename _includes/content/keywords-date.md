@@ -23,18 +23,8 @@
          <td><code>order date <b>between</b> 01/30/2012 and 01/30/2014</code></td>
       </tr>
       <tr>
-         <td>hourly</td>
-         <td>
-            <code>visitors by page name <b>hourly</b></code>
-         </td>
-      </tr>
-      <tr>
          <td>daily</td>
          <td><code>shipments by region <b>daily</b></code></td>
-      </tr>
-      <tr>
-         <td>daily year-over-year</td>
-         <td><code>growth of revenue by order date <b>daily year-over-year</b></code></td>
       </tr>
       <tr>
          <td><em>day</em></td>
@@ -47,6 +37,62 @@
       <tr>
          <td><em>day of week</em></td>
          <td><code>count shipments <b>Monday</b></code></td>
+      </tr>
+      <tr>
+         <td>week</td>
+         <td><code>revenue by <b>week</b> last quarter</code></td>
+      </tr>
+      <tr>
+         <td>weekly</td>
+         <td><code>revenue <b>weekly</b></code></td>
+      </tr>
+      <tr>
+         <td><em>month year</em></td>
+         <td><code>commission by sales rep <b>February 2014</b></code></td>
+      </tr>
+      <tr>
+         <td><em>month</em></td>
+         <td><code>commission <b>January</b></code></td>
+      </tr>
+      <tr>
+         <td>month</td>
+         <td><code>revenue by <b>month</b> last year</code></td>
+      </tr>
+      <tr>
+         <td>monthly</td>
+         <td><code>commission &gt; 10000 <b>monthly</b></code></td>
+      </tr>
+      <tr>
+         <td>quarterly</td>
+         <td><code>sales <b>quarterly</b> for each product</code></td>
+      </tr>
+      <tr>
+         <td><em>year</em></td>
+         <td><code>revenue by product <b>2014</b> product name contains snowboard</code></td>
+      </tr>
+      <tr>
+         <td>yearly</td>
+         <td><code>shipments by product <b>yearly</b></code></td>
+      </tr>
+      <tr>
+         <td>week to date</td>
+         <td><code>sales by order date <b>week to date</b> for pro-ski200</code></td>
+      </tr>
+      <tr>
+         <td>month to date</td>
+         <td><code>sales by product <b>month to date</b> sales &gt; 2400</code></td>
+      </tr>
+      <tr>
+         <td>quarter to date</td>
+         <td><code>sales by product <b>quarter to date</b> for top 10 products by sales</code></td>
+      </tr>
+      <tr>
+         <td>year to date</td>
+         <td><code>sales by product <b>year to date</b></code></td>
+      </tr>
+      <tr>
+         <td>last <em>n</em> hours for each day</td>
+         <td><code>sales <b>last 2 hours for each day</b></code></td>
       </tr>
       <tr>
          <td>last <em>n</em> days for each week</td>
@@ -81,22 +127,6 @@
          <td><code>opportunities <b>next 300 days for each year</b></code></td>
       </tr>
       <tr>
-         <td>week to date</td>
-         <td><code>sales by order date <b>week to date</b> for pro-ski200</code></td>
-      </tr>
-      <tr>
-         <td>week</td>
-         <td><code>revenue by <b>week</b> last quarter</code></td>
-      </tr>
-      <tr>
-         <td>weekly year-over-year</td>
-         <td><code>growth of revenue by date shipped <b>weekly year-over-year</b></code></td>
-      </tr>
-      <tr>
-         <td>weekly</td>
-         <td><code>revenue <b>weekly</b></code></td>
-      </tr>
-      <tr>
          <td>last <em>n</em> weeks for each month</td>
          <td><code>sales <b>last 3 weeks for each month</b></code></td>
       </tr>
@@ -121,30 +151,6 @@
           <td><code>meetings <b>next 3 weeks for each year</b></code></td>
       </tr>
       <tr>
-         <td>month to date</td>
-         <td><code>sales by product <b>month to date</b> sales &gt; 2400</code></td>
-      </tr>
-      <tr>
-         <td><em>month year</em></td>
-         <td><code>commission by sales rep <b>February 2014</b></code></td>
-      </tr>
-      <tr>
-         <td><em>month</em></td>
-         <td><code>commission <b>January</b></code></td>
-      </tr>
-      <tr>
-         <td>month</td>
-         <td><code>revenue by <b>month</b> last year</code></td>
-      </tr>
-      <tr>
-         <td>monthly year-over-year</td>
-         <td><code>growth of revenue by receipt date <b>monthly year-over-year</b></code></td>
-      </tr>
-      <tr>
-         <td>monthly</td>
-         <td><code>commission &gt; 10000 <b>monthly</b></code></td>
-      </tr>
-      <tr>
          <td>last <em>n</em> months for each quarter</td>
          <td><code>cost <b>last 2 months for each quarter</b></code></td>
       </tr>
@@ -161,18 +167,6 @@
          <td><code>projected cost <b>next 8 months for each year</b></code></td>
       </tr>
       <tr>
-         <td>quarter to date</td>
-         <td><code>sales by product <b>quarter to date</b> for top 10 products by sales</code></td>
-      </tr>
-      <tr>
-         <td>quarterly year-over-year</td>
-         <td><code>growth of revenue by date shipped <b>quarterly year-over-year</b></code></td>
-      </tr>
-      <tr>
-         <td>quarterly</td>
-         <td><code>sales <b>quarterly</b> for each product</code></td>
-      </tr>
-      <tr>
          <td>last <em>n</em> quarters for each year</td>
          <td><code>sales <b>last 2 quarters</b> for each year</code></td>
       </tr>
@@ -181,16 +175,20 @@
          <td><code>projected sales <b>next 2 quarters</b> for each year</code></td>
       </tr>
       <tr>
-         <td>year to date</td>
-         <td><code>sales by product <b>year to date</b></code></td>
+         <td>daily year-over-year</td>
+         <td><code>growth of revenue by order date <b>daily year-over-year</b></code></td>
       </tr>
       <tr>
-         <td><em>year</em></td>
-         <td><code>revenue by product <b>2014</b> product name contains snowboard</code></td>
+         <td>weekly year-over-year</td>
+         <td><code>growth of revenue by date shipped <b>weekly year-over-year</b></code></td>
       </tr>
       <tr>
-         <td>yearly</td>
-         <td><code>shipments by product <b>yearly</b></code></td>
+         <td>monthly year-over-year</td>
+         <td><code>growth of revenue by receipt date <b>monthly year-over-year</b></code></td>
+      </tr>
+      <tr>
+         <td>quarterly year-over-year</td>
+         <td><code>growth of revenue by date shipped <b>quarterly year-over-year</b></code></td>
       </tr>
       <tr>
          <td>growth of … by … daily</td>
@@ -215,10 +213,6 @@
       <tr>
          <td>growth of … by ...</td>
          <td><code><b>growth of</b> sales <b>by</b> order date</code></td>
-      </tr>
-      <tr>
-         <td>last <em>n</em> hours for each day</td>
-         <td><code>sales <b>last 2 hours for each day</b></code></td>
       </tr>
       <tr>
          <td>last <em>n</em> days</td>
