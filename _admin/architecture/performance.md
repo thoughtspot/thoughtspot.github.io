@@ -17,7 +17,7 @@ To reduce the total amount of data and rows of data, we recommend the following 
 <p>[embed label="for administrators"]</p>
 ## Data Boundaries
 
-Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. 
+Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join.
 
 Contact ThoughtSpot support for guidance on boundaries for the following:
 - Maximum number of rows that can be downloaded
@@ -26,6 +26,18 @@ Contact ThoughtSpot support for guidance on boundaries for the following:
 - Many-to-Many (Generic join cardinality)
 - Load frequency
 <p>[/embed]</p>
+
+<p>[embed label="work with answers"]</p>
+3. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Copy and edit**.
+     ![]({{ site.baseurl }}/images/copy-and-edit.png "Make a copy of the answer")
+   ThoughtSpot takes you to a copy of the answer, with "Copy of" added to the beginning of the title.
+4. Make any changes you want to the answer.
+5. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Save**.
+   The Save Answer dialog box appears.
+     ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
+6. Change the name and description, as needed, and click **Save**.
+<p>[/embed]</p>
+
 ## Worksheet Boundaries
 
 Worksheets must have less than 1000 columns. For aggregated worksheets, follow these guidelines:
