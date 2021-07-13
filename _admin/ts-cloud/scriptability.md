@@ -1,6 +1,6 @@
 ---
 title: [Scriptability]
-last_updated: 1/13/2021
+last_updated: 7/1/2021
 summary: "Use Scriptability to export and import Worksheets, Views, tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -89,7 +89,7 @@ You can edit the `TML` file in one of two ways. You can [export](#export-object)
 
 {: id="tml-editor"}
 ## Edit, validate, and publish objects using the TML editor
-You can access the TML editor from the object list page<!--, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page-->.
+You can access the TML editor from the object list page<!--, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page-->. It also appears when there is an error when you import TML objects, if you click **Edit**.
 
 To use the TML editor, follow these steps:
 
@@ -156,9 +156,17 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 8. The **Import** interface recognizes that an object with this GUID already exists in the system, and asks if you would like to create a new object, or update the existing one. Select **Update existing [object]**.
 
-10. Click **Import selected files**.
+9. If there are errors in any of the objects you are importing, the **Status** column says **Cannot import** for that object. Next to **Cannot import**, you can **View Errors** to see the errors, and a suggested resolution.
 
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
+10. Resolve any errors by selecting the **Edit** button for the object with errors. This opens the [TML editor](#tml-editor). Within the editor, resolve the errors using the method suggested under **View Errors** in the Import workflow.
+
+11. After you resolve the errors, click **Validate**, and then **Save**. Exit the TML editor.
+
+10. Select the objects you want to import. ThoughtSpot automatically selects objects with no errors, but does not select objects with errors, even after you resolve them. You must select the objects yourself.
+
+10. Click **Import selected**.
+
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit to SpotApps** to return to the main object page.
 
 {: id="migrate-object"}
 ## Migrate an object
@@ -186,15 +194,19 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
 
-9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload. Here, we only want to import **Brand Revenue** and **Average Revenue by Part**, not **Basic Answer 1**.
+9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload.
 
-10. Click **Import selected files**.
+9. If there are errors in any of the objects you are importing, the **Status** column says **Cannot import** for that object. Next to **Cannot import**, you can **View Errors** to see the errors, and a suggested resolution.
 
-    ![Import selected file]({{ site.baseurl }}/images/scriptability-migrate-import-selected.png "Import selected files")
+10. Resolve any errors by selecting the **Edit** button for the object with errors. This opens the [TML editor](#tml-editor). Within the editor, resolve the errors using the method suggested under **View Errors** in the Import workflow.
 
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
+11. After you resolve the errors, click **Validate**, and then **Save**. Exit the TML editor.
 
-    ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
+10. Select the objects you want to import. ThoughtSpot automatically selects objects with no errors, but does not select objects with errors, even after you resolve them. You must select the objects yourself.
+
+10. Click **Import selected**.
+
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit to SpotApps** to return to the main object page.
 
 ## Limitations of working with TML files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.
