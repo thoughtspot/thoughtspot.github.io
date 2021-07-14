@@ -39,6 +39,8 @@ home page you can see a search bar, and several areas that show activity in Thou
 The items on this page are limited to Answers, Pinboards, Worksheets,
 and other objects that you have permission to access.
 
+![Software home page]({{ site.baseurl }}/images/software-home-page.png "Software home page")
+
 {: id="search"}
 ## Search
 
