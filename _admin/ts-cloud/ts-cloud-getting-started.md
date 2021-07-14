@@ -20,7 +20,7 @@ Before you start, review these talks to identify your ideal use case. The contex
 <a href="https://youtu.be/W5dwAmLSwT0"  target="_blank">ThoughtSpot Success Series: Use Case Prioritization</a>
 </div>
 
-We highly recommend that you register for the free ThoughtSpot U course that covers the material in this section, [Getting Started with ThoughtSpot Analytics Cloud](https://training.thoughtspot.com/getting-started-with-thoughtspot-cloud).
+We highly recommend that you register for the free ThoughtSpot U course that covers the material in this section, [Getting Started with ThoughtSpot Analytics Cloud](https://training.thoughtspot.com/getting-started-with-thoughtspot-cloud){: target="_blank"}.
 
 We also provide these instructions in <a href="{{ site.baseurl }}/downloads/ts-cloud-get-started.pdf" download>PDF format</a>.
 
@@ -97,7 +97,7 @@ ThoughtSpot administrators have built-in pinboards to monitor adoption and usage
 ## Keep learning
 
 - [ThoughtSpot Cloud documentation](https://cloud-docs.thoughtspot.com){:target="_blank"}
-- [Training: Getting started with ThoughtSpot Cloud](https://training.thoughtspot.com/page/getting-started-with-thoughtspot-cloud){:target="_blank"}
+- [Training: Getting started with ThoughtSpot Analytics Cloud](https://training.thoughtspot.com/getting-started-with-thoughtspot-cloud){:target="_blank"}
 - [Thoughtspot Success Series](https://youtu.be/EYHa8Ck3tdw){:target="_blank"}
 - [ThoughtSpot Support Handbook]({{site.baseurl}}/admin/ts-cloud/ts-cloud-support-handbook.html) (<a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF</a>)
 
