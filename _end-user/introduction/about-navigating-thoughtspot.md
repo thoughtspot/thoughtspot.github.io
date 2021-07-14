@@ -1,6 +1,6 @@
 ---
 title: [Finding your way around]
-last_updated: 11/15/2019
+last_updated: 7/14/2021
 toc: true
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
@@ -38,6 +38,8 @@ home page you can see a search bar, and several areas that show activity in Thou
 
 The items on this page are limited to Answers, Pinboards, Worksheets,
 and other objects that you have permission to access.
+
+![Software home page]({{ site.baseurl }}/images/software-home-page.png "Software home page")
 
 {: id="search"}
 ## Search
