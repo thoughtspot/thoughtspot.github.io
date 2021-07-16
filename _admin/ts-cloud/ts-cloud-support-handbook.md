@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Support Handbook]
-last_updated: 06/30/2021
+last_updated: 07/16/2021
 summary: "Thank you for choosing ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -39,20 +39,26 @@ If the issue is not progressing to your satisfaction (based on normal case lifec
 
 ### Customer Success Architect (CSA)
 
-The CSA is your main contact for architecting the ThoughtSpot solution. The CSA:
+The CSA is your main contact for architecting the ThoughtSpot solution. The CSA is a member of the paid professional services team. The CSA:
 
 -   Oversees the engagement from Launch Kickoff to Wrap-Up
 -   Helps define the architecture and solution approach
 -   Assists the CSE with solution implementation
 -   Helps the client Product Owner with story selection and use case prioritization
 
-### Customer Success Engineer (CSE)
+### Customer Engagement Manager (EM)
 
-The CSE implements the solution, working in tandem with the CSA. The CSE:
+The EM implements the solution, working in tandem with the CSA. The EM is a member of the paid professional services team. The EM:
 
 -   Participates in architecture and planning activities
 -   Acts as primary implementation person for ThoughtSpot on the project
 -   Trains the implementation team and end users
+
+### Customer Success Manager (CSM)
+
+The CSM assists when starting ThoughtSpot in your organization.
+
+The CSM works with your entire team to identify and establish the correct fit, the right team, and the optimal plan. The CSM coordinates the ABCs of your ThoughtSpot experience: Adoption, Benefits, and Competency Building.
 
 ## Chapter 2: Support Components
 
