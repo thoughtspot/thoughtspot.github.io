@@ -27,7 +27,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dlentry id="scriptability">
 <dt>Scriptability</dt>
 <dd><ul><li><strong>Improved import workflow:</strong> The new import workflow for <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a> identifies errors, suggests solutions, and allows you to resolve these errors as part of the import workflow. It also has a cleaner, more intuitive UI, with separate sections for different object types.</li>
-<li><strong>TML for tables with row-level security <span class="badge badge-update">Beta</span>:</strong> ThoughtSpot now supports the migration and editing of tables with <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security (RLS)</a> using <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">TML</a>.<br><br> This feature is in Beta and off by default; to enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</li>
+<li><strong>TML for tables with row-level security:</strong> ThoughtSpot now supports the migration and editing of tables with <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security (RLS)</a> using <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">TML</a>.</li>
 </ul></dd>
 </dlentry>
 
