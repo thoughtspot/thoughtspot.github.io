@@ -29,7 +29,7 @@ When choosing an instance type, ensure that it uses Intel CPUs.
 | 312 GB | n1-highmem-96 | 96/624 | 2x 1.5 TB | 200 GB for each node |
 | 100 GB | n1-highmem-32 | 32/208 | 2X 400 GB | 200 GB for each node |
 | 20 GB | n1-highmem-16 | 16/122 | 2X 400 GB | 200 GB for each node |
-| 180 GB | n1-standard-96 | 96/330 | 2X 1 TB | 200 GB for each node |
+| 180 GB | n1-standard-96 | 96/360 | 2X 1 TB | 200 GB for each node |
 
 ### VMs with Persistent Disk and Google Cloud storage
 
@@ -41,6 +41,6 @@ When choosing an instance type, ensure that it uses Intel CPUs.
 | 312 GB | n1-highmem-96 | 96/624 | 1X 500 GB | 200 GB for each node |
 | 100 GB | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
 | 20 GB | n1-highmem-16 | 16/122 | 1X 500 GB | 200 GB for each node |
-| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB | 200 GB for each node |    
+| 180 GB | n1-standard-96 | 96/360 | 1X 500 GB | 200 GB for each node |    
 
 For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/122GB RAM and 32CPU/208GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
