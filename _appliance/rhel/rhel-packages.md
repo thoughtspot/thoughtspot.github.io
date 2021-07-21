@@ -6,7 +6,7 @@ permalink: /:collection/:path.html
 ---
 To successfully deploy ThoughtSpot in your organization, you must have the following RPM packages on each node of your ThoughtSpot cluster: [yum](#yum), [python 3](#pip), and [R](#r). When the Ansible playbook runs, it automatically installs them.
 
-ThoughtSpot works with the latest version of each package; see the minimum supported version.
+ThoughtSpot works with the latest version of each package; see the minimum supported version. Click to expand.
 
 <details id="yum">
   <summary><strong>Yum RPM packages</strong></summary>
