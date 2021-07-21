@@ -34,7 +34,7 @@ The connection protocol for ThoughtSpot. For example, `https`.
 
 {: id="metadata-xml-file" }
 ### IdP Metadata XML File
-The absolute path to your Identity Provider’s metadata file. This file is provided by your IDP. You need this file so that the configuration persists over upgrades. It is a best practice to set it up on persistent/HA storage (NAS volumes) or in the same absolute path on all nodes in the cluster. For example, *idp-meta.xml*. If your IDP needs an Assertion Consumer Service URL to create the metadata file, use `https://<hostname_or_IP>/callosum/v1/saml/SSO`.
+The absolute path to your Identity Provider’s metadata file. This file is provided by your IDP. You need this file so that the configuration persists over upgrades. It is a best practice to set it up on persistent/HA storage (NAS volumes) or in the same absolute path on all nodes in the cluster. For example, *idp-meta.xml*. If your IDP needs an Assertion Consumer Service URL to create the metadata file, use `https://<hostname_or_IP>:443/callosum/v1/saml/SSO`. Note that this URL is case-sensitive.
 
 {% include note.html content="If your IdP does not allow you to import the IdP metadata XML file, you must map values manually. For the ThoughtSpot system to pick up certain attributes, you must map them to specific fields. Map the username you would like to use to <code>NameId</code>, and map the email id of the user to <code>mail</code>. Starting in ThoughtSpot version 6.3.1, it is mandatory to fill out the mail field. If your company cannot meet this requirement, contact ThoughtSpot support." %}
 
