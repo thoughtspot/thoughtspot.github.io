@@ -20,13 +20,13 @@ You can download a CSV file containing all the supported values for geo map coun
 ## Supported countries and codes
 ThoughtSpot supports mapping of the following countries without subdivisions. To view the countries with associated subdivisions that ThoughtSpot supports, refer to [Supported countries and subdivisions](#subdivisions).
 
-<details><summary><strong>Supported countries and codes</strong></summary>
+<details><summary><strong>Supported countries and codes (click to expand)</strong></summary>
 {% include content/geo/supported-countries-codes.md %}
 </details>
 
 {: id="subdivisions"}
 ## Supported countries and subdivisions
-ThoughtSpot supports the following countries and their associated subdivisions:
+ThoughtSpot supports the following countries and their associated subdivisions. Click on the subdivisions to expand.
 <dl>
 <dlentry>
 <!--Since 5.2.0-->
