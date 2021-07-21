@@ -9,6 +9,36 @@ ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot b
 
 Refer to the [Consumption pricing FAQ]({{ site.baseurl }}/admin/ts-cloud/consumption-pricing-faq.html) for more information. To learn about each of ThoughtSpot's pricing options, refer to [ThoughtSpot pricing](https://www.thoughtspot.com/pricing){: target="_blank"}.
 
+{: id="rights-obligations"}
+## Using the ThoughtSpot consumption licensing model with Embrace
+We originally introduced the consumption-based pricing model in our ThoughtSpot Cloud offering. You can now use the consumption pricing model when you deploy ThoughtSpot Software in your own cloud environment, and use Embrace connections to your data.
+
+You must allow ThoughtSpot to gather usage information from your cluster environment daily. We use a secure TLS-encrypted SSL connection to gather this information, and use it solely for the purpose of measuring credit consumption.
+
+Additionally, you must allow ThoughtSpot to serve usage information to you, for full visibility and accurate reporting of in-product usage and credit consumption. To accomplish this, ThoughtSpot creates an Embrace JDBC connection to your cluster, and uses TLS-encrypted SSL transport protocol to serve this data. This usage information is secure and isolated inside our cloud environment.
+
+The following points outline the necessary prerequisites to licensing and using ThoughtSpot based on consumption level.
+
+<dl>
+<dlentry>
+<dt>Supported deployments</dt>
+<dd><p>The ThoughtSpot consumption licensing model is available for both <a href="https://cloud-docs.thoughtspot.com">ThoughtSpot Cloud</a>, and for ThoughtSpot Software deployments that use <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-intro.html">Embrace</a> to connect to data.</p>
+<p>Consumption pricing <strong>does not apply</strong> to ThoughtSpot Software deployments that use the ThoughtSpot Falcon database, where you import/maintain data using <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">Dataflow</a> or another ETL tool.</p></dd>
+</dlentry>
+<dlentry>
+<dt>Supported releases</dt>
+<dd><p>In the 6.3.1 SW release, ThoughtSpot consumption pricing is available only on single-node clusters.</p>
+<p>Starting with the 6.3.1.CU1 release, ThoughtSpot makes consumption pricing available for all multi-node deployments.</p></dd></dlentry>
+<dlentry>
+<dt>Mandatory ports</dt>
+<dd>ThoughtSpot requires for organizations that subscribe to usage-based pricing to open the following ports. Failure to open these ports prevents you from using the consumption-based license.
+<dl><dlentry>
+<dt>Port 443</dt>
+<dd>The outbound port to the IP address that we provide at the time of licensing; we use this to collect usage data.</dd></dlentry>
+<dlentry>
+<dt>Port 5439</dt>
+<dd>The inbound port from the IP address that we provide at the time of licensing; we use this to send you credit consumption data.</dd></dlentry></dl></dd></dlentry></dl>
+
 {: id="credits"}
 ## Credits
 You purchase and consume credits with the consumption model. A credit is a unit of measure.  Usage of ThoughtSpot, measured in [usage minutes](#usage-minutes), consumes credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, or making any administrative changes or setup. Each user actively using ThoughtSpot consumes credits, even if they are using the product at the same time. You consume 1 credit for each usage minute. ThoughtSpot refers to this as *credit consumption rate* or *credit burn rate.*
@@ -36,13 +66,6 @@ User activity that incurs usage minutes includes any user interaction with the p
 - Browser actions (such as refreshing the page or using the **forward** or **back** buttons)
 - Any scrolling in the product that triggers updates to objects or content being viewed
     For example, if a user is scrolling through a Pinboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Pinboard, resulting in ThoughtSpot loading and displaying additional charts in that Pinboard for the first time, this counts as additional user activity.
-
-## Using the ThoughtSpot consumption licensing model with Embrace software
-You do not have to be on ThoughtSpot Cloud to use the consumption-based pricing model. To use the consumption pricing model with Embrace software that you have deployed in your own cloud environment, you must:
-1. Allow ThoughtSpot to gather product usage information from your cluster. This usage information will be gathered on a periodic basis (daily) from your environment. Usage information is gathered from ThoughtSpot clusters using a secure SSL connection (TLS encrypted).
-2. Allow ThoughtSpot to serve usage information for accurate in-product usage visibility of credits consumed via a ThoughtSpot-created Embrace connection on your cluster. The Embrace connection is a JDBC connection that uses SSL for transport (TLS encrypted).
-
-{% include note.html content="Usage information is collected only for the purposes of measuring credit consumption. Your usage information is secured and isolated inside our cloud environment." %}
 
 ## Monitor your consumption
 ThoughtSpot maintains user activity data in a relational database to make it available for reporting in the ThoughtSpot product. ThoughtSpot instances that are hosted in your on-premises/cloud provider environment must connect to this relational database through an Embrace connection in order to access information about consumption usage. This Embrace connection is created by ThoughtSpot support personnel as part of the setup for consumption pricing on ThoughtSpot Software instances (Software on-premises installations). The connection uses Transport Layer Security (TLS) on port 5439 as a secure channel to query the cluster-specific consumption data.
