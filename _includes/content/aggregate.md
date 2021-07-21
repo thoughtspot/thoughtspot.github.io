@@ -29,7 +29,7 @@
     </tr>
     <tr id="count_if">
       <td><code>count_if</code></td>
-      <td>Returns the number of rows in the table containing the column.</td>
+      <td>Returns the number of unique rows in the table containing the column that meets the specified condition.</td>
       <td><code class="highlighter-rouge">count_if(region =’west’, region)</code></td>
     </tr>
     <tr id="cumulative_average">
