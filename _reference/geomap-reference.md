@@ -18,7 +18,7 @@ You can download a CSV file containing all the supported values for geo map coun
 {% include note.html content="The CSV file contains leading 0s where these zeros are present for ThoughtSpot at the beginning of zip/post code values. However, if you import this file into Excel or another spreadsheet tool, that tool may remove leading zeros, resulting in data that does not match ThoughtSpot's format." %}
 
 ## Supported countries and subdivisions
-ThoughtSpot supports the following countries and their associated subdivisions:
+ThoughtSpot supports the following countries and their associated subdivisions. Click on the subdivisions to expand.
 <dl>
 <dlentry>
 <!--Since 5.2.0-->
