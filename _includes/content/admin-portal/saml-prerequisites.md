@@ -46,3 +46,12 @@ Choose whether or not to add SAML users to ThoughtSpot when they first authentic
 ### Also use ThoughtSpot internal authentication: (y/n)
 
 If 'y', then ThoughtSpot local/internal users (including local administrative users) will still be authenticated outside the scope of SSO.
+
+{: id="max-auth"}
+### samlMaxAuthenticationAge (tscli configuration only)
+
+By default, ThoughtSpot sets your `samlMaxAuthenticationAge` to 18114400 (seconds). If you experience an unauthorized error when logging in via SAML, your `AuthnInstant` value may be set to a different, older value. To resolve this issue, find your `AuthnInstant` value in the IDP login assertion. Set the `samlMaxAuthenticationAge` to a value older than that value.
+
+This is only one reason why you may receive an unauthorized error when logging in via SAML; if updating your `samlMaxAuthenticationAge` value does not resolve this issue, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+
+You can only configure this setting when configuring SAML [using tscli]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html#saml-configure-tscli).
