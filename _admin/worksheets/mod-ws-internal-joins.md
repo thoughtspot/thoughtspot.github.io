@@ -7,7 +7,11 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 redirect_from:
 - /6.3/admin/worksheets/mod-ws-internal-joins.html
-- /7.0/admin/worksheets/mod-ws-internal-joins.html
+- /6.3.0/admin/worksheets/mod-ws-internal-joins.html
+- /6.3.0.CU1/admin/worksheets/mod-ws-internal-joins.html
+- /6.3.1.CU1/admin/worksheets/mod-ws-internal-joins.html
+- /6.3.1/admin/worksheets/mod-ws-internal-joins.html
+- /admin/worksheets/mod-ws-internal-joins.html
 ---
 
 When you create a worksheet, you select a [join rule]({{ site.baseurl }}/admin/worksheets/progressive-joins.html). The join rule works together with the joins defined within the worksheet determine how the tables that make up the worksheet are joined, and how those joins behave when searching on the worksheet.
