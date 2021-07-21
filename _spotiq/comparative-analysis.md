@@ -1,7 +1,7 @@
 ---
 title: [Comparative Analysis]
 summary: "With SpotIQ comparative analysis, you can compare two data points for complex measures."
-last_updated: 11/25/2020
+last_updated: 07/21/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -78,7 +78,7 @@ Under **Select Algorithms**, select the name of the algorithm. You may have seve
 
 Under **Customize algorithm for comparative analysis**, adjust the options. In this example, the algorithm parameters are __Max Diff Elements__, __Max Fraction__, __Min Abs Change Ratio__, and __Min Change Ratio__.
 
-![]({{ site.baseurl }}/images/comparative-analysis-4.png "Advanced analysis Options")
+![]({{ site.baseurl }}/images/comparative-analysis-advanced.png "Advanced analysis Options")
 
 On the SpotIQ Feedback tab, you can see all SpotIQ feedback gave. Insights that you disliked are pushed to the bottom of the list.
 
