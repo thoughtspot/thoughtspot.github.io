@@ -5,7 +5,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{% include note.html content="The new formula editor is part of the new Answer experience. The new Answer experience is in Beta and off by default. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. If the new Answer experience is on for your company, you can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="The new formula editor is part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
 
 You can always go back and view or edit a formula that was added to an Answer. Anyone who has edit privileges on an Answer can also edit any formulas it contains. To view or edit an existing formula in an Answer:
 

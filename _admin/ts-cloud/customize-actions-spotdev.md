@@ -11,7 +11,7 @@ When you embed ThoughtSpot visualizations and pinboards, you can access the menu
 ## Custom actions      
 You can configure a custom button or menu item to initiate an action in your application from the ThoughtSpot UI and provide the data requested by the user as a payload. You can configure it to invoke a specific URL or a callback into your parent application when a user clicks the custom action.
 
-ThoughtSpot allows you to add a custom action as a primary button or as a menu command in the **More** menu! [more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} on the **Pinboards** and **Search Answers** pages. If you have the [New Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html)  <span class="badge badge-update">Beta</span> (off by default) enabled on your cluster, ThoughtSpot lets you add a custom action to the contextual menu for visualizations in the **Pinboards** or **Search Answers** page.
+ThoughtSpot allows you to add a custom action as a primary button or as a menu command in the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} on the **Pinboards** and **Search Answers** pages. If you have the [New Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html)  <span class="badge badge-update">Beta</span> enabled on your cluster, ThoughtSpot lets you add a custom action to the contextual menu for visualizations in the **Pinboards** or **Search Answers** page.
 
 
 ## Configure a custom action to send data to a URL
@@ -45,7 +45,7 @@ To add custom menu item:
     -   **Context menu**                                            
         Adds the custom action as a menu item in the contextual menu. The users can access the contextual menu by right-clicking on a visualization.
 
-    This option is available only if the [New Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) <span class="badge badge-update">Beta</span> (off by default) is enabled on your cluster.
+    This option is available only if the [New Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) <span class="badge badge-update">Beta</span> is enabled on your cluster.
 
 8.  Preview the position of the custom action.
 9.  Select the ThoughtSpot application pages to which you want to add the menu item.
@@ -87,7 +87,7 @@ To add a callback custom action:
     - **Context menu**                                            
       Adds the custom action as a menu item in the contextual menu. The users can access the contextual menu by right-clicking on a visualization.
 
-      This option is available only if the [New Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) <span class="badge badge-update">Beta</span> (off by default) is enabled on your cluster.
+      This option is available only if the [New Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) <span class="badge badge-update">Beta</span> is enabled on your cluster.
 
 7.  Preview the position of the custom action.
 
