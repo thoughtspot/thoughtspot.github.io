@@ -115,6 +115,11 @@ The following flags are used when loading data from an input file:
       <td>&nbsp;</td>
     </tr>
     <tr>
+  <td><code class="highlighter-rouge">--flexible [true | false]</code></td>
+  <td>Specifies whether the input data file exactly matches the target schema. When true, discards extra columns in the input file and fills missing columns in the input file with nulls. When false, the load only proceeds if the input data file exactly matches the target schema. The columns in the input file can also from the column order in the target schema.</td>
+  <td>The default is <code>false</code>.</td>
+</tr>
+    <tr>
       <td><code class="highlighter-rouge">--trailing_field_separator</code></td>
       <td>Specifies that the field separator appears after every field, including the last field per row.</td>
       <td>Example row with trailing field separator: a,b,c,The default is false.</td>
