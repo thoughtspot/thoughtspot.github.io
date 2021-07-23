@@ -11,7 +11,7 @@ permalink: /:collection/:path.html
 
 ## Sample application
 
-Here is a sample application you can use to try out the Data Push API: 
+Here is a sample application you can use to try out the Data Push API:
 
 ```
 <!doctype html>
@@ -40,7 +40,7 @@ Here is a sample application you can use to try out the Data Push API:
     </script>
     <div ng-app ="latestData" ng-controller="dataCtrl">
         <button class="get-data" ng-click="displayData()">Click here for latest exported data</button>
-        <div class="display-data" ng-if="showData"> {% raw %}{{currentData}}{% endraw %}</div>
+        <div class="display-data" ng-if="showData">{% raw %}{{currentData}}{% endraw %}</div>
     </div>
 </body>
 </html>
