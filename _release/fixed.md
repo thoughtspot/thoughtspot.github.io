@@ -12,6 +12,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <details>
 <summary>6.3.X Releases</summary>
 <ul>
+<li><a href="#6-3-1-cu4">6.3.1 CU4 Fixed issues</a></li>
 <li><a href="#6-3-1-cu1">6.3.1 CU1 Fixed issues</a></li>
 <li><a href="#6-3-1">6.3.1 Fixed issues</a></li>
 <li><a href="#6-3">6.3 Fixed issues</a></li>
@@ -103,6 +104,14 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </details>
 </li>
 </ul>
+
+<a id="6-3-1-cu4"></a>
+## 6.3.1 CU4 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 6.3.4 CU1.
+
+- Share button does not work in certain circumstances.
+- Charts and pinboards cannot be downloaded as a pdf when URL encoding is enabled.
 
 <a id="6-3-1-cu1"></a>
 ## 6.3.1 CU1 Fixed issues
