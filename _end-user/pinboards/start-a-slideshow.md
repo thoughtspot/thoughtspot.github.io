@@ -54,5 +54,5 @@ Consider the following actions on pinboards:
 | 4. | Similarly, you can apply a filter to **Only include selected values** or **Only include selected  point**. |
 | 5. | You can drill down to see more information about the columns used in search. Left-click and select **Drill down** from the menu. |
 | 6. | To show underlying data in more detail, left-click and select **Show underlying data** from the menu. |
-| 7. | To run SpotIQ on a visualization, select the more options menu ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **SpotIQ analyze**. |
+| 7. | To run SpotIQ on a visualization, left-click and select **SpotIQ analyze** from the menu. |
 | 8. | Depending on the chart type in presentation, you can perform the chart-specific actions. In case of geographic maps, you can zoom and pan the map. |
