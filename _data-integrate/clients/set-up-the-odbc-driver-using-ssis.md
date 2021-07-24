@@ -133,10 +133,10 @@ Source Administrator.
 5. Set the **Transaction Size** to match the total number of rows that are expected to be loaded in the load cycle.
 
     Your transaction size can be quite large—even spanning a million rows.
-    However, too many small batches can leave the cluster in a rough state. This
+    However, too many small batches can lead to degraded performance. This
     is because each batch acts as a separate transaction and creates a separate
     commit. Too many of these will slow down our system since each transaction
-    creates a “data version” in our system. In Pentaho, the transaction size
+    creates a new “data version”. In Pentaho, the transaction size
     setting is called Commit Size.
 
 6. Set the **Transaction Option** attribute of the Data Flow Task to **Supported**.
