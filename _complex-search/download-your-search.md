@@ -1,7 +1,7 @@
 ---
 title: [Download your search]
 
-last_updated: 12/3/2020
+last_updated: 7/23/2021
 summary: "You can download your search as either a table or chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -20,4 +20,4 @@ download your search, click the **More** menu icon ![more options menu icon]({{ 
          ![]({{ site.baseurl }}/images/download-a-chart.png "Download your chart option")
 
 Currently, ThoughtSpot limits the maximum number of rows that can be downloaded
-to 10M (default is 1M). Your system limit is configured by your ThoughtSpot administrator.
+to 10M (default is 1M). Your system limit is configured by your ThoughtSpot administrator. There is no limit to the maximum number of columns that can be downloaded.

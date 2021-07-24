@@ -1,6 +1,6 @@
 ---
 title: [Charts and tables that display a very large number of data values]
-last_updated: 8/26/2020
+last_updated: 7/23/2021
 summary: "ThoughtSpot's charts and tables can support many data values, and you can easily understand how much of the data your chart or table displays."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 ## High cardinality tables
 
-ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly how many rows your table displays. The new default maximum number of rows is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of rows on a table, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+ThoughtSpot tables loaded through Falcon are no longer limited to 1000 rows. Now, you can see exactly how many rows your table displays. For tables loaded through Falcon, the new default maximum number of rows is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of rows on a table, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 Here, the table has 2318 rows:
 
@@ -16,7 +16,7 @@ Here, the table has 2318 rows:
 
 ## High cardinality charts
 
-ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, you see a horizontal scroll bar at the bottom. The new default maximum number of data points is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of data points on a chart, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, you see a horizontal scroll bar at the bottom. For charts based on either Embrace connections or Falcon data load, the new default maximum number of data points is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of data points on a chart, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ![High cardinality chart with scroll bar]({{ site.baseurl }}/images/cardinality-chart-scroll-bar.png "High cardinality chart with scroll bar")
 
