@@ -1,6 +1,6 @@
 ---
 title: ["Manage suggestion indexing"]
-last_updated: 4/8/2021
+last_updated: 7/26/2021
 summary: "ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
 toc: true
@@ -83,6 +83,8 @@ Engineer to configure new cluster defaults.
 
 ## Understand the indexing behavior for Worksheets
 For Worksheets, you can only choose whether or not to index the column. You cannot choose an index type. When viewing a Worksheet, toggle the **SUGGEST VALUES IN SEARCH** option on or off.
+
+{% include note.html content="When an administrator adds a formula to a Worksheet, it appears as a selectable column in your search. To enable indexing for a Worksheet formula, set the **SUGGEST VALUES IN SEARCH** option to 'yes'." %}
 
 ![Worksheet search indexing]({{ site.baseurl }}/images/worksheet-search-indexing.png "Worksheet search indexing")
 
