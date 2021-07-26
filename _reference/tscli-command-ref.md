@@ -812,6 +812,7 @@ This subcommand has the following options:
   <p>The default is <code>False</code>.</p></dd>
   </dlentry></dl></dd></dlentry>
 
+<!-- SSU is not GA
   <dlentry>
     <dt><code>tscli cluster setup-release-host HOST</code></dt>
     <dd>Sets up the release host for Self Service Upgrade, with the specified <code>HOST</code>.</dd></dlentry>
@@ -819,6 +820,7 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli cluster setup-release-host-key</code></dt>
     <dd>Sets up the release host api key for Self Service Upgrade.</dd></dlentry>  
+-->
 
   <dlentry>
     <dt><code>tscli cluster show-resource-spec</code></dt>
