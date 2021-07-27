@@ -122,8 +122,8 @@ the objects could become invalid." %}
          <td>
             <p><code>SCRIPT TABLE &lt;table&gt;</code></p>
          </td>
-         <td><p>Generates the TQL schema for a table. For example:</p>
-            <p><code>SCRIPT TABLE "vendor";</code></p>
+         <td><p>Generates the TQL schema for a specified table. Use the physical table name, not the logical table name from the ThoughtSpot UI. For example:</p>
+            <p><code>SCRIPT TABLE "physical-table-name";</code></p>
          </td>
       </tr>
       <tr>

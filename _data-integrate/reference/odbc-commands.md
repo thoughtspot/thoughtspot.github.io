@@ -209,8 +209,8 @@ HASH [(<shards>)] [KEY(<column>)]]]`
 
 * `SCRIPT TABLE <table>`
 
-    Generates the TQL schema for a table. For example:
+    Generates the TQL schema for a specified table. Use the physical table name, not the logical table name from the ThoughtSpot UI. For example:
 
     ```
-    SCRIPT TABLE "vendor";
+    SCRIPT TABLE "physical-table-name";
     ```  
