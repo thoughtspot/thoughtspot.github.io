@@ -1,10 +1,11 @@
 ---
 title: [Modify joins within a worksheet]
-last_updated: 7/22/2021
+last_updated: 7/27/2021
 summary: "Learn how to change the join type between the tables within a worksheet."
 toc: true
 sidebar: mydoc_sidebar
 redirect_from:
+- /7.0.1.jun.sw/admin/worksheets/mod-ws-internal-joins.html
 - /7.0.0.mar.sw/admin/worksheets/mod-ws-internal-joins.html
 - /6.3.1/admin/worksheets/mod-ws-internal-joins.html
 - /6.3/admin/worksheets/mod-ws-internal-joins.html
