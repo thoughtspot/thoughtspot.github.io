@@ -32,25 +32,35 @@ Instant Insights currently appear in four (4) areas of our product:
 
 The current Instant Insights feature works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support Instant Insights.  
 
-{: id="de-support-7.1.1"}
+{: id="de-support-7-1-1"}
 ## Deprecated in 7.1.1
 The 7.1.1 release of ThoughtSpot Software, targeted for October 2021 (GA), will deprecate the following features. ThoughtSpot will drop support for these features in a later release. If you have the new Answer experience turned on in 7.1.1, these features are de-supported in 7.1.1. To use these features, turn the new Answer experience off.
 
-<dl><dlentry><dt>Learn how to use ThoughtSpot Pinboard</dt>
-<dd>This Pinboard contains search replays created in the system. The Replay Search feature is de-supported in May Cloud. Customers currently use <strong>Replay search</strong> and the <strong>Learn how to use ThoughtSpot Pinboard</strong> to learn how to use ThoughtSpot's search on data. As an alternative, use <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot search on <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">your company's data</a>.</dd></dlentry>
+<dl>
 <dlentry><dt>Multiple join path resolution within the formula editor or a search</dt>
 <dd>When you try to search on columns with more than one possible join path, the system no longer allows you to define the join path within the search. Similarly, when you try to create a formula with columns with more than one possible join path, the system does not allow you to define the join path. Instead, the system now prompts you to resolve this issue and avoid confusion or incorrect data by creating a Worksheet with the correct join path.</dd></dlentry>
 <dlentry><dt>Send feedback</dt>
 <dd>The option to send product feedback, from the more options menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="more options menu icon" class="inline"/> on an Answer or search.</dd></dlentry>
 <dlentry><dt>Client-side summaries for tables</dt>
 <dd>We consolidated client-side column summaries and headlines from the backend into new headline summaries that come from the backend. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
+<dlentry><dt>R integration</dt>
+<dd>Customers currently use R to generate custom charts. The current integration with R works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support R integration.</dd></dlentry>
 </dl>
 
+{: id="de-support-7-1-1"}
+## De-supported in 7.1.1
+<dl><dlentry><dt>Learn how to use ThoughtSpot Pinboard</dt>
+<dd>This Pinboard contains search replays created in the system. The Replay Search feature is also de-supported in 7.1.1. Customers currently use <strong>Replay search</strong> and the <strong>Learn how to use ThoughtSpot Pinboard</strong> to learn how to use ThoughtSpot's search on data. As an alternative, use <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot search on <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">your company's data</a>.</dd></dlentry>
+<dlentry><dt>Replay search</dt>
+<dd>This feature allowed you to replay the search used to create an Answer. As an alternative, use <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot search on <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">your company's data</a>.</dd></dlentry>
+</dl>
+
+<!-- waiting to hear from akshay
 {: id="de-support-7-2"}
 ## De-supported in 7.2
 
-The 7.2 release of ThoughtSpot Software, targeted for Nov 2021 (LA), Feb 2022 (GA), will drop support for **R integration**.
+The 7.2 release of ThoughtSpot Software, targeted for Nov 2021 (LA), Feb 2022 (GA), will drop support for **R integration**. Customers currently use R to generate custom charts.
 
-Customers currently use R to generate custom charts. We plan to introduce a new feature, **Bring Your Own Charts**, in a later release.
+The current integration with R works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support R integration.  
 
-The current integration with R works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support Instant Insights.  
+-->
