@@ -1,8 +1,8 @@
 ---
 title: [Join a worksheet to another data source]
 
-last_updated: 6/24/2019
-summary: "Learn how to define joins between a worksheet and a table or view"
+last_updated: 7/27/2021
+summary: "Learn how to define joins between a worksheet and a table or view."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -26,25 +26,23 @@ To create a relationship through the Web interface:
 
 2. Click the name of your worksheet.
 
-3. Click **Schema**. You will see the list showing existing joins within the worksheet.
+3. Click the **Joins** tab. The list showing existing joins within the worksheet appears.
 
 4. To view the joins between the worksheet and other data sources, click **Joins within worksheets** and choose **Joins between worksheets**.
 
-   ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
+   ![]({{ site.baseurl }}/images/joins-within-worksheet.png "Add join between worksheet")
 
 5. Click the **+ Add Join** button on the upper right side of the screen.
 
-   ![]({{ site.baseurl }}/images/ws-add-join.png "Add join")
+   ![]({{ site.baseurl }}/images/worksheet-add-join.png "Add join")
 
-6. Use the **Map source to destination** dialog to choose the destination table or view you want to join to.
+6. In the **Add Join** dialog, choose the destination table or view for the other end of the join.
 
-   ![]({{ site.baseurl }}/images/ws-join-select-destination.png "Select destination table")
+   ![]({{ site.baseurl }}/images/worksheet-join-dialog.png "Select destination table")
 
-7. Choose the columns you want to join on from the worksheet (source) and destination data source. Click **Next**.
+7. Choose the matching columns under each table. These columns must use the same data type. [Optional] You can select multiple columns for the same join. To add another pair of matching columns to the join definition, click **+ Add columns**.
 
-   ![]({{ site.baseurl }}/images/ws-join-select-col.png "Select columns to join on")
-
-8. Give your join a name and description and click **ADD JOIN**.
+8. Click **Create join**.
 
 9. Repeat these steps until all the joins you want to make have been created.
 
