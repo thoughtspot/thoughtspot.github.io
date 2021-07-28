@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/7.0/appliance/consumption-pricing-faq.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-07-21T11:25:14-07:00" />
+<meta property="article:published_time" content="2021-07-28T12:07:10-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Consumption pricing FAQ”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"What is the consumption-based-pricing model? The consumption-based-pricing model gives you an option to license ThoughtSpot based on usage.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/7.0/appliance/consumption-pricing-faq.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/7.0/appliance/consumption-pricing-faq.html","headline":"[“Consumption pricing FAQ”]","dateModified":"2021-07-21T11:25:14-07:00","datePublished":"2021-07-21T11:25:14-07:00","@context":"https://schema.org"}</script>
+{"description":"What is the consumption-based-pricing model? The consumption-based-pricing model gives you an option to license ThoughtSpot based on usage.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/7.0/appliance/consumption-pricing-faq.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/7.0/appliance/consumption-pricing-faq.html","headline":"[“Consumption pricing FAQ”]","dateModified":"2021-07-28T12:07:10-07:00","datePublished":"2021-07-28T12:07:10-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5467,7 +5467,7 @@ $(document).ready(function(){
   Estimated reading time:
   
   
-    5 minutes
+    6 minutes
   
 </span> -->
 
@@ -5561,8 +5561,12 @@ Yes.</p>
     <p><b>Will I be able to track usage in the product?</b><br />
 At this time, ThoughtSpot will provide you periodic updates of usage. We plan to make it possible to track usage inside the product in future releases.</p>
   </li>
-  <li><b>Can I have both consumption pricing and capacity pricing?</b><br />
-In order for you to have both pricing models, you must have multiple clusters with each cluster having a discrete pricing model. One cluster can not be licensed as both consumption and capacity.</li>
+  <li>
+    <p><b>Can I have both consumption pricing and capacity pricing?</b><br />
+In order for you to have both pricing models, you must have multiple clusters with each cluster having a discrete pricing model. One cluster can not be licensed as both consumption and capacity.</p>
+  </li>
+  <li><b>How is my consumption data stored and kept secure?</b><br />
+A dedicated Amazon S3 bucket is set up to store the user activity CSV files temporarily. Then, the S3 data is uploaded to a searchable data store (Amazon Redshift). There is an S3 bucket prefix for each customer and a unique key for each customer to encrypt it. The encryption key is stored in AWS KMS. As part of the pricing configuration, the customer cluster is configured with an access key to have access to the S3 bucket prefix unique to the cluster. ThoughtSpot deploys and maintains an Amazon Redshift database to load the consumption pricing data. Every customer cluster that is enabled for consumption pricing gets access to only that cluster’s consumption pricing data. A unique database user is created in Redshift and configured in the customer cluster as part of the pricing configuration. This results in a unique Embrace connection per customer cluster to the ThoughtSpot manager consumption pricing database (Redshift). This is used to view the consumption pricing related reports in the customer’s ThoughtSpot instance.</li>
 </ol>
 
   <div class="tags">
@@ -5590,7 +5594,7 @@ In order for you to have both pricing models, you must have multiple clusters wi
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jul 21, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Jul 28, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 1/26/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/7.0/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
