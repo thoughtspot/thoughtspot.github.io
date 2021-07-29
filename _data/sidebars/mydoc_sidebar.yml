@@ -1436,9 +1436,6 @@ entries:
     - title: Consumption-based pricing
       url: /admin/ts-cloud/consumption-pricing.html
       output: web,admBk
-    - title: Consumption pricing FAQ
-      url: /admin/ts-cloud/consumption-pricing-faq.html
-      output: web,admBk
     - title: Contact ThoughtSpot Support
       url: /admin/misc/contact.html
       output: web,admBk

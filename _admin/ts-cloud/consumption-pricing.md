@@ -7,24 +7,27 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on your users' usage of the ThoughtSpot product. When you purchase a consumption-based ThoughtSpot license, ThoughtSpot bills you based on [credits](#credits). The ThoughtSpot consumption licensing model is available for both ThoughtSpot Cloud and for Embrace software deployment on your cloud platform.
 
-Refer to the [Consumption pricing FAQ]({{ site.baseurl }}/admin/ts-cloud/consumption-pricing-faq.html) for more information. To learn about each of ThoughtSpot's pricing options, refer to [ThoughtSpot pricing](https://www.thoughtspot.com/pricing){: target="_blank"}.
+To learn about each of ThoughtSpot's pricing options, refer to [ThoughtSpot pricing](https://www.thoughtspot.com/pricing){: target="_blank"}. ThoughtSpot offers consumption- and capacity-based pricing. Each cluster must have a discrete pricing model. You cannot license one cluster as both consumption and capacity, but you can have multiple clusters with each using a different pricing model.
 
 {: id="credits"}
 ## Credits
-You purchase and consume credits with the consumption model. A credit is a unit of measure.  Usage of ThoughtSpot, measured in [usage minutes](#usage-minutes), consumes credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, or making any administrative changes or setup. Each user actively using ThoughtSpot consumes credits, even if they are using the product at the same time. You consume 1 credit for each usage minute. ThoughtSpot refers to this as *credit consumption rate* or *credit burn rate.*
+You purchase and consume credits with the consumption model. A credit is a unit of measure. When members of your organization utilize ThoughtSpot, we measure [usage minutes](#usage-minutes), which consume available credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, making any administrative changes, or changing setup configuration.  Each user who actively uses ThoughtSpot consumes credits, even if they are using the product at the same time. Each usage minute is equivalent to consuming one (1) credit. ThoughtSpot refers to this as **credit consumption rate** or **credit burn rate**.
 
 {: id="usage-minutes"}
 ## Usage minutes
-Usage minutes refer to the number of minutes of ThoughtSpot usage. Each user's usage minutes are calculated separately. Usage minutes are calculated in the following ways:
+Usage minutes refer to the number of minutes that the members of your organization use ThoughtSpot. We calculate each user’s usage minutes separately.
+
+We calculate usage minutes in the following manner:
 - Any user activity in the application kicks off a 10 minute usage block.
-- Any additional user activity within that 10 minutes does not drive additional consumption and the whole session will be charged at 10 minutes.
-- The first click after the initial 10 minute window ends, initiates a second 10 minute session.
-- Each user’s usage is counted separately.
+- Any additional user activity within that 10 minutes does not drive additional consumption; we charge the whole session at 10 minutes.
+- The first click after the initial 10 minute window ends initiates a second 10 minute session.
+- If the user activity ceases within a 10-minute time interval, then restarts and lasts past the end of the current 10-minute time interval, it triggers the subsequent time interval.
+- We calculate each user’s activity separately. For example, if 10 users are using ThoughtSpot for the same 10 minutes, we count 100 minutes of usage.
 
     ![Usage minutes example]({{ site.baseurl }}/images/consumption-example.png "Usage minutes example")
 
 ## User activity that incurs usage minutes
-User activity is defined as any user-triggered (initiated) action in ThoughtSpot, starting from the time the action is initiated until the time that the results of the action(s) are visible to the user in the product. This includes any time spent by ThoughtSpot in processing the user-triggered action in order to present the results to the user. User activity is measured in [usage minutes](#usage-minutes).
+We define user activity as any user-triggered (initiated) action in ThoughtSpot, starting from the time the user initiates the action, until the time that the results of the action(s) become visible to the user of the product. This includes any time used by ThoughtSpot to process the user-triggered action in order to present the results to the user. We measure user activity in [usage minutes](#usage-minutes). You can consume usage minutes during implementation and training prior to go-live, as well as after.
 
 User activity that incurs usage minutes includes any user interaction with the product, such as:
 - Clicking on any interactive elements inside the ThoughtSpot product, such as menu items, search boxes, tabs, buttons, icons and other user interface artifacts. Some examples are:
@@ -35,15 +38,25 @@ User activity that incurs usage minutes includes any user interaction with the p
     - Uploads, downloads, sharing, triggering the sending of emails from within the product
 - Browser actions (such as refreshing the page or using the **forward** or **back** buttons)
 - Any scrolling in the product that triggers updates to objects or content being viewed
+
     For example, if a user is scrolling through a Pinboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Pinboard, resulting in ThoughtSpot loading and displaying additional charts in that Pinboard for the first time, this counts as additional user activity.
+
+## User activity that does not incur usage minutes
+The following do not count toward consumption:
+
+* The only click that does not count as user activity is clicking **Sign out**.
+* Any action that happens outside the product or is not user-triggered inside the product is not considered user activity. For example: the system sending out a scheduled pinboard, a user receiving emails generated by ThoughtSpot based on actions such as scheduled pinboards, welcome or other kinds of emails, and emails sent out as a result of “Following” metrics in the product do not count as user activity. (*However, if the user logs in to the product as a result of these emails, that will start user activity*).
+* Any non-user-initiated activity in the system does not count as “user activity”. This includes automatically triggered SpotIQ analyses, indexing or other non-user-initiated queries against external warehouses and any other background processes or daemons that are not a result of an explicit user triggered action.
+* Any scrolling on ThoughtSpot product pages that does not update any content on the page does not count towards consumption.
+* Leaving ThoughtSpot open in another tab does not count toward consumption.
 
 {: id="credit-usage-pinboard"}
 ## Monitor your consumption
-You can monitor your credit consumption with the Credit Usage pinboard, a new default admin-only pinboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the Credit Usage pinboard from the Admin Console, under **Billing > Credit Consumption**. You can access the answers by searching for them from the home page, or from the **Answers** page.
+You can monitor your credit consumption with the Credit Usage pinboard, a new default admin-only pinboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the pinboards and answers by searching for them from the home page, or from the **Pinboards** or **Answers** pages.
 
-![Credit Usage pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard-admin-console.png "Credit Usage Pinboard")
+![Credit Usage pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
 
-The Credit Usage pinboard in the Admin Console contains useful visualizations and headlines you can use to monitor your consumption. You can use it to determine which users or time periods consume more credits than others. You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and pinboards.
+The Credit Usage pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can use it to determine which users or time periods consume more credits than others. You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and pinboards.
 
 The Credit Usage Pinboard contains the following visualizations and headlines:
 - Daily Usage, with Unique Users (last 30 days)
@@ -72,3 +85,6 @@ Follow these best practices for the 2 new answers, *Sample Answer - Credit usage
     - **Credit usage from Charging Records**: Use this answer to learn more about API-level details. You can map activities and credit consumption to specific API calls.
 
 3. Use the built-in filters on these answers to narrow down your search to the user and time window of interest. You must edit the time window filter in the search bar, using this syntax: `Timestamp >= mm/dd/yyyy hh:mm:ss Timestamp <= mm/dd/yyyy hh:mm:ss`. ThoughtSpot filters the answer to only show data in between the two dates you specify. Select a user to filter by, and for the *Sample Answer - Credit usage details* answer, optionally select a user action filter.
+
+## Consumption data storage
+ThoughtSpot stores your consumption data and keeps it secure. A dedicated Amazon S3 bucket is set up to store the user activity CSV files temporarily. Then, the S3 data is uploaded to a searchable data store (Amazon Redshift). There is an S3 bucket prefix for each customer and a unique key for each customer to encrypt it. The encryption key is stored in AWS KMS. As part of the pricing configuration, the customer cluster is configured with an access key to have access to the S3 bucket prefix unique to the cluster. ThoughtSpot deploys and maintains an Amazon Redshift database to load the consumption pricing data. Every customer cluster that is enabled for consumption pricing gets access to only that cluster’s consumption pricing data. A unique database user is created in Redshift and configured in the customer cluster as part of the pricing configuration. This results in a unique Embrace connection per customer cluster to the ThoughtSpot manager consumption pricing database (Redshift). This is used to view the consumption pricing related reports in the customer's ThoughtSpot instance.
