@@ -1,7 +1,7 @@
 ---
 title: [TQL reference]
 summary: Learn the TQL commands.
-last_updated: 2/25/2020
+last_updated: 7/29/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -610,11 +610,12 @@ ThoughtSpot supports a simplified list of data types:
             </ul>
          </td>
          <td>
-            <p>DATETIME, TIMESTAMP, and TIME are stored at the granularity of seconds</p>.
+            <p>DATETIME, TIMESTAMP, and TIME are stored at the granularity of seconds.</p>
             <p>TIMESTAMP is
                identical to DATETIME, but is included for syntax
                compatibility.
             </p>
+            <p>ThoughtSpot stores date and timestamp values in epoch format.</p>
          </td>
       </tr>
    </tbody>
