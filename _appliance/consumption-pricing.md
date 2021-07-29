@@ -41,7 +41,7 @@ The following points outline the necessary prerequisites to licensing and using 
 
 {: id="credits"}
 ## Credits
-You purchase and consume credits with the consumption model. A credit is a unit of measure.When members of your organization utilize ThoughtSpot, we measure [usage minutes](#usage-minutes), which consume available credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, making any administrative changes, or changing setup configuration.  Each user who actively uses ThoughtSpot consumes credits, even if they are using the product at the same time. Each usage minute is equivalent to consuming one (1) credit. ThoughtSpot refers to this as **credit consumption rate** or **credit burn rate**.
+You purchase and consume credits with the consumption model. A credit is a unit of measure. When members of your organization utilize ThoughtSpot, we measure [usage minutes](#usage-minutes), which consume available credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, making any administrative changes, or changing setup configuration.  Each user who actively uses ThoughtSpot consumes credits, even if they are using the product at the same time. Each usage minute is equivalent to consuming one (1) credit. ThoughtSpot refers to this as **credit consumption rate** or **credit burn rate**.
 
 {: id="usage-minutes"}
 ## Usage minutes
