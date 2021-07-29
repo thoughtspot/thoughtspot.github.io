@@ -980,7 +980,7 @@ This subcommand has the following option:
 ### csp
 
 ```
-tscli tscli csp [-h] {add-override,clear-override,remove-override,reset-override}
+tscli csp [-h] {add-override,clear-override,remove-override,reset-override}
 ```
 
 This subcommand has the following options:
