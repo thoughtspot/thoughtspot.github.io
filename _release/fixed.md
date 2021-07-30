@@ -111,7 +111,26 @@ These are the issues we fixed in recent ThoughtSpot releases.
 These are the issues we fixed in ThoughtSpot Release 6.3.4 CU1.
 
 - Share button does not work in certain circumstances.
-- Charts and pinboards cannot be downloaded as a pdf when URL encoding is enabled.
+- Charts and pinboards cannot be downloaded as a PDF when URL encoding is enabled.
+- Clicking in the search bar does not place the cursor at the expected location when using the Google Chrome 92 browser.
+- Configuring filters on a pinboard causes it to stop working.
+- Geomaps do not render properly in a pinboard.
+- Japanese pinboard title in schedule emails displays incorrectly.
+- Scheduling a pinboard using the .CSV option does not work.  
+- Sharing certain pinboards does not work.
+- Certain pinboard visualizations do not display after a filter is applied.
+- Pivot tables do not display.
+- A calculated dimension in a worksheet is not indexed.
+- `unique_count_if(group_sum())` is not allowed in formula parser v2.
+- Null is not allowed in a complex `if-elif-else` condition in formula parser v2.
+- Offline Python package download fails for ruamel package for Python 2.7.
+- A worksheet cannot be edited.
+- Exporting a table in xlsx format causes the date format to change from dd/mm/yyyy to mm/dd/yyyyy.
+- Versus columns added for UNKNOWN diff analysis cannot be found.
+- Pinboards cannot be copied.
+- Editing answers on a particular pinboard causes an internal Falcon error.
+- Changing a date filter in explore mode does not work.
+- Captions in charts do not work.
 
 <a id="6-3-1-cu1"></a>
 ## 6.3.1 CU1 Fixed issues

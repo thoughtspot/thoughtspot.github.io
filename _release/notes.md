@@ -16,9 +16,15 @@ To see our feature deprecation plans, please see [Deprecation announcements]({{ 
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.3.1 New Features](#6-3-1-new)
+* [6.3.1 CU4 New Features](#6-3-1-cu4-new)
+* [6.3.1 New Features](#6-3-1-cu4-new)
 * [6.3 New Features](#6-3-new)
 * [Supported Upgrade Paths](#upgrade-paths)
+
+{: id="6-3-1-cu4-new"}
+## 6.3.1 CU4 New Features and Functionality
+
+This patch release includes many bug fixes for 6.3.1.CU1, including most recent security vulnerabilities. We recommend every customer update to 6.3.1.CU4 as this version also addresses an issue with Google Chrome v92. Earlier 6.3.1.x versions require clusters to be updated to 6.3.1.CU4 for any future patches or fixes related to Nginx.
 
 {: id="6-3-1-new"}
 ## 6.3.1 New Features and Functionality
