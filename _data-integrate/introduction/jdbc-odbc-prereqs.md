@@ -16,4 +16,4 @@ Before you can use JDBC or ODBC to import data into ThoughtSpot, you must do the
    ps -ef | grep simba_server | grep -v grep
    admin    26679 25672  0 Jul13 ?        00:01:49 simba_server_main --logbufsecs=0
    ```
-For assistance, contact ThoughtSpot Support.
+For assistance, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).

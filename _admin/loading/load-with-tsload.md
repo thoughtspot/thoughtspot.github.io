@@ -20,11 +20,11 @@ This page highlights the following:
 2. Open the config file at the following location:
    `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
 
-3. If your cluster is behind a load balancer, you must disable the internal etl server's load balancer. Contact ThoughtSpot support for assistance with this step.
+3. If your cluster is behind a load balancer, you must disable the internal etl server's load balancer. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this step.
 
-4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.
+4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
-5. If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to tsload connector. Contact ThoughtSpot support for assistance with this step.
+5. If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to tsload connector. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this step.
 
    {% include note.html content="For clusters created in version 6.2 or later, certificates are bound to tsload connector by default." %}
 

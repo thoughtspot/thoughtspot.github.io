@@ -24,7 +24,7 @@ These users *cannot* perform the following actions that are otherwise available 
 Follow these steps to limit access to Pinboards:
 
 1. Ensure that you are on ThoughtSpot version 6.2.1 or later.
-1. Contact ThoughtSpot Support to enable the feature.
+1. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable the feature.
 2. Identify users for limited access to curated Pinboards, and assign them to the same User Group.
 3. Assign the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only)** privilege to the User Group.
 4. Select and Share the curated Pinboards with the User Group.

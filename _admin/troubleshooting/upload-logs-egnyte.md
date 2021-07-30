@@ -31,7 +31,7 @@ Before you can upload a file to the secure file server:
 
 The server directory path for uploading a file is formatted like this example:
 `/Shared/support/<customer_name>`. If you do not know the customer name,
-[contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
+[contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html#).
 
 You can upload files directly to the file server using this procedure:
 
