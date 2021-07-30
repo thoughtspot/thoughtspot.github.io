@@ -38,7 +38,7 @@ To add a new connection to Snowflake:
    - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
      ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-serv-acct.png "Enter connection details")
 
-    Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
+    Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/embrace-snowflake-reference.html) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that are required to set up your connection to Snowflake, by doing the following:
 
