@@ -5,7 +5,7 @@ summary: "ThoughtSpot uses replication of stored data. When a node fails, Though
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To support high availability, your ThoughtSpot instance must have at least three nodes. In a three or more node system, if one node fails, its services will be distributed to the other nodes. The failover is automatic. However, when a node fails, you should contact ThoughtSpot Support about replacing the node when possible.
+To support high availability, your ThoughtSpot instance must have at least three nodes. In a three or more node system, if one node fails, its services will be distributed to the other nodes. The failover is automatic. However, when a node fails, you should [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) about replacing the node when possible.
 
 A node is considered to have failed when one or more of these conditions occur:
 
@@ -22,8 +22,8 @@ You should suspect node failure if you observe these symptoms:
 -   You receive alert emails beginning with WARNING or CRITICAL, that describe problems with one of the nodes not running.
 -   A node does not come up upon booting or rebooting the system.
 
-If you notice these symptoms, contact ThoughtSpot Support.
+If you notice these symptoms, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ## Node replacement
 
-Node replacement is done on site by ThoughtSpot Support. You must schedule a maintenance window, since some downtime is required. For more information, please contact ThoughtSpot Support.
+Node replacement is done on site by ThoughtSpot Support. You must schedule a maintenance window, since some downtime is required. For more information, please [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).

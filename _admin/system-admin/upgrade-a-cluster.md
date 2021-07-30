@@ -18,4 +18,4 @@ The **Upgrade** page shows your cluster's current version, and any new releases 
 
 ![Admin Console - Upgrade]({{ site.baseurl }}/images/admin-portal-upgrade.png "Admin Console - Upgrade")
 
-If releases are available, and you would like to upgrade, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to upgrade your cluster.
+If releases are available, and you would like to upgrade, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to upgrade your cluster.
