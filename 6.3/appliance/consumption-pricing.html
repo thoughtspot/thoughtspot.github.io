@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.3/appliance/consumption-pricing.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-07-21T11:18:14-07:00" />
+<meta property="article:published_time" content="2021-07-29T21:27:12-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Consumption-based pricing”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on your users’ usage of the ThoughtSpot product. When you purchase a consumption-based ThoughtSpot license, ThoughtSpot bills you based on credits. The ThoughtSpot consumption licensing model is available for both ThoughtSpot Cloud and for Embrace software deployment on your cloud platform.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/appliance/consumption-pricing.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/appliance/consumption-pricing.html","headline":"[“Consumption-based pricing”]","dateModified":"2021-07-21T11:18:14-07:00","datePublished":"2021-07-21T11:18:14-07:00","@context":"https://schema.org"}</script>
+{"description":"ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on your users’ usage of the ThoughtSpot product. When you purchase a consumption-based ThoughtSpot license, ThoughtSpot bills you based on credits. The ThoughtSpot consumption licensing model is available for both ThoughtSpot Cloud and for Embrace software deployment on your cloud platform.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/appliance/consumption-pricing.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/appliance/consumption-pricing.html","headline":"[“Consumption-based pricing”]","dateModified":"2021-07-29T21:27:12-07:00","datePublished":"2021-07-29T21:27:12-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3535,12 +3535,6 @@ $(document).ready(function(){
             
               
                 
-                  <li><a href="/6.3/appliance/consumption-pricing-faq.html">Consumption-based pricing FAQ</a></li>
-                
-              
-            
-              
-                
                   <li><a href="/6.3/appliance/contact.html">Contact support</a></li>
                 
               
@@ -5483,7 +5477,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    6 minutes
+    9 minutes
   
 </span> -->
 
@@ -5491,7 +5485,7 @@ $('#toc').on('click', 'a', function() {
 
   <p>ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on your users’ usage of the ThoughtSpot product. When you purchase a consumption-based ThoughtSpot license, ThoughtSpot bills you based on <a href="#credits">credits</a>. The ThoughtSpot consumption licensing model is available for both ThoughtSpot Cloud and for Embrace software deployment on your cloud platform.</p>
 
-<p>Refer to the <a href="/6.3/admin/ts-cloud/consumption-pricing-faq.html">Consumption pricing FAQ</a> for more information. To learn about each of ThoughtSpot’s pricing options, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</p>
+<p>To learn about each of ThoughtSpot’s pricing options, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>. ThoughtSpot offers consumption- and capacity-based pricing. Each cluster must have a discrete pricing model. You cannot license one cluster as both consumption and capacity, but you can have multiple clusters with each using a different pricing model.</p>
 
 <h2 id="rights-obligations">Using the ThoughtSpot consumption licensing model with Embrace</h2>
 <p>We originally introduced the consumption-based pricing model in our ThoughtSpot Cloud offering. You can now use the consumption pricing model when you deploy ThoughtSpot Software in your own cloud environment, and use Embrace connections to your data.</p>
@@ -5505,7 +5499,7 @@ $('#toc').on('click', 'a', function() {
 <dl>
 <dlentry>
 <dt>Supported deployments</dt>
-<dd><p>The ThoughtSpot consumption licensing model is available for both <a href="https://cloud-docs.thoughtspot.com">ThoughtSpot Cloud</a>, and for ThoughtSpot Software deployments that use <a href="/6.3/data-integrate/embrace/embrace-intro.html">Embrace</a> to connect to data.</p>
+<dd><p>The ThoughtSpot consumption licensing model is available for both <a href="https://cloud-docs.thoughtspot.com" target="_blank">ThoughtSpot Cloud</a>, and for ThoughtSpot Software deployments that use <a href="/6.3/data-integrate/embrace/embrace-intro.html">Embrace</a> to connect to data.</p>
 <p>Consumption pricing <strong>does not apply</strong> to ThoughtSpot Software deployments that use the ThoughtSpot Falcon database, where you import/maintain data using <a href="/6.3/data-integrate/dataflow/dataflow.html">Dataflow</a> or another ETL tool.</p></dd>
 </dlentry>
 <dlentry>
@@ -5523,23 +5517,26 @@ $('#toc').on('click', 'a', function() {
 <dd>The inbound port from the IP address that we provide at the time of licensing; we use this to send you credit consumption data.</dd></dlentry></dl></dd></dlentry></dl>
 
 <h2 id="credits">Credits</h2>
-<p>You purchase and consume credits with the consumption model. A credit is a unit of measure.  Usage of ThoughtSpot, measured in <a href="#usage-minutes">usage minutes</a>, consumes credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, or making any administrative changes or setup. Each user actively using ThoughtSpot consumes credits, even if they are using the product at the same time. You consume 1 credit for each usage minute. ThoughtSpot refers to this as <em>credit consumption rate</em> or <em>credit burn rate.</em></p>
+<p>You purchase and consume credits with the consumption model. A credit is a unit of measure. When members of your organization utilize ThoughtSpot, we measure <a href="#usage-minutes">usage minutes</a>, which consume available credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, making any administrative changes, or changing setup configuration.  Each user who actively uses ThoughtSpot consumes credits, even if they are using the product at the same time. Each usage minute is equivalent to consuming one (1) credit. ThoughtSpot refers to this as <strong>credit consumption rate</strong> or <strong>credit burn rate</strong>.</p>
 
 <h2 id="usage-minutes">Usage minutes</h2>
-<p>Usage minutes refer to the number of minutes of ThoughtSpot usage. Each user’s usage minutes are calculated separately. Usage minutes are calculated in the following ways:</p>
+<p>Usage minutes refer to the number of minutes that the members of your organization use ThoughtSpot. We calculate each user’s usage minutes separately.</p>
+
+<p>We calculate usage minutes in the following manner:</p>
 <ul>
   <li>Any user activity in the application kicks off a 10 minute usage block.</li>
-  <li>Any additional user activity within that 10 minutes does not drive additional consumption and the whole session will be charged at 10 minutes.</li>
-  <li>The first click after the initial 10 minute window ends, initiates a second 10 minute session.</li>
+  <li>Any additional user activity within that 10 minutes does not drive additional consumption; we charge the whole session at 10 minutes.</li>
+  <li>The first click after the initial 10 minute window ends initiates a second 10 minute session.</li>
+  <li>If the user activity ceases within a 10-minute time interval, then restarts and lasts past the end of the current 10-minute time interval, it triggers the subsequent time interval.</li>
   <li>
-    <p>Each user’s usage is counted separately.</p>
+    <p>We calculate each user’s activity separately. For example, if 10 users are using ThoughtSpot for the same 10 minutes, we count 100 minutes of usage.</p>
 
     <p><img src="/6.3/images/consumption-example.png" alt="Usage minutes example" title="Usage minutes example" /></p>
   </li>
 </ul>
 
 <h2 id="user-activity-that-incurs-usage-minutes">User activity that incurs usage minutes</h2>
-<p>User activity is defined as any user-triggered (initiated) action in ThoughtSpot, starting from the time the action is initiated until the time that the results of the action(s) are visible to the user in the product. This includes any time spent by ThoughtSpot in processing the user-triggered action in order to present the results to the user. User activity is measured in <a href="#usage-minutes">usage minutes</a>.</p>
+<p>We define user activity as any user-triggered (initiated) action in ThoughtSpot, starting from the time the user initiates the action, until the time that the results of the action(s) become visible to the user of the product. This includes any time used by ThoughtSpot to process the user-triggered action in order to present the results to the user. We measure user activity in <a href="#usage-minutes">usage minutes</a>. You can consume usage minutes during implementation and training prior to go-live, as well as after.</p>
 
 <p>User activity that incurs usage minutes includes any user interaction with the product, such as:</p>
 <ul>
@@ -5553,8 +5550,22 @@ $('#toc').on('click', 'a', function() {
     </ul>
   </li>
   <li>Browser actions (such as refreshing the page or using the <strong>forward</strong> or <strong>back</strong> buttons)</li>
-  <li>Any scrolling in the product that triggers updates to objects or content being viewed
-  For example, if a user is scrolling through a Pinboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Pinboard, resulting in ThoughtSpot loading and displaying additional charts in that Pinboard for the first time, this counts as additional user activity.</li>
+  <li>
+    <p>Any scrolling in the product that triggers updates to objects or content being viewed</p>
+
+    <p>For example, if a user is scrolling through a Pinboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Pinboard, resulting in ThoughtSpot loading and displaying additional charts in that Pinboard for the first time, this counts as additional user activity.</p>
+  </li>
+</ul>
+
+<h2 id="user-activity-that-does-not-incur-usage-minutes">User activity that does not incur usage minutes</h2>
+<p>The following do not count toward consumption:</p>
+
+<ul>
+  <li>The only click that does not count as user activity is clicking <strong>Sign out</strong>.</li>
+  <li>Any action that happens outside the product or is not user-triggered inside the product is not considered user activity. For example: the system sending out a scheduled pinboard, a user receiving emails generated by ThoughtSpot based on actions such as scheduled pinboards, welcome or other kinds of emails, and emails sent out as a result of “Following” metrics in the product do not count as user activity. (<em>However, if the user logs in to the product as a result of these emails, that will start user activity</em>).</li>
+  <li>Any non-user-initiated activity in the system does not count as “user activity”. This includes automatically triggered SpotIQ analyses, indexing or other non-user-initiated queries against external warehouses and any other background processes or daemons that are not a result of an explicit user triggered action.</li>
+  <li>Any scrolling on ThoughtSpot product pages that does not update any content on the page does not count towards consumption.</li>
+  <li>Leaving ThoughtSpot open in another tab does not count toward consumption.</li>
 </ul>
 
 <h2 id="monitor-your-consumption">Monitor your consumption</h2>
@@ -5582,6 +5593,9 @@ $('#toc').on('click', 'a', function() {
   <li>Month of Year Credit Usage, by User GUID</li>
 </ul>
 
+<h2 id="consumption-data-storage">Consumption data storage</h2>
+<p>ThoughtSpot stores your consumption data and keeps it secure. A dedicated Amazon S3 bucket is set up to store the user activity CSV files temporarily. Then, the S3 data is uploaded to a searchable data store (Amazon Redshift). There is an S3 bucket prefix for each customer and a unique key for each customer to encrypt it. The encryption key is stored in AWS KMS. As part of the pricing configuration, the customer cluster is configured with an access key to have access to the S3 bucket prefix unique to the cluster. ThoughtSpot deploys and maintains an Amazon Redshift database to load the consumption pricing data. Every customer cluster that is enabled for consumption pricing gets access to only that cluster’s consumption pricing data. A unique database user is created in Redshift and configured in the customer cluster as part of the pricing configuration. This results in a unique Embrace connection per customer cluster to the ThoughtSpot manager consumption pricing database (Redshift). This is used to view the consumption pricing related reports in the customer’s ThoughtSpot instance.</p>
+
   <div class="tags">
     <div style="float:right;">
       
@@ -5607,9 +5621,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jul 21, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Jul 29, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 4/19/2021<br/>  -->
+         <!-- <span>Page last updated:</span> 7/28/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
