@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/latest/release/fixed.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-07-28T15:04:23-07:00" />
+<meta property="article:published_time" content="2021-07-30T09:59:21-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Fixed issues”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"These are the issues we fixed in recent ThoughtSpot releases.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/release/fixed.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/release/fixed.html","headline":"[“Fixed issues”]","dateModified":"2021-07-28T15:04:23-07:00","datePublished":"2021-07-28T15:04:23-07:00","@context":"https://schema.org"}</script>
+{"description":"These are the issues we fixed in recent ThoughtSpot releases.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/latest/release/fixed.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/latest/release/fixed.html","headline":"[“Fixed issues”]","dateModified":"2021-07-30T09:59:21-07:00","datePublished":"2021-07-30T09:59:21-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3546,12 +3546,6 @@ $(document).ready(function(){
             
               
                 
-                  <li><a href="/latest/appliance/consumption-pricing-faq.html">Consumption-based pricing FAQ</a></li>
-                
-              
-            
-              
-                
                   <li><a href="/latest/appliance/contact.html">Contact support</a></li>
                 
               
@@ -5467,7 +5461,7 @@ $(document).ready(function(){
   Estimated reading time:
   
   
-    23 minutes
+    25 minutes
   
 </span> -->
 
@@ -5488,6 +5482,8 @@ $(document).ready(function(){
 <details>
 <summary>6.3.X Releases</summary>
 <ul>
+<li><a href="#6-3-1-cu4">6.3.1 CU4 Fixed issues</a></li>
+<li><a href="#6-3-1-cu1">6.3.1 CU1 Fixed issues</a></li>
 <li><a href="#6-3-1">6.3.1 Fixed issues</a></li>
 <li><a href="#6-3">6.3 Fixed issues</a></li>
 </ul>
@@ -5627,6 +5623,56 @@ $(document).ready(function(){
   <li>An error occurs during DataFlow sync after adding a table.</li>
   <li>Zooming in on a map visualization is not possible when using latitude and longitude.</li>
   <li>A formula that uses <em>to_string</em> on a round fails.</li>
+</ul>
+
+<p><a id="6-3-1-cu4"></a></p>
+<h2 id="631-cu4-fixed-issues">6.3.1 CU4 Fixed issues</h2>
+
+<p>These are the issues we fixed in ThoughtSpot Release 6.3.4 CU1.</p>
+
+<ul>
+  <li>Share button does not work in certain circumstances.</li>
+  <li>Charts and pinboards cannot be downloaded as a PDF when URL encoding is enabled.</li>
+  <li>Clicking in the search bar does not place the cursor at the expected location when using the Google Chrome 92 browser.</li>
+  <li>Configuring filters on a pinboard causes it to stop working.</li>
+  <li>Geomaps do not render properly in a pinboard.</li>
+  <li>Japanese pinboard title in schedule emails displays incorrectly.</li>
+  <li>Scheduling a pinboard using the .CSV option does not work.</li>
+  <li>Sharing certain pinboards does not work.</li>
+  <li>Certain pinboard visualizations do not display after a filter is applied.</li>
+  <li>Pivot tables do not display.</li>
+  <li>A calculated dimension in a worksheet is not indexed.</li>
+  <li><code class="language-plaintext highlighter-rouge">unique_count_if(group_sum())</code> is not allowed in formula parser v2.</li>
+  <li>Null is not allowed in a complex <code class="language-plaintext highlighter-rouge">if-elif-else</code> condition in formula parser v2.</li>
+  <li>Offline Python package download fails for ruamel package for Python 2.7.</li>
+  <li>A worksheet cannot be edited.</li>
+  <li>Exporting a table in xlsx format causes the date format to change from dd/mm/yyyy to mm/dd/yyyyy.</li>
+  <li>Versus columns added for UNKNOWN diff analysis cannot be found.</li>
+  <li>Pinboards cannot be copied.</li>
+  <li>Editing answers on a particular pinboard causes an internal Falcon error.</li>
+  <li>Changing a date filter in explore mode does not work.</li>
+  <li>Captions in charts do not work.</li>
+</ul>
+
+<p><a id="6-3-1-cu1"></a></p>
+<h2 id="631-cu1-fixed-issues">6.3.1 CU1 Fixed issues</h2>
+
+<p>These are the issues we fixed in ThoughtSpot Release 6.3.1 CU1.</p>
+
+<ul>
+  <li>Additional scrollbars appear on the ThoughtSpot Developer portal home page.</li>
+  <li>R output is not viewable in a pinboard.</li>
+  <li>When using latitude and longitude, map visualizations do not zoom in to the data.</li>
+  <li>Pinboard visualizations do not retrieve data.</li>
+  <li>When clicking <strong>SpotIQ</strong> in the top navigation bar, users are redirected to the ThoughtSpot home page.</li>
+  <li>Query shows incorrect results because a measure is grouped by, but not summed.</li>
+  <li>“No FileSystem for scheme: hdfs” error appears when user attempts to restore a DataFlow backup.</li>
+  <li>Free trial user does not receive an email with an activation link after signing up or resetting their password.</li>
+  <li>API response times are slower than normal.</li>
+  <li>After upgrade, a postgres error appears.</li>
+  <li>Users assigned the “Cannot create or update Pinboards” group permission can create pinboards or pin answers to pinboards.</li>
+  <li>The postgres upgrade temporary directory is not configurable.</li>
+  <li>Pinboard translation is slow, causing performance issues.</li>
 </ul>
 
 <p><a id="6-3-1"></a></p>
@@ -6025,7 +6071,7 @@ $(document).ready(function(){
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jul 28, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Jul 30, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 06/23/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/latest/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
