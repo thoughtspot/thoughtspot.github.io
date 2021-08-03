@@ -17,7 +17,7 @@ You can get pinboards emailed to you on a regular basis and do analysis offline.
 This introduces an additional format for you to consume and share pinboards with
 others, including those who don’t have a ThoughtSpot account.
 
-Contact ThoughtSpot Support if scheduled pinboards is not enabled on your
+[Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) if scheduled pinboards is not enabled on your
 cluster, or you can run the command `tscli scheduled-pinboards` to enable it
 yourself.
 

@@ -1119,7 +1119,7 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli etl enable-lw</code></dt>
 
-    <dd><p>Enables Data Connect.Contact ThoughtSpot Support for assistance in setting this up.</p>
+    <dd><p>Enables Data Connect. <a href="{{ site.baseurl }}/admin/misc/contact.html">Contact ThoughtSpot Support</a> for assistance in setting this up.</p>
     <p>This subcommand has the following parameters:</p>
 
       <dl>

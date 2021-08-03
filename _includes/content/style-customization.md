@@ -3,7 +3,7 @@ matches with your company's look and feel. To re-brand the interface, you can
 use the style customization option found in the Admin Console in the ThoughtSpot
 web application. It lets you change the logo, application background color,
 chart color palettes, and footer text. For help with chart and table
-visualization fonts, contact ThoughtSpot support.
+visualization fonts, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 This is especially useful if you're using the ThoughtSpot APIs for embedding
 visualizations from ThoughtSpot in your own web portal or application. You can
