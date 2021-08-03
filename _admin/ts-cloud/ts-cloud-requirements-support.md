@@ -18,7 +18,7 @@ ThoughtSpot Cloud is now available in the following regions:
 ## Requirements
 
 - Outbound port 443 must be open.
-- If you are going to use Snowflake with ThoughtSpot Cloud, and you have a network policy set in Snowflake, you must add the outbound IP address of your ThoughtSpot Cloud instance to the whitelist inside your Snowflake network policy. Contact ThoughtSpot support for assistance.
+- If you are going to use Snowflake with ThoughtSpot Cloud, and you have a network policy set in Snowflake, you must add the outbound IP address of your ThoughtSpot Cloud instance to the whitelist inside your Snowflake network policy. [Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) for assistance.
 
 ## Supported features
 
