@@ -93,7 +93,7 @@ You need admin privileges to enable SAML SSO authentication.
 ThoughtSpot supports SAML authentication with several identity and access management providers, such as Okta, OneLogin, PingFederate, Microsoft ADFS, Microsoft Azure Active Directory, and so on.
 If you want to use one of these providers as your IdP, make sure you follow the SAML configuration steps described in the Identity provider’s documentation.
 
-To determine if ThoughtSpot supports your preferred IdP, contact ThoughtSpot support.
+To determine if ThoughtSpot supports your preferred IdP, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 {% include note.html content="When configuring SAML 2.0, make sure you map the SAML user attributes to appropriate fields. For example, you must map the SAML user’s username to the <code>NameId</code> attribute in OneLogin. Similarly, in Okta, you must map the username to <code>userPrincipalName</code>. You must also map the email address of the user to the mail attribute, and the display name you would like to use to the correct display name attribute. If your IdP does not allow you to import the IdP metadata XML file, you must map these values manually." %}
 

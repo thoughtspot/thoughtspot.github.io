@@ -122,7 +122,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dl>
 <dlentry id="viz-embed-sdk-notification">
 <dt>Visual Embed SDK notification when third-party cookies are disabled</dt>
-<dd>When a user accesses the embedded application from a web browser that has third-party cookies disabled, the Visual Embed SDK emits the <code>NoCookieAccess</code> event to notify the developer. Cookies are disabled by default in Safari. Users can enable third-party cookies in Safari’s Preferences setting page or use another web browser. To know how to enable this setting by default on Safari for a ThoughtSpot embedded instance, contact ThoughtSpot Support.</dd></dlentry>
+<dd>When a user accesses the embedded application from a web browser that has third-party cookies disabled, the Visual Embed SDK emits the <code>NoCookieAccess</code> event to notify the developer. Cookies are disabled by default in Safari. Users can enable third-party cookies in Safari’s Preferences setting page or use another web browser. To know how to enable this setting by default on Safari for a ThoughtSpot embedded instance, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd></dlentry>
 </dl>
 
 <dl>
@@ -422,7 +422,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 <dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers Pinboard</a>:
 <ul>
 <li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
-<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to contact ThoughtSpot Support to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
+<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a> to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
 </dlentry>
 
 <dlentry id="pinboard-download-control">
