@@ -30,7 +30,7 @@
     </dlentry>
     <dlentry id="schedule-pinboards">
       <dt>Can schedule pinboards</dt>
-      <dd>Can create and edit Pinboard schedules for other users and groups. Without this privilege, users can only create Pinboard schedules for themselves. This feature is not available by default. Contact ThoughtSpot support to enable it.</dd>
+      <dd>Can create and edit Pinboard schedules for other users and groups. Without this privilege, users can only create Pinboard schedules for themselves. This feature is not available by default. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to enable it.</dd>
     </dlentry>
     <dlentry id="spotiq">
       <dt>Has SpotIQ privilege</dt>
@@ -48,7 +48,7 @@
     <dlentry id="read-only">
       <dt>Cannot create or update Pinboards</dt>
       <dd><p>Users are limited to viewing and exploring curated Pinboards (and Answers). They cannot copy, edit, download, or share them.</p>
-      <p>This privilege is designed to support embedded implementations, and is not available by default. Contact ThoughtSpot support to enable it.</p>
+      <p>This privilege is designed to support embedded implementations, and is not available by default. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to enable it.</p>
       <p>See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a> for a deeper discussion of this privilege, and an implementation example.</p></dd>
     </dlentry>
   </dl>

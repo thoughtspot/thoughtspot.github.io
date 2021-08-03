@@ -657,7 +657,7 @@ These are the issues we fixed in ThoughtSpot Release 4.5.1.
 - An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API customers will have to be updated to be compliant with this new feature. The primary things that could be affected are:
   - Sync scripts that manage users and groups creation.
   - Scripts that use the public APIs to fetch data.
-- The easiest way to diagnose this would be to check for the inability of the script to log in to the system. Please contact ThoughtSpot Support to get guidance on the steps to resolve the issue.
+- The easiest way to diagnose this would be to check for the inability of the script to log in to the system. Please [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to get guidance on the steps to resolve the issue.
 
 <a id="4-5"></a>
 ## 4.5 Fixed issues

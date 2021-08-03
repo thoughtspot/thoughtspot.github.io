@@ -16,7 +16,7 @@ Embrace supports the following external databases:
 - Teradata
 - SAP HANA <span class="label label-beta">Beta</span>
 
-To enable Embrace, contact ThoughtSpot support.
+To enable Embrace, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ## How it works
 You create a connection to the external database, choosing the columns from each table that you want to explore in your live query. Primary key and foreign key relationships are imported along with the primary and foreign key tables. If there are any joins in the tables of your connection, they are also imported. After your connection is complete, it becomes a **linked** data source in ThoughtSpot that allows you to query the external database directly. It’s easy to apply transformations and filter the data also.

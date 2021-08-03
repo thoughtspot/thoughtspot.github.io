@@ -17,7 +17,9 @@ When a person clicks the sign-up button, they go to a sign-up page that you've a
 
 Follow this syntax for creating the URL:
 
-```https://<your-thoughtspot-URL>/?signUpEnabled=true&signUpButtonLink=https://<your-sign-up-page-URL> ```
+```
+https://<your-thoughtspot-URL>/?signUpEnabled=true&signUpButtonLink=https://<your-sign-up-page-URL>
+```
 
 Example: `https://thoughtspot.mycompany.com/?signUpEnabled=true&signUpButtonLink=https://signup.mycompany.com/thoughtspot`
 
@@ -27,10 +29,12 @@ By default, the button text is ‘Sign up’, but you have the option to change 
 
 Follow this syntax for creating the URL with custom button text:
 
-```https://<your-thoughtspot-URL>/?signUpEnabled=true&signUpButtonText=<your-sign-up-button-text>&signUpButtonLink=https://<your-sign-up-page-URL> ```
+```
+https://<your-thoughtspot-URL>/?signUpEnabled=true&signUpButtonText=<your-sign-up-button-text>&signUpButtonLink=https://<your-sign-up-page-URL>
+```
 
 Example: `https://thoughtspot.mycompany.com/?signUpEnabled=true&signUpButtonText=Request%20Account&signUpButtonLink=https://signup.mycompany.com/thoughtspot`
 
 ## Display the sign-up button by default
 
-If you want to display the sign-up button on the ThoughtSpot sign-in page without using the special sign-up URL, contact ThoughtSpot support.
+If you want to display the sign-up button on the ThoughtSpot sign-in page without using the special sign-up URL, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
