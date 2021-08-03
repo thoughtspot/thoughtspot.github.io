@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
 
-{% include note.html content="Certain elements of table configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. If the new Answer experience is on for your company, you can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="Certain elements of table configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, conditional formatting for measures in pivot tables, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
 
 ## Understand conditional formatting
 
@@ -20,7 +20,7 @@ You can add visual cues for KPIs (Key Performance Indicators) or threshold metri
 {: id="table"}
 ## Apply conditional formatting to a table
 
-You can apply conditional formatting to both table cells and column summaries. You can specify a background color, font color, and/ or font style: bold, italics, underlined, or strikethrough. You can create conditional formatting rules for both measures and attributes.
+You can apply conditional formatting to both table cells and column summaries. You can specify a background color, font color, and/ or font style: bold, italics, underlined, or strikethrough. You can create conditional formatting rules for both measures and attributes. For pivot tables, you can only create conditional formatting rules for measures. Pivot tables follow the same conditional formatting rules as tables, even though they fall under ThoughtSpot's chart category.
 
 {% include note.html content="You can only apply conditional formatting to numbers and strings. For example, you can apply conditional formatting to a <code>month of year</code> column, with values such as <code>January</code>, but not to date column where dates are in the format <code>1 Jan 2021</code>. For pivot tables, you can only apply conditional formatting to measure, not attributes." %}
 

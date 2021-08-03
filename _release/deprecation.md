@@ -28,7 +28,7 @@ The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will 
 
 {: id="deprecate-may-cloud"}
 ## Deprecated in May Cloud
-The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will deprecate the following features. ThoughtSpot will drop support for these features in a later release. If you have the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) <span class="badge badge-update">Beta</span> (off by default) turned on, these features are de-supported in May Cloud. To use these features, [turn the new Answer experience off]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html#toggle-on-off).
+The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will deprecate the following features. ThoughtSpot will drop support for these features in a later release. If you have the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) <span class="badge badge-update">Beta</span> (off by default) turned on, these features are de-supported in May Cloud. To use these features, turn the new Answer experience off [individually]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html#toggle-on-off) or [for your whole company]({{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html).
 
 <dl>
 <dlentry><dt>Multiple join path resolution within the formula editor or a search</dt>

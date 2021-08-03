@@ -45,7 +45,8 @@ To see our feature deprecation plans, please see [Deprecation Announcements]({{ 
 
 <dlentry id="pivot-tables">
 <dt>Conditional formatting for pivot tables</dt>
-<dd>You can now perform conditional formatting on measures in pivot tables. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table">Apply conditional formatting</a> and <a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a>.</dd>
+<dd><p>You can now perform conditional formatting on measures in pivot tables. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table">Apply conditional formatting</a> and <a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a>.</p>
+<p>To perform conditional formatting on measures in pivot tables, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> <span class="badge badge-update">Beta</span> (off by default) enabled on your cluster.</p></dd>
 </dlentry>
 
 <dlentry id="embedded-link-format">
@@ -390,7 +391,7 @@ The <b>Download</b> action is available for chart visualizations.</div>
 
 <dlentry id="new-answer-experience">
 <dt>New Answer experience <span class="badge badge-update">Beta</span></dt>
-<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is in <span class="badge badge-update">Beta</span> and off by default. If it is on for your company, you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
+<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is in <span class="badge badge-update">Beta</span> and off by default, but the option to turn it on or off individually is on by default. You can toggle it on or off individually from the <strong>Experience manager</strong> in your profile, or for the whole company from the <a href="{{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html">Search & SpotIQ</a> section of the Admin Console.</p>
 <p>The new Answer experience contains the following features and enhancements: {% include content/new-answer-experience-features.md %}</p>
 <p>{% include content/new-answer-experience-deprecations.md %}</p>
 <p> Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience">New Answer experience</a> for more information on the behavior of these features.</p>

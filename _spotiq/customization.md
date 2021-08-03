@@ -5,7 +5,7 @@ last_updated: 4/21/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{% include note.html content="The new SpotIQ analysis window is part of the new Answer experience. The new Answer experience is in Beta and off by default. If you have the new Answer experience on, the new version of the SpotIQ analysis window appears when you run SpotIQ on data points in an Answer, but not when you run it on data points in a Pinboard. If the new Answer experience is on for your company, you can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="The new SpotIQ analysis window is part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. If you have the new Answer experience on, the new version of the SpotIQ analysis window appears when you run SpotIQ on data points in an Answer, but not when you run it on data points in a Pinboard. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
 
 Everywhere in ThoughtSpot where you can run **SpotIQ analyze**, you
 can configure a customized SpotIQ analysis. The customized analysis can be
