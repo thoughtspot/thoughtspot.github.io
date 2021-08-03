@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Certain elements of table configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, conditional formatting for measures in pivot tables, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+{% include note.html content="Certain elements of table configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, conditional formatting for measures in pivot tables, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
 
 In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type `revenue`, you see the total sum of revenue as a single number. If you include the keyword `monthly`, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns, either from the table itself or from the **Edit table: Configure** menu. You can also change the column widths.
 
@@ -95,7 +95,7 @@ You can perform conditional formatting on both measures and attributes, within t
 
 Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table).
 
-Note that certain elements of conditional formatting are part of the new Answer experience <span class="badge badge-update">Beta</span> (off by default). These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. The new Answer experience is in <span class="badge badge-update">Beta</span> and off by default. You can toggle it on or off from the **Experience manager** in your profile.
+Note that certain elements of conditional formatting are part of the new Answer experience <span class="badge badge-update">Beta</span> (off by default). These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. The new Answer experience is in <span class="badge badge-update">Beta</span> and off by default. You can toggle it on or off from the **Experience manager** in your profile. If that option is not available, contact your administrator.
 
 ## Sort columns
 
