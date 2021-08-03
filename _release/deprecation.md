@@ -40,3 +40,13 @@ The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will 
 <dlentry><dt>Ask an Expert</dt>
 <dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
 </dl>
+
+{: id="de-support-september-cloud"}
+## De-supported in September Cloud
+
+The September Cloud release of ThoughtSpot Software, targeted for September 2021 (GA), will drop support for the following feature:
+
+<dl>
+<dlentry><dt>Ask an Expert</dt>
+<dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
+</dl>
