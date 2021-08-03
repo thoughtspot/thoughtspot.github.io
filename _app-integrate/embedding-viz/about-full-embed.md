@@ -135,7 +135,7 @@ In ThoughtSpot, you can disable error messages within the ThoughtSpot `iframe`. 
 
 This approach suppressing error messages inside the `<iframe>`, and uses the `window.postMessage` function to passes them through to the parent application, which acts as the listener.
 
-You can view these 'hidden' messages in the console logs. Contact ThoughtSpot Support to enable this feature.
+You can view these 'hidden' messages in the console logs. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable this feature.
 
 ## Additional notes
 
