@@ -45,14 +45,16 @@ The 7.1.1 release of ThoughtSpot Software, targeted for October 2021 (GA), will 
 <dd>We consolidated client-side column summaries and headlines from the backend into new headline summaries that come from the backend. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
 <dlentry><dt>R integration</dt>
 <dd>Customers currently use R to generate custom charts. The current integration with R works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support R integration.</dd></dlentry>
-<dlentry><dt>Ask an Expert</dt> <!-- confirming with arpit -->
-<dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a different way, by completing <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries on their own data sources.</dd></dlentry>
 </dl>
 
 {: id="de-support-7-1-1"}
 ## De-supported in 7.1.1
+The 7.1.1 release of ThoughtSpot Software, targeted for October 2021 (GA), will drop support for the following features.
+
 <dl><dlentry><dt>Learn how to use ThoughtSpot Pinboard</dt>
 <dd>This Pinboard contains search replays created in the system. The Replay Search feature is also de-supported in 7.1.1. Customers currently use <strong>Replay search</strong> and the <strong>Learn how to use ThoughtSpot Pinboard</strong> to learn how to use ThoughtSpot's search on data. As an alternative, use <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot search on <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">your company's data</a>.</dd></dlentry>
 <dlentry><dt>Replay search</dt>
 <dd>This feature allowed you to replay the search used to create an Answer. As an alternative, use <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot search on <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">your company's data</a>.</dd></dlentry>
+<dlentry><dt>Ask an Expert</dt>
+<dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a different way, by completing <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries on their own data sources.</dd></dlentry>
 </dl>
