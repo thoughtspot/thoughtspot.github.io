@@ -34,7 +34,7 @@ The current Instant Insights feature works only in on-prem deployments that use 
 
 {: id="de-support-7-1-1"}
 ## Deprecated in 7.1.1
-The 7.1.1 release of ThoughtSpot Software, targeted for October 2021 (GA), will deprecate the following features. ThoughtSpot will drop support for these features in a later release. If you have the new Answer experience turned on in 7.1.1, these features are de-supported in 7.1.1. To use these features, turn the new Answer experience off.
+The 7.1.1 release of ThoughtSpot Software, targeted for November 2021 (GA), will deprecate the following features. ThoughtSpot will drop support for these features in a later release. If you have the new Answer experience turned on in 7.1.1, these features are de-supported in 7.1.1. To use these features, turn the new Answer experience off.
 
 <dl>
 <dlentry><dt>Multiple join path resolution within the formula editor or a search</dt>
@@ -49,7 +49,7 @@ The 7.1.1 release of ThoughtSpot Software, targeted for October 2021 (GA), will 
 
 {: id="de-support-7-1-1"}
 ## De-supported in 7.1.1
-The 7.1.1 release of ThoughtSpot Software, targeted for October 2021 (GA), will drop support for the following features.
+The 7.1.1 release of ThoughtSpot Software, targeted for November 2021 (GA), will drop support for the following features.
 
 <dl><dlentry><dt>Learn how to use ThoughtSpot Pinboard</dt>
 <dd>This Pinboard contains search replays created in the system. The Replay Search feature is also de-supported in 7.1.1. Customers currently use <strong>Replay search</strong> and the <strong>Learn how to use ThoughtSpot Pinboard</strong> to learn how to use ThoughtSpot's search on data. As an alternative, starting in 7.0.1, use <a href="https://docs.thoughtspot.com/7.0/end-user/onboarding/search-assist.html">Search Assist</a> to learn how to use ThoughtSpot search on <a href="https://docs.thoughtspot.com/7.0/admin/worksheets/search-assist-coach.html">your company's data</a>.</dd></dlentry>
