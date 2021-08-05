@@ -42,9 +42,9 @@ To simplify the process of creating worksheets on Free Trial, we added tooltips 
 
 The worksheet creation tooltips appear when you create a worksheet during onboarding. To view examples of typical fact tables, proceed to step one of the worksheet creation process in Setup, and click the information icon to the right of the **Select a fact table** dialog. To view examples of typical dimension tables, click the information icon to the right of the **Select up to 4 dimension tables** dialog.
 
-![]({{ site.baseurl }}/images/free-trial-pendo-fact-table.png "Fact table tooltip"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-pendo-fact-table.png "Fact table tooltip")
 
-![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip")
 
 
 ### Free Trial Make It shine
@@ -61,13 +61,13 @@ These are the fixes we applied to Free Trial:
 These are the fixes we applied to Free Trial:
 
 * To facilitate account creation and login, Free Trial login now asks for email address rather than user name.
-![]({{ site.baseurl }}/images/free-trial-login-email-address.png "Email address login"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-login-email-address.png "Email address login")
 
 * The countdown banner for users on their last day of Free Trial now reads: “Only 1 day remaining in your free trial. Get ThoughtSpot for your organization. Upgrade now.”
-![]({{ site.baseurl }}/images/free-trial-countdown-banner-1.png "One day remaining on free trial"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-countdown-banner-1.png "One day remaining on free trial")
 
 * The connection creation interface prompts users to “confirm” their connection.
-![]({{ site.baseurl }}/images/free-trial-connection-confirm.png "Error message for incorrect user name"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-connection-confirm.png "Error message for incorrect user name")
 
 * ThoughtSpot Free Trial does not send password reset emails to expired accounts.
 
@@ -77,13 +77,13 @@ These are the fixes we applied to Free Trial:
 These are the changes we made to Free Trial.
 
 * We fixed the username/password error message when users create a Snowflake connection. Previously, users who entered an incorrect username or password would see a Snowflake IP whitelisting error message.<br>
-![]({{ site.baseurl }}/images/free-trial-username-error.png "Error message for incorrect user name"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-username-error.png "Error message for incorrect user name")
 
 * We removed the prompt to **Search now** after users create a connection. Now, users can return directly to Setup to continue setting up their Free Trial account.<br>
 **Before:**<br>
-![]({{ site.baseurl }}/images/free-trial-search-prompt.png "Prompt to Search Now"){: .inline}<br>
+![]({{ site.baseurl }}/images/free-trial-search-prompt.png "Prompt to Search Now")<br>
 **After:**<br>
-![]({{ site.baseurl }}/images/free-trial-no-search-prompt.png "Back to Setup"){: .inline}
+![]({{ site.baseurl }}/images/free-trial-no-search-prompt.png "Back to Setup")
 
 
 ## May 5, 2021
