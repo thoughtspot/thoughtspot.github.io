@@ -87,6 +87,7 @@ h3 {/*the list-style-image element is just a blue circle - we can get something 
      }
 
      ul {
-       list-style-type: none;
+       list-style-type: disc;
        padding-left: 0;
+       margin-left: 7px;
      }
