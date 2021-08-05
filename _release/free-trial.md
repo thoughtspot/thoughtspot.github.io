@@ -1,11 +1,33 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 06/30/2021
+last_updated: 08/05/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## Aug 5, 2021
+
+### Naming joins in Free Trial
+
+Previously, the **Create join** process automatically named joins according to the source and destination table names. This practice prevented users from creating multiple joins between the same two tables. To avoid duplicate join name errors, you can now give each join a unique name during the join creation process.
+
+![]({{ site.baseurl }}/images/free-trial-create-join.png "Free Trial join creation page"){: .inline}
+
+### Error message details
+
+We revised the error messaging in Free Trial to include more pertinent details. Now, you can click **View Details** to see the reason for any error message, and to send an error report to ThoughtSpot.<br/>
+![]({{ site.baseurl }}/images/free-trial-view-details.png "Free Trial view error details"){: .inline} <br/>
+![]({{ site.baseurl }}/images/free-trial-error-report.png "Free Trial report error"){: .inline}
+
+
+### Free Trial Make It Shine
+
+We applied this fix to Free Trial:
+
+- Users invited to join Free Trial through the “invite others” feature can now upload CSV files.
+
 
 ## June 30, 2021
 
