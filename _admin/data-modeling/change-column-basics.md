@@ -45,6 +45,8 @@ To update the column name, follow these steps:
 2. Type in the new column name.
 3. Save your changes.
 
+{% include note.html content="If any of your column names or values contain leading or trailing whitespaces, you must remove these spaces before and after column names and values when loading or modeling data. The ThoughtSpot search bar does not accept column names or values with leading or trailing whitespaces. If you must keep these spaces, tell your users to add a delimiter for the search bar to accept them. For example, if you have a column named <code> Sales </code>, with a space before and after the word Sales, you must enter it in the search bar as <code>' Sales '</code>, with single quotes surrounding the name. Otherwise, ThoughtSpot automatically removes the extra spaces and does not recognize the column name." %}
+
 ## Change column description
 
 The **Description** (UI)/ **ColumnDescription** (model file) parameter is an optional description
