@@ -13,6 +13,8 @@ The search bar shows boxes around each search phrase, so you can easily see wher
 
 ![Measures, attributes, and filters in the search bar]({{ site.baseurl }}/images/search-bar-basics.png "Measures, attributes, and filters in the search bar")
 
+{% include note.html content="If any of your column names or values contain leading or trailing whitespaces, you must add a delimiter for the search bar to accept them. For example, if you have a column named <code> Sales </code>, with a space before and after the word Sales, you must enter it in the search bar as <code>' Sales '</code>, with single quotes surrounding the name. Otherwise, ThoughtSpot automatically removes the extra spaces and does not recognize the column name. Alternatively, you can ask your administrator to remove the spaces before and after column names and values." %}
+
 ## Editing a search
 
 You can edit a search without affecting existing search results.  When you click a search phrase, it is highlighted, and ThoughtSpot displays other suggestions from which you can choose to replace the highlighted phrase. When you hover over a boxed phrase, you can see an **x**, which you can click to remove it from the search. You can insert a new phrase in the middle of a search, by clicking between phrases and entering the new phrase. You can even merge phrases without breaking the search. As you edit your search, ThoughtSpot continuously generates new results.
