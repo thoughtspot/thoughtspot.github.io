@@ -1,6 +1,6 @@
 ---
 title: [DataFlow Tips]
-last_updated: 05/13/2021
+last_updated: 08/05/2021
 summary: "We have several tips for managing the data sync in your organization."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -22,13 +22,13 @@ Epoch date and time options in the TQL expression editor let you configure pre-s
 <dlentry id="current-timestamp-epoch">
 <dt>$$CurrentTimestampEpochAdd</dt>
 <dd>Example of pre-sync script: <br/>
-<code>delete from "DataFlow_BD"."falcon_defaut_schema"."test_tql" where C_DATE > $$CurrentDateEpochAdd(1)</code></dd>
+<code>delete from "DataFlow_BD"."falcon_default_schema"."test_tql" where C_DATE > $$CurrentDateEpochAdd(1)</code></dd>
 </dlentry>
 
 <dlentry id="current-date-epoch">
 <dt>$$CurrentDateEpochAdd</dt>
 <dd>Example of post-sync script: <br/>
-<code>delete from "DataFlow_BD"."falcon_defaut_schema"."test_tql" where C_TIMESTAMP > $$CurrentTimestampEpochAdd(1)</code></dd>
+<code>delete from "DataFlow_BD"."falcon_default_schema"."test_tql" where C_TIMESTAMP > $$CurrentTimestampEpochAdd(1)</code></dd>
 </dlentry>
 </dl>
 
