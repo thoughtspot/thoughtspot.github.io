@@ -1855,6 +1855,21 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-hana-reference.html
         output: web,embraceGd
+    - levelTwoTitle: Oracle ADW
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-adw.html
+        output: web,embraceGd
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-adw-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-adw-modify.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-adw-reference.html
+        output: web,embraceGd
 # DataFlow only in Software form factor
   - sectiontitle: DataFlow
     output: web,dataflowGD
