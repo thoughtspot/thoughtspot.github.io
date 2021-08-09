@@ -32,7 +32,7 @@ The tables you create to receive the data must have the same number of columns a
   <tr>
     <td>Floating point</td>
     <td><code>DOUBLE</code> or <code>FLOAT</code></td>
-    <td><code>DOUBLE</code> is recommended. <code>DOUBLE</code> has a range of <code>1.7E +/- 308</code> (15 digits).</td>
+    <td>We recommend that you use <code>DOUBLE</code>, because it has a range of 15 significant digits, <code>1.7E +/- 308</code>.<code>FLOAT</code> has a range of 7 significant digits, <code>3.4E +/- 38</code>.</td>
   </tr>
   <tr>
     <td>Boolean</td>
