@@ -1,6 +1,6 @@
 ---
 title: [Managing email and onboarding settings]
-last_updated: 2/24/2021
+last_updated: 7/21/2021
 summary: "Manage email and onboarding settings for your organization from the Admin Console."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -31,7 +31,7 @@ To customize or otherwise manage the ThoughtSpot welcome email for your users, f
 | **Custom admin email** | The email address for your company's ThoughtSpot administrator. |
 | **From ID** | Email address that should send the welcome email. The default is TS Admin &lt;no-reply@customer.thoughtspot.com&gt;. |
 | **Support email ID** | The email address for your company's Support contact. |
-| **'Learn More' link** | A link for users to learn more about ThoughtSpot, or your company's implementation of ThoughtSpot. The default is [https://docs.thoughtspot.com](https://docs.thoughtspot.com){: target="_blank"}, the documentation for ThoughtSpot's software product. |
+| **'Learn More' link** | A link for users to learn more about ThoughtSpot, or your company's implementation of ThoughtSpot. The default is [https://cloud-docs.thoughtspot.com](https://cloud-docs.thoughtspot.com){: target="_blank"}, the documentation for ThoughtSpot's software product. |
 | **Product name** | The name of the product the welcome email is for. The default is ThoughtSpot. |
 | **'Get started' link** | A link to allow users to get started using the product. The default is a link to the cluster you added the user to. |
 | **Custom message** | A custom message for the email. |
