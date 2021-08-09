@@ -4,6 +4,7 @@ summary: Learn about the fields used to create an SAP HANA Server Enterprise con
 last_updated: 07/7/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/dataflow/dataflow-sap-hana-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-sap-hana-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -5,6 +5,7 @@ last_updated: 07/12/2019
 sidebar: mydoc_sidebar
 redirect_from:
 - /7.0.0.mar.sw/release/downloads.html
+- /7.0.1.jun.sw/release/downloads.html
 permalink: /:collection/:path.html
 ---
 

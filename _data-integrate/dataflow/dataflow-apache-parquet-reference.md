@@ -4,6 +4,7 @@ summary: Learn about the fields used to create an Apache Parquet connection with
 last_updated: 09/14/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/dataflow/dataflow-apache-parquet-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-apache-parquet-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

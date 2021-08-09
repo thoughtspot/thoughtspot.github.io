@@ -4,6 +4,7 @@ summary: Learn about the fields used to create a MySQL connection with ThoughtSp
 last_updated: 07/6/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/dataflow/dataflow-mysql-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-mysql-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

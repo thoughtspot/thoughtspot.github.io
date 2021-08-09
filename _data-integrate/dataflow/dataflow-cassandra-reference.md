@@ -4,6 +4,7 @@ summary: Learn about the fields used to create a Cassandra connection with Thoug
 last_updated: 07/03/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/dataflow/dataflow-cassandra-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-cassandra-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

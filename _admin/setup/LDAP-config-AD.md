@@ -4,6 +4,7 @@ last_updated: 10/30/2020
 summary: "ThoughtSpot enables you to set up integration with LDAP using Active Directory. After successful setup, you can authenticate users against a secure LDAP server."
 redirect_from:
 - /7.0.0.mar.sw/admin/setup/LDAP-config-AD.html
+- /7.0.1.jun.sw/admin/setup/LDAP-config-AD.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

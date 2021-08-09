@@ -5,6 +5,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 redirect_from:
 - /7.0.0.mar.sw/release/help-center.html
+- /7.0.1.jun.sw/release/help-center.html
 permalink: /:collection/:path.html
 ---
 

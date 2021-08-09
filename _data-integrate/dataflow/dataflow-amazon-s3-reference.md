@@ -4,6 +4,7 @@ summary: Learn about the fields used to create an Amazon S3 connection with Thou
 last_updated: 07/16/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/dataflow/dataflow-amazon-s3-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-amazon-s3-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
