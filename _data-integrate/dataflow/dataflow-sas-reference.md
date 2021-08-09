@@ -4,6 +4,7 @@ summary: Learn about the fields used to create a SAS connection with ThoughtSpot
 last_updated: 10/27/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/dataflow/dataflow-sas-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-sas-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

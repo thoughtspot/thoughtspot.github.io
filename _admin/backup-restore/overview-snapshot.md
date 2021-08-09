@@ -4,6 +4,7 @@ last_updated: 12/9/2020
 toc: true
 redirect_from:
 - /7.0.0.mar.sw/admin/backup-restore/overview-snapshot.html
+- /7.0.1.jun.sw/admin/backup-restore/overview-snapshot.html
 summary: "A snapshot is a point-in-time image of your running cluster. You can use a snapshot to restore the cluster to a specific point in time. In this section, we describe how to work with the default snapshot configuration that is enabled on every cluster, and how to make manual snapshots."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

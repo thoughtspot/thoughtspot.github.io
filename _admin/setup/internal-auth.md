@@ -6,6 +6,8 @@ summary: "Many organizations don’t use LDAP or active directory for user authe
 redirect_from:
 - /7.0.0.mar.sw/admin/setup/internal-auth.html
 - /7.0.0.mar.sw/admin/ts-cloud/authentication-local.html
+- /7.0.1.jun.sw/admin/setup/internal-auth.html
+- /7.0.1.jun.sw/admin/ts-cloud/authentication-local.html
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html

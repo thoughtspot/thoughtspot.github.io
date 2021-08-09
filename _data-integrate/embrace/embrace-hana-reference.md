@@ -3,6 +3,7 @@ title: [SAP HANA connection reference]
 summary: Learn about the fields used to create an SAP HANA connection using ThoughtSpot Embrace.
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/embrace/embrace-hana-reference.html
+- /7.0.1.jun.sw/data-integrate/embrace/embrace-hana-reference.html
 last_updated: 06/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

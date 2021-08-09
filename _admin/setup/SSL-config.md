@@ -4,6 +4,7 @@ last_updated: 8/27/2020
 summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
 redirect_from:
 - /7.0.0.mar.sw/admin/setup/SSL-config.html
+- /7.0.1.jun.sw/admin/setup/SSL-config.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

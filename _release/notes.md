@@ -5,6 +5,7 @@ last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 redirect_from:
 - /7.0.0.mar.sw/release/notes.html
+- /7.0.1.jun.sw/release/notes.html
 permalink: /:collection/:path.html
 ---
 ThoughtSpot version 7.0.1 is now available. These release notes include information about new and enhanced features.

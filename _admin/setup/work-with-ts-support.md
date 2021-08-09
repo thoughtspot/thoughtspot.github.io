@@ -5,6 +5,7 @@ summary: "There are several configurations you can set up in your installation t
 your company's support from ThoughtSpot works smoothly."
 redirect_from:
 - /7.0.0.mar.sw/admin/setup/work-with-ts-support.html
+- /7.0.1.jun.sw/admin/setup/work-with-ts-support.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

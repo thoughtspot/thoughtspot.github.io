@@ -4,6 +4,7 @@ summary: Learn about the fields used to create a Splunk connection with ThoughtS
 last_updated: 06/19/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/dataflow/dataflow-splunk-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-splunk-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
