@@ -1,11 +1,20 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 08/05/2021
+last_updated: 08/12/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## Aug 12, 2021
+
+### Invitation to shared groups
+
+Users invited to Free Trial through the “Invite others” feature now share access to all groups belonging to the user who invited them. This feature facilitates team sharing and analysis of data objects belonging to shared groups. Due to shared group privileges, invited users can now access SpotIQ insights from the **SpotIQ** tab, and can upload CSV files from the **Setup** tab.
+
+![]({{ site.baseurl }}/images/free-trial-invited-spotiq.png "Free Trial invited users privileges"){: .inline}
+
 
 ## Aug 5, 2021
 
