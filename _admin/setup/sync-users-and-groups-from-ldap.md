@@ -153,6 +153,10 @@ The following table provides a description of each command-line switch available
 	      <td><code>--ldap_hostport</code></td>
 	      <td>AD/LDAP/OpenLDAP server port that is queried. Default is 389.</td>
         </tr>
+    <tr>
+        <td><code>--ldap_type</code></td>
+        <td><p>Specifies if you are using Active Directory (AD) or OpenLdap.</p><p>The default is <code>AD</code>.</p></td>
+    </tr>
 		<tr>
 	      <td><code>--ldap_uname</code></td>
 	      <td>Username for the LDAP/AD/OpenLDAP server.</td>
@@ -167,8 +171,16 @@ The following table provides a description of each command-line switch available
         </tr>
 		<tr>
 	      <td><code>--purge</code></td>
-	      <td>Purges any users that exist in ThoughtSpot, but not in AD or OpenLDAP.</td>
+	      <td>Purges any users or groups that exist in ThoughtSpot, but not in AD or OpenLDAP.</td>
         </tr>
+    <tr>
+      <td><code>--purge_users</code></td>
+      <td>Purges any users that exist in ThoughtSpot, but not in AD or OpenLDAP.</td>
+    </tr>
+    <tr>
+      <td><code>--purge_groups</code></td>
+      <td>Purges any groups that exist in ThoughtSpot, but not in AD or OpenLDAP.</td>
+    </tr>
 		<tr>
 	      <td><code>--basedn</code></td>
 	      <td>Place in the directory that will be searched for users.</td>
@@ -196,6 +208,18 @@ The following table provides a description of each command-line switch available
     <tr>
         <td><code>--debug</code></td>
         <td>Provides additional logs in case of failure or other errors.</td>
-      </tr>	            
+    </tr>
+    <tr>
+        <td><code>--member_str</code></td>
+        <td><p>Provide the member string for AD or OpenLdap.</p><p>The default is <code>member</code>.</p></td>
+    </tr>	  
+    <tr>
+        <td><code>--upsert_group</code></td>
+        <td>Upserts groups during sync. By default, this script only inserts, but does not update.</td>
+    </tr>	  
+    <tr>
+        <td><code>--upsert_user</code></td>
+        <td>Upserts users during sync. By default, this script only inserts, but does not update.</td>
+    </tr>	  	            
   </tbody>
 </table>
