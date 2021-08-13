@@ -28,8 +28,4 @@ To resolve any of these situations, clear the browser cache:
 
 3. Reload the page.
 
-   For example, on Chrome you would click the **Reload** icon:
-
-   ![]({{ site.baseurl }}/images/browser_reload.png "Reload the page")
-
 Now the problem should be fixed, and the page will appear as expected.
