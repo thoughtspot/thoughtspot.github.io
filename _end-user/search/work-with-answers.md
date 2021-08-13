@@ -85,7 +85,6 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 
    The Save Answer dialog box appears.
 
-        ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
-
+   ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
 
 5. Change the name and description, as needed, and click **Save**.
