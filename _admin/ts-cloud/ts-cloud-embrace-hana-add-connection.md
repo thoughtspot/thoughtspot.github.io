@@ -24,7 +24,7 @@ To add a connection to SAP HANA:
     ![Enter connection details]({{ site.baseurl }}/images/HANA-connectiondetails.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/HANA-connectiondetails.png "Enter connection details") -->
 
-    Refer to the [SAP HANA connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-HANA-reference.html#) for more information on each of the specific attributes you must enter for your connection.
+    Refer to the [SAP HANA connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to SAP HANA, by doing the following:
     1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
@@ -51,7 +51,7 @@ The connection you just created is a link to the external data source. If there 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
 ## Related information
-- [Modify an SAP HANA connection]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-modify.html)
-- [SAP HANA connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-reference.html)
+- [Edit an SAP HANA connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-edit-connection.html)
+- [SAP HANA connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html)
 - [Load and manage data]({{ site.baseurl }}/admin/loading/loading-intro.html)
 - [Data and object security]({{ site.baseurl }}/admin/architecture/security.html)

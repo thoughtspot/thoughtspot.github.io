@@ -79,3 +79,23 @@ The following list provides information about connecting to your data in support
 - [Delete a table with object dependencies]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html)
 - [Delete connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html)
 - [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html)
+
+## ![]({{ site.baseurl }}/images/teradata.png){: .inline}
+- [Overview]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata.html)
+- [Add connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-add-connection.html)
+- [Edit connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-edit-connection.html)
+- [Remap connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-remap-connection.html)
+- [Delete a table]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-delete-table.html)
+- [Delete a table with object dependencies]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-delete-table-dependencies.html)
+- [Delete connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-delete-connection.html)
+- [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html)
+
+## ![]({{ site.baseurl }}/images/hana.png){: .inline}
+- [Overview]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana.html)
+- [Add connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-add-connection.html)
+- [Edit connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-edit-connection.html)
+- [Remap connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-remap-connection.html)
+- [Delete a table]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-delete-table.html)
+- [Delete a table with object dependencies]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-delete-table-dependencies.html)
+- [Delete connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-delete-connection.html)
+- [Connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html)

@@ -7,8 +7,8 @@ permalink: /:collection/:path.html
 ---
 Embrace enables you to connect to Teradata databases, to use your data in ThoughtSpot.
 
-- [Add a connection]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-add.html)
-- [Modify a connection]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-modify.html)
-- [Reference]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-reference.html)
+- [Add a connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-add-connection.html)
+- [Edit a connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-edit-connection.html)
+- [Reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html)
 
 {% include note.html content="Teradata Vantage version 16.20 or later is required." %}
