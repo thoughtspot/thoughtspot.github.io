@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.2/admin/setup/set-up-relay-host.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-07-20T09:00:20-07:00" />
+<meta property="article:published_time" content="2021-08-17T16:31:08-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Set the relay host for SMTP (email)”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"You can configure the relay host using tscli or through the Admin Console.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/admin/setup/set-up-relay-host.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.2/admin/setup/set-up-relay-host.html","headline":"[“Set the relay host for SMTP (email)”]","dateModified":"2021-07-20T09:00:20-07:00","datePublished":"2021-07-20T09:00:20-07:00","@context":"https://schema.org"}</script>
+{"description":"You can configure the relay host using tscli or through the Admin Console.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.2/admin/setup/set-up-relay-host.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.2/admin/setup/set-up-relay-host.html","headline":"[“Set the relay host for SMTP (email)”]","dateModified":"2021-08-17T16:31:08-07:00","datePublished":"2021-08-17T16:31:08-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5285,7 +5285,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    3 minutes
+    4 minutes
   
 </span> -->
 
@@ -5297,7 +5297,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Set up SMTP rules to send critical email notifications to ThoughtSpot Support.</p>
 
-<h3 id="set-up-the-relay-host">Set up the relay Host</h3>
+<h3 id="set-up-the-relay-host">Set up the relay host</h3>
 
 <p>To set up a relay host:</p>
 
@@ -5327,6 +5327,40 @@ $('#toc').on('click', 'a', function() {
 </code></pre></div>    </div>
   </li>
   <li>Verify that email is working.</li>
+</ol>
+
+<h3 id="configure-an-email-to-send-alerts">Configure an email to send alerts</h3>
+
+<ol>
+  <li>
+    <p>Log in to the Linux shell using SSH.</p>
+  </li>
+  <li>
+    <p>Specify the domain of the email address you would like emails to come from. In <code class="language-plaintext highlighter-rouge">example@company.com</code>, this command specifies <code class="language-plaintext highlighter-rouge">company</code>.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli smtp set-mailname &lt;mailname&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Specify the name of the email address you would like emails to come from. In <code class="language-plaintext highlighter-rouge">example@company.com</code>, this command specifies <code class="language-plaintext highlighter-rouge">example</code>.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli smtp set-mailfromname &lt;mailfromname&gt;
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="configure-smtp-authentication">Configure SMTP authentication</h3>
+
+<ol>
+  <li>
+    <p>Log in to the Linux shell using SSH.</p>
+  </li>
+  <li>
+    <p>If SMTP authentication is required, you must specify a username and password. Skip this step if SMTP authentication is not required.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ tscli smtp set-saslcredentials
+</code></pre></div>    </div>
+  </li>
 </ol>
 
 <h3 id="configure-email">Configure an email to receive alerts</h3>
@@ -5439,9 +5473,9 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Jul 20, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 17, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
-         <!-- <span>Page last updated:</span> 6/11/2020<br/>  -->
+         <!-- <span>Page last updated:</span> 7/23/2021<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.2/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 <script>
