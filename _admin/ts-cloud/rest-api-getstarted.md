@@ -6,28 +6,58 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-TThe REST API allows you to query data from ThoughtSpot and embed it in a Web page, portal, or application.
-To access REST APIs, you must authenticate through SAML SSO.
-For more information on configuring SAML, see [SAML SSO]({{ site.baseurl }}/admin/ts-cloud/configure-saml-spotdev.html).
+Before you start using REST APIs, perform the following checks:
 
-## Cross-Domain Verification
-To query and modify ThoughtSpot objects using REST APIs, you must add your client application domain as an allowed domain for Cross-Origin Resource Sharing (CORS). When you add your host domain for CORS, ThoughtSpot adds the `access-control-allow-origin` header in its API responses.
-For more information on whitelisting domains for CORS, see [Configure security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html).
+-   Your client application domain is added as a [Cross-Origin Resource Sharing (CORS) host](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=security-settings){:target="_blank"} in the ThoughtSpot Developer portal.
 
-## Base path
-The base URI for the REST APIs calls includes the following:
--   The hostname or IP address of your ThoughtSpot application instance.
--   Port number
--   Name of the ThoughtSpot API service
--   The version number
+    After you add your host domain for CORS, ThoughtSpot adds the `access-control-allow-origin` header in its API responses.
 
-For example, in the following URL, the base path is `https://<your-thoughtspot-hostname:port>/callosum/v1`
+-   You have valid login credentials and access privileges to run the operations.
 
-```
-https://<your-thoughtspot-hostname:port>/callosum/v1/tspublic/v1/session/login
-```
-Note that the API endpoint and resource URLs in the REST API documentation pages omit the base path and show only the API endpoint URL.       
-For example:
-```
-POST /tspublic/v1/session/login
-```
+-   If trusted authentication is enabled on your instance, you must obtain an authentication token and include it in your subsequent login requests. 
+
+## Swagger UI
+
+To access REST APIs on Swagger:
+
+1.  Log in to your ThoughtSpot instance.
+
+2.  Access the Swagger portal.
+
+    To access Swagger UI, change your URL as shown below:
+
+        https://<your-thoughtspot.com>/external/swagger
+
+    Go to Swagger Portal
+    The portal displays a list of REST API services available for the logged-in ThoughtSpot users.
+
+3.  Click on a header to expand and view the list of services.
+
+4.  Click on a service name to view more details about the API service.
+
+5.  To explore an API, click **Try it out**.
+
+## API requests and response
+
+To call a REST API, send a request to the endpoint URL with the attributes required to create, view, or modify an object.
+
+### Request method  
+Specify the HTTP request method for the Create, Read, Update and Delete (CRUD) operation in your request to the API endpoint. For example, GET, POST, PUT, or DELETE.
+
+### Query string  
+A query string consists of additional parameters that are passed in the URL. For example, the `/tspublic/v1/metadata/listobjectheaders` API endpoint requires query parameters that are passed as a query string in the URL.
+
+### Request headers  
+-   Make sure you include the `'X-Requested-By': 'ThoughtSpot'` header in all API requests.
+
+-   Set the `Content-Type` and `Accept` header to `application/json` for JSON and `text/plain` for plain text.
+
+-   Some complex POST operations, such as sharing an object with another user, require the URL-encoded objects to be passed as parameters in the URL. For such API requests, use the `application/x-www-form-urlencoded` header.
+
+### Multipart/Form-data  
+Some APIs use `multipart/form-data` for POST requests and require you to provide an input file as a payload. To know if an API uses `multipart/form-data` content-type, see the [corresponding API description page](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=rest-api-reference){:target="_blank"}.
+
+### Response body  
+For each API request, ThoughtSpot sends a response. The API response includes either an HTTP status code or a response body in the JSON or plain text format.
+
+For more information about the REST API request URL, parameters, headers, and sample response, see [REST API Reference](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=rest-api-reference){:target="_blank"}.
