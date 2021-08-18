@@ -212,11 +212,11 @@ ThoughtSpot generates links to access objects, such as pinboards, visualizations
 <dlentry id="rest-apis">
 <dt>New REST APIs</dt>
 <dd>The ThoughtSpot 7 Cloud June release introduces the following REST APIs:<br><br>
-<ul><li><code>POST /tspublic/v1/security/share</code><br>You can use this API to share ThoughtSpot objects with another user or user group.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/security-api.html">Security APIs</a>.</li><br>
-<li><code>POST /tspublic/v1/security/shareviz</code><br>You can use this API to share a specific ThoughtSpot visualization with another user or user group. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/security-api.html">Security APIs</a>.</li><br>
-<li><code>GET /tspublic/v1/session/login/token</code><br>This API allows you to authenticate and log in a user if trusted authentication is enabled on ThoughtSpot. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/session-api.html">Session APIs</a>.</li><br>
-<li><code>POST /tspublic/v1/metadata/assigntag</code><br>You can use this API to programmatically assign a tag to a ThoughtSpot object such as pinboards, search answers, tables, and worksheets. <br>For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata APIs</a>.</li><br>
-<li><code>POST /tspublic/v1/user/updatepreference</code><br>This API now includes the optional <code>username</code> parameter, which allows API users to specify the <code>username</code> of the ThoughtSpot user.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User APIs</a>.</li>
+<ul><li><code>POST /tspublic/v1/security/share</code><br>You can use this API to share ThoughtSpot objects with another user or user group.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
+<li><code>POST /tspublic/v1/security/shareviz</code><br>You can use this API to share a specific ThoughtSpot visualization with another user or user group. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
+<li><code>GET /tspublic/v1/session/login/token</code><br>This API allows you to authenticate and log in a user if trusted authentication is enabled on ThoughtSpot. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
+<li><code>POST /tspublic/v1/metadata/assigntag</code><br>You can use this API to programmatically assign a tag to a ThoughtSpot object such as pinboards, search answers, tables, and worksheets. <br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
+<li><code>POST /tspublic/v1/user/updatepreference</code><br>This API now includes the optional <code>username</code> parameter, which allows API users to specify the <code>username</code> of the ThoughtSpot user.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li>
 </ul></dd></dlentry>
 </dl>
 
@@ -309,7 +309,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dt>Custom actions in the context menu</dt>
 <dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <b>Answers</b> or <b>Pinboards</b> page.</dd>
 <dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> <span class="badge badge-update">Beta</span> (off by default) enabled on your cluster.</dd>
-<dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">Add custom actions</a>.</dd></dlentry>
+<dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/custom-actions.html">Add custom actions</a>.</dd></dlentry>
 </dl>
 
 <dl>
@@ -354,8 +354,8 @@ The <b>Download</b> action is available for chart visualizations.</div>
 <dlentry id="rest-apis">
 <dt>REST APIs</dt>
 <dd>The ThoughtSpot 7 Cloud May release introduces the following new REST APIs:<br><br>
-<ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience.<br><br>For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User API</a>.</li><br>
-<li><code>GET /tspublic/v1/metadata/listas</code><br>You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata API</a>.</li></ul></dd></dlentry>
+<ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience.<br><br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
+<li><code>GET /tspublic/v1/metadata/listas</code><br>You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li></ul></dd></dlentry>
 </dl>
 
 <h2><a id="2021-april"></a>ThoughtSpot 7 Cloud April Release (ts7.april.cl)</h2>
@@ -437,7 +437,7 @@ The <b>Download</b> action is available for chart visualizations.</div>
 <dlentry id="tml-api">
 <dt>TML APIs</dt>
 <dd><p>The new TML APIs enable you to programmatically export, validate, and import scriptable <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html">TML</a> objects. Use these APIs to automate the change management and deployment processes between your development and production environments. With these APIs, analysts can much more easily migrate from one environment to the other by automating the entire change management process, reducing the risk of human error.</p>
-<p>See <a href="{{ site.baseurl }}/reference/api/tml-api.html">TML APIs</a>.</p></dd></dlentry>
+<p>See <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</p></dd></dlentry>
 
 <dlentry id="developer-portal">
 <dt>ThoughtSpot Developer portal</dt>
@@ -465,7 +465,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 
 <dlentry id="session-api-enhancement">
 <dt>Session API enhancement</dt>
-<dd>The session REST API service now includes the <code>/tspublic/v1/session/auth/token</code> API to enable a client application to programmatically obtain an authentication token for a ThoughtSpot  user.<br>To access this API, visit the ThoughtSpot Swagger portal.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/session-api.html">session APIs</a>.</dd></dlentry>
+<dd>The session REST API service now includes the <code>/tspublic/v1/session/auth/token</code> API to enable a client application to programmatically obtain an authentication token for a ThoughtSpot  user.<br>To access this API, visit the ThoughtSpot Swagger portal.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</dd></dlentry>
 
 </dl>
 
@@ -546,7 +546,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 <dlentry id="spotdev-portal">
 <dt>SpotDev portal</dt>
 <dd>ThoughtSpot cloud now includes the <strong>SpotDev</strong> portal <span class="label label-beta">Beta</span> to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The <strong>SpotDev</strong> tab in the ThoughtSpot application is available for the users with administrator and developer privileges.</dd>
-<dd>The <strong>SpotDev</strong> portal provides a playground for developers and product owners to evaluate the Visual Embed APIs and preview the results. The portal also allows authorized users to rebrand the embedded content, <a href="{{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html">customize styles</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">add custom menu actions</a> to the embedded instance.</dd><dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">SpotDev Portal</a>.</dd></dlentry>
+<dd>The <strong>SpotDev</strong> portal provides a playground for developers and product owners to evaluate the Visual Embed APIs and preview the results. The portal also allows authorized users to rebrand the embedded content, <a href="{{ site.baseurl }}/admin/ts-cloud/customization-rebranding.html">customize styles</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/custom-actions.html">add custom menu actions</a> to the embedded instance.</dd><dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">SpotDev Portal</a>.</dd></dlentry>
 
 </dl>
 
@@ -576,7 +576,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 
 <dlentry id="pinboard-download-api">
   <dt>Pinboard Export API</dt>
-  <dd>Use the new Pinboard Export API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-export-api.html">Pinboard Export API</a>.
+  <dd>Use the new Pinboard Export API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.
 </dd></dlentry>
 
 <dlentry id="spotiq-analyze">
