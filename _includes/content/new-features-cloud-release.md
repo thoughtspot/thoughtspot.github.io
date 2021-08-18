@@ -1,15 +1,15 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
 <ul>
-<li><a href="{{ site.baseurl }}#july-cloud-first">For the First user</a></li>
-<li><a href="{{ site.baseurl }}#july-cloud-analyst">For the Analyst</a></li>
-<li><a href="{{ site.baseurl }}#july-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#july-cloud-data-engineer">For the Data Engineer</a></li>
-<li><a href="{{ site.baseurl }}#july-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
-<li><a href="{{ site.baseurl }}#july-cloud-developer">For the Developer</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-first">For the First user</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-analyst">For the Analyst</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-business-user">For the Business User</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-data-engineer">For the Data Engineer</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-developer">For the Developer</a></li>
 </ul>
 
-<h3><a id="july-cloud-first"></a>For the First user</h3>
+<h3><a id="august-cloud-first"></a>For the First user</h3>
 
 <dl>
 
@@ -20,7 +20,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </dlentry>
 </dl>
 
-<h3><a id="july-cloud-analyst"></a>For the Analyst</h3>
+<h3><a id="august-cloud-analyst"></a>For the Analyst</h3>
 
 <dl>
 
@@ -33,7 +33,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 </dl>
 
-<h3><a id="july-cloud-business-user"></a>For the Business User</h3>
+<h3><a id="august-cloud-business-user"></a>For the Business User</h3>
 
 <dl>
 <dlentry id="watchlist-metrics">
@@ -55,7 +55,7 @@ Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-ho
 
 </dl>
 
-<h3><a id="july-cloud-data-engineer"></a>For the Data Engineer</h3>
+<h3><a id="august-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <dl>
 <dlentry id="custom-calendar">
@@ -68,7 +68,7 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 </dlentry>
 </dl>
 
-<h3><a id="july-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+<h3><a id="august-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
 <dl>
 <dlentry id="credit-usage-pinboard">
@@ -88,4 +88,9 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 
 </dl>
 
-<h3><a id="july-cloud-developer"></a>For the Developer</h3>
+<h3><a id="august-cloud-developer"></a>For the Developer</h3>
+<dl>
+<dd>ThoughtSpot introduces several new features and enhancements to the Developer Portal and Visual Embed SDK. This release also introduces new REST APIs to manage users, user sessions, group privileges, cluster configuration, and metadata objects. </dd>
+
+<dd>For more information, refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
+</dl>

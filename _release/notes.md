@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot 7 Cloud July version (ts7.jul.cl) is now available.
+ThoughtSpot 7 Cloud August version (ts7.aug.cl) is now available.
 
 These release notes include information about new and enhanced features.
 
