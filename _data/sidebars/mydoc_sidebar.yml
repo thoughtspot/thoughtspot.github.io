@@ -458,7 +458,7 @@ entries:
       - title: Integration guidelines
         url: /admin/ts-cloud/integration-overview.html
         output: web
-      - title: ThoughtSpot SpotDev Portal
+      - title: ThoughtSpot Developer Portal
         url: /admin/ts-cloud/spotdev-portal.html
         output: web
       - title: Authentication and security
