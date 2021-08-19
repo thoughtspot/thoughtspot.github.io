@@ -19,7 +19,7 @@ When editing a Worksheet in the *Columns* tab, you can rename the columns, add s
 
 These are the changes we made to Free Trial this week:
 
-- Joins created during Auto Worksheet setup now default to many-to-one join type, rather than one-to-one. For more information, see [Join type]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
+- Joins created during Auto Worksheet setup now default to many-to-one join type, rather than one-to-one. For more information, see [Join cardinality]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
 - When logging in for the first time as an Analyst, ThoughtSpot prompts you to first set up a connection, rather than searching on sample data.
 - When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.
 ![]({{ site.baseurl }}/images/free-trial-embrace-table-columns.png "Free Trial Embrace tables and columns"){: .inline}
