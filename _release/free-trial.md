@@ -1,11 +1,29 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 08/12/2021
+last_updated: 08/19/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## Aug 19, 2021
+
+### Worksheet Column tooltips
+
+When editing a Worksheet in the *Columns* tab, you can rename the columns, add searchable synonyms, change search indexing, among other options. To learn more about changes you can make and about the default column behavior, hover over each column type to see a brief explanation of the column meaning. In the example below, hovering over the “Hidden” column type reveals that selecting *Yes* removes a column from appearing during searches.
+
+![]({{ site.baseurl }}/images/free-trial-worksheet-tooltips.png "Free Trial worksheet column tooltips"){: .inline}
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial this week:
+
+- Joins created during Auto Worksheet setup now default to many-to-one join type, rather than one-to-one. For more information, see [Join type]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
+- When logging in for the first time as an Analyst, ThoughtSpot prompts you to first set up a connection, rather than searching on sample data.
+- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.
+![]({{ site.baseurl }}/images/free-trial-embrace-table-columns.png "Free Trial Embrace tables and columns"){: .inline}
+
 
 ## Aug 12, 2021
 
