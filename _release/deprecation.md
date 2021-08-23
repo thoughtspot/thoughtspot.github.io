@@ -44,7 +44,9 @@ The 7.1.1 release of ThoughtSpot Software, targeted for November 2021 (GA), will
 <dlentry><dt>Client-side summaries for tables</dt>
 <dd>We consolidated client-side column summaries and headlines from the backend into new headline summaries that come from the backend. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
 <dlentry><dt>R integration</dt>
-<dd>Customers currently use R to generate custom charts. The current integration with R works only in on-prem deployments that use our internal database, Falcon. Embrace and cloud deployments do not support R integration.</dd></dlentry>
+<dd><p>R integration is not available in the new Answer experience at this time. We plan to add support for R in the new Answer experience in a future release.</p>
+<p>ThoughtSpot continues to support R for all customers who currently include R charts in their solutions on the ThoughtSpot Software deployments; please continue to use the classic Answer experience.</p>
+{% include tip.html content="We support R only in Falcon deployments (data imported into ThoughtSpot). R is not available when creating connections and linking to external databases in real time. R is disabled by default. Contact ThoughtSpot Support to turn on R functionality." %}</dd></dlentry>
 </dl>
 
 {: id="de-support-7-1-1"}

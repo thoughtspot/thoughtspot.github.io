@@ -50,7 +50,7 @@ The following issues are fixed in the 1.4 release:
 
 {: id="1-2-new"}
 ## 1.2 New Features and Functionality
-- R charts <span class="label label-beta">De-support 7.2</span> are now supported.
+- R charts <span class="label label-beta">Deprecated 7.1.1</span> are now supported.
 - Data labels are now available on the iPad version for enhanced chart viewing.
 - Quick support. If you have any issues, you can now share debug logs with the ThoughtSpot mobile team, from the profile page.
 
