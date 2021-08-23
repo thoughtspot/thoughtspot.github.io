@@ -25,7 +25,7 @@
       <dd>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</dd>
     </dlentry>
     <dlentry id="custom-r">
-      <dt>Can invoke Custom R Analysis <span class="label label-beta">De-support 7.2</span></dt>
+      <dt>Can invoke Custom R Analysis <span class="label label-beta">Deprecated 7.1.1</span></dt>
       <dd>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</dd>
     </dlentry>
     <dlentry id="schedule-pinboards">
