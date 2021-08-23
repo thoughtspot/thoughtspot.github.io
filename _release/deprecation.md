@@ -13,6 +13,16 @@ Use following notes above feature that is deprecated. Send a link back to this d
 {% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.1. For details, see Deprecation Announcements." %}
 
 -->
+{: id="de-support-august-cloud"}
+## De-supported in August Cloud
+
+The August Cloud release of ThoughtSpot Software, targeted for August 2021 (GA), will drop support for the following feature:
+
+<dl>
+<dlentry><dt>Ask an Expert</dt>
+<dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
+</dl>
+
 {: id="de-support-may-cloud"}
 ## De-supported in May Cloud
 
@@ -37,16 +47,6 @@ The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will 
 <dd>The option to send product feedback, from the more options menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="more options menu icon" class="inline"/> on an Answer or search.</dd></dlentry>
 <dlentry><dt>Client-side summaries for tables</dt>
 <dd>We consolidated client-side column summaries and headlines from the backend into new headline summaries that come from the backend. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
-<dlentry><dt>Ask an Expert</dt>
-<dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
-</dl>
-
-{: id="de-support-august-cloud"}
-## De-supported in August Cloud
-
-The August Cloud release of ThoughtSpot Software, targeted for August 2021 (GA), will drop support for the following feature:
-
-<dl>
 <dlentry><dt>Ask an Expert</dt>
 <dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
 </dl>
