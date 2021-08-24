@@ -430,7 +430,7 @@ entries:
           output: web
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html
-          output: web          
+          output: web
       - levelThreeTitle: Custom calendar
         output: web
         levelThreeItems:
@@ -703,6 +703,9 @@ entries:
         output: web,ugBk
       - title: Funnel charts
         url: /end-user/search/about-funnel-charts.html
+        output: web,ugBk
+      - title: Heatmap charts
+        url: /end-user/search/heatmap-chart.html
         output: web,ugBk
       - title: Geo charts
         url: /end-user/search/about-geo-charts.html
