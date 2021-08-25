@@ -8,8 +8,8 @@ permalink: /:collection/:path.html
 ---
 ## Supported regions
 ThoughtSpot Cloud is now available in the following regions:
-* US East
-* US West
+* US East (N. Virginia)
+* US West (Oregon)
 * Sydney
 * Ireland
 * Frankfurt
