@@ -58,12 +58,12 @@
 <meta property="og:url" content="https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-install-offline.html" />
 <meta property="og:site_name" content="thoughtspot.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-23T14:15:20-07:00" />
+<meta property="article:published_time" content="2021-08-25T15:11:39-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[“Install the ThoughtSpot application on offline clusters that use RHEL”]" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"description":"Before starting the install, make sure that you completed the pre-installation steps.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-install-offline.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-install-offline.html","headline":"[“Install the ThoughtSpot application on offline clusters that use RHEL”]","dateModified":"2021-08-23T14:15:20-07:00","datePublished":"2021-08-23T14:15:20-07:00","@context":"https://schema.org"}</script>
+{"description":"Before starting the install, make sure that you completed the pre-installation steps.","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-install-offline.html"},"@type":"BlogPosting","url":"https://docs.thoughtspot.com/6.3/appliance/rhel/rhel-install-offline.html","headline":"[“Install the ThoughtSpot application on offline clusters that use RHEL”]","dateModified":"2021-08-25T15:11:39-07:00","datePublished":"2021-08-25T15:11:39-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -5477,7 +5477,7 @@ $('#toc').on('click', 'a', function() {
   Estimated reading time:
   
   
-    6 minutes
+    8 minutes
   
 </span> -->
 
@@ -5626,6 +5626,18 @@ $('#toc').on('click', 'a', function() {
       </dl>
 </dd>
     </dlentry>
+    <dlentry id="ldap_admin_user">
+      <dt>ldap_admin_user</dt>
+      <dd><em><strong>[Optional]</strong></em> One of three parameters required to enable users to use their OpenLDAP admin user to SSH as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. Specify the OpenLDAP admin user, in the form <em>example@company.com</em>. You must include all 3 of the LDAP parameters (<code>ldap_admin_user</code>, <code>ldap_server_uri</code>, <code>ldap_server_base</code>), or none of them. If you include 1 or 2, the playbook fails.</dd>
+    </dlentry>
+    <dlentry id="ldap_server_uri">
+      <dt>ldap_server_uri</dt>
+      <dd><em><strong>[Optional]</strong></em> One of three parameters required to enable users to use their OpenLDAP admin user to SSH as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. Specify the LDAP server uniform resource identifier, in the form <em>ldap://&lt;ldap_server_IP&gt;</em>. You must include all 3 of the LDAP parameters (<code>ldap_admin_user</code>, <code>ldap_server_uri</code>, <code>ldap_server_base</code>), or none of them. If you include 1 or 2, the playbook fails.</dd>
+    </dlentry>
+    <dlentry id="ldap_server_base">
+      <dt>ldap_server_base</dt>
+      <dd><em><strong>[Optional]</strong></em> One of three parameters required to enable users to use their OpenLDAP admin user to SSH as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. Specify the LDAP server base distinguished name, in the form <em>dc=&lt;optional_subdomain&gt;,dc=&lt;domain&gt;,dc=&lt;top-level-domain&gt;</em>, such as <em>dc=thoughtspot,dc=com</em>. You must include all 3 of the LDAP parameters (<code>ldap_admin_user</code>, <code>ldap_server_uri</code>, <code>ldap_server_base</code>), or none of them. If you include 1 or 2, the playbook fails.</dd>
+    </dlentry>
     <dlentry id="ssh_user">
       <dt>ssh_user</dt>
       <dd><p>The <code>ssh_user</code> must exist on the ThoughtSpot host, and it must have <code>sudo</code> privileges.</p>
@@ -5758,7 +5770,7 @@ $('#toc').on('click', 'a', function() {
    <div class="row" align="right" width="700">
      <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
      <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
-        Generated: Aug 23, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        Generated: Aug 25, 2021 &nbsp;&nbsp;&nbsp;&nbsp;<br />
          &copy; 2015, 2021 ThoughtSpot.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
          <!-- <span>Page last updated:</span> 8/18/2020<br/>  -->
          <p><img style="width:100px;" id="bottomlogo" src="https://docs.thoughtspot.com/6.3/images/company_logo.png" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
