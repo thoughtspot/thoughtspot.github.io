@@ -46,7 +46,7 @@ The 7.1.1 release of ThoughtSpot Software, targeted for November 2021 (GA), will
 <dlentry><dt>R integration</dt>
 <dd><p>R integration is not available in the new Answer experience at this time. We plan to add support for R in the new Answer experience in a future release.</p>
 <p>ThoughtSpot continues to support R for all customers who currently include R charts in their solutions on the ThoughtSpot Software deployments; please continue to use the classic Answer experience.</p>
-{% include tip.html content="We support R only in Falcon deployments (data imported into ThoughtSpot). R is not available when creating connections and linking to external databases in real time. R is disabled by default. Contact ThoughtSpot Support to turn on R functionality." %}</dd></dlentry>
+{% include tip.html content="We support R only in Falcon deployments (data imported into ThoughtSpot), and R integration is disabled by default. It is not available when creating connections and linking to external databases in real time." %}</dd></dlentry>
 </dl>
 
 {: id="de-support-7-1-1"}
