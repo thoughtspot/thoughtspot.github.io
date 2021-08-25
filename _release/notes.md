@@ -617,7 +617,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 <dl>
 <dlentry id="new-region-support">
 <dt>New region support</dt>
-<dd>ThoughtSpot Cloud is now available in the following 2 regions, in addition to US East and West, Sydney, and Ireland:
+<dd>ThoughtSpot Cloud is now available in the following 2 regions, in addition to US East (N. Virginia) and West (Oregon), Sydney, and Ireland:
 <ul><li>Frankfurt</li>
 <li>Singapore</li></ul></dd></dlentry>
 
