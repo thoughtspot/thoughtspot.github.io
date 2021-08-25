@@ -138,7 +138,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | Setting         | Value                     |
       |------------     | --------------------      |
       | Image           | `ThoughtSpot`             |
-      | Boot disk type  | `Standard persistent disk`|
+      | Boot disk type  | `SSD`|
       | Size (GB)       | `250`                     |
 
     f. Click **Select** to save the boot disk configuration.
