@@ -987,10 +987,10 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli config-mode disable</code></dt>
+    <dt><code>tscli dataflow disable</code></dt>
     <dd>Disables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster.</dd></dlentry>
     <dlentry>
-      <dt><code>tscli config-mode enable</code></dt>
+      <dt><code>tscli dataflow enable</code></dt>
       <dd>Enables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster, with token authentication.</dd></dlentry>
 </dl>
 
