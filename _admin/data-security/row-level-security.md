@@ -49,7 +49,6 @@ groups with **Can Administer and Bypass RLS**:
 
 This behavior is true regardless of whether the privilege is from a direct group
 membership or indirect (through a group hierarchy, where the user is part of a group that is part of a larger, top-level group with the RLS privilege).
-).
 
 ## Examples of RLS rules
 
