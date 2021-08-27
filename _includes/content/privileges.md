@@ -56,11 +56,11 @@
       <td><strong>Has Developer privilege</strong></td>
       <td>Can access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a> to explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</td>
     </tr>
-    <dlentry id="read-only">
-      <dt>Cannot create or update Pinboards</dt>
-      <dd><p>Users are limited to viewing and exploring curated Pinboards (and Answers). They cannot copy, edit, download, or share them.</p>
+    <tr id="read-only">
+      <td><strong>Cannot create or update Pinboards</strong></td>
+      <td><p>Users are limited to viewing and exploring curated Pinboards (and Answers). They cannot copy, edit, download, or share them.</p>
       <p>This privilege is designed to support embedded implementations, and is not available by default. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to enable it.</p>
-      <p>See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a> for a deeper discussion of this privilege, and an implementation example.</p></dd>
-    </dlentry>
+      <p>See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a> for a deeper discussion of this privilege, and an implementation example.</p></td>
+    </tr>
   </tbody>
 </table>

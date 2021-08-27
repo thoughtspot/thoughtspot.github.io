@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Starting with release 6.2.1, ThoughtSpot has a user privilege that prevents certain users from creating or modifying Pinboards.
 
-To ensure that users have <strong>Read only</strong> access, edit the user group permission and select the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#read-only)** privilege.
+To ensure that users have <strong>Read only</strong> access, edit the user group permission and select the **[Cannot create or update Pinboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html)** privilege.
 
 When a user has <strong>Read only</strong> access, they are limited to viewing, **Exploring**, and **Presenting** the curated Pinboard. Users can also **Replay search** for Answers, unless they are in embedded mode.
 
