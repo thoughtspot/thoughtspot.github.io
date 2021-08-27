@@ -59,12 +59,18 @@ entries:
     - title: Your user preferences
       url: /end-user/introduction/about-user.html
       output: web,ugBk
-    - title: Understanding privileges
-      url: /end-user/introduction/about-privileges-end-user.html
-      output: web,ugBk
     - title: Use tags to organize
       url: /end-user/tags.html
       output: web,ugBk
+    - levelTwoTitle: Privileges
+      output: web
+      levelTwoItems:
+      - title: Understanding privileges
+        url: /end-user/introduction/about-privileges-end-user.html
+        output: web,ugBk
+      - title: Granular access to pinboards
+        url: /end-user/introduction/pinboard-granular-permission.html
+        output: web,ugBk
   - sectiontitle: ThoughtSpot for ...
     output: web,ugBk
     sectionitems:
