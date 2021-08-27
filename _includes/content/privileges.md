@@ -15,10 +15,6 @@
       <td>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved answer.</td>
     </tr>
     <tr>
-      <td><strong>Can upload user data</strong></td>
-      <td>Can upload their own data from the application's <strong>Data</strong> page using <strong>Actions > Upload data</strong>.</td>
-    </tr>
-    <tr>
       <td><strong>Can download data</strong></td>
       <td>Can download data from search results and pinboards.</td>
     </tr>
