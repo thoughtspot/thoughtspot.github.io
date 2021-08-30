@@ -59,4 +59,4 @@ The REST APIs allow you to send and receive data in JSON format. To embed this d
 
 ## List of APIs
 
-For a complete list of API endpoints and information about how to make an API request to these points, see [REST API Reference](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=rest-api-reference){:target="_blank"}.
+For a complete list of API endpoints and information about how to make an API request to these points, see [REST API Reference](https://developers.thoughtspot.com/docs/?pageid=rest-api-reference){:target="_blank"}.

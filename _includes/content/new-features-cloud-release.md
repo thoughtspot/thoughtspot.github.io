@@ -92,5 +92,5 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 <dl>
 <dd>ThoughtSpot introduces several new features and enhancements to the Developer Portal and Visual Embed SDK. This release also introduces new REST APIs to manage users, user sessions, group privileges, cluster configuration, and metadata objects. </dd>
 
-<dd>For more information, refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
+<dd>For more information, refer to <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
 </dl>

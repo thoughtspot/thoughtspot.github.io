@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 Before you start using REST APIs, perform the following checks:
 
--   Your client application domain is added as a [Cross-Origin Resource Sharing (CORS) host](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=security-settings){:target="_blank"} in the ThoughtSpot Developer portal.
+-   Your client application domain is added as a [Cross-Origin Resource Sharing (CORS) host](https://developers.thoughtspot.com/docs/?pageid=security-settings){:target="_blank"} in the ThoughtSpot Developer portal.
 
     After you add your host domain for CORS, ThoughtSpot adds the `access-control-allow-origin` header in its API responses.
 
@@ -55,9 +55,9 @@ A query string consists of additional parameters that are passed in the URL. For
 -   Some complex POST operations, such as sharing an object with another user, require the URL-encoded objects to be passed as parameters in the URL. For such API requests, use the `application/x-www-form-urlencoded` header.
 
 ### Multipart/Form-data  
-Some APIs use `multipart/form-data` for POST requests and require you to provide an input file as a payload. To know if an API uses `multipart/form-data` content-type, see the [corresponding API description page](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=rest-api-reference){:target="_blank"}.
+Some APIs use `multipart/form-data` for POST requests and require you to provide an input file as a payload. To know if an API uses `multipart/form-data` content-type, see the [corresponding API description page](https://developers.thoughtspot.com/docs/?pageid=rest-api-reference){:target="_blank"}.
 
 ### Response body  
 For each API request, ThoughtSpot sends a response. The API response includes either an HTTP status code or a response body in the JSON or plain text format.
 
-For more information about the REST API request URL, parameters, headers, and sample response, see [REST API Reference](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=rest-api-reference){:target="_blank"}.
+For more information about the REST API request URL, parameters, headers, and sample response, see [REST API Reference](https://developers.thoughtspot.com/docs/?pageid=rest-api-reference){:target="_blank"}.

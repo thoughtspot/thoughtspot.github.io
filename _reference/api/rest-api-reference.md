@@ -10,4 +10,4 @@ permalink: /:collection/:path.html
 ---
 ThoughtSpot REST APIs let you programmatically manage users, user sessions, group privileges, and metadata objects.
 
-For an up-to-date list of API categories and associated resource endpoints, see [REST API reference](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=rest-api-reference){:target="_blank"}.
+For an up-to-date list of API categories and associated resource endpoints, see [REST API reference](https://developers.thoughtspot.com/docs/?pageid=rest-api-reference){:target="_blank"}.
