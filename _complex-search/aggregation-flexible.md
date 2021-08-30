@@ -1,7 +1,7 @@
 ---
 title: [Flexible aggregation functions]
 summary: "Use the group_aggregate function in ThoughtSpot to aggregate measures at different granularities than the dimensions used in the search columns."
-last_updated: 06/11/2021
+last_updated: 08/30/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -137,6 +137,6 @@ specify only groupings or only filters.
 [Overview of aggregate formulas](aggregation-formulas.html#) and
 [Group aggregation functions](about-pinned-measures.html#)
 
-* To understand group aggregate query filters, see [Aggregate filters]((aggregation-filters.html#)
+* To understand group aggregate query filters, see [Aggregate filters](aggregation-filters.html#)
 
 * To learn about how the `group-aggregate` function can be used within your business practice, we encourage you to see [Reaggregation scenarios in practice]({{site.baseurl}}/reference/practice/reaggregation-scenarios.html)
