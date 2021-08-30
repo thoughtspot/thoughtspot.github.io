@@ -129,6 +129,33 @@ Flexible group aggregate formulas allow for flexibility in both [groupings](abou
 and [filters](filtered-agg-forms.html#). The formulas give you the ability to
 specify only groupings or only filters.
 
+{: id="query-filters"}
+## Query filters
+
+With `query_filters()+{filter_condition}` or `query_filters()-{filter_condition}`, users will be able to aggregate the results while including/excluding a filter condition.
+
+Filter condition: `Ship Mode='car'`
+
+For a search on `Category Customer ID sales by customer id and category Ship Mode='car’`, you can add a formula to calculate sales by category for each customer as:
+
+```
+sales by Customer ID and Category= group_aggregate (sum(Sales), {Category, Customer ID }, query_filters()+{Ship Mode='air'})
+```
+
+In this case, the results will be aggregated based on the dimensions: `‘Category’` and `‘Customer ID’` and filters: `‘air’` and `‘car’`.
+
+With `query_filters()-{column}`, users will be able to aggregate the results while removing any expression related to a column.
+
+Filter condition: `Ship Mode='car'`
+
+For a search on `Customer ID sales by customer id and category Ship Mode='car'`, you can add a formula to calculate sales for each customer while ignoring the filter on a column as:
+
+```
+sales by Customer ID and Category= group_aggregate (sum(Sales), {Customer ID, Category }, query_filters()-{Ship Mode})
+```
+
+In this case, the results will be aggregated based on the dimensions in the search; Customer ID and any filter related to Ship Mode will not be considered while aggregating the results.
+
 ## Related information
 
 * For more examples of flexible aggregation, see the [group_aggregate]({{site.baseurl}}/reference/practice/formula-reference.html#group_aggregate) function in the [Formula function reference]({{site.baseurl}}/reference/formula-reference.html).
