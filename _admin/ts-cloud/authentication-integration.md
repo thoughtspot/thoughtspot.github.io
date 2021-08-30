@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 ## SAML SSO authentication
 ThoughtSpot supports the Single Sign-On (SSO) authentication method with the Security Assertion Markup Language (SAML) authentication and authorization framework. With SAML SSO, users can authenticate to the SAML identity provider (IdP) at your federation to access the ThoughtSpot application, or the embedded ThoughtSpot content in an external web application. It also allows them to navigate seamlessly between different application interfaces with their existing credentials.
 
-By default, [local authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-local.html) is enabled. Use this article to learn how to configure a SAML integration with an external IdP. To configure SAML in an embedded environment, refer to [SAML SSO authentication](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=saml-sso){: target="_blank"}.
+By default, [local authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-local.html) is enabled. Use this article to learn how to configure a SAML integration with an external IdP. To configure SAML in an embedded environment, refer to [SAML SSO authentication](https://developers.thoughtspot.com/docs/?pageid=saml-sso){: target="_blank"}.
 
 ## About SAML authentication
 The SAML SSO authentication involves several entities and components.

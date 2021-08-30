@@ -27,13 +27,13 @@ For more information, see [Managing Users]({{ site.baseurl }}/admin/ts-cloud/use
 **Developer**  
 Application developers with privileges to use the Developer portal and embed ThoughtSpot components in their host application.  
 Developer users can also customize the look and feel of the UI, add custom actions to an embedded visualization or pinboard, and modify security settings such as CORS and CSP.                   
-For more information, see [Developer access](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=developer-access){:target="_blank"}.
+For more information, see [Developer access](https://developers.thoughtspot.com/docs/?pageid=developer-access){:target="_blank"}.
 
 **Host application admin**<br>
 Admin privileges to modify the interfaces of your host application. For example, to embed ThoughtSpot components in a business application or web page, you may require edit access to the host application.
 
 ## Define an authentication method
-For initial development and testing purposes, you can use the basic authentication method with the [session APIs](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=session-api){:target="_blank"} to manage ThoughtSpot user logins and sessions. However, ThoughtSpot recommends that you use SAML SSO or trusted authentication in production environments.
+For initial development and testing purposes, you can use the basic authentication method with the [session APIs](https://developers.thoughtspot.com/docs/?pageid=session-api){:target="_blank"} to manage ThoughtSpot user logins and sessions. However, ThoughtSpot recommends that you use SAML SSO or trusted authentication in production environments.
 
 **SAML SSO**  
 To provide a seamless login experience for your application users, you can configure SSO and enable SAML authentication, so that the federated users are automatically authenticated to ThoughtSpot.
@@ -41,13 +41,13 @@ With SSO, you can use your host application, or an external service as the ident
 ThoughtSpot administrators can set up SAML SSO using the **Admin** UI in the ThoughtSpot application.
 
 To use SSO authentication, you must add the identity provider domain as a SAML redirect domain in the **Security Settings** page of the Developer portal.                                                               
-For more information, see [Configure SAML](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=saml-sso){:target="_blank"}.
+For more information, see [Configure SAML](https://developers.thoughtspot.com/docs/?pageid=saml-sso){:target="_blank"}.
 
 **Trusted Authentication**  
 Trusted authentication is a token-based authentication service that uses a central authentication service to authenticate ThoughtSpot users. In a trusted authentication workflow, ThoughtSpot provides the authentication service with a token for a given ThoughtSpot user. This token is used for obtaining trust from the client applications before granting access to ThoughtSpot content.
 
 ThoughtSpot users with administrator privileges can generate a trusted authentication token in the **Security Settings** page of the Developer portal.                                                         
-For more information, see [Configure trusted authentication](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=trusted-auth){:target="_blank"}.
+For more information, see [Configure trusted authentication](https://developers.thoughtspot.com/docs/?pageid=trusted-auth){:target="_blank"}.
 
 ## Define security settings
 Before embedding, you must enable several security settings in the Developer portal to prevent security vulnerabilities in ThoughtSpot.
@@ -64,7 +64,7 @@ To use the Visual Embed SDK, configure the following content security policy (CS
 -   **CSP connect-src**                      
     If you plan to configure custom actions to invoke external URLs, you must add these URLs to the **CSP connect-src** domain list in the Developer portal.
 
-For more information, see [Configure security settings](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=security-settings){:target="_blank"}.
+For more information, see [Configure security settings](https://developers.thoughtspot.com/docs/?pageid=security-settings){:target="_blank"}.
 
 ## Try it out
 

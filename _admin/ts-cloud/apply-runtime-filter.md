@@ -5,12 +5,12 @@ last_updated: 3/4/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. Before you apply a filter, make sure [understand their limitations]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#limitations-of-runtime-filters).
+Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. Before you apply a filter, make sure you [understand their limitations]({{ site.baseurl }}/admin/ts-cloud/about-runtime-filters.html#limitations-of-runtime-filters).
 
 The filters are specified in the request URL as parameters. Before you can use runtime filter(s), you need to do these procedures:
 
-1.  Embed a [visualization](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=embed-a-viz){:target="_blank"} and [pinboard](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=embed-pinboard){:target="_blank"} using the Visual Embed SDK and authenticate to ThoughtSpot.
-2.  Use the [Data API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html)to [retrieve a search answer or pinboard](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=embed-data-restapi){: target="_blank"}.
+1.  Embed a [visualization](https://developers.thoughtspot.com/docs/?pageid=embed-a-viz){:target="_blank"} and [pinboard](https://developers.thoughtspot.com/docs/?pageid=embed-pinboard){:target="_blank"} using the Visual Embed SDK and authenticate to ThoughtSpot.
+2.  Use the [Data API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html) to [retrieve a search answer or pinboard](https://developers.thoughtspot.com/docs/?pageid=embed-data-restapi){: target="_blank"}.
 
 To add a runtime filter to your API call or the  embedded object:
 

@@ -22,15 +22,15 @@ The Visual Embed SDK is available as a Node Package Manager (NPM) package. You c
 The Visual Embed SDK includes the following embed modules:
 
 - **SearchEmbed**                                                                                                 
-  Use the **SearchEmbed** component to [embed the ThoughtSpot search functionality](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=search-embed){:target="_blank"} and retrieve search data from a specific data source or an existing saved answer.
+  Use the **SearchEmbed** component to [embed the ThoughtSpot search functionality](https://developers.thoughtspot.com/docs/?pageid=search-embed){:target="_blank"} and retrieve search data from a specific data source or an existing saved answer.
 
 - **PinboardEmbed**                                                                                                               
-  Use the **PinboardEmbed** component to [embed a full pinboard with multiple visualizations](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=embed-pinboard){:target="_blank"}, or [a specific visualization on a pinboard](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=embed-a-viz){:target="_blank"}.  
+  Use the **PinboardEmbed** component to [embed a full pinboard with multiple visualizations](https://developers.thoughtspot.com/docs/?pageid=embed-pinboard){:target="_blank"}, or [a specific visualization on a pinboard](https://developers.thoughtspot.com/docs/?pageid=embed-a-viz){:target="_blank"}.  
 
 - **AppEmbed**                                                                                                               
-  Use the **AppEmbed** component to embed the [full ThoughtSpot application](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=full-embed){:target="_blank"} with or without the navigation bar.
+  Use the **AppEmbed** component to embed the [full ThoughtSpot application](https://developers.thoughtspot.com/docs/?pageid=full-embed){:target="_blank"} with or without the navigation bar.
 
 
 ## How to embed ThoughtSpot content
 
-For information about embedding ThoughtSpot using Visual Embed SDK, see the [Visual Embed SDK](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=visual-embed-sdk){:target="_blank"}.
+For information about embedding ThoughtSpot using Visual Embed SDK, see the [Visual Embed SDK](https://developers.thoughtspot.com/docs/?pageid=visual-embed-sdk){:target="_blank"}.

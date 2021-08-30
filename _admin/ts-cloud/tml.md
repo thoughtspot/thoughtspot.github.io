@@ -815,7 +815,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="id">
     <dt>id</dt>
-    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
+    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
   </dlentry>
 
   <dlentry id="identity">
@@ -924,7 +924,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="lesson_plan_string">
     <dt>lesson_plan_string</dt>
-    <dd>A string that represents the fully disambiguated search query used in a <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson on a Worksheet. For example, <code>"What is the [Quantity] of items from [Customer Nation].'egypt' per [Datekey].'day of week' by [Color] ?"</code>. Refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>A string that represents the fully disambiguated search query used in a <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson on a Worksheet. For example, <code>"What is the [Quantity] of items from [Customer Nation].'egypt' per [Datekey].'day of week' by [Color] ?"</code>. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
   <dlentry id="lesson_plans">
@@ -955,7 +955,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="name">
     <dt>name</dt>
     <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>joins</code>, <code>formula</code>, <code>rls_rules</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code>, <code>destination</code>, and so on.<br>
-    For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
+    For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
   <dlentry id="on">
@@ -1027,7 +1027,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="search_query">
     <dt>search_query</dt>
-    <dd>A string that represents the fully disambiguated search query. Used in Answers and Views. Refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>A string that represents the fully disambiguated search query. Used in Answers and Views. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
 <!--

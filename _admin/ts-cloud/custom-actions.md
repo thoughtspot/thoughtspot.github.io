@@ -16,8 +16,8 @@ ThoughtSpot Developer Portal allows you to create, modify, and delete custom act
 
 Based on your application requirements, users with Developer privilege can create the following types of actions:
 
-- [Action to send data to a specific URL endpoint](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-url){:target="_blank"}.
-- [Action that triggers a callback action to your host application to send ThoughtSpot data as payload](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-callback){:target="_blank"}.
+- [Action to send data to a specific URL endpoint](https://developers.thoughtspot.com/docs/?pageid=custom-action-url){:target="_blank"}.
+- [Action that triggers a callback action to your host application to send ThoughtSpot data as payload](https://developers.thoughtspot.com/docs/?pageid=custom-action-callback){:target="_blank"}.
 
 ## Add custom action to visualizations
 
@@ -25,4 +25,4 @@ If your ThoughtSpot instance has custom actions configured, users with edit priv
 
 For example, you can add a custom action to the contextual menu that appears when you right-click on a chart or table. You can also add a custom action to all the new visualizations built from a specific worksheet.   
 
-For more information, see [Custom actions in ThoughtSpot Developer Documentation](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-intro){:target="_blank"}.
+For more information, see [Custom actions in ThoughtSpot Developer Documentation](https://developers.thoughtspot.com/docs/?pageid=custom-action-intro){:target="_blank"}.

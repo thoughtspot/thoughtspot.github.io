@@ -17,7 +17,7 @@ You can access the developer portal from your ThoughtSpot application instance o
 1.  Log in to your ThoughtSpot application instances.
 2.  Make sure your user account has admin or developer privileges.
 
-    For more information on configuring a user group with developer privileges, see the [ThoughtSpot Developer Documentation](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=developer-access){: target="_blank"}.
+    For more information on configuring a user group with developer privileges, see the [ThoughtSpot Developer Documentation](https://developers.thoughtspot.com/docs/?pageid=developer-access){: target="_blank"}.
 
 3.  Navigate to the **Develop** tab.
 
@@ -49,7 +49,7 @@ The **Playground** provides an API playground to explore the following ThoughtSp
 -   Visualizations
 -   Pinboards
 -   Full application
-For more information about how to use the playground, see [Developer Playground](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=dev-playground){: target="_blank"}.
+For more information about how to use the playground, see [Developer Playground](https://developers.thoughtspot.com/docs/?pageid=dev-playground){: target="_blank"}.
 
 **Customizations**  
 For ThoughtSpot users with administrator and developer privileges, the Developer portal displays the following customization menu items:
@@ -63,4 +63,4 @@ For ThoughtSpot users with administrator and developer privileges, the Developer
     Security controls to [add CORS and CSP hosts and define authentication method]({{ site.baseurl }}/admin/ts-cloud/auth-overview.html) for an embedded ThoughtSpot instance.
 
 -  **Links**<br>
-    Configuration settings to [customize the format of system-generated links](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=customize-links){: target="_blank"}.
+    Configuration settings to [customize the format of system-generated links](https://developers.thoughtspot.com/docs/?pageid=customize-links){: target="_blank"}.
