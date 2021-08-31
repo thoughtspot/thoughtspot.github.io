@@ -8,6 +8,7 @@ redirect_from:
 - /6.3.0.CU1/release/notes.html
 - /6.3.1/release/notes.html
 - /6.3.1.CU1/release/notes.html
+- /6.3.1.CU4/release/notes.html
 permalink: /:collection/:path.html
 ---
 ThoughtSpot version 6.3.1 CU4 is now available. These release notes include information about new and enhanced features.
