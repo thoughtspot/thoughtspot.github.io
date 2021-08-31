@@ -27,7 +27,9 @@ To manage search settings, follow these steps:
 
 3. **Index frequency**: Select a frequency for column indexing from the dropdown. The options are 8, 16, or 24 hours.
 
-4. **Table summaries in adhoc search**: Click on the toggle to enable or disable the display of summaries in adhoc search. Note that this does not affect the display of summaries in saved objects, such as saved answers, pinned tables, or headline tiles in pinboards. It also does not affect the display of summaries for users on the classic answer experience.
+4. **Table summaries in adhoc search**: Click on the toggle to enable or disable the display of summaries in adhoc search. This setting only affects the display of summaries for users on the [new answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience), not the classic experience.
+
+    {% include note.html content="This setting does not affect the display of summaries in saved objects, such as saved answers, pinned tables, or headline tiles in pinboards." %}
 
 3. Select **Save changes**. Alternatively, you can **Reset to default**. By default, ThoughtSpot indexes new columns at a frequency of 24 hours, and enables summaries.
 
