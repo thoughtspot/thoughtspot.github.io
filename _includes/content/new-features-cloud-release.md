@@ -81,6 +81,11 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 <dd>When configuring SAML authentication for ThoughtSpot, it is now mandatory to map the <code>mail</code> attribute in the IDP metadata file to the email address of the user. If your company cannot meet this requirement, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a>. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html">configure SAML</a>.</dd>
 </dlentry>
 
+<dlentry id="column-summaries">
+<dt>Enable or disable table column summaries</dt>
+<dd>This release allows admins to enable or disable table column summaries for users on the new answer experience, from the <a href="{{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html#search">Search & SpotIQ</a> section of the admin console. By default, table column summaries are on. This does not affect the display of summaries for users on the classic answer experience.</dd>
+</dlentry>
+
 <dlentry id="admin-console">
 <dt>UI improvement for help customization</dt>
 <dd>This release improves the UI and user experience of the <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Help customization</a> section of the admin console.</dd>
