@@ -710,8 +710,8 @@ This release enables new data modeling capabilities. You can now:
 <li>Build a Worksheet on top of a View</li>
 </ul>-->
 
-<h3>Geomaps</h3>
-ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br>
+<h3>Geo maps</h3>
+ThoughtSpot's Geo maps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br>
 
 ThoughtSpot supports maps of many countries. See the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
 
