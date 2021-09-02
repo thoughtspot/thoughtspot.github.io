@@ -35,6 +35,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dt>Geo map support</dt>
 <dd>We added support for regions, municipalities, and postal codes, for Denmark. See <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.</dd>
 </dlentry>
+
+<dlentry id="learning-cards">
+<dt>Learning cards</dt>
+<dd>This release introduces a new in-product learning initiative. Sets of learning cards appear when you first view an answer or search result after updating to the September release. These cards teach new users about ThoughtSpot, and how to gain insights from searches and answers. If you exit the learning cards by clicking the <strong>Hide</strong> or <strong>x</strong> button, you can always get them back by clicking on “learning mode on” from the profile menu.</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="september-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
