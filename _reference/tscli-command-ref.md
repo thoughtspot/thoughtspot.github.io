@@ -1540,7 +1540,7 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
-      <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
+      <p>Enables ThoughtSpot's map tiles.  Used when constructing geo map charts.</p>
       <p>If you don't have internett access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
       <dl>
         <dlentry>

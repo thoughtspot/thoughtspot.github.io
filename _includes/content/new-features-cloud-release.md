@@ -32,7 +32,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 <dlentry id="geomaps-denmark">
-<dt>Geomap support</dt>
+<dt>Geo map support</dt>
 <dd>We added support for regions, municipalities, and postal codes, for Denmark. See <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.</dd>
 </dlentry>
 </dl>
