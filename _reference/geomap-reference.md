@@ -78,6 +78,25 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<!--September Cloud-->
+<dlentry>
+<dt>Denmark</dt>
+<dd>
+<details>
+<summary><strong>Region</strong></summary>
+{% include content/geo/dk-region.md %}
+</details>
+<details>
+<summary><strong>Municipality</strong></summary>
+{% include content/geo/dk-municipality.md %}
+</details>
+<details>
+<summary><strong>Postal Codes</strong></summary>
+{% include content/geo/dk-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <dlentry>
 <dt>France</dt>
 <dd>
