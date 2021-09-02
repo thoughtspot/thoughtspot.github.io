@@ -1,12 +1,12 @@
 ---
 title: ["ThoughtSpot Cloud Release Notes"]
 toc: false
-last_updated: 5/20/2021
+last_updated: 9/02/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot 7 Cloud August version (ts7.aug.cl) is now available.
+ThoughtSpot 7 Cloud September version (ts7.sep.cl) is now available.
 
 These release notes include information about new and enhanced features.
 
@@ -71,6 +71,12 @@ To see our feature deprecation plans, please see [Deprecation Announcements]({{ 
 <h3><a id="june-cloud-business-user"></a>For the Business User</h3>
 
 <dl>
+
+<dlentry id="geomaps-denmark">
+<dt>Geomap support</dt>
+<dd>We added support for regions, municipalities, and postal codes, for Denmark. See <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.</dd>
+</dlentry>
+
 
 <dlentry id="trending-objects">
 <dt>View counts for trending objects</dt>
