@@ -17,7 +17,9 @@ To connect to Databricks:
 
      ![Add a Databricks connection]({{ site.baseurl }}/images/embrace-databricks-connection-type-ts-cloud.png "Add a Databricks connection")
 
-4. Enter the connection details for your Databricks data source.     
+4. Enter the connection details for your Databricks data source.
+
+   Refer to the [Databricks connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.     
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to Databricks, by doing the following:
 
