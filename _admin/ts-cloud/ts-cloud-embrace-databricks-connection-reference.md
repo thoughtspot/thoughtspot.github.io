@@ -17,7 +17,7 @@ You need specific information to establish a seamless and secure connection. The
     <dlentry id="host">
       <dt>Host</dt>
       <dd>Enter the Databricks server host name without the protocol.</dd></dlentry>
-      <dd>Example: <b>.cloud.databricks.com</b></dd></dlentry>  
+      <dd>Example: <b>dbs.example.cloud.databricks.com</b></dd></dlentry>  
     <dlentry id="http-path">
       <dt>HTTP Path</dt>
       <dd>Enter the Databricks HTTP path.</dd></dlentry>
