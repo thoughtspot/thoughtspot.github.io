@@ -40,7 +40,11 @@ Note that you can have any number of metrics on your watchlist at a time.
 
 ![Metrics watchlist gif]({{ site.baseurl }}/images/thoughtspot-one-carousel-metrics.gif "Metrics watchlist gif")
 
-You can arrange the metric cards using each card's three-dot **more** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon. You can replace or delete a metric, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
+You can arrange the metric cards in 2 ways:
+
+- **Drag and drop**: Move the metric cards to different positions in your watchlist using drag and drop.
+
+- **Three-dot more ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon**: You can replace or delete a metric, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
 
 {% include note.html content="If you can no longer access a metric on your watchlist (because the headline or Pinboard was deleted, or your access permissions changed), the system displays a note saying you cannot view that metric." %}
 
