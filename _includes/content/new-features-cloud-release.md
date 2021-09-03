@@ -41,6 +41,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd>This release introduces a new in-product learning initiative. Sets of learning cards appear when you first view an answer or search result after updating to the September release. These cards teach new users about ThoughtSpot, and how to gain insights from searches and answers. If you exit the learning cards by clicking the <strong>Hide</strong> or <strong>x</strong> button, you can always get them back by clicking on “learning mode on” from the profile menu.</dd>
 </dlentry>
 
+<dlentry id="watchlist-drag-and-drop">
+<dt>Drag and drop metrics on your watchlist</dt>
+<dd>You can now move metrics on your <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">home page watchlist</a> using drag and drop. Click on a metric, and move it to a different position in your watchlist.</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="september-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
