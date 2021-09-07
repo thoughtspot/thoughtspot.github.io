@@ -68,3 +68,5 @@ To schedule a pinboard:
    </table>
 
 7. Click **Schedule** to save your new schedule, or **Save** to save your modified schedule.
+
+{% include content/date-column-download.md %}
