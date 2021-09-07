@@ -70,7 +70,9 @@ Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-ho
 
 <dlentry id="deprecations">
 <dt>Deprecations</dt>
-<dd>ThoughtSpot is dropping support for one feature in the August Cloud release. This feature is <strong><em>not</em></strong> available in the August release. Refer to <a href="{{ site.baseurl }}/release/deprecation.html#de-support-august-cloud">Deprecation Announcements</a> for more information.</dd></dlentry>
+<dd><p>ThoughtSpot is dropping support for the following feature in the August Cloud release. This feature is <strong><em>not</em></strong> available in the August release:</p>
+<ul><li>Ask an Expert</li></ul>
+<p>Refer to <a href="{{ site.baseurl }}/release/deprecation.html#de-support-august-cloud">Deprecation Announcements</a> for more information.</p></dd></dlentry>
 
 </dl>
 
