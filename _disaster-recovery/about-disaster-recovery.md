@@ -13,7 +13,7 @@ ThoughtSpot takes snapshots of itself automatically at periodic intervals. These
 The information here addresses disaster recovery specifically. These are some potential types of failure, listed in increasing order of severity:
 
 -   **[Disk failure]({{ site.baseurl }}/disaster-recovery/disk-failure.html)**  
-ThoughtSpot uses replication of stored data. When a disk faila, ThoughtSpot continues to operate.
+ThoughtSpot uses replication of stored data. When a disk fails, ThoughtSpot continues to operate.
 -   **[Node failure]({{ site.baseurl }}/disaster-recovery/node-failure.html)**  
 ThoughtSpot uses replication of stored data. When a node fails, ThoughtSpot continues to operate. See also [High Availability and resilience]({{ site.baseurl }}/disaster-recovery/ha-resilience.html).
 -   **[Cluster replacement]({{ site.baseurl }}/disaster-recovery/cluster-replacement.html)**  
