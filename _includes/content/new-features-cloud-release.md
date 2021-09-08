@@ -64,4 +64,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="september-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
+<dl>
+
+<dlentry id="custom-domains">
+<dt>Custom domain configuration</dt>
+<dd><p>ThoughtSpot now supports the configuration of custom domains for your ThoughtSpot Cloud URL. By default, the URL is <em>&lt;customer&gt;.thoughtspot.cloud</em>. This feature allows you to request a different URL or multiple URLs, such as <em>analytics.&lt;customer&gt;.com</em>. This can help create trust among users in your organization, since the URL is in a format they are familiar with. It is also useful in embedding scenarios, where you might embed ThoughtSpot in multiple applications with different domains.</p>
+<p>Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/custom-domains.html">Custom domain configuration</a> for more information. To use a custom domain in your ThoughtSpot Cloud URL, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
+</dlentry>
+
+</dl>
+
 <h3><a id="september-cloud-2021-developer"></a>For the Developer</h3>

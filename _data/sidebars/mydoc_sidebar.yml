@@ -494,6 +494,9 @@ entries:
       - title: Enable a PrivateLink for Redshift
         url: /admin/ts-cloud/private-link-redshift.html
         output: web
+      - title: Custom domain configuration
+        url: /admin/ts-cloud/custom-domains.html
+        output: web
       - title: Performance tracking Pinboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
