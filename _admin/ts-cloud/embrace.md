@@ -16,6 +16,8 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 - [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
 - [Databricks]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html)
+- [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata.html)
+- [SAP HANA]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana.html)
 
 ## How it works
 
