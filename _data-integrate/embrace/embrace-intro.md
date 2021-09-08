@@ -15,6 +15,7 @@ Embrace supports the following external databases:
 - Microsoft Azure Synapse
 - Teradata
 - SAP HANA
+- Oracle ADW
 
 {% include note.html content="Databricks is in beta, and is off by default. To enable it, contact ThoughtSpot Support." %}
 
