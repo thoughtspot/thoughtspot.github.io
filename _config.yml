@@ -33,6 +33,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
 
+# _config.yml
+
+algolia:
+  application_id: 'ZVTSYGHUZ2'
+
+
 
 
 # Files and directories that jekyll will exclude from the build output
