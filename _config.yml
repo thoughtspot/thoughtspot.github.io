@@ -37,6 +37,7 @@ plugins:
 
 algolia:
   application_id: 'ZVTSYGHUZ2'
+  index_name: cloud-docs-index
 
 
 
