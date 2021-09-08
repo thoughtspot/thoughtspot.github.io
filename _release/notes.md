@@ -17,8 +17,6 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 {% include note.html content="Self-service upgrade is not supported in version 7.0.1."%}
 
-To upgrade version 7.0.1, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
-
 {: id="7-0-1-new"}
 ## 7.0.1 New Features and Functionality
 
@@ -229,7 +227,7 @@ We like to have a diversity of experience and perspective, and want to hear from
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, contact ThoughtSpot Support to upgrade to the 7.0.1 release
+If you are running one of the following versions, you can upgrade to the 7.0.1 release
 directly.
 
 * 6.2.x to 7.0.1
