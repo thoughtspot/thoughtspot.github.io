@@ -25,7 +25,7 @@
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
-      <td>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the <strong>Edit</strong> permission on that object, and it must be shared with you.</td>
+      <td>Can create Embrace connections. To view or edit other people's Embrace connections, you must have the <strong>Can administer ThoughtSpot</strong> privilege. <br>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the <strong>Edit</strong> permission on that object, and it must be shared with you.</td>
     </tr>
     <tr>
       <td><strong>Can use experimental features</strong></td>
