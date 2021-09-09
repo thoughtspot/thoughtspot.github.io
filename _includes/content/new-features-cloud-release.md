@@ -38,7 +38,8 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="learning-cards">
 <dt>Learning cards</dt>
-<dd>This release introduces a new in-product learning initiative. Sets of learning cards appear when you first view an answer or search result after updating to the September release. These cards teach new users about ThoughtSpot, and how to gain insights from searches and answers. If you exit the learning cards by clicking the <strong>Hide</strong> or <strong>x</strong> button, you can always get them back by clicking on “learning mode on” from the profile menu.</dd>
+<dd><p>This release introduces a new in-product learning initiative. Sets of learning cards appear when you first view an answer or search result after updating to the September release. These cards teach new users about ThoughtSpot, and how to gain insights from searches and answers. If you exit the learning cards by clicking the <strong>Hide</strong> or <strong>x</strong> button, you can always get them back by clicking on “learning mode on” from the profile menu.</p>
+<p>This feature is only available if you have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new answer experience</a> <span class="badge badge-update">Beta</span> (off by default) on in your environment. You can turn the new answer experience on from the <strong>Experience manager</strong> in your profile.</p></dd>
 </dlentry>
 
 <dlentry id="watchlist-drag-and-drop">
@@ -49,12 +50,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dlentry id="search-suggestions">
 <dt>Search suggestions</dt>
 <dd><p>When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and pinboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> into the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing pinboard called <strong>Sales in the east last year</strong>.</p>
-<p>This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
-</dlentry>
-
-<dlentry id="typeahead">
-<dt>Improvements to object and search suggestions</dt>
-<dd><p>When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and pinboards</a>, ThoughtSpot now provides search and object suggestions before you begin typing, based on your past searches and popular searches and objects in your environment.</p>
+<p>ThoughtSpot provides these search object suggestions before you begin typing, based on your past searches and popular searches in your environment.</p>
 <p>This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
 
