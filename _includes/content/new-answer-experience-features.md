@@ -7,4 +7,5 @@
 <li> <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table">Conditional formatting for pivot tables</a>: You can now perform conditional formatting on measures in pivot tables.</li>
 <!-- back button functionality removed for now (6/23/21)<li> <a href="{{ site.baseurl }}/complex-search/change-the-view.html#back-button">Back button</a>: Use the in-product back button to the left of a search or Answer name to go back 1 step each time you make a change in an Answer (for example, when you add a new column to the search, drill down, or sort).</li>-->
 <li> <a href="{{ site.baseurl }}/spotiq/customization.html#new-answer-experience">SpotIQ analyze</a>: Cleaner, more intuitive UI for SpotIQ analyze of Answer data points, surfacing the most useful workflows and allowing advanced customization.</li>
+<li><a href="{{ site.baseurl }}/release/notes.html#learning-cards">Learning cards</a>: These cards teach new users about ThoughtSpot, and how to gain insights from searches and answers.</li>
 </ul>
