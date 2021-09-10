@@ -68,8 +68,8 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dlentry id="custom-domains">
 <dt>Custom domain configuration</dt>
-<dd><p>ThoughtSpot now supports the configuration of custom domains for your ThoughtSpot Cloud URL. By default, the URL is <em>&lt;customer&gt;.thoughtspot.cloud</em>. This feature allows you to request a different URL or multiple URLs, such as <em>analytics.&lt;customer&gt;.com</em>. This can help create trust among users in your organization, since the URL is in a format they are familiar with. It is also useful in embedding scenarios, where you might embed ThoughtSpot in multiple applications with different domains.</p>
-<p>Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/custom-domains.html">Custom domain configuration</a> for more information. To use a custom domain in your ThoughtSpot Cloud URL, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
+<dd><p>ThoughtSpot now supports the configuration of a custom domain or multiple domains for your ThoughtSpot Cloud URL. By default, the base URL is <em>&lt;your_company_name&gt;.thoughtspot.cloud</em>. This feature allows you to request a different URL or multiple URLs, such as <em>analytics.&lt;your_company_name&gt;.com</em>. This is useful when embedding ThoughtSpot pages with TS Everywhere, so that your embedding application and the ThoughtSpot pages have the same base URL. If you are embedding ThoughtSpot in multiple environments, such as a staging environment and a production environment, these multiple domains can point to the same ThoughtSpot instance.</p>
+<p>Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/custom-domains.html">Custom domain configuration</a> for more information. To set up a custom domain in your ThoughtSpot Cloud URL, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
 </dlentry>
 
 </dl>
