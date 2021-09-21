@@ -1,7 +1,7 @@
 ---
 title: [Stats and Trends for Search on Answers Pinboard]
 summary: "The Stats and Trends for Search on Answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
-last_updated: 3/29/2021
+last_updated: 9/21/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -44,16 +44,16 @@ This headline specifies the percentage of searches on existing Answers and Pinbo
 This headline shows the number of hours it has been since this Pinboard was automatically updated with new data.
 
 {: id="top-search-existing"}
-## Top Search Queries on existing answers
-This visualization lists users' top search queries while searching for Answers in the last 30 days.
+## Top search queries on existing answers
+This visualization lists users' most searched Answers and success rates for the last 30 days.
 
 {: id="top-search-existing-no-result"}
-## Top Search Queries with zero results
-This visualization lists users' top search queries that had no results. These are the most common Answers and Pinboards users search for but do not find. Consider building Answers and Pinboards that answer these questions, or empower more users to build their own Answers and Pinboards by searching your data.
+## Top search queries with zero results
+This visualization lists users' most common search queries for Answers with no results. These are the most common Answers and Pinboards users search for but do not find. Consider building Answers and Pinboards that answer these questions, or empower more users to build their own Answers and Pinboards by searching your data.
 
 {: id="top-search-not-useful"}
-## Top Search Queries on existing answers where the user did not click on any result
-This visualization lists users’ top search queries that did not result in a useful Answer or Pinboard. The users did not click on any of the results. Consider building Answers and Pinboards that better answer these questions, or empower these users to build their own Answers and Pinboards by searching your data.
+## Top search queries on existing answers where the user did not click on any result
+This visualization lists users’ top search queries that did not result in a useful Answer or Pinboard. The users' queries returned results, but the user did not click on any of the answers. Consider building Answers and Pinboards that better answer these questions, or empower these users to build their own Answers and Pinboards by searching your data.
 
 {: id="which-result"}
 ## What results users are clicking on
@@ -61,27 +61,27 @@ This chart describes what search results users are clicking on against each quer
 
 {: id="click-position"}
 ## Position at which users are clicking
-Describes where in the list of search results users are clicking. The lower the click position, the better. A lower click position means users are able to find answers easily and high up on the list of search results. "0" means users are finding useful results in autocomplete suggestions, i.e. before they could even search.
+Describes where in the list of search results users are clicking, indicating how easily users find answers. The lower the click position, the better. A lower click position means users are able to find answers easily and high up on the list of search results. "0" means users are finding useful results in autocomplete suggestions, i.e. before they could even search.
 
 {: id="worst-click-position"}
 ## Worst click position by any user against search queries
-Lists queries where users have to browse many Answers before finding the right one. This data is from the last 30 days. Consider building Answers and Pinboards for these queries.
+Indicates when users have to browse many Answers before finding the right one. This data is from the last 30 days. Consider building Answers and Pinboards for these queries.
 
 {: id="top-results"}
 ## Top results users are clicking on
-This visualization lists the top search results that users found useful in the last 30 days.
+This visualization lists the top search results that users found useful in the last 30 days. You can filter this visualization to see results for a specific query.
 
 {: id="weekly-queries-no-answer"}
 ## Weekly % of search queries on answers for which no answers exist
 This visualization shows the percentage of searches on existing Answers and Pinboards that had no results, on a weekly basis. The lower the percentage of searches with no results, the better the user experience. If you have a high percentage of queries without results, consider building more Answers and Pinboards, or empower more users to build their own Answers and Pinboards by searching your data.
 
 {: id="weekly-searches"}
-## Weekly Searches on answers
+## Weekly searches on answers
 This visualization shows the number of searches on Answers and Pinboards on a weekly basis. You can narrow this down by filtering on query text to see the top results for a specific query.
 
 {: id="autocomplete"}
 ## What results users are finding useful with autocomplete suggestions
-Lists the autocomplete suggestions that users are clicking on. The chart contains the top 10 queries from the last 30 days.
+Lists the autocomplete query suggestions that users are clicking on. The chart contains the top 10 queries from the last 30 days.
 
 {: id="best-practices"}
 ## Best practices
