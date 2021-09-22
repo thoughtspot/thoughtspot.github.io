@@ -1,18 +1,18 @@
 ---
-title: [Stats and Trends for Search on Answers Pinboard]
-summary: "The Stats and Trends for Search on Answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
+title: [How users are searching answers pinboard]
+summary: "The How Users are Searching Answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
 last_updated: 9/21/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **Stats and Trends for Search on Answers** Pinboard, a default ThoughtSpot Pinboard that is visible to admins, provides this information. Review the [best practices](#best-practices) for this Pinboard.
+As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **How Users are Searching Answers** Pinboard, a default ThoughtSpot Pinboard that is visible to admins, provides this information. Review the [best practices](#best-practices) for this Pinboard.
 
 If you do not have admin privileges and would like to access this Pinboard, ask your ThoughtSpot administrator to share the Pinboard and its underlying Worksheet, **Discover Monitoring Data**, with you. Administrators, review the [sharing best practices](#sharing-best-practices) for this Pinboard.
 
-To access the **Stats and Trends for Search on Answers** Pinboard, search for "Stats and trends for search on answers" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
+To access the **How Users are Searching Answers** Pinboard, search for "How users are searching" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
 
-The **Stats and Trends for Search on Answers** Pinboard contains the following visualizations:
+The **How Users are Searching Answers** Pinboard contains the following visualizations:
 - [Number of searches](#number-of-searches)
 - [% of queries with zero results](#no-result-queries)
 - [Last updated time in hours ago](#last-updated)
@@ -29,7 +29,7 @@ The **Stats and Trends for Search on Answers** Pinboard contains the following v
 
 {% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have Search on Answers on in your environment, or if it is newly on, and few users have searched on it. You must also enable Mixpanel. To see the statistics on how your organization uses Search Answers, contact ThoughtSpot Support." %}
 
-![Stats and Trends for Search on Answers Pinboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "Stats and Trends for Search on Answers Pinboard")
+![How Users are Searching Answers Pinboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "How Users are Searching Answers Pinboard")
 
 {: id="number-of-searches"}
 ## Number of searches
