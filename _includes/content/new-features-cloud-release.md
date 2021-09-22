@@ -9,7 +9,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <li><a href="{{ site.baseurl }}#september-cloud-2021-developer">For the Developer</a></li>
 </ul>
 
-<h3><a id="september-cloud-2021-first"></a>For the First user</h3>
+<h3><a id="september-cloud-2021-first"></a>For the First User</h3>
 
 <dl>
 <dlentry id="getting-started">
@@ -23,8 +23,8 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 <dlentry id="auto-email">
-<dt>Automatic following of Stats and Trends for Search on Answers pinboard</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers pinboard</a> allows administrators, and users they share the pinboard with, to understand how users are searching for existing answers and pinboards. Starting in the September release, ThoughtSpot automatically emails this pinboard to administrators once a week. You can add or remove users from this email list by <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">editing the follow schedule</a> for this pinboard.</dd>
+<dt>Automatic following of How Users are Searching pinboard</dt>
+<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">How Users are Searching pinboard</a> allows administrators, and users they share the pinboard with, to understand how users are searching for existing answers and pinboards. Starting in the September release, ThoughtSpot automatically emails this pinboard to administrators once a week. You can add or remove users from this email list by <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">editing the follow schedule</a> for this pinboard.</dd>
 </dlentry>
 </dl>
 
