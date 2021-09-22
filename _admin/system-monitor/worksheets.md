@@ -51,7 +51,7 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">Discover Monitoring Data</code></td>
       <td>
-         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers Pinboard</a>.
+         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Pinboard</a>.
       </td>
    </tr>
    <tr>
@@ -63,7 +63,7 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">MetricsMonitoring</code></td>
       <td>
-         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers Pinboard</a>.
+         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Pinboard</a>.
       </td>
    </tr>
    <tr>

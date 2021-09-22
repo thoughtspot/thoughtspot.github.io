@@ -728,7 +728,7 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 
 <dlentry id="search-answers-pinboard">
 <dt>Search on Answers Pinboard</dt>
-<dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers Pinboard</a>:
+<dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">How Users are Searching Answers Pinboard</a>:
 <ul>
 <li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
 <li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to <a href="{{ site.baseurl }}/admin/misc/contact.html">Contact ThoughtSpot Support</a> to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
@@ -792,7 +792,7 @@ The ThoughtSpot <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot
 <h3>Search existing Answers</h3>
 In addition to the existing Search over data, this release gives business users easy <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search over existing Answers and Pinboards</a>. This  meets the users' information needs by making Answers searchable, sortable, and applying filters on relevance, recency, number of views, authorship, metrics used, and so on.
 
-<h3>Stats and Trends for Search on Answers Pinboard</h3>
+<h3>How Users are Searching Answers Pinboard</h3>
 Use this default <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Pinboard</a> to analyze how users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create.
 
 <h3>Disable Answer Search for specific Worksheets</h3>

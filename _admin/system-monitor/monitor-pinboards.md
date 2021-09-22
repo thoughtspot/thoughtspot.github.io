@@ -77,9 +77,9 @@ To view these system Pinboards:
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">Stats and Trends for Search on Answers</code></td>
+      <td><code class="highlighter-rouge">How Users are Searching Answers</code></td>
       <td>
-      Describes how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers</a>.
+      Describes how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers</a>.
       </td>
    </tr>
   </table>
