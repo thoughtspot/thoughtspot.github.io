@@ -438,7 +438,11 @@ Worksheet and View joins have the following limitation:
 ### Table join functionality and limitations
 With table joins, you can accomplish the following tasks:
 - Add new joins at the table level. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
-- Create generic or range joins at the table level. Previously, you could only create non-generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date</code>. Now, you can create generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code>. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
+- Create generic or range joins at the table level. Previously, you could only create non-generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date</code>. Now, you can create generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code>.
+
+    Note that you must have an 'equals' clause before you can have a 'greater than/less than' clause. <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is valid, but <code><em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is not.
+
+    Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
 
 - Edit existing joins by changing the name of the join and modifying it to your specifications. Changing the name of the join creates a new join; you must then delete the old join in the UI. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
 
@@ -446,6 +450,7 @@ Table joins have the following limitations:
 - You cannot delete a join by removing it from the TML. You must delete it through the UI.
 - You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
+- When creating generic or range joins, you must have an 'equals' clause before you can have a 'greater than/less than' clause. <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is valid, but <code><em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is not.
 
 ### Generic joins
 The functionality for generic joins in TML files allows the following elements:
