@@ -59,6 +59,9 @@ entries:
     - title: Your user preferences
       url: /end-user/introduction/about-user.html
       output: web,ugBk
+    - title: Password and account management
+      url: /end-user/onboarding/password-requirements.html
+      output: web,ugBk
     - title: Use tags to organize
       url: /end-user/tags.html
       output: web,ugBk
