@@ -71,3 +71,4 @@ You can perform conditional and number formatting on pivot tables. Both these fe
 The pivot table chart type has these limitations:
 
 - The pivot table displays a maximum of 100k rows. If your query returns more than 100k rows, you cannot visualize it with a pivot table.
+- Pivot tables do not support use of [group aggregation functions]({{ site.baseurl }}/complex-search/about-pinned-measures.html).
