@@ -242,6 +242,9 @@ entries:
         - title: Delete connection
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-connection.html
           output: web
+        - title: Best practices
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-best.html
+          output: web,embraceGd
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html
           output: web
