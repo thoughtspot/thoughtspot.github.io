@@ -242,6 +242,9 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html
           output: web
+        - title: Best practices
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-best.html
+          output: web,embraceGd
       - levelThreeTitle: Connect to Google BigQuery
         output: web
         levelThreeItems:
