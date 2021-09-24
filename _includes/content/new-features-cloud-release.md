@@ -51,7 +51,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dt>Search suggestions</dt>
 <dd><p>When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and pinboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> into the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing pinboard called <strong>Sales in the east last year</strong>.</p>
 <p>ThoughtSpot provides these search object suggestions before you begin typing, based on your past searches and popular searches in your environment.</p>
-<p>This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+<p>This feature is in <span class="label label-beta">Beta</span>. If you do not see it yet, ThoughtSpot will enable it for you soon.</p></dd>
 </dlentry>
 
 </dl>
