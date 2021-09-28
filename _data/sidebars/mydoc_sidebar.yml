@@ -173,7 +173,7 @@ entries:
       - title: For Data Engineers
         url: /admin/ts-cloud/data-engineer.html
         output: web
-      - title: About Embrace
+      - title: About connections
         url: /admin/ts-cloud/embrace.html
         output: web
       - levelThreeTitle: Connect to Snowflake

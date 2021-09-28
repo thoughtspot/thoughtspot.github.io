@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can modify an Embrace Teradata connection in the following ways:
+You can modify a Teradata connection in the following ways:
 - Edit a connection: to add or remove tables and columns
 - Remap a connection: to map a table or column to a different table or column
 - Remove a column
@@ -21,7 +21,7 @@ To edit a Teradata connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to edit.
 
@@ -50,7 +50,7 @@ To remap a Teradata connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to remap.
 
@@ -74,7 +74,7 @@ To remove a column from Teradata connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection that contains the column you want to remove.
 
@@ -103,7 +103,7 @@ To delete a table from a Teradata connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection that contains the table you want to delete.
 
@@ -128,7 +128,7 @@ To delete a Teradata connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab.
+2. Click the **Connections** tab.
 
 3. Check the box next to the connection you want to delete.
 

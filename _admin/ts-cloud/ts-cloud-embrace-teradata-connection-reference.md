@@ -1,6 +1,6 @@
 ---
 title: [Teradata connection reference]
-summary: Learn about the fields used to create a Teradata connection using ThoughtSpot Embrace.
+summary: Learn about the fields used to create a Teradata connection using ThoughtSpot Connections.
 last_updated: 06/18/2020
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/embrace/embrace-teradata-reference.html
@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of the fields of a Teradata connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
+Here is a list of the fields of a Teradata connection in ThoughtSpot Connections. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
 
 <dl id="embrace-gbq-ref">
   <dlentry id="embrace-teradata-ref-connection-name">

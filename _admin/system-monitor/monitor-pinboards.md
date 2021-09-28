@@ -46,9 +46,9 @@ To view these system Pinboards:
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">Embrace Pinboard</code></td>
+      <td><code class="highlighter-rouge">Connections Pinboard</code></td>
       <td>
-         Contains information on your Embrace connections: monthly and daily row count, query count, and query performance.
+         Contains information on your connections: monthly and daily row count, query count, and query performance.
       </td>
    </tr>
    <tr>

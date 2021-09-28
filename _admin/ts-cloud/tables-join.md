@@ -38,7 +38,7 @@ If your database uses any table joins, they appear in ThoughtSpot.
     </tr>
     <tr>
       <td>1.</td>
-      <td>Select the data source of your table, either <em>Embrace</em>, or <em>Falcon</em>.</td>
+      <td>Select the data source of your table, either <em>Connection</em>, or <em>Falcon</em>.</td>
     </tr>
     <tr>
       <td>2.</td>

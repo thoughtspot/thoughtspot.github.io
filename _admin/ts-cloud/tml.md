@@ -693,7 +693,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="connection">
     <dt>connection</dt>
-    <dd>A way to identify the external data warehouse connection that the table resides in. To add tables or columns to an Embrace connection, you must specify this parameter.</dd>
+    <dd>A way to identify the external data warehouse connection that the table resides in. To add tables or columns to a connection, you must specify this parameter.</dd>
   </dlentry>
 
   <dlentry id="currency_type">

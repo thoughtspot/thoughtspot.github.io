@@ -1,6 +1,6 @@
 ---
 title: [SAP HANA connection reference]
-summary: Learn about the fields used to create an SAP HANA connection using ThoughtSpot Embrace.
+summary: Learn about the fields used to create an SAP HANA connection using ThoughtSpot Connections.
 redirect_from:
 - /7.0.0.mar.sw/data-integrate/embrace/embrace-hana-reference.html
 last_updated: 06/18/2020
@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Here is a list of the fields of an SAP HANA connection in ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
+Here is a list of the fields of an SAP HANA connection in ThoughtSpot Connections. You need specific information to establish a seamless and secure connection. All fields are required, except where noted.
 
 <dl id="embrace-HANA-ref">
   <dlentry id="embrace-HANA-ref-connection-name">

@@ -1,20 +1,20 @@
 ---
-title: [Best practices for Embrace with Redshift]
+title: [Best practices for connections with Redshift]
 last_updated: 7/7/2021
-summary: "You can connect to Redshift using ThoughtSpot Embrace, and start searching your data. This article contains helpful pointers on data modeling."
+summary: "You can connect to Redshift using ThoughtSpot Connections, and start searching your data. This article contains helpful pointers on data modeling."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ## Configuring your ThoughtSpot server
 
-We recommend configuring the following settings when creating Embrace connections:
+We recommend configuring the following settings when creating connections:
 - Turn off ‘Auto Indexing’, and manually set the Index Type on columns that would be helpful when searching.
 
 [Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to do this configuration.
 
 ## Optimizing query performance
 
-User experience in ThoughtSpot Embrace is strongly impacted by the performance of queries in the underlying database. Redshift is a columnar MPP database built for analytic workloads, and proper tuning can have a significant impact on query performance.
+User experience in ThoughtSpot Connections is strongly impacted by the performance of queries in the underlying database. Redshift is a columnar MPP database built for analytic workloads, and proper tuning can have a significant impact on query performance.
 
 You should always follow AWS best practices to optimize query performance. For details, see
 [Tuning query performance](https://docs.aws.amazon.com/redshift/latest/dg/c-optimizing-query-performance.html){:target="_blank"} in Amazon's Redshift documentation.
