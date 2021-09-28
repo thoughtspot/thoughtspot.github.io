@@ -14,8 +14,7 @@ The ThoughtSpot Everywhere platform provides the Visual Embed SDK to allow your 
 
 You can use one of the following methods to embed ThoughtSpot into your host application:
 
-**Using Visual Embed SDK**
-
+**Using Visual Embed SDK**                                                
 You can install the Visual Embed SDK, import the Javascript library, and programmatically integrate the ThoughtSpot application and its components.
 The Visual Embed SDK includes separate libraries for embedding ThoughtSpot content, such as search, visualizations, pinboards, and the full application.
 
@@ -32,7 +31,7 @@ To allow your application developers to experiment with the Visual Embed APIs, T
 
 The portal includes a playground for developers to learn and explore the Visual Embed SDK components. Developers can interact with the embed modules, try integrating ThoughtSpot content in a fictional app, and view results instantly.
 
-If you want to explore the embed APIs, you can access the Playground from the [ThoughtSpot Developers website](https://developers.thoughtspot.com/){: target="_blank"}.
+If you want to explore the embed APIs, you can access the Playground from the [ThoughtSpot Developers website](https://developers.thoughtspot.com/){:target="_blank"}.
 
 If you are a ThoughtSpot user, you can access this portal by clicking the **Develop** tab in your ThoughtSpot application instance. To access the portal, you need administrator or developer privileges.
 
@@ -55,3 +54,11 @@ ThoughtSpot allows you to add custom actions to the embedded pinboards and visua
 For example, you can add a button to the ThoughtSpot UI that will trigger a workflow in your parent application.
 
 For more information, see [Custom action configuration]({{ site.baseurl }}/admin/ts-cloud/custom-actions.html).
+
+## Get started with ThoughtSpot Everywhere
+
+You can explore the APIs, evaluate embedding workflows with your data, or obtain full access to the ThoughtSpot Developer portal and its features.
+
+- To explore the APIs and embed ThoughtSpot features in a fictional app, use the [Live Playground](https://try-everywhere.thoughtspot.cloud/v2/#/everywhere){:target="_blank"}.
+- To load your data and evaluate the workflows for embedding ThoughtSpot content in your app, sign up for a [free trial](https://www.thoughtspot.com/trial?tsref=webtopnav){:target="_blank"}.
+- To get full access to ThoughtSpot Everywhere features, you can purchase the ThoughtSpot Everywhere Edition license. If you already have a ThoughtSpot Enterprise Cloud service subscription, you can upgrade your license to avail the benefits of ThoughtSpot Everywhere features. For more information, see [Get started with ThoughtSpot](https://developers.thoughtspot.com/docs/?pageid=get-started-tse){:target="_blank"}.

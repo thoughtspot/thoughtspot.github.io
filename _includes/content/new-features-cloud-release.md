@@ -6,7 +6,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <li><a href="{{ site.baseurl }}#september-cloud-2021-business-user">For the Business User</a></li>
 <li><a href="{{ site.baseurl }}#september-cloud-2021-data-engineer">For the Data Engineer</a></li>
 <li><a href="{{ site.baseurl }}#september-cloud-2021-it-ops-engineer">For the IT Ops Engineer</a></li>
-<!-- <li><a href="{{ site.baseurl }}#september-cloud-2021-developer">For the Developer</a></li> -->
+<li><a href="{{ site.baseurl }}#september-cloud-2021-developer">For the Developer</a></li>
 </ul>
 
 <h3><a id="september-cloud-2021-first"></a>For the First User</h3>
@@ -74,4 +74,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 </dl>
 
-<!-- <h3><a id="september-cloud-2021-developer"></a>For the Developer</h3> -->
+<h3><a id="september-cloud-2021-developer"></a>For the Developer</h3>
+
+<dl>
+<dlentry id="thoughtspot-everywhere">
+<dt>ThoughtSpot Everywhere licensing feature</dt>
+<dd><p>
+This release introduces the ThoughtSpot Everywhere Edition license, Visual Embed SDK version 1.4.0, and new REST APIs for programmatic management of data connections, metadata objects, user accounts, user groups and privileges, and object sharing permissions.</p>
+
+<p>For more information, refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>.</p></dd>
+</dlentry>
+</dl>
