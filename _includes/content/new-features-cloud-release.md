@@ -4,9 +4,9 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <li><a href="{{ site.baseurl }}#september-cloud-2021-first">For the First user</a></li>
 <li><a href="{{ site.baseurl }}#september-cloud-2021-analyst">For the Analyst</a></li>
 <li><a href="{{ site.baseurl }}#september-cloud-2021-business-user">For the Business User</a></li>
-<!-- <li><a href="{{ site.baseurl }}#september-cloud-2021-data-engineer">For the Data Engineer</a></li> -->
+<li><a href="{{ site.baseurl }}#september-cloud-2021-data-engineer">For the Data Engineer</a></li>
 <li><a href="{{ site.baseurl }}#september-cloud-2021-it-ops-engineer">For the IT Ops Engineer</a></li>
-<li><a href="{{ site.baseurl }}#september-cloud-2021-developer">For the Developer</a></li>
+<!-- <li><a href="{{ site.baseurl }}#september-cloud-2021-developer">For the Developer</a></li> -->
 </ul>
 
 <h3><a id="september-cloud-2021-first"></a>For the First User</h3>
@@ -56,7 +56,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 </dl>
 
-<!-- <h3><a id="september-cloud-2021-data-engineer"></a>For the Data Engineer</h3> -->
+<a id="september-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
+<dlentry id="connections">
+<dt>Embrace is now called Connections</dt>
+<dd>ThoughtSpot has renamed Embrace to Connections. Functionality remains the same. To access your connections, navigate to the Data tab and click Connections. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Connections</a>.</dd>
+</dlentry>
 
 <h3><a id="september-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
