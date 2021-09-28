@@ -6,7 +6,7 @@ summary: "With Snowflake Partner Connect you get a free trial of ThoughtSpot tha
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Snowflake Partner Connect allows you to quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Embrace.
+Snowflake Partner Connect allows you to quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Connections.
 
 ThoughtSpot in Snowflake Partner Connect benefits:
 - 30-day trial
@@ -54,7 +54,7 @@ To sign up for the free trial, do the following:
 
 ## Using Connection with Snowflake in the ThoughtSpot free trial
 
-1. From the ThoughtSpot home page, a _Connect to Snowflake_ guided tutorial appears at the bottom-right of the page. You can play the video, which shows you the entire workflow of using Embrace to connect to Snowflake.
+1. From the ThoughtSpot home page, a _Connect to Snowflake_ guided tutorial appears at the bottom-right of the page. You can play the video, which shows you the entire workflow of using Connections to connect to Snowflake.
 
 2. Click **Next**, to be guided, step-by-step, through the process of connecting ThoughtSpot to Snowflake, selecting and searching a data source, changing a chart configuration, and more.
 

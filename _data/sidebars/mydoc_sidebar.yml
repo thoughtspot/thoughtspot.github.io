@@ -278,9 +278,9 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
           output: web
-        - title: Passthrough functions
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-passthrough.html
-          output: web
+#       - title: Passthrough functions
+#         url: /admin/ts-cloud/ts-cloud-embrace-gbq-passthrough.html
+#         output: web
       - levelThreeTitle: Connect to Azure Synapse
         output: web
         levelThreeItems:
@@ -443,21 +443,21 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html
           output: web
-      - levelThreeTitle: Custom calendar
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal.html
-          output: web
-        - title: Create a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html
-          output: web
-        - title: Update a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html
-          output: web
-        - title: Delete a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html
-          output: web
+#     - levelThreeTitle: Custom calendar
+#       output: web
+#       levelThreeItems:
+#       - title: Overview
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal.html
+#         output: web
+#       - title: Create a custom calendar
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html
+#         output: web
+#       - title: Update a custom calendar
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html
+#         output: web
+#       - title: Delete a custom calendar
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html
+#         output: web
     - levelTwoTitle: IT and Ops
       output: web
       levelTwoItems:
