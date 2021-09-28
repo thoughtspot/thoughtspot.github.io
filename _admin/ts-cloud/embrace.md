@@ -24,7 +24,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - Create a connection to the external database
 - Choose from each table the columns that you want to explore in your live query.
 - Primary key and foreign key relationships are imported along with the primary and foreign key tables.
-- If there are any joins in the tables of your connection, Embrace imports these joins.
+- If there are any joins in the tables of your connection, Connections imports these joins.
 - After your connection is complete, it becomes a **linked** data source in ThoughtSpot, so you can query the external database directly.
 - It’s also easy to apply transformations, and filter the data.
 
@@ -34,7 +34,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - Centralize data management and governance in the external database.
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
-- Custom calendar available with Snowflake.
+<!-- - Custom calendar available with Snowflake. -->
 
 ## Limitations
 
@@ -127,7 +127,7 @@ The following matrix compares the specific function support across the different
 
 ## Data type availability in Connections on ThoughtSpot Cloud
 
-The following matrix captures the specific data type support limitations across the different databases of Embrace. Data types not listed here have full support.
+The following matrix captures the specific data type support limitations across the different databases of Connections. Data types not listed here have full support.
 
 <table>
   <thead>
