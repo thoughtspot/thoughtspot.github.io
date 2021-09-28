@@ -5,6 +5,17 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+## Prerequisites
+
+Before you add a Snowflake connection, you must grant usage on the database and schema to the role, and select on all of the tables to the role.
+
+Example:
+- Grant usage on database `<databasename>` to role `<rolename>`
+- Grant usage on schema `<databasename>`.`<schemaname>` to role `<rolename>`
+- Grant select on all tables in schema `<databasename>`.`<schemaname>` to role `<rolename>`
+
+## Connecting to Snowflake
+
 To connect to Snowflake:
 
 1. Click **Data** in the top navigation bar.
