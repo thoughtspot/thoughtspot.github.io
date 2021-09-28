@@ -56,7 +56,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 </dl>
 
-<a id="september-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
+<h3><a id="september-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
 <dlentry id="connections">
 <dt>Embrace is now called Connections</dt>
 <dd>ThoughtSpot has renamed Embrace to Connections. Functionality remains the same. To access your connections, navigate to the Data tab and click Connections. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Connections</a>.</dd>
