@@ -23,7 +23,7 @@ To see our feature deprecation plans, please see [Deprecation Announcements]({{ 
 <li><a href="{{ site.baseurl }}#august-cloud-first">For the First user</a></li>
 <li><a href="{{ site.baseurl }}#august-cloud-analyst">For the Analyst</a></li>
 <li><a href="{{ site.baseurl }}#august-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#august-cloud-data-engineer">For the Data Engineer</a></li>
+<!-- <li><a href="{{ site.baseurl }}#august-cloud-data-engineer">For the Data Engineer</a></li> -->
 <li><a href="{{ site.baseurl }}#august-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
 <li><a href="{{ site.baseurl }}#august-cloud-developer">For the Developer</a></li>
 </ul>
@@ -76,7 +76,7 @@ Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-ho
 
 </dl>
 
-<h3><a id="august-cloud-data-engineer"></a>For the Data Engineer</h3>
+<!-- <h3><a id="august-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <dl>
 <dlentry id="custom-calendar">
@@ -87,7 +87,7 @@ Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-ho
 <li>Preview calendar data from custom calendar list</li></ul>
 For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar overview</a>.</dd>
 </dlentry>
-</dl>
+</dl> -->
 
 <h3><a id="august-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
@@ -194,7 +194,7 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 <dl>
 <dlentry id="embrace-databricks">
 <dt>Databricks GA</dt>
-<dd>Datbricks is now GA in this release of ThoughtSpot Cloud. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html">Databricks</a>.</dd>
+<dd>Databricks is now GA in this release of ThoughtSpot Cloud. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html">Databricks</a>.</dd>
 </dlentry>
 
 <dlentry id="object-usage-pinboard">
@@ -379,16 +379,16 @@ ThoughtSpot generates links to access objects, such as pinboards, visualizations
 <dl>
 
 <dlentry id="embrace-adw">
-<dt>Oracle ADW for Embrace</dt>
+<dt>Oracle ADW for Connections</dt>
 <dd>In this release, Oracle Autonomous Data Warehouse (ADW) is GA. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html">Oracle ADW</a>. </dd></dlentry>
 
 <dlentry id="embrace-starburst">
 <dt>Starburst for Embrace</dt>
 <dd>Embrace now supports both Starburst Enterprise, and open source Trino databases. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html">Starburst</a>.</dd></dlentry>
 
-<dlentry id="embrace-custom-calendar">
+<!-- <dlentry id="embrace-custom-calendar">
 <dt>Custom calendar for Embrace</dt>
-<dd>In this release, custom calendar is available for Snowflake connections only. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry>
+<dd>In this release, custom calendar is available for Snowflake connections only. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry> -->
 
 <dlentry id="embrace-databricks">
 <dt>Databricks for Embrace</dt>

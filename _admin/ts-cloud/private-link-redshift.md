@@ -24,7 +24,7 @@ To deploy an AWS PrivateLink between your Redshift data warehouse and the Though
 
 4. [Accept the PrivateLink Request](#accept-request)
 
-4. [Configure Embrace](#embrace)
+4. [Configure Connections](#embrace)
 
 {: id="configure-aws"}
 ### Configure the Endpoint Service in your AWS Console
@@ -71,5 +71,5 @@ After completing the [prerequisites](#prerequisites), you must configure the End
 5. Select **Actions > Accept endpoint connection request**.
 
 {: id="embrace"}
-### Configure Embrace
-[Configure Embrace for Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html), using the PrivateLink Endpoint DNS name from ThoughtSpot Support.
+### Configure Connections
+[Configure Connections for Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html), using the PrivateLink Endpoint DNS name from ThoughtSpot Support.

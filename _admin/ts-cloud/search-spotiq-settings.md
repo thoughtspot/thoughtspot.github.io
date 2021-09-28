@@ -23,7 +23,7 @@ To manage search settings, follow these steps:
 
 1. Select the **Edit** button in the **Search Settings** section.
 
-2. **Index columns**: Click on the toggle to enable or disable ThoughtSpot's indexing of columns in new Embrace connections. If you disable this feature, all columns from new Embrace connections are set to `DONT_INDEX`. Note that this change only applies to columns from *new* Embrace connections. You must manually set columns that already exist to `INDEX` or `DONT_INDEX`.
+2. **Index columns**: Click on the toggle to enable or disable ThoughtSpot's indexing of columns in new connections. If you disable this feature, all columns from new connections are set to `DONT_INDEX`. Note that this change only applies to columns from *new* connections. You must manually set columns that already exist to `INDEX` or `DONT_INDEX`.
 
 3. **Index frequency**: Select a frequency for column indexing from the dropdown. The options are 8, 16, or 24 hours.
 

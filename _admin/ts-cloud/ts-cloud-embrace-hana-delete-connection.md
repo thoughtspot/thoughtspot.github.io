@@ -13,7 +13,7 @@ To delete an SAP HANA connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab.
+2. Click the **Connections** tab.
 
 3. Check the box next to the connection you want to delete.
 

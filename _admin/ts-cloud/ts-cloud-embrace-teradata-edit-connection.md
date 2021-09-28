@@ -12,7 +12,7 @@ To edit a Teradata connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab.
+2. Click the **Connections** tab.
 
 3. Click the name of the connection you want to edit.
 

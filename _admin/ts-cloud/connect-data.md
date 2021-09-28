@@ -1,14 +1,14 @@
 ---
 title: [Connect to data]
 last_updated: 06/07/2020
-summary: "ThoughtSpot Cloud connects to your data through Embrace."
+summary: "ThoughtSpot Cloud connects to your data through Connections."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-## Connect to your data through Embrace
+## Connect to your data through Connections
 
-If your company stores source data externally in data warehouses, you can connect to that data through ThoughtSpot Embrace, and then directly query it when using ThoughtSpot’s analysis and visualization features.
+If your company stores source data externally in data warehouses, you can connect to that data through ThoughtSpot Connections, and then directly query it when using ThoughtSpot’s analysis and visualization features.
 
 On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html)
@@ -25,7 +25,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Create a connection](#set-up-connection) to the external database.
 - Choose from each table the columns that you want to explore in your live query.
 - Primary key and foreign key relationships are imported along with the primary and foreign key tables.
-- If there are any joins in the tables of your connection, Embrace imports these joins.
+- If there are any joins in the tables of your connection, Connections imports these joins.
 - After your connection is complete, it becomes a **linked** data source in ThoughtSpot, so you can query the external database directly.
 - It’s also easy to apply transformations, and filter the data.
 
@@ -39,7 +39,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 
 ## Limitations of data connections
 
-{% include important.html content="Embrace does not support joins across connections." %}
+{% include important.html content="Connections does not support joins across connections." %}
 
 {: id="set-up-connection"}
 ## Set up your connection

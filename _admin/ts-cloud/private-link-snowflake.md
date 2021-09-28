@@ -22,7 +22,7 @@ To deploy an AWS PrivateLink between your Snowflake data warehouse and the Thoug
 
 3. [Exchange AWS and ThoughtSpot information with ThoughtSpot Support](#exchange-information)
 
-4. [Configure Embrace](#embrace)
+4. [Configure Connections](#embrace)
 
 {: id="request-configuration"}
 ### Request Snowflake PrivateLink configuration
@@ -41,5 +41,5 @@ To deploy an AWS PrivateLink between your Snowflake data warehouse and the Thoug
 2. After ThoughtSpot Support configures the AWS PrivateLink in ThoughtSpot, ask them to send you the PrivateLink Snowflake account name.
 
 {: id="embrace"}
-### Configure Embrace
-[Configure Embrace for Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html), using the PrivateLink Snowflake account name from ThoughtSpot Support.
+### Configure Connections
+[Configure Connections for Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html), using the PrivateLink Snowflake account name from ThoughtSpot Support.
