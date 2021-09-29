@@ -78,7 +78,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 <dlentry id="thoughtspot-everywhere">
-<dt>ThoughtSpot Everywhere licensing feature</dt>
+<dt>ThoughtSpot Everywhere</dt>
 <dd><p>
 This release introduces the ThoughtSpot Everywhere Edition license, Visual Embed SDK version 1.4.0, and new REST APIs for programmatic management of data connections, metadata objects, user accounts, user groups and privileges, and object sharing permissions.</p>
 
