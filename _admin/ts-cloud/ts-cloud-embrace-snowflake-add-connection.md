@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 ## Prerequisites
 
-Before you add a Snowflake connection, you must grant usage on the database and schema to the role, and select on all of the tables to the role.
+Before you add a Snowflake connection, ensure the default role of the account being used has been granted usage on the database and the schema, and select on the tables that will be added to the connection.
 
 Example:
 - Grant usage on database `<databasename>` to role `<rolename>`
