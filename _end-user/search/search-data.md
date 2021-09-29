@@ -25,7 +25,7 @@ When you phrase a question in ThoughtSpot Search, use key words instead of full 
 
 For example, avoid: `Find all books by Lewis Carroll with the title Alice in Wonderland`. Instead, type: `carroll alice`.
 
-In another example, avoid `Find the largest city by population`. Inastead, type: `largest city by population`.
+In another example, avoid `Find the largest city by population`. Instead, type: `largest city by population`.
 
 Do use helper words, like “by” and “for”, but they can also be left out, and the search will return the same answer.
 
