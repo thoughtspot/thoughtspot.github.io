@@ -1,11 +1,22 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 09/20/2021
+last_updated: 09/30/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## September 30, 2021
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial this week:
+
+- We fixed an issue where attempts to skip steps during Onboarding by clicking the numbered steps at the top of the screen caused loading delays.
+
+- We fixed an issue where the Free Trial "Invite others" feature created duplicate objects on the third-party service ThoughtSpot uses to send emails.
+
 
 ## September 20, 2021
 
@@ -41,7 +52,7 @@ These are the changes we made to Free Trial this week:
 
 - Joins created during Auto Worksheet setup now default to many-to-one join type, rather than one-to-one. For more information, see [Join cardinality]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
 - When logging in for the first time as an Analyst, ThoughtSpot prompts you to first set up a connection, rather than searching on sample data.
-- When setting up a connection, the final step of set-up now asks users to choose both tables and columns for the connection.
+- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.
 ![]({{ site.baseurl }}/images/free-trial-embrace-table-columns.png "Free Trial Embrace tables and columns"){: .inline}
 
 
