@@ -1,7 +1,7 @@
 ---
 title: [Schedule a pinboard job]
 
-last_updated: 6/21/2021
+last_updated: 9/30/2021
 summary: "You can schedule or modify a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -53,7 +53,9 @@ To schedule a pinboard:
      <tr>
      <th>Gating condition</th>
      <td><p>Write a statement that returns a single boolean value (true or false). For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. Other than checking your formula syntax, ThoughtSpot does not validate your formula returns a single boolean.</p>
-     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function reference</a>.</p></td>
+     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function reference</a>.</p>
+     <p>For an in-depth example of a scenario where a gating condition is useful and powerful, refer to <a href="{{ site.baseurl }}/reference/practice/pinboard-gating-condition-example.html">Pinboard schedule gating conditions in practice</a>.</p>
+     <p>ThoughtSpot executes the gating condition as a ThoughtSpot admin user. If you are using passthrough security for your external data warehouse connection, the gating condition may not work.</p></td>
      </tr>
      <tr>
      <th>Embedded link format</th>
