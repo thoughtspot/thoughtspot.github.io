@@ -15,7 +15,7 @@ These are the changes we made to Free Trial this week:
 
 - We fixed an issue where attempts to skip steps during Onboarding by clicking the numbered steps at the top of the screen caused loading delays.
 - We fixed an issue where the Free Trial "Invite others" feature created duplicate objects on the third-party service ThoughtSpot uses to send emails.
-- We fixed an issue where Redshift fact tables did not appear in the Modeling stage of Setup.
+- We fixed an issue where Redshift fact tables timed out during loading in the Modeling stage of Setup.
 
 ## September 20, 2021
 
