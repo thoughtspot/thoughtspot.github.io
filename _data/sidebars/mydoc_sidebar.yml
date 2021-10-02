@@ -909,19 +909,19 @@ entries:
     output: web,ugBk
     sectionitems:
     - title: Overview
-      url: admin/mobile/use-mobile.html
+      url: /admin/mobile/use-mobile.html
       output: web,ugBk
     - title: Deploy
-      url: admin/mobile/deploy-mobile.html
+      url: /admin/mobile/deploy-mobile.html
       output: web,ugBk
     - title: Install and set up
-      url: admin/mobile/install-mobile.html
+      url: /admin/mobile/install-mobile.html
       output: web,ugBk
     - title: FAQ
-      url: admin/mobile/faq-mobile.html
+      url: /admin/mobile/faq-mobile.html
       output: web,ugBk
     - title: Release notes
-      url: admin/mobile/notes-mobile.html
+      url: /admin/mobile/notes-mobile.html
       output: web,ugBk
   - sectiontitle: Work with data
     output: web,ugBk
