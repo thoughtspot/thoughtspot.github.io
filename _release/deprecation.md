@@ -1,6 +1,6 @@
 ---
 title: ["Deprecation Announcements"]
-last_updated: 5/13/2021
+last_updated: 9/29/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,6 +13,16 @@ Use following notes above feature that is deprecated. Send a link back to this d
 {% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.1. For details, see Deprecation Announcements." %}
 
 -->
+{: id="de-support-november-cloud"}
+## De-supported in November Cloud
+
+The November Cloud release of ThoughtSpot Software, targeted for November 2021 (GA), will drop support for the following feature:
+
+<dl>
+<dlentry><dt>Business user onboarding</dt>
+<dd>ThoughtSpot will replace the current business user onboarding (present in October Cloud 2021 and earlier) with a new onboarding flow. The new onboarding flow directs new users to Search Assist, where they can complete sample searches on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">demo data</a> or <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">their company's data</a>.</dd></dlentry>
+</dl>
+
 {: id="de-support-august-cloud"}
 ## De-supported in August Cloud
 
