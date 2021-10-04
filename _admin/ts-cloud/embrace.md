@@ -1,6 +1,6 @@
 ---
 title: [About Embrace in ThoughtSpot Cloud]
-last_updated: 1/25/2021
+last_updated: 4/14/2021
 summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,7 +14,7 @@ On ThoughtSpot Cloud, Embrace supports the following external databases:
 - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
 
-{% include note.html content="Oracle Autonomous Data Warehouse is in beta and disabled by default. To enable this feature, contact ThoughtSpot Support." %}
+Oracle Autonomous Data Warehouse is in beta and disabled by default. To enable this feature, contact ThoughtSpot Support.
 
 ## How it works
 
@@ -49,6 +49,70 @@ Here are the major features that are not currently available in Embrace:
 
 The following matrix compares the specific function support across the different databases of Embrace in ThoughtSpot Cloud. Functions not listed here have full support.
 
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Snowflake</th>
+<th>Amazon<br />Redshift</th>
+<th>Google<br />BigQuery</th>
+<th>Azure<br />Synapse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SOUNDS_LIKE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>STRING_ MATCH_SCORE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>EDIT_DISTANCE_WITH_CAP</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>APPROX_SET_CARDINALITY</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>COUNT_NOT_NULL</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>SPELLS_LIKE</code></td>
+<td>&check;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+<tr>
+<td><code>EDIT_DISTANCE</code></td>
+<td>&check;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
+</tr>
+</tbody>
+</table>
+
+<!--
 <table>
 <thead>
 <tr>
@@ -119,11 +183,55 @@ The following matrix compares the specific function support across the different
 </tr>
 </tbody>
 </table>
+-->
 
 ## Data type availability in Embrace on ThoughtSpot Cloud
 
 The following matrix captures the specific data type support limitations across the different databases of Embrace. Data types not listed here have full support.
 
+<table>
+  <thead>
+    <tr>
+      <th>Data Type<br></th>
+      <th>Snowflake<br></th>
+      <th>Amazon<br>Redshift</th>
+      <th>Google<br>BigQuery</th>
+      <th>Azure<br>Synapse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>BINARY</code></td>
+      <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
+    </tr>
+    <tr>
+      <td><code>VARBINARY</code></td>
+      <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
+    </tr>
+    <tr>
+      <td><code>TIMESTAMPTZ</code></td>
+      <td>&check;</td>
+      <td>&cross;</td>
+      <td>&cross;</td>
+      <td>&cross;</td>
+    </tr>
+    <tr>
+      <td><code>GEOMETRY</code></td>
+      <td>&check;</td>
+      <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
 <table>
   <thead>
     <tr>
@@ -170,6 +278,7 @@ The following matrix captures the specific data type support limitations across 
     </tr>
   </tbody>
 </table>
+-->
 
 ## Additional specific exceptions
 
@@ -205,5 +314,8 @@ Create the connection between ThoughtSpot and tables in an external Amazon RedSh
 Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
 -   **[Add an Azure Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
+
+<!--
 -   **[Add an Oracle Autonomous Data Warehouse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Oracle Autonomous Data Warehouse database.
+-->
