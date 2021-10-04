@@ -476,9 +476,9 @@ entries:
       - title: Managing authentication with SAML
         url: /admin/ts-cloud/authentication-integration.html
         output: web
-      - title: Sync users and groups from LDAP
-        url: /admin/setup/sync-users-and-groups-from-ldap.html
-        output: web
+#      - title: Sync users and groups from LDAP
+#        url: /admin/setup/sync-users-and-groups-from-ldap.html
+#        output: web
       - title: Search and SpotIQ settings
         url: /admin/ts-cloud/search-spotiq-settings.html
         output: web
