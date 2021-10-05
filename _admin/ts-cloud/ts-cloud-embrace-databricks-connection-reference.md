@@ -21,10 +21,12 @@ You need specific information to establish a seamless and secure connection. The
     <dlentry id="http-path">
       <dt>HTTP Path</dt>
       <dd>Enter the Databricks HTTP path.</dd></dlentry>
+      <dd>For Databricks hosted on Microsoft Azure, you must specify both HTTP path and port. For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target="_blank">Get server hostname, port, HTTP path, and JDBC URL</a></dd></dlentry>  
     <dlentry id="user">
       <dt>User</dt>
-      <dd>Specify the user name of the Databricks account.</dd></dlentry>
+      <dd>Email address associated with your Databricks account.</dd></dlentry>
   <dlentry id="password">
       <dt>Password</dt>
       <dd>Specify the password of the Databricks account.</dd></dlentry>
+      <dd>For Databricks hosted on Microsoft Azure, you must specify the API token from Databricks. For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication" target="_blank">Authentication using Azure Databricks personal access tokens</a></dd></dlentry>
 </dl>
