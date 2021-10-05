@@ -5,29 +5,28 @@ summary: "The user icon lets you view your profile, adjust language options, spe
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To view the user actions, click your user icon on the top right corner of the page.
+To view the user actions, click your user icon in the right corner of the top navigation bar.
 
- ![Click User icon]({{ site.baseurl }}/images/user-info.png "Click User icon")
+![Click User icon]({{ site.baseurl }}/images/user-icon.png "Click User icon")
 
-Click **Profile** to navigate to your profile, where you can change your icon, password, email, locale, and other  preferences.  
-
-![Click Profile]({{ site.baseurl }}/images/user-profile.png "Click Profile")
+Click **View my profile** to navigate to your profile, where you can change your icon, password, email, locale, and other  preferences.  
 
 Notice that you can now see the **My Profile** interface.
 
 {: id="profile-picture" }
 ## Change your profile picture
 
-You can change your profile picture clicking the user profile in the top right of the interface, clicking **Upload Picture**, and selecting a new image from the file browser.
+To change your profile picture, select the camera icon to the right of to your current profile picture, in the top left corner of your profile. Select an image from your file browser, and select **Open**.
 
 You can use any a `*.png` or `*.jpg` file. Image files cannot exceed 4MB.
 
-![Upload user profile image]({{ site.baseurl }}/images/user-upload-picture.png "Upload user profile image")
+To remove your existing picture and go back to the default icon, select the delete icon that appears when you hover over your current profile picture, and select **Remove**.
 
-You can also make this change within the **User Profile**, under **Information**.
+![Edit or delete profile picture ]({{ site.baseurl }}/images/profile-picture-edit-delete.png "Edit or delete profile picture ")
 
-![Upload user profile image]({{ site.baseurl }}/images/user-upload-picture-alternative.png "Upload user profile image")
-
+{: id="language" }
+## Change language and data format settings ##
+{% include content/set_locale.md %}
 
 {: id="email" }
 ## Update your email ##
@@ -35,11 +34,6 @@ You can also make this change within the **User Profile**, under **Information**
 To change your email, navigate to **My Profile**. Under **Information**, enter an alternate email, and click Add.
 
 ![Update email]({{ site.baseurl }}/images/user-profile-email.png "Update email")
-
-
-{: id="language" }
-## Change language and data format settings ##
-{% include content/set_locale.md %}
 
 {: id="notifications" }
 ## Update sharing notification settings
@@ -83,5 +77,3 @@ The [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experie
 ## Signing out ##
 
 To sign out of your ThoughtSpot account, click the user profile in the top right of the interface, and choose **Sign out**.
-
-![Sign out]({{ site.baseurl }}/images/user-sign-out.png "Sign out")

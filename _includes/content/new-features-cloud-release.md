@@ -41,4 +41,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="october-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
 
+<h3><a id="october-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+
+<dl>
+<dlentry id="profile-ui">
+<dt>UI improvement for user profile</dt>
+<dd>This release improves the UI and user experience of the <a href="{{ site.baseurl }}/end-user/introduction/about-user.html">user profile</a>.</dd>
+</dlentry>
+
+</dl>
+
 <h3><a id="october-cloud-2021-developer"></a>For the Developer</h3>
