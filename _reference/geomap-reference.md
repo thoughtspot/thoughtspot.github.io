@@ -180,6 +180,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<dlentry>
+<dt>New Zealand</dt>
+<dd>
+<details><summary><strong>Regional Council</strong></summary>
+{% include content/geo/nz-regional-council.md %}
+</details>
+<details><summary><strong>City/ District</strong></summary>
+{% include content/geo/nz-city-district.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/nz-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.1.0-->
 <dlentry>
 <dt>Norway</dt>
