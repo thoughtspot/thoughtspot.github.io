@@ -21,6 +21,13 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="october-cloud-2021-analyst"></a>For the Analyst</h3>
 
+<dl>
+<dlentry id="pinboard-gating-conditions">
+<dt>Pinboard schedule gating conditions</dt>
+<dd>Gating conditions for scheduled pinboards are now GA. Refer to <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a> to learn more about scheduling pinboards for email delivery, and how to leverage gating conditions so that ThoughtSpot only sends the pinboards when certain conditions are true.</dd>
+</dlentry>
+
+</dl>
 
 <h3><a id="october-cloud-2021-business-user"></a>For the Business User</h3>
 
