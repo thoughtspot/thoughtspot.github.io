@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ThoughtSpot supports Microsoft Azure Active Directory (AD) OAuth for a Snowflake connection. With Azure AD OAuth, the authorization server generates an access token from Azure AD on behalf of the ThoughtSpot user which authenticates them with Snowflake and authorizes ThoughtSpot to query the database using their Snowflake user account.
 
 ## Creating an external OAuth token using Azure AD on behalf of the user
-
+{: id="part-1"}
 ### Part 1: Creating a Snowflake OAuth resource
 
 To create a Snowflake OAuth resource, do the following:
@@ -61,6 +61,20 @@ To create a Snowflake OAuth resource, do the following:
 
 6. Once the app is created, click **Overview**.
 
-7. From the Application (client) ID field, copy the ID. This ID is referred to as the ``<OAUTH_CLIENT_ID>`` in the following steps.
+7. From the Application (client) ID field, copy the ID. This ID is referred to as the `<OAUTH_CLIENT_ID>` in the steps that follow.
 
 8. Click **Certificates & secrets** and then **New client secret**.
+
+9. Copy the secret you just created. This is referred to as `<OAUTH_CLIENT_SECRET>` in the steps that follow.
+
+10. Click **API permissions**, then click **Add a permission**.
+
+11. Click **My APIs**.
+
+12. Click the name of the Snowflake OAuth Resource you created in [Part 1]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html#part-1).
+
+13. On the Request API permissions page, click the Delegated permissions box, and select the permission related to scope you defined in the application you want to grant to this client.
+
+14. Click **Add permissions**.
+
+15.  
