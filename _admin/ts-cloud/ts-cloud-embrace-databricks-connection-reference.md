@@ -22,14 +22,13 @@ If your Databricks is hosted on Microsoft Azure, see [Databricks on Microsoft Az
       <dd>Example: <b>dbs.example.cloud.databricks.com</b></dd></dlentry>  
     <dlentry id="http-path">
       <dt>HTTP Path</dt>
-      <dd>Enter the Databricks HTTP path.</dd></dlentry> 
+      <dd>Enter the Databricks HTTP path.</dd></dlentry>
     <dlentry id="user">
       <dt>User</dt>
       <dd>Email address associated with your Databricks account.</dd></dlentry>
   <dlentry id="password">
       <dt>Password</dt>
       <dd>Specify the password of the Databricks account.</dd></dlentry>
-      <dd>For Databricks hosted on Microsoft Azure, you must specify the API token from Databricks. For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication" target="_blank">Authentication using Azure Databricks personal access tokens</a></dd></dlentry>
 </dl>
 
 {: id="databricks-azure"}
