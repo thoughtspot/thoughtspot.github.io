@@ -7,6 +7,8 @@ permalink: /:collection/:path.html
 ---
 You need specific information to establish a seamless and secure connection. The following fields are required, except where noted.
 
+If your Databricks is hosted on Microsoft Azure, see [Databricks on Microsoft Azure connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html#databricks-azure).
+
 <dl>
   <dlentry id="connection-name">
     <dt>Connection name</dt>
@@ -23,8 +25,39 @@ You need specific information to establish a seamless and secure connection. The
       <dd>Enter the Databricks HTTP path.</dd></dlentry>
     <dlentry id="user">
       <dt>User</dt>
-      <dd>Specify the user name of the Databricks account.</dd></dlentry>
+      <dd>Email address associated with your Databricks account.</dd></dlentry>
   <dlentry id="password">
       <dt>Password</dt>
       <dd>Specify the password of the Databricks account.</dd></dlentry>
 </dl>
+
+{: id="databricks-azure"}
+## Databricks on Microsoft Azure connection reference
+
+<dl>
+  <dlentry id="connection-name">
+    <dt>Connection name</dt>
+    <dd>Enter a new Databricks connection name.</dd></dlentry>
+  <dlentry id="connection-description">
+      <dt>Connection description</dt>
+      <dd>Provide a short description of the connection.<i> (Optional)</i></dd></dlentry>
+    <dlentry id="host">
+      <dt>Host</dt>
+      <dd>Enter the Databricks server hostname. </dd>
+      <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target="_blank">Get server hostname, port, HTTP path, and JDBC URL</a>.</dd>
+      <dd>Example: <b>abc-1234567890123456.78.azuredatabricks.net</b></dd></dlentry>  
+    <dlentry id="http-path">
+      <dt>HTTP Path</dt>
+      <dd>Enter the Databricks HTTP path.</dd>
+      <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target="_blank">Get server hostname, port, HTTP path, and JDBC URL</a>.</dd>
+      <dd>Example: <b>sql/protocolv1/o/1234567890123456/7890-123456-abc789</b></dd></dlentry>  
+    <dlentry id="user">
+      <dt>User</dt>
+      <dd>Enter your login email to your Azure account. If this does not work, try “token”.</dd></dlentry>
+  <dlentry id="password">
+      <dt>Password</dt>
+      <dd>Enter your ‘personal access token’ generated in Databricks. This is not the password for your Azure account.</dd>
+      <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token" target="_blank">Generate a personal access token</a>.</dd></dlentry>
+</dl>
+
+For detailed information on using ThoughtSpot with an Azure Databricks cluster, see [Microsoft Azure ThoughtSpot documentation](https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/thoughtspot){:target="_blank"}
