@@ -22,8 +22,7 @@ If your Databricks is hosted on Microsoft Azure, see [Databricks on Microsoft Az
       <dd>Example: <b>dbs.example.cloud.databricks.com</b></dd></dlentry>  
     <dlentry id="http-path">
       <dt>HTTP Path</dt>
-      <dd>Enter the Databricks HTTP path.</dd></dlentry>
-      <dd>For Databricks hosted on Microsoft Azure, you must specify both HTTP path and port. For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target="_blank">Get server hostname, port, HTTP path, and JDBC URL</a></dd></dlentry>  
+      <dd>Enter the Databricks HTTP path.</dd></dlentry> 
     <dlentry id="user">
       <dt>User</dt>
       <dd>Email address associated with your Databricks account.</dd></dlentry>
