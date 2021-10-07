@@ -1,12 +1,12 @@
 The language that ThoughtSpot displays depends on the system locale. If you set your browser locale or OS locale to one of ThoughtSpot's supported locales, ThoughtSpot automatically defaults to that locale. If your browser locale is not one of ThoughtSpot's supported locales, ThoughtSpot defaults to US English.
 
-It is simple to change this locale using the **Profile** interface.
+It is simple to change this setting using the **Profile** interface.
 
 1. Navigate to your user profile:
 * Select your user icon next to the **help** button.
-* Select **Profile**.
-2. Under **Preferences**, click the drop-down menu icon to change the language.
-    ![Select a new locale]({{ site.baseurl }}/images/locale-set.png "Select a new locale")
+* Select **View my profile**.
+2. Next to **Preferences**, select **Edit**.
+3. Select the drop-down menu icon to change the system language. You can search for your preferred system language in the drop-down.
 
 The **Language** selection specifies more than just the language: it sets the locale, which controls both the language choice and standard data formats for date and number. So, if you set French as the default locale in your profile settings, the interface updates to reflect this. Be sure to refresh your browser page.
 
@@ -17,14 +17,14 @@ In addition to American English (*en-US*), ThoughtSpot supports the following lo
 | Locale |  Language  
 |---|---|
 | *da-DK* | Dansk  |
-| *de-DE* | Deutsche  |
+| *de-DE* | Deutsch  |
 | *en-AU* | English (Australia)  |
 | *en-CA* | English (Canada)  |
 | *en-IN* | English (India)   |
 | *en-GB* | English (United Kingdom)  |
 | *en-US* | English (United States)  |
+| *es-ES* | Español |
 | *es-US* | Español (Latinoamérica)  |
-| *es-ES* | Español (España)  |
 | *fr-CA* | Français (Canada)  |
 | *fr-FR* | Français (France)  |
 | *it-IT* | Italiano  |
@@ -32,6 +32,7 @@ In addition to American English (*en-US*), ThoughtSpot supports the following lo
 | *nb-NO* | Norsk  |
 | *pt-BR* | Português (Brasil)  |
 | *pt-PT* | Português (Portugal)  |
+| *ru-RU* | Pусский (ограниченный выпуск)  |
 | *fi-FI* | Suomi  |
 | *sv-SE* | Svenska  |
 | *zh-CN* | 中文(简体)  |
