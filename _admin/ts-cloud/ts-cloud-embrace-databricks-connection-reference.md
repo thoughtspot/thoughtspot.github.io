@@ -46,13 +46,13 @@ If your Databricks is hosted on Microsoft Azure, see [Databricks on Microsoft Az
     <dlentry id="host">
       <dt>Host</dt>
       <dd>Enter the Databricks server hostname. </dd>
-      <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target=_"blank">Get server hostname, port, HTTP path, and JDBC URL</a></dd>
-      <dd>Example: abc-1234567890123456.78.azuredatabricks.net</b></dd></dlentry>  
+      <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target="_blank">Get server hostname, port, HTTP path, and JDBC URL</a>.</dd>
+      <dd>Example: <b>abc-1234567890123456.78.azuredatabricks.net</b></dd></dlentry>  
     <dlentry id="http-path">
       <dt>HTTP Path</dt>
       <dd>Enter the Databricks HTTP path.</dd></dlentry>
-      <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target="_blank">Get server hostname, port, HTTP path, and JDBC URL</a></dd>
-      <dd>Example: sql/protocolv1/o/1234567890123456/7890-123456-abc789.</dd></dlentry></dlentry>  
+      <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/jdbc-odbc-bi#get-server-hostname-port-http-path-and-jdbc-url" target="_blank">Get server hostname, port, HTTP path, and JDBC URL</a>.</dd>
+      <dd>Example: <b>sql/protocolv1/o/1234567890123456/7890-123456-abc789</b></dd></dlentry>  
     <dlentry id="user">
       <dt>User</dt>
       <dd>Enter your login email to your Azure account. If this does not work, try “token”.</dd></dlentry>
