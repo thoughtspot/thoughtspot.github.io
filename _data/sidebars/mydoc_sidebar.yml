@@ -204,7 +204,7 @@ entries:
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
           output: web
         - title: Configure Azure AD OAuth
-          url: /admin/ts-cloud/ts-cloud-embrace-azure-ad-oauth.html
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html
           output: web
         - title: Best practices
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html

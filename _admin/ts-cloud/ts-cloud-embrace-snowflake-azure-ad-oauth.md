@@ -31,8 +31,7 @@ To create a Snowflake OAuth resource, do the following:
 
 8. Next to Application ID URI, click **Set** and change its value from **api://\<alphanumeric value>** to **https://\<alphanumeric value>**.
 
-  {% include note.html content="If the Application ID URI is not used, you must create a security integration with audiences using the Snowflake Account URL (i.e. `<account_identifier>.snowflakecomputing.com)`.
-" %}
+    {% include note.html content="If the Application ID URI is not used, you must create a security integration with audiences using the Snowflake Account URL (i.e. `<account_identifier>.snowflakecomputing.com)`." %}
 9. Click **Add a scope**.
 
 10. For Scope name, enter the name of the Snowflake role (example: `session:role-any`).
@@ -91,24 +90,25 @@ To collect Azure AD information for Snowflake, do the following:
 
 2. Go back to the Snowflake OAuth Resource App (Snowflake Oauth User Resource) to collect all the info related as mentioned below:
 
-  a. Click **Endpoints** in the **Overview** interface.
+    a. Click **Endpoints** in the **Overview** interface.
 
-  b. On the right-hand side, copy the **OAuth 2.0 token endpoint (v2)** and note the URLs for **OpenID Connect metadata** and **Federation Connect metadata**.
-      1. The **OAuth 2.0 token endpoint (v2)** is referred to as the `<AZURE_AD_OAUTH_TOKEN_ENDPOINT>` in the following configuration steps. The endpoint should be similar to https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token/ (Where **7dabe4d6-364c-436b-a77e-f252d7a0fb31** is the tenant ID).
+    b. On the right-hand side, copy the **OAuth 2.0 token endpoint (v2)** and note the URLs for **OpenID Connect metadata** and **Federation Connect metadata**.
 
-      2. For the **OpenID Connect metadata**, open in a new browser window.
+	 1. The **OAuth 2.0 token endpoint (v2)** is referred to as the `<AZURE_AD_OAUTH_TOKEN_ENDPOINT>` in the following configuration steps. The endpoint should be similar to https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token/ (Where **7dabe4d6-364c-436b-a77e-f252d7a0fb31** is the tenant ID).
 
-        a. Locate the "jwks_uri" parameter and copy its value.
+   2. For the **OpenID Connect metadata**, open in a new browser window.
 
-        b. This parameter value will be known as the `<AZURE_AD_JWS_KEY_ENDPOINT>` in the following configuration steps. The endpoint should be similar to https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/discovery/v2.0/keys.
+	     a. Locate the "jwks_uri" parameter and copy its value.
 
-      3. For the **Federation metadata document**, open the URL in a new browser window.
+	     b. This parameter value will be known as the `<AZURE_AD_JWS_KEY_ENDPOINT>` in the following configuration steps. The endpoint should be similar to https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/discovery/v2.0/keys.
 
-        a. Locate the `"entityID"` parameter in the `XML Root Element` and copy its value.
+  3. For the **Federation metadata document**, open the URL in a new browser window.
 
-        b. This parameter value will be known as the `<AZURE_AD_ISSUER>` in the following configuration steps. The entityID value should be similar to https<nolink>://sts.windows.net/7dabe4d6-364c-436b-a77e-f252d7a0fb31/.
+	     a. Locate the `"entityID"` parameter in the `XML Root Element` and copy its value.
 
-      4. The **OAuth 2.0 authorization endpoint (v2)** should be similar to  https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/authorize.  
+	     b. This parameter value will be known as the `<AZURE_AD_ISSUER>` in the following configuration steps. The entityID value should be similar to https<nolink>://sts.windows.net/7dabe4d6-364c-436b-a77e-f252d7a0fb31/.
+
+  4. The **OAuth 2.0 authorization endpoint (v2)** should be similar to  https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/authorize.  
 
 ### Part 4: Creating an OAuth authorization server in Snowflake
 
@@ -185,11 +185,11 @@ To get a new access token, do the following:
 
 6. For Auth URL, enter the OAuth 2.0 authorization endpoint (v2) value from “Endpoints” in the app.   
 
-  Example: https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/authorize
+    Example: https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/authorize
 
 7. For Access Token URL, enter the access token URL.
 
-  Example: https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token/
+    Example: https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token/
 
 8. For Scope, you must provide “offline_access” as the scope, along with the actual scope. The refresh token is only provided if the offline_access scope was requested.  
 
@@ -209,38 +209,38 @@ To get a new access token, do the following:
 
 1. Execute below command to get access token with password grant_type:
 
+    ```
+    curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
+      --data-urlencode "client_id=<OAUTH_CLIENT_ID>" \
+      --data-urlencode "client_secret=<OAUTH_CLIENT_SECRET>" \
+      --data-urlencode "username=<AZURE_AD_USER>" \
+      --data-urlencode "password=<AZURE_AD_USER_PASSWORD>" \
+      --data-urlencode "grant_type=password" \
+      --data-urlencode "scope=<SCOPE_AS_IT_APPEARS_IN_AZURE_APP>" \
+      '<AZURE_AD_OAUTH_TOKEN_ENDPOINT>'
   ```
-  curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
-    --data-urlencode "client_id=<OAUTH_CLIENT_ID>" \
-    --data-urlencode "client_secret=<OAUTH_CLIENT_SECRET>" \
-    --data-urlencode "username=<AZURE_AD_USER>" \
-    --data-urlencode "password=<AZURE_AD_USER_PASSWORD>" \
-    --data-urlencode "grant_type=password" \
-    --data-urlencode "scope=<SCOPE_AS_IT_APPEARS_IN_AZURE_APP>" \
-    '<AZURE_AD_OAUTH_TOKEN_ENDPOINT>'
-  ```
-Example:
-  ```
-  curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
-  --data-urlencode "client_id=90874b90-2537-465d-98dd-fcf572399e36" \
-  --data-urlencode "client_secret=99A--.L-b2dA_XMys.y-d5A3j1-9gSvSBl" \
-  --data-urlencode "username=testuser@diyottacloudoutlook.onmicrosoft.com" \
-  --data-urlencode "password=P2wd_1234" \
-  --data-urlencode "grant_type=password" \
-  --data-urlencode "scope=https://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23/session:role-any offline_access" \
-  'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token
-  ```
-2. Execute below command for getting access token with refresh_token as grant_type:
-
-  ```
-  curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
+  Example:
+    ```
+    curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
     --data-urlencode "client_id=90874b90-2537-465d-98dd-fcf572399e36" \
     --data-urlencode "client_secret=99A--.L-b2dA_XMys.y-d5A3j1-9gSvSBl" \
-      --data-urlencode "grant_type=refresh_token" \
-      --data-urlencode "refresh_token=<Replace_Refresh_Token>" \
-      --data-urlencode "scope=https://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23/session:role-any offline_access" \
-       'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token'
-  ```
+    --data-urlencode "username=testuser@diyottacloudoutlook.onmicrosoft.com" \
+    --data-urlencode "password=P2wd_1234" \
+    --data-urlencode "grant_type=password" \
+    --data-urlencode "scope=https://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23/session:role-any offline_access" \
+    'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token
+    ```
+2. Execute below command for getting access token with refresh_token as grant_type:
+
+    ```
+    curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
+      --data-urlencode "client_id=90874b90-2537-465d-98dd-fcf572399e36" \
+      --data-urlencode "client_secret=99A--.L-b2dA_XMys.y-d5A3j1-9gSvSBl" \
+        --data-urlencode "grant_type=refresh_token" \
+        --data-urlencode "refresh_token=<Replace_Refresh_Token>" \
+        --data-urlencode "scope=https://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23/session:role-any offline_access" \
+         'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token'
+    ```
 ## Related links
 
 - [Configure Microsoft Azure AD for External OAuth](https://docs.snowflake.com/en/user-guide/oauth-azure.html#configure-microsoft-azure-ad-for-external-oauth){:target="_blank"}
