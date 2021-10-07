@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ## Request view access
-If you try to share a pinboard or answer by copying and pasting a link to it, the person you share it with may have to request access. You can avoid this by sharing [using the sharing icon.]({{ site.baseurl }}/end-user/pinboard or answers/share-pinboard or answers.html)
+If you try to share a pinboard or answer by copying and pasting a link to it, the person you share it with may have to request access. You can avoid this by sharing [using the sharing icon.]({{ site.baseurl }}/end-user/pinboards/share-pinboards.html)
 
 If a user receives a link to a pinboard or answer for which they have neither view nor edit access, the **Request Access** page appears.
 
@@ -19,7 +19,7 @@ A message appears, telling the user who owns the pinboard or answer. ThoughtSpot
 {% include tip.html content="You can turn off sharing request emails for users with edit access on objects. To turn off these emails for users with edit access " %}
 
 ## Request edit access
-You may have view only access to a pinboard or answer. If you don't have edit privileges, you cannot save any changes you make to the pinboard or answer. You cannot pin an answer to that pinboard or answer, change the pinboard or answer layout, or delete a visualization.
+You may have view only access to a pinboard or answer. If you don't have edit privileges, you cannot save any changes you make to the pinboard or answer. You cannot pin an answer to that pinboard, change the pinboard or answer layout, or delete a visualization.
 
 If you have view only access, the locked icon ![]({{ site.baseurl }}/images/icon-locked-10px.png "The locked icon"){: .inline} appears next to the pinboard or answer name.
 
