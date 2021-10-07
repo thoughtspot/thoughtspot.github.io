@@ -1,11 +1,22 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 09/30/2021
+last_updated: 10/07/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## October 7, 2021
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial this week:
+
+- Users now see an Intercom offer to provide help when they encounter an error setting up a connection.<br/>
+![]({{ site.baseurl }}/images/free-trial-embrace-intercom.png "Free Trial intercom triggers on Embrace error"){: .inline}
+- Users can now click on the numbered steps at the top of the screen during Onboarding to proceed to the next step.
+
 
 ## September 30, 2021
 
@@ -15,7 +26,7 @@ These are the changes we made to Free Trial this week:
 
 - We fixed an issue where attempts to skip steps during Onboarding by clicking the numbered steps at the top of the screen caused loading delays.
 - We fixed an issue where the Free Trial "Invite others" feature created duplicate objects on the third-party service ThoughtSpot uses to send emails.
-- We fixed an issue where Redshift fact tables timed out during loading in the Modeling stage of Setup. 
+- We fixed an issue where Redshift fact tables timed out during loading in the Modeling stage of Setup.
 
 ## September 20, 2021
 
