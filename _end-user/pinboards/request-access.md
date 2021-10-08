@@ -16,7 +16,7 @@ The user adds an optional message explaining why they need to view or edit the p
 
 A message appears, telling the user who owns the pinboard or answer. ThoughtSpot sends an email notification, requesting view or edit access, to the pinboard or answer owner, anyone with **edit** access for the pinboard or answer, all cluster administrators, and ThoughtSpot Support. The email includes the user's optional message. Any of the users who got the request then shares the pinboard or answer with the user.
 
-{% include tip.html content="You can turn off sharing request emails for users with edit access on objects. To turn off these emails for users with edit access " %}
+{% include tip.html content="You can turn off sharing request emails for users with edit access on objects. To turn off these emails for users with edit access, contact ThoughtSpot Support." %}
 
 ## Request edit access
 You may have view only access to a pinboard or answer. If you don't have edit privileges, you cannot save any changes you make to the pinboard or answer. You cannot pin an answer to that pinboard, change the pinboard or answer layout, or delete a visualization.
