@@ -27,7 +27,7 @@ If you click on that icon, it allows you to request access to the pinboard or an
 
 ![Request edit access]({{ site.baseurl }}/images/request-edit-access.png "Request edit access")
 
-After you click **Request access**, the system tells you who it emailed to request access. ThoughtSpot sends an email notification, requesting view or edit access, to the pinboard or answer owner, anyone with **edit** access on the pinboard or answer, all cluster administrators, and ThoughtSpot Support. The email includes the user's optional message. Any of the users who got the request provides the user with edit access.
+After you click **Request access**, the system tells you who it emailed to request access. ThoughtSpot sends an email notification, requesting view or edit access, to the pinboard or answer owner, anyone with **edit** access on the pinboard or answer, all cluster administrators, and ThoughtSpot Support. The email includes the user's optional message. Any of the users who got the request provides the user with view or edit access.
 
 ## Request data access
 If you don't have access to a pinboard or answer's underlying data source, you cannot use features that involve columns based on data you do not have access to. For example, you cannot filter on the pinboard or answer, drill down, or run SpotIQ. If you attempt to use these features, a notification appears, telling you to request access to the underlying data source.
@@ -44,4 +44,4 @@ To see which data source you need access to, click the down icon next to **Data 
 
 ![View data sources]({{ site.baseurl }}/images/request-access-data-sources.png "View data sources")
 
-After you click **Request access**, the system tells you who it emailed to request access. ThoughtSpot sends an email notification, requesting view or edit access, to the pinboard or answer owner, anyone with **edit** access for the pinboard or answer, all cluster administrators, and ThoughtSpot Support. The email includes the user's optional message. Any of the users who got the request then provides the user with data access.
+After you click **Request access**, the system tells you who it emailed to request access. ThoughtSpot sends an email notification, requesting data access, to the pinboard or answer owner, anyone with **edit** access for the pinboard or answer, all cluster administrators, and ThoughtSpot Support. The email includes the user's optional message. Any of the users who got the request then provides the user with data access.
