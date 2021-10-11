@@ -50,4 +50,4 @@ Send this information to [ThoughtSpot Support](https://community.thoughtspot.com
 
 ## How to sign up
 
-To sign up for ThoughtSpot Cloud, [contact ThoughtSpot](https://community.thoughtspot.com/customers/s/contactsupport).
+To sign up for ThoughtSpot Cloud, talk to your ThoughtSpot contact.
