@@ -38,7 +38,7 @@ ThoughtSpot Cloud does not support the following:
 - Custom calendar
 - Data cannot be migrated to another ThoughtSpot cluster, but you can migrate Pinboards, Answers, Views, tables, and Worksheets.  
 
-For details, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+    For migration details, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 ## Restrict cluster access only to certain IP addresses
 By default, frontend access to your ThoughtSpot Cloud cluster(s) is open to all source IPs. You have the option to restrict access only to certain IP addresses. To restrict access, gather the following information, and [contact ThoughtSpot Support](https://community.thoughtspot.com/customers/s/contactsupport){: target="_blank"}:
