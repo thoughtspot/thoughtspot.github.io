@@ -19,6 +19,8 @@ You can update the [search settings](#search) and [SpotIQ settings](#spotiq) fro
 ## Search settings
 Under **Search settings**, you can configure ThoughtSpot's indexing behavior, and enable or disable summaries.
 
+To learn more about ThoughtSpot's default indexing behavior, refer to [Manage suggestion indexing]({{ site.baseurl }}/admin/data-modeling/change-index.html).
+
 To manage search settings, follow these steps:
 
 1. Select the **Edit** button in the **Search Settings** section.
