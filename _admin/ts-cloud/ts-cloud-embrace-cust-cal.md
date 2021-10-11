@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords.
+With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords. 
 
 You can create custom calendars for different purposes within your company, including:
 - Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
@@ -33,7 +33,6 @@ You can use your custom calendar to search the following ways:
 - Specifying a calendar in the formula
 
 ## Limitations
-- Support for cloud data warehouse connections.
 - Calendar name must be unique across connections in a cluster.
 - When creating or updating a calendar, a table is created in the external database.
 - When deleting a calendar, the mapping to the table is removed from ThoughtSpot, but the table is not dropped from the external database.
