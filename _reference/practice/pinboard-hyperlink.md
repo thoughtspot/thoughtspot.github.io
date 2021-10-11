@@ -62,8 +62,8 @@ Alternatively, choose to edit an existing Answer from a Pinboard.
 ```
 concat(“{caption}pinboard{/caption}http://<thoughtspot_server>:<port>/?<runtime filter>,column name)
 ```
-For example, the formula to link between a search on fruit sales and a Pinboard based on the same data with url <code>https://wine.corp.thoughtspot.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add</code> would be:
-<code>concat("{caption}pinboard{/caption}https://wine.corp.thoughtspot.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add/?col1=fruit&op1=eq&val1=",fruit)</code> <br/>
+For example, the formula to link between a search on fruit sales and a Pinboard based on the same data with url <code>https://<thoughtspot-instance>.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add</code> would be:
+<code>concat("{caption}pinboard{/caption}https://<thoughtspot-instance>.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add/?col1=fruit&op1=eq&val1=",fruit)</code> <br/>
 
 Here, the runtime filter is operating on the column “fruit,” and will only return values that are equal (EQ) to the fruits listed in the columns. To learn more about runtime filters, see [About Runtime Filters]({{site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html).
 
