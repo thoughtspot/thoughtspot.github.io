@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 ## Before you begin
 
-Make sure you have the required permissions to create a table in the Snowflake database used in the connection where you want to create your custom calendar.
+Make sure you have the required permissions to create a table in the database of the cloud data warehouse of the connection.
 
 ## Creating a custom calendar
 
