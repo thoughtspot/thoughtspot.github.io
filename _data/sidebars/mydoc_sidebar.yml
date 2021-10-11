@@ -1532,6 +1532,10 @@ entries:
     - title: Pinboard schedule gating conditions in practice
       url: /reference/practice/pinboard-gating-condition-example.html
       output: web,practGd
+    - title: Add a hyperlink to a Search
+      url: /reference/practice/pinboard-hyperlink.html
+      output: web,practGd
+
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web
