@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot in Practice]
-last_updated: 12-05-2019
+last_updated: 10/11/2021
 summary: "This guide demonstrates the power of ThoughtSpot to solve real solutions we developed for our clients."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,3 +14,5 @@ Each topic and scenario includes a real-world data modeling problem, and how we 
 * [Scenario 2: Average rates of exchange]({{ site.baseurl }}/reference/practice/reaggregation-scenarios.html#average-rates-exchange)
 * [Scenario 3: Average period value for semi-additive numbers I]({{ site.baseurl }}/reference/practice/reaggregation-scenarios.html#average-period-value-semi-additive-numbers-1)
 * [Scenario 4: Average period value for semi-additive numbers II]({{ site.baseurl }}/reference/practice/reaggregation-scenarios.html#average-period-value-semi-additive-numbers-2)
+* [Pinboard schedule gating conditions in practice]({{ site.baseurl }}/reference/practice/pinboard-gating-condition-example.html)
+* [Add a hyperlink to a Search]({{ site.baseurl }}/reference/practice/pinboard-hyperlink.html)
