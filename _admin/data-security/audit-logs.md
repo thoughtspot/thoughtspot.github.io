@@ -1,7 +1,7 @@
 ---
 title: [Collect security logs]
 summary: "Collect security audit logs to monitor user activity in ThoughtSpot and increase your system security."
-last_updated: 06/07/2021
+last_updated: 10/11/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 ThoughtSpot Cloud provides security audit events related to account activities and user actions within ThoughtSpot. These events can help your SOC team detect potential security threats or compromised user accounts in your organization. These human-readable and comprehensive events can be shipped to your SIEM application in near real-time. Security events remain within the system for 30 days. To integrate with your SIEM or view these logs, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 ThoughtSpot security events include the following information:
+
 - An event ID
 - A unique description of the event (e.g. “A user account was created”)
 - Timestamp (in UTC) yyyy/mm/dd:hh:mm:ss
@@ -20,65 +21,95 @@ ThoughtSpot security events include the following information:
 ### Security events
 
 The possible events are:
-- [account-logout](#account-logout)
-- [create_rls_rule](#create-rls-rule)
-- [delete_rls_rules](#delete-rls-rules)
-- [failed-login](#failed-login)
-- [group-creation](#group-creation)
-- [group-deletion](#group-deletion)
-- [group-modification](#group-modification)
-- [locked-account](#locked-account)
-- [object-creation](#object-creation)
-- [object-deletion](#object-deletion)
-- [object-modification](#object-modification)
-- [object-sharing](#object-sharing)
-- [password-change](#password-change)
-- [privilege-change](#privilege-change)
-- [profile-change](#profile-change)
-- [successful-login](#successful-login)
-- [update_rls_rule](#update-rls-rule)
-- [user-account-creation](#user-account-creation)
-- [user-account-deletion](#user-account-deletion)
-- [user-group-change](#user-group-change)
+
+- [account-logout](#logout-successful)
+- [answer-creation](#create-answer)
+- [answer-deletion](#delete-answers)
+- [answer-update](#update-answers)
+- [create-rls-rule](#create-rls-rule)
+- [delete-rls-rules](#delete-rls-rules)
+- [failed-login](#login-failed)
+- [failed-logout](#logout-failed)
+- [group-creation](#user-groups-created)
+- [group-deletion](#user-groups-deleted)
+- [group-modification](#user-group-modified)
+- [group-principals-update](#principals-in-group-update)
+- [locked-account](#account-locked)
+- [object-sharing](#share-objects)
+- [password-change](#update-password)
+- [pinboard-creation](#create-pinboard)
+- [pinboard-deletion](#delete-pinboards)
+- [pinboard-update](#update-pinboards)
+- [privilege-change](#privilege-changes)
+- [profile-change](#users-modified)
+- [successful-login](#login-successful)
+- [table-creation](#create-tables)
+- [update-rls-rule](#update-rls-rule)
+- [user-account-creation](#users-created)
+- [user-account-deletion](#users-deleted)
+<!--
+- [user-group-change](#user-group-change)-->
+- [user-invitation](#user-invited)
 
 ### Event descriptions
 
 ThoughtSpot defines these events as follows:
 
 <dl>
-<dlentry id ="account-logout">
+<dlentry id="logout-successful">
  <dt>Account logout</dt>
  <dd>A user logs out from ThoughtSpot.</dd>
 </dlentry>
-<dlentry id ="create-rls-rule">
- <dt>Row level security (RLS) rule creation</dt>
+<dlentry id="create-answer">
+ <dt>Answer creation</dt>
+ <dd>A user attempts to create a new answer.</dd>
+</dlentry>
+<dlentry id="delete-answers">
+ <dt>Answer deletion</dt>
+ <dd>A user attempts to delete an answer.</dd>
+</dlentry>
+<dlentry id="update-answers">
+ <dt>Answer update</dt>
+ <dd>A user attempts to modify an existing answer.</dd>
+</dlentry>
+<dlentry id="create-rls-rule">
+ <dt>Row-level security (RLS) rule creation</dt>
  <dd>A user creates an RLS rule on a table.</dd>
 </dlentry>
-<dlentry id ="delete-rls-rules">
+<dlentry id="delete-rls-rules">
  <dt>RLS rule deletion</dt>
  <dd>A user deletes an RLS rule on a table.</dd>
 </dlentry>
-<dlentry id ="failed-login">
+<dlentry id="login-failed">
  <dt>Failed login</dt>
  <dd>A user fails to log in due to an incorrect password, or IdP/ADP deny the authentication request.</dd>
 </dlentry>
-<dlentry id ="group-creation">
+<dlentry id="logout-failed">
+ <dt>Failed logout</dt>
+ <dd>User logout failed.</dd>
+</dlentry>
+<dlentry id="user-groups-created">
  <dt>Group creation</dt>
  <dd>A user creates a new group, either manually through the Admin Portal, or through the internal API.</dd>
 </dlentry>
-<dlentry id ="group-deletion">
+<dlentry id="user-groups-deleted">
  <dt>Group deletion</dt>
  <dd>A user deletes a group, either manually through the Admin Portal, or through the internal API.</dd>
 </dlentry>
-<dlentry id ="group-modification">
+<dlentry id="group-modification">
  <dt>Group modification</dt>
  <dd>A user modifies the properties of a group, either in Admin Portal or over internal API. (Properties include group name, display name, and sharing visibility.)</dd>
 </dlentry>
-<dlentry id ="locked-account">
+<dlentry id="principals-in-group-update">
+ <dt>Group principals update</dt>
+ <dd>A user successfully or unsuccessfully attempts to add or remove users or groups from a group.</dd>
+</dlentry>
+<dlentry id="account-locked">
  <dt>Locked account</dt>
  <dd>A local user fails to authenticate _x_ times in a row, locking the account. Administrators can configure the number of authentication attempts before lockout within ThoughtSpot.</dd>
 </dlentry>
-<dlentry id ="object-creation">
+<!--
+<dlentry id="object-creation">
  <dt>Object creation</dt>
  <dd>A user creates a new object (pinboard, worksheet, answer, etc.) in ThoughtSpot.</dd>
 </dlentry>
@@ -90,41 +121,64 @@ ThoughtSpot defines these events as follows:
  <dt>Object modification</dt>
  <dd>A user successfully or unsuccessfully attempts to change the properties of an object.</dd>
 </dlentry>
-<dlentry id="object-sharing">
+-->
+<dlentry id="share-objects">
  <dt>Object sharing</dt>
- <dd>A user successfully or unsuccessfully attempts to share an object with another user or group.</dd>
+ <dd>A user successfully or unsuccessfully attempts to share an object (Pinboard, Worksheet, Answer) with another user or group.</dd>
 </dlentry>
-<dlentry id ="password-change">
+<dlentry id="update-password">
  <dt>Password change</dt>
  <dd>A user successfully or unsuccessfully attempts to change their password.</dd>
 </dlentry>
-<dlentry id ="privilege-change">
+<dlentry id="create-pinboard">
+ <dt>Pinboard creation</dt>
+ <dd>A user attempts to create a new Pinboard.</dd>
+</dlentry>
+<dlentry id="delete-pinboards">
+ <dt>Pinboard deletion</dt>
+ <dd>A user attempts to delete a Pinboard.</dd>
+</dlentry>
+<dlentry id="update-pinboards">
+ <dt>Pinboard update</dt>
+ <dd>A user attempts to modify an existing Pinboard.</dd>
+</dlentry>
+<dlentry id="privilege-changes">
  <dt>Privilege change</dt>
  <dd>A user adds or removes one or several privileges from a group.</dd>
 </dlentry>
-<dlentry id ="profile-change">
+<dlentry id="users-modified">
  <dt>Profile change</dt>
  <dd>A user profile changes, either manually in the Admin Portal or over SAML sync.</dd>
 </dlentry>
- <dlentry id ="successful-login">
+<dlentry id="update-rls-rule">
+<dt>RLS rule update</dt>
+<dd>A user modifies an RLS rule on a table.</dd>
+</dlentry>
+<dlentry id="login-successful">
   <dt>Successful login</dt>
   <dd>A local, IdP or AD user logs in to ThoughtSpot.</dd>
  </dlentry>
- <dlentry id ="update-rls-rule">
- <dt>RLS rule update</dt>
- <dd>A user modifies an RLS rule on a table.</dd>
-</dlentry>
- <dlentry id ="user-account-creation">
+ <dlentry id="create-tables">
+  <dt>Table creation</dt>
+  <dd>A user attempts to create a new table.</dd>
+ </dlentry>
+ <dlentry id="users-created">
   <dt>User account creation</dt>
   <dd>A new user creates an account, either manually in the Admin Portal or through the internal API.</dd>
  </dlentry>
- <dlentry id ="user-account-deletion">
+ <dlentry id="users-deleted">
   <dt>User account deletion</dt>
   <dd>A user account is deleted, either manually in the Admin Portal or through the internal API.</dd>
  </dlentry>
- <dlentry id ="user-group-change">
+<!--
+ <dlentry id="user-group-change">
   <dt>User group change</dt>
   <dd>A successful or unsuccessful attempt to change the user list to a group by adding or removing members.</dd>
+-->
+ </dlentry>
+ <dlentry id="user-invited">
+  <dt>User invitation</dt>
+  <dd>A user is invited to ThoughtSpot for a free trial.</dd>
  </dlentry>
 </dl>
 
