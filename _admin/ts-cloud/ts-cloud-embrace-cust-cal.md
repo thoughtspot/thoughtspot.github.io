@@ -33,8 +33,7 @@ You can use your custom calendar to search the following ways:
 - Specifying a calendar in the formula
 
 ## Limitations
-- Support for Snowflake.
-- Redshift, Teradata, Starburst, Synapse, and SAP Hana connections are supported in beta, and are off by default. Contact ThoughtSpot to enable them.
+- Support for cloud data warehouse connections.
 - Calendar name must be unique across connections in a cluster.
 - When creating or updating a calendar, a table is created in the external database.
 - When deleting a calendar, the mapping to the table is removed from ThoughtSpot, but the table is not dropped from the external database.
