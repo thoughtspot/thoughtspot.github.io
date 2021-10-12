@@ -81,10 +81,6 @@ column header. To make changes in the model file:
 4. Type in the new value.
 5. After making all your changes, save the model file.
 
-    If you are using Excel, you will see a message. Click `YES` to save the file.
-
-    ![]({{ site.baseurl }}/images/warning_save_model_excel.png)
-
     The model file must be saved as UTF-8 encoded. If your model file includes
     multi-byte characters, edit the file using vi or vim to ensure the file is
     saved in the correct format. Otherwise, you won't be able to upload it after
