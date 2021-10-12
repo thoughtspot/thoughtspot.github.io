@@ -94,3 +94,8 @@
   to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html"
   status = 200
   force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.april.cl/admin/ts-cloud/monitor.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/monitor.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
