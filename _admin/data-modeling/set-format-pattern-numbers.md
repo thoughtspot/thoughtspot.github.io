@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 You can set number, date, and currency display formats. These formats define how
 these value types display in tables and charts.
 
+{% include note.html content="ThoughtSpot supports number, currency, and percent formatting, at the data source level and at the answer level. The <code>format pattern</code> option combines number and percent formatting. You can override data source (“custom” in the UI) formatting at the answer level. In source level/ custom formatting, you can only define the format pattern (number and percent formatting) or currency option. If you set them both, the format pattern overrides your currency formatting." %}
+
 ## Number formats
 
 You can set a format for how numbers are displayed in tables and charts. For
