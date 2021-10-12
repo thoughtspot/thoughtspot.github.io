@@ -69,7 +69,7 @@ column header. To make changes in the model file:
 
 1. Open the model file you downloaded (`model.xls`) in Excel, vi/vim, or a text editor.
 
-    If you are using Excel, you may see a warning message, saying that the file is in a different format than specified by the file extension.
+    If you are using Excel, you may see a warning message, saying that the file is in a different format than the one specified by the file extension.
 
     Click `YES` to proceed.
 
