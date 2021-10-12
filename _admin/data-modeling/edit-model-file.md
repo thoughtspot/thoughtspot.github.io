@@ -69,7 +69,7 @@ column header. To make changes in the model file:
 
 1. Open the model file you downloaded (`model.xls`) in Excel, vi/vim, or a text editor.
 
-    If you are using Excel, you may see a warning message, saying that the file is in a different format than specified by the file extension.
+    If you are using Excel, you may see a warning message, saying that the file is in a different format than the one specified by the file extension.
 
     Click `YES` to proceed.
 
@@ -80,10 +80,6 @@ column header. To make changes in the model file:
 3. Select the value you want to change.
 4. Type in the new value.
 5. After making all your changes, save the model file.
-
-    If you are using Excel, you will see a message. Click `YES` to save the file.
-
-    ![]({{ site.baseurl }}/images/warning_save_model_excel.png)
 
     The model file must be saved as UTF-8 encoded. If your model file includes
     multi-byte characters, edit the file using vi or vim to ensure the file is
