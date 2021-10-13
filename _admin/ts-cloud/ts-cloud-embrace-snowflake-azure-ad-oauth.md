@@ -17,7 +17,11 @@ To create a Snowflake OAuth resource, do the following:
 
 2. Navigate to **Azure Active Directory**.
 
+   ![]({{ site.baseurl }}/images/azure-portal-ad.png)
+
 3. Click **App registrations**, then **New registration**.
+
+   ![]({{ site.baseurl }}/images/azure-portal-reg.png)
 
 4. For Name, enter a name for your application.
 
@@ -27,11 +31,18 @@ To create a Snowflake OAuth resource, do the following:
 
 6. Click **Register**.
 
+   ![]({{ site.baseurl }}/images/azure-portal-reg-ten.png)
+
 7. After the application is created, click **Expose an API**.
+
+   ![]({{ site.baseurl }}/images/snow-expose-api.png)
 
 8. Next to Application ID URI, click **Set** and change its value from **api://\<alphanumeric value>** to **https://\<alphanumeric value>**.
 
+   ![]({{ site.baseurl }}/images/snow-app-uri.png)
+
     {% include note.html content="If the Application ID URI is not used, you must create a security integration with audiences using the Snowflake Account URL (i.e. `<account_identifier>.snowflakecomputing.com)`." %}
+
 9. Click **Add a scope**.
 
 10. For Scope name, enter the name of the Snowflake role (example: `session:role-any`).
@@ -44,6 +55,8 @@ To create a Snowflake OAuth resource, do the following:
 
 14. Click **Add Scope**.
 
+    ![]({{ site.baseurl }}/images/snow-add-scope.png)
+
   {% include important.html content="When you create the scope in your Azure AD application, you must set it to “any” so that a user can later switch to any of their allowed roles when making a JDBC connection using the obtained token." %}
 
 ### Part 2: Creating a Snowflake OAuth client app
@@ -52,7 +65,11 @@ To create a Snowflake OAuth client app, do the following:
 
 1. Sign in to the [Microsoft Azure Portal](https://portal.azure.com/){:target="_blank"}, and navigate to **Azure Active Directory**, if needed.
 
+   ![]({{ site.baseurl }}/images/azure-portal-ad-2.png)
+
 2. Click **App registrations**, and then click **New registration**.
+
+   ![]({{ site.baseurl }}/images/azure-portal-app-regs.png)
 
 3. For Name, enter a name for the client (example: `Snowflake OAuth User`).
 
@@ -60,25 +77,41 @@ To create a Snowflake OAuth client app, do the following:
 
 5. Click **Register**.
 
+   ![]({{ site.baseurl }}/images/azure-portal-reg-ten-2.png)
+
 6. Once the app is created, click **Overview**.
 
 7. From the Application (client) ID field, copy the ID. This ID is referred to as the `<OAUTH_CLIENT_ID>` in the steps that follow.
 
+   ![]({{ site.baseurl }}/images/snow_app_id.png)
+
 8. Click **Certificates & secrets** and then **New client secret**.
+
+   ![]({{ site.baseurl }}/images/snow_certs_secr.png)
 
 9. Copy the secret you just created. This is referred to as `<OAUTH_CLIENT_SECRET>` in the steps that follow.
 
+   ![]({{ site.baseurl }}/images/snow_secr.png)
+
 10. Click **API permissions**, then click **Add a permission**.
+
+    ![]({{ site.baseurl }}/images/snow_api_perm.png)
 
 11. Click **My APIs**.
 
 12. Click the name of the Snowflake OAuth Resource you created in [Part 1]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html#part-1).
 
+    ![]({{ site.baseurl }}/images/snow_req_api_perm.png)
+
 13. On the Request API permissions page, click the Delegated permissions box, and select the permission related to scope you defined in the application you want to grant to this client.
 
 14. Click **Add permissions**.
 
+    ![]({{ site.baseurl }}/images/snow_req_api_2_perm.png)
+
 15. Under Grant admin consent confirmation, click **Yes**.
+
+    ![]({{ site.baseurl }}/images/snow_grant_admin.png)
 
 16. Under Configured permissions, make sure **Grant admin consent for Default Directory** is checked.
 
@@ -108,7 +141,9 @@ To collect Azure AD information for Snowflake, do the following:
 
 	     b. This parameter value will be known as the `<AZURE_AD_ISSUER>` in the following configuration steps. The entityID value should be similar to https<nolink>://sts.windows.net/7dabe4d6-364c-436b-a77e-f252d7a0fb31/.
 
-  4. The **OAuth 2.0 authorization endpoint (v2)** should be similar to  https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/authorize.  
+  4. The **OAuth 2.0 authorization endpoint (v2)** should be similar to  https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/authorize.
+
+     ![]({{ site.baseurl }}/images/snow_oauth_user_res.png)
 
 ### Part 4: Creating an OAuth authorization server in Snowflake
 
@@ -165,6 +200,10 @@ create security integration external_oauth_azure_2
 
 #### Generating Access Token
 
+You can use either of the following methods to generate your access token:
+- Postman
+- cURL
+
 ##### Method 1: Postman
 
 ###### Part 1: Getting a new access token
@@ -191,19 +230,29 @@ To get a new access token, do the following:
 
     Example: https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token/
 
-8. For Scope, you must provide “offline_access” as the scope, along with the actual scope. The refresh token is only provided if the offline_access scope was requested.  
+8. For Scope, you must provide “offline_access” as the scope, along with the actual scope. The refresh token is only provided if the offline_access scope was requested.
+
+    ![]({{ site.baseurl }}/images/postman_get_token.png)  
 
     Example: https<nolink>://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23/session:role-any offline_access
 
-    {% include important.html content="When you create the scope in the Azure AD application setup, it must be set as “any” so that a user can later switch to any of his allowed roles when making a JDBC connection using the obtained token." %}
+    {% include important.html content="When you create the scope in the Azure AD application setup, it must be set as “any” so that a user can later switch to any of his allowed roles when making a JDBC connection using the obtained token." %}    
+
+9. Click **Get New Access Token**.
 
 ###### Part 2: Authenticating Azure AD user
 
 - Sign in to your Microsoft Azure account.
 
+  ![]({{ site.baseurl }}/images/ms_sign_in.png)
+  ![]({{ site.baseurl }}/images/ms_sign_in_pw.png)
+
 ###### Part 3: Collecting and refreshing access tokens
 
 - On the Token Details page, click **Use Token**.
+
+  ![]({{ site.baseurl }}/images/token_det_1.png)
+  ![]({{ site.baseurl }}/images/token_det_2.png)
 
 ##### Method 2: cURL
 
@@ -230,6 +279,8 @@ To get a new access token, do the following:
     --data-urlencode "scope=https://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23/session:role-any offline_access" \
     'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token
     ```
+    ![]({{ site.baseurl }}/images/curl_1.png)
+
 2. Execute below command for getting access token with refresh_token as grant_type:
 
     ```
@@ -241,6 +292,7 @@ To get a new access token, do the following:
         --data-urlencode "scope=https://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23/session:role-any offline_access" \
          'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token'
     ```
+    ![]({{ site.baseurl }}/images/curl_2.png)
 ## Related links
 
 - [Configure Microsoft Azure AD for External OAuth](https://docs.snowflake.com/en/user-guide/oauth-azure.html#configure-microsoft-azure-ad-for-external-oauth){:target="_blank"}
