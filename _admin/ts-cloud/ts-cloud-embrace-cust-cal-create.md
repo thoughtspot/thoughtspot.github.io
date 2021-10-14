@@ -97,25 +97,19 @@ To upload a file to use as a custom calendar, do the following:
 
 5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
-6. For Database, click the **Choose a database** menu, and select the database you want to use with your custom calendar.
-
-7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your custom calendar.
-
-   You can create a new calendar, upload a file to create
-
-8. Select **Upload File**.
+6. Select **Upload File**.
 
    ![]({{ site.baseurl }}/images/custom-cal-upload.png)
 
-9. For Table, enter a name for the table that will be created for your custom calendar.
+7. For Table, enter a name for the table that will be created for your custom calendar.
 
-10. For File, click the **Upload** button, select the file, and click **Open**.
+8. For File, click the **Upload** button, select the file, and click **Open**.
 
-11. For Separator, select delimiter format used in your calendar file.
+9. For Separator, select delimiter format used in your calendar file.
 
     Supported delimiters include: Comma(,), Pipe(|), and Tab.
 
-17. Click **Create**.
+10. Click **Create**.
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
 
