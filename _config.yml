@@ -141,3 +141,4 @@ port: 4000
 
 algolia:
   application_id: 'FFSASUS8DI'
+  index_name: cloud-docs-index
