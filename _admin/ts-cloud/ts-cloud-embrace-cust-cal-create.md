@@ -1,7 +1,7 @@
 ---
 title: [Create a custom calendar]
 last_updated: 5/5/2021
-toc: false
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
