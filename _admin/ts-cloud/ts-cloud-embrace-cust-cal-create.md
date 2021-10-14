@@ -10,11 +10,11 @@ permalink: /:collection/:path.html
 
 Make sure you have the required permissions to create a table in the database of the cloud data warehouse of the connection.
 
-## Methods of creating a custom calendars
+## Methods of creating a custom calendar
 
 You can use one of the following methods of creating a custom calendar:
 - Create a calendar
-- Upload a calendar
+- Upload a file for a calendar
 - Use an existing table
 
 ## Creating a custom calendar
