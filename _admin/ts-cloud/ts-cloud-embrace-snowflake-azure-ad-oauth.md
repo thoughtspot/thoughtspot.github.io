@@ -198,7 +198,9 @@ create security integration external_oauth_azure_2
 
 `ALTER USER testuser SET DEFAULT_ROLE = SYSADMIN;`
 
-#### Generating Access Token
+#### Validating your Azure configuration
+
+To ensure your Azure configuration is correct for use with ThoughtSpot, generate an access token.
 
 You can use either of the following methods to generate your access token:
 - Postman

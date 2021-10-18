@@ -1,4 +1,4 @@
----
+  ---
 title: [Connection reference for Snowflake]
 last_updated: 12/10/2020
 toc: true
@@ -17,7 +17,7 @@ You need specific information to establish a seamless and secure connection. The
       <dt>Connection description</dt>
       <dd>Provide a short description of the connection.<i> (Optional)</i></dd></dlentry>
   <dlentry id="snowflake-account-name">
-      <dt>Account name</dt>
+      <dt>Account name or your Snowflake URL</dt>
       <dd>Enter the account name associated with the Snowflake connection.</dd>
       <dd>The account name is part of the URL that you use to access the Snowflake UI. It is the portion of the URL before <strong>snowflakecomputing.com</strong>.</dd>
       <dd id="example"><strong><em>Example</em></strong>: If your URL is <strong>https://abcd.xyz.efg.snowflakecomputing.com</strong>, your account name is <strong>abcd.xyz.efg</strong>.</dd>
@@ -115,11 +115,15 @@ You need specific information to establish a seamless and secure connection. The
       <dt>Schema</dt>
       <dd>Specify the schema associated with the database.<i> (Optional)</i></dd></dlentry>
   <dlentry id="snowflake-oauth-client-id">
-      <dt>OAuth</dt>
+      <dt>OAuth Client ID</dt>
       <dd>Enter the OAuth client ID associated with the Snowflake database.</dd>
   </dlentry>
   <dlentry id="snowflake-oauth-client-secret">
-      <dt>OAuth client secret</dt>
+      <dt>OAuth Client Secret</dt>
       <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
-  </dlentry>    
+  </dlentry>
+  <dlentry id="snowflake-oauth-client-secret">
+      <dt>Scope</dt>
+      <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth.</dd>
+  </dlentry>     
 </dl>
