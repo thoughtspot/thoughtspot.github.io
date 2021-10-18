@@ -1,4 +1,4 @@
-  ---
+---
 title: [Connection reference for Snowflake]
 last_updated: 12/10/2020
 toc: true
