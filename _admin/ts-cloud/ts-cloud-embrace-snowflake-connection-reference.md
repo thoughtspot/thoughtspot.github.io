@@ -125,5 +125,13 @@ You need specific information to establish a seamless and secure connection. The
   <dlentry id="snowflake-oauth-client-secret">
       <dt>Scope</dt>
       <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth.</dd>
-  </dlentry>     
+  </dlentry>
+  <dlentry id="snowflake-oauth-client-secret">
+      <dt>Auth Url</dt>
+      <dd>(Azure AD OAuth) Enter the Auth URL associated with your Azure AD OAuth.</dd>
+  </dlentry>
+  <dlentry id="snowflake-oauth-client-secret">
+      <dt>Access Token Url</dt>
+      <dd>(Azure AD OAuth) Enter the Access Token Url associated with your Azure AD OAuth.</dd>
+  </dlentry>       
 </dl>
