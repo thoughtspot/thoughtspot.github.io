@@ -1,5 +1,10 @@
 ## This redirects to other doc branches
 [[redirects]]
+  from = "/ts7.oct.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
   from = "/ts7.sep.cl/*"
   to = "https://cloud-docs.thoughtspot.com/:splat"
   status = 200
