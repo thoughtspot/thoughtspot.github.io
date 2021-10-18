@@ -31,7 +31,7 @@
       <td><strong>Can use experimental features</strong></td>
       <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
     </tr>
-    <tr>
+    <tr id="schedule-pinboards">
       <td><strong>Can schedule pinboards</strong></td>
       <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
     </tr>

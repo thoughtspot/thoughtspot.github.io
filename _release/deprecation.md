@@ -21,6 +21,10 @@ The November Cloud release of ThoughtSpot Software, targeted for November 2021 (
 <dl>
 <dlentry><dt>Business user onboarding</dt>
 <dd>ThoughtSpot will replace the current business user onboarding (present in October Cloud 2021 and earlier) with a new onboarding flow. The new onboarding flow directs new users to Search Assist, where they can complete sample searches on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">demo data</a> or <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">their company's data</a>.</dd></dlentry>
+
+<dlentry><dt>Pinboard follow</dt>
+<dd><p>In October Cloud and earlier, there are two different ways for a user to ask ThoughtSpot to email them a pinboard PDF on a specified schedule. You can follow the pinboard, or <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">schedule a pinboard job</a>.</p>
+<p>In November Cloud and later releases, ThoughtSpot will combine these features into a single action called "Schedule." The <strong>Follow</strong> option will not be available. This change will allow any user to schedule their own pinboard emails. To send pinboard emails to other users, you still need the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#schedule-pinboards">Can schedule pinboards permission</a>.</p></dd></dlentry>
 </dl>
 
 {: id="de-support-august-cloud"}
