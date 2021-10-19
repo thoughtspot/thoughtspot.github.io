@@ -41,6 +41,10 @@ To create a custom calendar, do the following:
 
 5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
+6. For Database, click the **Choose a database** menu, and select the database you want to use with your updated custom calendar.
+
+7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your updated custom calendar.
+
 6. Make sure **Create** is selected.
 
 7. For Table, enter a name for the table that will be created for your custom calendar.
@@ -97,15 +101,19 @@ To upload a file to use as a custom calendar, do the following:
 
 5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
-6. Select **Upload File**.
+6. For Database, click the **Choose a database** menu, and select the database you want to use with your updated custom calendar.
+
+7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your updated custom calendar.
+
+8. Select **Upload File**.
 
    ![]({{ site.baseurl }}/images/custom-cal-upload.png)
 
-7. For Table, enter a name for the table that will be created for your custom calendar.
+9. For Table, enter a name for the table that will be created for your custom calendar.
 
-8. For File, click the **Upload** button, select the file, and click **Open**.
+10. For File, click the **Upload** button, select the file, and click **Open**.
 
-9. For Separator, select delimiter format used in your calendar file.
+11. For Separator, select delimiter format used in your calendar file.
 
    Supported delimiters include: Comma(`,`), Pipe(`|`), Semicolon(`;`), and Tab.
 
@@ -137,13 +145,17 @@ To upload a file to use as a custom calendar, do the following:
 
 5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
-6. Select **Existing Table**.
+6. For Database, click the **Choose a database** menu, and select the database you want to use with your updated custom calendar.
+
+7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your updated custom calendar.
+
+8. Select **Existing Table**.
 
    ![]({{ site.baseurl }}/images/custom-cal-table.png)
 
-7. For Table, select an external table to use for creating your custom calendar.
+9. For Table, select an external table to use for creating your custom calendar.
 
-8. Click **Create**.
+10. Click **Create**.
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"           
 
