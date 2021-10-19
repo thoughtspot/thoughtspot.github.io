@@ -24,7 +24,8 @@ The November Cloud release of ThoughtSpot Software, targeted for November 2021 (
 
 <dlentry><dt>Pinboard follow</dt>
 <dd><p>In October Cloud and earlier, there are two different ways for a user to ask ThoughtSpot to email them a pinboard PDF on a specified schedule. You can follow the pinboard, or <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">schedule a pinboard job</a>.</p>
-<p>In November Cloud and later releases, ThoughtSpot will combine these features into a single action called "Schedule." The <strong>Follow</strong> option will not be available. This change will allow any user to schedule their own pinboard emails. To send pinboard emails to other users, you still need the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#schedule-pinboards">Can schedule pinboards permission</a>.</p></dd></dlentry>
+<p>In November Cloud and later releases, ThoughtSpot will combine these features into a single action called "Schedule." The <strong>Follow</strong> option will not be available. This change will allow any user to schedule their own pinboard emails. To send pinboard emails to other users, you still need the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#schedule-pinboards">Can schedule pinboards permission</a>.</p>
+<p>ThoughtSpot will migrate any existing pinboard follows to pinboard schedules. If you followed a pinboard in October Cloud or earlier, you will see it in the list of pinboard schedules for that pinboard as <em>Migrated from follow (your display name)</em>.</p></dd></dlentry>
 </dl>
 
 {: id="de-support-august-cloud"}
