@@ -47,7 +47,7 @@ In your profile, next to **Preferences**, select **Edit**.
 Toggle **Share notifications via email** on or off, and select **Save**.
 
 {: id="password" }
-## Change Password ##
+## Change password ##
 
 You can change your password from your profile.
 
@@ -58,7 +58,13 @@ Enter the following information:
   - New password
   - Confirm new password
 
-  {% include note.html content="Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long. As you enter the new password, the <strong>Password requirements</strong> checklist tells you which requirements you still need to fulfill." %}
+By default, any password for a local user account must meet the following criteria. Passwords for SSO users do ***NOT*** need to meet these criteria. SSO users do not see the option to change their password.
+
+- The password must be 8 characters or more in length.
+- The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
+- The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other 2 criteria. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
+
+As you enter the new password, the <strong>Password requirements</strong> checklist tells you which requirements you still need to fulfill.
 
 To check that you entered the password correctly, you can select **Show password**.
 

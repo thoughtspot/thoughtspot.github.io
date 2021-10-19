@@ -60,7 +60,8 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="password">
         <th>Change password</th>
         <td>Yes</td>
-        <td>A password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long. When you click on the <strong>change password</strong> field, a tooltip appears to tell you these requirements.</td>
+        <td>A password. Your password must meet the following requirements:
+        <ul><li>The password must be 8 characters or more in length.</li><li>The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.</li><li>The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other 2 criteria. Refer to the <a href="https://github.com/dropbox/zxcvbn" target="_blank">Dropbox password library</a> for more information.</li></ul></td>
       </tr>
       <tr id="confirm_password">
         <th>Confirm password</th>
