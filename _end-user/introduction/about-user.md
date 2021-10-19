@@ -60,14 +60,13 @@ Whenever you need a refresh, navigate to **My Profile**. Under **Preferences**, 
 ![]({{ site.baseurl }}/images/onboarding-revisit.png "Revisit onboarding")
 
 {: id="password" }
-## Change Password ##
+## Change password ##
 
-When you need to change your password, navigate to **My Profile**, and under **Preferences** enter the following information:
-  - Current Password
-  - New Password
-  - Confirm Password
+By default, any password for a local user account must meet the following criteria. Passwords for SSO users do ***NOT*** need to meet these criteria. SSO users do not see the option to change their password.
 
-  {% include note.html content="Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long." %}
+- The password must be 8 characters or more in length.
+- The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
+- The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other 2 criteria. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
 
 Click **Update**.
 
