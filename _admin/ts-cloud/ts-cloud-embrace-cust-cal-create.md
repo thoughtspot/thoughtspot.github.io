@@ -14,7 +14,7 @@ Make sure you have the required permissions to create a table in the database of
 
 You can use one of the following methods of creating a custom calendar:
 - Create a calendar
-- Upload a file for a calendar
+- Upload a file
 - Use an existing table
 
 ## Creating a custom calendar
