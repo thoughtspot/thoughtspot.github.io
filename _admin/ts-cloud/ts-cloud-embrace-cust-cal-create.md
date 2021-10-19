@@ -107,7 +107,7 @@ To upload a file to use as a custom calendar, do the following:
 
 9. For Separator, select delimiter format used in your calendar file.
 
-    Supported delimiters include: Comma(,), Pipe(|), and Tab.
+   Supported delimiters include: Comma(`,`), Pipe(`|`), Semicolon(`;`), and Tab.
 
 10. Click **Create**.
 
