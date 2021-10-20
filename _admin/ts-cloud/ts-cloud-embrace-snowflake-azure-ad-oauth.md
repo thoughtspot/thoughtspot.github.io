@@ -37,7 +37,7 @@ To create a Snowflake OAuth resource, do the following:
 
    ![]({{ site.baseurl }}/images/snow-expose-api.png)
 
-8. Next to Application ID URI, click **Set** and change its value from **api://\<alphanumeric value>** to **https://\<alphanumeric value>**.
+8. Next to Application ID URI, click **Set** and change its value from **api://\<alphanumeric value>** to **https://\<alphanumeric value>** and click **Save**.
 
    ![]({{ site.baseurl }}/images/snow-app-uri.png)
 
