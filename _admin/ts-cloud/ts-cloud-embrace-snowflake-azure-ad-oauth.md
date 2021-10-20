@@ -85,6 +85,17 @@ To create a Snowflake OAuth client app, do the following:
 
    ![]({{ site.baseurl }}/images/snow_app_id.png)
 
+8. Click **Authentication**.
+
+9. Under Web, enter your Redirect URI.
+
+   The URI must be in the following format:
+   `<https://<public> url of your ThoughtSpot Instance>/callosum/v1/connection/generateTokens`
+
+   ![]({{ site.baseurl }}/images/redirect_uri.png)
+
+9. Click **Register**.   
+
 8. Click **Certificates & secrets** and then **New client secret**.
 
    ![]({{ site.baseurl }}/images/snow_certs_secr.png)
@@ -198,9 +209,9 @@ create security integration external_oauth_azure_2
 
 `ALTER USER testuser SET DEFAULT_ROLE = SYSADMIN;`
 
-#### Validating your Azure configuration
+#### Validating your Azure configuration (optional)
 
-To ensure your Azure configuration is correct for use with ThoughtSpot, generate an access token.
+To ensure your Azure configuration is correct for use with ThoughtSpot, you can generate an access token.
 
 You can use either of the following methods to generate your access token:
 - Postman
@@ -247,7 +258,6 @@ To get a new access token, do the following:
 - Sign in to your Microsoft Azure account.
 
   ![]({{ site.baseurl }}/images/ms_sign_in.png)
-  ![]({{ site.baseurl }}/images/ms_sign_in_pw.png)
 
 ###### Part 3: Collecting and refreshing access tokens
 
@@ -295,6 +305,7 @@ To get a new access token, do the following:
          'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/token'
     ```
     ![]({{ site.baseurl }}/images/curl_2.png)
+
 ## Related links
 
 - [Configure Microsoft Azure AD for External OAuth](https://docs.snowflake.com/en/user-guide/oauth-azure.html#configure-microsoft-azure-ad-for-external-oauth){:target="_blank"}

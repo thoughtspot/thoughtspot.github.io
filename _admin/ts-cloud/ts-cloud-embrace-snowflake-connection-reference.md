@@ -122,16 +122,16 @@ You need specific information to establish a seamless and secure connection. The
       <dt>OAuth Client Secret</dt>
       <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
   </dlentry>
-  <dlentry id="snowflake-oauth-client-secret">
+  <dlentry id="snowflake-azure-oauth-scope">
       <dt>Scope</dt>
-      <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth.</dd>
+      <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth. Scope maps to a role in Snowflake database. It should be similar to `session:role:developer`</dd>
   </dlentry>
-  <dlentry id="snowflake-oauth-client-secret">
+  <dlentry id="snowflake-azure-oauth-auth-url">
       <dt>Auth Url</dt>
-      <dd>(Azure AD OAuth) Enter the Auth URL associated with your Azure AD OAuth.</dd>
+      <dd>(Azure AD OAuth) Enter the Auth URL associated with your Azure AD OAuth. ThoughtSpot performs an "Authorization Code" grant type flow to get the access token. Get the authorization endpoint for Azure AD OAuth app from Azure portal. It should be similar to `https://login.microsoftonline.com/<tenant_id>/oauth2/v2.0/authorize`</dd>
   </dlentry>
-  <dlentry id="snowflake-oauth-client-secret">
+  <dlentry id="snowflake-azure-oauth-token-url">
       <dt>Access Token Url</dt>
-      <dd>(Azure AD OAuth) Enter the Access Token Url associated with your Azure AD OAuth.</dd>
+      <dd>(Azure AD OAuth) Enter the Access Token Url associated with your Azure AD OAuth. Token endpoint can be obtained from the Azure portal by navigating to the OAuth application in Azure Active Directory resource. It should be similar to `https://login.microsoftonline.com/<tenant_id>/oauth2/v2.0/token`</dd>
   </dlentry>       
 </dl>
