@@ -124,14 +124,14 @@ You need specific information to establish a seamless and secure connection. The
   </dlentry>
   <dlentry id="snowflake-azure-oauth-scope">
       <dt>Scope</dt>
-      <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth. Scope maps to a role in Snowflake database. It should be similar to `session:role:developer`</dd>
+      <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth.</dd> <dd>Scope maps to a role in your Snowflake database. It should be similar to `session:role:developer`.</dd>
   </dlentry>
   <dlentry id="snowflake-azure-oauth-auth-url">
       <dt>Auth Url</dt>
-      <dd>(Azure AD OAuth) Enter the Auth URL associated with your Azure AD OAuth. ThoughtSpot performs an "Authorization Code" grant type flow to get the access token. Get the authorization endpoint for Azure AD OAuth app from Azure portal. It should be similar to `https://login.microsoftonline.com/<tenant_id>/oauth2/v2.0/authorize`</dd>
+      <dd>(Azure AD OAuth) Enter the Auth URL associated with your Azure AD OAuth.</dd> <dd>ThoughtSpot performs an "Authorization Code" grant type flow to get the access token. Get the authorization endpoint for Azure AD OAuth app from Azure portal. It should be similar to <b>https://login.microsoftonline.com/&lt;tenant_id&gt;/oauth2/v2.0/authorize</b>.</dd>
   </dlentry>
   <dlentry id="snowflake-azure-oauth-token-url">
       <dt>Access Token Url</dt>
-      <dd>(Azure AD OAuth) Enter the Access Token Url associated with your Azure AD OAuth. Token endpoint can be obtained from the Azure portal by navigating to the OAuth application in Azure Active Directory resource. It should be similar to `https://login.microsoftonline.com/<tenant_id>/oauth2/v2.0/token`</dd>
-  </dlentry>       
+      <dd>(Azure AD OAuth) Enter the Access Token Url associated with your Azure AD OAuth.</dd> <dd>Token endpoint can be obtained from the Azure portal by navigating to the OAuth application in Azure Active Directory resource. It should be similar to <b>https://login.microsoftonline.com/&lt;tenant_id&gt;/oauth2/v2.0/token</b>.</dd>
+</dlentry>       
 </dl>
