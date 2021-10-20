@@ -1,6 +1,6 @@
 ---
-title: [Getting Started with ThoughtSpot Cloud]
-last_updated: 07/01/2021
+title: [Getting Started with ThoughtSpot Free Trial]
+last_updated: 10/20/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
