@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords. 
+With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords.
 
 You can create custom calendars for different purposes within your company, including:
 - Retail calendars, like 4-4-5, 4-5-4, or 5-4-4
@@ -47,7 +47,7 @@ You can use your custom calendar to search the following ways:
 
 - Before you can create a custom calendar, you must contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable the custom calendar feature on your cluster.
 
-- For a user to create a custom calendar, they must have the required permissions to create a table in the Snowflake database used in the connection where they want to create their custom calendar.
+- For a user to create a custom calendar, they must have the required permissions to create a table in the database used in the connection where they want to create their custom calendar.
 
 ## Related information
 

@@ -41,9 +41,9 @@ To create a custom calendar, do the following:
 
 5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
-6. For Database, click the **Choose a database** menu, and select the database you want to use with your updated custom calendar.
+6. For Database, click the **Choose a database** menu, and select the database you want to use with your custom calendar.
 
-7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your updated custom calendar.
+7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your custom calendar.
 
 6. Make sure **Create** is selected.
 
@@ -101,9 +101,9 @@ To upload a file to use as a custom calendar, do the following:
 
 5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
-6. For Database, click the **Choose a database** menu, and select the database you want to use with your updated custom calendar.
+6. For Database, click the **Choose a database** menu, and select the database you want to use with your custom calendar.
 
-7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your updated custom calendar.
+7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your custom calendar.
 
 8. Select **Upload File**.
 
@@ -145,9 +145,9 @@ To upload a file to use as a custom calendar, do the following:
 
 5. Click the **Choose Connection** menu, and select the connection where you want to use your custom calendar.
 
-6. For Database, click the **Choose a database** menu, and select the database you want to use with your updated custom calendar.
+6. For Database, click the **Choose a database** menu, and select the database you want to use with your custom calendar.
 
-7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your updated custom calendar.
+7. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your custom calendar.
 
 8. Select **Existing Table**.
 
