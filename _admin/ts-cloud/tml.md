@@ -30,6 +30,8 @@ To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views)
 
 In this article, you learn the syntax of the TML files for each Scriptable object. You also learn how to [add and modify joins](#syntax-joins) for Worksheets, Views, and tables.
 
+{% include note.html content="The syntax examples in this article contain every possible parameter in a TML file. Some of these parameters are not in a TML file by default. If you want to use them, you must add them yourself. For example, the <code>fqn</code> parameter is not present in the TML file by default, but you can add it to differentiate a table from another table with the same name." %}
+
 {: id="syntax-worksheets"}
 ##  Syntax of the Worksheet TML file
 
@@ -789,7 +791,8 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="fqn">
   <dt>fqn</dt>
-  <dd>The table's GUID. You can find this string of letters and numbers at the end of the URL for that table. For example, in https://&lt;company&gt;.thoughtspot.com/#/data/tables/34226aaa-4bcf-4d6b-9045-24cb1e9437cb, the GUID is 34226aaa-4bcf-4d6b-9045-24cb1e9437cb. </dd>
+  <dd><p>The table's GUID. You can find this string of letters and numbers at the end of the URL for that table. For example, in https://&lt;company&gt;.thoughtspot.com/#/data/tables/34226aaa-4bcf-4d6b-9045-24cb1e9437cb, the GUID is 34226aaa-4bcf-4d6b-9045-24cb1e9437cb.</p>
+  <p>Use this optional parameter to identify a specific table, if you have multiple tables with the same name.</p></dd>
   </dlentry>
 
   <dlentry id="geo_config">
