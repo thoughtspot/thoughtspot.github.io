@@ -32,32 +32,36 @@ To connect to Snowflake:
 
    The Use OAuth option uses <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>.
 
-   Before selecting Use OAuth authentication, you must configure Azure AD external OAuth. For details, see [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html).
+   Before selecting **Use OAuth** authentication, you must configure OAuth in Snowflake. For details, see [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html).
 
-   Before selecting Microsoft Azure AD OAuth authentication, you must configure OAuth in Snowflake. For details, see [Configure Azure AD external OAuth for a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html).      
+   Before selecting **Microsoft Azure AD OAuth** authentication, you must configure Azure AD external OAuth. For details, see [Configure Azure AD external OAuth for a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html).      
 
    For OAuth authentication, do the following:
 
-    1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
+    1. Select **Use OAuth**.
+    2. Enter Account name or your Snowflake URL, OAuth Client ID, OAuth Client Secret, and (optional) Database.
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth2.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
-    2. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
-    3. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
-    4. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
+    3. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
+    4. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
+    5. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
         Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
 
-    For Microsoft Azure AD OAuth authentication, do the following:
+   For Microsoft Azure AD OAuth authentication, do the following:
 
-     1. Enter Account name or Snowflake URL, OAuth Client ID, OAuth Client Secret, Scope, Auth URL, Access token URL, and (optional) Database.
-     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-azure-ad-oauth.png "Enter connection details")
-     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
-     2. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
-     3. When the Microsoft sign-in screen appears, sign in to your account using the email and password of your Microsoft account associated with Azure.
-     4. On the Stay-signed-in screen, click **Yes**.     
+    1. Select **Microsoft Azure AD OAuth**.
+    2. Enter Account name or Snowflake URL, OAuth Client ID, OAuth Client Secret, Scope, Auth URL, Access token URL, and (optional) Database.
+    ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-azure-ad-oauth.png "Enter connection details")
+    <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
+    3. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
+    4. When the Microsoft sign-in screen appears, sign in to your account using the email and password of your Microsoft account associated with Azure.
+    5. On the Stay-signed-in screen, click **Yes**.     
 
-   For service account authentication, do the following:
-   - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
+   For **Use Service Account** authentication, do the following:
+
+    1. Select **Use Service Account**.
+    2. Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
      ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-serv-acct2.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
