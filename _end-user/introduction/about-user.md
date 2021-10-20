@@ -58,17 +58,20 @@ Enter the following information:
   - New password
   - Confirm new password
 
-By default, any password for a local user account must meet the following criteria. Passwords for SSO users do ***NOT*** need to meet these criteria. SSO users do not see the option to change their password.
-
-- The password must be 8 characters or more in length.
-- The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
-- The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other 2 criteria. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
-
-As you enter the new password, the <strong>Password requirements</strong> checklist tells you which requirements you still need to fulfill.
+As you enter the updated password, the <strong>Password requirements</strong> checklist tells you which requirements you still need to fulfill.
 
 To check that you entered the password correctly, you can select **Show password**.
 
 Click **Save**.
+
+### Password requirements
+By default, any password for a local user account in ThoughtSpot Cloud must meet the following criteria. Passwords for Single Sign-On (SSO) users do ***NOT*** need to meet these criteria. SSO users do not see the option to change their password.
+
+- ***For updated passwords only:*** The password must be 8 characters or more in length.
+- ***For updated passwords only:*** The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
+- ***For new and updated passwords:*** The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other 2 requirements. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
+
+{% include note.html content="When you create a new user's first password, the password only needs to pass the complexity test based on the external library. When you update a password, it must pass the complexity test and also have 8 characters, at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character." %}
 
 {: id="new-answer-experience"}
 ## Manage your Answer experience
