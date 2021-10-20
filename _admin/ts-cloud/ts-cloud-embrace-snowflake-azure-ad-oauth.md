@@ -69,7 +69,7 @@ To create a Snowflake OAuth client app, do the following:
 
 2. Click **App registrations**, and then click **New registration**.
 
-   ![]({{ site.baseurl }}/images/azure-portal-app-regs.png)
+   ![]({{ site.baseurl }}/images/azure-portal-reg.png)
 
 3. For Name, enter a name for the client (example: `Snowflake OAuth User`).
 
