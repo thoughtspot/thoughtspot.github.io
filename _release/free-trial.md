@@ -1,11 +1,29 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 10/07/2021
+last_updated: 10/21/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+## October 21, 2021
+
+### ThoughtSpot Data Security
+
+When you create a connection in ThoughtSpot, your data is only accessible to you and to the teammates you invite. Your data remains in your data warehouse while you use ThoughtSpot to run live queries. ThoughtSpot only stores your tables’ metadata and the index values you set for your columns. You can now access information about ThoughtSpot's Data Security policies from within Free Trial Setup. <br/>
+
+![]({{ site.baseurl }}/images/free-trial-data-security.png  "Free Trial data security"){: .inline}
+
+To learn more about data security in ThoughtSpot, see [ThoughtSpot Cloud: Comprehensive Data Security for Analytics](https://media.thoughtspot.com/pdf/ThoughtSpot-Cloud-Comprehensive-Data-Security-for-Analytics.pdf).
+
+
+### Free Trial Make It Shine 
+
+These are the changes we made to Free Trial this week:
+
+- We fixed a bug preventing the optional message entered when you invite a new user to Free Trial from displaying in the invited user’s email.
+- We fixed a bug that generated a message to contact your ThoughtSpot administrator upon clicking the Signup button. Now, new users can proceed directly to the Sign up page.
+
 
 ## October 7, 2021
 
@@ -13,7 +31,7 @@ permalink: /:collection/:path.html
 
 These are the changes we made to Free Trial this week:
 
-- Users now see an Intercom offer to provide help when they encounter an error setting up a connection.<br/>
+- Users now see an Intercom offer to provide help when they encounter an error setting up a connection. <br/>
 ![]({{ site.baseurl }}/images/free-trial-embrace-intercom.png "Free Trial intercom triggers on Embrace error"){: .inline}
 - Users can now click on the numbered steps at the top of the screen during Onboarding to proceed to the next step.
 
