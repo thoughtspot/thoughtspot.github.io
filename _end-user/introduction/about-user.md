@@ -61,16 +61,25 @@ Whenever you need a refresh, navigate to **My Profile**. Under **Preferences**, 
 
 {: id="password" }
 ## Change password ##
+When you need to change your password, navigate to **My Profile**.
 
-By default, any password for a local user account must meet the following criteria. Passwords for SSO users do ***NOT*** need to meet these criteria. SSO users do not see the option to change their password.
-
-- The password must be 8 characters or more in length.
-- The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
-- The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other 2 criteria. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
+Under **Preferences**, enter the following information. Refer to [password requirements](#password-requirements).
+  - Current Password
+  - New Password
+  - Confirm Password
 
 Click **Update**.
 
   ![]({{ site.baseurl }}/images/update-password.png "Update password")
+
+{: id="password-requirements"}
+### Password requirements
+By default, any password for a local user account in ThoughtSpot Cloud must meet the following criteria. Passwords for Single Sign-On (SSO) users do ***NOT*** need to meet these criteria. SSO users do not see the option to change their password.
+
+- The password must be 8 characters or more in length.
+- The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
+- The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other requirements. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
+- The password cannot use certain blocked words. By default, the blocked words are: your username, any part of your display name, and any blocked words your company configures. To add additional words to the blocklist, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 {: id="new-answer-experience"}
 ## Manage your Answer experience
