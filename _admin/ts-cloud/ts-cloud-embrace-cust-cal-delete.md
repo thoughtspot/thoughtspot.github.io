@@ -23,6 +23,8 @@ To delete a custom calendar, do the following:
 
    The calendar is deleted and disappears from the list on the Custom calendar page.
 
+   {% include note.html content="When you delete a calendar, the mapping to the table is removed from ThoughtSpot, but the table is not dropped from the external database." %}
+
 ## Related information
 
 [Custom calendar overview]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html#)  

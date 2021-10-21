@@ -33,10 +33,7 @@ You can use your custom calendar to search the following ways:
 - Specifying a calendar in the formula
 
 ## Limitations
-- Calendar name must be unique across connections in a cluster.
 - When creating or updating a calendar, a table is created in the external database.
-- When deleting a calendar, the mapping to the table is removed from ThoughtSpot, but the table is not dropped from the external database.
-- Queries using the search bar do not filter suggestions by connection.
 - Date format must use *MM/DD/YYYY*. No other formats are supported.
 - Calendars, by default, use English names for days of the week, and month, but can be manually changed by downloading and editing the calendar file
 - Maximum scope of the date dimension is 90 years
