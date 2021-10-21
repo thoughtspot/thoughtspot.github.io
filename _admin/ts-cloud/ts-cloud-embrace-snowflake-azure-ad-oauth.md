@@ -154,7 +154,8 @@ To collect Azure AD information for Snowflake, do the following:
 
   4. The **OAuth 2.0 authorization endpoint (v2)** should be similar to  https<nolink>://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/oauth2/v2.0/authorize.
 
-     ![]({{ site.baseurl }}/images/snow_oauth_user_res.png)
+     ![]({{ site.baseurl }}/images/snow_oauth_user_res_1.png)
+     ![]({{ site.baseurl }}/images/snow_oauth_user_res_2.png)
 
 ### Part 4: Creating an OAuth authorization server in Snowflake
 
