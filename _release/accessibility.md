@@ -10,4 +10,4 @@ We at ThoughtSpot design and develop interfaces with accessibility guidelines an
 
 This report covers the degree of conformance to the WCAG 2.1 accessibility standard:
 
-   [ThoughtSpot Accessibility Conformance Report](https://www.thoughtspot.com/sites/default/files/pdf/Thoughtspot-Accessibility-Conformance-Report-WCAG-Edition.pdf){:target="_blank"}
+   [ThoughtSpot Accessibility Conformance Report](https://media.thoughtspot.com/pdf/ThoughtSpot-Accessibility-Conformance-Report-WCAG-Edition.pdf){:target="_blank"}
