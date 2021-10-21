@@ -34,6 +34,14 @@ A ThoughtSpot Community account lets you ask questions in our product forums, ex
 
 We will send you an email that contains the administrator credentials to log in for the first time. Check your inbox, then click to access the free trial cluster. Stay logged in to complete the rest of the setup.
 
+### Password requirements
+When you first log in to Free Trial, the password verification checklist appears. Your password must meet the following requirements:
+
+- The password must be 8 characters or more in length.
+- The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
+- The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other requirements. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
+- The password cannot use certain blocked words. By default, the blocked words are: your username and any part of your display name.
+
 ## Step 3: Connect to your data source
 Completing this step lets all users in your organization perform live queries. Choose your cloud data warehouse type, and follow the connection instructions.
 - [Amazon Redshift]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-redshift.html){:target="_blank"}
