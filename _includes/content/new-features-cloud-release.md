@@ -64,3 +64,9 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </dl>
 
 <h3><a id="october-cloud-2021-developer"></a>For the Developer</h3>
+
+<dl>
+<dt>ThoughtSpot Everywhere</dt>
+<dd>
+For information about the new features and enhancements introduced in this release, refer to <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>. </dd>
+</dl>
