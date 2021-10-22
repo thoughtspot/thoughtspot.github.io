@@ -18,9 +18,7 @@ Select the scheduled pinboards and use the **Delete**, **Resume**, and **Pause**
 
 Clicking on the row of a job will open a detailed view of every generated update of that job. You can see the start and end times of the job, as well as the status. Clicking on a job will show more information about the status updates.
 
- ![]({{ site.baseurl }}/images/success_pinboard_schedule.png "Success status updates")
-
- ![]({{ site.baseurl }}/images/failed_pinboard_schedule.png "Failed status updates")
+ ![Pinboard job status]({{ site.baseurl }}/images/pinboard-job-status.png "Pinboard job status")
 
 ## Pinboard links
 
