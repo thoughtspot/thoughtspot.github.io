@@ -6,9 +6,11 @@ summary: "You can manage all scheduled pinboards on the Jobs Management page und
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Users who are not admins, but have can schedule pinboard privilege, can only view pinboard schedules they've created. You can select specific jobs and choose to pause, resume, edit, or delete them. You can have up to 50 scheduled jobs on your cluster at time. [Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) if you'd like to increase this limit.
+Users who are not admins, but have the **Can schedule pinboards** privilege, can only view pinboard schedules they've created. You can select specific jobs and choose to pause, resume, edit, or delete them. You can have up to 50 scheduled jobs on your cluster at time. [Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) if you'd like to increase this limit.
 
- ![]({{ site.baseurl }}/images/jobs_management.png "View Jobs Management page")
+To view pinboard schedules, navigate to **Data > Usage > Jobs Management**.
+
+![]({{ site.baseurl }}/images/jobs_management.png "View Jobs Management page")
 
 ## Bulk actions
 
