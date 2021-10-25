@@ -65,25 +65,19 @@ To create a Snowflake OAuth client app, do the following:
 
 1. Sign in to the [Microsoft Azure Portal](https://portal.azure.com/){:target="_blank"}, and navigate to **Azure Active Directory**, if needed.
 
-   ![]({{ site.baseurl }}/images/azure-portal-ad-2.png)
-
 2. Click **App registrations**, and then click **New registration**.
 
-   ![]({{ site.baseurl }}/images/azure-portal-reg.png)
-
-3. For Name, enter a name for the client (example: `Snowflake OAuth User`).
+3. For Name, enter a name for the client (example: `Snowflake OAuth Client`).
 
 4. For Supported account types, make sure it is set to **Single tenant**.
 
 5. Click **Register**.
 
-   ![]({{ site.baseurl }}/images/azure-portal-reg-ten-2.png)
-
 6. Once the app is created, click **Overview**.
 
 7. From the Application (client) ID field, copy the ID. This ID is referred to as the `<OAUTH_CLIENT_ID>` in the steps that follow.
 
-   ![]({{ site.baseurl }}/images/snow_app_id.png)
+   ![]({{ site.baseurl }}/images/sf_oauth_client.png)
 
 8. Click **Authentication**.
 
