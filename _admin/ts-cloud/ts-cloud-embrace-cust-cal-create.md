@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 ## Before you begin
 
-Make sure you have the required permissions to create a table in the database of the cloud data warehouse of the connection.
+You must have administrator-level permissions to create a table in the database of the cloud data warehouse of the connection.
 
 ## Methods of creating a custom calendar
 
@@ -79,6 +79,8 @@ To create a custom calendar, do the following:
 
 ## Uploading a file for a custom calendar
 
+This option provides you the ability to upload a calendar file that you use for another connection or one that you've created that uses a different calendar type than is available through the ThoughtSpot UI. You can [download]({{ site.baseurl }}/directory/sub-directory/page.html#) an existing calendar in .csv format, make changes to it, and upload it.
+
 To upload a file to use as a custom calendar, do the following:
 
 1. Click **Data** in the top navigation bar.
@@ -123,6 +125,8 @@ To upload a file to use as a custom calendar, do the following:
 
 ## Use an existing table for a custom calendar
 
+This option provides you the ability to use an external table in your connection as a calendar.
+
 To upload a file to use as a custom calendar, do the following:
 
 1. Click **Data** in the top navigation bar.
@@ -157,7 +161,37 @@ To upload a file to use as a custom calendar, do the following:
 
 10. Click **Create**.
 
-    The Custom calendar page appears again, with the message "Custom calendar created successfully!"           
+    The Custom calendar page appears again, with the message "Custom calendar created successfully!"
+
+## Using your custom calendar in your connection
+
+After you create your custom calendar, you must specify where to use it in your connection.
+
+To use your custom calendar, do the following:
+
+1. Sign in to your ThoughtSpot cluster and click **Connections**.
+
+2. Click the name of the connection where you want to use your calendar.
+
+3. Click the name of the table where you want to use your calendar.
+
+4. Find the column where you want to use your calendar.
+
+   {% include note.html content="The column must use the DATE or DATE_TIME data type." %}
+
+5. Refresh the page to make sure your custom calendar is available.
+
+5. Scroll horizontally to the CALENDAR TYPE column.
+
+6. In the CALENDAR TYPE column for the column(s) you chose, double-click the existing calendar name (example: "None"), and then select your custom calendar.
+
+7. Click **Save Changes**.
+
+   Now, date-related searches in the selected table use your custom calendar.
+
+## (Optional) Set a custom calendar as the default calendar for your cluster
+
+To set your custom calendar as the default calendar for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/end-user/help-center/contact.html).
 
 ## Related information
 

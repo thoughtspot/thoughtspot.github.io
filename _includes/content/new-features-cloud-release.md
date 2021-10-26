@@ -43,7 +43,7 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
 <dlentry id="connections-custom-calendar">
 <dt>Custom calendar</dt>
-<dd>Custom calendar is now available, and it supports all cloud data warehouses. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>.</dd>
+<dd>Custom calendar is now available, and it supports the Snowflake, Amazon Redshift, Google BigQuery, Microsoft Azure Synapse, and Databricks cloud data warehouses. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>.</dd>
 </dlentry>
 </dl>
 
