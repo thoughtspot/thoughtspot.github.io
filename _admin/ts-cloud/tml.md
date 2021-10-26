@@ -447,7 +447,7 @@ With table joins, you can accomplish the following tasks:
 
 Table joins have the following limitations:
 - You cannot delete a join by removing it from the TML. You must delete it through the UI.
-- You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
+- You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join in the UI.
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
 - When creating generic or range joins, you must have an 'equals' clause before you can have a 'greater than/less than' clause. <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is valid, but <code><em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is not.
 
