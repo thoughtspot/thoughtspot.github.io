@@ -45,12 +45,6 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dt>Custom calendar</dt>
 <dd>Custom calendar is now available, and it supports all cloud data warehouses. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>.</dd>
 </dlentry>
-<dl>
-<dlentry id="connections-custom-calendar">
-<dt>Azure AD external OAuth for Snowflake</dt>
-<dd>Snowflake now supports external OAuth through Microsoft Azure AD. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html">Configure Azure AD external OAuth for a Snowflake connection</a>.</dd>
-</dlentry>
-
 </dl>
 
 <h3><a id="october-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
