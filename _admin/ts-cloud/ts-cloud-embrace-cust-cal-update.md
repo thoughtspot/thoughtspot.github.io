@@ -1,7 +1,7 @@
 ---
 title: [Update a custom calendar]
 last_updated: 5/5/2021
-toc: false
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -76,14 +76,12 @@ You can replace a custom calendar by uploading a calendar file in one of the fol
 - Pipe-separated
 - Tab-separated
 - Semicolon-separated
+{: id="update-cal"}
+### Updating the calendar file
 
-### Creating or updating your calendar file
+The easiest way to update a calendar file is to download an existing one, make changes to it, and then upload it.
 
-You can either create a new calendar file or download an existing one and make changes to it.
-
-If you have created a new calendar file, go to [Uploading your calendar file]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update#upload-cal)
-
-If you want to make changes to an existing calendar, do the following:
+To update your calendar file, do the following:
 
 1. Click **Data** in the top navigation bar.
 

@@ -23,6 +23,15 @@ In a custom calendar, you can set the following:
 - The starting day of the week
 - The words used for the days of the week, months and quarters
 
+## Supported cloud data warehouses
+
+Custom calendar currently supports the following:
+- Snowflake
+- Amazon Redshift
+- Google BigQuery
+- Microsoft Azure Synapse
+- Databricks
+
 ## Search features
 
 You can use your custom calendar to search the following ways:
