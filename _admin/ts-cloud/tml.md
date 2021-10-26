@@ -173,15 +173,12 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#description">description</a>:
     This is a multi-line description of the View.
     Description line 2
-  <a href="#table">tables</a>:
-    <a href="#identity">identity</a>:  
-    - <a href="#id">id</a>: &lt;<em>table_id_1</em>&gt;
-      <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
-      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
-    <a href="#identity">identity</a>:  
-    - <a href="#id">id</a>: &lt;<em>table_id_n</em>&gt;
-      <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
-      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_n</em>&gt;
+  <a href="#tables">tables</a>:
+  - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
+    <a href="#id">id</a> : &lt;<em>optional_table_id</em>&gt;
+    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
+  - <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
   <a href="#joins">joins</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
