@@ -1,6 +1,6 @@
 ---
 title: [Add a hyperlink to a search]
-last_updated: 10/11/2021
+last_updated: 10/29/2021
 summary: “Learn how to add a hyperlink to a search.”
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,8 +15,9 @@ To add an external hyperlink in a search, follow these steps:
 1. Start a new search.<br/>
 Alternatively, choose to edit an existing answer from a Pinboard.
 
-2. If the answer shows a chart, switch to **Table View**.
-![Switch to table view]({{ site.baseurl }}/images/changeview-chartortable.png "Switch to table view"){: .inline}
+2. If the answer shows a chart, switch to **Table View**.<br/>
+
+    ![Switch to table view]({{ site.baseurl }}/images/changeview-chartortable.png "Switch to table view"){: .inline}
 
 3. In the upper-right side of the table, click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add formula**.<br/>
 
