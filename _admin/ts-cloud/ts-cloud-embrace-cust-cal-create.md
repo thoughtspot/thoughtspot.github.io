@@ -169,7 +169,7 @@ After you create your custom calendar, you must specify where to use it in your 
 
 To use your custom calendar, do the following:
 
-1. Sign in to your ThoughtSpot cluster and click **Connections**.
+1. Sign in to your ThoughtSpot cluster and click **Data** > **Connections**.
 
 2. Click the name of the connection where you want to use your calendar.
 
@@ -189,9 +189,36 @@ To use your custom calendar, do the following:
 
    Now, date-related searches in the selected table use your custom calendar.
 
+   After creating a custom calendar, you easily look at it to confirm it is set up the way you want. For details, see [View a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html#view-cust-cal).
+
 ## (Optional) Set a custom calendar as the default calendar for your cluster
 
 To set your custom calendar as the default calendar for your cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/end-user/help-center/contact.html).
+
+{: id="view-cust-cal"}
+## View a custom calendar
+
+After creating a custom calendar, you can easily open it from the ThoughtSpot UI to look at its configuration.
+
+To view a custom calendar, do the following:
+
+1. Sign in to your ThoughtSpot cluster.
+
+2. Click **Data** in the top navigation bar.
+
+   The Data Objects page appears.
+
+2. Click the More menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select ![calendar icon]({{ site.baseurl }}/images/calendar.png){: .inline} **Custom calendar**.
+
+   The Custom calendar page appears.
+
+3. Click the name of the custom calendar you want to view.
+
+   Your custom calendar opens in a window displaying all columns and rows. You can scroll through these to verify your calendar is set up the way you want.
+
+   If you want to make edits to your calendar, you can download it as a .csv file by clicking **Download as CSV** in the bottom-left corner of the window.
+
+4. When you're done viewing your calendar, close the window by clicking **Done**.
 
 ## Related information
 
