@@ -68,15 +68,15 @@ To replace your custom calendar, do the following:
 14. Click **Create**.
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
-
+{: id="upload-cal"}
 ## Uploading a custom calendar
-
+{: id="update-cal"}
 You can replace a custom calendar by uploading a calendar file in one of the following formats:
 - Comma-separated
 - Pipe-separated
 - Tab-separated
 - Semicolon-separated
-{: id="update-cal"}
+
 ### Updating the calendar file
 
 The easiest way to update a calendar file is to download an existing one, make changes to it, and then upload it.

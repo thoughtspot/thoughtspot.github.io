@@ -19,6 +19,14 @@ You can use one of the following methods of creating a custom calendar:
 
 ## Creating a custom calendar
 
+You can create one of the following calendar types:
+- Month offset
+- Four Four Five
+- Four Five Four
+- Five Four Four
+
+If you need to create a different type of calendar than these, including one that uses a different language for the names of months or days of the week, you must upload your custom calendar file. In this case, ThoughtSpot suggests you first create a calendar in one of the supported calendar types to use as a template, by following the steps below. After that, you can download and [update]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html#update-cal) it to your specific requirements.
+
 To create a custom calendar, do the following:
 
 1. Click **Data** in the top navigation bar.
@@ -79,7 +87,7 @@ To create a custom calendar, do the following:
 
 ## Uploading a file for a custom calendar
 
-This option provides you the ability to upload a calendar file that you use for another connection or one that you've created that uses a different calendar type than is available through the ThoughtSpot UI. You can [download]({{ site.baseurl }}/directory/sub-directory/page.html#) an existing calendar in .csv format, make changes to it, and upload it.
+This option provides you the ability to upload a calendar file that you use for another connection or one that you've created that uses a different calendar type than is available through the ThoughtSpot UI. You can [update]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html#updating-the-calendar-file) an existing calendar by downloading it, making changes to it, and then uploading it.
 
 To upload a file to use as a custom calendar, do the following:
 
