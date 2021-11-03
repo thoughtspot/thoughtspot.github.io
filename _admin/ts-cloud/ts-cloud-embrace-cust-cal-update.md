@@ -55,7 +55,7 @@ To replace your custom calendar, do the following:
 
 10. For Monthly offset, click the menu and select a month.
 
-11. For Start day of the week, click the menu and select a day.
+11. For Start day of week, click the menu and select a day.
 
 12. For Quarter name prefix, enter the prefix you'd like to use for quarter numbers.
 
@@ -135,7 +135,6 @@ To create a new calendar from an existing table, do the following:
 3. For Schema, click the **Choose a schema** menu, and select the schema you want to use with your updated custom calendar.
 
 4. Select **Existing Table**.
-
 
 5. For Table, select an external table to use for creating your custom calendar.
 

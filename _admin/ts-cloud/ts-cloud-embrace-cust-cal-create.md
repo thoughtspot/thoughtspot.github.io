@@ -12,7 +12,7 @@ You must have administrator-level permissions to create a table in the database 
 
 ## Methods of creating a custom calendar
 
-You can use one of the following methods of creating a custom calendar:
+You can use one of the following methods to create a custom calendar:
 - Create a calendar
 - Upload a file
 - Use an existing table
@@ -25,7 +25,7 @@ You can create one of the following calendar types:
 - Four Five Four
 - Five Four Four
 
-If you need to create a different type of calendar than these, including one that uses a different language for the names of months or days of the week, you must upload your custom calendar file. In this case, ThoughtSpot suggests you first create a calendar in one of the supported calendar types to use as a template, by following the steps below. After that, you can download and [update]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html#update-cal) it to your specific requirements.
+If you need to create a different type of calendar, including one that uses a different language for the names of months or days of the week, you must upload your custom calendar file. In this case, ThoughtSpot suggests you first create a calendar in one of the supported calendar types to use as a template, by following the steps below. After that, you can download and [update]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html#update-cal) it to your specific requirements.
 
 To create a custom calendar, do the following:
 
@@ -71,7 +71,7 @@ To create a custom calendar, do the following:
 
 11. For Monthly offset, click the menu and select a month.
 
-12. For Start day of the week, click the menu and select a day.
+12. For Start day of week, click the menu and select a day.
 
 13. For Quarter name prefix, enter the prefix you'd like to use for quarter numbers.
 
@@ -85,9 +85,11 @@ To create a custom calendar, do the following:
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
 
+    Your custom calendar appears in the list of calendars.
+
 ## Uploading a file for a custom calendar
 
-This option provides you the ability to upload a calendar file that you use for another connection or one that you've created that uses a different calendar type than is available through the ThoughtSpot UI. You can [update]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html#updating-the-calendar-file) an existing calendar by downloading it, making changes to it, and then uploading it.
+This option provides you the ability to upload a calendar file. You can [update]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html#updating-the-calendar-file) an existing calendar by downloading it, making changes to it, and then uploading it.
 
 To upload a file to use as a custom calendar, do the following:
 
@@ -131,11 +133,13 @@ To upload a file to use as a custom calendar, do the following:
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
 
+    Your custom calendar appears in the list of calendars.
+
 ## Use an existing table for a custom calendar
 
 This option provides you the ability to use an external table in your connection as a calendar.
 
-To upload a file to use as a custom calendar, do the following:
+To use an external table as a custom calendar, do the following:
 
 1. Click **Data** in the top navigation bar.
 
@@ -170,6 +174,8 @@ To upload a file to use as a custom calendar, do the following:
 10. Click **Create**.
 
     The Custom calendar page appears again, with the message "Custom calendar created successfully!"
+
+    Your custom calendar appears in the list of calendars.
 
 ## Using your custom calendar in your connection
 
@@ -223,8 +229,6 @@ To view a custom calendar, do the following:
 3. Click the name of the custom calendar you want to view.
 
    Your custom calendar opens in a window displaying all columns and rows. You can scroll through these to verify your calendar is set up the way you want.
-
-   If you want to make edits to your calendar, you can download it as a .csv file by clicking **Download as CSV** in the bottom-left corner of the window.
 
 4. When you're done viewing your calendar, close the window by clicking **Done**.
 
