@@ -47,8 +47,7 @@ The possible events are:
 - [update-rls-rule](#update-rls-rule)
 - [user-account-creation](#users-created)
 - [user-account-deletion](#users-deleted)
-<!--
-- [user-group-change](#user-group-change)-->
+<!-- - [user-group-change](#user-group-change)-->
 - [user-invitation](#user-invited)
 
 ### Event descriptions
@@ -174,8 +173,8 @@ ThoughtSpot defines these events as follows:
  <dlentry id="user-group-change">
   <dt>User group change</dt>
   <dd>A successful or unsuccessful attempt to change the user list to a group by adding or removing members.</dd>
--->
  </dlentry>
+ -->
  <dlentry id="user-invited">
   <dt>User invitation</dt>
   <dd>A user is invited to ThoughtSpot for a free trial.</dd>
