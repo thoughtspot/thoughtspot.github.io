@@ -1,13 +1,13 @@
 ---
 title: [Visualize Search results as Answers]
-last_updated: 5/22/2020
+last_updated: 11/03/2021
 summary: "Visualize and save your ThoughtSpot Search results as Answers."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot Search results generate tables and charts. When you save them for future use, and we call these saved searches Answers.
+ThoughtSpot Search results generate tables and charts. When you save them for future use, we call these saved searches Answers.
 
 ## Creating an Answer
 
