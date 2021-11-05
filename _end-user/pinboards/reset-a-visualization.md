@@ -1,15 +1,18 @@
 ---
-title: [Reset a pinboard visualization]
-summary: Learn how to reset a pinboard visualization.
-last_updated: 11/15/2019
+title: [Reset a Liveboard visualization]
+summary: Learn how to reset a Liveboard visualization.
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can undo your edits to a pinboard visualization by resetting it.
 
-## Reset a pinboard visualization
+{% include content/liveboards-announcement.md %}
 
-After performing ad hoc actions or edits to a visualization of your pinboard, you can reset the visualization to its original form.
+You can undo your edits to a Liveboard visualization by resetting it.
+
+## Reset a Liveboard visualization
+
+After performing ad hoc actions or edits to a visualization of your Liveboard, you can reset the visualization to its original form.
 
 To reset a visualization:
 
@@ -17,6 +20,6 @@ To reset a visualization:
 
      ![]({{ site.baseurl }}/images/reset_a_visualization.png "Click to reset")
 
-2. Save your pinboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
+2. Save your Liveboard by clicking the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and selecting **Save**.
 
      ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")

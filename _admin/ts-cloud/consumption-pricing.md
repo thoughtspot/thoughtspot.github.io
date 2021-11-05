@@ -1,17 +1,20 @@
 ---
 title: [Consumption-based pricing]
-last_updated: 1/26/2021
+last_updated: 11/05/2021
 summary: ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on usage of the ThoughtSpot product.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ThoughtSpot’s consumption-based licensing model lets you license ThoughtSpot based on your users' usage of the ThoughtSpot product. When you purchase a consumption-based ThoughtSpot license, ThoughtSpot bills you based on [credits](#credits). The ThoughtSpot consumption licensing model is available for both ThoughtSpot Cloud and for Connections software deployment on your cloud platform.
 
 To learn about each of ThoughtSpot's pricing options, refer to [ThoughtSpot pricing](https://www.thoughtspot.com/pricing){: target="_blank"}. ThoughtSpot offers consumption- and capacity-based pricing. Each cluster must have a discrete pricing model. You cannot license one cluster as both consumption and capacity, but you can have multiple clusters with each using a different pricing model.
 
 {: id="credits"}
 ## Credits
-You purchase and consume credits with the consumption model. A credit is a unit of measure. When members of your organization utilize ThoughtSpot, we measure [usage minutes](#usage-minutes), which consume available credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Pinboards or answers, creating and editing worksheets, making any administrative changes, or changing setup configuration.  Each user who actively uses ThoughtSpot consumes credits, even if they are using the product at the same time. Each usage minute is equivalent to consuming one (1) credit. ThoughtSpot refers to this as **credit consumption rate** or **credit burn rate**.
+You purchase and consume credits with the consumption model. A credit is a unit of measure. When members of your organization utilize ThoughtSpot, we measure [usage minutes](#usage-minutes), which consume available credits. Examples of user activity that consume credits include a user performing a search in ThoughtSpot, viewing or editing Liveboards or answers, creating and editing worksheets, making any administrative changes, or changing setup configuration. Each user who actively uses ThoughtSpot consumes credits, even if they are using the product at the same time. Each usage minute is equivalent to consuming one (1) credit. ThoughtSpot refers to this as **credit consumption rate** or **credit burn rate**.
 
 {: id="usage-minutes"}
 ## Usage minutes
@@ -32,33 +35,33 @@ We define user activity as any user-triggered (initiated) action in ThoughtSpot,
 User activity that incurs usage minutes includes any user interaction with the product, such as:
 - Clicking on any interactive elements inside the ThoughtSpot product, such as menu items, search boxes, tabs, buttons, icons and other user interface artifacts. Some examples are:
     - Performing searches on data or search-related actions such as Explore, filters, drill-down, showing underlying data, and other related actions
-    - Creating, editing, updating deleting or interacting with Answers, Pinboards, Worksheets, tables, Views, and other objects
+    - Creating, editing, updating deleting or interacting with answers, Liveboards, worksheets, tables, views, and other objects
     - Triggering user-initiated SpotIQ analyses
     - Setup and configuration actions in the product (such as those performed in the **Admin** section of the product or other such parts of the product)
     - Uploads, downloads, sharing, triggering the sending of emails from within the product
 - Browser actions (such as refreshing the page or using the **forward** or **back** buttons)
 - Any scrolling in the product that triggers updates to objects or content being viewed
 
-    For example, if a user is scrolling through a Pinboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Pinboard, resulting in ThoughtSpot loading and displaying additional charts in that Pinboard for the first time, this counts as additional user activity.
+    For example, if a user is scrolling through a Liveboard, initially it displays only a subset of the charts that can fit on the screen. This counts as initial user activity. At any point, if the user scrolls through the Liveboard, resulting in ThoughtSpot loading and displaying additional charts in that Liveboard for the first time, this counts as additional user activity.
 
 ## User activity that does not incur usage minutes
 The following do not count toward consumption:
 
 * The only click that does not count as user activity is clicking **Sign out**.
-* Any action that happens outside the product or is not user-triggered inside the product is not considered user activity. For example: the system sending out a scheduled pinboard, a user receiving emails generated by ThoughtSpot based on actions such as scheduled pinboards, welcome or other kinds of emails, and emails sent out as a result of “Following” metrics in the product do not count as user activity. (*However, if the user logs in to the product as a result of these emails, that will start user activity*).
+* Any action that happens outside the product or is not user-triggered inside the product is not considered user activity. For example: the system sending out a scheduled Liveboard, a user receiving emails generated by ThoughtSpot based on actions such as scheduled Liveboards, welcome or other kinds of emails, and emails sent out as a result of “Following” metrics in the product do not count as user activity. (*However, if the user logs in to the product as a result of these emails, that will start user activity*).
 * Any non-user-initiated activity in the system does not count as “user activity”. This includes automatically triggered SpotIQ analyses, indexing or other non-user-initiated queries against external warehouses and any other background processes or daemons that are not a result of an explicit user triggered action.
 * Any scrolling on ThoughtSpot product pages that does not update any content on the page does not count towards consumption.
 * Leaving ThoughtSpot open in another tab does not count toward consumption.
 
 {: id="credit-usage-pinboard"}
 ## Monitor your consumption
-You can monitor your credit consumption with the Credit Usage pinboard, a new default admin-only pinboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the pinboards and answers by searching for them from the home page, or from the **Pinboards** or **Answers** pages.
+You can monitor your credit consumption with the Credit Usage Liveboard, a new default admin-only Liveboard with data from the new Credit Usage worksheet. You can also use the new default admin-only answers with data from the Credit Usage worksheet, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*. You can access the Liveboards and answers by searching for them from the home page, or from the **Liveboards** or **Answers** pages.
 
-![Credit Usage pinboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Pinboard")
+![Credit Usage Liveboard]({{ site.baseurl }}/images/consumption-usage-pinboard.png "Credit Usage Liveboard")
 
-The Credit Usage pinboard contains useful visualizations and headlines you can use to monitor your consumption. You can use it to determine which users or time periods consume more credits than others. You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and pinboards.
+The Credit Usage Liveboard contains useful visualizations and headlines you can use to monitor your consumption. You can use it to determine which users or time periods consume more credits than others. You can also search the data yourself, using the Credit Usage worksheet, and create your own answers and Liveboards.
 
-The Credit Usage Pinboard contains the following visualizations and headlines:
+The Credit Usage Liveboard contains the following visualizations and headlines:
 - Daily Usage, with Unique Users (last 30 days)
 - Billable Credits Consumed, All Time
 - Billable Credits Consumed, Month to Date
@@ -70,7 +73,7 @@ The Credit Usage Pinboard contains the following visualizations and headlines:
 - Weekly Credits Consumed, with Unique Users, Last 8 Weeks
 - Month of Year Credit Usage, by User GUID
 
-Use the visualizations on this pinboard to monitor your consumption. For example, you may notice that a certain user consumes most of your credits, or that there was a spike during a certain time window. You can then use the new default answers to [analyze user activity and event details](#user-activity).
+Use the visualizations on this Liveboard to monitor your consumption. For example, you may notice that a certain user consumes most of your credits, or that there was a spike during a certain time window. You can then use the new default answers to [analyze user activity and event details](#user-activity).
 
 {: id="user-activity"}
 ### Analyze user activity and event details
@@ -78,7 +81,7 @@ ThoughtSpot provides 2 default system answers to help you track and analyze your
 
 Follow these best practices for the 2 new answers, *Sample Answer - Credit usage details* and *Credit usage from Charging Records*.
 
-1. Examine the Credit Usage pinboard to determine a user or time window of interest. For example, you may notice that a certain user consumes most of your credits, or that there was a spike during a certain time window.
+1. Examine the Credit Usage Liveboard to determine a user or time window of interest. For example, you may notice that a certain user consumes most of your credits, or that there was a spike during a certain time window.
 
 2. Determine how you want to investigate this credit consumption:
     - **Sample Answer - Credit usage details**: This answer is ideal for looking into object-level details, such as the objects a user accessed and the actions they performed on those objects.

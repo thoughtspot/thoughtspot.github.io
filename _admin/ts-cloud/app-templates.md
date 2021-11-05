@@ -1,6 +1,6 @@
 ---
 title: [SpotApps]
-last_updated: 12/18/2020
+last_updated: 11/05/2021
 summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
 redirect_from:
 - /admin/scriptability/app-templates.html
@@ -8,7 +8,9 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-A SpotApp is a collection of Pinboards, Answers, Worksheets, Views & Tables packaged together as a zip file. SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (Worksheets, Tables, and Views) and content (Pinboards and Answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
+{% include content/liveboards-announcement.md %}
+
+A SpotApp is a collection of Liveboards, answers, worksheets, views & tables packaged together as a zip file. SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
 
 {: id="export-spotapps"}
 ## Export SpotApps
@@ -20,11 +22,11 @@ To export your own custom SpotApps, follow these steps.
 
 2. Select **Export SpotApps**.
 
-3. In the **Export** interface, select the Pinboards, Answers, Views, Tables, and Worksheets that you would like to include in your SpotApp. For example, for a Marketing SpotApp, you might choose a Marketing Worksheet, a Campaigns Worksheet, a Pipeline Pinboard, and a few Answers your Chief Marketing Officer created.
+3. In the **Export** interface, select the Liveboards, answers, views, tables, and worksheets that you would like to include in your SpotApp. For example, for a Marketing SpotApp, you might choose a Marketing worksheet, a Campaigns worksheet, a Pipeline Liveboard, and a few answers your Chief Marketing Officer created.
 
 4. Click **Export**.
 
-5. The **Choose what to Export** modal appears. Choose whether to export only the selected objects, or the selected objects and their underlying data sources (Worksheets, tables, and Views).
+5. The **Choose what to Export** modal appears. Choose whether to export only the selected objects, or the selected objects and their underlying data sources (worksheets, tables, and views).
 
 6. Click **Export**.
 
@@ -55,9 +57,9 @@ You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
 
 {: id="pre-built-spotapps"}
 ## Pre-built SpotApps
-Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's pre-built SpotApps, which provide an easy way for you to start getting value from your data. They leverage your data in your cloud data warehouse to provide pre-built Pinboards, Answers, Views, Tables, and Worksheets.
+Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's pre-built SpotApps, which provide an easy way for you to start getting value from your data. They leverage your data in your cloud data warehouse to provide pre-built Liveboards, answers, views, tables, and worksheets.
 
-ThoughtSpot offers 1 pre-built SpotApp, for **ServiceNow**. This SpotApp contains a worksheet with your ServiceNow data for your users to query on, as well as several pre-built answers and pinboards based on your data.
+ThoughtSpot offers 1 pre-built SpotApp, for **ServiceNow**. This SpotApp contains a worksheet with your ServiceNow data for your users to query on, as well as several pre-built answers and Liveboards based on your data.
 
 When you are ready to move to a production environment, you can migrate these ThoughtSpot objects to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
 

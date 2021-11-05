@@ -1,11 +1,14 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 10/21/2021
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ## October 21, 2021
 
 ### ThoughtSpot Data Security
@@ -17,7 +20,7 @@ When you create a connection in ThoughtSpot, your data is only accessible to you
 To learn more about data security in ThoughtSpot, see [ThoughtSpot Cloud: Comprehensive Data Security for Analytics](https://media.thoughtspot.com/pdf/ThoughtSpot-Cloud-Comprehensive-Data-Security-for-Analytics.pdf).
 
 
-### Free Trial Make It Shine 
+### Free Trial Make It Shine
 
 These are the changes we made to Free Trial this week:
 
@@ -150,7 +153,7 @@ These are the changes we made to Free Trial:
 {: id="invite-others"}
 ### Free Trial invite others
 
-We streamlined the process to invite another user to Free Trial. Now, you can invite others directly from within Free Trial, and the invitee receives the Free Trial activation email in their inbox. Users you invite automatically join your group, and can access your shared data objects (worksheets, answers, pinboards, etc.). You can invite a maximum of five new users to join your group.
+We streamlined the process to invite another user to Free Trial. Now, you can invite others directly from within Free Trial, and the invitee receives the Free Trial activation email in their inbox. Users you invite automatically join your group, and can access your shared data objects (worksheets, answers, Liveboards, etc.). You can invite a maximum of five new users to join your group.
 
 To invite a teammate to Free Trial, simply navigate to the **Setup** tab, click **Invite others** at the bottom of the screen, and enter your teammate’s email.
 

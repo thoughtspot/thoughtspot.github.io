@@ -1,11 +1,14 @@
 ---
 title: [User Onboarding Experience]
-last_updated: 10/07/2019
+last_updated: 11/05/2021
 toc: true
 summary: "ThoughtSpot's onboarding is quick and intuitive; you can learn to use the application very quickly and efficiently."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When you begin using ThoughtSpot, the onboarding process starts automatically and guides you through a few basic scenarios.
 
 Usually, you receive an email welcoming you to the onboarding process at ThoughtSpot.
@@ -28,17 +31,17 @@ Your onboarding experience begins when you login for the first time.
    Click **Continue**.    
   ![]({{ site.baseurl }}/images/onboard-user-experience-2.png "Recommended data source")
 
-3. **Step 3: Select a pinboard**  
-   Consider which of the initial pinboards to explore first, and click on it.
-   ![]({{ site.baseurl }}/images/onboard-user-experience-3.png "Select a pinboard")
+3. **Step 3: Select a Liveboard**  
+   Consider which of the initial Liveboards to explore first, and click on it.
+   ![]({{ site.baseurl }}/images/onboard-user-experience-3.png "Select a Liveboard")
 
 
 4. **Step 4: View your insights**  
-   Examine the pinboard you selected, and learn what insights it provides.
+   Examine the Liveboard you selected, and learn what insights it provides.
 
-   Click **Follow** to receive periodic emails about this pinboard.
+   Click **Follow** to receive periodic emails about this Liveboard.
 
-   ![]({{ site.baseurl }}/images/onboard-user-experience-4.png "Examine the first pinboard")
+   ![]({{ site.baseurl }}/images/onboard-user-experience-4.png "Examine the first Liveboard")
 
 ## Repeating the onboarding process ##
 

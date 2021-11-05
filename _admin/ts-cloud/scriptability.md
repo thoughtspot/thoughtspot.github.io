@@ -1,12 +1,14 @@
 ---
 title: [Scriptability]
-last_updated: 7/1/2021
-summary: "Use Scriptability to export and import Worksheets, Views, tables, Pinboards, and Answers in a human-readable format."
+last_updated: 11/05/2021
+summary: "Use Scriptability to export and import worksheets, views, tables, Liveboards, and answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating Worksheets, Views, tables, Pinboards, and Answers.
+{% include content/liveboards-announcement.md %}
+
+ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating worksheets, views, tables, Liveboards, and answers.
 
 You can model your data and build out sophisticated dashboards in your test environment, before deploying to all users.
 
@@ -28,13 +30,13 @@ Depending on how you want to use Scriptability, there are several workflows you 
 
 ## Prerequisites
 
-Refer to the following tables for required permissions for importing and exporting Pinboards, Answers, Worksheets, tables, and Views.
+Refer to the following tables for required permissions for importing and exporting Liveboards, answers, worksheets, tables, and views.
 
 **Import**
 
 | Import and create a new object without importing its dependents | Import and create a new object and its dependents | Import and update an existing object without dependents | Import and update an existing object with dependents |
 | ---------- | ---- | --- | --- |
-| The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. For example, if you import a Pinboard that is built on a Worksheet that is built on a table, you must have **view** permission for the Worksheet. When importing a new Worksheet or View, you must have the **can manage data** permission. | **Can manage data**, if the object or any of its dependents is a Worksheet or View. | **Edit** permission on the existing object. The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. When importing a Worksheet or View, you must have the **can manage data** permission. | **Edit** permission on the existing object(s). **Can manage data**, if the object or any of its dependents is a Worksheet or View. |
+| The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. For example, if you import a Liveboard that is built on a worksheet that is built on a table, you must have **view** permission for the worksheet. When importing a new worksheet or view, you must have the **can manage data** permission. | **Can manage data**, if the object or any of its dependents is a worksheet or view. | **Edit** permission on the existing object. The dependents must already exist in the cluster. You must have **view** permissions for the first-level dependent. When importing a worksheet or view, you must have the **can manage data** permission. | **Edit** permission on the existing object(s). **Can manage data**, if the object or any of its dependents is a worksheet or view. |
 
 **Export**
 
@@ -53,17 +55,17 @@ You can export one object at a time, export more than one object as a zip file, 
 ### Export one object
 To export one object:
 
-1. Navigate to the Pinboard, Answer, View, table, or Worksheet you want to export.
+1. Navigate to the Liveboard, Answer, View, table, or Worksheet you want to export.
 
 2. Click the three-dot icon, and select **Export TML**.
 
-    ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard") -->
+    ![Export a Liveboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Liveboard") -->
 
 {: id="export-zip-file"}
 ### How to export objects
 To export objects, follow these steps. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
 
-1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object(s) you want to export.
+1. Navigate to the **Answers**, **Liveboards**, or **Data** page from the top navigation bar, depending on the object(s) you want to export.
 
     ![The top navigation bar]({{ site.baseurl }}/images/nav-bar-no-spotiq.png "The top navigation bar")
 
@@ -73,7 +75,7 @@ To export objects, follow these steps. To export custom SpotApps, refer to [Spot
 
     ![Export multiple objects]({{ site.baseurl }}/images/scriptability-cloud-export-multiple.png "Export multiple objects")
 
-4. Choose whether to export only the objects, or the objects and their underlying data sources (Worksheets, tables, and Views). If you export a table, you do not see this modal, since tables do not have any dependents. When exporting multiple objects, the zip file contains the `Manifest` file, even if you export the objects without their dependents.
+4. Choose whether to export only the objects, or the objects and their underlying data sources (worksheets, tables, and views). If you export a table, you do not see this modal, since tables do not have any dependents. When exporting multiple objects, the zip file contains the `Manifest` file, even if you export the objects without their dependents.
 
     ![Choose what to export]({{ site.baseurl }}/images/scriptability-cloud-select-export.png "Choose what to export")
 
@@ -93,7 +95,7 @@ You can access the TML editor from the object list page<!--, or from the object 
 
 To use the TML editor, follow these steps:
 
-1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
+1. Navigate to the **Answers**, **Liveboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
 2. <!-- Click the name of the object you want to edit, or --> Select one or more objects by clicking on the checkboxes that appear when you hover over an object name.
 
@@ -128,7 +130,7 @@ To use the TML editor, follow these steps:
 
 {: id="update-object"}
 ## Update an object
-You can overwrite an existing Worksheet, View, table, Answer, or Pinboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
+You can overwrite an existing worksheet, view, table, answer, or Liveboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
 
 You can also update an object using the [TML editor](#tml-editor).
 
@@ -138,7 +140,7 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 2. Edit the file in a text editor.
 
-1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
+1. Navigate to the **Answers**, **Liveboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
 4. Select **Import TML**.
 
@@ -170,7 +172,7 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 {: id="migrate-object"}
 ## Migrate an object
-To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new table using Scriptability. You can only update existing tables.  
+To migrate an answer, Liveboard, view, or worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new table using Scriptability. You can only update existing tables.  
 
 1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above.
 
@@ -178,15 +180,15 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 2. Navigate to the cluster you want to add the object to.
 
-3. Click **Answers**, **Pinboards**, or **Data** on the top navigation bar, depending on the objects you want to migrate.
+3. Click **Answers**, **Liveboards**, or **Data** on the top navigation bar, depending on the objects you want to migrate.
 
 4. To upload a Worksheet or View, click the More icon ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} in the upper-right side of the screen. Then, select **Import TML**.
 
     ![Import Worksheet or View TML]({{ site.baseurl }}/images/scriptability-cloud-worksheet-view-import.png "Import Worksheet or View TML")
 
-5. To upload a Pinboard or Answer, click the **Import TML** button in the upper-right side of the screen.   
+5. To upload a Liveboard or answer, click the **Import TML** button in the upper-right side of the screen.   
 
-    ![Import a Pinboard or Answer]({{ site.baseurl }}/images/scriptability-cloud-import.png "Import a Pinboard or Answer")  
+    ![Import a Liveboard or answer]({{ site.baseurl }}/images/scriptability-cloud-import.png "Import a Liveboard or answer")  
 
 6. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
@@ -209,7 +211,7 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit to SpotApps** to return to the main object page.
 
 ## Limitations of working with TML files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.
+There are certain limitations to the changes you can apply by editing a worksheet, answer, table, view, or Liveboard through TML.
 
 {% include content/scriptability-limitations.md %}
 

@@ -1,16 +1,18 @@
 ---
 title: [Integration guidelines]
-last_updated: 4/3/2021
+last_updated: 11/05/2021
 summary: "Before embedding, analyze your integration requirements, choose an embedding approach, and explore the APIs."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include content/liveboards-announcement.md %}
+
 ThoughtSpot recommends that you browse through the following guidelines before you begin embedding.
 
 ## Define application workflows
 
-The ThoughtSpot Visual Embed SDK includes a Javascript library to programmatically embed search, pinboards, visualizations, and the full ThoughtSpot experience.
+The ThoughtSpot Visual Embed SDK includes a Javascript library to programmatically embed search, Liveboards, visualizations, and the full ThoughtSpot experience.
 
 In addition to the Visual Embed SDK, ThoughtSpot provides REST APIs to query data from the ThoughtSpot application. For example, you can construct a search answer using the data APIs and use this link to embed search answers with your application.
 
@@ -26,7 +28,7 @@ For more information, see [Managing Users]({{ site.baseurl }}/admin/ts-cloud/use
 
 **Developer**  
 Application developers with privileges to use the Developer portal and embed ThoughtSpot components in their host application.  
-Developer users can also customize the look and feel of the UI, add custom actions to an embedded visualization or pinboard, and modify security settings such as CORS and CSP.                   
+Developer users can also customize the look and feel of the UI, add custom actions to an embedded visualization or Liveboard, and modify security settings such as CORS and CSP.                   
 For more information, see [Developer access](https://developers.thoughtspot.com/docs/?pageid=developer-access){:target="_blank"}.
 
 **Host application admin**<br>
@@ -68,5 +70,5 @@ For more information, see [Configure security settings](https://developers.thoug
 
 ## Try it out
 
-The ThoughtSpot Developer portal provides a playground for developers to explore the Visual Embed SDK components. The **Playground** offers an interactive coding experience for developers to evaluate the APIs and embed ThoughtSpot search, visualizations, pinboards, or the full ThoughtSpot experience within their host application.                    
+The ThoughtSpot Developer portal provides a playground for developers to explore the Visual Embed SDK components. The **Playground** offers an interactive coding experience for developers to evaluate the APIs and embed ThoughtSpot search, visualizations, Liveboards, or the full ThoughtSpot experience within their host application.                    
 For more information, see [ThoughtSpot Developer portal]({{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html).

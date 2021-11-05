@@ -1,7 +1,7 @@
 ---
 title: [Deploy mobile app]
 summary: You can deploy the ThoughtSpot mobile app through the iOS app store, or your MDM or MAM platform.
-last_updated: 11/15/2019
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

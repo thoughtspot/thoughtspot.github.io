@@ -1,17 +1,20 @@
 ---
-title: ["Pinboard schedule gating conditions in practice"]
-last_updated: 9/30/2021
+title: ["Liveboard schedule gating conditions in practice"]
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you [schedule a pinboard job]({{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html), you can add a gating condition that triggers the pinboard email. If the condition evaluates to `true` at the scheduled time, ThoughtSpot emails the pinboard to the specified recipients. If it evaluates to `false`, ThoughtSpot does not send the pinboard.
 
-This article walks you through an example scenario in which you use a gating condition to determine whether to email the pinboard, sending an alert to specified users.
+{% include content/liveboards-announcement.md %}
+
+When you [schedule a Liveboard job]({{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html), you can add a gating condition that triggers the Liveboard email. If the condition evaluates to `true` at the scheduled time, ThoughtSpot emails the Liveboard to the specified recipients. If it evaluates to `false`, ThoughtSpot does not send the Liveboard.
+
+This article walks you through an example scenario in which you use a gating condition to determine whether to email the Liveboard, sending an alert to specified users.
 
 ## Gating condition functionality
-A gating condition is a statement that returns a single boolean value (`true` or `false`). For example, `sum (revenue) > 100` is a valid condition, but `is_weekend (commit_date)` is not, since it returns a result per row of data. You can use any data source (table, worksheet, or view) for the gating condition, since ThoughtSpot executes the query as an admin with access to all data sources. The gating condition formula and any tables you use in it do not need to be related to the pinboard the gating condition is for. You can use any valid formula in your statement. ThoughtSpot checks the formula syntax, but does not validate if the formula returns a valid single boolean.
+A gating condition is a statement that returns a single boolean value (`true` or `false`). For example, `sum (revenue) > 100` is a valid condition, but `is_weekend (commit_date)` is not, since it returns a result per row of data. You can use any data source (table, worksheet, or view) for the gating condition, since ThoughtSpot executes the query as an admin with access to all data sources. The gating condition formula and any tables you use in it do not need to be related to the Liveboard the gating condition is for. You can use any valid formula in your statement. ThoughtSpot checks the formula syntax, but does not validate if the formula returns a valid single boolean.
 
-At the scheduled time, ThoughtSpot executes the gating condition query as an admin user. If the condition evaluates to `true`, ThoughtSpot processes the Pinboard.
+At the scheduled time, ThoughtSpot executes the gating condition query as an admin user. If the condition evaluates to `true`, ThoughtSpot processes the Liveboard.
 
 For a list of valid formulas, see [Formula function reference]({{ site.baseurl }}/reference/formula-reference.html).
 
@@ -24,7 +27,7 @@ You can validate the data you load by setting several business rules. For exampl
 * **Product validation:** The unique product count should be greater than 4000 but less than 5500. Your company's product count is within that range; any more or less is the result of invalid data.
 * **Customer validation:** The unique customer count should be greater than 20000. Your company has more than 20000 customers; any fewer is the result of invalid data.
 
-You can create a view with these business rules, and then create a pinboard schedule with a gating condition that references these rules. Then, the pinboard schedule notifies the specified recipients if any of these rules is not met, suggesting a problem with invalid data.
+You can create a view with these business rules, and then create a Liveboard schedule with a gating condition that references these rules. Then, the Liveboard schedule notifies the specified recipients if any of these rules is not met, suggesting a problem with invalid data.
 
 ### Create a view
 After you determine your business rules, create a view that includes these rules. This makes the gating condition formula much simpler and ensures that the formula returns a single result, rather than multiple rows of data.
@@ -33,28 +36,28 @@ After you determine your business rules, create a view that includes these rules
 
 This answer, saved as a view, contains multiple formulas that help determine if a sales, product, or customer exception occurred. The `sales exception` formula uses the `delta sales %` formula, which in turn uses the `max sales` and `max sales -1` formulas. Because of the complexity of these formulas, it is easier to create a view that you can reference for this gating condition (or multiple gating conditions), rather than trying to create one complicated formula defining the 3 exceptions in the gating condition itself.
 
-In the image above, the sales and customer exceptions are `true`, which should result in an alert after you create the pinboard schedule with the gating condition.
+In the image above, the sales and customer exceptions are `true`, which should result in an alert after you create the Liveboard schedule with the gating condition.
 
-### Create a pinboard to schedule
-Now you have a view where you define the three exceptions that suggest your data loads have invalid data. Next, you must create the pinboard ThoughtSpot sends out at the scheduled time if the gating condition is met.
+### Create a Liveboard to schedule
+Now you have a view where you define the three exceptions that suggest your data loads have invalid data. Next, you must create the Liveboard ThoughtSpot sends out at the scheduled time if the gating condition is met.
 
-![Gating condition pinboard example]({{ site.baseurl }}/images/gating-condition-pinboard-example.png "Gating condition pinboard example")
+![Gating condition Liveboard example]({{ site.baseurl }}/images/gating-condition-pinboard-example.png "Gating condition Liveboard example")
 
-This pinboard contains optional answers to provide information about which exceptions failed. The pinboard can contain any information relevant to the alert.
+This Liveboard contains optional answers to provide information about which exceptions failed. The Liveboard can contain any information relevant to the alert.
 
-Note that the pinboard title, **ThoughtSpot Validation Alert - Data Validation** is the automatic subject of the pinboard schedule email.
+Note that the Liveboard title, **ThoughtSpot Validation Alert - Data Validation** is the automatic subject of the Liveboard schedule email.
 
-### Create the pinboard schedule
-After you create your view and pinboard, follow the directions in [Schedule a pinboard job]({{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html) to create the pinboard schedule.
+### Create the Liveboard schedule
+After you create your view and Liveboard, follow the directions in [Schedule a Liveboard job]({{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html) to create the Liveboard schedule.
 
-![Gating condition pinboard schedule example]({{ site.baseurl }}/images/gating-condition-pinboard-schedule-example.png "Gating condition pinboard schedule example")
+![Gating condition Liveboard schedule example]({{ site.baseurl }}/images/gating-condition-pinboard-schedule-example.png "Gating condition Liveboard schedule example")
 
-In this example, the `Repeats` value, which determines how frequently ThoughtSpot emails the pinboard, is set to send the email every weekday at 9 A.M. You may want to set this value to a more or less frequent cadence, depending on your business needs.
+In this example, the `Repeats` value, which determines how frequently ThoughtSpot emails the Liveboard, is set to send the email every weekday at 9 A.M. You may want to set this value to a more or less frequent cadence, depending on your business needs.
 
-Note that the description in the pinboard schedule is the automatic body of the pinboard schedule email.
+Note that the description in the Liveboard schedule is the automatic body of the Liveboard schedule email.
 
 ### Define the gating condition
-The last step of creating the pinboard schedule is to define the gating condition. If this condition resolves to `true`, ThoughtSpot sends the pinboard schedule email at the specified time, to the specified recipients.
+The last step of creating the Liveboard schedule is to define the gating condition. If this condition resolves to `true`, ThoughtSpot sends the Liveboard schedule email at the specified time, to the specified recipients.
 
 In this scenario, you want ThoughtSpot to send the alert if any of the three exceptions is `true`. If they are all false, there is no need to send the alert, since that means that your data loads are successful and the data involved is valid.
 
@@ -72,6 +75,6 @@ The operators (if...then...else) are in blue, and the columns, defined by the vi
 
 This formula returns a single boolean value. The gating condition **must** return a single boolean value. It must not return a result per row of data.
 
-Save the gating condition. To create the pinboard schedule, select **Schedule**.
+Save the gating condition. To create the Liveboard schedule, select **Schedule**.
 
 Now, at the specified time(s) and day(s), ThoughtSpot determines if any of the 3 business exceptions that suggest invalid data are met, and if any of them are `true`, ThoughtSpot sends the alert to the specified recipients, who can fix the issue.

@@ -1,19 +1,20 @@
 ---
 title: [Apply conditional formatting]
-
-last_updated: 4/2/2021
+last_updated: 11/5/2021
 summary: "Apply conditional formatting to add visual cues for values in your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include content/liveboards-announcement.md %}
+
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
 
-{% include note.html content="Certain elements of table configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, conditional formatting for measures in pivot tables, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
+{% include note.html content="Certain elements of table configuration are part of the new answer experience. The new answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, conditional formatting for measures in pivot tables, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
 
 ## Understand conditional formatting
 
-Many companies create pinboards with key metrics they want to track in daily or weekly staff meetings. Using conditional formatting, they can see at a glance how they are performing relative to these metrics.
+Many companies create Liveboards with key metrics they want to track in daily or weekly staff meetings. Using conditional formatting, they can see at a glance how they are performing relative to these metrics.
 
 You can add visual cues for KPIs (Key Performance Indicators) or threshold metrics to charts and tables, to easily show where you are falling short or exceeding targets. These visual cues are called conditional formatting, which applies color formatting to your search result. For tables, you can add conditional formatting to set the background color of cells in a table based on the values they contain. For charts, you can add conditional formatting to show the threshold(s) you defined, and the data that falls within them will be shown using the same color.
 

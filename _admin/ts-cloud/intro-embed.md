@@ -1,14 +1,16 @@
 ---
 title: [Embedded analytics with ThoughtSpot Everywhere]
-last_updated: 4/3/2021
-summary: "ThoughtSpot provides the Visual Embed SDK, REST APIs, and  developer tools to embed search, visualizations, pinboards, and the full ThoughtSpot experience in a third-party product or business solution."
+last_updated: 11/05/2021
+summary: "ThoughtSpot provides the Visual Embed SDK, REST APIs, and  developer tools to embed search, visualizations, Liveboards, and the full ThoughtSpot experience in a third-party product or business solution."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include content/liveboards-announcement.md %}
+
 ThoughtSpot Everywhere provides a low-code embedded analytics platform for developers and product owners to build interactive data apps and incorporate ThoughtSpot functions and services directly into their apps, products, or services. Using ThoughtSpot Everywhere, you can embed search-driven analytics, infuse insights into your application, and enrich your website, portal, or product with ThoughtSpot’s analytical capabilities.
 
-The ThoughtSpot Everywhere platform provides the Visual Embed SDK to allow your application users to programmatically embed search-driven analytics, pinboards, visualizations, and even the entire ThoughtSpot application. ThoughtSpot also provides REST API services to programmatically query data, manage users and user sessions, push data to an external application, and automate deployments.
+The ThoughtSpot Everywhere platform provides the Visual Embed SDK to allow your application users to programmatically embed search-driven analytics, Liveboards, visualizations, and even the entire ThoughtSpot application. ThoughtSpot also provides REST API services to programmatically query data, manage users and user sessions, push data to an external application, and automate deployments.
 
 ## Embedding methods
 
@@ -16,7 +18,7 @@ You can use one of the following methods to embed ThoughtSpot into your host app
 
 **Using Visual Embed SDK**                                                
 You can install the Visual Embed SDK, import the Javascript library, and programmatically integrate the ThoughtSpot application and its components.
-The Visual Embed SDK includes separate libraries for embedding ThoughtSpot content, such as search, visualizations, pinboards, and the full application.
+The Visual Embed SDK includes separate libraries for embedding ThoughtSpot content, such as search, visualizations, Liveboards, and the full application.
 
 For more information, see [Visual Embed SDK]({{ site.baseurl }}/admin/ts-cloud/visual-embed-sdk.html).
 
@@ -49,7 +51,7 @@ For more information, see [Customization and rebranding]({{ site.baseurl }}/admi
 
 ## Custom actions
 
-ThoughtSpot allows you to add custom actions to the embedded pinboards and visualizations.
+ThoughtSpot allows you to add custom actions to the embedded Liveboards and visualizations.
 
 For example, you can add a button to the ThoughtSpot UI that will trigger a workflow in your parent application.
 

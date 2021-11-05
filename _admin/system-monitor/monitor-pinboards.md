@@ -1,27 +1,27 @@
 ---
-title: [System pinboards]
-summary: "ThoughtSpot provides several Pinboards that help with system monitoring."
-last_updated: 4/28/2021
+title: [System Liveboards]
+summary: "ThoughtSpot provides several Liveboards that help with system monitoring."
+last_updated: 11/05/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-There are several system monitoring Pinboards in ThoughtSpot that provide
-answers for system status and resource usage questions. The information in these
-pinboards are updated hourly from internal data sources that collect monitoring
-statistics.
 
-Only users with administrative privilege can view the monitoring pinboards. They are based on [system Worksheets and Views]({{ site.baseurl }}/admin/system-monitor/worksheets.html), which administrators can view, but not modify. However, you can create new monitoring Pinboards from these Worksheets and Views.
+{% include content/liveboards-announcement.md %}
 
-## View the system Pinboards
+There are several system monitoring Liveboards in ThoughtSpot that provide answers for system status and resource usage questions. The information in these Liveboards are updated hourly from internal data sources that collect monitoring statistics.
 
-To view these system Pinboards:
+Only users with administrative privilege can view the monitoring Liveboards. They are based on [system worksheets and views]({{ site.baseurl }}/admin/system-monitor/worksheets.html), which administrators can view, but not modify. However, you can create new monitoring Liveboards from these Worksheets and Views.
 
-1. Go to the **Pinboards** tab.
+## View the system Liveboards
+
+To view these system Liveboards:
+
+1. Go to the **Liveboards** tab.
 2. Choose **All**.
-3. Enter `System User` in the search field, or search for the Pinboard you would like to view. You can also view the User Adoption Pinboard and Performance Tracking Pinboard in the Admin Console.
+3. Enter `System User` in the search field, or search for the Liveboard you would like to view. You can also view the User Adoption Liveboard and Performance Tracking Liveboard in the Admin Console.
 
-## Description of system Pinboards
+## Description of system Liveboards
 
 <table>
 <colgroup>
@@ -29,13 +29,13 @@ To view these system Pinboards:
    <col style="width:65%" />
 </colgroup>
    <tr>
-      <th>Pinboard</th>
+      <th>Liveboard</th>
       <th>Description</th>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">Learn how to use ThoughtSpot</code></td>
       <td>
-         Contains search replays created in the system. This Pinboard is not available with the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new Answer experience</a>.
+         Contains search replays created in the system. This Liveboard is not available with the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new Answer experience</a>.
       </td>
    </tr>
    <tr>
@@ -46,7 +46,7 @@ To view these system Pinboards:
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">Connections Pinboard</code></td>
+      <td><code class="highlighter-rouge">Connections Liveboard</code></td>
       <td>
          Contains information on your connections: monthly and daily row count, query count, and query performance.
       </td>
@@ -54,24 +54,24 @@ To view these system Pinboards:
    <tr>
       <td><code class="highlighter-rouge">User Adoption</code></td>
       <td>
-         Contains information on how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a>.
+         Contains information on how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Liveboard</a>.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">Object Usage</code></td>
       <td>
-         Contains information on how your ThoughtSpot users are interacting with ThoughtSpot objects such as worksheets, tables, and views. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Pinboard</a>.
+         Contains information on how your ThoughtSpot users are interacting with ThoughtSpot objects such as worksheets, tables, and views. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Liveboard</a>.
       </td>
    </tr>
 
    <tr>
       <td><code class="highlighter-rouge">Performance Tracking</code></td>
       <td>
-         Contains information on how your ThoughtSpot cluster is performing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a>.
+         Contains information on how your ThoughtSpot cluster is performing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Liveboard</a>.
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">Credit Usage Pinboard</code></td>
+      <td><code class="highlighter-rouge">Credit Usage Liveboard</code></td>
       <td>
          Tracks credit consumption for consumption-based pricing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Consumption-based pricing</a>.
       </td>
@@ -79,7 +79,7 @@ To view these system Pinboards:
    <tr>
       <td><code class="highlighter-rouge">How Users are Searching Answers</code></td>
       <td>
-      Describes how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers</a>.
+      Describes how users are searching for existing answers and Liveboards. Contains information on what users are searching for, where users are successful and where they are not. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers</a>.
       </td>
    </tr>
   </table>

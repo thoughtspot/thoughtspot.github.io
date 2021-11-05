@@ -1,11 +1,14 @@
 ---
 title: [Starburst overview]
-last_updated: 8/11/2020
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can connect to a Starburst database in ThoughtSpot Cloud, and perform live queries to create Answers and Pinboards.
+
+{% include content/liveboards-announcement.md %}
+
+You can connect to a Starburst database in ThoughtSpot Cloud, and perform live queries to create answers and Liveboards.
 
 - [Add a Starburst connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-add-connection.html)
 - [Edit a Starburst connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-edit-connection.html)

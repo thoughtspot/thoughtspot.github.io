@@ -1,11 +1,12 @@
 ---
 title: [Delete a data source]
-
-last_updated: tbd
+last_updated: 11/05/2021
 summary: "How to prepare for and delete a data source using the ThoughtSpot application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 You can delete a data source through the browser. When you want to delete a data source, you first need to handle any dependent objects that have been built on top of it. You can easily see these dependencies, and choose how to handle them before deleting the data source.
 
@@ -22,7 +23,7 @@ To view dependent objects for a data source:
 
 3. Click **Dependents**.
 
-    You will see a list of the names of the dependent objects (worksheets and pinboards), and the columns they use from that data source. You can use this information to determine the impact of changing the structure of the data source or to see how widely it is used.
+    You will see a list of the names of the dependent objects (worksheets and Liveboards), and the columns they use from that data source. You can use this information to determine the impact of changing the structure of the data source or to see how widely it is used.
 
      ![]({{ site.baseurl }}/images/dependents.png "List of dependent objects")
 

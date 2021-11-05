@@ -14,7 +14,7 @@
       </tr>
       <tr>
          <td><code class="highlighter-rouge">answer_pinboard_context</code></td>
-         <td>User opens an existing saved pinboard, edits a context viz and makes a change to tokens in the search bar.</td>
+         <td>User opens an existing saved Liveboard, edits a context viz and makes a change to tokens in the search bar.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">answer_aggregated_worksheet</code></td>
@@ -26,15 +26,15 @@
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_view</code></td>
-         <td>User opens an existing saved pinboard.</td>
+         <td>User opens an existing saved Liveboard.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_filter</code></td>
-         <td>User adds, removes or applies values to a pinboard filter.</td>
+         <td>User adds, removes or applies values to a Liveboard filter.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_ad_hoc</code></td>
-         <td>User drills down in a pinboard viz.</td>
+         <td>User drills down in a Liveboard viz.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">data_chart_config</code></td>
@@ -70,27 +70,27 @@
       </tr>
       <tr>
          <td><code class="highlighter-rouge">answer_viz_context_view</code></td>
-         <td>User opens an existing saved pinboard, edits a context viz.</td>
+         <td>User opens an existing saved Liveboard, edits a context viz.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_insight_view</code></td>
-         <td>User opens SpotIQ tab pinboards.</td>
+         <td>User opens SpotIQ tab Liveboards.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_admin_view</code></td>
-         <td>User opens admin tab pinboards.</td>
+         <td>User opens admin tab Liveboards.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_embed_view</code></td>
-         <td>User opens embed pinboard from a URL.</td>
+         <td>User opens embed Liveboard from a URL.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_homepage_view</code></td>
-         <td>On loading of homepage pinboard.</td>
+         <td>On loading of homepage Liveboard.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_learn_view</code></td>
-         <td>On loading learn pinboard.</td>
+         <td>On loading learn Liveboard.</td>
       </tr>
       <tr>
          <td><code class="highlighter-rouge">pinboard_tspublic_no_runtime_filter</code></td>

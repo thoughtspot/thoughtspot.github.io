@@ -1,10 +1,12 @@
 ---
 title: [About connections in ThoughtSpot Cloud]
-last_updated: 1/25/2021
+last_updated: 11/05/2021
 summary: "Using Connections, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 If your company stores source data externally in data warehouses, you can use ThoughtSpot Connections to directly query that data and use ThoughtSpot's analysis and visualization features.
 
@@ -46,7 +48,7 @@ Here are the major features that are not currently available in Connections:
 
 <!-- - Custom calendar is supported with Snowflake connections.
 - Custom calendar is in beta for Redshift, Teradata, Starburst, Synapse, and SAP Hana connections, and are off by default. Contact ThoughtSpot to enable them. -->
-- Spot IQ: Instant insights, Did you know?, Pinboard insights, Analyze
+- Spot IQ: Instant insights, Did you know?, Liveboard insights, Analyze
 - Monitor
 - Materialized views
 

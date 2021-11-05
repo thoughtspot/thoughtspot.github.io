@@ -1,10 +1,13 @@
 ---
 title: [Understand filters]
-last_updated: 1/26/2021
+last_updated: 11/05/2021
 summary: "Filters narrow down your search result to only include the data you want to see."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When you add a value to your search, it becomes a filter. You can define filters on tables, views and worksheets. When you add a filter, it is applied to the table, view, or worksheet, so the result set only shows rows that satisfy a set of parameters specified in the filter. You can also set filters that are automatically used in every search you perform using a particular data source. For example, you can exclude inactive customers records from your search result set. To avoid typing `status = inactive` with every search you perform, you can use a filter. The complex the filter is, the more useful it is to set on the data sources (e.g. `status = inactive year = 2017 rating > 0`).
 
 To add a filter from the search bar:
@@ -21,10 +24,9 @@ To add a filter from the search bar:
 
 2. Click outside of the search bar or push enter to apply your filter.
 
-Simple filters can be applied to an answer, while pinboard filters can be
-applied to all visualizations of a pinboard. You can find out more about
-[pinboard filters in the pinboards section]({{ site.baseurl
-}}/complex-search/pinboard-filters.html#).
+Simple filters can be applied to an answer, while Liveboard filters can be
+applied to all visualizations of a Liveboard. You can find out more about
+[Liveboard filters in the Liveboards section]({{ site.baseurl }}/complex-search/pinboard-filters.html#).
 
 
 ## Where filters appear in ThoughtSpot
@@ -33,12 +35,11 @@ As you have seen with search, filters appear in grey boxes in the search bar.
 
  ![Search bar with filters]({{ site.baseurl }}/images/search-bar-basics.png "Search bar with filters")
 
-In an answer or a pinboard, filters appear just under the title. For pinboards,
-your filters apply to all worksheet-based visualizations in the pinboard.
+In an answer or a Liveboard, filters appear just under the title. For Liveboards, your filters apply to all worksheet-based visualizations in the Liveboard.
 
  ![Filters appear under the title]({{ site.baseurl }}/images/filter-list-location.png "Filters appear under the title")
 
-If you ever find that your search or pinboard does not appear to contain all the
+If you ever find that your search or Liveboard does not appear to contain all the
 data you want to see, check for any existing filters and remove them by clicking
 the **X** that appears when you hover over the filter in the search bar.
 

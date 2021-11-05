@@ -1,11 +1,14 @@
 ---
 title: [Add a Teradata connection]
-last_updated: 12/21/2020
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Once ThoughtSpot Connections is enabled, you can add a connection to a Teradata database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
+
+{% include content/liveboards-announcement.md %}
+
+Once ThoughtSpot Connections is enabled, you can add a connection to a Teradata database. This allows you to perform a live query of the external database to create answers and Liveboards, without having to bring the data into ThoughtSpot.
 
 To add a connection to Teradata:
 

@@ -1,10 +1,13 @@
 ---
 title: [Configure internal OAuth for a Snowflake connection]
-last_updated: 4/20/2021
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ThoughtSpot supports Snowflake's internal OAuth for a Snowflake connection. With OAuth, each ThoughtSpot user authenticates with Snowflake and authorizes ThoughtSpot to query the database using their Snowflake user account.
 
 For Snowflake connections that use internal OAuth, users must log in when their OAuth tokens expire. The amount of time that Snowflake OAuth tokens are valid is set in Snowflake.
@@ -92,6 +95,6 @@ In your Snowflake database, do the following:
 
 ## Sharing a worksheet built from tables in a Snowflake connection that uses OAuth
 
-When you share a ThoughtSpot object (Worksheet, Pinboard, or Answer) that references a Snowflake connection that uses OAuth authentication, the user is prompted to log in to Snowflake before they can view any data. When viewing the Pinboard, Answer, or running a search on the Worksheet, ThoughtSpot displays a message telling the user to log in with a button to initiate the login process.
+When you share a ThoughtSpot object (worksheet, Liveboard, or answer) that references a Snowflake connection that uses OAuth authentication, the user is prompted to log in to Snowflake before they can view any data. When viewing the Liveboard, answer, or running a search on the worksheet, ThoughtSpot displays a message telling the user to log in with a button to initiate the login process.
 
 {% include important.html content="In order for a user to access your shared worksheet, they must have a default role assigned to their user in Snowflake." %}
