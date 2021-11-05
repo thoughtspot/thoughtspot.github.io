@@ -1,6 +1,6 @@
 ---
 title: [Getting Started with ThoughtSpot Free Trial]
-last_updated: 10/20/2021
+last_updated: 11/04/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -75,11 +75,11 @@ After you finish creating worksheets, you are ready to search. Review the key co
 - [Understanding Charts]({{site.baseurl}}/end-user/search/about-charts.html){:target="_blank"}
 - [Understanding formulas in searches]({{site.baseurl}}/complex-search/add-formula-to-search.html){:target="_blank"}
 
-## Step 7: Make a default pinboard
+## Step 7: Make a default Liveboard
 
-Pinboards are interactive collections of charts and tables. Set up a shared pinboard now, so everyone who joins your organization can access valuable information.
+Liveboards are interactive collections of charts and tables. Set up a shared Liveboard now, so everyone who joins your organization can access valuable information.
 
-- [Basic pinboard usage]({{site.baseurl}}/end-user/pinboards/about-pinboards.html){:target="_blank"}
+- [Basic Liveboard usage]({{site.baseurl}}/end-user/pinboards/about-pinboards.html){:target="_blank"}
 
 ## Keep learning
 
