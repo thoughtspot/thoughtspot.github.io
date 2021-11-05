@@ -1,10 +1,13 @@
 ---
 title: [Search actions within a Liveboard]
 summary: Learn about searching within a Liveboard.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You can perform many of the same search actions on individual visualizations within a Liveboard as you can within a search. You can interact directly with a visualization of a Liveboard to perform ad hoc searches or edit it. These search actions include the following:
 
 -   Editing a search - You can edit the original search and reconfigure the answer. Click the three-dot **Actions** button to the upper-right of your visualization and select **Edit**.

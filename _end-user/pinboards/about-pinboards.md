@@ -1,10 +1,13 @@
 ---
 title: [Basic Liveboard usage]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Create a new Liveboard to group and manage related search results. Liveboards are the ThoughtSpot term for a dashboard."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Liveboards act like live dashboards. They are collections of your related charts, tables, and headline.
 
 ## What are Liveboards

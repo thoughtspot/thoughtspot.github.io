@@ -1,9 +1,11 @@
 ---
 title: [For Analysts]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Your job is vital to your organization, and here is how you can get your users what they need:
 

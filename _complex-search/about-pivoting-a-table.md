@@ -1,10 +1,13 @@
 ---
 title: [Pivot table]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Pivot tables enable you to explore an alternate visualization of your data in a wide, customizable table. They allow you to visualize some of your data horizontally and some data vertically in the same table. A pivot table is a chart time table that uses a drag-and-drop interface.  
 
 If you would like to visualize your search as a pivot table, click on the **change visualization** icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png){: .inline} near the top right of your screen, and select **pivot table**. You need at least one attribute and one measure in your search.

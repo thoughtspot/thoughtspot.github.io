@@ -1,10 +1,13 @@
 ---
 title: [Download a Liveboard as PDF]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "In ThoughtSpot, you can download the entire Liveboard in PDF format, so you can share it with people inside and outside your organization. You have options for adding branding, composing the report of the entire Liveboard or only some of its Visualizations, truncating tables, and many others."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You can download a Liveboard in PDF format, without downloading each visualization separately. Follow these steps:
 
 1. Click **Liveboards** on the top navigation bar.

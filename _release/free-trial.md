@@ -6,6 +6,9 @@ sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ## October 21, 2021
 
 ### ThoughtSpot Data Security

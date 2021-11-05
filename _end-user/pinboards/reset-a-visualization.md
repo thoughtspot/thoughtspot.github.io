@@ -1,10 +1,13 @@
 ---
 title: [Reset a Liveboard visualization]
 summary: Learn how to reset a Liveboard visualization.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You can undo your edits to a Liveboard visualization by resetting it.
 
 ## Reset a Liveboard visualization

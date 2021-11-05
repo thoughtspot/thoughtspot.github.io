@@ -1,11 +1,13 @@
 ---
 title: [More about Liveboards and answers]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Liveboards are the ThoughtSpot term for a dashboard. They group and manage related search result visuals."
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 ## Liveboards
 

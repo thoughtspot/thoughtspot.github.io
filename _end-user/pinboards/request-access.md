@@ -1,10 +1,13 @@
 ---
 title: [Request access]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "If you cannot view a Liveboard or answer in ThoughtSpot, you can request access to it."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ## Request view access
 If you try to share a Liveboard or answer by copying and pasting a link to it, the person you share it with may have to request access. You can avoid this by sharing [using the sharing icon.]({{ site.baseurl }}/end-user/pinboards/share-pinboards.html)
 

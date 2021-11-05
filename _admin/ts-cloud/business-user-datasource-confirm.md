@@ -1,11 +1,13 @@
 ---
 title: [Confirm data source]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false
 summary: "Choose a data source to use to gain insights through Search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Your organization selected the most relevant data for your exploration. In ThoughtSpot's [business user onboarding]({{ site.baseurl }}/admin/ts-cloud/business-user-onboarding.html), you can select the recommended data source.
 

@@ -1,10 +1,13 @@
 ---
 title: [Present a Liveboard as a slideshow]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Displaying your Liveboard as a slideshow is a good way to present its contents to others."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
  With ThoughtSpot's interactive presentations, you can easily explore and answer questions from the audience during the presentation session. When you present your Liveboard, ThoughtSpot displays the component visualizations and tables in order from left to right, and top to bottom.
 
 ## Starting a presentation ##

@@ -1,11 +1,14 @@
 ---
 title: [System worksheets and views]
 summary: "Learn about the system worksheets and views that ThoughtSpot provides."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Most of the monitoring information in ThoughtSpot's system Liveboards comes from system worksheets and views that administrators can view, but not modify. The underlying tables are protected system tables that you cannot access directly. However, administrators can create new, custom monitoring reports from the worksheets and views.
 
 ## List the system worksheets and views

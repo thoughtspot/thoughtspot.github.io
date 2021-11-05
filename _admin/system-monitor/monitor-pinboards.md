@@ -1,13 +1,15 @@
 ---
 title: [System Liveboards]
 summary: "ThoughtSpot provides several Liveboards that help with system monitoring."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-There are several system monitoring Liveboards in ThoughtSpot that provide
-answers for system status and resource usage questions. The information in these Liveboards are updated hourly from internal data sources that collect monitoring statistics.
+
+{% include content/liveboards-announcement.md %}
+
+There are several system monitoring Liveboards in ThoughtSpot that provide answers for system status and resource usage questions. The information in these Liveboards are updated hourly from internal data sources that collect monitoring statistics.
 
 Only users with administrative privilege can view the monitoring Liveboards. They are based on [system worksheets and views]({{ site.baseurl }}/admin/system-monitor/worksheets.html), which administrators can view, but not modify. However, you can create new monitoring Liveboards from these Worksheets and Views.
 

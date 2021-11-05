@@ -1,10 +1,12 @@
 ---
 title: [Custom domain configuration]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "ThoughtSpot supports the configuration of custom domains for your ThoughtSpot Cloud URL."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 This article primarily discusses custom domains for a non-embedded environment. To set up a custom domain in an embedded environment with ThoughtSpot Everywhere, refer to [the developer documentation](https://developers.thoughtspot.com/docs/?pageid=custom-domain-config){: target="_blank"}.
 

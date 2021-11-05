@@ -1,10 +1,13 @@
 ---
 title: [Introduction to monitoring]
 summary: "Learn how to monitor your system."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ThoughtSpot Cloud provides several out-of-the-box system monitoring worksheets, views, and Liveboards. From these worksheets and views, you can create your own custom visualizations and Liveboards. This page introduces these features and directs you towards more detailed information.
 
 ## Admin Console

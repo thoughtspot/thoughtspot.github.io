@@ -1,10 +1,12 @@
 ---
 title: [Overview of data modeling settings]
 summary: Learn about data modeling settings.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 You can change data modeling settings in two ways, both of which change the model.
 If you want to make a few small changes, you should [make them in the

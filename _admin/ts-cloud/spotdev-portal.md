@@ -1,13 +1,14 @@
 ---
 title: [ThoughtSpot Developer portal]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "The ThoughtSpot Developer portal allows developer users to explore the embed APIs, preview code snippets, and view developer documentation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughtSpot Developer portal allows you to explore ThoughtSpot SDK, APIs, and build your web applications with ThoughtSpot content.
-The portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features that are available for integration.
-The portal also allows authorized users to customize and rebrand the look and feel of the UI and add custom actions to an embedded visualization or Liveboard.
+
+{% include content/liveboards-announcement.md %}
+
+The ThoughtSpot Developer portal allows you to explore ThoughtSpot SDK, APIs, and build your web applications with ThoughtSpot content. The portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features that are available for integration. The portal also allows authorized users to customize and rebrand the look and feel of the UI and add custom actions to an embedded visualization or Liveboard.
 
 ## Access Developer portal
 You can access the developer portal from your ThoughtSpot application instance or the [ThoughtSpot Developers](https://developers.thoughtspot.com/){: target="_blank"} website.

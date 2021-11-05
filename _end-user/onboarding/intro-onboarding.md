@@ -1,11 +1,13 @@
 ---
 title: [Onboarding Users]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: true
 summary: "Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages adoption throughout your organization."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Onboarding enables users to master the key workflows of ThoughtSpot, and makes them productive and capable users in a very short time.
 

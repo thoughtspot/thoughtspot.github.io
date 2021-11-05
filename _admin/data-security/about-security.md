@@ -1,10 +1,13 @@
 ---
 title: [Overview of security features]
 summary: Learn about ThoughtSpot's security features.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 There are several aspects of security, including access and permissions, data security and privacy, and security from an IT perspective.
 
 [System security](audit-logs.html#) refers to audit logs and security policies.

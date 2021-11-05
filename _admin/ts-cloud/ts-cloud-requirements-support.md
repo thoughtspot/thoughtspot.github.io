@@ -1,11 +1,14 @@
 ---
 title: [ThoughtSpot Cloud requirements and support]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Information about features, and how to sign up."
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ## Supported regions
 ThoughtSpot Cloud is now available in the following regions:
 * US East (N. Virginia)

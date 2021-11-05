@@ -1,10 +1,12 @@
 ---
 title: Answer Explorer
 summary: Answer Explorer provides you with AI-guided exploration of Answers within Liveboards, so you can more easily find valuable and actionable information inside your data.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Answer Explorer, ThoughtSpot's AI-guided exploration of answers and headline metrics within Liveboards, provides you with valuable suggestions on how to explore and understand your data, based on two main criteria. The Answer Explorer AI considers both popularity and personalization. The feature suggests ways to answer questions that are relevant to many other users, and takes your own ThoughtSpot history into account. Answer Explorer helps you better understand your data and get to actionable insights faster with just a click.
 

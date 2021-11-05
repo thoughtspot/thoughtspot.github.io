@@ -1,10 +1,13 @@
 ---
 title: [Data modeling]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Data modeling allows you to define metadata and other aspects of your data.  For
 example, you can give data columns search friendly names or predefine how they
 can be explored and aggregated. Metadata include such information as **Column Names**, **Column Visibility**, **Column** and **Data Definition**, **Column Rank** and so forth.

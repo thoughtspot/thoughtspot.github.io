@@ -1,10 +1,13 @@
 ---
 title: [Edit the layout of a Liveboard]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Editing the layout of a Liveboard lets you snap visualizations into place, choose between set visualization sizes, and reset your layout."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Visualizations within a Liveboard are easy to move around and snap into place on a relative flow layout. Your Liveboard layout is also responsive to your browser resolution. This helps keep the layout of your Liveboard neat and organized.
 
 ## Reorder the visualization

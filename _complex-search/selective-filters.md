@@ -1,10 +1,13 @@
 ---
 title: [Selective Liveboard filters]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Learn how to specify which Liveboard visualizations a Liveboard filter should apply to."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When you create or view a Liveboard, you may want to filter the visualizations on the Liveboard, to only see data that is relevant to your role, for example. However, you may not want a filter to apply to every visualization in the Liveboard. For example, the head of sales in North America may want to filter most visualizations to only contain data about sales in North America, but may want to compare her sales to an unfiltered *global quarterly sales* metric.
 
 You can apply Liveboard filters to specific visualizations from the **Configure filters** modal.

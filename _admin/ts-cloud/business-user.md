@@ -1,10 +1,13 @@
 ---
 title: [For Business Users]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Business users view data insights to inform and support critical business decisions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Your job is vital to your organization, and using ThoughtSpot makes it easier.
 
 <ul>

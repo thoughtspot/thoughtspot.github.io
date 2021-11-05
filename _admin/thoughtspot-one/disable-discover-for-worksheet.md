@@ -1,10 +1,13 @@
 ---
 title: [Disable Answer Search for specific Worksheets]
 summary: "You can disable Answer Search on Worksheets that are works in progress or deprecated."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When users search for existing answers and Liveboards, the default experience is to search across all worksheets that they have access to. As an analyst, you may not want users to search for existing answer and Liveboards built on certain worksheets that are works in progress or deprecated. You can do this without unsharing those worksheets.
 
 To disable searching for answer and Liveboards built on a specific worksheet, follow these steps.

@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 6/23/2021
+last_updated: 11/05/2021
 summary: "Use ThoughtSpot Modeling Language to modify a worksheet, view, table, Liveboard, or answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -25,6 +25,8 @@ redirect_from:
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 To work with Scriptable [worksheets](#syntax-worksheets), [views](#syntax-views), [tables](#syntax-tables), [answers](#syntax-answers), and [Liveboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update worksheets, views, tables, answers, and Liveboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 

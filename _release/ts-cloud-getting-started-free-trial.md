@@ -1,10 +1,12 @@
 ---
 title: [Getting Started with ThoughtSpot Free Trial]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Completing the following steps helps you and other users in your organization get the most value from your data during the trial period. A little bit of time setting up ThoughtSpot has a big impact.
 

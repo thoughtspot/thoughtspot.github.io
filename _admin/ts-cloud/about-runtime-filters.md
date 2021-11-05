@@ -1,10 +1,13 @@
 ---
 title: [About Runtime Filters]
 summary: "Use runtime filters to filter an embedded answer or Liveboard."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Runtime filters allow you to apply filters to the data returned by the APIs, or the visualizations and Liveboard you’re embedding.
 
 ## Capabilities of Runtime Filters

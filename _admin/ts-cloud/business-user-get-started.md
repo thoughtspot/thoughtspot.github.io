@@ -1,11 +1,13 @@
 ---
 title: [Get started]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false
 summary: "Learn how to get started as a business user in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 ThoughtSpot's [business user onboarding]({{ site.baseurl }}/admin/ts-cloud/business-user-onboarding.html) helps you make smarter decisions in four easy steps.
 

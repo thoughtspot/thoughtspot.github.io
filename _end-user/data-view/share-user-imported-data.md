@@ -1,11 +1,14 @@
 ---
 title: [Share uploaded data]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: When you upload data to ThoughtSpot, you can share it with others.
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ![Share data]({{ site.baseurl }}/images/sharing-data.gif "Share data")
 <!--{% include image.html file="sharing-data.gif" title="Share data" alt="Learn how to share data." caption="Share data" %}-->
 

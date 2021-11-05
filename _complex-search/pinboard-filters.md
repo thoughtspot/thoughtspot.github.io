@@ -1,10 +1,13 @@
 ---
 title: [Liveboard filters]
 summary: "You can apply filters to Liveboards as well as tables and charts."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Filters, including bulk filters and exclude filters, can be applied to Liveboards just as with tables and charts. These kinds of filters apply to an entire Liveboard, making it easy to see only the data that you are interested in across the tables and charts within a Liveboard.
 
 ## When to use a Liveboard filter

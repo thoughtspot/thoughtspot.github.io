@@ -1,10 +1,13 @@
 ---
 title: [Search suggestions]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "How ThoughtSpot learns from your searches and helps you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Search suggestions include complete recent searches that are similar to the search you are constructing.
 
  ![]({{ site.baseurl }}/images/search_history.png "Search suggestions example")

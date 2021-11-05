@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include content/liveboards-announcement.md %}
+
 A backup is a procedure that stores a snapshot *outside* of a ThoughtSpot cluster. Backups are stored in a directory on a local or network file system. You can store all of the data associated with a snapshot, a portion of that data, or only metadata. Other advanced administrative operations also use backups.
 
 You can use a backup to restore a cluster to a prior state or to a differently configured appliance. You can also use a backup to move a cluster from an appliance to a virtual cluster, or vice versa.

@@ -1,10 +1,13 @@
 ---
 title: ["Create, edit, or delete a group"]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "ThoughtSpot has intuitive and powerful user group management for assigning privileges, user selection, multi-tier subgroups, default Liveboard assignment, and emailing."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Before adding users, create the groups to which they belong. Each group includes a set of privileges for its users.
 
 {: id="add-group"}

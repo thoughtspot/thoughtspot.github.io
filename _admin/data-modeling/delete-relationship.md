@@ -1,11 +1,14 @@
 ---
 title: [Delete a relationship]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "You can delete a relationship between tables through the ThoughtSpot application."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You must have either the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to delete a relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
 
 ## To delete a relationship from the Web interface:

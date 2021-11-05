@@ -1,11 +1,14 @@
 ---
 title: [Understanding privileges]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "The things you can do in ThoughtSpot are determined by the privileges you have. Privileges are granted through group membership.
 "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 If you are trying to do something in ThoughtSpot, and cannot access the screens to accomplish it, you may not have the correct privileges. In this case, you should contact your administrator and explain what you want to accomplish. Your administrator may be able to grant you additional privileges.
 
 {% include note.html content="Permissions to see and edit answers and Liveboards are not affected by privileges. They are given when these items are shared with you."%}

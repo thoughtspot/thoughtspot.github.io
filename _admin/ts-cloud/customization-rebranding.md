@@ -1,10 +1,12 @@
 ---
 title: [Customization and rebranding]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "You can rebrand your embedded ThoughtSpot content to match the look and feel of your host application and customize system-generated links and notifications."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 The **Customizations** menu in the **Develop** tab allows several options to customize your embedded ThoughtSpot content.
 

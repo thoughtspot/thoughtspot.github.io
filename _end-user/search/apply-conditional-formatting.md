@@ -1,10 +1,12 @@
 ---
 title: [Apply conditional formatting]
-last_updated: 11/4/2021
+last_updated: 11/5/2021
 summary: "Apply conditional formatting to add visual cues for values in your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 You can apply conditional formatting to tables or charts to highlight values in the data. This makes values above, below, or within a particular threshold stand out.
 

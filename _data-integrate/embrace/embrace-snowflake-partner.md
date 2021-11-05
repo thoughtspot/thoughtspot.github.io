@@ -1,11 +1,14 @@
 ---
 title: [ThoughtSpot in Snowflake Partner Connect]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: true
 summary: "With Snowflake Partner Connect you get a free trial of ThoughtSpot that allows you to try out ThoughtSpot Connections to connect to Snowflake."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Snowflake Partner Connect allows you to quickly and easily try out ThoughtSpot connected to Snowflake, using ThoughtSpot Connections.
 
 ThoughtSpot in Snowflake Partner Connect benefits:

@@ -1,11 +1,14 @@
 ---
 title: [User Onboarding Experience]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: true
 summary: "ThoughtSpot's onboarding is quick and intuitive; you can learn to use the application very quickly and efficiently."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When you begin using ThoughtSpot, the onboarding process starts automatically and guides you through a few basic scenarios.
 
 Usually, you receive an email welcoming you to the onboarding process at ThoughtSpot.

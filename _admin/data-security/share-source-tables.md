@@ -1,11 +1,14 @@
 ---
 title: [Sharing tables and columns]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false
 summary: "As an administrator, you can share view or edit access to any table."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 By default, when a table is loaded using the ThoughtSpot Loader, ODBC, or JDBC, it is only visible to administrators. Tables imported from a Web browser are visible to administrators and the user who uploaded it. Administrators and owners can share **Can View** or **Can Edit** privileges on tables with other users, who can further share them with others.
 
 When you share a table, you can share the entire table, or specific columns. For column level security (CLS), share only specific columns.

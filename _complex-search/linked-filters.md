@@ -1,10 +1,13 @@
 ---
 title: [Linked Liveboard filters]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "You can link columns from multiple worksheets, to create one Liveboard filter for visualizations that come from different worksheets."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When you create and share a Liveboard, your users may want to filter the visualizations on the Liveboard, to only see data that is relevant to their role. The head of customer experience in the North America region may only want to see the data on customers in North America, in a Liveboard that represents global customer data. However, the Liveboard may be built on multiple worksheets: Sales and NPS, for example. To create one filter that filters both visualizations built on the Sales worksheet, and the visualizations built on the NPS worksheet, you can link the worksheet columns, at the Liveboard level.
 
 To filter Liveboards based on one worksheet, see [Liveboard filters]({{ site.baseurl }}/complex-search/pinboard-filters.html).

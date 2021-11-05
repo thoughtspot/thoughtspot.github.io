@@ -1,10 +1,13 @@
 ---
 title: [More help and support]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 There are multiple locations inside and outside the ThoughtSpot application where you can get more help. This page describes some of the ways to get more help inside or outside of the application interface.
 
 ## ThoughtSpot documentation

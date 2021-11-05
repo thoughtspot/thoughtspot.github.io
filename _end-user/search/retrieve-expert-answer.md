@@ -1,10 +1,13 @@
 ---
 title: ["View an answer from an expert"]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 {% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 When you use **Ask an expert** to get help, you can view the answer after the expert responds.

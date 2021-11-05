@@ -1,10 +1,13 @@
 ---
 title: [Delete a visualization]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: Learn how to delete a visualization from your Liveboard.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You can remove a visualization from your Liveboard. To delete a visualization:
 
 1. Click **Liveboards**, on the top navigation bar.

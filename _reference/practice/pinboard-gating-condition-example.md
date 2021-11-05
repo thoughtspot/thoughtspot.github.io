@@ -1,9 +1,12 @@
 ---
 title: ["Liveboard schedule gating conditions in practice"]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When you [schedule a Liveboard job]({{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html), you can add a gating condition that triggers the Liveboard email. If the condition evaluates to `true` at the scheduled time, ThoughtSpot emails the Liveboard to the specified recipients. If it evaluates to `false`, ThoughtSpot does not send the Liveboard.
 
 This article walks you through an example scenario in which you use a gating condition to determine whether to email the Liveboard, sending an alert to specified users.

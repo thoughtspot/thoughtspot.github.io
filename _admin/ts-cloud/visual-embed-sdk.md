@@ -1,10 +1,13 @@
 ---
 title: [Visual Embed SDK]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "The ThoughtSpot Visual Embed SDK provides a JavaScript library for embedding ThoughtSpot search, visualizations, Liveboards, and the full application experience in an application, product, or web portal."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 The Visual Embed SDK provides a Javascript library to embed ThoughtSpot elements in your host application.
 
 You can use the Visual Embed SDK for the following purposes:

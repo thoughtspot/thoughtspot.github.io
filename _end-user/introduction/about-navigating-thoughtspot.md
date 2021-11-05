@@ -1,11 +1,14 @@
 ---
 title: [Finding your way around]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false  
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 These are the different sections in ThoughtSpot:
 
 ![Top navigation bar]({{ site.baseurl }}/images/thoughtspot-one-nav-bar.png "Top navigation bar")

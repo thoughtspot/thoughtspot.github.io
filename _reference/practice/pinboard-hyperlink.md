@@ -1,10 +1,12 @@
 ---
 title: [Add a hyperlink to a search]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: “Learn how to add a hyperlink to a search.”
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 You can add a hyperlink directly within a search. Using the concat formula, you can create an external hyperlink, or link your answer to another Liveboard.
 

@@ -1,10 +1,13 @@
 ---
 title: [Understanding formulas in searches]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "To provide richer insights, you can add a formula to your ThoughtSpot search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 The Formula Builder includes many types of operators, such as logical (if, then, else), math, date, and text string functions.
 
 You can create a formula from directly within a search. If you have the privilege that allows you to create or edit worksheets, you can also create a formula within a worksheet. Formulas in worksheets act as derived columns, so that anyone who uses the worksheet as a data source will see the formula as just another column.

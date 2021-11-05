@@ -1,11 +1,13 @@
 ---
 title: [Select a Liveboard]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false
 summary: "Choose a Liveboard to follow or explore."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Your organization uses default dashboards, called Liveboards, to collect and present the information you need. In ThoughtSpot's [business user onboarding]({{ site.baseurl }}/admin/ts-cloud/business-user-onboarding.html), you see several Liveboards that your administrator recommends you explore. Select a Liveboard to explore.
 

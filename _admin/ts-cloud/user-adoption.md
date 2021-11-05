@@ -1,10 +1,13 @@
 ---
 title: [User adoption Liveboard]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Use the User adoption Liveboard to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 The User adoption Liveboard contains essential information about your ThoughtSpot users and their adoption of the platform. Use this Liveboard to understand weekly active users, inactive users, top 10 adhoc searchers, popular Liveboards, and so on. You must have admin privileges to view this Liveboard.
 
 To view this Liveboard, navigate to the **Admin Console** by selecting **Admin** from the top navigation bar. Select **User activity** from the side navigation bar.

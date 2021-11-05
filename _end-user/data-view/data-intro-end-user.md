@@ -1,11 +1,14 @@
 ---
 title: ["Understand data sources"]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Use the Data tab to manage data sources."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 The **Data** tab lists all of the tables and data sources available to you. There are three types of data sources that you may see in the data list. They are tables, worksheets, and user uploaded data. You usually see only worksheets and user-uploaded sources. These are the most commonly used data sources for searching.
 
 | Name             | Icon           | Definition                                                       | Created by                |

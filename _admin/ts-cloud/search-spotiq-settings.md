@@ -1,10 +1,13 @@
 ---
 title: [Managing search and SpotIQ settings]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Manage indexing and SpotIQ settings for your organization from the Admin Console."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You can manage certain advanced settings for your organization from the Admin Console. This includes enabling, disabling, and configuring the following features: SpotIQ, column indexing, and summaries.
 
 Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Search & SpotIQ** from the side navigation bar that appears.

@@ -1,10 +1,12 @@
 ---
 title: [Integration guidelines]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Before embedding, analyze your integration requirements, choose an embedding approach, and explore the APIs."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 ThoughtSpot recommends that you browse through the following guidelines before you begin embedding.
 

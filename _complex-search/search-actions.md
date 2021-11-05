@@ -1,10 +1,13 @@
 ---
 title: [Other search actions]
 summary: Learn about advanced search options.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 There are other search actions you can perform by interacting directly with your answer. These actions can be performed in an ad hoc way, or you can pin your answer to a Liveboard to save your configurations.
 
 -   **[Change view options]({{ site.baseurl }}/complex-search/change-the-view.html)**  

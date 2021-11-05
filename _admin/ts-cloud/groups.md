@@ -1,10 +1,13 @@
 ---
 title: [Managing Groups]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Manage user groups in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Before people can log in and use ThoughtSpot, you need to create a username, a
 password, and a membership in one or more groups for them. Use the Admin Console to easily create and manage your user groups.
 

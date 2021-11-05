@@ -1,10 +1,13 @@
 ---
 title: [Add an SAP HANA connection]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Once ThoughtSpot Connections is enabled, you can add a connection to an SAP HANA database. This allows you to perform a live query of the external database to create answers and Liveboards, without having to bring the data into ThoughtSpot.
 
 To add a connection to SAP HANA:

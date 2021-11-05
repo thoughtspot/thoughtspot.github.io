@@ -1,10 +1,13 @@
 ---
 title: [Data security]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Sharing and security privileges govern what data a user can access and what they can do with the data. Admins can use privileges to regulate access to information and provide a personalized user experience.
 
 ## Users, groups, and privileges

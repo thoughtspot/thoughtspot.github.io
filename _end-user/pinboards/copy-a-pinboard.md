@@ -1,10 +1,13 @@
 ---
 title: [Copy a Liveboard]
 summary: You can copy a Liveboard to edit it without changing the original Liveboard.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You can make a copy of a Liveboard if you want to edit it without overwriting the original Liveboard.  When you save a copy, you can use a new Liveboard name.
 
 1. Click **Liveboards**, on the top navigation bar.

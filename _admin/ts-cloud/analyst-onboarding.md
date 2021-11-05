@@ -1,11 +1,13 @@
 ---
 title: [Analyst onboarding]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "As an analyst, you create and manage worksheets for everyone in your organization. Let us guide you through the necessary steps."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 When you start using ThoughtSpot, you choose your persona based on how you use ThoughtSpot, either to search and analyze data, or to set up data connections and model business use case for your team.
 

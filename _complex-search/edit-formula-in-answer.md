@@ -1,10 +1,13 @@
 ---
 title: [View or edit a formula in an answer]
 summary: Learn how to view or edit a formula.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 {% include note.html content="The new formula editor is part of the new answer experience. The new answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. If you have the new answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a worksheet. You can turn the new answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
 
 You can always go back and view or edit a formula that was added to an answer. Anyone who has edit privileges on an answer can also edit any formulas it contains. To view or edit an existing formula in an answer:

@@ -1,10 +1,12 @@
 ---
 title: [About connections in ThoughtSpot Cloud]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Using Connections, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 If your company stores source data externally in data warehouses, you can use ThoughtSpot Connections to directly query that data and use ThoughtSpot's analysis and visualization features.
 

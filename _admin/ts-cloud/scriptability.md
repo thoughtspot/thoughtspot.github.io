@@ -1,10 +1,12 @@
 ---
 title: [Scriptability]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "Use Scriptability to export and import worksheets, views, tables, Liveboards, and answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 ThoughtSpot developed its own scriptable approach for exporting, enhancing, and migrating worksheets, views, tables, Liveboards, and answers.
 

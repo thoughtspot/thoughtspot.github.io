@@ -1,11 +1,13 @@
 ---
 title: [Business User onboarding]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: false
 summary: "Business users view data insights to inform and support critical business decisions."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 When you begin using ThoughtSpot, the onboarding process starts automatically. You choose your persona, based on how you use ThoughtSpot. As a *business user*, you use ThoughtSpot to search and analyze data to help inform your business decisions. When you select the *business user* persona, the business user onboarding begins, and guides you through a few basic scenarios.
 

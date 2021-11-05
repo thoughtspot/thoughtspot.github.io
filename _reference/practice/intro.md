@@ -1,10 +1,12 @@
 ---
 title: [ThoughtSpot in Practice]
-last_updated: 11-04-2021
+last_updated: 11-05-2021
 summary: "This guide demonstrates the power of ThoughtSpot to solve real solutions we developed for our clients."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 The purpose of this section is to guide you through a few solutions we created for our clients, so you can leverage our experience to quickly and confidently employ ThoughtSport in meeting your own business objectives.
 

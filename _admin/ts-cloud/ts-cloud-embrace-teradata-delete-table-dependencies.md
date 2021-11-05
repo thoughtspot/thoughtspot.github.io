@@ -1,10 +1,12 @@
 ---
 title: [Delete a table with dependent objects from a Teradata connection]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects.
 

@@ -1,11 +1,14 @@
 ---
-title: ["About row level security (RLS)"]
-last_updated: 11/04/2021
+title: ["About row-level security (RLS)"]
+last_updated: 11/05/2021
 summary: "Using row level security, you can restrict data that appears in search results and Liveboards by group."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Row level security (RLS) allows you to restrict a group's access to table row data. You do this by creating a _rule_ that associates a filter with a group. When a group member searches, views an answer, or otherwise works with data, ThoughtSpot evaluates the rules and prevents the display of the restricted data. Users see only the data they are permitted to see.
+
+{% include content/liveboards-announcement.md %}
+
+Row-level security (RLS) allows you to restrict a group's access to table row data. You do this by creating a _rule_ that associates a filter with a group. When a group member searches, views an answer, or otherwise works with data, ThoughtSpot evaluates the rules and prevents the display of the restricted data. Users see only the data they are permitted to see.
 
 ## How does RLS impact user interactions?
 

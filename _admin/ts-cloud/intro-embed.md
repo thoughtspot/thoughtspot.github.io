@@ -1,10 +1,12 @@
 ---
 title: [Embedded analytics with ThoughtSpot Everywhere]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "ThoughtSpot provides the Visual Embed SDK, REST APIs, and  developer tools to embed search, visualizations, Liveboards, and the full ThoughtSpot experience in a third-party product or business solution."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 ThoughtSpot Everywhere provides a low-code embedded analytics platform for developers and product owners to build interactive data apps and incorporate ThoughtSpot functions and services directly into their apps, products, or services. Using ThoughtSpot Everywhere, you can embed search-driven analytics, infuse insights into your application, and enrich your website, portal, or product with ThoughtSpot’s analytical capabilities.
 

@@ -1,10 +1,12 @@
 ---
 title: [Getting Started with ThoughtSpot Cloud]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 As the first user on the account, you have to complete the following steps before other people can dig into your organization’s data.
 

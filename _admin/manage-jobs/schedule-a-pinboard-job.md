@@ -1,10 +1,13 @@
 ---
 title: [Schedule a Liveboard job]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "You can schedule or modify a Liveboard job for any Liveboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 You can add multiple schedules with different configurations for a single
 Liveboard. However, each job is limited to one Liveboard schedule. To add or modify
 a schedule, you must either be an administrator or have the schedule Liveboard privilege, and

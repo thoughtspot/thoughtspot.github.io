@@ -1,10 +1,13 @@
 ---
 title: [Granular access to Liveboards]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "ThoughtSpot now supports limiting some users to <strong>Read only</strong> access on curated Liveboards. These users can view and explore; however, they cannot copy, alter, download, or share the Liveboards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Starting with release 6.2.1, ThoughtSpot has a user privilege that prevents certain users from creating or modifying Liveboards.
 
 To ensure that users have <strong>Read only</strong> access, edit the user group permission and select the **[Cannot create or update Liveboards]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html)** privilege.

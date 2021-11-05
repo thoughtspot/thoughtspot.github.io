@@ -1,10 +1,13 @@
 ---
 title: [Scheduled Liveboards management]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "You can manage all scheduled Liveboards on the Jobs Management page under Admin."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Users who are not admins, but have the **Can schedule Liveboards** privilege, can only view Liveboard schedules they've created. You can select specific jobs and choose to pause, resume, edit, or delete them. You can have up to 50 scheduled jobs on your cluster at time. [Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) if you'd like to increase this limit.
 
 To view Liveboard schedules, navigate to **Data > Usage > Jobs Management**.

@@ -1,10 +1,13 @@
 ---
 title: [Convert column data type]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 There are some details you should be aware of when doing a data type conversion.
 
 ## Data type conversion behavior

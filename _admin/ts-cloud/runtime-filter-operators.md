@@ -1,10 +1,13 @@
 ---
 title: [Runtime Filter Operators]
 summary: "Runtime filters have several operators you can use to filter your embedded Liveboards and visualizations."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 This list contains all the filter operators you can use with Runtime Filters.
 
 |Operator|Description|Number of Values|

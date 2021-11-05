@@ -1,10 +1,12 @@
 ---
 title: [Modify an SAP HANA connection]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: Learn how to modify an SAP HANA connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 You can modify an SAP HANA connection in the following ways:
 - Edit a connection: to add or remove tables and columns

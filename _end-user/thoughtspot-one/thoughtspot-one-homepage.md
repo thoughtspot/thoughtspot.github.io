@@ -1,10 +1,13 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing answers and Liveboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 {% include content/ts-one-homepage.md %}
 
 {: id="search-existing"}

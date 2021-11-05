@@ -1,10 +1,13 @@
 ---
 title: [Drill down into your data]
-last_updated: 11/4/2021
+last_updated: 11/05/2021
 summary: "Drill down into the answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 When you drill down, you can see more information about the data within your search. You can drill down into a datapoint to get a finer grained view of that datapoint and the data behind it. Move easily from a general view of your information to a more specific representation of the data behind a datapoint at a click. For example, in a **revenue by department** search, you may notice that your **clothing** department has the highest revenue. You can drill down on **clothing** by **product name** to find out which products contribute to those high sales. There is no limit to how deep you can drill down.
 
 You can drill down in both tables and chart visualizations, on both [standalone answers](#answer-drilldown) and on [answers within Liveboards](#pinboard-drilldown). When you drill down on answers within Liveboards, you can either drill down directly, or drill down [using the Answer Explorer view](#explorer-drilldown). [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) provides a flexible, AI-guided exploration of an answer within a Liveboard.

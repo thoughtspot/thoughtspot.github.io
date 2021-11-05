@@ -1,11 +1,12 @@
 ---
 title: [Data and object security]
 summary: ThoughtSpot provides many features for protecting data.
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include content/liveboards-announcement.md %}
 
 ## Object Security
 

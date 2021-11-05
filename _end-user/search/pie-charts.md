@@ -1,10 +1,13 @@
 ---
 title: [Pie charts]
-last_updated: 11-04-2021
+last_updated: 11-05-2021
 summary: "A pie (or a circle) chart is a statistical graphic that divides data into slices to illustrate numerical proportion. In a pie chart, the arc length of a slice is proportional to the quantity it represents."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 The pie chart is a classic chart type that displays your search in a circle. The default pie chart in ThoughtSpot displays data in the shape of a doughnut, or a thick ring.
 
 ## How pie charts divide data

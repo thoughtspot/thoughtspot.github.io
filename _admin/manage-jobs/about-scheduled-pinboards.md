@@ -1,10 +1,12 @@
 ---
 title: ["Job management (scheduled Liveboards)"]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "All jobs on your cluster will appear on the Jobs Management page. You can also view jobs for individual Liveboards under the Liveboard Actions dropdown."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 The **Jobs Management** page found on the **Admin** section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled Liveboards. Scheduled Liveboards should help with preparing for recurrent meetings, when reviewing the same Liveboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.
 

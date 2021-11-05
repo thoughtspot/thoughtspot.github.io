@@ -1,10 +1,13 @@
 ---
 title: ["Search Answers"]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "You search existing answers and Liveboards to get correct information."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 ## Why search answers?
 
 With Search Answers, you can search existing content in answers and Liveboards to get the information you need. This complements Search Data, where users create new answers and Liveboards.

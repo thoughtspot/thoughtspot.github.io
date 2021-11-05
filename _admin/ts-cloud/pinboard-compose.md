@@ -1,10 +1,12 @@
 ---
 title: [Compose Liveboards from answers]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "In ThoughtSpot, you can publish collections of answers in Liveboards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Create a Liveboard to view and share multiple related answers.
 

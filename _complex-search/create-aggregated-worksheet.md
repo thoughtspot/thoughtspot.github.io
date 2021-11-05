@@ -1,10 +1,13 @@
 ---
 title: [Save a search as a view]
-last_updated: 11/4/2021
+last_updated: 11/05/2021
 summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 This procedure walks you through creating a view from a search. To create a view from a search:
 
 1. Start a new search, or edit an existing visualization from a Liveboard.

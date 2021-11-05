@@ -1,11 +1,13 @@
 ---
 title: [Overview of sharing]
 summary: Learn how to share answers and Liveboards.
-last_updated: 11/4/2021
+last_updated: 11/05/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 Whenever you are working in ThoughtSpot, you are in your own private environment until you share your work with others. Sharing applies to searches, Liveboards, and any data you upload. You share by clicking the **Share** button from within the object you want to share and specifying the users or groups with whom you want to share. An email notification goes out to those users or groups when you click **Share**.
 

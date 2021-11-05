@@ -1,10 +1,12 @@
 ---
 title: [About REST APIs]
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 summary: "ThoughtSpot REST APIs allow you to programmatically manage users and user sessions, query data, and import and export ThoughtSpot objects."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 ThoughtSpot REST APIs let you programmatically create, access, and manage ThoughtSpot objects and resources. Using REST APIs, your client application can perform the following operations:
 

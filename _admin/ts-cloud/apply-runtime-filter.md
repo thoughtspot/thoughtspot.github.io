@@ -1,10 +1,13 @@
 ---
 title: [Apply a Runtime Filter]
 summary: "Learn how to apply a runtime filter."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or Liveboard you're embedding. Before you apply a filter, make sure you [understand their limitations]({{ site.baseurl }}/admin/ts-cloud/about-runtime-filters.html#limitations-of-runtime-filters).
 
 The filters are specified in the request URL as parameters. Before you can use runtime filter(s), you need to do these procedures:

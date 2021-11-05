@@ -1,10 +1,12 @@
 ---
 title: [How users are searching answers Liveboard]
 summary: "The How Users are Searching Answers Liveboard describes how users are searching for existing answers and Liveboards. It specifies what users are searching for, where users are successful, and where they are not."
-last_updated: 11/04/2021
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing answers and Liveboards, so you can determine what objects are the most popular and what assets you may need to create. The **How Users are Searching Answers** Liveboard, a default ThoughtSpot Liveboard that is visible to admins, provides this information. Review the [best practices](#best-practices) for this Liveboard.
 
