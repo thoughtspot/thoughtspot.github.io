@@ -1212,6 +1212,8 @@ span.soft {
 
     ul#mysidebar {
         width: 225px;
+        max-height: calc(100vh - 7.5rem);
+        overflow: scroll;
     }
 }
 
