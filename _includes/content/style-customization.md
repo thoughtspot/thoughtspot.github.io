@@ -1,15 +1,6 @@
-Using style customization, you can create a uniform ThoughtSpot experience that
-matches with your company's look and feel. To re-brand the interface, you can
-use the style customization option found in the Admin Console in the ThoughtSpot
-web application. It lets you change the logo, application background color,
-chart color palettes, and footer text. For help with chart and table
-visualization fonts, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
+Using style customization, you can create a uniform ThoughtSpot experience that matches with your company's look and feel. To re-brand the interface, you can use the style customization option found in the Admin Console in the ThoughtSpot web application. It lets you change the logo, application background color, chart color palettes, and footer text. For help with chart and table visualization fonts, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
-This is especially useful if you're using the ThoughtSpot APIs for embedding
-visualizations from ThoughtSpot in your own web portal or application. You can
-make the visualizations match the look and feel of the portal or application in
-which they are embedded. For more information on using the APIs, see the
-ThoughtSpot Application Integration Guide.
+This is especially useful if you're using the ThoughtSpot APIs for embedding visualizations from ThoughtSpot in your own web portal or application. You can make the visualizations match the look and feel of the portal or application in which they are embedded. For more information on using the APIs, see the ThoughtSpot Application Integration Guide.
 
 ## Change style customization
 
@@ -101,7 +92,7 @@ You can add and edit fonts to customize the appearance of your charts and tables
 
 {: id="background-color"}
 ## Choose a background color
-You can customize ThoughtSpot's background color to match your company's theme. The custom background color is in effect when using the API to embed visualizations and pinboards.
+You can customize ThoughtSpot's background color to match your company's theme. The custom background color is in effect when using the API to embed visualizations and Liveboards.
 
 This feature is **only applicable** when embedding ThoughtSpot in an external web portal or application. To customize the background color, follow these steps:
 

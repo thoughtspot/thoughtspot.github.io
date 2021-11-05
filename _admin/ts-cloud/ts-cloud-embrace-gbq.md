@@ -1,11 +1,11 @@
 ---
 title: [Google BigQuery overview]
-last_updated: 1/12/2020
+last_updated: 11/04/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can connect to a Google BigQuery database in ThoughtSpot Cloud, and perform live queries to create Answers and Pinboards.
+You can connect to a Google BigQuery database in ThoughtSpot Cloud, and perform live queries to create answers and Liveboards.
 
 - [BigQuery prerequisites]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-prerequisites.html)
 - [Add a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html)

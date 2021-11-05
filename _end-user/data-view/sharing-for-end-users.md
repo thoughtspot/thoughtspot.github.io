@@ -1,13 +1,13 @@
 ---
 title: [Overview of sharing]
-summary: Learn how to share answers and pinboards.
-last_updated: 2/7/2019
+summary: Learn how to share answers and Liveboards.
+last_updated: 11/4/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Whenever you are working in ThoughtSpot, you are in your own private environment until you share your work with others. Sharing applies to searches, pinboards, and any data you upload. You share by clicking the **Share** button from within the object you want to share and specifying the users or groups with whom you want to share. An email notification goes out to those users or groups when you click **Share**.
+Whenever you are working in ThoughtSpot, you are in your own private environment until you share your work with others. Sharing applies to searches, Liveboards, and any data you upload. You share by clicking the **Share** button from within the object you want to share and specifying the users or groups with whom you want to share. An email notification goes out to those users or groups when you click **Share**.
 
 ## What you can share
 
@@ -17,13 +17,13 @@ You can share with groups and with individual people. You can share several diff
 
 |Object type|Description|Default security model|
 |-----------|-----------|----------------------|
-|Pinboards|A pinboard of saved search results.|Anyone who can view a pinboard can share it. See [share a pinboard]({{ site.baseurl }}/end-user/pinboards/share-pinboards.html#).|
+|Liveboards|A Liveboard of saved search results.|Anyone who can view a Liveboard can share it. See [share a Liveboard]({{ site.baseurl }}/end-user/pinboards/share-pinboards.html#).|
 |Answers|The result of a single search.|Anyone who can view an answer can share it. See [share answers]({{ site.baseurl }}/end-user/pinboards/share-answers.html).|
 
 ## Who can share and to whom
 
-You do not have to be an administrator or the owner of an object to share saved answers or pinboards. Any user can share them, based on the access levels the user has.
+You do not have to be an administrator or the owner of an object to share saved answers or Liveboards. Any user can share them, based on the access levels the user has.
 
-If you upload a spreadsheet, you can share **Can View** or **Can Edit** privileges with other people, who can further share them with others.  This last point is important. Like sharing a secret, sharing an object or your data can quickly spread in ths way to people you do not intend it to. So, if your data or work is sensitive to your business be thoughtful in how you share it.
+If you upload a spreadsheet, you can share **Can View** or **Can Edit** privileges with other people, who can further share them with others.  This last point is important. Like sharing a secret, sharing an object or your data can quickly spread in this way to people you do not intend it to. So, if your data or work is sensitive to your business be thoughtful in how you share it.
 
-Finally, you can revoke access to an object (table, worksheet, or pinboard) that you have previously shared. Unsharing an object is very similar to sharing it.
+Finally, you can revoke access to an object (table, worksheet, or Liveboard) that you have previously shared. Unsharing an object is very similar to sharing it.

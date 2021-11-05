@@ -1,24 +1,17 @@
 ---
 title: [More help and support]
-last_updated: 12/15/2020
+last_updated: 11/04/2021
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-There are multiple locations inside and outside the ThoughtSpot application
-where you can get more help. This page describes some of the ways to get more
-help inside or outside of the application interface.
+There are multiple locations inside and outside the ThoughtSpot application where you can get more help. This page describes some of the ways to get more help inside or outside of the application interface.
 
 ## ThoughtSpot documentation
 
-Each version of ThoughtSpot has its own documentation set. ThoughtSpot releases
-new documentation sets for every major release version (`x.y`) of ThoughtSpot.
-Documentation features added with minor versions (`x.y.z`) are added to the
-corresponding major release.  This means, for example, that new documentation
-for the 6.0.1 minor release version appears in the 6.0 major version documentation.
+Each version of ThoughtSpot has its own documentation set. ThoughtSpot releases new documentation sets for every major release version (`x.y`) of ThoughtSpot. Documentation features added with minor versions (`x.y.z`) are added to the corresponding major release. This means, for example, that new documentation for the 6.0.1 minor release version appears in the 6.0 major version documentation.
 
-{% include tip.html content="ThoughtSpot supplies release notes for every major
-release and every minor release version (`x.y.z`). " %}
+{% include tip.html content="ThoughtSpot supplies release notes for every major release and every minor release version (`x.y.z`). " %}
 
 ## Information Center
 
@@ -55,8 +48,8 @@ The **Information Center** opens. It contains the following 3 sections:
         <td>A short video about using filters to narrow your search results.</td>
       </tr>
       <tr>
-        <th>Intro to Pinboards</th>
-        <td>A short video introducing you to Pinboards.</td>
+        <th>Intro to Liveboards</th>
+        <td>A short video introducing you to Liveboards.</td>
       </tr>
     </table>
 

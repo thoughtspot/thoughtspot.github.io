@@ -1,7 +1,7 @@
 ---
 title: [Visual Embed SDK]
-last_updated: 4/3/2021
-summary: "The ThoughtSpot Visual Embed SDK provides a JavaScript library for embedding ThoughtSpot search, visualizations, pinboards, and the full application experience in an application, product, or web portal."
+last_updated: 11/04/2021
+summary: "The ThoughtSpot Visual Embed SDK provides a JavaScript library for embedding ThoughtSpot search, visualizations, Liveboards, and the full application experience in an application, product, or web portal."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,7 +9,7 @@ The Visual Embed SDK provides a Javascript library to embed ThoughtSpot elements
 
 You can use the Visual Embed SDK for the following purposes:
 
--   Embed specific components of the ThoughtSpot application; for example, search, pinboards, and visualizations.
+-   Embed specific components of the ThoughtSpot application; for example, search, Liveboards, and visualizations.
 
 -   Render full ThoughtSpot experience within the context of your host application.
 
@@ -25,7 +25,7 @@ The Visual Embed SDK includes the following embed modules:
   Use the **SearchEmbed** component to [embed the ThoughtSpot search functionality](https://developers.thoughtspot.com/docs/?pageid=search-embed){:target="_blank"} and retrieve search data from a specific data source or an existing saved answer.
 
 - **PinboardEmbed**                                                                                                               
-  Use the **PinboardEmbed** component to [embed a full pinboard with multiple visualizations](https://developers.thoughtspot.com/docs/?pageid=embed-pinboard){:target="_blank"}, or [a specific visualization on a pinboard](https://developers.thoughtspot.com/docs/?pageid=embed-a-viz){:target="_blank"}.  
+  Use the **PinboardEmbed** component to [embed a full Liveboard with multiple visualizations](https://developers.thoughtspot.com/docs/?pageid=embed-pinboard){:target="_blank"}, or [a specific visualization on a Liveboard](https://developers.thoughtspot.com/docs/?pageid=embed-a-viz){:target="_blank"}.  
 
 - **AppEmbed**                                                                                                               
   Use the **AppEmbed** component to embed the [full ThoughtSpot application](https://developers.thoughtspot.com/docs/?pageid=full-embed){:target="_blank"} with or without the navigation bar.

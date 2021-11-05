@@ -1,7 +1,7 @@
 ---
 title: [Install and set up mobile app]
 summary: Learn how to install and set up ThoughtSpot's mobile app.
-last_updated: 11/15/2019
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -48,10 +48,10 @@ After you install the ThoughtSpot app, follow these steps to set it up:
 3. In the Server URL field, enter the URL for your ThoughtSpot cluster and tap **Continue**.
 4. Enter your User ID and Password for the cluster and tap **Sign In**.
 
-   The Home screen appears, showing three options for setting up your home pinboard:
-   - Choose an existing Pinboard
-   - Create a new Pinboard
-   - Help me set my Home Pinboard
-6. Tap the option you want to use, and follow the on-screen instructions to set up your Home Pinboard.
+   The Home screen appears, showing three options for setting up your home Liveboard:
+   - Choose an existing Liveboard
+   - Create a new Liveboard
+   - Help me set my Home Liveboard
+6. Tap the option you want to use, and follow the on-screen instructions to set up your Home Liveboard.
 
 Have questions? Feel free to contact us at [mobile@thoughtspot.com](mailto:mobile@thoughtspot.com?subject=ThoughtSpot%20Mobile%20App%20Question)

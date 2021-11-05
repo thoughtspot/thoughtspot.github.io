@@ -1,16 +1,16 @@
 ---
 title: Answer Explorer
-summary: Answer Explorer provides you with AI-guided exploration of Answers within Pinboards, so you can more easily find valuable and actionable information inside your data.
-last_updated: 8/14/2020
+summary: Answer Explorer provides you with AI-guided exploration of Answers within Liveboards, so you can more easily find valuable and actionable information inside your data.
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Answer Explorer, ThoughtSpot's AI-guided exploration of Answers and headline metrics within Pinboards, provides you with valuable suggestions on how to explore and understand your data, based on two main criteria. The Answer Explorer AI considers both popularity and personalization. The feature suggests ways to answer questions that are relevant to many other users, and takes your own ThoughtSpot history into account. Answer Explorer helps you better understand your data and get to actionable insights faster with just a click.
+Answer Explorer, ThoughtSpot's AI-guided exploration of answers and headline metrics within Liveboards, provides you with valuable suggestions on how to explore and understand your data, based on two main criteria. The Answer Explorer AI considers both popularity and personalization. The feature suggests ways to answer questions that are relevant to many other users, and takes your own ThoughtSpot history into account. Answer Explorer helps you better understand your data and get to actionable insights faster with just a click.
 
-You can access Answer Explorer from any Answer or headline metric in a Pinboard. Click the **Explore** button that appears when you hover over any Answer or headline.
+You can access Answer Explorer from any answer or headline metric in a Liveboard. Click the **Explore** button that appears when you hover over any answer or headline.
 
-The Answer expands to fill your screen, and the **Explore this data** menu appears, on the **Filters** screen.
+The answer expands to fill your screen, and the **Explore this data** menu appears, on the **Filters** screen.
 
 ![Explore this data]({{ site.baseurl }}/images/explore-fullscreen.png "Explore this data")
 
@@ -22,7 +22,7 @@ Note that when you explore a headline, you can only use Answer Explorer to [filt
 
 Answer Explorer's AI updates its suggestions every time you add something new to your visualization. If you add a suggested filter, Answer Explorer then suggests new filters, comparisons, and columns to add or replace, based on that new filter in your chart. For example, in a retail data set, you might choose to add a filter for the **west** region. Answer Explorer might then suggest you **add** your data's *store state* column, since you are interested in how your stores perform based on location. In this way, Answer Explorer's suggestions become more relevant for you as you continue to use the feature.
 
-After you make a change to your Answer, you may want to go back to an earlier version of your Answer. You can click the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline} to go back one step, or the Reset icon ![]({{ site.baseurl }}/images/icon-reset-10px.png){: .inline} to go back to the original answer.
+After you make a change to your answer, you may want to go back to an earlier version of your answer. You can click the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline} to go back one step, or the Reset icon ![]({{ site.baseurl }}/images/icon-reset-10px.png){: .inline} to go back to the original answer.
 
 {: id="explore-filters"}
 ## Filters
@@ -66,7 +66,7 @@ If you want to add an attribute or measure that Answer Explorer did not suggest,
 
 {: id="explore-replace"}
 ## Replace attributes or measures
-Under the **replace** tab, replace one attribute or measure with another. For example, if your Answer has a time attribute, you can easily change from *monthly* to *quarterly*, and so on.
+Under the **replace** tab, replace one attribute or measure with another. For example, if your answer has a time attribute, you can easily change from *monthly* to *quarterly*, and so on.
 
 ![Change time attribute]({{ site.baseurl }}/images/explore-replace-time.png "Change time attribute")
 
@@ -99,17 +99,17 @@ If you want to compare values that Answer Explorer did not suggest, you can choo
 3. Select the column values you would like to compare.
 
 ## Drill down with Answer Explorer
-You can Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline}. You cannot go back one step at a time if you Drill down on an Answer in a Pinboard, without using Answer Explorer.
+You can Drill down from within Answer Explorer. When you Drill down in Answer Explorer, you have the option of going back one step at a time, using the Back icon ![]({{ site.baseurl }}/images/icon-arrow-left-10px.png){: .inline}. You cannot go back one step at a time if you Drill down on an answer in a Liveboard, without using Answer Explorer.
 
 See [Drill down]({{ site.baseurl }}/complex-search/drill-down.html).
 
 ## Save your new answer
-When you find a valuable insight using Answer Explorer, you may want to save that Answer as it appears, instead of trying to recreate it in the **Search** bar.
+When you find a valuable insight using Answer Explorer, you may want to save that answer as it appears, instead of trying to recreate it in the **Search** bar.
 1. Click the **More** menu icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
 2. Select **copy and edit**.
-3. **Save** your new Answer within ThoughtSpot and continue working with it.
+3. **Save** your new answer within ThoughtSpot and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.
 
-You can also **pin** the current Answer to any Pinboard you have **edit** access to. Click the **pin** icon ![]({{ site.baseurl }}/images/icon-pin.png){: .inline} and select a Pinboard.
+You can also **pin** the current answer to any Liveboard you have **edit** access to. Click the **pin** icon ![]({{ site.baseurl }}/images/icon-pin.png){: .inline} and select a Liveboard.
 
-Otherwise, the Answer returns to its original state when you exit the **Explore** menu by clicking the *X* icon.
+Otherwise, the answer returns to its original state when you exit the **Explore** menu by clicking the *X* icon.

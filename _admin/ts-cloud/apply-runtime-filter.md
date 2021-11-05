@@ -1,16 +1,16 @@
 ---
 title: [Apply a Runtime Filter]
 summary: "Learn how to apply a runtime filter."
-last_updated: 3/4/2021
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. Before you apply a filter, make sure you [understand their limitations]({{ site.baseurl }}/admin/ts-cloud/about-runtime-filters.html#limitations-of-runtime-filters).
+Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or Liveboard you're embedding. Before you apply a filter, make sure you [understand their limitations]({{ site.baseurl }}/admin/ts-cloud/about-runtime-filters.html#limitations-of-runtime-filters).
 
 The filters are specified in the request URL as parameters. Before you can use runtime filter(s), you need to do these procedures:
 
-1.  Embed a [visualization](https://developers.thoughtspot.com/docs/?pageid=embed-a-viz){:target="_blank"} and [pinboard](https://developers.thoughtspot.com/docs/?pageid=embed-pinboard){:target="_blank"} using the Visual Embed SDK and authenticate to ThoughtSpot.
-2.  Use the [Data API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html) to [retrieve a search answer or pinboard](https://developers.thoughtspot.com/docs/?pageid=embed-data-restapi){: target="_blank"}.
+1.  Embed a [visualization](https://developers.thoughtspot.com/docs/?pageid=embed-a-viz){:target="_blank"} and [Liveboard](https://developers.thoughtspot.com/docs/?pageid=embed-pinboard){:target="_blank"} using the Visual Embed SDK and authenticate to ThoughtSpot.
+2.  Use the [Data API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html) to [retrieve a search answer or Liveboard](https://developers.thoughtspot.com/docs/?pageid=embed-data-restapi){: target="_blank"}.
 
 To add a runtime filter to your API call or the  embedded object:
 
@@ -18,7 +18,7 @@ To add a runtime filter to your API call or the  embedded object:
 2. Paste the URL into a text editor.
 3. Append the runtime filter to the URL, using the [runtime filter operators](runtime-filter-operators.html#).
    The format for the runtime filter is:
-    -   For Embedding a pinboard:
+    -   For Embedding a Liveboard:
 
         ```
         http://<thoughtspot_server>:<port>/
@@ -34,7 +34,7 @@ To add a runtime filter to your API call or the  embedded object:
         #/pinboard/<pinboard_id>/<visualization_id>
         ```
 
-    -   For the REST API with a pinboard:
+    -   For the REST API with a Liveboard:
 
         ```
         http://<thoughtspot_server>:<port>

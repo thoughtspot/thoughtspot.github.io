@@ -16,7 +16,7 @@
     </tr>
     <tr>
       <td><strong>Can download data</strong></td>
-      <td>Can download data from search results and pinboards.</td>
+      <td>Can download data from search results and Liveboards.</td>
     </tr>
     <tr>
       <td><strong>Can share with all users</strong></td>
@@ -32,8 +32,8 @@
       <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
     </tr>
     <tr id="schedule-pinboards">
-      <td><strong>Can schedule pinboards</strong></td>
-      <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
+      <td><strong>Can schedule Liveboards</strong></td>
+      <td>Can create Liveboard schedules and edit their own scheduled jobs.</td>
     </tr>
     <tr>
       <td><strong>Has SpotIQ privilege</strong></td>
@@ -53,10 +53,10 @@
       <td>Can access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a> to explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</td>
     </tr>
     <tr id="read-only">
-      <td><strong>Cannot create or update Pinboards</strong></td>
-      <td><p>Users are limited to viewing and exploring curated Pinboards (and Answers). They cannot copy, edit, download, or share them.</p>
+      <td><strong>Cannot create or update Liveboards</strong></td>
+      <td><p>Users are limited to viewing and exploring curated Liveboards (and Answers). They cannot copy, edit, download, or share them.</p>
       <p>This privilege is designed to support embedded implementations, and is not available by default. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to enable it.</p>
-      <p>See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a> for a deeper discussion of this privilege, and an implementation example.</p></td>
+      <p>See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Liveboards</a> for a deeper discussion of this privilege, and an implementation example.</p></td>
     </tr>
   </tbody>
 </table>

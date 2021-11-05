@@ -1,19 +1,19 @@
 ---
-title: [Visualize Search results as Answers]
-last_updated: 5/22/2020
+title: [Visualize search results as answers]
+last_updated: 11/04/2021
 summary: "Visualize and save your ThoughtSpot Search results as Answers."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot Search results generate tables and charts. When you save them for future use, and we call these saved searches Answers.
+ThoughtSpot Search results generate tables and charts. When you save them for future use, we call these saved searches answers.
 
 ## Creating an Answer
 
 ![Visualize Search]({{ site.baseurl }}/images/visualize-search.gif "Search, and save it as an Answer")
 
-To create a Search, and save it as an Answer, follow these steps:
+To create a search, and save it as an answer, follow these steps:
 
 1. Click **Search**.
 
@@ -25,7 +25,7 @@ To create a Search, and save it as an Answer, follow these steps:
 
 4. In the **Choose sources** interface, select one or more sources, and click **Close**.  
 
-   We strongly recommend that you use Worksheets rather than tables, because of the many benefits Worksheets provide.
+   We strongly recommend that you use worksheets rather than tables, because of the many benefits worksheets provide.
 
 6. After you select the **Data Source**, start typing your question in the search bar.
 
@@ -43,11 +43,11 @@ To create a Search, and save it as an Answer, follow these steps:
    - \[Optional\] Add a Description
    - Click **Save**.
 
-***Congratulations!*** You have an Answer that you can use in your Pinboards. To find this and other answers, click **Answer** on the top navigation bar.
+***Congratulations!*** You have an answer that you can use in your Liveboards. To find this and other answers, click **Answer** on the top navigation bar.
 
 
-## Working with Answers
+## Working with answers
 
 <script src="https://fast.wistia.com/embed/medias/i8smdu5gws.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_i8smdu5gws popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
 
-***Next steps:*** proceed to [Compose Pinboards from Answers]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html).
+***Next steps:*** proceed to [Compose Liveboards from answers]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html).

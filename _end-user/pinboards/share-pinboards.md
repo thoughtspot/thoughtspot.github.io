@@ -1,7 +1,7 @@
 ---
-title: [Share a pinboard]
-last_updated: 12/18/2019
-summary: "When you view a pinboard in ThoughtSpot, you can share it with others. "
+title: [Share a Liveboard]
+last_updated: 11/04/2021
+summary: "When you view a Liveboard in ThoughtSpot, you can share it with others. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

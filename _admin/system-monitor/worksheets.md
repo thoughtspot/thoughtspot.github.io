@@ -1,25 +1,22 @@
 ---
-title: [System Worksheets and Views]
-summary: "Learn about the system Worksheets and Views that ThoughtSpot provides."
-last_updated: 4/28/2021
+title: [System worksheets and views]
+summary: "Learn about the system worksheets and views that ThoughtSpot provides."
+last_updated: 11/04/2021
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Most of the monitoring information in ThoughtSpot's system Pinboards comes from system
-Worksheets and Views that administrators can view, but not modify. The underlying tables
-are protected system tables that you cannot access directly. However,
-administrators can create new, custom monitoring reports from the Worksheets and Views.
+Most of the monitoring information in ThoughtSpot's system Liveboards comes from system worksheets and views that administrators can view, but not modify. The underlying tables are protected system tables that you cannot access directly. However, administrators can create new, custom monitoring reports from the worksheets and views.
 
-## List the system Worksheets and Views
+## List the system worksheets and views
 
-To list the system Worksheets and Views:
+To list the system worksheets and views:
 
 1. Go to the **Data** tab.
 2. Choose **All** and **All types**.
 3. Enter `System User` in the search field.
 
-## Description of system Worksheets and Views
+## Description of system worksheets and views
 
 <table>
 <colgroup>
@@ -33,7 +30,7 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">Credits Purchased</code></td>
       <td>
-         Contains data on the number of credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has, and their expiration date. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Pinboard</a>.
+         Contains data on the number of credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has, and their expiration date. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Liveboard</a>.
       </td>
    </tr>
    <tr>
@@ -45,13 +42,13 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">Credit Usage</code></td>
       <td>
-         Tracks the credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has consumed. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Pinboard</a>.
+         Tracks the credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has consumed. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Liveboard</a>.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">Discover Monitoring Data</code></td>
       <td>
-         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Pinboard</a>.
+         Contains data on how users are searching for existing answers and Liveboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Liveboard</a>.
       </td>
    </tr>
    <tr>
@@ -63,7 +60,7 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">MetricsMonitoring</code></td>
       <td>
-         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Pinboard</a>.
+         Contains data on how users are searching for existing answers and Liveboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Liveboard</a>.
       </td>
    </tr>
    <tr>

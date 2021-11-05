@@ -1,7 +1,7 @@
 ---
 title: [Mobile FAQ]
 summary: These are a few frequently asked questions about ThoughtSpot mobile.
-last_updated: 02/28/2020
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -19,11 +19,11 @@ The ThoughtSpot app stores two kinds of data:
   **iOS**: Authentication data for iOS is stored in an encrypted database, called a keychain.
   For more information, refer to Apple's documentation on [Keychain Services](https://developer.apple.com/documentation/security/keychain_services){:target="_blank"}.
 
-- **Cached data for the Home Pinboard**
+- **Cached data for the Home Liveboard**
 
-  **Android**: Home pinboard data is stored in an encrypted format in the app private storage on the Android device. Encryption is done using APIs provided by the Android Security Library. For more information, refer to Google's Android documentation on the [Android Security Library](https://developer.android.com/topic/security/data){:target="_blank"}.
+  **Android**: Home Liveboard data is stored in an encrypted format in the app private storage on the Android device. Encryption is done using APIs provided by the Android Security Library. For more information, refer to Google's Android documentation on the [Android Security Library](https://developer.android.com/topic/security/data){:target="_blank"}.
 
-  **iOS**: Home Pinboard data is stored in the encrypted files storage on the iOS device. iOS encrypts and decrypts these files as needed. For more information, refer to Apple's documentation on [Encrypting your App's Files](https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy/encrypting_your_app_s_files){:target="_blank"}
+  **iOS**: Home Liveboard data is stored in the encrypted files storage on the iOS device. iOS encrypts and decrypts these files as needed. For more information, refer to Apple's documentation on [Encrypting your App's Files](https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy/encrypting_your_app_s_files){:target="_blank"}
 
   The ThoughtSpot app caches only the Home page data. By default, these files are inaccessible, until the user unlocks the device for the first time.
 

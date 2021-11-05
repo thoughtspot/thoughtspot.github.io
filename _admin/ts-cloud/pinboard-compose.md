@@ -1,26 +1,25 @@
 ---
-title: [Compose Pinboards from Answers]
-last_updated: 5/22/2020
-summary: "In ThoughtSpot, you can publish collections of Answers in Pinboards."
+title: [Compose Liveboards from answers]
+last_updated: 11/04/2021
+summary: "In ThoughtSpot, you can publish collections of answers in Liveboards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Create a Pinboard to view and share multiple related Answers.
+Create a Liveboard to view and share multiple related answers.
 
-![Compose Pinboards]({{ site.baseurl }}/images/pinboard-compose.gif "Compose Pinboards from Answers")
+![Compose Liveboards]({{ site.baseurl }}/images/pinboard-compose.gif "Compose Liveboards from answers")
 
-1. Click **Create Pinboards**.
+1. Click **Create Liveboards**.
 
-2. On the **First Pinboard** screen, click **Start searching**.
+2. On the **First Liveboard** screen, click **Start searching**.
 
-3. Search, and add another Answer to your collection by pinning it to your Pinboard.
+3. Search, and add another answer to your collection by pinning it to your Liveboard.
 
-4. Congratulations, you successfully set up your first Pinboard, and created a good search experience for your users.
+4. Congratulations, you successfully set up your first Liveboard, and created a good search experience for your users.
 
-5. To share the Pinboard with your users, click **Invite others**, and contact us to do it for you.
+5. To share the Liveboard with your users, click **Invite others**, and contact us to do it for you.
 
 6. After you click **Finish Setup**, you can see the ThoughtSpot home page.
 
-    You can see the Search bar,
-Favorites, Recently viewed, and recently trending.
+    You can see the Search bar, Favorites, Recently viewed, and recently trending.

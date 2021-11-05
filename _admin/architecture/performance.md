@@ -1,6 +1,6 @@
 ---
 title: [Performance considerations]
-last_updated: 03/11/2020
+last_updated: 11/04/2021
 summary: "Make sure you understand the performance considerations in your installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -56,6 +56,6 @@ For chasm trap scenarios where two or more fact tables join through a shared dim
 
 Maximum number of unique RLS rules with search data suggestions should not exceed 15K.
 
-## Scheduled Pinboards
+## Scheduled Liveboards
 
-For ideal performance of scheduled pinboards, do not exceed 50 scheduled pinboard jobs.
+For ideal performance of scheduled Liveboards, do not exceed 50 scheduled Liveboard jobs.

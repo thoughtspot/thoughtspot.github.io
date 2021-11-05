@@ -1,31 +1,31 @@
 ---
-title: [Present a pinboard as a slideshow]
-last_updated: 6/30/19
-summary: "Displaying your pinboard as a slideshow is a good way to present its contents to others."
+title: [Present a Liveboard as a slideshow]
+last_updated: 11/04/2021
+summary: "Displaying your Liveboard as a slideshow is a good way to present its contents to others."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
- With ThoughtSpot's interactive presentations, you can easily explore and answer questions from the audience during the presentation session. When you present your pinboard, ThoughtSpot displays the component visualizations and tables in order from left to right, and top to bottom.
+ With ThoughtSpot's interactive presentations, you can easily explore and answer questions from the audience during the presentation session. When you present your Liveboard, ThoughtSpot displays the component visualizations and tables in order from left to right, and top to bottom.
 
 ## Starting a presentation ##
 
 To start a presentation, follow these steps:
 
-1. Click **Pinboards** on the top navigation bar.
+1. Click **Liveboards** on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Liveboards")
 
-2. Select a pinboard from the list of pinboards by clicking on its title.
+2. Select a Liveboard from the list of Liveboards by clicking on its title.
 
-3. In the open pinboard, click the More menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} Present**.
+3. In the open Liveboard, click the More menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} Present**.
 
-     ![]({{ site.baseurl }}/images/pinboard-present.png "Present a pinboard")
+     ![]({{ site.baseurl }}/images/pinboard-present.png "Present a Liveboard")
 
-4. ThoughtSpot displays the pinboard in full screen.  
+4. ThoughtSpot displays the Liveboard in full screen.  
 
    To navigate through the slides of the presentation, use the left and right arrow navigation keys on your keyboard.  
 
-    ![]({{ site.baseurl }}/images/pinboard-present-fullscreen.png "Pinboard presentation, full screen")
+    ![]({{ site.baseurl }}/images/pinboard-present-fullscreen.png "Liveboard presentation, full screen")
 
 ## Presentation navigation controls ##
 The presentation navigation controls enable you to effectively run the presentation.  
@@ -39,12 +39,12 @@ Hover over the top right corner of the presentation to see the navigation contro
 
    ![]({{ site.baseurl }}/images/pinboard-present-controls.png "Presentation navigation controls, full screen")
 
-## Presenting pinboards
+## Presenting Liveboards
 While in presentation mode, you can easily explore each visualization.
 
-![]({{ site.baseurl }}/images/pinboard-present-actions.png "Available actions in pinboard presentations")
+![]({{ site.baseurl }}/images/pinboard-present-actions.png "Available actions in Liveboard presentations")
 
-Consider the following actions on pinboards:
+Consider the following actions on Liveboards:
 
 | Legend | Action |
 | --- | --- |

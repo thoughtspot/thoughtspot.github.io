@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot Modeling Language]
 last_updated: 6/23/2021
-summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
+summary: "Use ThoughtSpot Modeling Language to modify a worksheet, view, table, Liveboard, or answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
 - /admin/scriptability/tsl-table.html
@@ -26,7 +26,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To work with Scriptable [Worksheets](#syntax-worksheets), [Views](#syntax-views), [tables](#syntax-tables), [Answers](#syntax-answers), and [Pinboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update Worksheets, Views, tables, Answers, and Pinboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
+To work with Scriptable [worksheets](#syntax-worksheets), [views](#syntax-views), [tables](#syntax-tables), [answers](#syntax-answers), and [Liveboards](#syntax-pinboards) in ThoughtSpot, you can download these objects to a flat file in `.TML` format, modify it, and subsequently upload this file either to the same cluster, or to a different cluster. To learn how to export, change, and update worksheets, views, tables, answers, and Liveboards, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 In this article, you learn the syntax of the TML files for each Scriptable object. You also learn how to [add and modify joins](#syntax-joins) for Worksheets, Views, and tables.
 
@@ -555,20 +555,20 @@ You may not see each of these parameters in your own TML files, depending on whe
 </pre>
 
 {: id="syntax-pinboards"}
-##  Syntax of the Pinboard TML file
+##  Syntax of the Liveboard TML file
 
-The `TML` file for Scriptable Pinboards has a specific syntax.
+The `TML` file for Scriptable Liveboards has a specific syntax.
 
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
-You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Pinboard, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Pinboard.
+You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you do not have any filters on your Liveboard, the `filters` parameter does not appear. You can add that variable to the TML file to specify filters for your Liveboard.
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>pinboard_guid</em>&gt;
 <a href="#pinboard">pinboard</a>:
   <a href="#name">name</a>: &lt;<em>pinboard_name</em>&gt;
   <a href="#description">description</a>:
-    This is a multi-line description of the pinboard
+    This is a multi-line description of the Liveboard
     Description line 2
   <a href="#visualizations">visualizations</a>:
   - <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
@@ -659,7 +659,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="column">
     <dt>column</dt>
-    <dd>The id of the column(s) being filtered on. When a Pinboard contains <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked filters</a>, or filters that affect visualizations based on more than one Worksheet, the primary filter column appears first in the list of columns in the TML. The linked filter column appears after the primary filter column.</dd>
+    <dd>The id of the column(s) being filtered on. When a Liveboard contains <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked filters</a>, or filters that affect visualizations based on more than one Worksheet, the primary filter column appears first in the list of columns in the TML. The linked filter column appears after the primary filter column.</dd>
   </dlentry>
 
   <dlentry id="columns">
@@ -761,7 +761,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="excluded_visualizations">
   <dt>excluded_visualizations</dt>
-  <dd>A list of visualizations the Pinboard editor chose to exclude from the filter. Only appears when using <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective filters</a>.</dd>
+  <dd>A list of visualizations the Liveboard editor chose to exclude from the filter. Only appears when using <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective filters</a>.</dd>
 </dlentry>
 
   <dlentry id="expr">
@@ -771,7 +771,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="filters">
     <dt>filters</dt>
-    <dd>Contains specifications for Pinboard, View, and Worksheet filters.</dd>
+    <dd>Contains specifications for Liveboard, view, and worksheet filters.</dd>
   </dlentry>
 
   <dlentry id="format_pattern">
@@ -810,7 +810,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="guid">
   <dt>guid</dt>
-  <dd>The GUID for the Answer, Pinboard, table, Worksheet, or View. You can find this string of letters and numbers at the end of the URL for an object.</dd>
+  <dd>The GUID for the answer, Liveboard, table, worksheet, or view. You can find this string of letters and numbers at the end of the URL for an object.</dd>
   </dlentry>
 
   <dlentry id="headline_aggregation">
@@ -924,7 +924,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="layout">
     <dt>layout</dt>
-    <dd>Specifies the Pinboard layout, in the order that a <code>visualization_id</code> is listed.</dd>
+    <dd>Specifies the Liveboard layout, in the order that a <code>visualization_id</code> is listed.</dd>
   </dlentry>
 
   <dlentry id="lesson_plan_string">
@@ -971,7 +971,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="oper">
     <dt>oper</dt>
-    <dd>The operator of the Pinboard, View or Worksheet filter. Accepted operators are <code>"in"</code>, <code>"not in"</code>, <code>"between"</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
+    <dd>The operator of the Liveboard, view or worksheet filter. Accepted operators are <code>"in"</code>, <code>"not in"</code>, <code>"between"</code>, <code>=<</code>, <code>!=</code>, <code><=</code>, <code>>=</code>, <code>></code>, or <code><</code>.</dd>
   </dlentry>
 
   <dlentry id="ordered_column_ids">
@@ -986,7 +986,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="pinboard">
   <dt>pinboard</dt>
-  <dd>Top-level container for all object definitions within the Pinboard.</dd>
+  <dd>Top-level container for all object definitions within the Liveboard.</dd>
   </dlentry>
 
   <dlentry id="properties">
@@ -1059,7 +1059,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="size">
     <dt>size</dt>
-    <dd>The size of a visualization in a Pinboard. The options are <code>EXTRA_SMALL</code>, <code>SMALL</code>, <code>MEDIUM</code>, <code>LARGE</code>, <code>LARGE_SMALL</code>, <code>MEDIUM_SMALL</code>, and <code>EXTRA_LARGE</code>.
+    <dd>The size of a visualization in a Liveboard. The options are <code>EXTRA_SMALL</code>, <code>SMALL</code>, <code>MEDIUM</code>, <code>LARGE</code>, <code>LARGE_SMALL</code>, <code>MEDIUM_SMALL</code>, and <code>EXTRA_LARGE</code>.
     </dd>
   </dlentry>
 
@@ -1119,7 +1119,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="values">
     <dt>values</dt>
-    <dd>The values being filtered (excluded or included) in a Pinboard, View, or Worksheet.
+    <dd>The values being filtered (excluded or included) in a Liveboard, view, or worksheet.
     </dd>
   </dlentry>
 
@@ -1136,13 +1136,13 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="visualizations">
     <dt>visualizations</dt>
-    <dd>The visualizations in a Pinboard: tables, charts, and headlines.
+    <dd>The visualizations in a Liveboard: tables, charts, and headlines.
     </dd>
   </dlentry>
 
   <dlentry id="visualization_id">
     <dt>visualization_id</dt>
-    <dd>The id of a visualization. Used to specify the Pinboard's <a href="#layout">layout</a>.
+    <dd>The id of a visualization. Used to specify the Liveboard's <a href="#layout">layout</a>.
     </dd>
   </dlentry>
 
@@ -1171,6 +1171,6 @@ You may not see each of these parameters in your own TML files, depending on whe
 </dl>
 
 ## Limitations of working with TML files
-There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.
+There are certain limitations to the changes you can apply by editing a worksheet, answer, table, view, or Liveboard through TML.
 
 {% include content/scriptability-limitations.md %}

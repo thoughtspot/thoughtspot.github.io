@@ -1,15 +1,13 @@
 ---
 title: [How rule-based RLS works]
-
-
-last_updated: tbd
+last_updated: 11/04/2021
 summary: "Use rule-based RLS to restrict a group's access to data. Users see only accessible row data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Row level security works at the group level and is configured on tables. A
 table's RLS rules also apply to any objects with data from that table. So,
-searches, answers, worksheets, and pinboards that rely on a table's data fall
+searches, answers, worksheets, and Liveboards that rely on a table's data fall
 under RLS rules.
 
 

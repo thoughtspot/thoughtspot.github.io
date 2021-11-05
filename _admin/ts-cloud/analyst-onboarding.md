@@ -1,6 +1,6 @@
 ---
 title: [Analyst onboarding]
-last_updated: 06/01/2020
+last_updated: 11/04/2021
 summary: "As an analyst, you create and manage worksheets for everyone in your organization. Let us guide you through the necessary steps."
 toc: false
 sidebar: mydoc_sidebar
@@ -31,7 +31,7 @@ As you complete these tasks, the progress bar at the bottom of your screen helps
 
 ![Analyst onboarding progress bar]({{ site.baseurl }}/images/analyst-onboarding-progress-bar.png "Analyst onboarding progress bar")
 
-To repeat user onboarding or to change how you interact with ThoughtSpot, follow these steps: 
+To repeat user onboarding or to change how you interact with ThoughtSpot, follow these steps:
 
 1. Select **Profile** from the user icon at the top right of the page.
 
@@ -50,8 +50,8 @@ To repeat user onboarding or to change how you interact with ThoughtSpot, follow
 4. [Visualize and save Search results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html): Learn how to search your data to get instant Answers as interactive tables and charts.<br>
    ![]({{ site.baseurl }}/images/visualize-data-answers.png "Visualize data Search as Answers")
 
-5. [Publish collections of Answers as Pinboards]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html): Collate all the Answers that support your use case in a single interactive and sharable Pinboard.<br>
-    ![]({{ site.baseurl }}/images/publish-in-pinboards.png "Publish Answers as Pinboards")
+5. [Publish collections of Answers as Liveboards]({{ site.baseurl }}/admin/ts-cloud/pinboard-compose.html): Collate all the Answers that support your use case in a single interactive and sharable Liveboard.<br>
+    ![]({{ site.baseurl }}/images/publish-in-pinboards.png "Publish Answers as Liveboards")
 -->
 <!--
 ## Onboarding video
@@ -60,5 +60,5 @@ To repeat user onboarding or to change how you interact with ThoughtSpot, follow
 
 ## Related information
 
-- [Download a pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html)
-- [Present a pinboard]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html)
+- [Download a Liveboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html)
+- [Present a Liveboard]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html)

@@ -1,13 +1,13 @@
 ---
 title: [Results that are tables]
-last_updated: 4/9/2021
+last_updated: 11/4/2021
 toc: true
 summary: "Tables display your answer in a format similar to an Excel spreadsheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Certain elements of table configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, conditional formatting for measures in pivot tables, content density, and theme (outline, row, or zebra). If the new Answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
+{% include note.html content="Certain elements of table configuration are part of the new answer experience. The new answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include conditional and number formatting for table summaries, improved conditional formatting for attributes and measures in table cells, conditional formatting for measures in pivot tables, content density, and theme (outline, row, or zebra). If the new answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
 
 In the table view, your search identifies attributes and/or columns, and presents them as a table. ThoughtSpot aggregates the results based on the level of aggregation that you specify in the search. For example, if you only type `revenue`, you see the total sum of revenue as a single number. If you include the keyword `monthly`, the results are broken down by month. From the column header, you can rename the column, or sort or filter the column. You can rearrange the column order of your table by dragging and dropping the columns, either from the table itself or from the **Edit table: Configure** menu. You can also change the column widths.
 
@@ -26,9 +26,7 @@ You can also rearrange the column order from the **Edit table: Configure** menu.
 
 ## Resize column widths
 
-You can resize the column widths of your table after adding all of your search
-terms. Any adjustments you make to the column widths of your table are saved
-when you pin the table to a pinboard. To resize the column widths:
+You can resize the column widths of your table after adding all of your search terms. Any adjustments you make to the column widths of your table are saved when you pin the table to a Liveboard. To resize the column widths:
 
 1. While viewing your answer as a table, hover over a column border in the column header row.
 2. Click and drag the border to create your preferred column width.
@@ -95,12 +93,11 @@ You can perform conditional formatting on both measures and attributes, within t
 
 Refer to [Apply conditional formatting]({{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table).
 
-Note that certain elements of conditional formatting are part of the new Answer experience <span class="badge badge-update">Beta</span> (off by default). These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. The new Answer experience is in <span class="badge badge-update">Beta</span> and off by default. You can toggle it on or off from the **Experience manager** in your profile. If that option is not available, contact your administrator.
+Note that certain elements of conditional formatting are part of the new answer experience <span class="badge badge-update">Beta</span> (off by default). These elements include conditional formatting for table summaries and improved conditional formatting for attributes and measures in table cells. The new answer experience is in <span class="badge badge-update">Beta</span> and off by default. You can toggle it on or off from the **Experience manager** in your profile. If that option is not available, contact your administrator.
 
 ## Sort columns
 
-You can sort a table by column values by clicking on the column title. If you
-hold down the SHIFT key, you can sort on multiple column titles at a time. This is especially useful for date columns. For example, if you search for `sales` by `week` and by `quarter`, and just sort the `quarterly` column, the weeks are not in order:
+You can sort a table by column values by clicking on the column title. If you hold down the SHIFT key, you can sort on multiple column titles at a time. This is especially useful for date columns. For example, if you search for `sales` by `week` and by `quarter`, and just sort the `quarterly` column, the weeks are not in order:
 
 ![Sort - quarterly]({{ site.baseurl }}/images/sort-one-column.png "Sort - quarterly")
 
@@ -110,9 +107,7 @@ If you press SHIFT and then click on the `weekly` column header, the weeks are i
 
 You can achieve this from the search bar, as well, by adding `sort by date quarterly` and `sort by date weekly`.
 
-{% include tip.html content="This same functionality is available on tables you
-see elsewhere in ThoughtSpot. For example, a table in the **Data** page is also
-sortable in this manner."%}
+{% include tip.html content="This same functionality is available on tables you see elsewhere in ThoughtSpot. For example, a table in the **Data** page is also sortable in this manner."%}
 
 ## Table footer
 Tables automatically have footers that tell you the number of rows the table has. You can enable or disable this footer from the **Settings** menu.
@@ -137,7 +132,7 @@ Content density is part of the new Answer experience <span class="badge badge-up
     ![Table content density]({{ site.baseurl }}/images/table-content-density.png "Table content density")
 
 ## Table theme
-Tables themes are part of the new Answer experience <span class="badge badge-update">Beta</span> (off by default). You can change the table theme from the default (outline) to **row** or **zebra**. You can change the table theme from the **Settings** menu. **Row** removes the lines between columns, and **zebra** changes the color of every other row.
+Tables themes are part of the new answer experience <span class="badge badge-update">Beta</span> (off by default). You can change the table theme from the default (outline) to **row** or **zebra**. You can change the table theme from the **Settings** menu. **Row** removes the lines between columns, and **zebra** changes the color of every other row.
 
 1. Click the **edit table configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your table. The **Edit table** panel appears, on the **Configure** menu.
 
@@ -164,11 +159,10 @@ For columns with numeric information, you can turn on **column summaries** that 
     ![Enable or disable individual column summaries]({{ site.baseurl }}/images/table-config-summary-individual.png "Enable or disable individual column summaries")
 
 ### Pin column summaries
-You can pin column summaries to any Pinboard. Select the pin icon that appears when you hover over a summary.
+You can pin column summaries to any Liveboard. Select the pin icon that appears when you hover over a summary.
 
 ### Column summary aggregation
-You can modify how you would like a column summary value to be displayed by clicking the dropdown on a summary and selecting a different type of aggregation. This **aggregation** menu is also available from the **Summary** section in a column's **Edit** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} panel. For measures, the available aggregations are `total`, `average`, `standard deviation`, `variance`, `min`, and
-`max`. For attributes, the available aggregations are `unique count` and `total count`.
+You can modify how you would like a column summary value to be displayed by clicking the dropdown on a summary and selecting a different type of aggregation. This **aggregation** menu is also available from the **Summary** section in a column's **Edit** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} panel. For measures, the available aggregations are `total`, `average`, `standard deviation`, `variance`, `min`, and `max`. For attributes, the available aggregations are `unique count` and `total count`.
 
 ### Table aggregate summary
 

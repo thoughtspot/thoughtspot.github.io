@@ -1,6 +1,6 @@
 ---
 title: [Finding your way around]
-last_updated: 11/16/2020
+last_updated: 11/04/2021
 toc: false  
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
@@ -29,11 +29,11 @@ To learn more about this section, visit [About search]({{ site.baseurl }}/end-us
 Answers are the result of a single search. You can save an answer you want to work more on later, or just keep it for your personal use. Answers are for you alone, until you share them with others.
 
 {: id="pinboards"}
-## Pinboards
+## Liveboards
 
-Pinboards are collections of related search results. You can create your own pinboard or add to an existing one. After saving a pinboard, it can be shared with others or viewed as a slideshow. The **Pinboards** page shows a list of saved pinboards. Click one to view, edit, or share it.
+Liveboards are collections of related search results. You can create your own Liveboard or add to an existing one. After saving a Liveboard, it can be shared with others or viewed as a slideshow. The **Liveboards** page shows a list of saved Liveboards. Click one to view, edit, or share it.
 
-To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
+To learn more about Liveboards, visit [About Liveboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
 
 {: id="data"}
 ## Data

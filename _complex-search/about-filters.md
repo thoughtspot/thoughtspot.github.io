@@ -1,6 +1,6 @@
 ---
 title: [Understand filters]
-last_updated: 1/26/2021
+last_updated: 11/04/2021
 summary: "Filters narrow down your search result to only include the data you want to see."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,10 +21,9 @@ To add a filter from the search bar:
 
 2. Click outside of the search bar or push enter to apply your filter.
 
-Simple filters can be applied to an answer, while pinboard filters can be
-applied to all visualizations of a pinboard. You can find out more about
-[pinboard filters in the pinboards section]({{ site.baseurl
-}}/complex-search/pinboard-filters.html#).
+Simple filters can be applied to an answer, while Liveboard filters can be
+applied to all visualizations of a Liveboard. You can find out more about
+[Liveboard filters in the Liveboards section]({{ site.baseurl }}/complex-search/pinboard-filters.html#).
 
 
 ## Where filters appear in ThoughtSpot
@@ -33,12 +32,11 @@ As you have seen with search, filters appear in grey boxes in the search bar.
 
  ![Search bar with filters]({{ site.baseurl }}/images/search-bar-basics.png "Search bar with filters")
 
-In an answer or a pinboard, filters appear just under the title. For pinboards,
-your filters apply to all worksheet-based visualizations in the pinboard.
+In an answer or a Liveboard, filters appear just under the title. For Liveboards, your filters apply to all worksheet-based visualizations in the Liveboard.
 
  ![Filters appear under the title]({{ site.baseurl }}/images/filter-list-location.png "Filters appear under the title")
 
-If you ever find that your search or pinboard does not appear to contain all the
+If you ever find that your search or Liveboard does not appear to contain all the
 data you want to see, check for any existing filters and remove them by clicking
 the **X** that appears when you hover over the filter in the search bar.
 

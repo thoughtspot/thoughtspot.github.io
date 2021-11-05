@@ -1,6 +1,6 @@
 ---
 title: [Share uploaded data]
-last_updated: 2/12/2020
+last_updated: 11/04/2021
 summary: When you upload data to ThoughtSpot, you can share it with others.
 toc: false
 sidebar: mydoc_sidebar
@@ -18,10 +18,7 @@ Data that you upload from a Web browser is only visible to you and to the
 administrator. You can share the entire uploaded table, or only some of its
 columns.
 
-By default, if you share only some table columns, users with access to those
-columns cannot see the other columns' data in their searches. However, the data
-can become visible if a worksheet or pinboard that _also contains_ those columns
-is shared with these users.
+By default, if you share only some table columns, users with access to those columns cannot see the other columns' data in their searches. However, the data can become visible if a worksheet or Liveboard that _also contains_ those columns is shared with these users.
 
 If you want to prevent other users from revealing your excluded columns,
 you can ask your administrator to enable a stricter behavior.

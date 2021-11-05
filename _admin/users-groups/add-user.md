@@ -1,6 +1,6 @@
 ---
 title: ["Create, edit, or delete a user"]
-last_updated: 5/14/2020
+last_updated: 11/04/2021
 summary: "For each unique person who accesses ThoughtSpot, you must create a user account. When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -133,7 +133,7 @@ To edit an existing user, follow these steps:
 {: id="edit-user-preview-onboarding"}
 ### Preview onboarding
 
-You can click **Preview onboarding** to evaluate this user's first experience with ThoughtSpot. After previewing the user's default data source and Pinboards, you may choose to change the **[Group](*change-groups)** assignments.
+You can click **Preview onboarding** to evaluate this user's first experience with ThoughtSpot. After previewing the user's default data source and Liveboards, you may choose to change the **[Group](*change-groups)** assignments.
 
 ![Preview onboarding experience]({{ site.baseurl }}/images/edit-user-preview-onboarding.png "Preview onboarding experience")
 

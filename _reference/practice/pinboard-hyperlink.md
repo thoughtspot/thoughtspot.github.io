@@ -1,19 +1,19 @@
 ---
 title: [Add a hyperlink to a search]
-last_updated: 10/29/2021
+last_updated: 11/04/2021
 summary: “Learn how to add a hyperlink to a search.”
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can add a hyperlink directly within a search. Using the concat formula, you can create an external hyperlink, or link your answer to another Pinboard.
+You can add a hyperlink directly within a search. Using the concat formula, you can create an external hyperlink, or link your answer to another Liveboard.
 
 ## How to add a basic hyperlink
 
 To add an external hyperlink in a search, follow these steps:
 
 1. Start a new search.<br/>
-Alternatively, choose to edit an existing answer from a Pinboard.
+  Alternatively, choose to edit an existing answer from a Liveboard.
 
 2. If the answer shows a chart, switch to **Table View**.<br/>
 
@@ -40,16 +40,16 @@ Alternatively, choose to edit an existing answer from a Pinboard.
     ```
 6. Click **Save**.
 
-## How to link to another Pinboard
+## How to link to another Liveboard
 
-To add a hyperlink to another Pinboard, follow these steps:
+To add a hyperlink to another Liveboard, follow these steps:
 
 1. Start a new search.<br/>
-Alternatively, choose to edit an existing answer from a Pinboard.
+  Alternatively, choose to edit an existing answer from a Liveboard.
 
-2. Choose the target Pinboard for the link.
+2. Choose the target Liveboard for the link.
 
-3. Open your target Pinboard and copy the web address.
+3. Open your target Liveboard and copy the web address.
 
 4. Within your Search, switch to **Table View**.
 
@@ -63,7 +63,7 @@ Alternatively, choose to edit an existing answer from a Pinboard.
     ```
     concat(“{caption}pinboard{/caption}http://<thoughtspot_server>:<port>/?<runtime filter>,column name)
     ```
-    For example, the formula to link between a search on fruit sales and a Pinboard based on the same data with url <code>https://<thoughtspot-instance>.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add</code> would be:
+    For example, the formula to link between a search on fruit sales and a Liveboard based on the same data with url <code>https://<thoughtspot-instance>.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add</code> would be:
     <code>concat("{caption}pinboard{/caption}https://<thoughtspot-instance>.com/#/pinboard/e510f946-f9ce-48ad-a4af-1a40a9cf8add/?col1=fruit&op1=eq&val1=",fruit)</code> <br/>
 
     Here, the runtime filter is operating on the column “fruit,” and will only return values that are equal (EQ) to the fruits listed in the columns. To learn more about runtime filters, see [About Runtime Filters]({{site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html).

@@ -1,6 +1,6 @@
 ---
 title: [Get started]
-last_updated: 5/22/2020
+last_updated: 11/04/2021
 toc: false
 summary: "Learn how to get started as a business user in ThoughtSpot."
 sidebar: mydoc_sidebar
@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 ThoughtSpot's [business user onboarding]({{ site.baseurl }}/admin/ts-cloud/business-user-onboarding.html) helps you make smarter decisions in four easy steps.
 
-Confirm your organization's recommended data source, select the Pinboard that's best for you, then view your insights to inform and support your next business decision.
+Confirm your organization's recommended data source, select the Liveboard that's best for you, then view your insights to inform and support your next business decision.
 
 Watch this video on how to get started:
 

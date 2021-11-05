@@ -1,6 +1,6 @@
 ---
 title: ["Understand data sources"]
-last_updated: tbd
+last_updated: 11/04/2021
 summary: "Use the Data tab to manage data sources."
 toc: false
 sidebar: mydoc_sidebar
@@ -16,14 +16,9 @@ The **Data** tab lists all of the tables and data sources available to you. Ther
 
 ![]({{ site.baseurl }}/images/types_of_data_sources_table.png "Types of Data Sources")
 
-Clicking on the name of a table or data source shows you detailed information
-about it. You won't be able to change these settings or edit the table unless it
-was shared with you with the **Edit** privilege. To see how to edit a data
-source, refer to the _ThoughtSpot Administrator Guide_.
+Clicking on the name of a table or data source shows you detailed information about it. You won't be able to change these settings or edit the table unless it was shared with you with the **Edit** privilege. To see how to edit a data source, refer to the _ThoughtSpot Administrator Guide_.
 
-Use the filters at the top of the page to find the data you are interested in.
-From the **Data** tab, you can also delete or apply tags to tables and data
-sources in bulk by selecting them and clicking the appropriate action button.
+Use the filters at the top of the page to find the data you are interested in. From the **Data** tab, you can also delete or apply tags to tables and data sources in bulk by selecting them and clicking the appropriate action button.
 
 ![]({{ site.baseurl }}/images/manage_data_page.png "Data page")
 
@@ -33,7 +28,5 @@ sources in bulk by selecting them and clicking the appropriate action button.
 -   [View your data profile]({{ site.baseurl }}/admin/loading/view-your-data-profile.html)  
 Basic column data profile information is available under Profile on the Data page.
 -   [About sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html)  
-Whenever you are working in ThoughtSpot, you are in your own private environment
-until you share your work with others. This applies to searches, pinboards, and
-any data you upload.
+Whenever you are working in ThoughtSpot, you are in your own private environment until you share your work with others. This applies to searches, Liveboards, and any data you upload.
 - [Overview of data modeling settings]({{ site.baseurl }}/admin/data-modeling/data-modeling-settings.html)

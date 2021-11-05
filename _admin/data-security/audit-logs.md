@@ -1,7 +1,7 @@
 ---
 title: [Collect security logs]
 summary: "Collect security audit logs to monitor user activity in ThoughtSpot and increase your system security."
-last_updated: 10/11/2021
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -47,8 +47,7 @@ The possible events are:
 - [update-rls-rule](#update-rls-rule)
 - [user-account-creation](#users-created)
 - [user-account-deletion](#users-deleted)
-<!--
-- [user-group-change](#user-group-change)-->
+<!-- - [user-group-change](#user-group-change)-->
 - [user-invitation](#user-invited)
 
 ### Event descriptions
@@ -174,8 +173,8 @@ ThoughtSpot defines these events as follows:
  <dlentry id="user-group-change">
   <dt>User group change</dt>
   <dd>A successful or unsuccessful attempt to change the user list to a group by adding or removing members.</dd>
+  </dlentry>
 -->
- </dlentry>
  <dlentry id="user-invited">
   <dt>User invitation</dt>
   <dd>A user is invited to ThoughtSpot for a free trial.</dd>

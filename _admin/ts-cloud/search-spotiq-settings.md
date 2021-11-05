@@ -1,6 +1,6 @@
 ---
 title: [Managing search and SpotIQ settings]
-last_updated: 8/4/2021
+last_updated: 11/04/2021
 summary: "Manage indexing and SpotIQ settings for your organization from the Admin Console."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -31,7 +31,7 @@ To manage search settings, follow these steps:
 
 4. **Table summaries in adhoc search**: Click on the toggle to enable or disable the display of summaries in adhoc search. This setting only affects the display of summaries for users on the [new answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience), not the classic experience.
 
-    {% include note.html content="This setting does not affect the display of summaries in saved objects, such as saved answers, pinned tables, or headline tiles in pinboards." %}
+    {% include note.html content="This setting does not affect the display of summaries in saved objects, such as saved answers, pinned tables, or headline tiles in Liveboards." %}
 
 3. Select **Save changes**. Alternatively, you can **Reset to default**. By default, ThoughtSpot indexes new columns at a frequency of 24 hours, and enables summaries.
 

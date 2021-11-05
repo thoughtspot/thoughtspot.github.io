@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Cloud requirements and support]
-last_updated: 10/7/2021
+last_updated: 11/04/2021
 summary: "Information about features, and how to sign up."
 toc: true
 sidebar: mydoc_sidebar
@@ -36,7 +36,7 @@ ThoughtSpot Cloud supports the following connections:
 ThoughtSpot Cloud does not support the following:
 - Loading data using tsload
 - Custom calendar
-- Data cannot be migrated to another ThoughtSpot cluster, but you can migrate Pinboards, Answers, Views, tables, and Worksheets.  
+- Data cannot be migrated to another ThoughtSpot cluster, but you can migrate Liveboards, answers, views, tables, and worksheets.  
 
     For migration details, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 

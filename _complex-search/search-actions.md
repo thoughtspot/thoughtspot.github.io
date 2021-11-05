@@ -1,11 +1,11 @@
 ---
 title: [Other search actions]
 summary: Learn about advanced search options.
-last_updated: 11/15/2019
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-There are other search actions you can perform by interacting directly with your answer. These actions can be performed in an ad hoc way, or you can pin your answer to a pinboard to save your configurations.
+There are other search actions you can perform by interacting directly with your answer. These actions can be performed in an ad hoc way, or you can pin your answer to a Liveboard to save your configurations.
 
 -   **[Change view options]({{ site.baseurl }}/complex-search/change-the-view.html)**  
 You can change the view of your answer so it appears as a table or a chart. Sorting your search allows you to order your answer, making it easier to read.

@@ -1,7 +1,7 @@
 ---
 title: [Overview of data modeling settings]
 summary: Learn about data modeling settings.
-last_updated: 11/15/2019
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -46,7 +46,7 @@ If you have settings that only apply in the context of a particular worksheet, m
 
 Note that if you make your settings at the table level, and then create a worksheet that uses columns from the table, the settings are inherited from the table at the point in time that the worksheet is created. If you then go back and change the settings at the table level, your changes will not be reflected in the worksheet.
 
-If you want the worksheet to have the changes you made at the table level, you must drop those columns from the worksheet and re-add them. Then save the worksheet. At this point, the new settings will be used in the worksheet. Note that any saved answers or pinboards based on the worksheet may display differently because of your changes. For example, if you've changed the geo map setting from "None" to "Country", you will now see a map where before you might have seen a table.
+If you want the worksheet to have the changes you made at the table level, you must drop those columns from the worksheet and re-add them. Then save the worksheet. At this point, the new settings will be used in the worksheet. Note that any saved answers or Liveboards based on the worksheet may display differently because of your changes. For example, if you've changed the geo map setting from "None" to "Country", you will now see a map where before you might have seen a table.
 
 ## Related information  
 

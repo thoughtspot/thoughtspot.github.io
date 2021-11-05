@@ -1,15 +1,13 @@
 ---
 title: [Data modeling]
-last_updated: 07/21/2021
+last_updated: 11/04/2021
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Data modeling allows you to define metadata and other aspects of your data.  For
 example, you can give data columns search friendly names or predefine how they
-can be explored and aggregated. Metadata include such information as **Column
-Names**, **Column Visibility**, **Column** and **Data Definition**, **Column
-Rank** and so forth.
+can be explored and aggregated. Metadata include such information as **Column Names**, **Column Visibility**, **Column** and **Data Definition**, **Column Rank** and so forth.
 
 When you load data, most of this data modeling metadata is set up for you automatically. However, since you know your data best, you can adjust the modeling settings to improve the experience for your users. After
 loading data, you can start searching your data without doing any data modeling,
@@ -46,5 +44,5 @@ Explains the possible data model settings and their accepted values. These are t
 - **[Link tables using relationships]({{ site.baseurl }}/admin/data-modeling/about-relationships.html)**  
 Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
 - **[About tags]({{ site.baseurl }}/admin/data-modeling/tags.html)**  
- You can create tags to make it easier for people to find data sources and pinboards.
+ You can create tags to make it easier for people to find data sources and Liveboards.
 - **[Manage experts or add an expert to your data]({{ site.baseurl }}/admin/data-modeling/add-expert.html)**

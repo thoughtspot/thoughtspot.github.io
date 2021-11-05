@@ -1,7 +1,7 @@
 ---
 title: [Deploy mobile app]
 summary: You can deploy the ThoughtSpot mobile app through the iOS app store, or your MDM or MAM platform.
-last_updated: 11/15/2019
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -53,7 +53,7 @@ The ThoughtSpot mobile app conforms to the industry standard AppConfig community
   |Key |Format     |Description                   |
   |-----------------|------------|-----------------------------------|
   |ServerUrls   |https://thoughtspot.example.com, <br>https://thoughtspot.finance-example.com| Displays a list of servers for users to choose from <br>during sign-in. Separate the servers with commas.|
-  |HomePinboardHelpText |Please drop an email to admin@example.com <br>if you are facing difficulties in setting up your <br>home pinboard.| The home pinboard setup help text can be <br>customized using this key.|
+  |HomePinboardHelpText |Please drop an email to admin@example.com <br>if you are facing difficulties in setting up your <br>home Liveboard.| The home Liveboard setup help text can be <br>customized using this key.|
 
 ## Try the mobile app
 

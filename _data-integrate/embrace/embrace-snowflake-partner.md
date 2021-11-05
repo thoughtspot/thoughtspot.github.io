@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot in Snowflake Partner Connect]
-last_updated: 2/19/2020
+last_updated: 11/04/2021
 toc: true
 summary: "With Snowflake Partner Connect you get a free trial of ThoughtSpot that allows you to try out ThoughtSpot Connections to connect to Snowflake."
 sidebar: mydoc_sidebar
@@ -58,7 +58,7 @@ To sign up for the free trial, do the following:
 
 2. Click **Next**, to be guided, step-by-step, through the process of connecting ThoughtSpot to Snowflake, selecting and searching a data source, changing a chart configuration, and more.
 
-3. After you finish the tutorials, you are ready to try out your own searches, chart configurations, Pinboard filters, and more.
+3. After you finish the tutorials, you are ready to try out your own searches, chart configurations, Liveboard filters, and more.
 
 ## Related information
 

@@ -1,6 +1,6 @@
 ---
 title: [Getting Started with ThoughtSpot Cloud]
-last_updated: 6/20/2021
+last_updated: 11/04/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -75,24 +75,24 @@ After you finish creating worksheets, you are ready to search. Review the key co
 - [Understanding Charts]({{site.baseurl}}/end-user/search/about-charts.html){:target="_blank"}
 - [Understanding formulas in searches]({{site.baseurl}}/complex-search/add-formula-to-search.html){:target="_blank"}
 
-## Step 8: Make a default pinboard
+## Step 8: Make a default Liveboard
 
-Pinboards are interactive collections of charts and tables. Set up a shared pinboard now, so everyone who joins your organization can access valuable information.
+Liveboards are interactive collections of charts and tables. Set up a shared Liveboard now, so everyone who joins your organization can access valuable information.
 
-- [Basic pinboard usage]({{site.baseurl}}/end-user/pinboards/about-pinboards.html){:target="_blank"}
+- [Basic Liveboard usage]({{site.baseurl}}/end-user/pinboards/about-pinboards.html){:target="_blank"}
 
 ## Step 9: Onboard your colleagues
 
-Any time you create a new user, immediately add them to a user group. Configure that user group to use a specific data source, choose initial pinboards, and specify the text of the person’s welcome email. We recommend that you also prepare a support strategy for data-specific questions.
+Any time you create a new user, immediately add them to a user group. Configure that user group to use a specific data source, choose initial Liveboards, and specify the text of the person’s welcome email. We recommend that you also prepare a support strategy for data-specific questions.
 
 - [Onboarding users]({{site.baseurl}}/end-user/onboarding/intro-onboarding.html){:target="_blank"}
 
 ## Step 10: Track your organization’s usage
 
-ThoughtSpot administrators have built-in pinboards to monitor adoption and usage.
+ThoughtSpot administrators have built-in Liveboards to monitor adoption and usage.
 
-- [Performance tracking pinboard]({{site.baseurl}}/admin/ts-cloud/performance-tracking.html){:target="_blank"}
-- [User adoption pinboard]({{site.baseurl}}/admin/ts-cloud/user-adoption.html){:target="_blank"}
+- [Performance tracking Liveboard]({{site.baseurl}}/admin/ts-cloud/performance-tracking.html){:target="_blank"}
+- [User adoption Liveboard]({{site.baseurl}}/admin/ts-cloud/user-adoption.html){:target="_blank"}
 
 ## Keep learning
 

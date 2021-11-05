@@ -1,7 +1,7 @@
 ---
 title: [Runtime Filter Operators]
-summary: "Runtime filters have several operators you can use to filter your embedded pinboards and visualizations."
-last_updated: 11/18/2019
+summary: "Runtime filters have several operators you can use to filter your embedded Liveboards and visualizations."
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
