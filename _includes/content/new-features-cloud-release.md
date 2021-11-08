@@ -39,6 +39,17 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="november-cloud-2021-business-user"></a>For the Business User</h3>
 
+<dl>
+
+<dlentry id="search-suggestions">
+<dt>Search suggestions</dt>
+<dd><p>Search suggestions are now GA. When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and Liveboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> in the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing Liveboard called <strong>Sales in the east last year</strong>.</p>
+<p>ThoughtSpot provides search suggestions before you begin typing, but not object suggestions.</p>
+</dd>
+</dlentry>
+
+</dl>
+
 <h3><a id="november-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
 
 <h3><a id="november-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
