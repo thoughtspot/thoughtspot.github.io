@@ -11,7 +11,7 @@ permalink: /:collection/:path.html
 
 ### Free Trial Make It Shine
 
-These are the changes we made to Free Trial this week: 
+These are the changes we made to Free Trial this week:
 
 - To avoid SQL syntax errors, duplicate column names in a worksheet will now use the syntax table_name-column_name instead of table_name::column_name.
 - We removed the Snowflake OAuth option for creating a connection for Free Trial to prevent user confusion.
@@ -91,7 +91,7 @@ These are the changes we made to Free Trial this week:
 
 - Joins created during Auto Worksheet setup now default to many-to-one join type, rather than one-to-one. For more information, see [Join cardinality]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
 - When logging in for the first time as an Analyst, ThoughtSpot prompts you to first set up a connection, rather than searching on sample data.
-- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.
+- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.<br/>
 ![]({{ site.baseurl }}/images/free-trial-embrace-table-columns.png "Free Trial Embrace tables and columns"){: .inline}
 
 
