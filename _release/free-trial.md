@@ -1,13 +1,21 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 11/04/2021
+last_updated: 11/08/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
 
-{% include content/liveboards-announcement.md %}
+## November 8, 2021
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial this week:
+
+- To avoid SQL syntax errors, duplicate column names in a worksheet will now use the syntax table_name-column_name instead of table_name::column_name.
+- We removed the Snowflake OAuth option for creating a connection for Free Trial to prevent user confusion.
+
 
 ## October 21, 2021
 
@@ -83,7 +91,7 @@ These are the changes we made to Free Trial this week:
 
 - Joins created during Auto Worksheet setup now default to many-to-one join type, rather than one-to-one. For more information, see [Join cardinality]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
 - When logging in for the first time as an Analyst, ThoughtSpot prompts you to first set up a connection, rather than searching on sample data.
-- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.
+- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.<br/>
 ![]({{ site.baseurl }}/images/free-trial-embrace-table-columns.png "Free Trial Embrace tables and columns"){: .inline}
 
 
@@ -153,7 +161,7 @@ These are the changes we made to Free Trial:
 {: id="invite-others"}
 ### Free Trial invite others
 
-We streamlined the process to invite another user to Free Trial. Now, you can invite others directly from within Free Trial, and the invitee receives the Free Trial activation email in their inbox. Users you invite automatically join your group, and can access your shared data objects (worksheets, answers, Liveboards, etc.). You can invite a maximum of five new users to join your group.
+We streamlined the process to invite another user to Free Trial. Now, you can invite others directly from within Free Trial, and the invitee receives the Free Trial activation email in their inbox. Users you invite automatically join your group, and can access your shared data objects (worksheets, answers, pinboards, etc.). You can invite a maximum of five new users to join your group.
 
 To invite a teammate to Free Trial, simply navigate to the **Setup** tab, click **Invite others** at the bottom of the screen, and enter your teammate’s email.
 
