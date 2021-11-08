@@ -21,6 +21,21 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="november-cloud-2021-analyst"></a>For the Analyst</h3>
 
+<dl>
+
+<dlentry>
+<dt>SQL-based views</dt>
+<dd><p>This release introduces <span class="label label-beta">Beta</span> support for SQL-based views. Users can create views based on SQL queries, and use those views as data sources. This type of view has the same functionality as a view based on searching your data.</p>
+<p>This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+</dlentry>
+
+<dlentry id="data-tab">
+<dt>Data tab redesign</dt>
+<dd><p>This release redesigns the <strong>Data</strong> section of the product. To access this part of the product, select <strong>Data</strong> from the top navigation bar. The redesign introduces several new features, such as SQL-based views and SpotApps, and makes the UI more intuitive.</p>
+<p>This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+</dlentry>
+
+</dl>
 
 <h3><a id="november-cloud-2021-business-user"></a>For the Business User</h3>
 
