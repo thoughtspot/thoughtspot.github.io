@@ -1,11 +1,22 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 10/21/2021
+last_updated: 11/08/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## November 8, 2021
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial this week:
+
+- To avoid SQL syntax errors, duplicate column names in a worksheet will now use the syntax table_name-column_name instead of table_name::column_name.
+- We removed the Snowflake OAuth option for creating a connection for Free Trial to prevent user confusion.
+
+
 ## October 21, 2021
 
 ### ThoughtSpot Data Security
@@ -17,7 +28,7 @@ When you create a connection in ThoughtSpot, your data is only accessible to you
 To learn more about data security in ThoughtSpot, see [ThoughtSpot Cloud: Comprehensive Data Security for Analytics](https://media.thoughtspot.com/pdf/ThoughtSpot-Cloud-Comprehensive-Data-Security-for-Analytics.pdf).
 
 
-### Free Trial Make It Shine 
+### Free Trial Make It Shine
 
 These are the changes we made to Free Trial this week:
 
