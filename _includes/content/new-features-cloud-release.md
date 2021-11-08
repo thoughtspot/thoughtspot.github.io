@@ -23,6 +23,13 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
+<dlentry id="spotapps">
+<dt>ServiceNow SpotApp</dt>
+<dd><p>SpotApps are ThoughtSpot's new out-of-the-box solution templates built for specific use cases and data sources. They are built on Blocks, which are pre-built pieces of code that are easy to download and implement directly from the product. This release introduces the ServiceNow SpotApp and the Analytics Block, which includes pre-built worksheets, answers, and Liveboards.</p>
+<p>The ServiceNow SpotApp mimics the ServiceNow data model. After you connect to your ServiceNow data in your cloud data warehouse, ThoughtSpot maps that data to SpotApp columns, and creates pre-built but still customizable worksheets, answers, and Liveboards, based on your ServiceNow data.</p>
+<p>This feature is in <span class="label label-beta">Beta</span> and off by default. It is part of the <span class="label label-beta">Beta</span> <a href="#data-tab">Data tab redesign</a>. To enable SpotApps and the Data tab redesign, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+</dlentry>
+
 <dlentry>
 <dt>SQL-based views</dt>
 <dd><p>This release introduces <span class="label label-beta">Beta</span> support for SQL-based views. Users can create views based on SQL queries, and use those views as data sources. This type of view has the same functionality as a view based on searching your data.</p>
