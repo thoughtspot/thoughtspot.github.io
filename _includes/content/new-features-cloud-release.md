@@ -43,6 +43,15 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <h3><a id="november-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
+<dl>
+
+<dlentry id="saml">
+<dt>SAML assertion validity</dt>
+<dd>ThoughtSpot now supports 2 methods to increase the duration of validity for your <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html#saml-assertion">SAML assertion</a>: the <code>SessionNotOnOrAfter</code> attribute and the <code>maxAuthenticationAge</code> parameter. <code>SessionNotOnOrAfter</code> overrules <code>maxAuthenticationAge</code> if both are present. If your IDP does not support use of <code>SessionNotOnOrAfter</code>, remove that attribute from your IDP assertion and <a href="{{ site.baseurl }}/admin/misc/contact.html">ask ThoughtSpot Support</a> to enable <code>maxAuthenticationAge</code>.</dd>
+</dlentry>
+
+</dl>
+
 <h3><a id="november-cloud-2021-developer"></a>For the Developer</h3>
 
 <dl>

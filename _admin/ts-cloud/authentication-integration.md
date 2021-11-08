@@ -32,6 +32,7 @@ SAML is an XML standard that allows secure exchange of user authentication and a
 
     A user whose identity information is managed by the IdP. The federated users have SSO credentials and authenticate to IdP to access various application services.
 
+{: id="saml-assertion"}
 ### SAML assertion and attributes
 Both SP-initiated and IdP-initiated authentication workflows rely upon assertions that are exchanged between the SAML endpoints through a web browser.
 
@@ -40,6 +41,8 @@ Some of the most commonly used elements are:
 - **SAML assertion**
 
     The user authentication and authorization information issued by the IdP. SAML assertions contain all the information necessary for a service provider to confirm if the user identity is valid.
+
+    ThoughtSpot supports 2 methods to increase the duration of validity for your SAML assertion: the `SessionNotOnOrAfter` attribute and the `maxAuthenticationAge` parameter. `SessionNotOnOrAfter` overrules `maxAuthenticationAge` if both are present. If your IDP does not support use of `SessionNotOnOrAfter`, remove that attribute from your IDP assertion and [ask ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable `maxAuthenticationAge`.
 
 - **Metadata**
 
