@@ -17,7 +17,7 @@ You need specific information to establish a seamless and secure connection. The
       <dt>Connection description</dt>
       <dd>Provide a short description of the connection.<i> (Optional)</i></dd></dlentry>
   <dlentry id="snowflake-account-name">
-      <dt>Account name</dt>
+      <dt>Account name or your Snowflake URL</dt>
       <dd>Enter the account name associated with the Snowflake connection.</dd>
       <dd>The account name is part of the URL that you use to access the Snowflake UI. It is the portion of the URL before <strong>snowflakecomputing.com</strong>.</dd>
       <dd id="example"><strong><em>Example</em></strong>: If your URL is <strong>https://abcd.xyz.efg.snowflakecomputing.com</strong>, your account name is <strong>abcd.xyz.efg</strong>.</dd>
@@ -121,5 +121,17 @@ You need specific information to establish a seamless and secure connection. The
   <dlentry id="snowflake-oauth-client-secret">
       <dt>OAuth Client Secret</dt>
       <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
-  </dlentry>      
+  </dlentry>
+  <dlentry id="snowflake-azure-oauth-scope">
+      <dt>Scope</dt>
+      <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth.</dd> <dd>Scope maps to a role in your Snowflake database. It should be similar to `session:role:developer`.</dd>
+  </dlentry>
+  <dlentry id="snowflake-azure-oauth-auth-url">
+      <dt>Auth Url</dt>
+      <dd>(Azure AD OAuth) Enter the Auth URL associated with your Azure AD OAuth.</dd> <dd>ThoughtSpot performs an "Authorization Code" grant type flow to get the access token. Get the authorization endpoint for Azure AD OAuth app from Azure portal. It should be similar to <b>https://login.microsoftonline.com/&lt;tenant_id&gt;/oauth2/v2.0/authorize</b>.</dd>
+  </dlentry>
+  <dlentry id="snowflake-azure-oauth-token-url">
+      <dt>Access Token Url</dt>
+      <dd>(Azure AD OAuth) Enter the Access Token Url associated with your Azure AD OAuth.</dd> <dd>Token endpoint can be obtained from the Azure portal by navigating to the OAuth application in Azure Active Directory resource. It should be similar to <b>https://login.microsoftonline.com/&lt;tenant_id&gt;/oauth2/v2.0/token</b>.</dd>
+</dlentry>       
 </dl>
