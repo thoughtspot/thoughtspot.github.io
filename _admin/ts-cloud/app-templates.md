@@ -1,7 +1,7 @@
 ---
 title: [SpotApps]
 last_updated: 11/05/2021
-summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
+summary: "SpotApps, ThoughtSpot's scriptable applications, are out-of-the-box solution templates built for specific use cases and data sources."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -16,6 +16,31 @@ SpotApps use [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.htm
 The November release introduces the ServiceNow SpotApp and Analytics Blocks. Analytics Blocks include pre-built Worksheet, Answer, and Liveboard Blocks.
 
 The ServiceNow SpotApp mimics the ServiceNow data model. After you connect to your ServiceNow data in your cloud data warehouse, ThoughtSpot maps that data to SpotApp columns, and creates pre-built but still customizable worksheets, answers, and Liveboards, based on your ServiceNow data.
+
+{: id="prerequisites"}
+## Prerequisites to deploy the ServiceNow SpotApp
+To deploy any SpotApp, you must:
+
+1. Enable the new Data tab and SpotApps feature. To enable these features, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
+
+2. Obtain credentials to connect to your cloud data warehouse. Refer to the connection reference for your cloud data warehouse for information about required credentials:
+
+    - [Amazon Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html)
+    - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html)
+    - [Databricks]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html)
+    - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html)
+    - [Oracle Autonomous Data Warehouse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html)
+    - [SAP HANA]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html)
+    - [Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html)
+    - [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html)
+    - [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html)
+
+## Deploy the ServiceNow SpotApp
+After you complete the [prerequisites](#prerequisites) to connect to your cloud data warehouse, you are ready to deploy the ServiceNow SpotApp and begin leveraging its pre-built content.
+
+To deploy the SpotApp, follow these steps:
+
+1. Navigate to **Data > SpotApps**.
 
 {: id="export-spotapps"}
 ## Export SpotApps
