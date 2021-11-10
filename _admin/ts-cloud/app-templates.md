@@ -2,15 +2,20 @@
 title: [SpotApps]
 last_updated: 11/05/2021
 summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
-redirect_from:
-- /admin/scriptability/app-templates.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 {% include content/liveboards-announcement.md %}
 
-A SpotApp is a collection of Liveboards, answers, worksheets, views & tables packaged together as a zip file. SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
+The new Data tab and the SpotApps feature are both in <span class="label label-beta">Beta</span> in the November release. Starting in the November release, a **SpotApp** refers only to an out-of-the-box solution templates built for specific use cases and data sources, with pre-built worksheets, answers, and Liveboards, **not** to any collection of TML files. If the new Data tab and the SpotApps feature are not on in your environment, your user interface and experience may be different from the experience described in this article.
+
+SpotApps use [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
+
+## Available SpotApps and Blocks
+The November release introduces the ServiceNow SpotApp and Analytics Blocks. Analytics Blocks include pre-built Worksheet, Answer, and Liveboard Blocks.
+
+The ServiceNow SpotApp mimics the ServiceNow data model. After you connect to your ServiceNow data in your cloud data warehouse, ThoughtSpot maps that data to SpotApp columns, and creates pre-built but still customizable worksheets, answers, and Liveboards, based on your ServiceNow data.
 
 {: id="export-spotapps"}
 ## Export SpotApps

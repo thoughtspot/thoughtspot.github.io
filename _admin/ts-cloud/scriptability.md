@@ -48,7 +48,7 @@ Refer to the following tables for required permissions for importing and exporti
 
 {: id="export-object"}
 ## Export an object
-You can export one object at a time, export more than one object as a zip file, or export custom SpotApps. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
+You can export one object at a time or export more than one object as a zip file. The zip file contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To export custom collections of related TML files, refer to [Migrate multiple TML files]({{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html#export-multiple).
 
 <!--
 {: id="export-one"}
@@ -63,7 +63,7 @@ To export one object:
 
 {: id="export-zip-file"}
 ### How to export objects
-To export objects, follow these steps. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
+To export objects, follow these steps. To export custom collections of related TML files, refer to [Migrate multiple TML files]({{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html#export-multiple).
 
 1. Navigate to the **Answers**, **Liveboards**, or **Data** page from the top navigation bar, depending on the object(s) you want to export.
 
