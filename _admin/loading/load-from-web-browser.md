@@ -1,12 +1,12 @@
 ---
 title: [Load CSV files with the UI]
-
-
-last_updated: tbd
+last_updated: 11/10/2021
 summary: "The simplest way to load data is to upload a CSV or Excel file from the ThoughtSpot Web interface. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="This feature is exclusive to ThoughtSpot Free Trial. Use Connections to access your data in ThoughtSpot Cloud." %} 
 
 {% include content/web-load-intro.md %}
 
