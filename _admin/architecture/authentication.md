@@ -1,14 +1,12 @@
 ---
 title: [Authentication]
-last_updated: 4/22/2020
-summary: "ThoughtSpot provides SAML and ThoughtSpot login to authenticate users."
+last_updated: 11/10/21
+summary: "ThoughtSpot provides either SAML or local ThoughtSpot accounts to authenticate users."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot provides two ways to authenticate users: SAML and
-ThoughtSpot login. If possible, ThoughtSpot recommends that you use
-SAML, since ThoughtSpot provides only basic authentication, with no
-restrictions on passwords, timeouts, failed logins, etc.
+ThoughtSpot provides two ways to authenticate users: [SAML]({{ site.baseurl }}/admin/ts-cloud/authentication-integration.html) (Security Association Markup Language) and [ThoughtSpot local accounts]({{ site.baseurl }}/admin/ts-cloud/authentication-local.html). ThoughtSpot recommends that you use
+SAML for authentication, since it is industry-standard and enables Single-Sign On (SSO) with your Identity Provider (IdP).
 
 Use the following table to help you choose an authentication option.
 
@@ -29,7 +27,6 @@ Use the following table to help you choose an authentication option.
     <ul>
     <li>User created and managed in ThoughtSpot.</li>
     <li><a href="{{ site.baseurl }}/admin/users-groups/add-user.html#password">Password strength control</a></li>
-    <li>No other enterprise password control (expiration, failed logins, etc.).</li>
     <li>Only recommended when SAML is not an option.</li>
     </ul>
     </td>
@@ -42,7 +39,6 @@ first logs in. However, this user is assigned to the `All` group and can only
 see content available for all users.
 
 Groups are the primary way that security is managed. Groups are not
-automatically created. You can create [groups]({{ site.baseurl }}/admin/users-groups/add-group.html) and [users]({{ site.baseurl }}/admin/users-groups/add-user.html) manually, or you must
-automate the assignment from a source system. ThoughtSpot has public APIs that you
+automatically created. You can create [groups]({{ site.baseurl }}/admin/users-groups/add-group.html) and [users]({{ site.baseurl }}/admin/users-groups/add-user.html) manually, or you must automate the assignment from a source system. ThoughtSpot has public APIs that you
 can use to sync users and groups between source systems and your ThoughtSpot
 appliance.
