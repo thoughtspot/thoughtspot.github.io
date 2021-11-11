@@ -9,7 +9,7 @@ Any user who belongs to a group that has the privilege **Has administration priv
 in the upper right corner, and select **Upload Data**.
 
 4. In **Step 1: Upload your file**, complete these selections:
-    1. Upload the CSV or Excel file by these methods:<br/>
+    1. Upload the CSV or Excel file by these methods:
     <dl>
     <dlentry>
     <dt>Browse</dt>
@@ -34,7 +34,7 @@ in the upper right corner, and select **Upload Data**.
     <dd>( ), example: `Jacket "Winter 2021" yellow 600`</dd>
     <dt>Tab</dt>
     <dd>( ), example: `Jacket Winter 2021 yellow 600`</dd>
-    </dl><br/>
+    </dl>
 
       Click **Next**.
 
@@ -85,8 +85,6 @@ in the upper right corner, and select **Upload Data**.
 9. Click **Upload**.
 
     When an upload is complete, the system reports the results and offers you some further actions.
-
-     ![]({{ site.baseurl }}/images/spotiq-upload.png "Auto analyze")
 
     * Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet.
     * Click **Search** if you want to begin a new search.
