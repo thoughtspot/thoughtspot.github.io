@@ -1,19 +1,21 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 11/08/2021
+last_updated: 11/11/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
 
-## November 8, 2021
+## November 11, 2021
 
 ### Free Trial Make It Shine
 
-These are the changes we made to Free Trial this week:
+These are the changes we made to Free Trial this week: 
 
-- To avoid SQL syntax errors, duplicate column names in a worksheet will now use the syntax table_name-column_name instead of table_name::column_name.
+- When you create a connection in Setup, ThoughtSpot now automatically selects that connection for **Step 2: model data and create a worksheet**.
+- We fixed a bug that caused Intercom to relaunch when users click **Upgrade now**.
+- To avoid SQL syntax errors, duplicate column names in a worksheet now use the syntax table_name-column_name instead of table_name::column_name.
 - We removed the Snowflake OAuth option for creating a connection for Free Trial to prevent user confusion.
 
 
@@ -91,7 +93,7 @@ These are the changes we made to Free Trial this week:
 
 - Joins created during Auto Worksheet setup now default to many-to-one join type, rather than one-to-one. For more information, see [Join cardinality]({{ site.baseurl }}/admin/worksheets/add-joins.html#join-cardinality).
 - When logging in for the first time as an Analyst, ThoughtSpot prompts you to first set up a connection, rather than searching on sample data.
-- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.<br/>
+- When setting up an Embrace connection, the final step of set-up now asks users to choose both tables and columns for the connection.
 ![]({{ site.baseurl }}/images/free-trial-embrace-table-columns.png "Free Trial Embrace tables and columns"){: .inline}
 
 

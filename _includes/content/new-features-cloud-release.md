@@ -50,9 +50,23 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <p>This change <strong><em>only</em></strong> affects new clusters created on the November Cloud release and later. Clusters created on the October Cloud release and earlier have the old experience, even after they update to the November Cloud release. In the old experience, the <strong>idle session timeout</strong> is 60 minutes with <strong>Remember me</strong>, and 30 minutes without it. The old <strong>maximum session validity</strong> is 7 days with <strong>Remember me</strong>, and not available without it.</p>
 <p>To increase idle session timeouts or maximum session validity for clusters created on the October Cloud release and earlier, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
 
+<dlentry id="search-suggestions">
+<dt>Search suggestions</dt>
+<dd><p>Search suggestions are now GA. When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and Liveboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> in the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing Liveboard called <strong>Sales in the east last year</strong>.</p>
+<p>ThoughtSpot provides search suggestions before you begin typing, but not object suggestions.</p>
+</dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="november-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
+<dl>
+<dlentry id="connections-snowflake-azure-ad-oauth">
+<dt>Azure AD external OAuth for Snowflake</dt>
+<dd>Snowflake now supports external OAuth through Microsoft Azure AD. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html">Configure Azure AD external OAuth for a Snowflake connection</a>.</dd>
+</dlentry>
+
+</dl>
 
 <h3><a id="november-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 

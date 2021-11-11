@@ -30,7 +30,7 @@ Search Answers eliminates redundant construction of new answers and Liveboards b
 
 5. Specify if you want to search across answers and Liveboards created by all users (default), or just certain users (including yourself).
 
-6. Type your query into the search bar. Notice that the suggestions that appear show the name of the existing answer or Liveboard, and its author.
+6. Type your query into the search bar. ThoughtSpot offers search suggestions, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type `Sal` in the search bar, it might result in search suggestions like **Sales** and **Sales this year**, in addition to object suggestions like an existing Liveboard called **Sales in the east last year**. ThoughtSpot also offers search suggestions before you begin typing, but not object suggestions.
 
    Select **Go** or click Enter on your keyboard.
 
