@@ -1070,9 +1070,9 @@ entries:
       - title: Configure casing
         url: /admin/loading/about-case-configuration.html
         output: web,admBk
-#      - title: Load CSV files with the UI
-#        url: /admin/loading/load-from-web-browser.html
-#        output: web,admBk
+      - title: Load CSV files with the UI
+        url: /admin/loading/load-from-web-browser.html
+        output: web,admBk
       - title: How to view a data schema
         url: /admin/loading/schema-viewer.html
         output: web,admBk
