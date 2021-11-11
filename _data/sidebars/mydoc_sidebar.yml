@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts8.nov.cl
-  # version: tscloud.8
+  docversion: ts7.oct.cl
+  # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -71,7 +71,7 @@ entries:
       - title: Understanding privileges
         url: /end-user/introduction/about-privileges-end-user.html
         output: web,ugBk
-      - title: Granular access to Liveboards
+      - title: Granular access to pinboards
         url: /end-user/introduction/pinboard-granular-permission.html
         output: web,ugBk
   - sectiontitle: ThoughtSpot for ...
@@ -104,13 +104,13 @@ entries:
       - title: Confirm data source
         url: /admin/ts-cloud/business-user-datasource-confirm.html
         output: web
-      - title: Select a Liveboard
+      - title: Select a Pinboard
         url: /admin/ts-cloud/business-user-pinboard-select.html
         output: web
-      - title: Explore your Liveboard
+      - title: Explore your Pinboard
         url: /admin/ts-cloud/business-user-pinboard-view.html
         output: web
-      - title: More on Liveboards and answers
+      - title: More on Pinboards and Answers
         url: /admin/ts-cloud/pinboards.html
         output: web
       - title: Search Assist
@@ -143,19 +143,19 @@ entries:
       - title: Visualize Search Results
         url: /admin/ts-cloud/visualize-search.html
         output: web
-      - title: Compose Liveboards from answers
+      - title: Compose Pinboards from Answers
         url: /admin/ts-cloud/pinboard-compose.html
         output: web
-      - title: Linked Liveboard filters
+      - title: Linked Pinboard filters
         url: /complex-search/linked-filters.html
         output: web
-      - title: Selective Liveboards filters
+      - title: Selective Pinboards filters
         url: /complex-search/selective-filters.html
         output: web
       - title: Disable Answer Search for specific Worksheets
         url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
         output: web
-      - title: How Users are Searching Answers Liveboard
+      - title: How Users are Searching Answers Pinboard
         url: /admin/thoughtspot-one/query-intelligence-pinboard.html
         output: web
       - title: Scriptability
@@ -202,9 +202,6 @@ entries:
           output: web
         - title: Configure internal OAuth
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
-          output: web
-        - title: Configure Azure AD OAuth
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html
           output: web
         - title: Best practices
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
@@ -506,13 +503,13 @@ entries:
       - title: Custom domain configuration
         url: /admin/ts-cloud/custom-domains.html
         output: web
-      - title: Performance tracking Liveboard
+      - title: Performance tracking Pinboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
-      - title: User adoption Liveboard
+      - title: User adoption Pinboard
         url: /admin/ts-cloud/user-adoption.html
         output: web
-      - title: Object usage Liveboard
+      - title: Object usage Pinboard
         url: /admin/ts-cloud/object-usage.html
         output: web
       - title: ThoughtSpot use agreement
@@ -842,40 +839,40 @@ entries:
       - title: Formulas for chasm traps
         url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
         output: web,ugBk
-  - sectiontitle: Liveboards
+  - sectiontitle: Pinboards
     output: web,ugBk
     sectionitems:
-    - title: Basic Liveboards
+    - title: Basic Pinboards
       url: /end-user/pinboards/about-pinboards.html
       output: web,ugBk
-    - title: Follow a Liveboard
+    - title: Follow a pinboard
       url: /end-user/pinboards/follow-pinboard.html
       output: web,ugBk
-    - title: Edit a Liveboard
+    - title: Edit a pinboard
       url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
       output: web,ugBk
-    - title: Liveboard filters
+    - title: Pinboard filters
       url: /complex-search/pinboard-filters.html
       output: web,ugBk
     - title: Answer Explorer
       url: /end-user/pinboards/answer-explorer.html
       output: web,ugBk
-    - title: Schedule a Liveboard job
+    - title: Schedule a pinboard job
       url: /admin/manage-jobs/schedule-a-pinboard-job.html
       output: web,ugBk
-    - title: Search actions within a Liveboard
+    - title: Search actions within a pinboard
       url: /end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html
       output: web,ugBk
-    - title: Copy a Liveboard
+    - title: Copy a pinboard
       url: /end-user/pinboards/copy-a-pinboard.html
       output: web,ugBk
-    - title: Copy a Liveboard or visualization link
+    - title: Copy a pinboard or visualization link
       url: /end-user/pinboards/copy-link-for-a-pinboard.html
       output: web,ugBk
-    - title: Reset a Liveboard visualization
+    - title: Reset a pinboard visualization
       url: /end-user/pinboards/reset-a-visualization.html
       output: web,ugBk
-    - title: Present a Liveboard as a slideshow
+    - title: Present a pinboard as a slideshow
       url: /end-user/pinboards/start-a-slideshow.html
       output: web,ugBk
     - title: Download as PDF
@@ -950,7 +947,7 @@ entries:
     - title: About sharing
       url: /end-user/data-view/sharing-for-end-users.html
       output: web,ugBk
-    - title: Share a Liveboard
+    - title: Share a pinboard
       url: /end-user/pinboards/share-pinboards.html
       output: web,ugBk
     - title: Share answers
@@ -1073,9 +1070,9 @@ entries:
       - title: Configure casing
         url: /admin/loading/about-case-configuration.html
         output: web,admBk
-#      - title: Load CSV files with the UI
-#        url: /admin/loading/load-from-web-browser.html
-#        output: web,admBk
+      - title: Load CSV files with the UI
+        url: /admin/loading/load-from-web-browser.html
+        output: web,admBk
       - title: How to view a data schema
         url: /admin/loading/schema-viewer.html
         output: web,admBk
@@ -1193,7 +1190,7 @@ entries:
         - title: Share Views
           url: /admin/data-security/share-views.html
           output: web,admBk
-        - title: Share Liveboard
+        - title: Share Pinboard
           url: /admin/data-security/share-pinboards.html
           output: web,admBk
         - title: Share Answers
@@ -1403,10 +1400,10 @@ entries:
     - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
       levelTwoItems:
-      - title: Job management (scheduled Liveboards)
+      - title: Job management (scheduled pinboards)
         url: /admin/manage-jobs/about-scheduled-pinboards.html
         output: web,admBk
-      - title: Scheduled Liveboards management
+      - title: Scheduled pinboards management
         url: /admin/manage-jobs/scheduled-pinboards-management.html
         output: web,admBk
     - levelTwoTitle: Monitoring
@@ -1430,7 +1427,7 @@ entries:
       - title: System worksheets
         url: /admin/system-monitor/worksheets.html
         output: web,admBk
-      - title: System Liveboards
+      - title: System pinboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
     - levelTwoTitle: Troubleshooting
@@ -1529,7 +1526,7 @@ entries:
     - title: Reaggregation in practice
       url: /reference/practice/reaggregation-scenarios.html
       output: web,practGd
-    - title: Liveboard schedule gating conditions in practice
+    - title: Pinboard schedule gating conditions in practice
       url: /reference/practice/pinboard-gating-condition-example.html
       output: web,practGd
     - title: Add a hyperlink to a Search
