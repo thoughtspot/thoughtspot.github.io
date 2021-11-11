@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="This feature is exclusive to ThoughtSpot Free Trial. Use Connections to access your data in ThoughtSpot Cloud."}
+{% include note.html content="This feature is exclusive to ThoughtSpot Free Trial. Use Connections to access your data in ThoughtSpot Cloud." %} 
 
 {% include content/web-load-intro.md %}
 
