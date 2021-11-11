@@ -15,6 +15,6 @@ topnav_dropdowns:
     - title: Version
       sectionitems:
         - title: latest (ts8.nov.cl)
-          url: /ts8.nov.cl/index.html
+          url: /
         - title: ts7.oct.cl
           url: /ts7.oct.cl/index.html

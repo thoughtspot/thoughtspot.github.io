@@ -41,7 +41,7 @@
                 <!-- conditional logic to control which topnav appears for the audience defined in the topnav.yml file.-->
                 {% for entry in topnav_dropdowns %}
                 {% for section in entry.sections %}
-                <!-- <li id="version" class="dropdown">
+                <li id="version" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ section.title }}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         {% for sectionitem in section.sectionitems %}
@@ -54,7 +54,7 @@
                         {% endif %}
                         {% endfor %}
                     </ul>
-                </li> -->
+                </li>
                 {% endfor %}
                 {% endfor %}
 
