@@ -41,6 +41,15 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
+<dlentry id="session-validity">
+<dt>User session timeout and validity</dt>
+<dd>ThoughtSpot increased the duration of <strong>idle session timeouts</strong> and the <strong>maximum session validity</strong>, when you click <strong>Remember me</strong> on the login screen. There is no change to the duration when you do not click <strong>Remember me</strong>.
+<ul>
+<li>Idle session timeout: If a user is not active for 14 days, ThoughtSpot logs the user out, and the user must enter their login credentials again.</li>
+<li>Maximum session validity: ThoughtSpot forces the user's session to expire after 14 days, even if they are active throughout that period.</li> </ul>
+<p>This change <strong><em>only</em></strong> affects new clusters created on the November Cloud release and later. Clusters created on the October Cloud release and earlier have the old experience, even after they update to the November Cloud release. In the old experience, the <strong>idle session timeout</strong> is 60 minutes with <strong>Remember me</strong>, and 30 minutes without it. The old <strong>maximum session validity</strong> is 7 days with <strong>Remember me</strong>, and not available without it.</p>
+<p>To increase idle session timeouts or maximum session validity for clusters created on the October Cloud release and earlier, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
+
 <dlentry id="search-suggestions">
 <dt>Search suggestions</dt>
 <dd><p>Search suggestions are now GA. When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and Liveboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> in the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing Liveboard called <strong>Sales in the east last year</strong>.</p>

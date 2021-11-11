@@ -470,6 +470,9 @@ entries:
       - title: Managing groups
         url: /admin/ts-cloud/groups.html
         output: web
+      - title: Authentication overview
+        url: /admin/architecture/authentication.html
+        output: web
       - title: Managing local authentication
         url: /admin/ts-cloud/authentication-local.html
         output: web
@@ -1153,6 +1156,9 @@ entries:
         output: web,admBk
       - title: Create, edit, or delete a user
         url: /admin/users-groups/add-user.html
+        output: web,admBk
+      - title: Manage user logins and sessions
+        url: /admin/users-groups/sign-in.html
         output: web,admBk
       - title: Allow users to sign up
         url: /admin/users-groups/sign-up.html
