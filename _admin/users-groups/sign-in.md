@@ -37,4 +37,4 @@ When a user does not click **Remember me**:
 * **Idle session timeout**: If a user is not active for 30 minutes, ThoughtSpot logs the user out, and the user must enter their login credentials again.
 * **Maximum session validity**: No maximum session validity.
 
-To increase or decrease idle session timeouts or maximum session validity, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
+To increase idle session timeouts or maximum session validity, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
