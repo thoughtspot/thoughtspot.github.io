@@ -49,10 +49,40 @@ in the upper right corner, and select **Upload Data**.
    These are the possible data types: <br/>
    <dl>
    <dlentry>
-   </
+   <dt>True/False</dt>
+   <dd>Boolean, Yes,no.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Integer</dt>
+   <dd>Smaller integers represented by 32 bits.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Large Integer</dt>
+   <dd>Larger integers represented by 64 bits.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Decimal</dt>
+   <dd>Floating point or Decimal.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Text</dt>
+   <dd>Character or text.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Date</dt>
+   <dd>Simple date, not including the time component.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Date_Time</dt>
+   <dd>The date and time.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Time</dt>
+   <dd>Only the time, not including the date component.</dd>
+   </dlentry>
    </dl>
 
-9. Click **Import**.
+9. Click **Upload**.
 
     When an upload is complete, the system reports the results and offers you some further actions.
 
