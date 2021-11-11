@@ -675,7 +675,10 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 #version.dropdown {
-    margin: 1px 40px 0;
+    margin-top: 1px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
 
 
@@ -908,7 +911,7 @@ button.cursorNorm {
 }
 
 a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
-    margin-left: 10px;
+    margin-left: -2px;
 }
 
 hr.faded {
@@ -1697,10 +1700,12 @@ h4.panel-title {
     }
     .navbar-nav {
         float: none!important;
-        margin-top: 7.5px;
+        margin-top: -7.5px;
+        margin-bottom: 15px;
     }
     .navbar-nav>li {
         float: none;
+        margin-top: 10px;
     }
     .navbar-nav>li>a {
         padding-top: 10px;
