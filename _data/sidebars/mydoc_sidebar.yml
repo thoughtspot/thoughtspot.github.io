@@ -503,6 +503,12 @@ entries:
       - title: Enable a PrivateLink for Redshift
         url: /admin/ts-cloud/private-link-redshift.html
         output: web
+      - title: OpenVPN for Google BigQuery
+        url: /admin/ts-cloud/openvpn-gbq.html
+        output: web
+      - title: OpenVPN for Azure Synapse
+        url: /admin/ts-cloud/openvpn-synapse.html
+        output: web
       - title: Custom domain configuration
         url: /admin/ts-cloud/custom-domains.html
         output: web
