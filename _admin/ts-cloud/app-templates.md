@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 {% include content/liveboards-announcement.md %}
 
-The new Data tab and the SpotApps feature are both in <span class="label label-beta">Beta</span> in the November release. Starting in the November release, a **SpotApp** refers only to an out-of-the-box solution templates built for specific use cases and data sources, with pre-built worksheets, answers, and Liveboards, **not** to any collection of TML files. If the new Data tab and the SpotApps feature are not on in your environment, your user interface and experience may be different from the experience described in this article.
+The new Data tab and the SpotApps feature are both in <span class="label label-beta">Beta</span> in the November release. Starting in the November release, a **SpotApp** refers only to out-of-the-box solution templates built for specific use cases and data sources, **not** to any collection of TML files. SpotApps are composed of configurable ThoughtSpot Blocks and powered by [TML]({{ site.baseurl }}/admin/ts-cloud/tml.html) (ThoughtSpot Modeling Language). If the new Data tab and the SpotApps feature are not on in your environment, your user interface and experience may be different from the experience described in this article.
 
 SpotApps use [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
 
