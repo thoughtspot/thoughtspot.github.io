@@ -71,7 +71,7 @@ entries:
       - title: Understanding privileges
         url: /end-user/introduction/about-privileges-end-user.html
         output: web,ugBk
-      - title: Granular access to pinboards
+      - title: Granular access to Liveboards
         url: /end-user/introduction/pinboard-granular-permission.html
         output: web,ugBk
   - sectiontitle: ThoughtSpot for ...
@@ -104,13 +104,13 @@ entries:
       - title: Confirm data source
         url: /admin/ts-cloud/business-user-datasource-confirm.html
         output: web
-      - title: Select a Pinboard
+      - title: Select a Liveboard
         url: /admin/ts-cloud/business-user-pinboard-select.html
         output: web
-      - title: Explore your Pinboard
+      - title: Explore your Liveboard
         url: /admin/ts-cloud/business-user-pinboard-view.html
         output: web
-      - title: More on Pinboards and Answers
+      - title: More on Liveboards and Answers
         url: /admin/ts-cloud/pinboards.html
         output: web
       - title: Search Assist
@@ -143,13 +143,13 @@ entries:
       - title: Visualize Search Results
         url: /admin/ts-cloud/visualize-search.html
         output: web
-      - title: Compose Pinboards from Answers
+      - title: Compose Liveboards from Answers
         url: /admin/ts-cloud/pinboard-compose.html
         output: web
-      - title: Linked Pinboard filters
+      - title: Linked Liveboard filters
         url: /complex-search/linked-filters.html
         output: web
-      - title: Selective Pinboards filters
+      - title: Selective Liveboards filters
         url: /complex-search/selective-filters.html
         output: web
       - title: Scriptability
@@ -515,13 +515,13 @@ entries:
       - title: Custom domain configuration
         url: /admin/ts-cloud/custom-domains.html
         output: web
-      - title: Performance tracking Pinboard
+      - title: Performance tracking Liveboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
-      - title: User adoption Pinboard
+      - title: User adoption Liveboard
         url: /admin/ts-cloud/user-adoption.html
         output: web
-      - title: Object usage Pinboard
+      - title: Object usage Liveboard
         url: /admin/ts-cloud/object-usage.html
         output: web
       - title: ThoughtSpot use agreement
@@ -851,40 +851,40 @@ entries:
       - title: Formulas for chasm traps
         url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
         output: web,ugBk
-  - sectiontitle: Pinboards
+  - sectiontitle: Liveboards
     output: web,ugBk
     sectionitems:
-    - title: Basic Pinboards
+    - title: Basic Liveboards
       url: /end-user/pinboards/about-pinboards.html
       output: web,ugBk
-    - title: Follow a pinboard
+    - title: Follow a Liveboard
       url: /end-user/pinboards/follow-pinboard.html
       output: web,ugBk
-    - title: Edit a pinboard
+    - title: Edit a Liveboard
       url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
       output: web,ugBk
-    - title: Pinboard filters
+    - title: Liveboard filters
       url: /complex-search/pinboard-filters.html
       output: web,ugBk
     - title: Answer Explorer
       url: /end-user/pinboards/answer-explorer.html
       output: web,ugBk
-    - title: Schedule a pinboard job
+    - title: Schedule a Liveboard job
       url: /admin/manage-jobs/schedule-a-pinboard-job.html
       output: web,ugBk
-    - title: Search actions within a pinboard
+    - title: Search actions within a Liveboard
       url: /end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html
       output: web,ugBk
-    - title: Copy a pinboard
+    - title: Copy a Liveboard
       url: /end-user/pinboards/copy-a-pinboard.html
       output: web,ugBk
-    - title: Copy a pinboard or visualization link
+    - title: Copy a Liveboard or visualization link
       url: /end-user/pinboards/copy-link-for-a-pinboard.html
       output: web,ugBk
-    - title: Reset a pinboard visualization
+    - title: Reset a Liveboard visualization
       url: /end-user/pinboards/reset-a-visualization.html
       output: web,ugBk
-    - title: Present a pinboard as a slideshow
+    - title: Present a Liveboard as a slideshow
       url: /end-user/pinboards/start-a-slideshow.html
       output: web,ugBk
     - title: Download as PDF
@@ -959,7 +959,7 @@ entries:
     - title: About sharing
       url: /end-user/data-view/sharing-for-end-users.html
       output: web,ugBk
-    - title: Share a pinboard
+    - title: Share a Liveboard
       url: /end-user/pinboards/share-pinboards.html
       output: web,ugBk
     - title: Share answers
@@ -1205,7 +1205,7 @@ entries:
         - title: Share Views
           url: /admin/data-security/share-views.html
           output: web,admBk
-        - title: Share Pinboard
+        - title: Share Liveboard
           url: /admin/data-security/share-pinboards.html
           output: web,admBk
         - title: Share Answers
@@ -1415,10 +1415,10 @@ entries:
     - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
       levelTwoItems:
-      - title: Job management (scheduled pinboards)
+      - title: Job management (scheduled Liveboards)
         url: /admin/manage-jobs/about-scheduled-pinboards.html
         output: web,admBk
-      - title: Scheduled pinboards management
+      - title: Scheduled Liveboards management
         url: /admin/manage-jobs/scheduled-pinboards-management.html
         output: web,admBk
     - levelTwoTitle: Monitoring
@@ -1442,7 +1442,7 @@ entries:
       - title: System worksheets
         url: /admin/system-monitor/worksheets.html
         output: web,admBk
-      - title: System pinboards
+      - title: System Liveboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
     - levelTwoTitle: Troubleshooting
@@ -1541,7 +1541,7 @@ entries:
     - title: Reaggregation in practice
       url: /reference/practice/reaggregation-scenarios.html
       output: web,practGd
-    - title: Pinboard schedule gating conditions in practice
+    - title: Liveboard schedule gating conditions in practice
       url: /reference/practice/pinboard-gating-condition-example.html
       output: web,practGd
     - title: Add a hyperlink to a Search
