@@ -26,10 +26,10 @@ You must perform several preliminary steps before asking [ThoughtSpot Support]({
 * [Azure VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-openvpn-clients){: target="_blank"}
 * [AWS Client VPN](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html){: target="_blank"}
 
-## Send the configuration file to ThoughtSpot Support
-Send the OpenVPN configuration file to [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
+## Exchange OpenVPN and ThoughtSpot information with ThoughtSpot Support
+1. Send the OpenVPN configuration file to [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
-ThoughtSpot Support then configures the VPN on your ThoughtSpot Cloud cluster(s).
+2. After ThoughtSpot configures the VPN on your ThoughtSpot Cloud cluster(s), ask them to send you the **private DNS name**.
 
 ## Connect your ThoughtSpot cluster(s) to your data warehouse
-Use your private DNS name to connect your ThoughtSpot clusters to your Azure Synapse data warehouse.
+[Configure Connections for Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html), using the private DNS name from ThoughtSpot Support.

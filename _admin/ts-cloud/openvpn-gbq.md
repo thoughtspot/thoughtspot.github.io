@@ -26,9 +26,12 @@ You must perform several preliminary steps before asking [ThoughtSpot Support]({
 * [Azure VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-openvpn-clients){: target="_blank"}
 * [AWS Client VPN](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html){: target="_blank"}
 
-{% include note.html content="Google BigQuery does not support OpenVPN as a service. You must run a VM with OpenVPN." %}
+{% include note.html content="Google BigQuery does not support OpenVPN as a managed service. You must run a VM with OpenVPN." %}
 
 ## Send the configuration file to ThoughtSpot Support
 Send the OpenVPN configuration file to [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 ThoughtSpot Support then configures the VPN on your ThoughtSpot Cloud cluster(s).
+
+## Connect your ThoughtSpot cluster(s) to your data warehouse
+Configure Connections for [GBQ]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html).
