@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 {% include content/liveboards-announcement.md %}
 
-The new Data tab and the SpotApps feature are both in <span class="label label-beta">Beta</span> in the November release. Starting in the November release, a **SpotApp** refers only to out-of-the-box solution templates built for specific use cases and data sources, **not** to any collection of TML files. SpotApps are composed of configurable ThoughtSpot Blocks and powered by [TML]({{ site.baseurl }}/admin/ts-cloud/tml.html) (ThoughtSpot Modeling Language). If the new Data tab and the SpotApps feature are not on in your environment, your user interface and experience may be different from the experience described in this article.
+The new Data tab and the SpotApps feature are both in <span class="label label-beta">Beta</span> in the November release. Starting in the November release, a **SpotApp** refers only to out-of-the-box solution templates built for specific use cases and data sources, **not** to any collection of TML files. To learn about migrating custom sets of TML files, refer to [Migrate multiple TML files]({{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html). SpotApps are composed of configurable ThoughtSpot Blocks and powered by [TML]({{ site.baseurl }}/admin/ts-cloud/tml.html) (ThoughtSpot Modeling Language). If the new Data tab and the SpotApps feature are not on in your environment, your user interface and experience may be different from the experience described in this article.
 
 SpotApps use [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
 
@@ -36,7 +36,7 @@ To deploy any SpotApp, you must:
     - [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html)
 
 ## Deploy the ServiceNow SpotApp
-After you complete the [prerequisites](#prerequisites) to connect to your cloud data warehouse, you are ready to deploy the ServiceNow SpotApp and begin leveraging its pre-built content.
+After you complete the [prerequisites](#prerequisites), you are ready to deploy the ServiceNow SpotApp and begin leveraging its pre-built content.
 
 To deploy the SpotApp, follow these steps:
 

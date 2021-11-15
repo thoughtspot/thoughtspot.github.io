@@ -826,7 +826,7 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
     <dt>Scriptability</dt>
     <dd><ul><li><p>You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.</p>
     <p>This feature is in Beta in the February release. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></li>
-    <li><strong>Export custom SpotApps</strong>: Support for custom SpotApp export is now GA and on by default. You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Liveboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</li></ul>
+    <li><strong>Export custom sets of TML files</strong>: Support for export of custom sets of TML files is now GA and on by default. You can now export your own custom sets of TML files, or collections of Scriptable ThoughtSpot Answers, Liveboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > Utilities > Import/Export TML</strong> and choose the objects you would like to include in a custom set of TML files. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html">Migrate multiple TML files</a>.</li></ul>
 </dd></dlentry>
 
  <dlentry id="simplified-join-creation">
@@ -907,7 +907,7 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 <h3>Scriptability</h3>
 There are several new features for Scriptability:
 <ul>
-<li><p><strong>Export custom SpotApps</strong>: You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Liveboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</p>
+<li><p><strong>Export custom sets of TML files</strong>: You can now export your own custom sets of TML files, or collections of Scriptable ThoughtSpot Answers, Liveboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > Utilities > Import/Export TML</strong> and choose the objects you would like to include in a custom set of TML files. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html">Migrate multiple TML files</a>.</p>
 <p>This feature is in Beta. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></li>
 <li><strong>GUID handling</strong>: ThoughtSpot now recognizes pre-existing GUIDs upon import and asks if you would like to update the existing object or create a new one. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a>.</li>
 <li>ThoughtSpot Scripting Language is now called ThoughtSpot Modeling Language.</li></ul>
@@ -991,7 +991,7 @@ Scriptability contains the following new features:
 <ul>
   <li>Export and update logical tables</li>
   <li>Edit, validate, and publish objects using the TML editor</li>
-  <li>Import multiple objects from the <strong>SpotApps</strong> page, or from the object list page</li>
+  <li>Import multiple objects from the <strong>Data > Utilities > Import/Export TML</strong> page, or from the object list page</li>
   <li>Update Views</li>
   <li>GUID handling: a new <code>GUID</code> parameter in an object's .tml file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one</li>
 

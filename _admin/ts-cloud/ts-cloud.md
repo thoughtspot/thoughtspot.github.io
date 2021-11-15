@@ -47,8 +47,8 @@ permalink: /:collection/:path.html
     <p class="topicLink">
       <a href="{{ "/admin/ts-cloud/search-assist.html "| prepend: site.baseurl }}">ThoughtSpot Search</a><br>
       <a href="{{ "/admin/ts-cloud/analyst-onboarding.html "| prepend: site.baseurl }}">Onboard as Analyst</a><br>
-      <a href="{{ "/admin/ts-cloud/scriptability.html "| prepend: site.baseurl }}">SpotApps Migration</a><br>
-      <a href="{{ "/admin/ts-cloud/app-templates.html "| prepend: site.baseurl }}">SpotApp Templates</a><br>
+      <a href="{{ "/admin/ts-cloud/scriptability.html "| prepend: site.baseurl }}">Object Migration</a><br>
+      <a href="{{ "/admin/ts-cloud/app-templates.html "| prepend: site.baseurl }}">SpotApps</a><br>
       <a href="{{ "/admin/ts-cloud/tml.html "| prepend: site.baseurl }}">TS Modeling Language</a></p>
   </div>
   <div class="grid-child">

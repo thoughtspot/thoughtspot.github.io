@@ -83,7 +83,7 @@ To export objects, follow these steps. To export custom collections of related T
 
     ![Click Export]({{ site.baseurl }}/images/scriptability-cloud-click-export.png "Click Export")
 
-4. Open the downloaded `TML` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
+4. Open the downloaded `TML` zip file. The zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
 
 {: id="edit-tml"}
 ## Edit the TML file
@@ -130,7 +130,7 @@ To use the TML editor, follow these steps:
 
 {: id="update-object"}
 ## Update an object
-You can overwrite an existing worksheet, view, table, answer, or Liveboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
+You can overwrite an existing worksheet, view, table, answer, or Liveboard, by downloading the `TML` file, making any necessary changes, and then re-uploading the `TML` file. To update collections of objects packaged together as a zip file, refer to [Migrate multiple TML files]({{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html).
 
 You can also update an object using the [TML editor](#tml-editor).
 
@@ -168,11 +168,11 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 10. Click **Import selected**.
 
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit to SpotApps** to return to the main object page.
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit** to return to the main object page.
 
 {: id="migrate-object"}
 ## Migrate an object
-To migrate an answer, Liveboard, view, or worksheet from one cluster to another, follow these steps. To migrate SpotApps, or collections of objects packaged together as a zip file, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html). Note that you cannot create a new table using Scriptability. You can only update existing tables.  
+To migrate an answer, Liveboard, view, or worksheet from one cluster to another, follow these steps. To migrate collections of objects packaged together as a zip file, refer to [Migrate multiple TML files]({{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html). Note that you cannot create a new table using Scriptability. You can only update existing tables.  
 
 1. [Export the object](#export-object) you want to move, as in steps 1 to 5 of the **Export an Object** section above.
 
@@ -208,7 +208,7 @@ To migrate an answer, Liveboard, view, or worksheet from one cluster to another,
 
 10. Click **Import selected**.
 
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit to SpotApps** to return to the main object page.
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit** to return to the main object page.
 
 ## Limitations of working with TML files
 There are certain limitations to the changes you can apply by editing a worksheet, answer, table, view, or Liveboard through TML.
