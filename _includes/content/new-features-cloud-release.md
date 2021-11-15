@@ -77,6 +77,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dd>ThoughtSpot now supports 2 methods to increase the duration of validity for your <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html#saml-assertion">SAML assertion</a>: the <code>SessionNotOnOrAfter</code> attribute and the <code>maxAuthenticationAge</code> parameter. <code>SessionNotOnOrAfter</code> overrules <code>maxAuthenticationAge</code> if both are present. If your IDP does not support use of <code>SessionNotOnOrAfter</code>, remove that attribute from your IDP assertion and <a href="{{ site.baseurl }}/admin/misc/contact.html">ask ThoughtSpot Support</a> to enable <code>maxAuthenticationAge</code>.</dd>
 </dlentry>
 
+<dlentry id="vpn">
+<dt>OpenVPN support for Google BigQuery and Azure Synapse connections</dt>
+<dd>ThoughtSpot now supports secure access from ThoughtSpot Cloud to your data in Google BigQuery and Azure Synapse, through your OpenVPN server. ThoughtSpot supports the following OpenVPN server implementations:
+<ul><li><a href="https://openvpn.net/community-downloads/" target="_blank">OpenVPN Community Edition</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-openvpn-clients" target="_blank">Azure VPN</a></li>
+<li><a href="https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html" target="_blank">AWS Client VPN</a></li></ul>
+To learn how to configure a VPN connection for your Google BigQuery or Azure Synapse connection, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/openvpn-gbq.html">OpenVPN for Google BigQuery</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/openvpn-synapse.html">OpenVPN for Azure Synapse</a>.</dd></dlentry>
+
 </dl>
 
 <h3><a id="november-cloud-2021-developer"></a>For the Developer</h3>
