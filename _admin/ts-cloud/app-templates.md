@@ -1,69 +1,69 @@
 ---
 title: [SpotApps]
 last_updated: 11/05/2021
-summary: "SpotApps, ThoughtSpot's scriptable applications, allow you to migrate multiple objects to and from clusters."
-redirect_from:
-- /admin/scriptability/app-templates.html
+summary: "SpotApps, ThoughtSpot's scriptable applications, are out-of-the-box solution templates built for specific use cases and data sources."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 {% include content/liveboards-announcement.md %}
 
-A SpotApp is a collection of Liveboards, answers, worksheets, views & tables packaged together as a zip file. SpotApps take advantage of [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
+The new Data tab and the SpotApps feature are both in <span class="label label-beta">Beta</span> in the November release. Starting in the November release, a **SpotApp** refers only to out-of-the-box solution templates built for specific use cases and data sources, **not** to any collection of TML files. To learn about migrating custom sets of TML files, refer to [Migrate multiple TML files]({{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html). SpotApps are composed of configurable ThoughtSpot Blocks and powered by [TML]({{ site.baseurl }}/admin/ts-cloud/tml.html) (ThoughtSpot Modeling Language). If the new Data tab and the SpotApps feature are not on in your environment, your user interface and experience may be different from the experience described in this article.
 
-{: id="export-spotapps"}
-## Export SpotApps
-You can export your own custom SpotApps from the **SpotApps** page. Alternatively, ThoughtSpot automatically creates SpotApps for you when you export more than one object of the same type at a time, or when you export an object and its dependents.
+SpotApps use [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
 
-To export your own custom SpotApps, follow these steps.
+## Available SpotApps and Blocks
+The November release introduces the ServiceNow SpotApp and Analytics Blocks. Analytics Blocks include pre-built Worksheet, Answer, and Liveboard Blocks.
 
-1. Navigate to the **SpotApps** page: **Data > SpotApps**.
+The ServiceNow SpotApp mimics the ServiceNow data model. After you connect to your ServiceNow data in your cloud data warehouse, ThoughtSpot maps that data to SpotApp columns, and creates pre-built but still customizable worksheets, answers, and Liveboards, based on your ServiceNow data.
 
-2. Select **Export SpotApps**.
+{: id="prerequisites"}
+## Prerequisites to deploy the ServiceNow SpotApp
+To deploy any SpotApp, you must:
 
-3. In the **Export** interface, select the Liveboards, answers, views, tables, and worksheets that you would like to include in your SpotApp. For example, for a Marketing SpotApp, you might choose a Marketing worksheet, a Campaigns worksheet, a Pipeline Liveboard, and a few answers your Chief Marketing Officer created.
+1. Enable the new Data tab and SpotApps feature. To enable these features, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
-4. Click **Export**.
+2. Obtain credentials to connect to your cloud data warehouse. Refer to the connection reference for your cloud data warehouse for information about required credentials:
 
-5. The **Choose what to Export** modal appears. Choose whether to export only the selected objects, or the selected objects and their underlying data sources (worksheets, tables, and views).
+    - [Amazon Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html)
+    - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html)
+    - [Databricks]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html)
+    - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html)
+    - [Oracle Autonomous Data Warehouse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html)
+    - [SAP HANA]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html)
+    - [Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html)
+    - [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html)
+    - [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html)
 
-6. Click **Export**.
+## Deploy the ServiceNow SpotApp
+After you complete the [prerequisites](#prerequisites), you are ready to deploy the ServiceNow SpotApp and begin leveraging its pre-built content.
 
-7. Open the downloaded `TML` zip file. The SpotApp zip file contains a document called the `Manifest` file, which defines the objects you exported, their underlying data sources, and any export errors. If an individual export fails, you can find an error message in the `Manifest` file. The zip file still exports, even if an individual object's export fails.
+To deploy the SpotApp, follow these steps:
 
-See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
+1. Navigate to **Data > SpotApps**.
 
-![SpotApp export gif]({{ site.baseurl }}/images/spotapp-export.gif "SpotApp export gif")
+2. Select the **ServiceNow ITIL Management Board**.
 
-## Import SpotApps
-You can import SpotApps from the SpotApps page, under **Data > SpotApps**.
+3. Select **Configure** to set up your Analytics Block.
 
-1. From the **SpotApps** page under the **Data** tab, click **Import SpotApps**.
+4. Set up a connection to your data warehouse. For more information, refer to [Connections]({{ site.baseurl }}/admin/ts-cloud/embrace.html) and the connection credentials that you collected in the [prerequisites](#prerequisites).
 
-2. In the **Import** interface, click **Select .tml or .zip files to upload**.
+    Note that you do not have to select any tables or columns while setting up the connection. You can select them later by editing the connection.
 
-6. In your file system, find and select the .zip file for the SpotApp.
+5. After you create the connection, ThoughtSpot auto-maps tables from your cloud data warehouse to table names in the SpotApp. If ThoughtSpot cannot map some of the SpotApp tables, a warning symbol appears next to the unmapped user table(s). To choose a table in your cloud data warehouse that matches the name of the table in the SpotApp, use the dropdown in the **User table** column.
 
-8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message, and shows you which objects are validated. You can now import the objects. The <code>GUID</code> parameter in an object's TML file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one. If you are updating an existing object, the system asks if you would like to create a new object, or update the existing one.
+    For example, you might call your **problem** table something else, like **issues**.
 
-9. You can unselect any files in the `.zip` file you do not want to upload.
+    Tables with asterisks next to their names are required. Other tables are optional.
 
-10. Click **Import selected files**.
+    Select **Next**.
 
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
+6. Next, ThoughtSpot auto-maps columns from your cloud data warehouse to column names in the SpotApp. If ThoughtSpot cannot map some of the SpotApp columns, a warning symbol appears next to the unmapped user column(s). To choose a column in your cloud data warehouse that matches the name of the column in the SpotApp, use the dropdown in the **User column** column.
 
-    ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
+    Columns with asterisks next to their names are required. Other columns are optional.
 
-{: id="pre-built-spotapps"}
-## Pre-built SpotApps
-Once you connect to your data, you can work with your ThoughtSpot contacts to deploy ThoughtSpot's pre-built SpotApps, which provide an easy way for you to start getting value from your data. They leverage your data in your cloud data warehouse to provide pre-built Liveboards, answers, views, tables, and worksheets.
+    Select **Finish**.
 
-ThoughtSpot offers 1 pre-built SpotApp, for **ServiceNow**. This SpotApp contains a worksheet with your ServiceNow data for your users to query on, as well as several pre-built answers and Liveboards based on your data.
+7. ThoughtSpot generates the objects in your SpotApp. This may take a few moments. When the generation is complete, a message appears at the bottom of your screen: `Analytics block for the SpotApp installed successfully`.
 
-When you are ready to move to a production environment, you can migrate these ThoughtSpot objects to your new environment using [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's flat-file editing and migration system for ThoughtSpot objects.
-
-To use the ServiceNow pre-built SpotApp, work with your ThoughtSpot contacts.
-
-## Limitations
-You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom SpotApp, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.
+8. After you configure the Analytics Block, ThoughtSpot returns you to the main **Analytics Block** page, where you can see a list of the objects ThoughtSpot created for your SpotApp. You can also see them in the list on the **Data** home page, and on the **Liveboards** page.

@@ -152,20 +152,23 @@ entries:
       - title: Selective Pinboards filters
         url: /complex-search/selective-filters.html
         output: web
-      - title: Disable Answer Search for specific Worksheets
-        url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
-        output: web
-      - title: How Users are Searching Answers Pinboard
-        url: /admin/thoughtspot-one/query-intelligence-pinboard.html
-        output: web
       - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
         output: web
       - title: SpotApps
         url: /admin/ts-cloud/app-templates.html
         output: web
+      - title: Migrate multiple TML files
+        url: /admin/ts-cloud/tml-import-export-multiple.html
+        output: web
       - title: ThoughtSpot Modeling Language
         url: /admin/ts-cloud/tml.html
+        output: web
+      - title: Disable Answer Search for specific Worksheets
+        url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
+        output: web
+      - title: How Users are Searching Answers Liveboard
+        url: /admin/thoughtspot-one/query-intelligence-pinboard.html
         output: web
     - levelTwoTitle: Data Engineers
       output: web
