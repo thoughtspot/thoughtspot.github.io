@@ -1,6 +1,6 @@
 ---
 title: [Configure Azure AD external OAuth for a Snowflake connection]
-last_updated: 4/20/2021
+last_updated: 11/1/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -39,7 +39,8 @@ To create a Snowflake OAuth resource, do the following:
 
 8. Next to Application ID URI, click **Set** and change its value from **api://\<alphanumeric value>** to **https://\<alphanumeric value>** and click **Save**.
 
-   ![]({{ site.baseurl }}/images/snow-app-uri.png)
+   <!-- ![]({{ site.baseurl }}/images/snow-app-uri.png) -->
+   ![]({{ site.baseurl }}/images/snow-app-uri-oauth-client.png)
 
     {% include note.html content="If the Application ID URI is not used, you must create a security integration with audiences using the Snowflake Account URL (i.e. `<account_identifier>.snowflakecomputing.com)`." %}
 
@@ -173,17 +174,8 @@ create security integration external_oauth_azure_2
 ```    
 Example:
 
-```
-create security integration external_oauth_azure_2
-    type = external_oauth
-    enabled = true
-    external_oauth_type = azure
-    external_oauth_issuer = 'https://sts.windows.net/7dabe4d6-364c-436b-a77e-f252d7a0fb31/'
-    external_oauth_jws_keys_url = 'https://login.microsoftonline.com/7dabe4d6-364c-436b-a77e-f252d7a0fb31/discovery/v2.0/keys'
-    external_oauth_audience_list = ('https://dcba39b5-3af9-4e28-b7ec-ca3ff57aed23')
-    external_oauth_token_user_mapping_claim = 'upn'
-    external_oauth_snowflake_user_mapping_attribute = 'login_name';
-```
+![]({{ site.baseurl }}/images/snow-sec-int-example.png)
+
 {% include note.html content="When you create the Snowflake OAuth Resource Application in Azure AD, if you enter an `Application ID URI` that is not the Snowflake Account URL (i.e. <account_identifier>.snowflakecomputing.com), you must add the external_oauth_audience_list parameter to the command with the value `<SNOWFLAKE_APPLICATION_ID_URI>`.." %}
 
 #### Snowflake commands
