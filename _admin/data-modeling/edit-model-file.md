@@ -49,11 +49,11 @@ To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 
-2. Navigate to **Data > Settings Business Data Model**.
+2. Navigate to **Data > Settings > Business Data Model**.
 
 4. Click **Download**.
 
-    ![]({{ site.baseurl }}/images/download_model.png)
+    ![Download the model file]({{ site.baseurl }}/images/model-file-download.png "Download the model file")
 
 5. Change the file extension to `.tsv`. This ensures that your editor (Excel, vi/vim, and so on) knows the file contains tab-separated values.
 
@@ -92,7 +92,7 @@ ThoughtSpot before the changes will take effect. To upload the model file:
 2. Navigate to **Data > Settings > Business Data Model**.
 4. Click **Browse your files** to upload the model file in `.tsv` format, or drag and drop it in the zone.
 
-    ![]({{ site.baseurl }}/images/upload_model.png)
+    ![Upload the model file]({{ site.baseurl }}/images/model-file-upload.png "Upload the model file")
 
     If you receive an error message upon uploading the file, check that it does
     not include any multi-byte characters (for example, Japanese or other multi-byte
