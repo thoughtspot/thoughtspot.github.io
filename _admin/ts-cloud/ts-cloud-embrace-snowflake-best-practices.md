@@ -8,6 +8,12 @@ permalink: /:collection/:path.html
 
 After connecting to Snowflake, you may notice that some things don’t work as you expect. Here are helpful pointers on data modeling: best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.
 
+## Keep default collation settings
+
+Collation settings in Snowflake compare strings based on their UTF-8 character representations. For the best query performance, ThoughtSpot recommends using the default setting of `en-cs` (case-sensitive).
+
+For more information, see <a href="https://docs.snowflake.com/en/sql-reference/collation.html" target="_blank">Collation Support</a> in the Snowflake documentation.
+
 {: id="change-json"}
 ## Change JSON to a relational schema in Snowflake
 
