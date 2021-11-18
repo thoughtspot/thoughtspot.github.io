@@ -49,7 +49,7 @@ To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 
-2. Navigate to **Data > Settings Business Data Model**.
+2. Navigate to **Data > Settings > Business Data Model**.
 
 4. Click **Download**.
 
