@@ -896,9 +896,6 @@ entries:
     - title: "SpotIQ analysis"
       url: /spotiq/customization.html
       output: web,ugBk
-    - title: "Monitor time series charts"
-      url: /admin/ts-cloud/monitor.html
-      output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
 #      output: web,ugBk
