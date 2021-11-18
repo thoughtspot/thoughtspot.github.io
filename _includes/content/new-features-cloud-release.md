@@ -64,6 +64,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </dd>
 </dlentry>
 
+<dlentry id="spotiq-new-experience">
+<dt>New SpotIQ experience</dt>
+<dd><p>SpotIQ has a new UI. The functionality remains the same, but we reorganized the UI to make it more intuitive.</p>
+<p>This feature is in <span class="label label-beta">Beta</span> and part of the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new answer experience</a> <span class="badge badge-update">Beta</span> (off by default). The ability to turn on the new SpotIQ experience is on by default. To enable it, you must first enable the new answer experience, and then enable the new SpotIQ experience. If you do not see the option to enable the new SpotIQ experience in your profile under <strong>Experience</strong>, it may be off for your organization. To enable it globally, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
+
 </dl>
 
 <h3><a id="november-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
