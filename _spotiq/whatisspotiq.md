@@ -1,10 +1,13 @@
 ---
 title: ["What is SpotIQ?"]
 summary: Learn about SpotIQ.
-last_updated: 11/15/2019
+last_updated: 11/18/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="SpotIQ has a new UI. The functionality remains the same, but we reorganized the UI to make it more intuitive. This feature is in <strong>Beta</strong> and part of the new answer experience (Beta, off by default). The new SpotIQ experience is off by default, but you can turn it on from your profile. To enable it, you must first enable the new answer experience, and then enable the new SpotIQ experience. If you do not see the option to enable the new SpotIQ experience in your profile under <strong>Experience</strong>, it may be off for your organization. To enable it globally, contact ThoughtSpot Support.<br><br>If you have the new answer experience and the new SpotIQ experience on, your UI and workflows may look different than what this article describes." %}
+
 SpotIQ is a ThoughtSpot feature that helps you find insights into your data.
 Insights are trends, correlations, explanations of increases, explanations of
 decreases, and outliers (values unique from what is typical in your data).
