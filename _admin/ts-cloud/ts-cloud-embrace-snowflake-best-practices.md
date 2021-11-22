@@ -49,7 +49,7 @@ To create a view from a Snowflake table that contains JSON, follow these steps:
    The following example uses the sample `WEATHER` data from the **Snowflake Free Trial** sample data:
 
    ```
-CREATE <strong>json_weather_data_view</strong> as
+CREATE json_weather_data_view as
 SELECT
   v:time::timestamp as observation_time,
   v:city.id::int as city_id,
@@ -168,8 +168,8 @@ ALTER TABLE &lt;table_name&gt; ADD { outoflineUniquePK | outoflineFK }
     <dt>outoflineUniquePK</dt>
     <dd>The primary key in the relationship, with the following definition:<br>
     <pre>outoflineUniquePK ::=
-  [ CONSTRAINT &lt;constraint_name&gt;> ]
-  { UNIQUE | PRIMARY KEY } ( &lt;col_name&gt;> [ , &lt;col_name&gt; , ... ] )
+  [ CONSTRAINT &lt;constraint_name&gt; ]
+  { UNIQUE | PRIMARY KEY } ( &lt;col_name&gt; [ , &lt;col_name&gt; , ... ] )
   [ [ NOT ] ENFORCED ]
   [ [ NOT ] DEFERRABLE ]
   [ INITIALLY { DEFERRED | IMMEDIATE } ]
@@ -183,7 +183,7 @@ ALTER TABLE &lt;table_name&gt; ADD { outoflineUniquePK | outoflineFK }
     <dd>The foreign key in the relationship, with the following definition:<br>
       <pre>outoflineFK :=
     [ CONSTRAINT &lt;constraint_name&gt; ]
-    FOREIGN KEY ( &lt;col_namev [ , &lt;col_name&gt; , ... ] )
+    FOREIGN KEY ( &lt;col_name&gt; [ , &lt;col_name&gt; , ... ] )
     REFERENCES &lt;ref_table_name&gt; [ ( &lt;ref_col_name&gt; [ , &lt;ref_col_name&gt; , ... ] ) ]
     [ MATCH { FULL | SIMPLE | PARTIAL } ]
     [ ON [ UPDATE { CASCADE | SET NULL | SET DEFAULT | RESTRICT | NO ACTION } ]
