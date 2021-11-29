@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 {% include note.html content="This content is still under review, and might have incremental changes until this message is removed."%}
 
 You can use keywords when asking a question to help define your search. This
-reference lists the various keywords. 
+reference lists the various keywords.
 
 | _[< Back to English Keywords page]({{ site.baseurl }}/reference/keywords.html)_ |
 
@@ -36,9 +36,10 @@ reference lists the various keywords.
 
 {% include content/keywords-translate/fi-FI/keywords-comparative-fi-FI.md %}
 
+<!-- not available on embrace currently
 ## Location
 
-{% include content/keywords-translate/fi-FI/keywords-location-fi-FI.md %}
+{% include content/keywords-translate/fi-FI/keywords-location-fi-FI.md %} -->
 
 ## Period
 

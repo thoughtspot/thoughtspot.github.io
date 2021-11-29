@@ -35,9 +35,10 @@ You can use keywords when asking a question to help define your search. This ref
 
 {% include content/keywords-translate/fr-FR/keywords-comparative-fr-FR.md %}
 
+<!-- not available on embrace currently
 ## Location
 
-{% include content/keywords-translate/fr-FR/keywords-location-fr-FR.md %}
+{% include content/keywords-translate/fr-FR/keywords-location-fr-FR.md %} -->
 
 ## Period
 
