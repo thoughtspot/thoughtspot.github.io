@@ -50,10 +50,11 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
     Filter keywords work in the same way as filters on table columns or chart axes.
 
+<!-- not available on embrace currently
 -   **Location keywords**
 
     The keywords `near` and `farther than` allow you to search with spatial filters on your geo type columns with latitude/longitude data. This lets you focus your search based on distance and locations. You can specify a specific radius using miles, kilometers, or meters.
-
+-->
 
 
 ## Related information  
