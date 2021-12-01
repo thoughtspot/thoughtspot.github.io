@@ -1,6 +1,6 @@
 ---
 title: [Following Liveboards]
-last_updated: 11/05/2021
+last_updated: 12/1/2021
 summary: "In ThoughtSpot, you can follow Liveboards and schedule email notifications to regularly review the visuals that represent dynamic data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 {% include content/liveboards-announcement.md %}
 
-{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the November Cloud release. Instead, create a Liveboard schedule. A Liveboard schedule emails a PDF of the Liveboard to you on a regular schedule. Your existing Liveboard follows will be migrated to Liveboard schedules. For details, see Deprecation Announcements." %}
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the January Cloud release. Instead, create a Liveboard schedule. A Liveboard schedule emails a PDF of the Liveboard to you on a regular schedule. Your existing Liveboard follows will be migrated to Liveboard schedules. For details, see Deprecation Announcements." %}
 
 When you follow a Liveboard, ThoughtSpot sends you regular emails that contain the snapshot of the Liveboard. You can change the scheduling of this email to suit your business needs.
 

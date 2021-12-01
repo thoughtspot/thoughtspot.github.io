@@ -1,6 +1,6 @@
 ---
 title: ["Deprecation Announcements"]
-last_updated: 11/04/2021
+last_updated: 12/01/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -21,16 +21,11 @@ The January Cloud release of ThoughtSpot Software, targeted for January 2022 (GA
 <dl>
 <dlentry><dt>Business user onboarding</dt>
 <dd>ThoughtSpot will replace the current business user onboarding (present in November Cloud 2021 and earlier) with a new onboarding flow. The new onboarding flow directs new users to Search Assist, where they can complete sample searches on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">demo data</a> or <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">their company's data</a>.</dd></dlentry>
-</dl>
 
-{: id="de-support-november-cloud"}
-## De-supported in November Cloud
-
-<dl>
 <dlentry><dt>Liveboard follow</dt>
-<dd><p>In October Cloud and earlier, there are two different ways for a user to ask ThoughtSpot to email them a Liveboard PDF on a specified schedule. You can follow the Liveboard, or <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">schedule a Liveboard job</a>.</p>
-<p>In November Cloud and later releases, ThoughtSpot will combine these features into a single action called "Schedule." The <strong>Follow</strong> option will not be available. This change will allow any user to schedule their own Liveboard emails. To send Liveboard emails to other users, you still need the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#schedule-pinboards">Can schedule Liveboards permission</a>.</p>
-<p>ThoughtSpot will migrate any existing Liveboard follows to Liveboard schedules. If you followed a Liveboard in October Cloud or earlier, you will see it in the list of Liveboard schedules for that Liveboard as <em>Migrated from follow (your display name)</em>.</p></dd></dlentry>
+<dd><p>In November Cloud and earlier, there are two different ways for a user to ask ThoughtSpot to email them a Liveboard PDF on a specified schedule. You can follow the Liveboard, or <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">schedule a Liveboard job</a>.</p>
+<p>In January Cloud and later releases, ThoughtSpot will combine these features into a single action called "Schedule." The <strong>Follow</strong> option will not be available. This change will allow any user to schedule their own Liveboard emails. To send Liveboard emails to other users, you still need the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#schedule-pinboards">Can schedule Liveboards permission</a>.</p>
+<p>ThoughtSpot will migrate any existing Liveboard follows to Liveboard schedules. If you followed a Liveboard in November Cloud or earlier, you will see it in the list of Liveboard schedules for that Liveboard as <em>Migrated from follow (your display name)</em>.</p></dd></dlentry>
 </dl>
 
 {: id="de-support-august-cloud"}
