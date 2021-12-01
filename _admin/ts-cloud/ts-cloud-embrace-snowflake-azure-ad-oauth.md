@@ -86,21 +86,21 @@ To create a Snowflake OAuth client app, do the following:
 
    ![]({{ site.baseurl }}/images/redirect_uri.png)
 
-8. Click **Certificates & secrets** and then **New client secret**.
+9. Click **Certificates & secrets** and then **New client secret**.
 
    ![]({{ site.baseurl }}/images/snow_certs_secr.png)
 
-9. Copy the **Value** of the secret you just created. This is referred to as `<OAUTH_CLIENT_SECRET>` in the steps that follow.
+10. Copy the **Value** of the secret you just created. This is referred to as `<OAUTH_CLIENT_SECRET>` in the steps that follow.
 
-   ![]({{ site.baseurl }}/images/snow_secr.png)
+    ![]({{ site.baseurl }}/images/snow_secr.png)
 
-10. Click **API permissions**, then click **Add a permission**.
+11. Click **API permissions**, then click **Add a permission**.
 
     ![]({{ site.baseurl }}/images/snow_api_perm.png)
 
-11. Click **My APIs**.
+12. Click **My APIs**.
 
-12. Click the name of the Snowflake OAuth Resource you created in [Part 1]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html#part-1).
+13. Click the name of the Snowflake OAuth Resource you created in [Part 1]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html#part-1).
 
     ![]({{ site.baseurl }}/images/snow_req_api_perm.png)
 
