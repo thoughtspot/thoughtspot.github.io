@@ -206,6 +206,9 @@ entries:
         - title: Configure internal OAuth
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
           output: web
+        - title: Configure Azure AD external OAuth
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html
+          output: web
         - title: Best practices
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
           output: web
