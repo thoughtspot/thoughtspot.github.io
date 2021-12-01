@@ -82,7 +82,7 @@ To create a Snowflake OAuth client app, do the following:
 
 8. Click **Authentication**, and under Web, specify the redirect URI using the following format:
 
-   `<https://\<public> url of your ThoughtSpot Instance>/callosum/v1/connection/generateTokens`
+   `<https://<public> url of your ThoughtSpot Instance>/callosum/v1/connection/generateTokens`
 
    ![]({{ site.baseurl }}/images/redirect_uri.png)
 
