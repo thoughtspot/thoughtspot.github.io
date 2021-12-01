@@ -78,19 +78,25 @@ To create a Snowflake OAuth client app, do the following:
 
 7. From the Application (client) ID field, copy the ID. This ID is referred to as the `<OAUTH_CLIENT_ID>` in the steps that follow.
 
-   ![]({{ site.baseurl }}/images/sf_oauth_user.png)   
+   ![]({{ site.baseurl }}/images/sf_oauth_user.png)
+
+8. Click **Authentication**, and under Web, specify the redirect URI using the following format:
+
+   `<https://\<public> url of your ThoughtSpot Instance>/callosum/v1/connection/generateTokens`
+
+   ![]({{ site.baseurl }}/images/redirect_uri.png)
 
 8. Click **Certificates & secrets** and then **New client secret**.
 
-   ![]({{ site.baseurl }}/images/snow_certs_secr2.png)
+   ![]({{ site.baseurl }}/images/snow_certs_secr.png)
 
-9. Copy the secret you just created. This is referred to as `<OAUTH_CLIENT_SECRET>` in the steps that follow.
+9. Copy the **Value** of the secret you just created. This is referred to as `<OAUTH_CLIENT_SECRET>` in the steps that follow.
 
-   ![]({{ site.baseurl }}/images/snow_secr2.png)
+   ![]({{ site.baseurl }}/images/snow_secr.png)
 
 10. Click **API permissions**, then click **Add a permission**.
 
-    ![]({{ site.baseurl }}/images/snow_api_perm2.png)
+    ![]({{ site.baseurl }}/images/snow_api_perm.png)
 
 11. Click **My APIs**.
 
@@ -98,13 +104,13 @@ To create a Snowflake OAuth client app, do the following:
 
     ![]({{ site.baseurl }}/images/snow_req_api_perm.png)
 
-13. On the Request API permissions page, click the Delegated permissions box, and select the permission related to scope you defined in the application you want to grant to this client.
+13. On the Request API permissions page, click the **Delegated permissions** box, and select the permission related to scope you defined in the application you want to grant to this client.
 
 14. Click **Add permissions**.
 
     ![]({{ site.baseurl }}/images/snow_req_api_2_perm.png)
 
-15. Under Grant admin consent confirmation, click **Yes**.
+15. Under Configured permissions, click **Grant admin consent for Default Directory**, and then click **Yes** in the confirmation message.
 
     ![]({{ site.baseurl }}/images/snow_grant_admin.png)
 
@@ -169,7 +175,7 @@ Example:
 
 ##### Create user as Azure AD user
 
-`CREATE USER testuser PASSWORD = '' LOGIN_NAME = 'testuser@diyottacloudoutlook.onmicrosoft.com' DISPLAY_NAME = 'AD_TEST_USER';`
+`CREATE USER testuser PASSWORD = '' LOGIN_NAME = 'testuser@thoughtspot.com' DISPLAY_NAME = 'AD_TEST_USER';`
 
 ##### Validate access token
 
