@@ -6,6 +6,7 @@
  <li>Only administrators can create tags.</li>
  <li>Anyone can apply a tag.</li>
  <li>Anyone can filter by a tag.</li>
+ <li>You can only filter by one tag at a time from the UI.</li>
 </ul>
 
 <h2 id="create-a-tag">Create a tag</h2>
@@ -54,7 +55,10 @@
 
 <h2 id="filter-by-tags">Filter by tags</h2>
 
-<p>Whenever you are selecting objects from a list, you can filter by tag to find what you’re looking for. Anyone can use tags to filter lists of pinboards or data sources. You can also filter by tag when selecting data sources.</p>
+<p>Whenever you are selecting objects from a list, you can filter by tag to find what you’re looking for. Anyone can use tags to filter lists of Liveboards or data sources. You can also filter by a tag when selecting data sources.</p>
+
+<p>Note that you can only filter by one tag at a time in the UI. To get a list of ThoughtSpot objects or object headers that is filtered by multiple tag, use the <a href="https://developers.thoughtspot.com/docs/?pageid=metadata-api" target="_blank">Metadata API</a>. The <code>list</code> and <code>listobjectheaders</code> endpoints allow you to filter by multiple tags.</p>
+
 
 <p>To filter by tag:</p>
 
@@ -68,3 +72,6 @@
    <p><img src="{{"/images/filter_by_tag.png" | prepend: site.baseurl }}" alt="" title="Filter by a tag" /></p>
  </li>
 </ol>
+
+<h3 id="unfilter-tags">Remove a tag filter</h3>
+<p>To remove a tag filter and see all objects again, select the tag you filtered on in the tag list.</p>
