@@ -79,7 +79,17 @@ The [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experie
 
 Next to **Experience**, at the bottom of your profile, select **Edit**.
 
-Select **New experience** or **Classic experience**.
+Next to **Answers experience**, select **New experience** or **Classic experience**.
+
+Select **Save**.
+
+{: id="new-spotiq-experience"}
+## Manage your SpotIQ experience
+The new SpotIQ experience <span class="badge badge-update">Beta</span> is off by default, but you can turn it on from the **Experience** section of your profile.  If that option is not available, contact your administrator.
+
+Next to **Experience**, at the bottom of your profile, select **Edit**.
+
+Next to **SpotIQ experience**, select **New experience** or **Classic experience**.
 
 Select **Save**.
 
