@@ -16,19 +16,19 @@ Before you can map SAML groups, you must [configure SAML authentication]({{ site
 Configure your IDP to produce a SAML response with a `<saml2:AttributeStatement>`. This statement carries the group attributes. It should look similar to the following:
 
 ```
-example
+<saml2:Attribute Name="roles" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+    <saml2:AttributeValue
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">TestGroup01
+    </saml2:AttributeValue>
+    <saml2:AttributeValue
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">TestGroup02
+    </saml2:AttributeValue>
+</saml2:Attribute>
 ```
 
-Fill in the following parameters:
-
-<dl>
-
-<dlentry>
-<dt>parameter1</dt>
-<dd>parameter 1 definition</dd>
-</dlentry>
-
-</dl>
+Replace `TestGroup01` and `TestGroup02` with your own group information, and add as many Attribute Values as necessary.
 
 ## Contact ThoughtSpot Support to finish configuration
 ThoughtSpot Support must finish configuration on the ThoughtSpot side. [Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html), and ask them to enable group mapping from SAML assertions.
