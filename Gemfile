@@ -9,3 +9,9 @@ gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem 'jekyll-redirect-from'
+
+# Gemfile
+
+group :jekyll_plugins do
+  gem 'jekyll-algolia', '~> 1.0'
+end
