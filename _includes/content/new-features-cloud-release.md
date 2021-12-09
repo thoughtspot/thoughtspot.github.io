@@ -24,23 +24,23 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dl>
 
 <dlentry id="spotapps">
-<dt>ServiceNow SpotApp</dt>
+<dt>ServiceNow SpotApp <span class="label label-beta">Beta</span></dt>
 <dd><p>SpotApps are ThoughtSpot's new out-of-the-box solution templates built for specific use cases and data sources. They are built on Blocks, which are pre-built pieces of code that are easy to download and implement directly from the product. This release introduces the ServiceNow SpotApp and Analytics Blocks. Analytics Blocks include pre-built Worksheet, Answer, and Liveboard Blocks.</p>
 <p>The ServiceNow SpotApp mimics the ServiceNow data model. After you connect to your ServiceNow data in your cloud data warehouse, ThoughtSpot maps that data to SpotApp columns, and creates pre-built but still customizable worksheets, answers, and Liveboards, based on your ServiceNow data.</p>
 <p>Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</p>
-<p>This feature is in <span class="label label-beta">Beta</span> and off by default. It is part of the <span class="label label-beta">Beta</span> <a href="#data-tab">Data tab redesign</a>. To enable SpotApps and the Data tab redesign, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+<p>This feature is in beta and off by default. It is part of the <a href="#data-tab">Data tab redesign</a> beta. To enable SpotApps and the Data tab redesign, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
 
 <dlentry>
-<dt>SQL-based views</dt>
-<dd><p>This release introduces <span class="label label-beta">Beta</span> support for SQL-based views. Users can create views based on SQL queries, and use those views as data sources. This type of view has the same functionality as a view based on searching your data.</p>
-<p>This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+<dt>SQL-based views <span class="label label-beta">Beta</span></dt>
+<dd><p>This release introduces beta support for SQL-based views. Users can create views based on SQL queries, and use those views as data sources. This type of view has the same functionality as a view based on searching your data.</p>
+<p>This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
 
 <dlentry id="data-tab">
-<dt>Data tab redesign</dt>
+<dt>Data tab redesign <span class="label label-beta">Beta</span></dt>
 <dd><p>This release redesigns the <strong>Data</strong> section of the product. To access this part of the product, select <strong>Data</strong> from the top navigation bar. The redesign introduces several new features, such as SQL-based views and SpotApps, and makes the UI more intuitive.</p>
-<p>This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+<p>This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
 
 </dl>
@@ -66,9 +66,9 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 </dlentry>
 
 <dlentry id="spotiq-new-experience">
-<dt>New SpotIQ experience</dt>
+<dt>New SpotIQ experience <span class="label label-beta">Beta</span></dt>
 <dd><p>SpotIQ has a new UI. The functionality remains the same, but we reorganized the UI to make it more intuitive.</p>
-<p>This feature is in <span class="label label-beta">Beta</span> and part of the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new answer experience</a> <span class="badge badge-update">Beta</span> (off by default). The new SpotIQ experience is off by default, but you can turn it on from your profile. To enable it, you must first enable the new answer experience, and then enable the new SpotIQ experience. If you do not see the option to enable the new SpotIQ experience in your profile under <strong>Experience</strong>, it may be off for your organization. To enable it globally, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
+<p>This feature is in beta and part of the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new answer experience</a> <span class="badge badge-update">Beta</span> (off by default). The new SpotIQ experience is off by default, but you can turn it on from your profile. To enable it, you must first enable the new answer experience, and then enable the new SpotIQ experience. If you do not see the option to enable the new SpotIQ experience in your profile under <strong>Experience</strong>, it may be off for your organization. To enable it globally, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
 
 </dl>
 

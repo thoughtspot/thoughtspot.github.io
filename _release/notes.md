@@ -134,10 +134,10 @@ For information about the new features and enhancements introduced in this relea
 </dlentry>
 
 <dlentry id="search-suggestions">
-<dt>Search suggestions</dt>
+<dt>Search suggestions <span class="label label-beta">Beta</span></dt>
 <dd><p>When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and Liveboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> into the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing Liveboard called <strong>Sales in the east last year</strong>.</p>
 <p>ThoughtSpot provides these search object suggestions before you begin typing, based on your past searches and popular searches in your environment.</p>
-<p>This feature is in <span class="label label-beta">Beta</span>. If you do not see it yet, ThoughtSpot will enable it for you soon.</p></dd>
+<p>This feature is in beta. If you do not see it yet, ThoughtSpot will enable it for you soon.</p></dd>
 </dlentry>
 
 </dl>
@@ -383,7 +383,7 @@ Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#use
 <li>Can manage privileges: Can create, delete, and edit groups. This includes the group's name, sharing visibility, and privileges.</li>
 <li>Can operate application: Can configure local and SAML authentication. Can manage application settings: search, SpotIQ, and onboarding advanced settings, style and help customization. Can view scheduled maintenance.</li>
 <li>Can see system information: Can view all default admin data, including system worksheets and Liveboards.</li></ul>
-This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
+This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
 </dlentry>
 
 <dlentry id="security-log-collection">
@@ -804,8 +804,8 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 <dd>For more information on embedding ThoughtSpot, see <a href="{{ site.baseurl }}/admin/ts-cloud/intro-embed.html">ThoughtSpot embedding solution</a>.</dd></dlentry>
 
 <dlentry id="spotdev-portal">
-<dt>SpotDev portal</dt>
-<dd>ThoughtSpot cloud now includes the <strong>SpotDev</strong> portal <span class="label label-beta">Beta</span> to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The <strong>SpotDev</strong> tab in the ThoughtSpot application is available for the users with administrator and developer privileges.</dd>
+<dt>SpotDev portal <span class="label label-beta">Beta</span></dt>
+<dd>ThoughtSpot cloud now includes the <strong>SpotDev</strong> portal in beta to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The <strong>SpotDev</strong> tab in the ThoughtSpot application is available for the users with administrator and developer privileges.</dd>
 <dd>The <strong>SpotDev</strong> portal provides a playground for developers and product owners to evaluate the Visual Embed APIs and preview the results. The portal also allows authorized users to rebrand the embedded content, <a href="{{ site.baseurl }}/admin/ts-cloud/customization-rebranding.html">customize styles</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/custom-actions.html">add custom menu actions</a> to the embedded instance.</dd><dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">SpotDev Portal</a>.</dd></dlentry>
 
 </dl>
