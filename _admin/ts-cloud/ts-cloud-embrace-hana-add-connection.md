@@ -19,6 +19,8 @@ To add a connection to SAP HANA:
     ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
+    {% include note.html content="If you have the redesigned data tab enabled, **Connections** is on the left side of the page. To add a connection, you click the name of the connection on the Connections page." %}
+
 3. Create a name for your connection, a description (optional), then select the SAP HANA connection type, and click **Continue**.
     ![Add a HANA connection]({{ site.baseurl }}/images/HANA-connectiontype.png "Add a Google SAP HANA connection")
     <!--  ![Add a SAP HANA connection]({{ site.baseurl }}/images/HANA-connectiontype.png "Add a SAP HANA connection") -->
@@ -41,6 +43,9 @@ To add a connection to SAP HANA:
 6. Click **Continue**.       
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+
+   {% include note.html content="If you have the redesigned data tab enabled, you have the option to not select any tables or columns for your connection. In that case, you can simply click **Create connection**." %} 
+
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/teradata-selecttables.png "Select tables and columns for your connection")
   <!--  ![Select tables and columns for your connection]({{ site.baseurl }}/images/HANA-selecttables.png "Select tables and columns for your connection") -->
 

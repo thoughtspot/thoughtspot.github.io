@@ -73,6 +73,10 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <dt>Azure AD external OAuth for Snowflake</dt>
 <dd>Snowflake now supports external OAuth through Microsoft Azure AD. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html">Configure Azure AD external OAuth for a Snowflake connection</a>.</dd>
 </dlentry>
+<dlentry id="connections-flow-data-portal">
+<dt>New connection creation flow with data tab redesign</dt>
+<dd>If you have the new redesigned data tab enabled, you'll see the new Data Portal page. To start creating a connection, you click <strong>Connections</strong> and then click the connection type you want to create. Also with the new data tab enabled, you have the option to create a connection without selecting tables or columns. On the Data Portal page you can create a SQL-based view from a connection.</dd>
+</dlentry>
 
 </dl>
 
