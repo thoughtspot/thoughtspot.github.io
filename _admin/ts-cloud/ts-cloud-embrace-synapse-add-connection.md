@@ -14,6 +14,8 @@ To connect to Synapse, follow these steps:
    <!--![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"") -->
    <!--![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
+   {% include note.html content="If you have the redesigned data tab enabled, **Connections** is on the left side of the page. To add a connection, you click the name of the connection on the Connections page." %}
+
 3. Create a name for your connection, a description (optional), then select the Synapse connection type, and click **Continue**.
 
    ![Add a Synapse connection]({{ site.baseurl }}/images/synapse-connectiontype.png "Add a Synapse connection")
@@ -34,6 +36,8 @@ To connect to Synapse, follow these steps:
 6. Click **Continue**.      
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+
+    {% include note.html content="If you have the redesigned data tab enabled, you have the option to not select any tables or columns for your connection. In that case, you can simply click **Create connection**." %} 
 
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
    <!--![Select tables and columns for your connection]({{ site.baseurl }}/images/synapse-selecttables.png "Select tables and columns for your connection") -->
