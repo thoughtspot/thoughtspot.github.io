@@ -43,6 +43,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <p>This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
 
+<dlentry id="auto-answer">
+<dt>Automated answer creation in Setup</dt>
+<dd><p>We simplified the steps to create Search visualizations during Setup. Now, you can select measures, attributes and date columns and immediately view suggested answers and visualizations. For more information, see [Create answers in Setup]({{ site.baseurl }}/admin/ts-cloud/automated-answer-creation.html).</p></dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="november-cloud-2021-business-user"></a>For the Business User</h3>

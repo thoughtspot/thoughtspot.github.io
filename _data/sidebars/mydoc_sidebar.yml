@@ -143,6 +143,9 @@ entries:
       - title: Visualize Search Results
         url: /admin/ts-cloud/visualize-search.html
         output: web
+      - title: Create answers in Setup
+        url: /admin/ts-cloud/automated-answer-creation.html
+        output: web
       - title: Compose Liveboards from Answers
         url: /admin/ts-cloud/pinboard-compose.html
         output: web
