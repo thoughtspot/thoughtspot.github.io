@@ -1,6 +1,6 @@
 ---
 title: [Create worksheets in Setup]
-last_updated: 06/07/2021
+last_updated: 12/14/2021
 summary: "To model your use case in analyst onboarding, create a worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -55,4 +55,4 @@ To generate a worksheet through the Setup tab, follow these steps:
 
 ## Next steps
 
-Proceed to [Visualize Search results as Answers]({{ site.baseurl }}/admin/ts-cloud/visualize-search.html) to complete Setup.
+Proceed to [Search and visualize]({{ site.baseurl }}/admin/ts-cloud/automated-answer-creation.html) to complete Setup.
