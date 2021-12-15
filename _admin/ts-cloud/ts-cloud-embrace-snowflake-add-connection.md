@@ -24,8 +24,6 @@ To connect to Snowflake:
 
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
-   {% include note.html content="If you have the redesigned data tab enabled, **Connections** is on the left side of the page. To add a connection, you click the name of the connection on the Connections page." %}
-
 3. Create a name for your connection, a description (optional), then select the Snowflake connection type, and click **Continue**.
 
      ![Add a Snowflake connection]({{ site.baseurl }}/images/embrace-snowflake-connection-type-ts-cloud.png "Add a Snowflake connection")
@@ -79,8 +77,6 @@ To connect to Snowflake:
 6. Click **Continue**.   
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
-
-   {% include note.html content="If you have the redesigned data tab enabled, you have the option to not select any tables or columns for your connection. In that case, you can simply click **Create connection**." %} 
 
    ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
 
