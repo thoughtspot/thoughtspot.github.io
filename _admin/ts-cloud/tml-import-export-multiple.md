@@ -10,19 +10,17 @@ permalink: /:collection/:path.html
 
 {% include content/liveboards-announcement.md %}
 
-The new Data tab and the SpotApps feature are both in <span class="label label-beta">Beta</span> in the November release. Starting in the November release, a **SpotApp** refers only to an out-of-the-box solution templates built for specific use cases and data sources, with pre-built worksheets, answers, and Liveboards, **not** to any collection of TML files. If the new Data tab and the SpotApps feature are not on in your environment, your user interface and experience may be different from the experience described in this article.
-
 You can migrate collections of Liveboards, answers, worksheets, views & tables packaged together as a zip file. You can do this with [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html), ThoughtSpot's solution for migrating data models (worksheets, tables, and views) and content (Liveboards and answers) between different environments, such as development and production. You can optionally edit these ThoughtSpot objects during the migration process.
 
 {: id="export-multiple"}
 ## Export related TML files
-You can export your own custom zip file of related TML files from the **Utilities** page. Additionally, when you export more than one object of the same type at a time, or when you export an object and its dependents, ThoughtSpot exports it as a zip file.
+You can export your own custom zip file of related TML files from the **SpotApps** page. Additionally, when you export more than one object of the same type at a time, or when you export an object and its dependents, ThoughtSpot exports it as a zip file.
 
 To export your own custom TML file collections, follow these steps.
 
-1. Navigate to the **Utilities** page: **Data > Utilities**. If you do not have the new Data page, navigate to the **SpotApps** page: **Data > SpotApps**.
+1. Navigate to the **SpotApps** page: **Data > SpotApps**.
 
-2. Select **Export SpotApps** or **Export TML**, depending on your version of the Data tab.
+2. Select **Export SpotApps**.
 
 3. In the **Export** interface, select the Liveboards, answers, views, tables, and worksheets that you would like to include in your zip file of related  TML files. For example, for a Marketing zip file, you might choose a Marketing worksheet, a Campaigns worksheet, a Pipeline Liveboard, and a few answers your Chief Marketing Officer created.
 
@@ -37,9 +35,9 @@ To export your own custom TML file collections, follow these steps.
 See [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html) for more information on exporting and importing objects.
 
 ## Import related TML files
-You can import your own custom zip file of related TML files from the **Utilities** page.
+You can import your own custom zip file of related TML files from the **SpotApps** page.
 
-1. From the **Utilities** or **SpotApps** page under the **Data** tab, depending on your version of the Data tab, click **Import TML** or **Import SpotApps**.
+1. From the **SpotApps** page under the **Data** tab, click **Import SpotApps**.
 
 2. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
@@ -52,14 +50,6 @@ You can import your own custom zip file of related TML files from the **Utilitie
 10. Click **Import &lt;number of files&gt; selected**.
 
 11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit** to return to the main object page.
-
-{: id="pre-built-spotapps"}
-## SpotApps
-SpotApps are in <span class="label label-beta">Beta</span> in the November release.
-
-SpotApps are ThoughtSpot's new out-of-the-box solution templates built for specific use cases and data sources. They are built on Blocks, which are pre-built pieces of code that are easy to download and implement directly from the product. The November release introduces the ServiceNow SpotApp and Analytics Blocks. Analytics Blocks include pre-built Worksheet, Answer, and Liveboard Blocks.
-
-To learn more about SpotApps, and how to deploy them in your environment, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html).
 
 ## Limitations
 You cannot import manually compressed .zip files. You can only import .zip files that you exported from ThoughtSpot: a custom set of TML files, an object and its associated data sources, or multiple objects of the same type that you exported from the object list page.

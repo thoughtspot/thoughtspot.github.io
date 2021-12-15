@@ -23,6 +23,8 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
+<!-- removing these features for now per alok. may add back in
+
 <dlentry id="spotapps">
 <dt>ServiceNow SpotApp <span class="label label-beta">Beta</span></dt>
 <dd><p>SpotApps are ThoughtSpot's new out-of-the-box solution templates built for specific use cases and data sources. They are built on Blocks, which are pre-built pieces of code that are easy to download and implement directly from the product. This release introduces the ServiceNow SpotApp and Analytics Blocks. Analytics Blocks include pre-built Worksheet, Answer, and Liveboard Blocks.</p>
@@ -43,9 +45,11 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 <p>This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
 
+-->
+
 <dlentry id="auto-answer">
 <dt>Automated answer creation in Setup</dt>
-<dd><p>We simplified the steps to create Search visualizations during Setup. Now, you can select measures, attributes and date columns and immediately view suggested answers and visualizations. For more information, see [Create answers in Setup]({{ site.baseurl }}/admin/ts-cloud/automated-answer-creation.html).</p></dd>
+<dd><p>We simplified the steps to create Search visualizations during Setup. Now, you can select measures, attributes and date columns and immediately view suggested answers and visualizations. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/automated-answer-creation.html">Create answers in Setup</a>.</p></dd>
 </dlentry>
 
 </dl>
@@ -84,10 +88,14 @@ ThoughtSpot plans to support for several releases, and then retire, internal pro
 <dt>Azure AD external OAuth for Snowflake</dt>
 <dd>Snowflake now supports external OAuth through Microsoft Azure AD. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html">Configure Azure AD external OAuth for a Snowflake connection</a>.</dd>
 </dlentry>
+
+<!-- removing for now per alok
 <dlentry id="connections-flow-data-portal">
 <dt>New connection creation flow with data tab redesign</dt>
 <dd>If you have the new redesigned data tab enabled, you'll see the new Data Portal page. To start creating a connection, you click <strong>Connections</strong> and then click the connection type you want to create. Also with the new data tab enabled, you have the option to create a connection without selecting tables or columns. On the Data Portal page you can create a SQL-based view from a connection.</dd>
 </dlentry>
+
+-->
 
 </dl>
 

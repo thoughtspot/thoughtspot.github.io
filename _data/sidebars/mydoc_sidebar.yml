@@ -158,9 +158,9 @@ entries:
       - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
         output: web
-      - title: SpotApps
-        url: /admin/ts-cloud/app-templates.html
-        output: web
+#      - title: SpotApps
+#        url: /admin/ts-cloud/app-templates.html
+#        output: web
       - title: Migrate multiple TML files
         url: /admin/ts-cloud/tml-import-export-multiple.html
         output: web
