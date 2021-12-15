@@ -54,6 +54,12 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 <dl>
 
+<dlentry id="liveboard-announcement">
+<dt></dt>
+<dd><p>Starting in December 2021, ThoughtSpot refers to Liveboards instead of pinboards. With Liveboards, you can have an interactive experience and get granular insights through live queries on cloud data, tailored for you. You can use Livebaords to iterate, explore, and drill into more insights, and tell a continuously evolving data story.<br/>
+ThoughtSpot plans to support for several releases, and then retire, internal processes and external methods that use the older naming convention.</p></dd>
+</dlentry>
+
 <dlentry id="session-validity">
 <dt>User session timeout and validity</dt>
 <dd>ThoughtSpot increased the duration of <strong>idle session timeouts</strong> and the <strong>maximum session validity</strong>, when you click <strong>Remember me</strong> on the login screen. There is no change to the duration when you do not click <strong>Remember me</strong>.
