@@ -1,1 +1,1 @@
-{% include note.html content="ThoughtSpot has renamed Pinboards to Liveboards. The functionality remains the same." %}
+{% include note.html content="Starting in December 2021, ThoughtSpot rebranded pinboards as Liveboards. For backward compatibility, we currently support internal processes and external methods that use the older naming convention." %}
