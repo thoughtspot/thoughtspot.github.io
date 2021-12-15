@@ -50,8 +50,6 @@ To connect to BigQuery:
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
-   {% include note.html content="If you have the redesigned data tab enabled, you have the option to not select any tables or columns for your connection. In that case, you can simply click **Create connection**." %}
-
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
   <!--  ![Select tables and columns for your connection]({{ site.baseurl }}/images/gbq-selecttables.png "Select tables and columns for your connection") -->
 
