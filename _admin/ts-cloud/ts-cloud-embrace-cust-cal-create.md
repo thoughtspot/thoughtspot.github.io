@@ -33,11 +33,7 @@ To create a custom calendar, do the following:
 
    The Data Objects page appears.
 
-   {% include note.html content="If you have the redesigned data tab enabled, the Data Portal page appears." %}
-
 2. Click the More menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select ![calendar icon]({{ site.baseurl }}/images/calendar.png){: .inline} **Custom calendar**.
-
-   {% include note.html content="If you have the redesigned data tab enabled, you access the Custom calendar page by clicking **Utilities** on the left side of the page, and then clicking **Add custom calendar**." %}
 
    The Custom calendar page appears.
 
