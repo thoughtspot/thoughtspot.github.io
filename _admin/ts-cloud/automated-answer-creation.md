@@ -17,9 +17,9 @@ To see suggested Search visualizations in Setup, follow these steps:
 2. Proceed to Step 1 of Analyst Setup by choosing the analyst data tile. <br/>
  **I want to: set up data connections, define relationships, and create worksheets to help my team search and analyze data**.
 
-2. Complete Step 1 of Setup, [setting up your connection]({{ site.baseurl }}admin/ts-cloud/connect-data.html).
+2. Complete Step 1 of Setup, [setting up your connection]({{ site.baseurl }}/admin/ts-cloud/connect-data.html).
 
-3. Complete Step 2 of Setup, [Model data and create a worksheet](({{ site.baseurl }}admin/ts-cloud/worksheet-create-setup.html). Proceed to **Search and visualize**.
+3. Complete Step 2 of Setup, [Model data and create a worksheet]({{ site.baseurl }}/admin/ts-cloud/worksheet-create-setup.html). Proceed to **Search and visualize**.
 
 4. The **Select columns from worksheet** interface appears. Choose at least one measure and attribute from your data. We recommend you select multiple columns to generate more possible answers.<br/>
  {% include note.html content="If your data contains date information, you must select a date column as well as measure and attribute columns in order to generate your answers."%}

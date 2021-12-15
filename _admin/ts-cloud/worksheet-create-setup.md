@@ -25,7 +25,7 @@ To generate a worksheet through the Setup tab, follow these steps:
 
 1. Enter Setup by logging in for the first time, or by selecting **Profile** from the user icon at the top right of the page and clicking **Revisit** under **Preferences**.
 
-2. Complete Step 1 of Setup,[setting up your connection]({{ site.baseurl }}admin/ts-cloud/connect-data.html).
+2. Complete Step 1 of Setup, [setting up your connection]({{ site.baseurl }}/admin/ts-cloud/connect-data.html).
 
 3. Select Step 2, *Model data and create a Worksheet.*
 
