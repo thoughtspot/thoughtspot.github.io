@@ -1,17 +1,35 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 11/11/2021
+last_updated: 12/16/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
 
+## December 16, 2021
+
+These are the changes we made to Free Trial this week:
+
+- ThoughtSpot now displays rotating messages while loading the worksheet you create in Setup.
+    ![]({{ site.baseurl }}/worksheet-saving-dialog.gif  "Free Trial worksheet loading dialog"){: .inline}
+
+- Users now see a warning to delete dependent objects before deleting or replacing uploaded CSV files from Free Trial.
+    ![]({{ site.baseurl }}/free-trial-csv-delete-dependencies.png  "Free Trial uploaded CSV delete dependencies dialog"){: .inline}
+
+- Users now see search suggestions for indexed formula columns.
+
+- We fixed a bug that displayed both an error message and a successful password change message after users updated Free Trial passwords.
+
+- We fixed a bug causing queries with multiple one-to-many joins, or “fan trap” queries, to erroneously over-count data when the Primary Key/Foreign Key was not identified in metadata.
+
+
+
 ## November 11, 2021
 
 ### Free Trial Make It Shine
 
-These are the changes we made to Free Trial this week: 
+These are the changes we made to Free Trial this week:
 
 - When you create a connection in Setup, ThoughtSpot now automatically selects that connection for **Step 2: model data and create a worksheet**.
 - We fixed a bug that caused Intercom to relaunch when users click **Upgrade now**.
