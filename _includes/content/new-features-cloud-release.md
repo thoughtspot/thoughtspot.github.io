@@ -108,6 +108,11 @@ ThoughtSpot plans to support for several releases, and then retire, internal pro
 <dd>ThoughtSpot now supports 2 methods to increase the duration of validity for your <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html#saml-assertion">SAML assertion</a>: the <code>SessionNotOnOrAfter</code> attribute and the <code>maxAuthenticationAge</code> parameter. <code>SessionNotOnOrAfter</code> overrules <code>maxAuthenticationAge</code> if both are present. If your IDP does not support use of <code>SessionNotOnOrAfter</code>, remove that attribute from your IDP assertion and <a href="{{ site.baseurl }}/admin/misc/contact.html">ask ThoughtSpot Support</a> to enable <code>maxAuthenticationAge</code>.</dd>
 </dlentry>
 
+<dlentry id="multiple-idp">
+<dt>Multiple Identity Providers for SAML login</dt>
+<dd>You can now configure SAML SSO login for more than one Identity Provider (IDP). You may have multiple groups of users who need to log into ThoughtSpot but are managed by separate IDPs. To configure this, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
+</dlentry>
+
 <dlentry id="vpn">
 <dt>OpenVPN support for Google BigQuery and Azure Synapse connections</dt>
 <dd>ThoughtSpot now supports secure access from ThoughtSpot Cloud to your data in Google BigQuery and Azure Synapse, through your OpenVPN server. ThoughtSpot supports the following OpenVPN server implementations:

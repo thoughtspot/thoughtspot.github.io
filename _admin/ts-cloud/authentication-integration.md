@@ -12,6 +12,9 @@ ThoughtSpot supports the Single Sign-On (SSO) authentication method with the Sec
 
 By default, [local authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-local.html) is enabled. Use this article to learn how to configure a SAML integration with an external IdP. To configure SAML in an embedded environment, refer to [SAML SSO authentication](https://developers.thoughtspot.com/docs/?pageid=saml-sso){: target="_blank"}.
 
+### SAML authentication with multiple IDPs
+You may have multiple groups of users who need to log into ThoughtSpot but are managed by separate IDPs. You can configure SAML SSO login for more than one Identity Provider. To configure this, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
+
 ## About SAML authentication
 The SAML SSO authentication involves several entities and components.
 
