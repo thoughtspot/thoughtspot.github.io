@@ -12,10 +12,10 @@ permalink: /:collection/:path.html
 These are the changes we made to Free Trial this week:
 
 - ThoughtSpot now displays rotating messages while loading the worksheet you create in Setup.
-    ![]({{ site.baseurl }}/worksheet-saving-dialog.gif  "Free Trial worksheet loading dialog"){: .inline}
+    ![]({{ site.baseurl }}/images/worksheet-saving-dialog.gif  "Free Trial worksheet loading dialog"){: .inline}
 
 - Users now see a warning to delete dependent objects before deleting or replacing uploaded CSV files from Free Trial.
-    ![]({{ site.baseurl }}/free-trial-csv-delete-dependencies.png  "Free Trial uploaded CSV delete dependencies dialog"){: .inline}
+    ![]({{ site.baseurl }}/images/free-trial-csv-delete-dependencies.png  "Free Trial uploaded CSV delete dependencies dialog"){: .inline}
 
 - Users now see search suggestions for indexed formula columns.
 
