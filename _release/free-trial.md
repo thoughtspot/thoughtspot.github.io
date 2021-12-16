@@ -9,13 +9,9 @@ permalink: /:collection/:path.html
 
 ## December 16, 2021
 
+### Free Trial Make It Shine
+
 These are the changes we made to Free Trial this week:
-
-- ThoughtSpot now displays rotating messages while loading the worksheet you create in Setup.
-    ![]({{ site.baseurl }}/images/worksheet-saving-dialog.gif  "Free Trial worksheet loading dialog"){: .inline}
-
-- Users now see a warning to delete dependent objects before deleting or replacing uploaded CSV files from Free Trial.
-    ![]({{ site.baseurl }}/images/free-trial-csv-delete-dependencies.png  "Free Trial uploaded CSV delete dependencies dialog"){: .inline}
 
 - Users now see search suggestions for indexed formula columns.
 
@@ -23,6 +19,17 @@ These are the changes we made to Free Trial this week:
 
 - We fixed a bug causing queries with multiple one-to-many joins, or “fan trap” queries, to erroneously over-count data when the Primary Key/Foreign Key was not identified in metadata.
 
+## December 9, 2021
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial this week:
+
+- ThoughtSpot now displays rotating messages while loading the worksheet you create in Setup.
+    ![]({{ site.baseurl }}/images/worksheet-saving-dialog.gif  "Free Trial worksheet loading dialog"){: .inline}
+
+- Users now see a warning to delete dependent objects before deleting or replacing uploaded CSV files from Free Trial.
+    ![]({{ site.baseurl }}/images/free-trial-csv-delete-dependencies.png  "Free Trial uploaded CSV delete dependencies dialog"){: .inline}
 
 
 ## November 11, 2021
