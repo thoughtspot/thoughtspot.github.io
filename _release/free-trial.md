@@ -15,8 +15,6 @@ These are the changes we made to Free Trial this week:
 
 - Users now see search suggestions for indexed formula columns.
 
-- We fixed a bug that displayed both an error message and a successful password change message after users updated Free Trial passwords.
-
 - We fixed a bug causing queries with multiple one-to-many joins, or “fan trap” queries, to erroneously over-count data when the Primary Key/Foreign Key was not identified in metadata.
 
 ## December 9, 2021
