@@ -9,6 +9,8 @@ You can map your SAML groups from your Identity Provider (IDP) to your ThoughtSp
 
 ThoughtSpot updates a user's groups when they log into ThoughtSpot using SAML. If you map your SAML groups to ThoughtSpot groups, ThoughtSpot does not update individual users' groups until they log into ThoughtSpot using SAML.
 
+{% include note.html content="If you configure SAML group mapping, your groups in your IDP overrule your groups in ThoughtSpot. For example, if you add a user to the Sales group and create a new group called Marketing in ThoughtSpot, but do not add the user to the Sales group or create the Marketing group in your IDP, your IDP removes these changes when the affected users next log in." %}
+
 ## Prerequisites
 Before you can map SAML groups, you must [configure SAML authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-integration.html).
 
