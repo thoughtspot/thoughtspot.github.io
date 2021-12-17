@@ -55,7 +55,7 @@ To obtain the model file:
 
     ![Download the model file]({{ site.baseurl }}/images/model-file-download.png "Download the model file")
 
-5. Change the file extension to `.tsv`. This ensures that your editor (vi/vim, and so on) knows the file format is tab-separated values. **If you are using Excel**, change the file extension to `.txt`. This ensure that Excel knows the file format is tab-separated values.
+5. Change the file extension to `.tsv`. This ensures that your editor (vi/vim, and so on) knows the file format is tab-separated values. **If you are using Excel**, change the file extension to `.txt`. This ensures that Excel knows the file format is tab-separated values.
 
     The model file downloads and uploads only in the TSV (tab-separated values) format, but its extension is `.xls`, which can prompt editors to open the file in the wrong format. Do not change the existing TSV format. To avoid this problem, change the file extension to `.tsv`.
 
