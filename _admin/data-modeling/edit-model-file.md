@@ -55,9 +55,9 @@ To obtain the model file:
 
     ![Download the model file]({{ site.baseurl }}/images/model-file-download.png "Download the model file")
 
-5. Change the file extension to `.tsv`. This ensures that your editor (vi/vim, and so on) knows the file contains tab-separated values. **If you are using Excel**, change the file extension to `.txt`. You will change it to `.tsv` later.
+5. Change the file extension to `.tsv`. This ensures that your editor (vi/vim, and so on) knows the file format is tab-separated values. **If you are using Excel**, change the file extension to `.txt`. This ensure that Excel knows the file format is tab-separated values.
 
-    The model file downloads and uploads only in the TSV (tab-separated values) format, but its extension is `.xls`, which can prompt editors to suggest you save the file in xls format when you open or edit the file. Do not change the existing TSV format. To avoid this problem, change the file extension to `.tsv`.
+    The model file downloads and uploads only in the TSV (tab-separated values) format, but its extension is `.xls`, which can prompt editors to open the file in the wrong format. Do not change the existing TSV format. To avoid this problem, change the file extension to `.tsv`.
 
 ## Edit the file and change the settings
 
@@ -80,8 +80,7 @@ column header. To make changes in the model file:
 4. Type in the new value.
 5. After making all your changes, save the model file.
 
-    For ThoughtSpot to allow the file to upload, the model file must be saved in TSV (tab-separated values) format, even if you are using Excel, and it must be UTF-8 encoded. If you already changed the file extension to .tsv after downloading, your file editor should save it in TSV format automatically. Otherwise, you will not be able to upload it after
-    making your edits.
+    For ThoughtSpot to allow the file to upload, the model file format must be TSV (tab-separated values), and it must be UTF-8 encoded. If you already changed the file extension to .tsv (most editors) or .txt (Excel) after downloading, your file editor should save it in TSV format automatically. Otherwise, you will not be able to upload it after making your edits.
 
 ## Upload the edited file
 
