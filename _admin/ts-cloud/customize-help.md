@@ -7,8 +7,10 @@ permalink: /:collection/:path.html
 ---
 {% include note.html content="The new Information Center is not customizable. If you have the new Information Center and would like to use the customizable Help menu described in this article, contact ThoughtSpot Support." %}
 
-You can customize the Help menu for your ThoughtSpot application to tailor it to your
-organization. When you configure these Help settings, you set system-wide defaults for all your
+You can customize the classic Help menu for your ThoughtSpot application to tailor it to your
+organization. You ***cannot*** customize the new Information Center.
+
+When you configure the Help settings on the classic Help menu, you set system-wide defaults for all your
 users.
 
 When your ThoughtSpot users click the Help icon, they see a list of links.
@@ -25,6 +27,8 @@ data available in ThoughtSpot, where to get support internally, or
 company-specific training.
 
 To customize the Help menu, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Help customization** from the side navigation bar that appears.
+
+Note that you may not see the **Help customization** option, if your ThoughtSpot environment uses the new Information Center, which you cannot customize. To enable the customizable help menu, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 ![Admin Console - Help customization]({{ site.baseurl }}/images/admin-portal-help-customization.png "Admin Console - Help customization")
 
