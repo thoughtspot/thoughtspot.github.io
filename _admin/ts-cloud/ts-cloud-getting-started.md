@@ -49,11 +49,13 @@ Review the available user groups and privileges so you can assign people to the 
 Completing this step lets all users in your organization perform live queries. Choose your cloud data warehouse type, and follow the connection instructions.
 - [Amazon Redshift]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-redshift.html){:target="_blank"}
 - [Azure Synapse]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-synapse.html){:target="_blank"}
+- [Databricks]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-databricks.html){:target="_blank"}
 - [Google BigQuery]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-gbq.html){:target="_blank"}
 - [Oracle ADW]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-adw.html){:target="_blank"}
+- [SAP HANA]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana.html){:target="_blank"}
 - [Snowflake]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-snowflake.html){:target="_blank"}
 - [Starburst]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-starburst.html){:target="_blank"}
-- [Databricks]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-databricks.html){:target="_blank"}
+- [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata.html){:target="_blank"}
 
 ## Step 5: Model your data for searches
 

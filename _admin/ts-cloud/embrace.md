@@ -11,15 +11,15 @@ permalink: /:collection/:path.html
 If your company stores source data externally in data warehouses, you can use ThoughtSpot Connections to directly query that data and use ThoughtSpot's analysis and visualization features.
 
 On ThoughtSpot Cloud, you can connect to the following external databases:
-- [Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html)
 - [Amazon Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html)
-- [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
-- [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
-- [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
 - [Databricks]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html)
-- [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata.html)
+- [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
+- [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 - [SAP HANA]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana.html)
+- [Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html)
+- [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
+- [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata.html)
 
 ## How it works
 
@@ -204,13 +204,21 @@ The following list captures the specific limitations across the different databa
 
 ## Next steps
 
--   **[Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)**  
-Create the connection between ThoughtSpot and tables in an external Snowflake database.
--   **[Add a Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-add-connection.html)**  
-Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.
--   **[Add a Google BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html)**  
-Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
+-   **[Add an Amazon Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Amazon Redshift database.
 -   **[Add an Azure Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
+-   **[Add a Databricks connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Databricks database.
+-   **[Add a Google BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
 -   **[Add an Oracle Autonomous Data Warehouse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Oracle Autonomous Data Warehouse database.
+-   **[Add an SAP Hana connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external SAP Hana database.
+-   **[Add a Starburst connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Starburst database.
+-   **[Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Snowflake database.
+-   **[Add a Teradata connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external Teradata database.
