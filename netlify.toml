@@ -1,7 +1,3 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src *;"
 
 ## This redirects to other doc branches
 [[redirects]]
