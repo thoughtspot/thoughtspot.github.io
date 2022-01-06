@@ -61,7 +61,7 @@ The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will 
 <dlentry><dt>Send feedback</dt>
 <dd>The option to send product feedback, from the more options menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="more options menu icon" class="inline"/> on an Answer or search.</dd></dlentry>
 <dlentry><dt>Client-side summaries for tables</dt>
-<dd>We consolidated client-side column summaries and headlines from the backend into new headline summaries that come from the backend. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
+<dd>We consolidated column summaries and headlines into one summary, called a headline summary. To calculate these headline summaries, ThoughtSpot executes one SQL query for each summary against the underlying database. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
 <dlentry><dt>Ask an Expert</dt>
 <dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
 </dl>
