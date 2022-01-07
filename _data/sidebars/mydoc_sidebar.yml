@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts8.nov.cl
+  docversion: 8.0.0.cl
   # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
@@ -205,6 +205,9 @@ entries:
           output: web
         - title: Delete connection
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-connection.html
+          output: web
+        - title: Configure OAuth
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-oauth.html
           output: web
         - title: Best practices
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-best.html
