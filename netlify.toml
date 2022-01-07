@@ -1,8 +1,8 @@
 # security policies
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src * 'unsafe-eval' 'unsafe-inline' data: filesystem: about: blob:;"
+#[[headers]]
+#  for = "/*"
+#  [headers.values]
+#    Content-Security-Policy = "default-src * 'unsafe-eval' 'unsafe-inline' data: filesystem: about: blob:;"
 ## This redirects to other doc branches
 [[redirects]]
   from = "/ts7.oct.cl/*"
