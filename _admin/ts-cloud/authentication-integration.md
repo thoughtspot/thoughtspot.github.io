@@ -45,7 +45,7 @@ Some of the most commonly used elements are:
 
     The user authentication and authorization information issued by the IdP. SAML assertions contain all the information necessary for a service provider to confirm if the user identity is valid.
 
-    ThoughtSpot supports 2 methods to increase the duration of validity for your SAML assertion: the `SessionNotOnOrAfter` attribute and the `maxAuthenticationAge` parameter. `SessionNotOnOrAfter` overrules `maxAuthenticationAge` if both are present. If your IDP does not support use of `SessionNotOnOrAfter`, remove that attribute from your IDP assertion and [ask ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable `maxAuthenticationAge`.
+    ThoughtSpot supports 2 methods to increase the duration of validity for your SAML assertion: the `SessionNotOnOrAfter` attribute and the `maxAuthenticationAge` parameter. You can ask ThoughtSpot to disable either one of these checks. If you use both, and either check fails, ThoughtSpot does not authenticate the user. Some IDPs do not support use of `SessionNotOnOrAfter`. If your IDP does not support use of `SessionNotOnOrAfter`, remove that attribute from your IDP assertion and [ask ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable `maxAuthenticationAge`.
 
 - **Metadata**
 
