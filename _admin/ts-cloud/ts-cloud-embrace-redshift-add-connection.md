@@ -1,17 +1,25 @@
 ---
 title: [Add an Amazon RedShift connection]
-last_updated: 4/13/2021
+last_updated: 1/7/2022
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-## Enabling SSL in Amazon Redshift
+## Before you begin
+
+If you are going to use SSL or OAuth, you must configure them before you can add a Redshift connection.
+
+### Enabling SSL in Amazon Redshift
 
 If you need to create a secure connection to Amazon Redshift, you must edit the "parameter group" assigned to your Redshift cluster and enable the *require_SSL* flag.
 
 To enable **FIPS-compliant SSL** mode, set both the *use_fips_ssl* parameter and the *require_SSL* parameter to **true** in the parameter group that is associated with your Redshift cluster.
 
 For more information, see [Connect using SSL](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html){:target="_blank"} in Amazon's Redshift documentation.
+
+### Configuring OAuth
+
+If you need to use OAuth with Redshift, you must configure an OpenID Connect (OIDC) provider in AWS IAM. For details, see [Configure OAuth for a Redshift connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-oauth.html)
 
 ## Adding a Redshift connection
 
@@ -21,15 +29,22 @@ To connect to Amazon Redshift:
 
 2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
-    <!-- ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"") -->
-
 3. Create a name for your connection, a description (optional), then select the Redshift connection type, and click **Continue**.
 
     ![Choose connection type]({{ site.baseurl }}/images/embrace-redshift-connection-type-ts-cloud.png "Choose connection type")
 
-4. Enter the connection details for your Redshift data source.
+4. Enter the connection details for your Redshift data source using Service Account, IAM or OAuth.
 
     ![Enter connection details]({{ site.baseurl }}/images/redshift-connectiondetails.png "Enter connection details")
+
+   For Service Account authentication, do the following:
+   - Enter Host, Port, User, Password, and Database.
+
+   For IAM authentication, do the following:
+   - Enter Host, Port, Database, Db User, Access Key, and Secret Key.
+
+   For OAuth authentication, do the following:
+   - Enter Host, Port, Database, OAuth Client ID, OAuth Client Secret, Auth Url, Access token Url, Role ARN, and DbGroups.       
 
      Refer to the [Redshift connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
 

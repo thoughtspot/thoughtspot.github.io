@@ -125,25 +125,25 @@ To create an IAM role with IdP trust, do the following:
 
 3. Add the IdP resource as a trusted entity for assuming this role.
 
-  ```
-  {
-  "Version": "2012-10-17",
-  "Statement": [
+    ```
     {
-      "Effect": "Allow",
-      "Principal": {
-        "Federated": "arn:aws:iam::111111111111:oidc-provider/abcxyz.okta.com/oauth2/default"
-      },
-      "Action": "sts:AssumeRoleWithWebIdentity",
-      "Condition": {
-        "StringEquals": {
-          "abcxyz.okta.com/oauth2/default:aud": "0123abc456xyz"
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": {
+          "Federated": "arn:aws:iam::111111111111:oidc-provider/abcxyz.okta.com/oauth2/default"
+        },
+        "Action": "sts:AssumeRoleWithWebIdentity",
+        "Condition": {
+          "StringEquals": {
+            "abcxyz.okta.com/oauth2/default:aud": "0123abc456xyz"
+          }
         }
       }
-    }
-  ]
-}
-```
+    ]
+  }
+  ```
   The role/policy requirement is same as that for SAML integration documented in  [Amazon's Redshift documentation](https://aws.amazon.com/blogs/big-data/federate-amazon-redshift-access-with-okta-as-an-identity-provider/){:target="_blank"}.  
 
 4. Obtain the following connection properties from above configurations:
@@ -152,11 +152,11 @@ To create an IAM role with IdP trust, do the following:
 
  - **Client Secret**: Client Secret of the application registered with the OAuth provider (IdP). An alphanumeric string that should be picked from the IdP console (e.g. Okta dashboard).
 
- - **Role ARN**: Amazon Resource Name (ARN) of role. ARN of the role defined with a policy allowing the usage of token based authentication and permissions on Redshift. It is in the following format: `arn:aws:iam::<account_id>:role/<role_name>`.
+ - **Role ARN**: Amazon Resource Name (ARN) of the role. ARN of the role defined with a policy allowing the usage of token based authentication and permissions on Redshift. It is in the following format: `arn:aws:iam::<account_id>:role/<role_name>`.
 
- - **Authorization Url**: URL of the authorization server to where authorization code request is sent by Thoughtspot. It is usually available in the IdP's console.
+ - **Authorization Url**: URL of the authorization server to where the authorization code request is sent by ThoughtSpot. It is usually available in the IdP's console.
 
- - **Access token Url**: Endpoint provided by the authorization server to where token request is sent by Thoughtspot exchanging the authorization code obtained for the client. It is usually available in the IdP's console.
+ - **Access token Url**: Endpoint provided by the authorization server to where the token request is sent by ThoughtSpot exchanging the authorization code obtained for the client. It is usually available in the IdP's console.
 
  - **DbGroups**: A comma-separated list of existing database group names that user joins for the current session.              
 
