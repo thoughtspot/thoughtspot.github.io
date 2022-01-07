@@ -35,5 +35,41 @@ You need specific information to establish a seamless and secure connection. The
    <dlentry id="database">
      <dt>Database</dt>
      <dd>Specify the database associated with the account.</dd>
-   </dlentry>    
+   </dlentry>
+   <dlentry id="dbuser">
+     <dt>(IAM only) Db User</dt>
+     <dd>Specify the db user associated with the account.</dd>
+   </dlentry>
+   <dlentry id="access-key">
+     <dt>(IAM only) Access Key</dt>
+     <dd>Specify the access key associated with the account.</dd>
+   </dlentry>
+   <dlentry id="secret-key">
+     <dt>(IAM only) Secret Key</dt>
+     <dd>Specify the access key associated with the account.</dd>
+   </dlentry>
+   <dlentry id="oauth-client-id">
+     <dt>(OAuth only) OAuth Client ID</dt>
+     <dd>Specify the OAuth client ID associated with the account.</dd>
+   </dlentry>
+   <dlentry id="oauth-client-secret">
+     <dt>(OAuth only) OAuth Client Secret</dt>
+     <dd>Specify the OAuth client secret associated with the account.</dd>
+   </dlentry>
+   <dlentry id="oauth-auth-url">
+     <dt>(OAuth only) OAuth Client Secret</dt>
+     <dd>Specify the Auth Url associated with the account.</dd>
+   </dlentry>
+   <dlentry id="oauth-access-token-url">
+     <dt>(OAuth only) Access token Url</dt>
+     <dd>Specify the Access token URL associated with the account.</dd>
+   </dlentry>
+   <dlentry id="oauth-role-arn">
+     <dt>(OAuth only) Access token Url</dt>
+     <dd>Specify the role ARN associated with the account.</dd>
+   </dlentry>
+   <dlentry id="oauth-db-groups">
+     <dt>(OAuth only) DbGroups</dt>
+     <dd>Specify the DbGroups associated with the account.</dd>
+   </dlentry>                                           
  </dl>
