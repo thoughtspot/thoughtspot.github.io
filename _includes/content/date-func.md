@@ -98,10 +98,41 @@
       <td>Subtracts the second date from the first date and returns the result in number of days, rounded down if not exact.</td>
       <td><code class="highlighter-rouge">diff_days (01/15/2014, 01/17/2014) = -2</code><br><code class="highlighter-rouge">diff_days (purchased, shipped)</code></td>
     </tr>
+    <tr id="diff_hours">
+      <td><code>diff_hours</code></td>
+      <td>Subtracts the hour of the second date from the hour of the first date and returns the result in number of hours.</td>
+      <td><code class="highlighter-rouge">diff_hours (01/15/2014 01:59:59, 01/15/2014 02:00:00) = -1</code><br><code class="highlighter-rouge">diff_hours (01/15/2014 01:00:00, 01/15/2014 01:59:59) = 0</code><br><code class="highlighter-rouge">diff_hours (clicked, submitted)</code></td>
+    </tr>
+    <tr id="diff_minutes">
+      <td><code>diff_minutes</code></td>
+      <td>Subtracts the minute of the second date from the minute of the first date and returns the result in number of minutes.</td>
+      <td><code class="highlighter-rouge">diff_minutes (01/15/2014 01:59:59, 01/15/2014 02:00:00) = -1</code><br><code class="highlighter-rouge">diff_minutes (01/15/2014 01:00:00, 01/15/2014 01:00:59) = 0</code><br><code class="highlighter-rouge">diff_minutes (clicked, submitted)</code></td>
+    </tr>
+    <tr id="diff_months">
+      <td><code>diff_months</code></td>
+      <td>Subtracts the month of the second date from the month of the first date and returns the result in number of months.<br><br>Use the optional third parameter to specify if ThoughtSpot should use a custom calendar to calculate the result.</td>
+      <td><code class="highlighter-rouge">diff_months (12/25/2013, 01/01/2014) = -1</code><br><code class="highlighter-rouge">diff_months (01/01/2014, 01/25/2014) = 0</code><br><code class="highlighter-rouge">diff_months (purchased, shipped)</code><br><code class="highlighter-rouge">diff_months (purchased, shipped, fiscal)</code></td>
+    </tr>
+    <tr id="diff_quarters">
+      <td><code>diff_quarters</code></td>
+      <td>Subtracts the quarter of the second date from the quarter of the first date and returns the result in number of quarters.<br><br>Use the optional third parameter to specify if ThoughtSpot should use a custom calendar to calculate the result.</td>
+      <td><code class="highlighter-rouge">diff_quarters (12/31/2013, 01/01/2014) = -1</code><br><code class="highlighter-rouge">diff_quarters (01/01/2014, 03/31/2014) = 0</code><br><code class="highlighter-rouge">diff_quarters (purchased, shipped)</code><br><code class="highlighter-rouge">diff_quarters (purchased, shipped, fiscal)</code></td>
+    </tr>
     <tr id="diff_time">
       <td><code>diff_time</code></td>
       <td>Subtracts the second date from the first date and returns the result in number of seconds.</td>
       <td><code class="highlighter-rouge">diff_time (01/30/2014, 01/31/2014) = -86,400</code><br><code class="highlighter-rouge">diff_time (clicked, submitted)</code></td>
+    </tr>
+    <tr id="diff_weeks">
+      <td><code>diff_weeks</code></td>
+      <td>Subtracts the week of the second date from the week of the first date and returns the result in number of weeks.<br><br>Use the optional third parameter to specify if ThoughtSpot should use a custom calendar to calculate the result.</td>
+      <td><code class="highlighter-rouge">diff_weeks (01/05/2014, 01/06/2014) = -1</code><br><code class="highlighter-rouge">diff_weeks (01/06/2014, 01/12/2014) = 0</code><br><code class="highlighter-rouge">diff_weeks (purchased, shipped)</code><br><code class="highlighter-rouge">diff_weeks (purchased, shipped, fiscal)</code></td>
+    </tr>
+    <tr id="diff_years">
+      <td><code>diff_years</code></td>
+      <td>Subtracts the second date from the first date and returns the result in number of years.<br><br>
+      Use the optional third parameter to specify if ThoughtSpot should use a custom calendar to calculate the result.</td>
+      <td><code class="highlighter-rouge">diff_years (12/25/2013, 01/01/2014) = -1</code><br><code class="highlighter-rouge">diff_years (01/01/2014, 12/25/2014) = 0</code><br><code class="highlighter-rouge">diff_years (purchased, shipped)</code><br><code class="highlighter-rouge">diff_years (purchased, shipped, fiscal)</code></td>
     </tr>
     <tr id="hour_of_day">
       <td><code>hour_of_day</code></td>
