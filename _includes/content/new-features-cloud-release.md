@@ -47,6 +47,14 @@ The latest release of ThoughtSpot Cloud contains several new and enhanced featur
 
 -->
 
+<dlentry id="date-interval-functions">
+<dt>Date interval functions</dt>
+<dd><p>In this release, we introduced new functions for computing time intervals between two dates. In addition to the existing <a href="{{ site.baseurl }}/reference/formula-reference.html#diff_days">diff_days</a> and <a href="{{ site.baseurl }}/reference/formula-reference.html#diff_time">diff_time</a> functions, you can now use <code>diff_years</code>, <code>diff_quarters</code>, <code>diff_months</code>, <code>diff_weeks</code>, <code>diff_hours</code>, and <code>diff_minutes</code> to calculate time intervals at these additional granularities.</p>
+<p>If your organization uses a <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">custom calendar</a>, which can specify a new starting date of a year, starting dates of quarters, a starting day of the month, and a starting day of the week, use the optional custom calendar argument with these functions to calculate the difference between the two dates.</p>
+
+</dd>
+</dlentry>
+
 <dlentry id="auto-answer">
 <dt>Automated answer creation in Setup</dt>
 <dd><p>We simplified the steps to create Search visualizations during Setup. Now, you can select measures, attributes and date columns and immediately view suggested answers and visualizations. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/automated-answer-creation.html">Create answers in Setup</a>.</p></dd>
