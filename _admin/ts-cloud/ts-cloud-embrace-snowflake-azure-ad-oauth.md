@@ -44,6 +44,8 @@ To create a Snowflake OAuth resource, do the following:
 
     {% include note.html content="If the Application ID URI is not used, you must create a security integration with audiences using the Snowflake Account URL (i.e. `<account_identifier>.snowflakecomputing.com)`." %}
 
+    {% include important.html content="The Application ID URI must be unique in your organization's directory. Example: https://your.company.com/<alphanumeric value>. It should be come from your primary domain." %}
+
 9. Click **Add a scope**.
 
 10. For Scope name, enter the name of the Snowflake role (example: `session:role-any`).
@@ -152,6 +154,8 @@ In this part you must do the following:
 - Validate the tokens from Azure AD.
 - Provide the appropriate Snowflake data access to users based on the user role associated with the OAuth token.
 
+{% include important.html content="If you use SESSION:ROLE-ANY in scope, you must configure the following flag in the security integration: **external_oauth_any_role_mode = 'ENABLE'**. This is shown in the *optional* line of the security integration format below." %}
+
 #### Security integration format
 
 ```
@@ -163,6 +167,7 @@ create security integration external_oauth_azure_2
     external_oauth_jws_keys_url = '<AZURE_AD_JWS_KEY_ENDPOINT>'
     external_oauth_audience_list = ('<SNOWFLAKE_APPLICATION_ID_URI>')
     external_oauth_token_user_mapping_claim = 'upn'
+    external_oauth_any_role_mode = 'ENABLE' (optional)
     external_oauth_snowflake_user_mapping_attribute = 'login_name';
 ```    
 Example:
