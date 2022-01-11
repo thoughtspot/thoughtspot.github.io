@@ -57,7 +57,7 @@ You need specific information to establish a seamless and secure connection. The
      <dd>Specify the OAuth client secret associated with the account.</dd>
    </dlentry>
    <dlentry id="oauth-auth-url">
-     <dt>(OAuth only) OAuth Client Secret</dt>
+     <dt>(OAuth only) Auth Url</dt>
      <dd>Specify the Auth Url associated with the account.</dd>
    </dlentry>
    <dlentry id="oauth-access-token-url">
@@ -65,7 +65,7 @@ You need specific information to establish a seamless and secure connection. The
      <dd>Specify the Access token URL associated with the account.</dd>
    </dlentry>
    <dlentry id="oauth-role-arn">
-     <dt>(OAuth only) Access token Url</dt>
+     <dt>(OAuth only) Role ARN</dt>
      <dd>Specify the role ARN associated with the account.</dd>
    </dlentry>
    <dlentry id="oauth-db-groups">
