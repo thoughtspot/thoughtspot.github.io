@@ -48,7 +48,7 @@ Here are the major features that are not currently available in Connections:
 
 <!-- - Custom calendar is supported with Snowflake connections.
 - Custom calendar is in beta for Redshift, Teradata, Starburst, Synapse, and SAP Hana connections, and are off by default. Contact ThoughtSpot to enable them. -->
-- Spot IQ: Instant insights, Did you know?, Liveboard insights, Analyze
+- SpotIQ: Instant insights, Did you know?, Liveboard insights, Analyze
 - Monitor
 - Materialized views
 
@@ -214,8 +214,8 @@ Create the connection between ThoughtSpot and tables in an external Databricks d
 Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
 -   **[Add an Oracle Autonomous Data Warehouse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Oracle Autonomous Data Warehouse database.
--   **[Add an SAP Hana connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-add-connection.html)**  
-Create the connection between ThoughtSpot and tables in an external SAP Hana database.
+-   **[Add an SAP HANA connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-add-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external SAP HANA database.
 -   **[Add a Starburst connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst-add-connection.html)**  
 Create the connection between ThoughtSpot and tables in an external Starburst database.
 -   **[Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)**  
