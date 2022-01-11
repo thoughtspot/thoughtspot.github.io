@@ -23,7 +23,7 @@ If you can see the **SpotIQ** on your ThoughtSpot dashboard, you have access
 to SpotIQ.
 
 If you can't see this option, ask your ThoughtSpot Administrator to give you the
-**Has Spot IQ** privilege.
+**Has SpotIQ** privilege.
 
 ## Where to find SpotIQ actions
 

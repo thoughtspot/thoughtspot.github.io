@@ -47,7 +47,7 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 Here are the major features that are not currently available in Connections:
 
 <!-- - Custom calendar is supported with Snowflake connections.
-- Custom calendar is in beta for Redshift, Teradata, Starburst, Synapse, and SAP Hana connections, and are off by default. Contact ThoughtSpot to enable them. -->
+- Custom calendar is in beta for Redshift, Teradata, Starburst, Synapse, and SAP HANA connections, and are off by default. Contact ThoughtSpot to enable them. -->
 - SpotIQ: Instant insights, Did you know?, Liveboard insights, Analyze
 - Monitor
 - Materialized views

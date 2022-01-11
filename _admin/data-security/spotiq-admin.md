@@ -12,10 +12,10 @@ SpotIQ is a feature in ThoughtSpot that automatically generates insights into sy
 
 SpotIQ automatically generates insights into data when a user requests them. These requests can be run immediately or users can schedule regular analysis. SpotIQ requests for insights can put additional load on your system depending on the amount of data being analyzed and how frequently users make use of it.
 
-Users are required to have the **Has Spot IQ privilege** to use this feature. Users without this privilege cannot view insights unless the users that generated the insights add them to a Liveboard and share the Liveboard with others.
+Users are required to have the **Has SpotIQ privilege** to use this feature. Users without this privilege cannot view insights unless the users that generated the insights add them to a Liveboard and share the Liveboard with others.
 
 You may want to restrict access to a subset of your users or even to a subset of your managers. To restrict access to this feature:
 
 1. Create a group called **SpotIQUsers**.
-2. Grant this group **Has Spot IQ privilege**.
+2. Grant this group **Has SpotIQ privilege**.
 3. Enable users to this group.

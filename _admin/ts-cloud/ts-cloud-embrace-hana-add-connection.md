@@ -34,7 +34,7 @@ To add a connection to SAP HANA:
     2. Enter your key and value information.
     3. To add more keys and values, click the plus sign (+), and enter them.
 
-    {% include note.html content="Any key-value pairs that you enter must be defined in your Hana data source. Key-value pairs are case-sensitive." %}
+    {% include note.html content="Any key-value pairs that you enter must be defined in your HANA data source. Key-value pairs are case-sensitive." %}
 
     For more information about the advanced properties for SAP HANA, see: [SAP HANA Client Interface Programming Reference](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.03/en-US/109397c2206a4ab2a5386d494f4cf75e.html){:target="_blank"}, in the SAP's documentation.
 
