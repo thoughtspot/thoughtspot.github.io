@@ -38,7 +38,6 @@ ThoughtSpot Cloud supports the following connections:
 
 ThoughtSpot Cloud does not support the following:
 - Loading data using tsload
-- Custom calendar
 - Data cannot be migrated to another ThoughtSpot cluster, but you can migrate Liveboards, answers, views, tables, and worksheets.  
 
     For migration details, see [Scriptability]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
