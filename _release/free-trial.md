@@ -1,11 +1,21 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 12/16/2021
+last_updated: 1/12/2022
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+
+## January 12, 2022
+
+### Free Trial Make It Shine
+
+These are the changes we made to Free Trial this week:
+
+- We fixed a bug preventing new users from creating a Free Trial account using Snowflake Partner Connect.
+![]({{ site.baseurl }}/images/free-trial-snowflake-partner-connect.png  "Free Trial worksheet loading dialog"){: .inline}
+
 
 ## December 16, 2021
 
