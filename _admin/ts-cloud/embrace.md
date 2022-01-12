@@ -192,7 +192,7 @@ The following list captures the specific limitations across the different databa
           <dd>Connections does not internationalize sample values in tables.</dd></dlentry>
         <dlentry>
            <dt>Delayed UI rendering</dt>
-           <dd>For connections with a very large number of tables (on the order of 1000's of tables), UI rendering may take a very long time. These connections may time out.</dd></dlentry>
+           <dd>For connections with a very large number of tables (on the order of 1000's of tables), UI renderings may take a very long time. These connections may time out.</dd></dlentry>
         <dlentry>
           <dt>Deleting columns</dt>
           <dd>After specifying a connection, columns cannot be deleted from the table. Editing a connection makes it possible to add additional columns, but not to remove them.</dd></dlentry>
