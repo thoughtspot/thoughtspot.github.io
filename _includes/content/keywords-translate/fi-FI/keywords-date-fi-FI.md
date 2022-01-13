@@ -44,7 +44,7 @@
   </tr>
   <tr>
     <td class="tg-dc35">day of week</td>
-    <td class="tg-dc35">wochentag</td>
+    <td class="tg-dc35">viikonpäivä</td>
     <td class="tg-dc35"><code>revenue by <b>day of week</b> last 6 months</code></td>
   </tr>
   <tr>
