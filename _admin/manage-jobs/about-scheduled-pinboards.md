@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 
 {% include content/liveboards-announcement.md %}
 
-The **Jobs Management** page found on the **Admin** section in the ThoughtSpot web application allows you to create and manage jobs, namely scheduled Liveboards. Scheduled Liveboards should help with preparing for recurrent meetings, when reviewing the same Liveboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.
+The **Jobs Management** page, found in the **Data > Usage > Jobs Management** section in the ThoughtSpot web application, allows you to create and manage jobs, namely scheduled Liveboards. Scheduled Liveboards should help with preparing for recurrent meetings, when reviewing the same Liveboard is necessary. They should also be useful when you have metrics you want to monitor at a consistent interval, like daily or monthly sales targets.
 
 You can get Liveboards emailed to you on a regular basis and do analysis offline.
 This introduces an additional format for you to consume and share Liveboards with others, including those who don’t have a ThoughtSpot account.
@@ -34,7 +34,7 @@ The Liveboard visualizations are attached to the scheduled email as CSV or PDF f
 |The CSV file gets data only for table visualizations.|The PDF file gets data for all visualizations.|
 |The email has n CSV attachments, where there are n table visualizations in the Liveboard.|The email has only one attachment file, which includes every visualization on its own page.|
 |Table visualizations have all data rows that they're supposed to have.|Table visualizations include only the first 100 rows.|
-|In the case of a corrupted Liveboard: no email is sent. An error message indicating failure to export data is visible on the Admin Jobs Management page.|In the case of a corrupted Liveboard: the PDF attachment has empty/error screenshots.|
+|In the case of a corrupted Liveboard: no email is sent. An error message indicating failure to export data is visible on the Data > Usage > Jobs Management page.|In the case of a corrupted Liveboard: the PDF attachment has empty/error screenshots.|
 |In the case of a corrupted visualization: an email with the visualizations whose data can be exported is sent. An error message indicating visualization export error is visible on the Jobs Management page.|In the case of a corrupted visualization: the PDF attachment has empty/error slots for the corrupted visualizations.|
 
 The size of each email is limited to 25 MB, which matches most email services size limitations.
