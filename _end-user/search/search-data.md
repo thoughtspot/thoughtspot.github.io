@@ -1,6 +1,6 @@
 ---
 title: ["Search data"]
-last_updated: 4/6/2021
+last_updated: 1/18/2022
 summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 redirect_from:
@@ -9,11 +9,14 @@ permalink: /:collection/:path.html
 ---
 ## How do I search data?
 
-To search data, make sure that the search bar icon is set to **Search data**. ThoughtSpot remembers your choice across sessions when you switch between <strong>Search Answers</strong> and <strong>Search Data</strong>.
+You can now access the **Search data** interface from any page in ThoughtSpot. To begin your search, click the **Search data** button on the navigation bar, and enter your search terms in the blank Search bar that appears. ThoughtSpot automatically selects the data source used in your most recent search. To search a different data source, select **Sources** from the left menu, and click the wrench icon.
 
-![]({{ site.baseurl }}/images/search-data.png "Search bar for Search data")
 
-You’ve probably seen one of these before: 
+![]({{ site.baseurl }}/images/search-data-nov.png "Search bar for Search data")
+
+## Begin your first search
+
+You’ve probably seen one of these before:
 
  ![]({{ site.baseurl }}/images/search_bar_blank.png "Search bar")
 
@@ -39,7 +42,7 @@ Search is based on the tables that exist in your data. Tables are made of rows a
 
 ## Save an answer
 
-An answer is the result of a single search. You can save an answer you want to work more on later, or just keep it for your personal use. You can also share an answer with other users.  The **Answers** tab is where you can view and then the your saved search results.
+An answer is the result of a single search. You can save an answer you want to work more on later, or just keep it for your personal use. You can also share an answer with other users.  The **Answers** tab is where you can view and then edit your saved search results.
 
 ## Related information
 
