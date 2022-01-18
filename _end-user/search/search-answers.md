@@ -1,6 +1,6 @@
 ---
 title: ["Search Answers"]
-last_updated: 11/05/2021
+last_updated: 1/18/2022
 summary: "You search existing answers and Liveboards to get correct information."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -18,11 +18,18 @@ Search Answers eliminates redundant construction of new answers and Liveboards b
 
 ## How to search answers
 
-![]({{ site.baseurl }}/images/search-answers.png "Search across existing Answers")
+To search answers and Liveboards, select **Search answers and Liveboards** from the navigation bar.
 
-1. To search answers and Liveboards, toggle the **Search type** icon to **Search Answers** at the top right, next to the search bar: ![]({{ site.baseurl }}/images/search-toggle-answers.png){: .inline}. ThoughtSpot remembers your choice across sessions when you switch between <strong>Search Answers</strong> and <strong>Search Data</strong>.
+![]({{ site.baseurl }}/images/search-answers-bar.png "Search across existing Answers")
+
+As you enter terms in the search bar, ThoughtSpot suggests relevant answers and Liveboards. Select one of the suggested answers, or press enter to navigate to the Search Answers page.
+
+### Navigate the Search Answers page
+
+![]({{ site.baseurl }}/images/search-answers-page.png "Search across existing Answers")
 
 2. You can select a specific worksheet from the **Sources** dropdown to the left of the search bar. By default, you search across all worksheets for which you have access.
+
 
 3. You can search across all existing answers and Liveboards (default), only answers, or only Liveboards.
 
