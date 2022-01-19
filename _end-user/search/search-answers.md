@@ -18,15 +18,11 @@ Search Answers eliminates redundant construction of new answers and Liveboards b
 
 ## How to search answers
 
-To search answers and Liveboards, select **Search answers and Liveboards** from the navigation bar.
+![]({{ site.baseurl }}/images/search-answers.png "Search across existing Answers")
 
-![]({{ site.baseurl }}/images/search-answers-bar.png "Search across existing Answers")
+1. To search answers and Liveboards, toggle the *Search type* icon to *Search Answers* at the top right, next to the search bar: ![]({{ site.baseurl }}/images/search-toggle-answers.png "Search across existing Answers"){: .inline}.
+ThoughtSpot remembers your choice across sessions when you switch between *Search Answers* and *Search Data*.
 
-As you enter terms in the search bar, ThoughtSpot suggests relevant answers and Liveboards. Select one of the suggested answers, or press enter to navigate to the Search Answers page.
-
-### Navigate the Search Answers page
-
-![]({{ site.baseurl }}/images/search-answers-page.png "Search across existing Answers")
 
 2. You can select a specific worksheet from the **Sources** dropdown to the left of the search bar. By default, you search across all worksheets for which you have access.
 
@@ -89,4 +85,5 @@ Let us consider the `sales in the last year` example. This search returns matche
    ![]({{ site.baseurl }}/images/search-answers-results-pinboard-preview.png "Result of Search is a Liveboard")
 
 ## Indexing for Search Answers
+
 You can search for any answer or Liveboard that ThoughtSpot has indexed. ThoughtSpot indexes changes in ThoughtSpot in less than 10 minutes (less than 5 in most cases). If you do not see a new object when you search for it, or you *do* see an object that you deleted, or you modify the access permissions for an Answer or Liveboard, ThoughtSpot will reflect this change within 10 minutes.

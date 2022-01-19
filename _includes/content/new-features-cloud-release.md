@@ -88,6 +88,12 @@ ThoughtSpot plans to support for several releases, and then retire, internal pro
 </dd>
 </dlentry>
 
+<dlentry id="search-data-toggle">
+<dt>Search data</dt>
+<dd><p>To make it easier for users to find new insights, the **Search data** functionality is moved from the search bar toggle on the **Home** page to the **Search data** button in the main navigation bar.
+</p></dd>
+</dlentry>
+
 </dl>
 
 <h3><a id="november-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
