@@ -1,6 +1,6 @@
 ---
 title: ["Search data"]
-last_updated: 1/18/2022
+last_updated: 1/19/2022
 summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 redirect_from:
@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 ## How do I search data?
 
-You can now access the **Search data** interface from any page in ThoughtSpot. To begin your search, click the **Search data** button on the navigation bar, and enter your search terms in the blank Search bar that appears. ThoughtSpot automatically selects the data source used in your most recent search. To search a different data source, select **Sources** from the left menu, and click the wrench icon.
+You can now access the **Search data** interface from any page in ThoughtSpot. To begin your search, click the **Search data** button on the navigation bar, and enter your search terms in the blank Search bar that appears. ThoughtSpot automatically selects the data source used in your most recent search. To search a different data source, select **Sources** from the left menu, and select the **Choose sources** icon ![Choose sources wrench icon]({{ site.baseurl }}/images/icon-analyze-custom-10px.png "Choose sources wrench icon"){: .inline}.
 
 
 ![]({{ site.baseurl }}/images/search-data-nov.png "Search bar for Search data")
