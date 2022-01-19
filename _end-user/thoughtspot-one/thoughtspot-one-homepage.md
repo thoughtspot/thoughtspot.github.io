@@ -14,7 +14,7 @@ permalink: /:collection/:path.html
 ## Search across existing answers and Liveboards
 {% include content/search-answers-description.md %}
 
-To search across existing objects, toggle the **Search type** to **Search answers** by selecting the **Search answers** icon ![]({{ site.baseurl }}/images/icon-eureka-8px.png){: .inline} at the top right, next to the search bar. The home page displays the **Search answers** experience by default. You can select a specific worksheet from the **Sources** dropdown to the left of the search bar, or search across all worksheets that you have access to. Type your query into the search bar at the top of the screen. Select **Go** or click Enter on your keyboard. For example, search `sales in the last year bob` if you are looking for a particular Liveboard about sales that your coworker Bob made. This type of search does not require you to be extensively familiar with your company's data and how it is organized.
+The home page displays the **Search answers** experience by default. You can select a specific worksheet from the **Sources** dropdown to the left of the search bar, or search across all worksheets that you have access to. Type your query into the search bar at the top of the screen. Select **Go** or click Enter on your keyboard. For example, search `sales in the last year bob` if you are looking for a particular Liveboard about sales that your coworker Bob made. This type of search does not require you to be extensively familiar with your company's data and how it is organized.
 
 See [Search Answers]({{ site.baseurl }}/end-user/search/search-answers.html) for more information on searching across existing objects.
 
@@ -22,7 +22,7 @@ See [Search Answers]({{ site.baseurl }}/end-user/search/search-answers.html) for
 ## Search your data
 You can search directly on your data. Use this functionality if you would like to create your own answers and Liveboards to answer questions about your data.
 
-To search your data, toggle the **Search type** to **Search data to create an answer** by selecting the **Search data** icon ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline} at the top right, next to the search bar. Click on the search bar. Select a data source to search on, and type your query into the search bar at the top of the screen. Click Enter on your keyboard. For example, search `sales last year store #103 bakery` to see last year's sales in the bakery department for store 103. This type of search requires you to be familiar with your company's data, to know which worksheets contain data that interests you, and the names of the columns and values within that worksheet.
+To search your data, select the **Search data** button in the top navigation bar. The **Search data** page appears. Select a data source to search on, and type your query into the search bar at the top of the screen. Select **Go** or click Enter on your keyboard. For example, search `sales last year store #103 bakery` to see last year's sales in the bakery department for store 103. This type of search requires you to be familiar with your company's data, to know which worksheets contain data that interests you, and the names of the columns and values within that worksheet.
 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
