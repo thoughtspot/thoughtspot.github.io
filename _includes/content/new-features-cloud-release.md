@@ -90,7 +90,8 @@ ThoughtSpot plans to support for several releases, and then retire, internal pro
 
 <dlentry id="search-data-toggle">
 <dt>Search data</dt>
-<dd><p>To make it easier for users to find new insights, the **Search data** functionality is moved from the search bar toggle on the **Home** page to the **Search data** button in the main navigation bar.
+<dd><p>To make it easier for users to find new insights, we moved the <strong>Search data functionality</strong> from the search bar toggle on the home page to the <strong>Search data</strong> button in the main navigation bar.</p>
+<p>To learn more about the impact this change may have on an embedded environment, refer to <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank">What's new</a> in the Developer documentation.
 </p></dd>
 </dlentry>
 
