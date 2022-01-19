@@ -1,22 +1,16 @@
 ---
 title: [Start a new search]
 
-last_updated: 4/30/2021
+last_updated: 1/19/2021
 summary: "Starting a new ThoughtSpot search is simple, like starting a new Google search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 To start a new search:
 
-1. From the **Home** tab, make sure that the search bar icon at the top right, next to the search bar, is set to **Search data** ![]({{ site.baseurl }}/images/icon-sage-8px.png){: .inline}. ThoughtSpot remembers your choice across sessions when you switch between <strong>Search Answers</strong> and <strong>Search Data</strong>.
+1. Select the **Search data** button from the top navigation bar. The **Search data** page appears.
 
-     ![Start a new search]({{ site.baseurl }}/images/eureka-sage-search.png "Start a new search")
-
-2. Open the **Data** panel by click the Data button, to the left of the search field.
-
-     ![Select Data panel]({{ site.baseurl }}/images/data-panel-answer-v2.png "Select Data panel")
-
-3. Choose your sources by clicking **Add sources**. If you already have sources in the **Data** panel, select the **Choose sources** icon ![Choose sources wrench icon]({{ site.baseurl }}/images/icon-analyze-custom-10px.png "Choose sources wrench icon"){: .inline}.
+3. Choose your sources by selecting **Choose sources**. If you already have sources in the **Data** panel, select the **Choose sources** icon ![Choose sources wrench icon]({{ site.baseurl }}/images/icon-analyze-custom-10px.png "Choose sources wrench icon"){: .inline}.
 
     1. Filter through all available sources by using the search bar or tags.
     2. Select your sources.
