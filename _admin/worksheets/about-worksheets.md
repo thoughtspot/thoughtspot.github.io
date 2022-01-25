@@ -1,8 +1,8 @@
 ---
 title: [Create and use worksheets]
 
-last_updated: 7/21/2021
-summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
+last_updated: 1/25/2022
+summary: "Worksheets are logical views created on top of a more complex data model, to enable business users to more easily consume data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
