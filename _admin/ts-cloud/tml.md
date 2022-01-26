@@ -4,6 +4,8 @@ last_updated: 11/05/2021
 summary: "Use ThoughtSpot Modeling Language to modify a worksheet, view, table, Liveboard, or answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
+- /admin/scriptability/tml.html
+- /admin/ts-cloud/tml.html
 - /admin/scriptability/tsl-table.html
 - /admin/scriptability/tsl-pinboard.html
 - /admin/scriptability/tsl-answer.html
