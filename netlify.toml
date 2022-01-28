@@ -1,5 +1,6 @@
 
 
+
 [[redirects]]
   from = "https://cloud-docs.thoughtspot.com/"
   to = "https://docs.thoughtspot.com/cloud/latest"
@@ -7,6 +8,12 @@
   force = true # COMMENT: ensure that we always redirect
 
 ## This redirects to other doc branches
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/scriptability"
+  to = "https://docs.thoughtspot.com/cloud/latest/scriptability"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
 [[redirects]]
   from = "/ts7.oct.cl/*"
   to = "https://cloud-docs.thoughtspot.com/:splat"
@@ -1991,6 +1998,12 @@
 # redirects to new cloud site - end
 
 # version number redirect 8.0.0.cl - start
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/8.0.0.cl/"
+  to = "https://docs.thoughtspot.com/cloud/latest/"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
 
 [[redirects]]
   from = "https://cloud-docs.thoughtspot.com/8.0.0.cl/release/notes.html"
