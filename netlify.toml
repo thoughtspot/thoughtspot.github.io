@@ -3861,6 +3861,12 @@
 # version number redirect ts8.nov.cl - start
 
 [[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
   from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/release/notes.html"
   to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/notes"
   status = 301
