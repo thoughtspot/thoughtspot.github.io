@@ -1,4 +1,11 @@
 
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/"
+  to = "https://docs.thoughtspot.com/cloud/latest"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
 ## This redirects to other doc branches
 [[redirects]]
   from = "/ts7.oct.cl/*"
