@@ -75,6 +75,9 @@ p {
      font-family: "Optimo-Plain", sans-serif;
      display:list-item;
 }
+li p {
+    margin-left: 5px;
+}
 h3 {/*the list-style-image element is just a blue circle - we can get something from design for that but I think this URL will work even inside the iFrame*/
     font-size: 18px;
     margin-left: 30px;
