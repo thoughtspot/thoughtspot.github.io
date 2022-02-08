@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://dataflow-docs.thoughtspot.com/"
+  to = "https://docs.thoughtspot.com/software/latest/dataflow"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
