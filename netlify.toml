@@ -11,7 +11,7 @@
 
 [[redirects]]
   from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-gbq-reference.html"
-  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-gbq-prerequisites"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-gbq-reference"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 
