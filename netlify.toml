@@ -10,6 +10,12 @@
 ## This redirects to other doc branches
 
 [[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-gbq-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/latest/connections-gbq-prerequisites"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
   from = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/scriptability"
   to = "https://docs.thoughtspot.com/cloud/latest/scriptability"
   status = 301
