@@ -10,6 +10,54 @@
 ## This redirects to other doc branches
 
 [[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-terdata-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-teradata-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-starburst-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-starburst-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-hana-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-hana-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-adw-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-adw-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-databricks-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-databricks-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-synapse-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-synapse-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-redshift-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-redshift-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-snowflake-reference.html"
+  to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-snowflake-reference"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
   from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/data-integrate/embrace/embrace-gbq-reference.html"
   to = "https://docs.thoughtspot.com/cloud/ts8.nov.cl/connections-gbq-reference"
   status = 301
