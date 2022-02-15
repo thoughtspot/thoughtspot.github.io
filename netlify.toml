@@ -2,6 +2,12 @@
 
 
 [[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/8.1.0.cl/"
+  to = "https://docs.thoughtspot.com/cloud/latest"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
   from = "https://cloud-docs.thoughtspot.com/"
   to = "https://docs.thoughtspot.com/cloud/latest"
   status = 301
