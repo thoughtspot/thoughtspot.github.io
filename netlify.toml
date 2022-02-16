@@ -1,5 +1,10 @@
 
 
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/cloud-getting-started.html"
+  to = "https://docs.thoughtspot.com/cloud/latest/ts-cloud-getting-started"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
 
 [[redirects]]
   from = "https://cloud-docs.thoughtspot.com/8.1.0.cl/"
