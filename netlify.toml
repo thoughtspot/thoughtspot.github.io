@@ -1,3 +1,14 @@
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/8.0.0.cl/"
+  to = "https://docs.thoughtspot.com/cloud/8.0.0.cl/"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/8.0.0.cl/notes.html"
+  to = "https://docs.thoughtspot.com/cloud/8.0.0.cl/notes"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
 
 [[redirects]]
   from = "https://cloud-docs.thoughtspot.com/8.0.0.cl/data-integrate/embrace/embrace-snowflake-reference.html"
