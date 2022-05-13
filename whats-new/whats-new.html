@@ -1091,74 +1091,231 @@ img {
 </style>
 <!-- first what's new start -->
 <div class="paragraph">
-<p><span class="label label-dep">8.1.0.cl</span> March 2022</p>
+<p><span class="label label-dep">8.2.0.cl</span> April 2022</p>
 </div>
-<div id="chart-kpi-sparkline" class="paragraph 1 0 cl">
-<p><strong>Sparkline visualization for KPI charts</strong></p>
-</div>
-<div class="paragraph">
-<p>With this release, we are announcing the Sparkline chart enhancement for the Key Performance Indicators (KPIs) chart. Just search for a metric using time keywords, like 'Sales weekly', and create a sparkline visual of your data’s KPI.  See <a href="https://docs.thoughtspot.com/cloud/latest/chart-kpi#kpi-sparkline" target="_blank" class="page">Sparkline visualizations for time-series KPIs</a>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="https://thoughtspot.github.io/images/kpi-viz-sparkline.png" alt="Sparkline chart">
-</div>
+<div id="8-2-0-cl-kpi" class="paragraph 2 0 cl">
+<p><strong>KPI chart type</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Reset saved answers</strong></p>
+<p>With this release, you get even more information from KPI charts.</p>
 </div>
-<div class="paragraph">
-<p>Have you ever tried different chart types and filtering conditions on an answer, and then decided you wanted to set your answer back to its original state? Now you can easily do that by using the new <strong>reset</strong> button, next to the <strong>undo</strong> and <strong>redo</strong> buttons. This is only available for saved answers in the <a href="https://docs.thoughtspot.com/cloud/latest/answer-experience-new" target="_blank" class="page">new answer experience</a>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="https://thoughtspot.github.io/images/reset.gif" alt="Using reset">
-</div>
-</div>
-<hr>
-<div id="secondary-8" class="paragraph 1 0 cl">
-<p><strong><em>Other features and enhancements</em></strong></p>
-</div>
-<div id="aws-region-japan" class="paragraph">
-<p><strong>New cloud region in Japan</strong></p>
-</div>
-<div class="paragraph">
-<p>For our clients in Asia, ThoughtSpot Cloud is now available in Japan; see <a href="https://docs.thoughtspot.com/cloud/latest/ts-cloud-requirements-support" target="_blank" class="page">ThoughtSpot Cloud requirements and support</a>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="https://thoughtspot.github.io/images/ts-cloud-aws-sm.png" alt="AWS regions">
-</div>
-</div>
-<div id="connections-oauth" class="paragraph">
-<p><strong>OAuth for Connections</strong></p>
-</div>
-<div class="paragraph">
-<p>We enhanced our authentication protocols. ThoughtSpot supports OAuth for the following connections:</p>
-</div>
-<div id="connections-redshift-oauth" class="ulist">
+<div id="8-2-0-cl-kpi-attributes" class="ulist">
 <ul>
 <li>
-<p>Amazon Redshift, see <a href="https://docs.thoughtspot.com/cloud/latest/connections-redshift-oauth" target="_blank" class="page">Configure OAuth for a Redshift connection</a>.</p>
-</li>
-<li>
-<p>Microsoft Azure Synapse, see <a href="https://docs.thoughtspot.com/cloud/latest/connections-synapse-oauth" target="_blank" class="page">Configure OAuth for an Azure Synapse connection</a>.</p>
+<p><strong>Support for attributes</strong></p>
+<div class="paragraph">
+<p>Have you ever wanted to display just the name of your product with the highest sales as a KPI and pin it to a Liveboard? You can now get KPIs on attributes, like products and dates.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/kpi-attribute.gif" alt="KPI support for attributes">
+</div>
+</div>
 </li>
 </ul>
 </div>
-<div id="encryption-at-rest" class="paragraph">
-<p><strong>Encryption at rest <span class="badge badge-update">Beta</span></strong></p>
+<div id="8-2-0-cl-kpi-conditional-formatting" class="ulist">
+<ul>
+<li>
+<p><strong>Conditional formatting</strong></p>
+<div class="paragraph">
+<p>Add visual cues for KPIs or threshold metrics, to easily show where your measurements exceed or fall short of desirable targets. For example, you can ensure that KPI metrics stay within certain ranges.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/kpi-conditional.gif" alt="KPI conditional formatting">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="8-2-0-cl-html-titles-descriptions" class="paragraph">
+<p><strong>HTML in answer titles and descriptions</strong></p>
 </div>
 <div class="paragraph">
-<p>ThoughtSpot now uses Advanced Data Encryption at rest (EAR) for persistent data, both with user-level and folder-level controls.</p>
+<p>In the title or description of an answer or visualization in a Liveboard, you can now make any word or phrase a hyperlink by using an <code>&lt;a href&gt;</code> HTML tag.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/chart-config-html.png" alt="HTML links">
+</div>
+</div>
+<div class="paragraph">
+<p>You can also format text as <strong>bold</strong>, <em>italic</em>, or <mark>highlight</mark>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/chart-config-html-highlight.png" alt="HTML highlight">
+</div>
+</div>
+<div class="paragraph">
+<p>This feature is available only for answers and visualizations <strong>inside</strong> a Liveboard, and not for the title or description of the Liveboard itself.</p>
+</div>
+<hr>
+<div id="secondary-8" class="paragraph 2 0 cl">
+<p><strong><em>Other features and enhancements</em></strong></p>
+</div>
+<div id="8-2-0-cl-data-tab" class="paragraph">
+<p><strong>Data tab redesign <span class="badge badge-update">Beta</span></strong></p>
+</div>
+<div class="paragraph">
+<p>The redesigned data tab provides new features including SQL-based views, SpotApps, and a more intuitive user experience. To see it, select <strong>Data</strong> in the top navigation bar.</p>
+</div>
+<div id="8-2-0-cl-sql-based-views" class="paragraph">
+<p><strong>SQL-based views <span class="badge badge-update">Beta</span></strong></p>
+</div>
+<div class="paragraph">
+<p>With SQL-based views, you can now create views based on custom SQL queries, and then use them as data sources.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sql-bsd-view.png" alt="sql-based-views">
+</div>
+</div>
+<div id="8-2-0-cl-connections-flow-data-portal" class="paragraph">
+<p><strong>Simplified connections <span class="badge badge-update">Beta</span></strong></p>
+</div>
+<div class="paragraph">
+<p>You can now more easily create connections on the new Data Workspace page. To get started, select <strong>Data</strong> &gt; <strong>Connections</strong>  in the top navigation bar, and then select a cloud data warehouse. You don&#8217;t even have to specify tables or columns when you create your connection.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/simple-connections.png" alt="simplified connections">
+</div>
+</div>
+<div id="8-2-0-cl-spotapps" class="paragraph">
+<p><strong>ServiceNow and Snowflake SpotApps <span class="badge badge-update">Beta</span></strong></p>
+</div>
+<div class="paragraph">
+<p>SpotApps are solution templates for specific use cases and data sources. We deliver them to you as pieces of code that you can download and implement directly from our product.</p>
+</div>
+<div class="paragraph">
+<p>In this release, we introduce <strong>Analytics Blocks</strong>, which include pre-built worksheet, answer, and Liveboard blocks.</p>
+</div>
+<div class="paragraph">
+<p>We also include the <strong>ServiceNow</strong> and <strong>Snowflake</strong> SpotApps, which mimic the ServiceNow and Snowflake data models. After you connect to your ServiceNow or Snowflake data in your cloud data warehouse, ThoughtSpot maps the data to SpotApp columns, and creates functional and customizable worksheets, answers, and Liveboards.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/spot-apps.png" alt="spot apps">
+</div>
+</div>
+<div class="paragraph">
+<p>All these features are part of the data tab redesign, which is in beta.</p>
+</div>
+<div id="8-2-0-cl-okta" class="paragraph">
+<p><strong>Okta authentication <span class="badge badge-update">Beta</span></strong></p>
+</div>
+<div class="paragraph">
+<p>ThoughtSpot now supports cloud authentication through Okta. When enabled, all user authentication automatically switches to the internal Okta service.</p>
+</div>
+<div class="paragraph">
+<p>Okta authentication provides significant improvements and security enhancements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Okta maps your IDP attributes from the ThoughtSpot <strong>Admin Console</strong>, including username, email, and display name.</p>
+</li>
+<li>
+<p>You can monitor account activation in the <strong>Admin Console &gt; Users</strong> section. You can see if a user does not activate their account, and re-send their activation email.</p>
+</li>
+<li>
+<p>Only Okta interacts with your ID</p>
+</li>
+<li>
+<p>Local users create their own passwords during account activation. Administrators no longer have to create passwords for them.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>ThoughtSpot Everywhere</strong></p>
 </div>
 <div class="paragraph">
 <p>For new features and enhancements introduced in this release for ThoughtSpot Everywhere, see <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank" rel="noopener">ThoughtSpot Developer Documentation</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>About beta features</strong></p>
+</div>
+<div class="paragraph">
+<p>Beta features are off by default. To enable them, contact <a href="https://community.thoughtspot.com/customers/s/contactsupport" target="_blank" rel="noopener">ThoughtSpot Support</a>.</p>
 <br>
 </div>
+<!-- next what's new -->
+<div class="sectionbody">
+<details>
+<summary class="title"><span class="label label-dep">8.1.0.cl</span> March 2022</summary>
+<div class="content">
+  <div class="paragraph">
+  </div>
+  <div id="chart-kpi-sparkline" class="paragraph 1 0 cl">
+  <p><strong>Sparkline visualization for KPI charts</strong></p>
+  </div>
+  <div class="paragraph">
+  <p>With this release, we are announcing the Sparkline chart enhancement for the Key Performance Indicators (KPIs) chart. Just search for a metric using time keywords, like `Sales weekly', and create sparkline visuals of your data’s KPI.  See <a href="chart-kpi#kpi-sparkline" class="page">Sparkline visualizations for time-series KPIs</a>.</p>
+  </div>
+  <div class="imageblock">
+  <div class="content">
+  <img src="_images/kpi-viz-sparkline.png" alt="Sparkline chart">
+  </div>
+  </div>
+  <div class="paragraph">
+  <p><strong>Reset saved answers</strong></p>
+  </div>
+  <div class="paragraph">
+  <p>Have you ever tried different chart types and filtering conditions on an answer, and then decided you wanted to set your answer back to its original state? Now you can easily do that by using the new <strong>reset</strong> button, next to the <strong>undo</strong> and <strong>redo</strong> buttons. This is only available for saved answers in the <a href="answer-experience-new" class="page">new answer experience</a>.</p>
+  </div>
+  <div class="imageblock">
+  <div class="content">
+  <img src="_images/reset.gif" alt="Using reset">
+  </div>
+  </div>
+  <hr>
+  <div id="secondary-8" class="paragraph 1 0 cl">
+  <p><strong><em>Other features and enhancements</em></strong></p>
+  </div>
+  <div id="aws-region-japan" class="paragraph">
+  <p><strong>New cloud region in Japan</strong></p>
+  </div>
+  <div class="paragraph">
+  <p>For our clients in Asia, ThoughtSpot Cloud is now available in Japan; see <a href="ts-cloud-requirements-support" class="page">ThoughtSpot Cloud requirements and support</a>.</p>
+  </div>
+  <div class="imageblock">
+  <div class="content">
+  <img src="_images/ts-cloud-aws-sm.png" alt="AWS regions">
+  </div>
+  </div>
+  <div id="connections-oauth" class="paragraph">
+  <p><strong>OAuth for Connections</strong></p>
+  </div>
+  <div class="paragraph">
+  <p>We enhanced our authentication protocols. ThoughtSpot supports OAuth for the following connections:</p>
+  </div>
+  <div id="connections-redshift-oauth" class="ulist">
+  <ul>
+  <li>
+  <p>Amazon Redshift, see <a href="connections-redshift-oauth" class="page">Configure OAuth for a Redshift connection</a>.</p>
+  </li>
+  <li>
+  <p>Microsoft Azure Synapse, see <a href="connections-synapse-oauth" class="page">Configure OAuth for an Azure Synapse connection</a>.</p>
+  </li>
+  </ul>
+  </div>
+  <div id="encryption-at-rest" class="paragraph">
+  <p><strong>Encryption at rest <span class="badge badge-update">Beta</span></strong></p>
+  </div>
+  <div class="paragraph">
+  <p>ThoughtSpot now uses Advanced Data Encryption at rest (EAR) for persistent data, both with user-level and folder-level controls.</p>
+  </div>
+  <div class="paragraph">
+  <p><strong>ThoughtSpot Everywhere</strong></p>
+  </div>
+  <div class="paragraph">
+  <p>For new features and enhancements introduced in this release for ThoughtSpot Everywhere, see <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank" rel="noopener">ThoughtSpot Developer Documentation</a>.
+  </div>
+  </div>
+  </details>
+  <br>
 <!-- next what's new -->
 <div class="sectionbody">
 <details>
