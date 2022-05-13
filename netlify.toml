@@ -4044,8 +4044,13 @@
   status = 301
   force = true # COMMENT: ensure that we always redirect
 [[redirects]]
-  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/end-user/onboarding/user-onboarding-experience.html"
+    from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/end-user/onboarding/user-onboarding-experience.html"
   to = "https://docs.thoughtspot.com/cloud/latest/user-onboarding-experience"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/ts8.nov.cl/release/help-center.html"
+  to = "https://docs.thoughtspot.com/cloud/latest/help-center"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 [[redirects]]
