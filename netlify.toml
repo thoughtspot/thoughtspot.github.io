@@ -1,3 +1,11 @@
+# redirects 8.5.0.cl
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/8.5.0.cl/*"
+  to = "https://docs.thoughtspot.com/cloud/8.5.0.cl/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
 [[redirects]]
   from = "https://cloud-docs.thoughtspot.com/8.2.0.cl/"
   to = "https://docs.thoughtspot.com/cloud/latest/"
