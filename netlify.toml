@@ -1,6 +1,48 @@
 # redirects 8.7.0.cl
 
 [[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/9.3.0.cl/*"
+  to = "https://docs.thoughtspot.com/cloud/latest/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/9.2.0.cl/*"
+  to = "https://docs.thoughtspot.com/cloud/latest/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/9.1.0.cl/*"
+  to = "https://docs.thoughtspot.com/cloud/latest/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/9.0.0.cl/*"
+  to = "https://docs.thoughtspot.com/cloud/latest/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/8.10.0.cl/*"
+  to = "https://docs.thoughtspot.com/cloud/latest/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://cloud-docs.thoughtspot.com/8.9.0.cl/*"
+  to = "https://docs.thoughtspot.com/cloud/latest/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+  [[redirects]]
+    from = "https://cloud-docs.thoughtspot.com/8.8.0.cl/*"
+    to = "https://docs.thoughtspot.com/cloud/latest/:splat"
+    status = 301
+    force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
   from = "https://cloud-docs.thoughtspot.com/8.7.0.cl/*"
   to = "https://docs.thoughtspot.com/cloud/latest/:splat"
   status = 301
