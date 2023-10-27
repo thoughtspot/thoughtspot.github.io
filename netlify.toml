@@ -1,3 +1,17 @@
+# redirects 9.7.0.cl
+
+[[redirects]]
+from = "https://cloud-docs.thoughtspot.com/9.7.0.cl/release/notes"
+to = "https://docs.thoughtspot.com/cloud/latest/notes"
+status = 301
+force = true # COMMENT: global redirect for 9.7.0.cl old doc site url to latest cloud
+
+[[redirects]]
+from = "https://cloud-docs.thoughtspot.com/9.7.0.cl/"
+to = "https://docs.thoughtspot.com/cloud/latest/"
+status = 301
+force = true # COMMENT: global redirect for 9.7.0.cl old doc site url to latest cloud
+
 # redirects 8.7.0.cl
 
 [[redirects]]
