@@ -15,13 +15,13 @@ force = true # COMMENT: global redirect for 9.7.0.cl old doc site url to latest 
 # redirects 8.7.0.cl
 
 [[redirects]]
-  from = "https://cloud-docs.thoughtspot.com/9.7.0.cl/reference/keywords"
+  from = "https://cloud-docs.thoughtspot.com/9.7.0.cl/reference/keywords.html"
   to = "https://docs.thoughtspot.com/cloud/9.7.0.cl/keywords"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 
 [[redirects]]
-  from = "https://cloud-docs.thoughtspot.com/9.7.0.cl/release/notes"
+  from = "https://cloud-docs.thoughtspot.com/9.7.0.cl/release/notes.html"
   to = "https://docs.thoughtspot.com/cloud/9.7.0.cl/notes"
   status = 301
   force = true # COMMENT: ensure that we always redirect
