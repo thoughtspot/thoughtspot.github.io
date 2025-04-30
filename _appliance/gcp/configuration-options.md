@@ -1,44 +1,105 @@
 ---
 title: [GCP configuration options]
-
-
-last_updated: 1/9/2020
+keywords: GCP, configuration
+tags: [performance]
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot can be deployed in your GCP environment by deploying compute (VM) instances in your VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot:
-- Mode 1: Compute VMs + SSD Persistent Disk storage-only
-- Mode 2: Compute VMs + SSD Persistent Disk and Google Cloud Storage (GCS).
+ThoughtSpot has performed extensive testing on various Google Cloud Platform
+(GCP) configurations for best performance, load balancing, scalability, and
+reliability.
 
-For more information about Persistent Storage, see [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs){:target="_blank"} in Google's Cloud documentation.
-
-For more information about Google Cloud Storage, see [Cloud Storage Buckets](https://cloud.google.com/compute/docs/disks/#gcsbuckets){:target="_blank"} in Google's Cloud documentation.
-
-All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
-(and, therefore, also in the same region). ThoughtSpot does not support deploying VMs (nodes) of the same cluster across different zones. For more information, see [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/){:target="_blank"} in Google's Cloud documentation.
+You can find information here on which configuration of memory, CPU, storage,
+and networking capacity you should be running for your instances.
 
 ## ThoughtSpot GCP instance types
 
-### VMs with Persistent Disk-only storage
+<table width="853">
+    <colgroup>
+      <col width="110" />
+      <col width="110" />
+      <col width="110" />
+      <col width="105" />
+      <col width="140" />
+      <col width="95" />
+    </colgroup>
+	<tr>
+      <td><br /></td>
+      <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr"><strong>Data shape</strong></p></td>
+      <td><p dir="ltr"><strong>Total cluster <BR>data size</strong></p></td>
+      <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
+      <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
+      <td><p dir="ltr"><strong>CPU/RAM</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr">Standard</p>
+        <p dir="ltr">(1KB/row)</p></td>
+      <td><p dir="ltr">Up to 3 TB </p></td>
+      <td><p dir="ltr">208 GB</p></td>
+      <td><p dir="ltr">n1-highmem-64</p></td>
+      <td><p dir="ltr">64/416</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-![]({{ site.baseurl }}/images/persistent-storage-ssd.svg "GCP SSD-only Persistent Storage")
+      <td><p dir="ltr">&gt;3 TB</p></td>
+      <td><p dir="ltr">312 GB</p></td>
+      <td><p dir="ltr">n1-highmem-96</p></td>
+      <td><p dir="ltr">96/624</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1.5 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume |
-| --- | --- | --- |--- |
-| 208 GB | n1-highmem-64 | 64/416 | 2x 1 TB |
-| 312 GB | n1-highmem-96 | 96/624 | 2x 1.5 TB |
-| 100 GB | n1-highmem-32 | 32/208 | 2X 400 GB |
-| 20 GB | n1-highmem-16 | 16/122 | 2X 400 GB |
-| 180 GB | n1-standard-96 | 96/330 | 2X 1 TB |
+      <td><p dir="ltr">Up to 100 GB</p></td>
+      <td><p dir="ltr">100 GB</p></td>
+      <td><p dir="ltr">n1-highmem-32<sup>b</sup></p></td>
+      <td><p dir="ltr">16/104</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-### VMs with Persistent Disk and Google Cloud storage
+      <td><p dir="ltr">Up to 20 GB</p></td>
+      <td><p dir="ltr">20 GB</p></td>
+      <td><p dir="ltr">n1-highmem-16<sup>b</sup></p></td>
+      <td><p dir="ltr">16/122</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
 
-![]({{ site.baseurl }}/images/persistent-storage-ssd-gcs.svg "GCP SSD and GCS Persistent Storage")
+      <td><p dir="ltr">Thin rows</p>
+        <p dir="ltr">(&lt;300 bytes/row)</p></td>
+      <td><p dir="ltr">Any</p></td>
+      <td><p dir="ltr">180 GB</p></td>
+      <td><p dir="ltr">n1-standard-96</p></td>
+      <td><p dir="ltr">96/330</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+	<tr>
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume |
-| --- | --- | --- |--- |
-| 208 GB | n1-highmem-64 | 64/416 | 1X 500 GB |
-| 312 GB | n1-highmem-96 | 96/624 | 1X 500 GB |
-| 100 GB | n1-highmem-32 | 32/208 | 1X 500 GB |
-| 20 GB | n1-highmem-16 | 16/122 | 1X 500 GB |
-| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB |    
+      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/5.2/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+       </td>
+    </tr>
+  </table>
+
+GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks.        |
+
+ThoughtSpot uses only persistent storage options. Instance storage (also known
+as "local storage") is not used for ThoughtSpot deployments on GCP.

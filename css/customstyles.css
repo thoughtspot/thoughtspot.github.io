@@ -34,14 +34,14 @@ table.scheduler, th, td {
 }
 
 small-sidebar-version-nav {
-    font-size: 80%;
+    font-size: 80%
     margin-left: 5px;
     padding-bottom: 25px;
     background-color: #BBECEE;
 }
 
 small-sidebar-link .a{
-    font-size: 80%;
+    font-size: 80%
     margin-left: 5px;
     margin-bottom: 25px;
     text-decoration: underline;
@@ -926,6 +926,26 @@ span.muted {color: #666;}
 table code {
   background-color: transparent !important;;
   color: #333 !important;}
+
+code.api-method-post {
+  background-color: #10a54a !important;
+  color: white !important;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0 4px;
+}
+
+code.api-method-get {
+  background-color: #0f6ab4 !important;
+  color: white !important;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0 4px;
+}
 
 .highlight .err {
     color: #a61717;

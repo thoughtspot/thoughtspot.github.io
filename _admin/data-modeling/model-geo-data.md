@@ -1,6 +1,7 @@
 ---
 title: [Add a geographical data setting]
-last_updated: 09/23/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -45,9 +46,11 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 
 4. Save your changes.
 
-## Supported geo maps
+## List of geotypes
 
-For a complete list of supported geo maps in ThoughtSpot, refer to: [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference#)
+{% include content/geotypes.html %}
+
+
 
 ## Related information  
 

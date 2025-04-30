@@ -1,6 +1,6 @@
 ---
 title: [ "Set number, date, and currency formats" ]
-
+keywords: REST,API,currency,formats,"REST API"
 last_updated: tbd
 summary: "Explains how to set key formats for column values."
 sidebar: mydoc_sidebar
@@ -54,7 +54,7 @@ requires that you have administrative privileges.
 
 4. Save your changes.
 
-   If you are using a data-modeling file you must upload the new file to your installation.
+   If you are using a data-modeling file you'll need to upload the new file to your installation.
 
 ### Profile-based number formatting
 
@@ -94,13 +94,13 @@ editing the data model, for [the entire ThoughtSpot instance]({{ site.baseurl
 
 4. Save your changes.
 
-   If you are using a data-modeling file you must upload the new file to your installation.
+   If you are using a data-modeling file you'll need to upload the new file to your installation.
 
-## Set currency type
+## Set currency format
 
-You can set a format for how currencies display in tables and charts when
+You can set a format for how currencies are displayed in tables and charts when
 using the ThoughtSpot Data API or embedding. For example, you can display
-currencies in a standard European Euro or US Dollar format, based on the data
+currencies in a standard European Euro or US Dollar format based on the data
 modeling setting **Currency Type**.
 
 You can change the currency format used to display a column's values [for a

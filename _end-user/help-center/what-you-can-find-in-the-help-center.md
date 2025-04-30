@@ -1,5 +1,7 @@
 ---
 title: [More help and support]
+tags: [keywords]
+keywords: tbd
 last_updated: tbd
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
@@ -22,7 +24,9 @@ release and every minor release version (`x.y.z`). " %}
 
 You can navigate directly to this site on the web by entering
 [docs.thoughtSpot.com](https://docs.thoughtspot.com) in your browser's address
-bar. You can see the documentation for the latest version of the product.
+bar. By default, the latest version (4.4) is presented first. ThoughtSpot
+versions prior to `4.4` have documentation located at
+[help.thoughtSpot.com](https://help.thoughtspot.com).
 
 You can navigate to this documentation from inside the ThoughtSpot application
 as well. In this case, the application links directly to the documentation
@@ -63,7 +67,7 @@ From this dialog you can get to the following:
   </tr>
 </table>
 
-Along the bottom of the **Help** dialog, you can see a link to contact Support as
+Along the bottom of the **Help** dialog you'll see a link to contact Support as
 well as the version of ThoughtSpot you are using.
 
 ## Learn

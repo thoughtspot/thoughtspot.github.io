@@ -49,10 +49,8 @@
 {% elsif page.url contains site.current_version %}
 <!-- SEO Tools -->
 {% seo %}
-{% elsif page.url == "/" or page.url == "" %}
-<meta name="robots" content="noindex" />
 {% else %}
-{% seo %}
+<meta name="robots" content="noindex" />
 {% endif %}
 
 <!--  Site Search -->

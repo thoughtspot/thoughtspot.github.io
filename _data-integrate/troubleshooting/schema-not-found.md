@@ -1,6 +1,6 @@
 ---
 title: [Schema not found error with ODBC]
-
+keywords: tbd
 last_updated: tbd
 toc: false
 summary: "Correct schema not found errors."
@@ -18,7 +18,7 @@ property with the key `SCHEMA` and the value `falcon_default_schema`.
 
 ![]({{ site.baseurl }}/images/ODBC_add_schema.png "Edit a custom property on Windows")
 
-On Linux, you can edit the properties in the `odbc.ini` file for the driver you are using:
+On Linux or Solaris, you can edit the properties in the `odbc.ini` file for the driver you are using:
 
 ```
 [ThoughtSpot]

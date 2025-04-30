@@ -1,6 +1,6 @@
 ---
 title: [Hardware appliance overview]
-
+keywords: appliance,hardware,box
 last_updated: tbd
 summary: "What is in the box."
 sidebar: mydoc_sidebar
@@ -33,7 +33,7 @@ When your ThoughtSpot appliance arrives, the following items will be included:
 
 ##  Additional hardware requirements
 
- You must supply the following items, as they will not be included with your ThoughtSpot appliance:
+ You will need to supply the following items, as they will not be included with your ThoughtSpot appliance:
 
 * Data center with proper cooling
 * 2U of rack space per appliance (post depth 26.5" - 36.4")

@@ -1,7 +1,7 @@
 ---
 title: [Understand views]
-
-
+tags: [bestpractices]
+keywords: search,view,aggregated
 last_updated: 11/2/2018
 summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
@@ -38,7 +38,7 @@ possible. If you want to do this, here are the steps at a high level:
 
 1. Create the first search, and [save it as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#).
 
-2. [Create relationships]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#) to connect your view with any other data sources you need.
+2. [Create relationships]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#) to connect your view with any other data sources you'll need.
 
 3. Create a new search that includes your view and the other sources you linked with it.
 

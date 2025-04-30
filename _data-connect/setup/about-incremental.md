@@ -1,6 +1,6 @@
 ---
 title: [About incremental data loads]
-
+keywords: tbd
 last_updated: tbd
 summary: "You can create an incremental data load, with some planning ahead."
 sidebar: mydoc_sidebar
@@ -37,7 +37,7 @@ data in the new row. If a row with that primary key does not exist, the new row
 will be inserted. This is how ThoughtSpot handles data loads into a table that
 already contains rows, and it is the equivalent to an incremental load.
 
-If you are relying on the `upsert` method, you can run a `COMPACT TABLE`
+If you are relying on the `upsert` method, you'll want to run a `COMPACT TABLE`
 command in ThoughtSpot SQL Command Line (TQL) to reduce the size of the table at
 intervals (usually weekly).
 

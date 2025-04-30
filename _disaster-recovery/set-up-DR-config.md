@@ -1,5 +1,6 @@
 ---
 title: [Configure disaster recovery]
+keywords: recovery, disaster
 summary: "Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

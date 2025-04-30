@@ -1,19 +1,20 @@
 ---
 title: ["Understand data sources"]
+keywords: tbd
 last_updated: tbd
 summary: "Use the Data tab to manage data sources."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The **Data** tab lists all of the tables and data sources available to you. There are three types of data sources that you may see in the data list. They are tables, worksheets, and user uploaded data. You usually see only worksheets and user-uploaded sources. These are the most commonly used data sources for searching.
+The **Data** tab lists all of the tables and data sources available to you. There are three types of data sources that you may see in the data list. They are tables, worksheets, and user uploaded data. You will most likely only see worksheets and user uploaded sources. These are the most commonly used data sources for searching.
 
 | Name             | Icon           | Definition                                                       | Created by                |
 | ---------------- | -------------- | -----------------------------------                              | ------------------------- |
 | Table            |                | Raw table loaded by an Administrator                             | Administrators            |
 | Worksheet        |                | Collection of related tables optimized for searching (like standard concept of a _view_) | Anyone |
 | User Imported    |                | Table uploaded by a user through the web browser (e.g. as a `.csv` file) | Anyone |
-| View             |                | Table saved as a [materialized view]({{ site.baseurl }}/complex-search/about-query-on-query.html) by a user through the web browser through **Save as view** option on a search | Anyone |
+| View             |                | Table saved as a [materialized view]({{ site.baseurl }}/complex-search/about-query-on-query.html) by a user through the web browser via **Save as view** option on a search | Anyone |
 
 
 ![]({{ site.baseurl }}/images/types_of_data_sources_table.png "Types of Data Sources")

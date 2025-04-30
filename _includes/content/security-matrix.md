@@ -1,4 +1,5 @@
 <table id="matrix" class="wide_table" style="font-size:10px;">
+  <caption>The following table shows the intersection of user privilege and ability:</caption>
    <colgroup>
       <col style="width:36%;">
       <col style="width:4%;">
@@ -78,6 +79,11 @@
             <div><span>Schema Viewer</span></div>
          </th>
          <th class="rotate">
+            <div><span>Use Data Connect
+               </span>
+            </div>
+         </th>
+         <th class="rotate">
             <div><span>Use Scheduler</span></div>
          </th>
          <th class="rotate">
@@ -97,6 +103,7 @@
          <td>Y</td>
          <td>Y</td>
          <td>Y<sup>2</sup></td>
+         <td>Y</td>
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
@@ -127,6 +134,7 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
       </tr>
       <tr>
          <td>
@@ -144,6 +152,7 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -173,6 +182,7 @@
          </td>
          <td>Y</td>
          <td>N</td>
+         <td>Y</td>
          <td>N</td>
          <td>N</td>
       </tr>
@@ -197,10 +207,11 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
       </tr>
       <tr>
          <td>
-            <div>Has SpotIQ privilege</div>
+            <div>Can Auto-Analyze (SpotIQ privilege)</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -214,6 +225,7 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -233,6 +245,7 @@
          <td>N</td>
          <td>N</td>
          <td>Y</td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -259,9 +272,10 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
       </tr>
       <tr>
-      <td colspan="16" id="widefootnote" style="font-size: 10px;">
+      <td colspan="17" id="widefootnote" style="font-size: 6px;">
         <p>Table notes:</p>
         <ol>
               <li>Applies to non-owners only.</li>
