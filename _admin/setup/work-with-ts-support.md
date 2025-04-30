@@ -1,6 +1,6 @@
 ---
 title: [Configure support services]
-tags: [SysAdm_tscli_Config, Supportability_End_User]
+tags: [tscli, Supportability]
 keywords: tbd
 last_updated: tbd
 summary: "Set up and configure ThoughtSpot support services for your installation."

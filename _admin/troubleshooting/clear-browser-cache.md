@@ -1,6 +1,5 @@
 ---
 title: [Clear the browser cache]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

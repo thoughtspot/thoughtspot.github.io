@@ -1,6 +1,5 @@
 ---
 title: [About cumulative formulas]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Cumulative formulas are aggregate formulas."

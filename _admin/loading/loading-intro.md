@@ -1,6 +1,5 @@
 ---
 title: [Load and manage data]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "There are several methods of loading data into ThoughtSpot. This section describes each method and why you might choose it above the others."

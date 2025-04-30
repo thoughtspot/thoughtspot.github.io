@@ -1,8 +1,8 @@
 ---
 title: [Network ports]
-tags:
+tags: [bestpractices]
 keywords: network, ports
-last_updated: 1/17/2020
+last_updated: tbd
 summary: "Lists the required and optional ports for an installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

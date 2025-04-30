@@ -1,6 +1,5 @@
 ---
 title: [Edit a connection]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can edit a connection used in a data source."

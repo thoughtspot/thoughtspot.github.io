@@ -1,13 +1,13 @@
 ---
 title: [Advanced R Customizations]
-tags:
+tags: [spotiq,customize]
 keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Admins and users with the **Has SpotIQ privilege** can run an R script using the
+Admins and users with the **Has SpotIQ** privilege can run an R script using the
 **Custom Analysis** feature of SpotIQ. This means you can run an R script from
 any point in ThoughtSpot where you find the **Custom Analysis** menu option.
 
@@ -23,10 +23,10 @@ primer. To learn more about R and how to use it, visit the
 
 ThoughtSpot provides R running as a service within a ThoughtSpot cluster.
 Permissions are restricted. This means the R script does not have permission to
-system commands.
+issue system commands.
 
 The ThoughtSpot cluster has pre-installed the basic R packages. If your script
-requires a specific package, you may request your Thoughtspot cluster admin to
+requires a specific package, you must request your Thoughtspot cluster admin to
 install the package on your behalf.
 
 ThoughtSpot internally transforms and binds an R script prior to sending it to
@@ -103,7 +103,7 @@ column and a zip code column.
     df <- data.frame(.param0, .param1)
     cluster <- kmeans(df[1:2], 3, nstart = 20)
     cluster$cluster <- as.factor(cluster$cluster)
-    png(file=#output_png#,width=400,height=350,res=72)
+    png(file=#output_file#,width=400,height=350,res=72)
     print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
     ####COLUMN BINDINGS (ONE PER LINE)####
     Sales
@@ -145,3 +145,9 @@ write.csv(df, file=#output_csv#, row.names=FALSE);
 Sales
 Zip Code
 ```
+
+## Syntax help in the dialog
+
+Use the **i** icon to see help for the R syntax.
+
+![]({{ site.baseurl }}/images/spotiq-help.png)

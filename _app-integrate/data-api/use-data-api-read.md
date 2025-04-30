@@ -1,6 +1,5 @@
 ---
 title: [Use the REST API to get data]
-tags:
 keywords: REST,API,data,"REST API"
 last_updated: tbd
 summary: "This procedure shows how to use the REST API to get data out of ThoughtSpot, so you can use it in a Web page, portal, or application. "
@@ -29,7 +28,7 @@ Use this procedure to construct the URL you will use to call the REST API:
 
         ![]({{ site.baseurl }}/images/copy_link_pinboard.png "The pinboard ID")
 
-    -   A visualization \(table or chart\), copy the identifier that appears after "viz/". This is the pinboard ID.
+    -   A visualization (table or chart), copy the identifier that appears after "viz/". This is the pinboard ID.
 
         ![]({{ site.baseurl }}/images/copy_link_viz_pinboard_part.png "The pinboard ID")
 

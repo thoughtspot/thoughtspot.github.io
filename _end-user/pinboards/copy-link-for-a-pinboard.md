@@ -1,6 +1,5 @@
 ---
 title: [Copy a pinboard or visualization link]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "In pinboards, there is a copy link option that lets you copy the link to access the pinboard and visualizations directly."

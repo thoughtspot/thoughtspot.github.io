@@ -1,6 +1,5 @@
 ---
 title: [Add a New Data Source to ODBC on Windows]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can add multiple ODBC data sources."

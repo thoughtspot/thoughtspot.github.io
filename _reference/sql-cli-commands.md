@@ -1,6 +1,6 @@
 ---
 title: [TQL reference]
-tags:
+tags: [TQL,bestpractices]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -427,7 +427,7 @@ TQL&gt; ALTER TABLE "sales"
       <tr>
          <td>
             <code>ALTER TABLE &lt;<var>table</var>&gt;
-   DROP CONSTRAINT [FOREIGN KEY|
+   DROP [FOREIGN KEY|
    RELATIONSHIP]
    &lt;<var>name</var>&gt;;</code>
          </td>
@@ -435,7 +435,7 @@ TQL&gt; ALTER TABLE "sales"
          <td>
             <code>TQL&gt; ALTER TABLE
      "sales_fact"
-     DROP CONSTRAINT FOREIGN KEY
+     DROP FOREIGN KEY
      "FK_PO_number";
 
 TQL&gt; ALTER TABLE "fruit_dim"
@@ -539,7 +539,7 @@ TQL&gt; ALTER TABLE "fruit_dim"
          </td>
          <td>
             <p>Changes the data type of a column. This can have implications on sharding and
-               primary key behavior. See <a class="xref" href="/admin/loading/about-data-type-conversion.html#concept_u2t_clg_wv" title="You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.">About data type conversion</a>.
+               primary key behavior. See <a class="xref" href="{{"/admin/loading/about-data-type-conversion.html#concept_u2t_clg_wv" | prepend: site.baseurl}}" title="You can convert the data in a column from one data type to another by issuing a TQL command. There are some details you should be aware of when doing a data type conversion.">About data type conversion</a>.
             </p>
          </td>
          <td>
@@ -550,7 +550,7 @@ TQL&gt; ALTER TABLE "fruit_dim"
    </tbody>
 </table>
 
-## Modify Schema
+## Modify data
 
 <table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
    <colgroup>
@@ -577,10 +577,10 @@ TQL&gt; ALTER TABLE "fruit_dim"
          </td>
          <td>
             <code>TQL&gt; INSERT INTO "vendor"
-     VALUES ('helen rose',
+     VALUES 'helen rose',
      'jacob norse',
      'eileen ruff',
-     'manny gates');</code>
+     'manny gates';</code>
          </td>
       </tr>
       <tr>

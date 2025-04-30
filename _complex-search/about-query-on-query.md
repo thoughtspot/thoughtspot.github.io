@@ -1,6 +1,6 @@
 ---
 title: [Refine a search with a worksheet]
-tags:
+tags: [bestpractices]
 keywords: search,worksheet,aggregated
 last_updated: tbd
 summary: "If you want to search on top of another search, try saving your search as a worksheet. Then, you can use the saved worksheet as a data source for a new search."

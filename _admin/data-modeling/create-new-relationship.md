@@ -1,6 +1,5 @@
 ---
 title: [Create a relationship]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Explains how to create a link between two data sources through a relationship."

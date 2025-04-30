@@ -1,6 +1,5 @@
 ---
 title: [Reorder labels on the axis or legend]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,6 +1,5 @@
 ---
 title: [About Informatica Connector]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use the ThoughtSpot Informatica Cloud connector to read and write data."

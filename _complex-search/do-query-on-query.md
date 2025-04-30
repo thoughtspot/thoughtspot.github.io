@@ -1,6 +1,5 @@
 ---
 title: [Search from an aggregated worksheet]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

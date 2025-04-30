@@ -1,6 +1,5 @@
 ---
 title: [Install the ODBC Driver on Solaris]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Solaris ODBC driver and install it."

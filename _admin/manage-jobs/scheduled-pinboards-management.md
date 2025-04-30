@@ -1,6 +1,5 @@
 ---
 title: [Scheduled pinboards management]
-tags:
 keywords: "pinboard,schedule,management"
 last_updated: tbd
 summary: "You can manage all scheduled pinboards on the Jobs Management page under Admin."

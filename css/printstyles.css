@@ -2,7 +2,7 @@
 /*body.print .container {max-width: 650px;}*/
 
 /*@font-face {
-    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
     src: local("Gotham Rounded Book")
 }*/
 
@@ -41,8 +41,7 @@ table.wide_table {
 
 
 a[href]::after {
-   /* " (page " target-counter(attr(href), page) ")" */
-   content: "";
+    /*content: " (page " target-counter(attr(href), page) ")"*/
 }
 
 a[href^="http:"]::after, a[href^="https:"]::after {
@@ -59,7 +58,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 
 @page {
     margin: 60pt 90pt 60pt 90pt;
-    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
     font-style:none;
     color: gray;
 

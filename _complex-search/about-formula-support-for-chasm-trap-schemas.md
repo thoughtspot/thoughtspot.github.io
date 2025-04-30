@@ -1,6 +1,5 @@
 ---
 title: [Formula support for chasm trap schemas]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

@@ -1,14 +1,19 @@
 ---
 title: [tscli command reference]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The `tscli` command line interface is an administration interface for the ThoughtSpot instance. Use `tscli` to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand and what you can accomplish with it.
+The `tscli` command line interface is an administration interface for the
+ThoughtSpot instance. Use `tscli` to take snapshots (backups) of data, apply
+updates, stop and start the services, and view information about the system.
+This reference defines each subcommand and what you can accomplish with it.
 
-The command returns 0 upon success and a non-zero exit code upon failure. Because the `tscli` command is typically running a command on multiple codes, an error may be called at different points. As much as possible, the command attempts to save errors to the `stderr` directory as configured on a node.
+The command returns 0 upon success and a non-zero exit code upon failure.
+Because the `tscli` command is typically running a command on multiple codes, an
+error may be called at different points. As much as possible, the command
+attempts to save errors to the `stderr` directory as configured on a node.
 
 ## How to use the tscli command
 
@@ -31,7 +36,8 @@ The `tscli` command has several subcommands such as `alert`, `backup`, and so fo
 tscli [subcommand ]
 ```
 
-Subcommands have their own additional options and actions such as `tscli backup create` or `tscli backup delete` for example.  To view help for a subcommand:
+Subcommands have their own additional options and actions such as `tscli backup
+create` or `tscli backup delete` for example.  To view help for a subcommand:
 
 ```
 tscli [subcommand] -h
@@ -137,7 +143,10 @@ Use this subcommand to do the following:
 * `tscli callhome disable` Turns off the periodic call home feature.
 * `tscli callhome enable --customer_name` *`customer_name`*`
 
-    Enables the "call home" feature, which sends usage statistics to ThoughtSpot Support every six hours via the secure file server. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
+    Enables the "call home" feature, which sends usage statistics to ThoughtSpot
+    Support every six hours via the secure file server. Before using this
+    command for the first time, you need to set up the file server connection
+    using `tscli fileserver configure`.
 
     The parameter *`customer_name`* takes the form  ```Shared/*`customer_name`*/stats```.
 
@@ -146,7 +155,13 @@ Use this subcommand to do the following:
    * `--d D` Dest folder where tar file will be created. (default: None)
    * ` --since`  *`DAYS`*
 
-      Grab callhome data from this time window in the past. Should be a human readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1 day). (default: None) Generates a tar file of the cluster metrics and writes it to the specified directory where  *`DAYS`* is how far back you'd like to generate the tar file from in days. For example, `30`. If this parameter is not specified, the command will collect stats from the last 15 days by default.
+      Grab callhome data from this time window in the past. Should be a human
+      readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1
+      day). (default: None) Generates a tar file of the cluster metrics and
+      writes it to the specified directory where  *`DAYS`* is how far back you'd
+      like to generate the tar file from in days. For example, `30`. If this
+      parameter is not specified, the command will collect the stats from the
+      last `7` days by default.
 
 
 ### cluster
@@ -212,6 +227,20 @@ tscli dr-mirror [-h] {start,status,stop}
 * `tscli dr-mirror status` Checks whether the current cluster is running in mirror mode.
 * `tscli dr-mirror stop` Stops mirroring on the local cluster.
 
+### entity
+```
+tscli entity [-h] {pack} ...
+```
+Creates a serialized, dataless object file for testing, troubleshooting, or migration. You can use this command with answer,
+pinboard, or aggregated/unaggregated worksheet objects.
+
+* `tscli entity pack [-h] --id ID [--outdir FULLPATHNAME]`  Packs object metadata and schema into a file. Packed filenames have the format XXX.YYY where XXX is ### ?
+optional arguments:
+
+    * `--id ID` The required `ID` of the object to pack. IDs are found in thne URL of an answer,
+    pinboard, or aggregated/unaggregated worksheet. For example, the ID for a pinboard
+    				`http://thoughtspot.com:8088/#/pinboard/061457a2-27bc-43a9-9754-0cd873691bf0/` is `061457a2-27bc-43a9-9754-0cd873691bf0`.
+    * `--outdir FULLPATHNAME` Directory where the command places the packed object.
 
 ### etl
 
@@ -360,7 +389,7 @@ This subcommand has the following actions:
 
    Configures LDAP using an interactive script. You can see detailed
    instructions for setting up LDAP in <a class="xref"
-   href="/admin/setup/about-LDAP.html" title="Some companies use
+   href="{{"/admin/setup/about-LDAP.html" | prepend: site.baseurl }}" title="Some companies use
    LDAP (Lightweight Directory Access Protocol) to manage user authentication.
    Using LDAP provides security and makes user management more
    centralized.">About LDAP integration</a>.
@@ -481,7 +510,7 @@ This subcommand supports the following actions:
 
 * `tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 MD5]`
 
-  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have Internet access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
+  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
 
   * `--online` Download `maptiles` tar from internet. (default: True)
   * `--offline`   Using `maptiles` tar from local disk. (default: False)
@@ -552,8 +581,7 @@ This subcommand has the following actions:
 
   * `--options` *`OPTIONS`* Other command-line options to forward to `mount.cifs` command (default: `noexec`)
 
-
-* `tscli nas mount-nfs [-h] --server SERVER [--path_on_server PATH_ON_SERVER]
+* `tscli nas mount-nfs [-h] --server SERVER [--protocol PROTO --path_on_server PATH_ON_SERVER]
   --mount_point MOUNT_POINT [--options OPTIONS]`
 
   Mounts a NFS device on all nodes. Parameters are:
@@ -568,6 +596,7 @@ This subcommand has the following actions:
     used for mounting. For example: `/mnt/external` (default: None)
 
   * `--options` `OPTIONS` Command-line options to forward to mount command (default: `noexec`).
+  * `--protocol PROTO` One of `nfs` or `nfs4`. The default is `nfs`.
 
 * `tscli nas unmount [-h] --dir` *`DIR`*
 
@@ -595,41 +624,6 @@ This subcommand has the following actions:
 
   * `--secondary` *`SECONDARY`* Secondary drive to be used to carry to reinstall (default: `sdd`)
   * `--cluster` Is the node part of a cluster (default: `False`)
-
-
-### os
-
-```
-tscli os [-h] {find-package,list-packages}
-```
-
-This subcommand supports the following actions:
-
-* `tscli os find-package [-h] ` *`name`*
-
-   Lists all packages and versions included in the product image whose name
-   contains *`name`*. Package names you can specify are:
-
-   - `alert`
-   - `backup`
-   - `callhome`
-   - `cluster`
-   - `event`
-   - `fileserver`
-   - `firewall`
-   - `ldap`
-   - `logs`
-   - `monitoring`
-   - `node`
-   - `os`
-   - `release`
-   - `smtp`
-   - `snapshot`
-   - `ssl`
-   - `storage`
-   - `support`
-
-* `tscli os list-packages [-h]` Lists all packages and versions included in the product image.
 
 ### saml
 
@@ -737,6 +731,16 @@ This subcommand supports the following actions:
    *  `--config` *`CONFIG`* Text format of periodic backup policy config (default: None)
 
 
+### spot
+
+```
+tscli spot [-h] {enable}
+```
+
+This subcommand supports the following actions:
+
+`tscli spot [-h] {enable}` Enableds Spot integrtion.
+
 ### ssl
 
 ```
@@ -769,40 +773,43 @@ This subcommand supports the following actions:
 ### storage
 
 ```
-tscli storage [-h] {gc}
+tscli storage [-h] gc df
 ```
 
 This subcommand supports the following actions:
 
-`tscli storage gc [-h] [--log_age` *`LOG_AGE`* `] [--force] [--localhost_only]`
+* `tscli storage gc [-h] [--log_age` *`LOG_AGE`* `] [--force] [--localhost_only]`
 
-Garbage collect unused storage. Before issuing this command, you must stop the cluster using `tscli
-cluster stop`. After garbage collection has completed, you can restart
-the cluster with `tscli cluster start`.  The command frees space in these directories:
+    Garbage collect unused storage. Before issuing this command, you must stop the cluster using `tscli
+    cluster stop`. After garbage collection has completed, you can restart
+    the cluster with `tscli cluster start`.  The command frees space in these directories:
 
- * `/tmp`
- * `/usr/local/scaligent/logs/`
- * `/export/logs/orion`
- * `/export/logs/oreo`
- * `/export/logs/hadoop`
- * `/export/logs/zookeeper`
- * `cores`
+     * `/tmp`
+     * `/usr/local/scaligent/logs/`
+     * `/export/logs/orion`
+     * `/export/logs/oreo`
+     * `/export/logs/hadoop`
+     * `/export/logs/zookeeper`
+     * `cores`
 
-Accepts these optional flags:
+    Accepts these optional flags:
 
-* `--log_age` *`LOG_AGE`*
+    * `--log_age` *`LOG_AGE`*
 
-  Delete logs older than these many hours. Use a non-zero value ideally. A
-  zero value will cause all temporary files to be deleted, including say those
-  which are just temporarily closed while they are being passed from one
-  component to the next. (default: `4`)
+      Delete logs older than these many hours. Use a non-zero value ideally. A
+      zero value will cause all temporary files to be deleted, including say those
+      which are just temporarily closed while they are being passed from one
+      component to the next. (default: `4`)
 
-* `--force` Forces deletion of all logs and temporary files regardless of age. This must
-only be run on a stopped cluster. (default: False)
+    * `--force` Forces deletion of all logs and temporary files regardless of age. This must
+    only be run on a stopped cluster. (default: False)
 
-* `--localhost_only` If used, only the logs on the localhost will be removed. If not specified, the
-   command acts on the entire cluster.
+    * `--localhost_only` If used, only the logs on the localhost will be removed. If not specified, the
+       command acts on the entire cluster.
 
+* `tscli storage df [--mode disk|hdfs]`
+
+   Checks the disk usage on the relevant mounts. Returns output similar to the Linux system command `df -h <directory>`.
 
 ### support
 
@@ -825,3 +832,12 @@ This subcommand supports the following actions:
 * `tscli support show-remote` Shows the status and configuration of remote support.
 * `tscli support start-remote` Starts remote support.
 * `tscli support stop-remote` Stops remote support.
+
+### tokenauthentication
+
+```
+tscli cli tokenauthentication [-h] {disable,enable}
+```
+
+* `tscli cli tokenauthentication enable` Generates a token.
+* `tscli cli tokenauthentication disable` Purges token login configuration.

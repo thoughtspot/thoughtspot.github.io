@@ -1,6 +1,5 @@
 ---
 title: [Delete a worksheet or table]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "When you try to delete a worksheet or table, you'll see a message listing any dependent objects that must be removed first."

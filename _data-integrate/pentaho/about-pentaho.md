@@ -1,6 +1,6 @@
 ---
 title: [About Pentaho]
-tags:
+tags: [overview]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

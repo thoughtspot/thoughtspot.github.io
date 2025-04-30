@@ -1,6 +1,5 @@
 ---
 title: [Install the ODBC Driver on Windows]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use this procedure to obtain the Microsoft Windows ODBC driver and install it."
@@ -8,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The ODBC driver for Windows requires Visual C++ Redistributable for Visual Studio 2014. You will be prompted to install it during installation of the driver if it isn't already installed. It is important to note the following about the ODBC login information:
+The ODBC driver for Windows requires Visual C++ Redistributable for Visual Studio 2013. You will be prompted to install it during installation of the driver if it isn't already installed. It is important to note the following about the ODBC login information:
 
 -   Database `username`: This is not the machine login username. This is the name of a ThoughtSpot user with administrator permissions.
 -   Database `password`: This is not the machine login username. This is the ThoughtSpot user password.
@@ -51,4 +50,4 @@ To obtain and install the ODBC driver for Windows:
 
      ![]({{ site.baseurl }}/images/odbc_install_6_install_completed.png "Installation was successful")
 
-If you need to make changes to the ODBC configuration later, you can [Change the ODBC Configuration on Windows](/data-integrate/clients/change-odbc-windows.html#). For example, you may want to add a default schema or change the server IP address or the default database. You can also [add a new ODBC data source]({{ site.baseurl }}/data-integrate/clients/add-new-ODBC-source-windows.html). This capability supports connecting to multiple ThoughtSpot instances.
+If you need to make changes to the ODBC configuration later, you can [Change the ODBC Configuration on Windows]({{ site.baseurl }}/data-integrate/clients/change-odbc-windows.html#). For example, you may want to add a default schema or change the server IP address or the default database. You can also [add a new ODBC data source]({{ site.baseurl }}/data-integrate/clients/add-new-ODBC-source-windows.html). This capability supports connecting to multiple ThoughtSpot instances.

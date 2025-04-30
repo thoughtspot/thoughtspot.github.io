@@ -1,6 +1,5 @@
 ---
 title: [Percent (simple number) calculations]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

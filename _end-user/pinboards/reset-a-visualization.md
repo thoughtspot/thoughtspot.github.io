@@ -1,6 +1,5 @@
 ---
 title: [Reset a pinboard or visualization]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

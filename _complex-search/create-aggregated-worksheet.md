@@ -1,6 +1,5 @@
 ---
 title: [Save a search as a worksheet]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,6 +1,5 @@
 ---
 title: ["Filter on null, blank, or empty values"]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Filtering on NULL and empty values is a special case. "

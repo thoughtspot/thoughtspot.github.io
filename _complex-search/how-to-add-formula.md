@@ -1,6 +1,5 @@
 ---
 title: [Add a formula to a search]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

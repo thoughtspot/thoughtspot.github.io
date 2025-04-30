@@ -1,6 +1,6 @@
 ---
 title: [Set up monitoring]
-tags: [SysAdm_tscli_Config]
+tags: [tscli]
 keywords: tbd
 last_updated: tbd
 summary: "Setting up monitoring is a one time operation."

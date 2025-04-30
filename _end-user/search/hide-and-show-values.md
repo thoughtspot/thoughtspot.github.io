@@ -1,6 +1,5 @@
 ---
 title: [Hide and show values]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can hide and show values on the chart using the legend."

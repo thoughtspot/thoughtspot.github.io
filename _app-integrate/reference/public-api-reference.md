@@ -1,6 +1,5 @@
 ---
 title: [Public API reference]
-tags:
 keywords: REST,API,data,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -152,7 +151,7 @@ Header of each visualization header object obtained will have these first class 
 }
 ```
 
-## Public name: principal/sync
+## Public name: user/sync
 
 - Public namespace: Configuration
 - Current URL path: /tspublic/v1/user/sync

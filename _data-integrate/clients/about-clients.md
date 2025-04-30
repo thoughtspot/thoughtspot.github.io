@@ -1,6 +1,5 @@
 ---
 title: [ThoughtSpot Clients]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

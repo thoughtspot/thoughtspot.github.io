@@ -1,6 +1,5 @@
 ---
 title: ["Add/remove columns in a loaded table"]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

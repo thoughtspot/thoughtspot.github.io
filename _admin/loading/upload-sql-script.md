@@ -1,6 +1,5 @@
 ---
 title: [Upload and run a SQL script]
-tags:
 keywords: schema, import
 last_updated: tbd
 summary: "Importing a schema through the Web browser makes it possible to run your SQL script without needing to have a Linux login."

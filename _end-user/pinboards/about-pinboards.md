@@ -1,6 +1,5 @@
 ---
 title: [Basic pinboard usage]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Create a new pinboard to group and manage related search results. Pinboards are the ThoughtSpot term for a dashboard."
@@ -65,3 +64,7 @@ static others appear only when you over over specific locations of the pinboard.
 This diagram displays active action areas on a pinboard.
 
 ![]({{ site.baseurl }}/images/pinboard-controls.png "Pinboard controls")
+
+If you make a change to a pinboard, the system recognizes this and puts a **Save
+changes** button up in the header to alert you.  Simply press this button to
+make your changes permanent.

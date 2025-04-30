@@ -1,6 +1,5 @@
 ---
 title: [Set the y-axis range]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

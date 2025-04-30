@@ -1,6 +1,5 @@
 ---
 title: [Search suggestions]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "How ThoughtSpot learns from your searches and helps you."

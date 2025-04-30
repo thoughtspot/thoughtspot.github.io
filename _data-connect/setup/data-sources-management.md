@@ -1,6 +1,5 @@
 ---
 title: [Data sources management]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "After you have successfully loaded your tables, you can check on the status of the load, make edits, and more."

@@ -1,6 +1,5 @@
 ---
 title: [Start a new search]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Starting a new ThoughtSpot search is simple, like starting a new Google search."

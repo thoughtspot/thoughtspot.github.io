@@ -1,6 +1,5 @@
 ---
 title: [About incremental data loads]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can create an incremental data load, with some planning ahead."

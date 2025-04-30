@@ -1,6 +1,5 @@
 ---
 title: [Overview of data modeling settings]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -29,7 +28,7 @@ This index lists the editable data modeling settings:
 |[Number Format](set-format-pattern-numbers.html#)|Specifies the format to use when showing a numeric value in the column.| |
 |[Date Format](set-format-pattern-numbers.html#date-format)|Specifies the format to use when showing the dates in a column.| |
 |[Currency Format](set-format-pattern-numbers.html#set-currency-format)|Specifies the format to use when showing the currencies in a column.| |
-|[Attribution Dimension](attributable-dimension.html#)|Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution.|Yes|
+|[Attribution Dimension](attributable-dimension.html#)|Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution.| |
 
 ## Data modeling for worksheets
 

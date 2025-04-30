@@ -1,6 +1,5 @@
 ---
 title: [Get started with ThoughtSpot Data Connect]
-tags:
 keywords: Informatica,"REST API"
 last_updated: tbd
 toc: false

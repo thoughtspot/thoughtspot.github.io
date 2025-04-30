@@ -1,6 +1,5 @@
 ---
 title: [Start a slideshow]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Displaying your pinboard as a slideshow is a good way to present its contents to others."

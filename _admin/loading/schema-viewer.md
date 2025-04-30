@@ -1,6 +1,6 @@
 ---
 title: [How to view a data schema]
-tags: [Modeling_Schema_Viewer]
+tags: [Modeling]
 keywords: schema viewer, relationships, keys, worksheet
 last_updated: tbd
 summary: "Use the schema viewer to see tables and worksheets and their relationships. "

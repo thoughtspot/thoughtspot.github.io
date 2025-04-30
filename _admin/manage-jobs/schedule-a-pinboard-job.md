@@ -1,7 +1,6 @@
 ---
 title: [Schedule a pinboard job]
-tags:
-keywords: "job,pinboard,schedule"
+keywords: "job,pinboard,schedule,gating,kpi"
 last_updated: tbd
 summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
@@ -56,12 +55,15 @@ To schedule a pinboard:
        <td>CSV files provide all data for tables, with one attachment per table. Use CSV files to perform further analysis offline. PDF files show all visualizations in the pinboard. Each chart takes up a whole page in the file, while only the first 100 rows of a table are included. Use PDF files to skim the data.</td>
      </tr>
      <tr>
-       <th>Gating condition</th>
-       <td>Write a statement that returns a boolean value. For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="/reference/formula-reference.html">Formula Reference</a>.</td>
+     <th>Gating condition</th>
+     <td><p>Write a statement that returns a single boolean value (true or false). For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. Other than checking your formula syntax, ThoughtSpot does not validate your formula returns a single boolean.</p>
+     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula Reference</a>.</p></td>
      </tr>
      <tr>
        <th>Recipients</th>
-       <td>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Your ThoughtSpot admin must set these email domains as allowed domains. Contact ThoughtSpot Support to add allowed domains.</td>
+       <td><p>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your Thoughtspot admin must have set your whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.</p>
+       <p>If you experience problems with sending email, your cluster may not have SMTP enabled. Contact your system administrator to resolve this issue.</p>
+       </td>
      </tr>
    </table>
 

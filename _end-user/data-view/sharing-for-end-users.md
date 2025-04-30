@@ -1,6 +1,5 @@
 ---
 title: [Overview of sharing]
-tags:
 keywords: tbd
 last_updated: tbd
 toc: false

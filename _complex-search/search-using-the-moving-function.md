@@ -1,8 +1,7 @@
 ---
 title: [Calculate the moving average]
-tags:
 keywords: tbd
-last_updated: tbd
+tags: [time,dates]
 summary: "You can use the moving formulas to compute a measure within a moving window of your data, usually defined by time."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

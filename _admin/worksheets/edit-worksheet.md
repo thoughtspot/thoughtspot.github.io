@@ -1,6 +1,5 @@
 ---
 title: [Edit or rename worksheet]
-tags:
 keywords: "worksheet,edit"
 last_updated: tbd
 summary: "A worksheet can be edited by anyone with the proper permissions."

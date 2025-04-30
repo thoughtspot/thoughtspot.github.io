@@ -1,6 +1,5 @@
 ---
 title: [Understand charts]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Charts display your search answer in a visual way."

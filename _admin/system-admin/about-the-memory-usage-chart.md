@@ -1,6 +1,5 @@
 ---
 title: [About the Space Utilization chart]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
