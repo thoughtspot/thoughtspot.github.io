@@ -240,7 +240,7 @@ Command to run a command on all nodes.
 *`COPYFIRST`*`] [--timeout` *`TIMEOUT`*`]` *`command`*
 
 * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: `all`)
-* `--dest_dir` *`DEST_DIR`*  Directory to save the files containing output from each nodes. (default: None)
+* `--dest_dir` *`DEST_DIR`*  Directory to save the files containing output from each nodes. (Required. Default: None)
 * `--copyfirst` *`COPYFIRST`* Copy the executable to required nodes first. (default: `False`)
 * `--timeout` *`TIMEOUT`* Timeout waiting for the command to finish. (default: `60`)
 
@@ -533,7 +533,7 @@ This subcommand supports the following actions:
 
 * `tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 MD5]`
 
-  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
+  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have Internet access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
 
   * `--online` Download `maptiles` tar from internet. (default: True)
   * `--offline`   Using `maptiles` tar from local disk. (default: False)

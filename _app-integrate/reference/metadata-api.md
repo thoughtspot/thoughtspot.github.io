@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The Metadata APIs enable you to fetch metadata details for various objects in the Thoughtspot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.
+The Metadata APIs enable you to fetch metadata details for various objects in the ThoughtSpot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.
 
 ## Get visualization headers
 
@@ -206,7 +206,7 @@ Use this API to fetch a comprehensive list of metadata headers of a specific obj
     <tr>
       <td><code>auto_created</code></td>
       <td>boolean</td>
-      <td>A fag that indicates whether to list auto created objects only. A value of null signifies return all.</td>
+      <td>A flag that indicates whether to list auto created objects only. A value of null signifies return all.</td>
     </tr>
    </tbody>
   </table>
