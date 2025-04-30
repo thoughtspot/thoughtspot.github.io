@@ -1,4 +1,4 @@
-The language the ThoughtSpot UX displays is based off of the locale in a user's
+The language the ThoughtSpot UI displays is based on the locale in a user's
 profile. The locale preferences control the language and data formats (date and
 number formats) by geographic locations. In addition to American English (*en-US*),
 ThoughtSpot supports:
@@ -9,12 +9,12 @@ ThoughtSpot supports:
 | *en-CA* | Canadian English  |
 | *en-GB* | United Kingdom English  |
 | *en-US* | English (United States)  |
-| *es-US (beta)* | Spanish (United States)  |
-| *fr-CA (beta)* | French (Canada)  |
-| *fr-FR (beta)* | French (France)  |
+| *es-US* | Spanish (United States)  |
+| *fr-CA* | French (Canada)  |
+| *fr-FR* | French (France)  |
 | *ja*    | Japanese  |
-| *pt-BR (beta)* | Portuguese (Brazil)  |
-| *zh-CN (beta)* | Chinese (S)  |
+| *pt-BR* | Portuguese (Brazil)  |
+| *zh-CN* | Chinese (S)  |
 
 Date and number formats change to reflect your locale. So, if you set Japanese
 as your default locale in your profile settings, then the interface will update
@@ -29,7 +29,3 @@ inputted.
 For example, if you are using ThoughtSpot in the US, the number formatting
 should look like this: `xxx,xxx.xx`. And in Europe, it should look like this:
 `xxx.xxx,xx`.
-
-{% include warning.html content="It is possible that you set your locale but
-find strings in the UI still appear in English, this indicates an untranslated
-string. Please notify ThoughtSpot support." %}

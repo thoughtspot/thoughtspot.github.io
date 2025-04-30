@@ -1,7 +1,7 @@
 ---
 title: [user API]
 keywords: REST,API,data,"REST API"
-last_updated: tbd
+last_updated: 5/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -110,6 +110,7 @@ that:
 - Objects not present in ThoughtSpot, and present in the list will be created in ThoughtSpot.
 The returned object represents the changes that were made in ThoughtSpot.
 
+Set `visibility` to `NON_SHARABLE` if you do not want users to be able to share objects with users in this group.
 
 <table>
    <colgroup>

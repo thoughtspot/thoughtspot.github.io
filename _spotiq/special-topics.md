@@ -31,10 +31,14 @@ You can increase the SpotIQ's effectiveness by ensuring you are practicing good
 data modeling. This is true if you are user uploading the occasional data file
 or a data management professional. Modeling data requires that you can:
 
-1. Click on the **DATA** icon, to get to the data management listing.
+1. Click **Data** to get to the data management listing.
+
 2. Click on a data source you own or can edit.
+
     This brings up the **Columns** screen, where you'll make your modeling settings.
+    
 3. Modify one or more column settings.
+
 4. Save your changes.
 
     If you worked through the SpotIQ tutorial, you can try experiment on the

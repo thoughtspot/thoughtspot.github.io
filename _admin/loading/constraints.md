@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 ---
 Constraints include primary keys, foreign keys, and relationships. Relationships allow you to create a generic relationship for use when you want to join tables that don't have a primary key/foreign key relationship.
 
+{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
+
 ## Primary keys
 
 When a primary key is selected for a table, it impacts data loading behavior. When a new row is added:
@@ -19,9 +21,16 @@ This behavior is referred to as “upsert” because it does an `INSERT` or an `
 
 Note that ThoughtSpot does not check for primary key violations across different shards of the table. Therefore, you need to shard the table on the primary key columns if you require this “upsert” behavior.
 
+## Permitted joins and necessary permissions
+See this matrix for information about which joins you can create, and what permissions these joins require.
+
+{% include content/joins-matrix.md %}
+
 ## Foreign key relationships
 
-Foreign key relationships help ThoughtSpot with default schema modeling by indicating a connection between two tables. These relationships are used for joining the tables, and not for referential integrity constraint checking. The foreign key relationship is defined on the fact table and references the primary key(s) in the dimension table.
+Foreign key relationships tell ThoughtSpot how two tables can be joined. These relationships are only used for joining the tables, and not for referential integrity constraint checking.
+
+The directionality of primary key - foreign key relationships is important. The foreign key relationship is defined on the fact table and references the primary key(s) in the dimension table. So you can think of the fact table as the source and the dimension table as the target. In the schema viewer, you'll notice that the arrow that represents a PK/FK join points to the dimension table.
 
 If you use primary and foreign keys, when users search the data from the search bar, tables are automatically joined. For example, assume there are two tables:
 
@@ -35,6 +44,10 @@ Foreign keys have to match the primary key of the target table they refer to. So
 ## Generic relationships (many-to-many)
 
 You may have a schema where there is a fact table that you want to join with another fact table. If there isn't a primary key/foreign key relationship between the tables, you can use many-to-many to enable this. You can do this by using the RELATIONSHIP syntax to add a link between them, that works similarly to the WHERE clause in a SQL join clause.
+
+{% include note.html content="Using generic relationships is not a best practice. In cases where you have two fact tables you want to join, it is better to find a way to create a bridge table between them, so you have a chasm trap. Look at your two fact tables to see if they share some common data that you could use to create a dimension table between them. For example a date or product dimension could be use to join an inventory fact table with a sales fact table. This is best done in your ETL process, before bringing the data into ThoughtSpot." %}
+
+{% include note.html content="A many-to-many implementation does not protect from over counting in some searches. If you plan to use it, make sure your searches don't include aggregation or count searches that will count one value multiple times, because it satisfies the join condition for multiple rows." %}
 
 This is a special kind of relationship, that applies to specific data models and use cases. For example, suppose you have a table that shows wholesale purchases of fruits, and another table that shows retail fruit sales made, but no inventory information. In this case, it would be of some use to see the wholesale purchases that led to sales, but you don't have the data to track a single apple from wholesale purchase through to sale to a customer.
 
@@ -87,5 +100,3 @@ TQL> CREATE TABLE "retail_sales" (
 
 TQL> ALTER TABLE "wholesale_buys" ADD RELATIONSHIP WITH "retail_sales" AS "wholesale_buys"."fruit" = "retail_sales"."fruit" and ("wholesale_buys"."date_ordered" < "retail_sales"."date_sold" and "retail_sales"."date_sold" < "wholesale_buys"."expiration_date");
 ```
-
-{% include note.html content="A many-to-many implementation does not protect from over counting in some searches. If you plan to use it, make sure your searches don't include aggregation or count searches that will count one value multiple times, because it satisfies the join condition for multiple rows." %}

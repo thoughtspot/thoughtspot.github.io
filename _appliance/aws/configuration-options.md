@@ -2,7 +2,7 @@
 title: [AWS configuration options]
 keywords: AWS, configuration
 tags: [performance]
-last_updated: tbd
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -31,7 +31,7 @@ Amazon.
 
 |Instance name|Data capacity|Root volume (SSD)|Data volume (SSD or HDD)|
 |-------------|-------------|-------------------|--------------------------|
-|r4.16xlarge|Up to 250 GB|1 vol 200 GB|2 vols 1 TB each|
+|r4.16xlarge|Up to 250 GB|1 vol 200 GB for each node|2 vols 1 TB each|
 
 
 

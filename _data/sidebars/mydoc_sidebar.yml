@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Software
-  docversion: 4.5
-  version: 4.5 Guides
+  docversion: 5.0
+  version: 5.0 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -185,6 +185,9 @@ entries:
         - title: Geo charts
           url: /end-user/search/about-geo-charts.html
           output: web,ugBk
+        - title: Sankey charts
+          url: /end-user/search/about-sankey-charts.html
+          output: web,ugBk
         - title: Pivot table
           url: /complex-search/about-pivoting-a-table.html
           output: web,ugBk
@@ -233,11 +236,14 @@ entries:
         - title: Cumulative functions
           url: /complex-search/about-cumulative-formulas.html
           output: web,ugBk
-        - title: Grouping functions
-          url: /complex-search/about-pinned-measures.html
-          output: web,ugBk
         - title: Moving functions
           url: /complex-search/about-moving-formulas.html
+          output: web,ugBk
+        - title: Flexible aggregation functions
+          url: /complex-search/aggregation-flexible.html
+          output: web,ugBk
+        - title: Grouping functions
+          url: /complex-search/about-pinned-measures.html
           output: web,ugBk
         - title: Filtered aggregation functions
           url: /complex-search/filtered-agg-forms.html
@@ -259,21 +265,6 @@ entries:
         output: web,ugBk
       - title: Formulas for chasm traps
         url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
-        output: web,ugBk
-    - levelTwoTitle: Work with worksheets
-      output: web,ugBk
-      levelTwoItems:
-      - title: Understand worksheets
-        url: /complex-search/about-query-on-query.html
-        output: web,ugBk
-      - title: Save a search as a worksheet
-        url: /complex-search/create-aggregated-worksheet.html
-        output: web,ugBk
-      - title: Create a search from a worksheet
-        url: /complex-search/do-query-on-query.html
-        output: web,ugBk
-      - title: Worksheet example scenarios
-        url: /complex-search/more-example-scenarios.html
         output: web,ugBk
     - levelTwoTitle: Use pinboards
       output: web,ugBk
@@ -299,11 +290,50 @@ entries:
         - title: Copy a pinboard or visualization link
           url: /end-user/pinboards/copy-link-for-a-pinboard.html
           output: web,ugBk
-        - title: Reset a pinobard or visualization
+        - title: Reset a pinboard visualization
           url: /end-user/pinboards/reset-a-visualization.html
           output: web,ugBk
         - title: Start a slideshow
           url: /end-user/pinboards/start-a-slideshow.html
+          output: web,ugBk
+    - levelTwoTitle: Use custom R scripts
+      output: web,ugBk
+      levelTwoItems:
+        - title: About R in ThoughtSpot
+          url: /end-user/r-scripts/about-r-in-thoughtspot.html
+          output: web,ugBk
+        - title: Create and share R scripts
+          url: /end-user/r-scripts/create-r-scripts.html
+          output: web,ugBk
+        - title: Run prebuilt R scripts on answers
+          url: /end-user/r-scripts/run-prebuilt-r-scripts.html
+          output: web,ugBk
+        - title: Save and share R visualizations
+          url: /end-user/r-scripts/save-and-share-r-answers.html
+          output: web,ugBk
+    - levelTwoTitle: SpotIQ
+      output: web,ugBk
+      levelTwoItems:
+        - title: What is SpotIQ
+          url: /spotiq/whatisspotiq.html
+          output: web,ugBk
+        - title: "101: Load and analyze data"
+          url: /spotiq/overview.html
+          output: web,ugBk
+        - title: "101: Review and save insights"
+          url: /spotiq/work-with-insights.html
+          output: web,ugBk
+        - title: "101: Do more with SpotIQ"
+          url: /spotiq/spotiq-customize.html
+          output: web,ugBk
+        - title: "Best SpotIQ Practices"
+          url: /spotiq/special-topics.html
+          output: web,ugBk
+        - title: "Custom SpotIQ analysis"
+          url: /spotiq/customization.html
+          output: web,ugBk
+        - title: "Advanced R Customizations"
+          url: /spotiq/adv-customize-withr.html
           output: web,ugBk
     - levelTwoTitle: Work with data
       output: web,ugBk
@@ -323,30 +353,6 @@ entries:
         - title: Date and currency format settings
           url: /end-user/locale.html
           output: web,ugBk
-        - levelThreeTitle: SpotIQ
-          output: web,ugBk
-          levelThreeItems:
-          - title: What is SpotIQ
-            url: /spotiq/whatisspotiq.html
-            output: web,ugBk
-          - title: "101: Load and analyze data"
-            url: /spotiq/overview.html
-            output: web,ugBk
-          - title: "101: Review and save insights"
-            url: /spotiq/work-with-insights.html
-            output: web,ugBk
-          - title: "101: Do more with SpotIQ"
-            url: /spotiq/spotiq-customize.html
-            output: web,ugBk
-          - title: "Best SpotIQ Practices"
-            url: /spotiq/special-topics.html
-            output: web,ugBk
-          - title: "Custom SpotIQ analysis"
-            url: /spotiq/customization.html
-            output: web,ugBk
-          - title: "Advanced R Customizations"
-            url: /spotiq/adv-customize-withr.html
-            output: web,ugBk
         - levelThreeTitle: Share your work
           output: web,ugBk
           levelThreeItems:
@@ -365,6 +371,18 @@ entries:
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
+    - levelTwoTitle: Use SearchIQ
+      output: web,ugBk
+      levelTwoItems:
+        - title: About SearchIQ
+          url: /end-user/search/about-searchiq.html
+          output: web,ugBk
+        - title: Use SearchIQ for natural searches
+          url: /end-user/search/use-searchiq.html
+          output: web,ugBk
+        - title: Teach SearchIQ your language
+          url: /end-user/search/teach-searchiq.html
+          output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
@@ -452,8 +470,14 @@ entries:
       - title: Configure load balancing and proxies
         url: /admin/setup/about-load-balancer-configuration.html
         output: web,admBk
+      - title: Customize ThoughtSpot Help
+        url: /admin/setup/customize-help.html
+        output: web,admBk
       - title: Customize look and feel
         url: /admin/setup/customize-style.html
+        output: web,admBk
+      - title: Enable SearchIQ
+        url: /admin/setup/enable-searchiq.html
         output: web,admBk
     - levelTwoTitle: Load and manage data
       output: web,admBk
@@ -599,18 +623,54 @@ entries:
       - title: Create a formula in a worksheet
         url: /admin/worksheets/create-formula.html
         output: web,admBk
-      - title: How the inclusion rule works
-        url: /admin/worksheets/about-inclusion-rule.html
+      - title: Create worksheet filters
+        url: /admin/worksheets/create-ws-filter.html
         output: web,admBk
       - title: How the worksheet join rule works
         url: /admin/worksheets/progressive-joins.html
         output: web,admBk
-      - title: "Change inclusion, join, or RLS for a worksheet"
+      - title: "Change join rule or RLS for a worksheet"
         url: /admin/worksheets/change-inclusion-rule.html
+        output: web,admBk
+      - title: "Create a join relationship"
+        url: /admin/worksheets/add-joins.html
+        output: web,admBk
+      - title: "Modify joins between worksheet tables"
+        url: /admin/worksheets/mod-ws-internal-joins.html
         output: web,admBk
       - title: Delete a worksheet or table
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk
+    - levelTwoTitle: Work with views
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand views
+        url: /complex-search/about-query-on-query.html
+        output: web,ugBk
+      - title: Save a search as a view
+        url: /complex-search/create-aggregated-worksheet.html
+        output: web,ugBk
+      - title: Create a search from a view
+        url: /complex-search/do-query-on-query.html
+        output: web,ugBk
+      - title: View example scenarios
+        url: /complex-search/more-example-scenarios.html
+        output: web,ugBk
+      - title: About materialized views
+        url: /admin/loading/materialized-views.html
+        output: web,ugBk
+      - title: Materialize a view
+        url: /admin/loading/materialize-a-view.html
+        output: web,ugBk
+      - title: Dematerialize a view
+        url: /admin/loading/dematerialize-a-view.html
+        output: web,ugBk
+      - title: Refresh a view
+        url: /admin/loading/refresh-view.html
+        output: web,ugBk
+      - title: Schedule view refreshes
+        url: /admin/loading/schedule-materialization.html
+        output: web,ugBk
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
@@ -674,6 +734,12 @@ entries:
         - title: Set Rule-Based RLS
           url: /admin/data-security/set-rls.html
           output: web,admBk
+      - title: ThoughtSpot Lifecycle
+        url: /admin/data-security/security-thoughtspot-lifecycle.html
+        output: web, admBk
+      - title: Encryption of data in transit
+        url: /admin/data-security/encryption-of-data.html
+        output: web, admBk
     - levelTwoTitle: System administration
       output: web,admBk
       levelTwoItems:
@@ -845,6 +911,141 @@ entries:
       - title: Connectors reference
         url: /data-connect/reference/data-connect-connection-credentials.html
         output: web,cngBk
+  - sectiontitle: Embedding
+    output: web,apgBk
+    sectionitems:
+    - title: Introduction to Embedding
+      url: /app-integrate/introduction/introduction.html
+      output: web,apgBk
+    - title: Log in to the Linux shell using SSH
+      url: /app-integrate/introduction/login-console.html
+      output: web,apgBk
+    - title: Log in credentials
+      url: /app-integrate/introduction/logins.html
+      output: web,apgBk
+    - title: Use the JavaScript API
+      url: /app-integrate/JSAPI/about-JS-API.html
+      output: web,apgBk
+    - levelTwoTitle: SAML
+      output: web,apgBk
+      levelTwoItems:
+      - title: About SAML
+        url: /app-integrate/SAML/about-SAML-integrations.html
+        output: web,apgBk
+      - title: Configure SAML
+        url: /app-integrate/SAML/configure-SAML-with-tscli.html
+        output: web,apgBk
+      - title: Configure CA SiteMinder
+        url: /app-integrate/SAML/configure-SAML-siteminder.html
+        output: web,apgBk
+      - levelThreeTitle: Active Directory
+        output: web,apgBk
+        levelThreeItems:
+        - title: Configure Active Directory Federated Services
+          url: /app-integrate/SAML/integrate-ADFS.html
+          output: web,apgBk
+        - title: Initialize the Identity Provider Metadata
+          url: /app-integrate/SAML/initialize-IDP.html
+          output: web,apgBk
+        - title: Initialize the Service Provider Metadata
+          url: /app-integrate/SAML/initialize-SP.html
+          output: web,apgBk
+        - title: Test the ADFS Integration
+          url: /app-integrate/SAML/test-ADFS.html
+          output: web,apgBk
+    - levelTwoTitle: REST API
+      output: web,apgBk
+      levelTwoItems:
+      - title: About the REST API
+        url: /app-integrate/data-api/about-data-api.html
+        output: web,apgBk
+      - title: Calling the REST API
+        url: /app-integrate/data-api/calling-rest-api.html
+        output: web,apgBk
+      - title: REST API pagination
+        url: /app-integrate/data-api/response-pagination.html
+        output: web,apgBk
+      - title: Use the REST API to get data
+        url: /app-integrate/data-api/use-data-api-read.html
+        output: web,apgBk
+      - title: Use the Embedded Search API
+        url: /app-integrate/data-api/direct-search-to-embed.html
+        output: web,apgBk
+      - title: Use the Data Push API
+        url: /app-integrate/data-api/push-data-to-external-app.html
+        output: web,apgBk
+    - levelTwoTitle: Embed ThoughtSpot
+      output: web,apgBk
+      levelTwoItems:
+      - title: Understand embedding
+        url: /app-integrate/embedding-viz/about-embedding-viz.html
+        output: web,apgBk
+      - title: Embed pinboard or visualization
+        url: /app-integrate/embedding-viz/embed-a-viz.html
+        output: web,apgBk
+      - title: Authentication flow with embed
+        url: /app-integrate/JSAPI/enable-JS-API.html
+        output: web,apgBk
+      - title: Full application embedding
+        url: /app-integrate/embedding-viz/about-full-embed.html
+        output: web,apgBk
+      - title: Configured trusted authentication
+        url: /app-integrate/embedding-viz/trusted-authentication.html
+        output: web,apgBk
+    - levelTwoTitle: Runtime Filters
+      output: web,apgBk
+      levelTwoItems:
+      - title: About Runtime Filters
+        url: /app-integrate/runtime-filters/about-runtime-filters.html
+        output: web,apgBk
+      - title: Apply a Runtime Filter
+        url: /app-integrate/runtime-filters/apply-runtime-filter.html
+        output: web,apgBk
+      - title: Runtime Filter Operators
+        url: /app-integrate/runtime-filters/runtime-filter-operators.html
+        output: web,apgBk
+    - levelTwoTitle: Style Customization
+      output: web,apgBk
+      levelTwoItems:
+      - title: Customize the application style
+        url: /app-integrate/custom-branding/perform-style-customization.html
+        output: web,apgBk
+      - title: Upload application logos
+        url: /app-integrate/custom-branding/upload-application-logos.html
+        output: web,apgBk
+      - title: Set chart and table visualization fonts
+        url: /app-integrate/custom-branding/set-chart-and-table-visualization-fonts.html
+        output: web,apgBk
+      - title: Choose a background color
+        url: /app-integrate/custom-branding/choose-background-color.html
+        output: web,apgBk
+      - title: Select chart color palettes
+        url: /app-integrate/custom-branding/select-chart-color-palettes.html
+        output: web,apgBk
+      - title: Change the footer text
+        url: /app-integrate/custom-branding/change-the-footer-text.html
+        output: web,apgBk
+    - levelTwoTitle: API Reference
+      output: web,apgBk
+      levelTwoItems:
+      - title: Introduction
+        url: /app-integrate/reference/public-api-reference.html
+        output: web,apgBk
+      - title: pinboarddata API
+        url: /app-integrate/reference/pinboarddata.html
+        output: web,apgBk
+      - title: metadata API
+        url: /app-integrate/reference/metadata-api.html
+        output: web,apgBk
+      - title: session API
+        url: /app-integrate/reference/session-api.html
+        output: web,apgBk
+      - title: user API
+        url: /app-integrate/reference/user-api.html
+        output: web,apgBk
+      - title: group API
+        url: /app-integrate/reference/group-api.html
+        output: web,apgBk
   - sectiontitle: Node Setup
     output: web,appQs
     sectionitems:
@@ -889,6 +1090,18 @@ entries:
           output: web,appQs
         - title: Set up Azure for ThoughtSpot
           url: /appliance/azure/launch-an-instance.html
+          output: web,appQs
+    - levelTwoTitle: GCP node
+      output: web,appQs
+      levelTwoItems:
+        - title: GCP cluster overview
+          url: /appliance/gcp/about-gcp.html
+          output: web,appQs
+        - title: Configuration options
+          url: /appliance/gcp/configuration-options.html
+          output: web,appQs
+        - title: Set up GCP for ThoughtSpot
+          url: /appliance/gcp/launch-an-instance.html
           output: web,appQs
     - levelTwoTitle: VMware node
       output: web,appQs

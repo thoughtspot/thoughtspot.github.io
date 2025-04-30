@@ -52,8 +52,7 @@ You create a manual backup from an existing snapshot. So, you must identify an e
          <name> <directory>
     ```
 
-5. Check that the backup was created:
-
+    Here is a sample `tscli backup create` command:
     ```
-    $ tscli backup ls
+    $ tscli backup create --mode dataless <my_snapshot> <directory_path>
     ```

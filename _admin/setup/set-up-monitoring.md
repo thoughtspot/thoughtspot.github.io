@@ -47,3 +47,10 @@ To configure monitoring of your cluster, set up the frequency of heartbeat and m
 
 4. After the heartbeat interval has passed, check your email to verify that emails are being delivered.
 5. If you don't receive any emails, [verify that email is working](set-up-relay-host.html#verify-the-relay-with-an-email).
+
+## Additional resources
+As you develop your expertise in monitoring, we recommend the following ThoughtSpot U course:
+* [Email and Alert Setup](https://training.thoughtspot.com/emails-alerts){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

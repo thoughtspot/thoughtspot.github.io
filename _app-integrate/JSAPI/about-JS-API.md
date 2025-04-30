@@ -13,7 +13,7 @@ to:
 -   Embed visualizations from ThoughtSpot in your Web page using iframes.
 -   Use the ThoughtSpot REST API to get data from ThoughtSpot and use it in your Web page.
 
-You can <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">download the ThoughtSpot JavaScript library</a> from our Egnyte server.
+You can <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">download the ThoughtSpot JavaScript library</a> from our secure storage server.
 
 {% include note.html content="To use the JS API in your Web page, you must have the access and permissions to
 update the code of the web page or application." %}

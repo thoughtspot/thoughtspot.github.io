@@ -22,7 +22,6 @@ company_name             : ThoughtSpot
 # this appears in the footer
 timezone                 : America/Tijuana
 google_analytics         : UA-44946579-2
-
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 
@@ -31,6 +30,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-seo-tag
+
 
 
 # Files and directories that jekyll will exclude from the build output

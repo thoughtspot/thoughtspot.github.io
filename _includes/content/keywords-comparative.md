@@ -62,7 +62,7 @@ days</code>
       <tr>
          <td>!=</td>
          <td>
-            <code>sum sale amount region != canada region <b>!=</b> mexico</code>
+            <code>sum sale amount region <strong>!=</strong> canada date <strong>!=</strong> last 5 days</code>
          </td>
       </tr>
    </tbody>

@@ -1,11 +1,12 @@
 ---
 title: [VMware configuration overview]
 keywords: vmware
-last_updated: 2/20/2020
+tags: [vm, performance]
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware VSphere Hypervisor (ESXi) 6.5 environment.
+This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
 
 ## About ThoughtSpot on VMware
 
@@ -24,7 +25,7 @@ Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
 ThoughtSpot VMs as your dataset size grows.
 
-## Configuration
+## Configuration (minimum)
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
 platform on VMware for the best performance, load balancing, scalability,
@@ -65,7 +66,17 @@ _minimum specifications_ for an individual VMware ESXi host machine:
   </tbody>
 </table>
 
-All virtualization hosts should have VMware VSphere Hypervisor (ESXi) 6.5 installed.
+For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/128GB RAM and 32CPU/256GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
+
+Locally attached storage provides the best performance.
+
+SAN can be used, but must comply with the following requirements:
+* 136 MBps minimum random read bandwidth
+* 240 random IOPS (~4ms seek latency)
+
+NAS/NFS is not supported since its latency is so high that it tends to be unreliable.
+
+All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
 
 ThoughtSpot provides a VMware template (OVF) together with a VMDK (Virtual
 Machine Disk) file for configuring a VM. VMDK is a file format that describes

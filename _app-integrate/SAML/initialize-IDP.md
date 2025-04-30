@@ -1,5 +1,6 @@
 ---
 title: [Initialize the Identity Provider Metadata]
+tags: [security]
 keywords: SAML,security,"active directory",IdP
 last_updated: tbd
 summary: "This procedure shows how to initialize the Identity Provider (IdP) metadata for AD FS."

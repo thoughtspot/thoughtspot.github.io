@@ -9,6 +9,7 @@ permalink: /:collection/:path.html
 The page explains, through an example, how to embed a visualization (table or
 chart) or pinboard from ThoughtSpot in your own static Web page, portal, or
 application.
+
 To build this sample, you need to have access to a text editor and
 a ThoughtSpot instance with a visualization. You should also have some
 experience working with Javascript.
@@ -20,27 +21,34 @@ already exists. If the pinboard or visualization doesn't exist, create it now
 before continuing.
 
 1. Log in to ThoughtSpot from a browser.
+
 2. Navigate to a visualization on the **Pinboard** tab.
+
 3. Open a pinboard.
+
 3. Copy the URL for the entire pinboard and for a single visualization.
 
-   If the object is a pinboard, click **Actions > Copy Link**.
+   If the object is a pinboard, click the ellipses icon (3 dots)
+   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
+    **Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-1.png "Pinboard Link")
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 
-   For a vizualization in a pinboard, click **Actions > Copy Link**.
+   For a vizualization in a pinboard, click the ellipses icon (3 dots)
+   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
+    **Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-2.png "Visualization Link")
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>/<vizualizationId>`
 
-## Edit the test.html
+## Edit the test.html file
 
 You need to edit the page in your application or web page where you want to
 embed a ThoughtSpot pinboard or visualization. For this example, you'll get a copy of the
-<a href="{{"/downloads/test.html" | prepend: site.baseurl }}" target="_blank"><code>test.html</code></a>  file.
+<a href="{{ site.baseurl }}/downloads/test.html" download>test.html</a> file.
 
 1. Create an empty directory called `test`.
 2. Save the `test.html` file to the `test` directory.
@@ -98,7 +106,7 @@ fastest way to run a webserver and test the code is using Python's
 `simplehttpserver`.  If you have Python on your system you already have the
 `simplehttpserver`.
 
-1. Log into ThoughtSpot.
+1. Log in to ThoughtSpot.
 
    In production, you would have added authentication code to your client. You
    haven't done that with this system. So, before you test, you'll login to the

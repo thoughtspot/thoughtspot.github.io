@@ -22,8 +22,8 @@ statistics.
 To list these system pinboards:
 
 1. Go to the **Pinboards** tab.
-2. Choose **All** and **All types**.
-3. Enter `TS ` (don't forget the space) in the search field.
+2. Choose **All**.
+3. Enter `TS: ` in the search field.
 
    ![]({{ site.baseurl }}/images/su-pinboards.png)
 

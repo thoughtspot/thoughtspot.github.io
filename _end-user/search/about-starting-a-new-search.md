@@ -2,13 +2,19 @@
 title: ["What are Searches and Answers?"]
 keywords: search,answer,introduction,"search bar"
 last_updated: tbd
-summary: "You use search answer questions about your data without having to consult a data analyst."
+summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Using ThoughtSpot's relational search is simple, so anyone can use it. In the search bar, type what you are interested in exploring, for example `revenue midwest sales rep`. Searches return a set of results in the form of a table or a chart. ThoughtSpot likes to call this set of results in response to a search an _answer_.
+Using ThoughtSpot's relational search is simple, so anyone can use it. In the
+search bar, type what you are interested in exploring, for example `revenue
+midwest sales rep`. Searches return a set of results in the form of a table or a
+chart. ThoughtSpot likes to call this set of results in response to a search an
+_answer_.
 
-As you get better with ThoughtSpot's search, you will be able to get more out of your data by performing more complex searches.  There are a few basic things you should understand before starting a new ThoughtSpot search.
+As you get better with ThoughtSpot's search, you will be able to get more out of
+your data by performing more complex searches.  There are a few basic things you
+should understand before starting a new ThoughtSpot search.
 
 ## How do I search data?
 
@@ -18,7 +24,7 @@ You’ve probably seen one of these before:
 
 Click in the box and start typing some letters. As soon as you begin typing, ThoughtSpot suggests some search terms Type slowly and use the suggestions to find what you're looking for.
 
-Whenever you finish typing a word, you'll see an answer in the form of a chart or a table.
+You'll see an answer in the form of a chart or a table. If you do not see an answer, press **Enter** on your keyboard.
 
 You should know that search in ThoughtSpot is more like an Amazon search than a conversation. For example. Instead of:
 
@@ -71,3 +77,4 @@ An answer is the result of a single search. You can save an answer you want to w
 -   [Search suggestions]({{ site.baseurl }}/end-user/search/recent-searches.html)  
 -   [Search results and column types]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html)  
 -   [Share an answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html)
+-   [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html)

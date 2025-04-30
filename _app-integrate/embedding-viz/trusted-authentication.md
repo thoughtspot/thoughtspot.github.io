@@ -37,7 +37,7 @@ point which launches the following sequence:
 
 ## Enable trusted authentication and get a token
 
-  1. Log into the ThoughtSpot server.
+  1. Log in to the ThoughtSpot server.
   2. Enable trusted authentication and generate an authenticate token.  (service secret)  -- used to identify the server to ThoughtSpot.
 
       ```

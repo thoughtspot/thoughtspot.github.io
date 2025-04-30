@@ -34,9 +34,10 @@
     </tr>
     <tr>
       <td><code>to_string</code></td>
-      <td>Returns the input as a text string.</td>
+      <td>Returns the input as a text string. To convert a date to a string, specify the date format you want to use.</td>
       <td><code class="highlighter-rouge">to_string (45 + 1) = '46'</code>
-      <br><code class="highlighter-rouge">to_string (revenue - cost)</code></td>
+      <br><code class="highlighter-rouge">to_string (revenue - cost)</code>
+      <br><code class="highlighter-rouge">to_string (date,('%m/%d/%y')) </code></td>
     </tr>
   </tbody>
 </table>

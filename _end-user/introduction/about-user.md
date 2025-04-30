@@ -24,11 +24,10 @@ You can change your picture by clicking **Upload Picture**. The system accepts
 
  ![]({{ site.baseurl }}/images/upload_picture.png "Update my picture")
 
-## Get email notifications
+## SpotIQ preferences and email notifications
 
-You can change your email notifications preferences by checking or unchecking **Email me sharing notifications** and clicking **Update Preferences**.
+You can change your [SpotIQ]({{ site.baseurl }}/spotiq/overview.html) preferences by checking or unchecking the email and SpotIQ options.
 
  ![]({{ site.baseurl }}/images/update_preferences.png "Update my preferences")
 
-
-Clicking **Sign out** logs you out of ThoughtSpot, and takes you back to the sign in page.
+Click **Sign out** to log out of ThoughtSpot, and return to the sign in page.

@@ -8,30 +8,30 @@ permalink: /:collection/:path.html
 ---
 You can add multiple schedules with different configurations for a single
 pinboard. However, each job is limited to one pinboard schedule. To add
-a schedule, you must have administrator or can schedule pinboard privilege, and
+a schedule, you must either be an administrator or have the schedule pinboard privilege, and
 at least edit-only and view-only access to the pinboard.
 
 To schedule a pinboard:
 
-1. Log in to ThoughtSpot from a browser.
-2. Click on **Pinboards**, on the top navigation bar.
+1. Sign in to ThoughtSpot from a browser.
+2. Click **Pinboards**, on the top navigation bar.
 
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
-3. Select the pinboard you would like to create a schedule for.
-4. Click **Actions** and select **Manage schedules** to view all of the schedules set for the pinboard.
+3. Select the pinboard you want to create a schedule for.
+4. Click the three-dot **Actions** button and select **Manage schedules** to view all of the schedules set for the pinboard.
 
      ![]({{ site.baseurl }}/images/view_schedules.png "View pinboard schedules")
 
 5. Click **+ Schedule** to add a new schedule.
 
-     ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
+    ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
 
-     The system displays the **Add a schedule for _PINBORD_** page. On this page you configure both the schedule
-
-6. Set the values for your schedule.
+     On the **Add a Schedule** page, you create a new schedule for your pinboard.
 
     ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
+
+6. Set the values for your schedule.
 
     <table>
      <tr>

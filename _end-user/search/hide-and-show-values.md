@@ -18,8 +18,6 @@ Clicking on a legend item will hide it from the chart. You can click it again to
 
 3. On the chart, click the legend value you would like to hide. Click the hidden legend value again to show it.
 
-     ![]({{ site.baseurl }}/images/legend.png "Legend values list")
+    In the example below, we clicked `West` to hide it.
 
-    You can also click **only** next to a legend value to only show that value on the chart.
-
-     ![]({{ site.baseurl }}/images/legend_only_value.png "Show only one legend value")
+    ![]({{ site.baseurl }}/images/legend_hide_this_value.png "Hide a legend value from the chart")

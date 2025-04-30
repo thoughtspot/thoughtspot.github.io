@@ -1,8 +1,8 @@
 ---
 title: [Set up VMware for ThoughtSpot]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-keywords: tbd
-last_updated: tbd
+keywords: vmware, configuration
+last_updated: 1/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -24,12 +24,11 @@ This installation process assumes you have already acquired your host machines.
 You can install on a cluster with any number of nodes. A one node cluster is suitable
 for a sandbox environment but is insufficient for a production environment. You need at least three nodes for high availability (HA), but there is no limit on the number of nodes.
 
-
 1. Make sure you have installed the Hypervisor on each of your three nodes.
 
    The VM template, by default, captures a 72-core configuration. If your
-   physical host has more than 72 cores, you may want to edit the VM to have (`n-2`)
-   cores (for a physical host with _n_ cores) to fully take advantage of computing
+   physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
+   cores (for a physical host with n cores) to fully take advantage of computing
    power of the physical host.
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
@@ -37,8 +36,7 @@ for a sandbox environment but is insufficient for a production environment. You 
 ## Use the OVF to Create a VM
 
 1. Download the `ThoughtSpot OVF` from the **[Downloads page here]({{ site.baseurl }}/release/downloads.html#virutal-and-cloud-platforms)** to a location on an accessible disk.
-
-2. Log into the ESXi web portal.
+2. Log in to the ESXi web portal.
 
     ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")
 
@@ -97,7 +95,7 @@ additional, larger capacity disks.
 
 2. Select **Add hard disk > New hard disk**.
 
-   You can give the VM up to 38 cores (or approximately 490 G RAM). The ESXi host
+   You can give the VM up to 72 cores (or approximately 490 G RAM). The ESXi host
    should keep a minimum of 2 cores.
 
    ![]({{ site.baseurl }}/images/vmware-adddisk1.png "New hard disk")
@@ -152,3 +150,10 @@ additional, larger capacity disks.
 There is no network at this point on your VMs. To make the VM node accessible
 from any terminal within local network, contact <a
 href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a>.
+
+## Additional resources
+As you develop your expertise in VMware VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: VMware](https://training.thoughtspot.com/node-network-configuration/569476){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

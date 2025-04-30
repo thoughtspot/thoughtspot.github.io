@@ -2,6 +2,7 @@
 title: [Network ports]
 tags: [bestpractices]
 keywords: network, ports
+tags: [networking]
 last_updated: 1/17/2020
 summary: "Lists the required and optional ports for an installation."
 sidebar: mydoc_sidebar

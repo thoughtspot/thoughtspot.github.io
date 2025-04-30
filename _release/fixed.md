@@ -7,9 +7,31 @@ permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot Releases.
 
+   - [5.0.4 Fixed issue](#5-0-4)
+   - [5.0 Fixed issues](#5-0)
    - [4.5.1 Fixed Issues](#4-5-1)
    - [4.5 Fixed Issues](#4-5)
    - [4.4 Fixed Issues](#4-4)
+
+<a id="5-0-4"></a>
+## 5.0.4 Fixed Issues
+
+We fixed the following issue in ThoughtSpot Release 5.0.4.
+
+- Deprecated SSH cryptographic settings are used.
+
+<a id="5-0"></a>
+## 5.0 Fixed Issues
+
+These are the issues we fixed in ThoughtSpot Release 5.0.
+
+- Changes to metadata result in rebuilding the search index, even though the data has not changed.
+
+- A search returns an unexpected answer, because the last aggregation performed during execution was doing a `MIN()` rather than a `SUM()`.
+
+- Timeouts cause a cluster crash in some cases when a right outer join was used.
+
+- The space allocation chart does not update.
 
 <a id="4-5-1"></a>
 ## 4.5.1 Fixed Issues

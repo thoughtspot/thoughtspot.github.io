@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can zoom into your chart by selecting an area with your mouse. To zoom into a chart:
 
-1. While viewing your answer as a chart, click **Edit chart configuration** on the right.
+1. While viewing your answer as a chart, click **Edit chart style** on the right.
 
      ![]({{ site.baseurl }}/images/edit_chart_configuration_line_stacked.png "Edit chart configuration icon")
 
@@ -23,6 +23,6 @@ You can zoom into your chart by selecting an area with your mouse. To zoom into 
 
      ![]({{ site.baseurl }}/images/zoomed_in_area.png "Zoomed in chart area")
 
-4. If you would like to return to the original chart view, click **Reset zoom** under **Zoom options**.
+4. If you would like to return to the original chart view, click **Reset zoom**.
 
      ![]({{ site.baseurl }}/images/zoom%20out.png "Reset zoom option")

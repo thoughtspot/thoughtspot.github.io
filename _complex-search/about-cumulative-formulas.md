@@ -1,7 +1,9 @@
 ---
 title: [Cumulative functions]
 keywords: tbd
+tags: [formulas]
 last_updated: tbd
+toc: false
 summary: "Cumulative formulas are aggregate formulas."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -62,7 +64,7 @@ running total. To use the cumulative function in a search:
 
    ![]({{ site.baseurl }}/images/aggregation_answer.png "Aggregation Answer example")
 
-2. In the upper right hand side of the table, click **Actions** and select **Add formula**.
+2. In the upper-right side of the table, click the three-dot **Actions** icon and select **Add formula**.
 
    ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
 
@@ -72,7 +74,7 @@ running total. To use the cumulative function in a search:
 
      ![]({{ site.baseurl }}/images/cumulative_sum_formula.png "Cumulative Sum Formula")
 
-4. Name the formula by clicking on its title and typing the new name.
+4. Name the formula by clicking its title and typing a new name.
 5. Click **Save**.
 
    The formula will appear in the search bar and in the table as its own column.
@@ -80,5 +82,5 @@ running total. To use the cumulative function in a search:
      ![]({{ site.baseurl }}/images/cumulative_sum_table.png "Cumulative Sum Table")
 
     A headline box displaying the cumulative sum within the entire table will
-    appear at the bottom. You can click on it to toggle between different
+    appear at the bottom. You can click it to toggle between different
     aggregations.

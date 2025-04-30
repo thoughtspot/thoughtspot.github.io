@@ -84,8 +84,6 @@ color coordination to your data.
 
 The pivot table chart type has these limitations:
 
-- Only the first 10,000 data values are used. If you would like to increase this limit, please contact ThoughtSpot Support.
-- Pivot table is not available if the dataset contains more than 100,000 rows.
-- Cardinality is not configurable.
-- Show underlying data menu is unavailable.
-- Conditional formatting is not functional.
+- The pivot table displays a maximum of 100k rows. If your query returns more than 100k rows, you cannot visualize it with a pivot table.
+- You cannot show underlying data.
+- You cannot use conditional formatting.

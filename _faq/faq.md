@@ -31,7 +31,7 @@ Overview** page to see the number of tables currently being indexed. You can als
 
 ### How do I display the features used in my cluster configuration?
 
-1. Log into the ThoughtSpot cluster as the `admin` user.
+1. Log in to the ThoughtSpot cluster as the `admin` user.
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```

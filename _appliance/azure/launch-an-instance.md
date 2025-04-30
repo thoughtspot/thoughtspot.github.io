@@ -45,7 +45,7 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 
 ### Create an instance
 
-To get started, you need to log into the Azure portal, create a resource group,
+To get started, you need to log in to the Azure portal, create a resource group,
 get the [ThoughtSpot Virtual
 Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine)
 on the [Azure
@@ -64,13 +64,13 @@ here.
 
 3. Next, create a resource based on the ThoughtSpot Virtual Machine.
 
-   a. Click **Create a resource**, search the Marketplace for the ThoughtSpot Virtual Machine, and select it.
+   a. Click **Create a resource**, search the Marketplace for the ThoughtSpot Virtual Machine, and choose the [ThoughtSpot Search & AI-driven Analytics (BYOL)](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine?tab=Overview){: target="_blank"} image.
 
-     ![]({{ site.baseurl }}/images/azure_choose_ts_in_marketplace.png "Choose ThoughtSpot in Marketplace")
+     ![]({{ site.baseurl }}/images/azure-ts-image.png "Choose ThoughtSpot in Marketplace")
 
-   b. On the ThoughtSpot Virtual Machine page, click **Create**.
+   b. On the ThoughtSpot Virtual Machine page, click **Get it now**.
 
-     ![]({{ site.baseurl }}/images/azure_create_ts_vm.png "Choose ThoughtSpot in Marketplace")
+     ![]({{ site.baseurl }}/images/azure-get-image.png "Choose ThoughtSpot in Marketplace")
 
 ### Configure basic settings
 
@@ -94,7 +94,7 @@ here.
 
 ### Choose a machine size
 
-Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a VM size that suits your cluster needs.
+Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a size for your VM that works for your cluster needs.
 
 ![]({{ site.baseurl }}/images/azure_choose_disk_size.png "Choose a disk size")
 
@@ -107,20 +107,19 @@ Subnet, and Network Security Group from your Azure support team.
 1. For storage, select **Yes** to **use managed disks**.
 
 2. Under **Network**, select **Virtual network**, then **Subnet**, then **Public
-IP addresses**, and set those names, addresses, and ranges appropriately for your
+IP addresses**, and set those names, addresses, and ranges approriately for your
 network.
 
 3. Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.
 
-    These are the minimum ports required for operations and debugging:
+   These are the minimum ports required for operations and debugging:
 
-    |Port|Protocol|Service|
-    |----|--------|------------|
-    |22|SSH|Secure Shell access|
-    |443|HTTPS|Secure Web access|
-    |12345|TCP|ODBC and JDBC drivers access|
-
+   |Port|Protocol|Service|
+   |----|--------|------------|
+   |22|SSH|Secure Shell access|
+   |443|HTTPS|Secure Web access|
+   |12345|TCP|ODBC and JDBC drivers access|
 
    {% include note.html content="ThoughtSpot requires that nodes purchased from
 Azure must be reachable to each other so that they can communicate and form a
@@ -244,22 +243,15 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    ```
    $ sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
-   DEVICE=eth0
-   ONBOOT=yes
-   BOOTPROTO=dhcp
-   HWADDR=<Add eth0 MAC>
-   TYPE=Ethernet
-   USERCTL=no
-   PEERDNS=yes
-   IPV6INIT=no
+   DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
    ```
 
 3. Do not reboot any of the nodes, until these changes are made to each node:
 
-   a. Open the file /etc/default/grub in an editor:
+   a. Open the grub file  /update/etc/default/grub in an editor:
 
       ```
-      $ sudo vi /etc/default/grub
+      $ sudo vi /update/etc/default/grub
       ```
 
    b. Change the line:
@@ -274,13 +266,19 @@ keep a backup to copy after any subsequent cluster creation or update." %}
       ```
 
     c. Save your changes.
-    d. cp -pv /etc/default/grub /update/etc/default/grub
 
 4. Issue these commands:
 
    ```
+   $ sudo cp /update/etc/default/grub /etc/default/
    $ rm /usr/local/scaligent/bin/setup-net-devices.sh
    ```
 
-5. Reboot the nodes and connect via ssh to prove connectivity.
-6. Contact ThoughtSpot SRE to proceed with post-installation tasks.
+5. Reboot the nodes.
+
+## Additional resources
+As you develop your expertise in Azure VM creation, we recommend the following ThoughtSpot U course:
+* [Node Configuration: Azure](https://training.thoughtspot.com/node-network-configuration/510569){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

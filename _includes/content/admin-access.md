@@ -1,6 +1,4 @@
-Each ThoughtSpot appliance comes pre-built with three default users. You should
-talk with a ThoughtSpot Customer Success Engineer or ThoughtSpot support, to get
-the password for each user.  The default users are:
+Each ThoughtSpot appliance comes pre-built with three default users. Contact your ThoughtSpot support team to get the passwords.
 
 <table>
 <colgroup>
@@ -34,8 +32,8 @@ Both the `admin` and `thoughtspot` user can SSH into the appliance. Once on the
 appliance, either user can do any of the following:
 
 * [tscli]({{ site.baseurl }}/reference/tscli-command-ref.html)
-* [tsload]({{ site.baseurl }}/reference/sql-cli-commands.html)
-* [tql]({{ site.baseurl }}/admin/loading/use-data-importer.html)
+* [tql]({{ site.baseurl }}/reference/sql-cli-commands.html)
+* [tsload]({{ site.baseurl }}/admin/loading/use-data-importer.html)
 
 
 The `thoughtspot` user is restricted to `tscli` commands that do not require

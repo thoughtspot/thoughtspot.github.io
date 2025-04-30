@@ -46,7 +46,7 @@ hold down the SHIFT key you can click on multiple heads and sort on them in
 turn.
 
 {% include tip.html content="This same functionality is available on tables you
-see elsewhere in ThoughtSpot. For example, a table in the **DATA** page is also
+see elsewhere in ThoughtSpot. For example, a table in the **Data** page is also
 sortable in this manner."%}
 
 ## About headlines (summary information)
@@ -66,9 +66,9 @@ aggregations are total, average, standard deviation, variance, minimum, and
 maximum. There are also unique count and total count values available for the
 appropriate columns.
 
-To add a headline to a pinboard, hover over it and click the **Add to pinboard** icon.
+To add a headline to a pinboard, hover over the headline and click the **Pin** icon.
 
  ![]({{ site.baseurl }}/images/pin_headline.png "Add a headline to a pinboard")
 
  You can decide whether or not to display headlines in your table results. To
- customize headlines, choose **Actions > Customize** summaries.
+ customize headlines, choose **... > Customize summaries**.

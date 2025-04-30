@@ -2,7 +2,7 @@
 title: [Load and manage data]
 keywords: tbd
 last_updated: tbd
-summary: "There are several methods of loading data into ThoughtSpot. This section describes each method and why you might choose it above the others."
+summary: "There are several methods of loading data into ThoughtSpot. This section describes each method and why you might choose it above the others. Consider setting up data-cleansing tasks alongside data-load tasks to make the most of your ThoughtSpot cluster's capacity"
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

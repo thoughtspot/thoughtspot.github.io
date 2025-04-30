@@ -6,8 +6,6 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-These two APIs work with metadata for objects in the system.
-=======
 The Metadata APIs enable you to fetch metadata details for various objects in the ThoughtSpot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.
 
 

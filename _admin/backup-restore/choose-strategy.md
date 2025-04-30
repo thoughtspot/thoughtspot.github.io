@@ -92,7 +92,7 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
                     </td>
                     <td>
                         <ul id="ul_lzn_tmc_m1b">
-                            <li>Backups require deleting the existing cluster first.
+                            <li>Backups require deleting the existing cluster first.</li>
                             <li>You are responsible for validating your backup configuration as
                                 viable for restoring a cluster.</li>
                             <li>Best practice recommends you to maintain multiple backups.</li>
@@ -103,3 +103,10 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
             </table>
 
 You should never restore from a snapshot or backup yourself, instead contact ThoughtSpot Support for help.
+
+## Additional resources
+As you develop your expertise in backups and snapshots, we recommend the following ThoughtSpot U course:
+* [Snapshots and Backups](https://training.thoughtspot.com/3-snapshots-backups/461810){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
