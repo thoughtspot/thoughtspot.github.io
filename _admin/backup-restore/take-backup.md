@@ -1,7 +1,7 @@
 ---
 title: [Create a manual backup]
 summary: Learn how to manually create a backup.
-last_updated: 11/11/2019
+last_updated: 3/11/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,71 +9,14 @@ ThoughtSpot enables you to manually create a backup to restore a cluster to a pr
 
 You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.
 
-<!--
-## Using Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
-
-To manually create a backup using the admin UI:
-1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/admin.png)
-
-   This opens the ThoughtSpot Management Console.
-3. Click **Settings** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/settings.png)
-
-4. In the Settings panel, click **Backup** and then  **Configure** option.
-
-   ![]({{ site.baseurl }}/images/backup.png)  
-
-
-5. Enter the backup configuration details:
-
-   ![]({{ site.baseurl }}/images/backup-create.png)
-
-   <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-   <tr>
-   <th>Field</th>
-   <th>Description</th>
-   </tr>
-   <tr>
-   <th>Location</th>
-   <td>Specify the backup location.</td>
-   </tr>
-   <tr>
-   <th>Mode</th>
-   <td>Select the backup mode. Allowed type are <code>full</code>, <code>light weight</code> or <code>dataless</code>.</td>
-   </tr>
-   <tr>
-   <th>NAS Path</th>
-   <td>If you choose NAS, select the NAS path or configure a new NAS mount.</td>
-   </tr>
-   <tr>
-   <th>Directory Name</th>
-   <td>Specify the location on the disk to place the backup.</td>
-   </tr>
-   <tr>
-   <th>Choose Snapshot</th>
-   <td>Select an existing snapshot. If unavailable, create a manual snapshot for the backup.</td>
-   </tr>
-   </table>
-
-6. Click **Save** to configure the backup.
-
-You can see the newly created backup file in the backup dashboard.
--->
 ## Using tscli
 To manually create a backup using ThoughtSpot's command line interface, tscli:
 1. Log in to the Linux shell using SSH.
-2. Create a manual snapshot or find a snapshot you want to use.
-   To find a snapshot you want to back up, use the following command:
+    ```
+    $ ssh admin@<cluster-IP>
+    ```
+2. [Create a manual snapshot]({{ site.baseurl }}/admin/backup-restore/overview-snapshot.html#snapshot-tscli) or find a snapshot you want to use.
+   To find a snapshot you want to use for your backup, run `tscli snapshot ls`:
 
     ```
     $ tscli snapshot ls
@@ -95,7 +38,7 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
 
 3. Make sure you have enough room on the target disk.
 
-    In addition to the size of the snapshot, you must have 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the `df` command to check disk size.
+    In addition to the size of the snapshot, you must have 10 to 12 GB of disk space. This is because the process requires space for temporary files. You can use the `df -h` command to check disk size.
 
     ```
     $ df -h
@@ -103,19 +46,20 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
 
 4. Create the backup, designating the [type of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#), the snapshot name, and a directory:
 
-    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either full, lightweight, or dataless. The destination directory is created for you; do not specify an existing directory. The BASE value is the name of the backup.
+    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either `full`, `lightweight`, or `dataless`. Specify an existing directory path for the backup to go, but the folder (the last part of the path: `/home/admin/<folder>`) **must not** already exist. ThoughtSpot creates the folder when it runs a backup. Refer to the [tscli command reference]({{ site.baseurl }}/reference/tscli-command-ref.html#backup) for help, or run `tscli backup create -h` on the command line to see the help for this command.
 
     ```
     $ tscli backup create [-h]
         [--mode {full|light|dataless}]
         [--type {full}]
-        [--base snapshot_name>]
-        [--storage_type {local|nas}][--remote]
-         <name> <directory>
+        [--storage_type {local|nas}]
+        [--remote]
+        [--no-orion-master]
+        [--bucket_name <bucket_name>]
+        [--staging_dir <staging_dir_name]
+         <snapshot_name> <directory>
     ```
-
-5. Check that the backup was created by listing all backups:
-
+    Here is a sample `tscli backup create` command:
     ```
-    $ tscli backup ls
+    $ tscli backup create --mode dataless <my_snapshot> <directory_path>
     ```

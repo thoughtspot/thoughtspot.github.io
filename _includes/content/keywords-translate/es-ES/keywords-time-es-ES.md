@@ -38,11 +38,6 @@
     <td class="tg-dc35"><code>count visitors last <b>12 hours</b></code></td>
   </tr>
   <tr>
-    <td class="tg-us36">hourly</td>
-    <td class="tg-us36">cada hora</td>
-    <td class="tg-us36"><code>visitors by page name <b>hourly</b></code></td>
-  </tr>
-  <tr>
     <td class="tg-dc35"><em>n</em> minutes ago</td>
     <td class="tg-dc35"><em>n</em> minutos hace</td>
     <td class="tg-dc35"><code>sum inventory by product <b>10 minutes ago</b></code></td>

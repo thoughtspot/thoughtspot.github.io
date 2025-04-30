@@ -1,9 +1,7 @@
 ---
 title: [Understand filters]
-
-
-last_updated: tbd
-summary: "Filters narrow down the search result to only include the data you want to see."
+last_updated: 1/26/2021
+summary: "Filters narrow down your search result to only include the data you want to see."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,13 +9,13 @@ When you add a value to your search, it becomes a filter. You can define filters
 
 To add a filter from the search bar:
 
-1. Click in the search bar and type the values you want to include in the search.
+1. Click in the search bar and type the value or values you want to include in the search.
 
     Typing a value in the search bar acts as a filter.
 
-    ![]({{ site.baseurl }}/images/filter_from_the_search_bar.png "Filter from the search bar")
+    ![Filter from the search bar]({{ site.baseurl }}/images/filter-in-search-bar.png "Filter from the search bar")
 
-    You can also use keywords like `yesterday`, `after`, and `next month` to
+    You can also use date- and time-related keywords like `yesterday`, `after`, and `next month` to
     filter your search. To see more keywords, refer to the [keyword
     reference]({{ site.baseurl }}/reference/keywords.html#).
 
@@ -33,12 +31,12 @@ applied to all visualizations of a pinboard. You can find out more about
 
 As you have seen with search, filters appear in grey boxes in the search bar.
 
- ![]({{ site.baseurl }}/images/search_bar_with_phrases_boxed.png "Search bar with filters")
+ ![Search bar with filters]({{ site.baseurl }}/images/search-bar-basics.png "Search bar with filters")
 
 In an answer or a pinboard, filters appear just under the title. For pinboards,
 your filters apply to all worksheet-based visualizations in the pinboard.
 
- ![]({{ site.baseurl }}/images/filter_appears.png "Pinboard filters")
+ ![Filters appear under the title]({{ site.baseurl }}/images/filter-list-location.png "Filters appear under the title")
 
 If you ever find that your search or pinboard does not appear to contain all the
 data you want to see, check for any existing filters and remove them by clicking
@@ -57,7 +55,7 @@ You can apply simple filters to your search, whether it shows a table or a
 chart. Your filters remain part of the search even when you change the
 visualization type.
 
-When adding a filter from the ellipses icon
+When adding a filter from the ellipsis icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the column header or by clicking on a chart axis, numeric columns and
 text columns provide you with the ability to include or exclude values, and
@@ -84,10 +82,13 @@ This allows you to easily search a large list of filters repeatedly.
 
 ## Cascading filters
 
-If you want to apply a table filter whenever the table has been used (Views, Worksheets, Answers, and Pinboards), use Cascading filters.
-When columns from that table are applied in a search, the table filter is implicitly applied to the search. All worksheet filters are accessible from the query visualizer.
+ThoughtSpot applies a specific logic to objects with more than one filter. For example, you may have a Worksheet-level filter, such as `country=US`. While searching on that Worksheet, you might want to add filters for specific cities. By default, ThoughtSpot limits your possible filter values to cities in the United States, since you have a Worksheet-level `US` filter. The first filter you apply on an object always limits the available filter values you see for your second and third filters, and so on. This is because if you have a `country=US` filter, and try to add a `city=Paris,France` filter, for example, this results in *no data found*.
 
-Consider a table with a filter that is used in a worksheet. When a search uses that worksheet, the filters are automatically applied as a part of the search.
+### Show all possible values
+
+When you access the filters modal in a search by selecting the **filter** icon ![filter icon]({{ site.baseurl }}/images/icon-filter-10px.png "filter icon"){: .inline}, you see an option to **Show all possible values**. This option relates to cascading filters. When you add a second filter to a search, ThoughtSpot only shows you values within the first filter you added. You may want to see all possible values without removing the first filter.
+
+For example, you have a `country=US` filter on your search, but you want to see data for Paris, France. When you open the filters modal for `city`, you do not see Paris, France. You select **Show all possible values** and select Paris, France. Then you can delete the `country=US` filter. This is especially useful if you have many filters on an object, or if you are not sure what values the columns in your data have.
 
 ## Worksheet filters
 

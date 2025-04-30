@@ -1,10 +1,10 @@
 ---
 title: [Data Connect best practices]
-last_updated: tbd
+summary: Here are some tips and best practices for ThoughtSpot Data Connect.
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This section includes some tips and best practices for using ThoughtSpot Data Connect.
 
 ## Data sources
 

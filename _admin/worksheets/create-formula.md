@@ -12,16 +12,20 @@ Anyone who can create a worksheet can add a formula to it. Formulas are not reus
 
 You can create a formula in a worksheet by using the Formula Builder. When you do this, the result of the formula gets added to the worksheet as a column. Use these steps to create a formula:
 
-1. Create a new worksheet, or edit an existing one.
+1. [Create a new worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html), or [edit an existing one]({{ site.baseurl }}/admin/worksheets/edit-worksheet.html).
 2. Click the **+** button next to **Formulas**.
 
-     ![]({{ site.baseurl }}/images/create_formula.png "Create a new formula in a worksheet")d
+     ![Create a new formula for your worksheet]({{ site.baseurl }}/images/worksheet-add-formula.png "Create a new formula for your worksheet")
 
 3. Type your formula in the Formula Builder.
 
-     ![]({{ site.baseurl }}/images/formula_builder.png "Use the Formula Builder")
+     ![Use the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-profit.png "Use the Formula Builder")
 
-    **Note:** Formulas elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black).
+    **Note:** Formula elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black).
+
+5.  You can see a list of formula operators with examples by clicking on **Formula Assistant.**
+
+    ![Formula Assistant]({{ site.baseurl }}/images/worksheet-formula-assistant.png "Formula Assistant")
 
 4. If you want to change what your formula returns, use the **Advanced settings**.
 
@@ -31,10 +35,6 @@ You can create a formula in a worksheet by using the Formula Builder. When you d
     -   ATTRIBUTE or MEASURE
     -   Aggregation type
 
-    ![]({{ site.baseurl }}/images/formula_advanced_settings.png "Advanced settings in the Formula Builder")
-
-5.  You can see a list of formula operators with examples by clicking on **Formula Assistant.**
-
-    ![]({{ site.baseurl }}/images/formula_assistant.png "Examples in the Formula Assistant")
+    ![Advanced settings in the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-settings.png "Advanced settings in the Formula Builder")
 
 6. Name the formula by clicking on its title and typing the new name. Click **Save**.

@@ -1,15 +1,15 @@
 ---
 title: ["Train SearchIQ"]
-last_updated: 08/22/2019
+last_updated: 11/19/2019
 summary: "Training SearchIQ ensures a good natural language search experience."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 **SearchIQ is in Beta.**
 
-{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you. SearchIQ is only available in English." %}
+{% include note.html content="SearchIQ is turned off by default. ThoughtSpot Support can enable it for you. SearchIQ is only available in English." %}
 
-There are two complementary paths for optimizing SearchIQ to understand natural language search, [Data Modeling](#data-modeling) and [Language Modeling](#language). Also, consider the the [Training Examples](#training-examples)
+There are two complementary paths for optimizing SearchIQ to understand natural language search, [Data Modeling](#data-modeling) and [Language Modeling](#language). Also, consider the [Training Examples](#training-examples).
 
 <div id="data-modeling"></div>
 ## Data modeling settings ##

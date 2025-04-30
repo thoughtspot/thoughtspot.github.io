@@ -1,12 +1,12 @@
 ---
 title: [User API]
-
-last_updated: tbd
+summary: "The User APIs enable you to manage user- and group-related operations in the ThoughtSpot system."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The User APIs enable you to manage user- and group-related operations in the ThoughtSpot system. For example, you may want to view all users and groups in your ThoughtSpot cluster.
+You can use the User APIs to manage your users and groups in ThoughtSpot. For example, you may want to view all users and groups in your ThoughtSpot cluster.
 
 ## Transfer ownership
 Use this API to transfer ownership of _all_ objects from one user to another.
@@ -72,10 +72,16 @@ Use this API to synchronize ThoughtSpot users and groups with your external data
 - Objects present in ThoughtSpot, and present in the external list - will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
 - Objects not present in ThoughtSpot, and present in the external list - will be created in ThoughtSpot.
 
+Set `visibility` to `NON_SHARABLE` if you do not want users to be able to [share objects]({{ site.baseurl }}/admin/users-groups/add-user.html#sharing-visibility) with users in this group.
+
+
 ### Resource URL
 <code class="api-method-post">post</code> /tspublic/v1/user/sync
 
 ### Request Parameters
+
+This API uses `multipart/form-data` content type.
+
 <table>
    <colgroup>
    <col style="width:20%" />
@@ -178,7 +184,7 @@ Use this API to change the password of a user.
 ### Request Example
 ##### cURL
 ```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest¤tpassword=test&password=foobarfoobar' 'https://<instance>/callosum/v1/tspublic/v1/user/updatepassword'
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest&currentpassword=test&password=foobarfoobar' 'https://<instance>/callosum/v1/tspublic/v1/user/updatepassword'
 ```
 ##### Request URL
 ```

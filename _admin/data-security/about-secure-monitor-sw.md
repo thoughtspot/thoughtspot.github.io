@@ -12,14 +12,17 @@ For example, you may wish to accomplish some security and monitoring tasks with 
 
 ThoughtSpot supports installation of the following third-party software on the ThoughtSpot instance:
 
-- Qualys
-  Qualys is a widely used technical vulnerabilities and security compliance scanning tool. For more information about Qualys, see the [Qualys documentation](http://www.qualys.com/documentation/).
+<dl>
+<dlentry><dt>Qualys</dt>
+  <dd>Qualys is a widely used technical vulnerabilities and security compliance scanning tool. For more information about Qualys, see the <a href="http://www.qualys.com/documentation/">Qualys documentation</a>.</dd></dlentry>
 
-- SNMP (Simple Network Management Protocol)
-  SNMP is an industry standard protocol used for monitoring network traffic and alert events.
+<dlentry><dt>SNMP (Simple Network Management Protocol)</dt>
+  <dd>SNMP is an industry standard protocol used for monitoring network traffic and alert events.</dd></dlentry>
 
-- Splunk
-  You can install Splunk rsyslog and use it to forward ThoughtSpot logs to Splunk. For more information about Splunk, see the [Splunk documentation](http://docs.splunk.com/).
+<dlentry><dt>Splunk</dt>
+  <dd>You can install Splunk rsyslog and use it to forward ThoughtSpot logs to Splunk. For more information about Splunk, see the <a href="http://docs.splunk.com/">Splunk documentation</a>.</dd></dlentry></dl>
+
+{% include warning.html content="ThoughtSpot does not support, certify or maintain any third-party software other than the Qualys agent, the SNMP agent for Linux, the Splunk agent, or AWS SSM. Use of non-certified software is very likely to result in loss of functionality for your ThoughtSpot cluster, or otherwise impact the ThoughtSpot application. Use of McAfee or any other virus scanner to scan directories, memory (RAM), filesystems or disks will result in severe loss of performance and/or functionality." %}
 
 ### Install third-party software
 

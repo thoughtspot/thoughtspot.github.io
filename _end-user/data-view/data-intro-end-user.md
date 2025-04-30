@@ -6,7 +6,7 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The **Data** tab lists all of the tables and data sources available to you. There are three types of data sources that you may see in the data list. They are tables, worksheets, and user uploaded data. You will most likely only see worksheets and user uploaded sources. These are the most commonly used data sources for searching.
+The **Data** tab lists all of the tables and data sources available to you. There are three types of data sources that you may see in the data list. They are tables, worksheets, and user uploaded data. You usually see only worksheets and user-uploaded sources. These are the most commonly used data sources for searching.
 
 | Name             | Icon           | Definition                                                       | Created by                |
 | ---------------- | -------------- | -----------------------------------                              | ------------------------- |

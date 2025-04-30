@@ -1,6 +1,7 @@
 ---
 title: [Public API reference]
-
+summary: "ThoughtSpot has several public APIs."
+last_updated: 1/9/2020
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -75,6 +76,11 @@ fetching visualization headers. The following public APIs are available:
          <td><a href="{{ site.baseurl }}/app-integrate/reference/materialization-api.html">Materialization</a></td>
          <td><code class="api-method-post">POST</code> /tspublic/v1/materialization/refreshview/{id}</td>
          <td>Re-execute the query and load data into the materialized view</td>
+      </tr>
+      <tr>
+         <td><a href="{{ site.baseurl }}/app-integrate/reference/search-data-api.html">Search Data</a></td>
+         <td><code class="api-method-post">POST</code> /tspublic/v1/searchdata</td>
+         <td>Search data from a specific data source in the ThoughtSpot system.</td>
       </tr>
    </tbody>
 </table>

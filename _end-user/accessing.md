@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot browser access]
-
-last_updated: tbd
+summary: Learn how to reach ThoughtSpot from a browser.
+last_updated: 4/30/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

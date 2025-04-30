@@ -1,5 +1,4 @@
 <table id="matrix" class="wide_table" style="font-size:10px;">
-  <caption>The following table shows the intersection of user privilege and ability:</caption>
    <colgroup>
       <col style="width:36%;">
       <col style="width:4%;">
@@ -32,6 +31,9 @@
          </th>
          <th class="rotate">
             <div><span>Create View</span></div>
+         </th>
+         <th class="rotate">
+            <div><span>Create Embrace Connection</span></div>
          </th>
          <th class="rotate">
             <div><span>
@@ -97,6 +99,7 @@
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
+         <td>Y</td>
          <td>Y<sup>2</sup></td>
          <td>Y</td>
          <td>Y</td>
@@ -109,6 +112,7 @@
          <td>
             <div>Can upload <br> user data</div>
          </td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -137,6 +141,7 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
          <td>Y</td>
          <td>Y</td>
          <td>N</td>
@@ -155,6 +160,7 @@
          <td>
             <div>Can manage data</div>
          </td>
+         <td>Y</td>
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
@@ -186,6 +192,7 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
          <td>Y</td>
          <td>Y</td>
          <td>N</td>
@@ -201,8 +208,9 @@
       </tr>
       <tr>
          <td>
-            <div>Can Auto-Analyze (SpotIQ privilege)</div>
+            <div>Has SpotIQ privilege</div>
          </td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -233,6 +241,7 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
          <td>Y</td>
          <td>N</td>
          <td>N</td>
@@ -243,6 +252,7 @@
       </tr>
       <tr>
          <td>None</td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>

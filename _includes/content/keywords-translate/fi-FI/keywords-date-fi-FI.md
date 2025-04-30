@@ -44,12 +44,12 @@
   </tr>
   <tr>
     <td class="tg-dc35">day of week</td>
-    <td class="tg-dc35">wochentag</td>
+    <td class="tg-dc35">viikonpäivä</td>
     <td class="tg-dc35"><code>revenue by <b>day of week</b> last 6 months</code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>day of week</em></td>
-    <td class="tg-us36">viikonpäivä</td>
+    <td class="tg-us36"><em>viikonpäivä</em></td>
     <td class="tg-us36"><code>count shipments <b>Monday</b></code></td>
   </tr>
   <tr>
@@ -111,6 +111,11 @@
     <td class="tg-us36">last day by</td>
     <td class="tg-us36">viimeinen päivä mukaan</td>
     <td class="tg-us36"><code>customers <b>last day by</b> referrer</code></td>
+  </tr>
+  <tr>
+    <td class="tg-us36">hourly</td>
+    <td class="tg-us36">tunneittain</td>
+    <td class="tg-us36"><code>visitors by page name <b>hourly</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last month by</td>

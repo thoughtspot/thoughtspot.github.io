@@ -1,7 +1,7 @@
 ---
 title: [Clear the browser cache]
-
-last_updated: tbd
+summary: "Clear the browser cache if you have unexpected network issues."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -27,9 +27,5 @@ To resolve any of these situations, clear the browser cache:
    This is the name of the button on Chrome. The name may vary slightly on other browsers.
 
 3. Reload the page.
-
-   For example, on Chrome you would click the **Reload** icon:
-
-   ![]({{ site.baseurl }}/images/browser_reload.png "Reload the page")
 
 Now the problem should be fixed, and the page will appear as expected.

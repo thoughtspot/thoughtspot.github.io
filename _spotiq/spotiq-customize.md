@@ -1,6 +1,7 @@
 ---
 title: ["SpotIQ 101: Do more with SpotIQ"]
-last_updated: tbd
+summary: Learn more advanced functions of SpotIQ.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

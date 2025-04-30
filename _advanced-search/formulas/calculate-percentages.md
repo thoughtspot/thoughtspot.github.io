@@ -1,8 +1,7 @@
 ---
 title: [Calculate percentages]
-
-
-last_updated: tbd
+summary: Learn how to calculate percentages.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

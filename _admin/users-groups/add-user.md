@@ -1,13 +1,13 @@
 ---
 title: ["Create, edit, or delete a user"]
-last_updated: 10/08/2019
+last_updated: 5/14/2020
 summary: "For each unique person who accesses ThoughtSpot, you must create a user account. When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
 
-For users who have access through LDAP, the LDAP installation manages all  user information.
+For users who have access through LDAP, the LDAP installation manages all user information.
 
 {: id="add-user"}
 ## Create a user in ThoughtSpot
@@ -18,7 +18,7 @@ Note that all users automatically belong to the group **All**.
 
 To create a new user and assign that user to groups, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 2. Click the **Admin** icon, on the top navigation bar.
 
     ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
@@ -64,13 +64,13 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="sharing-visibility">
         <th>Sharing visibility</th>
         <td>Yes</td>
-        <td>Indicate whether objects can be shared with this user. When set to <b>SHAREABLE</b>,
+        <td>Indicate whether objects can be shared with this user. When set to <b>SHARABLE</b>,
         this user is an option in the <b>Share</b> dialog.</td>
       </tr>
       <tr id="password">
         <th>Change password</th>
         <td>Yes</td>
-        <td>A password.</td>
+        <td>A password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long. When you click on the <strong>change password</strong> field, a tooltip appears to tell you these requirements.</td>
       </tr>
       <tr id="confirm_password">
         <th>Confirm password</th>
@@ -80,8 +80,8 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="email">
         <th>Email</th>
         <td>Yes</td>
-        <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.
-        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain.</p></td>
+        <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Expert</strong> feature, and others.
+        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to add new domains to your list of allowed domains.</p></td>
       </tr>    
       <tr id="welcome-email">     
         <th>Send a welcome email</th>
@@ -118,7 +118,7 @@ As an administrator, you can edit a user account, and change the user's groups. 
 
 To edit an existing user, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** icon, on the top navigation bar.
 
@@ -202,7 +202,7 @@ Follow these steps to configure group-wide emails:
 
 To delete users, follow these steps:
 
-1. Log into ThoughtSpot from a browser.
+1. Log in to ThoughtSpot from a browser.
 
 2. Click the **Admin** icon, on the top navigation bar.
 

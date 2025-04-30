@@ -2,7 +2,7 @@
 title: [Set your ThoughtSpot locale]
 
 last_updated: tbd
-summary: "You can change the language displayed in the application."
+summary: "ThoughtSpot supports many locales. Learn how to set your display language, date formatting, and currency format settings by specifying your locale."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

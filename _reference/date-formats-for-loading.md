@@ -1,7 +1,7 @@
 ---
 title: [Date and time formats reference]
-
-last_updated: tbd
+summary: ThoughtSpot supports several date and time formats.
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -34,8 +34,7 @@ translates to `yearmonthday hour:minute:second`, for example, `Dec 30th, 2001
 ## Data modeling formats for browser data upload
 
 These date and time formats are supported in a CSV file when uploading through the
-browser. You cannot specify the date format; ThoughtSpot will pick the format
-that fits your data best:
+browser. You cannot specify the date format. If you are creating a new table, ThoughtSpot picks the format that fits your data best. If you are updating an existing table, ThoughtSpot uses the format that table already has.
 
 {% include content/data-modeling-formats.md %}
 

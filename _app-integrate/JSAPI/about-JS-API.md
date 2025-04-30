@@ -1,6 +1,7 @@
 ---
 title: [Using the JavaScript API]
-last_updated: 10/21/2019
+summary: You can use ThoughtSpot within your own Web application with the ThoughtSpot JavaScript API.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -64,5 +65,5 @@ local server, such as `http://localhost:8080`. We recommend that you disable the
 `localhost` access after you finish testing.
 
 To enable CORS between your client applications and your ThoughtSpot instance,
-you must work with <a href="mailto:support@thoughtspot.com">ThoughtSpot
+you must work with <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot
 Support</a>.

@@ -1,13 +1,13 @@
 ---
 title: [Delete a relationship]
 
-last_updated: tbd
-summary: "You can delete relationship (link) between tables through the application or TQL."
+last_updated: 11/15/2019
+summary: "You can delete a relationship between tables through the ThoughtSpot application or TQL."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You must have either the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to delete a relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
+You must have either the [**Can administrate ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to delete a relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
 
 If you created a relationship (join or link) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.
 

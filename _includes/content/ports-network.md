@@ -13,9 +13,9 @@ If your organization does not allow you to open all ports, make sure you open th
 |443|TCP|Secure nginx|inbound|All nodes|All nodes|Primary app HTTPS port (nginx)|
 |2100|RPC|Oreo RPC port|bidirectional|All nodes|All nodes|Node daemon RPC|
 |2101|HTTP|Oreo HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Node daemon HTTP|
-|2181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
-|3181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
-|4181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
+|2181|TCP|Zookeeper servers listen on this RPC port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this RPC port for client connections|
+|3181|TCP|Zookeeper servers listen on this RPC port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this RPC port for client connections|
+|4181|TCP|Zookeeper servers listen on this RPC port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this RPC port for client connections|
 |2200|RPC|Orion master RPC port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
 |2201|HTTP|Orion master HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the cluster manager|
 |2205|TCP|Cluster update service TCP port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
@@ -44,7 +44,7 @@ If your organization does not allow you to open all ports, make sure you open th
 |4243|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
 |4244|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
 |4245|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
-|4243|RPC|Sage auto complete server metadata subscriber port|bidirectional|All nodes|All nodes|Port used for search internal communication|
+|4249|TCP|Ports used by Enlite/SearchIQ|bidirectional|All nodes|All nodes|Port used for SpotIQ internal communication|
 |4251|RPC|Sage master RPC port|bidirectional|All nodes|All nodes|Port used for search service internal communication|
 |4405|RPC|Diamond (graphite) port|bidirectional|All nodes|All nodes|Port used for communication with monitoring service|
 |4406|RPC|Diamond (graphite) port|bidirectional|All nodes|All nodes|Port used for communication with monitoring service|
@@ -107,7 +107,7 @@ ThoughtSpot uses static ports for inbound and outbound access to the cluster.
   |443|TCP|HTTPS|outbound|All nodes|208.83.110.20 |For transferring files to thoughtspot.egnyte.com.|
 |443|TCP|HTTPS|outbound|All nodes|For transferring product usage data to mixpanel cloud.|outbound|
 |443|TCP|HTTPS|outbound|All nodes|je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
-|25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
+|25|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support. <br> Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host, instead of port 25. Refer to <a href="{{ site.baseurl }}/admin/setup/set-up-relay-host.html">Set the relay host for SMTP</a>.|
 |389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
 
 

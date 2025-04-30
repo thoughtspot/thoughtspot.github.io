@@ -1,12 +1,12 @@
 ---
 title: [Upload logs to ThoughtSpot Support]
-
-
+summary: You can send logs to ThoughtSpot Support to get troubleshooting help.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot Support uses a secure file sever to collect log files or other files
-needed for troubleshooting. You can easily send log files to this file serve
+needed for troubleshooting. You can easily send log files to this file server
 directly from the ThoughtSpot instance.
 
 ## Metrics collection

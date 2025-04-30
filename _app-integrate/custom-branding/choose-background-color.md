@@ -1,13 +1,15 @@
 ---
 title: [Choose a background color]
-
-last_updated: tbd
+summary: You can customize ThoughtSpot's background color to match your company's theme.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can change the background color to match with your company's theme. The custom background color is in effect when using the API to embed visualizations and pinboards.
 
 This feature is only applicable when embedding ThoughtSpot in an external web portal or application. To choose a background color:
+
+1. Navigate to the Style Customization by clicking **Admin > Style Customization** from the top navigation bar. If the Style Customization page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
 
 1. Click the background color box under **Application Background**.
 

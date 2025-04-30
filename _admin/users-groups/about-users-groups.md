@@ -11,8 +11,9 @@ password, and a membership in one or more groups for them.
 
 This page describes manual creation of users, groups, and privileges, but you
 can also manage users through [LDAP]({{ site.baseurl
-}}/admin/setup/about-LDAP.html#) or SAML. For information on setting up SAML
-authentication, see the _ThoughtSpot Application Integration Guide_.
+}}/admin/setup/about-LDAP.html#) or SAML. For information on configuring SAML
+authentication, see [Configure SAML]({{ site.baseurl
+}}/admin/setup/configure-SAML-with-tscli.html).
 
 ## Privileges and groups
 
@@ -63,6 +64,7 @@ Permissions to see and edit tables, worksheets, and pinboards are set when you
 share them with users and groups, as described in the topic [Data security]({{
 site.baseurl }}/admin/data-security/sharing-security-overview.html#).
 
+The following table shows the intersection of user privilege and ability:
 {% include content/security-matrix.md %}
 
 ## Related information

@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="This article describes how to set up integration with LDAP using Active Directory. Starting with ThoughtSpot version 6.0.5, ThoughtSpot also integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, contact ThoughtSpot Support." %}
+
 {: id="prerequisites"}
 ## Configuration prerequisites
 
@@ -93,3 +95,10 @@ You do not have to create a user called `tsadmin` on your LDAP server. Internal 
     ```
     $ tscli ldap purge-configuration
     ```
+
+## Additional resources
+As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:
+* [Active Directory](https://training.thoughtspot.com/authentication-security/621451){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

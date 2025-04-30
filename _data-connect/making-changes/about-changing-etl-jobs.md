@@ -1,7 +1,7 @@
 ---
 title: [About making changes to Data Connect setup]
-last_updated: tbd
-summary: "You can change to the scheduling, data sources, or even the schema."
+last_updated: 11/18/2019
+summary: "You can make changes to the scheduling, data sources, or even the schema."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,7 +1,7 @@
 ---
 title: [Install and set up mobile app]
-
-last_updated: tbd
+summary: Learn how to install and set up ThoughtSpot's mobile app.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,11 +9,11 @@ Before you install the mobile app, ask your ThoughtSpot administrator where you 
 
 ## Set up VPN
 
-Ask your ThoughtSpot administrator, which of the following methods you should use to securely sign into  the app and access your ThoughtSpot cluster:
+Ask your ThoughtSpot administrator, which of the following methods you should use to securely sign in to  the app and access your ThoughtSpot cluster:
 
 ### Per-app VPN [Recommended]
 
-If you download the app from your company's internal app store (mobile device or app management platform), you can sign in using the powerful and secure Per-APP VPN feature provided by your platform. Ask your administrator which platform your company uses, and then use one the following resources to configure the VPN options:
+If you download the app from your company's internal app store (mobile device management platform), you can sign in using the powerful and secure Per-APP VPN feature provided by your platform. Ask your administrator which platform your company uses, and then use one the following resources to configure the VPN options:
 
 - [Workspace ONE (AirWatch)](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-iOS-Device-Management/GUID-AWT-IOS-PROFILEVPN.html){:target="_blank"}
 - [MobileIron](http://mi.extendedhelp.mobileiron.com/53/all/en/desktop/Per-App_VPN_Configuration.htm){:target="_blank"}

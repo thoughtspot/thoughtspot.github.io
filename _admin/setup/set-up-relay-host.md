@@ -1,89 +1,36 @@
 ---
 title: [Set the relay host for SMTP (email)]
-last_updated: 10/21/2019
+last_updated: 7/23/2021
 summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-<!--## Configure using Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
-
-To set up a relay host and SMTP rules using the admin UI:
-1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/admin.png)
-
-   This opens the ThoughtSpot Management Console.
-3. Click **Settings** menu on the top navigation bar.
-
-   ![]({{ site.baseurl }}/images/settings.png)
-
-4. In the Settings panel, click **SMTP** and then  **Configure** option.
-
-   ![]({{ site.baseurl }}/images/smtp.png)  
-
-
-5. Enter the relay host details:
-
-   ![]({{ site.baseurl }}/images/smtp-configure.png)
-
-   <table>
-   <colgroup>
-   <col width="20%" />
-   <col width="80%" />
-   </colgroup>
-   <tr>
-   <th>Field</th>
-   <th>Description</th>
-   </tr>
-   <tr>
-   <th>Relay Host</th>
-   <td>Specify the IP address of the relay host.</td>
-   </tr>
-   <tr>
-   <th>Port</th>
-   <td>Specify the port of the relay host.</td>
-   </tr>
-   <tr>
-   <th>Is Host Reachable</th>
-   <td>Select <b>Yes</b> if host is reachable. ThoughtSpot will verify the host.</td>
-   </tr>
-   <tr>
-   <th>From Email</th>
-   <td>Specify an email to receive alerts.</td>
-   </tr>
-   <tr>
-   <th>From Name</th>
-   <td>Specify the name associated with the email.</code>.
-   </td>
-   </tr>
-   <tr>
-   <th>SMTP Authentication Required</th>
-   <td>Select <b>Yes</b> if you wish to enable SMTP authentication.
-   </td>
-   </tr>
-   </table>
-
-6. Click **Save** to configure the SMTP traffic rules.
-
--->
 ## Configure using tscli
 
 Set up SMTP rules to send critical email notifications to ThoughtSpot Support.
 
-### Set up the relay Host
+### Set up the relay host
 
 To set up a relay host:
 
 1. Log in to the Linux shell using SSH.
-2. Issue the setup command, providing the IP address of the relay host:
+2. Issue the setup command, providing the IP address of the relay host.
+
+    Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.
+
+    To use the default port, run the setup command:
 
     ```
     $ tscli smtp set-relayhost <IP_address>
     ```
+
+    To use a custom port instead of port 25, run the setup command, specifying the port you want to use:
+
+    ```
+    $ tscli smtp set-relayhost <IP_address>:<custom_port>
+    ```
+
+    If you are on an earlier version than 6.0.5, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
 
 3. Verify your settings:
 
@@ -93,12 +40,40 @@ To set up a relay host:
 
 4. Verify that email is working.
 
+### Configure an email to send alerts
+
+1. Log in to the Linux shell using SSH.
+
+2. Specify the domain of the email address you would like emails to come from. In `example@company.com`, this command specifies `company`.
+
+    ```
+    $ tscli smtp set-mailname <mailname>
+    ```
+
+3. Specify the name of the email address you would like emails to come from. In `example@company.com`, this command specifies `example`.
+
+    ```
+    $ tscli smtp set-mailfromname <mailfromname>
+    ```
+
+### Configure SMTP authentication
+
+1. Log in to the Linux shell using SSH.
+
+2. If SMTP authentication is required, you must specify a username and password. Skip this step if SMTP authentication is not required.
+
+    ```
+    $ tscli smtp set-saslcredentials
+    ```
+
 ### Configure an email to receive alerts
 
-ThoughtSpot sends alerts to the email address specified during installation. If no email address was entered, no alerts are sent. You should add an email to receive alerts by issuing:
+ThoughtSpot sends alerts to the email addresses specified during installation. If you do not specify an email address, you do not receive any alerts. To add an email to receive alerts, issue the following command.
+
+{% include note.html content="Add the ThoughtSpot Support alert email, <code>prod-alerts@thoughtspot.com</code>, to allow ThoughtSpot Support to receive alerts. ThoughtSpot Support monitors these alerts to ensure your cluster's health. Do not add this email to POC or demo environments." %}
 
 ```
-$ tscli monitoring set-config --email <your_email>
+$ tscli monitoring set-config --email <prod-alerts@thoughtspot.com>,<your_email>
 ```
 
 To send to multiple emails, provide a comma-separated list with no spaces.
@@ -115,3 +90,10 @@ Check if the email settings are working properly by using this procedure.
     ```
 
  3. If you receive the email at the address(es) you supplied, email is working correctly.
+
+## Additional resources
+As you develop your expertise in emails and alerts, we recommend the following ThoughtSpot U course:
+* [Email and Alert Setup](https://training.thoughtspot.com/emails-alerts){:target="_blank"}
+
+See other training resources at <br/>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

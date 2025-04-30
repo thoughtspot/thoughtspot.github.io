@@ -1,16 +1,17 @@
 ---
 title: [Cable networking]
-
-last_updated: tbd
+summary: This section reviews the types of cables needed for 10GbE networking with your Dell or SMC appliance, and how to plug them in.
+last_updated: 3/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This section reviews the types of cables needed for 10GbE networking and how to plug them in. There are three types of cables to consider for 10GbE networking:
+ There are three types of cables to consider for 10GbE networking:
 
 -   Fiber
 -   Direct Attach Copper (DAC)
 -   Category 6a (not supported by ThoughtSpot)
 
+{: id="fiber-cables"}
 ## Option 1 - Fiber cables
 
 Fiber can be run long distances to the switch.
@@ -19,7 +20,7 @@ Fiber can be run long distances to the switch.
 
 These cables require gigabit interface converters (GBICs), SFP+ form factor.
 
-**Remember:** ThoughtSpot does not supply cables or GBICs
+**Remember:** ThoughtSpot does not supply cables. Your Dell appliance may come with one appliance-side SFP+ per node, but not the switch-side SFP+'s.
 
 ![]({{ site.baseurl }}/images/gbics.png "GBICs")
 
@@ -31,6 +32,7 @@ The fiber cables must then be plugged into the GBIC.
 
 ![]({{ site.baseurl }}/images/plug_in_fiber_cables.png "Plugging in fiber cables")
 
+{: id="dac-cables"}
 ## Option 2 - DAC/Twinax cables
 
 Copper can only be run short distances to the switch. An SFP+ is attached to the cable.

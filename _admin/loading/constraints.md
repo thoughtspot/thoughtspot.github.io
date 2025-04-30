@@ -8,6 +8,8 @@ permalink: /:collection/:path.html
 ---
 Constraints include primary keys, foreign keys, and relationships. Relationships allow you to create a generic relationship for use when you want to join tables that don't have a primary key/foreign key relationship.
 
+{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
+
 ## Primary keys
 
 When a primary key is selected for a table, it impacts data loading behavior. When a new row is added:
@@ -18,6 +20,11 @@ When a primary key is selected for a table, it impacts data loading behavior. Wh
 This behavior is referred to as “upsert” because it does an `INSERT` or an `UPDATE`, depending on whether a row with the same primary key already exists.
 
 Note that ThoughtSpot does not check for primary key violations across different shards of the table. Therefore, you need to shard the table on the primary key columns if you require this “upsert” behavior.
+
+## Permitted joins and necessary permissions
+See this matrix for information about which joins you can create, and what permissions these joins require.
+
+{% include content/joins-matrix.md %}
 
 ## Foreign key relationships
 
