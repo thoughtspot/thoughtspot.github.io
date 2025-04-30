@@ -6,6 +6,7 @@ sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 

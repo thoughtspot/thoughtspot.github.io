@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can copy and paste the copied link to include in a presentation or spreadsheet, or email or Slack it to other people in your company. Note that when clicking the link, the person must be authenticated to ThoughtSpot to see the visualization (e.g. by signing in, or through SAML).
 
-You can also use this link for embedding the chart or table in another Web page, Web portal, or application when using the ThoughtSpot JavaScript API with Embedding or the REST API. For details, read the ThoughtSpot Application Integration Guide.
+You can also use this link for embedding the chart or table in another Web page, Web portal, or application by using the [Pinboard Data API]({{ site.baseurl }}/admin/ts-cloud/embed-rest-api.html).
 
 ## Copying a pinboard link
 

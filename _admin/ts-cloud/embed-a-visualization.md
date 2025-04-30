@@ -1,7 +1,7 @@
 ---
-title: [Embed visualizations]
-last_updated: 3/3/2021
-summary: "Use the PinboardEmbed package to embed ThoughtSpot visualizations in your host application."
+title: [Embed a visualization]
+last_updated: 4/3/2021
+summary: "Use the PinboardEmbed package to embed a ThoughtSpot visualization in your host application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,7 +13,7 @@ This page explains how to embed a ThoughtSpot visualization, such as tables and 
 Import the visualization SDK library to your application environment:
 
 ``` javascript
-import { PinboardEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
+import { PinboardEmbed, AuthType, init } from '@thoughtspot/visual-embed-sdk';
 ```
 
 ## Add the embed domain
@@ -25,10 +25,10 @@ To allow your client application to connect to ThoughtSpot:
 2.  Specify the authentication method to use for authenticating application users.
 
     ``` javascript
-    init
+      init
         ({
             thoughtSpotHost:"https://<hostname>:<port>",
-            authType: AuthType.SSO
+            authType: AuthType.SSO,
         });
     ```
 
@@ -36,65 +36,84 @@ To allow your client application to connect to ThoughtSpot:
     *String*.  Hostname or IP address of the ThoughtSpot application.
 
     **`authType`**    
-    *String*. Authentication type. Valid values are:
+    *String*. Authentication type. You can set the `authType` attribute to one of the following values:
 
-    - `AuthServer`  
-      Trusted authentication method. The trusted authentication method enables applications to exchange secure tokens and grant access to the embedded content. If this authentication method is used, define the `authEndpoint` attribute.
-    - `authEndpoint`    
-      *String*. The endpoint URL of the authentication server. This attribute is required if the `AuthType` is set to `AuthServer`.  
-    - `SSO`    
-      SAML SSO authentication method. Users accessing the embedded content are authenticated with SAML SSO.
-    - `None`  
-      Requires no authentication. The user must already be logged in to ThoughtSpot before interacting with the embedded content.
-      This approach is used only for testing client applications. Do not use this in production environments.
+    -   `Basic`                                      
+        Allows authenticating and logging in a user using the ThoughtSpot `/tspublic/v1/session/login` API. The API request passes `username` and `password` parameters to obtain an authentication token. For more information, see [session APIs]({{ site.baseurl }}/reference/api/session-api.html).
+
+        {% include warning.html content="Do not use this authentication method in production environments." %}
+    -   `None`                                                        
+        Requires no authentication. The user must already be logged in to ThoughtSpot before interacting with the embedded content.
+
+        {% include warning.html content="Do not use this authentication method in production environments." %}
+    -   `SSO`                                                    
+        Sets SAML SSO as the authentication method. Federated users can authenticate with their SSO credentials to access the embedded ThoughtSpot content.
+        -   `noRedirect` *Optional*                  
+            *Boolean*. When set to `true`, it opens the SAML SSO authentication workflow in a pop-up window, instead of refreshing the application web page to direct users to the SAML login page.                                
+
+    -   `AuthServer`                                      
+        Enables trusted authentication method. To use the trusted authentication method, specify the trusted authentication server in the `authEndpoint` attribute or use the `getAuthToken` method.
+
+        -   `authEndpoint` *Optional*                  
+            *String*. The endpoint URL of the authentication server. When the `authEndPoint` attribute is defined, a GET request is sent to the authentication endpoint, which returns the authentication token as plaintext in its API response. This attribute is not required if `getAuthToken` is used.
+        -   `username`                                         
+            *String*. The username of the ThoughtSpot user.            
+        -   `getAuthToken` *Optional*
+            A function that invokes the trusted authentication endpoint and returns a `Promise` string that resolves to the authentication token. This attribute is not required if `authEndpoint` is used.  
+
+              ```
+              getAuthToken: () => Promise.resolve(token)
+              ```
 
 ## Construct the embed content
 
 ``` javaScript
- const pinboardEmbed = new PinboardEmbed("#embed", {
-    frameParams: {
-        width: 1280,
-        height: 720
-    },
-    disabledActions: [],
-    disabledActionReason: '<reason for disabling>'
-    hiddenActions: [],
+const pinboardEmbed = new PinboardEmbed(
+   document.getElementById('ts-embed'),
+   {
+     frameParams: {
+       width: '100%',
+       height: '100%',
+   },
+     disabledActions: [],
+     disabledActionReason: '<reason for disabling>',
+     hiddenActions: [],
+     pinboardId: '<%=pinboardGUID%>',
+     vizId: '<%=vizGUID%>',
+     runtimeFilters: [],
+   },
 });
 ```
 
 **`frameParams`**  
-Sets the `width` and `height` dimensions to render the iframe containing the visualization.
+Sets the `width` and `height` dimensions to render the iframe containing the visualization. You can set the `width` and `height` attribute values in pixels or as a percentage.
 
 **`disabledActions`** *optional*  
-*Array of string*. Menu items from the list of actions to be disabled on the visualization page.
+*Array of strings*. Disables the specified action menu items from the **More** menu! [more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the visualization page.
 
-For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `editTitle` string in the `disabledActions` attribute.
-```javascript
-disabledActions: Action.editTitle
-```
-**`hiddenActions`** *optional*  
-*Array of string*. Menu items from the list of actions to be hidden on the visualization page.
+For example, to disable the **Change Title** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `EditTitle` action menu string in the `disabledActions` attribute.
 
-For example, to hide **Download As PDF** action from the **More** menu![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `downloadAsPdf` string in the `hiddenActions` attribute.
 ```javascript
-hiddenActions: Action.downloadAsPdf
+disabledActions: Action.EditTitle
 ```
+
+For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and and you want to disable this custom action, make sure you specify the ID of the custom action in the `disabledActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `disabledActions` attribute to disable this action on the visualization page." %}
+
 **`disabledActionReason`** *optional*  
-*String*. Reason for disabling an action on the visualizations page.
+*String*. Reason for disabling an action on the visualization page.
+**`hiddenActions`** *optional*  
+*Array of strings*. Hides the menu items from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png) on the visualization page.
 
-For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
+For example, to hide **Download As PDF** action from the **More** menu! [more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png), specify the `DownloadAsPdf` action menu string in the `hiddenActions` attribute.
 
-## Render the embedded visualization
-
-Construct the URL for the embedded visualization and render the embedded content:
-
-``` javaScript
-pinboardEmbed.render({
-  pinboardId: '<%=pinboardGUID%>',
-  vizId: '<%=vizGUID%>'
-  runtimeFilters: []
-});
+```javascript
+hiddenActions: Action.DownloadAsPdf
 ```
+For a complete list of action menu items and the corresponding strings to use for  hiding menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+
+{% include note.html content="If you have added a custom action and you want to hide this custom action, make sure you specify the ID of the custom action in the `hiddenActions` attribute. For example, if a custom action is created with the **Send Email** label and the ID is set as **send-email**, use `send-email` in the `hiddenActions` attribute to hide this action on the visualization page." %}
 
 **`vizId`**  
 *String*. The Global Unique Identifier (GUID) of the visualization.
@@ -137,48 +156,60 @@ Runtime filters have several operators you can use to filter your embedded visua
 
 For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filters.html).
 
+## Render the embedded visualization
+
+Construct the URL for the embedded visualization and render the embedded content:
+
+``` javaScript
+pinboardEmbed.render();
+```
+
 ## Subscribe to events
 
-Register event handlers to subscribe to events triggered by the embedded visualizations:
+Register event handlers for the events triggered by the embedded visualization:
 
 ``` javascript
-  pinboardEmbed.on(EventType.init, showLoader)
-  pinboardEmbed.on(EventType.load, hideLoader)
+  pinboardEmbed.on(EmbedEvent.init, showLoader)
+  pinboardEmbed.on(EmbedEvent.load, hideLoader)
+  pinboardEmbed.on(EmbedEvent.Error)
 ```
+If you have added a [custom action]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html), register an event handler to manage the events triggered by the custom action:
+
+``` javascript
+ pinboardEmbed.on(EmbedEvent.customAction, payload => {
+      const data = payload.data;
+      if (data.id === 'insert Custom Action ID here') {
+          console.log('Custom Action event:', data.columnsAndData);
+      }
+  })
+```
+For a complete list of event types that you can register, see  [EmbedEvent]((https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/embedevent.html).
 
 ## Test the embedded workflow
 
 -   Load the client application.
-
 -   Try accessing a visualization embedded in your application.
-
 -   Verify the rendition.
-
--   If you have disabled a menu item from the visualizations page, verify if the menu command is disabled.
-
--   Verify if the runtime filters are correctly applied.
+-   If you have disabled a menu item on a visualization page, verify if the menu command is disabled.
+-   Verify the runtime filters.
 
 ## Code sample
 
 ``` javascript
-import { PinboardEmbed, AuthType, init } from '@thoughtspot/embed-sdk';
-
+import { PinboardEmbed, AuthType, init } from '@thoughtspot/visual-embed-sdk';
 init({
-    thoughtSpotHost: '<%=tshost%>',
-    authType: AuthType.None,
-});
-
-const pinboardEmbed = new PinboardEmbed(
-    document.getElementById('ts-embed'),
-    {
-        frameParams: {
-            width: '100%',
-            height: '100%',
-        },
-    });
-
-pinboardEmbed.render({
-    pinboardId: '6294b4fc-c289-412a-b458-073fcf6e4516',
-    vizId: '28b73b4a-1341-4535-ab71-f76b6fe7bf92'
-});
+       thoughtSpotHost: '<%=tshost%>',
+       authType: AuthType.None,
+   });
+const pinboardEmbed = new PinboardEmbed(document.getElementById('ts-embed'),
+   {
+       frameParams: {
+           width: '100%',
+           height: '100%',
+       },
+       pinboardId: '6294b4fc-c289-412a-b458-073fcf6e4516',
+       vizId: '28b73b4a-1341-4535-ab71-f76b6fe7bf92',
+   },
+   });
+pinboardEmbed.render();
 ```

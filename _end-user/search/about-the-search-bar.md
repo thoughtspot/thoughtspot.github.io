@@ -13,9 +13,12 @@ The search bar shows boxes around each search phrase, so you can easily see wher
 
 ![Measures, attributes, and filters in the search bar]({{ site.baseurl }}/images/search-bar-basics.png "Measures, attributes, and filters in the search bar")
 
+## Search on enter
+ThoughtSpot Cloud's default search experience is search on enter. This means that you can add new tokens to the search bar, or remove them, without altering your existing search, until you press **Enter** on your keyboard, or select **Go** to the right of the search bar. This means that you may need to press **Enter** or **Go** to ensure that ThoughtSpot updates your search with any new items in the search bar.
+
 ## Editing a search
 
-You can edit a search without affecting existing search results.  When you click a search phrase, it is highlighted, and ThoughtSpot displays other suggestions from which you can choose to replace the highlighted phrase. When you hover over a boxed phrase, you can see an **x**, which you can click to remove it from the search. You can insert a new phrase in the middle of a search, by clicking between phrases and entering the new phrase. You can even merge phrases without breaking the search. As you edit your search, ThoughtSpot continuously generates new results.
+You can edit a search without affecting existing search results.  When you click a search phrase, it is highlighted, and ThoughtSpot displays other suggestions from which you can choose to replace the highlighted phrase. When you hover over a boxed phrase, you can see an **x**, which you can click to remove it from the search. You can insert a new phrase in the middle of a search, by clicking between phrases and entering the new phrase. You can even merge phrases without breaking the search. As you edit your search and click **Enter**, ThoughtSpot generates new results.
 
 If you find yourself looking at a table or chart, but it doesn't seem to contain all the data you expect, try looking in the search bar for filters in gray boxes. If you remove all the filters, you will again see all the available data for that search.
 

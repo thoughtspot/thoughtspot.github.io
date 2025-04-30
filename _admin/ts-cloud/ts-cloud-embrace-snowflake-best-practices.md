@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After connecting to Snowflake through ThoughtSpot Embrace, you may notice that some things don’t work as you expect. Here are helpful pointers on data modeling: best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.
+After connecting to Snowflake, you may notice that some things don’t work as you expect. Here are helpful pointers on data modeling: best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.
 
 {: id="change-json"}
 ## Change JSON to a relational schema in Snowflake
@@ -74,7 +74,7 @@ WHERE date_trunc('month',observation_time) = '2018-01-01'
 LIMIT 20;
    ```
 
-6. In ThoughtSpot Embrace, add a connection to Snowflake, specifically to the view you created.
+6. In ThoughtSpot, add a connection to Snowflake, specifically to the view you created.
 
    See [Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html).
 

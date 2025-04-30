@@ -1911,8 +1911,8 @@ kbd {
     padding: 2px 4px;
     font-size: 90%;
     color: #fff;
-    background-color: #333;
-    border-radius: 3px;
+    background-color: #2770F1;
+    border-radius: 9px;
 }
 
 kbd kbd {

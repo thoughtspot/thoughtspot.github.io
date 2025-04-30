@@ -9,7 +9,7 @@ To connect to Snowflake:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
@@ -21,6 +21,8 @@ To connect to Snowflake:
 
    ThoughtSpot supports <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>, but not External OAuth.
 
+   Before selecting OAuth authentication in ThoughtSpot, you must configure OAuth in Snowflake. For details, see [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html).   
+
    For OAuth authentication, do the following:
 
     1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
@@ -30,6 +32,8 @@ To connect to Snowflake:
     3. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
     4. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
+        Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
+
    For service account authentication, do the following:
    - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
      ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-serv-acct.png "Enter connection details")
@@ -38,11 +42,11 @@ To connect to Snowflake:
 
 5. (Optional) Provide additional key-value pairs that are required to set up your connection to Snowflake, by doing the following:
 
-   - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-   - Enter your key and value information.
-   - To add more keys and values, click the plus sign (+), and enter them.
+    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+    2. Enter your key and value information.
+    3. To add more keys and values, click the plus sign (+), and enter them.
 
-     {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
+    {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.   
 
@@ -61,7 +65,7 @@ The connection you just created is a link to the external data source. If there 
 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
-You can modify an Embrace Snowflake connection in the following ways:
+You can modify a Snowflake connection in the following ways:
 
 - [Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html)
 - [Edit a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html)

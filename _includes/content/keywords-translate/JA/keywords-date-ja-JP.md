@@ -16,8 +16,8 @@
   </tr>
   <tr>
     <td class="tg-dc35">after</td>
-    <td class="tg-dc35">after </td>
-    <td class="tg-lnw8"><code>order date <b>after</b> 10/31/2014</code></td>
+    <td class="tg-dc35">after</td>
+    <td class="tg-dc35"><code>order date <b>after</b> 10/31/2014</code></td>
   </tr>
   <tr>
     <td class="tg-us36">before</td>
@@ -76,27 +76,27 @@
   </tr>
   <tr>
     <td class="tg-dc35">growth of … by … daily</td>
-    <td class="tg-dc35">成長率 …　by　… 日単位</td>
+    <td class="tg-dc35">成長率 … by … 日単位</td>
     <td class="tg-dc35"><code><b>growth of</b> sales <b>by</b> order date <b>daily</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">growth of … by … monthly</td>
-    <td class="tg-us36">成長率 …　by　… 月単位</td>
+    <td class="tg-us36">成長率 … by … 月単位</td>
     <td class="tg-us36"><code><b>growth of</b> sales <b>by</b> date shipped <b>monthly</b> sales &gt; 24000</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">growth of … by … quarterly</td>
-    <td class="tg-dc35">成長率 …　by　… 四半期単位</td>
+    <td class="tg-dc35">成長率 … by … 四半期単位</td>
     <td class="tg-dc35"><code><b>growth of</b> sales <b>by</b> date shipped <b>quarterly</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36">growth of … by … weekly</td>
-    <td class="tg-us36">成長率 …　by　… 週単位</td>
+    <td class="tg-us36">成長率 … by … 週単位</td>
     <td class="tg-us36"><code><b>growth of</b> sales <b>by</b> receipt date <b>weekly</b> for pro-ski2000</code></td>
   </tr>
   <tr>
     <td class="tg-dc35">growth of … by … yearly</td>
-    <td class="tg-dc35">成長率 …　by　… 年単位</td>
+    <td class="tg-dc35">成長率 … by … 年単位</td>
     <td class="tg-dc35"><code><b>growth of</b> sales <b>by</b> date closed <b>yearly</b></code></td>
   </tr>
   <tr>

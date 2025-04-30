@@ -1,11 +1,168 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 04/07/2021
+last_updated: 06/11/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
+## June 11, 2021
+
+{: id="invite-others"}
+### Free Trial invite others
+
+We streamlined the process to invite another user to Free Trial. Now, you can invite others directly from within Free Trial, and the invitee receives the Free Trial activation email in their inbox. Users you invite automatically join your group, and can access your shared data objects (worksheets, answers, pinboards, etc.). You can invite a maximum of five new users to join your group.
+
+To invite a teammate to Free Trial, simply navigate to the **Setup** tab, click **Invite others** at the bottom of the screen, and enter your teammate’s email.
+
+![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
+
+![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
+
+
+## June 9, 2021
+
+{: id="password-creation-checklist"}
+### Password creation checklist
+
+We redesigned the account creation page to clarify the password requirements for new users. Now, when you first log in to Free Trial, the password verification checklist appears. Your password must contain:
+
+- 8 or more characters
+- At least one uppercase letter
+- At least one lowercase letter
+- At least one number
+- At least one special character ( !, #, $, etc.)
+
+![]({{ site.baseurl }}/images/free-trial-password-checklist.png "Password creation checklist")
+
+{: id="worksheet-creation-tooltips"}
+### Worksheet creation tooltips in Setup
+
+To simplify the process of creating worksheets on Free Trial, we added tooltips to explain the difference between fact tables and dimension tables. When creating a worksheet, you first select the fact table that forms the base of your business use case, then add dimension tables with common dimensions to your fact table. For example, to create a Sales worksheet, you join together a sales fact table with dimension tables that share common dimensions like date, region, and store.
+
+The worksheet creation tooltips appear when you create a worksheet during onboarding. To view examples of typical fact tables, proceed to step one of the worksheet creation process in Setup, and click the information icon to the right of the **Select a fact table** dialog. To view examples of typical dimension tables, click the information icon to the right of the **Select up to 4 dimension tables** dialog.
+
+![]({{ site.baseurl }}/images/free-trial-pendo-fact-table.png "Fact table tooltip"){: .inline}
+
+![]({{ site.baseurl }}/images/free-trial-pendo-dimension-table.png "Dimension table tooltip"){: .inline}
+
+
+### Free Trial Make It shine
+
+These are the fixes we applied to Free Trial:
+
+* We resolved bugs to improve search data and answer functionality.
+
+## May 26, 2021
+
+{: id="make-it-shine"}
+### Free Trial Make It Shine
+
+These are the fixes we applied to Free Trial:
+
+* To facilitate account creation and login, Free Trial login now asks for email address rather than user name.
+![]({{ site.baseurl }}/images/free-trial-login-email-address.png "Email address login"){: .inline}
+
+* The countdown banner for users on their last day of Free Trial now reads: “Only 1 day remaining in your free trial. Get ThoughtSpot for your organization. Upgrade now.”
+![]({{ site.baseurl }}/images/free-trial-countdown-banner-1.png "One day remaining on free trial"){: .inline}
+
+* The connection creation interface prompts users to “confirm” their connection.
+![]({{ site.baseurl }}/images/free-trial-connection-confirm.png "Error message for incorrect user name"){: .inline}
+
+* ThoughtSpot Free Trial does not send password reset emails to expired accounts.
+
+
+## May 12, 2021
+
+These are the changes we made to Free Trial.
+
+* We fixed the username/password error message when users create a Snowflake connection. Previously, users who entered an incorrect username or password would see a Snowflake IP whitelisting error message.<br>
+![]({{ site.baseurl }}/images/free-trial-username-error.png "Error message for incorrect user name"){: .inline}
+
+* We removed the prompt to **Search now** after users create a connection. Now, users can return directly to Setup to continue setting up their Free Trial account.<br>
+**Before:**<br>
+![]({{ site.baseurl }}/images/free-trial-search-prompt.png "Prompt to Search Now"){: .inline}<br>
+**After:**<br>
+![]({{ site.baseurl }}/images/free-trial-no-search-prompt.png "Back to Setup"){: .inline}
+
+
+## May 5, 2021
+
+{: id="schedule-meeting"}
+### Schedule time with product experts
+
+To improve your product experience, we have added a feature to schedule one-on-one meetings with product experts. Now, when you run into an error or have a question about the product, you can reach out for help without ever leaving your page.
+
+To schedule a meeting, click **Book 1:1 expert help** at the top of the page. Choose a time within the calendar, and enter your name and email before clicking **Confirm Booking**. After confirmation, you will receive a link to your Zoom meeting.
+
+![]({{ site.baseurl }}/images/free-trial-expert-calendar.png "Book 1:1 expert help")
+
+![]({{ site.baseurl }}/images/free-trial-confirm-meeting.png "Confirm meeting with product expert")
+
+{: id="whats-new-with-free-trial"}
+### What’s New with Free Trial
+
+We added a "What’s New" section to the ThoughtSpot Information Center. This section highlights important features for different user personas. Click on the **help** icon![]({{ site.baseurl }}/images/icon-help-10-px.png "Help icon"){: .inline}. when the red notification appears to see new features. Click **Learn More** to browse our documentation, or click **Try it now** to experience it for yourself.
+
+![]({{ site.baseurl }}/images/free-trial-whats-new.png "What’s New on Free Trial")
+
+![]({{ site.baseurl }}/images/free-trial-learn-more.png "Learn more about new features")
+
+<!--
+### Free Trial invitation process simplified
+
+We have simplified the process to invite another user to Free Trial. Now, you will be able to invite others directly from within Free Trial, and the invitee will see the Free Trial activation email in their inbox. Users you invite join your group automatically, and can share Answers, Pinboards and Worksheets.
+
+To invite a teammate to Free Trial, simply navigate to the **Setup** tab and click **Invite others** at the bottom of the screen. Enter your team member's email and click **Send invite**.
+
+![]({{ site.baseurl }}/images/free-trial-invite-others.png "Invite others to ThoughtSpot")
+
+![]({{ site.baseurl }}/images/free-trial-invite.png "Invite others to ThoughtSpot")
+-->
+
+{: id="duplicate-column-names-highlighted"}
+### Worksheet duplicate column names error
+
+When creating a Worksheet, all columns must have unique names. In order to prevent column name duplicate errors, ThoughtSpot highlights duplicate column names during Worksheet creation, before you can save the Worksheet. In previous releases, the **Cannot add duplicate column names** error message did not specify which columns were duplicates. We believe all analysts, including those on Free Trial, will love this enhancement.
+
+![]({{ site.baseurl }}/images/free-trial-duplicate-columns.png "Duplicate columns error message")
+
+{: id="add-snowflake-connection"}
+### Add a Snowflake connection
+
+We made the following changes to simplify the process of adding a Snowflake connection:
+
+* By default, ThoughtSpot directs users to use Service Account. Previously, **Use OAuth** was the default option.
+* We added a reminder that the Snowflake database name is case-sensitive.
+* We added a connection creation checklist for Snowflake.
+
+![]({{ site.baseurl }}/images/free-trial-add-snowflake-connection.png "Updates to Snowflake connection page")
+
+
+## April 28, 2021
+
+{: id="countdown"}
+### Free Trial Countdown
+
+We added a white banner to the top of the screen to count down users’ remaining days on Free Trial. The countdown banner turns yellow once you have reached your final week on Free Trial. At any time, you can click **Upgrade now** to upgrade to a paid account. The **Upgrade now** link takes you to Intercom to connect to ThoughtSpot.
+
+![]({{ site.baseurl }}/images/free-trial-countdown-banner-7.png "7-day countdown for Free Trial")
+
+{: id="simplified-snowflake-url"}
+### Simplified Snowflake account name
+
+We simplified the steps to add a Snowflake connection. When prompted to enter the Snowflake account name, you can now copy-paste the entire URL of your Snowflake account, and ThoughtSpot will extract the account name for you. Previously, users had to select the account name from the URL and enter it in the Snowflake account field.
+
+![]({{ site.baseurl }}/images/free-trial-snowflake-url.png "Snowflake Account name or URL for connection")
+
+{: id="thoughtspot-connections"}
+### ThoughtSpot connections
+
+We renamed ThoughtSpot Embrace to Connections within the product. Now, Free Trial users can access Connections by clicking **Connections** on the **Data** page. Functions like `sql_int_op` that were previously available under **Embrace passthrough** are now available under **Connection passthrough**.
+
+![]({{ site.baseurl }}/images/free-trial-data-connections.png "Data Connections page")
+
+
 ## April 7, 2021
 
 {: id="fixed-issues"}

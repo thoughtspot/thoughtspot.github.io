@@ -5,6 +5,8 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include note.html content="The new formula editor is part of the new Answer experience. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile." %}
+
 You can always go back and view or edit a formula that was added to an Answer. Anyone who has edit privileges on an Answer can also edit any formulas it contains. To view or edit an existing formula in an Answer:
 
 1. Navigate to the Answer whose formula you would like to edit. If the Answer is within a Pinboard, select the ellipsis menu ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} for that Answer and click **Edit**.
@@ -15,8 +17,8 @@ You can always go back and view or edit a formula that was added to an Answer. A
 
 5. View or edit your formula in the Formula Editor.
 
-     ![Use the Formula Editor]({{ site.baseurl }}/images/worksheet-formula-profit-old.png "Use the Formula Editor")
+     ![Use the Formula Editor]({{ site.baseurl }}/images/worksheet-formula-profit.png "Use the Formula Editor")
 
-    {% include note.html content="Formula elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black)." %}
+    {% include note.html content="Formula elements are color-coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black)." %}
 
 6. If you edited your formula, click **Save** to save your changes. Otherwise, click **Cancel**.

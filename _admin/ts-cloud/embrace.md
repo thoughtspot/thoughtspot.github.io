@@ -1,5 +1,5 @@
 ---
-title: [About Embrace in ThoughtSpot Cloud]
+title: [About connections in ThoughtSpot Cloud]
 last_updated: 1/25/2021
 summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
@@ -8,12 +8,15 @@ permalink: /:collection/:path.html
 
 If your company stores source data externally in data warehouses, you can use ThoughtSpot Embrace to directly query that data and use ThoughtSpot's analysis and visualization features.
 
-On ThoughtSpot Cloud, Embrace supports the following external databases:
+On ThoughtSpot Cloud, you can connect to the following external databases:
 - [Snowflake]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake.html)
 - [Amazon Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html)
 - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
-- [Oracle Autonomous Data Warehouse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
+- [Oracle ADW]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
+- [Starburst]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html)
+
+{% include note.html content="Databricks is in beta and disabled by default. To enable either of these features, contact ThoughtSpot Support." %}
 
 ## How it works
 
@@ -30,6 +33,7 @@ On ThoughtSpot Cloud, Embrace supports the following external databases:
 - Centralize data management and governance in the external database.
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
+- Custom calendar available with Snowflake, Amazon Redshift, Google BigQuery, and Azure Synapse
 
 ## Limitations
 
@@ -37,11 +41,12 @@ On ThoughtSpot Cloud, Embrace supports the following external databases:
 
 ## Feature availability in Embrace on ThoughtSpot Cloud
 
-Here are the major features that are not currently available in Embrace:
+Here are the major features that are not currently available in Connections:
 
+- Custom calendar is only supported with Snowflake connections, at this time
 - Spot IQ: Instant insights, Did you know?, Pinboard insights, Analyze
 - Monitor
-- Custom calendar
+- Custom calendar not available with Oracle ADW connections
 - Materialized views
 
 ## Function availability in Embrace on ThoughtSpot Cloud
@@ -172,7 +177,7 @@ The following matrix captures the specific data type support limitations across 
 
 ## Additional specific exceptions
 
-The following list captures the specific limitations across the different databases of Embrace. Databases not listed here have full support.
+The following list captures the specific limitations across the different databases of Connections. Databases not listed here have full support.
 
 <dl>
   <dlentry>

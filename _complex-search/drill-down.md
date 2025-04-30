@@ -1,6 +1,6 @@
 ---
 title: [Drill down into your data]
-last_updated: 1/22/2020
+last_updated: 4/5/2021
 summary: "Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -31,8 +31,8 @@ This limits the data you are exploring to that particular data point or chart ob
     ![Dairy sales by diet type]({{ site.baseurl }}/images/drilldown-example.png "Dairy sales by diet type")
     <!--{% include image.html file="drilldown-example.png" title="Dairy sales by diet type" alt="Drill down on the dairy column and select diet type to see a chart showing dairy sales by diet type" caption="Dairy sales by diet type" %}-->
 
-    Use your internet browser's back button to go back one step at a time.
-    {% include note.html content="Your browser's back button only goes back one step on unsaved Answers. If you are working with a saved Answer, clicking your browser's back button prompts you to save your unsaved changes, and does not take you back to the previous step in your Drill down." %}
+    To go back one step at a time, use the in-product back button to the left of the search or Answer name. If the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.htm), use your internet browser's back button.
+    {% include note.html content="Your browser's back button only goes back one step on unsaved Answers. You can use the in-product back button on saved Answers. If you are working with a saved Answer, clicking your browser's back button prompts you to save your unsaved changes, and does not take you back to the previous step in your Drill down." %}
 
     You can continue to drill down in the data until you run out of relevant dimensions.
 
@@ -45,11 +45,11 @@ When you drill down on an Answer within a pinboard, it works similarly to drilli
 
 {: id="explorer-drilldown"}
 ## Drill down with Answer Explorer
-You can also drill down using the [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) feature. Answer Explorer provides AI-guided exploration of an answer within a pinboard. When you drill down normally, you cannot go back one step at a time to see an earlier version of your visualization. You have to delete filters from the search bar, or start your search again. If you drill down with Answer Explorer, you can use the *go back one step* feature.
+You can also drill down using the [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) feature. Answer Explorer provides AI-guided exploration of an answer within a pinboard. When you drill down within a Pinboard but not within Answer Explorer, you cannot go back one step at a time to see an earlier version of your visualization. You have to delete filters from the search bar, or start your search again. If you drill down with Answer Explorer, or on an Answer or search that is not part of a Pinboard, you can use the *go back one step* feature.
 
 As you drill down on an answer using Answer Explorer, use the back arrow ![]({{ site.baseurl }}/images/icon-arrow-left-20px.png){: .inline} to go back one step at a time. Click the reset icon ![]({{ site.baseurl }}/images/icon-reset-20px.png){: .inline} to go back to the original answer.
 
-If you want to go back one step at a time while drilling down, [add your answer to a pinboard]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html#add-an-answer-to-a-pinboard) so you can use Answer Explorer.
+If you want to go back one step at a time while drilling down, either drill down on an Answer or search that is not part of a Pinboard, or use Answer Explorer.
 
 ## Save and share your new answer
 When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar later.
