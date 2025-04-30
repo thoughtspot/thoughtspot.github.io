@@ -1,7 +1,7 @@
 ---
 title: [System pinboards]
-keywords: monitor,pinboard
-tags: [indexing]
+summary: "ThoughtSpot provides several pinboards that help with system monitoring."
+last_updated: 11/18/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -22,8 +22,8 @@ statistics.
 To list these system pinboards:
 
 1. Go to the **Pinboards** tab.
-2. Choose **All** and **All types**.
-3. Enter `TS ` (don't forget the space) in the search field.
+2. Choose **All**.
+3. Enter `TS: ` in the search field.
 
    ![]({{ site.baseurl }}/images/su-pinboards.png)
 
@@ -59,20 +59,20 @@ To list these system pinboards:
    <tr>
       <td><code class="highlighter-rouge">TS Stats: System Information and Usage</code></td>
       <td>
-         Replicates the **Admin > System Health > Overview** page.
+         Replicates the <strong>Admin > System Health > Overview</strong> page.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS Stats: Latency Visualizations</code></td>
       <td>
          Latency on servers and <a href="#" data-toggle="tooltip" data-original-title='{% for entry in site.data.glossary.entries %}{% if entry.word == "impression" %}{{ entry.definition }}{% endif %}{% endfor %}
-'>impression</a> counts. This data comes from the `TS: BI Server` worksheet.
+'>impression</a> counts. This data comes from the <code>TS: BI Server</code> worksheet.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS Stats: Table Status</code></td>
       <td>
-         Replicates the **Data** board.
+         Replicates the <strong>Data</strong> board.
       </td>
    </tr>
   </table>
@@ -81,6 +81,6 @@ To list these system pinboards:
 ## About deprecated boards
 
 The deprecated boards (`TS status: Usage - Deprecated` and `TS StaTS: Queries --
-Deprecated`) are there to support older installations. New installations, should
+Deprecated`) are there to support older installations. New installations should
 not use or rely on deprecated boards. Older installations that have used these
-boards in some way, should use the new boards and remove any dependencies.
+boards in some way should use the new boards and remove any dependencies.

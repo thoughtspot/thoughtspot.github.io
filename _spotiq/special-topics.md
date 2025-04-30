@@ -1,8 +1,7 @@
 ---
 title: [Best SpotIQ Practices]
-tags: [bestpractices,indexing]
-keywords: SpotIQ,"best practices", invoke, search, measure, attribute, ranking
-last_updated: tbd
+summary: Learn the SpotIQ best practices.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -31,17 +30,20 @@ You can increase the SpotIQ's effectiveness by ensuring you are practicing good
 data modeling. This is true if you are user uploading the occasional data file
 or a data management professional. Modeling data requires that you can:
 
-1. Click on the **DATA** icon, to get to the data management listing.
-2. Click on a data source you own or can edit.
-    This brings up the **Columns** screen, where you'll make your modeling settings.
+1. Click **Data** to get to the data management listing.
+
+2. Click a data source you own or can edit.
+
+    This brings up the **Columns** screen, where you can make your modeling settings.
+
 3. Modify one or more column settings.
+
 4. Save your changes.
 
     If you worked through the SpotIQ tutorial, you can try experiment on the
     **FoodDollarDataReal** data you uploaded.
 
-Make sure you set the [**INDEX PRIORITY**]({{ site.baseurl
-}}/admin/data-modeling/change-column-priority.html) for columns in your data
+Make sure you set the **INDEX PRIORITY** for columns in your data
 source. Use a value between 8-10 for important columns to improve their search
 ranking. Use 1-3 for low priority columns. **INDEX PRIORITY** impacts user-based
 ranking which helps SpotIQ focus its analysis.
@@ -73,3 +75,15 @@ exclude nulls or zero value measures from analysis.
 The exclusions impact each SpotIQ analysis. It eliminates points with such
 values during statistical calculations for example, for mean, standard deviation
 SpotIQ excludes values from any equation and uses only the remaining points.
+
+## Prioritizing analyses types
+
+You can prioritize highlighting changes in data over time instead of other changes, such as  outliers or anomalies.
+
+### Columns
+
+When you trigger a SpotIQ analysis on an answer, you can select alternate data columns. To trigger more time-related insights, pick more date-time columns.
+
+### Advanced
+
+In the advanced tab of the SpotIQ dialog, increase the maximum number of trend and correlation insights, and reduce the number of anomaly insights.

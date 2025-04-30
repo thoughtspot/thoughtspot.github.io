@@ -1,48 +1,47 @@
 ---
-title: [Additional chart options]
-keywords: tbd
-last_updated: tbd
-summary: "You can configure charts to show the y-axis data values.
-"
+title: [Show data labels]
+last_updated: 2/25/2020
+summary: "You can show and configure data labels for a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Some charts have additional options under **Configuration Options** that are
-covered in each chart type topic.
+You can show data labels for [every measure](#labels-all) in your chart, or configure labels [separately for each measure](#labels-one).
 
+{: id="labels-all"}
+## Configure all data labels
 
-## Show data labels
+1. While viewing your search or answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
 
-To show data labels:
+2. Select **Settings** on the bottom right.
 
-1. While viewing your answer as a chart, click **Edit chart configuration**.
+     ![Click settings]({{ site.baseurl }}/images/chartconfig-zoom-settings.png "Click settings")
 
-     ![]({{ site.baseurl }}/images/edit_chart_configuration_bar.png "Edit chart configuration icon")
+3. Check the **all labels** box.
 
-2. Select **Show Data Labels**.
+    ![Check the all labels box]({{ site.baseurl }}/images/chartconfig-labels-all.png "Check the all labels box")
 
-     ![]({{ site.baseurl }}/images/show_data_labels.png "Toggle on Show Data Labels")
+    To further configure the labels, by showing unrounded numbers for example, [configure labels individually](#labels-one).
 
-## Add regression line
+{: id="labels-one"}
+## Configure labels for one measure
 
-1. While viewing your answer as a chart, click **Edit chart configuration**.
-2. Select **Show regression line**.
+1. While viewing your search or answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
 
-     ![]({{ site.baseurl }}/images/regression-line.png)
+2. Click on the measure you want to add labels to.
 
-## Display gridlines
+    ![Select a measure]({{ site.baseurl }}/images/chartconfig-reordervalues.png "Select a measure")
 
-Charts with X and Y axis can display gridlines. To display them:
+3. Check the **data labels** box.<br>
+    Note that only the **total sales** data has labels.
 
-1. Choose **Edit chart configuration**.
-2. Select one or both of the gridline options.
+    ![Check the data labels box]({{ site.baseurl }}/images/chartconfig-datalabels.png "Check the data labels box")
 
-     ![]({{ site.baseurl }}/images/chart-gridline.png)
+4. You can specify a **category**, like *number*, *percentage*, or *currency*. Otherwise, ThoughtSpot automatically picks the best category for your data.
 
-## Lock the chart
+    ![Specify a label category]({{ site.baseurl }}/images/chartconfig-labelcategory.png "Specify a label category")
 
-You can use the lock icon to prevent ThoughtSpot from recommending other chart
-options or configurations. For example, you want a line chart, you can lock that
-display and stop TS from recommending an alternative visualization such as a
-funnel/pie/column and so forth. A lock applies for all subsequent answers that
-have the same column set. 
+5. When you specify a category, you can also specify **units**. Select *none* to see your data down to two decimal points, for example, or select *millions* to see labels rounded to the millions.
+
+    You can also specify the number of decimal places.
+
+    ![Decimal specifications]({{ site.baseurl }}/images/chartconfig-decimals.png "Decimal specifications")

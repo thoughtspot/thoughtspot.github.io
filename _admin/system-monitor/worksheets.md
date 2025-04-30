@@ -1,12 +1,12 @@
 ---
 title: [System worksheets]
-keywords: monitor,worksheet
-tags: [indexing]
+summary: "Learn about the system worksheets that ThoughtSpot provides."
+last_updated: 11/18/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Most of the monitoring information in **System Health** are sourced from system
+Most of the monitoring information in **System Health** comes from system
 worksheet which administrators can view, but not modify. The underlying tables
 are protected system tables that cannot be accessed directly. However,
 administrators can create new, custom monitoring reports from the worksheets.
@@ -16,8 +16,8 @@ administrators can create new, custom monitoring reports from the worksheets.
 To list the system worksheets:
 
 1. Go to the **Data** tab.
-2. Choose **All** and **All types**.
-3. Enter `TS ` (don't forget the space) in the search field.
+2. Choose **All** and **Worksheets**.
+3. Enter `TS: ` in the search field.
 
    ![]({{ site.baseurl }}/images/su-worksheets.png)
 

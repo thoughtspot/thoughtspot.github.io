@@ -1,7 +1,7 @@
 ---
 title: [Customize the application style]
-keywords: tbd
-last_updated: tbd
+
+last_updated: 2/4/2020
 summary: "Style Customization allows you to change the overall style of your ThoughtSpot interface. "
 sidebar: mydoc_sidebar
 toc: false
@@ -20,9 +20,8 @@ make the visualizations match the look and feel of the portal or application in
 which they are embedded. For more information on using the APIs, see the
 ThoughtSpot Application Integration Guide.
 
-To enable style customization, contact ThoughtSpot Support. The ThoughtSpot logo
-in the middle of the page is automatically removed when Style Customization is
-enabled.
+Style customization is enabled by default beginning in ThoughtSpot version 5.0. To disable style customization, contact ThoughtSpot Support. The ThoughtSpot logo
+in the middle of the page is automatically removed when Style Customization is enabled.
 
 ## Change style customization
 
@@ -31,15 +30,16 @@ Make changes to the style of your ThoughtSpot interface in the **Style Customiza
 To re-brand the interface:
 
 1. Log in to ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
 
-    ![]({{ site.baseurl }}/images/admin_icon.png)
+2. Click the **Admin** tab, on the top navigation bar.
 
-3. In the **Admin** panel, click on **Style Customization**.
+    ![Select the admin tab]({{ site.baseurl }}/images/topnavbar-admin.png "Select the admin tab")
 
-     ![]({{ site.baseurl }}/images/style_customization.png "Style Customization menu")
+3. In the **Admin** panel, click **Style Customization**.
 
-    Once in the menu page, you can:
+     ![Style customization menu]({{ site.baseurl }}/images/stylecustomizationmenu.png "Style Customization menu")
+
+    In the menu page, you can perform the following actions:
 
     -   [Upload application logos](upload-application-logos.html#)
     -   [Set chart and table visualization fonts](set-chart-and-table-visualization-fonts.html#)

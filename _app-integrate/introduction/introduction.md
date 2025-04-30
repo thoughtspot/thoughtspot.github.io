@@ -1,7 +1,7 @@
 ---
 title: [Introduction to Embedding]
-keywords: tbd
-last_updated: tbd
+summary: You can embed ThoughtSpot in an external application, website, or portal.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -21,9 +21,9 @@ ThoughtSpot Extended Enterprise Edition includes these capabilities:
 
 When you buy ThoughtSpot Extended Enterprise, the following rights and obligations apply:
 
-1. External users may only access those elements that are exposed through ThoughtSpot public APIs. These include search, search results and data visualizations, saved pinboard and answers, SearchIQ, and SpotIQ.
+1. External users may only access those elements that are exposed through ThoughtSpot public APIs. These include search, search results and data visualizations, saved pinboards and answers, SearchIQ (**Beta**), and SpotIQ.
 2. External users may not be granted Administrator privileges such as the ability to create and modify users and groups.
-3. External users are not permitting to copy or download the ThoughtSpot software.
+3. External users are not permitted to copy or download the ThoughtSpot software.
 4. You may not include external users in a group that has access to these privileges:
    - Can administer ThoughtSpot
    - Can administer and bypass RLS
@@ -45,7 +45,7 @@ When you buy ThoughtSpot Extended Enterprise, the following rights and obligatio
 ## Section Contents ##
 Here are the main topics for Embedding with Extended Enterprise:
 
-* [Log into the Linux shell using SSH]({{ site.baseurl }}/app-integrate/introduction/login-console.html)
+* [Log in to the Linux shell using SSH]({{ site.baseurl }}/app-integrate/introduction/login-console.html)
 * [Login credentials]({{ site.baseurl }}/app-integrate/introduction/logins.html)
 * [Using the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/about-JS-API.html)
 * [SAML]({{ site.baseurl }}/app-integrate/SAML/about-SAML-integrations.html)

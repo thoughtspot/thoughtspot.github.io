@@ -1,7 +1,7 @@
 ---
 title: [Sharding]
-keywords: sharding,partitioning,distribution,dimension,split,table,shard,partition,performance
-tags: [performance]
+
+
 last_updated: tbd
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
@@ -29,6 +29,21 @@ To optimize ThoughtSpot performance, you should _shard_ very large fact tables
 whenever possible. If you have a large dimension table, you might choose to
 shard it along with the fact table it is joined with. Sharding both the fact and
 dimension table is known as _co-sharding_.
+
+### Table sizes and sharding recommendations
+
+|---------------           | ----------------             |
+| Number of rows per shard | 5-10 million                 |
+| Maximum                  | 10 million rows per shard    |   
+| Maximum number of shards | ~ 80% of CPU cores           |   
+
+### Example
+
+|---------------           | ----------------               |
+| Number of rows in table  | 1.1 billion                    |
+| CPUS in cluster          | 256                            |   
+| HASH (128)               | ~50% of total CPUs            |
+|                          | 8.6 million rows per shard    |
 
 ## How to shard
 
@@ -59,7 +74,7 @@ in your cluster:
 |49-60|640|
 |61-72|768|
 
-If you omit the `PARTION BY HASH` statement or if the `HASH` parameter is 1
+If you omit the `PARTITION BY HASH` statement or if the `HASH` parameter is 1
 (one), the table is unsharded. This also means the table physically exists in
 its entirety on each node.
 
@@ -78,7 +93,7 @@ TQL> CREATE TABLE "supplier" (
 ```
 
 The system does not use primary keys as sharding keys by default. If you specify
-the `PARTION BY HASH` statement with a `HASH` greater than 1 (one) _but omit the
+the `PARTITION BY HASH` statement with a `HASH` greater than 1 (one) _but omit the
 `KEY` parameter_ ThoughtSpot shards the table randomly. This is not recommended;
 avoid this by always ensuring you specify the `KEY` parameter with a HASH
 greater than 1 (one).

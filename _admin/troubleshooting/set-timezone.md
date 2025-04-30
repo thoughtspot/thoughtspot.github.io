@@ -1,13 +1,13 @@
 ---
 title: [Check the timezone]
-keywords: tbd
-tags: [time]
+summary: Learn how to check the timezone your ThoughtSpot installation is running on.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 ThoughtSpot comes configured with the timezone where it is to be installed. Data
 is imported based on the timezone of the node from which `tsload` or `tql` is
-run. To see the timezone your ThoughtSpot node is running under, log into the
+run. To see the timezone your ThoughtSpot node is running under, log in to the
 server as the `thoughtspot` user and run the `date` command:
 
 ```

@@ -1,8 +1,8 @@
 ---
 title: [Data types]
-tags: [TQL, Geomaps,dates,time]
-keywords: "ETL,data types, Administrative Regions"
-last_updated: tbd
+
+
+last_updated: 2/25/2020
 summary: "ThoughtSpot supports the common data types."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -27,7 +27,7 @@ The tables you create to receive the data must have the same number of columns a
   <tr>
     <td>Character</td>
     <td><code>VARCHAR(*n*)</code></td>
-    <td>Specify the maximum number of characters, as in <code>VARCHAR(255)</code>. The size limit is 1GB for <code>VARCHAR</code> values.</td>
+    <td>Specify the maximum number of characters, as in <code>VARCHAR(255)</code>. The size limit is 64MB for <code>VARCHAR</code> values.</td>
   </tr>
   <tr>
     <td>Floating point</td>
@@ -51,7 +51,7 @@ The tables you create to receive the data must have the same number of columns a
   </tr>
 </table>
 
-{% include warning.html content="There is a 1GB limitation on the number of characters for `VARCHAR`. If you have any `VARCHAR` data that exceeds this limit, the entire load will fail."%}
+{% include warning.html content="There is a 64MB limitation on the number of characters for `VARCHAR`. If you have any `VARCHAR` data that exceeds this limit, the entire load will fail."%}
 
 ## Geographical data types
 
@@ -87,7 +87,7 @@ These data types can be designated as geographical data, which enables them to b
 * `LONGITUDE` which must be used with `LATITUDE`
   -   122.142103
   -   103.848865
-* `ZIP_CODE` for zip codes and zip codes +4 in the United States
+* `ZIP_CODE` for zip codes in the United States
   -   `po_name`: MT MEADOWS AREA
   -   `ZIP`: "00012"
   -   `zip2`: 12

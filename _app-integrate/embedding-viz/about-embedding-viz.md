@@ -1,14 +1,14 @@
 ---
 title: [Understand embedding]
-keywords: embedding,authentication,SAML,embed
-last_updated: tbd
+summary: "This page provides an explanation of what you must
+consider when embedding ThoughtSpot."
+last_updated: 11/18/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Embedding allows you to embed all or part of ThoughtSpot in another client
-application. This page provides an explanation of what you must
-consider when embedding ThoughtSpot
+application.
 
 ## Decide what to embed and where
 
@@ -57,6 +57,18 @@ Only Extended Enterprise installation can use ThoughtSpot's embed functionality.
 ThoughtSpot Enterprise installations must also work with ThoughtSpot Support to
 enable embed before using this functionality.
 
+### Optional settings for embedding
+
+There are some settings that apply to embedding which ThoughtSpot Support or your other ThoughtSpot technical contact can make for you.
+
+One of these involves what happens when a user clicks on a link within the data. When your data includes URLs, they display as clickable links in ThoughtSpot tables. By default, clicking on a link opens the URL in a separate tab. But there is a system-wide setting that can be changed to open the links within the context in which they appear.
+
+Changing this setting opens the links:
+
+|Link type|Opens in|
+|Link in search result table in ThoughtSpot|Same browser tab as ThoughtSpot application|
+|Link in table embedded in an iFrame|Same iFrame that contains the table|
+|Link in full ThoughtSpot application embedded in an iFrame|Same iFrame that contains the application|
 
 ## Choose an authentication methodology
 
@@ -91,7 +103,7 @@ users.
 
 A trusted authenticator application or service obtains a token from ThoughtSpot.
 This token is used to obtain trust from other, third-party client applications
-that need access to ThoughtSpot. In the scenario below, the trust authenticator
+that need access to ThoughtSpot. In the following scenario, the trust authenticator
 forwards requests for ThoughtSpot data from client applications to ThoughtSpot.
 
 ![]({{ site.baseurl }}/images/authentication.png "Authentication flow")

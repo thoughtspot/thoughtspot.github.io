@@ -1,34 +1,20 @@
 ---
 title: [Azure configuration options]
-keywords: Azure, configuration
-tags: [performance]
-last_updated: tbd
+summary: "ThoughtSpot offers several Microsoft Azure instance types."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot engineering has performed extensive testing of the ThoughtSpot
-appliance on various Azure configurations for best performance, load balancing,
-scalability, and reliability.
+ThoughtSpot can be deployed in your Azure environment by deploying compute (VM) instances in your VNET as well as an underlying persistent storage infrastructure. Currently we support Premium SSD Managed Disks for persistent storage. For more information, see [Managed Disks pricing](https://azure.microsoft.com/en-us/pricing/details/managed-disks/){:target="_blank"} in Microsoft's Azure documentation.
 
-You can find information here on which configuration of memory, CPU, storage,
-and networking capacity you should be running for your instances. There are also
-details on how to configure your scope and permissions.
+All Azure VMs (nodes) in a ThoughtSpot cluster must be in the same availability zone
+(and, therefore, also in the same region). ThoughtSpot does not support deploying VMs( nodes) of the same cluster across availability zones. For more information, see [What are Availability Zones in Azure?](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview){:target="_blank"} in Microsoft's Azure documentation.
 
-## Hardware configurations
+## ThoughtSpot Azure instance types
 
-The following Azure resources are required for provisioning a Thoughtspot image
-in Azure:
-- Virtual Machine Size: Standard E64s v3 (64 vcpus, 432 GB memory)
-- Storage: Two 1TB SSD disks
-- Network Ports: See PORTS SETTINGS
-
-## Data capacity per node
-
-ThoughtSpot sizes nodes in multiples of 200 GB of data in Azure. This size
-refers to the amount of data in the CSV files you will be loading into
-ThoughtSpot. The 200GB number takes into account all replication of data done
-automatically by ThoughtSpot to provide redundancy and fast performance.
-
-You can start with 200 GB, and add increments of 200 GB each time your data
-capacity needs increase. You can also choose to start off with more than 200 GB
-of data, as long as you know the best fit configuration for your data volume.
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume |
+| --- | --- | --- |--- |
+| 200 GB | E64sv3 | 64/432 | 2x1 TB |
+| 100 GB | E32sv3 | 32/256 | 2X 400 GB |
+| 20 GB | E16sv3 | 16/128 | 2X 400 GB |
+| 120 GB | D64v3 | 64/256 | 2X 1 TB |

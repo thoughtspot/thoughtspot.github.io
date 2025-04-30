@@ -1,73 +1,79 @@
 ---
-title: [Refine a search with a worksheet]
-tags: [bestpractices]
-keywords: search,worksheet,aggregated
-last_updated: tbd
-summary: "If you want to search on top of another search, try saving your search as a worksheet. Then, you can use the saved worksheet as a data source for a new search."
+title: [Understand views]
+
+
+last_updated: 11/2/2018
+summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Worksheets can be created from tables or from searching. You can also create a
-worksheet from a search. This is an advanced form of searching. A worksheet
-created from a search is called an _aggregated worksheet_. Aggregated worksheets
-are effectively the same as any worksheet.
+## Introduction to views
 
-When you do a search on a data source, ThoughtSpot is only able to aggregate one
+{% include note.html content="Prior to ThoughtSpot version 5.0, Views were known as Aggregated Worksheets. When you upgrade to version 5.0 or later versions, any pre-existing Aggregated Worksheets will be converted to Views for you automatically. The functionality remains the same, but the name has changed." %}
+
+You may have noticed that when you do a search on a data source, ThoughtSpot is only able to aggregate one
 column by one other column. Because of this, you may come across searches you
 can't do in one pass, because they are essentially nested queries. But you can
-create the equivalent of nested queries using an aggregated worksheet, which is
-essentially an answer that you save as a worksheet.
+create the equivalent of nested queries using a view, which is
+an answer that you have saved for the purpose of building other searches on top of it.
 
-You can use search saved as a worksheet just like any other data source. You
+You can use a view just like any other data source. You
 can even link it to other sources by defining a relationship. When you save an
-answer as a worksheet, and then use it as a source in a new search, it is
+answer as a view, and then use it as a source in a new search, it is
 similar to doing a nested query in SQL, only much easier to create.
 
-To create a worksheet from a search, you must belong to a group that has the
-privilege **Has administration privileges** or **Can Manage Data**. If you are
-not able to create aggregated worksheets, contact your administrator and request
-the **Can Manage Data** privilege.
+To create a view, you must belong to a group that has the
+privilege **Can administer ThoughtSpot** or **Can manage data**. If you are
+not able to create views, contact your administrator and request
+the **Can manage data** privilege.
 
-## Aggregated worksheet workflow
+## View workflow
 
 Suppose you have created a search on the sales fact table that shows the top ten
 Sales Reps by revenue for the first quarter. Then you want to do some further
 investigations on that set of data, like ranking them by how much they
 discounted a specific product using data from the orders fact table. Unless you
-save your first answer as a worksheet, certain explorations like this won't be
+save your first answer as a view, certain explorations like this won't be
 possible. If you want to do this, here are the steps at a high level:
 
-1. Create the first search, and [save it as an aggregated worksheet](create-aggregated-worksheet.html#).
-2. Link your worksheet to any other data sources you'll need.
-3. Create a new search that includes your aggregated worksheet and the other sources you linked with it.
-4. You may want to create a new worksheet that includes these data sources.
+1. Create the first search, and [save it as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#).
 
-    This will make it easy for people to search using the same group of
-    aggregated worksheet and tables that you created.
+2. [Create relationships]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#) to connect your view with any other data sources you need.
 
-## Best practices for using aggregated worksheets
+3. Create a new search that includes your view and the other sources you linked with it.
 
-Only users with administrative privileges are able to create aggregated
-worksheets and link them. Users that create aggregated worksheets should keep in
-mind best practices for creating a worksheet and the boundaries around the final
+4. You may want to [create a new worksheet]({{ site.baseurl }}/admin/worksheets/about-worksheets.html#) that includes all these data sources.
+
+    Creating a worksheet will make it easier for people to search using your
+    view and any related tables.
+
+## Best practices for using views
+
+Only users with the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) can create views and link them. Users that create views should keep in mind best practices for creating a worksheet and the boundaries around the final
 worksheet size.
 
-You can't link an aggregated worksheet with a sharded table. If you do this and
-try to search on it, you will get an error.
+{% include note.html content="Views do not support row level security, so all users of a view will be able to see all the data it contains." %}
 
-To be able to join an aggregated worksheet with a base table, your installation
-must be configured to allow the behavior. The aggregated worksheet cannot have
-more than 5 tables involved. Moreover, the number of rows in the final
-aggregated worksheet cannot be greater than 1000.
+To be able to join a view with a base table, your installation
+must be configured to allow this. The view cannot have
+more than 5 tables involved, and the number of rows in the
+view cannot be greater than 1000.
 
 The order of the objects being linked (joined) matters, this is because joins are
-directional. The table/aggregated worksheet with the foreign key needs to occur
-in the first (left) position. The table with the primary key should be in the
+directional. The table or view with the foreign key needs to occur
+in the first (left) position. The table or view with the primary key should be in the
 second (right) position.
 
-For the best performance, the final aggregated worksheet should have 50 or fewer
+For the best performance, views should have 50 or fewer
 columns and no more than 10 million rows. Exceeding these boundaries can make
-your worksheet creation slow or error prone.
+your view slow. You can remedy this by materializing it.
 
 You can use an ETL (extract, transform, load) process to circumvent these
 limitations.
+
+## Related Information
+
+-   [More view scenario examples]({{ site.baseurl }}/complex-search/more-example-scenarios.html#)
+-   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#)  
+-   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html#)
+-   [Materialized views]({{ site.baseurl }}/admin/loading/materialized-views.html#)

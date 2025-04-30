@@ -1,62 +1,99 @@
 ---
-title: [Public API reference]
-keywords: REST,API,data,"REST API"
-last_updated: tbd
+title: [Session API]
+summary: "The Session APIs enable you to manage the sessions of existing users."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This object has two POST calls, one for `login` and one for `logout`.
 
+## Managing login
+Use this API to authenticate and login a user.
 
-## POST /tspublic/v1/session/login
+### Resource URL
+<code class="api-method-post">post</code> /tspublic/v1/session/login
 
-This call takes a `APPLICATION_FORM_URLENCODED` payload containing a
-`username`, a `password`, and an optional `rememberme` flag. If you do not
-supply the optional flag, the system uses the default `false` value.
-
-### Inputs
+### Request Parameters
 
 <table>
    <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
-    <tr> <td><code>username</code></td>  <td>Username of the user to log in as.</td> </tr>
-    <tr> <td><code>password</code></td>  <td>Password of the user to log in as.</td> </tr>
-    <tr> <td><code>rememberme</code></td>  <td>A flag indicating if the user session needs to be remembered. Defaults to <code>false</code>.</td></tr>
+    <tr> <td><code>username</code></td> <td>string</td> <td>Username of the user.</td> </tr>
+    <tr> <td><code>password</code></td> <td>string</td> <td>Password of the user.</td> </tr>
+    <tr> <td><code>rememberme</code></td> <td>boolean</td> <td>A flag to remember the user session. The system default is <code>false</code>.</td></tr>
   </tbody>
 </table>
 
-### Returns
+### Request Example
+##### cURL
 
-No object is returned.
+```
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'username=test&password=fhfh2323bbn&rememberme=false' 'https://<instance>/callosum/v1/tspublic/v1/session/login'
+```
 
-### Status Codes
+##### Request URL
 
-| Code| Description |
-|------|-----|
-| `204` | On successful login.|
-| `401` | On failure to login |
+```
+https://<instance>/callosum/v1/tspublic/v1/session/login
+```
+### Response Example
+```
+Not applicable
+204 - Successful login
+```
 
+## Managing logout
 
-## POST /tspublic/v1/session/logout
+Use this API to log a current user out of an existing session. The user details are captured from the active user session.
 
-This call logs a user out of an existing session.
+### Resource URL
+<code class="api-method-post">post</code> /tspublic/v1/session/logout
 
-### Returns
+### Request Example
+##### cURL
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/session/logout'
+```
 
-No object is returned.
+##### Request URL
 
-### Status Codes
+```
+https://<instance>/callosum/v1/tspublic/v1/session/logout
+```
 
-| Code| Description |
-|------|-----|
-| `204` | On successful logout.|
-| `401` | On failure or when unauthorized to call.|
+### Response Example
+```
+Not applicable
+204 - Successful logout
+```
+
+<!--## Error Codes
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+   <tr> <td><code>10000</code></td>  <td>Internal server error.</td> <td><code>500</code></td></tr>
+    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Login or logout failure. Unauthorized.</td><td><code>401</code></td></tr>
+  </tbody>
+</table>-->

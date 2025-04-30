@@ -1,14 +1,16 @@
 ---
 title: [Configure periodic backups]
-keywords: tbd
-last_updated: tbd
-toc: false
+summary: Learn how to configure automatic periodic backups.
+last_updated: 2/27/2020
+toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can configure ThoughtSpot to backup automatically at specified times. The policy allows you to control the type, frequency, retention periods (first-in-first-out), and output location for a periodic backup.
 
-A periodic backup uses the same steps as creating a backup manually. However, you do not need to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
+A periodic backup uses the same steps as creating a backup manually. However, you do not have to specify a snapshot name, the system uses the most recent backup. You can backup to a local file system or [mount a NAS (network attached storage) file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#) to hold the backup. A NAS is recommended. Make sure you have adequate space to store the number of backups you want to archive.
+
+## Default policy format
 
 The format for a policy includes the following:
 
@@ -37,6 +39,7 @@ directory: "NAME"
 storage_type: NAS | LOCAL  
 ```
 
+## Before you begin
 Before creating a policy, make sure you have read [Understand backup/snapshot
 schedules](how-to-create-a-schedule.html) for information on configuring a
 `schedule` element. In addition, you must specify:
@@ -48,6 +51,8 @@ schedules](how-to-create-a-schedule.html) for information on configuring a
 |`directory`|The location on the disk to place the backup.|
 |`storage_type`|The type of storage you are using. `NAS` storage is recommended for `FULL` backups.|
 
+## Create a backup policy
+
 Backups cannot start when another backup is still running. So, choose a
 reasonable frequency for the mode in you policy. For example, a `FULL` backup
 takes longer than a `DATALESS` backup. Consider the load on the system when
@@ -55,11 +60,13 @@ configuring. Do not backup up when the system would experience a heavy load. For
 example, you may want to take `FULL` backups late in the evening or on weekends.
 
 The retention system deletes the oldest stored backup and the corresponding
-snapshot on a first-in first-out basis (FIFO). This means that if you set a
+snapshot on a first-in-first-out basis (FIFO). This means that if you set a
 bucket retention of 1 the system stores a single backup at any one time. The
 system  deletes the older backup after the new full backup is successful.
 
-To configure periodic backups:
+### Configure using tscli
+
+To configure periodic backups using the tscli:
 
 1. Log in to the Linux shell using SSH.
 2. Find a directory with enough disk space to support the `retention_policy number` you configure.
@@ -76,7 +83,7 @@ To configure periodic backups:
 
 5. Verify the policy using the `tscli backup periodic-config <name>` command.
 
-## Doing more with backup
+### Doing more with backup
 
 The following table lists some additional backup commands you can use.
 

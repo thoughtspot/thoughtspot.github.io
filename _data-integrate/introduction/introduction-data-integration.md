@@ -1,6 +1,5 @@
 ---
 title: [Introduction to Data Integration]
-keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -46,10 +45,6 @@ each method:
   </thead>
   <tbody>
     <tr>
-      <td>ThoughtSpot Data Connect</td>
-      <td>ThoughtSpot Data Connect is a web interface for connecting to databases and applications to move data into ThoughtSpot. You can choose which tables and columns to import and apply data transformations. You can also set up recurring loads. See the ThoughtSpot Data Connect Guide for details.</td>
-    </tr>
-    <tr>
       <td>ThoughtSpot Loader (tsload)</td>
       <td>ThoughtSpot Loader is a command line tool to load CSV files into an existing database schema in ThoughtSpot. This is the fastest way to load extremely large amounts of data, and it can be run in parallel. You can also use this method to script recurring loads. See the ThoughtSpot Administrator Guide for details.</td>
     </tr>
@@ -70,7 +65,7 @@ each method:
       <td>You can use the ODBC driver to connect to SSIS and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
     <tr>
-      <td><a href="{{"/data-integrate/pentaho/about-pentaho.html" | prepend: site.baseurl}}">Connect to Pentaho</a></td>
+      <td><a href="{{"/data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html" | prepend: site.baseurl}}">Connect to Pentaho</a></td>
       <td>You can use the JDBC driver to connect to Pentaho and import data into ThoughtSpot. Basic instructions are included in this guide.</td>
     </tr>
   </tbody>
@@ -79,7 +74,9 @@ each method:
 
 ## Where to go next
 
+-   **[Server-side prerequisites for using JDBC/ODBC to import data]({{ site.baseurl }}/data-integrate/introduction/jdbc-odbc-prereqs.html)**  
+You must follow setup prerequisites for importing data using JDBC/ODBC.
 -   **[About the ODBC Driver]({{ site.baseurl }}/data-integrate/clients/about-odbc.html)**  
 You can use the ThoughtSpot ODBC driver to bring data into ThoughtSpot from your ETL tool or database.
 -   **[About the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)**  
- Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.
+ Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support through a JDBC driver that we provide.
