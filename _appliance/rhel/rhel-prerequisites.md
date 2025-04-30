@@ -6,10 +6,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
-| &#10063; | [2. Install RHEL version 7.7 on all hosts](#install-rhel) |
-| &#10063; | [3. Enable the hosts to download RHEL packages](#enable-hosts) |
-| &#10063; | [4. Enable an Ansible Control Server](#enable-ansible) |
-| &#10063; | [5. Partition the hosts](#partition-hosts) |
+| &#10063; | [2. Partition the hosts](#partition-hosts) |
+| &#10063; | [3. Install RHEL version 7.7 on all hosts](#install-rhel) |
+| &#10063; | [4. Enable the hosts to download RHEL packages](#enable-hosts) |
+| &#10063; | [5. Enable an Ansible Control Server](#enable-ansible) |
 | &#10063; | [6. Disable SELinux](#disable-selinux) |
 
 {: id="set-up-hosts"}
@@ -22,46 +22,6 @@ Set up hosts for the ThoughtSpot cluster on your chosen platform. Please refer t
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 - [VMware]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
-
-{: id="install-rhel"}
-## Install RHEL on hosts
-
-ThoughtSpot is certified with RHEL version 7.7; we **do not** support other versions of RHEL, including 8 and 8.1.
-
-{: id="enable-hosts"}
-## Enable the hosts to download RHEL packages
-
-Make sure that you can download RHEL packages to all hosts, either from the [official package repositories](#official-repositories), or from a [mirror repository](#mirror-repositories) owned and managed by your organization.
-
-If the cluster is offline, and there is no mirror repository in your organization, please contact ThoughtSpot Support.
-
-{: id="official-repositories"}
-**Official package repositories**
-
-If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. You can then proceed to download [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories.
-
-{: id="mirror-repositories"}
-**Internal mirror repository**
-
-If the hosts of your ThoughtSpot cluster have access to an internal repository that mirrors the public repositories, copy the [Yum
-](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories to your hosts.
-
-{: id="repositories"}
-**Repositories**
-
-{: id="yum-repositories"}
-- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95`, `rhel`, `rhel-optional`, `rhel-extras`.
-
-{: id="python-repositories"}
-- **Python repository**: for Python, enable the `PyPI` repository.
-
-{: id="r-repositories"}
-- **R repository**: for R, enable the `CRAN` repository.
-
-{: id="enable-ansible"}
-## Enable an Ansible Control Server
-
-Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both `rsync` and Ansible on the Ansible Control Server host.
 
 {: id="partition-hosts"}
 ## Partition the hosts
@@ -107,6 +67,46 @@ Note that the size of the root drive on appliances is limited to 200GB; the part
 </tr>
 </tbody>
 </table>
+
+{: id="install-rhel"}
+## Install RHEL on hosts
+
+ThoughtSpot is certified with RHEL version 7.7; we **do not** support other versions of RHEL, including 8 and 8.1.
+
+{: id="enable-hosts"}
+## Enable the hosts to download RHEL packages
+
+Make sure that you can download RHEL packages to all hosts, either from the [official package repositories](#official-repositories), or from a [mirror repository](#mirror-repositories) owned and managed by your organization.
+
+If the cluster is offline, and there is no mirror repository in your organization, please contact ThoughtSpot Support.
+
+{: id="official-repositories"}
+**Official package repositories**
+
+If the hosts of your ThoughtSpot cluster can access external repositories, either directly or through a proxy, your cluster is online. You can then proceed to download [Yum](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories.
+
+{: id="mirror-repositories"}
+**Internal mirror repository**
+
+If the hosts of your ThoughtSpot cluster have access to an internal repository that mirrors the public repositories, copy the [Yum
+](#yum-repositories), [Python](#python-repositories), and [R](#r-repositories) package repositories to your hosts.
+
+{: id="repositories"}
+**Repositories**
+
+{: id="yum-repositories"}
+- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95`, `rhel`, `rhel-optional`, `rhel-extras`.
+
+{: id="python-repositories"}
+- **Python repository**: for Python, enable the `PyPI` repository.
+
+{: id="r-repositories"}
+- **R repository**: for R, enable the `CRAN` repository.
+
+{: id="enable-ansible"}
+## Enable an Ansible Control Server
+
+Configure an Ansible Control Server, on a separate host, to run the Ansible playbook that ThoughtSpot supplies. You must install both `rsync` and Ansible on the Ansible Control Server host.
 
 {: id="disable-selinux"}
 ## Disable SELinux

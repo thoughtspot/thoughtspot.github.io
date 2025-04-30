@@ -13,7 +13,7 @@ All Azure VMs (nodes) in a ThoughtSpot cluster must be in the same availability 
 ## ThoughtSpot Azure instance types
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume | Required root volume capacity |
-| --- | --- | --- |--- | -- |
+| --- | --- | --- |--- | --- |
 | 200 GB | E64sv3 | 64/432 | 2x1 TB | 200 GB for each node |
 | 100 GB | E32sv3 | 32/256 | 2X 400 GB | 200 GB for each node |
 | 20 GB | E16sv3 | 16/128 | 2X 400 GB | 200 GB for each node |

@@ -1,7 +1,7 @@
 ---
 title: [GCP configuration options]
 summary: "ThoughtSpot can be deployed using several different GCP instance types."
-last_updated: 3/17/2020
+last_updated: 1/9/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -35,9 +35,9 @@ All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
 ![]({{ site.baseurl }}/images/persistent-storage-ssd-gcs.svg "GCP SSD and GCS Persistent Storage")
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume | Required root volume capacity |
-| --- | --- | --- |--- | -- |
+| --- | --- | --- |--- | --- |
 | 208 GB | n1-highmem-64 | 64/416 | 1X 500 GB | 200 GB for each node |
 | 312 GB | n1-highmem-96 | 96/624 | 1X 500 GB | 200 GB for each node |
 | 100 GB | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
 | 20 GB | n1-highmem-16 | 16/122 | 1X 500 GB | 200 GB for each node |
-| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB | 200 GB for each node |
+| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB | 200 GB for each node |    

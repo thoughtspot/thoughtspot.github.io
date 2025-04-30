@@ -22,14 +22,15 @@ ThoughtSpot supports maps many countries. Please see the complete list in [Geo M
 
 Here is a table that shows which GeoType data can be displayed using which geo chart type.
 
-|GeoType|Geo chart type|Notes|
-|-------|--------------|-----|
-|Country|Geo area (default), geo bubble, geo heatmap| Can also be regions.|
-|County|Geo area (default), geo bubble, geo heatmap| Only for counties in the United States.|
-|Point|Geo bubble (default), geo heatmap| Must use both latitude and longitude columns.|
-|State|Geo area (default), geo bubble, geo heatmap| Only for states in the United States.|
-|Zipcode|Geo bubble (default), geo heatmap| Zip codes in the United States.|
-|Other sub-nation regions|Geo area (default), geo bubble, geo heatmap| The display depends on the type of administrative region.|
+|GeoType|Data Type | Geo chart type|Notes|
+|-------|---|--------------|-----|
+|Country|VARCHAR|Geo area (default), geo bubble, geo heatmap| Can also be regions.|
+|County|VARCHAR|Geo area (default), geo bubble, geo heatmap| Only for counties in the United States.|
+|Latitude (point)|VARCHAR or DOUBLE|Geo bubble (default), geo heatmap| Must use both latitude and longitude columns.|
+|Longitude (point)|VARCHAR or DOUBLE|Geo bubble (default), geo heatmap| Must use both latitude and longitude columns.|
+|State|VARCHAR|Geo area (default), geo bubble, geo heatmap| Only for states in the United States.|
+|Zipcode|VARCHAR|Geo bubble (default), geo heatmap| Refer to the [Geo Map reference]({{ site.baseurl }}/reference/geomap-reference.html) to see which countries have supported zip codes.|
+|Other sub-nation regions|VARCHAR|Geo area (default), geo bubble, geo heatmap| The display depends on the type of administrative region.|
 
 For data to display in geo charts, your administrator must configure it
 as geographical data. If you you don't get an expected map

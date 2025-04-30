@@ -10,18 +10,18 @@ Deploying the ThoughtSpot mobile app to your users allows them to access their d
 ## Deployment options
 
 There are two options for your users to download the ThoughtSpot mobile app:
-- App Store for iOS
+- App Store for iOS or Google Play for Android
 - Your MDM platform
 
-### App Store for iOS
-The ThoughtSpot app is available from the App Store for iOS. Your users can download it directly from there.
+### App Store for iOS or Google Play for Android
+The ThoughtSpot app is available from the App Store and Google Play. Your users can download it directly from there.
 
 ### Mobile device or app management platform
 There are two ways to provide the ThoughtSpot app to your users with your MDM platform:
 
-#### Option 1 [Recommended]: Provide a link to the app in the App Store for iOS.
+#### Option 1 [Recommended]: Provide a link to the App Store or Google Play.
 
-Almost all of the platforms allow you to link to the app in the App Store. With this option, your users download it directly and automatically receive the latest updates, when they are available.
+Almost all of the platforms allow you to link to the ThoughtSpot app in either app store. With this option, your users download it directly and automatically receive the latest updates, when they are available.
 
 To add a link to the ThoughtSpot app on your management platform, refer to the following platform-specific information:
 
@@ -31,15 +31,15 @@ To add a link to the ThoughtSpot app on your management platform, refer to the f
   - [Intune](https://docs.microsoft.com/en-us/intune/store-apps-ios){:target="_blank"}
   - [Cisco Meraki](https://documentation.meraki.com/SM/Apps_and_Software/Deploying_Store_Apps_for_iOS%2F%2FmacOS_and_Android){:target="_blank"}
 
-#### Option 2: Provide a custom .ipa file of the ThoughtSpot app.
+#### Option 2: Provide a custom application package file.
 
-  You can upload a custom .ipa file of the ThoughtSpot app to your management platform.
+  You can upload custom .ipa (iOS) and .apk (Android) files of the ThoughtSpot app to your management platform.
 
 ##### Before you begin
-  - Your company must have an Apple developer enterprise account.
+  - Your company must have an Apple/Android developer enterprise account.
   - Contact ThoughtSpot at [mobile@thoughtspot.com](mailto:mobile@thoughtspot.com?subject=ThoughtSpot%20Mobile%20App%20.IPA%20Request) to get the ThoughtSpot .ipa file.
 
-To upload the ThoughtSpot .ipa file to your management platform, refer to the following platform-specific information:
+To upload the ThoughtSpot .ipa/.apk file to your management platform, refer to the following platform-specific information:
   - [Workspace ONE (AirWatch)](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/1811/VMware-Workspace-ONE-UEM-Mobile-Application-Management/GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL.html#GUID-AWT-CONFIG-INTERNAL-APPS-LOCAL){:target="_blank"}
   - [MobileIron](http://mi.extendedhelp.mobileiron.com/53/all/en/desktop/App_Catalog.htm){:target="_blank"} (Scroll to “Adding an In-house app”)
   - [XenMobile](https://docs.citrix.com/en-us/citrix-endpoint-management/apps.html#add-an-enterprise-app){:target="_blank"}

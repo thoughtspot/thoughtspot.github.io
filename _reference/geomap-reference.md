@@ -130,6 +130,22 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<!--Since 6.1.0-->
+<dlentry>
+<dt>Norway</dt>
+<dd>
+<details><summary><strong>County</strong></summary>
+{% include content/geo/no-county.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/no-municipality.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/no-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Poland</dt>
@@ -158,6 +174,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <!-- Since 5.3.0 -->
 <details><summary><strong>Post Code</strong></summary>
 {% include content/geo/se-post-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Switzerland</dt>
+<dd>
+<details><summary><strong>Canton</strong></summary>
+{% include content/geo/ch-canton.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/ch-district.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/ch-postcode.md %}
 </details>
 </dd>
 </dlentry>

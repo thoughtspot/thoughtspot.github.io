@@ -1,7 +1,7 @@
 ---
 title: [Deploying on the Dell appliance]
 summary: "Follow these steps to deploy ThoughtSpot on your Dell appliance."
-last_updated: 3/3/2020
+last_updated: 4/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,6 +13,8 @@ Follow the steps in this checklist to deploy ThoughtSpot on your Dell appliance.
 | &#10063; | [Step 4: Configure management settings]({{ site.baseurl }}/appliance/hardware/configure-management-dell.html) |
 | &#10063; | [Step 5: Configure nodes]({{ site.baseurl }}/appliance/hardware/configure-nodes-dell.html) |
 | &#10063; | [Step 6: Install cluster]({{ site.baseurl }}/appliance/hardware/install-cluster-dell.html) |
+
+This guide explains how to deploy ThoughtSpot on a Dell appliance, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on a Dell appliance using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 ## Related information
 Use these references to aid you in successful installation and administration of ThoughtSpot.

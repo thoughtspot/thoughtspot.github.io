@@ -1,7 +1,7 @@
 ---
 title: [VMware configuration overview]
 summary: "You can host ThoughtSpot on VMware."
-last_updated: 2/20/2020
+last_updated: 4/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,8 +17,7 @@ the components of a VMware and ThoughtSpot architecture:
 
 ![]({{ site.baseurl }}/images/vmware-components.png)
 
-{% include note.html content="This is a generic representation; Only CentOS-based
-virtual machines are supported with ThoughtSpot." %}
+{% include note.html content="This is a generic representation. ThoughtSpot supports deployment on its CentOS-based image, or an RHEL 7.7 image that your organization manages internally." %}
 
 Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
@@ -37,7 +36,7 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 	      <th scope="col">Per VM user data capacity</th>
 	      <th scope="col">CPU/RAM</th>
 	      <th scope="col">Data disk</th>
-				<th scopt="col">Required root volume capacity</th>
+				<th scope="col">Required root volume capacity</th>
         </tr>
 	    <tr>
 	      <td>20 GB</td>
@@ -48,13 +47,13 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 	    <tr>
 	      <td>100 GB</td>
 	      <td>32/256 GB</td>
-	      <td>800 GB</td>
+	      <td>2x 400 GB</td>
 				<td>200 GB for each node</td>
         </tr>
 	    <tr>
 	      <td>256 GB</td>
 	      <td>72/512 GB</td>
-	      <td>6 TB</td>
+	      <td>2x 2 TB</td>
 				<td>200 GB for each node</td>
         </tr>
 		<tr>

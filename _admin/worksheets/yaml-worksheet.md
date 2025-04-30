@@ -236,7 +236,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
   <dlentry id="is_attribution_dimension">
     <dt>is_attribution_dimension</dt>
-    <dd>Controls is the column is an attribution dimension<br>
+    <dd>Controls if the column is an attribution dimension<br>
       Used in managing chasm traps.<br>
       Possible values: <code>true</code> by default, <code>false</code> to designate a column as not producing meaningful attributions across a chasm trap<br>
       Default: <code>true</code><br>

@@ -1,6 +1,6 @@
 ---
 title: ["View an answer from an expert"]
-last_updated: 3/23/2020
+last_updated: 3/20/2020
 summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

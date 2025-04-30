@@ -7,12 +7,15 @@ permalink: /:collection/:path.html
 ---
 The ThoughtSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.
 
-Version 1.2 now supports R charts, enhanced chart-viewing for iPad, and quick support. For details, see [Mobile release notes]({{ site.baseurl }}/admin/mobile/notes-mobile.html#).
+Version 1.3 is now available with a fresh, new design and new support for Android.
+
+<!-- Version 1.2 now supports R charts, enhanced chart-viewing for iPad, and quick support. For details, see [Mobile release notes]({{ site.baseurl }}/admin/mobile/notes-mobile.html#). -->
 
 ## Requirements
 
 - User account on a ThoughtSpot cluster running release 5.1 or later
-- Apple iOS version 9.0 or later (iPad and iPhone only)
+- Apple iOS version 9.0 or later (iPad and iPhone)
+- Android 6.0 or later
 
 ## Features
 

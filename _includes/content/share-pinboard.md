@@ -2,11 +2,9 @@
 
 When you share a Pinboard, you share a live link to the Pinboard that reflects the latest version of it. When someone else views the Pinboard you shared with them, they see the most recently saved version with the most recent data.
 
-You do not have to be an administrator or the Pinboard owner to share saved Pinboards. Any user can share them, based on the access levels the user has.
+You do not have to be an administrator or the Pinboard's owner to share saved Pinboards. Any user can share them, based on the access levels the user has.
 
-
-
-You can share a pinboard from the list of pinboards on [the main pinboards page](#share-mainpinboardpage), or from [the pinboard itself](#share-pinboardpage).
+You can share a Pinboard from the list of Pinboards on [the main pinboards page](#share-mainpinboardpage), or from [the pinboard itself](#share-pinboardpage).
 
 {: id="share-mainpinboardpage"}
 ## Share from the Pinboards page
@@ -31,7 +29,7 @@ To share a Pinboard from the main Pinboard page, follow these steps.
 6. [Specify permissions](#specify-permissions).  
 
 {: id="share-pinboardpage"}
-## Share from within a Pinboard
+## Share from within a pinboard
 To share a Pinboard from within the Pinboard, follow these steps.
 
 1. Configure the Pinboard to look as it must appear when you share it.

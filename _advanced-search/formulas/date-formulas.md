@@ -1,7 +1,7 @@
 ---
 title: [About date formulas]
 summary: Learn about date formulas.
-last_updated: 11/15/2019
+last_updated: 4/7/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -24,7 +24,7 @@ Calculating date formulas is useful when you want to compare data from different
 The following example shows you how to create formulas that you can use to compare data from this week to last week.
 
 - The formula for this week is: `week ( today () ) - week (date)`
-- The formula for last week is: `diff_days ( week ( today ) ) , week ( date ) )`
+- The formula for last week is: `diff_days ( week ( today () ) ) , week ( date ) )`
 
 ### Example 2
 
@@ -32,7 +32,7 @@ The following example shows you how to calculate the percent increase from the l
 
 1. Create the formula: `this week revenue = sum ( if ( this week ) then revenue else 0 )`
 2. Then create the formula: `last week revenue = sum ( if (last week ) then revenue else 0 )`
-3. Use [nested formulas]({{ site.baseurl }}/complex-search/about-nested-formulas.html#) to calculate the percent increase by creating a parent formula: `percent increase = ( ( last week revenue - this week revenue) / last week revenue ) \* 100`
+3. Use [nested formulas]({{ site.baseurl }}/complex-search/about-nested-formulas.html#) to calculate the percent increase by creating a parent formula: `percent increase = ( ( this week revenue - last week revenue) / last week revenue ) * 100`
 
 ## Fiscal and Gregorian calendars
 
@@ -57,10 +57,10 @@ Your ThoughtSpot administrator and ThoughtSpot Support can
 to start on any month. If the `fiscal` year is not explicitly configured in the system,
 `fiscal` defaults to January, the same as the Gregorian `calendar`.
 
-For example, the formula `month_number_of_quarter (05/01/2014)` would return `2`
+For example, the formula `month_number_of_quarter (05/31/2014)` would return `2`
 based on the default Gregorian calendar, whereas the formula
-`month_number_of_quarter (05/01/2014, 'fiscal')` would return `1` if your
-administrator has configured the fiscal calendar to start at May.
+`month_number_of_quarter (05/31/2014, 'fiscal')` would return `1` if your
+administrator has configured the fiscal calendar to start in May.
 
 ## Related information
 
