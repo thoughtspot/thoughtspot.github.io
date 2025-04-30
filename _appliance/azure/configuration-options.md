@@ -2,7 +2,7 @@
 title: [Azure configuration options]
 
 
-last_updated: 6/16/2020
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,11 +13,9 @@ All Azure VMs (nodes) in a ThoughtSpot cluster must be in the same availability 
 
 ## ThoughtSpot Azure instance types
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume | Required root volume capacity |
-| --- | --- | --- |--- | --- |
-| 200 GB | E64s_v3 | 64/432 | 2x1 TB | 200 GB for each node |
-| 100 GB | E32s_v3 | 32/256 | 2X 400 GB | 200 GB for each node |
-| 20 GB | E16s_v3 | 16/128 | 2X 400 GB | 200 GB for each node |
-| 120 GB | D64_v3 | 64/256 | 2X 1 TB | 200 GB for each node |
-
-For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/128GB RAM and 32CPU/256GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Premium SSD Managed Disk volume |
+| --- | --- | --- |--- |
+| 200 GB | E64sv3 | 64/432 | 2x1 TB |
+| 100 GB | E32sv3 | 32/256 | 2X 400 GB |
+| 20 GB | E16sv3 | 16/128 | 2X 400 GB |
+| 120 GB | D64v3 | 64/256 | 2X 1 TB |

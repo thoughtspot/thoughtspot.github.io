@@ -1,156 +1,192 @@
 ---
-title: ["5.3 Release Notes"]
+title: ["6.0 Release Notes"]
 toc: false
-last_updated: 04/09/2020
+last_updated: November 7, 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 5.3.2 CU3 is now available.
-These are the new and enhanced features in this release.
+ThoughtSpot version 6.0 is now available. These release notes include information about new features,
+fixed issues from the previous releases, and any known issues.
 
-For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
-
-* [Supported Upgrade Paths](#upgrade-paths)
-* [5.3.1 New Features](#531-new)
-* [5.3 New Features](#53-new)
+* [6.0 New Features](#6-new)
+* [6.0 Fixed Issues](#6-fixed)
 * [Beta Programs](#beta-program)
+* [Supported Upgrade Paths](#upgrade-paths)
+* [Notes from Older Versions](#notes-for-older-versions)
+
+{: id="6-new"}
+## 6.0 New Features and Functionality
+
+### Mobile
+You can now download ThoughtSpot Mobile app from the AppStore for both iPhone and iPad devices. ThoughtSpot Mobile works for releases 5.1 and later.
+
+Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
+
+See [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
+
+### Embrace for Snowflake and Amazon Redshift
+
+In addition to Snowflake support, you can now perform live queries against an Amazon Redshift database without caching it in ThoughtSpot. You can then analyze this data, and create visualizations and pinboards. As with Snowflake, you can sync the data into ThoughtSpot later. **Support for Amazon Redshift is in beta**.
+
+ThoughtSpot now supports the following features for linked tables:
+  - Search suggestions for column values
+  - Indexing of table columns
+  - Remapping of tables and columns
+
+For more information, see [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
+### Monitor headlines 
+
+The Monitor feature enables you to follow headline metrics on your favorite Pinboards, and get daily updates in your mailbox, on your ThoughtSpot home page, or in the SpotIQ Follow management interface. **Support for Monitor is in beta**.
+
+* To monitor headlines, click the **Follow** icon in the top right corner of the Pinboard.
+  ![Monitor headlines with Follow]({{ site.baseurl }}/images/follow.png "Monitor headlines with Follow")
+
+* The **SpotIQ Follow** interface lists all the headlines you follow, and the change from last run.
+  ![SpotIQ Follow management interface]({{ site.baseurl }}/images/spotiq-monitor.png "SpotIQ Follow management interface")
+
+* Click each headline to see the detailed performance over time, examine each interval, all at the time scale you choose. And you can change to table view, or to another chart type to better visualize your changing metric.
+
+  ![Metric performance over time]({{ site.baseurl }}/images/spotiq-monitor-detail.png "Metric performance over time")
+
+### Chart Configuration
+
+This release introduces a complete new approach that makes chart configuration much easier and more intuitive.
+
+<strong>Chart configuration overview</strong>
+<br>
+<script src="https://fast.wistia.com/embed/medias/v408bchsqf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_v408bchsqf popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+* <strong>Add drag-and-drop chips</strong> automatically when adding new elements in search bar. These appear on the chart as "Not visualized", and you can move them into the axis area to visualize.
+* <strong>Improve number formatting</strong> for data labels on the chart marks (bars, bubbles, lines), and on the axes. Can use numbers, percentages, currencies, and specified units, "as is" (auto mode), or change to millions, trillions, and billions (K, M, B). Can easily specify the number of decimal places.
+* <strong>Independent control of each measure</strong> in a chart helps you reduce noise by applying labels only where you need it.
+* <strong>Simple time bucketing</strong> lets you change granularity of time series.
+* <strong>Intuitive color configuration</strong> enables you to quickly change color on the element or in the legend.
+* <strong>Column renaming</strong> for pivot tables and regular chart tables, wrapping and clipping of header text.
+
+### Scriptable Worksheets
+You can now **Export** Worksheets by downloading them to a `*.yaml` file, make changes, and then **Update** the Worksheet from the changed file either to the same cluster, or to a new cluster.
+
+Scriptable Worksheets support metadata migration from development to production environments, enables changes that are not possible within the user interface, and lets you perform bulk changes to the metadata (renaming, duplication).
+
+See [Migrate or restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), and [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html).
+
+### Welcome new users
+
+Administrators can configure a welcoming experience for new users. In addition to assigning a user to the most relevant groups and Pinboards, they can customize a Welcome email to introduce them to ThoughtSpot and help them get started.
+
+<strong>Configure new user welcome experience and emails</strong>
+<br>
+<script src="https://fast.wistia.com/embed/medias/bo6xskh8x0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_bo6xskh8x0 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+### Getting started
+
+To quickly onboard new users and teach them how to effectively use ThoughtSpot, we added in-product guidance and video content.
+
+<strong>Getting started with ThoughtSpot</strong>
+<br>
+<script src="https://fast.wistia.com/embed/medias/ifwwkmmtk5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_ifwwkmmtk5 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+### Sharing
+
+We improved the experience of sharing Answers and Pinboards through better email notifications, with embedded links.
+
+<strong>Sharing Pinboards and Answers</strong>
+<br>
+<script src="https://fast.wistia.com/embed/medias/g05dmacmng.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_g05dmacmng popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+### Access request and grant
+
+To enhance the ease of sharing, we simplified and reinforced the workflow for access request and grant of privileges to Pinboards, Answers, and Data sources.
+
+<strong>Requesting and granting access to Pinboards and Answers</strong>
+<br>
+<script src="https://fast.wistia.com/embed/medias/34nrrb385a.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_34nrrb385a popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+### Google Cloud Platform GCS persistent storage
+
+You can now reduce the cost of a GCP deployment by using GCS for storage of major services like the ThoughtSpot database and search engine. For more information, see [GCP configuration options]({{ site.baseurl }}/appliance/gcp/configuration-options.html).
+
+### Streamlined GCP data loading from a GCS bucket
+You can now load data from a Google Cloud Storage (GCS) bucket into your ThoughtSpot GCP instance. By assigning the _Compute Engine default service account_ and the _Set access for each API_ scope to your instance, you can set read-only access to your GCS bucket. This way, you don't have to enter GCS credentials when loading data. For more information, see [Loading data from a GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
+
+### Answer Explorer
+
+This release introduces Answer Explorer, which provides you with AI-guided exploration of Pinboards, at a single click.
+
+<p><strong>Answer Explorer overview</strong></p>
+<script src="https://fast.wistia.com/embed/medias/iu2ho8imd3.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_iu2ho8imd3 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
+
+Answer Explorer includes the following features:
+
+* <strong>Filters</strong> search field accepts any value, including a column name. After you enter your value, press **Enter**, or click **Add**.
+* <strong>Comparisons</strong> lets you easily perform a "versus" analysis.
+* <strong>Breakdowns</strong> make it easy to add a new attribute or replace an existing one, and let you change buckets for time series: monthly, weekly, daily, or quarterly.
+* <strong>Metrics</strong> "Also include" feature enables you to add other available metrics, and changing a column replaces a metric.
+* <strong>Navigation</strong>: Column names appear separately from search values. Undo steps back to the last change. Copy and edit retains all changes. Seamlessly switch from Answer Explorer to search.
+
+### Homepage Insights for everyone
+
+This release of ThoughtSpot leverages existing insights that are generated by the SpotIQ power users, and shares them with everyone on their Homepage, regardless of that person's access to SpotIQ Analyze function.
+
+These insights are diverse, and cover a wider range of data sources and types.
+
+### Ask an Expert
+
+We improved the Expert feature by adding more email notifications, enriching email content, and directly linking from emails to requests.
+
+* When a user creates a request, both that user and designated experts get an email notification. The **Open request** link in the expert's leads directly to ThoughtSpot, to review and manage the request.
+* When an expert resolves the request, both the expert and the user receive an email notification. The user can then follow the supplied link to navigate directly to the resolved answer.
+
+<!-- ### New group functions
+- [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
+- [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
+
+### GeoMaps
+ThoughtSpot now supports [GeoMap]({{ site.baseurl }}/reference/geomap-reference.html) visualizations for these new locales:
+- <strong>Austria:</strong> State, District, and Postal
+- <strong>Italy:</strong> Region, Province/Territories, and Postal Code
+- <strong>Poland:</strong> Province/Territories, County, Postal Code
+
+{: id="6-fixed"}
+## 6.0 Fixed Issues
+
+The following issues are fixed in the 6.0 release:
+
+- The `tscli cluster download-release` command sometimes did not work correctly.
+- The date dimension attribute was removed from the query for all date aggregations, except for DETAILED.
+
+{: id="beta-program"}
+## Beta Programs
+If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators, and so on.
+We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
+These features are currently in Beta. Please contact us if you are interested in participating:
+- <a href="mailto:BetaProgram@thoughtspot.com?subject=Montor%20Beta%20Program%20Request" target="_blank">Monitor Beta Program</a> for monitoring selected metrics over time.
+- <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program for Redshift</a> to query the new supported external database, Amazon Redshift.
 
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.3.2 release
+If you are running one of the following versions, you can upgrade to the 6.0 release
 directly:
 
-* 5.3 to 5.3.2 CU3
-* 5.2.x to 5.3.2 CU3
-* 5.1.x to 5.3.2 CU3
+* 5.3.x to 6.0
+* 5.2.x to 6.0
 
-This includes any hotfixes or customer patches on these branches.
+(This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.1.x, version 5.2.x, or version 5.3.x, and then to the 5.3.2 CU3 release.
+First, upgrade to version 5.2.x, or version 5.3.x, and then to the 6.0 release.
 
-{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade blocks." %}
+{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
 
-{: id="531-new"}
-## 5.3.1 New Features and Functionality
+{: id="notes-for-older-versions"}
+## Notes for earlier releases
 
-For a complete list of issues that we fixed in this release, see [5.3.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-3-1).
-
-### Onboarding
-In this release, administrators can configure 'Welcome' emails to send to both new and existing users, and to existing groups. See [Edit a group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-group) and
-[Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface).
-
-### Embrace
-**ThoughtSpot Embrace is in beta.**
-In Release 5.3.1, you can connect to multiple Snowflake databases, and get faster querying results. We also made improvements to the connection configuration. See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
-
-### Pinboard export in PDF format has branding, and more
-We enhanced the presentation experience even more. You can now brand the PDF with your own logo, add pagination, and supply footer text. When using the _Visualizations_ mode, you can de-select some of the visuals. See [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
-
-### Streamlined AWS data loading from an S3 bucket
-You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
-
-### Updated password requirements
-This release added password requirements for new and existing users. When a user changes their password or an administrator adds a new user, ThoughtSpot requires a more complex password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z,  special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long.
-
-{: id="53-new"}
-## 5.3 New Features and Functionality
-
-For a complete list of issues that we fixed in this release, see [5.3 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-3).
-
-### Onboarding
-In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined learning experience with default pinboards.
-
-- To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
-- To include users in the onboarding process, each user profile must include a valid email address. See [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
-- When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
-- To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#onboarding).
-- See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).  
-
-### ThoughtSpot mobile
-
-Our mobile app is available for customers with ThoughtSpot 5.1 or later.
-
-Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
-
-For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
-
-### Mandatory user emails
-
-To upgrade to this release, all users must have a valid email in ThoughtSpot. We block the upgrade if all users don't have valid emails.
-
-Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure authentication through Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
-
-### Amazon S3 persistent storage option
-
-You can now reduce the cost of an AWS deployment by using S3 for storage of major services like the ThoughtSpot database and search engine.  For more information, see [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html#).
-
-### Embrace
-
-**ThoughtSpot Embrace is in beta.**
-
-With ThoughtSpot Embrace, you can perform live queries against an external data repository without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot.
-
-There are two modes for using Embrace:
-- Linked tables provide real-time access to external data.
-- Synced tables enable you to bring select tables into the ThoughtSpot internal database.
-
-You can easily switch between Synced and Linked operation modes.
-
-You can also schedule automatic updates that refresh the synced data
-
-For more information, see [About ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
-
-### Pinboard export in PDF format
-
-You can now download a pinboard in PDF format, without downloading each visualization separately. PDF files replicate the pinboard layout by default. Alternatively, you can choose to have each visualization on its own page. For more information, see [Download a pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
-
-### Pinboard presentation in full screen
-
-We enhanced the presentation experience to show ThoughtSpot pinboards like a typical slide deck. This release features better navigation and presentation controls. See [Present a pinboard as a slideshow]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html).
-
-### New candlestick chart type
-
-We added a new chart that shows price movements of financial instruments. You can adapt it to show other probability distribution information.  See [Candlestick charts]({{ site.baseurl }}/end-user/search/candlestick-charts.html).
-
-### SpotIQ comparative analysis
-
-SpotIQ Analysis now supports more complex measurements:  
-* _Sum over sum_ and _Average_ use 'what-if' percentage insights.  
-
-See [Comparative Analysis]({{ site.baseurl }}/spotiq/comparative-analysis.html).
-
-### SpotIQ simplified feedback
-
-We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}/spotiq/insight-feedback.html).
-
-### SearchIQ optimization and other enhancements
-
-**SearchIQ is in Beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
-
-### Schema and join information
-
-You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
-
-### New geo map support
-<!--SCAL-48652-->
-Starting with this release, ThoughtSpot supports geo maps for these countries and regions:
- - United Kingdom: Zip Code
- - Sweden: Postal Code
-
- See [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference.html).
-
-### Drivers
-
-As of this release, ThoughtSpot no longer supports Solaris installations.  
-We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/downloads.html).
-
-{: id="beta-program"}
-## Beta Programs
-If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
-We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
-These features are currently in Beta. Please contact us if you are interested in participating:
-- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
-- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.
+* [5.3 Release Notes](/5.3/pdf/ThoughtSpot_Release_Notes_5.3.pdf)
+* [5.2 Release Notes](/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf)
+* [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
+* [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
+* [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
+* [4.4 Release Notes](/4.4/pdf/ThoughtSpot_Release_Notes_4.4.pdf)

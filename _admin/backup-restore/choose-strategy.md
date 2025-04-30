@@ -26,7 +26,7 @@ You can use a backup to restore a cluster to a prior state, a differently config
 
 The most robust strategy for backup and recovery requires having a backup cluster offline that is kept in sync with the production cluster. Then, if the production cluster fails, the backup cluster can be drafted to take its place with minimal loss of work and disruption to operations.
 
-Details on this architecture, and instructions on setting it up, are available in the [ThoughtSpot Disaster Recovery Guide]({{ site.baseurl }}/disaster-recovery/about-disaster-recovery.html).
+Details on this architecture and instructions on setting it up are available in the ThoughtSpot Disaster Recovery Guide, which you can request from ThoughtSpot.
 
 {: id="choose-strategy"}
 ## Choosing a strategy
@@ -53,7 +53,8 @@ Depending on your situation and your goals, you can choose to use either a snaps
                             <li>Move a cluster to a different appliance.</li>
                             <li>Move a cluster to VM appliance.</li>
                             <li>Removing a node.</li>
-                            <li>Restoring to a cluster that runs a different release from the one where the backup was taken.</li>
+                            <li>Restoring to a cluster that runs a different release from the one
+                                where the backup was taken.</li>
                         </ul>
                     </td>
                 </tr>
@@ -90,7 +91,7 @@ Depending on your situation and your goals, you can choose to use either a snaps
                     </td>
                     <td>
                         <ul>
-                            <li>Require deleting the existing cluster first.</li>
+                            <li>Require deleting the existing cluster first.
                             <li>You are responsible for validating your backup configuration as
                                 viable for restoring a cluster.</li>
                             <li>Best practice recommends you to maintain multiple backups.</li>
@@ -100,12 +101,4 @@ Depending on your situation and your goals, you can choose to use either a snaps
                 </tr>
             </table>
 
-
 You should never restore from a snapshot or backup yourself. Contact ThoughtSpot Support for help.
-
-## Additional resources
-As you develop your expertise in snapshots and backups, we recommend the following ThoughtSpot U course:
-* [Snapshots and Backups](https://training.thoughtspot.com/3-snapshots-backups/461810){:target="_blank"}
-
-See other training resources at <br/>
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

@@ -44,11 +44,11 @@ before continuing.
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>/<vizualizationId>`
 
-## Edit the test.html file
+## Edit the test.html
 
 You must edit the page in your application or web page where you want to
 embed a ThoughtSpot pinboard or visualization. For this example, you can get a copy of the
-<a href="{{ site.baseurl }}/downloads/test.html" download>test.html</a> file.
+<a href="{{"/downloads/test.html" | prepend: site.baseurl }}" target="_blank"><code>test.html</code></a>  file.
 
 1. Create an empty directory called `test`.
 2. Save the `test.html` file to the `test` directory.
@@ -106,7 +106,7 @@ fastest way to run a webserver and test the code is using Python's
 `simplehttpserver`.  If you have Python on your system you already have the
 `simplehttpserver`.
 
-1. Log in to ThoughtSpot.
+1. Log into ThoughtSpot.
 
    In production, you would have added authentication code to your client. You
    haven't done that with this system. So, before you test, you must login to the
@@ -154,4 +154,4 @@ No 'Access-Control-Allow-Origin' header is present on the requested resource.
 
 Typically you see this if the cross domain (CORS) setting was not completed correctly on
 your ThoughtSpot cluster. Contact <a
-href="{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a> for more help.
+href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for more help.

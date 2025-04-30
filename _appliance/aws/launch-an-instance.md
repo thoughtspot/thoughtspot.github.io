@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS for ThoughtSpot]
-last_updated: 1/21/2020
+last_updated: 10/10/2019
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) on AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -63,7 +63,6 @@ To install and launch ThoughtSpot, you must have the following:
 
 {: id="s3-bucket-setup"}
 ## Setting up your Amazon S3 bucket
-***This is optional.***
 
 If you are going to deploy your cluster using the S3-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the S3 storage option.
 
@@ -85,8 +84,6 @@ To set up an Amazon S3 bucket in AWS, do the following:
 
 {: id="encrypt"}
 ## Encrypting your data at rest on Amazon EBS or S3 in AWS
-
-***This is optional.***
 
 ThoughtSpot makes use of EBS for the data volumes to store persistent data (in the EBS deployment model) and the boot volume (in the EBS and S3 deployment models). ThoughtSpot recommends that you encrypt your data volumes prior to setting up your ThoughtSpot cluster.
 If you are using the S3 persistent storage model, you can encrypt the S3 buckets using SSE-S3. ThoughtSpot does not currently support AWS KMS encryption for AWS S3.  
@@ -142,39 +139,35 @@ To set up a ThoughtSpot cluster in AWS, do the following:
 
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it will appear on the EC2 console.
 
-15. SSH as `admin` into the IP address of the instance. Your ThoughtSpot contact can provide you with the password.
+## Prepare the VMs (ThoughtSpot Systems Reliability Team) 
 
-16. Prepare your storage for use with your cluster, by running this command:  
-`sudo /usr/local/scaligent/bin/prepare_disks.sh`.
+{% include important.html content="This procedure is typically done by a
+ThoughtSpot Systems Reliability Engineer (SRE). Please consult
+with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 
-    When complete, your storage is mounted and ready for use with your cluster.
+Before we can install a ThoughtSpot cluster, an administrator must log into
+each VM through SSH as user "admin", and complete the following preparation steps:
 
-17.  Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to complete your ThoughtSpot installation.
-     They will set up the VM instances to be part of your cluster. If you created an S3 bucket to use for storage, tell them the name of your bucket.
+1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` on every machine.
+2. Configure each VM based on the site-survey.
 
-18.  When the setup is complete, you can load data into ThoughtSpot for search analytics.    
+   When complete, your storage is mounted and ready for use with your cluster.
+
+## Launch the cluster
+
+Upload the TS tarball to one of the VMs and proceed with the normal
+cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
+
+If you are going to use S3 as your persistent storage, you must enable it when running this command, using the **enable_cloud_storage** flag. Example: `tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=s3a`
+
+When the setup is complete, you can load data into ThoughtSpot for search analytics.    
 
 {: id="network-ports"}
 ## Open the required network ports
 
 To determine which network ports to open for a functional ThoughtSpot cluster, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
 
-These are the minimum ports required for operations and debugging:
-
-|Port|Protocol|Service|
-|----|--------|------------|
-|22|SSH|Secure Shell access|
-|443|HTTPS|Secure Web access|
-|12345|TCP|ODBC and JDBC drivers access|
-
-## Additional resources
-As you develop your expertise in AWS VM creation, we recommend the following ThoughtSpot U course:
-* [Node Configuration: AWS](https://training.thoughtspot.com/node-network-configuration/484851){:target="_blank"}
-
-See other training resources at <br/>
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
-
 ## Related information  
 
-[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)  
+[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html){:target="_blank"}  
 [Loading data from an AWS S3 bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)

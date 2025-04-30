@@ -2,11 +2,13 @@
 title: [VMware configuration overview]
 
 
-last_updated: 3/17/2020
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
+Congratulations on purchasing the ThoughtSpot instance. This section is an
+overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
+vSphere Hypervisor (ESXi) 6.5 environment.
 
 ## About ThoughtSpot on VMware
 
@@ -38,35 +40,29 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 	      <th scope="col">Per VM user data capacity</th>
 	      <th scope="col">CPU/RAM</th>
 	      <th scope="col">Data disk</th>
-				<th scope="col">Required root volume capacity</th>
         </tr>
 	    <tr>
 	      <td>20 GB</td>
 	      <td>16/128 GB</td>
-	      <td>2x400 GB</td>
-				<td>200 GB for each node</td>
+	      <td>800 GB</td>
         </tr>
 	    <tr>
 	      <td>100 GB</td>
 	      <td>32/256 GB</td>
-	      <td>2X400 GB</td>
-				<td>200 GB for each node</td>
+	      <td>800 GB</td>
         </tr>
 	    <tr>
 	      <td>256 GB</td>
 	      <td>72/512 GB</td>
-	      <td>3X1 TB</td>
-				<td>200 GB for each node</td>
+	      <td>6 TB</td>
         </tr>
 		<tr>
-	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200 GB SSD boot disk required for all configurations.</td>
+	      <td colspan="3"><b>Note:</b> All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.</td>
 	      <td></td>
 	      <td></td>
         </tr>
   </tbody>
 </table>
-
-For most instances, the per VM recommended user data capacity is set at 50% of the available RAM on the instance. However, in the case of our 16CPU/128GB RAM and 32CPU/256GB RAM instances, we support user data sizes below those numbers to budget for application overhead.
 
 Locally attached storage provides the best performance.
 

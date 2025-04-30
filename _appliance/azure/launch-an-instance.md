@@ -1,14 +1,11 @@
 ---
 title: [Set up Azure for ThoughtSpot]
-
-last_updated: 1/21/2020
+last_updated: 10/25/20919
+summary: "After you determine your configuration options, you must set up your virtual
+machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-After you’ve determined your configuration options, you must set up your virtual
-machines (VMs) using a ThoughtSpot image for Azure.
-
 
 ## About the ThoughtSpot image
 
@@ -44,7 +41,7 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 
 ### Create an instance
 
-To get started, you need to log in to the Azure portal, create a resource group,
+To get started, you need to log into the Azure portal, create a resource group,
 get the [ThoughtSpot Virtual
 Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine)
 on the [Azure
@@ -63,13 +60,13 @@ here.
 
 3. Next, create a resource based on the ThoughtSpot Virtual Machine.
 
-   a. Click **Create a resource**, search the Marketplace for the ThoughtSpot Virtual Machine, and choose the [ThoughtSpot Search & AI-driven Analytics (BYOL)](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine?tab=Overview){: target="_blank"} image.
+   a. Click **Create a resource**, search the Marketplace for the ThoughtSpot Virtual Machine, and select it.
 
-     ![]({{ site.baseurl }}/images/azure-ts-image.png "Choose ThoughtSpot in Marketplace")
+     ![]({{ site.baseurl }}/images/azure_choose_ts_in_marketplace.png "Choose ThoughtSpot in Marketplace")
 
-   b. On the ThoughtSpot Virtual Machine page, click **Get it now**.
+   b. On the ThoughtSpot Virtual Machine page, click **Create**.
 
-     ![]({{ site.baseurl }}/images/azure-get-image.png "Choose ThoughtSpot in Marketplace")
+     ![]({{ site.baseurl }}/images/azure_create_ts_vm.png "Choose ThoughtSpot in Marketplace")
 
 ### Configure basic settings
 
@@ -93,7 +90,7 @@ here.
 
 ### Choose a machine size
 
-Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a size for your VM that works for your cluster needs.
+For **Choose a size**, select `E64S_V3 standard`.
 
 ![]({{ site.baseurl }}/images/azure_choose_disk_size.png "Choose a disk size")
 
@@ -114,11 +111,15 @@ processes do not get blocked.
 
    The minimum ports needed are:
 
-   |Port|Protocol|Service|
-   |----|--------|------------|
-   |22|SSH|Secure Shell access|
-   |443|HTTPS|Secure Web access|
-   |12345|TCP|ODBC and JDBC drivers access|
+   | Port    | Protocol   | Service                       |
+   | ------- | ---------- | ----------------------------  |
+   | 22    | SSH          |  Secure Shell access          |
+   | 80    | HTTP         |  Web access                   |
+   | 443   | HTTPS        |  Secure Web access            |
+   | 12345 | TCP          |  ODBC and JDBC drivers access |
+   | 2201  | HTTP         |  Cluster Debugging            |
+   | 2101  | HTTP         |  Node daemon Debugging        |
+   | 4001  | HTTP         |  Data Cache Debugging         |
 
 
    {% include note.html content="ThoughtSpot requires that nodes purchased from Azure must be reachable to each other so that they can communicate and form a distributed environment. ThoughtSpot only requires that those ports be accessible
@@ -275,10 +276,3 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    ```
 
 5. Reboot the nodes.
-
-## Additional resources
-As you develop your expertise in Azure VM creation, we recommend the following ThoughtSpot U course:
-* [Node Configuration: Azure](https://training.thoughtspot.com/node-network-configuration/510569){:target="_blank"}
-
-See other training resources at <br/>
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>

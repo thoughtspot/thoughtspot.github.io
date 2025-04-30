@@ -54,6 +54,13 @@
       ]
     },
     {
+      "filename": "ThoughtSpot_AWS_Installation_Guide",
+      "title": "AWS Installation Guide",
+      "codes": [
+        "instAWS"
+      ]
+    },
+    {
       "filename": "ThoughtSpot_Reference_Guide",
       "title": "Reference Guide",
       "codes": [

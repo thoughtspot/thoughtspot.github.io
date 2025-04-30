@@ -1,7 +1,7 @@
 ---
 title: [Cloud overview]
 
-last_updated: 6/16/2020
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,7 +9,7 @@ ThoughtSpot can currently be deployed in the following cloud provider environmen
 
 - [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
 - [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
-- [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
+- [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html) 
 
 The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.  
 
@@ -63,7 +63,7 @@ To shut down and restart your cluster, do the following in the tscli:
 
    You should see the message: ”Started pre-existing cluster”
 
-   Depending on the size of your cluster, you may need to wait several minutes before the system is fully usable again. For massive clusters with hundreds of GBs of data, this time to readiness may be several hours. Assess time to readiness on a per-cluster basis. Make sure you budget for this startup time to ensure that the system is fully operational before advertising it as ready and usable.
+   Depending on the size of your cluster, you may need to wait several minutes before the system is up and running. Make sure you budget for this startup time to ensure that the system is fully operational before you expect people to use it.
 
 6. Ensure that your cluster is ready for use by running:
 	`$ tscli cluster status`

@@ -1,6 +1,6 @@
 ---
 title: [Work with snapshots]
-last_updated: 3/4/2020
+last_updated: 10/14/2019
 toc: true
 summary: "A snapshot is a point-in-time image of your running cluster. You can use a snapshot to restore the cluster to a specific point in time. In this section, we describe how to work with the default snapshot configuration that is enabled on every cluster, and how make manual snapshots."
 sidebar: mydoc_sidebar
@@ -20,12 +20,46 @@ ThughtSpot generates a snapshot in approximately 20 seconds, depending on the si
 
 {% include note.html content="During an upgrade, all snapshots from the previous version of ThoughtSpot become manual snapshots." %}
 
+<!--### Using Management Console
+
+To manually create a snapshot using the Admin UI, follow these steps:
+
+1. Log into ThoughtSpot from a browser.
+
+2. Click the **Admin** menu on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/admin.png)
+
+   This opens the Management Console.
+
+3. Click the **Settings** menu on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/settings.png)
+
+4. In the **Settings** panel, click **Snapshot**, and select the   **Configure** option.
+
+   ![]({{ site.baseurl }}/images/snapshot.png)  
+
+5. Enter the snapshot configuration details:
+
+   ![]({{ site.baseurl }}/images/snapshot-create.png)
+
+   | Field | Description |
+   | --- | --- |
+   | Snapshot Name | Specify the name of the snapshot. |
+   | Time to Live | Specify the day counter after which the snapshot automatically expires from the system. |
+
+6. Click **Save** to create a snapshot.
+
+You can see the new snapshot file in the snapshot dashboard.
+-->
+
 {: id="snapshot-tscli"}
 ### Create a snapshot using tscli
 
 To create a snapshot using the `tscli`, follow these steps:
 
-1. Log in to the Linux shell using SSH.
+1. Log into the Linux shell using SSH.
 
 2. Create a snapshot, specifying its name and the reason for creating it.
 
@@ -53,7 +87,7 @@ You can change this policy.
 
 To view your current periodic snapshot policy, follow these steps:
 
-1. Log in to the Linux shell using SSH.
+1. Log into the Linux shell using SSH.
 2. Enter `tscli snapshot-policy show` command to view the policy.
 
 In the following example, the policy starts at midnight on Sunday. It retains the snapshots from the previous three 4-hour intervals, and two snapshots from two of the previous 4-hour
@@ -123,7 +157,7 @@ You cannot delete the snapshot policy. However, you can either disable or enable
 
 To disable your current periodic snapshot policy, follow these steps:
 
-1. Log in to the Linux shell using SSH.
+1. Log into the Linux shell using SSH.
 2. Enter `tscli snapshot-policy disable`.
 
 {: id="snapshot-policy-enable"}
@@ -131,5 +165,5 @@ To disable your current periodic snapshot policy, follow these steps:
 
 To enable a specific periodic snapshot policy, follow these steps:  
 
-1. Log in to the Linux shell using SSH.
+1. Log into the Linux shell using SSH.
 2. Enter `tscli snapshot-policy enable`.

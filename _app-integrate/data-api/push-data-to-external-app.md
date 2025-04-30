@@ -16,7 +16,7 @@ The DataPush API makes the data available to the external application formatted 
 
 ## Create an Custom Action
 
-To create a Custom Action, you must have the [**Can administrate ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
+To create a Custom Action, you must have the [**Can administrator ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html).
 
 Use this procedure to create an Custom Action in ThoughtSpot:
 
@@ -78,7 +78,7 @@ Here is a sample application you can use to try out the Data Push API:
     </script>
     <div ng-app ="latestData" ng-controller="dataCtrl">
         <button class="get-data" ng-click="displayData()">Click here for latest exported data</button>
-        <div class="display-data" ng-if="showData">{% raw %}{{currentData}}{% endraw %}</div>
+        <div class="display-data" ng-if="showData"> {{currentData}}</div>
     </div>
 </body>
 </html>

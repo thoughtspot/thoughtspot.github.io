@@ -1,7 +1,7 @@
 ---
 title: [Customize the application style]
 
-last_updated: 2/4/2020
+last_updated: tbd
 summary: "Style Customization allows you to change the overall style of your ThoughtSpot interface. "
 sidebar: mydoc_sidebar
 toc: false
@@ -20,7 +20,7 @@ make the visualizations match the look and feel of the portal or application in
 which they are embedded. For more information on using the APIs, see the
 ThoughtSpot Application Integration Guide.
 
-Style customization is not enabled by default. To enable style customization, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). The ThoughtSpot logo
+Style customization is enabled by default beginning in ThoughtSpot version 5.0. To disable style customization, contact ThoughtSpot Support. The ThoughtSpot logo
 in the middle of the page is automatically removed when Style Customization is enabled.
 
 ## Change style customization
@@ -33,11 +33,11 @@ To re-brand the interface:
 
 2. Click the **Admin** icon, on the top navigation bar.
 
-    ![Select the Admin page]({{ site.baseurl }}/images/topnavbar-admin.png "Select the Admin page")
+    ![]({{ site.baseurl }}/images/admin_icon.png)
 
 3. In the **Admin** panel, click **Style Customization**.
 
-     ![Style customization menu]({{ site.baseurl }}/images/stylecustomizationmenu.png "Style Customization menu")
+     ![]({{ site.baseurl }}/images/style_customization.png "Style Customization menu")
 
     In the menu page, you can perform the following actions:
 

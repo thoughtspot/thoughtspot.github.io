@@ -18,18 +18,40 @@ Boot disk options under Custom Images.
 
 Ask your ThoughtSpot liaison for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
 
-### Overview
+## Overview
 
 Before you can create a ThoughtSpot cluster, you must provision VMs.  You use the Google Compute Engine (GCP) platform for [creating and running VMs](https).
 
 The following topics walk you through this process.
 
-###  Prerequisites
+## Prerequisites
 
 1. Ensure that **Network Service Tier** is set to **Premium** for all VMs to be used in your ThoughtSpot cluster.
 2. A ThoughtSpot cluster requires 10 Gb/s bandwidth (or better) between any two nodes. This must be established before creating a new cluster.
 
-###  Create an instance
+## Setting up your Google Cloud Storage (GCS) bucket
+
+If you are going to deploy your cluster using the GCS-storage option, you must set up that bucket before you set up your cluster. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#) to find out if your specific cluster size will benefit from the GCS storage option.
+
+1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
+
+2. Go to the Storage dashboard.
+
+3. Click **CREATE BUCKET**.
+
+4. Enter a name for your bucket, and click **CONTINUE**.
+
+5. For location type, select **Region** and use the Location drop-down menu to select the region where you are going to set up your instance, and click **CONTINUE**.
+
+6. For default storage class, make sure **Standard** is selected, and click **CONTINUE**.
+
+7. For access control model, make sure **Set permissions uniformly at bucket-level** is selected, and click **CONTINUE**.
+
+8. For advanced settings, leave Encryption set to **Google-managed key**, do not set a retention policy, and click **CREATE**.
+
+When you create your instance, make sure you set Storage to **Read Write** access.
+
+## Create an instance
 
 1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
@@ -39,7 +61,7 @@ The following topics walk you through this process.
 
 2. Select **VM instances** on the left panel and click **CREATE INSTANCE**.
 
-3. Provide a name for the image, choose a region, choose number of CPUs (e.g., 8 vCPUs for a cluster), and click **Customize** to further configure CPUs and memory.
+3. Provide a name for the instance, choose a region, choose number of CPUs (e.g., 8 vCPUs for a cluster), and click **Customize** to further configure CPUs and memory.
 
     ![]({{ site.baseurl }}/images/gcp-1-create-instance.png "Create GCP VM instance")
 
@@ -99,9 +121,15 @@ The following topics walk you through this process.
 
       ![]({{ site.baseurl }}/images/gcp-10-additional-disks.png "Additional data storage disks")
 
-8. Customize the network settings as needed, preferably use your default VPC settings.
+8. (For use with GCS only) In the Identity and API access section, make sure Service account is set to **Compute Engine default service account**, and under Access scopes, select **Set access for each API**.
 
-9. Repeat these steps to create the necessary number of such VMs.
+9. (For use with GCS only) Scroll down to the Storage setting, and set it to one of the following options:
+   - To use Google Cloud Storage (GCS) as persistent storage for your instance, select **Read Write**.
+   - To only use GCS to load data into ThoughtSpot, select **Read Only**.
+
+10. Customize the network settings as needed, preferably use your default VPC settings.
+
+11. Repeat these steps to create the necessary number of such VMs.
 
 ## Prepare the VMs (ThoughtSpot Systems Reliability Team)
 
@@ -109,7 +137,7 @@ The following topics walk you through this process.
 ThoughtSpot Systems Reliability Engineer (SRE). Please consult
 with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 
-Before we can install a ThoughtSpot cluster, an administrator must log in to
+Before we can install a ThoughtSpot cluster, an administrator must log into
 each VM through SSH as user "admin", and complete the following preparation steps:
 
 1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` on every machine.
@@ -117,12 +145,17 @@ each VM through SSH as user "admin", and complete the following preparation step
 
 ## Launch the cluster
 
-Upload the TS tarball to one of the machines and proceed with the normal
+Upload the TS tarball to one of the VMs and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
 
-## Additional resources
-As you develop your expertise in GCP VM creation, we recommend the following ThoughtSpot U course:
-* [Node Configuration: GCP](https://training.thoughtspot.com/node-network-configuration/430736){:target="_blank"}
+If you are going to use GCS as your persistent storage, you must enable it when running this command, using the **enable_cloud_storage** flag. Example: `tscli cluster create 6.0-167.tar.gz --enable_cloud_storage=gcs`
 
-See other training resources at <br/>
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+{: id="network-ports"}
+## Open the required network ports
+
+To determine which network ports to open for a functional ThoughtSpot cluster, see [Network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
+
+## Related information
+
+[Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets){:target="_blank"}  
+[Loading data from a GCP GCS bucket]({{site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)

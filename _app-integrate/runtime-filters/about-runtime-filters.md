@@ -53,8 +53,8 @@ the runtime filter, and those included in the pinboard or visualization itself.
 You can use runtime filters on these data types:
 
 -   `VARCHAR`
--   `BIGINT`
--   `INT`
+-   `INT64`
+-   `INT32`
 -   `FLOAT`
 -   `DOUBLE`
 -   `BOOLEAN`

@@ -2,21 +2,15 @@
 title: [Sync users and groups from LDAP]
 
 
-last_updated: 5/7/2020
-summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory."
+last_updated: tbd
+summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-## Prerequisites
+Before synchronizing users and groups, you need this information:
 
-Before synchronizing users and groups, [set up integration with LDAP using Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html). Then, collect the following information:
-
--   IP address and port of the server where your ThoughtSpot instance is running.
-
-    This hostport must be in the following format `http(s)://<host>:<port>` or `http(s)://<domain>`.
-
+-   IP address and port of the server where your ThoughtSpot instance is running. This hostport is needed in the following format `http(s)://<host>:<port>` or `http(s)://<domain>`.
 -   Administrator login username and password for your ThoughtSpot instance.
-
 -   URL of the LDAP server, or hostport.
 
     For example, `ldap://192.168.2.48:389`
@@ -29,22 +23,13 @@ Before synchronizing users and groups, [set up integration with LDAP using Activ
 
     For example, `DC=ldap,DC=thoughtspot,DC=com`
 
--   The Python synchronization script, in case you want to modify it or create your own, is here:
-    ```
-    /usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py
-    ```
-
-## Fetch users and groups from LDAP with Active Directory
+-   Location of the Python synchronization script, in case you want to modify it or create your own: `/usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py`
 
 There are two ways for you to fetch users and groups from LDAP and populate them
 into your ThoughtSpot system:
 
 -   Run the synchronization script in interactive mode, which will walk you through the process (shown here).
--   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). If you choose this method, you can run the script periodically using a cron job.
-
-{% include note.html content="When you run the synchronization script, you perform a one-time sync. You must schedule a recurring sync using a cron job or your own scheduling tool to keep your ThoughtSpot users up to date with your users in LDAP." %}
-
-### Run the sync script
+-   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, contact ThoughtSpot Support. If you choose this method, you can run the script periodically using a cron job.
 
 To run the LDAP sync script in interactive mode:
 
@@ -55,7 +40,7 @@ To run the LDAP sync script in interactive mode:
     python syncUsersAndGroups.py interactive
     ```
 
-3. Answer the prompts using the information you collected above. Specify `2` for the `scope` if you would like to sync all groups, including subgroups. For example:
+3. Answer the prompts using the information you collected above. For example:
 
     ```
     Complete URL of TS server in format "http(s)://<host>:<port>": http://10.77.145.24:8088
@@ -167,10 +152,6 @@ The following table provides a description of each command-line switch available
 		<tr>
 	      <td><code>--include_nontree_members</code></td>
 	      <td>Includes group members from LDAP/AD even if they do not belong to the current subtree that is being synced.</td>
-    </tr>	 
-    <tr>
-        <td><code>--debug</code></td>
-        <td>Provides additional logs in case of failure or other errors.</td>
-      </tr>	  
+        </tr>	  
   </tbody>
 </table>

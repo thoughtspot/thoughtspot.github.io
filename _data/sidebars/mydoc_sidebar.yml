@@ -2,9 +2,8 @@
 
 entries:
 - title: sidebar
-  product: ThoughtSpot Software
-  docversion: 5.3
-  version: 5.3 Guides
+  product: Version
+  version: 6.0 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -25,9 +24,6 @@ entries:
     sectionitems:
     - title: Release notes
       url: /release/notes.html
-      output: web,rnotes
-    - title: Fixed issues
-      url: /release/fixed.html
       output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
@@ -110,7 +106,7 @@ entries:
       - levelThreeTitle: Use keywords in search
         output: web,ugBk
         levelThreeItems:
-        - title: Overview of keyword searches
+        - title: Overview of keyword searchess
           url: /complex-search/about-keyword-searches.html
           output: web,ugBk
         - title: Time series analysis
@@ -119,7 +115,7 @@ entries:
         - title: Search using growth over time
           url: /complex-search/search-using-growth-over-time.html
           output: web,ugBk
-        - title: Subquery search
+        - title: Using the in keyword for nested searches
           url: /complex-search/in-keyword-searches.html
           output: web,ugBk
         - title: Proximity searches "near" and "farther than"
@@ -236,6 +232,11 @@ entries:
         - title: Change the chart
           url: /end-user/search/change-the-chart.html
           output: web,ugBk
+        # new with ChartConfig changes
+        - title: Change axes options
+          url: /end-user/search/chart-axes-options.html
+          output: web,ugBk
+        # older topics
         - title: Reorder the labels
           url: /end-user/search/reorder-values-on-the-x-axis.html
           output: web,ugBk
@@ -428,6 +429,15 @@ entries:
         - title: Teach SearchIQ your language
           url: /end-user/search/teach-searchiq.html
           output: web,ugBk
+    - levelTwoTitle: Slack and ThoughtSpot
+      output: web,ugBk
+      levelTwoItems:
+        - title: Slack and Spot
+          url: /end-user/slack/intro.html
+          output: web,ugBk
+        - title: How to use Spot
+          url: /end-user/slack/use-spot.html
+          output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
       output: web,ugBk
@@ -526,6 +536,9 @@ entries:
         output: web,admBk
       - title: Customize look and feel
         url: /admin/setup/customize-style.html
+        output: web,admBk
+      - title: Add the Slack integration
+        url: /admin/setup/slack-integration.html
         output: web,admBk
     - levelTwoTitle: Load and manage data
       output: web,admBk
@@ -764,9 +777,6 @@ entries:
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
           output: web,admBk
-        - title: Add or manage experts
-          url: /admin/data-modeling/add-expert.html
-          output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
         levelThreeItems:
@@ -806,11 +816,17 @@ entries:
       - title: "Create a join relationship"
         url: /admin/worksheets/add-joins.html
         output: web,admBk
-      - title: "Modify joins between worksheet tables"
+      - title: "Modify joins between Worksheet Tables"
         url: /admin/worksheets/mod-ws-internal-joins.html
         output: web,admBk
-      - title: Delete a worksheet or table
+      - title: Delete Worksheets or Tables
         url: /admin/worksheets/delete-worksheet.html
+        output: web,admBk
+      - title: Migrate or restore Worksheets
+        url: /admin/worksheets/worksheet-export.html
+        output: web,admBk
+      - title: Worksheet YAML specification
+        url: /admin/worksheets/yaml-worksheet.html
         output: web,admBk
     - levelTwoTitle: Work with views
       output: web,ugBk
@@ -1121,18 +1137,21 @@ entries:
       - title: Cloud overview
         url: /appliance/cloud.html
         output: web,appQs
-      - levelThreeTitle: AWS
-        output: web,appQs
+      - levelThreeTitle: AWS Installation
+        output: web,appQs,instAWS
         levelThreeItems:
+        - title: Installing Amazon Web Services
+          url: /appliance/aws/installing-aws.html
+          output: web,appQs,instAWS  
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
-          output: web,appQs
+          output: web,appQs,instAWS
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
-          output: web,appQs
+          output: web,appQs,instAWS
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
-          output: web,appQs
+          output: web,appQs,instAWS
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:

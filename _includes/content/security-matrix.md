@@ -1,4 +1,5 @@
 <table id="matrix" class="wide_table" style="font-size:10px;">
+  <caption>The following table shows the intersection of user privilege and ability:</caption>
    <colgroup>
       <col style="width:36%;">
       <col style="width:4%;">
@@ -200,7 +201,7 @@
       </tr>
       <tr>
          <td>
-            <div>Has SpotIQ privilege</div>
+            <div>Can Auto-Analyze (SpotIQ privilege)</div>
          </td>
          <td>N</td>
          <td>N</td>

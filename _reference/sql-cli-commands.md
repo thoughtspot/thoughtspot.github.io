@@ -2,7 +2,7 @@
 title: [TQL reference]
 
 
-last_updated: 2/25/2020
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -331,12 +331,42 @@ nickname';</code></p>
    </tr>
    <tr>
       <td>
-         <p><code>ALTER TABLE &lt;table&gt; DROP [CONSTRAINT | RELATIONSHIP]
+         <p><code>ALTER TABLE &lt;table&gt; DROP CONSTRAINT [FOREIGN KEY| RELATIONSHIP]
        &lt;name&gt;;</code></p>
       </td>
       <td><p>Drops the named foreign key or relationship between two tables. For example:</p>
-         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT "FK_PO_number";</code></p>
+         <p><code>ALTER TABLE "sales_fact" DROP CONSTRAINT FOREIGN KEY "FK_PO_number";</code></p>
         <p><code>ALTER TABLE "fruit_dim" DROP RELATIONSHIP "REL_dates";</code></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p><code>ALTER TABLE &lt;table&gt; DROP [CONSTRAINT FOREIGN KEY
+         [&lt;table_name&gt;] | RELATIONSHIP [WITH &lt;table_name&gt;];</code></p>
+      </td>
+      <td>
+         You must use this syntax when dropping relationships between tables created
+         before ThoughtSpot version 3.2. This is because relationships could not be named
+         in older versions.
+         <div>
+            Drops the foreign key or relationship between two tables
+            where you cannot reference it by relationship name. If the relationship was
+            created without a name, use:
+            <ul class="ul" id="reference_cbc_fx4_j4__ul_qzq_wyn_cv">
+               <li>the name of the referenced table, for a foreign key.</li>
+               <li>the name of the related table, for a relationship.</li>
+            </ul>
+         </div>
+         <p>If you drop a foreign key without specifying the referenced table,
+            all foreign keys from the table you are altering will be dropped.
+         </p>
+         <p>Examples:</p>
+         <p><code>ALTER TABLE "shipments" DROP CONSTRAINT FOREIGN KEY "orders";</code></p>
+         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP WITH "retail_sales";</code></p>
+         <p>Drops all relationships that have wholesale_buys as a source.</p>
+         <p><code>ALTER TABLE "wholesale_buys" DROP RELATIONSHIP;</code></p>
+          <p>Drops all foreign keys from wholesale_buys. </p>
+         <p><code>ALTER TABLE "wholesale_buys" DROP CONSTRAINT FOREIGN KEY;</code></p>
       </td>
    </tr>
    <tr>
@@ -533,11 +563,6 @@ REFERENCES "teams" ("lgID" ,"teamID");</code></p>
    </tbody>
 </table>
 
-### Permitted joins and necessary permissions
-
-See this matrix for information about which joins you can create, and what permissions these joins require.
-
-{% include content/joins-matrix.md %}
 
 ## Data types
 
@@ -564,7 +589,7 @@ ThoughtSpot supports a simplified list of data types:
                <li>VARCHAR(<em class="ph i">n</em>)</li>
             </ul>
          </td>
-         <td>Specify the maximum number of characters, as in VARCHAR(255). The size limit is 64MB for
+         <td>Specify the maximum number of characters, as in VARCHAR(255). The size limit is 1GB for
             VARCHAR values.
          </td>
       </tr>
