@@ -1,146 +1,97 @@
 ---
-title: [Group API]
-
+title: [group API]
+keywords: REST,API,data,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-The Group APIs enable you to set or remove a privilege to or from a group or multiple groups.
+## POST v1/group/addprivilege
 
-## Add a privilege
+Adds a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege to the system default
+`ALL_GROUP`. All users in the system are always part of `ALL` group. By default,
+this group does not have either permission.
 
-Use this API to add a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege to the system default `ALL_GROUP`group. All users in the system are always a part of `ALL_GROUP` group. By default, this group does not have either permission.
+All the data sources which the `ALL_GROUP` has permissions to are downloadable
+when `DATADOWNLOADING` is set.
 
-All the data sources which the `ALL_GROUP` group has permissions to are downloadable when `DATADOWNLOADING` is applied.
 
-### Resource URL
-
-<code class="api-method-post">post</code> /tspublic/v1/group/addprivilege
-
-### Request Parameters
+### Parameters
 
 <table>
    <colgroup>
-   <col style="width:20%" />
-   <col style="width:15%" />
-   <col style="width:65%" />
+      <col style="width:25%" />
+      <col style="width:75%" />
    </colgroup>
    <thead>
       <tr>
-         <th>Form Parameter</th>
-         <th>Data Type</th>
+         <th>Parameter</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td><code>privilege</code></td>
-         <td>string</td>
-         <td>Specifies a privilege type to add. Valid values are <code>DATADOWNLOADING</code> or <code>USERDATAUPLOADING</code> privilege.</td>
+         <td>A string representing the privilege to add. You can set `DATADOWNLOADING` or `USERDATAUPLOADING` privilege.</td>
       </tr>
       <tr>
          <td><code>groupNames</code></td>
-         <td>string</td>
-         <td>Specifies a group name to add the privilege to. Valid value is <code>ALL_GROUP</code> group.</td>
+         <td>A string representing the name of the group to add the privilege to. Only `ALL_GROUP` is accepted.</td>
       </tr>
    </tbody>
 </table>
 
-### Request Example
+## Return codes
 
-##### cURL
+* 200
+* 204 Success
+* 401 Failure/unauthorized
 
-```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'privilege=DATADOWNLOADING&groupNames=ALL_GROUP' 'https://<instance>/callosum/v1/tspublic/v1/group/addprivilege'
-```
-
-##### Request URL
+### Request URL
 
 ```
 https://<instance>/callosum/v1/tspublic/v1/group/addprivilege
 ```
-### Response Example
-```
-Not applicable
-204 - Success
-```
-
-## Remove a privilege
-
-Use this API to delete a `DATADOWNLOADING` or `USERDATAUPLOADING` privilege from the system default `ALL_GROUP`group.
 
 
+## POST v1/group/removeprivilege
 
-### Resource URL
-
-<code class="api-method-post">post</code> /tspublic/v1/group/removeprivilege
-
+Removes a privilege from a group.
 
 
-### Request Parameters
+### Parameters
 
 <table>
    <colgroup>
-   <col style="width:20%" />
-   <col style="width:15%" />
-   <col style="width:65%" />
+      <col style="width:25%" />
+      <col style="width:75%" />
    </colgroup>
    <thead>
       <tr>
-         <th>Form Parameter</th>
-         <th>Data Type</th>
+         <th>Parameter</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
    <tr>
       <td><code>privilege</code></td>
-      <td>string</td>
-      <td>Specifies a privilege type to delete. Valid values are <code>DATADOWNLOADING</code> or <code>USERDATAUPLOADING</code> privilege.</td>
+      <td>A string representing the privilege to remove. You can set `DATADOWNLOADING` or `USERDATAUPLOADING` privilege.</td>
    </tr>
    <tr>
       <td><code>groupNames</code></td>
-      <td>string</td>
-      <td>Specifies a group name to delete the privilege from. Valid value is <code>ALL_GROUP</code> group.</td>
+      <td>A string representing the name of the group to remove the privilege from. Only `ALL_GROUP` is accepted.</td>
    </tr>
    </tbody>
 </table>
 
-### Request Example
+## Return codes
 
-##### cURL
+* 200
+* 204 Success
+* 401 Failure/unauthorized
+
+### Request URL
 
 ```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'privilege=USERDATAUPLOADING&groupNames=ALL_GROUP' 'https://<instance>/callosum/v1/tspublic/v1/group/removeprivilege'
+https://<instance>/callosum/v1/tspublic/v1/group/addprivilege
 ```
-##### Request URL
-
-```
-https://<instance>/callosum/v1/tspublic/v1/group/removeprivilege
-```
-### Response Example
-```
-Not applicable
-204 - Success
-```
-## Error Codes
-
-<table>
-   <colgroup>
-      <col style="width:20%" />
-      <col style="width:60%" />
-      <col style="width:20%" />
-   </colgroup>
-   <thead class="thead" style="text-align:left;">
-      <tr>
-         <th>Error Code</th>
-         <th>Description</th>
-         <th>HTTP Code</th>
-      </tr>
-   </thead>
-   <tbody>
-    <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Use valid realm that can authenticate these tokens.</td> <td><code>401</code></td></tr>
-
-  </tbody>
-</table>

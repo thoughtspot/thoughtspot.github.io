@@ -1,6 +1,6 @@
 ---
 title: [Set up GCP for ThoughtSpot]
-
+keywords: GCP
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,22 +16,25 @@ ThoughtSpot uses a custom image to populate VMs on GCP. The base image is a Cent
 image, which will be available to you in your Google Compute Engine project for
 Boot disk options under Custom Images.
 
-Ask your ThoughtSpot liaison for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
+Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be logged into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
 
 ### Overview
 
-Before you can create a ThoughtSpot cluster, you must provision VMs.  You use the Google Compute Engine (GCP) platform for [creating and running VMs](https).
+Before you can create a ThoughtSpot cluster, you need to provision VMs.  We'll
+do this on Google Compute Engine, the GCP platform for [creating and running VMs](https).
+
+In a nutshell, the required configuration ThoughtSpot is:
+
+- 64 vCPU
+- 416 GB RAM
+- 250GB SSD for the boot disk, provisioned with a ThoughtSpot base image
+- 2 1TB SSD for data
 
 The following topics walk you through this process.
 
-###  Prerequisites
-
-1. Ensure that **Network Service Tier** is set to **Premium** for all VMs to be used in your ThoughtSpot cluster. 
-2. A ThoughtSpot cluster requires 10 Gb/s bandwidth (or better) between any two nodes. This must be established before creating a new cluster.
-
 ###  Create an instance
 
-1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
+1. Log in to the [Google Cloud Console](https://console.cloud.google.com/).
 
 2. Go to the Compute Engine dashboard, and select the associated ThoughtSpot project.
 
@@ -72,7 +75,7 @@ The following topics walk you through this process.
 
       ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
 
-      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the latest one is always at the top of the list. Both will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches."%}
+      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the newest one is always at the top of the list. Both will work, but we recommend taking the newer image as it likely includes security or other types of patches."%}
 
       c. Click **Select** to save the boot disk configuration.
 
@@ -81,7 +84,7 @@ The following topics walk you through this process.
 
     ![]({{ site.baseurl }}/images/gcp-6-save-boot-disk-expand-mgmt.png "Advanced disk config")
 
-7.  Attach two 1 TB SSD drives. These drives will be used for the data storage.
+7.  Attach 2 1TB SSD drives. These drives will be used for the data storage.
 
     a. Click the **Disks** tab, and click **Add new disk**.
 
@@ -109,8 +112,8 @@ The following topics walk you through this process.
 ThoughtSpot Systems Reliability Engineer (SRE). Please consult
 with your ThoughtSpot Customer Service or Support Engineer on these steps." %}
 
-Before we can install a ThoughtSpot cluster, an administrator must log into
-each VM through SSH as user "admin", and complete the following preparation steps:
+Before we can install a ThoughtSpot cluster, an administrator must log in to
+each VM via SSH as user "admin" and complete the following preparation steps:
 
 1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` on every machine.
 2. Configure each VM based on the site-survey.

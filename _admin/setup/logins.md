@@ -1,12 +1,12 @@
 ---
-title: [Sign-in credentials for administration]
-
+title: [Login credentials for administration]
+keywords: tbd
 last_updated: tbd
 summary: "You need administrative access to perform the actions discussed in this guide. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can access ThoughtSpot through SSH at the command prompt, and from a Web browser.
+You can access ThoughtSpot via SSH at the command prompt and from a Web browser.
 
 ## Administrative access
 

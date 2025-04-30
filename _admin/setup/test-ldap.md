@@ -1,7 +1,7 @@
 ---
 title: [Test the LDAP configuration]
-
-
+tags: [SAML_LDAP_AD]
+keywords: LDAP,test,configure
 last_updated: tbd
 summary: "This procedure allows you to test the LDAP connection you created.
 "
@@ -18,4 +18,4 @@ After configuring LDAP, you can test to make sure it is working by issuing a com
     ```
 
 3. Supply the LDAP password when prompted.
-4. If the connection works, you can see a confirmation message.
+4. If the connection works, you'll see a confirmation message.

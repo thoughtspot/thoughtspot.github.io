@@ -1,6 +1,6 @@
 ---
 title: [Import CSV files with tsload]
-
+keywords: tbd
 last_updated: tbd
 summary: "The tsload command is a common way to import data from a CSV file."
 sidebar: mydoc_sidebar
@@ -35,7 +35,7 @@ You can integrate tsload into your ETL environment for more automated data loads
            --empty_target --source_file=ssbm_customer.csv
            --v 1 --field_separator "|"
     ```
-4. After the processing begins, you can see messages that indicate the progress, and then two summary messages after the load is complete.
+4. Once the processing begins, you'll see messages to indicate the progress and then two summary messages after the load is complete.
 
     ```
     Started processing data row
@@ -71,16 +71,11 @@ You can integrate tsload into your ETL environment for more automated data loads
     ```
 5. In the load summary, be sure to check the **Rows duplicate/omitted** number. This indicates the number of rows (if any) that were omitted from loading because they did not satisfy the table constraints. A common cause of this would be a duplicate primary key. If any rows were omitted, review your CSV file, make the required adjustments, and then load it again.
 
-6. After correctly loading your file, repeat this process to load data from any additional CSV files.
+6. Once your file has been loaded properly, repeat this process to load data from any additional CSV files.
 
 ## Loading data from an AWS S3 bucket
 
 If you have data in .csv format stored in an AWS bucket, you can load it directly to ThoughtSpot.
-
-### (5.3.1 and later) Assigning S3 read-only role to your EC2 instance
-If your cluster is running 5.3.1 or later, you can assign an S3 read-only role to your ThoughtSpot EC2 instance(s) so the instance(s) can access the S3 bucket from which you want to load the data. This eliminates the need to enter the AWS S3 credentials when loading your data. For details, see: [Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html){:target="_blank"} in Amazon's AWS documentation.
-
-{% include note.html content="If you are using S3 for persistent storage, and assigned the *ec2rolewithfulls3access* IAM role to your instance, you do not need to complete this step." %}
 
 1.  Log in to the Linux shell using SSH.
 
@@ -102,16 +97,14 @@ If your cluster is running 5.3.1 or later, you can assign an S3 read-only role t
 
     * AWS S3 region
 
-    * AWS S3 credentials (accesskey;secret_key)__*__
+    * AWS S3 credentials (accesskey;secret_key)
 
     * AWS S3 root (prefix for S3 object search path)
 
     Optionally, these four pieces of information can be inserted at the beginning of the command (in step 2), using the following flags: <br>
     * `--aws_s3_bucket_name "<bucket name>"` <br>
     * `--aws_s3_region_name "<region name>"` <br>
-    * `--aws_s3_credentials "<credentials>"`__*__ <br>
+    * `--aws_s3_credentials "<credentials>"` <br>
     * `--aws_s3_root "<search path>"`
 
-    {% include note.html content="<b>*<b>AWS S3 credentials is not used in the 5.3.1 release, if an S3 read-only role is assigned to your instance." %}
-
-4.  After the processing begins, progress messages appear, and then source and load summary messages after the load is complete.    
+4.  Once the processing begins, you'll see messages to indicate the progress and then source and load summary messages after the load is complete.    

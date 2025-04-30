@@ -49,10 +49,8 @@
 {% elsif page.url contains site.current_version %}
 <!-- SEO Tools -->
 {% seo %}
-{% elsif page.url == "/" or page.url == "" %}
-<meta name="robots" content="noindex" />
 {% else %}
-{% seo %}
+<meta name="robots" content="noindex" />
 {% endif %}
 
 <!--  Site Search -->
@@ -85,7 +83,7 @@ var ss360Config = {
         highlight: true
     },
     style: {
-        themeColor: "#4E55FD",
+        themeColor: "#ea603e",
         suggestions: {
             text: {
                 color: "#5c5c5c"
@@ -96,7 +94,7 @@ var ss360Config = {
             padding: "1px",
             distanceFromTop: "0px",
             border: {
-                color: "#4E55FD",
+                color: "#ea603e",
                 radius: "0px"
             }
      },

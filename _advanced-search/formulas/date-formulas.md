@@ -1,7 +1,7 @@
 ---
 title: [About date formulas]
-
-
+keywords: tbd
+tags: [dates, formulas]
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
@@ -40,7 +40,7 @@ The following example shows you how to calculate the percent increase from the l
 
 For the following date formulas, you can further specify either `fiscal` or
 Gregorian `calendar` on which to base date calculations. (If you do not specify a
-calendar type, the formula defaults to standard Gregorian, with the year
+calendar type, the formula will default to standard Gregorian, with the year
 starting in January.)
 
 * `day_number_of_quarter`

@@ -1,6 +1,6 @@
 ---
 title: [Hide and show values]
-
+keywords: tbd
 last_updated: tbd
 summary: "You can hide and show values on the chart using the legend."
 sidebar: mydoc_sidebar
@@ -18,6 +18,6 @@ Clicking on a legend item will hide it from the chart. You can click it again to
 
 3. On the chart, click the legend value you would like to hide. Click the hidden legend value again to show it.
 
-    In the following example, we clicked `northwest` to hide it.
+    In the example below, we clicked `northwest` to hide it.
 
     ![]({{ site.baseurl }}/images/legend_hide_this_value.png "Hide a legend value from the chart")

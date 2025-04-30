@@ -1,7 +1,7 @@
 ---
 title: [Customize look and feel]
-
-
+tags: [customize,style,palette,color,brand]
+keywords: customize
 last_updated: tbd
 summary: "You can brand the ThoughtSpot application for your company."
 sidebar: mydoc_sidebar
@@ -31,7 +31,7 @@ cursor moves to the right of any setting.
 
 ![]({{ site.baseurl }}/images/custom-style-reset.png)
 
-The following table lists the style customizations you can configure.
+The table below lists the style customizations you can configure.
 
 <table>
   <tr>
@@ -91,11 +91,11 @@ To set a new font:
 
 2. Select the label you want to change.
 
-3. Click the **+** button.
+3. Press the **+** button.
 
    The system displays the **Custom Font** dialog.
 
-4. Click the **Custom Font** field.
+4. Press the **Custom Font** field.
 
    The system displays the file finder.
 
@@ -103,7 +103,7 @@ To set a new font:
 
    The file appears in the font dialog
 
-6. Click **Save** to change the font.
+6. Press **Save** to change the font.
 
 ## How to specify the behavior or clickable links in data
 

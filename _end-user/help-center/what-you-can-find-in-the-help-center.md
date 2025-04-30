@@ -1,5 +1,7 @@
 ---
 title: [More help and support]
+tags: [keywords]
+keywords: tbd
 last_updated: tbd
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
@@ -65,7 +67,7 @@ From this dialog you can get to the following:
   </tr>
 </table>
 
-Along the bottom of the **Help** dialog, you can see a link to contact Support as
+Along the bottom of the **Help** dialog you'll see a link to contact Support as
 well as the version of ThoughtSpot you are using.
 
 ## Learn

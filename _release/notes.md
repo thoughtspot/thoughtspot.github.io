@@ -1,223 +1,106 @@
 ---
-title: ["5.3 Release Notes"]
+title: ["5.2 Release Notes"]
 toc: false
-last_updated: July 2019
+keywords: "release notes"
+last_updated: May 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.3.1 is now available. These release notes include information about new features,
+ThoughtSpot version 5.2 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
-* [5.3.1 New Features](#531-new)
-* [5.3.1 Fixed Issues](#531-fixed)
-* [5.3 New Features](#53-new)
-* [5.3 Fixed Issues](#53-fixed)
-* [Beta Programs](#beta-program)
-* [Notes from Older Versions](#notes-for-older-versions)
+* [5.2 New Features](#52-new)
+* [5.2 Fixed Issues](#52-fixed)
+* [Notes for older versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.3.1 release
+If you are running one of the following versions, you can upgrade to the 5.2 release
 directly:
 
-* 5.3 to 5.3.1
-* 5.2.x to 5.3.1
-* 5.1.x to 5.3.1
+* 4.5.x to 5.2
+* 5.0.x to 5.2
+* 5.1.x to 5.2
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.1.x, version 5.2.x, or version 5.3, and then to the 5.3.1 release.
+First, upgrade to one of the above versions, and then to the 5.2 release.
 
-{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
+{: id="52-new"}
+## 5.2 New Features and Functionality
 
-{: id="531-new"}
-## 5.3.1 New Features and Functionality
+### ThoughtSpot mobile beta
 
-### Onboarding
-In this release, administrators can configure 'Welcome' emails to send to both new and existing users, and to existing groups. See [Edit a group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-group) and
-[Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface).
+Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, fill out this form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8SyPeXdiL5lpcp8tulPLLoaXbNJcpNgIuFcU6pr34vOx6A/viewform" target="_blank">ThoughtSpot Mobile App Beta Access.</a>
 
-### Embrace
-**ThoughtSpot Embrace is in beta.**
-In Release 5.3.1, you can connect to multiple Snowflake databases, and get faster querying results. We also made improvements to the connection configuration. See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+### Favorites
 
-### Pinboard export in PDF format has branding, and more
-We enhanced the presentation experience even more. You can now brand the PDF with your own logo, add pagination, and supply footer text. When using the _Visualizations_ mode, you can de-select some of the visuals. See [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
+If you frequently go back to look at certain Answers or Pinboards, you can now use Favorites to find them faster than ever before. Click the Favorite icon ![Favorite icon]({{ site.baseurl }}/images/icon-favorite.png){: .inline} of an Answer or Pinboard, and it will be added to the Favorites list on the Answers and Pinboard pages, as well as the ThoughtSpot home page.
 
-<!-- ### New group functions
-- [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
-- [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile) -->
+### Custom calendars
 
-### Streamlined AWS data loading from an S3 bucket
-You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials or root when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
+You can now add a custom fiscal calendar for your company. This is important if your company has a fiscal year that is different than the calendar year. With your custom calendar, you can be sure when you search for ‘last quarter’ that you will get results that reflect your company's last fiscal quarter. For details refer to [Create a custom calendar]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#creating-a-custom-calendar).
 
-{: id="531-fixed"}
-## 5.3.1 Fixed Issues
+### Ask an expert
 
-The following issues are fixed in the 5.3.1 release:
+Sometimes making a data-based decision is so challenging that you need an expert opinion from someone else. This is what the 'Ask an expert' feature is all about. Below the results of a Search or Answer, click **Ask an expert** to write a question to the ThoughtSpot users in your organization who are very familiar with the data set used for that search.  When you send your question, you automatically provide the search terms and the results. With this information, an expert in your organization will have the context they need to provide clarification and updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
-- Using a custom calendar, and doing a query that filters on a date field causes a database error.
+### IN subquery for filtering
 
-- Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.
+With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s actually two queries. The first one searches for the top 10 stores in terms of net margin last month, and the second one searches for the sales of those stores this month.  Before the IN subquery, you would need to save a View to get this answer. For details refer to [Using the in keyword for nested searches]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
 
-- When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.
+### Support for small and medium cloud instance types
 
-- Opening certain pinboards can cause the Google Chrome browser to freeze.
+One size does not fit all when it comes to the cloud. You need flexibility to choose the right cloud instance type for your ThoughtSpot deployment. If you are deploying an instance with lower data sizes (<=100 GB), ThoughtSpot now supports “small” (20 GB data) and “medium” (100 GB data) instance types to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). For details refer to [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types).
 
-- Columns renamed in a worksheet revert back to their original names later.
+### Cluster shutdown and restart to save infrastructure costs
 
-- Columns cannot be deleted from a worksheet.
+If you don't need your ThoughtSpot cluster up and running 24/7, you can shut it down and restart it during normal usage hours. This allows you to save on the infrastructure costs of running ThoughtSpot VM instances in cloud environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
 
-- Using a custom calendar and filtering date values by year, month or quarter does not work.
+### Ability to upload .CSV data from an AWS S3 bucket
 
-- Canadian postal codes do not appear on maps.
+If you have data in .csv format stored in an AWS bucket, you can now load it directly into ThoughtSpot, using the **tsload** command. For details, refer to: [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket).
 
-- The Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo.
+### Allow users to sign up for ThoughtSpot
 
-{: id="53-new"}
-## 5.3 New Features and Functionality
+You can now allow people in your organization to sign up for ThoughtSpot by clicking a button on the sign-in page. When a person clicks the sign-up button, they go to a sign-up page that you’ve already set up outside of ThoughtSpot. This can be any page you want to use for registering new users.
+For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-groups/sign-up.html).
 
-### Onboarding
-In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined learning experience with default pinboards.
+### Improved Japanese date keywords
 
-- To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
+Japanese-language users now have a more natural way of expressing date phrases in their queries.
+For details, refer to: [Japanese (日本語) date keyword reference]({{ site.baseurl }}/reference/keywords-ja-JP.html).
 
-- To include users in the onboarding process, each user profile must include a valid email address. See [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
+### New languages
 
-- When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
+ThoughtSpot now supports seven new languages, available in the Profile page:
+* Danish
+* Norwegian
+* Swedish
+* Finnish
+* Portuguese (Portugal)
+* Spanish (Spain)
+* Italian
+* English (Australia)
 
-- To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#onboarding).
+{: id="52-fixed"}
+## 5.2 Fixed Issues
 
-- See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).  
+Table user experience improvements:
+* The column header is now left-aligned.
+* Column widths can be made very narrow.
 
-### ThoughtSpot mobile
-
-Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or later. For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
-
-### Mandatory user emails
-
-To upgrade to this release, all users must have a valid email in ThoughtSpot. We block the upgrade if all users don't have valid emails.
-
-Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure authentication through Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
-
-### Amazon S3 persistent storage option
-
-You can now reduce the cost of an AWS deployment by using S3 for storage of major services like the ThoughtSpot database and search engine.  For more information, see [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html#).
-
-### Embrace
-
-**ThoughtSpot Embrace is in beta.**
-
-With ThoughtSpot Embrace, you can perform live queries against an external data repository without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot.
-
-There are two modes for using Embrace:
-- Linked tables provide real-time access to external data.
-- Synced tables enable you to bring select tables into the ThoughtSpot internal database.
-
-You can easily switch between Synced and Linked operation modes.
-
-You can also schedule automatic updates that refresh the synced data
-
-For more information, see [About ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
-
-### Pinboard export in PDF format
-
-You can now download a pinboard in PDF format, without downloading each visualization separately. PDF files replicate the pinboard layout by default. Alternatively, you can choose to have each visualization on its own page. For more information, see [Download a pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
-
-### Pinboard presentation in full screen
-
-We enhanced the presentation experience to show ThoughtSpot pinboards like a typical slide deck. This release features better navigation and presentation controls. See [Present a pinboard as a slideshow]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html).
-
-### New candlestick chart type
-
-We added a new chart that shows price movements of financial instruments. You can adapt it to show other probability distribution information.  See [Candlestick charts]({{ site.baseurl }}/end-user/search/candlestick-charts.html).
-
-### SpotIQ comparative analysis
-
-SpotIQ Analysis now supports more complex measurements:  
-* _Sum over sum_ and _Average_ use 'what-if' percentage insights.  
-
-See [Comparative Analysis]({{ site.baseurl }}/spotiq/spotiq-comparative-analysis.html).
-
-### SpotIQ simplified feedback
-
-We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}/spotiq/insight-feedback.html).
-
-### SearchIQ optimization and other enhancements
-
-**SearchIQ is in Beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
-
-### Schema and join information
-
-You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
-
-### New geo map support
-<!--SCAL-48652-->
-Starting with this release, ThoughtSpot supports geo maps for these countries and regions:
- - United Kingdom: Zip Code
- - Sweden: Postal Code
-
- See [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference.html).
-
-### Drivers
-
-As of this release, ThoughtSpot no longer supports Solaris installations.  
-We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/downloads.html).
-
-{: id="53-fixed"}
-## 5.3 Fixed Issues
-
-### Display and Rendering
-
-- A problem where dates do not display properly in the query details pane of an answer is now fixed.  
-- An issue where the color coding of columns is not displayed in a PDF downloaded from a worksheet is fixed.  
-- A problem where using **Copy and edit** in a saved answer causes the screen to go blank has been fixed.  
-- An issue where axis labels are missing from some visualizations is now fixed.  
-- A problem where URLs that appear within an Answer are red, instead of blue, is now fixed.  
-- An issue where an answer that has no measures causes it to display blank is now fixed.  
-- A problem where weekly and monthly charts are not showing weekly and monthly aggregation correctly is now fixed.
-
-### Pinboards
-
-- A problem where the column tooltip in a pinboard does not show last updated information has been fixed.  
-- An issue where the filter dialog box is unresponsive when opened from pinboard is now fixed.  
-- A problem when pinning an answer to a pinboard where the pinboard list is very slow to display is now fixed.  
-- An issue where scheduled pinboard emails fail to send to a specific recipient with a valid email address is now fixed.  
-- A problem where a stacked bar chart does not work in a pinboard is now fixed.  
-- An issue where an exclude filter does not work properly on a pinboard is now fixed.  
-- A problem where a user cannot edit a pinboard, even though they have the proper permissions to do so is fixed.  
-- An issue where emails fail to send from scheduled pinboards that contain Japanese characters in their title is now fixed.
-
-### Search
-
-- A problem where nulls are excluded from a query, even when they have not been excluded using a filter is now fixed.  
-- An issue where searches on a pinboard don’t include cached queries has been fixed.  
-
-### Administration
-
-- An issue where running the `tscli cluster` command causes a failed security check is now fixed.   
-- A problem where the Informatica ODBC cannot connect to ThoughtSpot is now fixed.<br>
-
-### Answers
-
-- A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.
-
-{: id="beta-program"}
-## Beta Programs
-If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
-We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
-These features are currently in Beta. Please contact us if you are interested in participating:
-- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
-- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.
+Chart user experience improvements:
+* When sorting by date on the x-axis, the date format no longer changes and the axis no longer disappears.
+* You can now sort using a sort field that is not in your chart.
 
 {: id="notes-for-older-versions"}
-## Notes from Older Versions
+## Notes from older versions
 
-* [5.2 Release Notes](/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf)
 * [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)
 * [5.0 Release Notes](/5.0/pdf/ThoughtSpot_Release_Notes_5.0.pdf)
 * [4.5 Release Notes](/4.5/pdf/ThoughtSpot_Release_Notes_4.5.pdf)
