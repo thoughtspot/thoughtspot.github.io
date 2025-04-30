@@ -1,6 +1,5 @@
 ---
 title: [Set ADDITIVE or AGGREGATION ]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can allow aggregate on MEASURE columns and some ATTRIBUTE columns."

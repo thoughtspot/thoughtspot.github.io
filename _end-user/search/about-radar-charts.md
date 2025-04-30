@@ -1,6 +1,5 @@
 ---
 title: [Spiderweb charts]
-tags:
 keywords: spiderweb,multivariate
 last_updated: tbd
 summary: "The Spiderweb chart is a radar chart that contains both columns and a special type of line chart.

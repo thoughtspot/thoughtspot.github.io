@@ -1,5 +1,5 @@
 
-The following ports need to be opened up to requests from your user population. There are two main categories: operations and debugging.
+The following ports must be open for requests from your user population. There are two main categories: operations and debugging.
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
 |----|--------|------------|---------|------|-----------|-----------|

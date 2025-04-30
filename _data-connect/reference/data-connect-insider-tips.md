@@ -1,6 +1,6 @@
 ---
 title: [Data Connect best practices]
-tags:
+tags: [bestpractices]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -24,7 +24,7 @@ If you're doing incremental loads into existing tables, you may want to automate
 
 ### Renaming columns and tables
 
-ThoughtSpot does not support renaming columns using TQL for tables that were imported with Data Connect. You can rename columns and tables after a data load, using the DDL edit step or the ThoughtSpot web application. Select Data and click on the name of the table. Then click on a column to rename it.
+ThoughtSpot does not support renaming columns using TQL for tables that were imported with Data Connect. If a column or table name changes on the source, you will need to recreate the data load job.
 
 In older versions of ThoughtSpot Data Connect, you could not use characters other than alphanumeric and underscores. Now, you can change a column name to use those, for example you could change "percent_gross_margin" to "% gross margin".
 
@@ -36,7 +36,7 @@ You can see the status of a data load job by looking at the list of data sources
 
  ![]({{ site.baseurl }}/images/data_connect_load_status.png "Data load status")
 
-To see loading details for each table that makes up a data load, click on the name of the data load.
+To see loading details for each table that makes up a data load, click the name of the data load.
 
  ![]({{ site.baseurl }}/images/data_connect_load_table_status.png "Data load status details")
 
@@ -48,7 +48,10 @@ You can download the session logs for a data load run. Access the link to downlo
 
 ## Timestamp format
 
-All relevant source values should be in the following format: `yyyy-mm-dd hh:mm:ss[.fffffffff]`. In addition, please ensure that year values are within the range of 0000-9999.
+All relevant source values should be in the following format: `yyyy-mm-dd
+hh:mm:ss`. In addition, please ensure that year values are within the range of
+0000-9999. Any fractional seconds in the source values should be removed and
+converted to the format above by adding a transformation.
 
 ## Import relationships
 

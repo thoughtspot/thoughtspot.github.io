@@ -1,7 +1,6 @@
 ---
 title: [Schedule a pinboard job]
-tags:
-keywords: "job,pinboard,schedule"
+keywords: "job,pinboard,schedule,gating,kpi"
 last_updated: tbd
 summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
@@ -9,30 +8,30 @@ permalink: /:collection/:path.html
 ---
 You can add multiple schedules with different configurations for a single
 pinboard. However, each job is limited to one pinboard schedule. To add
-a schedule, you must have administrator or can schedule pinboard privilege, and
+a schedule, you must either be an administrator or have the schedule pinboard privilege, and
 at least edit-only and view-only access to the pinboard.
 
 To schedule a pinboard:
 
-1. Log in to ThoughtSpot from a browser.
-2. Click on **Pinboards**, on the top navigation bar.
+1. Sign in to ThoughtSpot from a browser.
+2. Click **Pinboards**, on the top navigation bar.
 
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
-3. Select the pinboard you would like to create a schedule for.
-4. Click **Actions** and select **Manage schedules** to view all of the schedules set for the pinboard.
+3. Select the pinboard you want to create a schedule for.
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
 
      ![]({{ site.baseurl }}/images/view_schedules.png "View pinboard schedules")
 
 5. Click **+ Schedule** to add a new schedule.
 
-     ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
+    ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
 
-     The system displays the **Add a schedule for _PINBORD_** page. On this page you configure both the schedule
-
-6. Set the values for your schedule.
+     On the **Add a Schedule** page, you create a new schedule for your pinboard.
 
     ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
+
+6. Set the values for your schedule.
 
     <table>
      <tr>
@@ -56,12 +55,15 @@ To schedule a pinboard:
        <td>CSV files provide all data for tables, with one attachment per table. Use CSV files to perform further analysis offline. PDF files show all visualizations in the pinboard. Each chart takes up a whole page in the file, while only the first 100 rows of a table are included. Use PDF files to skim the data.</td>
      </tr>
      <tr>
-       <th>Gating condition</th>
-       <td>Write a statement that returns a boolean value. For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="/reference/formula-reference.html">Formula Reference</a>.</td>
+     <th>Gating condition</th>
+     <td><p>Write a statement that returns a single boolean value (true or false). For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. Other than checking your formula syntax, ThoughtSpot does not validate your formula returns a single boolean.</p>
+     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function Reference</a>.</p></td>
      </tr>
      <tr>
        <th>Recipients</th>
-       <td>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your Thoughtspot admin must have set your whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.</td>
+       <td><p>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your ThoughtSpot admin must have set your whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.</p>
+       <p>If you experience problems with sending email, your cluster may not have SMTP enabled. Contact your system administrator to resolve this issue.</p>
+       </td>
      </tr>
    </table>
 

@@ -70,7 +70,7 @@
        });
     </script>
     {% endif %}
-
+<meta name="google-site-verification" content="A4aJPCELY1A6FdBNFswMFI6hX-y6jxAu1v5SLW1ur48" />
 </head>
 <body>
 {% include topnav.html %}
@@ -100,7 +100,7 @@
     </div>
 
 </body>
-{% if site.google_analytics %}
+{% if site.google_analytics and jekyll.environment == 'production' %}
 {% include google_analytics.html %}
 {% endif %}
 </html>

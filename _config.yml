@@ -31,6 +31,8 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
 
+
+
 # Files and directories that jekyll will exclude from the build output
 exclude:
   - .idea/
@@ -78,8 +80,6 @@ collections:
     output: true
   appliance:
     output: true
-  aws:
-    output: true
   complex-search:
     output: true
   data-connect:
@@ -97,6 +97,10 @@ collections:
   release:
     output: true
   spotiq:
+    output: true
+  tooltips:
+    output: true
+  faq:
     output: true
 
 defaults:

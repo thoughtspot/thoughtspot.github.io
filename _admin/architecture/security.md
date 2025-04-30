@@ -1,7 +1,7 @@
 ---
 title: [Data and object security]
-tags:
 keywords: "data,security,row level security,privileges"
+tags: [rls,security]
 last_updated: tbd
 summary: "Understand how to secure your data and other key information in ThoughtSpot."
 sidebar: mydoc_sidebar
@@ -20,7 +20,7 @@ Object security is the ability for users to see content within ThoughtSpot.
 Objects can be tables, columns in tables, worksheets, pinboards, and saved
 answers.
 
-Users gain access to objects when an object owner share-answers it with them.
+Users gain access to objects when an object owner share-answers with them.
 Owners can share with individual users or with entire groups, giving access to
 anyone within that group. Owners can share with edit or view options.
 
@@ -79,9 +79,6 @@ access to. An HR person could create an answer with the salary information and
 share with someone outside of HR. That person would now have access to the
 salary information.
 
-There are updates planned in future versions that will provider stricter access
-to columns and stronger governance of data.
-
 ## System privileges
 
 System privileges refer to what a user can do in ThoughtSpot. For example, can
@@ -89,5 +86,4 @@ they upload or download data or share with all users. These privileges are
 defined on a group level and inherit downwards. So, if Group A had child groups
 Group B and Group C, then any privilege given to Group A is also available to
 Group B and Group C. What this often means is that separate sets of groups are
-required to manage privileges. Non-shareable groups (planned for version 4.4)
-should eliminate this potential issue.
+required to manage privileges.
