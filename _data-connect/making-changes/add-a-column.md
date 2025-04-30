@@ -1,6 +1,5 @@
 ---
 title: [Add a column to an existing data source]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Add a column to an existing data source."
@@ -30,7 +29,7 @@ The procedure to make this change to an existing data source has two main parts:
     $ tql
     ```
 
-3. Designate the database you'll be working in:
+3. Designate the database:
 
     ```
     TQL> use <database_name>;
@@ -51,10 +50,11 @@ The procedure to make this change to an existing data source has two main parts:
 
     ```
     TQL> ALTER TABLE foodmart.account
-         ADD COLUMN account_id VARCHAR(10);
+         ADD COLUMN account_id VARCHAR(10)
+         DEFAULT '';
     ```
 
-    You must use the fully qualified name of the old table when adding the column via TQL. To find that you can look at the DDL for the data source job itself.
+    You must use the fully qualified name of the old table when adding the column through TQL. To find that you can look at the DDL for the data source job itself.
 
 6. Run the `SCRIPT TABLE` command to get the new DDL to create the table.
 
@@ -62,7 +62,7 @@ The procedure to make this change to an existing data source has two main parts:
     TQL> SCRIPT TABLE <table>;
     ```
 
-    Copy the output of the command. This includes the fully qualified table name of the ThoughtSpot table and the column names of the source columns. Replace any VARCHAR\(<number\) column definitions with VARCHAR\(0\), to match the DDL that Data Connect generates. This is the DDL that you will use in your new data source.
+    Copy the output of the command. This includes the fully qualified table name of the ThoughtSpot table and the column names of the source columns. Replace any VARCHAR(<number) column definitions with VARCHAR(0), to match the DDL that Data Connect generates. This is the DDL that you will use in your new data source.
 
 7. [Create a new data source.]({{ site.baseurl }}/data-connect/setup/adding-data-source.html#)Be sure to choose the correct columns to match the new target table columns definitions. When you reach the step about editing the generated schema DDL, paste in the DDL that was output by the `SCRIPT TABLE` command.
 8. Run the data load and verify that everything is working as it should be.

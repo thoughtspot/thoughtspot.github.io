@@ -1,16 +1,24 @@
 ---
-title: [Formula reference]
-tags:
+title: [Formula function reference]
 keywords: tbd
+tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas.
+ThoughtSpot allows you to create derived columns in worksheets using formulas.
+You create these columns by building formulas using the **Formula Assistant**.
+An individual formula is constructed from _n_ combination of operators and
+functions.
 
-You can also see this list of operators and examples from within the Formula Builder by selecting **Formula Assistant**.
+This reference lists the various operators and functions you can use to create
+formulas.
 
-## Aggregate functions
+## Operators
+
+{% include content/operators.md %}
+
+## Aggregate functions (group aggregate)
 
 These functions can be used to aggregate data.
 
@@ -37,9 +45,6 @@ These functions can be used with text and numeric data types.
 
 {% include content/number-func.md %}
 
-## Operators
-
-{% include content/operators.md %}
 
 ## Text functions
 

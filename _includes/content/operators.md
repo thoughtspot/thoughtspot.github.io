@@ -15,7 +15,9 @@
     <tr>
       <td><code>and</code></td>
       <td>Returns true when both conditions are true, otherwise returns false.</td>
-      <td><code class="highlighter-rouge">(1 = 1) and (3 &gt; 2) = true</code><br><code class="highlighter-rouge">lastname = 'smith' and state ='texas'</code></td>
+      <td><code class="highlighter-rouge">(1 = 1) and (3 &gt; 2) = true</code><br><code class="highlighter-rouge">lastname = 'smith' and state ='texas'</code>
+      {% include note.html content="Not available for row level security (RLS) formulas." %}
+      </td>
     </tr>
     <tr>
       <td><code>if…then…else</code></td>

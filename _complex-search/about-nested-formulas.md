@@ -1,7 +1,7 @@
 ---
 title: [Nested formulas]
-tags:
 keywords: tbd
+tags: [formulas]
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar

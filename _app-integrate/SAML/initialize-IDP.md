@@ -1,6 +1,6 @@
 ---
 title: [Initialize the Identity Provider Metadata]
-tags:
+tags: [security]
 keywords: SAML,security,"active directory",IdP
 last_updated: tbd
 summary: "This procedure shows how to initialize the Identity Provider (IdP) metadata for AD FS."
@@ -27,11 +27,6 @@ To initialize the IdP metadata on AD FS:
 
 4. Replace the contents of the file `idp-meta.xml` with the metadata of the IdP that you downloaded.
    Do not change the name of the file.
-5. Restart Tomcat using these commands:
-
-    ```
-    $ cd /usr/local/scaligent/release
-    $ tscli --adv service push tomcat /usr/local/scaligent/release/production/orion/tomcat/tomcat_prod.config
-    ```
+5. Contact ThoughtSpot support for help restarting ThoughtSpot's Tomcat instance.
 
 6. Next, [Initialize the Service Provider Metadata](initialize-SP.html).

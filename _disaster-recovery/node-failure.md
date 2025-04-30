@@ -1,6 +1,5 @@
 ---
 title: [Node failure]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
@@ -15,7 +14,7 @@ A node is considered to have failed when one or more of these conditions occur:
 -   Two or more disks have failed.
 -   SSD has failed.
 -   Memory failure.
--   Another hardware component has failed \(networking, motherboard, power supplies\).
+-   Another hardware component has failed (networking, motherboard, power supplies).
 
 ## Symptoms
 
@@ -29,4 +28,4 @@ If you notice these symptoms, contact ThoughtSpot Support.
 
 ## Node replacement
 
-Node replacement is done on site by ThoughtSpot Support. You will need to schedule a maintenance window, since some downtime is required. For more information, please contact ThoughtSpot Support.
+Node replacement is done on site by ThoughtSpot Support. You must schedule a maintenance window, since some downtime is required. For more information, please contact ThoughtSpot Support.

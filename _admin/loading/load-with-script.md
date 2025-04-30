@@ -1,23 +1,31 @@
 ---
 title: [Use a script to load data]
-tags:
 keywords: "tsload,csv,script,load"
 last_updated: tbd
 summary: "Learn how to load one or files in bulk with a script."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If you need to load data from multiple CSV files, create a script to automate the process. You can also use a similar script to automate recurring data feeds.
+If you need to load data from multiple CSV files, create a script to automate
+the process. You can also use a similar script to automate recurring data feeds.
 
 ## Understand how to create a script
 
-The data loading script is a text file that contains all the calls to `tsload` for loading the data from your CSV files.
+The data loading script is a text file that contains all the calls to `tsload`
+for loading the data from your CSV files.
 
-The example script shown here uses the `cat` command to read the data file, and pipes it to tsload. When creating and testing your script, you may wish to replace each `cat` with `cat -10`, to load only the first ten lines of each file. This allows you to quickly run a test of your script. When the test succeeds for all the data files, you can then remove each `-10`, so the complete files will load when you run the script again.
+The example script shown here uses the `cat` command to read the data file, and
+pipes it to `tsload`. When creating and testing your script, you may wish to
+replace each `cat` with `cat -10`, to load only the first ten lines of each
+file. This allows you to quickly run a test of your script. When the test
+succeeds for all the data files, you can then remove each `-10`, so the complete
+files will load when you run the script again.
 
 1. Log in to the Linux shell using SSH.
 2. Navigate to the directory that contains your CSV files and open a new file in a text editor.
-3. Type in the commands to load the data. This example shows commands to load three files:
+3. Type in the commands to load the data.
+
+   This example shows commands to load three files:
 
     ```
     cat Players.csv | tsload
@@ -53,9 +61,9 @@ If you have a very large data file that takes a long time to load, you can reduc
 
 * Split up your large data file into multiple smaller files.
 
-* Stage the data files in a location accessible to the node on which you'll run the script. Usually you'll use an [NAS mounted file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#).
+* Stage the data files in a location accessible to the node on which you run the script. Usually, you can use an [NAS mounted file system]({{ site.baseurl }}/admin/setup/NAS-mount.html#).
 
-* Create a script to load the files (see example below).
+* Create a script to load the files in the following example.
 
 * Run the script to load the files. You will make your script multi-threaded by invoking multiple loader threads (between 1 and 5 are recommended).
 
@@ -126,4 +134,4 @@ nohup bash ./load_script.sh > master_log.txt &
 tail -f master_log.txt
 ```
 
-Constructing your script in this way will execute all the commands in the background, and output to the file `master_log.txt`. You'll see a running status as the commands in the script execute. After the script completes, you can check the log file for detailed information, such as the number of rows that loaded successfully.
+Constructing your script in this way will execute all the commands in the background, and output to the file `master_log.txt`. You can see a running status as the commands in the script execute. After the script completes, you can check the log file for detailed information, such as the number of rows that loaded successfully.

@@ -1,47 +1,72 @@
 ---
-title: [About the JavaScript API]
-tags:
-keywords: REST,API,data,"REST API",javascript
-last_updated: tbd
+title: [Using the JavaScript API]
+keywords: REST,API,data,"REST API",javascript,library,cors
+last_updated: 07/09/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Use the ThoughtSpot JavaScript API to embed data or visualizations from ThoughtSpot in your own Web portal, application, or page.
+The ThoughtSpot JavaScript API (JS API) enables you to use ThoughtSpot
+within your own Web application and to perform the following tasks:
 
-## JavaScript API Capabilities
+-   Authenticate users to ThoughtSpot
+-   Embed ThoughtSpot visualizations in your Web page using the `<iframe>` HTML tag
+-   Supply ThoughtSpot data to your Web page through ThoughtSpot's REST APIs
 
-The ThoughtSpot JavaScript API \(JS API\) allows you to use your ThoughtSpot instance within your own Web application. The JS API has methods that allow you to:
+You can download the <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">ThoughtSpot JavaScript library</a> from our secure storage server.
 
--   Authenticate to ThoughtSpot.
--   Embed visualizations from ThoughtSpot in your Web page using iframes.
--   Use the ThoughtSpot REST API to get data from ThoughtSpot and use it in your Web page.
+{% include note.html content="To use the JS API in your Web page, you must have the access and permissions to
+update the code of your Web page or application." %}
 
-To use the JS API in your Web page, you must have the access and permissions to update the code of the Web page.
-
-## Browser Support
+## Browser Support {#browser-support}
 
 The JS API works in the following browsers:
 
-|Browser|Versions|
-|-------|--------|
-|Internet Explorer|11|
-|Firefox|38 or later|
-|Google Chrome|47 or later|
-|Safari|9 or later|
+- **Internet Explorer**<br>Version 11
+- **Firefox**<br>Version 38 or later
+- **Google Chrome**<br>Version 47 or later
+- **Safari**<br>Version 9 or later
 
-**Internet Explorer 10**
+### Internet Explorer 10 ### {#ie-10}
 
-Microsoft introduced a compatibility mode in Internet Explorer 10, which displays your page using the version of Internet Explorer that is most compatible with the current page. Since we do not support any version below 11, this feature can sometimes break the code. There are two ways to force the emulation of Internet Explorer to the most up to date version:
+Microsoft introduced a compatibility mode in Internet Explorer 10, which
+displays the page using the version of Internet Explorer that is most
+compatible with that page. Because we do not support any version earlier than 11,
+this feature may break the code.
 
--   Add a Custom Response Header
+There are two approaches for forcing the Internet Explorer to emulate the most recent version:
 
-    This is the recommended approach since it is more robust, offers more control, and has a lower risk of introducing a bug to your code. The header name should be set to "X-UA-Compatible" and the value should be set to "IE=Edge". The response header should be based on the server it is set on and the technology being used.
+- **Add a Custom Response Header**
+    We recommend this approach because it is more robust, offers more
+    control, and has a lower risk of introducing a bug to your code. in general,
+    you must set the response header to match the server and the technology.
+    * set the header name to "X-UA-Compatible"
+    * set the value to "IE=Edge"
 
--   Add a Meta Tag
+- **Add a Meta Tag**
+    Add this meta tag as the _first_ tag in the header section of the page:
 
-    The following meta tag should be added to your header: `<meta http-equiv="X-UA-Compatible" content="IE=Edge" \>`. This tag must be the first tag in the header section of the page.
+    ```<meta http-equiv="X-UA-Compatible" content="IE=Edge" \>```
 
+## Cross-Origin HTTP Requests (CORS) ## {#cross-origin-http-requests}
 
-## Cross-Origin HTTP Requests
+Collecting user credentials from one application (domain) and sending them to
+another (such as ThoughtSpot) can present security vulnerabilities such as a
+phishing attack. Cross-origin or cross-domain verification closes this vulnerability.
 
-Because you'll be making a call from your own Web page, portal, or application to ThoughtSpot, which has a different domain, you'll need to enable cross-origin HTTP requests. This controls what domains are allowed to use this code to authorize users and prevents other people from copying your code and running it on their site. For example, if your Web site is hosted on the domain example.com, you would need to set the following origin for your client ID: http://example.com. If you want to test your code locally, you'll also need to add the origin for your local server as well, for example: http://localhost:8080.
+When you use the JavaScript API, your client calls ThoughtSpot from your Web
+page, portal, or application. Because your client and ThoughtSpot are on different
+domains, you must enable cross-origin HTTP requests from your client application
+to the ThoughtSpot application. This protects your data by preventing another actor
+from using the same URL to embed the visualization in its own Web pages.
+
+Your cluster's CORS configuration controls which domains can use your
+client code to authorize users. It also prevents code copying and deployment on
+unauthorized sites.  For example, if your Web site is hosted on
+the domain `example.com`, you must enable CORS for that domain. Similarly, to
+test your code locally, you must also add the domain for your
+local server, such as `http://localhost:8080`. We recommend that you disable the
+`localhost` access after you finish testing.
+
+To enable CORS between your client applications and your ThoughtSpot instance,
+you must work with <a href="mailto:support@thoughtspot.com">ThoughtSpot
+Support</a>.

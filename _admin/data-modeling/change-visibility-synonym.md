@@ -1,6 +1,5 @@
 ---
 title: [Hide a column or define a synonym]
-tags:
 keywords: "data,synonym,hide"
 last_updated: tbd
 summary: "Hide a column from users or make it easier to find by assigning a synonym."
@@ -25,7 +24,7 @@ to choose the correct one. There might also be some columns in the dataset that
 you don’t want to expose to the users.
 
 Change the **HIDDEN** (UI)/**Hide** (model file) setting to hide a column. By
-default, all columns in a data source ware shown in ThoughtSpot. To hide these
+default, all columns in a data source appear in ThoughtSpot. To hide these
 columns, set the **HIDDEN** setting to `YES`.
 
 1. Find the **HIDDEN** (UI)/**Hide** (model file) setting for a column.

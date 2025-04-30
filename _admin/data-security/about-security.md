@@ -1,8 +1,7 @@
 ---
 title: [Overview of security features]
-tags:
+tags: [security]
 keywords: tbd
-last_updated: tbd
 summary:
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

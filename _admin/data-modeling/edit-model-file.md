@@ -1,7 +1,7 @@
 ---
 title: [Edit the system-wide data model]
-tags:
 keywords: tbd
+tags: [indexing]
 last_updated: tbd
 summary: "Edit the modeling file to edit your data settings."
 sidebar: mydoc_sidebar
@@ -10,8 +10,8 @@ permalink: /:collection/:path.html
 
 When you load data, ThoughtSpot uses defaults for data modeling metadata. You
 change these defaults using the data modeling file if you have access to the
-**ADMIN > Data Management** page. This means editing this file allows you to
-navigate and edit all your system's data columns at once, in bulk. When you (or
+**ADMIN > Data Management** page. Editing this file allows you to
+view and edit all the system data columns. When you (or
 your users) add new data to your system, this file changes as it expands to
 accommodate new data columns.
 
@@ -49,27 +49,29 @@ you edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click on the **admin** tab in the top navigation bar.
+
+2. Click the **ADMIN** tab in the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click on **Data Management**.
-4. Click **Download model.xls**.
+3. Click **Data Management**, then click **Business Data Model**.
+
+4. Click **Download**.
 
     ![]({{ site.baseurl }}/images/download_model.png)
 
 ## Edit the file and change the settings
 
-You'll make changes to the settings using this procedure. To see a list of the
+You can make changes to the settings using this procedure. To see a list of the
 changes you can make, see [Data modeling settings](data-modeling-settings.html#). You can edit any of the values in the
-model file, except for those where the words **DoNotModify** appear below the
+model file, except for those where the words **DoNotModify** appear under the
 column header. To make changes in the model file:
 
 1. Open the model file you downloaded (`model.xls`) in Excel, vi/vim, or a text editor.
 
     If you are using Excel, you may see a warning message.
 
-         ![]({{ site.baseurl }}/images/warning_open_model_excel.png)
+     ![]({{ site.baseurl }}/images/warning_open_model_excel.png)
 
     Click `YES` to proceed.
 
@@ -96,18 +98,18 @@ After you have made changes to the modeling file, you must upload it back to
 ThoughtSpot before the changes will take effect. To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click **ADMIN**, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click on **Data Management**.
+3. Click **Data Management**, then click **Business Data Model**.
 4. Click **Browse your files** to upload the model.xls file, or drag and drop it in the zone.
 
     ![]({{ site.baseurl }}/images/upload_model.png)
 
     If you receive an error message upon uploading the file, check that it does
     not include any multi-byte characters (for example, Japanese or other multi-byte
-    language characters). If it does, you'll need to download the file again and
+    language characters). If it does, you must download the file again and
     make your edits using vi or vim.
 
     If you choose to remove all the rows you have not changed from

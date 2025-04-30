@@ -1,6 +1,6 @@
 ---
 title: [Overview of schema building]
-tags: [Modeling_Relationships,Data_Integ_TQL]
+tags: [Modeling, TQL]
 keywords: "SQL,data schema,TQL"
 last_updated: tbd
 summary: "Before you can load data into ThoughtSpot, you must build a database schema to receive it. "
@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 You can build a schema by writing a SQL script that creates the objects in your schema. ThoughtSpot provides the ThoughtSpot SQL Command Line (TQL) for creating, viewing, and managing a schema using SQL. Your script can use any statements that are supported in ThoughtSpot SQL Command Line (TQL). The TQL syntax is similar to the SQL used in other relational databases, but with some important differences.
 
-You'll use DDL (data definition language) to create the schema into which you'll load the data. You'll probably want to put all your DDL statements into a text file, which you'll use as a script for creating the schema.
+You can use DDL (data definition language) to create the schema into which you can load the data. We recommend placing all your DDL statements into a single script for creating the schema.
 
 ## Upload the script through the browser
 

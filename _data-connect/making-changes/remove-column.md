@@ -1,6 +1,5 @@
 ---
 title: [Remove a column from an existing data source]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -22,7 +21,7 @@ You should always take a snapshot of your database before making any schema chan
     $ tql
     ```
 
-3. Designate the database you'll be working in:
+3. Designate the database:
 
     ```
     TQL> use <database_name>;
@@ -46,7 +45,7 @@ You should always take a snapshot of your database before making any schema chan
          DROP COLUMN account_id;
     ```
 
-    You must use the fully qualified name of the old table when adding the column via TQL. To find that you can look at the DDL for the data source job itself.
+    You must use the fully qualified name of the old table when adding the column through TQL. To find that you can look at the DDL for the data source job itself.
 
 6. Run the `SCRIPT TABLE` command to get the new DDL to create the table.
 

@@ -1,13 +1,13 @@
 ---
 title: [Overview of keyword searches]
-tags:
+tags: [keywords]
 keywords: tbd
 last_updated: tbd
 summary: "Use keywords when asking a question to narrow and further define your search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [references]({{ site.baseurl }}/reference/keywords.html#) section or in the help center. Open the help center by clicking **Help** on the top navigation bar.
+In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [reference]({{ site.baseurl }}/reference/keywords.html#) section or in the help. Open the help by selecting **Help** from the top navigation bar.
 
  ![]({{ site.baseurl }}/images/help_center_keywords.png "Help center keywords list")
 
@@ -32,7 +32,7 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
 -   **Basic keywords**
 
-    You can use keywords such as `top` and "`bottom` to, for example, only see results for the best or worst performing sales rep.
+    You can use keywords such as `top` and `bottom` to, for example, only see results for the best or worst performing sales rep.
 
 -   **Date keywords**
 
@@ -50,7 +50,7 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
     These keywords allows you to define your search by sum, average, count, max, min, and other accumulations.
 
--   **Filter keywords**
+-   **Comparative keywords**
 
     Filter keywords work in the same way as filters on table columns or chart axes.
 

@@ -1,27 +1,29 @@
 ---
 title: ["Add, edit, or delete a user"]
-tags:
 keywords: "user, delete, add, edit, manage"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You will create a user account for each unique person who will access ThoughtSpot, either manually or through LDAP. If a user has access through LDAP, that user's information is managed via your LDAP installation.  If you create a user manually in ThoughtSpot, you manage that user in ThoughtSpot.
+For each unique person who accesses ThoughtSpot, you must create a user account.
 
-You can edit manually created users through the interface. If a manually-created user forgets their password, you can reset it by editing the user. If you have forgotten the admin password, please call [ThoughtSpot Support.]({{ site.baseurl }}/admin/misc/contact.html#)
+You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
 
+When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot. For example, you can reset the user's password, change their email, and so on. If forgot the admin password, please call [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
 
-## Create a user through the interface
+For users who have access through LDAP, the LDAP installation manages all  user information.
 
-This procedure shows how to creating a user manually. When you create a user, you can assign group memberships. The group's privileges and permissions apply to all of its members. Any user you create will be added to the group **All** automatically.
+## [Create a user through the interface](#create-user-ui)
+
+This procedure demonstrates how to create a user manually. When you create a user, you can assign group memberships. The group's privileges and permissions apply to all of its members. Also, note that all users automatically belong to the group **All**.
 
 1. Log into ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3.  In the **Admin** panel, click on **User Management** and **Users**.
+3.  In the **Admin** panel, click **User Management** and **Users**.
 
      ![]({{ site.baseurl }}/images/manage_users_3.2.png "Manage Users")
 
@@ -31,44 +33,99 @@ This procedure shows how to creating a user manually. When you create a user, yo
 
 5. Enter the details for the new user:
 
-     ![]({{ site.baseurl }}/images/new_user_dialogue_3.2.png "Create a user manually")
+     ![]({{ site.baseurl }}/images/new_user_dialogue.png "Create a user manually")
 
-    1. **Name**: A unique name for the user (usually their first and last name).
-    2. **Username**: A login name for the user.
+    <table>
+     <colgroup>
+      <col width="20%">
+      <col width="10%">
+      <col width="70%">
+     </colgroup>
+     <tr>
+      <th>Field</th>
+      <th>Required?</th>
+      <th>Description</th>
+      </tr>
+      <tr>
+        <th>Username</th>
+        <td>Yes</td>
+        <td><p>A login name for the user. Usernames must be unique and lowercase.</p>
+        <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. <code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
+      </tr>
+      <tr>
+        <th>Display name</th>
+        <td>Yes</td>
+        <td>A unique name for the user (usually their first and last name).</td>
+      </tr>
+      <tr>
+        <th>Sharing visibility</th>
+        <td>Yes</td>
+        <td>Indicate whether objects can be shared with this user. When set to <b>SHAREABLE</b>,
+        this user is an option in the <b>Share</b> dialog.</td>
+      </tr>
+      <tr>
+        <th>Change password</th>
+        <td>Yes</td>
+        <td>A password.</td>
+      </tr>
+      <tr>
+        <th>Confirm password</th>
+        <td>Yes</td>
+        <td>Enter the password again.</td>
+      </tr>   
+      <tr>
+        <th>Email</th>
+        <td>Yes</td>
+        <td><p>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.</p>
+        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain.</p></td>
+      </tr>    
+      <tr>     
+        <th>Send a welcome email</th>
+        <td>No</td>
+        <td>When checked, this option ensures that the new user receives a welcome email.</td>
+      </tr>
+      <tr>     
+        <th>Email message text</th>
+        <td>No</td>
+        <td>This enter text of the optional welcome email here.</td>
+      </tr>
+      <tr>
+        <th>Manage groups</th>
+        <td>No</td>
+        <td><p>Select all the groups the user belongs to.</p>
+        <p>Note that if you add the user to a group that has the privilege <b>Has administration privileges</b>, they can see all the data in ThoughtSpot. </p>
+        <p>When you create a new user, the groups they belong to define the following attributes for the user:</p>
+        <ul>
+          <li><strong>Privileges</strong>: the actions they can perform, defined when you <a href="add-group.html">Add a group and set security privileges</a>.</li>
+          <li><strong>Permissions</strong>: the data they can access and view, defined when you consider <a href="{{"/admin/data-security/sharing-security-overview.html#" | prepend: site.baseurl }}">Data security</a>.</li>
+      </ul>
+        <p>Administrators can see all data sources, and <a href="{{"/admin/data-security/about-row-security.html#" | prepend: site.baseurl }}">Row level security</a> does not apply to them.</p></td>
+      </tr>
+     </table>
 
-        **Note:** Usernames must be unique and lowercase.
+6. Click **Add** to create the user.
 
-        If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (i.e. they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain qualified (e.g. username@ldap.thoughtspot.com), and you must enter a dummy password.
+Note that this process of identifying the user's needs helps setup a robust onboarding process. See [Onboarding users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html#)
 
-    3. **Password** and **Confirm Password**: A temporary password.
-    4. **E-mail Address**: The user's email address. This is used for notification when another user shares something with them.
-    5. **Add to group**: Select all the groups the user will belong to. If you add the user to a group that has the privilege **Has administration privileges**, note that they will be able to see all the data in ThoughtSpot. Administrators can see all data sources, and [Row level security]({{ site.baseurl }}/admin/data-security/about-row-security.html#) does not apply to them.
 
-6. Click **Save** to create the user.
+## Edit or delete a user ##
 
-    When you create a new user, the groups they belong to define the user's:
-
-    -   Privileges - the actions they are allowed to do, which are defined when you [Add a group and set security privileges](add-group.html).
-    -   Permissions - the data they can access and view, which is defined when you [Data security]({{ site.baseurl }}/admin/data-security/sharing-security-overview.html#).
-
-## Edit or delete a user
-
-After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password.
+After a user has been created, you can always go back and change their settings, for example to change their group memberships or change their password. You can also change their name as long as it remains unique
 
 As an administrator, you can edit a user and change the groups the user belongs to. You can also edit a user to reset a user’s password by entering and confirming the new password. This is useful if a user has forgotten their password, or to effectively disable an account.
 
 To edit an existing user:
 
 1. Log into ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3.  In the **Admin** panel, click on **User Management** and **Users**.
+3.  In the **Admin** panel, click **User Management** and **Users**.
 
      ![]({{ site.baseurl }}/images/manage_users_3.2.png "Manage Users")
 
-4. Find the user you want to edit in the list and click on its name or the edit icon ![]({{ site.baseurl }}/images/edit_icon.png). If you don't see the name of the user, try searching for it.
+4. Find the user you want to edit in the list and click its name or the edit icon ![]({{ site.baseurl }}/images/edit_icon.png). If you don't see the name of the user, try searching for it.
 
     You can also delete a user from this page by clicking the **Delete** icon.
 

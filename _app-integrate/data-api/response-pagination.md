@@ -1,10 +1,5 @@
 ---
-<<<<<<< HEAD
-title: [REST API pagination]
-tags:
-=======
 title: [Data REST API pagination]
->>>>>>> 2a3dbdf3c... Add legal for Ext Enterprise Edition
 keywords: REST,API,pagination,JSON,"REST API"
 last_updated: tbd
 summary: "You can paginate the JSON response that is called from the REST API. The order of the data is retained from page to page."
@@ -14,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 Given the ability to paginate, you can quickly populate tables and make new REST calls every time you go to the next page of the data on the table. There is significant load time if you want to populate the data table with many rows (greater than 1000) from the Data REST API.
 
-To paginate results in your API response, you'll need to add new parameters to the query:
+To paginate results in your API response, you must add new parameters to the query:
 
 `PageSize` determines the number of rows to be included.
 

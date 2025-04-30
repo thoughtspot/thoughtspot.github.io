@@ -1,6 +1,6 @@
 ---
 title: [Configure NAS for backup storage]
-tags: [SysAdm_Backup,SysAdm_Restore]
+tags: [SysAdmin]
 keywords: tscli, backup, restore
 last_updated: tbd
 summary: "You can use network attached storage to support backup/restore and data loading."

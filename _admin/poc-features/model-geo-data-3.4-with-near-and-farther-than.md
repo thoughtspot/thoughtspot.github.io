@@ -1,13 +1,12 @@
 ---
 title: [Proximity keywords near and farther than]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "If your table contains Latitude and Longitude data, you can use proximity searches that find entities related to each other by location."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The "near" and "farther than" keywords provide proximity searches. First, you'll need to designate the longitude and latitude columns as "Geo" by editing the GeoType column in the modeling file or the **Columns** setting screen.
+The "near" and "farther than" keywords provide proximity searches. First, you must designate the longitude and latitude columns as "Geo" by editing the GeoType column in the modeling file or the **Columns** setting screen.
 
 Columns that can be designated as "Geo" columns need to contain text (VARCHAR) data unless they contain latitude/longitude data. Latitude and longitude columns can contain numeric data (DOUBLE) or text.
 
