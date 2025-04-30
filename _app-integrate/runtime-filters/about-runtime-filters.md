@@ -76,12 +76,12 @@ filter.
 
 ## Limitations of runtime filters
 
-Runtime Filters do not work directly on top of tables. You need to create a
+Runtime Filters do not work directly on top of tables. You must create a
 worksheet if you want to use Runtime Filters. This means that the pinboard or
 visualization on which you apply a runtime filter must be created on top of a
 worksheet.
 
-If the worksheet was created from an answer (i.e. it is an aggregated
+If the worksheet was created from an answer (it is an aggregated
 worksheet), Runtime Filters will only work if the answer was formed using a
 single worksheet. If the answer from which the worksheet was created includes
 raw tables or joins multiple worksheets, you won't be able to use Runtime

@@ -1,6 +1,6 @@
 ---
 title: [Check the timezone]
-keywords: tbd
+
 tags: [time]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

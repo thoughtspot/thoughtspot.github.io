@@ -19,7 +19,7 @@ At times you may struggle to answer a specific question, build a chart you have 
 
 ## How do I use Ask an expert?
 
-1. When you're doing a search, you'll see a link under your search that says **Ask an expert**. Click that if you're stuck and need help.
+1. When you're doing a search, you can see a link under your search that says **Ask an expert**. Click that if you're stuck and need help.
 
 2. The search you were working on is captured and shown back to you, with a text box for your message. Send a message describing what you were looking for, along with any information that makes it easy for the expert to understand what problem you were having.
 
@@ -41,4 +41,4 @@ You can use **Ask an expert** to ask any kind of question you like. Even if your
 ## Related information
 
 -   [Review answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
--   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-ask-expert-question.html)
+-   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-expert-question.html)

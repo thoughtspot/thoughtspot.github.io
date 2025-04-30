@@ -1,7 +1,7 @@
 ---
 title: [Share tables and columns]
 tags: [bestpractices]
-keywords: tbd
+
 toc: false
 summary: "You can share an entire table, or only some of its columns."
 sidebar: mydoc_sidebar

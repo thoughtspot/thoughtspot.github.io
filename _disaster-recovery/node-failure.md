@@ -1,6 +1,6 @@
 ---
 title: [Node failure]
-keywords: tbd
+
 last_updated: tbd
 summary: "ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate.
 "
@@ -28,4 +28,4 @@ If you notice these symptoms, contact ThoughtSpot Support.
 
 ## Node replacement
 
-Node replacement is done on site by ThoughtSpot Support. You will need to schedule a maintenance window, since some downtime is required. For more information, please contact ThoughtSpot Support.
+Node replacement is done on site by ThoughtSpot Support. You must schedule a maintenance window, since some downtime is required. For more information, please contact ThoughtSpot Support.

@@ -1,6 +1,6 @@
 ---
 title: [Percent (simple number) calculations]
-keywords: tbd
+
 tags: [formulas]
 last_updated: tbd
 toc: false

@@ -1,6 +1,6 @@
 ---
 title: [Change a chart]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can adjust the axes, labels, and view of the chart."
 sidebar: mydoc_sidebar

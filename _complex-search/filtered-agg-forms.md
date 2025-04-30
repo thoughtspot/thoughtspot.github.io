@@ -59,7 +59,7 @@ ThoughtSpot functional library will include the following functions:
 * `vs`
 * `all`
 
-The table below illustrates some examples of these functions in use:
+The following table illustrates some examples of these functions in use:
 
 <table>
    <colgroup>
@@ -94,7 +94,7 @@ to double-check your work.
 
 ![]({{ site.baseurl }}/images/filtered-agg-forms.png "Filter Aggregation")
 
-Once you have aggregated with a filter, you can do further comparisons with the `vs` and `all` keywords.
+After you have aggregated with a filter, you can do further comparisons with the `vs` and `all` keywords.
 
 ## Using the vs and all keywords
 

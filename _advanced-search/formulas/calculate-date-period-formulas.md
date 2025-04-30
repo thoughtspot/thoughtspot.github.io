@@ -1,6 +1,6 @@
 ---
 title: [Calculate date formulas]
-keywords: tbd
+
 tags: [formulas]
 tags: [formulas]
 last_updated: tbd

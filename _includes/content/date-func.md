@@ -23,6 +23,26 @@
       <td><code class="highlighter-rouge">add_minutes ( 01/30/2015 00:10:20 , 5 ) = 01/30/2015 00:11:20</code><br><code class="highlighter-rouge">add_minutes ( invoiced , 30 )</code></td>
     </tr>
     <tr>
+    <td><code>add_months</code></td>
+    <td>Returns the result of adding the specified number of months to the given date.</td>
+    <td><code class="highlighter-rouge">add_months ( 01/30/2015, 5 ) = 06/30/2015</code><br><code class="highlighter-rouge">add_months ( invoiced_date , 5 )</code></td>
+    </tr>
+    <tr>
+    <td><code>add_seconds</code></td>
+    <td>Returns the result of adding the specified number of seconds to the given date.</td>
+    <td><code class="highlighter-rouge">add_seconds ( 01/30/2015 00:00:00, 5 ) = 06/30/2015 00:00:05</code><br><code class="highlighter-rouge">add_seconds ( invoiced_date , 5 )</code></td>
+    </tr>
+    <tr>
+    <td><code>add_weeks</code></td>
+    <td>Returns the result of adding the specified number of weeks to the given date.</td>
+    <td><code class="highlighter-rouge">add_weeks ( 01/30/2015, 2 ) = 02/13/2015</code><br><code class="highlighter-rouge">add_weeks ( invoiced_date , 2 )</code></td>
+    </tr>
+    <tr>
+    <td><code>add_years</code></td>
+    <td>Returns the result of adding the specified number of years to the given date.</td>
+    <td><code class="highlighter-rouge">add_years ( 01/30/2015, 5 ) = 01/30/2020</code><br><code class="highlighter-rouge">add_years ( invoiced_date , 5 )</code></td>
+    </tr>
+    <tr>
       <td><code>date</code></td>
       <td>Returns the date portion of a given date.</td>
       <td><code class="highlighter-rouge">date (home visit)</code></td>

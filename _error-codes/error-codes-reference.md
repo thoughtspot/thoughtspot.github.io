@@ -1,8 +1,9 @@
 ---
 title: [Error code reference]
 keywords: error code, error message
+last_updated: 07-02-2019 by Roza.Leyderman
+toc: true
 summary: "This is the list of ThoughtSpot error codes and messages."
-toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,18 +12,16 @@ Error codes and messages appear in ThoughtSpot when something goes wrong, either
 
 When you see an error code, you will also see a message with a brief summary of what has happened. If there is a remediation action you can take, it will be listed in this references. If there is no action listed, please contact ThoughtSpot Support.
 
-
-{% include tip.html content="Only the base code number is listed for each error. So keep this in mind when searching through these codes. For example, error code `TS-00125` is simply listed as `125`." %}
-
-
-## Metadata Errors (100 - 499)|
-
+## Metadata Errors {#metadata-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the metadata domain, by code number. The range of errors is <strong>TS-00100</strong> through <strong>TS-00499</strong>.</summary>
 <table>
 <colgroup>
-<col width="20%" />
-<col width="5%" />
-<col width="25%" />
-<col width="25%" />
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
 </colgroup>
   <tr>
     <th>Code</th>
@@ -676,325 +675,2015 @@ When you see an error code, you will also see a message with a brief summary of 
     <td>None</td>
   </tr>
 </table>
+</details>
 
-##  Data Service Errors (500 - 699)
+##  Data Service Errors {#data-service-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the data service domain, by code number. The range of errors is <strong>TS-00500</strong> through <strong>TS-00699</strong>.</summary>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-00500|ERROR|Failed to fetch leaf level data|Failed to fetch leaf level data.|None|
-|TS-00501|ERROR|Failed to fetch excel data|Failed to fetch excel data.|None|
-|TS-00502|ERROR|Failed to fetch visualization data|Failed to fetch visuzliation data.|None|
-|TS-00503|ERROR|Failed to fetch visualizations data|Failed to fetch data for visualizations.|None|
-|TS-00504|ERROR|Failed to fetch chart data|Failed to fetch table data.|None|
-|TS-00505|ERROR|Failed to fetch table data|Failed to fetch table data.|None|
-|TS-00506|ERROR|Failed to fetch worksheet data|Failed to fetch worksheet data.|None|
-|TS-00507|ERROR|Failed to fetch filter data|Failed to fetch filter data.|None|
-|TS-00508|ERROR|Failed to fetch headline data|Failed to fetch filter data.|None|
-|TS-00509|ERROR|Failed to fetch natural query|Failed to fetch natural query.|None|
-|TS-00510|INFO|File upload successful|None|None|
-|TS-00511|ERROR|Failed to upload file|Failed to upload|None|
-|TS-00512|ERROR|The pinboard data could not be exported to pdf.|Uh oh. We're not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}.|None|
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+  <tr>
+    <th>Code</th>
+    <th>Severity</th>
+    <th>Summary</th>
+    <th>Details</th>
+    <th>Action</th>
+  </tr>
+<tr>
+  <td>TS-00500</td>
+  <td>ERROR</td>
+  <td>Failed to fetch leaf level data</td>
+  <td>Failed to fetch leaf level data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00501</td>
+  <td>ERROR</td>
+  <td>Failed to fetch excel data</td>
+  <td>Failed to fetch excel data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00502</td>
+  <td>ERROR</td>
+  <td>Failed to fetch visualization data</td>
+  <td>Failed to fetch visuzliation data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00503</td>
+  <td>ERROR</td>
+  <td>Failed to fetch visualizations data</td>
+  <td>Failed to fetch data for visualizations.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00504</td>
+  <td>ERROR</td>
+  <td>Failed to fetch chart data</td>
+  <td>Failed to fetch table data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00505</td>
+  <td>ERROR</td>
+  <td>Failed to fetch table data</td>
+  <td>Failed to fetch table data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00506</td>
+  <td>ERROR</td>
+  <td>Failed to fetch worksheet data</td>
+  <td>Failed to fetch worksheet data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00507</td>
+  <td>ERROR</td>
+  <td>Failed to fetch filter data</td>
+  <td>Failed to fetch filter data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00508</td>
+  <td>ERROR</td>
+  <td>Failed to fetch headline data</td>
+  <td>Failed to fetch filter data.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00509</td>
+  <td>ERROR</td>
+  <td>Failed to fetch natural query</td>
+  <td>Failed to fetch natural query.</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00510</td>
+  <td>INFO</td>
+  <td>File upload successful</td>
+  <td>None</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00511</td>
+  <td>ERROR</td>
+  <td>Failed to upload file</td>
+  <td>Failed to upload</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>TS-00512</td>
+  <td>ERROR</td>
+  <td>The pinboard data could not be exported to pdf.</td>
+  <td>Uh oh. We're not sure what happened. Please click 'Report Problem' to email a report to your administrator, {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ </table>
+</details>
 
-## Dependency Errors (700 - 799)
+## Dependency Errors {#dependency-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the dependency domain, by code number. The range of errors is <strong>TS-07800</strong> through <strong>TS-00799</strong>.</summary>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+  <tr>
+    <th>Code</th>
+    <th>Severity</th>
+    <th>Summary</th>
+    <th>Details</th>
+    <th>Action</th>
+  </tr>
+<tr>
+    <td>TS-00700</td>
+    <td>ERROR</td>
+    <td>Failure fetching table dependents</td>
+    <td>Failed to fetch dependents for the table.</td>
+    <td>None</td>
+</tr>
+<tr>
+    <td>TS-00701</td>
+    <td>ERROR</td>
+    <td>Failure fetching column dependents</td>
+    <td>Failed to fetch dependents for the column.</td>
+    <td>None</td>
+</tr>
+<tr>
+    <td>TS-00702</td>
+    <td>ERROR</td>
+    <td>Failure fetching incomplete items</td>
+    <td>Failed to fetch incomplete items.</td>
+    <td>None</td>
+</tr>
+</table>
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-00700|ERROR|Failure fetching table dependents|Failed to fetch dependents for the table.|None|
-|TS-00701|ERROR|Failure fetching column dependents|Failed to fetch dependents for the column.|None|
-|TS-00702|ERROR|Failure fetching incomplete items|Failed to fetch incomplete items.|None|
+## Admin Service Errors {#admin-service-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the admin service domain, by code number. The range of errors is <strong>TS-00800</strong> through <strong>TS-00899</strong>.</summary>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+  <tr>
+    <th>Code</th>
+    <th>Severity</th>
+    <th>Summary</th>
+    <th>Details</th>
+    <th>Action</th>
+  </tr>
+<tr>
+   <td>TS-00800</td>
+   <td>ERROR</td>
+   <td>Failure fetching MemCache stats</td>
+   <td>Failed to fetch MemCache stats.</td>
+   <td>None</td>
+ </tr>
+ <tr>
+   <td>TS-00801</td>
+   <td>ERROR</td>
+   <td>Failure MemCache Clear</td>
+   <td>Failed to clear MemCache.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00802</td>
+   <td>ERROR</td>
+   <td>Failure searching from MemCache</td>
+   <td>Failed to search from MemCache.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00803</td>
+   <td>ERROR</td>
+   <td>Failure fetching Loggers</td>
+   <td>Failed to fetch Loggers.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00804</td>
+   <td>ERROR</td>
+   <td>Failure setting LogLevel</td>
+   <td>Failed to set Log Level.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00805</td>
+   <td>ERROR</td>
+   <td>Failure getting debug info</td>
+   <td>Failed to get debug info.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00806</td>
+   <td>INFO</td>
+   <td>Memcache cleared successfully</td>
+   <td>None</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00807</td>
+   <td>INFO</td>
+   <td>Log level set successfully</td>
+   <td>None</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00808</td>
+   <td>ERROR</td>
+   <td>Failed to report problem</td>
+   <td>None</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00809</td>
+   <td>INFO</td>
+   <td>Problem reported successfully</td>
+   <td>None</td>
+   <td>None</td>
+</tr>
+</table>
+</details>
 
-## Admin Service Errors (800 - 899)
+## Permissions Errors {#permission-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the permissions domain, by code number. The range of errors is <strong>TS-00900</strong> through <strong>TS-00999</strong>.</summary>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+  <tr>
+    <th>Code</th>
+    <th>Severity</th>
+    <th>Summary</th>
+    <th>Details</th>
+    <th>Action</th>
+  </tr>
+<tr>
+   <td>TS-00900</td>
+   <td>ERROR</td>
+   <td>Failure fetching table permissions</td>
+   <td>Failed to fetch table permissions.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00901</td>
+   <td>ERROR</td>
+   <td>Failure fetching answer permissions</td>
+   <td>Failed to fetch answer permissions.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00902</td>
+   <td>ERROR</td>
+   <td>Failure fetching pinboard permissions</td>
+   <td>Failed to fetch pinboard permissions.</td>
+   <td>None</td>
+</tr>
+<tr>
+   <td>TS-00903</td>
+   <td>ERROR</td>
+   <td>Failure getting metadata permissions</td>
+   <td>Failed to get metadata permissions.</td>
+   <td>None</td>
+</tr>
+</table>
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-00800|ERROR|Failure fetching MemCache stats|Failed to fetch MemCache stats.|None|
-|TS-00801|ERROR|Failure MemCache Clear|Failed to clear MemCache.|None|
-|TS-00802|ERROR|Failure searching from MemCache|Failed to search from MemCache.|None|
-|TS-00803|ERROR|Failure fetching Loggers|Failed to fetch Loggers.|None|
-|TS-00804|ERROR|Failure setting LogLevel|Failed to set Log Level.|None|
-|TS-00805|ERROR|Failure getting debug info|Failed to get debug info.|None|
-|TS-00806|INFO|Memcache cleared successfully|None|None|
-|TS-00807|INFO|Log level set successfully|None|None|
-|TS-00808|ERROR|Failed to report problem|None|None|
-|TS-00809|INFO|Problem reported successfully|None|None|
+## Import Data Errors {#import-data-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the import data domain, by code number. The range of errors is <strong>TS-01000</strong> through <strong>TS-01099</strong>.</summary>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+<tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+</tr>
+ <tr>
+  <td>TS-01000</td>
+  <td>ERROR</td>
+  <td>Data caching failed</td>
+  <td>Data caching failed.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01001</td>
+  <td>ERROR</td>
+  <td>Read Columns failed.</td>
+  <td>Failed to read columns.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01002</td>
+  <td>ERROR</td>
+  <td>Failed to read keys.</td>
+  <td>Failed to read keys.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01003</td>
+  <td>ERROR</td>
+  <td>Failed to read relationships.</td>
+  <td>Failed to read relationships.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01004</td>
+  <td>ERROR</td>
+  <td>Failed to load data.</td>
+  <td>Failed to load data.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01005</td>
+  <td>ERROR</td>
+  <td>Failed to create table.</td>
+  <td>Failed to create table.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01006</td>
+  <td>ERROR</td>
+  <td>Failed to fetch data rows.</td>
+  <td>Failed to fetch data rows.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01007</td>
+  <td>ERROR</td>
+  <td>Failed to delete files.</td>
+  <td>Failed to fetch data rows.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01008</td>
+  <td>ERROR</td>
+  <td>Failed to abort create table.</td>
+  <td>Failed to abort create table.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01009</td>
+  <td>ERROR</td>
+  <td>Failed to create schema.</td>
+  <td>Failed to create schema.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01010</td>
+  <td>ERROR</td>
+  <td>Failed to fetch table models.</td>
+  <td>Failed to fetch table models.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01011</td>
+  <td>ERROR</td>
+  <td>Failed to fetch sample values.</td>
+  <td>Failed to fetch sample values.</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-## Permissions Errors (900 - 999)
+## Scheduled Jobs Errors {#scheduled-jobs-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the scheduled jobs domain, by code number. The range of errors is <strong>TS-01100</strong> through <strong>TS-01199</strong>.</summary>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-00900|ERROR|Failure fetching table permissions|Failed to fetch table permissions.|None|
-|TS-00901|ERROR|Failure fetching answer permissions|Failed to fetch answer permissions.|None|
-|TS-00902|ERROR|Failure fetching pinboard permissions|Failed to fetch pinboard permissions.|None|
-|TS-00903|ERROR|Failure getting metadata permissions|Failed to get metadata permissions.|None|
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="10%" />
+<col width="35%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-01100</td>
+  <td>INFO</td>
+  <td>The list of jobs.</td>
+  <td>None</td>
+  <td>Please click 'Report Problem' to email a report to your administrator.</td>
+ </tr>
+ <tr>
+  <td>TS-01110</td>
+  <td>INFO</td>
+  <td>Successfully created job.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01111</td>
+  <td>ERROR</td>
+  <td>The job could not be created.</td>
+  <td>None</td>
+  <td>Please click 'Report Problem' to email a report to your administrator.</td>
+ </tr>
+ <tr>
+  <td>TS-01112</td>
+  <td>INFO</td>
+  <td>Successfully updated job.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01113</td>
+  <td>ERROR</td>
+  <td>The job could not be updated.</td>
+  <td>None</td>
+  <td>Please click 'Report Problem' to email a report to your administrator.</td>
+ </tr>
+ <tr>
+  <td>TS-01114</td>
+  <td>INFO</td>
+  <td>Successfully deleted jobs.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01115</td>
+  <td>ERROR</td>
+  <td>The job could not be deleted.</td>
+  <td>None</td>
+  <td>Please click 'Report Problem' to email a report to your administrator.</td>
+ </tr>
+ <tr>
+  <td>TS-01116</td>
+  <td>INFO</td>
+  <td>The job was paused.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01117</td>
+  <td>ERROR</td>
+  <td>The job could not be paused.</td>
+  <td>None</td>
+  <td>Please click 'Report Problem' to email a report to your administrator.</td>
+ </tr>
+ <tr>
+  <td>TS-01118</td>
+  <td>INFO</td>
+  <td>The job was resumed</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01119</td>
+  <td>ERROR</td>
+  <td>The job could not be resumed.</td>
+  <td>None</td>
+  <td>Please click 'Report Problem' to email a report to your administrator.</td>
+  <td></td>
+ </tr>
+</table>
+</details>
 
-## Import Data Errors (1000 - 1099)
+## User Admin Service Errors {#user-admin-service-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the user admin service domain, by code number. The range of errors is <strong>TS-01200</strong> through <strong>TS-01399</strong>.</summary>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-01000|ERROR|Data caching failed|Data caching failed.|None|
-|TS-01001|ERROR|Read Columns failed.|Failed to read columns.|None|
-|TS-01002|ERROR|Failed to read keys.|Failed to read keys.|None|
-|TS-01003|ERROR|Failed to read relationships.|Failed to read relationships.|None|
-|TS-01004|ERROR|Failed to load data.|Failed to load data.|None|
-|TS-01005|ERROR|Failed to create table.|Failed to create table.|None|
-|TS-01006|ERROR|Failed to fetch data rows.|Failed to fetch data rows.|None|
-|TS-01007|ERROR|Failed to delete files.|Failed to fetch data rows.|None|
-|TS-01008|ERROR|Failed to abort create table.|Failed to abort create table.|None|
-|TS-01009|ERROR|Failed to create schema.|Failed to create schema.|None|
-|TS-01010|ERROR|Failed to fetch table models.|Failed to fetch table models.|None|
-|TS-01011|ERROR|Failed to fetch sample values.|Failed to fetch sample values.|None|
+<table>
+ <colgroup>
+ <col width="10%" />
+ <col width="10%" />
+ <col width="40%" />
+ <col width="40%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-01200</td>
+  <td>ERROR</td>
+  <td>Failed to fetch users list</td>
+  <td>Failed to fetch users list</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01201</td>
+  <td>ERROR</td>
+  <td>Failed to fetch groups list</td>
+  <td>Failed to fetch groups list</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01202</td>
+  <td>ERROR</td>
+  <td>Failed to fetch users and groups list</td>
+  <td>Failed to fetch users and groups list</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01203</td>
+  <td>ERROR</td>
+  <td>Successfully created user</td>
+  <td>Successfully created user</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01204</td>
+  <td>ERROR</td>
+  <td>Failed to create user</td>
+  <td>Failed to create user</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01205</td>
+  <td>ERROR</td>
+  <td>Successfully created group</td>
+  <td>Successfully created group</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01206</td>
+  <td>ERROR</td>
+  <td>Failed to create group</td>
+  <td>Failed to create group</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01207</td>
+  <td>ERROR</td>
+  <td>Successfully updated user</td>
+  <td>Successfully updated user</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01208</td>
+  <td>ERROR</td>
+  <td>Failed to update user</td>
+  <td>Failed to update user</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01209</td>
+  <td>ERROR</td>
+  <td>Successfully updated users</td>
+  <td>Successfully updated users</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01210</td>
+  <td>ERROR</td>
+  <td>Failed to update users</td>
+  <td>Failed to update users</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01211</td>
+  <td>ERROR</td>
+  <td>Successfully updated group</td>
+  <td>Successfully updated group</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01212</td>
+  <td>ERROR</td>
+  <td>Failed to update group</td>
+  <td>Failed to update group</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01213</td>
+  <td>ERROR</td>
+  <td>Successfully updated password</td>
+  <td>Successfully updated password</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01214</td>
+  <td>ERROR</td>
+  <td>Failed to update password</td>
+  <td>Failed to update password</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01215</td>
+  <td>ERROR</td>
+  <td>Successfully deleted users</td>
+  <td>Successfully deleted users</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01216</td>
+  <td>ERROR</td>
+  <td>Failed to delete users</td>
+  <td>Failed to delete users</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01217</td>
+  <td>ERROR</td>
+  <td>Successfully deleted groups</td>
+  <td>Successfully deleted groups</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01218</td>
+  <td>ERROR</td>
+  <td>Failed to delete groups</td>
+  <td>Failed to delete groups</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01219</td>
+  <td>ERROR</td>
+  <td>Successfully assigned users to groups</td>
+  <td>Successfully assigned users to groups</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01220</td>
+  <td>ERROR</td>
+  <td>Failed to assign users to groups</td>
+  <td>Failed to assign users to groups</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01221</td>
+  <td>ERROR</td>
+  <td>Failed to fetch profile pic</td>
+  <td>Failed to fetch profile pic</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01222</td>
+  <td>INFO</td>
+  <td>Successfully uploaded profile pic</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01223</td>
+  <td>ERROR</td>
+  <td>Failed to upload profile pic</td>
+  <td>Failed to upload profile pic</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01224</td>
+  <td>ERROR</td>
+  <td>Successfully assigned groups to group</td>
+  <td>Failed to assign user to group</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01228</td>
+  <td>ERROR</td>
+  <td>Successfully created role</td>
+  <td>Successfully created role</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01229</td>
+  <td>ERROR</td>
+  <td>Failed to create role</td>
+  <td>Failed to create role</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01230</td>
+  <td>ERROR</td>
+  <td>Successfully deleted role</td>
+  <td>Successfully deleted role</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01231</td>
+  <td>ERROR</td>
+  <td>Failed to delete role</td>
+  <td>Failed to delete role</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01232</td>
+  <td>ERROR</td>
+  <td>Successfully updated role</td>
+  <td>Successfully updated role</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01233</td>
+  <td>ERROR</td>
+  <td>Failed to update role</td>
+  <td>Failed to update role</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-## Scheduled Jobs Errors (1100 - 1199)
+## Session Service Errors {#session-service-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the session service domain, by code number. The range of errors is <strong>TS-01400</strong> through <strong>TS-01599</strong>.</summary>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-01100|INFO|The list of jobs.|None|Please click 'Report Problem' to email a report to your administrator.|
-|TS-01110|INFO|Successfully created job.|None|None|
-|TS-01111|ERROR|The job could not be created.|None|Please click 'Report Problem' to email a report to your administrator.|
-|TS-01112|INFO|Successfully updated job.|None|None|
-|TS-01113|ERROR|The job could not be updated.|None|Please click 'Report Problem' to email a report to your administrator.|
-|TS-01114|INFO|Successfully deleted jobs.|None|None|
-|TS-01115|ERROR|The job could not be deleted.|None|Please click 'Report Problem' to email a report to your administrator.|
-|TS-01116|INFO|The job was paused.|None|None|
-|TS-01117|ERROR|The job could not be paused.|None|Please click 'Report Problem' to email a report to your administrator.|
-|TS-01118|INFO|The job was resumed|None|None|
-|TS-01119|ERROR|The job could not be resumed.|None|Please click 'Report Problem' to email a report to your administrator.|
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-01400</td>
+  <td>ERROR</td>
+  <td>Failed to fetch session info</td>
+  <td>Failed to fetch session info</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01401</td>
+  <td>ERROR</td>
+  <td>Failed to login</td>
+  <td>Uh oh. We’re not sure what happened. Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01402</td>
+  <td>ERROR</td>
+  <td>Failed to logout</td>
+  <td>Failed to logout</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01403</td>
+  <td>ERROR</td>
+  <td>Failed to save client state</td>
+  <td>Failed to save client state</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01404</td>
+  <td>ERROR</td>
+  <td>Failed to fetch login config</td>
+  <td>Failed to fetch login config</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01405</td>
+  <td>ERROR</td>
+  <td>Failed to fetch slack config</td>
+  <td>Failed to fetch slack config</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01406</td>
+  <td>ERROR</td>
+  <td>Health check failed</td>
+  <td>Health check failed</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01407</td>
+  <td>ERROR</td>
+  <td>Failed to fetch health portal token</td>
+  <td>Failed to fetch health portal token</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01408</td>
+  <td>ERROR</td>
+  <td>The health portal release name could not be retrieved</td>
+  <td>Uh oh. We're not sure what happened. Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-## User Admin Service Errors (1200 - 1399)
+## Data Management Service Errors {#data-management-service-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the data management service domain, by code number. The range of errors is <strong>TS-01600</strong> through <strong>TS-01799</strong>.</summary>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-01600</td>
+  <td>ERROR</td>
+  <td>Failed to fetch data source types</td>
+  <td>Failed to fetch data source types</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01601</td>
+  <td>ERROR</td>
+  <td>Failed to fetch data source sample values</td>
+  <td>Failed to fetch data source sample values</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01602</td>
+  <td>ERROR</td>
+  <td>Failed to delete data source</td>
+  <td>Failed to delete data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01603</td>
+  <td>ERROR</td>
+  <td>Failed to execute DDL</td>
+  <td>Failed to execute DDL</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01604</td>
+  <td>ERROR</td>
+  <td>Failed to update schedule</td>
+  <td>Failed to update schedule</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01605</td>
+  <td>ERROR</td>
+  <td>Failed to reload tasks</td>
+  <td>Failed to reload tasks</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01606</td>
+  <td>ERROR</td>
+  <td>Failed to stop tasks</td>
+  <td>Failed to stop tasks</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01607</td>
+  <td>ERROR</td>
+  <td>Failed to get creation DDL</td>
+  <td>Failed to get creation DDL</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01608</td>
+  <td>ERROR</td>
+  <td>Failed to load from data source</td>
+  <td>Failed to load from data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01609</td>
+  <td>ERROR</td>
+  <td>Failed to create connection to data source</td>
+  <td>Failed to create connection to data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01610</td>
+  <td>ERROR</td>
+  <td>Failed to create data source</td>
+  <td>Failed to create data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01611</td>
+  <td>ERROR</td>
+  <td>Failed to connect to data source</td>
+  <td>Failed to connect to data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01612</td>
+  <td>ERROR</td>
+  <td>Failed to get data source connection field info</td>
+  <td>Failed to get data source connection field info</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01613</td>
+  <td>ERROR</td>
+  <td>Failed to get connection list for data source</td>
+  <td>Failed to get connection list for data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01614</td>
+  <td>ERROR</td>
+  <td>Failed to get connection attributes for data source</td>
+  <td>Failed to get connection attributes for data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01615</td>
+  <td>ERROR</td>
+  <td>Failed to get connections to data source</td>
+  <td>Failed to get connections to data source</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01616</td>
+  <td>ERROR</td>
+  <td>Failed to fetch data source config</td>
+  <td>Failed to fetch data source config</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01617</td>
+  <td>ERROR</td>
+  <td>Failed to parse sql.</td>
+  <td>Failed to parse sql.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01618</td>
+  <td>ERROR</td>
+  <td>Failed to execute sql.</td>
+  <td>Failed to execute sql.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01619</td>
+  <td>INFO</td>
+  <td>Successfully created connection to data source</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01620</td>
+  <td>INFO</td>
+  <td>Successfully updated data upload schedule</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01621</td>
+  <td>ERROR</td>
+  <td>Failed to execute sql.</td>
+  <td>Please check the failing command, executed {1} statements successfully.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01622</td>
+  <td>ERROR</td>
+  <td>Lightweight data-cache disabled</td>
+  <td>Lightweight data-cache disabled</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01623</td>
+  <td>INFO</td>
+  <td>Selected tables were queued for loading.</td>
+  <td>Selected tables were queued for loading.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01624</td>
+  <td>ERROR</td>
+  <td>DataType conversion error.</td>
+  <td>No mapping found for source datatype to ThoughtSpot datatype.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01625</td>
+  <td>INFO</td>
+  <td>Successfully reload task started.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01626</td>
+  <td>INFO</td>
+  <td>Successfully connected to data source.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01627</td>
+  <td>INFO</td>
+  <td>Successfully created data source.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01628</td>
+  <td>INFO</td>
+  <td>Successfully stopped the tasks.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01629</td>
+  <td>INFO</td>
+  <td>Successfully deleted the connection.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01630</td>
+  <td>ERROR</td>
+  <td>There was an error deleting this connection.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01631</td>
+  <td>INFO</td>
+  <td>Successfully executed the DDL.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-01200|ERROR|Failed to fetch users list|Failed to fetch users list|None|
-|TS-01201|ERROR|Failed to fetch groups list|Failed to fetch groups list|None|
-|TS-01202|ERROR|Failed to fetch users and groups list|Failed to fetch users and groups list|None|
-|TS-01203|ERROR|Successfully created user|Successfully created user|None|
-|TS-01204|ERROR|Failed to create user|Failed to create user|None|
-|TS-01205|ERROR|Successfully created group|Successfully created group|None|
-|TS-01206|ERROR|Failed to create group|Failed to create group|None|
-|TS-01207|ERROR|Successfully updated user|Successfully updated user|None|
-|TS-01208|ERROR|Failed to update user|Failed to update user|None|
-|TS-01209|ERROR|Successfully updated users|Successfully updated users|None|
-|TS-01210|ERROR|Failed to update users|Failed to update users|None|
-|TS-01211|ERROR|Successfully updated group|Successfully updated group|None|
-|TS-01212|ERROR|Failed to update group|Failed to update group|None|
-|TS-01213|ERROR|Successfully updated password|Successfully updated password|None|
-|TS-01214|ERROR|Failed to update password|Failed to update password|None|
-|TS-01215|ERROR|Successfully deleted users|Successfully deleted users|None|
-|TS-01216|ERROR|Failed to delete users|Failed to delete users|None|
-|TS-01217|ERROR|Successfully deleted groups|Successfully deleted groups|None|
-|TS-01218|ERROR|Failed to delete groups|Failed to delete groups|None|
-|TS-01219|ERROR|Successfully assigned users to groups|Successfully assigned users to groups|None|
-|TS-01220|ERROR|Failed to assign users to groups|Failed to assign users to groups|None|
-|TS-01221|ERROR|Failed to fetch profile pic|Failed to fetch profile pic|None|
-|TS-01222|INFO|Successfully uploaded profile pic|None|None|
-|TS-01223|ERROR|Failed to upload profile pic|Failed to upload profile pic|None|
-|TS-01224|ERROR|Successfully assigned groups to group|Failed to assign user to group|None|
-|TS-01228|ERROR|Successfully created role|Successfully created role|None|
-|TS-01229|ERROR|Failed to create role|Failed to create role|None|
-|TS-01230|ERROR|Successfully deleted role|Successfully deleted role|None|
-|TS-01231|ERROR|Failed to delete role|Failed to delete role|None|
-|TS-01232|ERROR|Successfully updated role|Successfully updated role|None|
-|TS-01233|ERROR|Failed to update role|Failed to update role|None|
+## Cluster Status Service Errors {#cluster-status-service-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the cluster status service domain, by code number. The range of errors is <strong>TS-01800</strong> through <strong>TS-01899</strong>.</summary>
 
-## Session Service Errors (1400 - 1599)
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-01800</td>
+  <td>WARNING</td>
+  <td>Failed to fetch cluster information from search service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01801</td>
+  <td>WARNING</td>
+  <td>Failed to fetch table detail information from search service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01802</td>
+  <td>WARNING</td>
+  <td>Failed to fetch cluster information from database service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01803</td>
+  <td>WARNING</td>
+  <td>Failed to fetch table detail information from databse service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01804</td>
+  <td>WARNING</td>
+  <td>Failed to fetch cluster information from cluster management service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01805</td>
+  <td>WARNING</td>
+  <td>Failed to fetch detail information from cluster management service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01806</td>
+  <td>WARNING</td>
+  <td>Failed to fetch log from cluster management service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01807</td>
+  <td>WARNING</td>
+  <td>Failed to fetch snapshot list from cluster management service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01808</td>
+  <td>WARNING</td>
+  <td>Failed to fetch cluster information from alert management service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01809</td>
+  <td>WARNING</td>
+  <td>Failed to fetch cluster information from event service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01810</td>
+  <td>WARNING</td>
+  <td>Failed to fetch alerts information from alert management service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01811</td>
+  <td>WARNING</td>
+  <td>Failed to fetch events information from alert management service.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01812</td>
+  <td>INFO</td>
+  <td>Thanks for your feedback!</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01813</td>
+  <td>WARNING</td>
+  <td>Sorry! Unable to submit the feedback at this moment!</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01814</td>
+  <td>INFO</td>
+  <td>Successfully exported objects. File can be found at {1}.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01815</td>
+  <td>ERROR</td>
+  <td>Sorry! Unable to export objects at this moment!</td>
+  <td>What happened? {1}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01816</td>
+  <td>INFO</td>
+  <td>Successfully imported objects</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01817</td>
+  <td>ERROR</td>
+  <td>Sorry! Unable to import objects at this moment!</td>
+  <td>What happened? {1}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-01818</td>
+  <td>INFO</td>
+  <td>Successfully deleted data source object(s).</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-01400|ERROR|Failed to fetch session info|Failed to fetch session info|None|
-|TS-01401|ERROR|Failed to login|Uh oh. We’re not sure what happened. Please email the trace file to {adminEmail}.|None|
-|TS-01402|ERROR|Failed to logout|Failed to logout|None|
-|TS-01403|ERROR|Failed to save client state|Failed to save client state|None|
-|TS-01404|ERROR|Failed to fetch login config|Failed to fetch login config|None|
-|TS-01405|ERROR|Failed to fetch slack config|Failed to fetch slack config|None|
-|TS-01406|ERROR|Health check failed|Health check failed|None|
-|TS-01407|ERROR|Failed to fetch health portal token|Failed to fetch health portal token|None|
-|TS-01408|ERROR|The health portal release name could not be retrieved|Uh oh. We're not sure what happened. Please email the trace file to {adminEmail}.|None|
+## API Errors {#api-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the API domain, by code number. The range of errors is <strong>TS-09000</strong> through <strong>TS-09199</strong>.</summary>
 
-## Data Management Service Errors (1600 - 1799)
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-09000</td>
+  <td>ERROR</td>
+  <td>The data you are trying to delete has some dependencies</td>
+  <td>Some objects depend on the data you are trying to delete</td>
+  <td>delete the dependencies before deleting this data.</td>
+ </tr>
+ <tr>
+  <td>TS-09001</td>
+  <td>ERROR</td>
+  <td>Uh oh. We’re not sure what happened.</td>
+  <td>Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09002</td>
+  <td>ERROR</td>
+  <td>Could not authorize user</td>
+  <td>Try logging in again</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09003</td>
+  <td>ERROR</td>
+  <td>Uh oh. We’re not sure what happened.</td>
+  <td>Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09004</td>
+  <td>WARNING</td>
+  <td>Still loading data, come back soon</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09005</td>
+  <td>ERROR</td>
+  <td>Uh oh. We’re having trouble getting data for this request.</td>
+  <td>Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09006</td>
+  <td>ERROR</td>
+  <td>Uh oh. We’re having trouble getting data for this request.</td>
+  <td>Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09007</td>
+  <td>ERROR</td>
+  <td>Uh oh. We’re having trouble getting data for this request.</td>
+  <td>Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09008</td>
+  <td>ERROR</td>
+  <td>Something went wrong with your search</td>
+  <td>Uh oh. We’re not sure what happened. Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09009</td>
+  <td>ERROR</td>
+  <td>The calculation engine has timed out. Please try again.</td>
+  <td>Please email the trace file to {adminEmail}.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09010</td>
+  <td>ERROR</td>
+  <td>Cannot open Object</td>
+  <td>Object cannot be opened due to errors in some of its dependencies</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-01600|ERROR|Failed to fetch data source types|Failed to fetch data source types|None|
-|TS-01601|ERROR|Failed to fetch data source sample values|Failed to fetch data source sample values|None|
-|TS-01602|ERROR|Failed to delete data source|Failed to delete data source|None|
-|TS-01603|ERROR|Failed to execute DDL|Failed to execute DDL|None|
-|TS-01604|ERROR|Failed to update schedule|Failed to update schedule|None|
-|TS-01605|ERROR|Failed to reload tasks|Failed to reload tasks|None|
-|TS-01606|ERROR|Failed to stop tasks|Failed to stop tasks|None|
-|TS-01607|ERROR|Failed to get creation DDL|Failed to get creation DDL|None|
-|TS-01608|ERROR|Failed to load from data source|Failed to load from data source|None|
-|TS-01609|ERROR|Failed to create connection to data source|Failed to create connection to data source|None|
-|TS-01610|ERROR|Failed to create data source|Failed to create data source|None|
-|TS-01611|ERROR|Failed to connect to data source|Failed to connect to data source|None|
-|TS-01612|ERROR|Failed to get data source connection field info|Failed to get data source connection field info|None|
-|TS-01613|ERROR|Failed to get connection list for data source|Failed to get connection list for data source|None|
-|TS-01614|ERROR|Failed to get connection attributes for data source|Failed to get connection attributes for data source|None|
-|TS-01615|ERROR|Failed to get connections to data source|Failed to get connections to data source|None|
-|TS-01616|ERROR|Failed to fetch data source config|Failed to fetch data source config|None|
-|TS-01617|ERROR|Failed to parse sql.|Failed to parse sql.|None|
-|TS-01618|ERROR|Failed to execute sql.|Failed to execute sql.|None|
-|TS-01619|INFO|Successfully created connection to data source|None|None|
-|TS-01620|INFO|Successfully updated data upload schedule|None|None|
-|TS-01621|ERROR|Failed to execute sql.|Please check the failing command, executed {1} statements successfully.|None|
-|TS-01622|ERROR|Lightweight data-cache disabled|Lightweight data-cache disabled|None|
-|TS-01623|INFO|Selected tables were queued for loading.|Selected tables were queued for loading.|None|
-|TS-01624|ERROR|DataType conversion error.|No mapping found for source datatype to ThoughtSpot datatype.|None|
-|TS-01625|INFO|Successfully reload task started.|None|None|
-|TS-01626|INFO|Successfully connected to data source.|None|None|
-|TS-01627|INFO|Successfully created data source.|None|None|
-|TS-01628|INFO|Successfully stopped the tasks.|None|None|
-|TS-01629|INFO|Successfully deleted the connection.|None|None|
-|TS-01630|ERROR|There was an error deleting this connection.|None|None|
-|TS-01631|INFO|Successfully executed the DDL.|None|None|
+## User Interface Errors {#user-interface-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the user interface domain, by code number. The range of errors is <strong>TS-09500</strong> through <strong>TS-09599</strong>.</summary>
 
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-09500</td>
+  <td>WARNING</td>
+  <td>Cannot connect to the calculation engine. Please try again soon.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09501</td>
+  <td>WARNING</td>
+  <td>The calculation engine has timed out. Please try again.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09502</td>
+  <td>WARNING</td>
+  <td>Cannot connect to the search engine. Please try again soon.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09503</td>
+  <td>WARNING</td>
+  <td>The search engine has timed out. Please try again.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09504</td>
+  <td>ERROR</td>
+  <td>Cannot open {1}</td>
+  <td>{1} cannot be opened due to errors in the following dependencies 1 - Type of the object Table/Answer/Pinboard etc.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09505</td>
+  <td>WARNING</td>
+  <td>We’re still indexing this data, try again soon</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09506</td>
+  <td>ERROR</td>
+  <td>Object is not present in the system</td>
+  <td>{1} is not present in the system 1 - Type of the object Table/Answer/Pinboard etc.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-09507</td>
+  <td>ERROR</td>
+  <td>ThoughtSpot is unreachable. Please try again soon</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-## Cluster Status Service Errors (1800 - 1899)
+## Common Errors {#common-errors}
+<details>
+<summary>The following table lists some common TS (ThoughtSpot) errors, by code number. The range of errors is <strong>TS-10000</strong> through <strong>TS-10099</strong>.</summary>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-01800|WARNING|Failed to fetch cluster information from search service.|None|None|
-|TS-01801|WARNING|Failed to fetch table detail information from search service.|None|None|
-|TS-01802|WARNING|Failed to fetch cluster information from database service.|None|None|
-|TS-01803|WARNING|Failed to fetch table detail information from databse service.|None|None|
-|TS-01804|WARNING|Failed to fetch cluster information from cluster management service.|None|None|
-|TS-01805|WARNING|Failed to fetch detail information from cluster management service.|None|None|
-|TS-01806|WARNING|Failed to fetch log from cluster management service.|None|None|
-|TS-01807|WARNING|Failed to fetch snapshot list from cluster management service.|None|None|
-|TS-01808|WARNING|Failed to fetch cluster information from alert management service.|None|None|
-|TS-01809|WARNING|Failed to fetch cluster information from event service.|None|None|
-|TS-01810|WARNING|Failed to fetch alerts information from alert management service.|None|None|
-|TS-01811|WARNING|Failed to fetch events information from alert management service.|None|None|
-|TS-01812|INFO|Thanks for your feedback!|None|None|
-|TS-01813|WARNING|Sorry! Unable to submit the feedback at this moment!|None|None|
-|TS-01814|INFO|Successfully exported objects. File can be found at {1}.|None|None|
-|TS-01815|ERROR|Sorry! Unable to export objects at this moment!|What happened? {1}.|None|
-|TS-01816|INFO|Successfully imported objects|None|None|
-|TS-01817|ERROR|Sorry! Unable to import objects at this moment!|What happened? {1}.|None|
-|TS-01818|INFO|Successfully deleted data source object(s).|None|None|
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="25%" />
+<col width="30%" />
+<col width="25%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-10000</td>
+  <td>ERROR</td>
+  <td>A system error has occurred</td>
+  <td>Uh oh. We're not sure what happened. Please contact your administrator.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-10001</td>
+  <td>ERROR</td>
+  <td>Connection failed</td>
+  <td>The metadata store is not reachable.</td>
+  <td>Please contact your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10002</td>
+  <td>ERROR</td>
+  <td>The input is invalid</td>
+  <td>Input from the client to the server is invalid.</td>
+  <td>Please contact your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10003</td>
+  <td>ERROR</td>
+  <td>Unfortunately, you can't do that</td>
+  <td>You are not authorized to perform {1}. \# {1} – action user is not authorized for</td>
+  <td>Please request access from your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10004</td>
+  <td>ERROR</td>
+  <td>The user could not be authorized</td>
+  <td>User {0} is not authorized to perform {1}. \# {0} – name of the user \# {1} – action user is not authorized for</td>
+  <td>Please request access from your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10005</td>
+  <td>ERROR</td>
+  <td>The base object is missing</td>
+  <td>An underlying object referenced by this object is missing in store.</td>
+  <td>Please contact your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10006</td>
+  <td>ERROR</td>
+  <td>The connection to Zookeeper has failed</td>
+  <td>Zookeeper is not reachable.</td>
+  <td>Please contact your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10007</td>
+  <td>ERROR</td>
+  <td>There's invalid parameter(s)</td>
+  <td>Invalid parameter values: {0}.</td>
+  <td>Please contact your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10008</td>
+  <td>ERROR</td>
+  <td>The user cannot be found</td>
+  <td>User {0} not found in store. \# {0} – name of the user</td>
+  <td>Please contact your administrator</td>
+ </tr>
+ <tr>
+  <td>TS-10009</td>
+  <td>ERROR</td>
+  <td>Cannot add group</td>
+  <td>This group already belongs to the group you are trying to add it to.</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-## Callosum API Errors (9000 - 9199)
+## Internal Database Errors {#internal-database-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the internal database domain, by code number. The range of errors is <strong>TS-10600</strong> through <strong>TS-10699</strong>.</summary>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-09000|ERROR|The data you are trying to delete has some dependencies|Some objects depend on the data you are trying to delete|delete the dependencies before deleting this data.|
-|TS-09001|ERROR|Uh oh. We’re not sure what happened.|Please email the trace file to {adminEmail}.|None|
-|TS-09002|ERROR|Could not authorize user|Try logging in again|None|
-|TS-09003|ERROR|Uh oh. We’re not sure what happened.|Please email the trace file to {adminEmail}.|None|
-|TS-09004|WARNING|Still loading data, come back soon|None|None|
-|TS-09005|ERROR|Uh oh. We’re having trouble getting data for this request.|Please email the trace file to {adminEmail}.|None|
-|TS-09006|ERROR|Uh oh. We’re having trouble getting data for this request.|Please email the trace file to {adminEmail}.|None|
-|TS-09007|ERROR|Uh oh. We’re having trouble getting data for this request.|Please email the trace file to {adminEmail}.|None|
-|TS-09008|ERROR|Something went wrong with your search|Uh oh. We’re not sure what happened. Please email the trace file to {adminEmail}.|None|
-|TS-09009|ERROR|The calculation engine has timed out. Please try again.|Please email the trace file to {adminEmail}.|None|
-|TS-09010|ERROR|Cannot open Object|Object cannot be opened due to errors in some of its dependencies|None|
-|TS-0Blink Generated Errors (9500 - 9599)|
-|TS-09500|WARNING|Cannot connect to the calculation engine. Please try again soon.|None|None|
-|TS-09501|WARNING|The calculation engine has timed out. Please try again.|None|None|
-|TS-09502|WARNING|Cannot connect to the search engine. Please try again soon.|None|None|
-|TS-09503|WARNING|The search engine has timed out. Please try again.|None|None|
-|TS-09504|ERROR|Cannot open {1}|{1} cannot be opened due to errors in the following dependencies 1 - Type of the object Table/Answer/Pinboard etc.|None|
-|TS-09505|WARNING|We’re still indexing this data, try again soon|None|None|
-|TS-09506|ERROR|Object is not present in the system|{1} is not present in the system 1 - Type of the object Table/Answer/Pinboard etc.|None|
-|TS-09507|ERROR|ThoughtSpot is unreachable. Please try again soon|None|None|
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-10603</td>
+  <td>ERROR</td>
+  <td>Falcon query cancelled</td>
+  <td>None</td>
+  <td>None</td>
+</tr>
+</table>
+</details>
 
+## Data Errors {#data-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the data domain, by code number. The range of errors is <strong>TS-11000</strong> through <strong>TS-11099</strong>.</summary>
 
-## Common Errors (10000 - 10099)
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-11001</td>
+  <td>ERROR</td>
+  <td>Invalid row</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11002</td>
+  <td>ERROR</td>
+  <td>Invalid table/query resultset</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11003</td>
+  <td>ERROR</td>
+  <td>Invalid column identifier</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11004</td>
+  <td>ERROR</td>
+  <td>Invalid visualization identifier</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11005</td>
+  <td>ERROR</td>
+  <td>No data</td>
+  <td>Query execution resulted in no data.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11006</td>
+  <td>ERROR</td>
+  <td>Query execution failed</td>
+  <td>Error in query execution to Falcon.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11007</td>
+  <td>ERROR</td>
+  <td>Answer data generation failed</td>
+  <td>Error in Answer data generation for Sage input.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11008</td>
+  <td>ERROR</td>
+  <td>Data export failed</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-11009</td>
+  <td>ERROR</td>
+  <td>Data generation failed</td>
+  <td>Error in data generation in Callosum.</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-10000|ERROR|A system error has occurred|Uh oh. We're not sure what happened. Please contact your administrator.|None|
-|TS-10001|ERROR|Connection failed|The metadata store is not reachable.|Please contact your administrator|
-|TS-10002|ERROR|The input is invalid|Input from the client to the server is invalid.|Please contact your administrator|
-|TS-10003|ERROR|Unfortunately, you can't do that|You are not authorized to perform {1}. \# {1} – action user is not authorized for|Please request access from your administrator|
-|TS-10004|ERROR|The user could not be authorized|User {0} is not authorized to perform {1}. \# {0} – name of the user \# {1} – action user is not authorized for|Please request access from your administrator|
-|TS-10005|ERROR|The base object is missing|An underlying object referenced by this object is missing in store.|Please contact your administrator|
-|TS-10006|ERROR|The connection to Zookeeper has failed|Zookeeper is not reachable.|Please contact your administrator|
-|TS-10007|ERROR|There's invalid parameter(s)|Invalid parameter values: {0}.|Please contact your administrator|
-|TS-10008|ERROR|The user cannot be found|User {0} not found in store. \# {0} – name of the user|Please contact your administrator|
-|TS-10009|ERROR|Cannot add group|This group already belongs to the group you are trying to add it to.|None|
+## Report Generation Errors {#report-generation-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the report generation domain, by code number. The range of errors is <strong>TS-12000</strong> through <strong>TS-12999</strong>.</summary>
 
-## Falcon Errors (10600 - 10699)
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-12700</td>
+  <td>ERROR</td>
+  <td>Error while exporting data file.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12701</td>
+  <td>ERROR</td>
+  <td>Invalid input.</td>
+  <td>The definition of the job is invalid.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12702</td>
+  <td>ERROR</td>
+  <td>No author provided.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12703</td>
+  <td>ERROR</td>
+  <td>No pinboard provided.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12704</td>
+  <td>ERROR</td>
+  <td>No recipients provided.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12705</td>
+  <td>ERROR</td>
+  <td>This format is not supported.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12706</td>
+  <td>ERROR</td>
+  <td>No job name provided.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12707</td>
+  <td>ERROR</td>
+  <td>No job description provided.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12708</td>
+  <td>ERROR</td>
+  <td>Pinboard data export error.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12709</td>
+  <td>ERROR</td>
+  <td>Visualization data export error.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12710</td>
+  <td>ERROR</td>
+  <td>User data unavailable.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12711</td>
+  <td>ERROR</td>
+  <td>Configuration information unavailable.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12712</td>
+  <td>ERROR</td>
+  <td>There are too many recipients.</td>
+  <td>The max number of recipients is 1000.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12713</td>
+  <td>ERROR</td>
+  <td>Attachment size limit exceeded.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-12714</td>
+  <td>ERROR</td>
+  <td>Recipient domain is not whitelisted.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+</table>
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-10603|ERROR|Falcon query cancelled|None|None|
+## Additional Metadata Errors {#additional-metadata-errors}
+<details>
+<summary>The following table lists additional TS (ThoughtSpot) errors in the metadata domain, by code number. The range of errors is <strong>TS-13000</strong> through <strong>TS-13099</strong>.</summary>
 
-## Data Errors (11000 - 11099)
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-13001</td>
+  <td>ERROR</td>
+  <td>Schema creation failed</td>
+  <td>Error creating database schema.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13002</td>
+  <td>ERROR</td>
+  <td>Views creation failed</td>
+  <td>Error creating view.</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13003</td>
+  <td>ERROR</td>
+  <td>The object cannot be found in store</td>
+  <td>Object with Id: {0} of type: {1} not found. \# {0} – identity of the object \# {1} – type of object</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13004</td>
+  <td>ERROR</td>
+  <td>The object is in an invalid state</td>
+  <td>Oject with Id: {0} of type: {1} in invalid state. \# {0} – identity of the object \# {1} – type of object</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13005</td>
+  <td>ERROR</td>
+  <td>Object already exists</td>
+  <td>Object with Id: {0} of type: {1} already exists. \# {0} – identity of the object \# {1} – type of object</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13006</td>
+  <td>ERROR</td>
+  <td>Invalid object type</td>
+  <td>Invalid type: {0} provided. \# {1} – type of object</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13007</td>
+  <td>ERROR</td>
+  <td>Invalid Sage question</td>
+  <td>Insufficient or invalid input from Sage: {0}. \# {0} – the invalid input</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13008</td>
+  <td>ERROR</td>
+  <td>Invalid Sage question</td>
+  <td>Input from from Sage – missing columns of type: {0}. \# {0} – column type</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13009</td>
+  <td>ERROR</td>
+  <td>Invalid Sage question</td>
+  <td>Invalid input from Sage – invalid expression: {0}. \# {0} – the invalid expression</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13010</td>
+  <td>ERROR</td>
+  <td>Sending logical metadata to Sage failed</td>
+  <td>Sending logical metadata to Sage failed due to: {0}. \# {0} – reason for failure</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13011</td>
+  <td>ERROR</td>
+  <td>Answer generation failed</td>
+  <td>Answer generation failed due to: {0}. \# {0} – reason for failure</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13012</td>
+  <td>ERROR</td>
+  <td>Worksheet generation failed</td>
+  <td>Worksheet generation failed due to: {0}. \# {0} – reason for failure</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13013</td>
+  <td>ERROR</td>
+  <td>Service provider unavailable</td>
+  <td>Service provider unavailable: {0}. \# {0} – provider details</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13015</td>
+  <td>ERROR</td>
+  <td>Physical model not loaded</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13016</td>
+  <td>ERROR</td>
+  <td>Invalid physical schema proto</td>
+  <td>Inconsistency in physical schema from Falcon: {0}. \# {0} – error details</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13017</td>
+  <td>ERROR</td>
+  <td>Invalid duplicate columns</td>
+  <td>Duplicate columns: {0}. \# {0} – List of duplicate column identities</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13018</td>
+  <td>ERROR</td>
+  <td>Cyclic relationship</td>
+  <td>Detected cycles: {0}. \# {0} – cycle details</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13019</td>
+  <td>WARNING</td>
+  <td>Older physical schema version received</td>
+  <td>Schema update for older version: {0} received and ignored. \# {0} – received version number</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13020</td>
+  <td>ERROR</td>
+  <td>Invalid relationship</td>
+  <td>Attempted to create invalid relationship: {0}. \# {0} – relationship details</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13022</td>
+  <td>ERROR</td>
+  <td>Invalid filter values: {values}</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13023</td>
+  <td>ERROR</td>
+  <td>Creating relationship failed.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13024</td>
+  <td>ERROR</td>
+  <td>Deleting schema failed.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13025</td>
+  <td>ERROR</td>
+  <td>Expression validation failed.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13026</td>
+  <td>INFO</td>
+  <td>Load schedule successfully disabled.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13027</td>
+  <td>ERROR</td>
+  <td>Load schedule could not be disabled.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13028</td>
+  <td>ERROR</td>
+  <td>Objects fetched from the connection are invalid for editing datasource.</td>
+  <td>None</td>
+  <td>To proceed with editing the datasource, please edit the connection below to fetch valid source objects.</td>
+ </tr>
+ <tr>
+  <td>TS-13029</td>
+  <td>INFO</td>
+  <td>Successfully edited data source connection.</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+ <tr>
+  <td>TS-13030</td>
+  <td>ERROR</td>
+  <td>Connection test failed.</td>
+  <td>None</td>
+  <td>Please verify connection attributes.</td>
+ </tr>
+</table>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-11001|ERROR|Invalid row|None|None|
-|TS-11002|ERROR|Invalid table/query resultset|None|None|
-|TS-11003|ERROR|Invalid column identifier|None|None|
-|TS-11004|ERROR|Invalid visualization identifier|None|None|
-|TS-11005|ERROR|No data|Query execution resulted in no data.|None|
-|TS-11006|ERROR|Query execution failed|Error in query execution to Falcon.|None|
-|TS-11007|ERROR|Answer data generation failed|Error in Answer data generation for Sage input.|None|
-|TS-11008|ERROR|Data export failed|None|None|
-|TS-11009|ERROR|Data generation failed|Error in data generation in Callosum.|None|
+</details>
 
-## Report Generation Errors (12000 - 13000)
+## Loading Errors {#loading-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors in the loading domain, by code number. The range of errors is <strong>TS-30000</strong> through <strong>TS-30099</strong>.</summary>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-12700|ERROR|Error while exporting data file.|None|None|
-|TS-12701|ERROR|Invalid input.|The definition of the job is invalid.|None|
-|TS-12702|ERROR|No author provided.|None|None|
-|TS-12703|ERROR|No pinboard provided.|None|None|
-|TS-12704|ERROR|No recipients provided.|None|None|
-|TS-12705|ERROR|This format is not supported.|None|None|
-|TS-12706|ERROR|No job name provided.|None|None|
-|TS-12707|ERROR|No job description provided.|None|None|
-|TS-12708|ERROR|Pinboard data export error.|None|None|
-|TS-12709|ERROR|Visualization data export error.|None|None|
-|TS-12710|ERROR|User data unavailable.|None|None|
-|TS-12711|ERROR|Configuration information unavailable.|None|None|
-|TS-12712|ERROR|There are too many recipients.|The max number of recipients is 1000.|None|
-|TS-12713|ERROR|Attachment size limit exceeded.|None|None|
-|TS-12714|ERROR|Recipient domain is not whitelisted.|None|None|
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-30000</td>
+  <td>ERROR</td>
+  <td>Table is not ready (data loading in progress).</td>
+  <td>None</td>
+  <td>None</td>
+ </tr>
+</table>
 
-## More Metadata Errors (13000 - 13099)
+</details>
 
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-13001|ERROR|Schema creation failed|Error creating database schema.|None|
-|TS-13002|ERROR|Views creation failed|Error creating view.|None|
-|TS-13003|ERROR|The object cannot be found in store|Object with Id: {0} of type: {1} not found. \# {0} – identity of the object \# {1} – type of object|None|
-|TS-13004|ERROR|The object is in an invalid state|Oject with Id: {0} of type: {1} in invalid state. \# {0} – identity of the object \# {1} – type of object|None|
-|TS-13005|ERROR|Object already exists|Object with Id: {0} of type: {1} already exists. \# {0} – identity of the object \# {1} – type of object|None|
-|TS-13006|ERROR|Invalid object type|Invalid type: {0} provided. \# {1} – type of object|None|
-|TS-13007|ERROR|Invalid Sage question|Insufficient or invalid input from Sage: {0}. \# {0} – the invalid input|None|
-|TS-13008|ERROR|Invalid Sage question|Input from from Sage – missing columns of type: {0}. \# {0} – column type|None|
-|TS-13009|ERROR|Invalid Sage question|Invalid input from Sage – invalid expression: {0}. \# {0} – the invalid expression|None|
-|TS-13010|ERROR|Sending logical metadata to Sage failed|Sending logical metadata to Sage failed due to: {0}. \# {0} – reason for failure|None|
-|TS-13011|ERROR|Answer generation failed|Answer generation failed due to: {0}. \# {0} – reason for failure|None|
-|TS-13012|ERROR|Worksheet generation failed|Worksheet generation failed due to: {0}. \# {0} – reason for failure|None|
-|TS-13013|ERROR|Service provider unavailable|Service provider unavailable: {0}. \# {0} – provider details|None|
-|TS-13015|ERROR|Physical model not loaded|None|None|
-|TS-13016|ERROR|Invalid physical schema proto|Inconsistency in physical schema from Falcon: {0}. \# {0} – error details|None|
-|TS-13017|ERROR|Invalid duplicate columns|Duplicate columns: {0}. \# {0} – List of duplicate column identities|None|
-|TS-13018|ERROR|Cyclic relationship|Detected cycles: {0}. \# {0} – cycle details|None|
-|TS-13019|WARNING|Older physical schema version received|Schema update for older version: {0} received and ignored. \# {0} – received version number|None|
-|TS-13020|ERROR|Invalid relationship|Attempted to create invalid relationship: {0}. \# {0} – relationship details|None|
-|TS-13022|ERROR|Invalid filter values: {values}|None|None|
-|TS-13023|ERROR|Creating relationship failed.|None|None|
-|TS-13024|ERROR|Deleting schema failed.|None|None|
-|TS-13025|ERROR|Expression validation failed.|None|None|
-|TS-13026|INFO|Load schedule successfully disabled.|None|None|
-|TS-13027|ERROR|Load schedule could not be disabled.|None|None|
-|TS-13028|ERROR|Objects fetched from the connection are invalid for editing datasource.|None|To proceed with editing the datasource, please edit the connection below to fetch valid source objects.|
-|TS-13029|INFO|Successfully edited data source connection.|None|None|
-|TS-13030|ERROR|Connection test failed.|None|Please verify connection attributes.|
+## Timeout Errors {#timeout-errors}
+<details>
+<summary>The following table lists TS (ThoughtSpot) errors due to timeouts, by code number. The range of errors is <strong>TS-60000</strong> through <strong>TS-64999</strong>.</summary>
 
-## Loading Errors (30000 - 30099)
-
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-30000|ERROR|Table is not ready (data loading in progress).|None|None|
-
-
-## Timely Errors (60000 - 64999)
-
-|Code|Severity|Summary|Details|Action|
-|-----|--------|-------|-------|------|
-|TS-60000|ERROR|Failed to initialize.|None|None|
+<table>
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="35%" />
+<col width="35%" />
+<col width="10%" />
+</colgroup>
+ <tr>
+  <th>Code</th>
+  <th>Severity</th>
+  <th>Summary</th>
+  <th>Details</th>
+  <th>Action</th>
+ </tr>
+ <tr>
+  <td>TS-60000</td>
+  <td>ERROR</td>
+  <td>Failed to initialize.</td>
+  <td>None</td>
+  <td>None</td>
+</tr>
+</table>
+</details>

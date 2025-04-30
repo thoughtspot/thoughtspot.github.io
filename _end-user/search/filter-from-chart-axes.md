@@ -1,6 +1,6 @@
 ---
 title: [Add a filter to a chart]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can add a simple filter from a chart axis while viewing your answer as a chart."
 sidebar: mydoc_sidebar

@@ -1,6 +1,6 @@
 ---
 title: [Data sources management]
-keywords: tbd
+
 tags: [logs]
 summary: "After you have successfully loaded your tables, you can check on the status of the load, make edits, and more."
 sidebar: mydoc_sidebar
@@ -10,7 +10,7 @@ You can manage your new data sources by clicking on the name of your source on t
 
  ![]({{ site.baseurl }}/images/data_sources_management_view.png "Data sources management view")
 
-Once you have selected a data source, you have the option to perform a number of editing and maintenance tasks.
+After selecting a data source, you have the option to perform a number of editing and maintenance tasks.
 
 ## Schedule, edit, and refresh
 

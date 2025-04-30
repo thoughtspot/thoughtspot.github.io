@@ -31,7 +31,7 @@ To do a search using SearchIQ:
 
 6. When your answer appears, you may also see one or more of these messages:
 
-   * Interpretation: You'll see how different words you typed were understood.
+   * Interpretation: You can see how different words you typed were understood.
 
      ![]({{ site.baseurl }}/images/searchiq_interpreted.png "SearchIQ interpretation")
 

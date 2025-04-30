@@ -33,7 +33,7 @@ When your ThoughtSpot appliance arrives, the following items will be included:
 
 ##  Additional hardware requirements
 
- You will need to supply the following items, as they will not be included with your ThoughtSpot appliance:
+ You must supply the following items, as they will not be included with your ThoughtSpot appliance:
 
 * Data center with proper cooling
 * 2U of rack space per appliance (post depth 26.5" - 36.4")

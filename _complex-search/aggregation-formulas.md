@@ -1,6 +1,6 @@
 ---
 title: [Overview of aggregate formulas]
-keywords: tbd
+
 tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar

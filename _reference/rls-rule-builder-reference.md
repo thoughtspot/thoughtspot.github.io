@@ -1,6 +1,6 @@
 ---
 title: [Row level security rules reference]
-keywords: tbd
+
 tags: [rls]
 last_updated: tbd
 sidebar: mydoc_sidebar

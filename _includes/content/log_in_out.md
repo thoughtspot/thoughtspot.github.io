@@ -61,7 +61,7 @@ To sign in to ThoughtSpot from a browser:
 
 ## Sign out
 
-Once you're done with your search session, you can optionally sign out of
+After you finish the search session, you can optionally sign out of
 ThoughtSpot. To sign out of ThoughtSpot from a browser:
 
 1. Click your user icon at the top right hand corner of the screen.

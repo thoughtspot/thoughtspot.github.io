@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
-X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
+X SDK</a> to connect through ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the JDBC driver.
 
 The ThoughtSpot JDBC driver is supplied by a `.jar` file you install on a
@@ -51,7 +51,7 @@ The JDBC driver is a `.jar` packaged application. To use the package, you downlo
 ## Write your application
 
 Using JDBC with ThoughtSpot is the same as using any other JDBC driver with any
-other database. You need to provide the connection information, create a
+other database. You must provide the connection information, create a
 connection, execute statements, and close the connection.
 
 Specify each of the nodes in the cluster in the connection string, as shown.

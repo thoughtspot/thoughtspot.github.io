@@ -1,6 +1,6 @@
 ---
 title: [Last data refresh time]
-keywords: tbd
+
 tags: [tipsntricks]
 summary: "You can see the last time at which data was refreshed without having to visit the **Data** page.
 "

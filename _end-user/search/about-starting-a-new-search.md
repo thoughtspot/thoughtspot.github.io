@@ -24,7 +24,7 @@ You’ve probably seen one of these before:
 
 Click in the box and start typing some letters. As soon as you begin typing, ThoughtSpot suggests some search terms Type slowly and use the suggestions to find what you're looking for.
 
-You'll see an answer in the form of a chart or a table. If you do not see an answer, press **Enter** on your keyboard.
+You can see an answer in the form of a chart or a table. If you do not see an answer, press **Enter** on your keyboard.
 
 You should know that search in ThoughtSpot is more like an Amazon search than a conversation. For example. Instead of:
 

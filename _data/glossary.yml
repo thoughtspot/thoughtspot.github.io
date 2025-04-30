@@ -10,7 +10,7 @@ entries:
   - word: search
     definition: "This is a query in ThoughtSpot. We call this search because ThoughtSpot queries enable the user to find business information as efficiently as using an Internet search engine."
   - word: token
-    definition: "The text that users enter in the search bar. This includes keywords, column names, and forumula names."
+    definition: "The text that users enter in the search bar. This includes keywords, column names, and formula names."
   - word: visualization
     definition: "This is a visual representation of data. In ThoughtSpot, it is the representation of an *answer*. In some cases, we use the terms *visualization* and *answer* interchangeably."
   - word: viz

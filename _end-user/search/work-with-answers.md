@@ -1,7 +1,7 @@
 ---
 title: [Work with Answers]
 tags: [overview,tipsntricks]
-keywords: tbd
+
 last_updated: tbd
 summary: "Answers are the saved results of a search. "
 sidebar: mydoc_sidebar
@@ -55,7 +55,7 @@ original answer and you can select any of the insights to deepen your search.
 ![]({{ site.baseurl }}/images/other-answers.png "Features of Answers")
 
 The **SpotIQ Insights** section is only visible to users with the **Has SpotIQ**
-privilege. Once you expand an insight on this list, an **Edit** button allows
+privilege. After you expand an insight on this list, an **Edit** button allows
 you modify the insight and make it your own. Your installation configuration
 determines how many insights can appear in this section. The default is 6.
 

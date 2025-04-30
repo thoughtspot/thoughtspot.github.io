@@ -35,7 +35,7 @@ or a data management professional. Modeling data requires that you can:
 
 2. Click a data source you own or can edit.
 
-    This brings up the **Columns** screen, where you'll make your modeling settings.
+    This brings up the **Columns** screen, where you can make your modeling settings.
 
 3. Modify one or more column settings.
 

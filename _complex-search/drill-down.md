@@ -1,6 +1,6 @@
 ---
 title: [See the search behind a result]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can use your answer to learn more about the data used in your search."
 sidebar: mydoc_sidebar

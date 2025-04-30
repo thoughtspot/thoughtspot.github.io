@@ -1,6 +1,6 @@
 ---
 title: [Network connectivity issues]
-keywords: tbd
+
 tags: [networking]
 last_updated: tbd
 sidebar: mydoc_sidebar

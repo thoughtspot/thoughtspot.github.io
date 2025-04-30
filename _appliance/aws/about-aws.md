@@ -9,9 +9,9 @@ permalink: /:collection/:path.html
 Amazon Web Services (AWS) can provide lots of memory and CPU for your ThoughtSpot instance, and it can
 be easily updated from development instances.
 
-Your database capacity will determine the number of instances you'll need and
-the instance network/storage requirements. In addition, you can go with multiple
-VMs based on your dataset size.
+Your database capacity determines the number of instances you require and
+the instance network/storage requirements. In addition, you can choose to deploy multiple
+VMs, based on your dataset size.
 
 The security group setting of your ThoughtSpot instance on AWS is up to you. You
 can find more information about which ports to open in the [network ports
@@ -22,8 +22,8 @@ reference]({{ site.baseurl }}/appliance/firewall-ports.html#).
 AWS is a secure cloud services platform offered by Amazon. Using ThoughtSpot on
 AWS allows you to easily add instances as your dataset grows. You can do
 everything you'd normally want to do in a traditional data center with AWS.
-It features an on-demand delivery of IT resources and applications via the
-Internet with pay-as-you-go pricing.
+It features an on-demand delivery of IT resources and applications through the
+Internet, with pay-as-you-go pricing.
 
 Amazon EC2 is based on instance types and the region in which your instances are
 running. When you are connected to an instance, you can use it just like you use

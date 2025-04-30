@@ -1,6 +1,6 @@
 ---
 title: [tsload flag reference]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -76,7 +76,7 @@ For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot 
     <tr>
       <td><code class="highlighter-rouge">--skip_second_fraction</code></td>
       <td>Skips fractional seconds when loading data.</td>
-      <td>If supplied, the upserts logic may be affected, especially if the date time being loaded is a primary key, and the data has millisecond granularity. Load the data twice, once as a string with a primary key, and again with second granularity date time. There is no support to store fractional seconds in the ThoughtSpot system.</td>
+      <td>If supplied, the upserts logic may be affected, especially if the date time being loaded is a primary key, and the data has millisecond granularity. Load the data twice, first time as a string with a primary key, and again with second granularity date time. There is no support to store fractional seconds in the ThoughtSpot system.</td>
     </tr>
   </tbody>
 </table>
@@ -115,7 +115,7 @@ The following flags are used when loading data from an input file:
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">-- trailing_field_separator</code></td>
+      <td><code class="highlighter-rouge">--trailing_field_separator</code></td>
       <td>Specifies that the field separator appears after every field, including the last field per row.</td>
       <td>Example row with trailing field separator: a,b,c,The default is false.</td>
     </tr>

@@ -27,7 +27,7 @@ software packages (e.g. Python) needed for ThoughtSpot operations.  The most
 notable change to the installation is to the Linux kernel, which is sourced from
 the current long term stable kernel version instead of the default included in
 CentOS 7 (kernel-lt package).  To list all the installed packages, see
-[Checking Package Versions](#checking-os-package-versions) below.
+[Checking Package Versions](#checking-os-package-versions).
 
 ### Third-Party Software (Middleware)
 
@@ -170,12 +170,12 @@ application binaries and configuration.  Additionally, ThoughtSpot periodically
 scans all source code for third-party software as well as ThoughtSpot’s
 proprietary code base for vulnerabilities or unsafe usage using SourceClear.
 
-Once a critical new vulnerability is found (severity 4 or 5), ThoughtSpot
+After a critical new vulnerability is found (severity 4 or 5), ThoughtSpot
 includes the corresponding patch in the next patch release for all supported
 release branches.  Consult ThoughtSpot documentation or support to find out if
 you are on an active or supported release branch.
 
-Once a new patch release with a critical security vulnerability is available,
+After a new patch release with a critical security vulnerability is available,
 customers are encouraged to upgrade their deployment quickly.
 
 ### Latency

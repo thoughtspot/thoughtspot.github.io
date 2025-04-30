@@ -1,6 +1,6 @@
 ---
 title: [Flexible aggregation functions (group aggregate and filters)]
-keywords: tbd
+
 tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar

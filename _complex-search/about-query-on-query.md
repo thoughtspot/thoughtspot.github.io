@@ -38,7 +38,7 @@ possible. If you want to do this, here are the steps at a high level:
 
 1. Create the first search, and [save it as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#).
 
-2. [Create relationships]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#) to connect your view with any other data sources you'll need.
+2. [Create relationships]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html#) or [define joins]({{ site.baseurl }}/admin/loading/constraints.html#) to connect your view with any other data sources you need.
 
 3. Create a new search that includes your view and the other sources you linked with it.
 

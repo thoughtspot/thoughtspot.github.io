@@ -10,12 +10,12 @@ If your organization has a trusted authentication server, you can use this
 server to authenticate users of the embedded ThoughtSpot application. After
 authenticating a user, the trusted authenticator server or service obtains an
 authentication token from ThoughtSpot on the user's behalf. In this way, the
-user need only authenticate once, with the trusted authentication server.
+user need only authenticate one time, with the trusted authentication server.
 
 
 ## How users are authenticated
 
-In the scenario below, the trust authenticator forwards requests for ThoughtSpot
+In the following scenario, the trust authenticator forwards requests for ThoughtSpot
 data from client applications to ThoughtSpot.
 
 ![]({{ site.baseurl }}/images/authentication.png "Authentication flow")
@@ -61,13 +61,13 @@ return a new one. To disable a token and not overwrite it:
 tscli tokenauthentication disable
 ```
 
-Once generated, tokens do not expire.
+Generated tokens do not expire.
 
 ## Trusted authentication call     
 
 1. User in another application or web page requests access to embedded ThoughtSpot.
 
-   This is a REST request for an embedded ThoughtSpot Eobject, page, or the entire application. Your trusted authenticator server intercepts the request. Your server application must determine at minimum:
+   This is a REST request for an embedded ThoughtSpot object, page, or the entire application. Your trusted authenticator server intercepts the request. Your server application must determine at minimum:
 
      - if the requestor is itself authenticated with your server
      - which user (`username`) is making the request
@@ -75,9 +75,9 @@ Once generated, tokens do not expire.
 
     It is also important the the `username` is a match for a `username` on the ThoughtSpot application.
 
-2. The trusted web server requests a authentication token on the user's behalf from ThoughtSpot.
+2. The trusted web server requests an authentication token on the user's behalf from ThoughtSpot.
 
-    `POST https://<thoughtspot>/callosum/v1/session/auth/token`
+    `POST https://<instance>/callosum/v1/tspublic/v1/session/auth/token`
 
     This post takes the following parameters:
 
@@ -113,7 +113,7 @@ Once generated, tokens do not expire.
 
     For example, if the customer was requesting a specific object:
 
-    `https://THOUGHTSPOT_URL/?authtoken=TOKEN_VALUE/#/embed/viz/REPORTBOOK_ID/ID`
+    `GET https://<instance>/callosum/v1/session/login/token?username=<user>&auth_token=<token>&redirect_url=<full-encoded-url-with-auth-token>`
 
     If you are using ThoughtSpot embed with objects or pages, you must request
     reauthenticate requests for each new object.
