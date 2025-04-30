@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 3/3/2021
+last_updated: 1/7/2021
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply updates, stop and start the services, and view information about the system. This reference defines each subcommand."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -771,7 +771,7 @@ This subcommand has the following options:
     <p>The default is <code>False</code>.</p></dd></dlentry>
     <dlentry>
     <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
-    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli cluster restore --enable_cloud_storage s3a</code> to enable AWS S3 object storage.</dd></dlentry>
+    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli cluster restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
     <dlentry>
     <dt><code>--heterogeneous</code></dt>
     <dd><p>Should be set for heterogeneous clusters.</p>
@@ -823,7 +823,6 @@ This subcommand has the following options:
   <dd>Specified script with overrides.</dd>
   </dlentry></dl></dd></dlentry>
 
-<!-- SSU is not GA
   <dlentry>
     <dt><code>tscli cluster setup-release-host <em>HOST</em></code></dt>
     <dd>Sets up the release host for Self Service Upgrade, with the specified <code>HOST</code>.</dd></dlentry>
@@ -831,7 +830,6 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli cluster setup-release-host-key</code></dt>
     <dd>Sets up the release host api key for Self Service Upgrade.</dd></dlentry>  
--->
 
     <dlentry>
       <dt><code>tscli cluster show-id</code></dt>
@@ -987,10 +985,10 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
-    <dt><code>tscli dataflow disable</code></dt>
+    <dt><code>tscli config-mode disable</code></dt>
     <dd>Disables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster.</dd></dlentry>
     <dlentry>
-      <dt><code>tscli dataflow enable</code></dt>
+      <dt><code>tscli config-mode enable</code></dt>
       <dd>Enables the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow.html">DataFlow</a> service on the cluster, with token authentication.</dd></dlentry>
 </dl>
 
@@ -1431,27 +1429,26 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli map-tiles enable [-h] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
-      <p>Enables ThoughtSpot's map tiles.  Used when constructing geo map charts.</p>
+      <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
       <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append <code>--offline --tar <em>TAR</em> --md5 <em>MD5</em></code> to the <code>tscli map-tiles enable</code> command. This command has the following parameters:</p>
       <dl>
         <dlentry>
           <dt><code>--online</code></dt>
           <dd>
-            <p>Downloads <code>maptiles</code> tar from the internet. This subcommand is unavailable in versions 6.3.1 and later; the <code>tscli map-tiles enable</code> command automatically downloads the maptiles from the internet.</p>
+            <p>Downloads <code>maptiles</code> tar from the internet.</p>
             <p>The default setting is <code>True</code>.</p></dd></dlentry>
         <dlentry>
 
           <dt><code>--offline</code></dt>
           <dd>
-            <p>Specifies that you are using a <code>maptiles</code> tarball from a local disk, rather than downloading from the internet. Use during offline enablement of map-tiles. You must specify the location of the <code>--tar</code> and <code>--md5</code> on your machine.</p>
-            <p>You must download the <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">tarball</a> and <a href="https://tsengg-geodata.s3.amazonaws.com/md5">md5</a> before you run this command.</p>
+            <p>Specifies that you are using <code>maptiles</code> tar from a local disk. Use during offline enablement of map-tiles.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--tar <em>TAR</em></code></dt>
-          <dd>Specified tar file for map-tiles. Use during offline enablement of map-tiles. Download the tarball <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">here</a>.</dd></dlentry>
+          <dd>Specified tar file for map-tiles. Use during offline enablement of map-tiles.</dd></dlentry>
         <dlentry>
           <dt><code>--md5 <em>MD5</em></code></dt>
-          <dd>Specified md5 file for map-tiles. Use during offline enablement of map-tiles. Download the md5 <a href="https://tsengg-geodata.s3.amazonaws.com/md5">here</a>.</dd></dlentry>
+          <dd>Specified md5 file for map-tiles. Use during offline enablement of map-tiles.</dd></dlentry>
       </dl>
 
     </dd></dlentry>  

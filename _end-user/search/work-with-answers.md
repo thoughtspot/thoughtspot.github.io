@@ -50,11 +50,9 @@ For example, you can [create a View]({{ site.baseurl }}/complex-search/about-que
 
 ## SpotIQ Insights for Answers
 
-{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.1. For details, see Deprecation Announcements." %}
+{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
 
-{% include note.html content="Instant Insights are turned off by default. They do not appear on answers, or elsewhere in the application, unless your administrator turns on the feature." %}
-
-At the bottom of the **Answers** page, you can see an additional area, called
+At the bottom of the **Answers** page, you can an additional area, called
 **SpotIQ Insights**. This area is derived from your
 original answer and you can select any of the insights to deepen your search.
 
@@ -85,6 +83,7 @@ You can edit a copy of a SpotIQ Insight if you would like to make edits without 
 
    The Save Answer dialog box appears.
 
-   ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
+        ![]({{ site.baseurl }}/images/name_your_pinboard_copy.png "Name and save your answer copy")
+
 
 5. Change the name and description, as needed, and click **Save**.

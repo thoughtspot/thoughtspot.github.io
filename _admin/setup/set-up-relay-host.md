@@ -1,11 +1,10 @@
 ---
 title: [Set the relay host for SMTP (email)]
-last_updated: 7/23/2021
+last_updated: 6/11/2020
 summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server."
 redirect_from:
 - /6.3.0/admin/setup/set-up-relay-host.html
 - /6.3.0.CU1/admin/setup/set-up-relay-host.html
-- /6.3.1.CU1/admin/setup/set-up-relay-host.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -16,7 +15,7 @@ You can configure the relay host [using tscli](#tscli) or [through the Admin Con
 
 Set up SMTP rules to send critical email notifications to ThoughtSpot Support.
 
-### Set up the relay host
+### Set up the relay Host
 
 To set up a relay host:
 
@@ -46,32 +45,6 @@ To set up a relay host:
     ```
 
 4. Verify that email is working.
-
-### Configure an email to send alerts
-
-1. Log in to the Linux shell using SSH.
-
-2. Specify the domain of the email address you would like emails to come from. In `example@company.com`, this command specifies `company`.
-
-    ```
-    $ tscli smtp set-mailname <mailname>
-    ```
-
-3. Specify the name of the email address you would like emails to come from. In `example@company.com`, this command specifies `example`.
-
-    ```
-    $ tscli smtp set-mailfromname <mailfromname>
-    ```
-
-### Configure SMTP authentication
-
-1. Log in to the Linux shell using SSH.
-
-2. If SMTP authentication is required, you must specify a username and password. Skip this step if SMTP authentication is not required.
-
-    ```
-    $ tscli smtp set-saslcredentials
-    ```
 
 {: id="configure-email"}
 ### Configure an email to receive alerts

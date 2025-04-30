@@ -1,6 +1,5 @@
 ---
 title: ["Fixed issues"]
-toc: false
 keywords: "fixed issues"
 last_updated: 09/09/2020
 sidebar: mydoc_sidebar
@@ -12,8 +11,6 @@ These are the issues we fixed in recent ThoughtSpot releases.
 <details>
 <summary>6.3.X Releases</summary>
 <ul>
-<li><a href="#6-3-1-cu4">6.3.1 CU4 Fixed issues</a></li>
-<li><a href="#6-3-1-cu1">6.3.1 CU1 Fixed issues</a></li>
 <li><a href="#6-3-1">6.3.1 Fixed issues</a></li>
 <li><a href="#6-3">6.3 Fixed issues</a></li>
 </ul>
@@ -104,52 +101,6 @@ These are the issues we fixed in recent ThoughtSpot releases.
 </details>
 </li>
 </ul>
-
-<a id="6-3-1-cu4"></a>
-## 6.3.1 CU4 Fixed issues
-
-These are the issues we fixed in ThoughtSpot Release 6.3.4 CU1.
-
-- Share button does not work in certain circumstances.
-- Charts and pinboards cannot be downloaded as a PDF when URL encoding is enabled.
-- Clicking in the search bar does not place the cursor at the expected location when using the Google Chrome 92 browser.
-- Configuring filters on a pinboard causes it to stop working.
-- Geomaps do not render properly in a pinboard.
-- Japanese pinboard title in schedule emails displays incorrectly.
-- Scheduling a pinboard using the .CSV option does not work.  
-- Sharing certain pinboards does not work.
-- Certain pinboard visualizations do not display after a filter is applied.
-- Pivot tables do not display.
-- A calculated dimension in a worksheet is not indexed.
-- `unique_count_if(group_sum())` is not allowed in formula parser v2.
-- Null is not allowed in a complex `if-elif-else` condition in formula parser v2.
-- Offline Python package download fails for ruamel package for Python 2.7.
-- A worksheet cannot be edited.
-- Exporting a table in xlsx format causes the date format to change from dd/mm/yyyy to mm/dd/yyyyy.
-- Versus columns added for UNKNOWN diff analysis cannot be found.
-- Pinboards cannot be copied.
-- Editing answers on a particular pinboard causes an internal Falcon error.
-- Changing a date filter in explore mode does not work.
-- Captions in charts do not work.
-
-<a id="6-3-1-cu1"></a>
-## 6.3.1 CU1 Fixed issues
-
-These are the issues we fixed in ThoughtSpot Release 6.3.1 CU1.
-
-- Additional scrollbars appear on the ThoughtSpot Developer portal home page.
-- R output is not viewable in a pinboard.
-- When using latitude and longitude, map visualizations do not zoom in to the data.
-- Pinboard visualizations do not retrieve data.
-- When clicking **SpotIQ** in the top navigation bar, users are redirected to the ThoughtSpot home page.
-- Query shows incorrect results because a measure is grouped by, but not summed.
-- "No FileSystem for scheme: hdfs" error appears when user attempts to restore a DataFlow backup.
-- Free trial user does not receive an email with an activation link after signing up or resetting their password.
-- API response times are slower than normal.
-- After upgrade, a postgres error appears.
-- Users assigned the "Cannot create or update Pinboards" group permission can create pinboards or pin answers to pinboards.
-- The postgres upgrade temporary directory is not configurable.
-- Pinboard translation is slow, causing performance issues.
 
 <a id="6-3-1"></a>
 ## 6.3.1 Fixed issues
@@ -657,7 +608,7 @@ These are the issues we fixed in ThoughtSpot Release 4.5.1.
 - An issue was resolved where the ThoughtSpot application was potentially vulnerable to Cross-Site Request Forgery (CSRF) . The potential was removed from the application interactions. Any ThoughtSpot API customers will have to be updated to be compliant with this new feature. The primary things that could be affected are:
   - Sync scripts that manage users and groups creation.
   - Scripts that use the public APIs to fetch data.
-- The easiest way to diagnose this would be to check for the inability of the script to log in to the system. Please [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to get guidance on the steps to resolve the issue.
+- The easiest way to diagnose this would be to check for the inability of the script to log in to the system. Please contact ThoughtSpot Support to get guidance on the steps to resolve the issue.
 
 <a id="4-5"></a>
 ## 4.5 Fixed issues
@@ -739,7 +690,7 @@ These are the issues we fixed in ThoughtSpot Release 4.4.
 - Users were unable to restore a database backup without first renaming the backup. Renaming is no longer required.
 - Creating a formula on `cumulative_sum` function mistakenly caused an error to appear. This action no longer causes an error.
 - Some installations saw worksheet performance degrade for worksheets with a large number of columns. Users can now set a configuration option to avoid these problems.
-- Previously setting both the browser and the ThoughtSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.
+- Previously setting both the browser and the ThoughSpot profile value failed to display numbers and date formats in the proper locale. This problem was corrected. Setting the ThoughtSpot profile to the proper locale results in the appropriate display of date and number formats. It also causes translated strings to appear in the interface where they exist.
 - Active directory (AD) synchronization was not working. Moreover, if AD security group had no members in it, then the synchronization did not recognize the group at all. These problems were corrected, empty groups are recognized and users moved between groups now are properly synchronized by ThoughtSpot.
 - A problem was resolved where the round function returned a negative zero when it should have returned a 0 (zero).
 - Visualizations that relied on chasm trap worksheet were not immediately updated when a formula was changed. The workaround was to manually update the visualization. This was corrected. The system now updates the visualization automatically when an underlying formula is changed.

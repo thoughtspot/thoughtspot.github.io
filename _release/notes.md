@@ -1,31 +1,21 @@
 ---
 title: ["6.3 Release Notes"]
 toc: false
-last_updated: 7/23/2021
+last_updated: 1/26/2021
 sidebar: mydoc_sidebar
 redirect_from:
 - /6.3.0/release/notes.html
 - /6.3.0.CU1/release/notes.html
 - /6.3.1/release/notes.html
-- /6.3.1.CU1/release/notes.html
-- /6.3.1.CU4/release/notes.html
 permalink: /:collection/:path.html
 ---
-ThoughtSpot version 6.3.1 CU4 is now available. These release notes include information about new and enhanced features.
-
-To see our feature deprecation plans, please see [Deprecation announcements]({{ site.baseurl }}/release/note.html).
+ThoughtSpot version 6.3.1 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.3.1 CU4 New Features](#6-3-1-cu4-new)
-* [6.3.1 New Features](#6-3-1-cu4-new)
+* [6.3.1 New Features](#6-3-1-new)
 * [6.3 New Features](#6-3-new)
 * [Supported Upgrade Paths](#upgrade-paths)
-
-{: id="6-3-1-cu4-new"}
-## 6.3.1 CU4 New Features and Functionality
-
-This patch release includes many bug fixes for 6.3.1.CU1, including most recent security vulnerabilities. We recommend every customer update to 6.3.1.CU4 as this version also addresses an issue with Google Chrome v92. Earlier 6.3.1.x versions require clusters to be updated to 6.3.1.CU4 for any future patches or fixes related to Nginx.
 
 {: id="6-3-1-new"}
 ## 6.3.1 New Features and Functionality
@@ -59,7 +49,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 
 <dlentry id="information-center">
   <dt>Information Center</dt>
-<dd>ThoughtSpot has a new Information Center, accessible from the help icon <img src="../images/icon-help-10px.png" alt="Help icon" class="inline"> next to your profile on the top navigation bar. This new help menu contains many useful resources, including a navigation overview, several training videos, and links to more help across the ThoughtSpot product, community, training, and documentation. Refer to <a href="{{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a>.</dd></dlentry>
+<dd>ThoughtSpot has a new Information Center, accessible from the help icon <img src="/images/icon-help-10px.png" alt="Help icon" class="inline"> next to your profile on the top navigation bar. This new help menu contains many useful resources, including a navigation overview, several training videos, and links to more help across the ThoughtSpot product, community, training, and documentation. Refer to <a href="{{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a>.</dd></dlentry>
 
 </dl>
 
@@ -71,7 +61,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dt>Embrace</dt>
 <dd>Embrace now supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
 </dd>
-<dd>Embrace now supports security passthrough for Snowflake using OAuth for authentication and authorization. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html">Snowflake</a>.</dd>
+<dd>Embrace now supports security passthrough for Snowflake using OAuth for authentication and authorization. For more information, see <a href="/data-integrate/embrace/embrace-snowflake-add.html">Snowflake</a>.</dd>
 </dlentry>
 </dl>
 
@@ -81,12 +71,7 @@ For a complete list of issues that we fixed in this release, see [Fixed issues](
 <dl>
 <dlentry id="consumption-based-pricing">
 <dt>Consumption-based pricing</dt>
-<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/appliance/consumption-pricing.html">Consumption-based pricing</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
-</dlentry>
-
-<dlentry id="saml-mail-field">
-<dt>SAML configuration</dt>
-<dd>When configuring SAML authentication for ThoughtSpot, it is now mandatory to map the <code>mail</code> attribute in the IDP metadata file to the email address of the user. If your company cannot meet this requirement, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot support</a>. For more information, refer to <a href="{{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html">configure SAML</a>.</dd>
+<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/appliance/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/appliance/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
 </dlentry>
 </dl>
 
@@ -122,8 +107,8 @@ To set locale to English (India), click the user icon in the top right corner to
 
 <dl id="6-3-analyst">
   <dlentry id="geomaps">
-    <dt>Geo maps</dt>
-    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">geo map</a> visualizations for this new locale:
+    <dt>Geomaps</dt>
+    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for this new locale:
         <ul>
           <li><strong>Netherlands</strong>: Province, Municipality, Postcode</li>
         </ul>
@@ -194,8 +179,8 @@ To set locale to English (India), click the user icon in the top right corner to
     <dd id="dataflow-transformations"><strong>Transformations</strong><br/>In all DataFlow database connections, you can now add row-level formulas that use native database functions to transform your data as it loads into ThoughtSpot.</dd></dlentry>
   <dlentry id="embrace">
     <dt>Embrace</dt>
-    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
-    <dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. This feature is in beta for this release. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot support</a> for assistance.</dd>
+    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
+    <dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. This feature is in beta for this release. Contact ThoughtSpot support for assistance.</dd>
     </dlentry>
 </dl>
 
@@ -227,9 +212,9 @@ To set locale to English (India), click the user icon in the top right corner to
 
   <dlentry id="ease-of-installation"><dt>RHEL and Amazon Linux 2 ease of installation</dt><dd>This release of ThoughtSpot makes it easier to deploy ThoughtSpot on an <a href="{{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2</a> or <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL image</a>.
   <ul>
-  <li>You now only need 20 GB on the root drive for yum packages and system logs, 50 GB for <code>/tmp</code>, and 200 GB for ThoughtSpot installation.</li>
+  <li>You can now use a Terraform, Puppet, or Chef template, or an Ansible tarball, to install OS packages, dependencies, and the ThoughtSpot CLI (tscli), and configure your cluster. Previously, you could only use an Ansible tarball or Terraform template.</li>
+  <li>You now only need 20 GB on the root drive for yum packages and system logs, and 200 GB for ThoughtSpot installation.</li>
   <li>You can now deploy ThoughtSpot on RHEL version 7.9. You can no longer deploy ThoughtSpot on RHEL version 7.7.</li>
-  <li>If your organization performs automation with a different configuration management tool, you can use the template ThoughtSpot developed for automation with Terraform. You can obtain this template from our <a href="https://github.com/thoughtspot/community-tools/tree/master/ThoughtSpot_Cloud_deployments/AWS/template_Homogeneous_cluster_ssm" target="_blank">Github repository</a>. ThoughtSpot provides templates for alternative tools only as generic guidelines. You should review the templates before using them and make sure that they are safe to use in your organization. In no way can ThoughtSpot be held responsible for any issue arising from their use.</li>
   </ul>
   </dd></dlentry>
 
@@ -244,19 +229,15 @@ We like to have a diversity of experience and perspective, and want to hear from
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.3.1 CU4 release
+If you are running one of the following versions, you can upgrade to the 6.3 release
 directly:
 
-* 5.3 to 6.3.1 CU4
-* 6.0.5 to 6.3.1 CU4
-* 6.1 to 6.3.1 CU4
-* 6.2 to 6.3.1 CU4
-* 6.2.1 to 6.3.1 CU4
-* 6.3 to 6.3.1 CU4
+* 6.1.x to 6.3
+* 6.2.x to 6.3
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.3, 6.0.5, 6.1, 6.2, 6.2.1, or 6.3 and then to the 6.3.1 CU4 release.
+First, upgrade to version 6.1.x, or version 6.2.x, and then to the 6.3 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}

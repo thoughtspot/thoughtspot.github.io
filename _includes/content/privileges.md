@@ -25,7 +25,7 @@
       <dd>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</dd>
     </dlentry>
     <dlentry id="custom-r">
-      <dt>Can invoke Custom R Analysis <span class="label label-beta">Deprecated 7.1.1</span></dt>
+      <dt>Can invoke Custom R Analysis</dt>
       <dd>Can access R scripts to further explore search answers. Includes options to invoke R scripts on visualizations, create and share custom scripts, and share the results of R analysis as answers and pinboards.</dd>
     </dlentry>
     <dlentry id="schedule-pinboards">
@@ -46,9 +46,9 @@
       <p>Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the privilege <strong>Can administer ThoughtSpot</strong> can grant this privilege.</p></dd>
     </dlentry>
     <dlentry id="read-only">
-      <dt>Cannot create or update Pinboards</dt>
+      <dt>Cannot create or update Pinboads</dt>
       <dd><p>Users are limited to viewing and exploring curated Pinboards (and Answers). They cannot copy, edit, download, or share them.</p>
-      <p>This privilege is designed to support embedded implementations, and is not available by default. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to enable it.</p>
+      <p>This privilege is designed to support embedded implementations, and it is behind a flag.</p>
       <p>See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a> for a deeper discussion of this privilege, and an implementation example.</p></dd>
     </dlentry>
   </dl>

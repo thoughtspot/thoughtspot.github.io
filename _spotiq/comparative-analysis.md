@@ -1,18 +1,21 @@
 ---
 title: [Comparative Analysis]
-summary: "With SpotIQ comparative analysis, you can compare two data points for complex measures."
-last_updated: 7/21/2021
+summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
+last_updated: 11/25/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-SpotIQ comparative analysis compares data points of simple or complex measures using these aggregates:  
+SpotIQ competitive analysis compares data points of simple or complex measures using these aggregates:  
   * _Sum_
   * _Count_
   * _Sum over sum_, which generate a Pinboard that has 'what-if' percentage insights
   * _Average_, which generate a Pinboard that has 'what-if' percentage insights
   * Other functions which use a 'versus' analysis to show the absolute change grouped by different drill attributes
+
+  {% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
+
 
 {: id="basic-comparative-analysis" }
 ## Basic Comparative Analysis in SpotIQ ##
@@ -54,6 +57,9 @@ To view the results of your analysis, follow these steps:
 
 3. In the report, SpotIQ generates a Pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.
 
+   {% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
+
+
     ![]({{ site.baseurl }}/images/comparative-analysis-6.png "Analysis Results")
 
 4. You can now examine each visualization of the analysis for details of comparison, give feedback on its usefulness, and so on.  
@@ -72,13 +78,15 @@ To view the results of your analysis, follow these steps:
 
 ThoughtSpot ships with a number of comparative algorithms. Using the **Advanced** option of SpotIQ, you can adjust the parameters of the analysis, or choose a different comparative algorithm for your data.  
 
+{% include note.html content="Insights are turned off by default. They do not appear on the Home page, or on Pinboards, unless your administrator turns on the feature." %}
+
 After selecting the relevant analysis columns, click the **Advanced** tab.  
 
 Under **Select Algorithms**, select the name of the algorithm. You may have several options available, or only a single one. In this example, the only valid option is **Change Analysis**.  
 
 Under **Customize algorithm for comparative analysis**, adjust the options. In this example, the algorithm parameters are __Max Diff Elements__, __Max Fraction__, __Min Abs Change Ratio__, and __Min Change Ratio__.
 
-![]({{ site.baseurl }}/images/comparative-analysis-advanced.png "Advanced analysis Options")
+![]({{ site.baseurl }}/images/comparative-analysis-4.png "Advanced analysis Options")
 
 On the SpotIQ Feedback tab, you can see all SpotIQ feedback gave. Insights that you disliked are pushed to the bottom of the list.
 

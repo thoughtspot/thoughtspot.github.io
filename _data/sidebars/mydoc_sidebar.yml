@@ -29,16 +29,9 @@ entries:
     - title: Fixed issues
       url: /release/fixed.html
       output: web,rnotes
-    - title: Accessibility
-      url: /release/accessibility.html
-      output: web,rnotes
-    - title: Deprecation announcements
-      url: /release/deprecation.html
-      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web,rnotes
-
 #    - title: PDF Guides
 #      url: /release/pdfs.html
 #      output: web
@@ -353,9 +346,6 @@ entries:
           output: web,ugBk
         - title: Edit a pinboard
           url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
-          output: web,ugBk
-        - title: Delete a visualization
-          url: /end-user/pinboards/delete-a-visualization.html
           output: web,ugBk
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
@@ -1126,7 +1116,7 @@ entries:
         url: /app-integrate/SAML/about-SAML-integrations.html
         output: web,apgBk
       - title: Configure SAML
-        url: /admin/setup/configure-SAML-with-tscli.html
+        url: /app-integrate/SAML/configure-SAML-with-tscli.html
         output: web,apgBk
       - title: Configure CA SiteMinder
         url: /app-integrate/SAML/configure-SAML-siteminder.html
@@ -1729,6 +1719,9 @@ entries:
     - title: Consumption-based pricing
       url: /appliance/consumption-pricing.html
       output: web,appQs
+    - title: Consumption-based pricing FAQ
+      url: /appliance/consumption-pricing-faq.html
+      output: web,appQs
     - title: Contact support
       url: /appliance/contact.html
       output: web,appQs
@@ -1749,9 +1742,6 @@ entries:
         output: web,embraceGd
       - title: Modify a connection
         url: /data-integrate/embrace/embrace-snowflake-modify.html
-        output: web,embraceGd
-      - title: Config OAuth
-        url: /data-integrate/embrace/embrace-snowflake-oauth.html
         output: web,embraceGd
       - title: Best practices
         url: /data-integrate/embrace/embrace-snowflake-best.html
@@ -1791,9 +1781,6 @@ entries:
       levelTwoItems:
       - title: Overview
         url: /data-integrate/embrace/embrace-gbq.html
-        output: web,embraceGd
-      - title: Prerequisites
-        url: /data-integrate/embrace/embrace-gbq-prerequisites.html
         output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-gbq-add.html
@@ -2013,13 +2000,13 @@ entries:
         output: web,dataflowGD
         levelThreeItems:
         - title: Overview
-          url: /data-integrate/dataflow/dataflow-jdbc.html
+          url: /data-integrate/dataflow/dataflow-jdbc-db2.html
           output: web,dataflowGd
         - title: Connect
-          url: /data-integrate/dataflow/dataflow-jdbc-add.html
+          url: /data-integrate/dataflow/dataflow-jdbc-db2-add.html
           output: web,dataflowGd
         - title: Sync
-          url: /data-integrate/dataflow/dataflow-jdbc-sync.html
+          url: /data-integrate/dataflow/dataflow-jdbc-db2-sync.html
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-jdbc-reference.html

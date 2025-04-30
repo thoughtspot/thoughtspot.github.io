@@ -1,37 +1,31 @@
-{: id="admin-portal"}
-## Configure SAML using the Admin Console
-You need admin privileges to enable SAML SSO authentication.
+You can use ThoughtSpot's integration with SAML for user authentication. By default, [local authentication]({{ site.baseurl }}/admin/admin-portal/authentication-local.html) is enabled. You can also configure a SAML integration with an external Identity Provider (IdP), allowing your ThoughtSpot users to log in using one of the supported Identity Providers: Okta, Ping Identity, CA SiteMinder, or ADFS.
+
+You can configure the SAML integration through the Admin Console.
 
 {% include note.html content="If you configure authentication through SAML, you cannot also configure authentication through Active Directory." %}
 
-1. Configure the ThoughtSpot application instance on your IDP server.
+Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **SAML** from the side navigation bar that appears.
 
-2. Log into your ThoughtSpot application instance.
+![Admin Console - SAML]({{ site.baseurl }}/images/admin-portal-saml.png "Admin Console - SAML")
 
-3. From the top navigation bar, select the **Admin** tab.
+Click the **Configure** button in the middle of the screen.
 
-4. Select **SAML** from the side navigation bar that appears.
+![Configure SAML]({{ site.baseurl }}/images/admin-portal-saml-configure.png "Configure SAML")
 
-5. Click the **Configure** button in the middle of the screen.
+Fill in the following parameters:
 
-6. Fill in the parameters with the information you collected in the [Configuration prerequisites](#prerequisites).
+1. **ThoughtSpot Service Address**: A fully qualified and resolvable domain name for the ThoughtSpot service. For example, *thoughtspot.thoughtspot-customer.com*.
+2. **Port**: Port of the server where your ThoughtSpot instance is running. For example, port `443`.
+3. **Unique Service Name**: The unique key used by your Identity Provider to identify the client. For example, *urn:thoughtspot:callosum:saml*.
+4. **Skew Time in Seconds**: The allowed skew time, after which the authentication response is rejected and sent back from the IDP. *86400* is a popular choice. The default is *3600*.
+5. **Protocol**: The authentication mechanism for ThoughtSpot. For example, `http` or `https`.
+6. **IDP Metadata XML File**: The absolute path to your Identity Provider’s metadata file. This file is provided by your IDP.  You need this file so that the configuration persists over upgrades. It is a best practice to set it up on persistent/HA storage (NAS volumes) or in the same absolute path on all nodes in the cluster. For example, *idp-meta.xml*.
+7. **Automatically add SAML users to ThoughtSpot upon first authentication**: Choose whether or not to add SAML users to ThoughtSpot when they first authenticate. If you choose 'yes', then new users will be automatically created in ThoughtSpot upon first successful SSO login.
+If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/admin-portal/users.html).
 
-4. When the configuration is complete, download ThoughtSpot's metadata file, `spring_saml_metadata.xml`. This file contains the public key you need if you want to encrypt your SAML assertions. To download this file, navigate to `https://<hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
+After you fill in all parameters, click **OK**.
 
 {% include note.html content="ThoughtSpot adds external users, or users that authenticate through SAML or Active Directory, to the <strong>all</strong> group by default. This group has no privileges. You must manually assign users to ThoughtSpot groups to give them privileges, such as <strong>can upload user data</strong>, or <strong>can manage data</strong>." %}
-
-### Configure the IdP
-To enable the IdP to recognize your host application and ThoughtSpot as a valid service provider, you must configure the IdP with required attributes and metadata. This includes the `spring_saml_metadata.xml` file that you downloaded in step 7 of [Configure SAML using the Admin Console](#admin-portal).
-
-ThoughtSpot supports SAML authentication with several identity and access management providers, such as [Okta](https://developer.okta.com/docs/guides/build-sso-integration/saml2/before-you-begin/){: target="_blank"}, [Azure Active Directory](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-saml2-settings-azure-ad){: target="_blank"}, [PingFederate](https://docs.pingidentity.com/bundle/solution-guides/page/ozz1597769517562.html){: target="_blank"}, [Microsoft AD FS](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-saml2-settings){: target="_blank"}, [Onelogin](https://developers.onelogin.com/saml){: target="_blank"} and so on. If you want to use one of these providers as your IdP, make sure you read the SAML configuration steps described in the Identity provider’s documentation site.
-
-To determine if ThoughtSpot supports your preferred IdP, [contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html).
-
-Complete your configuration of the IdP using the IdP's SAML documentation. Upload or copy the contents of the `spring_saml_metadata.xml` to your IdP server. This file contains the public key you need if you want to encrypt your SAML assertions. If you did not download the `spring_saml_metadata.xml` file, navigate to `https://<your_ThoughtSpot_hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
-
-{% include note.html content="When configuring SAML 2.0, make sure you map the SAML user attributes to appropriate fields. For example, you must map the SAML user’s username to the NameId attribute in OneLogin. Similarly, in Okta, you must map the username to userPrincipalName. You must also map the email address of the user to the mail attribute, and optionally map the display name you would like to use to displayName. Starting in ThoughtSpot version 6.3.1, it is mandatory to fill out the mail field. If your company cannot meet this requirement, contact ThoughtSpot support. If your IdP does not allow you to import the IdP metadata XML file, you must map these values manually." %}
-
-After you configure the IdP, open a Web browser and go to the ThoughtSpot login page. It should now show the Single Sign On option.
 
 ## Additional resources
 As you develop your expertise in authentication and security, we recommend the following ThoughtSpot U course:

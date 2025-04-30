@@ -6,7 +6,6 @@ sidebar: mydoc_sidebar
 redirect_from:
 - /6.3.0/release/downloads.html
 - /6.3.0.CU1/release/downloads.html
-- /6.3.1.CU1/release/downloads.html
 permalink: /:collection/:path.html
 ---
 

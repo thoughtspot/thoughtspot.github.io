@@ -14,7 +14,7 @@ You should suspect disk failure if you observe these symptoms:
 -   Performance degrades significantly.
 -   You receive alert emails beginning with WARNING or CRITICAL that contain DISK_ERROR in the subject.
 
-If you notice these symptoms, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+If you notice these symptoms, contact ThoughtSpot Support.
 
 ## Disk replacement
 

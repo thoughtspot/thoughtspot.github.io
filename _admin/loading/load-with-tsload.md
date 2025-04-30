@@ -20,11 +20,11 @@ This page highlights the following:
 2. Open the config file at the following location:
    `/usr/local/scaligent/release/production/orion/etl_http_server/prod.config`  
 
-3. If your cluster is behind a load balancer, you must disable the internal etl server's load balancer. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this step.
+3. If your cluster is behind a load balancer, you must disable the internal etl server's load balancer. Contact ThoughtSpot support for assistance with this step.
 
-4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+4. By default, bad-records are saved in one of the mounted drives. If that is not possible, they are saved to `/tmp`. To modify this location, contact ThoughtSpot support.
 
-5. If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to tsload connector. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this step.
+5. If your cluster has been upgraded from an earlier version, validate that your SSL certificates are bound to tsload connector. Contact ThoughtSpot support for assistance with this step.
 
    {% include note.html content="For clusters created in version 6.2 or later, certificates are bound to tsload connector by default." %}
 
@@ -134,9 +134,9 @@ tsload is available only to users who have the “Administrator” or “Manage 
 
 The typical workflow of the API inside the client is the following:
 
-1. `<standard-ThoughtSpot-cluster-url> Login`.
+1. `<standard-thoughspot-cluster-url> Login`.
 
-2. `<standard-ThoughtSpot-cluster-url> StartLoad`.
+2. `<standard-thoughspot-cluster-url> StartLoad`.
    If the tsload-LoadBalancer is turned on, this returns the new IP address (for one of the nodes in the cluster).
 
 3. `<thoughtspot-node-ip-returned-from-2> Load`.

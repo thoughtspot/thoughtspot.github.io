@@ -39,14 +39,12 @@ home page you can see a search bar, and several areas that show activity in Thou
 The items on this page are limited to Answers, Pinboards, Worksheets,
 and other objects that you have permission to access.
 
-![Software home page]({{ site.baseurl }}/images/software-home-page.png "Software home page")
-
 {: id="search"}
 ## Search
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
-If SearchIQ <span class="label label-beta">Beta</span>  <span class="label label-beta">De-support 7.0</span> is enabled by your administrator, this label is **Search+**, to differentiate it from SearchIQ. Use the search bar on the homepage to use SearchIQ.
+If SearchIQ <span class="label label-beta">Beta</span> is enabled by your administrator, this label is **Search+**, to differentiate it from SearchIQ. Use the search bar on the homepage to use SearchIQ.
 
 To learn more about this section, visit [About search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html#).
 

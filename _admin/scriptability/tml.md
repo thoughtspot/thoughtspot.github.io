@@ -19,11 +19,6 @@ redirect_from:
 - /6.3.0.CU1/admin/scriptability/tsl-answer.html
 - /6.3.0.CU1/admin/scriptability/tsl-view.html
 - /6.3.0.CU1/admin/worksheets/yaml-worksheet.html
-- /6.3.1.CU1/admin/ts-cloud/tsl.html
-- /6.3.1.CU1/admin/scriptability/tsl-pinboard.html
-- /6.3.1.CU1/admin/scriptability/tsl-answer.html
-- /6.3.1.CU1/admin/scriptability/tsl-view.html
-- /6.3.1.CU1/admin/worksheets/yaml-worksheet.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -268,6 +263,8 @@ You may not see each of these parameters in your own TML files, depending on whe
   <a href="#columns">columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#db_column_name">db_column_name</a>: &lt;<em>database_column_name</em>&gt;
+    <a href="#is_primary_key">is_primary_key</a>: [true | false]
+    <a href="#is_foreign_key">is_foreign_key</a>: [true | false]
     <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
     <a href="#properties">properties</a>:
       <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
@@ -725,6 +722,16 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dd>Specifies the cardinality of the join<br>
     Possible values: <code>true</code>, <code>false</code><br>
     Default: <code>false</code></dd>
+  </dlentry>
+
+  <dlentry id="is_primary_key">
+    <dt>is_primary_key</dt>
+    <dd>Determines if the table column is the primary key. Can be <code>true</code> or <code>false</code>.</dd>
+  </dlentry>
+
+  <dlentry id="is_foreign_key">
+    <dt>is_foreign_key</dt>
+    <dd>Determines if the table column is the foreign key. Can be <code>true</code> or <code>false</code>.</dd>
   </dlentry>
 
   <dlentry id="join">
