@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td class="tg-yw4l">quarter of year (<em>date</em>)</td>
-    <td class="tg-yw4l">四半期名 (<em>date</em>)</td>
+    <td class="tg-yw4l">四半期名 (<em>date</em>) </td>
     <td class="tg-yw4l"><code><b>quarter of year</b> (purchase date)</code></td>
   </tr>
   <tr>

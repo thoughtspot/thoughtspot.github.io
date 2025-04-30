@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 4/23/2021
+last_updated: 2/12/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -146,14 +146,6 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
     <a href="#join_progressive">join_progressive</a>: [ true | false ]
-  <a href="#lesson_plans">lesson_plans</a>:
-  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_1</em>&gt;
-    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_1</em>&gt;
-  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_2</em>&gt;
-    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_2</em>&gt;
-  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_n</em>&gt;
-    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_n</em>&gt;
-
 </pre>
 
 {: id="syntax-views"}
@@ -286,6 +278,8 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#columns">columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#db_column_name">db_column_name</a>: &lt;<em>database_column_name</em>&gt;
+    <a href="#is_primary_key">is_primary_key</a>: [true | false]
+    <a href="#is_foreign_key">is_foreign_key</a>: [true | false]
     <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
     <a href="#properties">properties</a>:
       <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
@@ -329,7 +323,6 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
     <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
     <a href="#destination">destination</a>:
       <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
-      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
     <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
     <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
     <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
@@ -343,7 +336,7 @@ The syntax and functionality of joins in the table TML file differs from the syn
 
 When you edit the information in the [joins](#joins) section of the TML for a Worksheet or View, you override the table join(s) from the table the Worksheet or View comes from. However, you only override the join(s) for the specific Worksheet or View you are editing, ***not*** for the source table.
 
-When you edit the information in the [joins_with](#joins_with) section of the TML for a table, you edit the join information for the source table, the destination table, and any dependents, such as Worksheets and Views. Note that you can only edit joins for which the table is the source table.
+When you edit the information in the [joins_with](#joins_with) section of the TML for a table, you edit the join information for the source table, the destination table, and any dependents, such as Worksheets and Views. Note that you can only edit joins for which the table is the source table. Table join modification is in <strong>Beta</strong> and on by default.
 
 ### Worksheet and View join syntax
 For Worksheets and Views, the join syntax is the following:
@@ -379,7 +372,6 @@ Worksheet and View joins have the following limitation:
   <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
   <a href="#destination">destination</a>:
     <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
-    <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
   <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
   <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
   <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
@@ -399,12 +391,16 @@ Table joins have the following limitations:
 - You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
 
+This feature is in <strong>Beta</strong> and on by default.
+
 ### Generic joins
 The functionality for generic joins in TML files allows the following elements:
 * Constants: int, double, bool, date, and string
 * Comparison operators: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, and <code>&gt;=</code>
 * Columns
 * Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code>
+
+This feature is in <strong>Beta</strong> and on by default.
 
 {: id="syntax-answers"}
 ##  Syntax of the Answer TML file
@@ -527,20 +523,12 @@ You may not see each of these parameters in your own TML files, depending on whe
     This section includes all the Answer specification for a second visualization. In this case, the visualization is a headline.
     <a href="#display_headline_column">display_headline_column</a>: &lt;<em>headline_column</em>&gt;    
   <a href="#filters">filters</a>:
-    - <a href="#column">column</a>:
-      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">primary_filter</a>_column_name_1</em>&gt;
-      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_2</em>&gt;
-      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_n</em>&gt;
-      <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
-      <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
-      - value 1
-      - value 2
-      - value n
-      <a href="#excluded_visualizations">excluded_visualizations</a>:
-      - <a href="#id">excluded_viz_id_1</a>
-      - <a href="#id">excluded_viz_id_2</a>
-    - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
-    <em>...</em>
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
+    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+    - value 1
+    - value 2
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
   <a href="#layout">layout</a>:
     tiles:
     - <a href="#visualization_id">visualization_id</a>: &lt;<em>visualization_id_1</em>&gt;
@@ -607,7 +595,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="column">
     <dt>column</dt>
-    <dd>The id of the column(s) being filtered on. When a Pinboard contains <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked filters</a>, or filters that affect visualizations based on more than one Worksheet, the primary filter column appears first in the list of columns in the TML. The linked filter column appears after the primary filter column.</dd>
+    <dd>The id of the column(s) being filtered on.</dd>
   </dlentry>
 
   <dlentry id="columns">
@@ -706,11 +694,6 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dt>display_headline_column</dt>
     <dd>If the visualization is a headline, this parameter specifies the column the headline comes from.</dd>
   </dlentry>
-
-  <dlentry id="excluded_visualizations">
-  <dt>excluded_visualizations</dt>
-  <dd>A list of visualizations the Pinboard editor chose to exclude from the filter. Only appears when using <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective filters</a>.</dd>
-</dlentry>
 
   <dlentry id="expr">
     <dt>expr</dt>
@@ -831,6 +814,16 @@ You may not see each of these parameters in your own TML files, depending on whe
     Default: <code>false</code></dd>
   </dlentry>
 
+  <dlentry id="is_primary_key">
+    <dt>is_primary_key</dt>
+    <dd>Determines if the table column is the primary key. Can be <code>true</code> or <code>false</code>.</dd>
+  </dlentry>
+
+  <dlentry id="is_foreign_key">
+    <dt>is_foreign_key</dt>
+    <dd>Determines if the table column is the foreign key. Can be <code>true</code> or <code>false</code>.</dd>
+  </dlentry>
+
   <dlentry id="join">
     <dt>join</dt>
     <dd>Specific join, used in defining higher-level objects, such as table paths<br>
@@ -872,21 +865,6 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="layout">
     <dt>layout</dt>
     <dd>Specifies the Pinboard layout, in the order that a <code>visualization_id</code> is listed.</dd>
-  </dlentry>
-
-  <dlentry id="lesson_plan_string">
-    <dt>lesson_plan_string</dt>
-    <dd>A string that represents the fully disambiguated search query used in a <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson on a Worksheet. For example, <code>"What is the [Quantity] of items from [Customer Nation].'egypt' per [Datekey].'day of week' by [Color] ?"</code>. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
-  </dlentry>
-
-  <dlentry id="lesson_plans">
-    <dt>lesson_plans</dt>
-    <dd>A list of <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lessons for the Worksheet.</dd>
-  </dlentry>
-
-  <dlentry id="lesson_id">
-    <dt>lesson_id</dt>
-    <dd>The id of the <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson. For example, the first lesson to appear to users has an id of <code>0</code>, the next lesson has an id of <code>1</code>, and so on.</dd>
   </dlentry>
 
   <dlentry id="locked">

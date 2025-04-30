@@ -1,201 +1,81 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
 <ul>
-<li><a href="{{ site.baseurl }}#june-cloud-first">For the First user</a></li>
-<li><a href="{{ site.baseurl }}#june-cloud-analyst">For the Analyst</a></li>
-<li><a href="{{ site.baseurl }}#june-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#june-cloud-data-engineer">For the Data Engineer</a></li>
-<li><a href="{{ site.baseurl }}#june-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
-<li><a href="{{ site.baseurl }}#june-cloud-developer">For the Developer</a></li>
+<li><a href="{{ site.baseurl }}#mar-cloud-analyst">For the Analyst</a></li>
+<li><a href="{{ site.baseurl }}#mar-cloud-business-user">For the Business User</a></li>
+<li><a href="{{ site.baseurl }}#mar-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#mar-cloud-developer">For the Developer</a></li>
 </ul>
 
-<h3><a id="june-cloud-first"></a>For the First user</h3>
+<h3><a id="mar-cloud-analyst"></a>For the Analyst</h3>
 
 <dl>
 
-<dlentry id="getting-started">
-<dt>Getting started with ThoughtSpot Cloud</dt>
-<dd>The first user on the account has to complete a series of steps before other people can start using ThoughtSpot with your organization’s data. For these instructions, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-getting-started.html">Getting Started with ThoughtSpot Cloud</a>.
-</dd>
-</dlentry>
-</dl>
-
-<h3><a id="june-cloud-analyst"></a>For the Analyst</h3>
-
-<dl>
-
-<dlentry id="pivot-tables">
-<dt>Conditional formatting for pivot tables</dt>
-<dd>You can now perform conditional formatting on measures in pivot tables. Refer to <a href="{{ site.baseurl }}/end-user/search/apply-conditional-formatting.html#table">Apply conditional formatting</a> and <a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a>.</dd>
-</dlentry>
-
-<dlentry id="embedded-link-format">
-<dt>Embedded link format for sharing objects</dt>
-<dd>For embedded ThoughtSpot environments, you can now generate links with your host application context and send these links in email notifications. You can specify the link format when sharing an object or scheduling a pinboard job to ensure that the links sent in the email notifications go to the appropriate URL. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> and <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a> for more information.</dd>
-</dlentry>
-
-
-<dlentry id="streamlined-analyst-setup">
-<dt>Streamlined analyst setup</dt>
-<dd>We simplified the steps to set up an analyst account on ThoughtSpot. Now, you can create a connection, create a worksheet to model your business use cases, and immediately search your data in three steps. See <a href="{{ site.baseurl }}/admin/ts-cloud/analyst-onboarding.html">Analyst Onboarding</a> for further details.</dd>
-  </dlentry>  
-
-<dlentry id="group-aggregate-query-filters">
-<dt>Group aggregate query filters</dt>
-<dd>This release improves support for group aggregate query filters when seeking finer-grained results by adding a secondary dimension, or courser-grained results when dropping one of the existing dimensions. You can now also include or drop the filter condition. Refer to <a href="{{ site.baseurl }}/complex-search/aggregation-filters.html">Aggregation filters</a> for more information.</dd>
-
-</dlentry>
-
-</dl>
-
-<h3><a id="june-cloud-business-user"></a>For the Business User</h3>
-
-<dl>
-
-<dlentry id="trending-objects">
-<dt>View counts for trending objects</dt>
-<dd>You can now see the view counts for trending answers and pinboards on the home page. This can help you understand why an object is trending.</dd>
-</dlentry>
-
-<dlentry id="trending-objects-link">
-<dt>Open trending objects in a new tab</dt>
-<dd>You can now open trending objects in a new tab by right-clicking on the object link on the home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#trending">ThoughtSpot One home page</a> for more information.</dd>
-</dlentry>
-
-
-</dl>
-
-<h3><a id="june-cloud-data-engineer"></a>For the Data Engineer</h3>
-<dl>
-<dlentry id="embrace-databricks">
-<dt>Databricks GA</dt>
-<dd>Databricks is now GA in this release of ThoughtSpot Cloud. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-databricks.html">Databricks</a>.</dd>
-</dlentry>
-
-<dlentry id="object-usage-pinboard">
-<dt>Object Usage Pinboard</dt>
-<dd>This release introduces a new default pinboard for monitoring object usage. The <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Pinboard</a> contains data on the following topics:
-<ul>
-<li>Specifies what existing tables, worksheets and views users search on</li>
-<li>Specifies which columns users search most frequently</li>
-<li>Tracks the most searched tables, worksheets and views each month</li>
-</ul>
-Use this pinboard to identify what users have accessed, and determine which unused data objects can be deleted.</dd>
-</dlentry>
-</dl>
-
-<h3><a id="june-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
-
-<dl>
-
-<dlentry id="consumption-pricing">
-<dt>Consumption-based pricing system answers</dt>
-<dd>ThoughtSpot provides 2 default system answers to help you track and analyze your credit consumption. These answers allow you to dive deeper into the credit consumption and activities of a specific user, or over a specific time window.
-<ul><li><strong>Sample Answer - Credit usage details</strong>: This answer is ideal for looking into object-level details, such as the objects a user accessed and the actions they performed on those objects.</li>
-<li><strong>Credit usage from Charging Records</strong>: Use this answer to learn more about API-level details. You can map activities and credit consumption to specific API calls.</li></ul>
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#user-activity">Consumption-based pricing</a> for more information.</dd>
-</dlentry>
-
-<dlentry id="admin-privileges">
-<dt>New admin privileges <span class="label label-beta">Beta</span></dt>
-<dd>This release introduces new administrator privileges that separate the abilities of the administrator into 4 specific privileges. For example, you can allow certain users to create and manage users, while not allowing them to manage SAML integration or other advanced settings. These new administrator privileges do <strong><em>not</em></strong> provide access to all data in ThoughtSpot, unlike the <strong>Can administer ThoughtSpot</strong> privilege. Users with the new privileges can only see data that others share with them. The <strong>Can administer ThoughtSpot</strong> privilege, which encompasses all 4 new administrator privileges, still appears as an option by default. To remove it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>. The 4 new privileges are:
-<ul><li>Can manage users: Can create, delete, and edit users.</li>
-<li>Can manage privileges: Can create, delete, and edit groups. This includes the group's name, sharing visibility, and privileges.</li>
-<li>Can operate application: Can configure local and SAML authentication. Can manage application settings: search, SpotIQ, and onboarding advanced settings, style and help customization. Can view scheduled maintenance.</li>
-<li>Can see system information: Can view all default admin data, including system worksheets and pinboards.</li></ul>
-This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
-</dlentry>
-
-<dlentry id="security-log-collection">
-<dt>Security log collection</dt>
-<dd>This release of ThoughtSpot Cloud enables your security team to collect security audit events based on user activity and ship them to your SIEM application in real-time. You can view logs for the following events:
-<ul>
-<li>Account logout</li>
-<li>Failed login</li>
-<li>Group creation</li>
-<li>Group deletion</li>
-<li>Group modification</li>
-<li>Locked account</li>
-<li>Object creation</li>
-<li>Object deletion</li>
-<li>Object modification</li>
-<li>Object sharing</li>
-<li>Password change</li>
-<li>Privilege change</li>
-<li>Profile change</li>
-<li>Row level security (RLS) rule creation</li>
-<li>RLS rule deletion</li>
-<li>RLS rule modification</li>
-<li>Successful login</li>
-<li>User account creation</li>
-<li>User account deletion</li>
-<li>User group change</li>
-</ul>
-For further details, see <a href="{{ site.baseurl }}/admin/data-security/audit-logs.html">Collect security logs</a>.</dd>
-</dlentry>
-
-<dlentry id="admin-console">
-<dt>UI improvement for scheduled maintenance</dt>
-<dd>This release improves the UI and user experience of the <a href="{{ site.baseurl }}/admin/ts-cloud/scheduled-maintenance.html">Scheduled maintenance</a> section of the admin console.</dd>
-</dlentry>
-
-</dl>
-
-<h3><a id="june-cloud-developer"></a>For the Developer</h3>
-
-<dl>
-<dlentry id="global-local-actions">
-<dt>Global and local custom actions</dt>
-<dd>The ThoughtSpot developer portal now supports designating a custom action as a <em>global</em> or <em>local</em> action. This feature allows you to determine and control the placement of custom actions in the ThoughtSpot UI. Developers can now choose to create a custom action that will appear on all visualizations or a specific custom action that can be added to a particular visualization by a ThoughtSpot user. A custom actions panel in the visualization pages allows ThoughtSpot users to view the available custom actions and add an action to any visualization.</dd>
-
-<dd>For example, if you want an action that triggers a callback into your parent app, which would then post its data to Slack, you might want to add a custom action globally to all visualizations. Similarly, if you want to send the data obtained from a specific visualization to a URL, you can associate a custom action locally to that visualization.</dd>
-
-<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=customize-actions" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
-</dlentry>
-</dl>
-
-<dl>
-<dlentry id="custom-action-auth">
-<dt>Authentication schemes for custom actions</dt>
-<dd>You can now apply an authentication scheme for custom actions that trigger a data payload to a specific URL target. If a custom action requires your users to authenticate to send data to a URL, you can specify the authentication method and authorization attributes when creating a custom action in the Developer portal.</dd>
-
-<dd>ThoughtSpot will use this authentication information to send the required attributes in the <code>Authorization</code> headers to the URL endpoint configured in the custom action.
-</dd>
-<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-url" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
-</dlentry>
-</dl>
-
-<dl>
-<dlentry id="custom-action-position">
-<dt>Custom action position settings</dt>
-<dd>ThoughtSpot users with edit privileges can now define or modify the position of a custom action on visualization pages. When a developer creates a custom action in the Developer portal, ThoughtSpot adds a menu item to the <strong>More</strong> menu <img src="/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> by default. ThoughtSpot users can change this to a context menu action or a primary action at any time.</dd>
-
-<dd>If your application instance requires an action that sends only a single row of data from charts or tables, developers can configure a custom action and restrict it to only the contextual menu. If this setting is enabled on a custom action, ThoughtSpot users cannot modify this action on a visualization page.</dd>
-
-<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=custom-action-viz" target="_blank">ThoughtSpot Developer Documentation</a>.
-</dd></dlentry>
-</dl>
-
-<dl>
-<dlentry id="custom-link-format">
-<dt>Custom link format for ThoughtSpot embedded instances</dt>
-<dd>
-ThoughtSpot generates links to access objects, such as pinboards, visualizations, and search answers, when a user shares an object with another user or follows a pinboard to receive periodic notifications. If you have embedded ThoughtSpot in your application, you might want to generate these links in the format that preserves your host application context.</dd>
-
-<dd>For embedded instances, ThoughtSpot now allows you to customize the format of these links in the Developer portal. The <strong>Link Settings</strong> page in the Developer portal allows you to customize the link format for various resource URLs and the <strong>unsubscribe</strong> link sent in email notifications.</dd>
-
-<dd>For more information, see <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=customize-links" target="_blank">ThoughtSpot Developer Documentation</a>.
-</dd></dlentry>
-</dl>
-
-<dl>
-<dlentry id="rest-apis">
-<dt>New REST APIs</dt>
-<dd>The ThoughtSpot 7 Cloud June release introduces the following REST APIs:<br><br>
-<ul><li><code>POST /tspublic/v1/security/share</code><br>You can use this API to share ThoughtSpot objects with another user or user group.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/security-api.html">Security APIs</a>.</li><br>
-<li><code>POST /tspublic/v1/security/shareviz</code><br>You can use this API to share a specific ThoughtSpot visualization with another user or user group. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/security-api.html">Security APIs</a>.</li><br>
-<li><code>GET /tspublic/v1/session/login/token</code><br>This API allows you to authenticate and log in a user if trusted authentication is enabled on ThoughtSpot. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/session-api.html">Session APIs</a>.</li><br>
-<li><code>POST /tspublic/v1/metadata/assigntag</code><br>You can use this API to programmatically assign a tag to a ThoughtSpot object such as pinboards, search answers, tables, and worksheets. <br>For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata APIs</a>.</li><br>
-<li><code>POST /tspublic/v1/user/updatepreference</code><br>This API now includes the optional <code>username</code> parameter, which allows API users to specify the <code>username</code> of the ThoughtSpot user.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User APIs</a>.</li>
+<dlentry id="scriptability">
+<dt>Scriptability</dt>
+<dd><ul><li><p><strong>Add tables and columns to an Embrace connection:</strong> ThoughtSpot now allows you to use TML to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection.</p> <p>This feature is in <strong>Beta</strong> and off by default; to add columns and tables to an Embrace connection through Scriptability, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</p></li>
+<li><p><strong>Improvements to generic join functionality:</strong> The expanded functionality for generic joins in TML files allows the following elements:
+<ul><li>Constants: int, double, bool, date, and string</li>
+<li>Comparison operators: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, and <code>&gt;=</code></li>
+<li>Columns</li>
+<li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul> This feature is in <strong>Beta</strong> and on by default.</p>
+</li>
 </ul></dd></dlentry>
+
+</dl>
+
+<h3><a id="mar-cloud-business-user"></a>For the Business User</h3>
+
+<dl>
+
+<dlentry id="ts-one-ga">
+<dt>ThoughtSpot One GA</dt>
+<dd>ThoughtSpot One is now available for all customers. It is on by default. See <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search Answers</a> and <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html">ThoughtSpot One home page</a> for more information.</dd>
+</dlentry>
+
+<dlentry id="bulk-share">
+<dt>Bulk share objects from the ThoughtSpot One home page</dt>
+<dd>You can now share multiple objects at a time from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#bulk-share">ThoughtSpot One home page</a>.</dd>
+</dlentry>
+
+
+<dlentry id="details-panel">
+<dt>Frequent metrics and attributes in the <strong>Details</strong> panel</dt>
+<dd>The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.</dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="mar-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+
+<dl>
+
+<dlentry id="search-spotiq">
+<dt>Manage advanced search and SpotIQ settings</dt>
+<dd>You can now manage advanced search and SpotIQ settings from the Admin Console. You can configure column indexing and enable or disable SpotIQ Analyze and column summaries. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html">Manage search and SpotIQ settings</a>.</dd></dlentry>
+
+<dlentry id="email-onboarding">
+<dt>Manage email and onboarding settings</dt>
+<dd>You can manage certain advanced settings for your organization from the Admin Console. You can customize welcome emails, scheduled emails, and the workflow that allows users to sign up for ThoughtSpot from the login page. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/onboarding-email-settings.html">Manage email and onboarding settings</a>.</dd></dlentry>
+
+<dlentry id="performance-tracking">
+<dt>Performance Tracking Pinboard</dt>
+<dd>The <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a> is now accessible from the Admin Console. To view this Pinboard, navigate to the Admin Console by selecting <strong>Admin</strong> from the top navigation bar. Select <strong>App performance</strong> from the side navigation bar in the Admin Console.</dd></dlentry>
+
+</dl>
+
+<h3><a id="mar-cloud-developer"></a>For the Developer</h3>
+
+<dl>
+
+<dlentry id="thoughtspot-embed">
+<dt>ThoughtSpot Embed</dt>
+<dd>ThoughtSpot cloud now supports embedding ThoughtSpot content in third-party applications. In this release, ThoughtSpot introduces the Visual Embed SDK package <span class="label label-beta">Beta</span> to help developers embed the ThoughtSpot search functionality, pinboards, visualizations, or the full application in their web page, portal, or business solution.</dd>
+<dd>For more information on embedding ThoughtSpot, see <a href="{{ site.baseurl }}/admin/ts-cloud/intro-embed.html">ThoughtSpot embedding solution</a>.</dd></dlentry>
+
+<dlentry id="spotdev-portal">
+<dt>SpotDev portal</dt>
+<dd>ThoughtSpot cloud now includes the <strong>SpotDev</strong> portal <span class="label label-beta">Beta</span> to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The <strong>SpotDev</strong> tab in the ThoughtSpot application is available for the users with administrator and developer privileges.</dd>
+<dd>The <strong>SpotDev</strong> portal provides a playground for developers and product owners to evaluate the Visual Embed APIs and preview the results. The portal also allows authorized users to rebrand the embedded content, <a href="{{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html">customize styles</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">add custom menu actions</a> to the embedded instance.</dd><dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">SpotDev Portal</a>.</dd></dlentry>
+
 </dl>

@@ -5,13 +5,11 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Before you can create a connection, you must create a custom role. For more information, see [Prerequisites]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-prerequisites.html)
-
 To connect to BigQuery:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
     <!-- ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"") -->
     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
@@ -30,8 +28,6 @@ To connect to BigQuery:
     3. At the Google account sign-in screen, select your Google account.
     4. Allow thoughtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
-        Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
-
    For service account authentication, do the following:
    - Enter Project id, and Service account.
      ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-serv-acct.png "Enter connection details")
@@ -40,9 +36,9 @@ To connect to BigQuery:
     Refer to the [BigQuery connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to BigQuery, by doing the following:
-    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-    2. Enter your key and value information.
-    3. To add more keys and values, click the plus sign (+), and enter them.
+- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+- Enter your key and value information.
+- To add more keys and values, click the plus sign (+), and enter them.
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your BigQuery data source. Key-value pairs are case-sensitive." %}
 
@@ -66,7 +62,7 @@ The connection you just created is a link to the external data source. If there 
 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
-You can modify a BigQuery connection in the following ways:
+You can modify an Embrace BigQuery connection in the following ways:
 
 - [Edit a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-edit-connection.html)
 - [Remap a BigQuery connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-remap-connection.html)

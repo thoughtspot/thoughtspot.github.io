@@ -1,45 +1,33 @@
 ---
-title: [ThoughtSpot Developer portal]
-last_updated: 4/3/2021
-summary: "The ThoughtSpot Developer portal allows developer users to explore the embed APIs, preview code snippets, and view developer documentation."
+title: [ThoughtSpot SpotDev portal]
+last_updated: 3/3/2021
+summary: "ThoughtSpot SpotDev portal is a developers' playground for exploring APIs, building sample content, and viewing developer documentation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughtSpot Developer portal allows you to explore ThoughtSpot SDK, APIs, and build your web applications with ThoughtSpot content.
-The portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features that are available for integration.
-The portal also allows authorized users to customize and rebrand the look and feel of the UI and add custom actions to an embedded visualization or pinboard.
+The ThoughtSpot SpotDev portal <span class="label label-beta">Beta</span> allows you to explore the ThoughtSpot APIs and developer tools, and build your web applications with ThoughtSpot content.
+The SpotDev portal enables business application owners and developers to learn about ThoughtSpot APIs, and evaluate ThoughtSpot features available for integration.
 
-## Access Developer portal
-You can access the developer portal from your ThoughtSpot application instance or the [ThoughtSpot Developers](https://developers.thoughtspot.com/){: target="_blank"} website.
+## Access SpotDev portal
 
-**If you have a ThoughtSpot user account**:                                  
+To access SpotDev portal, follow these steps:
 
-1.  Log in to your ThoughtSpot application instances.
-2.  Make sure your user account has admin or developer privileges.
+1.  Sign in to your ThoughtSpot Cloud application instance.
 
-    For more information on configuring a user group with developer privileges, see the [ThoughtSpot Developer Documentation](https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=user-roles){: target="_blank"}.
-3.  Navigate to the **Develop** tab.
+2.  Navigate to the **SpotDev** tab.
 
-**If you do not have a ThoughtSpot user account**:
-1.  Go to [developers.thoughtspot.com](https://developers.thoughtspot.com/){: target="_blank"}.
-
-2.  From the header bar, click **Playground**.
-
-3.  Enter your name and email address.
-
-4.  Click **Try Live Playground**.
-
-{% include note.html content="You can also register for a free trial and evaluate the SDK and APIs on the ThoughtSpot free trial cluster." %}
+If you are not an existing ThoughtSpot user, sign up for a free trial to evaluate embedding workflows.
 
 ## Find your way around
-The Developer portal includes several sections to assist you through your embedding journey.
+
+The SpotDev portal includes several sections to assist you through your embedding journey.
 
 **Home**    
-The **Home** page of the Developer portal provides a pictorial view of the ThoughtSpot features that you can integrate with your applications.
-The homepage also includes links to the **Developer Guides** and  **Playground** to preview the code snippet.
+The **Home** page of the SpotDev portal provides a pictorial view of the ThoughtSpot features that you can integrate with your applications.
+The home page also includes links to the **Developer Guides** and the **Playground** to preview the toolkit.
 
 **Guide**  
-The **Guide** menu displays the *ThoughtSpot Embed Developer Documentation*. The documentation portal provides step-by-step instructions on how to use the ThoughtSpot Visual Embed SDK and REST APIs to integrate ThoughtSpot features into your application.
+The **Guide** menu displays the *ThoughtSpot Embed Developer Documentation*. The documentation portal provides step-by-step instructions on using ThoughtSpot SDK and APIs to integrate ThoughtSpot features.
 
 **Playground**  
 The **Playground** provides an API playground to explore the following ThoughtSpot features.
@@ -50,26 +38,27 @@ The **Playground** provides an API playground to explore the following ThoughtSp
 -   Full application
 
 **Customizations**  
-For ThoughtSpot users with administrator and developer privileges, the Developer portal displays the following customization menu items:
+For ThoughtSpot users with administrator and developer privileges, the SpotDev portal displays the following customization settings:
+
 -   **Styles**  
     A set of customization controls for white-labeling and rebranding the embedded ThoughtSpot content.
+
 -   **Actions**  
-    Configuration settings for creating custom actions in the ThoughtSpot UI to trigger workflows in your application, or invoke a URL with ThoughtSpot data as the payload.
+    Configuration settings for creating custom actions for the embedded pinboards and visualizations.
 
 -   **Settings**  
-    Security controls to define access to the embedded ThoughtSpot content from external applications.
+    Security controls for accessing embedded content from external applications.
 
-{% include note.html content="The **Customization** settings are available only for the ThoughtSpot developer or admin users." %}
-## Explore the Visual Embed APIs
+## Explore the APIs
 
-The **Playground** allows developers to try the Visual Embed APIs, preview the code, test it, and familiarize themselves with the application controls.
-
-{% include note.html content="If you have added a custom action and you want to disable or hide this custom action on a Playground page by using the **Modify available actions** checkbox, make sure you specify the ID of the custom action in the `disabledActions` and `hiddenActions` attribute." %}
+ThoughtSpot provides a set of APIs, SDK, and developer tools to integrate search analytics, data insights, visualizations, pinboards, and even the entire ThoughtSpot application in an external application, portal, or business solution.
+The **Playground** allows developers to preview the code, test it, and familiarize themselves with the application controls.
 
 ### Search
-To embed search:
 
-1.  Go to **Playground** &gt; **Search**.
+To explore the search embed API and preview the code:
+
+1.  Go to **Playground** > **Search**.
 
 2.  Select a data source or a saved search answer.
 
@@ -79,43 +68,45 @@ To embed search:
     Minimizes the data panel on the left navigation bar.
 
     **Hide data panel**
-    Hides the default data panel. You can use this function to create a custom data panel when embedding the search module in your application.
+    Hides the default data panel.
 
     **Hide chart or table**  
-    Hides the visualizations displayed as search results. You can use this function to create your own visualization when embedding search in your application.
+    Hides the visualizations displayed as search results.
 
     **Modify available actions**  
-    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar in the search answer page. You can use this function to restrict user access to certain features, or to remove the menu items that are not applicable to your application context.
-    - To disable an action menu item, specify the menu string in the `disabledActions` attribute. For example, to disable the **Replay Search** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), specify the **Replay Search** action menu string in the `disabledActions` attribute as shown here:
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar in the search answer page.
 
-      ```
-      disabledActions: [Action.ReplaySearch]
-      ```
+    For example:
+
+    - To disable the **Replay Search** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `replaySearch`:
+      ````
+        disabledActions: ['replaySearch']
+      ````
     - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
 
     - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
-      ```
-      hiddenActions: [Action.ReplaySearch]
-      ```
+      ````
+        hiddenActions: ['replaySearch']
+      ````
+    For a complete list of action menu items and the corresponding text strings to use for disabling or hiding these menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
-      For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+    **Enable Search Assist**  
+    Enables the Search Assist feature that helps users with simple search scenarios. Search Assist allows you to create a custom onboarding experience for your users by demonstrating how to search data from the example queries created on your worksheet.
 
     **Add search tokens**  
     Enables constructing a search query using search tokens.
 
     In the following example, to fetch the total revenue data by shipping mode, the `searchQuery` string uses the [Column]({{ site.baseurl }}/reference/api/search-data-api.html#column) search token:
-    ```
-    searchQuery: "[Revenue] by [Shipmode]"
-    ```
+    ````
+      searchQuery: "[Revenue] by [Shipmode]"
+    ````
     For more information on the search tokens and query string components, see [Components of a search query]({{ site.baseurl }}/reference/api/search-data-api.html#components).
-
-    **Handle custom actions**  
-    Allows you to view the code for a custom action event. If the embedded instance has a custom action, use this checkbox to view the event generated by the custom action and send ThoughtSpot data as a payload.
 
 4.  Click **Run**.
 
 ### Visualization
-To embed a visualization:
+
+To explore the API for embedding visualizations:
 
 1.  Go to **Playground** > **Visualization**.
 
@@ -124,41 +115,33 @@ To embed a visualization:
 3.  If required, enable the **User experience customization** settings.
 
     **Modify available actions**   
-    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png) on the visualization page. You can use this function to restrict user access to certain features, or to remove the menu items that are not applicable to your application context.
-    - To disable an action menu item, specify the menu string in `disabledActions` attribute. For example, to disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `Action.Download`:
-      ```
-      disabledActions: [Action.Download]
-      ```
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png) on the visualizations page.
+
+    For example:
+
+    - To disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute to `download`:
+      ````
+        disabledActions: ['download']
+      ````
     - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
 
     - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
-      ```
-      hiddenActions: [Action.Download]
-      ```    
-    For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).
+      ````
+        hiddenActions: ['download']
+      ````     
+     For a complete list of action menu items and the corresponding text strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
     **Set runtime filters**     
     Applies Runtime Filters to a visualization.  
     Runtime filters provide the ability to filter data at the time of retrieval.   
     To apply Runtime Filters, pass the `columnName`, `operator`, and `value` parameters in the `runtimeFilters` attribute.
 
-    ``` javascript
-     runtimeFilters: [{
-       columnName: 'color',
-       operator: 'EQ',
-       values: [ 'red' ]
-     }]
-    ```
-
     For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filter.html).
-
-    **Handle custom actions**  
-    Allows you to view the code for a custom action event. If the embedded instance has a custom action, use this checkbox to view the event generated by the custom action and send ThoughtSpot data as a payload.
 4.  Click **Run**.
 
 ### Pinboard
 
-To embed a pinboard:
+To explore the Pinboard API:
 
 1.  Go to **Playground** &gt; **Pinboard**.
 
@@ -167,84 +150,48 @@ To embed a pinboard:
 3.  If required, enable the **User experience customization** settings.
 
     **Modify available actions**  
-    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page. You can use this function to restrict user access to certain features, or to remove the menu items that are not applicable to your application context.
-    - To disable an action menu item, specify the menu string in the `disabledActions` attribute. For example, to disable the **Download As PDF** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `Action.DownloadAsPdf`:                 
-    ```
-      disabledActions: [Action.DownloadAsPdf]
-    ```
+    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page.
+
+    For example:  
+    - To disable the **Download As PDF** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `downloadAsPdf`:                 
+    ````
+      disabledActions: ['downloadAsPdf']
+    ````
     - To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
     - To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
-    ```
-      hiddenActions: [Action.DownloadAsPdf]
-    ```
-    For a complete list of action menu items and the corresponding strings to use for disabling menu items, see [Actions](https://docs.thoughtspot.com/visual-embed-sdk/release/typedoc/enums/action.html/enums/action.html).                                          
+    ````
+      hiddenActions: ['downloadAsPdf']
+    ````
+
+    For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see the **Actions** page of the **Visual Embed SDK Reference Guide** on the **SpotDev** portal.
 
     **Set runtime filters**   
+
     Applies Runtime Filters to a visualization in a pinboard.             
     Runtime filters provide the ability to filter data at the time of retrieval.         
     To apply Runtime Filters, pass the `columnName`, `operator`, and `value` parameters in the `runtimeFilters` attribute.
 
-    ``` javascript
-     runtimeFilters: [{
-       columnName: 'Revenue',
-       operator: 'EQ',
-       values: [ 100000 ]
-      }]
-    ```
-
     For more information, see [Apply a Runtime Filter]({{ site.baseurl }}/admin/ts-cloud/apply-runtime-filter.html).
-
-    **Handle custom actions**  
-    Allows you to view the code for a custom action event. If the embedded instance has a custom action, use this checkbox to view the event generated by the custom action and send ThoughtSpot data as a payload.
 
 4. Click **Run**.
 
 ### Full Application
 
-To embed the full ThoughtSpot application:
+To explore the API for embedding full application:
 
-1.  Go to **Playground** &gt; **Full app**.
+1.  Go to **Playground** > **Full app**.
 
 2.  Select a tab to set a default page view for embedded application users.
 
-3.  If required, enable **User experience customization** settings.
+3.  If required, enable the **User experience customization** settings.
 
-    **Modify available actions**  
-    Disables or hides the specified action menu items in the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), or the menu bar on the **Pinboards** page.
-    -  To disable an action menu item, specify the menu string in the `disabledActions` attribute. For example, to disable the **Download** action menu item from the **More** menu ![the more options menu]({{ site.baseurl }}/images/icon-more-10px.png), set the value of the `disabledActions` attribute as `Action.Share`:
-    ```
-    disabledActions: [Action.Share]
-    ```
-    -   To display a tooltip for the disabled menu item, specify the reason for disabling the menu item in the `disabledActionReason` attribute.
-    -   To hide an action menu item, specify the action text string in the `hiddenActions` attribute:
-      ```
-      hiddenActions: [Action.Share]
-      ```
-    For a complete list of action menu items and the corresponding strings to use for disabling or hiding menu items, see [Actions]({{visualEmbedSDKPrefix}}/enums/action.html).
+    **Hide navigation bar**  
+    Hides the ThoughtSpot top navigation bar.
 
-    **Show navigation bar**  
-    Displays the ThoughtSpot top navigation bar. By default, the navigation bar is hidden.
-
-    **Navigate to URL**
-    Allows you to define a specific URL path for loading a ThoughtSpot page. If a particular ThoughtSpot page is set as a homepage using the `pageID` attribute and the URL path is also defined in the `path` attribute, the path definition takes precedence.
-
-    **Set runtime filters**  
-    Enables Runtime Filters on a visualization in a pinboard.
-    Runtime filters provide the ability to filter data at the time of retrieval.
-    To apply Runtime Filters, pass the `columnName`, `operator`, and `value` parameters in the `runtimeFilters` attribute.
-
-    ``` javascript
-    runtimeFilters: [{
-      columnName: 'Revenue',
-      operator: 'EQ',
-      values: [ 100000 ]
-     }]
-    ```
-    For more information, see [Apply a Runtime Filter](https://cloud-docs.thoughtspot.com/admin/ts-cloud/apply-runtime-filter.html).
-
+4.  Click **Run**.
 
 ## Customize embedded content
 
 -   To [white-label and rebrand the embedded ThoughtSpot content]({{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html), click **Customizations** > **Styles**.
--   To [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html) to the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on a visualization or pinboards page, go to **Customizations** > **Actions**.
--   If you are a ThoughtSpot admin user and you want to configure security settings, such as [CORS and CSP domains]({{ site.baseurl }}/admin/ts-cloud/security-settings.html), [trusted authentication service]({{ site.baseurl }}/admin/ts-cloud/trusted-authentication.html), and [SAML redirect domains]({{ site.baseurl }}/admin/ts-cloud/configure-saml-spotdev.html), go to **Customizations** &gt; **Settings**.
+-   To [add custom actions]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html) to the **More** menu ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png) on the  visualization and pinboards page, go to **Customizations** > **Actions**.
+-   If you are a ThoughtSpot admin user and you want to [configure security settings]({{ site.baseurl }}/admin/ts-cloud/security-settings.html), such as enabling CORS, setting up trusted authentication service, or whitelisting client application domains, go to **Customizations** > **Settings**.

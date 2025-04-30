@@ -1,6 +1,9 @@
 ---
 title: [Filtered aggregation functions]
+
+
 last_updated: tbd
+toc: true
 summary: "You can create a filtered aggregation in the search bar."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

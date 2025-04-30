@@ -1,352 +1,22 @@
 ---
 title: ["ThoughtSpot Cloud Release Notes"]
 toc: false
-last_updated: 5/20/2021
+last_updated: 3/9/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot 7 Cloud June version (ts7.jun.cl) is now available.
+ThoughtSpot 7 Cloud March version (ts7.mar.cl)  is now available.
 
 These release notes include information about new and enhanced features.
-
-To see our feature deprecation plans, please see [Deprecation Announcements]({{ site.baseurl }}/release/deprecation.html)
 
 {: id="new"}
 ## New Features and Functionality
 
 {% include content/new-features-cloud-release.md %}
 
-<h2><a id="2021-april"></a>ThoughtSpot 7 Cloud May Release (ts7.may.cl)</h2>
-
-<ul>
-<li><a href="{{ site.baseurl }}#may-cloud-analyst">For the Analyst</a></li>
-<li><a href="{{ site.baseurl }}#may-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#may-cloud-data-engineer">For the Data Engineer</a></li>
-<li><a href="{{ site.baseurl }}#may-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
-<li><a href="{{ site.baseurl }}#may-cloud-developer">For the Developer</a></li>
-</ul>
-
-<h3><a id="may-cloud-analyst"></a>For the Analyst</h3>
-
-<dl>
-
-<dlentry>
-  <dt>Search Assist Coach</dt>
-  <dd><a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> sample queries based on their company data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
-
-  <dlentry>
-    <dt>Scriptable Worksheets with Search Assist Coach lessons</dt>
-    <dd>You can now use TML to import, export, and update Worksheets with <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lessons. See <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-worksheets">Syntax of the Worksheet TML file</a>.</dd></dlentry>
-
-</dl>
-
-<h3><a id="may-cloud-business-user"></a>For the Business User</h3>
-
-<dl>
-
-<dlentry id="home-page-metrics">
-<dt>Track metrics from the home page</dt>
-<dd>You can now add important metrics to your watchlist and track them from the home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page metrics</a>.</dd>
-</dlentry>
-
-<dlentry id="automatic-select">
-<dt>Automatic selection of first search result</dt>
-<dd>When you search across existing Answers and Pinboards, ThoughtSpot now automatically selects the first result and opens the <strong>Details</strong> panel. This allows you to quickly glance at the details for the result that ThoughtSpot determines is most useful for you. You can see the metrics, groups, and filters for the Answer or Pinboard, and easily find out if that object answers your question.</dd>
-</dlentry>
-
-<dlentry id="latency">
-<dt>Improvements in indexing latency for Search Answers</dt>
-<dd>This release improves indexing latency to less than 10 minutes (less than 5 in most cases), from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes.</dd></dlentry>
-
-<dlentry id="deprecations">
-<dt>Deprecations</dt>
-<dd>ThoughtSpot is dropping support for several features in the May Cloud release. These features are <strong><em>not</em></strong> available in the May release. ThoughtSpot is also deprecating several features in the May Cloud release. These features are still available in the May release, but ThoughtSpot will drop support for them in a later release. Refer to <a href="{{ site.baseurl }}/release/deprecation.html">Deprecation Announcements</a> for more information.</dd></dlentry>
-
-</dl>
-
-<h3><a id="may-cloud-data-engineer"></a>For the Data Engineer</h3>
-
-<dl>
-
-<dlentry id="embrace-adw">
-<dt>Oracle ADW for Embrace</dt>
-<dd>In this release, Oracle Autonomous Data Warehouse (ADW) is GA. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html">Oracle ADW</a>. </dd></dlentry>
-
-<dlentry id="embrace-starburst">
-<dt>Starburst for Embrace</dt>
-<dd>Embrace now supports both Starburst Enterprise, and open source Trino databases. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-starburst.html">Starburst</a>.</dd></dlentry>
-
-<dlentry id="embrace-custom-calendar">
-<dt>Custom calendar for Embrace</dt>
-<dd>In this release, custom calendar is available for Snowflake connections only. For details, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>. </dd></dlentry>
-
-<dlentry id="embrace-databricks">
-<dt>Databricks for Embrace</dt>
-<dd>Embrace now supports Databricks. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd></dlentry>
-
-<h3><a id="may-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
-
-<dl>
-<dlentry id="product-usage-worksheet">
-<dt>Product Usage Worksheet</dt>
-<dd>This release introduces a new default Worksheet for monitoring product usage. The Product Usage Worksheet contains data on the following topics:
-<ul><li>Specifies what existing Worksheets, tables, and Views users search on and create objects from, and what those objects are</li>
-<li>Lists what actions users complete in the product</li>
-<li>Lists the underlying data sources for any object</li>
-<li>Lists any object's dependents</li></ul>
-You can search on this Worksheet, or create Pinboards based on it, to monitor your users' interaction with the product. To access this Worksheet, search for <strong>Product Usage Worksheet</strong> from the <strong>Data</strong> tab, or add it as a source while searching data.</dd></dlentry>
-</dl>
-
-<h3><a id="may-cloud-developer"></a>For the Developer</h3>
-
-<dl>
-<dlentry id="custom-actions">
-<dt>Custom actions in the context menu</dt>
-<dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <b>Answers</b> or <b>Pinboards</b> page.</dd>
-<dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> <span class="badge badge-update">Beta</span> (off by default) enabled on your cluster.</dd>
-<dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">Add custom actions</a>.</dd></dlentry>
-</dl>
-
-<dl>
-<dlentry id="viz-embed-sdk">
-<dt>Visual Embed SDK Version 1.2.0</dt>
-<dd>The ThoughtSpot 7 Cloud May release introduces the Visual Embed SDK 1.2.0 version with a minor update and backward-compatible improvements.</dd></dlentry>
-</dl>
-<dlentry id="saml-authentication">
-<dt>SAML authentication</dt>
-<dd>The Visual Embed SDK packages now include the <code>noRedirect</code> attribute as an optional parameter for the <code>SSO</code> <code>AuthType</code>. If you want to display the SAML authentication workflow in a pop-up window, instead of refreshing the application web page to direct users to the SAML login page, you can set the <code>noRedirect</code> attribute to <code>true</code>.</dd>
-<dd>For more information, see the <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=getting-started" target="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
-</dl>
-
-<dl>
-<dlentry id="viz-embed-sdk-notification">
-<dt>Visual Embed SDK notification when third-party cookies are disabled</dt>
-<dd>When a user accesses the embedded application from a web browser that has third-party cookies disabled, the Visual Embed SDK emits the <code>NoCookieAccess</code> event to notify the developer. Cookies are disabled by default in Safari. Users can enable third-party cookies in Safari’s Preferences setting page or use another web browser. To know how to enable this setting by default on Safari for a ThoughtSpot embedded instance, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd></dlentry>
-</dl>
-
-<dl>
-<dlentry id="pinboard-embed-enhancements">
-<dt>Pinboard embed enhancements</dt>
-<dd>The More menu <img src="/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> in the embedded Pinboard page now shows the following actions for pinboard and visualizations.</dd>
-<dd>Pinboard<ul><li>Save</li><li>Make a copy</li><li>Add filters</li><li>Configure filters</li><li>Present</li><li>Download as PDF</li><li>Pinboard info</li><li>Manage schedules</li></ul>
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Users with edit permissions can view and access the <b>Save</b>, <b>Add filters</b>, <b>Configure filters</b>, and <b>Manage schedules</b> actions.</div>
-Visualizations on a pinboard
-<ul><li>Pin</li><li>Download</li><li>Edit</li><li>Present</li><li>Download as CSV</li><li>Download as XLSX</li><li>Download as PDF</li></ul>
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Users with edit permissions can view and access the <b>Edit</b> action.
-The <b>Download as CSV</b>, <b>Download as XSLX</b>, and <b>Download as PDF</b> actions are available for table visualizations.
-The <b>Download</b> action is available for chart visualizations.</div>
-</dd></dlentry>
-</dl>
-
-<dl>
-<dlentry id="performance-optimization">
-<dt>Performance optimization</dt>
-<dd>This release introduces the following performance improvements for ThoughtSpot embedded applications:
-<ul><li>Faster loading of embedded objects and application pages.</li><li>Faster loading of preview results in the Playground.</li></ul></dd></dlentry>
-</dl>
-
-<dl>
-<dlentry id="rest-apis">
-<dt>REST APIs</dt>
-<dd>The ThoughtSpot 7 Cloud May release introduces the following new REST APIs:<br><br>
-<ul><li><code>POST /tspublic/v1/user/updatepreference</code><br>You can use this API to programmatically update a ThoughtSpot user’s profile settings such as the email address, locale preference, notification settings, and the preference for revisiting the onboarding experience.<br><br>For more information, see <a href="{{ site.baseurl }}/reference/api/user-api.html">User API</a>.</li><br>
-<li><code>GET /tspublic/v1/metadata/listas</code><br>You can use this API to get a list of object headers for a ThoughtSpot user or user group. For more information, see <a href="{{ site.baseurl }}/reference/api/metadata-api.html">Metadata API</a>.</li></ul></dd></dlentry>
-</dl>
-
-<h2><a id="2021-april"></a>ThoughtSpot 7 Cloud April Release (ts7.april.cl)</h2>
-<ul>
-<li><a href="{{ site.baseurl }}#april-cloud-analyst">For the Analyst</a></li>
-<li><a href="{{ site.baseurl }}#april-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#april-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
-<li><a href="{{ site.baseurl }}#april-cloud-developer">For the Developer</a></li>
-</ul>
-
-<h3><a id="april-cloud-analyst"></a>For the Analyst</h3>
-
-<dl>
-
-<dlentry id="scriptability">
-<dt>Scriptability</dt>
-<dd>There are several enhancements to the <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a> feature:
-<ul><li><strong>Support for selective and linked filters:</strong> You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
-<li><strong>Add tables and columns to an Embrace connection (GA):</strong> ThoughtSpot now allows you to use TML to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. This feature is now GA and on by default. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection.</li>
-</ul>
-</dd></dlentry>
-
-<dlentry id="query-dashboard">
-<dt>Enhancements to the Search on Answers Pinboard</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Search on Answers Pinboard</a> contains several new or updated visualizations, including <strong>Top search queries on existing Answers</strong>, <strong>Position at which users are clicking</strong>, and <strong>What results users are finding useful with autocomplete suggestions</strong>. These new visualizations provide more information about click position, what information users look for, and what information they cannot find. You can also view the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#best-practices">best practices</a> for this Pinboard.
-</dd></dlentry>
-
-</dl>
-
-<h3><a id="april-cloud-business-user"></a>For the Business User</h3>
-
-<dl>
-
-<dlentry id="new-answer-experience">
-<dt>New Answer experience <span class="badge badge-update">Beta</span></dt>
-<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is in <span class="badge badge-update">Beta</span> and off by default. If it is on for your company, you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
-<p>The new Answer experience contains the following features and enhancements: {% include content/new-answer-experience-features.md %}</p>
-<p>{% include content/new-answer-experience-deprecations.md %}</p>
-<p> Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience">New Answer experience</a> for more information on the behavior of these features.</p>
-
-</dd></dlentry>
-
-<dlentry id="sticky-search-toggle">
-<dt>Sticky Search Answers/ Search Data toggle</dt>
-<dd>This release makes the Search Answers/ Search Data toggle <img src="{{ site.baseurl }}/images/search-toggle-answers.png" alt="search toggle" class="inline"/> sticky. ThoughtSpot now remembers your choice across sessions when you switch between <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search Answers</a> and <a href="{{ site.baseurl }}/end-user/search/search-data.html">Search Data</a>.</dd></dlentry>
-
-<dlentry id="latency">
-<dt>Improvements in indexing latency for Search Answers</dt>
-<dd>This release improves indexing latency to less than 10 minutes, from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes. If you create a new Answer, users can search for and find it 10 minutes after you create it. This indexing improvement is in the process of rollout. If you don’t have it yet, ThoughtSpot will deploy it soon.</dd></dlentry>
-
-<dlentry id="unicode">
-<dt>Unicode support</dt>
-<dd>We added unicode character matching in Search Answers, extending support to all languages and character sets. You can now search all artifacts that use unicode characters in titles, descriptions, metadata, and keywords, and see the correct results.
-
-<img src="/images/search-answers-unicode.png" alt="Search Answers with full unicode support" title="Unicode support">
-</dd>
-</dlentry>
-
-</dl>
-
-<h3><a id="april-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
-
-<dl>
-
-<dlentry id="private-link">
-<dt>AWS PrivateLink between ThoughtSpot Cloud and your Snowflake or Redshift data warehouse</dt>
-<dd>To ensure a secure two-way data exchange between your cloud data warehouse and the ThoughtSpot Cloud tenant, you can use an AWS PrivateLink. This option is currently available for your Snowflake or Redshift data warehouse connections. Refer to the <a href="{{ site.baseurl }}/admin/ts-cloud/private-link-redshift.html">Redshift</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/private-link-snowflake.html">Snowflake</a> articles about enabling an AWS PrivateLink.</dd></dlentry>
-
-</dl>
-
-<h3><a id="april-cloud-developer"></a>For the Developer</h3>
-
-<dl>
-
-<dlentry id="developer-privilege">
-<dt>Developer privilege</dt>
-<dd>You can now grant groups the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html">Developer privilege</a> from the Admin Console, allowing users in those groups to access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a>. In the Developer Portal, users can explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</dd></dlentry>
-
-<dlentry id="tml-api">
-<dt>TML APIs</dt>
-<dd><p>The new TML APIs enable you to programmatically export, validate, and import scriptable <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html">TML</a> objects. Use these APIs to automate the change management and deployment processes between your development and production environments. With these APIs, analysts can much more easily migrate from one environment to the other by automating the entire change management process, reducing the risk of human error.</p>
-<p>See <a href="{{ site.baseurl }}/reference/api/tml-api.html">TML APIs</a>.</p></dd></dlentry>
-
-<dlentry id="developer-portal">
-<dt>ThoughtSpot Developer portal</dt>
-<dd>ThoughtSpot users with admin or developer privileges can now access the ThoughtSpot Developer portal by clicking the <strong>Develop</strong> tab in the ThoughtSpot application.
-The Developer portal, referred to as <strong>SpotDev</strong> in the earlier release, includes the following enhancements:
-<ul>
-<li>Playground enhancements<br>The <strong>Playground</strong> page now includes several UI enhancements to improve the interactive coding experience for developers.<ul>
-<li>The <strong>Handle custom actions</strong> checkbox on the <strong>Playground</strong> pages allows you to view the code for the custom action event.</li>
-<li>The <strong>Navigate to URL</strong> checkbox on the <strong>Playground</strong> &gt; <strong>Full app</strong> page allows you to set a URL path to navigate to when the embedded  application loads.</li>
-</ul>
-</li>
-<li>Custom action Configuration<br>You can now configure custom actions for embedded pinboards and visualization pages. You can also set a custom action as a primary menu command, or as a menu item in the <strong>More</strong> menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="the more options menu">.</li>
-<li>Security settings<br>The <strong>Security Settings</strong> page in the developer portal includes the following new features:<ul>
-<li>Users with developer and admin privileges can now add external application domains to the Content Security Policy (CSP) and Cross-Origin Resource Sharing (CORS) whitelist.</li>
-<li>Users with admin privileges can add the SAML redirect domains to the allowed list of domains, and thus provide a seamless login experience for federated users who request access to the embedded ThoughtSpot content.</li>
-<li>Users with admin privileges can enable the trusted authentication method to authenticate ThoughtSpot users who request access to the embedded content.</li>
-</ul>
-</li>
-</ul></dd></dlentry>
-
-<dlentry id="visual-embed-sdk">
-<dt>ThoughtSpot Visual Embed SDK enhancements</dt>
-<dd>ThoughtSpot Visual Embed SDK is now available to all external users who want to embed ThoughtSpot content in their application, product, or web page.<br>You can now download the Visual Embed SDK package from the <a href="https://www.npmjs.com/package/@thoughtspot/visual-embed-sdk" target="_blank">NPM site</a> and get started with embedding ThoughtSpot.<br>The new Visual Embed SDK package includes several new enhancements to support user authentication, full application rendition, custom action configuration for embedded pinboards and visualizations, and enumerators for handling the events generated by the embed configuration.
-For more information, see the <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=js-reference" arget="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
-
-<dlentry id="session-api-enhancement">
-<dt>Session API enhancement</dt>
-<dd>The session REST API service now includes the <code>/tspublic/v1/session/auth/token</code> API to enable a client application to programmatically obtain an authentication token for a ThoughtSpot  user.<br>To access this API, visit the ThoughtSpot Swagger portal.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/session-api.html">session APIs</a>.</dd></dlentry>
-
-</dl>
-
-<h2><a id="2021-march"></a>ThoughtSpot 7 Cloud March Release (ts7.mar.cl)</h2>
-<ul>
-<li><a href="{{ site.baseurl }}#mar-cloud-analyst">For the Analyst</a></li>
-<li><a href="{{ site.baseurl }}#mar-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#mar-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
-<li><a href="{{ site.baseurl }}#mar-cloud-developer">For the Developer</a></li>
-</ul>
-
-<h3><a id="mar-cloud-analyst"></a>For the Analyst</h3>
-
-<dl>
-
-<dlentry id="scriptability">
-<dt>Scriptability</dt>
-<dd><ul><li><p><strong>Add tables and columns to an Embrace connection:</strong> ThoughtSpot now allows you to use TML to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection.</p> <p>This feature is in <strong>Beta</strong> and off by default; to add columns and tables to an Embrace connection through Scriptability, contact your ThoughtSpot administrator.</p></li>
-<li><p><strong>Improvements to generic join functionality:</strong> The expanded functionality for generic joins in TML files allows the following elements:
-<ul><li>Constants: int, double, bool, date, and string</li>
-<li>Comparison operators: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, and <code>&gt;=</code></li>
-<li>Columns</li>
-<li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul> This feature is in <strong>Beta</strong> and on by default.</p>
-</li>
-</ul></dd></dlentry>
-
-</dl>
-
-<h3><a id="mar-cloud-business-user"></a>For the Business User</h3>
-
-<dl>
-
-<dlentry id="ts-one-ga">
-<dt>ThoughtSpot One GA</dt>
-<dd>ThoughtSpot One is now available for all customers. It is on by default. See <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search Answers</a> and <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html">ThoughtSpot One home page</a> for more information.</dd>
-</dlentry>
-
-<dlentry id="bulk-share">
-<dt>Bulk share objects from the ThoughtSpot One home page</dt>
-<dd>You can now share multiple objects at a time from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#bulk-share">ThoughtSpot One home page</a>.</dd>
-</dlentry>
-
-
-<dlentry id="details-panel">
-<dt>Frequent metrics and attributes in the <strong>Details</strong> panel</dt>
-<dd>The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.</dd>
-</dlentry>
-
-</dl>
-
-<h3><a id="mar-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
-
-<dl>
-
-<dlentry id="search-spotiq">
-<dt>Manage advanced search and SpotIQ settings</dt>
-<dd>You can now manage advanced search and SpotIQ settings from the Admin Console. You can configure column indexing and enable or disable SpotIQ Analyze and column summaries. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html">Manage search and SpotIQ settings</a>.</dd></dlentry>
-
-<dlentry id="email-onboarding">
-<dt>Manage email and onboarding settings</dt>
-<dd>You can manage certain advanced settings for your organization from the Admin Console. You can customize welcome emails, scheduled emails, and the workflow that allows users to sign up for ThoughtSpot from the login page. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/onboarding-email-settings.html">Manage email and onboarding settings</a>.</dd></dlentry>
-
-<dlentry id="performance-tracking">
-<dt>Performance Tracking Pinboard</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a> is now accessible from the Admin Console. To view this Pinboard, navigate to the Admin Console by selecting <strong>Admin</strong> from the top navigation bar. Select <strong>App performance</strong> from the side navigation bar in the Admin Console.</dd></dlentry>
-
-</dl>
-
-<h3><a id="mar-cloud-developer"></a>For the Developer</h3>
-
-<dl>
-
-<dlentry id="thoughtspot-embed">
-<dt>ThoughtSpot Embed</dt>
-<dd>ThoughtSpot cloud now supports embedding ThoughtSpot content in third-party applications. In this release, ThoughtSpot introduces the Visual Embed SDK package <span class="label label-beta">Beta</span> to help developers embed the ThoughtSpot search functionality, pinboards, visualizations, or the full application in their web page, portal, or business solution.</dd>
-<dd>For more information on embedding ThoughtSpot, see <a href="{{ site.baseurl }}/admin/ts-cloud/intro-embed.html">ThoughtSpot embedding solution</a>.</dd></dlentry>
-
-<dlentry id="spotdev-portal">
-<dt>SpotDev portal</dt>
-<dd>ThoughtSpot cloud now includes the <strong>SpotDev</strong> portal <span class="label label-beta">Beta</span> to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The <strong>SpotDev</strong> tab in the ThoughtSpot application is available for the users with administrator and developer privileges.</dd>
-<dd>The <strong>SpotDev</strong> portal provides a playground for developers and product owners to evaluate the Visual Embed APIs and preview the results. The portal also allows authorized users to rebrand the embedded content, <a href="{{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html">customize styles</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html">add custom menu actions</a> to the embedded instance.</dd><dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">SpotDev Portal</a>.</dd></dlentry>
-
-</dl>
-
-<h2><a id="2021-february"></a>ThoughtSpot 7 Cloud February Release (ts7.feb.cl)</h2>
+{: id="2020-february"}
+## ThoughtSpot 7 Cloud February Release (ts7.feb.cl)
 
 <ul>
 <li><a href="{{ site.baseurl }}#feb-cloud-analyst">For the Analyst</a></li>
@@ -371,8 +41,8 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 </dd></dlentry>
 
 <dlentry id="pinboard-download-api">
-  <dt>Pinboard Export API</dt>
-  <dd>Use the new Pinboard Export API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-export-api.html">Pinboard Export API</a>.
+  <dt>Pinboard Download API</dt>
+  <dd>Use the new Pinboard Download API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>.
 </dd></dlentry>
 
 <dlentry id="spotiq-analyze">
@@ -422,7 +92,7 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 <dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers Pinboard</a>:
 <ul>
 <li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
-<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a> to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
+<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to contact ThoughtSpot Support to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
 </dlentry>
 
 <dlentry id="pinboard-download-control">
@@ -434,11 +104,12 @@ For more information, see the <a href="https://docs.thoughtspot.com/visual-embed
 
 <dlentry id="consumption-based-pricing">
 <dt>Consumption-based pricing</dt>
-<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">Consumption-based pricing</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
+<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
 </dlentry>
 </dl>
 
-<h2><a id="2021-december"></a>ThoughtSpot 6 Cloud December Release (ts6.dec.cl)</h2>
+{: id="2020-december"}
+## ThoughtSpot 6 Cloud December Release (ts6.dec.cl)
 
 <h3>Scriptability</h3>
 There are several new features for Scriptability:
@@ -464,7 +135,8 @@ Starting in the December Cloud release, ThoughtSpot supports the following new l
 
 To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>.
 
-<h2><a id="2021-october"></a>ThoughtSpot 6 Cloud October Release (ts6.oct.cl)</h2>
+{: id="2020-october"}
+## ThoughtSpot 6 Cloud October Release (ts6.oct.cl)
 
 <h3>New Home page</h3>
 

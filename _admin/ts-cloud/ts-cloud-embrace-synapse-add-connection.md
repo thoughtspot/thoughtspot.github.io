@@ -9,7 +9,7 @@ To connect to Synapse, follow these steps:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
    <!--![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"") -->
    <!--![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
@@ -25,9 +25,9 @@ To connect to Synapse, follow these steps:
    Refer to the [Synapse connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to Synapse, by doing the following:
-    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-    2. Enter your key and value information.
-    3. To add more keys and values, click the plus sign (+), and enter them.
+- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+- Enter your key and value information.
+- To add more keys and values, click the plus sign (+), and enter them.
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your Synapse data source. Key-value pairs are case-sensitive." %}
 
@@ -52,7 +52,7 @@ The connection you just created is a link to the external data source. If there 
 
 You can now perform a live query on the selected tables and columns of your connection. Because the selected tables and columns in your connection are linked, it may take a while to initially render the search results. This is because ThoughtSpot does not cache linked data. With linked data, ThoughtSpot queries the external database directly, which is slower than querying data that is stored in ThoughtSpot's database.
 
-You can modify a Snowflake connection in the following ways:
+You can modify an Embrace Snowflake connection in the following ways:
 
 - [Edit a Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-edit-connection.html)
 - [Remap a Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-remap-connection.html)

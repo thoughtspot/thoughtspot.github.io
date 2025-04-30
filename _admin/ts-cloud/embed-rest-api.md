@@ -1,18 +1,18 @@
 ---
 title: [Embed data using REST APIs]
-last_updated: 4/3/2021
-summary: "You can use the REST APIs to programmatically query pinboard and visualization data from the ThoughtSpot application."
+last_updated: 3/3/2021
+summary: "You can use the REST APIs to programmatically fetch pinboard and visualization data from the ThoughtSpot application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-To query ThoughtSpot objects and embed them in a web page, portal, or application, you can use the data REST APIs. The data REST APIs return data as JSON (JavaScript Object Notation) objects.
+To get data out from ThoughtSpot objects and embed it in a web page, portal, or application, you can use the data APIs. The data APIs return data as JSON (JavaScript Object Notation) objects.
 
 ## Embed pinboard or visualization data
 
-To construct the URL for making a REST API call for embedding a pinboard or visualization:
+To embed a pinboard or visualization, construct the URL for the REST API call:
 
-1.  Log in to ThoughtSpot.
+1.  Log in to ThoughtSpot from a browser.
 
 2.  Navigate to the pinboard from which you want to get data.
 
@@ -20,10 +20,13 @@ To construct the URL for making a REST API call for embedding a pinboard or visu
 
     To embed a pinboard, click the ellipses icon![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png), and then select **Copy embed link**.
 
-    To embed a visualization:                   
-      a.  Navigate to the table or chart.                              
-      b.  Click the ellipses icon![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png) in the upper right corner of the table or chart.                                        
-      c.  Click **Copy embed link** icon.
+    To embed a visualization:
+
+      1.  Navigate to the table or chart
+
+      2.  Click the ellipses icon![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png) in the upper right corner of the table or chart.
+
+      3.  Click **Copy embed link** icon.
 
 4.  Copy the ID number from the link.
     Paste it somewhere so that you can use it later to construct the URL for the REST API call.
@@ -34,23 +37,23 @@ To construct the URL for making a REST API call for embedding a pinboard or visu
 
     For visualizations (table or chart), copy the IDs that appear after `viz/`.
 
-    ![copy link viz pinboard part]({{ site.baseurl }}/images/copy_link_viz_pinboard_part.png)
+    ![copy link viz pinboard part](./images/copy_link_viz_pinboard_part.png)
 
 5.  Construct the URL.
 
     For a pinboard, the URL is as follows:
 
-        https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>
+        https://<base-uri>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>
 
     For a visualization, the URL is as follows:
 
-        https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>&vizid=%5B<visualization_id>%5D
+        https://<base-uri>/callosum/v1/tspublic/v1/pinboarddata?id=<pinboard_id>&vizid=%5B<visualization_id>%5D
 
 6.  To apply filters to the data, use runtime filters.
 
     For example, to sort values equal to `red` in the `Color` column for a visualization in a pinboard, you can pass the runtime filter in the URL query parameters as shown here:
 
-        https://<ThoughtSpot-host>/callosum/v1/tspublic/v1/pinboarddata
+        http://<base-uri>/callosum/v1/tspublic/v1/pinboarddata
         ?id=<pinboard_id>&vizid=%5B<visualization_id>%5D
         &col1=color&op1=EQ&val1=red
 

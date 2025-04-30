@@ -1,5 +1,5 @@
 ---
-title: ["Search Overview"]
+title: ["Searches Overview"]
 last_updated: 11/18/2020
 summary: "With ThoughtSpot, apply intuitive and powerful relational search to get insights from existing Answers and Pinboards, or directly from data sources."
 sidebar: mydoc_sidebar

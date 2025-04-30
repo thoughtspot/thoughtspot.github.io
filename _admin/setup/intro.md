@@ -18,7 +18,7 @@ some common problems, finding additional resources, and contacting ThoughtSpot.
 {: id="display-current-config"}
 ## Display your current configuration
 
-1. Log in to the shell as a ThoughtSpot administrator.
+1. Log into the shell as an administrator.
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```

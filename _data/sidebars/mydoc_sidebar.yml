@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts7.jun.cl
+  docversion: ts7.mar.cl
   # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
@@ -26,26 +26,17 @@ entries:
     - title: Release notes
       url:  /release/notes.html
       output: web
-    - title: Get started with Free Trial
-      url:  /release/ts-cloud-getting-started-free-trial.html
-      output: web
     - title: Free Trial
       url:  /release/free-trial.html
       output: web
     - title: Accessibility
-      url:  /release/accessibility.html
-      output: web
-    - title: Deprecation Announcements
-      url:  /release/deprecation.html
+      url:  /release/accesibility.html
       output: web
   - sectiontitle: Getting started
     output: web,ugBk
     sectionitems:
-    - title: Getting Started
-      url:  /admin/ts-cloud/ts-cloud-getting-started.html
-      output: web
-    - title: Requirements and support
-      url:  /admin/ts-cloud/ts-cloud-requirements-support.html
+    - title: Getting started
+      url:  /admin/ts-cloud/cloud-getting-started.html
       output: web
     - title: User onboarding experience
       url: /end-user/onboarding/user-onboarding-experience.html
@@ -62,8 +53,8 @@ entries:
     - title: Understanding privileges
       url: /end-user/introduction/about-privileges-end-user.html
       output: web,ugBk
-    - title: Use tags to organize
-      url: /end-user/tags.html
+    - title: Use stickers to organize
+      url: /end-user/stickers.html
       output: web,ugBk
   - sectiontitle: ThoughtSpot for ...
     output: web,ugBk
@@ -85,9 +76,6 @@ entries:
         output: web
       - title: Search Data
         url: /end-user/search/search-data.html
-        output: web
-      - title: New Answer experience
-        url: /admin/ts-cloud/new-answer-experience.html
         output: web
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
@@ -122,14 +110,8 @@ entries:
       - title: Join tables
         url: /admin/ts-cloud/tables-join.html
         output: web
-      - title: Create worksheets in Setup
-        url: /admin/ts-cloud/worksheet-create-setup.html
-        output: web
-      - title: Create worksheets
+      - title: Create Worksheets
         url: /admin/ts-cloud/worksheet-create.html
-        output: web
-      - title: Search Assist Coach
-        url: /admin/ts-cloud/search-assist-coach.html
         output: web
       - title: Visualize Search Results
         url: /admin/ts-cloud/visualize-search.html
@@ -191,9 +173,6 @@ entries:
         - title: Delete connection
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-connection.html
           output: web
-        - title: Configure OAuth
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
-          output: web
         - title: Best practices
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
           output: web
@@ -203,12 +182,6 @@ entries:
         - title: Passthrough functions
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html
           output: web
-        - title: Snowflake Partner Connect Overview
-          url: /data-integrate/embrace/embrace-snowflake-partner.html
-          output: web,embraceGd
-        - title: Snowflake Partner Connect Tutorials
-          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
-          output: web,embraceGd
       - levelThreeTitle: Connect to Amazon Redshift
         output: web
         levelThreeItems:
@@ -242,9 +215,6 @@ entries:
         - title: Overview
           url: /admin/ts-cloud/ts-cloud-embrace-gbq.html
           output: web
-        - title: Prerequisites
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-prerequisites.html
-          output: web
         - title: Add a connection
           url: /admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html
           output: web
@@ -265,9 +235,6 @@ entries:
           output: web
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
-          output: web
-        - title: Passthrough functions
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-passthrough.html
           output: web
       - levelThreeTitle: Connect to Azure Synapse
         output: web
@@ -296,156 +263,6 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html
           output: web
-      - levelThreeTitle: Connect to Oracle ADW
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-adw.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Starburst
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Databricks
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Teradata
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to SAP HANA
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-hana.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html
-          output: web
-      - levelThreeTitle: Custom calendar
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal.html
-          output: web
-        - title: Create a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html
-          output: web
-        - title: Update a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html
-          output: web
-        - title: Delete a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html
-          output: web
     - levelTwoTitle: IT and Ops
       output: web
       levelTwoItems:
@@ -464,9 +281,6 @@ entries:
       - title: Managing authentication with SAML
         url: /admin/ts-cloud/authentication-integration.html
         output: web
-      - title: Sync users and groups from LDAP
-        url: /admin/setup/sync-users-and-groups-from-ldap.html
-        output: web
       - title: Search and SpotIQ settings
         url: /admin/ts-cloud/search-spotiq-settings.html
         output: web
@@ -482,20 +296,11 @@ entries:
       - title: Help customization
         url: /admin/ts-cloud/customize-help.html
         output: web
-      - title: Enable a PrivateLink for Snowflake
-        url: /admin/ts-cloud/private-link-snowflake.html
-        output: web
-      - title: Enable a PrivateLink for Redshift
-        url: /admin/ts-cloud/private-link-redshift.html
-        output: web
       - title: Performance tracking Pinboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
       - title: User adoption Pinboard
         url: /admin/ts-cloud/user-adoption.html
-        output: web
-      - title: Object usage Pinboard
-        url: /admin/ts-cloud/object-usage.html
         output: web
       - title: ThoughtSpot use agreement
         url: /admin/ts-cloud/use-agreement.html
@@ -506,13 +311,13 @@ entries:
       - title: For Developers
         url: /admin/ts-cloud/developer-user.html
         output: web
-      - title: Embedded Analytics
+      - title: ThoughtSpot embedding solution
         url: /admin/ts-cloud/intro-embed.html
         output: web
       - title: Integration guidelines
         url: /admin/ts-cloud/integration-overview.html
         output: web
-      - title: ThoughtSpot Developer portal
+      - title: ThoughtSpot SpotDev portal
         url: /admin/ts-cloud/spotdev-portal.html
         output: web
       - title: Security settings for embedding
@@ -536,13 +341,13 @@ entries:
         - title: Get started with Visual Embed SDK
           url: /admin/ts-cloud/get-started-sdk.html
           output: web
-        - title: Embed search
+        - title: Embed ThoughtSpot search
           url: /admin/ts-cloud/embed-search.html
           output: web
-        - title: Embed a pinboard
+        - title: Embed pinboards
           url: /admin/ts-cloud/embed-pinboard-sdk.html
           output: web
-        - title: Embed a visualization
+        - title: Embed visualizations
           url: /admin/ts-cloud/embed-a-visualization.html
           output: web
         - title: Embed full application
@@ -557,11 +362,14 @@ entries:
         - title: Get started with REST APIs
           url: /admin/ts-cloud/rest-api-getstarted.html
           output: web
-        - title: Make a REST API call
+        - title: Calling a REST API
           url: /admin/ts-cloud/calling-rest-api.html
           output: web
         - title: Embed data using REST APIs
           url: /admin/ts-cloud/embed-rest-api.html
+          output: web
+        - title: Push data to an external application
+          url: /admin/ts-cloud/push-data-to-external-app.html
           output: web
         - title: API response pagination
           url: /admin/ts-cloud/response-pagination.html
@@ -652,6 +460,9 @@ entries:
         output: web,ugBk
       - title: Using the in keyword for nested searches
         url: /complex-search/in-keyword-searches.html
+        output: web,ugBk
+      - title: Proximity searches "near" and "farther than"
+        url: /admin/features/proximity-search.html
         output: web,ugBk
     - levelTwoTitle: Work with filters
       output: web,ugBk
@@ -782,9 +593,6 @@ entries:
       - title: Hide and show values
         url: /end-user/search/hide-and-show-values.html
         output: web,ugBk
-      - title: Charts with a very large number of data values
-        url: /end-user/search/high-cardinality.html
-        output: web,ugBk
       - title: Change chart colors
         url: /end-user/search/change-chart-colors.html
         output: web,ugBk
@@ -838,9 +646,6 @@ entries:
         output: web,ugBk
       - title: Filtered aggregation functions
         url: /complex-search/filtered-agg-forms.html
-        output: web,ugBk
-      - title: Aggregate filters
-        url: /complex-search/aggregation-filter.html
         output: web,ugBk
       - title: Conversion functions
         url: /complex-search/conversion-formulas.html
@@ -917,9 +722,6 @@ entries:
     - title: "SpotIQ analysis"
       url: /spotiq/customization.html
       output: web,ugBk
-#    - title: "Monitor time series charts"
-#      url: /admin/ts-cloud/monitor.html
-#      output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
 #      output: web,ugBk
@@ -930,19 +732,19 @@ entries:
     output: web,ugBk
     sectionitems:
     - title: Overview
-      url: admin/mobile/use-mobile.html
+      url: /admin/mobile/use-mobile.html
       output: web,ugBk
     - title: Deploy
-      url: admin/mobile/deploy-mobile.html
+      url: /admin/mobile/deploy-mobile.html
       output: web,ugBk
     - title: Install and set up
-      url: admin/mobile/install-mobile.html
+      url: /admin/mobile/install-mobile.html
       output: web,ugBk
     - title: FAQ
-      url: admin/mobile/faq-mobile.html
+      url: /admin/mobile/faq-mobile.html
       output: web,ugBk
     - title: Release notes
-      url: admin/mobile/notes-mobile.html
+      url: /admin/mobile/notes-mobile.html
       output: web,ugBk
   - sectiontitle: Work with data
     output: web,ugBk
@@ -997,9 +799,6 @@ entries:
     sectionitems:
     - title: Introduction to administration
       url: /admin/intro.html
-      output: web,admBk
-    - title: Support Handbook
-      url: /admin/ts-cloud/ts-cloud-support-handbook.html
       output: web,admBk
 #    - levelTwoTitle: Understand the architecture
 #      output: web,admBk
@@ -1184,12 +983,12 @@ entries:
       - title: Overview of security features
         url: /admin/data-security/about-security.html
         output: web,admBk
-      - levelThreeTitle: System security
-        output: web,admBk
-        levelThreeItems:
-        - title: Collect security logs
-          url: /admin/data-security/audit-logs.html
-          output: web,admBk
+#      - levelThreeTitle: System security
+#        output: web,admBk
+#        levelThreeItems:
+#        - title: Tools and processes
+#          url: /admin/data-security/audit-logs.html
+#          output: web,admBk
 #        - title: About third-party software
 #          url: /admin/data-security/about-secure-monitor-sw.html
 #          output: web,admBk
@@ -1328,15 +1127,6 @@ entries:
         - title: Add or manage experts
           url: /admin/data-modeling/add-expert.html
           output: web,admBk
-        - title: Exclude from SpotIQ analyses
-          url: /admin/data-modeling/spotiq-data-model-preferences.html
-          output: web,admBk
-        - title: Chasm traps
-          url: /admin/loading/chasm-trap.html
-          output: web,admBk
-        - title: Data types
-          url: /admin/loading/datatypes.html
-          output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
         levelThreeItems:
@@ -1349,8 +1139,8 @@ entries:
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
-        - title: Use tags
-          url: /admin/data-modeling/tags.html
+        - title: Use stickers
+          url: /admin/data-modeling/stickers-concept.html
           output: web,admBk
     - levelTwoTitle: Simplify search with worksheets
       output: web,admBk
@@ -1490,9 +1280,21 @@ entries:
     - title: Consumption-based pricing
       url: /admin/ts-cloud/consumption-pricing.html
       output: web,admBk
+    - title: Consumption pricing FAQ
+      url: /admin/ts-cloud/consumption-pricing-faq.html
+      output: web,admBk
     - title: Contact ThoughtSpot Support
       url: /admin/misc/contact.html
       output: web,admBk
+  - sectiontitle: Embrace Snowflake Partner Connect
+    output: web,embraceGd
+    sectionitems:
+    - title: Overview
+      url: /data-integrate/embrace/embrace-snowflake-partner.html
+      output: web,embraceGd
+    - title: Tutorials
+      url: /data-integrate/embrace/embrace-snowflake-tutorial.html
+      output: web,embraceGd
   - sectiontitle: Reference
     output: web,refGd
     sectionitems:
@@ -1532,26 +1334,20 @@ entries:
     - levelTwoTitle: API reference
       output: web,refGd
       levelTwoItems:
-      - title: Rest API reference
-        url: /reference/api/rest-api-reference.html
+      - title: Public API reference
+        url: /reference/api/public-api-reference.html
         output: web,refGd
       - title: Pinboard Data API
         url: /reference/api/pinboarddata.html
         output: web,refGd
-      - title: Pinboard Export API
-        url: /reference/api/pinboard-export-api.html
+      - title: Pinboard Download API
+        url: /reference/api/pinboard-download-api.html
         output: web,refGd
       - title: Metadata API
         url: /reference/api/metadata-api.html
         output: web,refGd
-      - title: TML API
-        url: /reference/api/tml-api.html
-        output: web,refGd
       - title: Session API
         url: /reference/api/session-api.html
-        output: web,refGd
-      - title: Security API
-        url: /reference/api/security-api.html
         output: web,refGd
       - title: User API
         url: /reference/api/user-api.html
@@ -1561,6 +1357,9 @@ entries:
         output: web,refGd
       - title: Search Data API
         url: /reference/api/search-data-api.html
+        output: web,refGd
+      - title: Using the JavaScript API
+        url: /reference/api/about-JS-api.html
         output: web,refGd
     - title: Glossary
       url: /reference/glossary.html

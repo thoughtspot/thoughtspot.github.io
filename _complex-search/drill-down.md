@@ -1,6 +1,6 @@
 ---
 title: [Drill down into your data]
-last_updated: 4/5/2021
+last_updated: 1/22/2020
 summary: "Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,13 +28,10 @@ This limits the data you are exploring to that particular data point or chart ob
 
     For example, if you choose to drill down on *dairy* by *product full name*, the following chart appears, showing dairy sales by product:
 
-    ![Dairy sales by diet type]({{ site.baseurl }}/images/drilldown-example-no-back-button.png "Dairy sales by diet type")
+    ![Dairy sales by diet type]({{ site.baseurl }}/images/drilldown-example.png "Dairy sales by diet type")
+    <!--{% include image.html file="drilldown-example.png" title="Dairy sales by diet type" alt="Drill down on the dairy column and select diet type to see a chart showing dairy sales by diet type" caption="Dairy sales by diet type" %}-->
 
-    <!-- back button functionality removed for now (6/23/2021) replace image above with drilldown-example
-    To go back one step at a time, use the in-product back button to the left of the search or Answer name. If the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.htm), use your internet browser's back button.-->
-
-    Use your internet browser’s back button to go back one step at a time.
-
+    Use your internet browser's back button to go back one step at a time.
     {% include note.html content="Your browser's back button only goes back one step on unsaved Answers. If you are working with a saved Answer, clicking your browser's back button prompts you to save your unsaved changes, and does not take you back to the previous step in your Drill down." %}
 
     You can continue to drill down in the data until you run out of relevant dimensions.

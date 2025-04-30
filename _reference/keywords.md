@@ -68,6 +68,10 @@ Also, see the topic on how to set [locale preferences in your user profile]({{ s
 
 {% include content/keywords-comparative.md %}
 
+## Location
+
+{% include content/keywords-location.md %}
+
 ## Period
 
 {% include content/keywords-period.md %}
