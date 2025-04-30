@@ -1,0 +1,11 @@
+{
+  "name": "generate-docs-snippets",
+  "version": "1.0.0",
+  "description": "Generate snippets from docs files",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build-snippets.js 6.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
