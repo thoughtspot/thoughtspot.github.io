@@ -241,7 +241,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (= 203)
+  github-pages
+  jekyll-redirect-from
+  jekyll-seo-tag
+  jekyll-sitemap
 
 BUNDLED WITH
    1.17.2
