@@ -14,7 +14,7 @@ In addition, the size picker at the bottom of a visualization's three-dot Action
 
 1. Click **Pinboards**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 2. On the pinboards page, click the pinboard you would like to edit.
 3. Drag and drop your visualizations on the layout grid to reorder your pinboard. Resize a visualization by choosing a predetermined size under the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the visualization.
@@ -47,7 +47,7 @@ To delete a visualization:
 
 1. Click **Pinboards**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard that contains the visualization you would like to delete.
 3. In the upper-right corner of the visualization, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Delete**.
@@ -64,7 +64,7 @@ To edit a copy of a visualization:
 
 1. Click **Pinboards**, on the top navigation bar.
 
-   ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+   ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard that contains the visualization you would like to edit a copy of.
 

@@ -6,13 +6,13 @@ summary: "This procedure shows how to use the Embedded Search API to get data fr
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The Embedded Search API enables searching directly from an external application or web page to pull data from ThoughtSpot. This feature was introduced in ThoughtSpot 5.0. When using it, you can access data stored in ThoughtSpot directly. You do not need to save a search result to a pinboard and then reference it using the visualization's URL.
+The Embedded Search API enables searching directly from an external application or web page to pull data from ThoughtSpot. This feature was introduced in ThoughtSpot 5.0. When using it, you can access data stored in ThoughtSpot directly. You do not have to save a search result to a pinboard and then reference it using the visualization's URL.
 
 This embedded search is useful when you want to allow an application to pull data directly from ThoughtSpot in an ad hoc fashion.
 
 To have the Embedded Search API functionality turned on, contact ThoughtSpot Support.
 
-Data retrieved using the Embedded Search API is returned as JSON (JavaScript Object Notation). You will need to parse the JSON to get the data values you need, generally using JavaScript in the receiving application.
+Data retrieved using the Embedded Search API is returned as JSON (JavaScript Object Notation). You must parse the JSON to get the data values you need, generally using JavaScript in the receiving application.
 
 Use this procedure to construct the call to the Embedded Search API:
 

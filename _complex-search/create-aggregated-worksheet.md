@@ -24,6 +24,6 @@ and **Save as view**.
 
      ![]({{ site.baseurl }}/images/save_view_dialog.png "Name the View")
 
-5. [Link]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html) your view to any other data sources you'll need or [define joins]({{ site.baseurl }}/admin/loading/constraints.html).
+5. [Link]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html) your view to any other data source, or [define joins]({{ site.baseurl }}/admin/loading/constraints.html).
 
 At this point the view has been saved, but you may also want to [materialize the view]({{ site.baseurl }}/admin/loading/materialized-views.html), to improve its performance when searching.

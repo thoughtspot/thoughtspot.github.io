@@ -9,7 +9,7 @@ You can remove a visualization from your pinboard. To delete a visualization:
 
 1. Click **Pinboards**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to edit.
 3. Click **Delete** under the dropdown menu of the visualization you would like to delete.

@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can add and edit fonts to customize the appearance of your charts and tables. Be careful though, since the interface may become unreadable depending on how you change the default font, font weight, or font style. It is therefore suggested that you use the default font settings.
 
-If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following the steps below:
+If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following these steps:
 
 1. Click the **Add New** button under **Chart Visualization Fonts**.
 

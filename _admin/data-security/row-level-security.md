@@ -16,7 +16,7 @@ under RLS rules.
 ## Worksheet queries and RLS
 
 You cannot set RLS rules on worksheets, only on tables. However, administrators
-can disable RLS on worksheets that are derived from tables with RLS rules. Once
+can disable RLS on worksheets that are derived from tables with RLS rules. After
 RLS rules are disabled, users with access to the worksheet can see all its data.
 
 By default, worksheet queries only take into account RLS rules on tables whose

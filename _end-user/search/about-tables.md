@@ -13,7 +13,7 @@ or measure. When you choose to display your answer as a table, ThoughtSpot will
 create the columns for you and any relevant headlines.
 
 Sometimes when you view a table, the results will be aggregated (combined). For
-example, if you only type "revenue", you'll see the total sum of all the revenue
+example, if you only type "revenue", you can see the total sum of all the revenue
 the table contains as one combined number. If you include the keyword `monthly`,
 the results will be aggregated by month. You can rearrange the column order of
 your table among other search actions.
@@ -75,7 +75,7 @@ To add a headline to a pinboard, hover over the headline and click the **Pin** i
 
 ### Table aggregate headline
 
- The Table Aggregate headline option is available when an aggregate function is used either through a formula or a search bar query like average of a measure. It recalculates the function for the entire table. In such cases, Table Aggregate is shown by default in a headline below the table, instead of the “Avg” option, which does a second level of aggregation on top of the existing aggregation.
+ The Table Aggregate headline option is available when an aggregate function is used either through a formula or a search bar query like average of a measure. It recalculates the function for the entire table. In such cases, Table Aggregate is shown by default in a headline under the table, instead of the “Avg” option, which does a second level of aggregation on top of the existing aggregation.
 
  In the following example, the table aggregate is shown as a result of the Average Profit formula `sum ( profit ) / count ( ship mode )` which divides the total profit of each ship mode by the sum total count for that ship mode. Table Aggregate, recalculates that function for the entire table taking the sum total profits of all ship modes and dividing it by the sum total count of all ship modes, providing a table aggregate average profit of 181. This a more useful result compared to the Avg headline option which would simply sum the the average profit for all ship modes and divide it by the number of ship modes (3), providing an average of 187.
 

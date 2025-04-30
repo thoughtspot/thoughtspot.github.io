@@ -20,7 +20,7 @@ You can create a backup using one of three modes, full, lightweight or dataless.
 
 Full backups are entire backups of the cluster with all data, whether loaded
 from the web interface or from `tsload`. This is the best mode for restoring a
-cluster and all your data. Once a `FULL` backup is created, you can move them
+cluster and all your data. After a `FULL` backup is created, you can move them
 between clusters, even if the cluster configuration is different. Full backups
 can be as large as 20 GB in addition to the 5 GB of additional files. Some
 installations can exceed these limits, this is why it is important to test your
@@ -56,10 +56,10 @@ Lightweight backups contain everything that makes up a cluster so they contain t
 
 
 Data loaded through ThoughtSpot Loader (`tsload`), ODBC/JDBC drivers, and Data
-Connect is excluded. The expectation is that data loaded via `tsload` is from
+Connect is excluded. The expectation is that data loaded by `tsload` is from
 external sources and so can be re-loaded after the cluster is restored. An
 exception is if these mechanisms were used to load data into tables that were
-first created through CSV import (that is, a user first loaded the tables via
+first created through CSV import (that is, a user first loaded the tables using
 the GUI). In this case, the data, like the tables they were loaded into, are
 saved.
 

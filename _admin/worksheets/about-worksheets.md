@@ -91,7 +91,7 @@ To add the sources to the worksheet:
 
     3. To add multiple columns, Ctl+click each column you want to add and click **+ Add Columns**.
 
-    Note that once you add a column, non-related tables (i.e. those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
+    Note that after you add a column, non-related tables (those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
 
 8.  (Optional) [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 

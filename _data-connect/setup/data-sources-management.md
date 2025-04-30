@@ -10,7 +10,7 @@ You can manage your new data sources by clicking on the name of your source on t
 
  ![]({{ site.baseurl }}/images/data_sources_management_view.png "Data sources management view")
 
-Once you have selected a data source, you have the option to perform a number of editing and maintenance tasks.
+After selecting a data source, you have the option to perform a number of editing and maintenance tasks.
 
 ## Schedule, edit, and refresh
 

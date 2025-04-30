@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you use **Ask an expert** to get help, you'll be able to view the answer once the expert responds.
+When you use **Ask an expert** to get help, you can view the answer after the expert responds.
 
 To view the answer:
 

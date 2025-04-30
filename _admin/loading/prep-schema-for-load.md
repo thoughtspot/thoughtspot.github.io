@@ -11,7 +11,7 @@ To perform administrative tasks directly in the database, you will use the Thoug
 
 ## Connect with TQL
 
-Before connecting with TQL, you will need:
+Before connecting with TQL, you need:
 
 -   Access to your ThoughtSpot instance Linux shell from a client machine.
 -   The administrator OS login.

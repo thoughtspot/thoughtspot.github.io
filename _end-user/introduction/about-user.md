@@ -10,12 +10,7 @@ To view the user actions, click your user icon on the top right corner of the pa
 
  ![]({{ site.baseurl }}/images/user_icon.png "User icon")
 
-Click **Profile** to go to your profile preference page, where you can change
-your icon, password, and locale preferences.  
-
-## Language and data format settings
-
-{% include content/set_locale.md %}
+Click **Profile** to navigate to your profile , where you can change your icon, password, email, locale, and other  preferences.  
 
 ## How other users see you
 
@@ -24,6 +19,41 @@ You can change your picture by clicking **Upload Picture**. The system accepts
 
  ![]({{ site.baseurl }}/images/upload_picture.png "Update my picture")
 
-## Signing out
+## Language and data format settings ##
 
-Click **Profile > Sign out** to log out of ThoughtSpot, and return to the sign in page.
+Under **Preferences**, see the **Language** option to set the language.
+
+![]({{ site.baseurl }}/images/profile-locale.png "Specify language")
+
+{% include content/set_locale.md %}
+
+[## Email Notifications##](#email-notifications)
+Under **Preferences**, see the **Notifications** option.
+
+Select **Email me sharing notifications** to receive emails whenever another user shares pinboards with you.
+
+![]({{ site.baseurl }}/images/profile-email-notifications.png "Email sharing notifications")
+
+[## Revisit Onboarding ##](#revisit-onboarding)
+
+When you are relatively new to using ThoughtSpot, we help you to become productive faster.
+
+Whenever you need a refresh, navigate to **My Profile*. Under **Preferences**, see the **New user onboarding** option. Click **Revisit**, and ThoughSpot guides you through onboarding again.
+
+![]({{ site.baseurl }}/images/onboarding-revisit.png "Revisit onboarding")
+
+
+[## Change Password ##](#change-password)
+
+When you need to change your password, navigate to **My Profile**, and under **Preferences** enter the following information:
+  - Current Password
+  - New Password
+  - Confirm Password
+
+Click **Update**.
+
+  ![]({{ site.baseurl }}/images/update-password.png "Update password")
+
+## Signing out ##
+
+Click **Profile > Sign out** to log out of ThoughtSpot, and return to the signin page.

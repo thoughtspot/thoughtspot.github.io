@@ -21,7 +21,7 @@ modeling controls how data is displayed in search and their resulting answers.
 
 ## Data loading formats through tsload
 
-When loading via the `tsload` command you must specify `date` and `timestamp`
+When loading through the `tsload` command you must specify `date` and `timestamp`
 formats using the format specifications defined in the [`strptime` library function](http://man7.org/linux/man-pages/man3/strptime.3.html). Data is
 imported based on the timezone of the node from which `tsload` is run.
 
@@ -33,7 +33,7 @@ translates to `yearmonthday hour:minute:second`, for example, `Dec 30th, 2001
 
 ## Data modeling formats for browser data upload
 
-These date and time formats are supported in a CSV file when uploading via the
+These date and time formats are supported in a CSV file when uploading through the
 browser. You cannot specify the date format; ThoughtSpot will pick the format
 that fits your data best:
 

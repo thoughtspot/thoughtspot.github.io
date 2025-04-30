@@ -18,9 +18,9 @@ After creating a view and linking it to related data, you're ready to create you
 
     If your search shows no data found or doesn't look right to you, it is possible that one of the links between your sources was made on the incorrect column. Check the relationships you created and try linking using a different column, to see if that gives the expected search results.
 
-4. Once you have the expected answer, you can create a worksheet to make it easier for you and other people to use. To do this, click **Data**.
+4. When you have the expected answer, you can create a worksheet to make it easier for you and other people to use. To do this, click **Data**.
 
-5. Click the ellipses icon 
+5. Click the ellipses icon
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 and select **Create worksheet**.
 

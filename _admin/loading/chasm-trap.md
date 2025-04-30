@@ -64,9 +64,9 @@ counting.
 
 There are still just a few things to look out for when using a schema that contains chasm traps:
 
--   The tables should be joined to the dimension table via an equi-join (i.e. a primary key/foreign key relationship). They cannot be joined using a range of values.
+-   The tables should be joined to the dimension table by an equi-join (a primary key/foreign key relationship). They cannot be joined using a range of values.
 -   Review the column setting called [Attribution Dimension]({{ site.baseurl }}/admin/data-modeling/attributable-dimension.html#). You may need to change this setting if some of the columns in the shared dimension table should not be used for attribution when combining fact tables.
--   Tables that will be joined across a chasm trap do not need to be co-sharded. They will be joined appropriately automatically in the most efficient way.
+-   Tables that will be joined across a chasm trap do not have to be co-sharded. They will be joined appropriately automatically in the most efficient way.
 
 ## Chasm trap limitations
 

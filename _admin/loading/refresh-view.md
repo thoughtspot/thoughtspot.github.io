@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Materialized views can get out of sync with their underlying data. If the status of a view is **Stale**, you'll need to refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date.
+Materialized views can get out of sync with their underlying data. If the status of a view is **Stale**, you must refresh the view manually, so that it is in sync with the underlying table. Until you refresh it, the view will still be searchable, but the data will not be up-to-date.
 
 To refresh a view manually:
 

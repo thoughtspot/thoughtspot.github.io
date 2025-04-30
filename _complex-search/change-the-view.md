@@ -51,13 +51,13 @@ ThoughtSpot chooses a default date bucket for you when you search. This default
 takes the entire search result into account. For example, if your search
 includes last month, dates are bucketed daily instead of monthly.
 
-On a table view, you use the date bucket drop-down, below the column header. On a
-chart, you can change this via the axis label.
+* In a table view, use the date bucket drop-down, under the column header.
+* On a chart, you can change the change the axis label.
 
 ![]({{ site.baseurl }}/images/bucket_change.png "Chooser location")
 
 
-The bucket values are a subset of date and time period keywords. To change the date bucketing:
+The bucket values are a subset of date and time-period keywords. To change the date bucketing, follow these steps:
 
 1. Go to the table or chart you want to change.
 2. Locate the column or axis value with the date value you want to change.

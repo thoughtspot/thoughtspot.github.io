@@ -6,7 +6,7 @@ summary: "How ThoughtSpot learns from your searches and helps you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Search suggestions include complete recent searches that are similar to the search you are constructing. 
+Search suggestions include complete recent searches that are similar to the search you are constructing.
 
  ![]({{ site.baseurl }}/images/search_history.png "Search suggestions example")
 
@@ -32,7 +32,7 @@ As you type in the search bar, you are given search suggestions that include
 recent searches. This makes it easier to learn what you can do with ThoughtSpot.
 In addition to displaying your own recent searches, the search bar also learns
 from searches made by other people. This should provide you with interesting
-searches that you may not have been aware of. You'll see recent searches in a
+searches that you may not have been aware of. You can see recent searches in a
 separate section of search suggestions, as recent searches appear higher in
 suggestions than other terms.
 

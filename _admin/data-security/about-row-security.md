@@ -15,7 +15,7 @@ Users see only the data they are permitted to see.
 
 ## How does RLS impact user interactions?
 
-The security rules apply to objects shared with users individually or via groups
+The security rules apply to objects shared with users individually or through groups
 they are a member of.  The rules restrict the visible data when users:
 
 * view a table

@@ -38,7 +38,7 @@ To apply conditional formatting to a table:
 
      ![]({{ site.baseurl }}/images/conditional_formatting_table_4.png "Table with conditional formatting")
 
-Note: If you change to a chart type, you will need to apply conditional formatting again. Conditional formatting is tied to the specific visualization.
+Note: If you change to a chart type, you must apply conditional formatting again. Conditional formatting is tied to the specific visualization.
 
 ## Apply conditional formatting to a chart
 
@@ -59,4 +59,4 @@ To apply conditional formatting to a chart:
 
      ![]({{ site.baseurl }}/images/conditional_formatting_chart.png "Chart with conditional formatting")
 
-Note: If you change the chart type, you will need to apply conditional formatting again. It is tied to the specific visualization.
+Note: If you change the chart type, you must apply conditional formatting again. It is tied to the specific visualization.

@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 Given the ability to paginate, you can quickly populate tables and make new REST calls every time you go to the next page of the data on the table. There is significant load time if you want to populate the data table with many rows (greater than 1000) from the Data REST API.
 
-To paginate results in your API response, you'll need to add new parameters to the query:
+To paginate results in your API response, you must add new parameters to the query:
 
 `PageSize` determines the number of rows to be included.
 

@@ -50,7 +50,7 @@ Use this procedure to construct the URL you will use to call the Data REST API:
 
 6. If you want to apply any filters to the data that will be returned, apply [Runtime Filters]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#).
 
-7. Now your URL is complete, and you can use it to access the data directly via the HTTP POST method.
+7. Now your URL is complete, and you can use it to access the data directly through the HTTP POST method.
   The Data REST API returns the data formatted as JSON.
 
 8. Retrieve the data from the JSON and display it in your Web page, Web portal, or application.

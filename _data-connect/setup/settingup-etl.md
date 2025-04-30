@@ -5,7 +5,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ThoughtSpot team will assist you in the initial setup and configuration of ThoughtSpot Data Connect. You will need to provide the credentials for logging in to the various data sources you want to connect to.
+The ThoughtSpot team will assist you in the initial setup and configuration of ThoughtSpot Data Connect. You must provide the credentials for logging in to the various data sources you want to connect to.
 
 Your purchase of ThoughtSpot Data Connect includes the necessary credentials for connecting to Informatica. ThoughtSpot Support will supply the Informatica credentials, if you do not already have an account. You can change the Informatica credentials later, if you would like. You need these credentials when issuing the command to enable ThoughtSpot Data Connect.
 
@@ -29,7 +29,7 @@ Enable ThoughtSpot Data Connect by completing the following steps:
     [--proxy_port <proxy_server_port>]
       ```
 
-    If you want to use HTTPS with your URL, you will need to use a signed certificate.
+    If you want to use HTTPS with your URL, you must use a signed certificate.
 
     The parameter `org_id` specifies the Informatica id of the organization
     (company). `org_id` shouldn't include the prefix `Org`. For example, if on

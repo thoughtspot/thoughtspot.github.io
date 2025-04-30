@@ -19,15 +19,15 @@ impact the dynamically calculated _usage based ranking (UBR)_,
 
 ## Example of Search suggestion behavior
 
-The example below illustrates how searching for `promotion_last_name t` causes
+The following example illustrates how searching for `promotion_last_name t` causes
 the system to suggest several ways of completing the `t` in the search:
 
 ![]({{ site.baseurl }}/images/index-type.png "Suggestions")
 
 The system is suggesting the synonym `type` (callout A) for a column in the
 `Promotion` table.  It is also suggesting a value of `theil` (callout B) for the
-`Promotion_Last Name` column. If you look in the **Data > Tables** page, you'll
-see there is a `type` synonym for the `Promotion_Type` column which is using
+`Promotion_Last Name` column. If you look in the **Data > Tables** page, you can
+see that there is a `type` synonym for the `Promotion_Type` column which is using
 default indexing.
 
 ![]({{ site.baseurl }}/images/index-row.png "Table Row")

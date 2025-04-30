@@ -1,7 +1,7 @@
 ---
 title: [Basic pinboard usage]
 keywords: tbd
-last_updated: tbd
+last_updated: 6/30/2019
 summary: "Create a new pinboard to group and manage related search results. Pinboards are the ThoughtSpot term for a dashboard."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,7 +19,7 @@ To create a pinboard:
 
 1. Click **Pinboards**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
 2. Click **+ New Pinboard** on the pinboards list page.
 
@@ -47,14 +47,12 @@ an answer to a pinboard:
 
 ## Download a pinboard
 
-You can download a pinboard as a PDF file, without having to download each
-visualization separately. Downloading a pinboard works just as it would when
-downloading an answer. To download a pinboard:
+You can download a pinboard as a PDF file, without having to download each visualization separately. Downloading a pinboard works just as it would when
+downloading an answer: simply click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Download as PDF**.
 
-*   Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Download as PDF**.
+     ![]({{ site.baseurl }}/images/pinboard-download-pdf.png "Download your pinboard")
 
-     ![]({{ site.baseurl }}/images/download_a_pinboard.png "Download your pinboard")
-
+For more details, see [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
 
 ## Details about a pinboard
 
@@ -79,3 +77,8 @@ This diagram displays active action areas on a pinboard.
 
 If you make a change to a pinboard, the system recognizes this and displays an alert message with a **Save
 changes** button at the top of the page. Click this button to make your changes permanent.
+
+## Related information
+
+[Download a pinboard as PDF]({{ site.baseurl }}/pinboards/download-pinboard-url.html)
+[Present a pinboard]({{ site.baseurl }}/pinboards/start-a-slideshow.html)

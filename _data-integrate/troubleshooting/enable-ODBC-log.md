@@ -52,9 +52,9 @@ To enable ODBC logs on Windows:
 8. Locate the log file that was generated, and send it to ThoughtSpot Support with a description of the problem.
 
 
-## Enable ODBC logs on a Linux or Solaris workstation
+## Enable ODBC logs on a Linux workstation
 
-To enable logging on Linux or Solaris, follow these instructions:
+To enable logging on Linux, follow these instructions:
 
 1. Navigate to the directory where you installed ODBC.
 2. Open the `odbc.ini` file in a text editor.
@@ -97,7 +97,7 @@ You may want to collect logs from the Simba service. Do the
 following to procedure on every ThoughtSpot node running the Simba service.
 
 1. SSH into the ThoughtSpot node.
-2. Edit the `/etc/thoughtspot/simba.ini` file.
+2. Edit the `/etc/thoughtspot/linux.ini` file.
 
     ```
     ...

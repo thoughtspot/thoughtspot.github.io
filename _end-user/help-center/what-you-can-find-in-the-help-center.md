@@ -67,7 +67,7 @@ From this dialog you can get to the following:
   </tr>
 </table>
 
-Along the bottom of the **Help** dialog you'll see a link to contact Support as
+Along the bottom of the **Help** dialog, you can see a link to contact Support as
 well as the version of ThoughtSpot you are using.
 
 ## Learn

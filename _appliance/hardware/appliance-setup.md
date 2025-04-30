@@ -26,7 +26,7 @@ To install and start the appliance and connect to your network:
     See the figure of the **Location of the power and UID buttons on the control panel** for the power button location.
 3. Connect the IPMI dedicated LAN port to a dedicated LAN for system management.
 4. Connect the data port(s) on the back of the appliance to your 10GbE network switch.
-    Only the one 10GbE port shown in the **Back of Node** figures below is active. Only one 10GbE port connection is needed.
+    Only the one 10GbE port shown in the following **Back of Node** figures is active. Only one 10GbE port connection is needed.
 
     ![]({{ site.baseurl }}/images/node_diagram_ivy_bridge.png "Ivy Bridge port to use for 10 GbE")
 
@@ -38,13 +38,13 @@ To install and start the appliance and connect to your network:
 
     Each node has its own power and UID buttons. Turning the system off using the power button removes the main power, but keeps standby power supplied to the system. Therefore, you must unplug the AC power cord from any external power source before servicing. The power button for each node has a built-in LED which will turn green when the power is on.
 
-    There is also a UID button, which is used to turn on or off the blue light function of the LED. Once the blue light is activated, the unit can be easily located in very large racks and server banks. A blue LED is also illuminated on the corresponding node, visible from the rear of the chassis.
+    There is also a UID button, which is used to turn on or off the blue light function of the LED. After the blue light is activated, the unit can be easily located in very large racks and server banks. A blue LED is also illuminated on the corresponding node, visible from the rear of the chassis.
 
 6. After the appliance has been turned on, verify that both LEDs (IPMI and data NICs) on each network card are lit.
 7. Connect a keyboard and monitor to each node in turn.
     You should see a login prompt on the screen. If you don't see one or the screen isn't responsive, press the key combination control, alt, and F2 on your keyboard, which should allow you to attempt to log in.
 8. Log in as username admin, using the default password.
-9. Once logged in, run the following commands and capture the output at every stage:
+9. Run the following commands and capture the output at every stage:
 
     ```
     sudo ipmitool lan print 1

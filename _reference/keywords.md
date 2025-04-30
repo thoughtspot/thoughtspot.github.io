@@ -2,6 +2,7 @@
 title: [Keyword reference]
 tags: [keywords]
 keywords: tbd
+toc: true
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

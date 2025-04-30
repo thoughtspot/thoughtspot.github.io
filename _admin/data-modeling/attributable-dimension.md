@@ -55,7 +55,7 @@ expected outcome.
 
 You cannot configure this setting in the model file. You can only configure it
 on a table-by-table basis. To designate a column as not being an attribution
-dimension (i.e. not producing any meaningful attribution across a chasm trap):
+dimension (not producing any meaningful attribution across a chasm trap):
 
 1. Find the column that is not an attribution dimension.
 2. Select its **Attribution Dimension**.

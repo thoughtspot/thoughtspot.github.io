@@ -10,8 +10,8 @@ Users can use the integration, called **Spot**, to make queries or view charts.
 Any users with administrative rights can apply a `spot` sticker to specific
 objects. Then, the object is available through Slack.
 
-The first time a user messages Spot, it returns a link to log into ThoughtSpot.
-Once a user logs in, the user's Slack and ThoughtSpot account are associated.
+The first time a user messages Spot, it returns a login link for ThoughtSpot.
+After logging in, the user's Slack and ThoughtSpot accounts are connected.
 Actions a user makes from Slack are tied to the user's permissions and
 authorization.
 

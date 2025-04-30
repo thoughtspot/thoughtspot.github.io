@@ -39,7 +39,7 @@ To re-brand the interface:
 
      ![]({{ site.baseurl }}/images/style_customization.png "Style Customization menu")
 
-    Once in the menu page, you can:
+    In the menu page, you can perform the following actions:
 
     -   [Upload application logos](upload-application-logos.html#)
     -   [Set chart and table visualization fonts](set-chart-and-table-visualization-fonts.html#)

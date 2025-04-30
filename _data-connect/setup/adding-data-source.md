@@ -38,7 +38,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
 
 7. Choose the tables you wish to load from the list of **Available Tables**.
 
-    Only the first 200 objects that occur alphabetically are listed per schema. If you want to access a table that falls below the first 200 objects alphabetically, you must use the object search bar.
+    Only the first 200 objects that occur alphabetically are listed per schema. If you want to access a table that occurs after the first 200 objects alphabetically, you must use the object search bar.
 
      ![]({{ site.baseurl }}/images/data_connect_object_search_bar.png "Object search bar")
 
@@ -111,7 +111,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
 16. You can add a pre-script that will run your TQL script before the datasource uploads.
 
     Additionally, you can add a post-script that will run your TQL script after the data uploads. This feature is not available if Informatica Cloud Services is still in use.
-    
+
 17. Click **Import**.
 
 18. If you want to view or change the SQL DDL (data definition language) that will create the target table, click **here**.
@@ -124,4 +124,4 @@ Data sources can consist of relational database sources, like SQL Server, or app
 
 20. Click **Load**.
 
-Your data source will appear on the Data Sources list page, and you can find the imported tables on the Tables list page. Tables imported via ThoughtSpot Data Connect display the job name in the Source column.
+Your data source will appear on the Data Sources list page, and you can find the imported tables on the Tables list page. Tables imported through ThoughtSpot Data Connect display the job name in the Source column.

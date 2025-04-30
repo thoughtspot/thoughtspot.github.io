@@ -30,8 +30,8 @@ the password for each user.  The default users are:
   </tr>
 </table>
 <p>&nbsp;</p>
-Both the `admin` and `thoughtspot` user can SSH into the appliance. Once on the
-appliance, either user can do any of the following:
+Both the `admin` and `thoughtspot` user can SSH into the appliance. After
+authenticating into the appliance, either user can do any of the following:
 
 * [tscli]({{ site.baseurl }}/reference/tscli-command-ref.html)
 * [tsload]({{ site.baseurl }}/reference/sql-cli-commands.html)
