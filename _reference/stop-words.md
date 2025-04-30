@@ -1,14 +1,12 @@
 ---
 title: [Stop Word Reference]
-last_updated: 11/19/2019
-summary: "ThoughtSpot recognizes a defined list of 'helper' words; we call them stop words."
+tags: [stop words]
+keywords: stop words stopwords
+last_updated: 05/05/2019
+summary: "ThoughtSpot recognizes a defined list of 'helper' words; we call them **stop words**."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-**SearchIQ is in Beta.**
-
-{% include note.html content="SearchIQ is turned off by default. ThoughtSpot Support can enable it for you. SearchIQ is only available in English." %}
-
 This reference lists the various stop words that ThoughtSpot recognizes as
 normal parts of the language (articles, prepositions, conjunctions, and
 interjections). Specifically, SearchIQ uses uses stop words in its

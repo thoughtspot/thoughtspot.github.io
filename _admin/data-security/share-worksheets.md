@@ -1,17 +1,27 @@
 ---
 title: [Share worksheets]
-
-last_updated: 2/13/2020
+keywords: tbd
+last_updated: tbd
 summary: "You can share worksheets with users or with groups. Sharing a worksheet allows users to select it as a data source and search it."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-When you share a worksheet, you give users or groups within your cluster access to the worksheet's data. You share all of its columns. Sharing a worksheet does not share the underlying tables. If you want to share the underlying tables, see [Sharing tables and columns](share-source-tables.html#).
+When you share a worksheet, all of its columns are shared. Sharing a worksheet does not share the underlying tables. If you want to share the underlying tables, see [Share tables and columns](share-source-tables.html#). A worksheet can be shared by the owner of the worksheet, or by an administrator. Users can start searching a worksheet as soon as the worksheet is shared with them.
 
-If you want to migrate the worksheet to another cluster, or otherwise export it, see [Migrate or restore worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html).
+To share a pinboard:
 
-A worksheet can be shared by the owner of the worksheet, or by an administrator. Users can start searching a worksheet as soon as the worksheet is shared with them.
+1. Click **Data** on the top navigation bar and choose **Worksheets**.
 
-You can share a worksheet from the list of worksheets under **worksheets** [on the **Data** tab](#share-datatab), or from [within the worksheet](#share-dataset).
+2. Select one or more worksheets to share, and click the **Share** icon.
 
-{% include content/share-data.md %}
+    ![]({{ site.baseurl }}/images/share_worksheets.png)
+
+3. Click **+ Add users or groups** and select users or groups that you want to share with.
+
+    ![]({{ site.baseurl }}/images/share_worksheet.png)
+
+4. Configure the level of access by selecting from the dropdown list. You can select:
+    -   **Can View** to provide read-only access. Enables viewing the worksheet and searching on it.
+    -   **Can Edit** to allow modification. Enables renaming, modifying filters, or deleting the worksheet and adding or removing its columns. To add columns to a worksheet a user needs access to the underlying table.
+5. Click **Add and Save**.
+6. Click **Done**.

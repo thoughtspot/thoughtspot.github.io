@@ -1,7 +1,8 @@
 ---
 title: [Custom SpotIQ analysis]
-summary: Learn how to customize SpotIQ analysis.
-last_updated: 11/15/2019
+tags: [spotiq,indexing]
+keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -27,7 +28,7 @@ This window has two tabs:
 * **Columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
 * **Advanced**, where you can run custom analyses and incorporate R scripts into SpotIQ.
 
-The **Advanced** tab has many options. The panel scrolls, so more algorithms are available than appear in the following image
+The **Advanced** tab has many options. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
 
  ![]({{ site.baseurl }}/images/spotiq-customize-algorithms.png)
 

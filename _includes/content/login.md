@@ -1,20 +1,25 @@
-To set up and explore your data, access the ThoughtSpot application from a standard Web browser, using a username and password.
+To set up and explore your data, access the ThoughtSpot application from a standard Web browser using a username and password.
 
-Before accessing ThoughtSpot, you need the following:
+Before accessing ThoughtSpot, you need:
 
-| &#10063; | The Web address (IP address or server name) for ThoughtSpot|
-| &#10063; | A network connection |
-| &#10063; | A Web browser |
-| &#10063; | A username and password for ThoughtSpot |
+-   The Web address (IP address or server name) for ThoughtSpot
+-   A network connection
+-   A Web browser
+-   A username and password for ThoughtSpot
 
-ThoughtSpot supports the following Web browsers:
+    Supported Web browsers include:
 
-{% include content/browser-support.md %}
+    |Browser          |Version     |Operating System                   |
+    |-----------------|------------|-----------------------------------|
+    |Google Chrome    |20 and above| Windows 7 or greater, Linux, MacOS|
+    |Mozilla Firefox  |14 and above| Windows 7 or greater, Linux, MacOS|
+    |Internet Explorer|11          | Windows 7 or greater |
 
-{% include tip.html content="We support, but do not recommend, the use of the Internet Explorer.<br>
-    Depending on your environment, you can experience performance or UI issues." %}
+    {% include tip.html content="While Internet Explorer is supported, using it is
+    not recommended. Depending on your environment, you can experience performance
+    or UI issues when using IE." %}
 
-To sign in to ThoughtSpot from a browser, follow these steps:
+To sign in to ThoughtSpot from a browser:
 
 1. Open the browser and type in the Web address for ThoughtSpot: `http://<hostname_or_IP>`
-2. Enter your username and password, and click **Sign in**.
+2. Enter your username and password and click **Sign in**.

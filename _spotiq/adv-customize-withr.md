@@ -1,7 +1,8 @@
 ---
 title: [Advanced R Customizations]
-summary: Learn about R customizations.
-last_updated: 11/18/2019
+tags: [spotiq,customize, r-scripts]
+keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -27,8 +28,8 @@ requires a specific package, you must request your ThoughtSpot cluster admin to
 install the package on your behalf.
 
 ThoughtSpot internally transforms and binds an R script prior to sending it to
-the cluster's R service. The system expects each script to have a well-defined
-structure, following this format:
+the cluster's R service. The system expects each script have a well-defined
+structure which is the following:
 
 ```
 ####R SCRIPT####
@@ -38,7 +39,7 @@ structure, following this format:
 ```
 
 The scripts contains the column bindings with the answer results appearing as parameters
-in the R script. For each `.param` _n_ in R your script, you must
+in the R script. ThoughtSpot expects for each `.param`_n_ in R your script must
 provide a corresponding binding. The following pseudo code illustrates an R
 script in a form suitable for ThoughtSpot:
 
@@ -58,16 +59,16 @@ The output of the script is either PNG or CSV. This example script uses
 emit data in PNG format.
 
 Presently, error reporting is limited for R scripts in SpotIQ. You should
-validate your R script independent of your ThoughtSpot environment. After you are
-sure it is free of syntax or other errors, you can try the script in
+validate your R script independent of your ThoughtSpot environment. Once you are
+sure they are free of syntax or other errors, then try the script in
 ThoughtSpot.
 
 ## Try a Custom Analysis with R
 
-This example illustrates how to run an R analysis on data that has a sales
+The following illustrates how to run an R analysis on data that has a sales
 column and a zip code column.
 
-1. Sign in to ThoughtSpot and go to the **Search** bar.
+1. Sign into ThoughtSpot and go to the **Search** bar.
 2. Use **Choose Sources** to locate a source with sales and zip code data.
    This example uses **Sporting Goods Retail Worksheet** data.
 3. Enter `sales store zip code` in the search bar.

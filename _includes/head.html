@@ -50,9 +50,9 @@
 <!-- SEO Tools -->
 {% seo %}
 {% elsif page.url == "/" or page.url == "" %}
-<meta name="robots" content="noindex" />
-{% else %}
 {% seo %}
+{% else %}
+<meta name="robots" content="noindex" />
 {% endif %}
 
 <!--  Site Search -->

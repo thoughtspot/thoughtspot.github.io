@@ -1,7 +1,7 @@
 ---
 title: [Search actions within a pinboard]
-summary: Learn about searching within a pinboard.
-last_updated: 11/15/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

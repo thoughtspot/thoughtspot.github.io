@@ -1,7 +1,8 @@
 ---
 title: [Encryption of data in transit within a cluster]
-summary: ThoughtSpot can encrypt data in transit within a cluster.
-last_udpated: 11/15/2019
+keywords: tbd
+tags: tbd
+summary:
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---  
@@ -49,4 +50,3 @@ Note: IPSec is supported in ThoughtSpot software versions starting from 4.5.1.4
 The following ports must be open between nodes to allow IPSec encryption:
   - UDP port 500 (for IKE)
   - UDP port 4500 (for IPSec over IDP)
-  - IP Protocol 50 (ESP)

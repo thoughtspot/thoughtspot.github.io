@@ -1,7 +1,7 @@
 ---
 title: ["Allow users to request access"]
-summary: Learn how to allow people in your organization to request access to ThoughtSpot.
-last_updated: 11/18/2019
+keywords: "register, onboard, request access, sign up"
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

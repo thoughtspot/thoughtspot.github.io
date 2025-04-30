@@ -1,7 +1,7 @@
 ---
 title: ["About changing the schema (DDL)"]
-summary: Learn how to view and edit the DDL script.
-last_updated: 11/19/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

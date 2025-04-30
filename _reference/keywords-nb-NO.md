@@ -1,7 +1,8 @@
 ---
 title: [Norsk Keyword reference]
-summary: Use keywords to help define a search.
-last_updated: 11/19/2019
+tags: [keywords]
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

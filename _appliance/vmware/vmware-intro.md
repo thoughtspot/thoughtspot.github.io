@@ -1,13 +1,16 @@
 ---
 title: [VMware configuration overview]
-summary: "You can host ThoughtSpot on VMware."
-last_updated: 5/21/2020
+keywords: vmware
+tags: [vm, performance]
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
+Congratulations on purchasing the ThoughtSpot instance. This section is an
+overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
+vSphere Hypervisor (ESXi) 6.5 environment.
 
-## About ThoughtSpot in VMware
+## About ThoughtSpot on VMware
 
 The VMware virtualization platform provides highly scalable and efficient memory
 and CPU resources management that can be used by ThoughtSpot instances.
@@ -17,58 +20,31 @@ the components of a VMware and ThoughtSpot architecture:
 
 ![]({{ site.baseurl }}/images/vmware-components.png)
 
-{% include note.html content="This is a generic representation. ThoughtSpot supports deployment on its CentOS-based image, or an RHEL 7.7 image that your organization manages internally." %}
+{% include note.html content="This is a generic representation; Only CentOS-based
+virtual machines are supported with ThoughtSpot." %}
 
 Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
 ThoughtSpot VMs as your dataset size grows.
 
-## Supported configurations
+## Configuration (minimum)
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
-platform in VMware for the best performance, load balancing, scalability,
+platform on VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
-_minimum specifications_ for an individual VMware ESXi guest machine:
+_minimum specifications_ for an individual VMware ESXi host machine:
 
-<table width="100%" border="0">
-	  <tbody>
-	    <tr>
-	      <th scope="col">Per VM user data capacity</th>
-	      <th scope="col">CPU/RAM</th>
-	      <th scope="col">Data disk</th>
-				<th scope="col">Required root volume capacity</th>
-        </tr>
-	    <tr>
-	      <td>20 GB</td>
-	      <td>16/128 GB</td>
-	      <td>2x400 GB</td>
-				<td>200 GB for each node</td>
-        </tr>
-	    <tr>
-	      <td>100 GB</td>
-	      <td>32/256 GB</td>
-	      <td>2X400 GB</td>
-				<td>200 GB for each node</td>
-        </tr>
-	    <tr>
-	      <td>256 GB</td>
-	      <td>72/512 GB</td>
-	      <td>3X1 TB</td>
-				<td>200 GB for each node</td>
-        </tr>
-		<tr>
-	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200 GB SSD boot disk required for all configurations.</td>
-	      <td></td>
-	      <td></td>
-        </tr>
-  </tbody>
-</table>
+* 512GB Memory
+* 200GB SSD
+* 3X 2TB Hard disks (6TB in total in hard disk space)
+* 72 Hyper-threaded Cores (Additional spare cores can also be added. Oversubscription is not supported).
+* Intel Xeon 2600 series operating at clock frequencies 2.1GHz (Faster is better).
 
 Locally attached storage provides the best performance.
 
 SAN can be used, but must comply with the following requirements:
 * 136 MBps minimum random read bandwidth
-* 240 random IOPS (~4ms seek latency)
+* 240 random IOPS (~4s seek latency)
 
 NAS/NFS is not supported since its latency is so high that it tends to be unreliable.
 
@@ -82,10 +58,11 @@ extensible, and open packaging distribution format for virtual machines.
 
 The ThoughtSpot VM configuration uses thin provisioning and sets the recommended
 reserved memory, among other important specifications. You can obtain these
-files from [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+files from your ThoughtSpot Customer Success Engineer.
 
 ## Questions or comments?
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/appliance/contact.html) by email, phone, or by filing a support ticket.
+site.baseurl }}/appliance/contact.html) by phone, mail, email, or by filing a
+support ticket.

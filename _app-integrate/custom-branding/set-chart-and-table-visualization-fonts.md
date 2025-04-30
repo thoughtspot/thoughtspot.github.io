@@ -1,17 +1,17 @@
 ---
 title: [Set chart and table visualization fonts]
-summary: Learn how to add and edit fonts to customize ThoughtSpot's appearance.
-last_updated: 2/4/2020
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can add and edit fonts to customize the appearance of your charts and tables. Be careful though, since the interface may become unreadable depending on how you change the default font, font weight, or font style. It is therefore suggested that you use the default font settings.
 
-If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following these steps:
+If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following the steps below:
 
 1. Click the **Add New** button under **Chart Visualization Fonts**.
 
-     ![Add new chart visualization font]({{ site.baseurl }}/images/style-chartfont.png "Add New Chart Visualization Font")
+     ![]({{ site.baseurl }}/images/add_font.png "Add New Chart Visualization Font")
 
 2. In the add new font menu, select the details for the font:
     1. Upload your custom font.

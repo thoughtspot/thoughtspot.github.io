@@ -1,11 +1,13 @@
 ---
 title: [Percent (simple number) calculations]
-summary: Learn about simple number calculations.
-last_updated: 3/26/2020
+keywords: tbd
+tags: [formulas]
+last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can use simple number functions to perform useful percent calculations on your data.
+You can use simple number functions to perform useful percent calculations.
 Simple number functions include addition, subtraction, multiplication, and
 division.
 
@@ -69,14 +71,12 @@ division.
 ## Calculate percentages
 
 Calculating percentages is useful when you want to see, for example, the
-percentage of revenue that each retail department generates (gifts, bakery, canned goods, etc.).
+percentage revenue generated from each channel (online, stores, partner, etc.).
+For example, you can figure out the percentage revenue generated from each
+channel (online, stores, partners, etc.).
 
-Create a formula called `Percent Revenue` in the [**Formula Assistant**]({{ site.baseurl }}/complex-search/how-to-add-formula.html):
+Create a formula called `Percent Revenue`  in the **Formula Assistant**:
 
-`( sum ( revenue ) / group_sum ( revenue ) ) * 100`
+`( sum ( revenue ) / group sum ( revenue ) ) \* 100`
 
-Replace `revenue` with your company's name for their `revenue` column, such as `revenue_dollar_amount`.
-
-Now you can see the percentage of your total revenue that each department contributes, using the percent revenue formula that you just created. See the example below.
-
-![Percent revenue per department]({{ site.baseurl }}/images/formula-percent-revenue.png "Percent revenue per department")
+Now you can search by each channel, using the percent revenue formula that you just created.

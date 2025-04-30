@@ -1,11 +1,11 @@
 ---
 title: [Log in credentials]
-summary: Learn how to log into ThoughtSpot.
-last_updated: 11/18/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can access ThoughtSpot through SSH at the command prompt, and from a Web browser.
+You can access ThoughtSpot via SSH at the command prompt and from a Web browser.
 
 ## Administrative access
 

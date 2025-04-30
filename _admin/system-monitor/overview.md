@@ -1,7 +1,7 @@
 ---
 title: [Overview board]
-summary: The Overview pinboard provides useful information about your cluster.
-last_updated: 11/18/2019
+keywords: monitor,system,actions,user,cluster,nodes,version
+tags: [indexing]
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -84,31 +84,8 @@ enabled: false
 
 You can see this policy is disabled, which is a problem. Production clusters
 should enable the default snapshot policy. When you show or enable the snapshot
-policy, you can see your `tscli` command reflected in the **Configuration
+policy, you'll see your `tscli` command reflected in the **Configuration
 Events** panel on this same page.
-
-### Display the features used in a cluster configuration
-
-1. Log in to the ThoughtSpot cluster as the `admin` user.
-2. Use the `tscli feature` subcommand to display your current configuration.
-
-    ```
-    $ tscli feature get-all-config
-    +---------------------------------+----------+---------------+
-    |              NAME               |  STATUS  | CONFIGURATION |
-    +---------------------------------+----------+---------------+
-    | Firewall                        | Disabled |               |
-    | Saml                            | Disabled |               |
-    | Ldap                            | Disabled |               |
-    | CustomBranding                  | Disabled |               |
-    | CustomBrandingFontCustomization | Disabled |               |
-    | DataConnect                     | Disabled |               |
-    | RLS                             | Enabled  |               |
-    | Callhome                        | Enabled  |               |
-    | SSHTunnel                       | Enabled  |               |
-    | Fileserver                      | Disabled |               |
-    +---------------------------------+----------+---------------+
-    ```
 
 ## Relational Data Cache
 
@@ -196,7 +173,7 @@ replication.
 
 ## Monthly Active Users
 
-This chart shows the number of active users in the system over the last four months, and during the current month. An active user is defined as a user who has logged in at least one time in the defined time interval, in this case months.
+This chart shows the number of active users in the system over the last four months and current month. An active user is defined as a user who has logged in at least once in the defined time interval, in this case months.
 
 The query for this answer is the following:
 
@@ -319,7 +296,7 @@ system. This panel displays configuration events related to:
         <th>
         Cluster Configuration
         </th>
-        <td>Reports configuration actions from the <code>tscli</code> and <code>tql</code> commands. </td>
+        <td>Reports configuration actions from the `tscli` and `tql` commands. </td>
        </tr>
        <tr>
         <th>
@@ -358,9 +335,9 @@ specify a time period or even a type of command to include.
 ## About deprecated boards
 
 There are a number of deprecated boards on this page. They are there to support
-older installations that relied on them. New installations should not use or
+older installations that relied on them. New installations, should not use or
 rely on deprecated boards. Older installations that have used these boards in
-some way should use the new boards and remove any dependencies.
+some way, should use the new boards and remove any dependencies.
 
 ## Related information
 

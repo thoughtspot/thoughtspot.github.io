@@ -1,7 +1,8 @@
 ---
 title: [About SAML]
-summary: Learn how to use SAML to enable SSO.
-last_updated: 11/18/2019
+tags: [security]
+keywords: SAML,security,"active directory",authenticate,SSO,"single sign on"
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

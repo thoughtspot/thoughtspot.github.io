@@ -1,6 +1,6 @@
 ---
 title: [Upload and run a SQL script]
-
+keywords: schema, import
 last_updated: tbd
 summary: "Importing a schema through the Web browser makes it possible to run your SQL script without needing to have a Linux login."
 sidebar: mydoc_sidebar
@@ -12,7 +12,7 @@ You can run a SQL script to create your database schema through the browser, wit
 -   Use the editor to type your SQL directly into the browser.
 -   Use the browser SQL interface as an interactive SQL editor, for example to test an existing script or make changes to an existing schema.
 
-1. Log in to ThoughtSpot from a browser.
+1. Log into ThoughtSpot from a browser.
 
 2. Click **Data**, on the top navigation bar.
 

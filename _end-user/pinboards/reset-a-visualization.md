@@ -1,7 +1,7 @@
 ---
 title: [Reset a pinboard visualization]
-summary: Learn how to reset a pinboard visualization.
-last_updated: 11/15/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

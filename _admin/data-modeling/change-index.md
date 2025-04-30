@@ -1,7 +1,9 @@
 ---
 title: ["Manage suggestion indexing"]
+keywords: search,suggestions,indexing,priority,index,ubr
+tags: [performance,indexing]
 last_updated: tbd
-summary: "ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
+summary: " ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
@@ -17,15 +19,15 @@ impact the dynamically calculated _usage based ranking (UBR)_,
 
 ## Example of Search suggestion behavior
 
-The following example illustrates how searching for `promotion_last_name t` causes
+The example below illustrates how searching for `promotion_last_name t` causes
 the system to suggest several ways of completing the `t` in the search:
 
 ![]({{ site.baseurl }}/images/index-type.png "Suggestions")
 
 The system is suggesting the synonym `type` (callout A) for a column in the
 `Promotion` table.  It is also suggesting a value of `theil` (callout B) for the
-`Promotion_Last Name` column. If you look in the **Data > Tables** page, you can
-see that there is a `type` synonym for the `Promotion_Type` column which is using
+`Promotion_Last Name` column. If you look in the **Data > Tables** page, you'll
+see there is a `type` synonym for the `Promotion_Type` column which is using
 default indexing.
 
 ![]({{ site.baseurl }}/images/index-row.png "Table Row")
@@ -89,7 +91,7 @@ or in the **Index** value in the modeling file.
 
 The values you can set for **INDEX TYPE** are:
 
-<table id="index-type">
+<table>
 <colgroup>
     <col style="width:30%">
     <col style="width:70%">
@@ -175,5 +177,5 @@ priority you want to use.
 
 ## Related information  
 
-- [Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
+- [Model the data for searching](semantic-modeling.html#)
 - [Usage based rankings (UBR)]({{ site.baseurl}}/end-user/search/recent-searches.html#usage-based-ranking).

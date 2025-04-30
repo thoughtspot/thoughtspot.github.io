@@ -1,5 +1,6 @@
 ---
 title: [Configure disaster recovery]
+keywords: recovery, disaster
 summary: "Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -100,7 +101,7 @@ full backup. Do the following to configure and mount the shared volume.
     </tr>
     </table>
 
-8. Log in to the target machine.
+8. Log into the target machine.
 9. Ensure that the target machine is not running a ThoughtSpot cluster.
 
    If a cluster is running on the target machine, contact please contact
