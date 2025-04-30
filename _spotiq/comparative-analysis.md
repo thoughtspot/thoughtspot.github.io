@@ -1,19 +1,16 @@
 ---
 title: [Comparative Analysis]
-summary: "With SpotIQ comparative analysis, you can compare two data points for complex measures."
-last_updated: 11/05/2021
+summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
+last_updated: 11/19/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include content/liveboards-announcement.md %}
-
-SpotIQ comparative analysis compares data points of simple or complex measures using these aggregates:  
+SpotIQ competitive analysis compares data points of simple or complex measures using these aggregates:  
   * _Sum_
   * _Count_
-  * _Sum over sum_, which generate a Liveboard that has 'what-if' percentage insights
-  * _Average_, which generate a Liveboard that has 'what-if' percentage insights
+  * _Sum over sum_, which generate a Pinboard that has 'what-if' percentage insights
+  * _Average_, which generate a Pinboard that has 'what-if' percentage insights
   * Other functions which use a 'versus' analysis to show the absolute change grouped by different drill attributes
 
 {: id="basic-comparative-analysis" }
@@ -53,10 +50,10 @@ To view the results of your analysis, follow these steps:
 
    Your analysis may be in progress. Wait until its **Status** changes to _Done_.
 
-    Click _View Results_ to open the Liveboard.
+    Click _View Results_ to open the pinboard.
     ![]({{ site.baseurl }}/images/comparative-analysis-5.png "Opening the Analysis Results")
 
-3. In the report, SpotIQ generates a Liveboard with insights that compare the two selected points, grouped by the columns you chose for analysis.  
+3. In the report, SpotIQ generates a Pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.  
 
     ![]({{ site.baseurl }}/images/comparative-analysis-6.png "Analysis Results")
 
@@ -67,7 +64,7 @@ To view the results of your analysis, follow these steps:
    | Legend | Action | Description |
    | --- | --- | --- |
    | 1. | **Give feedback** | SpotIQ learns how to improve its feedback based on the information you provide. |
-   | 2. | **Add to a Liveboard** | You can add the specific visualization to an existing Liveboard, or create a new Liveboard and add it there. |
+   | 2. | **Add to a pinboard** | You can add the specific visualization to an existing pinboard, or create a new pinboard and add it there. |
    | 3. | **Analysis details** | Get the name of the algorithm. |
    | 4. | **More options** | You can run another round of SpotIQ analysis, download the data as a CSV file, edit this visualization, or edit a copy of the visualization. |
 

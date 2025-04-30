@@ -1,24 +1,21 @@
 ---
 title: [Delete a visualization]
-last_updated: 11/05/2021
-summary: Learn how to delete a visualization from your Liveboard.
+last_updated: 11/15/2019
+summary: Learn how to delete a visualization from your pinboard.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+You can remove a visualization from your pinboard. To delete a visualization:
 
-{% include content/liveboards-announcement.md %}
+1. Click **Pinboards**, on the top navigation bar.
 
-You can remove a visualization from your Liveboard. To delete a visualization:
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
-1. Click **Liveboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Liveboards")
-
-2. On the Liveboard list page, click the Liveboard you would like to edit.
+2. On the pinboard list page, click the pinboard you would like to edit.
 3. Click **Delete** under the dropdown menu of the visualization you would like to delete.
 
      ![]({{ site.baseurl }}/images/detele_a_pinboard_visualization.png "Delete a visualization")
 
-4. Save your Liveboard by clicking **Actions** and **Save**.
+4. Save your pinboard by clicking **Actions** and **Save**.
 
-     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your Liveboard")
+     ![]({{ site.baseurl }}/images/save_a_pinboard.png "Save your pinboard")

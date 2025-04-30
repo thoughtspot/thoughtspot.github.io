@@ -2,14 +2,11 @@
 title: [Moving functions]
 
 
-last_updated: 6/1/2021
+last_updated: tbd
 summary: "Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include note.html content="The new formula editor is part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. If you have the new Answer experience on, the new version of the Formula Editor appears when you add a formula to a search, but not when you add a formula to a Worksheet. You can turn the new Answer experience on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
-
 Moving formulas can be used to smooth out any irregularities in your data to
 easily recognize trends. The larger the interval you set, the more the peaks and
 valleys are smoothed out. While the smaller the interval, the closer the moving
@@ -24,15 +21,9 @@ formula (measure,integer,integer,[attribute,attribute,...])
 
 Only the measure and integer values are required. If you supply both required
 and optional values, the formula returns the aggregate of the measure over the
-given window. You should experiment with only a measure and integers, leaving out
-the attribute, and then adding it back in. This will help you decide which output
+given window. You should experiment with only a measure and integers leaving out
+the attribute and then adding it back in. This will help you decide which output
 best meets your use case.
-
-The time window is (`current - Num1...Current + Num2`), including both endpoints. For example, `1,1` has a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example `moving_average(sales, 1, -1, date)`.
-
-For more information on how the time windows work, see this chart:
-
-![Moving formula time window chart]({{ site.baseurl }}/images/moving_formula_time_window_chart.png "Moving formula time window chart")
 
 The moving formulas are the following:
 
@@ -41,47 +32,65 @@ The moving formulas are the following:
   Takes a measure, two integers to define the window to aggregate over, and one
   or more attributes. Returns the average of the measure over the given window.
   The attributes are the ordering columns used to compute the moving average.
+  The window is (`current - Num1...Current + Num2`) with both end points being
+  included in the window. For example, `1,1` will have a window size of 3. To
+  see periods in the past, use a negative number for the second endpoint, as in
+  the example `moving_average(sales, 1, -1, date)`.
 
 * `moving_max`, for example `moving_max (complaints, 1, 2, store name)`
 
   Takes a measure, two integers to define the window to aggregate over, and one
   or more attributes. Returns the maximum of the measure over the given window.
   The attributes are the ordering columns used to compute the moving maximum.
+  The window is (current - Num1...Current + Num2) with both end points being
+  included in the window. For example, `1,1` will have a window size of 3. To
+  see periods in the past, use a negative number for the second endpoint, as in
+  the example `moving_max(sales, 1, -1, date)`.
 
 * `moving_min`, for example `moving_min (defects, 3, 1, product)`
 
     Takes a measure, two integers to define the window to aggregate over, and
     one or more attributes. Returns the minimum of the measure over the given
     window. The attributes are the ordering columns used to compute the moving
-    minimum.
+    minimum. The window is (current - Num1...Current + Num2) with both end
+    points being included in the window. For example, `1,1` will have a window
+    size of 3. To see periods in the past, use a negative number for the second
+    endpoint, as in the example `moving_min(sales, 1, -1, date)`.
 
 * `moving_sum`, for example `moving_sum (revenue, 1, 1, order date)`
 
   Takes a measure, two integers to define the window to aggregate over, and one
   or more attributes. Returns the sum of the measure over the given window. The
-  attributes are the ordering columns used to compute the moving sum.
+  attributes are the ordering columns used to compute the moving sum. The window
+  is (current - Num1...Current + Num2) with both end points being included in
+  the window. For example, `1,1` will have a window size of 3. To see periods in
+  the past, use a negative number for the second endpoint, as in the example
+  `moving_sum(sales, 1, -1, date)`.
+
 
 ## Calculate a moving average
 
 This example  demonstrates using the `moving_average` formula. To use the moving function in a search:
 
-1. Start a new search, or edit an existing Answer.
+1. Start a new search.
 
-2. Open the Data panel from the upper right corner if it is not open, and click the + icon next to Formulas. If the new Answer experience <span class="badge badge-update">Beta</span> (off by default) is off in your environment, click the three-dot Actions ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon in the upper-right side of the table, and select Add formula.
+   ![]({{ site.baseurl }}/images/aggregation_answer.png "Aggregation Answer example")
 
-    ![Click + to add a formula]({{ site.baseurl }}/images/formula-editor-add.png "Click + to add a formula")
+2. In the upper-right side of the table, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
+
+   ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
 
 3. Enter the moving_average formula, providing a measure, a window, and one or more attributes.
 
-    The example returns the average of revenue, within the commit date window size of 3. The window includes the previous, current, and next rows. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(revenue, 1, -1, date)".
+    The example will return the average of revenue, within the commit date window size of 3. The window includes the previous, current, and next rows. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(sales, 1, -1, date)".
 
-    ![]({{ site.baseurl }}/images/moving_average_formula-new.png "Moving Average Formula")
+    ![]({{ site.baseurl }}/images/moving_average_formula.png "Moving Average Formula")
 
 4. Name the formula by entering a title in the top field, and then click **Save**.
 
-   The formula appears in the search bar and in the table as its own column.
+   The formula will appear in the search bar and in the table as its own column.
 
-   ![]({{ site.baseurl }}/images/moving_average_table-new.png "Moving Average Table")
+   ![]({{ site.baseurl }}/images/moving_average_table.png "Moving Average Table")
 
    A box displaying the moving average within the entire table will appear at the bottom.
 

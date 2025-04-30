@@ -1,33 +1,30 @@
 ---
-title: [Copy a Liveboard or visualization link]
-last_updated: 11/05/2021
-summary: "In Liveboards, there is a copy link option that lets you copy the link to access the Liveboard and visualizations directly."
+title: [Copy a pinboard or visualization link]
+last_updated: tbd
+summary: "In pinboards, there is a copy link option that lets you copy the link to access the pinboard and visualizations directly."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+You can copy and paste the copied link to include in a presentation or spreadsheet, or email or Slack it to other people in your company. Note that when clicking the link, the person must be authenticated to ThoughtSpot to see the visualization (e.g. by signing in, or through LDAP).
 
-{% include content/liveboards-announcement.md %}
+You can also use this link for embedding the chart or table in another Web page, Web portal, or application when using the ThoughtSpot JavaScript API with Embedding or the REST API. For details, read the ThoughtSpot Application Integration Guide.
 
-You can copy and paste the copied link to include in a presentation or spreadsheet, or email or Slack it to other people in your company. Note that when clicking the link, the person must be authenticated to ThoughtSpot to see the visualization (e.g. by signing in, or through SAML).
+## Copying a pinboard link
 
-You can also use this link for embedding the chart or table in another Web page, Web portal, or application by using the [Liveboard Data API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html).
+To copy the link for a pinboard:
 
-## Copying a Liveboard link
+1. Click **Pinboards**, on the top navigation bar.
 
-To copy the link for a Liveboard:
+     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
 
-1. Click **Liveboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Liveboards")
-
-2. On the Liveboard list page, click the Liveboard you would like to get a link for.
+2. On the pinboard list page, click the pinboard you would like to get a link for.
 3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy link**.
 
-     ![]({{ site.baseurl }}/images/copy_pinboard_link.png "Copy Liveboard link option")
+     ![]({{ site.baseurl }}/images/copy_pinboard_link.png "Copy pinboard link option")
 
-4. Copy the Liveboard link. The highlighted portion is the Liveboard ID.
+4. Copy the pinboard link. The highlighted portion is the pinboard ID.
 
-     ![]({{ site.baseurl }}/images/copy_link_pinboard.png "Copy Liveboard link")
+     ![]({{ site.baseurl }}/images/copy_link_pinboard.png "Copy pinboard link")
 
 ## Copying a visualization link     
 

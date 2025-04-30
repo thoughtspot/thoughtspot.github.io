@@ -1,11 +1,10 @@
 ---
 title: ["What is SpotIQ?"]
 summary: Learn about SpotIQ.
-last_updated: 11/18/2021
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
 SpotIQ is a ThoughtSpot feature that helps you find insights into your data.
 Insights are trends, correlations, explanations of increases, explanations of
 decreases, and outliers (values unique from what is typical in your data).
@@ -20,7 +19,9 @@ The SpotIQ feature is made for users who are not data magicians; however,
 data magicians can use it to do power data magic. This means SpotIQ is for everyone.
 
 If you can see the **SpotIQ** on your ThoughtSpot dashboard, you have access
-to SpotIQ.
+to SpotIQ:
+
+![]({{ site.baseurl }}/images/spotiq-is-on.png)
 
 If you can't see this option, ask your ThoughtSpot Administrator to give you the
 **Has Spot IQ** privilege.

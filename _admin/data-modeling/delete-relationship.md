@@ -1,35 +1,35 @@
 ---
 title: [Delete a relationship]
-last_updated: 11/05/2021
-summary: "You can delete a relationship between tables through the ThoughtSpot application."
+
+last_updated: 11/15/2019
+summary: "You can delete a relationship between tables through the ThoughtSpot application or TQL."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include content/liveboards-announcement.md %}
-
 You must have either the [**Can administrator ThoughtSpot** or the **Can manage data** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) to delete a relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
 
-## To delete a relationship from the Web interface:
+If you created a relationship (join or link) between tables using the Web interface, you can also delete it from the Web interface. But if the relationship was created using TQL, you must also use TQL to delete it.
+
+[To delete a relationship using TQL]({{ site.baseurl }}/admin/loading/change-schema.html), use an `ALTER TABLE...DROP CONSTRAINT...` or `ALTER TABLE...DROP RELATIONSHIP...` statement.
+
+To delete a relationship from the Web interface:
 
 1. Click **Data** on the top navigation bar.
 
-2. Find the origin table, worksheet or view of the join you want to delete through browsing, Search, or selecting the appropriate Tag(s).
+2. Click the name of the data source you from which you want to remove the relationship.
 
-3. Click the name of the data source from which you want to remove the relationship.
+3. Click **Schema**. You will see the list showing existing joins.
 
-4. Click **Joins**. You will see the list showing existing joins. If you want to delete an external join from a worksheet, you must click **Joins within this worksheet** and choose **Joins from this worksheet**.
+   If this is a worksheet, you must click **Joins within worksheets** and choose **Joins between worksheets**.
 
-     ![]({{ site.baseurl }}/images/table-delete-join.png "Delete a relationship")
+      ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
 
-5. Click the **Delete icon** to the right of the join name. The **Confirm delete** window appears.
+4. Find the relationship you want to delete, and click the **Delete icon**.
 
-6. Click **Delete**
+     ![]({{ site.baseurl }}/images/relationship_delete.png "Delete a relationship")
 
-{% include note.html content="If existing answers or Liveboards depend on the join you are deleting, you will see the **Cannot delete** window listing all dependents of the join. You must delete all dependents before you can delete the join." %}
-
-  ![]({{ site.baseurl }}/images/cannot-delete-join-dialog.png "Unable to delete join due to dependents")
+5.  Repeat these steps until all the joins you want to remove have been deleted.
 
 ## Related Information
 

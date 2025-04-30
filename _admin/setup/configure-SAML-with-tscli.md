@@ -1,13 +1,12 @@
-<!-- ifdef::software[] -->
-<!-----
+---
 title: [Configure SAML]
-last_updated: 5/6/2020
+last_updated: 5/7/2020
 summary: "You can use the Security Assertion Markup Language (SAML) to authenticate users."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
+ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
 
 {: id="prerequisites"}
 ## Configuration prerequisites
@@ -50,7 +49,7 @@ This file is provided by the IDP. The absolute path to the `idp-meta.xml` file i
 ### Automatically add SAML users to Thoughtspot: (yes/no)
 If you choose 'yes', then new users will be automatically created in ThoughtSpot upon first successful SSO login.
 
-If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user).
+If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user) or through [Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
 
 {: id="ts-auth" }
 ### Also use ThoughtSpot internal authentication: (y/n)
@@ -75,5 +74,3 @@ To set up SAML on ThoughtSpot for user authentication, follow these steps:
 3. Complete the configurator prompts with the information you collected in [Configuration prerequisites](#prerequisites).
 
 4. When the configuration completes, open a browser and navigate to the ThoughtSpot login page. It should show the SSO option.
--->
-<!-- endif::software[] -->

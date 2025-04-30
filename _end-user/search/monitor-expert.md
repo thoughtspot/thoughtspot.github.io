@@ -6,7 +6,6 @@ sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
-{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 
@@ -14,8 +13,11 @@ Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 
 Follow these steps to the request monitoring interface:
 
-1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help.png){: .inline} (help) icon menu.
-2. In the drop-down, select **Get Help > Expert Requests**.
+1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-20px.png){: .inline} (help) icon menu.
+2. In the drop-down, select **Expert Requests**.
+
+   ![Click Expert requests]({{ site.baseurl }}/images/ask-an-expert.png "Click Expert requests")
+
 3. The **Expert** interface appears, with information for you both as a **Requester**, and as an **Expert**.  
 
 ## When you are a Requester ##

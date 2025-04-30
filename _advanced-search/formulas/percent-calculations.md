@@ -1,11 +1,11 @@
 ---
 title: [Percent (simple number) calculations]
 summary: Learn about simple number calculations.
-last_updated: 3/26/2020
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can use simple number functions to perform useful percent calculations on your data.
+You can use simple number functions to perform useful percent calculations.
 Simple number functions include addition, subtraction, multiplication, and
 division.
 

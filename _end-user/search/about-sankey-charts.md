@@ -1,13 +1,12 @@
 ---
 title: [Sankey charts]
 
-last_updated: 2/24/2021
+last_updated: tbd
 summary: "The Sankey chart is a type of chart that contains both columns and a special type of line chart.
 "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
 Sankey diagrams illustrate a flow through a process or system. Transactional
 data is optimal for this type of diagram.  For example, financial transactions
 that take place as money moves through accounts or as a product is process. Many

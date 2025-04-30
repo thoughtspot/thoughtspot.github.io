@@ -1,6 +1,6 @@
 ---
 title: [Import CSV files with tsload]
-last_updated: 03/07/2020
+last_updated: 03/08/2020
 summary: "Use the <code>tsload</code> command to import data from a CSV file."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

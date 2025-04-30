@@ -1,14 +1,12 @@
 ---
 title: ["Add or manage experts"]
 
-last_updated: 3/20/2020
+last_updated: 3/23/2020
 summary: "You can designate experts for each data source, so users won't get stuck if they need help."
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
-
-{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable **Ask an Expert**. This lets them request help from someone in your organization.
 

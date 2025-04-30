@@ -24,7 +24,7 @@ The joins in the Sales table were created by doing the following:
 
    The Columns view of the Sales table appears.
 
-4. Click the **Joins** tab.  
+4. Click the **Schema** tab.  
 
 5. Click **+Add join**.
 
@@ -148,7 +148,7 @@ The worksheet based on the Sales table on **try.thoughtspot.com** was created by
 2. Click the more options icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.  
     ![]({{ site.baseurl }}/images/worksheet_create_icon.png)
 
-3. Click the plus icon, next to Sources.  
+3. Click the plus icon ![plus icon]({{ site.baseurl }}/images/icon-add-20px.png){: .inline}.  
    ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
 4. Check the box next to all five of the tables from the Retail dataset in your schema.  
@@ -289,6 +289,6 @@ Using the Retail Sales worksheet example, here's how geo maps and currency could
 ## Related information
 
 - [ThoughtSpot in Snowflake Partner Connect]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-partner.html)
-- [Connections overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)
+- [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html)
 - [Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)
 - [Modify a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-modify.html)

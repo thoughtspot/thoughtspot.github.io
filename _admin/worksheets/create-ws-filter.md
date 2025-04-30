@@ -1,7 +1,7 @@
 ---
 title: [Add a filter to a worksheet]
 
-last_updated: 3/19/2020
+last_updated: 3/20/2020
 summary: "You can add filters to a worksheet to limit the data users can access from the worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,7 +16,7 @@ To add a filter to a worksheet:
 
      ![Edit a worksheet]({{ site.baseurl }}/images/worksheet-edit.png "Edit a worksheet")
 
-3. Hover over **Filters** on the left menu and click **+**.
+3. Click **Filters** on the left menu and click **+**.
 
      ![Add a worksheet filter]({{ site.baseurl }}/images/worksheet-edit-filters.png "Add a worksheet filter")
 

@@ -1,12 +1,10 @@
 ---
 title: [Understand backup modes]
 summary: Learn about types of backups.
-last_updated: 11/04/2021
+last_updated: 3/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include content/liveboards-announcement.md %}
 
 A backup is a procedure that stores a snapshot *outside* of a ThoughtSpot cluster. Backups are stored in a directory on a local or network file system. You can store all of the data associated with a snapshot, a portion of that data, or only metadata. Other advanced administrative operations also use backups.
 
@@ -42,7 +40,7 @@ running out of disk space to store backups.
 
 Lightweight backups contain everything that makes up a cluster:
 
--   Cluster configuration (SSH, etc.)
+-   Cluster configuration (SSH, LDAP, etc.)
 
 -   In-memory data cache
 
@@ -54,7 +52,7 @@ Lightweight backups contain everything that makes up a cluster:
 
 -   Users, groups and permissions
 
--   Objects created by users (Liveboards, worksheets, and formulas) with their shares and permissions.
+-   Objects created by users (pinboards, worksheets, and formulas) with their shares and permissions.
 
 -   Data model and row-level security rules.
 

@@ -17,13 +17,13 @@
 #
 
 destination: _site/
-url: "https://cloud-docs.thoughtspot.com"
-baseurl: "/1.0"
-port:
+url: "https://docs.thoughtspot.com"
+baseurl: "/6.0"
+port: 
 output: pdf
 product: mydoc
-print_title: THETITLE
-print_subtitle: Release THEVERSION
+print_title: ThoughtSpot Administration Guide
+print_subtitle: Release 6.0
 output: pdf
 defaults:
   -
@@ -42,6 +42,8 @@ collections:
   data-connect:
     output: true
   data-integrate:
+    output: true
+  disaster-recovery:
     output: true
   end-user:
     output: true

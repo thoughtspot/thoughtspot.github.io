@@ -52,7 +52,8 @@ starting in January.)
 * `week_number_of_year`
 * `year`
 
-Your ThoughtSpot administrator and ThoughtSpot Support can create a [custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html)
+Your ThoughtSpot administrator and ThoughtSpot Support can
+[set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#)
 to start on any month. If the `fiscal` year is not explicitly configured in the system,
 `fiscal` defaults to January, the same as the Gregorian `calendar`.
 
@@ -65,4 +66,4 @@ administrator has configured the fiscal calendar to start in May.
 
 * [Date functions]({{ site.baseurl }}/reference/formula-reference.html#date-functions) in the [Formula function reference]({{ site.baseurl }}/reference/formula-reference.html#)
 
-* [Create a custom calendar]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html#)
+* [Set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#)

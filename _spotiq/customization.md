@@ -1,13 +1,10 @@
 ---
-title: [SpotIQ analysis]
+title: [Custom SpotIQ analysis]
 summary: Learn how to customize SpotIQ analysis.
-last_updated: 11/18/2021
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include content/liveboards-announcement.md %}
-
 Everywhere in ThoughtSpot where you can run **SpotIQ analyze**, you
 can configure a customized SpotIQ analysis. The customized analysis can be
 a one-time customization or can apply to all future analysis of that particular
@@ -18,64 +15,15 @@ data source.
 Every menu or location where you can run **SpotIQ analyze**, you
 can customize your analysis. You access it using the lightbulb button ![more options menu icon]({{ site.baseurl }}/images/icon-lightbulb.png){: .inline} or the ellipses menu ![SpotIQ analyze icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
-![]({{ site.baseurl }}/images/spotiq-menu-items.png)
+![]({{ site.baseurl }}/images/spotiq-where-customize.png)
 
-## SpotIQ window layout
+Regardless of where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has the same layout. The columns displayed, though, are specific to
+the data from which you run **SpotIQ analyze**.
 
-Depending on where you run **SpotIQ analyze** in ThoughtSpot, the **SpotIQ** window has a different layout.
+![]({{ site.baseurl }}/images/spotiq-customize-analysis-include.png)
 
-{: id="new-answer-experience"}
-### SpotIQ from an Answer or search
 
-1. When you access it from an Answer or search, the SpotIQ window first asks you what kind of analysis you would like to do:
-
-    ![Choose analysis type]({{ site.baseurl }}/images/spotiq-analyze-choose.png "Choose analysis type")
-
-    * Outlier analysis: finds underlying anomalies or outliers in the Answer
-    * Trend analysis: finds interesting trends in the Answer's underlying data
-    * Cross-correlation analysis: determines how your metrics correlate with other measures
-    * Change analysis: if you select 2 or more data points, you can run a change analysis on those points. Otherwise, ThoughtSpot does not allow you to click on this option.
-
-2. Next, SpotIQ recommends certain columns for analysis. You can select all columns in the Answer, clear all columns, or search for more columns to include.
-
-    ![Select columns for analysis]({{ site.baseurl }}/images/spotiq-analyze-select-columns.png "Select columns for analysis")
-
-3. You can also customize advanced parameters. Select **Customize parameters**, on the **Select measures and attributes** page. The following screen appears. Scroll down to see more options, including customizations for specific analysis types.
-
-    ![SpotIQ advanced customization]({{ site.baseurl }}/images/spotiq-analyze-customize-parameters.png "SpotIQ advanced customization")
-
-    You can customize the following parameters for any SpotIQ analysis *except* a change analysis:
-
-    * General settings: exclude null values, restrict analysis to the current result set only, exclude zero values, or auto-tune date boundaries
-    * Insight count settings: choose the maximum number of measure and attribute columns to analyze
-
-    You can customize the following parameters for an outlier analysis:
-
-    * Outlier algorithm: choose the method of outlier detection (z-scores or median z-scores, Seasonal Hybrid ESD, or Linear Regression)
-    * Outlier parameters: choose the minimum rows required for analysis, multiplier for outlier detection, and maximum P-Value
-    * Insight count settings: choose the maximum outlier detection insights, maximum seasonality detection insights, and maximum linear regression insights
-
-    You can customize the following parameters for a trend analysis:
-
-    * Trend parameters: specify the minimum rows required for analysis, maximum P-Value, and minimum relative difference
-    * Insight count settings: specify the maximum trend insights
-
-    You can customize the following parameters for a cross-correlation analysis:
-
-    * Cross-correlation parameters: choose the minimum rows required for analysis, minimum correlation coefficient, maximum correlation coefficient, and maximum correlation lag
-    * Insight count settings: choose the maximum cross-correlation insights
-
-    You can customize the following parameters for a change analysis:
-
-    * Change analysis parameters: specify the maximum difference elements, the maximum fraction, minimum abs change ratio, and minimum change ratio
-
-    You can also reset these parameters to their system defaults. Select **Reset to system default** in the bottom left corner of the SpotIQ modal.
-
-4. Select **Analyze**.
-
-### SpotIQ from a Liveboard
-
-When you access it from a Liveboard, the SpotIQ window has two tabs:
+This window has two tabs:
 * **Columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
 * **Advanced**, where you can run custom analyses and incorporate R scripts into SpotIQ.
 
@@ -91,6 +39,9 @@ customize a single analysis.
 The **Tell us more** window provides information on how to exclude a value from all future analysis.
 
 ![]({{ site.baseurl }}/images/spotiq-customize-improve-analysis.png)
+
+You can set SpotIQ customization parameters in your
+[SpotIQ preferences]({{ site.baseurl }}/_spotiq/spotiq-preferences.html), along with options for email notifications when analyses run.
 
 ## Eliminate null values
 

@@ -1,25 +1,28 @@
 ---
-title: [System worksheets and views]
-summary: "Learn about the system worksheets and views that ThoughtSpot provides."
-last_updated: 11/05/2021
+title: [System worksheets]
+summary: "Learn about the system worksheets that ThoughtSpot provides."
+last_updated: 11/18/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Most of the monitoring information in **System Health** comes from system
+worksheet which administrators can view, but not modify. The underlying tables
+are protected system tables that cannot be accessed directly. However,
+administrators can create new, custom monitoring reports from the worksheets.
 
-{% include content/liveboards-announcement.md %}
+## List the system worksheets
 
-Most of the monitoring information in ThoughtSpot's system Liveboards comes from system worksheets and views that administrators can view, but not modify. The underlying tables are protected system tables that you cannot access directly. However, administrators can create new, custom monitoring reports from the worksheets and views.
-
-## List the system worksheets and views
-
-To list the system worksheets and views:
+To list the system worksheets:
 
 1. Go to the **Data** tab.
-2. Choose **All** and **All types**.
-3. Enter `System User` in the search field.
+2. Choose **All** and **Worksheets**.
+3. Enter `TS: ` in the search field.
 
-## Description of system worksheets and views
+   ![]({{ site.baseurl }}/images/su-worksheets.png)
+
+
+## Summary of the worksheets
 
 <table>
 <colgroup>
@@ -31,42 +34,6 @@ To list the system worksheets and views:
       <th>Description</th>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">Credits Purchased</code></td>
-      <td>
-         Contains data on the number of credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has, and their expiration date. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Liveboard</a>.
-      </td>
-   </tr>
-   <tr>
-      <td><code class="highlighter-rouge">Sample Retail - Apparel</code></td>
-      <td>
-         Contains sample retail data for <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a>.
-      </td>
-   </tr>
-   <tr>
-      <td><code class="highlighter-rouge">Credit Usage</code></td>
-      <td>
-         Tracks the credits for <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">consumption-based pricing</a> your cluster has consumed. Used for the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#credit-usage-pinboard">Credit Usage Liveboard</a>.
-      </td>
-   </tr>
-   <tr>
-      <td><code class="highlighter-rouge">Discover Monitoring Data</code></td>
-      <td>
-         Contains data on how users are searching for existing answers and Liveboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Liveboard</a>.
-      </td>
-   </tr>
-   <tr>
-      <td><code class="highlighter-rouge">Product Usage</code></td>
-      <td>
-         Contains usage data for the product. Specifies what existing Worksheets, tables, and Views users search on and create objects from, and what those objects are. Specifies what actions users complete in the product. You can also use this Worksheet to view the underlying data sources for any objects, and any object’s dependents.
-      </td>
-   </tr>
-   <tr>
-      <td><code class="highlighter-rouge">MetricsMonitoring</code></td>
-      <td>
-         Contains data on how users are searching for existing answers and Liveboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Liveboard</a>.
-      </td>
-   </tr>
-   <tr>
       <td><code class="highlighter-rouge">TS: BI Server</code></td>
       <td>
          Contains data related to the systems associated with underlying the
@@ -75,33 +42,70 @@ To list the system worksheets and views:
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">TS: External Table Current Row Count</code></td>
+      <td><code class="highlighter-rouge">TS: Database</code></td>
       <td>
-         Contains data related to the row count for external tables, or tables loaded through Connections.
+         Contains information related to the database cache and queries run on the database. For example, you could use this worksheet to see data on the query errors returned by the database.
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">TS: Rows of un-cached tables for each connection</code></td>
+      <td><code class="highlighter-rouge">TS: Internal Capacity WS</code></td>
       <td>
-         Contains data related to the sum of rows count for each un-cached table in a connection.
+         Describes cluster memory capacity by node over time.
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">TS: External Table Stats WS</code></td>
+      <td><code class="highlighter-rouge">TS: Internal Table Wise Capacity WS</code></td>
       <td>
-         Contains data related to the stats collected for external tables, or tables loaded through Connections.
+         Describes memory capacity by node, table name, shard count, and CSV replication over time.
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">TS: External Table Info</code></td>
+      <td><code class="highlighter-rouge">TS: Metrics</code></td>
       <td>
-         Contains data related to external tables, or tables loaded through Connections.
+         Contains metrics by cluster and host over time.
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">TS: Daily Row Count External Table</code></td>
+      <td><code class="highlighter-rouge">TS: Search</code></td>
       <td>
-         Contains Connections data, stored on a daily basis: the number of rows in your external database, and whether each external table is cached or not.
+         Contains data related to the number of searches (queries) run in the system. This contains
+         information such as uptime, host, and timestamps.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS: Service Resources</code></td>
+      <td>
+         Contains data related to cluster nodes including page faults, memory usage, memory failures, and more.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS: Table Info</code></td>
+      <td>
+         Describes the named tables by timestamp, row count, row shards, and row size.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS: Table Row Counts</code></td>
+      <td>
+         Describes the named tables by timestamp and row count.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS: Table Row Counts and Shards</code></td>
+      <td>
+         Describes the named tables by timestamp, row count, row shards, and row size.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS: Table Row Size</code></td>
+      <td>
+         Describes the named tables by timestamp and row size.
+      </td>
+   </tr>
+   <tr>
+      <td><code class="highlighter-rouge">TS: Table Shards</code></td>
+      <td>
+         Describes the named tables by timestamp and shard count.
       </td>
    </tr>
 </table>

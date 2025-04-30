@@ -1,12 +1,12 @@
 ---
 title: [Introduction to administration]
-last_updated: 4/7/2021
+last_updated: 09-23-2019
 summary: "This guide covers all topics of special interest to application administrators."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-This guide provides information for application administrators.
+This guide provides information for application administrators, or users with [administrative access privileges]({{ site.baseurl }}/admin/setup/logins.html).
 
 Before addressing the major components of this guide, we recommend that you familiarize yourself with the general top-level [architecture]({{ site.baseurl }}/admin/architecture/components.html) of the ThoughtSpot service.
 
@@ -24,6 +24,7 @@ Additionally, administrators are often involved in the following workflows:
 - [Using worksheets]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) to simplify search
 - [Using views]({{ site.baseurl }}/complex-search/about-query-on-query.html) for 'stacked' search;
    note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the `IN` keyword (See https://docs.thoughtspot.com/6.0/complex-search/in-keyword-searches.html).
+- **Beta** [Enabling SearchIQ]({{ site.baseurl }}/complex-search/about-query-on-query.html), ThoughtSpot's natural language search.
 - [Managing scheduled jobs]({{ site.baseurl }}/admin/manage-jobs/about-scheduled-pinboards.html)
 - [Monitoring system health]({{ site.baseurl }}/admin/system-monitor/introduction.html)
 - [Troubleshooting]({{ site.baseurl }}/admin/troubleshooting/troubleshooting-intro.html)
