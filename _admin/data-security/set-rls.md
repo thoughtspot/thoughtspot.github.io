@@ -1,9 +1,9 @@
 ---
 title: [Set row level security rules]
 
-last_updated: 3/3/2020
+last_updated: tbd
 
-summary: "Learn how to set RLS rules."
+summary: "Explains the process for setting RLS rules."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -23,11 +23,11 @@ do the following:
 2. Click **Row security**.
 3. Click **+ Add row security**.
 
-    ![Click + add row security]({{ site.baseurl }}/images/rls-button.png "click + add row security")
+    ![]({{ site.baseurl }}/images/add_row_security.png "Add row security")
 
     The system displays the Rule Builder.
 
-    ![Rule builder]({{ site.baseurl }}/images/rls-rule-builder.png "Rule builder")
+    ![]({{ site.baseurl }}/images/rls_rule_builder.png "The Rule Builder")
 
     You define row level security by creating an expression that gets evaluated
     for every row and group combination. This powerful feature can be used with
@@ -38,14 +38,14 @@ do the following:
 6. Enter an expression for your rule.
 
    The rule gets evaluated against an authenticated user for every row and group
-   combination. If the rule evaluates to `FALSE`, the user cannot see that row's
-   data. Instead, they see the message `No data to display.` Use the variable **ts_groups** to refer to the group name.
+   combination. If the rule evaluates to true, the user can't see that row's
+   data. Use the variable **ts_groups** to refer to the group name.
 
    ![]({{ site.baseurl }}/images/rls_enter_expression.png "Enter an expression")
 
     You can see a list of available operators by clicking on **Rule Assistant**.
 
-    ![Rule assistant]({{ site.baseurl }}/images/rls-rule-assistant.png "Rule assistant")
+    ![]({{ site.baseurl }}/images/rls_rule_assistant.png "The Rule Assistant")
 
     As you type, ThoughtSpot suggests formula syntax, variables, and column
     names. If you can't remember the exact column name or variable you want to
@@ -62,15 +62,16 @@ rules by clicking **+ Add**.
 ## Test your rule with restricted and unrestricted users
 
 To test your rule, log in as users in different groups. Search within the table
-for data that your test user can and can't access. Make sure your test users
-can see the appropriate rows.
+for data both that you test user can and can't access. Make sure your test users
+are seeing the appropriate rows.
 
 ## Related information
 
 * Administrators can bypass the RLS rules set on a the table at the worksheet
-level. See [change the join rule or RLS setting for a worksheet]({{
-site.baseurl }}/admin/worksheets/change-inclusion-rule.html#).
+level. See how to ["Change inclusion, join, or RLS for a worksheet]({{
+site.baseurl }}/admin/worksheets/change-inclusion-rule.html#) in this
+documentation for more information.
 
-* For a list of operators and functions you can use to build RLS rules, see the
-[row level security rules reference]({{ site.baseurl
+* For a list of operators and functions you can use to build RLS rules see
+[Row level security rules reference]({{ site.baseurl
 }}/reference/rls-rule-builder-reference.html#).

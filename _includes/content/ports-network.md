@@ -13,9 +13,9 @@ If your organization does not allow you to open all ports, make sure you open th
 |443|TCP|Secure nginx|inbound|All nodes|All nodes|Primary app HTTPS port (nginx)|
 |2100|RPC|Oreo RPC port|bidirectional|All nodes|All nodes|Node daemon RPC|
 |2101|HTTP|Oreo HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Node daemon HTTP|
-|2181|TCP|Zookeeper servers listen on this RPC port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this RPC port for client connections|
-|3181|TCP|Zookeeper servers listen on this RPC port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this RPC port for client connections|
-|4181|TCP|Zookeeper servers listen on this RPC port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this RPC port for client connections|
+|2181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
+|3181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
+|4181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
 |2200|RPC|Orion master RPC port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
 |2201|HTTP|Orion master HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the cluster manager|
 |2205|TCP|Cluster update service TCP port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
@@ -108,6 +108,7 @@ ThoughtSpot uses static ports for inbound and outbound access to the cluster.
 |443|TCP|HTTPS|outbound|All nodes|For transferring product usage data to mixpanel cloud.|outbound|
 |443|TCP|HTTPS|outbound|All nodes|je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
 |25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
+|389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
 
 
 ### Required ports for IPMI (Intelligent Platform Management Interface)

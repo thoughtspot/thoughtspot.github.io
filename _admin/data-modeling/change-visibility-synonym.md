@@ -1,5 +1,6 @@
 ---
 title: [Hide a column or define a synonym]
+
 last_updated: tbd
 summary: "Hide a column from users or make it easier to find by assigning a synonym."
 sidebar: mydoc_sidebar
@@ -43,13 +44,13 @@ You can set column synonyms for columns in tables, user imported data, and
 worksheets. The returned table or chart uses the _actual column name_,
 but the search bar reflects the term the user typed in (the synonym).
 
-To create a synonym for a column:
+To create a column description:
 
 1. Find the column for which you want to add synonyms.
 2. Select its **Synonyms**.
-3. Enter a comma-separated list of the synonyms.
+3. Type in a comma separated list of the synonyms you want to add.
 
-   If a synonym is more than one word, enclose it in double quotes. If
+   If a synonym is more than one word, it must be enclosed in double quotes. If
    you are using the Web interface, you would type:
 
     ```
@@ -57,7 +58,7 @@ To create a synonym for a column:
     ```
 
     If you are using the model file, the list of synonyms must be enclosed in
-    square brackets:
+    square brackets. For example:
 
     ```
     [profit, "gross profit"]
@@ -68,4 +69,4 @@ To create a synonym for a column:
 
 ## Related information  
 
-[Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
+[Model the data for searching](semantic-modeling.html#)

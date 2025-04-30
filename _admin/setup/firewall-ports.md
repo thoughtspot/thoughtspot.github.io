@@ -17,3 +17,7 @@ For regular operations and debugging, there are some ports you you must keep ope
 ## Required ports for cluster communication
 
 {% include content/ports-network.md %}
+
+## Related information  
+
+[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)

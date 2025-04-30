@@ -1,39 +1,84 @@
 ---
 title: [Configure support services]
-last_updated: 3/4/2020
-summary: "There are several configurations you can set up in your installation to ensure
-your company's support from ThoughtSpot works smoothly."
+
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{: id="reverse-tunnel"}
+There are several configurations you can set up in your installation to ensure
+your company's support from ThoughtSpot works smoothly.
+
 ## Set up a reverse tunnel for support
 
 You can set up a reverse tunnel to allow ThoughtSpot Support to get access to
 your ThoughtSpot instance, to perform support-related activities. This setup is
-scalable, more secure, and a much simpler alternative to using a
+a much simpler, more secure, and scalable than the alternative option of using a
 virtual meeting room.
 
-Granting remote support access can streamline troubleshooting activities, because
-it enables your support agent to work directly on your computer form a secure setting. The remote
+Granting remote support access can streamline troubleshooting activities, since
+it enables your support agent to work directly in a secure setting. The remote
 tunnel enables SSH and HTTP access to your ThoughtSpot instance by ThoughtSpot Support.
 This access can be granted and revoked easily, so you can enable it for a troubleshooting
 session, and then disable it again. Before doing this procedure, make sure your
 company's security policies allow reverse tunneling.
 
-{% include note.html content="Before you set up a reverse tunnel, open port `22`
-in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`." %}
+**_NOTE:_** Before you set up a reverse tunnel, open port `22`
+in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 
-{: id="remote-support-tscli"}
-## Using remote support with tscli
+<!--### Using Management Console
 
-To enable remote support, follow these steps:
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
-1. Contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) and open a support ticket for making the appropriate reverse tunnel settings on our end.
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** menu on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/admin.png)
+
+   This opens the ThoughtSpot Management Console.
+3. Click **Settings** menu on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/settings.png)
+
+4. In the Settings panel, click **Reverse SSH Tunnel** and then  **Edit** option.
+
+   ![]({{ site.baseurl }}/images/ssh.png)  
+
+5. Enter the reverse tunnel details:
+
+      ![]({{ site.baseurl }}/images/ssh-configure.png)
+
+      <table>
+      <colgroup>
+      <col width="20%" />
+      <col width="80%" />
+      </colgroup>
+      <tr>
+      <th>Field</th>
+      <th>Description</th>
+      </tr>
+      <tr>
+      <th>Have you whitelisted tunnelrelay.thoughtspot.com?</th>
+      <td>Ensure that this has been done before you enable the SSH tunnel. Select <b> Yes </b> to continue.</td>
+      </tr>
+      <tr>
+      <th>Reverse SSH Tunnel</th>
+      <td>Select <b>Enable</b> to enable SSH and HTTP access to ThoughtSpot Support for troubleshooting.</td>
+      </tr>
+      </table>
+
+6. Click **Save** to configure the SSH tunnel.
+
+You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.
+-->
+### Using tscli
+To enable remote support:
+
+1. [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#) and open a support ticket for making the appropriate reverse tunnel settings on our end.
     Provide the cluster name of the cluster for which you want to enable remote support.
 2. After the ticket is completed, continue with the remaining steps in this procedure to make the settings on your side.
-3. Log in to the Linux shell using SSH.
+3. Log into the Linux shell using SSH.
 4. Issue the command to configure the destination for the remote tunnel.
 
     You only need to do this one time, when you are enabling the tunnel for the very
@@ -56,7 +101,7 @@ To enable remote support, follow these steps:
     $ tscli support start-remote
     ```
 
-7. Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html) and test your setup.
+7. [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#) and test the setup with your ThoughtSpot Support contact.
 8. After your remote session with ThoughtSpot Support is over, turn the remote tunnel off until you need to use it again:
 
     ```
@@ -71,24 +116,24 @@ To enable remote support, follow these steps:
     $ tscli support show-remote
     ```
 
-{: id="configure-secure-file-server"}
 ## Configure a secure file server
 
-ThoughtSpot Support uses a secure file server to distribute new releases and to
-access your logs and troubleshooting files. You must also use a secure server
-connection to enable the optional performance statistics collection.
+ThoughtSpot Support uses a secure file server to provide new releases and to
+receive logs and troubleshooting files that you upload. The secure server
+connection is also required if you want to enable the optional statistics
+collection using the call home feature.
 
-Before uploading files to the secure file server, obtain your user name
-and password for logging into the secure file server. You can get these from
+Before you can upload a file to the secure file server, obtain your user name
+and password for logging in to the secure file server. You can get these from
 ThoughtSpot Support.
 
-Configuring the connection to the file server is a one-time operation. You do
+Configuring the connection to the file server is a one time operation. You do
 not have to reconfigure the connection unless your password changes. Note that
 you can do a one time override of the user and password you used to configure
 the connection. This is done by passing a different user and password on the
 command line when uploading or downloading a file.
 
-To configure the connection to the secure file server, follow these steps:
+To configure the connection to the secure file server:
 
 1. Log in to the Linux shell using SSH.
 2. Issue the command to configure the file server:
@@ -99,7 +144,7 @@ To configure the connection to the secure file server, follow these steps:
 
     If you do not supply the `--password` parameter, you are prompted to enter it.
 
-{: id="cluster-usage-data"}
+
 ## Call home with cluster usage data
 
 "Call home" data is metadata and usage data from your ThoughtSpot cluster. This
@@ -112,21 +157,21 @@ rest on the server.
 By default, call home is enabled on your cluster. You can disable call home in
 by doing the following:
 
-1. Log in to the ThoughtSpot server as `admin` user.
+1. Log into the ThoughtSpot server as `admin` user.
 2. Use the `tscli` command to disable.
 
     ```
     $ tscli callhome disable
     ```
 
-{: id="support-contact"}
 ## Designate a support contact
 
-A support contact person can answer your questions about data and search at
-your company. If the person can't answer your system and software-related questions, that person should submit
- the questions to ThoughtSpot Support. The designated support contact should have an available email and phone number.
+A support contact person can answer questions for about data and searching at
+your company. If the person can't answer a question that person should submit
+system and software-related questions to ThoughtSpot Support. Your designated
+support contact should have an available email and phone number.
 
-To designate the custom support contact, follow these steps:
+To designate the custom support contact:
 
 1. Log in to the Linux shell using SSH.
 2. Issue the `tscli` command to set the email address:
@@ -141,54 +186,52 @@ To designate the custom support contact, follow these steps:
     $ tscli support set-admin-phone <phone_number>
     ```
 
-4. If you need to reset both of these to the default (ThoughtSpot Support), issue these commands:
+4. If you need to reset both of these to the default (ThoughtSpot Support), issue:
 
     ```
     $ tscli support rm-admin-email
     $ tscli support rm-admin-phone
     ```
 
-{: id="feedback contact"}
 ## Manage the feedback contact
 
 Users in ThoughtSpot may be asked for feedback for new or BETA features in the
 system. By default, feedback goes directly to ThoughtSpot support.
-
-Alternatively, and especially in cases of using ThoughtSpot in embedded mode, you can send feedback to someone in your company.
+Alternatively, you can send feedback to someone in your company, this is useful
+if you are using ThoughtSpot embedded.
 
 Your designated feedback contact should have an available email. To designate
-the custom feedback contact, follow these steps:
+the custom feedback contact, do the following:
 
 1. Log in to the Linux shell using SSH.
-
-2. To set the feedback email address, issue this command:
+2. To set the feedback email address, do the following:
 
     ```
     $ tscli support set-feedback-email <email_address>
     ```
-3. Verify the email address is set:
+3. Verify the email address was set:
 
     ```
     $ tscli support show-feedback-email
     ```
 
-To reset the email to the default (ThoughtSpot support), issue this command:
+If you need to reset the email to the default (ThoughtSpot support), issue:
 
 ```
 $ tscli support rm-feedback-email
 ```
 
-You can also choose not to send feedback on your system. Issue this command:
+You can also choose not to send feedback out of your system at all by doing the
+following:
 
 ```
 $ tscli support set-feedback-email ' '
 ```
 
-{: id="find-support-contact"}
 ## How users find your company's support contact
 
-After you set the custom support contact information, your users
-can see it in the following parts of ThoughtSpot:
+After you set the custom support contact information, here's where your users
+will see it:
 
 -   In the Help Center, when a user selects **Contact Support**.
 
@@ -196,4 +239,4 @@ can see it in the following parts of ThoughtSpot:
 
 -   In error messages, when a user selects **What Happened?**
 
-    <!-- ![]({{ site.baseurl }}/images/trace_log.png "Error message support contact")-->
+     ![]({{ site.baseurl }}/images/trace_log.png "Error message support contact")

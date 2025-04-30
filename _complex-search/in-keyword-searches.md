@@ -1,15 +1,17 @@
 ---
-title: [Subquery search]
-last_updated: 03/23/2020
-summary: "You can use the IN keyword to complete a nested search"
+title: [Using the in keyword for nested searches]
+
+
+last_updated: tbd
+summary: "You can use the in keyword to do a search on the result of another search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search, commonly known as a subquery. You can use the `IN` keyword instead.
+Beginning with version 5.2 of ThoughtSpot, you no longer need a View when you want to do a search on top of another search. You can use the "in" keyword instead.
 
 ![]({{ site.baseurl }}/images/in_search_bar_example.png "In search example")
 
-Suppose you must narrow a result set based on criteria defined using a search. For example:
+Suppose you wanted to narrow down a result set based on criteria defined using a search. For example:
 
 Find the top 5 stores by sales in the bakery department
 
@@ -31,16 +33,16 @@ Now you can do this analysis in a single search using the "in" keyword. This pro
 
 {% include content/keywords-in.md %}
 
-##  Create an IN search
+##  Create an in search
 
 1. Start a new search.
 
-2. Run the search you plan to use for the `in clause. That is, the first level search.
+2. Do the search you plan to use for the in clause. That is, the first level search.
 
    Check that the result is what you're looking for.
 
    ![]({{ site.baseurl }}/images/in_search_first_step.png "In search example")
 
-3. Copy that search, and paste it into your new search as the `in` clause.
+3. Copy that search, and paste it into your new search as the in clause.
 
    ![]({{ site.baseurl }}/images/in_search_example.png "In search example")

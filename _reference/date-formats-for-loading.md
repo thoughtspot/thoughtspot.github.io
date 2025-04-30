@@ -1,7 +1,7 @@
 ---
 title: [Date and time formats reference]
-summary: ThoughtSpot supports several date and time formats.
-last_updated: 11/19/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,7 +17,7 @@ time when you load data in these contexts:
 Data loading formats do not change how data is displayed in tables and charts.
 
 The context where you _can control_ date and time formats is data modeling. Data
-modeling controls how data is displayed in search and their resulting answers.
+modeling controls how data is displayed in search and their resulting answers..
 
 ## Data loading formats through tsload
 

@@ -1,11 +1,12 @@
 ---
 title: [Pinboard filters]
-summary: "You can apply filters to pinboards as well as tables and charts."
-last_updated: 11/18/2019
+
+last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Filters, including bulk filters and exclude filters, can be applied to pinboards just as with tables
+Filters, including bulk filters and exclude fiters, can be applied to pinboards just as with tables
 and charts. These kinds of filters apply to an entire pinboard, making it easy
 to see only the data that you are interested in across the tables and charts
 within a pinboard.
@@ -19,13 +20,12 @@ for specific purposes or audiences.
 When you apply a filter, the pinboard is not automatically saved with your
 filter applied. This is to encourage ad hoc filtering. Therefore, people with
 read-only access can create pinboard filters. You must have edit access to the
-pinboard, and view access (or higher) to the underlying data source in order to save a pinboard filter.
+pinboard, and view access (or higher) to the underlying data source in order
+save a pinboard filter.
 
 Note that pinboard filters only apply to the tables and charts that are based on
 worksheets. If a pinboard also includes tables and charts that were created from
 underlying tables or on user uploaded data, the filters don’t apply to them.
-
-To create one filter that filters visualizations based on multiple Worksheets, you can link the Worksheet columns, at the Pinboard level. Refer to [Linked Pinboard filters]({{ site.baseurl }}/complex-search/linked-filters.html).
 
 ## Create a pinboard filter
 
@@ -36,7 +36,7 @@ one place.
 Here is an example that shows you how to add a single filter to a pinboard. To
 create a pinboard filter:
 
-1. Click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
+1. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
 
      ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
 
@@ -58,19 +58,6 @@ create a pinboard filter:
   filter applied to every object in the pinboard that was created from a
   worksheet. Pinboard filters do not apply to tables and charts built directly on
   top of base tables.
-
-## Apply filters to specific visualizations
-You can apply filters to only certain visualizations that you specify. To specify the visualizations that a Pinboard filter should apply to, follow these steps, or refer to [Selective Pinboard filters]({{ site.baseurl }}/complex-search/selective-filters.html):
-
-1. Select the **more options menu** ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
-
-    ![Configure filters]({{ site.baseurl }}/images/configure-filters.png "Configure filters")
-
-2. In the **Configure filters** modal, choose the filter you would like to update from the side menu.
-
-3. Scroll down to **Applicable to**. You can select the **All** option, or only choose certain visualizations. You can also search for a visualization.
-
-    ![Specify filtered visualizations]({{ site.baseurl }}/images/filter-applicable-to.png "Specify filtered visualizations")
 
 ## Edit a filter from the answer
 

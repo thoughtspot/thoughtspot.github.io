@@ -22,8 +22,17 @@ See [JDBC Driver Overview]({{ site.baseurl }}/data-integrate/clients/about-jdbc-
 * **Windows**: [ThoughtSpot_windows_odbc_4.2.zip](https://thoughtspot.egnyte.com/dl/xtGeQPL3nD/ThoughtSpot_windows_odbc_4.2.zip_)  
   See [Install the ODBC driver on Windows]({{ site.baseurl }}/data-integrate/clients/install-odbc-windows.html)
 
-* **Linux**:  [ThoughtSpot_odbc_linux_3.8.tar.gz](https://thoughtspot.egnyte.com/dl/84csZ4USEX/ThoughtSpot_odbc_linux_3.8.tar.gz_)  
+* **Linux**:  [ThoughtSpot_odbc_linux_3.4.tar.gz](https://thoughtspot.egnyte.com/dl/84csZ4USEX/ThoughtSpot_odbc_linux_3.8.tar.gz_)  
 See [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)
 
 ## JavaScript API ##
 For the JavaScript API, see the [JavaScript API library](https://thoughtspot.egnyte.com/dl/D8tbICaVbR/).
+
+## Embedding ThoughtSpot ##
+For information on ThoughtSpot Extended Enterprise Edition, our embeddable offering, see [**Embedding**]({{ site.baseurl }}/app-integrate/introduction/introduction.html).
+
+## Virtual Platforms ##
+
+* **VMware**<br>
+[ts-centos7-vmware-template.tar.gz](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr)<br>
+[Set up VMware for ThoughtSpot]({{ site.baseurl }}/appliance/vmware/vmware-setup.html)

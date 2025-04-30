@@ -8,7 +8,7 @@ summary: "Use the schema viewer to see tables and worksheets and their relations
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot has a **Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.
+ThoughtSpot has a ##Schema Viewer** though which you can examine the database schema. It is interactive and configurable, so you can see the level of detail that is relevant to your work.
 
 You must have **Admin** privileges to use the **Schema Viewer**.
 
@@ -64,7 +64,7 @@ You can now see the schema for each object for tables, worksheets, or views.
 
 3. From the list of objects, select one. Here, we selected the worksheet _West Regional Sales_.
 
-4. At the top of the worksheet, click the **Joins** tab.
+4. At the top of the worksheet, click the **Schema** tab.
 
    ![]({{ site.baseurl }}/images/select-worksheet-schema.png "Click worksheet Schema")
 
@@ -91,14 +91,14 @@ specific table or worksheet.-->
 ## How the Schema Viewer shows joins
 
 You can use the Schema Viewer to review your schema and ensure that it was
-modeled using best practices. For example, joins appear in different colors to distinguish their type:
+modeled using best practices. For example, joins appear in different colors to distinquish their type:
 
 * Red is used for generic relationships
 * Green is used for primary key/foreign key joins
 
 When viewing a worksheet, you can also see what joins connect the tables: the inner, left outer, right outer, or full outer joins
 
-A good rule to follow is "Keep it Green". This means that you can get better results from PK/FK joins rather than from using generic relationships. You should only use generic relationships when the tables being joined have a many-to-many rather than a PK/FK structure. If you find tables that have been joined using a generic relationship, but could have used a PK/FK join, you should drop the relationship and create a PK/FK join instead.
+A good rule to follow is "Keep it Green". This means that you can get better results from PK/FK joins rather than from using generic relationships. You should only use generic relationships when the tables being joined have a many-to-many rather than a PK/FK structure. If you find tables that have been joined using a generic relationship, but could have used a PK/FK join, you should drop the relationship and create a PK/FK join instead. To do this, you need to use the ALTER TABLE...DROP RELATIONSHIP statement in TQL. Then use ALTER TABLE...ADD FOREIGN KEY to create the PK/FK join.
 
 ## Worksheet view
 
@@ -125,3 +125,5 @@ The worksheet view shows the following information:
 
 -   [Worksheet joins]({{ site.baseurl }}/admin/worksheets/add-joins.html)
 -   [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html)
+-   [Change the schema using TQL]({{ site.baseurl }}/admin/loading/change-schema.html)
+-   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html)

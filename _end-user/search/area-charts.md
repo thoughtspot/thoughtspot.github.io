@@ -1,10 +1,11 @@
 ---
 title: [Area Charts]
-summary: The area chart is based on the line chart, but has filled in regions.
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+The area chart is based on the line chart, but has filled in regions.
 
 ## Understand area charts
 

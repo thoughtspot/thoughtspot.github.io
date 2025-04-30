@@ -1,7 +1,9 @@
 ---
 title: [Schema planning concepts]
-last_updated: 11/15/2019
-summary: "Learn about creating a schema for the ThoughtSpot Loader."
+
+
+last_updated: tbd
+summary: "Considerations in creating a schema for the ThoughtSpot Loader."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

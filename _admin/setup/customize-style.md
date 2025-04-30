@@ -10,8 +10,9 @@ permalink: /:collection/:path.html
 You can customize the look and feel of the ThoughtSpot application for your
 company. Configuring these settings sets system-wide defaults for all your users.
 
-Style customization is enabled by default. You can configure your cluster to disable this functionality.
-Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html) about disabling this feature.
+Style customization is enabled by default. You can configure your cluster to disable this functionality. Contact
+<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for information
+about disabling this feature.
 
 ## Where to customize styles
 

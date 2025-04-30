@@ -24,7 +24,7 @@
    </tr>
    <tr>
       <td> <code>ts_username</code> </td>
-      <td>Returns the user with the matching name.  </td>
+      <td>Returns the user with the matching neame.  </td>
       <td><code>ts_username != 'mark'</code>  </td>
    </tr>
 </table>

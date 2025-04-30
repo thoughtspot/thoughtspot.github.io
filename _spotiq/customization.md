@@ -1,7 +1,6 @@
 ---
 title: [Custom SpotIQ analysis]
-summary: Learn how to customize SpotIQ analysis.
-last_updated: 11/15/2019
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

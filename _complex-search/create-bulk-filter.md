@@ -1,7 +1,7 @@
 ---
 title: [Create a bulk filter]
-summary: Learn how to create a bulk filter.
-last_updated: 11/15/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,7 +25,7 @@ spreadsheet.
 
      ![]({{ site.baseurl }}/images/bulk_filter_copy_to_clipboard.png "Copy to the Clipboard")
 
-3. Hover over the column header you want to filter, and click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
+3. Hover over the column header you want to filter, and click the **three-dot icon (ellipses)** icon.
 
 4. Choose whether you want your bulk filter to **Include** or **Exclude** values.
 

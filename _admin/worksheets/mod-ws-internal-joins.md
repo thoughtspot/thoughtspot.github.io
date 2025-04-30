@@ -1,7 +1,8 @@
 ---
 title: [Modify joins within a worksheet]
-last_updated: 11/18/2019
-summary: "Learn how to change the join type between the tables within a worksheet."
+
+last_updated: 11/2/2018
+summary: "Learn how to change the join type between the tables within a worksheet"
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -25,13 +26,13 @@ To modify the join types within a worksheet, follow these steps:
 
 3. Click the name of the worksheet. Here, we selected the worksheet _West Regional Sales_.
 
-4. At the top of the worksheet, click the **Joins** tab.
+4. At the top of the worksheet, click the **Schema** tab.
 
    ![]({{ site.baseurl }}/images/select-worksheet-schema.png "Click worksheet Schema")
 
 5. The join information and the schema for the worksheet appear.
    -  The schema representation includes the join type.  
-   -  You can see the list of _Joins within the worksheet_, which include all joins between the underlying tables [created in the browser]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
+   -  You can see the list of _Joins within the worksheet_, which include all joins between the underlying tables, both [created using TQL]({{ site.baseurl }}/admin/loading/constraints.html) and [created in the browser]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html).
    -  The fact table is always on the left side of the join, and it appears on the left side.
 
    ![]({{ site.baseurl }}/images/worksheet-join-schema-view.png "View join and schema")
@@ -71,4 +72,5 @@ To modify the join types within a worksheet, follow these steps:
 ## Related Information
 
 -   [Join rule]({{ site.baseurl }}/admin/worksheets/progressive-joins.html)
+-   [Create joins using TQL]({{ site.baseurl }}/admin/loading/constraints.html)
 -   [Create join relationships in the browser]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html)
