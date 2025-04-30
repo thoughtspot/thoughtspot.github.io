@@ -26,26 +26,31 @@ The nodes on the front of both appliances go from A-D left to right. For this Ha
 
 {: id="haswell-front-back"}
 
-{% include image.html file="smc-haswell-front-view.png" title="The front of the Haswell appliance" alt="The front of the Haswell appliance" caption="Haswell front view" %}
+![The front of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-front-view.png "The front of the Haswell appliance")
+<!--{% include image.html file="smc-haswell-front-view.png" title="The front of the Haswell appliance" alt="The front of the Haswell appliance" caption="Haswell front view" %}-->
 
 The nodes on the back of both appliances are in a reverse N shape, with Node A at the bottom right and Node D at the top left.
-{% include image.html file="smc-haswell-back-view.png" title="The back of the Haswell appliance" alt="The back of the Haswell appliance" caption="Haswell back view" %}
+![The back of the Haswell appliance]({{ site.baseurl }}/images/smc-haswell-back-view.png "The back of the Haswell appliance")
+<!--{% include image.html file="smc-haswell-back-view.png" title="The back of the Haswell appliance" alt="The back of the Haswell appliance" caption="Haswell back view" %}-->
 The Haswell appliance shown here is not fully populated, as it only has three nodes. Your appliance may be populated with 1-4 nodes, depending on the ordered configuration. If you order less than four nodes, ThoughtSpot fills the empty slot with a filler panel.
 
 {: id="skylake-front-back-diagrams"}
 ## Skylake front and back views
 
 {: id="skylake-front-back"}
-{% include image.html file="smc-skylake-front-view.png" title="The front of the Skylake appliance" alt="The front of the Skylake appliance" caption="Skylake front view" %}
+![The front of the Skylake appliance]({{ site.baseurl }}/images/smc-skylake-front-view.png "The front of the Skylake appliance")
+<!--{% include image.html file="smc-skylake-front-view.png" title="The front of the Skylake appliance" alt="The front of the Skylake appliance" caption="Skylake front view" %}-->
 
-{% include image.html file="smc-skylake-back-view.png" title="The back of the Skylake appliance" alt="The back of the Skylake appliance" caption="Skylake back view" %}
-The Skylake appliance shown here is fully populated with four nodes.
+![The back of the Skylake appliance]({{ site.baseurl }}/images/smc-skylake-back-view.png "The back of the Skylake appliance")
+<!--{% include image.html file="smc-skylake-back-view.png" title="The back of the Skylake appliance" alt="The back of the Skylake appliance" caption="Skylake back view" %}
+The Skylake appliance shown here is fully populated with four nodes.-->
 
 {: id="smc-serial-number"}
 ## Location of serial number
 You may need to know your appliance's serial number, to be able to access online help from your appliance provider. Find your Super Micro Computer's serial number on the top of the appliance, above the label for Node D at the front right corner.
 
-{% include image.html file="smc-serialnumber.png" title="Location of serial number" alt="Find your SMC appliance's serial number, model, and part number on the top of the appliance, above the label for Node D at the front right corner." caption="Location of serial number" %}
+![Location of serial number]({{ site.baseurl }}/images/smc-serialnumber.png "Location of serial number")
+<!--{% include image.html file="smc-serialnumber.png" title="Location of serial number" alt="Find your SMC appliance's serial number, model, and part number on the top of the appliance, above the label for Node D at the front right corner." caption="Location of serial number" %}-->
 
 ## Connect the appliance
 Next, [connect the appliance.]({{ site.baseurl }}/appliance/hardware/connect-appliance-smc.html)

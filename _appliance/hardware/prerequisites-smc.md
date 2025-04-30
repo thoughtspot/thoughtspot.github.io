@@ -1,6 +1,6 @@
 ---
 title: [Prerequisites]
-last_updated: [1/13/2020]
+last_updated: [1/17/2020]
 summary: "Complete these prerequisites before installing your ThoughtSpot clusters on the SMC appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -33,7 +33,7 @@ Ensure that you have the following items, information, and understanding of poli
 
 <tr>
 <td>&#10063;</td>
-<td>100Mbps or 1Gbps switch for IPMI, for Out of Band Management. You need one for each cluster.</td></tr>
+<td>100Mbps or 1Gbps switch for IPMI, for Out of Band Management. You need one for each node in your cluster.</td></tr>
 
 <tr>
 <td>&#10063;</td>

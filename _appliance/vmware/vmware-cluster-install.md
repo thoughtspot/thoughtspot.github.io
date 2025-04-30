@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot clusters in VMware]
-last_updated: [1/14/2020]
+last_updated: [1/16/2020]
 summary: "Learn how to install ThoughtSpot clusters in VMware."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -37,11 +37,6 @@ Refer to your welcome letter from ThoughtSpot to find the link to download the r
 
 {: id="cluster-step-1"}
 ### Step 1: Run the installer
-1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
-    ```
-    $ screen -S DEPLOYMENT
-    ```
-
 1. Copy the downloaded release bundle to `/export/sdb1/TS_TASKS/install` using the following command:
 ```
     $ scp <release-number>.tar.gz admin@<hostname>:/export/sdb1/TS_TASKS/install/<file-name>
@@ -70,6 +65,10 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
     ```
 
     Your output says `ok` if you have the correct release.
+1. Launch a [screen](https://linux.die.net/man/1/screen) session. Use screen to ensure that your installation does not stop if you lose network connectivity.
+    ```
+    $ screen -S DEPLOYMENT
+    ```
 
 2. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.
@@ -79,10 +78,13 @@ Run `tscli cluster create` to create the cluster.
 
 {% include content/install/cluster-steps1through3.md %}
 
+## Lean configuration
+**(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.
+
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot:
 
-* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
 * [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)

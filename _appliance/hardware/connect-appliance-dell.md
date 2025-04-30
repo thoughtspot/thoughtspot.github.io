@@ -40,7 +40,8 @@ Connect the 10GbE port of each node, as illustrated in [Dell Port Location](#app
 
 The ports are on the back of the Dell appliance.
 
-{% include image.html file="dell-port-location.png" title="Dell port location" alt="The iDRAC management port, the 10GbE Data port, and the Display port are on the back of the appliance. The Display port requires a dongle that Dell provides." caption="Dell port location" %}
+![Dell port location]({{ site.baseurl }}/images/dell-port-location.png "Dell port location")
+<!--{% include image.html file="dell-port-location.png" title="Dell port location" alt="The iDRAC management port, the 10GbE Data port, and the Display port are on the back of the appliance. The Display port requires a dongle that Dell provides." caption="Dell port location" %}-->
 
 * Connect to switches **only** the appliances (4 nodes each) that you plan to use in your cluster.
 * You must power off, or disconnect from the switch, any other nodes or appliances.<br>
@@ -59,15 +60,16 @@ See [Dell Port Location](#appliance-port-location).
 ## Step 3: Connect a keyboard and monitor
 Connect a keyboard and monitor to the appliance. You need these to initially configure the appliance, and you can disconnect them later. Use the adapter Dell provides. Plug it into the Display Port shown in [Dell Port Location](#appliance-port-location), and plug the monitor in on the other side of the adapter.
 
-{% include image.html file="dell-monitor-adapter.png" title="Dell-provided display to VGA adapter" alt="Plug the monitor and keyboard into the display port using the adapter." caption="Dell-provided display to VGA adapter" %}
+![Dell-provided display to VGA adapter]({{ site.baseurl }}/images/dell-monitor-adapter.png "Dell-provided display to VGA adapter")
+<!--{% include image.html file="dell-monitor-adapter.png" title="Dell-provided display to VGA adapter" alt="Plug the monitor and keyboard into the display port using the adapter." caption="Dell-provided display to VGA adapter" %}-->
 
 {: id="appliance-step-4"}
 ## Step 4: Turn on nodes
 Turn on power for the nodes by pressing the power button for each one; see [Dell Power Buttons](#appliance-power-button).
 
 {: id="appliance-power-button"}
-
-{% include image.html file="dell-power-button.png" title="Dell power buttons" alt="The power buttons for the nodes are on the front of the appliance. There is one power button for each node." caption="Dell power buttons" %}
+![Dell power buttons]({{ site.baseurl }}/images/dell-power-button.png "Dell power buttons")
+<!--{% include image.html file="dell-power-button.png" title="Dell power buttons" alt="The power buttons for the nodes are on the front of the appliance. There is one power button for each node." caption="Dell power buttons" %}-->
 
 There is one power button for each node. The image above shows two of the four power buttons.
 

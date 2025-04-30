@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot Nodes on the SMC Appliance]
-last_updated: [12/13/2019]
+last_updated: [1/16/2020]
 summary: "Configure your nodes before you can install your cluster(s)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -39,7 +39,8 @@ If you completed ThoughtSpot's site survey form and returned it to [ThoughtSpot 
 If the network configuration was not pre-set, then this step must be done as part of the installation process.
 
 Follow these steps to determine the configuration status of your appliance.
-1. SSH into your cluster. Run `ssh admin@<cluster-IP>` or `ssh admin@<hostname>`.
+1. SSH into your cluster. Run `ssh admin@<nodeIP>`.<br>
+Replace `nodeIP` with your specific network information.
 ```
     $ ssh admin@<nodeIP>
 ```

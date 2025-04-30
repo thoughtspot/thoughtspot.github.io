@@ -19,7 +19,8 @@ Input your specific network information to configure the management settings for
 7. **Log into ThoughtSpot** After the system reboots, the login page appears. Log in as an administrator. Ask your network administrator if you do not know the admin credentials.
 
 {: id="dell-idrac-config"}
-{% include image.html file="dell-idrac-config.png" title="Dell iDRAC configuration" alt="Use the monitor and keyboard that you connected earlier to add your network information in the iDRAC network settings modal." caption="Dell Management Configuration" %}
+![Dell iDRAC configuration]({{ site.baseurl }}/images/dell-idrac-config.png "Dell iDRAC configuration")
+<!--{% include image.html file="dell-idrac-config.png" title="Dell iDRAC configuration" alt="Use the monitor and keyboard that you connected earlier to add your network information in the iDRAC network settings modal." caption="Dell Management Configuration" %}-->
 
 ## Configure nodes
 Next, [configure nodes.]({{ site.baseurl }}/appliance/hardware/configure-nodes-dell.html)

@@ -28,9 +28,9 @@ entries:
     - title: Downloads
       url: /release/downloads.html
       output: web
-    - title: PDF Guides
-      url: /release/pdfs.html
-      output: web
+#    - title: PDF Guides
+#      url: /release/pdfs.html
+#      output: web
   - sectiontitle: Users
     output: web,ugBk
     sectionitems:

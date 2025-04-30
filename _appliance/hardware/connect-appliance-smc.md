@@ -1,6 +1,6 @@
 ---
 title: [Connect the SMC appliance]
-last_updated: [12/13/2019]
+last_updated: [1/16/2020]
 summary: "Connect the SMC appliance before you can deploy ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -39,10 +39,12 @@ Connect the 10GbE port of each node, as illustrated in [Haswell port location]({
 Depending on which version of the SMC appliance you have, Haswell or Skylake, your 10GbE ports are in a different spot on the back of the appliance. Here is a picture of the back of each appliance.
 
 {: id="haswell-port-location"}
-{% include image.html file="smc-haswell-location-ports-new.png" title="Haswell port location" alt="The data and management ports are on the back of the SMC Haswell appliance." caption="Haswell port location" %}
+![Haswell port location]({{ site.baseurl }}/images/smc-haswell-location-ports-new.png "Haswell port location")
+<!--{% include image.html file="smc-haswell-location-ports-new.png" title="Haswell port location" alt="The data and management ports are on the back of the SMC Haswell appliance." caption="Haswell port location" %}-->
 
 {: id="skylake-port-location"}
-{% include image.html file="smc-appliance-skylake-location-ports.png" title="Skylake port location" alt="The data and management ports are on the back of the SMC Skylake appliance." caption="Skylake port location" %}
+![Skylake port location]({{ site.baseurl }}/images/dsmc-appliance-skylake-location-ports.png "Skylake port location")
+<!--{% include image.html file="smc-appliance-skylake-location-ports.png" title="Skylake port location" alt="The data and management ports are on the back of the SMC Skylake appliance." caption="Skylake port location" %}-->
 
 * Connect to switches **only** the appliances (4 nodes each) that you plan to use in the cluster.  
 * You must power off, or disconnect from the switch, all other appliances or nodes.<br>
