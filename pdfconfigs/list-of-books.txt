@@ -10,3 +10,4 @@ admBk - Admin guide
 instAWS - Deployment in AWS
 practGd - ThoughtSpot in Practice
 instSMC - Deployment on SMC
+embraceGd - Embrace guide

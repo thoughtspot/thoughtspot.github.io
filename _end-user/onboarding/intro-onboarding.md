@@ -1,7 +1,8 @@
 ---
 title: [Onboarding Users]
-last_updated: 10/07/2019
-summary: "Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages it adoption throughout your organization."
+last_updated: 5/14/2020
+toc: true
+summary: "Guided onboarding simplifies the initial engagement that new users have with ThoughtSpot, and encourages adoption throughout your organization."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -16,12 +17,11 @@ When you create a new user, we recommend that you add them to a user group immed
 {: id="onboarding-valid-email"}
 - **Valid emails**  All users must have valid emails.
 
-  To include users in the onboarding process, each user profile must include a valid email address; see [Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user).  
+  To include users in the onboarding process, each user profile must include a valid email address; see [Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user). [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to whitelist email domains.  
 
   To load and validate user information (including email addresses) in bulk, we recommend using Active Directory configuration and sync. See [Configure LDAP for Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
 
-{: id="onboarding-tscli-configuration"}
-- **Onboarding configuration**  Before starting the onboarding process, an administrator must specify the configuration through the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#tscli-onboarding).
+Before starting the onboarding process, an administrator must specify the configuration.
 
 {: id="onboarding-process"}
 ## Onboarding Process ##

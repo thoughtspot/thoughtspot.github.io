@@ -32,7 +32,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Enna<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Fermo<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ferrara<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Florence<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Firenze<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Foggia<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Forli' - Cesena<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Frosinone<br>
@@ -50,26 +50,26 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Lodi<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Lucca<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Macerata<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Mantua<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Mantova<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Massa Carrara<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Matera<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Medio Campidano<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Messina<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Milano<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Modena<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Monza and Brianza<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Monza<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Napoli<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Novara<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Nuoro<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ogliastra<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Olbia-Tempio<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Oristano<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Padua<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Padova<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Palermo<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Parma<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Pavia<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Perugia<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Pesaro E Urbino<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Pesaro<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Pescara<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Piacenza<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Pisa<br>
@@ -79,8 +79,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Prato<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ragusa<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Ravenna<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Reggio Di Calabria<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Reggio Nell'Emilia<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Reggio Calabria<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Reggio Emilia<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Rieti<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Rimini<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Roma<br>
@@ -90,7 +90,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Savona<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Siena<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Sondrio<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Syracuse<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Siracusa<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Taranto<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Teramo<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Terni<br>

@@ -26,4 +26,4 @@ and **Save as view**.
 
 5. [Link]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html) your view to any other data source, or [define joins]({{ site.baseurl }}/admin/loading/constraints.html).
 
-At this point the view has been saved, but you may also want to [materialize the view]({{ site.baseurl }}/admin/loading/materialized-views.html), to improve its performance when searching.
+At this point the view has been saved.

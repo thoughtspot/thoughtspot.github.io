@@ -1,6 +1,7 @@
 ---
 title: [How the worksheet join rule works]
-last_updated: tbd
+last_updated: 11/18/2019
+summary: "The worksheet join rule specifies when to apply joins when searching on a worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -20,8 +21,7 @@ each dimension table are applied. It works like this:
 -   If you choose **Apply all joins**, all possible joins are applied, regardless of which tables are included in the search.
 
 When using **Apply joins progressively**, the number of rows in a search using
-the worksheet depends on which tables are part of the search. The worksheet acts
-like a materialized view. This means that it contains the results of a defined
+the worksheet depends on which tables are part of the search. The worksheet contains the results of a defined
 query in the form of a table. So if a particular dimension table is left out of
 the search, its joins are not applied.
 

@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include note.html content="R scripts are not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use R scripts, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support." %}
+
 ## Overview
 
 {% include note.html content="Custom R is disabled by default. To turn on custom R scripting, contact your site administrator." %}
@@ -82,7 +84,7 @@ The generated data is displayed back as a table when you run the analysis:
 
 ![]({{ site.baseurl }}/images/r-csv-basic.png)
 
-This basic script returns the exact same table results as if you did the query
+This basic script returns the same table results as if you did the query
 directly in ThoughtSpot and selected the table view, barring some additional
 formatting you get for free on the search.
 

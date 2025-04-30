@@ -1,12 +1,14 @@
 ---
 title: [Geo Map Reference]
-last_updated: 12/5/2019
+last_updated: 7/30/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
 This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps.
+
+| You may have to make changes to your data to support geo maps.<br/><br/>For example, you may be collecting data for locations in Washington County, Alabama, and also for locations in Washington County, Wisconsin.<br/><br/>According to the 2010 Census, there are 31 distinct Washington Counties in the United States.<br/><br/>To account for multiple different geographical entities with the same name, you must be specific within your data.<br/><br/>A value of *Washington County* without a state attached to it may result in incorrect or incomplete geo maps. | ![Washington Counties in United States]({{ site.baseurl }}/images/wa-county.png "Washington Counties in United States") |
 
 ThoughtSpot supports the following countries and their associated subdivisions:
 <dl>
@@ -96,6 +98,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<dlentry>
+<dt>India</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/in-state.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/in-district.md %}
+</details>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/in-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Italy</dt>
@@ -128,6 +145,22 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dd>
 </dlentry>
 
+<!--Since 6.1.0-->
+<dlentry>
+<dt>Norway</dt>
+<dd>
+<details><summary><strong>County</strong></summary>
+{% include content/geo/no-county.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/no-municipality.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/no-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Poland</dt>
@@ -145,6 +178,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 </dlentry>
 
 <dlentry>
+<dt>Portugal</dt>
+<dd>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/pt-district.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/pt-municipality.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/pt-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
 <dt>Sweden</dt>
 <dd>
 <details><summary><strong>County</strong></summary>
@@ -156,6 +204,21 @@ ThoughtSpot supports the following countries and their associated subdivisions:
 <!-- Since 5.3.0 -->
 <details><summary><strong>Post Code</strong></summary>
 {% include content/geo/se-post-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Switzerland</dt>
+<dd>
+<details><summary><strong>Canton</strong></summary>
+{% include content/geo/ch-canton.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/ch-district.md %}
+</details>
+<details><summary><strong>Post Code</strong></summary>
+{% include content/geo/ch-postcode.md %}
 </details>
 </dd>
 </dlentry>

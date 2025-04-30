@@ -1,19 +1,11 @@
 ---
 title: [Change axis options]
-last_updated: 11/06/2019
+last_updated: 2/28/2020
 summary: "In ThoughtSpot, you can start changing all axes options by clicking on the axis, directly in the chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To change axis, you can click the axis itself.
-
-Here, we demonstrate the various options for axis configuration using a visualization "Sales by Department"
-
-![Change axis]({{ site.baseurl }}/images/edit-axis.png "Change Axis for Total Sales")
-
-This opens the detail axis customization menu in the chart.
-
-![Change axis detail]({{ site.baseurl }}/images/edit-axis-detail.png "Options for changing the axis")
+To change axis, you can click the axis itself. This opens the detail axis customization menu in the chart.
 
 You can make the following changes to the axis:
 
@@ -24,13 +16,15 @@ You can make the following changes to the axis:
 * [Grouping](#grouping)
 * [Position](#position)
 * [Rename](#rename)
-* Edit
-* Remove
+* [Edit](#edit)
+* [Remove](#remove)
+
+![Change axis]({{ site.baseurl }}/images/edit-axis.gif "Change Axis for Total Sales")
 
 {: id="aggregate"}
 ## Change the axis aggregate
 
-To change the axis aggregate, click the **Aggregate** option in the axis menu, and select an alternative from the list of options.
+To change the axis aggregation, click the **Aggregate** option in the axis menu, and select an alternative from the list of options.
 
 Depending on the type of data type and other settings, the aggregation options include _Total_, _Avg_, _Min_, _Max_, _Total Count_, _Unique Count_, _Std Deviation_, and _Variance_.
 
@@ -88,61 +82,7 @@ To remove a filter from the chart, click the **x** icon on the filter tile.
 
 {: id="conditional-formatting"}
 ## Apply conditional formatting
-
-To apply conditional formatting to the axis (in this example, _Total Sales_), follow these steps:
-
-1. Click the **Conditional formatting** option in the axis menu.
-
-   ![Add conditional formatting]({{ site.baseurl }}/images/edit-axis-conditional-formatting.png "Add conditional formatting")
-
-2. The **Conditional formatting** window modal appears.
-
-   ![Conditional formatting interface]({{ site.baseurl }}/images/edit-axis-conditional-formatting-1.png "Conditional formatting interface")  
-
-3. In the window modal, click **+ add formatting**.
-
-   ![Add a format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-2.png "Add a format")  
-
-4. Select the conditional range.
-
-   The text area on the left specifies the lower limit of the condition, so the condition applies to all values that are greater or equal to it.
-   And the text area on the right specifies the upper limit of the condition, so the condition applies to all lower values.
-
-   * To show show values with a lower limit, enter a value in the left text box.
-
-   * To show values with an upper limit, enter a value in the right text box.
-
-   * To show values in a specified range, enter the appropriate values in both text boxes.
-
-   Here, we apply conditional formatting to values between `5,500,000` and `8,000,000`.
-
-   ![Add conditional format range]({{ site.baseurl }}/images/edit-axis-conditional-formatting-3.png "Add conditional format range")
-
-5. To specify a different color of the conditional format, select the new color from the color selector.
-
-   This option draws upper and lower limit lines on the chart, and colors the chart elements that meet the conditional requirements.
-
-   ![Change conditional format color]({{ site.baseurl }}/images/edit-axis-conditional-formatting-4.png "Change conditional format color")
-
-   Alternatively, you can place a range band on the chart. Select the **Fill chart** option.
-
-   ![Add conditional format band]({{ site.baseurl }}/images/edit-axis-conditional-formatting-8.png "Add conditional format band")
-
-6. To add another condition, click **+add formatting**.
-
-    ![Add another conditional format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-5.png "Add another condition")
-
-7.  To remove a defined conditional format, click the delete icon (**x**) next to its definition.
-
-    ![Remove conditional format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-6.png "Remove conditional format")
-
-8.  Click **Done**.
-
-    ![Complete conditional format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-7.png "Complete conditional format")
-
-Here, you can see a chart that highlights elements with conditional  formatting on some elements. You can also see how the same chart appears with a background chart band.    
-
-![Conditional formatting applied, two options]({{ site.baseurl }}/images/edit-axis-conditional-formatting-applied-comparison.png "Conditional formatting applied, two options")
+{% include content/conditional-formatting-chart.md %}
 
 {: id="sort"}
 ## Change the Sort
@@ -156,7 +96,7 @@ Here, you can compare the original chart that was not sorted on the _Total Sales
 ![Compare unsorted chart and chart sorted in Descending order]({{ site.baseurl }}/images/edit-axis-sort-applied.png "Compare unsorted chart and chart sorted in Descending order")
 
 {: id="position"}
-## Change the Postion of the axis
+## Change the postion of the axis
 
 It is generally easier to interpret a chart if axes that use the same units of measurement or scale appear on the same side of the chart. In our example, we can best visualize _Item Cost_ and _Item Price_ on the same side of chart.
 
@@ -190,7 +130,7 @@ Notice that the **Customize** menu shows a linkage between the two grouped axes.
 ![Grouped axes]({{ site.baseurl }}/images/edit-axis-group-menu.png "Grouped axes")
 
 {: id="rename"}
-## Rename an axis
+## Rename the axis
 
 You can always rename an axis for clarity, brevity, format, and so on.
 
@@ -199,3 +139,82 @@ In our example, it makes sense to rename the axis created from grouping as _Item
 To rename an axis, select the **Rename** option in the axis menu, type the new name, and either click out or hit **Enter/Return** on your keyboard.
 
 ![Rename axis]({{ site.baseurl }}/images/edit-axis-rename.png "Rename axis")
+
+{: id="edit"}
+## Edit the axis
+
+When you choose to edit the axis, you get the comprehensive view of everything that can be changed on the axis: you can **Configure** the axis name, position (left or right), and the minimum and maximum values, and you can **Format** the category of the column, its units, and the representation of negative values.
+
+![Edit the axis]({{ site.baseurl }}/images/edit-axis-options.gif "Edit the Axis")
+
+To edit this axis (in this example, _Item Price_), follow these steps:
+
+1. Click the **Item Price** axis.
+
+2. In the drop-down, select **Edit**.
+
+3. The **Edit Axis** menu appears.
+
+4. In the **Edit Axis** menu, make the changes to the axis configuration and number format:
+
+   <dl>
+   <dlentry>
+     <dt>Configure</dt>
+     <dd>
+       <dl>
+         <dlentry>
+           <dt>Name</dt>
+           <dd>Change the name of the axis. Also see <a href="#rename">Rename the axis</a>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Position</dt>
+           <dd>Change the position of the axis relative to the chart. The options are <em>Right</em> and <em>Left</em>. Also see <a href="#position">Change the position of the axis</a>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Min</dt>
+           <dd>Change the minimum value on the axis. For example, most charts default to 0-based axis representation for numerical values; this setting overrides it.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Max</dt>
+           <dd>Change the maximum value on the axis. Similar to <em>Min</em> limit. </dd>
+         </dlentry>
+       </dl>
+     </dd>
+   </dlentry>
+   <dlentry>
+     <dt>Format</dt>
+     <dd>
+       <dl>
+         <dlentry>
+           <dt>Category</dt>
+           <dd>This specifies the format of the axis measurements. Options include <em>Number</em>, <em>Percentage</em>, and <em>Currency</em>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Unit</dt>
+           <dd>Unit choice specifies the representation of numbers on the axis. Options include <em>Auto</em> (ThoughtSpot uses abbreviations for really large numbers only), <em>None</em>, <em>Thousand (K)</em>, <em>Million (M)</em>, <em>Billion (B)</em>, and <em>Trillion (T)</em>.</dd>
+         </dlentry>
+         <dlentry>
+           <dt>Negative values</dt>
+           <dd>Specify the representation of negative numbers in one of these formats: <em>-1234</em>, <em>1234-</em>, or <em>(1234)</em>.</dd>
+         </dlentry>
+       </dl>
+     </dd>
+   </dlentry>
+   </dl>
+
+{: id="remove"}
+## Remove the axis
+
+Removing the axis removes the data from the display, but not from the answer entirely. Instead, the column that the axis represents appears in the **Not visualized** section of the **Customize** menu.
+
+![Remove the axis]({{ site.baseurl }}/images/remove-axis.gif "Remove Axis for Item Price")
+
+To remove an axis (in this example, _Item Price_), follow these steps:
+
+1. Click the **Item Price** axis.
+
+2. In the drop-down, select **x Remove**.
+
+3. The **Customize** menu appears.
+
+   Notice that the **Item Price** *axis* and the corresponding data no longer appear on the visual. However, the **Item Price** *column* appears in the **Not visualized** section of the **Customize** menu.

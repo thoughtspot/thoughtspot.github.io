@@ -17,7 +17,7 @@ To start a presentation, follow these steps:
 
 2. Select a pinboard from the list of pinboards by clicking on its title.
 
-3. In the open pinboard, click the **More Options** menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (ellipses icon), and select **![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} Present**.
+3. In the open pinboard, click the More menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **![present icon]({{ site.baseurl }}/images/icon-present.png){: .inline} Present**.
 
      ![]({{ site.baseurl }}/images/pinboard-present.png "Present a pinboard")
 

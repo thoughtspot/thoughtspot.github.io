@@ -1,8 +1,7 @@
 ---
 title: [Type conversion functions]
-
-
-last_updated: tbd
+summary: Learn about data type conversion functions.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

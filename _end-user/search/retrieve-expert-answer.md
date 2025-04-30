@@ -1,20 +1,28 @@
 ---
 title: ["View an answer from an expert"]
-last_updated: 09/23/2019
-summary: "How to find an answer from an expert"
+last_updated: 3/20/2020
+summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Ask an Expert, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support." %}
 
 When you use **Ask an expert** to get help, you can view the answer after the expert responds.
 
 To view the answer:
 
-Click the link in the email you receive automatically when the expert answers your question, or if you're not set up with an email in ThoughtSpot:
+Click the link in the email you receive automatically when the expert answers your question.
 
-1. Click **Answers** in the top menu.
+If you're not set up with an email in ThoughtSpot, follow these steps to view your resolved Expert request:
 
-2. Click the name of the answer you want to review. If you can't find it, try using the **Yours** filter to narrow down the list.
+1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-20px.png){: .inline} (help) icon menu.
+
+2. In the drop-down, select **Expert Requests**.
+
+   ![Click Expert requests]({{ site.baseurl }}/images/ask-an-expert.png "Click Expert requests")
+
+3. Under **I am a requester**, view your Ask an Expert request. If the status is **resolved**, click on the request.
 
 3. View your answer.
 
