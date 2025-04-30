@@ -331,7 +331,7 @@ nickname';</code></p>
    </tr>
    <tr>
       <td>
-         <p><code>ALTER TABLE &lt;table&gt; DROP [FOREIGN KEY| RELATIONSHIP]
+         <p><code>ALTER TABLE &lt;table&gt; DROP CONSTRAINT [FOREIGN KEY| RELATIONSHIP]
        &lt;name&gt;;</code></p>
       </td>
       <td><p>Drops the named foreign key or relationship between two tables. For example:</p>

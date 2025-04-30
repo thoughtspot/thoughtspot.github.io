@@ -36,7 +36,7 @@ before continuing.
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 
-   For a vizualization in a pinboard, click the ellipses icon 
+   For a vizualization in a pinboard, click the ellipses icon
    ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
     **Copy Link**.
 
@@ -60,7 +60,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you'll get a co
     Here are the fields in the `test.html` file you need to edit.
 
     ```JavaScript
-    var protocol = "THOUGHSPOT_PROTOCOL";
+    var protocol = "THOUGHTSPOT_PROTOCOL";
     var hostPort = "HOST_PORT";   
 
     var pinboardId = "PINBOARD_ID";

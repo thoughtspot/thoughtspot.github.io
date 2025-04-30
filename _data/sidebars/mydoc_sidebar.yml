@@ -445,7 +445,7 @@ entries:
       - title: Set the relay host for SMTP
         url: /admin/setup/set-up-relay-host.html
         output: web,admBk
-      - title: Set up a fiscal calendar year
+      - title: Set up a custom calendar
         url: /admin/setup/set-custom-calendar.html
         output: web,admBk
       - title: Configure SSL
@@ -577,6 +577,117 @@ entries:
         - title: Delete or change a table in TQL
           url: /admin/loading/check-dependencies-tql.html
           output: web,admBk
+    - levelTwoTitle: Manage users and groups
+      output: web,admBk
+      levelTwoItems:
+      - title: Understand groups and privileges
+        url: /admin/users-groups/about-users-groups.html
+        output: web,admBk
+      - title: Create, edit, or delete a group
+        url: /admin/users-groups/add-group.html
+        output: web,admBk
+      - title: Add, edit, or delete a user
+        url: /admin/users-groups/add-user.html
+        output: web,admBk
+      - title: Allow users to sign up
+        url: /admin/users-groups/sign-up.html
+        output: web,admBk
+    - levelTwoTitle: Security
+      output: web,admBk
+      levelTwoItems:
+      - title: Overview of security features
+        url: /admin/data-security/about-security.html
+        output: web,admBk
+      - levelThreeTitle: System security
+        output: web,admBk
+        levelThreeItems:
+        - title: Tools and processes
+          url: /admin/data-security/audit-logs.html
+          output: web,admBk
+        - title: About third-party software
+          url: /admin/data-security/about-secure-monitor-sw.html
+          output: web,admBk
+        - title: Installing third-party software
+          url: /admin/data-security/install-secure-monitor-sw.html
+          output: web,admBk
+      - levelThreeTitle: Data security
+        output: web,admBk
+        levelThreeItems:
+        - title: Data security
+          url: /admin/data-security/sharing-security-overview.html
+          output: web,admBk
+        - title: Share tables and columns
+          url: /admin/data-security/share-source-tables.html
+          output: web,admBk
+        - title: Share worksheets
+          url: /admin/data-security/share-worksheets.html
+          output: web,admBk
+        - title: Share a pinboard
+          url: /admin/data-security/share-pinboards.html
+          output: web,admBk
+        - title: Security for SpotIQ functions
+          url: /admin/data-security/spotiq-admin.html
+          output: web,admBk
+        - title: Revoke access (unshare)
+          url: /admin/data-security/unshare.html
+          output: web,admBk
+      - levelThreeTitle: Row level security (RLS)
+        output: web,admBk
+        levelThreeItems:
+        - title: About row level security (RLS)
+          url: /admin/data-security/about-row-security.html
+          output: web,admBk
+        - title: How Rule-Based RLS works
+          url: /admin/data-security/row-level-security.html
+          output: web,admBk
+        - title: Set Rule-Based RLS
+          url: /admin/data-security/set-rls.html
+          output: web,admBk
+      - title: ThoughtSpot Lifecycle
+        url: /admin/data-security/security-thoughtspot-lifecycle.html
+        output: web, admBk
+      - title: Encryption of data in transit
+        url: /admin/data-security/encryption-of-data.html
+        output: web, admBk
+    - levelTwoTitle: System administration
+      output: web,admBk
+      levelTwoItems:
+      - title: Overview of System administration
+        url: /admin/system-admin/sysadmin-overview.html
+        output: web,admBk
+      - title: Send logs when reporting problems
+        url: /admin/system-admin/send-logs-to-administrator.html
+        output: web,admBk
+      - title: Set up recording for Replay Search
+        url: /admin/system-admin/configure-record-search.html
+        output: web,admBk
+    - levelTwoTitle: Backup and restore
+      output: web,admBk
+      levelTwoItems:
+      - title: Understand the backup strategies
+        url: /admin/backup-restore/choose-strategy.html
+        output: web,admBk
+      - title: Understand backup/snapshot schedules
+        url: /admin/backup-restore/how-to-create-a-schedule.html
+        output: web,admBk
+      - title: Work with snapshots
+        url: /admin/backup-restore/overview-snapshot.html
+        output: web,admBk
+      - levelThreeTitle: Work with backups
+        output: web,admBk
+        levelThreeItems:
+        - title: Understand backup modes
+          url: /admin/backup-restore/backup-modes.html
+          output: web,admBk
+        - title: Create a manual backup
+          url: /admin/backup-restore/take-backup.html
+          output: web,admBk
+        - title: Configure periodic backups
+          url: /admin/backup-restore/configure-backup.html
+          output: web,admBk
+        - title: About restore operations
+          url: /admin/backup-restore/restore.html
+          output: web,admBk
     - levelTwoTitle: Improve search with modeling
       output: web,admBk
       levelTwoItems:
@@ -690,6 +801,7 @@ entries:
         output: web,ugBk
       - title: Refresh a view
         url: /admin/loading/refresh-view.html
+        output: web,ugBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
         output: web,ugBk
@@ -705,22 +817,7 @@ entries:
       - title: Change SearchIQ mappings
         url: /admin/data-modeling/searchiq-mappings.html
         output: web,admBk
-    - levelTwoTitle: Manage users and groups
-      output: web,admBk
-      levelTwoItems:
-      - title: Understand groups and privileges
-        url: /admin/users-groups/about-users-groups.html
-        output: web,admBk
-      - title: Create, edit, or delete a group
-        url: /admin/users-groups/add-group.html
-        output: web,admBk
-      - title: Add, edit, or delete a user
-        url: /admin/users-groups/add-user.html
-        output: web,admBk
-      - title: Allow users to sign up
-        url: /admin/users-groups/sign-up.html
-        output: web,admBk
-    - levelTwoTitle: Manage jobs
+    - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
       levelTwoItems:
       - title: Job management (scheduled pinboards)
@@ -728,66 +825,6 @@ entries:
         output: web,admBk
       - title: Scheduled pinboards management
         url: /admin/manage-jobs/scheduled-pinboards-management.html
-        output: web,admBk
-    - levelTwoTitle: Security
-      output: web,admBk
-      levelTwoItems:
-      - title: Overview of security features
-        url: /admin/data-security/about-security.html
-        output: web,admBk
-      - title: System Security
-        url: /admin/data-security/audit-logs.html
-        output: web,admBk
-      - levelThreeTitle: Data security
-        output: web,admBk
-        levelThreeItems:
-        - title: Data security
-          url: /admin/data-security/sharing-security-overview.html
-          output: web,admBk
-        - title: Share tables and columns
-          url: /admin/data-security/share-source-tables.html
-          output: web,admBk
-        - title: Share worksheets
-          url: /admin/data-security/share-worksheets.html
-          output: web,admBk
-        - title: Share a pinboard
-          url: /admin/data-security/share-pinboards.html
-          output: web,admBk
-        - title: Security for SpotIQ functions
-          url: /admin/data-security/spotiq-admin.html
-          output: web,admBk
-        - title: Revoke access (unshare)
-          url: /admin/data-security/unshare.html
-          output: web,admBk
-      - levelThreeTitle: Row level security (RLS)
-        output: web,admBk
-        levelThreeItems:
-        - title: About row level security (RLS)
-          url: /admin/data-security/about-row-security.html
-          output: web,admBk
-        - title: How Rule-Based RLS works
-          url: /admin/data-security/row-level-security.html
-          output: web,admBk
-        - title: Set Rule-Based RLS
-          url: /admin/data-security/set-rls.html
-          output: web,admBk
-      - title: ThoughtSpot Lifecycle
-        url: /admin/data-security/security-thoughtspot-lifecycle.html
-        output: web, admBk
-      - title: Encryption of data in transit
-        url: /admin/data-security/encryption-of-data.html
-        output: web, admBk
-    - levelTwoTitle: System administration
-      output: web,admBk
-      levelTwoItems:
-      - title: Overview of System administration
-        url: /admin/system-admin/sysadmin-overview.html
-        output: web,admBk
-      - title: Send logs when reporting problems
-        url: /admin/system-admin/send-logs-to-administrator.html
-        output: web,admBk
-      - title: Set up recording for Replay Search
-        url: /admin/system-admin/configure-record-search.html
         output: web,admBk
     - levelTwoTitle: Monitoring
       output: web,admBk
@@ -813,39 +850,12 @@ entries:
       - title: System pinboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
-    - levelTwoTitle: Backup and restore
-      output: web,admBk
-      levelTwoItems:
-      - title: Understand the backup strategies
-        url: /admin/backup-restore/choose-strategy.html
-        output: web,admBk
-      - title: Understand backup/snapshot schedules
-        url: /admin/backup-restore/how-to-create-a-schedule.html
-        output: web,admBk
-      - title: Work with snapshots
-        url: /admin/backup-restore/overview-snapshot.html
-        output: web,admBk
-      - levelThreeTitle: Work with backups
-        output: web,admBk
-        levelThreeItems:
-        - title: Understand backup modes
-          url: /admin/backup-restore/backup-modes.html
-          output: web,admBk
-        - title: Create a manual backup
-          url: /admin/backup-restore/take-backup.html
-          output: web,admBk
-        - title: Configure periodic backups
-          url: /admin/backup-restore/configure-backup.html
-          output: web,admBk
-        - title: About restore operations
-          url: /admin/backup-restore/restore.html
-          output: web,admBk
     - levelTwoTitle: Troubleshooting
       output: web,admBk
       levelTwoItems:
       - title: About troubleshooting
         url: /admin/troubleshooting/troubleshooting-intro.html
-        output: pdf
+        output: web,admBk
       - title: Get your configuration and logs
         url: /admin/troubleshooting/get-logs.html
         output: web,admBk
@@ -876,82 +886,100 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
-  - sectiontitle: Data Connect
-    output: web,cngBk
-    sectionitems:
-    - title: Introduction to Data Connect
-      url: /data-connect/setup/ETL.html
-      output: web,cngBk
-    - title: Prerequisites and Architecture
-      url: /data-connect/setup/before-using-data-connect.html
-      output: web,cngBk
-    - title: Set up ThoughtSpot Data Connect
-      url: /data-connect/setup/settingup-etl.html
-      output: web,cngBk
-    - levelTwoTitle: Work with Data Sources
-      output: web,cngBk
-      levelTwoItems:
-      - title: Add a new data source
-        url: /data-connect/setup/adding-data-source.html
-        output: web,cngBk
-      - title: About changing the schema (DDL)
-        url: /data-connect/setup/about-changing-DDL.html
-        output: web,cngBk
-      - title: About incremental data loads
-        url: /data-connect/setup/about-incremental.html
-        output: web,cngBk
-      - title: Data sources management
-        url: /data-connect/setup/data-sources-management.html
-        output: web,cngBk
-    - levelTwoTitle: Changing the setup
-      output: web,cngBk
-      levelTwoItems:
-      - title: Overview of best practices
-        url: /data-connect/making-changes/about-changing-etl-jobs.html
-        output: web,cngBk
-      - title: Edit a connection
-        url: /data-connect/making-changes/edit-a-connection.html
-        output: web,cngBk
-      - title: Delete a connection
-        url: /data-connect/making-changes/delete-a-connection.html
-        output: web,cngBk
-      - title: Delete a data source
-        url: /data-connect/making-changes/delete-data-source.html
-        output: web,cngBk
-      - title: Stop a scheduled job from running
-        url: /data-connect/making-changes/stop-scheduled-job.html
-        output: web,cngBk
-      - title: Change sharding for a data source
-        url: /data-connect/making-changes/change-sharding.html
-        output: web,cngBk
-      - title: Change a column data type
-        url: /data-connect/making-changes/change-data-type.html
-        output: web,cngBk
-      - title: Add a column to an existing data source
-        url: /data-connect/making-changes/add-a-column.html
-        output: web,cngBk
-      - title: Remove a column from an existing data source
-        url: /data-connect/making-changes/remove-column.html
-        output: web,cngBk
-      - title: Add/remove columns in a loaded table
-        url: /data-connect/making-changes/add-remove-columns-in-a-loaded-table.html
-        output: web,cngBk
-    - levelTwoTitle: Reference
-      output: web,cngBk
-      levelTwoItems:
-      - title: Login for administration
-        url: /data-connect/reference/logins.html
-        output: web,cngBk
-      - title: Best practices
-        url: /data-connect/reference/data-connect-insider-tips.html
-        output: web,cngBk
-      - title: Connectors reference
-        url: /data-connect/reference/data-connect-connection-credentials.html
-        output: web,cngBk
-  - sectiontitle: Application Integration
+  - sectiontitle: Mobile
     output: web,apgBk
     sectionitems:
-    - title: Introduction
+    - title: Overview
+      url: /admin/mobile/use-mobile.html
+      output: web,apgBk
+    - title: Deploy
+      url: /admin/mobile/deploy-mobile.html
+      output: web,admBk
+    - title: Install and set up
+      url: /admin/mobile/install-mobile.html
+      output: web,admBk
+    - title: FAQ
+      url: /admin/mobile/faq-mobile.html
+      output: web,admBk
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web,admBk
+  # - sectiontitle: Data Connect
+  #   output: web,cngBk
+  #   sectionitems:
+  #   - title: Introduction to Data Connect
+  #     url: /data-connect/setup/ETL.html
+  #     output: web,cngBk
+  #   - title: Prerequisites and Architecture
+  #     url: /data-connect/setup/before-using-data-connect.html
+  #     output: web,cngBk
+  #   - title: Set up ThoughtSpot Data Connect
+  #     url: /data-connect/setup/settingup-etl.html
+  #     output: web,cngBk
+  #   - levelTwoTitle: Work with Data Sources
+  #     output: web,cngBk
+  #     levelTwoItems:
+  #     - title: Add a new data source
+  #       url: /data-connect/setup/adding-data-source.html
+  #       output: web,cngBk
+  #     - title: About changing the schema (DDL)
+  #       url: /data-connect/setup/about-changing-DDL.html
+  #       output: web,cngBk
+  #     - title: About incremental data loads
+  #       url: /data-connect/setup/about-incremental.html
+  #       output: web,cngBk
+  #     - title: Data sources management
+  #       url: /data-connect/setup/data-sources-management.html
+  #       output: web,cngBk
+  #   - levelTwoTitle: Changing the setup
+  #     output: web,cngBk
+  #     levelTwoItems:
+  #     - title: Overview of best practices
+  #       url: /data-connect/making-changes/about-changing-etl-jobs.html
+  #       output: web,cngBk
+  #     - title: Edit a connection
+  #       url: /data-connect/making-changes/edit-a-connection.html
+  #       output: web,cngBk
+  #     - title: Delete a connection
+  #       url: /data-connect/making-changes/delete-a-connection.html
+  #       output: web,cngBk
+  #     - title: Delete a data source
+  #       url: /data-connect/making-changes/delete-data-source.html
+  #       output: web,cngBk
+  #     - title: Stop a scheduled job from running
+  #       url: /data-connect/making-changes/stop-scheduled-job.html
+  #       output: web,cngBk
+  #     - title: Change sharding for a data source
+  #       url: /data-connect/making-changes/change-sharding.html
+  #       output: web,cngBk
+  #     - title: Change a column data type
+  #       url: /data-connect/making-changes/change-data-type.html
+  #       output: web,cngBk
+  #     - title: Add a column to an existing data source
+  #       url: /data-connect/making-changes/add-a-column.html
+  #       output: web,cngBk
+  #     - title: Remove a column from an existing data source
+  #       url: /data-connect/making-changes/remove-column.html
+  #       output: web,cngBk
+  #     - title: Add/remove columns in a loaded table
+  #       url: /data-connect/making-changes/add-remove-columns-in-a-loaded-table.html
+  #       output: web,cngBk
+  #   - levelTwoTitle: Reference
+  #     output: web,cngBk
+  #     levelTwoItems:
+  #     - title: Login for administration
+  #       url: /data-connect/reference/logins.html
+  #       output: web,cngBk
+  #     - title: Best practices
+  #       url: /data-connect/reference/data-connect-insider-tips.html
+  #       output: web,cngBk
+  #     - title: Connectors reference
+  #       url: /data-connect/reference/data-connect-connection-credentials.html
+  #       output: web,cngBk
+  - sectiontitle: Embedding
+    output: web,apgBk
+    sectionitems:
+    - title: Introduction to Embedding
       url: /app-integrate/introduction/introduction.html
       output: web,apgBk
     - title: Log in to the Linux shell using SSH
@@ -960,7 +988,7 @@ entries:
     - title: Log in credentials
       url: /app-integrate/introduction/logins.html
       output: web,apgBk
-    - title: Get the JavaScript API
+    - title: Use the JavaScript API
       url: /app-integrate/JSAPI/about-JS-API.html
       output: web,apgBk
     - levelTwoTitle: SAML
@@ -1026,7 +1054,7 @@ entries:
       - title: Full application embedding
         url: /app-integrate/embedding-viz/about-full-embed.html
         output: web,apgBk
-      - title: Configured trusted authentication
+      - title: Configure trusted authentication
         url: /app-integrate/embedding-viz/trusted-authentication.html
         output: web,apgBk
     - levelTwoTitle: Runtime Filters
@@ -1068,20 +1096,23 @@ entries:
       - title: Introduction
         url: /app-integrate/reference/public-api-reference.html
         output: web,apgBk
-      - title: pinboarddata API
+      - title: Pinboard Data API
         url: /app-integrate/reference/pinboarddata.html
         output: web,apgBk
-      - title: metadata API
+      - title: Metadata API
         url: /app-integrate/reference/metadata-api.html
         output: web,apgBk
-      - title: session API
+      - title: Session API
         url: /app-integrate/reference/session-api.html
         output: web,apgBk
-      - title: user API
+      - title: User API
         url: /app-integrate/reference/user-api.html
         output: web,apgBk
-      - title: group API
+      - title: Group API
         url: /app-integrate/reference/group-api.html
+        output: web,apgBk
+      - title: Materialization API
+        url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
   - sectiontitle: Node Setup
     output: web,appQs
@@ -1176,7 +1207,10 @@ entries:
     - title: Login credentials for administration
       url: /data-integrate/introduction/logins.html
       output: web,digBk
-    - levelTwoTitle: Use the ODBC client
+    - title: JDBC and ODBC setup prerequisites
+      url: /data-integrate/introduction/jdbc-odbc-prereqs.html
+      output: web,digBk
+    - levelTwoTitle: ODBC driver client
       output: web,digBk
       levelTwoItems:
        - title: ODBC driver overview
@@ -1194,28 +1228,28 @@ entries:
          - title: Deploy SSL with ODBC on Windows
            url: /data-integrate/clients/windows-deploy-ssl.html
            output: web,digBk
-         - title: Set up the ODBC Driver for SSIS
+         - title: Set up the ODBC driver for SSIS
            url: /data-integrate/clients/set-up-the-odbc-driver-using-ssis.html
            output: web,digBk
-       - title: Install the ODBC Driver on Linux
+       - title: Install the ODBC driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
          output: web,digBk
-       - title: Install the ODBC Driver on Solaris
+       - title: Install the ODBC driver on Solaris
          url: /data-integrate/clients/install-odbc-solaris.html
          output: web,digBk
-       - title: Best Practices for Using ODBC
+       - title: Best Practices for using ODBC
          url: /data-integrate/clients/odbc-best-practices.html
          output: web,digBk
-    - levelTwoTitle: JDBC Driver Client
+    - levelTwoTitle: JDBC driver client
       output: web,digBk
       levelTwoItems:
-      - title: JDBC Driver Overview
+      - title: JDBC driver overview
         url: /data-integrate/clients/about-jdbc-driver.html
         output: web,digBk
-      - title: Use the JDBC Driver
+      - title: Use the JDBC driver
         url: /data-integrate/clients/use-jdbc-driver.html
         output: web,digBk
-    - title: Set up the JDBC Driver for Pentaho
+    - title: Set up the JDBC driver for Pentaho
       url: /data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html
       output: web,digBk
     - levelTwoTitle: Troubleshooting
@@ -1224,10 +1258,10 @@ entries:
       - title: Troubleshooting Data Integrations
         url: /data-integrate/troubleshooting/troubleshooting-intro.html
         output: web,digBk
-      - title: Enable ODBC Logs
+      - title: Enable ODBC logs
         url: /data-integrate/troubleshooting/enable-ODBC-log.html
         output: web,digBk
-      - title: Enable JDBC Logs
+      - title: Enable JDBC logs
         url: /data-integrate/troubleshooting/JDBC-logging.html
         output: web,digBk
       - title: Schema not found error with ODBC
@@ -1305,8 +1339,11 @@ entries:
     - title: User action codes reference
       url: /reference/action-codes.html
       output: web,refGdAdmin
-    - tilte: Stop word reference
+    - title: Stop word reference
       url: /reference/stop-words.html
+      output: web,refGD
+    - title: Geo map reference
+      url: /reference/geomap-reference.html
       output: web,refGD
     - title: Error codes reference
       url: /error-codes/error-codes-reference.html
@@ -1317,9 +1354,6 @@ entries:
   - sectiontitle: About this Release
     output: web,rnotes
     sectionitems:
-    - title: Help Center
-      url: /release/help-center.html
-      output: web
     - title: Release notes
       url: /release/notes.html
       output: web,rnotes
