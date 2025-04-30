@@ -20,18 +20,27 @@ To add a new connection to BigQuery:
     ![Add a GBQ connection]({{ site.baseurl }}/images/gbq-connectiontype.png "Add a Google BigQuery connection")
     <!--  ![Add a BigQuery connection]({{ site.baseurl }}/images/gbq-connectiontype.png "Add a BigQuery connection") -->
 
-4. Enter the connection details for your BigQuery data source, and click **Continue**.
+4. Enter the connection details for your BigQuery data source.
     ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
 
     Refer to the [BigQuery connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
-5. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+5. (Optional) Provide additional key-value pairs that you need to set up your connection to BigQuery, by doing the following:
+- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+- Enter your key and value information.
+- To add more keys and values, click the plus sign (+), and enter them.
+
+    {% include note.html content="Any key-value pairs that you enter must be defined in your BigQuery data source. Key-value pairs are case-sensitive." %}
+
+6. Click **Continue**.       
+
+7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
   <!--  ![Select tables and columns for your connection]({{ site.baseurl }}/images/gbq-selecttables.png "Select tables and columns for your connection") -->
 
    Once the connection is added, you can search your BiqQuery database right away by clicking **Search now**.
-  ![The "Connection created" screen]({{ site.baseurl }}/images/gbq-connectioncreated.png "The "Connection created" screen") 
+  ![The "Connection created" screen]({{ site.baseurl }}/images/gbq-connectioncreated.png "The "Connection created" screen")
 
    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 

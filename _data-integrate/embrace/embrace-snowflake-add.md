@@ -19,13 +19,22 @@ To add a new connection to Snowflake:
 
      ![Add a Snowflake connection]({{ site.baseurl }}/images/snowflake-connectiontype.png "Add a Snowflake connection")
 
-4. Enter the connection details for your Snowflake data source, and click **Continue**.
+4. Enter the connection details for your Snowflake data source.
 
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
-5. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+5. (Optional) Provide additional key-value pairs that you need to set up your connection to Snowflake, by doing the following:
+- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+- Enter your key and value information.
+- To add more keys and values, click the plus sign (+), and enter them.
+
+    {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
+
+6. Click **Continue**.   
+
+7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
 
