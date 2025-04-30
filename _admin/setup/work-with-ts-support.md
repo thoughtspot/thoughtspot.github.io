@@ -1,7 +1,7 @@
 ---
 title: [Configure support services]
-tags: [tscli, Supportability,logs]
-keywords: tbd
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -27,7 +27,7 @@ company's security policies allow reverse tunneling.
 **_NOTE:_** Before you set up a reverse tunnel, open port `22`
 in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 
-### Using Management Console
+<!--### Using Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
 
@@ -71,7 +71,7 @@ in your firewall outgoing rules to whitelist `tunnelrelay.thoughtspot.com`.
 6. Click **Save** to configure the SSH tunnel.
 
 You may choose to disable the access after ThoughtSpot Support finishes the troubleshooting.
-
+-->
 ### Using tscli
 To enable remote support:
 

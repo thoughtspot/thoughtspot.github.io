@@ -1,6 +1,6 @@
 ---
 title: [Connect with TQL and create a schema]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

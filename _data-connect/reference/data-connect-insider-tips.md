@@ -1,7 +1,5 @@
 ---
 title: [Data Connect best practices]
-tags: [bestpractices]
-keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

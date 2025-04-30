@@ -1,6 +1,6 @@
 ---
 title: [Setup and start the appliance]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

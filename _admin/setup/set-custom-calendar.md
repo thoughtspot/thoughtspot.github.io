@@ -1,7 +1,7 @@
 ---
 title: [Set up a custom calendar]
-keywords: [fiscal calendar, fiscal calendar year, custom calendar]
-tags: [dates]
+
+
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

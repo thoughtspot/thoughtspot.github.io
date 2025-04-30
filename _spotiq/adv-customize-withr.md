@@ -1,7 +1,5 @@
 ---
 title: [Advanced R Customizations]
-tags: [spotiq,customize, r-scripts]
-keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

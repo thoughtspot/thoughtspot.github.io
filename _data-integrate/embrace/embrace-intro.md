@@ -1,6 +1,6 @@
 ---
 title: [Embrace overview]
-keywords: live query, external database, connectors
+
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
@@ -19,6 +19,7 @@ You create a connection to a Snowflake database, choosing the columns from each 
 - Centralize data management and governance in Snowflake.
 - Save significant time and money by avoiding ETL pipelines.
 - Set up and schedule sync of data into ThoughtSpot.
+- Connect to multiple Snowflake databases (starting in release 5.3.1).
 
 ## Embrace modes
 
@@ -38,14 +39,11 @@ When you create your connection to a Snowflake database, by default, it is a **L
 | *Search Suggestions for column values* | No | Yes |
 | *Headlines at the bottom that summarize tables* | Yes | Yes |
 | *All Chart Types & Configurations* | Yes | Yes |
-| *SpotIQ Instant Insights* | Yes | Yes |
+| *SpotIQ Instant Insights* | No | Yes |
 | *SpotIQ pre-computed insights* | No | Yes |
-| *Table & Column Remapping* | No | No |
+| *Table and Column Remapping* | No | N/A |
 | *Custom Calendar* | No | Yes |
-| *Hot & Cold Data* | No | N/A |
-| *Pass Through Security* | No | N/A |
-| *Sync using ODBC / JDBC driver of target database* | Yes | N/A |
-| *Sync using Bulk Loading capability of target database for faster syncing* | No | N/A |
+| *Materialized Views* | No | Yes |
 
 ## Next steps
 
@@ -55,5 +53,5 @@ Create the connection between ThoughtSpot and tables in a Snowflake database.
 Set your connection to copy tables from Snowflake into ThoughtSpot.
 -   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
 Edit, remap or delete a connection to tables in a Snowflake database.
-- **[Know database connector details]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
+- **[Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
 Source cloud data connectors, and their connection credentials, supported by Embrace.

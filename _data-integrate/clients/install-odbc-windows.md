@@ -1,6 +1,6 @@
 ---
 title: [Install the ODBC driver on Windows]
-keywords: tbd
+
 last_updated: tbd
 summary: "Use this procedure to obtain the Microsoft Windows ODBC driver and install it."
 sidebar: mydoc_sidebar

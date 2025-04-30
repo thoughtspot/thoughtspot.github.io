@@ -1,6 +1,6 @@
 ---
 title: [Supported hardware]
-keywords: tbd
+
 last_updated: tbd
 summary: "Required and provided installation hardware."
 sidebar: mydoc_sidebar

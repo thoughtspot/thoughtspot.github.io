@@ -1,6 +1,6 @@
 ---
 title: [Understand backup/snapshot schedules]
-keywords: tbd
+
 last_updated: tbd
 summary: "Explains how schedules and gives examples."
 sidebar: mydoc_sidebar

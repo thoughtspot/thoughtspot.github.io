@@ -1,7 +1,7 @@
 ---
 title: [Test the LDAP configuration]
-tags: [SAML_LDAP_AD]
-keywords: LDAP,test,configure
+
+
 last_updated: tbd
 summary: "This procedure allows you to test the LDAP connection you created.
 "

@@ -1,6 +1,6 @@
 ---
 title: [Create a search from a view]
-keywords: tbd
+
 last_updated: 11/1/2018
 summary: "After creating a view, you can select it and search its data."
 sidebar: mydoc_sidebar

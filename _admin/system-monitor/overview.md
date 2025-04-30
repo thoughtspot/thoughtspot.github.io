@@ -1,7 +1,7 @@
 ---
 title: [Overview board]
-keywords: monitor,system,actions,user,cluster,nodes,version
-tags: [indexing]
+
+
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -86,6 +86,29 @@ You can see this policy is disabled, which is a problem. Production clusters
 should enable the default snapshot policy. When you show or enable the snapshot
 policy, you can see your `tscli` command reflected in the **Configuration
 Events** panel on this same page.
+
+### Display the features used in a cluster configuration
+
+1. Log into the ThoughtSpot cluster as the `admin` user.
+2. Use the `tscli feature` subcommand to display your current configuration.
+
+    ```
+    $ tscli feature get-all-config
+    +---------------------------------+----------+---------------+
+    |              NAME               |  STATUS  | CONFIGURATION |
+    +---------------------------------+----------+---------------+
+    | Firewall                        | Disabled |               |
+    | Saml                            | Disabled |               |
+    | Ldap                            | Disabled |               |
+    | CustomBranding                  | Disabled |               |
+    | CustomBrandingFontCustomization | Disabled |               |
+    | DataConnect                     | Disabled |               |
+    | RLS                             | Enabled  |               |
+    | Callhome                        | Enabled  |               |
+    | SSHTunnel                       | Enabled  |               |
+    | Fileserver                      | Disabled |               |
+    +---------------------------------+----------+---------------+
+    ```
 
 ## Relational Data Cache
 

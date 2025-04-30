@@ -1,7 +1,7 @@
 ---
 title: [Cannot open a saved answer that contains a formula]
-keywords: tbd
-tags: [dates]
+
+
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

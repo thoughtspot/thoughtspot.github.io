@@ -1,6 +1,6 @@
 ---
 title: [Data Caching]
-keywords: data,clsuter,memory,inport,tsload
+
 last_updated: tbd
 summary: "ThoughtSpot does all analysis against data in memory to help achieve
 fast results across millions and billions of records of data."

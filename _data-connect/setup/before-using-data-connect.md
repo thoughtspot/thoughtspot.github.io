@@ -1,6 +1,6 @@
 ---
 title: [Prerequisites and Architecture]
-keywords: tbd
+
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar

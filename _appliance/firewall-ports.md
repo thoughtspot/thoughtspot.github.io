@@ -1,7 +1,7 @@
 ---
 title: [Network policies]
-keywords: network, ports
-tags: [networking]
+
+
 last_updated: tbd
 summary: "Lists the required and optional ports for an installation."
 sidebar: mydoc_sidebar

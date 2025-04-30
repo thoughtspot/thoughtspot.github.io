@@ -1,6 +1,6 @@
 ---
 title: [Hardware appliance overview]
-keywords: appliance,hardware,box
+
 last_updated: tbd
 summary: "What is in the box."
 sidebar: mydoc_sidebar

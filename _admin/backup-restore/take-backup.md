@@ -1,6 +1,6 @@
 ---
 title: [Create a manual backup]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,7 +9,7 @@ ThoughtSpot enables you to manually create a backup to restore a cluster to a pr
 
 You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.
 
-
+<!--
 ## Using Management Console
 
 {% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
@@ -68,7 +68,7 @@ To manually create a backup using the admin UI:
 6. Click **Save** to configure the backup.
 
 You can see the newly created backup file in the backup dashboard.
-
+-->
 ## Using tscli
 To manually create a backup using the tscli:
 1. Log in to the Linux shell using SSH.

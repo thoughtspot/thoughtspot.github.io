@@ -1,6 +1,6 @@
 ---
 title: [Additional chart options]
-keywords: tbd
+
 last_updated: tbd
 summary: "On charts, you can configure data labels, grid lines, regression lines, legends, values for x or y axis, and lock or unlock."
 sidebar: mydoc_sidebar

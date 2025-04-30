@@ -1,7 +1,7 @@
 ---
 title: [GCP configuration options]
-keywords: GCP, configuration
-tags: [performance]
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,7 +1,7 @@
 ---
 title: [Work with Answers]
-tags: [overview,tipsntricks]
-keywords: tbd
+
+
 last_updated: tbd
 summary: "Answers are the saved results of a search. "
 sidebar: mydoc_sidebar

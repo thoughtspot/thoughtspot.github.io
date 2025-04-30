@@ -1,7 +1,7 @@
 ---
 title: [Edit the system-wide data model]
-keywords: tbd
-tags: [indexing]
+
+
 last_updated: tbd
 summary: "Edit the modeling file to edit your data settings."
 sidebar: mydoc_sidebar

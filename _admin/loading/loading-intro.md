@@ -1,6 +1,6 @@
 ---
 title: [Load and manage data]
-keywords: tbd
+
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar

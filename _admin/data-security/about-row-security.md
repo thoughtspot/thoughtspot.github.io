@@ -1,7 +1,7 @@
 ---
 title: ["About row level security (RLS)"]
-tags: [rls,groups, security]
-keywords: tbd
+
+
 last_updated: tbd
 summary: "Using row level security, you can restrict data that appears in search results and pinboards by group."
 sidebar: mydoc_sidebar

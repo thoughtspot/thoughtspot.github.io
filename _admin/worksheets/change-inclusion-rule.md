@@ -1,8 +1,8 @@
 ---
 title: ["Change the join rule or RLS setting for a worksheet"]
-keywords: "worksheet, join rule, RLS"
+
 last_updated: tbd
-tags: [rls]
+
 summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different join or RLS rule."
 toc: false
 sidebar: mydoc_sidebar

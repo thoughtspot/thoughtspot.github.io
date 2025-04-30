@@ -1,6 +1,6 @@
 ---
 title: [Configure trusted authentication]
-keywords: embedding,authentication,SAML
+
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar

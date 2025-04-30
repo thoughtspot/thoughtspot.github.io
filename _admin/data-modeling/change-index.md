@@ -1,7 +1,7 @@
 ---
 title: ["Manage suggestion indexing"]
-keywords: search,suggestions,indexing,priority,index,ubr
-tags: [performance,indexing]
+
+
 last_updated: tbd
 summary: " ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar

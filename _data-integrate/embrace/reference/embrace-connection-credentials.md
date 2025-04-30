@@ -1,6 +1,6 @@
 ---
 title: [Connectors reference]
-keywords: tbd
+
 toc: false
 last_updated: tbd
 toc: true
@@ -24,5 +24,5 @@ Here is a list of all of the external database connectors, and their connection 
  - **Schema**: Optional. Specify the schema associated with the database.
 
 ## Related articles
--   [Set up a new connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html)
+-   [Add a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html)
 -   [Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)

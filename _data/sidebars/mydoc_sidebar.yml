@@ -496,7 +496,7 @@ entries:
         - title: About LDAP integration
           url: /admin/setup/about-LDAP.html
           output: web,admBk
-        - title: Configure LDAP for Active Directory
+        - title: Configure authentication through Active Directory
           url: /admin/setup/LDAP-config-AD.html
           output: web,admBk
         - title: Add the SSL certificate for LDAP
@@ -622,7 +622,7 @@ entries:
       - title: Create, edit, or delete a group
         url: /admin/users-groups/add-group.html
         output: web,admBk
-      - title: Add, edit, or delete a user
+      - title: Create, edit, or delete a user
         url: /admin/users-groups/add-user.html
         output: web,admBk
       - title: Allow users to sign up
@@ -831,6 +831,7 @@ entries:
         output: web,ugBk
       - title: Refresh a view
         url: /admin/loading/refresh-view.html
+        output: web,ugBk
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
         output: web,ugBk

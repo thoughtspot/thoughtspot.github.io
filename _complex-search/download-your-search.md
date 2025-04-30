@@ -1,6 +1,6 @@
 ---
 title: [Download your search]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can download your search as either a table or chart."
 sidebar: mydoc_sidebar

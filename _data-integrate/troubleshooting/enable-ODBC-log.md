@@ -1,7 +1,5 @@
 ---
 title: [Enable ODBC Logs]
-keywords: tbd
-tags: [logs]
 summary: "Learn how to troubleshoot ODBC connections."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

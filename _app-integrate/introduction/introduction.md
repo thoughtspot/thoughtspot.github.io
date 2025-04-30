@@ -1,6 +1,6 @@
 ---
 title: [Introduction to Embedding]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,7 +21,7 @@ ThoughtSpot Extended Enterprise Edition includes these capabilities:
 
 When you buy ThoughtSpot Extended Enterprise, the following rights and obligations apply:
 
-1. External users may only access those elements that are exposed through ThoughtSpot public APIs. These include search, search results and data visualizations, saved pinboard and answers, SearchIQ, and SpotIQ.
+1. External users may only access those elements that are exposed through ThoughtSpot public APIs. These include search, search results and data visualizations, saved pinboard and answers, SearchIQ (**Beta**), and SpotIQ.
 2. External users may not be granted Administrator privileges such as the ability to create and modify users and groups.
 3. External users are not permitting to copy or download the ThoughtSpot software.
 4. You may not include external users in a group that has access to these privileges:
