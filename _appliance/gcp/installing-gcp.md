@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot nodes in GCP]
-last_updated: [2/27/2020]
+last_updated: [12/12/2019]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,11 +19,28 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 ## Configure Nodes
 After creating the instance, you must configure the nodes. Follow the steps in this checklist.
 
-| &#10063; | [Step 1: Log in to your cluster](#node-step-1) |
-| &#10063; | [Step 2: Get a template for network configuration](#node-step-2) |
-| &#10063; | [Step 3: Prepare node configuration](#node-step-3) |
-| &#10063; | [Step 4: Configure the nodes](#node-step-4) |
-| &#10063; | [Step 5: Confirm node configuration](#node-step-5) |
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#node-step-1">Step 1: Log into your cluster</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#node-step-2">Step 2: Get a template for network configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#node-step-3">Step 3: Prepare node configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#node-step-4">Step 4: Configure the nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-gcp#node-step-5">Step 5: Confirm node configuration</a></td>
+  </tr>
+</table>
 
 {% include content/install/configure-nodes-steps1through5.md %}
 
@@ -35,8 +52,9 @@ Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/gcp/gcp-c
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
-* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
+* [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
+* [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

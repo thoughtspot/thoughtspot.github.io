@@ -1,7 +1,7 @@
 ---
 title: [Deploy SSL with ODBC on Windows]
-summary: "Enable SSL for an ODBC connection."
-last_updated: 11/19/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

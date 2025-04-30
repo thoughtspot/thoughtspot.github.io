@@ -1,17 +1,19 @@
 ---
 title: [GCP node overview]
-summary: "Google Cloud Platform (GCP) can provide memory and CPU for your ThoughtSpot
-instance."
-last_updated: 11/18/2019
+
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Google Cloud Platform (GCP) can provide memory and CPU for your ThoughtSpot
+instance.
 
-Your database capacity determines the number of instances you must have, and
+Your database capacity determine the number of instances you must have, and
 the instance network/storage requirements. In addition, you can choose multiple
 virtual machines (VMs) based on your dataset size.
 
-You must set up the appropriate Firewall Rules in your GCP environment
+You must setup the appropriate Firewall Rules in your GCP environment
 for your ThoughtSpot deployment. See the [GCP Firewall Rules](https://cloud.google.com/vpc/docs/firewalls)
 article for configuration details.
 

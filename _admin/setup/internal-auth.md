@@ -12,11 +12,10 @@ Many organizations don't use LDAP or active directory for user authentication. I
 {% include note.html content="Before the user logs into ThoughtSpot, the user must exist in ThoughtSpot. This is independent of the authentication mechanism." %}
 
 If you have been using ThoughtSpot with users you created manually, and you now want to transition to LDAP, please contact ThoughtSpot Support (See https://docs.thoughtspot.com/latest/admin/misc/contact.html). They can assist you in migrating existing users to their LDAP equivalents.
-
 <!--
 ## Configure internal authentication
 To authenticate users using ThoughtSpot internal who are not available in the LDAP or AD system:
-1. Log in to ThoughtSpot from a browser.
+1. Log into ThoughtSpot from a browser.
 2. Click the **Admin** menu on the top navigation bar.
 
    ![]({{ site.baseurl }}/images/admin.png)

@@ -1,15 +1,15 @@
 ---
 title: [Get your configuration and logs]
-last_updated: 11/18/2019
-summary: Two main troubleshooting tools are getting a log bundle and understanding your cluster configuration.
+
+
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-For troubleshooting on specific incidents or cluster problems, two things are important: understanding your current configuration and getting a log bundle.
+For troubleshooting on specific incidents or cluster problems, two things are important. Understanding your current configuration and getting a log bundle.
 
 ## Check your configuration
 
-1. Log in to the ThoughtSpot cluster as the `admin` user.
+1. Log into the ThoughtSpot cluster as the `admin` user.
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```

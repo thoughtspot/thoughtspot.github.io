@@ -1,7 +1,7 @@
 ---
 title: ["Allow users to sign up"]
-summary: Learn how to allow people in your organization to sign up for ThoughtSpot.
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

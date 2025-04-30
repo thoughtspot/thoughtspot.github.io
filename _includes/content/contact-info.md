@@ -9,7 +9,7 @@ If you encounter a technical issue, file a support ticket using the Support Port
 
 Please provide as much detail as possible about your issue, to help us resolve it quickly.
 
-You need a Support Portal login to file a ticket. If you do not have one, contact your ThoughtSpot liaison or email ThoughtSpot support using the details provided [below](#email).
+You need a Support Portal login to file a ticket. Please contact ThoughtSpot to get an account, if necessary.
 
 {: id="address"}
 ## Address
@@ -31,6 +31,6 @@ Sunnyvale, CA 94085
 
 | Reason for contacting us | Email |
 | --------------------- | ----- |
-| Sales inquiries | [sales@thoughtspot.com](mailto:sales@thoughtspot.com) |
-| Customer support and software update inquiries | [support@thoughtspot.com](mailto:support@thoughtspot.com) |
-| Other inquiries | [hello@thoughtspot.com](mailto:hello@thoughtspot.com) |
+| Sales inquiries | <a href="mailto:sales@thoughtspot.com">sales@thoughtspot.com</a> |
+| Customer support and software update inquiries | <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> |
+| Other inquiries | <a href="mailto:hello@thoughtspot.com">hello@thoughtspot.com</a> |

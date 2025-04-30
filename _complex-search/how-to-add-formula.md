@@ -1,7 +1,8 @@
 ---
 title: [Add a formula to a search]
-summary: Learn how to add a formula to a search.
-last_updated: 11/15/2019
+
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

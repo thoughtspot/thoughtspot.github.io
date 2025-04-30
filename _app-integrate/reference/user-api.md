@@ -1,12 +1,12 @@
 ---
 title: [User API]
-summary: "The User APIs enable you to manage user- and group-related operations in the ThoughtSpot system."
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can use the User APIs to manage your users and groups in ThoughtSpot. For example, you may want to view all users and groups in your ThoughtSpot cluster.
+The User APIs enable you to manage user- and group-related operations in the ThoughtSpot system. For example, you may want to view all users and groups in your ThoughtSpot cluster.
 
 ## Transfer ownership
 Use this API to transfer ownership of _all_ objects from one user to another.

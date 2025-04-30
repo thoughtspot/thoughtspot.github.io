@@ -1,7 +1,7 @@
 ---
 title: [Understand backup modes]
-summary: Learn about types of backups.
-last_updated: 11/15/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,10 +1,11 @@
 ---
 title: [Session API]
-summary: "The Session APIs enable you to manage the sessions of existing users."
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+The Session APIs enable you to manage sessions of the existing users.
 
 ## Managing login
 Use this API to authenticate and login a user.

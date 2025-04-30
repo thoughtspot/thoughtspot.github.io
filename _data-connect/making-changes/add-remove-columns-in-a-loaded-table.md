@@ -1,16 +1,17 @@
 ---
 title: ["Add/remove columns in a loaded table"]
-summary: "You can modify tables that have been selected for load in Data Connect by adding or removing columns."
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+You can modify tables that have been selected for load in Data Connect by adding or removing columns.
 
 In addition to adding more tables while editing a data source, you can also add or remove columns from loaded tables. This makes it easier to include new source columns with your job, edit the data source definition to add or remove columns, and adapt existing jobs to change source schemas.
 
-This feature captures all relationships. The relationships are automatically created for you when you add a primary key column.
+All relationships are captured with this feature. The relationships are automatically created for you when you add a primary key column.
 
-Do not edit the schema when altering tables.
+It is recommended that you do not edit the schema when altering tables.
 
 To add/remove columns in a loaded table:
 

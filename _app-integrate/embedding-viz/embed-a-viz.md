@@ -1,7 +1,7 @@
 ---
 title: [Embed pinboard or visualization]
-summary: Learn how to embed a visualization or pinboard in your own Web page.
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
@@ -106,7 +106,7 @@ fastest way to run a webserver and test the code is using Python's
 `simplehttpserver`.  If you have Python on your system you already have the
 `simplehttpserver`.
 
-1. Log in to ThoughtSpot.
+1. Log into ThoughtSpot.
 
    In production, you would have added authentication code to your client. You
    haven't done that with this system. So, before you test, you must login to the

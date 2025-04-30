@@ -1,7 +1,7 @@
 ---
 title: [Metadata API]
-summary: "The Metadata APIs allow you to fetch metadata for ThoughtSpot objects."
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

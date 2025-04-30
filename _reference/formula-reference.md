@@ -1,7 +1,6 @@
 ---
 title: [Formula function reference]
-summary: Learn the operators and functions you can use to create formulas in ThoughtSpot.
-last_updated: 11/19/2019
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

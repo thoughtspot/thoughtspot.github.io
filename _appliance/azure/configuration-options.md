@@ -1,7 +1,8 @@
 ---
 title: [Azure configuration options]
-summary: "ThoughtSpot offers several Microsoft Azure instance types."
-last_updated: 11/18/2019
+
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

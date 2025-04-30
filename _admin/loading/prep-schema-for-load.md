@@ -1,7 +1,7 @@
 ---
 title: [Connect with TQL and create a schema]
-summary: Learn about TQL, ThoughtSpot's SQL command line.
-last_updated: 11/15/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

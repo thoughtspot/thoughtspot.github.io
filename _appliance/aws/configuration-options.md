@@ -1,6 +1,6 @@
 ---
 title: [AWS configuration options]
-last_updated: 2/27/2020
+last_updated: 10/09/2019
 summary: "Your instances require specific configurations of memory, CPU, storage, and networking capacity."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,7 +9,7 @@ ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) in
 - Mode 1: Compute VMs + EBS-only persistent storage
 - Mode 2: Compute VMs + EBS and S3 persistent storage
 
-The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedures.  For assistance in choosing the best mode for your organization, contact your ThoughtSpot representative. For more information on purchasing ThoughtSpot in AWS, see: [ThoughtSpot Pricing](https://www.thoughtspot.com/pricing){:target="_blank"}.
+The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedure.  For assistance in choosing the best mode for your organization, contact your ThoughtSpot representative. For more information on purchasing ThoughtSpot in AWS, see: [ThoughtSpot Pricing](https://www.thoughtspot.com/pricing){:target="_blank"}.
 
 All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and therefore, also in the same region). ThoughtSpot does not support deploying VMs in the same cluster across availability zones. For more information, see [Regions and Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html){:target="_blank"} in Amazon's AWS documentation.
 
@@ -18,7 +18,7 @@ All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and 
 
 The following sections contain the supported and recommended instance types for a ThoughtSpot AWS deployment. When setting up your cluster in AWS, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
 
-For example: If you were deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you would need 4 VM instances, because the instance type supports data capacity of 250 GB. The data volumes on the EBS would need to be provision with 2x1 TB volumes per VM.
+For example: If you were deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you would need 4 instances (VMs), because the per-VM user data capacity of that instance type is 250 GB. If you were deploying EBS-only data volumes, you would need 2x1 TB data volumes per VM.
 
 {: id="vm-ebs-only-persistent-storage" }
 ### VMs with EBS-only persistent storage
@@ -51,7 +51,7 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 {: id="related"}
 ## Related information
 
-- [EC2 instance types](https://aws.amazon.com/ec2/instance-types/){:target="_blank"}
-- [EC2 pricing](https://aws.amazon.com/ec2/pricing/){:target="_blank"}
-- [EBS pricing](https://aws.amazon.com/ebs/pricing/){:target="_blank"}
-- [Placement groups](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html){:target="_blank"}
+- [EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
+- [EC2 pricing](https://aws.amazon.com/ec2/pricing/)
+- [EBS pricing](https://aws.amazon.com/ebs/pricing/)
+- [Placement groups](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)

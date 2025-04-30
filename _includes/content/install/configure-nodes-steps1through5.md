@@ -1,10 +1,10 @@
 {: id="node-step-1"}
-### Step 1: Log in to your cluster
-Log in to your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. Ask your network administrator if you do not know the admin credentials.
-1. Run `ssh admin@<nodeIP>`.<br>
-Replace `nodeIP` with your specific network information.
+### Step 1: Log into your cluster
+Log into your cluster with admin credentials from Terminal on a Mac or a terminal emulator on Windows. Ask your network administrator if you do not know the admin credentials.
+1. Run `ssh admin@<clusterIP>` or `ssh admin@<hostname>`.<br>
+Replace `clusterIP` or `hostname` with your specific network information.
 ```
-$ ssh admin@<nodeIP>
+$ ssh admin@<clusterIP>
 ```
 2. Enter your admin password at the prompt.<br>
 Ask your network administrator if you don't know the password.
@@ -20,11 +20,7 @@ You can find more information on this process in the [`nodes.config` file refere
 
 {: id="node-step-3"}
 ### Step 3: Prepare node configuration
-1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example). Run `vim nodes.config` to edit the file.
-    ```
-    $ vim nodes.config
-    ```
-    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
+1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
 If you have additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -47,9 +43,8 @@ Configure the nodes in the `nodes.config` file using the `set-config` command.
 ```
 
 2. Run the configuration command: `$ cat nodes.config | tscli cluster set-config`.<br>
-If the command returns an error, refer to [set-config error recovery](#set-config-error-recovery).<br>
-    After you run the node configuration command, your output appears similar to the following:
-
+If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}#set-config-error-recovery).<br>
+After you run the node configuration command, your output appears similar to the following:
     ```
     $ cat nodes.config | tscli cluster set-config
 
@@ -57,6 +52,7 @@ If the command returns an error, refer to [set-config error recovery](#set-confi
     Setting up hostnames for all nodes
     Setting up networking interfaces on all nodes
     Setting up hosts file on all nodes
+    Setting up IPMI configuration
     Setting up NTP Servers
     Setting up Timezone
     Done setting up ThoughtSpot

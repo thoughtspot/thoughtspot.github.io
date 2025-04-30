@@ -1,7 +1,7 @@
 ---
 title: [Other search actions]
-summary: Learn about advanced search options.
-last_updated: 11/15/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

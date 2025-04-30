@@ -1,6 +1,7 @@
 ---
 title: [View or edit a formula in a search]
-summary: Learn how to view or edit a formula.
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

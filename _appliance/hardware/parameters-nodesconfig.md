@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [2/4/2020]
+last_updated: [12/19/2019]
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,25 +14,20 @@ As you install your appliance, you must configure the nodes.
 ```
     $ tscli cluster get-config |& tee nodes.config
 ```
-
-2. Add network information for your nodes in the `nodes.config` file output, as demonstrated in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example.<br>
-Run `vim nodes.config` to edit the file.
-    ```
-    $ vim nodes.config
-    ```
-Fill in the areas specified in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) with your specific network information.
-    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
-3. If you have  additional nodes, complete this process for each node.
+2. Add network information for your nodes in the `nodes.config` file output, as demonstrated in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example. Fill in the areas specified in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) with your specific network information.
+3. If you have  additional nodes, complete each node within the nodes.config file in [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html) example.
 
 Do not edit any part of the nodes.config file except the sections explained in [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config). If you delete quotation marks, commas, or other parts of the code, setup may fail.
 
-See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) to understand the parameters in the file. Different hardware and cloud installations have different parameters. Your installation may not require all the listed parameters.
+See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html#parameters-nodes.config) to understand the parameters in the file. Different hardware and cloud appliance have different parameters. Your installation may not require all the listed parameters.
 
 {: id="parameters-nodes.config"}
 
 ### Parameters of the nodes.config file
 
-**ClusterId** and **Cluster Name**: Leave these two parameters blank. You fill them out later, when running `tscli cluster create`.
+**ClusterId**	The ID of your cluster, in the form yymmX0000, where yymm refers to the year and month you are creating the cluster, X functions as a separator, and 0000 is the number of the cluster, as in 0001 and 0002. For example, 1909X0001. If you have multiple clusters, ensure that each has a unique name.
+
+**ClusterName**	Name your cluster, using dashes instead of spaces. For example, TS-Company.
 
 **DataNetmask**	The IP of the data netmask, in the form 000.000.000.000. For example, 255.255.252.0.
 
@@ -42,15 +37,11 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 **IPMIGateway**	The IP of the Intelligent Platform Management Interface (IPMI) gateway, in the form 000.000.000.000. For example, 192.168.4.1.   
 
-**Timezone**	The timezone the majority of your ThoughtSpot users are in, in the form Country/City. For example, America/Los_Angeles. To find your timezone and a city you can use to identify it, use [this timezone list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+**Timezone**	The timezone you are setting up the hardware in, in the form Country/City. For example, America/Los_Angeles. To find your timezone and a city you can use to identify it, use [this timezone map](https://www.timeanddate.com/time/map/).
 
 **NTPServers**	The address of your company’s Network Time Protocol (NTP) server. If your company does not have an NTP server, you can use one of ThoughtSpot’s, as listed in [the nodes.config]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) example under NTPServers. For example, 0.centos.pool.ntp.org.  
 
 **DNS**	The address of your company’s Domain Name Server (DNS). For example, 192.168.2.200,8.8.8.8.  
-
-{% include warning.html content="Configure only two DNS servers. ThoughtSpot does not support configuration of three DNS servers." %}
-
-{% include note.html content="You can only edit DNS settings with this command if you are deploying ThoughtSpot on hardware. ThoughtSpot does not support using <code>set-config</code> to edit your DNS settings for cloud deployment." %}
 
 **SearchDomains**	The domain of your company or organization, in the form example.company.com.   
 

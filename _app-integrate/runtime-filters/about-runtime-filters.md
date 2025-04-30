@@ -1,7 +1,8 @@
 ---
 title: [About Runtime Filters]
-summary: "Use runtime filters to filter an embedded answer or pinboard."
-last_updated: 11/18/2019
+
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

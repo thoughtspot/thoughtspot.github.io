@@ -1,7 +1,6 @@
 ---
 title: ["SpotIQ 101: Load and analyze data"]
-summary: Go through a sample SpotIQ workflow to learn about SpotIQ.
-last_updated: 11/15/2019
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

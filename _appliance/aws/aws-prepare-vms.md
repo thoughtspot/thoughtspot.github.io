@@ -7,11 +7,11 @@ permalink: /:collection/:path.html
 ---
 1. SSH into a VM.
 ```
-    $ ssh -i key.pem admin@<VM-IP>
+    ssh admin@<VM-IP>
 ```
 1. Run `sudo /usr/local/scaligent/bin/prepare_disks.sh` to configure the VMs.
 
-    {% include warning.html content="Make sure you migrate any data off the disks. This command formats the disks, wiping them clean." %}
+    {% include warning.html content="Make sure you migrate any data off the disks. This command wipes the disks clean if they are not empty already." %}
     ```
     $ sudo /usr/local/scaligent/bin/prepare_disks.sh
     ```

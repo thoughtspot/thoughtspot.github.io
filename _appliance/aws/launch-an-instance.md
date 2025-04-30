@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS resources for ThoughtSpot]
-last_updated: 2/27/2020
+last_updated: 12/17/2019
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) in AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -8,14 +8,29 @@ permalink: /:collection/:path.html
 {: id="aws-overview"}
 ## Overview of ThoughtSpot setup in AWS
 Follow these steps to set up your ThoughtSpot VMs in AWS.
-
-| &#10063; | [1. Get access to ThoughtSpot's AMI](#ami). |
-| &#10063; | [2. Choose a VM instance configuration recommended by ThoughtSpot.](#ec2-setup) |
-| &#10063; | [3. Set up your Amazon S3 bucket (optional).](#s3-bucket-setup) |
-| &#10063; | [4. Set up your ThoughtSpot cluster in AWS.](#aws-ts-setup-cluster) |
-| &#10063; | [5. Configure security groups.](#security-groups) |
-| &#10063; | [6. Open the required network ports for communication for the nodes in your cluster and end users.](#security-groups) |
-| &#10063; | [7. Prepare the VMs.](#prepare-vms) |
+<table>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#ec2-setup">1. Gain access to ThoughtSpot's AMI.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#ec2-setup">2. Choose a VM instance configuration recommended by ThoughtSpot.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#s3-bucket-setup">3. Set up your Amazon S3 bucket (optional).</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#aws-ts-setup-cluster">4. Set up your ThoughtSpot cluster in AWS.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#security-groups">5. Configure security groups.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#network-ports">6. Open the required network ports for communication for the nodes in your cluster and end users.</a></td></tr>
+<tr>
+  <td>&#10063;</td>
+  <td><a href="launch-an-instance#install-cluster">7. Configure your nodes and install the cluster.</a></td></tr>
+</table>
 
 {: id="prerequisites"}
 ## About the ThoughtSpot AMI
@@ -28,45 +43,60 @@ To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
 -   A block device mapping that specifies the volumes to attach to the instance when it launches.
 
-The ThoughtSpot AMI has specific applications on a base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
+The ThoughtSpot AMI has specific applications on a CentOS base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
 
 {: id="prerequisites"}
 ## Prerequisites
 
 To install and launch ThoughtSpot, you must have the following:
-
-| &#10063; | Familiarity with Linux administration, and a general understanding of cloud deployment models. |
-| &#10063; | The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows. |
-| &#10063; | Networking information: Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf) to have a quick reference point. Ask your network administrator if you need help filling out the site survey. |
-
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td>Familiarity with Linux administration, and a general understanding of cloud deployment models.</td></tr>
+  <tr>
+    <td>&#10063;</td>
+    <td>The necessary AWS Identity and Access Management (IAM) users and roles assigned to you to access and deploy the various AWS resources and services as defined in the Required AWS components section that follows.</td></tr>
+</table>
   For more information about IAM, see: [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html){:target="_blank"} in Amazon's AWS documentation.
 
 {: id="aws-required"}
 ### Required AWS components
 
-| &#10063; | An AWS Virtual Private Cloud (VPC). An AWS VPC is a virtual network specifically for your AWS account. It exists in all availability zones in your region, but you can specify a local zone for even lower latency. For more details, see [VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html){:target="_blank"} in Amazon's AWS documentation. |
-| &#10063; | A ThoughtSpot AMI. For details, see [Choose VM instances](#ami). |
-| &#10063;| AWS security groups. For required open ports, see [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html). |
-| &#10063; | AWS VM instances. For instance type recommendations, see [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types). |
-| &#10063;| EBS volumes for data storage. |
-| &#10063; | (Optional) If deploying with S3 persistent storage, you need one S3 bucket for each ThoughtSpot cluster. |  
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td>An AWS Virtual Private Cloud (VPC). An AWS VPC is a virtual network specifically for your AWS account. It exists in all availability zones in your region, but you can specify a local zone for even lower latency. For more details, see <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html" target="_blank">VPCs and Subnets</a> in Amazon's AWS documentation.</td></tr>
+  <tr>
+    <td>&#10063;</td>
+    <td>A ThoughtSpot AMI. For details, see <a href="launch-an-instance#ec2-setup">Setting up your EC2 instances</a>. </td></tr>
+  <tr>
+    <td>&#10063;</td>
+    <td> AWS security groups. For required open ports, see <a href="/appliance/firewall-ports.html">Network Policies</a>.</td></tr>
+  <tr>
+    <td>&#10063;</td>
+    <td> AWS VM instances. For instance type recommendations, see <a href="/appliance/aws/configuration-options.html#ts-aws-instance-types">ThoughtSpot AWS instance types</a>.</td></tr>
+  <tr>
+    <td>&#10063;</td>
+    <td> EBS volumes for data storage.</td></tr>
+  <tr>
+    <td>&#10063;</td>
+    <td>(Optional) If deploying with S3 persistent storage, you need one S3 bucket for each ThoughtSpot cluster.</td></tr>
+</table>    
 
-{: id="ami"}
-## Get access to ThoughtSpot AMI
+{: id="ec2-setup"}
+### Setting up your EC2 instances
 
-1. Sign in to your [AWS account](https://console.aws.amazon.com/console/home){:target="_blank"}.
+1. Sign into your [AWS account](https://console.aws.amazon.com/console/home).
 2. Copy the following ThoughtSpot public AMI to your AWS region:  
 **AMI Name**: thoughtspot-image-20191031-8ae15008336-prod<br>
 **AMI ID**: ami-06276ece42ed96994  
 **Region**: N. California
-    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region. The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 6.0.x." %}
-
-{: id="ec2-setup"}
-## Choose VM instances
+    {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to access it. Then you can return to your own region." %}
+    {% include note.html content="The AMI is backward-compatible with ThoughtSpot releases 5.1.x - 6.0.x." %}
 3. Choose the appropriate EC2 instance type: See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types) for help choosing the correct instance type for your cluster.
 4. Networking requirements: 10 GbE network bandwidth is needed between the VMs. Ensure that you have this bandwidth.
-5. Ensure that all your VMs are on the same Amazon Virtual Private Cloud (VPC) and subnetwork. This is necessary because VMs that are part of a cluster need to be accessible by each other.  Additional external access may be required to bring data in/out of the VMs to your network. Add all nodes in the same placement group.
-6. Determine the number of EC2 instances you need: Based on the datasets, this number will vary. Refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types) for recommended nodes for a given data size.
+5. Ensure that all your VMs are on the same Amazon Virtual Private Cloud (VPC) and subnetwork. This is necessary because VMs that are part of a cluster need to be accessible by each other.  Additional external access may be required to bring data in/out of the VMs to your network.
+6. Determine the number of EC2 instances you need: Based on the datasets, this number will vary. Refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types) for recommended nodes for a given data size.
 
 {% include note.html content="Staging larger datasets (> 50 GB per VM), may require provisioning additional attached EBS volumes that are SSD (gp2)." %}
 
@@ -123,31 +153,22 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
      ![]({{ site.baseurl }}/images/launch_instance.png "Launch an instance")
 
-4. In the **My AMIs** tab under **1. Choose AMI**, search **ThoughtSpot** to find the ThoughtSpot AMI.
+4. Click the **My AMIs** tab and search **ThoughtSpot** to find the ThoughtSpot AMI.
 
-5. Click **Select**. Ensure that you select the ThoughtSpot AMI listed [above](#ami), which you entered earlier in this process.
-
-    ![Select the ThoughtSpot AMI]({{ site.baseurl }}/images/aws-choose-ami.png "Select the ThoughtSpot AMI")
+5. Click **Select**.
 
 5. On the **Choose an Instance Type** page, select a ThoughtSpot-supported instance type.
-   (See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).)
+   (See [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).)
 
 6. Click **Next: Configure Instance Details**.
 
 7. Configure the instances by choosing the number of EC2 instances you need.
    The instances must be on the same VPC and subnetwork. ThoughtSpot sets up the instances to be in the same ThoughtSpot cluster.  
 
-   **S3 storage setting**: If you are going to use the S3 storage option, ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides read/write access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
+   **S3 storage setting**: If you are going to use the S3 storage option, ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
 
 8. Click **Next: Add Storage**.
-   Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).
-
-   ![Add storage volumes]({{ site.baseurl }}/images/aws-add-storage.png "Add storage volumes")
-
-   | **1** | Click **Add new volume**. |
-   | **2** | Specify the type of storage, either EBS or S3. |
-   | **3** | Specify the size of the volume. |
-   | **4** | Ensure that you leave **Delete on termination** unchecked, to prevent potential loss of data if the VM is accidentally terminated.|
+   Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#thoughtspot-aws-instance-types).
 
 9. When you are done modifying the storage size, click **Next: Add Tags**.
 
@@ -160,10 +181,8 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 11. Select an existing security group to attach new security groups to so that it meets the security requirements for ThoughtSpot.
 
-    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check ThoughtSpot's Network policies documentation to determine the minimum required ports you must open for your ThoughtSpot appliance.</li></ul>
+    {{site.data.alerts.tip}} <b>Security setting for ThoughtSpot</b><ul><li>The VMs need intragroup security, i.e. every VM in a cluster must be accessible from one another. For easier configuration, ThoughtSpot recommends that you enable full access between VMs in a cluster.</li> <li>Additionally, more ports must be opened on the VM to provide data staging capabilities to your network. Check <a href="https://docs.thoughtspot.com/5.2/appliance/firewall-ports.html">Network policies</a> to determine the minimum required ports you must open for your ThoughtSpot appliance.</li></ul>
     {{site.data.alerts.end}}
-
-    Refer to [network policies]({{ site.baseurl }}/appliance/firewall-ports.html).
 
 12.  Click **Review and Launch**.
 
@@ -174,6 +193,5 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
 14.  Click **Launch Instances**. Wait a few minutes for it to fully start up. After it starts, it appears on the EC2 console.
 
-{: id="prepare-vms"}
 ## Prepare the VMs
 Before installing a ThoughtSpot cluster, an administrator must [prepare the VMs.]({{ site.baseurl }}/appliance/aws/aws-prepare-vms.html)

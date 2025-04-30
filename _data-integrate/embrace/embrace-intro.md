@@ -2,17 +2,15 @@
 title: [Embrace overview]
 last_updated: 10/21/2019
 toc: true
-summary: "Using Embrace, you can perform live queries on external databases."
+summary: "Using Embrace, you can perform live query on external databases."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If your company stores source data externally in data warehouses, you can use ThoughtSpot Embrace to directly query that data and use ThoughtSpot's analysis and visualization features, without moving the data into ThoughtSpot.
+If your company stores source data externally in data warehouses, you can use ThoughtSpot Embrace to directly query that data and use ThoughtSpot's analysis and visualization features, without moving the data into ThoughtSpot. If you decide later you want to copy your data into ThoughtSpot, you can also do that with Embrace.
 
 Embrace supports the following external databases:
 - Snowflake
-- Amazon Redshift
-- Google BigQuery
-- Microsoft Azure Synapse
+- Amazon Redshift (*in beta*)
 
 To enable Embrace, contact ThoughtSpot support.
 
@@ -24,257 +22,41 @@ You create a connection to the external database, choosing the columns from each
 - Eliminate the need to move data into ThoughtSpot for analysis.
 - Centralize data management and governance in the external database.
 - Save significant time and money by avoiding ETL pipelines.
+- Set up and schedule sync of data into ThoughtSpot.
 - Connect to multiple external databases.
 
-## Limitations
+## Embrace modes
 
-### Feature availability in Embrace
+Embrace has two operating modes:
+- **Linked**: ThoughtSpot queries your data in the external database.
+- **Synced**: ThoughtSpot queries a copy of your data stored in ThoughtSpot.
 
-The following matrix compares the features that are available in our internal high-performance database, Falcon, and the ones available in Embrace:
+When you create your connection to an external database, by default, it is a **Linked** connection. If you want to copy the external data into ThoughtSpot, you must sync the data. The features available with Linked and Synced tables are slightly different.
 
-<table>
-<tbody>
-<tr>
-<th>Feature Name</th>
-<th>Falcon</th>
-<th>Embrace</th>
-</tr>
-<tr>
-<td>Simple Search and Complex searches:<br />Versus, Inline Subquerying, Growth</td>
-<td>&check;</td>
-<td>&check;</td>
-</tr>
-<tr>
-<td>Search Suggestions for column names and values</td>
-<td>&check;</td>
-<td>&check;</td>
-</tr>
-<tr>
-<td>Headlines that summarize tables</td>
-<td>&check;</td>
-<td>&check;</td>
-</tr>
-<tr>
-<td>All chart types and configurations</td>
-<td>&check;</td>
-<td>&check;</td>
-</tr>
-<tr>
-<td>Spot IQ: Instant insights, Did you know?,<br>Pinboard insights, Analyze</td>
-<td>&check;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td>Monitor</td>
-<td>&check;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td>Table and Column remapping through Scriptability</td>
-<td>&cross;</td>
-<td>&check;</td>
-</tr>
-<tr>
-<td>Custom calendar</td>
-<td>&check;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td>Materialized view</td>
-<td>&check;</td>
-<td>&cross;</td>
-</tr>
-</tbody>
-</table>
+### Features in Embrace modes
 
-### Function availability in Embrace
-
-The following matrix compares the specific function support across the different databases of Embrace. Functions not listed here have full support.
-
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Snowflake</th>
-<th>Amazon<br />Redshift</th>
-<th>Google<br />BigQuery</th>
-<th>Azure<br />Synapse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>SOUNDS_LIKE</code></td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td><code>STRING_ MATCH_SCORE</code></td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td><code>EDIT_DISTANCE_WITH_CAP</code></td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td><code>APPROX_SET_CARDINALITY</code></td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td><code>COUNT_NOT_NULL</code></td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td><code>SPELLS_LIKE</code></td>
-<td>&check;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td><code>EDIT_DISTANCE</code></td>
-<td>&check;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-<td>&cross;</td>
-</tr>
-<tr>
-<td><code>MEDIAN</code></td>
-<td>&check;</td>
-<td>&check;</td>
-<td>&cross;</td>
-<td>&check;</td>
-</tr>
-<tr>
-<td><code>PERCENTILE</code></td>
-<td>&check;</td>
-<td>&check;</td>
-<td>&cross;</td>
-<td>&check;</td>
-</tr>
-</tbody>
-</table>
-
-### Data type availability in Embrace
-
-The following matrix captures the specific data type support limitations across the different databases of Embrace. Data types not listed here have full support.
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Type<br></th>
-      <th>Snowflake<br></th>
-      <th>Amazon<br>Redshift</th>
-      <th>Google<br>BigQuery</th>
-      <th>Azure<br>Synapse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>BINARY</code></td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&cross;</td>
-    </tr>
-    <tr>
-      <td><code>VARBINARY</code></td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&cross;</td>
-    </tr>
-    <tr>
-      <td><code>TIMESTAMPTZ</code></td>
-      <td>&check;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-    </tr>
-    <tr>
-      <td><code>GEOMETRY</code></td>
-      <td>&check;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-    </tr>
-    <tr>
-      <td><code>BYTES</code></td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-    </tr>
-    <tr>
-      <td><code>DATETIMEOFFSET</code></td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&cross;</td>
-    </tr>
-  </tbody>
-</table>
-
-### Additional specific exceptions
-
-The following list captures the specific limitations across the different databases of Embrace. Databases not listed here have full support.
-
-<dl>
-  <dlentry>
-    <dt>General: all databases</dt>
-    <dd>
-      <dl>
-        <dlentry>
-          <dt>Sample values</dt>
-          <dd>Embrace does not internationalize sample values in tables.</dd></dlentry>
-        <dlentry>
-           <dt>Delayed UI rendering</dt>
-           <dd>For connections with a very large number of tables (on the order of 1000's of tables), UI rendering may take a very long time. These connections may time out.</dd></dlentry>
-        <dlentry>
-          <dt>Deleting columns</dt>
-          <dd>After specifying a connection, columns cannot be deleted from the table. Editing a connection makes it possible to add additional columns, but not to remove them.</dd></dlentry>
-      </dl>
-    </dd>
-  </dlentry>
-  <dlentry>
-    <dt>Google BigQuery</dt>
-    <dd>
-      <dl>
-        <dlentry>
-          <dt>Join support</dt>
-          <dd>Google BigQuery does not support PK-FK joins. Therefore, when using Embrace, you must create joins explicitly in ThoughtSpot.</dd></dlentry>
-        <dlentry>
-          <dt>Partitioned tables</dt>
-          <dd>When running a query on a partitioned table with <strong>Require partition filter option</strong> enabled, you must specify the <code>WHERE</code> clause. Omitting the `WHERE` clause throws an error.<br>
-          To ensure that the query on such tables honors the partition condition, you must create a worksheet filter in ThoughtSpot.</dd></dlentry></dl>
-      </dd>    
-   </dlentry>
-   <dlentry>
-     <dt>Azure Synapse</dt>
-     <dd>Azure Synapse supports at most 10 <code>IF THEN ELSE</code> statements in a single query.</dd></dlentry>
-</dl>     
-
+| Feature |  Linked Tables | Synced Tables |
+|---|---|---|
+| *Simple Search* | Yes | Yes |
+| *Complex searches like Versus, Inline Subquerying, Growth* | Yes | Yes |
+| *Search Suggestions for column names* | Yes | Yes |
+| *Search Suggestions for column values* | Yes | Yes |
+| *Headlines at the bottom that summarize tables* | Yes | Yes |
+| *All Chart Types & Configurations* | Yes | Yes |
+| *SpotIQ Instant Insights* | No | Yes |
+| *SpotIQ pre-computed insights* | No | Yes |
+| *Table and Column Remapping* | Yes | N/A |
+| *Custom Calendar* | No | Yes |
+| *Materialized Views* | No | Yes |
+| *Indexing of table columns* | Yes | Yes |
 
 ## Next steps
 
--   **[Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Snowflake database.
--   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.
--   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
--   **[Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
+-   **[Add a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/setup-a-new-connection.html)**  
+Create the connection between ThoughtSpot and tables in an external database.
+- **[Sync]({{ site.baseurl }}/data-integrate/embrace/embrace-sync.html)**
+Set your connection to copy tables from the external database into ThoughtSpot.
+-   **[Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)**  
+Edit, remap or delete a connection to tables in an external database.
+- **[Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)**  
+Source cloud data connectors, and their connection credentials, supported by Embrace.

@@ -1,6 +1,6 @@
 ---
 title: [The nodes.config file]
-last_updated: [1/13/2020]
+last_updated: [12/19/2019]
 summary: "Learn how to use the get.config command and the nodes.config file to install  your hardware or cloud appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,7 +13,6 @@ As you install your appliance, you must configure the nodes.
     $ tscli cluster get-config |& tee nodes.config
 ```
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information, as shown in [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example).
-    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
 3. If you have  additional nodes, complete each node within the `nodes.config` file as shown in the [Autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#autodiscovery-of-one-node-example). [Autodiscovery of one node]({{ site.baseurl }}/appliance/hardware/nodesconfig-example#node-autodiscovery) shows the `nodes.config` file before you fill in your specific information.
 
 Do not edit any part of the nodes.config file except the sections explained in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, setup may fail.
@@ -24,32 +23,32 @@ Do not edit any part of the nodes.config file except the sections explained in [
 
 ### Autodiscovery of one node
 ```
-$ tscli cluster get-config |& tee nodes.config 
+$ tscli cluster get-config |& tee nodes.config  
 {  
-  "ClusterId": "",
-   "ClusterName": "",
-   "DataNetmask": "",
-   "DataGateway": "",
-   "IPMINetmask": "",
-   "IPMIGateway": "",
-   "Timezone": "",
-   "NTPServers": ",
-   "DNS": "",
-   "SearchDomains": "",
-   "Nodes": {
-     "06:83:1f:f8:99:9e": {
-       "NodeId": "06:83:1f:f8:99:9e",
-       "Hostname": "",
-       "DataIface": {
-         "Name": "eth0",
-         "IPv4": ""
-       },
-       "IPMI": {
-         "IPv4": ""
-       }
-     }
-   }
- }
+ "ClusterId": ""  
+ "ClusterName": ""  
+ "DataNetmask": ""  
+ "DataGateway": "",  
+ "IPMINetmask": "",  
+ "IPMIGateway": "",  
+ "Timezone": "",  
+ "NTPServers": "",  
+ "DNS": “”,  
+  "SearchDomains": "",  
+  "Nodes": {  	  
+     "ac:1f:6b:8a:77:f6": {  
+   "NodeId": "ac:1f:6b:8a:77:f6",  
+  "Hostname": "",  
+   "DataIface": {  
+   "Name": "eth2",  
+    "IPv4": "",  
+  },  
+  "IPMI": {  
+    "IPv4": ""  
+  }
+  }
+}
+}
 ```
 {: id="example-node-autodiscovery"}
 
@@ -57,8 +56,8 @@ $ tscli cluster get-config |& tee nodes.config
 ```
 $ vim nodes.config    
 {  
-"ClusterId": "",  
-  "ClusterName": "",  
+"ClusterId": "190905X0001",  
+  "ClusterName": "TS-Company",  
   "DataNetmask": "255.255.252.0",  
   "DataGateway": "192.168.4.1",  
   "IPMINetmask": "255.255.252.0",  

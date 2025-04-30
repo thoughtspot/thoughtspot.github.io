@@ -1,12 +1,11 @@
 ---
 title: [Overview of data modeling settings]
-summary: Learn about data modeling settings.
-last_updated: 11/15/2019
+last_updated: 09/23/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can change data modeling settings in two ways, both of which change the model.
+You can change these settings in two ways, both of which change the model.
 If you want to make a few small changes, you should [make them in the
 ThoughtSpot application ]({{ site.baseurl
 }}/admin/data-modeling/model-data-in-UI.html). If you want to make many changes

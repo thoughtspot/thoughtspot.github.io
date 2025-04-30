@@ -1,7 +1,7 @@
 ---
 title: [Remove a column from an existing data source]
-summary: "Learn how to remove a column from an existing data source."
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

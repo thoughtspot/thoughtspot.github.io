@@ -1,14 +1,14 @@
 ---
 title: [Understand embedding]
-summary: "This page provides an explanation of what you must
-consider when embedding ThoughtSpot."
-last_updated: 11/18/2019
+
+last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Embedding allows you to embed all or part of ThoughtSpot in another client
-application.
+application. This page provides an explanation of what you must
+consider when embedding ThoughtSpot
 
 ## Decide what to embed and where
 

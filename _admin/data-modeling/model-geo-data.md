@@ -1,7 +1,6 @@
 ---
 title: [Add a geographical data setting]
-summary: Learn how to model your geographical data.
-last_updated: 11/15/2019
+last_updated: 09/23/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

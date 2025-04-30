@@ -1,7 +1,7 @@
 ---
 title: [Log in credentials]
-summary: Learn how to log into ThoughtSpot.
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

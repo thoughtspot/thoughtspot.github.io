@@ -1,7 +1,7 @@
 ---
 title: [Delete a connection]
-summary: "Learn how to delete a connection."
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

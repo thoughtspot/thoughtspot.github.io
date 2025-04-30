@@ -1,7 +1,6 @@
 ---
 title: [About disaster recovery]
-summary: "ThoughtSpot's disaster recovery prevents data loss if there is a hardware or software failure."
-last_updated: 11/19/2019
+last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

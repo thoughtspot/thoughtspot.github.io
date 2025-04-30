@@ -1,7 +1,7 @@
 ---
 title: [Change a column data type]
-summary: "Learn how to change the data type of a column."
-last_updated: 11/18/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

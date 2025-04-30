@@ -1,7 +1,8 @@
 ---
 title: [Configure SAML]
-summary: "You can configure Security Assertion Markup Language (SAML) using ThoughtSpot's command line interface, tscli."
-last_updated: 11/18/2019
+
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

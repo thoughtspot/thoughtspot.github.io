@@ -1,17 +1,17 @@
 ---
 title: [Select chart color palettes]
-summary: You can change the color palettes that are used to create your charts.
-last_updated: 2/4/2020
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Although it is suggested that you stick with the default settings, it is possible to create your own appealing color palettes if done correctly.
+You can change the color palettes that are used to create your charts. Although it is suggested that you stick with the default settings, it is possible to create your own appealing color palettes if done correctly.
 
 To select the chart color palettes:
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
-     ![]({{ site.baseurl }}/images/style-chartcolorpalettes.png "Chart Color Palettes section")
+     ![]({{ site.baseurl }}/images/chart_color_palettes.png "Chart Color Palettes section")
 
 2. Click the color you would like to change in the primary color palette, and use the color menu to choose your new color.
 

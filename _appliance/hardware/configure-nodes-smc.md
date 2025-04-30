@@ -1,28 +1,47 @@
 ---
 title: [Configure ThoughtSpot Nodes on the SMC Appliance]
-last_updated: [1/31/2020]
+last_updated: [12/13/2019]
 summary: "Configure your nodes before you can install your cluster(s)."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 After you connect the appliance, configure the nodes in your Mac or Windows terminal emulator. Follow the steps in this checklist.
 
-| &#10063; | [Step 1: SSH into your cluster](#node-step-1) |
-| &#10063; | [Step 2: Change to the `install` directory](#node-step-2) |
-| &#10063; | [Step 3: Get a template for node configuration](#node-step-3) |
-| &#10063; | [Step 4: Prepare node configuration](#node-step-4) |
-| &#10063; | [Step 5: Configure the nodes](#node-step-5) |
-| &#10063; | [Step 6: Confirm node configuration](#node-step-6) | 
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-nodes-smc#node-step-1">Step 1: SSH into your cluster</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-nodes-smc#node-step-2">Step 2: Change to the <code>install</code> directory</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-nodes-smc#node-step-3">Step 3: Get a template for network configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-nodes-smc#node-step-4">Step 4: Prepare node configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-nodes-smc#node-step-5">Step 5: Configure the nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="configure-nodes-smc#node-step-6">Step 6: Confirm node configuration</a></td>
+  </tr>
+</table>
 
-If you completed ThoughtSpot's [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} form and returned it to [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) before ThoughtSpot shipped the appliance, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
+If you completed ThoughtSpot's site survey form and returned it to [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) before ThoughtSpot shipped the appliance, the appliance may be pre-configured for your network environment and ready to install and connect to your network.
 
 If the network configuration was not pre-set, then this step must be done as part of the installation process.
 
 Follow these steps to determine the configuration status of your appliance.
-1. SSH into your cluster. Run `ssh admin@<nodeIP>`.<br>
-Replace `nodeIP` with your specific network information.
+1. SSH into your cluster. Run `ssh admin@<cluster-IP>` or `ssh admin@<hostname>`.
 ```
-    $ ssh admin@<nodeIP>
+    $ ssh admin@<clusterIP>
 ```
 2. Run `tscli cluster status`.
 ```
@@ -40,7 +59,7 @@ SSH into your cluster with admin credentials.
 1. Run the command `ssh admin@<cluster-IP>` or `ssh admin@<hostname>` on the command line.<br>
     Replace `clusterIP` or `hostname` with your specific network information.
 ```
-    $ ssh admin@<nodeIP>
+    $ ssh admin@<clusterIP>
 ```
 2. Enter your admin password when prompted.<br>
     Ask your network administrator if you don't know the password.
@@ -59,11 +78,7 @@ Run the `tscli cluster get-config` command to get a template for network configu
 
 {: id="node-step-4"}
 ## Step 4: Prepare node configuration
-1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example). Run `vim nodes.config` to edit the file.
-    ```
-    $ vim nodes.config
-    ```
-    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
+1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
 If you have additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -74,7 +89,7 @@ Edit only the parts of the nodes.config file that are explicitly discussed in [P
 Configure the nodes in the `nodes.config` file using the `set-config` command.
 
 Run `$ cat nodes.config | tscli cluster set-config` in your terminal.<br>
-If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}/appliance/hardware/smc-cluster-install.html#set-config-error-recovery).
+If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}smc-cluster-install.html#set-config-error-recovery).
 
 ```
 $ cat nodes.config | tscli cluster set-config

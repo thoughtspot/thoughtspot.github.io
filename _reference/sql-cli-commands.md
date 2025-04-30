@@ -1,7 +1,8 @@
 ---
 title: [TQL reference]
-summary: Learn the TQL commands.
-last_updated: 2/25/2020
+
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -465,7 +466,7 @@ WHERE "borough" = 'staten isl' AND city = 'NY';</code></p>
             <p><code>DELETE FROM &lt;table&gt; [WHERE...]</code></p>
          </td>
          <td><p>Deletes rows from a table that match optionally provided predicates.
-            Predicates have the form <code>column = value</code> connected by the <code>AND</code> keyword. When specifying dates, use <a href="https://www.epochconverter.com/">epoch values</a>. Other date formats can result in error and unwanted deletion of data from the table.
+            Predicates have the form <code>column = value</code> connected by the <code>AND</code> keyword.
          For example.</p>
 
 <p><code>DELETE FROM "vendor" WHERE "name" = 'Joey Smith' AND "vendorid" =
@@ -588,7 +589,7 @@ ThoughtSpot supports a simplified list of data types:
                <li>VARCHAR(<em class="ph i">n</em>)</li>
             </ul>
          </td>
-         <td>Specify the maximum number of characters, as in VARCHAR(255). The size limit is 64MB for
+         <td>Specify the maximum number of characters, as in VARCHAR(255). The size limit is 1GB for
             VARCHAR values.
          </td>
       </tr>

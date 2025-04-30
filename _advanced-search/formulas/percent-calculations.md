@@ -1,7 +1,9 @@
 ---
 title: [Percent (simple number) calculations]
-summary: Learn about simple number calculations.
-last_updated: 11/15/2019
+
+
+last_updated: tbd
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

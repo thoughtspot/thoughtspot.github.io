@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot nodes in Azure]
-last_updated: [2/27/2020]
+last_updated: [12/12/2019]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -19,18 +19,35 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 ## Configure Nodes
 After creating the instance, you must configure the nodes. Follow the steps in this checklist.
 
-| &#10063; | [Step 1: Log in to your cluster](#node-step-1) |
-| &#10063; | [Step 2: Get a template for network configuration](#node-step-2) |
-| &#10063; | [Step 3: Prepare node configuration](#node-step-3) |
-| &#10063; | [Step 4: Configure the nodes](#node-step-4) |
-| &#10063; | [Step 5: Confirm node configuration](#node-step-5) |
+<table>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-azure#node-step-1">Step 1: Log into your cluster</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-azure#node-step-2">Step 2: Get a template for network configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-azure#node-step-3">Step 3: Prepare node configuration</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-azure#node-step-4">Step 4: Configure the nodes</a></td>
+  </tr>
+  <tr>
+    <td>&#10063;</td>
+    <td><a href="installing-azure#node-step-5">Step 5: Confirm node configuration</a></td>
+  </tr>
+</table>
 
 {: id="node-step-1"}
-### Step 1: Log in to your cluster
-Use Terminal on a Mac or a terminal emulator on Windows to log in to your cluster. Log in using the ssh private key provided by ThoughtSpot.<br>
+### Step 1: Log into your cluster
+Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster. Log in using the ssh private key provided by ThoughtSpot.<br>
 If you do not have a private key, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) by email or through the support portal.
 
-To log in to your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
+To log into your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
 ```
     $ ssh -i <private_key> admin@<public-vm-ip>
 ```
@@ -44,11 +61,7 @@ You can find more information on this process in the [`nodes.config` file refere
 
 {: id="node-step-3"}
 ### Step 3: Prepare node configuration
-1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example). Run `vim nodes.config` to edit the file.
-    ```
-    $ vim nodes.config
-    ```
-    {% include note.html content="Some of the information in the <code>nodes.config</code> file may be pre-populated from earlier steps. For example, if you specified an IP address while creating VMs, that IP address might already be present in your <code>nodes.config</code> file." %}
+1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example).
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
 If you have additional nodes, complete each node within the nodes.config file in the same way.
 
@@ -71,9 +84,8 @@ Configure the nodes in the `nodes.config` file using the `set-config` command.
 ```
 
 2. Run the configuration command: `$ cat nodes.config | tscli cluster set-config`.<br>
-If the command returns an error, refer to [set-config error recovery](#set-config-error-recovery).<br>
-    After you run the node configuration command, your output appears similar to the following:
-
+If the command returns an error, refer to [set-config error recovery]({{ site.baseurl }}#set-config-error-recovery).<br>
+After you run the node configuration command, your output appears similar to the following:
     ```
     $ cat nodes.config | tscli cluster set-config
 
@@ -81,6 +93,7 @@ If the command returns an error, refer to [set-config error recovery](#set-confi
     Setting up hostnames for all nodes
     Setting up networking interfaces on all nodes
     Setting up hosts file on all nodes
+    Setting up IPMI configuration
     Setting up NTP Servers
     Setting up Timezone
     Done setting up ThoughtSpot
@@ -128,8 +141,9 @@ Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/azure/azu
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
-* [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
-* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
+* [Using the cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
+* [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
+* [ThoughtSpot Documentation](https://docs.thoughtspot.com)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

@@ -1,7 +1,7 @@
 ---
 title: [Group aggregation functions]
-summary: Learn about group aggregation functions, or pinned measures.
-last_updated: 11/15/2019
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
