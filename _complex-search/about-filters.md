@@ -39,8 +39,8 @@ your filters apply to all worksheet-based visualizations in the pinboard.
  ![Filters appear under the title]({{ site.baseurl }}/images/filter-list-location.png "Filters appear under the title")
 
 If you ever find that your search or pinboard does not appear to contain all the
-data you want to see, check for any existing filters and remove them by clicking on the in-product back button to the left of the Answer or by clicking
-the **X** to see all the data.
+data you want to see, check for any existing filters and remove them by clicking
+the **X** that appears when you hover over the filter in the search bar.
 
 {% include note.html content="Filtering on NULL and empty values is a special
 case. You can find out more about how these values are represented and how to
@@ -80,15 +80,13 @@ You can [create a bulk filter]({{ site.baseurl}}/complex-search/create-bulk-filt
 separated by commas, semicolons, new lines, or tabs, into the bulk filter box.
 This allows you to easily search a large list of filters repeatedly.
 
-## Cascading filters
+## Show unfiltered values for a filter
 
 ThoughtSpot applies a specific logic to objects with more than one filter. For example, you may have a Worksheet-level filter, such as `country=US`. While searching on that Worksheet, you might want to add filters for specific cities. By default, ThoughtSpot limits your possible filter values to cities in the United States, since you have a Worksheet-level `US` filter. The first filter you apply on an object always limits the available filter values you see for your second and third filters, and so on. This is because if you have a `country=US` filter, and try to add a `city=Paris,France` filter, for example, this results in *no data found*.
 
-### Show all possible values
+When you access the filters modal in a search by selecting the **filter** icon ![filter icon]({{ site.baseurl }}/images/icon-filter-10px.png "filter icon"){: .inline}, you see an option to **Show unfiltered values**. This option relates to objects with more than one filter. When you add a second filter to a search, ThoughtSpot only shows you values within the first filter you added. You may want to see all possible values without removing the first filter.
 
-When you access the filters modal in a search by selecting the **filter** icon ![filter icon]({{ site.baseurl }}/images/icon-filter-10px.png "filter icon"){: .inline}, you see an option to **Show all possible values**. This option relates to cascading filters. When you add a second filter to a search, ThoughtSpot only shows you values within the first filter you added. You may want to see all possible values without removing the first filter.
-
-For example, you have a `country=US` filter on your search, but you want to see data for Paris, France. When you open the filters modal for `city`, you do not see Paris, France. You select **Show all possible values** and select Paris, France. Then you can delete the `country=US` filter. This is especially useful if you have many filters on an object, or if you are not sure what values the columns in your data have.
+For example, you have a `country=US` filter on your search, but you want to see data for Paris, France. When you open the filters modal for `city`, you do not see Paris, France. You select **Show unfiltered values** and select Paris, France. Then you can delete the `country=US` filter. This is especially useful if you have many filters on an object, or if you are not sure what values the columns in your data have.
 
 ## Worksheet filters
 

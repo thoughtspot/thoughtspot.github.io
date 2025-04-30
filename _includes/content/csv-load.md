@@ -8,28 +8,84 @@ Any user who belongs to a group that has the privilege **Has administration priv
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 in the upper right corner, and select **Upload Data**.
 
-   ![]({{ site.baseurl }}/images/new_imported_data.png "Upload data")
+4. In **Step 1: Upload your file**, complete these selections:
+    1. Upload the CSV or Excel file by these methods:
+    <dl>
+    <dlentry>
+    <dt>Browse</dt>
+    <dd>Click **Browse your files** and select the file.</dd>
+    </dlentry>
+    <dlentry>
+    <dt>Drag and drop</dt>
+    <dd>Move the file from the file manager on your computer into the drop area.</dd>
+    </dlentry>
+    </dl>
+    2. Answer the question **Are the column names already defined in the file header?**<br/>
+    The options are **Yes** or **No**.
+    3. Answer the question **Are the fields separated by?** by specifying one of:<br/>
+    <dl>
+    <dt>Comma</dt>
+    <dd>(,), example: `Jacket,Winter 2021,yellow,600`</dd>
+    <dt>Semicolon</dt>
+    <dd>(;), example: `Jacket;Winter 2021;yellow;600`</dd>
+    <dt>Pipe</dt>
+    <dd>(|), example: `Jacket|Winter 2021|yellow|600`</dd>
+    <dt>Space</dt>
+    <dd>( ), example: `Jacket "Winter 2021" yellow 600`</dd>
+    <dt>Tab</dt>
+    <dd>( ), example: `Jacket Winter 2021 yellow 600`</dd>
+    </dl>
 
-4. Upload the CSV or Excel file by doing one of these options:
-    1. Click **Browse your files** and select the file.
-    2. Drag and drop the file into the drop area.
+      Click **Next**.
 
-5. Answer the question **Are the column names already defined in the file header?**
+5. In **Step 2: Set column names**, review your data.
 
-6. Answer the question **Are the fields separated by?** Click **Next**.
+    When necessary, click the column header names to change them to more descriptive and easier names.
 
-7. Click the column header names to change them to more useful names, if you'd like. Click **Next**.
+    Click **Next**.
 
-8. Review the automatically generated data types for each column, and make any changes you want.
+6. In **Step 3: Set column types**, review the automatically generated data types for each column, and make necessary changes.
 
-   There are four data types: Text, Integer, Decimal, and Date.
+   These are the possible data types: <br/>
+   <dl>
+   <dlentry>
+   <dt>True/False</dt>
+   <dd>Boolean, Yes,no.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Integer</dt>
+   <dd>Smaller integers represented by 32 bits.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Large Integer</dt>
+   <dd>Larger integers represented by 64 bits.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Decimal</dt>
+   <dd>Floating point or Decimal.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Text</dt>
+   <dd>Character or text.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Date</dt>
+   <dd>Simple date, not including the time component.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Date_Time</dt>
+   <dd>The date and time.</dd>
+   </dlentry>
+   <dlentry>
+   <dt>Time</dt>
+   <dd>Only the time, not including the date component.</dd>
+   </dlentry>
+   </dl>
 
-9. Click **Import**.
+9. Click **Upload**.
 
     When an upload is complete, the system reports the results and offers you some further actions.
 
-     ![]({{ site.baseurl }}/images/spotiq-upload.png "Auto analyze")
-
     * Click **Link to Existing Data** if you want to link the data you uploaded to the data in another table or worksheet.
     * Click **Search** if you want to begin a new search.
-    * Click **Auto analyze** if you want to use the SpotIQ feature to find insights in your new data.
+    * Click **SpotIQ Analyze** if you want to use the SpotIQ feature to find insights in your new data.

@@ -1,7 +1,7 @@
 ---
 title: [Flexible aggregation functions]
 summary: "Use the group_aggregate function in ThoughtSpot to aggregate measures at different granularities than the dimensions used in the search columns."
-last_updated: 11/05/2019
+last_updated: 08/30/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -57,12 +57,9 @@ This is helpful to include the main query groups that are not known at formula
 creation time. You can use `+/-` to modify the set of groups included from
 the query.
 
-{% include note.html content="`+/-` is currently supported only for `query_groups`, not `query_filters`."%}
+## Finer-grained group formula results
 
-## When group formula results are finer-grained than the search
-
-With the flexibility of groupings for group formulas, the computed column
-created by a formula can be finer or courser grained than the search itself.
+The flexibility of groupings for group formulas enables you to create formula that generates a computed column that is finer or courser than the search itself.
 
 For example, you can have a search that shows **total yearly sales** and a
 formula that computes total sales _for each month_ (a finer-grained calculation
@@ -132,6 +129,33 @@ Flexible group aggregate formulas allow for flexibility in both [groupings](abou
 and [filters](filtered-agg-forms.html#). The formulas give you the ability to
 specify only groupings or only filters.
 
+{: id="query-filters"}
+## Query filters
+
+With `query_filters()+{filter_condition}` or `query_filters()-{filter_condition}`, users will be able to aggregate the results while including/excluding a filter condition.
+
+Filter condition: `Ship Mode='car'`
+
+For a search on `Category Customer ID sales by customer id and category Ship Mode='car’`, you can add a formula to calculate sales by category for each customer as:
+
+```
+sales by Customer ID and Category= group_aggregate (sum(Sales), {Category, Customer ID }, query_filters()+{Ship Mode='air'})
+```
+
+In this case, the results will be aggregated based on the dimensions: `‘Category’` and `‘Customer ID’` and filters: `‘air’` and `‘car’`.
+
+With `query_filters()-{column}`, users will be able to aggregate the results while removing any expression related to a column.
+
+Filter condition: `Ship Mode='car'`
+
+For a search on `Customer ID sales by customer id and category Ship Mode='car'`, you can add a formula to calculate sales for each customer while ignoring the filter on a column as:
+
+```
+sales by Customer ID and Category= group_aggregate (sum(Sales), {Customer ID, Category }, query_filters()-{Ship Mode})
+```
+
+In this case, the results will be aggregated based on the dimensions in the search; Customer ID and any filter related to Ship Mode will not be considered while aggregating the results.
+
 ## Related information
 
 * For more examples of flexible aggregation, see the [group_aggregate]({{site.baseurl}}/reference/practice/formula-reference.html#group_aggregate) function in the [Formula function reference]({{site.baseurl}}/reference/formula-reference.html).
@@ -139,5 +163,7 @@ specify only groupings or only filters.
 * To learn about aggregation formulas in general, see
 [Overview of aggregate formulas](aggregation-formulas.html#) and
 [Group aggregation functions](about-pinned-measures.html#)
+
+* To understand group aggregate query filters, see [Aggregate filters](aggregation-filters.html#)
 
 * To learn about how the `group-aggregate` function can be used within your business practice, we encourage you to see [Reaggregation scenarios in practice]({{site.baseurl}}/reference/practice/reaggregation-scenarios.html)

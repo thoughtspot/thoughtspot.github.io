@@ -9,14 +9,13 @@ ThoughtSpot provides a Developer portal to external users to embed ThoughtSpot c
 
 - [Embedded Analytics with ThoughtSpot]({{ site.baseurl }}/admin/ts-cloud/intro-embed.html)
 - [ThoughtSpot Integration guidelines]({{ site.baseurl }}/admin/ts-cloud/integration-overview.html)
-- [ThoughtSpot Developer portal]({{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html)
-- [Security settings for embedding]({{ site.baseurl }}/admin/ts-cloud/security-settings.html)
-- [SAML SSO configuration]({{ site.baseurl }}/admin/ts-cloud/configure-saml-spotdev.html)
-- [Trusted Authentication configuration]({{ site.baseurl }}/admin/ts-cloud/trusted-authentication.html)
+- [ThoughtSpot Developer Portal]({{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html)
+- [Authentication and security]({{ site.baseurl }}/admin/ts-cloud/auth-overview.html)
 - [Visual Embed SDK]({{ site.baseurl }}/admin/ts-cloud/visual-embed-sdk.html)
-- [Style customization for embedded content]({{ site.baseurl }}/admin/ts-cloud/customize-style-spotdev.html)
-- [Custom action configuration]({{ site.baseurl }}/admin/ts-cloud/customize-actions-spotdev.html)
+- [Custom action configuration]({{ site.baseurl }}/admin/ts-cloud/custom-actions.html)
+- [Customization and rebranding]({{ site.baseurl }}/admin/ts-cloud/customization-rebranding.html)
 - [REST APIs]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html)
 - [Runtime filters]({{ site.baseurl }}/admin/ts-cloud/about-runtime-filters.html)
 
-{% include important.html content="To access ThoughtSpot Developer portal, you require developer privileges." %}
+
+{% include important.html content="To access the ThoughtSpot Developer portal, you require developer privileges." %}

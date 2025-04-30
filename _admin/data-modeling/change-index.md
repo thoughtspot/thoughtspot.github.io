@@ -12,7 +12,9 @@ and any **SYNONYMS** appear in **Search** suggestions. For tables and Views, a c
 
 Additionally, ThoughtSpot uses a column's **INDEX PRIORITY** value to determine where
 to rank a column's name and values in the search suggestions. These values
-impact the dynamically calculated _usage based ranking (UBR)_,
+impact the dynamically calculated _usage based ranking (UBR)_.
+
+To configure certain aspects of ThoughtSpot's indexing behavior, refer to [Managing search and SpotIQ settings]({{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html#search).
 
 ## Example of Search suggestion behavior
 
@@ -81,6 +83,8 @@ cardinality thresholds for your ThoughtSpot installation.
 
 If you need to, you can work with ThoughtSpot Support or your Customer Success
 Engineer to configure new cluster defaults.
+
+Additionally, you can configure certain aspects of ThoughtSpot's indexing behavior from the Admin Console. Refer to [Managing search and SpotIQ settings]({{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html#search).
 
 ## Understand the indexing behavior for Worksheets
 For Worksheets, you can only choose whether or not to index the column. You cannot choose an index type. When viewing a Worksheet, toggle the **SUGGEST VALUES IN SEARCH** option on or off.

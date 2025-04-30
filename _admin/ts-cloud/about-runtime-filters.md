@@ -1,7 +1,7 @@
 ---
 title: [About Runtime Filters]
 summary: "Use runtime filters to filter an embedded answer or pinboard."
-last_updated: 11/18/2019
+last_updated: 18/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,12 +9,12 @@ Runtime filters allow you to apply filters to the data returned by the APIs, or 
 
 ## Capabilities of Runtime Filters
 
-Runtime Filters provide ability to filter data at the time of retrieval using
-[Embedding]({{ site.baseurl }}/admin/ts-cloud/visual-embed-sdk.html) or the [REST API]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html). This is done by
-providing filter information through the URL query parameters.
+Runtime Filters provide the ability to apply filters on embedded objects at the time of retrieval. You can pass the filter criteria as URL query parameters on pinboard or visualizations. ThoughtSpot supports applying runtime filters to objects embedded using the
+[Visual Embed SDK]({{ site.baseurl }}/admin/ts-cloud/visual-embed-sdk.html) or the [REST APIs]({{ site.baseurl }}/admin/ts-cloud/about-rest-apis.html).  
 
 This example shows how to define RuntimeFilter parameters when rendering a visualization or pinboard using the Visual Embed SDK. Here, the RuntimeFilter is operating on the `Revenue` column and will return values equal to `100000`.
-```javascript
+
+```
 pinboardEmbed.render({
     pinboardId: '133e6c5f-e522-41a0-b0ad-b9c3b066e276',
     vizId: '28b73b4a-1341-4535-ab71-f76b6fe7bf92',
@@ -67,8 +67,13 @@ You can use runtime filters on these data types:
 -   `DATE_TIME`
 -   `TIME`
 
-Note that for `DATE` and `DATE_TIME` values, you must specify the date in epoch
-time (also known as POSIX or Unix time).
+For the `DATE` and `DATE_TIME` data types, you must provide the date and time values in the Epoch time format. The Epoch time is also referred to as POSIX or Unix time. Epoch time is an integer value representing the number of seconds elapsed since 1 JAN 1970 00:00:00 UTC. You may have to convert time zones to calculate the appropriate timestamp.
+
+For example, if you want to filter data for 2020-05-22, you can specify the date value in the Epoch time format as 1590192000, or use the following JavaScript method to calculate the timestamp:
+
+```
+new Date('2020-05-22').getTime() / 1000
+```
 
 ## Example Uses
 

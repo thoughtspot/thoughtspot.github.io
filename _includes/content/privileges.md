@@ -15,10 +15,6 @@
       <td>Can manage Users and Groups and has view and edit access to all data. Users with this privilege can also download a saved answer.</td>
     </tr>
     <tr>
-      <td><strong>Can upload user data</strong></td>
-      <td>Can upload their own data from the application's <strong>Data</strong> page using <strong>Actions > Upload data</strong>.</td>
-    </tr>
-    <tr>
       <td><strong>Can download data</strong></td>
       <td>Can download data from search results and pinboards.</td>
     </tr>
@@ -29,13 +25,13 @@
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
-      <td>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the <strong>Edit</strong> permission on that object, and it must be shared with you.</td>
+      <td>Can create connections. To view or edit other people's connections, you must have the <strong>Can administer ThoughtSpot</strong> privilege. <br>Can create worksheets and views.<br>Note that to edit a worksheet or a view created by another user, you must have the <strong>Edit</strong> permission on that object, and it must be shared with you.</td>
     </tr>
     <tr>
       <td><strong>Can use experimental features</strong></td>
       <td>Can access trial and experimental features that ThoughtSpot makes available to early adopters.</td>
     </tr>
-    <tr>
+    <tr id="schedule-pinboards">
       <td><strong>Can schedule pinboards</strong></td>
       <td>Can create pinboard schedules and edit their own scheduled jobs.</td>
     </tr>
@@ -55,6 +51,12 @@
     <tr>
       <td><strong>Has Developer privilege</strong></td>
       <td>Can access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a> to explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</td>
+    </tr>
+    <tr id="read-only">
+      <td><strong>Cannot create or update Pinboards</strong></td>
+      <td><p>Users are limited to viewing and exploring curated Pinboards (and Answers). They cannot copy, edit, download, or share them.</p>
+      <p>This privilege is designed to support embedded implementations, and is not available by default. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to enable it.</p>
+      <p>See <a href="{{ site.baseurl }}/end-user/introduction/pinboard-granular-permission.html">Granular access to Pinboards</a> for a deeper discussion of this privilege, and an implementation example.</p></td>
     </tr>
   </tbody>
 </table>

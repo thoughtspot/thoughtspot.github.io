@@ -36,9 +36,10 @@ reference lists the various keywords.
 
 {% include content/keywords-translate/JA/keywords-comparative-ja-JP.md %}
 
+<!-- not available on embrace currently
 ## Location
 
-{% include content/keywords-translate/JA/keywords-location-ja-JP.md %}
+{% include content/keywords-translate/JA/keywords-location-ja-JP.md %} -->
 
 ## Period
 

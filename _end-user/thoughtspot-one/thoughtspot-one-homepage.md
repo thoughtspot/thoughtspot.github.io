@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 3/12/2021
+last_updated: 6/22/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,7 +25,7 @@ See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for mo
 
 {: id="quick-links"}
 ## Track important metrics
-When you first view the ThoughtSpot home page, you may see a row of popular metrics for your company just below the Search bar. This watchlist may be empty, if your company is new to ThoughtSpot. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from.
+When you first view the ThoughtSpot home page, you may see a row of popular metrics for your company just below the Search bar. This watchlist may be empty, if your company is new to ThoughtSpot. Use this watchlist to view and track metrics you reference often. For example, a VP of Sales might track *Number of new deals this month*, while a product manager might track *NPS score*. You can also click on these metrics to access the Pinboard they come from, either in the same tab or in a new tab.
 
 To add metrics to your watchlist, follow these steps:
 
@@ -36,11 +36,15 @@ To add metrics to your watchlist, follow these steps:
 
 4. Select a metric or multiple metrics, and click **Add metrics**.
 
-Note that you can have up to 20 metrics on your watchlist at a time.
+Note that you can have any number of metrics on your watchlist at a time.
 
 ![Metrics watchlist gif]({{ site.baseurl }}/images/thoughtspot-one-carousel-metrics.gif "Metrics watchlist gif")
 
-You can arrange the metric cards using each card's three-dot **more** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon. You can replace or delete a metric, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
+You can arrange the metric cards in 2 ways:
+
+- **Drag and drop**: Move the metric cards to different positions in your watchlist using drag and drop.
+
+- **Three-dot more ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} icon**: You can replace or delete a metric, move it one spot to the left or right, make a card the first one in the row, or insert another card to the right or left of a specific card.
 
 {% include note.html content="If you can no longer access a metric on your watchlist (because the headline or Pinboard was deleted, or your access permissions changed), the system displays a note saying you cannot view that metric." %}
 
@@ -54,7 +58,7 @@ This change does not persist across sessions. If you log out and log back in, th
 
 {: id="trending"}
 ## Trending Pinboards and Answers
-The home page shows you the top 5 trending Pinboards and Answers among all users in your environment on the right panel of the screen. Easily view and interact with these trending objects by clicking on their name from the **Trending** panel.
+The home page shows you the top 5 trending Pinboards and Answers among all users in your environment on the right panel of the screen. You can see how many views these trending objects have. Easily view and interact with these trending objects by clicking on their name from the **Trending** panel. You can open them in a new tab by right-clicking on the link.
 
 {: id="filter"}
 ## Filter existing objects

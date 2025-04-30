@@ -51,7 +51,7 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">Discover Monitoring Data</code></td>
       <td>
-         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers Pinboard</a>.
+         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Pinboard</a>.
       </td>
    </tr>
    <tr>
@@ -63,7 +63,7 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">MetricsMonitoring</code></td>
       <td>
-         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers Pinboard</a>.
+         Contains data on how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not, based on click count and position. Used for the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers Pinboard</a>.
       </td>
    </tr>
    <tr>
@@ -77,31 +77,31 @@ To list the system Worksheets and Views:
    <tr>
       <td><code class="highlighter-rouge">TS: External Table Current Row Count</code></td>
       <td>
-         Contains data related to the row count for external tables, or tables loaded through Embrace.
+         Contains data related to the row count for external tables, or tables loaded through Connections.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS: Rows of un-cached tables for each connection</code></td>
       <td>
-         Contains data related to the sum of rows count for each un-cached table in an Embrace connection.
+         Contains data related to the sum of rows count for each un-cached table in a connection.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS: External Table Stats WS</code></td>
       <td>
-         Contains data related to the stats collected for external tables, or tables loaded through Embrace.
+         Contains data related to the stats collected for external tables, or tables loaded through Connections.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS: External Table Info</code></td>
       <td>
-         Contains data related to external tables, or tables loaded through Embrace.
+         Contains data related to external tables, or tables loaded through Connections.
       </td>
    </tr>
    <tr>
       <td><code class="highlighter-rouge">TS: Daily Row Count External Table</code></td>
       <td>
-         Contains Embrace data, stored on a daily basis: the number of rows in your external database, and whether each external table is cached or not.
+         Contains Connections data, stored on a daily basis: the number of rows in your external database, and whether each external table is cached or not.
       </td>
    </tr>
 </table>

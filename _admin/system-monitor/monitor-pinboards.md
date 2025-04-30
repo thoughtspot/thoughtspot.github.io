@@ -46,9 +46,9 @@ To view these system Pinboards:
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">Embrace Pinboard</code></td>
+      <td><code class="highlighter-rouge">Connections Pinboard</code></td>
       <td>
-         Contains information on your Embrace connections: monthly and daily row count, query count, and query performance.
+         Contains information on your connections: monthly and daily row count, query count, and query performance.
       </td>
    </tr>
    <tr>
@@ -57,6 +57,13 @@ To view these system Pinboards:
          Contains information on how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a>.
       </td>
    </tr>
+   <tr>
+      <td><code class="highlighter-rouge">Object Usage</code></td>
+      <td>
+         Contains information on how your ThoughtSpot users are interacting with ThoughtSpot objects such as worksheets, tables, and views. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Pinboard</a>.
+      </td>
+   </tr>
+
    <tr>
       <td><code class="highlighter-rouge">Performance Tracking</code></td>
       <td>
@@ -70,9 +77,9 @@ To view these system Pinboards:
       </td>
    </tr>
    <tr>
-      <td><code class="highlighter-rouge">Stats and Trends for Search on Answers</code></td>
+      <td><code class="highlighter-rouge">How Users are Searching Answers</code></td>
       <td>
-      Describes how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">Stats and Trends for Search on Answers</a>.
+      Describes how users are searching for existing Answers and Pinboards. Contains information on what users are searching for, where users are successful and where they are not. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#">How Users are Searching Answers</a>.
       </td>
    </tr>
   </table>

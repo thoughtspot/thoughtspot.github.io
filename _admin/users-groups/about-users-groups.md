@@ -41,11 +41,6 @@ Here are the different privileges, and the capabilities they enable:
 
 {% include content/privileges.md %}
 
-&nbsp;
-
-Typically, the **ALL** group has a common set of privileges applies such as the
-**Can upload user data** and/or **Can download data** privileges.
-
 Privileges are additive, meaning that if a user belongs to more than one group,
 they will have the highest level of privileges from among the groups they are a
 member of. They are also inherited from the parent, so that a sub-group gets all

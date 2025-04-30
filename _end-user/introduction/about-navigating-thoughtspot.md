@@ -8,7 +8,7 @@ permalink: /:collection/:path.html
 ---
 These are the different sections in ThoughtSpot:
 
-![Top navigation bar]({{ site.baseurl }}/images/nav-bar-cloud.png "Top navigation bar")
+![Top navigation bar]({{ site.baseurl }}/images/thoughtspot-one-nav-bar.png "Top navigation bar")
 
 ## Home
 

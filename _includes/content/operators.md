@@ -29,6 +29,11 @@
       <td>Returns the first value if it is not <code>null</code>, otherwise returns the second value.</td>
       <td><code class="highlighter-rouge">ifnull (cost, 'unknown')</code></td>
     </tr>
+    <tr id="in">
+      <td><code>in</code></td>
+      <td>Takes a column name and a list of values. It checks each column value against the list of values in the formula, and returns <code>true</code> if the column value matches one of the values in the formula.</td>
+      <td><code class="highlighter-rouge"> state in { 'texas' , 'california' }</code></td>
+    </tr>
     <tr id="isnull">
       <td><code>isnull</code></td>
       <td>Returns <code>true</code> if the value is <code>null</code>.</td>

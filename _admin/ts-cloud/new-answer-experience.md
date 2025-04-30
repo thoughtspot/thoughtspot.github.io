@@ -10,24 +10,28 @@ permalink: /:collection/:path.html
 
 ## Overview
 
-The new Answer experience contains multiple new features and feature enhancements. It is part of ThoughtSpot's move to a new stack. It is on by default for ThoughtSpot Cloud clusters. You can turn it on or off [individually](#toggle-on-off) from your profile, in the **Experience manager** at the bottom of your profile. The new Answer experience contains the following features:
+The new Answer experience contains multiple new features and feature enhancements. It is part of ThoughtSpot's move to a new stack. It is in <span class="badge badge-update">Beta</span> and ***off*** by default for individual ThoughtSpot Cloud users. However, the option to turn it on or off [individually](#toggle-on-off) is on by default. To remove or enable this option, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). If the new Answer experience is available in your environment, turn it on or off individually from your profile, in the **Experience manager** at the bottom of your profile. The new Answer experience contains the following features:
 
 {: id="new-features"}
 {% include content/new-answer-experience-features.md %}
 
 {: id="toggle-on-off"}
-## Turn the new Answer experience on or off
-The new Answer experience is on by default. You can turn it on or off individually from your profile.
+## Turn the new Answer experience on or off individually
+The new Answer experience is off by default, but the option to turn it on or off individually is on by default. To remove or enable this option, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). If this option is available in your environment, you can turn it on or off individually from your profile.
 
 To turn the new Answer experience on or off, follow these steps:
 
 1. Navigate to your profile: select the **Profile** icon at the top right of your screen, and select **Profile**.
 
-2. Scroll down to the **Experience manager**.
+2. Next to **Experience**, at the bottom of your profile, select **Edit**.
 
-3. To turn the new Answer experience on, select **New experience**. To turn it off, select **Classic experience**.
+3. Select **New experience** or **Classic experience**.
 
-    ![Toggle new answer experience on or off]({{ site.baseurl }}/images/new-answer-experience-toggle.png "Toggle new answer experience on or off")
+4. Select **Save**.
+
+{: id="toggle-on-off"}
+## Turn the new Answer experience on or off for the whole cluster
+You can manage the availability of the new Answer experience by [contacting ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). ThoughtSpot Support can turn the new Answer experience on or off globally, and specify the default answer experience for all users. For example, you can turn the new Answer experience on globally, but still have the classic experience as the default, allowing users to opt into the new experience.
 
 {: id="limitations"}
 ## Limitations

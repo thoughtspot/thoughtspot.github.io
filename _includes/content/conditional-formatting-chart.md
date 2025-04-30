@@ -2,7 +2,7 @@ You can use conditional formatting to show charts with a target value or range d
 
 To apply conditional formatting to a chart (in this example, _Total Revenue by Supplier Country_), follow these steps:
 
-1. Click the **edit chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your chart. The **Edit chart** panel appears, on the **Configure** menu. Alternatively, you can click the **Conditional formatting** option in the axis menu for the measure you would like to add a conditional formatting rule for. If the new Answer experience is off in your environment, you can only access chart conditional formatting from the axis menu.
+1. Click the **edit chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to the upper right of your chart. The **Edit chart** panel appears, on the **Configure** menu. Alternatively, you can click the **Conditional formatting** option in the axis menu for the measure you would like to add a conditional formatting rule for. If the new Answer experience <span class="badge badge-update">Beta</span> (off by default) is off in your environment, you can only access chart conditional formatting from the axis menu.
 
 2. From the **Edit chart** menu, select the measure you would like to add a conditional formatting rule for.
 

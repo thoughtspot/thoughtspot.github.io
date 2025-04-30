@@ -6,7 +6,6 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-<!--
 ## High cardinality tables
 
 ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly how many rows your table displays. The new default maximum number of rows is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of rows on a table, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
@@ -14,11 +13,10 @@ ThoughtSpot tables are no longer limited to 1000 rows. Now, you can see exactly 
 Here, the table has 2318 rows:
 
 ![High cardinality table example]({{ site.baseurl }}/images/cardinality-table-rows.png "High cardinality table example")
--->
 
 ## High cardinality charts
 
-ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, you see a horizontal scroll bar at the bottom. The new default maximum number of data points is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of data points on a chart, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html). 
+ThoughtSpot charts contain several new features. You are no longer limited to 1000 data points. When your chart has a very large number of data values, you see a horizontal scroll bar at the bottom. The new default maximum number of data points is 20,000. You can configure this maximum, up to 35,000. To configure the maximum number of data points on a chart, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 ![High cardinality chart with scroll bar]({{ site.baseurl }}/images/cardinality-chart-scroll-bar.png "High cardinality chart with scroll bar")
 

@@ -61,6 +61,7 @@ To exclude or include row values:
 
      ![Exclude or include a value]({{ site.baseurl }}/images/changeview-exclude.png "Exclude or include a value")
 
+<!-- back button functionality removed for now (6/23/21)
 {: id="back-button"}
 ## Back button
 As you work with searches and Answers, you may want to undo an action. You can use the in-product back button to the left of the Answer name to go back one step at a time. For example, if you drill down on a specific point, and then want to return to the status of the search before you drilled down, use the back button.
@@ -68,3 +69,4 @@ As you work with searches and Answers, you may want to undo an action. You can u
 ![Dairy sales by diet type]({{ site.baseurl }}/images/drilldown-example.png "Dairy sales by diet type")
 
 If you do not have the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) on, you can use the browser back button. The browser back button is not as precise, and does not work on saved Answers.
+-->

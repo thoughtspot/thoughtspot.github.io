@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <td class="tg-b7b8">top</td>
-    <td class="tg-b7b8">arriba</td>
+    <td class="tg-b7b8">primeros</td>
     <td class="tg-b7b8">
     <ul><li><code>top sales rep by count sales for average revenue > 10000</code></li>
     <li><code>sales rep average revenue for each region top </code></li> </ul>
@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td class="tg-yw4l">bottom</td>
-    <td class="tg-yw4l">abajo</td>
+    <td class="tg-yw4l">últimos</td>
     <td class="tg-yw4l">
     <ul><li><code><b>bottom</b> revenue average</code></li>
     <li><code><b>bottom</b> revenue by state</code></li>

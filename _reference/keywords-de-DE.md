@@ -1,5 +1,5 @@
 ---
-title: [Deutsche Keyword reference]
+title: [Deutsch Keyword reference]
 summary: Use keywords to help define a search.
 last_updated: 11/19/2019
 sidebar: mydoc_sidebar
@@ -36,9 +36,10 @@ reference lists the various keywords.
 
 {% include content/keywords-translate/DE/keywords-comparative-de-DE.md %}
 
+<!-- not available on embrace currently
 ## Location
 
-{% include content/keywords-translate/DE/keywords-location-de-DE.md %}
+{% include content/keywords-translate/DE/keywords-location-de-DE.md %} -->
 
 ## Period
 

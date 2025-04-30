@@ -36,9 +36,10 @@ reference lists the various keywords.
 
 {% include content/keywords-translate/nb-NO/keywords-comparative-nb-NO.md %}
 
+<!-- not available on embrace currently
 ## Location
 
-{% include content/keywords-translate/nb-NO/keywords-location-nb-NO.md %}
+{% include content/keywords-translate/nb-NO/keywords-location-nb-NO.md %} -->
 
 ## Period
 

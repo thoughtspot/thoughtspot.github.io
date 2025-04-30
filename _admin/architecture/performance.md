@@ -19,7 +19,7 @@ To reduce the total amount of data and rows of data, we recommend the following 
 
 Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:
 
-Contact ThoughtSpot support for guidance on boundaries for the following:
+[Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) for guidance on boundaries for the following:
 - Maximum number of rows that can be downloaded
 - Size in CSV format
 - Total number of rows across all tables

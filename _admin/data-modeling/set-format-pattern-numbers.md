@@ -1,13 +1,14 @@
 ---
 title: [ "Set number, date, and currency formats" ]
-
-last_updated: 3/25/2020
+last_updated: 07/07/2021
 summary: "Learn how to set key formats for column values."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can set number, date, and currency display formats. These formats define how
 these value types display in tables and charts.
+
+{% include note.html content="ThoughtSpot supports number, currency, and percent formatting, at the data source level and at the answer level. The <code>format pattern</code> option combines number and percent formatting. You can override data source (“custom” in the UI) formatting at the answer level. In source level/ custom formatting, you can only define the format pattern (number and percent formatting) or currency option. If you set them both, the format pattern overrides your currency formatting." %}
 
 ## Number formats
 
@@ -30,8 +31,8 @@ These are some examples of formats you can use:
 |------------|--------------|-------------|
 |12345.6789|`#,##0.##`|12,345.68|
 |12345.6789|`#,##0.###`|12,345.679|
-|12345.6789|`#,##0.00000`|12,345.68|
-|12345.6789|`#,##0`|12,345|
+|12345.6789|`#,##0.00000`|12,345.67890|
+|12345.6789|`#,##0`|12,346|
 |12345.6789|`#,##0.00`|12,345.68|
 |12345|`#,##0.##`|12,345|
 |12345|`#,##0.00`|12,345.00|

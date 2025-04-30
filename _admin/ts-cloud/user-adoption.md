@@ -1,11 +1,11 @@
 ---
-title: [User Adoption Pinboard]
+title: [User adoption pinboard]
 last_updated: 10/21/2020
-summary: "Use the User Adoption Pinboard to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time."
+summary: "Use the User adoption pinboard to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The User Adoption Pinboard contains essential information about your ThoughtSpot users and their adoption of the platform. Use this Pinboard to understand weekly active users, inactive users, top 10 adhoc searchers, popular Pinboards, and so on. You must have admin privileges to view this Pinboard.
+The User adoption pinboard contains essential information about your ThoughtSpot users and their adoption of the platform. Use this Pinboard to understand weekly active users, inactive users, top 10 adhoc searchers, popular Pinboards, and so on. You must have admin privileges to view this Pinboard.
 
 To view this Pinboard, navigate to the **Admin Console** by selecting **Admin** from the top navigation bar. Select **User activity** from the side navigation bar.
 

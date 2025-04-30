@@ -17,9 +17,6 @@ For details, see [Mobile release notes]({{ site.baseurl }}/admin/mobile/notes-mo
 ## Requirements
 
 - User account on a ThoughtSpot cluster
-- Minimum cluster version: release 5.1
-- Required cluster version for deep linking: release 6.3 or later
-- Required cluster version for drill down: release 6.2 or later
 - Apple iOS version 9.0 or later (iPad and iPhone)
 - Android 6.0 or later
 

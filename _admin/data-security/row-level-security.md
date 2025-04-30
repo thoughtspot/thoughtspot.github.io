@@ -48,7 +48,7 @@ groups with **Can Administer and Bypass RLS**:
 * Can check or uncheck Bypass RLS on a worksheet.
 
 This behavior is true regardless of whether the privilege is from a direct group
-membership or indirect (through a group hierarchy).
+membership or indirect (through a group hierarchy, where the user is part of a group that is part of a larger, top-level group with the RLS privilege).
 
 ## Examples of RLS rules
 
@@ -96,7 +96,7 @@ Rules can be simple or they can incorporate logic such as `if/then` rules. For
 example, vendors should see their own data but your accounts payable group needs
 to see all the vendor data:
 
-`VENDOR = ts_groups or 'Accounts Payable' = ts_groups `
+`VENDOR = ts_groups or 'Accounts Payable' = ts_groups`
 
 This rule continues to work as you add data from new vendor or team members to
 `Accounts Payable`. In this way, a well-written rule is _self maintaining_,

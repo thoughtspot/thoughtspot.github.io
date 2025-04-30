@@ -10,7 +10,7 @@ their entirety, as the complete data set, on each node. Sharded tables consist o
 single data set, divided into multiple tables, or *shards*. The shards have
 identical schemas, but different sets of data.
 
-Note that sharding and loading tables into ThoughtSpot only apply to ThoughtSpot's in-memory database. If you use [Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html), and store your data in another data warehouse such as Snowflake or Amazon Redshift, your data modeling is done in that data warehouse, and not in ThoughtSpot.
+Note that sharding and loading tables into ThoughtSpot only apply to ThoughtSpot's in-memory database. If you use [Connections]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html), and store your data in another data warehouse such as Snowflake or Amazon Redshift, your data modeling is done in that data warehouse, and not in ThoughtSpot.
 
 ## When to shard your data
 
