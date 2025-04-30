@@ -1,7 +1,7 @@
 ---
 title: [Add the SSL certificate for LDAP]
-tags: [SAML_LDAP_AD, tscli]
-keywords: SAML,security,"active directory",authenticate,certificate
+
+
 last_updated: tbd
 summary: "Install the certificate to support LDAPS"
 sidebar: mydoc_sidebar
@@ -11,14 +11,9 @@ When you set up LDAP, you specified whether or not to use SSL for LDAP (LDAPS). 
 
 You must have the SSL certificate before you start. For more information on obtaining an SSL certificate, see [Configure SSL (secure socket layers)](SSL-config.html#).
 
-As of the current ThoughtSpot software version:
-1. You must configure only one SSL certificate in ThoughtSpot for Active Directory.
-2. The Common Name (CN) in the SSL certificate must match the one provided to `tscli ldap configure` earlier.
-3. Only the top-level SSL certificate is necessary. The root or any intermediate certificates are not required.
-
 To add the SSL certificate for LDAP:
 
-1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
+1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent by email or available for download.
 2. Copy the certificate to ThoughtSpot:
 
     ```

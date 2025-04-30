@@ -1,7 +1,7 @@
 ---
 title: [Percent (simple number) calculations]
-keywords: tbd
-tags: [formulas]
+
+
 last_updated: 3/26/2020
 toc: false
 sidebar: mydoc_sidebar

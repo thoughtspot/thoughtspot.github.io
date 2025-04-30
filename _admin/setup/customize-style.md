@@ -1,7 +1,7 @@
 ---
 title: [Customize look and feel]
-tags: [customize,style,palette,color,brand]
-keywords: customize
+
+
 last_updated: tbd
 summary: "You can brand the ThoughtSpot application for your company."
 sidebar: mydoc_sidebar
@@ -31,7 +31,7 @@ cursor moves to the right of any setting.
 
 ![]({{ site.baseurl }}/images/custom-style-reset.png)
 
-The table below lists the style customizations you can configure.
+The following table lists the style customizations you can configure.
 
 <table>
   <tr>

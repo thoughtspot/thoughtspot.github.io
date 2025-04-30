@@ -1,8 +1,8 @@
 ---
 title: [Network policies]
-tags: [bestpractices]
-keywords: network, ports, policies
-tags: [networking]
+
+
+
 last_updated: 1/17/2020
 summary: "Lists the required ports, protocols and policies for an installation."
 sidebar: mydoc_sidebar

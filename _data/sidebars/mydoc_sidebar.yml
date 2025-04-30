@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Software
-  docversion: 5.2
-  version: 5.2 Guides
+  docversion: 5.3
+  version: 5.3 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -20,6 +20,21 @@ entries:
       output: pdf
       type: frontmatter
 # end PDF output defs
+  - sectiontitle: About this Release
+    output: web,rnotes
+    sectionitems:
+    - title: Release notes
+      url: /release/notes.html
+      output: web,rnotes
+    - title: Fixed issues
+      url: /release/fixed.html
+      output: web,rnotes
+    - title: Downloads
+      url: /release/downloads.html
+      output: web
+    - title: PDF Guides
+      url: /release/pdfs.html
+      output: web
   - sectiontitle: Users
     output: web,ugBk
     sectionitems:
@@ -29,6 +44,9 @@ entries:
     - levelTwoTitle: Getting Started
       output: web,ugBk
       levelTwoItems:
+      - title: User onboarding experience
+        url: /end-user/onboarding/user-onboarding-experience.html
+        output: web,ugBk
       - title: Finding your way around
         url: /end-user/introduction/about-navigating-thoughtspot.html
         output: web,ugBk
@@ -76,6 +94,9 @@ entries:
           output: web,ugBk
         - title: Ask an Expert
           url: /end-user/search/ask-an-expert.html
+          output: web,ugBk
+        - title: Manage Ask an Expert requests
+          url: /end-user/search/monitor-expert.html
           output: web,ugBk
         - title: Retrieve Ask an Expert answers
           url: /end-user/search/retrieve-expert-answer.html
@@ -130,7 +151,7 @@ entries:
         levelThreeItems:
         - title: Other search actions
           url: /complex-search/search-actions.html
-          output: pdf
+          output: web,ugBk
         - title: Change result display options
           url: /complex-search/change-the-view.html
           output: web,ugBk
@@ -197,18 +218,24 @@ entries:
         - title: Geo charts
           url: /end-user/search/about-geo-charts.html
           output: web,ugBk
+        - title: Pivot table
+          url: /complex-search/about-pivoting-a-table.html
+          output: web,ugBk
         - title: Sankey charts
           url: /end-user/search/about-sankey-charts.html
           output: web,ugBk
-        - title: Pivot table
-          url: /complex-search/about-pivoting-a-table.html
+        - title: Radar Charts
+          url: /end-user/search/about-radar-charts.html
+          output: web,ugBk
+        - title: Candlestick Charts
+          url: /end-user/search/candlestick-charts.html
           output: web,ugBk
       - levelThreeTitle: Changing a chart
         output: web,ugBk
         levelThreeItems:
         - title: Change the chart
           url: /end-user/search/change-the-chart.html
-          output: pdf
+          output: web,ugBk
         - title: Reorder the labels
           url: /end-user/search/reorder-values-on-the-x-axis.html
           output: web,ugBk
@@ -284,6 +311,9 @@ entries:
         - title: Basic pinboard usage
           url: /end-user/pinboards/about-pinboards.html
           output: web,ugBk
+        - title: Follow a pinboard
+          url: /end-user/pinboards/follow-pinboard.html
+          output: web,ugBk
         - title: Edit a pinboard
           url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
           output: web,ugBk
@@ -305,8 +335,11 @@ entries:
         - title: Reset a pinboard visualization
           url: /end-user/pinboards/reset-a-visualization.html
           output: web,ugBk
-        - title: Start a slideshow
+        - title: Present a pinboard as a slideshow
           url: /end-user/pinboards/start-a-slideshow.html
+          output: web,ugBk
+        - title: Download as PDF
+          url: /end-user/pinboards/download-pinboard-pdf.html
           output: web,ugBk
     - levelTwoTitle: Use custom R scripts
       output: web,ugBk
@@ -331,6 +364,9 @@ entries:
           output: web,ugBk
         - title: "Best SpotIQ practices"
           url: /spotiq/special-topics.html
+          output: web,ugBk
+        - title: "Comparative Analysis"
+          url: /spotiq/comparative-analysis.html
           output: web,ugBk
         - title: "Custom SpotIQ analysis"
           url: /spotiq/customization.html
@@ -401,7 +437,7 @@ entries:
     - title: Introduction to administration
       url: /admin/intro.html
       output: web,admBk
-    - title: Login credentials for administration
+    - title: Sign-in credentials for administration
       url: /admin/setup/logins.html
       output: web,admBk
     - levelTwoTitle: Understand the architecture
@@ -440,6 +476,9 @@ entries:
       - title: Set up a custom calendar
         url: /admin/setup/set-custom-calendar.html
         output: web,admBk
+      - title: Configure internal authentication
+        url: /admin/setup/internal-auth.html
+        output: web,admBk
       - title: Configure SSL
         url: /admin/setup/SSL-config.html
         output: web,admBk
@@ -455,7 +494,7 @@ entries:
         - title: About LDAP integration
           url: /admin/setup/about-LDAP.html
           output: web,admBk
-        - title: Configure LDAP for Active Directory
+        - title: Configure authentication through Active Directory
           url: /admin/setup/LDAP-config-AD.html
           output: web,admBk
         - title: Add the SSL certificate for LDAP
@@ -569,13 +608,16 @@ entries:
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
+      - title: Onboarding Users
+        url: /end-user/onboarding/intro-onboarding.html
+        output: web,ugBk
       - title: Understand groups and privileges
         url: /admin/users-groups/about-users-groups.html
         output: web,admBk
       - title: Create, edit, or delete a group
         url: /admin/users-groups/add-group.html
         output: web,admBk
-      - title: Add, edit, or delete a user
+      - title: Create, edit, or delete a user
         url: /admin/users-groups/add-user.html
         output: web,admBk
       - title: Allow users to sign up
@@ -649,6 +691,9 @@ entries:
         output: web,admBk
       - title: Set up recording for Replay Search
         url: /admin/system-admin/configure-record-search.html
+        output: web,admBk
+      - title: Upgrade a cluster
+        url: /admin/system-admin/upgrade-a-cluster.html
         output: web,admBk
     - levelTwoTitle: Backup and restore
       output: web,admBk
@@ -797,12 +842,27 @@ entries:
       - title: Schedule view refreshes
         url: /admin/loading/schedule-materialization.html
         output: web,ugBk
-    - levelTwoTitle: Enable SearchIQ for natural language search
+    - levelTwoTitle: Set up SearchIQ
       output: web,admBk
       levelTwoItems:
       - title: Enable SearchIQ
         url: /admin/setup/enable-searchiq.html
         output: web,admBk
+      - title: Optimize SearchIQ
+        url: /end-user/search/searchiq-optimize.html
+        output: web,admBk
+      - levelThreeTitle: Search IQ Optimization Steps
+        output: web,apgBk
+        levelThreeItems:
+        - title: Enabling Columns in SearchIQ
+          url: /end-user/search/searchiq-optimize-columns.html
+          output: web,admBk
+        - title: Add Experts for SearchIQ
+          url: /end-user/search/searchiq-optimize-experts.html
+          output: web,admBk
+        - title: Train SearchIQ
+          url: /end-user/search/searchiq-optimize-train.html
+          output: web,admBk
       - title: Set entity categories for SearchIQ
         url: /admin/data-modeling/set-entity-category.html
         output: web,admBk
@@ -896,78 +956,6 @@ entries:
     - title: Release notes
       url: /admin/mobile/notes-mobile.html
       output: web,admBk
-  # - sectiontitle: Data Connect
-  #   output: web,cngBk
-  #   sectionitems:
-  #   - title: Introduction to Data Connect
-  #     url: /data-connect/setup/ETL.html
-  #     output: web,cngBk
-  #   - title: Prerequisites and Architecture
-  #     url: /data-connect/setup/before-using-data-connect.html
-  #     output: web,cngBk
-  #   - title: Set up ThoughtSpot Data Connect
-  #     url: /data-connect/setup/settingup-etl.html
-  #     output: web,cngBk
-  #   - levelTwoTitle: Work with Data Sources
-  #     output: web,cngBk
-  #     levelTwoItems:
-  #     - title: Add a new data source
-  #       url: /data-connect/setup/adding-data-source.html
-  #       output: web,cngBk
-  #     - title: About changing the schema (DDL)
-  #       url: /data-connect/setup/about-changing-DDL.html
-  #       output: web,cngBk
-  #     - title: About incremental data loads
-  #       url: /data-connect/setup/about-incremental.html
-  #       output: web,cngBk
-  #     - title: Data sources management
-  #       url: /data-connect/setup/data-sources-management.html
-  #       output: web,cngBk
-  #   - levelTwoTitle: Changing the setup
-  #     output: web,cngBk
-  #     levelTwoItems:
-  #     - title: Overview of best practices
-  #       url: /data-connect/making-changes/about-changing-etl-jobs.html
-  #       output: web,cngBk
-  #     - title: Edit a connection
-  #       url: /data-connect/making-changes/edit-a-connection.html
-  #       output: web,cngBk
-  #     - title: Delete a connection
-  #       url: /data-connect/making-changes/delete-a-connection.html
-  #       output: web,cngBk
-  #     - title: Delete a data source
-  #       url: /data-connect/making-changes/delete-data-source.html
-  #       output: web,cngBk
-  #     - title: Stop a scheduled job from running
-  #       url: /data-connect/making-changes/stop-scheduled-job.html
-  #       output: web,cngBk
-  #     - title: Change sharding for a data source
-  #       url: /data-connect/making-changes/change-sharding.html
-  #       output: web,cngBk
-  #     - title: Change a column data type
-  #       url: /data-connect/making-changes/change-data-type.html
-  #       output: web,cngBk
-  #     - title: Add a column to an existing data source
-  #       url: /data-connect/making-changes/add-a-column.html
-  #       output: web,cngBk
-  #     - title: Remove a column from an existing data source
-  #       url: /data-connect/making-changes/remove-column.html
-  #       output: web,cngBk
-  #     - title: Add/remove columns in a loaded table
-  #       url: /data-connect/making-changes/add-remove-columns-in-a-loaded-table.html
-  #       output: web,cngBk
-  #   - levelTwoTitle: Reference
-  #     output: web,cngBk
-  #     levelTwoItems:
-  #     - title: Login for administration
-  #       url: /data-connect/reference/logins.html
-  #       output: web,cngBk
-  #     - title: Best practices
-  #       url: /data-connect/reference/data-connect-insider-tips.html
-  #       output: web,cngBk
-  #     - title: Connectors reference
-  #       url: /data-connect/reference/data-connect-connection-credentials.html
-  #       output: web,cngBk
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
@@ -1136,17 +1124,11 @@ entries:
       - levelThreeTitle: AWS
         output: web,appQs
         levelThreeItems:
-        - title: AWS cluster overview
-          url: /appliance/aws/about-aws.html
-          output: web,appQs
         - title: Configuration options
           url: /appliance/aws/configuration-options.html
           output: web,appQs
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
-          output: web,appQs
-        - title: Deploy using CloudFormation CLI
-          url: /appliance/aws/deploy-aws-cloud-formation.html
           output: web,appQs
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
@@ -1154,9 +1136,6 @@ entries:
       - levelThreeTitle: Azure
         output: web,appQs
         levelThreeItems:
-        - title: Azure cluster overview
-          url: /appliance/azure/about-azure.html
-          output: web,appQs
         - title: Configuration options
           url: /appliance/azure/configuration-options.html
           output: web,appQs
@@ -1166,9 +1145,6 @@ entries:
       - levelThreeTitle: GCP
         output: web,appQs
         levelThreeItems:
-        - title: GCP cluster overview
-          url: /appliance/gcp/about-gcp.html
-          output: web,appQs
         - title: Configuration options
           url: /appliance/gcp/configuration-options.html
           output: web,appQs
@@ -1196,9 +1172,24 @@ entries:
     - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
-    - title: Login credentials for administration
-      url: /data-integrate/introduction/logins.html
+    - levelTwoTitle: Embrace
       output: web,digBk
+      levelTwoItems:
+      - title: Overview
+        url: /data-integrate/embrace/embrace-intro.html
+        output: web,digBk
+      - title: Add a connection
+        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
+        output: web,apgBk
+      - title: Modify a connection
+        url: /data-integrate/embrace/getting-started/modify-a-connection.html
+        output: web,apgBk
+      - title: Sync
+        url: /data-integrate/embrace/embrace-sync.html
+        output: web,apgBk
+      - title: Connectors reference
+        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
+        output: web,apgBk
     - title: JDBC and ODBC setup prerequisites
       url: /data-integrate/introduction/jdbc-odbc-prereqs.html
       output: web,digBk
@@ -1226,10 +1217,7 @@ entries:
        - title: Install the ODBC driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
          output: web,digBk
-       - title: Install the ODBC driver on Solaris
-         url: /data-integrate/clients/install-odbc-solaris.html
-         output: web,digBk
-       - title: Best Practices for using ODBC
+       - title: Best Practices for Using ODBC
          url: /data-integrate/clients/odbc-best-practices.html
          output: web,digBk
     - levelTwoTitle: JDBC driver client
@@ -1337,27 +1325,12 @@ entries:
     - title: Geo map reference
       url: /reference/geomap-reference.html
       output: web,refGD
-    - title: Error codes reference
-      url: /error-codes/error-codes-reference.html
-      output: web,refGdAdmin
-    - title: Frequently asked questions
-      url: /faq/faq.html
-      output: web,refGd
-  - sectiontitle: About this Release
-    output: web,rnotes
-    sectionitems:
-    - title: Release notes
-      url: /release/notes.html
-      output: web,rnotes
-    - title: Fixed issues
-      url: /release/fixed.html
-      output: web,rnotes
-    - title: Downloads
-      url: /release/downloads.html
-      output: web
     - title: Glossary
       url: /reference/glossary.html
       output: web
-    - title: Topic index
-      url: /reference/tags_index.html
-      output: web
+    - title: Frequently asked questions
+      url: /faq/faq.html
+      output: web,refGd
+[//]: #     - title: Topic index
+[//]: #       url: /reference/tags_index.html
+[//]: #       output: web

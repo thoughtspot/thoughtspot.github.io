@@ -1,6 +1,6 @@
 ---
 title: [Pinboard Data API]
-keywords: REST,API,data,"REST API",pinboard
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -61,7 +61,7 @@ This API enables you to retrieve the data of a pinboard or visualization from th
      <tr>
          <td><code>offset</code></td>
          <td>integer</td>
-         <td>The system default is <code>-1</code>. Alternately, set the offset using the below:
+         <td>The system default is <code>-1</code>. Alternately, set the offset using the following code:
          <p><code>1-based indexingOffset = (pageNumber - 1) * batchSize</code></p></td>
 
       </tr>
@@ -120,7 +120,7 @@ https://<instance>/callosum/v1/tspublic/v1/pinboarddata?id=f4533461-caa5-4efa-a1
 }
 ```
 
-## Error Codes
+<!--## Error Codes
 
 <table>
    <colgroup>
@@ -139,4 +139,4 @@ https://<instance>/callosum/v1/tspublic/v1/pinboarddata?id=f4533461-caa5-4efa-a1
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
     <tr> <td><code>10000</code></td>  <td>Internal server error. Malformed JSON Exception.</td><td><code>500</code></td></tr>
   </tbody>
-</table>
+</table>-->

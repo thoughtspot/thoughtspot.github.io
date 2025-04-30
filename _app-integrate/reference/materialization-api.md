@@ -1,6 +1,5 @@
 ---
 title: [Materialization API]
-keywords: REST,API,data,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -68,7 +67,7 @@ Not applicable
 204 - Refresh submitted
 ```
 
-## Error Codes
+<!--## Error Codes
 
 <table>
    <colgroup>
@@ -87,4 +86,4 @@ Not applicable
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
     <tr> <td><code>10000</code></td>  <td>Internal server error.</td><td><code>500</code></td></tr>
   </tbody>
-</table>
+</table>-->

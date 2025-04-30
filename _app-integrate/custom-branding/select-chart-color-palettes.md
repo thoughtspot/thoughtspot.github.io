@@ -1,7 +1,7 @@
 ---
 title: [Select chart color palettes]
-keywords: tbd
-last_updated: 2/4/2020
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -13,7 +13,7 @@ To select the chart color palettes:
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
-    ![Chart color palettes]({{ site.baseurl }}/images/style-chartcolorpalettes.png "Chart Color Palettes section")
+     ![Chart color palettes]({{ site.baseurl }}/images/style-chartcolorpalettes.png "Chart Color Palettes section")
 
 2. Click the color you would like to change in the primary color palette, and use the color menu to choose your new color.
 
@@ -25,6 +25,6 @@ To select the chart color palettes:
 
      ![]({{ site.baseurl }}/images/color_palettes_2.png "Secondary color palette")
 
-    The colors from the secondary color palette are used once all of the colors have been exhausted from the primary palette. Therefore, the secondary palette usually consists of secondary colors.
+    The colors from the secondary color palette are used after all of the colors have been exhausted from the primary palette. Therefore, the secondary palette usually consists of secondary colors.
 
 4. Click the **Reset** button on the upper right hand side of the section if you would like to bring back the default color palettes.

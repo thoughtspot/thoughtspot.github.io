@@ -26,13 +26,3 @@ topnav_dropdowns:
           url: /6.0/index.html
         - title: 5.3
           url: /5.3/index.html
-        - title: 5.2
-          url: /5.2/index.html
-        - title: 5.1
-          url: /5.1/index.html
-        - title: 5.0
-          url: /5.0/index.html
-        - title: 4.5
-          url: /4.5/index.html
-        - title: 4.4
-          url: /4.4/index.html

@@ -22,8 +22,9 @@ Interact with the ThoughtSpot community to find useful content, ask and answer q
 ## Address
 
 ThoughtSpot, Inc.
-910 Hermosa Ct
-Sunnyvale, CA 94085
+1900 Camden Avenue
+Suite 101
+San Jose, CA 95124
 
 {: id="phone"}
 ## Phone numbers

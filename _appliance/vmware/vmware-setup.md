@@ -1,7 +1,6 @@
 ---
 title: [Set up VMware for ThoughtSpot]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-keywords: vmware, configuration
 last_updated: 1/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -29,8 +28,7 @@ for a sandbox environment but is insufficient for a production environment. You 
    The VM template, by default, captures a 72-core configuration. If your
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
    cores (for a physical host with n cores) to fully take advantage of computing
-   power of the physical host. Extra cores help performance. If your hypervisor
-   has 72 hyperthreaded cores, ThoughtSpot VM should be configured to use 70.
+   power of the physical host. Extra cores help performance.
 
    You should aim to allocate 490 GB or more RAM.
 
@@ -38,7 +36,8 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 ## Use the OVF to Create a VM
 
-1. Download the `ThoughtSpot OVF` from the **[Downloads page here]({{ site.baseurl }}/release/downloads.html#virutal-and-cloud-platforms)** to a location on an accessible disk.
+1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
+
 2. Log in to the ESXi web portal.
 
     ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")
@@ -139,7 +138,7 @@ additional, larger capacity disks.
 5. Save your changes.
 6. Repeat steps 1-5 to create more hard disks.
 7. Power on the VM
-8. Once the VM is online, run the following command to prepare the HDFS disks:
+8. After the VM is online, run the following command to prepare the HDFS disks:
 
     ```shell
     sudo /usr/local/scaligent/bin/prepare_disks.sh
@@ -153,7 +152,7 @@ There is no network at this point on your VMs. As a prerequisite:
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
 
-Once done, go to the <a href="http://thoughtspot.com/support-request">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
+After you finish, go to the <a href="http://thoughtspot.com/support-request">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
 
 ## Additional resources
 As you develop your expertise in VMware VM creation, we recommend the following ThoughtSpot U course:

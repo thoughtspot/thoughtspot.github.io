@@ -1,6 +1,6 @@
 ---
 title: [Create a formula in a worksheet]
-keywords: "formulas,worksheets"
+
 last_updated: 3/20/2020
 summary: "You can define formulas and use them to create derived columns in worksheets. "
 sidebar: mydoc_sidebar

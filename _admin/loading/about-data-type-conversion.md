@@ -1,7 +1,7 @@
 ---
 title: [Convert column data type]
-tags: [TQL,dates,modeling]
-keywords: "TQL,SQL, data types"
+
+
 last_updated: tbd
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar
@@ -14,6 +14,7 @@ There are some details you should be aware of when doing a data type conversion.
 When converting from one data type to another, any values that can not be
 converted will be set to NULL. If errors occur during data type conversion, the
 operation is aborted.
+
 [//]: # (However, you may choose to force the conversion despite the errors. You can start TQL in allow_unsafe mode to continue with the data conversion, at your own risk, of course! To start TQL in unsafe mode, issue this command:)
 [//]: # (``` tql --allow_unsafe ```)
 
@@ -63,7 +64,7 @@ Some data type conversion require a format string. These include:
 -   conversion from `DATE`/`TIME`/`DATETIME`
 -   conversion to `DATE`/`TIME`/`DATETIME`
 
-For these types of conversions, you'll use a special syntax using parsinghint
+For these types of conversions, you can use a special syntax using parsinghint
 and the date format specifications supported in the [strptime library
 function](http://man7.org/linux/man-pages/man3/strptime.3.html).
 
@@ -94,7 +95,7 @@ ALTER TABLE fruit_sales
 
 ## String to boolean conversions
 
-String to boolean conversions have format strings, too. You'll use `parsinghint`
+String to boolean conversions have format strings, too. You can use `parsinghint`
 as you do for date and time conversions. You can choose among these approaches:
 
 **OPTION 1: Specify string values for both true and false.** Any non-matching values
@@ -145,7 +146,7 @@ ALTER TABLE db
 ## Change the Data Type of a Column
 
 When you issue the TQL command to convert a column from one data type to
-another, the conversion is handled automatically. However, you'll need to ensure
+another, the conversion is handled automatically. However, you must ensure
 that any visualizations built on top of the table display correctly.
 
 You should always take a snapshot of your database before making any schema

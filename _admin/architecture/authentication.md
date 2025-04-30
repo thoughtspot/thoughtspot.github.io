@@ -37,7 +37,8 @@ Use the following table to help you choose an authentication option.
     <td>
     <ul>
     <li>User created and managed in ThoughtSpot.</li>
-    <li>No enterprise password control (expiration, password strength, etc.).</li>
+    <li><a href="{{ site.baseurl }}/admin/users-groups/add-user.html#password">Password strength control</a></li>
+    <li>No other enterprise password control (expiration, failed logins, etc.).</li>
     <li>Only recommended when SAML and LDAP are not options.</li>
     </ul>
     </td>

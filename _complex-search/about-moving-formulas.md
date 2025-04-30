@@ -1,7 +1,7 @@
 ---
 title: [Moving functions]
-keywords: tbd
-tags: [formulas]
+
+
 last_updated: tbd
 summary: "Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range."
 sidebar: mydoc_sidebar
@@ -13,7 +13,7 @@ valleys are smoothed out. While the smaller the interval, the closer the moving
 averages are to the actual data points.
 
 Each of the moving formula accepts a measure, two integers to define the window,
-and one or more optional attributes.
+and one or more optional attributes. 
 
 ```
 formula (measure,integer,integer,[attribute,attribute,...])

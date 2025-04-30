@@ -1,7 +1,7 @@
 ---
 title: [How the worksheet join rule works]
-keywords: tbd
-tags: [rls]
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -14,7 +14,7 @@ added (recommended), or apply all joins to every search.
 
 Often, a worksheet includes several dimension tables and a fact table. With
 progressive joins, if your search only includes terms from the fact table,
-you'll see all of the rows that satisfy your search. But as you add terms from
+you can see all of the rows that satisfy your search. But as you add terms from
 dimension tables, the total number of rows shown may be reduced, as the joins to
 each dimension table are applied. It works like this:
 
@@ -49,10 +49,11 @@ To specify how the Worksheet should apply joins, follow these steps:
 
     ![Apply joins progressively or apply all joins]({{ site.baseurl }}/images/worksheet-apply-joins.png "Apply joins progressively or apply all joins")
 
+
 ## Rule-Based Row Level Security (RLS) with worksheets
 
 With Rule-Based RLS, you need to protect every table that contains any sensitive
-data. To do this, you'll grant access by creating explicit row level security
+data. To do this, you can grant access by creating explicit row level security
 rules on each of the underlying tables which contain data that row level
 security should apply to.
 

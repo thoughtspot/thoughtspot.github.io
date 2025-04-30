@@ -1,19 +1,18 @@
 ---
 title: [Set up Azure for ThoughtSpot]
-keywords: Azure
+
 last_updated: 1/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After you’ve determined your configuration options, you must setup your virtual
+After you’ve determined your configuration options, you must set up your virtual
 machines (VMs) using a ThoughtSpot image for Azure.
 
 
 ## About the ThoughtSpot image
 
-To provision a ThoughtSpot image in the Azure portal, you’ll need to access the
-ThoughtSpot Virtual Machine in the Azure Marketplace.
+To provision ThoughtSpot in the Azure portal, you’ll need to access the ThoughtSpot Virtual Machine in the Azure Marketplace.
 
 The ThoughtSpot Virtual Machine comes provisioned with the custom ThoughtSpot
 image to make hosting simple. A virtual machine is a preconfigured template that
@@ -88,13 +87,13 @@ here.
 
 4. Select a location.
 
-5. Click **OK** to save the Basics, which should look similar to the example below.
+5. Click **OK** to save the Basics, which should look similar to the following example.
 
    ![]({{ site.baseurl }}/images/azure_ts_vm_basics.png "Basic settings on the ThoughtSpot Azure VM")
 
 ### Choose a machine size
 
-Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a VM size that works for your cluster needs.
+Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a size for your VM that works for your cluster needs.
 
 ![]({{ site.baseurl }}/images/azure_choose_disk_size.png "Choose a disk size")
 
@@ -113,14 +112,13 @@ network.
 3. Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.
 
-    These are the minimum ports required for operations and debugging:
+   The minimum ports needed are:
 
-    |Port|Protocol|Service|
-    |----|--------|------------|
-    |22|SSH|Secure Shell access|
-    |443|HTTPS|Secure Web access|
-    |12345|TCP|ODBC and JDBC drivers access|
-
+   |Port|Protocol|Service|
+   |----|--------|------------|
+   |22|SSH|Secure Shell access|
+   |443|HTTPS|Secure Web access|
+   |12345|TCP|ODBC and JDBC drivers access|
 
 
    {% include note.html content="ThoughtSpot requires that nodes purchased from Azure must be reachable to each other so that they can communicate and form a distributed environment. ThoughtSpot only requires that those ports be accessible
@@ -145,17 +143,17 @@ When you are satisfied with the virtual machine setup, click **Create**.
 
 ### Prepare for starting up ThoughtSpot
 
-_Prerequisite_: To log in to the VM, you will need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
+_Prerequisite_: To log in to the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
 
 1. Obtain the VM’s public and private IP addresses.
 
    - To see the public IP, click the VM name link. This will show the public IP of the VM.
-   - To see the private IP click Networking (below SETTINGS on the left side of the screen).
+   - To see the private IP click Networking (under SETTINGS on the left side of the screen).
 
-2. Connect to the VM via SSH, using the private key provided for the admin user.
+2. Connect to the VM through SSH, using the private key provided for the admin user.
 
    - You must file a support ticket to obtain this private key; it is necessary for the first login.
-   - This key is different from the credentials and|or private keys supplied in earlier steps, which do not work in this context.
+   - This key is different from the credentials, or the private keys supplied in earlier steps, which do not work in this context.
 
 3. Update the password for both the `admin` and the `thoughtspot` users.
 

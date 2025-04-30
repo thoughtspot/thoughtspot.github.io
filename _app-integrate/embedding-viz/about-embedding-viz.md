@@ -1,6 +1,6 @@
 ---
 title: [Understand embedding]
-keywords: embedding,authentication,SAML,embed
+
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar
@@ -103,7 +103,7 @@ users.
 
 A trusted authenticator application or service obtains a token from ThoughtSpot.
 This token is used to obtain trust from other, third-party client applications
-that need access to ThoughtSpot. In the scenario below, the trust authenticator
+that need access to ThoughtSpot. In the following scenario, the trust authenticator
 forwards requests for ThoughtSpot data from client applications to ThoughtSpot.
 
 ![]({{ site.baseurl }}/images/authentication.png "Authentication flow")

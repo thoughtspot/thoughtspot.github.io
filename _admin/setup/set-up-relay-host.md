@@ -1,15 +1,15 @@
 ---
 title: [Set the relay host for SMTP (email)]
-tags: [tscli]
-keywords: email,SMTP,notification,"relay host"
-last_updated: tbd
-summary: "To enable alert emails, you'll need to set up a relay host for SMTP traffic."
+last_updated: 3/4/2020
+summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.
+## Configure using tscli
 
-## Set up the relay Host
+Set up SMTP rules to send critical email notifications to ThoughtSpot Support.
+
+### Set up the relay Host
 
 To set up a relay host:
 
@@ -30,7 +30,7 @@ To set up a relay host:
 
 4. Verify that email is working.
 
-## Configure an email to receive alerts
+### Configure an email to receive alerts
 
 ThoughtSpot sends alerts to the email address specified during installation. If you do not specify an email address, you do not receive any alerts. To add an email to receive alerts, issue the following command.
 
@@ -42,7 +42,7 @@ $ tscli monitoring set-config --email <prod-alerts@thoughtspot.com>,<your_email>
 
 To send to multiple emails, provide a comma-separated list with no spaces.
 
-## Verify the relay with an email
+### Verify the relay with an email
 
 Check if the email settings are working properly by using this procedure.
 

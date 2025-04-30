@@ -1,7 +1,7 @@
 ---
 title: [Set up a custom calendar]
-keywords: [fiscal calendar, fiscal calendar year, custom calendar]
-tags: [dates]
+
+
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -42,7 +42,7 @@ To generate a calendar template, do the following:
       Example:
       `tscli calendar generate --name my_calendar --start_date 07/01/2019 --end_date 06/30/2020 --username tsadmin`
 
-      This generates a calendar template file in .csv format. In the above example: **my_calendar.csv**.
+      This generates a calendar template file in .csv format. In the previous example: **my_calendar.csv**.
 
 3. Exit your SSH session.
 
@@ -68,9 +68,9 @@ To use the template you generated as your custom calendar, some editing is requi
     Example calendar with the fiscal year beginning on April 1:
     ![]({{ site.baseurl }}/images/custom_cal.png)
 
-3. Save your calendar template as a UTF-8 encoded .csv file with UNIX line breaks.
+3. Save your calendar template as a UTF-encoded .csv file with UNIX line breaks.
 
-      {% include note.html content="Saving the file with UNIX line breaks, ensures there are no carriage returns in the file which prevent you from using your calendar in ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks." %}
+      {% include note.html content="Saving the file with UNIX line breaks, ensures there are no carriage returns (^M characters) in the file which prevent you from using your calendar in ThoughtSpot. Microsoft Excel, for example, adds carriage returns. The easiest way to remove carriage returns is to open your .csv file in a text editor, and save it as a .csv with UNIX line breaks." %}
 
 ### Add the custom calendar to your cluster
 

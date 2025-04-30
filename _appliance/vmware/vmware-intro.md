@@ -1,8 +1,8 @@
 ---
 title: [VMware configuration overview]
-keywords: vmware
-tags: [vm, performance]
-last_updated: 3/18/2020
+
+
+last_updated: 3/17/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,7 +1,7 @@
 ---
 title: [Sync users and groups from LDAP]
-tags: [SAML_LDAP_AD]
-keywords: SAML,security,"active directory",authenticate
+
+
 last_updated: 5/7/2020
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server through Active Directory."
 sidebar: mydoc_sidebar
@@ -13,7 +13,7 @@ Before synchronizing users and groups, [set up integration with LDAP using Activ
 
 -   IP address and port of the server where your ThoughtSpot instance is running.
 
-    The hostport must be in the following format: `http(s)://<host>:<port>` or `http(s)://<domain>`.
+    This hostport must be in the following format `http(s)://<host>:<port>` or `http(s)://<domain>`.
 
 -   Administrator login username and password for your ThoughtSpot instance.
 
@@ -40,7 +40,7 @@ There are two ways for you to fetch users and groups from LDAP and populate them
 into your ThoughtSpot system:
 
 -   Run the synchronization script in interactive mode, which will walk you through the process (shown here).
--   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, contact ThoughtSpot Support. If you choose this method, you can run the script periodically using a cron job.
+-   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). If you choose this method, you can run the script periodically using a cron job.
 
 {% include note.html content="When you run the synchronization script, you perform a one-time sync. You must schedule a recurring sync using a cron job or your own scheduling tool to keep your ThoughtSpot users up to date with your users in LDAP." %}
 
@@ -88,7 +88,7 @@ To run the LDAP sync script in interactive mode:
 
 4. Alternatively, to input your own shorthand script commands:
 
-    Issue the Python script commands, supplying all of the above information, following this format example:
+    Issue the Python script commands, supplying all this information, following this format example:
 
     ```
     python syncUsersAndGroups.py script \
@@ -106,11 +106,11 @@ To run the LDAP sync script in interactive mode:
     --include_nontree_members
     ```
 
-    The bottom half of the above command example targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
+    The bottom half of the preceding command targets sub trees under the DC called TestGroupAlpha and TestGroupBeta, and iterates through them recursively to create/sync users, groups, and their relationships in the ThoughtSpot system. It also deletes any other entities created in the ThoughtSpot system from this LDAP system that are not currently being synced.
 
 ### `syncUsersAndGroups.py` command-line switches
 
-  The following table provides a description of each command-line switch available for the `syncUsersAndGroups` python script.
+The following table provides a description of each command-line switch available for the `syncUsersAndGroups` python script.
 
   <table width="100%" border="0">
   <col width="260">

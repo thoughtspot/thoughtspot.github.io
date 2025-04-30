@@ -1,6 +1,6 @@
 ---
 title: [Join a table or view to another data source]
-keywords: join table view
+
 last_updated: 11/3/2018
 summary: "Learn how to define joins between a table or view and another table, view, or worksheet"
 toc: false
@@ -19,7 +19,7 @@ See this matrix for information about which joins you can create, and what permi
 
 {% include content/joins-matrix.md %}
 
-When creating a join between the columns in two data sources, the columns being linked must have the same data type, with the same meaning. That is, they must represent the same data. Normally, you'll make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
+When creating a join between the columns in two data sources, the linked columns must have the same data type, with the same meaning. That is, they must represent the same data. Normally, you can make this kind of link from a fact table column to a column in a dimension table that uniquely identifies a logical entity in your data such as Employee ID for a person, Product ID for a product, or Date Key for a specific date in a date lookup table.
 
 To create a relationship through the Web interface:
 
@@ -45,7 +45,7 @@ To create a relationship through the Web interface:
 
 8.  Repeat these steps until all the joins you want to make have been created.
 
-After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you'll need to delete the join and create a new one.
+After creating the join, you may change its name and description by clicking the edit icon. If you want to change the data source or column being joined, you must delete the join and create a new one.
 
 ## Related Information
 

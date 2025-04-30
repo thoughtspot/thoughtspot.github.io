@@ -1,7 +1,5 @@
 ---
 title: [SpotIQ preferences]
-tags: [spotiq, preferences]
-keywords: SpotIQ,email preferences,data preferences,parameters
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

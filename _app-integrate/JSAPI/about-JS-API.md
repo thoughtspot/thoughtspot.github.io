@@ -1,7 +1,6 @@
 ---
 title: [Using the JavaScript API]
-keywords: REST,API,data,"REST API",javascript,library,cors
-last_updated: 07/09/2019
+last_updated: 10/21/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -21,10 +20,7 @@ update the code of your Web page or application." %}
 
 The JS API works in the following browsers:
 
-- **Internet Explorer**<br>Version 11
-- **Firefox**<br>Version 38 or later
-- **Google Chrome**<br>Version 47 or later
-- **Safari**<br>Version 9 or later
+{% include content/browser-support.md %}
 
 ### Internet Explorer 10 ### {#ie-10}
 
@@ -68,5 +64,5 @@ local server, such as `http://localhost:8080`. We recommend that you disable the
 `localhost` access after you finish testing.
 
 To enable CORS between your client applications and your ThoughtSpot instance,
-you must work with <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot
+you must work with <a href="{ site.baseurl }}/appliance/contact.html">ThoughtSpot
 Support</a>.

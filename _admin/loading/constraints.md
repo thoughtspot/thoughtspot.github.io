@@ -1,6 +1,6 @@
 ---
 title: [Constraints]
-keywords: tbd
+
 last_updated: tbd
 summary: "Constraints allow you to build relationships and join tables."
 sidebar: mydoc_sidebar
@@ -30,7 +30,7 @@ See this matrix for information about which joins you can create, and what permi
 
 Foreign key relationships tell ThoughtSpot how two tables can be joined. These relationships are only used for joining the tables, and not for referential integrity constraint checking.
 
-The directionality of primary key - foreign key relationships is important. The foreign key relationship is defined on the fact table and references the primary key(s) in the dimension table. So you can think of the fact table as the source and the dimension table as the target. In the schema viewer, you'll notice that the arrow that represents a PK/FK join points to the dimension table.
+The directionality of primary key - foreign key relationships is important. The foreign key relationship is defined on the fact table and references the primary key(s) in the dimension table. So you can think of the fact table as the source and the dimension table as the target. In the schema viewer, notice that the arrow that represents a PK/FK join points to the dimension table.
 
 If you use primary and foreign keys, when users search the data from the search bar, tables are automatically joined. For example, assume there are two tables:
 

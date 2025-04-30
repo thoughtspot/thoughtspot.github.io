@@ -1,6 +1,6 @@
 ---
 title: [Drill down into your data]
-last_updated: 3/12/2020
+last_updated: 1/22/2020
 summary: "Drill down into the Answers ThoughtSpot delivers to gain deeper insights into the many layers of your data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

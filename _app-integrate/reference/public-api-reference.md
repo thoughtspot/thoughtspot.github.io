@@ -1,6 +1,6 @@
 ---
 title: [Public API reference]
-keywords: REST,API,data,"REST API"
+
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

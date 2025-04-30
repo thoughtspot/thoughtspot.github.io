@@ -1,7 +1,7 @@
 ---
 title: [User API]
-keywords: REST,API,data,"REST API"
-last_updated: 5/21/2020
+
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -72,7 +72,7 @@ Use this API to synchronize ThoughtSpot users and groups with your external data
 - Objects present in ThoughtSpot, and present in the external list - will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
 - Objects not present in ThoughtSpot, and present in the external list - will be created in ThoughtSpot.
 
-Set `visibility` to `NON_SHARABLE` if you do not want users to be able to share objects with users in this group.
+Set `visibility` to `NON_SHARABLE` if you do not want users to be able to [share objects]({{ site.baseurl }}/admin/users-groups/add-user.html#sharing-visibility) with users in this group.
 
 ### Resource URL
 <code class="api-method-post">post</code> /tspublic/v1/user/sync
@@ -303,7 +303,7 @@ https://<instance>/callosum/v1/tspublic/v1/user/list
   }
   ]
 ```
-## Error Codes
+<!--## Error Codes
 <table>
    <colgroup>
       <col style="width:20%" />
@@ -322,4 +322,4 @@ https://<instance>/callosum/v1/tspublic/v1/user/list
     <tr> <td><code>10002</code></td>  <td>Bad request. No user found with the given username.</td> <td><code>400</code></td></tr>
     <tr> <td><code>10003</code></td>  <td>Unable to authenticate user</td><td><code>403</code></td></tr>
   </tbody>
-</table>
+</table>-->

@@ -1,98 +1,156 @@
 ---
-title: ["5.2 Release Notes"]
+title: ["5.3 Release Notes"]
 toc: false
-keywords: "release notes"
-last_updated: 04/09/20
+last_updated: 04/09/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot version 5.2.3 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 5.3.2 CU3 is now available.
+These are the new and enhanced features in this release.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [Supported Upgrade Paths](#supported-upgrade-paths)
-* [Mobile App](#mobile-app)
-* [5.2 New Features](#52-new)
+* [Supported Upgrade Paths](#upgrade-paths)
+* [5.3.1 New Features](#531-new)
+* [5.3 New Features](#53-new)
+* [Beta Programs](#beta-program)
 
+{: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.2.3 release
+If you are running one of the following versions, you can upgrade to the 5.3.2 release
 directly:
 
-* 5.0.x to 5.2.3
-* 5.1.x to 5.2.3
+* 5.3 to 5.3.2 CU3
+* 5.2.x to 5.3.2 CU3
+* 5.1.x to 5.3.2 CU3
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to one of the above versions, and then to the 5.2.3 release.
+First, upgrade to version 5.1.x, version 5.2.x, or version 5.3.x, and then to the 5.3.2 CU3 release.
 
-## Mobile App
+{% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade blocks." %}
 
-ThoughtSpot mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
+{: id="531-new"}
+## 5.3.1 New Features and Functionality
 
-For more information, see [Mobile]({{ site.baseurl }}/admin/mobile/use-mobile.html).
+For a complete list of issues that we fixed in this release, see [5.3.1 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-3-1).
 
-{: id="52-new"}
-## 5.2 New Features and Functionality
+### Onboarding
+In this release, administrators can configure 'Welcome' emails to send to both new and existing users, and to existing groups. See [Edit a group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-group) and
+[Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface).
 
-For a complete list of issues that we fixed in this release, see [5.2 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-2).
+### Embrace
+**ThoughtSpot Embrace is in beta.**
+In Release 5.3.1, you can connect to multiple Snowflake databases, and get faster querying results. We also made improvements to the connection configuration. See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
-### ThoughtSpot mobile beta
+### Pinboard export in PDF format has branding, and more
+We enhanced the presentation experience even more. You can now brand the PDF with your own logo, add pagination, and supply footer text. When using the _Visualizations_ mode, you can de-select some of the visuals. See [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
 
-Our brand new mobile app is now available in beta on iOS devices for customers with ThoughtSpot 5.1 or later. If you want to try it, fill out this form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs8SyPeXdiL5lpcp8tulPLLoaXbNJcpNgIuFcU6pr34vOx6A/viewform" target="_blank">ThoughtSpot Mobile App Beta Access.</a>
+### Streamlined AWS data loading from an S3 bucket
+You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
 
-### Favorites
+### Updated password requirements
+This release added password requirements for new and existing users. When a user changes their password or an administrator adds a new user, ThoughtSpot requires a more complex password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z,  special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long.
 
-If you frequently go back to look at certain Answers or Pinboards, you can now use Favorites to find them faster than ever before. Click the Favorite icon ![Favorite icon]({{ site.baseurl }}/images/icon-favorite.png){: .inline} of an Answer or Pinboard, and it will be added to the Favorites list on the Answers and Pinboard pages, as well as the ThoughtSpot home page.
+{: id="53-new"}
+## 5.3 New Features and Functionality
 
-### Custom calendars
+For a complete list of issues that we fixed in this release, see [5.3 Fixed issues]({{ site.baseurl }}/release/fixed.html#5-3).
 
-You can now add a custom fiscal calendar for your company. This is important if your company has a fiscal year that is different than the calendar year. With your custom calendar, you can be sure when you search for ‘last quarter’ that you will get results that reflect your company's last fiscal quarter. For details refer to [Create a custom calendar]({{ site.baseurl }}/admin/setup/set-custom-calendar.html#creating-a-custom-calendar).
+### Onboarding
+In this release, we introduce user Onboarding, which communicates the value of ThoughtSpot to new users through a streamlined learning experience with default pinboards.
 
-### Ask an expert
+- To learn how to configure user onboarding, see [Onboarding Users]({{ site.baseurl }}/end-user/onboarding/intro-onboarding.html).
+- To include users in the onboarding process, each user profile must include a valid email address. See [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-user-ui).
+- When you create a new user, we recommend that you add them to a user group immediately. Configure that user group to use a specific data source, choose up to three initial pinboards, and specify the text of the welcome email.
+- To configure the email protocols necessary for onboarding, the administrator must also specify the onboarding configuration for the cluster. See the reference information for the [tscli onboarding command]({{ site.baseurl }}/reference/tscli-command-ref.html#onboarding).
+- See the general overview of [How onboarding works for the user]({{ site.baseurl }}/end-user/onboarding/user-onboarding-experience.html).  
 
-Sometimes making a data-based decision is so challenging that you need an expert opinion from someone else. This is what the 'Ask an expert' feature is all about. Below the results of a Search or Answer, click **Ask an expert** to write a question to the ThoughtSpot users in your organization who are very familiar with the data set used for that search.  When you send your question, you automatically provide the search terms and the results. With this information, an expert in your organization will have the context they need to provide clarification and updated search terms, if necessary. For details refer to [Ask an expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
+### ThoughtSpot mobile
 
-### IN subquery for filtering
+Our mobile app is available for customers with ThoughtSpot 5.1 or later.
 
-With the IN subquery feature, you can now combine two queries into one without ever leaving the Search bar. For example, you could do a query like this: `What were the sales this month from my top 10 stores in terms of net margin last month`. That’s actually two queries. The first one searches for the top 10 stores in terms of net margin last month, and the second one searches for the sales of those stores this month.  Before the IN subquery, you would need to save a View to get this answer. For details refer to [Using the in keyword for nested searches]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
+Mobile version 1.1.2 now supports auto-redirect Single Sign-On (SSO) for configured clusters.
 
-### Support for small and medium cloud instance types
+For more information about what you can do with it, see [mobile app features]({{ site.baseurl }}/admin/mobile/use-mobile.html#). For more information about how to deploy it, see [deploy mobile app]({{ site.baseurl }}/admin/mobile/deploy-mobile.html#).
 
-One size does not fit all when it comes to the cloud. You need flexibility to choose the right cloud instance type for your ThoughtSpot deployment. If you are deploying an instance with lower data sizes (<=100 GB), ThoughtSpot now supports “small” (20 GB data) and “medium” (100 GB data) instance types to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). For details refer to [ThoughtSpot cloud instance types]({{ site.baseurl }}/appliance/cloud.html#thoughtspot-cloud-instance-types).
+### Mandatory user emails
 
-### Cluster shutdown and restart to save infrastructure costs
+To upgrade to this release, all users must have a valid email in ThoughtSpot. We block the upgrade if all users don't have valid emails.
 
-If you don't need your ThoughtSpot cluster up and running 24/7, you can shut it down and restart it during normal usage hours. This allows you to save on the infrastructure costs of running ThoughtSpot VM instances in cloud environments. For details refer to [Shut down and restart your cluster]({{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs).
+Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure authentication through Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
 
-### Ability to upload .CSV data from an AWS S3 bucket
+### Amazon S3 persistent storage option
 
-If you have data in .csv format stored in an AWS bucket, you can now load it directly into ThoughtSpot, using the **tsload** command. For details, refer to: [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket).
+You can now reduce the cost of an AWS deployment by using S3 for storage of major services like the ThoughtSpot database and search engine.  For more information, see [AWS configuration options]({{ site.baseurl }}/appliance/aws/configuration-options.html#).
 
-### Allow users to sign up for ThoughtSpot
+### Embrace
 
-You can now allow people in your organization to sign up for ThoughtSpot by clicking a button on the sign-in page. When a person clicks the sign-up button, they go to a sign-up page that you’ve already set up outside of ThoughtSpot. This can be any page you want to use for registering new users.
-For details, refer to: [Allow users to sign up]({{ site.baseurl }}/admin/users-groups/sign-up.html).
+**ThoughtSpot Embrace is in beta.**
 
-### Improved Japanese date keywords
+With ThoughtSpot Embrace, you can perform live queries against an external data repository without caching it in ThoughtSpot. You can then analyze the data and create visualizations in ThoughtSpot.
 
-Japanese-language users now have a more natural way of expressing date phrases in their queries.
-For details, refer to: [Japanese (日本語) date keyword reference]({{ site.baseurl }}/reference/keywords-ja-JP.html).
+There are two modes for using Embrace:
+- Linked tables provide real-time access to external data.
+- Synced tables enable you to bring select tables into the ThoughtSpot internal database.
 
-### New languages
+You can easily switch between Synced and Linked operation modes.
 
-ThoughtSpot now supports seven new languages, available in the Profile page:
-* Danish
-* Norwegian
-* Swedish
-* Finnish
-* Portuguese (Portugal)
-* Spanish (Spain)
-* Italian
-* English (Australia)
+You can also schedule automatic updates that refresh the synced data
 
-### One-to-one joins in worksheets
+For more information, see [About ThoughtSpot Embrace]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
 
-When editing joins within a worksheet, you can now specify a join cardinality of One to One, as well as Many to One.
+### Pinboard export in PDF format
+
+You can now download a pinboard in PDF format, without downloading each visualization separately. PDF files replicate the pinboard layout by default. Alternatively, you can choose to have each visualization on its own page. For more information, see [Download a pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
+
+### Pinboard presentation in full screen
+
+We enhanced the presentation experience to show ThoughtSpot pinboards like a typical slide deck. This release features better navigation and presentation controls. See [Present a pinboard as a slideshow]({{ site.baseurl }}/end-user/pinboards/start-a-slideshow.html).
+
+### New candlestick chart type
+
+We added a new chart that shows price movements of financial instruments. You can adapt it to show other probability distribution information.  See [Candlestick charts]({{ site.baseurl }}/end-user/search/candlestick-charts.html).
+
+### SpotIQ comparative analysis
+
+SpotIQ Analysis now supports more complex measurements:  
+* _Sum over sum_ and _Average_ use 'what-if' percentage insights.  
+
+See [Comparative Analysis]({{ site.baseurl }}/spotiq/comparative-analysis.html).
+
+### SpotIQ simplified feedback
+
+We simplified feedback for insights and analysis to use fewer questions. These questions are now more relevant to the specific insight. See [Insight Feedback]({{ site.baseurl }}/spotiq/insight-feedback.html).
+
+### SearchIQ optimization and other enhancements
+
+**SearchIQ is in Beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
+
+### Schema and join information
+
+You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
+
+### New geo map support
+<!--SCAL-48652-->
+Starting with this release, ThoughtSpot supports geo maps for these countries and regions:
+ - United Kingdom: Zip Code
+ - Sweden: Postal Code
+
+ See [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference.html).
+
+### Drivers
+
+As of this release, ThoughtSpot no longer supports Solaris installations.  
+We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/downloads.html).
+
+{: id="beta-program"}
+## Beta Programs
+If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
+We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
+These features are currently in Beta. Please contact us if you are interested in participating:
+- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
+- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.

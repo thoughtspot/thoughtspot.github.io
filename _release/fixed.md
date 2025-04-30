@@ -7,20 +7,177 @@ permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot Releases.
 
-   - [5.2.3 Fixed issues](#5-2-3)
-   - [5.2.2 Fixed issues](#5-2-2)
-   - [5.2.1 Fixed issues](#5-2-1)
-   - [5.2 Fixed issues](#5-2)
-   - [5.1.4 Fixed issues](#5-1-4)
-   - [5.1.3 Fixed issues](#5-1-3)
-   - [5.1.2 Fixed issues](#5-1-2)
-   - [5.1.1 Fixed issues](#5-1-1)
-   - [5.1 Fixed issue](#5-1)
-   - [5.0.4 Fixed issue](#5-0-4)
-   - [5.0 Fixed issues](#5-0)
-   - [4.5.1 Fixed issues](#4-5-1)
-   - [4.5 Fixed issues](#4-5)
-   - [4.4 Fixed issues](#4-4)
+<ul>
+   <li><a href="#5-3-2-cu3">5.3.2 CU3 Fixed issues</a></li>
+   <li><a href="#5-3-2-cu2">5.3.2 CU2 Fixed issues</a></li>
+   <li><a href="#5-3-2-cu1">5.3.2 CU1 Fixed issues</a></li>
+   <li><a href="#5-3-2">5.3.2 Fixed issues</a></li>
+   <li><a href="#5-3-1">5.3.1 Fixed issues</a></li>
+   <li><a href="#5-3">5.3 Fixed issues</a></li>
+
+   <li>
+     <details>
+      <summary>5.2.X Releases</summary>
+        <ul>
+          <li><a href="#5-2-3">5.2.3 Fixed issues</a></li>
+          <li><a href="#5-2-2">5.2.2 Fixed issues</a></li>
+          <li><a href="#5-2-1">5.2.1 Fixed issues</a></li>
+          <li><a href="#5-2">5.2 Fixed issues</a></li>
+       </ul>
+     </details>
+   </li>
+
+   <li>
+     <details>
+      <summary>5.1.X Releases</summary>
+        <ul>
+          <li><a href="#5-1-4">5.1.4 Fixed issues</a></li>
+          <li><a href="#5-1-3">5.1.3 Fixed issues</a></li>
+          <li><a href="#5-1-2">5.1.2 Fixed issues</a></li>
+          <li><a href="#5-1-1">5.1.1 Fixed issues</a></li>
+          <li><a href="#5-1">5.1 Fixed issue</a></li>
+        </ul>
+      </details>
+    </li>  
+
+    <li>
+      <details>
+       <summary>5.0.X Releases</summary>
+         <ul>
+           <li><a href="#5-0-4">5.0.4 Fixed issue</a></li>
+           <li><a href="#5-0">5.0 Fixed issues</a></li>
+          </ul>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>4.X Releases</summary>
+            <ul>
+              <li><a href="4-5-1">4.5.1 Fixed issues</a></li>
+              <li><a href="4-5">4.5 Fixed issues</a></li>
+              <li><a href="4-4">4.4 Fixed issues</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+
+<a id="5-3-2-cu3"></a>
+## 5.3.2 CU3 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.3.2 CU3.
+
+- Exported PDF, CSV, and XLSX files display caption tags.
+
+- Administrators are not able to edit a worksheet.
+
+- A legend in a chart is not displayed correctly when the _monthly_ attribute is used in a search.
+
+- After upgrade to 5.3.2 CU2, users cannot access a ThoughtSpot instance previously accessed through SSO.
+
+- Users cannot sign in to a ThoughtSpot instance through SSO.
+
+- Changes made to a schema through TQL are not reflected when viewed in the ThoughtSpot UI.
+
+<a id="5-3-2-cu2"></a>
+## 5.3.2 CU2 Fixed issue
+
+This is the issue we fixed in ThoughtSpot Release 5.3.2 CU2.
+
+- Visualizations that worked in the past, display an error message.
+
+<a id="5-3-2-cu1"></a>
+## 5.3.2 CU1 Fixed issue
+
+This is the issue we fixed in ThoughtSpot Release 5.3.2 CU1.
+
+- Rows that don't exist in TQL appear when filtering in the ThoughtSpot UI.
+
+<a id="5-3-2"></a>
+## 5.3.2 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.3.2.   
+
+- Delayed search enabled in a previous release version does not work after upgrade to 5.3.1.
+
+- Pop-up messages sometimes cover the entire width of the screen.
+
+- _Share_, _Copy a link_, and _Send feedback_ cannot be disabled when ThoughtSpot is embedded.
+
+- An error in the date range occurs when drilling down in a custom calendar.
+
+- When the network check fails during a self-service upgrade, it retries indefinitely.
+
+- If formulas have a less-than sign (<) followed by text, the text following the less-than sign does not display in a table.
+
+- Removing a column from a search query increases the number of rows displayed.
+
+- A search that uses the `group_max` function displays an incorrect result when filtering is applied.
+
+<a id="5-3-1"></a>
+## 5.3.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.3.1.
+
+- Using a custom calendar, and doing a query that filters on a date field causes a database error.
+
+- Signing in to ThoughtSpot multiple times in quick succession causes a 500 error.
+
+- When row-level security is used, a 2-column join in a fan-trap query does not work if the column contains NULL data/values.
+
+- Opening certain pinboards can cause the Google Chrome browser to freeze.
+
+- Columns renamed in a worksheet revert back to their original names later.
+
+- Columns cannot be deleted from a worksheet.
+
+- Using a custom calendar and filtering date values by year, month or quarter does not work.
+
+- Canadian postal codes do not appear on maps.
+
+- The Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo.
+
+- Certain HTTP security headers are not implemented.
+
+<a id="5-3"></a>
+## 5.3 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.3.
+
+### Display and Rendering
+
+- A problem where dates do not display properly in the query details pane of an answer is now fixed.  
+- An issue where the color coding of columns is not displayed in a PDF downloaded from a worksheet is fixed.  
+- A problem where using **Copy and edit** in a saved answer causes the screen to go blank has been fixed.  
+- An issue where axis labels are missing from some visualizations is now fixed.  
+- A problem where URLs that appear within an Answer are red, instead of blue, is now fixed.  
+- An issue where an answer that has no measures causes it to display blank is now fixed.  
+- A problem where weekly and monthly charts are not showing weekly and monthly aggregation correctly is now fixed.
+
+### Pinboards
+
+- A problem where the column tooltip in a pinboard does not show last updated information has been fixed.  
+- An issue where the filter dialog box is unresponsive when opened from pinboard is now fixed.  
+- A problem when pinning an answer to a pinboard where the pinboard list is very slow to display is now fixed.  
+- An issue where scheduled pinboard emails fail to send to a specific recipient with a valid email address is now fixed.  
+- A problem where a stacked bar chart does not work in a pinboard is now fixed.  
+- An issue where an exclude filter does not work properly on a pinboard is now fixed.  
+- A problem where a user cannot edit a pinboard, even though they have the proper permissions to do so is fixed.  
+- An issue where emails fail to send from scheduled pinboards that contain Japanese characters in their title is now fixed.
+
+### Search
+
+- A problem where nulls are excluded from a query, even when they have not been excluded using a filter is now fixed.  
+- An issue where searches on a pinboard don’t include cached queries has been fixed.  
+
+### Administration
+
+- An issue where running the `tscli cluster` command causes a failed security check is now fixed.   
+- A problem where the Informatica ODBC cannot connect to ThoughtSpot is now fixed.<br>
+
+### Answers
+
+- A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.
 
 <a id="5-2-3"></a>
 ## 5.2.3 Fixed issues

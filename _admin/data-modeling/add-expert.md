@@ -1,7 +1,6 @@
 ---
-title: ["Manage experts or add an expert"]
-keywords: searchiq,expert,ask an expert
-tags: [expert,SearchIQ]
+title: ["Add or manage experts"]
+
 last_updated: 3/23/2020
 summary: "You can designate experts for each data source, so users won't get stuck if they need help."
 sidebar: mydoc_sidebar

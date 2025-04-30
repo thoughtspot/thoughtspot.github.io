@@ -2,53 +2,16 @@ To set up and explore your data, access the ThoughtSpot application from a
 standard Web browser using a username and password. Before accessing
 ThoughtSpot, you need:
 
-* The Web address (IP address or server name) for ThoughtSpot.
-* A network connection.
-* A Web browser.
-
-A username and password for ThoughtSpot.
+* The Web address (IP address or server name) for ThoughtSpot
+* A network connection
+* A Web browser
+* A username and password for ThoughtSpot.
 
 ## Supported Web browsers
 
 The following browsers are verified to work well with the ThoughtSpot application:
 
-<table>
-  <thead>
-    <tr>
-      <th>Browser</th>
-      <th>Version</th>
-      <th>Operating System</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Google Chrome</td>
-      <td>20 and above</td>
-      <td>Windows 7 or greater, Linux, MacOS</td>
-    </tr>
-    <tr>
-      <td>Mozilla Firefox</td>
-      <td>14 and above</td>
-      <td>Windows 7 or greater, Linux, MacOS</td>
-    </tr>
-    <tr>
-      <td>Internet Explorer</td>
-      <td>11</td>
-      <td>Windows 7 or greater</td>
-    </tr>
-    <tr>
-      <td>Safari</td>
-      <td>10 or greater</td>
-      <td>MacOS</td>
-    </tr>
-    <tr>
-      <td>Microsoft Edge</td>
-      <td>81.0.416.53 and later</td>
-      <td>Windows 7 or later, MacOS</td>
-    </tr>
-  </tbody>
-</table>
-
+{% include content/browser-support.md %}
 
 {% include tip.html content="While Internet Explorer is supported, using it is
 not recommended. Depending on your environment, you can experience performance
@@ -61,15 +24,15 @@ To sign in to ThoughtSpot from a browser:
 1. Open the browser and type in the Web address for ThoughtSpot: `http://HOSTNAME_OR_IP`
 2. Enter your username and password and click **Sign In**.
 
-   ![]({{ site.baseurl }}/images/log_in.png "Log in")
+   ![Log in to ThoughtSpot]({{ site.baseurl }}/images/ts-login-page.png "Log in to ThoughtSpot")
 
 
 ## Sign out
 
-Once you're done with your search session, you can optionally sign out of
+After you finish the search session, you can optionally sign out of
 ThoughtSpot. To sign out of ThoughtSpot from a browser:
 
 1. Click your user icon at the top right hand corner of the screen.
 2. Click **Sign out**.
 
-      ![]({{ site.baseurl }}/images/log_out.png "Log out")
+      ![Log out]({{ site.baseurl }}/images/log-out-new.png "Log out")

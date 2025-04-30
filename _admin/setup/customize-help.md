@@ -1,7 +1,7 @@
 ---
 title: [Customize ThoughtSpot Help]
-tags: [customize,help,style]
-keywords: customize
+
+
 last_updated: tbd
 summary: "You customize ThoughtSpot Help to be specific to your data, examples, and documentation."
 sidebar: mydoc_sidebar

@@ -1,6 +1,6 @@
 ---
 title: [Dematerialize a view]
-keywords: dematerialize views
+
 last_updated: 11/2/2018
 summary: "Learn how to dematerialize a view to free up space."
 toc: false

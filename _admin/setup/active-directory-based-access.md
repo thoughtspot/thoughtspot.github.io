@@ -1,7 +1,7 @@
 ---
 title: [Enable Active Directory based access]
-tags: []
-keywords: "active directory"
+
+
 last_updated: tbd
 summary: "ThoughtSpot supports enabling Active Directory (AD) based access individually on each node where the commands are run. "
 sidebar: mydoc_sidebar
