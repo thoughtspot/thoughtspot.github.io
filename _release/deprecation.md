@@ -1,11 +1,11 @@
 ---
 title: ["Deprecation Announcements"]
-last_updated: 9/29/2021
+last_updated: 12/01/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot sometimes deprecates existing features and replaces them with new and more effective means to use our products.  In this article, we give you advance notice of features we are discontinuing in future releases.
+ThoughtSpot sometimes deprecates existing features and replaces them with new and more effective means to use our products. In this article, we give you advance notice of features we are discontinuing in future releases.
 
 <!--
 
@@ -21,6 +21,11 @@ The January Cloud release of ThoughtSpot Software, targeted for January 2022 (GA
 <dl>
 <dlentry><dt>Business user onboarding</dt>
 <dd>ThoughtSpot will replace the current business user onboarding (present in November Cloud 2021 and earlier) with a new onboarding flow. The new onboarding flow directs new users to Search Assist, where they can complete sample searches on <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">demo data</a> or <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">their company's data</a>.</dd></dlentry>
+
+<dlentry><dt>Liveboard follow</dt>
+<dd><p>In November Cloud and earlier, there are two different ways for a user to ask ThoughtSpot to email them a Liveboard PDF on a specified schedule. You can follow the Liveboard, or <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">schedule a Liveboard job</a>.</p>
+<p>In January Cloud and later releases, ThoughtSpot will combine these features into a single action called "Schedule." The <strong>Follow</strong> option will not be available. This change will allow any user to schedule their own Liveboard emails. To send Liveboard emails to other users, you still need the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html#schedule-pinboards">Can schedule Liveboards permission</a>.</p>
+<p>ThoughtSpot will migrate any existing Liveboard follows to Liveboard schedules. If you followed a Liveboard in November Cloud or earlier, you will see it in the list of Liveboard schedules for that Liveboard as <em>Migrated from follow (your display name)</em>.</p></dd></dlentry>
 </dl>
 
 {: id="de-support-august-cloud"}
@@ -56,7 +61,7 @@ The May Cloud release of ThoughtSpot Software, targeted for May 2021 (GA), will 
 <dlentry><dt>Send feedback</dt>
 <dd>The option to send product feedback, from the more options menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="more options menu icon" class="inline"/> on an Answer or search.</dd></dlentry>
 <dlentry><dt>Client-side summaries for tables</dt>
-<dd>We consolidated client-side column summaries and headlines from the backend into new headline summaries that come from the backend. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
+<dd>We consolidated column summaries and headlines into one summary, called a headline summary. To calculate these headline summaries, ThoughtSpot executes one SQL query for each summary against the underlying database. These headline summaries are integrated with the table columns. You can pin them to Pinboards.</dd></dlentry>
 <dlentry><dt>Ask an Expert</dt>
 <dd>This feature allowed users to ask a designated expert on a particular data source for help when they run into an issue with an Answer or search they created on that data source. Now, users can learn about specific data sources in a number of different ways, such as <a href="{{ site.baseurl }}/end-user/search/search-answers.html">searching across existing Answers and Pinboards</a>, or completing <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist</a> sample queries on their own data.</dd></dlentry>
 </dl>

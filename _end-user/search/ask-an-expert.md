@@ -1,10 +1,13 @@
 ---
 title: ["Ask an expert"]
-last_updated: 5/12/2020
+last_updated: 11/05/2021
 summary: "Do you need help finding something in your data? Ask an expert to create the search for you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 {% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use **Ask an expert** to request help from someone in your organization. Your request goes to the person in your company who best knows the data source you're using and how to search it in ThoughtSpot. When the expert responds, you can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
@@ -21,7 +24,7 @@ At times you may struggle to answer a specific question, build a chart you have 
 
 1. When you're doing a search, you can see a link under your search that says **Ask an expert**. Click that if you're stuck and need help.
 
-    You can also use **Ask an expert** if you have questions about someone else's saved Answer, or an Answer in a Pinboard. **Copy and Edit** a Pinboard visualization to **Ask an expert** about it.
+    You can also use **Ask an expert** if you have questions about someone else's saved answer, or an answer in a Liveboard. **Copy and Edit** a Liveboard visualization to **Ask an expert** about it.
 
 2. The search you were working on is captured and shown back to you, with a text box for your message. Send a message describing what you were looking for, along with any information that makes it easy for the expert to understand what problem you were having.
 

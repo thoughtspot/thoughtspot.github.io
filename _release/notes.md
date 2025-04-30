@@ -1,21 +1,176 @@
 ---
 title: ["ThoughtSpot Cloud Release Notes"]
 toc: false
-last_updated: 9/02/2021
+last_updated: 11/4/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot 7 Cloud September 2021 version (ts7.sep.cl) is now available.
+ThoughtSpot 8 Cloud November 2021 version (ts8.nov.cl) is now available.
 
 These release notes include information about new and enhanced features.
 
-To see our feature deprecation plans, please see [Deprecation Announcements]({{ site.baseurl }}/release/deprecation.html)
+To see our feature deprecation plans, please see [Deprecation Announcements]({{ site.baseurl }}/release/deprecation.html).
 
 {: id="new"}
 ## New Features and Functionality
 
 {% include content/new-features-cloud-release.md %}
+
+<h2><a id="2021-october"></a>ThoughtSpot 7 Cloud October Release (ts7.oct.cl)</h2>
+
+<ul>
+<li><a href="{{ site.baseurl }}#october-cloud-2021-first">For the First user</a></li>
+<li><a href="{{ site.baseurl }}#october-cloud-2021-analyst">For the Analyst</a></li>
+<li><a href="{{ site.baseurl }}#october-cloud-2021-business-user">For the Business User</a></li>
+<li><a href="{{ site.baseurl }}#october-cloud-2021-data-engineer">For the Data Engineer</a></li>
+<li><a href="{{ site.baseurl }}#october-cloud-2021-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#october-cloud-2021-developer">For the Developer</a></li>
+</ul>
+
+<h3><a id="october-cloud-2021-first"></a>For the First User</h3>
+
+<dl>
+<dlentry id="getting-started">
+<dt>Getting started with ThoughtSpot Cloud</dt>
+<dd>The first user on the account has to complete a series of steps before other people can start using ThoughtSpot with your organization’s data. For these instructions, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-getting-started.html">Getting Started with ThoughtSpot Cloud</a>.
+</dd>
+</dlentry>
+</dl>
+
+<h3><a id="october-cloud-2021-analyst"></a>For the Analyst</h3>
+
+<dl>
+<dlentry id="pinboard-gating-conditions">
+<dt>Liveboard schedule gating conditions</dt>
+<dd>Gating conditions for scheduled Liveboards are now GA. Refer to <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a Liveboard job</a> to learn more about scheduling Liveboards for email delivery, and how to leverage gating conditions so that ThoughtSpot only sends the Liveboards when certain conditions are true.</dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="october-cloud-2021-business-user"></a>For the Business User</h3>
+
+<dl>
+<dlentry id="geomaps-new-zealand">
+<dt>Geo map support</dt>
+<dd>We added support for regional councils, cities and districts, and postcodes, for New Zealand. See <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.</dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="october-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
+<dl>
+<dlentry id="connections-custom-calendar">
+<dt>Custom calendar</dt>
+<dd>Custom calendar is now available, and it supports the Snowflake, Amazon Redshift, Google BigQuery, Microsoft Azure Synapse, and Databricks cloud data warehouses. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar</a>.</dd>
+</dlentry>
+</dl>
+
+<h3><a id="october-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+
+<dl>
+<dlentry id="profile-ui">
+<dt>UI improvement for user profile</dt>
+<dd>This release improves the UI and user experience of the <a href="{{ site.baseurl }}/end-user/introduction/about-user.html">user profile</a>.</dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="october-cloud-2021-developer"></a>For the Developer</h3>
+
+<dl>
+<dt>ThoughtSpot Everywhere</dt>
+<dd>
+For information about the new features and enhancements introduced in this release, refer to <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>. </dd>
+</dl>
+
+<h2><a id="2021-september"></a>ThoughtSpot 7 Cloud September Release (ts7.sep.cl)</h2>
+
+<ul>
+<li><a href="{{ site.baseurl }}#september-cloud-2021-first">For the First user</a></li>
+<li><a href="{{ site.baseurl }}#september-cloud-2021-analyst">For the Analyst</a></li>
+<li><a href="{{ site.baseurl }}#september-cloud-2021-business-user">For the Business User</a></li>
+<li><a href="{{ site.baseurl }}#september-cloud-2021-data-engineer">For the Data Engineer</a></li>
+<li><a href="{{ site.baseurl }}#september-cloud-2021-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#september-cloud-2021-developer">For the Developer</a></li>
+</ul>
+
+<h3><a id="september-cloud-2021-first"></a>For the First User</h3>
+
+<dl>
+<dlentry id="getting-started">
+<dt>Getting started with ThoughtSpot Cloud</dt>
+<dd>The first user on the account has to complete a series of steps before other people can start using ThoughtSpot with your organization’s data. For these instructions, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-getting-started.html">Getting Started with ThoughtSpot Cloud</a>.
+</dd>
+</dlentry>
+</dl>
+
+<h3><a id="september-cloud-2021-analyst"></a>For the Analyst</h3>
+
+<dl>
+<dlentry id="auto-email">
+<dt>Automatic following of How Users are Searching Answers Liveboard</dt>
+<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">How Users are Searching Answers Liveboard</a> allows administrators, and users they share the Liveboard with, to understand how users are searching for existing answers and Liveboards. Starting in the September release, ThoughtSpot automatically emails this Liveboard to administrators once a week. You can add or remove users from this email list by <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">editing the follow schedule</a> for this Liveboard.</dd>
+</dlentry>
+</dl>
+
+<h3><a id="september-cloud-2021-business-user"></a>For the Business User</h3>
+
+<dl>
+<dlentry id="geomaps-denmark">
+<dt>Geo map support</dt>
+<dd>We added support for regions, municipalities, and postal codes, for Denmark. See <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.</dd>
+</dlentry>
+
+<dlentry id="learning-cards">
+<dt>Learning cards</dt>
+<dd><p>This release introduces a new in-product learning initiative. Sets of learning cards appear when you first view an answer or search result after updating to the September release. These cards teach new users about ThoughtSpot, and how to gain insights from searches and answers. If you exit the learning cards by clicking the <strong>Hide</strong> or <strong>x</strong> button, you can always get them back by clicking on “learning mode on” from the profile menu.</p>
+<p>This feature is only available if you have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">new answer experience</a> <span class="badge badge-update">Beta</span> (off by default) on in your environment. You can turn the new answer experience on from the <strong>Experience manager</strong> in your profile.</p></dd>
+</dlentry>
+
+<dlentry id="watchlist-drag-and-drop">
+<dt>Drag and drop metrics on your watchlist</dt>
+<dd>You can now move metrics on your <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">home page watchlist</a> using drag and drop. Click on a metric, and move it to a different position in your watchlist.</dd>
+</dlentry>
+
+<dlentry id="search-suggestions">
+<dt>Search suggestions <span class="label label-beta">Beta</span></dt>
+<dd><p>When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and Liveboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> into the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing Liveboard called <strong>Sales in the east last year</strong>.</p>
+<p>ThoughtSpot provides these search object suggestions before you begin typing, based on your past searches and popular searches in your environment.</p>
+<p>This feature is in beta. If you do not see it yet, ThoughtSpot will enable it for you soon.</p></dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="september-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
+<dlentry id="connections">
+<dt>Embrace is now called Connections</dt>
+<dd>ThoughtSpot has renamed Embrace to Connections. Functionality remains the same. To access your connections, navigate to the Data tab and click Connections. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Connections</a>.</dd>
+</dlentry>
+
+<h3><a id="september-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+
+<dl>
+
+<dlentry id="custom-domains">
+<dt>Custom domain configuration</dt>
+<dd><p>ThoughtSpot now supports the configuration of a custom domain or multiple domains for your ThoughtSpot Cloud URL. By default, the base URL is <em>&lt;your_company_name&gt;.thoughtspot.cloud</em>. This feature allows you to request a different URL or multiple URLs, such as <em>analytics.&lt;your_company_name&gt;.com</em>. This is useful when embedding ThoughtSpot pages with TS Everywhere, so that your embedding application and the ThoughtSpot pages have the same base URL. If you are embedding ThoughtSpot in multiple environments, such as a staging environment and a production environment, these multiple domains can point to the same ThoughtSpot instance.</p>
+<p>Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/custom-domains.html">Custom domain configuration</a> for more information. To set up a custom domain in your ThoughtSpot Cloud URL, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="september-cloud-2021-developer"></a>For the Developer</h3>
+
+<dl>
+<dlentry id="thoughtspot-everywhere">
+<dt>ThoughtSpot Everywhere</dt>
+<dd><p>
+This release introduces the ThoughtSpot Everywhere Edition license, Visual Embed SDK version 1.4.0, and new REST APIs for programmatic management of data connections, metadata objects, user accounts, user groups and privileges, and object sharing permissions.</p>
+
+<p>For more information, refer to <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>.</p></dd>
+</dlentry>
+</dl>
 
 <h2><a id="2021-august"></a>ThoughtSpot 7 Cloud August Release (ts7.aug.cl)</h2>
 
@@ -82,7 +237,7 @@ Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-ho
 <dlentry id="custom-calendar">
 <dt>Custom calendar enhancements</dt>
 <dd>There are several enhancements for custom calendar in this release:
-<ul><li>Custom calendar offers <span class="badge badge-update">Beta</span> support for Redshift, Teradata, Starburst, Synapse, and SAP Hana connections. These are off by default. To enable them, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a>.</li><li>Streamlined custom calendar window with the ability to preview calendar data.</li>
+<ul><li>Custom calendar offers <span class="badge badge-update">Beta</span> support for Redshift, Teradata, Starburst, Synapse, and SAP HANA connections. These are off by default. To enable them, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a>.</li><li>Streamlined custom calendar window with the ability to preview calendar data.</li>
 <li>Simplified workflow.</li>
 <li>Preview calendar data from custom calendar list</li></ul>
 For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar overview</a>.</dd>
@@ -93,8 +248,8 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 
 <dl>
 <dlentry id="credit-usage-pinboard">
-<dt>Credit Usage pinboard</dt>
-<dd>The Credit Usage pinboard, a pinboard for monitoring your credit consumption under the consumption-based pricing model, is now accessible from the Admin Console, under <strong>Billing > Credit consumption</strong>.</dd>
+<dt>Credit Usage Liveboard</dt>
+<dd>The Credit Usage Liveboard, a Liveboard for monitoring your credit consumption under the consumption-based pricing model, is now accessible from the Admin Console, under <strong>Billing > Credit consumption</strong>.</dd>
 </dlentry>
 
 <dlentry id="saml-mail-field">
@@ -156,7 +311,7 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 
 <dlentry id="embedded-link-format">
 <dt>Embedded link format for sharing objects</dt>
-<dd>For embedded ThoughtSpot environments, you can now generate links with your host application context and send these links in email notifications. You can specify the link format when sharing an object or scheduling a pinboard job to ensure that the links sent in the email notifications go to the appropriate URL. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> and <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a pinboard job</a> for more information.</dd>
+<dd>For embedded ThoughtSpot environments, you can now generate links with your host application context and send these links in email notifications. You can specify the link format when sharing an object or scheduling a Liveboard job to ensure that the links sent in the email notifications go to the appropriate URL. Refer to <a href="{{ site.baseurl }}/end-user/pinboards/share-answers.html">Share answers</a> and <a href="{{ site.baseurl }}/admin/manage-jobs/schedule-a-pinboard-job.html">Schedule a Liveboard job</a> for more information.</dd>
 </dlentry>
 
 
@@ -179,7 +334,7 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 
 <dlentry id="trending-objects">
 <dt>View counts for trending objects</dt>
-<dd>You can now see the view counts for trending answers and pinboards on the home page. This can help you understand why an object is trending.</dd>
+<dd>You can now see the view counts for trending answers and Liveboards on the home page. This can help you understand why an object is trending.</dd>
 </dlentry>
 
 <dlentry id="trending-objects-link">
@@ -198,14 +353,14 @@ For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-clo
 </dlentry>
 
 <dlentry id="object-usage-pinboard">
-<dt>Object Usage Pinboard</dt>
-<dd>This release introduces a new default pinboard for monitoring object usage. The <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Pinboard</a> contains data on the following topics:
+<dt>Object Usage Liveboard</dt>
+<dd>This release introduces a new default Liveboard for monitoring object usage. The <a href="{{ site.baseurl }}/admin/ts-cloud/object-usage.html">Object Usage Liveboard</a> contains data on the following topics:
 <ul>
 <li>Specifies what existing tables, worksheets and views users search on</li>
 <li>Specifies which columns users search most frequently</li>
 <li>Tracks the most searched tables, worksheets and views each month</li>
 </ul>
-Use this pinboard to identify what users have accessed, and determine which unused data objects can be deleted.</dd>
+Use this Liveboard to identify what users have accessed, and determine which unused data objects can be deleted.</dd>
 </dlentry>
 </dl>
 
@@ -227,8 +382,8 @@ Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html#use
 <ul><li>Can manage users: Can create, delete, and edit users.</li>
 <li>Can manage privileges: Can create, delete, and edit groups. This includes the group's name, sharing visibility, and privileges.</li>
 <li>Can operate application: Can configure local and SAML authentication. Can manage application settings: search, SpotIQ, and onboarding advanced settings, style and help customization. Can view scheduled maintenance.</li>
-<li>Can see system information: Can view all default admin data, including system worksheets and pinboards.</li></ul>
-This feature is in <span class="label label-beta">Beta</span> and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
+<li>Can see system information: Can view all default admin data, including system worksheets and Liveboards.</li></ul>
+This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
 </dlentry>
 
 <dlentry id="security-log-collection">
@@ -305,7 +460,7 @@ For further details, see <a href="{{ site.baseurl }}/admin/data-security/audit-l
 <dlentry id="custom-link-format">
 <dt>Custom link format for ThoughtSpot embedded instances</dt>
 <dd>
-ThoughtSpot generates links to access objects, such as pinboards, visualizations, and search answers, when a user shares an object with another user or follows a pinboard to receive periodic notifications. If you have embedded ThoughtSpot in your application, you might want to generate these links in the format that preserves your host application context.</dd>
+ThoughtSpot generates links to access objects, such as Liveboards, visualizations, and search answers, when a user shares an object with another user or follows a Liveboard to receive periodic notifications. If you have embedded ThoughtSpot in your application, you might want to generate these links in the format that preserves your host application context.</dd>
 
 <dd>For embedded instances, ThoughtSpot now allows you to customize the format of these links in the Developer portal. The <strong>Link Settings</strong> page in the Developer portal allows you to customize the link format for various resource URLs and the <strong>unsubscribe</strong> link sent in email notifications.</dd>
 
@@ -320,7 +475,7 @@ ThoughtSpot generates links to access objects, such as pinboards, visualizations
 <ul><li><code>POST /tspublic/v1/security/share</code><br>You can use this API to share ThoughtSpot objects with another user or user group.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
 <li><code>POST /tspublic/v1/security/shareviz</code><br>You can use this API to share a specific ThoughtSpot visualization with another user or user group. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
 <li><code>GET /tspublic/v1/session/login/token</code><br>This API allows you to authenticate and log in a user if trusted authentication is enabled on ThoughtSpot. <br> For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
-<li><code>POST /tspublic/v1/metadata/assigntag</code><br>You can use this API to programmatically assign a tag to a ThoughtSpot object such as pinboards, search answers, tables, and worksheets. <br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
+<li><code>POST /tspublic/v1/metadata/assigntag</code><br>You can use this API to programmatically assign a tag to a ThoughtSpot object such as Liveboards, search answers, tables, and worksheets. <br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li><br>
 <li><code>POST /tspublic/v1/user/updatepreference</code><br>This API now includes the optional <code>username</code> parameter, which allows API users to specify the <code>username</code> of the ThoughtSpot user.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.</li>
 </ul></dd></dlentry>
 </dl>
@@ -361,7 +516,7 @@ ThoughtSpot generates links to access objects, such as pinboards, visualizations
 
 <dlentry id="automatic-select">
 <dt>Automatic selection of first search result</dt>
-<dd>When you search across existing Answers and Pinboards, ThoughtSpot now automatically selects the first result and opens the <strong>Details</strong> panel. This allows you to quickly glance at the details for the result that ThoughtSpot determines is most useful for you. You can see the metrics, groups, and filters for the Answer or Pinboard, and easily find out if that object answers your question.</dd>
+<dd>When you search across existing Answers and Liveboards, ThoughtSpot now automatically selects the first result and opens the <strong>Details</strong> panel. This allows you to quickly glance at the details for the result that ThoughtSpot determines is most useful for you. You can see the metrics, groups, and filters for the Answer or Liveboard, and easily find out if that object answers your question.</dd>
 </dlentry>
 
 <dlentry id="latency">
@@ -404,7 +559,7 @@ ThoughtSpot generates links to access objects, such as pinboards, visualizations
 <li>Lists what actions users complete in the product</li>
 <li>Lists the underlying data sources for any object</li>
 <li>Lists any object's dependents</li></ul>
-You can search on this Worksheet, or create Pinboards based on it, to monitor your users' interaction with the product. To access this Worksheet, search for <strong>Product Usage Worksheet</strong> from the <strong>Data</strong> tab, or add it as a source while searching data.</dd></dlentry>
+You can search on this Worksheet, or create Liveboards based on it, to monitor your users' interaction with the product. To access this Worksheet, search for <strong>Product Usage Worksheet</strong> from the <strong>Data</strong> tab, or add it as a source while searching data.</dd></dlentry>
 </dl>
 
 <h3><a id="may-cloud-developer"></a>For the Developer</h3>
@@ -412,7 +567,7 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 <dl>
 <dlentry id="custom-actions">
 <dt>Custom actions in the context menu</dt>
-<dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <b>Answers</b> or <b>Pinboards</b> page.</dd>
+<dd>ThoughtSpot now allows you to add a custom action in the contextual menu for embedded visualizations in the <b>Answers</b> or <b>Liveboards</b> page.</dd>
 <dd>To add a custom action to the contextual menu, you must have the <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html">New Answer experience</a> <span class="badge badge-update">Beta</span> (off by default) enabled on your cluster.</dd>
 <dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/custom-actions.html">Add custom actions</a>.</dd></dlentry>
 </dl>
@@ -436,11 +591,11 @@ You can search on this Worksheet, or create Pinboards based on it, to monitor yo
 
 <dl>
 <dlentry id="pinboard-embed-enhancements">
-<dt>Pinboard embed enhancements</dt>
-<dd>The More menu <img src="/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> in the embedded Pinboard page now shows the following actions for pinboard and visualizations.</dd>
-<dd>Pinboard<ul><li>Save</li><li>Make a copy</li><li>Add filters</li><li>Configure filters</li><li>Present</li><li>Download as PDF</li><li>Pinboard info</li><li>Manage schedules</li></ul>
+<dt>Liveboard embed enhancements</dt>
+<dd>The More menu <img src="/images/icon-ellipses.png" alt="more options menu icon" class="inline" /> in the embedded Liveboard page now shows the following actions for Liveboard and visualizations.</dd>
+<dd>Liveboard<ul><li>Save</li><li>Make a copy</li><li>Add filters</li><li>Configure filters</li><li>Present</li><li>Download as PDF</li><li>Liveboard info</li><li>Manage schedules</li></ul>
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Users with edit permissions can view and access the <b>Save</b>, <b>Add filters</b>, <b>Configure filters</b>, and <b>Manage schedules</b> actions.</div>
-Visualizations on a pinboard
+Visualizations on a Liveboard
 <ul><li>Pin</li><li>Download</li><li>Edit</li><li>Present</li><li>Download as CSV</li><li>Download as XLSX</li><li>Download as PDF</li></ul>
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Users with edit permissions can view and access the <b>Edit</b> action.
 The <b>Download as CSV</b>, <b>Download as XSLX</b>, and <b>Download as PDF</b> actions are available for table visualizations.
@@ -478,14 +633,14 @@ The <b>Download</b> action is available for chart visualizations.</div>
 <dlentry id="scriptability">
 <dt>Scriptability</dt>
 <dd>There are several enhancements to the <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a> feature:
-<ul><li><strong>Support for selective and linked filters:</strong> You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
+<ul><li><strong>Support for selective and linked filters:</strong> You can now import, export, and update Liveboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
 <li><strong>Add tables and columns to an Embrace connection (GA):</strong> ThoughtSpot now allows you to use TML to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. This feature is now GA and on by default. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection.</li>
 </ul>
 </dd></dlentry>
 
 <dlentry id="query-dashboard">
-<dt>Enhancements to the Search on Answers Pinboard</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Search on Answers Pinboard</a> contains several new or updated visualizations, including <strong>Top search queries on existing Answers</strong>, <strong>Position at which users are clicking</strong>, and <strong>What results users are finding useful with autocomplete suggestions</strong>. These new visualizations provide more information about click position, what information users look for, and what information they cannot find. You can also view the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#best-practices">best practices</a> for this Pinboard.
+<dt>Enhancements to the Search on Answers Liveboard</dt>
+<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Search on Answers Liveboard</a> contains several new or updated visualizations, including <strong>Top search queries on existing Answers</strong>, <strong>Position at which users are clicking</strong>, and <strong>What results users are finding useful with autocomplete suggestions</strong>. These new visualizations provide more information about click position, what information users look for, and what information they cannot find. You can also view the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#best-practices">best practices</a> for this Liveboard.
 </dd></dlentry>
 
 </dl>
@@ -554,7 +709,7 @@ The Developer portal, referred to as <strong>SpotDev</strong> in the earlier rel
 <li>The <strong>Navigate to URL</strong> checkbox on the <strong>Playground</strong> &gt; <strong>Full app</strong> page allows you to set a URL path to navigate to when the embedded  application loads.</li>
 </ul>
 </li>
-<li>Custom action Configuration<br>You can now configure custom actions for embedded pinboards and visualization pages. You can also set a custom action as a primary menu command, or as a menu item in the <strong>More</strong> menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="the more options menu">.</li>
+<li>Custom action Configuration<br>You can now configure custom actions for embedded Liveboards and visualization pages. You can also set a custom action as a primary menu command, or as a menu item in the <strong>More</strong> menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="the more options menu">.</li>
 <li>Security settings<br>The <strong>Security Settings</strong> page in the developer portal includes the following new features:<ul>
 <li>Users with developer and admin privileges can now add external application domains to the Content Security Policy (CSP) and Cross-Origin Resource Sharing (CORS) whitelist.</li>
 <li>Users with admin privileges can add the SAML redirect domains to the allowed list of domains, and thus provide a seamless login experience for federated users who request access to the embedded ThoughtSpot content.</li>
@@ -565,7 +720,7 @@ The Developer portal, referred to as <strong>SpotDev</strong> in the earlier rel
 
 <dlentry id="visual-embed-sdk">
 <dt>ThoughtSpot Visual Embed SDK enhancements</dt>
-<dd>ThoughtSpot Visual Embed SDK is now available to all external users who want to embed ThoughtSpot content in their application, product, or web page.<br>You can now download the Visual Embed SDK package from the <a href="https://www.npmjs.com/package/@thoughtspot/visual-embed-sdk" target="_blank">NPM site</a> and get started with embedding ThoughtSpot.<br>The new Visual Embed SDK package includes several new enhancements to support user authentication, full application rendition, custom action configuration for embedded pinboards and visualizations, and enumerators for handling the events generated by the embed configuration.
+<dd>ThoughtSpot Visual Embed SDK is now available to all external users who want to embed ThoughtSpot content in their application, product, or web page.<br>You can now download the Visual Embed SDK package from the <a href="https://www.npmjs.com/package/@thoughtspot/visual-embed-sdk" target="_blank">NPM site</a> and get started with embedding ThoughtSpot.<br>The new Visual Embed SDK package includes several new enhancements to support user authentication, full application rendition, custom action configuration for embedded Liveboards and visualizations, and enumerators for handling the events generated by the embed configuration.
 For more information, see the <a href="https://developers.thoughtspot.com/docs/?pageid=js-reference" arget="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
 
 <dlentry id="session-api-enhancement">
@@ -616,7 +771,7 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 
 <dlentry id="details-panel">
 <dt>Frequent metrics and attributes in the <strong>Details</strong> panel</dt>
-<dd>The <strong>Details</strong> panel that appears when you click on a Pinboard visualization while searching across your existing Answers and Pinboards now lists frequent metrics and attributes for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.</dd>
+<dd>The <strong>Details</strong> panel that appears when you click on a Liveboard visualization while searching across your existing Answers and Liveboards now lists frequent metrics and attributes for that Liveboard. You can determine if a Liveboard search result is useful for you based on the metrics and attributes used most often in that Liveboard.</dd>
 </dlentry>
 
 </dl>
@@ -634,8 +789,8 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 <dd>You can manage certain advanced settings for your organization from the Admin Console. You can customize welcome emails, scheduled emails, and the workflow that allows users to sign up for ThoughtSpot from the login page. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/onboarding-email-settings.html">Manage email and onboarding settings</a>.</dd></dlentry>
 
 <dlentry id="performance-tracking">
-<dt>Performance Tracking Pinboard</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a> is now accessible from the Admin Console. To view this Pinboard, navigate to the Admin Console by selecting <strong>Admin</strong> from the top navigation bar. Select <strong>App performance</strong> from the side navigation bar in the Admin Console.</dd></dlentry>
+<dt>Performance Tracking Liveboard</dt>
+<dd>The <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Liveboard</a> is now accessible from the Admin Console. To view this Liveboard, navigate to the Admin Console by selecting <strong>Admin</strong> from the top navigation bar. Select <strong>App performance</strong> from the side navigation bar in the Admin Console.</dd></dlentry>
 
 </dl>
 
@@ -645,12 +800,12 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 
 <dlentry id="thoughtspot-embed">
 <dt>ThoughtSpot Embed</dt>
-<dd>ThoughtSpot cloud now supports embedding ThoughtSpot content in third-party applications. In this release, ThoughtSpot introduces the Visual Embed SDK package <span class="label label-beta">Beta</span> to help developers embed the ThoughtSpot search functionality, pinboards, visualizations, or the full application in their web page, portal, or business solution.</dd>
+<dd>ThoughtSpot cloud now supports embedding ThoughtSpot content in third-party applications. In this release, ThoughtSpot introduces the Visual Embed SDK package <span class="label label-beta">Beta</span> to help developers embed the ThoughtSpot search functionality, Liveboards, visualizations, or the full application in their web page, portal, or business solution.</dd>
 <dd>For more information on embedding ThoughtSpot, see <a href="{{ site.baseurl }}/admin/ts-cloud/intro-embed.html">ThoughtSpot embedding solution</a>.</dd></dlentry>
 
 <dlentry id="spotdev-portal">
-<dt>SpotDev portal</dt>
-<dd>ThoughtSpot cloud now includes the <strong>SpotDev</strong> portal <span class="label label-beta">Beta</span> to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The <strong>SpotDev</strong> tab in the ThoughtSpot application is available for the users with administrator and developer privileges.</dd>
+<dt>SpotDev portal <span class="label label-beta">Beta</span></dt>
+<dd>ThoughtSpot cloud now includes the <strong>SpotDev</strong> portal in beta to allow developer users to explore the ThoughtSpot SDK APIs and build sample applications. The <strong>SpotDev</strong> tab in the ThoughtSpot application is available for the users with administrator and developer privileges.</dd>
 <dd>The <strong>SpotDev</strong> portal provides a playground for developers and product owners to evaluate the Visual Embed APIs and preview the results. The portal also allows authorized users to rebrand the embedded content, <a href="{{ site.baseurl }}/admin/ts-cloud/customization-rebranding.html">customize styles</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/custom-actions.html">add custom menu actions</a> to the embedded instance.</dd><dd>For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">SpotDev Portal</a>.</dd></dlentry>
 
 </dl>
@@ -671,7 +826,7 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
     <dt>Scriptability</dt>
     <dd><ul><li><p>You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.</p>
     <p>This feature is in Beta in the February release. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></li>
-    <li><strong>Export custom SpotApps</strong>: Support for custom SpotApp export is now GA and on by default. You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</li></ul>
+    <li><strong>Export custom sets of TML files</strong>: Support for export of custom sets of TML files is now GA and on by default. You can now export your own custom sets of TML files, or collections of Scriptable ThoughtSpot Answers, Liveboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > Utilities > Import/Export TML</strong> and choose the objects you would like to include in a custom set of TML files. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html">Migrate multiple TML files</a>.</li></ul>
 </dd></dlentry>
 
  <dlentry id="simplified-join-creation">
@@ -680,13 +835,13 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 </dd></dlentry>
 
 <dlentry id="pinboard-download-api">
-  <dt>Pinboard Export API</dt>
-  <dd>Use the new Pinboard Export API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.
+  <dt>Liveboard Export API</dt>
+  <dd>Use the new Liveboard Export API to programmatically download Liveboards, or specific visualizations from the Liveboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/rest-api-reference.html">REST API reference</a>.
 </dd></dlentry>
 
 <dlentry id="spotiq-analyze">
   <dt>Support for SpotIQ Analyze</dt>
-  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a>.</p></dd></dlentry>
+  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, Liveboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a>.</p></dd></dlentry>
 
 </dl>
 
@@ -695,7 +850,7 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 <dl>
 <dlentry id="home-page-shortcuts">
 <dt>Home page shortcuts</dt>
-<dd><p>You can now create and access quick links to your most-used Answers and Pinboards from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>.</p>
+<dd><p>You can now create and access quick links to your most-used Answers and Liveboards from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>.</p>
 <p>ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
 </dlentry>
 
@@ -727,16 +882,16 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 <li>Singapore</li></ul></dd></dlentry>
 
 <dlentry id="search-answers-pinboard">
-<dt>Search on Answers Pinboard</dt>
-<dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">How Users are Searching Answers Pinboard</a>:
+<dt>Search on Answers Liveboard</dt>
+<dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">How Users are Searching Answers Liveboard</a>:
 <ul>
-<li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
-<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to <a href="{{ site.baseurl }}/admin/misc/contact.html">Contact ThoughtSpot Support</a> to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
+<li>The Liveboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Liveboard and Worksheet with anyone else who might need this information.</li>
+<li>The Liveboard is populated with your users' Search on Answers data by default. You do not need to <a href="{{ site.baseurl }}/admin/misc/contact.html">Contact ThoughtSpot Support</a> to see your users' Search on Answers data in the Liveboard.</li></ul></dd>
 </dlentry>
 
 <dlentry id="pinboard-download-control">
-<dt>Pinboard download control</dt>
-<dd><p>You can now limit or remove the options ThoughtSpot provides for downloading Pinboards and their visualizations. You can allow users to only download Pinboard visualizations in a specific format (such as .csv), or you can restrict access to downloading Pinboards and their visualizations altogether.</p>
+<dt>Liveboard download control</dt>
+<dd><p>You can now limit or remove the options ThoughtSpot provides for downloading Liveboards and their visualizations. You can allow users to only download Liveboard visualizations in a specific format (such as .csv), or you can restrict access to downloading Liveboards and their visualizations altogether.</p>
 <p>This is a cluster-level feature. You cannot configure permissions for specific users.</p>
 <p>This is an embed-only feature. To enable this functionality, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
 </dlentry>
@@ -752,7 +907,7 @@ For more information, see the <a href="https://developers.thoughtspot.com/docs/?
 <h3>Scriptability</h3>
 There are several new features for Scriptability:
 <ul>
-<li><p><strong>Export custom SpotApps</strong>: You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</p>
+<li><p><strong>Export custom sets of TML files</strong>: You can now export your own custom sets of TML files, or collections of Scriptable ThoughtSpot Answers, Liveboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > Utilities > Import/Export TML</strong> and choose the objects you would like to include in a custom set of TML files. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml-import-export-multiple.html">Migrate multiple TML files</a>.</p>
 <p>This feature is in Beta. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></li>
 <li><strong>GUID handling</strong>: ThoughtSpot now recognizes pre-existing GUIDs upon import and asks if you would like to update the existing object or create a new one. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a>.</li>
 <li>ThoughtSpot Scripting Language is now called ThoughtSpot Modeling Language.</li></ul>
@@ -780,33 +935,33 @@ To set locale to English (India), click the user icon in the top right corner to
 The ThoughtSpot <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html">Home page</a> allows you to access all your essential actions as a business user. You can:
 
 <ul>
-<li>Search across existing Answers and Pinboards</li>
-<li>Search your data to create new Answers and Pinboards</li>
+<li>Search across existing Answers and Liveboards</li>
+<li>Search your data to create new Answers and Liveboards</li>
 <li>View objects you viewed recently</li>
-<li>View trending Pinboards and Answers</li>
+<li>View trending Liveboards and Answers</li>
 <li>Filter existing objects by favorite, author, tag, or type of object</li>
 <li>Sort existing objects by author, views, or most recently viewed</li>
 <li>Bulk mark objects as favorites</li>
 </ul>
 
 <h3>Search existing Answers</h3>
-In addition to the existing Search over data, this release gives business users easy <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search over existing Answers and Pinboards</a>. This  meets the users' information needs by making Answers searchable, sortable, and applying filters on relevance, recency, number of views, authorship, metrics used, and so on.
+In addition to the existing Search over data, this release gives business users easy <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search over existing Answers and Liveboards</a>. This  meets the users' information needs by making Answers searchable, sortable, and applying filters on relevance, recency, number of views, authorship, metrics used, and so on.
 
-<h3>How Users are Searching Answers Pinboard</h3>
-Use this default <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Pinboard</a> to analyze how users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create.
+<h3>How Users are Searching Answers Liveboard</h3>
+Use this default <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Liveboard</a> to analyze how users are searching your existing Answers and Liveboards, so you can determine what objects are the most popular and what assets you may need to create.
 
 <h3>Disable Answer Search for specific Worksheets</h3>
-When users search for existing Answers and Pinboards, the default experience is to search across all Worksheets that they have access to. You may not want users to search for existing Answer and Pinboards built on certain Worksheets that are works in progress or deprecated. You can disable searching for Answers on specific Worksheets. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/disable-discover-for-worksheet.html">Disable Answer Search</a>.
+When users search for existing Answers and Liveboards, the default experience is to search across all Worksheets that they have access to. You may not want users to search for existing Answer and Liveboards built on certain Worksheets that are works in progress or deprecated. You can disable searching for Answers on specific Worksheets. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/disable-discover-for-worksheet.html">Disable Answer Search</a>.
 
-<h3>Linked Pinboard filters</h3>
-You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Pinboard level. This is useful when you have a Pinboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets.<br><br>
+<h3>Linked Liveboard filters</h3>
+You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Liveboard level. This is useful when you have a Liveboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets.<br><br>
 
-Refer to <a href="{{ site.baseurl }}/complex-search/linked-filters.html">Linked Pinboard filters</a>.<br>
+Refer to <a href="{{ site.baseurl }}/complex-search/linked-filters.html">Linked Liveboard filters</a>.<br>
 
-<h3>Selective Pinboard filters</h3>
-You can now configure Pinboard filters to apply to specific visualizations that you choose. This is useful when you would like to filter some, but not all, visualizations in a Pinboard.<br><br>
+<h3>Selective Liveboard filters</h3>
+You can now configure Liveboard filters to apply to specific visualizations that you choose. This is useful when you would like to filter some, but not all, visualizations in a Liveboard.<br><br>
 
-Refer to <a href="{{ site.baseurl }}/complex-search/selective-filters.html">Selective Pinboard filters</a>.
+Refer to <a href="{{ site.baseurl }}/complex-search/selective-filters.html">Selective Liveboard filters</a>.
 
 <!--<h3>Enhanced data modeling capabilities</h3>
 This release enables new data modeling capabilities. You can now:
@@ -825,8 +980,8 @@ You can now tailor the ThoughtSpot Help menu to your organization by customizing
 
 Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Customize ThoughtSpot Help</a>.
 
-<h3>User Adoption Pinboard</h3>
-The <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> is now accessible from the Admin Console.
+<h3>User Adoption Liveboard</h3>
+The <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Liveboard</a> is now accessible from the Admin Console.
 
 {: id="2020-september"}
 ## ThoughtSpot Cloud September Release (tscloud.5)
@@ -836,7 +991,7 @@ Scriptability contains the following new features:
 <ul>
   <li>Export and update logical tables</li>
   <li>Edit, validate, and publish objects using the TML editor</li>
-  <li>Import multiple objects from the <strong>SpotApps</strong> page, or from the object list page</li>
+  <li>Import multiple objects from the <strong>Data > Utilities > Import/Export TML</strong> page, or from the object list page</li>
   <li>Update Views</li>
   <li>GUID handling: a new <code>GUID</code> parameter in an object's .tml file allows ThoughtSpot to recognize pre-existing GUIDs, and determine if you are updating an existing object, or creating a new one</li>
 
@@ -854,7 +1009,7 @@ You can now sign ThoughtSpot's end-user use agreement from the application itsel
 
 Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/use-agreement.html">ThoughtSpot use agreement</a>.
 
-<h3>User adoption and performance Pinboards</h3>
-This release of ThoughtSpot Cloud contains two new default Pinboards for administrators. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a> to understand how your ThoughtSpot cluster is performing.<br><br>
+<h3>User adoption and performance Liveboards</h3>
+This release of ThoughtSpot Cloud contains two new default Liveboards for administrators. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Liveboard</a> to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Use the <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Liveboard</a> to understand how your ThoughtSpot cluster is performing.<br><br>
 
-See <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Pinboard</a>.
+See <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Liveboard</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/performance-tracking.html">Performance Tracking Liveboard</a>.

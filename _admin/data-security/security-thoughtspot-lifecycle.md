@@ -196,6 +196,7 @@ potential workarounds.
 ## Storage Security
 
 ### Encryption at Rest
+
 ThoughtSpot provides standard Encryption at Rest (EAR) for storage encryption. This includes centralized key management, key rotation, and key revocation.
 
 ### Secure Erase

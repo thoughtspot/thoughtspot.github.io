@@ -1,38 +1,38 @@
-When you share a Pinboard, you share a live link to the Pinboard that reflects the latest version of it. When someone else views the Pinboard you shared with them, they see the most recently saved version with the most recent data.
+When you share a Liveboard, you share a live link to the Liveboard that reflects the latest version of it. When someone else views the Liveboard you shared with them, they see the most recently saved version with the most recent data.
 
-You do not have to be an administrator or the Pinboard's owner to share saved Pinboards. Any user can share them, based on the access levels the user has.
+You do not have to be an administrator or the Liveboard's owner to share saved Liveboards. Any user can share them, based on the access levels the user has.
 
-You can share a Pinboard from the list of Pinboards on [the main pinboards page](#share-mainpinboardpage), or from [the pinboard itself](#share-pinboardpage).
+You can share a Liveboard from the list of Liveboards on [the main Liveboards page](#share-mainpinboardpage), or from [the Liveboard itself](#share-pinboardpage).
 
 {: id="share-mainpinboardpage"}
-## Share from the Pinboards page
-To share Pinboards from the main Pinboard page, follow these steps.
+## Share from the Liveboards page
+To share Liveboards from the main Liveboard page, follow these steps.
 
-1. Configure the Pinboard(s) to look as it must appear when you share it.
+1. Configure the Liveboard(s) to look as it must appear when you share it.
 
-2. Save the Pinboard(s) by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
+2. Save the Liveboard(s) by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
-    ![Save the pinboard]({{ site.baseurl }}/images/sharing-pinboardsave.png "Save the pinboard")
+    ![Save the Liveboard]({{ site.baseurl }}/images/sharing-pinboardsave.png "Save the Liveboard")
 
-3. Click **Pinboards** on the bar at the top of your screen.
+3. Click **Liveboards** on the bar at the top of your screen.
 
     ![The top menu bar]({{ site.baseurl }}/images/sharing-mainpinboardpage.png "The top menu bar")
 
-2. Select the Pinboard(s) you want to share from the list of Pinboards by hovering over the Pinboard name and clicking the empty check box that appears.
+2. Select the Liveboard(s) you want to share from the list of Liveboards by hovering over the Liveboard name and clicking the empty check box that appears.
 
 3. Click **Share**.
 
-    ![Share the pinboard]({{ site.baseurl }}/images/sharing-pinboard-mainpageshare.png "Share the pinboard")
+    ![Share the Liveboard]({{ site.baseurl }}/images/sharing-pinboard-mainpageshare.png "Share the Liveboard")
 
 6. [Specify permissions](#specify-permissions).  
 
 {: id="share-pinboardpage"}
-## Share from within a pinboard
-To share a Pinboard from within the Pinboard, follow these steps.
+## Share from within a Liveboard
+To share a Liveboard from within the Liveboard, follow these steps.
 
-1. Configure the Pinboard to look as it must appear when you share it.
+1. Configure the Liveboard to look as it must appear when you share it.
 
-2. Save the Pinboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
+2. Save the Liveboard by clicking the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and selecting **Save**.
 
 3. Click the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline}.
 
@@ -40,18 +40,18 @@ To share a Pinboard from within the Pinboard, follow these steps.
 
 5. [Specify permissions](#specify-permissions).
 
-## Share a Pinboard visualization
-You can also share a specific visualization within a Pinboard. When you share a Pinboard visualization, the user or group receives an email with a link to that visualization.
+## Share a Liveboard visualization
+You can also share a specific visualization within a Liveboard. When you share a Liveboard visualization, the user or group receives an email with a link to that visualization.
 
-Note that sharing a specific visualization within a Pinboard gives users and groups access to the entire Pinboard.
+Note that sharing a specific visualization within a Liveboard gives users and groups access to the entire Liveboard.
 
-To share a Pinboard visualization, follow these steps:
+To share a Liveboard visualization, follow these steps:
 
-1. Navigate to the Pinboard visualization that you would like to share.
+1. Navigate to the Liveboard visualization that you would like to share.
 
 2. Select the sharing icon ![sharing icon]({{ site.baseurl }}/images/icon-share copy-20px.png){: .inline} that appears when you hover over the visualization.
 
-    ![Share a Pinboard visualization]({{ site.baseurl }}/images/share-pinboard-viz-button.png "Share a Pinboard visualization")
+    ![Share a Liveboard visualization]({{ site.baseurl }}/images/share-pinboard-viz-button.png "Share a Liveboard visualization")
 
 3. [Specify permissions](#specify-permissions).
 

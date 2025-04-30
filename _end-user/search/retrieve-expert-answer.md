@@ -1,10 +1,13 @@
 ---
 title: ["View an answer from an expert"]
-last_updated: 3/20/2020
+last_updated: 11/05/2021
 summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 {% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 When you use **Ask an expert** to get help, you can view the answer after the expert responds.
@@ -25,7 +28,7 @@ If you're not set up with an email in ThoughtSpot, follow these steps to view yo
 
 The answer will include any changes the expert made, to get to the answer you were looking for. You should review the new answer, to learn from the things the expert did to answer your question.
 
-Note that the answer is a full fledged ThoughtSpot answer. This means that you can pin it to a pinboard, edit it, or share it with others, just like the result of any ThoughtSpot search.
+Note that the answer is a full fledged ThoughtSpot answer. This means that you can pin it to a Liveboard, edit it, or share it with others, just like the result of any ThoughtSpot search.
 
 ## Related information
 

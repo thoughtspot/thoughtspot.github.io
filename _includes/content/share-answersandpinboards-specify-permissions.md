@@ -29,7 +29,7 @@
 
 7. If your ThoughtSpot environment is embedded, select **Embedded link format** to generate a URL for your host application context. This option allows you to ensure that the links to the object in email notifications go to the appropriate application URL.
 
-5. You can also copy a direct link to the Answer, Pinboard, or visualization within a Pinboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
+5. You can also copy a direct link to the answer, Liveboard, or visualization within a Liveboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
 
     {: id="share-direct-link"}
     Note that sending users this link does not share the object with them. You must also share the object by clicking the **Share** button at the bottom of the dialog box.

@@ -37,6 +37,6 @@
  <tr>
     <td><code>timely.timely</code></td>
     <td><code>max_scheduled_jobs</code></td>
-    <td>Sets the max scheduled jobs (both pinboard and Data Connect) for a cluster. 50 is the default.</td>
+    <td>Sets the max scheduled jobs (both Liveboard and Data Connect) for a cluster. 50 is the default.</td>
  </tr>
 </table>

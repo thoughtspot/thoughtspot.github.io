@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Cloud]
-last_updated: 6/8/2020
+last_updated: 11/04/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
@@ -37,7 +37,7 @@ permalink: /:collection/:path.html
     <p class="personaTitle"><a href="{{ "/admin/ts-cloud/business-user.html "| prepend: site.baseurl }}">Business User</a></p>
     <p class="topicLink">
       <a href="{{ "/admin/ts-cloud/business-user-onboarding.html "| prepend: site.baseurl }}">Onboard</a><br>
-      <a href="{{ "/admin/ts-cloud/pinboards.html "| prepend: site.baseurl }}"> Pinboards and Answers</a><br>
+      <a href="{{ "/admin/ts-cloud/pinboards.html "| prepend: site.baseurl }}"> Liveboards and answers</a><br>
       <a href="{{ "/admin/ts-cloud/search-assist.html "| prepend: site.baseurl }}">ThoughtSpot Search</a></p>
   </div>
   <div class="grid-child">
@@ -47,8 +47,8 @@ permalink: /:collection/:path.html
     <p class="topicLink">
       <a href="{{ "/admin/ts-cloud/search-assist.html "| prepend: site.baseurl }}">ThoughtSpot Search</a><br>
       <a href="{{ "/admin/ts-cloud/analyst-onboarding.html "| prepend: site.baseurl }}">Onboard as Analyst</a><br>
-      <a href="{{ "/admin/ts-cloud/scriptability.html "| prepend: site.baseurl }}">SpotApps Migration</a><br>
-      <a href="{{ "/admin/ts-cloud/app-templates.html "| prepend: site.baseurl }}">SpotApp Templates</a><br>
+      <a href="{{ "/admin/ts-cloud/scriptability.html "| prepend: site.baseurl }}">Object Migration</a><br>
+      <a href="{{ "/admin/ts-cloud/app-templates.html "| prepend: site.baseurl }}">SpotApps</a><br>
       <a href="{{ "/admin/ts-cloud/tml.html "| prepend: site.baseurl }}">TS Modeling Language</a></p>
   </div>
   <div class="grid-child">

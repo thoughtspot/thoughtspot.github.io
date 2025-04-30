@@ -1,24 +1,27 @@
 ---
-title: [User adoption pinboard]
-last_updated: 10/21/2020
-summary: "Use the User adoption pinboard to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time."
+title: [User adoption Liveboard]
+last_updated: 11/05/2021
+summary: "Use the User adoption Liveboard to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The User adoption pinboard contains essential information about your ThoughtSpot users and their adoption of the platform. Use this Pinboard to understand weekly active users, inactive users, top 10 adhoc searchers, popular Pinboards, and so on. You must have admin privileges to view this Pinboard.
 
-To view this Pinboard, navigate to the **Admin Console** by selecting **Admin** from the top navigation bar. Select **User activity** from the side navigation bar.
+{% include content/liveboards-announcement.md %}
 
-![User Adoption Pinboard]({{ site.baseurl }}/images/user-adoption.png "User Adoption Pinboard")
+The User adoption Liveboard contains essential information about your ThoughtSpot users and their adoption of the platform. Use this Liveboard to understand weekly active users, inactive users, top 10 adhoc searchers, popular Liveboards, and so on. You must have admin privileges to view this Liveboard.
 
-You can filter the Pinboard by user from the filter bar underneath the Pinboard name.
+To view this Liveboard, navigate to the **Admin Console** by selecting **Admin** from the top navigation bar. Select **User activity** from the side navigation bar.
 
-Use this Pinboard to view and analyze information about the following topics:
+![User Adoption Liveboard]({{ site.baseurl }}/images/user-adoption.png "User Adoption Liveboard")
+
+You can filter the Liveboard by user from the filter bar underneath the Liveboard name.
+
+Use this Liveboard to view and analyze information about the following topics:
 - hourly, daily, weekly, and monthly active users (DAU Last 4 Weeks, WAU Last 4 Weeks, MAU Last 4 Weeks, Weekly Active Users, Daily Active Users, Hourly Active Users)
-- number of user actions on the Pinboards and Answers in the cluster (Count of Current Pinboards, Count of Current Answers)
-- which users are most active in ThoughtSpot, and what they do (ThoughtSpot Champions Last 30 Days, Top 10 Pinboard Consumers Last 30 days, Top 10 Adhoc Searchers)
-- popular Pinboards (Popular Pinboards Last 30 Days, Top 10 Pinboards Ratio by Views, Top 10 Pinboards Ratio by Users)
+- number of user actions on the Liveboards and answers in the cluster (Count of Current Liveboards, Count of Current Answers)
+- which users are most active in ThoughtSpot, and what they do (ThoughtSpot Champions Last 30 Days, Top 10 Liveboard Consumers Last 30 days, Top 10 Adhoc Searchers)
+- popular Liveboards (Popular Liveboards Last 30 Days, Top 10 Liveboards Ratio by Views, Top 10 Liveboards Ratio by Users)
 - user actions in the last month (User Actions Last 4 Weeks)
-- unused Answers and Pinboards (Abandoned Answers, Abandoned Pinboards)
+- unused answers and Liveboards (Abandoned Answers, Abandoned Liveboards)
 - inactive users (Inactive Users headline and table)
-- users by last login, number of Pinboard interactions, number of Search interactions, and number of days logged in during the last 6 months (User Profile)
+- users by last login, number of Liveboard interactions, number of Search interactions, and number of days logged in during the last 6 months (User Profile)

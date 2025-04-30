@@ -1,4 +1,4 @@
-When you download tables with date columns or view these tables in scheduled pinboards, the format for those dates may differ from their appearance in ThoughtSpot. The following date bucketing types may look different:
+When you download tables with date columns or view these tables in scheduled Liveboards, the format for those dates may differ from their appearance in ThoughtSpot. The following date bucketing types may look different:
 
 <table>
 <tr><th>Bucketing Type</th><th>Appearance in ThoughtSpot</th><th>Appearance in CSV, XLSX, or PDF</th></tr>

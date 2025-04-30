@@ -1,10 +1,12 @@
 ---
 title: [Custom domain configuration]
-last_updated: 9/23/2021
+last_updated: 11/05/2021
 summary: "ThoughtSpot supports the configuration of custom domains for your ThoughtSpot Cloud URL."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 This article primarily discusses custom domains for a non-embedded environment. To set up a custom domain in an embedded environment with ThoughtSpot Everywhere, refer to [the developer documentation](https://developers.thoughtspot.com/docs/?pageid=custom-domain-config){: target="_blank"}.
 
@@ -12,7 +14,7 @@ When you set up your ThoughtSpot Cloud instance, ThoughtSpot sets your applicati
 
 You might want to include your business domain name instead of `thoughtspot.cloud` in your ThoughtSpot Cloud URL. For example, you might want to use `<app-name>.<your-company-name>.com` as your base URL, instead of `<your-company-name>.thoughtspot.cloud`. This domain configuration creates trust among users in your organization, since the URL is in a format they are familiar with.
 
-Similarly, you might want to include your business domain name in all system-generated notifications. For example, you might want your pinboard schedule notifications to show the sender’s address as `<user-name>@<your-domain-name>`, instead of the default `TS Admin no-reply@notifications.thoughtspot.com`.
+Similarly, you might want to include your business domain name in all system-generated notifications. For example, you might want your Liveboard schedule notifications to show the sender’s address as `<user-name>@<your-domain-name>`, instead of the default `TS Admin no-reply@notifications.thoughtspot.com`.
 
 ## Domain URL customization
 If you want to customize the application domain URL that appears in the browser, please [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to initiate a URL change request. ThoughtSpot requires the following information to complete this operation:
@@ -28,7 +30,7 @@ If you want to customize the application domain URL that appears in the browser,
 {% include important.html content="The domain URL customization does not update the email domain name in ThoughtSpot system-generated notifications. You must contact the ThoughtSpot Support team to customize the email domain." %}
 
 ## Email customization
-ThoughtSpot supports customizing the email domain, sender ID welcome email message text, and product name in system-generated notifications such as the pinboard and answer sharing notifications, pinboard job scheduled emails, and so on.
+ThoughtSpot supports customizing the email domain, sender ID welcome email message text, and product name in system-generated notifications such as the Liveboard and answer sharing notifications, Liveboard job scheduled emails, and so on.
 
 For information about additional customization settings for email notifications and onboarding experience, see [Email and onboarding settings]({{ site.baseurl }}/admin/ts-cloud/onboarding-email-settings.html).
 

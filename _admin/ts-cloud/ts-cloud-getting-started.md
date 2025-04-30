@@ -1,10 +1,12 @@
 ---
 title: [Getting Started with ThoughtSpot Cloud]
-last_updated: 6/20/2021
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 As the first user on the account, you have to complete the following steps before other people can dig into your organization’s data.
 
@@ -47,11 +49,13 @@ Review the available user groups and privileges so you can assign people to the 
 Completing this step lets all users in your organization perform live queries. Choose your cloud data warehouse type, and follow the connection instructions.
 - [Amazon Redshift]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-redshift.html){:target="_blank"}
 - [Azure Synapse]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-synapse.html){:target="_blank"}
+- [Databricks]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-databricks.html){:target="_blank"}
 - [Google BigQuery]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-gbq.html){:target="_blank"}
 - [Oracle ADW]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-adw.html){:target="_blank"}
+- [SAP HANA]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana.html){:target="_blank"}
 - [Snowflake]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-snowflake.html){:target="_blank"}
 - [Starburst]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-starburst.html){:target="_blank"}
-- [Databricks]({{site.baseurl}}/admin/ts-cloud/ts-cloud-embrace-databricks.html){:target="_blank"}
+- [Teradata]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata.html){:target="_blank"}
 
 ## Step 5: Model your data for searches
 
@@ -75,24 +79,24 @@ After you finish creating worksheets, you are ready to search. Review the key co
 - [Understanding Charts]({{site.baseurl}}/end-user/search/about-charts.html){:target="_blank"}
 - [Understanding formulas in searches]({{site.baseurl}}/complex-search/add-formula-to-search.html){:target="_blank"}
 
-## Step 8: Make a default pinboard
+## Step 8: Make a default Liveboard
 
-Pinboards are interactive collections of charts and tables. Set up a shared pinboard now, so everyone who joins your organization can access valuable information.
+Liveboards are interactive collections of charts and tables. Set up a shared Liveboard now, so everyone who joins your organization can access valuable information.
 
-- [Basic pinboard usage]({{site.baseurl}}/end-user/pinboards/about-pinboards.html){:target="_blank"}
+- [Basic Liveboard usage]({{site.baseurl}}/end-user/pinboards/about-pinboards.html){:target="_blank"}
 
 ## Step 9: Onboard your colleagues
 
-Any time you create a new user, immediately add them to a user group. Configure that user group to use a specific data source, choose initial pinboards, and specify the text of the person’s welcome email. We recommend that you also prepare a support strategy for data-specific questions.
+Any time you create a new user, immediately add them to a user group. Configure that user group to use a specific data source, choose initial Liveboards, and specify the text of the person’s welcome email. We recommend that you also prepare a support strategy for data-specific questions.
 
 - [Onboarding users]({{site.baseurl}}/end-user/onboarding/intro-onboarding.html){:target="_blank"}
 
 ## Step 10: Track your organization’s usage
 
-ThoughtSpot administrators have built-in pinboards to monitor adoption and usage.
+ThoughtSpot administrators have built-in Liveboards to monitor adoption and usage.
 
-- [Performance tracking pinboard]({{site.baseurl}}/admin/ts-cloud/performance-tracking.html){:target="_blank"}
-- [User adoption pinboard]({{site.baseurl}}/admin/ts-cloud/user-adoption.html){:target="_blank"}
+- [Performance tracking Liveboard]({{site.baseurl}}/admin/ts-cloud/performance-tracking.html){:target="_blank"}
+- [User adoption Liveboard]({{site.baseurl}}/admin/ts-cloud/user-adoption.html){:target="_blank"}
 
 ## Keep learning
 

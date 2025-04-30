@@ -12,6 +12,9 @@ ThoughtSpot supports the Single Sign-On (SSO) authentication method with the Sec
 
 By default, [local authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-local.html) is enabled. Use this article to learn how to configure a SAML integration with an external IdP. To configure SAML in an embedded environment, refer to [SAML SSO authentication](https://developers.thoughtspot.com/docs/?pageid=saml-sso){: target="_blank"}.
 
+### SAML authentication with multiple IDPs
+You may have multiple groups of users who need to log into ThoughtSpot but are managed by separate IDPs. You can configure SAML SSO login for more than one Identity Provider. To configure this, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
+
 ## About SAML authentication
 The SAML SSO authentication involves several entities and components.
 
@@ -32,6 +35,7 @@ SAML is an XML standard that allows secure exchange of user authentication and a
 
     A user whose identity information is managed by the IdP. The federated users have SSO credentials and authenticate to IdP to access various application services.
 
+{: id="saml-assertion"}
 ### SAML assertion and attributes
 Both SP-initiated and IdP-initiated authentication workflows rely upon assertions that are exchanged between the SAML endpoints through a web browser.
 
@@ -40,6 +44,8 @@ Some of the most commonly used elements are:
 - **SAML assertion**
 
     The user authentication and authorization information issued by the IdP. SAML assertions contain all the information necessary for a service provider to confirm if the user identity is valid.
+
+    ThoughtSpot supports 2 methods to increase the duration of validity for your SAML assertion: the `SessionNotOnOrAfter` attribute and the `maxAuthenticationAge` parameter. You can ask ThoughtSpot to disable either one of these checks. If you use both, and either check fails, ThoughtSpot does not authenticate the user. Some IDPs do not support use of `SessionNotOnOrAfter`. If your IDP does not support use of `SessionNotOnOrAfter`, remove that attribute from your IDP assertion and [ask ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to enable `maxAuthenticationAge`.
 
 - **Metadata**
 
@@ -97,3 +103,6 @@ To determine if ThoughtSpot supports your preferred IdP, [contact ThoughtSpot su
 Complete your configuration of the IdP using the IdP’s SAML documentation. Upload or copy the contents of the `spring_saml_metadata.xml` to your IdP server. This file contains the public key you need if you want to encrypt your SAML assertions. If you did not download the `spring_saml_metadata.xml` file, navigate to `https://<your_ThoughtSpot_hostname-or-IP>/callosum/v1/saml/metadata/`. The file automatically downloads.
 
 {% include note.html content="When configuring SAML 2.0, make sure you map the SAML user attributes and subjects to appropriate fields. This allows the ThoughtSpot system to automatically pick up certain attributes and subjects, such as a user's email address, display name, and username. Map the username attribute value in your IDP (<code>userPrincipalName</code> in Okta, for example) to <code>NameId</code>, map the email attribute value to <code>mail</code>, and map the display name subject value to <code>displayName</code>. It is <strong>mandatory</strong> to fill out the mail field. If your company cannot meet this requirement, contact ThoughtSpot Support. If your IdP does not allow you to import the IdP metadata XML file, you must map these values manually." %}
+
+## SAML group mapping
+You can map your SAML groups from your IDP to your ThoughtSpot groups. This means that you do not have to manually recreate your groups in ThoughtSpot, if they are already present in your IDP. Refer to [Configure SAML group mapping]({{ site.baseurl }}/admin/ts-cloud/saml-group-mapping.html).

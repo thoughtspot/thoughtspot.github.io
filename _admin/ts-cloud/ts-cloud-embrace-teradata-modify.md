@@ -1,10 +1,12 @@
 ---
 title: [Modify a Teradata connection]
-last_updated: 12/21/2020
+last_updated: 11/05/2021
 summary: Learn how to modify a Teradata connection and its tables.
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 You can modify a Teradata connection in the following ways:
 - Edit a connection: to add or remove tables and columns
@@ -119,7 +121,7 @@ To delete a table from a Teradata connection:
 
   ![]({{ site.baseurl }}/images/embrace-delete-table-depend.png "Dependent objects warning")
 
-You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
+You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, Liveboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
 
 ## Deleting a Teradata connection
 A connection can be used in multiple data sources or visualizations. Because of this, you must delete all of the sources and tasks that use that connection, before you can delete the connection.

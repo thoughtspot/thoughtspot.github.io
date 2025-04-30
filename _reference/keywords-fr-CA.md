@@ -36,9 +36,10 @@ reference lists the various keywords.
 
 {% include content/keywords-translate/fr-CA/keywords-comparative-fr-CA.md %}
 
+<!--
 ## Location
 
-{% include content/keywords-translate/fr-CA/keywords-location-fr-CA.md %}
+{% include content/keywords-translate/fr-CA/keywords-location-fr-CA.md %} -->
 
 ## Period
 

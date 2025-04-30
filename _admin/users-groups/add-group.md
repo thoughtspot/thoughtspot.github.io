@@ -1,10 +1,13 @@
 ---
 title: ["Create, edit, or delete a group"]
-last_updated: 3/25/2021
-summary: "ThoughtSpot has intuitive and powerful user group management for assigning privileges, user selection, multi-tier subgroups, default Pinboard assignment, and emailing."
+last_updated: 11/05/2021
+summary: "ThoughtSpot has intuitive and powerful user group management for assigning privileges, user selection, multi-tier subgroups, default Liveboard assignment, and emailing."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Before adding users, create the groups to which they belong. Each group includes a set of privileges for its users.
 
 {: id="add-group"}
@@ -58,16 +61,16 @@ To create a group and add privileges for the group, follow these steps:
      </tr>
     </table>
 
-7. You can also add _[Groups](#add-groups)_ (these would be the subgroups of the group you are editing), _[Users](#add-users)_. Also, see _[Default Pinboards](#add-default-pinboard)_.
+7. You can also add _[Groups](#add-groups)_ (these would be the subgroups of the group you are editing), _[Users](#add-users)_. Also, see _[Default Liveboards](#add-default-pinboard)_.
 
 8. Click **Add** to create the group.
 
 {: id="add-default-pinboards"}
-### Default Pinboards
+### Default Liveboards
 
-You cannot add default Pinboards to a new user group. You must create it first, and then edit it to add default Pinboards. See **[Edit a group > Default Pinboards](#change-default-pinboards)**.
+You cannot add default Liveboards to a new user group. You must create it first, and then edit it to add default Liveboards. See **[Edit a group > Default Liveboards](#change-default-pinboards)**.
 
-![Add a new group > Default Pinboards]({{ site.baseurl }}/images/add-group-pinboards.png "Add group > Default Pinboards")
+![Add a new group > Default Liveboards]({{ site.baseurl }}/images/add-group-pinboards.png "Add group > Default Liveboards")
 
 {: id="add-groups"}
 ### Groups
@@ -119,26 +122,26 @@ To edit an existing group, follow these steps:
 
    ![Change the details for the group]({{ site.baseurl }}/images/edit-group.png "Change details for the group")
 
-   You can also make changes to the _[Default Pinboards](#change-default-pinboards)_, _[Groups](#change-groups)_ (these would be the subgroups of the group you are editing), _[Users](#change-users)_, or _[Email](#change-email)_.
+   You can also make changes to the _[Default Liveboards](#change-default-pinboards)_, _[Groups](#change-groups)_ (these would be the subgroups of the group you are editing), _[Users](#change-users)_, or _[Email](#change-email)_.
 
 7. Make your changes, and click **Update**.
 
 {: id="change-default-pinboards"}
-### Default Pinboards
+### Default Liveboards
 
-To assgin default pinboards to groups, follow these steps:
+To assgin default Liveboards to groups, follow these steps:
 
 1. Create a group, or choose an existing group. Note its name.
 
-2. In the **Pinboards** interface, find the correct Pinboards, and share them with this group. See [Share a Pinboard]({{ site.baseurl }}/admin/data-security/share-pinboards.html).
+2. In the **Liveboards** interface, find the correct Liveboards, and share them with this group. See [Share a Liveboard]({{ site.baseurl }}/admin/data-security/share-pinboards.html).
 
 3. Open the Group for editing. See [Edit a group](#edit-group).
 
-4. Click the **Default Pinboards** tab.
+4. Click the **Default Liveboards** tab.
 
-2. From the list of shared Pinboards, select 1-3 default Pinboards in the list by clicking the box next to the Pinboard name.
+2. From the list of shared Liveboards, select 1-3 default Liveboards in the list by clicking the box next to the Liveboard name.
 
-3. You can also use **Search** to find Pinboards by name.
+3. You can also use **Search** to find Liveboards by name.
 
 4. Click **Update** to save changes.
 

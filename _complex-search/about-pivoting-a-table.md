@@ -1,13 +1,14 @@
 ---
 title: [Pivot table]
-last_updated: 5/21/2021
+last_updated: 11/05/2021
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Pivot tables enable you to explore an alternate visualization of your data in a
-wide, customizable table. They allow you to visualize some of your data horizontally and some data vertically in the same table. A pivot table is a chart
-time table that uses a drag-and-drop interface.  
+
+{% include content/liveboards-announcement.md %}
+
+Pivot tables enable you to explore an alternate visualization of your data in a wide, customizable table. They allow you to visualize some of your data horizontally and some data vertically in the same table. A pivot table is a chart time table that uses a drag-and-drop interface.  
 
 If you would like to visualize your search as a pivot table, click on the **change visualization** icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png){: .inline} near the top right of your screen, and select **pivot table**. You need at least one attribute and one measure in your search.
 
@@ -25,7 +26,7 @@ If you right-click a table cell, the system displays a contextual menu, allowing
 
 Click on a column or row heading to expand it. Additionally, you can expand or collapse all columns and rows by right-clicking the arrow on the top left of a cell.
 
-When you pin a pivot table to a Pinboard, it retains your expansion settings.
+When you pin a pivot table to a Liveboard, it retains your expansion settings.
 
 ## Display totals
 
@@ -38,9 +39,7 @@ To see your data as a percent, click the **edit chart configuration** ![]({{ sit
 You only see 100% value when grand total rows is enabled. When
 it is disabled, the rows and columns have no parental total column, so the
 percentage cannot be calculated. All intermediate totals (columns or rows)
-display the percentage values calculated with respect to their parent. For each
-inner summary (column or row) the parental total values are assumed to be 100%
-internally.
+display the percentage values calculated with respect to their parent. For each inner summary (column or row) the parental total values are assumed to be 100% internally.
 
 Select **Pivot Summaries** in the **Settings** menu to see row and column totals.
 
@@ -56,8 +55,7 @@ You can change the type of total shown for an aggregated measure from the header
 
 ## Heatmap mode
 
-The heatmap functionality allows you to see which measures contribute more to the total than
-others within the table.
+The heatmap functionality allows you to see which measures contribute more to the total than others within the table.
 
 ![Heatmap mode]({{ site.baseurl }}/images/chart-pivot-table-heatmap.png "Heatmap mode")
 

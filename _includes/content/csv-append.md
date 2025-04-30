@@ -1,16 +1,12 @@
 You can append data to your existing system tables through the ThoughtSpot application, even if the tables were initially loaded using `tsload`. The CSV file must have the same structure as the table it is being loaded into, including number and type of columns, in the same order as the target table.
-
+ 
 To append data into ThoughtSpot:
 
 1.   Log in to ThoughtSpot from a browser.
 2.   Click **Data** on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
-
 3.   Click the name of the table you would like to append data to.
 4.   Click the **Load Data** button.
-
-     ![]({{ site.baseurl }}/images/load_data_icon_2.png "Load data")
 
 5. Upload the CSV or Excel file by doing one of these options:
     -   Click **Browse your files** and select the file.

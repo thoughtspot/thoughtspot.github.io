@@ -1,10 +1,13 @@
 ---
 title: [Managing Groups]
-last_updated: 5/28/2020
+last_updated: 11/05/2021
 summary: "Manage user groups in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Before people can log in and use ThoughtSpot, you need to create a username, a
 password, and a membership in one or more groups for them. Use the Admin Console to easily create and manage your user groups.
 
@@ -16,7 +19,7 @@ To manage groups, navigate to the Admin Console by clicking on the **Admin** tab
 
 You can use the Admin Console to accomplish the following tasks:
 * **Create a group** by clicking on the **+ add group** button
-* **Manage an existing group** by clicking on the group you would like to edit: change the group's default Pinboard, add an existing group to the group, add a user to the group, modify the group's privileges, or resend or test the welcome email
+* **Manage an existing group** by clicking on the group you would like to edit: change the group's default Liveboard, add an existing group to the group, add a user to the group, modify the group's privileges, or resend or test the welcome email
 * **Delete a group** by hovering over a group name, clicking the checkbox that appears, and selecting the **Delete** button
 
 ## Related information

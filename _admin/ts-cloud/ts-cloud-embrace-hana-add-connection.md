@@ -1,11 +1,14 @@
 ---
 title: [Add an SAP HANA connection]
-last_updated: 12/21/2020
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Once ThoughtSpot Connections is enabled, you can add a connection to an SAP HANA database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
+
+{% include content/liveboards-announcement.md %}
+
+Once ThoughtSpot Connections is enabled, you can add a connection to an SAP HANA database. This allows you to perform a live query of the external database to create answers and Liveboards, without having to bring the data into ThoughtSpot.
 
 To add a connection to SAP HANA:
 
@@ -31,13 +34,14 @@ To add a connection to SAP HANA:
     2. Enter your key and value information.
     3. To add more keys and values, click the plus sign (+), and enter them.
 
-    {% include note.html content="Any key-value pairs that you enter must be defined in your Hana data source. Key-value pairs are case-sensitive." %}
+    {% include note.html content="Any key-value pairs that you enter must be defined in your HANA data source. Key-value pairs are case-sensitive." %}
 
     For more information about the advanced properties for SAP HANA, see: [SAP HANA Client Interface Programming Reference](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.03/en-US/109397c2206a4ab2a5386d494f4cf75e.html){:target="_blank"}, in the SAP's documentation.
 
 6. Click **Continue**.       
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
+
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/teradata-selecttables.png "Select tables and columns for your connection")
   <!--  ![Select tables and columns for your connection]({{ site.baseurl }}/images/HANA-selecttables.png "Select tables and columns for your connection") -->
 

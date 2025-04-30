@@ -36,9 +36,10 @@ reference lists the various keywords.
 
 {% include content/keywords-translate/da-DK/keywords-comparative-da-DK.md %}
 
+<!--
 ## Location
 
-{% include content/keywords-translate/da-DK/keywords-location-da-DK.md %}
+{% include content/keywords-translate/da-DK/keywords-location-da-DK.md %} -->
 
 ## Period
 

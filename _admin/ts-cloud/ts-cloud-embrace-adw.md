@@ -1,11 +1,14 @@
 ---
 title: [Oracle Autonomous Data Warehouse overview]
-last_updated: 1/20/2021
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can add a connection to a Oracle Autonomous Data Warehouse (ADW) database in ThoughtSpot Cloud, and perform live queries to create Answers and Pinboards.
+
+{% include content/liveboards-announcement.md %}
+
+You can add a connection to a Oracle Autonomous Data Warehouse (ADW) database in ThoughtSpot Cloud, and perform live queries to create answers and Liveboards.
 
 - [Add an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html)
 - [Edit an ADW connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw-edit-connection.html)

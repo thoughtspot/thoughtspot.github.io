@@ -1,10 +1,12 @@
 ---
 title: [Delete a table with dependent objects from an SAP HANA connection]
-last_updated: 8/11/2020
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects.
 
@@ -14,4 +16,4 @@ If you attempt to delete a table with dependent objects, the operation is blocke
 
   ![]({{ site.baseurl }}/images/embrace-delete-table-depend.png "Dependent objects warning")
 
-You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, pinboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.
+You can also click the name of a table and then click the linked objects to see a list of dependent objects with links. The list shows the names of the dependent objects (worksheets, Liveboards or answers), and the columns they use from that table. You can use this information to determine the impact of changing the structure of the data source or to see how widely used it is. Click a dependent object to modify or delete it.

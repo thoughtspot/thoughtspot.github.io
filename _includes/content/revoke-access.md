@@ -1,10 +1,10 @@
-You may need to revoke access to an object (table, worksheet, pinboard, or answer) that you previously shared. Unsharing an object is very similar to sharing it.
+You may need to revoke access to an object (table, worksheet, Liveboard, or answer) that you previously shared. Unsharing an object is very similar to sharing it.
 
 Follow these steps to unshare one or more objects:
 
 1. Navigate to the current section from the top menu bar.
     -   If the object is a table or worksheet, click **Data**.
-    -   If the object is a pinboard, click **Pinboards**.
+    -   If the object is a Liveboard, click **Liveboards**.
     -   If the object is an answer, click **Answers**.
 2. Hover over the object(s) you want to unshare, and select them by clicking the checkbox to the left of their name.
 3. Click the **Share** icon.
