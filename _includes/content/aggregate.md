@@ -1,4 +1,3 @@
-
 <table>
 <colgroup>
    <col style="width:25%" />
@@ -124,6 +123,13 @@
       <td>Returns the maximum value among columns that meet a criteria.</td>
       <td><code class="highlighter-rouge">max_if( (revenue > 10) , customer region )</code></td>
     </tr>
+    <!-- SCAL-49352
+    <tr id="median">
+      <td><code>median</code></td>
+      <td>Returns the median value of a column.</td>
+      <td><code>median (measure)</code>
+      {% include note.html content="Fact table limit is 10 million (10<sup>7</sup>) rows." %}</td>
+    </tr>-->
     <tr>
       <td><code>min</code></td>
       <td>Returns the minimum value of a column.</td>
@@ -154,18 +160,19 @@
       <td>Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1…Current + Num2) with both end points being included in the window. For example, “1,1” will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum.</td>
       <td><code class="highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></td>
     </tr>
+    <!-- SCAL-49352
+    <tr id="nth_percentile"><td><code>nth_percentile</code></td><td>Returns the nth percentile of a group of measures.</td><td><code>nth_percentile (measure, n, 'asc')</code>,<br><code>nth_percentile (measure, n, 'desc')</code>
+    {% include note.html content="Fact table limit is 10 million (10<sup>7</sup>) rows." %}</td></tr>-->
     <tr>
       <td><code>rank</code></td>
-      <td>Returns the rank for the current row. Identical values are assigned an identical rank. Takes an aggregate as input for the first argument. Use the second argument as either 'asc' | 'desc' to specify ascending or descending order.
-</td>
-      <td><code class="highlighter-rouge">rank (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank (sum (revenue) , ‘desc'</code>
-</td>
-<tr>
-  <td><code>rank_percentile</code></td>
-  <td>Returns the percentile rank for the current row. Identical values are assigned an identical percentile rank. Taken an aggregate as input for the first argument. Use the second argument as either 'asc' | 'desc' to specify ascending or descending order.</td>
-  <td><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'desc' )
-</code> 
-</td>
+      <td>Returns the rank for the current row. Identical values receive an identical rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
+      <td><code class="highlighter-rouge">rank (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank (sum (revenue) , ‘desc' )</code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>rank_percentile</code></td>
+      <td>Returns the percentile rank for the current row. Identical values are assigned an identical percentile rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
+      <td><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'desc' )</code></td>
     </tr>
     <tr>
       <td><code>stddev</code></td>

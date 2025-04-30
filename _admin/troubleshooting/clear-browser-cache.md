@@ -1,6 +1,6 @@
 ---
 title: [Clear the browser cache]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

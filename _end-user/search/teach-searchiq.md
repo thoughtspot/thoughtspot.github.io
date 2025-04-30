@@ -1,11 +1,13 @@
 ---
 title: ["Teach SearchIQ your language"]
-keywords: SearchIQ,answer,introduction,"search bar","natural language",teach,mapping
-last_updated: tbd
+last_updated: 09/23/2019
 summary: "You can teach SearchIQ your language, to make its results more accurate."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+**SearchIQ is in Beta.**
+
+{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you. SearchIQ is only available in English." %}
 
 Sometimes the results from SearchIQ won't be quite what you were expecting. You can easily teach SearchIQ your language as you use it. Over time, it gets smarter about how to interpret terms that don’t come directly from keywords, column names, or data values.
 
@@ -13,7 +15,7 @@ Sometimes the results from SearchIQ won't be quite what you were expecting. You 
 
 To teach SearchIQ your language:
 
-1. After receiving a search result from SearchIQ, you'll notice a section below the search bar that shows the SearchIQ interpretation of what you typed or spoke. If you do not see this, click **Refine your query**.
+1. After receiving a search result from SearchIQ, notice a section under the search bar that shows the SearchIQ interpretation of what you typed or spoke. If you do not see this, click **Refine your query**.
 
    Wherever you see **- -**, those terms were ignored. Where you see a word or words, those are the keywords, column names, or data values as understood by SearchIQ.
 

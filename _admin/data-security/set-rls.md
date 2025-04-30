@@ -1,8 +1,8 @@
 ---
 title: [Set row level security rules]
-keywords: tbd
+
 last_updated: tbd
-tags: [groups,security]
+
 summary: "Explains the process for setting RLS rules."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,6 +1,5 @@
 ---
 title: [Glossary]
-keywords: glossary
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
