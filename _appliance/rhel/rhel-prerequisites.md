@@ -1,20 +1,19 @@
 ---
 title: [RHEL installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 4/6/2021
+last_updated: 4/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 | &#10063; | [1. Set up hosts for the ThoughtSpot cluster](#set-up-hosts) |
 | &#10063; | [2. Partition the hosts](#partition-hosts) |
-| &#10063; | [3. Install RHEL version 7.7 or 7.8 on all hosts](#install-rhel) |
-| &#10063; | [4. Ensure that your Linux kernel is on version 3.10.0-1127.19.1](#linux-kernel-version) |
+| &#10063; | [3. Install RHEL version 7.8 or 7.9 on all hosts](#install-rhel) |
+| &#10063; | [4. Ensure that your Linux kernel is on the correct version](#linux-kernel-version) |
 | &#10063; | [5. Enable the hosts to download RHEL packages](#enable-hosts) |
 | &#10063; | [6. Enable an Ansible Control Server](#enable-ansible) |
 | &#10063; | [7. Disable SELinux](#disable-selinux) |
 | &#10063; | [8. Ensure tmp has permission 777](#tmp-permission) |
 | &#10063; | [9. Remove Defaults requiretty from /etc/sudoers](#etc-sudoers) |
-
 
 {: id="set-up-hosts"}
 ## Set up hosts for the ThoughtSpot cluster
@@ -31,58 +30,30 @@ Set up hosts for the ThoughtSpot cluster on your chosen platform. Please refer t
 {: id="partition-hosts"}
 ## Partition the hosts
 
-Ensure that all ThoughtSpot hosts have the following partitions on the root drive.
+Ensure that all ThoughtSpot hosts meet the following partition and sizing requirements. All drives must be SSDs.
 
-Note that the size of the root drive on appliances is limited to 200GB; the partition requirements are therefore somewhat different when compared to the other environments.
+1. At least 20 GB available on the root drive, for yum packages and system logs.
 
-<table>
-<tbody>
-<tr>
-<th>Platform</th>
-<th>Partition</th>
-<th>Drive type</th>
-<th>Description</th>
-<th>Minimum size</th>
-</tr>
-<tr>
-<th rowspan="2">Hosts in AWS, GCP, Azure, and VMWare&nbsp;</th>
-<td>OS partition</td>
-<td>SSD (root drive)</td>
-<td>Root partition for OS, <code>/tmp</code></td>
-<td>100GB<br />Allocate at least 50GB to <code>/tmp</code></td>
-</tr>
-<tr>
-<td>Export partition</td>
-<td>SSD (root drive)&nbsp;</td>
-<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
-<td>200GB</td>
-</tr>
-<tr>
-<th rowspan="2">Hosts on ThoughtSpot-certified hardware appliances</th>
-<td>OS partition</td>
-<td>SSD (root drive)</td>
-<td>Root partition for OS, <code>/tmp</code></td>
-<td>80GB<br />Allocate at least 50GB to <code>/tmp</code></td>
-</tr>
-<tr>
-<td>Export partition</td>
-<td>SSD (root drive)&nbsp;</td>
-<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
-<td>100GB</td>
-</tr>
-</tbody>
-</table>
+2. At least 50 GB available for `/tmp`.
+
+2. At least 200 GB for ThoughtSpot installation, either on a secondary drive or as a separate partition on the root drive. For ThoughtSpot-certified hardware platforms, [Dell]({{ site.baseurl }}/appliance/hardware/installing-dell.html) and [Super Micro Computer]({{ site.baseurl }}/appliance/hardware/installing-the-smc.html), you must use a secondary drive, since the root drive has a limit of 200 GB.
+
+    {% include note.html content="This drive must be separate from the data drive(s)." %}
 
 {: id="install-rhel"}
 ## Install RHEL on hosts
 
-ThoughtSpot is certified with RHEL versions 7.7 and 7.8; we **do not** support other versions of RHEL, including 8 and 8.1. Install RHEL version 7.7 or 7.8, and ensure that your [linux kernel version](#linux-kernel-version) is 3.10.0-1127.19.1.
+ThoughtSpot is certified with RHEL versions 7.8 and 7.9; we **do not** support other versions of RHEL, including 7.7, 8, and 8.1. Install RHEL version 7.8 or 7.9. On RHEL version 7.8, ensure that your [linux kernel version](#linux-kernel-version) is 3.10.0-1127.19.1. On RHEL version 7.9, use the default linux kernel.
+
+{% include note.html content="When installing ThoughtSpot on online clusters, the Ansible playbook upgrades the OS to RHEL 7.9. The Ansible playbook does <strong><em>not</em></strong> upgrade the OS when installing offline." %}
 
 {: id="linux-kernel-version"}
 ### Linux kernel version
-Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.7 and 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.7 and 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.7 or 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
+For RHEL version 7.8, your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.8 used to come with a Linux kernel of version 3.10.x, which has a bug that causes nodes to reboot unexpectedly. The default Linux kernel version for RHEL 7.8 is now 3.10.0-1127.19.1. However, you may have an older RHEL 7.8, with a Linux kernel of version 3.10.x. You must upgrade to 3.10.0-1127.19.1. If you have trouble upgrading your Linux kernel to version 3.10.0-1127.19.1, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). This is a requirement for ***all*** platforms: appliance, cloud, and VMware.
 
-{% include warning.html content="If your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
+If you are using RHEL version 7.9, use the default Linux kernel.
+
+{% include warning.html content="If you are running RHEL 7.8, and your Linux kernel version is not 3.10.0-1127.19.1, you may run into unexpected node reboots and possible loss of data." %}
 
 {: id="enable-hosts"}
 ## Enable the hosts to download RHEL packages
@@ -91,10 +62,12 @@ Your Linux kernel ***must*** be on version 3.10.0-1127.19.1. RHEL 7.7 and 7.8 us
 **Repositories**
 
 {: id="yum-repositories"}
-- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `pgdg95`, `rhel`, `rhel-optional`, `rhel-extras`.
+- **Yum repositories**: you must enable the following Yum repositories in your cluster:<br>
+    **6.3 and earlier**: `epel`, `nux-desktop`, `pgdg95`, `rhel`, `rhel-optional`, `rhel-extras`.<br>
+    **6.3.1 and later**: `epel`, `pgdg95`, `pgdg11`, `rhel`, `rhel-optional`, `rhel-extras`.
 
 {: id="python-repositories"}
-- **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/).
+- **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/){: target="_blank"}.
 
 {: id="r-repositories"}
 - **R repository**: for R, ensure the machine is able to reach the `CRAN` repository located at [https://cran.rstudio.com/](https://cran.rstudio.com/){: target="_blank"}.

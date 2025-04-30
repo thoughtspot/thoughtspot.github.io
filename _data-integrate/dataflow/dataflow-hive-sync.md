@@ -11,6 +11,8 @@ After using ThoughtSpot DataFlow to establish a connection to a Hive database, y
 
 4. Specify the sync properties for Hive:
 
+   <!--![Enter sync details]({{ site.baseurl }}/images/dataflow-hive-sync.png "Enter sync details")-->
+
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hive-reference.html#dataflow-hive-sync-data-extraction-mode)<br/>Specify the extraction type.
    * [Null value]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hive-reference.html#dataflow-hive-sync-null-value)<br/>Specifies the string literal that should indicate the null value in the extracted data. During the data load the column value matching this string will be loaded as null in the target. For Hadoop Extract only.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hive-reference.html#dataflow-hive-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.

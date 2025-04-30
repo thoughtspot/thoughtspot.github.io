@@ -28,7 +28,7 @@ The JS API works in the following browsers:
 Microsoft introduced a compatibility mode in Internet Explorer 10, which
 displays the page using the version of Internet Explorer that is most
 compatible with that page. Because we do not support any version earlier than 11,
-this feature may break the code.
+this feature may break the code. Note that starting with ThoughtSpot version 6.3.1, ***all*** support for Internet Explorer is deprecated. Prior to ThoughtSpot version 6.3.1, Internet Explorer 11 is supported.
 
 There are two approaches for forcing the Internet Explorer to emulate the most recent version:
 

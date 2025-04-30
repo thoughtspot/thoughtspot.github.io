@@ -1,13 +1,13 @@
 ---
 title: [Search actions within a pinboard]
 summary: Learn about searching within a pinboard.
-last_updated: 11/15/2019
+last_updated: 11/24/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can perform many of the same search actions on individual visualizations within a pinboard as you can within a search. You can interact directly with a visualization of a pinboard to perform ad hoc searches or edit it. These search actions include the following:
 
--   Editing a search - You can edit the original search and reconfigure the answer. Click the three-dot **Actions** button to the upper-right of your visualization and select **Edit**.
+-   Editing a search - You can edit the original search and reconfigure the answer. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} to the upper-right of your visualization and select **Edit**.
 
      ![]({{ site.baseurl }}/images/edit_a_pinboard_visualization.png "Edit a pinboard visualization")
 

@@ -1,7 +1,7 @@
 ---
 title: [tsload connector reference]
 summary: "The tsload connector APIs enable you to load data into ThoughtSpot."
-last_updated: 10/21/2020
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -421,7 +421,7 @@ Cookie: token
 ```
 Status: 200 OK
 Content-Type: text/plain
-Content-Length: xxx
+Content-Length: xx
 ```
 ### Example failure responses
 ```

@@ -2,6 +2,10 @@
 title: [Amazon S3 connection reference]
 summary: Learn about the fields used to create an Amazon S3 connection with ThoughtSpot DataFlow.
 last_updated: 07/16/2020
+redirect_from:
+- /6.3.0/data-integrate/dataflow/dataflow-amazon-s3-reference.html
+- /6.3.0.CU1/data-integrate/dataflow/dataflow-amazon-s3-reference.html
+- /6.3.1.CU1/data-integrate/dataflow/dataflow-amazon-s3-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,8 +21,6 @@ Here is a list of the fields for an Amazon S3 connection in ThoughtSpot DataFlow
 <dlentry id="dataflow-amazon-s3-conn-bucket"><dt>Bucket</dt><dd id="bucket-description">Specify the bucket.<br/>An Amazon S3 bucket name is globally unique, and the namespace is shared by all AWS accounts.</dd><dd id="bucket-required">Mandatory field.</dd><dd id="bucket-example"><strong>Example:</strong><br/>bucket</dd></dlentry>
 <dlentry id="dataflow-amazon-s3-conn-access-key"><dt>Access key</dt><dd id="access-key-description">Specify the access key ID generated when creating AWS security credentials.</dd><dd id="access-key-required">Mandatory field.</dd><dd id="access-key-example"><strong>Example:</strong><br/>access key</dd></dlentry>
 <dlentry id="dataflow-amazon-s3-conn-secret-key"><dt>Secret key</dt><dd id="secret-key-description">Specify the secrete access key generated when creating AWS security credentials.</dd><dd id="secret-key-required">Mandatory field.</dd><dd id="secret-key-example"><strong>Example:</strong><br/>ABCDEFGH245HIJK</dd></dlentry>
-<dl id="dataflow-amazon-s3-connection-properties">
-
 </dl>
 
 ## Sync properties

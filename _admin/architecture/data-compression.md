@@ -18,15 +18,11 @@ In-memory data compression is turned on by default for new clusters on release 6
 ## View your in-memory data compression information
 You can view compression ratios for your overall system, and for each table individually.
 
-To view compression ratios for your overall system, you must have **Admin** privileges. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Overview** from the side navigation bar that appears.
-
-![Admin Console - Overview Pinboard]({{ site.baseurl }}/images/admin-portal-overview-pinboard.png "Admin Console - Overview Pinboard")
-
-You can see the compression ratio from the **Relational Data Cache** panel on the first row of the System Overview Pinboard. Here, the compression ratio is 1:1.34.
+You can see the compression ratio from the **Relational Data Cache** panel under **Data > Usage > Data**. Here, the compression ratio is 1:1.34.
 
 ![Relational Data Cache - Compression Ratio]({{ site.baseurl }}/images/in-memory-data-compression-ratio-overall.png "Relational Data Cache - Compression Ratio")
 
-To view compression ratios for each table individually, navigate to the **Table Information** table. Click on the **Data** tab from the top navigation bar. Select **Usage > Data**.
+To view compression ratios for each table individually, navigate to the **Table Information** table. Click on the **Data** tab from the top navigation bar. Select **Usage > Data**. Scroll down to the **Table Information** table.
 
 You can see the compression ratio from the **Compression Ratio** column, when you scroll all the way to the right on the table. Here, the compression ratio for the first table is 1:100.09.
 

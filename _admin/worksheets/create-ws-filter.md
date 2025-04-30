@@ -1,16 +1,16 @@
 ---
 title: [Add a filter to a worksheet]
 
-last_updated: 8/19/2020
+last_updated: 12/16/2020
 summary: "You can add filters to a worksheet to limit the data users can access from the worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can add filters to a worksheet to limit the data it contains. This is useful when you have underlying tables that store more data than is necessary for the types of analyses the worksheet is intended for. You can also use worksheet filters to provide data security, when you want different groups of users to be able to see different data without relying on row level security.
 
-Note that starting in release 6.2, you can export and import Worksheets with filters [using a flat `TSL` file]({{ site.baseurl }}/admin/worksheets/worksheet-export.html), which allows for optional modification of any Worksheet properties, including filters. If you are on a release prior to 6.2, you can migrate Worksheets using a flat file format, but you cannot migrate Worksheets with filters.
+Note that starting in release 6.2, you can export and import Worksheets with filters [using a flat `TML` file]({{ site.baseurl }}/admin/scriptability/scriptability.html), which allows for optional modification of any Worksheet properties, including filters. If you are on a release prior to 6.2, you can migrate Worksheets using a flat file format, but you cannot migrate Worksheets with filters.
 
-Refer to [Migrate and restore Worksheets]({{ site.baseurl }}/admin/worksheets/worksheet-export.html) to add a filter to a Worksheet through the TSL file.
+Refer to [Migrate and restore objects]({{ site.baseurl }}/admin/scriptability/scriptability.html) to add a filter to a Worksheet through the TML file.
 
 To add a filter to a worksheet through the user interface:
 
@@ -21,8 +21,6 @@ To add a filter to a worksheet through the user interface:
      ![Edit a worksheet]({{ site.baseurl }}/images/worksheet-edit.png "Edit a worksheet")
 
 3. Hover over **Filters** on the left menu and click **+**.
-
-     ![Add a worksheet filter]({{ site.baseurl }}/images/worksheet-edit-filters.png "Add a worksheet filter")
 
 4. Choose the column you want to filter on.
 
@@ -48,4 +46,4 @@ To add an aggregated formula to a Worksheet, follow these steps:
 
     ![Specify conditions for aggregate formula filter]({{ site.baseurl }}/images/aggregate-formula-filter-condition.png "Specify conditions for aggregate formula filter")
 
-4. Click **Done**, and **save** the Worksheet. 
+4. Click **Done**, and **save** the Worksheet.

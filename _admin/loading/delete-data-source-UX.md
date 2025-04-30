@@ -1,7 +1,7 @@
 ---
 title: [Delete a data source]
 
-last_updated: tbd
+last_updated: 11/13/2020
 summary: "How to prepare for and delete a data source using the ThoughtSpot application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -50,8 +50,6 @@ ThoughtSpot checks for dependencies whenever you try to delete a table or worksh
 2. Check the box next to the name of the data source you want to delete.
 
 3. Click the delete icon.
-
-     ![]({{ site.baseurl }}/images/delete_data_worksheet.png "Delete a data source")
 
 4. If you attempt to delete a data source with dependent objects, the operation will be blocked.
 

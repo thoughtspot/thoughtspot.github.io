@@ -11,6 +11,8 @@ After using ThoughtSpot DataFlow to establish a connection to an SQL Server data
 
 4. Specify the sync properties for SQL Server:
 
+   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-sql-server-sync.png "Enter connection details")-->
+
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-sync-data-extraction-mode)<br/>Specify the extraction type.
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Null value]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html#dataflow-sql-server-sync-null-value)<br/>Specifies the string literal that indicates the null value in the extracted data. During the data load, the column value matching this string loads as null in the target.

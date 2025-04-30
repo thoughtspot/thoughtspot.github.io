@@ -1,10 +1,39 @@
-You can view cluster information from the Admin Console. The **System Cluster Pinboard** contains several ThoughtSpot Answers that display latency over time, snapshot status, installed release, node functions, and logs. To view this Pinboard, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Cluster** from the side navigation bar that appears.
+You can view cluster information from the Admin Console. The **System Cluster Pinboard** contains several ThoughtSpot Answers that display capacity, latency over time, snapshot status, installed release, node functions, and logs. To view this Pinboard, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Cluster** from the side navigation bar that appears.
 
 ![Admin Console - Cluster Pinboard]({{ site.baseurl }}/images/admin-portal-cluster-pinboard.png "Admin Console - Cluster Pinboard")
 
-Only the **Average Latency Last 2 Weeks (sec)** panel contains a standard
-ThoughtSpot visualization. The other visualizations rely on internal queries
-that are not accessible. You can, however, **Present** them, or **Copy embed link**.
+Only the **Average Latency Last 2 Weeks (sec)** and **Total Capacity** panels contain a standard ThoughtSpot visualization. The other visualizations rely on internal queries that are not accessible. You can, however, **Present** them, or **Copy embed link**.
+
+{: id="space-utilization"}
+## Total Capacity (GB), Total Used Space (GB) by Daily (Day of Timestamp)
+
+The **Total Capacity (GB), Total Used Space (GB) by Daily (Day of Timestamp)** chart displays your cluster's total capacity and estimated used capacity over time.
+
+![Space utilization]({{ site.baseurl }}/images/admin-portal-overview-pinboard-space-utilization.png "Space Utilization")
+
+The x-axis is by time and the y-axis measures the size in GB. You can zoom in
+and see daily or hourly utilization data. So, in the **Space Utilization** chart
+above, the green line shows the amount of capacity in use in the system, while
+the red line shows the total capacity. An increase in the red line at the end of
+a time period indicates the addition of extra hardware, resulting in increased
+capacity.
+
+The query for this Answer is the following:
+
+
+```
+day of timestamp
+total capacity (gb)
+total used space (gb)
+daily
+last 90 days last 25 hours
+total capacity (gb) > 0
+total used space (gb) > 0
+```
+
+The chart relies on the `TS: Internal Table Wise Capacity WS` worksheet. It
+tracks  total used space, which consists of raw uncompressed data, including
+replication.
 
 ## Cluster Details
 

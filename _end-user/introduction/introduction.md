@@ -1,6 +1,6 @@
 ---
-title: [Introduction to ThoughtSpot]
-summary: This page contains information on navigating and searching data with ThoughtSpot. It assists you with starting new searches, managing your pinboards, and troubleshooting.
+title: [Introduction to the User Guide]
+summary: This ThoughtSpot User Guide contains information on navigating and searching data with ThoughtSpot. It assists you with starting new searches, managing your pinboards, and troubleshooting.
 last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,5 +16,5 @@ To make navigation easy, we organized ThoughtSpot into several sections. You can
 The user icon lets you view your profile, or sign out of ThoughtSpot.
 -   **[Understanding privileges]({{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html)**  
 Your privileges determine the things you can do. ThoughtSpot sets privileges at the group level.
--   **[About stickers]({{ site.baseurl }}/end-user/stickers.html)**  
- You can create stickers to make it easier for people to find data sources and pinboards.
+-   **[About tags]({{ site.baseurl }}/end-user/tags.html)**  
+ You can create tags to make it easier for people to find data sources and pinboards.

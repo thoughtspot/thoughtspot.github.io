@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 6/30/2020
+last_updated: 7/7/2020
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -13,10 +13,18 @@ You may have to make changes to your data to support geo maps. For example, you 
 To account for multiple different geographical entities with the same name, you must be specific within your data. A value of *Washington County* without a state attached to it may result in incorrect or incomplete geo maps.
 
 ## Download the supported geo maps CSV file
-You can download a CSV file containing all the supported values for geo map countries, codes, and subdivisions. Use this file to confirm that your own geographical values are in the right format, and that ThoughtSpot supports them. Download the CSV file <a href="{{ site.baseurl }}/downloads/geomaps-supported-countries-codes-subdivisions-6.2.csv" download="geomaps-supported-countries-codes-subdivisions-6.2.csv" target="_blank">here</a>.
+You can download a CSV file containing all the supported values for geo map countries, codes, and subdivisions. Use this file to confirm that your own geographical values are in the right format, and that ThoughtSpot supports them. Download the CSV file <a href="{{ site.baseurl }}/downloads/geomaps-supported-countries-codes-subdivisions-6.3.csv" download="geomaps-supported-countries-codes-subdivisions-6.3.csv" target="_blank">here</a>.
 
 {% include note.html content="The CSV file contains leading 0s where these zeros are present for ThoughtSpot at the beginning of zip/post code values. However, if you import this file into Excel or another spreadsheet tool, that tool may remove leading zeros, resulting in data that does not match ThoughtSpot's format." %}
 
+## Supported countries and codes
+ThoughtSpot supports mapping of the following countries without subdivisions. To view the countries with associated subdivisions that ThoughtSpot supports, refer to [Supported countries and subdivisions](#subdivisions).
+
+<details><summary><strong>Supported countries and codes (click to expand)</strong></summary>
+{% include content/geo/supported-countries-codes.md %}
+</details>
+
+{: id="subdivisions"}
 ## Supported countries and subdivisions
 ThoughtSpot supports the following countries and their associated subdivisions. Click on the subdivisions to expand.
 <dl>
@@ -146,6 +154,22 @@ ThoughtSpot supports the following countries and their associated subdivisions. 
 </details>
 <details><summary><strong>PMC</strong></summary>
 {% include content/geo/jp-pmc.md %}
+</details>
+</dd>
+</dlentry>
+
+<!--Since 6.3.0-->
+<dlentry>
+<dt>Netherlands</dt>
+<dd>
+<details><summary><strong>Province</strong></summary>
+{% include content/geo/nl-province.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/nl-municipality.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/nl-postcode.md %}
 </details>
 </dd>
 </dlentry>

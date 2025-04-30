@@ -10,8 +10,6 @@ Answer Explorer, ThoughtSpot's AI-guided exploration of Answers and headline met
 
 You can access Answer Explorer from any Answer or headline metric in a Pinboard. Click the **Explore** button that appears when you hover over any Answer or headline.
 
-![The Explore button]({{ site.baseurl }}/images/explore-button.png "The Explore button")
-
 The Answer expands to fill your screen, and the **Explore this data** menu appears, on the **Filters** screen.
 
 ![Explore this data]({{ site.baseurl }}/images/explore-fullscreen.png "Explore this data")
@@ -107,7 +105,7 @@ See [Drill down]({{ site.baseurl }}/complex-search/drill-down.html).
 
 ## Save your new answer
 When you find a valuable insight using Answer Explorer, you may want to save that Answer as it appears, instead of trying to recreate it in the **Search** bar.
-1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
+1. Click the **More** menu icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
 2. Select **copy and edit**.
 3. **Save** your new Answer within ThoughtSpot and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.

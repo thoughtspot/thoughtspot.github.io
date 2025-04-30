@@ -1,6 +1,6 @@
 ---
 title: [Configure NAS for backup storage]
-last_updated: tbd
+last_updated: 11/30/20
 summary: "You can use network attached storage to support backup/restore and data loading."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

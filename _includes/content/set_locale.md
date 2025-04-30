@@ -20,6 +20,7 @@ In addition to American English (*en-US*), ThoughtSpot supports the following lo
 | *de-DE* | Deutsche  |
 | *en-AU* | English (Australia)  |
 | *en-CA* | English (Canada)  |
+| *en-IN* | English (India)   |
 | *en-GB* | English (United Kingdom)  |
 | *en-US* | English (United States)  |
 | *es-US* | Español (Latinoamérica)  |

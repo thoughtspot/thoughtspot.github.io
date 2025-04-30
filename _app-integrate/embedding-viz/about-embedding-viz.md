@@ -1,6 +1,6 @@
 ---
 title: [Understand embedding]
-last_updated: 11/06/2020
+last_updated: 11/18/2019
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

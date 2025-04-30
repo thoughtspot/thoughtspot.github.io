@@ -1,7 +1,7 @@
 ---
 title: [Amazon Linux 2 Deployment Overview]
 summary: "Run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally."
-last_updated: 4/8/2021
+last_updated: 6/8/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

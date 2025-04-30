@@ -11,9 +11,28 @@ Follow these steps:
 
 {% include content/dataflow/add-database-connection.md %}
 
-4. After you select the File **Connection type**, the rest of the connection properties appear.
+4. After you select the **Connection type**, the rest of the connection properties appear.
 
    Depending on your choice of authentication mechanism, you may use different properties.
+<!--
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for HDFS</summary>
+     <p>
+      <img src="../../images/dataflow-hdfs-create.png" alt="Add a connection to HDFS" /></p>
+   </details>
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for HDFS with DFS-HA enabled</summary>
+     <p>
+      <img src="../../images/dataflow-hdfs-dfs-ha-create.png" alt="Add a connection to HDFS with DFS-HA" /></p>
+   </details>
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for HDFS with DFS-HA enabled, and Kerberos authentication</summary>
+     <p>
+      <img src="../../images/dataflow-hdfs-dfs-ha-kerberos-create.png" alt="Add a connection to HDFS with DFS-HA and Kerberos authentication" /></p>
+   </details>-->
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-hdfs-reference.html#dataflow-hdfs-conn-connection-type)<br/>Choose the Google BigQuery connection type.

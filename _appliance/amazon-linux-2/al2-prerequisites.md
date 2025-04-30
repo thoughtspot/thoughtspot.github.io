@@ -1,7 +1,7 @@
 ---
 title: [Amazon Linux 2 installation prerequisites]
 summary: "Prepare the system and ThoughtSpot clusters for installation."
-last_updated: 4/6/2021
+last_updated: 4/8/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -36,30 +36,15 @@ You must install the SSM agent on each node. Refer to [Manually install SSM Agen
 {: id="partition-hosts"}
 ## Partition the hosts
 
-As you create VMs, ensure that all ThoughtSpot hosts have the following partitions on the root drive.
+Ensure that all ThoughtSpot hosts meet the following partition and sizing requirements. All drives must be SSDs.
 
-<table>
-<tbody>
-<tr>
-<th>Partition</th>
-<th>Drive type</th>
-<th>Description</th>
-<th>Minimum size</th>
-</tr>
-<tr>
-<td><strong>OS partition</strong></td>
-<td>SSD (root drive)</td>
-<td>Root partition for OS, <code>/tmp</code></td>
-<td>100GB<br />Allocate at least 50GB to <code>/tmp</code></td>
-</tr>
-<tr>
-<td><strong>Export partition</strong></td>
-<td>SSD (root drive)&nbsp;</td>
-<td>Stores ThoughtSpot objects, hdfs logs, service logs, and so on</td>
-<td>200GB</td>
-</tr>
-</tbody>
-</table>
+1. At least 20 GB available on the root drive, for yum packages and system logs.
+
+2. At least 50 GB available for `/tmp`.
+
+2. At least 200 GB for ThoughtSpot installation, either on a secondary drive or as a separate partition on the root drive.
+
+    {% include note.html content="This drive must be separate from the data drive(s)." %}
 
 {: id="enable-hosts"}
 ## Enable the hosts to download Amazon Linux 2 packages
@@ -68,13 +53,15 @@ As you create VMs, ensure that all ThoughtSpot hosts have the following partitio
 **Repositories**
 
 {: id="yum-repositories"}
-- **Yum repositories**: you must enable the following Yum repositories in your cluster: `epel`, `nux-desktop`, `google-cloud-sdk`, and `azure-cli`.
+- **Yum repositories**: you must enable the following Yum repositories in your cluster:<br>
+    **6.3 and earlier**: `epel`, `nux-desktop`, `google-cloud-sdk`, and `azure-cli`.<br>
+    **6.3.1 and alter**: `epel`, `google-cloud-sdk`, and `azure-cli`.
 
 {: id="python-repositories"}
-- **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/).
+- **Python repository**: for Python, ensure the machine is able to reach the `PyPI` repository located at [https://pypi.python.org/](https://pypi.python.org/){: target="_blank"}.
 
 {: id="r-repositories"}
-- **R repository**: for R, ensure the machine is able to reach the `CRAN` repository located at [cran.rstudio.com](cran.rstudio.com).
+- **R repository**: for R, ensure the machine is able to reach the `CRAN` repository located at [https://cran.rstudio.com/](https://cran.rstudio.com/){: target="_blank"}.
 
 Make sure that you can download Amazon Linux 2 packages to all hosts, either from the [official package repositories](#official-repositories), or from a [mirror repository](#mirror-repositories) owned and managed by your organization.
 

@@ -1,20 +1,15 @@
 ---
 title: [Select chart color palettes]
 summary: You can change the color palettes that are used to create your charts.
-last_updated: 3/12/2020
+last_updated: 12/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Although it is suggested that you stick with the default settings, it is possible to create your own appealing color palettes if done correctly.
 
 To select the chart color palettes:
-1. If you are on release 6.2.1 and later, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
-
-    If you are on release 6.2, navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`.
-
-    If you are on release 6.1.1 or earlier, navigate to the Style Customization page by selecting **Admin** from the top navigation bar, then clicking **Style Customization**.
-
-    If this page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
+1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears.<br>
+If the Style Customization option is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable it.
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
@@ -27,8 +22,6 @@ To select the chart color palettes:
     All of the colors in the primary color palette are used in a chart before any from the secondary palette are used. Therefore, the primary palette usually consists of primary colors.
 
 3. Click the color you would like to change in the **secondary** color palette, and use the color menu to choose your new color. You can also add a HEX color number directly.
-
-     ![Change the secondary color palette]({{ site.baseurl }}/images/stylecustomization-secondary-color.png "Change the secondary color palette")
 
     The colors from the secondary color palette are used after all of the colors have been exhausted from the primary palette. Therefore, the secondary palette usually consists of secondary colors.
 

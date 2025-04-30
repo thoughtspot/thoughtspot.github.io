@@ -2,7 +2,7 @@
 title: [Edit the system-wide data model]
 
 
-last_updated: tbd
+last_updated: 1/12/2021
 summary: "Edit the modeling file to edit your data settings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -52,8 +52,6 @@ To obtain the model file:
 
 2. Click the **Data** tab in the top navigation bar.
 
-    ![]({{ site.baseurl }}/images/data-tab.png)
-
 3. Click **Settings**, then click **Business Data Model**.
 
 4. Click **Download**.
@@ -99,9 +97,6 @@ ThoughtSpot before the changes will take effect. To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
 2. Click **Data**, on the top navigation bar.
-
-    ![]({{ site.baseurl }}/images/data-tab.png)
-
 3. Click **Settings**, then click **Business Data Model**.
 4. Click **Browse your files** to upload the model.xls file, or drag and drop it in the zone.
 

@@ -11,6 +11,8 @@ After using ThoughtSpot DataFlow to establish a connection to an Oracle database
 
 4. Specify the sync properties for Oracle:
 
+   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-oracle-sync.png "Enter connection details")-->
+
    * [Data extraction mode]({{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-reference.html#dataflow-oracle-sync-data-extraction-mode)<br/>Specify the extraction type.
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-reference.html#dataflow-oracle-sync-column-delimiter)<br/>Specify the column delimiter character.
    * [Null value]({{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-reference.html#dataflow-oracle-sync-null-value)<br/>Specifies the string literal that should indicate the null value in the extracted data. During the data load the column value matching this string will be loaded as null in the target.

@@ -4,7 +4,7 @@ summary: "After you have successfully loaded your tables, you can check on the s
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can manage your new data sources by clicking on the name of your source on the **Data Sources** page. You can have up to 50 scheduled jobs on your cluster at time. Contact ThoughtSpot Support if you'd like to increase this limit.
+You can manage your new data sources by clicking on the name of your source on the **Data Sources** page. You can have up to 50 scheduled jobs on your cluster at time. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) if you'd like to increase this limit.
 
  ![]({{ site.baseurl }}/images/data_sources_management_view.png "Data sources management view")
 

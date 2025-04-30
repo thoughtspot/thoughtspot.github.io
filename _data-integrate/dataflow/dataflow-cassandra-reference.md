@@ -2,6 +2,10 @@
 title: [Cassandra connection reference]
 summary: Learn about the fields used to create a Cassandra connection with ThoughtSpot DataFlow.
 last_updated: 07/03/2020
+redirect_from:
+- /6.3.0/data-integrate/dataflow/dataflow-cassandra-reference.html
+- /6.3.0.CU1/data-integrate/dataflow/dataflow-cassandra-reference.html
+- /6.3.1.CU1/data-integrate/dataflow/dataflow-cassandra-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

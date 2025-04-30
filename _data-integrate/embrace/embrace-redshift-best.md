@@ -11,7 +11,7 @@ We recommend configuring the following settings when creating Embrace connection
 - Turn on ‘Search on Enter’ to reduce the number of queries run against Redshift.
 - Turn off ‘Auto Indexing’, and manually set the Index Type on columns that would be helpful when searching.
 
-Contact ThoughtSpot support to do this configuration.
+[Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to do this configuration.
 
 ## Optimizing query performance
 

@@ -1,8 +1,8 @@
 ---
 title: [Configure trusted authentication]
 summary: "Learn how to configure trusted authentication."
-last_updated: 11/07/2020
-toc: true
+last_updated: 05/03/2020
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

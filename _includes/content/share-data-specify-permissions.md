@@ -11,5 +11,3 @@
 9. Click **Done**.
 
 10. The **Share settings updated** notification appears on the bottom of your screen.
-
-    ![Share settings updated]({{ site.baseurl }}/images/sharing-settingsupdated.png "Share settings updated")

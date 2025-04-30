@@ -1,5 +1,5 @@
 ---
-title: [Deployment Overview]
+title: [Overview]
 summary: "You can install ThoughtSpot on a cloud provider, VMware, or on a hardware appliance."
 last_updated: 1/13/2019
 sidebar: mydoc_sidebar

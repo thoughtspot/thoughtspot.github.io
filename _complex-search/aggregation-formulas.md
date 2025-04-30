@@ -1,7 +1,7 @@
 ---
 title: [Overview of aggregate formulas]
 summary: Learn about aggregate formulas.
-last_updated: 8/19/2020
+last_updated: 11/23/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -32,7 +32,7 @@ group of rows. Some examples of functions you find in aggregation formulas are:
 You can tell which formulas are aggregation formulas by looking at the function
 list in the **Formula Assistant**. Aggregation functions have their own section.
 
- ![]({{ site.baseurl }}/images/formula_asst_aggregate.png "Aggregation formulas in the Formula Assistant")
+ ![]({{ site.baseurl }}/images/formula-asst-aggregate.png "Aggregation formulas in the Formula Assistant")
 
 ## Advanced aggregation functions
 

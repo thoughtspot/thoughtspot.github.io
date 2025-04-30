@@ -1,7 +1,7 @@
 ---
 title: [Line charts]
 
-last_updated: tbd
+last_updated: 11/30/2020
 summary: "Line charts are good at showing trends over intervals of time."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

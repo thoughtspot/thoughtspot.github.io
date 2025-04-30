@@ -1,25 +1,20 @@
 ---
 title: [Introduction to monitoring]
 summary: "Learn how to monitor your system."
-last_updated: 11/18/2019
+last_updated: 10/22/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-System monitoring tools in ThoughtSpot include an **Admin > System Health** page and system logs. Additionally, ThoughtSpot provides several worksheets and
+System monitoring tools in ThoughtSpot include several Pinboards in the **Admin Console** and system logs. Additionally, ThoughtSpot provides several worksheets and
 out-of-the-box system monitoring pinboards. From these worksheets, you can
 create your own custom visualizations and pinboards.  This page introduces these features and directs you towards more detailed information.
 
-## System Health center
+## Admin Console
 
-The ThoughtSpot application includes a **System Health** center, for easy monitoring
-of usage, alerts, events and general cluster health. You view the System Health
-Center by choosing the **Admin** icon and then selecting **System Health**.
+The ThoughtSpot application includes an **Admin Console** center, where you can easily monitor usage, alerts, events and general cluster health. Navigate to the Admin Console by selecting **Admin** from the top navigation bar.
 
-![]({{ site.baseurl }}/images/control_center_overview.png "System Health center: Overview")
-
-Only users with administrative privileges can view the **System Health** center.
-However, administrative users can present to others the information that
-displays in the **System Health** center.
+Only users with administrative privileges can view the **Admin Console**.
+However, administrative users can present the information in the **Admin Console** to others
 
 Administrators can also create their own, custom boards that reflect system data
 in ways that are meaningful to specific departments or groups. For more
@@ -31,6 +26,8 @@ information, see the following documentation:
 * [Alerts and Events board]({{ site.baseurl }}/admin/system-monitor/cluster-manager.html)
 * [System worksheets]({{ site.baseurl }}/admin/system-monitor/worksheets.html)
 * [System pinboards]({{ site.baseurl }}/admin/system-monitor/monitor-pinboards.html)
+* [Falcon monitoring Pinboards]({{ site.baseurl }}/admin/system-monitor/falcon-monitor.html)
+* [Performance Tracking Pinboard]({{ site.baseurl }}/admin/system-monitor/performance-tracking.html)
 
 Much of the data presented by these boards is also available through [`tscli` commands]({{ site.baseurl }}/reference/tscli-command-ref.html).
 

@@ -8,7 +8,7 @@ To use scripting before or after the sync, follow these steps:
 
 4. Specify the following information:
 
-    <dl id="set-sync-scripts">
+   <dl id="set-sync-scripts">
       <dlentry id="set-sync-file-trigger">
          <dt>Wait for file</dt>
          <dd>Specify the fully-qualified name of the file (directory path and file name) that must be present before sync can start.</dd></dlentry>

@@ -11,8 +11,6 @@ To view the user actions, click your user icon on the top right corner of the pa
 
 Click **Profile** to navigate to your profile, where you can change your icon, password, email, locale, and other  preferences.  
 
-![Click Profile]({{ site.baseurl }}/images/user-profile.png "Click Profile")
-
 Notice that you can now see the **My Profile** interface.
 
 {: id="profile-picture" }
@@ -34,9 +32,6 @@ You can also make this change within the **User Profile**, under **Information**
 
 To change your email, navigate to **My Profile**. Under **Information**, enter an alternate email, and click Add.
 
-![Update email]({{ site.baseurl }}/images/user-profile-email.png "Update email")
-
-
 {: id="language" }
 ## Change language and data format settings ##
 {% include content/set_locale.md %}
@@ -57,8 +52,6 @@ When you are relatively new to using ThoughtSpot, we help you to become producti
 
 Whenever you need a refresh, navigate to **My Profile**. Under **Preferences**, see the **New user onboarding** option. Click **Revisit**, and ThoughtSpot guides you through onboarding again.
 
-![]({{ site.baseurl }}/images/onboarding-revisit.png "Revisit onboarding")
-
 {: id="password" }
 ## Change Password ##
 
@@ -71,11 +64,7 @@ When you need to change your password, navigate to **My Profile**, and under **P
 
 Click **Update**.
 
-  ![]({{ site.baseurl }}/images/update-password.png "Update password")
-
 {: id="sign-out" }
 ## Signing out ##
 
 To sign out of your ThoughtSpot account, click the user profile in the top right of the interface, and choose **Sign out**.
-
-![Sign out]({{ site.baseurl }}/images/user-sign-out.png "Sign out")

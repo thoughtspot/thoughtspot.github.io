@@ -109,7 +109,7 @@ For example:
 `revenue region last 10 years vs all`
 
 Try this syntax on using the
-[Superstore]({{site.baseurl}}/downloads/Superstore.csv) example data. The first
+[superstore]({{site.baseurl}}/downloads/superstore.csv) example data. The first
 `vs` example compares two segments with a single search token:
 
 ![]({{ site.baseurl }}/images/vs-ex-1.png)

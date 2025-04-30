@@ -9,7 +9,6 @@ You can add a connection to an SAP Adaptive Server Enterprise database using Tho
 
 Follow these steps:
 
-
 {% include content/dataflow/add-database-connection.md %}
 
 4. After you select the SAP Adaptive Server Enterprise **Connection type**, the rest of the connection properties appear.

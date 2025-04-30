@@ -2,7 +2,7 @@
 title: [Cumulative functions]
 
 
-last_updated: tbd
+last_updated: 11/23/2020
 toc: false
 summary: "Cumulative formulas are aggregate formulas."
 sidebar: mydoc_sidebar
@@ -64,7 +64,7 @@ running total. To use the cumulative function in a search:
 
    ![]({{ site.baseurl }}/images/aggregation_answer.png "Aggregation Answer example")
 
-2. In the upper-right side of the table, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
+2. In the upper-right side of the table, click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
 
    ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
 

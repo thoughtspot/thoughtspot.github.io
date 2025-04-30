@@ -31,6 +31,7 @@ To change the primary key of a table:
     ```
 
     Dropping a primary key can impact existing Worksheets, Answers, and Pinboards. The system warns you if dropping a primary key impacts other objects.
+[//]: # (To continue, use the `--allow_unsafe` flag.)
 
 4. Add a new primary key, if desired:
 
@@ -61,6 +62,7 @@ To change the relationship between tables:
 
    Before dropping a relationship TQL checks for and then warns of any dependent
    objects.
+[//]: # (To continue with the drop any way, use the `--allow_unsafe` flag.)
 
    The following examples illustrate several different types of drop operations.
 

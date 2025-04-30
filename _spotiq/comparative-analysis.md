@@ -1,7 +1,7 @@
 ---
 title: [Comparative Analysis]
 summary: "With SpotIQ comparative analysis, you can compare two data points for complex measures."
-last_updated: 6/2/2021
+last_updated: 7/21/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -45,14 +45,12 @@ Notice that ThoughtSpot saves the results of SpotIQ analysis for 24 hours.
 To view the results of your analysis, follow these steps:  
 
 1. On the top navigation bar, click **SpotIQ**.  
-   ![]({{ site.baseurl }}/images/click-spotiq.png "Click SpotIQ")
 
 2. Select the **Analyses** tab.  
 
    Your analysis may be in progress. Wait until its **Status** changes to _Done_.
 
     Click _View Results_ to open the pinboard.
-    ![]({{ site.baseurl }}/images/comparative-analysis-5.png "Opening the Analysis Results")
 
 3. In the report, SpotIQ generates a Pinboard with insights that compare the two selected points, grouped by the columns you chose for analysis.
 
@@ -80,7 +78,7 @@ Under **Select Algorithms**, select the name of the algorithm. You may have seve
 
 Under **Customize algorithm for comparative analysis**, adjust the options. In this example, the algorithm parameters are __Max Diff Elements__, __Max Fraction__, __Min Abs Change Ratio__, and __Min Change Ratio__.
 
-![]({{ site.baseurl }}/images/comparative-analysis-4.png "Advanced analysis Options")
+![]({{ site.baseurl }}/images/comparative-analysis-advanced.png "Advanced analysis Options")
 
 On the SpotIQ Feedback tab, you can see all SpotIQ feedback gave. Insights that you disliked are pushed to the bottom of the list.
 

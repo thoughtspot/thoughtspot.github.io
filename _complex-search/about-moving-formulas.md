@@ -68,6 +68,8 @@ This example  demonstrates using the `moving_average` formula. To use the moving
 
 2. In the upper-right side of the table, click the **more options** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Add formula**.
 
+   ![]({{ site.baseurl }}/images/create_formula_in_answer.png "Create a new formula in an answer")
+
 3. Enter the moving_average formula, providing a measure, a window, and one or more attributes.
 
     The example will return the average of revenue, within the commit date window size of 3. The window includes the previous, current, and next rows. The attributes are the ordering columns used to compute the moving average. The window is (current - Num1...Current + Num2) with both end points being included in the window. For example, "1,1" will have a window size of 3. To see periods in the past, use a negative number for the second endpoint, as in the example "moving_average(sales, 1, -1, date)".

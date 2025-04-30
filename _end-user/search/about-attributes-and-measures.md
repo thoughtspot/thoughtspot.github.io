@@ -22,7 +22,7 @@ After, or while completing a search, you can see how ThoughtSpot displayed the
 answer. Click the **Query details** button on the right-hand side of the screen
 to open the **Query details** panel.
 
-![]({{ site.baseurl }}/images/what_am_i_looking_at.png "Query details")
+![]({{ site.baseurl }}/images/query-details.png "Query details")
 
 This panel shows the measures that ThoughtSpot computed, for each combination of
 attributes. Choose **Query visualizer** to see search filters and how the tables

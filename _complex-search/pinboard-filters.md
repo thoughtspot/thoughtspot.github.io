@@ -1,7 +1,7 @@
 ---
 title: [Pinboard filters]
 summary: "You can apply filters to pinboards as well as tables and charts."
-last_updated: 11/18/2019
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,6 +25,8 @@ Note that pinboard filters only apply to the tables and charts that are based on
 worksheets. If a pinboard also includes tables and charts that were created from
 underlying tables or on user uploaded data, the filters don’t apply to them.
 
+To create one filter that filters visualizations based on multiple Worksheets, you can link the Worksheet columns, at the Pinboard level. Refer to [Linked Pinboard filters]({{ site.baseurl }}/complex-search/linked-filters.html).
+
 ## Create a pinboard filter
 
 You can create a filter in the pinboard view for any pinboard. This allows you
@@ -34,9 +36,9 @@ one place.
 Here is an example that shows you how to add a single filter to a pinboard. To
 create a pinboard filter:
 
-1. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
+1. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
 
-     ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
+     ![]({{ site.baseurl }}/images/add-pinboard-filters.png "Add filters under Actions")
 
 2. In the populated columns menu, click the **Add filter** icon next to the column you would like to filter on.
 
@@ -56,6 +58,19 @@ create a pinboard filter:
   filter applied to every object in the pinboard that was created from a
   worksheet. Pinboard filters do not apply to tables and charts built directly on
   top of base tables.
+
+## Apply filters to specific visualizations
+You can apply filters to only certain visualizations that you specify. To specify the visualizations that a Pinboard filter should apply to, follow these steps, or refer to [Selective Pinboard filters]({{ site.baseurl }}/complex-search/selective-filters.html):
+
+1. Select the **More** menu icon ![]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} at the top right, and select **Configure filters**.
+
+    ![Configure filters]({{ site.baseurl }}/images/configure-filters.png "Configure filters")
+
+2. In the **Configure filters** modal, choose the filter you would like to update from the side menu.
+
+3. Scroll down to **Applicable to**. You can select the **All** option, or only choose certain visualizations. You can also search for a visualization.
+
+    ![Specify filtered visualizations]({{ site.baseurl }}/images/filter-applicable-to.png "Specify filtered visualizations")
 
 ## Edit a filter from the answer
 

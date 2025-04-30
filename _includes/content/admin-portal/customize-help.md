@@ -1,3 +1,5 @@
+{% include note.html content="The new Information Center is not customizable. If you have the new Information Center and would like to use the customizable Help menu described in this article, contact ThoughtSpot Support." %}
+
 You can customize the Help menu for your ThoughtSpot application to tailor it to your
 organization. When you configure these Help settings, you set system-wide defaults for all your
 users.
@@ -6,7 +8,7 @@ When your ThoughtSpot users click the Help icon, they see a list of links.
 
 ![The help dropdown menu]({{ site.baseurl }}/images/gettingstarted-help-menu.png "The help dropdown menu")
 
-If a user clicks on the **help** link, the customizable help menu opens:
+If a user clicks on the **Help** link, the customizable help menu opens:
 
 ![The customizable help menu]({{ site.baseurl }}/images/gettingstarted-helpbox.png "The customizable help menu")
 
@@ -21,11 +23,9 @@ To customize the Help menu, navigate to the Admin Console by clicking on the **A
 
 To add a new link, select **Add custom menu item** below the list of existing links.
 
-![Add a new link]({{ site.baseurl }}/images/admin-portal-help-customization-add.png "Add a new link")
+![Add a new link]({{ site.baseurl }}/images/admin-portal-help-customization-add-link.png "Add a new link")
 
 Specify the name of the link, the URL, and optionally add a custom icon. Then click **Confirm**.
-
-![Add a new link]({{ site.baseurl }}/images/admin-portal-help-customization-add-link.png "Add a new link")
 
 You can also edit existing links, change icons, or remove items from the help menu altogether.
 

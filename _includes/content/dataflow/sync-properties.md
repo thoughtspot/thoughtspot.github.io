@@ -9,9 +9,7 @@ To set the sync properties, follow these steps:
    <dl id="set-sync-properties">
      <dlentry id="set-sync-properties-condition">
        <dt>Condition</dt>
-       <dd>Add the condition that restricts the import of new rows into the ThoughtSpot table.
-         <br/>Optional field.<br/>For example, to import rows of data from yesterday, enter the expression <code>DATE > ADD_DAYS (TODAY(),-1)</code>.
-         <br/>To find the correct functions for the condition, click <strong>Expression editor</strong>, use it to create a valid expression, and click <strong>OK</strong>.</dd></dlentry>
+       <dd>Add the condition that restricts the import of new rows into the ThoughtSpot table.<br/>Optional field.<br/>For example, to import rows of data from yesterday, enter the expression <code>DATE > ADD_DAYS (TODAY(),-1)</code>.<br/>To find the correct functions for the condition, click <strong>Expression editor</strong>, use it to create a valid expression, and click <strong>OK</strong>.</dd></dlentry>
      <dlentry id="set-sync-properties-mode">
           <dt>Sync mode</dt>
           <dd>Choose the sync mode, either <strong>Append</strong> or <strong>Overwrite</strong>.<br/>Mandatory field.    

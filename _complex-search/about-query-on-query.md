@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include access.html content="Only users with the <strong>Can administrate ThoughtSpot</strong> or the <strong>Can manage data</strong> privilege can create views and link them." %}
+{% include access.html content="Only users with the <strong>Can administer ThoughtSpot</strong> or the <strong>Can manage data</strong> privilege can create views and link them." %}
 
 {% include important.html content="Views do not support row level security (RLS), so all users of a view can see all the data it contains." %}
 

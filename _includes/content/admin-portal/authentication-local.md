@@ -10,10 +10,6 @@ Navigate to the Admin Console by clicking on the **Admin** tab from the top navi
 
 Click the **Edit** button in the top middle of the screen.
 
-![Edit local authentication]({{ site.baseurl }}/images/admin-portal-local-edit.png "Edit local authentication")
-
 Select **Enable** or **Disable**, and click **OK**.
-
-![Select enable or disable]({{ site.baseurl }}/images/admin-portal-local-enable.png "Select enable or disable")
 
 Note that you cannot disable local authentication until you configure [Active Directory]({{ site.baseurl}}/admin/admin-portal/authentication-active-directory.html) or [SAML authentication]({{ site.baseurl }}/admin/admin-portal/authentication-saml.html).

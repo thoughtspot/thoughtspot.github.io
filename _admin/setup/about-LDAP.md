@@ -2,7 +2,7 @@
 title: [About LDAP integration]
 
 
-last_updated: tbd
+last_updated: 10/30/2020
 summary: "You authenticate users against an LDAP server. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,6 +11,8 @@ Some companies use LDAP (Lightweight Directory Access Protocol) to manage user a
 
 ThoughtSpot supports both anonymous and non-anonymous LDAP integration. Non-anonymous LDAP binding is more rigorous than anonymous authentication, but it should help you track what your users are querying and keep a log trace for auditing purposes.
 
-If you have been using ThoughtSpot with users you created manually, and you now want to transition to LDAP, please contact ThoughtSpot Support. They can assist you in migrating existing users to their LDAP equivalents.
+If you have been using ThoughtSpot with users you created manually, and you now want to transition to LDAP, please [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html). They can assist you in migrating existing users to their LDAP equivalents.
 
 ThoughtSpot supports LDAP with [Active Directory](LDAP-config-AD.html#).
+
+On ThoughtSpot version 6.3 and later, and on version 6.0.5, ThoughtSpot also integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.

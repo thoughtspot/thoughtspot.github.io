@@ -1,6 +1,6 @@
 ---
 title: [Hide a column or define a synonym]
-last_updated: tbd
+last_updated: 7/8/2021
 summary: "Hide a column from users or make it easier to find by assigning a synonym."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -24,7 +24,8 @@ you don’t want to expose to the users.
 
 When you hide a worksheet, table, or view column, you only hide it from users without *edit* privileges on the object. Administrators and users with edit privileges on the object can still see and interact with the hidden column. Users without edit privileges for the object cannot see or interact with the hidden column.
 
-To hide a column, change the **HIDDEN** (UI)/**Hide** (model file) setting. By default, all columns in a data source appear in ThoughtSpot. To hide these
+To hide a column, change the **HIDDEN** (UI)/**Hide** (model file) setting. By
+default, all columns in a data source appear in ThoughtSpot. To hide these
 columns, set the **HIDDEN** setting to `YES`.
 
 1. Find the **HIDDEN** (UI)/**Hide** (model file) setting for a column.

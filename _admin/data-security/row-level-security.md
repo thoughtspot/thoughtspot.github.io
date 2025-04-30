@@ -90,7 +90,7 @@ Then, you set a **Row security** on the `vendor-purchase` table as follows:
 
 Only users in `Starbucks` group see `starbucks` data and so forth. Rules ignore
 case inconsistencies and spaces are evaluated so `round table` in the data
-matches the `Round table` group but not a group named `RoundTable`.
+matches the `Round table` group but not a group named `RoundTable` .
 
 Rules can be simple or they can incorporate logic such as `if/then` rules. For
 example, vendors should see their own data but your accounts payable group needs

@@ -1,7 +1,7 @@
 ---
 title: [Create and use worksheets]
 
-last_updated: 3/20/2020
+last_updated: 12/9/2020
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,7 +28,7 @@ The process for creating a worksheet is:
 
 1.  Decide which tables to use for the worksheet.
 
-2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another cluster, you can migrate it [using a flat `TSL` file]({{ site.baseurl }}/admin/worksheets/worksheet-export.html#worksheet-migrate).
+2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another cluster, you can migrate it [using a flat `TML` file]({{ site.baseurl }}/admin/scriptability/scriptability.html).
 
 3.  Add sources (tables) to the worksheet.
 
@@ -55,7 +55,7 @@ To create a new worksheet:
 
 1. Click **Data**, on the top navigation bar.
 
-2. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
+2. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Create worksheet**.
 
     ![Create a worksheet]({{ site.baseurl }}/images/worksheet-create.png "Create a worksheet")
 
@@ -72,7 +72,7 @@ To add sources to your worksheet, follow these steps. The worksheet creation UI 
 
     ![Add sources to your worksheet]({{ site.baseurl }}/images/worksheet-create-add-sources.png "Add sources to your worksheet")
 
-2. Check the box next to each of the sources you want to include in the worksheet. You can search for specific Views, imported data, or tables. You can also select every data source that has a specific sticker, like **Retail**.
+2. Check the box next to each of the sources you want to include in the worksheet. You can search for specific Views, imported data, or tables. You can also select every data source that has a specific tag, like **Retail**.
 
     Note that the list of sources only shows the data sources on which you have view or edit privileges.
 
@@ -98,7 +98,7 @@ To add sources to your worksheet, follow these steps. The worksheet creation UI 
 
 10.  (Optional) [Create worksheet filters](create-ws-filter.html#).
 
-11. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+11. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
 12. In the Save Worksheet window, enter a name and description for your worksheet and click **SAVE**.
 
@@ -108,9 +108,7 @@ To add sources to your worksheet, follow these steps. The worksheet creation UI 
 
      ![Add a prefix to column names]({{ site.baseurl }}/images/worksheet-create-add-prefix.png "Add a prefix to column names")
 
-15. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
-
-    ![Save your worksheet]({{ site.baseurl }}/images/worksheet-create-save.png "Save your worksheet")
+15. Click the **More** menu icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
 16.  [Share your worksheet]({{ site.baseurl }}/admin/data-security/share-worksheets.html#), if you want other people to be able to use it.
 

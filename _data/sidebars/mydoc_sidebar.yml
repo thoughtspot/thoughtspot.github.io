@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Software
-  docversion: 6.2
-  version: 6.2 Guides
+  docversion: 6.3
+#  version: 6.3
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -29,9 +29,16 @@ entries:
     - title: Fixed issues
       url: /release/fixed.html
       output: web,rnotes
+    - title: Accessibility
+      url: /release/accessibility.html
+      output: web,rnotes
+    - title: Deprecation announcements
+      url: /release/deprecation.html
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
       output: web,rnotes
+
 #    - title: PDF Guides
 #      url: /release/pdfs.html
 #      output: web
@@ -53,14 +60,11 @@ entries:
       - title: ThoughtSpot browser access
         url: /end-user/accessing.html
         output: web,ugBk
-      - title: Information Center
-        url: /end-user/introduction/getting-started.html
-        output: web,ugBk
       - title: Your user preferences
         url: /end-user/introduction/about-user.html
         output: web,ugBk
-      - title: Use stickers to organize
-        url: /end-user/stickers.html
+      - title: Use tags to organize
+        url: /end-user/tags.html
         output: web,ugBk
       - levelThreeTitle: Privileges
         output: web,ugBk
@@ -101,12 +105,6 @@ entries:
         - title: Work with Answers
           url: /end-user/search/work-with-answers.html
           output: web,ugBk
-        - title: Migrate or restore Answers
-          url: /admin/scriptability/scriptability-answer.html
-          output: web,admBk
-        - title: Answer TSL specification
-          url: /admin/scriptability/tsl-answer.html
-          output: web,admBk
         - title: Ask an Expert
           url: /end-user/search/ask-an-expert.html
           output: web,ugBk
@@ -356,8 +354,17 @@ entries:
         - title: Edit a pinboard
           url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
           output: web,ugBk
+        - title: Delete a visualization
+          url: /end-user/pinboards/delete-a-visualization.html
+          output: web,ugBk
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
+          output: web,ugBk
+        - title: Linked Pinboard filters
+          url: /complex-search/linked-filters.html
+          output: web,ugBk
+        - title: Selective Pinboard filters
+          url: /complex-search/selective-filters.html
           output: web,ugBk
         - title: Answer Explorer
           url: /end-user/pinboards/answer-explorer.html
@@ -383,12 +390,6 @@ entries:
         - title: Download as PDF
           url: /end-user/pinboards/download-pinboard-pdf.html
           output: web,ugBk
-        - title: Migrate or restore Pinboards
-          url: /admin/scriptability/scriptability-pinboard.html
-          output: web,admBk
-        - title: Pinboard TSL specification
-          url: /admin/scriptability/tsl-pinboard.html
-          output: web,admBk
     - levelTwoTitle: Use custom R scripts
       output: web,ugBk
       levelTwoItems:
@@ -551,7 +552,7 @@ entries:
       - title: Customize actions
         url: /admin/admin-portal/customize-actions-menu.html
         output: web,admBk
-      - title: Style customization
+      - title: Style Customization
         url: /admin/admin-portal/style-customization.html
         output: web,admBk
       - title: Configure NAS for backup storage
@@ -560,14 +561,14 @@ entries:
       - title: Manage and create snapshots
         url: /admin/admin-portal/snapshot-manage.html
         output: web,admBk
-      - title: System Overview Pinboard
-        url: /admin/admin-portal/system-overview-pinboard.html
-        output: web,admBk
       - title: System Cluster Pinboard
         url: /admin/admin-portal/system-cluster-pinboard.html
         output: web,admBk
       - title: System Alerts Pinboard
         url: /admin/admin-portal/system-alerts-pinboard.html
+        output: web,admBk
+      - title: User Adoption Pinboard
+        url: /admin/admin-portal/user-adoption-pinboard.html
         output: web,admBk
       - title: Available cluster updates
         url: /admin/admin-portal/available-update.html
@@ -905,8 +906,8 @@ entries:
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
-        - title: Use stickers
-          url: /admin/data-modeling/stickers-concept.html
+        - title: Use tags
+          url: /admin/data-modeling/tags-concept.html
           output: web,admBk
     - levelTwoTitle: "Worksheets: improve Search"
       output: web,admBk
@@ -937,12 +938,6 @@ entries:
         output: web,admBk
       - title: Delete Worksheets or Tables
         url: /admin/worksheets/delete-worksheet.html
-        output: web,admBk
-      - title: Migrate or restore Worksheets
-        url: /admin/worksheets/worksheet-export.html
-        output: web,admBk
-      - title: Worksheet TSL specification
-        url: /admin/worksheets/yaml-worksheet.html
         output: web,admBk
     - levelTwoTitle: Work with views
       output: web,admBk
@@ -978,25 +973,13 @@ entries:
       output: web,admBk
       levelTwoItems:
       - title: Overview
+        url: /admin/scriptability/scriptability-overview.html
+        output: web,admBk
+      - title: Migrate or restore objects
         url: /admin/scriptability/scriptability.html
         output: web,admBk
-      - title: Migrate or restore Worksheets
-        url: /admin/worksheets/worksheet-export.html
-        output: web,admBk
-      - title: Worksheet TSL specification
-        url: /admin/worksheets/yaml-worksheet.html
-        output: web,admBk
-      - title: Migrate or restore Pinboards
-        url: /admin/scriptability/scriptability-pinboard.html
-        output: web,admBk
-      - title: Pinboard TSL specification
-        url: /admin/scriptability/tsl-pinboard.html
-        output: web,admBk
-      - title: Migrate or restore Answers
-        url: /admin/scriptability/scriptability-answer.html
-        output: web,admBk
-      - title: Answer TSL specification
-        url: /admin/scriptability/tsl-answer.html
+      - title: ThoughtSpot Modeling Language
+        url: /admin/scriptability/tml.html
         output: web,admBk
       - title: SpotApps
         url: /admin/scriptability/app-templates.html
@@ -1043,7 +1026,7 @@ entries:
       - title: Introduction to monitoring
         url: /admin/system-monitor/introduction.html
         output: web,admBk
-      - title: Overview board
+      - title: System Information and Usage Pinboard
         url: /admin/system-monitor/overview.html
         output: web,admBk
       - title: Data board
@@ -1063,6 +1046,9 @@ entries:
         output: web,admBk
       - title: Falcon monitoring Pinboards
         url: /admin/system-monitor/falcon-monitor.html
+        output: web,admBk
+      - title: Performance Tracking Pinboard
+        url: /admin/system-monitor/performance-tracking.html
         output: web,admBk
     - levelTwoTitle: Troubleshooting
       output: web,admBk
@@ -1740,6 +1726,9 @@ entries:
     - title: Network ports
       url: /appliance/ports.html
       output: web,appQs
+    - title: Consumption-based pricing
+      url: /appliance/consumption-pricing.html
+      output: web,appQs
     - title: Contact support
       url: /appliance/contact.html
       output: web,appQs
@@ -1760,6 +1749,9 @@ entries:
         output: web,embraceGd
       - title: Modify a connection
         url: /data-integrate/embrace/embrace-snowflake-modify.html
+        output: web,embraceGd
+      - title: Config OAuth
+        url: /data-integrate/embrace/embrace-snowflake-oauth.html
         output: web,embraceGd
       - title: Best practices
         url: /data-integrate/embrace/embrace-snowflake-best.html
@@ -1799,6 +1791,9 @@ entries:
       levelTwoItems:
       - title: Overview
         url: /data-integrate/embrace/embrace-gbq.html
+        output: web,embraceGd
+      - title: Prerequisites
+        url: /data-integrate/embrace/embrace-gbq-prerequisites.html
         output: web,embraceGd
       - title: Add a connection
         url: /data-integrate/embrace/embrace-gbq-add.html
@@ -1854,7 +1849,7 @@ entries:
       - title: Reference
         url: /data-integrate/embrace/embrace-hana-reference.html
         output: web,embraceGd
-# DataFlow only in on-prem form factor
+# DataFlow only in Software form factor
   - sectiontitle: DataFlow
     output: web,dataflowGD
     sectionitems:
@@ -1939,6 +1934,36 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-cassandra-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: Databricks Delta Lake
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-databricks-delta-lake-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: Denodo
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-denodo.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-denodo-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-denodo-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-denodo-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: Google BigQuery
         output: web,dataflowGD
         levelThreeItems:
@@ -1983,6 +2008,21 @@ entries:
           output: web,dataflowGd
         - title: Reference
           url: /data-integrate/dataflow/dataflow-ibm-db2-reference.html
+          output: web,dataflowGd
+      - levelThreeTitle: JDBC
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-jdbc.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-jdbc-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-jdbc-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-jdbc-reference.html
           output: web,dataflowGd
       - levelThreeTitle: MariaDB
         output: web,dataflowGD
@@ -2134,6 +2174,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-sap-sql-anywhere-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: SAS
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-sas.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-sas-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-sas-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-sas-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: SQL Server
         output: web,dataflowGD
         levelThreeItems:
@@ -2215,6 +2270,21 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-amazon-s3-reference.html
           output: web,dataflowGd
+      - levelThreeTitle: Apache Parquet
+        output: web,dataflowGD
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/dataflow/dataflow-apache-parquet.html
+          output: web,dataflowGd
+        - title: Connect
+          url: /data-integrate/dataflow/dataflow-apache-parquet-add.html
+          output: web,dataflowGd
+        - title: Sync
+          url: /data-integrate/dataflow/dataflow-apache-parquet-sync.html
+          output: web,dataflowGd
+        - title: Reference
+          url: /data-integrate/dataflow/dataflow-apache-parquet-reference.html
+          output: web,dataflowGd
       - levelThreeTitle: Azure Blob Storage
         output: web,dataflowGD
         levelThreeItems:
@@ -2230,7 +2300,7 @@ entries:
         - title: Reference
           url: /data-integrate/dataflow/dataflow-azure-blob-storage-reference.html
           output: web,dataflowGd
-      - levelThreeTitle: Flat Files
+      - levelThreeTitle: Files
         output: web,dataflowGD
         levelThreeItems:
         - title: Overview
@@ -2295,6 +2365,21 @@ entries:
            output: web,dataflowGd
          - title: Reference
            url: /data-integrate/dataflow/dataflow-salesforce-reference.html
+           output: web,dataflowGd
+      - levelThreeTitle: REST API
+        output: web,dataflowGD
+        levelThreeItems:
+         - title: Overview
+           url: /data-integrate/dataflow/dataflow-rest-api.html
+           output: web,dataflowGd
+         - title: Connect
+           url: /data-integrate/dataflow/dataflow-rest-api-add.html
+           output: web,dataflowGd
+         - title: Sync
+           url: /data-integrate/dataflow/dataflow-rest-api-sync.html
+           output: web,dataflowGd
+         - title: Reference
+           url: /data-integrate/dataflow/dataflow-rest-api-reference.html
            output: web,dataflowGd
     - levelTwoTitle:  Administration
       output: web,dataflowGD
@@ -2424,6 +2509,9 @@ entries:
       output: web,refGd
     - title: TQL reference
       url: /reference/sql-cli-commands.html
+      output: web,refGd
+    - title: TQL service reference
+      url: /reference/tql-service-api-ref.html
       output: web,refGd
     - title: tsload flag reference
       url: /reference/data-importer-ref.html

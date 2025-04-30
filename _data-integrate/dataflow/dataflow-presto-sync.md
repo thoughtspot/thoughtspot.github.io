@@ -11,6 +11,8 @@ After using ThoughtSpot DataFlow to establish a connection to a Presto database,
 
 4. Specify the sync properties for Presto:
 
+   <!--![Enter connection details]({{ site.baseurl }}/images/dataflow-presto-sync.png "Enter connection details")-->
+
    * [Column delimiter]({{ site.baseurl }}/data-integrate/dataflow/dataflow-presto-reference.html#dataflow-presto-sync-column-delimiter)<br/>Specifies the column delimiter character.
    * [Null value]({{ site.baseurl }}/data-integrate/dataflow/dataflow-presto-reference.html#dataflow-presto-sync-null-value)<br/>Specifies the string literal that indicates the null value in the extracted data. During the data load, the column value matching this string loads as null in the target.
    * [Enclosing character]({{ site.baseurl }}/data-integrate/dataflow/dataflow-presto-reference.html#dataflow-presto-sync-enclosing-character)<br/>Specify if the text columns in the source data needs to be enclosed in quotes.

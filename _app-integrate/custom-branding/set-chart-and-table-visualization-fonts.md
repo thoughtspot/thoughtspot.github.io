@@ -1,7 +1,7 @@
 ---
 title: [Set chart and table visualization fonts]
 summary: Learn how to add and edit fonts to customize ThoughtSpot's appearance.
-last_updated: 2/4/2020
+last_updated: 12/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,41 +9,32 @@ You can add and edit fonts to customize the appearance of your charts and tables
 
 If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following these steps:
 
-1. If you are on release 6.2.1 and later, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears. To enable style customization on release 6.2.1 or later, you must add `?customBrandingEnabled=true` to the end of your URL.
-
-    If you are on release 6.2, navigate to the Style Customization page using this URL, replacing `<cluster_IP>` with your cluster information: `https://<cluster_IP>/#/admin/settings/style-customization`.
-
-    If you are on release 6.1.1 or earlier, navigate to the Style Customization page by selecting **Admin** from the top navigation bar, then clicking **Style Customization**.
-
-    If this page is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable style customization.
+1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Style Customization** from the side navigation bar that appears.<br>
+If the Style Customization option is not available, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable it.
 
 1. Click the **Add New** button under **Chart Visualization Fonts**.
 
      ![Add new chart visualization font]({{ site.baseurl }}/images/style-chartfont.png "Add New Chart Visualization Font")
 
 2. In the add new font menu, select the details for the font:
-    1. Upload your custom font.
+    1. Upload your custom font. Note that only WOFF font types are supported.
 
          ![]({{ site.baseurl }}/images/upload_custom_font.png "Upload custom font")
-
-        Only WOFF font types are supported.
 
     2. Use the color menu to choose the font color.
 
          ![]({{ site.baseurl }}/images/custom_font_color.png "Choose font color")
 
     3. Choose the font weight and style from the drop down menus.
-
-         ![]({{ site.baseurl }}/images/font_weight_and_style.png "Choose font weight and style")
-
-        The font weight choices are normal, bold, and light. The style choices are normal, italic, and oblique.
+      The font weight choices are normal, bold, and light. The style choices are normal, italic, and oblique.
 
     4. Click **Save**.
-3. Click the **Edit Font** icon ![]({{ site.baseurl }}/images/edit_icon.png) to make changes to the font you just uploaded or to a pre-existing font.
+3. Click the **Edit Font** icon ![]({{ site.baseurl }}/images/pencil-xs.png){: .inline} to make changes to the font you just uploaded or to a pre-existing font.
 
      ![]({{ site.baseurl }}/images/edit_font.png "Edit Chart Visualization Font")
 
 4. Make any changes to the details of the font in the edit menu and click **Save**.
+
 5. Click the custom font drop down to choose your custom font.
 
      ![]({{ site.baseurl }}/images/choose_chart_custom_font.png "Choose custom chart font")

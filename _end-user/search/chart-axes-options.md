@@ -1,6 +1,6 @@
 ---
 title: [Change axis options]
-last_updated: 7/29/2020
+last_updated: 11/23/2020
 summary: "In ThoughtSpot, you can start changing all axes options by clicking on the axis, directly in the chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -41,8 +41,6 @@ To manage the filters applied to the axis (in this example, _Total Sales_), foll
 
 2. In the window modal, click **+ add a condition**.
 
-   ![Add a condition to axis]({{ site.baseurl }}/images/edit-axis-filter-1.png "Add a condition axis")
-
 3. Select the comparison option.  
 
    Here, the options include _is greater than_, _is greater than or equal to_, _is less than_, _is less than or equal to_, _is between_, _is in_, and _is not in_.
@@ -61,16 +59,9 @@ To manage the filters applied to the axis (in this example, _Total Sales_), foll
 
 5.  To add another filter condition, click **+add another**.
 
-    ![Add another filter condition]({{ site.baseurl }}/images/edit-axis-filter-4.png "Add another filter condition")
-
 7.  To remove a filter condition, click the delete icon (**x**) next to its definition.
 
-    ![Remove filter condition]({{ site.baseurl }}/images/edit-axis-filter-5.png "Remove filter condition")
-
-
 6.  Click **Done**.
-
-    ![Complete filter on axis]({{ site.baseurl }}/images/edit-axis-filter-6.png "Complete filter on axis")
 
 Here, you can see differences between the original chart and the one with the filter applied: Three (3) of the departments had sales under $1,000,000, and they don't appear on the newer chart.    
 
@@ -91,11 +82,7 @@ To apply conditional formatting to the axis (in this example, _Total Sales_), fo
 
 2. The **Conditional formatting** window modal appears.
 
-   ![Conditional formatting interface]({{ site.baseurl }}/images/edit-axis-conditional-formatting-1.png "Conditional formatting interface")  
-
 3. In the window modal, click **+ add formatting**.
-
-   ![Add a format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-2.png "Add a format")  
 
 4. Select the conditional range.
 
@@ -124,15 +111,9 @@ To apply conditional formatting to the axis (in this example, _Total Sales_), fo
 
 6. To add another condition, click **+add formatting**.
 
-    ![Add another conditional format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-5.png "Add another condition")
-
 7.  To remove a defined conditional format, click the delete icon (**x**) next to its definition.
 
-    ![Remove conditional format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-6.png "Remove conditional format")
-
 8.  Click **Done**.
-
-    ![Complete conditional format]({{ site.baseurl }}/images/edit-axis-conditional-formatting-7.png "Complete conditional format")
 
 Here, you can see a chart that highlights elements with conditional  formatting on some elements. You can also see how the same chart appears with a background chart band.    
 
@@ -150,7 +131,7 @@ Here, you can compare the original chart that was not sorted on the _Total Sales
 ![Compare unsorted chart and chart sorted in Descending order]({{ site.baseurl }}/images/edit-axis-sort-applied.png "Compare unsorted chart and chart sorted in Descending order")
 
 {: id="position"}
-## Change the postion of the axis
+## Change the position of the axis
 
 It is generally easier to interpret a chart if axes that use the same units of measurement or scale appear on the same side of the chart. In our example, we can best visualize _Item Cost_ and _Item Price_ on the same side of chart.
 

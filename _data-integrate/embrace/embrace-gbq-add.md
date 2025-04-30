@@ -1,17 +1,19 @@
 ---
 title: [Add a Google BigQuery connection]
-last_updated: 1/30/2020
+last_updated: 12/21/2020
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Once ThoughtSpot Embrace is enabled, you can add a connection to a BigQuery database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
+Before you can create a connection, you must create a custom role. For more information, see [Prerequisites]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-prerequisites.html)
+
 To add a new connection to BigQuery:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
+2. Click the **Embrace** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
     ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
     <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->

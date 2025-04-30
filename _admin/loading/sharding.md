@@ -42,7 +42,7 @@ When you are considering which tables you need to shard, and how many shards to 
 
 4. **The number of shards should be a multiple of the number of nodes**: To ensure equal distribution of data across all nodes, so that none of your nodes sits idle, the number of shards should be a multiple of the number of nodes. So, for a 12-node cluster, for example, a table could have 12, 24, 36, or 48 shards, and so on.
 
-5. **Minimum number of shards**: Because the number of shards should be a multiple of the number of nodes, the mininum number of shards is the number of nodes. For a 12-node cluster, you should not have fewer than 12 shards.
+5. **Minimum number of shards**: Because the number of shards should be a multiple of the number of nodes, the minimum number of shards is the number of nodes. For a 12-node cluster, you should not have fewer than 12 shards.
 
     This requirement may be difficult to achieve on large clusters with a high number of nodes. For example, you may have a table with 200 million rows on a 24 node cluster. Based on the guideline of 20 million rows per shard, this table should have 10 shards. 10 is not a multiple of 24. However, you may also have several very large tables on this cluster, with more than 1 billion rows. These 1 billion row tables can have at least 24 shards while fulfilling the 20 million rows per shard requirement, but the 200 million row table cannot. If you do not have these very large tables in your cluster, but you do have a high number of nodes, you might choose to have fewer than 20 million rows per shard, to ensure equal distribution of data. Consult with your ThoughtSpot contact if you are unsure how to handle sharding on your large cluster.
 
@@ -310,4 +310,4 @@ There are several best practices related to sharding.
 
 3. Check your `row count skew` ratio when you re-evaluate sharding.
 
-    You can view your `row count skew` from the ThoughtSpot application. Go to **admin**, then **System health**, then **data**. Choose the table you would like to view, and scroll to `row count skew`. Use this number to calculate your row count skew ratio: row count skew / (total row count / number of partitions). A row count skew ratio higher than 1 may require changes to your data modeling.
+    You can view your `row count skew` from the ThoughtSpot application. Go to **Data > Usage > Data**. Find the correct table name, and scroll to `row count skew`. Use this number to calculate your row count skew ratio: row count skew / (total row count / number of partitions). A row count skew ratio higher than 1 may require changes to your data modeling.

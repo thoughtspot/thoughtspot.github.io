@@ -1,7 +1,7 @@
 ---
 title: [Change a table's data model]
 
-last_updated: tbd
+last_updated: 11/18/2020
 summary: "You can adjust the data model for a newly loaded table."
 sidebar: mydoc_sidebar
 toc: true
@@ -25,8 +25,6 @@ that case, [using the model file](edit-model-file.html#) is recommended.
 
 2. Click a data source you own or can edit.
 
-   ![]({{ site.baseurl }}/images/data_management_select_data_source.png "Select a data source")
-
     This brings up the **Columns** screen, where you can make your modeling settings.
 
 3. Modify one or more column settings.
@@ -35,7 +33,7 @@ that case, [using the model file](edit-model-file.html#) is recommended.
 
 4. Save your changes.
 
-   ![]({{ site.baseurl }}/images/modeling_columns_screen.png "Edit modeling settings in the Columns screen")
+   ![]({{ site.baseurl }}/images/modeling-columns-screen.png "Edit modeling settings in the Columns screen")
 
 5. To check your changes, use the **SEARCH** page to search for across the changed data.
 

@@ -1,6 +1,6 @@
 ---
 title: [Admin Console]
-last_updated: 7/27/2020
+last_updated: 12/1/2020
 summary: Learn how the Admin Console can help you manage users, groups, security, authentication, and much more.
 toc: true
 sidebar: mydoc_sidebar
@@ -10,8 +10,6 @@ permalink: /:collection/:path.html
 The Admin Console provides you with an intuitive, user-friendly interface to accomplish most of the necessary tasks for administering ThoughtSpot.
 
 Navigate to the Admin Console by selecting **Admin** from the top navigation bar.
-
-![Admin tab]({{ site.baseurl}}/images/admin-tab.png "Admin tab")
 
 You can complete the following tasks in the Admin Console:
 
@@ -41,7 +39,7 @@ Customize ThoughtSpot Help to be specific to your data, examples, and documentat
 * [Customize Answer actions menu]({{ site.baseurl }}/admin/admin-portal/customize-actions-menu.html)<br>
 Add custom actions to the more options menu ![more options menu icon]({{ site.baseurl}}/images/icon-more-10px.png "more options menu icon"){: .inline} for Answers.
 * [Customize application style]({{ site.baseurl }}/admin/admin-portal/style-customization.html)<br>
-Starting with release 6.2.1, you can change the overall style of your ThoughtSpot interface from the Admin Console: logo, colors, fonts, and footer text.
+Change the overall style of your ThoughtSpot interface: logo, colors, fonts, and footer text.
 
 **Manage backup and storage options**
 * [Configure NAS for backup storage]({{ site.baseurl }}/admin/admin-portal/nas-mount-configure.html)<br>
@@ -50,12 +48,12 @@ Use network attached storage to support backup/restore and data loading.
 Create and manage snapshots, which you can use to restore the cluster to a specific point in time.
 
 **Monitor system**
-* [View System Overview Pinboard]({{ site.baseurl }}/admin/admin-portal/system-overview-pinboard.html)<br>
-View and explore your users' activity on the system overview Pinboard.
 * [View System Cluster Pinboard]({{ site.baseurl }}/admin/admin-portal/system-cluster-pinboard.html)<br>
 View and explore cluster activity on the system cluster Pinboard.
 * [View System Alerts Pinboard]({{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html)<br>
 View and explore system alerts, configuration events, and notification events on the system alerts Pinboard.
+* [View User Adoption Pinboard]({{ site.baseurl }}/admin/admin-portal/user-adoption-pinboard.html)<br>
+View and explore visualizations about how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time on the User Adoption Pinboard.
 
 **Upgrade your cluster**
 * [Monitor available cluster updates]({{ site.baseurl }}/admin/admin-portal/available-update.html)<br>

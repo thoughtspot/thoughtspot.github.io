@@ -11,10 +11,11 @@ Follow these steps:
 
 {% include content/dataflow/add-database-connection.md %}
 
-4. After you select the File **Connection type**, the rest of the connection properties appear.
+4. After you select the **Connection type**, the rest of the connection properties appear.
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-connection-type)<br/>Choose the Azure Blob Storage connection type.
+   * [Storage type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-storage-type)<br/>Choose the Storage type: *Azure Blob Storage* (default) or *Data Lake GEN2 Storage*.
    * [Account]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-account)<br/>Azure Storage has an address that includes our unique account name which is a combination of the account name and the Azure Storage blob endpoint forms the base address for the objects in your storage account.
    * [Authentication type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-authentication-type)<br/>This supports two types of authentication methods: Azure account key: Choose to authenticate based on access keys and other parameters to produce an encrypted signature stringthat is passed on the request in the Authorization header.Shared access signatures (SAS): Choose to grant fine-grained access to resources in your storage account with specified permissions and over a specified time interval.
    * [Key]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-key)<br/>The 512-bit access key generated while creating storage account.

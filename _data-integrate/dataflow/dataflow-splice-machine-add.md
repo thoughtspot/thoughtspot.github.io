@@ -9,7 +9,6 @@ You can add a connection to a Splice Machine database using ThoughtSpot DataFlow
 
 Follow these steps:
 
-
 {% include content/dataflow/add-database-connection.md %}
 
 4. After you select the Splice Machine **Connection type**, the rest of the connection properties appear.

@@ -3,12 +3,16 @@ title: [Keyword reference]
 summary: Use keywords to help define a search.
 toc: true
 last_updated: 11/19/2019
+redirect_from:
+- /6.3.0/reference/keywords.html
+- /6.3.0.CU1/reference/keywords.html
+- /6.3.1.CU1/reference/keywords.html
+- /6.3.1.CU4/reference/keywords.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can use keywords when asking a question to help define your search. This
-reference lists the various keywords. You can also see this list of keywords and
-examples from within the help center.
+reference lists the various keywords.
 
 ### Keywords in Other Languages
 
@@ -60,6 +64,10 @@ Also, see the topic on how to set [locale preferences in your user profile]({{ s
 ## Text
 
 {% include content/keywords-text.md %}
+
+Starting with release 6.3, when you use more than one `begins with` or `ends with` keyword in a search or formula on the same column, ThoughtSpot returns your results using an `OR` condition, instead of an `AND` condition. When you use a combination of `begins with` and `ends with`, ThoughtSpot still returns your results using an `AND` condition. When using multiple `begins with` on different columns, ThoughtSpot returns results using an `AND` condition.
+
+For example, if you search for `state name begins with "V" state name begins with "C"`, your results are Virginia, Vermont, California, and Connecticut. If you search for `state name begins with V state name ends with T`, your only result is Vermont.
 
 ## Number
 

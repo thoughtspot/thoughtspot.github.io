@@ -1,6 +1,6 @@
 ---
 title: [How DataFlow works]
-last_updated: 2/1/2021
+last_updated: 06/26/2020
 summary: "With DataFlow, you can move data into ThoughtSpot from most databases."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,6 +1,6 @@
 ---
 title: ["Manage suggestion indexing"]
-last_updated: 2/9/2021
+last_updated: 4/9/2021
 summary: "ThoughtSpot dynamically indexes Search bar suggestions for column names and values."
 sidebar: mydoc_sidebar
 toc: true
@@ -8,8 +8,8 @@ permalink: /:collection/:path.html
 ---
 When a user searches in the **Search** bar, ThoughtSpot supplies the user with
 suggestions for column names and their column values. The **COLUMN NAME**
-and any **SYNONYMS** appear in **Search** suggestions. A column's **INDEX TYPE**
-controls whether and how ThoughtSpot suggests column values.
+and any **SYNONYMS** appear in **Search** suggestions. For tables and Views, a column's **INDEX TYPE**
+controls whether and how ThoughtSpot suggests column values. For Worksheets, the **SUGGEST VALUES IN SEARCH** section for a column determines whether ThoughtSpot suggests column values.
 
 Additionally, ThoughtSpot uses a column's **INDEX PRIORITY** value to determine where
 to rank a column's name and values in the search suggestions. These values
@@ -19,7 +19,7 @@ impact ThoughtSpot's dynamically calculated usage based ranking (UBR).
 
 The following example illustrates how searching for `promotion_last_name` and then the letter `t` causes the system to suggest several ways of completing the `t` in the search:
 
-![]({{ site.baseurl }}/images/index-type.png "Suggestions")
+![]({{ site.baseurl }}/images/search-index-type.png "Suggestions")
 
 The system is suggesting the synonym `type` (callout A) for a column in the
 `Promotion` table.  It is also suggesting a value of `theil` (callout B) for the
@@ -27,18 +27,19 @@ The system is suggesting the synonym `type` (callout A) for a column in the
 see that there is a `type` synonym for the `Promotion_Type` column which is using
 default indexing.
 
-![]({{ site.baseurl }}/images/index-row.png "Table Row")
+![]({{ site.baseurl }}/images/index-rows.png "Table Row")
 
 Managing search suggestions through **INDEX TYPE** and **INDEX PRIORITY** is
 important. Properly configured suggestions can decrease "noise" in the
 suggestion list. Increasing the visibility of important columns is helpful
 for new or intermittent ThoughtSpot users.
 
-## Understand the default indexing behavior
+## Understand the default indexing behavior for tables and Views
 
-ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions.
-This system default is configured on your cluster and applies to all worksheets
-and tables. You can override this default behavior on a per-column basis.
+ThoughtSpot has a system default **INDEX TYPE** behavior for search suggestions for table and View values.
+This system default is configured on your cluster and applies to all tables. You can override this default behavior on a per-column basis.
+
+![Table and View search indexing]({{ site.baseurl }}/images/table-search-indexing.png "Table and View search indexing")
 
 The system behavior when the **INDEX TYPE** is **DEFAULT** is as follows:
 
@@ -79,6 +80,11 @@ cardinality thresholds for your ThoughtSpot installation.
 
 If you need to, you can work with ThoughtSpot Support or your Customer Success
 Engineer to configure new cluster defaults.
+
+## Understand the indexing behavior for Worksheets
+For Worksheets, you can only choose whether or not to index the column. You cannot choose an index type. When viewing a Worksheet, toggle the **SUGGEST VALUES IN SEARCH** option on or off.
+
+![Worksheet search indexing]({{ site.baseurl }}/images/worksheet-search-indexing.png "Worksheet search indexing")
 
 ## Override the system default on a column
 
@@ -147,7 +153,7 @@ want to use.
 A column's **INDEX PRIORITY** determines the order or rank in which it and its
 values appear in the search dropdown.
 
-![]({{ site.baseurl }}/images/priority-effect.png)
+![]({{ site.baseurl }}/images/column-priority-effect.png)
 
 By default, the **INDEX PRIORITY** value is set to `1` for all columns. You can
 push a column up in the order (increase the rank) by increasing its **INDEX
@@ -155,7 +161,7 @@ PRIORITY** value. A higher value (like `2`) will cause the corresponding column
 and its values to appear higher up in the search dropdown than columns with
 lower value (like `1`).
 
-![]({{ site.baseurl }}/images/set-priority.png)
+![]({{ site.baseurl }}/images/set-column-priority.png)
 
 You should only use numbers between 1-10 in the **INDEX PRIORITY** field. Use a
 value between `8-10` for important columns to improve their search ranking. Use

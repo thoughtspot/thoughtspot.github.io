@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS resources for ThoughtSpot]
-last_updated: 4/3/2020
+last_updated: 11/19/2020
 sidebar: mydoc_sidebar
 summary: "After you determine your configuration options, you must set up your virtual machines (VMs) in AWS using a ThoughtSpot Amazon Machine Image (AMI)."
 permalink: /:collection/:path.html
@@ -32,7 +32,7 @@ The ThoughtSpot AMI has specific applications on a CentOS-based image. The AMI i
 
 {: id='rhel-ami'}
 ### RHEL AMI
-This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. To install ThoughtSpot using RHEL, choose your own RHEL-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
+This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL, choose your own RHEL-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
 
 {: id='al2-ami'}
 ### Amazon Linux 2 AMI
@@ -67,7 +67,7 @@ To install and launch ThoughtSpot, you must have the following:
 
     | Release Number | AMI Name | AMI ID | Region |
     | --- | --- | --- | --- |
-    | 6.2 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
+    | 6.3 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
 
     {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to initiate copying the AMI to the region of your choice. Once the copy is complete, you can return to your own region." %}
 

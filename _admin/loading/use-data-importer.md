@@ -1,6 +1,6 @@
 ---
 title: [Import CSV files with tsload]
-last_updated: 03/07/2020
+last_updated: 12/8/2020
 summary: "Use the <code>tsload</code> command to import data from a CSV file."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,8 +15,6 @@ The `tsload` command accepts flags that enable you to specify column and row sep
 Before importing data, you need to [build the schema](create-schema.html#).
 
 After importing data, you can see it in the **Data** tab.
-
-![Click on the Data tab from the top navigation bar]({{ site.baseurl }}/images/data-tab.png "Click on the Data tab from the top navigation bar")
 
 ## ThoughtSpot Loader
 

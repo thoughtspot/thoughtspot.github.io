@@ -6,8 +6,6 @@
 
 4. Enter users or groups with whom you want to share this object in the text box.
 
-    ![Enter users or groups]({{ site.baseurl }}/images/sharing-textbox.png "Enter users or groups")
-
     Note that you can only enter email addresses whose domains are in your list of allowed domains. These domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-information-10px.png){: .inline}.
 
     {% include tip.html content="If you want to hide the allowed email domains for your company, or otherwise customize them, contact ThoughtSpot support." %}
@@ -15,8 +13,6 @@
 5. Configure the level of access by selecting from the drop-down list. You can select:
     -   **Can View** to provide read-only access. If the user doesn't have access to the underlying worksheet, they can only view the shared object.
     -   **Can Edit** to allow modification. Enables renaming or deleting the shared object. If a user with edit privileges modifies a shared object, the object saves their changes.
-
-    ![Specify permissions]({{ site.baseurl }}/images/sharing-permissions.png "Specify permissions")
 
 6. If the selected group or user does not have access to the underlying data, you must enable access to the worksheet, view, or table. A black warning symbol appears when you try to share with a user who does not have underlying data access. If you click on it, it tells you to enable access:
 
@@ -35,9 +31,8 @@
 
     ![Stop sharing]({{ site.baseurl }}/images/sharing-delete.png "Stop sharing")
 
-6. You can send an email notification and an optional message:
+6. You can send an email notification and an optional message.
 
-    ![Send notification]({{ site.baseurl }}/images/sharing-notifmessage.png "Send notification")
 
 5. You can also copy a direct link to the Answer, Pinboard, or visualization within a Pinboard that you are sharing, and separately send that link to users after you share the object with them. Simply click the **Copy link** button at the bottom of the sharing dialog box.
 
@@ -47,5 +42,3 @@
     ![Share an object and send the link to users you shared with]({{ site.baseurl }}/images/share-copy-link.png "Share an object and send the link to users you shared with")
 
 6. Click **Share**.
-
-    ![Share your Pinboard or Answer]({{ site.baseurl }}/images/sharing-share.png "Share your Pinboard or Answer")

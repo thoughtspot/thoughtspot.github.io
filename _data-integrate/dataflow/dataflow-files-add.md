@@ -11,9 +11,33 @@ Follow these steps:
 
 {% include content/dataflow/add-database-connection.md %}
 
-4. After you select the File **Connection type**, the rest of the connection properties appear.
+4. After you select the **Connection type**, the rest of the connection properties appear.
 
    Depending on your choice of authentication mechanism, you may use different properties.
+
+  <!-- <details>
+     <summary>See the <strong>Create connection</strong> screen for local files</summary>
+     <p>
+      <img src="../../images/dataflow-file-local-create.png" alt="Add a connection to a local file" /></p>
+   </details>
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for remote files, through <em>FTP</em> connection protocol</summary>
+     <p>
+      <img src="../../images/dataflow-file-remote-ftp-create.png" alt="Add an FTP connection to a remote file" /></p>
+   </details>    
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for remote files, through <em>SFTP</em> connection protocol, with <em>key</em> authentication</summary>
+     <p>
+      <img src="../../images/dataflow-file-remote-sftp-key-create.png" alt="Add an SFTP connection to a remote file, with key authentication" /></p>
+   </details>
+
+   <details>
+     <summary>See the <strong>Create connection</strong> screen for remote files, through <em>SFTP</em> connection protocol, with <em>password</em> authentication</summary>
+     <p>
+      <img src="../../images/dataflow-file-remote-sftp-passwrod-create.png" alt="Add an SFTP connection to a remote file, with password authentication" /></p>
+   </details>  -->
 
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-files-reference.html#dataflow-files-conn-connection-type)<br/>Choose the Files connection type.

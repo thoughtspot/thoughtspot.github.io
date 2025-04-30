@@ -2,6 +2,10 @@
 title: [Snowflake connection reference]
 summary: Learn about the fields used to create a Snowflake connection with ThoughtSpot Embrace.
 last_updated: 01/24/2020
+redirect_from:
+- /6.3.0/data-integrate/embrace/embrace-snowflake-reference.html
+- /6.3.0.CU1/data-integrate/embrace/embrace-snowflake-reference.html
+- /6.3.1.CU1/data-integrate/embrace/embrace-snowflake-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -42,5 +46,13 @@ Here is a list of the fields of a Snowflake connection in ThoughtSpot Embrace. Y
   <dlentry id="embrace-snowlake-ref-database">
     <dt>Database</dt>
     <dd>Specify the database associated with the account. <i>(Optional)</i></dd>
+  </dlentry>
+  <dlentry id="snowflake-oauth-client-id">
+      <dt>OAuth</dt>
+      <dd>Enter the OAuth client ID associated with the Snowflake database.</dd>
+  </dlentry>
+  <dlentry id="snowflake-oauth-client-secret">
+      <dt>OAuth client secret</dt>
+      <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
   </dlentry>
 </dl>

@@ -18,7 +18,6 @@ To use scripting before or after the sync, follow these steps:
            <br/>Optional field.
            <br/>For example, to drop data that is over 1 year old, enter the following expression:
            <br/><code>DELETE from FACT_TABLE Where DATE < ADD_DAYS(TODAY(),-365)</code>.
-           <br/>To find the correct functions for the script, click <strong>Expression editor</strong>, use it to create a valid command (or several commands), and click <strong>OK</strong>.</dd></dlentry>
-             </dl>
+           <br/>To find the correct functions for the script, click <strong>Expression editor</strong>, use it to create a valid command (or several commands), and click <strong>OK</strong>.</dd></dlentry></dl>
 
 5. Save your work by clicking **Save**.<br/>Alternatively, click **Save and sync now** to save your work and sync data at the same time.

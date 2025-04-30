@@ -7,6 +7,8 @@ permalink: /:collection/:path.html
 ---
 After using ThoughtSpot DataFlow to establish a connection to an Azure Blob Storage file system, you can create automatic data updates, to seamlessly refresh your data.
 
+Starting with ThoughtSpot Release 6.3, you can use the default *Blob Storage*, or *Delta Lake GEN2 Storage* <span class="label label-beta">New</span> options.
+
 {% include content/dataflow/sync-for-file-systems.md %}
 
 4. Specify the sync properties for files:

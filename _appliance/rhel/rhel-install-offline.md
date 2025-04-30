@@ -31,10 +31,8 @@ Before you build the ThoughtSpot cluster and install the ThoughtSpot application
 To set up the Ansible, follow these steps:
 
 <ol>
-  <li>Obtain the Ansible tarball.<br>
-  Contact <a href="https://community.thoughtspot.com/customers/s/contactsupport" target="_blank">ThoughtSpot Support</a> to request the Ansible.</li>
+  <li>Obtain the Ansible tarball. <br />Contact <a href="https://community.thoughtspot.com/customers/s/contactsupport" target="_blank">ThoughtSpot Support</a> to request the ansible.</li>
   <li>Download the Ansible to your local machine.</li>
-
   <li>Unzip the Ansible tarball, to see the following files and directories on your local machine:<br/>
    <dl>
     <dlentry>
@@ -126,6 +124,18 @@ To set up the Ansible, follow these steps:
         </dlentry>
       </dl>
 </dd>
+    </dlentry>
+    <dlentry id="ldap_admin_user">
+      <dt>ldap_admin_user</dt>
+      <dd><em><strong>[Optional]</strong></em> One of three parameters required to enable users to use their OpenLDAP admin user to SSH as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. Specify the OpenLDAP admin user, in the form <em>example@company.com</em>. You must include all 3 of the LDAP parameters (<code>ldap_admin_user</code>, <code>ldap_server_uri</code>, <code>ldap_server_base</code>), or none of them. If you include 1 or 2, the playbook fails.</dd>
+    </dlentry>
+    <dlentry id="ldap_server_uri">
+      <dt>ldap_server_uri</dt>
+      <dd><em><strong>[Optional]</strong></em> One of three parameters required to enable users to use their OpenLDAP admin user to SSH as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. Specify the LDAP server uniform resource identifier, in the form <em>ldap://&lt;ldap_server_IP&gt;</em>. You must include all 3 of the LDAP parameters (<code>ldap_admin_user</code>, <code>ldap_server_uri</code>, <code>ldap_server_base</code>), or none of them. If you include 1 or 2, the playbook fails.</dd>
+    </dlentry>
+    <dlentry id="ldap_server_base">
+      <dt>ldap_server_base</dt>
+      <dd><em><strong>[Optional]</strong></em> One of three parameters required to enable users to use their OpenLDAP admin user to SSH as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. Specify the LDAP server base distinguished name, in the form <em>dc=&lt;optional_subdomain&gt;,dc=&lt;domain&gt;,dc=&lt;top-level-domain&gt;</em>, such as <em>dc=thoughtspot,dc=com</em>. You must include all 3 of the LDAP parameters (<code>ldap_admin_user</code>, <code>ldap_server_uri</code>, <code>ldap_server_base</code>), or none of them. If you include 1 or 2, the playbook fails.</dd>
     </dlentry>
     <dlentry id="ssh_user">
       <dt>ssh_user</dt>

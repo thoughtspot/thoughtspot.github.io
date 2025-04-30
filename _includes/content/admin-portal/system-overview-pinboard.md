@@ -1,14 +1,14 @@
-You can view system and usage information for your ThoughtSpot cluster from the Admin Console. The **System Overview Pinboard** contains several charts and tables that track monthly active users, top Pinboards by number of views, today's users, and so on. To view this Pinboard, navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar. Select **Overview** from the side navigation bar that appears.
+You can view system and usage information for your ThoughtSpot cluster from the **TS Stats: System Information and Usage Pinboard**. This Pinboard contains several charts and tables that track monthly active users, top Pinboards by number of views, today's users, and so on. To view this Pinboard, search for it in the **Pinboards** tab.
 
-![Admin Console - Overview Pinboard]({{ site.baseurl }}/images/admin-portal-overview-pinboard.png "Admin Console - Overview Pinboard")
+![TS Stats: System Information and Usage Pinboard]({{ site.baseurl }}/images/system-info-usage-pinboard.png "TS Stats: System Information and Usage Pinboard")
 
-## Understand the System Overview Pinbaord
+## Understand the TS Stats: System Information and Usage Pinboard
 
-The **System Overview Pinboard** page consists of standard ThoughtSpot Answers that update in real time and rely on internal system data. The Answers rely on underlying system worksheets, which are available to ThoughtSpot administrators. The information in these worksheets updates hourly from internal tables that collect monitoring statistics.  
+The **TS Stats: System Information and Usage Pinboard** page consists of standard ThoughtSpot Answers that update in real time and rely on internal system data. The Answers rely on underlying system worksheets, which are available to ThoughtSpot administrators. The information in these worksheets updates hourly from internal tables that collect monitoring statistics.  
 
 The **more options menu** ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} for the Answers in this Pinboard contains fewer options than the traditional menu. You can **SpotIQ analyst**, **download**, **edit,** or **present** the Answer. When you **edit** the Answer, you see the query that ThoughtSpot built the Answer on. You can also copy the Answer's embed link, use [Answer Explorer]({{ site.baseurl }}/end-user/pinboards/answer-explorer.html) on the Answer, or interact with the Answer by [drilling down]({{ site.baseurl }}/complex-search/drill-down.html). While you can interact with and change a copied version of the Answer, you cannot save changes to the underlying query.
 
-The following charts, tables, and panels are available on the **System Overview Pinboard**: [cluster summary](#cluster-summary), [relational data cache](#relational-data-cache), [relational search engine](#relational-search-engine), [critical alerts](#critical-alerts), [space utilization](#space-utilization), [monthly active users](#mau), [monthly ad-hoc searches](#monthly-searches), [monthly Pinboard views,](#monthly-pb-views), [top users last month](#top-users), [top Pinboards last month](#top-pinboards), [ad-hoc search by user](#searches-user), and [today's users](#users-today).
+The following charts, tables, and panels are available on the **TS Stats: System Information and Usage Pinboard**: [cluster summary](#cluster-summary), [critical alerts](#critical-alerts), [monthly active users](#mau), [monthly ad-hoc searches](#monthly-searches), [monthly Pinboard views,](#monthly-pb-views), [top users last month](#top-users), [top Pinboards last month](#top-pinboards), [ad-hoc search by user](#searches-user), [today's users](#users-today), and [configuration events](#configuration-events).
 
 {: id="cluster-summary"}
 ## Cluster Summary
@@ -300,6 +300,7 @@ today
 ```
 The query uses the `TS: BI Server` data source.
 
+{: id="configuration-events"}
 ## Configuration Events
 
 This system answer displays recent events that changed the configuration of the

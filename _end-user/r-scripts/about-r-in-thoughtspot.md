@@ -1,10 +1,12 @@
 ---
 title: [About R in ThoughtSpot]
 summary: "Analyze your data with R scripts that ship with ThoughtSpot, and build visualizations and Pinboards based on the analytical insights you obtained. You can also create custom R scripts, and share them with your team."
-last_updated: 11/22/2019
+last_updated: 12/4/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.2. For details, see Deprecation Announcements." %}
 
 R is a popular open source programming language for statistical computing, machine learning, and AI. ThoughtSpot makes R analysis available as a fully integrated feature.
 
@@ -23,7 +25,7 @@ This topic explains how to use R in ThoughtSpot both from an end user and script
 ## How to access R scripts
 
 Users with R script privileges can click the **R** icon
-![R icon]({{ site.baseurl }}/images/r-icon-inline.png){: .inline}
+![R icon]({{ site.baseurl }}/images/r-icon-inline-2.png){: .inline}
 on the toolbar for any search result (answer).
 
 ![]({{ site.baseurl }}/images/r-icon.png)
