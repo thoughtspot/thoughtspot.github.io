@@ -2,9 +2,8 @@
 
 entries:
 - title: sidebar
-  product: ThoughtSpot Cloud
-  docversion: ts8.nov.cl
-  # version: tscloud.7
+  product: Version
+  version: 6.0 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -19,829 +18,279 @@ entries:
       url: /pdfconfigs/tocpage.html
       output: pdf
       type: frontmatter
-# end of PDF section
-  - sectiontitle: About this release
-    output: web,ugBk
+# end PDF output defs
+  - sectiontitle: About this Release
+    output: web,rnotes
     sectionitems:
     - title: Release notes
-      url:  /release/notes.html
+      url: /release/notes.html
+      output: web,rnotes
+    - title: Downloads
+      url: /release/downloads.html
       output: web
-    - title: Get started with Free Trial
-      url:  /release/ts-cloud-getting-started-free-trial.html
-      output: web
-    - title: Free Trial
-      url:  /release/free-trial.html
-      output: web
-    - title: Accessibility
-      url:  /release/accessibility.html
-      output: web
-    - title: Deprecation Announcements
-      url:  /release/deprecation.html
-      output: web
-  - sectiontitle: Getting started
+#    - title: PDF Guides
+#      url: /release/pdfs.html
+#      output: web
+  - sectiontitle: Users
     output: web,ugBk
     sectionitems:
-    - title: Getting Started
-      url:  /admin/ts-cloud/ts-cloud-getting-started.html
-      output: web
-    - title: Requirements and support
-      url:  /admin/ts-cloud/ts-cloud-requirements-support.html
-      output: web
-    - title: User onboarding experience
-      url: /end-user/onboarding/user-onboarding-experience.html
+    - title: Introduction
+      url: /end-user/introduction/introduction.html
       output: web,ugBk
-    - title: Finding your way around
-      url: /end-user/introduction/about-navigating-thoughtspot.html
+    - levelTwoTitle: Getting Started
       output: web,ugBk
-    - title: ThoughtSpot browser access
-      url: /end-user/accessing.html
-      output: web,ugBk
-    - title: Your user preferences
-      url: /end-user/introduction/about-user.html
-      output: web,ugBk
-#    - title: Password and account management
-#      url: /end-user/onboarding/password-requirements.html
-#      output: web,ugBk
-    - title: Use tags to organize
-      url: /end-user/tags.html
-      output: web,ugBk
-    - levelTwoTitle: Privileges
-      output: web
       levelTwoItems:
+      - title: User onboarding experience
+        url: /end-user/onboarding/user-onboarding-experience.html
+        output: web,ugBk
+      - title: Finding your way around
+        url: /end-user/introduction/about-navigating-thoughtspot.html
+        output: web,ugBk
+      - title: ThoughtSpot browser access
+        url: /end-user/accessing.html
+        output: web,ugBk
+      - title: The Getting Started sidebar
+        url: /end-user/introduction/getting-started.html
+        output: web,ugBk
+      - title: Your user preferences
+        url: /end-user/introduction/about-user.html
+        output: web,ugBk
       - title: Understanding privileges
         url: /end-user/introduction/about-privileges-end-user.html
         output: web,ugBk
-      - title: Granular access to Liveboards
-        url: /end-user/introduction/pinboard-granular-permission.html
+      - title: Use stickers to organize
+        url: /end-user/stickers.html
         output: web,ugBk
-  - sectiontitle: ThoughtSpot for ...
-    output: web,ugBk
-    sectionitems:
-    - levelTwoTitle: Business Users
-      output: web
-      levelTwoItems:
-      - title: For Business Users
-        url: /admin/ts-cloud/business-user.html
-        output: web
-      - title: Business User onboarding
-        url: /admin/ts-cloud/business-user-onboarding.html
-        output: web
-      - title: Home page
-        url: /end-user/thoughtspot-one/thoughtspot-one-homepage.html
-        output: web
-      - title: Search Answers
-        url: /end-user/search/search-answers.html
-        output: web
-      - title: Search Data
-        url: /end-user/search/search-data.html
-        output: web
-      - title: New Answer experience
-        url: /admin/ts-cloud/new-answer-experience.html
-        output: web
-      - title: Get started
-        url: /admin/ts-cloud/business-user-get-started.html
-        output: web
-      - title: Confirm data source
-        url: /admin/ts-cloud/business-user-datasource-confirm.html
-        output: web
-      - title: Select a Liveboard
-        url: /admin/ts-cloud/business-user-pinboard-select.html
-        output: web
-      - title: Explore your Liveboard
-        url: /admin/ts-cloud/business-user-pinboard-view.html
-        output: web
-      - title: More on Liveboards and Answers
-        url: /admin/ts-cloud/pinboards.html
-        output: web
-      - title: Search Assist
-        url: /admin/ts-cloud/search-assist.html
-        output: web
-    - levelTwoTitle: Analysts
-      output: web
-      levelTwoItems:
-      - title: For Analysts
-        url: /admin/ts-cloud/analyst.html
-        output: web
-      - title: Analyst onboarding
-        url: /admin/ts-cloud/analyst-onboarding.html
-        output: web
-      - title: Connect to data
-        url: /admin/ts-cloud/connect-data.html
-        output: web
-      - title: Join tables
-        url: /admin/ts-cloud/tables-join.html
-        output: web
-      - title: Create worksheets in Setup
-        url: /admin/ts-cloud/worksheet-create-setup.html
-        output: web
-      - title: Create worksheets
-        url: /admin/ts-cloud/worksheet-create.html
-        output: web
-      - title: Search Assist Coach
-        url: /admin/ts-cloud/search-assist-coach.html
-        output: web
-      - title: Visualize Search Results
-        url: /admin/ts-cloud/visualize-search.html
-        output: web
-      - title: Create answers in Setup
-        url: /admin/ts-cloud/automated-answer-creation.html
-        output: web
-      - title: Compose Liveboards from Answers
-        url: /admin/ts-cloud/pinboard-compose.html
-        output: web
-      - title: Linked Liveboard filters
-        url: /complex-search/linked-filters.html
-        output: web
-      - title: Selective Liveboards filters
-        url: /complex-search/selective-filters.html
-        output: web
-      - title: Scriptability
-        url: /admin/ts-cloud/scriptability.html
-        output: web
-#      - title: SpotApps
-#        url: /admin/ts-cloud/app-templates.html
-#        output: web
-      - title: Migrate multiple TML files
-        url: /admin/ts-cloud/tml-import-export-multiple.html
-        output: web
-      - title: ThoughtSpot Modeling Language
-        url: /admin/ts-cloud/tml.html
-        output: web
-      - title: Disable Answer Search for specific Worksheets
-        url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
-        output: web
-      - title: How Users are Searching Answers Liveboard
-        url: /admin/thoughtspot-one/query-intelligence-pinboard.html
-        output: web
-    - levelTwoTitle: Data Engineers
-      output: web
-      levelTwoItems:
-      - title: For Data Engineers
-        url: /admin/ts-cloud/data-engineer.html
-        output: web
-      - title: About connections
-        url: /admin/ts-cloud/embrace.html
-        output: web
-      - levelThreeTitle: Connect to Amazon Redshift
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-connection.html
-          output: web
-        - title: Best practices
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-best.html
-          output: web,embraceGd
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Azure Synapse
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Databricks
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Google BigQuery
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq.html
-          output: web
-        - title: Prerequisites
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-prerequisites.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
-          output: web
-#       - title: Passthrough functions
-#         url: /admin/ts-cloud/ts-cloud-embrace-gbq-passthrough.html
-#         output: web
-      - levelThreeTitle: Connect to Oracle ADW
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-adw.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to SAP HANA
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-hana.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Snowflake
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-connection.html
-          output: web
-        - title: Configure internal OAuth
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
-          output: web
-        - title: Configure Azure AD external OAuth
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html
-          output: web
-        - title: Best practices
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html
-          output: web
-        - title: Passthrough functions
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html
-          output: web
-        - title: Snowflake Partner Connect Overview
-          url: /data-integrate/embrace/embrace-snowflake-partner.html
-          output: web,embraceGd
-        - title: Snowflake Partner Connect Tutorials
-          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
-          output: web,embraceGd
-      - levelThreeTitle: Connect to Starburst
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Teradata
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html
-          output: web
-      - levelThreeTitle: Custom calendar
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal.html
-          output: web
-        - title: Create a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html
-          output: web
-        - title: Update a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html
-          output: web
-        - title: Delete a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html
-          output: web
-    - levelTwoTitle: IT and Ops
-      output: web
-      levelTwoItems:
-      - title: For IT and Ops
-        url: /admin/ts-cloud/it-ops.html
-        output: web
-      - title: Managing users
-        url: /admin/ts-cloud/users.html
-        output: web
-      - title: Managing groups
-        url: /admin/ts-cloud/groups.html
-        output: web
-      - title: Authentication overview
-        url: /admin/architecture/authentication.html
-        output: web
-      - title: Managing local authentication
-        url: /admin/ts-cloud/authentication-local.html
-        output: web
-      - title: Managing authentication with SAML
-        url: /admin/ts-cloud/authentication-integration.html
-        output: web
-      - title: Configure SAML group mapping
-        url: /admin/ts-cloud/saml-group-mapping.html
-        output: web
-#      - title: Sync users and groups from LDAP
-#        url: /admin/setup/sync-users-and-groups-from-ldap.html
-#        output: web
-      - title: Search and SpotIQ settings
-        url: /admin/ts-cloud/search-spotiq-settings.html
-        output: web
-      - title: Email and onboarding settings
-        url: /admin/ts-cloud/onboarding-email-settings.html
-        output: web
-      - title: Scheduled maintenance
-        url: /admin/ts-cloud/scheduled-maintenance.html
-        output: web
-      - title: Style customization
-        url: /admin/ts-cloud/style-customization.html
-        output: web
-      - title: Help customization
-        url: /admin/ts-cloud/customize-help.html
-        output: web
-      - title: Enable a PrivateLink for Snowflake
-        url: /admin/ts-cloud/private-link-snowflake.html
-        output: web
-      - title: Enable a PrivateLink for Redshift
-        url: /admin/ts-cloud/private-link-redshift.html
-        output: web
-      - title: OpenVPN for Google BigQuery
-        url: /admin/ts-cloud/openvpn-gbq.html
-        output: web
-      - title: OpenVPN for Azure Synapse
-        url: /admin/ts-cloud/openvpn-synapse.html
-        output: web
-      - title: Custom domain configuration
-        url: /admin/ts-cloud/custom-domains.html
-        output: web
-      - title: Performance tracking Liveboard
-        url: /admin/ts-cloud/performance-tracking.html
-        output: web
-      - title: User adoption Liveboard
-        url: /admin/ts-cloud/user-adoption.html
-        output: web
-      - title: Object usage Liveboard
-        url: /admin/ts-cloud/object-usage.html
-        output: web
-      - title: ThoughtSpot use agreement
-        url: /admin/ts-cloud/use-agreement.html
-        output: web
-    - levelTwoTitle: Developers
-      output: web
-      levelTwoItems:
-      - title: For Developers
-        url: /admin/ts-cloud/developer-user.html
-        output: web
-      - title: Embedded Analytics
-        url: /admin/ts-cloud/intro-embed.html
-        output: web
-      - title: Integration guidelines
-        url: /admin/ts-cloud/integration-overview.html
-        output: web
-      - title: ThoughtSpot Developer Portal
-        url: /admin/ts-cloud/spotdev-portal.html
-        output: web
-      - title: Authentication and security
-        url: /admin/ts-cloud/auth-overview.html
-        output: web
-      - title: Visual Embed SDK
-        url: /admin/ts-cloud/visual-embed-sdk.html
-        output: web
-      - title: Custom actions
-        url: /admin/ts-cloud/custom-actions.html
-        output: web
-      - title: Customization and rebranding
-        url: /admin/ts-cloud/customization-rebranding.html
-        output: web
-      - levelThreeTitle: REST APIs
-        output: web
-        levelThreeItems:
-        - title: About REST APIs
-          url: /admin/ts-cloud/about-rest-apis.html
-          output: web
-        - title: Get started with REST APIs
-          url: /admin/ts-cloud/rest-api-getstarted.html
-          output: web
-      - levelThreeTitle: Runtime Filters
-        output: web
-        levelThreeItems:
-        - title: About Runtime Filters
-          url: /admin/ts-cloud/about-runtime-filters.html
-          output: web
-        - title: Apply a Runtime Filter
-          url: /admin/ts-cloud/apply-runtime-filter.html
-          output: web
-        - title: Runtime Filter Operators
-          url: /admin/ts-cloud/runtime-filter-operators.html
-          output: web
-  - sectiontitle: Search
-    output: web,ugBk
-    sectionitems:
-    - title: Search overview
-      url: /end-user/search/search-overview.html
-      output: web,ugBk
-    - title: Search Answers
-      url: /end-user/search/search-answers.html
-      output: web,ugBk
-    - title: Search data
-      url: /end-user/search/about-starting-a-new-search.html
-      output: web,ugBk
-    - levelTwoTitle: Search basics
+    - levelTwoTitle: Use Search
       output: web,ugBk
       levelTwoItems:
-      - title: Start a new search
-        url: /end-user/search/start-a-new-search.html
+      - title: What are searches and answers?
+        url: /end-user/search/about-starting-a-new-search.html
         output: web,ugBk
-      - title: Choose a data source
-        url: /end-user/search/about-choosing-sources.html
+      - levelThreeTitle: Search basics
         output: web,ugBk
-      - title: Search bar features
-        url: /end-user/search/about-the-search-bar.html
-        output: web,ugBk
-      - title: Search suggestions
-        url: /end-user/search/recent-searches.html
-        output: web,ugBk
-      - title: Search results and column types
-        url: /end-user/search/about-attributes-and-measures.html
-        output: web,ugBk
-      - title: Last data refresh time
-        url: /end-user/search/data-refresh-time.html
-        output: web,ugBk
-      - title: Work with Answers
-        url: /end-user/search/work-with-answers.html
-        output: web,ugBk
-      - title: Ask an Expert
-        url: /end-user/search/ask-an-expert.html
-        output: web,ugBk
-      - title: Manage Ask an Expert requests
-        url: /end-user/search/monitor-expert.html
-        output: web,ugBk
-      - title: View Ask an Expert answers
-        url: /end-user/search/retrieve-expert-answer.html
-        output: web,ugBk
-      - title: Answer Ask an Expert question
-        url: /end-user/search/answer-expert-question.html
-        output: web,ugBk
+        levelThreeItems:
+        - title: Start a new search
+          url: /end-user/search/start-a-new-search.html
+          output: web,ugBk
+        - title: Choose a data source
+          url: /end-user/search/about-choosing-sources.html
+          output: web,ugBk
+        - title: Search bar features
+          url: /end-user/search/about-the-search-bar.html
+          output: web,ugBk
+        - title: Search suggestions
+          url: /end-user/search/recent-searches.html
+          output: web,ugBk
+        - title: Search results and column types
+          url: /end-user/search/about-attributes-and-measures.html
+          output: web,ugBk
+        - title: Last data refresh time
+          url: /end-user/search/data-refresh-time.html
+          output: web,ugBk
+        - title: Work with Answers
+          url: /end-user/search/work-with-answers.html
+          output: web,ugBk
+        - title: Ask an Expert
+          url: /end-user/search/ask-an-expert.html
+          output: web,ugBk
+        - title: Manage Ask an Expert requests
+          url: /end-user/search/monitor-expert.html
+          output: web,ugBk
+        - title: Retrieve Ask an Expert answers
+          url: /end-user/search/retrieve-expert-answer.html
+          output: web,ugBk
+        - title: Answer an Ask an Expert question
+          url: /end-user/search/answer-expert-question.html
+          output: web,ugBk
       - title: Results that are tables
         url: /end-user/search/about-tables.html
         output: web,ugBk
-    - levelTwoTitle: Use keywords in search
+      - levelThreeTitle: Use keywords in search
+        output: web,ugBk
+        levelThreeItems:
+        - title: Overview of keyword searches
+          url: /complex-search/about-keyword-searches.html
+          output: web,ugBk
+        - title: Time series analysis
+          url: /complex-search/period-searches.html
+          output: web,ugBk
+        - title: Search using growth over time
+          url: /complex-search/search-using-growth-over-time.html
+          output: web,ugBk
+        - title: Using the in keyword for nested searches
+          url: /complex-search/in-keyword-searches.html
+          output: web,ugBk
+        - title: Proximity searches "near" and "farther than"
+          url: /admin/features/proximity-search.html
+          output: web,ugBk
+      - levelThreeTitle: Work with filters
+        output: web,ugBk
+        levelThreeItems:
+        - title: Understand filters
+          url: /complex-search/about-filters.html
+          output: web,ugBk
+        - title: Add a filter to a table
+          url: /end-user/search/filter-from-column-headers.html
+          output: web,ugBk
+        - title: Add a filter to a chart
+          url: /end-user/search/filter-from-chart-axes.html
+          output: web,ugBk
+        - title: Create a bulk filter
+          url: /complex-search/create-bulk-filter.html
+          output: web,ugBk
+        - title: Delete a filter
+          url: /end-user/search/delete-a-filter.html
+          output: web,ugBk
+        - title: Filter on null, blank, or empty values
+          url: /complex-search/about-filters-for-null.html
+          output: web,ugBk
+      - levelThreeTitle: Other search actions
+        output: web,ugBk
+        levelThreeItems:
+        - title: Other search actions
+          url: /complex-search/search-actions.html
+          output: web,ugBk
+        - title: Change result display options
+          url: /complex-search/change-the-view.html
+          output: web,ugBk
+        - title: Show underlying data
+          url: /complex-search/show-underlying-data.html
+          output: web,ugBk
+        - title: See the search behind a result
+          url: /complex-search/drill-down.html
+          output: web,ugBk
+        - title: Apply conditional formatting to a table
+          url: /end-user/search/apply-conditional-formatting.html
+          output: web,ugBk
+        - title: Download your search
+          url: /complex-search/download-your-search.html
+          output: web,ugBk
+        - title: Replay search
+          url: /end-user/search/replay-search.html
+          output: web,ugBk
+    - levelTwoTitle: Work with charts
       output: web,ugBk
       levelTwoItems:
-      - title: Overview of keyword searches
-        url: /complex-search/about-keyword-searches.html
+      - title: Understand charts
+        url: /end-user/search/about-charts.html
         output: web,ugBk
-      - title: Time series analysis
-        url: /complex-search/period-searches.html
+      - levelThreeTitle: Chart types
         output: web,ugBk
-      - title: Search using growth over time
-        url: /complex-search/search-using-growth-over-time.html
+        levelThreeItems:
+        - title: Column charts
+          url: /end-user/search/about-column-charts.html
+          output: web,ugBk
+        - title: Bar charts
+          url: /end-user/search/about-bar-charts.html
+          output: web,ugBk
+        - title: Line charts
+          url: /end-user/search/about-line-charts.html
+          output: web,ugBk
+        - title: Pie charts
+          url: /end-user/search/pie-charts.html
+          output: web,ugBk
+        - title: Area charts
+          url: /end-user/search/area-charts.html
+          output: web,ugBk
+        - title: Scatter charts
+          url: /end-user/search/about-scatter-charts.html
+          output: web,ugBk
+        - title: Bubble charts
+          url: /end-user/search/about-bubble-charts.html
+          output: web,ugBk
+        - title: Pareto charts
+          url: /end-user/search/about-pareto-charts.html
+          output: web,ugBk
+        - title: Waterfall charts
+          url: /end-user/search/about-waterfall-charts.html
+          output: web,ugBk
+        - title: Treemap charts
+          url: /end-user/search/about-treemap-charts.html
+          output: web,ugBk
+        - title: Line column charts
+          url: /end-user/search/line-column-charts.html
+          output: web,ugBk
+        - title: Funnel charts
+          url: /end-user/search/about-funnel-charts.html
+          output: web,ugBk
+        - title: Geo charts
+          url: /end-user/search/about-geo-charts.html
+          output: web,ugBk
+        - title: Pivot table
+          url: /complex-search/about-pivoting-a-table.html
+          output: web,ugBk
+        - title: Sankey charts
+          url: /end-user/search/about-sankey-charts.html
+          output: web,ugBk
+        - title: Radar Charts
+          url: /end-user/search/about-radar-charts.html
+          output: web,ugBk
+        - title: Candlestick Charts
+          url: /end-user/search/candlestick-charts.html
+          output: web,ugBk
+      - levelThreeTitle: Changing a chart
         output: web,ugBk
-      - title: Using the in keyword for nested searches
-        url: /complex-search/in-keyword-searches.html
-        output: web,ugBk
-    - levelTwoTitle: Work with filters
+        levelThreeItems:
+        - title: Change the chart
+          url: /end-user/search/change-the-chart.html
+          output: web,ugBk
+        # new with ChartConfig changes
+        - title: Change axes options
+          url: /end-user/search/chart-axes-options.html
+          output: web,ugBk
+        # older topics
+        - title: Reorder the labels
+          url: /end-user/search/reorder-values-on-the-x-axis.html
+          output: web,ugBk
+        - title: Set the y-axis range
+          url: /end-user/search/set-the-y-axis-scale.html
+          output: web,ugBk
+        - title: Hide and show values
+          url: /end-user/search/hide-and-show-values.html
+          output: web,ugBk
+        - title: Change chart colors
+          url: /end-user/search/change-chart-colors.html
+          output: web,ugBk
+        - title: Additional chart options
+          url: /end-user/search/show-data-labels.html
+          output: web,ugBk
+        - title: Zoom into a chart
+          url: /end-user/search/zoom-into-a-chart.html
+          output: web,ugBk
+    - levelTwoTitle: Work with formulas
       output: web,ugBk
       levelTwoItems:
-      - title: Understand filters
-        url: /complex-search/about-filters.html
+      - title: Understand formulas
+        url: /complex-search/add-formula-to-search.html
         output: web,ugBk
-      - title: Add a filter to a table
-        url: /end-user/search/filter-from-column-headers.html
+      - title: Add a formula to a search
+        url: /complex-search/how-to-add-formula.html
         output: web,ugBk
-      - title: Add a filter to a chart
-        url: /end-user/search/filter-from-chart-axes.html
+      - title: View or edit a formula in a search
+        url: /complex-search/edit-formula-in-answer.html
         output: web,ugBk
-      - title: Create a bulk filter
-        url: /complex-search/create-bulk-filter.html
+      - levelThreeTitle: Aggregate formulas
         output: web,ugBk
-      - title: Delete a filter
-        url: /end-user/search/delete-a-filter.html
-        output: web,ugBk
-      - title: Filter on null, blank, or empty values
-        url: /complex-search/about-filters-for-null.html
-        output: web,ugBk
-    - levelTwoTitle: Other search actions
-      output: web,ugBk
-      levelTwoItems:
-      - title: Other search actions
-        url: /complex-search/search-actions.html
-        output: web,ugBk
-      - title: Change result display options
-        url: /complex-search/change-the-view.html
-        output: web,ugBk
-      - title: Show underlying data
-        url: /complex-search/show-underlying-data.html
-        output: web,ugBk
-      - title: See the search behind a result
-        url: /complex-search/drill-down.html
-        output: web,ugBk
-      - title: Apply conditional formatting to a table or chart
-        url: /end-user/search/apply-conditional-formatting.html
-        output: web,ugBk
-      - title: Download your search
-        url: /complex-search/download-your-search.html
-        output: web,ugBk
-      - title: Replay search
-        url: /end-user/search/replay-search.html
-        output: web,ugBk
-  - sectiontitle: Charts (visualizations)
-    output: web,ugBk
-    sectionitems:
-    - title: Understand charts
-      url: /end-user/search/about-charts.html
-      output: web,ugBk
-    - levelTwoTitle: Chart types
-      output: web,ugBk
-      levelTwoItems:
-      - title: Column charts
-        url: /end-user/search/about-column-charts.html
-        output: web,ugBk
-      - title: Bar charts
-        url: /end-user/search/about-bar-charts.html
-        output: web,ugBk
-      - title: Line charts
-        url: /end-user/search/about-line-charts.html
-        output: web,ugBk
-      - title: Pie charts
-        url: /end-user/search/pie-charts.html
-        output: web,ugBk
-      - title: Area charts
-        url: /end-user/search/area-charts.html
-        output: web,ugBk
-      - title: Scatter charts
-        url: /end-user/search/about-scatter-charts.html
-        output: web,ugBk
-      - title: Bubble charts
-        url: /end-user/search/about-bubble-charts.html
-        output: web,ugBk
-      - title: Pareto charts
-        url: /end-user/search/about-pareto-charts.html
-        output: web,ugBk
-      - title: Waterfall charts
-        url: /end-user/search/about-waterfall-charts.html
-        output: web,ugBk
-      - title: Treemap charts
-        url: /end-user/search/about-treemap-charts.html
-        output: web,ugBk
-      - title: Line column charts
-        url: /end-user/search/line-column-charts.html
-        output: web,ugBk
-      - title: Funnel charts
-        url: /end-user/search/about-funnel-charts.html
-        output: web,ugBk
-      - title: Heatmap charts
-        url: /end-user/search/heatmap-chart.html
-        output: web,ugBk
-      - title: Geo charts
-        url: /end-user/search/about-geo-charts.html
-        output: web,ugBk
-      - title: Pivot table
-        url: /complex-search/about-pivoting-a-table.html
-        output: web,ugBk
-      - title: Sankey charts
-        url: /end-user/search/about-sankey-charts.html
-        output: web,ugBk
-      - title: Radar Charts
-        url: /end-user/search/about-radar-charts.html
-        output: web,ugBk
-      - title: Candlestick Charts
-        url: /end-user/search/candlestick-charts.html
-        output: web,ugBk
-    - levelTwoTitle: Changing charts
-      output: web,ugBk
-      levelTwoItems:
-      - title: Changing charts
-        url: /end-user/search/change-the-chart.html
-        output: web,ugBk
-      - title: Change axes options
-        url: /end-user/search/chart-axes-options.html
-        output: web,ugBk
-      - title: Configure the columns
-        url: /end-user/search/drag-and-drop.html
-        output: web,ugBk
-      - title: Rename columns and axes
-        url: /end-user/search/column-renaming.html
-        output: web,ugBk
-      - title: Reorder the labels
-        url: /end-user/search/reorder-values-on-the-x-axis.html
-        output: web,ugBk
-      - title: Set the y-axis range
-        url: /end-user/search/set-the-y-axis-scale.html
-        output: web,ugBk
-      - title: Hide and show values
-        url: /end-user/search/hide-and-show-values.html
-        output: web,ugBk
-      - title: Charts with a very large number of data values
-        url: /end-user/search/high-cardinality.html
-        output: web,ugBk
-      - title: Change chart colors
-        url: /end-user/search/change-chart-colors.html
-        output: web,ugBk
-      - title: Show data labels
-        url: /end-user/search/show-data-labels.html
-        output: web,ugBk
-      - title: Show data markers
-        url: /end-user/search/show-data-markers.html
-        output: web,ugBk
-      - title: Add regression lines
-        url: /end-user/search/regression-line.html
-        output: web,ugBk
-      - title: Display gridlines
-        url: /end-user/search/gridlines.html
-        output: web,ugBk
-      - title: Disable automatic selection of chart type
-        url: /end-user/search/lock-chart-type.html
-        output: web,ugBk
-      - title: Zoom into a chart
-        url: /end-user/search/zoom-into-a-chart.html
-        output: web,ugBk
-  - sectiontitle: Formulas
-    output: web,ugBk
-    sectionitems:
-    - title: Understand formulas
-      url: /complex-search/add-formula-to-search.html
-      output: web,ugBk
-    - title: Add a formula to a search
-      url: /complex-search/how-to-add-formula.html
-      output: web,ugBk
-    - title: View or edit a formula in a search
-      url: /complex-search/edit-formula-in-answer.html
-      output: web,ugBk
-    - levelTwoTitle: Aggregate formulas
-      output: web,ugBk
-      levelTwoItems:
-      - title: Overview of aggregate formulas
-        url: /complex-search/aggregation-formulas.html
-        output: web,ugBk
-      - title: Cumulative functions
-        url: /complex-search/about-cumulative-formulas.html
-        output: web,ugBk
-      - title: Moving functions
-        url: /complex-search/about-moving-formulas.html
-        output: web,ugBk
-      - title: Flexible aggregation functions (group aggregate and filters)
-        url: /complex-search/aggregation-flexible.html
-        output: web,ugBk
-      - title: Grouping functions
-        url: /complex-search/about-pinned-measures.html
-        output: web,ugBk
-      - title: Filtered aggregation functions
-        url: /complex-search/filtered-agg-forms.html
-        output: web,ugBk
-      - title: Aggregate filters
-        url: /complex-search/aggregation-filters.html
-        output: web,ugBk
+        levelThreeItems:
+        - title: Overview of aggregate formulas
+          url: /complex-search/aggregation-formulas.html
+          output: web,ugBk
+        - title: Cumulative functions
+          url: /complex-search/about-cumulative-formulas.html
+          output: web,ugBk
+        - title: Moving functions
+          url: /complex-search/about-moving-formulas.html
+          output: web,ugBk
+        - title: Flexible aggregation functions (group aggregate and filters)
+          url: /complex-search/aggregation-flexible.html
+          output: web,ugBk
+        - title: Grouping functions
+          url: /complex-search/about-pinned-measures.html
+          output: web,ugBk
+        - title: Filtered aggregation functions
+          url: /complex-search/filtered-agg-forms.html
+          output: web,ugBk
       - title: Conversion functions
         url: /complex-search/conversion-formulas.html
         output: web,ugBk
@@ -860,134 +309,149 @@ entries:
       - title: Formulas for chasm traps
         url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
         output: web,ugBk
-  - sectiontitle: Liveboards
-    output: web,ugBk
-    sectionitems:
-    - title: Basic Liveboards
-      url: /end-user/pinboards/about-pinboards.html
+    - levelTwoTitle: Use pinboards
       output: web,ugBk
-    - title: Follow a Liveboard
-      url: /end-user/pinboards/follow-pinboard.html
+      levelTwoItems:
+        - title: Basic pinboard usage
+          url: /end-user/pinboards/about-pinboards.html
+          output: web,ugBk
+        - title: Follow a pinboard
+          url: /end-user/pinboards/follow-pinboard.html
+          output: web,ugBk
+        - title: Edit a pinboard
+          url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
+          output: web,ugBk
+        - title: Pinboard filters
+          url: /complex-search/pinboard-filters.html
+          output: web,ugBk
+        - title: Answer Explorer
+          url: /end-user/pinboards/answer-explorer.html
+          output: web,ugBk
+        - title: Schedule a pinboard job
+          url: /admin/manage-jobs/schedule-a-pinboard-job.html
+          output: web,ugBk
+        - title: Search actions within a pinboard
+          url: /end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html
+          output: web,ugBk
+        - title: Copy a pinboard
+          url: /end-user/pinboards/copy-a-pinboard.html
+          output: web,ugBk
+        - title: Copy a pinboard or visualization link
+          url: /end-user/pinboards/copy-link-for-a-pinboard.html
+          output: web,ugBk
+        - title: Reset a pinboard visualization
+          url: /end-user/pinboards/reset-a-visualization.html
+          output: web,ugBk
+        - title: Present a pinboard as a slideshow
+          url: /end-user/pinboards/start-a-slideshow.html
+          output: web,ugBk
+        - title: Download as PDF
+          url: /end-user/pinboards/download-pinboard-pdf.html
+          output: web,ugBk
+    - levelTwoTitle: Use custom R scripts
       output: web,ugBk
-    - title: Edit a Liveboard
-      url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
+      levelTwoItems:
+        - title: About R in ThoughtSpot
+          url: /end-user/r-scripts/about-r-in-thoughtspot.html
+          output: web,ugBk
+        - title: Create and share R scripts
+          url: /end-user/r-scripts/create-r-scripts.html
+          output: web,ugBk
+        - title: Run prebuilt R scripts on answers
+          url: /end-user/r-scripts/run-prebuilt-r-scripts.html
+          output: web,ugBk
+        - title: Save and share R visualizations
+          url: /end-user/r-scripts/save-and-share-r-answers.html
+          output: web,ugBk
+    - levelTwoTitle: SpotIQ
       output: web,ugBk
-    - title: Liveboard filters
-      url: /complex-search/pinboard-filters.html
+      levelTwoItems:
+        - title: What is SpotIQ
+          url: /spotiq/whatisspotiq.html
+          output: web,ugBk
+        - title: "Best SpotIQ practices"
+          url: /spotiq/special-topics.html
+          output: web,ugBk
+        - title: "Monitor Headlines"
+          url: /spotiq/monitor-headlines.html
+          output: web,ugBk
+        - title: "Comparative Analysis"
+          url: /spotiq/comparative-analysis.html
+          output: web,ugBk
+        - title: "Custom SpotIQ analysis"
+          url: /spotiq/customization.html
+          output: web,ugBk
+        - title: "Advanced R customizations"
+          url: /spotiq/adv-customize-withr.html
+          output: web,ugBk
+        - title: "Insight feedback"
+          url: /spotiq/insight-feedback.html
+          output: web,ugBk
+        - title: "SpotIQ preferences"
+          url: /spotiq/spotiq-preferences.html
+          output: web,ugBk
+    - levelTwoTitle: Work with data
       output: web,ugBk
-    - title: Answer Explorer
-      url: /end-user/pinboards/answer-explorer.html
+      levelTwoItems:
+        - title: "Understand data sources"
+          url: /end-user/data-view/data-intro-end-user.html
+          output: web,ugBk
+        - title: Create and load CSV Files
+          url: /end-user/data-view/generate-flat-file.html
+          output: web,ugBk
+        - title: Append data through the UI
+          url: /admin/loading/append-data-from-a-web-browser.html
+          output: web,ugBk
+        - title: View a data profile
+          url: /admin/loading/view-your-data-profile.html
+          output: web,ugBk
+        - title: Date and currency format settings
+          url: /end-user/locale.html
+          output: web,ugBk
+        - levelThreeTitle: Share your work
+          output: web,ugBk
+          levelThreeItems:
+          - title: About sharing
+            url: /end-user/data-view/sharing-for-end-users.html
+            output: web,ugBk
+          - title: Share a pinboard
+            url: /end-user/pinboards/share-pinboards.html
+            output: web,ugBk
+          - title: Share answers
+            url: /end-user/pinboards/share-answers.html
+            output: web,ugBk
+          - title: Share uploaded data
+            url: /end-user/data-view/share-user-imported-data.html
+            output: web,ugBk
+          - title: Request access
+            url: /end-user/pinboards/request-access.html
+            output: web,ugBk
+          - title: Revoke access (unshare)
+            url: /end-user/pinboards/unshare.html
+            output: web,ugBk
+    - levelTwoTitle: Use SearchIQ
       output: web,ugBk
-    - title: Schedule a Liveboard job
-      url: /admin/manage-jobs/schedule-a-pinboard-job.html
+      levelTwoItems:
+        - title: About SearchIQ
+          url: /end-user/search/about-searchiq.html
+          output: web,ugBk
+        - title: Use SearchIQ for natural searches
+          url: /end-user/search/use-searchiq.html
+          output: web,ugBk
+        - title: Teach SearchIQ your language
+          url: /end-user/search/teach-searchiq.html
+          output: web,ugBk
+    - levelTwoTitle: Slack and ThoughtSpot
       output: web,ugBk
-    - title: Search actions within a Liveboard
-      url: /end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html
-      output: web,ugBk
-    - title: Copy a Liveboard
-      url: /end-user/pinboards/copy-a-pinboard.html
-      output: web,ugBk
-    - title: Copy a Liveboard or visualization link
-      url: /end-user/pinboards/copy-link-for-a-pinboard.html
-      output: web,ugBk
-    - title: Reset a Liveboard visualization
-      url: /end-user/pinboards/reset-a-visualization.html
-      output: web,ugBk
-    - title: Present a Liveboard as a slideshow
-      url: /end-user/pinboards/start-a-slideshow.html
-      output: web,ugBk
-    - title: Download as PDF
-      url: /end-user/pinboards/download-pinboard-pdf.html
-      output: web,ugBk
-  - sectiontitle: SpotIQ
-    output: web,ugBk
-    sectionitems:
-    - title: What is SpotIQ?
-      url: /spotiq/whatisspotiq.html
-      output: web,ugBk
-#    - title: "Best SpotIQ practices"
-#      url: /spotiq/special-topics.html
-#      output: web,ugBk
-#    - title: "Monitor Headlines"
-#      url: /spotiq/monitor-headlines.html
-#      output: web,ugBk
-#    - title: "Comparative Analysis"
-#      url: /spotiq/comparative-analysis.html
-#      output: web,ugBk
-    - title: "SpotIQ analysis"
-      url: /spotiq/customization.html
-      output: web,ugBk
-#    - title: "Insight feedback"
-#      url: /spotiq/insight-feedback.html
-#      output: web,ugBk
-#    - title: "SpotIQ preferences"
-#      url: /spotiq/spotiq-preferences.html
-#      output: web,ugBk
-  - sectiontitle: Mobile
-    output: web,ugBk
-    sectionitems:
-    - title: Overview
-      url: /admin/mobile/use-mobile.html
-      output: web,ugBk
-    - title: Deploy
-      url: /admin/mobile/deploy-mobile.html
-      output: web,ugBk
-    - title: Install and set up
-      url: /admin/mobile/install-mobile.html
-      output: web,ugBk
-    - title: FAQ
-      url: /admin/mobile/faq-mobile.html
-      output: web,ugBk
-    - title: Release notes
-      url: /admin/mobile/notes-mobile.html
-      output: web,ugBk
-  - sectiontitle: Work with data
-    output: web,ugBk
-    sectionitems:
-#    - title: "Understand data sources"
-#      url: /end-user/data-view/data-intro-end-user.html
-#      output: web,ugBk
-#    - title: Create and load CSV Files
-#      url: /end-user/data-view/generate-flat-file.html
-#      output: web,ugBk
-#    - title: Append data through the UI
-#      url: /admin/loading/append-data-from-a-web-browser.html
-#      output: web,ugBk
-#    - title: View a data profile
-#      url: /admin/loading/view-your-data-profile.html
-#      output: web,ugBk
-    - title: Date and currency format settings
-      url: /end-user/locale.html
-      output: web,ugBk
-  - sectiontitle: Share your work
-    output: web,ugBk
-    sectionitems:
-    - title: About sharing
-      url: /end-user/data-view/sharing-for-end-users.html
-      output: web,ugBk
-    - title: Share a Liveboard
-      url: /end-user/pinboards/share-pinboards.html
-      output: web,ugBk
-    - title: Share answers
-      url: /end-user/pinboards/share-answers.html
-      output: web,ugBk
-#    - title: Share uploaded data
-#      url: /end-user/data-view/share-user-imported-data.html
-#      output: web,ugBk
-    - title: Request access
-      url: /end-user/pinboards/request-access.html
-      output: web,ugBk
-    - title: Revoke access (unshare)
-      url: /end-user/pinboards/unshare.html
-      output: web,ugBk
-  - sectiontitle: Help and support
-    output: web,ugBk
-    sectionitems:
+      levelTwoItems:
+        - title: Slack and Spot
+          url: /end-user/slack/intro.html
+          output: web,ugBk
+        - title: How to use Spot
+          url: /end-user/slack/use-spot.html
+          output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
-      output: web,ugBk
-    - title: Contact support
-      url: /end-user/help-center/contact.html
       output: web,ugBk
   - sectiontitle: Administration
     output: web,admBk
@@ -995,96 +459,105 @@ entries:
     - title: Introduction to administration
       url: /admin/intro.html
       output: web,admBk
-    - title: Support Handbook
-      url: /admin/ts-cloud/ts-cloud-support-handbook.html
+    - title: Sign-in credentials for administration
+      url: /admin/setup/logins.html
       output: web,admBk
-#    - levelTwoTitle: Understand the architecture
-#      output: web,admBk
-#      levelTwoItems:
-#      - title: Architectural components
-#        url: /admin/architecture/components.html
-#        output: web,admBk
-#      - title: Data caching
-#        url: /admin/architecture/data-caching.html
-#        output: web,admBk
-#      - title: Authentication frameworks
-#        url: /admin/architecture/authentication.html
-#        output: web,admBk
-#      - title: Data and object security
-#        url: /admin/architecture/security.html
-#        output: web,admBk
-#      - title: Performance considerations
-#        url: /admin/architecture/performance.html
-#        output: web,admBk
-#    - levelTwoTitle: Installation and setup
-#      output: web,admBk
-#      levelTwoItems:
-#      - title: About installation and upgrades
-#        url: /admin/setup/intro.html
-#        output: web,admBk
-#      - title: Set your locale
-#        url: /admin/setup/set-your-thoughtspot-locale.html
-#        output: web,admBk
-#      - title: Test connectivity between nodes
-#        url: /admin/setup/test-network.html
-#        output: web,admBk
-#      - title: Set the relay host for SMTP
-#        url: /admin/setup/set-up-relay-host.html
-#        output: web,admBk
-#      - title: Set up custom calendars
-#        url: /admin/setup/set-custom-calendar.html
-#        output: web,admBk
-#      - title: Configure internal authentication
-#        url: /admin/setup/internal-auth.html
-#        output: web,admBk
-#      - title: Configure SSL
-#        url: /admin/setup/SSL-config.html
-#        output: web,admBk
-#      - title: Configure SAML
-#        url: /admin/setup/configure-SAML-with-tscli.html
-#        output: web,admBk
-#      - levelThreeTitle: Integrate LDAP
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: About LDAP integration
-#          url: /admin/setup/about-LDAP.html
-#          output: web,admBk
-#        - title: Add the SSL certificate for LDAP
-#          url: /admin/setup/add-SSL-for-LDAP.html
-#          output: web,admBk
-#        - title: Test the LDAP configuration
-#          url: /admin/setup/test-ldap.html
-#          output: web,admBk
-#        - title: Sync users and groups from LDAP
-#          url: /admin/setup/sync-users-and-groups-from-ldap.html
-#          output: web,admBk
-#      - title: Configure NAS file system
-#        url: /admin/setup/NAS-mount.html
-#        output: web,admBk
-#      - title: Set up monitoring
-#        url: /admin/setup/set-up-monitoring.html
-#        output: web,admBk
-#      - title: Configure support services
-#        url: /admin/setup/work-with-ts-support.html
-#        output: web,admBk
-#      - title: Network policies
-#        url: /admin/setup/firewall-ports.html
-#        output: web,admBk
-#      - title: Configure load balancing and proxies
-#        url: /admin/setup/about-load-balancer-configuration.html
-#        output: web,admBk
-#      - title: Customize ThoughtSpot Help
-#        url: /admin/setup/customize-help.html
-#        output: web,admBk
-#      - title: Customize look and feel
-#        url: /admin/setup/customize-style.html
-#        output: web,admBk
-    - levelTwoTitle: Manage data
+    - levelTwoTitle: Understand the architecture
       output: web,admBk
       levelTwoItems:
-#      - title: Introduction to data management
-#        url: /admin/loading/loading-intro.html
-#        output: web,admBk
+      - title: Architectural components
+        url: /admin/architecture/components.html
+        output: web,admBk
+      - title: Data caching
+        url: /admin/architecture/data-caching.html
+        output: web,admBk
+      - title: Authentication frameworks
+        url: /admin/architecture/authentication.html
+        output: web,admBk
+      - title: Data and object security
+        url: /admin/architecture/security.html
+        output: web,admBk
+      - title: Performance considerations
+        url: /admin/architecture/performance.html
+        output: web,admBk
+    - levelTwoTitle: Installation and setup
+      output: web,admBk
+      levelTwoItems:
+      - title: About installation and upgrades
+        url: /admin/setup/intro.html
+        output: web,admBk
+      - title: Set your locale
+        url: /admin/setup/set-your-thoughtspot-locale.html
+        output: web,admBk
+      - title: Test connectivity between nodes
+        url: /admin/setup/test-network.html
+        output: web,admBk
+      - title: Set the relay host for SMTP
+        url: /admin/setup/set-up-relay-host.html
+        output: web,admBk
+      - title: Set up custom calendars
+        url: /admin/setup/set-custom-calendar.html
+        output: web,admBk
+      - title: Configure internal authentication
+        url: /admin/setup/internal-auth.html
+        output: web,admBk
+      - title: Configure SSL
+        url: /admin/setup/SSL-config.html
+        output: web,admBk
+      - title: Configure SAML
+        url: /admin/setup/configure-SAML-with-tscli.html
+        output: web,admBk
+      - title: Enable SSH through Active Directory
+        url: /admin/setup/active-directory-based-access.html
+        output: web,admBk
+      - levelThreeTitle: Integrate LDAP
+        output: web,admBk
+        levelThreeItems:
+        - title: About LDAP integration
+          url: /admin/setup/about-LDAP.html
+          output: web,admBk
+        - title: Configure authentication through Active Directory
+          url: /admin/setup/LDAP-config-AD.html
+          output: web,admBk
+        - title: Add the SSL certificate for LDAP
+          url: /admin/setup/add-SSL-for-LDAP.html
+          output: web,admBk
+        - title: Test the LDAP configuration
+          url: /admin/setup/test-ldap.html
+          output: web,admBk
+        - title: Sync users and groups from LDAP
+          url: /admin/setup/sync-users-and-groups-from-ldap.html
+          output: web,admBk
+      - title: Configure NAS file system
+        url: /admin/setup/NAS-mount.html
+        output: web,admBk
+      - title: Set up monitoring
+        url: /admin/setup/set-up-monitoring.html
+        output: web,admBk
+      - title: Configure support services
+        url: /admin/setup/work-with-ts-support.html
+        output: web,admBk
+      - title: Network policies
+        url: /admin/setup/firewall-ports.html
+        output: web,admBk
+      - title: Configure load balancing and proxies
+        url: /admin/setup/about-load-balancer-configuration.html
+        output: web,admBk
+      - title: Customize ThoughtSpot Help
+        url: /admin/setup/customize-help.html
+        output: web,admBk
+      - title: Customize look and feel
+        url: /admin/setup/customize-style.html
+        output: web,admBk
+      - title: Add the Slack integration
+        url: /admin/setup/slack-integration.html
+        output: web,admBk
+    - levelTwoTitle: Load and manage data
+      output: web,admBk
+      levelTwoItems:
+      - title: Introduction to data management
+        url: /admin/loading/loading-intro.html
+        output: web,admBk
       - title: Configure casing
         url: /admin/loading/about-case-configuration.html
         output: web,admBk
@@ -1094,75 +567,75 @@ entries:
       - title: How to view a data schema
         url: /admin/loading/schema-viewer.html
         output: web,admBk
-#      - levelThreeTitle: Plan the schema
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: About schema planning
-#          url: /admin/loading/plan-schema.html
-#          output: web,admBk
-#        - title: Data types
-#          url: /admin/loading/datatypes.html
-#          output: web,admBk
-#        - title: Constraints
-#          url: /admin/loading/constraints.html
-#          output: web,admBk
-#        - title: Sharding
-#          url: /admin/loading/sharding.html
-#          output: web,admBk
-#        - title: Chasm traps
-#          url: /admin/loading/chasm-trap.html
-#          output: web,admBk
-#      - levelThreeTitle: Build the schema
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: Schema building overview
-#          url: /admin/loading/create-schema.html
-#          output: web,admBk
-#        - title: Connect with TQL and create a schema
-#          url: /admin/loading/prep-schema-for-load.html
-#          output: web,admBk
-#        - title: How to write a SQL script
-#          url: /admin/loading/create-schema-with-script.html
-#          output: web,admBk
-#        - title: Schema creation examples
-#          url: /admin/loading/create-schema-example.html
-#          output: web,admBk
-#        - title: Upload an SQL script
-#          url: /admin/loading/upload-sql-script.html
-#          output: web,admBk
-#      - levelThreeTitle: Change the schema
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: How to change a schema
-#          url: /admin/loading/change-schema.html
-#          output: web,admBk
-#        - title: Convert column data type
-#          url: /admin/loading/about-data-type-conversion.html
-#          output: web,admBk
-#      - levelThreeTitle: Load bulk data
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: Import CSV files with tsload
-#          url: /admin/loading/use-data-importer.html
-#          output: web,admBk
-#        - title: Use a script to load data
-#          url: /admin/loading/load-with-script.html
-#          output: web,admBk
+      - levelThreeTitle: Plan the schema
+        output: web,admBk
+        levelThreeItems:
+        - title: About schema planning
+          url: /admin/loading/plan-schema.html
+          output: web,admBk
+        - title: Data types
+          url: /admin/loading/datatypes.html
+          output: web,admBk
+        - title: Constraints
+          url: /admin/loading/constraints.html
+          output: web,admBk
+        - title: Sharding
+          url: /admin/loading/sharding.html
+          output: web,admBk
+        - title: Chasm traps
+          url: /admin/loading/chasm-trap.html
+          output: web,admBk
+      - levelThreeTitle: Build the schema
+        output: web,admBk
+        levelThreeItems:
+        - title: Schema building overview
+          url: /admin/loading/create-schema.html
+          output: web,admBk
+        - title: Connect with TQL and create a schema
+          url: /admin/loading/prep-schema-for-load.html
+          output: web,admBk
+        - title: How to write a SQL script
+          url: /admin/loading/create-schema-with-script.html
+          output: web,admBk
+        - title: Schema creation examples
+          url: /admin/loading/create-schema-example.html
+          output: web,admBk
+        - title: Upload an SQL script
+          url: /admin/loading/upload-sql-script.html
+          output: web,admBk
+      - levelThreeTitle: Change the schema
+        output: web,admBk
+        levelThreeItems:
+        - title: How to change a schema
+          url: /admin/loading/change-schema.html
+          output: web,admBk
+        - title: Convert column data type
+          url: /admin/loading/about-data-type-conversion.html
+          output: web,admBk
+      - levelThreeTitle: Load bulk data
+        output: web,admBk
+        levelThreeItems:
+        - title: Import CSV files with tsload
+          url: /admin/loading/use-data-importer.html
+          output: web,admBk
+        - title: Use a script to load data
+          url: /admin/loading/load-with-script.html
+          output: web,admBk
       - levelThreeTitle: Delete a data source
         output: web,admBk
         levelThreeItems:
         - title: Delete a data source (table)
           url: /admin/loading/delete-data-source-UX.html
           output: web,admBk
-#        - title: Delete or change a table in TQL
-#          url: /admin/loading/check-dependencies-tql.html
-#          output: web,admBk
+        - title: Delete or change a table in TQL
+          url: /admin/loading/check-dependencies-tql.html
+          output: web,admBk
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
       - title: Onboarding Users
         url: /end-user/onboarding/intro-onboarding.html
-        output: web,admBk
+        output: web,ugBk
       - title: Understand groups and privileges
         url: /admin/users-groups/about-users-groups.html
         output: web,admBk
@@ -1171,9 +644,6 @@ entries:
         output: web,admBk
       - title: Create, edit, or delete a user
         url: /admin/users-groups/add-user.html
-        output: web,admBk
-      - title: Manage user logins and sessions
-        url: /admin/users-groups/sign-in.html
         output: web,admBk
       - title: Allow users to sign up
         url: /admin/users-groups/sign-up.html
@@ -1187,15 +657,15 @@ entries:
       - levelThreeTitle: System security
         output: web,admBk
         levelThreeItems:
-        - title: Collect security logs
+        - title: Tools and processes
           url: /admin/data-security/audit-logs.html
           output: web,admBk
-#        - title: About third-party software
-#          url: /admin/data-security/about-secure-monitor-sw.html
-#          output: web,admBk
-#        - title: Installing third-party software
-#          url: /admin/data-security/install-secure-monitor-sw.html
-#          output: web,admBk
+        - title: About third-party software
+          url: /admin/data-security/about-secure-monitor-sw.html
+          output: web,admBk
+        - title: Installing third-party software
+          url: /admin/data-security/install-secure-monitor-sw.html
+          output: web,admBk
       - levelThreeTitle: Data security
         output: web,admBk
         levelThreeItems:
@@ -1211,7 +681,7 @@ entries:
         - title: Share Views
           url: /admin/data-security/share-views.html
           output: web,admBk
-        - title: Share Liveboard
+        - title: Share Pinboard
           url: /admin/data-security/share-pinboards.html
           output: web,admBk
         - title: Share Answers
@@ -1220,9 +690,9 @@ entries:
         - title: Revoke access (unshare)
           url: /admin/data-security/unshare.html
           output: web,admBk
-#        - title: Security for SpotIQ functions
-#          url: /admin/data-security/spotiq-admin.html
-#          output: web,admBk
+        - title: Security for SpotIQ functions
+          url: /admin/data-security/spotiq-admin.html
+          output: web,admBk
       - levelThreeTitle: Row level security (RLS)
         output: web,admBk
         levelThreeItems:
@@ -1238,53 +708,53 @@ entries:
       - title: ThoughtSpot Lifecycle
         url: /admin/data-security/security-thoughtspot-lifecycle.html
         output: web,admBk
-#      - title: Encryption of data in transit
-#        url: /admin/data-security/encryption-of-data.html
-#        output: web,admBk
-#    - levelTwoTitle: System administration
-#      output: web,admBk
-#      levelTwoItems:
-#      - title: Overview of System administration
-#        url: /admin/system-admin/sysadmin-overview.html
-#        output: web,admBk
-#      - title: Send logs when reporting problems
-#        url: /admin/system-admin/send-logs-to-administrator.html
-#        output: web,admBk
-#      - title: Set up recording for Replay Search
-#        url: /admin/system-admin/configure-record-search.html
-#        output: web,admBk
-#      - title: Upgrade a cluster
-#        url: /admin/system-admin/upgrade-a-cluster.html
-#        output: web,admBk
-#    - levelTwoTitle: Backup and restore
-#      output: web,admBk
-#      levelTwoItems:
-#      - title: Understand the backup strategies
-#        url: /admin/backup-restore/choose-strategy.html
-#        output: web,admBk
-#      - title: Understand backup/snapshot schedules
-#        url: /admin/backup-restore/how-to-create-a-schedule.html
-#        output: web,admBk
-#      - title: Work with snapshots
-#        url: /admin/backup-restore/overview-snapshot.html
-#        output: web,admBk
-#      - levelThreeTitle: Work with backups
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: Understand backup modes
-#          url: /admin/backup-restore/backup-modes.html
-#          output: web,admBk
-#        - title: Create a manual backup
-#          url: /admin/backup-restore/take-backup.html
-#          output: web,admBk
-#        - title: Configure periodic backups
-#          url: /admin/backup-restore/configure-backup.html
-#          output: web,admBk
-#        - title: About restore operations
-#          url: /admin/backup-restore/restore.html
-#          output: web,admBk
-    - levelTwoTitle: Improve search with modeling
+      - title: Encryption of data in transit
+        url: /admin/data-security/encryption-of-data.html
+        output: web,admBk
+    - levelTwoTitle: System administration
       output: web,admBk
+      levelTwoItems:
+      - title: Overview of System administration
+        url: /admin/system-admin/sysadmin-overview.html
+        output: web,admBk
+      - title: Send logs when reporting problems
+        url: /admin/system-admin/send-logs-to-administrator.html
+        output: web,admBk
+      - title: Set up recording for Replay Search
+        url: /admin/system-admin/configure-record-search.html
+        output: web,admBk
+      - title: Upgrade a cluster
+        url: /admin/system-admin/upgrade-a-cluster.html
+        output: web,admBk
+    - levelTwoTitle: Backup and restore
+      output: web,admBk
+      levelTwoItems:
+      - title: Understand the backup strategies
+        url: /admin/backup-restore/choose-strategy.html
+        output: web,admBk
+      - title: Understand backup/snapshot schedules
+        url: /admin/backup-restore/how-to-create-a-schedule.html
+        output: web,admBk
+      - title: Work with snapshots
+        url: /admin/backup-restore/overview-snapshot.html
+        output: web,admBk
+      - levelThreeTitle: Work with backups
+        output: web,admBk
+        levelThreeItems:
+        - title: Understand backup modes
+          url: /admin/backup-restore/backup-modes.html
+          output: web,admBk
+        - title: Create a manual backup
+          url: /admin/backup-restore/take-backup.html
+          output: web,admBk
+        - title: Configure periodic backups
+          url: /admin/backup-restore/configure-backup.html
+          output: web,admBk
+        - title: About restore operations
+          url: /admin/backup-restore/restore.html
+          output: web,admBk
+    - levelTwoTitle: Improve search with modeling
+      output: web,pdf
       levelTwoItems:
       - title: About data modeling
         url: /admin/data-modeling/about-data-modeling-intro.html
@@ -1310,9 +780,9 @@ entries:
         - title: Hide a column or define a synonym
           url: /admin/data-modeling/change-visibility-synonym.html
           output: web,admBk
-#        - title: Set columns to exclude from SpotIQ analyses
-#          url: /admin/data-modeling/spotiq-data-model-preferences.html
-#          output: web,admBk
+        - title: Set columns to exclude from SpotIQ analyses
+          url: /admin/data-modeling/spotiq-data-model-preferences.html
+          output: web,admBk
         - title: Manage suggestion indexing
           url: /admin/data-modeling/change-index.html
           output: web,admBk
@@ -1324,18 +794,6 @@ entries:
           output: web,admBk
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
-          output: web,admBk
-        - title: Add or manage experts
-          url: /admin/data-modeling/add-expert.html
-          output: web,admBk
-        - title: Exclude from SpotIQ analyses
-          url: /admin/data-modeling/spotiq-data-model-preferences.html
-          output: web,admBk
-        - title: Chasm traps
-          url: /admin/loading/chasm-trap.html
-          output: web,admBk
-        - title: Data types
-          url: /admin/loading/datatypes.html
           output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
@@ -1349,8 +807,8 @@ entries:
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
-        - title: Use tags
-          url: /admin/data-modeling/tags.html
+        - title: Use stickers
+          url: /admin/data-modeling/stickers-concept.html
           output: web,admBk
     - levelTwoTitle: Simplify search with worksheets
       output: web,admBk
@@ -1383,10 +841,10 @@ entries:
         url: /admin/worksheets/delete-worksheet.html
         output: web,admBk
       - title: Migrate or restore Worksheets
-        url: /admin/ts-cloud/scriptability.html
+        url: /admin/worksheets/worksheet-export.html
         output: web,admBk
-      - title: Worksheet TML specification
-        url: /admin/ts-cloud/tml.html
+      - title: Worksheet YAML specification
+        url: /admin/worksheets/yaml-worksheet.html
         output: web,admBk
     - levelTwoTitle: Work with views
       output: web,admBk
@@ -1403,28 +861,55 @@ entries:
       - title: View example scenarios
         url: /complex-search/more-example-scenarios.html
         output: web,admBk
-#      - title: About materialized views
-#        url: /admin/loading/materialized-views.html
-#        output: web,admBk
-#      - title: Materialize a view
-#        url: /admin/loading/materialize-a-view.html
-#        output: web,admBk
-#      - title: Dematerialize a view
-#        url: /admin/loading/dematerialize-a-view.html
-#        output: web,admBk
-#      - title: Refresh a view
-#        url: /admin/loading/refresh-view.html
-#        output: web,admBk
-#      - title: Schedule view refreshes
-#        url: /admin/loading/schedule-materialization.html
-#        output: web,admBk
+      - title: About materialized views
+        url: /admin/loading/materialized-views.html
+        output: web,admBk
+      - title: Materialize a view
+        url: /admin/loading/materialize-a-view.html
+        output: web,admBk
+      - title: Dematerialize a view
+        url: /admin/loading/dematerialize-a-view.html
+        output: web,admBk
+      - title: Refresh a view
+        url: /admin/loading/refresh-view.html
+        output: web,admBk
+      - title: Schedule view refreshes
+        url: /admin/loading/schedule-materialization.html
+        output: web,admBk
+    - levelTwoTitle: Set up SearchIQ
+      output: web,admBk
+      levelTwoItems:
+      - title: Enable SearchIQ
+        url: /admin/setup/enable-searchiq.html
+        output: web,admBk
+      - title: Optimize SearchIQ
+        url: /end-user/search/searchiq-optimize.html
+        output: web,admBk
+      - levelThreeTitle: Search IQ Optimization Steps
+        output: web,admBk
+        levelThreeItems:
+        - title: Enabling Columns in SearchIQ
+          url: /end-user/search/searchiq-optimize-columns.html
+          output: web,admBk
+        - title: Add Experts for SearchIQ
+          url: /end-user/search/searchiq-optimize-experts.html
+          output: web,admBk
+        - title: Train SearchIQ
+          url: /end-user/search/searchiq-optimize-train.html
+          output: web,admBk
+      - title: Set entity categories for SearchIQ
+        url: /admin/data-modeling/set-entity-category.html
+        output: web,admBk
+      - title: Change SearchIQ mappings
+        url: /admin/data-modeling/searchiq-mappings.html
+        output: web,admBk
     - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
       levelTwoItems:
-      - title: Job management (scheduled Liveboards)
+      - title: Job management (scheduled pinboards)
         url: /admin/manage-jobs/about-scheduled-pinboards.html
         output: web,admBk
-      - title: Scheduled Liveboards management
+      - title: Scheduled pinboards management
         url: /admin/manage-jobs/scheduled-pinboards-management.html
         output: web,admBk
     - levelTwoTitle: Monitoring
@@ -1433,22 +918,22 @@ entries:
       - title: Introduction to monitoring
         url: /admin/system-monitor/introduction.html
         output: web,admBk
-#      - title: Overview board
-#        url: /admin/system-monitor/overview.html
-#        output: web,admBk
-#      - title: Data board
-#        url: /admin/system-monitor/data.html
-#        output: web,admBk
-#      - title: Cluster Manager board
-#        url: /admin/system-monitor/cluster-manager.html
-#        output: web,admBk
-#      - title: Alerts and Events board
-#        url: /admin/system-monitor/alerts-events.html
-#        output: web,admBk
+      - title: Overview board
+        url: /admin/system-monitor/overview.html
+        output: web,admBk
+      - title: Data board
+        url: /admin/system-monitor/data.html
+        output: web,admBk
+      - title: Cluster Manager board
+        url: /admin/system-monitor/cluster-manager.html
+        output: web,admBk
+      - title: Alerts and Events board
+        url: /admin/system-monitor/alerts-events.html
+        output: web,admBk
       - title: System worksheets
         url: /admin/system-monitor/worksheets.html
         output: web,admBk
-      - title: System Liveboards
+      - title: System pinboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
     - levelTwoTitle: Troubleshooting
@@ -1457,42 +942,730 @@ entries:
       - title: About troubleshooting
         url: /admin/troubleshooting/troubleshooting-intro.html
         output: web,admBk
-#      - title: Get your configuration and logs
-#        url: /admin/troubleshooting/get-logs.html
-#        output: web,admBk
-#      - title: Upload logs to ThoughtSpot Support
-#        url: /admin/troubleshooting/upload-logs-egnyte.html
-#        output: web,admBk
+      - title: Get your configuration and logs
+        url: /admin/troubleshooting/get-logs.html
+        output: web,admBk
+      - title: Upload logs to ThoughtSpot Support
+        url: /admin/troubleshooting/upload-logs-egnyte.html
+        output: web,admBk
       - title: Network connectivity issues
         url: /admin/troubleshooting/check-connectivity.html
         output: web,admBk
-#      - title: Check the timezone
-#        url: /admin/troubleshooting/set-timezone.html
-#        output: web,admBk
-#      - title: Browser untrusted connection error
-#        url: /admin/troubleshooting/certificate-warning.html
-#        output: web,admBk
-#      - title: Characters not displaying correctly
-#        url: /admin/loading/char-encoding.html
-#        output: web,admBk
+      - title: Check the timezone
+        url: /admin/troubleshooting/set-timezone.html
+        output: web,admBk
+      - title: Browser untrusted connection error
+        url: /admin/troubleshooting/certificate-warning.html
+        output: web,admBk
+      - title: Characters not displaying correctly
+        url: /admin/loading/char-encoding.html
+        output: web,admBk
       - title: Clear the browser cache
         url: /admin/troubleshooting/clear-browser-cache.html
         output: web,admBk
       - title: Cannot open a saved answer that contains a formula
         url: /admin/troubleshooting/formula-date-problem.html
         output: web,admBk
-#      - title: Data loading too slowly
-#        url: /admin/troubleshooting/data-loading-too-slowly.html
-#        output: web,admBk
+      - title: Data loading too slowly
+        url: /admin/troubleshooting/data-loading-too-slowly.html
+        output: web,admBk
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
-    - title: Consumption-based pricing
-      url: /admin/ts-cloud/consumption-pricing.html
-      output: web,admBk
-    - title: Contact ThoughtSpot Support
-      url: /admin/misc/contact.html
-      output: web,admBk
+  - sectiontitle: Mobile
+    output: web
+    sectionitems:
+    - title: Overview
+      url: /admin/mobile/use-mobile.html
+      output: web
+    - title: Deploy
+      url: /admin/mobile/deploy-mobile.html
+      output: web
+    - title: Install and set up
+      url: /admin/mobile/install-mobile.html
+      output: web
+    - title: FAQ
+      url: /admin/mobile/faq-mobile.html
+      output: web
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web
+  - sectiontitle: Embedding
+    output: web,apgBk
+    sectionitems:
+    - title: Introduction to Embedding
+      url: /app-integrate/introduction/introduction.html
+      output: web,apgBk
+    - title: Log in to the Linux shell using SSH
+      url: /app-integrate/introduction/login-console.html
+      output: web,apgBk
+    - title: Log in credentials
+      url: /app-integrate/introduction/logins.html
+      output: web,apgBk
+    - title: Use the JavaScript API
+      url: /app-integrate/JSAPI/about-JS-API.html
+      output: web,apgBk
+    - levelTwoTitle: SAML
+      output: web,apgBk
+      levelTwoItems:
+      - title: About SAML
+        url: /app-integrate/SAML/about-SAML-integrations.html
+        output: web,apgBk
+      - title: Configure SAML
+        url: /app-integrate/SAML/configure-SAML-with-tscli.html
+        output: web,apgBk
+      - title: Configure CA SiteMinder
+        url: /app-integrate/SAML/configure-SAML-siteminder.html
+        output: web,apgBk
+      - title: Configure Active Directory Federated Services
+        url: /app-integrate/SAML/integrate-ADFS.html
+        output: web,apgBk
+    - levelTwoTitle: REST API
+      output: web,apgBk
+      levelTwoItems:
+      - title: About the REST API
+        url: /app-integrate/data-api/about-data-api.html
+        output: web,apgBk
+      - title: Calling the REST API
+        url: /app-integrate/data-api/calling-rest-api.html
+        output: web,apgBk
+      - title: REST API pagination
+        url: /app-integrate/data-api/response-pagination.html
+        output: web,apgBk
+      - title: Use the REST API to get data
+        url: /app-integrate/data-api/use-data-api-read.html
+        output: web,apgBk
+      - title: Use the Embedded Search API
+        url: /app-integrate/data-api/direct-search-to-embed.html
+        output: web,apgBk
+      - title: Use the Data Push API
+        url: /app-integrate/data-api/push-data-to-external-app.html
+        output: web,apgBk
+    - levelTwoTitle: Embed ThoughtSpot
+      output: web,apgBk
+      levelTwoItems:
+      - title: Understand embedding
+        url: /app-integrate/embedding-viz/about-embedding-viz.html
+        output: web,apgBk
+      - title: Embed pinboard or visualization
+        url: /app-integrate/embedding-viz/embed-a-viz.html
+        output: web,apgBk
+      - title: Authentication flow with embed
+        url: /app-integrate/JSAPI/enable-JS-API.html
+        output: web,apgBk
+      - title: Full application embedding
+        url: /app-integrate/embedding-viz/about-full-embed.html
+        output: web,apgBk
+      - title: Configure trusted authentication
+        url: /app-integrate/embedding-viz/trusted-authentication.html
+        output: web,apgBk
+    - levelTwoTitle: Runtime Filters
+      output: web,apgBk
+      levelTwoItems:
+      - title: About Runtime Filters
+        url: /app-integrate/runtime-filters/about-runtime-filters.html
+        output: web,apgBk
+      - title: Apply a Runtime Filter
+        url: /app-integrate/runtime-filters/apply-runtime-filter.html
+        output: web,apgBk
+      - title: Runtime Filter Operators
+        url: /app-integrate/runtime-filters/runtime-filter-operators.html
+        output: web,apgBk
+    - levelTwoTitle: Style Customization
+      output: web,apgBk
+      levelTwoItems:
+      - title: Customize the application style
+        url: /app-integrate/custom-branding/perform-style-customization.html
+        output: web,apgBk
+      - title: Upload application logos
+        url: /app-integrate/custom-branding/upload-application-logos.html
+        output: web,apgBk
+      - title: Set chart and table visualization fonts
+        url: /app-integrate/custom-branding/set-chart-and-table-visualization-fonts.html
+        output: web,apgBk
+      - title: Choose a background color
+        url: /app-integrate/custom-branding/choose-background-color.html
+        output: web,apgBk
+      - title: Select chart color palettes
+        url: /app-integrate/custom-branding/select-chart-color-palettes.html
+        output: web,apgBk
+      - title: Change the footer text
+        url: /app-integrate/custom-branding/change-the-footer-text.html
+        output: web,apgBk
+    - levelTwoTitle: API Reference
+      output: web,apgBk
+      levelTwoItems:
+      - title: Introduction
+        url: /app-integrate/reference/public-api-reference.html
+        output: web,apgBk
+      - title: Pinboard Data API
+        url: /app-integrate/reference/pinboarddata.html
+        output: web,apgBk
+      - title: Metadata API
+        url: /app-integrate/reference/metadata-api.html
+        output: web,apgBk
+      - title: Session API
+        url: /app-integrate/reference/session-api.html
+        output: web,apgBk
+      - title: User API
+        url: /app-integrate/reference/user-api.html
+        output: web,apgBk
+      - title: Group API
+        url: /app-integrate/reference/group-api.html
+        output: web,apgBk
+      - title: Materialization API
+        url: /app-integrate/reference/materialization-api.html
+        output: web,apgBk
+      - title: Search Data API
+        url: /app-integrate/reference/search-data-api.html
+        output: web,apgBk
+ # -- Uncomment out this section ONLY when generating a PDF for AWS
+#  - sectiontitle: AWS Installation
+#    output: web,instAWS
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/aws/configuration-options.html
+#      output: web,appQs,instAWS
+#    - title: Set up ThoughtSpot resources for AWS
+#      url: /appliance/aws/launch-an-instance.html
+#      output: web,appQs,instAWS
+#    - title: Prepare AWS VMs for ThoughtSpot
+#      url: /appliance/aws/aws-prepare-vms.html
+#      output: web,appQs,instAWS
+#    - title: Configure ThoughtSpot nodes in AWS
+#      url: /appliance/aws/installing-aws.html
+#      output: web,appQs,instAWS
+#    - title: Install ThoughtSpot clusters in AWS
+#      url: /appliance/aws/aws-cluster-install.html
+#      output: web,appQs,instAWS
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instAWS
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instAWS
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instAWS
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instAWS
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAWS
+
+# -- end of PDF for AWS section
+# -- Uncomment out this section ONLY when generating a PDF for Azure
+#  - sectiontitle: Azure Installation
+#    output: web,instAzure
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/azure/configuration-options.html
+#      output: web,appQs,instAzure
+#    - title: Set up ThoughtSpot in Azure
+#      url: /appliance/azure/launch-an-instance.html
+#      output: web,appQs,instAzure
+#    - title: Configure ThoughtSpot nodes in Azure
+#      url: /appliance/azure/installing-azure.html
+#      output: web,appQs,instAzure
+#    - title: Install ThoughtSpot clusters in Azure
+#      url: /appliance/azure/azure-cluster-install.html
+#      output: web,appQs,instAzure
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instAzure
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instAzure
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instAzure
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instAzure
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAzure
+# -- end of PDF for Azure section
+# -- Uncomment out this section ONLY when generating a PDF for GCP
+#  - sectiontitle: GCP Installation
+#    output: web,instGCP
+#    sectionitems:
+#    - title: Configuration options
+#      url: /appliance/gcp/configuration-options.html
+#      output: web,appQs,instGCP
+#    - title: Set up ThoughtSpot in GCP
+#      url: /appliance/gcp/launch-an-instance.html
+#      output: web,appQs,instGCP
+#    - title: Configure ThoughtSpot nodes in GCP
+#      url: /appliance/gcp/installing-gcp.html
+#      output: web,appQs,instGCP
+#    - title: Install ThoughtSpot clusters in GCP
+#      url: /appliance/gcp/gcp-cluster-install.html
+#      output: web,appQs,instGCP
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instGCP
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instGCP
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instGCP
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instGCP
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instGCP
+# -- end of PDF for GCP section
+# -- Uncomment out this section ONLY when generating a PDF for VMware
+#  - sectiontitle: VMware Installation
+#    output: web,instVMware
+#    sectionitems:
+#    - title: Configuration overview
+#      url: /appliance/vmware/vmware-intro.html
+#      output: web,appQs,instVMware
+#    - title: Set up ThoughtSpot in VMware
+#      url: /appliance/vmware/vmware-setup.html
+#      output: web,appQs,instVMware
+#    - title: Configure ThoughtSpot nodes in VMware
+#      url: /appliance/vmware/installing-vmware.html
+#      output: web,appQs,instVMware
+#    - title: Install ThoughtSpot clusters in VMware
+#      url: /appliance/vmware/vmware-cluster-install.html
+#      output: web,appQs,instVMware
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instVMware
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instVMware
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instVMware
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instVMware
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instVMware
+# -- end of PDF for VMware section
+# -- Uncomment out this section ONLY when generating a PDF for Dell
+#  - sectiontitle: Dell Installation
+#    output: web,appQs,instDell
+#    sectionitems:
+#    - title: Deploying on the Dell appliance
+#      url: /appliance/hardware/installing-dell.html
+#      output: web,appQs,instDell
+#    - title: Prerequisites
+#      url: /appliance/hardware/prerequisites-dell.html
+#      output: web,appQs,instDell
+#    - title: Hardware requirements
+#      url: /appliance/hardware/hardware-requirements-dell.html
+#      output: web,appQs,instDell
+#    - title: Connect the appliance
+#      url: /appliance/hardware/connect-appliance-dell.html
+#      output: web,appQs,instDell
+#    - title: Configure management settings
+#      url: /appliance/hardware/configure-management-dell.html
+#      output: web,appQs,instDell
+#    - title: Configure nodes
+#      url: /appliance/hardware/configure-nodes-dell.html
+#      output: web,appQs,instDell
+#    - title: Install cluster
+#      url: /appliance/hardware/install-cluster-dell.html
+#      output: web,appQs,instDell
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instDell
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instDell
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instDell
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instDell
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instDell
+#    - title: Cable reference
+#      url: /appliance/hardware/cable-networking.html
+#      output: web,appQs,instDell
+# -- end of PDF for Dell section
+# -- Uncomment out this section ONLY when generating a PDF for SMC
+#  - sectiontitle: SMC Installation
+#    output: web,appQs,instSMC
+#    sectionitems:
+#    - title: Deploying on the SMC appliance
+#      url: /appliance/hardware/installing-the-smc.html
+#      output: web,appQs,instSMC
+#    - title: Prerequisites
+#      url: /appliance/hardware/prerequisites-smc.html
+#      output: web,appQs,instSMC
+#    - title: Hardware requirements
+#      url: /appliance/hardware/hardware-requirements-smc.html
+#      output: web,appQs,instSMC
+#    - title: Connect the appliance
+#      url: /appliance/hardware/connect-appliance-smc.html
+#      output: web,appQs,instSMC
+#    - title: Configure nodes
+#      url: /appliance/hardware/configure-nodes-smc.html
+#      output: web,appQs,instSMC
+#    - title: Install cluster
+#      url: /appliance/hardware/smc-cluster-install.html
+#      output: web,appQs,instSMC
+#    - title: The nodes.config file
+#      url: /appliance/hardware/nodesconfig-example.html
+#      output: web,appQs,instSMC
+#    - title: Parameters of the nodes.config file
+#      url: /appliance/hardware/parameters-nodesconfig.html
+#      output: web,appQs,instSMC
+#    - title: Using the cluster create command
+#      url: /appliance/hardware/cluster-create.html
+#      output: web,appQs,instSMC
+#    - title: Parameters of the cluster create command
+#      url: /appliance/hardware/parameters-cluster-create.html
+#      output: web,appQs,instSMC
+#    - title: Network policies
+#      url: /appliance/firewall-ports.html
+#      output: web,appQs,instSMC
+#    - title: Cable reference
+#      url: /appliance/hardware/cable-networking.html
+#      output: web,appQs,instSMC
+# -- end of PDF for SMC section
+  - sectiontitle: Deploy
+    output: web,appQs
+    sectionitems:
+    - title: Overview
+      url: /appliance/welcome-intro.html
+      output: web,appQs
+    - levelTwoTitle: Hardware appliance
+      output: web,appQs
+      levelTwoItems:
+      - title: Hardware appliance overview
+        url: /appliance/hardware/inthebox.html
+        output: web,appQs,instSMC,instDell
+      - levelThreeTitle: Deploying on the SMC appliance
+        output: web,appQs,instSMC
+        levelThreeItems:
+        - title: Deploying on the SMC appliance
+          url: /appliance/hardware/installing-the-smc.html
+          output: web,appQs,instSMC
+        - title: Prerequisites
+          url: /appliance/hardware/prerequisites-smc.html
+          output: web,appQs,instSMC
+        - title: Hardware requirements
+          url: /appliance/hardware/hardware-requirements-smc.html
+          output: web,appQs,instSMC
+        - title: Connect the appliance
+          url: /appliance/hardware/connect-appliance-smc.html
+          output: web,appQs,instSMC
+        - title: Configure nodes
+          url: /appliance/hardware/configure-nodes-smc.html
+          output: web,appQs,instSMC
+        - title: Install cluster
+          url: /appliance/hardware/smc-cluster-install.html
+          output: web,appQs,instSMC
+      - levelThreeTitle: Deploying on the Dell appliance
+        output: web,appQs,instDell
+        levelThreeItems:
+        - title: Deploying on the Dell appliance
+          url: /appliance/hardware/installing-dell.html
+          output: web,appQs,instDell
+        - title: Prerequisites
+          url: /appliance/hardware/prerequisites-dell.html
+          output: web,appQs,instDell
+        - title: Hardware requirements
+          url: /appliance/hardware/hardware-requirements-dell.html
+          output: web,appQs,instDell
+        - title: Connect the appliance
+          url: /appliance/hardware/connect-appliance-dell.html
+          output: web,appQs,instDell
+        - title: Configure management settings
+          url: /appliance/hardware/configure-management-dell.html
+          output: web,appQs,instDell
+        - title: Configure nodes
+          url: /appliance/hardware/configure-nodes-dell.html
+          output: web,appQs,instDell
+        - title: Install cluster
+          url: /appliance/hardware/install-cluster-dell.html
+          output: web,appQs,instDell
+      - title: The nodes.config file
+        url: /appliance/hardware/nodesconfig-example.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+      - title: Parameters of the nodes.config file
+        url: /appliance/hardware/parameters-nodesconfig.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+      - title: Using the tscli cluster create command
+        url: /appliance/hardware/cluster create.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+      - title: Parameters of the tscli cluster create command
+        url: /appliance/hardware/parameters-cluster-create.html
+        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+    - levelTwoTitle: Cloud
+      output: web,appQs
+      levelTwoItems:
+      - title: Cloud overview
+        url: /appliance/cloud.html
+        output: web,appQs
+      - levelThreeTitle: AWS
+        output: web,appQs,instAWS
+        levelThreeItems:
+        - title: Configuration options
+          url: /appliance/aws/configuration-options.html
+          output: web,appQs,instAWS
+        - title: Set up AWS resources for ThoughtSpot
+          url: /appliance/aws/launch-an-instance.html
+          output: web,appQs,instAWS
+        - title: Prepare AWS VMs for ThoughtSpot
+          url: /appliance/aws/aws-prepare-vms.html
+          output: web,appQs,instAWS
+        - title: Configure ThoughtSpot nodes in AWS
+          url: /appliance/aws/installing-aws.html
+          output: web,appQs,instAWS
+        - title: Install ThoughtSpot clusters in AWS
+          url: /appliance/aws/aws-cluster-install.html
+          output: web,appQs,instAWS
+        - title: Set up high availability
+          url: /appliance/aws/ha-aws-efs.html
+          output: web,appQs,instAWS
+      - levelThreeTitle: Azure
+        output: web,appQs,instAzure
+        levelThreeItems:
+        - title: Configuration options
+          url: /appliance/azure/configuration-options.html
+          output: web,appQs
+        - title: Set up ThoughtSpot in Azure
+          url: /appliance/azure/launch-an-instance.html
+          output: web,appQs,instAzure
+        - title: Configure ThoughtSpot nodes in Azure
+          url: /appliance/azure/installing-azure.html
+          output: web,appQs,instAzure
+        - title: Install ThoughtSpot clusters in Azure
+          url: /appliance/azure/azure-cluster-install.html
+          output: web,appQs,instAzure
+      - levelThreeTitle: GCP
+        output: web,appQs, instGCP
+        levelThreeItems:
+        - title: Configuration options
+          url: /appliance/gcp/configuration-options.html
+          output: web,appQs,instGCP
+        - title: Set up ThoughtSpot in GCP
+          url: /appliance/gcp/launch-an-instance.html
+          output: web,appQs,instGCP
+        - title: Configure ThoughtSpot nodes in GCP
+          url: /appliance/gcp/installing-gcp.html
+          output: web,appQs,instGCP
+        - title: Install ThoughtSpot clusters in GCP
+          url: /appliance/gcp/gcp-cluster-install.html
+          output: web,appQs,instGCP
+    - levelTwoTitle: VMware
+      output: web,appQs,instVMware
+      levelTwoItems:
+        - title: Configuration overview
+          url: /appliance/vmware/vmware-intro.html
+          output: web,appQs,instVMware
+        - title: Set up ThoughtSpot in VMware
+          url: /appliance/vmware/vmware-setup.html
+          output: web,appQs,instVMware
+        - title: Configure ThoughtSpot nodes in VMware
+          url: /appliance/vmware/installing-vmware.html
+          output: web,appQs,instVMware
+        - title: Install ThoughtSpot clusters in VMware
+          url: /appliance/vmware/vmware-cluster-install.html
+          output: web,appQs,instVMware
+    - title: Network policies
+      url: /appliance/firewall-ports.html
+      output: web,appQs
+    - title: Contact support
+      url: /appliance/contact.html
+      output: web,appQs
+  - sectiontitle: Embrace
+    output: web,pdf
+    sectionitems:
+    - title: Overview
+      url: /data-integrate/embrace/embrace-intro.html
+      output: web,embraceGd
+    - levelTwoTitle: Snowflake
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-snowflake-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-snowflake-modify.html
+        output: web,embraceGd
+      - title: Best practices
+        url: /data-integrate/embrace/embrace-snowflake-best.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-snowflake-reference.html
+        output: web,embraceGd
+#      - title: Snowflake Partner Connect
+#        url: /data-integrate/embrace/embrace-snowflake-partner.html
+#        output: web,embraceGd
+    - levelTwoTitle: Redshift
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-redshift-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-redshift-modify.html
+        output: web,embraceGd
+#      - title: Best practices
+#        url: /data-integrate/embrace/embrace-redshift-best.html
+#        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-redshift-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: BigQuery
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-gbq-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-gbq-modify.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-gbq-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: Synapse
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-synapse-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-synapse-modify.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-synapse-reference.html
+        output: web,embraceGd
+#    - title: Cloud Express for Embrace
+#      url: /data-integrate/embrace/embrace-cloud-express.html
+#      output: web,embraceGd
+  - sectiontitle: Data Integration
+    output: web,pdf
+    sectionitems:
+    - title: Introduction to Data Integration
+      url: /data-integrate/introduction/introduction-data-integration.html
+      output: web,digBk
+#    - levelTwoTitle: Embrace
+#      output: web,digBk
+#      levelTwoItems:
+#      - title: Overview
+#        url: /data-integrate/embrace/embrace-intro.html
+#        output: web,digBk
+#      - title: Add a connection
+#        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
+#        output: web,digBk
+#      - title: Modify a connection
+#        url: /data-integrate/embrace/getting-started/modify-a-connection.html
+#        output: web,apgBk
+#      - title: Connectors reference
+#        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
+#        output: web,digBk
+    - title: JDBC and ODBC setup prerequisites
+      url: /data-integrate/introduction/jdbc-odbc-prereqs.html
+      output: web,digBk
+    - levelTwoTitle: ODBC driver client
+      output: web,digBk
+      levelTwoItems:
+       - title: ODBC driver overview
+         url: /data-integrate/clients/about-odbc.html
+         output: web,digBk
+       - levelThreeTitle: ODBC on Windows
+         output: web,digBk
+         levelThreeItems:
+         - title: Install the ODBC driver on Windows
+           url: /data-integrate/clients/install-odbc-windows.html
+           output: web,digBk
+         - title: Configure multiple connections on Windows
+           url: /data-integrate/clients/multiple-sources-windows.html
+           output: web,digBk
+         - title: Deploy SSL with ODBC on Windows
+           url: /data-integrate/clients/windows-deploy-ssl.html
+           output: web,digBk
+         - title: Set up the ODBC driver for SSIS
+           url: /data-integrate/clients/set-up-the-odbc-driver-using-ssis.html
+           output: web,digBk
+       - title: Install the ODBC driver on Linux
+         url: /data-integrate/clients/install-odbc-linux.html
+         output: web,digBk
+       - title: Best Practices for Using ODBC
+         url: /data-integrate/clients/odbc-best-practices.html
+         output: web,digBk
+    - levelTwoTitle: JDBC driver client
+      output: web,digBk
+      levelTwoItems:
+      - title: JDBC driver overview
+        url: /data-integrate/clients/about-jdbc-driver.html
+        output: web,digBk
+      - title: Use the JDBC driver
+        url: /data-integrate/clients/use-jdbc-driver.html
+        output: web,digBk
+    - title: Set up the JDBC driver for Pentaho
+      url: /data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html
+      output: web,digBk
+    - levelTwoTitle: Troubleshooting
+      output: web,digBk
+      levelTwoItems:
+      - title: Troubleshooting Data Integrations
+        url: /data-integrate/troubleshooting/troubleshooting-intro.html
+        output: web,digBk
+      - title: Enable ODBC logs
+        url: /data-integrate/troubleshooting/enable-ODBC-log.html
+        output: web,digBk
+      - title: Enable JDBC logs
+        url: /data-integrate/troubleshooting/JDBC-logging.html
+        output: web,digBk
+      - title: Schema not found error with ODBC
+        url: /data-integrate/troubleshooting/schema-not-found.html
+        output: web,digBk
+      - title: How to improve throughput
+        url: /data-integrate/troubleshooting/how-to-improve-throughput-of-the-load.html
+        output: web,digBk
+      - title: ODBC tracing on Windows
+        url: /data-integrate/troubleshooting/windows-odbc-tracing.html
+        output: web,digBk
+    - levelTwoTitle: Reference
+      output: web,digBk
+      levelTwoItems:
+      - title: Supported SQL commands
+        url: /data-integrate/reference/odbc-commands.html
+        output: web,digBk
+      - title: Connection configuration
+        url: /data-integrate/reference/simba-settings.html
+        output: web,digBk
+  - sectiontitle: Disaster Recovery
+    output: web,drgBk
+    sectionitems:
+    - title: About disaster recovery
+      url: /disaster-recovery/about-disaster-recovery.html
+      output: web,drgBk
+    - title: Disk failure
+      url: /disaster-recovery/disk-failure.html
+      output: web,drgBk
+    - title: Node failure
+      url: /disaster-recovery/node-failure.html
+      output: web,drgBk
+    - levelTwoTitle: Cluster replacement
+      output: web,drgBk
+      levelTwoItems:
+      - title: Overview of cluster replacement
+        url: /disaster-recovery/cluster-replacement.html
+        output: web,drgBk
+      - title: Mount a NAS file system
+        url: /disaster-recovery/nas-mount.html
+        output: web,drgBk
+      - title: Configure disaster recovery
+        url: /disaster-recovery/set-up-DR-config.html
+        output: web,drgBk
   - sectiontitle: Reference
     output: web,refGd
     sectionitems:
@@ -1502,15 +1675,15 @@ entries:
     - title: Keyword reference
       url: /reference/keywords.html
       output: web,refGd
-#    - title: TQL reference
-#      url: /reference/sql-cli-commands.html
-#      output: web,refGd
-#    - title: tsload flag reference
-#      url: /reference/data-importer-ref.html
-#      output: web,refGd
-#    - title: tscli command reference
-#      url: /reference/tscli-command-ref.html
-#      output: web,refGd
+    - title: TQL reference
+      url: /reference/sql-cli-commands.html
+      output: web,refGd
+    - title: tsload flag reference
+      url: /reference/data-importer-ref.html
+      output: web,refGd
+    - title: tscli command reference
+      url: /reference/tscli-command-ref.html
+      output: web,refGd
     - title: Date and time formats reference
       url: /reference/date-formats-for-loading.html
       output: web,refGd
@@ -1526,11 +1699,11 @@ entries:
     - title: User action codes reference
       url: /reference/action-codes.html
       output: web,refGd
+    - title: Stop word reference
+      url: /reference/stop-words.html
+      output: web,refGd
     - title: Geo map reference
       url: /reference/geomap-reference.html
-      output: web,refGd
-    - title: REST API reference
-      url: /reference/api/rest-api-reference.html
       output: web,refGd
     - title: Glossary
       url: /reference/glossary.html
@@ -1538,6 +1711,28 @@ entries:
     - title: Frequently asked questions
       url: /faq/faq.html
       output: web,refGd
+    - levelTwoTitle: Deployment reference
+      output: web,refGd
+      levelTwoItems:
+      - title: Network Policies
+        url: /appliance/firewall-ports.html
+        output: web,refGd
+      - title: The nodes.config file
+        url: /appliance/hardware/nodesconfig-example.html
+        output: web,refGd
+      - title: Parameters of nodes.config
+        url: /appliance/hardware/parameters-nodesconfig.html
+        output: web,refGd
+      - title: Using the cluster create command
+        url: /appliance/hardware/cluster-create.html
+        output: web,refGd
+      - title: Parameters of cluster create
+        url: /appliance/hardware/parameters-cluster-create.html
+        output: web,refGd
+      - title: Site Survey
+        url: /site-survey.pdf
+        output: web,refGd
+
   - sectiontitle: ThoughtSpot in Practice
     output: web,practGd
     sectionitems:
@@ -1547,13 +1742,6 @@ entries:
     - title: Reaggregation in practice
       url: /reference/practice/reaggregation-scenarios.html
       output: web,practGd
-    - title: Liveboard schedule gating conditions in practice
-      url: /reference/practice/pinboard-gating-condition-example.html
-      output: web,practGd
-    - title: Add a hyperlink to a Search
-      url: /reference/practice/pinboard-hyperlink.html
-      output: web,practGd
-
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web

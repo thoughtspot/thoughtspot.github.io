@@ -1,16 +1,13 @@
 ---
 title: ["Create, edit, or delete a user"]
-last_updated: 11/05/2021
+last_updated: 10/08/2019
 summary: "For each unique person who accesses ThoughtSpot, you must create a user account. When you create a user manually in ThoughtSpot, you continue to manage that user in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
 
-{% include content/liveboards-announcement.md %}
-
-You can create users directly in ThoughtSpot, or import users and user groups through SAML or similar protocols.
-
-For users who have access through SAML, the SAML installation manages all user information.
+For users who have access through LDAP, the LDAP installation manages all user information.
 
 {: id="add-user"}
 ## Create a user in ThoughtSpot
@@ -21,13 +18,22 @@ Note that all users automatically belong to the group **All**.
 
 To create a new user and assign that user to groups, follow these steps:
 
-1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
+2. Click the **Admin** icon, on the top navigation bar.
 
-2. Select **Users** from the side navigation bar that appears.
+    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
-    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
+3.  In the **Admin** panel, click **User Management**.
 
-5. Click the **+ Add User** button on the upper left-hand side of the list of users.
+    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
+
+4.  In the **User Management** section, click **Users**.
+
+    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-users.png "Manage Users")
+
+5. Click the **+ Add User** button on the upper right-hand side of the list of users.
+
+     ![Add a new User]({{ site.baseurl }}/images/admin-user-management-add-user.png "Add a new User")
 
 5. In the **Add a new user** interface, enter the details for the new user:
 
@@ -47,7 +53,8 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="username">
         <th>Username</th>
         <td>Yes</td>
-        <td>A login name for the user. Usernames must be unique and lowercase.</td>
+        <td>A login name for the user. Usernames must be unique and lowercase.
+        <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain-qualified (<code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
       </tr>
       <tr id="display-name">
         <th>Display name</th>
@@ -63,9 +70,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="password">
         <th>Change password</th>
         <td>Yes</td>
-        <td>A password. Your password must meet the following requirements:
-        <ul><li>The password must be 8 characters or more in length.</li><li>The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.</li><li>The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other requirements. Refer to the <a href="https://github.com/dropbox/zxcvbn" target="_blank">Dropbox password library</a> for more information.</li>
-        <li>The password cannot use certain blocked words. By default, the blocked words are: your username, any part of your display name, and any blocked words your company configures. To add additional words to the blocklist, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</li></ul></td>
+        <td>A password. Your password must contain three of the following: uppercase letters A-Z, lowercase letters a-z, special characters !#$ etc, numbers 0-9. Your password must be at least eight characters long. When you click on the <strong>change password</strong> field, a tooltip appears to tell you these requirements.</td>
       </tr>
       <tr id="confirm_password">
         <th>Confirm password</th>
@@ -75,8 +80,8 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="email">
         <th>Email</th>
         <td>Yes</td>
-        <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Expert</strong> feature, and others.
-        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain. <a href="{{ site.baseurl }}/admin/misc/contact.html">Contact ThoughtSpot Support</a> to whitelist domains. </p></td>
+        <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Export</strong> feature, and others.
+        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain.</p></td>
       </tr>    
       <tr id="welcome-email">     
         <th>Send a welcome email</th>
@@ -113,15 +118,25 @@ As an administrator, you can edit a user account, and change the user's groups. 
 
 To edit an existing user, follow these steps:
 
-1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
 
-2. Select **Users** from the side navigation bar that appears.
+2. Click the **Admin** icon, on the top navigation bar.
 
-    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
+    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
+
+3.  In the **Admin** panel, click **User Management**.
+
+    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
+
+4.  In the **User Management** section, click **Users**.
+
+    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-users.png "Manage Users")
 
 5.  Click the username in the list to open the **Edit User** interface.
 
     If you don't immediately see the username you plan to edit, try searching for it.
+
+    ![Search Users]({{ site.baseurl }}/images/edit-user-search.png "Search Users")
 
 6.  In the **Edit User** interface, edit the basic user information.
 
@@ -136,7 +151,7 @@ To edit an existing user, follow these steps:
 {: id="edit-user-preview-onboarding"}
 ### Preview onboarding
 
-You can click **Preview onboarding** to evaluate this user's first experience with ThoughtSpot. After previewing the user's default data source and Liveboards, you may choose to change the **[Group](*change-groups)** assignments.
+You can click **Preview onboarding** to evaluate this user's first experience with ThoughtSpot. After previewing the user's default data source and Pinboards, you may choose to change the **[Group](*change-groups)** assignments.
 
 ![Preview onboarding experience]({{ site.baseurl }}/images/edit-user-preview-onboarding.png "Preview onboarding experience")
 
@@ -187,14 +202,26 @@ Follow these steps to configure group-wide emails:
 
 To delete users, follow these steps:
 
-1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
 
-2. Select **Users** from the side navigation bar that appears.
+2. Click the **Admin** icon, on the top navigation bar.
 
-    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
+    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
+
+3.  In the **Admin** panel, click **User Management**.
+
+    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
+
+4.  In the **User Management** section, click **Users**.
+
+    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-users.png "Manage Users")
 
 5. Select the users you plan to delete by clicking the box next to the username.
 
    If you don't immediately see the username you plan to delete, try searching for it.
 
-6. Click **Delete** in the upper left-hand corner.
+   ![Search Users]({{ site.baseurl }}/images/edit-user-search.png "Search Users")
+
+6. Click **Delete**.
+
+   ![Delete Users]({{ site.baseurl }}/images/delete-users.png "Delete Users")

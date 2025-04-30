@@ -18,7 +18,7 @@ change the view of your answer:
 
     ![Select table or chart]({{ site.baseurl }}/images/changeview-chartortable.png "Select table or chart")
 
-When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
+When you display your data as a chart, ThoughtSpot automatically selects the type of chart that works best for your data. If you want to use another type, click the change visualization icon ![]({{ site.baseurl }}/images/icon-chart-type-20px.png){: .inline} and select the type of chart you want. Refer to [understand charts]({{ site.baseurl }}/end-user/search/about-charts.html).
 
 ## Sort your search
 
@@ -36,9 +36,7 @@ To sort your search:
 ## Change the date bucketing (grouping)
 
 You can change the date _bucketing_ on tables and charts for columns with date
-values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} that appears when you hover over a column name on a table.
-
-You can specify date bucketing at many granularities, from **detailed** (to the minute or second) to **yearly**, depending on your data. You can also specify bucketing based on the position of a bucket relative to another, larger bucket. For example, you can group data by **month of quarter**, or **week of month**.
+values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-20px.png){: .inline} that appears when you hover over a column name on a table.
 
 ![Choose a date bucket on a table]({{ site.baseurl }}/images/changeview-bucket.png "Choose a date bucket on a table")
 
@@ -60,13 +58,3 @@ To exclude or include row values:
 2. Select **Exclude "value"** or **Only Include "value"** if available.
 
      ![Exclude or include a value]({{ site.baseurl }}/images/changeview-exclude.png "Exclude or include a value")
-
-<!-- back button functionality removed for now (6/23/21)
-{: id="back-button"}
-## Back button
-As you work with searches and Answers, you may want to undo an action. You can use the in-product back button to the left of the Answer name to go back one step at a time. For example, if you drill down on a specific point, and then want to return to the status of the search before you drilled down, use the back button.
-
-![Dairy sales by diet type]({{ site.baseurl }}/images/drilldown-example.png "Dairy sales by diet type")
-
-If you do not have the [new Answer experience]({{ site.baseurl }}/admin/ts-cloud/new-answer-experience.html) on, you can use the browser back button. The browser back button is not as precise, and does not work on saved Answers.
--->

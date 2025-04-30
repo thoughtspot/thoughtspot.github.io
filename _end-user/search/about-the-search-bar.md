@@ -1,6 +1,8 @@
 ---
 title: [Search bar features]
-last_updated: 4/2/2020
+
+
+last_updated: tbd
 summary: "The search bar is designed to make it easy for you to identify your search terms. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,22 +11,18 @@ A lot of work has gone into making ThoughtSpot's search bar intuitive and easy t
 
 ## Boxed search phrases
 
-The search bar shows boxes around each search phrase, so you can easily see where it begins and ends. Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed. [Measures]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#measures) are green, [attributes]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#attributes) are blue, and [filters]({{ site.baseurl }}/complex-search/about-filters.html#) are gray.
+The search bar shows boxes around each search phrase, so you can easily see where it begins and ends. Your search phrases still appear as text when you are typing, but whenever you click out of the search bar, they are boxed. Search phrases have blue boxes, and [filters]({{ site.baseurl }}/complex-search/about-filters.html#) have white boxes.
 
-![Measures, attributes, and filters in the search bar]({{ site.baseurl }}/images/search-bar-basics.png "Measures, attributes, and filters in the search bar")
-
-{% include note.html content="If any of your column names or values contain leading or trailing whitespaces, you must add a delimiter for the search bar to accept them. For example, if you have a column named <code> Sales </code>, with a space before and after the word Sales, you must enter it in the search bar as <code>' Sales '</code>, with single quotes surrounding the name. Otherwise, ThoughtSpot automatically removes the extra spaces and does not recognize the column name. Alternatively, you can ask your administrator to remove the spaces before and after column names and values." %}
-
-## Search on enter
-ThoughtSpot Cloud's default search experience is search on enter. This means that you can add new tokens to the search bar, or remove them, without altering your existing search, until you press **Enter** on your keyboard, or select **Go** to the right of the search bar. This means that you may need to press **Enter** or **Go** to ensure that ThoughtSpot updates your search with any new items in the search bar.
+ ![]({{ site.baseurl }}/images/search_bar_with_phrases_boxed.png "Search bar with boxed phrases")
 
 ## Editing a search
 
-You can edit a search without affecting existing search results.  When you click a search phrase, it is highlighted, and ThoughtSpot displays other suggestions from which you can choose to replace the highlighted phrase. When you hover over a boxed phrase, you can see an **x**, which you can click to remove it from the search. You can insert a new phrase in the middle of a search, by clicking between phrases and entering the new phrase. You can even merge phrases without breaking the search. As you edit your search and click **Enter**, ThoughtSpot generates new results.
+You can edit a search without affecting existing search results.  When you click a search phrase, it is highlighted, and ThoughtSpot displays other suggestions from which you can choose to replace the highlighted phrase. When you hover over a boxed phrase, you can see an **x**, which you can click to remove it from the search. You can insert a new phrase in the middle of a search, by clicking between phrases and entering the new phrase. You can even merge phrases without breaking the search. As you edit your search, ThoughtSpot continuously generates new results.
 
-If you find yourself looking at a table or chart, but it doesn't seem to contain all the data you expect, try looking in the search bar for filters in gray boxes. If you remove all the filters, you will again see all the available data for that search.
+If you find yourself looking at a table or chart, but it doesn't seem to contain all the data you expect, try looking in the search bar for white boxes (filters). If you remove all the filters, you will again see all the available data for that search.
 
 ## Quick select search results
+
 When you type search phrases in the search bar, the first suggestion is automatically highlighted and you can use tab to navigate further. In addition, after you type a phrase or a letter and press **Enter**, the highlighted suggestion is automatically selected. Suggestions can be an attribute, measures, value, keyword, historic query, or exactly what you typed as the search phrase. You can also press **Enter** or **Tab** to select the first suggestion. If there are no suggestions, the suggestion list will not be displayed.
 Historic suggestions always display on top with the first suggestion highlighted as default.
 
@@ -36,16 +34,16 @@ The spell check in the search bar also performs a metaphone check for similar so
 
 ## Dictionary synonyms
 
-A dictionary of common word synonyms is bundled with ThoughtSpot. The dictionary contains synonyms for common terms that occur in data. For example, if you type in “gross”, and that word is not found, ThoughtSpot will consider it a synonym for “revenue”. We use the [WordNet](https://wordnet.princeton.edu/){: target="_blank"} library of terms, which takes word proximity into account, and weights words by similarity to the target term.
+A dictionary of common word synonyms is bundled with ThoughtSpot. The dictionary contains synonyms for common terms that occur in data. For example, if you type in “gross”, and that word is not found, ThoughtSpot will consider it a synonym for “revenue”. We use the WordNet library of terms, which takes word proximity into account, and weights words by similarity to the target term.
 
 This frees you from having to know the exact term or column name used in a data source. You can still find the answer in many cases, if you type a word with the same meaning as a different word that occurs in the data.
 
 ## Search help
 
-If you type an unrecognized search term, ThoughtSpot offers you tips on searching. The search help appears when you type a term that isn’t understood by ThoughtSpot and then press the Enter key.
+If you type an unrecognized search term, you will be offered tips on searching. The search help appears when you type a term that isn’t understood by ThoughtSpot and then press the Enter key.
 
  ![]({{ site.baseurl }}/images/search_help.png "Search help box")
 
-## Related Answers
+## Related searches
 
-If you scroll down the **Search** page, the system provides **Related Answers** that you might find useful. These are quick searches you can load into the search bar by simply clicking the provided link.
+At the end of the **Search** page is the system provides searches you might find useful. These are quick searches you can load into the search bar by simply click the provided link.

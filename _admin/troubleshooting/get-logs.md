@@ -19,6 +19,7 @@ For troubleshooting on specific incidents or cluster problems, two things are im
     +---------------------------------+----------+---------------+
     | Firewall                        | Disabled |               |
     | Saml                            | Disabled |               |
+    | Ldap                            | Disabled |               |
     | CustomBranding                  | Disabled |               |
     | CustomBrandingFontCustomization | Disabled |               |
     | DataConnect                     | Disabled |               |

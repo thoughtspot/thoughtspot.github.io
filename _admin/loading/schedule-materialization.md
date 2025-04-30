@@ -16,7 +16,7 @@ To schedule materialization of a view:
 
 2. Click the name of your view.
 
-3. Click **Joins**.
+3. Click **Schema**.
 
 4. Under **Materialization**, click the link next to **Update Schedule**.
 

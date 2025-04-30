@@ -1,12 +1,13 @@
 ---
 title: ["Manage expert requests"]
-last_updated: 3/23/2020
+
+
+last_updated: 11/19/2019
 summary: "You can monitor and manage Ask an Expert requests, both as a requester and as an expert."
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
-{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 
@@ -14,22 +15,25 @@ Within ThoughtSpot, you can keep track of your **Ask an Expert** requests.
 
 Follow these steps to the request monitoring interface:
 
-1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help.png){: .inline} (help) icon menu.
-2. In the drop-down, select **Get Help > Expert Requests**.
+1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-20px.png){: .inline} (help) icon menu.
+2. In the drop-down, select **Expert Requests**.
+
+   ![]({{ site.baseurl }}/images/ask-expert-requests.png "Click Expert requests")
+
 3. The **Expert** interface appears, with information for you both as a **Requester**, and as an **Expert**.  
 
 ## When you are a Requester ##
 
 This is what you see when you are a requester:
 
-![Ask an Expert interface]({{ site.baseurl }}/images/ask-an-expert-request-list.png "Ask an Expert interface")
+![]({{ site.baseurl }}/images/ask-expert-manage-requester.png "Expert interface")
 
 Note these features of the interface:
 
 | Legend | Feature |
 | --- | --- |
-|1. | <strong>I am a requester:</strong> for all requests where you are a requester |
-| 2. | <strong>I am an expert:</strong> for all requests where you are an expert |
+|1. | <strong>I am Requester:</strong> for all requests where you are a requester |
+| 2. | <strong>I am Expert:</strong> for all requests where you are an expert |
 | 3. | <strong>All:</strong> all requests, both <em>Resolved</em> and <em>Unresolved</em>|
 | 4. | <strong>Resolved:</strong> all resolved requests |
 | 5. | <strong>Unresolved:</strong> for all unresolved requests |
@@ -37,21 +41,21 @@ Note these features of the interface:
 | 7. | <strong>My Requests</strong>: list of your requests |
 | 8. | <strong>Modified:</strong> how long ago you or an expert modified the request |
 | 9. | <strong>Status:</strong> <em>Resolved</em> or <em>Unresolved</em> |
-| 10. | <strong>Author:</strong> the user who created the request |
+| 10. | <strong>Experts:</strong> users who are experts for your requests |
 
 ## When you are an Expert
 
 This is what you see when you are an expert:
 
-![Ask an Expert interface]({{ site.baseurl }}/images/ask-an-expert-expert-view.png "Ask an Expert interface")
+![]({{ site.baseurl }}/images/ask-expert-manage-expert.png "Expert interface")
 
 Note these features of the interface:
 
 | Legend | Feature |
 | --- | --- |
-|1. | <strong>I am a requester:</strong> for all requests where you are a requester |
-| 2. | <strong>I am an expert:</strong> for all requests where you are an expert |
-| 3. | <strong>All:</strong> all requests, both <em>Resolved</em> and <em>Unresolved</em> |
+|1. | <strong>I am Requester:</strong> for all requests where you are a requester |
+| 2. | <strong>I am Expert:</strong> for all requests where you are an expert |
+| 3. | <strong>All:</strong> all requests, both <em>Resolved</span> and <em>Unresolved</em> |
 | 4. | <strong>Resolved:</strong> all resolved requests |
 | 5. | <strong>Unresolved:</strong> for all unresolved requests |
 | 6. | <strong>Search:</strong> find requests |

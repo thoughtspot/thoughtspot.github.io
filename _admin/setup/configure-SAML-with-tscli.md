@@ -1,13 +1,12 @@
-<!-- ifdef::software[] -->
-<!-----
+---
 title: [Configure SAML]
-last_updated: 5/6/2020
+last_updated: 10/11/2019
 summary: "You can use the Security Assertion Markup Language (SAML) to authenticate users."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
+ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML using the management console or through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
 
 {: id="prerequisites"}
 ## Configuration prerequisites
@@ -24,7 +23,7 @@ Before you configure SAML, collect the following information:
 
 {: id="ts-service-address" }
 ### ThoughtSpot service address
-DNS name of the load balancer _front-end_ for multi-node ThoughtSpot clusters, or of the ThoughtSpot _server_ for a single-node ThoughtSpot cluster. If you do not have the DNS name, you can use the front-end IP address. Using the DNS name instead of the IP address is a best practice.
+DNS name of the load balancer _front-end_ for multi-node ThoughtSpot clusters, or of ThoughtSpot _server_ For single-node ThoughtSpot cluster.
 
 {: id="ts-service-port" }
 ### Service port
@@ -48,9 +47,8 @@ This file is provided by the IDP. The absolute path to the `idp-meta.xml` file i
 
 {: id="auto-add" }
 ### Automatically add SAML users to Thoughtspot: (yes/no)
-If you choose 'yes', then new users will be automatically created in ThoughtSpot upon first successful SSO login.
-
-If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user).
+If you choose 'yes', then new users will be automatically created in ThoughtSpot.
+If 'no', then SAML users will be added in ThoughtSpot upon first successful SSO login.
 
 {: id="ts-auth" }
 ### Also use ThoughtSpot internal authentication: (y/n)
@@ -75,5 +73,3 @@ To set up SAML on ThoughtSpot for user authentication, follow these steps:
 3. Complete the configurator prompts with the information you collected in [Configuration prerequisites](#prerequisites).
 
 4. When the configuration completes, open a browser and navigate to the ThoughtSpot login page. It should show the SSO option.
--->
-<!-- endif::software[] -->

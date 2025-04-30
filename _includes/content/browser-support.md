@@ -1,14 +1,17 @@
 <dl>
   <dlentry>
-    <dt>Mozilla Firefox</dt>
+    <dt>Firefox</dt>
     <dd>68.x, 69.x, and later</dd></dlentry>
   <dlentry>
-    <dt>Google Chrome</dt>
+    <dt>Chrome</dt>
     <dd> 76.x, 77.x, and later</dd></dlentry>
   <dlentry>
-    <dt>Microsoft Edge</dt>
-    <dd>81.0.416.53, and later</dd></dlentry>
+    <dt>Internet Explorer</dt>
+    <dd>11.x, and later</dd></dlentry>
   <dlentry>
-    <dt>Apple Safari</dt>
+    <dt>Edge</dt>
+    <dd>44.x, and later</dd></dlentry>
+  <dlentry>
+    <dt>Safari</dt>
     <dd>13.x, and later</dd></dlentry>
 </dl>

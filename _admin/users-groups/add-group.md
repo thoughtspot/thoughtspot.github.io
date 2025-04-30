@@ -1,13 +1,10 @@
 ---
 title: ["Create, edit, or delete a group"]
-last_updated: 11/05/2021
-summary: "ThoughtSpot has intuitive and powerful user group management for assigning privileges, user selection, multi-tier subgroups, default Liveboard assignment, and emailing."
+last_updated: 10/07/2019
+summary: "ThoughtSpot has intuitive and powerful user group management for assigning privileges, user selection, multi-tier subgroups, default Pinboard assignment, and emailing."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include content/liveboards-announcement.md %}
-
 Before adding users, create the groups to which they belong. Each group includes a set of privileges for its users.
 
 {: id="add-group"}
@@ -15,13 +12,22 @@ Before adding users, create the groups to which they belong. Each group includes
 
 To create a group and add privileges for the group, follow these steps:
 
-1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
+2. Click the **Admin** icon, on the top navigation bar.
 
-2. Select **Groups** from the side navigation bar that appears.
+    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
 
-    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
+3.  In the **Admin** panel, click **User Management**.
 
-5. Click the **+ Add Group** button on the upper left-hand side of the list of groups.
+    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
+
+4.  In the **User Management** section, click **Groups**.
+
+    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-groups.png "Manage Groups")
+
+5. Click the **+ Add Group** button on the upper right-hand side of the list of groups.
+
+     ![Add a new Group]({{ site.baseurl }}/images/admin-user-management-add-group.png "Add a new Group")
 
 6. In the **Add a new group** modal, enter the details for the new group:
 
@@ -61,16 +67,16 @@ To create a group and add privileges for the group, follow these steps:
      </tr>
     </table>
 
-7. You can also add _[Groups](#add-groups)_ (these would be the subgroups of the group you are editing), _[Users](#add-users)_. Also, see _[Default Liveboards](#add-default-pinboard)_.
+7. You can also add _[Groups](#add-groups)_ (these would be the subgroups of the group you are editing), _[Users](#add-users)_. Also, see _[Default Pinboards](#add-default-pinboard)_.
 
 8. Click **Add** to create the group.
 
 {: id="add-default-pinboards"}
-### Default Liveboards
+### Default Pinboards
 
-You cannot add default Liveboards to a new user group. You must create it first, and then edit it to add default Liveboards. See **[Edit a group > Default Liveboards](#change-default-pinboards)**.
+You cannot add default Pinboards to a new user group. You must create it first, and then edit it to add default Pinboards. See **[Edit a group > Default Pinboards](#change-default-pinboards)**.
 
-![Add a new group > Default Liveboards]({{ site.baseurl }}/images/add-group-pinboards.png "Add group > Default Liveboards")
+![Add a new group > Default Pinboards]({{ site.baseurl }}/images/add-group-pinboards.png "Add group > Default Pinboards")
 
 {: id="add-groups"}
 ### Groups
@@ -96,7 +102,7 @@ Follow these steps to assign users to the group:
 
 3. You can also use **Search** to find users by name.
 
-![Add a new group > Users]({{ site.baseurl }}/images/add-group-users.png "Add group > Users")
+![Add a new group > Users]({{ site.baseurl }}/images/add-group-groups.png "Add group > Users")
 
 {: id="edit-group"}
 ## Edit a group
@@ -106,15 +112,25 @@ revoke privileges. The new settings apply to all group members.
 
 To edit an existing group, follow these steps:
 
-1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
 
-2. Select **Groups** from the side navigation bar that appears.
+2. Click the **Admin** icon, on the top navigation bar.
 
-    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
+    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
+
+3.  In the **Admin** panel, click **User Management**.
+
+    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
+
+4.  In the **User Management** section, click **Groups**.
+
+    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-groups.png "Manage Groups")
 
 5. Find the group you want to edit in the list, and click its name.
 
    If you don't immediately see the name of the group, try searching for it.
+
+   ![Search Groups]({{ site.baseurl }}/images/edit-group-search.png "Search Groups")
 
 6. You can change the _[Group name](#group-name)_, _[Display name](#display-name)_, _[Sharing visibility](#sharing-visibility)_, _[Description](#description)_, and the selected _[Privileges](#privileges)_.
 
@@ -122,26 +138,26 @@ To edit an existing group, follow these steps:
 
    ![Change the details for the group]({{ site.baseurl }}/images/edit-group.png "Change details for the group")
 
-   You can also make changes to the _[Default Liveboards](#change-default-pinboards)_, _[Groups](#change-groups)_ (these would be the subgroups of the group you are editing), _[Users](#change-users)_, or _[Email](#change-email)_.
+   You can also make changes to the _[Default Pinboards](#change-default-pinboards)_, _[Groups](#change-groups)_ (these would be the subgroups of the group you are editing), _[Users](#change-users)_, or _[Email](#change-email)_.
 
 7. Make your changes, and click **Update**.
 
 {: id="change-default-pinboards"}
-### Default Liveboards
+### Default Pinboards
 
-To assgin default Liveboards to groups, follow these steps:
+To assgin default pinboards to groups, follow these steps:
 
 1. Create a group, or choose an existing group. Note its name.
 
-2. In the **Liveboards** interface, find the correct Liveboards, and share them with this group. See [Share a Liveboard]({{ site.baseurl }}/admin/data-security/share-pinboards.html).
+2. In the **Pinboards** interface, find the correct Pinboards, and share them with this group. See [Share a Pinboard]({{ site.baseurl }}/admin/data-security/share-pinboards.html).
 
 3. Open the Group for editing. See [Edit a group](#edit-group).
 
-4. Click the **Default Liveboards** tab.
+4. Click the **Default Pinboards** tab.
 
-2. From the list of shared Liveboards, select 1-3 default Liveboards in the list by clicking the box next to the Liveboard name.
+2. From the list of shared Pinboards, select 1-3 default Pinboards in the list by clicking the box next to the Pinboard name.
 
-3. You can also use **Search** to find Liveboards by name.
+3. You can also use **Search** to find Pinboards by name.
 
 4. Click **Update** to save changes.
 
@@ -208,17 +224,29 @@ Follow these steps to configure group-wide emails:
 
 To delete existing groups, follow these steps:
 
-1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
 
-2. Select **Groups** from the side navigation bar that appears.
+2. Click the **Admin** icon, on the top navigation bar.
 
-    ![Admin Console - Groups]({{ site.baseurl }}/images/admin-portal-groups.png "Admin Console - Groups")
+    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
+
+3.  In the **Admin** panel, click **User Management**.
+
+    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
+
+4.  In the **User Management** section, click **Groups**.
+
+    ![Manage Groups]({{ site.baseurl }}/images/admin-user-management-groups.png "Manage Groups")
 
 5. Select the groups you plan to delete by clicking the box next to the group name.
 
    If you don't immediately see the name of the group, try searching for it.
 
-6. Click **Delete** in the upper left-hand corner.
+   ![Search Groups]({{ site.baseurl }}/images/edit-group-search.png "Search Groups")
+
+6. Click **Delete**.
+
+    ![Delete Groups]({{ site.baseurl }}/images/delete-group.png "Delete Groups")
 
 {: id="list-group-members"}
 ## List group members
@@ -230,17 +258,29 @@ When browsing through users or subgroups, you can often see only a limited list.
 
 To add multiple users to a group, you must be on the **Users** interface. Follow these steps:
 
-1. Navigate to the Admin Console by clicking on the **Admin** tab from the top navigation bar.
+1. Log in to ThoughtSpot from a browser.
 
-2. Select **Users** from the side navigation bar that appears.
+2. Click the **Admin** icon, on the top navigation bar.
 
-    ![Admin Console - Users]({{ site.baseurl }}/images/admin-portal-users.png "Admin Console - Users")
+    ![Admin tab]({{ site.baseurl }}/images/click-admin.png "Admin Tab")
+
+3.  In the **Admin** panel, click **User Management**.
+
+    ![Admin > User Management]({{ site.baseurl }}/images/admin-user-management.png "Admin > User Management")
+
+4.  In the **User Management** section, click **Users**.
+
+    ![Manage Users]({{ site.baseurl }}/images/admin-user-management-users.png "Manage Users")
 
 5. Select the names of users you plan to add to groups by clicking the box next to the user name.
 
    If you don't immediately see the user name, try searching for it.
 
+   ![Search Users]({{ site.baseurl }}/images/edit-user-search.png "Search Users")
+
 5. Click the **Add Users to Groups** button on the top of the list of users.
+
+     ![Add Users to Groups]({{ site.baseurl }}/images/add-many-users.png "Add Users to Groups")
 
 6. In the **Add Users to Groups** interface, select the groups by clicking the box next to the group name.
 

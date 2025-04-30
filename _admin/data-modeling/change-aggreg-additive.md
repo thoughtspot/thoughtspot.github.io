@@ -74,9 +74,16 @@ Both `MEASURE` columns and `ATTRIBUTE` columns support **AGGREGATION** operation
 |**COUNT_DISTINCT**|Calculates the total number of distinct values.|
 
 
-Keep in mind that not all numeric data should be aggregated. Consider a table containing data about athletes on a sports team. The data contains some numerical values, including points scored, salaries, and jersey numbers for each of the players. You should aggregate points scored and salaries, but it is not meaningful to aggregate jersey numbers. Because jersey number is an INTEGER, it would become a column of type `MEASURE` (not `ATTRIBUTE`), so it will aggregate, by default. You must manually change it to a column of type `ATTRIBUTE`. This ensures that search results that include jersey number will not attempt to compare or aggregate those values in a way that is not meaningful.
+Keep in mind that not all `MEASURE` data should be aggregated. Consider a table
+containing data about athletes on a sports team. The data contains some
+numerical values, including points scored, salaries, and jersey numbers for each
+of the players. Because jersey number is an INTEGER, it would become a column of
+type `MEASURE` (not `ATTRIBUTE`). So it will aggregate, by default. But you may
+want to make its aggregation type **NONE** instead. This ensures that search
+results that include jersey number will not attempt to compare or aggregate
+those values in a way that is not meaningful.
 
-To set the aggregation value, follow these steps:
+To set this value.
 
 1. Find the column whose default aggregation type you want to change
 2. Select its **Aggregation**.
@@ -87,4 +94,4 @@ To set the aggregation value, follow these steps:
 
 ## Related information  
 
-[Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
+[Model the data for searching](semantic-modeling.html#)

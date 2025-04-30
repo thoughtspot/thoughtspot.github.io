@@ -1,10 +1,8 @@
 ---
 title: [ThoughtSpot browser access]
 summary: Learn how to reach ThoughtSpot from a browser.
-last_updated: 4/30/2020
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
-redirect_from:
-- /admin/setup/logins.html
 permalink: /:collection/:path.html
 ---
 
