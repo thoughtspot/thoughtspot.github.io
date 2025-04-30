@@ -1,7 +1,7 @@
 ---
 title: [How rule-based RLS works]
-
-
+tags: [bestpractices,groups,performance]
+keywords: tbd
 last_updated: tbd
 summary: "Use rule-based RLS to restrict a group's access to data. Users see only accessible row data."
 sidebar: mydoc_sidebar
@@ -16,7 +16,7 @@ under RLS rules.
 ## Worksheet queries and RLS
 
 You cannot set RLS rules on worksheets, only on tables. However, administrators
-can disable RLS on worksheets that are derived from tables with RLS rules. After
+can disable RLS on worksheets that are derived from tables with RLS rules. Once
 RLS rules are disabled, users with access to the worksheet can see all its data.
 
 By default, worksheet queries only take into account RLS rules on tables whose

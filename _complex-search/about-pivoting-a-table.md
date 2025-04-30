@@ -1,7 +1,7 @@
 ---
 title: [Pivot table]
-
-
+tags: [limitations]
+keywords: tbd
 last_updated: tbd
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
@@ -23,7 +23,7 @@ columns to the search bar:
 
 You can restructure your pivot table by moving these values under **Configure
 Chart** or by dragging and dropping column headings on the table itself. If you
-right-click a row heading, the system displays a contextual sort menu:
+right click on a the row headings, the system displays a contextual sort menu:
 
 ![]({{ site.baseurl }}/images/pivot-context-menu.png)
 

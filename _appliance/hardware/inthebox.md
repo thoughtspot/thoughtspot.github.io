@@ -1,6 +1,6 @@
 ---
 title: [Hardware appliance overview]
-
+keywords: appliance,hardware,box
 last_updated: tbd
 summary: "What is in the box."
 sidebar: mydoc_sidebar
@@ -33,12 +33,12 @@ When your ThoughtSpot appliance arrives, the following items will be included:
 
 ##  Additional hardware requirements
 
- You must supply the following items, as they will not be included with your ThoughtSpot appliance:
+ You will need to supply th e following items, as they will not be included with your ThoughtSpot appliance:
 
 * Data center with proper cooling
 * 2U of rack space per appliance (post depth 26.5" - 36.4")
 * AC power
-  **Attention:** Refer to [Hardware details]({{ site.baseurl }}/appliance/hardware/hardware-and-deployment.html#appliance-hardware-platforms) for power input requirements.
+  **Attention:** Refer to [Ivy Bridge and Haswell hardware details](inthebox.html#hardware-provided-by-thoughtspot) for power input requirements.
 * 10GbE infrastructure (switch) - 1x port required / node
 * 100MbE infrastructure (switch) - 1x port required /node
 * Network cable Cat 5e/6 (node management)<sup>1</sup>

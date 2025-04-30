@@ -1,12 +1,14 @@
 ---
-title: ["SpotIQ 101: Do more with SpotIQ"]
+title: ["SpotIQ 101: Review insights"]
+tags: [customize, spotiq]
+keywords: customize, SpotIQ, "data analysis"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You've finished the [second part of the tutorial](work-with-insights.html). In this, the third and final
-part, you can learn how to modify a SpotIQ analysis to extend or customize
-the analysis.  You can edit an insight to customize the chart it uses, or modify
+part, you'll learn how you can modify a SpotIQ analysis to extend or customize
+the analysis.  You'll edit an insight to customize the chart it uses or modify
 the **Search** syntax behind it.
 
 ## Customize an analysis
@@ -58,9 +60,9 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
 
 10. Open the new analysis from the SpotIQ page.
 
-    Notice that the new analysis has the same name as the last one you ran.
-    The new results include an outlier, and a cross-correlation. These new charts
-    show a definite outlier, `6/30/2005`.
+    You'll find that the new analysis has the same name as the last one you ran.
+    The new results include an outlier and a cross-correlation. You'll discover
+    with these new charts a definite outlier `6/30/2005`.
 
     ![]({{ site.baseurl }}/images/spotiq-definite-outlier.png)
 
@@ -85,7 +87,7 @@ visualization may help in this case. You can also modify the charts you see in
 your results. Try this now.
 
 1. Select the menu on the **Total imports, Total value_added by year** chart.
-2. Click the chart menu and choose **Edit**.
+2. Click on the chart menu and choose **Edit**.
 
    ![]({{ site.baseurl }}/images/spotiq-edit-chart.png)
 
@@ -116,7 +118,7 @@ your results. Try this now.
 ## Present your insights
 
 You can present SpotIQ insights in several ways. You can present an individual
-result, or all of them. You can package all the insights in a PDF. This
+result or all of them at once. You can package all the insights in a PDF. This
 is useful for passing a packet of results. Since any insight reflects the
 data at a specific point in time, always consider saving the insight as a PDF.
 
@@ -155,7 +157,7 @@ business, data changes all the time.
 
    ![]({{ site.baseurl }}/images/spotiq-analysis-check.png)
 
-3. Click the latest **Total imports by CATEGORY_DESC** analysis.
+3. Click on the latest **Total imports by CATEGORY_DESC** analysis.
 
    The **Customize Analysis** dialog appears.
 
@@ -180,6 +182,6 @@ latest job. Now that you know how to schedule a job, it isn't needed anymore.
 ## Congratulations!
 
 Congratulations, at this point you've learned the basics of SpotIQ with
-ThoughtSpot. Throughout the application, you can find the SpotIQ icon on search
+ThoughtSpot. Throughout the application, you'll find the SpotIQ icon on search
 answers, pinboards, visualizations, and data. Wherever you see this option, you
 can click to run suggested or custom analyses, and get new insights on the SpotIQ page.

@@ -1,7 +1,6 @@
 ---
 title: [Overview of aggregate formulas]
-
-
+keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -49,13 +48,6 @@ advanced aggregation functions are:
 -  [Moving formulas](about-moving-formulas.html#) measure within a window (usually time-based) that you define.
 
 Data from any rows that are not included in the search result will not be incorporated, and you cannot create a filter on aggregated data.
-
-## Flexible aggregation
-
-The `group_aggregate` function makes it possible to aggregate measures at granularities that are
-different from the dimensions or column groupings used in the search.
-
-See [Flexible aggregation](aggregation-flexible.html#) to learn more about working with this formula.
 
 ## Using division with aggregation in a search
 

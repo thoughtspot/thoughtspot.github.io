@@ -1,13 +1,13 @@
 ---
 title: [Change a table's data model]
-
+keywords: tbd
 last_updated: tbd
 summary: "You can adjust the data model for a newly loaded table."
 sidebar: mydoc_sidebar
-toc: true
+toc: false
 permalink: /:collection/:path.html
 ---
-To make modeling settings for a data source you've just loaded, or to make a quick
+To make modeling settings for a table you've just loaded, or to make a quick
 change to existing settings, use the ThoughtSpot web interface. You can adjust
 the **Columns** settings from the data management listing.
 
@@ -15,19 +15,12 @@ You can change all the same data model settings here as in the model file. This
 method is easier and faster, unless you need to make many settings in bulk. In
 that case, [using the model file](edit-model-file.html#) is recommended.
 
-## About data sources
-
-{% include content/data-modeling-and-sources.md %}
-
-## Change the data model for a data source
-
-1. Click **Data** on the top navigation bar.
-
-2. Click a data source you own or can edit.
+1. Click on the **DATA** icon, to get to the data management listing.
+2. Click on a data source you own or can edit.
 
    ![]({{ site.baseurl }}/images/data_management_select_data_source.png "Select a data source")
 
-    This brings up the **Columns** screen, where you can make your modeling settings.
+    This brings up the **Columns** screen, where you'll make your modeling settings.
 
 3. Modify one or more column settings.
 
@@ -44,4 +37,3 @@ that case, [using the model file](edit-model-file.html#) is recommended.
 
 * [Data modeling settings](data-modeling-settings.html#)
 * [Edit the system-wide data model](edit-model-file.html#)
-* [Understand data sources]({{ site.based }}/end-user/data-view/data-intro-end-user.html)

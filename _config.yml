@@ -5,8 +5,6 @@ destination              : ./_site
 output                   : web
 # Used to designate the current version. Edit when a new version is released
 current_version          : "6.0"
-# Note that site.baseurl for this site evaluates to:
-# http://docs.thoughtspot.com/<version>/
 # used for conditional content filtering
 description              : "Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily."
 twitter                  : thoughtspot
@@ -24,6 +22,7 @@ company_name             : ThoughtSpot
 # this appears in the footer
 timezone                 : America/Tijuana
 google_analytics         : UA-44946579-2
+
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 
@@ -32,7 +31,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-seo-tag
-
 
 
 # Files and directories that jekyll will exclude from the build output
@@ -82,8 +80,6 @@ collections:
     output: true
   appliance:
     output: true
-  appliance/aws:
-    output: true
   complex-search:
     output: true
   data-connect:
@@ -94,7 +90,8 @@ collections:
     output: true
   end-user:
     output: true
-  # error-codes: output: true
+  error-codes:
+    output: true
   reference:
     output: true
   release:
@@ -104,8 +101,6 @@ collections:
   tooltips:
     output: true
   faq:
-    output: true
-  practice:
     output: true
 
 defaults:

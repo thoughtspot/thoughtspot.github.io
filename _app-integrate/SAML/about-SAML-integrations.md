@@ -1,7 +1,6 @@
 ---
 title: [About SAML]
-
-
+keywords: SAML,security,"active directory",authenticate,SSO,"single sign on"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

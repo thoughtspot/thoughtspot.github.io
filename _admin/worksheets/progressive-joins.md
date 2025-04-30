@@ -1,5 +1,7 @@
 ---
 title: [How the worksheet join rule works]
+keywords: tbd
+tags: [rls]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,7 +14,7 @@ added (recommended), or apply all joins to every search.
 
 Often, a worksheet includes several dimension tables and a fact table. With
 progressive joins, if your search only includes terms from the fact table,
-you can see all of the rows that satisfy your search. But as you add terms from
+you'll see all of the rows that satisfy your search. But as you add terms from
 dimension tables, the total number of rows shown may be reduced, as the joins to
 each dimension table are applied. It works like this:
 
@@ -28,7 +30,7 @@ the search, its joins are not applied.
 ## Rule-Based Row Level Security (RLS) with worksheets
 
 With Rule-Based RLS, you need to protect every table that contains any sensitive
-data. To do this, you can grant access by creating explicit row level security
+data. To do this, you'll grant access by creating explicit row level security
 rules on each of the underlying tables which contain data that row level
 security should apply to.
 
@@ -57,3 +59,12 @@ if they have chasm trap).
 For chasm trap _worksheets_, progressive and non-progressive joins do not apply.
 There is an entirely different methodology for how worksheet joins on a chasm
 trap schema work with row level security. So you can safely ignore that setting.
+
+## Joins and aggregated worksheets
+
+You have the ability to join an aggregated worksheet with a table. You can join
+an aggregated worksheet with a system table by creating a relationship. This
+means aggregated worksheets behave similar to tables, and they can be used in
+the same way as a table, excluding any TQL manipulation. You also have the
+capability to create a worksheet on top of an aggregated worksheet. So
+aggregated worksheets can be included as tables in regular worksheets.

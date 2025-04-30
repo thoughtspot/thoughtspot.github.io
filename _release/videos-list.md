@@ -1,15 +1,14 @@
 ---
 title: ["Videos"]
+tags: [spotiq]
+keywords: tbd
 toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-## Videos
-
-These videos guide you through key workflows and features on ThoughtSpot. You may notice slight variations in buttons and icons, depending on whether a video was created on **ThoughtSpot 5.x or 4.5**. For new or completely updated features, we provide version-specific videos. (These videos are also published on the [ThoughtSpot Product Training](https://www.youtube.com/playlist?list=PLUocSHxJDKPslAO2R0tgQjYXTTDMFUHx6) YouTube channel.)
-<br /><br />
+## Videos on ThoughtSpot 4.5
 
 <div class="component-container">
     <!--start row-->
@@ -38,6 +37,7 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
         </p>
         </div>
 
+
         <div class="col-sm-12 col-md-12 col-lg-4 block">
         <script src="https://fast.wistia.com/embed/medias/y4qetwe325.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
@@ -46,11 +46,12 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
         <span class="wistia_embed wistia_async_y4qetwe325 popover=true popoverAnimateThumbnail=true videoFoam=true"
         style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
         </div>
-        <p style="text-align: center;"><b>Pinboard Filters</b></p>
+        <p style="text-align: center;"><b>Pinboard Filters  </b></p>
         <p>
         How to use pinboard filters to see only the data you care about within the tables and charts of a pinboard.
         </p>
         </div>
+
 
     </div>
 </div>
@@ -248,24 +249,9 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
 
     </div>
 </div>
-
 <div class="component-container">
     <!--start row-->
     <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-        <script src="https://fast.wistia.com/embed/medias/qgyhdtvom8.jsonp" async></script>
-        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-        <span class="wistia_embed wistia_async_qgyhdtvom8 popover=true popoverAnimateThumbnail=true videoFoam=true"
-        style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
-        </div>
-        <p style="text-align: center;"><b>Group Aggregate Formulas</b></p>
-        <p>
-        Aggregate measures with granularities and filters different from those of your search terms.
-        </p>
-        </div>
-
         <div class="col-sm-12 col-md-12 col-lg-4 block">
         <script src="https://fast.wistia.com/embed/medias/w8xlyijnfh.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
@@ -278,13 +264,11 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
         <p>
         How to add a formula to create a custom column based on another field in your data.
         </p>
-        </div>
-
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-        </div>
+          </div>
 
     </div>
 </div>
+
 
 ## Videos on ThoughtSpot 4.4
 
@@ -312,7 +296,7 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
 
 ## Videos on older releases
 
-In this section, you can find some additional videos that you may find helpful.
+In this section, you'll find some additional videos you may find helpful.
 
 <table padding="1" style="width: 100%; table-layout: fixed;">
    <tbody>
@@ -665,6 +649,25 @@ In this section, you can find some additional videos that you may find helpful.
             <p style="text-align: center;">Cumulative formulas</p>
          </td>
          <td>
+            <script src="//fast.wistia.com/embed/medias/bag3ka1iq4.jsonp"></script><script src="//fast.wistia.com/assets/external/E-v1.js"></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                  <span class="wistia_embed wistia_async_bag3ka1iq4 popover=true popoverAnimateThumbnail=true videoFoam=true wistia_embed_initialized" style="display:inline-block;height:100%;width:100%;" id="wistia-bag3ka1iq4-1">
+                     <div id="wistia_2966.thumb_container" class="wistia_click_to_play" style="position: relative; height: 261.562px; width: 465px;">
+                        <div id="wistia_2990.thumbnail" tabindex="0" style="cursor: pointer; display: block; height: 261.547px; overflow: hidden; outline: none; position: relative; width: 465px;">
+                           <div id="wistia_3005.big_play_button_background" style="height: 81px; position: absolute; width: 127px; z-index: 1; background-color: rgba(123, 121, 106, 0.76); left: 169px; top: 90px; transition: all 80ms ease-out; mix-blend-mode: normal;"></div>
+                           <div id="wistia_3005.big_play_button_graphic" tabindex="0" aria-role="Button" aria-label="Play" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAABRCAYAAAD7G3lVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAATFJREFUeNrs22FtwkAYx+F2QcAkMAfgYBKQwBxMQh1MwiRQB+CgEoaDzkG5S1a+E5IF+n+e5D4ve3+7N0s4mgYAAAAAAAAAAAAA7jFN06cp5MavjuWsTSMzfjWWszORzPizQzmvJpMZ3xYIj28LiG8LpMeffdsCufGrn3LeTS0z/uzLFsiNbwuEx7cFxL9ugY1pZsafdSaaG78abIHc+LaA+MvbAi/+XG5Sww9L2QLtEm/+P/2oUzkfbduexc+LX51L/DdrP09fzvaZf4GVhjf7/Vv3vVFk/bfvMUhg/PoAZG+6efE9Aw+MP/oCSGZ8tz0wvtseGn9w2zPjdyaXF99n9aHx3fbA+G57aHy3PTC+N/mh8b3DD4zvtofGd9tD47vtAAAAAAAAAAAAADymiwADAOSj1JBfF8xMAAAAAElFTkSuQmCC&quot;) 0px 0px / 127px 81px no-repeat transparent; cursor: pointer; display: block; height: 81px; outline: none; position: absolute; width: 127px; z-index: 1; left: 169px; top: 90px;"></div>
+                           <img id="wistia_2990.thumbnail_img" alt="Wistia video thumbnail" src="https://embedwistia-a.akamaihd.net/deliveries/2ecbeb4f02ffeb17ae54673b725b37f00f72c807.jpg?image_crop_resized=640x360" style="border: 0px; display: block; float: none; height: 261.547px; margin: 0px; max-height: none; max-width: none; padding: 0px; position: absolute; width: 465px; left: 0px; top: 0px;">
+                        </div>
+                     </div>
+                  </span>
+               </div>
+            </div>
+            <p style="text-align: center;">Data Connect</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
             <script src="//fast.wistia.com/embed/medias/ts1r9hq42u.jsonp"></script><script src="//fast.wistia.com/assets/external/E-v1.js"></script>
             <div class="wistia_responsive_padding" style="padding:55.42% 0 0 0;position:relative;">
                <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
@@ -682,6 +685,5 @@ In this section, you can find some additional videos that you may find helpful.
             <p style="text-align: center;">Scheduled pinboards</p>
          </td>
       </tr>
-
    </tbody>
 </table>

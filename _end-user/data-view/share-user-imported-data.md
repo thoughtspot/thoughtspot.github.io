@@ -1,5 +1,6 @@
 ---
 title: [Share uploaded data]
+keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -26,26 +27,26 @@ you can ask your administrator to enable a stricter behavior.
 
 Share uploaded data by following these steps:
 
-1. Click **Data** on the top navigation bar.
+1. Click on **DATA**, on the top navigation bar.
 
-2. Click the name of the uploaded data you want to share.
+     ![]({{ site.baseurl }}/images/data_icon.png "Data")
 
+2. Click on the name of the uploaded data you want to share.
 3. Click the **Share** icon.
 
     ![]({{ site.baseurl }}/images/share_tables.png)
 
 4. Select **Entire Table** or **Specific Columns**.
 
-    ![]({{ site.baseurl }}/images/share_table_with_users.png)
+    ![]({{ site.baseurl }}/images/share_table.png)
 
 5. If you selected **Specific Columns**, select the column(s) to share.
+6. Click **+ Add users or groups** and select the users and groups that you want to share with.
 
-6. Click **+** and select the users and groups with whom you want to share.
+    ![]({{ site.baseurl }}/images/share_table_with_users.png)
 
 7. Configure the level of access by selecting from the dropdown list. You can select:
     -   **Can View** to provide read-only access. This enables viewing the table data and defining worksheets on the table.
     -   **Can Edit** to allow modification. This enables renaming, modifying, or deleting the entire table and adding or removing its columns.
-
-8. Click **Add**.
-
+8. Click **Add and Save**.
 9. Click **Done**.

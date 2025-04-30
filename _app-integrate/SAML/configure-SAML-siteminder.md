@@ -1,7 +1,6 @@
 ---
 title: [Configure CA SiteMinder]
-
-
+keywords: SAML,security,"active directory",authenticate,siteminder,certificate
 last_updated: tbd
 summary: "CA SiteMinder can be used as an Identity Provider for single sign on to ThoughtSpot."
 sidebar: mydoc_sidebar
@@ -23,7 +22,7 @@ Before configuring CA SiteMinder, you must [configure SAML in ThoughtSpot](confi
     |Signed Authentication Requests Required|No|
     |Supported NameID format|Optional|
 
-2. Create the Remote SP Entity, either through a metadata import or manually.
+2. Create the Remote SP Entity, either via a metadata import or manually.
    To configure the Remote SP entity manually, select **Create Entity**. Create ThoughtSpot as a Remote Entity with following details:
 
     |Section|Entry|

@@ -1,5 +1,5 @@
 rnotes - Release notes
-drgBk - Disaster recovery book
+drgBk - disaster recovery book
 awsQs - AWS QS
 appQs - Appliance QS
 digBk - Data integration
@@ -7,6 +7,3 @@ apgBk - Application Integration
 cngBk - Data Connect
 ugBk - End User guide
 admBk - Admin guide
-instAWS - Deployment in AWS
-practGd - ThoughtSpot in Practice
-instSMC - Deployment on SMC

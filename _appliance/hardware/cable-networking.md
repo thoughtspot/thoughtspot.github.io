@@ -1,17 +1,16 @@
 ---
 title: [Cable networking]
-summary: This section reviews the types of cables needed for 10GbE networking and how to plug them in.
-last_updated: 12/12/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
- There are three types of cables to consider for 10GbE networking:
+This section reviews the types of cables needed for 10GbE networking and how to plug them in. There are three types of cables to consider for 10GbE networking:
 
 -   Fiber
 -   Direct Attach Copper (DAC)
 -   Category 6a (not supported by ThoughtSpot)
 
-{: id="fiber-cables"}
 ## Option 1 - Fiber cables
 
 Fiber can be run long distances to the switch.
@@ -32,7 +31,6 @@ The fiber cables must then be plugged into the GBIC.
 
 ![]({{ site.baseurl }}/images/plug_in_fiber_cables.png "Plugging in fiber cables")
 
-{: id="dac-cables"}
 ## Option 2 - DAC/Twinax cables
 
 Copper can only be run short distances to the switch. An SFP+ is attached to the cable.

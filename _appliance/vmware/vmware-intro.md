@@ -1,16 +1,15 @@
 ---
 title: [VMware configuration overview]
-
-
+keywords: vmware
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Congratulations on purchasing the ThoughtSpot instance. This section is an
 overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
-vSphere Hypervisor (ESXi) 6.5 environment.
+VSphere Hypervisor (ESXi) 6.5 environment.
 
-## About ThoughtSpot in VMware
+## About ThoughtSpot on VMware
 
 The VMware virtualization platform provides highly scalable and efficient memory
 and CPU resources management that can be used by ThoughtSpot instances.
@@ -27,52 +26,19 @@ Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
 ThoughtSpot VMs as your dataset size grows.
 
-## Supported configurations
+## Configuration
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
-platform in VMware for the best performance, load balancing, scalability,
+platform on VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
 _minimum specifications_ for an individual VMware ESXi host machine:
 
-<table width="100%" border="0">
-	  <tbody>
-	    <tr>
-	      <th scope="col">Per VM user data capacity</th>
-	      <th scope="col">CPU/RAM</th>
-	      <th scope="col">Data disk</th>
-        </tr>
-	    <tr>
-	      <td>20 GB</td>
-	      <td>16/128 GB</td>
-	      <td>800 GB</td>
-        </tr>
-	    <tr>
-	      <td>100 GB</td>
-	      <td>32/256 GB</td>
-	      <td>800 GB</td>
-        </tr>
-	    <tr>
-	      <td>256 GB</td>
-	      <td>72/512 GB</td>
-	      <td>6 TB</td>
-        </tr>
-		<tr>
-	      <td colspan="3"><b>Note:</b> All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.</td>
-	      <td></td>
-	      <td></td>
-        </tr>
-  </tbody>
-</table>
+* 512GB Memory
+* 200GB SSD
+* 3X 2TB Hard disks (6TB in total in hard disk space)
+* 64 Hyper-threaded Cores
 
-Locally attached storage provides the best performance.
-
-SAN can be used, but must comply with the following requirements:
-* 136 MBps minimum random read bandwidth
-* 240 random IOPS (~4ms seek latency)
-
-NAS/NFS is not supported since its latency is so high that it tends to be unreliable.
-
-All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
+All virtualization hosts should have VMware VSphere Hypervisor (ESXi) 6.5 installed.
 
 ThoughtSpot provides a VMware template (OVF) together with a VMDK (Virtual
 Machine Disk) file for configuring a VM. VMDK is a file format that describes
@@ -88,4 +54,5 @@ files from your ThoughtSpot Customer Success Engineer.
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/appliance/contact.html) by filing a support ticket, email or phone.
+site.baseurl }}/appliance/contact.html) by phone, mail, email, or by filing a
+support ticket.

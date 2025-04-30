@@ -1,6 +1,6 @@
 ---
 title: [Set up the ODBC Driver for SSIS]
-
+keywords: tbd
 last_updated: tbd
 summary: "Use SSIS to set up the ODBC Driver."
 sidebar: mydoc_sidebar
@@ -31,7 +31,7 @@ ODBC drivers. In addition, they must be named the same, such as ThoughtSpot. By
 default they are named ThoughtSpot-32 and ThoughtSpot-64. This is required
 because the 64-bit SSIS shows a list of 32-bit ODBC drivers when you configure
 an ODBC target. However, it executes the 64-bit driver. If the drivers aren't
-named the same, then you can get an error stating the driver doesn't exist.
+named the same, then you'll get an error saying the driver doesn't exist.
 
 
 ## Set up the driver
@@ -102,7 +102,11 @@ ThoughtSpot and bring the table in.
 
 4.  In the Client Configuration Dialog, enter the **Server IP** and **Server Port**.
 
-      Enter any node IP that has Simba server running on it. In **Secondary Servers**, you must specify all node IPs, because ThoughtSpot must resolve to the server Simba runs on, and that server can change after an upgrade. Enter one server IP per line. The line return serves as a separator. Comma separated values are not supported.
+      Any node IP that has Simba server running on it should work. You can
+      specify multiple secondary servers and ThoughtSpot will resolve to the
+      server Simba is running on. To provide  **Secondary Servers** dialog enter
+      one server IP per line. The line return serves as a separator, comma
+      separation is not supported.
 
 5. Click **OK** twice to close the Client Configuration Dialog and the ODBC Data Source Administrator.
 
@@ -157,4 +161,4 @@ Source Administrator.
 
      ![]({{ site.baseurl }}/images/ssis_success.png "Successful import job")
 
-You can validate the import using TQL or from the **Data** screen.
+You can validate the import using TQL or in the **DATA** screen.

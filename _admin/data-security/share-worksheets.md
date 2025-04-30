@@ -1,6 +1,6 @@
 ---
 title: [Share worksheets]
-
+keywords: tbd
 last_updated: tbd
 summary: "You can share worksheets with users or with groups. Sharing a worksheet allows users to select it as a data source and search it."
 sidebar: mydoc_sidebar
@@ -10,7 +10,9 @@ When you share a worksheet, all of its columns are shared. Sharing a worksheet d
 
 To share a pinboard:
 
-1. Click **Data** on the top navigation bar and choose **Worksheets**.
+1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
+
+    ![]({{ site.baseurl }}/images/data_icon_and_worksheets.png)
 
 2. Select one or more worksheets to share, and click the **Share** icon.
 

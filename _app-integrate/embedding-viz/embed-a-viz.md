@@ -1,15 +1,14 @@
 ---
 title: [Embed pinboard or visualization]
-
+keywords: embed,sample,client,example
 last_updated: tbd
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
-This page explains, through an example, how to embed a visualization (table or
+The page explains, through an example, how to embed a visualization (table or
 chart) or pinboard from ThoughtSpot in your own static Web page, portal, or
 application.
-
 To build this sample, you need to have access to a text editor and
 a ThoughtSpot instance with a visualization. You should also have some
 experience working with Javascript.
@@ -21,24 +20,17 @@ already exists. If the pinboard or visualization doesn't exist, create it now
 before continuing.
 
 1. Log in to ThoughtSpot from a browser.
-
 2. Navigate to a visualization on the **Pinboard** tab.
-
 3. Open a pinboard.
-
 3. Copy the URL for the entire pinboard and for a single visualization.
 
-   If the object is a pinboard, click the ellipses icon
-   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
-    **Copy Link**.
+   If the object is a pinboard, click **Actions > Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-1.png "Pinboard Link")
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 
-   For a vizualization in a pinboard, click the ellipses icon
-   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
-    **Copy Link**.
+   For a vizualization in a pinboard, click **Actions > Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-2.png "Visualization Link")
 
@@ -46,8 +38,8 @@ before continuing.
 
 ## Edit the test.html
 
-You must edit the page in your application or web page where you want to
-embed a ThoughtSpot pinboard or visualization. For this example, you can get a copy of the
+You need to edit the page in your application or web page where you want to
+embed a ThoughtSpot pinboard or visualization. For this example, you'll get a copy of the
 <a href="{{"/downloads/test.html" | prepend: site.baseurl }}" target="_blank"><code>test.html</code></a>  file.
 
 1. Create an empty directory called `test`.
@@ -60,7 +52,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
     Here are the fields in the `test.html` file you need to edit.
 
     ```JavaScript
-    var protocol = "THOUGHTSPOT_PROTOCOL";
+    var protocol = "THOUGHSPOT_PROTOCOL";
     var hostPort = "HOST_PORT";   
 
     var pinboardId = "PINBOARD_ID";
@@ -83,7 +75,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
     ```
 
     The protocol (`http` or `https`) of your client and your ThoughtSpot instance
-    should match. You can use this identifier in the next part.
+    should match. You'll use this identifier in the next part.
 
 7. Save your changes and close the `test.html` file.
 
@@ -94,10 +86,10 @@ You must work with ThoughtSpot support to enable CORS between your client
 application domain and the ThoughtSpot domain. If you don't do this, you will
 receive an error message when `test.html` attempts to load the embedded objects.
 
-The test infrastructure uses Python's `simplehttpserver`, which runs by default
-as `localhost:8000`. ThoughtSpot support must have this information. You can
-also copy the `test` directory to an existing web server. If you do this,
-you must DNS for the server when you contact Support.
+The test infrastructure uses Python's `simplehttpserver` which runs, by default
+as `localhost:8000`, this is information ThoughtSpot support will need. You can
+also just copy the `test` directory to an existing web server. If you do this,
+you'll need to DNS for the server when you contact Support.
 
 ## Test the example page
 
@@ -109,7 +101,7 @@ fastest way to run a webserver and test the code is using Python's
 1. Log into ThoughtSpot.
 
    In production, you would have added authentication code to your client. You
-   haven't done that with this system. So, before you test, you must login to the
+   haven't done that with this system. So, before you test, you'll login to the
    ThoughtSpot. Successfully logging in causes the system to create a session
    and an authentication key. Your browser has this information and so when you
    load the `test.html` page in another tab, you won't need to authenticate

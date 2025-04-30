@@ -1,12 +1,12 @@
 ---
 title: [Pinboard filters]
-
+keywords: tbd
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Filters, including bulk filters and exclude fiters, can be applied to pinboards just as with tables
+Filters, including bulk filters, can be applied to pinboards just as with tables
 and charts. These kinds of filters apply to an entire pinboard, making it easy
 to see only the data that you are interested in across the tables and charts
 within a pinboard.
@@ -36,23 +36,16 @@ one place.
 Here is an example that shows you how to add a single filter to a pinboard. To
 create a pinboard filter:
 
-1. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Add filters**.
+1. Click the **Actions** button, and click **Add filters**.
 
      ![]({{ site.baseurl }}/images/add_pinboard_filters.png "Add filters under Actions")
 
-2. In the populated columns menu, click the **Add filter** icon next to the column you would like to filter on.
+2. In the populated columns menu, click the **Add filter** icon next to the columns you would like to use as filters.
 
      ![]({{ site.baseurl }}/images/add_filters_menu.png "Add filters menu")
 
-3. Select the values to include in your answer.
-
-     ![]({{ site.baseurl }}/images/column_filter.png "Include column filters value box")
-
-4. If you want to exclude values, click **Exclude** and choose values to exclude.
-
-     ![]({{ site.baseurl }}/images/exclude_nulls.png "Exclude column filters value box")
-
-5. Click **Done**.
+3. Choose the values you are interested in by typing them in, selecting the appropriate checkboxes, or using **Add values in bulk**.
+4. Click **Done**.
 
   When you apply a filter, the pinboard is not automatically saved with your
   filter applied to every object in the pinboard that was created from a

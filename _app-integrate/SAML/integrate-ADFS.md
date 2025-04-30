@@ -1,7 +1,6 @@
 ---
 title: [Configure Active Directory Federated Services]
-
-
+keywords: SAML,security,"active directory",authenticate,Federated
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

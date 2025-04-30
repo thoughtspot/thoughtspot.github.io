@@ -1,7 +1,7 @@
 ---
 title: [Introduction to monitoring]
-
-
+keywords: monitor,logs,health,node,cluster,performance
+tags: [indexing]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -46,9 +46,11 @@ each subsystem. The individual log directories are the following:
 - `/export/logs/hadoop`
 - `/export/logs/zookeeper`
 
-You can also view [additional topics that also touch on [log files]({{site.baseurl}}/tags/tag_logs.html) throughout the documentation.
+You can also view [additional topics that also touch on log files]({{ site.baseurl
+}}/tags/tag_logs.html) throughout the documentation.
 
 ## System monitoring notifications
 
 You can configure ThoughtSpot to send emails to addresses you specify with
-monitoring reports and a cluster heartbeat. Follow these steps to [Set up monitoring]({{ site.baseurl }}/admin/setup/set-up-monitoring.html#).
+monitoring reports and a cluster heartbeat. Follow these steps to [Set up
+monitoring]({{ site.baseurl }}/admin/setup/set-up-monitoring.html#).

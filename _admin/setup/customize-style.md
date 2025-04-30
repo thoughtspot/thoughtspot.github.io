@@ -1,21 +1,22 @@
 ---
 title: [Customize look and feel]
-
-
+tags: [customize,style,palette,color,brand]
+keywords: customize
 last_updated: tbd
 summary: "You can brand the ThoughtSpot application for your company."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can customize the look and feel of the ThoughtSpot application for your
-company. Configuring these settings sets system-wide defaults for all your users.
+company. Configuring these settings set system-wide defaults for all your users.
 
-Style customization is enabled by default. You can configure your cluster to disable this functionality.
-Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html) about disabling this feature.
+You must configure your cluster to enable this functionality. Contact
+<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for information
+about enabling this feature.
 
 ## Where to customize styles
 
-A user with administrative rights can view and
+If you have enabled this feature, a user with administrative rights can view and
 access the customization on the **Admin** page.
 
 ![]({{ site.baseurl }}/images/custom-style.png)
@@ -30,7 +31,7 @@ cursor moves to the right of any setting.
 
 ![]({{ site.baseurl }}/images/custom-style-reset.png)
 
-The following table lists the style customizations you can configure.
+The table below lists the style customizations you can configure.
 
 <table>
   <tr>
@@ -87,14 +88,12 @@ To set a new font:
 ![]({{ site.baseurl }}/images/custom-style-font.png)
 
 1. Make sure you have a WOFF file available for your font.
-
 2. Select the label you want to change.
-
-3. Click the **+** button.
+3. Press the **+** button.
 
    The system displays the **Custom Font** dialog.
 
-4. Click the **Custom Font** field.
+4. Press the **Custom Font** field.
 
    The system displays the file finder.
 
@@ -102,15 +101,4 @@ To set a new font:
 
    The file appears in the font dialog
 
-6. Click **Save** to change the font.
-
-## How to specify the behavior or clickable links in data
-
-There is a system-wide setting which determines what happens when a user clicks on a link within the data. When your data includes URLs, they display as clickable links in ThoughtSpot tables. By default, clicking on a link opens the URL in a separate tab. But there is a system-wide setting that can be changed to open the links within the context in which they appear.
-
-Changing this setting opens the links:
-
-|Link type|Opens in|
-|Link in search result table in ThoughtSpot|Same browser tab as ThoughtSpot application|
-|Link in table embedded in an iFrame|Same iFrame that contains the table|
-|Link in full ThoughtSpot application embedded in an iFrame|Same iFrame that contains the application|
+6. Press **Save** to change the font.
