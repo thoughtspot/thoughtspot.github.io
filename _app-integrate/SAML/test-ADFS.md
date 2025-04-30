@@ -1,6 +1,6 @@
 ---
 title: [Test the ADFS Integration]
-tags: [security]
+tags:
 keywords: SAML,AD,"active directory"
 last_updated: tbd
 sidebar: mydoc_sidebar

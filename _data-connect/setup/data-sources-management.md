@@ -1,7 +1,8 @@
 ---
 title: [Data sources management]
+tags:
 keywords: tbd
-tags: [logs]
+last_updated: tbd
 summary: "After you have successfully loaded your tables, you can check on the status of the load, make edits, and more."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

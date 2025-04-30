@@ -1,6 +1,6 @@
 ---
 title: [Sync users and groups from LDAP]
-tags: [SAML_LDAP_AD]
+tags: [Security_SAML_LDAP_AD]
 keywords: SAML,security,"active directory",authenticate
 last_updated: tbd
 summary: "Use this procedure to synchronize your ThoughtSpot system with an LDAP server."
@@ -23,10 +23,8 @@ Before synchronizing users and groups, you will need this information:
 
     For example, `DC=ldap,DC=thoughtspot,DC=com`
 
--   Location of the Python synchronization script, in case you want to modify it or create your own: `/usr/local/scaligent/release/callosum/utilities/ldap_sync_python_api/syncUsersAndGroups.py`
 
-There are two ways for you to fetch users and groups from LDAP and populate them
-into your ThoughtSpot system:
+There are two ways for you to fetch users and groups from LDAP and populate them into your ThoughtSpot system:
 
 -   Run the synchronization script in interactive mode, which will walk you through the process (shown here).
 -   Create your own Python script by using the ThoughtSpot Python APIs. If you need details on the Python APIs, contact ThoughtSpot Support. If you choose this method, you can run the script periodically using a cron job.

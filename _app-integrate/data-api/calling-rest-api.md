@@ -1,5 +1,6 @@
 ---
 title: [Calling the REST API]
+tags:
 keywords: API,URL,calling,REST,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar

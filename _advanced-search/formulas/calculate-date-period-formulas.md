@@ -1,8 +1,7 @@
 ---
 title: [Calculate date formulas]
+tags:
 keywords: tbd
-tags: [formulas]
-tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,5 +1,6 @@
 ---
 title: [Architecture components]
+tags:
 keywords: Architecture,components,cluster,appliance
 last_updated: tbd
 summary: "To implement ThoughtSpot it is important to understand where it sits within your overall analytics architecture and how it provides data to end users. "

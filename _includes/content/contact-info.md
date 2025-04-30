@@ -14,9 +14,9 @@ You need a Support Portal login to file a ticket. Please contact ThoughtSpot to 
 
 ThoughtSpot, Inc.
 
-1 Palo Alto Square, Building 1, Suite 200
+910 Hermosa Ct
 
-Palo Alto, CA 94306
+Sunnyvale, CA 94085
 
 ## Phone numbers
 
@@ -29,6 +29,6 @@ Palo Alto, CA 94306
 
 |Reason for contacting|Email|
 |---------------------|-----|
-|For sales inquiries.|<a href="mailto:sales@thoughtspot.com">sales@thoughtspot.com</a>|
-|For customer support and software update inquiries.|<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>|
-|For other inquiries.|<a href="mailto:hello@thoughtspot.com">hello@thoughtspot.com</a>|
+|For sales inquiries.|sales@thoughtspot.com|
+|For customer support and software update inquiries.|support@thoughtspot.com|
+|For other inquiries.|hello@thoughtspot.com|

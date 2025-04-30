@@ -1,6 +1,6 @@
 ---
 title: ["Security for SpotIQ functions"]
-tags: [spotiq,security]
+tags:
 keywords: security,SpotIQ,"auto analyze,data"
 last_updated: tbd
 sidebar: mydoc_sidebar

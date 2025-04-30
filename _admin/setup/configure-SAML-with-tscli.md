@@ -1,6 +1,6 @@
 ---
 title: [Configure SAML]
-tags: [SAML_LDAP_AD, tscli]
+tags: [Security_SAML_LDAP_AD,SysAdm_tscli_Config]
 keywords: SAML, ldap, AD, security
 last_updated: tbd
 summary: "You can use the Security Assertion Markup Language (SAML) to authenticate users"

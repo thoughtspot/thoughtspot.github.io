@@ -1,14 +1,14 @@
 ---
-title: ["SpotIQ 101: Do more with SpotIQ"]
-tags: [spotiq]
+title: ["101: Do more with SpotIQ"]
+tags:
 keywords:
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-At this point, you have done [the first set of SpotIQ tutorial tasks](overview.html), you've uploaded some
+At this point, you have done [the first set of SpotIQ tutorial tasks](overview.md), you've uploaded some
 data and run your first SpotIQ analysis. You should be able to look at the
-**SpotIQ** list and see when your analysis ran. This is important knowledge
+**INSIGHT** list and see when your analysis ran. This is important knowledge
 because data changes, you'll want to run multiple analyzes on the same data.
 
 In this section, you look at the results and see what insights SpotIQ
@@ -17,15 +17,15 @@ discovered. You'll learn about the basic types of analysis SpotIQ runs on data.
 ## View results of an analysis
 
 1. If you haven't, log into the ThoughtSpot application.
-2. Select the **SpotIQ > Results** page.
-3. Look for results from your **FoodDollarDataReal** analysis and click the **NAME**.
+2. Select the **INSIGHTS > Results** page.
+3. Look for results from your **FoodDollarDataReal** analysis and click on the **NAME**.
    The application opens the SpotIQ insights.
 
    ![]({{ site.baseurl }}/images/spotiq-in-sights.png)
 
    The first panel provides information about the analysis.
 
-4. Click the information icon ![information icon]({{ site.baseurl }}/images/icon-info.png){: .inline} at the top of the page to see a summary of the SpotIQ analysis.
+4. Click on the small **i** to see a summary of the SpotIQ analysis.
 
    ![]({{ site.baseurl }}/images/spotiq-details.png)
 
@@ -66,7 +66,7 @@ can't provide information you can use, just that you are unlikely to get the
 same insight twice.
 
 If a set of insights look good, you can **Save** them and they are not removed
-when they expire. Do this now, click ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} > **Save**:
+when they expire. Do this now, click **Actions > Save** from the menu:
 
 ![]({{ site.baseurl }}/images/spotiq-save.png)
 

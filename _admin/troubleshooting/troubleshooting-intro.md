@@ -1,17 +1,18 @@
 ---
 title: [About troubleshooting]
+tags:
 keywords: tbd
-tags: [logs]
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The information here provides very basic troubleshooting. For more detailed troubleshooting, [Contact ThoughtSpot]({{ site.baseurl }}/admin/misc/contact.html#).
 
--   **[Get your configuration and logs]({{ site.baseurl }}/admin/troubleshooting/get-logs.html)**  
+-   **[Get logs]({{ site.baseurl }}/admin/troubleshooting/get-logs.html)**  
 For troubleshooting on specific incidents or cluster problems, getting a log bundle can help.
 -   **[Network connectivity issues]({{ site.baseurl }}/admin/troubleshooting/check-connectivity.html)**  
 If network connectivity to and from ThoughtSpot is not working, try using these steps to find and correct the issue.
--   **[Check the timezone]({{ site.baseurl }}/admin/troubleshooting/set-timezone.html)**  
+-   **[Change the timezone]({{ site.baseurl }}/admin/troubleshooting/set-timezone.html)**  
 ThoughtSpot comes configured with the timezone where it is to be installed.
 -   **[Browser untrusted connection error]({{ site.baseurl }}/admin/troubleshooting/certificate-warning.html)**  
 If you are not using a SSL certificate for authentication, users will see an untrusted connection error in their browser when accessing ThoughtSpot. The error looks slightly different depending upon the Web browser being used.

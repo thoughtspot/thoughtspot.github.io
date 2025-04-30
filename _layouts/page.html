@@ -38,31 +38,27 @@ layout: default
     {% include toc.html %}
     {% endunless %}
 
-
-    {% unless page.tree == false %}
-    {% include read_time.html %}
-    {% endunless %}
-
   {{content}}
   <div class="tags">
     <div style="float:right;">
       {% if site.baseurl %}
         {% if site.github_editme_path %}
 
-        <a target="_blank" href="https://github.com/{{site.github_editme_path}}{{ site.branch_url }}/{% unless page.url contains "index.html" %}{% endunless %}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/{{site.github_editme_path}}{{ site.baseurl }}/{% unless page.url contains "index.html" %}{% endunless %}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
         {% endif %}
       {% endif %}
     </div>
     <div >
-        {% if page.tags[0] %}
+        <!-- {% if page.tags != null %}
+        <b>Tags: </b>
         {% assign projectTags = site.data.tags.allowed-tags %}
         {% for tag in page.tags %}
         {% if projectTags contains tag %}
-        <a href="{{ "/tags/tag_" | append: tag | append: ".html" | prepend: site.baseurl }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+        <a href="/tags/{{ "tag_" | append: tag | append: ".html"  | prepend: site.baseurl}}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
         {% endif %}
         {% endfor %}
-        {% endif %}
+        {% endif %} -->
     </div>
 </div>
 {% include disqus.html %}

@@ -1,5 +1,6 @@
 ---
 title: [Append data through the UI]
+tags:
 keywords: tbd
 last_updated: tbd
 summary: "Use append to add more data to an existing data source."

@@ -1,6 +1,7 @@
 ---
 title: ["Create, edit, or delete a group"]
-keywords: "group,user,privileges,members"
+tags:
+keywords: "group,user,privileges"
 last_updated: tbd
 summary: "Good planning when creating groups and assigning privileges will pay off in ease of administration and a better search experience."
 sidebar: mydoc_sidebar
@@ -14,11 +15,11 @@ a set of privileges for its users.
 To create a group and add privileges for the group:
 
 1. Log into ThoughtSpot from a browser.
-2. Click the **Admin** icon, on the top navigation bar.
+2. Click on the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3.  In the **Admin** panel, click **User Management** and **Groups**.
+3.  In the **Admin** panel, click on **User Management** and **Groups**.
 
     ![]({{ site.baseurl }}/images/manage_groups_3.2.png "Manage Groups")
 
@@ -28,57 +29,28 @@ To create a group and add privileges for the group:
 
 5. Enter the details for the new group:
 
-     ![]({{ site.baseurl }}/images/new_group_dialogue.png "Enter Group details")
+     ![]({{ site.baseurl }}/images/new_group_dialogue_3.2.png "Enter Group details")
 
-    <table>
-    <colgroup>
-    <col width="20%" />
-    <col width="80%" />
-    </colgroup>
-     <tr>
-       <th>Field</th>
-       <th>Description</th>
-     </tr>
-     <tr>
-       <th>Group name</th>
-       <td>Enter a unique name for the group.</td>
-     </tr>
-     <tr>
-       <th>Display name</th>
-       <td>Name of the group as it appears in ThoughtSpot.</td>
-     </tr>
-     <tr>
-       <th>Sharing visibility</th>
-       <td>Indicate whether objects can be shared with this group. When set to <b>SHAREABLE</b>,
-       this group is an option in the <b>Share</b> dialog.</td>
-     </tr>
-     <tr>
-       <th>Description</th>
-       <td>Optionally enter a description.</td>
-     </tr>
-     <tr>
-       <th>Privileges</th>
-       <td><p>Check the <a href="{{"/admin/users-groups/about-users-groups.html#list-of-privileges" | prepend: site.baseurl }}">privileges</a>
-       you want to grant to the group. If you add the privilege <b>Has
-       administration privileges</b> to a group, all users in that group can see
-       all the data in ThoughtSpot. Administrators can always see all data
-       sources, and <a href="{{"/admin/data-security/about-row-security.html#" | prepend: site.baseurl }}">Row level security</a> does not
-       apply to them.</p>
-       </td>
-     </tr>
-    </table>
+    1. Enter a unique name for the group.
+    2. Optionally enter a description.
+    3. Check the [privileges](about-users-groups.html#list-of-privileges) you want to grant to the group.
 
-4. Click the **Manage Groups** tab if you want to add sub-groups.
+        If you add the privilege **Has administration privileges** to a group,
+        all users in that group can see all the data in ThoughtSpot.
+        Administrators can always see all data sources, and
+        [Row level security]({{ site.baseurl}}/admin/data-security/about-row-security.html#) does not apply to them.
 
-   Find the groups you want to add in the list, or search for them by name.
-   Check the box next to each group you want to add to the group.
+    4. Click the **Manage Groups** tab if you want to add sub-groups.
 
-5. Click the **Manage Users** tab if you want to add users.
+       Find the groups you want to add in the list, or search for them by name.
+       Check the box next to each group you want to add to the group.
 
-    Find the users you want to add in the list, or search for them by name.
-    Check the box next to each user you want to add to the group.
+    5. Click the **Manage Users** tab if you want to add users.
 
-6. Click **Add** to create the group.
+        Find the users you want to add in the list, or search for them by name.
+        Check the box next to each user you want to add to the group.
+
+6. Click **Create** to create the group.
 
 ## Edit a group or delete a group
 
@@ -94,9 +66,9 @@ parent group it may have. Keep this in mind when adding users.
 
 To edit or delete an existing group:
 
-1. Log into ThoughtSpot.
-2. Click the **Admin** icon, on the top navigation bar.
-3. In the **Admin** panel, click **User Management** and **Groups**.
+1. Log into ThoughtSpot from a browser.
+2. Click on the **Admin** icon, on the top navigation bar.
+3. In the **Admin** panel, click on **User Management** and **Groups**.
 
     ![]({{ site.baseurl }}/images/manage_groups_3.2.png "Manage Groups")
 
@@ -106,35 +78,14 @@ To edit or delete an existing group:
 
 5. Make your changes and click **Update**.
 
-## List the group members
-
-The system shows you the first 15 users in your group. To identify if other
-users are present, you must search for the specific user name.
-
-1. Click **Admin** from the top navigation bar.
-
-   The system displays the **Admin** panel.
-
-2. Select **User Management**.
-3. Click a group to edit it.
-
-   The system displays the **Edit group** dialog.
-
-   ![]({{ site.baseurl }}/images/edit-group.png "Manage Users")
-
-4. Choose **Manage Users**.
-
-   The first 100 users which are in the group are listed. The group could
-   maintain more, you have to search for a specific user to find others.
-
 
 ## Add multiple users to a group
 
 You can add multiple users to a group using one button. To add multiple users to a group:
 
-1. Log into ThoughtSpot.
-2. Click the **Admin** icon, on the top navigation bar.
-3.  In the **Admin** panel, click **User Management** and **Users**.
+1. Log into ThoughtSpot from a browser.
+2. Click on the **Admin** icon, on the top navigation bar.
+3.  In the **Admin** panel, click on **User Management** and **Users**.
 
      ![]({{ site.baseurl }}/images/manage_users_3.2.png "Manage Users")
 

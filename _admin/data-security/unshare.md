@@ -1,6 +1,6 @@
 ---
 title: [Revoke access (unshare)]
-tags: [security]
+tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

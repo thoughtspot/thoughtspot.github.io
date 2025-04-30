@@ -1,7 +1,9 @@
 ---
 title: [Authentication]
+tags:
 keywords: data,cluster,memory,import,tsload,SAML,LDAP,"active directory"
-summary: "ThoughtSpot provides LDAP/AD, SAML, and ThoughtSpot login to authenticate users."
+summary: "ThoughtSpot does all analysis against data in memory to help achieve
+fast results across millions and billions of records of data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

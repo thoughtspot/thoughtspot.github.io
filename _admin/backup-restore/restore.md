@@ -1,5 +1,6 @@
 ---
 title: [About restore operations]
+tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

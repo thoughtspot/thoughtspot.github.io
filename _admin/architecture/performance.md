@@ -1,7 +1,7 @@
 ---
 title: [Performance considerations]
+tags:
 keywords: data,cluster,memory,import,tsload
-tags: [performance,rls]
 last_updated: tbd
 summary: "Make sure you understand the performance considerations in your installation."
 sidebar: mydoc_sidebar
@@ -13,13 +13,11 @@ important to understand these considerations prior to implementation, since some
 solutions will perform better than others.
 
 Each node in a ThoughtSpot cluster has been found to perform ideally with less
-than 250GB of data and fewer than 0.5 billion total rows of data. For schemas
+than 250GB of data and fewer than .5 billion total rows of data. For schemas
 that are particularly complex, performance is increased with even fewer rows of
 data per node. Ways to reduce the total amount of data and rows of data include
 limiting the amount of data (number of years, etc.) or combining long, but
 narrow tables together.
-
-The performance information related on this page apply to a typical 1TB 4 node cluster.
 
 ## Data Boundaries
 
@@ -29,9 +27,9 @@ Keep in mind these other boundaries:
 
 |Description |Boundary|
 |-------------------------|--------------------|
-|Max number of rows that can be downloaded | 10M (default is 1M) |
+| Max number of rows that can be downloaded | 10M (default is 1M) |
 |Size in CSV format| 1 TB per appliance|
-|Total number of rows across all tables| 1B per appliance|
+|Total number of rows across all tables| 2B per appliance|
 |Many-to-Many (Generic) join cardinality|10B per appliance|
 |Load frequency| Once every hour|
 
@@ -47,7 +45,7 @@ should keep in mind the following:
 You can use an ETL process to circumvent these limitations. Speak with
 ThoughtSpot Customer Support to learn more.
 
-### Aggregated worksheets and joins
+### Aggregated worksheets
 
 To be able to join an aggregated worksheet with a base table, your installation
 must be configured to allow the behavior. The aggregated worksheet cannot have
@@ -63,7 +61,7 @@ the following boundaries are recommended:
 |-------------------------|--------------------|
 |Max number of fact tables in a worksheet	|5|
 |Max number of shared dimensions	|2|
-|Max number of rows in _non_ co-sharded shared dimension table of chasm trap	|1B|
+|Max number of rows in non co-sharded shared dimension table of chasm trap	|10M|
 |Max number of rows in co-sharded shared dimension table of chasm trap	| 1B |
 
 ## Row level security Boundaries

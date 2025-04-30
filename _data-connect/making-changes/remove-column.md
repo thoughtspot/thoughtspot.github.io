@@ -1,5 +1,6 @@
 ---
 title: [Remove a column from an existing data source]
+tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

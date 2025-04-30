@@ -1,4 +1,4 @@
-<table style="font-size:90%; padding:4; border-collapse: collapse;">
+<table cellpadding="4" cellspacing="0" frame="border" border="1" rules="all">
  <colgroup>
     <col style="width:25%" />
     <col style="width:25%" />

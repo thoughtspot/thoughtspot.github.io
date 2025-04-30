@@ -1,5 +1,6 @@
 ---
 title: [Search results contain too many blanks]
+tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar

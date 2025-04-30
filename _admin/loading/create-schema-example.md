@@ -1,6 +1,6 @@
 ---
 title: [Schema creation examples]
-tags: [TQL]
+tags: [Data_Integ_TQL]
 keywords: tbd
 last_updated: tbd
 summary: "Simple examples that illustrate how to use the TQL and the ThoughtSpot Loader."

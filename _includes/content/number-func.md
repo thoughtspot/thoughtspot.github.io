@@ -13,7 +13,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>&#42;</code></td>
+      <td><code>&easter;</code></td>
       <td>Returns the result of multiplying both numbers.</td>
       <td><code class="highlighter-rouge">3 * 2 = 6</code><br><code class="highlighter-rouge">price * taxrate</code></td>
     </tr>
@@ -130,7 +130,7 @@
     <tr>
       <td><code>round</code></td>
       <td>Returns the first number rounded to the second number (the default is 1).</td>
-      <td><code class="highlighter-rouge">round (35.65, 10) = 40</code><br><code class="highlighter-rouge">round (battingavg, 100)</code><br><code class="highlighter-rouge">round (48.67, .1) = 48.7</code></td>
+      <td><code class="highlighter-rouge">round (35.65, 10) = 40</code><br><code class="highlighter-rouge">round (battingavg, 100)</code></td>
     </tr>
     <tr>
       <td><code>safe_divide</code></td>

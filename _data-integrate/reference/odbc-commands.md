@@ -1,18 +1,13 @@
 ---
-title: [Supported SQL commands]
-keywords: odbc,jdbc
-summary: "The ThoughtSpot connection drivers support a limited set of SQL commands."
+title: [ODBC supported SQL commands]
+tags:
+keywords: tbd
+last_updated: tbd
+summary: "ODBC driver supports a limited set of SQL commands."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-The ODBC and JDBC drivers support a limited set of SQL commands. When developing
-software that uses a ThoughtSpot ODBC driver, use this reference of supported
-commands. This reference is intended for developers using other tools (ETL,
-etc.) to connect to ThoughtSpot via the ODBC or JDBC driver.
-
-{% include note.html content="ThoughtSpot displays `VARCHAR` fields using lower case, regardless of what the original casing of your loaded data is." %}
-
-## ODBC
+The ODBC driver supports a limited set of SQL commands. When developing software that uses the ThoughtSpot ODBC driver, use this reference of supported commands. This reference is intended for developers using other tools (ETL, etc.) to connect to ThoughtSpot via the ODBC driver.
 
 These SQL commands are supported for ODBC:
 
@@ -34,7 +29,7 @@ These SQL commands are supported for ODBC:
 
 * `DELETE FROM <table>`
 
-    Deletes `ALL` rows from the specified table. Does not support the `WHERE` clause.
+    Deletes ALL rows from the specified table. Does not support the WHERE clause.
 
     ```
     DELETE FROM country_dim;
@@ -46,9 +41,3 @@ These SQL commands are supported for ODBC:
     ```
     SELECT id_number, country FROM country_dim WHERE id_number > 200;
     ```
-
-## JDBC
-
-`TRUNCATE` is not supported. Instead, use `DELETE FROM TABLE` which is
-functionally equivalent to “truncate table” in terms of table compression and so
-forth.

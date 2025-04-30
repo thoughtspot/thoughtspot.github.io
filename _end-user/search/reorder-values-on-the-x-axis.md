@@ -1,5 +1,6 @@
 ---
 title: [Reorder labels on the axis or legend]
+tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -18,5 +19,7 @@ This example shows you how to reorder the x-axis columns.
 2. In the X-Axis box, delete the values. Then re-add them in the new preferred order.
 
      ![]({{ site.baseurl }}/images/x-axis_column_order.png "Reordering X-Axis columns")
+
+3. Click **Done**.
 
    Your chart reorganizes itself to reflect the new label order.
