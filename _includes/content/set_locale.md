@@ -27,9 +27,9 @@ In addition to American English (*en-US*), ThoughtSpot supports the following lo
 | *fr-CA* | Français (Canada)  |
 | *fr-FR* | Français (France)  |
 | *it-IT* | Italiano  |
-| *nl-NL* | Nederland (beta)  |
+| *nl-NL* | Nederland  |
 | *nb-NO* | Norsk  |
-| *pt-BR* | Português (Brazil)  |
+| *pt-BR* | Português (Brasil)  |
 | *pt-PT* | Português (Portugal)  |
 | *fi-FI* | Suomi  |
 | *sv-SE* | Svenska  |

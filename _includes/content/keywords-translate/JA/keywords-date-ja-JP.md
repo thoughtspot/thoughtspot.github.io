@@ -161,7 +161,7 @@
   </tr>
   <tr>
     <td class="tg-us36">month to date</td>
-    <td class="tg-us36">月初から今日まで</td>
+    <td class="tg-us36">月初から今日まで<br/>月初から本日まで<br/>月累計<br/>mtd<br/>month to date</td>
     <td class="tg-us36"><code>sales by product <b>month to date</b> sales &gt; 2400</code></td>
   </tr>
   <tr>
@@ -281,7 +281,7 @@
   </tr>
   <tr>
     <td class="tg-dc35">quarter to date</td>
-    <td class="tg-dc35">四半期初から今日まで</td>
+    <td class="tg-dc35">四半期初から今日まで<br/>四半期初から本日まで<br/>四半期累計<br/>qtd<br/>quarter to date</td>
     <td class="tg-dc35"><code>sales by product <b>quarter to date</b> for top 10 products by sales</code></td>
   </tr>
   <tr>
@@ -306,7 +306,7 @@
   </tr>
   <tr>
     <td class="tg-us36">week to date</td>
-    <td class="tg-us36">週初から今日まで</td>
+    <td class="tg-us36">週初から今日まで<br/>週初から本日まで<br/>週累計<br/>wtd<br/>week to date</td>
     <td class="tg-us36"><code>sales by order date <b>week to date</b> for pro-ski200</code></td>
   </tr>
   <tr>
@@ -341,7 +341,7 @@
   </tr>
   <tr>
     <td class="tg-dc35">year to date</td>
-    <td class="tg-dc35">年初から今日まで</td>
+    <td class="tg-dc35">年初から今日まで<br/>年初から本日まで<br/>年累計<br/>ytd<br/>year to date</td>
     <td class="tg-dc35"><code>sales by product <b>year to date</b></code></td>
   </tr>
   <tr>

@@ -57,7 +57,7 @@ See [Drill down]({{ site.baseurl }}/complex-search/drill-down.html).
 
 ## Save your new answer
 When you find a valuable insight using Answer Explorer, you may want to save that Answer as it appears, instead of trying to recreate it in the **Search** bar.
-1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
+1. Click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
 2. Select **copy and edit**.
 3. **Save** your new Answer within ThoughtSpot and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.

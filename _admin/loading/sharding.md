@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 3/17/2020
+last_updated: 3/16/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -16,7 +16,7 @@ Currently, we offer the following keyword translations.
 
 <!-- | [日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html) | [Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html) |
 
- | **[日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html)** |   | **[中文 (简体)]({{ site.baseurl }}/reference/keywords-translate/keywords-zh-CN.html)** | **[Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html)** | **[Español (Latinoamérica)]({{ site.baseurl }}/reference/keywords-es-US.html)** | **[Français (Canada)]({{ site.baseurl }}/reference/keywords-fr-CA.html)** | **[Français (France)]({{ site.baseurl }}/reference/keywords-fr-FR.html)** | **[Português (Brasil)]({{ site.baseurl }}/reference/keywords-pt-BR.html)** | -->
+ | **[日本語]({{ site.baseurl }}/reference/keywords-ja-JP.html)** |   | **[中文 (简体)]({{ site.baseurl }}/reference/keywords-translate/keywords-zh-CN.html)** | **[Deutsche]({{ site.baseurl }}/reference/keywords-de-DE.html)** | **[Español (latín)]({{ site.baseurl }}/reference/keywords-es-US.html)** | **[Français (Canada)]({{ site.baseurl }}/reference/keywords-fr-CA.html)** | **[Français (France)]({{ site.baseurl }}/reference/keywords-fr-FR.html)** | **[Português (Brasil)]({{ site.baseurl }}/reference/keywords-pt-BR.html)** | -->
 
 <table style="width: 70%; border-spacing: 2px;">
   <tr>

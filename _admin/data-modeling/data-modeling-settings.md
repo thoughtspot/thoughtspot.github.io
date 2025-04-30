@@ -1,7 +1,7 @@
 ---
 title: [Overview of data modeling settings]
 summary: Learn about data modeling settings.
-last_updated: 5/6/2020
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -29,7 +29,7 @@ The following index includes mutable data modeling settings that you can apply t
 | [Aggregation](change-aggreg-additive.html#) | Sets the default aggregation type for a column. |
 | [Hidden](change-visibility-synonym.html#) | Sets the visibility of a column. |
 | [Synonyms](change-visibility-synonym.html#) | Adds synonyms that can be used in the search bar to refer to a column. |
-| [SpotIQ Preference](spotiq-data-model-preferences.html#) | Excludes specified columns from SpotIQ analyses. By Default, all columns are included in SpotIQ. |
+<!-- <!-- ifdef::software[] -->| [SpotIQ Preference](spotiq-data-model-preferences.html#) | Excludes specified columns from SpotIQ analyses. By Default, all columns are included in SpotIQ. | <!-- endif::software[] --> -->
 | [Index Type](change-index.html#) | Sets the type of index that will be created for a column. |
 | [Geo Config](model-geo-data.html#) | Enables a column to be used in GeoMap visualizations. |
 | [Index Priority](change-index.html#) | Changes the priority of a column in search suggestions. |
@@ -37,8 +37,6 @@ The following index includes mutable data modeling settings that you can apply t
 | [Currency Type](set-format-pattern-numbers.html#set-currency-type) | Specifies the format of currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. You cannot change the attribution dimension in the modeling file. You can only configure it on a table-by-table basis. |
 | [Calendar Type]({{ site.baseurl }}/admin/setup/set-custom-calendar.html) | Specifies what type of calendar a date type column uses. It can be Gregorian calendar (default), a fiscal calendar, or any custom calendar. |
-| [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column: person, place, time, and so on. Important for configuring SearchIQ (**Beta**). |
-| SearchIQ Enabled | Indicates if the column is enabled for SearchIQ. Note that SearchIQ is in **Beta**. |
 
 ## Data modeling best practices
 

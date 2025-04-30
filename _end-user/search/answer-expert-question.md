@@ -1,11 +1,13 @@
 ---
-title: ["Answer an expert question"]
+title: ["Answer Ask an expert question"]
 
-last_updated: 3/23/2020
+last_updated: 4/16/2019
 summary: "You're the expert. Now what? Here's how to answer a request from Ask an Expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Ask an Expert, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support." %}
 
 When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use **Ask an Expert** to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
 
@@ -39,5 +41,5 @@ When a user struggles to answer a specific question, build a chart they have in 
 
 ## Related information
 
--   [Review answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
+-   [View answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
 -   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-expert-question.html)

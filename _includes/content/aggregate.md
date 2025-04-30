@@ -1,14 +1,14 @@
 <table>
 <colgroup>
-   <col style="width:25%" />
-   <col style="width:25%" />
+   <col style="width:15%" />
    <col style="width:50%" />
+   <col style="width:35%" />
 </colgroup>
   <thead>
     <tr>
       <th>Function</th>
       <th>Description</th>
-      <th>Examples</th>
+      <th>Example code</th>
     </tr>
   </thead>
   <tbody>
