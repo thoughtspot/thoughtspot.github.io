@@ -1,7 +1,7 @@
 ---
 title: [TQL reference]
-tags: [TQL,bestpractices]
-keywords: tbd
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -479,7 +479,7 @@ WHERE "borough" = 'staten isl' AND city = 'NY';</code></p>
 ## Constraints and relationships
 
 Constraints and relationships in ThoughtSpot are used to define the
-relationships between tables (i.e. how they can be joined). However, constraints
+relationships between tables (how they can be joined). However, constraints
 are not enforced, as they would be in a transactional database. You can define
 the following constraints when creating a table with <code>CREATE TABLE</code>, or add them
 to an existing table using the <code>ADD CONSTRAINT</code> syntax:

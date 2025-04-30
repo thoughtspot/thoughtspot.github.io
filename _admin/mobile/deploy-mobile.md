@@ -1,6 +1,6 @@
 ---
 title: [Deploy mobile app]
-keywords: tbd
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,7 +16,7 @@ There are two options for your users to download the ThoughtSpot mobile app:
 ### App Store for iOS
 The ThoughtSpot app is available from the App Store for iOS. Your users can download it directly from there.
 
-### Mobile device management platform
+### Mobile device or app management platform
 There are two ways to provide the ThoughtSpot app to your users with your MDM platform:
 
 #### Option 1 [Recommended]: Provide a link to the app in the App Store for iOS.

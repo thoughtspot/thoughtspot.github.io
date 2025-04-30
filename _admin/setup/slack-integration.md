@@ -1,6 +1,6 @@
 ---
 title: [Slack integration]
-keywords: slack, integration, messaging
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -10,8 +10,8 @@ Users can use the integration, called **Spot**, to make queries or view charts.
 Any users with administrative rights can apply a `spot` sticker to specific
 objects. Then, the object is available through Slack.
 
-The first time a user messages Spot, it returns a link to log into ThoughtSpot.
-Once a user logs in, the user's Slack and ThoughtSpot account are associated.
+The first time a user messages Spot, it returns a login link for ThoughtSpot.
+After logging in, the user's Slack and ThoughtSpot accounts are connected.
 Actions a user makes from Slack are tied to the user's permissions and
 authorization.
 
@@ -19,7 +19,7 @@ authorization.
 
 Here are the high level steps:
 
-1. Work with <a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>
+1. Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html)
  to install the Spot Slack bot on your cluster.
 2. Log into ThoughtSpot.
 3. Label answers, pinboards, and other objects with the spot sticker.
@@ -29,6 +29,6 @@ Here are the high level steps:
 
 ## Related Information
 
-Relevant `tscli` commands are [here]({{ site.baseurl }}/reference/tscli-command-ref.html#spot), but these will not work until Spot is enabled by ThoughtSpot Support. Support
+Relevant `tscli` commands are in the tscli command reference (See https://docs.thoughtspot.com/latest/reference/tscli-command-ref.html#spot), but these will not work until Spot is enabled by ThoughtSpot Support. Support
 will work with you to install Spot, and then provide the rest of the workflow to
 you, including `tscli` command usage.

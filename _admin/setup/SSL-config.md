@@ -1,95 +1,171 @@
 ---
 title: [Configure SSL]
-tags: [Security_SSL]
-keywords: tbd
-last_updated: tbd
-summary: "SSL provides authentication and data security"
+last_updated: 10/11/2019
+summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
+You can use SSL to enable both HTTP and LDAP data security.
 
+{: id="ssl-about"}
 ## About SSL
-Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you'll need your company's own SSL certificate. The certificate is issued per domain (service), so if you want to use SSL for both HTTP(S) and LDAP(S), you will need two separate certificates - one for the HTTPS domain and one for the LDAPS domain.
+Companies usually secure applications that access data. To use SSL with ThoughtSpot, you must use your company's own SSL certificate. The certificate is issued for each domain or service. If you plan to use SSL for both HTTP(S) and LDAP(S), you must have two separate certificates.
 
-If you do not have an SSL certificate:
+If you do not have an SSL certificate, there are options:
 
--   Check with your IT department to see if they already have an SSL certificate you can use.
--   If not, you will need to obtain the certificate from an issuing authority.
--   Alternatively, you may disable SSL if you don't want the security it provides by using the command `tscli ssl off`.
+-   Check with your IT department if they have an SSL certificate you can use.
+-   Obtain the certificate from an issuing authority.
+-   Disable SSL and loose the security it provides. Use the following command:
+    ```
+    tscli ssl off
+    ```
+ThoughtSpot works with a wide variety of SSL types, from a wide variety of vendors.
 
-There are many SSL vendors to choose from. Check with your existing Web hosting provider first, to see if they can provide the certificate for you.
-
-When you apply for the SSL certificate, you may specify a SAN, wildcard, or single domain certificate. Any of these can work with ThoughtSpot.
-
+{: id="ssl-ports"}
 ## Required ports
 
 To use SSL, the following ports must be open:
 - 443
 - 80
 
+{: id="ssl-configure"}
 ## Configure SSL for web traffic
 
-This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:
+{% include note.html content="Do not use a passphrase when creating certificates.<br>To verify if you're prompted to specify a passphrase, invoke the command `openssl rsa -check -in pk.key`. If the answer is 'yes', remove the passphrase to use the key." %}
 
--   The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN" and "END" directive. It can be a bundle of certificates.
--   The private key in compatible .PEM format. It should not be password/passphrase protected.
+To add SSL and enable HTTPS in ThoughtSpot, obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key).
 
-**_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
+{: id="ssl-certificate-chain"}
+### SSL certificate chain
+The SSL certificate chain must be in `.PEM` format. This is an `X.509v3` file that contains ASCII (Base64) armored data, packed between `BEGIN` and `END` directives. It can be a bundle of certificates.
 
-To install the SSL certificate:
+{: id="key"}
+### Private key
+The private key must be in compatible `.PEM` format. It cannot be password or passphrase protected.
 
-1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
+<!--### Using Management Console
+
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+
+To install and configure the SSL certificate using the admin UI:
+
+1. Log into ThoughtSpot from a browser.
+2. Click the **Admin** menu on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/admin.png)
+
+   This opens the ThoughtSpot Management Console.
+3. Click **Settings** menu on the top navigation bar.
+
+   ![]({{ site.baseurl }}/images/settings.png)
+
+4. In the Settings panel, click **SSL** and then  **Configure** option.
+
+   ![]({{ site.baseurl }}/images/ssl.png)  
+
+5. Enter the SSL details:
+
+   ![]({{ site.baseurl }}/images/ssl-configure.png)
+
+   <table>
+   <colgroup>
+   <col width="20%" />
+   <col width="80%" />
+   </colgroup>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th>SSL Status</th>
+      <td>Enable the SSL. If you want to disable the LDAP configuration, select Disable and then click Save to exit the setup.</td>
+    </tr>
+    <tr>
+      <th>Algorithm</th>
+      <td>Choose the algorithm as RSA.</td>
+    </tr>
+    <tr>
+      <th>Minimum TLS Version</th>
+      <td>Set the recommended TLS version as TLS v1.2. <p><b>Note</b>: Choose SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility.</p></td>
+    </tr>
+    <tr>
+      <th>Private Key</th>
+      <td>Browse and copy the private key to ThoughtSpot.</td>
+    </tr>
+    <tr>
+      <th>Public Certificate</th>
+      <td>Browse and copy the public cert to ThoughtSpot.</td>
+    </tr>
+   </table>
+
+6. Click **Save** to configure the SSL.
+
+You can now test the SSL setup by log in to the ThoughtSpot application. You should see the application URL begins with `https://`.
+
+
+-->
+{: id="ssl-configure-tscli"}
+## Configure SSL using tscli
+
+Follow these instructions to install the SSL certificate using tscli:
+
+1. Use the instructions from the certifying authority where you obtained the certificate.
+
+   This is usually sent to you by email, or available for download.
+
 2. Copy the certificate and key files to ThoughtSpot:
 
       ```
-      $ scp <key> <certificate> admin@<IP_address>:<path>
+      $ scp <key> <certificate> admin@<IP_address>:<certificate-path>
       ```
 
-3. Log in to the Linux shell using SSH.
-4. Change directories to where you copied the certificate:
+3. Log into the Linux shell using SSH.
+
+4. Change to the directory where you copied the files:
 
     ```
-    $ cd <path>
+    $ cd <certificate-path>
     ```
 
-5. Issue the `tscli` command to install the certificate:
+5. To install the certificate, issue the `tscli` command:
 
     ```
     $ tscli ssl add-cert <key> <certificate>
     ```
 
-6. To test that the certificate was installed correctly, [Log in to the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
+6. To test that the certificate is correctly installed, sign into the ThoughtSpot application (https://docs.thoughtspot.com/6.0/admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
 
      You should see that the application's URL begins with `https://`.
 
-## Set the recommended TLS version
+{: id="set-tls-version"}
+### Set the recommended TLS version
 
-This procedure shows you how to set the recommended TLS version. This helps avoid exposure of your ThoughtSpot service to known vulnerabilities.
+There are a couple of security vulnerabilities due to SSL certificates supporting older versions of TLS (Transport Layer Security). This procedure shows you how to set the recommended TLS version to avoid these vulnerabilities.
 
-The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1. TLS v1.2 is recommended for both.
+The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1 and recommends TLS v1.2.
 
-ThoughtSpot ships with v1.2 set as default. However, it supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2 and is now set as default.
+ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2. Therefore, to set the recommended TLS version:
 
-To discover supported TLS versions, log into any ThoguhtSpot node using SSH and issue the following commands.
+1.  Enable your web browser to support TLS v1.2. This can be done in your browser's advanced settings.
+2.  Log in to the Linux shell using SSH..
+3.  Issue the following command:
+
     ```
-    tscli ssl set-min-tls-version --help
-    ```
-To change the TLS version, issue the following commands as an example.
-
-    ```
-    tscli ssl set-min-version 1.1
+    tscli ssl set-min-version 1.2
     ```
 
-    This will enable TLS version 1.1 and higher on ThoughtSpot.
+    This will block all usage of older versions.
 
-## Configuration string for load balancers
-When enabling SSL support on a load balancer's server-side SSL client profile, use the following list of ciphers to ensure compatibility between the load balancer and ThoughtSpot.
+{: id="config-load-balancer"}
+### Configuration string for load balancers
+
+When enabling SSL support on a load balancer’s server-side SSL client profile, use the following list of ciphers to ensure compatibility between the load balancer and ThoughtSpot.
+
 ```
 EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
 ```
 
-The following ciphers are currently supported in ThoughtSpot:
+The following ciphers are currently supported:
 
 ```
 |   TLSv1.2:
@@ -108,9 +184,7 @@ The following ciphers are currently supported in ThoughtSpot:
 ```
 
 You can retrieve these from the ThoughtSpot web server (not against the load balancer) by running the following command on any ThoughtSpot node:
-
-```
-nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
-```
-
+    ```
+    nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
+    ```
 You must ensure that your load balancer supports these ciphers.

@@ -11,5 +11,6 @@ intend to connect your server to.
    ```
 
 3. Make a note of each IP; there may be more than one.
-4. Configure the ThoughtSpot firewall to allow connections from your ETL client by running the following command on any ThoughtSpot node: `tscli firewall open-ports --ports 12345`
+4. Configure the ThoughtSpot firewall to allow connections from your ETL client, by running the following command on any ThoughtSpot node:
+`tscli firewall open-ports --ports 12345`
 5. Exit or close the shell.

@@ -82,6 +82,8 @@ collections:
     output: true
   appliance:
     output: true
+  appliance/aws:
+    output: true
   complex-search:
     output: true
   data-connect:
@@ -92,8 +94,7 @@ collections:
     output: true
   end-user:
     output: true
-  error-codes:
-    output: true
+  # error-codes: output: true
   reference:
     output: true
   release:
@@ -103,6 +104,8 @@ collections:
   tooltips:
     output: true
   faq:
+    output: true
+  practice:
     output: true
 
 defaults:

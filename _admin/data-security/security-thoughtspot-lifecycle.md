@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot Lifecycle]
-tags: [security]
-keywords: downloads, source, install
+
+
 summary: "This topic covers security processes for the entire lifecycle of a ThoughtSpot deployment from development, release, installation, upgrades, to software patching."
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -27,7 +27,7 @@ software packages (e.g. Python) needed for ThoughtSpot operations.  The most
 notable change to the installation is to the Linux kernel, which is sourced from
 the current long term stable kernel version instead of the default included in
 CentOS 7 (kernel-lt package).  To list all the installed packages, see
-[Checking Package Versions](#checking-os-package-versions) below.
+[Checking Package Versions](#checking-os-package-versions).
 
 ### Third-Party Software (Middleware)
 
@@ -170,12 +170,12 @@ application binaries and configuration.  Additionally, ThoughtSpot periodically
 scans all source code for third-party software as well as ThoughtSpot’s
 proprietary code base for vulnerabilities or unsafe usage using SourceClear.
 
-Once a critical new vulnerability is found (severity 4 or 5), ThoughtSpot
+After a critical new vulnerability is found (severity 4 or 5), ThoughtSpot
 includes the corresponding patch in the next patch release for all supported
 release branches.  Consult ThoughtSpot documentation or support to find out if
 you are on an active or supported release branch.
 
-Once a new patch release with a critical security vulnerability is available,
+After a new patch release with a critical security vulnerability is available,
 customers are encouraged to upgrade their deployment quickly.
 
 ### Latency
@@ -199,7 +199,7 @@ potential workarounds.
 
 * On-prem: Not supported yet
 
-* Cloud: Supported on [AWS](https://aws.amazon.com/), [GCP](https://cloud.google.com/), [Azure](https://azure.microsoft.com/en-us/)
+* Cloud: Supported on AWS (See <font color="#0000EE">https://aws.amazon.com/</font>), GCP (See <font color="#0000EE">https://cloud.google.com/%2F%5D</font>), Azure (See <font color="#0000EE">https://azure.microsoft.com/en-us/</font>)
 
 ### Secure Erase
-[Current erase guide](https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_)
+Current erase guide (See <font color="#0000EE">https://thoughtspot.egnyte.com/dl/E1eYDyfotL/SOP-520-0007-00-User-Data-Removal.pdf_</font>)

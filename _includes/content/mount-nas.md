@@ -27,22 +27,30 @@ will not function normally.
 
 1. Log in to the Linux shell using SSH.
 2. Mount the directory to the file system, by issuing the appropriate command:
-    -   Example for an NFS (Network File System) directory:
+    -   For an NFS (Network File System) directory:
 
         ```
-        tscli nas mount-nfs --server storageservername.file.yourdomain.net
-           --path_on_server <path>  /tsdev-backup --mount_point /export/BACKUPS/
-           --options vers=<version>,sec=<security scheme>,<OPTIONS>
+        tscli nas mount-nfs
+           --server <server_NFS_address>
+           --path_on_server <path>
+           --mount_point <target>
+           --options vers=<version>, sec=<security scheme>, <OPTIONS>
         ```
 
         {% include note.html content="Other command-line options are available to forward to the command (default: `noexec`)." %}
 
-    -   Example for a CIFS (Common Internet File System) directory:
+    -   For a CIFS (Common Internet File System) directory:
 
         ```
-        tscli nas mount-cifs --server storageservername.file.yourdomain.net
-           --path_on_server /tsdev-backup --mount_point /export/BACKUPS/
-           --username 'avtprdweutspotdev' --uid 1001 --gid 1001 --options 'vers=3.0'
+        tscli nas mount-cifs
+           --server <server_CIFS_address>
+           --path_on_server <path>
+           --mount_point <target>
+           --username <user>
+           --password <password>
+           --uid <uid>
+           --gid <gid>
+           --options <OPTIONS>
         ```
 
         {% include note.html content="Other command-line options are available to forward to the `mount.cifs` command (default: `noexec`)." %}

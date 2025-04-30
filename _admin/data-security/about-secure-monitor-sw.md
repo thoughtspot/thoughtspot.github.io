@@ -1,7 +1,5 @@
 ---
 title: [About third-party security and monitoring software]
-keywords: qualys,splunk,security,third party,installation,SNMP
-tags: [logs,security]
 summary: "You can install third-party software for security, governance, and monitoring of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -25,7 +23,7 @@ ThoughtSpot supports installation of the following third-party software on the T
 
 ### Install third-party software
 
-For details on how to install third-party software, see: [Installing third-party security and monitoring software]({{ site.baseurl}}/admin/data-security/install-secure-monitor-sw.html#)  
+For details on how to install third-party software, see: [Installing third-party security and monitoring software]({{ site.baseurl}}/admin/data-security/install-secure-monitor-sw.html#)   
 
 ## What is not supported
 

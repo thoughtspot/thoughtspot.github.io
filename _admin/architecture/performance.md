@@ -1,21 +1,25 @@
 ---
 title: [Performance considerations]
-keywords: data,cluster,memory,import,tsload
-tags: [performance,rls]
+
+
 last_updated: 07/20/2019
 summary: "Make sure you understand the performance considerations in your installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot configuration and licensing varies by memory availability. Other considerations also impact the performance of your solution. Because some
-solutions perform better than others, think about the following issues before implementation.
+ThoughtSpot configuration and licensing varies by memory availability. Other considerations also impact the performance of your solution. Because some solutions perform better than others, think about the following issues before implementation.
 
-Each node in a ThoughtSpot cluster performs ideally when it has less than 250GB of data and fewer than 0.25 billion total rows of data. For more complex schemas, we recommend even fewer rows of data per node for optimal performance. To reduce the total amount of data and rows of data, you can
-limit the data range to the relevant years or months, or combine long and narrow tables into wider tables when possible.
+Nodes that have 250GB of memory capacity perform optimally with less than 250GB of data, and less than 250 million rows of data in each node in a ThoughtSpot cluster. Smaller nodes, like nodes with 200GB memory capacity, serve proportionally smaller loads.
+
+To optimise performance for more complex schemas, we recommend fewer rows of data for each node. 
+To reduce the total amount of data and rows of data, we recommend the following approaches:
+
+- Limit the data range to the relevant years or months.
+- Combine long and narrow tables into wider tables whenever possible.
 
 ## Data Boundaries
 
-Total rows in a result of a join can have an impact on performance. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:
+Total rows in a result of a join can have an impact on perforamence. In general, we recommend that you have fewer than 10 billion rows in a many-to-many join. Also, consider these boundaries:
 
 |Description |Boundary|
 |-------------------------|--------------------|
@@ -30,8 +34,8 @@ Total rows in a result of a join can have an impact on performance. In general, 
 
 Worksheets must have less than 1000 columns. For aggregated worksheets, follow these guidelines:
 
-* Number of columns not to exceed 50
-* Number of rows not to exceed 10 million
+* Number of columns should be less than 50
+* Number of rows should be less than 10 millions
 
 You can use an ETL process to circumvent these limitations. Speak with ThoughtSpot Customer Support to learn more.
 

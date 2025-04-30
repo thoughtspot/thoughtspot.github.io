@@ -1,6 +1,5 @@
 ---
 title: [Introduction to Data Integration]
-keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -75,10 +74,9 @@ each method:
 
 ## Where to go next
 
-
 -   **[Server-side prerequisites for using JDBC/ODBC to import data]({{ site.baseurl }}/data-integrate/introduction/jdbc-odbc-prereqs.html)**  
 You must follow setup prerequisites for importing data using JDBC/ODBC.
 -   **[About the ODBC Driver]({{ site.baseurl }}/data-integrate/clients/about-odbc.html)**  
 You can use the ThoughtSpot ODBC driver to bring data into ThoughtSpot from your ETL tool or database.
 -   **[About the JDBC Driver]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html)**  
- Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support via a JDBC driver we provide.
+ Java Database Connectivity (JDBC) is a Java standard API that allows applications to interact with databases in a standard manner. ThoughtSpot has JDBC support through a JDBC driver that we provide.

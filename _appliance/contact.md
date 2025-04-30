@@ -1,7 +1,5 @@
 ---
-title: [Contact support]
-keywords: tbd
-last_updated: tbd
+title: [Contact ThoughtSpot support]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,7 +1,7 @@
 ---
 title: [Customize look and feel]
-tags: [customize,style,palette,color,brand]
-keywords: customize
+
+
 last_updated: tbd
 summary: "You can brand the ThoughtSpot application for your company."
 sidebar: mydoc_sidebar
@@ -10,9 +10,8 @@ permalink: /:collection/:path.html
 You can customize the look and feel of the ThoughtSpot application for your
 company. Configuring these settings sets system-wide defaults for all your users.
 
-Style customization is enabled by default. You can configure your cluster to disable this functionality. Contact
-<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for information
-about disabling this feature.
+Style customization is enabled by default. You can configure your cluster to disable this functionality.
+Contact ThoughtSpot Support (https://docs.thoughtspot.com/latest/admin/misc/contact.html) about disabling this feature.
 
 ## Where to customize styles
 
@@ -31,7 +30,7 @@ cursor moves to the right of any setting.
 
 ![]({{ site.baseurl }}/images/custom-style-reset.png)
 
-The table below lists the style customizations you can configure.
+The following table lists the style customizations you can configure.
 
 <table>
   <tr>

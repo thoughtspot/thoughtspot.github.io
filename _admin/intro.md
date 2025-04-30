@@ -1,7 +1,7 @@
 ---
 title: [Introduction to administration]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: 07-08-2019
+last_updated: 09-23-2019
+summary: "This guide covers all topics of special interest to application administrators."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,19 +17,14 @@ Administrators are responsible for many facets of the ThoughtSpot service. They 
 - [Managing users and groups]({{ site.baseurl }}/admin/users-groups/about-users-groups.html)
 - [Security]({{ site.baseurl }}/admin/data-security/about-security.html)
 - [System administration]({{ site.baseurl }}/admin/system-admin/sysadmin-overview.html)
-- [Backup and Restore]({{ site.baseurl }}/admin//backup-restore/choose-strategy.html)
+- [Backup and Restore]({{ site.baseurl }}/admin/backup-restore/choose-strategy.html)
 
 Additionally, administrators are often involved in the following workflows:
 - [Data modeling]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Using worksheets]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) to simplify search
 - [Using views]({{ site.baseurl }}/complex-search/about-query-on-query.html) for 'stacked' search;
-   note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the [`IN` keyword]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
-- [Enabling SearchIQ]({{ site.baseurl }}/complex-search/about-query-on-query.html), ThoughtSpot's natural language search
+   note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the `IN` keyword (See https://docs.thoughtspot.com/6.0/complex-search/in-keyword-searches.html).
+- **Beta** [Enabling SearchIQ]({{ site.baseurl }}/complex-search/about-query-on-query.html), ThoughtSpot's natural language search.
 - [Managing scheduled jobs]({{ site.baseurl }}/admin/manage-jobs/about-scheduled-pinboards.html)
 - [Monitoring system health]({{ site.baseurl }}/admin/system-monitor/introduction.html)
 - [Troubleshooting]({{ site.baseurl }}/admin/troubleshooting/troubleshooting-intro.html)
-
-A ThoughtSpot administrator should have the following experience:
-- Advanced user or intermediate administrator of Linux (or a similar) operating system
-- Intermediate or junior (but self-sufficient) database service administrator
-- Intermediate-level application availability manager

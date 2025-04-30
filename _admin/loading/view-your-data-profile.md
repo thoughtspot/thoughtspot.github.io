@@ -1,6 +1,6 @@
 ---
 title: [View a data profile]
-keywords: CSV,profile,data
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

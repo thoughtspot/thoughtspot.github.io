@@ -1,7 +1,5 @@
 ---
 title: [System security tools and processes]
-keywords: tbd
-tags: [logs,security]
 summary: "System security refers to audit logs and security policies."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -77,4 +75,4 @@ Whenever a CVE is identified, and an OS package needs to be updated, the next pa
 
 ## Third-party security software for security, governance, and monitoring of ThoughtSpot
 
-You can install supported [third party security and monitoring software]({{ site.baseurl}}/admin/data-security/about-secure-monitor-sw.html#) on a ThoughtSpot cluster.
+You can install supported [third-party security and monitoring software]({{ site.baseurl}}/admin/data-security/about-secure-monitor-sw.html#) on a ThoughtSpot cluster.

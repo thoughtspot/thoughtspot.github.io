@@ -1,8 +1,7 @@
 ---
 title: ["Ask an expert"]
-keywords: SearchIQ,answer,introduction,"help","expert","search bar","natural language",speech,voice
-last_updated: 4/16/2019
-summary: "Need help finding something in your data? Ask an expert to create the search for you."
+last_updated: 09/23/2019
+summary: "Do you need help finding something in your data? Ask an expert to create the search for you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -19,7 +18,7 @@ At times you may struggle to answer a specific question, build a chart you have 
 
 ## How do I use Ask an expert?
 
-1. When you're doing a search, you'll see a link under your search that says **Ask an expert**. Click that if you're stuck and need help.
+1. When you're doing a search, you can see a link under your search that says **Ask an expert**. Click that if you're stuck and need help.
 
 2. The search you were working on is captured and shown back to you, with a text box for your message. Send a message describing what you were looking for, along with any information that makes it easy for the expert to understand what problem you were having.
 

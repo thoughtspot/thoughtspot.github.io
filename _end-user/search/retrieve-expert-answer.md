@@ -1,13 +1,12 @@
 ---
 title: ["View an answer from an expert"]
-keywords: SearchIQ,answer,introduction,"help","expert","search bar","natural language",speech,voice
-last_updated: 4/16/2019
-summary: "Getting an answer back when you use Ask an expert"
+last_updated: 09/23/2019
+summary: "How to find an answer from an expert"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-When you use **Ask an expert** to get help, you'll be able to view the answer once the expert responds.
+When you use **Ask an expert** to get help, you can view the answer after the expert responds.
 
 To view the answer:
 
