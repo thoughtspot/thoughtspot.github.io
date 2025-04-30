@@ -120,7 +120,7 @@ https://<instance>/callosum/v1/tspublic/v1/pinboarddata?id=f4533461-caa5-4efa-a1
 }
 ```
 
-## Error Codes
+<!--## Error Codes
 
 <table>
    <colgroup>
@@ -139,4 +139,4 @@ https://<instance>/callosum/v1/tspublic/v1/pinboarddata?id=f4533461-caa5-4efa-a1
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
     <tr> <td><code>10000</code></td>  <td>Internal server error. Malformed JSON Exception.</td><td><code>500</code></td></tr>
   </tbody>
-</table>
+</table>-->

@@ -5,31 +5,38 @@ toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Once ThoughtSpot Embrace is enabled, you can add a connection to a supported database source. Database sources are the external source systems to which you want to perform a live query to create answers and pinboards, without having to bring the data into ThoughtSpot.
+Once ThoughtSpot Embrace is enabled, you can add a connection to a supported external database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
-## Add a connection
+## Adding a connection
 
 To add a new connection:
 
 1. Click **Data** in the top navigation bar.
 
-2. Click the **Connections** tab at the top of the page, and click **+ Add Connection** at the upper-right-hand side of the page.
+2. Click the **Connections** tab at the top of the page, and click **+ Add connection** at the upper-right-hand side of the page.
 
      ![]({{ site.baseurl }}/images/new-connection.png "New db connect")
 
-3. Select a connection type, and click **Next**.
+3. Create a name for your connection, a description (optional), then select a connection type, and click **Next**.
 
      ![]({{ site.baseurl }}/images/select-new-connection.png "Select a new connection type")
 
-4. Enter the connection credentials for your external data source, and click **Next**:
+4. Enter the connection details for your external data source, and click **Next**.
 
     ![]({{ site.baseurl }}/images/new-connection-creds.png "Select a connection type")
 
     Refer to the [Embrace connectors]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html#) for more information on each of the specific attributes you must enter for your connection.
 
-5. Select the tables and columns you want to load, and then click **Create Connection**.
+5. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 
     ![]({{ site.baseurl }}/images/create-connection.png "column add bar")
+
+   Once the connection is added, the "Connection created" screen appears. From there, you can do any of the following:
+   - Search your external database, by clicking **Search now**.
+   - Sync the data from your external database into ThoughtSpot, by clicking **Sync now**.
+   - Schedule a regular time to sync the data from your external database, by clicking **Schedule sync**.
+
+   No matter which option you choose here, you can do any of them at any time later.
 
    Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 
@@ -41,6 +48,6 @@ Not all of ThoughtSpot's features are supported with linked tables. For details,
 
 ## Related information
 - [Modify a connection]({{ site.baseurl }}/data-integrate/embrace/getting-started/modify-a-connection.html)
-- [Know Embrace connector]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)
-- [Data sources management]({{ site.baseurl }}/admin/loading/loading-intro.html)
-- [Data security]({{ site.baseurl }}/admin/architecture/security.html)
+- [Connectors reference]({{ site.baseurl }}/data-integrate/embrace/reference/embrace-connection-credentials.html)
+- [Load and manage data]({{ site.baseurl }}/admin/loading/loading-intro.html)
+- [Data and object security]({{ site.baseurl }}/admin/architecture/security.html)

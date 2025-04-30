@@ -1,12 +1,12 @@
 ---
 title: [About installation and upgrades]
-
-last_updated: July 3, 2016
+last_updated: 10/09/2019
+summary: "As administrator, you are responsible for setting up and configuring ThoughtSpot. This guide explains how. It will also assist you in troubleshooting some common problems, finding additional resources, and contacting ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Your ThoughtSpot application software is already installed for you in a
-ThoughtSpot appliance (this is true for both physical and virtual appliances).
+ThoughtSpot appliance. This is true for both physical and virtual appliances.
 
 The ThoughtSpot software is updated by ThoughtSpot Support. ThoughtSpot Support
 will contact you to schedule an update when one becomes available.
@@ -15,9 +15,10 @@ As administrator, you are responsible for setting up and configuring
 ThoughtSpot. This guide explains how. It will also assist you in troubleshooting
 some common problems, finding additional resources, and contacting ThoughtSpot.
 
+{: id="display-current-config"}
 ## Display your current configuration
 
-To perform the set up and configuration, you must first learn how to [gain
+To perform the setup and configuration, you must first learn how to [gain
 administrative access]({{ site.baseurl }}/admin/setup/logins.html).
 
 1. Log into the ThoughtSpot cluster as the `admin` user.
@@ -41,9 +42,11 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     ```
 
-<!--## About Management Console
+<!--
+{: id="management-console" }
+## About Management Console
 
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later. Please contact ThoughtSpot Support, if you want to try it." %}
+{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later.  If you want to try it, please contact ThoughtSpot Support." %}
 
 ThoughtSpot now comes with a Management Console, a self-service portal that enables network administrators to manage and monitor ThoughtSpot clusters. This console  compliments the existing tscli-based configuration. The Management Console is broadly classified into three functional areas, namely:
 - **Admin**: The existing admin-related functions such as user, data, jobs, system monitoring, styling and many more reside here.
@@ -59,9 +62,10 @@ ThoughtSpot now comes with a Management Console, a self-service portal that enab
 - **Update**: This section allows you to [upgrade your cluster.]({{ site.baseurl }}/admin/system-admin/upgrade-a-cluster.html#)
 
 -->
+{: id="related" }
 ## Related information
 
-The following tasks are available needed:
+The following tasks are also available:
 
 * [Set your locale]({{ site.baseurl }}/admin/setup/set-your-thoughtspot-locale.html)
 * [Test connectivity between nodes]({{ site.baseurl }}/admin/setup/test-network.html)

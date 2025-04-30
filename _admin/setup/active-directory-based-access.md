@@ -66,4 +66,4 @@ tscli sssd disable
 
 ## Related Information
 
-* [sssd]({{ site.baseurl }}/reference/tscli-command-ref.html#sssd) in the `tscli` command reference
+* sssd (https://docs.thoughtspot.com/6.0/reference/tscli-command-ref.html#sssd) in the `tscli` command reference

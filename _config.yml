@@ -4,7 +4,7 @@ locale                   : "en"
 destination              : ./_site
 output                   : web
 # Used to designate the current version. Edit when a new version is released
-current_version          : "5.3"
+current_version          : "6.0"
 # Note that site.baseurl for this site evaluates to:
 # http://docs.thoughtspot.com/<version>/
 # used for conditional content filtering
@@ -82,6 +82,8 @@ collections:
     output: true
   appliance:
     output: true
+  appliance/aws:
+    output: true
   complex-search:
     output: true
   data-connect:
@@ -92,8 +94,7 @@ collections:
     output: true
   end-user:
     output: true
-  error-codes:
-    output: true
+  # error-codes: output: true
   reference:
     output: true
   release:
@@ -103,6 +104,8 @@ collections:
   tooltips:
     output: true
   faq:
+    output: true
+  practice:
     output: true
 
 defaults:

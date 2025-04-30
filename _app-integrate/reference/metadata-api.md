@@ -263,8 +263,7 @@ https://<instance>/callosum/v1/tspublic/v1/metadata/listobjectheaders?type=PINBO
   }
 ]
 ```
-
-## Error Codes
+<!--## Error Codes
 <table>
    <colgroup>
       <col style="width:20%" />
@@ -281,4 +280,4 @@ https://<instance>/callosum/v1/tspublic/v1/metadata/listobjectheaders?type=PINBO
    <tbody>
     <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values i.e., wrong pinboard ID.</td> <td><code>400</code></td></tr>
   </tbody>
-</table>
+</table>-->

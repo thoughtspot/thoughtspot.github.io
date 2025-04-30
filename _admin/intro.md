@@ -17,13 +17,13 @@ Administrators are responsible for many facets of the ThoughtSpot service. They 
 - [Managing users and groups]({{ site.baseurl }}/admin/users-groups/about-users-groups.html)
 - [Security]({{ site.baseurl }}/admin/data-security/about-security.html)
 - [System administration]({{ site.baseurl }}/admin/system-admin/sysadmin-overview.html)
-- [Backup and Restore]({{ site.baseurl }}/admin//backup-restore/choose-strategy.html)
+- [Backup and Restore]({{ site.baseurl }}/admin/backup-restore/choose-strategy.html)
 
 Additionally, administrators are often involved in the following workflows:
 - [Data modeling]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Using worksheets]({{ site.baseurl }}/admin/worksheets/about-worksheets.html) to simplify search
 - [Using views]({{ site.baseurl }}/complex-search/about-query-on-query.html) for 'stacked' search;
-   note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the [`IN` keyword]({{ site.baseurl }}/complex-search/in-keyword-searches.html).
+   note that starting with Release 5.2, you can accomplish some aspects of search stacking by using the `IN` keyword (See https://docs.thoughtspot.com/6.0/complex-search/in-keyword-searches.html).
 - **Beta** [Enabling SearchIQ]({{ site.baseurl }}/complex-search/about-query-on-query.html), ThoughtSpot's natural language search.
 - [Managing scheduled jobs]({{ site.baseurl }}/admin/manage-jobs/about-scheduled-pinboards.html)
 - [Monitoring system health]({{ site.baseurl }}/admin/system-monitor/introduction.html)

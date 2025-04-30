@@ -28,6 +28,6 @@ In addition to American English (*en-US*), ThoughtSpot supports the following lo
 | *zh-CN* | 中文(简体)  |
 | *ja-JP* | 日本語  |
 
-ThoughtSpot translates keywords, operators, and error messages. See the [keyword reference for all supported languages]({{ site.baseurl }}/reference/keywords.html).
+ThoughtSpot translates keywords, operators, and error messages. See the keyword reference for all supported languages at (https://docs.thoughtspot.com/6.0/reference/keywords.html).
 
 ThoughtSpot _DOES NOT_ translate formulas, or metadata entered by the user. For example, if you name a visualization 'Quarterly Sales' in any variant of English and subsequently change the locale to a variant of French, the visualization remains 'Quarterly Sales' and does not become 'Ventes trimestrielles'.

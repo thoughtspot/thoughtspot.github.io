@@ -14,7 +14,7 @@ When a user struggles to answer a specific question, build a chart you have in m
 1. You receive an email stating that your help is needed, with a link to the request.  
    If you do not have an email set up in ThoughtSpot, you must do this to check for requests:
    1. Log in to ThoughtSpot.
-   2. Click on **Answers** in the top menu.
+   2. Click **Answers** in the top menu.
    3. On the top right hand side, click the ellipses and choose **View Requested Answers**. You can see a listing of all requests for help.
 
 2. When you choose a request to answer, you can see the answer the user was working on. You are now in "expert mode". If the user provided an explanation of what they were looking for, you can see that under the visualization.

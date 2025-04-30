@@ -22,9 +22,7 @@ release and every minor release version (`x.y.z`). " %}
 
 You can navigate directly to this site on the web by entering
 [docs.thoughtSpot.com](https://docs.thoughtspot.com) in your browser's address
-bar. By default, the latest version (4.4) is presented first. ThoughtSpot
-versions prior to `4.4` have documentation located at
-[help.thoughtSpot.com](https://help.thoughtspot.com).
+bar. You can see the documentation for the latest version of the product.
 
 You can navigate to this documentation from inside the ThoughtSpot application
 as well. In this case, the application links directly to the documentation

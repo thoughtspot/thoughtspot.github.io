@@ -1,18 +1,16 @@
 ---
-title: [About third party security and monitoring software]
-
-
-summary: "You can install third party software for security, governance, and monitoring of ThoughtSpot."
+title: [About third-party security and monitoring software]
+summary: "You can install third-party software for security, governance, and monitoring of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In addition to the ThoughtSpot monitoring and security features, some companies require specific additional third party software to comply with their internal IT policies. This allows them to support all of their systems with a common set of security and management tools.
+In addition to the ThoughtSpot monitoring and security features, some companies require specific additional third-party software to comply with their internal IT policies. This allows them to support all of their systems with a common set of security and management tools.
 
-For example, you may wish to accomplish some security and monitoring tasks with your own third party software. These tasks include things like pushing alerts, events, forensics, audit trails, insights, etc. from ThoughtSpot to your own local monitoring systems.
+For example, you may wish to accomplish some security and monitoring tasks with your own third-party software. These tasks include things like pushing alerts, events, forensics, audit trails, insights, etc. from ThoughtSpot to your own local monitoring systems.
 
-## Supported third party software
+## Supported third-party software
 
-ThoughtSpot supports installation of the following third party software on the ThoughtSpot instance:
+ThoughtSpot supports installation of the following third-party software on the ThoughtSpot instance:
 
 - Qualys
   Qualys is a widely used technical vulnerabilities and security compliance scanning tool. For more information about Qualys, see the [Qualys documentation](http://www.qualys.com/documentation/).
@@ -23,9 +21,13 @@ ThoughtSpot supports installation of the following third party software on the T
 - Splunk
   You can install Splunk rsyslog and use it to forward ThoughtSpot logs to Splunk. For more information about Splunk, see the [Splunk documentation](http://docs.splunk.com/).
 
+### Install third-party software
+
+For details on how to install third-party software, see: [Installing third-party security and monitoring software]({{ site.baseurl}}/admin/data-security/install-secure-monitor-sw.html#)   
+
 ## What is not supported
 
-When installing and configuring third party software on a ThoughtSpot cluster, follow the following guidelines to avoid interfering with cluster operations:
+When installing and configuring third-party software on a ThoughtSpot cluster, follow the following guidelines to avoid interfering with cluster operations:
 
 - Avoid making any direct changes to any files outside of the /home directory.
 - Do not remove existing SSH keys or authorized keys from /home/admin/.ssh
@@ -43,7 +45,7 @@ Qualys is supported for scanning of ThoughtSpot clusters for security vulnerabil
 
 ## SNMP Traps
 
-ThoughtSpot has a built-in alerting service that can also be used to send SNMP traps. Many third party monitoring systems share the common standard of using SNMP traps, and you can take advantage of those capabilities with ThoughtSpot.
+ThoughtSpot has a built-in alerting service that can also be used to send SNMP traps. Many third-party monitoring systems share the common standard of using SNMP traps, and you can take advantage of those capabilities with ThoughtSpot.
 
 ThoughtSpot supports SNMP for read only. So for example, you can read the IP address of the cluster, but not change it using SNMP.
 
@@ -58,7 +60,3 @@ Here are some links to help you learn where various logs are written in ThoughtS
 - [Monitoring logs]({{ site.baseurl}}/admin/system-monitor/introduction.html#)
 - [Audit logs]({{ site.baseurl}}/admin/data-security/audit-logs.html#)
 - [Alert code reference]({{ site.baseurl}}/reference/alerts-reference.html#)
-
-## Related Topics
-
-- [Installing third party security and monitoring software]({{ site.baseurl}}/admin/data-security/install-secure-monitor-sw.html#)

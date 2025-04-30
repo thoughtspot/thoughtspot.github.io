@@ -23,7 +23,7 @@ When you buy ThoughtSpot Extended Enterprise, the following rights and obligatio
 
 1. External users may only access those elements that are exposed through ThoughtSpot public APIs. These include search, search results and data visualizations, saved pinboard and answers, SearchIQ (**Beta**), and SpotIQ.
 2. External users may not be granted Administrator privileges such as the ability to create and modify users and groups.
-3. External users are not permitting to copy or download the ThoughtSpot software.
+3. External users are not permitted to copy or download the ThoughtSpot software.
 4. You may not include external users in a group that has access to these privileges:
    - Can administer ThoughtSpot
    - Can administer and bypass RLS

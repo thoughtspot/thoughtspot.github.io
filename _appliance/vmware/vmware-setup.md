@@ -1,6 +1,6 @@
 ---
-title: [Set up VMware for ThoughtSpot]
-
+title: [Set up ThoughtSpot in VMware]
+summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,10 +16,10 @@ a virtual machine (VM)
 ## Prerequisites
 
 This installation process assumes you have already acquired your host machines.
-You can install on a one or three node cluster. A one node cluster is suitable
-for a sandbox environment but is insufficient for a production environment.
+You can install on a cluster with any number of nodes. A one node cluster is suitable
+for a sandbox environment but is insufficient for a production environment. You need at least three nodes for high availability (HA), but there is no limit on the number of nodes.
 
-1. Make sure you have installed the Hypervisor on each of your three nodes.
+1. Make sure you have installed the Hypervisor on each of your nodes.
 
    The VM template, by default, captures a 72-core configuration. If your
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
@@ -32,7 +32,8 @@ for a sandbox environment but is insufficient for a production environment.
 
 ## Use the OVF to Create a VM
 
-1. Download the `ThoughtSpot OVF` from the **[Downloads page here]({{ site.baseurl }}/release/downloads.html#virutal-and-cloud-platforms)** to a location on an accessible disk.
+1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
+
 2. Log into the ESXi web portal.
 
     ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")

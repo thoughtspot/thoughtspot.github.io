@@ -22,7 +22,7 @@ If you are loading a fact table that joins to dimension tables, you must load th
 
 {% include content/csv-create.md %}
 
-For general information about CSV files and the rules for creating them, see the [Comma-separated_values](http://en.wikipedia.org/wiki/Comma-separated_values) on Wikipedia.
+For general information about CSV files and the rules for creating them, see the Comma-separated_values on Wikipedia (http://en.wikipedia.org/wiki/Comma-separated_values).
 
 ## Load the CSV File
 

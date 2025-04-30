@@ -23,7 +23,7 @@ To add an expert to a data source:
 1. Let the expert(s) know to expect user questions to start coming their way in email.
    If your expert(s) don't have an email in ThoughtSpot, they must [check in ThoughtSpot for requested answers]({{ site.baseurl }}/end-user/search/answer-expert-question.html).
 
-2. Click on the name of the worksheet or table from the **Data** page.
+2. Click the name of the worksheet or table from the **Data** page.
 
 3. Click the three dot icon in the upper right side of the page and select **Manage experts**.
 

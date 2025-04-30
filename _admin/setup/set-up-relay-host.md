@@ -1,12 +1,10 @@
 ---
 title: [Set the relay host for SMTP (email)]
-
-
-last_updated: tbd
+last_updated: 10/21/2019
+summary: "ThoughtSpot uses emails to send critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot uses emails for sending critical notifications to ThoughtSpot Support. A relay host for SMTP traffic routes the alert and notification emails coming from ThoughtSpot through an SMTP email server.
 
 <!--## Configure using Management Console
 
