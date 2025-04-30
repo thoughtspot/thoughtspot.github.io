@@ -111,9 +111,9 @@ ThoughtSpot defines these events as follows:
   <dd>A local, IdP or AD user logs in to ThoughtSpot.</dd>
  </dlentry>
  <dlentry id ="update-rls-rule">
- <dt>RLS rule update</dt>
- <dd>A user modifies an RLS rule on a table.</dd>
-</dlentry>
+  <dt>RLS rule update</dt>
+  <dd>A user modifies an RLS rule on a table.</dd>
+ </dlentry>
  <dlentry id ="user-account-creation">
   <dt>User account creation</dt>
   <dd>A new user creates an account, either manually in the Admin Portal or through the internal API.</dd>

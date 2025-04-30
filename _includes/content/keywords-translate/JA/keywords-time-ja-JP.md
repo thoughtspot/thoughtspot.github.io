@@ -49,4 +49,4 @@
     <td class="tg-us36"><em>n</em> 時間前<br/><em>n</em> hours ago</td>
     <td class="tg-us36"><code>sum inventory by product by store <b>2 hours ago</b></code></td>
   </tr>
-</table> 
+</table>

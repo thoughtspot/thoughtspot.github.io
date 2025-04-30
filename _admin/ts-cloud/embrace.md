@@ -42,10 +42,9 @@ On ThoughtSpot Cloud, you can connect to the following external databases:
 
 ## Feature availability in Embrace on ThoughtSpot Cloud
 
-Here are the major features that are not currently available in Connections:
+Here are the major features that are not currently available in Embrace:
 
-- Custom calendar is supported with Snowflake connections.
-- Custom calendar is in beta for Redshift, Teradata, Starburst, Synapse, and SAP Hana connections, and are off by default. Contact ThoughtSpot to enable them.
+- Custom calendar is only supported with Snowflake connections, at this time
 - Spot IQ: Instant insights, Did you know?, Pinboard insights, Analyze
 - Monitor
 - Custom calendar not available with Oracle ADW connections

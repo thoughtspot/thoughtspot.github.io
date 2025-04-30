@@ -55,3 +55,5 @@ You can now perform a live query on the selected tables and columns of your conn
 ## Related information
 - [Edit a Teradata connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-edit-connection.html)
 - [Teradata connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html)
+- [Load and manage data]({{ site.baseurl }}/admin/loading/loading-intro.html)
+- [Data and object security]({{ site.baseurl }}/admin/architecture/security.html)

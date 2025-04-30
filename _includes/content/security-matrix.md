@@ -34,13 +34,13 @@
             <div><span>Create View</span></div>
          </th>
          <th class="rotate">
-            <div><span>Create Embrace Connection</span></div>
-         </th>
-         <th class="rotate">
             <div><span>
                Modify Col. Props.<sup>1</sup>
                </span>
             </div>
+         </th>
+         <th class="rotate">
+            <div><span>Upload Data</span></div>
          </th>
          <th class="rotate">
             <div><span>Download Data</span></div>
@@ -108,6 +108,31 @@
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
+      </tr>
+      <tr>
+         <td>
+            <div>Can upload <br> user data</div>
+         </td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>Y</td>
+         <td>N</td>
+         <td>Y</td>
+         <td>N</td>
+         <td>N</td>
+         <td>
+            <div>Y<sup>3</sup></div>
+         </td>
+         <td>
+            <div>Y<sup>4</sup></div>
+         </td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
       </tr>
       <tr>
          <td>

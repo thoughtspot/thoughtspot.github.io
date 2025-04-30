@@ -1,6 +1,6 @@
 ---
 title: [Getting Started with ThoughtSpot Cloud]
-last_updated: 6/20/2021
+last_updated: 07/02/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -99,6 +99,7 @@ ThoughtSpot administrators have built-in pinboards to monitor adoption and usage
 - [ThoughtSpot Cloud documentation](https://cloud-docs.thoughtspot.com){:target="_blank"}
 - [Training: Getting started with ThoughtSpot Analytics Cloud](https://training.thoughtspot.com/getting-started-with-thoughtspot-cloud){:target="_blank"}
 - [Thoughtspot Success Series](https://youtu.be/EYHa8Ck3tdw){:target="_blank"}
+- [ThoughtSpot Support Handbook]({{site.baseurl}}/admin/ts-cloud/ts-cloud-support-handbook.html) (<a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF</a>)
 
 ## Get connected
 

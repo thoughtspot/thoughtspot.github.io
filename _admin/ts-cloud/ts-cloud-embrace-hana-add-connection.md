@@ -53,3 +53,5 @@ You can now perform a live query on the selected tables and columns of your conn
 ## Related information
 - [Edit an SAP HANA connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-edit-connection.html)
 - [SAP HANA connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html)
+- [Load and manage data]({{ site.baseurl }}/admin/loading/loading-intro.html)
+- [Data and object security]({{ site.baseurl }}/admin/architecture/security.html)

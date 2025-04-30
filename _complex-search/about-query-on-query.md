@@ -41,7 +41,7 @@ Here are the high-level steps for creating and using views:
 
 - The order of the objects being linked (joined) matters, because joins are directional. The table or view with the foreign key must be in the the first (left) position. The table or view with the primary key must be in the second (right) position.
 
-- For best performance, views should have 50 or fewer columns, and no more than 10 million rows. <!--If your View has more than 10 million rows, consider materializing it. If your View has more than 40 million rows, consider sharding it.-->
+- For best performance, views should have 50 or fewer columns, and no more than 10 million rows.<!-- If your View has more than 10 million rows, consider materializing it. If your View has more than 40 million rows, consider sharding it. not currently possible in cloud (materializing or sharding) -->
 
 ## Related Information
 

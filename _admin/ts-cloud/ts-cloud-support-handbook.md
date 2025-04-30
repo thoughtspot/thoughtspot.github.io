@@ -10,7 +10,7 @@ The ThoughtSpot Support team is committed to making you successful when deployin
 
 Reliability of your business is very important for us. We created this document to describe our Support offering, so you can find resources to resolve your issues, and answer your questions.
 
-We also provide these instructions in <a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF format</a>. 
+We also provide these instructions in <a href="{{ site.baseurl }}/downloads/support-handbook.pdf" download>PDF format</a>.
 
 ## Chapter 1: Support Roles
 

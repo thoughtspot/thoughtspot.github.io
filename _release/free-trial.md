@@ -1,41 +1,11 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 09/30/2021
+last_updated: 08/19/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-
-## September 30, 2021
-
-### Free Trial Make It Shine
-
-These are the changes we made to Free Trial this week:
-
-- We fixed an issue where attempts to skip steps during Onboarding by clicking the numbered steps at the top of the screen caused loading delays.
-- We fixed an issue where the Free Trial "Invite others" feature created duplicate objects on the third-party service ThoughtSpot uses to send emails.
-- We fixed an issue where Redshift fact tables timed out during loading in the Modeling stage of Setup.
-
-## September 20, 2021
-
-### Data source tooltips
-
-ThoughtSpot allows you to search on multiple data sources as long as your sources are related by a join. When you select the data source for your search, unrelated data sources gray out in the Data Sources side panel. To find out why a data source is marked unavailable, click on the data source name for a tooltip explanation.
-
-![]({{ site.baseurl }}/images/free-trial-search-tooltips.png "Free Trial data source tooltips"){: .inline}
-
-
-### Free Trial Make It Shine
-
-These are the changes we made to Free Trial this week:
-
-- We fixed toast notifications on the homepage to display multiple changes to the same component.
-- Users with accounts where the maximum file upload count is 0 no longer see the option to upload CSV files during setup.
-- Users can now exit 3-step setup at any time. <br/>
-  ![]({{ site.baseurl }}/images/free-trial-checklist-exit.png "Free Trial exit 3-step-checklist"){: .inline}
-- Column titles in all capital letters now correct to title-case during auto-worksheet creation.
-
 
 ## Aug 19, 2021
 

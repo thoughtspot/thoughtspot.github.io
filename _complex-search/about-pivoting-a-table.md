@@ -13,7 +13,7 @@ If you would like to visualize your search as a pivot table, click on the **chan
 
 You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
 
-If you right-click a row or column heading, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, **SpotIQ analyze**, or **sort**.
+If you right-click a row or column heading, the system displays a contextual menu, allowing you to **exclude** or **include** values, [drill down]({{ site.baseurl }}/complex-search/drill-down.html), **show underlying data**, or **SpotIQ analyze**, or **sort**.
 
 ![Sort by a row heading]({{ site.baseurl }}/images/charts-pivot-table-sort.png "Sort by a row heading")
 
@@ -71,4 +71,3 @@ You can perform conditional and number formatting on pivot tables. Both these fe
 The pivot table chart type has these limitations:
 
 - The pivot table displays a maximum of 100k rows. If your query returns more than 100k rows, you cannot visualize it with a pivot table.
-- Pivot tables do not support use of [group aggregation functions]({{ site.baseurl }}/complex-search/about-pinned-measures.html).

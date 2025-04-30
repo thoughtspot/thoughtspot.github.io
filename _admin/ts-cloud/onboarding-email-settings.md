@@ -1,6 +1,6 @@
 ---
 title: [Managing email and onboarding settings]
-last_updated: 2/24/2021
+last_updated: 7/21/2021
 summary: "Manage email and onboarding settings for your organization from the Admin Console."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,11 +17,7 @@ You can update various [email](#email) and [signup](#signup) settings from this 
 
 {: id="email"}
 ## Email settings
-To customize or otherwise manage the ThoughtSpot welcome email for your users, follow these steps.
-
-{% include note.html content="If you want your ThoughtSpot instance to send email notifications with a custom domain name and a specific sender ID, contact ThoughtSpot Support.<br><br>
-
-To send email notifications from a specific email account with your domain, update the <strong>Custom admin email</strong> and <strong>From ID</strong> fields in the <strong>Admin > Application settings > Onboarding</strong> page, and contact ThoughtSpot Support to enable these settings for your application instance." %}
+To customize or otherwise manage the ThoughtSpot welcome email for your users, follow these steps:
 
 1. Select the **Edit** button in the **Email Settings** section.
 
@@ -32,10 +28,10 @@ To send email notifications from a specific email account with your domain, upda
     | Parameter | Definition |
 | --- | --- |
 | **Company name** | Your company name. The default is "Your Company"; e.g., "Your Company has invited you to ThoughtSpot." |
-| **Custom admin email** | The email address for your company's ThoughtSpot administrator. Change this setting, and contact ThoughtSpot Support to enable it. |
-| **From ID** | Email address that should send the welcome email. The default is TS Admin &lt;no-reply@customer.thoughtspot.com&gt;. Change this setting, and contact ThoughtSpot Support to enable it. |
+| **Custom admin email** | The email address for your company's ThoughtSpot administrator. |
+| **From ID** | Email address that should send the welcome email. The default is TS Admin &lt;no-reply@customer.thoughtspot.com&gt;. |
 | **Support email ID** | The email address for your company's Support contact. |
-| **'Learn More' link** | A link for users to learn more about ThoughtSpot, or your company's implementation of ThoughtSpot. The default is [https://docs.thoughtspot.com](https://docs.thoughtspot.com){: target="_blank"}, the documentation for ThoughtSpot's software product. |
+| **'Learn More' link** | A link for users to learn more about ThoughtSpot, or your company's implementation of ThoughtSpot. The default is [https://cloud-docs.thoughtspot.com](https://cloud-docs.thoughtspot.com){: target="_blank"}, the documentation for ThoughtSpot's software product. |
 | **Product name** | The name of the product the welcome email is for. The default is ThoughtSpot. |
 | **'Get started' link** | A link to allow users to get started using the product. The default is a link to the cluster you added the user to. |
 | **Custom message** | A custom message for the email. |
