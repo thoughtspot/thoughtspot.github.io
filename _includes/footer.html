@@ -1,0 +1,10 @@
+<footer>
+  <div class="row" align="right" width="700">
+    <div id="flip">Was this page useful? &nbsp;<a class="btn btn-primary btn-sm" href="#" onClick="smoothScroll(document.getElementById('bottomlogo'));return false;" role="button">Give us feedback!</a> <!-- <a href="#" onClick="return false;"><b>Give us feedback!</b></a>--></div>
+    <div id="panel" width="700"><iframe frameborder="yes" border="0" marginwidth="0" marginheight="0" height="200" width="490" src="https://www.getfeedback.com/e/IQWISvVi" style="border: 1;" id="inneriframe" scrolling="no" target="_parent";></iframe><div id="flop"><a class="btn btn-primary btn-sm" a href="#" onClick="return false;" role="button">Close</a></div></div>
+       Generated: {{ site.time | date: "%b %-d, %Y"  }} &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        &copy;{{ site.time | date: " 2015, %Y"  }} {{site.company_name}}.  All rights reserved. &nbsp;&nbsp;&nbsp;<br />
+        <!-- {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}<br/>{% endif %}  -->
+        <p><img style="width:100px;" id="bottomlogo" src="{{ "images/company_logo.png" | absolute_url }}" alt="Company logo"/>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+     </div>
+</footer>

@@ -1,0 +1,325 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Original replaced with the next" https://getbootstrap.com/docs/3.3/css/ -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- Disable zooming on mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<META NAME="robots" CONTENT="noindex,nofollow">
+<!-- <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}"> -->
+<meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
+
+<!-- prevent google from crawling/indexing site -->
+<meta name='robots' content='noindex,follow' />
+
+<title>{{ page.title }} | {{ site.site_title }}</title>
+<link rel="stylesheet" href="{{ 'css/syntax.css' | absolute_url }}">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="{{ 'css/bootstrap.min.css">-->
+<link rel="stylesheet" href="{{ 'css/modern-business.css' | absolute_url }}">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ 'css/customstyles.css' | absolute_url }}">
+<link rel="stylesheet" href="{{ 'css/boxshadowproperties.css' | absolute_url }}">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="{{ 'css/theme-new-brand.css' | absolute_url }}">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="{{ "js/jquery.navgoco.min.js" | absolute_url }}"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="{{ "js/toc.js" | absolute_url }}"></script>
+<script src="{{ "js/customscripts.js" | absolute_url }}"></script>
+
+<!-- BEGIN new Cloud styles -->
+<style>
+  /*/* Sub-site landing page */
+
+  /* Topic or Form Factor introduction. Container with 1:5 ratio, image on left, text on right */
+  .grid-container-opener {
+      display: grid;
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-row: 1;
+      grid-gap: 20px;
+
+  }
+
+  .text-opener {
+    text-align: left;
+    /*font-size: larger;*/
+  }
+
+  /* Summary of topics by persona. Optimized for 4 across */
+
+  .grid-container-persona {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      margin-top: 15px;
+  }
+
+  img.personaImg {
+    text-align: left !important;
+    vertical-align: text-bottom;
+    margin-bottom: 0px;
+  }
+
+  p.personaTitle {
+    text-decoration: none;
+    text-align: left;
+    /*font-size: large;*/
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-bottom: 0px;
+  }
+  a.personaTitle {
+    text-decoration: none;
+
+  }
+
+  p.topicLink {
+    text-align: left;
+    /*padding-left: 22px ;
+    text-indent: -22px ;*/
+    margin-top: 0em;
+    padding-top: 0em;
+  }
+
+  /* for side by side video on left, steps on right, for onboarding */
+  .grid-container-li-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+
+  /* Style Elements
+     -Line above Related inofrmation */
+  hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    width:50%;
+  }
+
+  @media (min-width: 320px) {
+    .grid-container-persona { grid-template-columns: repeat(1, 1fr); }
+  }
+  @media (min-width: 560px) {
+    .grid-container-persona { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 989px) {
+    .grid-container-persona { grid-template-columns: repeat(4, 1fr); }
+  }
+  @media (min-width: 320px) {
+    .grid-container-opener { grid-template-columns: repeat(1, 1fr); }
+  }
+  @media (min-width: 560px) {
+    .grid-container-opener { grid-template-columns: 1fr 5fr; }
+  }
+  @media (min-width: 989px) {
+    .grid-container-opener { grid-template-columns: 1fr 5fr 1fr; }
+  }
+
+
+  </style>
+<!-- END new Cloud styles -->
+<!-- break points for persona grid -->
+
+
+
+
+<link rel="shortcut icon" href="{{ "images/favicon.ico" | absolute_url }}">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
+
+{% if page.title == "Search results" %}
+<!-- Do not add the SEO and remove from indexing-->
+<meta name="robots" content="noindex" />
+{% elsif page.url contains site.current_version %}
+<!-- SEO Tools -->
+{% seo %}
+{% elsif page.url == "/" or page.url == "" %}
+<meta name="robots" content="noindex" />
+{% else %}
+{% seo %}
+{% endif %}
+
+<!--  Site Search -->
+<script>
+  /********* Version 11.x JavaScript for Site Search 360 *********/
+var ss360Config = {
+  /********* General *********/
+    siteId: "cloud-docs.thoughtspot.com_2",
+    showErrors: false,
+    layout: {
+        navigation: {
+            position: "top"
+        },
+        mobile: {
+            showUrl: true,
+            showImages: false,
+        },
+        desktop: {
+            showUrl: true,
+            showImages: false,
+        }
+    },
+    /********* Search Suggestions *********/
+    suggestions: {
+        show: false,
+        maxQuerySuggestions: 3,
+        showImages: false,
+        num: 6,
+        minChars: 3,
+        highlight: true
+    },
+    style: {
+        themeColor: "#4E55FD",
+        suggestions: {
+            text: {
+                color: "#5c5c5c"
+            },
+            background: {
+                color: "#ffffff"
+            },
+            padding: "1px",
+            distanceFromTop: "0px",
+            border: {
+                color: "#4E55FD",
+                radius: "0px"
+            }
+     },
+        /********* Search Box *********/
+        searchBox: {
+            text: {
+                color: "#6c6c6c",
+                size: "14px"
+            },
+            background: {
+                color: "#ffffff"
+            },
+            padding: "6px",
+            icon: {
+                image: "magnifier"
+            },
+            border: {
+                color: "#98a0b0",
+                radius: "0px"
+            },
+            button: {
+                text: "Search..."
+            }
+        },
+        loaderType: "circle",
+        animationSpeed: 250
+    },
+    searchBox: {
+        placeholder: "Search...",
+        selector: "#searchBox"
+    },
+    results: {
+        embedConfig: {
+            contentBlock: "searchresults-only",
+            url: "https://cloud-docs.thoughtspot.com/search.html"
+        },
+        caption: "Found #COUNT# results for your query \"#QUERY#\"",
+        group: true,
+        num: 300,
+        highlightQueryTerms: true,
+        moreResultsButton: "More results",
+        noResultsText: "Sorry, we have not found any matches for your query.",
+        queryCorrectionText: "Did you mean \"#CORRECTION#\"?",
+        moreResultsPagingSize: 50
+    },
+    contentGroups: {
+        otherName: "Search results",
+        ignoreOther: false
+    }
+}
+</script>
+<script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script>
+<!-- begin feedback form code -->
+<script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+  });
+});
+</script>
+<!-- js smoothScroll for scrolling to bottom of page -->
+<script>
+  window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+  }
+</script>
+
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border: solid 0px #c3c3c3;
+  margin-right: 10px;
+}
+
+#panel {
+  display: none;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#flop").click(function(){
+    $("#panel").slideUp("slow");
+  });
+});
+</script>
+<style>
+#panel, #flop {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border: solid 0px #c3c3c3;
+}
+
+#panel {
+  padding: 5px;
+}
+</style>
+<!-- end feedback form code -->
