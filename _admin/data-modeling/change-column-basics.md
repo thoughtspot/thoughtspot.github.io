@@ -1,6 +1,6 @@
 ---
 title: ["Set column name, description, and type"]
-keywords: tbd
+
 last_updated: tbd
 summary: "Modeling includes setting basic information for a data column such as its name, description, and type."
 sidebar: mydoc_sidebar
@@ -63,8 +63,7 @@ columns with the numeric data types (`FLOAT`, `DOUBLE`, `INT`, or `BIGINT`) are
 assigned the type `MEASURE`. Columns with `VARCHAR`, `BOOL`, or date/time data
 types are assigned the type `ATTRIBUTE`.
 
-Usually the default setting for column type works fine. But occasionally you'll
-need to change a `MEASURE` to an `ATTRIBUTE`. Examples of numeric values for
+Usually the default setting for column type works fine. But occasionally, you must change a `MEASURE` to an `ATTRIBUTE`. Examples of numeric values for
 which mathematical operations are not meaningful include:
 
 - ID numbers
@@ -81,5 +80,5 @@ To change the column type:
 
 ## Related information  
 
-- [Model the data for searching](semantic-modeling.html#)
+- [Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Hide column or define a column synonym](change-visibility-synonym.html#)

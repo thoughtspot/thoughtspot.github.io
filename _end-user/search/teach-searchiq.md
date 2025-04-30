@@ -1,11 +1,13 @@
 ---
 title: ["Teach SearchIQ your language"]
-keywords: SearchIQ,answer,introduction,"search bar","natural language",teach,mapping
-last_updated: tbd
+last_updated: 11/19/2019
 summary: "You can teach SearchIQ your language, to make its results more accurate."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+**SearchIQ is in Beta.**
+
+{% include note.html content="SearchIQ is turned off by default. ThoughtSpot Support can enable it for you. SearchIQ is only available in English." %}
 
 Sometimes the results from SearchIQ won't be quite what you were expecting. You can easily teach SearchIQ your language as you use it. Over time, it gets smarter about how to interpret terms that don’t come directly from keywords, column names, or data values.
 
@@ -13,7 +15,7 @@ Sometimes the results from SearchIQ won't be quite what you were expecting. You 
 
 To teach SearchIQ your language:
 
-1. After receiving a search result from SearchIQ, you'll notice a section below the search bar that shows the SearchIQ interpretation of what you typed or spoke. If you do not see this, click **Refine your query**.
+1. After receiving a search result from SearchIQ, notice a section under the search bar that shows the SearchIQ interpretation of what you typed or spoke. If you do not see this, click **Refine your query**.
 
    Wherever you see **- -**, those terms were ignored. Where you see a word or words, those are the keywords, column names, or data values as understood by SearchIQ.
 
@@ -37,6 +39,18 @@ To teach SearchIQ your language:
 
    SearchIQ will remember what you taught it, and use that to understand your searches in the future.
 
+## What are some best practices when teaching SearchIQ?
+
+Searchiq learns the meanings of words and phrases as exact matches. Because of this, it is recommended to include the context in the phrase being mapped to improve the accuracy of the mappings.
+
+For example, consider the following search:
+
+“How many travellers are travelling from New York to San Francisco ?”.
+
+You can train SearchIQ to map this natural language search to the keyword search “unique count traveler name source city = ‘new york’ destination name = ‘san francisco’”. However, SearchIQ will not be able to understand whether "new york" is to be considered a match for "new york" as the source city or destination city.
+
+To make the mapping more specific, you should map “from New York” to “source city = ‘New York`” and “to San Francisco” to “destination city = ‘San Francisco`”. This will help SearchIQ match a city to the source city or destination city based on the preceding preposition (to or from).
+
 ## What if I teach SearchIQ a different language from somebody else?
 
 SearchIQ learns the language you teach it, and your efforts are useful to everyone else who uses SearchIQ in the future. If SearchIQ learns different search term mappings from different users, these are applied to new searches in a hierarchical fashion, with the top learnings carrying more weight than those further down the list.
@@ -45,7 +59,7 @@ The hierarchy of SearchIQ language learning is set up like this:
 
 1. Language mappings the user taught SearchIQ
 2. Language mappings the user's [Group members]({{ site.baseurl }}/admin/users-groups/about-users-groups.html) taught SearchIQ
-3. Language mappings set by the administrator
+3. [Language mappings set by the administrator]({{ site.baseurl }}/admin/data-modeling/searchiq-mappings.html)
 
 In this way, SearchIQ provides the best and most customized search experience possible for all users, and your efforts to teach it are valuable to as many people as possible.
 
@@ -53,3 +67,4 @@ In this way, SearchIQ provides the best and most customized search experience po
 
 -   [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html)
 -   [Use SearchIQ]({{ site.baseurl }}/end-user/search/use-searchiq.html)
+-   [Modify SearchIQ mappings]({{ site.baseurl }}/admin/data-modeling/searchiq-mappings.html)

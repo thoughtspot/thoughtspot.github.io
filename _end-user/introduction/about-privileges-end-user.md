@@ -1,8 +1,6 @@
 ---
 title: [Understanding privileges]
-tags: [spotiq]
-keywords: tbd
-last_updated: tbd
+last_updated: 07/31/2019
 summary: "The things you can do in ThoughtSpot are determined by the privileges you have. Privileges are granted through group membership.
 "
 sidebar: mydoc_sidebar
@@ -17,5 +15,4 @@ Here are the privileges that the administrator sets, and the capabilities they e
 {% include content/privileges.md %}
 
 The following table shows the intersection of user privilege and ability:
-
 {% include content/security-matrix.md %}

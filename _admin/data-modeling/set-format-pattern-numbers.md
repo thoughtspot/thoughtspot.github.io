@@ -1,8 +1,8 @@
 ---
 title: [ "Set number, date, and currency formats" ]
-keywords: REST,API,currency,formats,"REST API"
-last_updated: tbd
-summary: "Explains how to set key formats for column values."
+
+last_updated: 3/25/2020
+summary: "Learn how to set key formats for column values."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -54,7 +54,7 @@ requires that you have administrative privileges.
 
 4. Save your changes.
 
-   If you are using a data-modeling file you'll need to upload the new file to your installation.
+   If you are using a data-modeling file you must upload the new file to your installation.
 
 ### Profile-based number formatting
 
@@ -94,13 +94,13 @@ editing the data model, for [the entire ThoughtSpot instance]({{ site.baseurl
 
 4. Save your changes.
 
-   If you are using a data-modeling file you'll need to upload the new file to your installation.
+   If you are using a data-modeling file you must upload the new file to your installation.
 
-## Set currency format
+## Set currency type
 
-You can set a format for how currencies are displayed in tables and charts when
+You can set a format for how currencies display in tables and charts when
 using the ThoughtSpot Data API or embedding. For example, you can display
-currencies in a standard European Euro or US Dollar format based on the data
+currencies in a standard European Euro or US Dollar format, based on the data
 modeling setting **Currency Type**.
 
 You can change the currency format used to display a column's values [for a
@@ -129,7 +129,7 @@ ThoughtSpot Application Integration Guide for more information on the API.
     | Option                  | Description |
     | ------------------------|----------|
     | **Infer From Browser** | Your currency data will be modeled upon the locale of your browser setting. |
-    | **From a column** | Your currency data will be modeled upon the existing currency information in the selected column This option is disabled if there is no `VARCHAR` column to choose from.
+    | **From a column** | Your currency data will be modeled upon the existing currency information in the selected column. This option is disabled if there is no `VARCHAR` column to choose from.
     | **Specify ISO Code** | Your currency data will be modeled upon your selection from the available currency code choices. |
 
 4. Click **Ok** to save your changes.
@@ -137,4 +137,4 @@ ThoughtSpot Application Integration Guide for more information on the API.
 
 ## Related information  
 
-[Model the data for searching](semantic-modeling.html#)
+[Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)

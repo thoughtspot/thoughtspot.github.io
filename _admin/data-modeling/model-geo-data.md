@@ -1,7 +1,7 @@
 ---
 title: [Add a geographical data setting]
-keywords: tbd
-last_updated: tbd
+summary: Learn how to model your geographical data.
+last_updated: 3/17/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -34,7 +34,7 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 1. Find the **GEO CONFIG** for the column that contains the geographical data.
 2. Select the column to display the **Specify Geographic Configuration** dialog.
 
-    ![]({{ site.baseurl }}/images/set_geo_config.png "Configure geo data")
+    ![Configure geo data]({{ site.baseurl }}/images/geomap-config.png "Configure geo data")
 
 3. Change the value to the appropriate **GEO CONFIG**, depending on the kind of geo data the column contains.
 
@@ -46,12 +46,10 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 
 4. Save your changes.
 
-## List of geotypes
+## Supported geo maps
 
-{% include content/geotypes.html %}
-
-
+For a complete list of supported geo maps in ThoughtSpot, refer to: [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference#)
 
 ## Related information  
 
-[Model the data for searching](semantic-modeling.html#)
+[Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)

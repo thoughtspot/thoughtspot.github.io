@@ -1,9 +1,7 @@
 ---
 title: [Formula operators]
-keywords: tbd
-tags: [formulas]
-last_updated: tbd
-toc: true
+summary: Learn how to use formula operators for conditional calculations.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

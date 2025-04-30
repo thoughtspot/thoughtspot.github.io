@@ -1,6 +1,6 @@
 ---
 title: [Sankey charts]
-keywords: sankey,chart,process,flow
+
 last_updated: tbd
 summary: "The Sankey chart is a type of chart that contains both columns and a special type of line chart.
 "

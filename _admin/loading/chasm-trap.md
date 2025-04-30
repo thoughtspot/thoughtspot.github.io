@@ -1,7 +1,7 @@
 ---
 title: [Chasm traps]
-tags: [Modeling,limitations]
-keywords: "chasm trap,many-to-one,joins"
+
+
 last_updated: tbd
 summary: "A chasm trap occurs when two many-to-one joins converge on a single table."
 sidebar: mydoc_sidebar
@@ -14,7 +14,7 @@ This is known as a chasm trap, and ThoughtSpot can handle it!
 ## Understand how chasm traps occur
 
 A fact table, just as it sounds, stores facts about your business. If you are
-selling apples, the sales fact table has facts about these sales.
+selling apples, the sales fact table has facts about these apples.
 
 | SaleID  | AppleTypeID  | StoreID  |  Units Sold |
 |---|---|---|---|
@@ -23,7 +23,7 @@ selling apples, the sales fact table has facts about these sales.
 | 10  | 09  |  09 | 1  |
 
 Dimension tables describe the attributes that are interesting to analyze. For
-example, the apple table might look like this:
+example, the apple table might look like this.
 
 | AppleTypeID  | Color  | Name  | Use |
 |---|---|---|---|
@@ -31,8 +31,8 @@ example, the apple table might look like this:
 | 34 |  Green |  Granny Smith |  Cooking |
 | 09  | Yellow  |  Golden  | Snack  |
 
-In a business you might have several fact tables that access
-dimension tables. So, an apple orchard may record waste in addition to sales:
+As you can imagine, in a business you might have several fact tables that access
+dimension tables. So, an apple business may record waste as well as sales.
 
 | TimeID  | AppleTypeID  | StoreID  |  Units Wasted |
 |---|---|---|---|
@@ -64,9 +64,9 @@ counting.
 
 There are still just a few things to look out for when using a schema that contains chasm traps:
 
--   The tables should be joined to the dimension table via an equi-join (i.e. a primary key/foreign key relationship). They cannot be joined using a range of values.
+-   The tables should be joined to the dimension table by an equi-join (a primary key/foreign key relationship). They cannot be joined using a range of values.
 -   Review the column setting called [Attribution Dimension]({{ site.baseurl }}/admin/data-modeling/attributable-dimension.html#). You may need to change this setting if some of the columns in the shared dimension table should not be used for attribution when combining fact tables.
--   Tables that will be joined across a chasm trap do not need to be co-sharded. They will be joined appropriately automatically in the most efficient way.
+-   Tables that will be joined across a chasm trap do not have to be co-sharded. They will be joined appropriately automatically in the most efficient way.
 
 ## Chasm trap limitations
 

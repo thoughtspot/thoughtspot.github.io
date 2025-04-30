@@ -34,14 +34,14 @@ table.scheduler, th, td {
 }
 
 small-sidebar-version-nav {
-    font-size: 80%
+    font-size: 80%;
     margin-left: 5px;
     padding-bottom: 25px;
     background-color: #BBECEE;
 }
 
 small-sidebar-link .a{
-    font-size: 80%
+    font-size: 80%;
     margin-left: 5px;
     margin-bottom: 25px;
     text-decoration: underline;
@@ -966,11 +966,12 @@ code {
     margin: 30px 0px;
 }
 
-video {
+/* commenting out the next style, because it cause a black bar to appear at the top of all embedded wistia videos
+/* video {
     display: block;
     margin: 30px 0px;
     border: 1px solid #c0c0c0;
-}
+} */
 
 
 p.required, p.dataType {display: block; color: #c0c0c0; font-size: 80%; margin-left:4px;}

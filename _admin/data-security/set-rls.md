@@ -1,9 +1,9 @@
 ---
 title: [Set row level security rules]
-keywords: tbd
+
 last_updated: 3/3/2020
-tags: [groups,security]
-summary: "Explains the process for setting RLS rules."
+
+summary: "Learn how to set RLS rules."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -23,11 +23,11 @@ do the following:
 2. Click **Row security**.
 3. Click **+ Add row security**.
 
-    ![]({{ site.baseurl }}/images/add_row_security.png "Add row security")
+    ![Click + add row security]({{ site.baseurl }}/images/rls-button.png "click + add row security")
 
     The system displays the Rule Builder.
 
-    ![]({{ site.baseurl }}/images/rls_rule_builder.png "The Rule Builder")
+    ![Rule builder]({{ site.baseurl }}/images/rls-rule-builder.png "Rule builder")
 
     You define row level security by creating an expression that gets evaluated
     for every row and group combination. This powerful feature can be used with
@@ -45,7 +45,7 @@ do the following:
 
     You can see a list of available operators by clicking on **Rule Assistant**.
 
-    ![]({{ site.baseurl }}/images/rls_rule_assistant.png "The Rule Assistant")
+    ![Rule assistant]({{ site.baseurl }}/images/rls-rule-assistant.png "Rule assistant")
 
     As you type, ThoughtSpot suggests formula syntax, variables, and column
     names. If you can't remember the exact column name or variable you want to
@@ -62,16 +62,15 @@ rules by clicking **+ Add**.
 ## Test your rule with restricted and unrestricted users
 
 To test your rule, log in as users in different groups. Search within the table
-for data both that your test user can and can't access. Make sure your test users
+for data that your test user can and can't access. Make sure your test users
 can see the appropriate rows.
 
 ## Related information
 
 * Administrators can bypass the RLS rules set on a the table at the worksheet
-level. See how to ["Change inclusion, join, or RLS for a worksheet]({{
-site.baseurl }}/admin/worksheets/change-inclusion-rule.html#) in this
-documentation for more information.
+level. See [change the join rule or RLS setting for a worksheet]({{
+site.baseurl }}/admin/worksheets/change-inclusion-rule.html#).
 
-* For a list of operators and functions you can use to build RLS rules see
-[Row level security rules reference]({{ site.baseurl
+* For a list of operators and functions you can use to build RLS rules, see the
+[row level security rules reference]({{ site.baseurl
 }}/reference/rls-rule-builder-reference.html#).

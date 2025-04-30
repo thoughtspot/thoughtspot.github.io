@@ -1,7 +1,7 @@
 ---
 title: [How to use Spot]
-keywords: slack, integration, messaging
-last_updated: tbd
+summary: Learn how to use Spot.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -80,7 +80,7 @@ you are using mobile device, your interactions with Spot will look different.
 ### How does Spot know you?
 
 The first time you message Spot, it will send back a link which you can click to
-link your ThoughtSpot account to Slack account. Once the accounts are linked all
+link your ThoughtSpot account to Slack account. After the accounts are linked, all
 charts you query from Spot will be tied to your permissions/authorization.
 
 ### How to subscribe to charts posted to a channel?

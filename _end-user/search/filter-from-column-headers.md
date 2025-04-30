@@ -1,6 +1,6 @@
 ---
 title: [Add a filter to a table]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can add a simple filter from a column header while viewing your answer as a table."
 sidebar: mydoc_sidebar

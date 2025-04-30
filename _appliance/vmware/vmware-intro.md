@@ -1,14 +1,13 @@
 ---
 title: [VMware configuration overview]
-keywords: vmware
-tags: [vm, performance]
+summary: "You can host ThoughtSpot on VMware."
 last_updated: 2/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
 
-## About ThoughtSpot on VMware
+## About ThoughtSpot in VMware
 
 The VMware virtualization platform provides highly scalable and efficient memory
 and CPU resources management that can be used by ThoughtSpot instances.
@@ -25,18 +24,46 @@ Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
 ThoughtSpot VMs as your dataset size grows.
 
-## Configuration (minimum)
+## Supported configurations
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
-platform on VMware for the best performance, load balancing, scalability,
+platform in VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
 _minimum specifications_ for an individual VMware ESXi host machine:
 
-* 512GB Memory
-* 200GB SSD
-* 3X 2TB Hard disks (6TB in total in hard disk space)
-* 72 Hyper-threaded Cores (Additional spare cores can also be added. Oversubscription is not supported).
-* Intel Xeon 2600 series operating at clock frequencies 2.1GHz (Faster is better).
+<table width="100%" border="0">
+	  <tbody>
+	    <tr>
+	      <th scope="col">Per VM user data capacity</th>
+	      <th scope="col">CPU/RAM</th>
+	      <th scope="col">Data disk</th>
+				<th scopt="col">Required root volume capacity</th>
+        </tr>
+	    <tr>
+	      <td>20 GB</td>
+	      <td>16/128 GB</td>
+	      <td>800 GB</td>
+				<td>200 GB for each node</td>
+        </tr>
+	    <tr>
+	      <td>100 GB</td>
+	      <td>32/256 GB</td>
+	      <td>800 GB</td>
+				<td>200 GB for each node</td>
+        </tr>
+	    <tr>
+	      <td>256 GB</td>
+	      <td>72/512 GB</td>
+	      <td>6 TB</td>
+				<td>200 GB for each node</td>
+        </tr>
+		<tr>
+	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.</td>
+	      <td></td>
+	      <td></td>
+        </tr>
+  </tbody>
+</table>
 
 Locally attached storage provides the best performance.
 
@@ -62,5 +89,4 @@ files from your ThoughtSpot Customer Success Engineer.
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/appliance/contact.html) by phone, mail, email, or by filing a
-support ticket.
+site.baseurl }}/appliance/contact.html) by email, phone, or by filing a support ticket.

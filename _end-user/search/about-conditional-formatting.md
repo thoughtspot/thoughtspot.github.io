@@ -1,7 +1,7 @@
 ---
 title: [Understand conditional Formatting]
-keywords: tbd
-last_updated: tbd
+summary: Apply conditional formatting to add visual cues for values in your data.
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

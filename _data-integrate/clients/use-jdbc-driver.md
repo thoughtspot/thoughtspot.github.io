@@ -1,6 +1,6 @@
 ---
 title: [Use the JDBC Driver]
-keywords: jdbc,driver,connection
+
 last_updated: tbd
 summary: "How to configure the JDBC driver. "
 sidebar: mydoc_sidebar
@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 
 ThoughtSpot's ODBC connection relies on the <a
 href="https://www.simba.com/products/SEN/doc/Client-Server_user_guide/content/clientserver/configuringsimbaclientodbc/simbaclientodbcunix.htm">SimbaEngine
-X SDK</a> to connect via ODBC or JDBC to ThoughtSpot's remote data stores. The
+X SDK</a> to connect through ODBC or JDBC to ThoughtSpot's remote data stores. The
 instructions on this page explain how to configure the JDBC driver.
 
 The ThoughtSpot JDBC driver is supplied by a `.jar` file you install on a
@@ -20,7 +20,7 @@ activities.
 
 | Information | Description |
 |-------------|-------------|
-|Driver name | `com.simba.client.core.jdbc42.SCJDBC42Driver` |
+|Driver name | `com.simba.client.core.jdbc4.SCJDBC4Driver` |
 |Server IP address | The ThoughtSpot appliance URL or IP address.|
 |Simba port | The simba port, which is `12345` by default.|
 |Database name | This is not the machine login username. The ThoughtSpot Database name to connect to.|
@@ -51,7 +51,7 @@ The JDBC driver is a `.jar` packaged application. To use the package, you downlo
 ## Write your application
 
 Using JDBC with ThoughtSpot is the same as using any other JDBC driver with any
-other database. You need to provide the connection information, create a
+other database. You must provide the connection information, create a
 connection, execute statements, and close the connection.
 
 Specify each of the nodes in the cluster in the connection string, as shown.
@@ -78,7 +78,7 @@ As shown, the `DATABASE` and `SCHEMA` parameters need to be in all caps. For the
 ```
 val tssqldf1 = sparkSession.read.format("jdbc").options(Map("url" ->
 "jdbc:simba://10.84.78.181:12345;DATABASE=movieratings;SCHEMA=falcon_default_schema", "driver" ->
-"com.simba.client.core.jdbc42.SCJDBC42Driver", "dbtable" -> "Movies", "user" ->
+"com.simba.client.core.jdbc4.SCJDBC4Driver", "dbtable" -> "Movies", "user" ->
 "tsadmin", "password" -> "admin")).load()
 ```
 
@@ -94,7 +94,7 @@ import java.sql.SQLException;
 public class InsertData {
 
   // JDBC class to use.
-  private static final String DB_DRIVER = "com.simba.client.core.jdbc42.SCJDBC42Driver";
+  private static final String DB_DRIVER = "com.simba.client.core.jdbc4.SCJDBC4Driver";
   // jdbc_example should be an existing database.
 
   private static final String DB_CONNECTION = "jdbc:simba://192.168.2.129:12345;

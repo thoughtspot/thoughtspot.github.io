@@ -1,13 +1,13 @@
 ---
 title: [ThoughtSpot mobile overview]
-keywords: tbd
-last_updated: tbd
+summary: ThoughtSpot mobile provides access to ThoughtSpot from your phone.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 The ThoughtSpot mobile app allows you to discover insights in seconds from billions of rows of data, right from the palm of your hand. You can access your ThoughtSpot cluster to search answers and pinboards. You can also create pinboards using existing answers and use pinboard filters.
 
-Version 1.2 now supports R charts, enhanced chart-viewing for iPad, and quick support. For details, see [Mobile release notes]({{ site.baseurl }}/admin/mobile/notes-mobile.html#). 
+Version 1.2 now supports R charts, enhanced chart-viewing for iPad, and quick support. For details, see [Mobile release notes]({{ site.baseurl }}/admin/mobile/notes-mobile.html#).
 
 ## Requirements
 

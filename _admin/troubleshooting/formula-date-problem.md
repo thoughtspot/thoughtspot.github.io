@@ -1,7 +1,7 @@
 ---
 title: [Cannot open a saved answer that contains a formula]
-keywords: tbd
-tags: [dates]
+last_updated: 11/18/2019
+summary: "Learn how to troubleshoot problems with data types and formulas."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +12,7 @@ due to problems with data types and formulas.
 In this scenario, "data type" refers the data type as defined in the column
 definition when creating the schema (INT, TIMESTAMP, VARCHAR, etc.).
 
-When you define a formula, both the data type it returns is set automatically.
+When you define a formula, the data type it returns is set automatically.
 This can lead to problems, if you build another formula that uses the output of
 the first formula as input. This can be hard to understand, so an example will
 be helpful.
@@ -38,10 +38,10 @@ weekday + 2
 In this case, you have effectively created a formula on top of another formula.
 This works fine, so long as the data types in the worksheet formula can work in
 the answer formula. If not, you may not be able to save the answer, or open it
-once it has been saved. Here, the second formula you created does not work,
+after it has been saved. Here, the second formula you created does not work,
 because it is invalid. It is trying to subtract a number from a text string.
 
-If you encounter this issue, you will need to open the worksheet and edit its formula so that it returns the type expected by the formula that was built on top of it. In this case, a numeric data type.
+If you encounter this issue, you must open the worksheet and edit its formula so that it returns the type expected by the formula that was built on top of it. In this case, a numeric data type.
 
 You must change the underlying worksheet column to use day_number_of_week instead of day_of_week. This is because day_number_of_week returns a numeric data type.
 

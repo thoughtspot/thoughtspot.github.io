@@ -1,7 +1,7 @@
 ---
 title: [Cumulative functions]
-keywords: tbd
-tags: [formulas]
+
+
 last_updated: tbd
 toc: false
 summary: "Cumulative formulas are aggregate formulas."

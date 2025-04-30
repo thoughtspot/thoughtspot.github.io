@@ -1,24 +1,21 @@
 ---
 title: [Time series analysis]
-keywords: period,"period ago","time series"
-tags: [time,dates]
-last_updated: tbd
+last_updated: 2/25/2020
 summary: "You can compare across time periods without using a formula."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-A _time series_ is a set of data points ordered by time. For example, within the
-same week a sale on Tuesday comes before a sale on Wednesday in such a data set.
+A _time series_ is a set of data points ordered by time. For example, in such a data set, a sale in January 2020 comes before a sale in February 2020.
 You can use ThoughtSpot's _time series analysis_ feature to search for answers
 about series data.
 
-![]({{ site.baseurl }}/images/period-drop.png "Period Analysis")
+![Automatic time series suggestions]({{ site.baseurl }}/images/time-series.png "Automatic time series suggestions")
 
 You might use this feature to compare a time period across other time periods.
-For examples sales for each month across several years.  You may also want to
+For example, you might look at sales for each month across several years.  You may also want to
 calculate an aspect such as growth over the same time period across other
-periods. You can also do relative analysis such as sales for the last 3 months of
-each year across years.
+periods. You can also do relative analysis, such as sales for the last 3 months of
+each year across several years.
 
 You can use one or more of the following period keywords to create this type of
 analysis:
@@ -104,3 +101,25 @@ supported, so `day of week = d1` is not valid.
 * `INTEGER_CONDITION` with `=` or `!=` accept a list of filter values, so, `day of week = 1 2 3` is valid.
 * `INTEGER_CONDITION` with `=` or `!=` require legal values, so `day of week >` accepts any integer on the right hand side while `day of week =` requires a value in the legal `1-7` range.
 * Simple date filters allow you to use edit the filter through the answer to refine your search, adding a a hierarchical date filter in the search bar disables this ability.
+
+### Create a max(date) field and use it to filter
+
+If you have a date field in your data set and want to return the most recent set of data based on a specific date, do the following:
+
+1. Create a formula called `Max Date`.
+
+   For example:
+
+    ```
+    date = group_max ( date_to_filter_by )
+    ```
+
+2. In the search bar, filter your dates by this formula.
+
+   For example:
+
+    ```
+    max date = true
+    ```
+
+    This returns only those fields that pass the filter.

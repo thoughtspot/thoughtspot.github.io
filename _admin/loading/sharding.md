@@ -1,6 +1,6 @@
 ---
 title: [Sharding]
-last_updated: 3/13/2020
+last_updated: 3/17/2020
 summary: "Sharding partitions very large tables into smaller, faster, more easily managed parts called data shards."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,8 +28,6 @@ To optimize ThoughtSpot performance and memory usage, you should _shard_ very la
 whenever possible. If you have a large dimension table, you might choose to
 shard it along with the fact table it is joined with. Sharding both the fact and
 dimension table(s) is known as _co-sharding_.
-
-Note that resharding automatically loads data into a new incarnation of the table you sharded. You do not need to reload the table's data.
 
 ### Table sizes and sharding recommendations
 
@@ -168,7 +166,7 @@ The shard key is a subset of the primary key. However, that is not the only guid
 2. **Choose a shard key that distributes data well across keys.**
 
     For example, suppose the table you want to shard has a primary key made up of
-    `saleid`, `custid`, and `locationid`. The table has 10K sales, 400 locations,
+    `saleid`,`custid`,and `locationid`. The table has 10K sales, 400 locations,
     and 2000 customers. If 5K sales are in just two locations, you should not use `locationid` as your shard key. If you use `locationid` as your shard key, you have data in fewer shards, which impacts performance. Instead, you should use `custid` or `locationid`.
 
     As a more concrete example, suppose you want to shard a table of retail data. Many retailers have an increase in sales around the winter holidays. You should not use `date` as your shard key, because you may have five or ten times your usual number of daily transactions during the month of December. Using `date` as your shard key would result in data skew, and would impact performance.
@@ -182,7 +180,7 @@ The shard key is a subset of the primary key. However, that is not the only guid
 3. **Choose a shard key that results in a wide variety of keys.**
 
     For example, suppose the table you want to shard has a primary key made up of
-    `saleid`,`productid`,and `locationid`. The table has 10K sales, 40
+    `saleid`, `productid`, and `locationid`. The table has 10K sales, 40
     locations, and 200 products. Even if the sales are evenly distributed across
     locations, you should not use `locationid` in your shard key, because there are only 40 possible keys. Instead, use `saleid` or `productid` for more variety.
 
@@ -263,7 +261,23 @@ There are several best practices related to sharding.
 
     Your data loads faster if you have already sharded the tables. Use the `CREATE TABLE` command to specify how you want your tables sharded, but do not load any data. After you shard the tables, your data loads faster.
 
-2. You may need to re-evaluate your sharding over time, as your data evolves. Take a look at how your sharding impacts performance about once a year.
+2. You may need to re-evaluate your sharding over time, as your data evolves. Take a look at how your sharding impacts performance after you change your data significantly. Data also changes naturally over time, so you should re-evaluate sharding at a regular cadence.
+
+    To evaluate your sharding strategy, run the following script. It checks for over- or under-sharded tables on your cluster.
+
+    1. Log into your cluster on the command line.
+        ```
+        $ ssh admin@<cluster-IP>
+        ```
+
+    2. Run the following script to check for over- or under-sharded tables.
+        ```
+        $ /usr/local/scaligent/release/bin/sharding_diagnostics.sh 
+        ```
+
+    3. Adjust your sharding strategy appropriately.
+
+    Note that resharding automatically loads data into a new incarnation of the table you sharded. You do not need to reload the table's data.
 
 3. Check your `row count skew` ratio when you re-evaluate sharding.
 

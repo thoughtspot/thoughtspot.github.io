@@ -1,42 +1,47 @@
-The language the ThoughtSpot UI displays is based off of the locale in a user's
-profile. The locale preferences control the language and data formats (date and
-number formats) by geographic locations. In addition to American English (*en-US*),
-ThoughtSpot supports:
+The language that ThoughtSpot displays depends on the system locale. If you set your browser locale or OS locale to one of ThoughtSpot's supported locales, ThoughtSpot automatically defaults to that locale. If your browser locale is not one of ThoughtSpot's supported locales, ThoughtSpot defaults to US English.
+
+It is simple to change this locale using the **Profile** interface.
+
+1. Navigate to your user profile:
+* Select your user icon next to the **help** button.
+* Select **Profile**.
+2. Under **Preferences**, click the drop-down menu icon to change the language.
+    ![Select a new locale]({{ site.baseurl }}/images/locale-set.png "Select a new locale")
+
+The **Language** selection specifies more than just the language: it sets the locale, which controls both the language choice and standard data formats for date and number. So, if you set French as the default locale in your profile settings, the interface updates to reflect this. Be sure to refresh your browser page.
+
+For example, in the United States the number format for large numbers uses the comma thousands separator and a period decimals separator, and looks like this: `xxx,xxx.xx`. Most  European countries use the reverse notation, with a comma decimals separator and a period thousands separator, like this: `xxx.xxx,xx`.
+
+In addition to American English (*en-US*), ThoughtSpot supports the following locales:
 
 | Locale |  Language  
 |---|---|
-| *da-DK* | Dansk (beta)|
+| *da-DK* | Dansk  |
 | *de-DE* | Deutsche  |
+| *en-AU* | English (Australia)  |
 | *en-CA* | English (Canada)  |
 | *en-GB* | English (United Kingdom)  |
 | *en-US* | English (United States)  |
 | *es-US* | Español (latín)  |
-| *es-ES* | Español (España - beta)  |
+| *es-ES* | Español (España)  |
 | *fr-CA* | Français (Canada)  |
 | *fr-FR* | Français (France)  |
-| *it-IT* | Italiano (beta)  |
+| *it-IT* | Italiano  |
 | *nl-NL* | Nederland (beta)  |
-| *nb-NO* | Norsk (beta)  |
+| *nb-NO* | Norsk  |
 | *pt-BR* | Português (Brazil)  |
-| *pt-PT* | Português (Portugal - beta)  |
-| *fi-FI* | Suomi (beta)  |
-| *sv-SE* | Svenska (beta)  |
+| *pt-PT* | Português (Portugal)  |
+| *fi-FI* | Suomi  |
+| *sv-SE* | Svenska  |
 | *zh-CN* | 中文(简体)  |
 | *ja-JP* | 日本語  |
 
-Date and number formats change to reflect your locale. So, if you set Japanese
-as your default locale in your profile settings, then the interface will update
-to reflect that after you refresh your page.
+ThoughtSpot translates keywords, operators, and error messages. See the [keyword reference]({{ site.baseurl }}/reference/keywords.html) for all supported languages.
 
-Keywords, operators, and error messages are included in the translated material.
-(A [keyword reference for all supported languages]({{ site.baseurl }}/reference/keywords.html)
-is included in this documentation under "Keywords in Other Languages".)  
+ThoughtSpot _DOES NOT_ translate formulas, or metadata entered by the user. For example, if you name a visualization 'Quarterly Sales' in any variant of English and subsequently change the locale to a variant of French, the visualization remains 'Quarterly Sales' and does not become 'Ventes trimestrielles'. If you specify a currency when uploading data, that currency does not change when the locale changes.
 
-Formulas, however, are _not translated_. Also, all metadata remains as user
-inputted.
+Here is an example of a locale change from the default, American English, to Español.
 
-![]({{ site.baseurl }}/images/profile-locale.png "Specify Profile locale")
+![Locale change -- Español]({{ site.baseurl }}/images/locale-spanish.png "Locale change -- Español")
 
-For example, if you are using ThoughtSpot in the US, the number formatting
-should look like this: `xxx,xxx.xx`. And in Europe, it should look like this:
-`xxx.xxx,xx`.
+Note that the top navigation bar is now in Spanish. The number formatting of the data markers now reflects the European format, with a comma decimals separator, and a period thousands separator. However, the column names are still in English, because ThoughtSpot does not translate your metadata.

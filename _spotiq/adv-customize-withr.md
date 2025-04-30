@@ -1,15 +1,12 @@
 ---
 title: [Advanced R Customizations]
-tags: [spotiq,customize, r-scripts]
-keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
-last_updated: tbd
+summary: Learn about R customizations.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Admins and users with the **Has SpotIQ** privilege can run an R script using the
-**Custom Analysis** feature of SpotIQ. This means you can run an R script from
-any point in ThoughtSpot where you find the **Custom Analysis** menu option.
+Admins and users with the **Has SpotIQ** privilege can run an R script.
 
 The R language is an open source programming language used for statistical
 computing. As such, knowledgable users can use R to perform sophisticated
@@ -30,8 +27,8 @@ requires a specific package, you must request your ThoughtSpot cluster admin to
 install the package on your behalf.
 
 ThoughtSpot internally transforms and binds an R script prior to sending it to
-the cluster's R service. The system expects each script have a well-defined
-structure which is the following:
+the cluster's R service. The system expects each script to have a well-defined
+structure, following this format:
 
 ```
 ####R SCRIPT####
@@ -41,7 +38,7 @@ structure which is the following:
 ```
 
 The scripts contains the column bindings with the answer results appearing as parameters
-in the R script. ThoughtSpot expects for each `.param`_n_ in R your script must
+in the R script. For each `.param` _n_ in R your script, you must
 provide a corresponding binding. The following pseudo code illustrates an R
 script in a form suitable for ThoughtSpot:
 
@@ -61,18 +58,18 @@ The output of the script is either PNG or CSV. This example script uses
 emit data in PNG format.
 
 Presently, error reporting is limited for R scripts in SpotIQ. You should
-validate your R script independent of your ThoughtSpot environment. Once you are
-sure they are free of syntax or other errors, then try the script in
+validate your R script independent of your ThoughtSpot environment. After you are
+sure it is free of syntax or other errors, you can try the script in
 ThoughtSpot.
 
 ## Try a Custom Analysis with R
 
-The following illustrates how to run an R analysis on data that has a sales
+This example illustrates how to run an R analysis on data that has a sales
 column and a zip code column.
 
-1. Log in to ThoughtSpot and go to the **Search** bar.
+1. Sign in to ThoughtSpot and go to the **Search** bar.
 2. Use **Choose Sources** to locate a source with sales and zip code data.
-   This example uses **Phone Sales** data.
+   This example uses **Sporting Goods Retail Worksheet** data.
 3. Enter `sales store zip code` in the search bar.
 
    If your source contains the proper data, you should see something similar to
@@ -80,21 +77,9 @@ column and a zip code column.
 
    ![]({{ site.baseurl }}/images/spotiq-r1.png)
 
-4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Custom Analyze**.
+4. Click the **View R analysis** icon ![View R Analysis icon]({{ site.baseurl }}/images/r-icon-inline-2.png){: .inline}.
 
-   ![]({{ site.baseurl }}/images/spotiq-r2.png)
-
-   ThoughtSpot opens the **Customize Analysis** dialog.
-
-5. Choose the **Customize algorithms** tab.
-6. In the **Select Algorithms** section, click the **Custom R Script** box.
-
-   Selecting this option unsets all the other options on this tab and displays
-   the **Refine Parameters** field.
-
-   ![]({{ site.baseurl }}/images/spotiq-r3.png)
-
-7. Enter this sample script in the field.
+5. Enter this sample script in the field.
 
     ```
     ####R SCRIPT####
@@ -105,9 +90,6 @@ column and a zip code column.
     cluster$cluster <- as.factor(cluster$cluster)
     png(file=#output_file#,width=400,height=350,res=72)
     print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
-    ####COLUMN BINDINGS (ONE PER LINE)####
-    Sales
-    Zip Code
     ```
     This script binds `.param0` to `Sales` and `.param1` to the `Store Zip Code`
     column.
@@ -115,23 +97,14 @@ column and a zip code column.
     You can see from the script that the output should be PNG
     (`#output_png#`).
 
-8. Check your work.
+6. For Select column(s) for R analysis, make sure that both **Sales** and **Store Zip Code** columns are selected.
+7. For Output Filetype, make sure **PNG** is selected as the output format.
 
-   ![]({{ site.baseurl }}/images/spotiq-r5.png)
-
-
-   * Make sure that both Sales and Store Zip Code columns are selected for the column bindings.
-   * Make sure PNG is selected as the output format.
-
-9. Click **Analyze**.
+8. Click **Run Analysis**.
 
    SpotIQ runs your analysis in the background.
 
-10. Go to the SpotIQ page and click the results of your newly triggered analysis.
-
-    ![]({{ site.baseurl }}/images/spotiq-r4.png)
-
-    You should see the results in PNG format similar to the following:
+9. When the analysis is completed, you should see the results in PNG format similar to the following:
 
     ![]({{ site.baseurl }}/images/spotiq-r6.png)
 

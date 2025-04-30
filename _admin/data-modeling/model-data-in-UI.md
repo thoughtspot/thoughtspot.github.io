@@ -1,6 +1,6 @@
 ---
 title: [Change a table's data model]
-keywords: tbd
+
 last_updated: tbd
 summary: "You can adjust the data model for a newly loaded table."
 sidebar: mydoc_sidebar
@@ -27,7 +27,7 @@ that case, [using the model file](edit-model-file.html#) is recommended.
 
    ![]({{ site.baseurl }}/images/data_management_select_data_source.png "Select a data source")
 
-    This brings up the **Columns** screen, where you'll make your modeling settings.
+    This brings up the **Columns** screen, where you can make your modeling settings.
 
 3. Modify one or more column settings.
 

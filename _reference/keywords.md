@@ -1,8 +1,8 @@
 ---
 title: [Keyword reference]
-tags: [keywords]
-keywords: tbd
-last_updated: tbd
+summary: Use keywords to help define a search.
+toc: true
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -76,6 +76,10 @@ Also, see the topic on how to set [locale preferences in your user profile]({{ s
 ## Period
 
 {% include content/keywords-period.md %}
+
+## In
+
+{% include content/keywords-in.md %}
 
 <!-- ## Help
 

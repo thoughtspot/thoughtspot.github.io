@@ -1,6 +1,6 @@
 ---
 title: [Refresh a materialized view]
-keywords: materialize, views, refresh, stale
+
 last_updated: 09/20/2019
 summary: "You can refresh a view manually, so that its data matches the data in the underlying tables."
 toc: true

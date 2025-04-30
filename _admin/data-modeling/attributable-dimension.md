@@ -1,9 +1,9 @@
 ---
 title: [Change the Attribution Dimension]
-keywords: tbd
-toc: false
-last_updated: tbd
-summary: "The **Attribution Dimension** setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
+
+toc: true
+last_updated: 11/15/2019
+summary: "The Attribution Dimension setting applies only to tables that are related through a chasm trap. If your schema does not include these, you can ignore this setting."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -55,7 +55,7 @@ expected outcome.
 
 You cannot configure this setting in the model file. You can only configure it
 on a table-by-table basis. To designate a column as not being an attribution
-dimension (i.e. not producing any meaningful attribution across a chasm trap):
+dimension (not producing any meaningful attribution across a chasm trap):
 
 1. Find the column that is not an attribution dimension.
 2. Select its **Attribution Dimension**.
@@ -66,4 +66,4 @@ dimension (i.e. not producing any meaningful attribution across a chasm trap):
 
 ## Related information  
 
-[Model the data for searching](semantic-modeling.html#)
+[Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)

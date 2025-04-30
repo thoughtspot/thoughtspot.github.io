@@ -113,6 +113,11 @@
     <td class="tg-us36"><code>customers <b>last day by</b> referrer</code></td>
   </tr>
   <tr>
+    <td class="tg-us36">hourly</td>
+    <td class="tg-us36">toutes les heures</td>
+    <td class="tg-us36"><code>visitors by page name <b>hourly</b></code></td>
+  </tr>
+  <tr>
     <td class="tg-dc35">last month by</td>
     <td class="tg-dc35">dernier moy par</td>
     <td class="tg-dc35"><code>customers <b>last month by</b> day</code></td>

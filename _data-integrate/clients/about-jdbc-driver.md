@@ -1,15 +1,13 @@
 ---
 title: [JDBC Driver Overview]
-keywords: jdbc,driver,database,connect
 last_updated: tbd
-tags: [performance]
 summary: "Use JDBC to interact with databases in a standard manner."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Java Database Connectivity (JDBC) is a Java standard API that allows
 applications to interact with databases in a standard manner. ThoughtSpot has
-JDBC support via a JDBC driver we provide.
+JDBC support through a JDBC driver that we provide.
 
 ## Connector type
 

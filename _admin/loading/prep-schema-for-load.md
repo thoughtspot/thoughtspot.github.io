@@ -1,7 +1,7 @@
 ---
 title: [Connect with TQL and create a schema]
-keywords: tbd
-last_updated: tbd
+summary: Learn about TQL, ThoughtSpot's SQL command line.
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,7 +11,7 @@ To perform administrative tasks directly in the database, you will use the Thoug
 
 ## Connect with TQL
 
-Before connecting with TQL, you will need:
+Before connecting with TQL, you need:
 
 -   Access to your ThoughtSpot instance Linux shell from a client machine.
 -   The administrator OS login.
