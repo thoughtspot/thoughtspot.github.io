@@ -37,7 +37,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr"><strong>Total cluster <BR>data size</strong></p></td>
       <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
       <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
-      <td><p dir="ltr"><strong>vCPU/RAM</strong></p></td>
+      <td><p dir="ltr"><strong>CPU/RAM</strong></p></td>
 	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
 	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
     </tr>
@@ -67,7 +67,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">Up to 100 GB</p></td>
       <td><p dir="ltr">100 GB</p></td>
       <td><p dir="ltr">n1-highmem-32<sup>b</sup></p></td>
-      <td><p dir="ltr">32/208</p></td>
+      <td><p dir="ltr">16/104</p></td>
 		<td><p dir="ltr">200 GB</p></td>
 		<td><p dir="ltr">2X 400 GB</p></td>
     </tr>

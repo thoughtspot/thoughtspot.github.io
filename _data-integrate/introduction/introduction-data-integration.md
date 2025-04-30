@@ -46,6 +46,10 @@ each method:
   </thead>
   <tbody>
     <tr>
+      <td>ThoughtSpot Data Connect</td>
+      <td>ThoughtSpot Data Connect is a web interface for connecting to databases and applications to move data into ThoughtSpot. You can choose which tables and columns to import and apply data transformations. You can also set up recurring loads. See the ThoughtSpot Data Connect Guide for details.</td>
+    </tr>
+    <tr>
       <td>ThoughtSpot Loader (tsload)</td>
       <td>ThoughtSpot Loader is a command line tool to load CSV files into an existing database schema in ThoughtSpot. This is the fastest way to load extremely large amounts of data, and it can be run in parallel. You can also use this method to script recurring loads. See the ThoughtSpot Administrator Guide for details.</td>
     </tr>
@@ -72,17 +76,6 @@ each method:
   </tbody>
 </table>
 
-## ThoughtSpot server-side setup prerequisites for importing data via JDBC/ODBC 
-Open up ThoughtSpot firewall to allow incoming requests to Simba server.
-```
-tscli firewall open-ports --ports 12345
-```
-Confirm that process `simba_server` is up. Output of the command below should contain exactly 1-line, as shown below.
-```
-ps -ef | grep simba_server | grep -v grep
-admin    26679 25672  0 Jul13 ?        00:01:49 simba_server_main --logbufsecs=0
-```
-Please reach out to ThoughtSpot Support Team should you require any help here.
 
 ## Where to go next
 
