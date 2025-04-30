@@ -1,6 +1,5 @@
 ---
 title: [Set chart and table visualization fonts]
-tags:
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -10,7 +9,7 @@ You can add and edit fonts to customize the appearance of your charts and tables
 
 If you are confident in your knowledge of font visualizations, you can set your chart and table visualization fonts by following the steps below:
 
-1. Click on the **Add New** button under **Chart Visualization Fonts**.
+1. Click the **Add New** button under **Chart Visualization Fonts**.
 
      ![]({{ site.baseurl }}/images/add_font.png "Add New Chart Visualization Font")
 
@@ -32,7 +31,7 @@ If you are confident in your knowledge of font visualizations, you can set your 
         The font weight choices are normal, bold, and light. The style choices are normal, italic, and oblique.
 
     4. Click **Save**.
-3. Click on the **Edit Font** icon ![]({{ site.baseurl }}/images/edit_icon.png) to make changes to the font you just uploaded or to a pre-existing font.
+3. Click the **Edit Font** icon ![]({{ site.baseurl }}/images/edit_icon.png) to make changes to the font you just uploaded or to a pre-existing font.
 
      ![]({{ site.baseurl }}/images/edit_font.png "Edit Chart Visualization Font")
 
@@ -49,4 +48,4 @@ If you are confident in your knowledge of font visualizations, you can set your 
 
      ![]({{ site.baseurl }}/images/table_visualization_fonts.png "Set Table Visualization Fonts")
 
-8. Click the **Reset** button on the upper right hand side of the sections if you would like to bring back the default fonts. 
+8. Click the **Reset** button on the upper right hand side of the sections if you would like to bring back the default fonts.

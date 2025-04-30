@@ -34,6 +34,9 @@ permalink: /:collection/:path.html
 </div>
 
 <div>
+  <div class="linksChild">
+    &nbsp;
+  </div>
    <div class="linksChild">
      <a class="helpLink" href="videos-list.html">
      <img class="helpImg" alt="more_videos.png" src="{{ "/images/more_videos.png" | prepend: site.baseurl }}"></a>
@@ -41,28 +44,22 @@ permalink: /:collection/:path.html
      <a class="linktext" href="videos-list.html">More videos</a>
    </div>
    <div class="linksChild">
-     <a class="helpLink"  href="/reference/keywords.html">
+     <a class="helpLink"  href="{{"/reference/keywords.html" | prepend: site.baseurl}}">
      <img class="helpImg" alt="keywords.png" src="{{ "/images/keywords.png" | prepend: site.baseurl }}"></a>
      <br>
-     <a class="linktext" href="/reference/keywords.html">Keywords</a>
+     <a class="linktext" href="{{"/reference/keywords.html" | prepend: site.baseurl}}">Keywords</a>
    </div>
    <div class="linksChild">
-     <a class="helpLink" class="link-https" title="Release Notes" href="/release/notes.html">
+     <a class="helpLink" class="link-https" title="PDFs" href="{{"/release/pdfs.html" | prepend: site.baseurl}}">
      <img class="helpImg" alt="releasenotes.png" src="{{ "/images/releasenotes.png" | prepend: site.baseurl }}"></a>
      <br>
-     <a class="linktext link-https" title="Release Notes" href="notes.html">Release notes</a>
+     <a class="linktext link-https" title="PDFs" href="pdfs.html">PDFs</a>
    </div>
    <div class="linksChild">
-     <a class="helpLink" class="link-https" title="Fixed Issues" href="/release/fixed.html">
-     <img class="helpImg" alt="fixedissues.png" src="{{ "/images/fixedissues.png" | prepend: site.baseurl }}"></a>
-     <br>
-     <a class="linktext link-https" title="Fixed Issues" href="fixed.html">Fixed issues</a>
-   </div>
-   <div class="linksChild">
-   <a class="helpLink"  href="/release/downloads.html">
+   <a class="helpLink"  href="{{"/release/downloads.html" | prepend: site.baseurl }}">
      <img class="helpImg" alt="download.png" src="{{ "/images/download.png" | prepend: site.baseurl }}"></a>
      <br>
-     <a class="linktext link-https" href="Downloads">Downloads</a>
+     <a class="helpLink"  href="{{"/release/downloads.html" | prepend: site.baseurl }}">Downloads</a>
    </div>
    <div class="linksChild">
      &nbsp;

@@ -1,6 +1,5 @@
 ---
 title: [Delete a filter]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can delete a filter from an answer to return to the original unfiltered search result.

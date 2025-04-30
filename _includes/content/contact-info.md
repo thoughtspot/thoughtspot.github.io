@@ -4,7 +4,7 @@ You can contact ThoughtSpot by phone, mail, email, or by filing a support ticket
 
 If you encounter a technical issue, file a support ticket using the Support Portal ticket filing system at:
 
-[http://thoughtspot.com/support-request/](http://thoughtspot.com/support-request/)
+[http://support.thoughtspot.com/](http://support.thoughtspot.com/)
 
 Please provide as much detail as possible about your issue, to help us resolve it quickly.
 
@@ -14,9 +14,9 @@ You need a Support Portal login to file a ticket. Please contact ThoughtSpot to 
 
 ThoughtSpot, Inc.
 
-910 Hermosa Ct
+1 Palo Alto Square, Building 1, Suite 200
 
-Sunnyvale, CA 94085
+Palo Alto, CA 94306
 
 ## Phone numbers
 
@@ -29,6 +29,6 @@ Sunnyvale, CA 94085
 
 |Reason for contacting|Email|
 |---------------------|-----|
-|For sales inquiries.|sales@thoughtspot.com|
-|For customer support and software update inquiries.|support@thoughtspot.com|
-|For other inquiries.|hello@thoughtspot.com|
+|For sales inquiries.|<a href="mailto:sales@thoughtspot.com">sales@thoughtspot.com</a>|
+|For customer support and software update inquiries.|<a href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>|
+|For other inquiries.|<a href="mailto:hello@thoughtspot.com">hello@thoughtspot.com</a>|

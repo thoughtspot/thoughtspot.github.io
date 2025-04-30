@@ -1,6 +1,6 @@
 ---
 title: [Set up monitoring]
-tags: [SysAdm_tscli_Config]
+tags: [tscli]
 keywords: tbd
 last_updated: tbd
 summary: "Setting up monitoring is a one time operation."
@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 To configure monitoring of your cluster, set up the frequency of heartbeat and monitoring reports and an email address to receive them.
 
 1. Log in to the Linux shell using SSH.
-2. Issue the tscli command to set up monitoring:
+2. Issue the `tscli` command to set up monitoring:
 
     ```
     tscli monitoring set-config

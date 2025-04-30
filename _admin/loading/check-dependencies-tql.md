@@ -1,6 +1,5 @@
 ---
 title: [Delete or change a table in TQL]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can delete a data source in the web browser or using ThoughtSpot SQL Command Line (TQL)."

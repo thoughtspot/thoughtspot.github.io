@@ -1,6 +1,5 @@
 ---
 title: ["Set column name, description, and type"]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "Modeling includes setting basic information for a data column such as its name, description, and type."

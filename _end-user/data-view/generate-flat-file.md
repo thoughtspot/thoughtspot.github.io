@@ -1,6 +1,6 @@
 ---
 title: [Create and load a CSV file]
-tags: [Data_Integ_User_Upload,Data_Integ_tsload]
+tags: [Upload, tsload]
 keywords: "csv,data load"
 last_updated: tbd
 summary: "The simplest way to load data is to upload a CSV or Excel file from the ThoughtSpot Web interface. "
@@ -23,3 +23,7 @@ Large organizations typically have a data administrator or department the builds
 ## Load the CSV File
 
 {% include content/csv-load.md %}
+
+## Troubleshoot uploads
+
+Boolean data must use `TRUE`/`FALSE` values. Other values such as `Y`/`N` are not supported.

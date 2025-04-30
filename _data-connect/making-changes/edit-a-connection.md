@@ -1,6 +1,5 @@
 ---
 title: [Edit a connection]
-tags:
 keywords: tbd
 last_updated: tbd
 summary: "You can edit a connection used in a data source."
@@ -10,9 +9,8 @@ permalink: /:collection/:path.html
 You can safely edit a connection when you create a new data source or edit an existing one. To edit a connection:
 
 1. Log in to ThoughtSpot from a browser.
-2. Click on **DATA**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/data_icon.png "Data")
+2. Click **Data** on the top navigation bar.
 
 3.  Click the **Data Sources** tab at the top of the screen.
 

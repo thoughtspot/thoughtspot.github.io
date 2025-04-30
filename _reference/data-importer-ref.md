@@ -1,16 +1,15 @@
 ---
-title: [ThoughtSpot loader flag reference]
-tags:
+title: [tsload flag reference]
 keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-For recurring data loads and for scripting loads, use the ThoughtSpot Loader (tsload). This reference section lists all the flags that can be used to modify the behavior of tsload.
+For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot Loader). This reference section lists all the flags that can be used to modify the behavior of `tsload`.
 
 ## General tsload flags
 
-<table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+<table style="font-size:90%; padding:4; border-collapse: collapse;">
    <colgroup>
    <col style="width:25%">
    <col style="width:30%">
@@ -86,7 +85,7 @@ For recurring data loads and for scripting loads, use the ThoughtSpot Loader (ts
 
 The following flags are used when loading data from an input file:
 
-<table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
+<table style="font-size:90%; padding:4; border-collapse: collapse;">
    <colgroup>
       <col style="width:25%">
       <col style="width:30%">
@@ -138,7 +137,7 @@ The following flags are used when loading data from an input file:
     <tr>
       <td><code class="highlighter-rouge">--has_header_row</code></td>
       <td>Indicates that the input file contains a header row.</td>
-      <td>If supplied, the first row of the file is ignored. If not supplied, the first row of the file is loaded as data.</td>
+      <td>If supplied, column names in the header row are used to match column names in the target table in ThoughtSpot. If not supplied, the first row of the file is loaded as data, the same as all subsequent rows.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">--escape_character "&lt;character&gt;"</code></td>

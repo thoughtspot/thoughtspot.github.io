@@ -1,6 +1,6 @@
 ---
 title: [Custom SpotIQ analysis]
-tags:
+tags: [spotiq,indexing]
 keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -22,9 +22,15 @@ Regardless of where you are in the ThoughtSpot UI, the SpotIQ **Customize
 Analysis** dialog has the same layout. The columns, of course, are specific to
 the data you launched the dialog from.
 
-<video src="{{ site.baseurl }}/images/spotiq-custom-analysis.mp4" width="600" controls preload></video>
+![]({{ site.baseurl }}/images/spotiq-customize-analysis-include.png)
 
-This dialog has three tabs, **Included columns**, **Excluded columns** , and **Customize Algorithms**. The **Customize Algorithms** is by far the most advanced panel.
+
+This dialog has three tabs:
+* **Included columns**, where you can explicitly indicate which columns to include in a SpotIQ analysis. (You can select all, some, or none.)
+* **Excluded columns**, where you can explicitly indicate which columns to exclude in an SpotIQ analysis. (You can select all, some, or none.)
+* **Customize Algorithms**, where you can run custom analyses and incorporate R scripts into SpotIQ.
+
+The **Customize Algorithms** is by far the most advanced panel. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
 
  ![]({{ site.baseurl }}/images/spotiq-customize-algorithms.png)
 
@@ -35,12 +41,10 @@ customize a single analysis.
 
 The **Improve Analysis** dialog always excludes a value from all future analysis.
 
-Finally, you can also set some analysis options from your user **Profile**.
+![]({{ site.baseurl }}/images/spotiq-customize-improve-analysis.png)
 
-![]({{ site.baseurl }}/images/spotiq-profile-preferences.png)
-
-You'll notice only one of these options is actually related to analysis. The
-others relate to how you receive notifications about SpotIQ operations.
+You can set a subset of SpotIQ customization parameters in your
+[profile preferences]({{ site.baseurl }}/_end-user/introduction/about-user.html), along with options for email notifications when analyses run.
 
 ## Eliminate null values
 
