@@ -7,11 +7,7 @@ summary: "Use keywords when asking a question to narrow and further define your 
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [reference]({{ site.baseurl }}/reference/keywords.html#) section or in the help. Open the help by selecting **Help** from the top navigation bar.
-
- ![]({{ site.baseurl }}/images/help_center_keywords.png "Help center keywords list")
-
- Within the help center, you’ll find videos and documentation that pertain to the current version of ThoughtSpot. Here is where you can also find a list of keywords. You can expand each section to see which keywords are available and examples on how to use them.
+In addition to column names, values, and filters, the search bar also accepts keywords.  You can access a list of keywords and other reference materials in the [ keyword reference]({{ site.baseurl }}/reference/keywords.html#) section.
 
 ## Example: Simplify search with the top keyword
 
@@ -54,10 +50,11 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
     Filter keywords work in the same way as filters on table columns or chart axes.
 
+<!-- not available on embrace currently
 -   **Location keywords**
 
     The keywords `near` and `farther than` allow you to search with spatial filters on your geo type columns with latitude/longitude data. This lets you focus your search based on distance and locations. You can specify a specific radius using miles, kilometers, or meters.
-
+-->
 
 
 ## Related information  

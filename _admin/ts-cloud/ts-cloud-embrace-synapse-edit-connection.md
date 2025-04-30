@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can edit a Snowflake connection to add tables and columns.
+You can edit a Synapse connection to add tables and columns.
 
 To edit a connection:
 

@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 {% include note.html content="This content is still under review, and might have incremental changes until this message is removed."%}
 
-You can use keywords when asking a question to help define your search. This reference lists the various keywords. You can also see this list of keywords and examples from within the help center.
+You can use keywords when asking a question to help define your search. This reference lists the various keywords.
 
 | _[< Back to English Keywords page]({{ site.baseurl }}/reference/keywords.html)_ |
 
@@ -35,9 +35,10 @@ You can use keywords when asking a question to help define your search. This ref
 
 {% include content/keywords-translate/fr-FR/keywords-comparative-fr-FR.md %}
 
+<!--
 ## Location
 
-{% include content/keywords-translate/fr-FR/keywords-location-fr-FR.md %}
+{% include content/keywords-translate/fr-FR/keywords-location-fr-FR.md %} -->
 
 ## Period
 

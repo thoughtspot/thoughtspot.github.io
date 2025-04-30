@@ -108,7 +108,6 @@ ThoughtSpot uses static ports for inbound and outbound access to the cluster.
 |443|TCP|HTTPS|outbound|All nodes|For transferring product usage data to mixpanel cloud.|outbound|
 |443|TCP|HTTPS|outbound|All nodes|je8b47jfif.execute-api.us-east-2.amazonaws.com <br> s3.us-west-1.amazonaws.com <br> s3-us-west-1.amazonaws.com <br> s3.dualstack.us-west-1.amazonaws.com|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
 |25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
-|389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
 
 
 ### Required ports for IPMI (Intelligent Platform Management Interface)

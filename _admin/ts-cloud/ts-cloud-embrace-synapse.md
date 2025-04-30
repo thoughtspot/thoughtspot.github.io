@@ -1,11 +1,14 @@
 ---
-title: [Connect to Azure Synapse]
-last_updated: 8/11/2020
+title: [Azure Synapse overview]
+last_updated: 11/05/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can add a connection to a Azure Synapse database in ThoughtSpot Cloud, and proceed to perform live queries to create Answers and Pinboards.
+
+{% include content/liveboards-announcement.md %}
+
+You can connect to an Azure Synapse database in ThoughtSpot Cloud, and perform live queries to create answers and Liveboards.
 
 - [Add a Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-add-connection.html)
 - [Edit a Synapse connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse-edit-connection.html)

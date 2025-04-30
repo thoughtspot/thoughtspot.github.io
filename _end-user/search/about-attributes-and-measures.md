@@ -18,8 +18,6 @@ Measures are numeric values you can do math on, with meaningful results. You wil
 
 ## Query details
 
-{% include note.html content="The query visualizer is not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use the query visualizer, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support." %}
-
 After, or while completing a search, you can see how ThoughtSpot displayed the
 answer. Click the **Query details** button on the right-hand side of the screen
 to open the **Query details** panel.

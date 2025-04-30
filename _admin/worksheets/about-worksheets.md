@@ -1,7 +1,7 @@
 ---
 title: [Create and use worksheets]
 
-last_updated: 3/20/2020
+last_updated: 7/21/2021
 summary: "Worksheets are flat tables created by joining columns from a set of one or more tables or imported datasets. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -35,6 +35,8 @@ The process for creating a worksheet is:
 4.  Choose the [worksheet join rule](progressive-joins.html#).
 
 5.  Select the columns to include.
+
+    {% include note.html content="ThoughtSpot supports multiple join paths for worksheets. For example, you may have a fact table joined to a dimension table more than once. When adding attribute columns from that dimension table to your worksheet, ThoughtSpot prompts you to choose which join path you would like to use for that column. To use multiple join paths, select that attribute again, modify the name, and choose the other join path when ThoughtSpot prompts you to select one." %}
 
 6.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 
@@ -70,7 +72,7 @@ To add sources to your worksheet, follow these steps. The worksheet creation UI 
 
     ![Add sources to your worksheet]({{ site.baseurl }}/images/worksheet-create-add-sources.png "Add sources to your worksheet")
 
-2. Check the box next to each of the sources you want to include in the worksheet. You can search for specific Views, imported data, or tables. You can also select every data source that has a specific sticker, like **Retail**.
+2. Check the box next to each of the sources you want to include in the worksheet. You can search for specific Views, imported data, or tables. You can also select every data source that has a specific tag, like **Retail**.
 
     Note that the list of sources only shows the data sources on which you have view or edit privileges.
 

@@ -7,7 +7,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate user. You can set up SAML through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
+ThoughtSpot enables you to use the Security Assertion Markup Language (SAML) to authenticate users. You can set up SAML through the shell on ThoughtSpot using a `tscli`-based configurator. It is configured to work using service provided by an Identity Provider (IDP).
 
 {: id="prerequisites"}
 ## Configuration prerequisites
@@ -50,7 +50,7 @@ This file is provided by the IDP. The absolute path to the `idp-meta.xml` file i
 ### Automatically add SAML users to Thoughtspot: (yes/no)
 If you choose 'yes', then new users will be automatically created in ThoughtSpot upon first successful SSO login.
 
-If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user) or through [Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
+If you choose 'no', then SAML users will not be added in ThoughtSpot upon first successful SSO login. Instead, you must [add users manually]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user).
 
 {: id="ts-auth" }
 ### Also use ThoughtSpot internal authentication: (y/n)

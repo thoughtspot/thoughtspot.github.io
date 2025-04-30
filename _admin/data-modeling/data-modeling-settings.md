@@ -1,10 +1,12 @@
 ---
 title: [Overview of data modeling settings]
 summary: Learn about data modeling settings.
-last_updated: 11/15/2019
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
 
 You can change data modeling settings in two ways, both of which change the model.
 If you want to make a few small changes, you should [make them in the
@@ -31,12 +33,12 @@ The following index includes mutable data modeling settings that you can apply t
 | [Synonyms](change-visibility-synonym.html#) | Adds synonyms that can be used in the search bar to refer to a column. |
 <!-- <!-- ifdef::software[] -->| [SpotIQ Preference](spotiq-data-model-preferences.html#) | Excludes specified columns from SpotIQ analyses. By Default, all columns are included in SpotIQ. | <!-- endif::software[] --> -->
 | [Index Type](change-index.html#) | Sets the type of index that will be created for a column. |
-| [Geo Config](model-geo-data.html#) | Enables a column to be used in GeoMap visualizations. |
+| [Geo Config](model-geo-data.html#) | Enables a column to be used in geo map visualizations. |
 | [Index Priority](change-index.html#) | Changes the priority of a column in search suggestions. |
 | [Format Pattern](set-format-pattern-numbers.html#) | Specifies the format to use for numeric values or dates that show in the column. |
 | [Currency Type](set-format-pattern-numbers.html#set-currency-type) | Specifies the format of currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. You cannot change the attribution dimension in the modeling file. You can only configure it on a table-by-table basis. |
-| [Calendar Type]({{ site.baseurl }}/admin/setup/set-custom-calendar.html) | Specifies what type of calendar a date type column uses. It can be Gregorian calendar (default), a fiscal calendar, or any custom calendar. |
+| [Calendar Type]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html) | Specifies what type of calendar a date type column uses. It can be Gregorian calendar (default), a fiscal calendar, or any custom calendar. |
 
 ## Data modeling best practices
 
@@ -46,7 +48,7 @@ If you have settings that only apply in the context of a particular worksheet, m
 
 Note that if you make your settings at the table level, and then create a worksheet that uses columns from the table, the settings are inherited from the table at the point in time that the worksheet is created. If you then go back and change the settings at the table level, your changes will not be reflected in the worksheet.
 
-If you want the worksheet to have the changes you made at the table level, you must drop those columns from the worksheet and re-add them. Then save the worksheet. At this point, the new settings will be used in the worksheet. Note that any saved answers or pinboards based on the worksheet may display differently because of your changes. For example, if you've changed the GeoMap setting from "None" to "Country", you will now see a map where before you might have seen a table.
+If you want the worksheet to have the changes you made at the table level, you must drop those columns from the worksheet and re-add them. Then save the worksheet. At this point, the new settings will be used in the worksheet. Note that any saved answers or Liveboards based on the worksheet may display differently because of your changes. For example, if you've changed the geo map setting from "None" to "Country", you will now see a map where before you might have seen a table.
 
 ## Related information  
 

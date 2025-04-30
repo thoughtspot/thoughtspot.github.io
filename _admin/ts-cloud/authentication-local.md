@@ -23,4 +23,4 @@ Select **Enable** or **Disable**, and click **OK**.
 
 ![Select enable or disable]({{ site.baseurl }}/images/admin-portal-local-enable.png "Select enable or disable")
 
-Note that you cannot disable local authentication until you configure Active Directory or [SAML authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-integration.html).
+Note that you cannot disable local authentication until you configure [SAML authentication]({{ site.baseurl }}/admin/ts-cloud/authentication-integration.html).

@@ -1,23 +1,24 @@
 ---
 title: [Connection reference for Snowflake]
-last_updated: 8/11/2020
+last_updated: 12/10/2020
 toc: true
+redirect_from:
+- /data-integrate/embrace/embrace-snowflake-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-Connection reference for SnowflakeLearn about the fields used to create a Snowflake connection using ThoughtSpot Embrace. You need specific information to establish a seamless and secure connection.
+You need specific information to establish a seamless and secure connection. The following fields are required, except where noted.
 
 <dl>
-  <dlentry id="connection-name">
+  <dlentry id="snowflake-connection-name">
     <dt>Connection name</dt>
-    <dd>Enter a new Snowflake connection name.<br/>Mandatory field.</dd></dlentry>
-  <dlentry id="connection-description">
+    <dd>Enter a new Snowflake connection name.</dd></dlentry>
+  <dlentry id="snowflake-connection-description">
       <dt>Connection description</dt>
-      <dd>Provide a short description of the connection.<br/>Optional field.</dd></dlentry>
-  <dlentry id="account-name">
-      <dt>Account name</dt>
-      <dd>Enter the account name associated with the Snowflake connection.<br/>Mandatory field.</dd>
+      <dd>Provide a short description of the connection.<i> (Optional)</i></dd></dlentry>
+  <dlentry id="snowflake-account-name">
+      <dt>Account name or your Snowflake URL</dt>
+      <dd>Enter the account name associated with the Snowflake connection.</dd>
       <dd>The account name is part of the URL that you use to access the Snowflake UI. It is the portion of the URL before <strong>snowflakecomputing.com</strong>.</dd>
       <dd id="example"><strong><em>Example</em></strong>: If your URL is <strong>https://abcd.xyz.efg.snowflakecomputing.com</strong>, your account name is <strong>abcd.xyz.efg</strong>.</dd>
       <dd id="guidelines"><p>If you cannot find your <strong>Full account name</strong> in Snowflake, see the following examples for determining your account based on the account name, cloud platform, and region. Assume that the <strong>account name</strong> is <em>xy12345</em>.</p>
@@ -95,22 +96,42 @@ Connection reference for SnowflakeLearn about the fields used to create a Snowfl
       </table>
       </dd>
       </dlentry>
-    <dlentry id="user">
+    <dlentry id="snowflake-user">
       <dt>User</dt>
-      <dd>Enter the Snowflake account username.<br/>Mandatory field.</dd></dlentry>  
-    <dlentry id="password">
+      <dd>Enter the Snowflake account username.</dd></dlentry>  
+    <dlentry id="snowflake-password">
       <dt>Password</dt>
-      <dd>Enter the Snowflake account password.<br/>Mandatory field.</dd></dlentry>
-    <dlentry id="role">
+      <dd>Enter the Snowflake account password.</dd></dlentry>
+    <dlentry id="snowflake-role">
       <dt>Role</dt>
-      <dd>Specify the privilege of the user.<br/>Mandatory field.</dd></dlentry>
-    <dlentry id="warehouse">
+      <dd>Specify the privilege of the user.</dd></dlentry>
+    <dlentry id="snowflake-warehouse">
       <dt>Warehouse</dt>
-      <dd>Specify the warehouse associated with the connection.<br/>Mandatory field.</dd></dlentry>  
-    <dlentry id="database">
+      <dd>Specify the warehouse associated with the connection.</dd></dlentry>  
+    <dlentry id="snowflake-database">
       <dt>Database</dt>
-      <dd>Specify the database associated with the account.<br/>Optional field.</dd></dlentry>  
-  <dlentry id="schema">
+      <dd>Specify the database associated with the account.<i> (Optional)</i></dd></dlentry>  
+  <dlentry id="snowflake-schema">
       <dt>Schema</dt>
-      <dd>Specify the schema associated with the database.<br/>Optional field.</dd></dlentry>
+      <dd>Specify the schema associated with the database.<i> (Optional)</i></dd></dlentry>
+  <dlentry id="snowflake-oauth-client-id">
+      <dt>OAuth Client ID</dt>
+      <dd>Enter the OAuth client ID associated with the Snowflake database.</dd>
+  </dlentry>
+  <dlentry id="snowflake-oauth-client-secret">
+      <dt>OAuth Client Secret</dt>
+      <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
+  </dlentry>
+  <dlentry id="snowflake-azure-oauth-scope">
+      <dt>Scope</dt>
+      <dd>(Azure AD OAuth) Enter the scope associated with your Azure AD OAuth.</dd> <dd>Scope maps to a role in your Snowflake database. It should be similar to `session:role:developer`.</dd>
+  </dlentry>
+  <dlentry id="snowflake-azure-oauth-auth-url">
+      <dt>Auth Url</dt>
+      <dd>(Azure AD OAuth) Enter the Auth URL associated with your Azure AD OAuth.</dd> <dd>ThoughtSpot performs an "Authorization Code" grant type flow to get the access token. Get the authorization endpoint for Azure AD OAuth app from Azure portal. It should be similar to <b>https://login.microsoftonline.com/&lt;tenant_id&gt;/oauth2/v2.0/authorize</b>.</dd>
+  </dlentry>
+  <dlentry id="snowflake-azure-oauth-token-url">
+      <dt>Access Token Url</dt>
+      <dd>(Azure AD OAuth) Enter the Access Token Url associated with your Azure AD OAuth.</dd> <dd>Token endpoint can be obtained from the Azure portal by navigating to the OAuth application in Azure Active Directory resource. It should be similar to <b>https://login.microsoftonline.com/&lt;tenant_id&gt;/oauth2/v2.0/token</b>.</dd>
+</dlentry>       
 </dl>

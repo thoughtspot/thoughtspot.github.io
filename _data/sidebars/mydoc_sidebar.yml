@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts6.oct.cl
-  # version: tscloud.6
+  docversion: 8.0.0.cl
+  # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -26,11 +26,26 @@ entries:
     - title: Release notes
       url:  /release/notes.html
       output: web
+    - title: Get started with Free Trial
+      url:  /release/ts-cloud-getting-started-free-trial.html
+      output: web
+    - title: Free Trial
+      url:  /release/free-trial.html
+      output: web
+    - title: Accessibility
+      url:  /release/accessibility.html
+      output: web
+    - title: Deprecation Announcements
+      url:  /release/deprecation.html
+      output: web
   - sectiontitle: Getting started
     output: web,ugBk
     sectionitems:
-    - title: Getting started
-      url:  /admin/ts-cloud/cloud-getting-started.html
+    - title: Getting Started
+      url:  /admin/ts-cloud/ts-cloud-getting-started.html
+      output: web
+    - title: Requirements and support
+      url:  /admin/ts-cloud/ts-cloud-requirements-support.html
       output: web
     - title: User onboarding experience
       url: /end-user/onboarding/user-onboarding-experience.html
@@ -41,18 +56,24 @@ entries:
     - title: ThoughtSpot browser access
       url: /end-user/accessing.html
       output: web,ugBk
-    - title: Information Center
-      url: /end-user/introduction/getting-started.html
-      output: web,ugBk
     - title: Your user preferences
       url: /end-user/introduction/about-user.html
       output: web,ugBk
-    - title: Understanding privileges
-      url: /end-user/introduction/about-privileges-end-user.html
+#    - title: Password and account management
+#      url: /end-user/onboarding/password-requirements.html
+#      output: web,ugBk
+    - title: Use tags to organize
+      url: /end-user/tags.html
       output: web,ugBk
-    - title: Use stickers to organize
-      url: /end-user/stickers.html
-      output: web,ugBk
+    - levelTwoTitle: Privileges
+      output: web
+      levelTwoItems:
+      - title: Understanding privileges
+        url: /end-user/introduction/about-privileges-end-user.html
+        output: web,ugBk
+      - title: Granular access to Liveboards
+        url: /end-user/introduction/pinboard-granular-permission.html
+        output: web,ugBk
   - sectiontitle: ThoughtSpot for ...
     output: web,ugBk
     sectionitems:
@@ -74,26 +95,26 @@ entries:
       - title: Search Data
         url: /end-user/search/search-data.html
         output: web
+      - title: New Answer experience
+        url: /admin/ts-cloud/new-answer-experience.html
+        output: web
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
         output: web
       - title: Confirm data source
         url: /admin/ts-cloud/business-user-datasource-confirm.html
         output: web
-      - title: Select a Pinboard
+      - title: Select a Liveboard
         url: /admin/ts-cloud/business-user-pinboard-select.html
         output: web
-      - title: Explore your Pinboard
+      - title: Explore your Liveboard
         url: /admin/ts-cloud/business-user-pinboard-view.html
         output: web
-      - title: More on Pinboards and Answers
+      - title: More on Liveboards and Answers
         url: /admin/ts-cloud/pinboards.html
         output: web
       - title: Search Assist
         url: /admin/ts-cloud/search-assist.html
-        output: web
-      - title: Answer V2 feature set
-        url: /admin/ts-cloud/answer-v2.html
         output: web
     - levelTwoTitle: Analysts
       output: web
@@ -110,35 +131,47 @@ entries:
       - title: Join tables
         url: /admin/ts-cloud/tables-join.html
         output: web
-      - title: Create Worksheets
+      - title: Create worksheets in Setup
+        url: /admin/ts-cloud/worksheet-create-setup.html
+        output: web
+      - title: Create worksheets
         url: /admin/ts-cloud/worksheet-create.html
+        output: web
+      - title: Search Assist Coach
+        url: /admin/ts-cloud/search-assist-coach.html
         output: web
       - title: Visualize Search Results
         url: /admin/ts-cloud/visualize-search.html
         output: web
-      - title: Compose Pinboards from Answers
+      - title: Create answers in Setup
+        url: /admin/ts-cloud/automated-answer-creation.html
+        output: web
+      - title: Compose Liveboards from Answers
         url: /admin/ts-cloud/pinboard-compose.html
         output: web
-      - title: Linked Pinboard filters
+      - title: Linked Liveboard filters
         url: /complex-search/linked-filters.html
         output: web
-      - title: Selective Pinboards filters
+      - title: Selective Liveboards filters
         url: /complex-search/selective-filters.html
-        output: web
-      - title: Disable Answer Search for specific Worksheets
-        url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
-        output: web
-      - title: Stats and Trends for Search on Answers Pinboard
-        url: /admin/thoughtspot-one/query-intelligence-pinboard.html
         output: web
       - title: Scriptability
         url: /admin/ts-cloud/scriptability.html
         output: web
-      - title: SpotApps
-        url: /admin/ts-cloud/app-templates.html
+#      - title: SpotApps
+#        url: /admin/ts-cloud/app-templates.html
+#        output: web
+      - title: Migrate multiple TML files
+        url: /admin/ts-cloud/tml-import-export-multiple.html
         output: web
-      - title: ThoughtSpot Scripting Language
-        url: /admin/ts-cloud/tsl.html
+      - title: ThoughtSpot Modeling Language
+        url: /admin/ts-cloud/tml.html
+        output: web
+      - title: Disable Answer Search for specific Worksheets
+        url: /admin/thoughtspot-one/disable-discover-for-worksheet.html
+        output: web
+      - title: How Users are Searching Answers Liveboard
+        url: /admin/thoughtspot-one/query-intelligence-pinboard.html
         output: web
     - levelTwoTitle: Data Engineers
       output: web
@@ -146,39 +179,9 @@ entries:
       - title: For Data Engineers
         url: /admin/ts-cloud/data-engineer.html
         output: web
-      - title: About Embrace
+      - title: About connections
         url: /admin/ts-cloud/embrace.html
         output: web
-      - levelThreeTitle: Connect to Snowflake
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-connection.html
-          output: web
-        - title: Best practices
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html
-          output: web
       - levelThreeTitle: Connect to Amazon Redshift
         output: web
         levelThreeItems:
@@ -203,35 +206,14 @@ entries:
         - title: Delete connection
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-delete-connection.html
           output: web
+        - title: Configure OAuth
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-oauth.html
+          output: web
+        - title: Best practices
+          url: /admin/ts-cloud/ts-cloud-embrace-redshift-best.html
+          output: web,embraceGd
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html
-          output: web
-      - levelThreeTitle: Connect to Google BigQuery
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq.html
-          output: web
-        - title: Add a connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html
-          output: web
-        - title: Edit connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-edit-connection.html
-          output: web
-        - title: Remap connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-remap-connection.html
-          output: web
-        - title: Delete table
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table.html
-          output: web
-        - title: Delete table with dependencies
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table-dependencies.html
-          output: web
-        - title: Delete connection
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-connection.html
-          output: web
-        - title: Connection reference
-          url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
           output: web
       - levelThreeTitle: Connect to Azure Synapse
         output: web
@@ -260,6 +242,234 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html
           output: web
+      - levelThreeTitle: Connect to Databricks
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html
+          output: web
+      - levelThreeTitle: Connect to Google BigQuery
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq.html
+          output: web
+        - title: Prerequisites
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-prerequisites.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html
+          output: web
+#       - title: Passthrough functions
+#         url: /admin/ts-cloud/ts-cloud-embrace-gbq-passthrough.html
+#         output: web
+      - levelThreeTitle: Connect to Oracle ADW
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-adw.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-adw-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-adw-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-adw-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-adw-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html
+          output: web
+      - levelThreeTitle: Connect to SAP HANA
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-hana.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-hana-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-hana-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-hana-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-hana-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html
+          output: web
+      - levelThreeTitle: Connect to Snowflake
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-connection.html
+          output: web
+        - title: Configure internal OAuth
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
+          output: web
+        - title: Configure Azure AD external OAuth
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html
+          output: web
+        - title: Best practices
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-best-practices.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html
+          output: web
+        - title: Passthrough functions
+          url: /admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html
+          output: web
+        - title: Snowflake Partner Connect Overview
+          url: /data-integrate/embrace/embrace-snowflake-partner.html
+          output: web,embraceGd
+        - title: Snowflake Partner Connect Tutorials
+          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
+          output: web,embraceGd
+      - levelThreeTitle: Connect to Starburst
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-starburst-connection-reference.html
+          output: web
+      - levelThreeTitle: Connect to Teradata
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata.html
+          output: web
+        - title: Add a connection
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata-add-connection.html
+          output: web
+        - title: Edit connection
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata-edit-connection.html
+          output: web
+        - title: Remap connection
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata-remap-connection.html
+          output: web
+        - title: Delete table
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-table.html
+          output: web
+        - title: Delete table with dependencies
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-table-dependencies.html
+          output: web
+        - title: Delete connection
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata-delete-connection.html
+          output: web
+        - title: Connection reference
+          url: /admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html
+          output: web
+      - levelThreeTitle: Custom calendar
+        output: web
+        levelThreeItems:
+        - title: Overview
+          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal.html
+          output: web
+        - title: Create a custom calendar
+          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html
+          output: web
+        - title: Update a custom calendar
+          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html
+          output: web
+        - title: Delete a custom calendar
+          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html
+          output: web
     - levelTwoTitle: IT and Ops
       output: web
       levelTwoItems:
@@ -272,11 +482,26 @@ entries:
       - title: Managing groups
         url: /admin/ts-cloud/groups.html
         output: web
+      - title: Authentication overview
+        url: /admin/architecture/authentication.html
+        output: web
       - title: Managing local authentication
         url: /admin/ts-cloud/authentication-local.html
         output: web
       - title: Managing authentication with SAML
         url: /admin/ts-cloud/authentication-integration.html
+        output: web
+      - title: Configure SAML group mapping
+        url: /admin/ts-cloud/saml-group-mapping.html
+        output: web
+#      - title: Sync users and groups from LDAP
+#        url: /admin/setup/sync-users-and-groups-from-ldap.html
+#        output: web
+      - title: Search and SpotIQ settings
+        url: /admin/ts-cloud/search-spotiq-settings.html
+        output: web
+      - title: Email and onboarding settings
+        url: /admin/ts-cloud/onboarding-email-settings.html
         output: web
       - title: Scheduled maintenance
         url: /admin/ts-cloud/scheduled-maintenance.html
@@ -287,15 +512,81 @@ entries:
       - title: Help customization
         url: /admin/ts-cloud/customize-help.html
         output: web
-      - title: Performance tracking Pinboard
+      - title: Enable a PrivateLink for Snowflake
+        url: /admin/ts-cloud/private-link-snowflake.html
+        output: web
+      - title: Enable a PrivateLink for Redshift
+        url: /admin/ts-cloud/private-link-redshift.html
+        output: web
+      - title: OpenVPN for Google BigQuery
+        url: /admin/ts-cloud/openvpn-gbq.html
+        output: web
+      - title: OpenVPN for Azure Synapse
+        url: /admin/ts-cloud/openvpn-synapse.html
+        output: web
+      - title: Custom domain configuration
+        url: /admin/ts-cloud/custom-domains.html
+        output: web
+      - title: Performance tracking Liveboard
         url: /admin/ts-cloud/performance-tracking.html
         output: web
-      - title: User adoption Pinboard
+      - title: User adoption Liveboard
         url: /admin/ts-cloud/user-adoption.html
+        output: web
+      - title: Object usage Liveboard
+        url: /admin/ts-cloud/object-usage.html
         output: web
       - title: ThoughtSpot use agreement
         url: /admin/ts-cloud/use-agreement.html
         output: web
+    - levelTwoTitle: Developers
+      output: web
+      levelTwoItems:
+      - title: For Developers
+        url: /admin/ts-cloud/developer-user.html
+        output: web
+      - title: Embedded Analytics
+        url: /admin/ts-cloud/intro-embed.html
+        output: web
+      - title: Integration guidelines
+        url: /admin/ts-cloud/integration-overview.html
+        output: web
+      - title: ThoughtSpot Developer Portal
+        url: /admin/ts-cloud/spotdev-portal.html
+        output: web
+      - title: Authentication and security
+        url: /admin/ts-cloud/auth-overview.html
+        output: web
+      - title: Visual Embed SDK
+        url: /admin/ts-cloud/visual-embed-sdk.html
+        output: web
+      - title: Custom actions
+        url: /admin/ts-cloud/custom-actions.html
+        output: web
+      - title: Customization and rebranding
+        url: /admin/ts-cloud/customization-rebranding.html
+        output: web
+      - levelThreeTitle: REST APIs
+        output: web
+        levelThreeItems:
+        - title: About REST APIs
+          url: /admin/ts-cloud/about-rest-apis.html
+          output: web
+        - title: Get started with REST APIs
+          url: /admin/ts-cloud/rest-api-getstarted.html
+          output: web
+      - levelThreeTitle: Runtime Filters
+        output: web
+        levelThreeItems:
+        - title: About Runtime Filters
+          url: /admin/ts-cloud/about-runtime-filters.html
+          output: web
+        - title: Apply a Runtime Filter
+          url: /admin/ts-cloud/apply-runtime-filter.html
+          output: web
+        - title: Runtime Filter Operators
+          url: /admin/ts-cloud/runtime-filter-operators.html
+          output: web
   - sectiontitle: Search
     output: web,ugBk
     sectionitems:
@@ -361,9 +652,6 @@ entries:
         output: web,ugBk
       - title: Using the in keyword for nested searches
         url: /complex-search/in-keyword-searches.html
-        output: web,ugBk
-      - title: Proximity searches "near" and "farther than"
-        url: /admin/features/proximity-search.html
         output: web,ugBk
     - levelTwoTitle: Work with filters
       output: web,ugBk
@@ -455,6 +743,9 @@ entries:
       - title: Funnel charts
         url: /end-user/search/about-funnel-charts.html
         output: web,ugBk
+      - title: Heatmap charts
+        url: /end-user/search/heatmap-chart.html
+        output: web,ugBk
       - title: Geo charts
         url: /end-user/search/about-geo-charts.html
         output: web,ugBk
@@ -493,6 +784,9 @@ entries:
         output: web,ugBk
       - title: Hide and show values
         url: /end-user/search/hide-and-show-values.html
+        output: web,ugBk
+      - title: Charts with a very large number of data values
+        url: /end-user/search/high-cardinality.html
         output: web,ugBk
       - title: Change chart colors
         url: /end-user/search/change-chart-colors.html
@@ -548,6 +842,9 @@ entries:
       - title: Filtered aggregation functions
         url: /complex-search/filtered-agg-forms.html
         output: web,ugBk
+      - title: Aggregate filters
+        url: /complex-search/aggregation-filters.html
+        output: web,ugBk
       - title: Conversion functions
         url: /complex-search/conversion-formulas.html
         output: web,ugBk
@@ -566,69 +863,51 @@ entries:
       - title: Formulas for chasm traps
         url: /complex-search/about-formula-support-for-chasm-trap-schemas.html
         output: web,ugBk
-  - sectiontitle: Pinboards
+  - sectiontitle: Liveboards
     output: web,ugBk
     sectionitems:
-    - title: Basic Pinboards
+    - title: Basic Liveboards
       url: /end-user/pinboards/about-pinboards.html
       output: web,ugBk
-    - title: Follow a pinboard
+    - title: Follow a Liveboard
       url: /end-user/pinboards/follow-pinboard.html
       output: web,ugBk
-    - title: Edit a pinboard
+    - title: Edit a Liveboard
       url: /end-user/pinboards/edit-the-layout-of-a-pinboard.html
       output: web,ugBk
-    - title: Pinboard filters
+    - title: Liveboard filters
       url: /complex-search/pinboard-filters.html
       output: web,ugBk
     - title: Answer Explorer
       url: /end-user/pinboards/answer-explorer.html
       output: web,ugBk
-    - title: Schedule a pinboard job
+    - title: Schedule a Liveboard job
       url: /admin/manage-jobs/schedule-a-pinboard-job.html
       output: web,ugBk
-    - title: Search actions within a pinboard
+    - title: Search actions within a Liveboard
       url: /end-user/pinboards/about-showing-underlying-data-from-within-a-pinboard.html
       output: web,ugBk
-    - title: Copy a pinboard
+    - title: Copy a Liveboard
       url: /end-user/pinboards/copy-a-pinboard.html
       output: web,ugBk
-    - title: Copy a pinboard or visualization link
+    - title: Copy a Liveboard or visualization link
       url: /end-user/pinboards/copy-link-for-a-pinboard.html
       output: web,ugBk
-    - title: Reset a pinboard visualization
+    - title: Reset a Liveboard visualization
       url: /end-user/pinboards/reset-a-visualization.html
       output: web,ugBk
-    - title: Present a pinboard as a slideshow
+    - title: Present a Liveboard as a slideshow
       url: /end-user/pinboards/start-a-slideshow.html
       output: web,ugBk
     - title: Download as PDF
       url: /end-user/pinboards/download-pinboard-pdf.html
       output: web,ugBk
-  - sectiontitle: Use R for analysis
+  - sectiontitle: SpotIQ
     output: web,ugBk
     sectionitems:
-    - title: About R in ThoughtSpot
-      url: /end-user/r-scripts/about-r-in-thoughtspot.html
+    - title: What is SpotIQ?
+      url: /spotiq/whatisspotiq.html
       output: web,ugBk
-    - title: Create and share R scripts
-      url: /end-user/r-scripts/create-r-scripts.html
-      output: web,ugBk
-    - title: Run prebuilt R scripts on answers
-      url: /end-user/r-scripts/run-prebuilt-r-scripts.html
-      output: web,ugBk
-    - title: Save and share R visualizations
-      url: /end-user/r-scripts/save-and-share-r-answers.html
-      output: web,ugBk
-    - title: "Advanced R customizations"
-      url: /spotiq/adv-customize-withr.html
-      output: web,ugBk
-#  - sectiontitle: SpotIQ
-#    output: web,ugBk
-#    sectionitems:
-#    - title: What is SpotIQ
-#      url: /spotiq/whatisspotiq.html
-#      output: web,ugBk
 #    - title: "Best SpotIQ practices"
 #      url: /spotiq/special-topics.html
 #      output: web,ugBk
@@ -638,15 +917,33 @@ entries:
 #    - title: "Comparative Analysis"
 #      url: /spotiq/comparative-analysis.html
 #      output: web,ugBk
-#    - title: "Custom SpotIQ analysis"
-#      url: /spotiq/customization.html
-#      output: web,ugBk
+    - title: "SpotIQ analysis"
+      url: /spotiq/customization.html
+      output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
 #      output: web,ugBk
 #    - title: "SpotIQ preferences"
 #      url: /spotiq/spotiq-preferences.html
 #      output: web,ugBk
+  - sectiontitle: Mobile
+    output: web,ugBk
+    sectionitems:
+    - title: Overview
+      url: /admin/mobile/use-mobile.html
+      output: web,ugBk
+    - title: Deploy
+      url: /admin/mobile/deploy-mobile.html
+      output: web,ugBk
+    - title: Install and set up
+      url: /admin/mobile/install-mobile.html
+      output: web,ugBk
+    - title: FAQ
+      url: /admin/mobile/faq-mobile.html
+      output: web,ugBk
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web,ugBk
   - sectiontitle: Work with data
     output: web,ugBk
     sectionitems:
@@ -671,7 +968,7 @@ entries:
     - title: About sharing
       url: /end-user/data-view/sharing-for-end-users.html
       output: web,ugBk
-    - title: Share a pinboard
+    - title: Share a Liveboard
       url: /end-user/pinboards/share-pinboards.html
       output: web,ugBk
     - title: Share answers
@@ -701,8 +998,8 @@ entries:
     - title: Introduction to administration
       url: /admin/intro.html
       output: web,admBk
-    - title: Sign-in credentials for administration
-      url: /admin/setup/logins.html
+    - title: Support Handbook
+      url: /admin/ts-cloud/ts-cloud-support-handbook.html
       output: web,admBk
 #    - levelTwoTitle: Understand the architecture
 #      output: web,admBk
@@ -749,17 +1046,11 @@ entries:
 #      - title: Configure SAML
 #        url: /admin/setup/configure-SAML-with-tscli.html
 #        output: web,admBk
-#      - title: Enable SSH through Active Directory
-#        url: /admin/setup/active-directory-based-access.html
-#        output: web,admBk
 #      - levelThreeTitle: Integrate LDAP
 #        output: web,admBk
 #        levelThreeItems:
 #        - title: About LDAP integration
 #          url: /admin/setup/about-LDAP.html
-#          output: web,admBk
-#        - title: Configure authentication through Active Directory
-#          url: /admin/setup/LDAP-config-AD.html
 #          output: web,admBk
 #        - title: Add the SSL certificate for LDAP
 #          url: /admin/setup/add-SSL-for-LDAP.html
@@ -800,9 +1091,9 @@ entries:
       - title: Configure casing
         url: /admin/loading/about-case-configuration.html
         output: web,admBk
-#      - title: Load CSV files with the UI
-#        url: /admin/loading/load-from-web-browser.html
-#        output: web,admBk
+      - title: Load CSV files with the UI
+        url: /admin/loading/load-from-web-browser.html
+        output: web,admBk
       - title: How to view a data schema
         url: /admin/loading/schema-viewer.html
         output: web,admBk
@@ -884,6 +1175,9 @@ entries:
       - title: Create, edit, or delete a user
         url: /admin/users-groups/add-user.html
         output: web,admBk
+      - title: Manage user logins and sessions
+        url: /admin/users-groups/sign-in.html
+        output: web,admBk
       - title: Allow users to sign up
         url: /admin/users-groups/sign-up.html
         output: web,admBk
@@ -893,12 +1187,12 @@ entries:
       - title: Overview of security features
         url: /admin/data-security/about-security.html
         output: web,admBk
-#      - levelThreeTitle: System security
-#        output: web,admBk
-#        levelThreeItems:
-#        - title: Tools and processes
-#          url: /admin/data-security/audit-logs.html
-#          output: web,admBk
+      - levelThreeTitle: System security
+        output: web,admBk
+        levelThreeItems:
+        - title: Collect security logs
+          url: /admin/data-security/audit-logs.html
+          output: web,admBk
 #        - title: About third-party software
 #          url: /admin/data-security/about-secure-monitor-sw.html
 #          output: web,admBk
@@ -920,7 +1214,7 @@ entries:
         - title: Share Views
           url: /admin/data-security/share-views.html
           output: web,admBk
-        - title: Share Pinboard
+        - title: Share Liveboard
           url: /admin/data-security/share-pinboards.html
           output: web,admBk
         - title: Share Answers
@@ -1037,6 +1331,15 @@ entries:
         - title: Add or manage experts
           url: /admin/data-modeling/add-expert.html
           output: web,admBk
+        - title: Exclude from SpotIQ analyses
+          url: /admin/data-modeling/spotiq-data-model-preferences.html
+          output: web,admBk
+        - title: Chasm traps
+          url: /admin/loading/chasm-trap.html
+          output: web,admBk
+        - title: Data types
+          url: /admin/loading/datatypes.html
+          output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
         levelThreeItems:
@@ -1049,8 +1352,8 @@ entries:
         - title: Delete a relationship
           url: /admin/data-modeling/delete-relationship.html
           output: web,admBk
-        - title: Use stickers
-          url: /admin/data-modeling/stickers-concept.html
+        - title: Use tags
+          url: /admin/data-modeling/tags.html
           output: web,admBk
     - levelTwoTitle: Simplify search with worksheets
       output: web,admBk
@@ -1085,8 +1388,8 @@ entries:
       - title: Migrate or restore Worksheets
         url: /admin/ts-cloud/scriptability.html
         output: web,admBk
-      - title: Worksheet TSL specification
-        url: /admin/ts-cloud/tsl.html
+      - title: Worksheet TML specification
+        url: /admin/ts-cloud/tml.html
         output: web,admBk
     - levelTwoTitle: Work with views
       output: web,admBk
@@ -1121,10 +1424,10 @@ entries:
     - levelTwoTitle: Manage scheduled jobs
       output: web,admBk
       levelTwoItems:
-      - title: Job management (scheduled pinboards)
+      - title: Job management (scheduled Liveboards)
         url: /admin/manage-jobs/about-scheduled-pinboards.html
         output: web,admBk
-      - title: Scheduled pinboards management
+      - title: Scheduled Liveboards management
         url: /admin/manage-jobs/scheduled-pinboards-management.html
         output: web,admBk
     - levelTwoTitle: Monitoring
@@ -1148,7 +1451,7 @@ entries:
       - title: System worksheets
         url: /admin/system-monitor/worksheets.html
         output: web,admBk
-      - title: System pinboards
+      - title: System Liveboards
         url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
     - levelTwoTitle: Troubleshooting
@@ -1187,18 +1490,12 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
+    - title: Consumption-based pricing
+      url: /admin/ts-cloud/consumption-pricing.html
+      output: web,admBk
     - title: Contact ThoughtSpot Support
       url: /admin/misc/contact.html
       output: web,admBk
-  - sectiontitle: Embrace Snowflake Partner Connect
-    output: web,embraceGd
-    sectionitems:
-    - title: Overview
-      url: /data-integrate/embrace/embrace-snowflake-partner.html
-      output: web,embraceGd
-    - title: Tutorials
-      url: /data-integrate/embrace/embrace-snowflake-tutorial.html
-      output: web,embraceGd
   - sectiontitle: Reference
     output: web,refGd
     sectionitems:
@@ -1235,6 +1532,9 @@ entries:
     - title: Geo map reference
       url: /reference/geomap-reference.html
       output: web,refGd
+    - title: REST API reference
+      url: /reference/api/rest-api-reference.html
+      output: web,refGd
     - title: Glossary
       url: /reference/glossary.html
       output: web,refGd
@@ -1250,6 +1550,13 @@ entries:
     - title: Reaggregation in practice
       url: /reference/practice/reaggregation-scenarios.html
       output: web,practGd
+    - title: Liveboard schedule gating conditions in practice
+      url: /reference/practice/pinboard-gating-condition-example.html
+      output: web,practGd
+    - title: Add a hyperlink to a Search
+      url: /reference/practice/pinboard-hyperlink.html
+      output: web,practGd
+
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web

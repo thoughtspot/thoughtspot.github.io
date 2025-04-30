@@ -8,7 +8,7 @@ toc: true
 permalink: /:collection/:path.html
 ---
 
-{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Ask an Expert, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support." %}
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
 
 If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable **Ask an Expert**. This lets them request help from someone in your organization.
 

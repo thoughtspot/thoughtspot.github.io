@@ -1,5 +1,5 @@
 ---
-title: [Edit a Snowflake connection for ThoughtSpot Cloud]
+title: [Edit a Snowflake connection]
 last_updated: 8/11/2020
 toc: true
 sidebar: mydoc_sidebar

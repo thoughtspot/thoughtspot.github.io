@@ -1,14 +1,14 @@
 entries:
   - word: Answer
-    definition: "An Answer is the result of search that the user saves in the form of a visualization, such as a table or a chart."
+    definition: "An answer is the result of search that the user saves in the form of a visualization, such as a table or a chart."
   - word: authentication
     definition: "The process of verifying user credentials, and letting them long into ThoughtSpot."
   - word: data set, dataset
     definition: "A collection of related sets of information that is composed of separate elements, but can be manipulated as a unit by a computer. In the case of tabular data, a data set is comprised of one or more database tables, where every column of a table represents a specific variable, and each row corresponds to a record of the data set."
   - word: impression
-    definition: "An impression registers when a user enters text into a search bar, or loads a *pinboard*."
-  - word: Pinboard
-    definition: "This is a collection of related *Answers*, or search results, that appear as tables or visualizations."
+    definition: "An impression registers when a user enters text into a search bar, or loads a *Liveboard*."
+  - word: Liveboard
+    definition: "This is a collection of related *answers*, or search results, that appear as tables or visualizations."
   - word: search
     definition: "This is a query in ThoughtSpot. We call this search because ThoughtSpot queries enable the user to find business information as efficiently as using an Internet search engine."
   - word: token

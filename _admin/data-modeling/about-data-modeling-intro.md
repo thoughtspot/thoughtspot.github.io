@@ -1,17 +1,16 @@
 ---
-title: [About data modeling]
-
-
-last_updated: tbd
+title: [Data modeling]
+last_updated: 11/05/2021
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 Data modeling allows you to define metadata and other aspects of your data.  For
 example, you can give data columns search friendly names or predefine how they
-can be explored and aggregated. Metadata include such information as **Column
-Names**, **Column Visibility**, **Column** and **Data Definition**, **Column
-Rank** and so forth.
+can be explored and aggregated. Metadata include such information as **Column Names**, **Column Visibility**, **Column** and **Data Definition**, **Column Rank** and so forth.
 
 When you load data, most of this data modeling metadata is set up for you automatically. However, since you know your data best, you can adjust the modeling settings to improve the experience for your users. After
 loading data, you can start searching your data without doing any data modeling,
@@ -47,6 +46,6 @@ Explains how to define a default data model to use for data system-wide.
 Explains the possible data model settings and their accepted values. These are the same for a table or the system.
 - **[Link tables using relationships]({{ site.baseurl }}/admin/data-modeling/about-relationships.html)**  
 Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
-- **[About stickers]({{ site.baseurl }}/admin/data-modeling/stickers-concept.html)**  
- You can create stickers to make it easier for people to find data sources and pinboards.
+- **[About tags]({{ site.baseurl }}/admin/data-modeling/tags.html)**  
+ You can create tags to make it easier for people to find data sources and Liveboards.
 - **[Manage experts or add an expert to your data]({{ site.baseurl }}/admin/data-modeling/add-expert.html)**

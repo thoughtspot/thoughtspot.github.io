@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Geo charts show data on a map by location. They are geo area, geo bubble, and
-geo heatmap charts. And these geo charts can display six types of geographical
+geo heatmap charts. These geo charts can display six types of geographical
 data, depending on territory:
 
 -   Country
@@ -16,7 +16,7 @@ data, depending on territory:
 -   Point (latitude/longitude)
 -   Other sub-nation regions (for international countries)
 
-ThoughtSpot supports maps many countries. Please see the complete list in [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference.html).
+ThoughtSpot supports maps for many countries. Please see the complete list in [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference.html).
 
 ## Displayed Geo data
 
@@ -54,14 +54,10 @@ size of the bubble. Zip code data is a good choice for geo bubble charts.
 
 To paint a geo bubble chart, your search must include a geographical column, or a  latitude and longitude pair.
 
-## Heatmap charts
+## Geo heatmap charts
 
-Heatmap charts are similar to treemap charts: they both use a similar
-system of color-coding to represent data values. However, the heatmap does not
-use size to measure data, and instead requires an additional attribute.
+Geo heatmap charts display the value of the measure through the depth of color of the area. Use geo heatmap charts to see the relative value or density of a measure by location (for example, "sales" relative to "customer zip code").
 
- ![]({{ site.baseurl }}/images/new_heatmap_look.png "Heatmap chart example")
+![Geo heatmap chart example]({{ site.baseurl }}/images/geo_heatmap_example.png "Geo heatmap chart example")
 
-The value of each cell depends on the measure you choose under **Edit chart configuration**.
-
- ![]({{ site.baseurl }}/images/heatmap_value.png "Heatmap value dropdown")
+To use the geo heatmap chart, your search must include a geographical column, or a longitude and latitude pair. ThoughtSpot supports geographical visualizations for many countries; see the [Geo map reference]({{ site.baseurl }}/reference/geomap-reference.html) for details.

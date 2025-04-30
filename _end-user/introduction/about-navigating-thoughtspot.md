@@ -1,81 +1,23 @@
 ---
 title: [Finding your way around]
-last_updated: 11/16/2020
+last_updated: 11/05/2021
 toc: false  
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include content/liveboards-announcement.md %}
+
 These are the different sections in ThoughtSpot:
 
-![Top navigation bar]({{ site.baseurl }}/images/nav-bar-cloud.png "Top navigation bar")
+![Top navigation bar]({{ site.baseurl }}/images/thoughtspot-one-nav-bar.png "Top navigation bar")
 
 ## Home
 
-If ThoughtSpot One is on in your environment, your home page experience is different from the one described in this article. Refer to [ThoughtSpot One home page]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html) to learn more about the ThoughtSpot One home page experience.
+{% include content/ts-one-homepage.md %}
 
-The ThoughtSpot One home page looks like this:
-
-![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
-
-The home page described in this article looks like this:
-
-![Cloud home page]({{ site.baseurl }}/images/cloud-home-page.png "Cloud home page")
-
-Click the ThoughtSpot logo to go to the application home page. At the top of the
-home page you can see a search bar, and several areas that show activity in ThoughtSpot.
-
-<table>
-<colgroup>
-   <col style="width:25%" />
-   <col style="width:75%" />
-</colgroup>
-<thead class="thead" style="text-align:left;">
-   <tr>
-      <th>Label</th>
-      <th>Description</th>
-   </tr>
-</thead>
-<tbody class="tbody">
-  <tr>
-    <th>All time popular<br>Recently trending</th>
-    <td>
-    Shows all-time popular answers and pinboards, by number of views. You can
-    choose between all-time popular, or recently in the last 15 days. Small icons illustrate the type of visualization you can find when you click an item.
-    <br>
-    <img src="{{ "/images/home-trending.png "| prepend: site.baseurl  }}" />
-</td>
-  </tr>
-  <tr>
-    <th>Recently viewed</th>
-    <td>Answers and pinboards you've viewed recently.
-    <br>
-    <img src="{{ "/images/home-recently-viewed.png "| prepend: site.baseurl  }}" />
-
-</td>
-  </tr>
-  <tr>
-    <th>Recent team activity</th>
-    <td>Answers, pinboards, worksheets, and tables people in your company have created or edited recently.
-    <br>
-    <img src="{{ "/images/home-team-activity.png "| prepend: site.baseurl  }}" />
-
-</td>
-  </tr>
-  <tr>
-    <th>Did you know?</th>
-    <td>Contains auto analysis results from SpotIQ. Visible only to users that have the SpotIQ privilege.
-    <br>   
-    <img src="{{ "/images/home-spotiq.png "| prepend: site.baseurl  }}" />
-
-</td>
-  </tr>
-  </tbody>
-</table>
-
-The items shown in these areas are limited to answers, pinboards, worksheets,
-and other objects you have access to. For example, if you don't have the ability
-to use SpotIQ, that option does not appear.
+For more information, see [ThoughtSpot One home page]({{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html).
 
 {: id="search"}
 ## Search
@@ -90,11 +32,11 @@ To learn more about this section, visit [About search]({{ site.baseurl }}/end-us
 Answers are the result of a single search. You can save an answer you want to work more on later, or just keep it for your personal use. Answers are for you alone, until you share them with others.
 
 {: id="pinboards"}
-## Pinboards
+## Liveboards
 
-Pinboards are collections of related search results. You can create your own pinboard or add to an existing one. After saving a pinboard, it can be shared with others or viewed as a slideshow. The **Pinboards** page shows a list of saved pinboards. Click one to view, edit, or share it.
+Liveboards are collections of related search results. You can create your own Liveboard or add to an existing one. After saving a Liveboard, it can be shared with others or viewed as a slideshow. The **Liveboards** page shows a list of saved Liveboards. Click one to view, edit, or share it.
 
-To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
+To learn more about Liveboards, visit [About Liveboards]({{ site.baseurl }}/end-user/pinboards/about-pinboards.html).
 
 {: id="data"}
 ## Data
@@ -113,7 +55,7 @@ The Admin Console is covered in the [IT Ops]({{ site.baseurl }}/admin/ts-cloud/i
 {: id="help-icon"}
 ## Help Icon
 
-You can find information and support resources for ThoughtSpot here. There are short videos, a keyword reference, links to documentation, and other useful materials. You can also find the support contact information and software version number here.
+You can find information and support resources for ThoughtSpot here. There are short videos, a navigation overview, links to documentation, and other useful materials. You can also find the software version number here.
 
 To learn more about this section, visit [More help and support]({{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html#).
 

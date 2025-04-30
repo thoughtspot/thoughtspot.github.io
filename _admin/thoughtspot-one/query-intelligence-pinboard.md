@@ -1,77 +1,111 @@
 ---
-title: [Stats and Trends for Search on Answers Pinboard]
-summary: "The Stats and Trends for Search on Answers Pinboard describes how users are searching for existing Answers and Pinboards. It specifies what users are searching for, where users are successful, and where they are not."
-last_updated: 11/18/2020
+title: [How users are searching answers Liveboard]
+summary: "The How Users are Searching Answers Liveboard describes how users are searching for existing answers and Liveboards. It specifies what users are searching for, where users are successful, and where they are not."
+last_updated: 11/05/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create. The **Stats and Trends for Search on Answers** Pinboard, a default ThoughtSpot Pinboard that is visible to all users, provides this information.
+{% include content/liveboards-announcement.md %}
 
-To access the **Stats and Trends for Search on Answers** Pinboard, search for "Stats and trends for search on answers" while searching among your existing Answers and Pinboards, or search on the **Pinboards** page.
+As an analyst, you need data to analyze to help you empower your users. For example, it is useful to know how your users are searching your existing answers and Liveboards, so you can determine what objects are the most popular and what assets you may need to create. The **How Users are Searching Answers** Liveboard, a default ThoughtSpot Liveboard that is visible to admins, provides this information. Review the [best practices](#best-practices) for this Liveboard.
 
-The **Stats and Trends for Search on Answers** Pinboard contains the following visualizations:
+If you do not have admin privileges and would like to access this Liveboard, ask your ThoughtSpot administrator to share the Liveboard and its underlying worksheet, **Discover Monitoring Data**, with you. Administrators, review the [sharing best practices](#sharing-best-practices) for this Liveboard.
+
+To access the **How Users are Searching Answers** Liveboard, search for "How users are searching" while searching among your existing answers and Liveboards, or search on the **Liveboards** page.
+
+The **How Users are Searching Answers** Liveboard contains the following visualizations:
 - [Number of searches](#number-of-searches)
-- [Number of users](#number-of-users)
-- [% of queries for which no result exists](#no-result-queries)
+- [% of queries with zero results](#no-result-queries)
+- [Last updated time in hours ago](#last-updated)
 - [Top Search Queries on existing answers](#top-search-existing)
-- [Top Search Queries on existing answers for which no result exists](#top-search-existing-no-result)
-- [Top Search Queries on existing answers where the user did not find anything useful](#top-search-not-useful)
-- [Top Users who searched for answers](#top-users)
-- [Weekly Searches on answers](#weekly-searches)
-- [Top Answers](#top-answers)
+- [Top Search Queries with zero results](#top-search-existing-no-result)
+- [Top Search Queries where the user did not click on any result](#top-search-not-useful)
+- [What results users are clicking on](#which-result)
+- [Position at which users are clicking](#click-position)
+- [Worst click position by any user against search queries](#worst-click-position)
+- [Top results users are clicking on](#top-results)
 - [Weekly % of search queries on answers for which no answers exist](#weekly-queries-no-answer)
-- [Weekly Active Users](#wau)
-- [Poorly performing search queries for answers](#poor-performance)
+- [Weekly Searches on answers](#weekly-searches)
+- [What results users are finding useful with autocomplete suggestions](#autocomplete)
 
-{% include note.html content="Some or all of the visualizations on this Pinboard may be empty, if you do not have searching for Answers and Pinboards on in your environment, or if it is newly on, and few users have searched on it." %}
+{% include note.html content="Some or all of the visualizations on this Liveboard may be empty, if you do not have Search on Answers on in your environment, or if it is newly on, and few users have searched on it. You must also enable Mixpanel. To see the statistics on how your organization uses Search Answers, contact ThoughtSpot Support." %}
 
-![Stats and Trends for Search on Answers Pinboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "Stats and Trends for Search on Answers Pinboard")
+![How Users are Searching Answers Liveboard]({{ site.baseurl }}/images/query-intelligence-pinboard.png "How Users are Searching Answers Liveboard")
 
 {: id="number-of-searches"}
 ## Number of searches
-This headline specifies the number of searches users have done on existing Answers and Pinboards in the last 7 days.
-
-{: id="number-of-users"}
-## Number of users
-This headline specifies the total number of users who searched on existing Answers and Pinboards in the last 7 days.
+This headline specifies the number of searches users have done on existing answers and Liveboards in the last 7 days.
 
 {: id="no-result-queries"}
-## % of queries for which no result exists
-This headline specifies the percentage of searches on existing Answers and Pinboards that had no results. The lower the percentage of searches with no results, the better the user experience. If you have a high percentage of queries without results, consider building more Answers and Pinboards, or empower more users to build their own Answers and Pinboards by searching your data.
+## % of queries with zero results
+This headline specifies the percentage of searches on existing answers and Liveboards that had no results. The lower the percentage of searches with no results, the better the user experience. If you have a high percentage of queries without results, consider building more answers and Liveboards, or empower more users to build their own answers and Liveboards by searching your data.
+
+{: id="last-updated"}
+## Last updated time in hours ago
+This headline shows the number of hours it has been since this Liveboard was automatically updated with new data.
 
 {: id="top-search-existing"}
-## Top Search Queries on existing answers
-This visualization lists users' top search queries while searching for Answers in the last 30 days.
+## Top search queries on existing answers
+This visualization lists users' most searched answers and success rates for the last 30 days.
 
 {: id="top-search-existing-no-result"}
-## Top Search Queries on existing answers for which no result exists
-This visualization lists users' top search queries that had no results. These are the most common Answers and Pinboards users search for but do not find. Consider building Answers and Pinboards that answer these questions, or empower more users to build their own Answers and Pinboards by searching your data.
+## Top search queries with zero results
+This visualization lists users' most common search queries for answers with no results. These are the most common answers and Liveboards users search for but do not find. Consider building answers and Liveboards that answer these questions, or empower more users to build their own answers and Liveboards by searching your data.
 
 {: id="top-search-not-useful"}
-## Top Search Queries on existing answers where the user did not find anything useful
-This visualization lists users' top search queries that did not result in a useful Answer or Pinboard. The users did not click on any of the results. Consider building Answers and Pinboards that better answer these questions, or empower these users to build their own Answers and Pinboards by searching your data.
+## Top search queries on existing answers where the user did not click on any result
+This visualization lists users’ top search queries that did not result in a useful answer or Liveboard. The users' queries returned results, but the user did not click on any of the answers. Consider building answers and Liveboards that better answer these questions, or empower these users to build their own answers and Liveboards by searching your data.
 
-{: id="top-users"}
-## Top Users who searched for answers
-This visualization lists the top 10 users who searched for Answers and Pinboards in the last 30 days.
+{: id="which-result"}
+## What results users are clicking on
+This chart describes what search results users are clicking on against each query. The chart contains the top 10 queries from the last 30 days.
 
-{: id="weekly-searches"}
-## Weekly Searches on answers
-This visualization shows the number of searches on Answers and Pinboards on a weekly basis.
+{: id="click-position"}
+## Position at which users are clicking
+Describes where in the list of search results users are clicking, indicating how easily users find answers. The lower the click position, the better. A lower click position means users are able to find answers easily and high up on the list of search results. "0" means users are finding useful results in autocomplete suggestions, i.e. before they could even search.
 
-{: id="top-answers"}
-## Top Answers
-This visualization lists the top Answers and Pinboards that users who searched for Answers and Pinboards found useful in the last 30 days.
+{: id="worst-click-position"}
+## Worst click position by any user against search queries
+Indicates when users have to browse many answers before finding the right one. This data is from the last 30 days. Consider building answers and Liveboards for these queries.
+
+{: id="top-results"}
+## Top results users are clicking on
+This visualization lists the top search results that users found useful in the last 30 days. You can filter this visualization to see results for a specific query.
 
 {: id="weekly-queries-no-answer"}
 ## Weekly % of search queries on answers for which no answers exist
-This visualization shows the percentage of searches on existing Answers and Pinboards that had no results, on a weekly basis. The lower the percentage of searches with no results, the better the user experience. If you have a high percentage of queries without results, consider building more Answers and Pinboards, or empower more users to build their own Answers and Pinboards by searching your data.
+This visualization shows the percentage of searches on existing answers and Liveboards that had no results, on a weekly basis. The lower the percentage of searches with no results, the better the user experience. If you have a high percentage of queries without results, consider building more answers and Liveboards, or empower more users to build their own answers and Liveboards by searching your data.
 
-{: id="wau"}
-## Weekly Active Users
-This visualization shows the total number of users who are searching for Answers and Pinboards, on a weekly basis.
+{: id="weekly-searches"}
+## Weekly searches on answers
+This visualization shows the number of searches on answers and Liveboards on a weekly basis. You can narrow this down by filtering on query text to see the top results for a specific query.
 
-{: id="poor-performance"}
-## Poorly performing search queries for answers
-This visualization lists queries in the last 30 days for which users browsed multiple Answers and Pinboards, before finding the right Answer or Pinboard.
+{: id="autocomplete"}
+## What results users are finding useful with autocomplete suggestions
+Lists the autocomplete query suggestions that users are clicking on. The chart contains the top 10 queries from the last 30 days.
+
+{: id="best-practices"}
+## Best practices
+You can use the Stats and Trends Liveboard to understand your company's use of ThoughtSpot in many ways. Here are a few of the most useful ways to interact with this Liveboard.
+
+1. **Monitor Adoption**:<br>
+    Keep track of the [number of searches](#number-of-searches) on existing answers and Liveboards in the last 7 days, and on the [number of searches on answers on a weekly basis](#weekly-searches).
+
+2. **View what's trending in your organization**:<br>
+    Users' search queries reflect what information is important to them. To understand what data users currently find valuable, view [Top Search Queries on existing answers](#top-search-existing), which has data from the last 30 days.
+
+    You can also see which queries had no satisfactory answer for the user, based on the click position and the count of queries with either no results. Consider building answers and Liveboards that satisfy these queries, or renaming existing objects to match what search terms users use.
+
+3. **Determine what content you should create**:<br>
+    Use this Liveboard to determine what answers and Liveboards you should create for your users. View [Top Search Queries with zero results](#top-search-existing-no-result) and [Top Search Queries where the user did not click on any result](#top-search-not-useful). If a query has zero results, you have no content for this query. Consider building answers and Liveboards that satisfy it. If a user does not click on any results, you may have content for this query, but it may not be discoverable. Consider renaming existing objects to match what search terms users use.
+
+4. **Monitor how users are finding content you created**:<br>
+    As a content creator, you may want to see which search queries result in users clicking on answers and Liveboards you created. In [Top Search Queries on existing answers](#top-search-existing), click **Explore**. Filter by **Result title**, specifying your content's title(s). This filter provides a list of the top search queries that resulted in users clicking on your content, in the last 30 days. Use this information to determine how to slightly alter your descriptions or titles to make your content more discoverable.
+
+5. **Analyze which search results are useful for a specific query**:<br>
+    The [Top results users are clicking on](#top-results) visualization lists the top 10 search results users clicked on in the last 30 days. You may want to find this information for a specific query. In [Top results users are clicking on](#top-results), click **Explore**. Filter by **query text**, specifying the query text you want to analyze.
+
+{: id="sharing-best-practices"}
+### Sharing best practices
+You can easily share this Liveboard with non-admins. Refer to [Share Liveboards]({{ site.baseurl }}/end-user/pinboards/share-pinboards.html). However, keep in mind that this Liveboard has sensitive data. You can see what all your users are searching. You cannot see what a specific user is searching, but generic information may still be sensitive. Exercise caution when sharing this Liveboard with non-admins.

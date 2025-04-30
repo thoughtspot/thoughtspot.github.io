@@ -1,12 +1,18 @@
 ---
 title: [Best Practices for Snowflake connections]
-last_updated: 8/11/2020
+last_updated: 11/18/2021
 toc: true
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After connecting to Snowflake through ThoughtSpot Embrace, you may notice that some things don’t work as you expect. Here are helpful pointers on data modeling: best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.
+After connecting to Snowflake, you may notice that some things don’t work as you expect. Here are helpful pointers on data modeling: best practices for improving the user experience by making small changes to the Snowflake schema in Snowflake, to optimize it for ThoughtSpot.
+
+## Keep default collation settings
+
+Collation settings in Snowflake compare strings based on their UTF-8 character representations. For the best query performance, ThoughtSpot recommends using the default setting of `en-cs` (case-sensitive).
+
+For more information, see <a href="https://docs.snowflake.com/en/sql-reference/collation.html" target="_blank">Collation Support</a> in the Snowflake documentation.
 
 {: id="change-json"}
 ## Change JSON to a relational schema in Snowflake
@@ -43,7 +49,7 @@ To create a view from a Snowflake table that contains JSON, follow these steps:
    The following example uses the sample `WEATHER` data from the **Snowflake Free Trial** sample data:
 
    ```
-CREATE <strong>json_weather_data_view</strong> as
+CREATE json_weather_data_view as
 SELECT
   v:time::timestamp as observation_time,
   v:city.id::int as city_id,
@@ -74,7 +80,7 @@ WHERE date_trunc('month',observation_time) = '2018-01-01'
 LIMIT 20;
    ```
 
-6. In ThoughtSpot Embrace, add a connection to Snowflake, specifically to the view you created.
+6. In ThoughtSpot, add a connection to Snowflake, specifically to the view you created.
 
    See [Add a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html).
 
@@ -162,8 +168,8 @@ ALTER TABLE &lt;table_name&gt; ADD { outoflineUniquePK | outoflineFK }
     <dt>outoflineUniquePK</dt>
     <dd>The primary key in the relationship, with the following definition:<br>
     <pre>outoflineUniquePK ::=
-  [ CONSTRAINT &lt;constraint_name&gt;> ]
-  { UNIQUE | PRIMARY KEY } ( &lt;col_name&gt;> [ , &lt;col_name&gt; , ... ] )
+  [ CONSTRAINT &lt;constraint_name&gt; ]
+  { UNIQUE | PRIMARY KEY } ( &lt;col_name&gt; [ , &lt;col_name&gt; , ... ] )
   [ [ NOT ] ENFORCED ]
   [ [ NOT ] DEFERRABLE ]
   [ INITIALLY { DEFERRED | IMMEDIATE } ]
@@ -177,7 +183,7 @@ ALTER TABLE &lt;table_name&gt; ADD { outoflineUniquePK | outoflineFK }
     <dd>The foreign key in the relationship, with the following definition:<br>
       <pre>outoflineFK :=
     [ CONSTRAINT &lt;constraint_name&gt; ]
-    FOREIGN KEY ( &lt;col_namev [ , &lt;col_name&gt; , ... ] )
+    FOREIGN KEY ( &lt;col_name&gt; [ , &lt;col_name&gt; , ... ] )
     REFERENCES &lt;ref_table_name&gt; [ ( &lt;ref_col_name&gt; [ , &lt;ref_col_name&gt; , ... ] ) ]
     [ MATCH { FULL | SIMPLE | PARTIAL } ]
     [ ON [ UPDATE { CASCADE | SET NULL | SET DEFAULT | RESTRICT | NO ACTION } ]

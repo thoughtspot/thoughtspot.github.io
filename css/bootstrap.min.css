@@ -7,6 +7,56 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
+@font-face {
+  font-family: "Optimo-Plain";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Optimo Thin"),
+    local("Optimo-Thin"),
+    url(../fonts/Plain-Thin.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Optimo-Plain";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("Optimo Medium"),
+    local("Optimo-Medium"),
+    url(../fonts/Plain-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Optimo-Plain";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("Optimo Italic"),
+    local("Optimo-Italic"),
+    url(../fonts/Plain-RegularIta.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Optimo-Plain";
+  font-style: italic;
+  font-weight: 500;
+  src:
+    local("Optimo-Medium-Italic"),
+    local("Optimo-Medium-Italic"),
+    url(../fonts/Plain-MediumIta.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Optimo-Plain";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("Optimo-Bold"),
+    local("Optimo-Bold"),
+    url(../fonts/Plain-Bold.woff) format("woff");
+}
+
 html {
     font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -1911,8 +1961,8 @@ kbd {
     padding: 2px 4px;
     font-size: 90%;
     color: #fff;
-    background-color: #333;
-    border-radius: 3px;
+    background-color: #2770F1;
+    border-radius: 9px;
 }
 
 kbd kbd {

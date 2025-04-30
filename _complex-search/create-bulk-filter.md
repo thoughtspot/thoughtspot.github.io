@@ -23,18 +23,20 @@ spreadsheet.
 1. In table view, select multiple cells by clicking and dragging.
 2. Right-click and choose **Copy to clipboard**.
 
-     ![]({{ site.baseurl }}/images/bulk_filter_copy_to_clipboard.png "Copy to the Clipboard")
+     ![Copy to clipboard]({{ site.baseurl }}/images/bulk_filter_copy_to_clipboard-new.png "Copy to the Clipboard")
 
-3. Hover over the column header you want to filter, and click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
+3. Hover over the column header you want to filter, and click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
 
 4. Choose whether you want your bulk filter to **Include** or **Exclude** values.
 
 5. Click **Add values in bulk**:
 
-     ![]({{ site.baseurl }}/images/bulk_filter_add_values_in_bulk.png "Add values in bulk")
+     ![]({{ site.baseurl }}/images/bulk_filter_add_values_in_bulk-new.png "Add values in bulk")
 
 6. Paste the values into the bulk filter box.
 
-     ![]({{ site.baseurl }}/images/bulk_filter_paste_values.png "Paste values into the bulk filter box")
+     ![]({{ site.baseurl }}/images/bulk_filter_paste_values-new.png "Paste values into the bulk filter box")
 
-7. Click **Done**.
+7. Click **Add values**.
+
+7. Click **Apply**.

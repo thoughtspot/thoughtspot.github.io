@@ -1,10 +1,12 @@
 ---
 title: [Change axis options]
-last_updated: 2/28/2020
+last_updated: 1/14/2021
 summary: "In ThoughtSpot, you can start changing all axes options by clicking on the axis, directly in the chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include note.html content="Certain elements of chart configuration are part of the new Answer experience. The new Answer experience is in Beta and off by default, but the option to turn it on or off individually is on by default. These elements include improved conditional formatting for measures in charts and conditional formatting for measures in pivot tables. If the new Answer experience is off, you do not see these capabilities. You can turn it on or off individually from the <strong>Experience manager</strong> panel in your profile. If that option is not available, contact your administrator." %}
+
 To change axis, you can click the axis itself. This opens the detail axis customization menu in the chart.
 
 You can make the following changes to the axis:
@@ -82,6 +84,7 @@ To remove a filter from the chart, click the **x** icon on the filter tile.
 
 {: id="conditional-formatting"}
 ## Apply conditional formatting
+
 {% include content/conditional-formatting-chart.md %}
 
 {: id="sort"}

@@ -1,82 +1,132 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
-<h3>New Home page</h3>
-
-The ThoughtSpot <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html">Home page</a> allows you to access all your essential actions as a business user. You can:
-
 <ul>
-<li>Search across existing Answers and Pinboards</li>
-<li>Search your data to create new Answers and Pinboards</li>
-<li>View objects you viewed recently</li>
-<li>View trending Pinboards and Answers</li>
-<li>Filter existing objects by favorite, author, tag, or type of object</li>
-<li>Sort existing objects by author, views, or most recently viewed</li>
-<li>Bulk mark objects as favorites</li>
+<li><a href="{{ site.baseurl }}#november-cloud-2021-first">For the First user</a></li>
+<li><a href="{{ site.baseurl }}#november-cloud-2021-analyst">For the Analyst</a></li>
+<li><a href="{{ site.baseurl }}#november-cloud-2021-business-user">For the Business User</a></li>
+<li><a href="{{ site.baseurl }}#november-cloud-2021-data-engineer">For the Data Engineer</a></li>
+<li><a href="{{ site.baseurl }}#november-cloud-2021-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#november-cloud-2021-developer">For the Developer</a></li>
 </ul>
 
-<h3>Search existing Answers</h3>
-In addition to the existing Search over data, this release gives business users easy <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search over existing Answers and Pinboards</a>. This  meets the users' information needs by making Answers searchable, sortable, and applying filters on relevance, recency, number of views, authorship, metrics used, and so on.
+<h3><a id="november-cloud-2021-first"></a>For the First User</h3>
 
-<h3>Stats and Trends for Search on Answers Pinboard</h3>
-Use this default <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Pinboard</a> to analyze how users are searching your existing Answers and Pinboards, so you can determine what objects are the most popular and what assets you may need to create.
-
-<h3>Disable Answer Search for specific Worksheets</h3>
-When users search for existing Answers and Pinboards, the default experience is to search across all Worksheets that they have access to. You may not want users to search for existing Answer and Pinboards built on certain Worksheets that are works in progress or deprecated. You can disable searching for Answers on specific Worksheets. Refer to <a href="{{ site.baseurl }}/admin/thoughtspot-one/disable-discover-for-worksheet.html">Disable Answer Search</a>.
-
-<h3>Linked Pinboard filters</h3>
-You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Pinboard level. This is useful when you have a Pinboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets.<br><br>
-
-Refer to <a href="{{ site.baseurl }}/complex-search/linked-filters.html">Linked Pinboard filters</a>.<br>
-
-<h3>Selective Pinboard filters</h3>
-You can now configure Pinboard filters to apply to specific visualizations that you choose. This is useful when you would like to filter some, but not all, visualizations in a Pinboard.<br><br>
-
-Refer to <a href="{{ site.baseurl }}/complex-search/selective-filters.html">Selective Pinboard filters</a>.
-
-<!--<h3>Enhanced data modeling capabilities</h3>
-This release enables new data modeling capabilities. You can now:
-<ul>
-<li>Join a View to a table</li>
-<li>Build a Worksheet on top of a View</li>
-</ul>-->
-
-<h3>Geomaps</h3>
-ThoughtSpot's Geomaps now have more detailed geographic and infrastructural boundaries by default. This includes road names, cities, and so on.<br>
-
-ThoughtSpot supports maps of many countries. See the complete list in the <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.
-
-<h3>Answer V2</h3>
-
-<p>Answer V2 is in Beta. It is off by default in ThoughtSpot Cloud clusters. The Answer V2 feature set contains these elements:</p>
-
-  <dl>
-  <dlentry>
-    <dt>Improved Formula Editor</dt>
-    <dd>The new <a href="{{ site.baseurl }}/complex-search/how-to-add-formula.html">Formula Editor</a> includes multi-line support, and a cleaner, bigger, and more intuitive interface.</dd></dlentry>
-  <dlentry>
-    <dt>Analyst-authored queries</dt>
-    <dd><a href="{{ site.baseurl }}/admin/ts-cloud/analyst-authored-queries.html">Search Assist: Analyst-authored queries</a> enable Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist.html">Search Assist</a> sample queries based on their company data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
-  <dlentry>
-    <dt>Table configuration enhancements</dt>
-    <dd><a href="{{ site.baseurl }}/end-user/search/about-tables.html">Table configuration enhancements</a> in this release include conditional and number formatting for table summaries. Also, conditional formatting for attributes and measures in table cells is now more intuitive and robust.</dd></dlentry>
+<dl>
+<dlentry id="getting-started">
+<dt>Getting started with ThoughtSpot Cloud</dt>
+<dd>The first user on the account has to complete a series of steps before other people can start using ThoughtSpot with your organization’s data. For these instructions, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-getting-started.html">Getting Started with ThoughtSpot Cloud</a>.
+</dd>
+</dlentry>
 </dl>
 
-The following features are not available in the Beta version of Answer V2. To use these features, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a> to turn Answer V2 off for your company. You can turn Answer V2 feature set on or off individually, from the <strong>Data</strong> panel on the <strong>Search</strong> page: select <strong>Switch to classic</strong> to turn it off, or select <strong>Try Beta experience</strong> to turn it on.
+<h3><a id="november-cloud-2021-analyst"></a>For the Analyst</h3>
 
-Answer V2 features and limitations currently only affect searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. For example, if Answer V2 is on, the new Formula Editor interface appears when you add a formula to a search, but not when you add a formula to a Worksheet. Similarly, with Answer V2 on, you can see existing Pivot tables in your Pinboards, but you cannot create new Pivot table visualizations.
+<dl>
 
+<!-- removing these features for now per alok. may add back in
+
+<dlentry id="spotapps">
+<dt>ServiceNow SpotApp <span class="label label-beta">Beta</span></dt>
+<dd><p>SpotApps are ThoughtSpot's new out-of-the-box solution templates built for specific use cases and data sources. They are built on Blocks, which are pre-built pieces of code that are easy to download and implement directly from the product. This release introduces the ServiceNow SpotApp and Analytics Blocks. Analytics Blocks include pre-built Worksheet, Answer, and Liveboard Blocks.</p>
+<p>The ServiceNow SpotApp mimics the ServiceNow data model. After you connect to your ServiceNow data in your cloud data warehouse, ThoughtSpot maps that data to SpotApp columns, and creates pre-built but still customizable worksheets, answers, and Liveboards, based on your ServiceNow data.</p>
+<p>Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</p>
+<p>This feature is in beta and off by default. It is part of the <a href="#data-tab">Data tab redesign</a> beta. To enable SpotApps and the Data tab redesign, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+</dlentry>
+
+<dlentry>
+<dt>SQL-based views <span class="label label-beta">Beta</span></dt>
+<dd><p>This release introduces beta support for SQL-based views. Users can create views based on SQL queries, and use those views as data sources. This type of view has the same functionality as a view based on searching your data.</p>
+<p>This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+</dlentry>
+
+<dlentry id="data-tab">
+<dt>Data tab redesign <span class="label label-beta">Beta</span></dt>
+<dd><p>This release redesigns the <strong>Data</strong> section of the product. To access this part of the product, select <strong>Data</strong> from the top navigation bar. The redesign introduces several new features, such as SQL-based views and SpotApps, and makes the UI more intuitive.</p>
+<p>This feature is in beta and off by default. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+</dlentry>
+
+-->
+
+<dlentry id="auto-answer">
+<dt>Automated answer creation in Setup</dt>
+<dd><p>We simplified the steps to create Search visualizations during Setup. Now, you can select measures, attributes and date columns and immediately view suggested answers and visualizations. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/automated-answer-creation.html">Create answers in Setup</a>.</p></dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="november-cloud-2021-business-user"></a>For the Business User</h3>
+
+<dl>
+
+<dlentry id="liveboard-announcement">
+<dt></dt>
+<dd><p>Starting in December 2021, ThoughtSpot refers to Liveboards instead of pinboards. With Liveboards, you can have an interactive experience and get granular insights through live queries on cloud data, tailored for you. You can use Livebaords to iterate, explore, and drill into more insights, and tell a continuously evolving data story.<br/>
+ThoughtSpot plans to support for several releases, and then retire, internal processes and external methods that use the older naming convention.</p></dd>
+</dlentry>
+
+<dlentry id="session-validity">
+<dt>User session timeout and validity</dt>
+<dd>ThoughtSpot increased the duration of <strong>idle session timeouts</strong> and the <strong>maximum session validity</strong>, when you click <strong>Remember me</strong> on the login screen. There is no change to the duration when you do not click <strong>Remember me</strong>.
 <ul>
-<li><a href="{{ site.baseurl }}/end-user/search/ask-an-expert.html">Ask an Expert</a></li>
-<li><a href="{{ site.baseurl }}/end-user/r-scripts/about-r-in-thoughtspot.html">R scripts</a></li>
-<li><a href="{{ site.baseurl }}/end-user/search/about-attributes-and-measures.html#query-details">Query visualizer</a></li>
-<li><a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a></li>
-<li><a href="{{ site.baseurl }}/end-user/search/about-sankey-charts.html">Sankey charts</a></li>
-</ul>
+<li>Idle session timeout: If a user is not active for 14 days, ThoughtSpot logs the user out, and the user must enter their login credentials again.</li>
+<li>Maximum session validity: ThoughtSpot forces the user's session to expire after 14 days, even if they are active throughout that period.</li> </ul>
+<p>This change <strong><em>only</em></strong> affects new clusters created on the November Cloud release and later. Clusters created on the October Cloud release and earlier have the old experience, even after they update to the November Cloud release. In the old experience, the <strong>idle session timeout</strong> is 60 minutes with <strong>Remember me</strong>, and 30 minutes without it. The old <strong>maximum session validity</strong> is 7 days with <strong>Remember me</strong>, and not available without it.</p>
+<p>To increase idle session timeouts or maximum session validity for clusters created on the October Cloud release and earlier, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd></dlentry>
 
-<h3>Customize ThoughtSpot Help</h3>
-You can now tailor the ThoughtSpot Help menu to your organization by customizing it from the Admin Console. When you configure these Help settings, you set system-wide defaults for all your users.
+<dlentry id="search-suggestions">
+<dt>Search suggestions</dt>
+<dd><p>Search suggestions are now GA. When you <a href="{{ site.baseurl }}/end-user/search/search-answers.html">search across existing answers and Liveboards</a>, ThoughtSpot now offers search suggestions in the search bar, based on your past searches and popular searches in your environment, in addition to object suggestions. For example, if you type <code>Sal</code> in the search bar, it might now result in search suggestions like <strong>Sales</strong> and <strong>Sales this year</strong>, in addition to object suggestions like an existing Liveboard called <strong>Sales in the east last year</strong>.</p>
+<p>ThoughtSpot provides search suggestions before you begin typing, but not object suggestions.</p>
+</dd>
+</dlentry>
 
-Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Customize ThoughtSpot Help</a>.
+</dl>
 
-<h3>User Adoption Pinboard</h3>
-The <a href="{{ site.baseurl }}/admin/ts-cloud/user-adoption.html">User Adoption Pinboard</a> is now accessible from the Admin Console.
+<h3><a id="november-cloud-2021-data-engineer"></a>For the Data Engineer</h3>
+<dl>
+<dlentry id="connections-snowflake-azure-ad-oauth">
+<dt>Azure AD external OAuth for Snowflake</dt>
+<dd>Snowflake now supports external OAuth through Microsoft Azure AD. See <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-azure-ad-oauth.html">Configure Azure AD external OAuth for a Snowflake connection</a>.</dd>
+</dlentry>
+
+<!-- removing for now per alok
+<dlentry id="connections-flow-data-portal">
+<dt>New connection creation flow with data tab redesign</dt>
+<dd>If you have the new redesigned data tab enabled, you'll see the new Data Portal page. To start creating a connection, you click <strong>Connections</strong> and then click the connection type you want to create. Also with the new data tab enabled, you have the option to create a connection without selecting tables or columns. On the Data Portal page you can create a SQL-based view from a connection.</dd>
+</dlentry>
+
+-->
+
+</dl>
+
+<h3><a id="november-cloud-2021-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+
+<dl>
+
+<dlentry id="saml">
+<dt>SAML assertion validity</dt>
+<dd>ThoughtSpot now supports 2 methods to increase the duration of validity for your <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html#saml-assertion">SAML assertion</a>: the <code>SessionNotOnOrAfter</code> attribute and the <code>maxAuthenticationAge</code> parameter. <code>SessionNotOnOrAfter</code> overrules <code>maxAuthenticationAge</code> if both are present. If your IDP does not support use of <code>SessionNotOnOrAfter</code>, remove that attribute from your IDP assertion and <a href="{{ site.baseurl }}/admin/misc/contact.html">ask ThoughtSpot Support</a> to enable <code>maxAuthenticationAge</code>.</dd>
+</dlentry>
+
+<dlentry id="multiple-idp">
+<dt>Multiple Identity Providers for SAML login</dt>
+<dd>You can now configure SAML SSO login for more than one Identity Provider (IDP). You may have multiple groups of users who need to log into ThoughtSpot but are managed by separate IDPs. To configure this, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</dd>
+</dlentry>
+
+<dlentry id="vpn">
+<dt>OpenVPN support for Google BigQuery and Azure Synapse connections</dt>
+<dd>ThoughtSpot now supports secure access from ThoughtSpot Cloud to your data in Google BigQuery and Azure Synapse, through your OpenVPN server. ThoughtSpot supports the following OpenVPN server implementations:
+<ul><li><a href="https://openvpn.net/community-downloads/" target="_blank">OpenVPN Community Edition</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-openvpn-clients" target="_blank">Azure VPN</a></li>
+<li><a href="https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html" target="_blank">AWS Client VPN</a></li></ul>
+To learn how to configure a VPN connection for your Google BigQuery or Azure Synapse connection, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/openvpn-gbq.html">OpenVPN for Google BigQuery</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/openvpn-synapse.html">OpenVPN for Azure Synapse</a>.</dd></dlentry>
+
+</dl>
+
+<h3><a id="november-cloud-2021-developer"></a>For the Developer</h3>
+
+<dl>
+<dt>ThoughtSpot Everywhere</dt>
+<dd>
+For information about the new features and enhancements introduced in this release, refer to <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>. </dd>
+</dl>

@@ -1,7 +1,112 @@
-## This redirects to other doc branches
 
+## This redirects to other doc branches
 [[redirects]]
-  from = "/tscloud6/*"
+  from = "/ts7.oct.cl/*"
   to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.aug.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.jul.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.jun.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.may.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.apr.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.april.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.mar.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.feb.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts6.dec.cl/*"
+  to = "https://cloud-docs.thoughtspot.com/:splat"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.feb.cl/data-integrate/embrace/embrace-snowflake-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-snowflake-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-adw-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-adw-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-databricks-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-databricks-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-redshift-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-redshift-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-gbq-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-gbq-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-synapse-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-synapse-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-teradata-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-teradata-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.sep.cl/data-integrate/embrace/embrace-hana-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.april.cl/admin/ts-cloud/monitor.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/monitor.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/ts7.oct.cl/data-integrate/embrace/embrace-snowflake-reference.html"
+  to = "https://cloud-docs.thoughtspot.com/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference."
   status = 200
   force = true # COMMENT: ensure that we always redirect
