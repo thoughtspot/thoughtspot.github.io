@@ -88,7 +88,7 @@ and networking capacity you should be running for your instances.
       <td><p dir="ltr">Any</p></td>
       <td><p dir="ltr">180 GB</p></td>
       <td><p dir="ltr">n1-standard-96</p></td>
-      <td><p dir="ltr">96/330</p></td>
+      <td><p dir="ltr">96/360</p></td>
 		<td><p dir="ltr">250 GB</p></td>
 		<td><p dir="ltr">2X 1 TB</p></td>
     </tr>

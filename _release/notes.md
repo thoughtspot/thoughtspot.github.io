@@ -31,6 +31,10 @@ directly:
 If you are running a different version, you must do a multiple pass upgrade.
 First, upgrade to one of the above versions, and then to the 5.2.2 release.
 
+## Mobile App
+
+Version 1.1 of the ThoughtSpot mobile app is now available! For more information, see [ThoughtSpot mobile overview]({{ site.baseurl }}/admin/mobile/use-mobile.html). 
+
 {: id="522-fixed"}
 ## 5.2.2 Fixed Issues
 

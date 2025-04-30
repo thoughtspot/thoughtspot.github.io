@@ -24,8 +24,7 @@ for a sandbox environment but is insufficient for a production environment.
    The VM template, by default, captures a 72-core configuration. If your
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
    cores (for a physical host with n cores) to fully take advantage of computing
-   power of the physical host. Extra cores help performance. If your hypervisor
-   has 72 hyperthreaded cores, ThoughtSpot VM should be configured to use 70.
+   power of the physical host. Extra cores help performance.
 
    You should aim to allocate 490 GB or more RAM.
 
