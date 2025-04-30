@@ -1,7 +1,8 @@
 ---
 title: [Encryption of data in transit within a cluster]
-summary: ThoughtSpot can encrypt data in transit within a cluster.
-last_udpated: 11/15/2019
+keywords: tbd
+tags: tbd
+summary:
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---  

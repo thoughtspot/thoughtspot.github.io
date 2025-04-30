@@ -1,4 +1,0 @@
-baseurl : /6.1
-exclude :
-  - 6.1
-branch_url : /6.1

@@ -1,43 +1,41 @@
 ---
 title: [GCP configuration options]
-summary: "ThoughtSpot can be deployed using several different GCP instance types."
-last_updated: 1/9/2019
+keywords: GCP, configuration
+tags: [performance]
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot can be deployed in your GCP environment by deploying compute (VM) instances in your VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot:
-- Mode 1: Compute VMs + SSD Persistent Disk storage-only
-- Mode 2: Compute VMs + SSD Persistent Disk and Google Cloud Storage (GCS).
+ThoughtSpot has performed extensive testing on various Google Cloud Platform
+(GCP) configurations for best performance, load balancing, scalability, and
+reliability.
 
-For more information about Persistent Storage, see [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs){:target="_blank"} in Google's Cloud documentation.
+You can find information here on which configuration of memory, CPU, storage,
+and networking capacity you should be running for your instances.
 
-For more information about Google Cloud Storage, see [Cloud Storage Buckets](https://cloud.google.com/compute/docs/disks/#gcsbuckets){:target="_blank"} in Google's Cloud documentation.
+## Hardware configurations
 
-All GCP VMs (nodes) in a ThoughtSpot cluster must be in the same zone
-(and, therefore, also in the same region). ThoughtSpot does not support deploying VMs (nodes) of the same cluster across different zones. For more information, see [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/){:target="_blank"} in Google's Cloud documentation.
+GCP provides several storage types and media options. ThoughtSpot requires [attached storage](https://cloud.google.com/compute/docs/disks/) and persistent disks. The ThoughtSpot reference implementation uses the Google `n1-highmem-64`, which is on the higher end of the [High Memory Machine types](https://cloud.google.com/compute/docs/machine-types#highmem).
 
-## ThoughtSpot GCP instance types
+The following table summarizes the reference implementation machine type, along with minimum required CPU, memory capacity, and storage.
 
-### VMs with Persistent Disk-only storage
 
-![]({{ site.baseurl }}/images/persistent-storage-ssd.svg "GCP SSD-only Persistent Storage")
+|Machine Type | Storage Type           | Data Capacity             |vCPUs|System Memory |
+|-------------|---------------------   | -----------------         |-----|--------------|
+|n1-highmem-64|zonal SSD attached disks|1x250GB plus two 1TB disks | 64  |416 GB        |
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume | Required root volume capacity |
-| --- | --- | --- |--- | --- |
-| 208 GB | n1-highmem-64 | 64/416 | 2x 1 TB | 200 GB for each node |
-| 312 GB | n1-highmem-96 | 96/624 | 2x 1.5 TB | 200 GB for each node |
-| 100 GB | n1-highmem-32 | 32/208 | 2X 400 GB | 200 GB for each node |
-| 20 GB | n1-highmem-16 | 16/122 | 2X 400 GB | 200 GB for each node |
-| 180 GB | n1-standard-96 | 96/330 | 2X 1 TB | 200 GB for each node |
+ThoughtSpot uses only persistent storage options. Instance storage (also known
+as "local storage") is not used for ThoughtSpot deployments on GCP.
 
-### VMs with Persistent Disk and Google Cloud storage
+## Data capacity per node
 
-![]({{ site.baseurl }}/images/persistent-storage-ssd-gcs.svg "GCP SSD and GCS Persistent Storage")
+Each [GCP n1-highmem-64 machine](https://cloud.google.com/compute/docs/machine-types#highmem)
+has 416 GB of memory and can accommodate ~200 GB of ThoughtSpot dedicated data.
+This size refers to the amount of data in the CSV files you will be loading into
+ThoughtSpot. The 200 GB number takes into account all replication of data done
+automatically by ThoughtSpot to provide redundancy and fast performance.
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM <br>Zonal Persistent SSD Disk volume | Required root volume capacity |
-| --- | --- | --- |--- | --- |
-| 208 GB | n1-highmem-64 | 64/416 | 1X 500 GB | 200 GB for each node |
-| 312 GB | n1-highmem-96 | 96/624 | 1X 500 GB | 200 GB for each node |
-| 100 GB | n1-highmem-32 | 32/208 | 1X 500 GB | 200 GB for each node |
-| 20 GB | n1-highmem-16 | 16/122 | 1X 500 GB | 200 GB for each node |
-| 180 GB | n1-standard-96 | 96/330 | 1X 500 GB | 200 GB for each node |    
+You can start with the minimum platform described here, and add capacity by
+adding nodes and disks as needed. You can also choose to start off with more
+data capacity, as long as you know the best fit configuration for your data
+volume.

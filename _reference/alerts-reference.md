@@ -1,7 +1,7 @@
 ---
 title: [Alerts code reference]
-summary: Learn about the alerts ThoughtSpot may generate.
-last_updated: 11/19/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

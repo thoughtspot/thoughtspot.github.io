@@ -1,11 +1,12 @@
 ---
 title: [Data and object security]
-summary: ThoughtSpot provides many features for protecting data.
-last_updated: 11/15/2019
+keywords: "data,security,row level security,privileges"
+tags: [rls,cls,security]
+last_updated: 08/13/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
+ThoughtSpot provides many features for protecting data.
 
 ## Object Security
 

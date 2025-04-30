@@ -1,76 +1,59 @@
 ---
 title: [Work with snapshots]
-last_updated: 3/10/2020
-toc: true
-summary: "A snapshot is a point-in-time image of your running cluster. You can use a snapshot to restore the cluster to a specific point in time. In this section, we describe how to work with the default snapshot configuration that is enabled on every cluster, and how to make manual snapshots."
+keywords: backup,snapshot
+tags: [performance]
+last_updated: tbd
+summary: "A snapshot is a point-in-time image of your running cluster you can use to restore the cluster back to a specific point in time. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To work with snapshots, use the `tscli` command line interface.
+In this section, you learn how to work with the default snapshot configuration
+that is enabled on ever cluster and how to take manual snapshots of your own.
 
-{% include warning.html content="Backups rely on the snapshot system, so you must never disable the periodic snapshot system. If you disable periodic snapshots and enable periodic backups, the backups either fail or use an outdated snapshot." %}
-
-{: id="manual-snapshot"}
 ## Create a manual snapshot
 
-You must create a snapshot before making any changes to your cluster's environment,
-loading a large amount of data, or changing the structure of a table. ThoughtSpot supports up to 20 manual snapshots. You must clear them to create new snapshots. To delete a snapshot, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
+You should create a snapshot before making any changes to the environment,
+loading a large amount of new data, or changing the structure of a table. You
+can have up to 20 manual snapshots at a time, after which, you have to clear one
+before you are able to create another. If you need to delete a snapshot, contact
+ThoughtSpot Support.
 
-ThughtSpot generates a snapshot in approximately 20 seconds, depending on the size of the cluster. To restore from a snapshot, contact [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
+{% include note.html content="When you upgrade, all existing snapshots from the previous version of ThoughtSpot will become manual snapshots." %}
 
-{% include note.html content="During an upgrade, all snapshots from the previous version of ThoughtSpot become manual snapshots." %}
+Taking a snapshot is fast, about 20 seconds. It happens invisibly in the
+background of a running cluster.  If you would like to restore from a snapshot
+instead, contact ThoughtSpot Support.
 
-{: id="snapshot-tscli"}
-### Create a snapshot using tscli
-
-To create a snapshot using `tscli`, follow these steps:
+To create a snapshot:
 
 1. Log in to the Linux shell using SSH.
+2. Initiate a snapshot, providing a name and reason for creating it: Snapshot names must be 44 characters or less.
 
-2. Create a snapshot with the command `tscli snapshot create`, specifying the following parameters:
-
-    * `name`: Specify a name for the snapshot. Note that snapshot names must not exceed 44 characters.
-    * `reason`: Specify a reason for creating the snapshot.
-    * `ttl`: Specify the snapshot's time to live, in days. If you specify `ttl` as `4`, the system deletes the snapshot after four days.
 
     ```
     $ tscli snapshot create <name> <reason> <ttl>
     ```
 
-3. Check that the snapshot was created successfully by checking the directory listing:
+3. Check that the snapshot was created:
 
     ```
     $ tscli snapshot ls
     ```
-    Your snapshot should appear in the list of snapshots that `tscli snapshot ls` generates.
 
-{: id="snapshot-policy"}
-## Configure periodic snapshots with snapshot policy
 
-Each ThoughtSpot cluster automatically creates periodic snapshots, based on its default snapshot policy.
-The default snapshot policy is enabled for every cluster. You can display the current policy for periodic snapshots.
-You can also change this policy.
+## Configure periodic snapshots
 
-{: id="snapshot-policy-view"}
-### View snapshot policy
+By default, each ThoughtSpot cluster is configured to take automatic, periodic
+snapshots of your cluster. This section explains how to learn more about the
+periodic snapshots in your cluster.
 
-To view your current periodic snapshot policy, follow these steps:
-
-1. Log in to the Linux shell using SSH.
-
-    ```
-    $ ssh admin@<cluster-IP>
-    ```
-
-2. Enter `tscli snapshot-policy show <name>` command to view the policy.
-
-In the following example, the policy starts at midnight on Sunday. It retains the snapshots from the previous three 4-hour intervals, and two snapshots from two of the previous 4-hour
-intervals. Here, ThoughtSpot retains 7 periodic snapshots overall. For
-detailed information about understanding the schedule, see [Understand
-backup/snapshot schedules](how-to-create-a-schedule.html).  
+The default snapshot policy is enabled for every cluster. You can use the `tscli
+snapshot-policy show` command to display the current policy for periodic
+snapshots.
 
 ```
-$ tscli snapshot-policy show
+
+[admin@dogfood1 ~]$ tscli snapshot-policy show
 schedule {
   period {
     number: 1
@@ -112,50 +95,30 @@ enabled: true
 
 ```
 
-{: id="snapshot-policy-update"}
-### Update the snapshot policy
+This policy starts  at midnight on Sunday. It retains the snapshots from the
+last three 4-hour intervals and two snapshots from two of the previous 4 hour
+intervals. That means, there are 7 periodic snapshots retained overall. For
+detailed information about understanding the schedule, see [Understand
+backup/snapshot schedules](how-to-create-a-schedule.html).
 
-Do not change the default policy, unless it is recommended by [ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html#).
+You shouldn't change this default policy unless instructed to by support. If you
+have to adjust it for some reason, you can use, `tscli snapshot-policy update`
+command. This opens the current policy in an editor. Your policy should never
+retain more than 20 snapshots at any point in time. Exceeding this number can
+impact cluster performance.
 
-{% include note.html content="Your policy must hold no more than 20 snapshots at any time. Exceeding this number impacts cluster performance." %}
+You cannot delete the snapshot policy. However, you can disable the policy by
+executing the`tscli snapshot-policy disable` command. And you can re-enable it
+by running, `tscli snapshot-policy enable`.
 
-To update your current periodic snapshot policy, follow these steps:
-1. Log in to the Linux shell using SSH.
-    ```
-    $ ssh admin@<cluster-IP>
-    ```
-2. Enter `tscli snapshot-policy update`.
-    ```
-    $ tscli snapshot-policy update
-    ```
-3. In the editor, make changes to the current policy, and save them.
+{% include warning.html content="Backups rely on the snapshot system. For this
+reason, you should never disable the periodic snapshot system. For example, if
+you have disabled the periodic snapshots and periodic backups are enabled, then
+the periodic backup may use a very outdated snapshot or it may fail all
+together." %}
 
-You cannot delete the snapshot policy. However, you can either disable or enable it.
 
-{: id="snapshot-policy-dispable"}
-### Disable the snapshot policy
-
-To disable your current periodic snapshot policy, follow these steps:
-
-1. Log in to the Linux shell using SSH.
-    ```
-    $ ssh admin@<cluster-IP>
-    ```
-2. Enter `tscli snapshot-policy disable`.
-    ```
-    $ tscli snapshot-policy disable
-    ```
-
-{: id="snapshot-policy-enable"}
-### Enable the snapshot policy
-
-To enable a specific periodic snapshot policy, follow these steps:  
+To check your current periodic snapshot policy:
 
 1. Log in to the Linux shell using SSH.
-    ```
-    $ ssh admin@<cluster-IP>
-    ```
-2. Enter `tscli snapshot-policy enable`.
-    ```
-    $ tscli snapshot-policy disable
-    ```
+2. Enter `tscli snapshot-policy show` to view the policy.

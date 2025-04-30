@@ -1,6 +1,7 @@
 ---
 title: [TQL reference]
-summary: Learn the TQL commands.
+tags: [TQL,bestpractices]
+keywords: tbd
 last_updated: 2/25/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -465,7 +466,7 @@ WHERE "borough" = 'staten isl' AND city = 'NY';</code></p>
             <p><code>DELETE FROM &lt;table&gt; [WHERE...]</code></p>
          </td>
          <td><p>Deletes rows from a table that match optionally provided predicates.
-            Predicates have the form <code>column = value</code> connected by the <code>AND</code> keyword. When specifying dates, use <a href="https://www.epochconverter.com/">epoch values</a>. Other date formats can result in error and unwanted deletion of data from the table.
+            Predicates have the form <code>column = value</code> connected by the <code>AND</code> keyword.
          For example.</p>
 
 <p><code>DELETE FROM "vendor" WHERE "name" = 'Joey Smith' AND "vendorid" =
@@ -478,7 +479,7 @@ WHERE "borough" = 'staten isl' AND city = 'NY';</code></p>
 ## Constraints and relationships
 
 Constraints and relationships in ThoughtSpot are used to define the
-relationships between tables (how they can be joined). However, constraints
+relationships between tables (i.e. how they can be joined). However, constraints
 are not enforced, as they would be in a transactional database. You can define
 the following constraints when creating a table with <code>CREATE TABLE</code>, or add them
 to an existing table using the <code>ADD CONSTRAINT</code> syntax:

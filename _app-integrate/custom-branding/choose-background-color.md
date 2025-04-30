@@ -1,7 +1,7 @@
 ---
 title: [Choose a background color]
-summary: You can customize ThoughtSpot's background color to match your company's theme.
-last_updated: 11/18/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

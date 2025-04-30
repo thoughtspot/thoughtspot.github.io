@@ -1,6 +1,6 @@
 ---
 title: [Save a search as a view]
-
+keywords: view,aggregated
 last_updated: 11/2/2018
 summary: "If you want to search on top of another search, try saving your search as a view. Then, you can use the saved view as a data source for a new search."
 sidebar: mydoc_sidebar
@@ -24,6 +24,6 @@ and **Save as view**.
 
      ![]({{ site.baseurl }}/images/save_view_dialog.png "Name the View")
 
-5. [Link]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html) your view to any other data source, or [define joins]({{ site.baseurl }}/admin/loading/constraints.html).
+5. [Link]({{ site.baseurl }}/admin/data-modeling/create-new-relationship.html) your view to any other data sources you'll need or [define joins]({{ site.baseurl }}/admin/loading/constraints.html).
 
 At this point the view has been saved, but you may also want to [materialize the view]({{ site.baseurl }}/admin/loading/materialized-views.html), to improve its performance when searching.

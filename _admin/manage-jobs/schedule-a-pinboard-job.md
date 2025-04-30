@@ -1,6 +1,6 @@
 ---
 title: [Schedule a pinboard job]
-
+keywords: "job,pinboard,schedule,gating,kpi"
 last_updated: tbd
 summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
@@ -16,7 +16,7 @@ To schedule a pinboard:
 1. Sign in to ThoughtSpot from a browser.
 2. Click **Pinboards**, on the top navigation bar.
 
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
+     ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 3. Select the pinboard you want to create a schedule for.
 4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
@@ -57,7 +57,7 @@ To schedule a pinboard:
      <tr>
      <th>Gating condition</th>
      <td><p>Write a statement that returns a single boolean value (true or false). For example, <code>sum (revenue) > 100</code> is a valid condition but <code>is_weekend (commit_date)</code> is not. You can use any valid formula in your statement. Other than checking your formula syntax, ThoughtSpot does not validate your formula returns a single boolean.</p>
-     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function reference</a>.</p></td>
+     <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function Reference</a>.</p></td>
      </tr>
      <tr>
        <th>Recipients</th>

@@ -1,11 +1,11 @@
 ---
 title: [Get your configuration and logs]
-last_updated: 11/18/2019
-summary: Two main troubleshooting tools are getting a log bundle and understanding your cluster configuration.
+keywords: tbd
+tags: [logs]
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-For troubleshooting on specific incidents or cluster problems, two things are important: understanding your current configuration and getting a log bundle.
+For troubleshooting on specific incidents or cluster problems, two things are important. Understanding your current configuration and getting a log bundle.
 
 ## Check your configuration
 
@@ -77,7 +77,7 @@ $ tscli logs collect --include all --since 1d
 
 In this example, `all` is a selector for all the available logs.
 
-In most cases, you can probably use the selector `ts` to only capture logs for the ThoughtSpot application:
+In most cases, you'll probably use the selector `ts` to only capture logs for the ThoughtSpot application:
 
 ```
 $ tscli logs collect --include ts --since 2d
@@ -95,7 +95,7 @@ This command collects logs from a specific time window:
 $ tscli logs collect --include system,orion --from 20150520-12:00 --to 20150522-12:30
 ```
 
-Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag.
+Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag. 
 
 ```
 $ tscli logs collect --include system,orion --exclude *hadoop*,*zookeeper* --since 2h

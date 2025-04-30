@@ -1,4 +1,11 @@
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-j0ga{background-color:#f0f0f0;color:#000;font-weight:bold;border-color:inherit;vertical-align:top}
+.tg .tg-dc35{background-color:#f9f9f9;border-color:inherit;vertical-align:top}
+.tg .tg-us36{border-color:inherit;vertical-align:top}
+</style>
 <table class="tg">
   <tr>
     <th class="tg-j0ga">English Keywords</th>
@@ -104,11 +111,6 @@
     <td class="tg-us36">last day by</td>
     <td class="tg-us36">sidst dag ved</td>
     <td class="tg-us36"><code>customers <b>last day by</b> referrer</code></td>
-  </tr>
-  <tr>
-    <td class="tg-us36">hourly</td>
-    <td class="tg-us36">time</td>
-    <td class="tg-us36"><code>visitors by page name <b>hourly</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last month by</td>

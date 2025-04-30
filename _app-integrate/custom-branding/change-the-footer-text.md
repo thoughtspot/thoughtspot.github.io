@@ -1,6 +1,6 @@
 ---
 title: [Change the footer text]
-summary: You can customize ThoughtSpot's footer test to add a company-specific message.
+keywords: tbd
 last_updated: 2/24/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -22,10 +22,10 @@ footer text:
 1. Click the text box under **Footer text**.
 2. Enter your new text message.
 
-     ![Edit the footer text]({{ site.baseurl }}/images/style-newfootertext.png "Edit the footer text")
+     ![Add footer text]({{ site.baseurl }}/images/style-footertext.png "Footer text menu")
 
     Your new text message will automatically be displayed in the footer.
 
-     ![Footer text display]({{ site.baseurl }}/images/style-footertext.png "Footer text display")
+     ![Footer text display]({{ site.baseurl }}/images/style-newfootertext.png "Footer text display")
 
 3. Click the **Reset** button on the upper right hand side of the section if you would like to bring back the default footer text.

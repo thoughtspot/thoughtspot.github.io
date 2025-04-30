@@ -1,9 +1,9 @@
 ---
 title: [Network policies]
-
-
-
-last_updated: tbd
+tags: [bestpractices]
+keywords: network, ports, policies
+tags: [networking]
+last_updated: 1/17/2020
 summary: "Lists the required ports, protocols and policies for an installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,3 +17,7 @@ For regular operations and debugging, there are some ports you you must keep ope
 ## Required ports for cluster communication
 
 {% include content/ports-network.md %}
+
+## Related information  
+
+[EC2 Best Practices](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html)
