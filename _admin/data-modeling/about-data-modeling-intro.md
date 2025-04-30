@@ -1,8 +1,8 @@
 ---
 title: [About data modeling]
-tags: [overview]
-keywords: modeling,data,Search
-last_updated: 3/25/2020
+
+
+last_updated: 3/23/2020
 summary: "Modeling, tagging, and adding links between your data sources can make the data even easier to search."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -49,3 +49,5 @@ Explains the possible data model settings and their accepted values. These are t
 Linked tables can be searched together or combined into a worksheet for easy searching. Tables that have no relationship between their columns can not be combined in a single search.
 - **[About stickers]({{ site.baseurl }}/admin/data-modeling/stickers-concept.html)**  
  You can create stickers to make it easier for people to find data sources and pinboards.
+- **[Manage experts or add an expert to your data]({{ site.baseurl }}/admin/data-modeling/add-expert.html)**<br>
+You can designate experts for each data source, so users won't get stuck if they need help.

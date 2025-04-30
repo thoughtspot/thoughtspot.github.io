@@ -24,7 +24,7 @@ footer text:
 1. Click the text box under **Footer text**.
 2. Enter your new text message.
 
-     ![Add footer text]({{ site.baseurl }}/images/style-footertext.png "Footer text menu")
+    ![Add footer text]({{ site.baseurl }}/images/style-footertext.png "Footer text menu")
 
     Your new text message will automatically be displayed in the footer.
 

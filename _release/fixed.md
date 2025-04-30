@@ -7,6 +7,10 @@ permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot Releases.
 
+   - [5.2.3 Fixed issues](#5-2-3)
+   - [5.2.2 Fixed issues](#5-2-2)
+   - [5.2.1 Fixed issues](#5-2-1)
+   - [5.2 Fixed issues](#5-2)
    - [5.1.4 Fixed issues](#5-1-4)
    - [5.1.3 Fixed issues](#5-1-3)
    - [5.1.2 Fixed issues](#5-1-2)
@@ -17,6 +21,86 @@ These are the issues we fixed in recent ThoughtSpot Releases.
    - [4.5.1 Fixed issues](#4-5-1)
    - [4.5 Fixed issues](#4-5)
    - [4.4 Fixed issues](#4-4)
+
+<a id="5-2-3"></a>
+## 5.2.3 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.2.3.   
+
+- An issue where LDAP sync does not sync users after upgrade to release 5.2.2 is now fixed.
+
+- A problem where certain types of joins do not work when row-level security is used is now fixed.
+
+- An issue where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
+
+- A problem in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
+
+- An issue where syncing users using the public API does not work is now fixed.
+
+- A problem where Canadian postal codes do not appear on maps is now fixed.
+
+<a id="5-2-2"></a>
+## 5.2.2 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.2.2.
+
+- An issue where PDFs downloaded from a Pinboard are poorly formatted is now fixed.
+
+- An occasional problem where the login process is slow has been fixed.
+
+- An issue where the filter dialog box freezes when opened from a Pinboard, or the filter icon in the left panel is now fixed.
+
+- Previously, when the `unique_count_if` aggregate function was used in both the numerator and denominator of a division formula in a search query, it caused only the numerator value to be returned. This problem is now fixed.
+
+- A problem where the `unique_count_if` aggregate function does not parse an expression is now fixed.
+
+<a id="5-2-1"></a>
+## 5.2.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.2.1.   
+
+- An issue where column tooltips do not display last-updated information is now fixed.
+
+- An error that occurs when attempting to save changes to the title of a visualization is now fixed.
+
+- An issue with the user-onboarding walkthrough intermittently failing to load is now fixed.
+
+- Reliability of the filter dialog when opened from a Pinboard or the left panel has been improved.
+
+- An issue with a NAS mount disconnecting during restore of a cluster is now fixed.
+
+- A problem where tables in a Google Chrome tab become misaligned is now fixed.
+
+- Corrupted metadata after an upgrade which made some worksheets uneditable is now fixed.
+
+- An issue where greyed-out search phrases could not be edited while in delayed search mode is now fixed.
+
+- The database manager memory limit has been increased to 16 GB to improve performance.
+
+- An issue where tables created with incorrect DDL syntax could be imported without errors is now fixed.
+
+- A problem with date filters in the Japanese locale is now fixed.
+
+- An issue with refreshing materialization of views is now fixed.
+
+- Occasional slow navigation between the Answer and Pinboard pages has been fixed.
+
+- A problem where scheduled Pinboard emails failed to send to a specific recipient with a valid email address message is now fixed.
+
+- Embedded Pinboards no longer occasionally display a Pin button.
+
+<a id="5-2"></a>
+## 5.2 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.2.
+
+- Table user experience improvements:
+   * The column header is now left-aligned.
+   * Column widths can be made very narrow.
+
+- Chart user experience improvements:
+   * When sorting by date on the x-axis, the date format no longer changes and the axis no longer disappears.
+   * You can now sort using a sort field that is not in your chart.
 
 <a id="5-1-4"></a>
 ## 5.1.4 Fixed issues

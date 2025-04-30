@@ -105,7 +105,7 @@ Depending on your situation and your goals, you can choose to use a snapshot or 
 You should never restore from a snapshot or backup yourself. [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for help.
 
 ## Additional resources
-As you develop your expertise in backups and snapshots, we recommend the following ThoughtSpot U course:
+As you develop your expertise in snapshots and backups, we recommend the following ThoughtSpot U course:
 * [Snapshots and Backups](https://training.thoughtspot.com/3-snapshots-backups/461810){:target="_blank"}
 
 See other training resources at <br/>

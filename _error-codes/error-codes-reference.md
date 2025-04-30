@@ -1,13 +1,13 @@
 ---
 title: [Error code reference]
-keywords: tbd
-summary: "List of error codes and messages."
+keywords: error code, error message
+summary: "This is the list of ThoughtSpot error codes and messages."
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This section lists error codes that can appear in ThoughtSpot, with summary information and actions to take.
-Error codes and messages are shown in ThoughtSpot when something goes wrong. These messages can appear in the application and in logs.
+This topic lists error codes that can appear in ThoughtSpot, with summary information and what actions you can take.
+Error codes and messages appear in ThoughtSpot when something goes wrong, either in the application or in logs.
 
 When you see an error code, you will also see a message with a brief summary of what has happened. If there is a remediation action you can take, it will be listed in this references. If there is no action listed, please contact ThoughtSpot Support.
 
@@ -951,7 +951,7 @@ When you see an error code, you will also see a message with a brief summary of 
 |TS-12711|ERROR|Configuration information unavailable.|None|None|
 |TS-12712|ERROR|There are too many recipients.|The max number of recipients is 1000.|None|
 |TS-12713|ERROR|Attachment size limit exceeded.|None|None|
-|TS-12714|ERROR|Recipient domain is not on your list of allowed domains.|None|None|
+|TS-12714|ERROR|Recipient domain is not among your list of allowed domains.|None|None|
 
 ## More Metadata Errors (13000 - 13099)
 

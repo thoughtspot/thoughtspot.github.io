@@ -29,7 +29,8 @@ for a sandbox environment but is insufficient for a production environment. You 
    The VM template, by default, captures a 72-core configuration. If your
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
    cores (for a physical host with n cores) to fully take advantage of computing
-   power of the physical host. Extra cores help performance.
+   power of the physical host. Extra cores help performance. If your hypervisor
+   has 72 hyperthreaded cores, ThoughtSpot VM should be configured to use 70.
 
    You should aim to allocate 490 GB or more RAM.
 
@@ -48,15 +49,15 @@ for a sandbox environment but is insufficient for a production environment. You 
 
    ![]({{ site.baseurl }}/images/vmware-ovf.png "ThoughtSpot OVF")
 
-3. Choose the OVF template and press **Next**.
+3. Choose the OVF template and click **Next**.
 
    The system prompts you to select a storage.
 
-4. Choose the SSD as the destination and press **Next**.
+4. Choose the SSD as the destination and click **Next**.
 
    The system displays the **Deployment Options** dialog.
 
-5. Enter the options and press **Next**.
+5. Enter the options and click **Next**.
 
     | Setting                    | Value                                             |
     |----------------------------|---------------------------------------------------|
@@ -64,7 +65,7 @@ for a sandbox environment but is insufficient for a production environment. You 
     | **Disk provisioning**      | Choose Thin.                                      |
     | **Power on automatically** | Check this box.                                   |
 
-6. Review your selection and press **Finish**.
+6. Review your selection and click **Finish**.
 
    ![]({{ site.baseurl }}/images/vmware-complete.png "Complete")
 
@@ -146,9 +147,13 @@ additional, larger capacity disks.
 
 ## Next steps
 
-There is no network at this point on your VMs. To make the VM node accessible
-from any terminal within local network, contact <a
-href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>.
+There is no network at this point on your VMs. As a prerequisite:
+
+1. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
+2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
+3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
+
+Once done, go to the <a href="http://thoughtspot.com/support-request">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
 
 ## Additional resources
 As you develop your expertise in VMware VM creation, we recommend the following ThoughtSpot U course:

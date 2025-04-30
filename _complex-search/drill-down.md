@@ -50,4 +50,4 @@ You can also [share the Answer]({{ site.baseurl }}/end-user/pinboards/share-answ
 ## Share your data
 If you own a pinboard or answer, you can drill down to the data beneath.
 Users you share a pinboard or answer with can also drill down provided they _also_
-have access to the data on which the board was based. If you do not have access to a pinboard or answer's underlying data source, you cannot drill down. See [overview of sharing]({{ site.baseurl }}/end-user/data-view/sha
+have access to the data on which the board was based. If you do not have access to a pinboard or answer's underlying data source, you cannot drill down. See [overview of sharing]({{ site.baseurl }}/end-user/data-view/sharing-for-end-users.html) to share your answers, pinboards, or data.

@@ -11,7 +11,7 @@ Before you configure LDAP for Active Directory, collect this information:
 
 -   URL to connect to Active Directory.
 
-    For example, `ldap://192.168.2.48:389`
+    For example, `ldap://192.168.2.48:389` or `ldaps://192.168.2.48:636`
 
 -   Default LDAP domain.
 
@@ -79,4 +79,4 @@ As you develop your expertise in authentication and security, we recommend the f
 * [Active Directory](https://training.thoughtspot.com/authentication-security/621451){:target="_blank"}
 
 See other training resources at <br/>
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>   

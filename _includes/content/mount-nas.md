@@ -33,37 +33,30 @@ You can mount NAS using tscli.
 To mount a NAS file system using the tscli, follow these steps:
 
 1. Log in to the Linux shell using SSH.
-2. Mount the directory to the file system, by issuing the appropriate command:
-    -   For an NFS (Network File System) directory:
+2. Mount the directory to the file system by issuing the appropriate command:
+    -   Example for an NFS (Network File System) directory:
 
         ```
-        tscli nas mount-nfs
-           --server <server_NFS_address>
-           --path_on_server <path>
-           --mount_point <target>
-           --options vers=<version>, sec=<security scheme>, <OPTIONS>
+        tscli nas mount-nfs --server storageservername.file.yourdomain.net
+           --path_on_server <path>  /tsdev-backup --mount_point /export/BACKUPS/
+           --options vers=<version>,sec=<security scheme>,<OPTIONS>
         ```
 
         {% include note.html content="Other command-line options are available to forward to the command (default: `noexec`)." %}
 
-    -   For a CIFS (Common Internet File System) directory. Use `1001` for the `uid` and `gid`.
+    -   Example for a CIFS (Common Internet File System) directory. Use `1001` for the `uid` and `gid`, as in the example:
 
         ```
-        tscli nas mount-cifs
-           --server <server_CIFS_address>
-           --path_on_server <path>
-           --mount_point <target>
-           --username <user>
-           --password <password>
-           --uid <uid>
-           --gid <gid>
-           --options <OPTIONS>
+        tscli nas mount-cifs --server storageservername.file.yourdomain.net
+          --path_on_server /tsdev-backup --mount_point /export/BACKUPS/
+          --username 'avtprdweutspotdev' --uid 1001 --gid 1001 --options 'vers=3.0'
         ```
 
         {% include note.html content="Other command-line options are available to forward to the `mount.cifs` command (default: `noexec`)." %}
 
-3. Use the mounted file system as you wish, specifying it by referring to its mount point.
-4. When you are finished with it, you may optionally unmount the NAS file system:
+3. Use the mounted file system by referring to its mount point.
+
+4. When you are finished with it, you can optionally unmount the NAS file system:
 
     ```
     tscli nas unmount --dir <directory>

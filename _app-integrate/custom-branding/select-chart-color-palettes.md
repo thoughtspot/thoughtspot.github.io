@@ -13,7 +13,7 @@ To select the chart color palettes:
 
 1. Navigate to the **Chart Color Palettes** section at the bottom of the **Style Customization** page.
 
-     ![Chart color palettes]({{ site.baseurl }}/images/style-chartcolorpalettes.png "Chart Color Palettes section")
+    ![Chart color palettes]({{ site.baseurl }}/images/style-chartcolorpalettes.png "Chart Color Palettes section")
 
 2. Click the color you would like to change in the primary color palette, and use the color menu to choose your new color.
 

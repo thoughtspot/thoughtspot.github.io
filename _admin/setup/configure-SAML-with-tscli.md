@@ -45,4 +45,4 @@ As you develop your expertise in authentication and security, we recommend the f
 * [Single Sign On (SSO)](https://training.thoughtspot.com/authentication-security/621450){:target="_blank"}
 
 See other training resources at <br/>
-<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>  
+<a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>   

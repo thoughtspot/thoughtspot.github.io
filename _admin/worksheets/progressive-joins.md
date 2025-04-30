@@ -49,7 +49,6 @@ To specify how the Worksheet should apply joins, follow these steps:
 
     ![Apply joins progressively or apply all joins]({{ site.baseurl }}/images/worksheet-apply-joins.png "Apply joins progressively or apply all joins")
 
-
 ## Rule-Based Row Level Security (RLS) with worksheets
 
 With Rule-Based RLS, you need to protect every table that contains any sensitive

@@ -63,7 +63,7 @@ To change the relationship between tables:
 
    Before dropping a relationship TQL checks for and then warns of any dependent
    objects.
-
+   
    The following examples illustrate several different types of drop operations.
 
     Drop a foreign key by name, if it was given a name when it was defined:

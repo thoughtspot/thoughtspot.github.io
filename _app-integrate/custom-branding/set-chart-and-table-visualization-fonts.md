@@ -15,7 +15,6 @@ If you are confident in your knowledge of font visualizations, you can set your 
 
     ![Add new chart visualization font]({{ site.baseurl }}/images/style-chartfont.png "Add New Chart Visualization Font")
 
-
 2. In the add new font menu, select the details for the font:
     1. Upload your custom font.
 

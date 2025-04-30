@@ -7,6 +7,7 @@ permalink: /:collection/:path.html
 ---
 Your ThoughtSpot application software is already installed for you in a
 ThoughtSpot appliance (this is true for both physical and virtual appliances).
+
 The ThoughtSpot software is updated by ThoughtSpot Support. ThoughtSpot Support
 will contact you to schedule an update when one becomes available.
 

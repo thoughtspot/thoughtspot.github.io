@@ -1,7 +1,7 @@
 ---
 title: [Overview of data modeling settings]
 keywords: tbd
-last_updated: tbd
+last_updated: 5/6/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

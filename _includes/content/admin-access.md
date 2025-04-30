@@ -1,4 +1,6 @@
-Each ThoughtSpot appliance comes pre-built with three default users. Contact your ThoughtSpot support team to get the passwords.
+Each ThoughtSpot appliance comes pre-built with three default users. You should
+talk with a ThoughtSpot Customer Success Engineer or ThoughtSpot support, to get
+the password for each user.  The default users are:
 
 <table>
 <colgroup>

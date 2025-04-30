@@ -1,6 +1,6 @@
 ---
 title: [Geo charts]
-last_updated: 09/23/2019
+last_updated: 4/22/2020
 summary: "There are three geo charts that let you visualize geographical data in ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

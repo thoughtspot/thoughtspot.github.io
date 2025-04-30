@@ -1,7 +1,7 @@
 ---
 title: [Data security]
 keywords: tbd
-last_updated: tbd
+last_updated: 5/21/2020
 tags: [groups,rls,security]
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar

@@ -10,8 +10,8 @@ permalink: /:collection/:path.html
 
 When you load data, ThoughtSpot uses defaults for data modeling metadata. You
 change these defaults using the data modeling file if you have access to the
-**ADMIN > Data Management** page. This means editing this file allows you to
-navigate and edit all your system's data columns at once, in bulk. When you (or
+**ADMIN > Data Management** page. Editing this file allows you to
+view and edit all your system's data columns at once, in bulk. When you (or
 your users) add new data to your system, this file changes as it expands to
 accommodate new data columns.
 
@@ -49,12 +49,14 @@ you edit it using Microsoft Excel, vi/vim, or a similar text editing tool.
 To obtain the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click the **admin** tab in the top navigation bar.
+
+2. Click the **ADMIN** tab in the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click **Data Management**.
-4. Click **Download model.xls**.
+3. Click **Data Management**, then click **Business Data Model**.
+
+4. Click **Download**.
 
     ![]({{ site.baseurl }}/images/download_model.png)
 
@@ -96,11 +98,11 @@ After you have made changes to the modeling file, you must upload it back to
 ThoughtSpot before the changes will take effect. To upload the model file:
 
 1. Log in to ThoughtSpot from a browser as an Administrator user.
-2. Click the **Admin** icon, on the top navigation bar.
+2. Click **ADMIN**, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3. Click **Data Management**.
+3. Click **Data Management**, then click **Business Data Model**.
 4. Click **Browse your files** to upload the model.xls file, or drag and drop it in the zone.
 
     ![]({{ site.baseurl }}/images/upload_model.png)

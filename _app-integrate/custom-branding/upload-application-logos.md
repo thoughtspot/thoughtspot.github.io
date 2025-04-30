@@ -12,7 +12,7 @@ To upload your own default and wide application logos:
 
 1. Click the default icon under **Application Logo (Default)** to browse for and select your own default logo.
 
-     ![Default application logo]({{ site.baseurl }}/images/style-applogo.png "Application Logo (Default)")
+    ![Default application logo]({{ site.baseurl }}/images/style-applogo.png "Application Logo (Default)")
 
     Your icon image should be a square, and the recommended size is 140px by 140px. The accepted file formats are jpg, jpeg, and png. This logo will appear on the top left of the interface.
 

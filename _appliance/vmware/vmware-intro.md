@@ -2,7 +2,7 @@
 title: [VMware configuration overview]
 keywords: vmware
 tags: [vm, performance]
-last_updated: 2/20/2020
+last_updated: 3/18/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -25,7 +25,7 @@ Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
 ThoughtSpot VMs as your dataset size grows.
 
-## Configuration (minimum)
+## Supported configurations
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
 platform on VMware for the best performance, load balancing, scalability,
@@ -92,5 +92,4 @@ files from your ThoughtSpot Customer Success Engineer.
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/appliance/contact.html) by phone, mail, email, or by filing a
-support ticket.
+site.baseurl }}/appliance/contact.html) by filing a support ticket, email or phone.
