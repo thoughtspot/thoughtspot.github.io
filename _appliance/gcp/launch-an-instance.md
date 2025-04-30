@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 4/3/2020
+last_updated: 5/7/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -154,7 +154,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
       ![Add new disk]({{ site.baseurl }}/images/gcp-7-advanced-disk-config.png "Add new disk")
 
-      You can select or unselect the **Deletion rule**, depending on your preferences.
+      Unselect the **Deletion rule**, to prevent potential loss of data if your instance is deleted accidentally.
 
     b. Configure the following settings for each disk. Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/configuration-options.html#vms-with-persistent-disk-and-google-cloud-storage) to determine the size in GB when you have GCS. Ensure the disks have read/write access.
 
@@ -164,7 +164,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
       | Source type  | `Blank disk`           |
       | Size (GB)    | `1024`                 |
 
-      Under **Deletion rule**, select either **keep disk** or **delete disk**, depending on your preference.
+      Under **Deletion rule**, select **keep disk**, to prevent potential loss of data if your instance is deleted accidentally.
 
       ![Configure your disk]({{ site.baseurl }}/images/gcp-8-advanced-blank-disk-config.png "Configure your disk")
 
