@@ -4,13 +4,8 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<META NAME="robots" CONTENT="noindex,nofollow">
 <!-- <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}"> -->
 <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
-
-<!-- prevent google from crawling/indexing site -->
-<meta name='robots' content='noindex,follow' />
-
 <title>{{ page.title }} | {{ site.site_title }}</title>
 <link rel="stylesheet" href="{{ 'css/syntax.css' | absolute_url }}">
 
@@ -47,12 +42,19 @@
       grid-template-columns: 1fr 5fr 1fr;
       grid-row: 1;
       grid-gap: 20px;
-
   }
 
   .text-opener {
     text-align: left;
     /*font-size: larger;*/
+  }
+
+  /* Key feature introduction. Container with 1:11 ratio, image on left, text on right */
+  .grid-container-key-feature {
+      display: grid;
+      grid-template-columns: 1fr 11fr;
+      grid-row: 1;
+      grid-gap: 20px;
   }
 
   /* Summary of topics by persona. Optimized for 4 across */
@@ -85,8 +87,6 @@
 
   p.topicLink {
     text-align: left;
-    /*padding-left: 22px ;
-    text-indent: -22px ;*/
     margin-top: 0em;
     padding-top: 0em;
   }
@@ -142,7 +142,7 @@
   /********* Version 11.x JavaScript for Site Search 360 *********/
 var ss360Config = {
   /********* General *********/
-    siteId: "cloud-docs.thoughtspot.com_2",
+    siteId: "dataflow-docs.thoughtspot.com",
     showErrors: false,
     layout: {
         navigation: {
@@ -213,7 +213,7 @@ var ss360Config = {
     results: {
         embedConfig: {
             contentBlock: "searchresults-only",
-            url: "https://cloud-docs.thoughtspot.com/search.html"
+            url: "https://dataflow-docs.thoughtspot.com/search.html"
         },
         caption: "Found #COUNT# results for your query \"#QUERY#\"",
         group: true,
@@ -231,70 +231,3 @@ var ss360Config = {
 }
 </script>
 <script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script>
-<!-- begin feedback form code -->
-<script>
-  $(document).ready(function(){
-    $("#flip").click(function(){
-      $("#panel").slideDown("slow");
-  });
-});
-</script>
-<!-- js smoothScroll for scrolling to bottom of page -->
-<script>
-  window.smoothScroll = function(target) {
-      var scrollContainer = target;
-      do { //find scroll container
-          scrollContainer = scrollContainer.parentNode;
-          if (!scrollContainer) return;
-          scrollContainer.scrollTop += 1;
-      } while (scrollContainer.scrollTop == 0);
-
-      var targetY = 0;
-      do { //find the top of target relatively to the container
-          if (target == scrollContainer) break;
-          targetY += target.offsetTop;
-      } while (target = target.offsetParent);
-
-      scroll = function(c, a, b, i) {
-          i++; if (i > 30) return;
-          c.scrollTop = a + (b - a) / 30 * i;
-          setTimeout(function(){ scroll(c, a, b, i); }, 20);
-      }
-      // start scrolling
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-  }
-</script>
-
-<style>
-#panel, #flip {
-  padding: 5px;
-  text-align: right;
-  background-color: #ffffff;
-  border: solid 0px #c3c3c3;
-  margin-right: 10px;
-}
-
-#panel {
-  display: none;
-}
-</style>
-<script>
-$(document).ready(function(){
-  $("#flop").click(function(){
-    $("#panel").slideUp("slow");
-  });
-});
-</script>
-<style>
-#panel, #flop {
-  padding: 5px;
-  text-align: right;
-  background-color: #ffffff;
-  border: solid 0px #c3c3c3;
-}
-
-#panel {
-  padding: 5px;
-}
-</style>
-<!-- end feedback form code -->

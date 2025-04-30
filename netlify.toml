@@ -1,7 +1,5 @@
-## This redirects to other doc branches
-
 [[redirects]]
-  from = "/ts6.dec.cl/*"
-  to = "https://cloud-docs.thoughtspot.com/:splat"
-  status = 200
+  from = "https://dataflow-docs.thoughtspot.com/"
+  to = "https://docs.thoughtspot.com/software/latest/dataflow"
+  status = 301
   force = true # COMMENT: ensure that we always redirect

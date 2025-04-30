@@ -17,7 +17,7 @@
 #
 
 destination: _site/
-url: "https://cloud-docs.thoughtspot.com"
+url: "https://dataflow-docs.thoughtspot.com"
 baseurl: "/1.0"
 port:
 output: pdf
@@ -42,6 +42,8 @@ collections:
   data-connect:
     output: true
   data-integrate:
+    output: true
+  disaster-recovery:
     output: true
   end-user:
     output: true
