@@ -1,6 +1,6 @@
 ---
 title: [Add a filter to a worksheet]
-keywords: filter,worksheet
+
 last_updated: 11/3/2018
 summary: "You can add a filters to a worksheet to limit the data users can access from the worksheet."
 sidebar: mydoc_sidebar

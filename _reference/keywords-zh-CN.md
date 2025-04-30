@@ -1,6 +1,6 @@
 ---
 title: [中文(简体) Keyword reference]
-tags: [keywords]
+
 
 last_updated: tbd
 sidebar: mydoc_sidebar

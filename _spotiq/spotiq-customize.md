@@ -1,7 +1,5 @@
 ---
 title: ["SpotIQ 101: Do more with SpotIQ"]
-tags: [customize, spotiq]
-keywords: customize, SpotIQ, "data analysis"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

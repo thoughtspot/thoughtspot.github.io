@@ -1,6 +1,5 @@
 ---
 title: [Disk failure]
-
 last_updated: tbd
 summary: "ThoughtSpot uses replication of stored data. When a disk goes bad, ThoughtSpot continues to operate."
 sidebar: mydoc_sidebar

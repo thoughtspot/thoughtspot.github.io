@@ -1,7 +1,7 @@
 ---
 title: [About troubleshooting]
 
-tags: [logs]
+
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

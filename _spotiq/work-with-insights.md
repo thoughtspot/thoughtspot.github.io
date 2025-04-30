@@ -1,7 +1,5 @@
 ---
 title: ["SpotIQ 101: Review insights"]
-tags: [spotiq]
-keywords:
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

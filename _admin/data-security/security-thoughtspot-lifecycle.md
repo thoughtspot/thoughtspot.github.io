@@ -1,7 +1,7 @@
 ---
 title: [ThoughtSpot Lifecycle]
-tags: [security]
-keywords: downloads, source, install
+
+
 summary: "This topic covers security processes for the entire lifecycle of a ThoughtSpot deployment from development, release, installation, upgrades, to software patching."
 last_updated: tbd
 sidebar: mydoc_sidebar

@@ -1,7 +1,7 @@
 ---
 title: [About Runtime Filters]
-tags: [limitations]
-keywords: REST,API,data,"REST API"
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

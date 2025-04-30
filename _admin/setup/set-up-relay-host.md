@@ -1,7 +1,7 @@
 ---
 title: [Set the relay host for SMTP (email)]
-tags: [tscli]
-keywords: email,SMTP,notification,"relay host"
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

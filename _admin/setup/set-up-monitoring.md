@@ -1,6 +1,6 @@
 ---
 title: [Set up monitoring]
-tags: [tscli]
+
 
 last_updated: tbd
 summary: "Setting up monitoring is a one time operation."

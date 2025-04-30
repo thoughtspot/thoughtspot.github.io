@@ -1,6 +1,6 @@
 ---
 title: [About the Data REST API]
-keywords: REST,API,data,authentication,public
+
 last_updated: tbd
 summary: "The purpose of the REST API is to get data out of ThoughtSpot so you can use it in a Web page, portal, or application."
 sidebar: mydoc_sidebar
@@ -14,7 +14,7 @@ Before you can use the Data REST API, you must authenticate to ThoughtSpot using
 
 ## Cross Domain Verification
 
-You cano enable cross-domain verification when using the Data REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) includes information on how to enable this.
+You can enable cross-domain verification when using the Data REST API. This protects your data, so that another website cannot use a URL to get data from ThoughtSpot. The procedure for [enabling the JavaScript API]({{ site.baseurl }}/app-integrate/JSAPI/enable-JS-API.html#) includes information on how to enable this.
 
 ## Data REST API capabilities
 

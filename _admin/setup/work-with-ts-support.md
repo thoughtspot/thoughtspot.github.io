@@ -1,6 +1,6 @@
 ---
 title: [Configure support services]
-tags: [tscli, Supportability,logs]
+
 
 last_updated: tbd
 sidebar: mydoc_sidebar

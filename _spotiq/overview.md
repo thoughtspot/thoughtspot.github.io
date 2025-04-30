@@ -1,7 +1,5 @@
 ---
 title: ["SpotIQ 101: Load and analyze data"]
-tags: [spotiq, tutorial]
-
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

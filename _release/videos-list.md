@@ -1,7 +1,5 @@
 ---
 title: ["Videos"]
-tags: [spotiq]
-
 toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar

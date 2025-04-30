@@ -1,7 +1,7 @@
 ---
 title: [Understand formulas in searches]
 
-tags: [formulas]
+
 last_updated: tbd
 summary: "To provide richer insights, you can add a formula to your search. "
 sidebar: mydoc_sidebar

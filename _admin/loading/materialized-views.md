@@ -1,6 +1,6 @@
 ---
 title: [About materialized views]
-keywords: materialize views
+
 last_updated: 10/31/2018
 summary: "You can materialize a view to improve its performance."
 toc: false

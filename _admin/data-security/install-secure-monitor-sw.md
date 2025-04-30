@@ -1,7 +1,7 @@
 ---
 title: [Installing third party security and monitoring software]
-keywords: qualys,splunk,security,third party,installation,SNMP
-tags: [logs,security]
+
+
 summary: "You can install third party software for security, governance, and monitoring of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

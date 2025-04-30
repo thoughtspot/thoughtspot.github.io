@@ -1,7 +1,7 @@
 ---
 title: [Check the timezone]
 
-tags: [time]
+
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

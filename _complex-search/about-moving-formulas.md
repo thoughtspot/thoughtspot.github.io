@@ -1,7 +1,7 @@
 ---
 title: [Moving functions]
 
-tags: [formulas]
+
 last_updated: tbd
 summary: "Moving formulas are aggregate formulas that allow you to calculate the average, max, min, or sum of your data over a predetermined interval, or window, with an adjustable range."
 sidebar: mydoc_sidebar

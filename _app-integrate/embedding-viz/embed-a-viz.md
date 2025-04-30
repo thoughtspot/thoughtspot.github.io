@@ -1,6 +1,6 @@
 ---
 title: [Embed pinboard or visualization]
-keywords: embed,sample,client,example
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 toc: true
@@ -60,7 +60,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you can get a c
     Here are the fields in the `test.html` file you need to edit.
 
     ```JavaScript
-    var protocol = "THOUGHSPOT_PROTOCOL";
+    var protocol = "THOUGHTSPOT_PROTOCOL";
     var hostPort = "HOST_PORT";   
 
     var pinboardId = "PINBOARD_ID";

@@ -1,11 +1,18 @@
 ---
-title: [Set entity categories for SearchIQ ]
-
-last_updated: tbd
+title: [Set entity categories for SearchIQ]
+last_updated: 09/23/2019
 summary: "Entity categories help describe the column content, and assist SearchIQ in interpreting natural language queries."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+<div class="alert alert-info" role="alert">
+ <p><strong><i class="fa fa-info-circle"></i>  Note: SearchIQ is in Beta</strong></p>
+ <ul type="square">
+  <li>SearchIQ is only available in English.</li>
+  <li>The feature is off by default; to enable it, contact <a href="mailto:support@thoughtspot.com?subject=SearchIQ%20Reguest&body=I%20want%20to%20try%20SearchIQ">ThoughtSpot Support</a>.</li>
+  <li>You must have the <strong>Can use experimental features</strong> permission.</li>
+</ul>
+</div>
 
 Entity categories specify how to categorize the data in the column, by entity type. By default, `ENTITY TYPE` is not set. Entity categories support [SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#) so that when you type a natural question, ThoughtSpot better knows how to interpret it. For example, if you ask "who are the top performers?" ThoughtSpot will first choose columns set with `PERSON` from which to return answers. If you ask "when was the movie Jurassic Park released?", columns set to `TIME` will be used to answer the "when" part of the question, and so forth.
 

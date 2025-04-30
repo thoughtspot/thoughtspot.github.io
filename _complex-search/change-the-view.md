@@ -1,7 +1,7 @@
 ---
 title: [Change result display options]
-keywords: "table,chart,visualization"
-tags: [dates,keywords]
+
+
 summary: "You can change how your search results (answers) appear."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

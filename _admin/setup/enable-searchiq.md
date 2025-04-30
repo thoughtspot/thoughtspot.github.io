@@ -1,15 +1,20 @@
 ---
 title: ["Enable SearchIQ"]
-keywords: SearchIQ,introduction,"search bar","natural language","best practices"
-last_updated: tbd
+last_updated: 09/23/2019
 summary: "Enable SearchIQ to provide natural language search for some or all of your users."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+<div class="alert alert-info" role="alert">
+ <p><strong><i class="fa fa-info-circle"></i>  Note: SearchIQ is in Beta</strong></p>
+ <ul type="square">
+  <li>SearchIQ is only available in English.</li>
+  <li>The feature is off by default; to enable it, contact <a href="mailto:support@thoughtspot.com?subject=SearchIQ%20Reguest&body=I%20want%20to%20try%20SearchIQ">ThoughtSpot Support</a>.</li>
+  <li>You must have the <strong>Can use experimental features</strong> permission.</li>
+</ul>
+</div>
 
 SearchIQ is a different search experience that understands more natural, speech-like search language than [the original ThoughtSpot search or **Search+**]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html). For example, you can search for `What was my top selling product last month?`, instead of having to type `top 1 product by sales last month`. You can also speak your search using the voice-to-text capability of your operating system.
-
-{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you." %}
 
 Users can easily [teach SearchIQ their language]({{ site.baseurl }}/end-user/search/teach-searchiq.html) as they use it. Over time, SearchIQ gets smarter about how to interpret terms that don’t come directly from keywords, column names, or data values. In order to give it time to learn, the best practice recommendation is to enable SearchIQ for a small group of users initially. Over time you can roll it out to larger groups as SearchIQ learns what your users search for the most.
 

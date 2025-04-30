@@ -1,6 +1,5 @@
 ---
 title: [Error code reference]
-keywords: error code, error message
 last_updated: 07-02-2019 by Roza.Leyderman
 toc: true
 summary: "This is the list of ThoughtSpot error codes and messages."

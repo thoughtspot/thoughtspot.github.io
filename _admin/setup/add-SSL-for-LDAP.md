@@ -1,7 +1,7 @@
 ---
 title: [Add the SSL certificate for LDAP]
-tags: [SAML_LDAP_AD, tscli]
-keywords: SAML,security,"active directory",authenticate,certificate
+
+
 last_updated: tbd
 summary: "Install the certificate to support LDAPS"
 sidebar: mydoc_sidebar

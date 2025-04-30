@@ -1,7 +1,6 @@
 ---
 title: [Overview of data modeling settings]
-
-last_updated: tbd
+last_updated: 09/23/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -37,8 +36,8 @@ The following index includes mutable data modeling settings that you can apply t
 | [Currency Type](set-format-pattern-numbers.html#set-currency-type) | Specifies the format of currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. |
 | [Calendar Type]({{ site.baseurl }}/admin/setup/set-custom-calendar.html) | Specifies what type of calendar a date type column uses. It can be Gregorian calendar (default), a fiscal calendar, or any custom calendar. |
-| [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column: person, place, time, and so on. Important for configuring SearchIQ. |
-| SearchIQ Enabled | Indicates if the column is enabled for SearchIQ |
+| [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column: person, place, time, and so on. Important for configuring SearchIQ (**Beta**). |
+| SearchIQ Enabled | Indicates if the column is enabled for SearchIQ. Note that SearchIQ is in **Beta**. |
 
 ## Data modeling best practices
 

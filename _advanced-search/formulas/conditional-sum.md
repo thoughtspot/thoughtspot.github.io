@@ -1,7 +1,7 @@
 ---
 title: [Formula operators]
 
-tags: [formulas]
+
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar

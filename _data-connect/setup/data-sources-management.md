@@ -1,7 +1,5 @@
 ---
 title: [Data sources management]
-
-tags: [logs]
 summary: "After you have successfully loaded your tables, you can check on the status of the load, make edits, and more."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

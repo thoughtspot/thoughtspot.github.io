@@ -1,6 +1,5 @@
 ---
 title: [Overview of sharing]
-
 last_updated: tbd
 toc: false
 sidebar: mydoc_sidebar

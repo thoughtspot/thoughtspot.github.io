@@ -1,7 +1,7 @@
 ---
 title: [Introduction to monitoring]
-keywords: monitor,logs,health,node,cluster,performance
-tags: [indexing]
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

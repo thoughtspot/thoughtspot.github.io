@@ -1,7 +1,5 @@
 ---
-title: [Sync]
-tags: [limitations]
-
+title: [Sync Tables in Embrace]
 last_updated: tbd
 toc: true
 sidebar: mydoc_sidebar

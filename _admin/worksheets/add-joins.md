@@ -1,6 +1,6 @@
 ---
 title: [Join a worksheet to another data source]
-keywords: worksheet view join relationship
+
 last_updated: 6/24/2019
 summary: "Learn how to define joins between a worksheet and a table or view"
 toc: false

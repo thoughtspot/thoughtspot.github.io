@@ -1,6 +1,5 @@
 ---
 title: [Understand conditional Formatting]
-
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

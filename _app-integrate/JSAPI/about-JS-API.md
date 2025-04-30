@@ -1,6 +1,6 @@
 ---
 title: [Using the JavaScript API]
-keywords: REST,API,data,"REST API",javascript,library,cors
+
 last_updated: 07/09/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

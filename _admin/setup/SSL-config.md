@@ -1,6 +1,6 @@
 ---
 title: [Configure SSL]
-tags: [Security_SSL]
+
 
 last_updated: tbd
 summary: "SSL provides authentication and data security"

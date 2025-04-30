@@ -1,6 +1,6 @@
 ---
 title: [Pivot table]
-tags: [limitations]
+
 
 last_updated: tbd
 summary: "A pivot table is a chart type."

@@ -1,6 +1,5 @@
 ---
 title: [Search actions within a pinboard]
-
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

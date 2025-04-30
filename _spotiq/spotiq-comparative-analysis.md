@@ -1,7 +1,5 @@
 ---
 title: [Comparative Analysis]
-tags: [spotiq]
-keywords: SpotIQ, comparative analysis, complex measures
 summary: "With SpotIQ competitive analysis, you can compare two data points for complex measures."
 last_updated: 07/26/2019
 toc: true

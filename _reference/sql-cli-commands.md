@@ -1,6 +1,6 @@
 ---
 title: [TQL reference]
-tags: [TQL,bestpractices]
+
 
 last_updated: tbd
 sidebar: mydoc_sidebar

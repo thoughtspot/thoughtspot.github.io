@@ -1,6 +1,6 @@
 ---
 title: ["Add, edit, or delete a user"]
-keywords: "user, delete, add, edit, manage"
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,7 +1,7 @@
 ---
 title: [Customize look and feel]
-tags: [customize,style,palette,color,brand]
-keywords: customize
+
+
 last_updated: tbd
 summary: "You can brand the ThoughtSpot application for your company."
 sidebar: mydoc_sidebar

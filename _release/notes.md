@@ -1,7 +1,6 @@
 ---
 title: ["5.3 Release Notes"]
 toc: false
-keywords: "release notes"
 last_updated: July 2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -9,27 +8,73 @@ permalink: /:collection/:path.html
 
 ## What's in the Release Notes
 
-ThoughtSpot version 5.3 is now available. These release notes include information about new features,
+ThoughtSpot version 5.3.1 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
 
+* [5.3.1 New Features](#531-new)
+* [5.3.1 Fixed Issues](#531-fixed)
 * [5.3 New Features](#53-new)
 * [5.3 Fixed Issues](#53-fixed)
-* [Notes for older versions](#notes-for-older-versions)
+* [Beta Programs](#beta-program)
+* [Notes from Older Versions](#notes-for-older-versions)
 
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 5.3 release
+If you are running one of the following versions, you can upgrade to the 5.3.1 release
 directly:
 
-* 5.2.x to 5.3
-* 5.1.x to 5.3
+* 5.3 to 5.3.1
+* 5.2.x to 5.3.1
+* 5.1.x to 5.3.1
 
 (This includes any hotfixes or customer patches on these branches.)
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 5.1.x or version 5.2.x, and then to the 5.3 release.
+First, upgrade to version 5.1.x, version 5.2.x, or version 5.3, and then to the 5.3.1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}
+
+{: id="531-new"}
+## 5.3.1 New Features and Functionality
+
+### Onboarding
+In this release, administrators can configure 'Welcome' emails to send to both new and existing users, and to existing groups. See [Edit a group]({{ site.baseurl }}/admin/users-groups/add-group.html#edit-a-group) and
+[Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface).
+
+### Embrace
+**ThoughtSpot Embrace is in beta.**
+In Release 5.3.1, you can connect to multiple Snowflake databases, and get faster querying results. We also made improvements to the connection configuration. See [Embrace overview]({{ site.baseurl }}/data-integrate/embrace/embrace-intro.html).
+
+### Pinboard export in PDF format has branding, and more
+We enhanced the presentation experience even more. You can now brand the PDF with your own logo, add pagination, and supply footer text. When using the _Visualizations_ mode, you can de-select some of the visuals. See [Download a Pinboard as PDF]({{ site.baseurl }}/end-user/pinboards/download-pinboard-pdf.html).
+
+### New group functions
+- [median function]({{ site.baseurl }}/reference/formula-reference.html#median)
+- [nth_percentile function]({{ site.baseurl }}/reference/formula-reference.html#nth_percentile)
+
+### Streamlined AWS data loading from an S3 bucket
+You can now load data from an S3 bucket into your ThoughtSpot AWS instance faster than ever before. By assigning an AWS IAM role to your instance which has read-only access to your S3 bucket, you no longer have to enter S3 credentials or root when loading data. For more information, see [Loading data from an AWS S3 bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-an-aws-s3-bucket)
+
+{: id="531-fixed"}
+## 5.3.1 Fixed Issues
+
+An issue when using a custom calendar where a query that filters on a date field causes a database error is now fixed.
+
+A problem where signing in to ThoughtSpot multiple times in quick succession causes a 500 error is now fixed.
+
+An issue when row-level security is used, where a 2-column join in a fan-trap query does not work if the column contains NULL data/values is now fixed.
+
+A problem where opening certain pinboards can cause the Google Chrome browser to freeze is now fixed.
+
+An issue where columns renamed in a worksheet revert back to their original names later is now fixed.
+
+A problem where columns cannot be deleted from a worksheet is now fixed.
+
+An issue in custom calendar where filtering the date values by year, month or quarter does not work is now fixed.
+
+A problem where Canadian postal codes do not appear on maps is now fixed.
+
+An issue where the Admin > Style Customization page indicates the wrong pixel dimensions required for a wide application logo is now fixed.
 
 {: id="53-new"}
 ## 5.3 New Features and Functionality
@@ -55,7 +100,7 @@ Our brand new mobile app is now available for customers with ThoughtSpot 5.1 or 
 
 To upgrade to this release, all users must have a valid email in ThoughtSpot. We block the upgrade if all users don't have valid emails.
 
-Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure LDAP for Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
+Before this release, the email field was not mandatory. See changes to [Create a user through the interface]({{ site.baseurl }}/admin/users-groups/add-user.html#create-a-user-through-the-interface). To make bulk updates to emails, see [Configure authentication through Active Directory]({{ site.baseurl }}/admin/setup/LDAP-config-AD.html).
 
 ### Amazon S3 persistent storage option
 
@@ -102,11 +147,19 @@ We simplified feedback for insights and analysis to use fewer questions. These q
 
 ### SearchIQ optimization and other enhancements
 
-**SearchIQ is in beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
+**SearchIQ is in Beta.**  We made significant improvements in setup of SearchIQ and its ability to interpret natural language queries. See [Optimize SearchIQ]({{ site.baseurl }}/end-user/search/searchiq-optimize.html).
 
 ### Schema and join information
 
 You can now see the schema information and join information at the same time, under the **Schema** tab of each table, worksheet, and view. For an example, see [Modify joins within a worksheet]({{ site.baseurl }}/admin/worksheets/mod-ws-internal-joins.html).
+
+### New geo map support
+<!--SCAL-48652-->
+Starting with this release, ThoughtSpot supports geo maps for these countries and regions:
+ - United Kingdom: Zip Code
+ - Sweden: Postal Code
+
+ See [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference.html).
 
 ### Drivers
 
@@ -151,8 +204,16 @@ We also updated our drivers; see [Downloads]({{ site.baseurl }}/release/download
 
 - A problem where a saved answer cannot be opened when it uses an aggregate function is now fixed.
 
+{: id="beta-program"}
+## Beta Programs
+If you are interested in seeing some of our newest features, we want to add you to our testing group. ThoughtSpot is looking for people with all levels of experience: end-users, analysts, administrators, configurators...
+We like to have a diversity of experience and perspective, and want to hear from you. Because we strive for excellence, we will partner with you to adjust the final details of our offerings based on your feedback.
+These features are currently in Beta. Please contact us if you are interested in participating:
+- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Explore%20Beta%20Program%20Request" target="_blank">Explore Beta Program</a> for AI-enabled guidance to deeper data insights.
+- Email <a href="mailto:BetaProgram@thoughtspot.com?subject=Embrace%20Beta%20Program%20Request" target="_blank">Embrace Beta Program</a> to query external databases, like Snowflake.
+
 {: id="notes-for-older-versions"}
-## Notes from older versions
+## Notes from Older Versions
 
 * [5.2 Release Notes](/5.2/pdf/ThoughtSpot_Release_Notes_5.2.pdf)
 * [5.1 Release Notes](/5.1/pdf/ThoughtSpot_Release_Notes_5.1.pdf)

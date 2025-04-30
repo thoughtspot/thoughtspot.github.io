@@ -1,6 +1,6 @@
 ---
 title: [Understand the backup strategies]
-tags: [bestpractices,limitations]
+
 
 last_updated: tbd
 sidebar: mydoc_sidebar

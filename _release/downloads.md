@@ -1,7 +1,6 @@
 ---
 title: ["Downloads for ThoughtSpot"]
 toc: false
-keywords: downloads, source, install
 last_updated: 07/12/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

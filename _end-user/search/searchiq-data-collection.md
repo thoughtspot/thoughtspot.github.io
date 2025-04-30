@@ -1,13 +1,15 @@
 ---
 title: [SearchIQ data collection]
-
-last_updated: tbd
+last_updated: 09/23/2019
 summary: "Learn what data SearchIQ collects about usage and language mappings."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+**SearchIQ is in Beta.**
 
-SearchIQ collects data to inform how it interprets natural language searches.
+{% include note.html content="SearchIQ is turned off by default, you can have ThoughtSpot Support enable it for you. SearchIQ is only available in English." %}
+
+SearchIQ collects data to improve its interpretation of natural language search.
 
 Here are some FAQs (frequently asked questions) about data collection in SearchIQ:
 

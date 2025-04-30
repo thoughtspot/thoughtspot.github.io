@@ -1,6 +1,6 @@
 ---
 title: [Use the JDBC Driver]
-keywords: jdbc,driver,connection
+
 last_updated: tbd
 summary: "How to configure the JDBC driver. "
 sidebar: mydoc_sidebar

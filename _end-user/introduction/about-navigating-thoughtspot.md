@@ -1,7 +1,6 @@
 ---
 title: [Finding your way around]
-
-last_updated: tbd
+last_updated: 09/23/2009
 toc: false
 summary: "ThoughtSpot is organized into several sections to make navigation easy. You can reach them by using the menu bar."
 sidebar: mydoc_sidebar
@@ -73,7 +72,7 @@ to use SpotIQ, that option does not appear.
 
 **Search** is where you will spend most of your time. It allows you to search and explore your data. Choose your data sources and type in the search bar at the top. As you type your search, results will appear in the main part of the screen as either a table or a chart.
 
-If SearchIQ has been enabled by your administrator, this label will say **Search+** to differentiate it from SearchIQ. In this case, use the search bar on the homepage to use SearchIQ.
+If SearchIQ (**Beta**) is enabled by your administrator, this label is **Search+**, to differentiate it from SearchIQ. Use the search bar on the homepage to use SearchIQ.
 
 To learn more about this section, visit [About search]({{ site.baseurl }}/end-user/search/about-starting-a-new-search.html#).
 
@@ -91,7 +90,7 @@ To learn more about pinboards, visit [About pinboards]({{ site.baseurl }}/end-us
 
 ## SpotIQ
 
-If SpotIQ has been enabled by your administrator, you can go here to view the status of your request after you choose **Auto Analyze** or **Custom Analyze**, and to see the results.
+If SpotIQ is enabled by your administrator, you can go here to view the status of your analysis requests to see the results.
 
 To learn more about this section, visit [About SpotIQ]({{ site.baseurl }}/spotiq/whatisspotiq.html#).
 

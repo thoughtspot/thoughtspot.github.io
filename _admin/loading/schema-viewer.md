@@ -1,8 +1,8 @@
 ---
 title: [How to view a data schema]
-keywords: schema viewer, relationships, keys, worksheet
+
 last_updated: 07/27/2019
-tags: [Modeling]
+
 toc: true
 summary: "Use the schema viewer to see tables and worksheets and their relationships. "
 sidebar: mydoc_sidebar

@@ -1,7 +1,7 @@
 ---
 title: [Configure NAS file system]
-keywords: tscli, backup, restore
-tags: [networking, tscli, nas]
+
+
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,7 +1,7 @@
 ---
 title: [Using the in keyword for nested searches]
-keywords: in, "query on query", "nested search","nested WHERE clause"
-tags:
+
+
 last_updated: tbd
 summary: "You can use the in keyword to do a search on the result of another search."
 sidebar: mydoc_sidebar
