@@ -53,7 +53,7 @@ If you want to go back one step at a time while drilling down, [add your answer 
 
 ## Save and share your new answer
 When you find a valuable insight using Drill down, you may want to save that Answer instead of trying to recreate it in the **Search** bar later.
-1. Click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
+1. Click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline}.
 2. Select **copy and edit**.
 3. **Save** your new Answer and continue working with it.
 3. Alternatively, select **Download** to download an image of your current visualization.

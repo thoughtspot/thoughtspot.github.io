@@ -1,6 +1,6 @@
 ---
 title: [Geo Map Reference]
-last_updated: 5/21/2020
+last_updated: 2/10/2021
 summary: "ThoughtSpot recognizes and supports a broad list of geographic regions and their subdivisions."
 sidebar: mydoc_sidebar
 toc: false
@@ -8,17 +8,18 @@ permalink: /:collection/:path.html
 ---
 This reference lists supported countries and their subdivisions. ThoughtSpot renders these regions in geo maps.
 
-You may have to make changes to your data to support geo maps. For example, you may be collecting data for locations in Washington County, Alabama, and also for locations in Washington County, Wisconsin. According to the 2010 Census, there are 31 distinct Washington Counties in the United States.
+| You may have to make changes to your data to support geo maps.<br/><br/>For example, you may be collecting data for locations in Washington County, Alabama, and also for locations in Washington County, Wisconsin.<br/><br/>According to the 2010 Census, there are 31 distinct Washington Counties in the United States.<br/><br/>To account for multiple different geographical entities with the same name, you must be specific within your data.<br/><br/>A value of *Washington County* without a state attached to it may result in incorrect or incomplete geo maps. | ![Washington Counties in United States]({{ site.baseurl }}/images/wa-county.png "Washington Counties in United States") |
 
-To account for multiple different geographical entities with the same name, you must be specific within your data. A value of *Washington County* without a state attached to it may result in incorrect or incomplete geo maps.
+## Supported countries and codes
+ThoughtSpot supports mapping of the following countries without subdivisions. To view the countries with associated subdivisions that ThoughtSpot supports, refer to [Supported countries and subdivisions](#subdivisions).
 
-## Download the supported geo maps CSV file
-You can download a CSV file containing all the supported values for geo map countries, codes, and subdivisions. Use this file to confirm that your own geographical values are in the right format, and that ThoughtSpot supports them. Download the CSV file <a href="{{ site.baseurl }}/downloads/geomaps-supported-countries-codes-subdivisions-6.1.csv" download="geomaps-supported-countries-codes-subdivisions-6.1.csv" target="_blank">here</a>.
+<details><summary><strong>Supported countries and codes</strong></summary>
+{% include content/geo/supported-countries-codes.md %}
+</details>
 
-{% include note.html content="The CSV file contains leading 0s where these zeros are present for ThoughtSpot at the beginning of zip/post code values. However, if you import this file into Excel or another spreadsheet tool, that tool may remove leading zeros, resulting in data that does not match ThoughtSpot's format." %}
-
+{: id="subdivisions"}
 ## Supported countries and subdivisions
-ThoughtSpot supports the following countries and their associated subdivisions. Click on the subdivisions to expand.
+ThoughtSpot supports the following countries and their associated subdivisions:
 <dl>
 <dlentry>
 <!--Since 5.2.0-->
@@ -106,6 +107,21 @@ ThoughtSpot supports the following countries and their associated subdivisions. 
 </dd>
 </dlentry>
 
+<dlentry>
+<dt>India</dt>
+<dd>
+<details><summary><strong>State</strong></summary>
+{% include content/geo/in-state.md %}
+</details>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/in-district.md %}
+</details>
+<details><summary><strong>Postal Code</strong></summary>
+{% include content/geo/in-postcode.md %}
+</details>
+</dd>
+</dlentry>
+
 <!--Since 6.0.0-->
 <dlentry>
 <dt>Italy</dt>
@@ -128,6 +144,9 @@ ThoughtSpot supports the following countries and their associated subdivisions. 
 <dd>
 <details><summary><strong>Prefecture</strong></summary>
 {% include content/geo/jp-prefecture.md %}
+</details>
+<details><summary><strong>City</strong></summary>
+{% include content/geo/jp-city.md %}
 </details>
 <details><summary><strong>PMC</strong></summary>
 {% include content/geo/jp-pmc.md %}
@@ -163,6 +182,21 @@ ThoughtSpot supports the following countries and their associated subdivisions. 
 </details>
 <details><summary><strong>Postal Code</strong></summary>
 {% include content/geo/pl-postal-code.md %}
+</details>
+</dd>
+</dlentry>
+
+<dlentry>
+<dt>Portugal</dt>
+<dd>
+<details><summary><strong>District</strong></summary>
+{% include content/geo/pt-district.md %}
+</details>
+<details><summary><strong>Municipality</strong></summary>
+{% include content/geo/pt-municipality.md %}
+</details>
+<details><summary><strong>Postcode</strong></summary>
+{% include content/geo/pt-postcode.md %}
 </details>
 </dd>
 </dlentry>

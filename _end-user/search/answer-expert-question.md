@@ -1,11 +1,13 @@
 ---
-title: ["Answer an expert question"]
+title: ["Answer Ask an expert question"]
 
 last_updated: 4/16/2019
 summary: "You're the expert. Now what? Here's how to answer a request from Ask an Expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+
+{% include note.html content="Ask an Expert is not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Ask an Expert, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support." %}
 
 When a user struggles to answer a specific question, build a chart they have in mind, or find something in the data, they can use **Ask an Expert** to request help. The request goes to the designated expert for the data source they were searching. The user can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
 
@@ -14,11 +16,8 @@ When a user struggles to answer a specific question, build a chart they have in 
 1. You receive an email stating that your help is needed, with a link to the request.  
    If you do not have an email set up in ThoughtSpot, follow these steps to check for requests:
    1. Log in to ThoughtSpot.
-   1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help-20px.png){: .inline} (help) icon menu.
-   2. In the drop-down, select **Expert Requests**.
-
-      ![Click Expert requests]({{ site.baseurl }}/images/ask-an-expert.png "Click Expert requests")
-
+   1. In the top right corner of the ThoughtSpot interface, click the ![help menu icon]({{ site.baseurl }}/images/icon-help.png){: .inline} (help) icon menu.
+   2. Select **Get Help > Expert Requests**.
    2. Click **I am an expert** on the top left side of the screen.
    3. You can see a list of all requests for which you are an expert.
 
@@ -34,10 +33,10 @@ When a user struggles to answer a specific question, build a chart they have in 
 
 5. When you've answered the question (and copied the link, if needed), you can mark the request answered by clicking **Mark as resolved**.
 
-6. If you want to see the answer again, you can find it listed along with the other Answers. Click **Answers** in the top menu to see the list of saved Answers, or click **Expert requests** from the help menu to see Answers specific to **Ask an Expert**.
+6. If you want to see the answer again, you can find it listed along with the other Answers. Click **Answers** in the top menu to see the list of saved Answers, or click **Get Help > Expert Requests** from the help menu to see Answers specific to **Ask an Expert**.
 
 
 ## Related information
 
--   [Review answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
+-   [View answers from Ask an expert]({{ site.baseurl }}/end-user/search/retrieve-expert-answer.html)
 -   [Answer Ask an expert questions]({{ site.baseurl }}/end-user/search/answer-expert-question.html)

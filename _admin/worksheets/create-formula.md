@@ -19,22 +19,22 @@ You can create a formula in a worksheet by using the Formula Builder. When you d
 
 3. Type your formula in the Formula Builder.
 
-     ![Use the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-profit.png "Use the Formula Builder")
+     ![Use the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-profit-old.png "Use the Formula Builder")
 
     **Note:** Formula elements are color coded by type and can include the formula operators and functions (blue), the names of columns (purple), and/or constants (black).
 
 5.  You can see a list of formula operators with examples by clicking on **Formula Assistant.**
 
-    ![Formula Assistant]({{ site.baseurl }}/images/worksheet-formula-assistant.png "Formula Assistant")
+    ![Formula Assistant]({{ site.baseurl }}/images/worksheet-formula-assistant-old.png "Formula Assistant")
 
 4. If you want to change what your formula returns, use the **Advanced settings**.
 
    Depending on your formula, you may be able to change:
 
-    -   Data type
-    -   ATTRIBUTE or MEASURE
-    -   Aggregation type
+    -   **Data type**: Determines the type of data that the formula generates. For example, use `date` for an `add_days` formula.
+    -   **Measure or attribute**: Determines if the output of the formula is a measure or an attribute. For example, choose `attribute` for a formula that generates age groups, and choose `measure` for a formula that generates profit.
+    -   **Aggregation**: Determines the default aggregation of the formula output. For example, choose `min` to see minimum profit.
 
-    ![Advanced settings in the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-settings.png "Advanced settings in the Formula Builder")
+    ![Advanced settings in the Formula Builder]({{ site.baseurl }}/images/worksheet-formula-settings-old.png "Advanced settings in the Formula Builder")
 
 6. Name the formula by clicking on its title and typing the new name. Click **Save**.

@@ -5,14 +5,15 @@ summary: "As administrator, you are responsible for setting up and configuring T
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+Your ThoughtSpot application software is already installed for you in a
+ThoughtSpot appliance. This is true for both physical and virtual appliances.
 
-In ThoughtSpot, both physical appliances and virtual machines ship with a base OS image. ThoughtSpot Support then helps you to install, and subsequently update the software. Note the exception of RHEL installations, where the customer provides the OS image themselves, and uses a slightly different installation protocol. 
-
-The ThoughtSpot Support team contacts all clients to schedule updates as we release new versions of ThoughtSpot. To schedule upgrades to patch releases that support your use cases, work with our Customer Success team.
+The ThoughtSpot software is updated by ThoughtSpot Support. ThoughtSpot Support
+will contact you to schedule an update when one becomes available.
 
 As administrator, you are responsible for setting up and configuring
-ThoughtSpot. This guide helps you with these tasks, and also assists in troubleshooting
-some common problems and finding additional resources.
+ThoughtSpot. This guide explains how. It will also assist you in troubleshooting
+some common problems, finding additional resources, and contacting ThoughtSpot.
 
 {: id="display-current-config"}
 ## Display your current configuration
@@ -30,7 +31,6 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     | Firewall                        | Disabled |               |
     | Saml                            | Disabled |               |
-    | Ldap                            | Disabled |               |
     | CustomBranding                  | Disabled |               |
     | CustomBrandingFontCustomization | Disabled |               |
     | DataConnect                     | Disabled |               |
@@ -49,7 +49,6 @@ The following tasks are also available:
 * [Set your locale]({{ site.baseurl }}/admin/setup/set-your-thoughtspot-locale.html)
 * [Test connectivity between nodes]({{ site.baseurl }}/admin/setup/test-network.html)
 * [Set up a fiscal calendar year]({{ site.baseurl }}/admin/setup/set-custom-calendar.html)
-* [Integrate LDAP]({{ site.baseurl }}/admin/setup/about-LDAP.html)
 * [Set up monitoring]({{ site.baseurl }}/admin/setup/set-up-monitoring.html)
 * [Configure support services]({{ site.baseurl }}/admin/setup/work-with-ts-support.html)
 * [Network ports]({{ site.baseurl }}/admin/setup/firewall-ports.html)

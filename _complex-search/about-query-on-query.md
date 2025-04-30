@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-{% include access.html content="Only users with the <strong>Can administrate ThoughtSpot</strong> or the <strong>Can manage data</strong> privilege can create views and link them." %}
+{% include access.html content="Only users with the **Can administrator ThoughtSpot** or the **Can manage data** privilege can create views and link them." %}
 
 {% include important.html content="Views do not support row level security (RLS), so all users of a view can see all the data it contains." %}
 
@@ -43,8 +43,6 @@ Here are the high-level steps for creating and using views:
 
 - For best performance, views should have 50 or fewer columns, and no more than 10 million rows. If your View has more than 10 million rows, consider materializing it. If your View has more than 40 million rows, consider sharding it.
 
-- To improve performance, you can materialize the views.
-
 - You can use an ETL (extract, transform, load) processes to circumvent these limitations.
 
 ## Related Information
@@ -52,4 +50,3 @@ Here are the high-level steps for creating and using views:
 -   [More view scenario examples]({{ site.baseurl }}/complex-search/more-example-scenarios.html#)
 -   [Save a search as a view]({{ site.baseurl }}/complex-search/create-aggregated-worksheet.html#)  
 -   [Constraints]({{ site.baseurl }}/admin/loading/constraints.html#)
--   [Materialized views]({{ site.baseurl }}/admin/loading/materialized-views.html#)

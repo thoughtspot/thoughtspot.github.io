@@ -33,18 +33,10 @@ To sort your search:
 
 * If you are in the chart view, click the axis label of your chart that you would like to sort and select **Sort**. You can choose to sort in ascending or descending order.
 
-### Hidden sort
-
-You can also sort by a measure that you do not want to include in the chart. For example, if you search for `cost store name sort by gross profit margin`, you can move `gross profit margin` to the **Not visualized** section from the **Edit chart** ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-10px.png "chart configuration icon"){: .inline} panel. ThoughtSpot sorts the chart by gross profit margin, but gross profit margin does not appear in the chart. This is also known as a hidden sort.
-
-![Hidden sort example]({{ site.baseurl }}/images/hidden-sort.png "Hidden sort example")
-
-{% include note.html content="You cannot perform a hidden sort on an attribute or date column." %}
-
 ## Change the date bucketing (grouping)
 
 You can change the date _bucketing_ on tables and charts for columns with date
-values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the ellipsis icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} that appears when you hover over a column name on a table.
+values.  Bucketing is a method for grouping a column in your data. To bucket your data in a table view, click the More icon ![]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} that appears when you hover over a column name on a table.
 
 You can specify date bucketing at many granularities, from **detailed** (to the minute or second) to **yearly**, depending on your data. You can also specify bucketing based on the position of a bucket relative to another, larger bucket. For example, you can group data by **month of quarter**, or **week of month**.
 

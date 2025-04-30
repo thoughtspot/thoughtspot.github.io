@@ -25,7 +25,7 @@ spreadsheet.
 
      ![]({{ site.baseurl }}/images/bulk_filter_copy_to_clipboard.png "Copy to the Clipboard")
 
-3. Hover over the column header you want to filter, and click the **three-dot icon (ellipses)** icon.
+3. Hover over the column header you want to filter, and click the More icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
 4. Choose whether you want your bulk filter to **Include** or **Exclude** values.
 

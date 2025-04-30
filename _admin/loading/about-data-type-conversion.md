@@ -1,5 +1,7 @@
 ---
 title: [Convert column data type]
+
+
 last_updated: tbd
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar
@@ -11,10 +13,14 @@ There are some details you should be aware of when doing a data type conversion.
 
 When converting from one data type to another, any values that can not be
 converted will be set to NULL. If errors occur during data type conversion, the
-operation is aborted.
+operation is aborted. However, you may choose to force the conversion despite
+the errors. You can start TQL in allow_unsafe mode to continue with the data
+conversion, at your own risk, of course! To start TQL in unsafe mode, issue this
+command:
 
-[//]: # (However, you may choose to force the conversion despite the errors. You can start TQL in allow_unsafe mode to continue with the data conversion, at your own risk, of course! To start TQL in unsafe mode, issue this command:)
-[//]: # (``` tql --allow_unsafe ```)
+```
+tql --allow_unsafe
+```
 
 Multiple columns of a single table can be converted using a single TQL command.
 The behavior is transactional. So for example, you would issue a command like

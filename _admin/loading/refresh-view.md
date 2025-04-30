@@ -16,7 +16,7 @@ To refresh a view manually, follow these steps:
 
 1. To find your view, click **Data** in the top menu, and choose **Views**.
 
-3. Click **Schema**.
+3. Click **Joins**.
 
 4. In the **Materialization** panel, notice that the **Status** is _Stale_.
 

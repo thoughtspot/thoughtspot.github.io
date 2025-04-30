@@ -1,7 +1,7 @@
 ---
 title: [Join a worksheet to another data source]
 
-last_updated: 7/27/2021
+last_updated: 11/18/2019
 summary: "Learn how to define joins between a worksheet and a table or view."
 toc: false
 sidebar: mydoc_sidebar
@@ -10,11 +10,7 @@ permalink: /:collection/:path.html
 
 Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the  table or view on the column you specify.
 
-See this matrix for information about which joins you can create, and what permissions these joins require.
-
-{% include content/joins-matrix.md %}
-
-{% include note.html content="Defining a generic relationship in the UI rather than using a primary key/ foreign key join through TQL has no impact on performance. However, when creating relationships in the UI, you must ensure that you create it in the right direction: many to one. To create many-to-many joins, or to create joins using >, <, >=, or <=, use TQL." %}
+Note that creating a [foreign key relationship]({{ site.baseurl }}/admin/loading/constraints.html) is preferred over a generic relationship in most cases, except for when you need to do a range join. Foreign key relationships perform better and protect users from overcounting upon aggregation.
 
 You must have either the **Can administer ThoughtSpot** privilege or the **Can manage data** privilege to create a join relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
 
@@ -26,23 +22,25 @@ To create a relationship through the Web interface:
 
 2. Click the name of your worksheet.
 
-3. Click the **Joins** tab. The list showing existing joins within the worksheet appears.
+3. Click **Joins**. You will see the list showing existing joins within the worksheet.
 
 4. To view the joins between the worksheet and other data sources, click **Joins within worksheets** and choose **Joins between worksheets**.
 
-   ![]({{ site.baseurl }}/images/joins-within-worksheet.png "Add join between worksheet")
+   ![]({{ site.baseurl }}/images/worksheet-join-chooser-between.png "Add join between worksheet")
 
 5. Click the **+ Add Join** button on the upper right side of the screen.
 
-   ![]({{ site.baseurl }}/images/worksheet-add-join.png "Add join")
+   ![]({{ site.baseurl }}/images/ws-add-join.png "Add join")
 
-6. In the **Add Join** dialog, choose the destination table or view for the other end of the join.
+6. Use the **Map source to destination** dialog to choose the destination table or view you want to join to.
 
-   ![]({{ site.baseurl }}/images/worksheet-join-dialog.png "Select destination table")
+   ![]({{ site.baseurl }}/images/ws-join-select-destination.png "Select destination table")
 
-7. Choose the matching columns under each table. These columns must use the same data type. [Optional] You can select multiple columns for the same join. To add another pair of matching columns to the join definition, click **+ Add columns**.
+7. Choose the columns you want to join on from the worksheet (source) and destination data source. Click **Next**.
 
-8. Click **Create join**.
+   ![]({{ site.baseurl }}/images/ws-join-select-col.png "Select columns to join on")
+
+8. Give your join a name and description and click **ADD JOIN**.
 
 9. Repeat these steps until all the joins you want to make have been created.
 

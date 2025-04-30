@@ -25,7 +25,7 @@ tscli [-h]
       [--yes]
       [--cluster ]
       [--zoo ]
-      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
+      {access,alert,ansible,backup,backup-policy,calendar,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,logs,map-tiles,monitoring,nas,node,notification,onboarding,patch,rpackage,saml,scheduled-pinboards,set,smtp,snapshot,snapshot-policy,socialproof,ssl,sssd,storage,support,tokenauthentication}
 </pre>
 
 The `tscli` command has several subcommands, such as `alert`, `backup`, and so on.
@@ -281,7 +281,7 @@ tscli backup [-h] {create,delete,ls,restore}
 
   <dl>
     <dlentry>
-      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas,cloud}] [--remote] [--no-orion-master] name out </code></dt>
+      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] [--no-orion-master] name out </code></dt>
       <dd>
         <p>Pulls a snapshot and saves it as a backup. You must specify the snapshot name (<code>name</code>) and the directory to send the backup to (<code>out</code>). The command has the following optional parameters:</p>
 
@@ -362,7 +362,7 @@ tscli backup [-h] {create,delete,ls,restore}
         </dlentry>
         <dlentry>
         <dt><code>--enable_cloud_storage</code></dt>
-          <dd>Enables object storage, on the specified platform, either <code>s3a</code> or <code>gcs</code>. For example, run <code>tscli backup restore --enable_cloud_storage s3a</code> to enable AWS S3 object storage.</dd>
+          <dd>Enables object storage, on the specified platform, either <code>s3a</code> or <code>gcs</code>. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd>
         </dlentry>
         <dlentry>
         <dt>--heterogeneous</dt>
@@ -605,8 +605,6 @@ This subcommand has the following options:
 {: id="tscli-callhome"}
 ### callhome
 
-Provides usage statistics to ThoughtSpot by uploading the callhome bundle data daily into Egnyte.
-
 ```
 tscli callhome [-h] {disable,enable,generate-bundle}
 ```
@@ -614,17 +612,17 @@ tscli callhome [-h] {disable,enable,generate-bundle}
 This subcommand has the following options:
 
 <dl>
-<dlentry>
-  <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
-  <dd>
-    <p>Enables the callhome feature.</p>
-    <p>This feature is enabled by default.</p>
-    <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
-    </dd></dlentry>
-
   <dlentry>
     <dt><code>tscli callhome disable</code></dt>
-    <dd>Turns off the callhome feature.</dd></dlentry>
+    <dd>Turns off the periodic call home feature.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
+    <dd>
+      <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
+      <p>This feature is enabled by default.</p>
+      <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+      </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
@@ -799,7 +797,7 @@ This subcommand has the following options:
     <p>The default is <code>False</code>.</p></dd></dlentry>
     <dlentry>
     <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
-    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli backup restore --enable_cloud_storage s3a</code> to enable AWS S3 object storage.</dd></dlentry>
+    <dd>Determines whether to enable Cloud Storage setup. For example, run <code>tscli backup restore --enable_cloud_storage=s3a</code> to enable AWS S3 object storage.</dd></dlentry>
     <dlentry>
     <dt><code>--heterogeneous</code></dt>
     <dd><p>Should be set for heterogeneous clusters.</p>
@@ -847,7 +845,6 @@ This subcommand has the following options:
   <p>The default is <code>False</code>.</p></dd>
   </dlentry></dl></dd></dlentry>
 
-<!-- SSU is not GA
   <dlentry>
     <dt><code>tscli cluster setup-release-host HOST</code></dt>
     <dd>Sets up the release host for Self Service Upgrade, with the specified <code>HOST</code>.</dd></dlentry>
@@ -855,7 +852,6 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli cluster setup-release-host-key</code></dt>
     <dd>Sets up the release host api key for Self Service Upgrade.</dd></dlentry>  
--->    
 
   <dlentry>
     <dt><code>tscli cluster show-resource-spec</code></dt>
@@ -1344,31 +1340,6 @@ This subcommand has the following options:
     <dd>Shows IPSec status on all nodes.</dd></dlentry>
 </dl>
 
-{: id="tscli-ldap"}
-### ldap
-
-```
-tscli ldap [-h] {add-cert,configure,purge-configuration}
-```
-
-This subcommand has the following options:
-
-<dl>
-  <dlentry>
-    <dt><code>tscli ldap add-cert <em>name</em> <em>cert_file</em></code></dt>
-    <dd>Adds an SSL certificate for LDAP. Use only if LDAP has been configured without
-  SSL and you wish to add it. Use <code>name</code> to supply an alias for the
-  certificate you are installing. Use <code>cert-file</code> to specify the file where the certificate is.</dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli ldap configure</code></dt>
-    <dd>Configures LDAP using an interactive script.</dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli ldap purge-configuration</code></dt>
-    <dd>Purges (removes) any existing LDAP configuration.</dd></dlentry>
-</dl>
-
 {: id="tscli-logs"}
 ### logs
 
@@ -1516,8 +1487,8 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
-      <p>Enables ThoughtSpot's map tiles.  Used when constructing geo map charts.</p>
-      <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
+      <p>Enables ThoughtSpot's map tiles.  Used when constructing geomap charts.</p>
+      <p>If you don't have internett access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
       <dl>
         <dlentry>
           <dt><code>--online</code></dt>
@@ -1527,15 +1498,14 @@ This subcommand has the following options:
         <dlentry>
           <dt><code>--offline</code></dt>
           <dd>
-          <p>Specifies that you are using a <code>maptiles</code> tarball from a local disk, rather than downloading from the internet. Use during offline enablement of map-tiles. You must specify the location of the <code>--tar</code> and <code>--md5</code> on your machine.</p>
-        <p>You must download the <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">tarball</a> and <a href="https://tsengg-geodata.s3.amazonaws.com/md5">md5</a> before you run this command.</p>
+            <p>Specifies that you are using <code>maptiles</code> tar from a local disk.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--tar <em>TAR</em></code></dt>
-          <dd>Specified tar file for map-tiles. Download the tarball <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">here</a>.</dd></dlentry>
+          <dd>Specified tar file for map-tiles.</dd></dlentry>
         <dlentry>
           <dt><code>--md5 <em>MD5</em></code></dt>
-          <dd>Specified md5 file for map-tiles. Download the md5 <a href="https://tsengg-geodata.s3.amazonaws.com/md5">here</a>.</dd></dlentry>
+          <dd>Specified md5 file for map-tiles.</dd></dlentry>
       </dl>
 
     </dd></dlentry>  
@@ -2014,8 +1984,8 @@ This subcommand has the following options:
   </dl>
 
 {% include note.html content="When you enable scheduled pinboards, you should
-also configure a list of intended email domains. Contact ThoughtSpot
-Support for help on how to configure this list." %}
+also configure a whitelist of intended email domains. Contact ThoughtSpot
+Support for help on how to configure a whitelist." %}
 
 {: id="tscli-set"}
 ### set
@@ -2092,12 +2062,6 @@ This subcommand has the following options:
           <dd><p>Set even if relay host is not accessible.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
     </dl>
-    <p>On ThoughtSpot release 6.1.1 or later, on on release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.</p>
-    <p>To use the default port, run the setup command normally:</p>
-    <p><code>$ tscli smtp set-relayhost <em>IP_address</em></code></p>
-    <p>To use a custom port instead of port 25, run the setup command, specifying the port you want to use:</p>
-    <p><code>$ tscli smtp set-relayhost <em>IP_address</em>:<em>custom_port</em></code></p>
-    <p>If you are on 6.1 rather than 6.1.1, or an earlier version than 6.0.5, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a> to use a custom port.</p>
   </dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp set-saslcredentials</code></dt>

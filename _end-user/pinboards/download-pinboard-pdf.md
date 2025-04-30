@@ -13,7 +13,7 @@ You can download a Pinboard in PDF format, without downloading each visualizatio
 
 2. Select a Pinboard from the list of Pinboards by clicking on its title.
 
-3. In the open Pinboard, click the **More Options** menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (ellipses icon), and select **Download as PDF**.
+3. In the open Pinboard, click the More menu ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Download as PDF**.
 
      ![Download Pinboard as PDF]({{ site.baseurl }}/images/pinboard-download-pdf.png "Download a Pinboard as PDF")
 

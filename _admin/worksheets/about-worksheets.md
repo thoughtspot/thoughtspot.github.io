@@ -28,15 +28,13 @@ The process for creating a worksheet is:
 
 1.  Decide which tables to use for the worksheet.
 
-2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another cluster, you can migrate it [using a flat `yaml` file]({{ site.baseurl }}/admin/worksheets/worksheet-export.html#worksheet-migrate).
+2.  [Create a new Worksheet](#create-worksheet). If the worksheet already exists in another cluster, you can migrate it [using a flat `yaml` file]({{ site.baseurl }}/admin/ts-cloud/scriptability.html).
 
 3.  Add sources (tables) to the worksheet.
 
 4.  Choose the [worksheet join rule](progressive-joins.html#).
 
 5.  Select the columns to include.
-
-    {% include note.html content="ThoughtSpot supports multiple join paths for worksheets. For example, you may have a fact table joined to a dimension table more than once. When adding attribute columns from that dimension table to your worksheet, ThoughtSpot prompts you to choose which join path you would like to use for that column. To use multiple join paths, select that attribute again, modify the name, and choose the other join path when ThoughtSpot prompts you to select one." %}
 
 6.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 

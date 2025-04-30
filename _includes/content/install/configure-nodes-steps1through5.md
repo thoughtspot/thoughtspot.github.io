@@ -20,8 +20,6 @@ You can find more information on this process in the [`nodes.config` file refere
 
 {: id="node-step-3"}
 ### Step 3: Prepare node configuration
-{% include warning.html content="<em>DNS server</em> and <em>IP address</em> values must be set in the cloud backend. It then populates them into the VM configuration. If you specify different values during this step, it can create a temporary mismatch and lead to connectivity issues." %}
-
 1. Add your specific network information for the nodes in the `nodes.config` file, as demonstrated in the [autodiscovery of one node example]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example). Run `vim nodes.config` to edit the file.
     ```
     $ vim nodes.config
@@ -30,9 +28,7 @@ You can find more information on this process in the [`nodes.config` file refere
 2. Fill in the areas specified in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html) with your specific network information.<br>
 If you have additional nodes, complete each node within the nodes.config file in the same way.
 
-    Do not edit any part of the `nodes.config` file except the sections described in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.
-
-3. Update the file `/etc/hosts` with all the node IP addresses and hostnames for the other VMs that will be part of the ThoughtSpot cluster.
+Do not edit any part of the `nodes.config` file except the sections described in [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html). If you delete quotation marks, commas, or other parts of the code, it may cause setup to fail.
 
 {: id="node-step-4"}
 ### Step 4: Configure the nodes

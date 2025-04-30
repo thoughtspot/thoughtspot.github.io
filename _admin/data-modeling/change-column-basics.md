@@ -1,7 +1,7 @@
 ---
 title: ["Set column name, description, and type"]
 
-last_updated: 10/1/2020
+last_updated: 3/27/2020
 summary: "Modeling includes setting basic information for a data column such as its name, description, and type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -12,8 +12,6 @@ When you model your data, you set basic information for data columns, such as a 
 example, the **DESCRIPTION** appears as a "tip" when a user hovers over a
 column. It helps users understand where the data they are searching comes
 from.
-
-{% include note.html content="When you change column information such as column names in the UI or in the model file, you do not change this information on the physical table in your database. You only change your metadata. This is why you can have column names with spaces in them in the UI, since physical column names do not support spaces." %}
 
 ## Data modeling from the UI
 To model your data columns from the ThoughtSpot UI, follow these steps:
@@ -44,8 +42,6 @@ To update the column name, follow these steps:
 1. Find the column name you want to change, either on the ThoughtSpot application or in the model file.
 2. Type in the new column name.
 3. Save your changes.
-
-{% include note.html content="If any of your column names or values contain leading or trailing whitespaces, you must remove these spaces before and after column names and values when loading or modeling data. The ThoughtSpot search bar does not accept column names or values with leading or trailing whitespaces. If you must keep these spaces, tell your users to add a delimiter for the search bar to accept them. For example, if you have a column named <code> Sales </code>, with a space before and after the word Sales, you must enter it in the search bar as <code>' Sales '</code>, with single quotes surrounding the name. Otherwise, ThoughtSpot automatically removes the extra spaces and does not recognize the column name." %}
 
 ## Change column description
 

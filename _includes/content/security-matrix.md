@@ -33,9 +33,6 @@
             <div><span>Create View</span></div>
          </th>
          <th class="rotate">
-            <div><span>Create Embrace Connection</span></div>
-         </th>
-         <th class="rotate">
             <div><span>
                Modify Col. Props.<sup>1</sup>
                </span>
@@ -99,7 +96,6 @@
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
-         <td>Y</td>
          <td>Y<sup>2</sup></td>
          <td>Y</td>
          <td>Y</td>
@@ -112,7 +108,6 @@
          <td>
             <div>Can upload <br> user data</div>
          </td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -141,7 +136,6 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
-         <td>N</td>
          <td>Y</td>
          <td>Y</td>
          <td>N</td>
@@ -160,7 +154,6 @@
          <td>
             <div>Can manage data</div>
          </td>
-         <td>Y</td>
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
@@ -192,7 +185,6 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
-         <td>N</td>
          <td>Y</td>
          <td>Y</td>
          <td>N</td>
@@ -210,7 +202,6 @@
          <td>
             <div>Has SpotIQ privilege</div>
          </td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -241,7 +232,6 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
-         <td>N</td>
          <td>Y</td>
          <td>N</td>
          <td>N</td>
@@ -252,7 +242,6 @@
       </tr>
       <tr>
          <td>None</td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>

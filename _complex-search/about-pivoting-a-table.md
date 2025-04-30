@@ -1,77 +1,95 @@
 ---
 title: [Pivot table]
-last_updated: 6/18/2020
+
+
+last_updated: tbd
 summary: "A pivot table is a chart type."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Pivot tables enable you to explore an alternate visualization of your data in a
-wide, customizable table. They allow you to visualize some of your data horizontally and some data vertically in the same table. A pivot table is a chart
-time table that uses a drag-and-drop interface.  
 
-If you would like to visualize your search as a pivot table, click on the **change visualization** icon ![]({{ site.baseurl }}/images/icon-chart-type-10px.png){: .inline} near the top right of your screen, and select **pivot table**. You need at least one attribute and one measure in your search.
+{% include note.html content="Pivot tables are not available in the beta version of Answer V2. Answer V2 is off by default for ThoughtSpot Cloud clusters, but an administrator may turn it on in your environment. To use Pivot tables, turn Answer V2 off by selecting <strong>Switch to classic</strong> from the <strong>Data</strong> panel on the <strong>Search</strong> page, or turn it off at a cluster level by contacting ThoughtSpot Support. Answer V2 features and limitations currently only affect searches and Answers, on the <strong>Search</strong> page and on the <strong>Answers</strong> page. If you have Answer V2 on, you can see existing Pivot tables in your existing Pinboards, but you cannot create new Pivot tables." %}
 
-![Select 'pivot table']({{ site.baseurl }}/images/charts-pivot-table.png "Select 'pivot table'")
 
-You can restructure your pivot table by dragging and dropping the measures and attributes under **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline}, or by dragging and dropping column headings on the table itself.
+Creating a pivot table enables exploring alternate visualization of data in a
+wide table. It is useful especially when improve data display when some data is
+best viewed horizontally, while others, vertically. Pivot tables are a chart
+time table that use a drag-and-drop interface.  
 
-If you right-click a row or column heading, the system displays a contextual sort menu, or allows you to remove all sorting:
+ ![]({{ site.baseurl }}/images/pivot_chart_example.png "Pivot table chart type")
 
-!["Sort by a row heading"]({{ site.baseurl }}/images/charts-pivot-table-sort.png "Sort by a row heading")
+If a **Pivot Table** is available for your answer, you see this type of
+visualization as an option under the visualization. Add rows, measures, and
+columns to the search bar:
 
-!["Sort by a column heading"]({{ site.baseurl }}/images/chart-pivot-table-sort-column.png "Sort by a column heading")
+ ![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png "Chart axes: rows, measures, columns")
+
+
+You can restructure your pivot table by moving these values under **Configure
+Chart** or by dragging and dropping column headings on the table itself. If you
+right-click a row heading, the system displays a contextual sort menu:
+
+![]({{ site.baseurl }}/images/pivot-context-menu.png)
 
 
 ## Expanding or contract columns and rows
 
-Click on a column or row heading to expand it. Additionally, you can expand or collapse all columns and rows by right-clicking the arrow on the top left of a cell.
+Click a column or row to expand it. Additionally, you can expand or collapse all
+by right clicking the arrow on the top left of a cell.
 
-![Expand or collapse all]({{ site.baseurl }}/images/chart-pivot-table-expand-all.png "Expand or collapse all")
+![]({{ site.baseurl }}/images/pivot_table_expand_collapse_all.png "Expand or collapse all option")
 
-When you pin a pivot table to a Pinboard, it retains your expansion settings.
+When you pin a pivot table to a pinboard, it will retain your expansion settings.
 
 ## Display totals
 
-You can see your data as a percent of a row or column total, or as a percent of the grand total. Grand totals aggregate all the data in your pivot table.
+You can show **% Row Grand Total** and, **% of Column Grand Total**, or **% of
+Grand Total** on pivot tables. Grand  totals aggregate data of the entire pivot
+grid. They show values summarized across all available data.
 
-To see your data as a percent, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Click on the dropdown menu to choose whether you want to see your data as a percent of a row or column total, or as a percent of the grand total.
+![]({{ site.baseurl }}/images/pivot-grand-total.png)
 
-![See your data as a percent]({{ site.baseurl }}/images/chart-pivot-table-grand-total.png "See your data as a percent")
-
-You only see 100% value when grand total rows is enabled. When
-it is disabled, the rows and columns have no parental total column, so the
-percentage cannot be calculated. All intermediate totals (columns or rows)
+You only see 100% value when grand total rows is enabled. This is because when
+it is disabled, the rows and columns they have no parental total column and the
+percentage cannot be calculated. All intermediate total (columns or rows)
 display the percentage values calculated with respect to their parent. For each
 inner summary (column or row) the parental total values are assumed to be 100%
 internally.
 
-Select **Pivot Summaries** in the **Settings** menu to see row and column totals.
+To see the total column make sure you also have **Pivot Summaries** checked.
 
-![See row and column summaries]({{ site.baseurl }}/images/chart-pivot-table-summaries.png "See row and column summaries")
+![]({{ site.baseurl }}/images/pivot-summaries.png)
 
 ## Format row headers
 
-You can view your row headers in a more compact (tree) layout. To turn on compact row headers, select **Compact row headers** in the **Settings** menu.
+For row headers, you can switch between the default view and a more compact
+(tree) layout:
 
-![Compact row headers]({{ site.baseurl }}/images/chart-pivot-table-compact.png "Compact row headers")
+![]({{ site.baseurl }}/images/pivot_table_rows_measures_columns.png)
 
-You can change the type of total shown for an aggregated measure from the header menu that appears when you click on a header's **more** icon:
+From the header menu users, change the type of total shown for an aggregated
+measure:
 
-![Change aggregation type]({{ site.baseurl }}/images/chart-pivot-table-aggregate.png "Change aggregation type")
+![]({{ site.baseurl }}/images/pivot-table-agg-totals.png )
 
-## Heatmap mode
+You can also **Remove** a headline.
 
-The heatmap functionality allows you to see which measures contribute more to the total than
-others within the table.
+## Heatmap of large contributors
 
-![Heatmap mode]({{ site.baseurl }}/images/chart-pivot-table-heatmap.png "Heatmap mode")
+The heatmap functionality allows you to see which measures contribute more than
+others (heat) within the table.
 
-To turn on the heatmap, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and click **settings** at the bottom of the chart configuration panel. Select **heatmap mode**.
+![]({{ site.baseurl }}/images/pivot_table_heatmap_mode.png "Heatmap mode enabled")
+
+Toggle on the **Heatmap mode** found under **Configuration Options** to add
+color coordination to your data.
 
 ## Pivot table limitations
 
 The pivot table chart type has these limitations:
 
-- The pivot table displays a maximum of 100k rows. If your query returns more than 100k rows, you cannot visualize it with a pivot table.
-- You cannot show underlying data.
-- You cannot use conditional formatting.
+- Only the first 10,000 data values are used. If you would like to increase this limit, please contact ThoughtSpot Support.
+- Pivot table is not available if the dataset contains more than 100,000 rows.
+- Cardinality is not configurable.
+- Show underlying data menu is unavailable.
+- Conditional formatting is not functional.

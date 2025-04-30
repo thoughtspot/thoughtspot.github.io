@@ -5,9 +5,9 @@ summary: "For each unique person who accesses ThoughtSpot, you must create a use
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can create users directly in ThoughtSpot, or import users and user groups through LDAP or similar protocols.
+You can create users directly in ThoughtSpot, or import users and user groups through SAML or similar protocols.
 
-For users who have access through LDAP, the LDAP installation manages all user information.
+For users who have access through SAML, the SAML installation manages all user information.
 
 {: id="add-user"}
 ## Create a user in ThoughtSpot
@@ -53,8 +53,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="username">
         <th>Username</th>
         <td>Yes</td>
-        <td>A login name for the user. Usernames must be unique and lowercase.
-        <p>If you are using Active Directory to authenticate users, and your LDAP configuration requires users to be created manually (they are not created automatically in ThoughtSpot upon authentication), the username you specify has to be domain-qualified (<code>username@ldap.thoughtspot.com</code>), and you must enter a dummy password.</p></td>
+        <td>A login name for the user. Usernames must be unique and lowercase.</td>
       </tr>
       <tr id="display-name">
         <th>Display name</th>
@@ -64,7 +63,7 @@ To create a new user and assign that user to groups, follow these steps:
       <tr id="sharing-visibility">
         <th>Sharing visibility</th>
         <td>Yes</td>
-        <td>Indicate whether objects can be shared with this user. When set to <b>SHARABLE</b>,
+        <td>Indicate whether objects can be shared with this user. When set to <b>SHAREABLE</b>,
         this user is an option in the <b>Share</b> dialog.</td>
       </tr>
       <tr id="password">
@@ -81,7 +80,7 @@ To create a new user and assign that user to groups, follow these steps:
         <th>Email</th>
         <td>Yes</td>
         <td>The user's email address. ThoughtSpot uses this for  notification when another user shares something with them, for onboarding, for the <strong>Ask an Expert</strong> feature, and others.
-        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to add new domains to your list of allowed domains. </p></td>
+        <p>Note that during cluster configuration, the domain is specified. ThoughtSpot does not accept emails outside this domain. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot Support</a> to whitelist domains. </p></td>
       </tr>    
       <tr id="welcome-email">     
         <th>Send a welcome email</th>

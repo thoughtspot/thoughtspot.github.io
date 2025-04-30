@@ -55,3 +55,8 @@ These functions can be used with text and numeric data types.
 ## Text functions
 
 {% include content/text-func.md %}
+
+{: id="passthrough-functions"}
+## Embrace passthrough functions
+
+{% include content/passthrough-func.md %}
