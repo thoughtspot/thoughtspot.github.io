@@ -1,8 +1,9 @@
 ---
 title: [Waterfall charts]
-
-last_updated: 11/19/2019
-summary: "The waterfall chart shows how an initial value is affected by a series of intermediate positive or negative values."
+tags:
+keywords: tbd
+last_updated: tbd
+summary: "The waterfall chart is used to show how an initial value is affected by a series of intermediate positive or negative values."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

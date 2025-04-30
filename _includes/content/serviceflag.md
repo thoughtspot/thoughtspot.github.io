@@ -1,4 +1,4 @@
-<table style="font-size:90%; padding:4; border-collapse: collapse;">
+<table cellpadding="4" cellspacing="0" frame="border" border="1" rules="all">
  <colgroup>
     <col style="width:25%" />
     <col style="width:25%" />
@@ -17,12 +17,12 @@
  <tr>
     <td><code>infaagent.infaagent</code></td>
     <td><code>agent_max_memory</code></td>
-    <td>Sets the max memory for the Agent JVM for ThoughtSpot Data Connect. <code>max_memory</code> is the maximum memory allowed. 4G is the default value.</td>
+    <td>Sets the max memory for the Agent JVM for ThoughtSpot Data Connect. max_memory is the max memory allowed. 4g is the default value.</td>
  </tr>
  <tr>
     <td><code>infaagent.infaagent</code></td>
     <td><code>bypass_ssl</code></td>
-    <td>Allows you to bypass SSL check during ThoughtSpot connection create for ThoughtSpot Data Connect. It is set to false by default.</td>
+    <td>Allows you to bypass SSL check during ThoughtSpot connection create for,ThoughtSpot Data Connect. It is set to false by default.</td>
  </tr>
  <tr>
     <td><code>infaagent.infaagent</code></td>

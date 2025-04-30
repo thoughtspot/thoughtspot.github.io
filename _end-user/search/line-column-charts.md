@@ -1,6 +1,7 @@
 ---
 title: [Line column charts]
-
+tags:
+keywords: tbd
 last_updated: tbd
 summary: "The line stacked column chart combines stacked column and line charts."
 sidebar: mydoc_sidebar

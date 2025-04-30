@@ -1,47 +1,46 @@
 ---
 title: [Change chart colors]
-
-last_updated: 5/1/2020
-summary: "You can change the colors used in a chart."
+tags:
+keywords: tbd
+last_updated: tbd
+summary: "You can easily change the legend colors in a chart."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To change the colors used in a chart, use the **Customize** menu to dive into the chip for the column or value you would like to change. You can set colors for:
+To change the colors used in a chart, you can use the color picker from the chart. The color you set is used in:
 
-* bars, lines, areas, bubbles, maps, and other visuals on charts
-* slice with color
 * legends on charts
 * tables for conditional formatting
+* tags and editing the colors
 
-You can also [apply a conditional format]({{site.baseurl}}/end-user/search/apply-conditional-formatting.html) to change the color, based on specified criteria. This type of conditional formatting does not work with Line charts.
+To change the chart colors, you need at least one column in the chart's legend.
 
-Colors are maintained across searches within a session. For example, when doing
-a search on `revenue by state`, each state will keep the color assigned to it even
-if you change the search or chart type.
+Colors are maintained across searches within a session. For example, when doing a search on
+revenue by state, each state will keep its color assigned to it even if you change the search or
+chart type.
 
-## Set colors on a chart
+## Add a column to the legend
 
-1. While viewing your search or answer as a chart, click the **chart configuration** icon ![chart configuration icon]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} to open the chart configuration menu.
+1. While viewing your answer as a chart, click **Edit chart configuration** on the right.
 
-    ![Edit chart configuration menu]({{ site.baseurl }}/images/chartconfig-customizemenu.png "Edit chart configuration menu")
+     ![]({{ site.baseurl }}/images/edit_chart_configuration_bar.png "Edit chart configuration icon")
 
-2. Click on the color chip for the column or value you would like to change. Editable chips have a **more** icon: **>**.
+2. Make sure you have a column in the **Legend** field.
 
-2. Use the color picker to choose a new color to represent that value.
+     ![]({{ site.baseurl }}/images/legend_field.png "Legend field")
 
-    You can also enter a HEX value directly.
+## Set a color through the legend
 
-    Your changes are saved immediately.
+1. On the chart, click the color icon of the legend value you would like to change the color of.
 
-3. Click the **X** at the top right to dismiss the chart configuration panel.
+     ![]({{ site.baseurl }}/images/legend.png "Legend values list")
 
-    In the following example, we edited the colors used to **slice with color**.
+2. Use the color picker to choose a new color to represent that legend value.
 
-    ![Change the chart color]({{ site.baseurl }}/images/chart-config.gif "Change the chart color")
+   You can also enter a HEX value directly.
 
-## Set colors from the legend
-When you **slice with color**, or when you have more than one column on an axis, a legend appears next to or below your chart. The legend tells you the value each color in your chart stands for. You can change the colors in your chart directly from the legend. Simply click on the color circle next to a legend item, and click on a different color, or input a HEX value.
+     ![]({{ site.baseurl }}/images/color_picker.png "Legend color picker")
 
-![Change the chart color from the legend]({{ site.baseurl }}/images/chart-config-legend-color.gif "Change the chart color from the legend")
+3. Click outside of the picker to dismiss the picker.
 
-Note that you must click on the color circle ***next to*** the legend item to change the color. If you click on the legend item itself, you temporarily [hide it from the visualization]({{ site.baseurl }}/end-user/search/hide-and-show-values.html).
+4. **Actions > Save** your changes.

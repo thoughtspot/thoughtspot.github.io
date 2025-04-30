@@ -1,6 +1,7 @@
 ---
 title: [Sankey charts]
-
+tags:
+keywords: sankey,chart,process,flow
 last_updated: tbd
 summary: "The Sankey chart is a type of chart that contains both columns and a special type of line chart.
 "
@@ -16,7 +17,7 @@ view sales conversions.
 When you build a Sankey chart you need to provide at least 2 (two) attributes
 and one measure. Your x-axis attributes can contain at most 13 values, any more
 and you cannot view a SanKey chart. ThoughtSpot Sankey charts are read from left
-to right. The width of the flow represents the measure, the attributes or "steps"
+to right. The width of the flow represents the measure the attributes or "steps"
 appear as solid bars:
 
 ![]({{ site.baseurl }}/images/sankey.png "Sankey chart example")

@@ -4,13 +4,11 @@ locale                   : "en"
 destination              : ./_site
 output                   : web
 # Used to designate the current version. Edit when a new version is released
-current_version          : "1.0"
-# Note that site.baseurl for this site evaluates to:
-# http://docs.thoughtspot.com/<version>/
+current_version          : "6.2"
 # used for conditional content filtering
-description              : "Documentation for the ThoughtSpot Cloud BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily."
+description              : "Documentation for the ThoughtSpot BI product. ThoughtSpot is a business intelligence and big data analytics platform that helps you explore, analyze and share real-time business analytics data easily."
 twitter                  : thoughtspot
-url                      : https://cloud-docs.thoughtspot.com
+url                      : https://docs.thoughtspot.com
 # the base hostname & protocol for the site
 repository               : thoughtspot/thoughtspot.github.io
 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -32,8 +30,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-seo-tag
-
-
 
 # Files and directories that jekyll will exclude from the build output
 exclude:
@@ -82,7 +78,7 @@ collections:
     output: true
   appliance:
     output: true
-  appliance/aws:
+  aws:
     output: true
   complex-search:
     output: true
@@ -90,20 +86,17 @@ collections:
     output: true
   data-integrate:
     output: true
+  disaster-recovery:
+    output: true
   end-user:
     output: true
-  # error-codes: output: true
+  error-codes:
+    output: true
   reference:
     output: true
   release:
     output: true
   spotiq:
-    output: true
-  tooltips:
-    output: true
-  faq:
-    output: true
-  practice:
     output: true
 
 defaults:

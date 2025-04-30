@@ -1,6 +1,7 @@
 ---
 title: [Funnel charts]
-
+tags:
+keywords: tbd
 last_updated: tbd
 summary: "The funnel chart shows a process with progressively decreasing proportions amounting to 100 percent in total."
 sidebar: mydoc_sidebar

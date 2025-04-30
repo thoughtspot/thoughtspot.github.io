@@ -1,7 +1,8 @@
 ---
 title: ["Security for SpotIQ functions"]
-summary: Learn about SpotIQ security.
-last_updated: 11/15/2019
+tags:
+keywords: security,SpotIQ,"auto analyze,data"
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

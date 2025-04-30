@@ -1,6 +1,7 @@
 ---
 title: [Treemap charts]
-
+tags:
+keywords: tbd
 last_updated: tbd
 summary: "The treemap chart displays hierarchical data as a set of nested rectangles."
 sidebar: mydoc_sidebar

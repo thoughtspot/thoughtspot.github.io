@@ -1,57 +1,46 @@
 ---
-title: [Formula function reference]
-summary: Learn the operators and functions you can use to create formulas in ThoughtSpot.
-last_updated: 11/19/2019
+title: [Formula reference]
+tags:
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot allows you to create derived columns in worksheets using formulas.
-You create these columns by building formulas using the **Formula Assistant**.
-An individual formula is constructed from _n_ combination of operators and
-functions.
+ThoughtSpot allows you to create derived columns in worksheets using formulas. This reference lists the various operators and functions you can use to create formulas.
 
-This reference lists the various operators and functions you can use to create
-formulas.
+You can also see this list of operators and examples from within the Formula Builder by selecting **Formula Assistant**.
 
-{: id="operators"}
-## Operators
+## Aggregate functions
 
-{% include content/operators.md %}
-
-{: id="aggregate-functions"}
-## Aggregate functions (group aggregate)
-
-Use the following functions to aggregate data.
+These functions can be used to aggregate data.
 
 {% include content/aggregate.md %}
 
-{: id="conversion-functions"}
 ## Conversion functions
 
-Use these functions to convert data from one data type into another data type.
-
-ThoughtSpot does not support _date_ data type conversion.
+These functions can be used to convert data from one data type to another. Conversion to or from date data types is not supported.
 
 {% include content/conversion-func.md %}
 
-{: id="date-functions"}
 ## Date functions
 
 {% include content/date-func.md %}
 
-{: id="mixed-functions"}
 ## Mixed functions
 
 These functions can be used with text and numeric data types.
 
 {% include content/mixed-func.md %}
 
-{: id="number-functions"}
+
 ## Number functions
 
 {% include content/number-func.md %}
 
-{: id="text-functions"}
+## Operators
+
+{% include content/operators.md %}
+
 ## Text functions
 
 {% include content/text-func.md %}

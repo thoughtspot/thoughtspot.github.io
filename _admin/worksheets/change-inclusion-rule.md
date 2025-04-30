@@ -1,49 +1,35 @@
 ---
-title: ["Change the join rule or RLS setting for a worksheet"]
-
+title: [Change the inclusion or join rule for a worksheet]
+tags:
+keywords: "worksheet, join, inclusion rule"
 last_updated: tbd
-
-summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different join or RLS rule."
-toc: false
+summary: "As long as you have permissions to edit a worksheet, you can always go into it and set a different inclusion rule or join rule."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 If you find that the charts and tables built on a worksheet contain a large
 number of null values (which display as `{blank}` in the web browser), you can
-fix this by changing the [internal joins](mod-ws-internal-joins.html#) for the
+fix this by changing the [inclusion rule](about-inclusion-rule.html#) for the
 worksheet.
 
-If you have the **Can administer ThoughtSpot** privilege or the **Can manage data** plus edit privilege on a worksheet, you can
-edit the worksheet and change its RLS or other key settings.
+To change the inclusion or join rule of a worksheet:
 
-## Change/configure a worksheet
+1. Click on the **DATA** icon on the top navigation bar and then on **Worksheets**.
 
-Before working through this procedure, make sure you are familiar with how the
-following affect data:
+    ![]({{ site.baseurl }}/images/data_icon_and_worksheets.png)
 
-* [internal worksheet joins](mod-ws-internal-joins.html#)
-* [worksheet join rule](progressive-joins.html#)
-* [row level security (RLS)]({{ site.baseurl }}/admin/data-security/set-rls.html#)
+2. Click on the name of the worksheet you want to edit from the list.
+3. Click the **Edit** button in the upper right hand side of the screen.
+4. Click on the **Choose Sources** link.
 
-To configure these values for a worksheet:
+    ![]({{ site.baseurl }}/images/worksheet_add_sources_link.png)
 
-1. Click **Data** on the top navigation bar and then on **Worksheets**.
+5. Choose the [inclusion rule](about-inclusion-rule.html#) and/or the [worksheet join rule](progressive-joins.html#).
 
-2. Click the name of the worksheet you want to edit from the list.
+     ![]({{ site.baseurl }}/images/worksheet_join_incusion_rule.png "The worksheet join rule and inclusion rule")
 
-3. Click the **Edit Worksheet** button in the upper right hand side of the screen.
-
-4. Click the **+ icon** next to **Sources**.
-
-5. Scroll to the bottom of the page.
-
-6. Configure the worksheet join rule and RLS setting as needed.
-
-     ![]({{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png "The worksheet join rule and RLS setting")
-
-7. Click **CLOSE**.
-
-8. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+6. Click **Done**.
+7. Click **Actions** and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")

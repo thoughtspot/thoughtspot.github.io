@@ -1,29 +1,53 @@
 ---
 title: ["Downloads for ThoughtSpot"]
 toc: false
-last_updated: 07/12/2019
+keywords: downloads, source, install
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-If you are looking for ThoughtSpot clients or API files, you've come to the right place. Click to download the driver you need, or link to the appropriate guide.
+If you're looking for ThoughtSpot clients or API files, you've come to the right place. Click the link to download the file you need:
 
-## JDBC Drivers ##
+<table cellpadding="1" cellspacing="1" class="mt-responsive-table mt-responsive-table" table="table">
+    <tbody>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading">&nbsp;</td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><strong>Windows</strong></td>
+            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><strong>Linux</strong></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><strong>Solaris</strong></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>ODBC Driver</strong></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="@api/deki/files/3640/ThoughtSpot_windows_odbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://thoughtspot.egnyte.com/dl/MrljBtxjri/">ODBC driver for Windows</a></td>
+            <td class="mt-column-width-30 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_linux_3.4.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://thoughtspot.egnyte.com/dl/hFbkjmVbDZ/">ODBC driver for Linux</a></td>
+            <td class="mt-column-width-25 mt-noheading" style="text-align:center;"><a title="ThoughtSpot_odbc_solaris_sparc_4.2.tar.gz" rel="internal" class="iconitext-16 ext-gz" href="https://thoughtspot.egnyte.com/dl/xyKZdKw6P3/">ODBC driver for Solaris&nbsp;Sparc</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>JDBC Driver</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_jdbc_4.2.zip" rel="internal" class="iconitext-16 ext-zip" href="https://thoughtspot.egnyte.com/dl/zOSHXs8w1E">JDBC driver</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>Informatica<br>
+            Connector</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;">
+            <a target="_blank" title="http://www.informatica.com/products/cloud-integration/connectivity/connectors.html" href="http://www.informatica.com/products/cloud-integration/connectivity/connectors.html" rel="external nofollow" class="external">Informatica&nbsp;Cloud&nbsp;Connectors</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>JavaScript API</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="api.min.js" rel="internal" class="iconitext-16 ext-js" href="https://f1.help.thoughtspot.com/@api/deki/files/3120/api.min.js?revision=1">JavaScript API library</a></td>
+        </tr>
+        <tr>
+            <td class="mt-column-width-20 mt-noheading"><strong>Application Integration Guide</strong></td>
+            <td class="mt-column-width-25 mt-noheading" colspan="3" rowspan="1" style="text-align:center;"><a title="ThoughtSpot_Application_Integration_Guide_3.5.pdf" rel="internal" class="iconitext-16 ext-pdf" href="https://f1.help.thoughtspot.com/@api/deki/files/2555/ThoughtSpot_Application_Integration_Guide_3.5.pdf?revision=6">Application Integration Guide</a></td>
+        </tr>
+    </tbody>
+</table>
 
-ThoughtSpot provides the following JDBC drivers:
-* **JDK 1.8**<br>[thoughtspot_jdbc42jar](https://thoughtspot.egnyte.com/dl/spCdjCGssK/thoughtspot_jdbc4.jar_)
-* **JDK 1.7**<br>[thoughtspot_jdbc41.jar](https://thoughtspot.egnyte.com/dl/HVpvNLw3O8/thoughtspot_jdbc41.jar_)
-* **JDK 1.6**<br>[thoughtspot_jdbc4.jar](https://thoughtspot.egnyte.com/dl/RvFiIEfcLm/thoughtspot_jdbc4.jar_)
+## Installation Instructions
 
-See [JDBC Driver Overview]({{ site.baseurl }}/data-integrate/clients/about-jdbc-driver.html) on instructions for installing and configuring JDBC drivers.
+For documentation on installing and configuration, see the instructions for the client you want to use:</p>
 
-## ODBC Drivers ##
-
-* **Windows**: [ThoughtSpot_windows_odbc_4.2.zip](https://thoughtspot.egnyte.com/dl/xtGeQPL3nD/ThoughtSpot_windows_odbc_4.2.zip_)  
-  See [Install the ODBC driver on Windows]({{ site.baseurl }}/data-integrate/clients/install-odbc-windows.html)
-
-* **Linux**:  [ThoughtSpot_odbc_linux_3.8.tar.gz](https://thoughtspot.egnyte.com/dl/84csZ4USEX/ThoughtSpot_odbc_linux_3.8.tar.gz_)  
-See [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)
-
-## JavaScript API ##
-For the JavaScript API, see the [JavaScript API library](https://thoughtspot.egnyte.com/dl/D8tbICaVbR/).
+* [Install the ODBC driver on Windows]({{ site.baseurl }}/data-integrate/clients/install-odbc-windows.html)
+* [Install the ODBC driver on Linux]({{ site.baseurl }}/data-integrate/clients/install-odbc-linux.html)
+* [Install the ODBC driver on Solaris Sparc]({{ site.baseurl }}/data-integrate/clients/install-odbc-solaris.html)

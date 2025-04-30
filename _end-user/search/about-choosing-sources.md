@@ -1,5 +1,7 @@
 ---
 title: [Choose a data source]
+tags:
+keywords: tbd
 last_updated: tbd
 summary: "Before you start a new search, make sure you have chosen the right data sources."
 sidebar: mydoc_sidebar

@@ -1,13 +1,14 @@
 ---
 title: [View a data profile]
-summary: View your data profile.
-last_updated: 11/15/2019
+tags:
+keywords: CSV,profile,data
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-After you upload a CSV file, it is available as a table in ThoughtSpot. Click **Data** in the top navigation bar and select your table. Then click
-**Profile**.
+After you upload a CSV file, it is available as a table in ThoughtSpot. The
+**Profile** tab appears after you have selected a specific table from **DATA**.
 
 ![]({{ site.baseurl }}/images/data_profile.png)
 

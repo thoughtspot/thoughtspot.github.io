@@ -1,169 +1,44 @@
 ---
 title: [How rule-based RLS works]
-
-
+tags:
+keywords: tbd
 last_updated: tbd
-summary: "Use rule-based RLS to restrict a group's access to data. Users see only accessible row data."
+summary: "Use rule-based RLS to protect your data so that users see only those rows they are allowed to see based on their group membership."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Row level security works at the group level and is configured on tables. A
-table's RLS rules also apply to any objects with data from that table. So,
-searches, answers, worksheets, and pinboards that rely on a table's data fall
-under RLS rules.
+Row level security works at the group level, not the individual user level. By default, all groups can see all rows for any table they can view. You can limit the rows a group can see by setting rules based on the data values contained in one or more columns. The row level security rules you define on a table also apply to any worksheets and pinboards based on that table.
 
+For each data source (table or imported data), you will define one or more rules that govern which groups can see which data. The rules take the form of an expression which is evaluated for each row and group combination, to decide if that group can see that row. If the expression evaluates to "true", for a particular group, they will be able to see that row.
 
-## Worksheet queries and RLS
-
-You cannot set RLS rules on worksheets, only on tables. However, administrators
-can disable RLS on worksheets that are derived from tables with RLS rules. After
-RLS rules are disabled, users with access to the worksheet can see all its data.
-
-By default, worksheet queries only take into account RLS rules on tables whose
-columns appear in the query. Other related tables that may underly the worksheet
-are ignored. This means that not all RLS rules on underlying tables are applied
-when a user queries a worksheet.
-
-You can configure a stricter application of RLS rules to take into account RLS
-rules from all the tables underlying the worksheet. This is recommended if you
-have key dimension tables that worksheets rely on but that are not necessarily
-regularly accessed through query. To do this, contact ThoughtSpot Customer
-Support.
-
-## Privileges that allow users to set, or be exempt from, RLS
-
-Users in the **Administrators** group or with the **Has administration
-privilege** have full access to everything in the system. As a result:
-
-* Row level security does not apply to them.
-* They can create, edit, and delete RLS rules.
-* They can also disable RLS rules on individual worksheets.
-
-If your installation has enabled the **Can Administer and Bypass RLS** privilege,
-administrators can also grant **Can Administer and Bypass RLS** to groups. Members of
-groups with **Can Administer and Bypass RLS**:
-
-* Are exempt from row-level security (RLS) rules.
-* Can add/edit/delete existing RLS rules.
-* Can check or uncheck Bypass RLS on a worksheet.
-
-This behavior is true regardless of whether the privilege is from a direct group
-membership or indirect (through a group hierarchy).
-
-## Examples of RLS rules
-
-An RLS rule evaluates against two system variables:
-
-{% include content/func-variables.md %}
-
-ThoughtSpot filters a table's rows by evaluating a rule against the
-authenticated user.
-
-A rule is an expression that returns a boolean, `TRUE` or `FALSE`. If the rule
-evaluates to `TRUE`, a user can see that row. If the rule evaluates to `FALSE`
-for the user, then the user cannot view the data and instead they see the
-message `No data to display`.
-
-Rule expression can be implicit or explicit. And rules may or may not contain
-logic. A simple implicit RLS rule has the format:
-
-`COLUMN_FILTER` **= ts_groups**
-
-An example of an explicit rule that contains logic would be:
-
-`if ( COLUMN_FILTER ) then true else false`
-
-Rules can also reference tables other than the table you are securing.
-
-Consider a simple RLS rule example. Your company has `vendor-purchase` table
-such as:
-
- ![]({{ site.baseurl }}/images/rls-example0.png "Simple table")
-
-You want to give your vendors the ability to see trends in company
-purchases. You give vendor personnel access to ThoughtSpot _and_ add them to
-self-titled vendor groups. So, all users from the Starbucks vendor are in the
-`Starbucks` group and all users from `round table` are in the `Round Table` group.
-Then, you set a **Row security** on the `vendor-purchase` table as follows:
-
- `VENDOR = ts_groups`
-
-Only users in `Starbucks` group see `starbucks` data and so forth. Rules ignore
-case inconsistencies and spaces are evaluated so `round table` in the data
-matches the `Round table` group but not a group named `RoundTable` .
-
-Rules can be simple or they can incorporate logic such as `if/then` rules. For
-example, vendors should see their own data but your accounts payable group needs
-to see all the vendor data:
-
-`VENDOR = ts_groups or 'Accounts Payable' = ts_groups `
-
-This rule continues to work as you add data from new vendor or team members to
-`Accounts Payable`. In this way, a well-written rule is _self maintaining_,
-meaning you don't have to revisit the rule as your system changes.
-
-You can also create rules that reference tables other than the table you are
-securing. For example, if you have a `sales` table and `store` dimension table, you
-can use attributes from the `store` table to secure the `sales` table.
-
-## Multiple rules and multiple group membership
-
-You can define multiple rules on table.  In this case, ThoughtSpot treats the
-rules as additive. That is, they are applied using an `OR` operator. If any of
-the rules evaluate to `true` for a user on a row, that row's data is visible.
-
-If a user is a member of multiple groups, the user can see all the rows that are
-visible to all of their groups. The most permissive policy is used.
-
-Members of groups with **Can Administer and Bypass RLS** are exempt from row-level security
-(RLS) rules.  This is true regardless of whether the group membership is direct
-or indirect (through a group hierarchy).
+For a list of operators and functions you can use to build these expressions see [Row level security rules reference]({{ site.baseurl }}/reference/rls-rule-builder-reference.html#).
 
 ## Best practices for using Rule-Based Row Level Security
 
 Use these best practices for Rule-Based Row Level Security:
 
--  Use **Share** as the first level of data access.
+1. Contact ThoughtSpot Support to have them disable search suggestions based on data values.
 
-   Non-administrative users and groups have no way to access any data without
-   first having it shared with them. So, only share what you need.
+    These are not hidden from users when you set row level security, so if you don't want them to ever see a search suggestion from a row they are not allowed to see, you'll need to disable the data value search suggestions.
 
-   When you share, share worksheets. This is a general best practice.
-   Worksheets simplify the data environment for end users; they only need to
-   choose among a few sources, rather than many tables. Also, one worksheet can
-   also  combine data from several tables.
+2. Set up row level security on every table to which it applies.
 
--  Set row level security wherever you want to keep data secure.
+    It is always a possibility that a particular search will only include data from a single table, and a user will see something they shouldn't. So protect your data by setting row level security wherever you want to keep data secure.
 
-    It is always a possible that a particular search only includes data from a
-    single table, and a user will see something they shouldn't. So, protect your
-    data by setting row level security wherever you want to keep data secure.
+3. Give users access to worksheets instead of tables.
 
-- Explicitly grant access for users that should see all rows.
+    This is a general best practice in all implementations. It makes things easier for end users, because they only need to choose among a few sources, rather than every table. Also they won't have to choose five separate tables to get meaningful results. They can choose the single worksheet that combines the tables.
 
-    As soon as you define a rule on a table for one group, you prevent access by
-    all others outside of that group hierarchy. Subsequent rules should
-    specifically add groups that need access.
+4. Explicitly grant access for users that should see all rows.
 
-- Keep in mind that multiple rules on a table are additive with `or`.
+    As soon as you create a row level security definition on a table for one group, all other groups are then blocked from seeing any rows in the table. You have to specifically grant other groups access in order for them to see any rows.
 
-  If you are concerned with security, start with very limited access. Then,
-  expand the access as needed.
+    If you want to ensure that a group can always see all rows in a table, use a rule that always evaluates to "true" for that group. For example:
 
-- Keep rules simple.
+    -   if `ts_groups = supergroup` then `true`
 
-  Complex rules can impact the system performance. So, err on the side of
-  simple rules rather than complex rules with a lot of logic.
+## Row level security with multiple conditions
 
+When multiple row level security rules apply, the permissions are additive. That is, when there are multiple row level security conditions specified on a table, they are applied using an OR operator. If any of the rules applied allow a user to see a particular row, the row will be shown to that user.
 
-## Related information
-
-* To learn the procedure you follow for setting a rule, [Set RLS rules]({{ site.baseurl }}/admin/data-security/set-rls.html#)
-
-* For a list of operators and functions you can use to build RLS rules see
-[Row level security rules reference]({{ site.baseurl
-}}/reference/rls-rule-builder-reference.html#).
-
-* For information on bypassing rules on a worksheet, see [Change inclusion, join,
-or RLS for a worksheet]({{
-site.baseurl}}/admin/worksheets/change-inclusion-rule.html#).
+If a user is a member of multiple groups, the user will be able to see all the rows that are visible to all of the groups, so the most permissive policy is used.

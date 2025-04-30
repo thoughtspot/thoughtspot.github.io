@@ -1,7 +1,8 @@
 ---
 title: ["What is SpotIQ?"]
-summary: Learn about SpotIQ.
-last_updated: 11/15/2019
+tags:
+keywords: SpotIQ, "auto analyze", insights, generation
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -24,11 +25,11 @@ to SpotIQ:
 ![]({{ site.baseurl }}/images/spotiq-is-on.png)
 
 If you can't see this option, ask your ThoughtSpot Administrator to give you the
-**Has Spot IQ** privilege.
+**Has Spot IQ** privileges.
 
 ## Where to find SpotIQ actions
 
-The **SpotIQ** page shows you all the analysis results in the system you
+The **SpotIQ** page shows you the all the analysis results in the system you
 have access to, these results are called SpotIQ _insights_. You can create your
 own results from several different locations in your system:
 
@@ -37,6 +38,11 @@ own results from several different locations in your system:
 * data uploads
 * SpotIQ insights
 
-The menu items that use SpotIQ have a label that indicates this:
+The menu items that use SpotIQ have a lozenge that indicates this:
 
 ![]({{ site.baseurl }}/images/spotiq-menu-items.png)
+
+## How do you use SpotIQ?
+
+The best way to learn how to use SpotIQ is to try it for your self.
+The [SpotIQ 101 tutorial](overview.html) walks you through a simple example.

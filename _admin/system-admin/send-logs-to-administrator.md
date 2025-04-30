@@ -1,7 +1,8 @@
 ---
 title: [Send logs when reporting problems]
-last_updated: 11/18/2019
-summary: You can report problems to ThoughtSpot support or your administrator by sending logs.
+tags:
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -35,13 +36,10 @@ To generate a log bundle:
 
 ## Send a log to the administrator
 
-Alternately, you can easily send log files directly to your administrator with a
-single click. When ThoughtSpot encounters a problem, a red bar displays in the
-browser with an error message. You can use the **Report Problem** option to
-complete this task.
+Alternately, you can easily send log files directly to your administrator with a single click. When ThoughtSpot encounters a problem, a red bar displays in the browser with an error message. You can use the **Report Problem** option to complete this task.
 
-Click **Report Problem** in the bottom right corner of the error message.
+1. Click **Report Problem** in the bottom right corner of the error message.
 
-![]({{ site.baseurl }}/images/trace_log.png "Report problem")
+     ![]({{ site.baseurl }}/images/trace_log.png "Report problem")
 
-The logs will be sent to your administrator as an email attachment from your email account. Your administrator then has the option to followup with ThoughtSpot, if necessary.
+    The logs will be sent to your administrator as an email attachment from your email account. Your administrator then has the option to followup with ThoughtSpot, if necessary.

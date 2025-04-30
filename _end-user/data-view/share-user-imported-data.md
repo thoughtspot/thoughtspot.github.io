@@ -1,31 +1,37 @@
 ---
 title: [Share uploaded data]
-last_updated: 2/12/2020
-summary: When you upload data to ThoughtSpot, you can share it with others.
-toc: false
+tags:
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-![Share data]({{ site.baseurl }}/images/sharing-data.gif "Share data")
-<!--{% include image.html file="sharing-data.gif" title="Share data" alt="Learn how to share data." caption="Share data" %}-->
+If you upload a spreadsheet, you can share **Can View** or **Can Edit** privileges with other people, who can further share them with others.
 
-If you upload a spreadsheet, you can share **Can View** or **Can Edit**
-privileges with other people, who can further share them with others.
+Data that you uploaded from a Web browser is only visible to you and to the administrator. You can share the entire uploaded table, or only some of its columns.
 
-## Understand data sharing
+Share uploaded data by following these steps:
 
-Data that you upload from a Web browser is only visible to you and to the
-administrator. You can share the entire uploaded table, or only some of its
-columns.
+1. Click on **DATA**, on the top navigation bar.
 
-By default, if you share only some table columns, users with access to those
-columns cannot see the other columns' data in their searches. However, the data
-can become visible if a worksheet or pinboard that _also contains_ those columns
-is shared with these users.
+     ![]({{ site.baseurl }}/images/data_icon.png "Data")
 
-If you want to prevent other users from revealing your excluded columns,
-you can ask your administrator to enable a stricter behavior.
+2. Click on the name of the uploaded data you want to share.
+3. Click the **Share** icon.
 
-You can share data [from the **Data** tab](#share-datatab), or [from within the table, worksheet, or view](#share-dataset) that you want to share.
+    ![]({{ site.baseurl }}/images/share_tables.png)
 
-{% include content/share-data.md %}
+4. Select **Entire Table** or **Specific Columns**.
+
+    ![]({{ site.baseurl }}/images/share_table.png)
+
+5. If you selected **Specific Columns**, select the column(s) to share.
+6. Click **+ Add users or groups** and select the users and groups that you want to share with.
+
+    ![]({{ site.baseurl }}/images/share_table_with_users.png)
+
+7. Configure the level of access by selecting from the dropdown list. You can select:
+    -   **Can View** to provide read-only access. This enables viewing the table data and defining worksheets on the table.
+    -   **Can Edit** to allow modification. This enables renaming, modifying, or deleting the entire table and adding or removing its columns.
+8. Click **Add and Save**.
+9. Click **Done**.

@@ -89,7 +89,7 @@ a.navbar-brand:hover {
 }
 
 .printTitle {
-    color: #4E55FD !important;
+    color: #ç !important;
 }
 
 body.print h1 {color: #272A7F !important; font-size:28px !important;}
@@ -109,7 +109,7 @@ li.bookTitle {
   margin-top:20px;
     font-weight:normal;
     font-size:130%;
-    color: #000000;
+    color: #4E55FD;
     margin-bottom:10px;
     margin-left: 5px;
 

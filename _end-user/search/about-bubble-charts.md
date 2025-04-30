@@ -1,5 +1,7 @@
 ---
 title: [Bubble charts]
+tags:
+keywords: tbd
 last_updated: tbd
 summary: "The bubble chart displays three dimensions of data with each containing a set of values."
 sidebar: mydoc_sidebar

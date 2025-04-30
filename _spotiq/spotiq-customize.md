@@ -1,13 +1,14 @@
 ---
-title: ["SpotIQ 101: Do more with SpotIQ"]
-summary: Learn more advanced functions of SpotIQ.
-last_updated: 11/15/2019
+title: ["SpotIQ 101: Review insights"]
+tags:
+keywords: customize, SpotIQ, "data analysis"
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You've finished the [second part of the tutorial](work-with-insights.html). In this, the third and final
-part, you can learn how to modify a SpotIQ analysis to extend or customize
-the analysis.  You can edit an insight to customize the chart it uses, or modify
+part, you'll learn how you can modify a SpotIQ analysis to extend or customize
+the analysis.  You'll edit an insight to customize the chart it uses or modify
 the **Search** syntax behind it.
 
 ## Customize an analysis
@@ -19,7 +20,7 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
 2. Select the first insight.
 3. Choose the menu and select **Auto Analyze**.
 
-   ![]({{ site.baseurl }}/images/spotiq-auto-again.png)
+   ![]({{ site.baseurl }}/images/spotiq-save.png)
 
    The system responds by starting a new insight run based on the single chart.
    Each time you request a change to the analysis settings, it starts another
@@ -53,31 +54,18 @@ The outlier insights weren't really that useful. Let's try to dig deeper into th
 
 7. Select the **Customize algorithms** tab.
 8. Uncheck the **Outlier Detection using Z-Score** option.
-9. Click **ANALYZE**.
+9. Click **Trigger Analysis**.
 
    SpotIQ starts a new analysis.
 
 10. Open the new analysis from the SpotIQ page.
 
-    Notice that the new analysis has the same name as the last one you ran.
-    The new results include an outlier, and a cross-correlation. These new charts
-    show a definite outlier, `6/30/2005`.
+    You'll find that the new analysis has the same name as the last one you ran.
+    The new results include an outlier and a cross-correlation. You'll discover
+    with these new charts a definite outlier `6/30/2005`.
 
     ![]({{ site.baseurl }}/images/spotiq-definite-outlier.png)
 
-The changes you make in this step persist on the underlying data for all your
-future analyses. You can unset these values by going back into the dialog and
-removing what you set.
-
-## A temporary customization for a single insight
-
-Finally, you might have noticed the thumbs at the bottom of each insight. Use the thumbs up to tell SpotIQ you like the data insight. Clicking thumb's down display an **Improve Analysis** dialog:
-
-![]({{ site.baseurl }}/images/spotiq-thumbs-down.png)
-
-You can exclude a value from this individual analysis and rerun the analysis. Unlike the **Customize Analysis** action, this action works only on this analysis and does not persist.
-
-Try this for yourself later at some point.
 
 ## Modify an insight search and visualization
 
@@ -86,7 +74,7 @@ visualization may help in this case. You can also modify the charts you see in
 your results. Try this now.
 
 1. Select the menu on the **Total imports, Total value_added by year** chart.
-2. Click the chart menu and choose **Edit**.
+2. Click on the chart menu and choose.**Edit**.
 
    ![]({{ site.baseurl }}/images/spotiq-edit-chart.png)
 
@@ -106,7 +94,7 @@ your results. Try this now.
    ![]({{ site.baseurl }}/images/spotiq-line-column.png)
 
 5. Choose **Actions > Update**.
-7. Close the dialog by pressing the **Close**.
+7. Close the dialog by pressing the **X**.
 
     The chart with your changes now appears in the **SpotIQ** list. The outlier
     stands out very clearly now in both charts.
@@ -117,20 +105,21 @@ your results. Try this now.
 ## Present your insights
 
 You can present SpotIQ insights in several ways. You can present an individual
-result, or all of them. You can package all the insights in a PDF. This
-is useful for passing a packet of results. Since any insight reflects the
-data at a specific point in time, always consider saving the insight as a PDF.
+result or all of them at once. You can package all the insights in a PDF. This
+is useful for passing a packet of results. Because any insight an insight into
+data at a specific point in time, you should always consider saving the insight
+as a PDF.
 
 1. Locate the **Actions** menu on the corner of the **SpotIQ** page.
 2. Choose **Actions > Download as PDF** from the menu.
 
-   The system downloads a file containing all the insights. Keep in mind this
+   The system downloads a file containing all the insights. Keep in mind this is
    file can be very large if there are a lot of insights found in your data.
 
-You can use the **Present** action to view visualizations that appear in a
-carousel, and present them as a group.
+You can use the **Present** action to view visualizations that appear in a carousel.  can be presented as a group. Present is the best way to To do
+this, do the following:
 
-1. Scroll down to the first carousel with your new charts.
+1. Scroll down to your first carousel with your new charts.
 2. Roll over the right corner of the menu to reveal the menu.
 
    ![]({{ site.baseurl }}/images/spotiq-carousel.png)
@@ -139,11 +128,8 @@ carousel, and present them as a group.
 
     <video src="{{ site.baseurl }}/images/spotiq-present.mp4" width="600" controls preload></video>
 
-    Click through the carousel with the next / previous arrow buttons, or use
-    the left side menu of chart names.
-
-Also, each individual chart has a **Download**, **Present**, or **Copy link**
-action you can take.
+    Each individual chart has a **Download**, **Present**, or **Copy link**
+    action you can also take.
 
 ## Schedule a recurring analysis
 
@@ -156,7 +142,7 @@ business, data changes all the time.
 
    ![]({{ site.baseurl }}/images/spotiq-analysis-check.png)
 
-3. Click the latest **Total imports by CATEGORY_DESC** analysis.
+3. Click on the latest **Total imports by CATEGORY_DESC** analysis.
 
    The **Customize Analysis** dialog appears.
 
@@ -173,14 +159,13 @@ Keep in mind that SpotIQ jobs take resources in your system. So, you really
 don't want to leave casual jobs running in the system.  Go ahead and delete this
 latest job. Now that you know how to schedule a job, it isn't needed anymore.
 
-1. Click the checkbox for the job you just scheduled.
+1. Check the job you just scheduled.
 2. Click **Delete** to remove it.
-
-   ![]({{ site.baseurl }}/images/spotiq-rm-job.png)
 
 ## Congratulations!
 
 Congratulations, at this point you've learned the basics of SpotIQ with
-ThoughtSpot. Throughout the application, you can find the SpotIQ icon on search
+ThoughtSpot. Throughout the application, you'll find the SpotIQ icon on search
 answers, pinboards, visualizations, and data. Wherever you see this option, you
-can click to run suggested or custom analyses, and get new insights on the SpotIQ page.
+can end up on the SpotIQ page, refining your analysis and discovering new
+insights into your business.

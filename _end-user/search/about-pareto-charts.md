@@ -1,6 +1,7 @@
 ---
 title: [Pareto charts]
-
+tags:
+keywords: tbd
 last_updated: tbd
 summary: "The pareto chart is a type of chart that contains both columns and a special type of line chart.
 "

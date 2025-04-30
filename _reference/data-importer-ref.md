@@ -1,15 +1,16 @@
 ---
-title: [tsload flag reference]
-summary: You can modify the behavior of tsload with flags.
-last_updated: 11/19/2019
+title: [ThoughtSpot loader flag reference]
+tags:
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot Loader). This reference section lists all the flags that can be used to modify the behavior of `tsload`.
+For recurring data loads and for scripting loads, use the ThoughtSpot Loader (tsload). This reference section lists all the flags that can be used to modify the behavior of tsload.
 
 ## General tsload flags
 
-<table style="font-size:90%; padding:4; border-collapse: collapse;">
+<table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
    <colgroup>
    <col style="width:25%">
    <col style="width:30%">
@@ -76,7 +77,7 @@ For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot 
     <tr>
       <td><code class="highlighter-rouge">--skip_second_fraction</code></td>
       <td>Skips fractional seconds when loading data.</td>
-      <td>If supplied, the upserts logic may be affected, especially if the date time being loaded is a primary key, and the data has millisecond granularity. Load the data twice, first time as a string with a primary key, and again with second granularity date time. There is no support to store fractional seconds in the ThoughtSpot system.</td>
+      <td>If supplied, the upserts logic may be affected, especially if the date time being loaded is a primary key, and the data has millisecond granularity. Load the data twice, once as a string with a primary key, and again with second granularity date time. There is no support to store fractional seconds in the ThoughtSpot system.</td>
     </tr>
   </tbody>
 </table>
@@ -85,7 +86,7 @@ For recurring data loads and for scripting loads, use `tsload` (the ThoughtSpot 
 
 The following flags are used when loading data from an input file:
 
-<table style="font-size:90%; padding:4; border-collapse: collapse;">
+<table style="font-size:90%;" cellpadding="4" cellspacing="0" summary="" frame="border" border="1" rules="all">
    <colgroup>
       <col style="width:25%">
       <col style="width:30%">
@@ -115,7 +116,7 @@ The following flags are used when loading data from an input file:
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">--trailing_field_separator</code></td>
+      <td><code class="highlighter-rouge">-- trailing_field_separator</code></td>
       <td>Specifies that the field separator appears after every field, including the last field per row.</td>
       <td>Example row with trailing field separator: a,b,c,The default is false.</td>
     </tr>
@@ -137,7 +138,7 @@ The following flags are used when loading data from an input file:
     <tr>
       <td><code class="highlighter-rouge">--has_header_row</code></td>
       <td>Indicates that the input file contains a header row.</td>
-      <td>If supplied, column names in the header row are used to match column names in the target table in ThoughtSpot. If not supplied, the first row of the file is loaded as data, the same as all subsequent rows.</td>
+      <td>If supplied, the first row of the file is ignored. If not supplied, the first row of the file is loaded as data.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">--escape_character "&lt;character&gt;"</code></td>

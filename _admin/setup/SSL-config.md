@@ -1,141 +1,74 @@
 ---
 title: [Configure SSL]
-last_updated: 5/6/2020
-summary: "Secure socket layers (SSL) provide authentication and data security when sending data to and from ThoughtSpot."
+tags: [Security_SSL]
+keywords: tbd
+last_updated: tbd
+summary: "SSL provides authentication and data security"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can use your own SSL certificate to secure ThoughtSpot HTTP(S) traffic.
+You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
 
-{: id="ssl-about"}
 ## About SSL
-To enable SSL for the ThoughtSpot web service, you must provide your organization's SSL certificate for the ThoughtSpot service URL.  If you do not have this certificate, you have the following options:
+Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you'll need your company's own SSL certificate. The certificate is issued per domain, so if you want to use SSL for both HTTP and LDAP, you will need two separate certificates - one for the HTTP domain and one for the LDAP domain.
 
--   Check with your IT department if they have an SSL certificate you can use.
--   Obtain the certificate from an issuing authority.
--   Use the default SSL certificate on the ThoughtSpot nodes.
--   Disable SSL using the `tscli ssl off` command.
+If you do not have an SSL certificate:
 
-ThoughtSpot supports a wide variety of SSL types.
+-   Check with your IT department to see if they already have an SSL certificate you can use.
+-   If not, you will need to obtain the certificate from an issuing authority.
+-   Alternatively, you may disable SSL if you don't want the security it provides by using the command `tscli ssl off`.
 
-{: id="ssl-ports"}
-## Required ports
+There are many SSL vendors to choose from. Check with your existing Web hosting provider first, to see if they can provide the certificate for you.
 
-To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to accommodate incoming connections to Thoughtspot nodes and clusters.
+When you apply for the SSL certificate, you may specify a SAN, wildcard, or single domain certificate. Any of these can work with ThoughtSpot.
 
-{: id="ssl-configure"}
 ## Configure SSL for web traffic
-To add SSL and enable HTTPS in ThoughtSpot, obtain the [SSL certificate chain](#ssl-certificate-chain) and the [private key](#key).
 
-You can then proceed to [Configure SSL using tscli](#ssl-configure-tscli), and [Test the SSL certificate](#ssl-configure-test).
+This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:
 
-{: id="ssl-certificate-chain"}
-### SSL certificate chain
-The SSL certificate chain must be in PEM format, which is an `X.509v3` file that contains ASCII (Base64) armored data, packed between `BEGIN` and `END` directives. The certificate chain may contain a series of certificates, with the root certificate at the bottom and user-facing, while the ThoughtSpot-specific SSL certificate is at the top.
+-   The SSL certificate
+-   The private key
 
-{: id="key"}
-### Private key
-The private key must also be in compatible PEM format. It cannot be password-protected, or passphrase-protected.
+To install the SSL certificate:
 
-{% include note.html content="Do not use a passphrase when creating certificates with ThoughtSpot." %}
-
-If you are prompted to specify a passphrase, first check if it exists by invoking the following command:
-
-```
-openssl rsa -check -in pk.key`
-```
-
-If the answer is 'yes', you must remove the passphrase first, and then proceed to use the private key with ThoughtSpot.
-
-{: id="ssl-configure-tscli"}
-## Configure SSL using tscli
-
-Follow these instructions to install the SSL certificate using tscli:
-
-1. Use the instructions from the certifying authority where you obtained the certificate.
-
-   This is usually sent to you by email, or available for download.
-
+1. Follow the instructions from your certifying authority to obtain the certificate. This is usually sent via email or available by download.
 2. Copy the certificate and key files to ThoughtSpot:
 
       ```
-      $ scp <key> <certificate> admin@<IP_address>:<certificate-path>
+      $ scp <key> <certificate> admin@<IP_address>:<path>
       ```
 
 3. Log in to the Linux shell using SSH.
+4. Change directories to where you copied the certificate:
 
-4. Change to the directory where you copied the files:
+      ```
+      $ cd <path>
+      ```
 
-    ```
-    $ cd <certificate-path>
-    ```
+5. Issue the tscli command to install the certificate:
 
-5. To install the certificate, issue the `tscli` command:
+      ```
+      $ tscli ssl add-cert <key> <certificate>
+      ```
 
-    ```
-    $ tscli ssl add-cert <key> <certificate>
-    ```
-
-6. To test that the certificate is correctly installed, sign in to the ThoughtSpot application (https://docs.thoughtspot.com/6.0/admin/setup/logins.html#sign-in-to-the-thoughtspot-application).
+6. To test that the certificate was installed correctly, [Log in to the ThoughtSpot application](logins.html#log-in-to-the-thoughtspot-application).
 
      You should see that the application's URL begins with `https://`.
 
-{: id="set-tls-version"}
-### Set the recommended TLS version
-ThoughtSpot supports SSL v3, TLS v1.2 by default. Support for TLS v1.0 and v1.1 is included for backwards compatibility. To ensure support for TLS version 1.2:
+## Set the recommended TLS version
+
+There are a couple of security vulnerabilities due to SSL certificates supporting older versions of TLS (Transport Layer Security). This procedure shows you how to set the recommended TLS version to avoid these vulnerabilities.
+
+The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1 and recommends TLS v1.2.
+
+ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2. Therefore, to set the recommended TLS version:
 
 1.  Enable your web browser to support TLS v1.2. This can be done in your browser's advanced settings.
-2.  Log in to the Linux shell using SSH and run command:
+2.  Log in to the Linux shell using SSH..
+3.  Issue the following command:
 
     ```
-    tscli ssl tls-status
-    ```
-
-    It should respond with
-    ```
-    Minimum TLS version supported: 1.2
+    tscli security set-min-version 1.2
     ```
 
     This will block all usage of older versions.
- 3. To change this, run `tls ssl set-min-tls-version 1.1` or `tls ssl set-min-tls-version 1.0` as desired for backward compatibility.
-
-{: id="config-load-balancer"}
-### Configuration string for load balancers
-
-When enabling SSL support on a load balancer’s server-side SSL client profile, make sure to add support for the following ciphers to ensure compatibility between the load balancer and ThoughtSpot.
-
-The following ciphers are currently supported:
-
-```
-|   TLSv1.2:
-|     ciphers:
-|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 - strong
-|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA - strong
-|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 - strong
-|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 - strong
-|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 - strong
-|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA - strong
-|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 - strong
-|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 - strong
-|     compressors:
-|       NULL
-|_  least strength: strong
-```
-
-The cipher string would be as follows:-
-
-```
-EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
-```
-
-You can retrieve these from the ThoughtSpot web server (not against the load balancer) by running the following command on any ThoughtSpot node:
-    ```
-    nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
-    ```
-You must ensure that your load balancer supports these ciphers.
-
-{: id="ssl-configure-test"}
-## Test the SSL certificate
-
-To test if the certificate is installed correctly, see [Sign in to the ThoughtSpot application]({{ site.baseurl
-}}//admin/setup/logins.html#sign-in-to-the-thoughtspot-application).

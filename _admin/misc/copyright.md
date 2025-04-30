@@ -1,13 +1,14 @@
 ---
 title: [Copyright]
-
+tags:
+keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 Copyright for ThoughtSpot publications.
 
-&copy;{{ site.time | date: " 2015, %Y"  }} ThoughtSpot, Inc. All rights reserved.
+&copy;{{ site.time | date: " 2015, %Y" }} ThoughtSpot, Inc. All rights reserved.
 
 ThoughtSpot, Inc. 910 Hermosa Ct, Sunnyvale, CA 94085
 
