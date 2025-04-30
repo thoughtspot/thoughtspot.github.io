@@ -32,7 +32,7 @@ The `tscli` command has several subcommands such as `alert`, `backup`, and so fo
 
 ```
 tscli [subcommand ]
-``` 
+```
 
 Subcommands have their own additional options and actions such as `tscli backup
 create` or `tscli backup delete` for example.  To view help for a subcommand:
@@ -240,7 +240,7 @@ Command to run a command on all nodes.
 *`COPYFIRST`*`] [--timeout` *`TIMEOUT`*`]` *`command`*
 
 * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: `all`)
-* `--dest_dir` *`DEST_DIR`*  Directory to save the files containing output from each nodes. (default: None)
+* `--dest_dir` *`DEST_DIR`*  Directory to save the files containing output from each nodes. (Required. Default: None)
 * `--copyfirst` *`COPYFIRST`* Copy the executable to required nodes first. (default: `False`)
 * `--timeout` *`TIMEOUT`* Timeout waiting for the command to finish. (default: `60`)
 
@@ -328,7 +328,7 @@ tscli fileserver [-h] {configure,download-release,purge-config,show-config,uploa
 This subcommand has the following actions:
 
 * `tscli fileserver configure [-h] --user` *`USER`* `[--password ` *`PASSWORD`* `]` Configures the secure file server username and password for file upload/download and the call home feature. You only need to issue this command once, to set up the connection to the secure file server. You only need to reissue this command if the password changes. The parameter *`PASSWORD`* is optional. If a password is not specified, you will be prompted to enter it.
-* `tscli fileserver download-release [-h] [--user` *`USER`*`] [--password` *`PASSWORD`*`]` *`release`* Downloads the specified release file and its checksum. Specify the release by number, to the second decimal point (e.g. 3.1.0, 3.0.5, etc.). You may optionally specify the `--user` and `--password` to bypass the credentials that were specified when configuring the file server connection with `tscli fileserver configure`. Before using this command for the first time, you need to set up the file server connection using `tscli fileserver configure`.
+* `tscli fileserver download-release [-h] [--user` *`USER`*`] [--password` *`PASSWORD`*`]` *`release`* Downloads the specified release file, including its checksum, and verifies the integrity of release bundle. You'll need to specify the exact release number (e.g. 5.1.3). Before using this command for the first time, you must set up the file server connection using `tscli fileserver configure`. You will then work with a member of the ThoughtSpot Support team since a privileged `--user` (and corresponding `--password`) must be specified to download releases.
 * `tscli fileserver purge-config` Removes the file server configuration.
 * `tscli fileserver show-config` Shows the file server configuration.
 
@@ -533,7 +533,7 @@ This subcommand supports the following actions:
 
 * `tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 MD5]`
 
-  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
+  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have Internet access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
 
   * `--online` Download `maptiles` tar from internet. (default: True)
   * `--offline`   Using `maptiles` tar from local disk. (default: False)
@@ -664,7 +664,7 @@ This subcommand has the following actions:
 
 * `tscli patch apply [-h] [` *`release`*`]`
 
-  Apply the patch on an existing cluster. Before querying status of patch, please allow 2-5 minutes. Takes the following parameters:
+  Apply the patch on an existing cluster. Takes the following parameters:
 
   * *`release`*  The relative path to the patch tar ball
 

@@ -79,11 +79,6 @@
             <div><span>Schema Viewer</span></div>
          </th>
          <th class="rotate">
-            <div><span>Use Data Connect
-               </span>
-            </div>
-         </th>
-         <th class="rotate">
             <div><span>Use Scheduler</span></div>
          </th>
          <th class="rotate">
@@ -103,7 +98,6 @@
          <td>Y</td>
          <td>Y</td>
          <td>Y<sup>2</sup></td>
-         <td>Y</td>
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
@@ -134,7 +128,6 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
-         <td>N</td>
       </tr>
       <tr>
          <td>
@@ -152,7 +145,6 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -182,7 +174,6 @@
          </td>
          <td>Y</td>
          <td>N</td>
-         <td>Y</td>
          <td>N</td>
          <td>N</td>
       </tr>
@@ -202,7 +193,6 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -229,7 +219,6 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
-         <td>N</td>
          <td>Y</td>
       </tr>
       <tr>
@@ -245,7 +234,6 @@
          <td>N</td>
          <td>N</td>
          <td>Y</td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -272,10 +260,9 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
-         <td>N</td>
       </tr>
       <tr>
-      <td colspan="17" id="widefootnote" style="font-size: 6px;">
+      <td colspan="16" id="widefootnote" style="font-size: 10px;">
         <p>Table notes:</p>
         <ol>
               <li>Applies to non-owners only.</li>

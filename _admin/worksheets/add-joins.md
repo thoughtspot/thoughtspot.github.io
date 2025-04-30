@@ -2,13 +2,15 @@
 title: [Join a worksheet to another data source]
 keywords: worksheet view join relationship
 last_updated: 11/2/2018
-summary: "Learn how to define joins between a worksheet and a table, view, or other worksheet"
+summary: "Learn how to define joins between a worksheet and a table or view"
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Joining a worksheet to a table, view, or another worksheet creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the other table, view, or worksheet on the column you specify.
+Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the table or view on the column you specify.
+
+Note that creating a [foreign key relationship]({{ site.baseurl }}/admin/loading/constraints.html) is preferred over a generic relationship in most cases, except for when you need to do a range join. Foreign key relationships perform better and protect users from overcounting upon aggregation.
 
 You must have either the **Can administer ThoughtSpot** privilege or the **Can manage data** privilege to create a join relationship. If you're not an administrator, you also need edit permissions on the table, view, or worksheet.
 
@@ -30,7 +32,7 @@ To create a relationship through the Web interface:
 
    ![]({{ site.baseurl }}/images/ws-add-join.png "Add join")
 
-6. Use the **Map source to destination** dialog to choose the destination table, view, or worksheet you want to join to.
+6. Use the **Map source to destination** dialog to choose the destination table or view you want to join to.
 
    ![]({{ site.baseurl }}/images/ws-join-select-destination.png "Select destination table")
 

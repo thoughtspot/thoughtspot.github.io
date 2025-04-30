@@ -115,7 +115,7 @@ The following flags are used when loading data from an input file:
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">-- trailing_field_separator</code></td>
+      <td><code class="highlighter-rouge">--trailing_field_separator</code></td>
       <td>Specifies that the field separator appears after every field, including the last field per row.</td>
       <td>Example row with trailing field separator: a,b,c,The default is false.</td>
     </tr>

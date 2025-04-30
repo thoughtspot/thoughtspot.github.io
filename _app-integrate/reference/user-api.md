@@ -1,165 +1,129 @@
 ---
-title: [user API]
+title: [User API]
 keywords: REST,API,data,"REST API"
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-- Public namespace: Configuration
+The User APIs enable you to manage user- and group-related operations in the ThoughtSpot system. For example, you may want to view all users and groups in your ThoughtSpot cluster.
 
-## POST /tspublic/v1/user/ownership
+## Transfer ownership
+Use this API to transfer ownership of _all_ objects from one user to another.
 
-Transfers ownership of _all_ objects from one user to another. You cannot
-transfer objects to or from the system user or the administrative user.
+{% include note.html content="You cannot transfer objects to or from the system user or the administrative user." %}
 
-### Parameters
+### Resource URL  
+<code class="api-method-post">post</code> /tspublic/v1/user/transfer/ownership
+
+### Request Parameters
 
 <table>
 <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
-   </colgroup>
+      <col style="width:20%" />
+      <col style="width:15%" />
+      <col style="width:65%" />
+</colgroup>
    <thead>
       <tr>
-         <th>Parameter</th>
+         <th>Query Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
 <tbody>
       <tr>
          <td><code>fromUserName</code></td>
-         <td>
-            <p>Username to transfer from. You cannot specify the system user or an administrative user.
-            </p>
-         </td>
+         <td>string</td>
+         <td>Username to transfer from.
+            </td>
       </tr>
       <tr>
          <td><code>toUserName</code></td>
-         <td>
-            <p>Username to transfer to. You cannot specify the system user or an administrative user.
-            </p>
-         </td>
+         <td>string</td>
+         <td>Username to transfer to.</td>
       </tr>
 </tbody>
 </table>
 
-### HTTP Status Code
+### Request Example
 
-* 200
-* 400
-
-### Request URL
-
+##### cURL
 ```
-https://<instance>/callosum/v1/tspublic/v1/user/transfer/ownership
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/user/transfer/ownership?fromUserName=guest&toUserName=guest1'
 ```
 
-Curl example:
+##### Request URL
 
 ```
-ccurl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/user/transfer/ownership?fromUserName=Auser&toUserName=Buser'
-
+https://<instance>/callosum/v1/tspublic/v1/user/transfer/ownership?fromUserName=guest&toUserName=guest1
 ```
 
-### Response Object Format
+### Response Example
 
 ```
-no content
+Not applicable
+204 - Successful login
 ```
 
-### Response Code
+## Synchronize principals
+Use this API to synchronize ThoughtSpot users and groups with your external database. The payload takes principals containing all users and groups present in the external database and a successful API call returns the object that represents the changes that were made in ThoughtSpot system. This means the following:
+- Objects (users or groups) present in ThoughtSpot, but not present in the external list -  will be deleted in ThoughtSpot.
+- Objects present in ThoughtSpot, and present in the external list - will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
+- Objects not present in ThoughtSpot, and present in the external list - will be created in ThoughtSpot.
 
-```
-200
-```
+### Resource URL
+<code class="api-method-post">post</code> /tspublic/v1/user/sync
 
-### Response Headers
-
-```
-{
-  "x-callosum-incident-id": "d28fd603-bd7e-414f-882b-794d74c4b469",
-  "x-callosum-trace-id": "55453051-5fb5-4139-8d24-adcc0b1b24f2",
-  "date": "Thu, 15 Mar 2018 22:21:47 GMT",
-  "x-callosum-request-time-us": "970213",
-  "server": "ThoughtSpot",
-  "status": "204",
-  "strict-transport-security": "max-age=31536000; includeSubDomains",
-  "pragma": "no-cache",
-  "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "content-security-policy": "script-src 'self'",
-  "x-ua-compatible": "IE=edge",
-  "content-type": null
-}
-```
-
-## POST /tspublic/v1/user/sync
-
-API to synchronize principal from external system with ThoughtSpot system. This
-API is for users and groups. It should help to keep ThoughtSpot users and groups
-automatically synchronized with your external database.
-
-Specifically, you will have to make a call to `/tspublic/v1/user/sync` containing
-all users and groups present in the external database. If the call succeeds,
-then it is guaranteed that the users and groups in ThoughtSpot match those
-specified in the list of objects passed to `/tspublic/v1/user/sync`. This means
-that:
-
-- Objects (users or groups) present in ThoughtSpot, but not present in the list passed to a sync call will be deleted.
-- Objects present in ThoughtSpot, and present in the list passed to a sync call will be updated such that the object attributes in ThoughtSpot match those present in the list. This includes group membership.
-- Objects not present in ThoughtSpot, and present in the list will be created in ThoughtSpot.
-The returned object represents the changes that were made in ThoughtSpot.
-
-
+### Request Parameters
 <table>
    <colgroup>
-      <col style="width:15%" />
-      <col style="width:85%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead>
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
+   <tr>
+      <td><code>principals</code></td><td>string</td>
+      <td>Specifies a list of principal objects. This is ideally a JSON file containing containing all users and groups present in the external database.</td>
+   </tr>
       <tr>
-         <td><code>applyChanges</code></td>
-         <td>A boolean flag to indicate whether to sync the users and groups to the system, and apply the difference evaluated. You can use this API to validate a difference before applying changes.
+         <td><code>applyChanges</code></td><td>boolean</td>
+         <td>A flag indicating whether to sync the users and groups to the system, and apply the difference evaluated. <p><b>Note</b>: Use this parameter to validate a difference before applying changes.</p>
          </td>
       </tr>
+
       <tr>
-         <td><code>password</code></td>
-         <td>A string specifying a password.</td>
+         <td><code>removeDeleted</code></td><td>boolean</td>
+         <td>A flag indicating whether to remove deleted users/groups. When true, this flag removes any deleted users or groups.</td>
       </tr>
       <tr>
-         <td><code>principals</code></td>
-         <td>A string specifying a list of principal objects. </td>
-      </tr>
-      <tr>
-         <td><code>remoteDeleted</code></td>
-         <td>This is boolean flag that indicates whether to remove deleted users/groups. When true, this flag removes any deleted users or groups.boolean </td>
+         <td><code>password</code></td><td>string</td>
+         <td>Specifies a password.</td>
       </tr>
    </tbody>
 </table>
 
-### HTTP Status Code
+### Request Example
+##### cURL
+```
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'applyChanges=false' 'https://<instance>/callosum/v1/tspublic/v1/user/sync'
+```
 
-* 200
-
-### Request URL
+##### Request URL
 
 ```
 https://<instance>/callosum/v1/tspublic/v1/user/sync
 ```
 
-Curl example:
-
-```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'applyChanges=false' 'https://<instance>/callosum/v1/tspublic/v1/user/sync'
-```
-
-### Response Object Format
+### Response Example
 
 ```
 {
@@ -172,89 +136,68 @@ curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header
 }
 ```
 
-### Response Code
 
-```
-415
-```
+## Change password
+Use this API to change the password of a user.
 
-### Response Headers
+### Resource URL
+<code class="api-method-post">post</code> /tspublic/v1/user/updatepassword
 
-```
-{
-  "x-callosum-incident-id": "645499d1-d0cf-4b3b-bbdc-4296abb9a326",
-  "x-callosum-trace-id": "19f7ad7d-226a-4e88-a301-405f85125959",
-  "date": "Sun, 19 Feb 2017 03:55:52 GMT",
-  "x-callosum-request-time-us": "4545",
-  "server": "nginx",
-  "pragma": "no-cache",
-  "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "content-security-policy": "script-src 'self'",
-  "connection": "keep-alive",
-  "content-length": "0",
-  "x-callosum-ip": "192.168.2.247",
-  "content-type": null
-}
-```
 
-## POST /tspublic/v1/user/updatepassword
-
-Changes the password of a user
-
-### Parameters
-
+### Request Parameters
 <table>
    <colgroup>
-      <col style="width:25%" />
-      <col style="width:75%" />
+   <col style="width:20%" />
+   <col style="width:15%" />
+   <col style="width:65%" />
    </colgroup>
    <thead>
       <tr>
-         <th>Parameter</th>
+         <th>Form Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td><code>name</code></td>
-         <td>Name of the user .</td>
+         <td><code>name</code></td><td>string</td>
+         <td>Name of the user.</td>
       </tr>
       <tr>
-         <td><code>password</code></td>
-         <td>String to represent the new user password.</td>
+         <td><code>currentpassword</code></td><td>string</td>
+         <td>The current password of the user.</td>
       </tr>
       <tr>
-         <td><code>currentpassword</code></td>
-         <td>String to represent the current user password.</td>
+         <td><code>password</code></td><td>string</td>
+         <td>A new password of the user.</td>
       </tr>
+
    </tbody>
 </table>
 
-### Request URL
-
+### Request Example
+##### cURL
+```
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest¤tpassword=test&password=foobarfoobar' 'https://<instance>/callosum/v1/tspublic/v1/user/updatepassword'
+```
+##### Request URL
 ```
 https://<instance>/callosum/v1/tspublic/v1/user/updatepassword
 ```
 
-Curl example:
-
+### Response Example
 ```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' -d 'name=guest¤tpassword=test&password=foobarfoobar' 'https://<instance>/callosum/v1/tspublic/v1/user/updatepassword'
-
+Not applicable
+204 - Successful password update
 ```
 
-
-## GET /tspublic/v1/user/list
-
-API to get a list of all users, groups, and their inter-dependencies in the form
-of principal objects. This API is for users and groups.
-
-One principal object contains the following properties (* denotes required properties):
-
+## Fetch users and groups
+Use this API to get a list of all users, groups, and their inter-dependencies in the form
+of principal objects. A typical principal object contains the following properties:
 <table>
 <colgroup>
-      <col style="width:15%" />
-      <col style="width:85%" />
+      <col style="width:20%" />
+      <col style="width:80%" />
    </colgroup>
    <thead>
       <tr>
@@ -266,163 +209,115 @@ One principal object contains the following properties (* denotes required prope
             <tr>
          <td><code>name</code></td>
          <td>
-            <p>String to represent the name of the principal.</p>
+            <p>Name of the principal.</p>
             <p>This field, in conjunction with whether the object is a user or group, is
                used to identify a user/group. Consequently, this field is required to be
-               unique (unique for users and groups separately. I.e. you can have user “x”
+               unique (unique for users and groups separately. i.e., you can have user “x”
                and group “x”).
             </p>
          </td>
       </tr>
  <tr>
          <td><code>displayName</code></td>
-         <td>String to represent the display name of the principal.</td>
+         <td>Display name of the principal.</td>
       </tr>
  <tr>
          <td><code>description</code></td>
-         <td>String to describe the principal.</td>
+         <td>Description of the principal.</td>
          </tr>
 <tr>
          <td><code>mail</code></td>
-         <td>String to represent the email address of the user. This field should be populated only in case of user not group. It is ignored in the case of groups.</td>
+         <td>Email address of the user. This field should be populated in case of user only. It is ignored in the case of groups.</td>
       </tr>
       <tr>
 
          <td><code>principalTypeEnum</code></td>
-         <td><p>The value of this field should be one of the following:</p>
+         <td><p>Type of the user created in the ThoughtSpot system.</p>
             <ul>
-            <li><code>LOCAL_USER</code> User created in the ThoughtSpot system and the validation of the user is done through password saved in the ThoughtSpot database.</li>
-            <li><code>LOCAL_GROUP</code> Groups created in the ThoughtSpot system.</li></ul>
+            <li><code>LOCAL_USER</code>(a user is validated through password saved in the ThoughtSpot database)</li>
+            <li><code>LOCAL_GROUP</code></li></ul>
          </td>
       </tr>
    <tr>
          <td><code>password</code></td>
-         <td>String to represent the password of the user. This field should be only populated in case of user not group. It is ignored in the case of groups. Also password is only required if the user is of LOCAL_USER type. Password is only required when the user is created for the first time. In subsequent update of the user password is not updated even if it changes in the source system.</td>
+         <td>Password of the user. This field should be populated in case of user only. It is ignored in the case of groups. Password is only required:
+         <ul>
+         <li>if the user is of LOCAL_USER type, </li>
+         <li>when the user is created for the first time. </li></ul>In subsequent update, the user password is not updated even if it changes in the source system.</td>
       </tr>
       <tr>
          <td><code>groupNames</code></td>
-         <td>List of group names that a principal belongs to directly. Groups and users can belong to other groups.</td>
+         <td>Group names that a principal belongs to. Groups and users can belong to other groups.</td>
       </tr>  
    </tbody>
 </table>
 
-### HTTP Status Code
+### Resource URL
+<code class="api-method-get">get</code> /tspublic/v1/user/list
 
-* 200
+### Request Example
 
-
-### Request URL
+##### cURL
+```
+curl -X GET --header 'Accept: application/json' 'https://<instance>/callosum/v1/tspublic/v1/user/list'
+```
+##### Request URL
 
 ```
 https://<instance>/callosum/v1/tspublic/v1/user/list
 ```
 
-Curl example:
-
-```
-curl -X GET --header 'Accept: application/json' 'https://<instance>/callosum/v1/tspublic/v1/user/list'
-```
-
-
-### Response Body format
+### Response Example
 
 ```
 [
   {
-    "name": "Group 1",
-    "displayName": "Group Display Name 1",
-    "description": "Group Description 1",
+    "name": "Administrator",
+    "displayName": "Administration Group",
+    "created": 1354006445722,
+    "modified": 1354006445987,
     "principalTypeEnum": "LOCAL_GROUP",
-    "groupNames": []
+    "groupNames": [],
+    "visibility": "DEFAULT"
   },
   {
-    "name": "Test Name",
-    "displayName": "Test DisplayName",
-    "principalTypeEnum": "LOCAL_USER"
-    "password": "password_123",
-    "groupNames": ["Group 1"]
+    "name": "Analyst",
+    "displayName": "Analyst Group",
+    "created": 1354006445722,
+    "modified": 1354006445987,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": [],
+    "visibility": "DEFAULT"
+  },
+  {
+    "name": "rls-group-3",
+    "displayName": "rls-group-3",
+    "description": "Contains directly rls-group-1, rls-group-2 and belongs direclty to rls-group-5",
+    "created": 1459376495060,
+    "modified": 1459376590681,
+    "principalTypeEnum": "LOCAL_GROUP",
+    "groupNames": ["rls-group-5"],
+    "visibility": "DEFAULT"
   }
-]
+  ]
 ```
-
-### Response Body example
-
-```
-[
-  {
-    "name": "Sales Executives",
-    "displayName": "Sales Executives",
-    "description": "",
-    "created": 1481827712854,
-    "modified": 1481827713052,
-    "principalTypeEnum": "LOCAL_GROUP",
-    "groupNames": []
-  },
-  {
-    "name": "Operations Demo",
-    "displayName": "Operations Demo",
-    "description": "",
-    "created": 1436491036553,
-    "modified": 1436498598655,
-    "principalTypeEnum": "LOCAL_GROUP",
-    "groupNames": []
-  },
-  {
-    "name": "Sales Directors",
-    "displayName": "Sales Directors",
-    "description": "",
-    "created": 1481827747555,
-    "modified": 1485805361837,
-    "principalTypeEnum": "LOCAL_GROUP",
-    "groupNames": []
-  },
-  {
-    "name": "Product",
-    "displayName": "Product",
-    "description": "",
-    "created": 1409250574242,
-    "modified": 1477525172084,
-    "principalTypeEnum": "LOCAL_GROUP",
-    "groupNames": []
-  },
-  {
-    "name": "Sales Development",
-    "displayName": "Sales Development",
-    "description": "",
-    "created": 1481831987186,
-    "modified": 1481831987382,
-    "principalTypeEnum": "LOCAL_GROUP",
-    "groupNames": [
-      "Sales"
-    ]
-  }
-]
-```
-
-### Response Code
-
-```
-200
-```
-
-### Response Headers
-
-```
-{
-  "x-callosum-incident-id": "1be6e07b-b7aa-4531-8597-8852760757f0",
-  "x-callosum-trace-id": "e92c54ca-d5f1-44a6-ab8e-f6871bb0da8b",
-  "date": "Sun, 19 Feb 2017 04:14:13 GMT",
-  "content-encoding": "gzip",
-  "x-callosum-request-time-us": "19720",
-  "server": "nginx",
-  "vary": "Accept-Encoding",
-  "content-type": "application/json",
-  "pragma": "no-cache",
-  "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "transfer-encoding": "chunked",
-  "content-security-policy": "script-src 'self'",
-  "connection": "keep-alive",
-  "x-callosum-ip": "192.168.2.247",
-  "x-ua-compatible": "IE=edge"
-}
-```
+## Error Codes
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+   <tr> <td><code>10000</code></td>  <td>Internal server error.</td> <td><code>500</code></td></tr>
+    <tr> <td><code>10002</code></td>  <td>Bad request. No user found with the given username.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10003</code></td>  <td>Unable to authenticate user</td><td><code>403</code></td></tr>
+  </tbody>
+</table>
