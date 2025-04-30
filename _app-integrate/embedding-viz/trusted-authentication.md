@@ -75,7 +75,7 @@ Once generated, tokens do not expire.
 
     It is also important the the `username` is a match for a `username` on the ThoughtSpot application.
 
-2. The trusted web server requests an authentication token on the user's behalf from ThoughtSpot.
+2. The trusted web server requests a authentication token on the user's behalf from ThoughtSpot.
 
     `POST https://<thoughtspot>/callosum/v1/session/auth/token`
 

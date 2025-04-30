@@ -1,7 +1,7 @@
 ---
 title: [Network ports]
 keywords: network, ports
-last_updated: tbd
+last_updated: 1/21/2020
 summary: "Lists the required and optional ports for an installation."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

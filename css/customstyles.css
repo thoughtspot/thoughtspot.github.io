@@ -6,6 +6,12 @@ div#toc ul li ul li {
 }
 */
 
+ol ol, ol ul, ul ol, ul ul {
+    /* margin-bottom: 0; */
+    list-style: inherit !important;
+    margin-bottom: 15pt;
+}
+
 div#unibox-suggest-box {
   padding: 0px !important;
 }
@@ -16,17 +22,44 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;*/
+      line-height: 24px;
     }
+
+p {
+  padding-top: 10px;
+}
 
 table.scheduler, th, td {
    border: 1px solid black;
 }
 
+small-sidebar-version-nav {
+    font-size: 80%;
+    margin-left: 10px;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+    background-color: #BBECEE;
+}
+small-sidebar-version-nav-latest {
+    font-size: 80%;
+    margin-left: 10px;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+    background-color: #BBECEE;
+}
 
-/*search*/
-
-div.gsc-control-cse {
-    max-width: 100%;
+small-sidebar-link .a{
+    font-size: 80%;
+    margin-left: 5px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    color: #4E55FD;
 }
 
 /*help center*/
@@ -40,6 +73,7 @@ div.links{
 .linksChild{
     width: 150px;
     height: 200px;
+    text-align:center;
     display:inline-block;
     margin-left:4px;
 }
@@ -54,21 +88,28 @@ div.links{
 h1.indexTitle {
   margin-bottom: 43px;
   font-stretch: extra-expanded;
-  color: #98A0B0;
+  color: #333;
+}
+
+p.iconTitle {
+  text-align: center;
 }
 
 p.bookLink {
-  font-size: 95%;
-  font-family: sans-serif;
-  line-height: 80%;
+  font-size: 97%;
+  font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top:-10px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 img.indexImg {
+  text-align: center !important;
   margin-bottom: 27px;
 }
 
 h2.tagLine {
-  color: #EA603E;
+  color: #333;
   margin-top: 3px !important;
 }
 
@@ -76,7 +117,7 @@ div.col-sm-4 {
   margin-top: 20px;
 }
 
-/* Privileges table in matrix.md*/
+/* Privileges table in security-matrix.md*/
 
 table.wide_table > caption {
   /*font-size: larger;*/
@@ -123,7 +164,7 @@ th.rotate {
 th.rotate > div {
   transform:
     /* Magic Numbers */
-    translate(25px, 51px)
+    translate(-10px, 51px)
     /* 45 is really 360 - 45 */
     rotate(315deg);
     width: 30px;
@@ -133,7 +174,7 @@ th.rotate > div > span {
   padding: 5px 10px;
 }
 
-/* END: Privileges table in matrix.md*/
+/* END: Privileges table in security-matrix.md*/
 
 /*https://css-tricks.com/rotated-table-column-headers/*/
 
@@ -150,8 +191,8 @@ div.vert {
 
 table.classic {
   border: "1px";
-  cellpadding: "0";
-  cellspacing: "0";
+  padding: "0";
+  border-collapse: collapse;
   background-color: yellow;
 }
 /* END */
@@ -174,6 +215,8 @@ table.classic {
 }
 .bs-callout code {
     border-radius: 3px;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
 }
 .bs-callout+.bs-callout {
     margin-top: -5px;
@@ -263,7 +306,8 @@ margin-top: -40px
 
 table {
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 
@@ -336,6 +380,11 @@ p.post-meta {font-size: 80%; color: #777;}
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
 /* search area */
+
+div.gsc-control-cse {
+    max-width: 100%;
+}
+
 #search ul#results-container {
     list-style: none;
     font-size: 12px;
@@ -485,11 +534,21 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 
-.nav li > a > span:after {
-    content: '\25be';
+.nav li > a > span:before {
+    content: '\25B8';
+    position: absolute;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.nav li.active > a > span:after {
-    content: '\25b4';
+
+.nav ul li ul li > a > span:before {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.nav li.active > a > span::before {
+    content: '\25be';
 }
 
 .nav a:hover, .nav li.active > a {
@@ -498,7 +557,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav > li.active > a  {
-background-color: #347DBE;
+background-color: #3E43CA;
 }
 
 .nav li a {
@@ -525,19 +584,26 @@ ul#mysidebar {
 
 /*Level three list customization*/
 .nav ul li ul li ul li {
-  padding-left:15px;
+  padding-left:25px;
   background-color: #FAFAFA;
+}
+.nav ul li ul li ul li a {
+  padding-left:12px;
 }
 
 /*Level two lists customization*/
 .nav ul li ul li {
   background-color: #FAFAFA;
-  padding-left:5px;
+  padding-left:10px;
 }
 
+.nav ul li ul li a {
+  padding-left:27px;
+}
 
+/* tag for adjusting space between navbar triangle and text */
 .nav li a {
-    padding-right:10px;
+    padding-left:28px;
 }
 
 .nav li a:hover {
@@ -550,7 +616,7 @@ ul#mysidebar {
 
 .nav ul li a {
     border-top:1px solid whitesmoke;
-    /*padding-left:10px;*/
+    padding-left:27px;
 }
 /* end sidebar */
 
@@ -563,7 +629,7 @@ ul#mysidebar {
 }
 
 span.projectTitle {
-    font-family: Helvetica;
+    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -624,7 +690,7 @@ table.dataTable thead {
     background-color: #444;
 }
 table td {
-    hyphens: auto;
+    hyphens: none;
 }
 
 section table tr.success {
@@ -743,7 +809,12 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
     color: white;
 }
 
-ol li ol li {list-style-type: lower-alpha;}
+ol li ol li {
+  list-style-type: lower-alpha;
+  padding: 10px;
+  line-height: 24px;
+}
+
 ol li ul li {list-style-type: disc;}
 
 li img {clear:both; }
@@ -774,8 +845,23 @@ li.activeSeries {
     color: #444;
 }
 
+.alert-access {
+    color: #234142;
+    background-color: #E4F7F8;
+    border-color: #85DCDF
+}
+
+.alert-access hr {
+    border-top-color: #A0E4E7
+}
+
+.alert-access .alert-link {
+    color: #3C6C6F
+}
+
 div.alert code, h2 code {
     background-color: transparent !important;
+    color: #333 !important;
 }
 /* without this, the links in these notes aren't visible.*/
 .alert a {
@@ -812,7 +898,111 @@ a[data-toggle="tooltip"] {
     color: #649345;
     font-style: italic;
     cursor: default;
+    text-decoration:none;
 }
+
+/* begin beta label */
+
+.label-beta-cloud {
+/*    background-color: #66CFEB; */
+    background: rgb(0,151,205);
+    background: linear-gradient(0deg, rgba(0,151,205,1) 0%, rgba(102,207,235,1) 100%);
+    color: #ebebeb;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    padding-top: 3px;
+}
+
+.label-beta {
+    background-color: #f4bb00;
+    color: #0e1e24;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.label-beta-cloud-small {
+    background: rgb(0,151,205);
+    background: linear-gradient(0deg, rgba(0,151,205,1) 0%, rgba(102,207,235,1) 100%);
+    color: #ebebeb;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.label-update {
+    display: inline-block;
+    background-color: #373BB1;
+    color: #ebebeb;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}
+
+.badge-update {
+    display: inline-block;
+    background-color: #D3D4FE;
+    color: #4E55FD;
+    font-size: 9px;
+    margin-left: 2px;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+    vertical-align: top;
+    padding-top: 2px;
+/*   display: inline-block;
+   min-width: 10px;
+   padding: 3px 7px;
+ font-size: 12px;
+   font-weight: 700;
+   line-height: 1;
+   color: #ebebeb;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   background-color: #373BB1;
+   border-radius: 5px;
+   position: relative;
+   top: -1px; */
+}
+
+/* end beta label */
+
+/* special tooltip code for copy to clipboard - start */
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+// position tooltip
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+
+/* special tooltip code for copy to clipboard -  */
 
 .seriesNext, .seriesContext {
     margin-top: 15px;
@@ -881,7 +1071,9 @@ a.dropdown-toggle.otherProgLangs {
 
 span.muted {color: #666;}
 
-table code {background-color: transparent;}
+table code {
+  background-color: transparent !important;;
+  color: #333 !important;}
 
 .highlight .err {
     color: #a61717;
@@ -899,10 +1091,19 @@ pre, table code {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    color: #333 !important;
 }
 
 pre {
     margin: 25px 0px;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
+}
+
+code {
+    border-radius: 3px;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
 }
 
 #json-box-container pre {
@@ -912,13 +1113,13 @@ pre {
 .video-js {
     margin: 30px 0px;
 }
-
+/*
 video {
     display: block;
     margin: 30px 0px;
     border: 1px solid #c0c0c0;
 }
-
+*/
 
 p.required, p.dataType {display: block; color: #c0c0c0; font-size: 80%; margin-left:4px;}
 
@@ -953,7 +1154,8 @@ a.accordion-toggle {
 }
 
 span.red {
-    color: red;
+    color: #333;
+    background-color:#f5f5f5;
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
@@ -1094,27 +1296,8 @@ a.no_icon:after
 
 .btn-default {
     margin-bottom: 10px;
+    background-color: #EA8F3E59;
 }
-
-/* algolia search */
-
-.search {
-    text-align: left;
-}
-.search input {
-    font-size: 20px;
-    width: 300px;
-}
-.results {
-    margin: auto;
-    text-align: left;
-}
-.results ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* algolia */
 
 div.results {
     position: absolute;
@@ -1150,10 +1333,25 @@ span.label.label-default {
 span.label.label-primary {
     background-color: #f0ad4e;
 }
+
+/* begin beta label */
+
+.label-beta {
+    background-color: #4E55FD;
+    color: #FFFFFF;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}
+
+/* end beta label */
+
 .col-lg-12 .nav li a {background-color: white}
 
 a code {
     color: #248EC2;
+    color: #333 !important;
+    background-color: #f5f5f5 !important;
 }
 
 code + a > code {
@@ -1187,7 +1385,7 @@ table thead th code.highlighter-rouge {
     width: 100px;
     height: 80px;
     background-color: #f5f5f5;
-    font-family: Arial;
+    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     hyphens: auto;
     float: left;
@@ -1212,7 +1410,7 @@ table thead th code.highlighter-rouge {
 }
 
 h2.userMapTitle {
-    font-family: Arial;
+    font-family: "Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #userMap a:hover {
@@ -1250,6 +1448,40 @@ div.content {
 
 button.btn.btn-default.btn-lg.modalButton1 {
     margin-left: -20px;
+}
+
+/* copy to clipboard button - start */
+
+.btn-copy {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    display: inline;
+    float: right;
+    position: relative;
+    top: 50px;
+}
+
+.btn-copy:active {
+    outline: 0;
+    border: 0;
+}
+
+.copy-img {
+    width: 50px;
+    height: 50px;
+    content:url("/images/copy-outline.svg") no-repeat;
+}
+
+.copy-img:active {
+    content:url("/images/copy.svg") no-repeat;
+}
+
+/* copy to clipboard button - end */
+
+button.data-clipboard-text {
+    margin-left: -20px;
+    margin-top:-5px;
 }
 
 div.box.box1 {
@@ -1339,4 +1571,106 @@ h4.panel-title {
     .collapse.in{
         display:block !important;
     }
+
 }
+
+/* estimated reading time label */
+.reading-time {
+    font-style: italic;
+    font-size: 13px;
+    display: block;
+    color: #78D8DD;
+    margin-bottom: 20px;
+}
+
+/* used on the videos page instead of tables */
+
+.component-container {
+    padding: 0;
+    margin: 0 0 50px;
+    width: 100%;
+}
+
+.component-block {
+    padding: 0;
+    margin: 0 0 50px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+/*
+*
+* Inline graphics and icons (like the R information, options, and popout arrow icons)
+*
+*/
+
+img.inline {
+    display: inline;
+}
+
+/* copy to clipboard style - start */
+
+.copy-code-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  background: #3b3b3b;
+}
+
+.copy-code-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #616161;
+    color: #e7e7e7;
+    padding: 0.4em 0.5em;
+    border-radius: 5px;
+
+    &::before {
+        content: "Copy";
+    }
+
+    &::after {
+        margin-left: 4px;
+        content: "📋";
+        width: 1em;
+    }
+
+    // This class will be toggled via JavaScript
+    &.copied {
+        &::before {
+            content: "Copied!";
+        }
+
+        &::after {
+            content: "✔️";
+        }
+    }
+}
+
+/* copy to clipboard style - end */
+
+
+
+/* BEGIN Localized keywords CSS */
+
+.tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
+.tg td{font-family:"Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:"Optimo-Plain", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-31q5{white-space:nowrap;background-color:#f0f0f0;color:#000;font-weight:bold;vertical-align:top}
+.tg .tg-b7b8{background-color:#f9f9f9;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-4eph{background-color:#f9f9f9}
+.tg .tg-j0ga{background-color:#f0f0f0;color:#000;font-weight:bold;border-color:inherit;vertical-align:top}
+.tg .tg-dc35{background-color:#f9f9f9;border-color:inherit;vertical-align:top}
+.tg .tg-us36{border-color:inherit;vertical-align:top}
+.tg .tg-k64o{background-color:#f0f0f0;color:#000;font-weight:bold;border-color:inherit;vertical-align:top}
+
+
+
+
+
+/* END Localized keywords CSS */

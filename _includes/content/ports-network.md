@@ -1,9 +1,9 @@
 
 This reference lists the potential ports to open when setting up your security group.
 
-### Required ports for inter-cluster operation
+### Required ports for intracluster operation
 
-Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from inter-cluster network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
+Internally, ThoughtSpot uses static ports for communication between services in the cluster. Do not close these ports from intraluster network communications. In addition, a number of ports are dynamically assigned to services, which change between runs. The dynamic ports come from the range of Linux dynamically allocated ports (20K+).
 
 |Port|Protocol|Service Name|Direction|Source|Dest.|Description|
 |----|--------|------------|---------|------|-----|-----------|
@@ -11,7 +11,7 @@ Internally, ThoughtSpot uses static ports for communication between services in 
 |443|TCP|Secure nginx|inbound|All nodes|All nodes|Primary app HTTPS port (nginx)|
 |2100|RPC|Oreo RPC port|bidirectional|All nodes|All nodes|Node daemon RPC|
 |2101|HTTP|Oreo HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Node daemon HTTP|
-|2181|RPC|Zookeeper servers listen on this port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this port for client connections|
+|2181|TCP|Zookeeper servers listen on this RPC port for client connections|bidirectional|All nodes|All nodes|Zookeeper servers listen on this RPC port for client connections|
 |2200|RPC|Orion master RPC port|bidirectional|All nodes|All nodes|Internal communication with the cluster manager|
 |2201|HTTP|Orion master HTTP port|bidirectional|Admin IP addresses and all nodes|All nodes|Port used to debug the cluster manager|
 |2210|RPC|Cluster stats service RPC port|bidirectional|All nodes|All nodes|Internal communication with the stats collector|
@@ -61,10 +61,34 @@ ThoughtSpot uses static ports for inbound and outbound access to a cluster.
 |12345|TCP|Simba|bidirectional|ThoughtSpot Support|All nodes|Port used by ODBC and JDBC drivers when connecting to ThoughtSpot.|
 
 |Port|Protocol|Service Name|Direction|Source|Destination|Description|
-|----|--------|------------|---------|------|-----------|-----------|
-|443|HTTPS|HTTPS|outbound|All nodes|208.83.110.20|For transferring files to thoughtspot.egnyte.com (IP address 208.83.110.20).|
+|----|--------|------------|---------|------|----------------|-----------|
+|443|HTTPS|HTTPS|outbound|All nodes|208.83.110.20   |For transferring files to thoughtspot.egnyte.com  (IP address 208.83.110.20).|
+|443|HTTPS|HTTPS|outbound|All nodes|https://api.mix  panel.com|For transferring product usage data to mixpanel cloud.|
 |25 or 587|SMTP|SMTP or Secure SMTP|outbound|All nodes and SMTP relay (provided by customer)|All nodes|Allow outbound access for the IP address of whichever email relay server is in use. This is for sending alerts to ThoughtSpot Support.|
 |389 or 636|TCP|LDAP or LDAPS|outbound|All nodes and LDAP server (provided by customer)|All nodes|Allow outbound access for the IP address of the LDAP server in use.|
+|8086|HTTPS|HTTPS|outbound|All nodes|https://pinheads-1da40166.influxcloud.net|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
+
+### Required port for outbound connectivity to partner services
+In releases 4.5.1 and later, port 8086 is not required for transferring data to InfluxCloud. Open the following port instead:  
+
+|Port|Protocol|Service Name|Direction|Source|Destination|Description|  
+|----|--------|------------|---------|------|----------------|-----------|  
+|443|HTTPS|HTTPS|outbound|All nodes|https://je8b47jfif.execute-api.us-east-2.amazonaws.com/monitoring|For transferring monitoring data to InfluxCloud. (Given address will resolve to point to AWS instances).|
+
+### Callhome
+
+Callhome stats are uploaded to AWS. The bucket configured by default is `ts-callhome-prod` in region `us-west-1`.
+
+Uploads to AWS are done on one of the following endpoints:
+1. `s3.us-west-1.amazonaws.com`
+2. `s3-us-west-1.amazonaws.com`
+3. `s3.dualstack.us-west-1.amazonaws.com`
+
+All uploads are done over “https” and default port 443 is used.  (Example: https://s3-us-west-1.amazonaws.com/%7BBucket%7D/%7BKey+%7D).  
+
+#### More information
+
+<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region" target="_blank">AWS endpoints<a/>
 
 ### Required ports for IPMI (Intelligent Platform Management Interface)
 

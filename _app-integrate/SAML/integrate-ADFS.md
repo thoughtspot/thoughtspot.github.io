@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can configure Active Directory Federated Services (AD FS) to work with ThoughtSpot. This procedure outlines the basic prerequisites and steps to set up AD FS.
 
--   [Configure SAML in ThoughtSpot](ts-as-sp.html#).
+-   [Configure SAML in ThoughtSpot](configure-SAML-with-tscli#).
 -   Install AD FS 2.0.
 -   Make sure you can run AD FS 2.0 Federation Server Configuration Wizard from the AD FS 2.0 Management Console.
 -   Make sure that DNS name of your Windows Server is available at your service provider (SP) and vice versa. You can do this by running the command `nslookup` on both machines, supplying the DNS of the other server.

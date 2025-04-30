@@ -14,8 +14,8 @@ baseurl: ""
 port: 4010
 output: pdf
 product: mydoc
-print_title: Node Setup Guide
-print_subtitle: Version x.x
+print_title: THETITLE
+print_subtitle: Version THEVERSION
 output: pdf
 defaults:
   -

@@ -1,6 +1,7 @@
 ---
 title: [tscli command reference]
 keywords: tbd
+tags: [networking, tscli]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -25,7 +26,7 @@ tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
            {alert,backup,backup-policy,callhome,cluster,command,dr-mirror,etl,event,
              feature,fileserver,firewall,hdfs,ldap,logs,map-tiles,monitoring,nas,node,
-             os,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,spot,ssl,storage,
+             os,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,ssl,storage,
              support}
 ```
 
@@ -60,7 +61,7 @@ Use this subcommand to do the following:
 
 * `tscli alert info` Lists all alerts.
 * `tscli alert list` Lists the generated alerts.
-* `tscli alert off` Disables all alerts from the cluster.
+* `tscli alert off` Disables all alerts from the cluster in the cluster's timezone.
 * `tscli alert on` Enables alerts from the cluster.
 * `tscli alert silence --name <alert_name>`
 
@@ -132,36 +133,51 @@ Use this subcommand to do the following:
 * `tscli backup-policy update *`name`*` Prompts an editor for you to edit the policy *`name`*.
 
 
+{: id="tscli-callhome"}
 ### callhome
+
+Provides usage statistics to ThoughtSpot by uploading the callhome bundle data daily into Egnyte.
 
 ```
 tscli callhome [-h] {disable,enable,generate-bundle}
 ```
 
-Use this subcommand to do the following:
+This subcommand has the following options:
 
-* `tscli callhome disable` Turns off the periodic call home feature.
-* `tscli callhome enable --customer_name` *`customer_name`*`
+<dl>
+<dlentry>
+  <dt><code>tscli callhome enable --customer_name <em>CUSTOMER_NAME</em></code></dt>
+  <dd>
+    <p>Enables the callhome feature.</p>
+    <p>This feature is enabled by default.</p>
+    <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+    </dd></dlentry>
 
-    Enables the "call home" feature, which sends usage statistics to ThoughtSpot
-    Support every six hours via the secure file server. Before using this
-    command for the first time, you need to set up the file server connection
-    using `tscli fileserver configure`.
+  <dlentry>
+    <dt><code>tscli callhome disable</code></dt>
+    <dd>Turns off the callhome feature.</dd></dlentry>
 
-    The parameter *`customer_name`* takes the form  ```Shared/*`customer_name`*/stats```.
-
-* `tscli callhome generate-bundle`   --d *`directory`* `--since` *`DAYS`*
-
-   * `--d D` Dest folder where tar file will be created. (default: None)
-   * ` --since`  *`DAYS`*
-
-      Grab callhome data from this time window in the past. Should be a human
-      readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1
-      day). (default: None) Generates a tar file of the cluster metrics and
-      writes it to the specified directory where  *`DAYS`* is how far back you'd
-      like to generate the tar file from in days. For example, `30`. If this
-      parameter is not specified, the command will collect the stats from the
-      last `7` days by default.
+  <dlentry>
+    <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
+    <dd>Generates the callhome stats tar file, with the following parameters:
+      <dl>
+        <dlentry>
+          <dt><code>--d <em>D</em></code></dt>
+          <dd><p>Destination folder for the tar file.</p>
+            <p>There is no default setting.</p></dd></dlentry>
+        <dlentry>
+          <dt><code>--since <em>SINCE</em></code></dt>
+          <dd>
+            <p>Grabs <code>callhome</code> data from the specified time window in the past.</p>
+            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
+            <p>This option generates a <code>tar</code> file of the cluster metrics and
+      writes it to the specified directory, where  <code><em>SINCE</em></code> is how many days back the file must start.</p>
+            <p>There is no default setting.</p></dd>
+            </dlentry>
+            </dl>
+            </dd>
+  </dlentry>
+</dl>
 
 
 ### cluster
@@ -227,20 +243,6 @@ tscli dr-mirror [-h] {start,status,stop}
 * `tscli dr-mirror status` Checks whether the current cluster is running in mirror mode.
 * `tscli dr-mirror stop` Stops mirroring on the local cluster.
 
-### entity
-```
-tscli entity [-h] {pack} ...
-```
-Creates a serialized, dataless object file for testing, troubleshooting, or migration. You can use this command with answer,
-pinboard, or aggregated/unaggregated worksheet objects.
-
-* `tscli entity pack [-h] --id ID [--outdir FULLPATHNAME]`  Packs object metadata and schema into a file. Packed filenames have the format XXX.YYY where XXX is ### ?
-optional arguments:
-
-    * `--id ID` The required `ID` of the object to pack. IDs are found in thne URL of an answer,
-    pinboard, or aggregated/unaggregated worksheet. For example, the ID for a pinboard
-    				`http://thoughtspot.com:8088/#/pinboard/061457a2-27bc-43a9-9754-0cd873691bf0/` is `061457a2-27bc-43a9-9754-0cd873691bf0`.
-    * `--outdir FULLPATHNAME` Directory where the command places the packed object.
 
 ### etl
 
@@ -351,7 +353,7 @@ tscli firewall [-h] {close-ports,disable,enable,open-ports,status}
 
 * `tscli firewall disable` Disable firewall.
 * `tscli firewall enable` Enable firewall.
-* `tscli firewall open-ports *`ports`*`
+* `tscli firewall open-ports` `--ports` *`ports`*
 
    Opens given ports through firewall on all nodes. Takes a list of ports to
    open, comma separated. Ignores ports which are already open. Some essential
@@ -510,7 +512,7 @@ This subcommand supports the following actions:
 
 * `tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 MD5]`
 
-  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have interest access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
+  Enables ThoughtSpot's map tiles, which are used when constructing geomap charts. If you don't have Internet access, you must download the map tiles tar and md5 files. Then you must append the following to the `tscli` command.
 
   * `--online` Download `maptiles` tar from internet. (default: True)
   * `--offline`   Using `maptiles` tar from local disk. (default: False)
@@ -607,7 +609,7 @@ This subcommand has the following actions:
 ### node
 
 ```
-tscli node [-h] {check,ls,reinstall-os,status}
+tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status} ...
 ```
 
 This subcommand has the following actions:
@@ -624,6 +626,35 @@ This subcommand has the following actions:
 
   * `--secondary` *`SECONDARY`* Secondary drive to be used to carry to reinstall (default: `sdd`)
   * `--cluster` Is the node part of a cluster (default: `False`)
+* `tscli node resume-reinstall-os` Resume in-progress reinstall
+
+### rpackage
+
+```
+tscli rpackage [-h] {add,delete,list} ...
+```
+
+Manages R packages available to SpotIQ.
+
+
+* `tscli rpackage add [-h] [--repo` *`REPO`*`] [--timeout` *`TIMEOUT`*`] [--dest_dir` *`DEST_DIR`*`]
+[--nodes` *`NODES`*`]` *`package_name`*  Command to add an R *`package_name`*  to the cluster. This command has the following options:
+
+  * `--repo` *`REPO`*  Specify the url of a specific repo to download packages
+  * `--timeout ` *`REPO`* Timeout waiting for the R Package to be installed (default: 60)
+  * `--dest_dir` *`REPO`*  Directory where output of this command will be placed (default: None)
+  * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: all).
+
+* `tscli rpackage add [-h] [--timeout` *`TIMEOUT`*`] [--dest_dir` *`DEST_DIR`*`] [--nodes` *`NODES`*`]` *`package_name`* Command to delete an installed R package from the cluster. This command has the following options:
+
+  * `--timeout ` *`REPO`* Timeout waiting for the R Package to be removed (default: 60)
+  * `--dest_dir` *`REPO`*  Directory where output of this command will be placed (default: None)
+  * `--nodes` *`NODES`*  Space separated IPs of nodes where you want to run the command. (default: all).
+
+* `tscli rpackage list [-h] [--detailed]`  List all R packages installed on the cluster.
+
+
+
 
 ### saml
 
@@ -647,6 +678,9 @@ This subcommand has the following actions:
 * `tscli scheduled-pinboards disable [-h]` Disable scheduled pinboards for this cluster.
 * `tscli scheduled-pinboards enable [-h]` Enables scheduled pinboards, which is disabled in prod clusters by default.
 
+{% include note.html content="When you enable scheduled pinboards, you should
+also configure a list of intended email domains. Contact ThoughtSpot
+Support for help configuring this list." %}
 
 ###  smtp
 
@@ -731,28 +765,11 @@ This subcommand supports the following actions:
    *  `--config` *`CONFIG`* Text format of periodic backup policy config (default: None)
 
 
-### spot
-
-```
-tscli spot [-h] {enable}
-```
-
-This subcommand supports the following actions:
-
-`tscli spot [-h] {enable}` Enableds Spot integrtion.
-
 ### ssl
 
 ```
 tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
 ```        
-
-
-status              Shows whether of SSL authentication is enabled or
-                    disabled for the ThoughtSpot application.
-tls-status          Prints the status of TLS support
-
-
 
 This subcommand supports the following actions:
 
@@ -815,19 +832,57 @@ This subcommand supports the following actions:
 
 ```
 tscli support [-h]
-{restart-remote,rm-admin-email,rm-admin-phone,set-admin-email,set-admin-phone,set-remote,show-admin-email,show-admin-phone,show-remote,start-remote,stop-remote}
+{restart-remote,rm-admin-email, rm-admin-phone, rm-feedback-email, set-admin-email, set-admin-phone, set-feedback-email, set-remote, show-admin-email, show-admin-phone, show-feedback-email, show-remote, start-remote, stop-remote}
 
 ```
 
 This subcommand supports the following actions:
 
+* ` tscli support bundle [-h] [--include INCLUDE] [--exclude EXCLUDE] [--list_selectors] [--since SINCE] [--from FROM] [--to TO] [--out OUT] [--nodes NODES]`
+
+  - `--include` *`INCLUDE`* Comma separated list of selectors to include, each entry is
+    either a "selector" or a glob for matching files. To see the list of valid
+    selectors, run this command with `--list_selectors`. You may also specify: "`all`
+    to get all selectors and logs, and "basic" to get only the basic selectors.
+    Selectors may also be selectors meant for logs collect: all, orion, system, ts,
+    or the name of a service. Anything starting with / is assumed to be a glob
+    pattern and interpreted via find(1). Other entries are ignored. TIP: put single
+    quotes around the param value to prevent undesired glob expansion. Use "all" to
+    collect all selectors and all logs (default: all_but_logs)
+
+  - `--exclude` *`EXCLUDE`* Comma separated list of selectors to exclude. Applies to the
+    list selected by `--include`. Params are interpreted just like in `--include`. Use
+    the special keyword "logs" to exclude logs collection all together. (default:
+    None)
+
+  - `--list_selectors` List the selectors available for `--include` and
+    `--exclude`, and then exit. (default: `False`)
+
+  - `--since` *`SINCE`* Grab logs from this time window in the past. Should be a human readable duration string, e.g. `4h` (4 hours), `30m` (30 minutes), `1d` (1 day). (default: None)
+
+  - `--from` *`FROM`*  Timestamp where collection begins, must be of the form:
+    `yyyymmdd-HH:MM` (default: None)
+
+  - `--to` *`TO`* Timestamp where collection ends, must be of the form:
+    `yyyymmdd-HH:MM` (default: None)
+
+  - `--out` *`OUT`* Tarball path for dumping the support bundle (default:
+`/tmp/support_bundle.tar.gz`)
+
+  - `--nodes` *`NODES`* Comma separated list of nodes from where to collect logs. Skip this to use all
+nodes. (default: None)
+
 * `tscli support restart-remote` Restarts remote support.
 * `tscli support rm-admin-email` Removes the email address for contacting the customer administrator. Replaces it with the default ThoughtSpot Support email address.
+* `tscli support rm-feedback-email` Removes the email address for product feedback. Replaces it with the default ThoughtSpot Support email address.
 * `tscli support rm-admin-phone` Removes the phone number for contacting the customer administrator. Replaces it with the default ThoughtSpot Support phone number.
+* `tscli support rm-feedback-email` Removes the email for sending feedback out of the system. If you would like to set a blank email address, issue the command `tscli support set-feedback-email ' '`.
 * `tscli support set-admin-email` *`email`* Sets the email address for contacting the customer administrator. If you would like to display a blank email address, issue the command `tscli support set-admin-email ' '`.
+* `tscli support set-feedback-email` *`email`* Sets the email address for sending feedback. If you would like to display a blank email address, issue the command `tscli support set-feedback-email ' '`.
 * `tscli support set-admin-phone` *`phone_number`* Sets the phone number for contacting the customer administrator. Specify a phone number using any value (e.g. `+1 800-508-7008 Ext. 1`). If you would like to display a blank phone number, issue the command `tscli support set-admin-phone`.
 * `tscli support set-remote [-h] [--addr` *`ADDR`*`] [--user` *`USER`*`]` Configures the cluster for remote support through SSH tunneling, where *`ADDR`* is the address of support, e.g. t`unnel.thoughtspot.com`, and *`USER`* is the support username.
 * `tscli support show-admin-email` Shows the email address for customer administrator, if set.
+* `tscli support show-feedback-email` Shows the email address for product feedback, if set.
 * `tscli support show-admin-phone` Shows the phone number for customer administrator, if set.
 * `tscli support show-remote` Shows the status and configuration of remote support.
 * `tscli support start-remote` Starts remote support.

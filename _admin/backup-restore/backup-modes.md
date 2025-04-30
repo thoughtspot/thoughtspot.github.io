@@ -18,9 +18,20 @@ You can create a backup using one of three modes, full, lightweight or dataless.
 
 ## Full backups
 
-Full backups are entire backups of the cluster with all data, whether loaded from the web interface or from `tsload`. This is the best mode for restoring a cluster and all your data. Once a `FULL` backup is created, you can move them between clusters, even if the cluster configuration is different. Full backups can be as large as 20 GB in addition to the 5 GB of additional files. Some installations can exceed these limits, this is why it is important to test your backup configuration.
+Full backups are entire backups of the cluster with all data, whether loaded
+from the web interface or from `tsload`. This is the best mode for restoring a
+cluster and all your data. Once a `FULL` backup is created, you can move them
+between clusters, even if the cluster configuration is different. Full backups
+can be as large as 20 GB in addition to the 5 GB of additional files. Some
+installations can exceed these limits, this is why it is important to test your
+backup configuration.
 
-Before creating a manual backup or configuring automated backups, make sure there is enough disk space on the target disk. Consider an example, where you want to store three backups. If the backup itself takes 18GB, you need about 18 + 5 = 23 GB of free disk space. Don't forget that the backup size can grow over time, so you should occasionally check to ensure you are not in danger of running out of disk space to store backups.
+Before creating a manual backup or configuring automated backups, make sure
+there is enough disk space on the target disk. Consider an example, where you
+want to store three backups. If the backup itself takes 18GB, you need about 18 +
+5 = 23 GB of free disk space. Don't forget that the backup size can grow over
+time, so you should occasionally check to ensure you are not in danger of
+running out of disk space to store backups.
 
 
 ## Lightweight backups
@@ -31,7 +42,7 @@ Lightweight backups contain everything that makes up a cluster so they contain t
 
 -   In-memory data cache
 
--   All data that is stored in HDFS
+-   All data that is stored unencrypted in HDFS
 
 -   Data uploaded by users
 

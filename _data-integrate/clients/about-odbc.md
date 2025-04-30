@@ -1,12 +1,14 @@
 ---
-title: [About the ODBC Driver]
-keywords: tbd
+title: [Overview of the ODBC Driver]
+keywords: connection,ODBC,secure,version
 last_updated: tbd
 summary: "Use the ODBC driver to bring data in from your ETL tool or database."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so that you can transfer data between ThoughtSpot and other databases. Basic knowledge of ODBC data source administration is helpful when setting up ODBC.
+ThoughtSpot comes packaged with an ODBC (Open Database Connectivity) driver, so
+that you can transfer data between ThoughtSpot and other databases. Basic
+knowledge of ODBC data source administration is helpful when setting up ODBC.
 
 Supported operating systems for the ODBC driver are:
 
@@ -17,9 +19,12 @@ Supported operating systems for the ODBC driver are:
 -   Solaris Sparc 32-bit
 -   Solaris Sparc 64-bit
 
-## Version Compatibility
+## Version compatibility and connection parameters
 
-To ensure compatibility, always use the ODBC driver with the same version number as the ThoughtSpot instance to which you are connecting.
+To ensure compatibility, always use the ODBC driver with the same version number
+as the ThoughtSpot instance to which you are connecting. You can make a secure
+ODBC connection to the ThoughtSpot database by configuring a user and password
+combination with the driver.  For detailed information about connection parameters, see the [ODBC and JDBC configuration properties]({{ site.baseurl }}/data-integrate/reference/simba-settings.html#)
 
 ## Supported Data Types
 
@@ -79,17 +84,17 @@ are described below.
 
 <p>Your customer support engineer who can assist you in configuring the ODBC
 behavior that suits you best. Regardless of which configuration you choose, you
-should validate that the results of data loading _as they appear in_ ThoughtSpot
+should validate that the results of data loading <i>as they appear</i> in ThoughtSpot
 are what you desire.</p>
 
 
 ## Data type conversion matrix
 
-<p>Following table describes the conversion matrix between SQL datatypes and
-ThoughtSpot datatypes.</p>
+<p>Following table describes the conversion matrix between SQL data types and
+ThoughtSpot data types.</p>
 
 
-| Source SQL Datatypes          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
+| Source SQL Data Typess          |BOOL |INT32 |INT64 |DOUBLE |FLOAT | CHAR |DATE | TIME |DATETIME|
 |-------------------------------|-----|------|------|-------|------|------|-----|------|--------|
 |`SQL_BIT`                      | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |
 |`SQL_TINYINT`                  | Y   |  Y   |  Y   |  Y    |  Y   |  Y   | --  |  --  | -- |

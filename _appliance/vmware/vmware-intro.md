@@ -1,21 +1,19 @@
 ---
-title: [VMWare configuration overview]
+title: [VMware configuration overview]
 keywords: vmware
-last_updated: tbd
+last_updated: 2/20/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Congratulations on purchasing the ThoughtSpot instance. This section is an
-overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMWare
-VSphere Hypervisor (ESXi) 6.5 environment.
+This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware VSphere Hypervisor (ESXi) 6.5 environment.
 
-## About ThoughtSpot on VMWare
+## About ThoughtSpot on VMware
 
-The VMWare virtualization platform provides highly scalable and efficient memory
+The VMware virtualization platform provides highly scalable and efficient memory
 and CPU resources management that can be used by ThoughtSpot instances.
-Additionally, the VMWare virtualization environment is an easy transition
+Additionally, the VMware virtualization environment is an easy transition
 between development and production environments. The following diagram shows
-the components of a VMWare and ThoughtSpot architecture:
+the components of a VMware and ThoughtSpot architecture:
 
 ![]({{ site.baseurl }}/images/vmware-components.png)
 
@@ -29,18 +27,47 @@ ThoughtSpot VMs as your dataset size grows.
 ## Configuration
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
-platform on the VMWare for the best performance, load balancing, scalability,
+platform on VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
-minimum specifications for individual VMWare ESXi host:
+_minimum specifications_ for an individual VMware ESXi host machine:
 
-* 512G Memory
-* 200G SSD
-* 3X 2T Hard disks (6T in total in hard disk space)
-* 40 Cores
+<table width="100%" border="0">
+	  <tbody>
+	    <tr>
+	      <th scope="col">Per VM user data capacity</th>
+	      <th scope="col">CPU/RAM</th>
+	      <th scope="col">Data disk</th>
+				<th scope="col">Required root volume capacity</th>
+        </tr>
+	    <tr>
+	      <td>20 GB</td>
+	      <td>16/128 GB</td>
+	      <td>2x400 GB</td>
+				<td>200 GB for each node</td>
+        </tr>
+	    <tr>
+	      <td>100 GB</td>
+	      <td>32/256 GB</td>
+	      <td>2X400 GB</td>
+				<td>200 GB for each node</td>
+        </tr>
+	    <tr>
+	      <td>256 GB</td>
+	      <td>72/512 GB</td>
+	      <td>3X1 TB</td>
+				<td>200 GB for each node</td>
+        </tr>
+		<tr>
+	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200 GB SSD boot disk required for all configurations.</td>
+	      <td></td>
+	      <td></td>
+        </tr>
+  </tbody>
+</table>
 
-All virtualization hosts should have VMWare VSphere Hypervisor (ESXi) 6.5 installed.
+All virtualization hosts should have VMware VSphere Hypervisor (ESXi) 6.5 installed.
 
-ThoughtSpot provides a VMWare template (OVF) together with a VMDK (Virtual
+ThoughtSpot provides a VMware template (OVF) together with a VMDK (Virtual
 Machine Disk) file for configuring a VM. VMDK is a file format that describes
 containers for virtual hard disk drives to be used in virtual machines like
 VMware Workstation or VirtualBox. OVF is a platform-independent, efficient,
@@ -54,5 +81,5 @@ files from your ThoughtSpot Customer Success Engineer.
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/aws/welcome/contact.html) by phone, mail, email, or by filing a
+site.baseurl }}/appliance/contact.html) by phone, mail, email, or by filing a
 support ticket.

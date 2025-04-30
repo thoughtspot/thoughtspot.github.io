@@ -24,7 +24,8 @@
     </tr>
     <tr>
       <td><strong>Can share with all users</strong></td>
-      <td>Can see the names of and share with users outside of the groups the user belongs to.</td>
+      <td>Can see the names of and share with users outside of the groups the user belongs to. Members of groups with this privilege can also share with groups marked as
+      <strong>NOT SHAREABLE</strong>.</td>
     </tr>
     <tr>
       <td><strong>Can manage data</strong></td>
@@ -39,8 +40,13 @@
       <td>User can use SpotIQ's auto analyze function.</td>
     </tr>
     <tr>
-      <td><strong>Can Administer RLS</strong></td>
-      <td>Users in groups with this privilege (directly or indirectly) are exempt rom row-level security (RLS) rules. Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the  <b>Has administration privilege</b> can grant this privilege. </td>
+      <td><strong>Can Administer and Bypass RLS</strong></td>
+      <td><p>Users in groups with this privilege (directly or via group inheritance):</p>
+<ul>      <li>Are exempt from row-level security (RLS) rules.</li>
+      <li>Can add/edit/delete existing RLS rules.</li>
+      <li>Can check or uncheck Bypass RLS on a worksheet.</li></ul>
+
+      <p>Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the  <b>Has administration privilege</b> can grant this privilege.</p> </td>
     </tr>
   </tbody>
 </table>

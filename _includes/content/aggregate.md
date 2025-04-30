@@ -19,9 +19,19 @@
       <td><code class="highlighter-rouge">average (revenue)</code></td>
     </tr>
     <tr>
+      <td><code>average_if</code></td>
+      <td>Returns the average of all the columns that meet a given criteria.</td>
+      <td><code class="highlighter-rouge">average_if(city = "San Francisco", revenue)</code></td>
+    </tr>
+    <tr>
       <td><code>count</code></td>
       <td>Returns the number of rows in the table containing the column.</td>
       <td><code class="highlighter-rouge">count (product)</code></td>
+    </tr>
+    <tr>
+      <td><code>count_if</code></td>
+      <td>Returns the number of rows in the table containing the column.</td>
+      <td><code class="highlighter-rouge">count_if(region =’west’, region)</code></td>
     </tr>
     <tr>
       <td><code>cumulative_average</code></td>
@@ -89,9 +99,19 @@
       <td><code class="highlighter-rouge">max (sales)</code></td>
     </tr>
     <tr>
+      <td><code>max_if</code></td>
+      <td>Returns the maximum value among columns that meet a criteria.</td>
+      <td><code class="highlighter-rouge">max_if( (revenue > 10) , customer region )</code></td>
+    </tr>
+    <tr>
       <td><code>min</code></td>
       <td>Returns the minimum value of a column.</td>
       <td><code class="highlighter-rouge">min (revenue)</code></td>
+    </tr>
+    <tr>
+      <td><code>min_if</code></td>
+      <td>Returns the minimum value among columns that meet a criteria.</td>
+      <td><code class="highlighter-rouge">min_if( (revenue < 10) , customer region )</code></td>
     </tr>
     <tr>
       <td><code>moving_average</code></td>
@@ -119,9 +139,19 @@
       <td><code class="highlighter-rouge">stddev (revenue)</code></td>
     </tr>
     <tr>
+      <td><code>stddev_if</code></td>
+      <td>Returns a standard deviation values filtered to meet a specific criteria.</td>
+      <td><code class="highlighter-rouge">stddev_if( (revenue > 10) , (revenue/10.0) )</code></td>
+    </tr>
+    <tr>
       <td><code>sum</code></td>
       <td>Returns the sum of all the values of a column.</td>
       <td><code class="highlighter-rouge">sum (revenue)</code></td>
+    </tr>
+    <tr>
+      <td><code>sum_if</code></td>
+      <td>Returns sum values filtered by a specific criteria.</td>
+      <td><code class="highlighter-rouge">sum_if(region=’west’, revenue)</code></td>
     </tr>
     <tr>
       <td><code>unique count</code></td>
@@ -129,9 +159,19 @@
       <td><code class="highlighter-rouge">unique count (customer)</code></td>
     </tr>
     <tr>
+      <td><code>unique_count_if</code></td>
+      <td>Returns the number of unique values of a column provided it meets a criteria.</td>
+      <td><code class="highlighter-rouge">unique_count_if( (revenue > 10) , order date )</code></td>
+    </tr>
+    <tr>
       <td><code>variance</code></td>
       <td>Returns the variance of all the values of a column.</td>
       <td><code class="highlighter-rouge">variance (revenue)</code></td>
+    </tr>
+    <tr>
+      <td><code>variance_if</code></td>
+      <td>Returns the variance of all the values of a column provided it meets a criteria..</td>
+      <td><code class="highlighter-rouge">variance_if( (revenue > 10) , (revenue/10.0) )</code></td>
     </tr>
   </tbody>
 </table>

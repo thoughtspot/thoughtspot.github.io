@@ -55,13 +55,9 @@ configuring. Do not backup up when the system would experience a heavy load. For
 example, you may want to take `FULL` backups late in the evening or on weekends.
 
 The retention system deletes the oldest stored backup and the corresponding
-snapshot on a first-in first-out basis (FIFO). The deletion takes places
-*before* the backup that replaces it. This means that if you set a bucket
-retention of 1 the system stores a single backup at any one time. And, more
-importantly, the only backup would be deleted before the next is taken. For this
-reason, you should always set the number of backups to be greater than 2 (two),
-to ensure you have at least one backup available in the case of a failure while
-taking a backup.
+snapshot on a first-in first-out basis (FIFO). This means that if you set a
+bucket retention of 1 the system stores a single backup at any one time. The
+system  deletes the older backup after the new full backup is successful.
 
 To configure periodic backups:
 

@@ -25,37 +25,50 @@ To create a pinboard:
 
      ![]({{ site.baseurl }}/images/add_new_pinboard.png "New Pinboard button")
 
-3. In the New Pinboard dialog box, give your pinboard a name and description. Then click **Create**.
+3. In the **New Pinboard** dialog box, give your pinboard a name and description. Then click **Create**.
 
      ![]({{ site.baseurl }}/images/new_pinboard.png "New Pinboard menu")
 
 ## Add an answer to a pinboard
 
-Instead of saving an answer you can add it to a pinboard by pinning it. To add an answer to a pinboard:
+Instead of saving an answer you can add it to a pinboard by pinning it. To add
+an answer to a pinboard:
 
 1. While viewing your answer of interest, click the **Pin** icon on the top right of the answer.
 
     ![]({{ site.baseurl }}/images/add_to_pinboard.png "Pin an answer to a pinboard icon")
 
-2. In the Copy to pinboard(s) dialog box, click the **+** icons next to the pinboards you would like to add your answer to.
+2. In the **Copy to pinboard(s)** dialog box, click the **+** icons next to the pinboards you would like to add your answer to.
 
     ![]({{ site.baseurl }}/images/copy_to_pinboard.png "Add filters menu")
 
-   **Tip:** You can also select **Create new pinboard** at the top of the list to create a new pinboard, then add your answer to it.
+   You can also select **Create new pinboard** at the top of the list to create a new pinboard, then add your answer to it.
 
 
 ## Download a pinboard
 
-You can download a pinboard as a PDF file, without having to download each visualization separately. Downloading a pinboard works just as it would when downloading an answer. To download a pinboard:
+You can download a pinboard as a PDF file, without having to download each
+visualization separately. Downloading a pinboard works just as it would when
+downloading an answer. To download a pinboard:
 
 1.   Click **Actions**, and select **Download as PDF**.
 
      ![]({{ site.baseurl }}/images/download_a_pinboard.png "Download your pinboard")
 
 
+## Details about a pinboard
+
+You can see who authored a pinboard, when it was created, and when it was last
+modified by choosing **Actions > Pinboard Info**.
+
+![]({{ site.baseurl }}/images/pinboard-info.png)
+
+
 ## Other pinboard actions
 
-Other pinboard actions include actions you normally perform on your search as well as actions that you can only perform on a pinboard. Most of these actions are found under the **Actions** button.
+Other pinboard actions include actions you normally perform on your search as
+well as actions that you can only perform on a pinboard. Most of these actions
+are found under the **Actions** button.
 
 ![]({{ site.baseurl }}/images/pinboard_actions.png "Pinboard actions button")
 

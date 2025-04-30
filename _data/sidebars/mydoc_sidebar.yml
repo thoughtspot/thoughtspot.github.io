@@ -2,8 +2,9 @@
 
 entries:
 - title: sidebar
-  product: Version
-  version: 4.4 Guides
+  product: ThoughtSpot Software
+  docversion: 4.5
+  version: 4.5 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -31,7 +32,7 @@ entries:
       - title: Finding your way around
         url: /end-user/introduction/about-navigating-thoughtspot.html
         output: web,ugBk
-      - title: Log in or out of ThoughtSpot
+      - title: ThoughtSpot browser access
         url: /end-user/accessing.html
         output: web,ugBk
       - title: Your user preferences
@@ -79,7 +80,7 @@ entries:
       - levelThreeTitle: Use keywords in search
         output: web,ugBk
         levelThreeItems:
-        - title: Overview of keyword searchess
+        - title: Overview of keyword searches
           url: /complex-search/about-keyword-searches.html
           output: web,ugBk
         - title: Time series analysis
@@ -229,35 +230,28 @@ entries:
         - title: Overview of aggregate formulas
           url: /complex-search/aggregation-formulas.html
           output: web,ugBk
-        - title: Filtered aggregation
-          url: /complex-search/filtered-agg-forms.html
-          output: web,ugBk
-        - title: Aggregates over time
+        - title: Cumulative functions
           url: /complex-search/about-cumulative-formulas.html
           output: web,ugBk
-        - title: Calculate the cumulative sum
-          url: /complex-search/search-using-the-cumulative-function.html
-          output: web,ugBk
-        - title: Grouping formulas
+        - title: Grouping functions
           url: /complex-search/about-pinned-measures.html
           output: web,ugBk
-        - title: Moving formulas
+        - title: Moving functions
           url: /complex-search/about-moving-formulas.html
           output: web,ugBk
-        - title: Calculate a moving average
-          url: /complex-search/search-using-the-moving-function.html
+        - title: Filtered aggregation functions
+          url: /complex-search/filtered-agg-forms.html
           output: web,ugBk
-
-      - title: Conversion formulas
+      - title: Conversion functions
         url: /complex-search/conversion-formulas.html
         output: web,ugBk
-      - title: Date formulas
+      - title: Date functions
         url: /advanced-search/formulas/date-formulas.html
         output: web,ugBk
       - title: Percent (simple number) calculations
         url: /advanced-search/formulas/percent-calculations.html
         output: web,ugBk
-      - title: Conditional formulas (operators)
+      - title: Formula operators
         url: /advanced-search/formulas/conditional-sum.html
         output: web,ugBk
       - title: Nested formulas
@@ -460,9 +454,6 @@ entries:
         output: web,admBk
       - title: Customize look and feel
         url: /admin/setup/customize-style.html
-        output: web,admBk
-      - title: Add the Slack integration
-        url: /admin/setup/slack-integration.html
         output: web,admBk
     - levelTwoTitle: Load and manage data
       output: web,admBk
@@ -674,7 +665,7 @@ entries:
       - levelThreeTitle: Row level security (RLS)
         output: web,admBk
         levelThreeItems:
-        - title: About RLS
+        - title: About row level security (RLS)
           url: /admin/data-security/about-row-security.html
           output: web,admBk
         - title: How Rule-Based RLS works
@@ -689,17 +680,35 @@ entries:
       - title: Overview of System administration
         url: /admin/system-admin/sysadmin-overview.html
         output: web,admBk
-      - title: System monitoring
-        url: /admin/system-admin/monitor-pinboards.html
-        output: web,admBk
-      - title: Using the Space Utilization chart
-        url: /admin/system-admin/about-the-memory-usage-chart.html
-        output: web,admBk
       - title: Send logs when reporting problems
         url: /admin/system-admin/send-logs-to-administrator.html
         output: web,admBk
       - title: Set up recording for Replay Search
         url: /admin/system-admin/configure-record-search.html
+        output: web,admBk
+    - levelTwoTitle: Monitoring
+      output: web,admBk
+      levelTwoItems:
+      - title: Introduction to monitoring
+        url: /admin/system-monitor/introduction.html
+        output: web,admBk
+      - title: Overview board
+        url: /admin/system-monitor/overview.html
+        output: web,admBk
+      - title: Data board
+        url: /admin/system-monitor/data.html
+        output: web,admBk
+      - title: Cluster Manager board
+        url: /admin/system-monitor/cluster-manager.html
+        output: web,admBk
+      - title: Alerts and Events board
+        url: /admin/system-monitor/alerts-events.html
+        output: web,admBk
+      - title: System worksheets
+        url: /admin/system-monitor/worksheets.html
+        output: web,admBk
+      - title: System pinboards
+        url: /admin/system-monitor/monitor-pinboards.html
         output: web,admBk
     - levelTwoTitle: Backup and restore
       output: web,admBk
@@ -743,7 +752,7 @@ entries:
       - title: Network connectivity issues
         url: /admin/troubleshooting/check-connectivity.html
         output: web,admBk
-      - title: Change the timezone
+      - title: Check the timezone
         url: /admin/troubleshooting/set-timezone.html
         output: web,admBk
       - title: Browser untrusted connection error
@@ -776,7 +785,7 @@ entries:
     - title: Set up ThoughtSpot Data Connect
       url: /data-connect/setup/settingup-etl.html
       output: web,cngBk
-    - levelTwoTitle: Work with Data Data Sources
+    - levelTwoTitle: Work with Data Sources
       output: web,cngBk
       levelTwoItems:
       - title: Add a new data source
@@ -836,117 +845,6 @@ entries:
       - title: Connectors reference
         url: /data-connect/reference/data-connect-connection-credentials.html
         output: web,cngBk
-  - sectiontitle: Application Integration
-    output: web,apgBk
-    sectionitems:
-    - title: Introduction
-      url: /app-integrate/introduction/introduction.html
-      output: web,apgBk
-    - title: Log in credentials
-      url: /app-integrate/introduction/logins.html
-      output: web,apgBk
-    - title: Get the JavaScript API
-      url: /app-integrate/JSAPI/about-JS-API.html
-      output: web,apgBk
-    - levelTwoTitle: SAML
-      output: web,apgBk
-      levelTwoItems:
-      - title: About SAML
-        url: /app-integrate/SAML/about-SAML-integrations.html
-        output: web,apgBk
-      - title: Configure SAML
-        url: /app-integrate/SAML/configure-SAML-with-tscli.html
-        output: web,apgBk
-      - title: Configure CA SiteMinder
-        url: /app-integrate/SAML/configure-SAML-siteminder.html
-        output: web,apgBk
-      - levelThreeTitle: Active Directory
-        output: web,apgBk
-        levelThreeItems:
-        - title: Configure Active Directory Federated Services
-          url: /app-integrate/SAML/integrate-ADFS.html
-          output: web,apgBk
-        - title: Initialize the Identity Provider Metadata
-          url: /app-integrate/SAML/initialize-IDP.html
-          output: web,apgBk
-        - title: Initialize the Service Provider Metadata
-          url: /app-integrate/SAML/initialize-SP.html
-          output: web,apgBk
-        - title: Test the ADFS Integration
-          url: /app-integrate/SAML/test-ADFS.html
-          output: web,apgBk
-      - title: Legacy SAML configuration
-        url: /app-integrate/SAML/ts-as-sp.html
-        output: web,apgBk
-    - levelTwoTitle: REST API
-      output: web,apgBk
-      levelTwoItems:
-      - title: About the REST API
-        url: /app-integrate/data-api/about-data-api.html
-        output: web,apgBk
-      - title: Calling the REST API
-        url: /app-integrate/data-api/calling-rest-api.html
-        output: web,apgBk
-      - title: REST API pagination
-        url: /app-integrate/data-api/response-pagination.html
-        output: web,apgBk
-      - title: Use the REST API to get data
-        url: /app-integrate/data-api/use-data-api-read.html
-        output: web,apgBk
-    - levelTwoTitle: Embed ThoughtSpot
-      output: web,apgBk
-      levelTwoItems:
-      - title: Understand embedding
-        url: /app-integrate/embedding-viz/about-embedding-viz.html
-        output: web,apgBk
-      - title: Embed pinboard or visualization
-        url: /app-integrate/embedding-viz/embed-a-viz.html
-        output: web,apgBk
-      - title: Authentication flow with embed
-        url: /app-integrate/JSAPI/enable-JS-API.html
-        output: web,apgBk
-      - title: Full application embedding
-        url: /app-integrate/embedding-viz/about-full-embed.html
-        output: web,apgBk
-      - title: Configured trusted authentication
-        url: /app-integrate/embedding-viz/trusted-authentication.html
-        output: web,apgBk
-    - levelTwoTitle: Runtime Filters
-      output: web,apgBk
-      levelTwoItems:
-      - title: About Runtime Filters
-        url: /app-integrate/runtime-filters/about-runtime-filters.html
-        output: web,apgBk
-      - title: Apply a Runtime Filter
-        url: /app-integrate/runtime-filters/apply-runtime-filter.html
-        output: web,apgBk
-      - title: Runtime Filter Operators
-        url: /app-integrate/runtime-filters/runtime-filter-operators.html
-        output: web,apgBk
-    - levelTwoTitle: Style Customization
-      output: web,apgBk
-      levelTwoItems:
-      - title: Make Style Customization
-        url: /app-integrate/custom-branding/perform-style-customization.html
-        output: web,apgBk
-      - title: Upload application logos
-        url: /app-integrate/custom-branding/upload-application-logos.html
-        output: web,apgBk
-      - title: Set chart and table visualization fonts
-        url: /app-integrate/custom-branding/set-chart-and-table-visualization-fonts.html
-        output: web,apgBk
-      - title: Choose a background color
-        url: /app-integrate/custom-branding/choose-background-color.html
-        output: web,apgBk
-      - title: Select chart color palettes
-        url: /app-integrate/custom-branding/select-chart-color-palettes.html
-        output: web,apgBk
-      - title: Change the footer text
-        url: /app-integrate/custom-branding/change-the-footer-text.html
-        output: web,apgBk
-    - title: API Reference
-      url: /app-integrate/reference/public-api-reference.html
-      output: web,apgBk
   - sectiontitle: Node Setup
     output: web,appQs
     sectionitems:
@@ -980,7 +878,19 @@ entries:
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: VMWare node
+    - levelTwoTitle: Azure node
+      output: web,appQs
+      levelTwoItems:
+        - title: Azure cluster overview
+          url: /appliance/azure/about-azure.html
+          output: web,appQs
+        - title: Configuration options
+          url: /appliance/azure/configuration-options.html
+          output: web,appQs
+        - title: Set up Azure for ThoughtSpot
+          url: /appliance/azure/launch-an-instance.html
+          output: web,appQs
+    - levelTwoTitle: VMware node
       output: web,appQs
       levelTwoItems:
         - title: Configuration overview
@@ -998,32 +908,32 @@ entries:
   - sectiontitle: Data Integration
     output: web,digBk
     sectionitems:
-    - title: Introduction
+    - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
     - title: Login credentials for administration
       url: /data-integrate/introduction/logins.html
       output: web,digBk
-    - title: ThoughtSpot Clients
-      url: /data-integrate/clients/about-clients.html
-      output: web,digBk
-    - levelTwoTitle: Use the ODBC Client
+    - levelTwoTitle: Use the ODBC client
       output: web,digBk
       levelTwoItems:
-       - title: About the ODBC Driver
+       - title: ODBC driver overview
          url: /data-integrate/clients/about-odbc.html
          output: web,digBk
-       - levelThreeTitle: Install on Windows
+       - levelThreeTitle: ODBC on Windows
          output: web,digBk
          levelThreeItems:
-         - title: Windows Installation Overview
+         - title: Install the ODBC driver on Windows
            url: /data-integrate/clients/install-odbc-windows.html
            output: web,digBk
-         - title: Change the Windows ODBC Configuration
-           url: /data-integrate/clients/change-odbc-windows.html
+         - title: Configure multiple connections on Windows
+           url: /data-integrate/clients/multiple-sources-windows.html
            output: web,digBk
-         - title: Add a New Data Source to ODBC on Windows
-           url: /data-integrate/clients/add-new-ODBC-source-windows.html
+         - title: Deploy SSL with ODBC on Windows
+           url: /data-integrate/clients/windows-deploy-ssl.html
+           output: web,digBk
+         - title: Set up the ODBC Driver for SSIS
+           url: /data-integrate/clients/set-up-the-odbc-driver-using-ssis.html
            output: web,digBk
        - title: Install the ODBC Driver on Linux
          url: /data-integrate/clients/install-odbc-linux.html
@@ -1037,66 +947,43 @@ entries:
     - levelTwoTitle: JDBC Driver Client
       output: web,digBk
       levelTwoItems:
-      - title: About the JDBC Driver
+      - title: JDBC Driver Overview
         url: /data-integrate/clients/about-jdbc-driver.html
         output: web,digBk
       - title: Use the JDBC Driver
         url: /data-integrate/clients/use-jdbc-driver.html
         output: web,digBk
-    - title: About Informatica Connector
-      url: /data-integrate/clients/about-informatica.html
+    - title: Set up the JDBC Driver for Pentaho
+      url: /data-integrate/clients/set-up-the-jdbc-driver-for-pentaho.html
       output: web,digBk
-    - levelTwoTitle: Microsoft SSIS client
-      output: web,digBk
-      levelTwoItems:
-      - title: About Microsoft SSIS
-        url: /data-integrate/ssis/about-ssis.html)
-      - title: ODBC Data Source Administrator
-        url: /data-integrate/ssis/odbc-data-source-administrator.html
-        output: web,digBk
-      - title: Set up the ODBC Driver for SSIS
-        url: /data-integrate/ssis/set-up-the-odbc-driver-using-ssis.html
-        output: web,digBk
-    - levelTwoTitle: Pentaho client
-      output: web,digBk
-      levelTwoItems:
-      - title: About Pentaho
-        url: /data-integrate/pentaho/about-pentaho.html
-        output: web,digBk
-      - title: Set up the JDBC Driver for Pentaho
-        url: /data-integrate/pentaho/set-up-the-jdbc-driver-for-pentaho.html
-        output: web,digBk
     - levelTwoTitle: Troubleshooting
       output: web,digBk
       levelTwoItems:
       - title: Troubleshooting Data Integrations
         url: /data-integrate/troubleshooting/troubleshooting-intro.html
         output: web,digBk
-      - title: Enabling ODBC Logs on Windows
-        url: /data-integrate/troubleshooting/troubleshooting-ODBC.html
+      - title: Enable ODBC Logs
+        url: /data-integrate/troubleshooting/enable-ODBC-log.html
         output: web,digBk
-      - title: Enabling ODBC Logs on Linux or Solaris
-        url: /data-integrate/troubleshooting/enable-ODBC-log-linux.html
-        output: web,digBk
-      - title: Enabling JDBC Logs
+      - title: Enable JDBC Logs
         url: /data-integrate/troubleshooting/JDBC-logging.html
         output: web,digBk
-      - title: Schema not found error
+      - title: Schema not found error with ODBC
         url: /data-integrate/troubleshooting/schema-not-found.html
         output: web,digBk
-      - title: How to improve throughput of the load
+      - title: How to improve throughput
         url: /data-integrate/troubleshooting/how-to-improve-throughput-of-the-load.html
+        output: web,digBk
+      - title: ODBC tracing on Windows
+        url: /data-integrate/troubleshooting/windows-odbc-tracing.html
         output: web,digBk
     - levelTwoTitle: Reference
       output: web,digBk
       levelTwoItems:
-      # - title: Reference
-      #   url: /data-integrate/reference/intro-reference.html
-      #   output: pdf
-      - title: ODBC supported SQL commands
+      - title: Supported SQL commands
         url: /data-integrate/reference/odbc-commands.html
         output: web,digBk
-      - title: ODBC and JDBC configuration properties
+      - title: Connection configuration
         url: /data-integrate/reference/simba-settings.html
         output: web,digBk
   - sectiontitle: Disaster Recovery
@@ -1128,33 +1015,42 @@ entries:
     sectionitems:
     - title: About this reference
       url: /reference/intro-reference.html
-      output: web,refGd
+      output: web
     - title: Keyword reference
       url: /reference/keywords.html
       output: web,refGd
     - title: TQL reference
       url: /reference/sql-cli-commands.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: tsload flag reference
       url: /reference/data-importer-ref.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: tscli command reference
       url: /reference/tscli-command-ref.html
-      output: web,refGd
+      output: web,refGdAdmin
     - title: Date and time formats reference
       url: /reference/date-formats-for-loading.html
       output: web,refGd
     - title: Row level security rules reference
       url: /reference/rls-rule-builder-reference.html
       output: web,refGd
-    - title: Worksheet formula reference
+    - title: Formula function reference
       url: /reference/formula-reference.html
       output: web,refGd
-    - title: Error code reference
+    - title: Alert codes reference
+      url: /reference/alerts-reference.html
+      output: web,refGdAdmin
+    - title: User action codes reference
+      url: /reference/action-codes.html
+      output: web,refGdAdmin
+    - title: Error codes reference
       url: /error-codes/error-codes-reference.html
+      output: web,refGdAdmin
+    - title: Frequently asked questions
+      url: /faq/faq.html
       output: web,refGd
   - sectiontitle: About this Release
-    output: web
+    output: web,rnotes
     sectionitems:
     - title: Help Center
       url: /release/help-center.html
@@ -1162,6 +1058,15 @@ entries:
     - title: Release notes
       url: /release/notes.html
       output: web,rnotes
+    - title: Fixed issues
+      url: /release/fixed.html
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
+      output: web
+    - title: Glossary
+      url: /reference/glossary.html
+      output: web
+    - title: Topic index
+      url: /reference/tags_index.html
       output: web

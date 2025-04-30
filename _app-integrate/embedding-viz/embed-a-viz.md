@@ -45,7 +45,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you'll get a co
 1. Create an empty directory called `test`.
 2. Save the `test.html` file to the `test` directory.
 3. <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">Download</a> the ThoughtSpot JavaScript library.
-4. Place the Javascript library in an `api` directory co-located with the `index.html` file.
+4. Place the Javascript library in an `api` directory co-located with the `test.html` file.
 5. Edit the `test.html` file in your favorite editor.
 6. Scroll down to the `Variables` section (about line 37).
 
@@ -146,4 +146,4 @@ No 'Access-Control-Allow-Origin' header is present on the requested resource.
 
 Typically you see this if the cross domain (CORS) setting was not completed correctly on
 your ThoughtSpot cluster. Contact <a
-href="mailto:support@thoughtspot.com">support@thoughtspot.com</a> for more help.
+href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a> for more help.

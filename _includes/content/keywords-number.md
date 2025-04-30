@@ -1,7 +1,7 @@
 <table>
-     <colgroup>
-      <col style="width:25%" />
-      <col style="width:50%" />
+   <colgroup>
+      <col style="width:15%" />
+      <col style="width:85%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
@@ -13,77 +13,58 @@
       <tr>
          <td>sum</td>
          <td>
-            <ul>
-               <li><code>sum revenue</code>
-               </li>
-            </ul>
+            <code><b>sum</b> revenue</code>
          </td>
       </tr>
       <tr>
          <td>average</td>
          <td>
-            <ul class="ul">
-               <li><code>average revenue by store</code>
-               </li>
-            </ul>
+            <code><b>average</b> revenue by store</code>
          </td>
       </tr>
       <tr>
          <td>count</td>
          <td>
-            <ul class="ul">
-               <li><code>count visitors by site</code>
-               </li>
-            </ul>
+            <code><b>count</b> visitors by site</code>
          </td>
       </tr>
       <tr>
          <td>max</td>
          <td>
-            <ul class="ul">
-               <li><code>max sales by visitor by site</code>
-               </li>
-            </ul>
+            <code><b>max</b> sales by visitor by site</code>
          </td>
       </tr>
       <tr>
          <td>min</td>
          <td>
-            <ul class="ul">
-               <li><code>min revenue by store by campaign for cost &gt;
-                  5000</code>
-               </li>
-            </ul>
+
+            <code><b>min</b> revenue by store by campaign for cost &gt; 5000</code>
+
          </td>
       </tr>
       <tr>
          <td>standard deviation</td>
          <td>
-            <ul class="ul">
-               <li><code>standard deviation revenue by product by month
-                  for date after 10/31/2010</code>
-               </li>
-            </ul>
+
+<code><b>standard deviation</b> revenue by product by month for date after
+10/31/2010</code>
+
          </td>
       </tr>
       <tr>
          <td>unique count</td>
          <td>
-            <ul class="ul">
-               <li><code>unique count visitor by product page last
-                  week</code>
-               </li>
-            </ul>
+
+            <code><b>unique count</b> visitor by product page last week</code>
+
          </td>
       </tr>
       <tr>
          <td>variance</td>
          <td>
-            <ul class="ul">
-               <li><code>variance sale amount by visitor by product for
-                  last year</code>
-               </li>
-            </ul>
+
+    <code><b>variance</b> sale amount by visitor by product for last year</code>
+
          </td>
       </tr>
    </tbody>

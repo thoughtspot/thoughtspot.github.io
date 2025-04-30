@@ -1,7 +1,7 @@
 ---
-title: [ODBC and JDBC configuration properties]
-keywords: tbd
-last_updated: tbd
+title: [Connection configuration]
+keywords: simba,odbc,jdbc
+tags: [tsload]
 summary: "Lists the properties you can set for ODBC or JDBC connections"
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -15,7 +15,7 @@ clients, and ThoughtSpot has added some properties, which are listed separately
 here. All configuration properties use the type String (text).
 
 You can set these properties on Windows by using the [ODBC Administrator]({{
-site.baseurl }}/data-integrate/clients/change-odbc-windows.html#) client. For
+site.baseurl }}/data-integrate/clients/install-odbc-windows.html#) client. For
 Linux and Solaris, the properties are located in three files, depending on the
 property  type:
 
@@ -24,6 +24,7 @@ property  type:
 |DSN|`odbc.ini` file|
 |Driver|`odbsinst.ini` file|
 |SimbaSetting Reader|`simbaclient.ini` file|
+
 
 ## Setting Properties for JDBC
 
@@ -35,7 +36,7 @@ For more information, see [Use the JDBC Driver]({{ site.baseurl
 
 The following tables summarize the configuration properties.
 
-<table cellpadding="4" cellspacing="0" summary="" id="reference_h2b_cwk_vw__table_ok1_434_vw" class="table" frame="border" border="1" rules="all">
+<table style="font-size:90%; padding:4; border-collapse: collapse;">
    <colgroup>
       <col style="width:15%"/>
       <col style="width:15%"/>
@@ -171,6 +172,18 @@ The following tables summarize the configuration properties.
          <td>The number of log files to create. When the maximum
             number of log files has been created, the oldest file will be deleted and a new one
             created. The default value is 50.
+         </td>
+      </tr>
+      <tr>
+         <td><code>username</code></td>
+         <td>UID</td>
+         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements. Typically, this user is a user with data management or administrative privileges on the application.
+         </td>
+      </tr>
+      <tr>
+         <td><code>password</code></td>
+         <td>Password</td>
+         <td>Part of a user username/password combination. This combination should correspond to a ThoughtSpot application user with permissions appropriate to your ETL requirements.  Typically, this user is a user with data management or administrative privileges on the application.
          </td>
       </tr>
    </tbody>

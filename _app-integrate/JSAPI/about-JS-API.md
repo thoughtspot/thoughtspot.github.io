@@ -74,5 +74,5 @@ local server as well, for example: `http://localhost:8080.` Though, it is a good
 idea to disable the `localhost` access after your testing is complete.
 
 To enable CORS between your client applications and your ThoughtSpot instance. ,
-you must work with <a href="mailto:support@thoughtspot.com">ThoughtSpot
+you must work with <a href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot
 Support</a>.

@@ -19,7 +19,7 @@ The first example could require modifying a single HTML page while the later
 example may require working with a development team and several different
 workflows in a browser application.
 
-Regardless of the simplicity or complexity of your clieant application, its
+Regardless of the simplicity or complexity of your client application, its
 infrastructure must allow for loading and calling the ThoughtSpot JS library.
 This library allows you to authenticate to ThoughtSpot and load specific
 objects.
@@ -50,6 +50,13 @@ There are different methods for embedding ThoughtSpot into a client application:
 </table>
 
 You can also use the ThoughtSpot data APIs to request data from ThoughtSpot.
+
+### Configuration requirements for embedding
+
+Only Extended Enterprise installation can use ThoughtSpot's embed functionality.
+ThoughtSpot Enterprise installations must also work with ThoughtSpot Support to
+enable embed before using this functionality.
+
 
 ## Choose an authentication methodology
 
@@ -110,3 +117,20 @@ phishing attack. Cross-origin or cross-domain verification closes this vulnerabi
 When embedding, you must enable CORS between your client application domain and
 the ThoughtSpot domain. This protects your data, so that another actor cannot
 use the same URL to embed the visualization in its own Web pages.
+
+## Decide if you need to change the feedback email
+
+ThoughtSpot has an automated feature that collects feedback from users and sends
+it to ThoughtSpot Support. Depending on what and how you embed, user
+actions with your embedded application can trigger feedback. You can continue to
+forward feedback in this manner or direct the feedback to another email. To
+learn how to change the feedback email, see [Manage the feedback contact]({{
+site.baseurl }}/admin/setup/work-with-ts-support.html#manage-the-feedback-contact).
+
+## Remove the ThoughtSpot branded footer
+
+The ThoughtSpot footer appears by default in the ThoughtSpot application. It
+also appears with an embed application that encompasses an individual pinboard
+or a full application. In embed applications that are have a single
+visualization, you can ask your ThoughtSpot support engineer to disable the
+footer.

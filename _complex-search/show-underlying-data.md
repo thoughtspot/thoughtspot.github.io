@@ -15,7 +15,7 @@ constitutes of, for any given region.
 
 Only the first 1,000 rows are shown when viewing the underlying data. You can
 even download the results shown when you choose **Show underlying data** from a
-chart. The download file limit is 100,000 rows.
+chart. The download file limit is a million rows.
 
 {% include note.html content="Viewing underlying data does not work for answers
 that are derived from chasm trap searches. Nor does this feature work for pivot

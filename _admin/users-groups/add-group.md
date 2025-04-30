@@ -45,7 +45,7 @@ To create a group and add privileges for the group:
      </tr>
      <tr>
        <th>Display name</th>
-       <td></td>
+       <td>Name of the group as it appears in ThoughtSpot.</td>
      </tr>
      <tr>
        <th>Sharing visibility</th>
@@ -124,7 +124,7 @@ users are present, you must search for the specific user name.
 
 4. Choose **Manage Users**.
 
-   The first 15 users which are in the group are listed. The group could
+   The first 100 users which are in the group are listed. The group could
    maintain more, you have to search for a specific user to find others.
 
 

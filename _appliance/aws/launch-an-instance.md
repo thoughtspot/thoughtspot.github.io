@@ -1,6 +1,6 @@
 ---
 title: [Set up AWS for ThoughtSpot]
-keywords: tbd
+keywords: AWS, AMI
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -6,7 +6,7 @@ summary: "Explains how schedules and gives examples."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic backup policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section is useful for understanding how to understand existing schedules and how to configure new schedules.
+You can schedule periodic snapshots and backups. For snapshots, ThoughtSpot comes configured with a strongly recommended periodic snapshot policy. For backups, there is no such policy but you may want to create one or several of your own configurations. This section helps to understand existing schedules and how to configure new schedules.
 
 ## Configuration format
 
@@ -71,7 +71,7 @@ schedule {
 
 ```
 
-Under this policy, a snapshot is taken every hour starting at midnight. You can see that by combining the `period` of 1 (one) hour with the midnight offset of 0 (zero).
+Under this policy, a snapshot is taken every hour starting at midnight. You can see that by combining the `period` of 1 hour with the midnight offset of 0.
 
 ```
 

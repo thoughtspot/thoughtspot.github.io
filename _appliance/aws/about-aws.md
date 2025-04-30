@@ -14,7 +14,7 @@ VMs based on your dataset size.
 
 The security group setting of your ThoughtSpot instance on AWS is up to you. You
 can find more information about which ports to open in the [network ports
-reference]({{ site.baseurl }}/aws/setup/firewall-ports.html#).
+reference]({{ site.baseurl }}/appliance/firewall-ports.html#).
 
 ## A little about AWS
 

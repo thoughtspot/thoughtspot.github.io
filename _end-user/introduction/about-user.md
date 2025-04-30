@@ -19,7 +19,8 @@ your icon, email, and locale preferences.
 
 ## How other users see you
 
-You can change your picture by clicking **Upload Picture**. The system accepts PNG or JPEG files that are under 4MB.
+You can change your picture by clicking **Upload Picture**. The system accepts
+`GIF`, `BMP`, `JPEG`, and `PNG` files that do not exceed 4MB in size.
 
  ![]({{ site.baseurl }}/images/upload_picture.png "Update my picture")
 

@@ -50,7 +50,7 @@ Keywords serve a variety of predefined purposes, and are divided into different 
 
     These keywords allows you to define your search by sum, average, count, max, min, and other accumulations.
 
--   **Filter keywords**
+-   **Comparative keywords**
 
     Filter keywords work in the same way as filters on table columns or chart axes.
 

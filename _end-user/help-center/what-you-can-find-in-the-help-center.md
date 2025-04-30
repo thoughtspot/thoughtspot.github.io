@@ -2,7 +2,7 @@
 title: [More help and support]
 tags: [keywords]
 keywords: tbd
-last_updated: tbd
+last_updated: 1/6/2021
 summary: "There are many locations on the web where you can find help for ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -70,17 +70,37 @@ From this dialog you can get to the following:
 Along the bottom of the **Help** dialog you'll see a link to contact Support as
 well as the version of ThoughtSpot you are using.
 
-## Search the help in search bar
+## Learn
+
+Choosing **Learn** from the **Help** menu takes a you to the *Learn* center.
+The center contains one or more example queries.  You can only play replay on data that you have access to.
+
+Click on a item in Learn to replay it in ThoughtSpot. During a reply, you can
+click `Pause` or `Resume` or click `ESC` to exit the replay.
+
+Any administrator can add to the items in the **Learn** center. To add a replay, do
+the following:
+
+1. Search in your search bar.
+2. Choose the pin from the answer that results.
+   The system lists the pinboards you can pin to.
+3. Select **Learn how to use ThoughtSpot** pinboard.
+
+   ![]({{ site.baseurl }}/images/learn-save.png "Contact support")
+
+4. Navigate to the *Learn* center to replay your search.
+
+   ![]({{ site.baseurl }}/images/learn-replay.png "Contact support")
+
+
+<!-- ## Search the help in search bar
 
 You can search the help directly from the search bar with the `how to` and `help` keywords.
 
 {% include content/keywords-help.md %}
 
 The `how to` keyword takes you into the documentation only. The `help` keyword
-allows you to jump directly into a product workflow.
+allows you to jump directly into a product workflow. -->
 
 ## Support contact information
-
-If you still can't find what you're looking for, you can contact support.
-
-![]({{ site.baseurl }}/images/help_center_support_contact.png "Contact support")
+If you still can't find what you're looking for, you can [ask the ThoughtSpot community a question](https://community.thoughtspot.com/s/){: target="_blank"}, or [submit a case to ThoughtSpot Support](https://community.thoughtspot.com/customers/s/contactsupport){: target="_blank"}.

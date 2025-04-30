@@ -1,7 +1,8 @@
 ---
 title: [Get your configuration and logs]
 keywords: tbd
-last_updated: tbd
+tags: [logs]
+last_updated: 1/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -9,7 +10,7 @@ For troubleshooting on specific incidents or cluster problems, two things are im
 
 ## Check your configuration
 
-1. Log into the ThoughtSpot cluster as the `admin` user.
+1. Log into the ThoughtSpot cluster as the `admin` user. 
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```
@@ -38,7 +39,9 @@ There are two ways to get logs:
 
      ![]({{ site.baseurl }}/images/trace_log.png "Download log trace")
 
--   You can generate a log bundle using the tscli command `tscli logs collect` if you are comfortable with Linux. The command lets you specify which logs to collect and from what time periods.
+- You can generate a log bundle using the `tscli` command `tscli logs collect` if
+you are comfortable with Linux. The command lets you specify which logs to
+collect and from what time periods.
 
     Usage for this command is:
 
@@ -90,7 +93,7 @@ $ tscli logs collect --include system,orion --since 2h --out /tmp/debug.tar.gz
 This command collects logs from a specific time window:
 
 ```
-$ tscli logs collect --include system,orion --from 20150520-12:00:00 --to 20150522-12:30:00
+$ tscli logs collect --include system,orion --from 20150520-12:00 --to 20150522-12:30
 ```
 
 Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag.

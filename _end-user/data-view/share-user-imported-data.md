@@ -5,9 +5,25 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-If you upload a spreadsheet, you can share **Can View** or **Can Edit** privileges with other people, who can further share them with others.
+If you upload a spreadsheet, you can share **Can View** or **Can Edit**
+privileges with other people, who can further share them with others.
 
-Data that you uploaded from a Web browser is only visible to you and to the administrator. You can share the entire uploaded table, or only some of its columns.
+## Understand data sharing
+
+Data that you uploaded from a Web browser is only visible to you and to the
+administrator. You can share the entire uploaded table, or only some of its
+columns.
+
+By default, if you share only some table columns, users with access to those
+columns cannot see the other column's data in their searches. However, the data
+can become visible if a worksheet or pinboard that _also contain_ those columns
+is shared with these users.
+
+If you want to prevent shares of these types from also revealing the columns,
+you can ask your administrator to enable a stricter behavior.
+
+
+## How to share data
 
 Share uploaded data by following these steps:
 

@@ -32,7 +32,7 @@ To change the primary key of a table:
          PRIMARY KEY;
     ```
 
-    Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. To continue, use the `--allow_unsafe` flag.
+    Dropping a primary key can impact existing worksheets, answers, and pinboards. The system warns you if dropping a primary key impacts other objects. 
 
 4. Add a new primary key, if desired:
 
@@ -62,7 +62,7 @@ To change the relationship between tables:
 3. Issue the command to drop the existing relationship
 
    Before dropping a relationship TQL checks for and then warns of any dependent
-   objects. To continue with the drop any way, use the `--allow_unsafe` flag.
+   objects.
    The following examples illustrate several different types of drop operations.
 
     Drop a foreign key by name, if it was given a name when it was defined:

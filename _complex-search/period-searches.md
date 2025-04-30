@@ -25,56 +25,7 @@ analysis:
 
 ## Period keywords
 
-<table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
-   <colgroup>
-      <col style="width:25%" />
-      <col style="width:50%" />
-   </colgroup>
-  <tr>
-    <th>Keyword</th>
-    <th>Example</th>
-  </tr>
-  <tr>
-    <td>quarter (<i>date</i>)</td>
-    <td><code>quarter (commit date)</code></td>
-  </tr>
-  <tr>
-    <td>month of quarter (<i>date</i>)</td>
-    <td><code>month of quarter (commit date)</code></td>
-  </tr>
-  <tr>
-    <td>week of year (<i>date</i>)</td>
-    <td><code>week of year (commit date)</code></td>
-  </tr>
-  <tr>
-    <td>week of quarter (<i>date</i>)</td>
-    <td><code>week of quarter (commit date)</code></td>
-  </tr>
-  <tr>
-    <td>week of month (<i>date</i>)</td>
-    <td><code>week of month (commit date)</code></td>
-  </tr>
-  <tr>
-    <td>day of year (<i>date</i>)</td>
-    <td><code>day of year (commit date)</code></td>
-  </tr>
-  <tr>
-    <td>day of quarter (<i>date</i>)</td>
-    <td><code>day of quarter (commit date)</code></td>
-  </tr>
-  <tr>
-    <td>day (<i>date</i>)</td>
-    <td><code>day (order date)</code></td>
-  </tr>
-  <tr>
-    <td>day of week (<i>date</i>)</td>
-    <td><code>day of week (order date)</code></td>
-  </tr>
-  <tr>
-    <td>hour (<i>datetime</i>)</td>
-    <td><code>hour (timestamp)</code></td>
-  </tr>
-</table>
+{% include content/keywords-period.md %}
 
 All of these keywords sort the data using datetime semantics, that is
 chronologically in a time sequence. By default, the **Search** bar suggests
@@ -117,3 +68,39 @@ This type of query also yields a stacked line chart:
 The child date time attribute is on the X-axis and the parent in the legend. For
 example, if you search `revenue month yearly` the child, `monthly`, appears on
 the x-axis and the parent, `yearly`, in the legend.
+
+## Granularity for date filters
+
+You can refine a simple date filters by adding hierarchical date filter to your
+query. The ability to specify two bucket granularities such as "hour of day" or
+"week of year" are two examples. The syntax of this type of query is
+
+```
+small_bucket of big_bucket [INTEGER_CONDITION]
+```
+
+The `INTEGER_CONDITION` is optional but it must be an integer.  For example, this
+query is valid:
+
+```
+revenue by day of week <= 2
+```
+
+This query is invalid:
+
+```
+revenue by day of week = Tuesday
+```
+
+You can specify one or more granular filters.
+
+These tips and gotchas apply to time granularity:
+
+* The system-defined fiscal rules are respected.  This
+means, for example, if the fiscal year begins in February, `month of year = 2`
+matches dates in March.
+* Fiscal shorthands such as `Q1`, `Q2` and so on are not
+supported, so `day of week = d1` is not valid.
+* `INTEGER_CONDITION` with `=` or `!=` accept a list of filter values, so, `day of week = 1 2 3` is valid.
+* `INTEGER_CONDITION` with `=` or `!=` require legal values, so `day of week >` accepts any integer on the right hand side while `day of week =` requires a value in the legal `1-7` range.
+* Simple date filters allow you to use edit the filter through the answer to refine your search, adding a a hierarchical date filter in the search bar disables this ability.

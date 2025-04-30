@@ -35,9 +35,9 @@ ALTER TABLE products
 Also note that changing data type has implications on the primary key and
 sharding enforcement. For example, changing the data type of a column that is
 part of the sharding key would lead to a redistribution of data. Then imagine
-that the sharding key column contained the text values "00100", "0100", and
-"100", which all map to same integer value. If this type of a column is changed
-from a VARCHAR to an INT, then it would be subject to the upsert behavior on
+that the sharding key column contained the text values `00100`, `0100`, and
+`100`, which all map to same integer value. If this type of a column is changed
+from a `VARCHAR` to an `INT`, then it would be subject to the upsert behavior on
 primary keys. So, in this example, only one of the three rows would be preserved.
 
 Be aware that data type conversion will preserve the data in the underlying
@@ -49,27 +49,30 @@ were changed to a varchar column).
 
 ## Supported data type conversions
 
-In general, the data type conversions that make logical sense are supported. But there are a few nuances you should be aware of:
+In general, the data type conversions that make logical sense are supported. But
+there are a few nuances you should be aware of:
 
--   When you convert from INT to BOOL, zero is converted to false, and all non-zero values are converted to true.
--   When you convert from BOOL to INT, true gets converted to 1, and false gets converted to 0.
--   When you convert from DOUBLE to INT, the value gets rounded.
--   When you convert from INT to DOUBLE, the value gets rounded.
--   When you convert from DATETIME to DATE, the date part of value is preserved and the time part is dropped.
--   When you convert from DATE to DATETIME, the time gets added as 00:00:00. The date part of the value is preserved.
--   When you convert from DATETIME to TIME, the time part of the value is preserved.
--   Conversion from TIME to DATETIME is not supported.
+-   When you convert from `INT` to `BOOL`, zero is converted to false, and all non-zero values are converted to true.
+-   When you convert from `BOOL` to `INT`, true gets converted to 1, and false gets converted to 0.
+-   When you convert from `DOUBLE` to `INT`, the value gets rounded.
+-   When you convert from `INT` to `DOUBLE`, the value gets rounded.
+-   When you convert from `DATETIME` to `DATE`, the date part of value is preserved and the time part is dropped.
+-   When you convert from `DATE` to `DATETIME`, the time gets added as `00:00:00`. The date part of the value is preserved.
+-   When you convert from `DATETIME` to `TIME`, the time part of the value is preserved.
+-   Conversion from TIME to `DATETIME` is not supported.
 
 ## Date and time conversions
 
 Some data type conversion require a format string. These include:
 
--   conversion from DATE/TIME/DATETIME
--   conversion to DATE/TIME/DATETIME
+-   conversion from `DATE`/`TIME`/`DATETIME`
+-   conversion to `DATE`/`TIME`/`DATETIME`
 
-For these types of conversions, you'll use a special syntax using parsinghint and the date format specifications supported in the [strptime library function](http://man7.org/linux/man-pages/man3/strptime.3.html).
+For these types of conversions, you'll use a special syntax using parsinghint
+and the date format specifications supported in the [strptime library
+function](http://man7.org/linux/man-pages/man3/strptime.3.html).
 
-For the example, first create a table with a timestamp stored as a VARCHAR:
+For the example, first create a table with a timestamp stored as a `VARCHAR`:
 
 ```
 CREATE TABLE fruit_sales
@@ -79,7 +82,7 @@ INSERT INTO fruit_sales
    VALUES ('2015-12-29 13:52:39');
 ```
 
-Now, convert the column from a VARCHAR to DATETIME, using the format %Y-%m-%d %H:%M:%S:
+Now, convert the column from a `VARCHAR` to `DATETIME`, using the format `%Y-%m-%d %H:%M:%S`:
 
 ```
 ALTER TABLE fruit_sales
@@ -94,43 +97,50 @@ ALTER TABLE fruit_sales
    MODIFY COLUMN time_of_sale VARCHAR(32);
 ```
 
-## Boolean to string conversions
+## String to boolean conversions
 
-Boolean to string conversions have format strings, too. You'll use `parsinghint`
+String to boolean conversions have format strings, too. You'll use `parsinghint`
 as you do for date and time conversions. You can choose among these approaches:
 
--   Option 1: Specify string values for both true and false. Any non-matching values get converted to null. In this example, "100" gets converted to true, and "0" gets converted to false. "-1" gets converted to null.
+**OPTION 1: Specify string values for both true and false.** Any non-matching values
+get converted to null. In this example, "100" gets converted to true, and "0"
+gets converted to false. "-1" gets converted to null.
 
-    ```
-    ALTER TABLE db
-       MODIFY COLUMN s bool [parsinghint="100_0"];
-    ```
+```
+ALTER TABLE db
+   MODIFY COLUMN s bool [parsinghint="100_0"];
+```
 
--   Option 2: Specify a string value for true. Any non-matching value gets converted to false. In this example, "100" gets converted to true, "-1" and "0" get converted to false.
+**OPTION 2: Specify a string value for true.** Any non-matching value gets converted
+to false. In this example, "100" gets converted to true, "-1" and "0" get
+converted to false.
 
-    ```
-    ALTER TABLE db
-       MODIFY COLUMN s bool [parsinghint="100_"];
-    ```
+```
+ALTER TABLE db
+   MODIFY COLUMN s bool [parsinghint="100_"];
+```
 
--   Option 3: Specify a string value for false. Any non-matching value get converted to true. In this example, "-1" and "100" get converted to true, and "0" gets converted to false.
+**Option 3: Specify a string value for false.** Any non-matching value get
+converted to true. In this example, "-1" and "100" get converted to true, and
+"0" gets converted to false.
 
-    ```
-    ALTER TABLE db
-       MODIFY COLUMN s bool [parsinghint="_0"];
-    ```
+```
+ALTER TABLE db
+   MODIFY COLUMN s bool [parsinghint="_0"];
+```
 
 
 ## String to boolean conversions
 
-When converting from a string to a boolean, you must specify a string for true and false. By default, a string to boolean conversion generates "true" for true, "false" for false.
+When converting from a string to a boolean, you must specify a string for true and false. By default, a string to boolean conversion generates `true` for `true`, `false` for `false`.
 
 ```
 ALTER TABLE db
    MODIFY COLUMN b varchar(32);
 ```
 
-But you may override the default strings that get generated by using parsinghint, as in this example:
+But you may override the default strings that get generated by using
+`parsinghint`, as in this example:
 
 ```
 ALTER TABLE db
@@ -139,11 +149,21 @@ ALTER TABLE db
 
 ## Change the Data Type of a Column
 
-When you issue the TQL command to convert a column from one data type to another, the conversion is handled automatically. However, you'll need to ensure that any visualizations built on top of the table display correctly.
+When you issue the TQL command to convert a column from one data type to
+another, the conversion is handled automatically. However, you'll need to ensure
+that any visualizations built on top of the table display correctly.
 
-You should always take a snapshot of your database before making any schema changes. This will allow you to revert back to the prior state if you make an error, or something doesn't work as you expected after the schema change.
+You should always take a snapshot of your database before making any schema
+changes. This will allow you to revert back to the prior state if you make an
+error, or something doesn't work as you expected after the schema change.
 
-When changing a data type in an existing table, be aware that answers and pinboards created on top of that table (or worksheets that include it) may change. This is because charts and aggregations depend upon the data type. So for example changing from INTEGER to VARCHAR could break charts that used the numeric data type INTEGER to calculate an average or a total. Because of this, use caution, and check all dependent objects before and after changing the data type, to ensure that they display as intended.
+When changing a data type in an existing table, be aware that answers and
+pinboards created on top of that table (or worksheets that include it) may
+change. This is because charts and aggregations depend upon the data type. So
+for example changing from `INTEGER` to `VARCHAR` could break charts that used
+the numeric data type `INTEGER` to calculate an average or a total. Because of
+this, use caution, and check all dependent objects before and after changing the
+data type, to ensure that they display as intended.
 
 To change the data type of a column:
 

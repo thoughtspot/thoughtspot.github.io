@@ -33,6 +33,7 @@ To create a formula in a search:
     -   Data type
     -   ATTRIBUTE or MEASURE
     -   Aggregation type
+    
     ![]({{ site.baseurl }}/images/formula_advanced_settings.png "Advanced settings in the Formula Builder")
 
 7. Name the formula by clicking on its title and typing the new name. Click **Save**.
@@ -40,4 +41,4 @@ To create a formula in a search:
 
 ## Related information  
 
-[Formula reference]({{ site.baseurl }}/reference/formula-reference.html#)
+[Formula function reference]({{ site.baseurl }}/reference/formula-reference.html#)

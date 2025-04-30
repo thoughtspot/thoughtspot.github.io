@@ -1,7 +1,7 @@
 <table>
-     <colgroup>
-      <col style="width:25%" />
-      <col style="width:50%" />
+   <colgroup>
+      <col style="width:15%" />
+      <col style="width:85%" />
    </colgroup>
    <thead class="thead" style="text-align:left;">
       <tr>
@@ -13,91 +13,57 @@
       <tr>
          <td>detailed</td>
          <td>
-            <ul>
-               <li>
-                  <code>ship time detailed
-                  </code>
-               </li>
-            </ul>
+            <code>ship time <b>detailed</b>
+            </code>
          </td>
       </tr>
       <tr>
          <td>last minute</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count homepage views last minute
-                  </code>
-               </li>
-            </ul>
+            <code>count homepage views <b>last minute</b>
+            </code>
          </td>
       </tr>
       <tr>
          <td>last hour</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count unique visits last hour
-                  </code>
-               </li>
-            </ul>
+            <code>count unique visits <b>last hour</b>
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> minutes</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count visitors last 30 minutes
-                  </code>
-               </li>
-            </ul>
+            <code>count visitors last <b>30 minutes</b>
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> hours</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>count visitors last 12 hours
-                  </code>
-               </li>
-            </ul>
+            <code>count visitors last <b>12 hours</b>
+            </code>
          </td>
       </tr>
       <tr>
          <td>hourly</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>visitors by page name hourly
-                  </code>
-               </li>
-            </ul>
+            <code>visitors by page name <b>hourly</b>
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> minutes ago</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>sum inventory by product 10 minutes
-                  ago
-                  </code>
-               </li>
-            </ul>
+            <code>sum inventory by product <b>10 minutes ago</b>
+            </code>
          </td>
       </tr>
       <tr>
          <td><i>n</i> hours ago</td>
          <td>
-            <ul class="ul">
-               <li>
-                  <code>sum inventory by product by store 2 hours
-                  ago
-                  </code>
-               </li>
-            </ul>
+            <code>sum inventory by product by store <b>2 hours ago</b>
+            </code>
          </td>
       </tr>
    </tbody>

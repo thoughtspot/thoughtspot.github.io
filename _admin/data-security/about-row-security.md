@@ -1,5 +1,5 @@
 ---
-title: ["Row level security (RLS)"]
+title: ["About row level security (RLS)"]
 tags: [rls,groups]
 keywords: tbd
 last_updated: tbd
