@@ -1,13 +1,15 @@
 ---
 title: [Advanced R Customizations]
-tags: [spotiq,customize, r-scripts]
+tags: [spotiq,customize]
 keywords: SpotIQ,"best practices",invoke,search,customize,notifications,email
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Admins and users with the **Has SpotIQ** privilege can run an R script.
+Admins and users with the **Has SpotIQ** privilege can run an R script using the
+**Custom Analysis** feature of SpotIQ. This means you can run an R script from
+any point in ThoughtSpot where you find the **Custom Analysis** menu option.
 
 The R language is an open source programming language used for statistical
 computing. As such, knowledgable users can use R to perform sophisticated
@@ -47,7 +49,7 @@ script in a form suitable for ThoughtSpot:
 ####R SCRIPT####
 df <- data.frame(.param0,.param1, ...);
 ...
-write.csv(..., file=#output_file#, ...);
+write.csv(..., file=#output_csv#, ...);
 ```
 
 Notice that `.param0` refers to first column in column binding and `.param1`
@@ -68,19 +70,31 @@ ThoughtSpot.
 The following illustrates how to run an R analysis on data that has a sales
 column and a zip code column.
 
-1. Sign into ThoughtSpot and go to the **Search** bar.
+1. Log into ThoughtSpot and go to the **Search** bar.
 2. Use **Choose Sources** to locate a source with sales and zip code data.
-   This example uses **Sporting Goods Retail Worksheet** data.
-3. Enter `sales store zip code` in the search bar.
+   This example uses **Phone Sales** data.
+3. Enter `sales zip code` in the search bar.
 
    If your source contains the proper data, you should see something similar to
    the following:
 
    ![]({{ site.baseurl }}/images/spotiq-r1.png)
 
-4. Click the **View R analysis** icon ![View R Analysis icon]({{ site.baseurl }}/images/r-icon-inline-2.png){: .inline}.
+4. Choose **Actions > Custom Analyze**.
 
-5. Enter this sample script in the field.
+   ![]({{ site.baseurl }}/images/spotiq-r2.png)
+
+   ThoughtSpot opens the **Customize Analysis** dialog.
+
+5. Choose the **Customize algorithms** tab.
+6. In the **Select Algorithms** section, click the **Custom R Script** box.
+
+   Selecting this option unsets all the other options on this tab and displays
+   the **Refine Parameters** field.
+
+   ![]({{ site.baseurl }}/images/spotiq-r3.png)
+
+7. Enter this sample script in the field.
 
     ```
     ####R SCRIPT####
@@ -91,35 +105,45 @@ column and a zip code column.
     cluster$cluster <- as.factor(cluster$cluster)
     png(file=#output_file#,width=400,height=350,res=72)
     print(ggplot(df, aes(.param0, .param1, color = cluster$cluster)) + geom_point())
+    ####COLUMN BINDINGS (ONE PER LINE)####
+    Sales
+    Zip Code
     ```
-    This script binds `.param0` to `Sales` and `.param1` to the `Store Zip Code`
-    column.
 
-    You can see from the script that the output should be PNG
+    This script binds `.param0` to `Sales` and `.param1` to the `Zip Code`
+    column. You can see from the script that the output should be PNG
     (`#output_png#`).
 
-6. For Select column(s) for R analysis, make sure that both **Sales** and **Store Zip Code** columns are selected.
-7. For Output Filetype, make sure **PNG** is selected as the output format.
+8. Check your work.
 
-8. Click **Run Analysis**.
+   ![]({{ site.baseurl }}/images/spotiq-r5.png)
+
+9. Click **Trigger Analysis**.
 
    SpotIQ runs your analysis in the background.
 
-9. When the analysis is completed, you should see the results in PNG format similar to the following:
+10. Go to the SpotIQ page and click on the results of your newly triggered analysis.
+
+    ![]({{ site.baseurl }}/images/spotiq-r4.png)
+
+    You should see the results in PNG format similar to the following:
 
     ![]({{ site.baseurl }}/images/spotiq-r6.png)
 
 You can run another R script directly on this result to get CSV results. Try this on your own. Here is the script to give you CSV output:
 
 ```
-###R SCRIPT####
+####R SCRIPT####
 set.seed(20);
 df <- data.frame(.param0,.param1);
 cluster <- kmeans(df[1:2], 3, nstart = 20);
 df$Cluster <- as.factor(cluster$cluster);
 colnames(df)[1] <- 'Sales';
 colnames(df)[2] <- 'Zip Code';
-write.csv(df, file=#output_file#, row.names=FALSE);
+write.csv(df, file=#output_csv#, row.names=FALSE);
+####COLUMN BINDINGS (ONE PER LINE)####
+Sales
+Zip Code
 ```
 
 ## Syntax help in the dialog
@@ -127,7 +151,3 @@ write.csv(df, file=#output_file#, row.names=FALSE);
 Use the **i** icon to see help for the R syntax.
 
 ![]({{ site.baseurl }}/images/spotiq-help.png)
-
-## Related information
-
-* [tscli rpackage]({{ site.baseurl }}/reference/tscli-command-ref.html#rpackage)

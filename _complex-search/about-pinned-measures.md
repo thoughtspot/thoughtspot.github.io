@@ -1,7 +1,6 @@
 ---
 title: [Group aggregation functions]
 keywords: group,aggregation
-tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -42,7 +41,7 @@ The group aggregation functions are the following:
   <tr>
     <td><code>group_average</code></td>
     <td><p>Takes a measure and one or more attributes. Returns the average of the measure grouped by the attribute(s).</p>
-    <p><code>group_average (revenue, customer region)</code></p>
+    <p><code>group_count (revenue, customer region)</code></p>
     </td>
   </tr>
   <tr>
@@ -88,9 +87,3 @@ The group aggregation functions are the following:
     </td>
   </tr>
 </table>
-
-## Flexible aggregation
-
-The `group_aggregate` function gives you more control over aggregation and filtering.
-
-See [Flexible aggregation](aggregation-flexible.html#) to learn more about specifying `query_groups` with this formula.

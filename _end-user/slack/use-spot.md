@@ -6,13 +6,12 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can’t ask Spot to do tricks until you after you invite him to a channel and
-authorize yourself as a Spot trainer.
+To get help, first grant access to the Spot app to a Slack channel to post messages and authorize yourself as a Spot trainer.
 
-##  Call Spot and make him do tricks
+##  Use Spot for help
 
 1. Launch Slack if you haven't already.
-2. Go to a channel where you want to invite Spot.
+2. Go to a channel where you want to invite the Spot app.
 3. Invite <strong>&#64;spot</strong> like you would invite anyone else.  
 
    Type <strong>&#64;spot</strong> and press <code>RETURN</code>.
@@ -20,9 +19,9 @@ authorize yourself as a Spot trainer.
    ![]({{ site.baseurl }}/images/slack-1.png "Invite spot")
 
 4. Click invite them to join.
-5. Ask him for help.
+5. Ask Spot for help.
 
-   If this is the first time you’ve commanded him, Spot tells you:
+   If this is the first time you’ve commanded the app, Spot tells you:
 
    ![]({{ site.baseurl }}/images/spot-2.png "Spot speaks")
 

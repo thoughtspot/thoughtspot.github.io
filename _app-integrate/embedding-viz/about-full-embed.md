@@ -13,11 +13,11 @@ Fully embedding ThoughtSpot content gives your users the ability to:
 -   upload data and refresh uploaded data
 -   relate uploaded data with existing worksheets
 
-This is useful for supplying the full search experience into an iframe with
+This is useful for supplyt he full search experience into an iframe with
 different navigation views and toggle options. However, there are limitations.
 Users won't be able to:
 
--   create worksheets or views.
+-   create worksheets, both regular and aggregated.
 -   modify profiles.
 -   view the Help Center.
 
@@ -29,7 +29,7 @@ section.
 ## A single page with the full application embedded
 
 The following sample <a href="{{"/downloads/embed.html" | prepend: site.baseurl }}"
-target="_blank" class="_"><code>embed.html</code></a> demonstrates how you might full
+target="_blank"><code>embed.html</code></a> demonstrates how you might full
 embed app the application.
 
 ```
@@ -106,3 +106,5 @@ Here are some additional notes about the full embed feature:
 -   Call `thoughtspot.<customerURL>.com/#/answer` and use that to access the search functionality.
 -   Call `thoughtspot.<customerURL>.com/#/pinboards` and use that to access saved pinboards.
 -   Use SAML for authentication against ThoughtSpot within the iFrame.
+
+Finally, to hide the top navigation or the expandable left panel that shows data sources and fields within the current data source, contact ThoughtSpot Support.

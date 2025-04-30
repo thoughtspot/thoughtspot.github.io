@@ -1,6 +1,6 @@
 ---
 title: [Set up VMware for ThoughtSpot]
-keywords: vmware, configuration
+keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,6 +13,7 @@ Hypervisor (ESXi) 6.5 environment.  For each hardware node, you must:
 a virtual machine (VM)
 * Add hard disks to the VM
 
+
 ## Prerequisites
 
 This installation process assumes you have already acquired your host machines.
@@ -22,17 +23,16 @@ for a sandbox environment but is insufficient for a production environment.
 1. Make sure you have installed the Hypervisor on each of your three nodes.
 
    The VM template, by default, captures a 72-core configuration. If your
-   physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
-   cores (for a physical host with n cores) to fully take advantage of computing
-   power of the physical host. Extra cores help performance.
-   
-   You should aim to allocate 490 GB or more RAM.
+   physical host has more than 72 cores, you may want to edit the VM to have (`n-2`)
+   cores (for a physical host with _n_ cores) to fully take advantage of computing
+   power of the physical host.
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
 
 ## Use the OVF to Create a VM
 
 1. Download the `ThoughtSpot OVF` from the **[Downloads page here]({{ site.baseurl }}/release/downloads.html#virutal-and-cloud-platforms)** to a location on an accessible disk.
+
 2. Log into the ESXi web portal.
 
     ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")
@@ -92,6 +92,9 @@ additional, larger capacity disks.
 
 2. Select **Add hard disk > New hard disk**.
 
+   You can give the VM up to 38 cores (or approximately 490 G RAM). The ESXi host
+   should keep a minimum of 2 cores.
+
    ![]({{ site.baseurl }}/images/vmware-adddisk1.png "New hard disk")
 
    The new disk appears as a new row under the only existing SSD row.
@@ -141,10 +144,6 @@ additional, larger capacity disks.
 
 ## Next steps
 
-There is no network at this point on your VMs. As a prerequisite:
-
-1. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
-2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
-3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
-
-Once done, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
+There is no network at this point on your VMs. To make the VM node accessible
+from any terminal within local network, contact <a
+href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>.

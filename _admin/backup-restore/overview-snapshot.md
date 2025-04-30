@@ -109,7 +109,7 @@ impact cluster performance.
 
 You cannot delete the snapshot policy. However, you can disable the policy by
 executing the`tscli snapshot-policy disable` command. And you can re-enable it
-by running, `tscli snapshot enable-policy`.
+by running, `tscli snapshot-policy enable`.
 
 {% include warning.html content="Backups rely on the snapshot system. For this
 reason, you should never disable the periodic snapshot system. For example, if

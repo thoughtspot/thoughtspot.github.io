@@ -1,7 +1,6 @@
 ---
 title: ["Filter on null, blank, or empty values"]
 keywords: tbd
-tags: [formulas]
 last_updated: tbd
 summary: "Filtering on NULL and empty values is a special case. "
 sidebar: mydoc_sidebar
@@ -40,6 +39,6 @@ Use the filter you created instead of the original text column in your search to
 
 ## Filtering on your formula
 
-After creating the above formula that fits what you want to do, you can filter on the formula column you created in the search bar by typing the value **\{blank\}**, which will act as a filter. Or you can filter by left-clicking on a **\{blank\}** value in your search result table, then right-clicking and selecting **Show only "\{Blank\}"**.
+After creating the above formula that fits what you want to do, you can filter on the formula column you created in the search bar by typing the value **\{blank\}**, which will act as a filter. Or you can filter by left clicking on a**\{blank\}** value in your search result table, then right clicking and selecting **Show only "\{Blank\}"**.
 
  ![]({{ site.baseurl }}/images/formula_null_empty_merge.png "Show only NULL and blank values")

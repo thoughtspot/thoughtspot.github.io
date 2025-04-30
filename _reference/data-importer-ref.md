@@ -115,7 +115,7 @@ The following flags are used when loading data from an input file:
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">--trailing_field_separator</code></td>
+      <td><code class="highlighter-rouge">-- trailing_field_separator</code></td>
       <td>Specifies that the field separator appears after every field, including the last field per row.</td>
       <td>Example row with trailing field separator: a,b,c,The default is false.</td>
     </tr>
@@ -137,7 +137,7 @@ The following flags are used when loading data from an input file:
     <tr>
       <td><code class="highlighter-rouge">--has_header_row</code></td>
       <td>Indicates that the input file contains a header row.</td>
-      <td>If supplied, column names in the header row are used to match column names in the target table in ThoughtSpot. If not supplied, the first row of the file is loaded as data, the same as all subsequent rows.</td>
+      <td>If supplied, the first row of the file is ignored. If not supplied, the first row of the file is loaded as data.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">--escape_character "&lt;character&gt;"</code></td>

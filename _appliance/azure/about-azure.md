@@ -1,12 +1,11 @@
 ---
 title: [Azure node overview]
 keywords: Azure,appliance,overview
-tags: [cloud,vm]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Microsoft Azure can provide lots of memory and CPU for your ThoughtSpot instance, and it can
+Azure can provide lots of memory and CPU for your ThoughtSpot instance, and it can
 be easily updated from development instances.
 
 Your database capacity will determine the number of instances you’ll need and the
@@ -21,7 +20,7 @@ reference]({{ site.baseurl }}/appliance/firewall-ports.html#).
 
 Azure is a secure cloud services platform offered by Microsoft. Using
 ThoughtSpot  on Azure allows you to easily add instances as your dataset grows.
-You can do everything you’d normally want to do in a traditional data center
+You can do everything you’d normally want to do in a traditional database center
 with Azure. It features an on-demand delivery of IT resources and applications
 via the Internet. When you are connected to an instance, you can use it just
 like you use any other server.

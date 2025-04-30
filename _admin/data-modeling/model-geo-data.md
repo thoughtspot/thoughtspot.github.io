@@ -46,9 +46,11 @@ For information these settings, see [Set ADDITIVE or AGGREGATION](change-aggreg-
 
 4. Save your changes.
 
-## Supported geo maps
+## List of geotypes
 
-For a complete list of supported geo maps in ThoughtSpot, refer to: [Geo Map Reference]({{ site.baseurl }}/reference/geomap-reference#)
+{% include content/geotypes.html %}
+
+
 
 ## Related information  
 

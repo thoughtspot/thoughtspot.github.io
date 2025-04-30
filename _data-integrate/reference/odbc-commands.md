@@ -34,7 +34,7 @@ These SQL commands are supported for ODBC:
 
 * `DELETE FROM <table>`
 
-    Deletes `ALL` rows from the specified table. Use the `WHERE` clause to specify only certain rows to be deleted. Example: You could remove all data for sales before a certain date to free up space in ThoughtSpot.
+    Deletes `ALL` rows from the specified table. Does not support the `WHERE` clause.
 
     ```
     DELETE FROM country_dim;
