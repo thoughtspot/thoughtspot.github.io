@@ -27,7 +27,7 @@ In a nutshell, the required configuration ThoughtSpot is:
 
 - 64 vCPU
 - 416 GB RAM
-- 200 GB SSD for the boot disk, provisioned with a ThoughtSpot base image
+- GB SSD for the boot disk, provisioned with a ThoughtSpot base image
 - Two 1 TB SSDs for data
 
 The following topics walk you through this process.
