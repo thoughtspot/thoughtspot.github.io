@@ -22,3 +22,13 @@ The pie in pie chart can be created from a regular pie chart in order to compare
 To see a pie in pie chart, assign two different measures to the y-axis under **Configure Chart**.
 
  ![]({{ site.baseurl }}/images/pie_in_pie_chart_example.png "Pie in pie chart example")
+
+## Color customization of pie in pie charts
+You can customize the colors of each pie in a pie chart using the Style widget. 
+
+1. Choose a pinboard that has a pie chart.
+2. Click the **Edit chart style** (paintbrush icon) to open the Style widget. 
+3. From the Style widget, assign a color of your choice to each pie as listed in the widget. 
+4. Click **…** and choose **Update** to save the changes.
+5. Click **Close**.
+6. Optionally, you can click **Reset** to use the default color.

@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 ---
 You can import data to ThoughtSpot from on-premise and cloud based sources using ThoughtSpot Data Connect. The initial connection to your data sources is set up by ThoughtSpot. After the connections are set up, you can do all your data imports through the ThoughtSpot application.
 
-{% include note.html content="Data Connect is no longer sold by ThoughtSpot. This documentation is only for existing clients who previously purchased Data Connect." %}
+{% include note.html content="Data Connect is no longer sold by ThoughtSpot. This documentation is only for existing clients who purchased Data Connect." %}
 
 ThoughtSpot Data Connect was developed by ThoughtSpot, but it uses Informatica's REST APIs to connect to multiple end points, define import tasks and execute them. You can use ThoughtSpot Data Connect to perform extract, transform, and load operations. Data source connections may be stored, to make reconnecting seamless.
 

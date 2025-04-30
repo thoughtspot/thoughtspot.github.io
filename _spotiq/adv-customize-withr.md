@@ -80,7 +80,7 @@ column and a zip code column.
 
    ![]({{ site.baseurl }}/images/spotiq-r1.png)
 
-4. Choose **Actions > Custom Analyze**.
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Custom Analyze**.
 
    ![]({{ site.baseurl }}/images/spotiq-r2.png)
 
@@ -127,7 +127,7 @@ column and a zip code column.
 
    SpotIQ runs your analysis in the background.
 
-10. Go to the SpotIQ page and click on the results of your newly triggered analysis.
+10. Go to the SpotIQ page and click the results of your newly triggered analysis.
 
     ![]({{ site.baseurl }}/images/spotiq-r4.png)
 

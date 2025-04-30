@@ -19,7 +19,7 @@ To copy the link for a pinboard:
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to get a link for.
-3. Click the three-dot **Actions** button and select **Copy link**.
+3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy link**.
 
      ![]({{ site.baseurl }}/images/copy_pinboard_link.png "Copy pinboard link option")
 
@@ -29,7 +29,7 @@ To copy the link for a pinboard:
 
 ## Copying a visualization link     
 
-1. To copy an individual visualization link, click the three-dot **Actions** button and select **Copy link** of the visualization you would like to copy a link from.
+1. To copy an individual visualization link, click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Copy link** of the visualization you would like to copy a link from.
 
      ![]({{ site.baseurl }}/images/copy_link_of_a_visualization.png "Copy visualization link option")
 

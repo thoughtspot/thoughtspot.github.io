@@ -6,7 +6,7 @@ summary: "How ThoughtSpot learns from your searches and helps you."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Search suggestions include complete recent searches that are similar to the search you are constructing.
+Search suggestions include complete recent searches that are similar to the search you are constructing. 
 
  ![]({{ site.baseurl }}/images/search_history.png "Search suggestions example")
 

@@ -69,7 +69,7 @@
   </tr>
   <tr>
     <td class="tg-yw4l">hour (<span style="font-style:italic">datetime</span>)</td>
-    <td class="tg-yw4l">stunde (datetime)</td>
+    <td class="tg-yw4l">stunde (<em>datetime</em>)</td>
     <td class="tg-yw4l"><code><b>hour</b> (timestamp)</code></td>
   </tr>
 </table>

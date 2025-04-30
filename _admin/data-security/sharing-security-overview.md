@@ -1,7 +1,7 @@
 ---
 title: [Data security]
 keywords: tbd
-last_updated: 5/21/2020
+last_updated: tbd
 tags: [groups,rls,security]
 summary: "Data security refers to which users can see which data in the ThoughtSpot application."
 sidebar: mydoc_sidebar
@@ -71,7 +71,7 @@ settings and rules.
   <tr>
     <td>Pinboards</td>
     <td>A pinboard of saved search results.</td>
-    <td>Anyone who can view a pinboard can share it. See <a href="share-pinboards.html">Share a Pinboard</a>.</td>
+    <td>Anyone who can view a pinboard can share it. See <a href="share-pinboards.html">Share Pinboards</a>.</td>
   </tr>
 </table>
 

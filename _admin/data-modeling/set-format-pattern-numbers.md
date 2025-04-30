@@ -120,7 +120,7 @@ ThoughtSpot Application Integration Guide for more information on the API.
 
 1. Find the **Currency Type** for the column whose display format you want to change.
 
-2. Click on it to open the **Specify Currency Type** menu.
+2. Click it to open the **Specify Currency Type** menu.
 
      ![]({{ site.baseurl }}/images/specify_currency_type.png "Specify Currency Type")
 

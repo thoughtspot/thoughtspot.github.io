@@ -17,19 +17,21 @@ For each hardware node, you must:
 a virtual machine (VM)
 * Add hard disks to the VM
 
-
 ## Prerequisites
 
 This installation process assumes you have already acquired your host machines.
 You can install on a cluster with any number of nodes. A one node cluster is suitable
 for a sandbox environment but is insufficient for a production environment. You need at least three nodes for high availability (HA), but there is no limit on the number of nodes.
 
+
 1. Make sure you have installed the Hypervisor on each of your three nodes.
 
    The VM template, by default, captures a 72-core configuration. If your
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
    cores (for a physical host with n cores) to fully take advantage of computing
-   power of the physical host.
+   power of the physical host. Extra cores help performance.
+
+   You should aim to allocate 490 GB or more RAM.
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
 
@@ -95,9 +97,6 @@ additional, larger capacity disks.
 
 2. Select **Add hard disk > New hard disk**.
 
-   You can give the VM up to 72 cores (or approximately 490 G RAM). The ESXi host
-   should keep a minimum of 2 cores.
-
    ![]({{ site.baseurl }}/images/vmware-adddisk1.png "New hard disk")
 
    The new disk appears as a new row under the only existing SSD row.
@@ -149,7 +148,7 @@ additional, larger capacity disks.
 
 There is no network at this point on your VMs. To make the VM node accessible
 from any terminal within local network, contact <a
-href="{{ site.baseurl }}/appliance/contact.html">ThoughtSpot Support</a>.
+href="mailto:support@thoughtspot.com">support@thoughtspot.com</a>.
 
 ## Additional resources
 As you develop your expertise in VMware VM creation, we recommend the following ThoughtSpot U course:

@@ -15,23 +15,23 @@ To teach SearchIQ your language:
 
 1. After receiving a search result from SearchIQ, you'll notice a section below the search bar that shows the SearchIQ interpretation of what you typed or spoke. If you do not see this, click **Refine your query**.
 
-   ![]({{ site.baseurl }}/images/searchiq_result.png "SearchIQ result")
+   Wherever you see **- -**, those terms were ignored. Where you see a word or words, those are the keywords, column names, or data values as understood by SearchIQ.
 
-   Wherever you see **--**, those terms were ignored. Where you see a word or words, those are the keywords, column names, or data values as understood by SearchIQ.
-
-   Clicking on any term brings up the menu where you can choose an option to change how ThoughtSpot understands that term.
-
-   ![]({{ site.baseurl }}/images/searchiq_search_term_picker.png "SearchIQ search term picker")
+   Clicking on any term brings up the menu where you can change how ThoughtSpot understands that term.
 
 2. Click any term you want SearchIQ to ignore in the future, and choose **Ignore**.
 
 3. Click any term you wish SearchIQ had interpreted differently, and choose **Teach**.
 
-4. When you see the teaching dialog box, use the handles on the search diagram to select a term for which you want to change the mapping. Then select a column name to map it to, or type your mapping in the search bar below the diagram.
-
    ![]({{ site.baseurl }}/images/searchiq_teach.png "Teach SearchIQ")
 
+4. When you see the teaching dialog box, 1) use the handles on the search diagram to select a term for which you want to change the mapping. Then 2) select a column name to map it to, or type your mapping in the search bar below the diagram. 3) You may need to select what you mean from the search suggestions.
+
+   ![]({{ site.baseurl }}/images/searchiq_teach_mapper.png "Teach SearchIQ mapper")
+
 5. Choose **CONFIRM** to see the new search result.
+
+   ![]({{ site.baseurl }}/images/searchiq_after_mapping.png "]SearchIQ after mapping")
 
 6. Repeat these steps until SearchIQ understands how to interpret your search.
 

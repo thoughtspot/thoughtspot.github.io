@@ -26,4 +26,4 @@ Clicking on the row of a job will open a detailed view of every generated update
 
 Click the scheduled pinboard name link to jump to a Edit schedule page, where you can edit the schedule configurations.
 
-You can also click on the pinboard link provided in the scheduled pinboard emails to jump to the pinboard in ThoughtSpot. In order to have the link direct you to the correct URL, you must first configure front end host and port access. Contact ThoughtSpot Support to configure these settings.
+You can also click the pinboard link provided in the scheduled pinboard emails to jump to the pinboard in ThoughtSpot. In order to have the link direct you to the correct URL, you must first configure front end host and port access. Contact ThoughtSpot Support to configure these settings.

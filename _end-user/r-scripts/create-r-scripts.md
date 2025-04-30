@@ -123,7 +123,7 @@ You can click these icons in the R script dialog to get more options:
 ![more options menu icon]({{ site.baseurl }}/images/r-icon-i.png){: .inline}
 provides a basic reference guide for creating an R analysis in ThoughtSpot.
 
-* The ellipses icon (3 dots)
+* The ellipses icon 
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}
 provides a menu with options to save or load a previously saved R script, as well as
 share your R script with other users in the system.

@@ -9,7 +9,7 @@ permalink: /:collection/:path.html
 To add a filter from column headers:
 
 1. While viewing your answer as a table, hover over the column header you
-want to filter, and click the ellipses icon (3 dots) 
+want to filter, and click the ellipses icon 
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}.
 
      ![]({{ site.baseurl }}/images/change_configuration_of_a_column.png "Change configuration of a column")

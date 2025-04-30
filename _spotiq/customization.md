@@ -22,7 +22,7 @@ Regardless of where you are in the ThoughtSpot UI, the SpotIQ **Customize
 Analysis** dialog has the same layout. The columns, of course, are specific to
 the data you launched the dialog from.
 
-![]({{ site.baseurl }}/images/spotiq-customize-algorithms.png)
+![]({{ site.baseurl }}/images/spotiq-customize-analysis-include.png)
 
 
 This dialog has three tabs:
@@ -30,7 +30,7 @@ This dialog has three tabs:
 * **Excluded columns**, where you can explicitly indicate which columns to exclude in an SpotIQ analysis. (You can select all, some, or none.)
 * **Customize Algorithms**, where you can run custom analyses and incorporate R scripts into SpotIQ.
 
-The **Customize Algorithms** is by far the most advanced panel.
+The **Customize Algorithms** is by far the most advanced panel. (The panel scrolls, so more algorithms are available than are shown in the picture below.)
 
  ![]({{ site.baseurl }}/images/spotiq-customize-algorithms.png)
 
@@ -43,12 +43,8 @@ The **Improve Analysis** dialog always excludes a value from all future analysis
 
 ![]({{ site.baseurl }}/images/spotiq-customize-improve-analysis.png)
 
-Finally, you can also set some analysis options from your user **Profile**.
-
-![]({{ site.baseurl }}/images/spotiq-profile-preferences.png)
-
-You'll notice only one of these options is actually related to analysis. The
-others relate to how you receive notifications about SpotIQ operations.
+You can set a subset of SpotIQ customization parameters in your
+[profile preferences]({{ site.baseurl }}/_end-user/introduction/about-user.html), along with options for email notifications when analyses run.
 
 ## Eliminate null values
 

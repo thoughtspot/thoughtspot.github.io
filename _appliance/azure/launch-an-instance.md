@@ -113,13 +113,14 @@ network.
 3. Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot
 processes do not get blocked.
 
-   These are the minimum ports required for operations and debugging:
+    These are the minimum ports required for operations and debugging:
 
-   |Port|Protocol|Service|
-   |----|--------|------------|
-   |22|SSH|Secure Shell access|
-   |443|HTTPS|Secure Web access|
-   |12345|TCP|ODBC and JDBC drivers access|
+    |Port|Protocol|Service|
+    |----|--------|------------|
+    |22|SSH|Secure Shell access|
+    |443|HTTPS|Secure Web access|
+    |12345|TCP|ODBC and JDBC drivers access|
+
 
    {% include note.html content="ThoughtSpot requires that nodes purchased from
 Azure must be reachable to each other so that they can communicate and form a
@@ -150,8 +151,8 @@ available in the image. You can obtain this from your ThoughtSpot contact.
 
 1. Obtain the VM’s public and private IP addresses.
 
-   - To see the public IP, click on the VM name link. This will show the public IP of the VM.
-   - To see the private IP click on Networking (below SETTINGS on the left side of the screen).
+   - To see the public IP, click the VM name link. This will show the public IP of the VM.
+   - To see the private IP click Networking (below SETTINGS on the left side of the screen).
 
 2. Connect to the VM via SSH, using the private key provided for the admin user.
 
@@ -167,7 +168,7 @@ that will be part of the ThoughtSpot cluster.
 
 ### Add Storage Disks
 
-1. Go back to the VM and click on it.
+1. Go back to the VM and click it.
 2. Add 2 SSD disks of 1TB each.
 3. Click **Add data disk** and choose **Create disk from the menu**.
 4. Create one mode data disk (demo-disk2) and save them both.

@@ -1,5 +1,5 @@
 ---
-title: [Flexible aggregation functions (groups and filters)]
+title: [Flexible aggregation functions (group aggregate and filters)]
 keywords: tbd
 tags: [formulas]
 last_updated: tbd

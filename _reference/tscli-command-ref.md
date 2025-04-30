@@ -24,7 +24,7 @@ The `tscli` command has the following syntax:
 tscli [-h] [--helpfull] [--verbose] [--noautoconfig]
            [--autoconfig] [--yes] [--cluster <cluster>]
            [--zoo <zookeeper>] [--username username] [--identity_file identity_file]
-           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,ssl,storage,support,tokenauthentication}
+           {access,alert,backup,backup-policy,callhome,cassandra,cluster,command,dr-mirror,etl,event,feature,fileserver,firewall,hdfs,ipsec,ldap,logs,map-tiles,monitoring,nas,node,patch,rpackage,saml,scheduled-pinboards,smtp,snapshot,snapshot-policy,sssd,ssl,storage,support,tokenauthentication}
 ```
 
 The `tscli` command has several subcommands such as `alert`, `backup`, and so forth. You issue a subcommand using the following format:
@@ -864,6 +864,33 @@ This subcommand supports the following actions:
 * `tscli ssl status` Shows whether SSL authentication is enabled or disabled.
 * `tscli ssl tls-status [-h]`  Prints the status of TLS support.
 
+### sssd
+
+```
+tscli sssd {enable, disable, set-sudo-group, clear-sudo-group} ...
+```
+
+This subcommand uses system security services daemon (SSSD), and has the following actions:
+
+* `tscli sssd enable --user` *`USER`* `--domain` *`DOMAIN`*
+
+   Enables system Active Directory (AD) user access on a single node. You will be
+   prompted for password credentials. The user must have permission to join a
+   computer or VM to the domain.
+
+* `tscli sssd disable`
+
+  Disables system AD based access on a local node. Running this command will also remove the AD group from sudoers list.
+
+* `tscli sssd set-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
+
+   Allows `sudo` permissions for AD group.
+
+* `tscli sssd clear-sudo-group` *`ACTIVE_DIRECTORY_GROUP_NAME`*
+
+   Clears any set AD sudo group.
+
+For more about setting up Active Directory access, see [Enable Active Directory based access]({{ site.baseurl }}/admin/setup/active-directory-based-access.html).
 
 ### storage
 

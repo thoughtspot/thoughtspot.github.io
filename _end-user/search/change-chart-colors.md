@@ -24,9 +24,9 @@ Colors are maintained across searches within a session. For example, when doing
 a search on revenue by state, each state will keep its color assigned to it even
 if you change the search or chart type.
 
-## Set colors
+## Set colors on a chart
 
-1. While viewing your search or answer as a chart, click **Edit chart styles** on the right.
+1. While viewing your search or answer as a chart, click **Edit chart styles** (![paintbrush icon]({{ site.baseurl }}/images/icon-paintbrush.png){: .inline}) to open the Styles panel.
 
     ![]({{ site.baseurl }}/images/edit_chart_colors_styles.png "Edit chart configuration icon")
 
@@ -44,3 +44,19 @@ if you change the search or chart type.
      Your changes are saved immediately.
 
 3. Click the **X** at top right to dismiss the styles panel.
+
+## Set pie chart slice colors
+
+To customize the colors of each slice in a pie chart.
+
+1. While viewing your search or answer as a pie chart, click **Edit chart styles** (![paintbrush icon]({{ site.baseurl }}/images/icon-paintbrush.png){: .inline}) to open the Styles panel.
+
+2. Assign a color of your choice to each pie slice.
+
+  ![]({{ site.baseurl }}/images/pie-chart-custom-colors.png)
+
+3. Click ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and choose **Update** to save the changes.
+
+4. Click Close.
+
+Optionally, you can click **Reset** to use the default colors.

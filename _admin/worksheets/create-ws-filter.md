@@ -10,7 +10,7 @@ Beginning in ThoughtSpot version 5.0, you can add filters to a worksheet to limi
 
 To add a filter to a worksheet:
 
-1. Click **Data** in the top menu bar, find your worksheet, and click on its name.
+1. Click **Data** in the top menu bar, find your worksheet, and click its name.
 
 2. Click the **Edit Worksheet** button.
 

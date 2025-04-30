@@ -20,7 +20,7 @@ After creating a view and linking it to related data, you're ready to create you
 
 4. Once you have the expected answer, you can create a worksheet to make it easier for you and other people to use. To do this, click **Data**.
 
-5. Click the ellipses icon (3 dots)
+5. Click the ellipses icon 
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline},
 and select **Create worksheet**.
 

@@ -29,7 +29,7 @@ Share uploaded data by following these steps:
 
 1. Click **Data** on the top navigation bar.
 
-2. Click on the name of the uploaded data you want to share.
+2. Click the name of the uploaded data you want to share.
 
 3. Click the **Share** icon.
 

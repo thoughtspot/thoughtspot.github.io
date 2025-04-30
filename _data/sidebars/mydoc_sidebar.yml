@@ -3,8 +3,8 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Software
-  docversion: 5.0
-  version: 5.0 Guides
+  docversion: 5.1
+  version: 5.1 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -239,7 +239,7 @@ entries:
         - title: Moving functions
           url: /complex-search/about-moving-formulas.html
           output: web,ugBk
-        - title: Flexible aggregation functions
+        - title: Flexible aggregation functions (group aggregate and filters)
           url: /complex-search/aggregation-flexible.html
           output: web,ugBk
         - title: Grouping functions
@@ -437,6 +437,9 @@ entries:
       - title: Configure SAML
         url: /admin/setup/configure-SAML-with-tscli.html
         output: web,admBk
+      - title: Enable Active Directory based access
+        url: /admin/setup/active-directory-based-access.html
+        output: web,admBk
       - levelThreeTitle: Integrate LDAP
         output: web,admBk
         levelThreeItems:
@@ -464,7 +467,7 @@ entries:
       - title: Configure support services
         url: /admin/setup/work-with-ts-support.html
         output: web,admBk
-      - title: Network ports
+      - title: Network policies
         url: /admin/setup/firewall-ports.html
         output: web,admBk
       - title: Configure load balancing and proxies
@@ -584,6 +587,9 @@ entries:
         - title: Hide a column or define a synonym
           url: /admin/data-modeling/change-visibility-synonym.html
           output: web,admBk
+        - title: Set columns to exclude from SpotIQ analyses
+          url: /admin/data-modeling/spotiq-data-model-preferences.html
+          output: web,admBk
         - title: Manage suggestion indexing
           url: /admin/data-modeling/change-index.html
           output: web,admBk
@@ -595,6 +601,9 @@ entries:
           output: web,admBk
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
+          output: web,admBk
+        - title: Set entity categories for SearchIQ
+          url: /admin/data-modeling/set-entity-category.html
           output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
@@ -839,6 +848,24 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
+  - sectiontitle: Mobile
+    output: web,apgBk
+    sectionitems:
+    - title: Overview
+      url: /admin/mobile/use-mobile.html
+      output: web,apgBk
+    - title: Deploy
+      url: /admin/mobile/deploy-mobile.html
+      output: web,admBk
+    - title: Install and set up
+      url: /admin/mobile/install-mobile.html
+      output: web,admBk
+    - title: FAQ
+      url: /admin/mobile/faq-mobile.html
+      output: web,admBk
+    - title: Release notes
+      url: /admin/mobile/notes-mobile.html
+      output: web,admBk
   - sectiontitle: Data Connect
     output: web,cngBk
     sectionitems:
@@ -989,7 +1016,7 @@ entries:
       - title: Full application embedding
         url: /app-integrate/embedding-viz/about-full-embed.html
         output: web,apgBk
-      - title: Configured trusted authentication
+      - title: Configure trusted authentication
         url: /app-integrate/embedding-viz/trusted-authentication.html
         output: web,apgBk
     - levelTwoTitle: Runtime Filters
@@ -1031,20 +1058,23 @@ entries:
       - title: Introduction
         url: /app-integrate/reference/public-api-reference.html
         output: web,apgBk
-      - title: pinboarddata API
+      - title: Pinboard Data API
         url: /app-integrate/reference/pinboarddata.html
         output: web,apgBk
-      - title: metadata API
+      - title: Metadata API
         url: /app-integrate/reference/metadata-api.html
         output: web,apgBk
-      - title: session API
+      - title: Session API
         url: /app-integrate/reference/session-api.html
         output: web,apgBk
-      - title: user API
+      - title: User API
         url: /app-integrate/reference/user-api.html
         output: web,apgBk
-      - title: group API
+      - title: Group API
         url: /app-integrate/reference/group-api.html
+        output: web,apgBk
+      - title: Materialization API
+        url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
   - sectiontitle: Node Setup
     output: web,appQs
@@ -1109,10 +1139,10 @@ entries:
         - title: Configuration overview
           url: /appliance/vmware/vmware-intro.html
           output: web,appQs
-        - title: Set up VMWware for ThoughtSpot
+        - title: Set up VMware for ThoughtSpot
           url: /appliance/vmware/vmware-setup.html
           output: web,appQs
-    - title: Network ports
+    - title: Network policies
       url: /appliance/firewall-ports.html
       output: web,appQs
     - title: Contact support

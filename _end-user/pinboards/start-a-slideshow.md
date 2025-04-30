@@ -15,7 +15,7 @@ To start a slideshow:
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to present.
-3. Click the three-dot **Actions** menu for the visualization you want to start the slideshow with and select **Present**.
+3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} for the visualization you want to start the slideshow with and select **Present**.
 
      ![]({{ site.baseurl }}/images/present_a_pinboard.png "Present a visualization")
 

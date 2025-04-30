@@ -12,7 +12,7 @@ You can make a copy of a pinboard if you would like to make edits without changi
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 
 2. On the pinboard list page, click the pinboard you would like to copy.
-3. Click the three-dot **Actions** button and select **Make a copy**.
+3. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Make a copy**.
 
      ![]({{ site.baseurl }}/images/make_a_copy_of_a_pinboard.png "Make a copy of the pinboard")
 

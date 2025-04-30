@@ -48,7 +48,7 @@ You must change the underlying worksheet column to use day_number_of_week instea
 Here are the steps to resolve an issue like this:
 
 1. Open the underlying worksheet that contains the formula whose output data type you need to change.
-2. Click on the formula name to edit the formula.
+2. Click the formula name to edit the formula.
 
      ![]({{ site.baseurl }}/images/edit_formula.png "Edit the formula")
 

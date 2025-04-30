@@ -18,9 +18,9 @@ details on how to configure your scope and permissions.
 
 The following Azure resources are required for provisioning a Thoughtspot image
 in Azure:
-- Virtual Machine Size: Standard E64s v3 (64 vcpus, 432 GB memory)
+- Virtual Machine Size: Standard E32s and E64s v3 (64 vcpus, 432 GB memory)
+- 200 GB root volume capacity for each node
 - Storage: Two 1TB SSD disks
-- 200 GB required root volume capacity for each node
 - Network Ports: See PORTS SETTINGS
 
 ## Data capacity per node

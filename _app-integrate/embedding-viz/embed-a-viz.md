@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
-The page explains, through an example, how to embed a visualization (table or
+This page explains, through an example, how to embed a visualization (table or
 chart) or pinboard from ThoughtSpot in your own static Web page, portal, or
 application.
 
@@ -28,7 +28,7 @@ before continuing.
 
 3. Copy the URL for the entire pinboard and for a single visualization.
 
-   If the object is a pinboard, click the ellipses icon (3 dots)
+   If the object is a pinboard, click the ellipses icon
    ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
     **Copy Link**.
 
@@ -36,7 +36,7 @@ before continuing.
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 
-   For a vizualization in a pinboard, click the ellipses icon (3 dots)
+   For a vizualization in a pinboard, click the ellipses icon
    ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
     **Copy Link**.
 
@@ -60,7 +60,7 @@ embed a ThoughtSpot pinboard or visualization. For this example, you'll get a co
     Here are the fields in the `test.html` file you need to edit.
 
     ```JavaScript
-    var protocol = "THOUGHSPOT_PROTOCOL";
+    var protocol = "THOUGHTSPOT_PROTOCOL";
     var hostPort = "HOST_PORT";   
 
     var pinboardId = "PINBOARD_ID";

@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 You can remove a visualization from your pinboard. To delete a visualization:
 
-1. Click on **Pinboards**, on the top navigation bar.
+1. Click **Pinboards**, on the top navigation bar.
 
      ![]({{ site.baseurl }}/images/click_pinboards_icon.png "Pinboards")
 

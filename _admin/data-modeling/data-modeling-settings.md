@@ -6,10 +6,10 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can change these settings in two ways, both of which have change the model.
+You can change these settings in two ways, both of which change the model.
 If you want to make a few small changes, you should [make them in the
 ThoughtSpot application ]({{ site.baseurl
-}}/admin/data-modeling/model-data-in-UI.html) if you want to make many changes
+}}/admin/data-modeling/model-data-in-UI.html). If you want to make many changes
 [you should edit the modeling file]({{ site.baseurl
 }}/admin/data-modeling/edit-model-file.html#). Whether you are changing data
 modeling settings using the modeling file or the Web interface, the settings and
@@ -23,20 +23,20 @@ This index lists the editable data modeling settings. You can apply these settin
 |----------------|----------------------|
 | [Column Name](change-column-basics.html#change-the-column-name#) | Sets the name of the column to be used in searches. |
 | [Description](change-column-basics.html#change-column-description) | Adds a text description of what the column contains. |
-| [Synonyms](change-visibility-synonym.html#) | Adds synonyms that can be used in the search bar to refer to a column. |
 | Data Type | Read only. Shows the column's [data type]({{ site.baseurl }}/admin/loading/datatypes.html#). |
 | [Column Type](change-column-basics.html#change-column-type) | Sets the type of column, either `ATTRIBUTE` or `MEASURE`. |
 | [Additive](change-aggreg-additive.html#) | Controls the type of aggregations that will be available for a column. |
 | [Aggregation](change-aggreg-additive.html#) | Sets the default aggregation type for a column. |
 | [Hidden](change-visibility-synonym.html#) | Sets the visibility of a column. |
+| [Synonyms](change-visibility-synonym.html#) | Adds synonyms that can be used in the search bar to refer to a column. |
+| [SpotIQ Preference](spotiq-data-model-preferences.html#) | Excludes specified columns from SpotIQ analyses. By Default, all columns are included in SpotIQ.|
 | [Index Type](change-index.html#) | Sets the type of index that will be created for a column. |
-| [Geo Type](model-geo-data.html#) | Enables a column to be used in GeoMap visualizations. |
-| [Priority](change-column-priority.html#) | Changes the priority of a column in search suggestions. |
-| [Number Format](set-format-pattern-numbers.html#) | Specifies the format to use when showing a numeric value in the column. |
-| [Date Format](set-format-pattern-numbers.html#date-format) | Specifies the format to use when showing the dates in a column. |
+| [Geo Config](model-geo-data.html#) | Enables a column to be used in GeoMap visualizations. |
+| [Index Priority](change-index.html#) | Changes the priority of a column in search suggestions. |
+| [Format Pattern](set-format-pattern-numbers.html#) | Specifies the format to use for numeric values or dates that show in the column. |
 | [Currency Format](set-format-pattern-numbers.html#set-currency-format) | Specifies the format to use when showing the currencies in a column. |
 | [Attribution Dimension](attributable-dimension.html#) | Only applies to tables that join over a [Chasm Trap]({{ site.baseurl }}/admin/loading/chasm-trap.html#). Designates whether the tables depend on this column for attribution. You cannot change the attribution dimension in the modeling file. You can only configure it on a table-by-table basis. |
-
+| [Entity Category](set-entity-category.html#) | Specifies how to categorize the data in the column by entity type. By default, `ENTITY TYPE` is not set. Entity categories support [SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html#) so that when you type a natural question, ThoughtSpot better knows how to interpret it. For example, if you ask "who are the top performers?" ThoughtSpot will first choose columns set with `PERSON` from which to return answers. If you ask "when was the movie Jurassic Park released?", columns set to `TIME` will be used to answer the "when" part of the question, and so forth.|
 
 ## Data modeling best practices
 
@@ -52,4 +52,3 @@ If you want the worksheet to have the changes you made at the table level, you'l
 
 - [Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Add a geographical data setting for a column]({{ site.baseurl }}/admin/data-modeling/model-geo-data.html)  
-- [Set the search suggestions priority for a column]({{ site.baseurl }}/admin/data-modeling/change-column-priority.html)  

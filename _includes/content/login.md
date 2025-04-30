@@ -2,10 +2,10 @@ To set up and explore your data, access the ThoughtSpot application from a stand
 
 Before accessing ThoughtSpot, you need:
 
--   The Web address (IP address or server name) for ThoughtSpot.
--   A network connection.
--   A Web browser.
--   A username and password for ThoughtSpot.
+-   The Web address (IP address or server name) for ThoughtSpot
+-   A network connection
+-   A Web browser
+-   A username and password for ThoughtSpot
 
     Supported Web browsers include:
 
@@ -18,7 +18,7 @@ Before accessing ThoughtSpot, you need:
     {% include tip.html content="While Internet Explorer is supported, using it is
     not recommended. Depending on your environment, you can experience performance
     or UI issues when using IE." %}
-    
+
 To log in to ThoughtSpot from a browser:
 
 1. Open the browser and type in the Web address for ThoughtSpot: `http://<hostname_or_IP>`

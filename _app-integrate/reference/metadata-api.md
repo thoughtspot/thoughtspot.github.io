@@ -8,7 +8,6 @@ permalink: /:collection/:path.html
 
 The Metadata APIs enable you to fetch metadata details for various objects in the ThoughtSpot system. For example, you may want to see the visualization headers of a particular answer or a pinboard.
 
-
 ## GET /tspublic/v1/metadata/listobjectheaders
 
 Lists the metadata object headers in the repository

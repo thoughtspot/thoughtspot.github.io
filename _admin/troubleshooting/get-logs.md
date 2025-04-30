@@ -2,7 +2,6 @@
 title: [Get your configuration and logs]
 keywords: tbd
 tags: [logs]
-last_updated: 1/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -35,7 +34,7 @@ For troubleshooting on specific incidents or cluster problems, two things are im
 
 There are two ways to get logs:
 
--   When ThoughtSpot encounters a problem, a red bar displays in the browser with an error message. You can click on **What Happened?** in the error message for more details. To download related logs, click **Download Trace**. Send the logs as an email attachment to the support contact that is provided. Clicking **Report Problem** will also send the logs as an email attachment to your administrator.
+-   When ThoughtSpot encounters a problem, a red bar displays in the browser with an error message. You can click **What Happened?** in the error message for more details. To download related logs, click **Download Trace**. Send the logs as an email attachment to the support contact that is provided. Clicking **Report Problem** will also send the logs as an email attachment to your administrator.
 
      ![]({{ site.baseurl }}/images/trace_log.png "Download log trace")
 
@@ -96,7 +95,7 @@ This command collects logs from a specific time window:
 $ tscli logs collect --include system,orion --from 20150520-12:00 --to 20150522-12:30
 ```
 
-Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag.
+Advanced usage alert! You can also use `--include` and `--exclude` to specify filesystem paths as a glob pattern. This works like the Linux find(1) command. Pass all the entries in `--include` starting with `/` to find(1), and all entries in `--exclude` which are not selectors to find(1) using the `-not -path` flag. 
 
 ```
 $ tscli logs collect --include system,orion --exclude *hadoop*,*zookeeper* --since 2h

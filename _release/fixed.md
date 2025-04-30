@@ -7,21 +7,123 @@ permalink: /:collection/:path.html
 ---
 These are the issues we fixed in recent ThoughtSpot Releases.
 
+   - [5.1.4 Fixed issues](#5-1-4)
+   - [5.1.3 Fixed issues](#5-1-3)
+   - [5.1.2 Fixed issues](#5-1-2)
+   - [5.1.1 Fixed issues](#5-1-1)
+   - [5.1 Fixed issue](#5-1)
    - [5.0.4 Fixed issue](#5-0-4)
    - [5.0 Fixed issues](#5-0)
-   - [4.5.1 Fixed Issues](#4-5-1)
-   - [4.5 Fixed Issues](#4-5)
-   - [4.4 Fixed Issues](#4-4)
+   - [4.5.1 Fixed issues](#4-5-1)
+   - [4.5 Fixed issues](#4-5)
+   - [4.4 Fixed issues](#4-4)
+
+<a id="5-1-4"></a>
+## 5.1.4 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.1.4.
+
+- An error that occurred when saving changes to the title of a visualization is now fixed.
+
+- An issue where some worksheets became uneditable after an upgrade, due to corrupted metadata, is now fixed.
+
+- A problem with date filters in the Japanese locale is now fixed.
+
+- An issue with refreshing materialization of views is now fixed.
+
+<a id="5-1-3"></a>
+## 5.1.3 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.1.3.
+
+- Downloading an R visualization no longer causes an empty page to be displayed.
+
+- A problem where tables in a Google Chrome tab become misaligned is now fixed.
+
+- Custom scatter charts no longer disappear from pinboards after an upgrade.
+
+- An issue where the Copy-and-edit button incorrectly appears on embedded visuals is now fixed.
+
+- Occasional slow navigation between the Answer and Pinboard pages has been fixed.
+
+- A normal bar chart in a pinboard which is changed to a stacked bar chart no longer reverts to the normal bar chart after the pinboard is saved, browser is closed, and pinboard is reopened.
+
+vA problem where using the exclude filter on pinboards causes the wrong results to be displayed is now fixed.
+
+- Usage-based indexing of search has been improved.
+
+- A problem where the `tscli ssl rm-cert` command was used to remove a cert, but did not revert it back to the default cert is now fixed.
+
+- When a search that uses no attributes results in fan-trap queries, the measure values shown are no longer incorrect.
+
+- A problem where some users could not log in through SSO after an upgrade has been fixed.
+
+- Fan-trap queries no longer have more grouping columns than necessary.
+
+- An issue with worksheets showing incomplete compound-column joins has been fixed.
+
+- A problem where the user interface becomes slow during a data load has been fixed.
+
+- CSVs downloaded by certain row-level-security users are no longer empty.
+
+<a id="5-1-2"></a>
+## 5.1.2 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.1.2.
+
+- Search no longer stops working under certain conditions like fast typing, or copying and pasting of a search query.
+
+- Selecting 'Copy and Edit' in an answer, pinboard visualization, insight, SpotIQ pinboard or view, no longer causes the user to be signed out.
+
+- HDFS images for a cluster are now created prior to pushing the HDFS configuration. This ensures images are fresh during an upgrade.
+
+- When removing a node, the node calling command no longer results in unreachability due to misconfigured firewall settings.
+
+- Permissions issues with `tsload` and `tql` are now fixed, so the **thoughtspot** user can load data.
+
+- Database stability has been improved.
+
+<a id="5-1-1"></a>
+## 5.1.1 Fixed issues
+
+These are the issues we fixed in ThoughtSpot Release 5.1.1.
+
+-  Geo Bubble map labels can now be disabled or enabled through a data labels checkbox.
+
+-  Filter panel failure to open during formula creation has been fixed.
+
+-  Custom R analysis failure when run from Custom Analyze has been fixed.
+
+-  Microsoft Internet Explorer button display problem in Edit Group, Add a New Group, and Custom Analysis has been fixed.
+
+-  Tooltips in line, scatter, and radar charts have been improved to avoid tooltip display when far from a data point.
+
+-  Microsoft Internet Explorer problem with saving the name of an answer has been fixed.
+
+-  Previously, admin style and font customizations for tables and charts were off by default. They are now on by default.
+
+-  Search phrase autocomplete has been fixed to prevent unnecessary red highlighting of values.
+
+-  Geo Bubble and Geo Heatmap issue where chart displays momentarily and then disappears has been fixed.
+
+-  Zoom on Geo maps can now be done using a mouse scroll wheel.
+
+<a id="5-1"></a>
+## 5.1 Fixed issue
+
+We fixed the following issue in ThoughtSpot Release 5.1.
+
+- The X and Y axes were previously flipped on [bar charts and stacked bar charts]({{ site.baseurl }}/end-user/search/about-bar-charts.html). This has been fixed.
 
 <a id="5-0-4"></a>
-## 5.0.4 Fixed Issues
+## 5.0.4 Fixed issue
 
 We fixed the following issue in ThoughtSpot Release 5.0.4.
 
 - Deprecated SSH cryptographic settings are used.
 
 <a id="5-0"></a>
-## 5.0 Fixed Issues
+## 5.0 Fixed issues
 
 These are the issues we fixed in ThoughtSpot Release 5.0.
 
@@ -34,7 +136,7 @@ These are the issues we fixed in ThoughtSpot Release 5.0.
 - The space allocation chart does not update.
 
 <a id="4-5-1"></a>
-## 4.5.1 Fixed Issues
+## 4.5.1 Fixed issues
 
 These are the issues we fixed in ThoughtSpot Release 4.5.1.
 
@@ -94,7 +196,7 @@ These are the issues we fixed in ThoughtSpot Release 4.5.1.
 - The easiest way to diagnose this would be to check for the inability of the script to log in to the system. Please contact ThoughtSpot Support to get guidance on the steps to resolve the issue.
 
 <a id="4-5"></a>
-## 4.5 Fixed Issues
+## 4.5 Fixed issues
 
 These are the issues we fixed in ThoughtSpot Release 4.5.
 
@@ -211,7 +313,7 @@ These are the issues we fixed in ThoughtSpot Release 4.5.
 - The system now validates both the format and the size of profile pictures, previously these were not checked.
 
 <a id="4-4"></a>
-## 4.4 Fixed Issues
+## 4.4 Fixed issues
 
 These are the issues we fixed in ThoughtSpot Release 4.4.
 

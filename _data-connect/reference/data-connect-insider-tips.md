@@ -36,7 +36,7 @@ You can see the status of a data load job by looking at the list of data sources
 
  ![]({{ site.baseurl }}/images/data_connect_load_status.png "Data load status")
 
-To see loading details for each table that makes up a data load, click on the name of the data load.
+To see loading details for each table that makes up a data load, click the name of the data load.
 
  ![]({{ site.baseurl }}/images/data_connect_load_table_status.png "Data load status details")
 

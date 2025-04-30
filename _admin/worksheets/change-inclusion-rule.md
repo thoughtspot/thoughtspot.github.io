@@ -28,22 +28,22 @@ following affect data:
 
 To configure these values for a worksheet:
 
-1. Click on **Data** on the top navigation bar and then on **Worksheets**.
+1. Click **Data** on the top navigation bar and then on **Worksheets**.
 
-2. Click on the name of the worksheet you want to edit from the list.
+2. Click the name of the worksheet you want to edit from the list.
 
 3. Click the **Edit Worksheet** button in the upper right hand side of the screen.
 
-4. Click on the **+ icon** next to **Sources**.
+4. Click the **+ icon** next to **Sources**.
 
 5. Scroll to the bottom of the page.
 
-5. Configure the worksheet join rule and RLS setting as needed.
+6. Configure the worksheet join rule and RLS setting as needed.
 
      ![]({{ site.baseurl }}/images/worksheet_choose_sources_from_2.5.png "The worksheet join rule and RLS setting")
 
-6. Click **CLOSE**.
+7. Click **CLOSE**.
 
-7. Click the the ellipses icon (3 dots) ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+8. Click the the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
     ![]({{ site.baseurl }}/images/action_save_worksheet.png "Save a worksheet")

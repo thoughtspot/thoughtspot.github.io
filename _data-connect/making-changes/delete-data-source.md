@@ -18,7 +18,7 @@ Before you begin, if there are any recurring data load jobs for the data source 
 
     ![]({{ site.baseurl }}/images/data_sources_tab_created.png "Data Sources tab")
 
-4. Find the data source you want to delete, and click on its name.
+4. Find the data source you want to delete, and click its name.
 
 5. Click **Edit**. This will bring you to the setup screens for a new data source.
 
@@ -33,7 +33,7 @@ Before you begin, if there are any recurring data load jobs for the data source 
 8. Take a look at the table name and its schema.
 
    Decide if the table is one you want to keep in ThoughtSpot.
-   
+
 9. Go back to the data sources listing, click the checkbox next to the data source, and delete it.
 
      ![]({{ site.baseurl }}/images/data_connect_delete_source.png "Delete a data source")
