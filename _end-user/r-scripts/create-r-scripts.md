@@ -1,15 +1,16 @@
 ---
 title: [Create and share R scripts]
 summary: "You can create and share your custom R scripts in ThoughtSpot."
-last_updated: tbd
+last_updated: 11/22/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Overview
 
-Each ThoughtSpot cluster is capable of running an R analysis on your data. To
-perform your own R analysis, start with a simple search and click the R icon on
+{% include note.html content="Custom R is disabled by default. To turn on custom R scripting, contact your site administrator." %}
+
+Each ThoughtSpot cluster is capable of running an R analysis on your data. To perform your own R analysis, start with a simple search and click the R icon on
 the right.
 
 Use the **Custom R Script** dialog and settings to enter your script, set which

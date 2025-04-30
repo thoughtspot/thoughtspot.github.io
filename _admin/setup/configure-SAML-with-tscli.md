@@ -29,7 +29,7 @@ DNS name of the load balancer _front-end_ for multi-node ThoughtSpot clusters, o
 ### Service port
 Service port for ThoughtSpot instance, typically TCP/443.
 
-{: id="#ts-service-name" }
+{: id="ts-service-name" }
 ### Unique service name
 The unique key ThoughtSpot uses to identify IDP service. Set by the ThoughtSpot Support Team.
 

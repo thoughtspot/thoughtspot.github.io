@@ -1,5 +1,5 @@
 ---
-title: [Set up VMware for ThoughtSpot]
+title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -19,8 +19,7 @@ This installation process assumes you have already acquired your host machines.
 You can install on a cluster with any number of nodes. A one node cluster is suitable
 for a sandbox environment but is insufficient for a production environment. You need at least three nodes for high availability (HA), but there is no limit on the number of nodes.
 
-
-1. Make sure you have installed the Hypervisor on each of your three nodes.
+1. Make sure you have installed the Hypervisor on each of your nodes.
 
    The VM template, by default, captures a 72-core configuration. If your
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)

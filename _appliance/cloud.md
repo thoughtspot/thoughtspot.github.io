@@ -11,7 +11,7 @@ ThoughtSpot can currently be deployed in the following cloud provider environmen
 - [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 
-The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.  
+The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses. 
 
 | | AWS | Azure | GCP |
 | --- | --- | --- | --- |
@@ -73,3 +73,9 @@ To shut down and restart your cluster, do the following in the tscli:
   `Cluster: RUNNING` <br>
   `Database: READY` <br>
   `Search Engine: READY`
+
+## Automating your cloud deployment
+
+You can automate your deployment, using the free tools in the [ThoughtSpot Cloud Deployment GitHub repository](https://github.com/thoughtspot/community-tools/tree/master/ThoughtSpot_Cloud_deployments){:target="_blank"}.
+
+For more information about automating your cloud deployment, read [Deploying ThoughtSpot in the Cloud Using Terraform and Ansible](https://www.thoughtspot.com/thoughtspot-blog/deploying-thoughtspot-cloud-using-terraform-and-ansible){:target="_blank"}.  

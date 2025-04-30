@@ -1,7 +1,5 @@
 ---
 title: [How the worksheet join rule works]
-
-
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

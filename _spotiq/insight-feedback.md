@@ -1,12 +1,13 @@
 ---
 title: [Insight feedback]
-last_updated: tbd
+summary: Learn how to rate a SpotIQ insight.
+last_updated: 11/12/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 With SpotIQ analysis and insight feedback, you can rate an insight by clicking the like ![more options menu icon]({{ site.baseurl }}/images/thumb_up.png){: .inline} or dislike ![more options menu icon]({{ site.baseurl }}/images/thumb_down.png){: .inline} icon of the insight.
 
-When you click dislike, you can provide more details on why you disliked the insight by answering the questions that are generated based on the type of insight, decisions made by SpotIQ during analysis, aggregation, and so on. These questions help determine if the features of an insight are relevant, or too obvious.
+When you click dislike, you can provide more details on why you disliked the insight by answering the questions based on the type of insight, decisions made by SpotIQ during analysis, aggregation, and so on. These questions help determine if the features of an insight are relevant, or too obvious.
 
 ![]({{ site.baseurl }}/images/insight-feedback-simple.png)
 
@@ -41,7 +42,7 @@ Follow these steps to remove a specific feedback from future consideration.
    * You can select one or more items.  
 
    * To choose all items, hover by the **Name** column, and select the checkbox next to it.
- This p[laces a checkmark beside each feedback.  
+ This places a checkmark beside each feedback.  
 
    * To unselect items, click the checkbox.  
 

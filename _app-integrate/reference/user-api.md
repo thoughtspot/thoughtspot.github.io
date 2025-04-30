@@ -76,6 +76,9 @@ Use this API to synchronize ThoughtSpot users and groups with your external data
 <code class="api-method-post">post</code> /tspublic/v1/user/sync
 
 ### Request Parameters
+
+This API uses `multipart/form-data` content type.
+
 <table>
    <colgroup>
    <col style="width:20%" />

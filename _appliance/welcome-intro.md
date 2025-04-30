@@ -11,9 +11,9 @@ Your ThoughtSpot installation cannot mix node types. For example, you can have e
 This guide instructs you how to prepare each of the following:
 
 - [Hardware appliance]({{ site.baseurl }}/appliance/hardware/inthebox.html)
-- [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/about-aws.html)
-- [Microsoft Azure]({{ site.baseurl }}/appliance/azure/about-azure.html)
-- [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/about-gcp.html)
+- [Amazon Web Services (AWS) EC2]({{ site.baseurl }}/appliance/aws/configuration-options.html)
+- [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
+- [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 - [VMware]({{ site.baseurl }}/appliance/vmware/vmware-intro.html)
 
 After you configure your nodes, you can contact [ThoughtSpot

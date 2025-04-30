@@ -1,7 +1,7 @@
 ---
 title: [tscli command reference]
-last_updated: 10/17/2019
-summary: "The ThoughtSpot command line interface, or `tscli`, is an administration interface for the cluster. Use `tscli` to take snapshots (backups) of data, apply
+last_updated: 10/28/2019
+summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
 sidebar: mydoc_sidebar
@@ -23,15 +23,13 @@ tscli [-h]
       [--noautoconfig]
       [--autoconfig]
       [--yes]
-      [--cluster <<em>cluster</em>>]
-      [--zoo <<em>zookeeper</em>>]
-      [--username <<em>username</em>>]
-      [--identity_file <<em>identity_file</em>>]
-      {access, alert, ansible, backup, backup-policy, callhome, cassandra,
+      [--cluster ]
+      [--zoo ]
+      {access, alert, ansible, backup, backup-policy, calendar, callhome, cassandra,
        cluster, command, dr-mirror, etl, event, feature, fileserver,
        firewall, hdfs, ipsec, ldap, logs, map-tiles, monitoring, nas,
-       node, patch, rpackage, saml, scheduled-pinboards, smtp, snapshot,
-       snapshot-policy, spot, sssd, ssl, storage, support,
+       node, notification, onboarding, patch, rpackage, saml, scheduled-pinboards, set, smtp, snapshot,
+       snapshot-policy, socialproof spot, sssd, ssl, storage, support,
        tokenauthentication}
 </pre>
 
@@ -48,7 +46,7 @@ create` or `tscli backup delete`.
 
 Each subcommand may have several options.
 
-To view help for a subcommand, type `-h` for the subcommand option:
+To view help for a subcommand, type `-h` after the subcommand option:
 
 ```
 tscli [subcommand] -h
@@ -70,7 +68,35 @@ This subcommand has the following option:
 <dl>
   <dlentry>
     <dt><code>tscli access list</code></dt>
-    <dd>Lists objects by last access time.</dd>
+    <dd>Lists objects by last access time, with the following parameters:
+    <dl>
+  <dlentry>
+    	<dt><code>--type TYPE</code></dt>
+    	<dd>Type of object, either answer or pinboard.</dd>
+  </dlentry>
+  <dlentry>
+  <dt><code>--limit	LIMIT</code></dt>
+    <dd><p>The number of objects to fetch.</p>
+      <p>The default is 30.</p> </dd>
+  </dlentry>
+  <dlentry>
+  <dt><code>--offset OFFSET</code></dt>
+    <dd><p>Offset to use to skip objects for batched results.</p>
+    <p>
+      The default is 0.
+      </p></dd>
+  </dlentry>
+  <dlentry>
+  <dt><code>--ascending</code></dt>
+    <dd><p>
+      Sorts the answers by access time ascending.
+      </p>
+    <p>
+      The default is <code>True</code>.
+      </p></dd>
+  </dlentry>
+</dl>
+</dd>
   </dlentry>
 </dl>
 
@@ -85,13 +111,29 @@ This subcommand has the following options:
 
 <dl>
   <dlentry>
+    <dt><code>tscli alert count</code></dt>
+    <dd>Lists counts of generated alerts by type.</dd>
+  </dlentry>
+
+  <dlentry>
     <dt><code>tscli alert info</code></dt>
-    <dd>Lists all alerts.</dd>
+    <dd>Lists all alerts. Add <code>silenced</code> to list only silenced alerts, <code>active</code> to list only active alerts, or <code>detailed</code> to get detailed alert information.</dd>
   </dlentry>
 
   <dlentry>
     <dt><code>tscli alert list</code></dt>
-    <dd>Lists the generated alerts.</dd>
+    <dd>Lists the generated alerts, with these parameters:
+    <dl>
+    <dlentry>
+    <dt><code>--limit LIMIT</code></dt>
+    <dd>Specifies the number of recent alerts to display.</dd>
+    </dlentry>
+    <dlentry>
+    <dt><code>--since SINCE</code></dt>
+    <dd>Lists all alerts raised since a specified time period, in the form of a human readable duration string, such as 4h (4 hours) or 4m (4 minutes).</dd>
+    </dlentry>
+    </dl>
+    </dd>
   </dlentry>
 
   <dlentry>
@@ -105,8 +147,13 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli alert silence --name <em>alert_name</em></code></dt>
-    <dd>Silences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres, however emails are not sent out.</dd>
+    <dt><code>tscli alert refresh</code></dt>
+    <dd>Refreshes alert metadata on the cluster.</dd>
+  </dlentry>
+
+  <dlentry>
+    <dt><code>tscli alert silence --name NAME</code></dt>
+    <dd>Silences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>. Silenced alerts are still recorded in postgres, however emails are not sent out.</dd>
   </dlentry>
 
   <dlentry>
@@ -115,19 +162,33 @@ This subcommand has the following options:
   </dlentry>
 
   <dlentry>
-    <dt><code>tscli alert unsilence-name <em>alert_name</em></code></dt>
-    <dd>Unsilences the alert with <em><code>alert_name</code></em>. For example, <code>DISK_ERROR</code>.</dd>
+    <dt><code>tscli alert unsilence --name  NAME</code></dt>
+    <dd>Unsilences the alert with <code>NAME</code>. For example, <code>DISK_ERROR</code>.</dd>
    </dlentry>
 </dl>   
 
 {: id="tscli-ansible"}
 ### ansible
 
-   ```
-   tscli ansible [-h] {checkout,commit} [--local]
-   ```
+```
+tscli ansible [-h] {checkout,commit} [--local]
+```
 
-   Use this subcommand to install and configure third-party software on the ThoughtSpot cluster.
+This subcommand has the following options:
+
+   <dl>
+     <dlentry>
+       <dt><code>tscli ansible checkout --host HOST</code></dt>
+       <dd>Checks out Ansible playbook with the target <code>HOST</code> that is running the ts_ansible service.</dd>
+     </dlentry>
+
+     <dlentry>
+       <dt><code>tscli ansible commit --host HOST</code></dt>
+       <dd>Commits Ansible playbooks with the target <code>HOST </code> that is running the ts_ansible service.</dd>
+     </dlentry>
+</dl>
+
+   Use this subcommand to install and configure third-party software on the ThoughtSpot cluster.  
 
    For details, see these articles:
 
@@ -141,60 +202,102 @@ This subcommand has the following options:
 tscli backup [-h] {create,delete,ls,restore}
 ```
 
-This subcommand has the following options:
-<dl>
-  <dlentry>
-    <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] name out</code></dt>
-    <dd>
-      <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
+  This subcommand has the following options:
 
-      <dl>
-        <dlentry>
-         <dt><code>--mode {full,light,dataless}</code></dt>
-         <dd>Mode of backups.</dd></dlentry>
-        <dlentry>
-          <dt><code>--type {full,incremental}</code></dt>
-          <dd>
-            <p>Type of backup.</p>
-            <p><strong>Note:</strong> <code>incremental</code> is not implemented.</p>
-            <p>The default setting is <code>full</code>.</p></dd></dlentry>
-        <dlentry>
-          <dt><code>--base <em>BASE</em></code></dt>
-          <dd>
-            <p>Based snapshot name for incremental backup.</p>
-            <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
-            <p>There is no default setting.</p></dd></dlentry>
-        <dlentry>
-          <dt><code>--storage_type {local,nas}</code></dt>
-          <dd>
-            <p>Storage type of output directory.</p>
-            <p>The default setting is <code>local</code>.</p></dd></dlentry>
-        <dlentry>
-          <dt><code>--remote</code></dt>
-          <dd>
-            <p>Take backup through orion master.</p>
-            <p>The default setting is <code>True</code>.</p></dd>
-        </dlentry>
-        </dl>
-    </dd>
+  <dl>
+    <dlentry>
+      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] [--no-orion-master]</code></dt>
+      <dd>
+        <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
 
+        <dl>
+          <dlentry>
+           <dt><code>--mode {full,light,dataless}</code></dt>
+            <dd><p>Mode of backups.</p>
+            <p>
+              The default is <code>full</code>.
+              </p></dd></dlentry>
+          <dlentry>
+            <dt><code>--type {full,incremental}</code></dt>
+            <dd>
+              <p>Type of backup.</p>
+              <p><strong>Note:</strong> <code>incremental</code> is not implemented.</p>
+              <p>The default setting is <code>full</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--base BASE</code></dt>
+            <dd>
+              <p>Based snapshot name for incremental backup.</p>
+              <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
+              <p>There is no default setting.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--storage_type {local,nas}</code></dt>
+            <dd>
+              <p>Storage type of output directory.</p>
+              <p>The default setting is <code>local</code>.</p></dd></dlentry>
+          <dlentry>
+            <dt><code>--remote</code></dt>
+            <dd>
+              <p>Takes backup through orion master.</p>
+              <p>The default setting is <code>True</code>.</p></dd>
+            <dlentry>
+            <dt><code>--no-orion-master</code></dt>
+             <dd> <p>
+                Determines whether orion master is available during backup.
+              </p>
+               <p>
+                 The default is <code>False</code>.
+               </p></dd>
+            </dlentry>
+          </dlentry>
+          </dl>
+      </dd>
+
+      </dlentry>
+
+    <dlentry>
+      <dt><code>tscli backup delete <em>name</em></code></dt>
+      <dd>Deletes the named backup.</dd>
     </dlentry>
 
-  <dlentry>
-    <dt><code>tscli backup delete <em>name</em></code></dt>
-    <dd>Deletes the named backup.</dd>
-  </dlentry>
+    <dlentry>
+      <dt><code>tscli backup ls</code></dt>
+      <dd>Lists all backups taken by the system.</dd>
+    </dlentry>
 
-  <dlentry>
-    <dt><code>tscli backup ls</code></dt>
-    <dd>List all backups taken by the system.</dd>
-  </dlentry>
-
-  <dlentry>
-    <dt><code>tscli backup restore</code></dt>
-    <dd>Restore cluster using backup.</dd>
-  </dlentry>
-</dl>
+    <dlentry>
+      <dt><code>tscli backup restore</code></dt>
+      <dd>Restores cluster using backup, with the following parameters:
+      <dl>
+        <dlentry>
+        <dt><code>--release RELEASE</code></dt>
+          <dd>Restore the cluster on a specific release number.</dd>
+        </dlentry>
+        <dlentry>
+        <dt><code>--disable_rotate_keys</code></dt>
+          <dd><p>
+            Disables cluster rotate key configurations.
+            </p>
+          <p>
+            The default is <code>False</code>.
+            </p></dd>
+        </dlentry>
+        <dlentry>
+        <dt><code>--enable_cloud_storage</code></dt>
+          <dd>Determines whether to enable Cloud Storage setup.</dd>
+        </dlentry>
+        <dlentry>
+        <dt>--heterogeneous</dt>
+          <dd><p>
+            Should be set for heterogeneous clusters.
+            </p>
+          <p>
+            The default is <code>False</code>.
+            </p></dd>
+        </dlentry>
+        </dl>
+      </dd>
+    </dlentry>
+  </dl>
 
 {: id="tscli-backup-policy"}
 ### backup-policy
@@ -210,35 +313,207 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli backup-policy create</code></dt>
-    <dd>Prompts an editor for you to edit the parameters of the backup policy.</dd></dlentry>
+    <dd>Prompts an editor for you to edit the parameters of a new periodic backup policy, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--config CONFIG</code></dt>
+    <dd>Specifies the text format of the periodic backup policy config.</dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy delete <em>name</em></code></dt>
-    <dd>Deletes the backup policy with <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy delete name</code></dt>
+    <dd>Deletes the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy disable <em>name</em></code></dt>
-    <dd>Disables the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy disable name</code></dt>
+    <dd>Disables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy enable <em>name</em></code></dt>
-    <dd>Enables the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy enable name</code></dt>
+    <dd>Enables the policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli backup-policy ls</code></dt>
-    <dd>List backup policies.</dd></dlentry>
+    <dd>Lists backup policies.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy show <em>name</em></code></dt>
-    <dd>Show the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy show name</code></dt>
+    <dd>Shows the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy status <em>name</em></code></dt>
-    <dd>Enables the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy status name</code></dt>
+    <dd>Shows the status of the backup policy <code>name</code>.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli backup-policy update <em>name</em></code></dt>
-    <dd>Prompts an editor for you to edit the policy <em>name</em>.</dd></dlentry>
+    <dt><code>tscli backup-policy update name</code></dt>
+    <dd>Prompts an editor for you to edit the backup policy <code>name</code>.</dd></dlentry>
+</dl>
+
+{: id="tscli-calendar"}
+### calendar
+```
+tscli calendar [-h] {create,delete,disable,enable,generate,get,list,update}
+```
+
+This subcommand has the following options:
+
+<dl>
+<dlentry>
+<dt><code>tscli calendar create</code></dt>
+<dd>Creates a new custom calendar, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--file_path FILE_PATH</code></dt>
+<dd><p>Path to the CSV file holding custom calendar data.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Custom calendar name.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--separator SEPARATOR</code></dt>
+<dd><p>The separator used in the CSV file.</p>
+<p>The default is <code>,</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--no-header-row</code></dt>
+<dd><p>Flag to indicate that the CSV file has no header row.</p>
+<p>The default is <code>True</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+</dl></dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar delete</code></dt>
+<dd>Deletes a custom calendar table from the system, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Deletes the custom calendar NAME.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry></dl></dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar disable</code></dt>
+<dd>Disables custom calendar on the cluster.</dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar enable</code></dt>
+<dd>Enables custom calendar on the cluster.</dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar generate</code></dt>
+<dd>Creates a custom calendar table based on given specifications, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>A name to create the custom calendar CSV file with.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--start_date START_DATE</code></dt>
+<dd><p>The start date to begin the custom calendar with in the form mm/dd/yyyy.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--end_date END_DATE</code></dt>
+<dd><p>The end date to end the custom calendar with in the form mm/dd/yyyy.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--calendar_type {MONTH_OFFSET,4-4-5,4-5-4,5-4-4}</code></dt>
+<dd><p>The type of custom calendar to create.</p>
+<p>The default is <code>MONTH_OFFSET</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--month_offset {January,February,March,April,May,June,July,August,September,October,November,December}</code></dt>
+<dd><p>The month offset to start the year from, if the calendar is the MONTH_OFFSET type.</p>
+<p>The default is <code>January</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--start_day_of_week</code></dt>
+<dd><p>The day the week starts on.</p>
+<p>The default is <code>Sunday</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--quarter_name_prefix</code></dt>
+<dd>The string to prefix a quarter name with.</dd>
+</dlentry>
+<dlentry>
+<dt><code>--year_name_prefix YEAR_NAME_PREFIX</code></dt>
+<dd>The string to prefix a year name with.</dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+</dl></dd>
+</dlentry>
+<dlentry>
+<dt><code>tscli calendar get</code></dt>
+<dd>Procures data of a custom calendar as a CSV file, with the following parameters:
+<dl><dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Procures data of custom calendar <code>NAME</code></p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>Admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry></dl></dd></dlentry>
+<dlentry>
+<dt><code>tscli calendar list</code></dt>
+<dd>Procures a list of custom calendars present in the cluster, with the following parameter:
+<dl>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>Admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry></dl></dd></dlentry>
+<dlentry>
+<dt><code>tscli calendar update</code></dt>
+<dd>Updates a custom calendar table in the system, with the following parameters:
+<dl>
+<dlentry>
+<dt><code>--file_path FILE_PATH</code></dt>
+<dd><p>Path to the CSV file holding custom calendar data.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--name NAME</code></dt>
+<dd><p>Custom calendar name.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--separator SEPARATOR</code></dt>
+<dd><p>The separator used in the CSV file.</p>
+<p>The default is <code>,</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--no-header-row</code></dt>
+<dd><p>Flag to indicate that the CSV file has no header row.</p>
+<p>The default is <code>True</code>.</p></dd>
+</dlentry>
+<dlentry>
+<dt><code>--username USERNAME</code></dt>
+<dd><p>The admin username for ThoughtSpot login.</p>
+<p>The default is <code>None</code>.</p></dd>
+</dlentry>
+</dl></dd>
+</dlentry>
 </dl>
 
 {: id="tscli-callhome"}
@@ -256,29 +531,29 @@ This subcommand has the following options:
     <dd>Turns off the periodic call home feature.</dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli callhome enable --customer_name <em>customer_name</em></code></dt>
+    <dt><code>tscli callhome enable --customer_name CUSTOMER_NAME</code></dt>
     <dd>
       <p>Enables the "call home" feature, which sends usage statistics to ThoughtSpot.</p>
       <p>This feature is enabled by default.</p>
-      <p>The parameter <code>customer_name</code> takes the form  <code>Shared/<em>customer_name</em>/stats</code>.</p></dd></dlentry>
+      <p>The parameter <code>customer_name</code> takes the form <code>Shared/CUSTOMER_NAME/stats</code>.</p>
+      <p>The default is <code>None</code>.</p></dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli callhome generate-bundle  --d <em>directory</em> --since <em>DAYS</em></code></dt>
-    <dd>
-      <p>These are the parameters:</p>
+    <dt><code>tscli callhome generate-bundle [--d D] [--since SINCE]</code></dt>
+    <dd>Generates the callhome stats tar file, with the following parameters:
       <dl>
         <dlentry>
           <dt><code>--d D</code></dt>
           <dd><p>Destination folder for the tar file.</p>
             <p>There is no default setting.</p></dd></dlentry>
         <dlentry>
-          <dt><code>--since <em>DAYS</em></code></dt>
+          <dt><code>--since SINCE</code></dt>
           <dd>
-            <p>Grab <code>callhome</code> data from this time window in the past.</p>
-            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1day).</p>
+            <p>Grabs <code>callhome</code> data from the specified time window in the past.</p>
+            <p>This should be a human-readable duration string, such as <code>4h</code> (4 hours), <code>30m</code> (30 minutes), <code>1d</code> (1 day).</p>
             <p>This option generates a <code>tar</code> file of the cluster metrics and
-      writes it to the specified directory, where  <code>DAYS</code> is how many days back the file must start.</p>
-            <p>The default setting is <code>7</code> days.</p></dd>
+      writes it to the specified directory, where  <code>SINCE</code> is how many days back the file must start.</p>
+            <p>There is no default setting.</p></dd>
             </dlentry>
             </dl>
             </dd>
@@ -299,21 +574,33 @@ This subcommand has the following options:
 <dl>
 <dlentry>
   <dt><code>tscli cassandra backup</code></dt>
-  <dd>Take a backup of cassandra.</dd></dlentry>
+  <dd>Takes a backup of cassandra, with the following parameters:
+  <dl>
+  <dlentry>
+  <dt><code>--keyspaces KEYSPACES</code></dt>
+  <dd><p>Comma separated list of keyspaces to take a backup of.</p>
+  <p>The default is <code>None</code>.</p></dd></dlentry>
+  <dlentry>
+  <dt><code>backup_dir BACKUP_DIR</code></dt>
+  <dd><p>The path to the backup directory to write the backup.</p>
+  <p>The default is <code>None</code>.</p></dd>
+  </dlentry></dl></dd></dlentry>
 <dlentry>
     <dt><code>tscli cassandra restore</code></dt>
-    <dd>Restore cassandra from a backup.</dd></dlentry>
+    <dd>Restores cassandra from a backup, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--backup_dir BACKUP_DIR</code></dt>
+    <dd><p>The path to the backup directory to write the backup.</p>
+    <p>The default is <code>None</code>.</p></dd>
+    </dlentry></dl></dd></dlentry>
 </dl>
 
 {: id="tscli-cluster"}
 ### cluster
 
 ```
-tscli cluster [-h] {abort-reinstall-os,check,create,get-config,load,
-                    reinstall-os,report,restore,resume-reinstall-os,
-                    resume-update,set-config,set-min-resource-spec,
-                    show-resource-spec,start,status,stop,update,
-                    update-hadoop}
+tscli cluster [-h] abort-reinstall-os,abort-update,bucket-  name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,reinstall-os,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
 ```
 
 This subcommand has the following options:
@@ -321,63 +608,166 @@ This subcommand has the following options:
 <dl>
   <dlentry>
     <dt><code>tscli cluster abort-reinstall-os</code></dt>
-    <dd>Abort in-progress reinstall.</dd></dlentry>
+    <dd>Aborts in-progress reinstall.</dd></dlentry>
+
+    <dlentry>
+      <dt><code>tscli cluster abort-update</code></dt>
+      <dd>Aborts an ongoing cluster update, if safe.</dd></dlentry>
+
+    <dlentry>
+      <dt><code>tscli cluster bucket-name</code></dt>
+      <dd>Returns the name of the s3 bucket associated with the cluster, if there is one.</dd></dlentry>  
 
   <dlentry>
-    <dt><code>tscli cluster check --includes {all,disk,zookeeper,hdfs,orion-cgroups,orion-oreo}</code></dt>
-    <dd>
-      <p>Check the status nodes in the cluster.</p>
-      <p>You must specify a component to check.</p></dd></dlentry>
+    <dt><code>tscli cluster check [--path PATH] [--includes INCLUDES] [--retry RETRY] [--localhost] [--disable-events]</code></dt>
+    <dd>Checks the status of all nodes in the cluster, with the following parameters:
+      <dl>
+      <dlentry>
+      <dt><code>--path PATH</code></dt>
+      <dd><p>Specifies the working directory of the diagnostic tool.</p>
+      <p>The default is <code>/usr/local/scaligent/release</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--includes INCLUDES</code></dt>
+      <dd><p>Specifies the comma-separated component(s) to be included in the check.</p>
+      <p>The default is <code>all</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--retry RETRY</code></dt>
+      <dd><p>The maximum number of retry times if the node is unreachable.</p>
+      <p>The default is <code>10</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--localhost</code></dt>
+      <dd><p>Runs cluster checks only on localhost.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--disable-events</code></dt>
+      <dd><p>Disables raising configuration events.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+      </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster create <em>release</em></code></dt>
     <dd>
-      <p>Creates a new cluster from the release file specified by <code><em>release</em></code>.</p>
-      <p>Used by ThoughtSpot Support when installing a new cluster. For example, <code>tscli cluster create 5.3.2.tar.gz</code>.</p></dd></dlentry>
+      <p>Creates a new cluster from the release file specified by adding the  release number.</p>
+      <p>Used by ThoughtSpot Support when installing a new cluster. For example, <code>tscli cluster create 5.3.2.tar.gz</code>.</p>
+      <p>This command has the following parameters:</p>
+      <dl>
+      <dlentry>
+      <dt><code>--disable_rotate_keys</code></dt>
+      <dd><p>Disables cluster rotate key configuration.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
+      <dd>Determines whether to enable Cloud Storage setup, and which storage format to use.
+      </dd></dlentry>
+      <dlentry>
+      <dt><code>heterogeneous</code></dt>
+      <dd><p>Should be set for hetergenous clusters.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry></dl></dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster download-release <em>release</em></code></dt>
+    <dd>Downloads the specified release to the Hadoop Distributed File Sytem (HDFS) for later upgrading.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster get-config</code></dt>
     <dd>
-      <p>Get current cluster network and time configuration. Prints JSON configuration to <code>stdout.</code></p>
-      <p>If the system cannot be connected to all interfaces, the command returns an error but continues to function.</p></dd></dlentry>
+      <p>Gets current cluster network and time configuration. Prints JSON configuration to <code>stdout</code>.</p>
+      <p>If the system cannot be connected to all interfaces, the command returns an error but continues to function.</p>
+      <p>This command has the following parameters:</p>
+      <dl>
+      <dlentry>
+      <dt><code>--local</code></dt>
+      <dd><p>Gets the config for the local host only.</p>
+      <p>The default is <code>False</code>.</p></dd></dlentry>
+      <dlentry>
+      <dt><code>--nodes NODES</code></dt>
+      <dd><p>A comma separated list of specified nodes to get the config for.</p>
+      <p>The default is <code>None</code>.</p></dd></dlentry>
+      </dl></dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli cluster load</code></dt>
-    <dd>Load state from specified backup onto existing cluster.</dd></dlentry>
+    <dt><code>tscli cluster list-available-releases</code></dt>
+    <dd>Lists the available releases to update to on the cluster.</dd></dlentry>
+
+  <dlentry>
+    <dt><code>tscli cluster list-downloaded-releases</code></dt>
+    <dd>Lists the releases downloaded to the cluster.</dd></dlentry>    
+
+  <dlentry>
+    <dt><code>tscli cluster load <em>backupdir</em></code></dt>
+    <dd>Loads the state from a specified backup directory onto an existing cluster.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster reinstall-os</code></dt>
-    <dd>Reinstall OS on all nodes of the cluster.</dd></dlentry>
-
-<dlentry>
-    <dt><code>tscli cluster report</code></dt>
-    <dd>Generate cluster report.</dd></dlentry>
+    <dd>Reinstalls OS on all nodes of the cluster, with the following parameters:
+    <dl>
+    <dlentry>
+    <dt><code>--secondary SECONDARY</code></dt>
+    <dd><p>A secondary drive for reinstall.</p>
+    <p>The default is <code>sdd</code>.</p></dd></dlentry>
+    <dlentry>
+    <dt><code>--stdin</code></dt>
+    <dd>Command to take JSON configuration from stdin.</dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
-    <dt><code>tscli cluster restore --release <em>release_tarball</em> <em>backupdir</em></code></dt>
-    <dd>Restores a cluster using the backup in the specified directory <em>backupdir</em>. If you're restoring from a dataless backup, you must supply the release tarball for the corresponding software release.</dd></dlentry>
+    <dt><code>tscli cluster restore --release RELEASE <em>backupdir</em></code></dt>
+    <dd><p>Restores a cluster on the specified release number using the backup in the specified directory <em>backupdir</em>. If you're restoring from a dataless backup, you must supply the release tarball for the corresponding software release.</p>
+    <p>This command has the following parameters:</p>
+    <dl>
+    <dlentry>
+    <dt><code>--disable_rotate_keys</code></dt>
+    <dd><p>Disables cluster rotate key configurations.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry>
+    <dlentry>
+    <dt><code>--enable_cloud_storage {s3a,gcs}</code></dt>
+    <dd>Determines whether to enable Cloud Storage setup.</dd></dlentry>
+    <dlentry>
+    <dt><code>--heterogenous</code></dt>
+    <dd><p>Should be set for heterogenous clusters.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster resume-reinstall-os</code></dt>
-    <dd>Resume in-progress reinstall.</dd></dlentry>
+    <dd>Resumes in-progress reinstall.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster resume-update</code></dt>
-    <dd>Resume in-progress updates.</dd></dlentry>
+    <dd>Resumes in-progress updates, with the following parameter:
+    <dl>
+    <dlentry>
+    <dt><code>--ignore_if_unhealthy</code></dt>
+    <dd><p>Comma separated list of node IPs on which upgrade is not attempted if they are found to be unhealthy. If a node outside of this list is found unhealthy, the upgrade is aborted.</p>
+    <p>The default is <code>None</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster set-config</code></dt>
-    <dd>Set cluster network and time configuration. Takes JSON configuration from stdin.</dd></dlentry>
+    <dd><p>Sets cluster network and time configuration. Takes JSON configuration from stdin.</p>
+    <p>This subcommand has the following parameters:</p>
+    <dl>
+    <dlentry>
+    <dt><code>--ipv4-only</code></dt>
+    <dd><p>Only use ipv4 for node communication. Requires passing ipMap in config unless no-network-change is also specified.</p>
+    <p>The default is <code>False</code>.</p></dd>
+    </dlentry>
+    <dlentry>
+    <dt><code>--no-network-change</code></dt>
+    <dd><p>This flag ensures that a change made with set-config does not update network settings.</p>
+    <p>The default is <code>False</code>.</p>
+    </dd></dlentry></dl>
+    </dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster set-min-resource-spec</code></dt>
-    <dd>Sets min resource configuration of the cluster.</dd></dlentry>
+    <dd>Sets the minimum resource configuration of the cluster.</dd></dlentry>
   <dlentry>
     <dt><code>tscli cluster show-resource-spec</code></dt>
     <dd>Prints default or min.</dd></dlentry>
   <dlentry>
     <dt><code>tscli cluster start</code></dt>
-    <dd>Start cluster.</dd></dlentry>
+    <dd>Starts the cluster.</dd></dlentry>
   <dlentry>
     <dt><code>tscli cluster status</code></dt>
     <dd>Gives the status of the cluster, including release number, date last updated, number of nodes, pending tables time, and services status.</dd></dlentry>
@@ -911,7 +1301,7 @@ This subcommand has the following options:
     <dt><code>tscli map-tiles enable [-h] [--online] [--offline] [--tar TAR] [--md5 <em>MD5</em>]</code></dt>
     <dd>
       <p>Enables ThoughtSpot's map tiles, used when constructing geomap charts.</p>
-      <p>If you don't have interest access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
+      <p>If you don't have internet access, you must download the map tiles tar and md5 files, and append the following to the <code>tscli</code> command:</p>
 
       <dl>
         <dlentry>
@@ -1410,10 +1800,12 @@ This subcommand has the following options:
   <dd>Sets a new Postmap mapping.</dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-mailfromname <em>mailfromname</em></code></dt>
-  <dd>Sets the name and an email address from where email alerts are sent for the cluster.</dd></dlentry>
+  <dd><p>Sets the name from where email alerts are sent for the cluster.</p>
+  <p>It is the first half of the email address, the part before the @ sign. In <em>example@company.com</em>, it is <em>example</em>.</p></dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-mailname <em>mailname</em></code></dt>
-  <dd>Sets the mailname and a domain from where email alerts are sent for the cluster.</dd></dlentry>
+  <dd><p>Sets the domain from where email alerts are sent for the cluster.</p>
+  <p>It is the second half of the email address, the part after the @ sign. In <em>example@company.com</em>, it is <em>company</em>.</p></dd></dlentry>
 <dlentry>
   <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] relayhost</code></dt>
   <dd>
@@ -1617,7 +2009,7 @@ This subcommand has the following option:
 ### ssl
 
 ```
-tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status}
+tscli ssl [-h] {add-cert,clear-min-tls-version,off,on,rm-cert,set-min-tls-version,status,tls-status,add-valid-hosts}
 ```        
 This subcommand manages the SSL configuration.
 
@@ -1669,6 +2061,14 @@ This subcommand has the following options:
   <dlentry>
     <dt><code>tscli ssl tls-status [-h]</code></dt>
     <dd>Prints the status of TLS support.</dd>
+  </dlentry>
+  <dlentry>
+    <dt><code>tscli ssl add-valid-hosts [-h] <em>VALID_HOSTS</em></code></dt>
+    <dd>Enables host validation for the specified host(s). Helps improve security. This feature is for all customers that have or are planning to enable SSL. Multiple hosts must be separated by a comma (,).</dd>
+    <dd>Examples:</dd>
+    <dd>1. If you want to make sure the valid host is <b>cluster1.corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts cluster1.corp.example.com</code></dd>
+    <dd>2. If you want to allow all hosts which have the suffix <b>corp.example.com</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.example.com</code>. This wild card should be used within the hostname.</dd>
+    <dd>3. If you want to allow multiple valid hosts, for example both <b>*.corp.example.com</b> and <b>cluster1</b>, you would run the command: <br><code>tscli ssl add-valid-hosts *.corp.thoughtspot.com,cluster1</code></dd>
   </dlentry>
 
 </dl>

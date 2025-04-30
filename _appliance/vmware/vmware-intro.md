@@ -10,7 +10,7 @@ Congratulations on purchasing the ThoughtSpot instance. This section is an
 overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
 vSphere Hypervisor (ESXi) 6.5 environment.
 
-## About ThoughtSpot on VMware
+## About ThoughtSpot in VMware
 
 The VMware virtualization platform provides highly scalable and efficient memory
 and CPU resources management that can be used by ThoughtSpot instances.
@@ -30,7 +30,7 @@ ThoughtSpot VMs as your dataset size grows.
 ## Supported configurations
 
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
-platform on VMware for the best performance, load balancing, scalability,
+platform in VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
 _minimum specifications_ for an individual VMware ESXi host machine:
 

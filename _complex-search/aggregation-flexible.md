@@ -1,48 +1,43 @@
 ---
-title: [Flexible aggregation functions (group aggregate and filters)]
-
-
-last_updated: tbd
+title: [Flexible aggregation functions]
+summary: "Use the group_aggregate function in ThoughtSpot to aggregate measures at different granularities then the dimensions used in the search columns."
+last_updated: 11/05/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can use the `group_aggregate` function to aggregate measures at granularities that are
-different from the dimensions that you have in columns used in the search.
-
 ## How aggregation formulas work
 
-Typically, the groupings and filters used in a formula will be the same as those
-of the columns used in the search. The concept of a grouping equates to an
-attribute column.
+Typically, the groupings and filters used in a formula use the same fields as columns returned in the search results. The concept of a grouping equates to an attribute column.
 
-For example, in the search "revenue ship mode", revenue is
-the measure, and ship mode is the attribute or _grouping_. The result of this
-search would show total revenue for each ship mode, e.g., _a_ dollars for air, _r_
-dollars for rail, _t_ dollars for truck, _s_ dollars for sea transport.
+For example, in the search `revenue ship mode`, `revenue` is
+the measure, and `ship mode` is the attribute, or grouping. The result of this
+search shows total revenue for each ship mode:
+
+| revenue | ship mode |
+| --- | --- |
+| $ _a_ | air |
+| $ _r_ | rail |
+| $ _t_ | truck |
+| $ _s_ | sea transport |
 
 The aggregation formulas are described in [Overview of aggregate formulas](aggregation-formulas.html#).
 
 ## About flexible aggregation
 
-Starting with version 5.0, ThoughtSpot provides for more flexible aggregation
-capability with a new function called `group_aggregate`. You can use this formula
-to pin columns in a query at a granularity different from the search bar query,
-using custom groupings and filters, rather than being bound to those of the
-search terms/columns.
+ThoughtSpot provides flexible aggregation with the `group_aggregate` function. You can use this formula
+to group and filter query results on different dimensions and granularities from the columns already used in the search bar query.
 
-The formula uses a sub-query to perform the custom aggregation. If the sub-query
-is at a courser grain, result column is simply added to the result of original
-query. Roll-up or _reaggregation_ is used when the sub-query is at a finer grain than the
-original query
+The `group_aggregate` formula uses a sub-query to perform these custom aggregations. If the sub-query
+is at a higher detailed level, ThoughtSpot adds the result column to the result of original
+query. When the sub-query is at a finer detail level than the original query, ThoughtSpot uses _roll-up_, or _reaggregation_.
 
 This is particularly useful for comparison analysis.
 
-You can specify to use the groups and filters from the query with `query_groups` and
-`query_filters`, respectively, and for `query_groups` you can also add or exclude
-some groups or filters.
+To use the groups and filters, specify them using the `query_groups` and
+`query_filters` keywords, respectively. You can also add or exclude groups or filters.
 
-You can use roll-up or reaggregation to fill in a column.
+{% include content/flexible-aggregation-best-practices.md %}
 
 ## Examples
 
@@ -129,6 +124,7 @@ where the formula `monthly_sales` is written as:
 ```
 group_aggregate(sum(revenue), query_groups() + {start_of_month(date)}, {})
 ```
+For more extensive examples of using the `group-aggregate` function, we encourage you to see [Reaggreggation scenarios in practice]({{site.baseurl}}/reference/reaggregation-scenarios.html)
 
 ## Groups and filters
 
@@ -138,9 +134,10 @@ specify only groupings or only filters.
 
 ## Related information
 
-* For more examples of flexible aggregation, see the `group_aggregate` function under "Aggregate
-functions" in the [Formula function reference]({{ site.baseurl}}/reference/formula-reference.html).
+* For more examples of flexible aggregation, see the [group_aggregate]({{site.baseurl}}/reference/practice/formula-reference.html#group_aggregate) function in the [Formula function reference]({{site.baseurl}}/reference/formula-reference.html).
 
 * To learn about aggregation formulas in general, see
 [Overview of aggregate formulas](aggregation-formulas.html#) and
 [Group aggregation functions](about-pinned-measures.html#)
+
+* To learn about how the `group-aggregate` function can be used within your business practice, we encourage you to see [Reaggregation scenarios in practice]({{site.baseurl}}/reference/practice/reaggregation-scenarios.html)
