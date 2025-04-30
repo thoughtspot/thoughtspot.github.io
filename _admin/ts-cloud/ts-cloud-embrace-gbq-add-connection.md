@@ -28,8 +28,6 @@ To connect to BigQuery:
     3. At the Google account sign-in screen, select your Google account.
     4. Allow thoughtspot.com access to your Google account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
-        Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
-
    For service account authentication, do the following:
    - Enter Project id, and Service account.
      ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails-serv-acct.png "Enter connection details")
@@ -38,9 +36,9 @@ To connect to BigQuery:
     Refer to the [BigQuery connection reference]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-reference.html#) for more information on each of the specific attributes you must enter for your connection.
 
 5. (Optional) Provide additional key-value pairs that you need to set up your connection to BigQuery, by doing the following:
-    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-    2. Enter your key and value information.
-    3. To add more keys and values, click the plus sign (+), and enter them.
+- Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+- Enter your key and value information.
+- To add more keys and values, click the plus sign (+), and enter them.
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your BigQuery data source. Key-value pairs are case-sensitive." %}
 

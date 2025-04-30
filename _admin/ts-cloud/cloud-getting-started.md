@@ -6,15 +6,6 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-## Supported regions
-ThoughtSpot Cloud is now available in the following regions:
-* US East
-* US West
-* Sydney 
-* Ireland
-* Frankfurt
-* Singapore
-
 ## Requirements
 
 - Outbound port 443 must be open.

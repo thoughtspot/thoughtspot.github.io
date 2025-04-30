@@ -49,7 +49,4 @@ To share an Answer from within the Answer, follow these steps.
 
 5. [Specify permissions.](#specify-permissions)
 
-{: id="specify-permissions"}
-## Specify permissions
-
 {% include content/share-answersandpinboards-specify-permissions.md %}

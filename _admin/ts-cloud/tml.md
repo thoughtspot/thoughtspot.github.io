@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 3/24/2021
+last_updated: 2/12/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -41,7 +41,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
 Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
 
-{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
+{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>worksheet_guid</em>&gt;
@@ -159,7 +159,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
 Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
 
-{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
+{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>view_guid</em>&gt;
@@ -278,6 +278,8 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#columns">columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#db_column_name">db_column_name</a>: &lt;<em>database_column_name</em>&gt;
+    <a href="#is_primary_key">is_primary_key</a>: [true | false]
+    <a href="#is_foreign_key">is_foreign_key</a>: [true | false]
     <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
     <a href="#properties">properties</a>:
       <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
@@ -312,8 +314,6 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
         - region_name : &lt;<em>region_name_in_UI</em>&gt;
       <a href="#spotiq_preference">spotiq_preference</a>: &lt;<em>spotiq_preference_string</em>&gt;
       <a href="#search_iq_preferred">search_iq_preferred</a>: [ true | false ]
-    <a href="#db_column_properties">db_column_properties</a>:
-      <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
   - <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
   <a href="#joins_with">joins_with</a>:
@@ -389,12 +389,7 @@ Table joins have the following limitations:
 - You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
 
-### Generic joins
-The functionality for generic joins in TML files allows the following elements:
-* Constants: int, double, bool, date, and string
-* Comparison operators: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, and <code>&gt;=</code>
-* Columns
-* Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code>
+{% include note.html content="Table join functionality is in Beta; to enable it, contact ThoughtSpot Support." %}
 
 {: id="syntax-answers"}
 ##  Syntax of the Answer TML file
@@ -404,6 +399,8 @@ The `TML` file for Scriptable Answers has a specific syntax.
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TML file to specify conditional formatting.
+
+{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>answer_guid</em>&gt;
@@ -509,28 +506,20 @@ You may not see each of these parameters in your own TML files, depending on whe
     This is a multi-line description of the pinboard
     Description line 2
   <a href="#visualizations">visualizations</a>:
-  - <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
-    <a href="#answer">answer</a>:
+  - <a href="#answer">answer</a>:
     This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="#syntax-answers">Answer syntax</a> section above.
-  - <a href="#id">id</a>: &lt;<em>viz_id_2</em>&gt;
-    <a href="#answer">answer</a>:
+    <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
+  - <a href="#answer">answer</a>:
     This section includes all the Answer specification for a second visualization. In this case, the visualization is a headline.
+    <a href="#id">id</a>: &lt;<em>viz_id_2</em>&gt;
     <a href="#display_headline_column">display_headline_column</a>: &lt;<em>headline_column</em>&gt;    
   <a href="#filters">filters</a>:
-    - <a href="#column">column</a>:
-      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">primary_filter</a>_column_name_1</em>&gt;
-      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_2</em>&gt;
-      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_n</em>&gt;
-      <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
-      <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
-      - value 1
-      - value 2
-      - value n
-      <a href="#excluded_visualizations">excluded_visualizations</a>:
-      - <a href="#id">excluded_viz_id_1</a>
-      - <a href="#id">excluded_viz_id_2</a>
-    - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
-    <em>...</em>
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
+    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+    - value 1
+    - value 2
+  - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
   <a href="#layout">layout</a>:
     tiles:
     - <a href="#visualization_id">visualization_id</a>: &lt;<em>visualization_id_1</em>&gt;
@@ -597,7 +586,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="column">
     <dt>column</dt>
-    <dd>The id of the column(s) being filtered on. When a Pinboard contains <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked filters</a>, or filters that affect visualizations based on more than one Worksheet, the primary filter column appears first in the list of columns in the TML. The linked filter column appears after the primary filter column.</dd>
+    <dd>The id of the column being filtered on.</dd>
   </dlentry>
 
   <dlentry id="columns">
@@ -630,7 +619,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="connection">
     <dt>connection</dt>
-    <dd>A way to identify the external data warehouse connection that the table resides in. To add tables or columns to an Embrace connection, you must specify this parameter.</dd>
+    <dd>A way to identify the external data warehouse connection that the table resides in.</dd>
   </dlentry>
 
   <dlentry id="currency_type">
@@ -664,12 +653,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="db_column_name">
     <dt>db_column_name</dt>
-    <dd>The name of the column in the database. Note that this database is not the same as the data warehouse (Amazon Redshift or Snowflake, for example).</dd>
-  </dlentry>
-
-  <dlentry id="db_column_properties">
-    <dt>db_column_properties</dt>
-    <dd>The properties of the column in the database. Note that this database is not the same as the data warehouse (Amazon Redshift or Snowflake, for example).</dd>
+    <dd>The name of the column in the database. Note that this database is not the same as the data warehouse (Falcon, Amazon Redshift, or Snowflake, for example).</dd>
   </dlentry>
 
   <dlentry id="db_table">
@@ -696,11 +680,6 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dt>display_headline_column</dt>
     <dd>If the visualization is a headline, this parameter specifies the column the headline comes from.</dd>
   </dlentry>
-
-  <dlentry id="excluded_visualizations">
-  <dt>excluded_visualizations</dt>
-  <dd>A list of visualizations the Pinboard editor chose to exclude from the filter. Only appears when using <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective filters</a>.</dd>
-</dlentry>
 
   <dlentry id="expr">
     <dt>expr</dt>
@@ -821,6 +800,16 @@ You may not see each of these parameters in your own TML files, depending on whe
     Default: <code>false</code></dd>
   </dlentry>
 
+  <dlentry id="is_primary_key">
+    <dt>is_primary_key</dt>
+    <dd>Determines if the table column is the primary key. Can be <code>true</code> or <code>false</code>.</dd>
+  </dlentry>
+
+  <dlentry id="is_foreign_key">
+    <dt>is_foreign_key</dt>
+    <dd>Determines if the table column is the foreign key. Can be <code>true</code> or <code>false</code>.</dd>
+  </dlentry>
+
   <dlentry id="join">
     <dt>join</dt>
     <dd>Specific join, used in defining higher-level objects, such as table paths<br>
@@ -847,7 +836,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="joins">
     <dt>joins</dt>
     <dd><p>Contains a list of joins between the tables and Views.</p>
-    <p>If you edit the joins in the Worksheet or View TML file, you are only editing the joins for that specific Worksheet or View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file.</p>
+    <p>If you edit the joins in the Worksheet or View TML file, you are only editing the joins for that specific Worksheet or View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it.</p>
     <p>Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>

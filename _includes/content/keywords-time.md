@@ -32,16 +32,16 @@
          </td>
       </tr>
       <tr>
-         <td>last <i>n</i> minutes</td>
+         <td><i>n</i> minutes</td>
          <td>
-            <code>count visitors <b>last 30 minutes</b>
+            <code>count visitors last <b>30 minutes</b>
             </code>
          </td>
       </tr>
       <tr>
-         <td>last <i>n</i> hours</td>
+         <td><i>n</i> hours</td>
          <td>
-            <code>count visitors <b>last 12 hours</b>
+            <code>count visitors last <b>12 hours</b>
             </code>
          </td>
       </tr>

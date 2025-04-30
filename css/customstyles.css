@@ -16,14 +16,6 @@ div#unibox-suggest-box {
   padding: 0px !important;
 }
 
-summary {
-  display: list-item !important;
-}
-
-summary:focus {
-  outline: 0 !important;
-}
-
 body {
 
       /*background-image: url(/images/draft-orig.png);
@@ -1525,29 +1517,7 @@ img.inline {
     display: inline;
 }
 
-/* new button styles for TS ui buttons */
 
-kbd-2 {
-    padding: 2px 4px;
-    font-size: 100%;
-    color: #fff;
-    background-color: #2770F1;
-    border-radius: 3px;
-    -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 25%);
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 25%);
-    border-radius: 10px;
-}
-
-kbd-3 {
-    padding: 2px 4px;
-    font-size: 100%;
-    color: #000000;
-    background-color: #eaedf2;
-    border-radius: 3px;
-    -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 25%);
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 25%);
-    border-radius: 10px;
-}
 
 /* BEGIN Localized keywords CSS */
 

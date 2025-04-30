@@ -14,23 +14,17 @@ To connect to Snowflake:
      <!-- ![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
 3. Create a name for your connection, a description (optional), then select the Snowflake connection type, and click **Continue**.
-
      ![Add a Snowflake connection]({{ site.baseurl }}/images/embrace-snowflake-connection-type-ts-cloud.png "Add a Snowflake connection")
 
 4. Enter the connection details for your Snowflake data source using either OAuth or service account authentication:
 
-   ThoughtSpot supports <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>, but not External OAuth.
-
    For OAuth authentication, do the following:
-
     1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
     2. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
     3. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
     4. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
-
-        Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
 
    For service account authentication, do the following:
    - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
@@ -40,11 +34,11 @@ To connect to Snowflake:
 
 5. (Optional) Provide additional key-value pairs that are required to set up your connection to Snowflake, by doing the following:
 
-    1. Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
-    2. Enter your key and value information.
-    3. To add more keys and values, click the plus sign (+), and enter them.
+   - Click the **Advanced Config** menu to reveal the **Key** and **Value** fields.
+   - Enter your key and value information.
+   - To add more keys and values, click the plus sign (+), and enter them.
 
-    {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
+     {% include note.html content="Any key-value pairs that you enter must be defined in your Snowflake data source. Key-value pairs are case-sensitive." %}
 
 6. Click **Continue**.   
 

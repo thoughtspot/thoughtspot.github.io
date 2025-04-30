@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts7.april.cl
+  docversion: ts7.feb.cl
   # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
@@ -25,12 +25,6 @@ entries:
     sectionitems:
     - title: Release notes
       url:  /release/notes.html
-      output: web
-    - title: Free Trial
-      url:  /release/free-trial.html
-      output: web
-    - title: Accessibility
-      url:  /release/accessibility.html
       output: web
   - sectiontitle: Getting started
     output: web,ugBk
@@ -76,9 +70,6 @@ entries:
         output: web
       - title: Search Data
         url: /end-user/search/search-data.html
-        output: web
-      - title: New Answer experience
-        url: /admin/ts-cloud/new-answer-experience.html
         output: web
       - title: Get started
         url: /admin/ts-cloud/business-user-get-started.html
@@ -284,15 +275,6 @@ entries:
       - title: Managing authentication with SAML
         url: /admin/ts-cloud/authentication-integration.html
         output: web
-      - title: Sync users and groups from LDAP
-        url: /admin/setup/sync-users-and-groups-from-ldap.html
-        output: web
-      - title: Search and SpotIQ settings
-        url: /admin/ts-cloud/search-spotiq-settings.html
-        output: web
-      - title: Email and onboarding settings
-        url: /admin/ts-cloud/onboarding-email-settings.html
-        output: web
       - title: Scheduled maintenance
         url: /admin/ts-cloud/scheduled-maintenance.html
         output: web
@@ -301,12 +283,6 @@ entries:
         output: web
       - title: Help customization
         url: /admin/ts-cloud/customize-help.html
-        output: web
-      - title: Enable a PrivateLink for Snowflake
-        url: /admin/ts-cloud/private-link-snowflake.html
-        output: web
-      - title: Enable a PrivateLink for Redshift
-        url: /admin/ts-cloud/private-link-redshift.html
         output: web
       - title: Performance tracking Pinboard
         url: /admin/ts-cloud/performance-tracking.html
@@ -317,96 +293,6 @@ entries:
       - title: ThoughtSpot use agreement
         url: /admin/ts-cloud/use-agreement.html
         output: web
-    - levelTwoTitle: Developers
-      output: web
-      levelTwoItems:
-      - title: For Developers
-        url: /admin/ts-cloud/developer-user.html
-        output: web
-      - title: Embedded Analytics
-        url: /admin/ts-cloud/intro-embed.html
-        output: web
-      - title: Integration guidelines
-        url: /admin/ts-cloud/integration-overview.html
-        output: web
-      - title: ThoughtSpot Developer portal
-        url: /admin/ts-cloud/spotdev-portal.html
-        output: web
-      - title: Security settings for embedding
-        url: /admin/ts-cloud/security-settings.html
-        output: web
-      - levelThreeTitle: Authentication methods
-        output: web
-        levelThreeItems:
-        - title: Configure SAML SSO authentication
-          url: /admin/ts-cloud/configure-saml-spotdev.html
-          output: web
-        - title: Configure trusted authentication
-          url: /admin/ts-cloud/trusted-authentication.html
-          output: web
-      - levelThreeTitle: Visual Embed SDK
-        output: web
-        levelThreeItems:
-        - title: Visual Embed SDK overview
-          url: /admin/ts-cloud/visual-embed-sdk.html
-          output: web
-        - title: Get started with Visual Embed SDK
-          url: /admin/ts-cloud/get-started-sdk.html
-          output: web
-        - title: Embed search
-          url: /admin/ts-cloud/embed-search.html
-          output: web
-        - title: Embed a pinboard
-          url: /admin/ts-cloud/embed-pinboard-sdk.html
-          output: web
-        - title: Embed a visualization
-          url: /admin/ts-cloud/embed-a-visualization.html
-          output: web
-        - title: Embed full application
-          url: /admin/ts-cloud/full-app-embed.html
-          output: web
-      - levelThreeTitle: REST APIs
-        output: web
-        levelThreeItems:
-        - title: About REST APIs
-          url: /admin/ts-cloud/about-rest-apis.html
-          output: web
-        - title: Get started with REST APIs
-          url: /admin/ts-cloud/rest-api-getstarted.html
-          output: web
-        - title: Make a REST API call
-          url: /admin/ts-cloud/calling-rest-api.html
-          output: web
-        - title: Embed data using REST APIs
-          url: /admin/ts-cloud/embed-rest-api.html
-          output: web
-        - title: Push data to an external application
-          url: /admin/ts-cloud/push-data-to-external-app.html
-          output: web
-        - title: API response pagination
-          url: /admin/ts-cloud/response-pagination.html
-          output: web
-      - levelThreeTitle: Runtime Filters
-        output: web
-        levelThreeItems:
-        - title: About Runtime Filters
-          url: /admin/ts-cloud/about-runtime-filters.html
-          output: web
-        - title: Apply a Runtime Filter
-          url: /admin/ts-cloud/apply-runtime-filter.html
-          output: web
-        - title: Runtime Filter Operators
-          url: /admin/ts-cloud/runtime-filter-operators.html
-          output: web
-      - levelThreeTitle: Customize embedded content
-        output: web
-        levelThreeItems:
-        - title: Customize styles for the embedded content
-          url: /admin/ts-cloud/customize-style-spotdev.html
-          output: web
-        - title: Add custom actions
-          url: /admin/ts-cloud/customize-actions-spotdev.html
-          output: web
   - sectiontitle: Search
     output: web,ugBk
     sectionitems:
@@ -605,9 +491,6 @@ entries:
       - title: Hide and show values
         url: /end-user/search/hide-and-show-values.html
         output: web,ugBk
-      - title: Charts and tables with a very large number of data values
-        url: /end-user/search/high-cardinality.html
-        output: web,ugBk
       - title: Change chart colors
         url: /end-user/search/change-chart-colors.html
         output: web,ugBk
@@ -737,33 +620,12 @@ entries:
     - title: "SpotIQ analysis"
       url: /spotiq/customization.html
       output: web,ugBk
-#    - title: "Monitor time series charts"
-#      url: /admin/ts-cloud/monitor.html
-#      output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
 #      output: web,ugBk
 #    - title: "SpotIQ preferences"
 #      url: /spotiq/spotiq-preferences.html
 #      output: web,ugBk
-  - sectiontitle: Mobile
-    output: web,ugBk
-    sectionitems:
-    - title: Overview
-      url: admin/mobile/use-mobile.html
-      output: web,ugBk
-    - title: Deploy
-      url: admin/mobile/deploy-mobile.html
-      output: web,ugBk
-    - title: Install and set up
-      url: admin/mobile/install-mobile.html
-      output: web,ugBk
-    - title: FAQ
-      url: admin/mobile/faq-mobile.html
-      output: web,ugBk
-    - title: Release notes
-      url: admin/mobile/notes-mobile.html
-      output: web,ugBk
   - sectiontitle: Work with data
     output: web,ugBk
     sectionitems:
@@ -817,6 +679,9 @@ entries:
     sectionitems:
     - title: Introduction to administration
       url: /admin/intro.html
+      output: web,admBk
+    - title: Sign-in credentials for administration
+      url: /admin/setup/logins.html
       output: web,admBk
 #    - levelTwoTitle: Understand the architecture
 #      output: web,admBk
@@ -1352,20 +1217,17 @@ entries:
     - levelTwoTitle: API reference
       output: web,refGd
       levelTwoItems:
-      - title: Rest API reference
-        url: /reference/api/rest-api-reference.html
+      - title: Public API reference
+        url: /reference/api/public-api-reference.html
         output: web,refGd
       - title: Pinboard Data API
         url: /reference/api/pinboarddata.html
         output: web,refGd
-      - title: Pinboard Export API
-        url: /reference/api/pinboard-export-api.html
+      - title: Pinboard Download API
+        url: /reference/api/pinboard-download-api.html
         output: web,refGd
       - title: Metadata API
         url: /reference/api/metadata-api.html
-        output: web,refGd
-      - title: TML API
-        url: /reference/api/tml-api.html
         output: web,refGd
       - title: Session API
         url: /reference/api/session-api.html
@@ -1378,6 +1240,9 @@ entries:
         output: web,refGd
       - title: Search Data API
         url: /reference/api/search-data-api.html
+        output: web,refGd
+      - title: Using the JavaScript API
+        url: /reference/api/about-JS-api.html
         output: web,refGd
     - title: Glossary
       url: /reference/glossary.html

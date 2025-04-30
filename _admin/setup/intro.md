@@ -18,7 +18,10 @@ some common problems, finding additional resources, and contacting ThoughtSpot.
 {: id="display-current-config"}
 ## Display your current configuration
 
-1. Log in to the shell as a ThoughtSpot administrator.
+To perform the setup and configuration, you must first learn how to [gain
+administrative access]({{ site.baseurl }}/admin/setup/logins.html).
+
+1. Log in to the ThoughtSpot cluster as the `admin` user.
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```

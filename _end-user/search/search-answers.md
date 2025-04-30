@@ -1,6 +1,6 @@
 ---
 title: ["Search Answers"]
-last_updated: 4/6/2021
+last_updated: 1/22/2021
 summary: "You search existing Answers and Pinboards to get correct information."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,7 +17,7 @@ Search Answers eliminates redundant work of constructing new Answers and Pinboar
 
 ![]({{ site.baseurl }}/images/search-answers.png "Search across existing Answers")
 
-1. To search Answers and Pinboards, toggle the **Search type** icon to **Search Answers** at the top right, next to the search bar: ![]({{ site.baseurl }}/images/search-toggle-answers.png){: .inline}. ThoughtSpot remembers your choice across sessions when you switch between <strong>Search Answers</strong> and <strong>Search Data</strong>.
+1. To search Answers and Pinboards, toggle the **Search type** icon to **Search Answers** at the top right, next to the search bar: ![]({{ site.baseurl }}/images/search-toggle-answers.png){: .inline}.
 
 2. You can select a specific Worksheet from the **Sources** dropdown to the left of the search bar. By default, you search across all Worksheets for which you have access.
 
@@ -60,7 +60,7 @@ Let us consider the `sales in the last year` example. This search returns matche
    - **Grouped by** fields
    - **Filtered by** fields
 
-2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filter by**, and **Group by**. For Pinboard results, the **Details** panel lists **Frequent Metrics** and **Frequent Groupings** for that Pinboard. You can determine if a Pinboard search result is useful for you based on the metrics and attributes used most often in that Pinboard.
+2. Notice that the right side of the interface also reports key data for the selected artifact: title, the Pinboard where it is found,  **Metrics**, **Filter by**, and **Group by**.
 
 3. To see how the Answer appears as a chart, a table, or headline, click **Preview**, and notice the detail in the graph.
 

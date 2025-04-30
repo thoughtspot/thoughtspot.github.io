@@ -1,11 +1,27 @@
 ---
 title: [ThoughtSpot One home page]
 summary: "Learn about the ThoughtSpot One home page, where you can search across your company's existing Answers and Pinboards and access trending objects, your recently viewed objects, and your favorites."
-last_updated: 3/12/2021
+last_updated: 1/22/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-{% include content/ts-one-homepage.md %}
+
+When you log into ThoughtSpot, you see the ThoughtSpot home page. It is accessible when you select **Home** or the ThoughtSpot logo from the top navigation bar.
+
+The ThoughtSpot home page allows you to access all your essential actions as a business user. From the home page, you can:
+
+- [Search across existing Answers and Pinboards](#search-existing)
+- [Search your data to create new Answers and Pinboards](#search-data)
+- [Access and create shortcuts for your most-used Answers and Pinboards](#quick-links)
+- [View objects you viewed recently](#recently-viewed)
+- [View trending Pinboards and Answers](#trending)
+- [Filter existing objects by favorite, author, tag, or type of object](#filter)
+- [Sort existing objects by author, views, or most recently viewed](#sort)
+- [Bulk mark objects as favorites](#bulk-favorite)
+
+![ThoughtSpot One home page]({{ site.baseurl }}/images/thoughtspot-one-homepage.png "ThoughtSpot One home page")
+
+{% include note.html content="ThoughtSpot One may be off in your environment. If ThoughtSpot One is off, you do not have the option to search across existing Answers and Pinboards, and  you do not have the home page described in this article. To enable ThoughtSpot One, contact ThoughtSpot Support." %}
 
 {: id="search-existing"}
 ## Search across existing Answers and Pinboards
@@ -24,19 +40,19 @@ To search your data, either click on the **Search** tab from the top navigation 
 See [Searching data]({{ site.baseurl }}/end-user/search/search-data.html) for more information on searching your data.
 
 {: id="quick-links"}
-## Access and create shortcuts to your most-used Answers and Pinboards
+## Access and create quick links to your most-used Answers and Pinboards
 When you first view the ThoughtSpot home page, you can see a row of empty cards for quick links just below the Search bar. Use these cards to create shortcuts for Answers or Pinboards you reference often.
 
-To create shortcuts, follow these steps:
+To create shortcut cards, follow these steps:
 
-1. Click **Add new shortcut** from the end of the row of existing shortcuts.<br>
-    You may need to use the right arrow button to get to the **Add new shortcut** option, if you already have several shortcuts.
+1. Click **Add New Card** from the end of the row of existing shortcuts.<br>
+    You may need to use the right arrow button to get to the **Add New Card** option, if you already have several shortcuts.
 
-2. The **Add a new shortcut** window modal appears, filtered to show your favorites. To search among your favorites for the Answer or Pinboard you would like to add, use the search bar at the top right of the shortcut window.
+2. The **Add a new card** window modal appears, filtered to show your favorites.
 
-3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**. To search among these objects, use the search bar at the top right of the shortcut window.
+3. To choose from all Answers and Pinboards you have access to, select **All** next to **My Favorites**.
 
-4. Select an object, and click **Add**. The shortcut window only shows 9 objects per page. To find an object not on the first page, use the search bar, or scroll down and select **Next** at the bottom right of the modal.
+4. Select an object, and click **Add**. The modal only shows 9 objects per page. To find an object not on the first page, scroll down and select **Next** at the bottom right of the modal.
 
 Note that you can only add one object shortcut at a time. You can have up to 20 Answer and Pinboard shortcuts on the ThoughtSpot home page.
 
@@ -82,14 +98,3 @@ These changes do not persist across sessions. If you log out and log back in, th
 {: id="bulk-favorite"}
 ## Bulk mark objects as favorites
 To bulk mark objects as favorites, select the empty boxes next to the object names, and select **Mark as favorite** near the top of the page, under the row of shortcuts. You can also favorite each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar. Select **Mark as favorite**.
-
-{: id="bulk-share"}
-## Bulk share objects with other users and groups
-To bulk share the objects that appear on your home page with other users and groups, follow these steps:
-
-1. Select the empty boxes next to the names of the objects you would like to share.
-    Alternatively, you can select each object on the page, by selecting the empty box next to the word **Name** at the top left of the screen, under the filter bar.
-
-2. Select **Share** ![sharing icon]({{ site.baseurl }}/images/icon-share-10px.png "sharing-icon"){: .inline}, above the list of objects.
-
-{% include content/share-answersandpinboards-specify-permissions.md %}

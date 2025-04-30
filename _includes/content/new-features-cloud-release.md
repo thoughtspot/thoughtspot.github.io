@@ -1,111 +1,91 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
 <ul>
-<li><a href="{{ site.baseurl }}#april-cloud-analyst">For the Analyst</a></li>
-<li><a href="{{ site.baseurl }}#april-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#april-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
-<li><a href="{{ site.baseurl }}#april-cloud-developer">For the Developer</a></li>
+<li><a href="{{ site.baseurl }}#feb-cloud-analyst">For the Analyst</a></li>
+<li><a href="{{ site.baseurl }}#feb-cloud-business-user">For the Business User</a></li>
+<li><a href="{{ site.baseurl }}#feb-cloud-data-engineer">For the Data Engineer</a></li>
+<li><a href="{{ site.baseurl }}#feb-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
 </ul>
 
-<h3><a id="april-cloud-analyst"></a>For the Analyst</h3>
+<h3><a id="feb-cloud-analyst"></a>For the Analyst</h3>
 
 <dl>
-
-<dlentry id="scriptability">
-<dt>Scriptability</dt>
-<dd>There are several enhancements to the <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a> feature:
-<ul><li><strong>Support for selective and linked filters:</strong> You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
-<li><strong>Add tables and columns to an Embrace connection (GA):</strong> ThoughtSpot now allows you to use TML to edit tables created through <a href="{{ site.baseurl }}/admin/ts-cloud/embrace.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. This feature is now GA and on by default. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection.</li>
-</ul>
+  <dlentry id="scriptability">
+    <dt>Scriptability</dt>
+    <dd><ul><li><p>You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.</p>
+    <p>This feature is in Beta. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></li>
+    <li><strong>Export custom SpotApps</strong>: Support for custom SpotApp export is now GA and on by default. You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</li></ul>
 </dd></dlentry>
 
-<dlentry id="query-dashboard">
-<dt>Enhancements to the Search on Answers Pinboard</dt>
-<dd>The <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Search on Answers Pinboard</a> contains several new or updated visualizations, including <strong>Top search queries on existing Answers</strong>, <strong>Position at which users are clicking</strong>, and <strong>What results users are finding useful with autocomplete suggestions</strong>. These new visualizations provide more information about click position, what information users look for, and what information they cannot find. You can also view the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html#best-practices">best practices</a> for this Pinboard.
+ <dlentry id="simplified-join-creation">
+  <dt>Simplified join creation</dt>
+  <dd>This release makes creating and editing joins from a table more flexible and intuitive. Our new joins interface allows you to define and edit the join type and cardinality at the table level, where previously this was only possible at the Worksheet level. Refer to <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html#table-join">Table joins</a>.
 </dd></dlentry>
+
+<dlentry id="pinboard-download-api">
+  <dt>Pinboard Download API</dt>
+  <dd>Use the new Pinboard Download API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>.
+</dd></dlentry>
+
+<dlentry id="spotiq-analyze">
+  <dt>Support for SpotIQ Analyze</dt>
+  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a>.</p></dd></dlentry>
 
 </dl>
 
-<h3><a id="april-cloud-business-user"></a>For the Business User</h3>
+<h3><a id="feb-cloud-business-user"></a>For the Business User</h3>
 
 <dl>
+<dlentry id="home-page-shortcuts">
+<dt>Home page shortcuts</dt>
+<dd><p>You can now create and access quick links to your most-used Answers and Pinboards from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>.</p>
+<p>ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
+</dlentry>
 
-<dlentry id="new-answer-experience">
-<dt>New Answer experience</dt>
-<dd><p>This release redesigns the experience of creating and working with Answers. The new Answer experience contains multiple new features and feature enhancements. It is on by default; you can toggle it on or off from the <strong>Experience manager</strong> in your profile.</p>
-<p>The new Answer experience contains the following features and enhancements: {% include content/new-answer-experience-features.md %}</p>
-<p>{% include content/new-answer-experience-deprecations.md %}</p>
-<p> Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/new-answer-experience">New Answer experience</a> for more information on the behavior of these features.</p>
-
-</dd></dlentry>
-
-<dlentry id="sticky-search-toggle">
-<dt>Sticky Search Answers/ Search Data toggle</dt>
-<dd>This release makes the Search Answers/ Search Data toggle <img src="{{ site.baseurl }}/images/search-toggle-answers.png" alt="search toggle" class="inline"/> sticky. ThoughtSpot now remembers your choice across sessions when you switch between <a href="{{ site.baseurl }}/end-user/search/search-answers.html">Search Answers</a> and <a href="{{ site.baseurl }}/end-user/search/search-data.html">Search Data</a>.</dd></dlentry>
-
-<dlentry id="latency">
-<dt>Improvements in indexing latency for Search Answers</dt>
-<dd>This release improves indexing latency to less than 10 minutes, from 6 hours previously. Now, when you create, modify, or delete a new object, update user permissions, or otherwise make changes within ThoughtSpot, the product reflects these changes within 10 minutes. If you create a new Answer, users can search for and find it 10 minutes after you create it. This indexing improvement is in the process of rollout. If you don’t have it yet, ThoughtSpot will deploy it soon.</dd></dlentry>
-
-<dlentry id="unicode">
-<dt>Unicode support</dt>
-<dd>We added unicode character matching in Search Answers, extending support to all languages and character sets. You can now search all artifacts that use unicode characters in titles, descriptions, metadata, and keywords, and see the correct results.
-
-<img src="/images/search-answers-unicode.png" alt="Search Answers with full unicode support" title="Unicode support">
-</dd>
+<dlentry id="internet-explorer">
+  <dt>Deprecation of Internet Explorer</dt>
+<dd>ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a href="{{ site.baseurl }}/end-user/accessing.html">ThoughtSpot browser access</a> for a list of supported browsers.</dd>
 </dlentry>
 
 </dl>
 
-<h3><a id="april-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+<h3><a id="feb-cloud-data-engineer"></a>For the Data Engineer</h3>
 
 <dl>
-
-<dlentry id="private-link">
-<dt>AWS PrivateLink between ThoughtSpot Cloud and your Snowflake or Redshift data warehouse</dt>
-<dd>To ensure a secure two-way data exchange between your cloud data warehouse and the ThoughtSpot Cloud tenant, you can use an AWS PrivateLink. This option is currently available for your Snowflake or Redshift data warehouse connections. Refer to the <a href="{{ site.baseurl }}/admin/ts-cloud/private-link-redshift.html">Redshift</a> and <a href="{{ site.baseurl }}/admin/ts-cloud/private-link-snowflake.html">Snowflake</a> articles about enabling an AWS PrivateLink.</dd></dlentry>
-
+<dlentry id="embrace">
+<dt>Embrace</dt>
+<dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html">Snowflake</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html">Google BigQuery</a>.</dd>
+<dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html">Passthrough functions for Snowflake</a>.</dd>
+<dd>Embrace now supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd>
+</dlentry>
 </dl>
 
-<h3><a id="april-cloud-developer"></a>For the Developer</h3>
+<h3><a id="feb-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
 <dl>
+<dlentry id="new-region-support">
+<dt>New region support</dt>
+<dd>ThoughtSpot Cloud is now available in the following 2 regions, in addition to US East and West, Sydney, and Ireland:
+<ul><li>Frankfurt</li>
+<li>Singapore</li></ul></dd></dlentry>
 
-<dlentry id="developer-privilege">
-<dt>Developer privilege</dt>
-<dd>You can now grant groups the <a href="{{ site.baseurl }}/end-user/introduction/about-privileges-end-user.html">Developer privilege</a> from the Admin Console, allowing users in those groups to access and use the <a href="{{ site.baseurl }}/admin/ts-cloud/spotdev-portal.html">Developer Portal</a>. In the Developer Portal, users can explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.</dd></dlentry>
-
-<dlentry id="tml-api">
-<dt>TML APIs</dt>
-<dd><p>The new TML APIs enable you to programmatically export, validate, and import scriptable <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html">TML</a> objects. Use these APIs to automate the change management and deployment processes between your development and production environments. With these APIs, analysts can much more easily migrate from one environment to the other by automating the entire change management process, reducing the risk of human error.</p>
-<p>See <a href="{{ site.baseurl }}/reference/api/tml-api.html">TML APIs</a>.</p></dd></dlentry>
-
-<dlentry id="developer-portal">
-<dt>ThoughtSpot Developer portal</dt>
-<dd>ThoughtSpot users with admin or developer privileges can now access the ThoughtSpot Developer portal by clicking the <strong>Develop</strong> tab in the ThoughtSpot application.
-The Developer portal, referred to as <strong>SpotDev</strong> in the earlier release, includes the following enhancements:
+<dlentry id="search-answers-pinboard">
+<dt>Search on Answers Pinboard</dt>
+<dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers Pinboard</a>:
 <ul>
-<li>Playground enhancements<br>The <strong>Playground</strong> page now includes several UI enhancements to improve the interactive coding experience for developers.<ul>
-<li>The <strong>Handle custom actions</strong> checkbox on the <strong>Playground</strong> pages allows you to view the code for the custom action event.</li>
-<li>The <strong>Navigate to URL</strong> checkbox on the <strong>Playground</strong> &gt; <strong>Full app</strong> page allows you to set a URL path to navigate to when the embedded  application loads.</li>
-</ul>
-</li>
-<li>Custom action Configuration<br>You can now configure custom actions for embedded pinboards and visualization pages. You can also set a custom action as a primary menu command, or as a menu item in the <strong>More</strong> menu <img src="{{ site.baseurl }}/images/icon-more-10px.png" alt="the more options menu">.</li>
-<li>Security settings<br>The <strong>Security Settings</strong> page in the developer portal includes the following new features:<ul>
-<li>Users with developer and admin privileges can now add external application domains to the Content Security Policy (CSP) and Cross-Origin Resource Sharing (CORS) whitelist.</li>
-<li>Users with admin privileges can add the SAML redirect domains to the allowed list of domains, and thus provide a seamless login experience for federated users who request access to the embedded ThoughtSpot content.</li>
-<li>Users with admin privileges can enable the trusted authentication method to authenticate ThoughtSpot users who request access to the embedded content.</li>
-</ul>
-</li>
-</ul></dd></dlentry>
+<li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
+<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to contact ThoughtSpot Support to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
+</dlentry>
 
-<dlentry id="visual-embed-sdk">
-<dt>ThoughtSpot Visual Embed SDK enhancements</dt>
-<dd>ThoughtSpot Visual Embed SDK is now available to all external users who want to embed ThoughtSpot content in their application, product, or web page.<br>You can now download the Visual Embed SDK package from the <a href="https://www.npmjs.com/package/@thoughtspot/visual-embed-sdk" target="_blank">NPM site</a> and get started with embedding ThoughtSpot.<br>The new Visual Embed SDK package includes several new enhancements to support user authentication, full application rendition, custom action configuration for embedded pinboards and visualizations, and enumerators for handling the events generated by the embed configuration.
-For more information, see the <a href="https://docs.thoughtspot.com/visual-embed-sdk/release/en/?pageid=js-reference" arget="_blank">ThoughtSpot Developer Documentation</a>.</dd></dlentry>
+<dlentry id="pinboard-download-control">
+<dt>Pinboard download control</dt>
+<dd><p>You can now limit or remove the options ThoughtSpot provides for downloading Pinboards and their visualizations. You can allow users to only download Pinboard visualizations in a specific format (such as .csv), or you can restrict access to downloading Pinboards and their visualizations altogether.</p>
+<p>This is a cluster-level feature. You cannot configure permissions for specific users.</p>
+<p>This is an embed-only feature. To enable this functionality, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+</dlentry>
 
-<dlentry id="session-api-enhancement">
-<dt>Session API enhancement</dt>
-<dd>The session REST API service now includes the <code>/tspublic/v1/session/auth/token</code> API to enable a client application to programmatically obtain an authentication token for a ThoughtSpot  user.<br>To access this API, visit the ThoughtSpot Swagger portal.<br>For more information, see <a href="{{ site.baseurl }}/reference/api/session-api.html">session APIs</a>.</dd></dlentry>
-
+<dlentry id="consumption-based-pricing">
+<dt>Consumption-based pricing</dt>
+<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
+</dlentry>
 </dl>

@@ -13,8 +13,7 @@ On ThoughtSpot Cloud, Embrace supports the following external databases:
 - [Amazon Redshift]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-redshift.html)
 - [Google BigQuery]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq.html)
 - [Azure Synapse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-synapse.html)
-
-{% include note.html content="Oracle Autonomous Data Warehouse is in beta and disabled by default. To enable this feature, contact ThoughtSpot Support." %}
+- [Oracle Autonomous Data Warehouse]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-adw.html)
 
 ## How it works
 
