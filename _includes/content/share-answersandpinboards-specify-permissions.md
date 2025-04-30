@@ -21,9 +21,8 @@
     If the selected group or user does not have access to the underlying data, you must enable access to the worksheet, view, or table. A yellow warning symbol ![]({{ site.baseurl }}/images/icon-warning-yellow-20px.png){: .inline} appears. If you click on it, it tells you to enable access:
 
     ![Enable data access]({{ site.baseurl }}/images/sharing-enabledata.png "Enable data access")
-    <!--{% include image.html file="sharing-enabledata.png" title="Enable data access" alt="ThoughtSpot advises you to enable data access." caption="Enable data access" %}-->
 
-    Refer to [share uploaded data]({{ site.baseurl }}/end-user/data-view/share-user-imported-data.html).
+    If you own the underlying data source, refer to [share uploaded data]({{ site.baseurl }}/end-user/data-view/share-user-imported-data.html). If you do not own the data source, ThoughtSpot sends an email to the owner or your ThoughtSpot administrator to tell them to share the data.
 
 6. To stop sharing with a user or group, click the **x** icon ![]({{ site.baseurl }}/images/icon-delete-20px.png){: .inline}.
 
