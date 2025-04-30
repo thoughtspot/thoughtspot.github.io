@@ -82,7 +82,7 @@ The generated data is displayed back as a table when you run the analysis:
 
 ![]({{ site.baseurl }}/images/r-csv-basic.png)
 
-This basic script returns the exact same table results as if you did the query
+This basic script returns the same table results as if you did the query
 directly in ThoughtSpot and selected the table view, barring some additional
 formatting you get for free on the search.
 

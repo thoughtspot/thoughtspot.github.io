@@ -1,6 +1,5 @@
 ---
 title: [Join a table or view to another data source]
-
 last_updated: 11/3/2018
 summary: "Learn how to define joins between a table or view and another table, view, or worksheet"
 toc: false

@@ -1,7 +1,7 @@
 ---
 title: [Cloud overview]
 
-last_updated: tbd
+last_updated: 1/9/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -11,7 +11,7 @@ ThoughtSpot can currently be deployed in the following cloud provider environmen
 - [Microsoft Azure]({{ site.baseurl }}/appliance/azure/configuration-options.html)
 - [Google Cloud Platform (GCP)]({{ site.baseurl }}/appliance/gcp/configuration-options.html)
 
-The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses. 
+The ThoughtSpot cloud deployment consists of cloud compute (VM) instances and an underlying persistent storage layer. The number of instances required for a cloud deployment is based on the size of the data that needs to be analyzed in ThoughtSpot. The instances act as a distributed cluster of nodes to serve query responses.
 
 | | AWS | Azure | GCP |
 | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ ThoughtSpot recommends following these guidelines to help reduce the cost of you
 
 ### Use small and medium instance types when applicable
 
-For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Advanced lean configuration is required before any data can be loaded onto these instances.
+ThoughtSpot has various instance types to suit your needs. For ThoughtSpot customers who are deploying their instance with lower data sizes (<=100 GB), ThoughtSpot supports “small” (20 GB data) and “medium” (100 GB data) instance types, as provided at the links above, to help reduce the costs of cloud infrastructure. These are instances with lower CPU/RAM sizes (16/32 vCPU and 128 GB/256 RAM). Advanced lean configuration is required before any data can be loaded onto these instances.
 
 Please contact ThoughtSpot support for assistance with this configuration.
 

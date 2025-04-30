@@ -1,12 +1,15 @@
 ---
 title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-last_updated: tbd
+last_updated: 1/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-This page explains how to install a ThoughtSpot cluster in a VMware VSphere
-Hypervisor (ESXi) 6.5 environment.  For each hardware node, you must:
+This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hypervisor (ESXi) 6.5 environment.
+
+{% include note.html content="Older versions of ESXi aren't supported due to hardware/driver incompatibility issues." %}
+
+For each hardware node, you must:
 
 * Complete the prerequisites
 * Use the ThoughtSpot Open Virtualization Format (OVF) file to create
@@ -147,5 +150,3 @@ There is no network at this point on your VMs. As a prerequisite:
 1. Verify that Network Adapter type is set to VMware vmxnet3 (Recommended).
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
-
-After you finish, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.

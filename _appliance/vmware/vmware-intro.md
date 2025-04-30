@@ -2,7 +2,7 @@
 title: [VMware configuration overview]
 
 
-last_updated: tbd
+last_updated: 1/9/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

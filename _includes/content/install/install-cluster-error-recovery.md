@@ -12,8 +12,10 @@ Continuing anyway. Error in cluster config validation: [] is not a valid link-lo
 IPv6 address for node: 0e:86:e2:23:8f:76 Configuration failed.
 Please retry or contact support.
 ```
-Restart the node-scout service with the following command.
+Restart the node-scout service with the following set of commands.
 
+    $ sudo vim /etc/systemd/system/node-scout.service
+    $ sudo systemctl daemon-reload
     $ sudo systemctl restart node-scout
 
 Ensure that you restarted the node-scout by running `sudo systemctl status node-scout`. Your output should specify that the node-scout service is active. It may look something like the following:
