@@ -108,6 +108,8 @@ This example covers user objects (with emails), group objects, and their relatio
 
  Here, `test1` user belongs to two groups - `Customer Success` and `Marketing`. `test2` belongs to the group `Administrator`. `All` is a default group to which every user belongs; you may omit it from the input.
 
+ Set `visibility` to `NON_SHARABLE` if you do not want users to be able to [share objects]({{ site.baseurl }}/admin/users-groups/add-user.html#sharing-visibility) with users in this group.
+
 ```
 [
   { "name": "Customer Success",
