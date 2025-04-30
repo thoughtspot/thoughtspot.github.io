@@ -16,7 +16,7 @@ ThoughtSpot uses a custom image to populate VMs on GCP. The base image is a Cent
 image, which will be available to you in your Google Compute Engine project for
 Boot disk options under Custom Images.
 
-Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project (ThoughtSpot ENG) with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
+Ask your ThoughtSpot liaison for access to this image. We will need the Google account/email ID of the individual who will be logged into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image for creating ThoughtSpot VMs.
 
 ### Overview
 
@@ -27,14 +27,14 @@ In a nutshell, the required configuration ThoughtSpot is:
 
 - 64 vCPU
 - 416 GB RAM
-- 200 GB SSD for the boot disk, provisioned with a ThoughtSpot base image
-- Two 1 TB SSDs for data
+- 250GB SSD for the boot disk, provisioned with a ThoughtSpot base image
+- 2 1TB SSD for data
 
 The following topics walk you through this process.
 
 ###  Create an instance
 
-1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
+1. Log in to the [Google Cloud Console](https://console.cloud.google.com/).
 
 2. Go to the Compute Engine dashboard, and select the associated ThoughtSpot project.
 
@@ -71,11 +71,11 @@ The following topics walk you through this process.
       |------------     | --------------------      |
       | Image           | `ThoughtSpot`             |
       | Boot disk type  | `Standard persistent disk`|
-      | Size (GB)       | `200`                     |
+      | Size (GB)       | `250`                     |
 
       ![]({{ site.baseurl }}/images/gcp-5-boot-disk-config-2018-01-11.png "Change boot disk")
 
-      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the latest one is always at the top of the list. Both will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches."%}
+      {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, the newest one is always at the top of the list. Both will work, but we recommend taking the newer image as it likely includes security or other types of patches."%}
 
       c. Click **Select** to save the boot disk configuration.
 
@@ -84,7 +84,7 @@ The following topics walk you through this process.
 
     ![]({{ site.baseurl }}/images/gcp-6-save-boot-disk-expand-mgmt.png "Advanced disk config")
 
-7.  Attach two 1 TB SSD drives. These drives will be used for the data storage.
+7.  Attach 2 1TB SSD drives. These drives will be used for the data storage.
 
     a. Click the **Disks** tab, and click **Add new disk**.
 
@@ -122,4 +122,3 @@ each VM via SSH as user "admin" and complete the following preparation steps:
 
 Upload the TS tarball to one of the machines and proceed with the normal
 cluster creation process, using [tscli cluster create]({{ site.baseurl }}/reference/tscli-command-ref.html#cluster).
- 

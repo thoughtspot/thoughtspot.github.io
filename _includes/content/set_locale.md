@@ -1,27 +1,26 @@
 The language the ThoughtSpot UI displays is based off of the locale in a user's
-profile. The Preferred Locale preferences controls the language and data formats (date and
+profile. The locale preferences control the language and data formats (date and
 number formats) by geographic locations. In addition to American English (*en-US*),
 ThoughtSpot supports:
 
 | Locale |  Language  
 |---|---|
-| *da-DK* | Dansk  |
+| *da-DK* | Dansk (beta)|
 | *de-DE* | Deutsche  |
-| *en-AU* | English (Australia)  |
 | *en-CA* | English (Canada)  |
 | *en-GB* | English (United Kingdom)  |
 | *en-US* | English (United States)  |
 | *es-US* | Español (latín)  |
-| *es-ES* | Español (España)  |
+| *es-ES* | Español (España - beta)  |
 | *fr-CA* | Français (Canada)  |
 | *fr-FR* | Français (France)  |
-| *it-IT* | Italiano  |
+| *it-IT* | Italiano (beta)  |
 | *nl-NL* | Nederland (beta)  |
-| *nb-NO* | Norsk  |
+| *nb-NO* | Norsk (beta)  |
 | *pt-BR* | Português (Brazil)  |
-| *pt-PT* | Português (Portugal)  |
-| *fi-FI* | Suomi  |
-| *sv-SE* | Svenska  |
+| *pt-PT* | Português (Portugal - beta)  |
+| *fi-FI* | Suomi (beta)  |
+| *sv-SE* | Svenska (beta)  |
 | *zh-CN* | 中文(简体)  |
 | *ja-JP* | 日本語  |
 

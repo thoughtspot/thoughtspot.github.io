@@ -1,7 +1,7 @@
 ---
 title: [Configure NAS file system]
 keywords: tscli, backup, restore
-tags: [networking, tscli, nas]
+tags: [networking, tscli]
 last_updated: tbd
 summary: "You can use network attached storage to support backup/restore and data loading."
 sidebar: mydoc_sidebar

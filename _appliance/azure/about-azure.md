@@ -6,7 +6,7 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Microsoft Azure can provide lots of memory and CPU for your ThoughtSpot instance, and it can
+Azure can provide lots of memory and CPU for your ThoughtSpot instance, and it can
 be easily updated from development instances.
 
 Your database capacity will determine the number of instances you’ll need and the

@@ -1,3 +1,4 @@
+
 <table>
 <colgroup>
    <col style="width:25%" />
@@ -152,17 +153,6 @@
       <td><code>moving_sum</code></td>
       <td>Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1…Current + Num2) with both end points being included in the window. For example, “1,1” will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum.</td>
       <td><code class="highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></td>
-    </tr>
-    <tr>
-      <td><code>rank</code></td>
-      <td>Returns the rank for the current row. Identical values receive an identical rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
-      <td><code class="highlighter-rouge">rank (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank (sum (revenue) , ‘desc' )</code>
-      </td>
-    </tr>
-    <tr>
-      <td><code>rank_percentile</code></td>
-      <td>Returns the percentile rank for the current row. Identical values are assigned an identical percentile rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
-      <td><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'desc' )</code></td>
     </tr>
     <tr>
       <td><code>stddev</code></td>

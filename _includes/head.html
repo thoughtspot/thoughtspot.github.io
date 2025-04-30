@@ -49,10 +49,8 @@
 {% elsif page.url contains site.current_version %}
 <!-- SEO Tools -->
 {% seo %}
-{% elsif page.url == "/" or page.url == "" %}
-<meta name="robots" content="noindex" />
 {% else %}
-{% seo %}
+<meta name="robots" content="noindex" />
 {% endif %}
 
 <!--  Site Search -->
@@ -99,7 +97,7 @@ var ss360Config = {
                 color: "#4E55FD",
                 radius: "0px"
             }
-     },
+        },
         /********* Search Box *********/
         searchBox: {
             text: {

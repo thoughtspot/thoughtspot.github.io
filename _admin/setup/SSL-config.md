@@ -29,6 +29,7 @@ This procedure shows how to add SSL (secure socket layers) to enable secure HTTP
 -   The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN" and "END" directive. It can be a bundle of certificates.
 -   The private key in compatible .PEM format. It should not be password/passphrase protected.
 
+
 **_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
 
 To install the SSL certificate:
@@ -59,27 +60,18 @@ To install the SSL certificate:
 
 ## Set the recommended TLS version
 
-This procedure shows you how to set the recommended TLS version. This helps avoid exposure of your ThoughtSpot service to known vulnerabilities.
+There are a couple of security vulnerabilities due to SSL certificates supporting older versions of TLS (Transport Layer Security). This procedure shows you how to set the recommended TLS version to avoid these vulnerabilities.
 
-The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1. TLS v1.2 is recommended for both. 
+The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1 and recommends TLS v1.2.
 
-ThoughtSpot ships with v1.2 set as default. However, it supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2 and is now set as default. 
+ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2. Therefore, to set the recommended TLS version:
 
-To discover supported TLS versions, log into any ThoguhtSpot node using SSH and issue the following commands.
-    ```
-    tscli ssl set-min-tls-version --help
-    ```
-To change the TLS version, issue the following commands as an example.
+1.  Enable your web browser to support TLS v1.2. This can be done in your browser's advanced settings.
+2.  Log in to the Linux shell using SSH..
+3.  Issue the following command:
 
     ```
-    tscli ssl set-min-version 1.1
+    tscli ssl set-min-version 1.2
     ```
-    
-    This will enable TLS version 1.1 and higher on ThoughtSpot.
 
-## Supported SSL ciphers
-The types of SSL ciphers supported by webserver(s) in your ThoughtSpot instance can be listed by running the following command on any ThoughtSpot node (Not against the load-balancer).
-    ```
-    nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
-    ```
-You will need to ensure that your load-balancer supports these ciphers.
+    This will block all usage of older versions.

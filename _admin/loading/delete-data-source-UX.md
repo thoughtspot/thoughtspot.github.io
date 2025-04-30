@@ -35,9 +35,9 @@ To view dependent objects for a data source:
 ## Delete a data source
 
 You can delete data sources from the browser, as long as they were not created
-by an administrator through `tsload`.
+by an administrator through `tsload` or Data Connect.
 
-You can delete data sources from the browser if they were created in the
+You can delete data sources from the browser if they were created from the
 browser. These types of data sources include:
 
 -   Data imported from the browser.
