@@ -1,6 +1,6 @@
 ---
 title: [Connect with TQL and create a schema]
-
+keywords: tbd
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -11,7 +11,7 @@ To perform administrative tasks directly in the database, you will use the Thoug
 
 ## Connect with TQL
 
-Before connecting with TQL, you need:
+Before connecting with TQL, you will need:
 
 -   Access to your ThoughtSpot instance Linux shell from a client machine.
 -   The administrator OS login.

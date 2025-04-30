@@ -1,7 +1,7 @@
 ---
 title: [Configure load balancing and proxies]
-
-
+tags: [bestpractices]
+keywords: "load balancing, performance"
 last_updated: tbd
 summary: "A load balancer is needed in front of a server group in order to direct traffic to individual servers in a way that maximizes efficiency. "
 sidebar: mydoc_sidebar
@@ -44,3 +44,12 @@ In order for session affinity to work on ThoughtSpot, HTTPS (an SSL certificate)
 You can access ThoughtSpot through any standard web proxy server. Web proxies are fairly universal regardless of the application they are proxying. However, ThoughtSpot doesn't use any new protocols, like SPDY or HTTP/2, which may have a dependency on the proxy. Instead, ThoughtSpot is commonly placed behind a web HTTP/HTTPS proxy.
 
 Additionally, the proxy can round robin across multiple nodes in the ThoughtSpot backend. You can essentially use the web proxy as a load balancer. Therefore, your session will carry over if the proxy round robins between the ThoughtSpot backends as long as the URL doesn’t change.
+
+## Parameters to be set on load balancer devices / application proxy servers
+
+### Maximum size of HTTP POST request
+Some load balancers / proxy solutions impose a default limit on the size of HTTP POST requests. In some cases it can be as low as 1 MB. 
+ThoughtSpot advises it to be set to 50 MB so please configure your device accordingly.
+
+### Encryption cipher suites on load balancer (server side).
+Please see [Supported SSL ciphers]({{ site.baseurl }}/admin/setup/SSL-config.html#supported-ssl-ciphers)

@@ -1,6 +1,6 @@
 ---
-title: [Set up ThoughtSpot in VMware]
-summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
+title: [Set up VMware for ThoughtSpot]
+keywords: vmware, configuration
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -16,24 +16,23 @@ a virtual machine (VM)
 ## Prerequisites
 
 This installation process assumes you have already acquired your host machines.
-You can install on a cluster with any number of nodes. A one node cluster is suitable
-for a sandbox environment but is insufficient for a production environment. You need at least three nodes for high availability (HA), but there is no limit on the number of nodes.
+You can install on a one or three node cluster. A one node cluster is suitable
+for a sandbox environment but is insufficient for a production environment.
 
-1. Make sure you have installed the Hypervisor on each of your nodes.
+1. Make sure you have installed the Hypervisor on each of your three nodes.
 
    The VM template, by default, captures a 72-core configuration. If your
    physical host has more than 72 cores, you may want to edit VM to have (`n-2`)
    cores (for a physical host with n cores) to fully take advantage of computing
    power of the physical host. Extra cores help performance.
-
+   
    You should aim to allocate 490 GB or more RAM.
 
 2. Create datastores for all solid-state drive (SSD) and hard drive devices.
 
 ## Use the OVF to Create a VM
 
-1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
-
+1. Download the `ThoughtSpot OVF` from the **[Downloads page here]({{ site.baseurl }}/release/downloads.html#virutal-and-cloud-platforms)** to a location on an accessible disk.
 2. Log into the ESXi web portal.
 
     ![]({{ site.baseurl }}/images/vmware-login.png "VMWare Login")
@@ -44,15 +43,15 @@ for a sandbox environment but is insufficient for a production environment. You 
 
    ![]({{ site.baseurl }}/images/vmware-ovf.png "ThoughtSpot OVF")
 
-3. Choose the OVF template and click **Next**.
+3. Choose the OVF template and press **Next**.
 
    The system prompts you to select a storage.
 
-4. Choose the SSD as the destination and click **Next**.
+4. Choose the SSD as the destination and press **Next**.
 
    The system displays the **Deployment Options** dialog.
 
-5. Enter the options and click **Next**.
+5. Enter the options and press **Next**.
 
     | Setting                    | Value                                             |
     |----------------------------|---------------------------------------------------|
@@ -60,7 +59,7 @@ for a sandbox environment but is insufficient for a production environment. You 
     | **Disk provisioning**      | Choose Thin.                                      |
     | **Power on automatically** | Check this box.                                   |
 
-6. Review your selection and click **Finish**.
+6. Review your selection and press **Finish**.
 
    ![]({{ site.baseurl }}/images/vmware-complete.png "Complete")
 
@@ -134,7 +133,7 @@ additional, larger capacity disks.
 5. Save your changes.
 6. Repeat steps 1-5 to create more hard disks.
 7. Power on the VM
-8. After the VM is online, run the following command to prepare the HDFS disks:
+8. Once the VM is online, run the following command to prepare the HDFS disks:
 
     ```shell
     sudo /usr/local/scaligent/bin/prepare_disks.sh
@@ -148,4 +147,4 @@ There is no network at this point on your VMs. As a prerequisite:
 2. Verify that all ESXi hosts in your VMware farm for ThoughtSpot have been trunked to the VLAN assigned to your ThoughtSpot VMs.
 3. Verify that the console of all ThoughtSpot VMs is accessible in VMware vCenter Server.
 
-After you finish, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.
+Once done, go to the <a href="http://support.thoughtspot.com">ThoughtSpot Support website</a> and use the support ticket for installation tasks. If necessary, create a new ticket.

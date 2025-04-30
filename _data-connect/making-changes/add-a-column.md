@@ -1,5 +1,6 @@
 ---
 title: [Add a column to an existing data source]
+keywords: tbd
 last_updated: tbd
 summary: "Add a column to an existing data source."
 sidebar: mydoc_sidebar
@@ -28,7 +29,7 @@ The procedure to make this change to an existing data source has two main parts:
     $ tql
     ```
 
-3. Designate the database:
+3. Designate the database you'll be working in:
 
     ```
     TQL> use <database_name>;
@@ -53,7 +54,7 @@ The procedure to make this change to an existing data source has two main parts:
          DEFAULT '';
     ```
 
-    You must use the fully qualified name of the old table when adding the column through TQL. To find that you can look at the DDL for the data source job itself.
+    You must use the fully qualified name of the old table when adding the column via TQL. To find that you can look at the DDL for the data source job itself.
 
 6. Run the `SCRIPT TABLE` command to get the new DDL to create the table.
 

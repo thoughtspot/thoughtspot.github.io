@@ -1,6 +1,6 @@
 ---
 title: [Customize the application style]
-
+keywords: tbd
 last_updated: tbd
 summary: "Style Customization allows you to change the overall style of your ThoughtSpot interface. "
 sidebar: mydoc_sidebar
@@ -39,7 +39,7 @@ To re-brand the interface:
 
      ![]({{ site.baseurl }}/images/style_customization.png "Style Customization menu")
 
-    In the menu page, you can perform the following actions:
+    Once in the menu page, you can:
 
     -   [Upload application logos](upload-application-logos.html#)
     -   [Set chart and table visualization fonts](set-chart-and-table-visualization-fonts.html#)

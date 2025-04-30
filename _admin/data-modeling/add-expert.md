@@ -1,7 +1,8 @@
 ---
 title: ["Manage experts or add an expert"]
-
-last_updated: 09/23/2019
+keywords: searchiq,expert,ask an expert
+tags: [expert,SearchIQ]
+last_updated: tbd
 summary: "You can designate experts for each data source, so users won't get stuck if they need help."
 sidebar: mydoc_sidebar
 toc: true
@@ -10,7 +11,7 @@ permalink: /:collection/:path.html
 
 If your users occasionally struggle to answer a specific question, build a chart you have in mind, or find something in your data, you can enable **Ask an expert**. This lets them request help from someone in your organization.
 
-The request goes to the person in your company who knows the data source very well, and how to search it in ThoughtSpot. When the request is answered, the user will be able to see the result in the **Answers** listing in ThoughtSpot.
+The request will go to the person in your company who best know the data source you're using and how to search it in ThoughtSpot. When the request is answered, the user will be able to see the result in the **Answers** listing in ThoughtSpot.
 
 You can see how an end user experiences **Ask an expert** [here]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
@@ -21,9 +22,9 @@ Adding an expert is what enables **Ask an expert** to work in your ThoughtSpot i
 To add an expert to a data source:
 
 1. Let the expert(s) know to expect user questions to start coming their way in email.
-   If your expert(s) don't have an email in ThoughtSpot, they must [check in ThoughtSpot for requested answers]({{ site.baseurl }}/end-user/search/answer-expert-question.html).
+   If your expert(s) don't have an email in ThoughtSpot, they will need to [check in ThoughtSpot for requested answers]({{ site.baseurl }}/end-user/search/answer-expert-question.html).
 
-2. Click the name of the worksheet or table from the **Data** page.
+2. Click on the name of the worksheet or table from the **Data** page.
 
 3. Click the three dot icon in the upper right side of the page and select **Manage experts**.
 

@@ -1,5 +1,7 @@
 ---
 title: ["Videos"]
+tags: [spotiq]
+keywords: tbd
 toc: false
 last_updated: tbd
 sidebar: mydoc_sidebar
@@ -312,7 +314,7 @@ These videos guide you through key workflows and features on ThoughtSpot. You ma
 
 ## Videos on older releases
 
-In this section, you can find some additional videos that you may find helpful.
+In this section, you'll find some additional videos you may find helpful.
 
 <table padding="1" style="width: 100%; table-layout: fixed;">
    <tbody>
@@ -682,6 +684,6 @@ In this section, you can find some additional videos that you may find helpful.
             <p style="text-align: center;">Scheduled pinboards</p>
          </td>
       </tr>
-
+    
    </tbody>
 </table>

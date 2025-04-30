@@ -1,6 +1,6 @@
 ---
 title: [Delete or change a table in TQL]
-
+keywords: tbd
 last_updated: tbd
 summary: "You can delete a data source in the web browser or using ThoughtSpot SQL Command Line (TQL)."
 sidebar: mydoc_sidebar
@@ -34,7 +34,7 @@ TQL actions with possible dependency consequences include:
 -   Change or add a sharding key.
 -   Drop a table, schema, or database.
 
-When issuing one of the previous commands, you will see a warning message similar to this:
+When issuing one of the above commands, you will see a warning message similar to this:
 
 ```
 TQL> ALTER TABLE table1

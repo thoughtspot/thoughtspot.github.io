@@ -1,54 +1,132 @@
 ---
 title: [AWS configuration options]
-last_updated: 10/09/2019
-summary: "Your instances require specific configurations of memory, CPU, storage, and networking capacity."
+keywords: AWS, configuration
+tags: [performance]
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot can be deployed in your AWS environment by deploying compute (VM) instances in your Amazon VPC as well as an underlying persistent storage infrastructure. Currently two configuration modes are supported by ThoughtSpot:
-- Mode 1: Compute VMs + EBS-only persistent storage
-- Mode 2: Compute VMs + EBS and S3 persistent storage
+ThoughtSpot engineering has performed extensive testing of the ThoughtSpot
+appliance on various Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block
+Store (EBS) configurations for best performance, load balancing, scalability,
+and reliability.
 
-The cost of infrastructure for deploying ThoughtSpot is cheaper when using S3. However, there are differences in where data is loaded, as well as in the backup and restore procedure.  For assistance in choosing the best mode for your organization, contact your ThoughtSpot representative. For more information on purchasing ThoughtSpot on AWS, see: [ThoughtSpot Pricing](https://www.thoughtspot.com/pricing){:target="_blank"}.
+You can find information here on which configuration of memory, CPU, storage,
+and networking capacity you should be running for your instances. There are also
+details on how to configure your placement groups.
 
-All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and therefore, also in the same region). ThoughtSpot does not support deploying VMs in the same cluster across availability zones. For more information, see [Regions and Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html){:target="_blank"} in Amazon's AWS documentation.
-
-{: id="ts-aws-instance-types" }
 ## ThoughtSpot AWS instance types
 
-The following sections contain the supported and recommended instance types for a ThoughtSpot AWS deployment. When setting up your cluster in AWS, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
+<table width="853">
+    <colgroup>
+      <col width="110" />
+      <col width="110" />
+      <col width="110" />
+      <col width="105" />
+      <col width="140" />
+      <col width="95" />
+    </colgroup>
+	<tr>
+      <td><br /></td>
+      <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
 
-For example: If you were deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you would need 4 instances (VMs), because the per-VM user data capacity of that instance type is 250 GB. If you were deploying EBS-only data volumes, you would need 2x1 TB data volumes per VM.
+    </tr>
+    <tr>
+      <td><p dir="ltr"><strong>Data shape</strong></p></td>
+      <td><p dir="ltr"><strong>Total cluster <BR>data size</strong></p></td>
+      <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
+      <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
+      <td><p dir="ltr"><strong>vCPU/RAM</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr">Standard</p>
+        <p dir="ltr">(1KB/row)</p></td>
+      <td><p dir="ltr">Up to 2 TB </p></td>
+      <td><p dir="ltr">250 GB</p></td>
+      <td><p dir="ltr">r4.16xlarge<sup>a</sup></p></td>
+      <td><p dir="ltr">64/488</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-{: id="vm-ebs-only-persistent-storage" }
-### VMs with EBS-only persistent storage
+      <td><p dir="ltr">&gt;2 TB</p></td>
+      <td><p dir="ltr">384 GB (Large)</p></td>
+      <td><p dir="ltr">r5.24xlarge</p></td>
+      <td><p dir="ltr">96/768</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1.5 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-![]({{ site.baseurl }}/images/persistent-storage-ebs.svg "AWS EBS-only Persistent Storage")
+      <td><p dir="ltr">Up to 100 GB</p></td>
+      <td><p dir="ltr">100 GB</p></td>
+      <td><p dir="ltr">r4.8xlarge<sup>b</sup></p></td>
+      <td><p dir="ltr">32/244</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
-| --- | --- | --- |--- |
-| 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 2X 400 GB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 2X 400 GB |
-| 192 GB | m5.24xlarge | 96/384 | 2X 1 TB |
-| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 2x 1 TB |
-| 384 GB | r5.24xlarge | 96/768 | 2X 1.5 TB |
+      <td><p dir="ltr">Up to 20 GB</p></td>
+      <td><p dir="ltr">20 GB</p></td>
+      <td><p dir="ltr">r4.4xlarge<sup>b</sup></p></td>
+      <td><p dir="ltr">16/122</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
 
-{: id="vm-ebs-s3-persistent-storage"}
-### VMs with EBS and S3 persistent storage
+      <td><p dir="ltr">Thin rows</p>
+        <p dir="ltr">(&lt;300 bytes/row)</p></td>
+      <td><p dir="ltr">Any</p></td>
+      <td><p dir="ltr">192 GB</p></td>
+      <td><p dir="ltr">m5.24xlarge</p></td>
+      <td><p dir="ltr">96/384</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+	<tr>
 
-![]({{ site.baseurl }}/images/persistent-storage-ebs-s3.svg "AWS EBS and S3 Persistent Storage")
+      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/5.2/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+       </td>
+    </tr>
+  </table>
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
-| --- | --- | --- |--- |
-| 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 1x 500 GB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 1x 500 GB |
-| 192 GB | m5.24xlarge | 96/384 | 1x 500 GB |
-| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 1x 500 GB |
-| 384 GB | r5.24xlarge | 96/768 | 1x 500 GB |
+## Regions, availability zones, and placement groups
 
-{% include note.html content="The S3 bucket size is approximately equal to the size of the user data." %}
+AWS instances are configured to a location with regard to where the computing
+resources are physically located. You must specify a region, an availability
+zone, and below that, a placement group.
 
-{: id="related"}
+AWS nodes in a ThoughtSpot cluster must be in the same [availability zone](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) (and, therefore, also in the same region).
+
+A [placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
+is a logical grouping of instances _within_ a single availability zone.
+Placement groups are recommended for applications that benefit from low network
+latency, high network throughput, or both.
+
+ThoughtSpot relies on high connectivity between nodes of a cluster, which is why
+creating a placement group is recommended. Being in same placement group will
+give you the best shot at the highest bandwidth across AWS EC2 instances and the
+lowest latencies. This will make the node-node network reach the closest AWS
+promised specs. Our default recommendation for a multi-instance setup requires a
+placement group since it works best for our application performance. Also, AWS
+will provide jumbo frames (9000 MTU) support in such situations, and they don't
+charge extra for being in the same placement group.
+
+Having said that, ThoughtSpot will still work with EC2s in the cluster across
+placement groups in an availability zone.
+
 ## Related information
 
 - [EC2 instance types](https://aws.amazon.com/ec2/instance-types/)

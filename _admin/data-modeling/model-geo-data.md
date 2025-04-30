@@ -1,6 +1,7 @@
 ---
 title: [Add a geographical data setting]
-last_updated: 09/23/2019
+keywords: tbd
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

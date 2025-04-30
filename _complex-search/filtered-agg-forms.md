@@ -1,7 +1,7 @@
 ---
 title: [Filtered aggregation functions]
-
-
+keywords: filter, search, aggregation
+tags: [time,dates]
 last_updated: tbd
 toc: true
 summary: "You can create a filtered aggregation in the search bar."
@@ -59,7 +59,7 @@ ThoughtSpot functional library will include the following functions:
 * `vs`
 * `all`
 
-The following table illustrates some examples of these functions in use:
+The table below illustrates some examples of these functions in use:
 
 <table>
    <colgroup>
@@ -94,7 +94,7 @@ to double-check your work.
 
 ![]({{ site.baseurl }}/images/filtered-agg-forms.png "Filter Aggregation")
 
-After you have aggregated with a filter, you can do further comparisons with the `vs` and `all` keywords.
+Once you have aggregated with a filter, you can do further comparisons with the `vs` and `all` keywords.
 
 ## Using the vs and all keywords
 

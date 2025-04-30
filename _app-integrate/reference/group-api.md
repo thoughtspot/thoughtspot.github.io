@@ -1,6 +1,6 @@
 ---
 title: [Group API]
-
+keywords: REST,API,data,"REST API", group API
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -124,7 +124,7 @@ https://<instance>/callosum/v1/tspublic/v1/group/removeprivilege
 Not applicable
 204 - Success
 ```
-<!--## Error Codes
+## Error Codes
 
 <table>
    <colgroup>
@@ -143,4 +143,4 @@ Not applicable
     <tr> <td><code>10003</code></td>  <td>Authentication token of type could not be authenticated by any configured realms.  Use valid realm that can authenticate these tokens.</td> <td><code>401</code></td></tr>
 
   </tbody>
-</table>-->
+</table>

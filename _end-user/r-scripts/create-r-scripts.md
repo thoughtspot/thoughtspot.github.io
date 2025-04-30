@@ -1,16 +1,17 @@
 ---
 title: [Create and share R scripts]
+tags: [r-scripts,customize]
+keywords: R
 summary: "You can create and share your custom R scripts in ThoughtSpot."
-last_updated: 11/22/2019
+last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 ## Overview
 
-{% include note.html content="Custom R is disabled by default. To turn on custom R scripting, contact your site administrator." %}
-
-Each ThoughtSpot cluster is capable of running an R analysis on your data. To perform your own R analysis, start with a simple search and click the R icon on
+Each ThoughtSpot cluster is capable of running an R analysis on your data. To
+perform your own R analysis, start with a simple search and click the R icon on
 the right.
 
 Use the **Custom R Script** dialog and settings to enter your script, set which
@@ -48,7 +49,7 @@ When the script executes, it passes the information to the server to run the
 analysis, and displays the answer as a visualization, in either PNG or CSV (table)
 format.
 
-As we demonstrate in the following examples, you can chain R analyses together by running
+As shown in the examples below, you can chain R analyses together by running
 another R script on the answer to a previous script.
 
 ## Write a custom script
@@ -122,7 +123,7 @@ You can click these icons in the R script dialog to get more options:
 ![more options menu icon]({{ site.baseurl }}/images/r-icon-i.png){: .inline}
 provides a basic reference guide for creating an R analysis in ThoughtSpot.
 
-* The ellipses icon
+* The ellipses icon 
 ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}
 provides a menu with options to save or load a previously saved R script, as well as
 share your R script with other users in the system.

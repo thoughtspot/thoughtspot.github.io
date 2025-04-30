@@ -1,5 +1,7 @@
 ---
 title: [Best SpotIQ Practices]
+tags: [bestpractices,indexing]
+keywords: SpotIQ,"best practices", invoke, search, measure, attribute, ranking
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -33,7 +35,7 @@ or a data management professional. Modeling data requires that you can:
 
 2. Click a data source you own or can edit.
 
-    This brings up the **Columns** screen, where you can make your modeling settings.
+    This brings up the **Columns** screen, where you'll make your modeling settings.
 
 3. Modify one or more column settings.
 
@@ -74,15 +76,3 @@ exclude nulls or zero value measures from analysis.
 The exclusions impact each SpotIQ analysis. It eliminates points with such
 values during statistical calculations for example, for mean, standard deviation
 SpotIQ excludes values from any equation and uses only the remaining points.
-
-## Prioritizing analyses types
-
-You can prioritize highlighting changes in data over time instead of other changes, such as  outliers or anomalies.
-
-### Columns
-
-When you trigger a SpotIQ analysis on an answer, you can select alternate data columns. To trigger more time-related insights, pick more date-time columns.
-
-### Advanced
-
-In the advanced tab of the SpotIQ dialog, increase the maximum number of trend and correlation insights, and reduce the number of anomaly insights.
