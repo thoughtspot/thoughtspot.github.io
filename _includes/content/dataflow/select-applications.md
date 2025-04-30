@@ -4,16 +4,7 @@
 
 2. On the connection detail page, click **Add table sync**.
 
-    <details>
-    <summary>See how to initiate a new table sync</summary>
-    <p><img src="../../images/dataflow-add-table-sync.png" alt="Add table sync"></p></details>
-
 3. In the **Add table sync** interface, on the database selector, scroll to select and open the source application.
-
-
-   <details>
-     <summary>See how to specify the source application on the connection</summary>
-     <p><img src="../../images/dataflow-select-applications.png" alt="Select application"></p></details>
 
    Note that if you use multiple tables, you have to repeat these steps for each table.
 

@@ -14,12 +14,6 @@ Alternatively, if you click **Save**, the system saves the schedule, but does no
 
 ### Hourly sync
 
-<details>
-  <summary>See the elements of the <em>Hourly scheduling</em> screen</summary>
-  <p>
-    <img src="../../images/dataflow-schedule-hourly.png" alt="Schedule hourly sync" /></p>
-</details>
-
 <dl id="schedule-hourly">
   <dlentry id="schedule-hourly-repeat">
     <dt>Repeat</dt>
@@ -43,12 +37,6 @@ Alternatively, if you click **Save**, the system saves the schedule, but does no
 
 ### Daily sync
 
-<details>
-  <summary>See the elements of the <em>Daily scheduling</em> screen</summary>
-  <p>
-    <img src="../../images/dataflow-schedule-daily.png" alt="Schedule daily sync" /></p>
-</details>
-
 <dl id="schedule-daily">
   <dlentry id="schedule-daily-repeat">
     <dt>Repeat</dt>
@@ -66,12 +54,6 @@ Alternatively, if you click **Save**, the system saves the schedule, but does no
 </dl>
 
 ### Weekly sync
-
-<details>
-  <summary>See the elements of the <em>Weekly scheduling</em> screen</summary>
-  <p>
-    <img src="../../images/dataflow-schedule-weekly.png" alt="Schedule weekly sync" /></p>
-</details>
 
 <dl id="schedule-weekly">
   <dlentry id="schedule-weekly-repeat">
@@ -95,12 +77,6 @@ Alternatively, if you click **Save**, the system saves the schedule, but does no
 </dl>
 
 ### Monthly sync
-
-<details>
-  <summary>See the elements of the <em>Monthly scheduling</em> screen</summary>
-  <p>
-    <img src="../../images/dataflow-schedule-monthly.png" alt="Schedule monthly sync" /></p>
-</details>
 
 <dl id="schedule-monthly">
   <dlentry id="schedule-monthly-repeat">
@@ -133,12 +109,6 @@ Alternatively, if you click **Save**, the system saves the schedule, but does no
 </dl>
 
 ### Does not repeat
-
-<details>
-  <summary>See the elements of the <em>One-time scheduling</em> screen (does not repeat)</summary>
-  <p>
-    <img src="../../images/dataflow-schedule-no-repeat.png" alt="Schedule one-time sync" /></p>
-</details>
 
 <dl id="schedule-no-repeat">
   <dlentry id="schedule-no-repeat">

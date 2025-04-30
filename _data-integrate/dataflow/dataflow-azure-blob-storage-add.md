@@ -13,12 +13,6 @@ Follow these steps:
 
 4. After you select the File **Connection type**, the rest of the connection properties appear.
 
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Azure Blob Storage</summary>
-     <p>
-      <img src="../../images/dataflow-azure-blob-storage-create.png" alt="Add a connection to Azure Blob Storage" /></p>
-   </details>
-
    * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-connection-type)<br/>Choose the Azure Blob Storage connection type.
    * [Account]({{ site.baseurl }}/data-integrate/dataflow/dataflow-azure-blob-storage-reference.html#dataflow-azure-blob-storage-conn-account)<br/>Azure Storage has an address that includes our unique account name which is a combination of the account name and the Azure Storage blob endpoint forms the base address for the objects in your storage account.

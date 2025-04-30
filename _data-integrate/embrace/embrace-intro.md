@@ -1,6 +1,6 @@
 ---
 title: [Embrace overview]
-last_updated: 10/21/2019
+last_updated: 06/18/2020
 toc: true
 summary: "Using Embrace, you can perform live queries on external databases."
 sidebar: mydoc_sidebar
@@ -13,6 +13,8 @@ Embrace supports the following external databases:
 - Amazon Redshift
 - Google BigQuery
 - Microsoft Azure Synapse
+- Teradata
+- SAP HANA <span class="label label-beta">Beta</span>
 
 To enable Embrace, contact ThoughtSpot support.
 
@@ -27,6 +29,8 @@ You create a connection to the external database, choosing the columns from each
 - Connect to multiple external databases.
 
 ## Limitations
+
+{% include important.html content="Embrace does not support joins across connections." %}
 
 ### Feature availability in Embrace
 
@@ -99,11 +103,15 @@ The following matrix compares the specific function support across the different
 <th>Amazon<br />Redshift</th>
 <th>Google<br />BigQuery</th>
 <th>Azure<br />Synapse</th>
+<th>Teradata</th>
+<th>SAP<br />HANA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>SOUNDS_LIKE</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -115,9 +123,13 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE_WITH_CAP</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -129,9 +141,13 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>COUNT_NOT_NULL</code></td>
+<td>&cross;</td>
+<td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
@@ -143,12 +159,16 @@ The following matrix compares the specific function support across the different
 <td>&cross;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&check;</td>
+<td>&cross;</td>
 </tr>
 <tr>
 <td><code>EDIT_DISTANCE</code></td>
 <td>&check;</td>
 <td>&cross;</td>
 <td>&cross;</td>
+<td>&cross;</td>
+<td>&check;</td>
 <td>&cross;</td>
 </tr>
 <tr>
@@ -157,6 +177,8 @@ The following matrix compares the specific function support across the different
 <td>&check;</td>
 <td>&cross;</td>
 <td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
 </tr>
 <tr>
 <td><code>PERCENTILE</code></td>
@@ -164,6 +186,8 @@ The following matrix compares the specific function support across the different
 <td>&check;</td>
 <td>&cross;</td>
 <td>&check;</td>
+<td>&check;</td>
+<td>&cross;</td>
 </tr>
 </tbody>
 </table>
@@ -180,6 +204,8 @@ The following matrix captures the specific data type support limitations across 
       <th>Amazon<br>Redshift</th>
       <th>Google<br>BigQuery</th>
       <th>Azure<br>Synapse</th>
+      <th>Teradata</th>
+      <th>SAP<br>HANA</th>
     </tr>
   </thead>
   <tbody>
@@ -189,6 +215,8 @@ The following matrix captures the specific data type support limitations across 
       <td>&check;</td>
       <td>&check;</td>
       <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
     </tr>
     <tr>
       <td><code>VARBINARY</code></td>
@@ -196,13 +224,8 @@ The following matrix captures the specific data type support limitations across 
       <td>&check;</td>
       <td>&check;</td>
       <td>&cross;</td>
-    </tr>
-    <tr>
-      <td><code>TIMESTAMPTZ</code></td>
       <td>&check;</td>
       <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
     </tr>
     <tr>
       <td><code>GEOMETRY</code></td>
@@ -210,10 +233,14 @@ The following matrix captures the specific data type support limitations across 
       <td>&cross;</td>
       <td>&check;</td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
     </tr>
     <tr>
       <td><code>BYTES</code></td>
       <td>&check;</td>
+      <td>&check;</td>
+      <td>&cross;</td>
       <td>&check;</td>
       <td>&cross;</td>
       <td>&check;</td>
@@ -224,6 +251,8 @@ The following matrix captures the specific data type support limitations across 
       <td>&check;</td>
       <td>&check;</td>
       <td>&cross;</td>
+      <td>&check;</td>
+      <td>&check;</td>
     </tr>
   </tbody>
 </table>
@@ -240,12 +269,6 @@ The following list captures the specific limitations across the different databa
         <dlentry>
           <dt>Sample values</dt>
           <dd>Embrace does not internationalize sample values in tables.</dd></dlentry>
-        <dlentry>
-           <dt>Delayed UI rendering</dt>
-           <dd>For connections with a very large number of tables (on the order of 1000's of tables), UI rendering may take a very long time. These connections may time out.</dd></dlentry>
-        <dlentry>
-          <dt>Deleting columns</dt>
-          <dd>After specifying a connection, columns cannot be deleted from the table. Editing a connection makes it possible to add additional columns, but not to remove them.</dd></dlentry>
       </dl>
     </dd>
   </dlentry>
@@ -267,16 +290,29 @@ The following list captures the specific limitations across the different databa
      <dd>Azure Synapse supports up to 10 <code>IF THEN ELSE</code> statements in a single query.</dd></dlentry>
    <dlentry>
      <dd>Azure Synapse does not support foreign keys, so no PK-FK joins can be defined in Synapse.</dd></dlentry>
-     </dl>     
+  <dlentry>
+     <dt>Teradata</dt>
+     <dd>Teradata does not support the function: <code>AGGREGATE_DISTINCT</code>.</dd>
+     <dd>Teradata does not support the following data types: <code>JSON, INTERVAL, VARBYTE, BLOB, CLOB, PERIOD, XML, GEOSPATIAL</code>.</dd></dlentry>
 
+  <dlentry>
+      <dt>SAP HANA</dt>
+      <dd>SAP HANA does not support the following functions: <code>PERCENTILE, AGGREGATE_DISTINCT, SPELLS_LIKE, EDIT_DISTANCE</code>.</dd>
+      <dd>SAP HANA does not support the following data types: <code>BLOB, CLOB, NCLOB, TEXT, POINT</code>.</dd>
+      <dd>SAP HANA does not support calculation views with mandatory input parameters. If you need to use calculation views in ThoughtSpot, you must remove the mandatory parameter requirement.</dd></dlentry>       
+</dl>
 
 ## Next steps
 
 -   **[Add a Snowflake connection]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Snowflake database.
+Create the connection between ThoughtSpot and tables in a Snowflake database.
 -   **[Add a Redshift connection]({{ site.baseurl }}/data-integrate/embrace/embrace-redshift-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Amazon RedShift database.
+Create the connection between ThoughtSpot and tables in an Amazon RedShift database.
 -   **[Add a BigQuery connection]({{ site.baseurl }}/data-integrate/embrace/embrace-gbq-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Google BigQuery database.
+Create the connection between ThoughtSpot and tables in a Google BigQuery database.
 -   **[Add a Synapse connection]({{ site.baseurl }}/data-integrate/embrace/embrace-synapse-add.html)**  
-Create the connection between ThoughtSpot and tables in an external Azure Synapse database.
+Create the connection between ThoughtSpot and tables in an Azure Synapse database.
+-   **[Add a Teradata connection]({{ site.baseurl }}/data-integrate/embrace/embrace-teradata-add.html)**  
+Create the connection between ThoughtSpot and tables in a Teradata database.
+-   **[Add an SAP HANA connection]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-add.html)**  
+Create the connection between ThoughtSpot and tables in an SAP HANA database.

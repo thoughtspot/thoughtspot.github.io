@@ -1,0 +1,41 @@
+---
+title: [Show data labels]
+last_updated: 7/29/2020
+summary: "You can show and configure data labels for a chart."
+sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
+---
+You can show data labels for [every measure](#labels-all) in your chart, or configure labels [separately for each measure](#labels-one).
+
+{: id="labels-all"}
+## Configure all data labels
+
+To turn on all data labels for a chart, click the **edit chart configuration** ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} icon, and select the **Settings** menu. Select **all labels**. Note that you cannot select **all labels** when you **fit to screen**, unless the visualization does not have enough data points to require a scroll bar, and thus defaults to **fit to screen** mode.
+
+![Configure all data labels]({{ site.baseurl }}/images/chart-config-all-labels.png "Configure all data labels")
+
+To further configure the labels, by showing unrounded numbers for example, [configure labels individually](#labels-one).
+
+{: id="labels-one"}
+## Configure labels for one measure
+
+1. While viewing your search or answer as a chart, click the **chart configuration** icon ![]({{ site.baseurl }}/images/icon-gear-10px.png){: .inline} on the top right.
+
+2. Click on the measure you want to add labels to.
+
+    ![Select a measure]({{ site.baseurl }}/images/chartconfig-reordervalues.png "Select a measure")
+
+3. Check the **data labels** box.<br>
+    Note that only the **total sales** data has labels.
+
+    ![Check the data labels box]({{ site.baseurl }}/images/chartconfig-datalabels.png "Check the data labels box")
+
+4. You can specify a **category**, like *number*, *percentage*, or *currency*. Otherwise, ThoughtSpot automatically picks the best category for your data.
+
+    ![Specify a label category]({{ site.baseurl }}/images/chartconfig-labelcategory.png "Specify a label category")
+
+5. When you specify a category, you can also specify **units**. Select *none* to see your data down to two decimal points, for example, or select *millions* to see labels rounded to the millions.
+
+    You can also specify the number of decimal places.
+
+    ![Decimal specifications]({{ site.baseurl }}/images/chartconfig-decimals.png "Decimal specifications")

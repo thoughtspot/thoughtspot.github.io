@@ -13,13 +13,7 @@ Follow these steps:
 
 4. After you select the File **Connection type**, the rest of the connection properties appear.
 
-   <details>
-     <summary>See the <strong>Create connection</strong> screen for Amazon S3</summary>
-     <p>
-      <img src="../../images/dataflow-amazon-s3-create.png" alt="Add a connection to Amazon S3" /></p>
-   </details>
-
-   * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-conn-connection-name)<br/>Name your connection. 
+   * [Connection name]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-conn-connection-name)<br/>Name your connection.
    * [Connection type]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-conn-connection-type)<br/>Choose the Amazon S3 connection type.
    * [Amazon S3 URL]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-conn-amazon-s3-url)<br/>Specify the Amazon S3 hostname link.
    * [Bucket]({{ site.baseurl }}/data-integrate/dataflow/dataflow-amazon-s3-reference.html#dataflow-amazon-s3-conn-bucket)<br/>Specify the bucket.<br/>An Amazon S3 bucket name is globally unique, and the namespace is shared by all AWS accounts.

@@ -27,7 +27,7 @@ Note that you must have administrator privileges to perform these actions.
        <dd>Specify the name of the account holder.</dd></dlentry>
      <dlentry id="dataflow-user-prop-thoughtspot-user-id">
        <dt>ThoughtSpot user ID</dt>
-       <dd>Specify the user ID, or account. Must match an existing account in ThroughtSpot.</dd></dlentry>
+       <dd>Specify the user ID, or account. Must match an existing account in ThoughtSpot.</dd></dlentry>
      <dlentry id="dataflow-user-prop-password">
        <dt>Password</dt>
        <dd>Enter a password; does not have to match password in ThoughtSpot.</dd></dlentry>  

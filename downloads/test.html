@@ -98,10 +98,10 @@
    }
 
    /**
-    * Creates iFrame URL from pinboard ID.
+    * Creates iframe URL from pinboard ID.
     *
     * @param pId to embed.
-    * @return iFrame node
+    * @return iframe node
     */
    function getIframeToEmbedPinboard(pId) {
        var tsApp = document.createElement('iframe');
@@ -113,11 +113,11 @@
    }
 
    /**
-    * Creates iFrame URL from visualization ID
+    * Creates iframe URL from visualization ID
     *
     * @param pId of pinboard which contains visualization.
     * @param vId to embed.
-    * @return iFrame node
+    * @return iframe node
     */
    function getIframeToEmbedVisualization(pId, vId) {
        var tsApp = document.createElement('iframe');
@@ -129,7 +129,7 @@
    }
 
    /**
-    * Embeds a pinboard in an iFrame as a child node.
+    * Embeds a pinboard in an iframe as a child node.
     */
    function embedPinboardIframe() {
        var divElement = document.getElementById("p-embeded-content");
@@ -139,7 +139,7 @@
    }
 
    /**
-    * Embeds a visualization in an iFrame as a child node.
+    * Embeds a visualization in an iframe as a child node.
     */
    function embedVisualizationIframe() {
        var divElement = document.getElementById("v-embeded-content");

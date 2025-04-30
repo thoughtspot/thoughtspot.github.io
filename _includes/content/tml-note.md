@@ -1,0 +1,1 @@
+{% include note.html content="Starting with ThoughtSpot release 6.3, ThoughtSpot Scripting Language (TSL) is called ThoughtSpot Modeling Language (TML). Files from version 6.3 and later have a <code>.tml</code> extension. However, you can import files from 6.2.1 and earlier, with a <code>.tsl</code> extension, to 6.3 and later environments with no issue." %}

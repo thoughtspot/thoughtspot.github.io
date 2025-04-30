@@ -1,0 +1,48 @@
+---
+title: [Use the Data Push API]
+
+last_updated: 11/18/2019
+summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application."
+sidebar: mydoc_sidebar
+permalink: /:collection/:path.html
+---
+
+{% include content/admin-portal/customize-actions-menu.md %}
+
+## Sample application
+
+Here is a sample application you can use to try out the Data Push API:
+
+```
+<!doctype html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="api/api.js"></script>
+<body>
+    <script>
+
+        var app = angular.module("latestData", []);
+        app.controller("dataCtrl", ['$scope', '$window', function($scope, $window) {
+
+            $scope.currentData=undefined;
+            $scope.showData=false;
+            $scope.displayData = function() {
+                $scope.showData = true;
+            };
+            function currentDataCallback(event) {
+                $scope.currentData = event;
+            }
+            $window.onload = function(){
+                $window.thoughtspot.getCurrentData(currentDataCallback);
+            };
+
+        }]);
+    </script>
+    <div ng-app ="latestData" ng-controller="dataCtrl">
+        <button class="get-data" ng-click="displayData()">Click here for latest exported data</button>
+        <div class="display-data" ng-if="showData">{% raw %}{{currentData}}{% endraw %}</div>
+    </div>
+</body>
+</html>
+
+```

@@ -21,7 +21,7 @@ ThoughtSpot in Snowflake Partner Connect benefits:
 - A Snowflake account
 
   If you don't have an account, you can sign up for a [free trial](https://trial.snowflake.com/){:target="_blank"}.
-- Whitelist the **try.thoughtspot.com** IP address in your Snowflake account: `35.164.213.211`   
+- Add the **try.thoughtspot.com** IP address to your list of allowed domains in your Snowflake account: `35.164.213.211`   
 - Read the [best practices for Embrace with Snowflake]({{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-best.html).  
 
 ## Sign up for the ThoughtSpot free trial in Snowflake Partner Connect
