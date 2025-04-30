@@ -16,8 +16,7 @@ For each hardware node, you must:
 a virtual machine (VM)
 * Add hard disks to the VM
 
-This guide explains how to deploy ThoughtSpot on VMware, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on VMware using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
-
+This guide explains how to deploy ThoughtSpot on VMware, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on VMware using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 ## Prerequisites
 
@@ -132,7 +131,7 @@ disks on HDD (3 x 2TB). If you expect your user data capacity for each VM to be 
 
 5. Save your changes.
 6. Repeat steps 1-5 to create more hard disks. ThoughtSpot requires 3 hard disks for most environments. If you expect your user data capacity for each VM to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information.
-7. Power on the VM.
+7. Power on the VM
 8. After the VM is online, run the following command to prepare the HDFS disks:
 
     ```

@@ -9,6 +9,8 @@ ThoughtSpot enables you to manually create a backup to restore a cluster to a pr
 
 You create a manual backup from an existing snapshot. So, you must identify an existing snapshot to use or take a new snapshot first. The time required to take a backup depends on the data size. Taking a backup does not take long, and happens in the background while the cluster is running.
 
+Beginning with release 6.1, you can back up to an Amazon S3 bucket.
+
 ## Using tscli
 To manually create a backup using ThoughtSpot's command line interface, tscli:
 1. Log in to the Linux shell using SSH.
@@ -46,20 +48,25 @@ To manually create a backup using ThoughtSpot's command line interface, tscli:
 
 4. Create the backup, designating the [type of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#), the snapshot name, and a directory:
 
-    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either `full`, `lightweight`, or `dataless`. Specify an existing directory path for the backup to go, but the folder (the last part of the path: `/home/admin/<folder>`) **must not** already exist. ThoughtSpot creates the folder when it runs a backup. Refer to the [tscli command reference]({{ site.baseurl }}/reference/tscli-command-ref.html#backup) for help, or run `tscli backup create -h` on the command line to see the help for this command.
+    Choose the [mode of backup]({{ site.baseurl }}/admin/backup-restore/backup-modes.html#) you want to create, either `full`, `lightweight`, or `dataless`. You specify an existing directory path, but the folder (the last part of the path: `/home/admin/<folder>`) **must not** already exist. ThoughtSpot creates the folder when it runs a backup. The BASE value is the name of the backup.
 
     ```
     $ tscli backup create [-h]
         [--mode {full|light|dataless}]
         [--type {full}]
-        [--storage_type {local|nas}]
-        [--remote]
-        [--no-orion-master]
-        [--bucket_name <bucket_name>]
-        [--staging_dir <staging_dir_name]
-         <snapshot_name> <directory>
+        [--base snapshot_name>]
+        [--storage_type {local|nas|cloud}][--remote]
+        [--bucket_name]
+         <name> <directory>
     ```
+
     Here is a sample `tscli backup create` command:
     ```
     $ tscli backup create --mode dataless <my_snapshot> <directory_path>
     ```
+
+## Backing up a ThoughtSpot cloud deployment
+
+For details on how to back up a ThoughtSpot cluster hosted in the cloud, see:
+- [Backup and Restore with AWS]({{ site.baseurl }}/appliance/aws/aws-backup-restore.html#)
+- [Backup and Restore with GCP]({{ site.baseurl }}/appliance/gcp/gcp-backup-restore.html#)

@@ -1,6 +1,6 @@
 ---
 title: [Migrate or restore Worksheets]
-last_updated: 3/20/2020
+last_updated: 3/18/2020
 summary: "You can export an entire ThoughtSpot worksheet in a flat-file format. After optional modification, you can migrate it to a different cluster, or restore it to the same cluster."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -27,7 +27,7 @@ To export a worksheet, follow these steps:
 
 2. Click the name of the worksheet you want to edit.
 
-3. Click the ellipses ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
+3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
 
 4. From the menu, select **Export Worksheet**.
 
@@ -73,7 +73,7 @@ To update an existing worksheet, follow these steps:
 
    ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-update-upload.png "Upload the Worksheet")
 
-8. If you constructed the Worksheet file correctly, the **Upload Worksheet** interface displays an *Upload successfull* message.
+8. If you constructed the Worksheet file correctly, the **Upload Worksheet** interface displays an *Upload successful* message.
 
 9. To examine the updated Worksheet, click **Go to Worksheet**.
 
@@ -83,7 +83,7 @@ To update an existing worksheet, follow these steps:
 ## Migrate a Worksheet
 To migrate a Worksheet from one cluster to another, follow these steps:
 
-1. [Export the Worksheet](#worksheet-export) you want to move, as in steps 1 to 5 of the Export Worksheet section above.
+1. [Export the Worksheet](#worksheet-export) you want to move, as in steps 1 to 5 of the **Export Worksheet** section above.
 
     The Worksheet remains on the original cluster as well, unless you delete it.
 
@@ -91,13 +91,13 @@ To migrate a Worksheet from one cluster to another, follow these steps:
 
 3. Click **Data** on the top navigation bar.
 
-3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
+4. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
 
-4. Select **Create worksheet from file**.
+5. Select **Create worksheet from file**.
 
     ![Create worksheet from file]({{ site.baseurl }}/images/worksheet-create-from-file.png "Create worksheet from file")
 
-5. In the **Create Worksheet** interface, click **Browse your files**.
+6. In the **Create Worksheet** interface, click **Browse your files.**
 
     ![Browse your files]({{ site.baseurl }}/images/worksheet-create-browse-files.png "Browse your files")
 
@@ -105,13 +105,13 @@ To migrate a Worksheet from one cluster to another, follow these steps:
 
 7. Click **Upload**.
 
-    ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-create-upload.png "Upload the Worksheet")
+   ![Upload the Worksheet]({{ site.baseurl }}/images/worksheet-create-upload.png "Upload the Worksheet")
 
 8. If you constructed the Worksheet file correctly, the **Create Worksheet** interface displays an *Upload successful* message.
 
 9. To examine the new Worksheet, click **Go to Worksheet**.
 
-      ![Go to new Worksheet]({{ site.baseurl }}/images/worksheet-create-go-to-worksheet.png "Go to new Worksheet")
+   ![Go to new Worksheet]({{ site.baseurl }}/images/worksheet-create-go-to-worksheet.png "Go to new Worksheet")
 
 ## Related Information
 - [Worksheet YAML specification]({{ site.baseurl }}/admin/worksheets/yaml-worksheet.html)

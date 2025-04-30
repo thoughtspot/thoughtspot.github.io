@@ -1,7 +1,7 @@
 ---
 title: ["Add or manage experts"]
 
-last_updated: 3/23/2020
+last_updated: 3/20/2020
 summary: "You can designate experts for each data source, so users won't get stuck if they need help."
 sidebar: mydoc_sidebar
 toc: true

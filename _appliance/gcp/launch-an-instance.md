@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in GCP]
 summary: Set up your GCP virtual machines.
-last_updated: 5/13/2020
+last_updated: 5/7/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -15,7 +15,7 @@ ThoughtSpot uses a custom image to populate VMs in GCP. To find the ThoughtSpot 
 
 Ask your ThoughtSpot contact for access to this image. We need the Google account/email ID of the individual who will be signed into your organization's GCP console. We will share ThoughtSpot's GCP project with them so they can use the contained boot disk image to create ThoughtSpot VMs.
 
-This guide explains how to deploy ThoughtSpot on GCP, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on GCP using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+This guide explains how to deploy ThoughtSpot on GCP, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on GCP using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 ## Overview
 
@@ -35,7 +35,7 @@ If you are going to deploy your cluster using the GCS-storage option, you must s
 
 1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
 
-2. Go to the __Storage__ dashboard from the navigation bar on the side of your screen.
+2. Go to the **Storage** dashboard from the navigation bar on the side of your screen.
 
 3. Click **CREATE BUCKET** on the top menu bar.
 
@@ -124,11 +124,8 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
 
     | Release Number | Image Name |
     | --- | --- |
-    | 6.0 | thoughtspot-image-20191029-9ff82de0a41-prod |
-    | 6.0.1 | thoughtspot-image-20191029-9ff82de0a41-prod |
-    | 6.0.2 | thoughtspot-image-20191029-9ff82de0a41-prod |
-    | 6.0.3 | thoughtspot-image-20200307-812f10fafca-prod |
-    | 6.0.4 | thoughtspot-image-20200307-812f10fafca-prod |
+    | 6.1 | thoughtspot-image-20200307-812f10fafca-prod |
+    | 6.1.1 | thoughtspot-image-20200307-812f10fafca-prod |
 
 
     {% include note.html content="ThoughtSpot updates these base images with patches and enhancements. If more than one image is available, select the latest one by looking at the dates of creation. Each image will work, but we recommend using the latest image because it typically contains the latest security and maintenance patches. Contact ThoughtSpot Support if you are unsure which image to use." %}
@@ -181,7 +178,7 @@ Refer to [ThoughtSpot GCP instance types]({{ site.baseurl }}/appliance/gcp/confi
     ![Set your network interface]({{ site.baseurl }}/images/gcp-setnetworkinterface.png "Set your network interface")
 
     | **1** | Add an existing VPC network, or create a new one by clicking **VPC network** from the main menu. Ensure that this network has a **firewall rule** attached, with the minimum ports required for ThoughtSpot operation open. Refer to the [minimum port requirements](#port-requirements). See Google's [using firewalls](https://cloud.google.com/vpc/docs/using-firewalls){:target="_blank"} and [using VPCs](https://cloud.google.com/vpc/docs/using-vpc){:target="_blank"} documentation for assistance creating a firewall rule and a VPC network. |
-    | __2__ | Set the external IP as either ephemeral or static, depending on your preference. |
+    | **2** | Set the external IP as either ephemeral or static, depending on your preference. |
     | **3** | Ensure that **network service tier** is set to **premium**. |
 
 11. Repeat these steps to create the necessary number of VMs for your cluster.
@@ -217,14 +214,14 @@ each VM through SSH as user "admin", and complete the following preparation step
 ## Install cluster
 To install your ThoughtSpot cluster, complete the installation process outlined in [Installing ThoughtSpot in GCP]({{ site.baseurl }}/appliance/gcp/installing-gcp.html).
 
+## Related information
+
+[Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets){:target="_blank"}  
+[Loading data from a GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)
+
 ## Additional resources
 As you develop your expertise in GCP VM creation, we recommend the following ThoughtSpot U course:
 * [Node Configuration: GCP](https://training.thoughtspot.com/node-network-configuration/430736){:target="_blank"}
 
 See other training resources at <br/>
 <a href="https://training.thoughtspot.com/" target="_blank"><img src="{{ "/images/ts-u.png" | prepend: site.baseurl  }}" alt="ThoughtSpot U"></a>
-
-## Related information
-
-[Connecting to Google Cloud Storage buckets](https://cloud.google.com/compute/docs/disks/gcs-buckets){:target="_blank"}  
-[Loading data from a GCP GCS bucket]({{ site.baseurl }}/admin/loading/use-data-importer.html#loading-data-from-a-gcp-gcs-bucket)

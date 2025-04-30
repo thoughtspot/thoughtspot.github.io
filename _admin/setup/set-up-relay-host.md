@@ -14,9 +14,9 @@ Set up SMTP rules to send critical email notifications to ThoughtSpot Support.
 To set up a relay host:
 
 1. Log in to the Linux shell using SSH.
-2. Issue the setup command, providing the IP address of the relay host.
+2. Issue the setup command, providing the IP address of the relay host:
 
-    Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.
+    On ThoughtSpot release 6.1.1 and later, or on release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.
 
     To use the default port, run the setup command:
 
@@ -30,7 +30,7 @@ To set up a relay host:
     $ tscli smtp set-relayhost <IP_address>:<custom_port>
     ```
 
-    If you are on an earlier version than 6.0.5, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
+    If you are on 6.1 rather than 6.1.1, or an earlier version than 6.0.5, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to use a custom port.
 
 3. Verify your settings:
 
@@ -68,7 +68,7 @@ To set up a relay host:
 
 ### Configure an email to receive alerts
 
-ThoughtSpot sends alerts to the email addresses specified during installation. If you do not specify an email address, you do not receive any alerts. To add an email to receive alerts, issue the following command.
+ThoughtSpot sends alerts to the email address specified during installation. If you do not specify an email address, you do not receive any alerts. To add an email to receive alerts, issue the following command.
 
 {% include note.html content="Add the ThoughtSpot Support alert email, <code>prod-alerts@thoughtspot.com</code>, to allow ThoughtSpot Support to receive alerts. ThoughtSpot Support monitors these alerts to ensure your cluster's health. Do not add this email to POC or demo environments." %}
 

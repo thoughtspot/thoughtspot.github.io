@@ -59,46 +59,23 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
     $ screen -S DEPLOYMENT
     ```
 
-2. Create the cluster.<br>
+2. Manually update tscli.
+```
+$ tar -C /usr/local/scaligent -zxpf <release-number>.tar.gz './bin/tscli'
+```
+
+3. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.
 ```
     $ tscli cluster create <release-number>.tar.gz
 ```
 
-3. Edit the output with your specific cluster information.<br>
+4. Edit the output with your specific cluster information.<br>
 For more information on this process, refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
     The cluster installer automatically reboots all the nodes after a successful install. The `firewalld` service automatically turns on. At this time, the system is rebooting, which may take approximately 15 minutes.<br>
 
-3. Make this change to each node to ensure that you can log back in:
-
-     a. Open the grub file  `/update/etc/default/grub`:
-
-
-        $ sudo vi /update/etc/default/grub
-
-
-     b. Change the line:
-
-
-        GRUB_CMDLINE_LINUX="console=tty0 console=ttyS1,115200n8"
-
-    to:
-
-
-        GRUB_CMDLINE_LINUX="console=tty0 console=ttyS1,115200n8 net.ifnames=0"
-
-
-      c. Save your changes.
-
-  4. Issue these commands:
-
-     ```
-     $ sudo cp /update/etc/default/grub /etc/default/
-     $ rm /usr/local/scaligent/bin/setup-net-devices.sh
-     ```
-
-  Log in to any node to check the current cluster status:
+5. Log in to any node to check the current cluster status:
   ```
     $ tscli cluster status
   ```

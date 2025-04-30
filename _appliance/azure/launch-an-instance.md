@@ -16,13 +16,13 @@ image to make hosting simple. A virtual machine is a preconfigured template that
 provides the information required to launch an instance of ThoughtSpot. It includes a root disk for the instance, which contains an operating system, application server, and other necessary software.
 
 The ThoughtSpot Virtual Machine has the ThoughtSpot software installed and
-configured, on a base image. Check with your ThoughtSpot contact to
+configured, on a CentOS-based image. Check with your ThoughtSpot contact to
 learn about the latest version of the ThoughtSpot Virtual Machine.
 
 Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the administrator users. When you are ready to obtain the password, contact
 [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
-This guide explains how to deploy ThoughtSpot on Microsoft Azure, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on Azure using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+This guide explains how to deploy ThoughtSpot on Microsoft Azure, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on Azure using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 ## Set up ThoughtSpot in Azure
 
@@ -126,13 +126,14 @@ _Prerequisite_: To log in to the VM, you need the private key that is available 
    - To see the public IP, click the VM name link. This will show the public IP of the VM.
    - To see the private IP, select **more services** from the Microsoft Azure homepage. Select **Networking** from the list on the left side of the screen.
 
-2. In a terminal application, connect to the VM through SSH. Enter the private key provided for the admin user.
+2. In a terminal application, connect to the VM through SSH.
 
-   - You must file a support ticket to obtain this private key; it is necessary for the first login.
-   - This key is different from the credentials, or the public keys supplied in earlier steps, which do not work in this context.
+Log in as the user specified in the previous steps and use the private key that belongs to the public key specified for that user.
+
 ```
-    $ ssh -i <path_to_private_key> admin@<public_VM_IP>
-```   
+   $ ssh -i <path_to_private_key> <the_user_specified_when_created_the_vm>@<public_VM_IP>
+```
+{% include tip.html content="If the SSH key is not accepted or lost, it can be reset by going to Reset password under Support + troubleshooting on the Azure Virtual Machine page. Please note this only works before the cluster had been deployed." %}  
 
 3. Update the password for both the `admin` and the `thoughtspot` users.<br>
   The command prompts you to type in a new password, and then to confirm the password.
@@ -205,11 +206,10 @@ reboot of the VMs will not have network access. So when updating these files,
 keep a backup to copy after any subsequent cluster creation or update." %}
 
 1. SSH into one of your VMs, using the new password you created for the *admin* user in step two of [Prepare for starting up ThoughtSpot](#prepare-for-startup).
-
-    ```
+```
     ssh admin@<VM-IP>
-    ```
-1. Update the VM's hostname:
+```
+2. Update the VM's hostname:
 
    ```
    $ sudo hostnamectl set-hostname <HOSTNAME>
@@ -220,13 +220,10 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    ```
    sudo hostnamectl set-hostname <HOSTNAME> --static
    ```
-
-2. Update `/etc/sysconfig/network-scripts/ifcfg-eth0` with the IP and hostname:
+3. Create `/etc/sysconfig/network-scripts/ifcfg-eth0`:
 
    ```
-   $ sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
-
-   DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
+$ sudo sh -c 'echo "DEVICE=eth0" > /etc/sysconfig/network-scripts/ifcfg-eth0'
    ```
 
 3. Modify permissions for `/etc/sysconfig/network-scripts/ifcfg-eth0`. This command allows the root user to retain read/write permissions, and grants read-only permissions to other users.

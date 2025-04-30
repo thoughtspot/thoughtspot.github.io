@@ -1,6 +1,6 @@
 ---
 title: [Worksheet YAML specification]
-last_updated: 5/6/2020
+last_updated: 12/16/2020
 summary: "ThoughtSpot worksheet specification may be exported as a YAML file, modified, and imported into the same or different cluster. "
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -26,7 +26,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
   <a href="#tables">tables</a>:
   - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
     <a href="#id">id</a> : &lt;<em>optional_table_id_1</em>&gt;
-    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name</em>&gt;
+    <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name_1</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>table_name_3</em>&gt;
   joins:

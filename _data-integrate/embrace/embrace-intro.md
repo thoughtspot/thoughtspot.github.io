@@ -26,10 +26,6 @@ You create a connection to the external database, choosing the columns from each
 - Save significant time and money by avoiding ETL pipelines.
 - Connect to multiple external databases.
 
-## New features in 6.0
-
-<script src="https://fast.wistia.com/embed/medias/1n7ei0tqr4.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_1n7ei0tqr4 popover=true popoverAnimateThumbnail=true popoverBorderColor=4E55FD popoverBorderWidth=2" style="display:inline-block;height:252px;position:relative;width:450px">&nbsp;</span>
-
 ## Limitations
 
 ### Feature availability in Embrace
@@ -262,14 +258,16 @@ The following list captures the specific limitations across the different databa
           <dd>Google BigQuery does not support PK-FK joins. Therefore, when using Embrace, you must create joins explicitly in ThoughtSpot.</dd></dlentry>
         <dlentry>
           <dt>Partitioned tables</dt>
-          <dd>When running a query on a partitioned table with <strong>Require partition filter option</strong> enabled, you must specify the <code>WHERE</code> clause. Omitting the `WHERE` clause throws an error.<br>
+          <dd>When running a query on a partitioned table with the <strong>Require partition filter option</strong> enabled, you must specify the <code>WHERE</code> clause. Without a <code>WHERE</code> clause specified, queries generate an error.<br>
           To ensure that the query on such tables honors the partition condition, you must create a worksheet filter in ThoughtSpot.</dd></dlentry></dl>
       </dd>    
    </dlentry>
    <dlentry>
      <dt>Azure Synapse</dt>
-     <dd>Azure Synapse supports at most 10 <code>IF THEN ELSE</code> statements in a single query.</dd></dlentry>
-</dl>     
+     <dd>Azure Synapse supports up to 10 <code>IF THEN ELSE</code> statements in a single query.</dd></dlentry>
+   <dlentry>
+     <dd>Azure Synapse does not support foreign keys, so no PK-FK joins can be defined in Synapse.</dd></dlentry>
+     </dl>     
 
 
 ## Next steps

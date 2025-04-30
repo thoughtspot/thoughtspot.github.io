@@ -1,7 +1,7 @@
 ---
 title: [VMware configuration overview]
 summary: "You can host ThoughtSpot on VMware."
-last_updated: 5/21/2020
+last_updated: 3/11/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -17,7 +17,7 @@ the components of a VMware and ThoughtSpot architecture:
 
 ![]({{ site.baseurl }}/images/vmware-components.png)
 
-{% include note.html content="This is a generic representation. ThoughtSpot supports VMware deployment using its CentOS-based image, or on an RHEL image that your organization manages internally." %}
+{% include note.html content="This is a generic representation. ThoughtSpot supports deployment on its CentOS-based image, or an RHEL 7.7 or 7.8 image that your organization manages internally." %}
 
 Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
@@ -28,7 +28,7 @@ ThoughtSpot VMs as your dataset size grows.
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
 platform in VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
-_minimum specifications_ for an individual VMware ESXi host machine.
+_minimum specifications_ for an individual VMware ESXi guest machine.
 
 When choosing an instance type, ensure that it uses Intel CPUs.
 

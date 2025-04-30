@@ -97,6 +97,8 @@ collections:
   # error-codes: output: true
   reference:
     output: true
+  snippets-to-convert:
+    output: true
   release:
     output: true
   spotiq:

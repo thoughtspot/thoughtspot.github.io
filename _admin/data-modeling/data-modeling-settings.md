@@ -1,7 +1,7 @@
 ---
 title: [Overview of data modeling settings]
 summary: Learn about data modeling settings.
-last_updated: 5/6/2020
+last_updated: 11/15/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

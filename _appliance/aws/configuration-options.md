@@ -1,6 +1,6 @@
 ---
 title: [AWS configuration options]
-last_updated: 2/27/2020
+last_updated: 3/17/2020
 summary: "Your instances require specific configurations of memory, CPU, storage, and networking capacity."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -28,7 +28,7 @@ For example: If you were deploying a total cluster data size of 1 TB using the s
 ![]({{ site.baseurl }}/images/persistent-storage-ebs.svg "AWS EBS-only Persistent Storage")
 
 | Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required root volume capacity |
-| --- | --- | --- |--- | -- |
+| --- | --- | --- |--- | --- |
 | 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 2X 400 GB | 200 GB for each node |
 | 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 2X 400 GB | 200 GB for each node |
 | 192 GB | m5.24xlarge | 96/384 | 2X 1 TB | 200 GB for each node |

@@ -33,7 +33,7 @@ To add a new connection to BigQuery:
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your BigQuery data source. Key-value pairs are case-sensitive." %}
 
-6. Click **Continue**.    
+6. Click **Continue**.       
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
     ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")

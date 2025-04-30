@@ -21,7 +21,7 @@ ThoughtSpot supports a wide variety of SSL types.
 {: id="ssl-ports"}
 ## Required ports
 
-To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to accommodate incoming connections to Thoughtspot nodes and clusters.
+To use ThoughtSpot webservice securely, ensure that TCP port 443 is open to accommodate incoming connections to ThoughtSpot nodes and clusters.
 
 {: id="ssl-configure"}
 ## Configure SSL for web traffic
@@ -170,7 +170,6 @@ You can retrieve these from the ThoughtSpot web server (not against the load bal
     ```
     nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
     ```
-
 You must ensure that your load balancer supports these ciphers. If your load balancer cannot support these ciphers, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 {: id="ssl-configure-test"}

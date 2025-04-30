@@ -16,7 +16,7 @@ To add a new connection to Synapse:
     ![Click "+ Add connection"]({{ site.baseurl }}/images/redshift-addconnection.png "Click "+ add connection"")
    <!--![]({{ site.baseurl }}/images/new-connection.png "New db connect") -->
 
-3. Create a name for your connection, a description (optional), then select the Synapse connection type.
+3. Create a name for your connection, a description (optional), then select the Synapse connection type, and click **Continue**.
 
    ![Add a Synapse connection]({{ site.baseurl }}/images/synapse-connectiontype.png "Add a Synapse connection")
 
@@ -33,7 +33,7 @@ To add a new connection to Synapse:
 
     {% include note.html content="Any key-value pairs that you enter must be defined in your Synapse data source. Key-value pairs are case-sensitive." %}
 
-6. Click **Continue**.     
+6. Click **Continue**.      
 
 7. Select tables (on the left) and the columns from each table (on the right), and then click **Create connection**.
 

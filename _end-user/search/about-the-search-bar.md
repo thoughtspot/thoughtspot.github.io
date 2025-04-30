@@ -45,4 +45,4 @@ If you type an unrecognized search term, ThoughtSpot offers you tips on searchin
 
 ## Related Answers
 
-If you scroll down the **Search** page, the system provides Related Answers that you might find useful. These are quick searches you can load into the search bar by simply clicking the provided link.
+If you scroll down the **Search** page, the system provides **Related Answers** that you might find useful. These are quick searches you can load into the search bar by simply clicking the provided link.

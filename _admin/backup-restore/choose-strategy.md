@@ -62,7 +62,14 @@ Depending on your situation and your goals, you can choose to use either a snaps
                 <tr id="storage">
                     <td><strong>Storage</strong></td>
                     <td>In the cluster's HDFS</td>
-                    <td>Outside the cluster on either local or NAS disk.</td>
+                    <td>Options:
+                        <ul>
+                        <li>Outside the cluster on a local disk</li>
+                        <li>Outside the cluster on an NAS disk</li>
+                        <li> With AWS, you can back up an S3-based cluster using an S3 bucket.</li>
+                        <li> With GCP, you can back up a GCS-based cluster using a GCS bucket.</li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr id="advantages">
                     <td><strong>Advantages</strong></td>

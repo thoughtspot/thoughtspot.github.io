@@ -1,5 +1,5 @@
 <table>
-<tr><th>Python 3 pakage</th><th>Minimum version</th></tr>
+<tr><th>Python 3 package</th><th>Minimum version</th></tr>
 <tr><td><code>agate</code></td><td>1.6.1</td></tr>
 <tr><td><code>agate-dbf</code></td><td>0.2.1</td></tr>
 <tr><td><code>agate-excel</code></td><td>0.2.3</td></tr>

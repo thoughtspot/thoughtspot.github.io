@@ -8,7 +8,7 @@
 
     ![Enter users or groups]({{ site.baseurl }}/images/sharing-textbox.png "Enter users or groups")
 
-    Note that you can only enter email addresses whose domains are in your list of allowed domains. These domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-info.png){: .inline}.
+    Note that you can only enter email addresses whose domains are in your list of allowed domains. These email domains appear when you click on the info button ![]({{ site.baseurl }}/images/icon-info.png){: .inline}.
 
     {% include tip.html content="If you want to hide the allowed email domains for your company, or otherwise customize them, contact ThoughtSpot support." %}
 
@@ -22,17 +22,15 @@
 
     ![Enable data access]({{ site.baseurl }}/images/sharing-enabledata.png "Enable data access")
 
-    If you own the underlying data source, refer to [share uploaded data]({{ site.baseurl }}/end-user/data-view/share-user-imported-data.html). If you do not own the data source, ThoughtSpot sends an email to the owner or your ThoughtSpot administrator to tell them to share the data.
+    If you own the underlying data source, refer to [share uploaded data]({{ site.baseurl }}/end-user/data-view/share-user-imported-data.html). If you do not own the data source, ThoughtSpot emails the owner of the data source or your ThoughtSpot administrator to ask them to share the data.
 
 6. To stop sharing with a user or group, click the **x** icon ![]({{ site.baseurl }}/images/icon-delete-20px.png){: .inline}.
 
     ![Stop sharing]({{ site.baseurl }}/images/sharing-delete.png "Stop sharing")
-    <!--{% include image.html file="sharing-delete.png" title="Stop sharing" alt="Click the 'x' icon to delete a user or group." caption="Stop sharing" %}-->
 
 6. You can send an email notification and an optional message:
 
     ![Send notification]({{ site.baseurl }}/images/sharing-notifmessage.png "Send notification")
-    <!--{% include image.html file="sharing-notifmessage.png" title="Send notification" alt="Send a notification email and add an optional message." caption="Send notification" %}-->
 
 6. Click **Share**.
 

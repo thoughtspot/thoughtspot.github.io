@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the  table or view on the column you specify. 
+Joining a worksheet to a table or view creates a relationship that allows them to be searched together. Choose a column to join on that both data sources contain (e.g. employee ID or product key). This process creates a [generic join]({{ site.baseurl }}/admin/loading/constraints.html) between the worksheet and the  table or view on the column you specify.
 
 See this matrix for information about which joins you can create, and what permissions these joins require.
 

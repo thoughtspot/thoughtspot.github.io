@@ -28,9 +28,15 @@ To make deployment easy, the ThoughtSpot AMI includes a custom ThoughtSpot image
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances.
 -   A block device mapping that specifies the volumes to attach to the instance when it launches.
 
-The ThoughtSpot AMI has specific applications on a base image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
+The ThoughtSpot AMI has specific applications on a CentOS-based image. The AMI includes the EBS volumes necessary to install ThoughtSpot in AWS. When you launch an EC2 instance from this image, it automatically sizes and provisions the EBS volumes. The base AMI includes 200 GB (xvda), 2X400 GB (xvdb), and SSD (gp2). It contains the maximum number of disks to handle a fully loaded VM.
 
-This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+{: id='rhel-ami'}
+### RHEL AMI
+This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on AWS using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 or 7.8 image that your organization manages internally. To install ThoughtSpot using RHEL, choose your own RHEL-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
+
+{: id='al2-ami'}
+### Amazon Linux 2 AMI
+This guide explains how to deploy ThoughtSpot on AWS, using ThoughtSpot's CentOS-based image. Starting with version 6.1.1, you can also deploy ThoughtSpot on AWS using Amazon Linux 2, allowing you to run ThoughtSpot on an Amazon Linux 2 image that your organization manages internally. To install ThoughtSpot using Amazon Linux 2, choose your own Amazon Linux 2-based image on the AWS console, instead of ThoughtSpot's image, and refer to the [Amazon Linux 2 deployment guide]({{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html) after you launch your virtual machines.
 
 {: id="prerequisites"}
 ## Prerequisites
@@ -61,13 +67,8 @@ To install and launch ThoughtSpot, you must have the following:
 
     | Release Number | AMI Name | AMI ID | Region |
     | --- | --- | --- | --- |
-    | 6.0 | thoughtspot-image-20191031-8ae15008336-prod | ami-06276ece42ed96994 | N. California |
-    | 6.0.1 | thoughtspot-image-20191031-8ae15008336-prod | ami-06276ece42ed96994 | N. California |
-    | 6.0.2 | thoughtspot-image-20191031-8ae15008336-prod | ami-06276ece42ed96994 | N. California |
-    | 6.0.3 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |
-    | 6.0.4 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |
-    | 6.0.5 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |
-
+    | 6.1 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
+    | 6.1.1 | thoughtspot-image-20200304-8b8c7b0e56a-prod | ami-09079fee8bc0543fc | N. California |    
 
     {% include note.html content="The AMI is based in the N. California region. You may have to temporarily switch to the N. California region on the AWS website to initiate copying the AMI to the region of your choice. Once the copy is complete, you can return to your own region." %}
 
@@ -87,7 +88,7 @@ If you are going to deploy your cluster using the S3-storage option, you must se
 
 Follow these steps to set up an S3 bucket in AWS.
 
-1. On the AWS website, navigate to the S3 service dashboard by clicking **Services**, then **S3**.
+1. On the AWS website, navigate to the S3 service dashboard by clicking __Services__, then **S3**.
 
 2. Make sure the selected region in the top-right corner of the dashboard is the same region in which you plan to set up your cluster.
 
@@ -122,7 +123,7 @@ For more information on encryption supported with AWS:
 
 To set up a ThoughtSpot cluster in AWS, follow these steps:
 
-1. On the AWS website, navigate to the EC2 service dashboard by clicking **Services**, then **EC2**.
+1. On the AWS website, navigate to the EC2 service dashboard by clicking __Services__, then **EC2**.
 
      ![]({{ site.baseurl }}/images/navigate_to_ec2_dashboard.png "Navigate to the EC2 Dashboard")
 
@@ -149,7 +150,9 @@ To set up a ThoughtSpot cluster in AWS, follow these steps:
 
    **S3 storage setting**: If you are going to use the S3 storage option, ThoughtSpot recommends that you restrict access to a specific S3 bucket. Create a new IAM role that provides read/write access to the specific bucket, and select it. For details on that, click **Create new IAM role**.
 
-8. Click **Next: Add Storage**.
+   **AWS Systems Manager Agent**: If you plan to use the [AWS SSM agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html){:target="_blank"} as an alternative to SSH, create a new IAM role with an SSM policy to grant AWS SSM permission to perform actions on your instances. Refer to [Create an IAM instance profile for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html){:target="_blank"}.
+
+8. Click __Next: Add Storage__.
    Add the required storage based on your instance type (either EBS volumes or S3), and the amount of data you are deploying. For specific storage requirements, refer to [ThoughtSpot AWS instance types]({{ site.baseurl }}/appliance/aws/configuration-options.html#ts-aws-instance-types).
 
    ![Add storage volumes]({{ site.baseurl }}/images/aws-add-storage.png "Add storage volumes")

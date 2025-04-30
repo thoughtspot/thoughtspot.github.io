@@ -1,7 +1,5 @@
 ---
 title: [Convert column data type]
-
-
 last_updated: tbd
 summary: "You can convert the data in a column from one data type to another by issuing a TQL command. "
 sidebar: mydoc_sidebar

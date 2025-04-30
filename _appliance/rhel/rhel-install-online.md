@@ -1,7 +1,7 @@
 ---
 title: [Install the ThoughtSpot application on online clusters that use RHEL]
 summary: "Install ThoughtSpot on RHEL online clusters"
-last_updated: 6/18/2020
+last_updated: 6/10/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -60,16 +60,16 @@ To set up the Ansible, follow these steps:
       <dd>The tools that are necessary to compile the instructions you define in the Ansible Playbook, the source code, into executables that can run on your device. The toolchain includes a compiler, a linker, and run-time libraries.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-rhel-new.yaml</dt>
-      <dd>The Ansible Playbook for new installations.</dd>
+      <dt>ts-new.yaml</dt>
+      <dd>The Ansible Playbook for new installations. Note that this is called <code>ts-rhel-new.yaml</code> in ThoughtSpot release 6.1. It is <code>ts-new.yaml</code> in releases 6.1.1 and later.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-rhel-update.yaml</dt>
-      <dd>The Ansible Playbook for updates.</dd>
+      <dt>ts-update.yaml</dt>
+      <dd>The Ansible Playbook for updates. Note that this is called <code>ts-rhel-update.yaml</code> in ThoughtSpot release 6.1. It is <code>ts-update.yaml</code> in releases 6.1.1 and later.</dd>
     </dlentry>
     <dlentry>
-      <dt>ts-rhel.yaml</dt>
-      <dd></dd>
+      <dt>ts.yaml</dt>
+      <dd>Note that this is called <code>ts-rhel.yaml</code> in ThoughtSpot release 6.1. It is <code>ts.yaml</code> in releases 6.1.1 and later.</dd>
     </dlentry>
     <dlentry>
       <dt>yum.repos.d</dt>
@@ -177,12 +177,12 @@ To set up the Ansible, follow these steps:
 Run the Ansible Playbook from your local machine by entering the following command:
 
 ```
-ansible-playbook -i hosts.yaml ts-rhel.yaml
+ansible-playbook -i hosts.yaml ts.yaml
 ```
 
 As the Ansible Playbook runs, it will perform these tasks:
 
-  1. Trigger the installation of [RPM packages]({{ site.baseurl }}/appliance/rhel/rhel-packages.html)
+  1. Trigger the installation of [Yum, Python, and R packages]({{ site.baseurl }}/appliance/rhel/rhel-packages.html)
   2. Configure the local user accounts that the ThoughtSpot application uses
   3. Install the ThoughtSpot CLI
   4. Configure all the nodes in the ThoughtSpot cluster:

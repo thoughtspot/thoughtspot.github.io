@@ -1,6 +1,6 @@
 ---
 title: [tscli command reference]
-last_updated: 5/8/2020
+last_updated: 4/24/2020
 summary: "The ThoughtSpot command line interface, or tscli, is an administration interface for the cluster. Use tscli to take snapshots (backups) of data, apply
 updates, stop and start the services, and view information about the system.
 This reference defines each subcommand."
@@ -281,9 +281,9 @@ tscli backup [-h] {create,delete,ls,restore}
 
   <dl>
     <dlentry>
-      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas}] [--remote] [--no-orion-master]</code></dt>
+      <dt><code>tscli backup create [-h] [--mode {full,light,dataless}] [--type {full,incremental}] [--base BASE] <br>[--storage_type {local,nas,cloud}] [--remote] [--no-orion-master] name out </code></dt>
       <dd>
-        <p>Pulls a snapshot and saves it as a backup, with these parameters:</p>
+        <p>Pulls a snapshot and saves it as a backup. You must specify the snapshot name (<code>name</code>) and the directory to send the backup to (<code>out</code>). The command has the following optional parameters:</p>
 
         <dl>
           <dlentry>
@@ -302,7 +302,7 @@ tscli backup [-h] {create,delete,ls,restore}
               <p><strong>Note:</strong> Because <code>incremental</code> is not implemented,  neither is this option.</p>
               <p>There is no default setting.</p></dd></dlentry>
           <dlentry>
-            <dt><code>--storage_type {local,nas}</code></dt>
+            <dt><code>--storage_type {local,nas,cloud}</code></dt>
             <dd>
               <p>Storage type of output directory.</p>
               <p>The default setting is <code>local</code>.</p></dd></dlentry>
@@ -320,6 +320,14 @@ tscli backup [-h] {create,delete,ls,restore}
                  The default is <code>False</code>.
                </p></dd>
             </dlentry>
+            <dlentry>
+            <dt><code>--bucket_name BUCKET_NAME</code></dt>
+             <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+            </dlentry>
+            <dlentry>
+            <dt><code>--staging_dir STAGING_DIR</code></dt>
+             <dd>Used for staging hdfs data in cloud based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+            </dlentry>
           </dl>
       </dd>
 
@@ -332,7 +340,7 @@ tscli backup [-h] {create,delete,ls,restore}
 
     <dlentry>
       <dt><code>tscli backup ls</code></dt>
-      <dd>Lists all backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
+      <dd>Lists all periodic backups taken by the system. Note that this command only shows periodic backups, and not manual backups.</dd>
     </dlentry>
 
     <dlentry>
@@ -677,19 +685,26 @@ This subcommand has the following options:
 ### cluster
 
 ```
-tscli cluster [-h] abort-reinstall-os,abort-update,bucket-  name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,reinstall-os,restore,resume-reinstall-os,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
+tscli cluster [-h] {abort-update,bucket-migrate,bucket-name,check,create,download-release,get-config,list-available-releases,list-downloaded-releases,load,restore,resume-update,set-config,set-min-resource-spec,setup-release-host,setup-release-host-key,show-resource-spec,start,status,stop,update,update-hadoop}
 ```
 
 This subcommand has the following options:
 
 <dl>
-  <dlentry>
-    <dt><code>tscli cluster abort-reinstall-os</code></dt>
-    <dd>Aborts in-progress reinstall.</dd></dlentry>
 
     <dlentry>
       <dt><code>tscli cluster abort-update</code></dt>
       <dd>Aborts an ongoing cluster update, if safe.</dd></dlentry>
+
+      <dlentry>
+        <dt><code>tscli cluster bucket-migrate</code></dt>
+        <dd>Migrates the cluster to use another S3/GCS bucket, also migrating the data from the current s3 bucket to the new bucket. This command has the following optional parameter:
+        <dl>
+        <dlentry>
+        <dt><code>--name NAME</code></dt>
+        <dd>Name of the new bucket.</dd>
+        </dlentry></dl>
+        </dd></dlentry>
 
     <dlentry>
       <dt><code>tscli cluster bucket-name</code></dt>
@@ -771,20 +786,7 @@ This subcommand has the following options:
 
   <dlentry>
     <dt><code>tscli cluster load <em>backupdir</em></code></dt>
-    <dd>Loads the state from a specified backup directory onto an existing cluster. Add <code>--reuse_cluster</code> to reuse the cluster service configs rather than restoring from the backup directory.</dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli cluster reinstall-os</code></dt>
-    <dd>Reinstalls OS on all nodes of the cluster, with the following parameters:
-    <dl>
-    <dlentry>
-    <dt><code>--secondary <em>SECONDARY</em></code></dt>
-    <dd><p>A secondary drive for reinstall.</p>
-    <p>The default is <code>sdd</code>.</p></dd></dlentry>
-    <dlentry>
-    <dt><code>--stdin</code></dt>
-    <dd>Command to take JSON configuration from stdin.</dd></dlentry></dl>
-    </dd></dlentry>
+    <dd>Loads the state from a specified backup directory onto an existing cluster. Add <code>--reuse_cluster</code> to reuse the cluster service configs rather than restoring from the backup directory. Add <code>--cloud_data_dir<em>CLOUD_DATA_DIR</em></code> to specify the cloud path to the restore.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster restore --release <em>RELEASE</em> <em>backupdir</em></code></dt>
@@ -803,10 +805,6 @@ This subcommand has the following options:
     <dd><p>Should be set for heterogeneous clusters.</p>
     <p>The default is <code>False</code>.</p></dd></dlentry></dl>
     </dd></dlentry>
-
-  <dlentry>
-    <dt><code>tscli cluster resume-reinstall-os</code></dt>
-    <dd>Resumes in-progress reinstall.</dd></dlentry>
 
   <dlentry>
     <dt><code>tscli cluster resume-update</code></dt>
@@ -830,6 +828,11 @@ This subcommand has the following options:
     <dlentry>
     <dt><code>--no-network-change</code></dt>
     <dd><p>This flag ensures that a change made with set-config does not update network settings.</p>
+    <p>The default is <code>False</code>.</p>
+    </dd></dlentry>
+    <dlentry>
+    <dt><code>--allow_network_gateway_mismatch</code></dt>
+    <dd><p>Allows a network and gateway mismatch.</p>
     <p>The default is <code>False</code>.</p>
     </dd></dlentry></dl>
     </dd></dlentry>
@@ -1525,7 +1528,7 @@ This subcommand has the following options:
           <dt><code>--offline</code></dt>
           <dd>
           <p>Specifies that you are using a <code>maptiles</code> tarball from a local disk, rather than downloading from the internet. Use during offline enablement of map-tiles. You must specify the location of the <code>--tar</code> and <code>--md5</code> on your machine.</p>
-      <p>You must download the <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">tarball</a> and <a href="https://tsengg-geodata.s3.amazonaws.com/md5">md5</a> before you run this command.</p>
+        <p>You must download the <a href="https://tsengg-geodata.s3.amazonaws.com/raster-osm-jpg.tar.gz">tarball</a> and <a href="https://tsengg-geodata.s3.amazonaws.com/md5">md5</a> before you run this command.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
         <dlentry>
           <dt><code>--tar <em>TAR</em></code></dt>
@@ -1715,7 +1718,7 @@ This subcommand has the following options:
 ### node
 
 ```
-tscli node [-h] {check,ls,reinstall-os,resume-reinstall-os,status}
+tscli node [-h] {check,ls,status}
 ```
 
 This subcommand has the following options:
@@ -1750,29 +1753,18 @@ This subcommand has the following options:
       <p>The default setting is <code>all</code>.</p></dd></dlentry></dl>
       </dd></dlentry>
 
-   <dlentry>
-      <dt><code>tscli node reinstall-os [-h] [--secondary <em>SECONDARY</em>] [--cluster]</code></dt>
-      <dd>
-        <p>Reinstalls OS on a node.</p>
-        <p>Accepts the following flags:</p>
+  <dlentry>
+    <dt><code>tscli node status</code></dt>
+    <dd>Get Node status for operation specified by mode, with the following paramaters:
+    <dl><dlentry>
+    <dt><code>--mode {reinstall-os}</code></dt>
+    <dd>Mode to run node status in.</dd></dlentry>
+    <dlentry>
+    <dt><code>--tail</code></dt>
+    <dd><p>Prints the details of create and update progress.</p>
+    <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+    </dd></dlentry>
 
-        <dl>
-          <dlentry>
-            <dt><code>--secondary <em>SECONDARY</em></code></dt>
-            <dd>
-              <p>Secondary drive for reinstall.</p>
-              <p>The default setting is <code>sdd</code>.</p></dd></dlentry>
-          <dlentry>
-          <dt><code>--cluster</code></dt>
-          <dd>
-            <p>Use this flag to specify if the node is part of a cluster.</p>
-            <p>The default setting is <code>False</code>.</p></dd></dlentry>
-        </dl>
-     </dd></dlentry>
-
-   <dlentry>
-    <dt><code>tscli node resume-reinstall-os</code></dt>
-    <dd>Resumes in-progress reinstall</dd></dlentry>
 
 </dl>
 
@@ -2092,7 +2084,7 @@ This subcommand has the following options:
 <dlentry>
   <dt><code>tscli smtp set-relayhost [-h] [--force <em>FORCE</em>] <em>relayhost</em></code></dt>
   <dd>
-    <p>Sets the specified <code>relayhost</code>, in the form of an IP address, for SMTP (email) sent from the cluster.</p>
+    <p>Sets the specified <code>relayhost</code> for SMTP (email) sent from the cluster.</p>
     <p>Accepts the following flag:</p>
       <dl>
         <dlentry>
@@ -2100,12 +2092,12 @@ This subcommand has the following options:
           <dd><p>Set even if relay host is not accessible.</p>
             <p>The default setting is <code>False</code>.</p></dd></dlentry>
     </dl>
-    <p>Starting with ThoughtSpot release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.</p>
+    <p>On ThoughtSpot release 6.1.1 or later, on on release 6.0.5, you can specify a custom port to connect to the relay host. If you do not specify a port, the system uses the default recommended port, port 25. Use a custom port if port 25 is blocked in your environment.</p>
     <p>To use the default port, run the setup command normally:</p>
     <p><code>$ tscli smtp set-relayhost <em>IP_address</em></code></p>
     <p>To use a custom port instead of port 25, run the setup command, specifying the port you want to use:</p>
     <p><code>$ tscli smtp set-relayhost <em>IP_address</em>:<em>custom_port</em></code></p>
-    <p>If you are on an earlier version than 6.0.5, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a> to use a custom port.</p>
+    <p>If you are on 6.1 rather than 6.1.1, or an earlier version than 6.0.5, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a> to use a custom port.</p>
   </dd></dlentry>
 <dlentry>
     <dt><code>tscli smtp set-saslcredentials</code></dt>
@@ -2182,6 +2174,14 @@ This subcommand has the following options:
           <dt><code>--no-orion-master</code></dt>
           <dd><p>Specifies whether orion master is available during backup</p>
           <p>The default is <code>False</code>.</p></dd></dlentry></dl>
+          <dlentry>
+          <dt><code>--bucket_name BUCKET_NAME</code></dt>
+           <dd>The name of the s3/gcs bucket to create the backup. The platform depends on the storage type of the cluster. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+          </dlentry>
+          <dlentry>
+          <dt><code>--staging_dir STAGING_DIR</code></dt>
+           <dd>Used for staging hdfs data in cloud based backups. No effect in non-cloud based backups. You must specify <code>--storage_type</code> as <code>cloud</code>.</dd>
+          </dlentry></dl>
     </dd></dlentry>
   <dlentry>
     <dt><code>tscli snapshot create [-h] <em>name</em> <em>reason</em> <em>ttl</em></code></dt>

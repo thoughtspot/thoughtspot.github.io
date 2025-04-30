@@ -1,6 +1,6 @@
 ---
 title: [Configure columns for the X and Y axes]
-last_updated: 4/29/2020
+last_updated: 5/1/2020
 summary: "You can configure specific columns to be on the X and Y axes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

@@ -1,6 +1,7 @@
 ---
 title: [Configure disaster recovery]
 summary: "Use this procedure to set up a disaster recovery configuration with a primary and a mirror instance."
+last_updated: 8/14/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -17,7 +17,7 @@ You can get pinboards emailed to you on a regular basis and do analysis offline.
 This introduces an additional format for you to consume and share pinboards with
 others, including those who don’t have a ThoughtSpot account.
 
-Run `tscli scheduled-pinboards enable` to enable scheduled Pinboards on your cluster.
+Run `tscli scheduled-pinboards enable` to enable scheduled pinboards on your cluster.
 
 ## Scheduled pinboard creators
 

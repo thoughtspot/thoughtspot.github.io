@@ -51,8 +51,6 @@ The process for creating a worksheet is:
 {: id="create-worksheet"}
 ## Create a worksheet
 
-Create a worksheet to make the data easy for users to search. This process includes adding a new worksheet, after which you will choose the data sources to include in it.
-
 To create a new worksheet:
 
 1. Click **Data**, on the top navigation bar.
@@ -82,16 +80,14 @@ To add sources to your worksheet, follow these steps. The worksheet creation UI 
 
 4. Choose the [worksheet join rule](progressive-joins.html#). Either **apply joins progressively** or **apply all joins**. Applying joins progressively speeds up performance.
 
-5. If you want to disable [Row Level Security]({{ site.baseurl }}/admin/data-security/row-level-security.html#), for this worksheet, check the checkbox to disable it.
+5. If you want to disable [Row Level Security]({{ site.baseurl }}/admin/data-security/row-level-security.html#) for this worksheet, check the checkbox to disable it.
 
 6. Click **CLOSE** to save your changes.
 
-7. Expand the table names under **Columns** and select the columns to add to the worksheet, by doing any of the following:
+7. Expand the table names under **Sources** and select the columns to add to the worksheet, by doing any of the following:
 
     1. To add all of the columns from a table, click the table name and click **+ Add Columns**.
-
     2. To add a single column, double-click its name.
-
     3. To add multiple columns, Ctl+click each column you want to add and click **+ Add Columns**.
 
     Note that after you add a column, non-related tables (those without a primary/foreign key relationship) become hidden. If you are working with two tables that should be related, but are not, you can [add a relationship between them]({{ site.baseurl }}/admin/data-modeling/about-relationships.html#).
@@ -112,7 +108,7 @@ To add sources to your worksheet, follow these steps. The worksheet creation UI 
 
      ![Add a prefix to column names]({{ site.baseurl }}/images/worksheet-create-add-prefix.png "Add a prefix to column names")
 
-15. Click the the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
+15. Click the ellipsis icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline}, and select **Save**.
 
     ![Save your worksheet]({{ site.baseurl }}/images/worksheet-create-save.png "Save your worksheet")
 

@@ -1,6 +1,6 @@
 ---
 title: [How the worksheet join rule works]
-last_updated: 11/18/2019
+last_updated: 8/31/2020
 summary: "The worksheet join rule specifies when to apply joins when searching on a worksheet."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

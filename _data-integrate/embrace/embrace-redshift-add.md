@@ -1,5 +1,5 @@
 ---
-title: [Add a Redshift connection]
+title: [Add an Amazon Redshift connection]
 last_updated: 12/21/2020
 toc: true
 sidebar: mydoc_sidebar
@@ -7,7 +7,7 @@ permalink: /:collection/:path.html
 ---
 Once ThoughtSpot Embrace is enabled, you can add a connection to a Redshift database. This allows you to perform a live query of the external database to create answers and pinboards, without having to bring the data into ThoughtSpot.
 
-## Enabling SSL in Redshift
+## Enabling SSL in Amazon Redshift
 
 If you need to create a secure connection to Amazon Redshift, you must edit the "parameter group" assigned to your Redshift cluster and enable the *require_SSL* flag.
 
