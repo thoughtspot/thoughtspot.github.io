@@ -71,3 +71,5 @@ After the download completes, examine your PDF.
 Notice that the PDF produced in **Pinboard** mode combines the visuals on the page in the same manner as the original Pinboard. Contrast this with the PDF produced in **Visualizations** mode: this PDF combines the small adjacent indicator and KPI visuals at the top, and all other visuals and tables appear on their own page.
 
 ![Comparing Pinboard PDFs]({{ site.baseurl }}/images/pinboard-pdfs.png "Comparing Pinboard PDFs")
+
+{% include content/date-column-download.md %}

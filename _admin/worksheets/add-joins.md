@@ -50,7 +50,7 @@ You must have either the [**Can administer ThoughtSpot** or the **Can manage dat
 
 See this list for information about which joins you can create, and what permissions these joins require.
 
-{% include content/joins-definition-list.md %}
+{% include content/joins-definition-list-cloud.md %}
 
 {% include note.html content="If you create joins at the table level, and then create a Worksheet that uses the columns from the table, the settings are inherited from the table at the point in time that the Worksheet is created. If you then go back and change the settings at the table level, your changes will not be reflected in the Worksheet. If you want the Worksheet to have the changes you made at the table level, you must drop those columns from the Worksheet and re-add them." %}
 

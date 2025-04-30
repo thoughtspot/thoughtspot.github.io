@@ -9,18 +9,24 @@ permalink: /:collection/:path.html
 ---
 Search Assist walks you through simple search scenarios. It demonstrates how anyone can get answers to their data questions by typing in the Search bar.
 
-The initial example asks, ***What were sales for all products in 2019?***
+The initial example asks, ***What were Sales by Product in this year?***
 
-Search Assist guides you to phrase this search as ***sales product 2019***.
+Search Assist guides you to search for ***sales*** and press **Enter** on your keyboard.
 
-The search then returns the Answer as a table.
+The search then returns the Answer as a table, demonstrating your total sales.
 
-![Search Assist First example]({{ site.baseurl }}/images/search-assist.gif "First example with Search Assist")
+Next, you add ***product*** to your search and press **Enter**. Now you see a table with the total sales for each product.
 
-The additional searches also return Answers, either in table form or as chart, to these questions:
+Last, you add ***this year*** to your search and press **Enter**. Now you see a table with the total sales for each product, filtered to only show the data from this year.
 
-- ***What were sales for shirts in 2019, per quarter?***;<br>The correct search here is, ***sales shirts 2019 quarterly***.
+![Search assist example]({{ site.baseurl }}/images/search-assist-example.png "Search assist example")
 
-- ***What were the top-selling products during the last quarter?***;<br>The search here is, ***sales product last quarter top***.
+Search Assist shows you where the filter bar is, and how to view your search as a chart.
 
-- ***How many bags were sold per city over the last 12 months?***;<br>The search is, ***quantity purchased bags last 12 months city***.
+To continue learning how to use Search, select **Try another search**. The additional searches also return Answers, either in table form or as chart, to these questions:
+
+- ***What were the top-selling products during the last quarter?***;<br>The search here is, ***top sales product last quarter***.
+
+- ***What is the quantity purchased of shirts per monthly by city?***;<br>The correct search here is, ***sales shirts monthly city***.
+
+- ***What were sales for shirts in California versus Arizona last week?***;<br>The search is, ***sales shirts california versus arizona last week***.

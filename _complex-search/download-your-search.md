@@ -21,3 +21,5 @@ download your search, click the More icon ![more options menu icon]({{ site.base
 
 Currently, ThoughtSpot limits the maximum number of rows that can be downloaded
 to 10M (default is 1M). Your system limit is configured by your ThoughtSpot administrator.
+
+{% include content/date-column-download.md %}

@@ -1,7 +1,7 @@
 ---
 title: [日本語 Keyword reference]
 summary: Use keywords to help define a search.
-last_updated: 11/19/2019
+last_updated: 04/09/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

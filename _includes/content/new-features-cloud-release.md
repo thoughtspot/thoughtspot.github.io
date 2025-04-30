@@ -1,91 +1,103 @@
 The latest release of ThoughtSpot Cloud contains several new and enhanced features.
 
 <ul>
-<li><a href="{{ site.baseurl }}#feb-cloud-analyst">For the Analyst</a></li>
-<li><a href="{{ site.baseurl }}#feb-cloud-business-user">For the Business User</a></li>
-<li><a href="{{ site.baseurl }}#feb-cloud-data-engineer">For the Data Engineer</a></li>
-<li><a href="{{ site.baseurl }}#feb-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-first">For the First user</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-analyst">For the Analyst</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-business-user">For the Business User</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-data-engineer">For the Data Engineer</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-it-ops-engineer">For the IT Ops Engineer</a></li>
+<li><a href="{{ site.baseurl }}#august-cloud-developer">For the Developer</a></li>
 </ul>
 
-<h3><a id="feb-cloud-analyst"></a>For the Analyst</h3>
+<h3><a id="august-cloud-first"></a>For the First user</h3>
 
 <dl>
-  <dlentry id="scriptability">
-    <dt>Scriptability</dt>
-    <dd><ul><li><p>You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">ThoughtSpot Modeling Language</a>.</p>
-    <p>This feature is in Beta. To enable it, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></li>
-    <li><strong>Export custom SpotApps</strong>: Support for custom SpotApp export is now GA and on by default. You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/app-templates.html">SpotApps</a>.</li></ul>
-</dd></dlentry>
 
- <dlentry id="simplified-join-creation">
-  <dt>Simplified join creation</dt>
-  <dd>This release makes creating and editing joins from a table more flexible and intuitive. Our new joins interface allows you to define and edit the join type and cardinality at the table level, where previously this was only possible at the Worksheet level. Refer to <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html#table-join">Table joins</a>.
-</dd></dlentry>
-
-<dlentry id="pinboard-download-api">
-  <dt>Pinboard Download API</dt>
-  <dd>Use the new Pinboard Download API to programmatically download Pinboards, or specific visualizations from the Pinboards, as PDFs. Refer to <a href="{{ site.baseurl }}/reference/api/pinboard-download-api.html">Pinboard Download API</a>.
-</dd></dlentry>
-
-<dlentry id="spotiq-analyze">
-  <dt>Support for SpotIQ Analyze</dt>
-  <dd><p>In this release, ThoughtSpot Cloud adds support for SpotIQ analyze. Now you can analyze any answer, pinboard visualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="{{ site.baseurl }}/images/icon-lightbulb.png" alt="SpotIQ analyze icon" class="inline"/>. For more information, see <a href="{{ site.baseurl }}/spotiq/customization.html">Custom SpotIQ analysis</a>.</p></dd></dlentry>
-
+<dlentry id="getting-started">
+<dt>Getting started with ThoughtSpot Cloud</dt>
+<dd>The first user on the account has to complete a series of steps before other people can start using ThoughtSpot with your organization’s data. For these instructions, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-getting-started.html">Getting Started with ThoughtSpot Cloud</a>.
+</dd>
+</dlentry>
 </dl>
 
-<h3><a id="feb-cloud-business-user"></a>For the Business User</h3>
+<h3><a id="august-cloud-analyst"></a>For the Analyst</h3>
 
 <dl>
-<dlentry id="home-page-shortcuts">
-<dt>Home page shortcuts</dt>
-<dd><p>You can now create and access quick links to your most-used Answers and Pinboards from the ThoughtSpot One home page. Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">Home page shortcuts</a>.</p>
-<p>ThoughtSpot One may be off in your environment. To enable ThoughtSpot One, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support.</a></p></dd>
-</dlentry>
 
-<dlentry id="internet-explorer">
-  <dt>Deprecation of Internet Explorer</dt>
-<dd>ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a href="{{ site.baseurl }}/end-user/accessing.html">ThoughtSpot browser access</a> for a list of supported browsers.</dd>
+<dlentry id="scriptability">
+<dt>Scriptability</dt>
+<dd><ul><li><strong>Improved import workflow:</strong> The new import workflow for <a href="{{ site.baseurl }}/admin/ts-cloud/scriptability.html">Scriptability</a> identifies errors, suggests solutions, and allows you to resolve these errors as part of the import workflow. It also has a cleaner, more intuitive UI, with separate sections for different object types.</li>
+<li><strong>TML for tables with row-level security:</strong> ThoughtSpot now supports the migration and editing of tables with <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security (RLS)</a> using <a href="{{ site.baseurl }}/admin/ts-cloud/tml.html#syntax-tables">TML</a>.</li>
+</ul></dd>
 </dlentry>
 
 </dl>
 
-<h3><a id="feb-cloud-data-engineer"></a>For the Data Engineer</h3>
+<h3><a id="august-cloud-business-user"></a>For the Business User</h3>
 
 <dl>
-<dlentry id="embrace">
-<dt>Embrace</dt>
-<dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-add-connection.html">Snowflake</a>, and <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-gbq-add-connection.html">Google BigQuery</a>.</dd>
-<dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-passthrough.html">Passthrough functions for Snowflake</a>.</dd>
-<dd>Embrace now supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.</dd>
+<dlentry id="watchlist-metrics">
+<dt>Watchlist metrics</dt>
+<dd>There are several new features for the metrics watchlist on your ThoughtSpot home page:
+<ul><li>You can now open metrics in your watchlist in a new tab by right-clicking on the metric on the home page.</li>
+<li>There is now no limit to the number of metrics you can add to your watchlist.</li></ul>
+Refer to <a href="{{ site.baseurl }}/end-user/thoughtspot-one/thoughtspot-one-homepage.html#quick-links">ThoughtSpot One home page</a> for more information about watchlist metrics.</dd>
+</dlentry>
+
+<dlentry id="scatter-bubble-charts">
+<dt>Minimum and maximum on x-axis for scatter and bubble charts</dt>
+<dd>You can now specify a minimum and maximum value for measures on the x-axis of <a href="{{ site.baseurl }}/end-user/search/about-scatter-charts.html">scatter</a> and <a href="{{ site.baseurl }}/end-user/search/about-bubble-charts.html">bubble</a> charts. For more information on how to add a minimum and maximum value to a chart axis, refer to <a href="{{ site.baseurl }}/end-user/search/chart-axes-options.html#edit">Change axis options</a>.</dd>
+</dlentry>
+
+<dlentry id="deprecations">
+<dt>Deprecations</dt>
+<dd><p>ThoughtSpot is dropping support for the following feature in the August Cloud release. This feature is <strong><em>not</em></strong> available in the August release:</p>
+<ul><li>Ask an Expert</li></ul>
+<p>Refer to <a href="{{ site.baseurl }}/release/deprecation.html#de-support-august-cloud">Deprecation Announcements</a> for more information.</p></dd></dlentry>
+
+</dl>
+
+<h3><a id="august-cloud-data-engineer"></a>For the Data Engineer</h3>
+
+<dl>
+<dlentry id="custom-calendar">
+<dt>Custom calendar enhancements</dt>
+<dd>There are several enhancements for custom calendar in this release:
+<ul><li>Custom calendar offers <span class="badge badge-update">Beta</span> support for Redshift, Teradata, Starburst, Synapse, and SAP Hana connections. These are off by default. To enable them, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a>.</li><li>Streamlined custom calendar window with the ability to preview calendar data.</li>
+<li>Simplified workflow.</li>
+<li>Preview calendar data from custom calendar list</li></ul>
+For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-cust-cal.html">Custom calendar overview</a>.</dd>
 </dlentry>
 </dl>
 
-<h3><a id="feb-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
+<h3><a id="august-cloud-it-ops-engineer"></a>For the IT Ops Engineer</h3>
 
 <dl>
-<dlentry id="new-region-support">
-<dt>New region support</dt>
-<dd>ThoughtSpot Cloud is now available in the following 2 regions, in addition to US East and West, Sydney, and Ireland:
-<ul><li>Frankfurt</li>
-<li>Singapore</li></ul></dd></dlentry>
-
-<dlentry id="search-answers-pinboard">
-<dt>Search on Answers Pinboard</dt>
-<dd>There are several changes to the behavior of the <a href="{{ site.baseurl }}/admin/thoughtspot-one/query-intelligence-pinboard.html">Stats and Trends for Search on Answers Pinboard</a>:
-<ul>
-<li>The Pinboard and its underlying Worksheet, <strong>Discover Monitoring Data</strong>, are now accessible only to admins by default. Admins can share the Pinboard and Worksheet with anyone else who might need this information.</li>
-<li>The Pinboard is populated with your users' Search on Answers data by default. You do not need to contact ThoughtSpot Support to see your users' Search on Answers data in the Pinboard.</li></ul></dd>
+<dlentry id="credit-usage-pinboard">
+<dt>Credit Usage pinboard</dt>
+<dd>The Credit Usage pinboard, a pinboard for monitoring your credit consumption under the consumption-based pricing model, is now accessible from the Admin Console, under <strong>Billing > Credit consumption</strong>.</dd>
 </dlentry>
 
-<dlentry id="pinboard-download-control">
-<dt>Pinboard download control</dt>
-<dd><p>You can now limit or remove the options ThoughtSpot provides for downloading Pinboards and their visualizations. You can allow users to only download Pinboard visualizations in a specific format (such as .csv), or you can restrict access to downloading Pinboards and their visualizations altogether.</p>
-<p>This is a cluster-level feature. You cannot configure permissions for specific users.</p>
-<p>This is an embed-only feature. To enable this functionality, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot Support</a>.</p></dd>
+<dlentry id="saml-mail-field">
+<dt>SAML configuration</dt>
+<dd>When configuring SAML authentication for ThoughtSpot, it is now mandatory to map the <code>mail</code> attribute in the IDP metadata file to the email address of the user. If your company cannot meet this requirement, <a href="{{ site.baseurl }}/admin/misc/contact.html">contact ThoughtSpot support</a>. For more information, refer to <a href="{{ site.baseurl }}/admin/ts-cloud/authentication-integration.html">configure SAML</a>.</dd>
 </dlentry>
 
-<dlentry id="consumption-based-pricing">
-<dt>Consumption-based pricing</dt>
-<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/admin/ts-cloud/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
+<dlentry id="column-summaries">
+<dt>Enable or disable table column summaries</dt>
+<dd>This release allows admins to enable or disable table column summaries for users on the new answer experience, from the <a href="{{ site.baseurl }}/admin/ts-cloud/search-spotiq-settings.html#search">Search & SpotIQ</a> section of the admin console. By default, table column summaries are on. This does not affect the display of summaries for users on the classic answer experience.</dd>
 </dlentry>
+
+<dlentry id="admin-console">
+<dt>UI improvement for help customization</dt>
+<dd>This release improves the UI and user experience of the <a href="{{ site.baseurl }}/admin/ts-cloud/customize-help.html">Help customization</a> section of the admin console.</dd>
+</dlentry>
+
+</dl>
+
+<h3><a id="august-cloud-developer"></a>For the Developer</h3>
+<dl>
+<dd>ThoughtSpot introduces several new features and enhancements to the Developer Portal and Visual Embed SDK. This release also introduces new REST APIs to manage users, user sessions, group privileges, cluster configuration, and metadata objects. </dd>
+
+<dd>For more information, refer to <a href="https://developers.thoughtspot.com/docs/?pageid=whats-new" target="_blank">ThoughtSpot Developer Documentation</a>.</dd>
 </dl>

@@ -1,12 +1,12 @@
 ---
 title: [Introduction to administration]
-last_updated: 09-23-2019
+last_updated: 4/7/2021
 summary: "This guide covers all topics of special interest to application administrators."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-This guide provides information for application administrators, or users with [administrative access privileges]({{ site.baseurl }}/admin/setup/logins.html).
+This guide provides information for application administrators.
 
 Before addressing the major components of this guide, we recommend that you familiarize yourself with the general top-level [architecture]({{ site.baseurl }}/admin/architecture/components.html) of the ThoughtSpot service.
 

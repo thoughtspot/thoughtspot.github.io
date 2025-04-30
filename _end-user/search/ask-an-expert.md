@@ -5,6 +5,8 @@ summary: "Do you need help finding something in your data? Ask an expert to crea
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
+
 At times you may struggle to answer a specific question, build a chart you have in mind, or find something in your data. You can use **Ask an expert** to request help from someone in your organization. Your request goes to the person in your company who best knows the data source you're using and how to search it in ThoughtSpot. When the expert responds, you can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
 
 {% include note.html content="If you don't see **Ask an expert** it's possible that your company has chosen to disable this capability. If you want to try it out, ask your administrator to consider enabling it." %}

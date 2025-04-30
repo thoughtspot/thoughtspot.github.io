@@ -1,6 +1,6 @@
 ---
 title: [Scriptability]
-last_updated: 1/13/2021
+last_updated: 7/1/2021
 summary: "Use Scriptability to export and import Worksheets, Views, tables, Pinboards, and Answers in a human-readable format."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -46,8 +46,9 @@ Refer to the following tables for required permissions for importing and exporti
 
 {: id="export-object"}
 ## Export an object
-You can export [one object at a time](#export-one), or export [more than one object as a zip file](#export-zip-file), or SpotApp. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
+You can export one object at a time, export more than one object as a zip file, or export custom SpotApps. The SpotApp contains a document called the `Manifest` file, which defines the objects you exported, and their underlying data sources. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
 
+<!--
 {: id="export-one"}
 ### Export one object
 To export one object:
@@ -56,17 +57,17 @@ To export one object:
 
 2. Click the three-dot icon, and select **Export TML**.
 
-    ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard")
+    ![Export a Pinboard]({{ site.baseurl }}/images/scriptability-cloud-pinboard-export.png "Export a Pinboard") -->
 
 {: id="export-zip-file"}
-### Export multiple objects
-To export multiple objects at a time, follow these steps. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
+### How to export objects
+To export objects, follow these steps. To export custom SpotApps, refer to [SpotApps]({{ site.baseurl }}/admin/ts-cloud/app-templates.html#export-spotapps).
 
-1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the objects you want to export.
+1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object(s) you want to export.
 
     ![The top navigation bar]({{ site.baseurl }}/images/nav-bar-no-spotiq.png "The top navigation bar")
 
-2. Hover over the objects you want to export, and click the empty checkboxes that appear.
+2. Hover over the object(s) you want to export, and click the empty checkboxes that appear.
 
 3. Select the **Export TML** button.
 
@@ -88,19 +89,19 @@ You can edit the `TML` file in one of two ways. You can [export](#export-object)
 
 {: id="tml-editor"}
 ## Edit, validate, and publish objects using the TML editor
-You can access the TML editor from the object list page, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page.
+You can access the TML editor from the object list page<!--, or from the object itself. To edit and update multiple objects using the TML editor, access it from the object list page-->. It also appears when there is an error when you import TML objects, if you click **Edit**.
 
 To use the TML editor, follow these steps:
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
-2. Click the name of the object you want to edit, or select multiple objects by clicking on the checkboxes that appear when you hover over an object name.
+2. <!-- Click the name of the object you want to edit, or --> Select one or more objects by clicking on the checkboxes that appear when you hover over an object name.
 
-3. From the object list page, select the **Edit TML** button. From the object itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TML**.
+3. From the object list page, select the **Edit TML** button. <!-- From the object itself, select the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen, and select **Edit TML**. -->
 
     ![Edit TML - object list page]({{ site.baseurl }}/images/scriptability-edit-tml-object-page.png "Edit TML - object list page")
 
-    ![Edit TML from object]({{ site.baseurl }}/images/scriptability-edit-tml-object.png "Edit TML from object")
+    <!-- ![Edit TML from object]({{ site.baseurl }}/images/scriptability-edit-tml-object.png "Edit TML from object") -->
 
 4. The TML editor opens. Edit the TML file(s), using the syntax specified in [ThoughtSpot Modeling Language]({{ site.baseurl }}/admin/ts-cloud/tml.html).
 
@@ -139,15 +140,11 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 1. Navigate to the **Answers**, **Pinboards**, or **Data** page from the top navigation bar, depending on the object you want to update.
 
-2. Click the name of the object you want to edit.
+4. Select **Import TML**.
 
-3. Click the ellipsis ![more options menu]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} (more options) menu in the upper-right side of the screen.
+   <!--Here, we are uploading the edited *TCPH WS* worksheet.
 
-4. Select **Update from TML**.
-
-   Here, we are uploading the edited *TCPH WS* worksheet.
-
-   ![Start Worksheet update from file]({{ site.baseurl }}/images/scriptability-worksheet-update.png "Start Worksheet update from file")
+   ![Start Worksheet update from file]({{ site.baseurl }}/images/scriptability-worksheet-update.png "Start Worksheet update from file")-->
 
 5. In the **Import** interface, click **Select .tml or .zip files to upload**.
 
@@ -159,9 +156,17 @@ To update an existing object by downloading the TML file and modifying it, follo
 
 8. The **Import** interface recognizes that an object with this GUID already exists in the system, and asks if you would like to create a new object, or update the existing one. Select **Update existing [object]**.
 
-10. Click **Import selected files**.
+9. If there are errors in any of the objects you are importing, the **Status** column says **Cannot import** for that object. Next to **Cannot import**, you can **View Errors** to see the errors, and a suggested resolution.
 
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
+10. Resolve any errors by selecting the **Edit** button for the object with errors. This opens the [TML editor](#tml-editor). Within the editor, resolve the errors using the method suggested under **View Errors** in the Import workflow.
+
+11. After you resolve the errors, click **Validate**, and then **Save**. Exit the TML editor.
+
+10. Select the objects you want to import. ThoughtSpot automatically selects objects with no errors, but does not select objects with errors, even after you resolve them. You must select the objects yourself.
+
+10. Click **Import selected**.
+
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit to SpotApps** to return to the main object page.
 
 {: id="migrate-object"}
 ## Migrate an object
@@ -189,15 +194,19 @@ To migrate an Answer, Pinboard, View, or Worksheet from one cluster to another, 
 
 8. If you constructed the file correctly, the **Import** interface displays a *Validation successful* message. You can now import the file.
 
-9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload. Here, we only want to import **Brand Revenue** and **Average Revenue by Part**, not **Basic Answer 1**.
+9. If you uploaded a `.zip` file with multiple objects, you can unselect any files in the `.zip` file you do not want to upload.
 
-10. Click **Import selected files**.
+9. If there are errors in any of the objects you are importing, the **Status** column says **Cannot import** for that object. Next to **Cannot import**, you can **View Errors** to see the errors, and a suggested resolution.
 
-    ![Import selected file]({{ site.baseurl }}/images/scriptability-migrate-import-selected.png "Import selected files")
+10. Resolve any errors by selecting the **Edit** button for the object with errors. This opens the [TML editor](#tml-editor). Within the editor, resolve the errors using the method suggested under **View Errors** in the Import workflow.
 
-11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Done** to return to the main object page.
+11. After you resolve the errors, click **Validate**, and then **Save**. Exit the TML editor.
 
-    ![Go to object]({{ site.baseurl }}/images/scriptability-migrate-answers-created.png "Go to object")
+10. Select the objects you want to import. ThoughtSpot automatically selects objects with no errors, but does not select objects with errors, even after you resolve them. You must select the objects yourself.
+
+10. Click **Import selected**.
+
+11. The **Import Status** screen displays the status of the objects you imported. You can open the object(s) that you imported, or click **Exit to SpotApps** to return to the main object page.
 
 ## Limitations of working with TML files
 There are certain limitations to the changes you can apply by editing a Worksheet, Answer, table, View, or Pinboard through TML.

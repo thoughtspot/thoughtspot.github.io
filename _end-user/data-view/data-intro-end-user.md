@@ -22,7 +22,7 @@ was shared with you with the **Edit** privilege. To see how to edit a data
 source, refer to the _ThoughtSpot Administrator Guide_.
 
 Use the filters at the top of the page to find the data you are interested in.
-From the **Data** tab, you can also delete or apply stickers to tables and data
+From the **Data** tab, you can also delete or apply tags to tables and data
 sources in bulk by selecting them and clicking the appropriate action button.
 
 ![]({{ site.baseurl }}/images/manage_data_page.png "Data page")

@@ -8,6 +8,8 @@ toc: true
 permalink: /:collection/:path.html
 ---
 
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
+
 If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable **Ask an Expert**. This lets them request help from someone in your organization.
 
 The request goes to the person in your company who knows the data source very well, and how to search it in ThoughtSpot. The user can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.

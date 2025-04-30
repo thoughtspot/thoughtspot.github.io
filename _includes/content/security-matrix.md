@@ -1,6 +1,7 @@
 <table id="matrix" class="wide_table" style="font-size:10px;">
    <colgroup>
-      <col style="width:36%;">
+      <col style="width:32%;">
+      <col style="width:4%;">
       <col style="width:4%;">
       <col style="width:4%;">
       <col style="width:4%;">
@@ -33,13 +34,13 @@
             <div><span>Create View</span></div>
          </th>
          <th class="rotate">
+            <div><span>Create Embrace Connection</span></div>
+         </th>
+         <th class="rotate">
             <div><span>
                Modify Col. Props.<sup>1</sup>
                </span>
             </div>
-         </th>
-         <th class="rotate">
-            <div><span>Upload Data</span></div>
          </th>
          <th class="rotate">
             <div><span>Download Data</span></div>
@@ -54,7 +55,7 @@
             </div>
          </th>
          <th class="rotate">
-            <div><span>Manage RLS rules</span></div>
+            <div><span>Manage and bypass RLS rules</span></div>
          </th>
          <th class="rotate">
             <div><span>CrUD Relationships</span></div>
@@ -83,6 +84,9 @@
          <th class="rotate">
             <div><span>Use Auto-Analyze</span></div>
          </th>
+         <th class="rotate">
+            <div><span>Access Developer Portal</span></div>
+         </th>
       </tr>
    </thead>
    <tbody>
@@ -103,30 +107,7 @@
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
-      </tr>
-      <tr>
-         <td>
-            <div>Can upload <br> user data</div>
-         </td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
          <td>Y</td>
-         <td>N</td>
-         <td>Y</td>
-         <td>N</td>
-         <td>N</td>
-         <td>
-            <div>Y<sup>3</sup></div>
-         </td>
-         <td>
-            <div>Y<sup>4</sup></div>
-         </td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
       </tr>
       <tr>
          <td>
@@ -144,6 +125,7 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -175,6 +157,7 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
       </tr>
       <tr>
          <td>
@@ -192,6 +175,7 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -219,6 +203,7 @@
          <td>N</td>
          <td>N</td>
          <td>Y</td>
+         <td>N</td>
       </tr>
       <tr>
          <td>
@@ -227,6 +212,22 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>Y</td>
+         <td>N</td>
+         <td>Y</td>
+         <td>Y</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+      </tr>
+      <tr>
+         <td>Has Developer privilege</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -239,6 +240,10 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>Y</td>
       </tr>
       <tr>
          <td>None</td>
@@ -254,6 +259,7 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
+         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>

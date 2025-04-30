@@ -17,7 +17,7 @@ When you create a new user, we recommend that you add them to a user group immed
 {: id="onboarding-valid-email"}
 - **Valid emails**  All users must have valid emails.
 
-  To include users in the onboarding process, each user profile must include a valid email address; see [Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user). [Contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to whitelist email domains.  
+  To include users in the onboarding process, each user profile must include a valid email address; see [Create a user]({{ site.baseurl }}/admin/users-groups/add-user.html#add-user). [Contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html) to whitelist email domains.  
 
 Before starting the onboarding process, an administrator must specify the configuration.
 

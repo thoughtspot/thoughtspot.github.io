@@ -22,6 +22,8 @@ attribute, the function returns the aggregate of the measure grouped by the
 attribute(s). You should experiment with only a measure and then with an
 attribute to see which output best meets your use case.
 
+{% include note.html content="Pivot tables do not support use of group aggregation functions." %}
+
 ## List of group functions
 
 Group aggregation functions have names with formats like `group_<aggregation>`.

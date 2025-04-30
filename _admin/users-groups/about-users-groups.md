@@ -9,11 +9,8 @@ permalink: /:collection/:path.html
 Before people can log in and use ThoughtSpot, you need to create a username, a
 password, and a membership in one or more groups for them.
 
-Before people can log in and use ThoughtSpot, you need to create a username, a
-password, and a membership in one or more groups for them.
-
 This page describes manual creation of users, groups, and privileges, but you
-can also manage users through SAML. 
+can also manage users through SAML.
 
 ## Privileges and groups
 
@@ -43,11 +40,6 @@ automatically have the privileges of the parent group.
 Here are the different privileges, and the capabilities they enable:
 
 {% include content/privileges.md %}
-
-&nbsp;
-
-Typically, the **ALL** group has a common set of privileges applies such as the
-**Can upload user data** and/or **Can download data** privileges.
 
 Privileges are additive, meaning that if a user belongs to more than one group,
 they will have the highest level of privileges from among the groups they are a

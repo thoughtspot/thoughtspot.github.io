@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot Modeling Language]
-last_updated: 2/12/2021
+last_updated: 6/23/2021
 summary: "Use ThoughtSpot Modeling Language to modify a Worksheet, View, table, Pinboard, or Answer, in a flat-file format. Then you can migrate the object to a different cluster, or restore it to the same cluster."
 redirect_from:
 - /admin/ts-cloud/tsl.html
@@ -41,7 +41,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
 Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
 
-{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
+{% include note.html content="If you edit the joins in the Worksheet TML file, you are only editing the joins for that specific Worksheet. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>worksheet_guid</em>&gt;
@@ -70,22 +70,17 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
     <a href="#join_path">join_path</a>:
     - <a href="#join">join</a>:
       - &lt;<em>join_name_1</em>&gt;
+      - &lt;<em>join_name_n</em>&gt;
   - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
     <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
     <a href="#join_path">join_path</a>:
-    - {}
-  - <a href="#id">id</a>: &lt;<em>table_path_name_3</em>&gt;
-    <a href="#table">table</a>: &lt;<em>table_name_3</em>&gt;
-    <a href="#join_path">join_path</a>:
-    - <a href="#join">join</a>:
-      - &lt;<em>join_name_1</em>&gt;
     - <a href="#join">join</a>:
       - &lt;<em>join_name_2</em>&gt;
-      - &lt;<em>join_name_3</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>table_path_name_n</em>&gt;
+    <a href="#table">table</a>: &lt;<em>table_name_n</em>&gt;
+    <a href="#join_path">join_path</a>:
     - <a href="#join">join</a>:
-      - &lt;<em>join_name_4</em>&gt;
-      - &lt;<em>join_name_5</em>&gt;
-      - &lt;<em>join_name_6</em>&gt;
+      - &lt;<em>join_name_n</em>&gt;
   <a href="#formulas">formulas</a>:
   - <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
     <a href="#expr">expr</a>: &lt;<em>formula_definition_1</em>&gt;
@@ -146,6 +141,14 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#properties">properties</a>:
     <a href="#is_bypass_rls">is_bypass_rls</a>: [ true | false ]
     <a href="#join_progressive">join_progressive</a>: [ true | false ]
+  <a href="#lesson_plans">lesson_plans</a>:
+  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_1</em>&gt;
+    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_1</em>&gt;
+  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_2</em>&gt;
+    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_2</em>&gt;
+  - <a href="#lesson_id">lesson_id</a>: &lt;<em>lesson_id_number_n</em>&gt;
+    <a href="#lesson_plan_string">lesson_plan_string</a>: &lt;<em>lesson_plan_string_n</em>&gt;
+
 </pre>
 
 {: id="syntax-views"}
@@ -159,7 +162,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
 Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
 
-{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
+{% include note.html content="If you edit the joins in the View TML file, you are only editing the joins for that specific View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>view_guid</em>&gt;
@@ -188,7 +191,19 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
     <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
     <a href="#join_path">join_path</a>:
-    - {}
+    - <a href="#join">join</a>:
+      - &lt;<em>join_name_1</em>&gt;
+      - &lt;<em>join_name_n</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
+    <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
+    <a href="#join_path">join_path</a>:
+    - <a href="#join">join</a>:
+      - &lt;<em>join_name_2</em>&gt;
+  - <a href="#id">id</a>: &lt;<em>table_path_name_n</em>&gt;
+    <a href="#table">table</a>: &lt;<em>table_name_n</em>&gt;
+    <a href="#join_path">join_path</a>:
+    - <a href="#join">join</a>:
+      - &lt;<em>join_name_n</em>&gt;
   <a href="#formulas">formulas</a>:
   - <a href="#id">id</a>: &lt;<em>formula_id_1</em>&gt;
     <a href="#name">name</a>: &lt;<em>formula_name_1</em>&gt;
@@ -263,7 +278,7 @@ See the [Parameters](#parameters) section for details about the keywords used in
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define an `index_priority` for your table, the `index_priority` parameter does not appear. You can add that variable to the TML file to specify an index priority for the table.
 
-Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax or Worksheet, View, and table joins in TML.
+Refer to [join syntax](#syntax-joins) for more information on the functionality and syntax of worksheet, view, and table joins in TML.
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>table_guid</em>&gt;
@@ -278,8 +293,6 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
   <a href="#columns">columns</a>:
   - <a href="#name">name</a>: &lt;<em>column_name_1</em>&gt;
     <a href="#db_column_name">db_column_name</a>: &lt;<em>database_column_name</em>&gt;
-    <a href="#is_primary_key">is_primary_key</a>: [true | false]
-    <a href="#is_foreign_key">is_foreign_key</a>: [true | false]
     <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
     <a href="#properties">properties</a>:
       <a href="#column_type">column_type</a>: [ MEASURE | ATTRIBUTE ]
@@ -314,13 +327,55 @@ Refer to [join syntax](#syntax-joins) for more information on the functionality 
         - region_name : &lt;<em>region_name_in_UI</em>&gt;
       <a href="#spotiq_preference">spotiq_preference</a>: &lt;<em>spotiq_preference_string</em>&gt;
       <a href="#search_iq_preferred">search_iq_preferred</a>: [ true | false ]
+    <a href="#db_column_properties">db_column_properties</a>:
+      <a href="#data_type">data_type</a>: [ BOOL | VARCHAR | DOUBLE | FLOAT | INT32 | INT64 | DATE | TIME ]
   - <a href="#name">name</a>: &lt;<em>column_name_2</em>&gt;
   - <a href="#name">name</a>: &lt;<em>column_name_n</em>&gt;
+  <a href="#rls_rules">rls_rules</a>:
+    <a href="#tables">tables</a>:
+    - <a href="#name">name</a>: &lt;<em>table_name_1</em>&gt;
+      <a href="#id">id</a> : &lt;<em>optional_table_id</em>&gt;
+      <a href="#fqn">fqn</a> : &lt;<em>optional_GUID_of_table_name</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>table_name_2</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>table_name_n</em>&gt;
+    <a href="#joins">joins</a>:
+    - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
+      <a href="#source">source</a>: &lt;<em>source_table_name</em>&gt;
+      <a href="#destination">destination</a>: &lt;<em>destination_table_name</em>&gt;
+      <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
+      <a href="#on">on</a>: &lt;<em>join_expression_string</em>&gt;
+      <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
+    - <em>...</em>
+    <a href="#table_paths">table_paths</a>:
+    - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
+      <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
+      <a href="#join_path">join_path</a>:
+      - <a href="#join">join</a>:
+        - &lt;<em>join_name_1</em>&gt;
+        - &lt;<em>join_name_n</em>&gt;
+    - <a href="#id">id</a>: &lt;<em>table_path_name_2</em>&gt;
+      <a href="#table">table</a>: &lt;<em>table_name_2</em>&gt;
+      <a href="#join_path">join_path</a>:
+      - <a href="#join">join</a>:
+        - &lt;<em>join_name_2</em>&gt;
+    - <a href="#id">id</a>: &lt;<em>table_path_name_n</em>&gt;
+      <a href="#table">table</a>: &lt;<em>table_name_n</em>&gt;
+      <a href="#join_path">join_path</a>:
+      - <a href="#join">join</a>:
+        - &lt;<em>join_name_n</em>&gt;
+    <a href="#rules">rules</a>:
+    - <a href="#name">name</a>: &lt;<em>rls_rule_name_1</em>&gt;
+      <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_1</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>rls_rule_name_2</em>&gt;
+      <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_2</em>&gt;
+    - <a href="#name">name</a>: &lt;<em>rls_rule_name_n</em>&gt;
+      <a href="#expr">expr</a>: &lt;<em>rls_rule_expression_n</em>&gt;
   <a href="#joins_with">joins_with</a>:
   - <a href="#name">name</a>: &lt;<em>join_name_1</em>&gt;
     <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
     <a href="#destination">destination</a>:
       <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+      <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
     <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
     <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
     <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
@@ -351,7 +406,9 @@ For Worksheets and Views, the join syntax is the following:
 - <a href="#id">id</a>: &lt;<em>table_path_name_1</em>&gt;
   <a href="#table">table</a>: &lt;<em>table_name_1</em>&gt;
   <a href="#join_path">join_path</a>:
-  - {}
+  - <a href="#join">join</a>:
+    - &lt;<em>join_name_1</em>&gt;
+    - &lt;<em>join_name_n</em>&gt;
 </pre>
 
 ### Worksheet and View join functionality and limitations
@@ -370,6 +427,7 @@ Worksheet and View joins have the following limitation:
   <a href="#name">description</a>: &lt;<em>optional_join_description_1</em>&gt;
   <a href="#destination">destination</a>:
     <a href="#name">name</a>: &lt;<em>destination_table_name_1</em>&gt;
+    <a href="#fqn">fqn</a>: &lt;<em>optional_table_guid_1</em>&gt;
   <a href="#on">on</a>: &lt;<em>join_expression_string_1</em>&gt;
   <a href="#type">type</a>: [RIGHT_OUTER | LEFT_OUTER | INNER | OUTER]
   <a href="#is_one_to_one">is_one_to_one</a>: [ false | true ]
@@ -380,7 +438,12 @@ Worksheet and View joins have the following limitation:
 ### Table join functionality and limitations
 With table joins, you can accomplish the following tasks:
 - Add new joins at the table level. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
-- Create generic or range joins at the table level. Previously, you could only create non-generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date</code>. Now, you can create generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code>. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
+- Create generic or range joins at the table level. Previously, you could only create non-generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date</code>. Now, you can create generic joins through the TML, such as <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code>.
+
+    Note that you must have an 'equals' clause before you can have a 'greater than/less than' clause. <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is valid, but <code><em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is not.
+
+    Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
+
 
 - Edit existing joins by changing the name of the join and modifying it to your specifications. Changing the name of the join creates a new join; you must then delete the old join in the UI. Joins only appear in the table TML file of the source table in a join, or the table on the Many side of a Many to One join. You can only add and edit table joins from the TML file of the table on the Many side of the join.
 
@@ -388,8 +451,14 @@ Table joins have the following limitations:
 - You cannot delete a join by removing it from the TML. You must delete it through the UI.
 - You cannot directly edit an existing join; you must rename it, edit it to your specifications, and then delete the old join the UI.
 - Renaming a join creates a new join with that name and does not delete the old join with the original name.
+- When creating generic or range joins, you must have an 'equals' clause before you can have a 'greater than/less than' clause. <code><em><strong>Table1</strong></em>.date = <em><strong>Table2</strong></em>.date AND <em><strong>Table1</strong></em>.date > <em><strong>Table2</strong></em>.start_date AND <em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is valid, but <code><em><strong>Table1</strong></em>.date < <em><strong>Table2</strong></em>.end_date</code> is not.
 
-{% include note.html content="Table join functionality is in Beta; to enable it, contact ThoughtSpot Support." %}
+### Generic joins
+The functionality for generic joins in TML files allows the following elements:
+* Constants: int, double, bool, date, and string
+* Comparison operators: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, and <code>&gt;=</code>
+* Columns
+* Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code>
 
 {: id="syntax-answers"}
 ##  Syntax of the Answer TML file
@@ -399,8 +468,6 @@ The `TML` file for Scriptable Answers has a specific syntax.
 See the [Parameters](#parameters) section for details about the keywords used in this example.
 
 You may not see each of these parameters in your own TML files, depending on whether each variable is explicitly defined. For example, if you did not define any conditional formatting, the `conditional_formatting` variable does not appear. You can add that variable in the TML file to specify conditional formatting.
-
-{% include note.html content="If you edit the joins in the Answer TML file, you are only editing the joins for that specific Answer. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it." %}
 
 <pre>
 <a href="#guid">guid</a>: &lt;<em>answer_guid</em>&gt;
@@ -506,20 +573,28 @@ You may not see each of these parameters in your own TML files, depending on whe
     This is a multi-line description of the pinboard
     Description line 2
   <a href="#visualizations">visualizations</a>:
-  - <a href="#answer">answer</a>:
+  - <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
+    <a href="#answer">answer</a>:
     This section includes all the Answer specification for a visualization, from <code>name</code> to <code>display_mode</code>, in the <a href="#syntax-answers">Answer syntax</a> section above.
-    <a href="#id">id</a>: &lt;<em>viz_id_1</em>&gt;
-  - <a href="#answer">answer</a>:
+  - <a href="#id">id</a>: &lt;<em>viz_id_2</em>&gt;
+    <a href="#answer">answer</a>:
     This section includes all the Answer specification for a second visualization. In this case, the visualization is a headline.
-    <a href="#id">id</a>: &lt;<em>viz_id_2</em>&gt;
     <a href="#display_headline_column">display_headline_column</a>: &lt;<em>headline_column</em>&gt;    
   <a href="#filters">filters</a>:
-  - <a href="#column">column</a>: &lt;<em>filtered_column_name_1</em>&gt;
-    <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
-    <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
-    - value 1
-    - value 2
-  - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
+    - <a href="#column">column</a>:
+      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">primary_filter</a>_column_name_1</em>&gt;
+      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_2</em>&gt;
+      - &lt;<em><a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked_filter</a>_column_name_n</em>&gt;
+      <a href="#oper">oper</a>: &lt;<em>filter_operator</em>&gt;
+      <a href="#values">values</a>: &lt;<em>filtered_values</em>&gt;
+      - value 1
+      - value 2
+      - value n
+      <a href="#excluded_visualizations">excluded_visualizations</a>:
+      - <a href="#id">excluded_viz_id_1</a>
+      - <a href="#id">excluded_viz_id_2</a>
+    - <a href="#column">column</a>: &lt;<em>filtered_column_name_2</em>&gt;
+    <em>...</em>
   <a href="#layout">layout</a>:
     tiles:
     - <a href="#visualization_id">visualization_id</a>: &lt;<em>visualization_id_1</em>&gt;
@@ -586,7 +661,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="column">
     <dt>column</dt>
-    <dd>The id of the column being filtered on.</dd>
+    <dd>The id of the column(s) being filtered on. When a Pinboard contains <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked filters</a>, or filters that affect visualizations based on more than one Worksheet, the primary filter column appears first in the list of columns in the TML. The linked filter column appears after the primary filter column.</dd>
   </dlentry>
 
   <dlentry id="columns">
@@ -619,7 +694,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="connection">
     <dt>connection</dt>
-    <dd>A way to identify the external data warehouse connection that the table resides in.</dd>
+    <dd>A way to identify the external data warehouse connection that the table resides in. To add tables or columns to an Embrace connection, you must specify this parameter.</dd>
   </dlentry>
 
   <dlentry id="currency_type">
@@ -653,7 +728,12 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="db_column_name">
     <dt>db_column_name</dt>
-    <dd>The name of the column in the database. Note that this database is not the same as the data warehouse (Falcon, Amazon Redshift, or Snowflake, for example).</dd>
+    <dd>The name of the column in the database. Note that this database is not the same as the data warehouse (Amazon Redshift or Snowflake, for example).</dd>
+  </dlentry>
+
+  <dlentry id="db_column_properties">
+    <dt>db_column_properties</dt>
+    <dd>The properties of the column in the database. Note that this database is not the same as the data warehouse (Amazon Redshift or Snowflake, for example).</dd>
   </dlentry>
 
   <dlentry id="db_table">
@@ -681,9 +761,14 @@ You may not see each of these parameters in your own TML files, depending on whe
     <dd>If the visualization is a headline, this parameter specifies the column the headline comes from.</dd>
   </dlentry>
 
+  <dlentry id="excluded_visualizations">
+  <dt>excluded_visualizations</dt>
+  <dd>A list of visualizations the Pinboard editor chose to exclude from the filter. Only appears when using <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective filters</a>.</dd>
+</dlentry>
+
   <dlentry id="expr">
     <dt>expr</dt>
-    <dd>The definition of the formula</dd>
+    <dd>The definition of the formula or row level security (RLS) rule. For RLS rules, the syntax for variables in TML should be the same as the syntax of the variables in the rule on the table.</dd>
   </dlentry>
 
   <dlentry id="filters">
@@ -736,7 +821,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="id">
     <dt>id</dt>
-    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
+    <dd>Specifies the id of an object, such as <code>table_paths</code>, <code>formula</code>.<br> For Answers, <code>id</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>id</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.<br> For formulas within Answers, <code>id</code> refers to the display name of the formula. If you do not give your formula a name, it appears as 'Untitled Formula'.</dd>
   </dlentry>
 
   <dlentry id="identity">
@@ -800,16 +885,6 @@ You may not see each of these parameters in your own TML files, depending on whe
     Default: <code>false</code></dd>
   </dlentry>
 
-  <dlentry id="is_primary_key">
-    <dt>is_primary_key</dt>
-    <dd>Determines if the table column is the primary key. Can be <code>true</code> or <code>false</code>.</dd>
-  </dlentry>
-
-  <dlentry id="is_foreign_key">
-    <dt>is_foreign_key</dt>
-    <dd>Determines if the table column is the foreign key. Can be <code>true</code> or <code>false</code>.</dd>
-  </dlentry>
-
   <dlentry id="join">
     <dt>join</dt>
     <dd>Specific join, used in defining higher-level objects, such as table paths<br>
@@ -836,7 +911,7 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="joins">
     <dt>joins</dt>
     <dd><p>Contains a list of joins between the tables and Views.</p>
-    <p>If you edit the joins in the Worksheet or View TML file, you are only editing the joins for that specific Worksheet or View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file. Modifying table-level joins is in Beta; contact ThoughtSpot Support to enable it.</p>
+    <p>If you edit the joins in the Worksheet or View TML file, you are only editing the joins for that specific Worksheet or View. You are not editing the joins at the table level. To modify table-level joins, you must edit the source table's TML file.</p>
     <p>Each join is identified by <code>name</code>, and the additional attributes of <code>source</code>, <code>destination</code>, <code>type</code>, and <code>is_one_to_one.</code></p>
     </dd>
   </dlentry>
@@ -851,6 +926,21 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dlentry id="layout">
     <dt>layout</dt>
     <dd>Specifies the Pinboard layout, in the order that a <code>visualization_id</code> is listed.</dd>
+  </dlentry>
+
+  <dlentry id="lesson_plan_string">
+    <dt>lesson_plan_string</dt>
+    <dd>A string that represents the fully disambiguated search query used in a <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson on a Worksheet. For example, <code>"What is the [Quantity] of items from [Customer Nation].'egypt' per [Datekey].'day of week' by [Color] ?"</code>. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
+  </dlentry>
+
+  <dlentry id="lesson_plans">
+    <dt>lesson_plans</dt>
+    <dd>A list of <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lessons for the Worksheet.</dd>
+  </dlentry>
+
+  <dlentry id="lesson_id">
+    <dt>lesson_id</dt>
+    <dd>The id of the <a href="{{ site.baseurl }}/admin/ts-cloud/search-assist-coach.html">Search Assist Coach</a> lesson. For example, the first lesson to appear to users has an id of <code>0</code>, the next lesson has an id of <code>1</code>, and so on.</dd>
   </dlentry>
 
   <dlentry id="locked">
@@ -870,8 +960,8 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="name">
     <dt>name</dt>
-    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>joins</code>, <code>formula</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code>, <code>destination</code>, and so on.<br>
-    For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>The name of an object. Applies to <code>worksheet</code>, <code>table</code>,<code>joins</code>, <code>formula</code>, <code>rls_rules</code>, <code>answer</code>, <code>pinboard</code>, <code>view</code>, <code>table</code>, <code>connection</code>, <code>destination</code>, and so on.<br>
+    For Answers, <code>name</code> refers to how the column appears in the query. For example, if you sorted by <code>Quarter</code> in your search, from the <code>Commit Date</code> column, the <code>name</code> of the column is <code>Quarter(Commit Date)</code>. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
   <dlentry id="on">
@@ -921,9 +1011,19 @@ You may not see each of these parameters in your own TML files, depending on whe
   <dd>Range for the conditional formatting to apply to, with a specified <code>min</code> and <code>max</code>.</dd>
   </dlentry>
 
+  <dlentry id="rls_rules">
+  <dt>rls_rules</dt>
+  <dd>A container for the full definition of <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security</a> rules for the table.</dd>
+  </dlentry>
+
   <dlentry id="rule">
   <dt>rule</dt>
   <dd>A conditional formatting rule.</dd>
+  </dlentry>
+
+  <dlentry id="rules">
+  <dt>rules</dt>
+  <dd>A container for the names and expressions of <a href="{{ site.baseurl }}/admin/data-security/row-level-security.html">row level security</a> rules for the table.</dd>
   </dlentry>
 
   <dlentry id="schema">
@@ -933,7 +1033,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="search_query">
     <dt>search_query</dt>
-    <dd>A string that represents the fully disambiguated search query. Used in Answers and Views. Refer to <a href="{{ site.baseurl }}/reference/api/search-data-api.html#components">Components of a Search Query</a> to understand syntax.</dd>
+    <dd>A string that represents the fully disambiguated search query. Used in Answers and Views. Refer to <a href="https://developers.thoughtspot.com/docs/?pageid=search-data-api">Components of a Search Query</a> to understand syntax.</dd>
   </dlentry>
 
 <!--
@@ -1003,7 +1103,7 @@ You may not see each of these parameters in your own TML files, depending on whe
 
   <dlentry id="tables">
     <dt>tables</dt>
-    <dd>List of tables used by the Worksheet or Answer.<br> Each table is identified by <code>name</code>.</dd>
+    <dd>List of tables used by the worksheet, answer, or table RLS rule.<br> Each table is identified by <code>name</code>.</dd>
   </dlentry>
 
   <dlentry id="type">

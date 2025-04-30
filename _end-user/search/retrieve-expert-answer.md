@@ -5,6 +5,8 @@ summary: "Learn how to find an answer from an expert."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the May Cloud release. For details, see Deprecation Announcements." %}
+
 When you use **Ask an expert** to get help, you can view the answer after the expert responds.
 
 To view the answer:

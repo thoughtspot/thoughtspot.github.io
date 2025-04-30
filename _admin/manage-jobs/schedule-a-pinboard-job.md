@@ -1,37 +1,33 @@
 ---
 title: [Schedule a pinboard job]
 
-last_updated: tbd
-summary: "You can schedule a pinboard job for any pinboard by using the Add a schedule prompt page."
+last_updated: 6/21/2021
+summary: "You can schedule or modify a pinboard job for any pinboard by using the Add a schedule prompt page."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 You can add multiple schedules with different configurations for a single
-pinboard. However, each job is limited to one pinboard schedule. To add
+pinboard. However, each job is limited to one pinboard schedule. To add or modify
 a schedule, you must either be an administrator or have the schedule pinboard privilege, and
 at least edit-only and view-only access to the pinboard.
 
 To schedule a pinboard:
 
 1. Sign in to ThoughtSpot from a browser.
-2. Click **Pinboards**, on the top navigation bar.
-
-     ![]({{ site.baseurl }}/images/click-pinboards.png "Pinboards")
+2. Select **Pinboards**, on the top navigation bar.
 
 3. Select the pinboard you want to create a schedule for.
-4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
+4. Click the ellipses icon ![more options menu icon]({{ site.baseurl }}/images/icon-more-10px.png){: .inline} and select **Manage schedules** to view all of the schedules set for the pinboard.
 
-     ![]({{ site.baseurl }}/images/view_schedules.png "View pinboard schedules")
+     ![View pinboard schedules]({{ site.baseurl }}/images/pinboard-view-schedule.png "View pinboard schedules")
 
-5. Click **+ Schedule** to add a new schedule.
+5. Click **+ Schedule** to add a new schedule. To modify a schedule, click on the schedule you would like to edit.
 
-    ![]({{ site.baseurl }}/images/new_pinboard_schedule.png "Add a new pinboard schedule")
-
-     On the **Add a Schedule** page, you create a new schedule for your pinboard.
-
-    ![]({{ site.baseurl }}/images/scheduled_pinboards_1.png "Set the pinboard schedule")
+    ![Add a new pinbaord schedule]({{ site.baseurl }}/images/pinboard-add-schedule.png "Add a new pinboard schedule")
 
 6. Set the values for your schedule.
+
+    ![Set the pinboard schedule]({{ site.baseurl }}/images/pinboard-schedule-create.png "Set the pinboard schedule")
 
     <table>
      <tr>
@@ -44,7 +40,7 @@ To schedule a pinboard:
      </tr>
      <tr>
        <th>Name</th>
-       <td>Provide a short name for this schedule, <code>Monthly Report Source</code> is an example of a good name.</td>
+       <td>Provide a short name for this schedule.</td>
      </tr>
      <tr>
        <th>Description</th>
@@ -60,11 +56,17 @@ To schedule a pinboard:
      <p>At the scheduled time, ThoughtSpot checks the gating condition, and, if the condition returns true, processes the pinboard. For a list of valid formulas, see the <a href="{{"/reference/formula-reference.html" | prepend: site.baseurl }}">Formula function reference</a>.</p></td>
      </tr>
      <tr>
+     <th>Embedded link format</th>
+     <td>If your ThoughtSpot environment is embedded, select <strong>Embedded link format</strong> to generate a URL for your host application context. This option allows you to ensure that the links to the object in email notifications go to the appropriate application URL.</td>
+     </tr>
+     <tr>
        <th>Recipients</th>
-       <td><p>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your ThoughtSpot admin must have set your whitelist domains. Contact ThoughtSpot Support to set your whitelist domains.</p>
+       <td><p>You are limited to 1000 recipients per job. You can add <b>Users or groups</b> to enter ThoughtSpot users or groups. Use <b>Emails</b> to add recipients that are not ThoughtSpot users. Any users your ThoughtSpot admin must have set your whitelist domains. <a href="{{ site.baseurl }}/admin/misc/contact.html">Contact ThoughtSpot Support</a> to set your whitelist domains.</p>
        <p>If you experience problems with sending email, your cluster may not have SMTP enabled. Contact your system administrator to resolve this issue.</p>
        </td>
      </tr>
    </table>
 
-7. Click **Schedule** to save your schedule configuration.
+7. Click **Schedule** to save your new schedule, or **Save** to save your modified schedule.
+
+{% include content/date-column-download.md %}
