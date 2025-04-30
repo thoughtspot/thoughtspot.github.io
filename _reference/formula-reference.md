@@ -1,6 +1,7 @@
 ---
 title: [Formula function reference]
 keywords: tbd
+tags: [formulas]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,7 +18,7 @@ formulas.
 
 {% include content/operators.md %}
 
-## Aggregate functions
+## Aggregate functions (group aggregate)
 
 These functions can be used to aggregate data.
 

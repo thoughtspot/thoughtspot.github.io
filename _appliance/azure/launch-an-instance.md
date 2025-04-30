@@ -126,9 +126,7 @@ processes do not get blocked.
    | 4001  | HTTP         |  Data Cache Debugging         |
 
 
-   {% include note.html content="ThoughtSpot requires that nodes purchased from
-Azure must be reachable to each other so that they can communicate and form a
-distributed environment. ThoughtSpot only requires that those ports be accessible
+   {% include note.html content="ThoughtSpot requires that nodes purchased from Azure must be reachable to each other so that they can communicate and form a distributed environment. ThoughtSpot only requires that those ports be accessible
 between nodes within a cluster.  Use your discretion about whether
 to restrict public access or not for all nodes/all ports" %}
 
@@ -150,15 +148,17 @@ When you are satisfied with the virtual machine setup, click **Create**.
 
 ### Prepare for starting up ThoughtSpot
 
-_Prerequisite_: To log in to the VM, you will need the private key that is
-available in the image. You can obtain this from your ThoughtSpot contact.
+_Prerequisite_: To log in to the VM, you will need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
 
 1. Obtain the VM’s public and private IP addresses.
 
-   - To see the public IP, click on the VM name link. This will show the public IP of the VM.
-   - To see the private IP click on Networking (below SETTINGS on the left side of the screen).
+   - To see the public IP, click the VM name link. This will show the public IP of the VM.
+   - To see the private IP click Networking (below SETTINGS on the left side of the screen).
 
 2. Connect to the VM via SSH, using the private key provided for the admin user.
+
+   - You must file a support ticket to obtain this private key; it is necessary for the first login.
+   - This key is different from the credentials and|or private keys supplied in earlier steps, which do not work in this context.
 
 3. Update the password for both the `admin` and the `thoughtspot` users.
 
@@ -172,7 +172,7 @@ that will be part of the ThoughtSpot cluster.
 
 ### Add Storage Disks
 
-1. Go back to the VM and click on it.
+1. Go back to the VM and click it.
 2. Add 2 SSD disks of 1TB each.
 3. Click **Add data disk** and choose **Create disk from the menu**.
 4. Create one mode data disk (demo-disk2) and save them both.
@@ -248,22 +248,15 @@ keep a backup to copy after any subsequent cluster creation or update." %}
    ```
    $ sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
-   DEVICE=eth0
-   ONBOOT=yes
-   BOOTPROTO=dhcp
-   HWADDR=<Add eth0 MAC>
-   TYPE=Ethernet
-   USERCTL=no
-   PEERDNS=yes
-   IPV6INIT=no
+   DEVICE=eth0 ONBOOT=yes BOOTPROTO=dhcp HWADDR=<Add eth0 MAC> TYPE=Ethernet USERCTL=no PEERDNS=yes IPV6INIT=no
    ```
 
 3. Do not reboot any of the nodes, until these changes are made to each node:
 
-   a. Open the file /etc/default/grub in an editor:
+   a. Open the grub file  /update/etc/default/grub in an editor:
 
       ```
-      $ sudo vi /etc/default/grub
+      $ sudo vi /update/etc/default/grub
       ```
 
    b. Change the line:
@@ -278,13 +271,12 @@ keep a backup to copy after any subsequent cluster creation or update." %}
       ```
 
     c. Save your changes.
-    d. cp -pv /etc/default/grub /update/etc/default/grub
 
 4. Issue these commands:
 
    ```
+   $ sudo cp /update/etc/default/grub /etc/default/
    $ rm /usr/local/scaligent/bin/setup-net-devices.sh
    ```
 
-5. Reboot the nodes and connect via ssh to prove connectivity.
-6. Contact ThoughtSpot SRE to proceed with post-installation tasks.
+5. Reboot the nodes.

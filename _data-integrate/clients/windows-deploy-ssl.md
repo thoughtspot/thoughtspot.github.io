@@ -88,7 +88,7 @@ and then test the connection.
     ![]({{ site.baseurl }}/images/windows-odbc-custom-CACert-property.png "client settings")
     ![]({{ site.baseurl }}/images/windows-odbc-cert-and-SSL.png "client settings")
 
-6. When you are done, press **OK** to save your new properties.
+6. When you are done, click **OK** to save your new properties.
 7. Click **Test Connection** to test your database connection.
 
     ![]({{ site.baseurl }}/images/windows-odbc-success.png "Success")

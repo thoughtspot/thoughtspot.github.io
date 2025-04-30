@@ -31,7 +31,7 @@
             </div>
          </th>
          <th class="rotate">
-            <div><span>Create Agg WS</span></div>
+            <div><span>Create View</span></div>
          </th>
          <th class="rotate">
             <div><span>
@@ -79,11 +79,6 @@
             <div><span>Schema Viewer</span></div>
          </th>
          <th class="rotate">
-            <div><span>Use Data Connect
-               </span>
-            </div>
-         </th>
-         <th class="rotate">
             <div><span>Use Scheduler</span></div>
          </th>
          <th class="rotate">
@@ -93,7 +88,7 @@
    </thead>
    <tbody>
       <tr>
-         <td>Has administration privilege </td>
+         <td>Can administer ThoughtSpot </td>
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
@@ -109,11 +104,10 @@
          <td>Y</td>
          <td>Y</td>
          <td>Y</td>
-         <td>Y</td>
       </tr>
       <tr>
          <td>
-            <div>Can upload user data</div>
+            <div>Can upload <br> user data</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -129,7 +123,6 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -152,7 +145,6 @@
          <td>
             <div>Y<sup>4</sup></div>
          </td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -182,57 +174,12 @@
          </td>
          <td>Y</td>
          <td>N</td>
-         <td>Y</td>
          <td>N</td>
          <td>N</td>
       </tr>
       <tr>
          <td>
-            <div>Can Auto-Analyze</div>
-         </td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>
-            <div>Y<sup>4</sup></div>
-         </td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>Y</td>
-      </tr>
-      <tr>
-         <td>Can schedule pinboards</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>
-            <div>Y<sup>4</sup></div>
-         </td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>N</td>
-         <td>Y</td>
-         <td>N</td>
-      </tr>
-      <tr>
-         <td>
-            <div>Can share with all users</div>
+            <div>Can share with <br> all users</div>
          </td>
          <td>N</td>
          <td>N</td>
@@ -251,7 +198,28 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
+      </tr>
+      <tr>
+         <td>
+            <div>Can Auto-Analyze (SpotIQ privilege)</div>
+         </td>
          <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>
+            <div>Y<sup>4</sup></div>
+         </td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>N</td>
+         <td>Y</td>
       </tr>
       <tr>
          <td>
@@ -266,7 +234,6 @@
          <td>N</td>
          <td>N</td>
          <td>Y</td>
-         <td>N</td>
          <td>N</td>
          <td>N</td>
          <td>N</td>
@@ -293,10 +260,9 @@
          <td>N</td>
          <td>N</td>
          <td>N</td>
-         <td>N</td>
       </tr>
       <tr>
-      <td colspan="17" id="widefootnote" style="font-size: 6px;">
+      <td colspan="16" id="widefootnote" style="font-size: 10px;">
         <p>Table notes:</p>
         <ol>
               <li>Applies to non-owners only.</li>

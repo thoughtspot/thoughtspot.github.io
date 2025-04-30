@@ -25,9 +25,19 @@ You can use the REST API to do things like:
 -   Generate dynamic picklists on your Web page.
 -   Display a single value.
 -   Retrieve the data to populate a visualization drawn by your own renderer.
+-   Pull data directly from ThoughtSpot
 
 Remember that the data you retrieve from ThoughtSpot is live data, so whenever the Web page is rendered, the current value(s) will be shown.
+
+## Direct Search-to-Embed API
+
+The [Direct Search-to-Embed API]({{ site.baseurl }}/app-integrate/data-api/direct-search-to-embed.html#) enables searching directly from an external application or web page to pull data from ThoughtSpot. This feature was introduced in ThoughtSpot 5.0. When using it, you can access data stored in ThoughtSpot directly. You do not need to save a search result to a pinboard and then reference it using the visualization's URL.
 
 ## Public API reference
 
 You can find more information on our public APIs in the [Reference guide]({{ site.baseurl }}/app-integrate/reference/public-api-reference.html#).
+
+# Related information
+
+- [API Reference guide]({{ site.baseurl }}/app-integrate/reference/public-api-reference.html#).
+- [Direct Search-to-Embed API]({{ site.baseurl }}/app-integrate/data-api/direct-search-to-embed.html#).

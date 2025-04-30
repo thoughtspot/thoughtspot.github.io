@@ -1,26 +1,34 @@
 allowed-tags:
- - TQL
- - tsload
- - Upload
- - Modeling
- - Pinboard
- - SAML_LDAP_AD
- - Supportability
- - SysAdmin
- - tscli
- - Geomaps
- - overview
- - customize
- - spotiq
- - tutorial
- - tipsntricks
- - groups
- - dates
- - time
- - keywords
- - performance
- - indexing
- - rls
  - bestpractices
+ - cloud
+ - customize
+ - dates
+ - formulas
+ - Geomaps
+ - groups
+ - help
+ - indexing
+ - keywords
  - limitations
  - logs
+ - Modeling
+ - networking
+ - overview
+ - performance
+ - Pinboard
+ - rls
+ - r-scripts
+ - SAML_LDAP_AD
+ - security
+ - spotiq
+ - style
+ - Supportability
+ - SysAdmin
+ - tipsntricks
+ - time
+ - TQL
+ - tscli
+ - tsload
+ - tutorial
+ - Upload
+ - vm

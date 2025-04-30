@@ -1,4 +1,3 @@
-
 <table>
 <colgroup>
    <col style="width:25%" />
@@ -52,6 +51,27 @@
       <td><code>cumulative_sum</code></td>
       <td>Takes a measure and one or more attributes. Returns the sum of the measure, accumulated by the attribute(s) in the order specified.</td>
       <td><code class="highlighter-rouge">cumulative_sum (revenue, order date)</code></td>
+    </tr>
+    <tr>
+      <td><code>group_aggregate</code></td>
+      <td>
+      Takes a measure and, optionally, attributes and filters. These can be used
+      to aggregate measures with granularities and filters different from the
+      terms/columns used in the search. Especially useful for comparison
+      analysis. <br /><br />
+      This formula takes the form:
+      group_aggregate (< aggregation (measure) >, < groupings >, < filters >)<br /><br />
+      Lists can be defined with {} and
+      optional list functions <code class="highlighter-rouge">query_groups</code> or
+      <code class="highlighter-rouge">query_filters</code>, which by default
+      specify the lists or filters used in the original search. Plus (+) or (-)
+      can be used to add or exclude specific columns for query groups.
+      </td>
+      <td><code class="highlighter-rouge">group_aggregate (sum (revenue) , {ship mode, date} , {} )</code><br /><br />
+      <code class="highlighter-rouge" >group_aggregate (sum (revenue) , {ship mode , date}, {day_of_week (date) = 'friday'} )</code><br /><br />
+      <code class="highlighter-rouge">group_aggregate (sum (revenue) , query_groups() , query_filters() )</code><br /><br />
+      <code class="highlighter-rouge">group_aggregate (sum (revenue) , query_groups() + {date} , query_filters() )</code>
+      </td>
     </tr>
     <tr>
       <td><code>group_average</code></td>
@@ -132,6 +152,17 @@
       <td><code>moving_sum</code></td>
       <td>Takes a measure, two integers to define the window to aggregate over, and one or more attributes. The window is (current - Num1…Current + Num2) with both end points being included in the window. For example, “1,1” will have a window size of 3. To define a window that begins before Current, specify a negative number for Num2. Returns the sum of the measure over the given window. The attributes are the ordering columns used to compute the moving sum.</td>
       <td><code class="highlighter-rouge">moving_sum (revenue, 1, 1, order date)</code></td>
+    </tr>
+    <tr>
+      <td><code>rank</code></td>
+      <td>Returns the rank for the current row. Identical values receive an identical rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
+      <td><code class="highlighter-rouge">rank (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank (sum (revenue) , ‘desc' )</code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>rank_percentile</code></td>
+      <td>Returns the percentile rank for the current row. Identical values are assigned an identical percentile rank. Takes an aggregate input for the first argument. The second argument specifies the order, <code>'asc' | 'desc'</code>.</td>
+      <td><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'asc' )</code><br><code class="highlighter-rouge">rank_percentile (sum (revenue) , 'desc' )</code></td>
     </tr>
     <tr>
       <td><code>stddev</code></td>

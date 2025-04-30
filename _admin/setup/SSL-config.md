@@ -10,7 +10,7 @@ permalink: /:collection/:path.html
 You should use SSL (secure socket layers) for sending data to and from ThoughtSpot. SSL provides authentication and data security. This section applies to both SSL to enable secure HTTP and secure LDAP.
 
 ## About SSL
-Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you'll need your company's own SSL certificate. The certificate is issued per domain, so if you want to use SSL for both HTTP and LDAP, you will need two separate certificates - one for the HTTP domain and one for the LDAP domain.
+Many IT departments require SSL for their applications that access data. To use SSL with ThoughtSpot, you'll need your company's own SSL certificate. The certificate is issued per domain (service), so if you want to use SSL for both HTTP(S) and LDAP(S), you will need two separate certificates - one for the HTTPS domain and one for the LDAPS domain.
 
 If you do not have an SSL certificate:
 
@@ -26,8 +26,10 @@ When you apply for the SSL certificate, you may specify a SAN, wildcard, or sing
 
 This procedure shows how to add SSL (secure socket layers) to enable secure HTTP (HTTPS) in ThoughtSpot. To set up SSL, you will need:
 
--   The SSL certificate
--   The private key
+-   The SSL certificate chain in .PEM format. This format has X.509v3 file containing ASCII (Base64) armored data packed between a “BEGIN" and "END" directive. It can be a bundle of certificates.
+-   The private key in compatible .PEM format. It should not be password/passphrase protected.
+
+**_NOTE:_** Do not use a passphrase while creating the cert. Invoke the command, `openssl rsa -check -in pk.key` to verify if you're prompted to specify a passphrase. If yes, then you need to remove the passphrase to use the key.
 
 To install the SSL certificate:
 
@@ -57,18 +59,52 @@ To install the SSL certificate:
 
 ## Set the recommended TLS version
 
-There are a couple of security vulnerabilities due to SSL certificates supporting older versions of TLS (Transport Layer Security). This procedure shows you how to set the recommended TLS version to avoid these vulnerabilities.
+This procedure shows you how to set the recommended TLS version. This helps avoid exposure of your ThoughtSpot service to known vulnerabilities.
 
-The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1 and recommends TLS v1.2.
+The PCI (Payment Card Industry) Data Security Standard and the FIPS 140-2 Standard require a minimum of TLS v1.1. TLS v1.2 is recommended for both.
 
-ThoughtSpot supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2. Therefore, to set the recommended TLS version:
+ThoughtSpot ships with v1.2 set as default. However, it supports SSL v3, TLS v1.0, and TLS v1.1 for backwards compatibility. However, the recommended version is TLS v1.2 and is now set as default.
 
-1.  Enable your web browser to support TLS v1.2. This can be done in your browser's advanced settings.
-2.  Log in to the Linux shell using SSH..
-3.  Issue the following command:
+To discover supported TLS versions, log into any ThoguhtSpot node using SSH and issue the following commands.
+    ```
+    tscli ssl set-min-tls-version --help
+    ```
+To change the TLS version, issue the following commands as an example.
 
     ```
-    tscli ssl set-min-version 1.2
+    tscli ssl set-min-version 1.1
     ```
 
-    This will block all usage of older versions.
+    This will enable TLS version 1.1 and higher on ThoughtSpot.
+
+## Configuration string for load balancers
+When enabling SSL support on a load balancer's server-side SSL client profile, use the following list of ciphers to ensure compatibility between the load balancer and ThoughtSpot.
+```
+EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+```
+
+The following ciphers are currently supported in ThoughtSpot:
+
+```
+|   TLSv1.2:
+|     ciphers:
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 - strong
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA - strong
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 - strong
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 - strong
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 - strong
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA - strong
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 - strong
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 - strong
+|     compressors:
+|       NULL
+|_  least strength: strong
+```
+
+You can retrieve these from the ThoughtSpot web server (not against the load balancer) by running the following command on any ThoughtSpot node:
+
+```
+nmap --script ssl-enum-ciphers -p 443 <ThoughtSpot_node_IP_address>
+```
+
+You must ensure that your load balancer supports these ciphers.

@@ -31,17 +31,20 @@ You can increase the SpotIQ's effectiveness by ensuring you are practicing good
 data modeling. This is true if you are user uploading the occasional data file
 or a data management professional. Modeling data requires that you can:
 
-1. Click on the **DATA** icon, to get to the data management listing.
-2. Click on a data source you own or can edit.
+1. Click **Data** to get to the data management listing.
+
+2. Click a data source you own or can edit.
+
     This brings up the **Columns** screen, where you'll make your modeling settings.
+
 3. Modify one or more column settings.
+
 4. Save your changes.
 
     If you worked through the SpotIQ tutorial, you can try experiment on the
     **FoodDollarDataReal** data you uploaded.
 
-Make sure you set the [**INDEX PRIORITY**]({{ site.baseurl
-}}/admin/data-modeling/change-column-priority.html) for columns in your data
+Make sure you set the **INDEX PRIORITY** for columns in your data
 source. Use a value between 8-10 for important columns to improve their search
 ranking. Use 1-3 for low priority columns. **INDEX PRIORITY** impacts user-based
 ranking which helps SpotIQ focus its analysis.

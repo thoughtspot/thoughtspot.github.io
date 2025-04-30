@@ -6,9 +6,10 @@ sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
-The page explains, through an example, how to embed a visualization (table or
+This page explains, through an example, how to embed a visualization (table or
 chart) or pinboard from ThoughtSpot in your own static Web page, portal, or
 application.
+
 To build this sample, you need to have access to a text editor and
 a ThoughtSpot instance with a visualization. You should also have some
 experience working with Javascript.
@@ -20,17 +21,24 @@ already exists. If the pinboard or visualization doesn't exist, create it now
 before continuing.
 
 1. Log in to ThoughtSpot from a browser.
+
 2. Navigate to a visualization on the **Pinboard** tab.
+
 3. Open a pinboard.
+
 3. Copy the URL for the entire pinboard and for a single visualization.
 
-   If the object is a pinboard, click **Actions > Copy Link**.
+   If the object is a pinboard, click the ellipses icon
+   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
+    **Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-1.png "Pinboard Link")
 
    The format for the link is:  `<protocol>:<host>:<port>/#/embed/viz/<pinboardID>`
 
-   For a vizualization in a pinboard, click **Actions > Copy Link**.
+   For a vizualization in a pinboard, click the ellipses icon 
+   ![more options menu icon]({{ site.baseurl }}/images/icon-ellipses.png){: .inline} >
+    **Copy Link**.
 
    ![]({{ site.baseurl }}/images/embed-link-2.png "Visualization Link")
 

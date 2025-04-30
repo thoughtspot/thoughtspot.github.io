@@ -8,13 +8,13 @@ permalink: /:collection/:path.html
 ---
 To upload your own default and wide application logos:
 
-1. Click on the default icon under **Application Logo (Default)** to browse for and select your own default logo.
+1. Click the default icon under **Application Logo (Default)** to browse for and select your own default logo.
 
      ![]({{ site.baseurl }}/images/application_logo_default.png "Application Logo (Default)")
 
     Your icon image should be a square, and the recommended size is 140px by 140px. The accepted file formats are jpg, jpeg, and png. This logo will appear on the top left of the interface.
 
-2. Next click on the wide icon under **Application Logo (Wide)** to browse for and select your own wide logo.
+2. Next click the wide icon under **Application Logo (Wide)** to browse for and select your own wide logo.
 
      ![]({{ site.baseurl }}/images/application_logo_wide.png "Application Logo (Wide)")
 

@@ -14,11 +14,11 @@ a set of privileges for its users.
 To create a group and add privileges for the group:
 
 1. Log into ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
+2. Click the **Admin** icon, on the top navigation bar.
 
     ![]({{ site.baseurl }}/images/admin_icon.png)
 
-3.  In the **Admin** panel, click on **User Management** and **Groups**.
+3.  In the **Admin** panel, click **User Management** and **Groups**.
 
     ![]({{ site.baseurl }}/images/manage_groups_3.2.png "Manage Groups")
 
@@ -94,9 +94,9 @@ parent group it may have. Keep this in mind when adding users.
 
 To edit or delete an existing group:
 
-1. Log into ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
-3. In the **Admin** panel, click on **User Management** and **Groups**.
+1. Log into ThoughtSpot.
+2. Click the **Admin** icon, on the top navigation bar.
+3. In the **Admin** panel, click **User Management** and **Groups**.
 
     ![]({{ site.baseurl }}/images/manage_groups_3.2.png "Manage Groups")
 
@@ -116,7 +116,7 @@ users are present, you must search for the specific user name.
    The system displays the **Admin** panel.
 
 2. Select **User Management**.
-3. Click on a group to edit it.
+3. Click a group to edit it.
 
    The system displays the **Edit group** dialog.
 
@@ -132,9 +132,9 @@ users are present, you must search for the specific user name.
 
 You can add multiple users to a group using one button. To add multiple users to a group:
 
-1. Log into ThoughtSpot from a browser.
-2. Click on the **Admin** icon, on the top navigation bar.
-3.  In the **Admin** panel, click on **User Management** and **Users**.
+1. Log into ThoughtSpot.
+2. Click the **Admin** icon, on the top navigation bar.
+3.  In the **Admin** panel, click **User Management** and **Users**.
 
      ![]({{ site.baseurl }}/images/manage_users_3.2.png "Manage Users")
 

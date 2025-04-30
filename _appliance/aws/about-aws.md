@@ -1,11 +1,12 @@
 ---
-title: [AWS node overview]
+title: [AWS cluster overview]
 keywords: aws,appliance,overview
+tags: [cloud,vm]
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-AWS can provide lots of memory and CPU for your ThoughtSpot instance, and it can
+Amazon Web Services (AWS) can provide lots of memory and CPU for your ThoughtSpot instance, and it can
 be easily updated from development instances.
 
 Your database capacity will determine the number of instances you'll need and
@@ -20,7 +21,7 @@ reference]({{ site.baseurl }}/appliance/firewall-ports.html#).
 
 AWS is a secure cloud services platform offered by Amazon. Using ThoughtSpot on
 AWS allows you to easily add instances as your dataset grows. You can do
-everything you'd normally want to do in a traditional database center with AWS.
+everything you'd normally want to do in a traditional data center with AWS.
 It features an on-demand delivery of IT resources and applications via the
 Internet with pay-as-you-go pricing.
 

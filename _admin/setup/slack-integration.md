@@ -26,3 +26,9 @@ Here are the high level steps:
 4. Start Spot Bot.
 5. Register Spot bot with your company's Slack instance.
 6. Register your Spot Slack account to ThoughtSpot.
+
+## Related Information
+
+Relevant `tscli` commands are [here]({{ site.baseurl }}/reference/tscli-command-ref.html#spot), but these will not work until Spot is enabled by ThoughtSpot Support. Support
+will work with you to install Spot, and then provide the rest of the workflow to
+you, including `tscli` command usage.

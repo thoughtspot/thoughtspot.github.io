@@ -6,12 +6,12 @@ summary: "The user icon lets you view your profile or sign out of ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-To view the user actions, click on your user icon on the top right corner of the page.
+To view the user actions, click your user icon on the top right corner of the page.
 
  ![]({{ site.baseurl }}/images/user_icon.png "User icon")
 
 Click **Profile** to go to your profile preference page, where you can change
-your icon, email, and locale preferences.  
+your icon, password, and locale preferences.  
 
 ## Language and data format settings
 
@@ -24,11 +24,6 @@ You can change your picture by clicking **Upload Picture**. The system accepts
 
  ![]({{ site.baseurl }}/images/upload_picture.png "Update my picture")
 
-## Get email notifications
+## Signing out
 
-You can change your email notifications preferences by checking or unchecking **Email me sharing notifications** and clicking **Update Preferences**.
-
- ![]({{ site.baseurl }}/images/update_preferences.png "Update my preferences")
-
-
-Clicking **Sign out** logs you out of ThoughtSpot, and takes you back to the sign in page.
+Click **Profile > Sign out** to log out of ThoughtSpot, and return to the sign in page.

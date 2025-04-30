@@ -1,6 +1,6 @@
 ---
 title: [How rule-based RLS works]
-tags: [bestpractices,groups,performance]
+tags: [bestpractices,groups,performance,security]
 keywords: tbd
 last_updated: tbd
 summary: "Use rule-based RLS to restrict a group's access to data. Users see only accessible row data."
