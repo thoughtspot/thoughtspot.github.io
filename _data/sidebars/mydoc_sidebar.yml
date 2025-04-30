@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: Version
-  version: 5.1 Guides
+  version: 5.2 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -73,6 +73,15 @@ entries:
         - title: Work with Answers
           url: /end-user/search/work-with-answers.html
           output: web,ugBk
+        - title: Ask an Expert
+          url: /end-user/search/ask-an-expert.html
+          output: web,ugBk
+        - title: Retrieve Ask an Expert answers
+          url: /end-user/search/retrieve-expert-answer.html
+          output: web,ugBk
+        - title: Answer an Ask an Expert question
+          url: /end-user/search/answer-expert-question.html
+          output: web,ugBk
       - title: Results that are tables
         url: /end-user/search/about-tables.html
         output: web,ugBk
@@ -87,6 +96,9 @@ entries:
           output: web,ugBk
         - title: Search using growth over time
           url: /complex-search/search-using-growth-over-time.html
+          output: web,ugBk
+        - title: Using the in keyword for nested searches
+          url: /complex-search/in-keyword-searches.html
           output: web,ugBk
         - title: Proximity searches "near" and "farther than"
           url: /admin/features/proximity-search.html
@@ -316,23 +328,20 @@ entries:
         - title: What is SpotIQ
           url: /spotiq/whatisspotiq.html
           output: web,ugBk
-        - title: "101: Load and analyze data"
-          url: /spotiq/overview.html
-          output: web,ugBk
-        - title: "101: Review and save insights"
-          url: /spotiq/work-with-insights.html
-          output: web,ugBk
-        - title: "101: Do more with SpotIQ"
-          url: /spotiq/spotiq-customize.html
-          output: web,ugBk
-        - title: "Best SpotIQ Practices"
+        - title: "Best SpotIQ practices"
           url: /spotiq/special-topics.html
           output: web,ugBk
         - title: "Custom SpotIQ analysis"
           url: /spotiq/customization.html
           output: web,ugBk
-        - title: "Advanced R Customizations"
+        - title: "Advanced R customizations"
           url: /spotiq/adv-customize-withr.html
+          output: web,ugBk
+        - title: "Insight feedback"
+          url: /spotiq/insight-feedback.html
+          output: web,ugBk
+        - title: "SpotIQ preferences"
+          url: /spotiq/spotiq-preferences.html
           output: web,ugBk
     - levelTwoTitle: Work with data
       output: web,ugBk
@@ -436,7 +445,7 @@ entries:
       - title: Set the relay host for SMTP
         url: /admin/setup/set-up-relay-host.html
         output: web,admBk
-      - title: Set up a fiscal calendar year
+      - title: Set up a custom calendar
         url: /admin/setup/set-custom-calendar.html
         output: web,admBk
       - title: Configure SSL
@@ -486,9 +495,6 @@ entries:
         output: web,admBk
       - title: Customize look and feel
         url: /admin/setup/customize-style.html
-        output: web,admBk
-      - title: Enable SearchIQ
-        url: /admin/setup/enable-searchiq.html
         output: web,admBk
       - title: Add the Slack integration
         url: /admin/setup/slack-integration.html
@@ -571,125 +577,6 @@ entries:
         - title: Delete or change a table in TQL
           url: /admin/loading/check-dependencies-tql.html
           output: web,admBk
-    - levelTwoTitle: Improve search with modeling
-      output: web,admBk
-      levelTwoItems:
-      - title: About data modeling
-        url: /admin/data-modeling/about-data-modeling-intro.html
-        output: web,admBk
-      - title: Change a table's data model
-        url: /admin/data-modeling/model-data-in-UI.html
-        output: web,admBk
-      - title: Edit the system-wide data model
-        url: /admin/data-modeling/edit-model-file.html
-        output: web,admBk
-      - levelThreeTitle: Data model settings
-        output: web,admBk
-        levelThreeItems:
-        - title: Overview of the settings
-          url: /admin/data-modeling/data-modeling-settings.html
-          output: web,admBk
-        - title: Set column name, description, and type
-          url: /admin/data-modeling/change-column-basics.html
-          output: web,admBk
-        - title: Set additive and aggregate values
-          url: /admin/data-modeling/change-aggreg-additive.html
-          output: web,admBk
-        - title: Hide a column or define a synonym
-          url: /admin/data-modeling/change-visibility-synonym.html
-          output: web,admBk
-        - title: Set columns to exclude from SpotIQ analyses
-          url: /admin/data-modeling/spotiq-data-model-preferences.html
-          output: web,admBk
-        - title: Manage suggestion indexing
-          url: /admin/data-modeling/change-index.html
-          output: web,admBk
-        - title: Add a geographical data setting
-          url: /admin/data-modeling/model-geo-data.html
-          output: web,admBk
-        - title: Set number, date, currency formats
-          url: /admin/data-modeling/set-format-pattern-numbers.html
-          output: web,admBk
-        - title: Change the Attribution Dimension setting
-          url: /admin/data-modeling/attributable-dimension.html
-          output: web,admBk
-        - title: Set entity categories for SearchIQ
-          url: /admin/data-modeling/set-entity-category.html
-          output: web,admBk
-      - levelThreeTitle: Link tables using relationships
-        output: web,admBk
-        levelThreeItems:
-        - title: Link tables using relationships
-          url: /admin/data-modeling/about-relationships.html
-          output: web,admBk
-        - title: Create a relationship
-          url: /admin/data-modeling/create-new-relationship.html
-          output: web
-        - title: Delete a relationship
-          url: /admin/data-modeling/delete-relationship.html
-          output: web,admBk
-      - title: Use stickers
-        url: /admin/data-modeling/stickers-concept.html
-        output: web,admBk
-    - levelTwoTitle: Simplify search with worksheets
-      output: web,admBk
-      levelTwoItems:
-      - title: Create and use worksheets
-        url: /admin/worksheets/about-worksheets.html
-        output: web,admBk
-      - title: Edit a worksheet
-        url: /admin/worksheets/edit-worksheet.html
-        output: web,admBk
-      - title: Create a formula in a worksheet
-        url: /admin/worksheets/create-formula.html
-        output: web,admBk
-      - title: Create worksheet filters
-        url: /admin/worksheets/create-ws-filter.html
-        output: web,admBk
-      - title: How the worksheet join rule works
-        url: /admin/worksheets/progressive-joins.html
-        output: web,admBk
-      - title: "Change join rule or RLS for a worksheet"
-        url: /admin/worksheets/change-inclusion-rule.html
-        output: web,admBk
-      - title: "Create a join relationship"
-        url: /admin/worksheets/add-joins.html
-        output: web,admBk
-      - title: "Modify joins between worksheet tables"
-        url: /admin/worksheets/mod-ws-internal-joins.html
-        output: web,admBk
-      - title: Delete a worksheet or table
-        url: /admin/worksheets/delete-worksheet.html
-        output: web,admBk
-    - levelTwoTitle: Work with views
-      output: web,ugBk
-      levelTwoItems:
-      - title: Understand views
-        url: /complex-search/about-query-on-query.html
-        output: web,ugBk
-      - title: Save a search as a view
-        url: /complex-search/create-aggregated-worksheet.html
-        output: web,ugBk
-      - title: Create a search from a view
-        url: /complex-search/do-query-on-query.html
-        output: web,ugBk
-      - title: View example scenarios
-        url: /complex-search/more-example-scenarios.html
-        output: web,ugBk
-      - title: About materialized views
-        url: /admin/loading/materialized-views.html
-        output: web,ugBk
-      - title: Materialize a view
-        url: /admin/loading/materialize-a-view.html
-        output: web,ugBk
-      - title: Dematerialize a view
-        url: /admin/loading/dematerialize-a-view.html
-        output: web,ugBk
-      - title: Refresh a view
-        url: /admin/loading/refresh-view.html
-      - title: Schedule view refreshes
-        url: /admin/loading/schedule-materialization.html
-        output: web,ugBk
     - levelTwoTitle: Manage users and groups
       output: web,admBk
       levelTwoItems:
@@ -702,14 +589,8 @@ entries:
       - title: Add, edit, or delete a user
         url: /admin/users-groups/add-user.html
         output: web,admBk
-    - levelTwoTitle: Manage jobs
-      output: web,admBk
-      levelTwoItems:
-      - title: Job management (scheduled pinboards)
-        url: /admin/manage-jobs/about-scheduled-pinboards.html
-        output: web,admBk
-      - title: Scheduled pinboards management
-        url: /admin/manage-jobs/scheduled-pinboards-management.html
+      - title: Allow users to sign up
+        url: /admin/users-groups/sign-up.html
         output: web,admBk
     - levelTwoTitle: Security
       output: web,admBk
@@ -771,30 +652,6 @@ entries:
       - title: Set up recording for Replay Search
         url: /admin/system-admin/configure-record-search.html
         output: web,admBk
-    - levelTwoTitle: Monitoring
-      output: web,admBk
-      levelTwoItems:
-      - title: Introduction to monitoring
-        url: /admin/system-monitor/introduction.html
-        output: web,admBk
-      - title: Overview board
-        url: /admin/system-monitor/overview.html
-        output: web,admBk
-      - title: Data board
-        url: /admin/system-monitor/data.html
-        output: web,admBk
-      - title: Cluster Manager board
-        url: /admin/system-monitor/cluster-manager.html
-        output: web,admBk
-      - title: Alerts and Events board
-        url: /admin/system-monitor/alerts-events.html
-        output: web,admBk
-      - title: System worksheets
-        url: /admin/system-monitor/worksheets.html
-        output: web,admBk
-      - title: System pinboards
-        url: /admin/system-monitor/monitor-pinboards.html
-        output: web,admBk
     - levelTwoTitle: Backup and restore
       output: web,admBk
       levelTwoItems:
@@ -822,12 +679,173 @@ entries:
         - title: About restore operations
           url: /admin/backup-restore/restore.html
           output: web,admBk
+    - levelTwoTitle: Improve search with modeling
+      output: web,admBk
+      levelTwoItems:
+      - title: About data modeling
+        url: /admin/data-modeling/about-data-modeling-intro.html
+        output: web,admBk
+      - title: Change a table's data model
+        url: /admin/data-modeling/model-data-in-UI.html
+        output: web,admBk
+      - title: Edit the system-wide data model
+        url: /admin/data-modeling/edit-model-file.html
+        output: web,admBk
+      - levelThreeTitle: Data model settings
+        output: web,admBk
+        levelThreeItems:
+        - title: Overview of the settings
+          url: /admin/data-modeling/data-modeling-settings.html
+          output: web,admBk
+        - title: Set column name, description, and type
+          url: /admin/data-modeling/change-column-basics.html
+          output: web,admBk
+        - title: Set additive and aggregate values
+          url: /admin/data-modeling/change-aggreg-additive.html
+          output: web,admBk
+        - title: Hide a column or define a synonym
+          url: /admin/data-modeling/change-visibility-synonym.html
+          output: web,admBk
+        - title: Set columns to exclude from SpotIQ analyses
+          url: /admin/data-modeling/spotiq-data-model-preferences.html
+          output: web,admBk
+        - title: Manage suggestion indexing
+          url: /admin/data-modeling/change-index.html
+          output: web,admBk
+        - title: Add a geographical data setting
+          url: /admin/data-modeling/model-geo-data.html
+          output: web,admBk
+        - title: Set number, date, currency formats
+          url: /admin/data-modeling/set-format-pattern-numbers.html
+          output: web,admBk
+        - title: Change the Attribution Dimension setting
+          url: /admin/data-modeling/attributable-dimension.html
+          output: web,admBk
+      - levelThreeTitle: Link tables using relationships
+        output: web,admBk
+        levelThreeItems:
+        - title: Link tables using relationships
+          url: /admin/data-modeling/about-relationships.html
+          output: web,admBk
+        - title: Create a relationship
+          url: /admin/data-modeling/create-new-relationship.html
+          output: web
+        - title: Delete a relationship
+          url: /admin/data-modeling/delete-relationship.html
+          output: web,admBk
+        - title: Use stickers
+          url: /admin/data-modeling/stickers-concept.html
+          output: web,admBk
+    - levelTwoTitle: Simplify search with worksheets
+      output: web,admBk
+      levelTwoItems:
+      - title: Create and use worksheets
+        url: /admin/worksheets/about-worksheets.html
+        output: web,admBk
+      - title: Edit a worksheet
+        url: /admin/worksheets/edit-worksheet.html
+        output: web,admBk
+      - title: Create a formula in a worksheet
+        url: /admin/worksheets/create-formula.html
+        output: web,admBk
+      - title: Create worksheet filters
+        url: /admin/worksheets/create-ws-filter.html
+        output: web,admBk
+      - title: How the worksheet join rule works
+        url: /admin/worksheets/progressive-joins.html
+        output: web,admBk
+      - title: "Change join rule or RLS for a worksheet"
+        url: /admin/worksheets/change-inclusion-rule.html
+        output: web,admBk
+      - title: "Create a join relationship"
+        url: /admin/worksheets/add-joins.html
+        output: web,admBk
+      - title: "Modify joins between worksheet tables"
+        url: /admin/worksheets/mod-ws-internal-joins.html
+        output: web,admBk
+      - title: Delete a worksheet or table
+        url: /admin/worksheets/delete-worksheet.html
+        output: web,admBk
+    - levelTwoTitle: Work with views
+      output: web,ugBk
+      levelTwoItems:
+      - title: Understand views
+        url: /complex-search/about-query-on-query.html
+        output: web,ugBk
+      - title: Save a search as a view
+        url: /complex-search/create-aggregated-worksheet.html
+        output: web,ugBk
+      - title: Create a search from a view
+        url: /complex-search/do-query-on-query.html
+        output: web,ugBk
+      - title: View example scenarios
+        url: /complex-search/more-example-scenarios.html
+        output: web,ugBk
+      - title: About materialized views
+        url: /admin/loading/materialized-views.html
+        output: web,ugBk
+      - title: Materialize a view
+        url: /admin/loading/materialize-a-view.html
+        output: web,ugBk
+      - title: Dematerialize a view
+        url: /admin/loading/dematerialize-a-view.html
+        output: web,ugBk
+      - title: Refresh a view
+        url: /admin/loading/refresh-view.html
+      - title: Schedule view refreshes
+        url: /admin/loading/schedule-materialization.html
+        output: web,ugBk
+    - levelTwoTitle: Enable SearchIQ for natural language search
+      output: web,admBk
+      levelTwoItems:
+      - title: Enable SearchIQ
+        url: /admin/setup/enable-searchiq.html
+        output: web,admBk
+      - title: Set entity categories for SearchIQ
+        url: /admin/data-modeling/set-entity-category.html
+        output: web,admBk
+      - title: Change SearchIQ mappings
+        url: /admin/data-modeling/searchiq-mappings.html
+        output: web,admBk
+    - levelTwoTitle: Manage scheduled jobs
+      output: web,admBk
+      levelTwoItems:
+      - title: Job management (scheduled pinboards)
+        url: /admin/manage-jobs/about-scheduled-pinboards.html
+        output: web,admBk
+      - title: Scheduled pinboards management
+        url: /admin/manage-jobs/scheduled-pinboards-management.html
+        output: web,admBk
+    - levelTwoTitle: Monitoring
+      output: web,admBk
+      levelTwoItems:
+      - title: Introduction to monitoring
+        url: /admin/system-monitor/introduction.html
+        output: web,admBk
+      - title: Overview board
+        url: /admin/system-monitor/overview.html
+        output: web,admBk
+      - title: Data board
+        url: /admin/system-monitor/data.html
+        output: web,admBk
+      - title: Cluster Manager board
+        url: /admin/system-monitor/cluster-manager.html
+        output: web,admBk
+      - title: Alerts and Events board
+        url: /admin/system-monitor/alerts-events.html
+        output: web,admBk
+      - title: System worksheets
+        url: /admin/system-monitor/worksheets.html
+        output: web,admBk
+      - title: System pinboards
+        url: /admin/system-monitor/monitor-pinboards.html
+        output: web,admBk
     - levelTwoTitle: Troubleshooting
       output: web,admBk
       levelTwoItems:
       - title: About troubleshooting
         url: /admin/troubleshooting/troubleshooting-intro.html
-        output: pdf
+        output: web,admBk
       - title: Get your configuration and logs
         url: /admin/troubleshooting/get-logs.html
         output: web,admBk
@@ -858,78 +876,78 @@ entries:
       - title: Search results contain too many blanks
         url: /admin/troubleshooting/search-too-many-blanks.html
         output: web,admBk
-  - sectiontitle: Data Connect
-    output: web,cngBk
-    sectionitems:
-    - title: Introduction to Data Connect
-      url: /data-connect/setup/ETL.html
-      output: web,cngBk
-    - title: Prerequisites and Architecture
-      url: /data-connect/setup/before-using-data-connect.html
-      output: web,cngBk
-    - title: Set up ThoughtSpot Data Connect
-      url: /data-connect/setup/settingup-etl.html
-      output: web,cngBk
-    - levelTwoTitle: Work with Data Sources
-      output: web,cngBk
-      levelTwoItems:
-      - title: Add a new data source
-        url: /data-connect/setup/adding-data-source.html
-        output: web,cngBk
-      - title: About changing the schema (DDL)
-        url: /data-connect/setup/about-changing-DDL.html
-        output: web,cngBk
-      - title: About incremental data loads
-        url: /data-connect/setup/about-incremental.html
-        output: web,cngBk
-      - title: Data sources management
-        url: /data-connect/setup/data-sources-management.html
-        output: web,cngBk
-    - levelTwoTitle: Changing the setup
-      output: web,cngBk
-      levelTwoItems:
-      - title: Overview of best practices
-        url: /data-connect/making-changes/about-changing-etl-jobs.html
-        output: web,cngBk
-      - title: Edit a connection
-        url: /data-connect/making-changes/edit-a-connection.html
-        output: web,cngBk
-      - title: Delete a connection
-        url: /data-connect/making-changes/delete-a-connection.html
-        output: web,cngBk
-      - title: Delete a data source
-        url: /data-connect/making-changes/delete-data-source.html
-        output: web,cngBk
-      - title: Stop a scheduled job from running
-        url: /data-connect/making-changes/stop-scheduled-job.html
-        output: web,cngBk
-      - title: Change sharding for a data source
-        url: /data-connect/making-changes/change-sharding.html
-        output: web,cngBk
-      - title: Change a column data type
-        url: /data-connect/making-changes/change-data-type.html
-        output: web,cngBk
-      - title: Add a column to an existing data source
-        url: /data-connect/making-changes/add-a-column.html
-        output: web,cngBk
-      - title: Remove a column from an existing data source
-        url: /data-connect/making-changes/remove-column.html
-        output: web,cngBk
-      - title: Add/remove columns in a loaded table
-        url: /data-connect/making-changes/add-remove-columns-in-a-loaded-table.html
-        output: web,cngBk
-    - levelTwoTitle: Reference
-      output: web,cngBk
-      levelTwoItems:
-      - title: Login for administration
-        url: /data-connect/reference/logins.html
-        output: web,cngBk
-      - title: Best practices
-        url: /data-connect/reference/data-connect-insider-tips.html
-        output: web,cngBk
-      - title: Connectors reference
-        url: /data-connect/reference/data-connect-connection-credentials.html
-        output: web,cngBk
+  # - sectiontitle: Data Connect
+  #   output: web,cngBk
+  #   sectionitems:
+  #   - title: Introduction to Data Connect
+  #     url: /data-connect/setup/ETL.html
+  #     output: web,cngBk
+  #   - title: Prerequisites and Architecture
+  #     url: /data-connect/setup/before-using-data-connect.html
+  #     output: web,cngBk
+  #   - title: Set up ThoughtSpot Data Connect
+  #     url: /data-connect/setup/settingup-etl.html
+  #     output: web,cngBk
+  #   - levelTwoTitle: Work with Data Sources
+  #     output: web,cngBk
+  #     levelTwoItems:
+  #     - title: Add a new data source
+  #       url: /data-connect/setup/adding-data-source.html
+  #       output: web,cngBk
+  #     - title: About changing the schema (DDL)
+  #       url: /data-connect/setup/about-changing-DDL.html
+  #       output: web,cngBk
+  #     - title: About incremental data loads
+  #       url: /data-connect/setup/about-incremental.html
+  #       output: web,cngBk
+  #     - title: Data sources management
+  #       url: /data-connect/setup/data-sources-management.html
+  #       output: web,cngBk
+  #   - levelTwoTitle: Changing the setup
+  #     output: web,cngBk
+  #     levelTwoItems:
+  #     - title: Overview of best practices
+  #       url: /data-connect/making-changes/about-changing-etl-jobs.html
+  #       output: web,cngBk
+  #     - title: Edit a connection
+  #       url: /data-connect/making-changes/edit-a-connection.html
+  #       output: web,cngBk
+  #     - title: Delete a connection
+  #       url: /data-connect/making-changes/delete-a-connection.html
+  #       output: web,cngBk
+  #     - title: Delete a data source
+  #       url: /data-connect/making-changes/delete-data-source.html
+  #       output: web,cngBk
+  #     - title: Stop a scheduled job from running
+  #       url: /data-connect/making-changes/stop-scheduled-job.html
+  #       output: web,cngBk
+  #     - title: Change sharding for a data source
+  #       url: /data-connect/making-changes/change-sharding.html
+  #       output: web,cngBk
+  #     - title: Change a column data type
+  #       url: /data-connect/making-changes/change-data-type.html
+  #       output: web,cngBk
+  #     - title: Add a column to an existing data source
+  #       url: /data-connect/making-changes/add-a-column.html
+  #       output: web,cngBk
+  #     - title: Remove a column from an existing data source
+  #       url: /data-connect/making-changes/remove-column.html
+  #       output: web,cngBk
+  #     - title: Add/remove columns in a loaded table
+  #       url: /data-connect/making-changes/add-remove-columns-in-a-loaded-table.html
+  #       output: web,cngBk
+  #   - levelTwoTitle: Reference
+  #     output: web,cngBk
+  #     levelTwoItems:
+  #     - title: Login for administration
+  #       url: /data-connect/reference/logins.html
+  #       output: web,cngBk
+  #     - title: Best practices
+  #       url: /data-connect/reference/data-connect-insider-tips.html
+  #       output: web,cngBk
+  #     - title: Connectors reference
+  #       url: /data-connect/reference/data-connect-connection-credentials.html
+  #       output: web,cngBk
   - sectiontitle: Embedding
     output: web,apgBk
     sectionitems:
@@ -1089,9 +1107,15 @@ entries:
       - title: Set up and start the appliance
         url: /appliance/hardware/appliance-setup.html
         output: web,appQs
-    - levelTwoTitle: AWS node
+    - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
+      - title: Cloud overview
+        url: /appliance/cloud.html
+        output: web,appQs
+      - levelThreeTitle: AWS
+        output: web,appQs
+        levelThreeItems:
         - title: AWS cluster overview
           url: /appliance/aws/about-aws.html
           output: web,appQs
@@ -1101,9 +1125,15 @@ entries:
         - title: Set up AWS for ThoughtSpot
           url: /appliance/aws/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: Azure node
-      output: web,appQs
-      levelTwoItems:
+        - title: Deploy using CloudFormation CLI
+          url: /appliance/aws/deploy-aws-cloud-formation.html
+          output: web,appQs
+        - title: Set up high availability
+          url: /appliance/aws/ha-aws-efs.html
+          output: web,appQs
+      - levelThreeTitle: Azure
+        output: web,appQs
+        levelThreeItems:
         - title: Azure cluster overview
           url: /appliance/azure/about-azure.html
           output: web,appQs
@@ -1113,9 +1143,9 @@ entries:
         - title: Set up Azure for ThoughtSpot
           url: /appliance/azure/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: GCP node
-      output: web,appQs
-      levelTwoItems:
+      - levelThreeTitle: GCP
+        output: web,appQs
+        levelThreeItems:
         - title: GCP cluster overview
           url: /appliance/gcp/about-gcp.html
           output: web,appQs
@@ -1125,7 +1155,7 @@ entries:
         - title: Set up GCP for ThoughtSpot
           url: /appliance/gcp/launch-an-instance.html
           output: web,appQs
-    - levelTwoTitle: VMware node
+    - levelTwoTitle: VMware
       output: web,appQs
       levelTwoItems:
         - title: Configuration overview
@@ -1278,6 +1308,12 @@ entries:
     - title: User action codes reference
       url: /reference/action-codes.html
       output: web,refGdAdmin
+    - title: Stop word reference
+      url: /reference/stop-words.html
+      output: web,refGD
+    - title: Geo map reference
+      url: /reference/geomap-reference.html
+      output: web,refGD
     - title: Error codes reference
       url: /error-codes/error-codes-reference.html
       output: web,refGdAdmin
@@ -1287,9 +1323,6 @@ entries:
   - sectiontitle: About this Release
     output: web,rnotes
     sectionitems:
-    - title: Help Center
-      url: /release/help-center.html
-      output: web
     - title: Release notes
       url: /release/notes.html
       output: web,rnotes

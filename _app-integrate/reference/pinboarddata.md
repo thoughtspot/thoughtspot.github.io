@@ -1,108 +1,142 @@
 ---
-title: [pinboarddata API]
+title: [Pinboard Data API]
 keywords: REST,API,data,"REST API",pinboard
 last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-Gets the pinboard data from the ThoughtSpot system. Returns one object if you
-make a call to a specific visualization on a pinboard.
+This API enables you to retrieve the data of a pinboard or visualization from the ThoughtSpot system. You may want to visualize the following:
+ - Fetch all the visualization objects on a pinboard.
+ - Fetch a specific or a group of visualizations on a pinboard.
 
-- Public namespace: Data
-- Current URL path: `/tspublic/v1/pinboarddata`
+## Resource URL
 
-## Parameters
+<code class="api-method-post">post</code> /tspublic/v1/pinboarddata
+
+## Request Parameters
 
 <table>
    <colgroup>
+      <col style="width:20%" />
       <col style="width:15%" />
-      <col style="width:85%" />
+      <col style="width:65%" />
    </colgroup>
    <thead>
       <tr>
-         <th>Parameter</th>
+         <th>Query Parameter</th>
+         <th>Data Type</th>
          <th>Description</th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td><code>id</code></td>
-         <td>GUID id of the pinboard query string.</td>
+         <td>string</td>
+         <td>The pinboard id in the system.</td>
+
       </tr>
      <tr>
          <td><code>vizid</code></td>
-         <td>Optional GUID ids of the visualizations query string.</td>
+         <td>string</td>
+         <td>(Optional) The visualization id(s) on a pinboard. Use this parameter to fetch a specific visualization on a pinboard. The syntax is:
+         <p><code>["4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1", "......"]</code></p>
+         </td>
+
       </tr>
       <tr>
          <td><code>batchsize</code></td>
-         <td>An integer defining the query batch size. The system default is <code>-1</code>. </td>
+         <td>integer</td>
+         <td>The batch size for loading of pinboard objects. The system default is <code>-1</code>. </td>
+
       </tr>
       <tr>
          <td><code>pagenumber</code></td>
+         <td>integer</td>
          <td>
-            <p>An integer providing another way to specify an offset.  The system default is <code>-1</code>. Alternate way to set offset. This is:</p>
-            <p><code>1-based indexingOffset = (pageNumber - 1) * batchSize query integer</code></p>
+            The system default is <code>-1</code>.
          </td>
+
          </tr>
      <tr>
          <td><code>offset</code></td>
-         <td>An integer specifying the query offset. The system default is <code>-1</code>. </td>
+         <td>integer</td>
+         <td>The system default is <code>-1</code>. Alternately, set the offset using the below:
+         <p><code>1-based indexingOffset = (pageNumber - 1) * batchSize</code></p></td>
+
       </tr>
       <tr>
          <td><code>formattype</code></td>
-         <td>A string specifying the format type.  Valid values are <code>COMPACT</code> or <code>FULL</code> JSON. The system default is <code>COMPACT</code>. </td>
+         <td>string</td>
+         <td>Valid values are <code>COMPACT</code> or <code>FULL</code> JSON. The system default is <code>COMPACT</code>. </td>
+
       </tr>
    </tbody>
 </table>
 
-## HTTP Status Codes
+## Request Example
 
-* 200 Gets the data of a pinboard/visualization.
-* 400 Invalid pinboard id.
-
-
-## Response example:
-
-Curl
+##### cURL
 
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' 'https://<instance>/callosum/v1/tspublic/v1/pinboarddata?batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT'
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-Requested-By: ThoughtSpot' 'https://<instance>/callosum/v1/tspublic/v1/pinboarddata?id=f4533461-caa5-4efa-a189-13815ab86770&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT'
 ```
 
-## Request URL
+##### Request URL
 
 ```
-https://<instance>/callosum/v1/tspublic/v1/pinboarddata?batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT
+https://<instance>/callosum/v1/tspublic/v1/pinboarddata?id=f4533461-caa5-4efa-a189-13815ab86770&batchsize=-1&pagenumber=-1&offset=-1&formattype=COMPACT
 ```
 
-## Response Body
-
-```
-no content
-```
-
-## Response Code
-
-```
-400
-```
-
-## Response Headers
+## Response Example
 
 ```
 {
-  "x-callosum-incident-id": "2ff9d2e4-c928-4192-8250-8450de264ab7",
-  "x-callosum-trace-id": "2e551b8d-d3f4-4cf1-af90-a49bb246ad92",
-  "date": "Sun, 19 Feb 2017 03:39:41 GMT",
-  "x-callosum-request-time-us": "11536",
-  "server": "nginx",
-  "pragma": "no-cache",
-  "cache-control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
-  "content-security-policy": "script-src 'self'",
-  "connection": "keep-alive",
-  "content-length": "0",
-  "x-callosum-ip": "192.168.2.247",
-  "content-type": null
+  "4fdf9d2c-6f34-4e3b-9fa6-bd0ca69676e1": {
+    "name": "Sample Name",
+    "columnNames": [
+      "Opportunity Stage",
+      "Opportunity Owner Name",
+      "Total Amount"
+    ],
+    "data": [
+      [
+        "s3 alignment with eb",
+        "jeff cameron",
+        1102272
+      ],
+      [
+        "s4 validation",
+        "brian mcquillan",
+        59150
+      ]
+    ],
+    "samplingRatio": 1,
+    "totalRowCount": 14,
+    "rowCount": 14,
+    "pageSize": 10,
+    "offset": 0
+  }
 }
 ```
+
+## Error Codes
+
+<table>
+   <colgroup>
+      <col style="width:20%" />
+      <col style="width:60%" />
+      <col style="width:20%" />
+   </colgroup>
+   <thead class="thead" style="text-align:left;">
+      <tr>
+         <th>Error Code</th>
+         <th>Description</th>
+         <th>HTTP Code</th>
+      </tr>
+   </thead>
+   <tbody>
+    <tr> <td><code>10002</code></td>  <td>Bad request. Invalid parameter values.</td> <td><code>400</code></td></tr>
+    <tr> <td><code>10000</code></td>  <td>Internal server error. Malformed JSON Exception.</td><td><code>500</code></td></tr>
+  </tbody>
+</table>

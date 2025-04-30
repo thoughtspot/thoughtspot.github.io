@@ -19,7 +19,7 @@ Before accessing ThoughtSpot, you need:
     not recommended. Depending on your environment, you can experience performance
     or UI issues when using IE." %}
 
-To log in to ThoughtSpot from a browser:
+To sign in to ThoughtSpot from a browser:
 
 1. Open the browser and type in the Web address for ThoughtSpot: `http://<hostname_or_IP>`
-2. Enter your username and password and click **Enter Now**.
+2. Enter your username and password and click **Sign in**.

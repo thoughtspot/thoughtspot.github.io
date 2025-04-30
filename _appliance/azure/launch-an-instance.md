@@ -126,9 +126,7 @@ processes do not get blocked.
    | 4001  | HTTP         |  Data Cache Debugging         |
 
 
-   {% include note.html content="ThoughtSpot requires that nodes purchased from
-Azure must be reachable to each other so that they can communicate and form a
-distributed environment. ThoughtSpot only requires that those ports be accessible
+   {% include note.html content="ThoughtSpot requires that nodes purchased from Azure must be reachable to each other so that they can communicate and form a distributed environment. ThoughtSpot only requires that those ports be accessible
 between nodes within a cluster.  Use your discretion about whether
 to restrict public access or not for all nodes/all ports" %}
 
@@ -150,8 +148,7 @@ When you are satisfied with the virtual machine setup, click **Create**.
 
 ### Prepare for starting up ThoughtSpot
 
-_Prerequisite_: To log in to the VM, you will need the private key that is
-available in the image. You can obtain this from your ThoughtSpot contact.
+_Prerequisite_: To log in to the VM, you will need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
 
 1. Obtain the VM’s public and private IP addresses.
 
@@ -159,6 +156,9 @@ available in the image. You can obtain this from your ThoughtSpot contact.
    - To see the private IP click Networking (below SETTINGS on the left side of the screen).
 
 2. Connect to the VM via SSH, using the private key provided for the admin user.
+
+   - You must file a support ticket to obtain this private key; it is necessary for the first login.
+   - This key is different from the credentials and|or private keys supplied in earlier steps, which do not work in this context.
 
 3. Update the password for both the `admin` and the `thoughtspot` users.
 

@@ -14,21 +14,79 @@ You can find information here on which configuration of memory, CPU, storage,
 and networking capacity you should be running for your instances. There are also
 details on how to configure your scope and permissions.
 
-## Hardware configurations
+## ThoughtSpot Azure instance types
 
-The following Azure resources are required for provisioning a Thoughtspot image
-in Azure:
-- Virtual Machine Size: Standard E32s and E64s v3 (64 vcpus, 432 GB memory)
-- Storage: Two 1TB SSD disks
-- Network Ports: See PORTS SETTINGS
+<table width="853">
+    <colgroup>
+      <col width="110" />
+      <col width="110" />
+      <col width="110" />
+      <col width="105" />
+      <col width="140" />
+      <col width="95" />
+    </colgroup>
+	<tr>
+      <td><br /></td>
+      <td colspan="2"><p dir="ltr"><center><strong>Use case</strong></center></p></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr"><strong>Data shape</strong></p></td>
+      <td><p dir="ltr"><strong>Total cluster <BR>data size</strong></p></td>
+      <td><p dir="ltr"><strong>Per VM <BR>Data capacity</strong></p></td>
+      <td><p dir="ltr"><strong>Recommended <BR>Instance type</strong></p></td>
+      <td><p dir="ltr"><strong>vCPU/RAM</strong></p></td>
+	  <td><p dir="ltr"><strong>Boot volume</strong></p></td>
+	  <td><p dir="ltr"><strong>Data volumes</strong></p></td>
+    </tr>
+    <tr>
+      <td><p dir="ltr">Standard</p>
+        <p dir="ltr">(1KB/row)</p></td>
+      <td><p dir="ltr">>100 GB </p></td>
+      <td><p dir="ltr">200 GB</p></td>
+      <td><p dir="ltr">E64sv3</p></td>
+      <td><p dir="ltr">64/432</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-## Data capacity per node
+      <td><p dir="ltr">Up to 100 GB</p></td>
+      <td><p dir="ltr">100 GB</p></td>
+      <td><p dir="ltr">E32sv3<sup>b</sup></p></td>
+      <td><p dir="ltr">32/256</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
+    <tr>
+      <td><br /></td>
 
-ThoughtSpot sizes nodes in multiples of 200 GB of data in Azure. This size
-refers to the amount of data in the CSV files you will be loading into
-ThoughtSpot. The 200GB number takes into account all replication of data done
-automatically by ThoughtSpot to provide redundancy and fast performance.
+      <td><p dir="ltr">Up to 20 GB</p></td>
+      <td><p dir="ltr">20 GB</p></td>
+      <td><p dir="ltr">E16sv3<sup>b</sup></p></td>
+      <td><p dir="ltr">16/128</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 400 GB</p></td>
+    </tr>
 
-You can start with 200 GB, and add increments of 200 GB each time your data
-capacity needs increase. You can also choose to start off with more than 200 GB
-of data, as long as you know the best fit configuration for your data volume.
+    <tr>
+
+      <td><p dir="ltr">Thin rows</p>
+        <p dir="ltr">(&lt;300 bytes/row)</p></td>
+      <td><p dir="ltr">Any</p></td>
+      <td><p dir="ltr">120 GB</p></td>
+      <td><p dir="ltr">D64v3</p></td>
+      <td><p dir="ltr">64/256</p></td>
+		<td><p dir="ltr">200 GB</p></td>
+		<td><p dir="ltr">2X 1 TB</p></td>
+    </tr>
+	<tr>
+
+      <td colspan="6"><p dir="ltr">(a) Use the sizing calculators on each cloud provider to plug in expected customer discounts to arrive at the proper recommended cloud instance type.</p><p>(b) Use the small and medium instance-type configuration. Refer to: <a href="/5.2/appliance/cloud.html#use-small-and-medium-instance-types">Use small and medium instance types.</a></p>
+       </td>
+    </tr>
+  </table>
