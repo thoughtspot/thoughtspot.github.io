@@ -1,14 +1,11 @@
 ---
 title: [VMware configuration overview]
-
-
-last_updated: 1/9/2020
+summary: "You can host ThoughtSpot on VMware."
+last_updated: 5/21/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Congratulations on purchasing the ThoughtSpot instance. This section is an
-overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware
-vSphere Hypervisor (ESXi) 6.5 environment.
+This section is an overview of the ThoughtSpot AI-Driven analytics platform hosted on the VMware vSphere Hypervisor (ESXi) 6.5 environment.
 
 ## About ThoughtSpot in VMware
 
@@ -20,8 +17,7 @@ the components of a VMware and ThoughtSpot architecture:
 
 ![]({{ site.baseurl }}/images/vmware-components.png)
 
-{% include note.html content="This is a generic representation; Only CentOS-based
-virtual machines are supported with ThoughtSpot." %}
+{% include note.html content="This is a generic representation. ThoughtSpot supports deployment on its CentOS-based image, or an RHEL 7.7 image that your organization manages internally." %}
 
 Your database capacity will determine the number of ThoughtSpot instances and
 the instance network/storage requirements. In addition, you can scale your
@@ -32,7 +28,7 @@ ThoughtSpot VMs as your dataset size grows.
 ThoughtSpot Engineering has performed extensive testing of the ThoughtSpot
 platform in VMware for the best performance, load balancing, scalability,
 and reliability. Based on this testing, ThoughtSpot recommends the following
-_minimum specifications_ for an individual VMware ESXi host machine:
+_minimum specifications_ for an individual VMware ESXi guest machine:
 
 <table width="100%" border="0">
 	  <tbody>
@@ -40,24 +36,28 @@ _minimum specifications_ for an individual VMware ESXi host machine:
 	      <th scope="col">Per VM user data capacity</th>
 	      <th scope="col">CPU/RAM</th>
 	      <th scope="col">Data disk</th>
+				<th scope="col">Required root volume capacity</th>
         </tr>
 	    <tr>
 	      <td>20 GB</td>
 	      <td>16/128 GB</td>
-	      <td>800 GB</td>
+	      <td>2x400 GB</td>
+				<td>200 GB for each node</td>
         </tr>
 	    <tr>
 	      <td>100 GB</td>
 	      <td>32/256 GB</td>
-	      <td>800 GB</td>
+	      <td>2X400 GB</td>
+				<td>200 GB for each node</td>
         </tr>
 	    <tr>
 	      <td>256 GB</td>
 	      <td>72/512 GB</td>
-	      <td>6 TB</td>
+	      <td>3X1 TB</td>
+				<td>200 GB for each node</td>
         </tr>
 		<tr>
-	      <td colspan="3"><b>Note:</b> All cores must be hyperthreaded. 200GB SSD boot disk required for all configurations.</td>
+	      <td colspan="4"><b>Note:</b> All cores must be hyperthreaded. 200 GB SSD boot disk required for all configurations.</td>
 	      <td></td>
 	      <td></td>
         </tr>
@@ -82,10 +82,10 @@ extensible, and open packaging distribution format for virtual machines.
 
 The ThoughtSpot VM configuration uses thin provisioning and sets the recommended
 reserved memory, among other important specifications. You can obtain these
-files from your ThoughtSpot Customer Success Engineer.
+files from [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ## Questions or comments?
 
 We hope your experience with ThoughtSpot is excellent. Please let us know how it
 goes, and what we can do to make it better. You can [contact ThoughtSpot]({{
-site.baseurl }}/appliance/contact.html) by filing a support ticket, email or phone.
+site.baseurl }}/appliance/contact.html) by email, phone, or by filing a support ticket.

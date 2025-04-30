@@ -1,16 +1,16 @@
 ---
 title: [Prerequisites and Architecture]
-
-last_updated: tbd
+summary: "There are a few prerequisites you must complete before using ThoughtSpot Data Connect."
+last_updated: 11/19/2019
 toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-There are a few prerequisites before using ThoughtSpot Data Connect. You must enable the ThoughtSpot connection to Informatica, and enter the data connection credentials.
+Before you can use ThoughtSpot Data Connect, you must enable the ThoughtSpot connection to Informatica, and enter the data connection credentials.
 
 ## Prerequisites
 
-The following prequisites and considerstions apply to the data connect feature:
+The following prerequisites and considerations apply to the data connect feature:
 
 - Your Informatica account will be provisioned by ThoughtSpot.
 - If you want to use HTTPS with your URL, you must provide a signed certificate when enabling ThoughtSpot Data Connect.
@@ -21,7 +21,7 @@ The following prequisites and considerstions apply to the data connect feature:
 - You will also need any other internet connectivity and credentials required to access any cloud data sources you want to connect to, such as Salesforce. No inbound access is required.
 - After ThoughtSpot Data Connect is enabled, any user who belongs to a group with **Has administration privileges** or who **Can Manage Data** can use the feature. Before enabling the feature, in sure that these privileges are configured properly.
 
-Please refer to the [Informatica Cloud Security Architecture Overview](https://thoughtspot.egnyte.com/dl/fuxryvKclK) whitepaper to learn how each component and service is secured. You can also ask ThoughtSpot Support for a copy of the document.
+Refer to the [Informatica Cloud Security Architecture Overview](https://thoughtspot.egnyte.com/dl/fuxryvKclK) whitepaper to learn how each component and service is secured. You can also ask ThoughtSpot Support for a copy of the document.
 
 ## ThoughtSpot Data Connect design
 

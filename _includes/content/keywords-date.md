@@ -91,6 +91,12 @@
          <td><code>customers <b>last day by</b> referrer</code></td>
       </tr>
       <tr>
+         <td>hourly</td>
+         <td>
+            <code>visitors by page name <b>hourly</b></code>
+         </td>
+      </tr>
+      <tr>
          <td>last month by</td>
          <td><code>customers <b>last month by</b> day</code></td>
       </tr>

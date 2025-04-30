@@ -1,7 +1,7 @@
 ---
 title: [Install Cluster]
 summary: "Install your ThoughtSpot cluster(s) on your Dell appliance."
-last_updated: 1/16/2020
+last_updated: 3/3/2020
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,20 +12,9 @@ Refer to your welcome letter from ThoughtSpot to find the link to download the r
 
 Follow the steps in this checklist to install your cluster.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="install-cluster-dell#install-step-1">Step 1: Run the installer</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="install-cluster-dell#install-step-2">Step 2: Check cluster health</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="install-cluster-dell#install-step-3">Step 3: Finalize installation</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Run the installer](#install-step-1) |
+| &#10063; | [Step 2: Check cluster health](#install-step-2) |
+| &#10063; | [Step 3: Finalize installation](#install-step-3) |
 
 {: id="install-step-1"}
 ## Step 1: Run the installer
@@ -69,7 +58,7 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
 ```
 3. Edit the output using your specific cluster information. For more information on this process, refer to [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html) and [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 
-The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes. Log into any node to check the current cluster status, using the command `tscli cluster status`.
+The cluster installer automatically reboots all the nodes after the install. Wait at least 15 minutes for the installation process to complete. The system is rebooting, which takes a few minutes. Log in to any node to check the current cluster status, using the command `tscli cluster status`.
 
 {: id="install-step-2"}
 ## Step 2: Check cluster health
@@ -165,9 +154,11 @@ Connecting to hosts...
 ```
 Your output may look something like the above. Ensure that all diagnostics show `SUCCESS`.
 
+{% include warning.html content="If <code>tscli cluster check</code> returns an error, it may suggest you run <code>tscli storage gc</code> to resolve the issue. If you run <code>tscli storage gc</code>, note that it restarts your cluster." %}
+
 {: id="install-step-3"}
 ## Step 3: Finalize installation
-After the cluster status changes to `READY`, sign into the ThoughtSpot application on your browser.<br>
+After the cluster status changes to `READY`, sign in to the ThoughtSpot application on your browser.<br>
 Follow these steps:
 1. Start a browser from your computer.
 2. Enter your secure IP information on the address line.
@@ -183,7 +174,7 @@ Follow these steps:
 
 {: id="ts-login"}
 ![ThoughtSpot's sign-in window]({{ site.baseurl }}/images/ts-login-page.png "ThoughtSpot's sign-in window")
-<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Log into ThoughtSpot. Enter Username, Password, and click Sign in. You may select Remember me option." caption="ThoughtSpot's sign-in window" %}-->
+<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Log in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select Remember me option." caption="ThoughtSpot's sign-in window" %}-->
 
 ## Lean configuration
 **(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.

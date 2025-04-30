@@ -1,6 +1,6 @@
 ---
 title: [Install ThoughtSpot clusters in Azure]
-last_updated: [1/22/2020]
+last_updated: [2/27/2020]
 summary: "Learn how to install ThoughtSpot clusters in Azure."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -17,20 +17,9 @@ Before you can install your ThoughtSpot clusters in Azure, complete these prereq
 ## Install ThoughtSpot Software
 Install the cluster using the ThoughtSpot software release bundle. The estimated installation time is one hour. Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="azure-cluster-install#cluster-step-1">Step 1: Run the installer</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="azure-cluster-install#cluster-step-2">Step 2: Check cluster health</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="azure-cluster-install#cluster-step-3">Step 3: Finalize installation</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Run the installer](#cluster-step-1) |
+| &#10063; | [Step 2: Check cluster health](#cluster-step-2) |
+| &#10063; | [Step 3: Finalize installation](#cluster-step-3) |
 
 Refer to your welcome letter from ThoughtSpot to find the link to download the release bundle. If you do not have a link, open a support ticket at [ThoughtSpot Support](https://support.thoughtspot.com) to request access to the release bundle.
 
@@ -109,7 +98,7 @@ For more information on this process, refer to [Using the tscli cluster create c
      $ rm /usr/local/scaligent/bin/setup-net-devices.sh
      ```
 
-  Log into any node to check the current cluster status:
+  Log in to any node to check the current cluster status:
   ```
     $ tscli cluster status
   ```
@@ -207,10 +196,12 @@ Connecting to hosts...
 ```
 Your output may look something like the above. Ensure that all diagnostics show `SUCCESS`.
 
+{% include warning.html content="If <code>tscli cluster check</code> returns an error, it may suggest you run <code>tscli storage gc</code> to resolve the issue. If you run <code>tscli storage gc</code>, note that it restarts your cluster." %}
+
 {: id="cluster-step-3"}
 ### Step 3: Finalize installation
 
-After the cluster status changes to `READY`, sign into ThoughtSpot on your browser.
+After the cluster status changes to `READY`, sign in to ThoughtSpot on your browser.
 Follow these steps:
 
 1. Start a browser from your computer.
@@ -227,7 +218,7 @@ Follow these steps:
 
 {: id="ts-login"}
 ![ThoughtSpot's sign-in window]({{ site.baseurl }}/images/ts-login-page.png "ThoughtSpot's sign-in window")
-<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign into ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
+<!--{% include image.html file="ts-login-page.png" title="ThoughtSpot's sign-in window" alt="Sign in to ThoughtSpot. Enter Username, Password, and click Sign in. You may select the Remember me option." caption="ThoughtSpot's sign-in window" %}-->
 
 ## Lean configuration
 **(For use with thin provisioning only)** If you have a [small or medium instance type]({{ site.baseurl }}/appliance/cloud.html#use-small-and-medium-instance-types-when-applicable), with less than 100GB of data, advanced lean configuration is required before loading any data into ThoughtSpot. After installing the cluster, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for assistance with this configuration.
@@ -238,6 +229,5 @@ Use these references for successful installation and administration of ThoughtSp
 * [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
-* [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [Deployment Overview]({{ site.baseurl }}/appliance/welcome-intro.html)
+* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

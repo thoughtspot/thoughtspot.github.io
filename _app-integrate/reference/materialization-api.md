@@ -1,13 +1,14 @@
 ---
 title: [Materialization API]
-last_updated: tbd
+summary: "The materialization API allows you to synchronize a view's data with the latest data."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
 This API enables you to refresh a materialized view to synchronize its data with the latest data load to the underlying tables. You may want to invoke this API in the following scenarios:
 - When the status of a materialized view is `Stale` (out of sync) due to an incremental data load,
-- When the status of a materialized view is `Error` due to an error occurred.
+- When the status of a materialized view is `Error` due to an error that occurred.
 
 {% capture download_note %}
 To refresh a materialized view, you must have the [**Can administer ThoughtSpot** privilege]({{ site.baseurl }}/admin/users-groups/about-users-groups.html#list-of-privileges).

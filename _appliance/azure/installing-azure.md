@@ -1,6 +1,6 @@
 ---
 title: [Configure ThoughtSpot nodes in Azure]
-last_updated: [1/22/2020]
+last_updated: [2/27/2020]
 summary: "Prepare to install your ThoughtSpot cluster by configuring nodes."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -13,43 +13,26 @@ Ensure the successful creation of the virtual machines (VMs) before you install 
 
 1. **Review configuration options** Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) for detailed instance specs.
 2. **Create the instance** Refer to [Set up Azure for ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html) to create and launch your instance.
+3. **Change the admin password** Refer to [Prepare for starting up ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html#prepare-for-startup) to learn how to log into your VM with the private key, and change the admin password. You must change the admin password on first login, or you will not be able to log back into your VMs.
 3. **Review required ports** Refer to [Network Policies]({{ site.baseurl }}/appliance/firewall-ports.html) to view the required ports for successful operation of ThoughtSpot.
 
 {: id="configure-nodes"}
 ## Configure Nodes
 After creating the instance, you must configure the nodes. Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-1">Step 1: Log into your cluster</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-2">Step 2: Get a template for network configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-3">Step 3: Prepare node configuration</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-4">Step 4: Configure the nodes</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="installing-azure#node-step-5">Step 5: Confirm node configuration</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Log in to your cluster](#node-step-1) |
+| &#10063; | [Step 2: Get a template for network configuration](#node-step-2) |
+| &#10063; | [Step 3: Prepare node configuration](#node-step-3) |
+| &#10063; | [Step 4: Configure the nodes](#node-step-4) |
+| &#10063; | [Step 5: Confirm node configuration](#node-step-5) |
 
 {: id="node-step-1"}
-### Step 1: Log into your cluster
-Use Terminal on a Mac or a terminal emulator on Windows to log into your cluster. Log in using the ssh private key provided by ThoughtSpot.<br>
-If you do not have a private key, contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) by email or through the support portal.
+### Step 1: Log in to your cluster
+Use Terminal on a Mac or a terminal emulator on Windows to log in to your cluster. Log in using the new password you created for the *admin* user in step two of [Prepare for starting up ThoughtSpot]({{ site.baseurl }}/appliance/azure/launch-an-instance.html#prepare-for-startup).
 
-To log into your cluster, run `ssh -i <private-key> admin@<public-vm-ip>`.
+To log in to your cluster, run `ssh admin@<public_VM-IP>`.
 ```
-    $ ssh -i <private_key> admin@<public-vm-ip>
+$ ssh admin@<public_VM-IP>
 ```
 
 {: id="node-step-2"}
@@ -145,9 +128,8 @@ Next, [install your ThoughtSpot clusters]({{ site.baseurl }}/appliance/azure/azu
 ## Related information
 Use these references for successful installation and administration of ThoughtSpot.
 
-* [the nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
+* [The nodes.config file]({{ site.baseurl }}/appliance/hardware/nodesconfig-example)
 * [Parameters of the nodes.config file]({{ site.baseurl }}/appliance/hardware/parameters-nodesconfig.html)
 * [Using the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/cluster-create.html)
-* [Parameters of the `cluster create` command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
-* [ThoughtSpot Documentation](https://docs.thoughtspot.com)
+* [Parameters of the cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html)
 * [Contact Support]({{ site.baseurl }}/appliance/contact.html)

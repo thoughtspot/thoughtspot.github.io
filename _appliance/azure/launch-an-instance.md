@@ -1,6 +1,6 @@
 ---
 title: [Set up ThoughtSpot in Azure]
-last_updated: 1/22/2020
+last_updated: 5/13/2020
 summary: "After you determine your configuration options, you must set up your virtual
 machines using a ThoughtSpot image for Azure."
 sidebar: mydoc_sidebar
@@ -16,11 +16,13 @@ image to make hosting simple. A virtual machine is a preconfigured template that
 provides the information required to launch an instance of ThoughtSpot. It includes a root disk for the instance, which contains an operating system, application server, and other necessary software.
 
 The ThoughtSpot Virtual Machine has the ThoughtSpot software installed and
-configured, on a base image. Check with your ThoughtSpot contact to
+configured, on a CentOS-based image. Check with your ThoughtSpot contact to
 learn about the latest version of the ThoughtSpot Virtual Machine.
 
 Due to security restrictions, the ThoughtSpot Virtual Machine does not have default passwords for the administrator users. When you are ready to obtain the password, contact
 [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
+
+This guide explains how to deploy ThoughtSpot on Microsoft Azure, using ThoughtSpot's CentOS-based image. Starting with version 6.0.4, you can also deploy ThoughtSpot on Azure using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.7 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
 
 ## Set up ThoughtSpot in Azure
 
@@ -33,15 +35,16 @@ Complete these steps before launching your ThoughtSpot Virtual Machine:
 1. Obtain an Azure login account.
 2. Set up usage payment details with Microsoft Azure.
 3. Find your company's [Resource Group](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups). (optional--you can also create one while creating your virtual machines.)
+4. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} to have a quick reference for any networking information you may need to fill out. Ask your network administrator if you need help filling out the site survey.
 
 {: id="create-instance"}
 ### Create an instance
 
 Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine).
 
-1. Log into the Azure portal.
+1. Log in to the Azure portal.
 
-    In a browser, go to [https://portal.azure.com/#home](https://portal.azure.com/#home), and log into your Azure account.
+    In a browser, go to [https://portal.azure.com/#home](https://portal.azure.com/#home), and log in to your Azure account.
 
 2. On the Azure portal homepage, hover over **Virtual machines**, and click **Create**.
 
@@ -53,68 +56,25 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
     ![Specify information under Basics]({{ site.baseurl }}/images/azure-basicsettings.png "Specify information under Basics")
     <!--{% include image.html file="azure-basicsettings.png" title="Specify information under Basics" alt="In the Basics menu, specify your subscription type, resource group, VM name, region, image, size, authentication, and port rules." caption="Specify information under Basics" %}-->
 
-    <table>
-      <tr>
-        <td><strong>1</strong></td>
-        <td>Choose a subscription type from the dropdown menu.</td>
-      </tr>
-      <tr>
-        <td><strong>2</strong></td>
-        <td>If your company already has a resource group, <em>select existing</em>. If not, <em>create new</em>.</td>
-      </tr>
-      <tr>
-        <td><strong>3</strong></td>
-        <td>Specify a name for your virtual machine.</td>
-      </tr>
-      <tr>
-        <td><strong>4</strong></td>
-        <td>Specify the region in which you are creating the VM.</td>
-      </tr>
-      <tr>
-        <td><strong>5</strong></td>
-        <td>Click <strong>Browse all public and private images</strong>, and search for the ThoughtSpot image. Click on it.</td>
-      </tr>
-      <tr>
-        <td><strong>6</strong></td>
-        <td>Refer to <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure configuration options</a> to choose a size for your VM that works for your cluster needs.</td>
-      </tr>
-      <tr>
-        <td><strong>7</strong></td>
-        <td>Select <strong>SSH public key</strong> and specify a username.</td>
-      </tr>
-      <tr>
-        <td><strong>8</strong></td>
-        <td>Enter your SSH public key. <a href="{{ site.baseurl }}/appliance/contact.html">Contact ThoughtSpot support</a> to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line.</td>
-      </tr>
-      <tr>
-        <td><strong>9</strong></td>
-        <td>Choose <strong>allow selected ports</strong>.</td>
-      </tr>
-      <tr>
-        <td><strong>10</strong></td>
-        <td>Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot processes do not get blocked. See the <a href="#port-requirements">minimum port requirements.</a></td>
-      </tr>
-    </table>
+    | **1** | Choose a subscription type from the dropdown menu. |
+    | **2** | If your company already has a resource group, *select existing*. If not, *create new*. |
+    | **3** | Specify a name for your virtual machine. |
+    | **4** | Specify the region in which you are creating the VM. |
+    | **5** | Click **Browse all public and private images**, and search for the ThoughtSpot image. Click on it. |
+    | **6** | Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html) to choose a size for your VM that works for your cluster needs. |
+    | **7** | Select **SSH public key** and specify a username. |
+    | **8** | Enter your SSH public key. [Contact ThoughtSpot support]({{ site.baseurl }}/appliance/contact.html) to obtain a public key, if you do not have one. Note that this SSH public key is different from the SSH private key you use later, to ssh into your VM from the command line. |
+    | **9** | Choose **allow selected ports**. |
+    | **10** | Open the necessary Inbound and Outbound ports to ensure that the ThoughtSpot processes do not get blocked. See the [minimum port requirements](#port-requirements). |
 
 2. Specify information under **Disks**.
 
     ![Specify disk information]({{ site.baseurl }}/images/azure-disks.png "Specify disk information")
     <!--{% include image.html file="azure-disks.png" title="Specify disk information" alt="In the Disks menu, choose a disk type, add data disks, and select managed disks" caption="Specify disk information" %}-->
 
-    <table>
-      <tr>
-        <td><strong>1</strong></td>
-        <td>Choose a disk type from the dropdown menu. ThoughtSpot recommends the Premium SSD disks.</td>
-      </tr>
-      <tr>
-        <td><strong>2</strong></td>
-        <td>Click <strong>Create and attach a new disk</strong>. Add two data disks. Refer to <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types.html">Azure configuration options</a> to see what size they should be.</td>
-      </tr>
-      <tr>
-        <td><strong>3</strong></td>
-        <td>Under <strong>Advanced</strong>, click <strong>yes</strong> to <strong>use managed disks</strong>.</td>
-      </tr>
-    </table>
+    | **1** | Choose a disk type from the dropdown menu. ThoughtSpot recommends the Premium SSD disks. |
+    | **2** | Click **Create and attach a new disk**. Add two data disks. Refer to [Azure configuration options]({{ site.baseurl }}/appliance/azure/configuration-options.html#thoughtspot-azure-instance-types.html) to see what size they should be. |
+    | **3** | Under **Advanced**, click **yes** to **use managed disks**. |
 
     {% include tip.html content=" The new Standard SSD disk types are only available for particular regions. Make sure this disk type is supported in the region you chose for your VM before selecting it." %}
 
@@ -125,24 +85,11 @@ Create your virtual machines based on the [ThoughtSpot Virtual Machine](https://
     ![Specify networking information]({{ site.baseurl }}/images/azure-networking.png "Specify networking information")
     <!--{% include image.html file="azure-networking.png" title="Specify networking information" alt="Specify your virtual network, and set inbound and outbound ports, if you haven't already" caption="Specify networking information" %}-->
 
-    <table>
-      <tr>
-        <td><strong>1</strong></td>
-        <td>Find your company's virtual network and select it, or <strong>create new</strong>.</td>
-      </tr>
-      <tr>
-        <td><strong>2</strong></td>
-        <td>Find your company's public IP, or <strong>create new</strong>.</td>
-      </tr>
-      <tr>
-        <td><strong>3</strong></td>
-        <td>Select <strong>Advanced</strong> for <em>NIC network security group</em>.</td>
-      </tr>
-      <tr>
-        <td><strong>4</strong></td>
-        <td>After you select <strong>Advanced</strong>, the <strong>Configure network security group</strong> option appears. Find your company's security group, or <strong>create new</strong>. When creating your security group, ensure that the required ports are open. Refer to the <a href="#port-requirements">minimum port requirements.</a></td>
-      </tr>
-    </table>
+    | **1** | Find your company's virtual network and select it, or **create new**. |
+    | **2** | Find your company's public IP, or **create new**. |
+    | **3** | Select **Advanced** for *NIC network security group*. |
+    | **4** | After you select **Advanced**, the **Configure network security group** option appears. Find your company's security group, or **create new**. When creating your security group, ensure that the required ports are open. Refer to the [minimum port requirements](#port-requirements). |
+
 5. Under **Management**, configure your monitoring and management preferences. If you have no preferences, you can leave them at their default settings.
 
 6. Under **Advanced**, configure your advanced settings preferences. If you have no preferences, you can leave them at their default settings.
@@ -169,21 +116,22 @@ Open the following ports between the User/ETL server and ThoughtSpot nodes. This
 
    Refer to [network policies]({{ site.baseurl }}/appliance/firewall-ports.html) for more information.
 
+{: id="prepare-for-startup"}
 ### Prepare for starting up ThoughtSpot
 
-_Prerequisite_: To log into the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
+_Prerequisite_: To log in to the VM, you need the private key that is available in the image. You can obtain this from your ThoughtSpot contact.
 
 1. Obtain the VM’s public and private IP addresses.
 
    - To see the public IP, click the VM name link. This will show the public IP of the VM.
    - To see the private IP, select **more services** from the Microsoft Azure homepage. Select **Networking** from the list on the left side of the screen.
 
-2. In a terminal application, connect to the VM through SSH. When prompted, enter the private key provided for the admin user.
+2. In a terminal application, connect to the VM through SSH. Enter the private key provided for the admin user.
 
    - You must file a support ticket to obtain this private key; it is necessary for the first login.
    - This key is different from the credentials, or the public keys supplied in earlier steps, which do not work in this context.
 ```
-   $ ssh admin@<VM-IP>
+   $ ssh -i <path_to_private_key> admin@<public_VM_IP>
 ```   
 
 3. Update the password for both the `admin` and the `thoughtspot` users.<br>
@@ -256,7 +204,7 @@ time after a cluster is created or updated. If these changes are not present, a
 reboot of the VMs will not have network access. So when updating these files,
 keep a backup to copy after any subsequent cluster creation or update." %}
 
-1. SSH into one of your VMs.
+1. SSH into one of your VMs, using the new password you created for the *admin* user in step two of [Prepare for starting up ThoughtSpot](#prepare-for-startup).
 ```
     ssh admin@<VM-IP>
 ```

@@ -1,6 +1,6 @@
 ---
 title: [Parameters of the nodes.config file]
-last_updated: [1/13/2020]
+last_updated: [2/4/2020]
 summary: "Learn the parameters of the nodes.config file to install  your cloud or hardware appliance."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -42,11 +42,13 @@ See [Parameters of `nodes.config`]({{ site.baseurl }}/appliance/hardware/paramet
 
 **IPMIGateway**	The IP of the Intelligent Platform Management Interface (IPMI) gateway, in the form 000.000.000.000. For example, 192.168.4.1.   
 
-**Timezone**	The timezone you are setting up the hardware in, in the form Country/City. For example, America/Los_Angeles. To find your timezone and a city you can use to identify it, use [this timezone map](https://www.timeanddate.com/time/map/).
+**Timezone**	The timezone the majority of your ThoughtSpot users are in, in the form Country/City. For example, America/Los_Angeles. To find your timezone and a city you can use to identify it, use [this timezone list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
 **NTPServers**	The address of your company’s Network Time Protocol (NTP) server. If your company does not have an NTP server, you can use one of ThoughtSpot’s, as listed in [the nodes.config]({{ site.baseurl }}/appliance/hardware/nodesconfig-example.html#autodiscovery-of-one-node-example) example under NTPServers. For example, 0.centos.pool.ntp.org.  
 
 **DNS**	The address of your company’s Domain Name Server (DNS). For example, 192.168.2.200,8.8.8.8.  
+
+{% include warning.html content="Configure only two DNS servers. ThoughtSpot does not support configuration of three DNS servers." %}
 
 {% include note.html content="You can only edit DNS settings with this command if you are deploying ThoughtSpot on hardware. ThoughtSpot does not support using <code>set-config</code> to edit your DNS settings for cloud deployment." %}
 

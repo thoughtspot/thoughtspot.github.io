@@ -100,7 +100,7 @@ full backup. Do the following to configure and mount the shared volume.
     </tr>
     </table>
 
-8. Log into the target machine.
+8. Log in to the target machine.
 9. Ensure that the target machine is not running a ThoughtSpot cluster.
 
    If a cluster is running on the target machine, contact please contact

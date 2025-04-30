@@ -1,6 +1,7 @@
 ---
 title: [Add a new data source]
-last_updated: tbd
+summary: "When you enable ThoughtSpot Data Connect, you can add a new data source."
+last_updated: 11/19/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,7 +13,7 @@ Data sources can consist of relational database sources, like SQL Server, or app
 
 2. Click **Data**, on the top navigation bar.
 
-3. Click the **Data Sources** tab at the top of the page, and select **+ New data source** on the upper right hand side of the panel.
+3. Click the **Data Sources** tab at the top of the page, and select **+ Data source** on the upper right hand side of the panel.
 
      ![]({{ site.baseurl }}/images/data_sources_tab.png "New data source")
 

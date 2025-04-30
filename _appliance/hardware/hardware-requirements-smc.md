@@ -1,20 +1,20 @@
 ---
 title: [Hardware Requirements]
-last_updated: [1/22/2020]
+last_updated: [1/31/2020]
 summary: "Learn about your SMC hardware before deploying ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 {: id="about-hardware"}
 ## About the Hardware
-You can deploy ThoughtSpot on two different appliance hardware platforms: Haswell and Skylake. Both of the platforms provide the same performance. Refer to [Haswell and Skylake hardware details]({{ site.baseurl }}#hardware-details) for details on their physical differences.
+You can deploy ThoughtSpot on two different appliance hardware platforms: Haswell and Skylake. Both of the platforms provide the same performance. Refer to [Haswell and Skylake hardware details](#hardware-details) for details on their physical differences.
 
 {: id="hardware-details"}
 | Details | Haswell | Skylake |
 | --- | --- | --- |
 | <strong>Dimensions</strong> | 2 RU chassis (17.25" x 3.47" x 28.5" (WxHxD)) | 2 RU chassis (17.6" x 3.47" x 28.75" (WxHxD)) |
 | <strong># of nodes</strong> | Populated with 1 to 4 nodes | Populated with 1 to 4 nodes |
-| <strong>Node specifications</strong> | Each node is independent and consists of a server board (removable from rear), 1x 200GB SSD, 3x 2TB HDD | Each node is independent and consists of a server board (removable from rear), 1x 240GB SSD, 3x 2TB HDD |
+| <strong>Node specifications</strong> | Each node is independent and consists of a server board (removable from rear), 1x 200GB SSD, 3x .2TB HDD | Each node is independent and consists of a server board (removable from rear), 1x 240GB SSD, 3x 2TB HDD |
 | <strong>Max power consumption</strong> | 2000 W | 2200 W |
 | <strong>Required power input</strong> | 200-240V / 11.8 - 9.8A / 50-60Hz (C13 / C14 power cords)| 220-240 VAC  50-60 Hz (C13 / C14 power cords)|
 

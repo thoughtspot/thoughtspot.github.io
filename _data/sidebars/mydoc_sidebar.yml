@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: Version
-  version: 6.0 Guides
+  version: 6.1 Guides
   sections:
 # Needed for PDF output only; no titles in this section
   - sectiontitle:
@@ -25,9 +25,12 @@ entries:
     - title: Release notes
       url: /release/notes.html
       output: web,rnotes
+    - title: Fixed issues
+      url: /release/fixed.html
+      output: web,rnotes
     - title: Downloads
       url: /release/downloads.html
-      output: web
+      output: web,rnotes
 #    - title: PDF Guides
 #      url: /release/pdfs.html
 #      output: web
@@ -48,6 +51,9 @@ entries:
         output: web,ugBk
       - title: ThoughtSpot browser access
         url: /end-user/accessing.html
+        output: web,ugBk
+      - title: The Getting Started sidebar
+        url: /end-user/introduction/getting-started.html
         output: web,ugBk
       - title: Your user preferences
         url: /end-user/introduction/about-user.html
@@ -106,7 +112,7 @@ entries:
       - levelThreeTitle: Use keywords in search
         output: web,ugBk
         levelThreeItems:
-        - title: Overview of keyword searchess
+        - title: Overview of keyword searches
           url: /complex-search/about-keyword-searches.html
           output: web,ugBk
         - title: Time series analysis
@@ -226,10 +232,10 @@ entries:
         - title: Candlestick Charts
           url: /end-user/search/candlestick-charts.html
           output: web,ugBk
-      - levelThreeTitle: Changing a chart
+      - levelThreeTitle: Changing charts
         output: web,ugBk
         levelThreeItems:
-        - title: Change the chart
+        - title: Changing charts
           url: /end-user/search/change-the-chart.html
           output: web,ugBk
         # new with ChartConfig changes
@@ -237,6 +243,12 @@ entries:
           url: /end-user/search/chart-axes-options.html
           output: web,ugBk
         # older topics
+        - title: Configure the columns
+          url: /end-user/search/drag-and-drop.html
+          output: web,ugBk
+        - title: Rename columns and axes
+          url: /end-user/search/column-renaming.html
+          output: web,ugBk
         - title: Reorder the labels
           url: /end-user/search/reorder-values-on-the-x-axis.html
           output: web,ugBk
@@ -249,8 +261,20 @@ entries:
         - title: Change chart colors
           url: /end-user/search/change-chart-colors.html
           output: web,ugBk
-        - title: Additional chart options
+        - title: Show data labels
           url: /end-user/search/show-data-labels.html
+          output: web,ugBk
+        - title: Show data markers
+          url: /end-user/search/show-data-markers.html
+          output: web,ugBk
+        - title: Add regression lines
+          url: /end-user/search/regression-line.html
+          output: web,ugBk
+        - title: Display gridlines
+          url: /end-user/search/gridlines.html
+          output: web,ugBk
+        - title: Disable automatic selection of chart type
+          url: /end-user/search/lock-chart-type.html
           output: web,ugBk
         - title: Zoom into a chart
           url: /end-user/search/zoom-into-a-chart.html
@@ -320,6 +344,9 @@ entries:
           output: web,ugBk
         - title: Pinboard filters
           url: /complex-search/pinboard-filters.html
+          output: web,ugBk
+        - title: Answer Explorer
+          url: /end-user/pinboards/answer-explorer.html
           output: web,ugBk
         - title: Schedule a pinboard job
           url: /admin/manage-jobs/schedule-a-pinboard-job.html
@@ -417,6 +444,9 @@ entries:
           - title: Share uploaded data
             url: /end-user/data-view/share-user-imported-data.html
             output: web,ugBk
+          - title: Request access
+            url: /end-user/pinboards/request-access.html
+            output: web,ugBk
           - title: Revoke access (unshare)
             url: /end-user/pinboards/unshare.html
             output: web,ugBk
@@ -431,15 +461,6 @@ entries:
           output: web,ugBk
         - title: Teach SearchIQ your language
           url: /end-user/search/teach-searchiq.html
-          output: web,ugBk
-    - levelTwoTitle: Slack and ThoughtSpot
-      output: web,ugBk
-      levelTwoItems:
-        - title: Slack and Spot
-          url: /end-user/slack/intro.html
-          output: web,ugBk
-        - title: How to use Spot
-          url: /end-user/slack/use-spot.html
           output: web,ugBk
     - title: More help and support
       url: /end-user/help-center/what-you-can-find-in-the-help-center.html
@@ -540,9 +561,6 @@ entries:
       - title: Customize look and feel
         url: /admin/setup/customize-style.html
         output: web,admBk
-      - title: Add the Slack integration
-        url: /admin/setup/slack-integration.html
-        output: web,admBk
     - levelTwoTitle: Load and manage data
       output: web,admBk
       levelTwoItems:
@@ -626,7 +644,7 @@ entries:
       levelTwoItems:
       - title: Onboarding Users
         url: /end-user/onboarding/intro-onboarding.html
-        output: web,ugBk
+        output: web,admBk
       - title: Understand groups and privileges
         url: /admin/users-groups/about-users-groups.html
         output: web,admBk
@@ -669,14 +687,20 @@ entries:
         - title: Share worksheets
           url: /admin/data-security/share-worksheets.html
           output: web,admBk
-        - title: Share a pinboard
+        - title: Share Views
+          url: /admin/data-security/share-views.html
+          output: web,admBk
+        - title: Share Pinboard
           url: /admin/data-security/share-pinboards.html
           output: web,admBk
-        - title: Security for SpotIQ functions
-          url: /admin/data-security/spotiq-admin.html
+        - title: Share Answers
+          url: /admin/data-security/share-answers.html
           output: web,admBk
         - title: Revoke access (unshare)
           url: /admin/data-security/unshare.html
+          output: web,admBk
+        - title: Security for SpotIQ functions
+          url: /admin/data-security/spotiq-admin.html
           output: web,admBk
       - levelThreeTitle: Row level security (RLS)
         output: web,admBk
@@ -739,7 +763,7 @@ entries:
           url: /admin/backup-restore/restore.html
           output: web,admBk
     - levelTwoTitle: Improve search with modeling
-      output: web,pdf
+      output: web,admBk
       levelTwoItems:
       - title: About data modeling
         url: /admin/data-modeling/about-data-modeling-intro.html
@@ -779,6 +803,9 @@ entries:
           output: web,admBk
         - title: Change the Attribution Dimension setting
           url: /admin/data-modeling/attributable-dimension.html
+          output: web,admBk
+        - title: Add or manage experts
+          url: /admin/data-modeling/add-expert.html
           output: web,admBk
       - levelThreeTitle: Link tables using relationships
         output: web,admBk
@@ -1002,21 +1029,9 @@ entries:
       - title: Configure CA SiteMinder
         url: /app-integrate/SAML/configure-SAML-siteminder.html
         output: web,apgBk
-      - levelThreeTitle: Active Directory
+      - title: Configure Active Directory Federated Services
+        url: /app-integrate/SAML/integrate-ADFS.html
         output: web,apgBk
-        levelThreeItems:
-        - title: Configure Active Directory Federated Services
-          url: /app-integrate/SAML/integrate-ADFS.html
-          output: web,apgBk
-        - title: Initialize the Identity Provider Metadata
-          url: /app-integrate/SAML/initialize-IDP.html
-          output: web,apgBk
-        - title: Initialize the Service Provider Metadata
-          url: /app-integrate/SAML/initialize-SP.html
-          output: web,apgBk
-        - title: Test the ADFS Integration
-          url: /app-integrate/SAML/test-ADFS.html
-          output: web,apgBk
     - levelTwoTitle: REST API
       output: web,apgBk
       levelTwoItems:
@@ -1055,7 +1070,7 @@ entries:
         output: web,apgBk
       - title: Configure trusted authentication
         url: /app-integrate/embedding-viz/trusted-authentication.html
-        output: web,apgBk
+        output: web,pdf
     - levelTwoTitle: Runtime Filters
       output: web,apgBk
       levelTwoItems:
@@ -1069,7 +1084,7 @@ entries:
         url: /app-integrate/runtime-filters/runtime-filter-operators.html
         output: web,apgBk
     - levelTwoTitle: Style Customization
-      output: web,apgBk
+      output: web,pdf
       levelTwoItems:
       - title: Customize the application style
         url: /app-integrate/custom-branding/perform-style-customization.html
@@ -1113,6 +1128,9 @@ entries:
       - title: Materialization API
         url: /app-integrate/reference/materialization-api.html
         output: web,apgBk
+      - title: Search Data API
+        url: /app-integrate/reference/search-data-api.html
+        output: web,apgBk
  # -- Uncomment out this section ONLY when generating a PDF for AWS
 #  - sectiontitle: AWS Installation
 #    output: web,instAWS
@@ -1144,8 +1162,20 @@ entries:
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
 #      output: web,appQs,instAWS
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instAWS
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
+#      output: web,appQs,instAWS
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instAWS
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instAWS
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
 #      output: web,appQs,instAWS
 
 # -- end of PDF for AWS section
@@ -1180,6 +1210,18 @@ entries:
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
 #      output: web,appQs,instAzure
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instAzure
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instAzure
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instAzure
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
+#      output: web,appQs,instAzure
 # -- end of PDF for Azure section
 # -- Uncomment out this section ONLY when generating a PDF for GCP
 #  - sectiontitle: GCP Installation
@@ -1211,6 +1253,18 @@ entries:
 #      output: web,appQs,instGCP
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
+#      output: web,appQs,instGCP
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instGCP
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instGCP
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instGCP
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
 #      output: web,appQs,instGCP
 # -- end of PDF for GCP section
 # -- Uncomment out this section ONLY when generating a PDF for VMware
@@ -1244,55 +1298,82 @@ entries:
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
 #      output: web,appQs,instVMware
+#    - title: Cloud overview
+#      url: /appliance/cloud.html
+#      output: web,appQs,instVMware
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instVMware
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instVMware
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
+#      output: web,appQs,instVMware
 # -- end of PDF for VMware section
 # -- Uncomment out this section ONLY when generating a PDF for Dell
 #  - sectiontitle: Dell Installation
-#    output: web,appQs,instDell
+#    output: web,appQs,pdf
 #    sectionitems:
+#    - title: Hardware appliance overview
+#      url: /appliance/hardware/inthebox.html
+#      output: web,appQs,pdf
 #    - title: Deploying on the Dell appliance
 #      url: /appliance/hardware/installing-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Prerequisites
 #      url: /appliance/hardware/prerequisites-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Hardware requirements
 #      url: /appliance/hardware/hardware-requirements-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Connect the appliance
 #      url: /appliance/hardware/connect-appliance-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Configure management settings
 #      url: /appliance/hardware/configure-management-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Configure nodes
 #      url: /appliance/hardware/configure-nodes-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Install cluster
 #      url: /appliance/hardware/install-cluster-dell.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: The nodes.config file
 #      url: /appliance/hardware/nodesconfig-example.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Parameters of the nodes.config file
 #      url: /appliance/hardware/parameters-nodesconfig.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Using the cluster create command
 #      url: /appliance/hardware/cluster-create.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Parameters of the cluster create command
 #      url: /appliance/hardware/parameters-cluster-create.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Network policies
 #      url: /appliance/firewall-ports.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
 #    - title: Cable reference
 #      url: /appliance/hardware/cable-networking.html
-#      output: web,appQs,instDell
+#      output: web,appQs,pdf
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,pdf
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,pdf
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
+#      output: web,appQs,pdf
 # -- end of PDF for Dell section
 # -- Uncomment out this section ONLY when generating a PDF for SMC
 #  - sectiontitle: SMC Installation
 #    output: web,appQs,instSMC
 #    sectionitems:
+#    - title: Hardware appliance overview
+#      url: /appliance/hardware/inthebox.html
+#      output: web,appQs,instSMC
 #    - title: Deploying on the SMC appliance
 #      url: /appliance/hardware/installing-the-smc.html
 #      output: web,appQs,instSMC
@@ -1329,6 +1410,15 @@ entries:
 #    - title: Cable reference
 #      url: /appliance/hardware/cable-networking.html
 #      output: web,appQs,instSMC
+#    - title: Contact ThoughtSpot support
+#      url: /appliance/contact.html
+#      output: web,appQs,instSMC
+#    - title: Site survey
+#      url: /site-survey.pdf
+#      output: web,appQs,instSMC
+#    - title: tscli command reference
+#      url: /reference/tscli-command-ref.html
+#      output: web,appQs,instSMC
 # -- end of PDF for SMC section
   - sectiontitle: Deploy
     output: web,appQs
@@ -1336,12 +1426,39 @@ entries:
     - title: Overview
       url: /appliance/welcome-intro.html
       output: web,appQs
+    - levelTwoTitle: RHEL Support
+      output: web,appQs
+      levelTwoItems:
+      - title: RHEL overview
+        url: /appliance/rhel/rhel.html
+        output: web,appQs
+      - title: RHEL prerequisites
+        url: /appliance/rhel/rhel-prerequisites.html
+        output: web,appQs
+      - title: ThoughtSpot artifacts
+        url: /appliance/rhel/rhel-ts-artifacts.html
+        output: web,appQs
+      - title: Online RHEL install
+        url: /appliance/rhel/rhel-install-online.html
+        output: web,appQs
+      - title: Offline RHEL install
+        url: /appliance/rhel/rhel-install-offline.html
+        output: web,appQs
+      - title: RHEL upgrade
+        url: /appliance/rhel/rhel-upgrade.html
+        output: web,appQs
+      - title: Adding new nodes to clusters in RHEL
+        url: /appliance/rhel/rhel-add-node.html
+        output: web,appQs
+      - title: Packages installed with RHEL
+        url: /appliance/rhel/rhel-packages.html
+        output: web,appQs
     - levelTwoTitle: Hardware appliance
       output: web,appQs
       levelTwoItems:
       - title: Hardware appliance overview
         url: /appliance/hardware/inthebox.html
-        output: web,appQs,instSMC,instDell
+        output: web,appQs,instSMC,pdf
       - levelThreeTitle: Deploying on the SMC appliance
         output: web,appQs,instSMC
         levelThreeItems:
@@ -1364,41 +1481,41 @@ entries:
           url: /appliance/hardware/smc-cluster-install.html
           output: web,appQs,instSMC
       - levelThreeTitle: Deploying on the Dell appliance
-        output: web,appQs,instDell
+        output: web,appQs,pdf
         levelThreeItems:
         - title: Deploying on the Dell appliance
           url: /appliance/hardware/installing-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Prerequisites
           url: /appliance/hardware/prerequisites-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Hardware requirements
           url: /appliance/hardware/hardware-requirements-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Connect the appliance
           url: /appliance/hardware/connect-appliance-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Configure management settings
           url: /appliance/hardware/configure-management-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Configure nodes
           url: /appliance/hardware/configure-nodes-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
         - title: Install cluster
           url: /appliance/hardware/install-cluster-dell.html
-          output: web,appQs,instDell
+          output: web,appQs,pdf
       - title: The nodes.config file
         url: /appliance/hardware/nodesconfig-example.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Parameters of the nodes.config file
         url: /appliance/hardware/parameters-nodesconfig.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Using the tscli cluster create command
         url: /appliance/hardware/cluster create.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
       - title: Parameters of the tscli cluster create command
         url: /appliance/hardware/parameters-cluster-create.html
-        output: instDell,instVMware,instAWS,instGCP,instAzure,instSMC
+        output: pdf,instVMware,instAWS,instGCP,instAzure,instSMC
     - levelTwoTitle: Cloud
       output: web,appQs
       levelTwoItems:
@@ -1425,6 +1542,9 @@ entries:
           output: web,appQs,instAWS
         - title: Set up high availability
           url: /appliance/aws/ha-aws-efs.html
+          output: web,appQs,instAWS
+        - title: Back up and Restore using S3
+          url: /appliance/aws/aws-backup-restore.html
           output: web,appQs,instAWS
       - levelThreeTitle: Azure
         output: web,appQs,instAzure
@@ -1456,6 +1576,9 @@ entries:
         - title: Install ThoughtSpot clusters in GCP
           url: /appliance/gcp/gcp-cluster-install.html
           output: web,appQs,instGCP
+        - title: Back up and Restore using GCS
+          url: /appliance/gcp/gcp-backup-restore.html
+          output: web,appQs,instGCP
     - levelTwoTitle: VMware
       output: web,appQs,instVMware
       levelTwoItems:
@@ -1477,27 +1600,96 @@ entries:
     - title: Contact support
       url: /appliance/contact.html
       output: web,appQs
+  - sectiontitle: Embrace
+    output: web,pdf
+    sectionitems:
+    - title: Overview
+      url: /data-integrate/embrace/embrace-intro.html
+      output: web,embraceGd
+    - levelTwoTitle: Snowflake
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-snowflake-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-snowflake-modify.html
+        output: web,embraceGd
+      - title: Best practices
+        url: /data-integrate/embrace/embrace-snowflake-best.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-snowflake-reference.html
+        output: web,embraceGd
+      - levelThreeTitle: Snowflake Partner Connect
+        output: web,embraceGd
+        levelThreeItems:
+        - title: Overview
+          url: /data-integrate/embrace/embrace-snowflake-partner.html
+          output: web,embraceGd
+        - title: Tutorials
+          url: /data-integrate/embrace/embrace-snowflake-tutorial.html
+          output: web,embraceGd
+    - levelTwoTitle: Redshift
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-redshift-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-redshift-modify.html
+        output: web,embraceGd
+      - title: Best practices
+        url: /data-integrate/embrace/embrace-redshift-best.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-redshift-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: BigQuery
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-gbq-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-gbq-modify.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-gbq-reference.html
+        output: web,embraceGd
+    - levelTwoTitle: Synapse
+      output: web,embraceGd
+      levelTwoItems:
+      - title: Add a connection
+        url: /data-integrate/embrace/embrace-synapse-add.html
+        output: web,embraceGd
+      - title: Modify a connection
+        url: /data-integrate/embrace/embrace-synapse-modify.html
+        output: web,embraceGd
+      - title: Reference
+        url: /data-integrate/embrace/embrace-synapse-reference.html
+        output: web,embraceGd
   - sectiontitle: Data Integration
     output: web,pdf
     sectionitems:
     - title: Introduction to Data Integration
       url: /data-integrate/introduction/introduction-data-integration.html
       output: web,digBk
-    - levelTwoTitle: Embrace
-      output: web,digBk
-      levelTwoItems:
-      - title: Overview
-        url: /data-integrate/embrace/embrace-intro.html
-        output: web,digBk
-      - title: Add a connection
-        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
-        output: web,digBk
-      - title: Modify a connection
-        url: /data-integrate/embrace/getting-started/modify-a-connection.html
-        output: web,apgBk
-      - title: Connectors reference
-        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
-        output: web,digBk
+#    - levelTwoTitle: Embrace
+#      output: web,digBk
+#      levelTwoItems:
+#      - title: Overview
+#        url: /data-integrate/embrace/embrace-intro.html
+#        output: web,digBk
+#      - title: Add a connection
+#        url: /data-integrate/embrace/getting-started/setup-a-new-connection.html
+#        output: web,digBk
+#      - title: Modify a connection
+#        url: /data-integrate/embrace/getting-started/modify-a-connection.html
+#        output: web,pdf
+#      - title: Connectors reference
+#        url: /data-integrate/embrace/reference/embrace-connection-credentials.html
+#        output: web,digBk
     - title: JDBC and ODBC setup prerequisites
       url: /data-integrate/introduction/jdbc-odbc-prereqs.html
       output: web,digBk
@@ -1642,6 +1834,9 @@ entries:
     - levelTwoTitle: Deployment reference
       output: web,refGd
       levelTwoItems:
+      - title: Cable reference
+        url: /appliance/hardware/cable-networking.html
+        output: web,appQs,pdf,instSMC
       - title: Network Policies
         url: /appliance/firewall-ports.html
         output: web,refGd
@@ -1657,6 +1852,10 @@ entries:
       - title: Parameters of cluster create
         url: /appliance/hardware/parameters-cluster-create.html
         output: web,refGd
+      - title: Site Survey
+        url: /site-survey.pdf
+        output: web,refGd
+
   - sectiontitle: ThoughtSpot in Practice
     output: web,practGd
     sectionitems:

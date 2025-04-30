@@ -1,6 +1,6 @@
 ---
 title: [AWS configuration options]
-last_updated: 10/09/2019
+last_updated: 3/17/2020
 summary: "Your instances require specific configurations of memory, CPU, storage, and networking capacity."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -18,40 +18,40 @@ All AWS VMs in a ThoughtSpot cluster must be in the same availability zone (and 
 
 The following sections contain the supported and recommended instance types for a ThoughtSpot AWS deployment. When setting up your cluster in AWS, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
 
-For example: If you were deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you would need 4 instances (VMs), because the per-VM user data capacity of that instance type is 250 GB. If you were deploying EBS-only data volumes, you would need 2x1 TB data volumes per VM.
+For example: If you were deploying a total cluster data size of 1 TB using the standard r5.16xlarge instance type, you would need 4 VM instances, because the instance type supports data capacity of 250 GB. The data volumes on the EBS would need to be provision with 2x1 TB volumes per VM.
 
 {: id="vm-ebs-only-persistent-storage" }
 ### VMs with EBS-only persistent storage
 
 ![]({{ site.baseurl }}/images/persistent-storage-ebs.svg "AWS EBS-only Persistent Storage")
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
-| --- | --- | --- |--- |
-| 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 2X 400 GB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 2X 400 GB |
-| 192 GB | m5.24xlarge | 96/384 | 2X 1 TB |
-| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 2x 1 TB |
-| 384 GB | r5.24xlarge | 96/768 | 2X 1.5 TB |
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required root volume capacity |
+| --- | --- | --- |--- | --- |
+| 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 2X 400 GB | 200 GB for each node |
+| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 2X 400 GB | 200 GB for each node |
+| 192 GB | m5.24xlarge | 96/384 | 2X 1 TB | 200 GB for each node |
+| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 2x 1 TB | 200 GB for each node |
+| 384 GB | r5.24xlarge | 96/768 | 2X 1.5 TB | 200 GB for each node |
 
 {: id="vm-ebs-s3-persistent-storage"}
 ### VMs with EBS and S3 persistent storage
 
 ![]({{ site.baseurl }}/images/persistent-storage-ebs-s3.svg "AWS EBS and S3 Persistent Storage")
 
-| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume |
-| --- | --- | --- |--- |
-| 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 1x 500 GB |
-| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 1x 500 GB |
-| 192 GB | m5.24xlarge | 96/384 | 1x 500 GB |
-| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 1x 500 GB |
-| 384 GB | r5.24xlarge | 96/768 | 1x 500 GB |
+| Per VM user data capacity | Instance type | CPU/RAM | Recommended per-VM EBS volume | Required root volume capacity |
+| --- | --- | --- |--- | --- |
+| 20 GB | r4.4xlarge, r5.4xlarge | 16/122, 16/128 | 1x 500 GB | 200 GB for each node |
+| 100 GB | r4.8xlarge, r5.8xlarge | 32/244, 32/256 | 1x 500 GB | 200 GB for each node |
+| 192 GB | m5.24xlarge | 96/384 | 1x 500 GB | 200 GB for each node |
+| 250 GB | r4.16xlarge, r5.16xlarge | 64/488, 64/512 | 1x 500 GB | 200 GB for each node |
+| 384 GB | r5.24xlarge | 96/768 | 1x 500 GB | 200 GB for each node |
 
 {% include note.html content="The S3 bucket size is approximately equal to the size of the user data." %}
 
 {: id="related"}
 ## Related information
 
-- [EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
-- [EC2 pricing](https://aws.amazon.com/ec2/pricing/)
-- [EBS pricing](https://aws.amazon.com/ebs/pricing/)
-- [Placement groups](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
+- [EC2 instance types](https://aws.amazon.com/ec2/instance-types/){:target="_blank"}
+- [EC2 pricing](https://aws.amazon.com/ec2/pricing/){:target="_blank"}
+- [EBS pricing](https://aws.amazon.com/ebs/pricing/){:target="_blank"}
+- [Placement groups](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html){:target="_blank"}

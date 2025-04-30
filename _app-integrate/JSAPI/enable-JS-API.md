@@ -1,7 +1,7 @@
 ---
 title: [Authentication flow with embed]
-
-last_updated: tbd
+summary: You can enable Single Sign On (SSO) with your embedded version of ThoughtSpot.
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -33,7 +33,7 @@ visualization iframe in your web page.
 
 ## Example of code flow
 
-To authenticate with SSO.
+To authenticate with SSO:
 
 1. <a href="{{"/release/downloads.html" | prepend: site.baseurl }}" target="_blank">Download</a> the ThoughtSpot JavaScript library.
 2. Include the library file into your web page's `<head>` section:

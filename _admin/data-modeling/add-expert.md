@@ -1,22 +1,22 @@
 ---
-title: ["Manage experts or add an expert"]
+title: ["Add or manage experts"]
 
-last_updated: 09/23/2019
+last_updated: 3/20/2020
 summary: "You can designate experts for each data source, so users won't get stuck if they need help."
 sidebar: mydoc_sidebar
 toc: true
 permalink: /:collection/:path.html
 ---
 
-If your users occasionally struggle to answer a specific question, build a chart you have in mind, or find something in your data, you can enable **Ask an expert**. This lets them request help from someone in your organization.
+If your users occasionally struggle to answer a specific question, build a chart they have in mind, or find something in their data, you can enable **Ask an Expert**. This lets them request help from someone in your organization.
 
-The request goes to the person in your company who knows the data source very well, and how to search it in ThoughtSpot. When the request is answered, the user will be able to see the result in the **Answers** listing in ThoughtSpot.
+The request goes to the person in your company who knows the data source very well, and how to search it in ThoughtSpot. The user can see the expert's answer in the **Ask an Expert** interface in ThoughtSpot.
 
-You can see how an end user experiences **Ask an expert** [here]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
+You can see how an end user experiences **Ask an Expert** [here]({{ site.baseurl }}/end-user/search/ask-an-expert.html).
 
 ## Add an expert to a data source
 
-Adding an expert is what enables **Ask an expert** to work in your ThoughtSpot instance. Until you do these steps, users won't see the prompt to **Ask an expert** when using that data source.
+Adding an expert for a data source enables **Ask an Expert** in your ThoughtSpot instance. Until you add an expert, users won't see the prompt to **Ask an Expert** when using that data source.
 
 To add an expert to a data source:
 
@@ -27,9 +27,13 @@ To add an expert to a data source:
 
 3. Click the three dot icon in the upper right side of the page and select **Manage experts**.
 
-4. Make your selections and click **Save**.
+    ![Manage experts]({{ site.baseurl }}/images/ask-an-expert-manage.png "Manage experts")
+
+4. Make your selections and click **Done**.
+
+    ![Add experts]({{ site.baseurl }}/images/ask-an-expert-add-expert.png "Add experts")
 
 ## Related information  
 
-- [Model the data for searching](semantic-modeling.html#)
+- [Model the data for searching]({{ site.baseurl }}/admin/data-modeling/about-data-modeling-intro.html)
 - [Ask an Expert]({{ site.baseurl }}/end-user/search/ask-an-expert.html)

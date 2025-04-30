@@ -5,8 +5,13 @@ last_updated: tbd
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-ThoughtSpot mobile 1.2 is now available. These release notes include information about new features,
+ThoughtSpot mobile 1.3 is now available. These release notes include information about new features,
 fixed issues from the previous releases, and any known issues.
+
+{: id="1-3-new"}
+## 1.3 New Features and Functionality
+- All-new design
+- New Android app (for Android 6.0 or later)
 
 {: id="1-2-new"}
 ## 1.2 New Features and Functionality

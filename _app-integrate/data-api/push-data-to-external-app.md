@@ -1,8 +1,8 @@
 ---
 title: [Use the Data Push API]
 
-last_updated: 11/4/2018
-summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application"
+last_updated: 11/18/2019
+summary: "This procedure shows how to use the Data Push API to send data from ThoughtSpot to another application."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

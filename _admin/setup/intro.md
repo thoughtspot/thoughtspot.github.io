@@ -1,19 +1,18 @@
 ---
 title: [About installation and upgrades]
-last_updated: 10/09/2019
+last_updated: 3/4/2020
 summary: "As administrator, you are responsible for setting up and configuring ThoughtSpot. This guide explains how. It will also assist you in troubleshooting some common problems, finding additional resources, and contacting ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Your ThoughtSpot application software is already installed for you in a
-ThoughtSpot appliance. This is true for both physical and virtual appliances.
 
-The ThoughtSpot software is updated by ThoughtSpot Support. ThoughtSpot Support
-will contact you to schedule an update when one becomes available.
+In ThoughtSpot, both physical appliances and virtual machines ship with a base OS image. ThoughtSpot Support then helps you to install, and subsequently update the software. Note the exception of RHEL installations, where the customer provides the OS image themselves, and uses a slightly different installation protocol. 
+
+The ThoughtSpot Support team contacts all clients to schedule updates as we release new versions of ThoughtSpot. To schedule upgrades to patch releases that support your use cases, work with our Customer Success team.
 
 As administrator, you are responsible for setting up and configuring
-ThoughtSpot. This guide explains how. It will also assist you in troubleshooting
-some common problems, finding additional resources, and contacting ThoughtSpot.
+ThoughtSpot. This guide helps you with these tasks, and also assists in troubleshooting
+some common problems and finding additional resources.
 
 {: id="display-current-config"}
 ## Display your current configuration
@@ -21,7 +20,7 @@ some common problems, finding additional resources, and contacting ThoughtSpot.
 To perform the setup and configuration, you must first learn how to [gain
 administrative access]({{ site.baseurl }}/admin/setup/logins.html).
 
-1. Log into the ThoughtSpot cluster as the `admin` user.
+1. Log in to the ThoughtSpot cluster as the `admin` user.
 2. Use the `tscli feature` subcommand to display your current configuration.
 
     ```
@@ -42,26 +41,6 @@ administrative access]({{ site.baseurl }}/admin/setup/logins.html).
     +---------------------------------+----------+---------------+
     ```
 
-<!--
-{: id="management-console" }
-## About Management Console
-
-{% include note.html content="The Management Console is now available in beta for customers with ThoughtSpot 5.3 or later.  If you want to try it, please contact ThoughtSpot Support." %}
-
-ThoughtSpot now comes with a Management Console, a self-service portal that enables network administrators to manage and monitor ThoughtSpot clusters. This console  compliments the existing tscli-based configuration. The Management Console is broadly classified into three functional areas, namely:
-- **Admin**: The existing admin-related functions such as user, data, jobs, system monitoring, styling and many more reside here.
-- **Settings**: This section allows you to configure a series of system administration modules such as SAML, SSL, LDAP, AD, SMTP and many more.
-  - [Configure SSL]({{ site.baseurl }}/admin/setup/SSL-config.html)
-  - [Configure internal authentication]({{ site.baseurl }}/admin/setup/internal-auth.html)
-  - [Configure SAML]({{ site.baseurl }}/admin/setup/configure-SAML-with-tscli.html)
-  - [Configure NAS file system]({{ site.baseurl }}/admin/setup/NAS-mount.html)
-  - [Create a backup]({{ site.baseurl }}/admin/backup-restore/take-backup.html)
-  - [Create a snapshot]({{ site.baseurl }}/admin/backup-restore/overview-snapshot.html)
-  - [Configure SMTP]({{ site.baseurl }}/admin/setup/set-up-relay-host.html)
-  - [Configure reverse SSH tunnel]({{ site.baseurl }}/admin/setup/work-with-ts-support.html#set-up-a-reverse-tunnel-for-support)
-- **Update**: This section allows you to [upgrade your cluster.]({{ site.baseurl }}/admin/system-admin/upgrade-a-cluster.html#)
-
--->
 {: id="related" }
 ## Related information
 
@@ -76,4 +55,3 @@ The following tasks are also available:
 * [Network ports]({{ site.baseurl }}/admin/setup/firewall-ports.html)
 * [Configure load balancing and proxies]({{ site.baseurl }}/admin/setup/about-load-balancer-configuration.html)
 * [Customize look and feel]({{ site.baseurl }}/admin/setup/customize-style.html)
-* [Add the Slack integration]({{ site.baseurl }}/admin/setup/slack-integration.html)

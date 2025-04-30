@@ -1,7 +1,7 @@
 ---
 title: [Apply a Runtime Filter]
-
-last_updated: tbd
+summary: "Learn how to apply a runtime filter."
+last_updated: 11/18/2019
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,30 +1,16 @@
 ---
 title: [Connect the SMC appliance]
-last_updated: [1/22/2020]
+last_updated: [1/31/2020]
 summary: "Connect the SMC appliance before you can deploy ThoughtSpot."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 After you rack and stack the appliance, it is time to configure it. If necessary, review the [Hardware Appliance Overview]({{ site.baseurl }}/appliance/hardware/inthebox.html). Follow the steps in this checklist.
 
-<table>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-1">Step 1: Connect switches to 10GbE ports</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-2">Step 2: Connect IPMI ports</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-3">Step 3: Turn on nodes</a></td>
-  </tr>
-  <tr>
-    <td>&#10063;</td>
-    <td><a href="connect-appliance-smc#appliance-step-4">Step 4: Log in</a></td>
-  </tr>
-</table>
+| &#10063; | [Step 1: Connect switches to 10GbE ports](#appliance-step-1) |
+| &#10063; | [Step 2: Connect IPMI ports](#appliance-step-2) |
+| &#10063; | [Step 3: Turn on nodes](#appliance-step-3) |
+| &#10063; | [Step 4: Log in](#appliance-step-4) |
 
 {: id="appliance-step-1"}
 ## Step 1: Connect switches to 10GbE ports
@@ -71,7 +57,7 @@ Check the health of the NIC by inspecting your appliance's LEDs. There should be
 
 After the LEDs are the correct colors, verify that the connection is valid and the nodes are on by pinging the gateway:<br>
 Enter `ping <default-gateway-IP>`.<br>
-Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot site survey.
+Ask your network administrator for your default gateway IP if you have not already listed it in your ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"}.
 ```  
     $ ping <default-gateway-IP>
 ```    
