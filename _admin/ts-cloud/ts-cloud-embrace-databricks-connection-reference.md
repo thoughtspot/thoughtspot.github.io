@@ -60,4 +60,4 @@ If your Databricks is hosted on Microsoft Azure, see [Databricks on Microsoft Az
       <dd>For more information, see <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token" target="_blank">Generate a personal access token</a>.</dd></dlentry>
 </dl>
 
-For detailed information on using ThoughtSpot with an Azure Databricks cluster, see [Microsoft Azure ThoughtSpot documentation](https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/thoughtspot){:target="_blank"}
+For detailed information on how ThoughtSpot with an Azure Databricks cluster, see [Microsoft Azure ThoughtSpot documentation](https://docs.microsoft.com/en-us/azure/databricks/integrations/bi/thoughtspot){:target="_blank"}

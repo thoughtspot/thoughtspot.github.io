@@ -1,13 +1,10 @@
 ---
 title: [Following pinboards]
-last_updated: 12/1/2021
+last_updated: 1/17/2020
 summary: "In ThoughtSpot, you can follow Pinboards and schedule email notifications to regularly review the visuals that represent dynamic data."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-
-{% include deprecation.html content="This feature is now deprecated. You may not use it starting with the January Cloud release. Instead, create a pinboard schedule. A pinboard schedule emails a PDF of the pinboard to you on a regular schedule. Your existing pinboard follows will be migrated to pinboard schedules. For details, see Deprecation Announcements." %}
-
 When you follow a pinboard, ThoughtSpot sends you regular emails that contain the snapshot of the pinboard. You can change the scheduling of this email to suit your business needs.
 
 {: id="pinboard-follow"}

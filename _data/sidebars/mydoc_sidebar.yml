@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: ThoughtSpot Cloud
-  docversion: ts7.oct.cl
+  docversion: ts7.sep.cl
   # version: tscloud.7
   sections:
 # Needed for PDF output only; no titles in this section
@@ -200,7 +200,7 @@ entries:
         - title: Delete connection
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-delete-connection.html
           output: web
-        - title: Configure internal OAuth
+        - title: Configure OAuth
           url: /admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html
           output: web
         - title: Best practices
@@ -443,21 +443,21 @@ entries:
         - title: Connection reference
           url: /admin/ts-cloud/ts-cloud-embrace-hana-connection-reference.html
           output: web
-      - levelThreeTitle: Custom calendar
-        output: web
-        levelThreeItems:
-        - title: Overview
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal.html
-          output: web
-        - title: Create a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html
-          output: web
-        - title: Update a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html
-          output: web
-        - title: Delete a custom calendar
-          url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html
-          output: web
+#     - levelThreeTitle: Custom calendar
+#       output: web
+#       levelThreeItems:
+#       - title: Overview
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal.html
+#         output: web
+#       - title: Create a custom calendar
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-create.html
+#         output: web
+#       - title: Update a custom calendar
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-update.html
+#         output: web
+#       - title: Delete a custom calendar
+#         url: /admin/ts-cloud/ts-cloud-embrace-cust-cal-delete.html
+#         output: web
     - levelTwoTitle: IT and Ops
       output: web
       levelTwoItems:
@@ -475,9 +475,6 @@ entries:
         output: web
       - title: Managing authentication with SAML
         url: /admin/ts-cloud/authentication-integration.html
-        output: web
-      - title: Configure SAML group mapping
-        url: /admin/ts-cloud/saml-group-mapping.html
         output: web
 #      - title: Sync users and groups from LDAP
 #        url: /admin/setup/sync-users-and-groups-from-ldap.html
@@ -899,6 +896,9 @@ entries:
     - title: "SpotIQ analysis"
       url: /spotiq/customization.html
       output: web,ugBk
+#    - title: "Monitor time series charts"
+#      url: /admin/ts-cloud/monitor.html
+#      output: web,ugBk
 #    - title: "Insight feedback"
 #      url: /spotiq/insight-feedback.html
 #      output: web,ugBk
@@ -1070,9 +1070,9 @@ entries:
       - title: Configure casing
         url: /admin/loading/about-case-configuration.html
         output: web,admBk
-      - title: Load CSV files with the UI
-        url: /admin/loading/load-from-web-browser.html
-        output: web,admBk
+#      - title: Load CSV files with the UI
+#        url: /admin/loading/load-from-web-browser.html
+#        output: web,admBk
       - title: How to view a data schema
         url: /admin/loading/schema-viewer.html
         output: web,admBk
@@ -1532,7 +1532,6 @@ entries:
     - title: Add a hyperlink to a Search
       url: /reference/practice/pinboard-hyperlink.html
       output: web,practGd
-
 [//]: #     - title: Topic index
 [//]: #       url: /reference/tags_index.html
 [//]: #       output: web

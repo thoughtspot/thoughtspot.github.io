@@ -1,8 +1,8 @@
 ---
 title: [ThoughtSpot Cloud requirements and support]
-last_updated: 10/7/2021
+last_updated: 10/11/2021
 summary: "Information about features, and how to sign up."
-toc: true
+toc: false
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---

@@ -1,24 +1,11 @@
 ---
 title: ["What's new in Free Trial"]
 keywords: "free trial"
-last_updated: 11/11/2021
+last_updated: 10/21/2021
 sidebar: mydoc_sidebar
 toc: false
 permalink: /:collection/:path.html
 ---
-
-## November 11, 2021
-
-### Free Trial Make It Shine
-
-These are the changes we made to Free Trial this week:
-
-- When you create a connection in Setup, ThoughtSpot now automatically selects that connection for **Step 2: model data and create a worksheet**.
-- We fixed a bug that caused Intercom to relaunch when users click **Upgrade now**.
-- To avoid SQL syntax errors, duplicate column names in a worksheet now use the syntax table_name-column_name instead of table_name::column_name.
-- We removed the Snowflake OAuth option for creating a connection for Free Trial to prevent user confusion.
-
-
 ## October 21, 2021
 
 ### ThoughtSpot Data Security
@@ -177,12 +164,13 @@ To invite a teammate to Free Trial, simply navigate to the **Setup** tab, click 
 {: id="password-creation-checklist"}
 ### Password creation checklist
 
-We redesigned the account creation page to clarify the password requirements for new users. Now, when you first log in to Free Trial, the password verification checklist appears. Your password must meet the following requirements:
+We redesigned the account creation page to clarify the password requirements for new users. Now, when you first log in to Free Trial, the password verification checklist appears. Your password must contain:
 
-- The password must be 8 characters or more in length.
-- The password must include at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
-- The password must pass a complexity test based on an external library. This test ensures password complexity and uniqueness by checking for known patterns or words that are too simple. If the password is not complex enough, ThoughtSpot rejects it, even if it fulfills the other requirements. Refer to the [Dropbox password library](https://github.com/dropbox/zxcvbn){: target="_blank"} for more information.
-- The password cannot use certain blocked words. By default, the blocked words are: your username and any part of your display name.
+- 8 or more characters
+- At least one uppercase letter
+- At least one lowercase letter
+- At least one number
+- At least one special character ( !, #, $, etc.)
 
 ![]({{ site.baseurl }}/images/free-trial-password-checklist.png "Password creation checklist")
 

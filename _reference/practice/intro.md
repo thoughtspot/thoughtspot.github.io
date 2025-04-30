@@ -1,6 +1,6 @@
 ---
 title: [ThoughtSpot in Practice]
-last_updated: 12-05-2019
+last_updated: 10/11/2021
 summary: "This guide demonstrates the power of ThoughtSpot to solve real solutions we developed for our clients."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

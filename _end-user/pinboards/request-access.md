@@ -1,6 +1,6 @@
 ---
 title: [Request access]
-last_updated: 3/12/2021
+last_updated: 10/7/2021
 summary: "If you cannot view a pinboard or answer in ThoughtSpot, you can request access to it."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html

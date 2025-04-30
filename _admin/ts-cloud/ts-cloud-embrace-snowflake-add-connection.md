@@ -28,28 +28,25 @@ To connect to Snowflake:
 
      ![Add a Snowflake connection]({{ site.baseurl }}/images/embrace-snowflake-connection-type-ts-cloud.png "Add a Snowflake connection")
 
-4. Enter the connection details for your Snowflake data source using either OAuth, or Service Account authentication:
+4. Enter the connection details for your Snowflake data source using either OAuth or service account authentication:
 
-   The Use OAuth option uses <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>.
+   ThoughtSpot supports <a href="https://docs.snowflake.com/en/user-guide/oauth-partner.html">Snowflake OAuth authentication</a>, but not External OAuth.
 
-   Before selecting OAuth authentication, you must configure OAuth in Snowflake. For details, see [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html).   
+   Before selecting OAuth authentication in ThoughtSpot, you must configure OAuth in Snowflake. For details, see [Configure OAuth for a Snowflake connection]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-oauth.html).   
 
    For OAuth authentication, do the following:
 
-    1. Select **Use OAuth**.
-    2. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
+    1. Enter Account name, OAuth Client ID, OAuth Client Secret, and (optional) Database.
     ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-oauth.png "Enter connection details")
     <!--  ![Enter connection details]({{ site.baseurl }}/images/gbq-connectiondetails.png "Enter connection details") -->
-    3. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
-    4. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
-    5. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
+    2. If you wish to provide the optional additional key-value pairs for your Snowflake connection, complete the procedure in step 5, and then click **Continue**. If not, click **Continue**.
+    3. When the Snowflake login screen appears, enter your Snowflake User Name and Password and click **Log In**, or use the Single-Sign-On option.
+    4. In the next Snowflake screen, allow ThoughtSpot to access your Snowflake account by clicking **Allow**, and then go to step 7 to select tables for your connection.
 
-        Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.    
+        Using security passthrough may have implications for your Row Level Security. See [About row level security (RLS)]({{ site.baseurl }}/admin/data-security/about-row-security.html) for more information.
 
-   For **Use Service Account** authentication, do the following:
-
-    1. Select **Use Service Account**.
-    2. Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
+   For service account authentication, do the following:
+   - Enter Account name, User, Password, Role, Warehouse, and (optional) Database.
      ![Enter connection details]({{ site.baseurl }}/images/snowflake-connectiondetails-serv-acct.png "Enter connection details")
 
     Refer to the [Snowflake connection reference]({{ site.baseurl }}/admin/ts-cloud/ts-cloud-embrace-snowflake-connection-reference.html) for more information on each of the specific attributes you must enter for your connection.
@@ -68,13 +65,10 @@ To connect to Snowflake:
 
    ![Select tables and columns for your connection]({{ site.baseurl }}/images/snowflake-selecttables.png "Select tables and columns for your connection")
 
-   The Create connection message appears, telling you the number of tables and columns that will be added to your connection.
 
-8. Click **Create**.  
+After you add the connection, you can search your Snowflake database by clicking **Search now**.
 
-After you add the connection, you can search your Snowflake database using the Search field.
-
-<!-- ![The "Connection created" screen]({{ site.baseurl }}/images/snowflake-connectioncreated.png "The "Connection created" screen") -->
+![The "Connection created" screen]({{ site.baseurl }}/images/snowflake-connectioncreated.png "The "Connection created" screen")
 
 Your new connection appears on the **Data** > **Connections** page. You can click the name of your connection to view the tables and columns in your connection.   
 

@@ -4,12 +4,11 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <!-- Disable zooming on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<META NAME="robots" CONTENT="noindex,nofollow">
 <!-- <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}"> -->
 <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
 
 <!-- prevent google from crawling/indexing site -->
-<meta name='robots' content='noindex,follow' />
+<!-- <meta name='robots' content='noindex,follow' /> -->
 
 <title>{{ page.title }} | {{ site.site_title }}</title>
 <link rel="stylesheet" href="{{ 'css/syntax.css' | absolute_url }}">
@@ -152,12 +151,12 @@
 
 {% if page.title == "Search results" %}
 <!-- Do not add the SEO and remove from indexing-->
-<meta name="robots" content="noindex" />
+<!-- <meta name="robots" content="noindex" /> -->
 {% elsif page.url contains site.current_version %}
 <!-- SEO Tools -->
 {% seo %}
 {% elsif page.url == "/" or page.url == "" %}
-<meta name="robots" content="noindex" />
+<!-- <meta name="robots" content="noindex" /> -->
 {% else %}
 {% seo %}
 {% endif %}

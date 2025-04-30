@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
-You can add a hyperlink directly within a search. Using the concat formula, you can create an external hyperlink, or link your answer to another Pinboard.
+You can add a hyperlink directly within a search. Using the concat formula, you can create an external hyperlink, or link your answer to another Pinboard. 
 
 ## How to add a basic hyperlink
 

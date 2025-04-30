@@ -115,11 +115,11 @@ You need specific information to establish a seamless and secure connection. The
       <dt>Schema</dt>
       <dd>Specify the schema associated with the database.<i> (Optional)</i></dd></dlentry>
   <dlentry id="snowflake-oauth-client-id">
-      <dt>OAuth Client ID</dt>
+      <dt>OAuth</dt>
       <dd>Enter the OAuth client ID associated with the Snowflake database.</dd>
   </dlentry>
   <dlentry id="snowflake-oauth-client-secret">
-      <dt>OAuth Client Secret</dt>
+      <dt>OAuth client secret</dt>
       <dd>Enter the OAuth client secret associated with the Snowflake database.</dd>
-  </dlentry>      
+  </dlentry>    
 </dl>

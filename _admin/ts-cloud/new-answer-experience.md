@@ -23,11 +23,11 @@ To turn the new Answer experience on or off, follow these steps:
 
 1. Navigate to your profile: select the **Profile** icon at the top right of your screen, and select **Profile**.
 
-2. Next to **Experience**, at the bottom of your profile, select **Edit**.
+2. Scroll down to the **Experience manager**.
 
-3. Select **New experience** or **Classic experience**.
+3. To turn the new Answer experience on, select **New experience**. To turn it off, select **Classic experience**.
 
-4. Select **Save**.
+    ![Toggle new answer experience on or off]({{ site.baseurl }}/images/new-answer-experience-toggle.png "Toggle new answer experience on or off")
 
 {: id="toggle-on-off"}
 ## Turn the new Answer experience on or off for the whole cluster

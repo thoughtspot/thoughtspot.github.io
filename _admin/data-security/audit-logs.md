@@ -9,7 +9,6 @@ permalink: /:collection/:path.html
 ThoughtSpot Cloud provides security audit events related to account activities and user actions within ThoughtSpot. These events can help your SOC team detect potential security threats or compromised user accounts in your organization. These human-readable and comprehensive events can be shipped to your SIEM application in near real-time. Security events remain within the system for 30 days. To integrate with your SIEM or view these logs, [contact ThoughtSpot Support]({{ site.baseurl }}/admin/misc/contact.html).
 
 ThoughtSpot security events include the following information:
-
 - An event ID
 - A unique description of the event (e.g. “A user account was created”)
 - Timestamp (in UTC) yyyy/mm/dd:hh:mm:ss
@@ -21,7 +20,6 @@ ThoughtSpot security events include the following information:
 ### Security events
 
 The possible events are:
-
 - [account-logout](#logout-successful)
 - [answer-creation](#create-answer)
 - [answer-deletion](#delete-answers)
@@ -29,7 +27,6 @@ The possible events are:
 - [create-rls-rule](#create-rls-rule)
 - [delete-rls-rules](#delete-rls-rules)
 - [failed-login](#login-failed)
-- [failed-logout](#logout-failed)
 - [group-creation](#user-groups-created)
 - [group-deletion](#user-groups-deleted)
 - [group-modification](#user-group-modified)
@@ -47,7 +44,8 @@ The possible events are:
 - [update-rls-rule](#update-rls-rule)
 - [user-account-creation](#users-created)
 - [user-account-deletion](#users-deleted)
-<!-- - [user-group-change](#user-group-change)-->
+<!--
+- [user-group-change](#user-group-change)-->
 - [user-invitation](#user-invited)
 
 ### Event descriptions
@@ -82,10 +80,6 @@ ThoughtSpot defines these events as follows:
 <dlentry id="login-failed">
  <dt>Failed login</dt>
  <dd>A user fails to log in due to an incorrect password, or IdP/ADP deny the authentication request.</dd>
-</dlentry>
-<dlentry id="logout-failed">
- <dt>Failed logout</dt>
- <dd>User logout failed.</dd>
 </dlentry>
 <dlentry id="user-groups-created">
  <dt>Group creation</dt>
@@ -173,8 +167,8 @@ ThoughtSpot defines these events as follows:
  <dlentry id="user-group-change">
   <dt>User group change</dt>
   <dd>A successful or unsuccessful attempt to change the user list to a group by adding or removing members.</dd>
+-->
  </dlentry>
- -->
  <dlentry id="user-invited">
   <dt>User invitation</dt>
   <dd>A user is invited to ThoughtSpot for a free trial.</dd>
