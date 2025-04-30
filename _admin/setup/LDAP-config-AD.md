@@ -11,7 +11,7 @@ Before you configure LDAP for Active Directory, collect this information:
 
 -   URL to connect to Active Directory.
 
-    For example, `ldap://192.168.2.48:389`
+    For example, `ldap://192.168.2.48:389` or `ldaps://192.168.2.48:636`
 
 -   Default LDAP domain.
 
