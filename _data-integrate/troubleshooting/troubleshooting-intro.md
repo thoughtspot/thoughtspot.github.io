@@ -11,7 +11,7 @@ find out more information about what is going on with ODBC or JDBC.
 
 The information contained here is very basic, and mostly about how to enable
 logs on the client side. If you need more detailed troubleshooting information
-or help, please contact ThoughtSpot Support.
+or help, please [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 -   **[Enable ODBC Logs]({{ site.baseurl }}/data-integrate/troubleshooting/enable-ODBC-log.html)**  
 If you need more information in order to troubleshoot ODBC connections, you can enable logging for ODBC.

@@ -3,6 +3,9 @@ To sync your data, perform these tasks:
 ## Select table
 {% include content/dataflow/select-table.md %}
 
+## Custom SQL
+{% include content/dataflow/custom-sql.md %}
+
 ## Specify sync schedule
 {% include content/dataflow/schedule.md %}
 

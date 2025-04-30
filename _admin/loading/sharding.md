@@ -310,4 +310,4 @@ There are several best practices related to sharding.
 
 3. Check your `row count skew` ratio when you re-evaluate sharding.
 
-    You can view your `row count skew` from the ThoughtSpot application. Go to **admin**, then **System health**, then **data**. Choose the table you would like to view, and scroll to `row count skew`. Use this number to calculate your row count skew ratio: row count skew / (total row count / number of partitions). A row count skew ratio higher than 1 may require changes to your data modeling.
+    You can view your `row count skew` from the ThoughtSpot application. Go to **Data > Usage > Data**. Find the correct table name, and scroll to `row count skew`. Use this number to calculate your row count skew ratio: row count skew / (total row count / number of partitions). A row count skew ratio higher than 1 may require changes to your data modeling.

@@ -7,7 +7,7 @@ The Data Push API allows you to open a web page in the context of the ThoughtSpo
 
 For example, you may search in ThoughtSpot for customers who are coming due for renewal of their contract in the next month. You could then trigger an action that brings up a web page from an external billing system. The billing system could be set up to read the data (list of names, emails, products, and renewal dates) from ThoughtSpot. The billing system might then add the price, generate an invoice for each customer, and send it by email.
 
-To turn on the Data Push API functionality, [contact ThoughtSpot Support]({{ site.baseurl}}/admin/misc/contact.html).
+To turn on the Data Push API functionality, [contact ThoughtSpot Support]({{ site.baseurl}}/appliance/contact.html).
 
 The data is available to the external application in JSON (JavaScript Object Notation) format. You must parse the JSON to get the data values you need using JavaScript in the receiving application.
 

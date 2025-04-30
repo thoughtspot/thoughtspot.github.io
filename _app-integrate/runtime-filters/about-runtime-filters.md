@@ -1,7 +1,7 @@
 ---
 title: [About Runtime Filters]
 summary: "Use runtime filters to filter an embedded answer or pinboard."
-last_updated: 11/18/2019
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -22,7 +22,7 @@ Filter is operating on the column "Color" and will only return values that are
 equal (EQ) to "red".
 
 ```
-http://10.77.144.40:8088/?col1=Color&op1=EQ&val1=red#
+http://<thoughtspot_server>:<port>/?col1=Color&op1=EQ&val1=red#
 /pinboard/e36ee65e-64be-436b-a29a-22d8998c4fae
 ```
 
@@ -31,7 +31,7 @@ Filter is operating on the column `Category` and returning values that are equal
 to `mfgr%2324`.
 
 ```
-http://10.77.144.40:8088/callosum/v1/tspublic/v1/pinboarddata?
+http://<thoughtspot_server>:<port>/callosum/v1/tspublic/v1/pinboarddata?
 id=e36ee65e-64be-436b-a29a-22d8998c4fae&col1=Category
 &op1=EQ&val1=mfgr%2324
 ```

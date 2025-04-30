@@ -111,7 +111,7 @@ To delete a table from an SAP HANA connection:
 
    ![Delete a connection table]({{ site.baseurl }}/images/HANA-deletetable.png "Delete a connection table")
 
-   If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Deleting a table with dependent objects]({{ site.baseurl }}/data-integrate/embrace/embrace-HANA-modify.html#deleting-a-table-with-dependent-objects).
+   If you attempt to delete a table with dependent objects, the operation is blocked. A *Cannot delete* window appears, with a list of links to dependent objects. See [Deleting a table with dependent objects]({{ site.baseurl }}/data-integrate/embrace/embrace-hana-modify.html#deleting-a-table-with-dependent-objects).
 
 ### Deleting a table with dependent objects
 

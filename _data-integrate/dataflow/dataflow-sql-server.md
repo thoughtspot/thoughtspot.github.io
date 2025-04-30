@@ -10,3 +10,4 @@ DataFlow enables you to connect to an SQL Server database, to use your data in T
 - [Add a connection]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-add.html)
 - [Sync data]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-sync.html)
 - [Reference]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-reference.html)
+- [Utilities]({{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-utilites.html)

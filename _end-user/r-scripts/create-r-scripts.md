@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.2. For details, see Deprecation Announcements." %}
+
 ## Overview
 
 {% include note.html content="Custom R is disabled by default. To turn on custom R scripting, contact your site administrator." %}

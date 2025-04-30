@@ -6,7 +6,7 @@ The file also contains fields optionally enclosed with double quotes. Use these 
 -   When a field contains a double quote, it must be escaped with the character specified in the escape character argument in `tsload`.
 -   When a field contains the delimiter, the field must be enclosed in double quotes.
 
-ThoughtSpot supports a wide range of date and timestamp formats (See https://docs.thoughtspot.com/6.0/reference/date-formats-for-loading.html#) in the CSV file. Blank values in user uploaded CSV files are interpreted as NULL values. These include the values (case insensitive):
+ThoughtSpot supports a wide range of date and timestamp formats (See <a href="https://docs.thoughtspot.com/6.0/reference/date-formats-for-loading.html">Date and time formats reference</a>) in the CSV file. Blank values in user uploaded CSV files are interpreted as NULL values. These include the values (case insensitive):
 
 -   `NULL`
 -   `\N`

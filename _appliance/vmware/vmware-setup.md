@@ -1,7 +1,7 @@
 ---
 title: [Set up ThoughtSpot in VMware]
 summary: Learn how to install a ThoughtSpot cluster in a VMware environment.
-last_updated: 12/18/2020
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -12,11 +12,11 @@ This page explains how to install a ThoughtSpot cluster in a VMware VSphere Hype
 For each hardware node, you must:
 
 * Complete the prerequisites
-* Use the ThoughtSpot Open Virtualization Format (OVF) file to create
+* Use the ThoughtSpot Open Virtualization Appliance (OVA) file to create
 a virtual machine (VM)
 * Add hard disks to the VM
 
-This guide explains how to deploy ThoughtSpot on VMware, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on VMware using Red Hat Enterprise Linux (RHEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL, refer to the [RHEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html).
+This guide explains how to deploy ThoughtSpot on VMware, using ThoughtSpot's CentOS-based image. You can also deploy ThoughtSpot on VMware using Red Hat Enterprise Linux (RHEL) or Oracle Enterprise Linux (OEL), allowing you to run ThoughtSpot on an RHEL 7.8 or 7.9 or OEL 7.9 image that your organization manages internally. To install ThoughtSpot using RHEL or OEL, refer to the [RHEL and OEL deployment guide]({{ site.baseurl }}/appliance/rhel/rhel.html) after you launch your virtual machines.
 
 ## Prerequisites
 
@@ -41,21 +41,23 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 3. Download and fill out the ThoughtSpot [site survey]({{ site.baseurl }}/site-survey.pdf){:target="_blank"} to have a quick reference for any networking information you may need to fill out as you install ThoughtSpot. Ask your network administrator if you need help filling out the site survey.
 
-## Use the OVF to Create a VM
+## Use the OVA to Create a VM
 
-1. **[Download](https://thoughtspot.egnyte.com/dl/iWvEqo76Pr/){:target="_blank"}** the `ThoughtSpot OVF` to a location on an accessible disk.
+1. Download the [ThoughtSpot OVA](https://thoughtspot.egnyte.com/dl/LPOSJr8Cdd){:target="_blank"} file to a location on an accessible disk. The OVA file contains the OVF and the VMDK.
+
+2. Download the [md5](https://thoughtspot.egnyte.com/dl/MaovnPnHqF){: target="_blank"}, which you can use later to ensure the OVA file is on the correct version, and not corrupted.
 
 2. Log in to the ESXi web portal.
 
 2. Select **Virtual Machines > Create/Register VM**.
 
-   The system displays the dialog for selecting an OVF template.
+   The system displays the dialog for selecting an OVA template.
 
-   ![]({{ site.baseurl }}/images/vmware-ovf.png "ThoughtSpot OVF")
+   ![ThoughtSpot OVA]({{ site.baseurl }}/images/vmware-ova.png "ThoughtSpot OVA")
 
 4. Select **Creation type > deploy a virtual machine from an OVF or OVA**. Click **Next**.
 
-3. Upload the ThoughtSpot OVF and click **Next**.
+3. Upload the ThoughtSpot OVA and click **Next**. The OVA contains both the OVF and the VMDK, so you only have to upload one file.
 
    The system prompts you to select storage.
 
@@ -86,17 +88,8 @@ for a sandbox environment but is insufficient for a production environment. You 
 
 ## Add hard disks to the VM
 
-| Use Case      | HDFS Disk Requirements |
-| --------      | ---------------------- |
-| POC           | 2 x 1 TB on HDD        |
-| Production    | 3 x 2 TB on HDD        |
-
-For a proof of concept (POC), follow these steps to create two 1TB HDFS disks on
-HDD storage, as shown here (2 x 1TB).
-
-For production deployments, ThoughtSpot requires you to have three 2TB HDFS
-disks on HDD (3 x 2TB). For this use case, follow these same steps to create the
-additional, larger capacity disks.
+For most deployments, ThoughtSpot requires you to have three 2TB HDFS
+disks on HDD (3 x 2TB). If you expect your user data capacity for each VM to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information. Follow these steps to create the required 3 2TB hard disks.
 
 1. Edit the VM you just created.
 
@@ -109,7 +102,7 @@ additional, larger capacity disks.
    The new disk appears as a new row under the only existing SSD row.
 
 3. Click the **New Hard disk** to expand the detailed configuration options.
-4. For a proof of concept, set the options as follows. (For production deployments, set the size to 2TB.)
+4. Set the options as follows.
 
     <table>
     <colgroup>
@@ -121,8 +114,8 @@ additional, larger capacity disks.
      <th>Value</th>
     </tr>
     <tr>
-     <td>size</td>
-     <td>1 TB</td>
+     <td><strong>Size</strong></td>
+     <td>2 TB</td>
     </tr>
     <tr>
      <th>Location</th>
@@ -140,10 +133,10 @@ additional, larger capacity disks.
 
     You should see something similar to the following:
 
-   ![]({{ site.baseurl }}/images/vmware-adddisk2-1TB.png "New hard disk")
+   ![]({{ site.baseurl }}/images/vmware-add-disk-2-tb.png "New hard disk")
 
 5. Save your changes.
-6. Repeat steps 1-5 to create more hard disks.
+6. Repeat steps 1-5 to create more hard disks. ThoughtSpot requires 3 hard disks for most environments. If you expect your user data capacity for each VM to be 100 GB or less, you may not need three 2TB disks. Refer to [Supported configurations]({{ site.baseurl }}/appliance/vmware/vmware-intro.html#supported-configurations) for more information.
 7. Power on the VM.
 8. After the VM is online, run the following command to prepare the HDFS disks:
 

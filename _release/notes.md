@@ -1,224 +1,222 @@
 ---
-title: ["6.3 Release Notes"]
+title: ["7.0 Release Notes"]
 toc: false
-last_updated: 1/26/2021
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 redirect_from:
-- /6.3.0/release/notes.html
-- /6.3.0.CU1/release/notes.html
-- /6.3.1/release/notes.html
+- /7.0.0.mar.sw/release/notes.html
+- /7.0.1.jun.sw/release/notes.html
 permalink: /:collection/:path.html
 ---
-ThoughtSpot version 6.3.1 is now available. These release notes include information about new and enhanced features.
+ThoughtSpot version 7.0.1 is now available. These release notes include information about new and enhanced features.
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.3.1 New Features](#6-3-1-new)
-* [6.3 New Features](#6-3-new)
+* [7.0.1 New Features](#7-0-1-new)
 * [Supported Upgrade Paths](#upgrade-paths)
 
-{: id="6-3-1-new"}
-## 6.3.1 New Features and Functionality
+{% include note.html content="Self-service upgrade is not supported in version 7.0.1."%}
+
+{: id="7-0-1-new"}
+## 7.0.1 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.3.1 New Features](#6-3-1-new)
-   * [For the Analyst](#6-3-1-analyst)
-   * [For the Business User](#6-3-1-business-user)
-   * [For the Data Engineer](#6-3-1-data-engineer)
-   * [For the IT Ops Engineer](#6-3-1-it-ops-engineer)
+Here are the most significant new features and improvements in the 7.0.1 Software Release:
 
-{: id="6-3-1-analyst"}
+* [For the Analyst](#7-0-1-analyst)
+* [For the Business User](#7-0-1-business-user)
+* [For the Data Engineer](#7-0-1-data-engineer)
+
+{: id="7-0-1-analyst"}
 ### For the Analyst
 
 <dl>
-<dlentry id="simplified-join-creation">
-<dt>Simplified join creation</dt>
-<dd>This release makes creating and editing joins from a table more flexible and intuitive. Our new joins interface allows you to define and edit a join’s type and cardinality at the table level, where previously this was only possible at the Worksheet level. Refer to <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html">Table joins</a>.</dd>
-</dlentry>
-</dl>
+<dlentry id="search-assist-coach">
+ <dt>Search Assist Coach</dt>
+ <dd><a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> enables Analysts, or anyone who has <strong>edit</strong> access to a Worksheet, to create <a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> sample queries based on their company’s data. This gives all users the opportunity to experience onboarding and training on data that is relevant to their work, and specific to their line of business.</dd></dlentry>
+ </dl>
 
-{: id="6-3-1-business-user"}
+{: id="7-0-1-business-user"}
 ### For the Business User
 
 <dl>
-<dlentry id="internet-explorer">
-  <dt>Deprecation of Internet Explorer</dt>
-<dd>ThoughtSpot browser support for Internet Explorer is now deprecated. Refer to <a href="{{ site.baseurl }}/end-user/accessing.html">ThoughtSpot browser access</a> for a list of supported browsers.</dd>
+<dlentry id="search-assist">
+ <dt>Search Assist</dt>
+<dd><a href="{{ site.baseurl }}/end-user/onboarding/search-assist.html">Search Assist</a> introduces new users to ThoughtSpot’s Search experience by walking them through simple search scenarios on your company’s data. It demonstrates how anyone can get answers to their data questions by typing in the Search bar. Worksheet owners can use <a href="{{ site.baseurl }}/admin/worksheets/search-assist-coach.html">Search Assist Coach</a> to create these sample search queries on your company’s data.</dd>
 </dlentry>
 
-<dlentry id="information-center">
-  <dt>Information Center</dt>
-<dd>ThoughtSpot has a new Information Center, accessible from the help icon <img src="/images/icon-help-10px.png" alt="Help icon" class="inline"> next to your profile on the top navigation bar. This new help menu contains many useful resources, including a navigation overview, several training videos, and links to more help across the ThoughtSpot product, community, training, and documentation. Refer to <a href="{{ site.baseurl }}/end-user/help-center/what-you-can-find-in-the-help-center.html">More help and support</a>.</dd></dlentry>
-
+<dlentry id="search-on-enter">
+<dt>Search on enter experience</dt>
+<dd>The default search experience is now <strong>Search on enter</strong>. This means that you can add new tokens to the search bar, or remove them, without altering your existing search, until you press <strong>Enter</strong> on your keyboard, or select <strong>Go</strong> to the right of the search bar. You may need to press <strong>Enter</strong> or <strong>Go</strong> to ensure that ThoughtSpot updates your search with any new items in the search bar.<br> <img src="{{"/images/search-on-enter.gif" | prepend: site.baseurl }}" alt="Search on enter gif" title="Search on enter gif" /></dd>
+</dlentry>
 </dl>
 
-{: id="6-3-1-data-engineer"}
+{: id="7-0-1-data-engineer"}
 ### For the Data Engineer
 
 <dl>
 <dlentry id="embrace">
 <dt>Embrace</dt>
-<dd>Embrace now supports Oracle Autonomous Database <span class="label label-beta">Beta</span>. This feature is in beta and disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
+<dd>Embrace now supports Databricks <span class="label label-beta">Beta</span>. Because this feature is in beta, it is disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a>.
 </dd>
-<dd>Embrace now supports security passthrough for Snowflake using OAuth for authentication and authorization. For more information, see <a href="/data-integrate/embrace/embrace-snowflake-add.html">Snowflake</a>.</dd>
 </dlentry>
 </dl>
 
-{: id="6-3-1-it-ops-engineer"}
-### For the IT Ops Engineer
-
-<dl>
-<dlentry id="consumption-based-pricing">
-<dt>Consumption-based pricing</dt>
-<dd>ThoughtSpot now offers consumption, or usage, based pricing. Refer to <a href="{{ site.baseurl }}/appliance/consumption-pricing.html">Consumption-based pricing</a> and the <a href="{{ site.baseurl }}/appliance/consumption-pricing-faq.html">Consumption pricing FAQ</a>. To compare consumption- and capacity-based pricing, refer to <a href="https://www.thoughtspot.com/pricing" target="_blank">ThoughtSpot pricing</a>.</dd>
-</dlentry>
-</dl>
-
-{: id="6-3-new"}
-## 6.3 New Features and Functionality
+{: id="7-0-new"}
+## 7.0 New Features and Functionality
 
 For a complete list of issues that we fixed in this release, see [Fixed issues]({{ site.baseurl }}/release/fixed.html).
 
-* [6.3 New Features](#6-3-new)
-   * [For the Analyst](#6-3-analyst)
-   * [For the Business User](#6-3-business-user)
-   * [For the Data Engineer](#6-3-data-engineer)
-   * [For the IT Ops Engineer](#6-3-it-ops-engineer)
-<!--* [Beta Programs](#beta-program)-->
-* [Supported Upgrade Paths](#upgrade-paths)
+Here are the most significant new features and improvements in the 7.0.0 Software Release:
 
-{: id="6-3-new"}
-## 6.3 New Features and Functionality
+* [For the Analyst](#7-0-analyst)
+* [For the Business User](#7-0-business-user)
+* [For the Data Engineer](#7-0-data-engineer)
+* [For the IT Ops Engineer](#7-0-it-ops-engineer)
 
-For a complete list of issues that we fixed in this release, see [6.3 Fixed issues]({{ site.baseurl }}/release/fixed.html#6-3).
-
-### New language support
-
-Starting in the 6.3.1 release, ThoughtSpot offers the following new locale, to include support for date, time, number and currency format for the India region:
-
-<ul>
-<li> English (India) </li>
-</ul>
-
-To set locale to English (India), click the user icon in the top right corner to navigate to the <strong>Profile</strong> page, and select locale under <strong>Preferences</strong>.
-
+{: id="7-0-analyst"}
 ### For the Analyst
 
-<dl id="6-3-analyst">
-  <dlentry id="geomaps">
-    <dt>Geomaps</dt>
-    <dd>ThoughtSpot now supports <a href="{{ site.baseurl }}/reference/geomap-reference.html">GeoMap</a> visualizations for this new locale:
-        <ul>
-          <li><strong>Netherlands</strong>: Province, Municipality, Postcode</li>
-        </ul>
-          </dd></dlentry>
+<dl>
 
-  <dlentry id="scriptability">
-    <dt>Scriptability</dt>
-    <dd><p>This release introduces expanded support for <a href="{{ site.baseurl }}/admin/scriptability/scriptability-overview.html">exporting and importing ThoughtSpot objects</a>. Pinboard and Answer Scriptability is now GA. You can also export, import, and update the following newly scriptable objects:</p>
-     <ul>
-      <li>Views</li>
-      <li>Tables</li>
-    </ul>
-    <p>ThoughtSpot Scripting Language is now called <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</p>
-    </dd>
-  </dlentry>  
+<dlentry id="scriptability">
+  <dt>Scriptability enhancements</dt>
+  <dd>There are several enhancements to the <a href="{{ site.baseurl }}/admin/scriptability/scriptability-overview.html">Scriptability</a> feature:
+  <ul><li><strong>Export custom SpotApps</strong>: You can now export your own custom SpotApps, or collections of Scriptable ThoughtSpot Answers, Pinboards, SpotIQ results, Views, tables, and Worksheets, packaged together as a zip file. Simply navigate to <strong>Data > SpotApps</strong> and choose the objects you would like to include in a custom SpotApp. Refer to <a href="{{ site.baseurl }}/admin/scriptability/app-templates.html">SpotApps</a>.</li>
+  <li><strong>Add tables and columns to an Embrace connection:</strong> ThoughtSpot now allows you to use TML to edit tables created through <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-intro.html">Embrace</a>, and add columns and tables that already exist in the external database to the connection. Refer to <a href="{{ site.baseurl }}/admin/scriptability/tml.html#syntax-tables">ThoughtSpot Modeling Language</a> and specify the <code>connection</code> information when adding tables or table columns to an Embrace connection.</li>
+  <li><strong>GUID handling</strong>: ThoughtSpot now recognizes pre-existing GUIDs upon import and asks if you would like to update the existing object or create a new one. Refer to <a href="{{ site.baseurl }}/admin/scriptability/scriptability.html">Scriptability</a>.</li>
+  <li><strong>Improvements to generic join functionality</strong> <span class="label label-beta">Beta</span>: The expanded functionality for generic joins in TML files allows the following elements:
+<ul><li>Constants: int, double, bool, date, and string</li>
+<li>Comparison operators: <code>=</code>, <code>!=</code>, <code><</code>, <code>></code>, <code><=</code>, and <code>>=</code></li>
+<li>Columns</li>
+<li>Boolean operators: <code>AND</code>, <code>OR</code>, and <code>NOT</code></li></ul> This feature is in <strong>Beta</strong> and on by default.</li>
+<li><strong>Joins at the table level</strong>: You can now create and edit joins at the table level using TML, including range and generic joins. You must edit these joins from the source table, not the destination table. Refer to <a href="{{ site.baseurl }}/admin/scriptability/tml.html">ThoughtSpot Modeling Language</a>.</li>
+<li><strong>Support for selective and linked filters</strong>: You can now import, export, and update Pinboards with <a href="{{ site.baseurl }}/complex-search/linked-filters.html">linked</a> or <a href="{{ site.baseurl }}/complex-search/selective-filters.html">selective</a> filters.</li>
+  </ul></dd></dlentry>
 
-  <dlentry id="linked-filters">
-    <dt>Linked Pinboard filters</dt>
-    <dd>You can now create one filter that filters visualizations based on multiple Worksheets by linking the Worksheet columns, at the Pinboard level. This is useful when you have a Pinboard built on multiple Worksheets, and you would like to filter on columns that are functionally the same, but exist in multiple Worksheets. Refer to <a href="{{ site.baseurl }}/complex-search/linked-filters.html">Linked Pinboard filters</a>.
-    </dd>
-  </dlentry>  
-
-  <dlentry id="selective-filters">
-    <dt>Selective Pinboard filters</dt>
-    <dd>You can now configure Pinboard filters to apply to specific visualizations that you choose. This is useful when you would like to filter some, but not all, visualizations in a Pinboard. Refer to <a href="{{ site.baseurl }}/complex-search/selective-filters.html">Selective Pinboard filters</a>.
-    </dd>
-  </dlentry>  
-
-  </dl>
-
-### For the Business User
-
-<dl id="6-3-business-user">
-  <dlentry id="mobile-improvements">
-    <dt>Mobile app updates</dt>
-    <dd>ThoughtSpot mobile supports more features that were previously available only through the ThoughtSpot Web app, including:
-    <ul>
-    <li>Deep linking</li>
-    <li>Drill down</li>
-    </ul>
-    <p>See <a href="{{ site.baseurl }}/admin/mobile/notes-mobile.html">ThoughtSpot mobile release notes</a>  and <a href="{{ site.baseurl }}/admin/mobile/use-mobile.html">ThoughtSpot Mobile overview</a> for detailed information.</p></dd>
-    </dlentry>
-    <dlentry id="pivot-table">
-      <dt>Pivot table enhancements</dt>
-      <dd>This release includes enhancements to <a href="{{ site.baseurl }}/complex-search/about-pivoting-a-table.html">Pivot tables</a>. You can now:
-      <ul>
-      <li><strong>Drill down</strong> on values in pivot tables</li>
-      <li><strong>Show underlying data</strong> for values in pivot tables</li>
-      <li><strong>SpotIQ analyze</strong> values in pivot tables</li></ul>
-      </dd></dlentry>
-  </dl>
-
-### For the Data Engineer
-
-<dl id="6-3-data-engineer">
-  <dlentry id="dataflow">
-    <dt>DataFlow</dt>
-    <dd id="dataflow-new-connections"><strong>New connection types</strong><br/>In this release, DataFlow expands support to the following connection types:
-    <ul>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-apache-parquet.html" | prepend: site.baseurl}}">Apache Parquet</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-databricks-delta-lake.html" | prepend: site.baseurl}}">Databricks Delta Lake</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-denodo.html" | prepend: site.baseurl}}">Denodo</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-jdbc.html" | prepend: site.baseurl}}">JDBC</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-rest-api.html" | prepend: site.baseurl}}">REST API</a></li>
-      <li><a href="{{"/data-integrate/dataflow/dataflow-sas.html" | prepend: site.baseurl}}">SAS</a></li>
-    </ul>
-    </dd>
-    <dd id="dataflow-transformations"><strong>Transformations</strong><br/>In all DataFlow database connections, you can now add row-level formulas that use native database functions to transform your data as it loads into ThoughtSpot.</dd></dlentry>
-  <dlentry id="embrace">
-    <dt>Embrace</dt>
-    <dd>In this release, Embrace adds support for SpotIQ analyze. Now you can analyze any answer, pinboard vizualization, or data source to generate instant insights, by clicking the SpotIQ analyze button <img src="../images/icon-lightbulb.png" alt="spotiq analyze icon" class="inline">.</dd>
-    <dd>Embrace now supports security passthrough for Snowflake and Google BigQuery using OAuth for authentication and authorization. This feature is in beta for this release. Contact ThoughtSpot support for assistance.</dd>
-    </dlentry>
+<dlentry id="join-ui">
+<dt>Join creation interface</dt>
+<dd>We improved the join workflows to support adding and updating joins on tables, worksheets, and views. See <a href="{{ site.baseurl }}/admin/worksheets/add-joins.html">Join a table, View, or Worksheet to another data source</a>.</dd>
+</dlentry>
 </dl>
 
+{: id="7-0-business-user"}
+### For the Business User
+
+<dl>
+
+<dlentry id="geomaps">
+<dt>Geomap support</dt>
+<dd>We added support for states and state abbreviations, and also postal codes, for Mexico. See <a href="{{ site.baseurl }}/reference/geomap-reference.html">Geo Map Reference</a>.</dd>
+</dlentry>
+
+</dl>
+
+{: id="7-0-data-engineer"}
+### For the Data Engineer
+
+<dl>
+<dlentry id="embrace">
+<dt>Embrace</dt>
+<dd>Embrace passthrough functions are available for Snowflake. Passthrough functions allow you to send custom SQL expressions directly to your Snowflake database without being interpreted by ThoughtSpot. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-snowflake-passthrough.html">Passthrough functions for Snowflake.</a></dd>
+<dd>Support for SAP HANA in Embrace is now GA. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-hana.html">SAP HANA overview.</a></dd>
+<dd>Embrace now supports security passthrough for Google BigQuery using OAuth for authentication and authorization  <span class="label label-beta">Beta</span>. Because this feature is in beta, it is disabled by default. To enable this feature, contact <a href="{{ site.baseurl }}/admin/misc/contact.html">ThoughtSpot Support</a></dd>
+<dd>Support for Oracle Autonomous Database (ADW) is now GA. For more information, see <a href="{{ site.baseurl }}/data-integrate/embrace/embrace-adw.html">Oracle ADW overview.</a>
+</dd>
+</dlentry>
+
+<dlentry id="dataflow">
+<dt>DataFlow</dt>
+<dd>
+We added support for connecting to the following databases: <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-exadata.html">Exadata</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum.html">Greenplum</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-memsql.html">MemSQL</a>.
+
+<p>We also added support for the  <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-splunk.html">Splunk</a> file system.</p>
+
+<p>When connecting to remote files, DataFlow now supports the ORC and JSON file formats.</p>
+
+<p>DataFlow includes support for utilities to configure SSL, so you can securely connect securely to the following source systems:
+<a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-sql-server-utilities.html">SQLServer</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databricks-delta-lake-utilities.html">Databricks Data Lake</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-postgresql-utilities.html">PostgreSQL</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-ibm-db2-utilities.html">IBM Db2</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-greenplum-utilities.html">Greenplum</a>, <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-oracle-utilities.html">Oracle</a>, and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-teradata-utilities.html">Teradata</a>.</p>
+
+<p>Connections for remote files support several new <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-files-sync.html#file-format">file formats</a>; in addition to  <em>Delimited</em>, we have support for <em>Parquet</em>, <em>JSON</em> <span class="label label-beta">New</span>, <em>LDJSON</em> <span class="label label-beta">New</span>, and <em>ORC</em> <span class="label label-beta">New</span>.
+</p>
+
+<p>The DataFlow Home dashboard now shows both the historical and upcoming syncing information. It also supports search by table name. See <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-home.html">DataFlow home</a>.</p>
+
+<p>All DataFlow database connections (as listed in <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-databases">DataFlow Databases</a>), support retrieving data through a custom SQL expression.</p>
+
+<p>New <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html">DataFlow Tips</a> section explains how to:</p>
+<ul>
+<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#truncate-table">Truncate a table</a> during syncs, instead of deleting.</li>
+<li><a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#epochs">Use Epoch date and timestamp options</a> in pre- and post-sync TQL scripts ( <code>$$CurrentDateEpochAdd</code> and <code>$$CurrentTimestampEpochAdd</code> parameters).
+</li>
+<li>
+<a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#last-sync">Track the last sync start time</a> using the <code>$$LastSyncStartTime</code> parameter in custom formulas.
+</li>
+</ul>
+
+<p>The Administration interface lets you configure the <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-tips.html#dataflow-staging-drectory">staging directory</a> and <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-configuration-options.html#dataflow-allowed-paths">allowed paths</a> for data files. See <a href="{{ site.baseurl }}/data-integrate/dataflow/dataflow-configuration-options.html">Configure DataFlow server</a>.</p>
+</dd>
+
+</dlentry>
+</dl>
+
+{: id="7-0-it-ops-engineer"}
 ### For the IT Ops Engineer
 
-<dl id="6-3-it-ops-engineer">
+<dl>
+<dlentry id="rhel">
+<dt>RHEL ease of installation</dt>
+<dd>This release of ThoughtSpot makes it easier to deploy ThoughtSpot on an <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL image</a>. You can now enable SELinux when deploying ThoughtSpot on RHEL. If you enable SELinux, ensure that you install the <a href="{{ site.baseurl }}/appliance/rhel/rhel-packages.html">yum</a> <code>setroubleshoot</code> package.</dd>
+</dlentry>
 
-  <dlentry id="entry"><dt>Advanced lean mode for cloud deployments</dt><dd>For ThoughtSpot customers who want to deploy their AWS, Azure, and GCP instances with lower data sizes, this release brings enhancements to advanced lean mode configuration.</dd><dd>You can now configure lean mode yourself using tscli commands. No need to contact ThoughtSpot. For details, see <a href="{{ site.baseurl }}/appliance/cloud.html#reducing-your-cloud-infrastructure-costs">Use small and medium instance types</a>.
-  </dd></dlentry>
+<dlentry id="oel">
+<dt>Oracle Enterprise Linux (OEL) support</dt>
+<dd>This release of ThoughtSpot introduces deployment support for Oracle Enterprise Linux. This decouples the OS and application files we shipped together in previous releases, and gives you the flexibility to run ThoughtSpot on an OEL image that your organization manages internally. ThoughtSpot certifies OEL version 7.9 on AWS, GCP, and VMware. To deploy ThoughtSpot on OEL, you must have the Ansible tarball; you can obtain the tarball through your ThoughtSpot contact. For more information, see the <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL and OEL deployment guide</a>.
+</dd>
+</dlentry>
 
-  <dlentry id="open-ldap-auth"><dt>OpenLDAP authentication</dt><dd>ThoughtSpot now integrates with OpenLDAP for user authentication. LDAP provides security and makes user management more centralized. To enable user authentication through OpenLDAP, <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>. This feature also exists in ThoughtSpot release 6.0.5.
-  </dd></dlentry>
+<dlentry id="security-logs">
+<dt>New security logs</dt>
+<dd>This release of ThoughtSpot allows your security team to collect security audit events based on user activity. You can view logs for the following events:
+<ul><li>Successful login</li>
+<li>Failed login</li>
+<li>Locked account</li>
+<li>Account logout</li>
+<li>Profile change</li>
+<li>Group creation</li>
+<li>Group deletion</li>
+<li>User group change</li>
+<li>Group modification</li>
+<li>Privilege change</li>
+<li>User account creation</li>
+<li>User account deletion</li>
+<li>Password change</li>
+<li>Object creation (Pinboard or Answer)</li>
+<li>Object deletion (Pinboard or Answer)</li>
+<li>Object modification (Pinboard or Answer)</li>
+<li>Object sharing</li></ul>
 
-  <dlentry id="open-ldap-admin-user"><dt>OpenLDAP admin user</dt><dd>ThoughtSpot now supports using your company's OpenLDAP admin user to SSH into your cluster(s) as an admin, instead of using the local ThoughtSpot admin user, which has sudo privileges. This feature is only applicable to ThoughtSpot clusters run on an <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL image</a>. Refer to <a href="{{ site.baseurl }}/appliance/rhel/rhel-install-online.html#ldap_admin_user">Install the ThoughtSpot application on online clusters that use RHEL</a> to learn how to add the three OpenLDAP admin user parameters to your Ansible playbook.
-  </dd></dlentry>
+To view these logs, run <a href="{{ site.baseurl }}/reference/tscli-command-ref.html#tscli-logs">tscli logs collect</a>.</dd>
+</dlentry>
 
-  <dlentry id="admin-console"><dt>Admin Console enhancements</dt><dd>This release reorganizes the Admin Console, to make it cleaner and more intuitive. This includes the following changes:
-  <ul>
-  <li>The <strong>System Overview Pinboard</strong> in the Admin Console has been deprecated. You can find visualizations from it on the <a href="{{ site.baseurl }}/admin/admin-portal/system-cluster-pinboard.html">System Cluster Pinboard</a> and the <a href="{{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html">System Alerts Pinboard</a>.</li>
-  <li>The <strong>Total Capacity</strong> visualization is now in the <strong>System Cluster Pinboard</strong>.</li>
-  <li>The visualizations about user activity that appeared in the <strong>System Overview Pinboard</strong> now appear in the new <a href="{{ site.baseurl }}/admin/admin-portal/user-adoption-pinboard.html">User Adoption Pinboard</a>.</li>
-  <li>The <strong>Relational Data Cache</strong> and <strong>Relational Search Engine</strong> panels that appeared in the <strong>System Overview Pinboard</strong> now appear in <strong>Data > Usage > Data</strong>.</li>
-  <li>Many of the visualizations that appeared in the <strong>System Overview Pinboard</strong> appear in the <a href="{{ site.baseurl }}/admin/system-monitor/overview.html">System Information and Usage Pinboard</a>.</li>
-  <li>The <strong>Configuration Events</strong> panel that appeared in the <strong>System Overview Pinboard</strong> now appears in the <a href="{{ site.baseurl }}/admin/admin-portal/system-alerts-pinboard.html">System Alerts Pinboard</a>.</li></ul>
-  </dd></dlentry>
+<dlentry id="cloud-vm">
+<dt>New cloud VM instance types</dt>
+<dd>This release of ThoughtSpot introduces support for new cloud VM instance types for AWS and Azure.<br><br> The new AWS instance types are:
+<ul><li>r5a.4xlarge</li>
+<li>r5a.8xlarge</li>
+<li>r5a.12xlarge</li>
+<li>r5a.16xlarge</li>
+<li>r5a.24xlarge</li></ul> The new Azure instance type is: <ul><li>D64s_v4</li></ul> To view all supported instance types for AWS and Azure, see the <a href="{{ site.baseurl }}/appliance/aws/configuration-options.html">AWS</a> and <a href="{{ site.baseurl }}/appliance/azure/configuration-options.html">Azure</a> configuration options.
+</dd>
+</dlentry>
 
-  <dlentry id="user-adoption-perfomance-tracking-pinboard"><dt>User adoption and performance Pinboards</dt><dd>This release of ThoughtSpot contains two new default Pinboards for administrators. Use the User Adoption Pinboard in the Admin Console to understand how your ThoughtSpot users are interacting with ThoughtSpot, and how your user adoption is changing over time. Use the Performance Tracking Pinboard, accessible from the <strong>Pinboards</strong> tab, to understand how your ThoughtSpot cluster is performing. Refer to <a href="{{ site.baseurl }}/admin/admin-portal/user-adoption-pinboard.html">User Adoption Pinboard</a> and <a href="{{ site.baseurl }}/admin/system-monitor/performance-tracking.html">Performance Tracking Pinboard</a>.
-  </dd></dlentry>
-
-  <dlentry id="ease-of-installation"><dt>RHEL and Amazon Linux 2 ease of installation</dt><dd>This release of ThoughtSpot makes it easier to deploy ThoughtSpot on an <a href="{{ site.baseurl }}/appliance/amazon-linux-2/al2-overview.html">Amazon Linux 2</a> or <a href="{{ site.baseurl }}/appliance/rhel/rhel.html">RHEL image</a>.
-  <ul>
-  <li>You can now use a Terraform, Puppet, or Chef template, or an Ansible tarball, to install OS packages, dependencies, and the ThoughtSpot CLI (tscli), and configure your cluster. Previously, you could only use an Ansible tarball or Terraform template.</li>
-  <li>You now only need 20 GB on the root drive for yum packages and system logs, and 200 GB for ThoughtSpot installation.</li>
-  <li>You can now deploy ThoughtSpot on RHEL version 7.9. You can no longer deploy ThoughtSpot on RHEL version 7.7.</li>
-  </ul>
-  </dd></dlentry>
-
-</dl>    
+<dlentry id="azure-disk-encryption">
+<dt>Azure Disk Encryption</dt>
+<dd>ThoughtSpot now supports <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-overview" target="_blank">Azure Disk Encryption (ADE)</a> for clusters running on an RHEL image in Azure. Azure Disk Encryption provides volume encryption for both the OS and data disks of Azure virtual machines (VMs). To configure Azure Disk Encryption for your cluster(s), <a href="{{ site.baseurl }}/appliance/contact.html">contact ThoughtSpot Support</a>.
+</dd>
+</dlentry>
+</dl>
 
 <!--{: id="beta-program"}
 ## Beta Programs
@@ -229,15 +227,15 @@ We like to have a diversity of experience and perspective, and want to hear from
 {: id="upgrade-paths"}
 ## Supported Upgrade Paths
 
-If you are running one of the following versions, you can upgrade to the 6.3 release
-directly:
+If you are running one of the following versions, you can upgrade to the 7.0.1 release
+directly.
 
-* 6.1.x to 6.3
-* 6.2.x to 6.3
+* 6.2.x to 7.0.1
+* 6.3.x to 7.0.1
 
 This includes any hotfixes or customer patches on these branches.
 
 If you are running a different version, you must do a multiple pass upgrade.
-First, upgrade to version 6.1.x, or version 6.2.x, and then to the 6.3 release.
+First, upgrade to version 6.2.x, or 6.3.x and then to the 7.0.1 release.
 
 {% include note.html content="To successfully upgrade your ThoughtSpot cluster, all user profiles must include a valid email address. Without valid email addresses, the upgrade is blocked." %}

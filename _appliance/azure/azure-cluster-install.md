@@ -64,6 +64,8 @@ Run `md5sum -c <release-number>.tar.gz.MD5checksum`.
 $ tar -C /usr/local/scaligent -zxpf <release-number>.tar.gz './bin/tscli'
 ```
 
+2. Take a machine snapshot prior to the release deployment, as a best practice.
+
 3. Create the cluster.<br>
 Run `tscli cluster create` to create the cluster.
 ```

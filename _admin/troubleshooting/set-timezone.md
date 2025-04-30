@@ -26,5 +26,5 @@ The timezones should match.
 Sometimes the timezone that is listed by `date` is not the active timezone for
 the ThoughtSpot application and the application needs to be reset. If you need
 to change the timezone, [contact ThoughtSpot Support]({{ site.baseurl
-}}/admin/misc/contact.html#) and they will change the timezone for you. You may
+}}/appliance/contact.html#) and they will change the timezone for you. You may
 need to change the timezone if you move the server between data centers.

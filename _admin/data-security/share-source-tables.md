@@ -11,20 +11,20 @@ is only visible to administrators. Tables imported from a Web browser are visibl
 to administrators and the user who uploaded it. Administrators and owners can
 share **Can View** or **Can Edit** privileges on tables with other users, who can further share them with others.
 
-When you share a table, you can share the entire table, or specific columns. For column level security, share only specific columns.
+When you share a table, you can share the entire table, or specific columns. For column level security (CLS), share only specific columns.
 
 ## Permissive or strict sharing
 
 Use caution when sharing tables, because any objects created from that table will have
 dependencies on it and its underlying structure. Objects created from
-tables can include worksheets, Views, Answers, and Pinboards. This means that if a user
+tables can include Worksheets, Views, Answers, and Pinboards. This means that if a user
 wants to drop or modify a table, any object that depends upon it must be edited or removed first, to remove the dependency.
 
 For this reason, it is a best practice to only grant the **Edit** permission on
 a table to a small number of users. If you want to prevent shares from also
-revealing the columns regardless of where it appears (worksheets, answers, and
-pinboards), you can ask [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable a stricter behavior.
+revealing the columns regardless of where it appears (Worksheets, Answers, and
+Pinboards), you can ask [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) to enable a stricter behavior.
 
-You can share a table [from the **Data** tab](#share-datatab), or [from within the table](#share-dataset) that you want to share.
+You can share a table or multiple tables [from the **Data** tab](#share-datatab), or share a single table [from within the table](#share-dataset) that you want to share.
 
 {% include content/share-data.md %}

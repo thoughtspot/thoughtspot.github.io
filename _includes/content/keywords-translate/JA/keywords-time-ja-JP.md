@@ -21,12 +21,12 @@
   </tr>
   <tr>
     <td class="tg-us36">last minute</td>
-    <td class="tg-us36">1分前</td>
+    <td class="tg-us36">1分前<br/>前の分<br/>last minute</td>
     <td class="tg-us36"><code>count homepage views <b>last minute</b></code></td>
   </tr>
   <tr>
     <td class="tg-dc35">last hour</td>
-    <td class="tg-dc35">1時間前</td>
+    <td class="tg-dc35">1時間前<br/>前の時間<br/>last hour</td>
     <td class="tg-dc35"><code>count unique visits <b>last hour</b></code></td>
   </tr>
   <tr>
@@ -41,12 +41,12 @@
   </tr>
   <tr>
     <td class="tg-dc35"><span style="font-style:italic">n </span>minutes ago</td>
-    <td class="tg-dc35"><em>n</em> 分前</td>
+    <td class="tg-dc35"><em>n</em> 分前<br/><em>n</em> minutes ago</td>
     <td class="tg-dc35"><code>sum inventory by product <b>10 minutes ago</b></code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>n</em> hours ago</td>
-    <td class="tg-us36"><em>n</em> 時間前</td>
+    <td class="tg-us36"><em>n</em> 時間前<br/><em>n</em> hours ago</td>
     <td class="tg-us36"><code>sum inventory by product by store <b>2 hours ago</b></code></td>
   </tr>
 </table>

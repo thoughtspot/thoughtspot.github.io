@@ -39,7 +39,7 @@ To set up a custom calendar for your cluster, you must do the following:
 
 ### Enable the custom calendar feature
 
-To enable the custom calendar feature for your cluster, contact ThoughtSpot Support (See https://docs.thoughtspot.com/latest/admin/misc/contact.html).
+To enable the custom calendar feature for your cluster, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ### Generate a calendar template
 
@@ -107,7 +107,7 @@ To use your edited calendar template as a custom calendar, you must upload it to
 
 ### (Optional) Set a custom calendar as the default calendar for your cluster
 
-To set your custom calendar as the default calendar for your cluster, contact ThoughtSpot Support (See https://docs.thoughtspot.com/latest/admin/misc/contact.html).
+To set your custom calendar as the default calendar for your cluster, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 ## Setting a worksheet, table or view to use your custom calendar
 

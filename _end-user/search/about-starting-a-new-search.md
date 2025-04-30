@@ -1,6 +1,6 @@
 ---
 title: ["What are Searches and Answers?"]
-last_updated: 09/23/2019
+last_updated: 7/7/2021
 summary: "You use search to answer questions about your data without having to consult a data analyst."
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
@@ -21,9 +21,9 @@ You’ve probably seen one of these before:
 
  ![]({{ site.baseurl }}/images/search_bar_blank.png "Search bar")
 
-Click in the box and start typing some letters. As soon as you begin typing, ThoughtSpot suggests some search terms Type slowly and use the suggestions to find what you're looking for.
+Click in the box and start typing some letters. As soon as you begin typing, ThoughtSpot suggests some search terms. Type slowly and use the suggestions to find what you're looking for.
 
-You can see an answer in the form of a chart or a table. If you do not see an answer, press **Enter** on your keyboard.
+After you press **Enter** on your keyboard, or select **Go** to the right of the search bar, you can see an answer in the form of a chart or a table.
 
 You should know that search in ThoughtSpot is more like an Amazon search than a conversation. For example. Instead of:
 
@@ -76,4 +76,3 @@ An answer is the result of a single search. You can save an answer you want to w
 -   [Search suggestions]({{ site.baseurl }}/end-user/search/recent-searches.html)  
 -   [Search results and column types]({{ site.baseurl }}/end-user/search/about-attributes-and-measures.html)  
 -   [Share an answer]({{ site.baseurl }}/end-user/pinboards/share-answers.html)
--   [About SearchIQ]({{ site.baseurl }}/end-user/search/about-searchiq.html) <span class="label label-beta">Beta</span>

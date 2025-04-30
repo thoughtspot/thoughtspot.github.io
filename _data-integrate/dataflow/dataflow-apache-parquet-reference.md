@@ -2,6 +2,9 @@
 title: [Apache Parquet connection reference]
 summary: Learn about the fields used to create an Apache Parquet connection with ThoughtSpot DataFlow.
 last_updated: 09/14/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-apache-parquet-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-apache-parquet-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -37,5 +40,10 @@ Here is a list of the fields for an Apache Parquet connection in ThoughtSpot Dat
 <dlentry id="dataflow-apache-parquet-sync-"><dt>Time delimiter</dt><dd id="-description">Specifies the character used as separate the time components.</dd><dd id="-required">Optional field.</dd><dd id="-example"><strong>Example:</strong><br/>:</dd><dd id="-valid-values"><strong>Valid Values:</strong><br/>Any printable ASCII character</dd><dd id="-default"><strong>Default:</strong><br/>:</dd></dlentry>
 <dlentry id="dataflow-apache-parquet-sync-"><dt>Skip trailer rows</dt><dd id="-description">Skip trailer row while processing the data</dd><dd id="-required">Optional field.</dd><dd id="-example"><strong>Example:</strong><br/>5</dd><dd id="-valid-values"><strong>Valid Values:</strong><br/>Any numeric value</dd><dd id="-default"><strong>Default:</strong><br/>0</dd></dlentry>
 <dlentry id="dataflow-apache-parquet-sync-"><dt>Reader encoder</dt><dd id="-description">Specify the encoding format of the source system.</dd><dd id="-required">Optional field.</dd><dd id="-example"><strong>Example:</strong><br/>UFT-8</dd><dd id="-valid-values"><strong>Valid Values:</strong><br/>ISO-8859-1, UTF-16, UTF-16BE, WINDOWS-1252</dd><dd id="-default"><strong>Default:</strong><br/>UFT-8</dd></dlentry>
-<dlentry id="dataflow-apache-parquet-sync-"><dt>TS load options</dt><dd id="-description">Specify additional parameters passed with the <code>tsload</code> command. The format for these parameters is:<br/><code>--&lt;param_1_name&gt; &lt;optional_param_1_value&gt;</code></dd><dd id="-required">Optional field.</dd><dd id="-example"><strong>Example:</strong><br/><code>--max_ignored_rows 0</code></dd><dd id="-valid-values"><strong>Valid Values:</strong><br/><br/><code> --null_value ""</code><br/><code> --escape_character ""</code><br/><code> --max_ignored_rows 0</code></dd><dd id="-default"><strong>Default:</strong><br/><code> --max_ignored_rows 0</code></dd></dlentry>
-<dlentry id="dataflow-apache-parquet-sync-boolean-representation"><dt>Boolean representation</dt><dd id="boolean-representation-description">Specifies the representation of data in the boolean field</dd><dd id="boolean-representation-required">Optional field.</dd><dd id="boolean-representation-example"><strong>Example:</strong><br/>true_false</dd><dd id="boolean-representation-valid-values"><strong>Valid Values:</strong><br/>true_false, T_F, 1_0, T_NULL</dd><dd id="boolean-representation-default"><strong>Default:</strong><br/>true_false</dd></dlentry></dl>
+<dlentry id="dataflow-apache-parquet-sync-"><dt>TS load options</dt><dd id="-description">Specify additional parameters passed with the <code>tsload</code> command. The format for these parameters is:<br/><code>--&lt;param_1_name&gt; &lt;optional_param_1_value&gt;</code></dd><dd id="-required">Optional field.</dd><dd id="-example"><strong>Example:</strong><br/><code>--max_ignored_rows 0</code></dd><dd id="-valid-values"><strong>Valid Values:</strong><br/><br/><code> --null_value ""</code><br/><code> --escape_character ""</code><br/><code> --max_ignored_rows 0</code></dd><dd id="-default"><strong>Default:</strong><br/><code> --max_ignored_rows 0</code></dd><dd id="reference"><strong>Reference:</strong><br/><a href="{{ site.baseurl }}/reference/data-importer-ref.html">tsload flag reference</a></dd></dlentry>
+<dlentry id="dataflow-apache-parquet-sync-boolean-representation"><dt>Boolean representation</dt><dd id="boolean-representation-description">Specifies the representation of data in the boolean field</dd><dd id="boolean-representation-required">Optional field.</dd><dd id="boolean-representation-example"><strong>Example:</strong><br/>true_false</dd><dd id="boolean-representation-valid-values"><strong>Valid Values:</strong><br/>true_false, T_F, 1_0, T_NULL</dd><dd id="boolean-representation-default"><strong>Default:</strong><br/>true_false</dd></dlentry>
+</dl>
+
+## Related Information
+
+[Dataflow tips]({{ site.baseurl }}/data-integrate/data-flow-tips.html)

@@ -2,6 +2,9 @@
 title: [Snowflake connection reference for DataFlow]
 summary: Learn about the fields used to create a Snowflake connection with ThoughtSpot DataFlow.
 last_updated: 06/20/2020
+redirect_from:
+- /7.0.0.mar.sw/data-integrate/dataflow/dataflow-snowflake-reference.html
+- /7.0.1.jun.sw/data-integrate/dataflow/dataflow-snowflake-reference.html
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -36,5 +39,9 @@ Here is a list of the fields for a Snowflake connection in ThoughtSpot DataFlow.
 <dlentry id="dataflow-snowflake-sync-max-file-size"><dt>Max file size</dt><dd id="max-file-size-description">Specify the maximum size of each file in the stage location, in bytes.</dd><dd id="max-file-size-required">Mandatory field.</dd><dd id="max-file-size-example"><strong>Example:</strong><br/>16000000</dd><dd id="max-file-size-valid-values"><strong>Valid Values:</strong><br/>Any numeric value</dd><dd id="max-file-size-default"><strong>Default:</strong><br/>16000000</dd></dlentry>
 <dlentry id="dataflow-snowflake-sync-parallel-threads"><dt>Parallel threads</dt><dd id="parallel-threads-description">Specify the number of parallel threads to unload data.</dd><dd id="parallel-threads-required">Mandatory field.</dd><dd id="parallel-threads-example"><strong>Example:</strong><br/>4</dd><dd id="parallel-threads-valid-values"><strong>Valid Values:</strong><br/>Any numeric value</dd><dd id="parallel-threads-default"><strong>Default:</strong><br/>4</dd></dlentry>
 <dlentry id="dataflow-snowflake-sync-fetch-size"><dt>Fetch size</dt><dd id="fetch-size-description">Specify the number of rows fetched into memory at the same time. If the value is 0, system fetches all rows at the same time.</dd><dd id="fetch-size-required">Mandatory field.</dd><dd id="fetch-size-example"><strong>Example:</strong><br/>1000</dd><dd id="fetch-size-valid-values"><strong>Valid Values:</strong><br/>Any numeric value</dd><dd id="fetch-size-default"><strong>Default:</strong><br/>1000</dd></dlentry>
-<dlentry id="dataflow-snowflake-sync-ts-load-options"><dt>TS load options</dt><dd id="ts-load-options-description">Specify additional parameters passed with the <code>tsload</code> command. The format for these parameters is:<br/><code>--&lt;param_1_name&gt; &lt;optional_param_1_value&gt;</code></dd><dd id="ts-load-options-required">Optional field.</dd><dd id="ts-load-options-example"><strong>Example:</strong><br/><code>--max_ignored_rows 0</code></dd><dd id="ts-load-options-valid-values"><strong>Valid Values:</strong><br/><code>--user "dbuser"</code><br/><code>--password "$DIWD"</code><br/><code>--target_database "ditest"</code><br/><code>--target_schema "falcon_schema"</code></dd><dd id="ts-load-options-default"><strong>Default:</strong><br/><code>--max_ignored_rows 0</code></dd></dlentry>
+<dlentry id="dataflow-snowflake-sync-ts-load-options"><dt>TS load options</dt><dd id="ts-load-options-description">Specify additional parameters passed with the <code>tsload</code> command. The format for these parameters is:<br/><code>--&lt;param_1_name&gt; &lt;optional_param_1_value&gt;</code></dd><dd id="ts-load-options-required">Optional field.</dd><dd id="ts-load-options-example"><strong>Example:</strong><br/><code>--max_ignored_rows 0</code></dd><dd id="ts-load-options-valid-values"><strong>Valid Values:</strong><br/><code>--user "dbuser"</code><br/><code>--password "$DIWD"</code><br/><code>--target_database "ditest"</code><br/><code>--target_schema "falcon_schema"</code></dd><dd id="ts-load-options-default"><strong>Default:</strong><br/><code>--max_ignored_rows 0</code></dd><dd id="reference"><strong>Reference:</strong><br/><a href="{{ site.baseurl }}/reference/data-importer-ref.html">tsload flag reference</a></dd></dlentry>
 </dl>
+
+## Related Information
+
+[Dataflow tips]({{ site.baseurl }}/data-integrate/data-flow-tips.html)

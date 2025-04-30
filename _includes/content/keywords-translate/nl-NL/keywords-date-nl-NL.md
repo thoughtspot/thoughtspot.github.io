@@ -44,12 +44,12 @@
   </tr>
   <tr>
     <td class="tg-dc35">day of week</td>
-    <td class="tg-dc35">wochentag</td>
+    <td class="tg-dc35">dag van de week</td>
     <td class="tg-dc35"><code>revenue by <b>day of week</b> last 6 months</code></td>
   </tr>
   <tr>
     <td class="tg-us36"><em>day of week</em></td>
-    <td class="tg-us36">dag van de week</td>
+    <td class="tg-us36"><em>dag van de week</em></td>
     <td class="tg-us36"><code>count shipments <b>Monday</b></code></td>
   </tr>
   <tr>

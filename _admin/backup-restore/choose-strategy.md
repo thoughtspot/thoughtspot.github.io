@@ -28,7 +28,7 @@ You can use a backup to restore a cluster to a prior state or to a differently c
 
 The most robust strategy for backup and recovery requires having a backup cluster offline that is kept in sync with the production cluster. Then, if the production cluster fails, the backup cluster can be drafted to take its place with minimal loss of work and disruption to operations.
 
-Details on this architecture, and instructions on setting it up, are available in the ThoughtSpot Disaster Recovery Guide, which you can request from ThoughtSpot.
+Details on this architecture, and instructions on setting it up, are available in the [ThoughtSpot Disaster Recovery Guide]({{ site.baseurl }}/disaster-recovery/about-disaster-recovery.html).
 
 {: id="choose-strategy"}
 ## Choosing a strategy
@@ -112,6 +112,8 @@ Depending on your situation and your goals, you can choose to use either a snaps
             </table>
 
 You should never restore from a snapshot or backup yourself. Contact [ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html) for help.
+
+{% include warning.html content="Use secondary disks or your NAS or bucket for backups and snapshots. Do NOT use the primary disk, at locations such as <code>/tmp</code>, <code>/home/admin</code>, or <code>/export/home/admin</code>." %}
 
 ## Additional resources
 As you develop your expertise in backups and snapshots, we recommend the following ThoughtSpot U course:

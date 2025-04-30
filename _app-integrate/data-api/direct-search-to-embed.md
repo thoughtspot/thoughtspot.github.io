@@ -9,7 +9,7 @@ The Embedded Search API enables searching directly from an external application 
 
 This embedded search is useful when you want to allow an application to pull data directly from ThoughtSpot in an ad hoc fashion.
 
-To have the Embedded Search API functionality turned on, contact ThoughtSpot Support.
+To have the Embedded Search API functionality turned on, [contact ThoughtSpot Support]({{ site.baseurl }}/appliance/contact.html).
 
 Data retrieved using the Embedded Search API is returned as JSON (JavaScript Object Notation). You must parse the JSON to get the data values you need, generally using JavaScript in the receiving application.
 

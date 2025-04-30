@@ -25,16 +25,16 @@ Run the secure copy command: `scp <release-number> admin@<hostname>:/home/admin/
     $ scp <release-number> admin@<hostname>:/home/admin/<file-name>
   ```
 3. **Run the `tscli cluster create` command** Run `tscli cluster create <release-number>` in your terminal.<br>
-If you are using an S3 or GCS bucket for object storage, include the flag `--enable_cloud_storage=s3` or `--enable_cloud_storage=gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.
+If you are using an S3 or GCS bucket for object storage, include the flag `--enable_cloud_storage s3a` or `--enable_cloud_storage gcs`. GCS is GCP's object storage, and s3 is AWS's object storage.
 s3 example:
-<button type="button" id="s3-cloud" title="Copy" onclick="sayCopied(this.id)" class="btn btn-copy" title="Copy" data-clipboard-text="tscli cluster create 6.0.tar.gz --enable_cloud_storage=s3">Copy &#128203;</button>
+<button type="button" id="s3-cloud" title="Copy" onclick="sayCopied(this.id)" class="btn btn-copy" title="Copy" data-clipboard-text="tscli cluster create 6.0.tar.gz --enable_cloud_storage s3a">Copy &#128203;</button>
 ```
-    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage=s3
+    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage s3a
 ```
 GCS example:
-<button type="button" id="gcs-cloud" title="Copy" onclick="sayCopied(this.id)" class="btn btn-copy" title="Copy" data-clipboard-text="tscli cluster create 6.0.tar.gz --enable_cloud_storage=gcs">Copy &#128203;</button>
+<button type="button" id="gcs-cloud" title="Copy" onclick="sayCopied(this.id)" class="btn btn-copy" title="Copy" data-clipboard-text="tscli cluster create 6.0.tar.gz --enable_cloud_storage gcs">Copy &#128203;</button>
 ```
-    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage=gcs
+    $ tscli cluster create 6.0.tar.gz --enable_cloud_storage gcs
 ```  
 4. **Specify your installation information** Fill out the cluster name, cluster ID, email alert preferences and the IP’s of the nodes at the prompts specified in [Parameters of the tscli cluster create command]({{ site.baseurl }}/appliance/hardware/parameters-cluster-create.html).
 5. **Wait for output** You may need to wait about 15 seconds before you see any output. The installer is unpacking files and copying them over to the nodes, which can take a few seconds.

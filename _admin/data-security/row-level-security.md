@@ -96,7 +96,7 @@ Rules can be simple or they can incorporate logic such as `if/then` rules. For
 example, vendors should see their own data but your accounts payable group needs
 to see all the vendor data:
 
-`VENDOR = ts_groups or 'Accounts Payable' = ts_groups `
+`VENDOR = ts_groups or 'Accounts Payable' = ts_groups`
 
 This rule continues to work as you add data from new vendor or team members to
 `Accounts Payable`. In this way, a well-written rule is _self maintaining_,

@@ -6,6 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
 
+{% include deprecation.html content="This feature is now deprecated. You may not use it starting with release 7.2. For details, see Deprecation Announcements." %}
+
 If you have R privileges on your ThoughtSpot instance, you can run R analyses on
 search results, and save and share the resulting visualization with others. The
 users you share visualizations with do not need R privileges.

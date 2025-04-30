@@ -36,6 +36,8 @@ The process for creating a worksheet is:
 
 5.  Select the columns to include.
 
+    {% include note.html content="ThoughtSpot supports multiple join paths for worksheets. For example, you may have a fact table joined to a dimension table more than once. When adding attribute columns from that dimension table to your worksheet, ThoughtSpot prompts you to choose which join path you would like to use for that column. To use multiple join paths, select that attribute again, modify the name, and choose the other join path when ThoughtSpot prompts you to select one." %}
+
 6.  Optionally [modify the join types](mod-ws-internal-joins.html#) within the worksheet.
 
 7.  Optionally [create formulas](create-formula.html#).

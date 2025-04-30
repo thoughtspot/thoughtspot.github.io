@@ -1,7 +1,7 @@
 ---
 title: [VMware configuration overview]
 summary: "You can host ThoughtSpot on VMware."
-last_updated: 5/21/2020
+last_updated: 2/2/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
@@ -55,7 +55,7 @@ When choosing an instance type, ensure that it uses Intel CPUs.
 	    <tr>
 	      <td>256 GB</td>
 	      <td>72/512 GB</td>
-	      <td>3X1 TB</td>
+	      <td>3X2 TB</td>
 				<td>200 GB for each node</td>
         </tr>
 		<tr>
@@ -78,7 +78,7 @@ NAS/NFS is not supported since its latency is so high that it tends to be unreli
 
 All virtualization hosts should have VMware vSphere Hypervisor (ESXi) 6.5 installed.
 
-ThoughtSpot provides a VMware template (OVF) together with a VMDK (Virtual
+ThoughtSpot provides an OVA file that contains a VMware template (OVF) and a VMDK (Virtual
 Machine Disk) file for configuring a VM. VMDK is a file format that describes
 containers for virtual hard disk drives to be used in virtual machines like
 VMware Workstation or VirtualBox. OVF is a platform-independent, efficient,

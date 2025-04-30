@@ -20,7 +20,7 @@ restore.
 
 ## Prerequisites
 
-Both primary and secondary appliances must use a shared storage volume. You can
+Both primary and secondary appliances must use a shared storage volume. Both the primary and secondary appliance must have an active running ThoughtSpot cluster. You can
 use an NAS or Samba volume for your share. If you choose NAS, keep in mind that
 too slow a volume potentially break backups or significantly slow restore
 performance. The following are good guidelines for choosing storage:

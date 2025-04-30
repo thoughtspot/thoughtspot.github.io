@@ -1,11 +1,11 @@
 ---
 title: [Apply a Runtime Filter]
 summary: "Learn how to apply a runtime filter."
-last_updated: 11/18/2019
+last_updated: 3/23/2021
 sidebar: mydoc_sidebar
 permalink: /:collection/:path.html
 ---
-Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. Before you apply a filter, make sure [understand their limitations]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#limitations-of-runtime-filters).
+Runtime filters allow you to apply filters to the data returned by the APIs or the visualization or pinboard you're embedding. Before you apply a filter, make sure you [understand their limitations]({{ site.baseurl }}/app-integrate/runtime-filters/about-runtime-filters.html#limitations-of-runtime-filters).
 
 The filters are specified in the called URL as parameters. Before you can use runtime filter(s), you need to do these procedures:
 
@@ -22,7 +22,7 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
 
         ```
         http://<thoughtspot_server>:<port>/
-        ?**col1=<column_name\>&op1=<operator\>&val1=<value\>**
+        ?col1=<column_name\>&op1=<operator\>&val1=<value\>
         #/pinboard/<pinboard_id>
         ```
 
@@ -30,7 +30,7 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
 
         ```
         http://<thoughtspot_server>:<port>/
-        ?**col1=<column_name\>&op1=<operator\>&val1=<value\>**
+        ?col1=<column_name\>&op1=<operator\>&val1=<value\>
         #/pinboard/<pinboard_id>/<visualization_id>
         ```
 
@@ -40,7 +40,7 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
         http://<thoughtspot_server>:<port>
         /callosum/v1/tspublic/v1/pinboarddata
         ?id=<pinboard_id>
-        &**col1=<column_name\>&op1=<operator\>&val1=<value\>**
+        &col1=<column_name\>&op1=<operator\>&val1=<value\>
         ```
 
     -   For the REST API with a visualization:
@@ -49,7 +49,7 @@ Now you are ready to add a runtime filter to your Data API call or Embedded obje
         http://<thoughtspot_server>:<port>
         /callosum/v1/tspublic/v1/pinboarddata
         ?id=<pinboard_id>&vizid=%5B<visualization_id>%5D
-        &**col1=<column_name\>&op1=<operator\>&val1=<value\>**
+        &col1=<column_name\>&op1=<operator\>&val1=<value\>
         ```
 
 4. To add additional filters on a particular column, you can specify multiple values by separating them with `&` (ampersand) as in the example:
