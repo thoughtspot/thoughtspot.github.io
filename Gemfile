@@ -4,8 +4,8 @@ require 'json'
 require 'open-uri'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
-gem 'github-pages', versions['github-pages']
+gem 'github-pages', '>= 210', versions['github-pages']
 
 gem "rake", "~> 13.0"
 
-gem "html-proofer", "~> 3.15"
+gem "html-proofer", "~> 3.16", ">= 3.16.0"
